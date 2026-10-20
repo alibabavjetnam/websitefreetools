@@ -86,6 +86,46 @@ function renderSidebar(activeTool?: string): string {
     </aside>`;
 }
 
+function renderFooter(): string {
+  const root = rootPath();
+  const toolLinks = TOOLS.map((t) => `<li><a href="${toolHref(t)}">${escapeHtml(t.name)}</a></li>`).join('');
+  return `
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="${root}/index.html" class="brand" aria-label="WFTools, về trang chủ">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">WFTools</span>
+          </a>
+          <p>Công cụ trực tuyến miễn phí, dùng ngay trên trình duyệt. Không cần cài đặt, không cần tài khoản.</p>
+          <p class="footer-privacy">Nội dung bạn nhập được xử lý ngay trên máy của bạn, không gửi lên máy chủ.</p>
+        </div>
+        <nav class="footer-col" aria-label="Công cụ">
+          <h2>Công cụ</h2>
+          <ul>${toolLinks}</ul>
+        </nav>
+        <nav class="footer-col" aria-label="Thông tin">
+          <h2>Thông tin</h2>
+          <ul>
+            <li><a href="${root}/index.html#gioi-thieu">Giới thiệu</a></li>
+            <li><a href="${root}/index.html#huong-dan">Hướng dẫn</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Pháp lý">
+          <h2>Pháp lý</h2>
+          <ul>
+            <li><a href="${root}/chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+            <li><a href="${root}/dieu-khoan.html">Điều khoản sử dụng</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© ${new Date().getFullYear()} WFTools, websitefreetools.com</p>
+        <p>QR Code là nhãn hiệu đã đăng ký của Denso Wave Incorporated.</p>
+      </div>
+    </footer>`;
+}
+
 /**
  * Dựng khung trang: menu ngang trên cùng + menu công cụ bên trái.
  * Nội dung riêng của mỗi trang nằm sẵn trong <main id="content"> của file HTML.
@@ -100,6 +140,7 @@ export function mountLayout(opts: { activeNav?: string; activeTool?: string } = 
   main.replaceWith(shell);
   shell.appendChild(main);
   document.body.insertAdjacentHTML('afterbegin', renderHeader(opts.activeNav ?? ''));
+  shell.insertAdjacentHTML('afterend', renderFooter());
 
   // Tìm kiếm trong menu trái
   const sidebar = document.getElementById('sidebar') as HTMLElement;

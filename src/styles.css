@@ -740,6 +740,96 @@ output {
   cursor: not-allowed;
 }
 
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--ink);
+  color: #c9d3e3;
+  font-size: 0.9375rem;
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+.site-footer :focus-visible {
+  outline-color: #fff;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 36px;
+}
+
+.footer-brand p {
+  margin: 12px 0 0;
+  max-width: 42ch;
+}
+.footer-brand .footer-privacy {
+  padding-left: 10px;
+  border-left: 2px solid var(--laser);
+}
+
+.footer-col h2 {
+  margin-bottom: 12px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #fff;
+}
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 24px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.8125rem;
+}
+.footer-bottom p {
+  margin: 0;
+}
+
+/* ---------- Trang nội dung (chính sách, điều khoản) ---------- */
+.prose {
+  max-width: 68ch;
+}
+.prose h2 {
+  margin: 32px 0 10px;
+  font-size: 1.1875rem;
+  font-weight: 600;
+}
+.prose p,
+.prose li {
+  color: var(--ink-soft);
+}
+.prose ul {
+  padding-left: 1.3em;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.prose .updated {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
 /* Menu chính lặp lại trong menu trái, chỉ hiện trên màn hình nhỏ */
 .side-mainnav {
   display: none;
@@ -809,6 +899,17 @@ output {
   }
   .tool-cat {
     display: none;
+  }
+  .footer-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 20px;
+    padding: 36px 16px 28px;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  .footer-bottom {
+    padding: 16px 16px 20px;
   }
 }
 
