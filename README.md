@@ -4,10 +4,21 @@ Website tổng hợp các công cụ online nhỏ gọn, viết bằng **TypeScr
 
 ## Công cụ hiện có
 
-| Công cụ | Trang | Mô tả |
+Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển thị thành các khung ở trang chủ và menu trái.
+
+| Nhóm | Công cụ | Trang |
 | --- | --- | --- |
-| Tạo mã QR | `tools/qr-code.html` | Liên kết/văn bản, Wi‑Fi, email, điện thoại, SMS. 4 mức sửa lỗi, đổi màu, tải PNG/SVG. |
-| Tạo mã vạch | `tools/barcode.html` | Code 128, EAN‑13, EAN‑8, UPC‑A, Code 39. Tự tính số kiểm tra, tải PNG/SVG. |
+| File & hình ảnh | Nén & đổi định dạng ảnh | `tools/image-convert.html` |
+| Lập trình & kỹ thuật | JSON, Base64, Regex | `tools/dev-tools.html` |
+| Lập trình & kỹ thuật | Cron & Unix timestamp | `tools/cron-time.html` |
+| Kinh doanh online | Tạo mã vạch | `tools/barcode.html` |
+| Tài chính & tính toán | Tính khoản vay | `tools/loan.html` |
+| Tài chính & tính toán | Lãi kép & tích luỹ | `tools/compound.html` |
+| Tài chính & tính toán | Lương Gross ↔ Net (quy định 2026 trong `src/calc/salary.ts`) | `tools/salary.html` |
+| Tiếp thị | Tạo mã QR | `tools/qr-code.html` |
+| Tiếp thị | Tạo link UTM | `tools/utm.html` |
+| Tiếp thị | Bảng màu & mã màu | `tools/colors.html` |
+| Năng suất & đời sống | Tiền tệ & múi giờ (tỷ giá từ open.er-api.com) | `tools/currency-time.html` |
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
 
@@ -43,10 +54,10 @@ public/                 Tệp tĩnh (favicon)
 
 ## Thêm công cụ mới
 
-1. Tạo `tools/<ten-cong-cu>.html` (chép từ một trang có sẵn, giữ `data-root=".."` và `<main id="content">`).
-2. Tạo `src/pages/<ten-cong-cu>.ts`, gọi `mountLayout({ activeTool: '<id>' })`.
-3. Thêm một mục vào `TOOLS` trong `src/tools.ts`.
-4. Khai báo trang trong `build.rollupOptions.input` của `vite.config.ts`.
+1. Tạo `tools/<id>.html` (chép từ một trang có sẵn, giữ `data-root=".."` và `<main id="content">`). Vite tự nhận mọi file trong `tools/`.
+2. Tạo `src/pages/<id>.ts`, gọi `mountLayout({ activeTool: '<id>' })`.
+3. Thêm một mục vào `TOOLS` trong `src/tools.ts` (chọn nhóm qua trường `group`) và biểu tượng trong `src/icons.ts`.
+4. Phần tính toán thuần đặt trong `src/calc/` để kiểm thử riêng được.
 
 ## Triển khai
 

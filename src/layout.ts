@@ -1,5 +1,6 @@
 import './styles.css';
-import { CATEGORIES, TOOLS, type ToolInfo } from './tools';
+import { GROUPS, TOOLS, type ToolInfo } from './tools';
+import { lineIcon } from './icons';
 import { encodeQr, qrToSvg } from './lib/qr';
 import { barcodeToSvg, encodeBarcode } from './lib/barcode';
 
@@ -12,18 +13,23 @@ export function toolHref(tool: ToolInfo): string {
   return `${rootPath()}/${tool.path}`;
 }
 
-/** Biểu tượng công cụ được vẽ bằng chính mã thật */
+/** Bỏ dấu tiếng Việt để tìm kiếm không phân biệt dấu ("ma qr" vẫn tìm ra "Mã QR") */
+export function foldText(s: string): string {
+  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+}
+
+/** Biểu tượng công cụ: QR và mã vạch được vẽ bằng chính mã thật, còn lại dùng biểu tượng nét */
 export function toolIcon(tool: ToolInfo): string {
-  if (tool.id === 'qr-code') {
+  if (tool.id === 'qr-code' && tool.iconSample) {
     return qrToSvg(encodeQr(tool.iconSample, 'L'), { margin: 0, fg: 'currentColor', bg: 'transparent', px: 28 });
   }
-  if (tool.id === 'barcode') {
+  if (tool.id === 'barcode' && tool.iconSample) {
     const svg = barcodeToSvg(encodeBarcode('CODE39', tool.iconSample), {
       moduleWidth: 1, height: 40, showText: false, quietZone: 0, fg: 'currentColor', bg: 'transparent',
     });
     return svg.replace(/width="[\d.]+" height="[\d.]+"/, 'width="28" height="28" preserveAspectRatio="none"');
   }
-  return '';
+  return lineIcon(tool.id);
 }
 
 function escapeHtml(s: string): string {
@@ -55,11 +61,11 @@ function renderHeader(active: string): string {
 
 function renderSidebar(activeTool?: string): string {
   const root = rootPath();
-  const groups = CATEGORIES.map((cat) => {
-    const items = TOOLS.filter((t) => t.category === cat)
+  const groups = GROUPS.map((g) => {
+    const items = TOOLS.filter((t) => t.group === g.id)
       .map(
         (t) => `
-        <li data-name="${escapeHtml(t.name.toLowerCase())}">
+        <li data-name="${escapeHtml(foldText(`${t.name} ${t.description}`))}">
           <a href="${toolHref(t)}" class="side-link"${t.id === activeTool ? ' aria-current="page"' : ''}>
             <span class="side-icon" aria-hidden="true">${toolIcon(t)}</span>
             <span>${escapeHtml(t.name)}</span>
@@ -67,7 +73,8 @@ function renderSidebar(activeTool?: string): string {
         </li>`,
       )
       .join('');
-    return `<div class="side-group"><h2 class="side-heading">${escapeHtml(cat)}</h2><ul class="side-list">${items}</ul></div>`;
+    if (!items) return '';
+    return `<div class="side-group"><h2 class="side-heading">${escapeHtml(g.name)}</h2><ul class="side-list">${items}</ul></div>`;
   }).join('');
 
   return `
@@ -142,7 +149,7 @@ export function mountLayout(opts: { activeNav?: string; activeTool?: string } = 
   const sidebar = document.getElementById('sidebar') as HTMLElement;
   const search = sidebar.querySelector('input') as HTMLInputElement;
   search.addEventListener('input', () => {
-    const q = search.value.trim().toLowerCase();
+    const q = foldText(search.value.trim());
     let shown = 0;
     sidebar.querySelectorAll<HTMLLIElement>('li[data-name]').forEach((li) => {
       const match = !q || (li.dataset.name ?? '').includes(q);
