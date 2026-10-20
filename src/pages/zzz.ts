@@ -384,7 +384,7 @@ const SETTING_FIELDS: { key: keyof Settings; label: string; step: number; min: n
   { key: 'pivotRight', label: 'Độ rộng đáy/đỉnh, bên phải', step: 1, min: 1, max: 20 },
   { key: 'rsiLow', label: 'Ngưỡng RSI quá bán', step: 1, min: 5, max: 50 },
   { key: 'rsiHigh', label: 'Ngưỡng RSI quá mua', step: 1, min: 50, max: 95 },
-  { key: 'trendMinScore', label: 'Điểm tối thiểu công nhận xu hướng (trên 6)', step: 1, min: 2, max: 6 },
+  { key: 'trendMinScore', label: 'Điểm tối thiểu công nhận xu hướng (trên 7)', step: 1, min: 2, max: 7 },
 ];
 
 function renderSettings() {

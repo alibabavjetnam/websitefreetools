@@ -83,7 +83,7 @@ export interface Settings {
   pivotRight: number;
   rsiLow: number;
   rsiHigh: number;
-  trendMinScore: number; // điểm tối thiểu (trên 6) để công nhận xu hướng
+  trendMinScore: number; // điểm tối thiểu (trên 7) để công nhận xu hướng
 }
 
 export const DEFAULT_SETTINGS: Settings = {
