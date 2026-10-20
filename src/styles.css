@@ -261,13 +261,13 @@ a {
 /* ---------- Nội dung ---------- */
 .content {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1280px;
   padding: 40px 40px 64px;
 }
 
 .lead {
   margin: 10px 0 0;
-  max-width: 62ch;
+  max-width: 100ch;
   color: var(--muted);
   font-size: 1.0625rem;
 }
@@ -283,7 +283,7 @@ a {
   font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 700;
   letter-spacing: -0.025em;
-  max-width: 18ch;
+  text-wrap: balance;
 }
 
 .home-tools {
@@ -347,7 +347,6 @@ a {
 .tool-desc {
   color: var(--muted);
   font-size: 0.9375rem;
-  max-width: 70ch;
 }
 
 .tool-cat {
@@ -358,7 +357,7 @@ a {
 
 .home-guide {
   margin-top: 40px;
-  max-width: 68ch;
+  max-width: 100ch;
 }
 .steps {
   display: flex;
@@ -375,7 +374,7 @@ a {
 
 .home-about {
   margin-top: 40px;
-  max-width: 68ch;
+  max-width: 100ch;
 }
 .home-about p {
   margin: 0;
@@ -807,7 +806,7 @@ output {
 
 /* ---------- Trang nội dung (chính sách, điều khoản) ---------- */
 .prose {
-  max-width: 68ch;
+  max-width: 90ch;
 }
 .prose h2 {
   margin: 32px 0 10px;
