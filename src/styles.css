@@ -94,8 +94,12 @@ a {
   top: 0;
   z-index: 50;
   height: var(--topbar-h);
-  background: var(--ink);
+  background: var(--accent);
   color: #fff;
+}
+/* Viền focus mặc định cùng màu nền xanh, nên đổi sang trắng trên menu ngang */
+.topbar :focus-visible {
+  outline-color: #fff;
 }
 
 .topbar-inner {
@@ -144,17 +148,17 @@ a {
   display: flex;
   align-items: center;
   padding: 0 14px;
-  color: #c7d0de;
+  color: #fff;
   text-decoration: none;
   font-size: 0.9375rem;
   font-weight: 500;
   border-bottom: 2px solid transparent;
 }
 .topnav-link:hover {
-  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 .topnav-link[aria-current='page'] {
-  color: #fff;
+  font-weight: 700;
   border-bottom-color: #fff;
 }
 
@@ -164,7 +168,7 @@ a {
   padding: 8px 14px;
   background: transparent;
   color: #fff;
-  border: 1px solid #4a5a76;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: var(--radius-sm);
   font: inherit;
   font-size: 0.9375rem;
