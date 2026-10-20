@@ -88,7 +88,6 @@ function renderSidebar(activeTool?: string): string {
 
 function renderFooter(): string {
   const root = rootPath();
-  const toolLinks = TOOLS.map((t) => `<li><a href="${toolHref(t)}">${escapeHtml(t.name)}</a></li>`).join('');
   return `
     <footer class="site-footer">
       <div class="footer-inner">
@@ -100,13 +99,10 @@ function renderFooter(): string {
           <p>Công cụ trực tuyến miễn phí, dùng ngay trên trình duyệt. Không cần cài đặt, không cần tài khoản.</p>
           <p class="footer-privacy">Nội dung bạn nhập được xử lý ngay trên máy của bạn, không gửi lên máy chủ.</p>
         </div>
-        <nav class="footer-col" aria-label="Công cụ">
-          <h2>Công cụ</h2>
-          <ul>${toolLinks}</ul>
-        </nav>
         <nav class="footer-col" aria-label="Thông tin">
           <h2>Thông tin</h2>
           <ul>
+            <li><a href="${root}/index.html#cong-cu">Tất cả công cụ</a></li>
             <li><a href="${root}/index.html#gioi-thieu">Giới thiệu</a></li>
             <li><a href="${root}/index.html#huong-dan">Hướng dẫn</a></li>
           </ul>
