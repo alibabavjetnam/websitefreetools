@@ -60,7 +60,7 @@ export class PriceChart {
       symbolRotate: m.side === 'below' ? 180 : 0,
       symbolOffset: [0, m.side === 'below' ? '50%' : '-50%'],
       itemStyle: { color: signal },
-      label: { color: '#1b1300', fontSize: 9, fontWeight: 700, offset: [0, m.side === 'below' ? 4 : -2] },
+      label: { color: css('--signal-ink') || '#ffffff', fontSize: 9, fontWeight: 700, offset: [0, m.side === 'below' ? 4 : -2] },
     }));
 
     const markLines: unknown[] = [];
