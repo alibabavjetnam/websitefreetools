@@ -1,6 +1,7 @@
 import './styles.css';
 import { GROUPS, TOOLS, type ToolInfo } from './tools';
 import { lineIcon } from './icons';
+import { GoogleAuthError, currentUser, signIn, signOut } from './google/auth';
 import { encodeQr, qrToSvg } from './lib/qr';
 import { barcodeToSvg, encodeBarcode } from './lib/barcode';
 
@@ -54,6 +55,7 @@ function renderHeader(active: string): string {
           ${link(`${root}/index.html#gioi-thieu`, 'Giới thiệu', 'about')}
           ${link(`${root}/index.html#huong-dan`, 'Hướng dẫn', 'guide')}
         </nav>
+        <div class="account" id="account"></div>
         <button class="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="false">Công cụ</button>
       </div>
     </header>`;
@@ -129,6 +131,73 @@ function renderFooter(): string {
     </footer>`;
 }
 
+/** Nút đăng nhập Google / tài khoản trên menu ngang */
+function renderAccount(): void {
+  const box = document.getElementById('account');
+  if (!box) return;
+  const user = currentUser();
+  if (!user) {
+    box.innerHTML = '<button type="button" class="account-btn" data-account="login">Đăng nhập</button>';
+    return;
+  }
+  const initial = escapeHtml((user.name || user.email).trim().charAt(0).toUpperCase());
+  const avatar = user.picture
+    ? `<img src="${escapeHtml(user.picture)}" alt="" referrerpolicy="no-referrer" />`
+    : `<span>${initial}</span>`;
+  box.innerHTML = `
+    <button type="button" class="account-btn account-btn--user" data-account="menu" aria-expanded="false" aria-haspopup="true">
+      <span class="account-avatar">${avatar}</span><span class="account-name">${escapeHtml(user.name)}</span>
+    </button>
+    <div class="account-menu" hidden>
+      <p><b>${escapeHtml(user.name)}</b><br />${escapeHtml(user.email)}</p>
+      <p class="note">Dữ liệu các công cụ được lưu trong thư mục WFTools trên Google Drive của bạn.</p>
+      <a href="https://drive.google.com/drive/search?q=WFTools" target="_blank" rel="noopener">Mở Google Drive</a>
+      <button type="button" class="btn btn-sm" data-account="logout">Đăng xuất</button>
+    </div>`;
+}
+
+function setupAccount(): void {
+  const box = document.getElementById('account');
+  if (!box) return;
+  renderAccount();
+  window.addEventListener('wft-auth-change', renderAccount);
+  box.addEventListener('click', async (e) => {
+    const action = (e.target as HTMLElement).closest<HTMLElement>('[data-account]')?.dataset.account;
+    const menu = box.querySelector<HTMLElement>('.account-menu');
+    if (action === 'login') {
+      try {
+        await signIn();
+      } catch (err) {
+        alertMessage(err instanceof GoogleAuthError ? err.message : 'Đăng nhập không thành công.');
+      }
+    } else if (action === 'menu' && menu) {
+      menu.hidden = !menu.hidden;
+      box.querySelector('[data-account="menu"]')?.setAttribute('aria-expanded', String(!menu.hidden));
+    } else if (action === 'logout') {
+      signOut();
+    }
+  });
+  document.addEventListener('click', (e) => {
+    const menu = box.querySelector<HTMLElement>('.account-menu');
+    if (menu && !menu.hidden && !box.contains(e.target as Node)) menu.hidden = true;
+  });
+}
+
+/** Thông báo ngắn ở cuối màn hình (dùng chung cho lỗi đăng nhập) */
+function alertMessage(text: string): void {
+  let el = document.getElementById('toast');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'toast';
+    el.className = 'toast';
+    el.setAttribute('role', 'status');
+    document.body.appendChild(el);
+  }
+  el.textContent = text;
+  el.classList.add('is-visible');
+  window.setTimeout(() => el?.classList.remove('is-visible'), 4000);
+}
+
 /**
  * Dựng khung trang: menu ngang trên cùng + menu công cụ bên trái.
  * Nội dung riêng của mỗi trang nằm sẵn trong <main id="content"> của file HTML.
@@ -144,6 +213,7 @@ export function mountLayout(opts: { activeNav?: string; activeTool?: string } = 
   shell.appendChild(main);
   document.body.insertAdjacentHTML('afterbegin', renderHeader(opts.activeNav ?? ''));
   shell.insertAdjacentHTML('afterend', renderFooter());
+  setupAccount();
 
   // Tìm kiếm trong menu trái
   const sidebar = document.getElementById('sidebar') as HTMLElement;
