@@ -41,7 +41,7 @@ function encodeCode128(input: string): BarcodeResult {
   if (input.length === 0) throw new BarcodeInputError('Hãy nhập nội dung cần mã hoá.');
   for (const ch of input) {
     const c = ch.charCodeAt(0);
-    if (c > 127) throw new BarcodeInputError('Code 128 chỉ hỗ trợ ký tự ASCII (không dấu). Hãy bỏ dấu tiếng Việt hoặc dùng mã QR.');
+    if (c > 127) throw new BarcodeInputError('Code 128 chỉ nhận chữ không dấu, số và ký hiệu thông thường. Hãy bỏ dấu tiếng Việt hoặc dùng công cụ Tạo mã QR.');
   }
 
   const codes: number[] = [];
@@ -151,7 +151,7 @@ function normalizeGs1(input: string, dataLen: number, name: string): string {
   if (s.length === dataLen + 1) {
     const expected = gs1CheckDigit(s.slice(0, dataLen));
     if (Number(s[dataLen]) !== expected)
-      throw new BarcodeInputError(`Số kiểm tra không đúng: chữ số cuối phải là ${expected}.`);
+      throw new BarcodeInputError(`Chữ số cuối chưa đúng, phải là ${expected}. Bạn có thể bỏ chữ số cuối để hệ thống tự thêm.`);
     return s;
   }
   throw new BarcodeInputError(`${name} cần ${dataLen} chữ số (hoặc ${dataLen + 1} chữ số kèm số kiểm tra).`);
@@ -216,11 +216,11 @@ function encodeCode39(input: string): BarcodeResult {
 }
 
 export const BARCODE_FORMATS: { id: BarcodeFormat; label: string; hint: string; sample: string }[] = [
-  { id: 'CODE128', label: 'Code 128', hint: 'Chữ, số và ký hiệu ASCII. Dùng phổ biến cho vận chuyển, kho hàng.', sample: 'WFT-2026-0001' },
-  { id: 'EAN13', label: 'EAN-13', hint: '12 chữ số, số kiểm tra được tự thêm. Mã sản phẩm bán lẻ (Việt Nam bắt đầu bằng 893).', sample: '893123456789' },
-  { id: 'EAN8', label: 'EAN-8', hint: '7 chữ số, số kiểm tra được tự thêm. Dùng cho sản phẩm nhỏ.', sample: '8931234' },
-  { id: 'UPCA', label: 'UPC-A', hint: '11 chữ số, số kiểm tra được tự thêm. Phổ biến ở Bắc Mỹ.', sample: '03600029145' },
-  { id: 'CODE39', label: 'Code 39', hint: 'Chữ in hoa A–Z, số 0–9 và - . $ / + %. Dùng trong công nghiệp, thẻ nhân viên.', sample: 'WFTOOLS-39' },
+  { id: 'CODE128', label: 'Code 128', hint: 'Nhận chữ không dấu, số và ký hiệu. Hay dùng cho đơn hàng, vận chuyển, kho hàng.', sample: 'WFT-2026-0001' },
+  { id: 'EAN13', label: 'EAN-13', hint: 'Nhập 12 chữ số, chữ số cuối được tự thêm. Mã vạch trên hàng bán lẻ, hàng Việt Nam bắt đầu bằng 893.', sample: '893123456789' },
+  { id: 'EAN8', label: 'EAN-8', hint: 'Nhập 7 chữ số, chữ số cuối được tự thêm. Dùng cho sản phẩm nhỏ.', sample: '8931234' },
+  { id: 'UPCA', label: 'UPC-A', hint: 'Nhập 11 chữ số, chữ số cuối được tự thêm. Hay gặp trên hàng Mỹ.', sample: '03600029145' },
+  { id: 'CODE39', label: 'Code 39', hint: 'Nhận chữ in hoa không dấu, số và - . $ / + %. Hay dùng cho thẻ nhân viên, nhãn thiết bị.', sample: 'WFTOOLS-39' },
 ];
 
 export function encodeBarcode(format: BarcodeFormat, input: string): BarcodeResult {

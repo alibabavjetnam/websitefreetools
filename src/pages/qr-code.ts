@@ -91,8 +91,12 @@ function render(): void {
     current = { qr, text };
     output.classList.remove('is-empty');
     output.innerHTML = currentSvg(qr.size + Number(val('margin')) * 2);
-    const bytes = new TextEncoder().encode(text).length;
-    meta.textContent = `Phiên bản ${qr.version}, ${qr.size}×${qr.size} ô, ${bytes} byte dữ liệu`;
+    meta.textContent =
+      qr.version <= 6
+        ? 'Mã gọn, dễ quét ở mọi kích cỡ.'
+        : qr.version <= 15
+          ? 'Mã khá dày, nên in rộng từ 3 cm trở lên.'
+          : 'Mã rất dày vì nội dung dài. Hãy rút ngắn nội dung hoặc in thật to để dễ quét.';
     errorBox.hidden = true;
     setDisabled(false);
     if (changed) pulseScan(output);

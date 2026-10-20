@@ -36,7 +36,7 @@
           </div>
 
           <div class="fields" data-type="wifi" hidden>
-            <label class="field"><span class="field-label">Tên mạng (SSID)</span><input name="ssid" type="text" placeholder="Nha-Toi-5G" /></label>
+            <label class="field"><span class="field-label">Tên mạng Wi‑Fi</span><input name="ssid" type="text" placeholder="Nha-Toi-5G" /></label>
             <label class="field"><span class="field-label">Mật khẩu</span><input name="wifiPass" type="text" autocomplete="off" /></label>
             <div class="field-row">
               <label class="field"><span class="field-label">Bảo mật</span>
@@ -65,12 +65,12 @@
             <summary>Tuỳ chỉnh</summary>
             <div class="options-body">
               <label class="field">
-                <span class="field-label">Mức sửa lỗi</span>
+                <span class="field-label">Độ bền của mã</span>
                 <select name="ecc">
-                  <option value="L">Thấp (7%) — mã gọn nhất</option>
-                  <option value="M" selected>Vừa (15%) — khuyên dùng</option>
-                  <option value="Q">Khá (25%)</option>
-                  <option value="H">Cao (30%) — chịu bẩn, xước tốt</option>
+                  <option value="L">Thấp, mã gọn nhất</option>
+                  <option value="M" selected>Vừa (nên chọn)</option>
+                  <option value="Q">Khá</option>
+                  <option value="H">Cao, vẫn quét được khi mã bị bẩn hoặc xước</option>
                 </select>
               </label>
               <label class="field">
@@ -78,7 +78,7 @@
                 <input type="range" name="size" min="128" max="2048" step="64" value="512" />
               </label>
               <label class="field">
-                <span class="field-label">Lề trắng: <output name="marginOut">4</output> ô</span>
+                <span class="field-label">Viền trắng: <output name="marginOut">4</output></span>
                 <input type="range" name="margin" min="0" max="10" step="1" value="4" />
               </label>
               <div class="field-row">

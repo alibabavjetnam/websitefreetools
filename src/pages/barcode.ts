@@ -77,7 +77,7 @@ function render(): void {
     output.innerHTML = svgFor(result);
     const autoCheck = result.text.length > raw.replace(/\s+/g, '').length && format() !== 'CODE39';
     meta.textContent = autoCheck
-      ? `${info.label}: ${result.text} (đã thêm số kiểm tra ${result.text.slice(-1)})`
+      ? `${info.label}: ${result.text} (đã tự thêm chữ số cuối ${result.text.slice(-1)})`
       : `${info.label}: ${result.text}`;
     errorBox.hidden = true;
     setDisabled(false);
