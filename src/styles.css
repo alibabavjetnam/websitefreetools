@@ -350,6 +350,23 @@ a {
   white-space: nowrap;
 }
 
+.home-guide {
+  margin-top: 40px;
+  max-width: 68ch;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 1.4em;
+  color: var(--ink-soft);
+}
+.steps strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .home-about {
   margin-top: 40px;
   max-width: 68ch;

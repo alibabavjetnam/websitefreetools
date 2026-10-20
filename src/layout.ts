@@ -3,8 +3,6 @@ import { CATEGORIES, TOOLS, type ToolInfo } from './tools';
 import { encodeQr, qrToSvg } from './lib/qr';
 import { barcodeToSvg, encodeBarcode } from './lib/barcode';
 
-const REPO_URL = 'https://github.com/alibabavjetnam/websitefreetools';
-
 /** Đường dẫn về thư mục gốc, khai báo bằng data-root trên <body> ("." hoặc "..") */
 export function rootPath(): string {
   return document.body.dataset.root ?? '.';
@@ -48,7 +46,7 @@ function renderHeader(active: string): string {
           ${link(`${root}/index.html`, 'Trang chủ', 'home')}
           ${link(`${root}/index.html#cong-cu`, 'Tất cả công cụ', 'tools')}
           ${link(`${root}/index.html#gioi-thieu`, 'Giới thiệu', 'about')}
-          <a href="${REPO_URL}" class="topnav-link" target="_blank" rel="noopener">GitHub</a>
+          ${link(`${root}/index.html#huong-dan`, 'Hướng dẫn', 'guide')}
         </nav>
         <button class="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="false">Công cụ</button>
       </div>
@@ -77,7 +75,7 @@ function renderSidebar(activeTool?: string): string {
       <nav class="side-mainnav" aria-label="Menu chính">
         <a href="${root}/index.html">Trang chủ</a>
         <a href="${root}/index.html#gioi-thieu">Giới thiệu</a>
-        <a href="${REPO_URL}" target="_blank" rel="noopener">GitHub</a>
+        <a href="${root}/index.html#huong-dan">Hướng dẫn</a>
       </nav>
       <label class="side-search">
         <span class="visually-hidden">Tìm công cụ</span>
