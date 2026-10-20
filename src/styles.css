@@ -892,6 +892,11 @@ output {
 .data-table td:first-child {
   text-align: left;
 }
+/* Cột nhãn được xuống dòng để cột số luôn hiện đủ trên màn hình hẹp */
+.data-table td:first-child {
+  white-space: normal;
+  min-width: 9em;
+}
 .data-table th {
   position: sticky;
   top: 0;
