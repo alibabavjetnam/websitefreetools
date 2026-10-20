@@ -36,7 +36,11 @@ const tool = (id: string, group: string, name: string, description: string, icon
 
 export const TOOLS: ToolInfo[] = [
   // File & hình ảnh
-  tool('image-convert', 'file', 'Nén & đổi định dạng ảnh', 'Giảm dung lượng, đổi sang JPG, PNG, WebP, thu nhỏ kích thước nhiều ảnh cùng lúc.'),
+  tool('image-convert', 'file', 'Nén ảnh', 'Giảm dung lượng ảnh, thu nhỏ kích thước nhiều ảnh cùng lúc để đăng web, gửi email nhanh hơn.'),
+  tool('image-format', 'file', 'Chuyển đổi định dạng ảnh', 'Đổi ảnh qua lại giữa JPG, PNG, WebP, AVIF, BMP, ICO (favicon) cho website, ứng dụng hoặc lưu trữ.'),
+  tool('image-base64', 'file', 'Ảnh sang Base64', 'Chuyển ảnh thành chuỗi Base64 để nhúng vào HTML, CSS, mã nguồn, và đổi Base64 ngược lại thành ảnh.'),
+  tool('bg-remove', 'file', 'Xoá nền ảnh', 'Xoá nền ảnh sản phẩm, chân dung, ảnh đại diện. Nền đơn giản xử lý tức thì, nền phức tạp dùng AI chạy trên máy.'),
+  tool('watermark', 'file', 'Thêm watermark vào ảnh', 'Chèn chữ, logo hoặc dấu bản quyền lên một hoặc nhiều ảnh cùng lúc.'),
 
   // Công cụ kỹ thuật tin học
   tool('dev-tools', 'dev', 'JSON, Base64, Regex', 'Định dạng và kiểm tra JSON, mã hoá Base64, thử biểu thức chính quy.'),

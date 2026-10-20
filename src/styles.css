@@ -1687,6 +1687,91 @@ fieldset.field {
   }
 }
 
+/* Xoá nền, watermark, Base64 */
+.bg-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 12px;
+}
+.bg-compare figure {
+  margin: 0;
+}
+.bg-compare figcaption {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.bg-stage {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.checker {
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #e3e7ec 25%, transparent 25%), linear-gradient(-45deg, #e3e7ec 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e3e7ec 75%), linear-gradient(-45deg, transparent 75%, #e3e7ec 75%);
+  background-size: 18px 18px;
+  background-position: 0 0, 0 9px, 9px -9px, -9px 0;
+}
+.bg-canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 520px;
+  height: auto;
+  cursor: crosshair;
+}
+#ai-progress {
+  width: 100%;
+  accent-color: var(--accent);
+}
+.pos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 44px) auto;
+  grid-template-rows: repeat(3, 36px);
+  gap: 4px;
+}
+.pos-grid button {
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.pos-grid button[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.pos-grid .pos-tile {
+  grid-column: 4;
+  grid-row: 1 / 4;
+  padding: 0 14px;
+  margin-left: 8px;
+}
+.b64-preview {
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  padding: 8px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm);
+  background-color: #fff;
+}
+.b64-preview img {
+  max-width: 100%;
+  max-height: 260px;
+}
+.b64-kinds {
+  margin-top: 0;
+}
+
 /* ---------- Tài khoản Google trên menu ngang ---------- */
 .account {
   position: relative;
