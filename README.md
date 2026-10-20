@@ -9,8 +9,8 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Nhóm | Công cụ | Trang |
 | --- | --- | --- |
 | File & hình ảnh | Nén & đổi định dạng ảnh | `tools/image-convert.html` |
-| Lập trình & kỹ thuật | JSON, Base64, Regex | `tools/dev-tools.html` |
-| Lập trình & kỹ thuật | Cron & Unix timestamp | `tools/cron-time.html` |
+| Công cụ kỹ thuật tin học | JSON, Base64, Regex | `tools/dev-tools.html` |
+| Công cụ kỹ thuật tin học | Cron & Unix timestamp | `tools/cron-time.html` |
 | Kinh doanh online | Tạo mã vạch | `tools/barcode.html` |
 | Tài chính & tính toán | Tính khoản vay | `tools/loan.html` |
 | Tài chính & tính toán | Lãi kép & tích luỹ | `tools/compound.html` |

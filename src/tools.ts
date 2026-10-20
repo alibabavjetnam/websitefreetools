@@ -23,11 +23,11 @@ export interface ToolInfo {
 
 export const GROUPS: ToolGroup[] = [
   { id: 'file', name: 'File & hình ảnh', description: 'Nén, đổi định dạng và xử lý file ngay trên máy.' },
-  { id: 'dev', name: 'Lập trình & kỹ thuật', description: 'Tiện ích tra cứu, định dạng dữ liệu cho dân kỹ thuật.' },
   { id: 'business', name: 'Kinh doanh online', description: 'Công cụ cho shop online, hộ kinh doanh, freelancer.' },
   { id: 'finance', name: 'Tài chính & tính toán', description: 'Tính toán chính xác theo công thức và quy định hiện hành.' },
   { id: 'marketing', name: 'Tiếp thị', description: 'Mã QR, liên kết chiến dịch, màu sắc thương hiệu.' },
   { id: 'life', name: 'Năng suất & đời sống', description: 'Tiện ích dùng hằng ngày.' },
+  { id: 'dev', name: 'Công cụ kỹ thuật tin học', description: 'Tiện ích tra cứu, định dạng dữ liệu cho dân kỹ thuật.' },
 ];
 
 const tool = (id: string, group: string, name: string, description: string, iconSample?: string): ToolInfo => ({
@@ -38,7 +38,7 @@ export const TOOLS: ToolInfo[] = [
   // File & hình ảnh
   tool('image-convert', 'file', 'Nén & đổi định dạng ảnh', 'Giảm dung lượng, đổi sang JPG, PNG, WebP, thu nhỏ kích thước nhiều ảnh cùng lúc.'),
 
-  // Lập trình & kỹ thuật
+  // Công cụ kỹ thuật tin học
   tool('dev-tools', 'dev', 'JSON, Base64, Regex', 'Định dạng và kiểm tra JSON, mã hoá Base64, thử biểu thức chính quy.'),
   tool('cron-time', 'dev', 'Cron & Unix timestamp', 'Tạo và đọc biểu thức cron, xem các lần chạy tiếp theo, đổi timestamp sang ngày giờ.'),
 
