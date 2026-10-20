@@ -11,6 +11,7 @@ export default defineConfig({
         home: resolve(__dirname, 'index.html'),
         qrCode: resolve(__dirname, 'tools/qr-code.html'),
         barcode: resolve(__dirname, 'tools/barcode.html'),
+        stockChart: resolve(__dirname, 'tools/stock-chart.html'),
       },
     },
   },

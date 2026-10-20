@@ -31,6 +31,14 @@ export const TOOLS: ToolInfo[] = [
     category: 'Mã & nhãn',
     iconSample: 'WFT',
   },
+  {
+    id: 'stock-chart',
+    name: 'Biểu đồ stock',
+    description: 'Biểu đồ giá cập nhật theo thời gian thực, cho biết xu hướng tăng giảm và tín hiệu mua bán. Kèm thống kê thắng thua của tín hiệu.',
+    path: 'tools/stock-chart.html',
+    category: 'Tài chính',
+    iconSample: '',
+  },
 ];
 
 export const CATEGORIES = [...new Set(TOOLS.map((t) => t.category))];

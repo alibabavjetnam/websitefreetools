@@ -1,0 +1,241 @@
+/* Biểu đồ stock — chuyển từ công cụ 4v2.
+   Mọi quy tắc được giới hạn trong khung .stock-app để không ảnh hưởng các trang khác. */
+
+.stock-app {
+  --font: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --bg: #eef1f4;
+  --panel: #ffffff;
+  --sunken: #eaeef3;
+  --ink: #16233a;
+  --muted: #5b6779;
+  --line: #d5dbe3;
+  --up: #0e9b72;
+  --down: #d6434b;
+  --signal: #e9a517;
+  --accent: #1f5eff;
+  --accent-ink: #ffffff;
+  --radius-lg: 12px;
+  --radius-sm: 7px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+.stock-app button,
+.stock-app input,
+.stock-app select,
+.stock-app textarea { font: inherit; color: inherit; }
+.stock-app .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.stock-app code { font-size: 0.9em; background: var(--sunken); padding: 1px 5px; border-radius: 4px; }
+.stock-app .disclaimer { margin: 16px 0 0; color: var(--muted); font-size: 0.83rem; }
+
+/* Trang công cụ này cần rộng hơn các trang khác */
+.content.content--wide { max-width: 1600px; }
+
+/* ---------- Thanh trên cùng ---------- */
+.stock-app .sa-toolbar {
+  display: flex; align-items: center; gap: 12px 18px; flex-wrap: wrap;
+  padding: 10px 14px;
+  background: var(--panel);
+  border: 1px solid var(--line); border-radius: var(--radius-lg);
+}
+.stock-app .brand { display: flex; align-items: baseline; gap: 8px; }
+.stock-app .brand-mark { font-weight: 700; font-size: 1.35rem; letter-spacing: -0.03em; }
+.stock-app .brand-sub { color: var(--muted); font-size: 0.85rem; }
+
+.stock-app .symbol-box { display: flex; align-items: center; gap: 4px; }
+.stock-app .symbol-input {
+  width: 9.5rem; padding: 7px 10px; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--panel); font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em;
+}
+.stock-app .icon-btn {
+  width: 36px; height: 36px; display: inline-grid; place-items: center; border-radius: var(--radius-sm);
+  border: 1px solid var(--line); background: var(--panel); cursor: pointer; font-size: 1rem;
+}
+.stock-app .icon-btn[aria-pressed="true"] { color: var(--signal); }
+
+.stock-app .tf-group { display: flex; gap: 2px; padding: 3px; background: var(--sunken); border-radius: 10px; overflow-x: auto; }
+.stock-app .tf-group button {
+  border: 0; background: transparent; padding: 5px 11px; border-radius: 7px; cursor: pointer;
+  font-weight: 600; font-size: 0.85rem; color: var(--muted); white-space: nowrap;
+}
+.stock-app .tf-group button[aria-checked="true"] { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgb(0 0 0 / 0.12); }
+
+.stock-app .sa-toolbar-end { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.stock-app .status { display: inline-flex; align-items: center; gap: 7px; font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+.stock-app .status i { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+.stock-app .status[data-state="live"] i { background: var(--up); box-shadow: 0 0 0 3px color-mix(in srgb, var(--up) 25%, transparent); }
+.stock-app .status[data-state="loading"] i, .stock-app .status[data-state="retrying"] i { background: var(--signal); }
+.stock-app .status[data-state="error"] i { background: var(--down); }
+
+.stock-app .btn {
+  padding: 7px 14px; border-radius: var(--radius-sm); border: 1px solid var(--line); background: var(--panel);
+  font-weight: 600; font-size: 0.875rem; cursor: pointer;
+}
+.stock-app .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.stock-app .btn:disabled { opacity: 0.55; cursor: progress; }
+.stock-app .link { color: var(--accent); font-size: 0.875rem; font-weight: 500; }
+
+.stock-app .watchlist { display: flex; gap: 6px; padding: 10px 0 0; overflow-x: auto; scrollbar-width: none; }
+.stock-app .watchlist:empty { display: none; }
+.stock-app .chip {
+  display: inline-flex; align-items: center; gap: 4px; flex: none; padding: 3px 4px 3px 11px;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--panel); font-size: 0.8rem; font-weight: 600;
+}
+.stock-app .chip button { border: 0; background: none; cursor: pointer; padding: 0; }
+.stock-app .chip .chip-x { width: 20px; height: 20px; border-radius: 50%; color: var(--muted); }
+.stock-app .chip .chip-x:hover { background: var(--sunken); color: var(--down); }
+.stock-app .chip[aria-current="true"] { border-color: var(--accent); color: var(--accent); }
+
+.stock-app .notice {
+  margin: 12px 0 0; padding: 10px 14px; border-radius: var(--radius-sm);
+  border-left: 4px solid var(--down); background: color-mix(in srgb, var(--down) 9%, var(--panel)); font-size: 0.875rem;
+}
+.stock-app .notice[data-kind="info"] { border-left-color: var(--signal); background: color-mix(in srgb, var(--signal) 10%, var(--panel)); }
+.stock-app .notice small { display: block; color: var(--muted); margin-top: 4px; }
+
+/* ---------- Bố cục ---------- */
+.stock-app .layout {
+  display: grid; gap: 16px; padding: 16px 0 0;
+  grid-template-columns: minmax(330px, 400px) minmax(0, 1fr);
+  grid-template-areas: "desk chart" "backtest backtest" "tools tools";
+  max-width: 1600px; margin: 0 auto;
+}
+.stock-app .desk { grid-area: desk; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.stock-app .chart-panel { grid-area: chart; min-width: 0; }
+.stock-app .backtest { grid-area: backtest; min-width: 0; }
+.stock-app .tools { grid-area: tools; display: grid; gap: 10px; }
+
+/* ---------- Thẻ xu hướng ---------- */
+.stock-app .trend-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.stock-app .trend-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 12px 14px;
+}
+.stock-app .trend-card h3 { margin: 0; font-size: 0.78rem; font-weight: 500; color: var(--muted); }
+.stock-app .trend-value { font-size: 1.05rem; font-weight: 700; margin-top: 2px; }
+.stock-app .trend-value[data-trend="UP"] { color: var(--up); }
+.stock-app .trend-value[data-trend="DOWN"] { color: var(--down); }
+.stock-app .score { display: flex; gap: 3px; margin-top: 8px; }
+.stock-app .score span { flex: 1; height: 5px; border-radius: 3px; background: var(--sunken); }
+.stock-app .score span.u { background: var(--up); }
+.stock-app .score span.d { background: var(--down); }
+.stock-app .trend-card details { margin-top: 8px; font-size: 0.78rem; color: var(--muted); }
+.stock-app .trend-card summary { cursor: pointer; }
+.stock-app .trend-card ul { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+.stock-app .trend-card li b { color: var(--ink); font-weight: 600; }
+
+/* ---------- Thẻ kênh: thanh đèn tín hiệu ---------- */
+.stock-app .channel {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 14px 16px 12px;
+  position: relative;
+}
+.stock-app .channel[data-ready="true"] { border-color: var(--signal); box-shadow: 0 0 0 3px color-mix(in srgb, var(--signal) 22%, transparent); }
+.stock-app .channel-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.stock-app .channel-head h2 { margin: 0; font-size: 1rem; font-weight: 700; }
+.stock-app .channel-head h2 small { font-weight: 500; color: var(--muted); font-size: 0.8rem; margin-left: 4px; }
+.stock-app .side { font-size: 0.75rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; background: var(--sunken); color: var(--muted); }
+.stock-app .side[data-dir="BUY"] { background: color-mix(in srgb, var(--up) 16%, transparent); color: var(--up); }
+.stock-app .side[data-dir="SELL"] { background: color-mix(in srgb, var(--down) 16%, transparent); color: var(--down); }
+
+.stock-app .rail { display: grid; grid-template-columns: repeat(4, 1fr) 1.35fr; gap: 4px; margin: 12px 0 6px; }
+.stock-app .rail span {
+  height: 26px; border-radius: 6px; display: grid; place-items: center; font-size: 0.72rem; font-weight: 700;
+  background: var(--sunken); color: var(--muted); transition: background-color 0.25s;
+}
+.stock-app .rail span[data-s="pass"] { background: var(--up); color: #fff; }
+.stock-app .rail span[data-s="fail"] { background: color-mix(in srgb, var(--down) 18%, var(--sunken)); color: var(--down); }
+.stock-app .rail span.entry[data-s="pass"] { background: var(--signal); color: #1b1300; }
+.stock-app .verdict { font-size: 0.86rem; font-weight: 600; margin: 4px 0 8px; }
+.stock-app .verdict[data-ready="true"] { color: var(--signal); }
+
+.stock-app .conds { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.stock-app .conds li { display: grid; grid-template-columns: 18px 1fr; gap: 8px; font-size: 0.83rem; line-height: 1.4; }
+.stock-app .conds .lamp { width: 10px; height: 10px; border-radius: 50%; margin-top: 4px; background: var(--line); }
+.stock-app .conds li[data-s="pass"] .lamp { background: var(--up); }
+.stock-app .conds li[data-s="fail"] .lamp { background: var(--down); }
+.stock-app .conds li.entry[data-s="pass"] .lamp { background: var(--signal); }
+.stock-app .conds b { font-weight: 600; display: block; }
+.stock-app .conds span { color: var(--muted); }
+
+/* ---------- Biểu đồ ---------- */
+.stock-app .chart-panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 10px; display: flex; flex-direction: column; }
+.stock-app .chart-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 2px 4px 8px; }
+.stock-app .seg { display: inline-flex; gap: 2px; padding: 3px; background: var(--sunken); border-radius: 9px; }
+.stock-app .seg button {
+  border: 0; background: transparent; padding: 4px 11px; border-radius: 6px; font-size: 0.82rem; font-weight: 600;
+  color: var(--muted); cursor: pointer;
+}
+.stock-app .seg button[aria-selected="true"], .stock-app .seg button[aria-pressed="true"] { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgb(0 0 0 / 0.12); }
+.stock-app .switch { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 600; cursor: pointer; margin-left: auto; }
+.stock-app .switch input { accent-color: var(--up); width: 16px; height: 16px; }
+.stock-app .chart { flex: 1; min-height: 560px; height: calc(100vh - 190px); max-height: 860px; }
+.stock-app .chart-empty { display: grid; place-items: center; height: 100%; margin: 0; color: var(--muted); font-size: 0.9rem; text-align: center; padding: 20px; }
+
+/* ---------- Backtest ---------- */
+.stock-app .section-head h2 { margin: 0; font-size: 1.05rem; }
+.stock-app .hint { color: var(--muted); font-size: 0.83rem; margin: 4px 0 10px; max-width: 72ch; }
+.stock-app .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.stock-app .stat {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 12px 14px;
+}
+.stock-app .stat h3 { margin: 0 0 6px; font-size: 0.85rem; font-weight: 600; }
+.stock-app .stat-main { display: flex; align-items: baseline; gap: 8px; }
+.stock-app .stat-rate { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; }
+.stock-app .stat-sub { color: var(--muted); font-size: 0.8rem; }
+.stock-app .bar { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--down) 55%, var(--sunken)); margin: 8px 0 6px; overflow: hidden; }
+.stock-app .bar i { display: block; height: 100%; background: var(--up); }
+.stock-app .stat dl { display: grid; grid-template-columns: repeat(4, auto); gap: 2px 10px; margin: 0; font-size: 0.78rem; }
+.stock-app .stat dt { color: var(--muted); }
+.stock-app .stat dd { margin: 0; font-weight: 600; }
+
+.stock-app .table-wrap { margin-top: 12px; overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); max-height: 360px; }
+.stock-app .trades { width: 100%; border-collapse: collapse; font-size: 0.83rem; white-space: nowrap; }
+.stock-app .trades th, .stock-app .trades td { padding: 8px 12px; text-align: right; border-bottom: 1px solid var(--line); }
+.stock-app .trades th:nth-child(-n+3), .stock-app .trades td:nth-child(-n+3) { text-align: left; }
+.stock-app .trades th { position: sticky; top: 0; background: var(--panel); color: var(--muted); font-weight: 500; }
+.stock-app .trades tr:last-child td { border-bottom: 0; }
+.stock-app .trades .win { color: var(--up); font-weight: 600; }
+.stock-app .trades .loss { color: var(--down); font-weight: 600; }
+.stock-app .trades .empty { text-align: center; color: var(--muted); padding: 18px; }
+
+/* ---------- Công cụ ---------- */
+.stock-app .tools details { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 12px 16px; }
+.stock-app .tools summary { cursor: pointer; font-weight: 600; }
+.stock-app .manual-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.stock-app .manual-grid label { display: grid; gap: 4px; font-size: 0.83rem; font-weight: 600; }
+.stock-app textarea, .stock-app .settings input {
+  width: 100%; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--sunken); padding: 8px 10px;
+  font-size: 0.82rem;
+}
+.stock-app textarea { resize: vertical; min-height: 110px; }
+.stock-app .row-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 10px; }
+.stock-app .settings { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 10px; }
+.stock-app .settings label { display: grid; gap: 4px; font-size: 0.8rem; color: var(--muted); }
+.stock-app .settings .row-actions { grid-column: 1 / -1; margin: 0; }
+.stock-app .guide p { max-width: 80ch; font-size: 0.88rem; }
+
+/* ---------- Mobile / tablet ---------- */
+@media (max-width: 1240px) {
+  .stock-app .layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "desk" "chart" "backtest" "tools"; }
+  .stock-app .desk { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+  .stock-app .trend-pair { grid-column: 1 / -1; }
+  .stock-app .chart { height: 68vh; min-height: 440px; }
+}
+@media (max-width: 680px) {
+  .stock-app { font-size: 14px; }
+  .stock-app .sa-toolbar { gap: 8px 10px; }
+  .stock-app .brand-sub { display: none; }
+  .stock-app .symbol-box { flex: 1; }
+  .stock-app .symbol-input { width: 100%; }
+  .stock-app .tf-group { order: 5; width: 100%; }
+  .stock-app .tf-group button { flex: 1; }
+  .stock-app .sa-toolbar-end { margin-left: 0; }
+  .stock-app .status span { display: none; }
+  .stock-app .desk { grid-template-columns: minmax(0, 1fr); }
+  .stock-app .chart { height: 62vh; min-height: 380px; }
+  .stock-app .chart-panel { padding: 6px; }
+  .stock-app .switch { margin-left: 0; }
+  .stock-app .stats { grid-template-columns: minmax(0, 1fr); }
+  .stock-app .manual-grid { grid-template-columns: minmax(0, 1fr); }
+  .stock-app .trend-card { padding: 10px 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .stock-app * { transition: none !important; } }

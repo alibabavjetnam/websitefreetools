@@ -23,6 +23,20 @@ export function toolIcon(tool: ToolInfo): string {
     });
     return svg.replace(/width="[\d.]+" height="[\d.]+"/, 'width="28" height="28" preserveAspectRatio="none"');
   }
+  if (tool.id === 'stock-chart') {
+    // Biểu tượng 4 cây nến
+    const candles = [
+      [3, 14, 8, 22, 1], [10, 6, 11, 18, 0], [17, 9, 4, 16, 1], [24, 2, 6, 13, 1],
+    ]
+      .map(([x, top, bodyTop, bodyBottom, filled]) => {
+        const body = filled
+          ? `<rect x="${x - 2}" y="${bodyTop}" width="4" height="${bodyBottom - bodyTop}" fill="currentColor"/>`
+          : `<rect x="${x - 1.5}" y="${bodyTop + 0.5}" width="3" height="${bodyBottom - bodyTop - 1}" fill="none" stroke="currentColor"/>`;
+        return `<line x1="${x}" y1="${top}" x2="${x}" y2="${Math.min(26, bodyBottom + 3)}" stroke="currentColor" stroke-width="1"/>${body}`;
+      })
+      .join('');
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">${candles}</svg>`;
+  }
   return '';
 }
 

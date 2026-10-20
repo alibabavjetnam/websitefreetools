@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biểu đồ stock — WFTools</title>
+    <meta name="description" content="Biểu đồ nến trực tuyến cập nhật theo thời gian thực, kèm đường trung bình, Bollinger, RSI, chấm điểm xu hướng và tín hiệu 2 kênh. Miễn phí, không cần đăng ký." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+  </head>
+  <body data-root="..">
+    <main id="content" class="content content--wide">
+      <header class="tool-head">
+        <h1>Biểu đồ stock</h1>
+        <p class="lead">Nhập mã (ví dụ BTCUSDT), chọn khung thời gian. Biểu đồ tự cập nhật theo thời gian thực và cho biết xu hướng, tín hiệu mua bán.</p>
+      </header>
+
+      <div class="stock-app">
+        <div class="sa-toolbar">
+          <form class="symbol-box" id="symbolForm" autocomplete="off">
+            <label class="sr-only" for="symbolInput">Cặp giao dịch</label>
+            <input id="symbolInput" class="symbol-input" value="BTCUSDT" spellcheck="false" inputmode="latin" />
+            <button type="button" id="saveSymbol" class="icon-btn" title="Lưu vào danh sách theo dõi" aria-label="Lưu vào danh sách theo dõi">☆</button>
+          </form>
+
+          <div class="tf-group" role="radiogroup" aria-label="Khung thời gian giao dịch" id="tfGroup"></div>
+
+          <div class="sa-toolbar-end">
+            <span class="status" id="status" data-state="idle"><i></i><span>Chưa tải</span></span>
+            <button class="btn" id="reloadBtn" type="button">Tải dữ liệu</button>
+          </div>
+        </div>
+
+        <nav class="watchlist" id="watchlist" aria-label="Danh sách theo dõi"></nav>
+
+        <div class="notice" id="notice" hidden></div>
+
+        <div class="layout">
+          <section class="desk" aria-label="Bàn tín hiệu">
+            <div class="trend-pair">
+              <article class="trend-card" id="trendD1"></article>
+              <article class="trend-card" id="trendTF"></article>
+            </div>
+            <article class="channel" id="channelWith"></article>
+            <article class="channel" id="channelCounter"></article>
+          </section>
+
+          <section class="chart-panel" aria-label="Biểu đồ">
+            <div class="chart-toolbar">
+              <div class="seg" role="tablist" aria-label="Chọn biểu đồ">
+                <button role="tab" data-view="tf" aria-selected="true" id="viewTF">Khung giao dịch</button>
+                <button role="tab" data-view="d1" aria-selected="false" id="viewD1">Biểu đồ ngày</button>
+              </div>
+              <div class="seg" role="radiogroup" aria-label="Kiểu biểu đồ">
+                <button data-type="candle" aria-pressed="true">Nến</button>
+                <button data-type="line" aria-pressed="false">Đường</button>
+              </div>
+              <label class="switch"><input type="checkbox" id="liveToggle" checked /><span>Realtime</span></label>
+            </div>
+            <div class="chart" id="chart"><p class="chart-empty">Đang chờ dữ liệu…</p></div>
+          </section>
+
+          <section class="backtest" aria-labelledby="btTitle">
+            <div class="section-head">
+              <h2 id="btTitle">Backtest trên dữ liệu đang xem</h2>
+              <p class="hint" id="btHint">Vào lệnh ở giá đóng cửa nến tín hiệu, cắt lỗ tại râu nến N/M, chốt lời theo tỉ lệ R:R.</p>
+            </div>
+            <div class="stats" id="stats"></div>
+            <div class="table-wrap">
+              <table class="trades">
+                <thead><tr><th>Thời gian</th><th>Kênh</th><th>Lệnh</th><th>Giá vào</th><th>Cắt lỗ</th><th>Chốt lời</th><th>Kết quả</th></tr></thead>
+                <tbody id="tradeRows"><tr><td colspan="7" class="empty">Chưa có lệnh.</td></tr></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="tools">
+            <details id="manualPanel">
+              <summary>Nhập dữ liệu thủ công</summary>
+              <p class="hint">Dùng khi bạn có nguồn dữ liệu khác hoặc không tải được từ Binance. Dán JSON klines của Binance hoặc CSV <code>time,open,high,low,close,volume</code>.</p>
+              <div class="manual-grid">
+                <label>Khung giao dịch (bắt buộc)
+                  <textarea id="manualTF" rows="5" placeholder='[[1700000000000,"37000","37200","36900","37100","123.4"], ...]'></textarea>
+                </label>
+                <label>Biểu đồ ngày (không bắt buộc)
+                  <textarea id="manualD1" rows="5" placeholder="Để trống: hệ thống tự gộp dữ liệu khung giao dịch thành nến ngày."></textarea>
+                </label>
+              </div>
+              <div class="row-actions">
+                <button class="btn" type="button" id="pasteTF">Dán từ clipboard</button>
+                <button class="btn primary" type="button" id="analyzeManual">Phân tích dữ liệu đã dán</button>
+                <a class="link" id="rawLink" target="_blank" rel="noopener">Mở link dữ liệu Binance</a>
+              </div>
+            </details>
+
+            <details>
+              <summary>Tham số</summary>
+              <form class="settings" id="settingsForm"></form>
+            </details>
+
+            <details>
+              <summary>Cách hệ thống đọc tín hiệu</summary>
+              <div class="guide">
+                <p><b>Xu hướng</b> được chấm trên 6 điểm: cấu trúc đỉnh - đáy (2 điểm), kênh giá 50 nến, trật tự EMA20/SMA50/SMA200, vị trí giá so với MA, độ dốc SMA50 và SMA200. Đạt từ 4 điểm, hơn phe kia ít nhất 3 điểm và cấu trúc không ngược chiều thì được công nhận là có xu hướng.</p>
+                <p><b>Kênh 1, cùng xu hướng:</b> D1 có xu hướng; khung giao dịch cùng xu hướng; giá đã chọc Bollinger (dải dưới khi tăng, dải trên khi giảm) rồi đóng cửa trở lại trong dải; RSI đã về 30 (hoặc 70) rồi quay lại. Nến vào lệnh: gọi N là nến có râu thấp nhất của nhịp điều chỉnh, giá hiện tại phải cao hơn đỉnh nến N-1 (xu hướng giảm: M là nến có râu cao nhất, giá phải thấp hơn đáy nến M-1).</p>
+                <p><b>Kênh 2, ngược xu hướng:</b> D1 có xu hướng; khung giao dịch đi ngang hoặc ngược D1; giá chọc Bollinger rồi vào trong; RSI về 30 (70) tạo đáy 1 (đỉnh 1), sau đó giá tạo đáy 2 cao hơn (đỉnh 2 thấp hơn), cách đáy 1 ít nhất 9 nến. Nến vào lệnh: N là râu đáy 2, giá hiện tại phải cao hơn đỉnh nến N-1 (với đỉnh 2 là M, giá phải thấp hơn đáy nến M-1).</p>
+                        </div>
+            </details>
+          </section>
+        </div>
+
+        <p class="disclaimer">Công cụ hỗ trợ phân tích, không phải lời khuyên đầu tư. Dữ liệu giá lấy từ sàn Binance.</p>
+      </div>
+    </main>
+    <script type="module" src="/src/pages/stock-chart.ts"></script>
+  </body>
+</html>
