@@ -3,7 +3,7 @@
  * với một bảng tính trong Google Drive của họ (Google Sheets là bản chính, tự lưu sau mỗi thay đổi).
  */
 import { GoogleAuthError, currentUser, hasLiveToken, signIn } from './auth';
-import { ensureSpreadsheet, readRows, writeRows, type SpreadsheetRef } from './sheets';
+import { ensureSpreadsheet, findSpreadsheet, readRows, writeRows, type SpreadsheetRef } from './sheets';
 import { escapeHtml, storage, toast } from '../ui';
 
 export interface Column<T> {
@@ -46,17 +46,23 @@ export class SheetStore<D extends TableData<D>> {
   private dirty = false;
   private bar: HTMLElement | null = null;
   private listeners: ((d: D) => void)[] = [];
+  /** Đã kết nối Google trong phiên này (có thể chưa có bảng tính nếu người dùng chưa nhập gì) */
+  private connected = false;
+  private connecting = false;
 
   constructor(private opts: StoreOptions<D>) {
     this.local = storage<D>(`data:${opts.tag}`, opts.empty);
     this.link = storage<{ email: string; id: string; url: string } | null>(`link:${opts.tag}`, null);
     this.pending = storage<boolean>(`pending:${opts.tag}`, false);
     this.data = { ...opts.empty, ...this.local.get() };
+    // Đăng nhập ở menu ngang đã xin luôn quyền Drive: kết nối ngay, không bắt bấm thêm lần nữa
     window.addEventListener('wft-auth-change', () => {
       if (!currentUser()) {
         this.ref = null;
+        this.connected = false;
         this.setStatus('local');
-      } else this.refreshStatus();
+      } else if (this.bar && !this.connected && hasLiveToken()) void this.connect(false);
+      else this.refreshStatus();
     });
   }
 
@@ -73,7 +79,7 @@ export class SheetStore<D extends TableData<D>> {
     this.data = next;
     this.local.set(next);
     if (this.link.get()) this.pending.set(true);
-    if (this.ref) {
+    if (this.connected) {
       this.dirty = true;
       window.clearTimeout(this.saveTimer);
       this.saveTimer = window.setTimeout(() => void this.push(), 1200);
@@ -94,17 +100,16 @@ export class SheetStore<D extends TableData<D>> {
       if (this.dirty && this.status === 'syncing') e.preventDefault();
     });
     this.refreshStatus();
-    const linked = this.link.get();
-    const user = currentUser();
-    if (linked && user && linked.email === user.email && hasLiveToken()) void this.connect(false);
+    if (currentUser() && hasLiveToken()) void this.connect(false);
   }
 
   private refreshStatus(): void {
     const user = currentUser();
     const linked = this.link.get();
     if (!user) this.setStatus('local');
-    else if (this.ref) this.setStatus('synced');
-    else this.setStatus('connect', linked && linked.email === user.email ? 'Bấm để mở lại kết nối với Google Sheets.' : '');
+    else if (this.connected) this.setStatus('synced');
+    // Còn tên tài khoản nhưng phiên Google đã hết (đóng trình duyệt, quá 1 giờ): cần một cú bấm để Google cấp phiên mới
+    else this.setStatus('connect', linked && linked.email === user.email ? 'Phiên kết nối Google đã hết hạn.' : 'Chưa kết nối với Google Sheets.');
   }
 
   private setStatus(s: Status, message = ''): void {
@@ -121,11 +126,13 @@ export class SheetStore<D extends TableData<D>> {
       local: `<span class="sync-dot"></span><span>Dữ liệu đang lưu trên trình duyệt này.</span>
         <button type="button" class="btn btn-sm btn-primary" data-sync="connect">Đăng nhập Google để lưu vào Google Sheets</button>`,
       connect: `<span class="sync-dot"></span><span>Đã đăng nhập ${escapeHtml(user?.email ?? '')}. ${escapeHtml(this.message || 'Chưa kết nối với Google Sheets.')}</span>
-        <button type="button" class="btn btn-sm btn-primary" data-sync="connect">Kết nối Google Sheets</button>`,
+        <button type="button" class="btn btn-sm btn-primary" data-sync="connect">Tiếp tục đồng bộ</button>`,
       syncing: `<span class="sync-dot is-busy"></span><span>Đang lưu vào Google Sheets…</span> ${sheetLink}`,
-      synced: `<span class="sync-dot is-ok"></span><span>Đã đồng bộ với Google Sheets${this.message ? `, ${escapeHtml(this.message)}` : ''}.</span> ${sheetLink}`,
+      synced: this.ref
+        ? `<span class="sync-dot is-ok"></span><span>Đã đồng bộ với Google Sheets${this.message ? `, ${escapeHtml(this.message)}` : ''}.</span> ${sheetLink}`
+        : `<span class="sync-dot is-ok"></span><span>Đã kết nối Google. Bảng tính sẽ được tạo trong Drive của bạn khi bạn thêm dữ liệu đầu tiên.</span>`,
       error: `<span class="sync-dot is-error"></span><span>${escapeHtml(this.message)}</span>
-        <button type="button" class="btn btn-sm" data-sync="${this.ref ? 'retry' : 'connect'}">Thử lại</button>`,
+        <button type="button" class="btn btn-sm" data-sync="${this.connected ? 'retry' : 'connect'}">Thử lại</button>`,
     };
     this.bar.dataset.status = this.status;
     this.bar.innerHTML = map[this.status];
@@ -133,11 +140,20 @@ export class SheetStore<D extends TableData<D>> {
 
   /** Kết nối: đăng nhập nếu cần, tìm/tạo bảng tính, gộp dữ liệu trên máy với dữ liệu trên Sheets */
   async connect(interactive: boolean): Promise<void> {
+    if (this.connecting) return;
+    this.connecting = true;
     try {
       if (interactive && !hasLiveToken()) await signIn();
       this.setStatus('syncing');
-      const specs = (Object.values(this.opts.tables) as TableDef<Row>[]).map((t) => ({ name: t.sheet, header: t.columns.map((c) => c.label) }));
-      this.ref = await ensureSpreadsheet(this.opts.tag, this.opts.title, specs);
+      const found = await findSpreadsheet(this.opts.tag, this.specs());
+      if (!found) {
+        // Chưa có bảng tính: chỉ tạo khi có dữ liệu, tránh rải file trống vào Drive khi người dùng chỉ ghé xem
+        this.connected = true;
+        if (this.hasData()) await this.push();
+        else this.setStatus('synced');
+        return;
+      }
+      this.ref = found;
       const remote = {} as Data;
       for (const [name, def] of Object.entries(this.opts.tables) as [string, TableDef<Row>][]) {
         const rows = await readRows(this.ref.id, def.sheet);
@@ -151,21 +167,37 @@ export class SheetStore<D extends TableData<D>> {
       this.data = merged;
       this.local.set(merged);
       this.link.set({ email: currentUser()?.email ?? '', id: this.ref.id, url: this.ref.url });
+      this.connected = true;
       this.listeners.forEach((fn) => fn(merged));
       // Có dòng chỉ nằm trên máy này: đẩy lên để Sheets đầy đủ
       if (JSON.stringify(merged) !== JSON.stringify(remote)) await this.push();
       else this.setStatus('synced', `lúc ${new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}`);
     } catch (e) {
       this.ref = null;
+      this.connected = false;
       this.setStatus('error', e instanceof GoogleAuthError ? e.message : `Không kết nối được Google Sheets (${(e as Error).message}).`);
+    } finally {
+      this.connecting = false;
     }
   }
 
+  private specs() {
+    return (Object.values(this.opts.tables) as TableDef<Row>[]).map((t) => ({ name: t.sheet, header: t.columns.map((c) => c.label) }));
+  }
+
+  private hasData(): boolean {
+    return Object.values(this.data as unknown as Data).some((rows) => rows.length > 0);
+  }
+
   private async push(): Promise<void> {
-    if (!this.ref) return;
+    if (!this.connected) return;
     this.dirty = false;
     this.setStatus('syncing');
     try {
+      if (!this.ref) {
+        this.ref = await ensureSpreadsheet(this.opts.tag, this.opts.title, this.specs());
+        this.link.set({ email: currentUser()?.email ?? '', id: this.ref.id, url: this.ref.url });
+      }
       for (const [name, def] of Object.entries(this.opts.tables) as [string, TableDef<Row>][]) {
         const cols = def.columns;
         await writeRows(this.ref.id, def.sheet, cols.map((c) => c.label), ((this.data as unknown as Data)[name] ?? []).map((r) => cols.map((c) => r[c.key] ?? '')));

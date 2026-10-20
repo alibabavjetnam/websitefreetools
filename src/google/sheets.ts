@@ -39,6 +39,14 @@ export interface SheetSpec {
 
 export interface SpreadsheetRef { id: string; url: string }
 
+/** Tìm bảng tính đã có của công cụ (không tạo mới) */
+export async function findSpreadsheet(tag: string, sheets: SheetSpec[]): Promise<SpreadsheetRef | null> {
+  const found = await findByTag(tag, SHEET_MIME);
+  if (!found) return null;
+  await ensureSheets(found.id, sheets);
+  return { id: found.id, url: found.webViewLink ?? `https://docs.google.com/spreadsheets/d/${found.id}/edit` };
+}
+
 /** Tìm bảng tính của công cụ, chưa có thì tạo mới với các trang tính và dòng tiêu đề */
 export async function ensureSpreadsheet(tag: string, title: string, sheets: SheetSpec[]): Promise<SpreadsheetRef> {
   const found = await findByTag(tag, SHEET_MIME);
