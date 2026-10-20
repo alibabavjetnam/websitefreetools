@@ -9,9 +9,11 @@
   --muted: #5b6779;
   --line: #d5dbe3;
   --line-strong: #b9c2ce;
-  --accent: #1f5eff;
-  --accent-soft: #e6edff;
-  --laser: #e8382c;
+  /* Bảng màu: chủ đạo #0d6efd, điểm nhấn #b9000e, chữ #16233a */
+  --accent: #0d6efd;
+  --accent-strong: #0b5ed7;
+  --accent-soft: #e7f0ff;
+  --laser: #b9000e;
   --danger: #b42318;
 
   --radius-sm: 6px;
@@ -654,7 +656,7 @@ output {
   top: 0;
   height: 2px;
   background: var(--laser);
-  box-shadow: 0 0 10px 2px rgba(232, 56, 44, 0.45);
+  box-shadow: 0 0 10px 2px rgba(185, 0, 14, 0.4);
   opacity: 0;
   pointer-events: none;
 }
@@ -726,8 +728,8 @@ output {
   color: #fff;
 }
 .btn-primary:hover:not(:disabled) {
-  background: #1349d6;
-  border-color: #1349d6;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
 }
 .btn:disabled {
   opacity: 0.45;

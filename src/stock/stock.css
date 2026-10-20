@@ -11,7 +11,7 @@
   --line: #d5dbe3;
   --up: #0e9b72;
   --down: #d6434b;
-  /* Bảng màu trang /zzz: chủ đạo #0d6efd, điểm nhấn #b9000e, chữ #16233a */
+  /* Cùng bảng màu với toàn site: chủ đạo #0d6efd, điểm nhấn #b9000e, chữ #16233a */
   --signal: #b9000e;
   --signal-ink: #ffffff;
   --accent: #0d6efd;
@@ -29,14 +29,6 @@
 .stock-app .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .stock-app code { font-size: 0.9em; background: var(--sunken); padding: 1px 5px; border-radius: 4px; }
 .stock-app .disclaimer { margin: 16px 0 0; color: var(--muted); font-size: 0.83rem; }
-
-/* Khung chung của site (menu ngang, menu trái) theo bảng màu của trang /zzz */
-.page-zzz {
-  --accent: #0d6efd;
-  --accent-soft: #e7f0ff;
-  --laser: #b9000e;
-  --ink: #16233a;
-}
 
 /* Trang công cụ này cần rộng hơn các trang khác */
 .content.content--wide { max-width: 1600px; }
