@@ -11,7 +11,7 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | File & hình ảnh | Nén ảnh | `tools/image-convert.html` |
 | File & hình ảnh | Chuyển đổi định dạng ảnh (JPG, PNG, WebP, AVIF, BMP, ICO) | `tools/image-format.html` |
 | File & hình ảnh | Ảnh sang Base64 và ngược lại | `tools/image-base64.html` |
-| File & hình ảnh | Xoá nền ảnh (thuật toán, hoặc AI: Transformers.js + BiRefNet lite, giấy phép Apache-2.0/MIT) | `tools/bg-remove.html` |
+| File & hình ảnh | Xoá nền ảnh (nền trắng, nền một màu) | `tools/bg-remove.html` |
 | File & hình ảnh | Thêm watermark vào ảnh | `tools/watermark.html` |
 | Công cụ kỹ thuật tin học | JSON, Base64, Regex | `tools/dev-tools.html` |
 | Công cụ kỹ thuật tin học | Cron & Unix timestamp | `tools/cron-time.html` |

@@ -1726,10 +1726,6 @@ fieldset.field {
   height: auto;
   cursor: crosshair;
 }
-#ai-progress {
-  width: 100%;
-  accent-color: var(--accent);
-}
 .pos-grid {
   display: grid;
   grid-template-columns: repeat(3, 44px) auto;
