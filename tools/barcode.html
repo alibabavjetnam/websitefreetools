@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo mã vạch (barcode) miễn phí — WFTools</title>
+    <meta name="description" content="Tạo mã vạch Code 128, EAN-13, EAN-8, UPC-A, Code 39 miễn phí. Tự tính số kiểm tra, tải về PNG hoặc SVG để in." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo mã vạch</h1>
+        <p class="lead">Chọn chuẩn mã vạch, nhập mã và tải về để in. Số kiểm tra của EAN và UPC được tính tự động.</p>
+      </header>
+
+      <div class="workspace">
+        <form class="panel" id="bc-form" novalidate>
+          <fieldset class="format-list" id="bc-formats">
+            <legend>Chuẩn mã vạch</legend>
+          </fieldset>
+
+          <label class="field">
+            <span class="field-label">Mã cần tạo</span>
+            <input name="value" type="text" autocomplete="off" spellcheck="false" />
+            <span class="field-hint" id="bc-hint"></span>
+          </label>
+
+          <details class="options" open>
+            <summary>Tuỳ chỉnh</summary>
+            <div class="options-body">
+              <label class="field">
+                <span class="field-label">Độ rộng vạch mảnh nhất: <output name="mwOut">2</output> px</span>
+                <input type="range" name="moduleWidth" min="1" max="6" step="1" value="2" />
+              </label>
+              <label class="field">
+                <span class="field-label">Chiều cao vạch: <output name="hOut">100</output> px</span>
+                <input type="range" name="height" min="30" max="240" step="10" value="100" />
+              </label>
+              <div class="field-row">
+                <label class="check"><input type="checkbox" name="showText" checked /><span>Hiện chữ số bên dưới</span></label>
+              </div>
+              <div class="field-row">
+                <label class="color"><input type="color" name="fg" value="#000000" /><span>Màu vạch</span></label>
+                <label class="color"><input type="color" name="bg" value="#ffffff" /><span>Màu nền</span></label>
+              </div>
+            </div>
+          </details>
+        </form>
+
+        <section class="preview" aria-labelledby="preview-title">
+          <h2 id="preview-title" class="visually-hidden">Xem trước</h2>
+          <div class="label-sheet">
+            <div class="code-frame code-frame--bar" id="bc-output" role="img" aria-label="Mã vạch"></div>
+            <span class="scan-line" aria-hidden="true"></span>
+          </div>
+          <p class="code-meta" id="bc-meta" aria-live="polite"></p>
+          <p class="error" id="bc-error" role="alert" hidden></p>
+          <div class="actions">
+            <button type="button" class="btn btn-primary" id="dl-png">Tải PNG</button>
+            <button type="button" class="btn" id="dl-svg">Tải SVG</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/src/pages/barcode.ts"></script>
+  </body>
+</html>

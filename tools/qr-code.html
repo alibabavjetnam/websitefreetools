@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo mã QR miễn phí — WFTools</title>
+    <meta name="description" content="Tạo mã QR miễn phí cho liên kết, văn bản, Wi-Fi, email, số điện thoại, SMS. Tải về PNG hoặc SVG." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo mã QR</h1>
+        <p class="lead">Nhập nội dung, mã QR cập nhật ngay. Quét thử bằng điện thoại trước khi in.</p>
+      </header>
+
+      <div class="workspace">
+        <form class="panel" id="qr-form" novalidate>
+          <fieldset class="segmented" id="qr-type">
+            <legend>Loại nội dung</legend>
+            <label><input type="radio" name="type" value="text" checked /><span>Liên kết / Văn bản</span></label>
+            <label><input type="radio" name="type" value="wifi" /><span>Wi‑Fi</span></label>
+            <label><input type="radio" name="type" value="email" /><span>Email</span></label>
+            <label><input type="radio" name="type" value="tel" /><span>Điện thoại</span></label>
+            <label><input type="radio" name="type" value="sms" /><span>SMS</span></label>
+          </fieldset>
+
+          <div class="fields" data-type="text">
+            <label class="field">
+              <span class="field-label">Nội dung</span>
+              <textarea name="text" rows="4" placeholder="https://example.com">https://github.com/alibabavjetnam/websitefreetools</textarea>
+            </label>
+          </div>
+
+          <div class="fields" data-type="wifi" hidden>
+            <label class="field"><span class="field-label">Tên mạng (SSID)</span><input name="ssid" type="text" placeholder="Nha-Toi-5G" /></label>
+            <label class="field"><span class="field-label">Mật khẩu</span><input name="wifiPass" type="text" autocomplete="off" /></label>
+            <div class="field-row">
+              <label class="field"><span class="field-label">Bảo mật</span>
+                <select name="wifiSec"><option value="WPA">WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass">Không mật khẩu</option></select>
+              </label>
+              <label class="check"><input type="checkbox" name="wifiHidden" /><span>Mạng ẩn</span></label>
+            </div>
+          </div>
+
+          <div class="fields" data-type="email" hidden>
+            <label class="field"><span class="field-label">Gửi đến</span><input name="emailTo" type="email" placeholder="ban@example.com" /></label>
+            <label class="field"><span class="field-label">Tiêu đề</span><input name="emailSubject" type="text" /></label>
+            <label class="field"><span class="field-label">Nội dung thư</span><textarea name="emailBody" rows="3"></textarea></label>
+          </div>
+
+          <div class="fields" data-type="tel" hidden>
+            <label class="field"><span class="field-label">Số điện thoại</span><input name="tel" type="tel" placeholder="0901 234 567" /></label>
+          </div>
+
+          <div class="fields" data-type="sms" hidden>
+            <label class="field"><span class="field-label">Số điện thoại</span><input name="smsTo" type="tel" placeholder="0901 234 567" /></label>
+            <label class="field"><span class="field-label">Tin nhắn</span><textarea name="smsBody" rows="3"></textarea></label>
+          </div>
+
+          <details class="options" open>
+            <summary>Tuỳ chỉnh</summary>
+            <div class="options-body">
+              <label class="field">
+                <span class="field-label">Mức sửa lỗi</span>
+                <select name="ecc">
+                  <option value="L">Thấp (7%) — mã gọn nhất</option>
+                  <option value="M" selected>Vừa (15%) — khuyên dùng</option>
+                  <option value="Q">Khá (25%)</option>
+                  <option value="H">Cao (30%) — chịu bẩn, xước tốt</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="field-label">Kích thước ảnh tải về: <output name="sizeOut">512</output> px</span>
+                <input type="range" name="size" min="128" max="2048" step="64" value="512" />
+              </label>
+              <label class="field">
+                <span class="field-label">Lề trắng: <output name="marginOut">4</output> ô</span>
+                <input type="range" name="margin" min="0" max="10" step="1" value="4" />
+              </label>
+              <div class="field-row">
+                <label class="color"><input type="color" name="fg" value="#000000" /><span>Màu mã</span></label>
+                <label class="color"><input type="color" name="bg" value="#ffffff" /><span>Màu nền</span></label>
+              </div>
+            </div>
+          </details>
+        </form>
+
+        <section class="preview" aria-labelledby="preview-title">
+          <h2 id="preview-title" class="visually-hidden">Xem trước</h2>
+          <div class="label-sheet">
+            <div class="code-frame code-frame--qr" id="qr-output" role="img" aria-label="Mã QR"></div>
+            <span class="scan-line" aria-hidden="true"></span>
+          </div>
+          <p class="code-meta" id="qr-meta" aria-live="polite"></p>
+          <p class="error" id="qr-error" role="alert" hidden></p>
+          <div class="actions">
+            <button type="button" class="btn btn-primary" id="dl-png">Tải PNG</button>
+            <button type="button" class="btn" id="dl-svg">Tải SVG</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/src/pages/qr-code.ts"></script>
+  </body>
+</html>
