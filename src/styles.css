@@ -196,7 +196,7 @@ a {
 
 .side-search input {
   width: 100%;
-  padding: 9px 12px;
+  padding: 5px 12px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: var(--paper);
@@ -475,7 +475,7 @@ input[type='search'],
 textarea,
 select {
   width: 100%;
-  padding: 10px 12px;
+  padding: 5px 12px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-sm);
   background: var(--surface);
@@ -1206,7 +1206,7 @@ fieldset.field {
 
 /* Chi tiêu */
 .input-inline {
-  padding: 8px 10px;
+  padding: 5px 12px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-sm);
   background: var(--surface);
@@ -1333,7 +1333,7 @@ fieldset.field {
 }
 .item-row input {
   width: 100%;
-  padding: 7px 8px;
+  padding: 5px 12px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-sm);
   font: inherit;
@@ -1618,7 +1618,7 @@ fieldset.field {
 }
 .menu-item-row input {
   width: 100%;
-  padding: 7px 8px;
+  padding: 5px 12px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-sm);
   font: inherit;
