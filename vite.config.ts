@@ -21,6 +21,8 @@ export default defineConfig({
         terms: resolve(__dirname, 'dieu-khoan.html'),
         // Trang ẩn, không có trong menu: truy cập trực tiếp tại /zzz
         zzz: resolve(__dirname, 'zzz/index.html'),
+        // Trang khách xem thực đơn khi quét mã QR (dữ liệu nằm sau dấu #)
+        menu: resolve(__dirname, 'm/index.html'),
         ...toolPages,
       },
     },

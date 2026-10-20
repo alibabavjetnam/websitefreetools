@@ -1,0 +1,116 @@
+/* Giao diện thực đơn: dùng cho trang khách xem (/m/) và khung xem trước trong công cụ */
+
+.menu-viewer {
+  margin: 0;
+  background: #f6f4f0;
+  color: #1d1a16;
+  font-family: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+}
+.mv-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 0 24px;
+  background: #fffdf9;
+  min-height: 100vh;
+}
+.mv-loading {
+  padding: 48px 24px;
+  text-align: center;
+  color: #6b6358;
+}
+.mv-head {
+  padding: 36px 24px 24px;
+  text-align: center;
+  border-bottom: 4px solid var(--mv-accent, #0d6efd);
+}
+.mv-head h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+.mv-head p {
+  margin: 8px 0 0;
+  color: #6b6358;
+  font-size: 0.9rem;
+}
+.mv-nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+  padding: 10px 16px;
+  overflow-x: auto;
+  background: #fffdf9;
+  border-bottom: 1px solid #ece6dc;
+  scrollbar-width: none;
+}
+.mv-nav button {
+  flex: none;
+  padding: 6px 14px;
+  border: 1px solid #ddd4c6;
+  border-radius: 999px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.mv-cat {
+  padding: 20px 24px 4px;
+  scroll-margin-top: 56px;
+}
+.mv-cat h2 {
+  margin: 0 0 10px;
+  font-size: 1.125rem;
+}
+.mv-cat ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mv-cat li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #e5ddd0;
+}
+.mv-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.mv-name {
+  font-weight: 600;
+}
+.mv-dots {
+  flex: 1;
+  border-bottom: 1px dotted #c9bfae;
+  transform: translateY(-4px);
+}
+.mv-price {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.mv-cat li p {
+  margin: 2px 0 0;
+  color: #6b6358;
+  font-size: 0.875rem;
+}
+.mv-note {
+  margin: 20px 24px 0;
+  padding: 12px 14px;
+  background: #f6f1e8;
+  border-radius: 10px;
+  color: #6b6358;
+  font-size: 0.875rem;
+}
+.mv-credit {
+  padding: 16px;
+  text-align: center;
+  color: #8a8174;
+  font-size: 0.8125rem;
+}
+.mv-credit a {
+  color: inherit;
+}

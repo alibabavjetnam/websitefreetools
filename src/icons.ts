@@ -25,6 +25,12 @@ const PATHS: Record<string, string> = {
   expense: '<path d="M4 7h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a1 1 0 0 1-1-1V7z"/><path d="M4 7l11-3v3"/><circle cx="16" cy="13.5" r="1.2"/>',
   // lịch có dấu tích
   habit: '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M9 14.5l2 2 4-4"/>',
+  // tờ hoá đơn
+  invoice: '<path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/>',
+  // đĩa và dao nĩa
+  'menu-qr': '<circle cx="12" cy="13" r="6"/><path d="M4 4v6M2.5 4v3.5a1.5 1.5 0 0 0 3 0V4M20 4c-1.2 1-1.8 2.6-1.8 4.5V11H20V4zM20 11v9M4 10v10"/>',
+  // hồ sơ cá nhân
+  cv: '<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="9" r="2.5"/><path d="M8 16c.7-1.8 2.2-2.8 4-2.8s3.3 1 4 2.8"/>',
   // địa cầu
   'currency-time': '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/>',
 };
