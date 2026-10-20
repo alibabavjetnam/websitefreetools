@@ -11,7 +11,8 @@ export default defineConfig({
         home: resolve(__dirname, 'index.html'),
         qrCode: resolve(__dirname, 'tools/qr-code.html'),
         barcode: resolve(__dirname, 'tools/barcode.html'),
-        stockChart: resolve(__dirname, 'tools/stock-chart.html'),
+        // Trang ẩn, không có trong menu: truy cập trực tiếp tại /zzz
+        zzz: resolve(__dirname, 'zzz/index.html'),
       },
     },
   },

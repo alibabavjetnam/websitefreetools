@@ -1,6 +1,6 @@
 /**
- * Biểu đồ stock — chuyển từ công cụ 4v2 (repo messenger).
- * Biểu đồ nến Binance realtime, chấm điểm xu hướng, tín hiệu 2 kênh và backtest.
+ * 4v2 — trang ẩn tại /zzz, không có trong menu hay trang chủ.
+ * Chuyển từ repo messenger: biểu đồ nến Binance realtime, chấm điểm xu hướng, tín hiệu 2 kênh và backtest.
  */
 import { mountLayout } from '../layout';
 import '../stock/stock.css';
@@ -17,7 +17,7 @@ import {
 } from '../stock/data/binance';
 import { PriceChart } from '../stock/ui/chart';
 
-mountLayout({ activeTool: 'stock-chart' });
+mountLayout();
 
 /* ------------------------------------------------------------------ */
 /* Lưu trữ cục bộ                                                      */
@@ -25,12 +25,12 @@ mountLayout({ activeTool: 'stock-chart' });
 const store = {
   get<T>(key: string, fallback: T): T {
     try {
-      const v = localStorage.getItem('stock-chart:' + key);
+      const v = localStorage.getItem('4v2:' + key);
       return v === null ? fallback : (JSON.parse(v) as T);
     } catch { return fallback; }
   },
   set(key: string, value: unknown) {
-    try { localStorage.setItem('stock-chart:' + key, JSON.stringify(value)); } catch { /* bộ nhớ đầy hoặc bị chặn */ }
+    try { localStorage.setItem('4v2:' + key, JSON.stringify(value)); } catch { /* bộ nhớ đầy hoặc bị chặn */ }
   },
 };
 
@@ -336,7 +336,7 @@ function alertIfReady(ch: ChannelResult) {
     notice(`<b>Kênh ${ch.id === 'with' ? 1 : 2} vừa đủ điều kiện ${ch.direction === 'BUY' ? 'mua' : 'bán'}</b> trên ${esc(state.symbol)} ${state.interval}.`, 'info');
   }
   const anyReady = lastChannels.some((c) => c.ready);
-  document.title = `${anyReady ? '● ' : ''}${state.symbol} — Biểu đồ stock — WFTools`;
+  document.title = `${anyReady ? '● ' : ''}${state.symbol} · 4v2`;
 }
 
 /* ------------------------------------------------------------------ */
