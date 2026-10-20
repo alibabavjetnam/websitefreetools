@@ -64,13 +64,6 @@ const readIns = moneyInput(insInput);
 const form = $<HTMLFormElement>('#sal-form');
 const errorBox = $('#sal-error');
 
-setupTabs(root, (tab) => {
-  mode = tab as 'gross' | 'net';
-  $('#amount-label').textContent =
-    mode === 'gross' ? 'Lương Gross (tổng thu nhập trên hợp đồng)' : 'Lương Net mong muốn (thực nhận)';
-  render();
-});
-
 const row = (label: string, value: string, strong = false) =>
   `<tr${strong ? ' class="is-strong"' : ''}><td>${label}</td><td>${strong ? `<b>${value}</b>` : value}</td></tr>`;
 
@@ -138,4 +131,10 @@ function render(): void {
 form.addEventListener('input', render);
 form.addEventListener('change', render);
 form.addEventListener('submit', (e) => e.preventDefault());
-render();
+// Gọi sau cùng: tab đầu tiên sẽ vẽ kết quả ngay khi được chọn
+setupTabs(root, (tab) => {
+  mode = tab as 'gross' | 'net';
+  $('#amount-label').textContent =
+    mode === 'gross' ? 'Lương Gross (tổng thu nhập trên hợp đồng)' : 'Lương Net mong muốn (thực nhận)';
+  render();
+});
