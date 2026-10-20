@@ -19,6 +19,8 @@ export default defineConfig({
         home: resolve(__dirname, 'index.html'),
         privacy: resolve(__dirname, 'chinh-sach-bao-mat.html'),
         terms: resolve(__dirname, 'dieu-khoan.html'),
+        // Chính sách bảo mật dạng trang độc lập (dùng làm link Privacy Policy trong cấu hình Google OAuth)
+        privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
         // Trang ẩn, không có trong menu: truy cập trực tiếp tại /zzz
         zzz: resolve(__dirname, 'zzz/index.html'),
         // Trang khách xem thực đơn khi quét mã QR (dữ liệu nằm sau dấu #)
