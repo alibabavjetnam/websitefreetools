@@ -1,8 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, copyText, downloadBlob, toast } from '../ui';
 import { obfuscate, type ObfuscateOptions } from '../lib/obfuscate';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'js-obfuscate' });
+const T = pageText();
 
 const SAMPLE = `// Ví dụ: đếm số lần nhấn nút
 function taoBoDem(batDau) {
@@ -22,28 +24,28 @@ const root = $('#tool-root');
 root.innerHTML = `
   <div class="panel code-toolbar code-toolbar--wrap">
     <fieldset class="field">
-      <legend>Cách làm rối</legend>
+      <legend>${T('method','Cách làm rối')}</legend>
       <div class="row">
-        <label class="check"><input type="checkbox" id="o-strings" checked /><span>Mã hoá chuỗi (base64)</span></label>
-        <label class="check"><input type="checkbox" id="o-numbers" checked /><span>Đổi số sang hex</span></label>
-        <label class="check"><input type="checkbox" id="o-rename" checked /><span>Đổi tên biến cục bộ</span></label>
-        <label class="check"><input type="checkbox" id="o-packer" /><span>Gói trong eval (khó đọc hơn)</span></label>
-        <label class="check"><input type="checkbox" id="o-module" /><span>Mã dạng module (có import/export)</span></label>
+        <label class="check"><input type="checkbox" id="o-strings" checked /><span>${T('o.strings','Mã hoá chuỗi (base64)')}</span></label>
+        <label class="check"><input type="checkbox" id="o-numbers" checked /><span>${T('o.numbers','Đổi số sang hex')}</span></label>
+        <label class="check"><input type="checkbox" id="o-rename" checked /><span>${T('o.rename','Đổi tên biến cục bộ')}</span></label>
+        <label class="check"><input type="checkbox" id="o-packer" /><span>${T('o.packer','Gói trong eval (khó đọc hơn)')}</span></label>
+        <label class="check"><input type="checkbox" id="o-module" /><span>${T('o.module','Mã dạng module (có import/export)')}</span></label>
       </div>
     </fieldset>
     <div class="actions">
-      <button type="button" class="btn btn-primary" id="run">Làm rối mã</button>
-      <button type="button" class="btn" id="copy">Sao chép</button>
-      <button type="button" class="btn" id="dl">Tải file</button>
+      <button type="button" class="btn btn-primary" id="run">${T('run','Làm rối mã')}</button>
+      <button type="button" class="btn" id="copy">${T('copy','Sao chép')}</button>
+      <button type="button" class="btn" id="dl">${T('dl','Tải file')}</button>
     </div>
   </div>
   <div class="workspace code-workspace">
-    <label class="field"><span class="field-label">Mã JavaScript gốc</span><textarea id="in" class="mono code-area" rows="20" spellcheck="false">${SAMPLE.replace(/</g, '&lt;')}</textarea></label>
-    <label class="field"><span class="field-label">Mã đã làm rối</span><textarea id="out" class="mono code-area" rows="20" spellcheck="false" readonly></textarea></label>
+    <label class="field"><span class="field-label">${T('srcLabel','Mã JavaScript gốc')}</span><textarea id="in" class="mono code-area" rows="20" spellcheck="false">${SAMPLE.replace(/</g, '&lt;')}</textarea></label>
+    <label class="field"><span class="field-label">${T('outLabel','Mã đã làm rối')}</span><textarea id="out" class="mono code-area" rows="20" spellcheck="false" readonly></textarea></label>
   </div>
   <div class="stat-grid" id="summary"></div>
   <p class="error" id="err" hidden></p>
-  <p class="note">Công cụ chỉ làm mã <b>khó đọc, khó sao chép lại</b> chứ không mã hoá tuyệt đối — người có kỹ thuật vẫn có thể khôi phục. Mã vẫn chạy đúng như bản gốc. Biến toàn cục và tên thuộc tính được giữ nguyên để không làm hỏng liên kết với mã khác. Nếu mã có <code>eval</code> hoặc <code>with</code>, phần đổi tên biến sẽ tự tắt cho an toàn.</p>
+  <p class="note">${T('note','Công cụ chỉ làm mã <b>khó đọc, khó sao chép lại</b> chứ không mã hoá tuyệt đối — người có kỹ thuật vẫn có thể khôi phục. Mã vẫn chạy đúng như bản gốc. Biến toàn cục và tên thuộc tính được giữ nguyên để không làm hỏng liên kết với mã khác. Nếu mã có <code>eval</code> hoặc <code>with</code>, phần đổi tên biến sẽ tự tắt cho an toàn.')}</p>
 `;
 
 const showErr = (msg: string) => {
@@ -69,8 +71,8 @@ async function run(): Promise<void> {
     const inKb = new Blob([src]).size;
     const outKb = new Blob([out]).size;
     $('#summary').innerHTML = out
-      ? `<div class="stat"><span class="stat-label">Mã gốc</span><span class="stat-value">${(inKb / 1024).toFixed(1).replace('.', ',')} KB</span></div>
-         <div class="stat stat--main"><span class="stat-label">Sau khi làm rối</span><span class="stat-value">${(outKb / 1024).toFixed(1).replace('.', ',')} KB</span></div>`
+      ? `<div class="stat"><span class="stat-label">${T('stat.src','Mã gốc')}</span><span class="stat-value">${(inKb / 1024).toFixed(1).replace('.', ',')} KB</span></div>
+         <div class="stat stat--main"><span class="stat-label">${T('stat.out','Sau khi làm rối')}</span><span class="stat-value">${(outKb / 1024).toFixed(1).replace('.', ',')} KB</span></div>`
       : '';
   } catch (e) {
     $<HTMLTextAreaElement>('#out').value = '';
@@ -91,6 +93,6 @@ $('#dl').addEventListener('click', () => {
   const v = $<HTMLTextAreaElement>('#out').value;
   if (!v) return;
   downloadBlob(new Blob([v], { type: 'text/javascript;charset=utf-8' }), 'obfuscated.js');
-  toast('Đã tải file');
+  toast(T('toast.dl','Đã tải file'));
 });
 void run();
