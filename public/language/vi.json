@@ -1,0 +1,439 @@
+{
+  "lang": "vi",
+  "name": "Tiếng Việt",
+  "dir": "ltr",
+  "ui": {
+    "nav.home": "Trang chủ",
+    "nav.tools": "Tất cả công cụ",
+    "nav.about": "Giới thiệu",
+    "nav.guide": "Hướng dẫn",
+    "nav.skip": "Bỏ qua menu",
+    "nav.toggle": "Công cụ",
+    "nav.menu": "Menu chính",
+    "search.placeholder": "Tìm công cụ…",
+    "search.label": "Tìm công cụ",
+    "side.empty": "Không có công cụ nào khớp.",
+    "side.toolsLabel": "Danh sách công cụ",
+    "account.login": "Đăng nhập",
+    "account.logout": "Đăng xuất",
+    "account.loginFail": "Đăng nhập không thành công.",
+    "account.driveNote": "Dữ liệu các công cụ được lưu trong thư mục WFTools trên Google Drive của bạn.",
+    "account.openDrive": "Mở Google Drive",
+    "footer.tagline": "Công cụ trực tuyến miễn phí, dùng ngay trên trình duyệt. Không cần cài đặt, không cần tài khoản.",
+    "footer.privacy": "Nội dung bạn nhập được xử lý ngay trên máy của bạn, không gửi lên máy chủ.",
+    "footer.info": "Thông tin",
+    "footer.legal": "Pháp lý",
+    "footer.allTools": "Tất cả công cụ",
+    "footer.about": "Giới thiệu",
+    "footer.guide": "Hướng dẫn",
+    "footer.privacyPolicy": "Chính sách bảo mật",
+    "footer.terms": "Điều khoản sử dụng",
+    "footer.trademark": "QR Code là nhãn hiệu đã đăng ký của Denso Wave Incorporated.",
+    "home.toolsTitle": "Danh sách công cụ",
+    "lang.label": "Ngôn ngữ"
+  },
+  "pages": {
+    "home": {
+      "title": "WFTools — Công cụ trực tuyến miễn phí cho người Việt",
+      "metaDescription": "Bộ công cụ trực tuyến miễn phí: tạo mã QR, mã vạch, nén và chuyển đổi ảnh, gộp tách PDF, đổi JSON/XML/CSV/Excel, tính lương, khoản vay, BMI, thời khoá biểu, đồng hồ đếm ngược và nhiều tiện ích khác. Dùng ngay trên trình duyệt, không cần đăng ký.",
+      "h1": "Công cụ trực tuyến miễn phí",
+      "lead": "Chọn một công cụ và dùng ngay trên trình duyệt. Không cần đăng ký, dữ liệu của bạn không rời khỏi máy."
+    }
+  },
+  "groups": {
+    "image": {
+      "name": "Xử lý hình ảnh",
+      "desc": "Nén, đổi định dạng, xoá nền, đóng dấu ảnh ngay trên máy."
+    },
+    "file": {
+      "name": "Xử lý file",
+      "desc": "Gộp tách PDF, đổi PowerPoint, so sánh văn bản, chuyển đổi dữ liệu."
+    },
+    "business": {
+      "name": "Kinh doanh online",
+      "desc": "Công cụ cho shop online, hộ kinh doanh, freelancer."
+    },
+    "finance": {
+      "name": "Tài chính & tính toán",
+      "desc": "Tính toán chính xác theo công thức và quy định hiện hành."
+    },
+    "marketing": {
+      "name": "Tiếp thị",
+      "desc": "Mã QR, liên kết chiến dịch, màu sắc thương hiệu."
+    },
+    "life": {
+      "name": "Năng suất & đời sống",
+      "desc": "Tiện ích dùng hằng ngày."
+    },
+    "health": {
+      "name": "Tiện ích sức khoẻ",
+      "desc": "Theo dõi cân nặng, dinh dưỡng, nước uống, vận động, chu kỳ."
+    },
+    "edu": {
+      "name": "Giáo dục & giảng dạy",
+      "desc": "Thời khoá biểu, đề thi, điểm danh, sơ đồ tư duy, thù lao."
+    },
+    "time": {
+      "name": "Công cụ thời gian",
+      "desc": "Đồng hồ, đếm ngược, múi giờ, ngày làm việc, nhật ký."
+    },
+    "dev": {
+      "name": "Công cụ tin học",
+      "desc": "Định dạng, kiểm lỗi, mã hoá và chuyển đổi mã nguồn."
+    }
+  },
+  "tools": {
+    "image-convert": {
+      "name": "Nén ảnh",
+      "desc": "Giảm dung lượng ảnh, thu nhỏ kích thước nhiều ảnh cùng lúc để đăng web, gửi email nhanh hơn.",
+      "title": "Nén ảnh, giảm dung lượng ảnh hàng loạt miễn phí — WFTools",
+      "metaDescription": "Nén ảnh, đổi JPG, PNG, WebP và thu nhỏ kích thước nhiều ảnh cùng lúc. Xử lý ngay trên trình duyệt, ảnh không gửi lên máy chủ.",
+      "h1": "Nén ảnh",
+      "lead": "Chọn hoặc kéo thả nhiều ảnh. Ảnh được xử lý ngay trên máy của bạn, không tải lên đâu cả."
+    },
+    "image-format": {
+      "name": "Chuyển đổi định dạng ảnh",
+      "desc": "Đổi ảnh qua lại giữa JPG, PNG, WebP, AVIF, BMP, ICO (favicon) cho website, ứng dụng hoặc lưu trữ.",
+      "title": "Chuyển đổi định dạng ảnh JPG, PNG, WebP, AVIF, ICO online — WFTools",
+      "metaDescription": "Đổi định dạng ảnh qua lại giữa JPG, PNG, WebP, AVIF, BMP và tạo favicon ICO nhiều kích thước. Xử lý hàng loạt ngay trên trình duyệt.",
+      "h1": "Chuyển đổi định dạng ảnh",
+      "lead": "Chọn định dạng phù hợp cho website, ứng dụng hoặc nhu cầu lưu trữ. Ảnh không rời khỏi máy của bạn."
+    },
+    "image-base64": {
+      "name": "Ảnh sang Base64",
+      "desc": "Chuyển ảnh thành chuỗi Base64 để nhúng vào HTML, CSS, mã nguồn, và đổi Base64 ngược lại thành ảnh.",
+      "title": "Chuyển ảnh sang Base64 và Base64 sang ảnh — WFTools",
+      "metaDescription": "Chuyển ảnh thành chuỗi Base64, Data URI, thẻ HTML img hoặc CSS background để nhúng vào mã nguồn. Giải mã Base64 ngược lại thành ảnh.",
+      "h1": "Ảnh sang Base64",
+      "lead": "Nhúng ảnh nhỏ thẳng vào HTML, CSS hoặc mã nguồn mà không cần file riêng."
+    },
+    "bg-remove": {
+      "name": "Xoá nền ảnh",
+      "desc": "Xoá nền trắng hoặc nền một màu khỏi ảnh sản phẩm, logo, ảnh đại diện. Xử lý tức thì ngay trên máy.",
+      "title": "Xoá nền ảnh online miễn phí, chạy trên trình duyệt — WFTools",
+      "metaDescription": "Xoá nền trắng hoặc nền một màu khỏi ảnh sản phẩm, logo, ảnh đại diện. Tải ảnh PNG nền trong suốt hoặc thay nền màu. Miễn phí, xử lý ngay trên trình duyệt.",
+      "h1": "Xoá nền ảnh",
+      "lead": "Hợp ảnh chụp trên nền trắng hoặc nền một màu. Kết quả hiện ngay, tải về PNG nền trong suốt."
+    },
+    "watermark": {
+      "name": "Thêm watermark vào ảnh",
+      "desc": "Chèn chữ, logo hoặc dấu bản quyền lên một hoặc nhiều ảnh cùng lúc.",
+      "title": "Thêm watermark, logo, chữ bản quyền vào ảnh hàng loạt — WFTools",
+      "metaDescription": "Chèn chữ hoặc logo làm watermark lên một hoặc nhiều ảnh cùng lúc: chọn vị trí, độ rõ, cỡ chữ, lặp kín ảnh. Miễn phí, xử lý trên trình duyệt.",
+      "h1": "Thêm watermark vào ảnh",
+      "lead": "Bảo vệ ảnh sản phẩm, ảnh chụp bằng chữ hoặc logo của bạn."
+    },
+    "pdf-merge": {
+      "name": "Nối và tách PDF",
+      "desc": "Gộp nhiều file PDF thành một, tách lấy trang cần dùng, chia nhỏ file PDF theo từng trang.",
+      "title": "Nối và tách file PDF online miễn phí — WFTools",
+      "metaDescription": "Gộp nhiều file PDF thành một, tách trang, chia nhỏ file PDF theo từng trang hoặc từng khoảng. Xử lý ngay trên trình duyệt, file không tải lên máy chủ.",
+      "h1": "Nối và tách PDF",
+      "lead": "Gộp nhiều file PDF thành một hoặc tách lấy những trang bạn cần. File được xử lý ngay trên máy, không gửi đi đâu."
+    },
+    "pptx-pdf": {
+      "name": "PowerPoint ↔ PDF",
+      "desc": "Chuyển bài trình chiếu PowerPoint (.pptx) sang PDF và chuyển PDF thành file PowerPoint.",
+      "title": "Chuyển PowerPoint sang PDF và PDF sang PowerPoint online — WFTools",
+      "metaDescription": "Chuyển file PowerPoint (.pptx) sang PDF và chuyển PDF thành bài trình chiếu PowerPoint ngay trên trình duyệt, miễn phí, không cần cài phần mềm.",
+      "h1": "PowerPoint ↔ PDF",
+      "lead": "Đổi bài trình chiếu sang PDF để gửi, in ấn, hoặc biến file PDF thành PowerPoint để trình chiếu. Không tải file lên máy chủ."
+    },
+    "file-diff": {
+      "name": "So sánh hai file",
+      "desc": "Tìm chỗ khác nhau giữa hai văn bản: TXT, Word, HTML, PDF có chữ. Tô màu phần thêm, xoá, sửa.",
+      "title": "So sánh hai file văn bản, Word, PDF, HTML online — WFTools",
+      "metaDescription": "Tìm chỗ khác nhau giữa hai file TXT, Word (.docx), HTML, PDF có chữ hoặc hai đoạn văn bản dán vào. Tô màu dòng thêm, xoá, sửa tới từng chữ.",
+      "h1": "So sánh hai file",
+      "lead": "Tìm nhanh chỗ khác nhau giữa hai bản hợp đồng, tài liệu, mã nguồn. Phần thêm, xoá, sửa được tô màu tới từng chữ."
+    },
+    "text-analysis": {
+      "name": "Phân tích văn bản",
+      "desc": "Đếm số từ, ký tự, câu, đoạn, ước tính thời gian đọc và mật độ từ khoá của văn bản, file TXT, Word, PDF.",
+      "title": "Đếm số từ, ký tự và phân tích mật độ từ khoá online — WFTools",
+      "metaDescription": "Đếm số từ, ký tự, câu, đoạn văn, ước tính thời gian đọc và phân tích mật độ từ khoá cho văn bản, file TXT, Word, PDF. Miễn phí, xử lý ngay trên trình duyệt.",
+      "h1": "Phân tích văn bản",
+      "lead": "Đếm số từ, ký tự, câu, đoạn, ước tính thời gian đọc và xem mật độ từ khoá. Dán văn bản hoặc mở file TXT, Word, PDF."
+    },
+    "data-convert": {
+      "name": "Chuyển đổi JSON, XML, CSV, Excel",
+      "desc": "Đổi dữ liệu qua lại giữa JSON, XML, CSV và Excel (.xlsx), xem trước dạng bảng.",
+      "title": "Chuyển đổi JSON, XML, CSV, Excel online — WFTools",
+      "metaDescription": "Chuyển dữ liệu qua lại giữa JSON, XML, CSV và Excel (.xlsx). Xem trước dạng bảng, chọn trang tính, dấu phân cách, tải file kết quả.",
+      "h1": "Chuyển đổi JSON, XML, CSV, Excel",
+      "lead": "Mở file hoặc dán dữ liệu, chọn định dạng cần đổi sang. Dữ liệu được xử lý ngay trên máy của bạn."
+    },
+    "bmi-bmr": {
+      "name": "Chỉ số BMI & BMR",
+      "desc": "Tính chỉ số khối cơ thể BMI, tỷ lệ eo/hông và nhu cầu calo cơ bản BMR, TDEE theo độ tuổi, giới tính, vận động.",
+      "title": "Tính chỉ số BMI, BMR, TDEE online — WFTools",
+      "metaDescription": "Tính chỉ số khối cơ thể BMI, nhu cầu calo cơ bản BMR và tổng năng lượng TDEE theo tuổi, giới tính, chiều cao, cân nặng và mức vận động.",
+      "h1": "Chỉ số BMI & BMR",
+      "lead": "Nhập thông tin cơ thể để biết chỉ số BMI, cân nặng khoẻ mạnh và nhu cầu calo mỗi ngày (BMR, TDEE) theo mục tiêu."
+    },
+    "meal-calo": {
+      "name": "Thực đơn & calo hàng ngày",
+      "desc": "Lập thực đơn theo mục tiêu calo, tra lượng calo món ăn Việt, cân đối đạm, tinh bột, chất béo.",
+      "title": "Lập thực đơn và tính calo hàng ngày online — WFTools",
+      "metaDescription": "Lập thực đơn theo mục tiêu calo, tra lượng calo món ăn Việt, cân đối đạm, tinh bột, chất béo cho từng bữa.",
+      "h1": "Thực đơn & calo hàng ngày",
+      "lead": "Chọn món hoặc nhập món tự do cho từng bữa, xem tổng calo so với mục tiêu và cân đối dinh dưỡng."
+    },
+    "water-tracker": {
+      "name": "Theo dõi nước uống",
+      "desc": "Đặt mục tiêu và ghi lượng nước uống mỗi ngày, xem tiến độ và lịch sử nhiều ngày.",
+      "title": "Theo dõi lượng nước uống hàng ngày online — WFTools",
+      "metaDescription": "Đặt mục tiêu và ghi lượng nước uống mỗi ngày, xem tiến độ và lịch sử 7 ngày. Gợi ý lượng nước theo cân nặng.",
+      "h1": "Theo dõi nước uống",
+      "lead": "Đặt mục tiêu nước mỗi ngày, bấm nút để ghi mỗi lần uống và theo dõi tiến độ, lịch sử nhiều ngày."
+    },
+    "calo-burn": {
+      "name": "Calo tiêu hao vận động",
+      "desc": "Ước tính lượng calo tiêu hao theo môn thể thao, hoạt động, thời gian và cân nặng (chỉ số MET).",
+      "title": "Tính lượng calo tiêu hao theo vận động online — WFTools",
+      "metaDescription": "Ước tính calo tiêu hao theo môn thể thao, hoạt động, thời gian và cân nặng dựa trên chỉ số MET chuẩn quốc tế.",
+      "h1": "Calo tiêu hao vận động",
+      "lead": "Chọn hoạt động, nhập thời gian và cân nặng để ước tính lượng calo đã đốt. Cộng nhiều hoạt động trong một buổi."
+    },
+    "cycle-track": {
+      "name": "Theo dõi chu kỳ",
+      "desc": "Ghi và dự đoán chu kỳ kinh nguyệt, ngày rụng trứng và khoảng dễ thụ thai. Dữ liệu chỉ lưu trên máy bạn.",
+      "title": "Theo dõi và dự đoán chu kỳ kinh nguyệt online — WFTools",
+      "metaDescription": "Ghi và dự đoán chu kỳ kinh nguyệt, ngày rụng trứng và khoảng dễ thụ thai. Dữ liệu chỉ lưu trên máy bạn, riêng tư tuyệt đối.",
+      "h1": "Theo dõi chu kỳ",
+      "lead": "Ghi ngày bắt đầu các kỳ để dự đoán kỳ tiếp theo, ngày rụng trứng và khoảng dễ thụ thai. Dữ liệu chỉ lưu trên máy bạn."
+    },
+    "study-timetable": {
+      "name": "Thời khoá biểu học tập",
+      "desc": "Lập thời khoá biểu theo tiết, theo buổi cho cả tuần; in hoặc lưu lại để dùng mỗi ngày.",
+      "title": "Lập thời khoá biểu học tập online — WFTools",
+      "metaDescription": "Tạo thời khoá biểu theo tiết, theo buổi cho cả tuần, tô màu từng môn, in hoặc lưu PDF. Miễn phí.",
+      "h1": "Thời khoá biểu học tập",
+      "lead": "Lập thời khoá biểu theo tiết cho cả tuần: bấm vào ô để nhập môn và phòng; tiết sáng tô xanh, tiết chiều tô cam. In hoặc lưu PDF."
+    },
+    "quiz-bank": {
+      "name": "Đề thi & câu hỏi trắc nghiệm",
+      "desc": "Soạn ngân hàng câu hỏi trắc nghiệm, trộn đề, làm thử chấm điểm ngay, in đề và đáp án.",
+      "title": "Tạo đề thi và ngân hàng câu hỏi trắc nghiệm online — WFTools",
+      "metaDescription": "Soạn ngân hàng câu hỏi trắc nghiệm, trộn đề, làm thử chấm điểm ngay, in đề kèm đáp án. Xuất/nhập file đề.",
+      "h1": "Đề thi & câu hỏi trắc nghiệm",
+      "lead": "Soạn câu hỏi trắc nghiệm, làm thử chấm điểm ngay, in đề và đáp án, xuất/nhập file để dùng lại."
+    },
+    "attendance": {
+      "name": "Điểm danh",
+      "desc": "Lập danh sách lớp, điểm danh theo buổi, thống kê số buổi vắng, đi muộn. Lưu được vào Google Sheet.",
+      "title": "Điểm danh lớp học online — WFTools",
+      "metaDescription": "Lập danh sách lớp, điểm danh theo buổi, thống kê số buổi có mặt, vắng, đi muộn. Lưu được vào Google Sheet.",
+      "h1": "Điểm danh",
+      "lead": "Lập danh sách lớp và điểm danh theo buổi, thống kê có mặt, vắng, muộn. Đăng nhập Google để lưu vào Google Sheet."
+    },
+    "mindmap": {
+      "name": "Sơ đồ tư duy & tóm tắt",
+      "desc": "Vẽ sơ đồ tư duy cho bài học và tự tóm tắt văn bản dài thành các ý chính.",
+      "title": "Tạo sơ đồ tư duy và tóm tắt bài học tự động online — WFTools",
+      "metaDescription": "Vẽ sơ đồ tư duy cho bài học và tự tóm tắt văn bản dài thành các ý chính ngay trên trình duyệt.",
+      "h1": "Sơ đồ tư duy & tóm tắt",
+      "lead": "Vẽ sơ đồ tư duy cho bài học, hoặc dán văn bản để tự tóm tắt thành các ý chính và biến thành sơ đồ."
+    },
+    "teaching-pay": {
+      "name": "Giờ giảng & thù lao",
+      "desc": "Ghi các buổi dạy, tính tổng số giờ và thù lao theo đơn giá, xuất bảng kê.",
+      "title": "Quản lý giờ giảng và tính thù lao dạy học online — WFTools",
+      "metaDescription": "Ghi các buổi dạy, tính tổng số giờ và thù lao theo đơn giá, lọc theo tháng, xuất CSV, in bảng kê.",
+      "h1": "Giờ giảng & thù lao",
+      "lead": "Ghi các buổi dạy, tự tính tổng giờ và thù lao theo đơn giá. Lọc theo tháng, xuất CSV hoặc in bảng kê."
+    },
+    "fullscreen-clock": {
+      "name": "Đồng hồ toàn màn hình",
+      "desc": "Đồng hồ số lớn toàn màn hình kèm bấm giờ (stopwatch) và đếm ngược, tuỳ chỉnh màu, phông, 12/24 giờ.",
+      "title": "Đồng hồ số toàn màn hình, bấm giờ, đếm ngược online — WFTools",
+      "metaDescription": "Đồng hồ số lớn toàn màn hình kèm bấm giờ (stopwatch) và đếm ngược, tuỳ chỉnh màu, phông chữ, 12/24 giờ, giữ màn hình sáng.",
+      "h1": "Đồng hồ toàn màn hình",
+      "lead": "Đồng hồ số lớn kèm bấm giờ và đếm ngược, tuỳ chỉnh màu, phông, 12/24 giờ. Toàn màn hình để trình chiếu, giữ màn hình sáng."
+    },
+    "countdown-video": {
+      "name": "Đếm ngược tạo video",
+      "desc": "Tạo đồng hồ đếm ngược tuỳ chỉnh màu nền, màu số, phông và tải về video để chèn vào clip.",
+      "title": "Tạo đồng hồ đếm ngược và tải video online — WFTools",
+      "metaDescription": "Tạo đồng hồ đếm ngược tuỳ chỉnh màu nền, màu số, phông chữ và tải về video MP4 để chèn vào clip, livestream.",
+      "h1": "Đếm ngược tạo video",
+      "lead": "Tuỳ chỉnh đồng hồ đếm ngược rồi tải về video (MP4) để chèn vào clip, bài giảng hay livestream."
+    },
+    "world-clock": {
+      "name": "Đồng hồ thế giới",
+      "desc": "Xem giờ hiện tại ở nhiều quốc gia cùng lúc và so sánh chênh lệch múi giờ giữa các nước.",
+      "title": "Đồng hồ thế giới đa múi giờ online — WFTools",
+      "metaDescription": "Xem giờ hiện tại ở nhiều quốc gia cùng lúc và so sánh chênh lệch múi giờ giữa các nước. Cập nhật theo thời gian thực.",
+      "h1": "Đồng hồ thế giới",
+      "lead": "Xem giờ hiện tại của nhiều quốc gia cùng lúc và so sánh một mốc giờ sẽ là mấy giờ ở các nước khác."
+    },
+    "workdays": {
+      "name": "Tính ngày làm việc",
+      "desc": "Đếm số ngày làm việc giữa hai mốc thời gian, trừ thứ Bảy, Chủ nhật và ngày lễ.",
+      "title": "Tính số ngày làm việc thực tế giữa hai ngày online — WFTools",
+      "metaDescription": "Đếm số ngày làm việc giữa hai mốc thời gian, trừ thứ Bảy, Chủ nhật và ngày lễ Việt Nam. Thêm được ngày nghỉ riêng.",
+      "h1": "Tính ngày làm việc",
+      "lead": "Đếm số ngày làm việc thực tế giữa hai mốc thời gian, trừ cuối tuần và ngày lễ Việt Nam; thêm được ngày nghỉ của bạn."
+    },
+    "journal": {
+      "name": "Nhật ký online",
+      "desc": "Viết nhật ký mỗi ngày, lưu riêng vào Google Sheet của bạn, chỉ mình bạn đọc được.",
+      "title": "Ghi nhật ký online riêng tư, lưu Google Sheet — WFTools",
+      "metaDescription": "Viết nhật ký mỗi ngày kèm tâm trạng, lưu riêng vào Google Sheet trong Drive của bạn, chỉ mình bạn đọc được.",
+      "h1": "Nhật ký online",
+      "lead": "Viết nhật ký mỗi ngày kèm tâm trạng. Đăng nhập Google để lưu riêng vào Drive của bạn, chỉ mình bạn đọc được."
+    },
+    "code-format": {
+      "name": "Định dạng JS, HTML, CSS, JSON",
+      "desc": "Căn chỉnh, thụt lề gọn gàng cho mã JavaScript, HTML, CSS và JSON.",
+      "title": "Định dạng JavaScript, HTML, CSS, JSON online — WFTools",
+      "metaDescription": "Căn chỉnh, thụt lề lại mã JavaScript, HTML, CSS và JSON cho gọn gàng, dễ đọc. Miễn phí, xử lý ngay trên trình duyệt.",
+      "h1": "Định dạng mã nguồn",
+      "lead": "Dán mã JavaScript, HTML, CSS hoặc JSON vào, công cụ sẽ căn chỉnh và thụt lề lại cho dễ đọc."
+    },
+    "code-check": {
+      "name": "Kiểm tra lỗi cú pháp",
+      "desc": "Tìm lỗi cú pháp, cấu trúc trong JavaScript, HTML, CSS, JSON và chỉ ra dòng, cột.",
+      "title": "Kiểm tra lỗi cú pháp JavaScript, HTML, CSS, JSON online — WFTools",
+      "metaDescription": "Tìm lỗi cú pháp và cấu trúc trong mã JavaScript, HTML, CSS, JSON; chỉ rõ dòng và cột để bạn sửa nhanh. Miễn phí.",
+      "h1": "Kiểm tra lỗi cú pháp",
+      "lead": "Dán mã vào để tìm lỗi cú pháp và cấu trúc. Công cụ chỉ ra vị trí dòng, cột của từng lỗi."
+    },
+    "js-obfuscate": {
+      "name": "Làm rối mã JavaScript",
+      "desc": "Mã hoá chuỗi, đổi tên biến, che giấu mã JavaScript để khó đọc, khó sao chép (JavaScript Obfuscator).",
+      "title": "Làm rối mã JavaScript (JavaScript Obfuscator) online — WFTools",
+      "metaDescription": "Mã hoá chuỗi, đổi tên biến và che giấu mã JavaScript để khó đọc, khó sao chép. Xử lý ngay trên trình duyệt, mã nguồn không rời khỏi máy.",
+      "h1": "Làm rối mã JavaScript",
+      "lead": "Che giấu mã JavaScript để khó đọc, khó sao chép lại: mã hoá chuỗi, đổi tên biến, gói trong eval. Mã không rời khỏi máy của bạn."
+    },
+    "rsa-keys": {
+      "name": "Khoá RSA & mã hoá",
+      "desc": "Tạo cặp khoá RSA (PEM), mã hoá văn bản bằng khoá công khai và giải mã bằng khoá bí mật ngay trên máy.",
+      "title": "Tạo khoá RSA và mã hoá, giải mã văn bản online — WFTools",
+      "metaDescription": "Tạo cặp khoá RSA (PEM), mã hoá văn bản bằng khoá công khai và giải mã bằng khoá bí mật ngay trên trình duyệt. Dùng mã hoá lai AES + RSA cho văn bản dài tuỳ ý.",
+      "h1": "Tạo khoá RSA",
+      "lead": "Tạo cặp khoá RSA hoặc dán cặp khoá sẵn có, rồi mã hoá văn bản bằng khoá công khai và giải mã bằng khoá bí mật. Mọi thứ chạy ngay trên máy bạn."
+    },
+    "text-to-html": {
+      "name": "Soạn văn bản thành HTML",
+      "desc": "Soạn thảo trực quan có in đậm, tiêu đề, danh sách, bảng, liên kết và lấy mã HTML sạch.",
+      "title": "Soạn văn bản thành HTML (trình soạn thảo trực quan) — WFTools",
+      "metaDescription": "Soạn thảo văn bản trực quan với in đậm, tiêu đề, danh sách, bảng, liên kết, ảnh và lấy mã HTML sạch để dán vào website, email, blog.",
+      "h1": "Soạn văn bản thành HTML",
+      "lead": "Soạn thảo trực quan như Word rồi lấy ngay mã HTML sạch để dán vào website, email hay blog."
+    },
+    "inventory": {
+      "name": "Tồn kho & tính giá bán",
+      "desc": "Tính giá bán theo phí sàn, quảng cáo, biên lợi nhuận. Quản lý nhập xuất tồn, cảnh báo sắp hết hàng.",
+      "title": "Tính giá bán sản phẩm & quản lý tồn kho mini — WFTools",
+      "metaDescription": "Tính giá bán theo giá vốn, phí sàn, quảng cáo và biên lợi nhuận. Quản lý nhập xuất tồn kho, cảnh báo sắp hết hàng, đồng bộ Google Sheets.",
+      "h1": "Tồn kho & tính giá bán",
+      "lead": "Cho shop online và hộ kinh doanh nhỏ: đặt giá có lãi và nắm rõ hàng trong kho."
+    },
+    "invoice": {
+      "name": "Hoá đơn & báo giá",
+      "desc": "Lập báo giá, hoá đơn bán hàng có logo, tự tính tổng tiền và đọc số tiền bằng chữ. In hoặc lưu PDF.",
+      "title": "Tạo báo giá, hoá đơn bán hàng online miễn phí — WFTools",
+      "metaDescription": "Lập báo giá và hoá đơn bán hàng có logo, tự tính thành tiền, thuế GTGT, đọc số tiền bằng chữ. In hoặc lưu PDF, lưu vào Google Sheets.",
+      "h1": "Hoá đơn & báo giá",
+      "lead": "Điền thông tin bên trái, chứng từ hiện ngay bên phải. Bấm \"In / Lưu PDF\" để gửi cho khách."
+    },
+    "menu-qr": {
+      "name": "Thực đơn QR",
+      "desc": "Tạo thực đơn điện tử cho quán ăn, quán cà phê. Khách quét mã QR là xem được món và giá.",
+      "title": "Tạo thực đơn QR (menu QR) cho quán miễn phí — WFTools",
+      "metaDescription": "Tạo thực đơn điện tử cho quán ăn, quán cà phê. Khách quét mã QR là xem được món và giá trên điện thoại. Không cần đăng ký, không cần máy chủ.",
+      "h1": "Thực đơn QR",
+      "lead": "Nhập món và giá, tải mã QR về in đặt lên bàn. Khách quét là xem được thực đơn."
+    },
+    "barcode": {
+      "name": "Tạo mã vạch",
+      "desc": "Tạo mã vạch Code 128, EAN‑13, EAN‑8, UPC‑A, Code 39 để in nhãn sản phẩm, kho hàng.",
+      "title": "Tạo mã vạch (barcode) miễn phí — WFTools",
+      "metaDescription": "Tạo mã vạch Code 128, EAN-13, EAN-8, UPC-A, Code 39 miễn phí. Tự tính số kiểm tra, tải về PNG hoặc SVG để in.",
+      "h1": "Tạo mã vạch",
+      "lead": "Chọn chuẩn mã vạch, nhập mã và tải về để in. Với EAN và UPC, chữ số cuối được tính tự động."
+    },
+    "loan": {
+      "name": "Tính khoản vay",
+      "desc": "Số tiền trả hằng tháng, tổng lãi và lịch trả nợ cho vay mua nhà, mua xe, vay tiêu dùng.",
+      "title": "Tính lãi vay ngân hàng, lịch trả nợ hằng tháng — WFTools",
+      "metaDescription": "Tính số tiền trả hằng tháng, tổng lãi phải trả và lịch trả nợ chi tiết cho vay mua nhà, mua xe, vay tiêu dùng. Hỗ trợ lãi ưu đãi rồi thả nổi.",
+      "h1": "Tính khoản vay",
+      "lead": "Nhập số tiền vay, lãi suất và thời hạn để xem mỗi tháng phải trả bao nhiêu."
+    },
+    "compound": {
+      "name": "Lãi kép & tích luỹ",
+      "desc": "Dự tính số tiền tích luỹ khi gửi tiết kiệm hoặc đầu tư đều đặn hằng tháng.",
+      "title": "Tính lãi kép, dự tính tiết kiệm và đầu tư — WFTools",
+      "metaDescription": "Dự tính số tiền tích luỹ theo lãi kép khi gửi tiết kiệm hoặc đầu tư đều đặn hằng tháng, xem tăng trưởng qua từng năm.",
+      "h1": "Lãi kép & tích luỹ",
+      "lead": "Xem số tiền của bạn lớn lên thế nào khi để lãi sinh lãi."
+    },
+    "salary": {
+      "name": "Lương Gross ↔ Net",
+      "desc": "Đổi lương Gross sang Net và ngược lại theo bảo hiểm, thuế thu nhập cá nhân năm 2026.",
+      "title": "Tính lương Gross sang Net, Net sang Gross 2026 — WFTools",
+      "metaDescription": "Tính lương thực nhận từ lương Gross và ngược lại theo mức đóng bảo hiểm và biểu thuế thu nhập cá nhân áp dụng năm 2026.",
+      "h1": "Lương Gross ↔ Net",
+      "lead": "Tính lương thực nhận theo quy định bảo hiểm và thuế thu nhập cá nhân năm 2026."
+    },
+    "qr-code": {
+      "name": "Tạo mã QR",
+      "desc": "Tạo mã QR cho liên kết, văn bản, Wi‑Fi, email, số điện thoại. Tải về PNG hoặc SVG.",
+      "title": "Tạo mã QR miễn phí — WFTools",
+      "metaDescription": "Tạo mã QR miễn phí cho liên kết, văn bản, Wi-Fi, email, số điện thoại, SMS. Tải về PNG hoặc SVG.",
+      "h1": "Tạo mã QR",
+      "lead": "Nhập nội dung, mã QR cập nhật ngay. Quét thử bằng điện thoại trước khi in."
+    },
+    "utm": {
+      "name": "Tạo link UTM",
+      "desc": "Gắn mã theo dõi chiến dịch vào liên kết để biết khách đến từ kênh nào.",
+      "title": "Tạo link UTM theo dõi chiến dịch — WFTools",
+      "metaDescription": "Gắn tham số UTM vào liên kết để đo hiệu quả từng kênh quảng cáo trong Google Analytics. Có sẵn mẫu cho Facebook, Zalo, TikTok, Google.",
+      "h1": "Tạo link UTM",
+      "lead": "Gắn mã theo dõi vào liên kết để biết khách đến từ kênh, chiến dịch nào."
+    },
+    "colors": {
+      "name": "Bảng màu & mã màu",
+      "desc": "Tạo bảng màu hài hoà từ một màu gốc, lấy mã HEX, RGB, HSL và biến CSS.",
+      "title": "Tạo bảng màu, mã màu HEX RGB HSL — WFTools",
+      "metaDescription": "Tạo bảng màu hài hoà từ một màu gốc, lấy mã HEX, RGB, HSL, kiểm tra độ tương phản chữ và xuất biến CSS.",
+      "h1": "Bảng màu & mã màu",
+      "lead": "Chọn một màu gốc để có ngay các sắc độ và màu phối hợp."
+    },
+    "expense": {
+      "name": "Chi tiêu & ngân sách",
+      "desc": "Ghi thu chi hằng ngày, xem chi theo danh mục, đặt hạn mức để không vượt ngân sách.",
+      "title": "Quản lý chi tiêu cá nhân & ngân sách hằng tháng — WFTools",
+      "metaDescription": "Ghi chép thu chi hằng ngày, xem chi tiêu theo danh mục, đặt hạn mức ngân sách. Lưu trên trình duyệt hoặc Google Sheets của bạn.",
+      "h1": "Chi tiêu & ngân sách",
+      "lead": "Ghi thu chi nhanh, biết tiền đi đâu và còn bao nhiêu trong tháng."
+    },
+    "habit": {
+      "name": "Thói quen & chuỗi ngày",
+      "desc": "Đánh dấu thói quen mỗi ngày, theo dõi chuỗi ngày liên tiếp để giữ kỷ luật.",
+      "title": "Theo dõi thói quen & chuỗi ngày (streak) — WFTools",
+      "metaDescription": "Đánh dấu thói quen mỗi ngày, xem chuỗi ngày liên tiếp và tỷ lệ hoàn thành 30 ngày. Lưu trên trình duyệt hoặc Google Sheets của bạn.",
+      "h1": "Thói quen & chuỗi ngày",
+      "lead": "Mỗi ngày đánh dấu một lần. Chuỗi ngày càng dài, càng khó bỏ cuộc."
+    },
+    "cv": {
+      "name": "Tạo CV xin việc",
+      "desc": "Điền thông tin theo mẫu, xem trước trực tiếp, chọn mẫu và màu, in hoặc lưu PDF miễn phí.",
+      "title": "Tạo CV xin việc online miễn phí, xuất PDF — WFTools",
+      "metaDescription": "Tạo CV theo mẫu chuyên nghiệp bằng tiếng Việt, xem trước trực tiếp, chọn mẫu và màu, in hoặc lưu PDF không có hình mờ.",
+      "h1": "Tạo CV xin việc",
+      "lead": "Đang hiện CV mẫu để bạn tham khảo. Sửa từng mục bên trái hoặc bấm \"CV trống\" để bắt đầu từ đầu."
+    },
+    "currency-time": {
+      "name": "Tiền tệ & múi giờ",
+      "desc": "Đổi ngoại tệ theo tỷ giá mới nhất và xem giờ ở các thành phố trên thế giới.",
+      "title": "Đổi ngoại tệ theo tỷ giá & xem giờ thế giới — WFTools",
+      "metaDescription": "Quy đổi ngoại tệ theo tỷ giá cập nhật hằng ngày và xem giờ hiện tại ở các thành phố trên thế giới, đổi giờ giữa các múi giờ.",
+      "h1": "Tiền tệ & múi giờ",
+      "lead": "Quy đổi tiền và giờ cho người làm việc từ xa, đi du lịch, làm logistics."
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "lang": "en",
+  "name": "English",
+  "dir": "ltr",
+  "ui": {
+    "nav.home": "Home",
+    "nav.tools": "All tools",
+    "nav.about": "About",
+    "nav.guide": "Guide",
+    "nav.skip": "Skip to menu",
+    "nav.toggle": "Tools",
+    "nav.menu": "Main menu",
+    "search.placeholder": "Search tools…",
+    "search.label": "Search tools",
+    "side.empty": "No matching tools.",
+    "side.toolsLabel": "All tools",
+    "account.login": "Sign in",
+    "account.logout": "Sign out",
+    "account.loginFail": "Sign-in failed.",
+    "account.driveNote": "Tool data is saved in the WFTools folder in your Google Drive.",
+    "account.openDrive": "Open Google Drive",
+    "footer.tagline": "Free online tools you use right in your browser. No install, no account.",
+    "footer.privacy": "What you enter is processed on your device and never sent to a server.",
+    "footer.info": "Information",
+    "footer.legal": "Legal",
+    "footer.allTools": "All tools",
+    "footer.about": "About",
+    "footer.guide": "Guide",
+    "footer.privacyPolicy": "Privacy Policy",
+    "footer.terms": "Terms of Use",
+    "footer.trademark": "QR Code is a registered trademark of Denso Wave Incorporated.",
+    "home.toolsTitle": "All tools",
+    "lang.label": "Language"
+  },
+  "pages": {
+    "home": {
+      "title": "WFTools — Free Online Tools",
+      "metaDescription": "Free online tools: QR & barcode generator, image compress & convert, PDF merge/split, JSON/XML/CSV/Excel converter, salary, loan, BMI, timetable, countdown and more. Runs in your browser, no sign-up.",
+      "h1": "Free online tools",
+      "lead": "Pick a tool and use it right in your browser. No sign-up, and your data never leaves your device."
+    }
+  },
+  "groups": {
+    "image": {
+      "name": "Image Tools",
+      "desc": "Compress, convert, remove backgrounds and watermark images on your device."
+    },
+    "file": {
+      "name": "File Tools",
+      "desc": "Merge/split PDFs, convert PowerPoint, compare text and convert data."
+    },
+    "business": {
+      "name": "Online Business",
+      "desc": "Tools for online shops, small businesses and freelancers."
+    },
+    "finance": {
+      "name": "Finance & Calculators",
+      "desc": "Accurate calculations by formula and current regulations."
+    },
+    "marketing": {
+      "name": "Marketing",
+      "desc": "QR codes, campaign links and brand colors."
+    },
+    "life": {
+      "name": "Productivity & Life",
+      "desc": "Handy everyday utilities."
+    },
+    "health": {
+      "name": "Health",
+      "desc": "Track weight, nutrition, water, activity and cycle."
+    },
+    "edu": {
+      "name": "Education & Teaching",
+      "desc": "Timetables, quizzes, attendance, mind maps and pay."
+    },
+    "time": {
+      "name": "Time Tools",
+      "desc": "Clocks, countdowns, time zones, working days and journal."
+    },
+    "dev": {
+      "name": "Developer Tools",
+      "desc": "Format, lint, encrypt and convert source code."
+    }
+  },
+  "tools": {
+    "image-convert": {
+      "name": "Compress Image",
+      "desc": "Reduce image file size and shrink many images at once for faster web upload and email."
+    },
+    "image-format": {
+      "name": "Convert Image Format",
+      "desc": "Convert images between JPG, PNG, WebP, AVIF, BMP and ICO (favicon) for websites, apps or storage."
+    },
+    "image-base64": {
+      "name": "Image to Base64",
+      "desc": "Turn images into Base64 strings to embed in HTML, CSS or code, and convert Base64 back to images."
+    },
+    "bg-remove": {
+      "name": "Remove Image Background",
+      "desc": "Remove a white or solid-color background from product photos, logos and avatars, instantly on your device."
+    },
+    "watermark": {
+      "name": "Add Watermark to Images",
+      "desc": "Add text, a logo or a copyright mark to one or many images at once."
+    },
+    "pdf-merge": {
+      "name": "Merge & Split PDF",
+      "desc": "Combine several PDF files into one, extract the pages you need, or split a PDF page by page."
+    },
+    "pptx-pdf": {
+      "name": "PowerPoint ↔ PDF",
+      "desc": "Convert PowerPoint (.pptx) slides to PDF and turn PDF files into PowerPoint."
+    },
+    "file-diff": {
+      "name": "Compare Two Files",
+      "desc": "Find the differences between two texts: TXT, Word, HTML or text-based PDF. Added, removed and changed parts are highlighted."
+    },
+    "text-analysis": {
+      "name": "Text Analysis",
+      "desc": "Count words, characters, sentences and paragraphs, estimate reading time and keyword density for text, TXT, Word or PDF files."
+    },
+    "data-convert": {
+      "name": "Convert JSON, XML, CSV, Excel",
+      "desc": "Convert data between JSON, XML, CSV and Excel (.xlsx) with a table preview."
+    },
+    "bmi-bmr": {
+      "name": "BMI & BMR Calculator",
+      "desc": "Calculate body mass index (BMI), waist-hip ratio and calorie needs (BMR, TDEE) by age, sex and activity level."
+    },
+    "meal-calo": {
+      "name": "Daily Meal & Calorie Planner",
+      "desc": "Plan meals by a calorie goal, look up calories of common dishes and balance protein, carbs and fat."
+    },
+    "water-tracker": {
+      "name": "Water Intake Tracker",
+      "desc": "Set a daily goal and log how much water you drink, with progress and a multi-day history."
+    },
+    "calo-burn": {
+      "name": "Calories Burned by Activity",
+      "desc": "Estimate calories burned by sport, activity, duration and body weight using MET values."
+    },
+    "cycle-track": {
+      "name": "Menstrual Cycle Tracker",
+      "desc": "Log and predict your menstrual cycle, ovulation day and fertile window. Data stays only on your device."
+    },
+    "study-timetable": {
+      "name": "Study Timetable",
+      "desc": "Build a weekly class timetable by period; print it or save it to reuse every day."
+    },
+    "quiz-bank": {
+      "name": "Quiz & Question Bank",
+      "desc": "Create a multiple-choice question bank, shuffle questions, take a graded practice test, and print the exam and answer key."
+    },
+    "attendance": {
+      "name": "Attendance",
+      "desc": "Build a class roster, take attendance per session and track absences and late arrivals. Can sync to Google Sheets."
+    },
+    "mindmap": {
+      "name": "Mind Map & Summary",
+      "desc": "Draw mind maps for lessons and automatically summarize long text into key points."
+    },
+    "teaching-pay": {
+      "name": "Teaching Hours & Pay",
+      "desc": "Log teaching sessions, total the hours and pay by rate, and export a statement."
+    },
+    "fullscreen-clock": {
+      "name": "Fullscreen Clock",
+      "desc": "A large fullscreen digital clock with stopwatch and countdown, customizable colors, font and 12/24-hour format."
+    },
+    "countdown-video": {
+      "name": "Countdown Video Maker",
+      "desc": "Create a customizable countdown timer and download it as a video to drop into your clips."
+    },
+    "world-clock": {
+      "name": "World Clock",
+      "desc": "See the current time in many countries at once and compare time-zone differences between them."
+    },
+    "workdays": {
+      "name": "Working Days Calculator",
+      "desc": "Count the working days between two dates, excluding Saturdays, Sundays and public holidays."
+    },
+    "journal": {
+      "name": "Online Journal",
+      "desc": "Write a daily journal saved privately to your own Google Sheet, readable only by you."
+    },
+    "code-format": {
+      "name": "Format JS, HTML, CSS, JSON",
+      "desc": "Neatly indent and tidy up JavaScript, HTML, CSS and JSON code."
+    },
+    "code-check": {
+      "name": "Syntax Checker",
+      "desc": "Find syntax and structure errors in JavaScript, HTML, CSS and JSON, with line and column."
+    },
+    "js-obfuscate": {
+      "name": "JavaScript Obfuscator",
+      "desc": "Encode strings, rename variables and obfuscate JavaScript to make it hard to read and copy."
+    },
+    "rsa-keys": {
+      "name": "RSA Keys & Encryption",
+      "desc": "Generate an RSA key pair (PEM), encrypt text with the public key and decrypt with the private key, all on your device."
+    },
+    "text-to-html": {
+      "name": "Rich Text to HTML",
+      "desc": "Edit visually with bold, headings, lists, tables and links, and get clean HTML code."
+    },
+    "inventory": {
+      "name": "Inventory & Pricing",
+      "desc": "Set selling prices from marketplace fees, ads and margin. Track stock in and out with low-stock alerts."
+    },
+    "invoice": {
+      "name": "Invoice & Quote",
+      "desc": "Create quotes and sales invoices with a logo, auto totals and amount in words. Print or save as PDF."
+    },
+    "menu-qr": {
+      "name": "QR Menu",
+      "desc": "Create a digital menu for restaurants and cafes. Customers scan a QR code to view dishes and prices."
+    },
+    "barcode": {
+      "name": "Barcode Generator",
+      "desc": "Generate Code 128, EAN-13, EAN-8, UPC-A and Code 39 barcodes for product and warehouse labels."
+    },
+    "loan": {
+      "name": "Loan Calculator",
+      "desc": "Monthly payment, total interest and a repayment schedule for home, car and consumer loans."
+    },
+    "compound": {
+      "name": "Compound Interest & Savings",
+      "desc": "Project how much you accumulate with regular monthly savings or investments."
+    },
+    "salary": {
+      "name": "Gross ↔ Net Salary",
+      "desc": "Convert Gross to Net salary and back, following 2026 insurance and personal income tax rules (Vietnam)."
+    },
+    "qr-code": {
+      "name": "QR Code Generator",
+      "desc": "Create QR codes for links, text, Wi-Fi, email and phone numbers. Download as PNG or SVG."
+    },
+    "utm": {
+      "name": "UTM Link Builder",
+      "desc": "Add campaign tracking codes to links to see which channel your visitors come from."
+    },
+    "colors": {
+      "name": "Color Palette & Codes",
+      "desc": "Build a harmonious palette from a base color and get HEX, RGB, HSL codes and CSS variables."
+    },
+    "expense": {
+      "name": "Expense & Budget",
+      "desc": "Log daily income and expenses, view spending by category and set limits to stay on budget."
+    },
+    "habit": {
+      "name": "Habit & Streak Tracker",
+      "desc": "Mark habits each day and track consecutive-day streaks to stay disciplined."
+    },
+    "cv": {
+      "name": "Resume (CV) Builder",
+      "desc": "Fill in a template with live preview, pick a layout and color, and print or save as PDF for free."
+    },
+    "currency-time": {
+      "name": "Currency & Time Zones",
+      "desc": "Convert currencies at the latest rates and check the time in cities around the world."
+    }
+  }
+}

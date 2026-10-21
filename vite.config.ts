@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import { readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { seoPlugin } from './seo';
 
 // Mỗi công cụ là một trang HTML riêng (multi-page app).
 // Mọi file trong thư mục tools/ được tự nhận làm trang, không cần khai báo từng trang.
@@ -13,8 +12,7 @@ const toolPages = Object.fromEntries(
 
 // base './' giúp site chạy được cả ở tên miền gốc lẫn trong thư mục con.
 export default defineConfig({
-  base: './',
-  plugins: [seoPlugin()],
+  base: '/',
   build: {
     rollupOptions: {
       input: {

@@ -1,0 +1,263 @@
+{
+  "lang": "zh",
+  "name": "中文",
+  "dir": "ltr",
+  "ui": {
+    "nav.home": "首页",
+    "nav.tools": "全部工具",
+    "nav.about": "关于",
+    "nav.guide": "使用指南",
+    "nav.skip": "跳到菜单",
+    "nav.toggle": "工具",
+    "nav.menu": "主菜单",
+    "search.placeholder": "搜索工具…",
+    "search.label": "搜索工具",
+    "side.empty": "没有匹配的工具。",
+    "side.toolsLabel": "全部工具",
+    "account.login": "登录",
+    "account.logout": "退出登录",
+    "account.loginFail": "登录失败。",
+    "account.driveNote": "工具数据保存在你 Google 云端硬盘的 WFTools 文件夹中。",
+    "account.openDrive": "打开 Google 云端硬盘",
+    "footer.tagline": "在浏览器中即用的免费在线工具。无需安装,无需账号。",
+    "footer.privacy": "你输入的内容在本地处理,不会发送到服务器。",
+    "footer.info": "信息",
+    "footer.legal": "法律",
+    "footer.allTools": "全部工具",
+    "footer.about": "关于",
+    "footer.guide": "使用指南",
+    "footer.privacyPolicy": "隐私政策",
+    "footer.terms": "使用条款",
+    "footer.trademark": "QR Code 是 Denso Wave Incorporated 的注册商标。",
+    "home.toolsTitle": "全部工具",
+    "lang.label": "语言"
+  },
+  "pages": {
+    "home": {
+      "title": "WFTools — 免费在线工具",
+      "metaDescription": "免费在线工具:二维码与条形码生成、图片压缩与转换、PDF 合并/拆分、JSON/XML/CSV/Excel 转换、工资、贷款、BMI、课程表、倒计时等。浏览器直接运行,无需注册。",
+      "h1": "免费在线工具",
+      "lead": "选择一个工具,在浏览器中即刻使用。无需注册,数据不离开你的设备。"
+    }
+  },
+  "groups": {
+    "image": {
+      "name": "图片工具",
+      "desc": "在本地压缩、转换格式、去背景、加水印。"
+    },
+    "file": {
+      "name": "文件工具",
+      "desc": "合并/拆分 PDF、转换 PowerPoint、比较文本、转换数据。"
+    },
+    "business": {
+      "name": "网店经营",
+      "desc": "面向网店、个体户与自由职业者的工具。"
+    },
+    "finance": {
+      "name": "财务与计算",
+      "desc": "依据公式与现行规定进行精确计算。"
+    },
+    "marketing": {
+      "name": "营销",
+      "desc": "二维码、活动链接与品牌配色。"
+    },
+    "life": {
+      "name": "效率与生活",
+      "desc": "日常实用小工具。"
+    },
+    "health": {
+      "name": "健康",
+      "desc": "记录体重、营养、饮水、运动与周期。"
+    },
+    "edu": {
+      "name": "教育与教学",
+      "desc": "课程表、试卷、考勤、思维导图与酬劳。"
+    },
+    "time": {
+      "name": "时间工具",
+      "desc": "时钟、倒计时、时区、工作日与日记。"
+    },
+    "dev": {
+      "name": "开发者工具",
+      "desc": "源代码格式化、检查、加密与转换。"
+    }
+  },
+  "tools": {
+    "image-convert": {
+      "name": "压缩图片",
+      "desc": "减小图片体积，一次缩小多张图片，更快上传网页、发送邮件。"
+    },
+    "image-format": {
+      "name": "转换图片格式",
+      "desc": "在 JPG、PNG、WebP、AVIF、BMP、ICO(网站图标)之间相互转换,用于网站、应用或存档。"
+    },
+    "image-base64": {
+      "name": "图片转 Base64",
+      "desc": "将图片转成 Base64 字符串以嵌入 HTML、CSS、代码,也可将 Base64 转回图片。"
+    },
+    "bg-remove": {
+      "name": "去除图片背景",
+      "desc": "在本地即刻去除产品图、logo、头像的白色或单色背景。"
+    },
+    "watermark": {
+      "name": "给图片加水印",
+      "desc": "为一张或多张图片批量添加文字、logo 或版权标记。"
+    },
+    "pdf-merge": {
+      "name": "合并与拆分 PDF",
+      "desc": "把多个 PDF 合并为一个,提取所需页面,或按页拆分 PDF。"
+    },
+    "pptx-pdf": {
+      "name": "PowerPoint ↔ PDF",
+      "desc": "将 PowerPoint(.pptx)转为 PDF,也可把 PDF 转成 PowerPoint。"
+    },
+    "file-diff": {
+      "name": "比较两个文件",
+      "desc": "找出两段文本的差异:TXT、Word、HTML、含文字的 PDF。新增、删除、修改部分高亮显示。"
+    },
+    "text-analysis": {
+      "name": "文本分析",
+      "desc": "统计字数、字符、句子、段落,估算阅读时间与关键词密度(支持 TXT、Word、PDF)。"
+    },
+    "data-convert": {
+      "name": "转换 JSON、XML、CSV、Excel",
+      "desc": "在 JSON、XML、CSV、Excel(.xlsx)之间互转,并以表格预览。"
+    },
+    "bmi-bmr": {
+      "name": "BMI 与 BMR 计算",
+      "desc": "按年龄、性别、运动量计算身体质量指数 BMI、腰臀比与基础代谢 BMR、TDEE。"
+    },
+    "meal-calo": {
+      "name": "每日饮食与卡路里",
+      "desc": "按卡路里目标安排饮食,查询菜品热量,平衡蛋白质、碳水与脂肪。"
+    },
+    "water-tracker": {
+      "name": "饮水记录",
+      "desc": "设定每日目标并记录饮水量,查看进度与多天历史。"
+    },
+    "calo-burn": {
+      "name": "运动消耗卡路里",
+      "desc": "按运动、活动、时长和体重,用 MET 值估算消耗的卡路里。"
+    },
+    "cycle-track": {
+      "name": "经期追踪",
+      "desc": "记录并预测月经周期、排卵日与易孕期。数据仅保存在你的设备上。"
+    },
+    "study-timetable": {
+      "name": "学习课程表",
+      "desc": "按节次制作每周课程表,可打印或保存以便每天使用。"
+    },
+    "quiz-bank": {
+      "name": "试卷与题库",
+      "desc": "创建选择题题库、打乱题序、即时评分试做,并打印试卷与答案。"
+    },
+    "attendance": {
+      "name": "考勤点名",
+      "desc": "建立班级名单,按课时点名,统计缺勤与迟到。可同步到 Google 表格。"
+    },
+    "mindmap": {
+      "name": "思维导图与摘要",
+      "desc": "为课程绘制思维导图,并自动将长文本概括为要点。"
+    },
+    "teaching-pay": {
+      "name": "课时与酬劳",
+      "desc": "记录授课场次,按单价汇总课时与酬劳,导出明细。"
+    },
+    "fullscreen-clock": {
+      "name": "全屏时钟",
+      "desc": "带秒表与倒计时的大号全屏数字时钟,可自定义颜色、字体与 12/24 小时制。"
+    },
+    "countdown-video": {
+      "name": "倒计时视频制作",
+      "desc": "制作可自定义的倒计时,并下载为视频,插入到你的影片中。"
+    },
+    "world-clock": {
+      "name": "世界时钟",
+      "desc": "同时查看多个国家的当前时间,并比较各国之间的时差。"
+    },
+    "workdays": {
+      "name": "工作日计算",
+      "desc": "计算两个日期之间的工作日天数,排除周六、周日和节假日。"
+    },
+    "journal": {
+      "name": "在线日记",
+      "desc": "每天写日记,私密保存到你自己的 Google 表格,仅你本人可读。"
+    },
+    "code-format": {
+      "name": "格式化 JS、HTML、CSS、JSON",
+      "desc": "将 JavaScript、HTML、CSS、JSON 代码整齐缩进美化。"
+    },
+    "code-check": {
+      "name": "语法检查",
+      "desc": "查找 JavaScript、HTML、CSS、JSON 的语法与结构错误,并指出行号列号。"
+    },
+    "js-obfuscate": {
+      "name": "JavaScript 混淆",
+      "desc": "编码字符串、重命名变量,混淆 JavaScript,使其难以阅读与复制。"
+    },
+    "rsa-keys": {
+      "name": "RSA 密钥与加密",
+      "desc": "生成 RSA 密钥对(PEM),用公钥加密文本、用私钥解密,全部在本地完成。"
+    },
+    "text-to-html": {
+      "name": "富文本转 HTML",
+      "desc": "可视化编辑加粗、标题、列表、表格和链接,获取干净的 HTML 代码。"
+    },
+    "inventory": {
+      "name": "库存与定价",
+      "desc": "按平台费、广告、利润率计算售价。管理出入库并提醒库存不足。"
+    },
+    "invoice": {
+      "name": "发票与报价",
+      "desc": "制作带 logo 的报价单与销售发票,自动计算合计并将金额转为大写。可打印或存为 PDF。"
+    },
+    "menu-qr": {
+      "name": "二维码菜单",
+      "desc": "为餐厅、咖啡馆制作电子菜单。顾客扫码即可查看菜品和价格。"
+    },
+    "barcode": {
+      "name": "条形码生成",
+      "desc": "生成 Code 128、EAN-13、EAN-8、UPC-A、Code 39 条形码,用于商品与仓库标签。"
+    },
+    "loan": {
+      "name": "贷款计算",
+      "desc": "计算房贷、车贷、消费贷的每月还款额、总利息与还款计划表。"
+    },
+    "compound": {
+      "name": "复利与积累",
+      "desc": "测算每月定期储蓄或投资能积累多少。"
+    },
+    "salary": {
+      "name": "税前 ↔ 税后工资",
+      "desc": "按 2026 年社保与个人所得税(越南)在税前与税后工资之间互算。"
+    },
+    "qr-code": {
+      "name": "二维码生成",
+      "desc": "为链接、文本、Wi-Fi、邮箱、电话号码生成二维码。可下载为 PNG 或 SVG。"
+    },
+    "utm": {
+      "name": "UTM 链接生成",
+      "desc": "为链接添加活动追踪代码,了解访客来自哪个渠道。"
+    },
+    "colors": {
+      "name": "调色板与色值",
+      "desc": "从基准色生成和谐配色,获取 HEX、RGB、HSL 色值与 CSS 变量。"
+    },
+    "expense": {
+      "name": "收支与预算",
+      "desc": "记录每日收支,按类别查看支出,设置上限以不超预算。"
+    },
+    "habit": {
+      "name": "习惯与连续天数",
+      "desc": "每天打卡习惯,追踪连续达成天数以保持自律。"
+    },
+    "cv": {
+      "name": "简历(CV)制作",
+      "desc": "按模板填写并实时预览,选择版式与颜色,免费打印或存为 PDF。"
+    },
+    "currency-time": {
+      "name": "货币与时区",
+      "desc": "按最新汇率换算货币,并查看全球城市的时间。"
+    }
+  }
+}
