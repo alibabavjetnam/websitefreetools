@@ -2,8 +2,10 @@ import { mountLayout } from '../layout';
 import { BARCODE_FORMATS, barcodeToSvg, encodeBarcode, type BarcodeFormat, type BarcodeResult } from '../lib/barcode';
 import { downloadPng, downloadSvg, safeFilename } from '../lib/download';
 import { pulseScan } from './shared';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'barcode' });
+const T = pageText();
 
 const form = document.getElementById('bc-form') as HTMLFormElement;
 const formats = document.getElementById('bc-formats') as HTMLFieldSetElement;
@@ -50,7 +52,7 @@ function svgSize(svg: string): [number, number] {
 
 function render(): void {
   const info = formatInfo();
-  hint.textContent = info.hint;
+  hint.textContent = T('hint.' + format(), info.hint);
   input.placeholder = info.sample;
   (form.elements.namedItem('mwOut') as HTMLOutputElement).value = val('moduleWidth');
   (form.elements.namedItem('hOut') as HTMLOutputElement).value = val('height');
@@ -62,7 +64,7 @@ function render(): void {
     current = null;
     output.innerHTML = '';
     output.classList.add('is-empty');
-    meta.textContent = `Nhập mã để tạo, ví dụ ${info.sample}.`;
+    meta.textContent = `${T('meta.enter', 'Nhập mã để tạo, ví dụ')} ${info.sample}.`;
     errorBox.hidden = true;
     setDisabled(true);
     return;
@@ -77,7 +79,7 @@ function render(): void {
     output.innerHTML = svgFor(result);
     const autoCheck = result.text.length > raw.replace(/\s+/g, '').length && format() !== 'CODE39';
     meta.textContent = autoCheck
-      ? `${info.label}: ${result.text} (đã tự thêm chữ số cuối ${result.text.slice(-1)})`
+      ? `${info.label}: ${result.text} (${T('meta.autoCheck', 'đã tự thêm chữ số cuối')} ${result.text.slice(-1)})`
       : `${info.label}: ${result.text}`;
     errorBox.hidden = true;
     setDisabled(false);

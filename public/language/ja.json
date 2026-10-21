@@ -259,5 +259,65 @@
       "name": "通貨・タイムゾーン",
       "desc": "最新レートで通貨を換算し、世界の都市の時刻を確認。"
     }
+  },
+  "s": {
+    "bg-remove": {
+      "drop.title": "画像を選択またはここにドロップ",
+      "drop.hint": "JPG・PNG・WebP。白や単色背景の商品写真に最適。画像は端末上で処理されます。",
+      "tol.label": "感度",
+      "contiguous": "端につながった背景だけ削除(物体内部の同色部分は残す)",
+      "note.autobg": "背景色は端から自動検出します。誤る場合は元画像の背景部分をクリックして選び直してください。",
+      "feather.label": "ふち をぼかす",
+      "fig.original": "元画像",
+      "fig.result": "結果",
+      "stage.nofile": "画像が未選択です。",
+      "stage.resultHint": "画像を選ぶとすぐに結果が表示されます。",
+      "bgout.legend": "保存時の背景",
+      "bgout.transparent": "透明(PNG)",
+      "bgout.color": "色",
+      "bgcolor.label": "新しい背景色",
+      "dl": "画像を保存",
+      "err.notImage": "このファイルは画像ではありません。",
+      "err.tooBig": "画像が40MBを超えています。",
+      "canvas.title": "背景部分をクリックして色を選択",
+      "toast.pickedBg": "背景色を選択しました"
+    },
+    "attendance": {
+      "add.label": "受講者を追加",
+      "add.ph": "氏名を入力してEnter(複数貼り付け時は1行1名)",
+      "date.label": "出欠の日付",
+      "note": "状態セルをクリックで切替:出席 → 欠席 → 遅刻 → 公欠。集計列は全履歴を数えます。Googleにログインするとスプレッドシートに保存できます。",
+      "summary.date": "日付",
+      "summary.present": "出席",
+      "th.name": "氏名",
+      "th.today": "今日",
+      "th.present": "出席",
+      "th.absent": "欠席",
+      "th.late": "遅刻",
+      "empty": "受講者がいません。上の欄で名前を追加してください(複数行貼り付け可)。",
+      "cell.title": "クリックで変更",
+      "del": "削除",
+      "del.confirm": "もう一度クリック"
+    },
+    "barcode": {
+      "legend.format": "バーコード規格",
+      "value.label": "生成するコード",
+      "options": "詳細設定",
+      "mw.label": "バー幅",
+      "h.label": "バー高さ",
+      "showText": "下に数字を表示",
+      "color.fg": "バーの色",
+      "color.bg": "背景色",
+      "preview": "プレビュー",
+      "dl.png": "PNGを保存",
+      "dl.svg": "SVGを保存",
+      "meta.enter": "コードを入力してください。例:",
+      "meta.autoCheck": "チェックディジットを自動追加",
+      "hint.CODE128": "アクセントなしの英字・数字・記号に対応。注文・配送・倉庫でよく使われます。",
+      "hint.EAN13": "12桁を入力(末尾は自動付与)。小売用。ベトナム製品は893で始まります。",
+      "hint.EAN8": "7桁を入力(末尾は自動付与)。小型商品向け。",
+      "hint.UPCA": "11桁を入力(末尾は自動付与)。米国商品でよく見られます。",
+      "hint.CODE39": "アクセントなしの大文字・数字・- . $ / + % に対応。社員証や機器ラベルでよく使われます。"
+    }
   }
 }

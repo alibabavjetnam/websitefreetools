@@ -4,7 +4,7 @@ import { lineIcon } from './icons';
 import { GoogleAuthError, currentUser, signIn, signOut } from './google/auth';
 import { encodeQr, qrToSvg } from './lib/qr';
 import { barcodeToSvg, encodeBarcode } from './lib/barcode';
-import { LANGS, LANG_NAMES, currentLang, groupName, homeHref, langBase, staticHref, t, toolDesc, toolName } from './i18n';
+import { LANGS, LANG_NAMES, applyI18n, currentLang, groupName, homeHref, langBase, staticHref, t, toolDesc, toolName } from './i18n';
 
 export function toolHref(tool: ToolInfo): string {
   return `${langBase()}/${tool.path}`;
@@ -234,6 +234,8 @@ export function mountLayout(opts: { activeNav?: string; activeTool?: string } = 
   document.body.insertAdjacentHTML('afterbegin', renderHeader(opts.activeNav ?? ''));
   shell.insertAdjacentHTML('afterend', renderFooter());
   setupAccount();
+  // Dịch các nhãn tĩnh có sẵn trong HTML của trang (nếu công cụ dùng data-i18n)
+  applyI18n(document);
 
   // Tìm kiếm trong menu trái
   const sidebar = document.getElementById('sidebar') as HTMLElement;

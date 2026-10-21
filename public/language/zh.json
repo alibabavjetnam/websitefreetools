@@ -259,5 +259,65 @@
       "name": "货币与时区",
       "desc": "按最新汇率换算货币,并查看全球城市的时间。"
     }
+  },
+  "s": {
+    "bg-remove": {
+      "drop.title": "选择图片或拖放到这里",
+      "drop.hint": "JPG、PNG、WebP。最适合白色或单色背景的产品图。图片在本地处理。",
+      "tol.label": "灵敏度",
+      "contiguous": "仅去除与边缘相连的背景(保留物体内部同色细节)",
+      "note.autobg": "背景色从边缘自动识别。若识别有误,点击原图的背景区域重新选取。",
+      "feather.label": "柔化边缘",
+      "fig.original": "原图",
+      "fig.result": "结果",
+      "stage.nofile": "尚未选择图片。",
+      "stage.resultHint": "选择图片后即时显示结果。",
+      "bgout.legend": "下载时的背景",
+      "bgout.transparent": "透明(PNG)",
+      "bgout.color": "颜色",
+      "bgcolor.label": "新背景色",
+      "dl": "下载图片",
+      "err.notImage": "该文件不是图片。",
+      "err.tooBig": "图片大于 40 MB。",
+      "canvas.title": "点击背景区域以选取颜色",
+      "toast.pickedBg": "已选取背景色"
+    },
+    "attendance": {
+      "add.label": "添加学员",
+      "add.ph": "输入姓名后回车(粘贴多人时每行一个)",
+      "date.label": "点名日期",
+      "note": "点击状态格循环切换:出勤 → 缺勤 → 迟到 → 请假。汇总列统计全部历史。登录 Google 可保存到 Google 表格。",
+      "summary.date": "日期",
+      "summary.present": "出勤",
+      "th.name": "姓名",
+      "th.today": "今天",
+      "th.present": "出勤",
+      "th.absent": "缺勤",
+      "th.late": "迟到",
+      "empty": "还没有学员。在上方输入框添加姓名(可粘贴多行)。",
+      "cell.title": "点击切换",
+      "del": "删除",
+      "del.confirm": "再点一次"
+    },
+    "barcode": {
+      "legend.format": "条码制式",
+      "value.label": "要生成的编码",
+      "options": "自定义",
+      "mw.label": "条宽",
+      "h.label": "条高",
+      "showText": "在下方显示数字",
+      "color.fg": "条码颜色",
+      "color.bg": "背景色",
+      "preview": "预览",
+      "dl.png": "下载 PNG",
+      "dl.svg": "下载 SVG",
+      "meta.enter": "输入编码以生成,例如",
+      "meta.autoCheck": "已自动添加校验位",
+      "hint.CODE128": "支持无重音字母、数字和符号。常用于订单、运输、仓库。",
+      "hint.EAN13": "输入 12 位数字,末位自动添加。零售条码;越南商品以 893 开头。",
+      "hint.EAN8": "输入 7 位数字,末位自动添加。用于小型商品。",
+      "hint.UPCA": "输入 11 位数字,末位自动添加。常见于美国商品。",
+      "hint.CODE39": "支持无重音大写字母、数字及 - . $ / + %。常用于员工证、设备标签。"
+    }
   }
 }

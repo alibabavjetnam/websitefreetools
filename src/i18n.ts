@@ -13,8 +13,19 @@ export interface Dict {
 interface W {
   __WFT_LANG__?: string;
   __WFT_I18N__?: Dict;
+  /** Chuỗi bên trong của riêng trang công cụ hiện tại (nạp qua /language/<lang>/s/<id>.js) */
+  __WFT_S__?: Record<string, string>;
 }
 const w = window as unknown as W;
+
+/**
+ * Trả về hàm dịch chuỗi nội bộ của một công cụ. Mỗi trang chỉ nạp từ điển của chính nó.
+ * fallback (thường là bản gốc tiếng Việt) được dùng khi chưa có bản dịch.
+ */
+export function pageText(): (key: string, fallback?: string) => string {
+  const s = w.__WFT_S__;
+  return (key: string, fallback = '') => s?.[key] ?? fallback;
+}
 
 export const LANGS = ['en', 'vi', 'ja', 'zh'] as const;
 export type Lang = (typeof LANGS)[number];
@@ -49,3 +60,30 @@ export function toolDesc(id: string, fallback: string): string {
 /** Đường dẫn trang chủ và trang tĩnh theo ngôn ngữ hiện tại */
 export const homeHref = (): string => `${langBase()}/index.html`;
 export const staticHref = (file: string): string => `${langBase()}/${file}`;
+
+/**
+ * Dịch các phần tử tĩnh trong HTML đánh dấu sẵn:
+ *  - data-i18n="key"        → đổi textContent
+ *  - data-i18n-ph="key"     → đổi placeholder
+ *  - data-i18n-attr="attr:key;attr2:key2" → đổi thuộc tính (title, aria-label…)
+ * Chuỗi gốc trong HTML được dùng làm fallback khi chưa có bản dịch.
+ */
+export function applyI18n(root: ParentNode = document): void {
+  const s = w.__WFT_S__;
+  if (!s) return;
+  root.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
+    const v = s[el.dataset.i18n as string];
+    if (v != null) el.textContent = v;
+  });
+  root.querySelectorAll<HTMLInputElement>('[data-i18n-ph]').forEach((el) => {
+    const v = s[el.dataset.i18nPh as string];
+    if (v != null) el.placeholder = v;
+  });
+  root.querySelectorAll<HTMLElement>('[data-i18n-attr]').forEach((el) => {
+    for (const pair of (el.dataset.i18nAttr as string).split(';')) {
+      const [attr, key] = pair.split(':');
+      const v = s[key];
+      if (attr && v != null) el.setAttribute(attr.trim(), v);
+    }
+  });
+}

@@ -111,6 +111,7 @@ function seoHead(page, lang, c) {
     ld.length ? `<script type="application/ld+json">${JSON.stringify(ld.length === 1 ? ld[0] : ld)}</script>` : '',
     `<script>window.__WFT_LANG__="${lang}"</script>`,
     `<script src="/language/${lang}.js"></script>`,
+    page.type === 'tool' && hasPageStrings(page.key) ? `<script src="/language/${lang}/s/${page.key}.js"></script>` : '',
   ].filter(Boolean);
   return tags.join('\n    ');
 }
@@ -143,6 +144,21 @@ function runtimeDicts() {
     };
     writeFileSync(resolve(DIST, 'language', `${l}.js`), `window.__WFT_I18N__=${JSON.stringify(trimmed)};`);
   }
+  // Chuỗi nội bộ từng công cụ: dựa trên khung tiếng Anh, mỗi ngôn ngữ ghi đè theo từng khoá.
+  const baseS = dicts[DEFAULT].s || {};
+  for (const l of LANGS) {
+    const langS = dicts[l].s || {};
+    for (const id of Object.keys(baseS)) {
+      const merged = { ...baseS[id], ...(langS[id] || {}) };
+      const dir = resolve(DIST, 'language', l, 's');
+      mkdirSync(dir, { recursive: true });
+      writeFileSync(resolve(dir, `${id}.js`), `window.__WFT_S__=${JSON.stringify(merged)};`);
+    }
+  }
+}
+/** Công cụ có bộ chuỗi nội bộ (đã dịch Giai đoạn 2) */
+function hasPageStrings(id) {
+  return !!(dicts[DEFAULT].s && dicts[DEFAULT].s[id]);
 }
 
 function rootRedirect() {

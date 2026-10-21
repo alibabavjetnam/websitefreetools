@@ -20,39 +20,39 @@
       <div class="workspace">
         <form class="panel" id="bc-form" novalidate>
           <fieldset class="format-list" id="bc-formats">
-            <legend>Chuẩn mã vạch</legend>
+            <legend data-i18n="legend.format">Chuẩn mã vạch</legend>
           </fieldset>
 
           <label class="field">
-            <span class="field-label">Mã cần tạo</span>
+            <span class="field-label" data-i18n="value.label">Mã cần tạo</span>
             <input name="value" type="text" autocomplete="off" spellcheck="false" />
             <span class="field-hint" id="bc-hint"></span>
           </label>
 
           <details class="options" open>
-            <summary>Tuỳ chỉnh</summary>
+            <summary data-i18n="options">Tuỳ chỉnh</summary>
             <div class="options-body">
               <label class="field">
-                <span class="field-label">Độ rộng vạch: <output name="mwOut">2</output> px</span>
+                <span class="field-label"><span data-i18n="mw.label">Độ rộng vạch</span>: <output name="mwOut">2</output> px</span>
                 <input type="range" name="moduleWidth" min="1" max="6" step="1" value="2" />
               </label>
               <label class="field">
-                <span class="field-label">Chiều cao vạch: <output name="hOut">100</output> px</span>
+                <span class="field-label"><span data-i18n="h.label">Chiều cao vạch</span>: <output name="hOut">100</output> px</span>
                 <input type="range" name="height" min="30" max="240" step="10" value="100" />
               </label>
               <div class="field-row">
-                <label class="check"><input type="checkbox" name="showText" checked /><span>Hiện chữ số bên dưới</span></label>
+                <label class="check"><input type="checkbox" name="showText" checked /><span data-i18n="showText">Hiện chữ số bên dưới</span></label>
               </div>
               <div class="field-row">
-                <label class="color"><input type="color" name="fg" value="#000000" /><span>Màu vạch</span></label>
-                <label class="color"><input type="color" name="bg" value="#ffffff" /><span>Màu nền</span></label>
+                <label class="color"><input type="color" name="fg" value="#000000" /><span data-i18n="color.fg">Màu vạch</span></label>
+                <label class="color"><input type="color" name="bg" value="#ffffff" /><span data-i18n="color.bg">Màu nền</span></label>
               </div>
             </div>
           </details>
         </form>
 
         <section class="preview" aria-labelledby="preview-title">
-          <h2 id="preview-title" class="visually-hidden">Xem trước</h2>
+          <h2 id="preview-title" class="visually-hidden" data-i18n="preview">Xem trước</h2>
           <div class="label-sheet">
             <div class="code-frame code-frame--bar" id="bc-output" role="img" aria-label="Mã vạch"></div>
             <span class="scan-line" aria-hidden="true"></span>
@@ -60,8 +60,8 @@
           <p class="code-meta" id="bc-meta" aria-live="polite"></p>
           <p class="error" id="bc-error" role="alert" hidden></p>
           <div class="actions">
-            <button type="button" class="btn btn-primary" id="dl-png">Tải PNG</button>
-            <button type="button" class="btn" id="dl-svg">Tải SVG</button>
+            <button type="button" class="btn btn-primary" id="dl-png" data-i18n="dl.png">Tải PNG</button>
+            <button type="button" class="btn" id="dl-svg" data-i18n="dl.svg">Tải SVG</button>
           </div>
         </section>
       </div>

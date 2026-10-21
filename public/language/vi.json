@@ -435,5 +435,65 @@
       "h1": "Tiền tệ & múi giờ",
       "lead": "Quy đổi tiền và giờ cho người làm việc từ xa, đi du lịch, làm logistics."
     }
+  },
+  "s": {
+    "bg-remove": {
+      "drop.title": "Chọn một ảnh hoặc kéo thả vào đây",
+      "drop.hint": "JPG, PNG, WebP. Hợp ảnh sản phẩm chụp trên nền trắng hoặc một màu. Ảnh được xử lý ngay trên máy của bạn.",
+      "tol.label": "Độ nhạy",
+      "contiguous": "Chỉ xoá vùng nền nối với mép ảnh (giữ lại chi tiết cùng màu bên trong vật thể)",
+      "note.autobg": "Màu nền được tự nhận từ mép ảnh. Nếu nhận sai, bấm vào vùng nền trên ảnh gốc để chọn lại.",
+      "feather.label": "Làm mềm viền",
+      "fig.original": "Ảnh gốc",
+      "fig.result": "Kết quả",
+      "stage.nofile": "Chưa chọn ảnh.",
+      "stage.resultHint": "Kết quả hiện ngay khi bạn chọn ảnh.",
+      "bgout.legend": "Nền khi tải về",
+      "bgout.transparent": "Trong suốt (PNG)",
+      "bgout.color": "Màu",
+      "bgcolor.label": "Màu nền mới",
+      "dl": "Tải ảnh về",
+      "err.notImage": "File này không phải ảnh.",
+      "err.tooBig": "Ảnh lớn hơn 40 MB.",
+      "canvas.title": "Bấm vào vùng nền để chọn màu nền",
+      "toast.pickedBg": "Đã chọn màu nền"
+    },
+    "attendance": {
+      "add.label": "Thêm học viên",
+      "add.ph": "Nhập họ tên rồi Enter (mỗi dòng một người khi dán nhiều)",
+      "date.label": "Ngày điểm danh",
+      "note": "Bấm vào ô trạng thái để chuyển lần lượt: Có mặt → Vắng → Muộn → Có phép. Cột tổng hợp đếm toàn bộ lịch sử. Đăng nhập Google để lưu vào Google Sheet.",
+      "summary.date": "Ngày",
+      "summary.present": "có mặt",
+      "th.name": "Họ tên",
+      "th.today": "Hôm nay",
+      "th.present": "Có mặt",
+      "th.absent": "Vắng",
+      "th.late": "Muộn",
+      "empty": "Chưa có học viên. Thêm tên ở ô phía trên (có thể dán nhiều dòng).",
+      "cell.title": "Bấm để đổi",
+      "del": "Xoá",
+      "del.confirm": "Bấm lần nữa"
+    },
+    "barcode": {
+      "legend.format": "Chuẩn mã vạch",
+      "value.label": "Mã cần tạo",
+      "options": "Tuỳ chỉnh",
+      "mw.label": "Độ rộng vạch",
+      "h.label": "Chiều cao vạch",
+      "showText": "Hiện chữ số bên dưới",
+      "color.fg": "Màu vạch",
+      "color.bg": "Màu nền",
+      "preview": "Xem trước",
+      "dl.png": "Tải PNG",
+      "dl.svg": "Tải SVG",
+      "meta.enter": "Nhập mã để tạo, ví dụ",
+      "meta.autoCheck": "đã tự thêm chữ số cuối",
+      "hint.CODE128": "Nhận chữ không dấu, số và ký hiệu. Hay dùng cho đơn hàng, vận chuyển, kho hàng.",
+      "hint.EAN13": "Nhập 12 chữ số, chữ số cuối được tự thêm. Mã vạch trên hàng bán lẻ, hàng Việt Nam bắt đầu bằng 893.",
+      "hint.EAN8": "Nhập 7 chữ số, chữ số cuối được tự thêm. Dùng cho sản phẩm nhỏ.",
+      "hint.UPCA": "Nhập 11 chữ số, chữ số cuối được tự thêm. Hay gặp trên hàng Mỹ.",
+      "hint.CODE39": "Nhận chữ in hoa không dấu, số và - . $ / + %. Hay dùng cho thẻ nhân viên, nhãn thiết bị."
+    }
   }
 }

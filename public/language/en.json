@@ -259,5 +259,65 @@
       "name": "Currency & Time Zones",
       "desc": "Convert currencies at the latest rates and check the time in cities around the world."
     }
+  },
+  "s": {
+    "bg-remove": {
+      "drop.title": "Choose an image or drop it here",
+      "drop.hint": "JPG, PNG, WebP. Best for product photos on a white or solid-color background. Images are processed on your device.",
+      "tol.label": "Sensitivity",
+      "contiguous": "Only remove background connected to the edges (keep same-color details inside the object)",
+      "note.autobg": "The background color is detected from the edges. If it's wrong, click the background area in the original image to re-pick.",
+      "feather.label": "Soften edges",
+      "fig.original": "Original",
+      "fig.result": "Result",
+      "stage.nofile": "No image selected.",
+      "stage.resultHint": "The result appears as soon as you choose an image.",
+      "bgout.legend": "Background on download",
+      "bgout.transparent": "Transparent (PNG)",
+      "bgout.color": "Color",
+      "bgcolor.label": "New background color",
+      "dl": "Download image",
+      "err.notImage": "This file is not an image.",
+      "err.tooBig": "Image is larger than 40 MB.",
+      "canvas.title": "Click the background area to pick its color",
+      "toast.pickedBg": "Picked background color"
+    },
+    "attendance": {
+      "add.label": "Add student",
+      "add.ph": "Type a name and press Enter (one per line when pasting many)",
+      "date.label": "Attendance date",
+      "note": "Click a status cell to cycle: Present → Absent → Late → Excused. The summary columns count the full history. Sign in with Google to save to Google Sheets.",
+      "summary.date": "Date",
+      "summary.present": "present",
+      "th.name": "Name",
+      "th.today": "Today",
+      "th.present": "Present",
+      "th.absent": "Absent",
+      "th.late": "Late",
+      "empty": "No students yet. Add names in the box above (you can paste multiple lines).",
+      "cell.title": "Click to change",
+      "del": "Delete",
+      "del.confirm": "Click again"
+    },
+    "barcode": {
+      "legend.format": "Barcode symbology",
+      "value.label": "Code to generate",
+      "options": "Options",
+      "mw.label": "Bar width",
+      "h.label": "Bar height",
+      "showText": "Show digits below",
+      "color.fg": "Bar color",
+      "color.bg": "Background color",
+      "preview": "Preview",
+      "dl.png": "Download PNG",
+      "dl.svg": "Download SVG",
+      "meta.enter": "Enter a code to generate, e.g.",
+      "meta.autoCheck": "auto-added check digit",
+      "hint.CODE128": "Accepts letters (no accents), digits and symbols. Common for orders, shipping and warehouses.",
+      "hint.EAN13": "Enter 12 digits; the check digit is added automatically. Retail barcode; Vietnamese goods start with 893.",
+      "hint.EAN8": "Enter 7 digits; the check digit is added automatically. For small products.",
+      "hint.UPCA": "Enter 11 digits; the check digit is added automatically. Common on US goods.",
+      "hint.CODE39": "Accepts uppercase letters (no accents), digits and - . $ / + %. Common for staff badges and equipment labels."
+    }
   }
 }

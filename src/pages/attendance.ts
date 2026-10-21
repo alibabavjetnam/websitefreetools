@@ -1,8 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml } from '../ui';
+import { pageText } from '../i18n';
 import { SheetStore, newId } from '../google/sync';
 
 mountLayout({ activeTool: 'attendance' });
+const T = pageText();
 
 interface Student { id: string; name: string }
 interface Mark { id: string; studentId: string; date: string; status: string }
@@ -33,12 +35,12 @@ const root = $('#tool-root');
 root.innerHTML = `
   <div class="tool-body">
     <div class="panel code-toolbar">
-      <form id="add-form" class="field field--inline" style="flex:1"><span class="field-label">Thêm học viên</span><input id="name" type="text" maxlength="80" placeholder="Nhập họ tên rồi Enter (mỗi dòng một người khi dán nhiều)" autocomplete="off" /></form>
-      <label class="field field--inline"><span class="field-label">Ngày điểm danh</span><input type="date" id="date" value="${date}" /></label>
+      <form id="add-form" class="field field--inline" style="flex:1"><span class="field-label">${T('add.label','Thêm học viên')}</span><input id="name" type="text" maxlength="80" placeholder="${T('add.ph','Nhập họ tên rồi Enter (mỗi dòng một người khi dán nhiều)')}" autocomplete="off" /></form>
+      <label class="field field--inline"><span class="field-label">${T('date.label','Ngày điểm danh')}</span><input type="date" id="date" value="${date}" /></label>
     </div>
     <div class="stat-grid" id="summary" style="margin-top:16px"></div>
     <div class="table-wrap" style="margin-top:16px"><table class="data-table att-table" id="grid"></table></div>
-    <p class="note" style="margin-top:10px">Bấm vào ô trạng thái để chuyển lần lượt: Có mặt → Vắng → Muộn → Có phép. Cột tổng hợp đếm toàn bộ lịch sử. Đăng nhập Google để lưu vào Google Sheet.</p>
+    <p class="note" style="margin-top:10px">${T('note','Bấm vào ô trạng thái để chuyển lần lượt: Có mặt → Vắng → Muộn → Có phép. Cột tổng hợp đếm toàn bộ lịch sử. Đăng nhập Google để lưu vào Google Sheet.')}</p>
   </div>
 `;
 store.mount(root);
@@ -49,23 +51,23 @@ function render(): void {
   const todayMarks = d.marks.filter((m) => m.date === date);
   const present = todayMarks.filter((m) => m.status === 'present' || m.status === 'late').length;
   $('#summary').innerHTML = d.students.length
-    ? `<div class="stat stat--main"><span class="stat-label">Ngày ${date.split('-').reverse().join('/')}</span><span class="stat-value">${present}/${d.students.length} có mặt</span></div>
-       <div class="stat"><span class="stat-label">Vắng</span><span class="stat-value">${todayMarks.filter((m) => m.status === 'absent').length}</span></div>
-       <div class="stat"><span class="stat-label">Muộn</span><span class="stat-value">${todayMarks.filter((m) => m.status === 'late').length}</span></div>`
+    ? `<div class="stat stat--main"><span class="stat-label">${T('summary.date','Ngày')} ${date.split('-').reverse().join('/')}</span><span class="stat-value">${present}/${d.students.length} ${T('summary.present','có mặt')}</span></div>
+       <div class="stat"><span class="stat-label">${T('th.absent','Vắng')}</span><span class="stat-value">${todayMarks.filter((m) => m.status === 'absent').length}</span></div>
+       <div class="stat"><span class="stat-label">${T('th.late','Muộn')}</span><span class="stat-value">${todayMarks.filter((m) => m.status === 'late').length}</span></div>`
     : '';
   if (!d.students.length) {
-    $('#grid').innerHTML = '<tbody><tr><td class="note">Chưa có học viên. Thêm tên ở ô phía trên (có thể dán nhiều dòng).</td></tr></tbody>';
+    $('#grid').innerHTML = `<tbody><tr><td class="note">${T('empty','Chưa có học viên. Thêm tên ở ô phía trên (có thể dán nhiều dòng).')}</td></tr></tbody>`;
     return;
   }
   const count = (sid: string, st: string) => d.marks.filter((m) => m.studentId === sid && m.status === st).length;
-  $('#grid').innerHTML = `<thead><tr><th>#</th><th>Họ tên</th><th>Hôm nay</th><th>Có mặt</th><th>Vắng</th><th>Muộn</th><th></th></tr></thead>
+  $('#grid').innerHTML = `<thead><tr><th>#</th><th>${T('th.name','Họ tên')}</th><th>${T('th.today','Hôm nay')}</th><th>${T('th.present','Có mặt')}</th><th>${T('th.absent','Vắng')}</th><th>${T('th.late','Muộn')}</th><th></th></tr></thead>
     <tbody>${d.students.map((s, i) => {
       const st = markMap.get(`${s.id}|${date}`) ?? '';
       const info = STATUS.find((x) => x.code === st)!;
       return `<tr><td>${i + 1}</td><td><b>${escapeHtml(s.name)}</b></td>
-        <td><button type="button" class="att-cell ${info.cls}" data-toggle="${s.id}" title="Bấm để đổi">${info.mark ?? '—'}</button></td>
+        <td><button type="button" class="att-cell ${info.cls}" data-toggle="${s.id}" title="${T('cell.title','Bấm để đổi')}">${info.mark ?? '—'}</button></td>
         <td>${count(s.id, 'present') + count(s.id, 'late')}</td><td>${count(s.id, 'absent')}</td><td>${count(s.id, 'late')}</td>
-        <td><button type="button" class="btn btn-sm" data-del="${s.id}">Xoá</button></td></tr>`;
+        <td><button type="button" class="btn btn-sm" data-del="${s.id}">${T('del','Xoá')}</button></td></tr>`;
     }).join('')}</tbody>`;
 }
 
@@ -92,7 +94,7 @@ $('#grid').addEventListener('click', (e) => {
     render();
   } else if (del) {
     const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-del]')!;
-    if (btn.dataset.confirm !== '1') { btn.dataset.confirm = '1'; btn.textContent = 'Bấm lần nữa'; setTimeout(() => { btn.dataset.confirm = ''; btn.textContent = 'Xoá'; }, 3000); return; }
+    if (btn.dataset.confirm !== '1') { btn.dataset.confirm = '1'; btn.textContent = T('del.confirm','Bấm lần nữa'); setTimeout(() => { btn.dataset.confirm = ''; btn.textContent = T('del','Xoá'); }, 3000); return; }
     store.set({ students: d.students.filter((x) => x.id !== del), marks: d.marks.filter((m) => m.studentId !== del) });
     render();
   }

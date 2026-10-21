@@ -1,9 +1,11 @@
 import { mountLayout } from '../layout';
 import { $, downloadBlob, toast } from '../ui';
+import { pageText } from '../i18n';
 import { MAX_IMAGE_BYTES, canvasToBlob, drawToCanvas, loadImage, renameFile } from '../lib/image';
 import { keyOutBackground } from '../lib/bg-remove';
 
 mountLayout({ activeTool: 'bg-remove' });
+const T = pageText();
 
 const MAX_SIDE = 2400; // ảnh lớn hơn được thu nhỏ để xử lý nhanh và không hết bộ nhớ
 
@@ -12,31 +14,31 @@ $('#tool-root').innerHTML = `
     <div class="panel">
       <label class="dropzone" id="drop">
         <input type="file" id="file" accept="image/png,image/jpeg,image/webp,image/avif,image/bmp" />
-        <b>Chọn một ảnh hoặc kéo thả vào đây</b>
-        <span>JPG, PNG, WebP. Hợp ảnh sản phẩm chụp trên nền trắng hoặc một màu. Ảnh được xử lý ngay trên máy của bạn.</span>
+        <b>${T('drop.title', 'Chọn một ảnh hoặc kéo thả vào đây')}</b>
+        <span>${T('drop.hint', 'JPG, PNG, WebP. Hợp ảnh sản phẩm chụp trên nền trắng hoặc một màu. Ảnh được xử lý ngay trên máy của bạn.')}</span>
       </label>
       <div id="simple-opts" class="form-grid">
-        <label class="field span-all"><span class="field-label">Độ nhạy: <output id="tol-out">12</output></span><input type="range" id="tol" min="1" max="60" value="12" /></label>
-        <label class="check span-all"><input type="checkbox" id="contiguous" checked /><span>Chỉ xoá vùng nền nối với mép ảnh (giữ lại chi tiết cùng màu bên trong vật thể)</span></label>
-        <p class="note span-all">Màu nền được tự nhận từ mép ảnh. Nếu nhận sai, bấm vào vùng nền trên ảnh gốc để chọn lại.</p>
+        <label class="field span-all"><span class="field-label">${T('tol.label', 'Độ nhạy')}: <output id="tol-out">12</output></span><input type="range" id="tol" min="1" max="60" value="12" /></label>
+        <label class="check span-all"><input type="checkbox" id="contiguous" checked /><span>${T('contiguous', 'Chỉ xoá vùng nền nối với mép ảnh (giữ lại chi tiết cùng màu bên trong vật thể)')}</span></label>
+        <p class="note span-all">${T('note.autobg', 'Màu nền được tự nhận từ mép ảnh. Nếu nhận sai, bấm vào vùng nền trên ảnh gốc để chọn lại.')}</p>
       </div>
-      <label class="field"><span class="field-label">Làm mềm viền: <output id="feather-out">1</output> px</span><input type="range" id="feather" min="0" max="6" value="1" /></label>
+      <label class="field"><span class="field-label">${T('feather.label', 'Làm mềm viền')}: <output id="feather-out">1</output> px</span><input type="range" id="feather" min="0" max="6" value="1" /></label>
       <p class="error" id="err" hidden></p>
     </div>
     <section class="preview">
       <div class="bg-compare">
-        <figure><figcaption>Ảnh gốc</figcaption><div class="bg-stage" id="src-stage"><p class="note">Chưa chọn ảnh.</p></div></figure>
-        <figure><figcaption>Kết quả</figcaption><div class="bg-stage checker" id="out-stage"><p class="note">Kết quả hiện ngay khi bạn chọn ảnh.</p></div></figure>
+        <figure><figcaption>${T('fig.original', 'Ảnh gốc')}</figcaption><div class="bg-stage" id="src-stage"><p class="note">${T('stage.nofile', 'Chưa chọn ảnh.')}</p></div></figure>
+        <figure><figcaption>${T('fig.result', 'Kết quả')}</figcaption><div class="bg-stage checker" id="out-stage"><p class="note">${T('stage.resultHint', 'Kết quả hiện ngay khi bạn chọn ảnh.')}</p></div></figure>
       </div>
       <fieldset class="field">
-        <legend>Nền khi tải về</legend>
+        <legend>${T('bgout.legend', 'Nền khi tải về')}</legend>
         <div class="row">
-          <label class="check"><input type="radio" name="bgout" value="none" checked /><span>Trong suốt (PNG)</span></label>
-          <label class="check"><input type="radio" name="bgout" value="color" /><span>Màu</span></label>
-          <input type="color" id="bgcolor" value="#ffffff" aria-label="Màu nền mới" />
+          <label class="check"><input type="radio" name="bgout" value="none" checked /><span>${T('bgout.transparent', 'Trong suốt (PNG)')}</span></label>
+          <label class="check"><input type="radio" name="bgout" value="color" /><span>${T('bgout.color', 'Màu')}</span></label>
+          <input type="color" id="bgcolor" value="#ffffff" aria-label="${T('bgcolor.label', 'Màu nền mới')}" />
         </div>
       </fieldset>
-      <div class="actions"><button type="button" class="btn btn-primary" id="dl" disabled>Tải ảnh về</button></div>
+      <div class="actions"><button type="button" class="btn btn-primary" id="dl" disabled>${T('dl', 'Tải ảnh về')}</button></div>
     </section>
   </div>
 `;
@@ -50,8 +52,8 @@ const err = (msg: string) => { $('#err').textContent = msg; $('#err').hidden = !
 
 async function setFile(f: File): Promise<void> {
   err('');
-  if (!f.type.startsWith('image/')) return err('File này không phải ảnh.');
-  if (f.size > MAX_IMAGE_BYTES) return err('Ảnh lớn hơn 40 MB.');
+  if (!f.type.startsWith('image/')) return err(T('err.notImage', 'File này không phải ảnh.'));
+  if (f.size > MAX_IMAGE_BYTES) return err(T('err.tooBig', 'Ảnh lớn hơn 40 MB.'));
   try {
     const img = await loadImage(f);
     const scale = Math.min(1, MAX_SIDE / Math.max(img.width, img.height));
@@ -66,7 +68,7 @@ async function setFile(f: File): Promise<void> {
   const stage = $('#src-stage');
   stage.innerHTML = '';
   srcCanvas.className = 'bg-canvas';
-  srcCanvas.title = 'Bấm vào vùng nền để chọn màu nền';
+  srcCanvas.title = T('canvas.title', 'Bấm vào vùng nền để chọn màu nền');
   stage.appendChild(srcCanvas);
   $<HTMLButtonElement>('#dl').disabled = true;
   runSimple();
@@ -163,7 +165,7 @@ $('#src-stage').addEventListener('click', (e) => {
   const y = Math.floor(((e.clientY - rect.top) / rect.height) * srcCanvas.height);
   const d = (srcCanvas.getContext('2d') as CanvasRenderingContext2D).getImageData(x, y, 1, 1).data;
   pickedBg = [d[0], d[1], d[2]];
-  toast(`Đã chọn màu nền rgb(${d[0]}, ${d[1]}, ${d[2]})`);
+  toast(`${T('toast.pickedBg', 'Đã chọn màu nền')} rgb(${d[0]}, ${d[1]}, ${d[2]})`);
   runSimple();
 });
 
