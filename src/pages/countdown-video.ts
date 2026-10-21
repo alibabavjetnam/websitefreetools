@@ -1,11 +1,13 @@
 import { mountLayout } from '../layout';
 import { $, downloadBlob, storage, toast } from '../ui';
 import { CDN, global, loadScript } from '../lib/cdn';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'countdown-video' });
+const T = pageText();
 
 interface Cfg { seconds: number; format: 'hms' | 'ms' | 's'; bg: string; color: string; font: string; label: string; size: string; fps: number }
-const cfg = storage<Cfg>('countdown-video', { seconds: 60, format: 'ms', bg: '#0b1324', color: '#ffd43b', label: 'Bắt đầu sau', size: '720p', font: 'mono', fps: 30 });
+const cfg = storage<Cfg>('countdown-video', { seconds: 60, format: 'ms', bg: '#0b1324', color: '#ffd43b', label: '', size: '720p', font: 'mono', fps: 30 });
 
 const SIZES: Record<string, [number, number]> = { '720p': [1280, 720], '1080p': [1920, 1080], square: [1080, 1080], vertical: [720, 1280] };
 const FONTS: Record<string, string> = { mono: 'ui-monospace, Consolas, monospace', sans: "'Be Vietnam Pro', system-ui, sans-serif", bold: "'Arial Black', sans-serif" };
@@ -15,20 +17,20 @@ root.innerHTML = `
   <div class="workspace">
     <form class="panel" id="form">
       <div class="field-row">
-        <label class="field"><span class="field-label">Thời lượng (giây)</span><input type="number" id="seconds" min="1" max="3600" /></label>
-        <label class="field"><span class="field-label">Hiển thị</span><select id="format"><option value="hms">hh:mm:ss</option><option value="ms">mm:ss</option><option value="s">Chỉ giây</option></select></label>
-        <label class="field"><span class="field-label">Khung hình/giây</span><select id="fps"><option value="24">24</option><option value="30">30</option></select></label>
+        <label class="field"><span class="field-label">${T('duration','Thời lượng (giây)')}</span><input type="number" id="seconds" min="1" max="3600" /></label>
+        <label class="field"><span class="field-label">${T('display','Hiển thị')}</span><select id="format"><option value="hms">hh:mm:ss</option><option value="ms">mm:ss</option><option value="s">${T('fmt.s','Chỉ giây')}</option></select></label>
+        <label class="field"><span class="field-label">${T('fps','Khung hình/giây')}</span><select id="fps"><option value="24">24</option><option value="30">30</option></select></label>
       </div>
-      <label class="field"><span class="field-label">Dòng chữ phía trên</span><input type="text" id="label" maxlength="40" /></label>
+      <label class="field"><span class="field-label">${T('labelText','Dòng chữ phía trên')}</span><input type="text" id="label" maxlength="40" /></label>
       <div class="field-row">
-        <label class="field"><span class="field-label">Màu nền</span><input type="color" id="bg" /></label>
-        <label class="field"><span class="field-label">Màu số</span><input type="color" id="color" /></label>
-        <label class="field"><span class="field-label">Phông</span><select id="font"><option value="mono">Đồng hồ số</option><option value="sans">Hiện đại</option><option value="bold">Đậm</option></select></label>
+        <label class="field"><span class="field-label">${T('bg','Màu nền')}</span><input type="color" id="bg" /></label>
+        <label class="field"><span class="field-label">${T('color','Màu số')}</span><input type="color" id="color" /></label>
+        <label class="field"><span class="field-label">${T('font','Phông')}</span><select id="font"><option value="mono">${T('font.mono','Đồng hồ số')}</option><option value="sans">${T('font.sans','Hiện đại')}</option><option value="bold">${T('font.bold','Đậm')}</option></select></label>
       </div>
-      <label class="field"><span class="field-label">Kích thước video</span><select id="size"><option value="720p">Ngang 1280×720 (HD)</option><option value="1080p">Ngang 1920×1080 (Full HD)</option><option value="square">Vuông 1080×1080</option><option value="vertical">Dọc 720×1280</option></select></label>
+      <label class="field"><span class="field-label">${T('size','Kích thước video')}</span><select id="size"><option value="720p">${T('size.720','Ngang 1280×720 (HD)')}</option><option value="1080p">${T('size.1080','Ngang 1920×1080 (Full HD)')}</option><option value="square">${T('size.square','Vuông 1080×1080')}</option><option value="vertical">${T('size.vertical','Dọc 720×1280')}</option></select></label>
       <div class="actions">
-        <button type="button" class="btn" id="preview-btn">Xem thử</button>
-        <button type="button" class="btn btn-primary" id="render">Tạo &amp; tải video</button>
+        <button type="button" class="btn" id="preview-btn">${T('preview','Xem thử')}</button>
+        <button type="button" class="btn btn-primary" id="render">${T('render','Tạo & tải video')}</button>
       </div>
       <div class="progress-wrap" id="progress" hidden><div class="progress-bar" id="progress-bar"></div><span id="progress-text"></span></div>
       <p class="error" id="err" hidden></p>
@@ -89,7 +91,7 @@ function renderPreview(): void {
   canvas.width = w;
   canvas.height = h;
   drawFrame(c, c.seconds, w, h);
-  $('#format-note').textContent = `Video dài ${c.seconds} giây, ${c.fps} khung/giây, ${w}×${h}. Đồng hồ đếm từ ${fmt(c.seconds, c.format)} về 00.`;
+  $('#format-note').textContent = `${T('note.len','Video dài')} ${c.seconds} ${T('note.sec','giây')}, ${c.fps} ${T('note.fps','khung/giây')}, ${w}×${h}. ${T('note.counts','Đồng hồ đếm từ')} ${fmt(c.seconds, c.format)} ${T('note.to00','về 00.')}`;
 }
 
 /* ---- WebCodecs + mp4-muxer (xuất MP4); không hỗ trợ thì dùng MediaRecorder (webm) ---- */
@@ -129,10 +131,10 @@ async function renderMp4(c: Cfg, w: number, h: number, codec: string): Promise<B
     const frame = new VideoFrame(canvas, { timestamp: (i * 1_000_000) / c.fps, duration: 1_000_000 / c.fps });
     encoder.encode(frame, { keyFrame: i % (c.fps * 2) === 0 });
     frame.close();
-    if (i % 10 === 0) { setProgress((i / totalFrames) * 90, `Đang dựng khung hình ${i}/${totalFrames}…`); await new Promise((r) => setTimeout(r)); }
+    if (i % 10 === 0) { setProgress((i / totalFrames) * 90, `${T('prog.build','Đang dựng khung hình')} ${i}/${totalFrames}…`); await new Promise((r) => setTimeout(r)); }
     if (encoder.encodeQueueSize > 30) await new Promise((r) => setTimeout(r, 10));
   }
-  setProgress(92, 'Đang ghép video…');
+  setProgress(92, T('prog.mux','Đang ghép video…'));
   await encoder.flush();
   muxer.finalize();
   return new Blob([muxer.target.buffer], { type: 'video/mp4' });
@@ -151,7 +153,7 @@ async function renderWebm(c: Cfg, w: number, h: number): Promise<Blob> {
   const t0 = performance.now();
   for (let i = 0; i < totalFrames; i++) {
     drawFrame(c, c.seconds - i / c.fps, w, h);
-    if (i % 10 === 0) setProgress((i / totalFrames) * 95, `Đang quay ${i}/${totalFrames}…`);
+    if (i % 10 === 0) setProgress((i / totalFrames) * 95, `${T('prog.record','Đang quay')} ${i}/${totalFrames}…`);
     const target = t0 + i * frameMs;
     const wait = target - performance.now();
     if (wait > 0) await new Promise((r) => setTimeout(r, wait));
@@ -176,17 +178,17 @@ $('#render').addEventListener('click', async () => {
     let ext: string;
     if (codec) { blob = await renderMp4(c, w, h, codec); ext = 'mp4'; }
     else {
-      setProgress(0, 'Trình duyệt chưa hỗ trợ xuất MP4, đang quay dạng WebM…');
+      setProgress(0, T('prog.webmFallback','Trình duyệt chưa hỗ trợ xuất MP4, đang quay dạng WebM…'));
       blob = await renderWebm(c, w, h);
       ext = 'webm';
     }
-    setProgress(100, 'Xong!');
+    setProgress(100, T('prog.done','Xong!'));
     downloadBlob(blob, `dem-nguoc-${c.seconds}s.${ext}`);
-    toast(ext === 'mp4' ? 'Đã tạo video MP4' : 'Đã tạo video WebM (trình duyệt này chưa xuất được MP4)');
+    toast(ext === 'mp4' ? T('toast.mp4','Đã tạo video MP4') : T('toast.webm','Đã tạo video WebM (trình duyệt này chưa xuất được MP4)'));
     setTimeout(() => ($('#progress').hidden = true), 1500);
     renderPreview();
   } catch (e) {
-    showErr(`Không tạo được video: ${(e as Error).message}. Hãy thử trình duyệt Chrome/Edge bản mới, hoặc chọn kích thước nhỏ hơn.`);
+    showErr(`${T('err.render','Không tạo được video')}: ${(e as Error).message}. ${T('err.renderHint','Hãy thử trình duyệt Chrome/Edge bản mới, hoặc chọn kích thước nhỏ hơn.')}`);
     $('#progress').hidden = true;
   } finally {
     btn.disabled = false;
@@ -201,7 +203,7 @@ const c0 = cfg.get();
 $<HTMLInputElement>('#seconds').value = String(c0.seconds);
 $<HTMLSelectElement>('#format').value = c0.format;
 $<HTMLSelectElement>('#fps').value = String(c0.fps);
-$<HTMLInputElement>('#label').value = c0.label;
+$<HTMLInputElement>('#label').value = c0.label || T('label.default','Bắt đầu sau');
 $<HTMLInputElement>('#bg').value = c0.bg;
 $<HTMLInputElement>('#color').value = c0.color;
 $<HTMLSelectElement>('#font').value = c0.font;

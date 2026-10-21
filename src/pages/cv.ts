@@ -1,8 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml, storage, toast } from '../ui';
 import { SheetStore, newId } from '../google/sync';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'cv' });
+const T = pageText();
 
 interface Entry { title: string; place: string; from: string; to: string; desc: string }
 interface CV {
@@ -63,65 +65,65 @@ let currentId: string | null = null;
 
 const entryEditor = (kind: 'experience' | 'education') => `
   <div class="entries" data-list="${kind}"></div>
-  <button type="button" class="btn btn-sm" data-add="${kind}">+ Thêm ${kind === 'experience' ? 'kinh nghiệm' : 'học vấn'}</button>`;
+  <button type="button" class="btn btn-sm" data-add="${kind}">${kind === 'experience' ? T('add.exp', '+ Thêm kinh nghiệm') : T('add.edu', '+ Thêm học vấn')}</button>`;
 
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="row no-print" style="margin-top:20px">
-    <div class="segmented" role="radiogroup" aria-label="Mẫu CV">
-      <label><input type="radio" name="template" value="modern" /><span>Mẫu hiện đại</span></label>
-      <label><input type="radio" name="template" value="classic" /><span>Mẫu cổ điển</span></label>
+    <div class="segmented" role="radiogroup" aria-label="${T('aria.template','Mẫu CV')}">
+      <label><input type="radio" name="template" value="modern" /><span>${T('tpl.modern','Mẫu hiện đại')}</span></label>
+      <label><input type="radio" name="template" value="classic" /><span>${T('tpl.classic','Mẫu cổ điển')}</span></label>
     </div>
-    <div class="row" role="radiogroup" aria-label="Màu nhấn" id="accents">
-      ${ACCENTS.map((c) => `<button type="button" class="accent-dot" data-accent="${c}" style="background:${c}" aria-label="Màu ${c}"></button>`).join('')}
+    <div class="row" role="radiogroup" aria-label="${T('aria.accent','Màu nhấn')}" id="accents">
+      ${ACCENTS.map((c) => `<button type="button" class="accent-dot" data-accent="${c}" style="background:${c}" aria-label="${T('color','Màu')} ${c}"></button>`).join('')}
     </div>
-    <button type="button" class="btn" id="new">CV trống</button>
-    <button type="button" class="btn" id="save">Lưu</button>
-    <button type="button" class="btn btn-primary" id="print">In / Lưu PDF</button>
+    <button type="button" class="btn" id="new">${T('blank','CV trống')}</button>
+    <button type="button" class="btn" id="save">${T('save','Lưu')}</button>
+    <button type="button" class="btn btn-primary" id="print">${T('print','In / Lưu PDF')}</button>
   </div>
 
   <div class="doc-layout">
     <form class="panel no-print" id="cv-form" novalidate>
       <details class="options" open>
-        <summary>Thông tin cá nhân</summary>
+        <summary>${T('sec.personal','Thông tin cá nhân')}</summary>
         <div class="options-body form-grid">
-          <label class="field span-all"><span class="field-label">Họ và tên</span><input name="name" type="text" maxlength="80" /></label>
-          <label class="field span-all"><span class="field-label">Vị trí ứng tuyển</span><input name="headline" type="text" maxlength="100" /></label>
-          <label class="field"><span class="field-label">Email</span><input name="email" type="email" maxlength="100" /></label>
-          <label class="field"><span class="field-label">Điện thoại</span><input name="phone" type="tel" maxlength="30" /></label>
-          <label class="field"><span class="field-label">Địa chỉ</span><input name="address" type="text" maxlength="120" /></label>
-          <label class="field"><span class="field-label">LinkedIn, website</span><input name="link" type="text" maxlength="120" /></label>
-          <label class="field span-all"><span class="field-label">Ảnh chân dung (không bắt buộc, tối đa 400 KB)</span><input id="photo" type="file" accept="image/png,image/jpeg,image/webp" /></label>
-          <div class="row span-all"><button type="button" class="btn btn-sm" id="photo-clear">Bỏ ảnh</button></div>
+          <label class="field span-all"><span class="field-label">${T('f.name','Họ và tên')}</span><input name="name" type="text" maxlength="80" /></label>
+          <label class="field span-all"><span class="field-label">${T('f.headline','Vị trí ứng tuyển')}</span><input name="headline" type="text" maxlength="100" /></label>
+          <label class="field"><span class="field-label">${T('f.email','Email')}</span><input name="email" type="email" maxlength="100" /></label>
+          <label class="field"><span class="field-label">${T('f.phone','Điện thoại')}</span><input name="phone" type="tel" maxlength="30" /></label>
+          <label class="field"><span class="field-label">${T('f.address','Địa chỉ')}</span><input name="address" type="text" maxlength="120" /></label>
+          <label class="field"><span class="field-label">${T('f.link','LinkedIn, website')}</span><input name="link" type="text" maxlength="120" /></label>
+          <label class="field span-all"><span class="field-label">${T('f.photo','Ảnh chân dung (không bắt buộc, tối đa 400 KB)')}</span><input id="photo" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+          <div class="row span-all"><button type="button" class="btn btn-sm" id="photo-clear">${T('photo.clear','Bỏ ảnh')}</button></div>
         </div>
       </details>
       <details class="options" open>
-        <summary>Giới thiệu bản thân</summary>
-        <div class="options-body"><label class="field"><span class="visually-hidden">Giới thiệu</span><textarea name="summary" rows="4" maxlength="800"></textarea></label>
-        <p class="note">2–3 câu: bạn có kinh nghiệm gì, giỏi điều gì, muốn làm gì tiếp theo.</p></div>
+        <summary>${T('sec.summary','Giới thiệu bản thân')}</summary>
+        <div class="options-body"><label class="field"><span class="visually-hidden">${T('sec.intro','Giới thiệu')}</span><textarea name="summary" rows="4" maxlength="800"></textarea></label>
+        <p class="note">${T('summary.hint','2–3 câu: bạn có kinh nghiệm gì, giỏi điều gì, muốn làm gì tiếp theo.')}</p></div>
       </details>
       <details class="options" open>
-        <summary>Kinh nghiệm làm việc</summary>
+        <summary>${T('sec.exp','Kinh nghiệm làm việc')}</summary>
         <div class="options-body">${entryEditor('experience')}</div>
       </details>
       <details class="options" open>
-        <summary>Học vấn</summary>
+        <summary>${T('sec.edu','Học vấn')}</summary>
         <div class="options-body">${entryEditor('education')}</div>
       </details>
       <details class="options" open>
-        <summary>Kỹ năng và thông tin thêm</summary>
+        <summary>${T('sec.skills','Kỹ năng và thông tin thêm')}</summary>
         <div class="options-body form-grid">
-          <label class="field span-all"><span class="field-label">Kỹ năng (cách nhau bằng dấu phẩy)</span><input name="skills" type="text" maxlength="400" /></label>
-          <label class="field span-all"><span class="field-label">Ngoại ngữ</span><input name="languages" type="text" maxlength="200" /></label>
-          <label class="field span-all"><span class="field-label">Chứng chỉ, giải thưởng, hoạt động (mỗi dòng một mục)</span><textarea name="extras" rows="3" maxlength="800"></textarea></label>
+          <label class="field span-all"><span class="field-label">${T('f.skills','Kỹ năng (cách nhau bằng dấu phẩy)')}</span><input name="skills" type="text" maxlength="400" /></label>
+          <label class="field span-all"><span class="field-label">${T('f.languages','Ngoại ngữ')}</span><input name="languages" type="text" maxlength="200" /></label>
+          <label class="field span-all"><span class="field-label">${T('f.extras','Chứng chỉ, giải thưởng, hoạt động (mỗi dòng một mục)')}</span><textarea name="extras" rows="3" maxlength="800"></textarea></label>
         </div>
       </details>
-      <p class="note">Mẹo: mỗi dòng mô tả công việc nên bắt đầu bằng động từ và có con số cụ thể, ví dụ "Tăng doanh số 20%".</p>
+      <p class="note">${T('tip','Mẹo: mỗi dòng mô tả công việc nên bắt đầu bằng động từ và có con số cụ thể, ví dụ Tăng doanh số 20%.')}</p>
     </form>
-    <div class="doc-preview-wrap"><article class="print-doc cv-doc" id="preview" aria-label="Xem trước CV"></article></div>
+    <div class="doc-preview-wrap"><article class="print-doc cv-doc" id="preview" aria-label="${T('aria.preview','Xem trước CV')}"></article></div>
   </div>
 
-  <h2 class="section-title no-print" style="margin-top:28px">CV đã lưu</h2>
+  <h2 class="section-title no-print" style="margin-top:28px">${T('saved.title','CV đã lưu')}</h2>
   <div class="table-wrap no-print"><table class="data-table" id="saved"></table></div>
 `;
 store.mount(root);
@@ -129,18 +131,18 @@ const form = $<HTMLFormElement>('#cv-form');
 
 function renderEntries(kind: 'experience' | 'education'): void {
   const list = cv[kind];
-  const label = kind === 'experience' ? ['Chức danh', 'Công ty'] : ['Bằng cấp, chuyên ngành', 'Trường'];
+  const label = kind === 'experience' ? [T('e.title.exp', 'Chức danh'), T('e.place.exp', 'Công ty')] : [T('e.title.edu', 'Bằng cấp, chuyên ngành'), T('e.place.edu', 'Trường')];
   root.querySelector<HTMLElement>(`[data-list="${kind}"]`)!.innerHTML = list
     .map(
       (e, i) => `<fieldset class="entry" data-kind="${kind}" data-i="${i}">
       <div class="form-grid">
         <label class="field"><span class="field-label">${label[0]}</span><input data-f="title" type="text" value="${escapeHtml(e.title)}" maxlength="100" /></label>
         <label class="field"><span class="field-label">${label[1]}</span><input data-f="place" type="text" value="${escapeHtml(e.place)}" maxlength="100" /></label>
-        <label class="field"><span class="field-label">Từ</span><input data-f="from" type="text" value="${escapeHtml(e.from)}" placeholder="03/2023" maxlength="20" /></label>
-        <label class="field"><span class="field-label">Đến</span><input data-f="to" type="text" value="${escapeHtml(e.to)}" placeholder="Hiện tại" maxlength="20" /></label>
-        <label class="field span-all"><span class="field-label">Mô tả (mỗi dòng một ý)</span><textarea data-f="desc" rows="3" maxlength="800">${escapeHtml(e.desc)}</textarea></label>
+        <label class="field"><span class="field-label">${T('e.from','Từ')}</span><input data-f="from" type="text" value="${escapeHtml(e.from)}" placeholder="${T('e.fromPh','03/2023')}" maxlength="20" /></label>
+        <label class="field"><span class="field-label">${T('e.to','Đến')}</span><input data-f="to" type="text" value="${escapeHtml(e.to)}" placeholder="${T('e.toPh','Hiện tại')}" maxlength="20" /></label>
+        <label class="field span-all"><span class="field-label">${T('e.desc','Mô tả (mỗi dòng một ý)')}</span><textarea data-f="desc" rows="3" maxlength="800">${escapeHtml(e.desc)}</textarea></label>
       </div>
-      <div class="row"><button type="button" class="btn btn-sm" data-move="-1">Lên</button><button type="button" class="btn btn-sm" data-move="1">Xuống</button><button type="button" class="btn btn-sm" data-del>Xoá mục này</button></div>
+      <div class="row"><button type="button" class="btn btn-sm" data-move="-1">${T('e.up','Lên')}</button><button type="button" class="btn btn-sm" data-move="1">${T('e.down','Xuống')}</button><button type="button" class="btn btn-sm" data-del>${T('e.del','Xoá mục này')}</button></div>
     </fieldset>`,
     )
     .join('');
@@ -174,13 +176,13 @@ function renderPreview(): void {
   const skills = cv.skills.split(/[,\n]/).map((s) => s.trim()).filter(Boolean);
   const section = (title: string, body: string) => (body ? `<section class="cv-section"><h3>${title}</h3>${body}</section>` : '');
   const side = `
-    ${section('Kỹ năng', skills.length ? `<ul class="cv-tags">${skills.map((s) => `<li>${escapeHtml(s)}</li>`).join('')}</ul>` : '')}
-    ${section('Ngoại ngữ', cv.languages ? `<p>${escapeHtml(cv.languages)}</p>` : '')}
-    ${section('Chứng chỉ, hoạt động', lines(cv.extras).length ? `<ul>${lines(cv.extras).map((l) => `<li>${escapeHtml(l)}</li>`).join('')}</ul>` : '')}`;
+    ${section(T('p.skills','Kỹ năng'), skills.length ? `<ul class="cv-tags">${skills.map((s) => `<li>${escapeHtml(s)}</li>`).join('')}</ul>` : '')}
+    ${section(T('p.languages','Ngoại ngữ'), cv.languages ? `<p>${escapeHtml(cv.languages)}</p>` : '')}
+    ${section(T('p.extras','Chứng chỉ, hoạt động'), lines(cv.extras).length ? `<ul>${lines(cv.extras).map((l) => `<li>${escapeHtml(l)}</li>`).join('')}</ul>` : '')}`;
   const main = `
-    ${section('Giới thiệu', cv.summary ? `<p>${escapeHtml(cv.summary)}</p>` : '')}
-    ${section('Kinh nghiệm làm việc', entries(cv.experience))}
-    ${section('Học vấn', entries(cv.education))}`;
+    ${section(T('p.summary','Giới thiệu'), cv.summary ? `<p>${escapeHtml(cv.summary)}</p>` : '')}
+    ${section(T('p.exp','Kinh nghiệm làm việc'), entries(cv.experience))}
+    ${section(T('p.edu','Học vấn'), entries(cv.education))}`;
 
   const el = $('#preview');
   el.className = `print-doc cv-doc cv-${cv.template}`;
@@ -189,7 +191,7 @@ function renderPreview(): void {
     <header class="cv-head">
       ${photo ? `<img src="${photo}" alt="" class="cv-photo" />` : ''}
       <div>
-        <h2>${escapeHtml(cv.name || 'Họ và tên')}</h2>
+        <h2>${escapeHtml(cv.name || T('p.namePh', 'Họ và tên'))}</h2>
         ${cv.headline ? `<p class="cv-headline">${escapeHtml(cv.headline)}</p>` : ''}
         <p class="cv-contact">${contact}</p>
       </div>
@@ -201,11 +203,11 @@ function renderPreview(): void {
 function renderSaved(): void {
   const list = [...store.get().cvs].sort((a, b) => b.updated.localeCompare(a.updated));
   $('#saved').innerHTML = list.length
-    ? `<thead><tr><th>CV</th><th>Cập nhật</th><th></th></tr></thead><tbody>${list
+    ? `<thead><tr><th>${T('th.cv','CV')}</th><th>${T('th.updated','Cập nhật')}</th><th></th></tr></thead><tbody>${list
         .map((c) => `<tr><td>${escapeHtml(c.title)}</td><td>${escapeHtml(c.updated)}</td><td class="row">
-          <button type="button" class="btn btn-sm" data-open="${escapeHtml(c.id)}">Mở</button><button type="button" class="btn btn-sm" data-delete="${escapeHtml(c.id)}">Xoá</button></td></tr>`)
+          <button type="button" class="btn btn-sm" data-open="${escapeHtml(c.id)}">${T('open','Mở')}</button><button type="button" class="btn btn-sm" data-delete="${escapeHtml(c.id)}">${T('del','Xoá')}</button></td></tr>`)
         .join('')}</tbody>`
-    : '<tbody><tr><td class="note">Chưa lưu CV nào. Bạn có thể lưu nhiều bản CV cho từng vị trí ứng tuyển.</td></tr></tbody>';
+    : `<tbody><tr><td class="note">${T('saved.empty','Chưa lưu CV nào. Bạn có thể lưu nhiều bản CV cho từng vị trí ứng tuyển.')}</td></tr></tbody>`;
 }
 
 form.addEventListener('input', (e) => {
@@ -254,8 +256,8 @@ $('#accents').addEventListener('click', (e) => {
 $<HTMLInputElement>('#photo').addEventListener('change', (e) => {
   const file = (e.target as HTMLInputElement).files?.[0];
   if (!file) return;
-  if (!/^image\/(png|jpeg|webp)$/.test(file.type)) return toast('Ảnh cần là PNG, JPG hoặc WebP');
-  if (file.size > MAX_PHOTO_BYTES) return toast('Ảnh lớn hơn 400 KB, hãy dùng công cụ Nén ảnh trước');
+  if (!/^image\/(png|jpeg|webp)$/.test(file.type)) return toast(T('toast.imgType','Ảnh cần là PNG, JPG hoặc WebP'));
+  if (file.size > MAX_PHOTO_BYTES) return toast(T('toast.imgBig','Ảnh lớn hơn 400 KB, hãy dùng công cụ Nén ảnh trước'));
   const reader = new FileReader();
   reader.onload = () => { photoPref.set(String(reader.result)); renderPreview(); };
   reader.readAsDataURL(file);
@@ -270,11 +272,11 @@ $('#new').addEventListener('click', () => {
 });
 $('#save').addEventListener('click', () => {
   currentId ??= newId();
-  const title = [cv.name, cv.headline].filter(Boolean).join(' · ') || 'CV chưa đặt tên';
+  const title = [cv.name, cv.headline].filter(Boolean).join(' · ') || T('untitled', 'CV chưa đặt tên');
   const d = store.get();
   store.set({ cvs: [...d.cvs.filter((c) => c.id !== currentId), { id: currentId, title, updated: new Date().toLocaleString('sv-SE').slice(0, 16), json: JSON.stringify(cv) }] });
   renderSaved();
-  toast('Đã lưu CV');
+  toast(T('toast.saved','Đã lưu CV'));
 });
 $('#print').addEventListener('click', () => {
   document.title = `CV ${cv.name || ''}`.trim();
@@ -290,7 +292,7 @@ $('#saved').addEventListener('click', (e) => {
     try {
       cv = { ...sample(), ...(JSON.parse(s?.json ?? '') as CV) };
     } catch {
-      return toast('Dữ liệu CV bị lỗi (có thể đã bị sửa tay trên Google Sheets)');
+      return toast(T('toast.badData','Dữ liệu CV bị lỗi (có thể đã bị sửa tay trên Google Sheets)'));
     }
     currentId = open;
     fillForm();
@@ -299,8 +301,8 @@ $('#saved').addEventListener('click', (e) => {
   } else if (del) {
     if (del.dataset.confirm !== '1') {
       del.dataset.confirm = '1';
-      del.textContent = 'Bấm lần nữa để xoá';
-      setTimeout(() => { del.dataset.confirm = ''; del.textContent = 'Xoá'; }, 3000);
+      del.textContent = T('del.confirm','Bấm lần nữa để xoá');
+      setTimeout(() => { del.dataset.confirm = ''; del.textContent = T('del','Xoá'); }, 3000);
       return;
     }
     store.set({ cvs: d.cvs.filter((c) => c.id !== del.dataset.delete) });
