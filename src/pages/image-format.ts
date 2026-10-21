@@ -1,8 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, downloadBlob, escapeHtml, toast } from '../ui';
 import { MAX_IMAGE_BYTES, canEncode, canvasToBlob, drawToCanvas, encodeBmp, encodeIco, fmtBytes, loadImage, renameFile } from '../lib/image';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'image-format' });
+const T = pageText();
 
 declare const JSZip: (new () => { file(name: string, data: Blob): void; generateAsync(o: { type: 'blob' }): Promise<Blob> }) | undefined;
 
@@ -23,32 +25,32 @@ $('#tool-root').innerHTML = `
     <div class="panel">
       <label class="dropzone" id="drop">
         <input type="file" id="files" accept="image/*,.heic,.heif" multiple />
-        <b>Chọn ảnh hoặc kéo thả vào đây</b>
-        <span>Nhận JPG, PNG, WebP, GIF, BMP, AVIF, SVG, ICO. Tối đa 100 ảnh, mỗi ảnh dưới 40 MB.</span>
+        <b>${T('drop.title','Chọn ảnh hoặc kéo thả vào đây')}</b>
+        <span>${T('drop.hint','Nhận JPG, PNG, WebP, GIF, BMP, AVIF, SVG, ICO. Tối đa 100 ảnh, mỗi ảnh dưới 40 MB.')}</span>
       </label>
       <form id="fmt-form" class="form-grid" novalidate>
         <fieldset class="field span-all">
-          <legend>Đổi sang định dạng</legend>
+          <legend>${T('convertTo','Đổi sang định dạng')}</legend>
           <div class="format-list" id="targets">
             ${available.map((t, i) => `<label class="format-option"><input type="radio" name="target" value="${t.id}"${i === 0 ? ' checked' : ''} /><span class="format-name">${t.label}</span></label>`).join('')}
           </div>
           <span class="field-hint" id="target-hint"></span>
         </fieldset>
-        <label class="field" id="f-quality"><span class="field-label">Chất lượng: <output id="q-out">85</output>%</span><input type="range" id="quality" min="40" max="100" value="85" /></label>
-        <label class="field" id="f-bg"><span class="color"><input type="color" id="bg" value="#ffffff" /><span>Màu lót cho phần trong suốt</span></span></label>
+        <label class="field" id="f-quality"><span class="field-label">${T('quality','Chất lượng')}: <output id="q-out">85</output>%</span><input type="range" id="quality" min="40" max="100" value="85" /></label>
+        <label class="field" id="f-bg"><span class="color"><input type="color" id="bg" value="#ffffff" /><span>${T('bgFill','Màu lót cho phần trong suốt')}</span></span></label>
         <fieldset class="field span-all" id="f-ico" hidden>
-          <legend>Kích thước trong file ICO</legend>
+          <legend>${T('icoSizes','Kích thước trong file ICO')}</legend>
           <div class="row">${ICO_SIZES.map((s) => `<label class="check"><input type="checkbox" data-ico="${s}"${s <= 48 ? ' checked' : ''} /><span>${s}×${s}</span></label>`).join('')}</div>
         </fieldset>
       </form>
-      ${canEncode('image/avif') ? '' : '<p class="note">Trình duyệt này chưa xuất được AVIF. Dùng Chrome hoặc Edge bản mới để có thêm lựa chọn này.</p>'}
+      ${canEncode('image/avif') ? '' : `<p class="note">${T('avifNote','Trình duyệt này chưa xuất được AVIF. Dùng Chrome hoặc Edge bản mới để có thêm lựa chọn này.')}</p>`}
     </div>
     <section class="preview">
       <div class="stat-grid" id="summary"></div>
       <div class="actions">
-        <button type="button" class="btn btn-primary" id="run" disabled>Chuyển đổi</button>
-        <button type="button" class="btn" id="zip" disabled>Tải tất cả (.zip)</button>
-        <button type="button" class="btn" id="clear" disabled>Xoá danh sách</button>
+        <button type="button" class="btn btn-primary" id="run" disabled>${T('run','Chuyển đổi')}</button>
+        <button type="button" class="btn" id="zip" disabled>${T('zip','Tải tất cả (.zip)')}</button>
+        <button type="button" class="btn" id="clear" disabled>${T('clear','Xoá danh sách')}</button>
       </div>
       <p class="error" id="err" hidden></p>
     </section>
@@ -62,7 +64,7 @@ const target = () => available.find((t) => t.id === ($('#fmt-form').querySelecto
 
 function syncOptions(): void {
   const t = target();
-  $('#target-hint').textContent = t.hint;
+  $('#target-hint').textContent = T('hint.' + t.id, t.hint);
   $('#f-quality').hidden = !t.quality;
   $('#f-bg').hidden = !t.opaque;
   $('#f-ico').hidden = t.id !== 'ico';
@@ -71,9 +73,9 @@ function syncOptions(): void {
 function addFiles(list: FileList | File[]): void {
   const errs: string[] = [];
   for (const f of [...list]) {
-    if (items.length >= 100) { errs.push('Chỉ nhận tối đa 100 ảnh mỗi lần.'); break; }
-    if (!f.type.startsWith('image/') && !/\.(heic|heif)$/i.test(f.name)) { errs.push(`${f.name}: không phải file ảnh.`); continue; }
-    if (f.size > MAX_IMAGE_BYTES) { errs.push(`${f.name}: lớn hơn 40 MB.`); continue; }
+    if (items.length >= 100) { errs.push(T('err.max','Chỉ nhận tối đa 100 ảnh mỗi lần.')); break; }
+    if (!f.type.startsWith('image/') && !/\.(heic|heif)$/i.test(f.name)) { errs.push(`${f.name}: ${T('err.notImg','không phải file ảnh.')}`); continue; }
+    if (f.size > MAX_IMAGE_BYTES) { errs.push(`${f.name}: ${T('err.tooBig','lớn hơn 40 MB.')}`); continue; }
     items.push({ file: f, thumb: URL.createObjectURL(f) });
   }
   $('#err').textContent = errs.slice(0, 4).join(' ');
@@ -88,7 +90,7 @@ async function convert(item: Item): Promise<void> {
     let blob: Blob;
     if (t.id === 'ico') {
       const sizes = [...document.querySelectorAll<HTMLInputElement>('[data-ico]')].filter((c) => c.checked).map((c) => Number(c.dataset.ico));
-      if (!sizes.length) throw new Error('Hãy chọn ít nhất một kích thước cho file ICO.');
+      if (!sizes.length) throw new Error(T('err.icoSize','Hãy chọn ít nhất một kích thước cho file ICO.'));
       blob = await encodeIco(img, sizes);
     } else {
       const canvas = drawToCanvas(img, img.width, img.height, t.opaque ? $<HTMLInputElement>('#bg').value : undefined);
@@ -105,7 +107,7 @@ async function runAll(): Promise<void> {
   const btn = $<HTMLButtonElement>('#run');
   btn.disabled = true;
   for (let i = 0; i < items.length; i++) {
-    btn.textContent = `Đang chuyển ${i + 1}/${items.length}…`;
+    btn.textContent = `${T('converting','Đang chuyển')} ${i + 1}/${items.length}…`;
     try {
       await convert(items[i]);
     } catch (e) {
@@ -114,27 +116,27 @@ async function runAll(): Promise<void> {
     }
     render();
   }
-  btn.textContent = 'Chuyển đổi';
+  btn.textContent = T('run','Chuyển đổi');
   btn.disabled = false;
-  toast(`Đã chuyển ${items.filter((x) => x.out).length}/${items.length} ảnh sang ${target().label}`);
+  toast(`${T('toast.converted','Đã chuyển')} ${items.filter((x) => x.out).length}/${items.length} ${T('toast.imagesTo','ảnh sang')} ${target().label}`);
 }
 
 function render(): void {
   const done = items.filter((x) => x.out);
   $('#summary').innerHTML = items.length
-    ? `<div class="stat"><span class="stat-label">Số ảnh</span><span class="stat-value">${items.length}</span></div>
-       ${done.length ? `<div class="stat stat--main"><span class="stat-label">Đã chuyển xong</span><span class="stat-value">${done.length} ảnh, ${fmtBytes(done.reduce((s, x) => s + x.out!.blob.size, 0))}</span></div>` : ''}`
+    ? `<div class="stat"><span class="stat-label">${T('stat.count','Số ảnh')}</span><span class="stat-value">${items.length}</span></div>
+       ${done.length ? `<div class="stat stat--main"><span class="stat-label">${T('stat.done','Đã chuyển xong')}</span><span class="stat-value">${done.length} ${T('images','ảnh')}, ${fmtBytes(done.reduce((s, x) => s + x.out!.blob.size, 0))}</span></div>` : ''}`
     : '';
   $<HTMLButtonElement>('#run').disabled = !items.length;
   $<HTMLButtonElement>('#clear').disabled = !items.length;
   $<HTMLButtonElement>('#zip').disabled = !done.length;
   $('#list').innerHTML = items.length
-    ? `<thead><tr><th>Ảnh</th><th>Gốc</th><th>Kết quả</th><th>Kích thước</th><th></th></tr></thead><tbody>${items
+    ? `<thead><tr><th>${T('th.img','Ảnh')}</th><th>${T('th.orig','Gốc')}</th><th>${T('th.result','Kết quả')}</th><th>${T('th.size','Kích thước')}</th><th></th></tr></thead><tbody>${items
         .map((x, i) => `<tr><td><span class="img-cell"><img src="${x.thumb}" alt="" loading="lazy" /><span>${escapeHtml(x.file.name)}</span></span></td>
           <td>${fmtBytes(x.file.size)}</td>
           <td>${x.error ? `<span class="error-text">${escapeHtml(x.error)}</span>` : x.out ? `${escapeHtml(x.out.name)}, ${fmtBytes(x.out.blob.size)}` : '—'}</td>
           <td>${x.out ? `${x.out.w}×${x.out.h}` : '—'}</td>
-          <td>${x.out ? `<button type="button" class="btn btn-sm" data-dl="${i}">Tải về</button>` : ''}</td></tr>`)
+          <td>${x.out ? `<button type="button" class="btn btn-sm" data-dl="${i}">${T('dl','Tải về')}</button>` : ''}</td></tr>`)
         .join('')}</tbody>`
     : '';
 }
