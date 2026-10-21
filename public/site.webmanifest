@@ -1,0 +1,15 @@
+{
+  "name": "WFTools — Công cụ trực tuyến miễn phí",
+  "short_name": "WFTools",
+  "description": "Bộ công cụ trực tuyến miễn phí: QR, mã vạch, PDF, ảnh, tính toán, sức khoẻ, giáo dục, thời gian. Chạy ngay trên trình duyệt.",
+  "lang": "vi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/favicon-64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
