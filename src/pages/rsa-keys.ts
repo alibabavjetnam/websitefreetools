@@ -1,48 +1,51 @@
 import { mountLayout } from '../layout';
 import { $, copyText, downloadBlob, toast } from '../ui';
+import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'rsa-keys' });
+const T = pageText();
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="panel code-toolbar code-toolbar--wrap">
-    <label class="field field--inline"><span class="field-label">Độ dài khoá</span>
-      <select id="bits"><option value="2048">2048 bit (phổ biến)</option><option value="3072">3072 bit</option><option value="4096">4096 bit (an toàn hơn, chậm hơn)</option></select>
+    <label class="field field--inline"><span class="field-label">${T('keyLen','Độ dài khoá')}</span>
+      <select id="bits"><option value="2048">${T('bits.2048','2048 bit (phổ biến)')}</option><option value="3072">3072 bit</option><option value="4096">${T('bits.4096','4096 bit (an toàn hơn, chậm hơn)')}</option></select>
     </label>
     <div class="actions">
-      <button type="button" class="btn btn-primary" id="run">Tạo cặp khoá mới</button>
-      <button type="button" class="btn" id="apply">Dùng cặp khoá đã dán</button>
+      <button type="button" class="btn btn-primary" id="run">${T('gen','Tạo cặp khoá mới')}</button>
+      <button type="button" class="btn" id="apply">${T('apply','Dùng cặp khoá đã dán')}</button>
     </div>
   </div>
   <p class="error" id="err" hidden></p>
   <p class="ok-text" id="ok" hidden></p>
   <div class="workspace code-workspace">
     <div class="field">
-      <span class="field-label">Khoá công khai (public key)<span class="key-hint"> — để mã hoá, chia sẻ được</span></span>
-      <textarea id="pub" class="mono code-area" rows="12" spellcheck="false" placeholder="Bấm &quot;Tạo cặp khoá mới&quot; hoặc dán khoá công khai dạng PEM (-----BEGIN PUBLIC KEY-----) vào đây rồi bấm &quot;Dùng cặp khoá đã dán&quot;."></textarea>
-      <div class="actions"><button type="button" class="btn btn-sm" data-copy="pub">Sao chép</button><button type="button" class="btn btn-sm" data-dl="pub">Tải .pem</button></div>
+      <span class="field-label">${T('pubKey','Khoá công khai (public key)')}<span class="key-hint"> ${T('pubKeyHint','— để mã hoá, chia sẻ được')}</span></span>
+      <textarea id="pub" class="mono code-area" rows="12" spellcheck="false" placeholder="${T('pubPh','Bấm Tạo cặp khoá mới hoặc dán khoá công khai dạng PEM (-----BEGIN PUBLIC KEY-----) vào đây rồi bấm Dùng cặp khoá đã dán.')}"></textarea>
+      <div class="actions"><button type="button" class="btn btn-sm" data-copy="pub">${T('copy','Sao chép')}</button><button type="button" class="btn btn-sm" data-dl="pub">${T('dlPem','Tải .pem')}</button></div>
     </div>
     <div class="field">
-      <span class="field-label">Khoá bí mật (private key)<span class="key-hint key-hint--warn"> — để giải mã, GIỮ KÍN</span></span>
-      <textarea id="priv" class="mono code-area" rows="12" spellcheck="false" placeholder="Khoá bí mật dạng PEM (-----BEGIN PRIVATE KEY-----). Cần có khoá này mới giải mã được."></textarea>
-      <div class="actions"><button type="button" class="btn btn-sm" data-copy="priv">Sao chép</button><button type="button" class="btn btn-sm" data-dl="priv">Tải .pem</button></div>
+      <span class="field-label">${T('privKey','Khoá bí mật (private key)')}<span class="key-hint key-hint--warn"> ${T('privKeyHint','— để giải mã, GIỮ KÍN')}</span></span>
+      <textarea id="priv" class="mono code-area" rows="12" spellcheck="false" placeholder="${T('privPh','Khoá bí mật dạng PEM (-----BEGIN PRIVATE KEY-----). Cần có khoá này mới giải mã được.')}"></textarea>
+      <div class="actions"><button type="button" class="btn btn-sm" data-copy="priv">${T('copy','Sao chép')}</button><button type="button" class="btn btn-sm" data-dl="priv">${T('dlPem','Tải .pem')}</button></div>
     </div>
   </div>
 
   <section class="panel crypto-panel">
-    <div class="panel-title">Mã hoá &amp; giải mã</div>
-    <p class="note crypto-status" id="status" aria-live="polite">Hãy tạo hoặc dán cặp khoá ở trên. Có khoá công khai là mã hoá được, có khoá bí mật là giải mã được.</p>
+    <div class="panel-title">${T('cryptoTitle','Mã hoá & giải mã')}</div>
+    <p class="note crypto-status" id="status" aria-live="polite">${T('status.none','Hãy tạo hoặc dán cặp khoá ở trên. Có khoá công khai là mã hoá được, có khoá bí mật là giải mã được.')}</p>
     <div class="workspace code-workspace">
-      <label class="field"><span class="field-label">Văn bản (chữ gốc)</span><textarea id="plain" class="code-area" rows="10" spellcheck="false" placeholder="Nhập văn bản ở đây, chuỗi mã hoá sẽ tự hiện bên phải."></textarea></label>
-      <label class="field"><span class="field-label">Chuỗi đã mã hoá</span><textarea id="cipher" class="mono code-area" rows="10" spellcheck="false" placeholder="Hoặc dán chuỗi đã mã hoá vào đây để tự giải mã sang văn bản."></textarea></label>
+      <label class="field"><span class="field-label">${T('plainLabel','Văn bản (chữ gốc)')}</span><textarea id="plain" class="code-area" rows="10" spellcheck="false" placeholder="${T('plainPh','Nhập văn bản ở đây, chuỗi mã hoá sẽ tự hiện bên phải.')}"></textarea></label>
+      <label class="field"><span class="field-label">${T('cipherLabel','Chuỗi đã mã hoá')}</span><textarea id="cipher" class="mono code-area" rows="10" spellcheck="false" placeholder="${T('cipherPh','Hoặc dán chuỗi đã mã hoá vào đây để tự giải mã sang văn bản.')}"></textarea></label>
     </div>
     <div class="actions">
-      <button type="button" class="btn" data-copy="cipher">Sao chép chuỗi mã hoá</button>
-      <button type="button" class="btn" data-copy="plain">Sao chép văn bản</button>
+      <button type="button" class="btn" data-copy="cipher">${T('copyCipher','Sao chép chuỗi mã hoá')}</button>
+      <button type="button" class="btn" data-copy="plain">${T('copyPlain','Sao chép văn bản')}</button>
     </div>
   </section>
 
-  <p class="note">Mọi thao tác chạy ngay trên trình duyệt bằng Web Crypto, <b>không gửi đi đâu</b>. Vì RSA chỉ mã hoá trực tiếp được dữ liệu rất ngắn, công cụ dùng cách <b>mã hoá lai</b>: sinh một khoá AES ngẫu nhiên để mã hoá văn bản, rồi dùng RSA bọc khoá AES đó — nhờ vậy văn bản dài bao nhiêu cũng mã hoá được. Người nhận cần <b>khoá bí mật</b> tương ứng để giải mã. Khoá công khai (SPKI) có thể chia sẻ; khoá bí mật (PKCS#8) phải giữ kín.</p>
+  <p class="note">${T('note','Mọi thao tác chạy ngay trên trình duyệt bằng Web Crypto, <b>không gửi đi đâu</b>. Vì RSA chỉ mã hoá trực tiếp được dữ liệu rất ngắn, công cụ dùng cách <b>mã hoá lai</b>: sinh một khoá AES ngẫu nhiên để mã hoá văn bản, rồi dùng RSA bọc khoá AES đó — nhờ vậy văn bản dài bao nhiêu cũng mã hoá được. Người nhận cần <b>khoá bí mật</b> tương ứng để giải mã. Khoá công khai (SPKI) có thể chia sẻ; khoá bí mật (PKCS#8) phải giữ kín.')}</p>
 `;
 
 const showErr = (msg: string) => { $('#err').textContent = msg; $('#err').hidden = !msg; };
@@ -82,10 +85,10 @@ const ALGO = { name: 'RSA-OAEP', hash: 'SHA-256' } as const;
 const keys: { pub: CryptoKey | null; priv: CryptoKey | null } = { pub: null, priv: null };
 
 function updateStatus(): void {
-  if (keys.pub && keys.priv) setStatus('Đã sẵn sàng: nhập văn bản để mã hoá, hoặc dán chuỗi mã hoá để giải mã.');
-  else if (keys.pub) setStatus('Có khoá công khai: mã hoá được. Thiếu khoá bí mật nên chưa giải mã được.');
-  else if (keys.priv) setStatus('Có khoá bí mật: giải mã được. Thiếu khoá công khai nên chưa mã hoá được.');
-  else setStatus('Hãy tạo hoặc dán cặp khoá ở trên. Có khoá công khai là mã hoá được, có khoá bí mật là giải mã được.');
+  if (keys.pub && keys.priv) setStatus(T('status.ready','Đã sẵn sàng: nhập văn bản để mã hoá, hoặc dán chuỗi mã hoá để giải mã.'));
+  else if (keys.pub) setStatus(T('status.pubOnly','Có khoá công khai: mã hoá được. Thiếu khoá bí mật nên chưa giải mã được.'));
+  else if (keys.priv) setStatus(T('status.privOnly','Có khoá bí mật: giải mã được. Thiếu khoá công khai nên chưa mã hoá được.'));
+  else setStatus(T('status.none','Hãy tạo hoặc dán cặp khoá ở trên. Có khoá công khai là mã hoá được, có khoá bí mật là giải mã được.'));
 }
 
 async function run(): Promise<void> {
@@ -93,7 +96,7 @@ async function run(): Promise<void> {
   showOk('');
   const btn = $<HTMLButtonElement>('#run');
   btn.disabled = true;
-  btn.textContent = 'Đang tạo khoá…';
+  btn.textContent = T('generating','Đang tạo khoá…');
   try {
     const bits = Number($<HTMLSelectElement>('#bits').value);
     const pair = (await crypto.subtle.generateKey(
@@ -111,12 +114,12 @@ async function run(): Promise<void> {
     keys.priv = pair.privateKey;
     updateStatus();
     await refreshFrom('plain');
-    toast(`Đã tạo cặp khoá RSA ${bits} bit`);
+    toast(`${T('toast.gen','Đã tạo cặp khoá RSA')} ${bits} bit`);
   } catch (e) {
-    showErr(`Không tạo được khoá: ${(e as Error).message}. Trình duyệt cần hỗ trợ Web Crypto (dùng Chrome, Edge, Firefox, Safari bản mới).`);
+    showErr(`${T('err.gen','Không tạo được khoá')}: ${(e as Error).message}. ${T('err.genHint','Trình duyệt cần hỗ trợ Web Crypto (dùng Chrome, Edge, Firefox, Safari bản mới).')}`);
   } finally {
     btn.disabled = false;
-    btn.textContent = 'Tạo cặp khoá mới';
+    btn.textContent = T('gen','Tạo cặp khoá mới');
   }
 }
 
@@ -125,29 +128,29 @@ async function applyKeys(): Promise<void> {
   showOk('');
   const pubPem = $<HTMLTextAreaElement>('#pub').value.trim();
   const privPem = $<HTMLTextAreaElement>('#priv').value.trim();
-  if (!pubPem && !privPem) { showErr('Hãy dán khoá công khai hoặc khoá bí mật dạng PEM vào ô ở trên.'); return; }
+  if (!pubPem && !privPem) { showErr(T('err.pastePem','Hãy dán khoá công khai hoặc khoá bí mật dạng PEM vào ô ở trên.')); return; }
   keys.pub = null;
   keys.priv = null;
   const done: string[] = [];
   try {
     if (pubPem) {
       keys.pub = await crypto.subtle.importKey('spki', b64ToBuf(pemBody(pubPem)), ALGO, true, ['encrypt']);
-      done.push('khoá công khai');
+      done.push(T('word.pub','khoá công khai'));
     }
   } catch {
-    showErr('Khoá công khai không đọc được. Cần đúng định dạng PEM công khai (-----BEGIN PUBLIC KEY-----, chuẩn SPKI).');
+    showErr(T('err.pubRead','Khoá công khai không đọc được. Cần đúng định dạng PEM công khai (-----BEGIN PUBLIC KEY-----, chuẩn SPKI).'));
     return;
   }
   try {
     if (privPem) {
       keys.priv = await crypto.subtle.importKey('pkcs8', b64ToBuf(pemBody(privPem)), ALGO, true, ['decrypt']);
-      done.push('khoá bí mật');
+      done.push(T('word.priv','khoá bí mật'));
     }
   } catch {
-    showErr('Khoá bí mật không đọc được. Cần đúng định dạng PEM bí mật (-----BEGIN PRIVATE KEY-----, chuẩn PKCS#8).');
+    showErr(T('err.privRead','Khoá bí mật không đọc được. Cần đúng định dạng PEM bí mật (-----BEGIN PRIVATE KEY-----, chuẩn PKCS#8).'));
     return;
   }
-  showOk(`Đã nạp ${done.join(' và ')}.`);
+  showOk(`${T('ok.loaded','Đã nạp')} ${done.join(' ' + T('and','và') + ' ')}.`);
   updateStatus();
   // Nếu đang có nội dung, thử xử lý lại
   if ($<HTMLTextAreaElement>('#plain').value) await refreshFrom('plain');
@@ -196,25 +199,25 @@ async function refreshFrom(source: 'plain' | 'cipher'): Promise<void> {
   if (source === 'plain') {
     const text = plain.value;
     if (!text) { cipher.value = ''; updateStatus(); return; }
-    if (!keys.pub) { setStatus('Chưa có khoá công khai nên không mã hoá được. Hãy tạo hoặc dán khoá công khai.', true); return; }
+    if (!keys.pub) { setStatus(T('status.noPub','Chưa có khoá công khai nên không mã hoá được. Hãy tạo hoặc dán khoá công khai.'), true); return; }
     try {
       const out = await encryptText(keys.pub, text);
-      if (my === seq) { cipher.value = out; setStatus(`Đã mã hoá ${text.length.toLocaleString('vi-VN')} ký tự.`); }
+      if (my === seq) { cipher.value = out; setStatus(`${T('status.encrypted','Đã mã hoá')} ${text.length.toLocaleString(LOCALE)} ${T('chars','ký tự.')}`); }
     } catch (e) {
-      if (my === seq) setStatus(`Lỗi khi mã hoá: ${(e as Error).message}`, true);
+      if (my === seq) setStatus(`${T('status.encErr','Lỗi khi mã hoá')}: ${(e as Error).message}`, true);
     }
   } else {
     const blob = cipher.value;
     if (!blob.trim()) { plain.value = ''; updateStatus(); return; }
-    if (!keys.priv) { setStatus('Chưa có khoá bí mật nên không giải mã được. Hãy dán khoá bí mật tương ứng.', true); return; }
+    if (!keys.priv) { setStatus(T('status.noPriv','Chưa có khoá bí mật nên không giải mã được. Hãy dán khoá bí mật tương ứng.'), true); return; }
     try {
       const out = await decryptText(keys.priv, blob);
-      if (my === seq) { plain.value = out; setStatus('Đã giải mã xong.'); }
+      if (my === seq) { plain.value = out; setStatus(T('status.decrypted','Đã giải mã xong.')); }
     } catch (e) {
       if (my !== seq) return;
       const msg = (e as Error).message;
-      if (msg === 'format') setStatus('Chuỗi mã hoá không đúng định dạng của công cụ này.', true);
-      else setStatus('Không giải mã được: sai khoá bí mật hoặc chuỗi mã hoá đã bị sửa, thiếu.', true);
+      if (msg === 'format') setStatus(T('status.badFormat','Chuỗi mã hoá không đúng định dạng của công cụ này.'), true);
+      else setStatus(T('status.decErr','Không giải mã được: sai khoá bí mật hoặc chuỗi mã hoá đã bị sửa, thiếu.'), true);
     }
   }
 }
@@ -239,6 +242,6 @@ root.addEventListener('click', (e) => {
   if (b.dataset.copy) void copyText(text);
   else {
     downloadBlob(new Blob([text], { type: 'application/x-pem-file' }), id === 'pub' ? 'public_key.pem' : 'private_key.pem');
-    toast('Đã tải file .pem');
+    toast(T('toast.dlPem','Đã tải file .pem'));
   }
 });

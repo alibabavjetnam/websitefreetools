@@ -1,16 +1,19 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml, toast } from '../ui';
 import { SheetStore } from '../google/sync';
+import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'study-timetable' });
+const T = pageText();
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
 interface Setting { id: string; title: string; days: string; morningCount: number; times: string }
 interface Cell { id: string; day: number; period: number; subject: string; room: string }
 type Data = { settings: Setting[]; cells: Cell[] };
 
-const DEFAULT_DAYS = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ nhật'];
+const DEFAULT_DAYS = [1, 2, 3, 4, 5, 6, 0].map((d) => new Intl.DateTimeFormat(LOCALE, { weekday: 'long' }).format(new Date(2024, 0, 1 + ((d + 6) % 7))));
 const DEFAULT_TIMES = ['07:00', '07:45', '08:30', '09:15', '10:00', '13:30', '14:15', '15:00', '15:45', '16:30'];
-const DEFAULT: Setting = { id: 'main', title: 'Thời khoá biểu', days: JSON.stringify(DEFAULT_DAYS), morningCount: 5, times: JSON.stringify(DEFAULT_TIMES) };
+const DEFAULT: Setting = { id: 'main', title: T('defaultTitle', 'Thời khoá biểu'), days: JSON.stringify(DEFAULT_DAYS), morningCount: 5, times: JSON.stringify(DEFAULT_TIMES) };
 
 const store = new SheetStore<Data>({
   tag: 'timetable',
@@ -68,40 +71,40 @@ const getTimes = (s: Setting): string[] => parseJson<string[]>(s.times, DEFAULT_
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="panel code-toolbar no-print">
-    <label class="field field--inline" style="flex:1"><span class="field-label">Tiêu đề</span><input type="text" id="title" maxlength="80" /></label>
+    <label class="field field--inline" style="flex:1"><span class="field-label">${T('title','Tiêu đề')}</span><input type="text" id="title" maxlength="80" /></label>
     <div class="actions">
-      <button type="button" class="btn" id="toggle-setup">Thiết lập</button>
-      <button type="button" class="btn" id="print">In / Lưu PDF</button>
+      <button type="button" class="btn" id="toggle-setup">${T('setup','Thiết lập')}</button>
+      <button type="button" class="btn" id="print">${T('print','In / Lưu PDF')}</button>
     </div>
   </div>
 
   <form class="panel tt-setup no-print" id="setup" hidden>
-    <div class="panel-title">Thiết lập tiết học</div>
-    <label class="field field--inline"><span class="field-label">Số tiết tô màu buổi sáng (xanh)</span><input type="number" id="s-morning" min="0" max="16" style="max-width:90px" /></label>
-    <p class="note" style="margin:10px 0 4px">Đặt giờ bắt đầu cho từng tiết (không cần theo quy luật, có thể có hoặc không có giờ nghỉ giữa các tiết):</p>
+    <div class="panel-title">${T('setupTitle','Thiết lập tiết học')}</div>
+    <label class="field field--inline"><span class="field-label">${T('morningCount','Số tiết tô màu buổi sáng (xanh)')}</span><input type="number" id="s-morning" min="0" max="16" style="max-width:90px" /></label>
+    <p class="note" style="margin:10px 0 4px">${T('setTimesHint','Đặt giờ bắt đầu cho từng tiết (không cần theo quy luật, có thể có hoặc không có giờ nghỉ giữa các tiết):')}</p>
     <div class="tt-period-list" id="period-list"></div>
     <div class="actions" style="margin-top:4px">
-      <button type="button" class="btn btn-sm" id="add-period">+ Thêm tiết</button>
-      <button type="button" class="btn btn-sm" id="del-period">− Bớt tiết</button>
+      <button type="button" class="btn btn-sm" id="add-period">${T('addPeriod','+ Thêm tiết')}</button>
+      <button type="button" class="btn btn-sm" id="del-period">${T('delPeriod','− Bớt tiết')}</button>
     </div>
     <div class="tt-autofill">
-      <span class="field-label">Tiện ích: tự điền đều từ tiết đầu, mỗi tiết </span>
-      <input type="number" id="auto-min" min="20" max="120" step="5" value="45" style="max-width:70px" /> phút
-      <button type="button" class="btn btn-sm" id="autofill">Điền đều</button>
+      <span class="field-label">${T('autofillLabel','Tiện ích: tự điền đều từ tiết đầu, mỗi tiết')} </span>
+      <input type="number" id="auto-min" min="20" max="120" step="5" value="45" style="max-width:70px" /> ${T('minutes','phút')}
+      <button type="button" class="btn btn-sm" id="autofill">${T('autofill','Điền đều')}</button>
     </div>
-    <div class="actions" style="margin-top:12px"><button type="button" class="btn btn-primary" id="apply-setup">Lưu cấu hình</button></div>
-    <p class="note">Đăng nhập Google để lưu cấu hình và thời khoá biểu theo tài khoản, dùng được trên mọi thiết bị.</p>
+    <div class="actions" style="margin-top:12px"><button type="button" class="btn btn-primary" id="apply-setup">${T('saveConfig','Lưu cấu hình')}</button></div>
+    <p class="note">${T('syncNote','Đăng nhập Google để lưu cấu hình và thời khoá biểu theo tài khoản, dùng được trên mọi thiết bị.')}</p>
   </form>
 
   <div class="table-wrap timetable-wrap" style="margin-top:16px"><table class="timetable" id="grid"></table></div>
-  <p class="note no-print">Bấm vào ô để nhập môn học và phòng. Bấm vào tên ngày để sửa.</p>
+  <p class="note no-print">${T('gridHint','Bấm vào ô để nhập môn học và phòng. Bấm vào tên ngày để sửa.')}</p>
 
   <dialog id="edit" class="cell-dialog">
     <form method="dialog" class="panel">
-      <div class="panel-title">Nội dung tiết học</div>
-      <label class="field"><span class="field-label">Môn học</span><input type="text" id="d-subject" maxlength="40" /></label>
-      <label class="field"><span class="field-label">Phòng / ghi chú</span><input type="text" id="d-room" maxlength="30" /></label>
-      <div class="actions"><button class="btn btn-primary" id="d-save" value="save">Lưu</button><button class="btn" value="cancel">Huỷ</button><button type="button" class="btn" id="d-clear">Xoá ô</button></div>
+      <div class="panel-title">${T('cellTitle','Nội dung tiết học')}</div>
+      <label class="field"><span class="field-label">${T('subject','Môn học')}</span><input type="text" id="d-subject" maxlength="40" /></label>
+      <label class="field"><span class="field-label">${T('room','Phòng / ghi chú')}</span><input type="text" id="d-room" maxlength="30" /></label>
+      <div class="actions"><button class="btn btn-primary" id="d-save" value="save">${T('save','Lưu')}</button><button class="btn" value="cancel">${T('cancel','Huỷ')}</button><button type="button" class="btn" id="d-clear">${T('clearCell','Xoá ô')}</button></div>
     </form>
   </dialog>
 `;
@@ -118,7 +121,7 @@ function render(): void {
   $<HTMLInputElement>('#title').value = s.title;
   const cellMap = new Map(store.get().cells.map((c) => [c.id, c]));
 
-  const head = `<thead><tr><th class="tt-corner">Tiết</th>${dayList.map((d, i) => `<th contenteditable="true" data-day="${i}">${escapeHtml(d)}</th>`).join('')}</tr></thead>`;
+  const head = `<thead><tr><th class="tt-corner">${T('periodWord','Tiết')}</th>${dayList.map((d, i) => `<th contenteditable="true" data-day="${i}">${escapeHtml(d)}</th>`).join('')}</tr></thead>`;
   const body = times.map((time, pi) => {
     const col = pi < s.morningCount ? MORNING : AFTERNOON;
     const cells = dayList.map((_, di) => {
@@ -128,7 +131,7 @@ function render(): void {
       return `<td class="tt-cell tt-filled" data-key="${key}" style="background:${col.bg};border-left:3px solid ${col.border}">
         <b>${escapeHtml(c.subject)}</b>${c.room ? `<span>${escapeHtml(c.room)}</span>` : ''}</td>`;
     }).join('');
-    return `<tr><th class="tt-period" style="border-left:3px solid ${col.border}">Tiết ${pi + 1}<br>${escapeHtml(time)}</th>${cells}</tr>`;
+    return `<tr><th class="tt-period" style="border-left:3px solid ${col.border}">${T('periodWord','Tiết')} ${pi + 1}<br>${escapeHtml(time)}</th>${cells}</tr>`;
   }).join('');
   $('#grid').innerHTML = head + `<tbody>${body}</tbody>`;
 }
@@ -176,7 +179,7 @@ $('#title').addEventListener('input', () => { saveSettings({ title: $<HTMLInputE
 function renderPeriodList(): void {
   $('#period-list').innerHTML = draftTimes.map((t, i) => `
     <div class="tt-period-row">
-      <span class="tt-period-name">Tiết ${i + 1}</span>
+      <span class="tt-period-name">${T('periodWord','Tiết')} ${i + 1}</span>
       <input type="time" data-time="${i}" value="${escapeHtml(t)}" />
     </div>`).join('');
 }
@@ -216,7 +219,7 @@ $('#apply-setup').addEventListener('click', () => {
   store.set({ ...d, cells });
   saveSettings({ times: JSON.stringify(times), morningCount });
   render();
-  toast('Đã lưu cấu hình tiết học');
+  toast(T('toast.saved','Đã lưu cấu hình tiết học'));
 });
 
 $('#print').addEventListener('click', () => { document.title = settings().title; window.print(); });
