@@ -1,8 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml, storage } from '../ui';
 import { ACTIVITIES, caloriesBurned } from '../calc/health';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'calo-burn' });
+const T = pageText();
 
 interface Row { id: string; actIndex: number; minutes: number }
 const weightStore = storage<number>('calo-burn-weight', 60);
@@ -15,16 +17,16 @@ const newId = () => Math.random().toString(36).slice(2, 8);
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="panel code-toolbar">
-    <label class="field field--inline"><span class="field-label">Cân nặng (kg)</span><input type="number" id="weight" min="20" max="250" step="0.5" value="${weightStore.get()}" /></label>
-    <div class="actions"><button type="button" class="btn" id="addrow">+ Thêm hoạt động</button></div>
+    <label class="field field--inline"><span class="field-label">${T('weight','Cân nặng (kg)')}</span><input type="number" id="weight" min="20" max="250" step="0.5" value="${weightStore.get()}" /></label>
+    <div class="actions"><button type="button" class="btn" id="addrow">${T('addRow','+ Thêm hoạt động')}</button></div>
   </div>
   <div id="rows" style="margin-top:16px"></div>
   <div class="stat-grid" id="summary" style="margin-top:16px"></div>
-  <p class="note">Ước tính dựa trên chỉ số MET (mức tiêu hao năng lượng) chuẩn quốc tế: calo = MET × 3,5 × cân nặng (kg) ÷ 200 × số phút. Kết quả mang tính tham khảo, thay đổi theo cường độ và thể trạng từng người.</p>
+  <p class="note">${T('note','Ước tính dựa trên chỉ số MET (mức tiêu hao năng lượng) chuẩn quốc tế: calo = MET × 3,5 × cân nặng (kg) ÷ 200 × số phút. Kết quả mang tính tham khảo, thay đổi theo cường độ và thể trạng từng người.')}</p>
 `;
 
 function optionsHtml(sel: number): string {
-  return groups.map((g) => `<optgroup label="${escapeHtml(g)}">${ACTIVITIES.map((a, i) => a.group === g ? `<option value="${i}"${i === sel ? ' selected' : ''}>${escapeHtml(a.name)} (MET ${a.met})</option>` : '').join('')}</optgroup>`).join('');
+  return groups.map((g) => `<optgroup label="${escapeHtml(T('grp.' + groups.indexOf(g), g))}">${ACTIVITIES.map((a, i) => a.group === g ? `<option value="${i}"${i === sel ? ' selected' : ''}>${escapeHtml(T('act.' + i, a.name))} (MET ${a.met})</option>` : '').join('')}</optgroup>`).join('');
 }
 
 function render(): void {
@@ -33,18 +35,18 @@ function render(): void {
     const a = ACTIVITIES[r.actIndex];
     const kcal = w > 0 ? caloriesBurned(a.met, w, r.minutes) : 0;
     return `<div class="panel burn-row" data-id="${r.id}">
-      <label class="field" style="flex:2"><span class="field-label">Hoạt động</span><select data-act>${optionsHtml(r.actIndex)}</select></label>
-      <label class="field"><span class="field-label">Số phút</span><input type="number" data-min min="1" max="1440" value="${r.minutes}" /></label>
-      <div class="burn-result"><span class="field-label">Tiêu hao</span><b>${vi(kcal)} kcal</b></div>
-      ${rows.length > 1 ? '<button type="button" class="btn btn-sm" data-del aria-label="Xoá">✕</button>' : ''}
+      <label class="field" style="flex:2"><span class="field-label">${T('activity','Hoạt động')}</span><select data-act>${optionsHtml(r.actIndex)}</select></label>
+      <label class="field"><span class="field-label">${T('minutes','Số phút')}</span><input type="number" data-min min="1" max="1440" value="${r.minutes}" /></label>
+      <div class="burn-result"><span class="field-label">${T('burn','Tiêu hao')}</span><b>${vi(kcal)} kcal</b></div>
+      ${rows.length > 1 ? `<button type="button" class="btn btn-sm" data-del aria-label="${T('del','Xoá')}">✕</button>` : ''}
     </div>`;
   }).join('');
   const total = w > 0 ? rows.reduce((s, r) => s + caloriesBurned(ACTIVITIES[r.actIndex].met, w, r.minutes), 0) : 0;
   const mins = rows.reduce((s, r) => s + r.minutes, 0);
   $('#summary').innerHTML = `
-    <div class="stat"><span class="stat-label">Tổng thời gian</span><span class="stat-value">${vi(mins)} phút</span></div>
-    <div class="stat stat--main"><span class="stat-label">Tổng calo tiêu hao</span><span class="stat-value">${vi(total)} kcal</span></div>
-    <div class="stat"><span class="stat-label">Tương đương</span><span class="stat-value">${vi(total / 7.7, 0)} g mỡ</span></div>`;
+    <div class="stat"><span class="stat-label">${T('totalTime','Tổng thời gian')}</span><span class="stat-value">${vi(mins)} ${T('unit.min','phút')}</span></div>
+    <div class="stat stat--main"><span class="stat-label">${T('totalBurn','Tổng calo tiêu hao')}</span><span class="stat-value">${vi(total)} kcal</span></div>
+    <div class="stat"><span class="stat-label">${T('equiv','Tương đương')}</span><span class="stat-value">${vi(total / 7.7, 0)} ${T('unit.fat','g mỡ')}</span></div>`;
 }
 
 $('#rows').addEventListener('input', (e) => {

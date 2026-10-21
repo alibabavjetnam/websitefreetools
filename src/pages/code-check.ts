@@ -1,8 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml, setupTabs } from '../ui';
 import { checkCss, checkHtml, checkJs, checkJson, type CodeIssue } from '../lib/codetools';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'code-check' });
+const T = pageText();
 
 type Lang = 'js' | 'html' | 'css' | 'json';
 const SAMPLE: Record<Lang, string> = {
@@ -14,20 +16,20 @@ const SAMPLE: Record<Lang, string> = {
 
 const root = $('#tool-root');
 root.innerHTML = `
-  <div class="tabs" role="tablist" aria-label="Chọn ngôn ngữ">
+  <div class="tabs" role="tablist" aria-label="${T('aria.lang','Chọn ngôn ngữ')}">
     <button type="button" role="tab" data-tab="js">JavaScript</button>
     <button type="button" role="tab" data-tab="html">HTML</button>
     <button type="button" role="tab" data-tab="css">CSS</button>
     <button type="button" role="tab" data-tab="json">JSON</button>
   </div>
   <div class="panel code-toolbar">
-    <label class="check" id="f-module" hidden><input type="checkbox" id="module" /><span>Mã dạng module (có import/export)</span></label>
-    <div class="actions"><button type="button" class="btn btn-primary" id="run">Kiểm tra</button></div>
+    <label class="check" id="f-module" hidden><input type="checkbox" id="module" /><span>${T('module','Mã dạng module (có import/export)')}</span></label>
+    <div class="actions"><button type="button" class="btn btn-primary" id="run">${T('run','Kiểm tra')}</button></div>
     <div id="verdict" class="check-verdict" aria-live="polite"></div>
   </div>
   <div class="workspace code-workspace">
-    <label class="field"><span class="field-label">Mã nguồn</span><textarea id="in" class="mono code-area" rows="20" spellcheck="false"></textarea></label>
-    <div class="field"><span class="field-label">Kết quả kiểm tra</span><div id="out" class="issue-box"></div></div>
+    <label class="field"><span class="field-label">${T('source','Mã nguồn')}</span><textarea id="in" class="mono code-area" rows="20" spellcheck="false"></textarea></label>
+    <div class="field"><span class="field-label">${T('result','Kết quả kiểm tra')}</span><div id="out" class="issue-box"></div></div>
   </div>
 `;
 
@@ -54,15 +56,15 @@ function render(issues: CodeIssue[], src: string): void {
   const verdict = $('#verdict');
   if (!src.trim()) {
     verdict.innerHTML = '';
-    $('#out').innerHTML = '<p class="note issue-empty">Nhập mã để kiểm tra.</p>';
+    $('#out').innerHTML = `<p class="note issue-empty">${T('prompt','Nhập mã để kiểm tra.')}</p>`;
     return;
   }
   if (!issues.length) {
-    verdict.innerHTML = '<span class="badge badge-ok">✓ Không phát hiện lỗi</span>';
-    $('#out').innerHTML = '<p class="note issue-empty">Mã hợp lệ về cú pháp và cấu trúc.</p>';
+    verdict.innerHTML = `<span class="badge badge-ok">${T('ok','✓ Không phát hiện lỗi')}</span>`;
+    $('#out').innerHTML = `<p class="note issue-empty">${T('okNote','Mã hợp lệ về cú pháp và cấu trúc.')}</p>`;
     return;
   }
-  verdict.innerHTML = `${errors ? `<span class="badge badge-err">${errors} lỗi</span>` : ''}${warns ? `<span class="badge badge-warn">${warns} cảnh báo</span>` : ''}`;
+  verdict.innerHTML = `${errors ? `<span class="badge badge-err">${errors} ${T('errors','lỗi')}</span>` : ''}${warns ? `<span class="badge badge-warn">${warns} ${T('warns','cảnh báo')}</span>` : ''}`;
   const lines = src.split('\n');
   $('#out').innerHTML = `<ul class="issue-list">${issues
     .sort((a, b) => a.line - b.line || a.column - b.column)
@@ -70,7 +72,7 @@ function render(issues: CodeIssue[], src: string): void {
       const code = lines[i.line - 1] ?? '';
       const caret = ' '.repeat(Math.max(0, i.column - 1)) + '^';
       return `<li class="issue issue--${i.severity}">
-        <div class="issue-head"><span class="issue-tag">${i.severity === 'error' ? 'Lỗi' : 'Cảnh báo'}</span><span class="issue-loc">dòng ${i.line}, cột ${i.column}</span></div>
+        <div class="issue-head"><span class="issue-tag">${i.severity === 'error' ? T('tag.error','Lỗi') : T('tag.warn','Cảnh báo')}</span><span class="issue-loc">${T('line','dòng')} ${i.line}, ${T('col','cột')} ${i.column}</span></div>
         <div class="issue-msg">${escapeHtml(i.message)}</div>
         ${code.trim() ? `<pre class="issue-code">${escapeHtml(code.length > 200 ? code.slice(0, 200) + '…' : code)}\n<span class="issue-caret">${escapeHtml(caret)}</span></pre>` : ''}
       </li>`;

@@ -1,8 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, copyText, downloadBlob, setupTabs, toast } from '../ui';
 import { loadBeautify } from '../lib/codetools';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'code-format' });
+const T = pageText();
 
 type Lang = 'js' | 'html' | 'css' | 'json';
 const EXT: Record<Lang, string> = { js: 'js', html: 'html', css: 'css', json: 'json' };
@@ -15,26 +17,26 @@ const SAMPLE: Record<Lang, string> = {
 
 const root = $('#tool-root');
 root.innerHTML = `
-  <div class="tabs" role="tablist" aria-label="Chọn ngôn ngữ">
+  <div class="tabs" role="tablist" aria-label="${T('aria.lang','Chọn ngôn ngữ')}">
     <button type="button" role="tab" data-tab="js">JavaScript</button>
     <button type="button" role="tab" data-tab="html">HTML</button>
     <button type="button" role="tab" data-tab="css">CSS</button>
     <button type="button" role="tab" data-tab="json">JSON</button>
   </div>
   <div class="panel code-toolbar">
-    <label class="field field--inline"><span class="field-label">Thụt lề</span>
-      <select id="indent"><option value="2">2 dấu cách</option><option value="4">4 dấu cách</option><option value="tab">Tab</option></select>
+    <label class="field field--inline"><span class="field-label">${T('indent','Thụt lề')}</span>
+      <select id="indent"><option value="2">${T('indent.2','2 dấu cách')}</option><option value="4">${T('indent.4','4 dấu cách')}</option><option value="tab">${T('indent.tab','Tab')}</option></select>
     </label>
-    <label class="check"><input type="checkbox" id="minify" /><span>Nén lại (một dòng, bỏ khoảng trắng)</span></label>
+    <label class="check"><input type="checkbox" id="minify" /><span>${T('minify','Nén lại (một dòng, bỏ khoảng trắng)')}</span></label>
     <div class="actions">
-      <button type="button" class="btn btn-primary" id="run">Định dạng</button>
-      <button type="button" class="btn" id="copy">Sao chép</button>
-      <button type="button" class="btn" id="dl">Tải file</button>
+      <button type="button" class="btn btn-primary" id="run">${T('run','Định dạng')}</button>
+      <button type="button" class="btn" id="copy">${T('copy','Sao chép')}</button>
+      <button type="button" class="btn" id="dl">${T('dl','Tải file')}</button>
     </div>
   </div>
   <div class="workspace code-workspace">
-    <label class="field"><span class="field-label">Mã nguồn</span><textarea id="in" class="mono code-area" rows="20" spellcheck="false"></textarea></label>
-    <label class="field"><span class="field-label">Kết quả</span><textarea id="out" class="mono code-area" rows="20" spellcheck="false" readonly></textarea></label>
+    <label class="field"><span class="field-label">${T('source','Mã nguồn')}</span><textarea id="in" class="mono code-area" rows="20" spellcheck="false"></textarea></label>
+    <label class="field"><span class="field-label">${T('result','Kết quả')}</span><textarea id="out" class="mono code-area" rows="20" spellcheck="false" readonly></textarea></label>
   </div>
   <p class="error" id="err" hidden></p>
 `;
@@ -85,7 +87,7 @@ async function run(): Promise<void> {
     $<HTMLTextAreaElement>('#out').value = out;
   } catch (e) {
     const msg = (e as Error).message;
-    showErr(lang === 'json' ? `JSON không hợp lệ: ${msg}. Hãy dùng công cụ Kiểm tra lỗi để tìm vị trí.` : `Không định dạng được: ${msg}`);
+    showErr(lang === 'json' ? `${T('err.json','JSON không hợp lệ')}: ${msg}. ${T('err.jsonHint','Hãy dùng công cụ Kiểm tra lỗi để tìm vị trí.')}` : `${T('err.format','Không định dạng được')}: ${msg}`);
     $<HTMLTextAreaElement>('#out').value = '';
   }
 }
@@ -103,7 +105,7 @@ $('#dl').addEventListener('click', () => {
   const v = $<HTMLTextAreaElement>('#out').value;
   if (!v) return;
   downloadBlob(new Blob([v], { type: 'text/plain;charset=utf-8' }), `dinh-dang.${EXT[lang]}`);
-  toast('Đã tải file');
+  toast(T('toast.dl','Đã tải file'));
 });
 void run();
 
