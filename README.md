@@ -18,11 +18,14 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Xử lý file | So sánh hai file (TXT, Word, HTML, PDF) | `tools/file-diff.html` |
 | Xử lý file | Phân tích văn bản (số từ, ký tự, thời gian đọc, mật độ từ khoá) | `tools/text-analysis.html` |
 | Xử lý file | Chuyển đổi JSON, XML, CSV, Excel | `tools/data-convert.html` |
-| Công cụ kỹ thuật tin học | JSON, Base64, Regex | `tools/dev-tools.html` |
-| Công cụ kỹ thuật tin học | Cron & Unix timestamp | `tools/cron-time.html` |
 | Kinh doanh online | Tạo mã vạch | `tools/barcode.html` |
 | Tài chính & tính toán | Tính khoản vay | `tools/loan.html` |
 | Tài chính & tính toán | Lãi kép & tích luỹ | `tools/compound.html` |
+| Công cụ tin học | Định dạng JS, HTML, CSS, JSON | `tools/code-format.html` |
+| Công cụ tin học | Kiểm tra lỗi cú pháp JS, HTML, CSS, JSON | `tools/code-check.html` |
+| Công cụ tin học | Làm rối mã JavaScript (obfuscator) | `tools/js-obfuscate.html` |
+| Công cụ tin học | Tạo cặp khoá RSA (PEM) | `tools/rsa-keys.html` |
+| Công cụ tin học | Soạn văn bản thành HTML | `tools/text-to-html.html` |
 | Tài chính & tính toán | Lương Gross ↔ Net (quy định 2026 trong `src/calc/salary.ts`) | `tools/salary.html` |
 | Tiếp thị | Tạo mã QR | `tools/qr-code.html` |
 | Tiếp thị | Tạo link UTM | `tools/utm.html` |
@@ -31,7 +34,7 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
 
-Nhóm Xử lý file nạp thư viện từ CDN chỉ khi người dùng bấm xử lý (`src/lib/cdn.ts`): pdf-lib (gộp, tách, tạo PDF), pdf.js (đọc và vẽ trang PDF), PptxGenJS (tạo .pptx), JSZip (đọc .docx, .pptx), SheetJS (đọc, ghi Excel). Bộ đọc PowerPoint (`src/lib/pptx.ts`) và vẽ trang chiếu (`src/lib/pptx-render.ts`), so sánh văn bản (`src/calc/diff.ts`, thuật toán Myers), đọc XML, CSV được viết riêng.
+Nhóm Xử lý file nạp thư viện từ CDN chỉ khi người dùng bấm xử lý (`src/lib/cdn.ts`): pdf-lib (gộp, tách, tạo PDF), pdf.js (đọc và vẽ trang PDF), PptxGenJS (tạo .pptx), JSZip (đọc .docx, .pptx), SheetJS (đọc, ghi Excel). Nhóm Công cụ tin học nạp js-beautify (định dạng JS/HTML/CSS) và acorn (kiểm lỗi, làm rối JS) từ CDN; tạo khoá RSA bằng Web Crypto sẵn có của trình duyệt. Bộ làm rối mã (`src/lib/obfuscate.ts`) tự viết trên AST acorn. Bộ đọc PowerPoint (`src/lib/pptx.ts`) và vẽ trang chiếu (`src/lib/pptx-render.ts`), so sánh văn bản (`src/calc/diff.ts`, thuật toán Myers), đọc XML, CSV được viết riêng.
 
 ## Trang ẩn
 

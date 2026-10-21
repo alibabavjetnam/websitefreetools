@@ -8,6 +8,10 @@ export const CDN = {
   jszip: 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js',
   // Bản chính thức của SheetJS; bản trên npm dừng ở 0.18.5 và có lỗ hổng đã biết
   xlsx: 'https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js',
+  beautifyJs: 'https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify.min.js',
+  beautifyCss: 'https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify-css.min.js',
+  beautifyHtml: 'https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify-html.min.js',
+  acorn: 'https://cdnjs.cloudflare.com/ajax/libs/acorn/8.14.0/acorn.min.js',
 };
 
 const loading = new Map<string, Promise<void>>();

@@ -1,0 +1,197 @@
+import { mountLayout } from '../layout';
+import { $, copyText, downloadBlob, toast } from '../ui';
+
+mountLayout({ activeTool: 'text-to-html' });
+
+interface Btn { cmd?: string; val?: string; act?: string; label: string; title: string }
+const GROUPS: Btn[][] = [
+  [
+    { cmd: 'formatBlock', val: 'H1', label: 'H1', title: 'Tiêu đề lớn' },
+    { cmd: 'formatBlock', val: 'H2', label: 'H2', title: 'Tiêu đề vừa' },
+    { cmd: 'formatBlock', val: 'H3', label: 'H3', title: 'Tiêu đề nhỏ' },
+    { cmd: 'formatBlock', val: 'P', label: '¶', title: 'Đoạn văn thường' },
+  ],
+  [
+    { cmd: 'bold', label: '<b>B</b>', title: 'In đậm' },
+    { cmd: 'italic', label: '<i>I</i>', title: 'In nghiêng' },
+    { cmd: 'underline', label: '<u>U</u>', title: 'Gạch chân' },
+    { cmd: 'strikeThrough', label: '<s>S</s>', title: 'Gạch ngang' },
+  ],
+  [
+    { cmd: 'insertUnorderedList', label: '• ≡', title: 'Danh sách dấu chấm' },
+    { cmd: 'insertOrderedList', label: '1. ≡', title: 'Danh sách đánh số' },
+    { cmd: 'formatBlock', val: 'BLOCKQUOTE', label: '❝', title: 'Trích dẫn' },
+    { cmd: 'formatBlock', val: 'PRE', label: '&lt;/&gt;', title: 'Khối mã' },
+  ],
+  [
+    { act: 'link', label: '🔗', title: 'Chèn liên kết' },
+    { cmd: 'unlink', label: '⛓', title: 'Bỏ liên kết' },
+    { act: 'table', label: '▦', title: 'Chèn bảng' },
+    { cmd: 'insertHorizontalRule', label: '―', title: 'Đường kẻ ngang' },
+  ],
+  [
+    { cmd: 'removeFormat', label: '⌫', title: 'Xoá định dạng chữ' },
+    { act: 'clear', label: 'Xoá hết', title: 'Xoá toàn bộ nội dung' },
+  ],
+];
+
+const SAMPLE = `<h2>Chào mừng đến với WFTools</h2><p>Đây là trình soạn thảo <strong>trực quan</strong>. Bạn gõ như trong Word, công cụ tự tạo <em>mã HTML sạch</em>.</p><ul><li>Bôi đen chữ rồi bấm nút trên thanh công cụ</li><li>Sao chép mã HTML ở ô bên dưới</li></ul>`;
+
+const root = $('#tool-root');
+root.innerHTML = `
+  <div class="panel editor-toolbar" id="toolbar">
+    ${GROUPS.map((g) => `<div class="tb-group">${g.map((b) => `<button type="button" class="tb-btn" title="${b.title}" aria-label="${b.title}"${b.cmd ? ` data-cmd="${b.cmd}"${b.val ? ` data-val="${b.val}"` : ''}` : ''}${b.act ? ` data-act="${b.act}"` : ''}>${b.label}</button>`).join('')}</div>`).join('')}
+  </div>
+  <div class="editor-wrap">
+    <div class="field">
+      <span class="field-label">Soạn thảo</span>
+      <div id="editor" class="editor" contenteditable="true" spellcheck="false"></div>
+    </div>
+    <div class="field">
+      <span class="field-label">Mã HTML</span>
+      <textarea id="src" class="mono code-area" rows="14" spellcheck="false"></textarea>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="copy">Sao chép HTML</button>
+        <button type="button" class="btn" id="dl">Tải file .html</button>
+        <button type="button" class="btn" id="apply">Áp dụng mã HTML vào trình soạn thảo</button>
+      </div>
+    </div>
+  </div>
+  <p class="note">Mã HTML được làm sạch: bỏ thuộc tính <code>style</code> rác, đổi thẻ <code>&lt;b&gt;</code>/<code>&lt;i&gt;</code> sang <code>&lt;strong&gt;</code>/<code>&lt;em&gt;</code>. Dán mã có sẵn vào ô HTML rồi bấm "Áp dụng" để xem và chỉnh tiếp.</p>
+`;
+
+const editor = $('#editor') as HTMLElement;
+try {
+  document.execCommand('defaultParagraphSeparator', false, 'p');
+  document.execCommand('styleWithCSS', false, 'false');
+} catch { /* một số trình duyệt không hỗ trợ, bỏ qua */ }
+
+const INLINE = new Set(['A', 'B', 'STRONG', 'I', 'EM', 'U', 'S', 'SPAN', 'CODE', 'BR', 'SUB', 'SUP', 'MARK', 'SMALL', 'IMG']);
+const VOID = new Set(['BR', 'HR', 'IMG']);
+
+/** Dọn cây DOM: bỏ style/class rác, đổi b/i sang strong/em, bỏ thẻ rỗng */
+function clean(node: Node): void {
+  for (const child of [...node.childNodes]) {
+    if (child.nodeType === Node.ELEMENT_NODE) {
+      const el = child as HTMLElement;
+      el.removeAttribute('style');
+      el.removeAttribute('class');
+      el.removeAttribute('id');
+      if (el.tagName === 'FONT' || el.tagName === 'SPAN') {
+        // thay bằng nội dung bên trong
+        clean(el);
+        el.replaceWith(...el.childNodes);
+        continue;
+      }
+      clean(el);
+    }
+  }
+}
+
+function tidyHtml(html: string): string {
+  const doc = new DOMParser().parseFromString(`<body>${html}</body>`, 'text/html');
+  clean(doc.body);
+  let out = doc.body.innerHTML
+    .replace(/<b>/g, '<strong>').replace(/<\/b>/g, '</strong>')
+    .replace(/<i>/g, '<em>').replace(/<\/i>/g, '</em>')
+    .replace(/<div>/g, '<p>').replace(/<\/div>/g, '</p>')
+    .replace(/<p><br><\/p>/g, '').replace(/<p><\/p>/g, '');
+  return prettyHtml(out);
+}
+
+/** Thụt lề HTML theo khối cho dễ đọc */
+function prettyHtml(html: string): string {
+  const doc = new DOMParser().parseFromString(`<body>${html}</body>`, 'text/html');
+  const lines: string[] = [];
+  const serialize = (node: Node, depth: number): void => {
+    const pad = '  '.repeat(depth);
+    for (const child of [...node.childNodes]) {
+      if (child.nodeType === Node.TEXT_NODE) {
+        const t = (child.textContent ?? '').replace(/\s+/g, ' ').trim();
+        if (t) lines.push(pad + t);
+      } else if (child.nodeType === Node.ELEMENT_NODE) {
+        const el = child as HTMLElement;
+        const tag = el.tagName.toLowerCase();
+        const attrs = [...el.attributes].map((a) => ` ${a.name}="${a.value}"`).join('');
+        if (VOID.has(el.tagName)) { lines.push(`${pad}<${tag}${attrs}>`); continue; }
+        const onlyInline = [...el.childNodes].every((n) => n.nodeType === Node.TEXT_NODE || INLINE.has((n as HTMLElement).tagName));
+        if (onlyInline) {
+          lines.push(`${pad}<${tag}${attrs}>${el.innerHTML.replace(/\s+/g, ' ').trim()}</${tag}>`);
+        } else {
+          lines.push(`${pad}<${tag}${attrs}>`);
+          serialize(el, depth + 1);
+          lines.push(`${pad}</${tag}>`);
+        }
+      }
+    }
+  };
+  serialize(doc.body, 0);
+  return lines.join('\n');
+}
+
+function syncSource(): void {
+  $<HTMLTextAreaElement>('#src').value = tidyHtml(editor.innerHTML);
+}
+
+function insertTable(): void {
+  const r = Math.min(20, Math.max(1, Number(prompt('Số hàng?', '2') ?? '0')));
+  const c = Math.min(12, Math.max(1, Number(prompt('Số cột?', '2') ?? '0')));
+  if (!r || !c) return;
+  let html = '<table><thead><tr>';
+  for (let j = 0; j < c; j++) html += `<th>Cột ${j + 1}</th>`;
+  html += '</tr></thead><tbody>';
+  for (let i = 0; i < r; i++) { html += '<tr>'; for (let j = 0; j < c; j++) html += '<td> </td>'; html += '</tr>'; }
+  html += '</tbody></table><p></p>';
+  editor.focus();
+  document.execCommand('insertHTML', false, html);
+  syncSource();
+}
+
+$('#toolbar').addEventListener('click', (e) => {
+  const b = (e.target as HTMLElement).closest<HTMLElement>('button');
+  if (!b) return;
+  editor.focus();
+  if (b.dataset.cmd) {
+    document.execCommand(b.dataset.cmd, false, b.dataset.val);
+  } else if (b.dataset.act === 'link') {
+    const url = prompt('Nhập địa chỉ liên kết (URL):', 'https://');
+    if (url && url !== 'https://') document.execCommand('createLink', false, url);
+  } else if (b.dataset.act === 'table') {
+    insertTable();
+    return;
+  } else if (b.dataset.act === 'clear') {
+    editor.innerHTML = '<p></p>';
+  }
+  syncSource();
+});
+
+editor.addEventListener('input', syncSource);
+editor.addEventListener('blur', syncSource);
+// Dán dưới dạng văn bản thuần để tránh rác định dạng từ Word, web
+editor.addEventListener('paste', (e) => {
+  const html = e.clipboardData?.getData('text/html');
+  if (html) {
+    e.preventDefault();
+    document.execCommand('insertHTML', false, tidyHtml(html));
+    syncSource();
+  }
+});
+
+$('#apply').addEventListener('click', () => {
+  editor.innerHTML = $<HTMLTextAreaElement>('#src').value || '<p></p>';
+  syncSource();
+  toast('Đã áp dụng mã HTML');
+});
+$('#copy').addEventListener('click', () => {
+  const v = $<HTMLTextAreaElement>('#src').value;
+  if (v) void copyText(v);
+});
+$('#dl').addEventListener('click', () => {
+  const body = $<HTMLTextAreaElement>('#src').value;
+  const doc = `<!doctype html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n<title>Tài liệu</title>\n</head>\n<body>\n${body}\n</body>\n</html>\n`;
+  downloadBlob(new Blob([doc], { type: 'text/html;charset=utf-8' }), 'tai-lieu.html');
+  toast('Đã tải file HTML');
+});
+
+editor.innerHTML = SAMPLE;
+syncSource();

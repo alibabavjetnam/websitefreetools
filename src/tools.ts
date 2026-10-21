@@ -28,7 +28,7 @@ export const GROUPS: ToolGroup[] = [
   { id: 'finance', name: 'Tài chính & tính toán', description: 'Tính toán chính xác theo công thức và quy định hiện hành.' },
   { id: 'marketing', name: 'Tiếp thị', description: 'Mã QR, liên kết chiến dịch, màu sắc thương hiệu.' },
   { id: 'life', name: 'Năng suất & đời sống', description: 'Tiện ích dùng hằng ngày.' },
-  { id: 'dev', name: 'Công cụ kỹ thuật tin học', description: 'Tiện ích tra cứu, định dạng dữ liệu cho dân kỹ thuật.' },
+  { id: 'dev', name: 'Công cụ tin học', description: 'Định dạng, kiểm lỗi, mã hoá và chuyển đổi mã nguồn.' },
 ];
 
 const tool = (id: string, group: string, name: string, description: string, iconSample?: string): ToolInfo => ({
@@ -50,9 +50,12 @@ export const TOOLS: ToolInfo[] = [
   tool('text-analysis', 'file', 'Phân tích văn bản', 'Đếm số từ, ký tự, câu, đoạn, ước tính thời gian đọc và mật độ từ khoá của văn bản, file TXT, Word, PDF.'),
   tool('data-convert', 'file', 'Chuyển đổi JSON, XML, CSV, Excel', 'Đổi dữ liệu qua lại giữa JSON, XML, CSV và Excel (.xlsx), xem trước dạng bảng.'),
 
-  // Công cụ kỹ thuật tin học
-  tool('dev-tools', 'dev', 'JSON, Base64, Regex', 'Định dạng và kiểm tra JSON, mã hoá Base64, thử biểu thức chính quy.'),
-  tool('cron-time', 'dev', 'Cron & Unix timestamp', 'Tạo và đọc biểu thức cron, xem các lần chạy tiếp theo, đổi timestamp sang ngày giờ.'),
+  // Công cụ tin học
+  tool('code-format', 'dev', 'Định dạng JS, HTML, CSS, JSON', 'Căn chỉnh, thụt lề gọn gàng cho mã JavaScript, HTML, CSS và JSON.'),
+  tool('code-check', 'dev', 'Kiểm tra lỗi cú pháp', 'Tìm lỗi cú pháp, cấu trúc trong JavaScript, HTML, CSS, JSON và chỉ ra dòng, cột.'),
+  tool('js-obfuscate', 'dev', 'Làm rối mã JavaScript', 'Mã hoá chuỗi, đổi tên biến, che giấu mã JavaScript để khó đọc, khó sao chép (JavaScript Obfuscator).'),
+  tool('rsa-keys', 'dev', 'Tạo khoá RSA', 'Tạo cặp khoá RSA public và private theo chuẩn PEM để mã hoá, ký số.'),
+  tool('text-to-html', 'dev', 'Soạn văn bản thành HTML', 'Soạn thảo trực quan có in đậm, tiêu đề, danh sách, bảng, liên kết và lấy mã HTML sạch.'),
 
   // Kinh doanh online
   tool('inventory', 'business', 'Tồn kho & tính giá bán', 'Tính giá bán theo phí sàn, quảng cáo, biên lợi nhuận. Quản lý nhập xuất tồn, cảnh báo sắp hết hàng.'),

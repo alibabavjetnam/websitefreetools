@@ -22,10 +22,17 @@ const PATHS: Record<string, string> = {
   'text-analysis': '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h5"/><path d="M8 8h6M8 12h4"/><circle cx="16.5" cy="15.5" r="3.5"/><path d="M19 18l2.5 2.5"/>',
   // bảng dữ liệu có mũi tên
   'data-convert': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/><path d="M12.5 14.5h5M15.5 12.5l2 2-2 2"/>',
-  // dấu ngoặc nhọn
-  'dev-tools': '<path d="M8 4c-2 0-2.5 1-2.5 3v2c0 1.5-.8 2.5-2.5 3 1.7.5 2.5 1.5 2.5 3v2c0 2 .5 3 2.5 3"/><path d="M16 4c2 0 2.5 1 2.5 3v2c0 1.5.8 2.5 2.5 3-1.7.5-2.5 1.5-2.5 3v2c0 2-.5 3-2.5 3"/>',
-  // đồng hồ
-  'cron-time': '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+  // dấu ngoặc nhọn với gạch căn
+  'code-format': '<path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/><path d="M4 4h16" opacity=".55"/>',
+  // dấu ngoặc nhọn với dấu tích
+  'code-check': '<path d="M9 7l-4 5 4 5M15 7l4 5-4 5" opacity=".55"/><path d="M9.5 12.2l1.7 1.8 3.3-3.6"/>',
+  // ổ khoá trên dòng mã
+  'js-obfuscate': '<rect x="4" y="10.5" width="16" height="9" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/><path d="M12 14v2"/>',
+  // chìa khoá
+  'rsa-keys': '<circle cx="7.5" cy="15.5" r="3.5"/><path d="M10 13l9-9M16 7l2 2M13.5 9.5l2 2"/>',
+  // trang văn bản sang thẻ
+  'text-to-html': '<path d="M5 4h9l5 5v2"/><path d="M14 4v5h5" opacity=".55"/><path d="M8 20l-2.5-2.5L8 15M16 15l2.5 2.5L16 20M13 14l-2 7" transform="translate(0 .5)"/>',
+
   // ngôi nhà và đồng xu
   loan: '<path d="M3 11l9-7 9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/>',
   // cột tăng dần
