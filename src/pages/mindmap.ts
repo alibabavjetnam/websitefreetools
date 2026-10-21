@@ -1,16 +1,18 @@
 import { mountLayout } from '../layout';
 import { $, copyText, downloadBlob, escapeHtml, storage, toast } from '../ui';
 import { keywords, splitSentences, wordsOf } from '../calc/text-stats';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'mindmap' });
+const T = pageText();
 
 interface MNode { id: string; text: string; children: MNode[]; collapsed?: boolean }
 const store = storage<MNode>('mindmap', {
   id: 'root',
-  text: 'Chủ đề chính',
+  text: T('d.root', 'Chủ đề chính'),
   children: [
-    { id: 'a', text: 'Ý chính 1', children: [{ id: 'a1', text: 'Chi tiết', children: [] }] },
-    { id: 'b', text: 'Ý chính 2', children: [] },
+    { id: 'a', text: T('d.main1', 'Ý chính 1'), children: [{ id: 'a1', text: T('d.detail', 'Chi tiết'), children: [] }] },
+    { id: 'b', text: T('d.main2', 'Ý chính 2'), children: [] },
   ],
 });
 const newId = () => Math.random().toString(36).slice(2, 8);
@@ -18,19 +20,19 @@ const newId = () => Math.random().toString(36).slice(2, 8);
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="tabs" role="tablist">
-    <button type="button" role="tab" data-tab="map">Sơ đồ tư duy</button>
-    <button type="button" role="tab" data-tab="sum">Tóm tắt tự động</button>
+    <button type="button" role="tab" data-tab="map">${T('tab.map','Sơ đồ tư duy')}</button>
+    <button type="button" role="tab" data-tab="sum">${T('tab.sum','Tóm tắt tự động')}</button>
   </div>
 
   <section class="tool-body" data-panel="map">
     <div class="panel code-toolbar no-print">
-      <p class="note" style="margin:0">Bấm vào một ý để chọn, rồi dùng các nút bên dưới. Bấm đúp (hoặc nút Sửa) để đổi chữ.</p>
+      <p class="note" style="margin:0">${T('help','Bấm vào một ý để chọn, rồi dùng các nút bên dưới. Bấm đúp (hoặc nút Sửa) để đổi chữ.')}</p>
       <div class="actions">
-        <button type="button" class="btn" id="add-child">+ Ý con</button>
-        <button type="button" class="btn" id="add-sib">+ Ý ngang</button>
-        <button type="button" class="btn" id="edit-node">Sửa</button>
-        <button type="button" class="btn" id="del-node">Xoá</button>
-        <button type="button" class="btn" id="print-map">In</button>
+        <button type="button" class="btn" id="add-child">${T('addChild','+ Ý con')}</button>
+        <button type="button" class="btn" id="add-sib">${T('addSib','+ Ý ngang')}</button>
+        <button type="button" class="btn" id="edit-node">${T('edit','Sửa')}</button>
+        <button type="button" class="btn" id="del-node">${T('del','Xoá')}</button>
+        <button type="button" class="btn" id="print-map">${T('print','In')}</button>
       </div>
     </div>
     <div class="mindmap-canvas" id="canvas"></div>
@@ -39,15 +41,15 @@ root.innerHTML = `
   <section class="tool-body" data-panel="sum">
     <div class="workspace">
       <div class="panel">
-        <label class="field"><span class="field-label">Dán bài học / văn bản cần tóm tắt</span><textarea id="src" rows="16" spellcheck="false"></textarea></label>
+        <label class="field"><span class="field-label">${T('pasteText','Dán bài học / văn bản cần tóm tắt')}</span><textarea id="src" rows="16" spellcheck="false"></textarea></label>
         <div class="field-row">
-          <label class="field field--inline"><span class="field-label">Độ dài tóm tắt</span><select id="ratio"><option value="0.2">Ngắn (20%)</option><option value="0.33" selected>Vừa (33%)</option><option value="0.5">Dài (50%)</option></select></label>
-          <div class="actions"><button type="button" class="btn btn-primary" id="summarize">Tóm tắt</button></div>
+          <label class="field field--inline"><span class="field-label">${T('sumLen','Độ dài tóm tắt')}</span><select id="ratio"><option value="0.2">${T('len.short','Ngắn (20%)')}</option><option value="0.33" selected>${T('len.mid','Vừa (33%)')}</option><option value="0.5">${T('len.long','Dài (50%)')}</option></select></label>
+          <div class="actions"><button type="button" class="btn btn-primary" id="summarize">${T('summarize','Tóm tắt')}</button></div>
         </div>
       </div>
-      <section class="preview"><div class="panel" id="sum-out"><p class="note">Kết quả tóm tắt sẽ hiện ở đây.</p></div></section>
+      <section class="preview"><div class="panel" id="sum-out"><p class="note">${T('sumHere','Kết quả tóm tắt sẽ hiện ở đây.')}</p></div></section>
     </div>
-    <p class="note">Công cụ tóm tắt theo phương pháp trích câu quan trọng (dựa trên tần suất từ khoá), chạy ngay trên máy, không cần internet. Phù hợp để rút gọn bài đọc; không diễn giải lại như người viết.</p>
+    <p class="note">${T('note','Công cụ tóm tắt theo phương pháp trích câu quan trọng (dựa trên tần suất từ khoá), chạy ngay trên máy, không cần internet. Phù hợp để rút gọn bài đọc; không diễn giải lại như người viết.')}</p>
   </section>
 `;
 
@@ -99,7 +101,7 @@ $('#canvas').addEventListener('dblclick', () => editNode());
 function editNode(): void {
   const f = find(store.get(), selected);
   if (!f) return;
-  const text = prompt('Sửa nội dung:', f.node.text);
+  const text = prompt(T('editPrompt','Sửa nội dung:'), f.node.text);
   if (text !== null) { f.node.text = text.trim() || f.node.text; store.set(store.get()); renderMap(); }
 }
 $('#edit-node').addEventListener('click', editNode);
@@ -107,7 +109,7 @@ $('#add-child').addEventListener('click', () => {
   const f = find(store.get(), selected);
   if (!f) return;
   const id = newId();
-  f.node.children.push({ id, text: 'Ý mới', children: [] });
+  f.node.children.push({ id, text: T('newNode','Ý mới'), children: [] });
   f.node.collapsed = false;
   selected = id;
   store.set(store.get());
@@ -115,16 +117,16 @@ $('#add-child').addEventListener('click', () => {
 });
 $('#add-sib').addEventListener('click', () => {
   const f = find(store.get(), selected);
-  if (!f || !f.parent) { toast('Không thêm ý ngang cho chủ đề gốc'); return; }
+  if (!f || !f.parent) { toast(T('toast.noSibRoot','Không thêm ý ngang cho chủ đề gốc')); return; }
   const id = newId();
   const idx = f.parent.children.indexOf(f.node);
-  f.parent.children.splice(idx + 1, 0, { id, text: 'Ý mới', children: [] });
+  f.parent.children.splice(idx + 1, 0, { id, text: T('newNode','Ý mới'), children: [] });
   selected = id;
   store.set(store.get());
   renderMap();
 });
 $('#del-node').addEventListener('click', () => {
-  if (selected === 'root') { toast('Không xoá được chủ đề gốc'); return; }
+  if (selected === 'root') { toast(T('toast.noDelRoot','Không xoá được chủ đề gốc')); return; }
   const f = find(store.get(), selected);
   if (!f || !f.parent) return;
   f.parent.children = f.parent.children.filter((c) => c !== f.node);
@@ -154,21 +156,21 @@ function summarize(text: string, ratio: number): string[] {
 }
 $('#summarize').addEventListener('click', () => {
   const text = $<HTMLTextAreaElement>('#src').value.trim();
-  if (!text) { $('#sum-out').innerHTML = '<p class="note">Hãy dán văn bản cần tóm tắt.</p>'; return; }
+  if (!text) { $('#sum-out').innerHTML = `<p class="note">${T('pastePrompt','Hãy dán văn bản cần tóm tắt.')}</p>`; return; }
   const ratio = Number($<HTMLSelectElement>('#ratio').value);
   const bullets = summarize(text, ratio);
-  $('#sum-out').innerHTML = `<div class="panel-title">Tóm tắt (${bullets.length} ý)</div>
+  $('#sum-out').innerHTML = `<div class="panel-title">${T('sumTitle','Tóm tắt')} (${bullets.length} ${T('points','ý')})</div>
     <ul class="sum-list">${bullets.map((b) => `<li>${escapeHtml(b)}</li>`).join('')}</ul>
-    <div class="actions"><button type="button" class="btn btn-sm" id="copy-sum">Sao chép</button><button type="button" class="btn btn-sm" id="dl-sum">Tải .txt</button><button type="button" class="btn btn-sm" id="to-map">Tạo sơ đồ từ tóm tắt</button></div>`;
+    <div class="actions"><button type="button" class="btn btn-sm" id="copy-sum">${T('copy','Sao chép')}</button><button type="button" class="btn btn-sm" id="dl-sum">${T('dlTxt','Tải .txt')}</button><button type="button" class="btn btn-sm" id="to-map">${T('toMap','Tạo sơ đồ từ tóm tắt')}</button></div>`;
   $('#copy-sum').addEventListener('click', () => copyText(bullets.map((b) => '• ' + b).join('\n')));
   $('#dl-sum').addEventListener('click', () => downloadBlob(new Blob([bullets.map((b) => '• ' + b).join('\n')], { type: 'text/plain;charset=utf-8' }), 'tom-tat.txt'));
   $('#to-map').addEventListener('click', () => {
-    const first = wordsOf(text).slice(0, 4).join(' ') || 'Bài học';
+    const first = wordsOf(text).slice(0, 4).join(' ') || T('lesson','Bài học');
     store.set({ id: 'root', text: first, children: bullets.map((b) => ({ id: newId(), text: b.length > 60 ? b.slice(0, 60) + '…' : b, children: [] })) });
     selected = 'root';
     renderMap();
     tabs[0].click();
-    toast('Đã tạo sơ đồ tư duy từ tóm tắt');
+    toast(T('toast.mapMade','Đã tạo sơ đồ tư duy từ tóm tắt'));
   });
 });
 

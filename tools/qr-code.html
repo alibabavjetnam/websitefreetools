@@ -20,86 +20,86 @@
       <div class="workspace">
         <form class="panel" id="qr-form" novalidate>
           <fieldset class="segmented" id="qr-type">
-            <legend>Loại nội dung</legend>
-            <label><input type="radio" name="type" value="text" checked /><span>Liên kết / Văn bản</span></label>
+            <legend data-i18n="type.legend">Loại nội dung</legend>
+            <label><input type="radio" name="type" value="text" checked /><span data-i18n="type.text">Liên kết / Văn bản</span></label>
             <label><input type="radio" name="type" value="wifi" /><span>Wi‑Fi</span></label>
-            <label><input type="radio" name="type" value="email" /><span>Email</span></label>
-            <label><input type="radio" name="type" value="tel" /><span>Điện thoại</span></label>
-            <label><input type="radio" name="type" value="sms" /><span>SMS</span></label>
+            <label><input type="radio" name="type" value="email" /><span data-i18n="type.email">Email</span></label>
+            <label><input type="radio" name="type" value="tel" /><span data-i18n="type.tel">Điện thoại</span></label>
+            <label><input type="radio" name="type" value="sms" /><span data-i18n="type.sms">SMS</span></label>
           </fieldset>
 
           <div class="fields" data-type="text">
             <label class="field">
-              <span class="field-label">Nội dung</span>
-              <textarea name="text" rows="4" placeholder="https://example.com">https://websitefreetools.com</textarea>
+              <span class="field-label" data-i18n="content">Nội dung</span>
+              <textarea name="text" rows="4" placeholder="https://example.com" data-i18n-ph="text.ph">https://websitefreetools.com</textarea>
             </label>
           </div>
 
           <div class="fields" data-type="wifi" hidden>
-            <label class="field"><span class="field-label">Tên mạng Wi‑Fi</span><input name="ssid" type="text" placeholder="Nha-Toi-5G" /></label>
-            <label class="field"><span class="field-label">Mật khẩu</span><input name="wifiPass" type="text" autocomplete="off" /></label>
+            <label class="field"><span class="field-label" data-i18n="ssid">Tên mạng Wi‑Fi</span><input name="ssid" type="text" placeholder="Nha-Toi-5G" /></label>
+            <label class="field"><span class="field-label" data-i18n="wifiPass">Mật khẩu</span><input name="wifiPass" type="text" autocomplete="off" /></label>
             <div class="field-row">
-              <label class="field"><span class="field-label">Bảo mật</span>
-                <select name="wifiSec"><option value="WPA">WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass">Không mật khẩu</option></select>
+              <label class="field"><span class="field-label" data-i18n="wifiSec">Bảo mật</span>
+                <select name="wifiSec"><option value="WPA">WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass" data-i18n="nopass">Không mật khẩu</option></select>
               </label>
-              <label class="check"><input type="checkbox" name="wifiHidden" /><span>Mạng ẩn</span></label>
+              <label class="check"><input type="checkbox" name="wifiHidden" /><span data-i18n="wifiHidden">Mạng ẩn</span></label>
             </div>
           </div>
 
           <div class="fields" data-type="email" hidden>
-            <label class="field"><span class="field-label">Gửi đến</span><input name="emailTo" type="email" placeholder="ban@example.com" /></label>
-            <label class="field"><span class="field-label">Tiêu đề</span><input name="emailSubject" type="text" /></label>
-            <label class="field"><span class="field-label">Nội dung thư</span><textarea name="emailBody" rows="3"></textarea></label>
+            <label class="field"><span class="field-label" data-i18n="emailTo">Gửi đến</span><input name="emailTo" type="email" placeholder="ban@example.com" /></label>
+            <label class="field"><span class="field-label" data-i18n="emailSubject">Tiêu đề</span><input name="emailSubject" type="text" /></label>
+            <label class="field"><span class="field-label" data-i18n="emailBody">Nội dung thư</span><textarea name="emailBody" rows="3"></textarea></label>
           </div>
 
           <div class="fields" data-type="tel" hidden>
-            <label class="field"><span class="field-label">Số điện thoại</span><input name="tel" type="tel" placeholder="0901 234 567" /></label>
+            <label class="field"><span class="field-label" data-i18n="tel">Số điện thoại</span><input name="tel" type="tel" placeholder="0901 234 567" /></label>
           </div>
 
           <div class="fields" data-type="sms" hidden>
-            <label class="field"><span class="field-label">Số điện thoại</span><input name="smsTo" type="tel" placeholder="0901 234 567" /></label>
-            <label class="field"><span class="field-label">Tin nhắn</span><textarea name="smsBody" rows="3"></textarea></label>
+            <label class="field"><span class="field-label" data-i18n="smsTo">Số điện thoại</span><input name="smsTo" type="tel" placeholder="0901 234 567" /></label>
+            <label class="field"><span class="field-label" data-i18n="smsBody">Tin nhắn</span><textarea name="smsBody" rows="3"></textarea></label>
           </div>
 
           <details class="options" open>
-            <summary>Tuỳ chỉnh</summary>
+            <summary data-i18n="options">Tuỳ chỉnh</summary>
             <div class="options-body">
               <label class="field">
-                <span class="field-label">Độ bền của mã</span>
+                <span class="field-label" data-i18n="ecc">Độ bền của mã</span>
                 <select name="ecc">
-                  <option value="L">Thấp, mã gọn nhất</option>
-                  <option value="M" selected>Vừa (nên chọn)</option>
-                  <option value="Q">Khá</option>
-                  <option value="H">Cao, vẫn quét được khi mã bị bẩn hoặc xước</option>
+                  <option value="L" data-i18n="ecc.L">Thấp, mã gọn nhất</option>
+                  <option value="M" selected data-i18n="ecc.M">Vừa (nên chọn)</option>
+                  <option value="Q" data-i18n="ecc.Q">Khá</option>
+                  <option value="H" data-i18n="ecc.H">Cao, vẫn quét được khi mã bị bẩn hoặc xước</option>
                 </select>
               </label>
               <label class="field">
-                <span class="field-label">Kích thước ảnh tải về: <output name="sizeOut">512</output> px</span>
+                <span class="field-label"><span data-i18n="size">Kích thước ảnh tải về</span>: <output name="sizeOut">512</output> px</span>
                 <input type="range" name="size" min="128" max="2048" step="64" value="512" />
               </label>
               <label class="field">
-                <span class="field-label">Viền trắng: <output name="marginOut">4</output></span>
+                <span class="field-label"><span data-i18n="margin">Viền trắng</span>: <output name="marginOut">4</output></span>
                 <input type="range" name="margin" min="0" max="10" step="1" value="4" />
               </label>
               <div class="field-row">
-                <label class="color"><input type="color" name="fg" value="#000000" /><span>Màu mã</span></label>
-                <label class="color"><input type="color" name="bg" value="#ffffff" /><span>Màu nền</span></label>
+                <label class="color"><input type="color" name="fg" value="#000000" /><span data-i18n="fg">Màu mã</span></label>
+                <label class="color"><input type="color" name="bg" value="#ffffff" /><span data-i18n="bg">Màu nền</span></label>
               </div>
             </div>
           </details>
         </form>
 
         <section class="preview" aria-labelledby="preview-title">
-          <h2 id="preview-title" class="visually-hidden">Xem trước</h2>
+          <h2 id="preview-title" class="visually-hidden" data-i18n="preview">Xem trước</h2>
           <div class="label-sheet">
-            <div class="code-frame code-frame--qr" id="qr-output" role="img" aria-label="Mã QR"></div>
+            <div class="code-frame code-frame--qr" id="qr-output" role="img" aria-label="Mã QR" data-i18n-attr="aria-label:aria.qr"></div>
             <span class="scan-line" aria-hidden="true"></span>
           </div>
           <p class="code-meta" id="qr-meta" aria-live="polite"></p>
           <p class="error" id="qr-error" role="alert" hidden></p>
           <div class="actions">
-            <button type="button" class="btn btn-primary" id="dl-png">Tải PNG</button>
-            <button type="button" class="btn" id="dl-svg">Tải SVG</button>
+            <button type="button" class="btn btn-primary" id="dl-png" data-i18n="dlPng">Tải PNG</button>
+            <button type="button" class="btn" id="dl-svg" data-i18n="dlSvg">Tải SVG</button>
           </div>
         </section>
       </div>

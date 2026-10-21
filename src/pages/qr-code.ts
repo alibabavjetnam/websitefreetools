@@ -2,8 +2,10 @@ import { mountLayout } from '../layout';
 import { encodeQr, qrToSvg, type Ecc, type QrCode } from '../lib/qr';
 import { downloadPng, downloadSvg, safeFilename } from '../lib/download';
 import { pulseScan } from './shared';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'qr-code' });
+const T = pageText();
 
 const form = document.getElementById('qr-form') as HTMLFormElement;
 const output = document.getElementById('qr-output') as HTMLElement;
@@ -27,14 +29,14 @@ function payload(): { text: string; empty: string | null } {
   switch (type) {
     case 'wifi': {
       const ssid = val('ssid');
-      if (!ssid) return { text: '', empty: 'Nhập tên mạng Wi‑Fi để tạo mã.' };
+      if (!ssid) return { text: '', empty: T('empty.wifi','Nhập tên mạng Wi‑Fi để tạo mã.') };
       const sec = val('wifiSec');
       const pass = sec === 'nopass' ? '' : `P:${wifiEscape(val('wifiPass'))};`;
       return { text: `WIFI:T:${sec};S:${wifiEscape(ssid)};${pass}${checked('wifiHidden') ? 'H:true;' : ''};`, empty: null };
     }
     case 'email': {
       const to = val('emailTo').trim();
-      if (!to) return { text: '', empty: 'Nhập địa chỉ email người nhận để tạo mã.' };
+      if (!to) return { text: '', empty: T('empty.email','Nhập địa chỉ email người nhận để tạo mã.') };
       const params = new URLSearchParams();
       if (val('emailSubject')) params.set('subject', val('emailSubject'));
       if (val('emailBody')) params.set('body', val('emailBody'));
@@ -43,16 +45,16 @@ function payload(): { text: string; empty: string | null } {
     }
     case 'tel': {
       const t = phone(val('tel'));
-      return t ? { text: `tel:${t}`, empty: null } : { text: '', empty: 'Nhập số điện thoại để tạo mã.' };
+      return t ? { text: `tel:${t}`, empty: null } : { text: '', empty: T('empty.tel','Nhập số điện thoại để tạo mã.') };
     }
     case 'sms': {
       const t = phone(val('smsTo'));
-      if (!t) return { text: '', empty: 'Nhập số điện thoại nhận tin để tạo mã.' };
+      if (!t) return { text: '', empty: T('empty.sms','Nhập số điện thoại nhận tin để tạo mã.') };
       return { text: `SMSTO:${t}:${val('smsBody')}`, empty: null };
     }
     default: {
       const t = val('text');
-      return t ? { text: t, empty: null } : { text: '', empty: 'Nhập liên kết hoặc văn bản để tạo mã.' };
+      return t ? { text: t, empty: null } : { text: '', empty: T('empty.text','Nhập liên kết hoặc văn bản để tạo mã.') };
     }
   }
 }
@@ -93,10 +95,10 @@ function render(): void {
     output.innerHTML = currentSvg(qr.size + Number(val('margin')) * 2);
     meta.textContent =
       qr.version <= 6
-        ? 'Mã gọn, dễ quét ở mọi kích cỡ.'
+        ? T('meta.small','Mã gọn, dễ quét ở mọi kích cỡ.')
         : qr.version <= 15
-          ? 'Mã khá dày, nên in rộng từ 3 cm trở lên.'
-          : 'Mã rất dày vì nội dung dài. Hãy rút ngắn nội dung hoặc in thật to để dễ quét.';
+          ? T('meta.mid','Mã khá dày, nên in rộng từ 3 cm trở lên.')
+          : T('meta.big','Mã rất dày vì nội dung dài. Hãy rút ngắn nội dung hoặc in thật to để dễ quét.');
     errorBox.hidden = true;
     setDisabled(false);
     if (changed) pulseScan(output);

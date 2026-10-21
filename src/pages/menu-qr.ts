@@ -5,8 +5,10 @@ import { SheetStore, newId } from '../google/sync';
 import { VIEWER_URL, bindMenuNav, encodeMenu, menuHtml, type Menu } from '../menu/menu';
 import { encodeQr, qrToSvg } from '../lib/qr';
 import { downloadPng } from '../lib/download';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'menu-qr' });
+const T = pageText();
 
 interface SavedMenu { id: string; title: string; updated: string; json: string }
 type Data = { menus: SavedMenu[] };
@@ -39,36 +41,36 @@ let link = '';
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="row" style="margin-top:20px">
-    <button type="button" class="btn" id="new">Thực đơn trống</button>
-    <button type="button" class="btn" id="save">Lưu</button>
+    <button type="button" class="btn" id="new">${T('blank','Thực đơn trống')}</button>
+    <button type="button" class="btn" id="save">${T('save','Lưu')}</button>
   </div>
   <div class="doc-layout">
     <form class="panel" id="menu-form" novalidate>
       <div class="form-grid">
-        <label class="field span-all"><span class="field-label">Tên quán</span><input name="name" type="text" maxlength="120" /></label>
-        <label class="field span-all"><span class="field-label">Thông tin (địa chỉ, giờ mở cửa, Wi‑Fi)</span><textarea name="info" rows="2" maxlength="300"></textarea></label>
+        <label class="field span-all"><span class="field-label">${T('shopName','Tên quán')}</span><input name="name" type="text" maxlength="120" /></label>
+        <label class="field span-all"><span class="field-label">${T('info','Thông tin (địa chỉ, giờ mở cửa, Wi‑Fi)')}</span><textarea name="info" rows="2" maxlength="300"></textarea></label>
       </div>
-      <div><span class="field-label">Màu chủ đạo</span><div class="row" id="accents">${ACCENTS.map((c) => `<button type="button" class="accent-dot" data-accent="${c}" style="background:${c}" aria-label="Màu ${c}"></button>`).join('')}</div></div>
+      <div><span class="field-label">${T('accent','Màu chủ đạo')}</span><div class="row" id="accents">${ACCENTS.map((c) => `<button type="button" class="accent-dot" data-accent="${c}" style="background:${c}" aria-label="${T('color','Màu')} ${c}"></button>`).join('')}</div></div>
       <div id="cats" class="entries"></div>
-      <button type="button" class="btn btn-sm" id="add-cat">+ Thêm danh mục</button>
-      <label class="field"><span class="field-label">Ghi chú cuối thực đơn</span><textarea name="note" rows="2" maxlength="500"></textarea></label>
+      <button type="button" class="btn btn-sm" id="add-cat">${T('addCat','+ Thêm danh mục')}</button>
+      <label class="field"><span class="field-label">${T('endNote','Ghi chú cuối thực đơn')}</span><textarea name="note" rows="2" maxlength="500"></textarea></label>
     </form>
     <div class="menu-side">
       <div class="panel">
         <div class="label-sheet utm-qr"><div class="code-frame code-frame--qr" id="qr"></div></div>
         <p class="code-meta" id="qr-meta" aria-live="polite"></p>
         <div class="actions">
-          <button type="button" class="btn btn-primary" id="qr-png">Tải mã QR (PNG)</button>
+          <button type="button" class="btn btn-primary" id="qr-png">${T('qrPng','Tải mã QR (PNG)')}</button>
           <button type="button" class="btn" id="qr-svg">SVG</button>
-          <button type="button" class="btn" id="copy">Sao chép link</button>
-          <a class="btn" id="open" target="_blank" rel="noopener">Mở thử</a>
+          <button type="button" class="btn" id="copy">${T('copyLink','Sao chép link')}</button>
+          <a class="btn" id="open" target="_blank" rel="noopener">${T('openTest','Mở thử')}</a>
         </div>
-        <p class="note">Thực đơn nằm ngay trong mã QR, không cần máy chủ. Khi đổi món hoặc giá, bạn cần in lại mã mới.</p>
+        <p class="note">${T('note','Thực đơn nằm ngay trong mã QR, không cần máy chủ. Khi đổi món hoặc giá, bạn cần in lại mã mới.')}</p>
       </div>
       <div class="phone-frame"><div class="mv-page" id="preview"></div></div>
     </div>
   </div>
-  <h2 class="section-title" style="margin-top:28px">Thực đơn đã lưu</h2>
+  <h2 class="section-title" style="margin-top:28px">${T('savedMenus','Thực đơn đã lưu')}</h2>
   <div class="table-wrap"><table class="data-table" id="saved"></table></div>
 `;
 store.mount(root);
@@ -80,20 +82,20 @@ function renderCats(): void {
     .map(
       (c, ci) => `<fieldset class="entry" data-ci="${ci}">
       <div class="row" style="justify-content:space-between">
-        <label class="field" style="flex:1"><span class="field-label">Danh mục</span><input data-cat="title" type="text" value="${escapeHtml(c.title)}" maxlength="80" /></label>
-        <button type="button" class="btn btn-sm" data-del-cat>Xoá danh mục</button>
+        <label class="field" style="flex:1"><span class="field-label">${T('category','Danh mục')}</span><input data-cat="title" type="text" value="${escapeHtml(c.title)}" maxlength="80" /></label>
+        <button type="button" class="btn btn-sm" data-del-cat>${T('delCat','Xoá danh mục')}</button>
       </div>
       ${c.items
         .map(
           (it, ii) => `<div class="menu-item-row" data-ii="${ii}">
-          <input data-item="name" type="text" value="${escapeHtml(it.name)}" placeholder="Tên món" aria-label="Tên món" maxlength="120" />
-          <input data-item="price" type="text" inputmode="numeric" value="${it.price ? fmtInt(it.price) : ''}" placeholder="Giá" aria-label="Giá" />
-          <button type="button" class="btn btn-sm" data-del-item aria-label="Xoá món">✕</button>
-          <input data-item="desc" type="text" value="${escapeHtml(it.desc)}" placeholder="Mô tả ngắn (không bắt buộc)" aria-label="Mô tả" maxlength="300" />
+          <input data-item="name" type="text" value="${escapeHtml(it.name)}" placeholder="${T('itemName','Tên món')}" aria-label="${T('itemName','Tên món')}" maxlength="120" />
+          <input data-item="price" type="text" inputmode="numeric" value="${it.price ? fmtInt(it.price) : ''}" placeholder="${T('itemPrice','Giá')}" aria-label="${T('itemPrice','Giá')}" />
+          <button type="button" class="btn btn-sm" data-del-item aria-label="${T('delItem','Xoá món')}">✕</button>
+          <input data-item="desc" type="text" value="${escapeHtml(it.desc)}" placeholder="${T('itemDesc','Mô tả ngắn (không bắt buộc)')}" aria-label="${T('itemDescAria','Mô tả')}" maxlength="300" />
         </div>`,
         )
         .join('')}
-      <button type="button" class="btn btn-sm" data-add-item>+ Thêm món</button>
+      <button type="button" class="btn btn-sm" data-add-item>${T('addItem','+ Thêm món')}</button>
     </fieldset>`,
     )
     .join('');
@@ -119,12 +121,12 @@ async function renderOutput(): Promise<void> {
     const qr = encodeQr(link, 'L');
     $('#qr').innerHTML = qrToSvg(qr, { px: 240 });
     meta.textContent =
-      qr.version <= 15 ? 'Mã gọn, in cỡ 4 cm trở lên là quét tốt.'
-      : qr.version <= 25 ? 'Mã khá dày, nên in rộng từ 6 cm trở lên.'
-      : 'Mã rất dày vì thực đơn dài. Nên in rộng từ 9 cm, hoặc rút gọn mô tả món.';
+      qr.version <= 15 ? T('meta.small','Mã gọn, in cỡ 4 cm trở lên là quét tốt.')
+      : qr.version <= 25 ? T('meta.mid','Mã khá dày, nên in rộng từ 6 cm trở lên.')
+      : T('meta.big','Mã rất dày vì thực đơn dài. Nên in rộng từ 9 cm, hoặc rút gọn mô tả món.');
   } catch {
     $('#qr').innerHTML = '';
-    meta.textContent = 'Thực đơn quá dài để chứa trong một mã QR. Hãy bớt mô tả món hoặc tách thành hai thực đơn.';
+    meta.textContent = T('meta.tooLong','Thực đơn quá dài để chứa trong một mã QR. Hãy bớt mô tả món hoặc tách thành hai thực đơn.');
     link = '';
   }
 }
@@ -180,10 +182,10 @@ $('#qr-png').addEventListener('click', async () => {
 $('#qr-svg').addEventListener('click', () => {
   if (link) downloadBlob(new Blob([qrToSvg(encodeQr(link, 'L'), { px: 1600 })], { type: 'image/svg+xml' }), `${fileBase()}.svg`);
 });
-$('#copy').addEventListener('click', () => link && copyText(link, 'Đã sao chép link thực đơn'));
+$('#copy').addEventListener('click', () => link && copyText(link, T('toast.copied','Đã sao chép link thực đơn')));
 
 $('#new').addEventListener('click', () => {
-  menu = { name: '', info: '', note: '', accent: '#0d6efd', categories: [{ title: 'Món chính', items: [{ name: '', price: 0, desc: '' }] }] };
+  menu = { name: '', info: '', note: '', accent: '#0d6efd', categories: [{ title: T('defaultCat','Món chính'), items: [{ name: '', price: 0, desc: '' }] }] };
   currentId = null;
   fillForm();
   void renderOutput();
@@ -191,18 +193,18 @@ $('#new').addEventListener('click', () => {
 $('#save').addEventListener('click', () => {
   currentId ??= newId();
   const d = store.get();
-  store.set({ menus: [...d.menus.filter((m) => m.id !== currentId), { id: currentId, title: menu.name || 'Thực đơn chưa đặt tên', updated: new Date().toLocaleString('sv-SE').slice(0, 16), json: JSON.stringify(menu) }] });
+  store.set({ menus: [...d.menus.filter((m) => m.id !== currentId), { id: currentId, title: menu.name || T('untitled','Thực đơn chưa đặt tên'), updated: new Date().toLocaleString('sv-SE').slice(0, 16), json: JSON.stringify(menu) }] });
   renderSaved();
-  toast('Đã lưu thực đơn');
+  toast(T('toast.saved','Đã lưu thực đơn'));
 });
 
 function renderSaved(): void {
   const list = [...store.get().menus].sort((a, b) => b.updated.localeCompare(a.updated));
   $('#saved').innerHTML = list.length
-    ? `<thead><tr><th>Thực đơn</th><th>Cập nhật</th><th></th></tr></thead><tbody>${list
-        .map((m) => `<tr><td>${escapeHtml(m.title)}</td><td>${escapeHtml(m.updated)}</td><td class="row"><button type="button" class="btn btn-sm" data-open="${escapeHtml(m.id)}">Mở</button><button type="button" class="btn btn-sm" data-delete="${escapeHtml(m.id)}">Xoá</button></td></tr>`)
+    ? `<thead><tr><th>${T('th.menu','Thực đơn')}</th><th>${T('th.updated','Cập nhật')}</th><th></th></tr></thead><tbody>${list
+        .map((m) => `<tr><td>${escapeHtml(m.title)}</td><td>${escapeHtml(m.updated)}</td><td class="row"><button type="button" class="btn btn-sm" data-open="${escapeHtml(m.id)}">${T('open','Mở')}</button><button type="button" class="btn btn-sm" data-delete="${escapeHtml(m.id)}">${T('del','Xoá')}</button></td></tr>`)
         .join('')}</tbody>`
-    : '<tbody><tr><td class="note">Chưa lưu thực đơn nào.</td></tr></tbody>';
+    : `<tbody><tr><td class="note">${T('noSaved','Chưa lưu thực đơn nào.')}</td></tr></tbody>`;
 }
 $('#saved').addEventListener('click', (e) => {
   const t = e.target as HTMLElement;
@@ -213,7 +215,7 @@ $('#saved').addEventListener('click', (e) => {
     try {
       menu = JSON.parse(d.menus.find((m) => m.id === open)?.json ?? '') as Menu;
     } catch {
-      return toast('Dữ liệu thực đơn bị lỗi');
+      return toast(T('toast.badData','Dữ liệu thực đơn bị lỗi'));
     }
     currentId = open;
     fillForm();
@@ -221,8 +223,8 @@ $('#saved').addEventListener('click', (e) => {
   } else if (del) {
     if (del.dataset.confirm !== '1') {
       del.dataset.confirm = '1';
-      del.textContent = 'Bấm lần nữa để xoá';
-      setTimeout(() => { del.dataset.confirm = ''; del.textContent = 'Xoá'; }, 3000);
+      del.textContent = T('del.confirm','Bấm lần nữa để xoá');
+      setTimeout(() => { del.dataset.confirm = ''; del.textContent = T('del','Xoá'); }, 3000);
       return;
     }
     store.set({ menus: d.menus.filter((m) => m.id !== del.dataset.delete) });
