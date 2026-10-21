@@ -1,13 +1,15 @@
 import { mountLayout } from '../layout';
 import { $, downloadBlob, escapeHtml, storage, toast } from '../ui';
 import { MAX_IMAGE_BYTES, canvasToBlob, drawToCanvas, fmtBytes, loadImage, renameFile, type LoadedImage } from '../lib/image';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'watermark' });
+const T = pageText();
 
 declare const JSZip: (new () => { file(name: string, data: Blob): void; generateAsync(o: { type: 'blob' }): Promise<Blob> }) | undefined;
 
 type Pos = 'tl' | 'tc' | 'tr' | 'ml' | 'mc' | 'mr' | 'bl' | 'bc' | 'br' | 'tile';
-const POS_LABEL: Record<Pos, string> = { tl: '↖', tc: '↑', tr: '↗', ml: '←', mc: '•', mr: '→', bl: '↙', bc: '↓', br: '↘', tile: 'Lặp kín' };
+const POS_LABEL: Record<Pos, string> = { tl: '↖', tc: '↑', tr: '↗', ml: '←', mc: '•', mr: '→', bl: '↙', bc: '↓', br: '↘', tile: T('tile', 'Lặp kín') };
 
 interface Settings { kind: 'text' | 'logo'; text: string; color: string; size: number; opacity: number; bold: boolean; outline: boolean; logoSize: number; pos: Pos; margin: number; angle: number }
 const prefs = storage<Settings>('watermark', { kind: 'text', text: '© websitefreetools.com', color: '#ffffff', size: 5, opacity: 60, bold: true, outline: true, logoSize: 20, pos: 'br', margin: 3, angle: -30 });
@@ -19,40 +21,40 @@ $('#tool-root').innerHTML = `
     <form class="panel" id="wm-form" novalidate>
       <label class="dropzone" id="drop">
         <input type="file" id="files" accept="image/png,image/jpeg,image/webp,image/avif,image/bmp" multiple />
-        <b>Chọn ảnh hoặc kéo thả vào đây</b>
-        <span>Một hoặc nhiều ảnh, mỗi ảnh dưới 40 MB. Watermark được áp cho tất cả.</span>
+        <b>${T('drop.title','Chọn ảnh hoặc kéo thả vào đây')}</b>
+        <span>${T('drop.hint','Một hoặc nhiều ảnh, mỗi ảnh dưới 40 MB. Watermark được áp cho tất cả.')}</span>
       </label>
-      <div class="segmented" role="radiogroup" aria-label="Loại watermark">
-        <label><input type="radio" name="kind" value="text" /><span>Chữ</span></label>
-        <label><input type="radio" name="kind" value="logo" /><span>Logo</span></label>
+      <div class="segmented" role="radiogroup" aria-label="${T('aria.kind','Loại watermark')}">
+        <label><input type="radio" name="kind" value="text" /><span>${T('kind.text','Chữ')}</span></label>
+        <label><input type="radio" name="kind" value="logo" /><span>${T('kind.logo','Logo')}</span></label>
       </div>
       <div id="text-opts" class="form-grid">
-        <label class="field span-all"><span class="field-label">Nội dung</span><input id="text" type="text" maxlength="120" /></label>
-        <label class="field"><span class="field-label">Cỡ chữ: <output id="size-out"></output>% chiều rộng</span><input id="size" type="range" min="1" max="20" step="0.5" /></label>
-        <label class="field"><span class="color"><input type="color" id="color" /><span>Màu chữ</span></span></label>
-        <label class="check"><input type="checkbox" id="bold" /><span>Chữ đậm</span></label>
-        <label class="check"><input type="checkbox" id="outline" /><span>Viền tối quanh chữ (dễ đọc trên nền sáng)</span></label>
+        <label class="field span-all"><span class="field-label">${T('content','Nội dung')}</span><input id="text" type="text" maxlength="120" /></label>
+        <label class="field"><span class="field-label">${T('fontSize','Cỡ chữ')}: <output id="size-out"></output>% ${T('ofWidth','chiều rộng')}</span><input id="size" type="range" min="1" max="20" step="0.5" /></label>
+        <label class="field"><span class="color"><input type="color" id="color" /><span>${T('textColor','Màu chữ')}</span></span></label>
+        <label class="check"><input type="checkbox" id="bold" /><span>${T('bold','Chữ đậm')}</span></label>
+        <label class="check"><input type="checkbox" id="outline" /><span>${T('outline','Viền tối quanh chữ (dễ đọc trên nền sáng)')}</span></label>
       </div>
       <div id="logo-opts" class="form-grid" hidden>
-        <label class="field span-all"><span class="field-label">Ảnh logo (nên dùng PNG nền trong suốt, tối đa 2 MB)</span><input id="logo" type="file" accept="image/png,image/webp,image/jpeg,image/svg+xml" /></label>
-        <label class="field span-all"><span class="field-label">Chiều rộng logo: <output id="logo-out"></output>% chiều rộng ảnh</span><input id="logo-size" type="range" min="5" max="60" /></label>
+        <label class="field span-all"><span class="field-label">${T('logoImg','Ảnh logo (nên dùng PNG nền trong suốt, tối đa 2 MB)')}</span><input id="logo" type="file" accept="image/png,image/webp,image/jpeg,image/svg+xml" /></label>
+        <label class="field span-all"><span class="field-label">${T('logoWidth','Chiều rộng logo')}: <output id="logo-out"></output>% ${T('ofImgWidth','chiều rộng ảnh')}</span><input id="logo-size" type="range" min="5" max="60" /></label>
       </div>
       <div class="form-grid">
-        <label class="field span-all"><span class="field-label">Độ rõ: <output id="op-out"></output>%</span><input id="opacity" type="range" min="10" max="100" step="5" /></label>
+        <label class="field span-all"><span class="field-label">${T('opacity','Độ rõ')}: <output id="op-out"></output>%</span><input id="opacity" type="range" min="10" max="100" step="5" /></label>
       </div>
       <fieldset class="field">
-        <legend>Vị trí</legend>
-        <div class="pos-grid" id="pos">${(Object.keys(POS_LABEL) as Pos[]).map((p) => `<button type="button" data-pos="${p}" class="${p === 'tile' ? 'pos-tile' : ''}" aria-label="${p === 'tile' ? 'Lặp kín ảnh' : 'Vị trí ' + p}">${POS_LABEL[p]}</button>`).join('')}</div>
+        <legend>${T('position','Vị trí')}</legend>
+        <div class="pos-grid" id="pos">${(Object.keys(POS_LABEL) as Pos[]).map((p) => `<button type="button" data-pos="${p}" class="${p === 'tile' ? 'pos-tile' : ''}" aria-label="${p === 'tile' ? T('tileFull','Lặp kín ảnh') : T('posAt','Vị trí') + ' ' + p}">${POS_LABEL[p]}</button>`).join('')}</div>
       </fieldset>
       <div class="form-grid">
-        <label class="field" id="f-margin"><span class="field-label">Cách lề: <output id="margin-out"></output>%</span><input id="margin" type="range" min="0" max="15" step="0.5" /></label>
-        <label class="field" id="f-angle"><span class="field-label">Góc xoay: <output id="angle-out"></output>°</span><input id="angle" type="range" min="-90" max="90" step="5" /></label>
+        <label class="field" id="f-margin"><span class="field-label">${T('margin','Cách lề')}: <output id="margin-out"></output>%</span><input id="margin" type="range" min="0" max="15" step="0.5" /></label>
+        <label class="field" id="f-angle"><span class="field-label">${T('angle','Góc xoay')}: <output id="angle-out"></output>°</span><input id="angle" type="range" min="-90" max="90" step="5" /></label>
       </div>
     </form>
     <section class="preview">
-      <div class="bg-stage" id="stage"><p class="note">Chọn ảnh để xem trước watermark.</p></div>
+      <div class="bg-stage" id="stage"><p class="note">${T('previewHint','Chọn ảnh để xem trước watermark.')}</p></div>
       <div class="actions">
-        <button type="button" class="btn btn-primary" id="run" disabled>Áp watermark và tải về</button>
+        <button type="button" class="btn btn-primary" id="run" disabled>${T('run','Áp watermark và tải về')}</button>
       </div>
       <p class="note" id="info" aria-live="polite"></p>
       <div class="table-wrap"><table class="data-table" id="list"></table></div>
@@ -177,8 +179,8 @@ function renderPreview(): void {
 
 async function setFiles(list: FileList | File[]): Promise<void> {
   const ok = [...list].filter((f) => f.type.startsWith('image/') && f.size <= MAX_IMAGE_BYTES).slice(0, 100);
-  if (!ok.length) return toast('Hãy chọn file ảnh dưới 40 MB');
-  if (ok.length < list.length) toast('Đã bỏ qua file không phải ảnh hoặc lớn hơn 40 MB');
+  if (!ok.length) return toast(T('toast.pick','Hãy chọn file ảnh dưới 40 MB'));
+  if (ok.length < list.length) toast(T('toast.skipped','Đã bỏ qua file không phải ảnh hoặc lớn hơn 40 MB'));
   files = ok;
   previewImg?.close();
   try {
@@ -187,7 +189,7 @@ async function setFiles(list: FileList | File[]): Promise<void> {
     return toast((e as Error).message);
   }
   $<HTMLButtonElement>('#run').disabled = false;
-  $('#info').textContent = files.length > 1 ? `Đang xem trước ảnh đầu tiên trong ${files.length} ảnh.` : '';
+  $('#info').textContent = files.length > 1 ? `${T('previewing1','Đang xem trước ảnh đầu tiên trong')} ${files.length} ${T('previewing2','ảnh.')}` : '';
   $('#list').innerHTML = '';
   renderPreview();
 }
@@ -208,7 +210,7 @@ async function exportAll(): Promise<void> {
   const results: { name: string; blob: Blob }[] = [];
   const rows: string[] = [];
   for (let i = 0; i < files.length; i++) {
-    btn.textContent = `Đang xử lý ${i + 1}/${files.length}…`;
+    btn.textContent = `${T('processing','Đang xử lý')} ${i + 1}/${files.length}…`;
     const f = files[i];
     try {
       const img = await loadImage(f);
@@ -225,7 +227,7 @@ async function exportAll(): Promise<void> {
       rows.push(`<tr><td>${escapeHtml(f.name)}</td><td class="error-text">${escapeHtml((e as Error).message)}</td></tr>`);
     }
   }
-  $('#list').innerHTML = `<thead><tr><th>Ảnh</th><th>Kết quả</th></tr></thead><tbody>${rows.join('')}</tbody>`;
+  $('#list').innerHTML = `<thead><tr><th>${T('th.img','Ảnh')}</th><th>${T('th.result','Kết quả')}</th></tr></thead><tbody>${rows.join('')}</tbody>`;
   if (results.length === 1) downloadBlob(results[0].blob, results[0].name);
   else if (results.length > 1) {
     if (typeof JSZip === 'undefined') results.forEach((r, k) => setTimeout(() => downloadBlob(r.blob, r.name), k * 400));
@@ -235,7 +237,7 @@ async function exportAll(): Promise<void> {
       downloadBlob(await zip.generateAsync({ type: 'blob' }), 'anh-watermark.zip');
     }
   }
-  btn.textContent = 'Áp watermark và tải về';
+  btn.textContent = T('run','Áp watermark và tải về');
   btn.disabled = false;
 }
 
@@ -265,7 +267,7 @@ $('#pos').addEventListener('click', (e) => {
 $<HTMLInputElement>('#logo').addEventListener('change', (e) => {
   const f = (e.target as HTMLInputElement).files?.[0];
   if (!f) return;
-  if (f.size > 2 * 1024 * 1024) return toast('Logo lớn hơn 2 MB, hãy nén trước');
+  if (f.size > 2 * 1024 * 1024) return toast(T('toast.logoBig','Logo lớn hơn 2 MB, hãy nén trước'));
   const reader = new FileReader();
   reader.onload = async () => {
     logoPref.set(String(reader.result));
@@ -275,7 +277,7 @@ $<HTMLInputElement>('#logo').addEventListener('change', (e) => {
   reader.readAsDataURL(f);
 });
 $('#run').addEventListener('click', () => {
-  if (s.kind === 'logo' && !logo) return toast('Hãy chọn ảnh logo trước');
+  if (s.kind === 'logo' && !logo) return toast(T('toast.needLogo','Hãy chọn ảnh logo trước'));
   void exportAll();
 });
 

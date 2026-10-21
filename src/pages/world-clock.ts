@@ -1,8 +1,11 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml, storage } from '../ui';
 import { COUNTRIES, offsetHours, tzOffsetMinutes, type Zone } from '../data/timezones';
+import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'world-clock' });
+const T = pageText();
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const store = storage<string[]>('world-clock', ['Asia/Ho_Chi_Minh', 'Asia/Tokyo', 'Europe/London', 'America/New_York']);
 const cfg = storage<{ h24: boolean }>('world-clock-cfg', { h24: true });
@@ -13,25 +16,25 @@ const zoneOf = (tz: string) => allZones.find((z) => z.tz === tz);
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="panel code-toolbar">
-    <label class="field field--inline" style="flex:1"><span class="field-label">Thêm quốc gia</span>
-      <select id="add"><option value="">— Chọn —</option>${COUNTRIES.map((c) => `<optgroup label="${c.flag} ${escapeHtml(c.country)}">${c.zones.map((z) => `<option value="${z.tz}">${escapeHtml(z.city)}</option>`).join('')}</optgroup>`).join('')}</select>
+    <label class="field field--inline" style="flex:1"><span class="field-label">${T('addCountry','Thêm quốc gia')}</span>
+      <select id="add"><option value="">${T('choose','— Chọn —')}</option>${COUNTRIES.map((c) => `<optgroup label="${c.flag} ${escapeHtml(c.country)}">${c.zones.map((z) => `<option value="${z.tz}">${escapeHtml(z.city)}</option>`).join('')}</optgroup>`).join('')}</select>
     </label>
-    <label class="check"><input type="checkbox" id="h24" /><span>Định dạng 24 giờ</span></label>
+    <label class="check"><input type="checkbox" id="h24" /><span>${T('h24','Định dạng 24 giờ')}</span></label>
   </div>
   <div class="clock-grid" id="clocks"></div>
 
   <section class="panel compare-panel" style="margin-top:24px">
-    <div class="panel-title">So sánh giờ giữa các nước</div>
+    <div class="panel-title">${T('compareTitle','So sánh giờ giữa các nước')}</div>
     <div class="field-row">
-      <label class="field"><span class="field-label">Mốc giờ tại</span><select id="cmp-base"></select></label>
-      <label class="field"><span class="field-label">Lúc</span><input type="time" id="cmp-time" /></label>
+      <label class="field"><span class="field-label">${T('baseAt','Mốc giờ tại')}</span><select id="cmp-base"></select></label>
+      <label class="field"><span class="field-label">${T('at','Lúc')}</span><input type="time" id="cmp-time" /></label>
     </div>
     <div class="table-wrap" style="margin-top:12px"><table class="data-table" id="cmp-table"></table></div>
   </section>
 `;
 
-const fmtTime = (tz: string, d: Date) => d.toLocaleTimeString('vi-VN', { timeZone: tz, hour12: !cfg.get().h24, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-const fmtDate = (tz: string, d: Date) => d.toLocaleDateString('vi-VN', { timeZone: tz, weekday: 'short', day: '2-digit', month: '2-digit' });
+const fmtTime = (tz: string, d: Date) => d.toLocaleTimeString(LOCALE, { timeZone: tz, hour12: !cfg.get().h24, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+const fmtDate = (tz: string, d: Date) => d.toLocaleDateString(LOCALE, { timeZone: tz, weekday: 'short', day: '2-digit', month: '2-digit' });
 
 function renderClocks(): void {
   const list = store.get();
@@ -42,11 +45,11 @@ function renderClocks(): void {
         if (!z) return '';
         const diff = offsetHours(tz, now); // chênh lệch so với giờ VN
         return `<div class="clock-card"><div class="clock-head"><span class="clock-flag">${z.flag}</span><div><b>${escapeHtml(z.country)}</b><span class="clock-city">${escapeHtml(z.city)}</span></div>
-          <button type="button" class="clock-rm" data-rm="${tz}" aria-label="Bỏ">✕</button></div>
+          <button type="button" class="clock-rm" data-rm="${tz}" aria-label="${T('remove','Bỏ')}">✕</button></div>
           <div class="clock-time" data-clock="${tz}">${fmtTime(tz, now)}</div>
-          <div class="clock-date">${fmtDate(tz, now)} · ${diff === 0 ? 'cùng giờ VN' : `${diff > 0 ? '+' : ''}${diff}h so với VN`}</div></div>`;
+          <div class="clock-date">${fmtDate(tz, now)} · ${diff === 0 ? T('sameVN','cùng giờ VN') : `${diff > 0 ? '+' : ''}${diff}h ${T('vsVN','so với VN')}`}</div></div>`;
       }).join('')
-    : '<p class="note">Chưa có đồng hồ nào. Chọn quốc gia ở ô phía trên để thêm.</p>';
+    : `<p class="note">${T('empty','Chưa có đồng hồ nào. Chọn quốc gia ở ô phía trên để thêm.')}</p>`;
   renderCompareBase();
 }
 
@@ -74,7 +77,7 @@ function renderCompare(): void {
   const now = new Date();
   const baseOffMin = tzOffsetMinutes(baseTz, now);
   const at = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), hh, mm) - baseOffMin * 60000);
-  $('#cmp-table').innerHTML = `<thead><tr><th>Quốc gia</th><th>Giờ tương ứng</th><th>Ngày</th></tr></thead><tbody>${list.map((tz) => {
+  $('#cmp-table').innerHTML = `<thead><tr><th>${T('th.country','Quốc gia')}</th><th>${T('th.time','Giờ tương ứng')}</th><th>${T('th.date','Ngày')}</th></tr></thead><tbody>${list.map((tz) => {
     const z = zoneOf(tz);
     if (!z) return '';
     return `<tr${tz === baseTz ? ' class="cmp-base-row"' : ''}><td>${z.flag} ${escapeHtml(z.country)}</td><td><b>${fmtTime(tz, at)}</b></td><td>${fmtDate(tz, at)}</td></tr>`;

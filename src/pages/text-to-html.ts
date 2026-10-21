@@ -1,37 +1,39 @@
 import { mountLayout } from '../layout';
 import { $, copyText, downloadBlob, toast } from '../ui';
+import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'text-to-html' });
+const T = pageText();
 
 interface Btn { cmd?: string; val?: string; act?: string; label: string; title: string }
 const GROUPS: Btn[][] = [
   [
-    { cmd: 'formatBlock', val: 'H1', label: 'H1', title: 'Tiêu đề lớn' },
-    { cmd: 'formatBlock', val: 'H2', label: 'H2', title: 'Tiêu đề vừa' },
-    { cmd: 'formatBlock', val: 'H3', label: 'H3', title: 'Tiêu đề nhỏ' },
-    { cmd: 'formatBlock', val: 'P', label: '¶', title: 'Đoạn văn thường' },
+    { cmd: 'formatBlock', val: 'H1', label: 'H1', title: T('t.h1', 'Tiêu đề lớn') },
+    { cmd: 'formatBlock', val: 'H2', label: 'H2', title: T('t.h2', 'Tiêu đề vừa') },
+    { cmd: 'formatBlock', val: 'H3', label: 'H3', title: T('t.h3', 'Tiêu đề nhỏ') },
+    { cmd: 'formatBlock', val: 'P', label: '¶', title: T('t.p', 'Đoạn văn thường') },
   ],
   [
-    { cmd: 'bold', label: '<b>B</b>', title: 'In đậm' },
-    { cmd: 'italic', label: '<i>I</i>', title: 'In nghiêng' },
-    { cmd: 'underline', label: '<u>U</u>', title: 'Gạch chân' },
-    { cmd: 'strikeThrough', label: '<s>S</s>', title: 'Gạch ngang' },
+    { cmd: 'bold', label: '<b>B</b>', title: T('t.bold', 'In đậm') },
+    { cmd: 'italic', label: '<i>I</i>', title: T('t.italic', 'In nghiêng') },
+    { cmd: 'underline', label: '<u>U</u>', title: T('t.underline', 'Gạch chân') },
+    { cmd: 'strikeThrough', label: '<s>S</s>', title: T('t.strike', 'Gạch ngang') },
   ],
   [
-    { cmd: 'insertUnorderedList', label: '• ≡', title: 'Danh sách dấu chấm' },
-    { cmd: 'insertOrderedList', label: '1. ≡', title: 'Danh sách đánh số' },
-    { cmd: 'formatBlock', val: 'BLOCKQUOTE', label: '❝', title: 'Trích dẫn' },
-    { cmd: 'formatBlock', val: 'PRE', label: '&lt;/&gt;', title: 'Khối mã' },
+    { cmd: 'insertUnorderedList', label: '• ≡', title: T('t.ul', 'Danh sách dấu chấm') },
+    { cmd: 'insertOrderedList', label: '1. ≡', title: T('t.ol', 'Danh sách đánh số') },
+    { cmd: 'formatBlock', val: 'BLOCKQUOTE', label: '❝', title: T('t.quote', 'Trích dẫn') },
+    { cmd: 'formatBlock', val: 'PRE', label: '&lt;/&gt;', title: T('t.code', 'Khối mã') },
   ],
   [
-    { act: 'link', label: '🔗', title: 'Chèn liên kết' },
-    { cmd: 'unlink', label: '⛓', title: 'Bỏ liên kết' },
-    { act: 'table', label: '▦', title: 'Chèn bảng' },
-    { cmd: 'insertHorizontalRule', label: '―', title: 'Đường kẻ ngang' },
+    { act: 'link', label: '🔗', title: T('t.link', 'Chèn liên kết') },
+    { cmd: 'unlink', label: '⛓', title: T('t.unlink', 'Bỏ liên kết') },
+    { act: 'table', label: '▦', title: T('t.table', 'Chèn bảng') },
+    { cmd: 'insertHorizontalRule', label: '―', title: T('t.hr', 'Đường kẻ ngang') },
   ],
   [
-    { cmd: 'removeFormat', label: '⌫', title: 'Xoá định dạng chữ' },
-    { act: 'clear', label: 'Xoá hết', title: 'Xoá toàn bộ nội dung' },
+    { cmd: 'removeFormat', label: '⌫', title: T('t.removeFormat', 'Xoá định dạng chữ') },
+    { act: 'clear', label: T('t.clearLabel', 'Xoá hết'), title: T('t.clear', 'Xoá toàn bộ nội dung') },
   ],
 ];
 
@@ -44,20 +46,20 @@ root.innerHTML = `
   </div>
   <div class="editor-wrap">
     <div class="field">
-      <span class="field-label">Soạn thảo</span>
+      <span class="field-label">${T('editorLabel','Soạn thảo')}</span>
       <div id="editor" class="editor" contenteditable="true" spellcheck="false"></div>
     </div>
     <div class="field">
-      <span class="field-label">Mã HTML</span>
+      <span class="field-label">${T('htmlLabel','Mã HTML')}</span>
       <textarea id="src" class="mono code-area" rows="14" spellcheck="false"></textarea>
       <div class="actions">
-        <button type="button" class="btn btn-primary" id="copy">Sao chép HTML</button>
-        <button type="button" class="btn" id="dl">Tải file .html</button>
-        <button type="button" class="btn" id="apply">Áp dụng mã HTML vào trình soạn thảo</button>
+        <button type="button" class="btn btn-primary" id="copy">${T('copy','Sao chép HTML')}</button>
+        <button type="button" class="btn" id="dl">${T('dl','Tải file .html')}</button>
+        <button type="button" class="btn" id="apply">${T('apply','Áp dụng mã HTML vào trình soạn thảo')}</button>
       </div>
     </div>
   </div>
-  <p class="note">Mã HTML được làm sạch: bỏ thuộc tính <code>style</code> rác, đổi thẻ <code>&lt;b&gt;</code>/<code>&lt;i&gt;</code> sang <code>&lt;strong&gt;</code>/<code>&lt;em&gt;</code>. Dán mã có sẵn vào ô HTML rồi bấm "Áp dụng" để xem và chỉnh tiếp.</p>
+  <p class="note">${T('note','Mã HTML được làm sạch: bỏ thuộc tính <code>style</code> rác, đổi thẻ <code>&lt;b&gt;</code>/<code>&lt;i&gt;</code> sang <code>&lt;strong&gt;</code>/<code>&lt;em&gt;</code>. Dán mã có sẵn vào ô HTML rồi bấm Áp dụng để xem và chỉnh tiếp.')}</p>
 `;
 
 const editor = $('#editor') as HTMLElement;
@@ -134,11 +136,11 @@ function syncSource(): void {
 }
 
 function insertTable(): void {
-  const r = Math.min(20, Math.max(1, Number(prompt('Số hàng?', '2') ?? '0')));
-  const c = Math.min(12, Math.max(1, Number(prompt('Số cột?', '2') ?? '0')));
+  const r = Math.min(20, Math.max(1, Number(prompt(T('rowsPrompt','Số hàng?'), '2') ?? '0')));
+  const c = Math.min(12, Math.max(1, Number(prompt(T('colsPrompt','Số cột?'), '2') ?? '0')));
   if (!r || !c) return;
   let html = '<table><thead><tr>';
-  for (let j = 0; j < c; j++) html += `<th>Cột ${j + 1}</th>`;
+  for (let j = 0; j < c; j++) html += `<th>${T('colWord','Cột')} ${j + 1}</th>`;
   html += '</tr></thead><tbody>';
   for (let i = 0; i < r; i++) { html += '<tr>'; for (let j = 0; j < c; j++) html += '<td> </td>'; html += '</tr>'; }
   html += '</tbody></table><p></p>';
@@ -154,7 +156,7 @@ $('#toolbar').addEventListener('click', (e) => {
   if (b.dataset.cmd) {
     document.execCommand(b.dataset.cmd, false, b.dataset.val);
   } else if (b.dataset.act === 'link') {
-    const url = prompt('Nhập địa chỉ liên kết (URL):', 'https://');
+    const url = prompt(T('linkPrompt','Nhập địa chỉ liên kết (URL):'), 'https://');
     if (url && url !== 'https://') document.execCommand('createLink', false, url);
   } else if (b.dataset.act === 'table') {
     insertTable();
@@ -180,7 +182,7 @@ editor.addEventListener('paste', (e) => {
 $('#apply').addEventListener('click', () => {
   editor.innerHTML = $<HTMLTextAreaElement>('#src').value || '<p></p>';
   syncSource();
-  toast('Đã áp dụng mã HTML');
+  toast(T('toast.applied','Đã áp dụng mã HTML'));
 });
 $('#copy').addEventListener('click', () => {
   const v = $<HTMLTextAreaElement>('#src').value;
@@ -188,9 +190,9 @@ $('#copy').addEventListener('click', () => {
 });
 $('#dl').addEventListener('click', () => {
   const body = $<HTMLTextAreaElement>('#src').value;
-  const doc = `<!doctype html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n<title>Tài liệu</title>\n</head>\n<body>\n${body}\n</body>\n</html>\n`;
+  const doc = `<!doctype html>\n<html lang="${currentLang()}">\n<head>\n<meta charset="utf-8">\n<title>${T('docTitle','Tài liệu')}</title>\n</head>\n<body>\n${body}\n</body>\n</html>\n`;
   downloadBlob(new Blob([doc], { type: 'text/html;charset=utf-8' }), 'tai-lieu.html');
-  toast('Đã tải file HTML');
+  toast(T('toast.dl','Đã tải file HTML'));
 });
 
 editor.innerHTML = SAMPLE;

@@ -3,8 +3,11 @@ import { $, copyText, escapeHtml } from '../ui';
 import { bindDropzone, fmtSize } from '../lib/files';
 import { fileToText } from '../lib/extract';
 import { READ_WPM, SPEAK_WPM, countPhrase, fmtDuration, keywords, textStats } from '../calc/text-stats';
+import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'text-analysis' });
+const T = pageText();
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const MAX_CHARS = 5_000_000;
 const SAMPLE = `Cà phê sữa đá là thức uống quen thuộc của người Việt. Mỗi sáng, hàng triệu người bắt đầu ngày mới bằng một ly cà phê sữa đá đậm đà.
@@ -13,7 +16,7 @@ const SAMPLE = `Cà phê sữa đá là thức uống quen thuộc của ngườ
 
 Ngày nay, cà phê sữa đá còn được bạn bè quốc tế yêu thích và có mặt trong thực đơn của nhiều quán cà phê trên thế giới.`;
 
-const vi = (n: number, d = 0) => n.toLocaleString('vi-VN', { maximumFractionDigits: d, minimumFractionDigits: 0 });
+const vi = (n: number, d = 0) => n.toLocaleString(LOCALE, { maximumFractionDigits: d, minimumFractionDigits: 0 });
 
 const root = $('#tool-root');
 root.innerHTML = `
@@ -21,13 +24,13 @@ root.innerHTML = `
     <div class="panel">
       <label class="dropzone dropzone--sm" id="drop">
         <input type="file" id="file" accept=".txt,.md,.docx,.pdf,.html,.htm,.csv,.rtf,text/*,application/pdf" />
-        <b>Chọn file TXT, Word (.docx), PDF hoặc kéo thả</b>
-        <span>File dưới 30 MB. PDF phải có lớp chữ (không phải bản scan).</span>
+        <b>${T('drop.title','Chọn file TXT, Word (.docx), PDF hoặc kéo thả')}</b>
+        <span>${T('drop.hint','File dưới 30 MB. PDF phải có lớp chữ (không phải bản scan).')}</span>
       </label>
       <p class="note" id="info"></p>
-      <label class="field"><span class="field-label">Hoặc dán, gõ văn bản vào đây</span><textarea id="text" rows="16" spellcheck="false">${escapeHtml(SAMPLE)}</textarea></label>
+      <label class="field"><span class="field-label">${T('orPaste','Hoặc dán, gõ văn bản vào đây')}</span><textarea id="text" rows="16" spellcheck="false">${escapeHtml(SAMPLE)}</textarea></label>
       <div class="actions">
-        <button type="button" class="btn" id="clear">Xoá văn bản</button>
+        <button type="button" class="btn" id="clear">${T('clear','Xoá văn bản')}</button>
       </div>
       <p class="error" id="err" hidden></p>
     </div>
@@ -38,22 +41,22 @@ root.innerHTML = `
   </div>
 
   <section class="panel kw-panel">
-    <div class="panel-title">Mật độ từ khoá</div>
+    <div class="panel-title">${T('kwDensity','Mật độ từ khoá')}</div>
     <div class="row">
-      <div class="tabs" role="tablist" aria-label="Độ dài cụm từ">
-        <button type="button" role="tab" data-n="1" aria-selected="true">1 từ</button>
-        <button type="button" role="tab" data-n="2" aria-selected="false">2 từ</button>
-        <button type="button" role="tab" data-n="3" aria-selected="false">3 từ</button>
-        <button type="button" role="tab" data-n="4" aria-selected="false">4 từ</button>
+      <div class="tabs" role="tablist" aria-label="${T('aria.phraseLen','Độ dài cụm từ')}">
+        <button type="button" role="tab" data-n="1" aria-selected="true">${T('n1','1 từ')}</button>
+        <button type="button" role="tab" data-n="2" aria-selected="false">${T('n2','2 từ')}</button>
+        <button type="button" role="tab" data-n="3" aria-selected="false">${T('n3','3 từ')}</button>
+        <button type="button" role="tab" data-n="4" aria-selected="false">${T('n4','4 từ')}</button>
       </div>
-      <label class="check"><input type="checkbox" id="stop" checked /><span>Bỏ qua từ phổ biến (và, của, là, the, of…)</span></label>
+      <label class="check"><input type="checkbox" id="stop" checked /><span>${T('skipStop','Bỏ qua từ phổ biến (và, của, là, the, of…)')}</span></label>
     </div>
     <div class="field-row">
-      <label class="field"><span class="field-label">Kiểm tra từ khoá của bạn</span><input type="text" id="target" placeholder="Ví dụ: cà phê sữa đá" maxlength="200" /></label>
+      <label class="field"><span class="field-label">${T('checkKw','Kiểm tra từ khoá của bạn')}</span><input type="text" id="target" placeholder="${T('checkKwPh','Ví dụ: cà phê sữa đá')}" maxlength="200" /></label>
     </div>
     <p id="target-out" class="kw-target" hidden></p>
     <div class="table-wrap" id="kw"></div>
-    <p class="note">Mật độ = số lần xuất hiện × số từ trong cụm ÷ tổng số từ. Với bài viết SEO, từ khoá chính thường nằm trong khoảng 1–3%; cao quá dễ bị coi là nhồi nhét từ khoá. Tiếng Việt được đếm theo âm tiết giống Microsoft Word, nên "cà phê" là 2 từ — hãy xem tab 2 từ, 3 từ để thấy cụm từ có nghĩa.</p>
+    <p class="note">${T('note','Mật độ = số lần xuất hiện × số từ trong cụm ÷ tổng số từ. Với bài viết SEO, từ khoá chính thường nằm trong khoảng 1–3%; cao quá dễ bị coi là nhồi nhét từ khoá. Tiếng Việt được đếm theo âm tiết giống Microsoft Word, nên cà phê là 2 từ — hãy xem tab 2 từ, 3 từ để thấy cụm từ có nghĩa.')}</p>
   </section>
 `;
 
@@ -69,34 +72,34 @@ function renderStats(text: string): void {
   const stat = (label: string, value: string, main = false) =>
     `<div class="stat${main ? ' stat--main' : ''}"><span class="stat-label">${label}</span><span class="stat-value">${value}</span></div>`;
   $('#stats').innerHTML = [
-    stat('Số từ', vi(s.words), true),
-    stat('Ký tự (có dấu cách)', vi(s.chars)),
-    stat('Ký tự (không dấu cách)', vi(s.charsNoSpaces)),
-    stat('Số câu', vi(s.sentences)),
-    stat('Số đoạn', vi(s.paragraphs)),
-    stat('Từ không trùng', vi(s.uniqueWords)),
-    stat('Từ trung bình mỗi câu', vi(s.avgWordsPerSentence, 1)),
-    stat('Ký tự trung bình mỗi từ', vi(s.avgCharsPerWord, 1)),
+    stat(T('words','Số từ'), vi(s.words), true),
+    stat(T('chars','Ký tự (có dấu cách)'), vi(s.chars)),
+    stat(T('charsNoSpace','Ký tự (không dấu cách)'), vi(s.charsNoSpaces)),
+    stat(T('sentences','Số câu'), vi(s.sentences)),
+    stat(T('paragraphs','Số đoạn'), vi(s.paragraphs)),
+    stat(T('uniqueWords','Từ không trùng'), vi(s.uniqueWords)),
+    stat(T('avgWordsSent','Từ trung bình mỗi câu'), vi(s.avgWordsPerSentence, 1)),
+    stat(T('avgCharsWord','Ký tự trung bình mỗi từ'), vi(s.avgCharsPerWord, 1)),
   ].join('');
   const hint =
-    s.avgWordsPerSentence > 25 ? 'Câu khá dài, người đọc có thể khó theo dõi. Nên tách bớt câu dài hơn 25 từ.'
-      : s.sentences ? 'Độ dài câu dễ đọc.' : '';
+    s.avgWordsPerSentence > 25 ? T('hint.long','Câu khá dài, người đọc có thể khó theo dõi. Nên tách bớt câu dài hơn 25 từ.')
+      : s.sentences ? T('hint.good','Độ dài câu dễ đọc.') : '';
   $('#time').innerHTML = s.words
-    ? `<div class="time-row"><span>Thời gian đọc</span><b>${fmtDuration(Math.max(1, s.readSeconds))}</b></div>
-       <div class="time-row"><span>Thời gian đọc thành tiếng, thuyết trình</span><b>${fmtDuration(Math.max(1, s.speakSeconds))}</b></div>
-       <p class="note">Ước tính theo tốc độ trung bình ${READ_WPM} từ/phút khi đọc thầm và ${SPEAK_WPM} từ/phút khi nói. ${hint}</p>
-       ${s.longestSentenceWords > 25 ? `<p class="note"><b>Câu dài nhất (${vi(s.longestSentenceWords)} từ):</b> ${escapeHtml(s.longestSentence.length > 300 ? `${s.longestSentence.slice(0, 300)}…` : s.longestSentence)}</p>` : ''}`
-    : '<p class="note">Chưa có văn bản để phân tích.</p>';
+    ? `<div class="time-row"><span>${T('readTime','Thời gian đọc')}</span><b>${fmtDuration(Math.max(1, s.readSeconds))}</b></div>
+       <div class="time-row"><span>${T('speakTime','Thời gian đọc thành tiếng, thuyết trình')}</span><b>${fmtDuration(Math.max(1, s.speakSeconds))}</b></div>
+       <p class="note">${T('timeNote1','Ước tính theo tốc độ trung bình')} ${READ_WPM} ${T('timeNote2','từ/phút khi đọc thầm và')} ${SPEAK_WPM} ${T('timeNote3','từ/phút khi nói.')} ${hint}</p>
+       ${s.longestSentenceWords > 25 ? `<p class="note"><b>${T('longest','Câu dài nhất')} (${vi(s.longestSentenceWords)} ${T('wordsWord','từ')}):</b> ${escapeHtml(s.longestSentence.length > 300 ? `${s.longestSentence.slice(0, 300)}…` : s.longestSentence)}</p>` : ''}`
+    : `<p class="note">${T('noText','Chưa có văn bản để phân tích.')}</p>`;
 }
 
 function renderKeywords(text: string): void {
   const rows = keywords(text, n, { skipStopwords: $<HTMLInputElement>('#stop').checked, limit: 30 });
   const max = rows[0]?.density ?? 1;
   $('#kw').innerHTML = rows.length
-    ? `<table class="data-table data-table--compact kw-table"><thead><tr><th>#</th><th>Cụm từ</th><th>Số lần</th><th>Mật độ</th><th class="kw-bar-col"></th></tr></thead><tbody>
-      ${rows.map((r, i) => `<tr><td>${i + 1}</td><td><button type="button" class="link-btn" data-kw="${escapeHtml(r.phrase)}" title="Kiểm tra cụm này">${escapeHtml(r.phrase)}</button></td><td>${vi(r.count)}</td><td>${vi(r.density, 2)}%</td>
+    ? `<table class="data-table data-table--compact kw-table"><thead><tr><th>#</th><th>${T('th.phrase','Cụm từ')}</th><th>${T('th.count','Số lần')}</th><th>${T('th.density','Mật độ')}</th><th class="kw-bar-col"></th></tr></thead><tbody>
+      ${rows.map((r, i) => `<tr><td>${i + 1}</td><td><button type="button" class="link-btn" data-kw="${escapeHtml(r.phrase)}" title="${T('checkThis','Kiểm tra cụm này')}">${escapeHtml(r.phrase)}</button></td><td>${vi(r.count)}</td><td>${vi(r.density, 2)}%</td>
         <td><span class="kw-bar" style="width:${Math.max(2, (r.density / max) * 100).toFixed(1)}%"></span></td></tr>`).join('')}</tbody></table>`
-    : `<p class="note kw-empty">${n > 1 ? `Không có cụm ${n} từ nào lặp lại từ 2 lần trở lên.` : 'Chưa có từ nào.'}</p>`;
+    : `<p class="note kw-empty">${n > 1 ? `${T('noNgram1','Không có cụm')} ${n} ${T('noNgram2','từ nào lặp lại từ 2 lần trở lên.')}` : T('noWords','Chưa có từ nào.')}</p>`;
   renderTarget(text);
 }
 
@@ -107,17 +110,17 @@ function renderTarget(text: string): void {
   if (!q) return;
   const r = countPhrase(text, q);
   if (!r.phrase) {
-    out.textContent = 'Từ khoá phải có chữ hoặc số.';
+    out.textContent = T('kwInvalid','Từ khoá phải có chữ hoặc số.');
     return;
   }
-  const level = r.density === 0 ? 'Chưa xuất hiện trong bài.' : r.density < 0.5 ? 'Hơi ít, có thể nhắc thêm.' : r.density <= 3 ? 'Mức hợp lý.' : 'Khá dày, cân nhắc giảm bớt.';
-  out.innerHTML = `"<b>${escapeHtml(r.phrase)}</b>" xuất hiện <b>${vi(r.count)}</b> lần, mật độ <b>${vi(r.density, 2)}%</b>. ${level}`;
+  const level = r.density === 0 ? T('lv.none','Chưa xuất hiện trong bài.') : r.density < 0.5 ? T('lv.low','Hơi ít, có thể nhắc thêm.') : r.density <= 3 ? T('lv.ok','Mức hợp lý.') : T('lv.high','Khá dày, cân nhắc giảm bớt.');
+  out.innerHTML = `"<b>${escapeHtml(r.phrase)}</b>" ${T('appears','xuất hiện')} <b>${vi(r.count)}</b> ${T('times','lần, mật độ')} <b>${vi(r.density, 2)}%</b>. ${level}`;
 }
 
 let timer = 0;
 function analyze(): void {
   const text = $<HTMLTextAreaElement>('#text').value;
-  if (text.length > MAX_CHARS) return showErr('Văn bản quá dài (trên 5 triệu ký tự).');
+  if (text.length > MAX_CHARS) return showErr(T('err.tooLong','Văn bản quá dài (trên 5 triệu ký tự).'));
   showErr('');
   renderStats(text);
   renderKeywords(text);
@@ -131,10 +134,10 @@ async function loadFile(files: File[]): Promise<void> {
   const f = files[0];
   if (!f) return;
   showErr('');
-  $('#info').textContent = `Đang đọc ${f.name}…`;
+  $('#info').textContent = `${T('reading','Đang đọc')} ${f.name}…`;
   try {
     const { text, kind } = await fileToText(f, 'text');
-    if (text.length > MAX_CHARS) throw new Error('Văn bản quá dài (trên 5 triệu ký tự).');
+    if (text.length > MAX_CHARS) throw new Error(T('err.tooLong','Văn bản quá dài (trên 5 triệu ký tự).'));
     $<HTMLTextAreaElement>('#text').value = text;
     $('#info').textContent = `${f.name} · ${kind} · ${fmtSize(f.size)}`;
     analyze();
@@ -165,7 +168,7 @@ $('#kw').addEventListener('click', (e) => {
   if (!b) return;
   $<HTMLInputElement>('#target').value = b.dataset.kw ?? '';
   renderTarget($<HTMLTextAreaElement>('#text').value);
-  void copyText(b.dataset.kw ?? '', 'Đã chọn và sao chép cụm từ');
+  void copyText(b.dataset.kw ?? '', T('toast.picked','Đã chọn và sao chép cụm từ'));
 });
 bindDropzone($('#drop'), $<HTMLInputElement>('#file'), (f) => void loadFile(f));
 analyze();
