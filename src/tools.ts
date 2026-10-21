@@ -28,6 +28,9 @@ export const GROUPS: ToolGroup[] = [
   { id: 'finance', name: 'Tài chính & tính toán', description: 'Tính toán chính xác theo công thức và quy định hiện hành.' },
   { id: 'marketing', name: 'Tiếp thị', description: 'Mã QR, liên kết chiến dịch, màu sắc thương hiệu.' },
   { id: 'life', name: 'Năng suất & đời sống', description: 'Tiện ích dùng hằng ngày.' },
+  { id: 'health', name: 'Tiện ích sức khoẻ', description: 'Theo dõi cân nặng, dinh dưỡng, nước uống, vận động, chu kỳ.' },
+  { id: 'edu', name: 'Giáo dục & giảng dạy', description: 'Thời khoá biểu, đề thi, điểm danh, sơ đồ tư duy, thù lao.' },
+  { id: 'time', name: 'Công cụ thời gian', description: 'Đồng hồ, đếm ngược, múi giờ, ngày làm việc, nhật ký.' },
   { id: 'dev', name: 'Công cụ tin học', description: 'Định dạng, kiểm lỗi, mã hoá và chuyển đổi mã nguồn.' },
 ];
 
@@ -49,6 +52,27 @@ export const TOOLS: ToolInfo[] = [
   tool('file-diff', 'file', 'So sánh hai file', 'Tìm chỗ khác nhau giữa hai văn bản: TXT, Word, HTML, PDF có chữ. Tô màu phần thêm, xoá, sửa.'),
   tool('text-analysis', 'file', 'Phân tích văn bản', 'Đếm số từ, ký tự, câu, đoạn, ước tính thời gian đọc và mật độ từ khoá của văn bản, file TXT, Word, PDF.'),
   tool('data-convert', 'file', 'Chuyển đổi JSON, XML, CSV, Excel', 'Đổi dữ liệu qua lại giữa JSON, XML, CSV và Excel (.xlsx), xem trước dạng bảng.'),
+
+  // Tiện ích sức khoẻ
+  tool('bmi-bmr', 'health', 'Chỉ số BMI & BMR', 'Tính chỉ số khối cơ thể BMI, tỷ lệ eo/hông và nhu cầu calo cơ bản BMR, TDEE theo độ tuổi, giới tính, vận động.'),
+  tool('meal-calo', 'health', 'Thực đơn & calo hàng ngày', 'Lập thực đơn theo mục tiêu calo, tra lượng calo món ăn Việt, cân đối đạm, tinh bột, chất béo.'),
+  tool('water-tracker', 'health', 'Theo dõi nước uống', 'Đặt mục tiêu và ghi lượng nước uống mỗi ngày, xem tiến độ và lịch sử nhiều ngày.'),
+  tool('calo-burn', 'health', 'Calo tiêu hao vận động', 'Ước tính lượng calo tiêu hao theo môn thể thao, hoạt động, thời gian và cân nặng (chỉ số MET).'),
+  tool('cycle-track', 'health', 'Theo dõi chu kỳ', 'Ghi và dự đoán chu kỳ kinh nguyệt, ngày rụng trứng và khoảng dễ thụ thai. Dữ liệu chỉ lưu trên máy bạn.'),
+
+  // Giáo dục & giảng dạy
+  tool('study-timetable', 'edu', 'Thời khoá biểu học tập', 'Lập thời khoá biểu theo tiết, theo buổi cho cả tuần; in hoặc lưu lại để dùng mỗi ngày.'),
+  tool('quiz-bank', 'edu', 'Đề thi & câu hỏi trắc nghiệm', 'Soạn ngân hàng câu hỏi trắc nghiệm, trộn đề, làm thử chấm điểm ngay, in đề và đáp án.'),
+  tool('attendance', 'edu', 'Điểm danh', 'Lập danh sách lớp, điểm danh theo buổi, thống kê số buổi vắng, đi muộn. Lưu được vào Google Sheet.'),
+  tool('mindmap', 'edu', 'Sơ đồ tư duy & tóm tắt', 'Vẽ sơ đồ tư duy cho bài học và tự tóm tắt văn bản dài thành các ý chính.'),
+  tool('teaching-pay', 'edu', 'Giờ giảng & thù lao', 'Ghi các buổi dạy, tính tổng số giờ và thù lao theo đơn giá, xuất bảng kê.'),
+
+  // Công cụ thời gian
+  tool('fullscreen-clock', 'time', 'Đồng hồ toàn màn hình', 'Đồng hồ số lớn toàn màn hình kèm bấm giờ (stopwatch) và đếm ngược, tuỳ chỉnh màu, phông, 12/24 giờ.'),
+  tool('countdown-video', 'time', 'Đếm ngược tạo video', 'Tạo đồng hồ đếm ngược tuỳ chỉnh màu nền, màu số, phông và tải về video để chèn vào clip.'),
+  tool('world-clock', 'time', 'Đồng hồ thế giới', 'Xem giờ hiện tại ở nhiều quốc gia cùng lúc và so sánh chênh lệch múi giờ giữa các nước.'),
+  tool('workdays', 'time', 'Tính ngày làm việc', 'Đếm số ngày làm việc giữa hai mốc thời gian, trừ thứ Bảy, Chủ nhật và ngày lễ.'),
+  tool('journal', 'time', 'Nhật ký online', 'Viết nhật ký mỗi ngày, lưu riêng vào Google Sheet của bạn, chỉ mình bạn đọc được.'),
 
   // Công cụ tin học
   tool('code-format', 'dev', 'Định dạng JS, HTML, CSS, JSON', 'Căn chỉnh, thụt lề gọn gàng cho mã JavaScript, HTML, CSS và JSON.'),

@@ -22,6 +22,21 @@ const PATHS: Record<string, string> = {
   'text-analysis': '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h5"/><path d="M8 8h6M8 12h4"/><circle cx="16.5" cy="15.5" r="3.5"/><path d="M19 18l2.5 2.5"/>',
   // bảng dữ liệu có mũi tên
   'data-convert': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/><path d="M12.5 14.5h5M15.5 12.5l2 2-2 2"/>',
+  'bmi-bmr': '<path d="M12 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/><path d="M6 21v-5a6 6 0 0 1 12 0v5"/><path d="M9 14l1.5 1.5M15 14l-1.5 1.5"/>',
+  'meal-calo': '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v8.5l5.5 3"/><path d="M8.5 8.5h3"/>',
+  'water-tracker': '<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M8.5 14a3.5 3.5 0 0 0 3.5 3.5"/>',
+  'calo-burn': '<path d="M12 3c2 3 4 4.5 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3 .5 2 1.5 2.5 1.5 2.5S10 9 12 3z"/><path d="M7 19h10"/>',
+  'cycle-track': '<path d="M20 12a8 8 0 1 1-3-6.2"/><path d="M20 4v4h-4"/><circle cx="12" cy="12" r="1.6"/>',
+  'study-timetable': '<rect x="3.5" y="4.5" width="17" height="16" rx="2"/><path d="M3.5 9h17M9 4.5v16M3.5 14.5h17"/>',
+  'quiz-bank': '<path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9.5 9a2.5 2.5 0 1 1 3 2.5V13"/><path d="M12 16v.01"/>',
+  'attendance': '<path d="M4 6h10M4 12h10M4 18h7"/><path d="M17 7.5l1.6 1.6L22 5.5M17 16.5l1.6 1.6L22 14.5"/>',
+  'mindmap': '<circle cx="5" cy="12" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="18" cy="18" r="2.2"/><circle cx="18" cy="12" r="2.2"/><path d="M7.2 12H16M7 11l9-4M7 13l9 4"/>',
+  'teaching-pay': '<rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6.5 9v.01M17.5 15v.01"/>',
+  'fullscreen-clock': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16" opacity=".5"/><path d="M11 9v3.5l2.5 1.5"/><circle cx="13" cy="12" r="4.5"/>',
+  'countdown-video': '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 8.5V12l2.2 1.3"/><circle cx="12" cy="12" r="3.6"/><path d="M3 9l-1 2 1 2" opacity=".5"/>',
+  'world-clock': '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/>',
+  'workdays': '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M8 14l2.5 2.5L16 12"/>',
+  'journal': '<path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4z"/><path d="M5 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2" opacity=".5"/><path d="M9 8h6M9 12h6M9 16h3"/>',
   // dấu ngoặc nhọn với gạch căn
   'code-format': '<path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/><path d="M4 4h16" opacity=".55"/>',
   // dấu ngoặc nhọn với dấu tích

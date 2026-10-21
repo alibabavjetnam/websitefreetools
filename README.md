@@ -21,6 +21,21 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Kinh doanh online | Tạo mã vạch | `tools/barcode.html` |
 | Tài chính & tính toán | Tính khoản vay | `tools/loan.html` |
 | Tài chính & tính toán | Lãi kép & tích luỹ | `tools/compound.html` |
+| Tiện ích sức khoẻ | Chỉ số BMI & BMR, TDEE | `tools/bmi-bmr.html` |
+| Tiện ích sức khoẻ | Thực đơn & calo hàng ngày | `tools/meal-calo.html` |
+| Tiện ích sức khoẻ | Theo dõi nước uống | `tools/water-tracker.html` |
+| Tiện ích sức khoẻ | Calo tiêu hao theo vận động (MET) | `tools/calo-burn.html` |
+| Tiện ích sức khoẻ | Theo dõi & dự đoán chu kỳ (chỉ lưu máy) | `tools/cycle-track.html` |
+| Giáo dục & giảng dạy | Thời khoá biểu học tập | `tools/study-timetable.html` |
+| Giáo dục & giảng dạy | Đề thi & câu hỏi trắc nghiệm | `tools/quiz-bank.html` |
+| Giáo dục & giảng dạy | Điểm danh (Google Sheet) | `tools/attendance.html` |
+| Giáo dục & giảng dạy | Sơ đồ tư duy & tóm tắt tự động | `tools/mindmap.html` |
+| Giáo dục & giảng dạy | Giờ giảng & thù lao | `tools/teaching-pay.html` |
+| Công cụ thời gian | Đồng hồ toàn màn hình (+ bấm giờ, đếm ngược) | `tools/fullscreen-clock.html` |
+| Công cụ thời gian | Đếm ngược tạo video (MP4/WebM) | `tools/countdown-video.html` |
+| Công cụ thời gian | Đồng hồ thế giới & so sánh múi giờ | `tools/world-clock.html` |
+| Công cụ thời gian | Tính ngày làm việc (trừ lễ VN) | `tools/workdays.html` |
+| Công cụ thời gian | Nhật ký online (Google Sheet riêng tư) | `tools/journal.html` |
 | Công cụ tin học | Định dạng JS, HTML, CSS, JSON | `tools/code-format.html` |
 | Công cụ tin học | Kiểm tra lỗi cú pháp JS, HTML, CSS, JSON | `tools/code-check.html` |
 | Công cụ tin học | Làm rối mã JavaScript (obfuscator) | `tools/js-obfuscate.html` |
@@ -34,7 +49,7 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
 
-Nhóm Xử lý file nạp thư viện từ CDN chỉ khi người dùng bấm xử lý (`src/lib/cdn.ts`): pdf-lib (gộp, tách, tạo PDF), pdf.js (đọc và vẽ trang PDF), PptxGenJS (tạo .pptx), JSZip (đọc .docx, .pptx), SheetJS (đọc, ghi Excel). Nhóm Công cụ tin học nạp js-beautify (định dạng JS/HTML/CSS) và acorn (kiểm lỗi, làm rối JS) từ CDN; tạo khoá RSA bằng Web Crypto sẵn có của trình duyệt. Bộ làm rối mã (`src/lib/obfuscate.ts`) tự viết trên AST acorn. Bộ đọc PowerPoint (`src/lib/pptx.ts`) và vẽ trang chiếu (`src/lib/pptx-render.ts`), so sánh văn bản (`src/calc/diff.ts`, thuật toán Myers), đọc XML, CSV được viết riêng.
+Nhóm Xử lý file nạp thư viện từ CDN chỉ khi người dùng bấm xử lý (`src/lib/cdn.ts`): pdf-lib (gộp, tách, tạo PDF), pdf.js (đọc và vẽ trang PDF), PptxGenJS (tạo .pptx), JSZip (đọc .docx, .pptx), SheetJS (đọc, ghi Excel). Nhóm Công cụ tin học nạp js-beautify (định dạng JS/HTML/CSS) và acorn (kiểm lỗi, làm rối JS) từ CDN; tạo khoá RSA bằng Web Crypto sẵn có của trình duyệt. Bộ làm rối mã (`src/lib/obfuscate.ts`) tự viết trên AST acorn. Nhóm sức khoẻ và thời gian dùng công thức tự viết (BMI/BMR Mifflin–St Jeor, MET, dự đoán chu kỳ, ngày làm việc trừ lễ VN 2024–2027) và Intl API cho múi giờ. Công cụ Đếm ngược tạo video dùng WebCodecs + mp4-muxer để xuất MP4 (H.264), tự chuyển sang WebM nếu trình duyệt chưa hỗ trợ. Điểm danh và Nhật ký lưu vào Google Sheet qua bộ đồng bộ sẵn có. Bộ đọc PowerPoint (`src/lib/pptx.ts`) và vẽ trang chiếu (`src/lib/pptx-render.ts`), so sánh văn bản (`src/calc/diff.ts`, thuật toán Myers), đọc XML, CSV được viết riêng.
 
 ## Trang ẩn
 
