@@ -22,7 +22,8 @@ export interface ToolInfo {
 }
 
 export const GROUPS: ToolGroup[] = [
-  { id: 'file', name: 'File & hình ảnh', description: 'Nén, đổi định dạng và xử lý file ngay trên máy.' },
+  { id: 'image', name: 'Xử lý hình ảnh', description: 'Nén, đổi định dạng, xoá nền, đóng dấu ảnh ngay trên máy.' },
+  { id: 'file', name: 'Xử lý file', description: 'Gộp tách PDF, đổi PowerPoint, so sánh văn bản, chuyển đổi dữ liệu.' },
   { id: 'business', name: 'Kinh doanh online', description: 'Công cụ cho shop online, hộ kinh doanh, freelancer.' },
   { id: 'finance', name: 'Tài chính & tính toán', description: 'Tính toán chính xác theo công thức và quy định hiện hành.' },
   { id: 'marketing', name: 'Tiếp thị', description: 'Mã QR, liên kết chiến dịch, màu sắc thương hiệu.' },
@@ -35,12 +36,18 @@ const tool = (id: string, group: string, name: string, description: string, icon
 });
 
 export const TOOLS: ToolInfo[] = [
-  // File & hình ảnh
-  tool('image-convert', 'file', 'Nén ảnh', 'Giảm dung lượng ảnh, thu nhỏ kích thước nhiều ảnh cùng lúc để đăng web, gửi email nhanh hơn.'),
-  tool('image-format', 'file', 'Chuyển đổi định dạng ảnh', 'Đổi ảnh qua lại giữa JPG, PNG, WebP, AVIF, BMP, ICO (favicon) cho website, ứng dụng hoặc lưu trữ.'),
-  tool('image-base64', 'file', 'Ảnh sang Base64', 'Chuyển ảnh thành chuỗi Base64 để nhúng vào HTML, CSS, mã nguồn, và đổi Base64 ngược lại thành ảnh.'),
-  tool('bg-remove', 'file', 'Xoá nền ảnh', 'Xoá nền trắng hoặc nền một màu khỏi ảnh sản phẩm, logo, ảnh đại diện. Xử lý tức thì ngay trên máy.'),
-  tool('watermark', 'file', 'Thêm watermark vào ảnh', 'Chèn chữ, logo hoặc dấu bản quyền lên một hoặc nhiều ảnh cùng lúc.'),
+  // Xử lý hình ảnh
+  tool('image-convert', 'image', 'Nén ảnh', 'Giảm dung lượng ảnh, thu nhỏ kích thước nhiều ảnh cùng lúc để đăng web, gửi email nhanh hơn.'),
+  tool('image-format', 'image', 'Chuyển đổi định dạng ảnh', 'Đổi ảnh qua lại giữa JPG, PNG, WebP, AVIF, BMP, ICO (favicon) cho website, ứng dụng hoặc lưu trữ.'),
+  tool('image-base64', 'image', 'Ảnh sang Base64', 'Chuyển ảnh thành chuỗi Base64 để nhúng vào HTML, CSS, mã nguồn, và đổi Base64 ngược lại thành ảnh.'),
+  tool('bg-remove', 'image', 'Xoá nền ảnh', 'Xoá nền trắng hoặc nền một màu khỏi ảnh sản phẩm, logo, ảnh đại diện. Xử lý tức thì ngay trên máy.'),
+  tool('watermark', 'image', 'Thêm watermark vào ảnh', 'Chèn chữ, logo hoặc dấu bản quyền lên một hoặc nhiều ảnh cùng lúc.'),
+
+  // Xử lý file
+  tool('pdf-merge', 'file', 'Nối và tách PDF', 'Gộp nhiều file PDF thành một, tách lấy trang cần dùng, chia nhỏ file PDF theo từng trang.'),
+  tool('pptx-pdf', 'file', 'PowerPoint ↔ PDF', 'Chuyển bài trình chiếu PowerPoint (.pptx) sang PDF và chuyển PDF thành file PowerPoint.'),
+  tool('file-diff', 'file', 'So sánh hai file', 'Tìm chỗ khác nhau giữa hai văn bản: TXT, Word, HTML, PDF có chữ. Tô màu phần thêm, xoá, sửa.'),
+  tool('data-convert', 'file', 'Chuyển đổi JSON, XML, CSV, Excel', 'Đổi dữ liệu qua lại giữa JSON, XML, CSV và Excel (.xlsx), xem trước dạng bảng.'),
 
   // Công cụ kỹ thuật tin học
   tool('dev-tools', 'dev', 'JSON, Base64, Regex', 'Định dạng và kiểm tra JSON, mã hoá Base64, thử biểu thức chính quy.'),

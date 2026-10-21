@@ -12,6 +12,14 @@ const PATHS: Record<string, string> = {
   'bg-remove': '<rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="3 2.5"/><circle cx="12" cy="10" r="3"/><path d="M6.5 18c1-2.8 3.1-4.2 5.5-4.2s4.5 1.4 5.5 4.2"/>',
   // con dấu bản quyền
   watermark: '<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M13.6 10.6a2 2 0 1 0 0 2.8"/>',
+  // hai trang giấy ghép
+  'pdf-merge': '<path d="M5 3h8l4 4v6"/><path d="M13 3v4h4"/><rect x="9" y="13" width="11" height="8" rx="1"/><path d="M5 3v14h4"/>',
+  // màn chiếu sang trang giấy
+  'pptx-pdf': '<rect x="2.5" y="4" width="10" height="7.5" rx="1"/><path d="M7.5 11.5V14"/><path d="M14 13h7.5v8H14z"/><path d="M14.5 6h4a2 2 0 0 1 2 2v2M18.5 8l2 2 2-2"/>',
+  // hai cột văn bản đối chiếu
+  'file-diff': '<rect x="3" y="3" width="8" height="18" rx="1.5"/><rect x="13" y="3" width="8" height="18" rx="1.5"/><path d="M5.5 8h3M5.5 12h3M15.5 8h3M15.5 12h3M15.5 16h3"/>',
+  // bảng dữ liệu có mũi tên
+  'data-convert': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/><path d="M12.5 14.5h5M15.5 12.5l2 2-2 2"/>',
   // dấu ngoặc nhọn
   'dev-tools': '<path d="M8 4c-2 0-2.5 1-2.5 3v2c0 1.5-.8 2.5-2.5 3 1.7.5 2.5 1.5 2.5 3v2c0 2 .5 3 2.5 3"/><path d="M16 4c2 0 2.5 1 2.5 3v2c0 1.5.8 2.5 2.5 3-1.7.5-2.5 1.5-2.5 3v2c0 2-.5 3-2.5 3"/>',
   // đồng hồ

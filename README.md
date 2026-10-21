@@ -8,11 +8,15 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 
 | Nhóm | Công cụ | Trang |
 | --- | --- | --- |
-| File & hình ảnh | Nén ảnh | `tools/image-convert.html` |
-| File & hình ảnh | Chuyển đổi định dạng ảnh (JPG, PNG, WebP, AVIF, BMP, ICO) | `tools/image-format.html` |
-| File & hình ảnh | Ảnh sang Base64 và ngược lại | `tools/image-base64.html` |
-| File & hình ảnh | Xoá nền ảnh (nền trắng, nền một màu) | `tools/bg-remove.html` |
-| File & hình ảnh | Thêm watermark vào ảnh | `tools/watermark.html` |
+| Xử lý hình ảnh | Nén ảnh | `tools/image-convert.html` |
+| Xử lý hình ảnh | Chuyển đổi định dạng ảnh (JPG, PNG, WebP, AVIF, BMP, ICO) | `tools/image-format.html` |
+| Xử lý hình ảnh | Ảnh sang Base64 và ngược lại | `tools/image-base64.html` |
+| Xử lý hình ảnh | Xoá nền ảnh (nền trắng, nền một màu) | `tools/bg-remove.html` |
+| Xử lý hình ảnh | Thêm watermark vào ảnh | `tools/watermark.html` |
+| Xử lý file | Nối và tách PDF | `tools/pdf-merge.html` |
+| Xử lý file | PowerPoint ↔ PDF | `tools/pptx-pdf.html` |
+| Xử lý file | So sánh hai file (TXT, Word, HTML, PDF) | `tools/file-diff.html` |
+| Xử lý file | Chuyển đổi JSON, XML, CSV, Excel | `tools/data-convert.html` |
 | Công cụ kỹ thuật tin học | JSON, Base64, Regex | `tools/dev-tools.html` |
 | Công cụ kỹ thuật tin học | Cron & Unix timestamp | `tools/cron-time.html` |
 | Kinh doanh online | Tạo mã vạch | `tools/barcode.html` |
@@ -25,6 +29,8 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Năng suất & đời sống | Tiền tệ & múi giờ (tỷ giá từ open.er-api.com) | `tools/currency-time.html` |
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
+
+Nhóm Xử lý file nạp thư viện từ CDN chỉ khi người dùng bấm xử lý (`src/lib/cdn.ts`): pdf-lib (gộp, tách, tạo PDF), pdf.js (đọc và vẽ trang PDF), PptxGenJS (tạo .pptx), JSZip (đọc .docx, .pptx), SheetJS (đọc, ghi Excel). Bộ đọc PowerPoint (`src/lib/pptx.ts`) và vẽ trang chiếu (`src/lib/pptx-render.ts`), so sánh văn bản (`src/calc/diff.ts`, thuật toán Myers), đọc XML, CSV được viết riêng.
 
 ## Trang ẩn
 

@@ -1969,6 +1969,248 @@ fieldset.field {
   font-size: 0.875rem;
 }
 
+/* ---------- Xử lý file ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.dropzone--sm {
+  padding: 18px 12px;
+}
+.split-body:not([hidden]) {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.split-info {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: file;
+}
+.file-list:empty {
+  display: none;
+}
+.file-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) minmax(120px, 180px) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  counter-increment: file;
+}
+.file-item::before {
+  content: counter(file);
+  min-width: 1.6em;
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+}
+.file-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.file-main b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.file-actions {
+  display: flex;
+  gap: 4px;
+}
+.page-grid,
+.slide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+.slide-grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  margin: 4px 0 0;
+}
+.page-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.page-thumb:hover {
+  border-color: var(--line-strong);
+}
+.page-thumb.is-selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.page-canvas {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--paper);
+}
+.page-canvas canvas,
+.slide-grid img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 1px 3px rgba(22, 35, 58, 0.25);
+}
+.page-no {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.slide-grid figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.slide-grid img {
+  width: 100%;
+  height: auto;
+}
+.slide-grid figcaption {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.diff-options {
+  margin-top: 24px;
+  gap: 14px;
+}
+.field--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.field--inline .field-label {
+  margin: 0;
+  white-space: nowrap;
+}
+#summary:not(:empty),
+.diff-out:not(:empty) {
+  margin-top: 24px;
+}
+.diff-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+}
+.diff-table td {
+  padding: 1px 8px;
+  vertical-align: top;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.diff-table .ln-col {
+  width: 52px;
+}
+.diff-table .sign-col {
+  width: 22px;
+}
+.diff-table .ln {
+  color: var(--muted);
+  text-align: right;
+  user-select: none;
+  background: var(--paper);
+}
+.diff-table .sign {
+  user-select: none;
+  font-weight: 700;
+}
+.diff-split .code + .ln {
+  border-left: 1px solid var(--line);
+}
+.diff-change .code {
+  background: #fff8e1;
+}
+.diff-insert .code,
+.diff-insert .sign {
+  background: #e6f7ee;
+}
+.diff-delete .code,
+.diff-delete .sign {
+  background: #fdecec;
+}
+.diff-table .code.empty {
+  background: repeating-linear-gradient(-45deg, #f3f4f6 0 6px, #eceef2 6px 12px);
+}
+.diff-table ins {
+  background: #a8e6c1;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.diff-table del {
+  background: #f5b5b5;
+  border-radius: 2px;
+}
+.diff-gap td {
+  padding: 4px 8px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--paper);
+  font-family: inherit;
+}
+.diff-c-change {
+  color: #9a6700 !important;
+}
+.diff-c-insert {
+  color: #0e7a55 !important;
+}
+.diff-c-delete {
+  color: var(--danger) !important;
+}
+.data-table--compact th,
+.data-table--compact td {
+  text-align: left;
+  padding: 6px 10px;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#preview-title {
+  margin-bottom: 10px;
+}
+@media (max-width: 640px) {
+  .file-item {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+  .file-range {
+    grid-column: 2 / -1;
+    grid-row: 2;
+  }
+  .diff-table .ln-col {
+    width: 36px;
+  }
+}
+
 /* Menu chính lặp lại trong menu trái, chỉ hiện trên màn hình nhỏ */
 .side-mainnav {
   display: none;
