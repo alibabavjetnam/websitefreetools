@@ -2572,6 +2572,7 @@ fieldset.field {
 .timetable th, .timetable td { border: 1px solid var(--line); padding: 0; text-align: center; }
 .timetable thead th { background: var(--paper); padding: 8px; font-size: .9rem; }
 .tt-corner { width: 70px; }
+.tt-setup { margin-top: 16px; }
 .tt-period { background: var(--paper); font-size: .8rem; padding: 6px !important; white-space: nowrap; color: var(--ink-soft); }
 .tt-cell { height: 56px; cursor: pointer; padding: 4px 6px !important; vertical-align: middle; font-size: .85rem; }
 .tt-cell:hover { background: var(--accent-soft); }
