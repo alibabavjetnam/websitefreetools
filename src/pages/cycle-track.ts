@@ -1,28 +1,32 @@
 import { mountLayout } from '../layout';
 import { $, storage } from '../ui';
 import { predictCycle } from '../calc/cycle';
+import { pageText, currentLang } from '../i18n';
 
 type Pred = NonNullable<ReturnType<typeof predictCycle>>['predictions'];
 
 mountLayout({ activeTool: 'cycle-track' });
+const T = pageText();
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
+const phaseKey = (x: string): string => (({ 'Ngoài kỳ dự đoán': 'out', 'Đang hành kinh': 'menstrual', 'Ngày rụng trứng': 'ovulation', 'Khoảng dễ thụ thai': 'fertile', 'Giai đoạn nang trứng': 'follicular', 'Giai đoạn hoàng thể': 'luteal' } as Record<string, string>)[x] || 'out');
 
 interface Cfg { starts: string[]; periodLen: number }
 const store = storage<Cfg>('cycle', { starts: [], periodLen: 5 });
 
 const todayKey = () => new Date().toLocaleDateString('en-CA');
 const fmt = (k: string) => k.split('-').reverse().join('/');
-const MONTHS = ['Th1', 'Th2', 'Th3', 'Th4', 'Th5', 'Th6', 'Th7', 'Th8', 'Th9', 'Th10', 'Th11', 'Th12'];
-const DOW = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
+const MONTHS = Array.from({ length: 12 }, (_, i) => new Intl.DateTimeFormat(LOCALE, { month: 'short' }).format(new Date(2021, i, 1)));
+const DOW = Array.from({ length: 7 }, (_, i) => new Intl.DateTimeFormat(LOCALE, { weekday: 'short' }).format(new Date(2023, 0, 1 + i)));
 
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="workspace">
     <div class="panel">
-      <div class="panel-title">Ghi ngày bắt đầu kỳ kinh</div>
+      <div class="panel-title">${T('logTitle','Ghi ngày bắt đầu kỳ kinh')}</div>
       <div class="field-row">
-        <label class="field"><span class="field-label">Ngày bắt đầu</span><input type="date" id="start" max="${todayKey()}" value="${todayKey()}" /></label>
-        <label class="field"><span class="field-label">Số ngày hành kinh</span><input type="number" id="plen" min="2" max="10" /></label>
-        <div class="actions" style="align-self:flex-end"><button type="button" class="btn btn-primary" id="add">Ghi lại</button></div>
+        <label class="field"><span class="field-label">${T('startDate','Ngày bắt đầu')}</span><input type="date" id="start" max="${todayKey()}" value="${todayKey()}" /></label>
+        <label class="field"><span class="field-label">${T('periodLen','Số ngày hành kinh')}</span><input type="number" id="plen" min="2" max="10" /></label>
+        <div class="actions" style="align-self:flex-end"><button type="button" class="btn btn-primary" id="add">${T('log','Ghi lại')}</button></div>
       </div>
       <div id="history" style="margin-top:12px"></div>
     </div>
@@ -31,32 +35,32 @@ root.innerHTML = `
     </section>
   </div>
   <div class="panel" id="calendar" style="margin-top:20px"></div>
-  <p class="note"><b>Lưu ý:</b> dự đoán chỉ mang tính tham khảo dựa trên chu kỳ trung bình, không dùng để tránh thai hay chẩn đoán y tế. Dữ liệu <b>chỉ lưu trên trình duyệt của bạn</b>, không gửi đi đâu.</p>
+  <p class="note">${T('disclaimer','<b>Lưu ý:</b> dự đoán chỉ mang tính tham khảo dựa trên chu kỳ trung bình, không dùng để tránh thai hay chẩn đoán y tế. Dữ liệu <b>chỉ lưu trên trình duyệt của bạn</b>, không gửi đi đâu.')}</p>
 `;
 
 function render(): void {
   const cfg = store.get();
   const starts = [...cfg.starts].sort().reverse();
   $('#history').innerHTML = starts.length
-    ? `<div class="chip-list">${starts.map((s) => `<span class="chip">${fmt(s)}<button type="button" data-del="${s}" aria-label="Xoá">✕</button></span>`).join('')}</div>`
-    : '<p class="note">Chưa có dữ liệu. Ghi lại ngày bắt đầu kỳ gần nhất để bắt đầu dự đoán.</p>';
+    ? `<div class="chip-list">${starts.map((s) => `<span class="chip">${fmt(s)}<button type="button" data-del="${s}" aria-label="${T('del','Xoá')}">✕</button></span>`).join('')}</div>`
+    : `<p class="note">${T('empty','Chưa có dữ liệu. Ghi lại ngày bắt đầu kỳ gần nhất để bắt đầu dự đoán.')}</p>`;
 
   const pred = predictCycle(cfg.starts, 28, cfg.periodLen, 3);
   if (!pred) {
-    $('#predict').innerHTML = '<p class="note">Ghi ít nhất một kỳ để xem dự đoán. Ghi từ 2 kỳ trở lên sẽ chính xác hơn.</p>';
+    $('#predict').innerHTML = `<p class="note">${T('needData','Ghi ít nhất một kỳ để xem dự đoán. Ghi từ 2 kỳ trở lên sẽ chính xác hơn.')}</p>`;
     $('#calendar').innerHTML = '';
     return;
   }
   const next = pred.predictions.find((p) => p.start >= todayKey()) ?? pred.predictions[0];
   $('#predict').innerHTML = `
-    <div class="panel-title">Dự đoán</div>
+    <div class="panel-title">${T('predict','Dự đoán')}</div>
     <div class="stat-grid">
-      <div class="stat stat--main"><span class="stat-label">Kỳ tiếp theo</span><span class="stat-value">${fmt(pred.nextStart)}</span></div>
-      <div class="stat"><span class="stat-label">Còn</span><span class="stat-value">${pred.daysToNext} ngày</span></div>
-      <div class="stat"><span class="stat-label">Chu kỳ trung bình</span><span class="stat-value">${pred.avgCycle} ngày</span></div>
-      <div class="stat"><span class="stat-label">Hôm nay</span><span class="stat-value">${pred.phaseToday}</span></div>
+      <div class="stat stat--main"><span class="stat-label">${T('nextPeriod','Kỳ tiếp theo')}</span><span class="stat-value">${fmt(pred.nextStart)}</span></div>
+      <div class="stat"><span class="stat-label">${T('remaining','Còn')}</span><span class="stat-value">${pred.daysToNext} ${T('days','ngày')}</span></div>
+      <div class="stat"><span class="stat-label">${T('avgCycle','Chu kỳ trung bình')}</span><span class="stat-value">${pred.avgCycle} ${T('days','ngày')}</span></div>
+      <div class="stat"><span class="stat-label">${T('today','Hôm nay')}</span><span class="stat-value">${T('phase.' + phaseKey(pred.phaseToday), pred.phaseToday)}</span></div>
     </div>
-    <p class="note" style="margin-top:10px">Khoảng dễ thụ thai sắp tới: <b>${fmt(next.fertileStart)} – ${fmt(next.fertileEnd)}</b>, rụng trứng ~<b>${fmt(next.ovulation)}</b>.</p>`;
+    <p class="note" style="margin-top:10px">${T('fertileNext','Khoảng dễ thụ thai sắp tới')}: <b>${fmt(next.fertileStart)} – ${fmt(next.fertileEnd)}</b>, ${T('ovuAround','rụng trứng ~')}<b>${fmt(next.ovulation)}</b>.</p>`;
 
   renderCalendar(pred.predictions);
 }
@@ -94,7 +98,7 @@ function renderCalendar(preds: Pred): void {
     return `<div class="cal-month"><div class="cal-title">${MONTHS[m]} ${y}</div><div class="cal-grid">${DOW.map((x) => `<span class="cal-dow">${x}</span>`).join('')}${cells.join('')}</div></div>`;
   }).join('');
   $('#calendar').innerHTML = `<div class="cal-wrap">${months}</div>
-    <div class="cal-legend"><span><i class="lg is-period"></i>Hành kinh</span><span><i class="lg is-fertile"></i>Dễ thụ thai</span><span><i class="lg is-ovu"></i>Rụng trứng</span></div>`;
+    <div class="cal-legend"><span><i class="lg is-period"></i>${T('lg.period','Hành kinh')}</span><span><i class="lg is-fertile"></i>${T('lg.fertile','Dễ thụ thai')}</span><span><i class="lg is-ovu"></i>${T('lg.ovu','Rụng trứng')}</span></div>`;
 }
 
 $('#add').addEventListener('click', () => {

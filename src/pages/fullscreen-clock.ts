@@ -1,7 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, storage } from '../ui';
+import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'fullscreen-clock' });
+const T = pageText();
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
 type Mode = 'clock' | 'stopwatch' | 'countdown';
 interface Cfg { color: string; bg: string; font: string; h24: boolean; showSeconds: boolean; showDate: boolean }
@@ -18,12 +21,12 @@ const root = $('#tool-root');
 root.innerHTML = `
   <div class="panel code-toolbar no-print fs-toolbar">
     <div class="tabs" role="tablist" style="margin:0">
-      <button type="button" role="tab" data-mode="clock" aria-selected="true">Đồng hồ</button>
-      <button type="button" role="tab" data-mode="stopwatch">Bấm giờ</button>
-      <button type="button" role="tab" data-mode="countdown">Đếm ngược</button>
+      <button type="button" role="tab" data-mode="clock" aria-selected="true">${T('tab.clock','Đồng hồ')}</button>
+      <button type="button" role="tab" data-mode="stopwatch">${T('tab.stopwatch','Bấm giờ')}</button>
+      <button type="button" role="tab" data-mode="countdown">${T('tab.countdown','Đếm ngược')}</button>
     </div>
     <div class="actions">
-      <button type="button" class="btn" id="fs">Toàn màn hình</button>
+      <button type="button" class="btn" id="fs">${T('fullscreen','Toàn màn hình')}</button>
     </div>
   </div>
 
@@ -34,19 +37,19 @@ root.innerHTML = `
   </div>
 
   <div class="panel fs-settings no-print">
-    <div class="panel-title">Tuỳ chỉnh hiển thị</div>
+    <div class="panel-title">${T('settings','Tuỳ chỉnh hiển thị')}</div>
     <div class="field-row">
-      <label class="field"><span class="field-label">Màu số</span><input type="color" id="c-color" /></label>
-      <label class="field"><span class="field-label">Màu nền</span><input type="color" id="c-bg" /></label>
-      <label class="field"><span class="field-label">Phông chữ</span><select id="c-font"><option value="mono">Đồng hồ số (mono)</option><option value="sans">Hiện đại</option><option value="round">Bo tròn</option></select></label>
+      <label class="field"><span class="field-label">${T('color','Màu số')}</span><input type="color" id="c-color" /></label>
+      <label class="field"><span class="field-label">${T('bg','Màu nền')}</span><input type="color" id="c-bg" /></label>
+      <label class="field"><span class="field-label">${T('font','Phông chữ')}</span><select id="c-font"><option value="mono">${T('font.mono','Đồng hồ số (mono)')}</option><option value="sans">${T('font.sans','Hiện đại')}</option><option value="round">${T('font.round','Bo tròn')}</option></select></label>
     </div>
     <div class="row" style="margin-top:8px">
-      <label class="check"><input type="checkbox" id="c-24" /><span>24 giờ</span></label>
-      <label class="check"><input type="checkbox" id="c-sec" /><span>Hiện giây</span></label>
-      <label class="check"><input type="checkbox" id="c-date" /><span>Hiện ngày tháng</span></label>
+      <label class="check"><input type="checkbox" id="c-24" /><span>${T('h24','24 giờ')}</span></label>
+      <label class="check"><input type="checkbox" id="c-sec" /><span>${T('showSec','Hiện giây')}</span></label>
+      <label class="check"><input type="checkbox" id="c-date" /><span>${T('showDate','Hiện ngày tháng')}</span></label>
     </div>
   </div>
-  <p class="note">Chế độ toàn màn hình phù hợp để trình chiếu hoặc hẹn giờ trên lớp. Khi bật, màn hình được giữ sáng (nếu trình duyệt hỗ trợ). Bấm Esc để thoát.</p>
+  <p class="note">${T('note','Chế độ toàn màn hình phù hợp để trình chiếu hoặc hẹn giờ trên lớp. Khi bật, màn hình được giữ sáng (nếu trình duyệt hỗ trợ). Bấm Esc để thoát.')}</p>
 `;
 
 let mode: Mode = 'clock';
@@ -73,7 +76,7 @@ function fmtClock(): { main: string; sub: string } {
   let suffix = '';
   if (!c.h24) { suffix = h >= 12 ? ' PM' : ' AM'; h = h % 12 || 12; }
   const main = `${c.h24 ? two(h) : h}:${two(d.getMinutes())}${c.showSeconds ? ':' + two(d.getSeconds()) : ''}${suffix}`;
-  const subTxt = c.showDate ? d.toLocaleDateString('vi-VN', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' }) : '';
+  const subTxt = c.showDate ? d.toLocaleDateString(LOCALE, { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' }) : '';
   return { main, sub: subTxt };
 }
 
@@ -133,18 +136,18 @@ function renderControls(): void {
   const c = $('#controls');
   if (mode === 'clock') { c.innerHTML = ''; return; }
   if (mode === 'stopwatch') {
-    c.innerHTML = `<button type="button" class="btn btn-primary" data-sw="toggle">${swRunning ? 'Tạm dừng' : swElapsed ? 'Tiếp tục' : 'Bắt đầu'}</button>
-      <button type="button" class="btn" data-sw="lap" ${swRunning ? '' : 'disabled'}>Lap</button>
-      <button type="button" class="btn" data-sw="reset">Đặt lại</button>
-      ${laps.length ? `<ol class="lap-list">${laps.map((l, i) => `<li>Lap ${i + 1}: ${swText(l)}</li>`).reverse().join('')}</ol>` : ''}`;
+    c.innerHTML = `<button type="button" class="btn btn-primary" data-sw="toggle">${swRunning ? T('pause','Tạm dừng') : swElapsed ? T('resume','Tiếp tục') : T('start','Bắt đầu')}</button>
+      <button type="button" class="btn" data-sw="lap" ${swRunning ? '' : 'disabled'}>${T('lap','Lap')}</button>
+      <button type="button" class="btn" data-sw="reset">${T('reset','Đặt lại')}</button>
+      ${laps.length ? `<ol class="lap-list">${laps.map((l, i) => `<li>${T('lap','Lap')} ${i + 1}: ${swText(l)}</li>`).reverse().join('')}</ol>` : ''}`;
   } else {
     c.innerHTML = `<div class="cd-setup">
         <label class="check"><input type="radio" name="cdfmt" value="hms" checked /><span>hh:mm:ss</span></label>
         <label class="check"><input type="radio" name="cdfmt" value="ms" /><span>mm:ss</span></label>
         <label class="check"><input type="radio" name="cdfmt" value="s" /><span>ss</span></label>
         <input type="text" id="cd-input" class="cd-input mono" placeholder="00:05:00" value="00:05:00" />
-        <button type="button" class="btn btn-primary" data-cd="toggle">${cdRunning ? 'Tạm dừng' : 'Bắt đầu'}</button>
-        <button type="button" class="btn" data-cd="reset">Đặt lại</button>
+        <button type="button" class="btn btn-primary" data-cd="toggle">${cdRunning ? T('pause','Tạm dừng') : T('start','Bắt đầu')}</button>
+        <button type="button" class="btn" data-cd="reset">${T('reset','Đặt lại')}</button>
       </div>`;
   }
 }

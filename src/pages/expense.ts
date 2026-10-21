@@ -1,8 +1,12 @@
 import { mountLayout } from '../layout';
 import { $, downloadBlob, escapeHtml, fmtInt, fmtMoney, moneyInput } from '../ui';
 import { SheetStore, newId } from '../google/sync';
+import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'expense' });
+const T = pageText();
+const CAT_KEY: Record<string, string> = { 'Ăn uống': 'food', 'Đi lại': 'transport', 'Nhà ở & hoá đơn': 'housing', 'Mua sắm': 'shopping', 'Sức khoẻ': 'health', 'Giáo dục': 'education', 'Giải trí': 'entertainment', 'Gia đình & con cái': 'family', 'Hiếu hỉ, biếu tặng': 'gifts', 'Khác': 'other', 'Lương': 'salary', 'Thưởng': 'bonus', 'Kinh doanh': 'business', 'Đầu tư': 'investment', 'Được cho, tặng': 'gifted' };
+const catLabel = (c: string): string => T('cat.' + (CAT_KEY[c] || c), c);
 
 interface Tx { id: string; date: string; type: string; category: string; amount: number; note: string }
 interface Budget { id: string; category: string; limit: number }
@@ -41,48 +45,48 @@ root.innerHTML = `
   <div class="tool-body">
     <div class="row" style="justify-content:space-between">
       <label class="field" style="flex-direction:row;align-items:center;gap:10px">
-        <span class="field-label" style="margin:0">Tháng</span>
+        <span class="field-label" style="margin:0">${T('month','Tháng')}</span>
         <input type="month" id="month" class="input-inline" />
       </label>
-      <button type="button" class="btn btn-sm" id="export">Tải CSV tháng này</button>
+      <button type="button" class="btn btn-sm" id="export">${T('export','Tải CSV tháng này')}</button>
     </div>
     <div class="stat-grid" id="summary" style="margin-top:14px"></div>
   </div>
 
   <div class="workspace" style="margin-top:20px">
     <form class="panel" id="tx-form" novalidate>
-      <h2 class="panel-title">Thêm giao dịch</h2>
-      <div class="segmented" role="radiogroup" aria-label="Loại giao dịch">
-        <label><input type="radio" name="type" value="chi" checked /><span>Khoản chi</span></label>
-        <label><input type="radio" name="type" value="thu" /><span>Khoản thu</span></label>
+      <h2 class="panel-title">${T('addTx','Thêm giao dịch')}</h2>
+      <div class="segmented" role="radiogroup" aria-label="${T('aria.type','Loại giao dịch')}">
+        <label><input type="radio" name="type" value="chi" checked /><span>${T('expense','Khoản chi')}</span></label>
+        <label><input type="radio" name="type" value="thu" /><span>${T('income','Khoản thu')}</span></label>
       </div>
       <div class="form-grid">
-        <label class="field"><span class="field-label">Số tiền</span><input id="amount" type="text" placeholder="50.000" autocomplete="off" /></label>
-        <label class="field"><span class="field-label">Ngày</span><input id="date" type="date" /></label>
-        <label class="field"><span class="field-label">Danh mục</span><select id="category"></select></label>
-        <label class="field"><span class="field-label">Ghi chú</span><input id="note" type="text" maxlength="200" placeholder="Không bắt buộc" /></label>
+        <label class="field"><span class="field-label">${T('amount','Số tiền')}</span><input id="amount" type="text" placeholder="50.000" autocomplete="off" /></label>
+        <label class="field"><span class="field-label">${T('date','Ngày')}</span><input id="date" type="date" /></label>
+        <label class="field"><span class="field-label">${T('category','Danh mục')}</span><select id="category"></select></label>
+        <label class="field"><span class="field-label">${T('note','Ghi chú')}</span><input id="note" type="text" maxlength="200" placeholder="${T('notePh','Không bắt buộc')}" /></label>
       </div>
       <p class="error" id="tx-error" hidden></p>
-      <div class="row"><button type="submit" class="btn btn-primary">Thêm</button></div>
+      <div class="row"><button type="submit" class="btn btn-primary">${T('add','Thêm')}</button></div>
     </form>
 
     <section class="panel">
-      <h2 class="panel-title">Chi theo danh mục</h2>
+      <h2 class="panel-title">${T('byCat','Chi theo danh mục')}</h2>
       <div id="by-cat" class="cat-bars"></div>
       <details class="options">
-        <summary>Đặt hạn mức chi mỗi tháng</summary>
+        <summary>${T('setLimit','Đặt hạn mức chi mỗi tháng')}</summary>
         <div class="options-body">
           <div class="form-grid">
-            <label class="field"><span class="field-label">Danh mục</span><select id="b-cat">${EXPENSE_CATS.map((c) => `<option>${c}</option>`).join('')}</select></label>
-            <label class="field"><span class="field-label">Hạn mức / tháng</span><input id="b-limit" type="text" placeholder="3.000.000" /></label>
+            <label class="field"><span class="field-label">${T('category','Danh mục')}</span><select id="b-cat">${EXPENSE_CATS.map((c) => `<option value="${c}">${catLabel(c)}</option>`).join('')}</select></label>
+            <label class="field"><span class="field-label">${T('limitMonth','Hạn mức / tháng')}</span><input id="b-limit" type="text" placeholder="3.000.000" /></label>
           </div>
-          <div class="row"><button type="button" class="btn" id="b-save">Lưu hạn mức</button><span class="note">Nhập 0 để bỏ hạn mức.</span></div>
+          <div class="row"><button type="button" class="btn" id="b-save">${T('saveLimit','Lưu hạn mức')}</button><span class="note">${T('limitHint','Nhập 0 để bỏ hạn mức.')}</span></div>
         </div>
       </details>
     </section>
   </div>
 
-  <h2 class="section-title" style="margin-top:28px">Giao dịch trong tháng</h2>
+  <h2 class="section-title" style="margin-top:28px">${T('txThisMonth','Giao dịch trong tháng')}</h2>
   <div class="table-wrap is-tall"><table class="data-table" id="tx-table"></table></div>
 `;
 store.mount(root);
@@ -99,7 +103,7 @@ function txType(): 'chi' | 'thu' {
 }
 function fillCategories(): void {
   const cats = txType() === 'chi' ? EXPENSE_CATS : INCOME_CATS;
-  $('#category').innerHTML = cats.map((c) => `<option>${c}</option>`).join('');
+  $('#category').innerHTML = cats.map((c) => `<option value="${c}">${catLabel(c)}</option>`).join('');
 }
 
 function monthTx(d: Data): Tx[] {
@@ -112,9 +116,9 @@ function render(): void {
   const income = list.filter((t) => t.type === 'thu').reduce((s, t) => s + t.amount, 0);
   const expense = list.filter((t) => t.type !== 'thu').reduce((s, t) => s + t.amount, 0);
   $('#summary').innerHTML = `
-    <div class="stat"><span class="stat-label">Tổng thu</span><span class="stat-value ok-text">${fmtMoney(income)}</span></div>
-    <div class="stat"><span class="stat-label">Tổng chi</span><span class="stat-value">${fmtMoney(expense)}</span></div>
-    <div class="stat stat--main"><span class="stat-label">Còn lại</span><span class="stat-value">${fmtMoney(income - expense)}</span></div>`;
+    <div class="stat"><span class="stat-label">${T('totalIncome','Tổng thu')}</span><span class="stat-value ok-text">${fmtMoney(income)}</span></div>
+    <div class="stat"><span class="stat-label">${T('totalExpense','Tổng chi')}</span><span class="stat-value">${fmtMoney(expense)}</span></div>
+    <div class="stat stat--main"><span class="stat-label">${T('balance','Còn lại')}</span><span class="stat-value">${fmtMoney(income - expense)}</span></div>`;
 
   // Chi theo danh mục, kèm hạn mức nếu có
   const byCat = new Map<string, number>();
@@ -129,23 +133,23 @@ function render(): void {
           const pct = limit > 0 ? spent / limit : spent / maxSpent;
           const over = limit > 0 && spent > limit;
           return `<div class="cat-bar${over ? ' is-over' : ''}">
-            <div class="cat-bar-head"><span>${escapeHtml(cat)}</span><span>${fmtInt(spent)}${limit > 0 ? ` / ${fmtInt(limit)}` : ''}</span></div>
+            <div class="cat-bar-head"><span>${escapeHtml(catLabel(cat))}</span><span>${fmtInt(spent)}${limit > 0 ? ` / ${fmtInt(limit)}` : ''}</span></div>
             <div class="cat-bar-track"><i style="width:${Math.min(100, pct * 100).toFixed(1)}%"></i></div>
-            ${over ? `<span class="cat-bar-note">Vượt hạn mức ${fmtMoney(spent - limit)}</span>` : ''}
+            ${over ? `<span class="cat-bar-note">${T('over','Vượt hạn mức')} ${fmtMoney(spent - limit)}</span>` : ''}
           </div>`;
         })
         .join('')
-    : '<p class="note">Chưa có khoản chi nào trong tháng này.</p>';
+    : `<p class="note">${T('noExpense','Chưa có khoản chi nào trong tháng này.')}</p>`;
 
   $('#tx-table').innerHTML = list.length
-    ? `<thead><tr><th>Ngày</th><th>Danh mục</th><th>Ghi chú</th><th>Số tiền</th><th></th></tr></thead><tbody>${list
+    ? `<thead><tr><th>${T('th.date','Ngày')}</th><th>${T('th.cat','Danh mục')}</th><th>${T('th.note','Ghi chú')}</th><th>${T('th.amount','Số tiền')}</th><th></th></tr></thead><tbody>${list
         .map(
-          (t) => `<tr><td>${escapeHtml(normDate(t.date).split('-').reverse().join('/'))}</td><td>${escapeHtml(t.category)}</td>
+          (t) => `<tr><td>${escapeHtml(normDate(t.date).split('-').reverse().join('/'))}</td><td>${escapeHtml(catLabel(t.category))}</td>
           <td>${escapeHtml(t.note)}</td><td class="${t.type === 'thu' ? 'ok-text' : ''}">${t.type === 'thu' ? '+' : '−'}${fmtInt(t.amount)}</td>
-          <td><button type="button" class="btn btn-sm" data-del="${escapeHtml(t.id)}" aria-label="Xoá giao dịch">Xoá</button></td></tr>`,
+          <td><button type="button" class="btn btn-sm" data-del="${escapeHtml(t.id)}" aria-label="${T('delTx','Xoá giao dịch')}">${T('del','Xoá')}</button></td></tr>`,
         )
         .join('')}</tbody>`
-    : '<tbody><tr><td class="note">Chưa có giao dịch. Thêm khoản thu chi đầu tiên ở khung bên trên.</td></tr></tbody>';
+    : `<tbody><tr><td class="note">${T('noTx','Chưa có giao dịch. Thêm khoản thu chi đầu tiên ở khung bên trên.')}</td></tr></tbody>`;
 }
 
 form.addEventListener('change', (e) => {
@@ -156,7 +160,7 @@ form.addEventListener('submit', (e) => {
   const amount = readAmount();
   const date = $<HTMLInputElement>('#date').value;
   const err = $('#tx-error');
-  const problem = !Number.isFinite(amount) || amount <= 0 ? 'Hãy nhập số tiền lớn hơn 0.' : !date ? 'Hãy chọn ngày.' : '';
+  const problem = !Number.isFinite(amount) || amount <= 0 ? T('err.amount','Hãy nhập số tiền lớn hơn 0.') : !date ? T('err.date','Hãy chọn ngày.') : '';
   err.textContent = problem;
   err.hidden = !problem;
   if (problem) return;
