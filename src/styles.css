@@ -2211,6 +2211,58 @@ fieldset.field {
   }
 }
 
+/* Phân tích văn bản */
+.kw-panel {
+  margin-top: 24px;
+}
+.kw-panel .tabs {
+  margin: 0;
+}
+.kw-target {
+  margin: 0;
+  padding: 10px 14px;
+  background: var(--accent-soft);
+  border-radius: var(--radius-sm);
+}
+.kw-table td:nth-child(3),
+.kw-table td:nth-child(4) {
+  font-variant-numeric: tabular-nums;
+}
+.kw-bar-col {
+  width: 30%;
+}
+.kw-bar {
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--accent);
+}
+.kw-empty {
+  padding: 14px;
+}
+.link-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.link-btn:hover {
+  text-decoration: underline;
+}
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+}
+.time-row b {
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 /* Menu chính lặp lại trong menu trái, chỉ hiện trên màn hình nhỏ */
 .side-mainnav {
   display: none;

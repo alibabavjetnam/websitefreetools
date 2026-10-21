@@ -16,6 +16,7 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Xử lý file | Nối và tách PDF | `tools/pdf-merge.html` |
 | Xử lý file | PowerPoint ↔ PDF | `tools/pptx-pdf.html` |
 | Xử lý file | So sánh hai file (TXT, Word, HTML, PDF) | `tools/file-diff.html` |
+| Xử lý file | Phân tích văn bản (số từ, ký tự, thời gian đọc, mật độ từ khoá) | `tools/text-analysis.html` |
 | Xử lý file | Chuyển đổi JSON, XML, CSV, Excel | `tools/data-convert.html` |
 | Công cụ kỹ thuật tin học | JSON, Base64, Regex | `tools/dev-tools.html` |
 | Công cụ kỹ thuật tin học | Cron & Unix timestamp | `tools/cron-time.html` |

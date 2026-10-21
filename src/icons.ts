@@ -18,6 +18,8 @@ const PATHS: Record<string, string> = {
   'pptx-pdf': '<rect x="2.5" y="4" width="10" height="7.5" rx="1"/><path d="M7.5 11.5V14"/><path d="M14 13h7.5v8H14z"/><path d="M14.5 6h4a2 2 0 0 1 2 2v2M18.5 8l2 2 2-2"/>',
   // hai cột văn bản đối chiếu
   'file-diff': '<rect x="3" y="3" width="8" height="18" rx="1.5"/><rect x="13" y="3" width="8" height="18" rx="1.5"/><path d="M5.5 8h3M5.5 12h3M15.5 8h3M15.5 12h3M15.5 16h3"/>',
+  // trang văn bản có kính lúp
+  'text-analysis': '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h5"/><path d="M8 8h6M8 12h4"/><circle cx="16.5" cy="15.5" r="3.5"/><path d="M19 18l2.5 2.5"/>',
   // bảng dữ liệu có mũi tên
   'data-convert': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/><path d="M12.5 14.5h5M15.5 12.5l2 2-2 2"/>',
   // dấu ngoặc nhọn

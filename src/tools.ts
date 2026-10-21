@@ -47,6 +47,7 @@ export const TOOLS: ToolInfo[] = [
   tool('pdf-merge', 'file', 'Nối và tách PDF', 'Gộp nhiều file PDF thành một, tách lấy trang cần dùng, chia nhỏ file PDF theo từng trang.'),
   tool('pptx-pdf', 'file', 'PowerPoint ↔ PDF', 'Chuyển bài trình chiếu PowerPoint (.pptx) sang PDF và chuyển PDF thành file PowerPoint.'),
   tool('file-diff', 'file', 'So sánh hai file', 'Tìm chỗ khác nhau giữa hai văn bản: TXT, Word, HTML, PDF có chữ. Tô màu phần thêm, xoá, sửa.'),
+  tool('text-analysis', 'file', 'Phân tích văn bản', 'Đếm số từ, ký tự, câu, đoạn, ước tính thời gian đọc và mật độ từ khoá của văn bản, file TXT, Word, PDF.'),
   tool('data-convert', 'file', 'Chuyển đổi JSON, XML, CSV, Excel', 'Đổi dữ liệu qua lại giữa JSON, XML, CSV và Excel (.xlsx), xem trước dạng bảng.'),
 
   // Công cụ kỹ thuật tin học
