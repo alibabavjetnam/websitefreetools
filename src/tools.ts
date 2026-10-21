@@ -54,7 +54,7 @@ export const TOOLS: ToolInfo[] = [
   tool('code-format', 'dev', 'Định dạng JS, HTML, CSS, JSON', 'Căn chỉnh, thụt lề gọn gàng cho mã JavaScript, HTML, CSS và JSON.'),
   tool('code-check', 'dev', 'Kiểm tra lỗi cú pháp', 'Tìm lỗi cú pháp, cấu trúc trong JavaScript, HTML, CSS, JSON và chỉ ra dòng, cột.'),
   tool('js-obfuscate', 'dev', 'Làm rối mã JavaScript', 'Mã hoá chuỗi, đổi tên biến, che giấu mã JavaScript để khó đọc, khó sao chép (JavaScript Obfuscator).'),
-  tool('rsa-keys', 'dev', 'Tạo khoá RSA', 'Tạo cặp khoá RSA public và private theo chuẩn PEM để mã hoá, ký số.'),
+  tool('rsa-keys', 'dev', 'Khoá RSA & mã hoá', 'Tạo cặp khoá RSA (PEM), mã hoá văn bản bằng khoá công khai và giải mã bằng khoá bí mật ngay trên máy.'),
   tool('text-to-html', 'dev', 'Soạn văn bản thành HTML', 'Soạn thảo trực quan có in đậm, tiêu đề, danh sách, bảng, liên kết và lấy mã HTML sạch.'),
 
   // Kinh doanh online

@@ -24,7 +24,7 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Công cụ tin học | Định dạng JS, HTML, CSS, JSON | `tools/code-format.html` |
 | Công cụ tin học | Kiểm tra lỗi cú pháp JS, HTML, CSS, JSON | `tools/code-check.html` |
 | Công cụ tin học | Làm rối mã JavaScript (obfuscator) | `tools/js-obfuscate.html` |
-| Công cụ tin học | Tạo cặp khoá RSA (PEM) | `tools/rsa-keys.html` |
+| Công cụ tin học | Khoá RSA + mã hoá/giải mã văn bản (AES + RSA lai) | `tools/rsa-keys.html` |
 | Công cụ tin học | Soạn văn bản thành HTML | `tools/text-to-html.html` |
 | Tài chính & tính toán | Lương Gross ↔ Net (quy định 2026 trong `src/calc/salary.ts`) | `tools/salary.html` |
 | Tiếp thị | Tạo mã QR | `tools/qr-code.html` |

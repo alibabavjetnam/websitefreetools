@@ -2388,6 +2388,25 @@ fieldset.field {
   color: var(--danger);
   font-weight: 600;
 }
+/* Mã hoá / giải mã RSA */
+.crypto-panel {
+  margin-top: 24px;
+}
+.crypto-status {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  background: var(--accent-soft);
+  border-radius: var(--radius-sm);
+  color: var(--ink-soft);
+}
+.crypto-status--err {
+  background: #fdecec;
+  color: var(--danger);
+}
+.crypto-panel .code-workspace {
+  margin-top: 0;
+}
+
 /* Trình soạn thảo trực quan */
 .editor-toolbar {
   margin-top: 16px;
