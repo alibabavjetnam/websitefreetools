@@ -4,12 +4,13 @@ import { SheetStore } from '../google/sync';
 
 mountLayout({ activeTool: 'study-timetable' });
 
-interface Setting { id: string; title: string; days: string; periodCount: number; morningCount: number; minutes: number; morningStart: string; afternoonStart: string }
+interface Setting { id: string; title: string; days: string; morningCount: number; times: string }
 interface Cell { id: string; day: number; period: number; subject: string; room: string }
 type Data = { settings: Setting[]; cells: Cell[] };
 
 const DEFAULT_DAYS = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ nhật'];
-const DEFAULT: Setting = { id: 'main', title: 'Thời khoá biểu', days: JSON.stringify(DEFAULT_DAYS), periodCount: 10, morningCount: 5, minutes: 45, morningStart: '07:00', afternoonStart: '13:30' };
+const DEFAULT_TIMES = ['07:00', '07:45', '08:30', '09:15', '10:00', '13:30', '14:15', '15:00', '15:45', '16:30'];
+const DEFAULT: Setting = { id: 'main', title: 'Thời khoá biểu', days: JSON.stringify(DEFAULT_DAYS), morningCount: 5, times: JSON.stringify(DEFAULT_TIMES) };
 
 const store = new SheetStore<Data>({
   tag: 'timetable',
@@ -18,8 +19,7 @@ const store = new SheetStore<Data>({
   tables: {
     settings: { sheet: 'Cấu hình', columns: [
       { key: 'id', label: 'Mã' }, { key: 'title', label: 'Tiêu đề' }, { key: 'days', label: 'Các ngày' },
-      { key: 'periodCount', label: 'Số tiết', type: 'number' }, { key: 'morningCount', label: 'Số tiết sáng', type: 'number' },
-      { key: 'minutes', label: 'Phút mỗi tiết', type: 'number' }, { key: 'morningStart', label: 'Bắt đầu sáng' }, { key: 'afternoonStart', label: 'Bắt đầu chiều' },
+      { key: 'morningCount', label: 'Số tiết sáng', type: 'number' }, { key: 'times', label: 'Giờ các tiết' },
     ] },
     cells: { sheet: 'Nội dung', columns: [
       { key: 'id', label: 'Mã' }, { key: 'day', label: 'Ngày', type: 'number' }, { key: 'period', label: 'Tiết', type: 'number' },
@@ -28,35 +28,42 @@ const store = new SheetStore<Data>({
   },
 });
 
-// Màu: tiết buổi sáng xanh dương, tiết buổi chiều cam
+// Tiết buổi sáng tô xanh dương, buổi chiều tô cam (ranh giới theo "số tiết buổi sáng")
 const MORNING = { bg: '#e7f0ff', border: '#0d6efd' };
 const AFTERNOON = { bg: '#fff4e0', border: '#d97706' };
 const pad = (n: number) => String(n).padStart(2, '0');
 
+const parseJson = <T>(s: string, fb: T): T => { try { const v = JSON.parse(s); return v ?? fb; } catch { return fb; } };
+
+/** Đọc cấu hình, tự chuyển dữ liệu kiểu cũ (có periodCount/minutes/morningStart) sang danh sách giờ từng tiết. */
 function settings(): Setting {
-  return store.get().settings.find((s) => s.id === 'main') ?? { ...DEFAULT };
+  const raw = store.get().settings.find((s) => s.id === 'main') as (Setting & { periodCount?: number; minutes?: number; morningStart?: string; afternoonStart?: string }) | undefined;
+  if (!raw) return { ...DEFAULT };
+  let times = parseJson<string[]>(raw.times ?? '', []);
+  if (!Array.isArray(times) || !times.length) {
+    // Chuyển từ cấu hình cũ (sinh giờ theo công thức) nếu có
+    if (raw.periodCount) {
+      times = [];
+      const mc = Number(raw.morningCount ?? 5);
+      const min = Number(raw.minutes ?? 45);
+      for (let i = 0; i < Number(raw.periodCount); i++) {
+        const morning = i < mc;
+        const [h, m] = ((morning ? raw.morningStart : raw.afternoonStart) ?? (morning ? '07:00' : '13:30')).split(':').map(Number);
+        const idx = morning ? i : i - mc;
+        const total = h * 60 + m + idx * min;
+        times.push(`${pad(Math.floor(total / 60) % 24)}:${pad(total % 60)}`);
+      }
+    }
+    if (!times.length) times = [...DEFAULT_TIMES];
+  }
+  return { id: 'main', title: raw.title || DEFAULT.title, days: raw.days || DEFAULT.days, morningCount: Number(raw.morningCount ?? 5), times: JSON.stringify(times) };
 }
 function saveSettings(patch: Partial<Setting>): void {
-  const cur = settings();
-  const next: Setting = { ...cur, ...patch, id: 'main' };
-  const d = store.get();
-  store.set({ ...d, settings: [next] });
+  const next: Setting = { ...settings(), ...patch, id: 'main' };
+  store.set({ ...store.get(), settings: [next] });
 }
-function days(s: Setting): string[] {
-  try { const a = JSON.parse(s.days); return Array.isArray(a) && a.length ? a : DEFAULT_DAYS; } catch { return DEFAULT_DAYS; }
-}
-function periodTimes(s: Setting): string[] {
-  const times: string[] = [];
-  for (let i = 0; i < s.periodCount; i++) {
-    const morning = i < s.morningCount;
-    const [h, m] = (morning ? s.morningStart : s.afternoonStart).split(':').map(Number);
-    const idx = morning ? i : i - s.morningCount;
-    const total = h * 60 + m + idx * s.minutes;
-    times.push(`${pad(Math.floor(total / 60) % 24)}:${pad(total % 60)}`);
-  }
-  return times;
-}
-const isMorning = (period: number, s: Setting) => period < s.morningCount;
+const getDays = (s: Setting): string[] => { const a = parseJson<string[]>(s.days, DEFAULT_DAYS); return a.length ? a : DEFAULT_DAYS; };
+const getTimes = (s: Setting): string[] => parseJson<string[]>(s.times, DEFAULT_TIMES);
 
 const root = $('#tool-root');
 root.innerHTML = `
@@ -70,25 +77,28 @@ root.innerHTML = `
 
   <form class="panel tt-setup no-print" id="setup" hidden>
     <div class="panel-title">Thiết lập tiết học</div>
-    <div class="field-row">
-      <label class="field"><span class="field-label">Tổng số tiết/ngày</span><input type="number" id="s-count" min="1" max="16" /></label>
-      <label class="field"><span class="field-label">Số tiết buổi sáng</span><input type="number" id="s-morning" min="0" max="16" /></label>
-      <label class="field"><span class="field-label">Phút mỗi tiết</span><input type="number" id="s-minutes" min="20" max="120" step="5" /></label>
+    <label class="field field--inline"><span class="field-label">Số tiết tô màu buổi sáng (xanh)</span><input type="number" id="s-morning" min="0" max="16" style="max-width:90px" /></label>
+    <p class="note" style="margin:10px 0 4px">Đặt giờ bắt đầu cho từng tiết (không cần theo quy luật, có thể có hoặc không có giờ nghỉ giữa các tiết):</p>
+    <div class="tt-period-list" id="period-list"></div>
+    <div class="actions" style="margin-top:4px">
+      <button type="button" class="btn btn-sm" id="add-period">+ Thêm tiết</button>
+      <button type="button" class="btn btn-sm" id="del-period">− Bớt tiết</button>
     </div>
-    <div class="field-row">
-      <label class="field"><span class="field-label">Giờ bắt đầu buổi sáng</span><input type="time" id="s-mstart" /></label>
-      <label class="field"><span class="field-label">Giờ bắt đầu buổi chiều</span><input type="time" id="s-astart" /></label>
+    <div class="tt-autofill">
+      <span class="field-label">Tiện ích: tự điền đều từ tiết đầu, mỗi tiết </span>
+      <input type="number" id="auto-min" min="20" max="120" step="5" value="45" style="max-width:70px" /> phút
+      <button type="button" class="btn btn-sm" id="autofill">Điền đều</button>
     </div>
-    <div class="actions"><button type="button" class="btn btn-primary" id="apply-setup">Lưu cấu hình</button></div>
-    <p class="note">Giờ mỗi tiết được tính tự động từ giờ bắt đầu và số phút mỗi tiết. Đăng nhập Google để lưu cấu hình và thời khoá biểu theo tài khoản, dùng được trên mọi thiết bị.</p>
+    <div class="actions" style="margin-top:12px"><button type="button" class="btn btn-primary" id="apply-setup">Lưu cấu hình</button></div>
+    <p class="note">Đăng nhập Google để lưu cấu hình và thời khoá biểu theo tài khoản, dùng được trên mọi thiết bị.</p>
   </form>
 
   <div class="table-wrap timetable-wrap" style="margin-top:16px"><table class="timetable" id="grid"></table></div>
-  <p class="note no-print">Bấm vào ô để nhập môn học và phòng. Tiết buổi sáng tô xanh dương, buổi chiều tô cam. Bấm vào tên ngày để sửa.</p>
+  <p class="note no-print">Bấm vào ô để nhập môn học và phòng. Bấm vào tên ngày để sửa.</p>
 
   <dialog id="edit" class="cell-dialog">
     <form method="dialog" class="panel">
-      <div class="panel-title" id="dlg-title">Nội dung tiết học</div>
+      <div class="panel-title">Nội dung tiết học</div>
       <label class="field"><span class="field-label">Môn học</span><input type="text" id="d-subject" maxlength="40" /></label>
       <label class="field"><span class="field-label">Phòng / ghi chú</span><input type="text" id="d-room" maxlength="30" /></label>
       <div class="actions"><button class="btn btn-primary" id="d-save" value="save">Lưu</button><button class="btn" value="cancel">Huỷ</button><button type="button" class="btn" id="d-clear">Xoá ô</button></div>
@@ -98,17 +108,19 @@ root.innerHTML = `
 store.mount(root);
 
 let editing = '';
+// Giờ đang chỉnh trong phần thiết lập (chưa lưu cho tới khi bấm "Lưu cấu hình")
+let draftTimes: string[] = [];
 
 function render(): void {
   const s = settings();
-  const dayList = days(s);
-  const times = periodTimes(s);
+  const dayList = getDays(s);
+  const times = getTimes(s);
   $<HTMLInputElement>('#title').value = s.title;
   const cellMap = new Map(store.get().cells.map((c) => [c.id, c]));
 
   const head = `<thead><tr><th class="tt-corner">Tiết</th>${dayList.map((d, i) => `<th contenteditable="true" data-day="${i}">${escapeHtml(d)}</th>`).join('')}</tr></thead>`;
   const body = times.map((time, pi) => {
-    const col = isMorning(pi, s) ? MORNING : AFTERNOON;
+    const col = pi < s.morningCount ? MORNING : AFTERNOON;
     const cells = dayList.map((_, di) => {
       const key = `${di}-${pi}`;
       const c = cellMap.get(key);
@@ -116,12 +128,12 @@ function render(): void {
       return `<td class="tt-cell tt-filled" data-key="${key}" style="background:${col.bg};border-left:3px solid ${col.border}">
         <b>${escapeHtml(c.subject)}</b>${c.room ? `<span>${escapeHtml(c.room)}</span>` : ''}</td>`;
     }).join('');
-    return `<tr><th class="tt-period" style="border-left:3px solid ${col.border}">Tiết ${pi + 1}<br>${time}</th>${cells}</tr>`;
+    return `<tr><th class="tt-period" style="border-left:3px solid ${col.border}">Tiết ${pi + 1}<br>${escapeHtml(time)}</th>${cells}</tr>`;
   }).join('');
   $('#grid').innerHTML = head + `<tbody>${body}</tbody>`;
 }
 
-/* chọn ô để sửa nội dung */
+/* ----- chọn ô ----- */
 $('#grid').addEventListener('click', (e) => {
   const td = (e.target as HTMLElement).closest<HTMLElement>('.tt-cell');
   if (!td) return;
@@ -149,39 +161,60 @@ $('#d-clear').addEventListener('click', () => {
   ($('#edit') as HTMLDialogElement).close();
 });
 
-/* sửa tên ngày */
+/* ----- sửa tên ngày ----- */
 $('#grid').addEventListener('blur', (e) => {
   const t = e.target as HTMLElement;
   if (t.dataset.day === undefined) return;
-  const s = settings();
-  const list = days(s);
+  const list = getDays(settings());
   list[Number(t.dataset.day)] = t.textContent?.trim() || list[Number(t.dataset.day)];
   saveSettings({ days: JSON.stringify(list) });
 }, true);
 
 $('#title').addEventListener('input', () => { saveSettings({ title: $<HTMLInputElement>('#title').value }); document.title = $<HTMLInputElement>('#title').value + ' — WFTools'; });
 
-/* thiết lập */
-function fillSetup(): void {
-  const s = settings();
-  $<HTMLInputElement>('#s-count').value = String(s.periodCount);
-  $<HTMLInputElement>('#s-morning').value = String(s.morningCount);
-  $<HTMLInputElement>('#s-minutes').value = String(s.minutes);
-  $<HTMLInputElement>('#s-mstart').value = s.morningStart;
-  $<HTMLInputElement>('#s-astart').value = s.afternoonStart;
+/* ----- thiết lập giờ từng tiết ----- */
+function renderPeriodList(): void {
+  $('#period-list').innerHTML = draftTimes.map((t, i) => `
+    <div class="tt-period-row">
+      <span class="tt-period-name">Tiết ${i + 1}</span>
+      <input type="time" data-time="${i}" value="${escapeHtml(t)}" />
+    </div>`).join('');
 }
-$('#toggle-setup').addEventListener('click', () => { const f = $('#setup'); f.hidden = !f.hidden; if (!f.hidden) fillSetup(); });
+function openSetup(): void {
+  const s = settings();
+  draftTimes = [...getTimes(s)];
+  $<HTMLInputElement>('#s-morning').value = String(s.morningCount);
+  renderPeriodList();
+}
+$('#toggle-setup').addEventListener('click', () => { const f = $('#setup'); f.hidden = !f.hidden; if (!f.hidden) openSetup(); });
+$('#period-list').addEventListener('input', (e) => {
+  const t = e.target as HTMLInputElement;
+  if (t.dataset.time !== undefined) draftTimes[Number(t.dataset.time)] = t.value;
+});
+$('#add-period').addEventListener('click', () => {
+  // gợi ý giờ tiết mới = tiết cuối + 45 phút
+  const last = draftTimes[draftTimes.length - 1] ?? '07:00';
+  const [h, m] = last.split(':').map(Number);
+  const total = h * 60 + m + 45;
+  draftTimes.push(`${pad(Math.floor(total / 60) % 24)}:${pad(total % 60)}`);
+  renderPeriodList();
+});
+$('#del-period').addEventListener('click', () => { if (draftTimes.length > 1) { draftTimes.pop(); renderPeriodList(); } });
+$('#autofill').addEventListener('click', () => {
+  const min = Math.max(5, Number($<HTMLInputElement>('#auto-min').value) || 45);
+  const [h, m] = (draftTimes[0] || '07:00').split(':').map(Number);
+  let total = h * 60 + m;
+  draftTimes = draftTimes.map(() => { const v = `${pad(Math.floor(total / 60) % 24)}:${pad(total % 60)}`; total += min; return v; });
+  renderPeriodList();
+});
 $('#apply-setup').addEventListener('click', () => {
-  const periodCount = Math.max(1, Math.min(16, Number($<HTMLInputElement>('#s-count').value) || 10));
-  const morningCount = Math.max(0, Math.min(periodCount, Number($<HTMLInputElement>('#s-morning').value) || 0));
-  const minutes = Math.max(20, Math.min(120, Number($<HTMLInputElement>('#s-minutes').value) || 45));
-  const morningStart = $<HTMLInputElement>('#s-mstart').value || '07:00';
-  const afternoonStart = $<HTMLInputElement>('#s-astart').value || '13:30';
-  // Cắt bỏ các ô vượt quá số tiết mới để không để lại dữ liệu thừa
+  const times = draftTimes.map((t) => t || '07:00');
+  const morningCount = Math.max(0, Math.min(times.length, Number($<HTMLInputElement>('#s-morning').value) || 0));
+  // bỏ các ô vượt quá số tiết mới
   const d = store.get();
-  const cells = d.cells.filter((c) => c.period < periodCount);
+  const cells = d.cells.filter((c) => c.period < times.length);
   store.set({ ...d, cells });
-  saveSettings({ periodCount, morningCount, minutes, morningStart, afternoonStart });
+  saveSettings({ times: JSON.stringify(times), morningCount });
   render();
   toast('Đã lưu cấu hình tiết học');
 });

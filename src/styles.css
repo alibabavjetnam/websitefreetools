@@ -2573,6 +2573,11 @@ fieldset.field {
 .timetable thead th { background: var(--paper); padding: 8px; font-size: .9rem; }
 .tt-corner { width: 70px; }
 .tt-setup { margin-top: 16px; }
+.tt-period-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.tt-period-row { display: flex; align-items: center; gap: 8px; }
+.tt-period-name { font-size: .85rem; color: var(--ink-soft); white-space: nowrap; min-width: 46px; }
+.tt-period-row input { flex: 1; }
+.tt-autofill { margin-top: 12px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: .9rem; }
 .tt-period { background: var(--paper); font-size: .8rem; padding: 6px !important; white-space: nowrap; color: var(--ink-soft); }
 .tt-cell { height: 56px; cursor: pointer; padding: 4px 6px !important; vertical-align: middle; font-size: .85rem; }
 .tt-cell:hover { background: var(--accent-soft); }
