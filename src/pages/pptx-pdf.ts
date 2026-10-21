@@ -6,20 +6,22 @@ import { readPresentation, type Presentation } from '../lib/pptx';
 import { renderSlide } from '../lib/pptx-render';
 import { newPdf, pdfBlob } from '../lib/pdflib';
 import { CDN, global, loadScript, openPdf, type PdfJsTextItem } from '../lib/cdn';
+import { pageText as i18nText } from '../i18n';
 
 mountLayout({ activeTool: 'pptx-pdf' });
+const T = i18nText();
 
 const MAX_BYTES = 100 * 1024 * 1024;
 const MAX_PAGES = 300;
 const QUALITY = [
-  { id: 'normal', label: 'Thường', hint: 'File nhẹ, đủ xem trên máy tính, điện thoại.', px: 1280 },
-  { id: 'high', label: 'Cao', hint: 'Nét khi trình chiếu toàn màn hình, in A4.', px: 1920 },
-  { id: 'max', label: 'Rất cao', hint: 'In khổ lớn. File nặng hơn đáng kể.', px: 2880 },
+  { id: 'normal', label: T('q.normal', 'Thường'), hint: T('q.normal.hint', 'File nhẹ, đủ xem trên máy tính, điện thoại.'), px: 1280 },
+  { id: 'high', label: T('q.high', 'Cao'), hint: T('q.high.hint', 'Nét khi trình chiếu toàn màn hình, in A4.'), px: 1920 },
+  { id: 'max', label: T('q.max', 'Rất cao'), hint: T('q.max.hint', 'In khổ lớn. File nặng hơn đáng kể.'), px: 2880 },
 ];
 
 const qualityField = (name: string) => `
   <fieldset class="field">
-    <legend>Chất lượng</legend>
+    <legend>${T('quality','Chất lượng')}</legend>
     <div class="format-list">
       ${QUALITY.map((q, i) => `<label class="format-option"><input type="radio" name="${name}" value="${q.id}"${i === 1 ? ' checked' : ''} /><span class="format-name">${q.label}</span></label>`).join('')}
     </div>
@@ -28,24 +30,24 @@ const qualityField = (name: string) => `
 
 const root = $('#tool-root');
 root.innerHTML = `
-  <div class="tabs" role="tablist" aria-label="Chọn chiều chuyển đổi">
-    <button type="button" role="tab" data-tab="to-pdf">PowerPoint sang PDF</button>
-    <button type="button" role="tab" data-tab="to-pptx">PDF sang PowerPoint</button>
+  <div class="tabs" role="tablist" aria-label="${T('aria.dir','Chọn chiều chuyển đổi')}">
+    <button type="button" role="tab" data-tab="to-pdf">${T('tab.toPdf','PowerPoint sang PDF')}</button>
+    <button type="button" role="tab" data-tab="to-pptx">${T('tab.toPptx','PDF sang PowerPoint')}</button>
   </div>
 
   <section class="tool-body" data-panel="to-pdf">
     <div class="panel">
       <label class="dropzone" id="a-drop">
         <input type="file" id="a-file" accept=".pptx,.ppsx,application/vnd.openxmlformats-officedocument.presentationml.presentation" />
-        <b>Chọn file PowerPoint (.pptx) hoặc kéo thả vào đây</b>
-        <span>File dưới 100 MB, tối đa ${MAX_PAGES} trang chiếu.</span>
+        <b>${T('a.drop','Chọn file PowerPoint (.pptx) hoặc kéo thả vào đây')}</b>
+        <span>${T('a.dropHint1','File dưới 100 MB, tối đa')} ${MAX_PAGES} ${T('a.dropHint2','trang chiếu.')}</span>
       </label>
       ${qualityField('a-q')}
       <div class="actions">
-        <button type="button" class="btn btn-primary" id="a-run" disabled>Chuyển sang PDF</button>
+        <button type="button" class="btn btn-primary" id="a-run" disabled>${T('a.run','Chuyển sang PDF')}</button>
       </div>
       <p class="error" id="a-err" hidden></p>
-      <p class="note">Mỗi trang chiếu được vẽ lại thành một trang PDF dạng ảnh nên không bôi đen chọn chữ được. Biểu đồ, SmartArt, hiệu ứng động chưa được hiển thị; phông chữ máy bạn không có sẽ được thay bằng phông gần giống. Cần bản PDF giống tuyệt đối thì dùng PowerPoint: <b>Tệp → Lưu thành → PDF</b>.</p>
+      <p class="note">${T('a.note','Mỗi trang chiếu được vẽ lại thành một trang PDF dạng ảnh nên không bôi đen chọn chữ được. Biểu đồ, SmartArt, hiệu ứng động chưa được hiển thị; phông chữ máy bạn không có sẽ được thay bằng phông gần giống. Cần bản PDF giống tuyệt đối thì dùng PowerPoint: <b>Tệp → Lưu thành → PDF</b>.')}</p>
       <div id="a-out"></div>
     </div>
   </section>
@@ -54,16 +56,16 @@ root.innerHTML = `
     <div class="panel">
       <label class="dropzone" id="b-drop">
         <input type="file" id="b-file" accept="application/pdf,.pdf" />
-        <b>Chọn file PDF hoặc kéo thả vào đây</b>
-        <span>File dưới 100 MB, tối đa ${MAX_PAGES} trang.</span>
+        <b>${T('b.drop','Chọn file PDF hoặc kéo thả vào đây')}</b>
+        <span>${T('b.dropHint1','File dưới 100 MB, tối đa')} ${MAX_PAGES} ${T('b.dropHint2','trang.')}</span>
       </label>
       ${qualityField('b-q')}
-      <label class="check"><input type="checkbox" id="b-notes" checked /><span>Chép chữ của mỗi trang vào phần ghi chú (notes) của trang chiếu</span></label>
+      <label class="check"><input type="checkbox" id="b-notes" checked /><span>${T('b.notes','Chép chữ của mỗi trang vào phần ghi chú (notes) của trang chiếu')}</span></label>
       <div class="actions">
-        <button type="button" class="btn btn-primary" id="b-run" disabled>Chuyển sang PowerPoint</button>
+        <button type="button" class="btn btn-primary" id="b-run" disabled>${T('b.run','Chuyển sang PowerPoint')}</button>
       </div>
       <p class="error" id="b-err" hidden></p>
-      <p class="note">Mỗi trang PDF trở thành một trang chiếu chứa ảnh của trang đó, giữ đúng bố cục, phông chữ, hình vẽ. Chữ trên trang chiếu không sửa trực tiếp được; nếu bật ghi chú, bạn có thể chép chữ từ phần ghi chú.</p>
+      <p class="note">${T('b.note','Mỗi trang PDF trở thành một trang chiếu chứa ảnh của trang đó, giữ đúng bố cục, phông chữ, hình vẽ. Chữ trên trang chiếu không sửa trực tiếp được; nếu bật ghi chú, bạn có thể chép chữ từ phần ghi chú.')}</p>
       <div id="b-out"></div>
     </div>
   </section>
@@ -84,7 +86,7 @@ for (const name of ['a-q', 'b-q']) {
 
 const canvasToBytes = (c: HTMLCanvasElement, q = 0.9): Promise<Uint8Array> =>
   new Promise((resolve, reject) =>
-    c.toBlob((b) => (b ? b.arrayBuffer().then((x) => resolve(new Uint8Array(x)), reject) : reject(new Error('Máy không đủ bộ nhớ để vẽ trang này. Hãy chọn chất lượng thấp hơn.'))), 'image/jpeg', q));
+    c.toBlob((b) => (b ? b.arrayBuffer().then((x) => resolve(new Uint8Array(x)), reject) : reject(new Error(T('err.oom','Máy không đủ bộ nhớ để vẽ trang này. Hãy chọn chất lượng thấp hơn.')))), 'image/jpeg', q));
 
 function previewGrid(canvases: HTMLCanvasElement[]): HTMLElement {
   const grid = document.createElement('div');
@@ -93,7 +95,7 @@ function previewGrid(canvases: HTMLCanvasElement[]): HTMLElement {
     const fig = document.createElement('figure');
     const img = document.createElement('img');
     img.src = c.toDataURL('image/jpeg', 0.7);
-    img.alt = `Trang ${i + 1}`;
+    img.alt = `${T('page','Trang')} ${i + 1}`;
     img.loading = 'lazy';
     const cap = document.createElement('figcaption');
     cap.textContent = String(i + 1);
@@ -122,9 +124,9 @@ function pickPptx(files: File[]): void {
   $('#a-out').innerHTML = '';
   if (!f) return;
   const ext = extOf(f.name);
-  if (ext === 'ppt' || ext === 'pps') return showErr('#a-err', 'File PowerPoint đời cũ (.ppt) chưa được hỗ trợ. Hãy mở bằng PowerPoint và lưu lại thành .pptx.');
-  if (ext !== 'pptx' && ext !== 'ppsx') return showErr('#a-err', `${f.name}: không phải file PowerPoint (.pptx).`);
-  if (f.size > MAX_BYTES) return showErr('#a-err', `${f.name}: lớn hơn 100 MB.`);
+  if (ext === 'ppt' || ext === 'pps') return showErr('#a-err', T('err.oldPpt','File PowerPoint đời cũ (.ppt) chưa được hỗ trợ. Hãy mở bằng PowerPoint và lưu lại thành .pptx.'));
+  if (ext !== 'pptx' && ext !== 'ppsx') return showErr('#a-err', `${f.name}: ${T('err.notPptx','không phải file PowerPoint (.pptx).')}`);
+  if (f.size > MAX_BYTES) return showErr('#a-err', `${f.name}: ${T('err.tooBig','lớn hơn 100 MB.')}`);
   pptxFile = f;
   $<HTMLButtonElement>('#a-run').disabled = false;
   $('#a-out').innerHTML = `<p class="split-info"><b>${escapeHtml(f.name)}</b> · ${fmtSize(f.size)}</p>`;
@@ -140,7 +142,7 @@ function imageLoader(zip: Zip, missing: Set<string>) {
       p = (async () => {
         const entry = zip.file(path);
         const mime = MIME[extOf(path)];
-        if (!entry || !mime) { missing.add(extOf(path).toUpperCase() || 'ảnh'); return null; }
+        if (!entry || !mime) { missing.add(extOf(path).toUpperCase() || T('imageWord','ảnh')); return null; }
         const blob = new Blob([await entry.async('blob')], { type: mime });
         const url = URL.createObjectURL(blob);
         try {
@@ -168,17 +170,17 @@ $('#a-run').addEventListener('click', async () => {
   const file = pptxFile;
   showErr('#a-err', '');
   btn.disabled = true;
-  btn.textContent = 'Đang đọc file…';
+  btn.textContent = T('reading','Đang đọc file…');
   try {
     const zip = await loadZip(await file.arrayBuffer());
     let pres: Presentation;
     try {
       pres = await readPresentation({ text: async (p) => (await zip.file(p)?.async('string')) ?? null });
     } catch (e) {
-      throw new Error(`Không đọc được bài trình chiếu: ${(e as Error).message}`);
+      throw new Error(`${T('err.readPres','Không đọc được bài trình chiếu')}: ${(e as Error).message}`);
     }
-    if (!pres.slides.length) throw new Error('File không có trang chiếu nào.');
-    if (pres.slides.length > MAX_PAGES) throw new Error(`File có ${pres.slides.length} trang chiếu, vượt quá giới hạn ${MAX_PAGES}.`);
+    if (!pres.slides.length) throw new Error(T('err.noSlides','File không có trang chiếu nào.'));
+    if (pres.slides.length > MAX_PAGES) throw new Error(`${T('err.tooMany1','File có')} ${pres.slides.length} ${T('err.tooManySlides','trang chiếu, vượt quá giới hạn')} ${MAX_PAGES}.`);
     // Chờ phông tiếng Việt dự phòng sẵn sàng để chữ không bị vẽ bằng phông mặc định
     await Promise.all(['400', '700'].map((w) => document.fonts.load(`${w} 16px "Be Vietnam Pro"`).catch(() => null)));
     const missing = new Set<string>();
@@ -187,34 +189,34 @@ $('#a-run').addEventListener('click', async () => {
     const pdf = await newPdf();
     const thumbs: HTMLCanvasElement[] = [];
     for (const slide of pres.slides) {
-      btn.textContent = `Đang vẽ trang ${slide.index}/${pres.slides.length}…`;
+      btn.textContent = `${T('drawing','Đang vẽ trang')} ${slide.index}/${pres.slides.length}…`;
       const canvas = await renderSlide(pres, slide, q.px, load);
       const img = await pdf.embedJpg(await canvasToBytes(canvas));
       pdf.addPage([pres.width, pres.height]).drawImage(img, { x: 0, y: 0, width: pres.width, height: pres.height });
       thumbs.push(thumb(canvas));
       canvas.width = canvas.height = 0; // trả bộ nhớ ngay
     }
-    btn.textContent = 'Đang tạo PDF…';
+    btn.textContent = T('makingPdf','Đang tạo PDF…');
     const name = safeFileName(baseName(file.name));
     pdf.setTitle(name);
     const blob = pdfBlob(await pdf.save());
     const out = $('#a-out');
     out.innerHTML = `
       <div class="stat-grid">
-        <div class="stat"><span class="stat-label">Số trang</span><span class="stat-value">${pres.slides.length}</span></div>
-        <div class="stat stat--main"><span class="stat-label">File PDF</span><span class="stat-value">${fmtSize(blob.size)}</span></div>
+        <div class="stat"><span class="stat-label">${T('pages','Số trang')}</span><span class="stat-value">${pres.slides.length}</span></div>
+        <div class="stat stat--main"><span class="stat-label">${T('pdfFile','File PDF')}</span><span class="stat-value">${fmtSize(blob.size)}</span></div>
       </div>
-      ${missing.size ? `<p class="note">Có ảnh định dạng ${[...missing].map(escapeHtml).join(', ')} trình duyệt không vẽ được nên đã bỏ qua.</p>` : ''}
-      <div class="actions"><button type="button" class="btn btn-primary" id="a-dl">Tải file PDF</button></div>`;
+      ${missing.size ? `<p class="note">${T('missing1','Có ảnh định dạng')} ${[...missing].map(escapeHtml).join(', ')} ${T('missing2','trình duyệt không vẽ được nên đã bỏ qua.')}</p>` : ''}
+      <div class="actions"><button type="button" class="btn btn-primary" id="a-dl">${T('a.dl','Tải file PDF')}</button></div>`;
     out.append(previewGrid(thumbs));
     $('#a-dl').addEventListener('click', () => downloadBlob(blob, `${name}.pdf`));
     downloadBlob(blob, `${name}.pdf`);
-    toast(`Đã chuyển ${pres.slides.length} trang sang PDF`);
+    toast(`${T('toast.a1','Đã chuyển')} ${pres.slides.length} ${T('toast.a2','trang sang PDF')}`);
   } catch (e) {
     showErr('#a-err', (e as Error).message);
   } finally {
     btn.disabled = false;
-    btn.textContent = 'Chuyển sang PDF';
+    btn.textContent = T('a.run','Chuyển sang PDF');
   }
 });
 bindDropzone($('#a-drop'), $<HTMLInputElement>('#a-file'), pickPptx);
@@ -238,8 +240,8 @@ function pickPdf(files: File[]): void {
   showErr('#b-err', '');
   $('#b-out').innerHTML = '';
   if (!f) return;
-  if (extOf(f.name) !== 'pdf' && f.type !== 'application/pdf') return showErr('#b-err', `${f.name}: không phải file PDF.`);
-  if (f.size > MAX_BYTES) return showErr('#b-err', `${f.name}: lớn hơn 100 MB.`);
+  if (extOf(f.name) !== 'pdf' && f.type !== 'application/pdf') return showErr('#b-err', `${f.name}: ${T('err.notPdf','không phải file PDF.')}`);
+  if (f.size > MAX_BYTES) return showErr('#b-err', `${f.name}: ${T('err.tooBig','lớn hơn 100 MB.')}`);
   pdfFile = f;
   $<HTMLButtonElement>('#b-run').disabled = false;
   $('#b-out').innerHTML = `<p class="split-info"><b>${escapeHtml(f.name)}</b> · ${fmtSize(f.size)}</p>`;
@@ -261,18 +263,18 @@ $('#b-run').addEventListener('click', async () => {
   const file = pdfFile;
   showErr('#b-err', '');
   btn.disabled = true;
-  btn.textContent = 'Đang đọc file…';
+  btn.textContent = T('reading','Đang đọc file…');
   const doc = await openPdf(new Uint8Array(await file.arrayBuffer())).catch((e: Error) => {
     showErr('#b-err', e.message);
     return null;
   });
   if (!doc) {
     btn.disabled = false;
-    btn.textContent = 'Chuyển sang PowerPoint';
+    btn.textContent = T('b.run','Chuyển sang PowerPoint');
     return;
   }
   try {
-    if (doc.numPages > MAX_PAGES) throw new Error(`File có ${doc.numPages} trang, vượt quá giới hạn ${MAX_PAGES}.`);
+    if (doc.numPages > MAX_PAGES) throw new Error(`${T('err.tooMany1','File có')} ${doc.numPages} ${T('err.tooManyPages','trang, vượt quá giới hạn')} ${MAX_PAGES}.`);
     await loadScript(CDN.pptxgen, 'PptxGenJS');
     const pptx = new (global<new () => PptxDoc>('PptxGenJS'))();
     // Khổ trang chiếu theo trang đầu (đơn vị inch, PowerPoint cho phép 1–56 inch)
@@ -290,7 +292,7 @@ $('#b-run').addEventListener('click', async () => {
     const withNotes = $<HTMLInputElement>('#b-notes').checked;
     const thumbs: HTMLCanvasElement[] = [];
     for (let n = 1; n <= doc.numPages; n++) {
-      btn.textContent = `Đang chuyển trang ${n}/${doc.numPages}…`;
+      btn.textContent = `${T('converting','Đang chuyển trang')} ${n}/${doc.numPages}…`;
       const page = await doc.getPage(n);
       const vp1 = page.getViewport({ scale: 1 });
       // Cạnh dài của ảnh trang bằng số điểm ảnh theo mức chất lượng
@@ -316,26 +318,26 @@ $('#b-run').addEventListener('click', async () => {
       thumbs.push(thumb(canvas));
       canvas.width = canvas.height = 0;
     }
-    btn.textContent = 'Đang tạo file PowerPoint…';
+    btn.textContent = T('makingPptx','Đang tạo file PowerPoint…');
     const blob = await pptx.write({ outputType: 'blob' });
     const name = safeFileName(baseName(file.name));
     const out = $('#b-out');
     out.innerHTML = `
       <div class="stat-grid">
-        <div class="stat"><span class="stat-label">Số trang chiếu</span><span class="stat-value">${doc.numPages}</span></div>
-        <div class="stat stat--main"><span class="stat-label">File PowerPoint</span><span class="stat-value">${fmtSize(blob.size)}</span></div>
+        <div class="stat"><span class="stat-label">${T('numSlides','Số trang chiếu')}</span><span class="stat-value">${doc.numPages}</span></div>
+        <div class="stat stat--main"><span class="stat-label">${T('pptxFile','File PowerPoint')}</span><span class="stat-value">${fmtSize(blob.size)}</span></div>
       </div>
-      <div class="actions"><button type="button" class="btn btn-primary" id="b-dl">Tải file .pptx</button></div>`;
+      <div class="actions"><button type="button" class="btn btn-primary" id="b-dl">${T('b.dl','Tải file .pptx')}</button></div>`;
     out.append(previewGrid(thumbs));
     $('#b-dl').addEventListener('click', () => downloadBlob(blob, `${name}.pptx`));
     downloadBlob(blob, `${name}.pptx`);
-    toast(`Đã chuyển ${doc.numPages} trang sang PowerPoint`);
+    toast(`${T('toast.b1','Đã chuyển')} ${doc.numPages} ${T('toast.b2','trang sang PowerPoint')}`);
   } catch (e) {
     showErr('#b-err', (e as Error).message);
   } finally {
     await doc.destroy();
     btn.disabled = false;
-    btn.textContent = 'Chuyển sang PowerPoint';
+    btn.textContent = T('b.run','Chuyển sang PowerPoint');
   }
 });
 bindDropzone($('#b-drop'), $<HTMLInputElement>('#b-file'), pickPdf);
