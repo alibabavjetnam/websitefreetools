@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Không tìm thấy trang — WFTools</title>
+    <title>Page not found — WFTools</title>
     <meta name="robots" content="noindex, follow" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
@@ -23,15 +23,49 @@
   <body>
     <div class="box">
       <div class="code">404</div>
-      <h1>Không tìm thấy trang này</h1>
-      <p>Trang bạn tìm có thể đã đổi địa chỉ hoặc không tồn tại. Hãy quay lại trang chủ để chọn công cụ.</p>
-      <a class="btn" href="/">Về trang chủ</a>
-      <div class="links">
-        <a href="/tools/qr-code.html">Tạo mã QR</a> ·
-        <a href="/tools/image-convert.html">Nén ảnh</a> ·
-        <a href="/tools/pdf-merge.html">Nối PDF</a> ·
-        <a href="/tools/loan.html">Tính khoản vay</a>
-      </div>
+      <h1 id="t-title">Page not found</h1>
+      <p id="t-text">This page may have moved or does not exist. Go back to the home page to pick a tool.</p>
+      <a class="btn" id="t-home" href="/en/">Back to home</a>
+      <div class="links" id="t-links"></div>
     </div>
+    <script>
+      (function () {
+        var supported = ['en', 'vi', 'ja', 'zh'];
+        var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+        var lang = 'en';
+        outer: for (var i = 0; i < langs.length; i++) {
+          var code = String(langs[i] || '').toLowerCase().split('-')[0];
+          for (var j = 0; j < supported.length; j++) { if (supported[j] === code) { lang = code; break outer; } }
+        }
+        // Địa chỉ cũ chưa có tiền tố ngôn ngữ (vd. /tools/pdf-merge.html) → chuyển sang /<lang>/...
+        var path = location.pathname;
+        if (/^\/(tools\/[a-z0-9-]+\.html|chinh-sach-bao-mat\.html|dieu-khoan\.html|privacy-policy\.html)$/.test(path)) {
+          location.replace('/' + lang + path + location.search + location.hash);
+          return;
+        }
+        var T = {
+          en: ['Page not found', 'This page may have moved or does not exist. Go back to the home page to pick a tool.', 'Back to home', ['QR code', 'Compress image', 'Merge PDF', 'Loan calculator']],
+          vi: ['Không tìm thấy trang này', 'Trang bạn tìm có thể đã đổi địa chỉ hoặc không tồn tại. Hãy quay lại trang chủ để chọn công cụ.', 'Về trang chủ', ['Tạo mã QR', 'Nén ảnh', 'Nối PDF', 'Tính khoản vay']],
+          ja: ['ページが見つかりません', 'ページの場所が変わったか、存在しない可能性があります。ホームに戻ってツールを選んでください。', 'ホームへ戻る', ['QRコード', '画像を圧縮', 'PDFを結合', 'ローン計算']],
+          zh: ['找不到此页面', '该页面可能已移动或不存在。请返回首页选择工具。', '返回首页', ['二维码', '压缩图片', '合并 PDF', '贷款计算']]
+        }[lang];
+        var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
+        document.documentElement.lang = lang;
+        document.title = T[0] + ' — WFTools';
+        document.getElementById('t-title').textContent = T[0];
+        document.getElementById('t-text').textContent = T[1];
+        var home = document.getElementById('t-home');
+        home.textContent = T[2];
+        home.href = '/' + lang + '/';
+        var box = document.getElementById('t-links');
+        for (var k = 0; k < ids.length; k++) {
+          var a = document.createElement('a');
+          a.href = '/' + lang + '/tools/' + ids[k] + '.html';
+          a.textContent = T[3][k];
+          box.appendChild(a);
+          if (k < ids.length - 1) box.appendChild(document.createTextNode(' · '));
+        }
+      })();
+    </script>
   </body>
 </html>
