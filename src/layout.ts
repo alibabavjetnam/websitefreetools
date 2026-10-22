@@ -4,6 +4,7 @@ import { lineIcon } from './icons';
 import { GoogleAuthError, currentUser, signIn, signOut } from './google/auth';
 import { encodeQr, qrToSvg } from './lib/qr';
 import { barcodeToSvg, encodeBarcode } from './lib/barcode';
+import { flagSvg } from './flags';
 import { LANGS, LANG_NAMES, applyI18n, currentLang, groupName, homeHref, langBase, staticHref, t, toolDesc, toolName } from './i18n';
 
 export function toolHref(tool: ToolInfo): string {
@@ -45,11 +46,11 @@ function escapeHtml(s: string): string {
 
 function renderLangSwitch(): string {
   const cur = currentLang();
-  const items = LANGS.map((l) => `<a href="${escapeHtml(switchLangHref(l))}" hreflang="${l}" class="lang-item${l === cur ? ' is-active' : ''}">${escapeHtml(LANG_NAMES[l] ?? l)}</a>`).join('');
+  const items = LANGS.map((l) => `<a href="${escapeHtml(switchLangHref(l))}" hreflang="${l}" class="lang-item${l === cur ? ' is-active' : ''}">${flagSvg(l)}<span>${escapeHtml(LANG_NAMES[l] ?? l)}</span></a>`).join('');
   return `
     <div class="lang-switch">
       <button type="button" class="lang-btn" data-lang-toggle aria-haspopup="true" aria-expanded="false" aria-label="${escapeHtml(t('lang.label', 'Language'))}">
-        <span aria-hidden="true">🌐</span><span class="lang-cur">${escapeHtml(LANG_NAMES[cur] ?? cur)}</span>
+        ${flagSvg(cur) || '<span aria-hidden="true">🌐</span>'}<span class="lang-cur">${escapeHtml(LANG_NAMES[cur] ?? cur)}</span>
       </button>
       <div class="lang-menu" hidden>${items}</div>
     </div>`;

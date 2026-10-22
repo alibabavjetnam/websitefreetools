@@ -2513,7 +2513,8 @@ fieldset.field {
 .lang-btn:hover { border-color: var(--accent); color: var(--accent); }
 .lang-cur { font-weight: 500; }
 .lang-menu { position: absolute; right: 0; top: calc(100% + 6px); z-index: 60; min-width: 150px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: 0 8px 24px rgba(16,24,40,.12); padding: 4px; }
-.lang-item { display: block; padding: 8px 12px; border-radius: var(--radius-sm); color: var(--ink); text-decoration: none; font-size: .9rem; }
+.flag { flex: none; border-radius: 2px; display: block; }
+.lang-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radius-sm); color: var(--ink); text-decoration: none; font-size: .9rem; }
 .lang-item:hover { background: var(--paper); }
 .lang-item.is-active { color: var(--accent); font-weight: 600; }
 @media (max-width: 800px) { .lang-cur { display: none; } }
