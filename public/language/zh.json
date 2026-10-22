@@ -64,7 +64,98 @@
     "cdn.loadFail": "无法加载所需的库。请检查网络连接后重试。",
     "cdn.pdfLoadFail": "无法加载 PDF 阅读器。请检查网络连接后重试。",
     "cdn.pdfPassword": "此 PDF 设有密码。请先解除密码保护。",
-    "cdn.pdfCorrupt": "无法读取 PDF 文件，文件可能已损坏。"
+    "cdn.pdfCorrupt": "无法读取 PDF 文件，文件可能已损坏。",
+    "lib.barcode.empty": "请输入要编码的内容。",
+    "lib.barcode.code128Chars": "Code 128 只支持英文字母、数字和常见符号。请去掉汉字或带音标的字符，或改用“二维码生成”工具。",
+    "lib.barcode.digitsOnly": "{name} 只能输入数字，请去掉字母和符号。",
+    "lib.barcode.badCheck": "最后一位校验码不正确，应为 {expected}。您也可以省略最后一位，系统会自动补上。",
+    "lib.barcode.needDigits": "{name} 需要 {n} 位数字（含校验码则为 {n1} 位）。",
+    "lib.barcode.code39Bad": "Code 39 不支持字符“{bad}”。只能使用 A–Z、0–9、- . $ / + % 和空格。",
+    "lib.barcode.sample.CODE128": "WFT-2026-0001",
+    "lib.barcode.sample.EAN13": "690123456789",
+    "lib.barcode.sample.EAN8": "6912345",
+    "lib.barcode.sample.UPCA": "03600029145",
+    "lib.barcode.sample.CODE39": "WFTOOLS-39",
+    "lib.qr.tooLong": "内容过长，无法生成二维码。请缩短内容或降低纠错级别。",
+    "lib.xml.withLine": "{msg}（第 {line} 行）",
+    "lib.xml.textOutside": "根元素之外有文字。请把它移到主标签内，或删除。",
+    "lib.xml.commentOpen": "注释没有闭合。请在末尾加上 -->。",
+    "lib.xml.cdataOpen": "CDATA 块没有闭合。请在末尾加上 ]]>。",
+    "lib.xml.declOpen": "以 <? 开头的声明没有闭合。请在末尾加上 ?>。",
+    "lib.xml.closeIncomplete": "结束标签不完整。请在末尾加上 >。",
+    "lib.xml.closeNoOpen": "结束标签 </{name}> 没有对应的开始标签。请删除它，或在前面加上 <{name}>。",
+    "lib.xml.closeMismatch": "标签 <{open}> 被 </{name}> 错误地闭合了。请改成 </{open}>。",
+    "lib.xml.badTag": "这个标签无效。请检查 < 后面的文字。",
+    "lib.xml.tagIncomplete": "标签 <{name}> 没有写完。请在末尾加上 >。",
+    "lib.xml.badAttr": "标签 <{name}> 中的属性无效。请写成 name=\"值\" 的形式。",
+    "lib.xml.tooDeep": "XML 嵌套层级太深。请简化结构。",
+    "lib.xml.unclosed": "标签 <{name}> 没有闭合。请在应结束的位置加上 </{name}>。",
+    "lib.xml.oneRoot": "XML 必须有且只有一个根元素。请用一个主标签把全部内容包起来。",
+    "lib.xml.noElement": "没有找到任何 XML 元素。请确认数据以 <root> 之类的标签开头。",
+    "lib.extract.badOffice": "文件已损坏，或不是新版 Office 格式（.docx、.pptx、.xlsx）。请用 Office 打开后重新保存。",
+    "lib.extract.noWordText": "在这个 Word 文件中没有找到文字。请确认文件不是空的。",
+    "lib.extract.pdfNoText": "这个 PDF 没有文字层（通常是扫描的图片），无法比较内容。请改用由文档导出的 PDF。",
+    "lib.extract.tooBig": "文件超过 30 MB。请选择更小的文件。",
+    "lib.extract.oldDoc": "暂不支持旧版 Word 文件（.doc）。请用 Word 打开并另存为 .docx。",
+    "lib.extract.notText": "“{name}”不是文字文件，无法比较。请选择文本、Word、HTML 或 PDF 文件。",
+    "lib.extract.kindText": "文本",
+    "lib.ranges.empty": "请输入需要的页码，例如：1-3, 5, 8-",
+    "lib.ranges.badFormat": "“{part}”格式不正确。正确示例：1-3, 5, 8-",
+    "lib.ranges.min": "页码从 1 开始。",
+    "lib.ranges.over": "文件只有 {total} 页，“{part}”超出了页数范围。请使用不超过 {total} 的页码。",
+    "lib.ranges.reversed": "范围“{part}”顺序颠倒了。起始页必须小于结束页。",
+    "lib.pptx.emf": "EMF/WMF 格式图片",
+    "lib.pptx.chart": "图表",
+    "lib.pptx.embedded": "嵌入对象",
+    "lib.pptx.notPptx": "这不是有效的 PowerPoint（.pptx）文件。请选择 .pptx 文件。",
+    "lib.pptx.noSlides": "这个 PowerPoint 文件里没有幻灯片。请用 PowerPoint 打开并检查内容。",
+    "lib.pptx.unsupported": "{label}（暂不支持）",
+    "lib.pdf.locked": "“{name}”设置了密码或限制了编辑。请先解除保护。",
+    "lib.pdf.unreadable": "无法读取“{name}”。文件可能已损坏，或不是 PDF。",
+    "lib.diff.tooLong": "文本太长，无法比较（每侧最多 {max} 行）。请拆分成较小的部分。",
+    "lib.codetools.json.end": "缺少结尾：有括号、引号或其他符号没有闭合。",
+    "lib.codetools.json.comma": "多了一个逗号，或逗号前缺少值。",
+    "lib.codetools.json.closer": "结束括号前多了逗号，或缺少值。",
+    "lib.codetools.json.badChar": "无效字符{tok}。JSON 中的字符串和键名必须使用双引号。",
+    "lib.codetools.json.key": "键名必须放在双引号中，例如 \"name\"。",
+    "lib.codetools.json.control": "字符串包含控制字符或无效的转义序列。",
+    "lib.codetools.json.invalid": "JSON 无效。",
+    "lib.codetools.js.end": "缺少结尾：有括号 { ( [ 或字符串没有闭合。",
+    "lib.codetools.js.token": "遇到意外字符：请检查括号、逗号和分号。",
+    "lib.codetools.string": "字符串未闭合（缺少引号）。",
+    "lib.codetools.comment": "注释 /* */ 未闭合。",
+    "lib.codetools.js.declared": "{msg} — 该变量被重复声明。",
+    "lib.codetools.js.reserved": "使用了 JavaScript 保留关键字作为变量名。",
+    "lib.codetools.js.rvalue": "赋值错误：= 左边必须是变量。",
+    "lib.codetools.css.extraBrace": "多余的 }，没有对应的 {。",
+    "lib.codetools.css.noColon": "声明中属性与值之间缺少冒号“:”。",
+    "lib.codetools.css.atSemi": "@import/@charset 语句必须以分号“;”结尾。",
+    "lib.codetools.css.openBrace": "{ 没有用 } 闭合。",
+    "lib.codetools.css.outside": "{} 块之外有内容：需要用 { } 包起来。",
+    "lib.codetools.html.comment": "注释 <!-- --> 未闭合。",
+    "lib.codetools.html.tagGt": "标签没有用“>”闭合。",
+    "lib.codetools.html.tagGtQuote": "标签没有用“>”闭合（可能是属性引号未闭合）。",
+    "lib.codetools.html.closeNoOpen": "结束标签 </{tag}> 没有对应的开始标签。",
+    "lib.codetools.html.notClosedBefore": "在 </{close}> 之前，<{tag}> 标签没有闭合。",
+    "lib.codetools.html.notClosed": "<{tag}> 标签没有闭合。",
+    "lib.obfuscate.syntax": "JavaScript 代码有语法错误，暂时无法混淆：{msg}。请先修正错误后再试。",
+    "lib.obfuscate.invalidOutput": "无法为这段代码生成有效的混淆代码。请尝试关闭部分选项（例如“重命名局部变量”）。",
+    "lib.image.svg": "无法读取 SVG 文件。请确认文件有效后再试。",
+    "lib.image.heic": "此浏览器无法读取 iPhone 的 HEIC 照片。请用 Safari 打开，或先将照片转换为 JPG。",
+    "lib.image.unreadable": "无法读取图片，文件可能已损坏或不是图片。请换一个文件试试。",
+    "lib.image.noCanvas": "此浏览器不支持图片处理。请使用 Chrome、Edge 或 Safari 等较新的浏览器。",
+    "lib.image.noEncode": "此浏览器无法导出 {fmt} 格式。请选择 PNG 或 JPG 等其他格式。",
+    "lib.download.pngDraw": "无法绘制 PNG 图片，请重试。",
+    "lib.download.noCanvas": "此浏览器不支持 canvas，请使用较新的浏览器。",
+    "lib.download.pngMake": "无法创建 PNG 文件，请重试。",
+    "lib.ui.copied": "已复制",
+    "lib.ui.copyFail": "无法复制，请手动选中文字后复制。",
+    "home.guideTitle": "使用方法",
+    "home.step1": "选择工具| 在上方列表或左侧菜单中选择。",
+    "home.step2": "输入内容|，结果会在您输入时立即显示。",
+    "home.step3": "下载图片|：PNG 可直接使用，SVG 用于大幅面打印也不会失真。",
+    "home.aboutTitle": "关于 WFTools",
+    "home.aboutText": "WFTools 把日常常用的小工具集中在一个地方。所有功能都在您自己的设备上运行，无需安装、无需账号，您输入的内容也不会被发送到任何地方。新工具会陆续加入。"
   },
   "pages": {
     "home": {
@@ -332,7 +423,11 @@
       "empty": "还没有学员。在上方输入框添加姓名(可粘贴多行)。",
       "cell.title": "点击切换",
       "del": "删除",
-      "del.confirm": "再点一次"
+      "del.confirm": "再点一次",
+      "sheetTitle": "WFTools - 考勤",
+      "mark.absent": "缺",
+      "mark.late": "迟",
+      "mark.excused": "假"
     },
     "barcode": {
       "legend.format": "条码制式",
@@ -349,7 +444,7 @@
       "meta.enter": "输入编码以生成,例如",
       "meta.autoCheck": "已自动添加校验位",
       "hint.CODE128": "支持无重音字母、数字和符号。常用于订单、运输、仓库。",
-      "hint.EAN13": "输入 12 位数字,末位自动添加。零售条码;越南商品以 893 开头。",
+      "hint.EAN13": "输入 12 位数字，最后一位校验码会自动添加。零售商品通用条码，中国大陆商品的条码通常以 690–699 开头。",
       "hint.EAN8": "输入 7 位数字,末位自动添加。用于小型商品。",
       "hint.UPCA": "输入 11 位数字,末位自动添加。常见于美国商品。",
       "hint.CODE39": "支持无重音大写字母、数字及 - . $ / + %。常用于员工证、设备标签。",
@@ -456,7 +551,10 @@
       "err.json": "无效的JSON",
       "err.jsonHint": "请使用检查工具定位错误。",
       "err.format": "无法格式化",
-      "toast.dl": "文件已下载"
+      "toast.dl": "文件已下载",
+      "sample.js": "function greet(name){console.log(\"你好，\"+name)}\nconst list=[1,2,3].map(x=>x*2);greet(\"WFTools\")",
+      "sample.html": "<ul><li>第一项</li><li>第二项</li></ul><p class=\"note\">你好</p>",
+      "sample.json": "{\"name\":\"WFTools\",\"tools\":[\"二维码\",\"条形码\"],\"free\":true}"
     },
     "code-check": {
       "aria.lang": "选择语言",
@@ -472,7 +570,10 @@
       "tag.error": "错误",
       "tag.warn": "警告",
       "line": "行",
-      "col": "列"
+      "col": "列",
+      "sample.js": "function sum(a, b) {\n  return a + b\n}\nconst result = sum(2, 3;",
+      "sample.html": "<div class=\"box\">\n  <p>你好\n  <ul><li>第一项</li></ul>\n</div>",
+      "sample.json": "{\n  \"name\": \"WFTools\",\n  \"count\": 12,\n}"
     },
     "colors": {
       "aria.pick": "选择基础色",
@@ -612,7 +713,11 @@
       "city.America/New_York": "纽约",
       "city.America/Chicago": "芝加哥",
       "city.America/Los_Angeles": "洛杉矶",
-      "city.UTC": "UTC"
+      "city.UTC": "UTC",
+      "fx.defaultAmount": "100",
+      "fx.defaultFrom": "CNY",
+      "fx.defaultTo": "USD",
+      "tz.default": "Asia/Shanghai"
     },
     "cv": {
       "add.exp": "+ 添加经历",
@@ -675,7 +780,24 @@
       "untitled": "未命名简历",
       "toast.saved": "简历已保存",
       "toast.badData": "简历数据已损坏（可能在Google Sheets中被手动编辑）",
-      "del.confirm": "再次点击删除"
+      "del.confirm": "再次点击删除",
+      "sm.name": "王小明",
+      "sm.headline": "销售专员",
+      "sm.email": "xiaoming.wang@email.com",
+      "sm.phone": "138 0013 8000",
+      "sm.address": "北京市朝阳区",
+      "sm.summary": "拥有 3 年以上 B2B 销售经验，擅长维护企业客户和编制报价。希望进一步发展为销售团队负责人。",
+      "sm.present": "至今",
+      "sm.exp1.title": "销售专员",
+      "sm.exp1.place": "北京ABC科技有限公司",
+      "sm.exp1.desc": "负责 40 家企业客户\n2025 年销售额完成目标的 120%",
+      "sm.exp2.title": "客户服务专员",
+      "sm.exp2.place": "XYZ 商店",
+      "sm.exp2.desc": "通过电话和微信处理订单并解答客户咨询",
+      "sm.edu.title": "工商管理专业 本科",
+      "sm.edu.place": "XX 大学",
+      "sm.skills": "商务谈判、报价、Excel、CRM、演示汇报",
+      "sm.languages": "英语（CET-6 580 分）"
     },
     "cycle-track": {
       "logTitle": "记录经期开始日",
@@ -751,7 +873,11 @@
       "del": "删除",
       "noTx": "暂无交易。在上方框中添加第一笔。",
       "err.amount": "请输入大于0的金额。",
-      "err.date": "请选择日期。"
+      "err.date": "请选择日期。",
+      "csv.header": "日期,类型,类别,金额,备注",
+      "csv.expense": "支出",
+      "csv.income": "收入",
+      "csv.file": "收支"
     },
     "data-convert": {
       "srcTitle": "源数据",
@@ -817,7 +943,8 @@
       "outinfo.cols": "列",
       "outinfo.result": "结果",
       "outinfo.trunc": "（框内仅显示开头，下载文件查看完整内容）",
-      "toast.dl": "已下载"
+      "toast.dl": "已下载",
+      "sample": "[\n  { \"id\": \"P001\", \"name\": \"冰拿铁\", \"price\": 25, \"in_stock\": true, \"category\": { \"id\": \"DR\", \"name\": \"饮品\" } },\n  { \"id\": \"P002\", \"name\": \"火腿三明治\", \"price\": 18, \"in_stock\": false, \"category\": { \"id\": \"FD\", \"name\": \"食物\" } }\n]"
     },
     "file-diff": {
       "drop.title": "选择文件或拖放",
@@ -861,7 +988,10 @@
       "rpt.compare": "比较",
       "rpt.same": "相同",
       "rpt.by": "创建者",
-      "toast.report": "已下载比较报告"
+      "toast.report": "已下载比较报告",
+      "sample.a": "买卖合同\n甲方：ABC公司\n价格：29元\n期限：30天\n签订地：北京",
+      "sample.b": "买卖合同\n甲方：ABC有限公司\n价格：32元\n签订地：北京\n自签字之日起生效",
+      "fn.report": "对比报告.html"
     },
     "fullscreen-clock": {
       "tab.clock": "时钟",
@@ -1080,7 +1210,11 @@
       "err.qty": "数量必须大于0。",
       "err.notEnough1": "仅剩",
       "err.notEnough2": "库存，不足以出库",
-      "del.confirm": "再次点击删除"
+      "del.confirm": "再次点击删除",
+      "defaultUnit": "件",
+      "skuPh": "TXU-WHITE-M",
+      "csv.header": "SKU,名称,单位,库存,最低库存,成本价,售价",
+      "csv.file": "库存"
     },
     "journal": {
       "writeToday": "写今天",
@@ -1101,7 +1235,8 @@
       "empty": "暂无日记。",
       "toast.empty": "保存前请先写点内容",
       "toast.saved": "已保存日记",
-      "del.confirm": "再次点击"
+      "del.confirm": "再次点击",
+      "sheetTitle": "WFTools - 日记"
     },
     "js-obfuscate": {
       "method": "混淆方式",
@@ -1118,7 +1253,8 @@
       "note": "本工具只是让代码<b>难读、难复制</b>，并非真正加密——有技术的人仍可还原。代码运行结果与原始一致。全局变量和属性名保持不变，以免破坏与其他代码的关联。若代码含<code>eval</code>或<code>with</code>，为安全起见会自动关闭变量重命名。",
       "stat.src": "原始代码",
       "stat.out": "混淆后",
-      "toast.dl": "文件已下载"
+      "toast.dl": "文件已下载",
+      "sample": "// 示例：统计按钮点击次数\nfunction createCounter(start) {\n  let clicks = start;\n  return function increase() {\n    clicks = clicks + 1;\n    console.log(\"已点击 \" + clicks + \" 次\");\n    return clicks;\n  };\n}\n\nconst counter = createCounter(0);\ncounter();\ncounter();"
     },
     "loan": {
       "principal": "贷款金额",
@@ -1321,7 +1457,11 @@
       "toast.saved": "已保存",
       "toast.badData": "单据数据已损坏（可能在Google Sheets中被手动编辑）",
       "toast.duplicated": "已复制，记得点击保存",
-      "del.confirm": "再次点击删除"
+      "del.confirm": "再次点击删除",
+      "numPrefix.quote": "报价",
+      "numPrefix.invoice": "发票",
+      "defaultUnit": "件",
+      "p.cur": "¥{n}"
     },
     "menu-qr": {
       "blank": "空白菜单",
@@ -1359,7 +1499,24 @@
       "del": "删除",
       "noSaved": "尚未保存任何菜单。",
       "toast.badData": "菜单数据已损坏",
-      "del.confirm": "再次点击删除"
+      "del.confirm": "再次点击删除",
+      "sm.name": "梧桐咖啡",
+      "sm.info": "北京市朝阳区建国路88号 · 营业时间 8:00–22:00\nWi‑Fi: WuTong / 12345678",
+      "sm.note": "以上价格均含税，请到前台点单或呼叫服务员。",
+      "sm.cat1": "咖啡",
+      "sm.cat2": "茶饮与果汁",
+      "sm.i1": "美式咖啡",
+      "sm.i2": "拿铁",
+      "sm.i3": "海盐芝士拿铁",
+      "sm.i3d": "人气招牌，海盐芝士奶盖口感浓郁",
+      "sm.i4": "蜜桃乌龙茶",
+      "sm.i5": "鲜榨橙汁",
+      "sm.p1": "18",
+      "sm.p2": "25",
+      "sm.p3": "32",
+      "sm.p4": "22",
+      "sm.p5": "20",
+      "fileFallback": "shop"
     },
     "mindmap": {
       "d.root": "中心主题",
@@ -1393,7 +1550,8 @@
       "dlTxt": "下载 .txt",
       "toMap": "从摘要生成导图",
       "lesson": "课文",
-      "toast.mapMade": "已从摘要生成思维导图"
+      "toast.mapMade": "已从摘要生成思维导图",
+      "fn.summary": "摘要.txt"
     },
     "pdf-merge": {
       "aria.tabs": "选择操作",
@@ -1487,7 +1645,10 @@
       "empty.text": "输入链接或文本以生成二维码。",
       "meta.small": "码较紧凑，任何尺寸都易扫描。",
       "meta.mid": "码较密，建议打印3 cm以上。",
-      "meta.big": "内容较长，码很密。请精简内容或放大打印以便扫描。"
+      "meta.big": "内容较长，码很密。请精简内容或放大打印以便扫描。",
+      "ph.ssid": "My-Home-5G",
+      "ph.email": "name@example.com",
+      "ph.tel": "138 0013 8000"
     },
     "quiz-bank": {
       "defaultTitle": "选择题",
@@ -1530,7 +1691,8 @@
       "print.name": "姓名",
       "print.class": "班级",
       "print.score": "分数",
-      "print.answers": "答案"
+      "print.answers": "答案",
+      "fn.export": "题库.json"
     },
     "rsa-keys": {
       "keyLen": "密钥长度",
@@ -1630,7 +1792,9 @@
       "th.portion": "收入部分",
       "th.tax": "税额",
       "total": "合计",
-      "netLabel": "期望税后工资（实发）"
+      "netLabel": "期望税后工资（实发）",
+      "vnOnly": "仅适用于越南。",
+      "vnOnlyNote": "本工具按越南的社会保险和个人所得税规定计算（金额单位为越南盾，đ），不适用于其他国家。"
     },
     "study-timetable": {
       "defaultTitle": "课程表",
@@ -1655,7 +1819,8 @@
       "cancel": "取消",
       "clearCell": "清空单元格",
       "periodWord": "第",
-      "toast.saved": "已保存课时设置"
+      "toast.saved": "已保存课时设置",
+      "sheetTitle": "WFTools - 课程表"
     },
     "teaching-pay": {
       "addSession": "添加课时",
@@ -1683,7 +1848,9 @@
       "empty": "暂无课时。",
       "defaultTitle": "课时",
       "toast.csv": "已导出CSV",
-      "printTitle": "授课时数明细"
+      "printTitle": "授课时数明细",
+      "csvName": "teaching-hours.csv",
+      "monthPrefix": "—"
     },
     "water-tracker": {
       "today": "今天",
@@ -1714,7 +1881,14 @@
       "totalDays": "总天数",
       "weekendDays": "周末天数",
       "holidayDays": "节假日",
-      "holidaysOnWork": "落在工作日的节假日"
+      "holidaysOnWork": "落在工作日的节假日",
+      "hol.newYear": "元旦（1月1日）",
+      "hol.reunification": "南方解放日（4月30日）",
+      "hol.labour": "国际劳动节（5月1日）",
+      "hol.national": "国庆节（9月2日）",
+      "hol.tet": "春节（越南农历新年，Tết）",
+      "hol.hung": "雄王祭（祭祖日，Giỗ Tổ）",
+      "holiday": "节假日"
     },
     "world-clock": {
       "addCountry": "添加国家",
@@ -1731,7 +1905,38 @@
       "th.time": "当地时间",
       "th.date": "日期",
       "city.Asia/Ho_Chi_Minh": "河内 / 胡志明市",
-      "city.Asia/Shanghai": "北京 / 上海"
+      "city.Asia/Shanghai": "北京 / 上海",
+      "city.Asia/Bangkok": "曼谷",
+      "city.Asia/Singapore": "新加坡",
+      "city.Asia/Tokyo": "东京",
+      "city.Asia/Seoul": "首尔",
+      "city.Asia/Kolkata": "新德里",
+      "city.Asia/Jakarta": "雅加达",
+      "city.Asia/Kuala_Lumpur": "吉隆坡",
+      "city.Asia/Manila": "马尼拉",
+      "city.Asia/Dubai": "迪拜",
+      "city.Europe/Moscow": "莫斯科",
+      "city.Europe/London": "伦敦",
+      "city.Europe/Paris": "巴黎",
+      "city.Europe/Berlin": "柏林",
+      "city.Europe/Rome": "罗马",
+      "city.Europe/Madrid": "马德里",
+      "city.Europe/Amsterdam": "阿姆斯特丹",
+      "city.Europe/Istanbul": "伊斯坦布尔",
+      "city.America/New_York": "纽约（东部时间）",
+      "city.America/Chicago": "芝加哥（中部时间）",
+      "city.America/Denver": "丹佛（山地时间）",
+      "city.America/Los_Angeles": "洛杉矶（太平洋时间）",
+      "city.America/Toronto": "多伦多",
+      "city.America/Vancouver": "温哥华",
+      "city.America/Sao_Paulo": "圣保罗",
+      "city.America/Mexico_City": "墨西哥城",
+      "city.Australia/Sydney": "悉尼",
+      "city.Australia/Perth": "珀斯",
+      "city.Pacific/Auckland": "奥克兰",
+      "city.Africa/Johannesburg": "约翰内斯堡",
+      "city.Africa/Cairo": "开罗",
+      "defaultZones": "Asia/Shanghai,Asia/Tokyo,America/New_York,Europe/London"
     },
     "utm": {
       "preset.0": "Facebook（帖子）",
@@ -1813,7 +2018,8 @@
       "toast.picked": "已选择并复制短语",
       "u.h": "{n}小时",
       "u.m": "{n}分钟",
-      "u.s": "{n}秒"
+      "u.s": "{n}秒",
+      "sample": "冰牛奶咖啡是人们十分熟悉的饮品。每天早晨，数以百万计的人用一杯浓郁清爽的冰牛奶咖啡开启新的一天。\n\n想要做出好喝的冰牛奶咖啡，需要现磨的咖啡粉、牛奶和足量的冰块。咖啡要用滴滤的方式慢慢萃取，大约需要五分钟。\n\n如今，冰牛奶咖啡也深受各国朋友喜爱，出现在世界各地咖啡馆的菜单上。"
     },
     "text-to-html": {
       "t.h1": "大标题",
@@ -1847,7 +2053,9 @@
       "linkPrompt": "输入链接地址（URL）：",
       "toast.applied": "已应用HTML",
       "docTitle": "文档",
-      "toast.dl": "已下载HTML文件"
+      "toast.dl": "已下载HTML文件",
+      "sample": "<h2>欢迎使用 WFTools</h2><p>这是一个<strong>所见即所得</strong>的编辑器。像在 Word 里一样输入，工具会自动生成<em>简洁的 HTML 代码</em>。</p><ul><li>选中文字，再点击工具栏上的按钮</li><li>复制下方框中的 HTML 代码</li></ul>",
+      "fn.doc": "文档.html"
     },
     "watermark": {
       "tile": "平铺",

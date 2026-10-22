@@ -64,7 +64,98 @@
     "cdn.loadFail": "Could not load a required library. Check your connection and try again.",
     "cdn.pdfLoadFail": "Could not load the PDF reader. Check your connection and try again.",
     "cdn.pdfPassword": "This PDF is password-protected. Unlock it first.",
-    "cdn.pdfCorrupt": "Could not read the PDF file; it may be damaged."
+    "cdn.pdfCorrupt": "Could not read the PDF file; it may be damaged.",
+    "lib.barcode.empty": "Enter the content to encode.",
+    "lib.barcode.code128Chars": "Code 128 accepts only basic letters, digits and common symbols. Remove accented characters, or use the QR Code tool instead.",
+    "lib.barcode.digitsOnly": "{name} accepts digits only. Remove any letters or symbols.",
+    "lib.barcode.badCheck": "The last digit is not correct; it should be {expected}. You can leave it out and it will be added for you.",
+    "lib.barcode.needDigits": "{name} needs {n} digits (or {n1} digits including the check digit).",
+    "lib.barcode.code39Bad": "Code 39 does not support the character \"{bad}\". Use only A–Z, 0–9, - . $ / + % and spaces.",
+    "lib.barcode.sample.CODE128": "WFT-2026-0001",
+    "lib.barcode.sample.EAN13": "501234567890",
+    "lib.barcode.sample.EAN8": "7351353",
+    "lib.barcode.sample.UPCA": "03600029145",
+    "lib.barcode.sample.CODE39": "WFTOOLS-39",
+    "lib.qr.tooLong": "The content is too long for a QR code. Shorten it or lower the error correction level.",
+    "lib.xml.withLine": "{msg} (line {line})",
+    "lib.xml.textOutside": "There is text outside the root element. Move it inside the main tag or remove it.",
+    "lib.xml.commentOpen": "A comment is not closed. Add --> at the end of it.",
+    "lib.xml.cdataOpen": "A CDATA block is not closed. Add ]]> at the end of it.",
+    "lib.xml.declOpen": "A declaration starting with <? is not closed. Add ?> at the end of it.",
+    "lib.xml.closeIncomplete": "A closing tag is incomplete. Add > at the end of it.",
+    "lib.xml.closeNoOpen": "The closing tag </{name}> has no matching opening tag. Remove it or add <{name}> before it.",
+    "lib.xml.closeMismatch": "The tag <{open}> is closed by </{name}>. Change it to </{open}>.",
+    "lib.xml.badTag": "This tag is not valid. Check the text after the < sign.",
+    "lib.xml.tagIncomplete": "The tag <{name}> is not finished. Add > at the end of it.",
+    "lib.xml.badAttr": "An attribute in the tag <{name}> is not valid. Use the form name=\"value\".",
+    "lib.xml.tooDeep": "The XML is nested too deeply. Simplify its structure.",
+    "lib.xml.unclosed": "The tag <{name}> is never closed. Add </{name}> where it should end.",
+    "lib.xml.oneRoot": "XML must have exactly one root element. Wrap everything in a single main tag.",
+    "lib.xml.noElement": "No XML element was found. Check that the data starts with a tag such as <root>.",
+    "lib.extract.badOffice": "The file is damaged or is not a modern Office file (.docx, .pptx, .xlsx). Try opening it in Office and saving it again.",
+    "lib.extract.noWordText": "No text was found in this Word file. Check that the file is not empty.",
+    "lib.extract.pdfNoText": "This PDF has no text layer (it is usually a scanned image), so its content cannot be compared. Use a PDF exported from a text document instead.",
+    "lib.extract.tooBig": "The file is larger than 30 MB. Choose a smaller file.",
+    "lib.extract.oldDoc": "Old Word files (.doc) are not supported. Open it in Word and save it as .docx.",
+    "lib.extract.notText": "\"{name}\" is not a text file, so it cannot be compared. Choose a text, Word, HTML or PDF file.",
+    "lib.extract.kindText": "Text",
+    "lib.ranges.empty": "Enter the pages you want, for example: 1-3, 5, 8-",
+    "lib.ranges.badFormat": "\"{part}\" is not in the right format. Valid example: 1-3, 5, 8-",
+    "lib.ranges.min": "Page numbers start at 1.",
+    "lib.ranges.over": "The file has only {total} pages, so \"{part}\" is out of range. Use page numbers up to {total}.",
+    "lib.ranges.reversed": "The range \"{part}\" is backwards. The first page must be smaller than the last page.",
+    "lib.pptx.emf": "EMF/WMF image",
+    "lib.pptx.chart": "Chart",
+    "lib.pptx.embedded": "Embedded object",
+    "lib.pptx.notPptx": "This is not a valid PowerPoint (.pptx) file. Choose a .pptx file.",
+    "lib.pptx.noSlides": "This PowerPoint file has no slides. Open it in PowerPoint and check its content.",
+    "lib.pptx.unsupported": "{label} (not supported)",
+    "lib.pdf.locked": "\"{name}\" is password-protected or locked against editing. Unlock the file first.",
+    "lib.pdf.unreadable": "Could not read \"{name}\". The file may be damaged or may not be a PDF.",
+    "lib.diff.tooLong": "The text is too long to compare (up to {max} lines per side). Split it into smaller parts.",
+    "lib.codetools.json.end": "The ending is missing: a bracket, quote or other symbol is not closed.",
+    "lib.codetools.json.comma": "There is an extra comma, or a value is missing before the comma.",
+    "lib.codetools.json.closer": "There is a trailing comma before the closing bracket, or a value is missing.",
+    "lib.codetools.json.badChar": "Invalid character{tok}. JSON needs double quotes around strings and key names.",
+    "lib.codetools.json.key": "Key names must be in double quotes, for example \"name\".",
+    "lib.codetools.json.control": "The string contains a control character or an invalid escape sequence.",
+    "lib.codetools.json.invalid": "Invalid JSON.",
+    "lib.codetools.js.end": "The ending is missing: a bracket { ( [ or a string is not closed.",
+    "lib.codetools.js.token": "Unexpected character: check the brackets, commas and semicolons.",
+    "lib.codetools.string": "The string is not closed (a quote is missing).",
+    "lib.codetools.comment": "The comment /* */ is not closed.",
+    "lib.codetools.js.declared": "{msg} — this variable is declared twice.",
+    "lib.codetools.js.reserved": "A reserved JavaScript keyword is used as a variable name.",
+    "lib.codetools.js.rvalue": "Invalid assignment: the left side of = must be a variable.",
+    "lib.codetools.css.extraBrace": "Extra } with no matching {.",
+    "lib.codetools.css.noColon": "The declaration is missing a colon \":\" between the property and its value.",
+    "lib.codetools.css.atSemi": "An @import/@charset statement must end with a semicolon \";\".",
+    "lib.codetools.css.openBrace": "The { is not closed with }.",
+    "lib.codetools.css.outside": "There is content outside a {} block: it needs to be wrapped in { }.",
+    "lib.codetools.html.comment": "The comment <!-- --> is not closed.",
+    "lib.codetools.html.tagGt": "The tag is not closed with \">\".",
+    "lib.codetools.html.tagGtQuote": "The tag is not closed with \">\" (an attribute quote may be unclosed).",
+    "lib.codetools.html.closeNoOpen": "The closing tag </{tag}> has no matching opening tag.",
+    "lib.codetools.html.notClosedBefore": "The <{tag}> tag is not closed before </{close}>.",
+    "lib.codetools.html.notClosed": "The <{tag}> tag is not closed.",
+    "lib.obfuscate.syntax": "The JavaScript has a syntax error, so it cannot be obfuscated yet: {msg}. Fix the error (the Syntax Check tool can help) and try again.",
+    "lib.obfuscate.invalidOutput": "Could not produce valid obfuscated code for this snippet. Try turning off some options (for example \"Rename local variables\").",
+    "lib.image.svg": "Could not read the SVG file. Check that it is a valid SVG and try again.",
+    "lib.image.heic": "This browser cannot read iPhone HEIC photos. Open the page in Safari, or convert the photo to JPG first.",
+    "lib.image.unreadable": "Could not read the image. The file may be damaged or may not be an image. Try another file.",
+    "lib.image.noCanvas": "This browser does not support image processing. Please use an up-to-date browser such as Chrome, Edge or Safari.",
+    "lib.image.noEncode": "This browser cannot export {fmt}. Choose another format such as PNG or JPG.",
+    "lib.download.pngDraw": "Could not draw the PNG image. Please try again.",
+    "lib.download.noCanvas": "This browser does not support canvas. Please use an up-to-date browser.",
+    "lib.download.pngMake": "Could not create the PNG file. Please try again.",
+    "lib.ui.copied": "Copied",
+    "lib.ui.copyFail": "Could not copy. Please select the text and copy it manually.",
+    "home.guideTitle": "How to use",
+    "home.step1": "Pick a tool| from the list above or the menu on the left.",
+    "home.step2": "Enter your content|. The result appears as you type.",
+    "home.step3": "Download the image| as a PNG to use right away, or as an SVG to print at large sizes without losing sharpness.",
+    "home.aboutTitle": "About",
+    "home.aboutText": "WFTools brings together small tools you use every day in one place. Everything runs on your own device: nothing to install, no account needed, and what you enter is never sent anywhere. New tools are added over time."
   },
   "pages": {
     "home": {
@@ -332,7 +423,11 @@
       "empty": "No students yet. Add names in the box above (you can paste multiple lines).",
       "cell.title": "Click to change",
       "del": "Delete",
-      "del.confirm": "Click again"
+      "del.confirm": "Click again",
+      "sheetTitle": "WFTools - Attendance",
+      "mark.absent": "A",
+      "mark.late": "L",
+      "mark.excused": "E"
     },
     "barcode": {
       "legend.format": "Barcode symbology",
@@ -349,7 +444,7 @@
       "meta.enter": "Enter a code to generate, e.g.",
       "meta.autoCheck": "auto-added check digit",
       "hint.CODE128": "Accepts letters (no accents), digits and symbols. Common for orders, shipping and warehouses.",
-      "hint.EAN13": "Enter 12 digits; the check digit is added automatically. Retail barcode; Vietnamese goods start with 893.",
+      "hint.EAN13": "Enter 12 digits; the check digit is added automatically. The standard retail barcode (UPC-A products from the US and Canada work as EAN-13 with a leading 0).",
       "hint.EAN8": "Enter 7 digits; the check digit is added automatically. For small products.",
       "hint.UPCA": "Enter 11 digits; the check digit is added automatically. Common on US goods.",
       "hint.CODE39": "Accepts uppercase letters (no accents), digits and - . $ / + %. Common for staff badges and equipment labels.",
@@ -456,7 +551,10 @@
       "err.json": "Invalid JSON",
       "err.jsonHint": "Use the Lint tool to locate the position.",
       "err.format": "Could not format",
-      "toast.dl": "File downloaded"
+      "toast.dl": "File downloaded",
+      "sample.js": "function greet(name){console.log(\"Hello, \"+name)}\nconst list=[1,2,3].map(x=>x*2);greet(\"WFTools\")",
+      "sample.html": "<ul><li>One</li><li>Two</li></ul><p class=\"note\">Hello</p>",
+      "sample.json": "{\"name\":\"WFTools\",\"tools\":[\"QR\",\"Barcode\"],\"free\":true}"
     },
     "code-check": {
       "aria.lang": "Choose language",
@@ -472,7 +570,10 @@
       "tag.error": "Error",
       "tag.warn": "Warning",
       "line": "line",
-      "col": "col"
+      "col": "col",
+      "sample.js": "function sum(a, b) {\n  return a + b\n}\nconst result = sum(2, 3;",
+      "sample.html": "<div class=\"box\">\n  <p>Hello\n  <ul><li>One</li></ul>\n</div>",
+      "sample.json": "{\n  \"name\": \"WFTools\",\n  \"count\": 12,\n}"
     },
     "colors": {
       "aria.pick": "Choose base color",
@@ -612,7 +713,11 @@
       "city.America/New_York": "New York",
       "city.America/Chicago": "Chicago",
       "city.America/Los_Angeles": "Los Angeles",
-      "city.UTC": "UTC"
+      "city.UTC": "UTC",
+      "fx.defaultAmount": "100",
+      "fx.defaultFrom": "USD",
+      "fx.defaultTo": "EUR",
+      "tz.default": "America/New_York"
     },
     "cv": {
       "add.exp": "+ Add experience",
@@ -675,7 +780,24 @@
       "untitled": "Untitled CV",
       "toast.saved": "CV saved",
       "toast.badData": "CV data is corrupted (may have been edited by hand in Google Sheets)",
-      "del.confirm": "Click again to delete"
+      "del.confirm": "Click again to delete",
+      "sm.name": "Emma Johnson",
+      "sm.headline": "Sales Representative",
+      "sm.email": "emma.johnson@email.com",
+      "sm.phone": "(555) 123-4567",
+      "sm.address": "Austin, TX",
+      "sm.summary": "Sales professional with 3+ years of B2B experience, skilled at managing business accounts and preparing quotes. Looking to grow into a sales team lead role.",
+      "sm.present": "Present",
+      "sm.exp1.title": "Sales Representative",
+      "sm.exp1.place": "ABC Corp.",
+      "sm.exp1.desc": "Managed 40 business accounts\nAchieved 120% of the 2025 sales quota",
+      "sm.exp2.title": "Customer Support Specialist",
+      "sm.exp2.place": "XYZ Store",
+      "sm.exp2.desc": "Handled customer orders and questions by phone and chat",
+      "sm.edu.title": "B.A. in Business Administration",
+      "sm.edu.place": "State University",
+      "sm.skills": "Negotiation, Quoting, Excel, CRM, Presentations",
+      "sm.languages": "English (native), Spanish (intermediate)"
     },
     "cycle-track": {
       "logTitle": "Log period start dates",
@@ -751,7 +873,11 @@
       "del": "Delete",
       "noTx": "No transactions yet. Add your first one in the box above.",
       "err.amount": "Enter an amount greater than 0.",
-      "err.date": "Choose a date."
+      "err.date": "Choose a date.",
+      "csv.header": "Date,Type,Category,Amount,Note",
+      "csv.expense": "expense",
+      "csv.income": "income",
+      "csv.file": "expenses"
     },
     "data-convert": {
       "srcTitle": "Source data",
@@ -817,7 +943,8 @@
       "outinfo.cols": "columns",
       "outinfo.result": "Result",
       "outinfo.trunc": "(box shows the start only, download the file for everything)",
-      "toast.dl": "Downloaded"
+      "toast.dl": "Downloaded",
+      "sample": "[\n  { \"id\": \"P001\", \"name\": \"Iced latte\", \"price\": 4.5, \"in_stock\": true, \"category\": { \"id\": \"DR\", \"name\": \"Drinks\" } },\n  { \"id\": \"P002\", \"name\": \"Ham sandwich\", \"price\": 6.25, \"in_stock\": false, \"category\": { \"id\": \"FD\", \"name\": \"Food\" } }\n]"
     },
     "file-diff": {
       "drop.title": "Choose a file or drag & drop",
@@ -861,7 +988,10 @@
       "rpt.compare": "Compare",
       "rpt.same": "Same",
       "rpt.by": "Created by",
-      "toast.report": "Comparison report downloaded"
+      "toast.report": "Comparison report downloaded",
+      "sample.a": "Sales Agreement\nParty A: ABC Company\nPrice: $29.00\nTerm: 30 days\nSigned in New York",
+      "sample.b": "Sales Agreement\nParty A: ABC Company Inc.\nPrice: $32.00\nSigned in New York\nEffective from the date of signing",
+      "fn.report": "comparison.html"
     },
     "fullscreen-clock": {
       "tab.clock": "Clock",
@@ -1080,7 +1210,11 @@
       "err.qty": "Quantity must be greater than 0.",
       "err.notEnough1": "Only",
       "err.notEnough2": "in stock, not enough to issue",
-      "del.confirm": "Click again to delete"
+      "del.confirm": "Click again to delete",
+      "defaultUnit": "pcs",
+      "skuPh": "TSHIRT-WHITE-M",
+      "csv.header": "SKU,Name,Unit,In stock,Minimum,Cost,Price",
+      "csv.file": "inventory"
     },
     "journal": {
       "writeToday": "Write today",
@@ -1101,7 +1235,8 @@
       "empty": "No entries yet.",
       "toast.empty": "Write something before saving",
       "toast.saved": "Entry saved",
-      "del.confirm": "Click again"
+      "del.confirm": "Click again",
+      "sheetTitle": "WFTools - Journal"
     },
     "js-obfuscate": {
       "method": "Obfuscation method",
@@ -1118,7 +1253,8 @@
       "note": "This tool only makes code <b>hard to read and copy</b>, not truly encrypted — a skilled person can still recover it. The code still runs exactly like the original. Global variables and property names are kept so links to other code are not broken. If the code uses <code>eval</code> or <code>with</code>, variable renaming turns off automatically for safety.",
       "stat.src": "Original",
       "stat.out": "After obfuscation",
-      "toast.dl": "File downloaded"
+      "toast.dl": "File downloaded",
+      "sample": "// Example: count button clicks\nfunction createCounter(start) {\n  let clicks = start;\n  return function increase() {\n    clicks = clicks + 1;\n    console.log(\"Clicked \" + clicks + \" times\");\n    return clicks;\n  };\n}\n\nconst counter = createCounter(0);\ncounter();\ncounter();"
     },
     "loan": {
       "principal": "Loan amount",
@@ -1321,7 +1457,11 @@
       "toast.saved": "Saved",
       "toast.badData": "Document data is corrupted (may have been edited by hand in Google Sheets)",
       "toast.duplicated": "Duplicated, remember to Save",
-      "del.confirm": "Click again to delete"
+      "del.confirm": "Click again to delete",
+      "numPrefix.quote": "QT",
+      "numPrefix.invoice": "INV",
+      "defaultUnit": "pcs",
+      "p.cur": "${n}"
     },
     "menu-qr": {
       "blank": "Blank menu",
@@ -1359,7 +1499,24 @@
       "del": "Delete",
       "noSaved": "No menus saved yet.",
       "toast.badData": "Menu data is corrupted",
-      "del.confirm": "Click again to delete"
+      "del.confirm": "Click again to delete",
+      "sm.name": "Maple Street Café",
+      "sm.info": "123 Main Street · Open 7:00 AM–9:00 PM\nWi‑Fi: MapleCafe / welcome123",
+      "sm.note": "Prices do not include tax. Order at the counter or ask our staff.",
+      "sm.cat1": "Coffee",
+      "sm.cat2": "Tea & juice",
+      "sm.i1": "Drip Coffee",
+      "sm.i2": "Latte",
+      "sm.i3": "Cold Brew",
+      "sm.i3d": "Steeped for 18 hours, smooth and low in acidity",
+      "sm.i4": "Iced Peach Tea",
+      "sm.i5": "Orange Juice",
+      "sm.p1": "3",
+      "sm.p2": "5",
+      "sm.p3": "5",
+      "sm.p4": "4",
+      "sm.p5": "4",
+      "fileFallback": "shop"
     },
     "mindmap": {
       "d.root": "Main topic",
@@ -1393,7 +1550,8 @@
       "dlTxt": "Download .txt",
       "toMap": "Build a map from the summary",
       "lesson": "Lesson",
-      "toast.mapMade": "Mind map created from the summary"
+      "toast.mapMade": "Mind map created from the summary",
+      "fn.summary": "summary.txt"
     },
     "pdf-merge": {
       "aria.tabs": "Choose action",
@@ -1487,7 +1645,10 @@
       "empty.text": "Enter a link or text to create a code.",
       "meta.small": "Compact code, easy to scan at any size.",
       "meta.mid": "Fairly dense code, print at 3 cm or larger.",
-      "meta.big": "Very dense code because the content is long. Shorten the content or print it large to scan easily."
+      "meta.big": "Very dense code because the content is long. Shorten the content or print it large to scan easily.",
+      "ph.ssid": "My-Home-5G",
+      "ph.email": "name@example.com",
+      "ph.tel": "(555) 123-4567"
     },
     "quiz-bank": {
       "defaultTitle": "Quiz",
@@ -1530,7 +1691,8 @@
       "print.name": "Name",
       "print.class": "Class",
       "print.score": "Score",
-      "print.answers": "Answers"
+      "print.answers": "Answers",
+      "fn.export": "quiz-bank.json"
     },
     "rsa-keys": {
       "keyLen": "Key length",
@@ -1630,7 +1792,9 @@
       "th.portion": "Income portion",
       "th.tax": "Tax",
       "total": "Total",
-      "netLabel": "Desired Net salary (take-home)"
+      "netLabel": "Desired Net salary (take-home)",
+      "vnOnly": "Vietnam only.",
+      "vnOnlyNote": "This tool follows Vietnam's social insurance and personal income tax rules (amounts in Vietnamese dong, đ). It does not apply to other countries."
     },
     "study-timetable": {
       "defaultTitle": "Timetable",
@@ -1655,7 +1819,8 @@
       "cancel": "Cancel",
       "clearCell": "Clear cell",
       "periodWord": "Period",
-      "toast.saved": "Period settings saved"
+      "toast.saved": "Period settings saved",
+      "sheetTitle": "WFTools - Timetable"
     },
     "teaching-pay": {
       "addSession": "Add a session",
@@ -1683,7 +1848,9 @@
       "empty": "No sessions yet.",
       "defaultTitle": "Session",
       "toast.csv": "CSV exported",
-      "printTitle": "Teaching hours sheet"
+      "printTitle": "Teaching hours sheet",
+      "csvName": "teaching-hours.csv",
+      "monthPrefix": "for"
     },
     "water-tracker": {
       "today": "Today",
@@ -1714,7 +1881,14 @@
       "totalDays": "Total days",
       "weekendDays": "Weekend days",
       "holidayDays": "Holidays",
-      "holidaysOnWork": "Holidays falling on workdays"
+      "holidaysOnWork": "Holidays falling on workdays",
+      "hol.newYear": "New Year's Day (Jan 1)",
+      "hol.reunification": "Reunification Day (Apr 30)",
+      "hol.labour": "International Workers' Day (May 1)",
+      "hol.national": "National Day (Sep 2)",
+      "hol.tet": "Tết (Lunar New Year)",
+      "hol.hung": "Hùng Kings' Commemoration Day (Giỗ Tổ)",
+      "holiday": "Holiday"
     },
     "world-clock": {
       "addCountry": "Add country",
@@ -1731,7 +1905,38 @@
       "th.time": "Local time",
       "th.date": "Date",
       "city.Asia/Ho_Chi_Minh": "Hanoi / Ho Chi Minh City",
-      "city.Asia/Shanghai": "Beijing / Shanghai"
+      "city.Asia/Shanghai": "Beijing / Shanghai",
+      "city.Asia/Bangkok": "Bangkok",
+      "city.Asia/Singapore": "Singapore",
+      "city.Asia/Tokyo": "Tokyo",
+      "city.Asia/Seoul": "Seoul",
+      "city.Asia/Kolkata": "New Delhi",
+      "city.Asia/Jakarta": "Jakarta",
+      "city.Asia/Kuala_Lumpur": "Kuala Lumpur",
+      "city.Asia/Manila": "Manila",
+      "city.Asia/Dubai": "Dubai",
+      "city.Europe/Moscow": "Moscow",
+      "city.Europe/London": "London",
+      "city.Europe/Paris": "Paris",
+      "city.Europe/Berlin": "Berlin",
+      "city.Europe/Rome": "Rome",
+      "city.Europe/Madrid": "Madrid",
+      "city.Europe/Amsterdam": "Amsterdam",
+      "city.Europe/Istanbul": "Istanbul",
+      "city.America/New_York": "New York (ET)",
+      "city.America/Chicago": "Chicago (CT)",
+      "city.America/Denver": "Denver (MT)",
+      "city.America/Los_Angeles": "Los Angeles (PT)",
+      "city.America/Toronto": "Toronto",
+      "city.America/Vancouver": "Vancouver",
+      "city.America/Sao_Paulo": "São Paulo",
+      "city.America/Mexico_City": "Mexico City",
+      "city.Australia/Sydney": "Sydney",
+      "city.Australia/Perth": "Perth",
+      "city.Pacific/Auckland": "Auckland",
+      "city.Africa/Johannesburg": "Johannesburg",
+      "city.Africa/Cairo": "Cairo",
+      "defaultZones": "America/New_York,Europe/London,Asia/Tokyo,Asia/Ho_Chi_Minh"
     },
     "utm": {
       "preset.0": "Facebook (post)",
@@ -1813,7 +2018,8 @@
       "toast.picked": "Phrase selected and copied",
       "u.h": "{n} hr",
       "u.m": "{n} min",
-      "u.s": "{n} sec"
+      "u.s": "{n} sec",
+      "sample": "Iced milk coffee is a familiar drink for people all over the world. Every morning, millions of people start their day with a rich, refreshing glass of iced milk coffee.\n\nTo make good iced milk coffee, you need freshly ground coffee, milk and plenty of ice. The coffee is brewed slowly, drip by drip, for about five minutes.\n\nToday, iced milk coffee is loved by friends from many countries and appears on the menu of cafes around the world."
     },
     "text-to-html": {
       "t.h1": "Large heading",
@@ -1847,7 +2053,9 @@
       "linkPrompt": "Enter the link address (URL):",
       "toast.applied": "HTML applied",
       "docTitle": "Document",
-      "toast.dl": "HTML file downloaded"
+      "toast.dl": "HTML file downloaded",
+      "sample": "<h2>Welcome to WFTools</h2><p>This is a <strong>visual</strong> editor. Type as you would in Word and the tool writes <em>clean HTML</em> for you.</p><ul><li>Select some text, then click a button on the toolbar</li><li>Copy the HTML code from the box below</li></ul>",
+      "fn.doc": "document.html"
     },
     "watermark": {
       "tile": "Tile",

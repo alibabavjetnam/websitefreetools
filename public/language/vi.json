@@ -64,7 +64,98 @@
     "cdn.loadFail": "Không tải được thư viện cần thiết. Kiểm tra kết nối mạng rồi thử lại.",
     "cdn.pdfLoadFail": "Không tải được bộ đọc PDF. Kiểm tra kết nối mạng rồi thử lại.",
     "cdn.pdfPassword": "File PDF có mật khẩu. Hãy mở khoá file trước.",
-    "cdn.pdfCorrupt": "Không đọc được file PDF, file có thể bị hỏng."
+    "cdn.pdfCorrupt": "Không đọc được file PDF, file có thể bị hỏng.",
+    "lib.barcode.empty": "Hãy nhập nội dung cần mã hoá.",
+    "lib.barcode.code128Chars": "Code 128 chỉ nhận chữ không dấu, số và ký hiệu thông thường. Hãy bỏ dấu tiếng Việt hoặc dùng công cụ Tạo mã QR.",
+    "lib.barcode.digitsOnly": "{name} chỉ chấp nhận chữ số.",
+    "lib.barcode.badCheck": "Chữ số cuối chưa đúng, phải là {expected}. Bạn có thể bỏ chữ số cuối để hệ thống tự thêm.",
+    "lib.barcode.needDigits": "{name} cần {n} chữ số (hoặc {n1} chữ số kèm số kiểm tra).",
+    "lib.barcode.code39Bad": "Code 39 không hỗ trợ ký tự \"{bad}\". Chỉ dùng A–Z, 0–9 và - . $ / + % khoảng trắng.",
+    "lib.barcode.sample.CODE128": "WFT-2026-0001",
+    "lib.barcode.sample.EAN13": "893123456789",
+    "lib.barcode.sample.EAN8": "8931234",
+    "lib.barcode.sample.UPCA": "03600029145",
+    "lib.barcode.sample.CODE39": "WFTOOLS-39",
+    "lib.qr.tooLong": "Dữ liệu quá dài để tạo mã QR. Hãy rút ngắn nội dung hoặc giảm mức sửa lỗi.",
+    "lib.xml.withLine": "{msg} (dòng {line})",
+    "lib.xml.textOutside": "Có văn bản nằm ngoài phần tử gốc",
+    "lib.xml.commentOpen": "Chú thích chưa đóng",
+    "lib.xml.cdataOpen": "Khối CDATA chưa đóng",
+    "lib.xml.declOpen": "Khai báo <? chưa đóng",
+    "lib.xml.closeIncomplete": "Thẻ đóng chưa hoàn chỉnh",
+    "lib.xml.closeNoOpen": "Thẻ đóng </{name}> không có thẻ mở",
+    "lib.xml.closeMismatch": "Thẻ <{open}> được đóng bằng </{name}>",
+    "lib.xml.badTag": "Thẻ không hợp lệ",
+    "lib.xml.tagIncomplete": "Thẻ <{name}> chưa đóng",
+    "lib.xml.badAttr": "Thuộc tính không hợp lệ trong thẻ <{name}>",
+    "lib.xml.tooDeep": "XML lồng nhau quá sâu",
+    "lib.xml.unclosed": "Thẻ <{name}> chưa được đóng",
+    "lib.xml.oneRoot": "XML phải có đúng một phần tử gốc",
+    "lib.xml.noElement": "Không tìm thấy phần tử XML nào",
+    "lib.extract.badOffice": "File bị hỏng hoặc không đúng định dạng Office mới (.docx, .pptx, .xlsx).",
+    "lib.extract.noWordText": "Không tìm thấy nội dung văn bản trong file Word.",
+    "lib.extract.pdfNoText": "File PDF này không có lớp chữ (thường là bản scan ảnh), nên không so sánh được nội dung.",
+    "lib.extract.tooBig": "File lớn hơn 30 MB.",
+    "lib.extract.oldDoc": "File Word đời cũ (.doc) chưa được hỗ trợ. Hãy mở bằng Word và lưu lại thành .docx.",
+    "lib.extract.notText": "File \"{name}\" không phải file chữ, không so sánh được.",
+    "lib.extract.kindText": "văn bản",
+    "lib.ranges.empty": "Hãy nhập trang cần lấy, ví dụ: 1-3, 5, 8-",
+    "lib.ranges.badFormat": "\"{part}\" không đúng dạng. Ví dụ hợp lệ: 1-3, 5, 8-",
+    "lib.ranges.min": "Số trang bắt đầu từ 1.",
+    "lib.ranges.over": "File chỉ có {total} trang, \"{part}\" vượt quá số trang.",
+    "lib.ranges.reversed": "Khoảng \"{part}\" bị ngược, trang đầu phải nhỏ hơn trang cuối.",
+    "lib.pptx.emf": "Ảnh định dạng EMF/WMF",
+    "lib.pptx.chart": "Biểu đồ",
+    "lib.pptx.embedded": "Đối tượng nhúng",
+    "lib.pptx.notPptx": "Không phải file PowerPoint (.pptx) hợp lệ.",
+    "lib.pptx.noSlides": "File PowerPoint không có slide nào.",
+    "lib.pptx.unsupported": "{label} (chưa hỗ trợ)",
+    "lib.pdf.locked": "\"{name}\" được khoá bằng mật khẩu hoặc bị hạn chế chỉnh sửa. Hãy mở khoá file trước.",
+    "lib.pdf.unreadable": "Không đọc được \"{name}\". File có thể bị hỏng hoặc không phải PDF.",
+    "lib.diff.tooLong": "Văn bản quá dài để so sánh (tối đa {max} dòng mỗi bên).",
+    "lib.codetools.json.end": "Thiếu phần kết thúc: còn ngoặc, ngoặc kép hoặc dấu chưa đóng.",
+    "lib.codetools.json.comma": "Thừa dấu phẩy, hoặc thiếu giá trị trước dấu phẩy.",
+    "lib.codetools.json.closer": "Thừa dấu phẩy trước dấu đóng, hoặc thiếu giá trị.",
+    "lib.codetools.json.badChar": "Ký tự không hợp lệ{tok}. JSON cần ngoặc kép cho chuỗi và tên khoá.",
+    "lib.codetools.json.key": "Tên khoá phải đặt trong ngoặc kép, ví dụ \"ten\".",
+    "lib.codetools.json.control": "Chuỗi chứa ký tự điều khiển hoặc dấu thoát không hợp lệ.",
+    "lib.codetools.json.invalid": "JSON không hợp lệ.",
+    "lib.codetools.js.end": "Thiếu phần kết thúc: còn ngoặc { ( [ hoặc chuỗi chưa đóng.",
+    "lib.codetools.js.token": "Gặp ký tự không mong đợi: kiểm tra dấu ngoặc, dấu phẩy, dấu chấm phẩy.",
+    "lib.codetools.string": "Chuỗi chưa được đóng (thiếu dấu nháy).",
+    "lib.codetools.comment": "Ghi chú /* */ chưa được đóng.",
+    "lib.codetools.js.declared": "{msg} — biến này được khai báo trùng.",
+    "lib.codetools.js.reserved": "Dùng từ khoá dành riêng của JavaScript làm tên biến.",
+    "lib.codetools.js.rvalue": "Gán sai: vế trái dấu = phải là biến.",
+    "lib.codetools.css.extraBrace": "Dấu } thừa, không có { tương ứng.",
+    "lib.codetools.css.noColon": "Khai báo thiếu dấu hai chấm \":\" giữa thuộc tính và giá trị.",
+    "lib.codetools.css.atSemi": "Câu lệnh @import/@charset cần kết thúc bằng dấu \";\".",
+    "lib.codetools.css.openBrace": "Dấu { chưa được đóng bằng }.",
+    "lib.codetools.css.outside": "Có nội dung ngoài khối {} — thiếu dấu { } bao quanh.",
+    "lib.codetools.html.comment": "Ghi chú <!-- --> chưa được đóng.",
+    "lib.codetools.html.tagGt": "Thẻ chưa được đóng bằng \">\".",
+    "lib.codetools.html.tagGtQuote": "Thẻ chưa được đóng bằng \">\" (có thể do dấu nháy thuộc tính chưa đóng).",
+    "lib.codetools.html.closeNoOpen": "Thẻ đóng </{tag}> không có thẻ mở tương ứng.",
+    "lib.codetools.html.notClosedBefore": "Thẻ <{tag}> chưa được đóng trước </{close}>.",
+    "lib.codetools.html.notClosed": "Thẻ <{tag}> chưa được đóng.",
+    "lib.obfuscate.syntax": "Mã JavaScript có lỗi cú pháp nên chưa làm rối được: {msg}",
+    "lib.obfuscate.invalidOutput": "Không tạo được mã đã làm rối hợp lệ cho đoạn mã này. Hãy thử tắt bớt tuỳ chọn (ví dụ \"Đổi tên biến\").",
+    "lib.image.svg": "Không đọc được file SVG.",
+    "lib.image.heic": "Trình duyệt này không đọc được ảnh HEIC của iPhone. Hãy mở bằng Safari hoặc đổi ảnh sang JPG trước.",
+    "lib.image.unreadable": "Không đọc được ảnh, file có thể bị hỏng hoặc không phải ảnh.",
+    "lib.image.noCanvas": "Trình duyệt không hỗ trợ xử lý ảnh.",
+    "lib.image.noEncode": "Trình duyệt này không xuất được định dạng {fmt}.",
+    "lib.download.pngDraw": "Không vẽ được ảnh PNG.",
+    "lib.download.noCanvas": "Trình duyệt không hỗ trợ canvas.",
+    "lib.download.pngMake": "Không tạo được tệp PNG.",
+    "lib.ui.copied": "Đã sao chép",
+    "lib.ui.copyFail": "Không sao chép được, hãy chọn và sao chép thủ công",
+    "home.guideTitle": "Cách dùng",
+    "home.step1": "Chọn công cụ| trong danh sách ở trên hoặc ở menu bên trái.",
+    "home.step2": "Nhập nội dung|, kết quả hiện ra ngay khi bạn gõ.",
+    "home.step3": "Tải ảnh về| dạng PNG để dùng ngay, hoặc SVG để in khổ lớn không bị vỡ nét.",
+    "home.aboutTitle": "Giới thiệu",
+    "home.aboutText": "WFTools gom những công cụ nhỏ hay dùng hằng ngày vào một chỗ. Mọi thứ chạy ngay trên máy của bạn, không cần cài đặt, không cần tài khoản, và nội dung bạn nhập không được gửi đi đâu cả. Công cụ mới sẽ được bổ sung dần."
   },
   "pages": {
     "home": {
@@ -508,7 +599,11 @@
       "empty": "Chưa có học viên. Thêm tên ở ô phía trên (có thể dán nhiều dòng).",
       "cell.title": "Bấm để đổi",
       "del": "Xoá",
-      "del.confirm": "Bấm lần nữa"
+      "del.confirm": "Bấm lần nữa",
+      "sheetTitle": "WFTools - Điểm danh",
+      "mark.absent": "V",
+      "mark.late": "M",
+      "mark.excused": "P"
     },
     "barcode": {
       "legend.format": "Chuẩn mã vạch",
@@ -632,7 +727,10 @@
       "err.json": "JSON không hợp lệ",
       "err.jsonHint": "Hãy dùng công cụ Kiểm tra lỗi để tìm vị trí.",
       "err.format": "Không định dạng được",
-      "toast.dl": "Đã tải file"
+      "toast.dl": "Đã tải file",
+      "sample.js": "function chao(ten){console.log(\"Xin chào \"+ten)}\nconst ds=[1,2,3].map(x=>x*2);chao(\"WFTools\")",
+      "sample.html": "<ul><li>Một</li><li>Hai</li></ul><p class=\"note\">Xin chào</p>",
+      "sample.json": "{\"ten\":\"WFTools\",\"cong_cu\":[\"QR\",\"Mã vạch\"],\"mien_phi\":true}"
     },
     "code-check": {
       "aria.lang": "Chọn ngôn ngữ",
@@ -648,7 +746,10 @@
       "tag.error": "Lỗi",
       "tag.warn": "Cảnh báo",
       "line": "dòng",
-      "col": "cột"
+      "col": "cột",
+      "sample.js": "function tong(a, b) {\n  return a + b\n}\nconst ket_qua = tong(2, 3;",
+      "sample.html": "<div class=\"box\">\n  <p>Xin chào\n  <ul><li>Một</li></ul>\n</div>",
+      "sample.json": "{\n  \"ten\": \"WFTools\",\n  \"so\": 12,\n}"
     },
     "colors": {
       "aria.pick": "Chọn màu gốc",
@@ -788,7 +889,11 @@
       "city.America/New_York": "New York",
       "city.America/Chicago": "Chicago",
       "city.America/Los_Angeles": "Los Angeles",
-      "city.UTC": "UTC"
+      "city.UTC": "UTC",
+      "fx.defaultAmount": "100",
+      "fx.defaultFrom": "USD",
+      "fx.defaultTo": "VND",
+      "tz.default": "Asia/Ho_Chi_Minh"
     },
     "cv": {
       "add.exp": "+ Thêm kinh nghiệm",
@@ -851,7 +956,24 @@
       "untitled": "CV chưa đặt tên",
       "toast.saved": "Đã lưu CV",
       "toast.badData": "Dữ liệu CV bị lỗi (có thể đã bị sửa tay trên Google Sheets)",
-      "del.confirm": "Bấm lần nữa để xoá"
+      "del.confirm": "Bấm lần nữa để xoá",
+      "sm.name": "Nguyễn Văn An",
+      "sm.headline": "Nhân viên kinh doanh",
+      "sm.email": "an.nguyen@email.com",
+      "sm.phone": "0901 234 567",
+      "sm.address": "Quận 3, TP. Hồ Chí Minh",
+      "sm.summary": "Hơn 3 năm kinh nghiệm bán hàng B2B, quen chăm sóc khách hàng doanh nghiệp và lập báo giá. Mong muốn phát triển lên vị trí trưởng nhóm kinh doanh.",
+      "sm.present": "Hiện tại",
+      "sm.exp1.title": "Nhân viên kinh doanh",
+      "sm.exp1.place": "Công ty TNHH ABC",
+      "sm.exp1.desc": "Quản lý 40 khách hàng doanh nghiệp\nĐạt 120% chỉ tiêu doanh số năm 2025",
+      "sm.exp2.title": "Nhân viên chăm sóc khách hàng",
+      "sm.exp2.place": "Cửa hàng XYZ",
+      "sm.exp2.desc": "Tư vấn và xử lý đơn hàng qua điện thoại, Zalo",
+      "sm.edu.title": "Cử nhân Quản trị kinh doanh",
+      "sm.edu.place": "Trường Đại học Kinh tế",
+      "sm.skills": "Đàm phán, Lập báo giá, Excel, CRM, Thuyết trình",
+      "sm.languages": "Tiếng Anh giao tiếp (TOEIC 750)"
     },
     "cycle-track": {
       "logTitle": "Ghi ngày bắt đầu kỳ kinh",
@@ -927,7 +1049,11 @@
       "del": "Xoá",
       "noTx": "Chưa có giao dịch. Thêm khoản thu chi đầu tiên ở khung bên trên.",
       "err.amount": "Hãy nhập số tiền lớn hơn 0.",
-      "err.date": "Hãy chọn ngày."
+      "err.date": "Hãy chọn ngày.",
+      "csv.header": "Ngay,Loai,Danh muc,So tien,Ghi chu",
+      "csv.expense": "chi",
+      "csv.income": "thu",
+      "csv.file": "chi-tieu"
     },
     "data-convert": {
       "srcTitle": "Dữ liệu nguồn",
@@ -993,7 +1119,8 @@
       "outinfo.cols": "cột",
       "outinfo.result": "Kết quả",
       "outinfo.trunc": "(ô chỉ hiện phần đầu, tải file để có đầy đủ)",
-      "toast.dl": "Đã tải"
+      "toast.dl": "Đã tải",
+      "sample": "[\n  { \"ma\": \"SP001\", \"ten\": \"Cà phê sữa\", \"gia\": 29000, \"con_hang\": true, \"nhom\": { \"ma\": \"DU\", \"ten\": \"Đồ uống\" } },\n  { \"ma\": \"SP002\", \"ten\": \"Bánh mì thịt\", \"gia\": 25000, \"con_hang\": false, \"nhom\": { \"ma\": \"DA\", \"ten\": \"Đồ ăn\" } }\n]"
     },
     "file-diff": {
       "drop.title": "Chọn file hoặc kéo thả",
@@ -1037,7 +1164,10 @@
       "rpt.compare": "So sánh",
       "rpt.same": "Giống",
       "rpt.by": "Tạo bởi",
-      "toast.report": "Đã tải báo cáo so sánh"
+      "toast.report": "Đã tải báo cáo so sánh",
+      "sample.a": "Hợp đồng mua bán\nBên A: Công ty ABC\nGiá: 29.000 đồng\nThời hạn: 30 ngày\nKý tại Hà Nội",
+      "sample.b": "Hợp đồng mua bán\nBên A: Công ty ABC Việt Nam\nGiá: 32.000 đồng\nKý tại Hà Nội\nHiệu lực từ ngày ký",
+      "fn.report": "so-sanh.html"
     },
     "fullscreen-clock": {
       "tab.clock": "Đồng hồ",
@@ -1256,7 +1386,11 @@
       "err.qty": "Số lượng phải lớn hơn 0.",
       "err.notEnough1": "Chỉ còn",
       "err.notEnough2": "trong kho, không đủ để xuất",
-      "del.confirm": "Bấm lần nữa để xoá"
+      "del.confirm": "Bấm lần nữa để xoá",
+      "defaultUnit": "cái",
+      "skuPh": "AO-TRANG-M",
+      "csv.header": "Ma hang,Ten,Don vi,Ton kho,Toi thieu,Gia von,Gia ban",
+      "csv.file": "ton-kho"
     },
     "journal": {
       "writeToday": "Viết hôm nay",
@@ -1277,7 +1411,8 @@
       "empty": "Chưa có nhật ký nào.",
       "toast.empty": "Hãy viết gì đó trước khi lưu",
       "toast.saved": "Đã lưu nhật ký",
-      "del.confirm": "Bấm lần nữa"
+      "del.confirm": "Bấm lần nữa",
+      "sheetTitle": "WFTools - Nhật ký"
     },
     "js-obfuscate": {
       "method": "Cách làm rối",
@@ -1294,7 +1429,8 @@
       "note": "Công cụ chỉ làm mã <b>khó đọc, khó sao chép lại</b> chứ không mã hoá tuyệt đối — người có kỹ thuật vẫn có thể khôi phục. Mã vẫn chạy đúng như bản gốc. Biến toàn cục và tên thuộc tính được giữ nguyên để không làm hỏng liên kết với mã khác. Nếu mã có <code>eval</code> hoặc <code>with</code>, phần đổi tên biến sẽ tự tắt cho an toàn.",
       "stat.src": "Mã gốc",
       "stat.out": "Sau khi làm rối",
-      "toast.dl": "Đã tải file"
+      "toast.dl": "Đã tải file",
+      "sample": "// Ví dụ: đếm số lần nhấn nút\nfunction taoBoDem(batDau) {\n  let soLan = batDau;\n  return function tang() {\n    soLan = soLan + 1;\n    console.log(\"Đã nhấn \" + soLan + \" lần\");\n    return soLan;\n  };\n}\n\nconst dem = taoBoDem(0);\ndem();\ndem();"
     },
     "loan": {
       "principal": "Số tiền vay",
@@ -1497,7 +1633,11 @@
       "toast.saved": "Đã lưu",
       "toast.badData": "Dữ liệu chứng từ bị lỗi (có thể đã bị sửa tay trên Google Sheets)",
       "toast.duplicated": "Đã nhân bản, nhớ bấm Lưu",
-      "del.confirm": "Bấm lần nữa để xoá"
+      "del.confirm": "Bấm lần nữa để xoá",
+      "numPrefix.quote": "BG",
+      "numPrefix.invoice": "HD",
+      "defaultUnit": "cái",
+      "p.cur": "{n} đ"
     },
     "menu-qr": {
       "blank": "Thực đơn trống",
@@ -1535,7 +1675,24 @@
       "del": "Xoá",
       "noSaved": "Chưa lưu thực đơn nào.",
       "toast.badData": "Dữ liệu thực đơn bị lỗi",
-      "del.confirm": "Bấm lần nữa để xoá"
+      "del.confirm": "Bấm lần nữa để xoá",
+      "sm.name": "Cà phê Sông Hương",
+      "sm.info": "12 Lê Lợi, Huế · Mở cửa 6:30–22:00\nWi‑Fi: SongHuong / matkhau123",
+      "sm.note": "Giá đã gồm VAT. Gọi món tại quầy hoặc gọi nhân viên.",
+      "sm.cat1": "Cà phê",
+      "sm.cat2": "Trà & nước ép",
+      "sm.i1": "Cà phê đen",
+      "sm.i2": "Cà phê sữa",
+      "sm.i3": "Cà phê muối",
+      "sm.i3d": "Đặc sản Huế, kem muối béo nhẹ",
+      "sm.i4": "Trà đào cam sả",
+      "sm.i5": "Nước ép cam",
+      "sm.p1": "25000",
+      "sm.p2": "29000",
+      "sm.p3": "35000",
+      "sm.p4": "39000",
+      "sm.p5": "35000",
+      "fileFallback": "quan"
     },
     "mindmap": {
       "d.root": "Chủ đề chính",
@@ -1569,7 +1726,8 @@
       "dlTxt": "Tải .txt",
       "toMap": "Tạo sơ đồ từ tóm tắt",
       "lesson": "Bài học",
-      "toast.mapMade": "Đã tạo sơ đồ tư duy từ tóm tắt"
+      "toast.mapMade": "Đã tạo sơ đồ tư duy từ tóm tắt",
+      "fn.summary": "tom-tat.txt"
     },
     "pdf-merge": {
       "aria.tabs": "Chọn thao tác",
@@ -1663,7 +1821,10 @@
       "empty.text": "Nhập liên kết hoặc văn bản để tạo mã.",
       "meta.small": "Mã gọn, dễ quét ở mọi kích cỡ.",
       "meta.mid": "Mã khá dày, nên in rộng từ 3 cm trở lên.",
-      "meta.big": "Mã rất dày vì nội dung dài. Hãy rút ngắn nội dung hoặc in thật to để dễ quét."
+      "meta.big": "Mã rất dày vì nội dung dài. Hãy rút ngắn nội dung hoặc in thật to để dễ quét.",
+      "ph.ssid": "Nha-Toi-5G",
+      "ph.email": "ban@example.com",
+      "ph.tel": "0901 234 567"
     },
     "quiz-bank": {
       "defaultTitle": "Đề trắc nghiệm",
@@ -1706,7 +1867,8 @@
       "print.name": "Họ tên",
       "print.class": "Lớp",
       "print.score": "Điểm",
-      "print.answers": "Đáp án"
+      "print.answers": "Đáp án",
+      "fn.export": "de-trac-nghiem.json"
     },
     "rsa-keys": {
       "keyLen": "Độ dài khoá",
@@ -1806,7 +1968,9 @@
       "th.portion": "Phần thu nhập",
       "th.tax": "Tiền thuế",
       "total": "Tổng",
-      "netLabel": "Lương Net mong muốn (thực nhận)"
+      "netLabel": "Lương Net mong muốn (thực nhận)",
+      "vnOnly": "Dành cho Việt Nam.",
+      "vnOnlyNote": "Công cụ này tính theo quy định bảo hiểm và thuế thu nhập cá nhân của Việt Nam (mức lương bằng đồng Việt Nam, đ). Không áp dụng cho các nước khác."
     },
     "study-timetable": {
       "defaultTitle": "Thời khoá biểu",
@@ -1831,7 +1995,8 @@
       "cancel": "Huỷ",
       "clearCell": "Xoá ô",
       "periodWord": "Tiết",
-      "toast.saved": "Đã lưu cấu hình tiết học"
+      "toast.saved": "Đã lưu cấu hình tiết học",
+      "sheetTitle": "WFTools - Thời khoá biểu"
     },
     "teaching-pay": {
       "addSession": "Thêm buổi dạy",
@@ -1859,7 +2024,9 @@
       "empty": "Chưa có buổi dạy nào.",
       "defaultTitle": "Buổi dạy",
       "toast.csv": "Đã xuất CSV",
-      "printTitle": "Bảng kê giờ giảng"
+      "printTitle": "Bảng kê giờ giảng",
+      "csvName": "gio-giang.csv",
+      "monthPrefix": "tháng"
     },
     "water-tracker": {
       "today": "Hôm nay",
@@ -1890,7 +2057,14 @@
       "totalDays": "Tổng số ngày",
       "weekendDays": "Ngày cuối tuần",
       "holidayDays": "Ngày lễ",
-      "holidaysOnWork": "Ngày lễ rơi vào ngày làm việc"
+      "holidaysOnWork": "Ngày lễ rơi vào ngày làm việc",
+      "hol.newYear": "Tết Dương lịch",
+      "hol.reunification": "Giải phóng miền Nam",
+      "hol.labour": "Quốc tế Lao động",
+      "hol.national": "Quốc khánh",
+      "hol.tet": "Tết Nguyên đán",
+      "hol.hung": "Giỗ Tổ Hùng Vương",
+      "holiday": "Ngày lễ"
     },
     "world-clock": {
       "addCountry": "Thêm quốc gia",
@@ -1907,7 +2081,38 @@
       "th.time": "Giờ tương ứng",
       "th.date": "Ngày",
       "city.Asia/Ho_Chi_Minh": "Hà Nội / TP.HCM",
-      "city.Asia/Shanghai": "Bắc Kinh / Thượng Hải"
+      "city.Asia/Shanghai": "Bắc Kinh / Thượng Hải",
+      "city.Asia/Bangkok": "Bangkok",
+      "city.Asia/Singapore": "Singapore",
+      "city.Asia/Tokyo": "Tokyo",
+      "city.Asia/Seoul": "Seoul",
+      "city.Asia/Kolkata": "New Delhi",
+      "city.Asia/Jakarta": "Jakarta",
+      "city.Asia/Kuala_Lumpur": "Kuala Lumpur",
+      "city.Asia/Manila": "Manila",
+      "city.Asia/Dubai": "Dubai",
+      "city.Europe/Moscow": "Moscow",
+      "city.Europe/London": "London",
+      "city.Europe/Paris": "Paris",
+      "city.Europe/Berlin": "Berlin",
+      "city.Europe/Rome": "Rome",
+      "city.Europe/Madrid": "Madrid",
+      "city.Europe/Amsterdam": "Amsterdam",
+      "city.Europe/Istanbul": "Istanbul",
+      "city.America/New_York": "New York (ET)",
+      "city.America/Chicago": "Chicago (CT)",
+      "city.America/Denver": "Denver (MT)",
+      "city.America/Los_Angeles": "Los Angeles (PT)",
+      "city.America/Toronto": "Toronto",
+      "city.America/Vancouver": "Vancouver",
+      "city.America/Sao_Paulo": "São Paulo",
+      "city.America/Mexico_City": "Mexico City",
+      "city.Australia/Sydney": "Sydney",
+      "city.Australia/Perth": "Perth",
+      "city.Pacific/Auckland": "Auckland",
+      "city.Africa/Johannesburg": "Johannesburg",
+      "city.Africa/Cairo": "Cairo",
+      "defaultZones": "Asia/Ho_Chi_Minh,Asia/Tokyo,Europe/London,America/New_York"
     },
     "utm": {
       "preset.0": "Facebook (bài viết)",
@@ -1989,7 +2194,8 @@
       "toast.picked": "Đã chọn và sao chép cụm từ",
       "u.h": "{n} giờ",
       "u.m": "{n} phút",
-      "u.s": "{n} giây"
+      "u.s": "{n} giây",
+      "sample": "Cà phê sữa đá là thức uống quen thuộc của người Việt. Mỗi sáng, hàng triệu người bắt đầu ngày mới bằng một ly cà phê sữa đá đậm đà.\n\nĐể pha cà phê sữa đá ngon, bạn cần cà phê rang xay nguyên chất, sữa đặc và nhiều đá. Cà phê được pha bằng phin, nhỏ giọt chậm rãi trong khoảng năm phút.\n\nNgày nay, cà phê sữa đá còn được bạn bè quốc tế yêu thích và có mặt trong thực đơn của nhiều quán cà phê trên thế giới."
     },
     "text-to-html": {
       "t.h1": "Tiêu đề lớn",
@@ -2023,7 +2229,9 @@
       "linkPrompt": "Nhập địa chỉ liên kết (URL):",
       "toast.applied": "Đã áp dụng mã HTML",
       "docTitle": "Tài liệu",
-      "toast.dl": "Đã tải file HTML"
+      "toast.dl": "Đã tải file HTML",
+      "sample": "<h2>Chào mừng đến với WFTools</h2><p>Đây là trình soạn thảo <strong>trực quan</strong>. Bạn gõ như trong Word, công cụ tự tạo <em>mã HTML sạch</em>.</p><ul><li>Bôi đen chữ rồi bấm nút trên thanh công cụ</li><li>Sao chép mã HTML ở ô bên dưới</li></ul>",
+      "fn.doc": "tai-lieu.html"
     },
     "watermark": {
       "tile": "Lặp kín",

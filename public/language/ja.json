@@ -64,7 +64,98 @@
     "cdn.loadFail": "必要なライブラリを読み込めませんでした。接続を確認して、もう一度お試しください。",
     "cdn.pdfLoadFail": "PDF リーダーを読み込めませんでした。接続を確認して、もう一度お試しください。",
     "cdn.pdfPassword": "この PDF はパスワードで保護されています。先にロックを解除してください。",
-    "cdn.pdfCorrupt": "PDF ファイルを読み取れませんでした。ファイルが破損している可能性があります。"
+    "cdn.pdfCorrupt": "PDF ファイルを読み取れませんでした。ファイルが破損している可能性があります。",
+    "lib.barcode.empty": "エンコードする内容を入力してください。",
+    "lib.barcode.code128Chars": "Code 128 では半角の英数字と一般的な記号のみ使えます。日本語やアクセント付き文字は取り除くか、QRコード作成ツールをお使いください。",
+    "lib.barcode.digitsOnly": "{name} には数字のみ入力できます。文字や記号を取り除いてください。",
+    "lib.barcode.badCheck": "最後の数字が正しくありません。正しくは {expected} です。最後の数字を省くと自動で追加されます。",
+    "lib.barcode.needDigits": "{name} は {n} 桁（チェックデジット込みなら {n1} 桁）で入力してください。",
+    "lib.barcode.code39Bad": "Code 39 では「{bad}」は使えません。A〜Z、0〜9、- . $ / + % とスペースのみ使えます。",
+    "lib.barcode.sample.CODE128": "WFT-2026-0001",
+    "lib.barcode.sample.EAN13": "490123456789",
+    "lib.barcode.sample.EAN8": "4912345",
+    "lib.barcode.sample.UPCA": "03600029145",
+    "lib.barcode.sample.CODE39": "WFTOOLS-39",
+    "lib.qr.tooLong": "内容が長すぎてQRコードにできません。内容を短くするか、誤り訂正レベルを下げてください。",
+    "lib.xml.withLine": "{msg}（{line}行目）",
+    "lib.xml.textOutside": "ルート要素の外に文字があります。メインのタグの中に移すか、削除してください。",
+    "lib.xml.commentOpen": "コメントが閉じられていません。末尾に --> を追加してください。",
+    "lib.xml.cdataOpen": "CDATAブロックが閉じられていません。末尾に ]]> を追加してください。",
+    "lib.xml.declOpen": "<? で始まる宣言が閉じられていません。末尾に ?> を追加してください。",
+    "lib.xml.closeIncomplete": "閉じタグが途中で終わっています。末尾に > を追加してください。",
+    "lib.xml.closeNoOpen": "閉じタグ </{name}> に対応する開始タグがありません。削除するか、前に <{name}> を追加してください。",
+    "lib.xml.closeMismatch": "タグ <{open}> が </{name}> で閉じられています。</{open}> に直してください。",
+    "lib.xml.badTag": "このタグは正しくありません。< の後ろの文字を確認してください。",
+    "lib.xml.tagIncomplete": "タグ <{name}> が途中で終わっています。末尾に > を追加してください。",
+    "lib.xml.badAttr": "タグ <{name}> の属性が正しくありません。name=\"値\" の形式にしてください。",
+    "lib.xml.tooDeep": "XMLの入れ子が深すぎます。構造を簡単にしてください。",
+    "lib.xml.unclosed": "タグ <{name}> が閉じられていません。終わる位置に </{name}> を追加してください。",
+    "lib.xml.oneRoot": "XMLにはルート要素がちょうど1つ必要です。全体を1つのメインタグで囲んでください。",
+    "lib.xml.noElement": "XML要素が見つかりません。データが <root> のようなタグで始まっているか確認してください。",
+    "lib.extract.badOffice": "ファイルが壊れているか、新しい形式のOfficeファイル（.docx、.pptx、.xlsx）ではありません。Officeで開き直して保存し直してください。",
+    "lib.extract.noWordText": "このWordファイルに文字が見つかりません。ファイルが空でないか確認してください。",
+    "lib.extract.pdfNoText": "このPDFには文字情報がありません（多くはスキャン画像です）。内容を比較できません。文書から書き出したPDFをお使いください。",
+    "lib.extract.tooBig": "ファイルが30MBを超えています。小さいファイルを選んでください。",
+    "lib.extract.oldDoc": "古い形式のWordファイル（.doc）には対応していません。Wordで開いて .docx として保存し直してください。",
+    "lib.extract.notText": "「{name}」は文字のファイルではないため比較できません。テキスト、Word、HTML、PDFのファイルを選んでください。",
+    "lib.extract.kindText": "テキスト",
+    "lib.ranges.empty": "必要なページを入力してください。例：1-3, 5, 8-",
+    "lib.ranges.badFormat": "「{part}」は形式が正しくありません。正しい例：1-3, 5, 8-",
+    "lib.ranges.min": "ページ番号は1から始まります。",
+    "lib.ranges.over": "このファイルは{total}ページしかないため、「{part}」は範囲外です。{total}ページ以内で指定してください。",
+    "lib.ranges.reversed": "範囲「{part}」が逆になっています。最初のページは最後のページより小さくしてください。",
+    "lib.pptx.emf": "EMF/WMF形式の画像",
+    "lib.pptx.chart": "グラフ",
+    "lib.pptx.embedded": "埋め込みオブジェクト",
+    "lib.pptx.notPptx": "有効なPowerPoint（.pptx）ファイルではありません。.pptx ファイルを選んでください。",
+    "lib.pptx.noSlides": "このPowerPointファイルにはスライドがありません。PowerPointで開いて内容を確認してください。",
+    "lib.pptx.unsupported": "{label}（未対応）",
+    "lib.pdf.locked": "「{name}」はパスワード保護または編集制限がかかっています。先にロックを解除してください。",
+    "lib.pdf.unreadable": "「{name}」を読み込めませんでした。ファイルが壊れているか、PDFではない可能性があります。",
+    "lib.diff.tooLong": "テキストが長すぎて比較できません（片側につき最大{max}行）。小さく分けてください。",
+    "lib.codetools.json.end": "終わりが足りません。閉じていない括弧や引用符などがあります。",
+    "lib.codetools.json.comma": "余分なカンマがあるか、カンマの前に値がありません。",
+    "lib.codetools.json.closer": "閉じ括弧の前に余分なカンマがあるか、値が足りません。",
+    "lib.codetools.json.badChar": "無効な文字{tok}があります。JSONでは文字列とキー名を二重引用符で囲む必要があります。",
+    "lib.codetools.json.key": "キー名は二重引用符で囲んでください。例：\"name\"",
+    "lib.codetools.json.control": "文字列に制御文字または無効なエスケープが含まれています。",
+    "lib.codetools.json.invalid": "JSONが正しくありません。",
+    "lib.codetools.js.end": "終わりが足りません。閉じていない括弧 { ( [ や文字列があります。",
+    "lib.codetools.js.token": "予期しない文字があります。括弧・カンマ・セミコロンを確認してください。",
+    "lib.codetools.string": "文字列が閉じられていません（引用符が足りません）。",
+    "lib.codetools.comment": "コメント /* */ が閉じられていません。",
+    "lib.codetools.js.declared": "{msg} — この変数は重複して宣言されています。",
+    "lib.codetools.js.reserved": "JavaScriptの予約語が変数名に使われています。",
+    "lib.codetools.js.rvalue": "代入が正しくありません。= の左側は変数にしてください。",
+    "lib.codetools.css.extraBrace": "対応する { のない } があります。",
+    "lib.codetools.css.noColon": "宣言のプロパティと値の間にコロン「:」がありません。",
+    "lib.codetools.css.atSemi": "@import/@charset の文は末尾にセミコロン「;」が必要です。",
+    "lib.codetools.css.openBrace": "{ が } で閉じられていません。",
+    "lib.codetools.css.outside": "{} ブロックの外に内容があります。{ } で囲んでください。",
+    "lib.codetools.html.comment": "コメント <!-- --> が閉じられていません。",
+    "lib.codetools.html.tagGt": "タグが「>」で閉じられていません。",
+    "lib.codetools.html.tagGtQuote": "タグが「>」で閉じられていません（属性の引用符が閉じていない可能性があります）。",
+    "lib.codetools.html.closeNoOpen": "閉じタグ </{tag}> に対応する開始タグがありません。",
+    "lib.codetools.html.notClosedBefore": "</{close}> の前に <{tag}> タグが閉じられていません。",
+    "lib.codetools.html.notClosed": "<{tag}> タグが閉じられていません。",
+    "lib.obfuscate.syntax": "JavaScriptに構文エラーがあるため、難読化できません：{msg}。エラーを修正してからもう一度お試しください。",
+    "lib.obfuscate.invalidOutput": "このコードでは有効な難読化コードを作成できませんでした。オプション（例：「ローカル変数名を変更」）を一部オフにしてお試しください。",
+    "lib.image.svg": "SVGファイルを読み込めませんでした。正しいSVGか確認して、もう一度お試しください。",
+    "lib.image.heic": "このブラウザではiPhoneのHEIC画像を読み込めません。Safariで開くか、先にJPGに変換してください。",
+    "lib.image.unreadable": "画像を読み込めませんでした。ファイルが壊れているか、画像ではない可能性があります。別のファイルをお試しください。",
+    "lib.image.noCanvas": "このブラウザは画像処理に対応していません。Chrome、Edge、Safariなど最新のブラウザをお使いください。",
+    "lib.image.noEncode": "このブラウザは{fmt}形式で書き出せません。PNGやJPGなど別の形式を選んでください。",
+    "lib.download.pngDraw": "PNG画像を描画できませんでした。もう一度お試しください。",
+    "lib.download.noCanvas": "このブラウザはcanvasに対応していません。最新のブラウザをお使いください。",
+    "lib.download.pngMake": "PNGファイルを作成できませんでした。もう一度お試しください。",
+    "lib.ui.copied": "コピーしました",
+    "lib.ui.copyFail": "コピーできませんでした。テキストを選択して手動でコピーしてください。",
+    "home.guideTitle": "使い方",
+    "home.step1": "ツールを選ぶ| 上の一覧または左のメニューから選びます。",
+    "home.step2": "内容を入力|すると、入力と同時に結果が表示されます。",
+    "home.step3": "画像をダウンロード|します。すぐ使えるPNG、または大判印刷でも鮮明なSVGが選べます。",
+    "home.aboutTitle": "WFToolsについて",
+    "home.aboutText": "WFToolsは、毎日使う小さなツールを一か所にまとめたサイトです。すべてお使いの端末上で動作し、インストールもアカウントも不要で、入力した内容がどこかに送信されることもありません。新しいツールも順次追加していきます。"
   },
   "pages": {
     "home": {
@@ -332,7 +423,11 @@
       "empty": "受講者がいません。上の欄で名前を追加してください(複数行貼り付け可)。",
       "cell.title": "クリックで変更",
       "del": "削除",
-      "del.confirm": "もう一度クリック"
+      "del.confirm": "もう一度クリック",
+      "sheetTitle": "WFTools - 出席簿",
+      "mark.absent": "欠",
+      "mark.late": "遅",
+      "mark.excused": "公"
     },
     "barcode": {
       "legend.format": "バーコード規格",
@@ -349,7 +444,7 @@
       "meta.enter": "コードを入力してください。例:",
       "meta.autoCheck": "チェックディジットを自動追加",
       "hint.CODE128": "アクセントなしの英字・数字・記号に対応。注文・配送・倉庫でよく使われます。",
-      "hint.EAN13": "12桁を入力(末尾は自動付与)。小売用。ベトナム製品は893で始まります。",
+      "hint.EAN13": "12桁の数字を入力すると、最後の数字（チェックデジット）が自動で付きます。商品に付ける一般的なバーコードで、日本のJANコードは49または45で始まります。",
       "hint.EAN8": "7桁を入力(末尾は自動付与)。小型商品向け。",
       "hint.UPCA": "11桁を入力(末尾は自動付与)。米国商品でよく見られます。",
       "hint.CODE39": "アクセントなしの大文字・数字・- . $ / + % に対応。社員証や機器ラベルでよく使われます。",
@@ -456,7 +551,10 @@
       "err.json": "無効なJSON",
       "err.jsonHint": "エラーチェックツールで位置を確認してください。",
       "err.format": "整形できませんでした",
-      "toast.dl": "ファイルをダウンロードしました"
+      "toast.dl": "ファイルをダウンロードしました",
+      "sample.js": "function greet(name){console.log(\"こんにちは、\"+name)}\nconst list=[1,2,3].map(x=>x*2);greet(\"WFTools\")",
+      "sample.html": "<ul><li>一つ目</li><li>二つ目</li></ul><p class=\"note\">こんにちは</p>",
+      "sample.json": "{\"name\":\"WFTools\",\"tools\":[\"QR\",\"バーコード\"],\"free\":true}"
     },
     "code-check": {
       "aria.lang": "言語を選択",
@@ -472,7 +570,10 @@
       "tag.error": "エラー",
       "tag.warn": "警告",
       "line": "行",
-      "col": "列"
+      "col": "列",
+      "sample.js": "function sum(a, b) {\n  return a + b\n}\nconst result = sum(2, 3;",
+      "sample.html": "<div class=\"box\">\n  <p>こんにちは\n  <ul><li>一つ目</li></ul>\n</div>",
+      "sample.json": "{\n  \"name\": \"WFTools\",\n  \"count\": 12,\n}"
     },
     "colors": {
       "aria.pick": "ベースカラーを選択",
@@ -612,7 +713,11 @@
       "city.America/New_York": "ニューヨーク",
       "city.America/Chicago": "シカゴ",
       "city.America/Los_Angeles": "ロサンゼルス",
-      "city.UTC": "UTC"
+      "city.UTC": "UTC",
+      "fx.defaultAmount": "10000",
+      "fx.defaultFrom": "JPY",
+      "fx.defaultTo": "USD",
+      "tz.default": "Asia/Tokyo"
     },
     "cv": {
       "add.exp": "+ 職歴を追加",
@@ -675,7 +780,24 @@
       "untitled": "無題のCV",
       "toast.saved": "CVを保存しました",
       "toast.badData": "CVデータが壊れています（Google Sheetsで手動編集された可能性があります）",
-      "del.confirm": "もう一度押すと削除"
+      "del.confirm": "もう一度押すと削除",
+      "sm.name": "山田 太郎",
+      "sm.headline": "営業職",
+      "sm.email": "taro.yamada@email.com",
+      "sm.phone": "090-1234-5678",
+      "sm.address": "東京都渋谷区",
+      "sm.summary": "法人営業の経験が3年以上あり、法人顧客のフォローや見積書の作成を得意としています。今後は営業チームのリーダーを目指しています。",
+      "sm.present": "現在",
+      "sm.exp1.title": "営業担当",
+      "sm.exp1.place": "株式会社ABC",
+      "sm.exp1.desc": "法人顧客40社を担当\n2025年度の売上目標を120%達成",
+      "sm.exp2.title": "カスタマーサポート",
+      "sm.exp2.place": "XYZ商店",
+      "sm.exp2.desc": "電話やチャットでの注文対応・問い合わせ対応",
+      "sm.edu.title": "経営学部 経営学科 卒業",
+      "sm.edu.place": "○○大学",
+      "sm.skills": "交渉、見積作成、Excel、CRM、プレゼンテーション",
+      "sm.languages": "英語（TOEIC 750点）"
     },
     "cycle-track": {
       "logTitle": "生理開始日を記録",
@@ -751,7 +873,11 @@
       "del": "削除",
       "noTx": "取引がまだありません。上のボックスで最初の取引を追加してください。",
       "err.amount": "0より大きい金額を入力してください。",
-      "err.date": "日付を選んでください。"
+      "err.date": "日付を選んでください。",
+      "csv.header": "日付,種類,カテゴリ,金額,メモ",
+      "csv.expense": "支出",
+      "csv.income": "収入",
+      "csv.file": "家計簿"
     },
     "data-convert": {
       "srcTitle": "ソースデータ",
@@ -817,7 +943,8 @@
       "outinfo.cols": "列",
       "outinfo.result": "結果",
       "outinfo.trunc": "（ボックスは先頭のみ表示、全体はファイルをダウンロード）",
-      "toast.dl": "ダウンロードしました"
+      "toast.dl": "ダウンロードしました",
+      "sample": "[\n  { \"id\": \"P001\", \"name\": \"アイスラテ\", \"price\": 450, \"in_stock\": true, \"category\": { \"id\": \"DR\", \"name\": \"飲み物\" } },\n  { \"id\": \"P002\", \"name\": \"ハムサンド\", \"price\": 380, \"in_stock\": false, \"category\": { \"id\": \"FD\", \"name\": \"食べ物\" } }\n]"
     },
     "file-diff": {
       "drop.title": "ファイルを選択またはドラッグ＆ドロップ",
@@ -861,7 +988,10 @@
       "rpt.compare": "比較",
       "rpt.same": "同一",
       "rpt.by": "作成",
-      "toast.report": "比較レポートをダウンロードしました"
+      "toast.report": "比較レポートをダウンロードしました",
+      "sample.a": "売買契約書\n甲：ABC株式会社\n価格：2,900円\n期間：30日間\n締結地：東京",
+      "sample.b": "売買契約書\n甲：ABC株式会社 日本支社\n価格：3,200円\n締結地：東京\n署名日より効力を生じる",
+      "fn.report": "比較レポート.html"
     },
     "fullscreen-clock": {
       "tab.clock": "時計",
@@ -1080,7 +1210,11 @@
       "err.qty": "数量は0より大きくしてください。",
       "err.notEnough1": "残り",
       "err.notEnough2": "在庫では出庫に足りません：",
-      "del.confirm": "もう一度押すと削除"
+      "del.confirm": "もう一度押すと削除",
+      "defaultUnit": "個",
+      "skuPh": "SHIRT-WHITE-M",
+      "csv.header": "SKU,商品名,単位,在庫,最低在庫,原価,販売価格",
+      "csv.file": "在庫"
     },
     "journal": {
       "writeToday": "今日を書く",
@@ -1101,7 +1235,8 @@
       "empty": "まだ日記がありません。",
       "toast.empty": "保存する前に何か書いてください",
       "toast.saved": "日記を保存しました",
-      "del.confirm": "もう一度押す"
+      "del.confirm": "もう一度押す",
+      "sheetTitle": "WFTools - 日記"
     },
     "js-obfuscate": {
       "method": "難読化の方法",
@@ -1118,7 +1253,8 @@
       "note": "このツールはコードを<b>読みにくく、コピーしにくく</b>するだけで、完全な暗号化ではありません。技術がある人は復元できます。コードは元と同じく動作します。グローバル変数とプロパティ名は、他のコードとの連携を壊さないよう保持されます。<code>eval</code>や<code>with</code>がある場合、安全のため変数名の変更は自動でオフになります。",
       "stat.src": "元のコード",
       "stat.out": "難読化後",
-      "toast.dl": "ファイルをダウンロードしました"
+      "toast.dl": "ファイルをダウンロードしました",
+      "sample": "// 例：ボタンを押した回数を数える\nfunction createCounter(start) {\n  let clicks = start;\n  return function increase() {\n    clicks = clicks + 1;\n    console.log(clicks + \"回押されました\");\n    return clicks;\n  };\n}\n\nconst counter = createCounter(0);\ncounter();\ncounter();"
     },
     "loan": {
       "principal": "借入額",
@@ -1321,7 +1457,11 @@
       "toast.saved": "保存しました",
       "toast.badData": "書類データが壊れています（Google Sheetsで手動編集された可能性があります）",
       "toast.duplicated": "複製しました。保存を忘れずに",
-      "del.confirm": "もう一度押すと削除"
+      "del.confirm": "もう一度押すと削除",
+      "numPrefix.quote": "見積",
+      "numPrefix.invoice": "請求",
+      "defaultUnit": "個",
+      "p.cur": "{n}円"
     },
     "menu-qr": {
       "blank": "空のメニュー",
@@ -1359,7 +1499,24 @@
       "del": "削除",
       "noSaved": "保存したメニューはまだありません。",
       "toast.badData": "メニューデータが壊れています",
-      "del.confirm": "もう一度押すと削除"
+      "del.confirm": "もう一度押すと削除",
+      "sm.name": "喫茶 さくら",
+      "sm.info": "東京都千代田区丸の内1-2-3 · 営業時間 7:00〜22:00\nWi‑Fi: Sakura / password123",
+      "sm.note": "価格は税込です。ご注文はカウンターまたはスタッフまで。",
+      "sm.cat1": "コーヒー",
+      "sm.cat2": "ティー・ジュース",
+      "sm.i1": "ブレンドコーヒー",
+      "sm.i2": "カフェラテ",
+      "sm.i3": "塩キャラメルラテ",
+      "sm.i3d": "ほんのり塩気のあるキャラメルが人気です",
+      "sm.i4": "桃のアイスティー",
+      "sm.i5": "オレンジジュース",
+      "sm.p1": "350",
+      "sm.p2": "450",
+      "sm.p3": "500",
+      "sm.p4": "480",
+      "sm.p5": "450",
+      "fileFallback": "shop"
     },
     "mindmap": {
       "d.root": "メインテーマ",
@@ -1393,7 +1550,8 @@
       "dlTxt": ".txtをダウンロード",
       "toMap": "要約からマップを作成",
       "lesson": "教材",
-      "toast.mapMade": "要約からマインドマップを作成しました"
+      "toast.mapMade": "要約からマインドマップを作成しました",
+      "fn.summary": "要約.txt"
     },
     "pdf-merge": {
       "aria.tabs": "操作を選択",
@@ -1487,7 +1645,10 @@
       "empty.text": "リンクまたはテキストを入力してコードを作成します。",
       "meta.small": "コンパクトなコード。どのサイズでも読み取りやすいです。",
       "meta.mid": "やや密なコード。3 cm以上で印刷してください。",
-      "meta.big": "内容が長く非常に密なコードです。内容を短くするか大きく印刷してください。"
+      "meta.big": "内容が長く非常に密なコードです。内容を短くするか大きく印刷してください。",
+      "ph.ssid": "MyHome-5G",
+      "ph.email": "name@example.com",
+      "ph.tel": "090-1234-5678"
     },
     "quiz-bank": {
       "defaultTitle": "選択式テスト",
@@ -1530,7 +1691,8 @@
       "print.name": "氏名",
       "print.class": "クラス",
       "print.score": "点数",
-      "print.answers": "解答"
+      "print.answers": "解答",
+      "fn.export": "小テスト.json"
     },
     "rsa-keys": {
       "keyLen": "鍵の長さ",
@@ -1630,7 +1792,9 @@
       "th.portion": "所得部分",
       "th.tax": "税額",
       "total": "合計",
-      "netLabel": "希望ネット給与（手取り）"
+      "netLabel": "希望ネット給与（手取り）",
+      "vnOnly": "ベトナム専用です。",
+      "vnOnlyNote": "このツールはベトナムの社会保険と個人所得税のルールに基づいて計算します（金額はベトナムドン〈đ〉）。他の国の制度には対応していません。"
     },
     "study-timetable": {
       "defaultTitle": "時間割",
@@ -1655,7 +1819,8 @@
       "cancel": "キャンセル",
       "clearCell": "セルを消去",
       "periodWord": "時限",
-      "toast.saved": "授業時間の設定を保存しました"
+      "toast.saved": "授業時間の設定を保存しました",
+      "sheetTitle": "WFTools - 時間割"
     },
     "teaching-pay": {
       "addSession": "授業を追加",
@@ -1683,7 +1848,9 @@
       "empty": "まだ授業がありません。",
       "defaultTitle": "授業",
       "toast.csv": "CSVを書き出しました",
-      "printTitle": "授業時間明細"
+      "printTitle": "授業時間明細",
+      "csvName": "teaching-hours.csv",
+      "monthPrefix": "—"
     },
     "water-tracker": {
       "today": "今日",
@@ -1714,7 +1881,14 @@
       "totalDays": "総日数",
       "weekendDays": "週末の日数",
       "holidayDays": "祝日",
-      "holidaysOnWork": "平日に当たる祝日"
+      "holidaysOnWork": "平日に当たる祝日",
+      "hol.newYear": "元日（1月1日）",
+      "hol.reunification": "南部解放記念日（4月30日）",
+      "hol.labour": "国際労働者の日（5月1日）",
+      "hol.national": "建国記念日（9月2日）",
+      "hol.tet": "テト（旧正月）",
+      "hol.hung": "フン王の命日（ジョー・トー）",
+      "holiday": "祝日"
     },
     "world-clock": {
       "addCountry": "国を追加",
@@ -1731,7 +1905,38 @@
       "th.time": "現地時刻",
       "th.date": "日付",
       "city.Asia/Ho_Chi_Minh": "ハノイ / ホーチミン市",
-      "city.Asia/Shanghai": "北京 / 上海"
+      "city.Asia/Shanghai": "北京 / 上海",
+      "city.Asia/Bangkok": "バンコク",
+      "city.Asia/Singapore": "シンガポール",
+      "city.Asia/Tokyo": "東京",
+      "city.Asia/Seoul": "ソウル",
+      "city.Asia/Kolkata": "ニューデリー",
+      "city.Asia/Jakarta": "ジャカルタ",
+      "city.Asia/Kuala_Lumpur": "クアラルンプール",
+      "city.Asia/Manila": "マニラ",
+      "city.Asia/Dubai": "ドバイ",
+      "city.Europe/Moscow": "モスクワ",
+      "city.Europe/London": "ロンドン",
+      "city.Europe/Paris": "パリ",
+      "city.Europe/Berlin": "ベルリン",
+      "city.Europe/Rome": "ローマ",
+      "city.Europe/Madrid": "マドリード",
+      "city.Europe/Amsterdam": "アムステルダム",
+      "city.Europe/Istanbul": "イスタンブール",
+      "city.America/New_York": "ニューヨーク（東部時間）",
+      "city.America/Chicago": "シカゴ（中部時間）",
+      "city.America/Denver": "デンバー（山岳部時間）",
+      "city.America/Los_Angeles": "ロサンゼルス（太平洋時間）",
+      "city.America/Toronto": "トロント",
+      "city.America/Vancouver": "バンクーバー",
+      "city.America/Sao_Paulo": "サンパウロ",
+      "city.America/Mexico_City": "メキシコシティ",
+      "city.Australia/Sydney": "シドニー",
+      "city.Australia/Perth": "パース",
+      "city.Pacific/Auckland": "オークランド",
+      "city.Africa/Johannesburg": "ヨハネスブルグ",
+      "city.Africa/Cairo": "カイロ",
+      "defaultZones": "Asia/Tokyo,Asia/Shanghai,America/New_York,Europe/London"
     },
     "utm": {
       "preset.0": "Facebook（投稿）",
@@ -1813,7 +2018,8 @@
       "toast.picked": "フレーズを選択してコピーしました",
       "u.h": "{n}時間",
       "u.m": "{n}分",
-      "u.s": "{n}秒"
+      "u.s": "{n}秒",
+      "sample": "アイスミルクコーヒーは、日本でも身近な飲み物です。毎朝、何百万人もの人が、香り高く冷たいアイスミルクコーヒーを飲んで一日を始めます。\n\nおいしいアイスミルクコーヒーを作るには、挽きたてのコーヒー、牛乳、たっぷりの氷が必要です。コーヒーはドリッパーを使って、約五分かけてゆっくりと落とします。\n\n最近では海外の友人にも人気があり、世界中のカフェのメニューに並んでいます。"
     },
     "text-to-html": {
       "t.h1": "大見出し",
@@ -1847,7 +2053,9 @@
       "linkPrompt": "リンクのアドレス（URL）を入力：",
       "toast.applied": "HTMLを適用しました",
       "docTitle": "ドキュメント",
-      "toast.dl": "HTMLファイルをダウンロードしました"
+      "toast.dl": "HTMLファイルをダウンロードしました",
+      "sample": "<h2>WFToolsへようこそ</h2><p>これは<strong>見たまま</strong>編集できるエディターです。Wordのように入力するだけで、<em>きれいなHTML</em>が自動で作られます。</p><ul><li>文字を選択して、ツールバーのボタンを押します</li><li>下の欄にあるHTMLコードをコピーします</li></ul>",
+      "fn.doc": "文書.html"
     },
     "watermark": {
       "tile": "敷き詰め",

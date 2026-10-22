@@ -25,7 +25,12 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 ## Đa ngôn ngữ (i18n)
 - `scripts/i18n.mjs` chạy sau `vite build`: sinh bản `/en /vi /ja /zh` cho mọi trang, thẻ SEO (canonical, hreflang, Open Graph, JSON-LD), `/language/<lang>.js` và `sitemap.xml`
 - Tiếng Anh là mặc định. Thiếu bản dịch thì lùi về tiếng Anh, rồi về chuỗi gốc tiếng Việt trong HTML
-- Commit gần nhất: "i18n Phase 2: dịch pptx-pdf (PowerPoint ↔ PDF), công cụ còn sót"
+- Chuỗi riêng từng công cụ: `s.<toolId>.<key>` trong từ điển, dùng `T('key', 'fallback Việt')` (`pageText()`) hoặc `data-i18n` / `data-i18n-ph`
+- Chuỗi dùng chung trong `src/lib`, `src/calc`, `src/ui.ts`: key `lib.<module>.<key>` trong `ui`, dùng `t()` / `tf()` (thay `{tên}`) ở lúc gọi hàm, không đọc ở top-level module
+- Danh sách dữ liệu có nhãn (món ăn, hoạt động, thành phố, ngày lễ...): có trường `key` ổn định, page tra `T('prefix.' + key, tênViệt)`; dữ liệu người dùng đã lưu theo tên Việt vẫn phải hiển thị được
+- Nội dung mẫu / ví dụ / placeholder phải địa phương hoá theo văn hoá từng nước (en: Mỹ/Anh, ja: Nhật, zh: Trung Quốc), không dịch máy móc; không đổi công thức tính
+- Trang `/m/` (khách xem menu) không nạp từ điển, 4 ngôn ngữ nhúng thẳng trong `src/menu/menu.ts`
+- Đọc số thành chữ (hoá đơn) theo ngôn ngữ: `src/calc/words-vi.ts` (`moneyInWords`)
 
 ## Thêm công cụ mới
 1. Tạo `tools/<id>.html` (chép từ trang có sẵn, giữ `data-root=".."` và `<main id="content">`)
@@ -49,8 +54,12 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - GitHub Pages phải để **Source: GitHub Actions** (không dùng "Deploy from branch", vì trình duyệt không chạy được file .ts). Tên miền riêng websitefreetools.com, có `CNAME` ở gốc repo và trong `public/`
 
 ## Đang làm dở: i18n (rà soát tiếng Việt còn sót ở bản en/ja/zh)
-- Đã làm: Phase 2 dịch các công cụ, commit gần nhất dịch xong `pptx-pdf`
-- Đã xong (22/10/2026): dịch tên món và khẩu phần của `meal-calo` (`src/data/foods.ts` có `key` cho từng món; từ điển có `food.<key>` và `unit.*` đủ 38 món ở cả en/vi/ja/zh). `npm run typecheck` và `npm run build` đều qua
+- Đã xong (22/10/2026): Phase 2 dịch các công cụ; dịch món ăn `meal-calo`; rà soát toàn bộ 44 công cụ: thông báo lỗi của lib (xml, extract, ranges, pptx, codetools, barcode, image...), nội dung mẫu/ví dụ theo từng nước, đọc số thành chữ en/ja/zh, đếm từ ja/zh (`Intl.Segmenter`), ngày lễ VN có tên dịch, trang chủ, menu khách `/m/`. `npm run typecheck` và `npm run build` đều qua; mọi key tĩnh dùng trong code đều có đủ 4 ngôn ngữ
+- Quyết định còn mở, chờ chủ site:
+  - Đơn vị tiền "đ" và định dạng số kiểu vi-VN gắn cứng ở `fmtMoney`/`fmtInt`/`parseMoney` trong `src/ui.ts`, nên loan, compound, salary, teaching-pay, inventory vẫn hiện "đ" và giá trị mẫu kiểu VND ở mọi ngôn ngữ (invoice đã đổi ký hiệu tiền theo ngôn ngữ)
+  - Tên trang tính và tên cột Google Sheets (attendance, journal, habit, expense, inventory, invoice, study-timetable) vẫn tiếng Việt: code đọc lại theo đúng tên đó, dịch đi sẽ làm hỏng bảng cũ. Muốn đổi cần bước đọc tương thích tên cũ
+  - Đồng hồ thế giới đang so giờ với Việt Nam; hoạt động MET trong calo-burn tra theo chỉ số `act.N`, không có `key` ổn định; sức khoẻ chưa có lb / ft-in cho en
+  - `safeFilename` (`src/lib/download.ts`) bỏ dấu tiếng Việt nên tên file ja/zh rơi về giá trị mặc định
 - Còn lại, đã biết:
   - Chưa kiểm tra render thật bằng trình duyệt (máy chạy phiên này chưa có trình duyệt headless). Quét tĩnh trong `dist/` chỉ bắt được chữ gắn cứng trong HTML. Tiêu đề trang chủ ("Danh sách công cụ", "Cách dùng") được `src/pages/home.ts` dịch lúc chạy nên quét tĩnh báo nhầm
   - Các chuỗi tiếng Việt còn trong từ điển en/ja/zh là cố ý: tên món Việt trong ngoặc (Bún bò Huế...), ký hiệu đ, số hiệu văn bản pháp luật (NĐ-CP), từ dừng (và, của), Tết
