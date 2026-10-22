@@ -1,6 +1,7 @@
 /**
  * So sánh hai văn bản: thuật toán Myers O(ND) theo dòng, rồi so tiếp theo từ trong các dòng bị sửa.
  */
+import { localeTag, tf } from '../i18n';
 
 export type Op = 'equal' | 'insert' | 'delete';
 export interface Edit<T> { op: Op; a?: T; b?: T }
@@ -109,7 +110,7 @@ export function diffText(a: string, b: string, o: DiffOptions): DiffResult {
   };
   const la = split(a);
   const lb = split(b);
-  if (la.length > MAX_LINES || lb.length > MAX_LINES) throw new Error(`Văn bản quá dài để so sánh (tối đa ${MAX_LINES.toLocaleString('vi-VN')} dòng mỗi bên).`);
+  if (la.length > MAX_LINES || lb.length > MAX_LINES) throw new Error(tf('lib.diff.tooLong', 'Văn bản quá dài để so sánh (tối đa {max} dòng mỗi bên).', { max: MAX_LINES.toLocaleString(localeTag()) }));
   const edits = myers(la, lb, (x, y) => normalize(x.text, o) === normalize(y.text, o));
 
   const rows: Row[] = [];

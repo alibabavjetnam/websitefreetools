@@ -1,4 +1,5 @@
 /** Xử lý ảnh dùng chung: đọc ảnh, vẽ lên canvas, xuất ra các định dạng (kể cả BMP, ICO tự mã hoá) */
+import { t, tf } from '../i18n';
 
 export const MAX_IMAGE_BYTES = 40 * 1024 * 1024;
 
@@ -18,7 +19,7 @@ export async function loadImage(file: Blob): Promise<LoadedImage> {
       img.decoding = 'async';
       await new Promise<void>((ok, fail) => {
         img.onload = () => ok();
-        img.onerror = () => fail(new Error('Không đọc được file SVG.'));
+        img.onerror = () => fail(new Error(t('lib.image.svg', 'Không đọc được file SVG.')));
         img.src = url;
       });
       // SVG không khai báo kích thước thì lấy 512px làm mặc định
@@ -35,7 +36,7 @@ export async function loadImage(file: Blob): Promise<LoadedImage> {
     return { source: bmp, width: bmp.width, height: bmp.height, close: () => bmp.close() };
   } catch {
     throw new Error(
-      /heic|heif/i.test(file.type) ? 'Trình duyệt này không đọc được ảnh HEIC của iPhone. Hãy mở bằng Safari hoặc đổi ảnh sang JPG trước.' : 'Không đọc được ảnh, file có thể bị hỏng hoặc không phải ảnh.',
+      /heic|heif/i.test(file.type) ? t('lib.image.heic', 'Trình duyệt này không đọc được ảnh HEIC của iPhone. Hãy mở bằng Safari hoặc đổi ảnh sang JPG trước.') : t('lib.image.unreadable', 'Không đọc được ảnh, file có thể bị hỏng hoặc không phải ảnh.'),
     );
   }
 }
@@ -46,7 +47,7 @@ export function drawToCanvas(img: LoadedImage, width: number, height: number, bg
   canvas.width = Math.max(1, Math.round(width));
   canvas.height = Math.max(1, Math.round(height));
   const ctx = canvas.getContext('2d');
-  if (!ctx) throw new Error('Trình duyệt không hỗ trợ xử lý ảnh.');
+  if (!ctx) throw new Error(t('lib.image.noCanvas', 'Trình duyệt không hỗ trợ xử lý ảnh.'));
   if (bg) {
     ctx.fillStyle = bg;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -58,7 +59,7 @@ export function drawToCanvas(img: LoadedImage, width: number, height: number, bg
 
 export function canvasToBlob(canvas: HTMLCanvasElement, mime: string, quality?: number): Promise<Blob> {
   return new Promise((ok, fail) =>
-    canvas.toBlob((b) => (b && b.type === mime ? ok(b) : fail(new Error(`Trình duyệt này không xuất được định dạng ${mime.replace('image/', '').toUpperCase()}.`))), mime, quality),
+    canvas.toBlob((b) => (b && b.type === mime ? ok(b) : fail(new Error(tf('lib.image.noEncode', 'Trình duyệt này không xuất được định dạng {fmt}.', { fmt: mime.replace('image/', '').toUpperCase() })))), mime, quality),
   );
 }
 

@@ -55,7 +55,7 @@ function nextNumber(kind: 'quote' | 'invoice'): string {
   const year = new Date().getFullYear();
   const key = `${kind}-${year}`;
   const n = (counter.get()[key] ?? 0) + 1;
-  return `${kind === 'quote' ? 'BG' : 'HD'}-${year}-${String(n).padStart(3, '0')}`;
+  return `${kind === 'quote' ? T('numPrefix.quote', 'BG') : T('numPrefix.invoice', 'HD')}-${year}-${String(n).padStart(3, '0')}`;
 }
 
 function blankDoc(kind: 'quote' | 'invoice' = 'quote'): InvoiceDoc {
@@ -66,7 +66,7 @@ function blankDoc(kind: 'quote' | 'invoice' = 'quote'): InvoiceDoc {
     dueDate: plusDays(kind === 'quote' ? 15 : 7),
     seller: sellerPref.get() ?? { ...emptyParty(), bank: '' },
     buyer: emptyParty(),
-    items: [{ desc: '', unit: 'cái', qty: 1, price: 0, discount: 0 }],
+    items: [{ desc: '', unit: T('defaultUnit', 'cái'), qty: 1, price: 0, discount: 0 }],
     vat: 0,
     shipping: 0,
     notes: kind === 'quote' ? T('notes.quote', 'Báo giá có hiệu lực đến ngày ghi ở trên. Giá chưa gồm phí vận chuyển nếu không ghi rõ.') : T('notes.invoice', 'Cảm ơn quý khách đã mua hàng.'),
@@ -237,7 +237,7 @@ function renderPreview(): void {
       <tr><td>${T('p.subtotal','Cộng tiền hàng')}</td><td>${fmtInt(t.subtotal)}</td></tr>
       ${doc.vat ? `<tr><td>${T('vat','Thuế GTGT')} ${doc.vat}%</td><td>${fmtInt(t.vatAmount)}</td></tr>` : ''}
       ${doc.shipping ? `<tr><td>${T('shipping','Phí vận chuyển')}</td><td>${fmtInt(doc.shipping)}</td></tr>` : ''}
-      <tr class="pd-grand"><td>${T('p.total','Tổng thanh toán')}</td><td>${fmtInt(t.total)} đ</td></tr>
+      <tr class="pd-grand"><td>${T('p.total','Tổng thanh toán')}</td><td>${T('p.cur', '{n} đ').replace('{n}', fmtInt(t.total))}</td></tr>
     </table>
     <p class="pd-words">${T('p.inWords','Bằng chữ')}: <i>${escapeHtml(moneyInWords(t.total))}</i></p>
     ${doc.seller.bank ? `<p class="pd-bank"><b>${T('bank','Thông tin chuyển khoản')}:</b> ${escapeHtml(doc.seller.bank)}</p>` : ''}
@@ -286,13 +286,13 @@ form.addEventListener('click', (e) => {
   const rm = (e.target as HTMLElement).closest<HTMLElement>('[data-remove]')?.dataset.remove;
   if (rm === undefined) return;
   doc.items.splice(Number(rm), 1);
-  if (!doc.items.length) doc.items.push({ desc: '', unit: 'cái', qty: 1, price: 0, discount: 0 });
+  if (!doc.items.length) doc.items.push({ desc: '', unit: T('defaultUnit', 'cái'), qty: 1, price: 0, discount: 0 });
   renderItems();
   renderPreview();
 });
 form.addEventListener('submit', (e) => e.preventDefault());
 $('#add-item').addEventListener('click', () => {
-  doc.items.push({ desc: '', unit: 'cái', qty: 1, price: 0, discount: 0 });
+  doc.items.push({ desc: '', unit: T('defaultUnit', 'cái'), qty: 1, price: 0, discount: 0 });
   renderItems();
   renderPreview();
   ($('#items').querySelector('.item-row:last-child input') as HTMLInputElement | null)?.focus();

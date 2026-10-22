@@ -2,6 +2,7 @@
  * Bộ mã hoá mã vạch 1D: Code 128, EAN-13, EAN-8, UPC-A, Code 39.
  * Kết quả là chuỗi độ rộng các vạch xen kẽ (bắt đầu bằng vạch đen), tính theo module.
  */
+import { t, tf } from '../i18n';
 
 export type BarcodeFormat = 'CODE128' | 'EAN13' | 'EAN8' | 'UPCA' | 'CODE39';
 
@@ -38,10 +39,10 @@ function digitRun(s: string, from: number): number {
 }
 
 function encodeCode128(input: string): BarcodeResult {
-  if (input.length === 0) throw new BarcodeInputError('Hãy nhập nội dung cần mã hoá.');
+  if (input.length === 0) throw new BarcodeInputError(t('lib.barcode.empty', 'Hãy nhập nội dung cần mã hoá.'));
   for (const ch of input) {
     const c = ch.charCodeAt(0);
-    if (c > 127) throw new BarcodeInputError('Code 128 chỉ nhận chữ không dấu, số và ký hiệu thông thường. Hãy bỏ dấu tiếng Việt hoặc dùng công cụ Tạo mã QR.');
+    if (c > 127) throw new BarcodeInputError(t('lib.barcode.code128Chars', 'Code 128 chỉ nhận chữ không dấu, số và ký hiệu thông thường. Hãy bỏ dấu tiếng Việt hoặc dùng công cụ Tạo mã QR.'));
   }
 
   const codes: number[] = [];
@@ -146,15 +147,15 @@ function bitsToWidths(bits: string): number[] {
 
 function normalizeGs1(input: string, dataLen: number, name: string): string {
   const s = input.replace(/\s+/g, '');
-  if (!/^\d+$/.test(s)) throw new BarcodeInputError(`${name} chỉ chấp nhận chữ số.`);
+  if (!/^\d+$/.test(s)) throw new BarcodeInputError(tf('lib.barcode.digitsOnly', '{name} chỉ chấp nhận chữ số.', { name }));
   if (s.length === dataLen) return s + gs1CheckDigit(s);
   if (s.length === dataLen + 1) {
     const expected = gs1CheckDigit(s.slice(0, dataLen));
     if (Number(s[dataLen]) !== expected)
-      throw new BarcodeInputError(`Chữ số cuối chưa đúng, phải là ${expected}. Bạn có thể bỏ chữ số cuối để hệ thống tự thêm.`);
+      throw new BarcodeInputError(tf('lib.barcode.badCheck', 'Chữ số cuối chưa đúng, phải là {expected}. Bạn có thể bỏ chữ số cuối để hệ thống tự thêm.', { expected }));
     return s;
   }
-  throw new BarcodeInputError(`${name} cần ${dataLen} chữ số (hoặc ${dataLen + 1} chữ số kèm số kiểm tra).`);
+  throw new BarcodeInputError(tf('lib.barcode.needDigits', '{name} cần {n} chữ số (hoặc {n1} chữ số kèm số kiểm tra).', { name, n: dataLen, n1: dataLen + 1 }));
 }
 
 function encodeEan13Digits(code: string): number[] {
@@ -202,10 +203,10 @@ const CODE39: Record<string, string> = {
 
 function encodeCode39(input: string): BarcodeResult {
   const s = input.toUpperCase();
-  if (s.length === 0) throw new BarcodeInputError('Hãy nhập nội dung cần mã hoá.');
+  if (s.length === 0) throw new BarcodeInputError(t('lib.barcode.empty', 'Hãy nhập nội dung cần mã hoá.'));
   const bad = [...s].find((c) => c === '*' || !(c in CODE39));
   if (bad !== undefined)
-    throw new BarcodeInputError(`Code 39 không hỗ trợ ký tự "${bad}". Chỉ dùng A–Z, 0–9 và - . $ / + % khoảng trắng.`);
+    throw new BarcodeInputError(tf('lib.barcode.code39Bad', 'Code 39 không hỗ trợ ký tự "{bad}". Chỉ dùng A–Z, 0–9 và - . $ / + % khoảng trắng.', { bad }));
   const widths: number[] = [];
   const full = `*${s}*`;
   [...full].forEach((c, idx) => {
@@ -216,11 +217,11 @@ function encodeCode39(input: string): BarcodeResult {
 }
 
 export const BARCODE_FORMATS: { id: BarcodeFormat; label: string; hint: string; sample: string }[] = [
-  { id: 'CODE128', label: 'Code 128', hint: 'Nhận chữ không dấu, số và ký hiệu. Hay dùng cho đơn hàng, vận chuyển, kho hàng.', sample: 'WFT-2026-0001' },
-  { id: 'EAN13', label: 'EAN-13', hint: 'Nhập 12 chữ số, chữ số cuối được tự thêm. Mã vạch trên hàng bán lẻ, hàng Việt Nam bắt đầu bằng 893.', sample: '893123456789' },
-  { id: 'EAN8', label: 'EAN-8', hint: 'Nhập 7 chữ số, chữ số cuối được tự thêm. Dùng cho sản phẩm nhỏ.', sample: '8931234' },
-  { id: 'UPCA', label: 'UPC-A', hint: 'Nhập 11 chữ số, chữ số cuối được tự thêm. Hay gặp trên hàng Mỹ.', sample: '03600029145' },
-  { id: 'CODE39', label: 'Code 39', hint: 'Nhận chữ in hoa không dấu, số và - . $ / + %. Hay dùng cho thẻ nhân viên, nhãn thiết bị.', sample: 'WFTOOLS-39' },
+  { id: 'CODE128', label: 'Code 128', hint: 'Nhận chữ không dấu, số và ký hiệu. Hay dùng cho đơn hàng, vận chuyển, kho hàng.', get sample() { return t('lib.barcode.sample.CODE128', 'WFT-2026-0001'); } },
+  { id: 'EAN13', label: 'EAN-13', hint: 'Nhập 12 chữ số, chữ số cuối được tự thêm. Mã vạch trên hàng bán lẻ, hàng Việt Nam bắt đầu bằng 893.', get sample() { return t('lib.barcode.sample.EAN13', '893123456789'); } },
+  { id: 'EAN8', label: 'EAN-8', hint: 'Nhập 7 chữ số, chữ số cuối được tự thêm. Dùng cho sản phẩm nhỏ.', get sample() { return t('lib.barcode.sample.EAN8', '8931234'); } },
+  { id: 'UPCA', label: 'UPC-A', hint: 'Nhập 11 chữ số, chữ số cuối được tự thêm. Hay gặp trên hàng Mỹ.', get sample() { return t('lib.barcode.sample.UPCA', '03600029145'); } },
+  { id: 'CODE39', label: 'Code 39', hint: 'Nhận chữ in hoa không dấu, số và - . $ / + %. Hay dùng cho thẻ nhân viên, nhãn thiết bị.', get sample() { return t('lib.barcode.sample.CODE39', 'WFTOOLS-39'); } },
 ];
 
 export function encodeBarcode(format: BarcodeFormat, input: string): BarcodeResult {

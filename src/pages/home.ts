@@ -10,6 +10,18 @@ const esc = (s: string): string => s.replace(/[<>&"]/g, (c) => ({ '<': '&lt;', '
 const titleEl = document.getElementById('tools-title');
 if (titleEl) titleEl.textContent = t('home.toolsTitle', titleEl.textContent ?? '');
 
+// Dịch phần "Cách dùng" và "Giới thiệu" (chữ gốc tiếng Việt nằm sẵn trong index.html làm dự phòng).
+// Các bước dùng <strong> cho cụm đầu nên từ điển ghi dạng "Cụm đầu|phần còn lại".
+document.querySelectorAll<HTMLElement>('[data-home]').forEach((el) => {
+  const key = 'home.' + el.dataset.home;
+  if (/^step/.test(el.dataset.home ?? '')) {
+    const strong = el.querySelector('strong');
+    const rest = (el.textContent ?? '').slice((strong?.textContent ?? '').length);
+    const [head, tail] = t(key, `${strong?.textContent ?? ''}|${rest}`).split('|');
+    el.innerHTML = `<strong>${esc(head)}</strong>${esc(tail ?? '')}`;
+  } else el.textContent = t(key, el.textContent ?? '');
+});
+
 // Mỗi nhóm là một khung (groupbox) chứa danh sách công cụ của nhóm đó
 const container = document.getElementById('tool-groups') as HTMLElement;
 container.innerHTML = GROUPS.map((g) => {

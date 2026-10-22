@@ -1,5 +1,6 @@
 /** Vẽ một slide (mô hình từ pptx.ts) lên canvas. Đơn vị trong mô hình là point (1/72 inch). */
 import type { Box, Para, Presentation, Run, Slide, SlideItem, TextBody } from './pptx';
+import { tf } from '../i18n';
 
 export type ImageLoader = (path: string) => Promise<CanvasImageSource | null>;
 
@@ -182,7 +183,7 @@ async function drawItem(ctx: CanvasRenderingContext2D, it: SlideItem, scale: num
       ctx.fillStyle = '#5b6779';
       ctx.font = `${Math.max(10, 14 * scale)}px ${FALLBACK}`;
       ctx.textAlign = 'center';
-      ctx.fillText(`${it.label} (chưa hỗ trợ)`, w / 2, h / 2);
+      ctx.fillText(tf('lib.pptx.unsupported', '{label} (chưa hỗ trợ)', { label: it.label }), w / 2, h / 2);
       ctx.textAlign = 'left';
     });
   }

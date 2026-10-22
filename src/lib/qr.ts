@@ -2,6 +2,7 @@
  * Bộ mã hoá QR Code (ISO/IEC 18004) viết bằng TypeScript, không phụ thuộc thư viện.
  * Hỗ trợ version 1–40, 4 mức sửa lỗi, chế độ Numeric / Alphanumeric / Byte (UTF-8).
  */
+import { t } from '../i18n';
 
 export type Ecc = 'L' | 'M' | 'Q' | 'H';
 

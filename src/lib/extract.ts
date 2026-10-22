@@ -1,6 +1,7 @@
 /** Trích phần chữ từ các loại file để so sánh: văn bản thường, Word (.docx), HTML, PDF */
 import { childrenNamed, descendants, elements, localName, parseXml, type XmlElement } from './xml';
 import { CDN, global, loadScript, openPdf, type PdfJsTextItem } from './cdn';
+import { t, tf } from '../i18n';
 
 export const MAX_FILE_BYTES = 30 * 1024 * 1024;
 
@@ -52,14 +53,14 @@ export async function loadZip(buf: ArrayBuffer): Promise<Zip> {
   try {
     return await global<JSZipCtor>('JSZip').loadAsync(buf);
   } catch {
-    throw new Error('File bị hỏng hoặc không đúng định dạng Office mới (.docx, .pptx, .xlsx).');
+    throw new Error(t('lib.extract.badOffice', 'File bị hỏng hoặc không đúng định dạng Office mới (.docx, .pptx, .xlsx).'));
   }
 }
 
 async function docxToText(buf: ArrayBuffer): Promise<string> {
   const zip = await loadZip(buf);
   const f = zip.file('word/document.xml');
-  if (!f) throw new Error('Không tìm thấy nội dung văn bản trong file Word.');
+  if (!f) throw new Error(t('lib.extract.noWordText', 'Không tìm thấy nội dung văn bản trong file Word.'));
   return docxXmlToText(await f.async('string'));
 }
 
@@ -90,7 +91,7 @@ async function pdfToText(buf: ArrayBuffer): Promise<string> {
     await doc.destroy();
   }
   const text = pages.join('\n');
-  if (!text.trim()) throw new Error('File PDF này không có lớp chữ (thường là bản scan ảnh), nên không so sánh được nội dung.');
+  if (!text.trim()) throw new Error(t('lib.extract.pdfNoText', 'File PDF này không có lớp chữ (thường là bản scan ảnh), nên không so sánh được nội dung.'));
   return text;
 }
 
@@ -125,15 +126,15 @@ export function htmlToText(html: string): string {
 export type HtmlMode = 'text' | 'source';
 
 export async function fileToText(file: File, htmlMode: HtmlMode): Promise<{ text: string; kind: string }> {
-  if (file.size > MAX_FILE_BYTES) throw new Error('File lớn hơn 30 MB.');
+  if (file.size > MAX_FILE_BYTES) throw new Error(t('lib.extract.tooBig', 'File lớn hơn 30 MB.'));
   const name = file.name.toLowerCase();
   const ext = name.includes('.') ? name.slice(name.lastIndexOf('.') + 1) : '';
   if (ext === 'docx') return { text: await docxToText(await file.arrayBuffer()), kind: 'Word' };
   if (ext === 'pdf' || file.type === 'application/pdf') return { text: await pdfToText(await file.arrayBuffer()), kind: 'PDF' };
-  if (ext === 'doc') throw new Error('File Word đời cũ (.doc) chưa được hỗ trợ. Hãy mở bằng Word và lưu lại thành .docx.');
+  if (ext === 'doc') throw new Error(t('lib.extract.oldDoc', 'File Word đời cũ (.doc) chưa được hỗ trợ. Hãy mở bằng Word và lưu lại thành .docx.'));
   const buf = await file.arrayBuffer();
   const bytes = new Uint8Array(buf.slice(0, 8000));
-  if (bytes.includes(0)) throw new Error(`File "${file.name}" không phải file chữ, không so sánh được.`);
+  if (bytes.includes(0)) throw new Error(tf('lib.extract.notText', 'File "{name}" không phải file chữ, không so sánh được.', { name: file.name }));
   // Ưu tiên UTF-8; nếu lỗi thì thử bảng mã Windows-1258 (tiếng Việt cũ)
   let text: string;
   try {
@@ -142,6 +143,6 @@ export async function fileToText(file: File, htmlMode: HtmlMode): Promise<{ text
     text = new TextDecoder('windows-1258').decode(buf);
   }
   if (ext === 'html' || ext === 'htm' || file.type === 'text/html') return { text: htmlMode === 'text' ? htmlToText(text) : text, kind: 'HTML' };
-  return { text, kind: 'văn bản' };
+  return { text, kind: t('lib.extract.kindText', 'văn bản') };
 }
 

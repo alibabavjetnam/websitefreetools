@@ -9,6 +9,7 @@ const T = pageText();
 const R = SALARY_RULES;
 const root = $('#tool-root');
 root.innerHTML = `
+  <p class="note" style="margin-bottom:12px"><b>${T('vnOnly','Dành cho Việt Nam.')}</b> ${T('vnOnlyNote','Công cụ này tính theo quy định bảo hiểm và thuế thu nhập cá nhân của Việt Nam (mức lương bằng đồng Việt Nam, đ). Không áp dụng cho các nước khác.')}</p>
   <div class="tabs" role="tablist" aria-label="${T('aria.dir','Chiều quy đổi')}">
     <button type="button" role="tab" data-tab="gross">${T('tab.g2n','Gross sang Net')}</button>
     <button type="button" role="tab" data-tab="net">${T('tab.n2g','Net sang Gross')}</button>

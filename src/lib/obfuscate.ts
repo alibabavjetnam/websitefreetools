@@ -9,6 +9,7 @@
  *  - Gói toàn bộ trong eval(atob(...)) để che mã (tuỳ chọn).
  */
 import { loadAcorn, type AcornNode } from './codetools';
+import { t, tf } from '../i18n';
 
 export interface ObfuscateOptions {
   strings: boolean;
@@ -313,7 +314,7 @@ export async function obfuscate(src: string, opts: ObfuscateOptions): Promise<st
   try {
     ast = acorn.parse(src, { ecmaVersion: 'latest', sourceType: opts.module ? 'module' : 'script', allowReturnOutsideFunction: !opts.module, allowAwaitOutsideFunction: true }) as Node;
   } catch (e) {
-    throw new Error(`Mã JavaScript có lỗi cú pháp nên chưa làm rối được: ${(e as Error).message}`);
+    throw new Error(tf('lib.obfuscate.syntax', 'Mã JavaScript có lỗi cú pháp nên chưa làm rối được: {msg}', { msg: (e as Error).message }));
   }
 
   const edits: Edit[] = [];
@@ -383,7 +384,7 @@ export async function obfuscate(src: string, opts: ObfuscateOptions): Promise<st
   try {
     acorn.parse(out, { ecmaVersion: 'latest', sourceType: opts.module ? 'module' : 'script', allowReturnOutsideFunction: !opts.module, allowAwaitOutsideFunction: true });
   } catch {
-    throw new Error('Không tạo được mã đã làm rối hợp lệ cho đoạn mã này. Hãy thử tắt bớt tuỳ chọn (ví dụ "Đổi tên biến").');
+    throw new Error(t('lib.obfuscate.invalidOutput', 'Không tạo được mã đã làm rối hợp lệ cho đoạn mã này. Hãy thử tắt bớt tuỳ chọn (ví dụ "Đổi tên biến").'));
   }
   return out;
 }

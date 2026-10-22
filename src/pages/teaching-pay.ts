@@ -12,6 +12,11 @@ const rateStore = storage<number>('teaching-rate', 200000);
 const newId = () => Math.random().toString(36).slice(2, 8);
 const todayKey = () => new Date().toLocaleDateString('en-CA');
 const vi = (n: number) => n.toLocaleString(LOCALE);
+const fmtD = (k: string) => {
+  if (currentLang() === 'vi') return k.split('-').reverse().join('/');
+  const [y, m, d] = k.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString(LOCALE, { year: 'numeric', month: 'short', day: 'numeric' });
+};
 const money = (n: number) => n.toLocaleString(LOCALE) + ' đ';
 
 const root = $('#tool-root');
@@ -49,7 +54,7 @@ function render(): void {
   const totalHours = list.reduce((a, s) => a + s.hours, 0);
   const totalPay = list.reduce((a, s) => a + s.hours * s.rate, 0);
   $('#summary').innerHTML = `
-    <div class="panel-title">${T('summary','Tổng kết')}${$<HTMLInputElement>('#filter').value ? ` ${T('monthWord','tháng')} ${$<HTMLInputElement>('#filter').value.split('-').reverse().join('/')}` : ''}</div>
+    <div class="panel-title">${T('summary','Tổng kết')}${$<HTMLInputElement>('#filter').value ? ` ${T('monthPrefix','tháng')} ${currentLang() === 'vi' ? $<HTMLInputElement>('#filter').value.split('-').reverse().join('/') : new Date(Number($<HTMLInputElement>('#filter').value.slice(0, 4)), Number($<HTMLInputElement>('#filter').value.slice(5, 7)) - 1, 1).toLocaleDateString(LOCALE, { year: 'numeric', month: 'long' })}` : ''}</div>
     <div class="stat-grid">
       <div class="stat"><span class="stat-label">${T('numSessions','Số buổi')}</span><span class="stat-value">${list.length}</span></div>
       <div class="stat"><span class="stat-label">${T('totalHours','Tổng giờ')}</span><span class="stat-value">${vi(totalHours)}</span></div>
@@ -57,7 +62,7 @@ function render(): void {
     </div>`;
   $('#list').innerHTML = list.length
     ? `<thead><tr><th>${T('th.date','Ngày')}</th><th>${T('th.class','Lớp / nội dung')}</th><th>${T('th.hours','Giờ')}</th><th>${T('th.rate','Đơn giá')}</th><th>${T('th.amount','Thành tiền')}</th><th class="no-print"></th></tr></thead>
-      <tbody>${list.map((s) => `<tr><td>${s.date.split('-').reverse().join('/')}</td><td>${escapeHtml(s.title)}</td><td>${vi(s.hours)}</td><td>${money(s.rate)}</td><td><b>${money(s.hours * s.rate)}</b></td>
+      <tbody>${list.map((s) => `<tr><td>${fmtD(s.date)}</td><td>${escapeHtml(s.title)}</td><td>${vi(s.hours)}</td><td>${money(s.rate)}</td><td><b>${money(s.hours * s.rate)}</b></td>
         <td class="no-print"><button type="button" class="btn btn-sm" data-del="${s.id}">${T('del','Xoá')}</button></td></tr>`).join('')}</tbody>
       <tfoot><tr><td colspan="4">${T('grandTotal','Tổng cộng')}</td><td><b>${money(totalPay)}</b></td><td class="no-print"></td></tr></tfoot>`
     : `<tbody><tr><td class="note">${T('empty','Chưa có buổi dạy nào.')}</td></tr></tbody>`;
@@ -84,7 +89,7 @@ $('#filter').addEventListener('change', render);
 $('#csv').addEventListener('click', () => {
   const rows = [[T('th.date','Ngày'), T('th.class','Lớp / nội dung'), T('th.hours','Giờ'), T('th.rate','Đơn giá'), T('th.amount','Thành tiền')], ...filtered().map((s) => [s.date, s.title, String(s.hours), String(s.rate), String(s.hours * s.rate)])];
   const csv = '﻿' + rows.map((r) => r.map((c) => /[",;\n]/.test(c) ? `"${c.replace(/"/g, '""')}"` : c).join(';')).join('\n');
-  downloadBlob(new Blob([csv], { type: 'text/csv;charset=utf-8' }), 'gio-giang.csv');
+  downloadBlob(new Blob([csv], { type: 'text/csv;charset=utf-8' }), T('csvName','gio-giang.csv'));
   toast(T('toast.csv','Đã xuất CSV'));
 });
 $('#print').addEventListener('click', () => { document.title = T('printTitle','Bảng kê giờ giảng'); window.print(); });

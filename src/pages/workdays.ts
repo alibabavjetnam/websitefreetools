@@ -10,7 +10,11 @@ const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record
 const todayKey = () => new Date().toLocaleDateString('en-CA');
 const addMonths = (k: string, n: number) => { const [y, m, d] = k.split('-').map(Number); return new Date(y, m - 1 + n, d).toLocaleDateString('en-CA'); };
 const vi = (n: number) => n.toLocaleString(LOCALE);
-const fmt = (k: string) => k.split('-').reverse().join('/');
+const fmt = (k: string) => {
+  if (currentLang() === 'vi') return k.split('-').reverse().join('/');
+  const [y, m, d] = k.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString(LOCALE, { year: 'numeric', month: 'short', day: 'numeric', weekday: 'short' });
+};
 
 const cfg = storage<{ useVnHolidays: boolean; excludeWeekend: boolean; sat: boolean; sun: boolean; custom: string }>('workdays-cfg', { useVnHolidays: true, excludeWeekend: true, sat: true, sun: true, custom: '' });
 
@@ -52,11 +56,11 @@ function render(): void {
   if (!from || !to) { $('#result').innerHTML = `<p class="note">${T('pickDates','Chọn đủ hai mốc ngày.')}</p>`; $('#holiday-list').innerHTML = ''; return; }
 
   const y1 = Number(from.slice(0, 4)), y2 = Number(to.slice(0, 4));
-  const labels = c.useVnHolidays ? vnHolidaysBetween(Math.min(y1, y2), Math.max(y1, y2)) : new Map<string, string>();
+  const labels = c.useVnHolidays ? vnHolidaysBetween(Math.min(y1, y2), Math.max(y1, y2), (k, vi) => T('hol.' + k, vi)) : new Map<string, string>();
   for (const d of c.custom.split('\n').map((x) => x.trim()).filter((x) => /^\d{4}-\d{2}-\d{2}$/.test(x))) labels.set(d, labels.get(d) ?? T('customOff','Nghỉ thêm'));
   const weekendDays = [c.sun ? 0 : -1, c.sat ? 6 : -1].filter((x) => x >= 0);
 
-  const r = workdaysBetween(from, to, { excludeWeekend: c.excludeWeekend, weekendDays, holidays: new Set(labels.keys()) }, labels);
+  const r = workdaysBetween(from, to, { excludeWeekend: c.excludeWeekend, weekendDays, holidays: new Set(labels.keys()) }, labels, T('holiday','Ngày lễ'));
   $('#result').innerHTML = `
     <div class="stat stat--main"><span class="stat-label">${T('workDays','Số ngày làm việc')}</span><span class="stat-value">${vi(r.workDays)} ${T('days','ngày')}</span></div>
     <div class="stat"><span class="stat-label">${T('totalDays','Tổng số ngày')}</span><span class="stat-value">${vi(r.totalDays)}</span></div>

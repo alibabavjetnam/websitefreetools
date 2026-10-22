@@ -1,4 +1,5 @@
 /** Tiện ích giao diện dùng chung cho các trang công cụ */
+import { t } from './i18n';
 
 export const $ = <T extends HTMLElement = HTMLElement>(sel: string, root: ParentNode = document): T => {
   const el = root.querySelector<T>(sel);
@@ -71,7 +72,7 @@ export function toast(message: string): void {
   toastTimer = window.setTimeout(() => el?.classList.remove('is-visible'), 1800);
 }
 
-export async function copyText(text: string, done = 'Đã sao chép'): Promise<void> {
+export async function copyText(text: string, done = t('lib.ui.copied', 'Đã sao chép')): Promise<void> {
   try {
     await navigator.clipboard.writeText(text);
     toast(done);
@@ -85,7 +86,7 @@ export async function copyText(text: string, done = 'Đã sao chép'): Promise<v
     ta.select();
     const ok = document.execCommand('copy');
     ta.remove();
-    toast(ok ? done : 'Không sao chép được, hãy chọn và sao chép thủ công');
+    toast(ok ? done : t('lib.ui.copyFail', 'Không sao chép được, hãy chọn và sao chép thủ công'));
   }
 }
 

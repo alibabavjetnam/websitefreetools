@@ -18,7 +18,7 @@ root.innerHTML = `
       <form class="panel" id="fx-form" novalidate>
         <label class="field">
           <span class="field-label">${T('amount','Số tiền')}</span>
-          <input id="fx-amount" type="text" value="100" autocomplete="off" />
+          <input id="fx-amount" type="text" value="${T('fx.defaultAmount','100')}" autocomplete="off" />
         </label>
         <div class="fx-pair">
           <label class="field"><span class="field-label">${T('from','Từ')}</span><select id="fx-from"></select></label>
@@ -58,7 +58,7 @@ const CACHE_MS = 6 * 3600 * 1000;
 
 interface RatesCache { fetchedAt: number; updatedUnix: number; rates: Record<string, number> }
 const cache = storage<RatesCache | null>('fx-rates', null);
-const prefs = storage<{ from: string; to: string }>('fx-pair', { from: 'USD', to: 'VND' });
+const prefs = storage<{ from: string; to: string }>('fx-pair', { from: T('fx.defaultFrom', 'USD'), to: T('fx.defaultTo', 'VND') });
 
 let names: Intl.DisplayNames | null = null;
 try { names = new Intl.DisplayNames([currentLang()], { type: 'currency' }); } catch { /* trình duyệt cũ: chỉ hiện mã */ }
@@ -75,8 +75,8 @@ function fillSelects(codes: string[]): void {
   fromSel.innerHTML = opts;
   toSel.innerHTML = opts;
   const p = prefs.get();
-  fromSel.value = codes.includes(p.from) ? p.from : 'USD';
-  toSel.value = codes.includes(p.to) ? p.to : 'VND';
+  fromSel.value = codes.includes(p.from) ? p.from : codes.includes('USD') ? 'USD' : codes[0];
+  toSel.value = codes.includes(p.to) ? p.to : codes.includes('VND') ? 'VND' : codes[0];
 }
 
 const fmtFx = (n: number) => (Math.abs(n) >= 100 ? fmtDec(Math.round(n)) : n.toLocaleString(LOCALE, { maximumSignificantDigits: 6 }));
@@ -155,7 +155,7 @@ const srcSel = $<HTMLSelectElement>('#tz-src');
 const dtInput = $<HTMLInputElement>('#tz-dt');
 srcSel.innerHTML = CITIES.map(([n, z]) => `<option value="${z}">${escapeHtml(T('city.' + z, n))}</option>`).join('');
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-srcSel.value = CITIES.some(([, z]) => z === localZone) ? localZone : 'Asia/Ho_Chi_Minh';
+srcSel.value = CITIES.some(([, z]) => z === localZone) ? localZone : T('tz.default', 'Asia/Ho_Chi_Minh');
 
 /** Độ lệch (ms) của múi giờ tz so với UTC tại thời điểm ms */
 function tzOffset(ms: number, tz: string): number {

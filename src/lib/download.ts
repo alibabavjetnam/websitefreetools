@@ -1,4 +1,5 @@
 /** Tiện ích tải ảnh SVG / PNG từ chuỗi SVG */
+import { t } from '../i18n';
 
 function triggerDownload(blob: Blob, filename: string): void {
   const url = URL.createObjectURL(blob);
@@ -23,18 +24,18 @@ export async function downloadPng(svg: string, filename: string, width: number, 
     img.decoding = 'async';
     await new Promise<void>((resolve, reject) => {
       img.onload = () => resolve();
-      img.onerror = () => reject(new Error('Không vẽ được ảnh PNG.'));
+      img.onerror = () => reject(new Error(t('lib.download.pngDraw', 'Không vẽ được ảnh PNG.')));
       img.src = url;
     });
     const canvas = document.createElement('canvas');
     canvas.width = Math.round(width);
     canvas.height = Math.round(height);
     const ctx = canvas.getContext('2d');
-    if (!ctx) throw new Error('Trình duyệt không hỗ trợ canvas.');
+    if (!ctx) throw new Error(t('lib.download.noCanvas', 'Trình duyệt không hỗ trợ canvas.'));
     ctx.imageSmoothingEnabled = false;
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, 'image/png'));
-    if (!blob) throw new Error('Không tạo được tệp PNG.');
+    if (!blob) throw new Error(t('lib.download.pngMake', 'Không tạo được tệp PNG.'));
     triggerDownload(blob, filename);
   } finally {
     URL.revokeObjectURL(url);

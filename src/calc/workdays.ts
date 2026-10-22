@@ -16,6 +16,18 @@ export const VN_HOLIDAYS: Record<string, string> = {
   '09-02': 'Quốc khánh',
 };
 
+/** Khoá ổn định của từng ngày lễ (dùng tra bản dịch ở trang: T('hol.' + key, tênViệt)). */
+export const VN_HOLIDAY_KEYS: Record<string, string> = {
+  '01-01': 'newYear',
+  '04-30': 'reunification',
+  '05-01': 'labour',
+  '09-02': 'national',
+};
+const LUNAR_KEYS: Record<string, string> = { 'Tết Nguyên đán': 'tet', 'Giỗ Tổ Hùng Vương': 'hung' };
+
+/** Hàm dịch tên ngày lễ: nhận khoá + tên tiếng Việt, trả về tên theo ngôn ngữ trang. */
+export type HolidayNamer = (key: string, vi: string) => string;
+
 /** Tết Nguyên đán và Giỗ Tổ Hùng Vương (10/3 âm) theo từng năm (ngày dương lịch). */
 export const VN_LUNAR_HOLIDAYS: Record<number, { from: string; to: string; label: string }[]> = {
   2024: [{ from: '2024-02-08', to: '2024-02-14', label: 'Tết Nguyên đán' }, { from: '2024-04-18', to: '2024-04-18', label: 'Giỗ Tổ Hùng Vương' }],
@@ -25,14 +37,14 @@ export const VN_LUNAR_HOLIDAYS: Record<number, { from: string; to: string; label
 };
 
 /** Tập hợp các ngày lễ (YYYY-MM-DD) trong khoảng năm cho trước, theo lịch VN. */
-export function vnHolidaysBetween(fromYear: number, toYear: number): Map<string, string> {
+export function vnHolidaysBetween(fromYear: number, toYear: number, name: HolidayNamer = (_k, vi) => vi): Map<string, string> {
   const out = new Map<string, string>();
   for (let y = fromYear; y <= toYear; y++) {
-    for (const [md, label] of Object.entries(VN_HOLIDAYS)) out.set(`${y}-${md}`, label);
+    for (const [md, label] of Object.entries(VN_HOLIDAYS)) out.set(`${y}-${md}`, name(VN_HOLIDAY_KEYS[md], label));
     for (const h of VN_LUNAR_HOLIDAYS[y] ?? []) {
       let d = parse(h.from);
       const end = parse(h.to);
-      while (d <= end) { out.set(toKey(d), h.label); d = new Date(d.getTime() + DAY); }
+      while (d <= end) { out.set(toKey(d), name(LUNAR_KEYS[h.label] ?? h.label, h.label)); d = new Date(d.getTime() + DAY); }
     }
   }
   return out;
@@ -55,7 +67,7 @@ export interface WorkdaysResult {
 }
 
 /** Đếm ngày làm việc từ `from` tới `to` (bao gồm cả hai đầu). */
-export function workdaysBetween(from: string, to: string, opts: WorkdaysOptions, holidayLabels?: Map<string, string>): WorkdaysResult {
+export function workdaysBetween(from: string, to: string, opts: WorkdaysOptions, holidayLabels?: Map<string, string>, defaultLabel = 'Ngày lễ'): WorkdaysResult {
   let start = parse(from);
   let end = parse(to);
   if (start > end) [start, end] = [end, start];
@@ -71,7 +83,7 @@ export function workdaysBetween(from: string, to: string, opts: WorkdaysOptions,
     if (isWeekend) wknd++;
     if (isHoliday) {
       holi++;
-      if (!isWeekend) onWork.push({ date: key, label: holidayLabels?.get(key) ?? 'Ngày lễ' });
+      if (!isWeekend) onWork.push({ date: key, label: holidayLabels?.get(key) ?? defaultLabel });
     }
     if (!isWeekend && !isHoliday) work++;
   }

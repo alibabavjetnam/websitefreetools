@@ -7,7 +7,8 @@ mountLayout({ activeTool: 'world-clock' });
 const T = pageText();
 const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
-const store = storage<string[]>('world-clock', ['Asia/Ho_Chi_Minh', 'Asia/Tokyo', 'Europe/London', 'America/New_York']);
+const DEFAULT_ZONES = T('defaultZones', 'Asia/Ho_Chi_Minh,Asia/Tokyo,Europe/London,America/New_York').split(',').map((x) => x.trim()).filter(Boolean);
+const store = storage<string[]>('world-clock', DEFAULT_ZONES);
 const cfg = storage<{ h24: boolean }>('world-clock-cfg', { h24: true });
 
 const regionNames = (() => { try { return new Intl.DisplayNames([currentLang()], { type: 'region' }); } catch { return null; } })();

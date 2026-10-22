@@ -3,6 +3,7 @@
  * Kế thừa vị trí và kiểu chữ từ layout/master, màu theo theme. Biểu đồ, SmartArt, hiệu ứng chưa được hỗ trợ.
  */
 import { attr, child, childrenNamed, elements, localName, parseXml, type XmlElement } from './xml';
+import { t } from '../i18n';
 
 export const EMU_PER_PT = 12700;
 
@@ -306,7 +307,7 @@ function readPicture(pic: XmlElement, ctx: Context, group: GroupMap | null): Sli
   if (!box || !embed) return null;
   const rel = ctx.rels.get(embed);
   if (!rel) return null;
-  if (/\.(emf|wmf|tiff?)$/i.test(rel.target)) return { kind: 'unsupported', box: applyGroup(box, group), label: 'Ảnh định dạng EMF/WMF' };
+  if (/\.(emf|wmf|tiff?)$/i.test(rel.target)) return { kind: 'unsupported', box: applyGroup(box, group), label: t('lib.pptx.emf', 'Ảnh định dạng EMF/WMF') };
   return { kind: 'image', box: applyGroup(box, group), path: rel.target };
 }
 
@@ -347,7 +348,7 @@ function readGraphicFrame(gf: XmlElement, ctx: Context, group: GroupMap | null):
     return { kind: 'table', box: applyGroup(box, group), cols, rows, border: accent ? `#${lt1 ?? 'ffffff'}` : '#9aa4b2' };
   }
   const uri = data?.attrs.uri ?? '';
-  const label = /chart/.test(uri) ? 'Biểu đồ' : /diagram/.test(uri) ? 'SmartArt' : 'Đối tượng nhúng';
+  const label = /chart/.test(uri) ? t('lib.pptx.chart', 'Biểu đồ') : /diagram/.test(uri) ? 'SmartArt' : t('lib.pptx.embedded', 'Đối tượng nhúng');
   return { kind: 'unsupported', box: applyGroup(box, group), label };
 }
 
@@ -419,7 +420,7 @@ async function readTheme(pkg: PackageReader, path: string | undefined): Promise<
 export async function readPresentation(pkg: PackageReader): Promise<Presentation> {
   const presPath = 'ppt/presentation.xml';
   const presXml = await pkg.text(presPath);
-  if (!presXml) throw new Error('Không phải file PowerPoint (.pptx) hợp lệ.');
+  if (!presXml) throw new Error(t('lib.pptx.notPptx', 'Không phải file PowerPoint (.pptx) hợp lệ.'));
   const pres = parseXml(presXml);
   const size = child(pres, 'sldSz');
   const width = Number(size?.attrs.cx ?? 12192000) / EMU_PER_PT;
@@ -475,6 +476,6 @@ export async function readPresentation(pkg: PackageReader): Promise<Presentation
     if (tree) readTree(tree, ctx, null, items);
     slides.push({ index: i + 1, background, items });
   }
-  if (!slides.length) throw new Error('File PowerPoint không có slide nào.');
+  if (!slides.length) throw new Error(t('lib.pptx.noSlides', 'File PowerPoint không có slide nào.'));
   return { width, height, slides };
 }

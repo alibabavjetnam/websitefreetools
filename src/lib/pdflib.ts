@@ -1,5 +1,6 @@
 /** Lớp mỏng quanh thư viện pdf-lib (nạp từ CDN khi cần) */
 import { CDN, global, loadScript } from './cdn';
+import { tf } from '../i18n';
 
 export interface PdfPage {
   getSize(): { width: number; height: number };
@@ -43,8 +44,8 @@ export async function loadPdf(bytes: Uint8Array | ArrayBuffer, name: string): Pr
     return await lib.PDFDocument.load(bytes);
   } catch (e) {
     const msg = String((e as Error).message ?? e);
-    if (/encrypt/i.test(msg)) throw new Error(`"${name}" được khoá bằng mật khẩu hoặc bị hạn chế chỉnh sửa. Hãy mở khoá file trước.`);
-    throw new Error(`Không đọc được "${name}". File có thể bị hỏng hoặc không phải PDF.`);
+    if (/encrypt/i.test(msg)) throw new Error(tf('lib.pdf.locked', '"{name}" được khoá bằng mật khẩu hoặc bị hạn chế chỉnh sửa. Hãy mở khoá file trước.', { name }));
+    throw new Error(tf('lib.pdf.unreadable', 'Không đọc được "{name}". File có thể bị hỏng hoặc không phải PDF.', { name }));
   }
 }
 
