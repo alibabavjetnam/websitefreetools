@@ -2,7 +2,7 @@ import { mountLayout } from '../layout';
 import { $, escapeHtml, fmtDec, fmtInt, parseNumber, storage, toast } from '../ui';
 import { SheetStore, newId } from '../google/sync';
 import { moneyInWords } from '../calc/words-vi';
-import { pageText } from '../i18n';
+import { currentLang, pageText } from '../i18n';
 
 mountLayout({ activeTool: 'invoice' });
 const T = pageText();
@@ -201,7 +201,12 @@ function totals(d: InvoiceDoc) {
   return { lines, subtotal, vatAmount, total: Math.round(subtotal + vatAmount + d.shipping) };
 }
 
-const fmtDate = (s: string) => (s ? s.split('-').reverse().join('/') : '');
+const fmtDate = (s: string): string => {
+  if (!s) return '';
+  const [y, m, d] = s.split('-');
+  const l = currentLang();
+  return l === 'en' ? `${m}/${d}/${y}` : l === 'ja' || l === 'zh' ? `${y}/${m}/${d}` : `${d}/${m}/${y}`;
+};
 
 function renderPreview(): void {
   const t = totals(doc);

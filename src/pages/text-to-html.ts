@@ -37,7 +37,7 @@ const GROUPS: Btn[][] = [
   ],
 ];
 
-const SAMPLE = `<h2>Chào mừng đến với WFTools</h2><p>Đây là trình soạn thảo <strong>trực quan</strong>. Bạn gõ như trong Word, công cụ tự tạo <em>mã HTML sạch</em>.</p><ul><li>Bôi đen chữ rồi bấm nút trên thanh công cụ</li><li>Sao chép mã HTML ở ô bên dưới</li></ul>`;
+const SAMPLE_VI = `<h2>Chào mừng đến với WFTools</h2><p>Đây là trình soạn thảo <strong>trực quan</strong>. Bạn gõ như trong Word, công cụ tự tạo <em>mã HTML sạch</em>.</p><ul><li>Bôi đen chữ rồi bấm nút trên thanh công cụ</li><li>Sao chép mã HTML ở ô bên dưới</li></ul>`;
 
 const root = $('#tool-root');
 root.innerHTML = `
@@ -191,9 +191,9 @@ $('#copy').addEventListener('click', () => {
 $('#dl').addEventListener('click', () => {
   const body = $<HTMLTextAreaElement>('#src').value;
   const doc = `<!doctype html>\n<html lang="${currentLang()}">\n<head>\n<meta charset="utf-8">\n<title>${T('docTitle','Tài liệu')}</title>\n</head>\n<body>\n${body}\n</body>\n</html>\n`;
-  downloadBlob(new Blob([doc], { type: 'text/html;charset=utf-8' }), 'tai-lieu.html');
+  downloadBlob(new Blob([doc], { type: 'text/html;charset=utf-8' }), T('fn.doc', 'tai-lieu.html'));
   toast(T('toast.dl','Đã tải file HTML'));
 });
 
-editor.innerHTML = SAMPLE;
+editor.innerHTML = T('sample', SAMPLE_VI);
 syncSource();

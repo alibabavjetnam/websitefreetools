@@ -41,7 +41,7 @@ async function xlsx(): Promise<XlsxApi> {
   return global<XlsxApi>('XLSX');
 }
 
-const SAMPLE = `[
+const SAMPLE_VI = `[
   { "ma": "SP001", "ten": "Cà phê sữa", "gia": 29000, "con_hang": true, "nhom": { "ma": "DU", "ten": "Đồ uống" } },
   { "ma": "SP002", "ten": "Bánh mì thịt", "gia": 25000, "con_hang": false, "nhom": { "ma": "DA", "ten": "Đồ ăn" } }
 ]`;
@@ -67,7 +67,7 @@ root.innerHTML = `
         </label>
       </div>
       <label class="check" id="f-header"><input type="checkbox" id="has-header" checked /><span>${T('header','Dòng đầu là tên cột')}</span></label>
-      <label class="field"><span class="field-label">${T('orPaste','Hoặc dán dữ liệu')}</span><textarea id="src" class="mono" rows="14" spellcheck="false">${escapeHtml(SAMPLE)}</textarea></label>
+      <label class="field"><span class="field-label">${T('orPaste','Hoặc dán dữ liệu')}</span><textarea id="src" class="mono" rows="14" spellcheck="false">${escapeHtml(T('sample', SAMPLE_VI))}</textarea></label>
     </div>
 
     <div class="panel">

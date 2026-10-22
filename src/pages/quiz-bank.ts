@@ -162,7 +162,7 @@ $('#q-list').addEventListener('click', (e) => {
 $('#title').addEventListener('input', () => { const b = store.get(); b.title = $<HTMLInputElement>('#title').value; store.set(b); });
 
 $('#export').addEventListener('click', () => {
-  downloadBlob(new Blob([JSON.stringify(store.get(), null, 2)], { type: 'application/json' }), 'de-trac-nghiem.json');
+  downloadBlob(new Blob([JSON.stringify(store.get(), null, 2)], { type: 'application/json' }), T('fn.export', 'de-trac-nghiem.json'));
   toast(T('toast.exported','Đã xuất file đề'));
 });
 $('#import').addEventListener('change', async (e) => {

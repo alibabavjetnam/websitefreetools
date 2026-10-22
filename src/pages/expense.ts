@@ -1,11 +1,16 @@
 import { mountLayout } from '../layout';
 import { $, downloadBlob, escapeHtml, fmtInt, fmtMoney, moneyInput } from '../ui';
 import { SheetStore, newId } from '../google/sync';
-import { pageText } from '../i18n';
+import { currentLang, pageText } from '../i18n';
 
 mountLayout({ activeTool: 'expense' });
 const T = pageText();
 const CAT_KEY: Record<string, string> = { 'Ăn uống': 'food', 'Đi lại': 'transport', 'Nhà ở & hoá đơn': 'housing', 'Mua sắm': 'shopping', 'Sức khoẻ': 'health', 'Giáo dục': 'education', 'Giải trí': 'entertainment', 'Gia đình & con cái': 'family', 'Hiếu hỉ, biếu tặng': 'gifts', 'Khác': 'other', 'Lương': 'salary', 'Thưởng': 'bonus', 'Kinh doanh': 'business', 'Đầu tư': 'investment', 'Được cho, tặng': 'gifted' };
+const showDate = (iso: string): string => {
+  const [y, m, d] = iso.split('-');
+  const l = currentLang();
+  return l === 'en' ? `${m}/${d}/${y}` : l === 'ja' || l === 'zh' ? `${y}/${m}/${d}` : `${d}/${m}/${y}`;
+};
 const catLabel = (c: string): string => T('cat.' + (CAT_KEY[c] || c), c);
 
 interface Tx { id: string; date: string; type: string; category: string; amount: number; note: string }
@@ -144,7 +149,7 @@ function render(): void {
   $('#tx-table').innerHTML = list.length
     ? `<thead><tr><th>${T('th.date','Ngày')}</th><th>${T('th.cat','Danh mục')}</th><th>${T('th.note','Ghi chú')}</th><th>${T('th.amount','Số tiền')}</th><th></th></tr></thead><tbody>${list
         .map(
-          (t) => `<tr><td>${escapeHtml(normDate(t.date).split('-').reverse().join('/'))}</td><td>${escapeHtml(catLabel(t.category))}</td>
+          (t) => `<tr><td>${escapeHtml(showDate(normDate(t.date)))}</td><td>${escapeHtml(catLabel(t.category))}</td>
           <td>${escapeHtml(t.note)}</td><td class="${t.type === 'thu' ? 'ok-text' : ''}">${t.type === 'thu' ? '+' : '−'}${fmtInt(t.amount)}</td>
           <td><button type="button" class="btn btn-sm" data-del="${escapeHtml(t.id)}" aria-label="${T('delTx','Xoá giao dịch')}">${T('del','Xoá')}</button></td></tr>`,
         )

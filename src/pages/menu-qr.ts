@@ -23,13 +23,13 @@ const store = new SheetStore<Data>({
 });
 
 const sample = (): Menu => ({
-  name: 'Cà phê Sông Hương',
-  info: '12 Lê Lợi, Huế · Mở cửa 6:30–22:00\nWi‑Fi: SongHuong / matkhau123',
-  note: 'Giá đã gồm VAT. Gọi món tại quầy hoặc gọi nhân viên.',
+  name: T('sm.name', 'Cà phê Sông Hương'),
+  info: T('sm.info', '12 Lê Lợi, Huế · Mở cửa 6:30–22:00\nWi‑Fi: SongHuong / matkhau123'),
+  note: T('sm.note', 'Giá đã gồm VAT. Gọi món tại quầy hoặc gọi nhân viên.'),
   accent: '#8a5a2b',
   categories: [
-    { title: 'Cà phê', items: [{ name: 'Cà phê đen', price: 25000, desc: '' }, { name: 'Cà phê sữa', price: 29000, desc: '' }, { name: 'Cà phê muối', price: 35000, desc: 'Đặc sản Huế, kem muối béo nhẹ' }] },
-    { title: 'Trà & nước ép', items: [{ name: 'Trà đào cam sả', price: 39000, desc: '' }, { name: 'Nước ép cam', price: 35000, desc: '' }] },
+    { title: T('sm.cat1', 'Cà phê'), items: [{ name: T('sm.i1', 'Cà phê đen'), price: Number(T('sm.p1', '25000')), desc: '' }, { name: T('sm.i2', 'Cà phê sữa'), price: Number(T('sm.p2', '29000')), desc: '' }, { name: T('sm.i3', 'Cà phê muối'), price: Number(T('sm.p3', '35000')), desc: T('sm.i3d', 'Đặc sản Huế, kem muối béo nhẹ') }] },
+    { title: T('sm.cat2', 'Trà & nước ép'), items: [{ name: T('sm.i4', 'Trà đào cam sả'), price: Number(T('sm.p4', '39000')), desc: '' }, { name: T('sm.i5', 'Nước ép cam'), price: Number(T('sm.p5', '35000')), desc: '' }] },
   ],
 });
 
@@ -175,7 +175,8 @@ $('#accents').addEventListener('click', (e) => {
   void renderOutput();
 });
 
-const fileBase = () => `menu-${(menu.name || 'quan').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/gi, 'd').replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`;
+const slug = (v: string) => v.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/gi, 'd').replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').toLowerCase();
+const fileBase = () => `menu-${slug(menu.name) || slug(T('fileFallback', 'quan')) || 'quan'}`;
 $('#qr-png').addEventListener('click', async () => {
   if (link) await downloadPng(qrToSvg(encodeQr(link, 'L'), { px: 1600 }), `${fileBase()}.png`, 1600, 1600);
 });

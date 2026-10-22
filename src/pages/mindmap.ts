@@ -163,7 +163,7 @@ $('#summarize').addEventListener('click', () => {
     <ul class="sum-list">${bullets.map((b) => `<li>${escapeHtml(b)}</li>`).join('')}</ul>
     <div class="actions"><button type="button" class="btn btn-sm" id="copy-sum">${T('copy','Sao chép')}</button><button type="button" class="btn btn-sm" id="dl-sum">${T('dlTxt','Tải .txt')}</button><button type="button" class="btn btn-sm" id="to-map">${T('toMap','Tạo sơ đồ từ tóm tắt')}</button></div>`;
   $('#copy-sum').addEventListener('click', () => copyText(bullets.map((b) => '• ' + b).join('\n')));
-  $('#dl-sum').addEventListener('click', () => downloadBlob(new Blob([bullets.map((b) => '• ' + b).join('\n')], { type: 'text/plain;charset=utf-8' }), 'tom-tat.txt'));
+  $('#dl-sum').addEventListener('click', () => downloadBlob(new Blob([bullets.map((b) => '• ' + b).join('\n')], { type: 'text/plain;charset=utf-8' }), T('fn.summary', 'tom-tat.txt')));
   $('#to-map').addEventListener('click', () => {
     const first = wordsOf(text).slice(0, 4).join(' ') || T('lesson','Bài học');
     store.set({ id: 'root', text: first, children: bullets.map((b) => ({ id: newId(), text: b.length > 60 ? b.slice(0, 60) + '…' : b, children: [] })) });

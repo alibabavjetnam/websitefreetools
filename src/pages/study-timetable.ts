@@ -17,7 +17,7 @@ const DEFAULT: Setting = { id: 'main', title: T('defaultTitle', 'Thời khoá bi
 
 const store = new SheetStore<Data>({
   tag: 'timetable',
-  title: 'WFTools - Thời khoá biểu',
+  title: T('sheetTitle', 'WFTools - Thời khoá biểu'),
   empty: { settings: [], cells: [] },
   tables: {
     settings: { sheet: 'Cấu hình', columns: [

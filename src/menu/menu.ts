@@ -17,6 +17,48 @@ export interface Menu {
 export const VIEWER_URL = 'https://websitefreetools.com/m/';
 const MAX_ITEMS = 300;
 
+/* ---------- Ngôn ngữ trang khách xem menu ----------
+ * Trang /m/ không nạp từ điển của site (khách chỉ quét QR), nên chuỗi nằm sẵn ở đây.
+ * Ngôn ngữ: theo trang công cụ nếu có (__WFT_LANG__), nếu không thì theo ngôn ngữ trình duyệt của khách. */
+export type MenuLang = 'vi' | 'en' | 'ja' | 'zh';
+export function menuLang(): MenuLang {
+  const w = window as unknown as { __WFT_LANG__?: string };
+  const raw = (w.__WFT_LANG__ || (typeof navigator !== 'undefined' ? navigator.language : '') || 'en').slice(0, 2).toLowerCase();
+  return raw === 'vi' || raw === 'ja' || raw === 'zh' ? raw : 'en';
+}
+const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
+  vi: {
+    shop: 'Tên quán', cat: 'Món', title: 'Thực đơn', loading: 'Đang mở thực đơn…', credit: 'Tạo thực đơn QR miễn phí tại',
+    noMenu: 'Đường link chưa có thực đơn. Hãy quét lại mã QR của quán.',
+    openFail: 'Không mở được thực đơn:', rescan: 'Hãy quét lại mã QR của quán.',
+    invalid: 'Dữ liệu menu không hợp lệ.', tooLong: 'Đường link menu quá dài.',
+    oldBrowser: 'Trình duyệt này quá cũ để mở menu. Hãy cập nhật trình duyệt.', badLink: 'Đường link menu không đúng.',
+  },
+  en: {
+    shop: 'Restaurant name', cat: 'Items', title: 'Menu', loading: 'Opening the menu…', credit: 'Make a free QR menu at',
+    noMenu: 'This link has no menu. Please scan the restaurant\'s QR code again.',
+    openFail: 'Could not open the menu:', rescan: 'Please scan the restaurant\'s QR code again.',
+    invalid: 'The menu data is not valid.', tooLong: 'The menu link is too long.',
+    oldBrowser: 'This browser is too old to open the menu. Please update your browser.', badLink: 'The menu link is not correct.',
+  },
+  ja: {
+    shop: 'お店の名前', cat: 'メニュー', title: 'メニュー', loading: 'メニューを開いています…', credit: '無料でQRメニューを作る：',
+    noMenu: 'このリンクにはメニューがありません。お店のQRコードをもう一度読み取ってください。',
+    openFail: 'メニューを開けませんでした：', rescan: 'お店のQRコードをもう一度読み取ってください。',
+    invalid: 'メニューのデータが正しくありません。', tooLong: 'メニューのリンクが長すぎます。',
+    oldBrowser: 'お使いのブラウザは古いためメニューを開けません。ブラウザを更新してください。', badLink: 'メニューのリンクが正しくありません。',
+  },
+  zh: {
+    shop: '店名', cat: '菜品', title: '菜单', loading: '正在打开菜单…', credit: '免费制作二维码菜单：',
+    noMenu: '此链接中没有菜单，请重新扫描店铺的二维码。',
+    openFail: '无法打开菜单：', rescan: '请重新扫描店铺的二维码。',
+    invalid: '菜单数据无效。', tooLong: '菜单链接过长。',
+    oldBrowser: '当前浏览器版本过低，无法打开菜单，请更新浏览器。', badLink: '菜单链接不正确。',
+  },
+};
+export const menuText = (key: string): string => MENU_TEXT[menuLang()][key] ?? MENU_TEXT.vi[key] ?? key;
+const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN' };
+
 /* ---------- Dạng gọn để link ngắn: mảng thay cho object ---------- */
 type Compact = [string, string, string, string, [string, [string, number, string][]][]];
 
@@ -28,7 +70,7 @@ const str = (v: unknown, max: number) => (typeof v === 'string' ? v.slice(0, max
 const num = (v: unknown) => (typeof v === 'number' && Number.isFinite(v) && v >= 0 ? Math.min(v, 1e12) : 0);
 
 function fromCompact(c: unknown): Menu {
-  if (!Array.isArray(c)) throw new Error('Dữ liệu menu không hợp lệ.');
+  if (!Array.isArray(c)) throw new Error(menuText('invalid'));
   let count = 0;
   const cats = Array.isArray(c[4]) ? c[4] : [];
   return {
@@ -79,17 +121,17 @@ export async function encodeMenu(m: Menu): Promise<string> {
 
 export async function decodeMenu(hash: string): Promise<Menu> {
   const s = hash.replace(/^#/, '');
-  if (s.length > 20000) throw new Error('Đường link menu quá dài.');
+  if (s.length > 20000) throw new Error(menuText('tooLong'));
   const kind = s.charAt(0);
   let bytes: Uint8Array = fromB64(s.slice(1));
   if (kind === 'z') {
-    if (typeof DecompressionStream === 'undefined') throw new Error('Trình duyệt này quá cũ để mở menu. Hãy cập nhật trình duyệt.');
+    if (typeof DecompressionStream === 'undefined') throw new Error(menuText('oldBrowser'));
     bytes = await pipe(bytes, new DecompressionStream('deflate-raw'));
-  } else if (kind !== 'j') throw new Error('Đường link menu không đúng.');
+  } else if (kind !== 'j') throw new Error(menuText('badLink'));
   return fromCompact(JSON.parse(new TextDecoder().decode(bytes)));
 }
 
-const fmtPrice = (n: number) => (n ? new Intl.NumberFormat('vi-VN').format(n) : '');
+const fmtPrice = (n: number) => (n ? new Intl.NumberFormat(PRICE_LOCALE[menuLang()]).format(n) : '');
 
 /**
  * HTML của menu (dùng cho trang khách xem và phần xem trước trong công cụ).
@@ -99,10 +141,10 @@ export function menuHtml(m: Menu): string {
   const cats = m.categories.filter((c) => c.title || c.items.some((i) => i.name));
   return `
     <header class="mv-head" style="--mv-accent:${m.accent}">
-      <h1>${escapeHtml(m.name || 'Tên quán')}</h1>
+      <h1>${escapeHtml(m.name || menuText('shop'))}</h1>
       ${m.info ? `<p>${escapeHtml(m.info).replace(/\n/g, '<br />')}</p>` : ''}
     </header>
-    ${cats.length > 1 ? `<nav class="mv-nav">${cats.map((c, i) => `<button type="button" data-jump="mv-${i}">${escapeHtml(c.title || 'Món')}</button>`).join('')}</nav>` : ''}
+    ${cats.length > 1 ? `<nav class="mv-nav">${cats.map((c, i) => `<button type="button" data-jump="mv-${i}">${escapeHtml(c.title || menuText('cat'))}</button>`).join('')}</nav>` : ''}
     ${cats
       .map(
         (c, i) => `<section class="mv-cat" id="mv-${i}">

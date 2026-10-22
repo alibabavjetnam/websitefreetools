@@ -9,10 +9,10 @@ const T = pageText();
 type Lang = 'js' | 'html' | 'css' | 'json';
 const EXT: Record<Lang, string> = { js: 'js', html: 'html', css: 'css', json: 'json' };
 const SAMPLE: Record<Lang, string> = {
-  js: `function chao(ten){console.log("Xin chào "+ten)}\nconst ds=[1,2,3].map(x=>x*2);chao("WFTools")`,
-  html: `<ul><li>Một</li><li>Hai</li></ul><p class="note">Xin chào</p>`,
+  js: T('sample.js', `function chao(ten){console.log("Xin chào "+ten)}\nconst ds=[1,2,3].map(x=>x*2);chao("WFTools")`),
+  html: T('sample.html', `<ul><li>Một</li><li>Hai</li></ul><p class="note">Xin chào</p>`),
   css: `.box{display:flex;gap:8px;color:#0d6efd}a:hover{text-decoration:underline}`,
-  json: `{"ten":"WFTools","cong_cu":["QR","Mã vạch"],"mien_phi":true}`,
+  json: T('sample.json', `{"ten":"WFTools","cong_cu":["QR","Mã vạch"],"mien_phi":true}`),
 };
 
 const root = $('#tool-root');

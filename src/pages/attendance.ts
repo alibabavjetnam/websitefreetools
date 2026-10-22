@@ -12,7 +12,7 @@ type Data = { students: Student[]; marks: Mark[] };
 
 const store = new SheetStore<Data>({
   tag: 'attendance',
-  title: 'WFTools - Điểm danh',
+  title: T('sheetTitle', 'WFTools - Điểm danh'),
   empty: { students: [], marks: [] },
   tables: {
     students: { sheet: 'Học viên', columns: [{ key: 'id', label: 'Mã' }, { key: 'name', label: 'Họ tên' }] },
@@ -23,9 +23,9 @@ const store = new SheetStore<Data>({
 const STATUS = [
   { code: '', label: '—', cls: '' },
   { code: 'present', label: 'Có mặt', cls: 'att-present', mark: '✓' },
-  { code: 'absent', label: 'Vắng', cls: 'att-absent', mark: 'V' },
-  { code: 'late', label: 'Muộn', cls: 'att-late', mark: 'M' },
-  { code: 'excused', label: 'Có phép', cls: 'att-excused', mark: 'P' },
+  { code: 'absent', label: 'Vắng', cls: 'att-absent', mark: T('mark.absent', 'V') },
+  { code: 'late', label: 'Muộn', cls: 'att-late', mark: T('mark.late', 'M') },
+  { code: 'excused', label: 'Có phép', cls: 'att-excused', mark: T('mark.excused', 'P') },
 ];
 const nextStatus = (c: string) => STATUS[(STATUS.findIndex((s) => s.code === c) + 1) % STATUS.length].code;
 const todayKey = () => new Date().toLocaleDateString('en-CA');

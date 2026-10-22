@@ -11,7 +11,7 @@ type Data = { entries: Entry[] };
 
 const store = new SheetStore<Data>({
   tag: 'journal',
-  title: 'WFTools - Nhật ký',
+  title: T('sheetTitle', 'WFTools - Nhật ký'),
   empty: { entries: [] },
   tables: {
     entries: { sheet: 'Nhật ký', columns: [

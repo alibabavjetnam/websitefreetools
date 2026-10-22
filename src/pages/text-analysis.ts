@@ -11,7 +11,7 @@ const DUR = { h: T('u.h', '{n} giờ'), m: T('u.m', '{n} phút'), s: T('u.s', '{
 const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const MAX_CHARS = 5_000_000;
-const SAMPLE = `Cà phê sữa đá là thức uống quen thuộc của người Việt. Mỗi sáng, hàng triệu người bắt đầu ngày mới bằng một ly cà phê sữa đá đậm đà.
+const SAMPLE_VI = `Cà phê sữa đá là thức uống quen thuộc của người Việt. Mỗi sáng, hàng triệu người bắt đầu ngày mới bằng một ly cà phê sữa đá đậm đà.
 
 Để pha cà phê sữa đá ngon, bạn cần cà phê rang xay nguyên chất, sữa đặc và nhiều đá. Cà phê được pha bằng phin, nhỏ giọt chậm rãi trong khoảng năm phút.
 
@@ -29,7 +29,7 @@ root.innerHTML = `
         <span>${T('drop.hint','File dưới 30 MB. PDF phải có lớp chữ (không phải bản scan).')}</span>
       </label>
       <p class="note" id="info"></p>
-      <label class="field"><span class="field-label">${T('orPaste','Hoặc dán, gõ văn bản vào đây')}</span><textarea id="text" rows="16" spellcheck="false">${escapeHtml(SAMPLE)}</textarea></label>
+      <label class="field"><span class="field-label">${T('orPaste','Hoặc dán, gõ văn bản vào đây')}</span><textarea id="text" rows="16" spellcheck="false">${escapeHtml(T('sample', SAMPLE_VI))}</textarea></label>
       <div class="actions">
         <button type="button" class="btn" id="clear">${T('clear','Xoá văn bản')}</button>
       </div>

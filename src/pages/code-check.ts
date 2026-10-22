@@ -8,10 +8,10 @@ const T = pageText();
 
 type Lang = 'js' | 'html' | 'css' | 'json';
 const SAMPLE: Record<Lang, string> = {
-  js: `function tong(a, b) {\n  return a + b\n}\nconst ket_qua = tong(2, 3;`,
-  html: `<div class="box">\n  <p>Xin chào\n  <ul><li>Một</li></ul>\n</div>`,
+  js: T('sample.js', `function tong(a, b) {\n  return a + b\n}\nconst ket_qua = tong(2, 3;`),
+  html: T('sample.html', `<div class="box">\n  <p>Xin chào\n  <ul><li>Một</li></ul>\n</div>`),
   css: `.box {\n  color: #0d6efd\n  margin: 0;\n}`,
-  json: `{\n  "ten": "WFTools",\n  "so": 12,\n}`,
+  json: T('sample.json', `{\n  "ten": "WFTools",\n  "so": 12,\n}`),
 };
 
 const root = $('#tool-root');

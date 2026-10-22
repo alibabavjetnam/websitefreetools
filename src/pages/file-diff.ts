@@ -28,8 +28,8 @@ const side = (id: 'a' | 'b', title: string, sample: string) => `
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="workspace diff-inputs">
-    ${side('a', T('sideA','Bản A (bản gốc)'), 'Hợp đồng mua bán\nBên A: Công ty ABC\nGiá: 29.000 đồng\nThời hạn: 30 ngày\nKý tại Hà Nội')}
-    ${side('b', T('sideB','Bản B (bản mới)'), 'Hợp đồng mua bán\nBên A: Công ty ABC Việt Nam\nGiá: 32.000 đồng\nKý tại Hà Nội\nHiệu lực từ ngày ký')}
+    ${side('a', T('sideA','Bản A (bản gốc)'), escapeHtml(T('sample.a', 'Hợp đồng mua bán\nBên A: Công ty ABC\nGiá: 29.000 đồng\nThời hạn: 30 ngày\nKý tại Hà Nội')))}
+    ${side('b', T('sideB','Bản B (bản mới)'), escapeHtml(T('sample.b', 'Hợp đồng mua bán\nBên A: Công ty ABC Việt Nam\nGiá: 32.000 đồng\nKý tại Hà Nội\nHiệu lực từ ngày ký')))}
   </div>
   <div class="panel diff-options">
     <div class="row">
@@ -208,7 +208,7 @@ $('#report').addEventListener('click', () => {
 .ln{width:48px;color:#8a94a6;text-align:right;user-select:none}.diff-change .code{background:#fff8e1}.diff-insert .code{background:#e6f7ee}.diff-delete .code{background:#fdecec}.empty{background:#f3f4f6!important}
 ins{background:#a8e6c1;text-decoration:none}del{background:#f5b5b5}.diff-gap td{text-align:center;color:#8a94a6;background:#f6f8fb}</style></head>
 <body><h1>${T('rpt.compare','So sánh')}: ${escapeHtml(nameA)} ↔ ${escapeHtml(nameB)}</h1><p>${T('k.change','Sửa')} ${last.changed} · ${T('k.insert','Thêm')} ${last.added} · ${T('k.delete','Xoá')} ${last.removed} · ${T('rpt.same','Giống')} ${last.same} ${T('rows','dòng')}. ${T('rpt.by','Tạo bởi')} websitefreetools.com</p>${table}</body></html>`;
-  downloadBlob(new Blob([html], { type: 'text/html;charset=utf-8' }), 'so-sanh.html');
+  downloadBlob(new Blob([html], { type: 'text/html;charset=utf-8' }), T('fn.report', 'so-sanh.html'));
   toast(T('toast.report','Đã tải báo cáo so sánh'));
 });
 

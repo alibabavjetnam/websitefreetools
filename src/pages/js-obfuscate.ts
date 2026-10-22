@@ -6,7 +6,7 @@ import { pageText } from '../i18n';
 mountLayout({ activeTool: 'js-obfuscate' });
 const T = pageText();
 
-const SAMPLE = `// Ví dụ: đếm số lần nhấn nút
+const SAMPLE = T('sample', `// Ví dụ: đếm số lần nhấn nút
 function taoBoDem(batDau) {
   let soLan = batDau;
   return function tang() {
@@ -18,7 +18,7 @@ function taoBoDem(batDau) {
 
 const dem = taoBoDem(0);
 dem();
-dem();`;
+dem();`);
 
 const root = $('#tool-root');
 root.innerHTML = `
