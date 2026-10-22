@@ -2,7 +2,7 @@
  * Bộ quy tắc nến đảo chiều + khối lượng trên khung ngày (mã nghiên cứu, chưa nối vào giao diện).
  * Mẫu hình: búa/sao băng, chuồn chuồn/bia mộ, nhấn chìm, xuyên thấu/mây đen, harami, đáy/đỉnh nhíp, sao mai/sao hôm.
  * Điều kiện ngữ cảnh: mẫu hình tạo đáy (hoặc đỉnh) thấp nhất (cao nhất) 10 ngày và nến trước mẫu hình nằm dưới (trên) SMA20.
- * Vào lệnh ở giá mở nến kế tiếp; cắt lỗ ngoài râu mẫu hình ± 0,25 ATR; chốt lời tại R×tpR; giữ tối đa 15 nến.
+ * Cần một nến xác nhận (đóng cửa vượt râu nến mẫu hình, không chạm cắt lỗ) rồi mới vào ở giá mở nến kế tiếp; cắt lỗ ngoài râu mẫu hình ± 0,25 ATR; chốt lời tại R×tpR; giữ tối đa 15 nến.
  *
  * Kết quả nghiên cứu (BTC + 5 altcoin, 2017 đến 10/2026, chia khám phá <2022 / kiểm định 2022-23 / holdout 2024-26):
  * không mức nào đạt tỷ lệ thắng 65% ở chốt lời 1R; tỷ lệ thắng luôn dưới mức hoà vốn. Xem CLAUDE.md.
@@ -86,9 +86,10 @@ export function passes(rule: CandleRule, s: { side: 1 | -1; pattern: PatternKey;
 }
 
 /** Quét toàn bộ nến ngày đã đóng; trả về tín hiệu và kết quả (SL/TP theo R×tpR, phí 0,24%). */
-export function scanCandles(bars: Bar[], rule: CandleRule = 'R3', tpR = 1): CandleSignal[] {
+export function scanCandles(bars: Bar[], rule: CandleRule = 'R3', tpR = 1, confirm = true): CandleSignal[] {
   const ind = indicators(bars), n = bars.length, out: CandleSignal[] = [];
-  for (let i = 210; i < n - 1; i++) {
+  const lead = confirm ? 1 : 0; // nến xác nhận: đóng cửa vượt râu của nến mẫu hình, rồi mới vào ở giá mở nến kế tiếp
+  for (let i = 210; i < n - 1 - lead; i++) {
     if (!Number.isFinite(ind.atr[i]) || !Number.isFinite(ind.sma200[i])) continue;
     const volRatio = ind.vsma20[i - 1] > 0 ? bars[i].v / ind.vsma20[i - 1] : NaN;
     for (const side of [1, -1] as const) {
@@ -108,22 +109,23 @@ export function scanCandles(bars: Bar[], rule: CandleRule = 'R3', tpR = 1): Cand
         }
         const trend = side > 0 ? bars[i - pl].c < ind.sma20[i - pl] : bars[i - pl].c > ind.sma20[i - pl];
         if (!ext || !trend) continue;
-        const e = bars[i + 1].o;
+        const k = i + lead, e = bars[k + 1].o;
         let lo = Infinity, hi = -Infinity;
         for (let k = i - pl + 1; k <= i; k++) { lo = Math.min(lo, bars[k].l); hi = Math.max(hi, bars[k].h); }
         const sl = side > 0 ? lo - 0.25 * ind.atr[i] : hi + 0.25 * ind.atr[i], risk = side > 0 ? e - sl : sl - e;
         if (!(risk > 0)) continue;
+        if (confirm && !(side > 0 ? bars[k].c > bars[i].h && bars[k].l > sl : bars[k].c < bars[i].l && bars[k].h < sl)) continue;
         const sig: CandleSignal = { i, t: bars[i].t, side, pattern, volRatio, riskPct: (100 * risk) / e, entry: e, sl, tp: e + side * tpR * risk, result: 'open', netR: null };
         if (!passes(rule, sig)) continue;
         const cost = (FEE * e) / risk;
-        for (let j = i + 1; j <= Math.min(n - 1, i + CANDLE_HOLD); j++) {
+        for (let j = k + 1; j <= Math.min(n - 1, k + CANDLE_HOLD); j++) {
           const hitSL = side > 0 ? bars[j].l <= sl : bars[j].h >= sl, hitTP = side > 0 ? bars[j].h >= sig.tp : bars[j].l <= sig.tp;
           if (hitSL) { sig.result = 'loss'; sig.netR = -1 - cost; break; }
           if (hitTP) { sig.result = 'win'; sig.netR = tpR - cost; break; }
         }
-        if (sig.result === 'open' && i + CANDLE_HOLD <= n - 1) {
+        if (sig.result === 'open' && k + CANDLE_HOLD <= n - 1) {
           sig.result = 'timeout';
-          sig.netR = Math.max(-1, Math.min(tpR, (side * (bars[i + CANDLE_HOLD].c - e)) / risk)) - cost;
+          sig.netR = Math.max(-1, Math.min(tpR, (side * (bars[k + CANDLE_HOLD].c - e)) / risk)) - cost;
         }
         out.push(sig);
       }
