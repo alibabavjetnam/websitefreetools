@@ -3,17 +3,21 @@ import type { Series, TrendCriterion, TrendResult } from './types';
 
 /**
  * Chấm điểm xu hướng tại nến i (chỉ dùng dữ liệu <= i), tổng 4 điểm:
- *  1. Trật tự SMA50 / SMA100 / SMA200 ...................... 2 điểm: mỗi cặp liền kề 1 điểm
- *       SMA50 > SMA100  → +1 điểm tăng,  SMA50 < SMA100  → +1 điểm giảm
- *       SMA100 > SMA200 → +1 điểm tăng,  SMA100 < SMA200 → +1 điểm giảm
+ *  1. Trật tự SMA50 / SMA100 / SMA200 ...................... 2 điểm, chia theo từng cặp liền kề
+ *       SMA50 > SMA100  → +0.5 điểm tăng,  SMA50 < SMA100  → +0.5 điểm giảm
+ *       SMA100 > SMA200 → +1.5 điểm tăng,  SMA100 < SMA200 → +1.5 điểm giảm
  *  2. Kênh giá (hồi quy 50 nến, R² ≥ 0.5) .................. 1 điểm: xác nhận giá đi có trật tự
  *  3. Độ dốc SMA50 & SMA200 (so với 10 nến trước) ........... 1 điểm: xác nhận đà của MA
- * Có xu hướng khi một phe đạt từ TREND_MIN_SCORE điểm (3/4) VÀ cặp dài hạn SMA100/SMA200 đồng thuận với phe đó
- * (tăng: SMA100 > SMA200, giảm: SMA100 < SMA200). Nếu đủ điểm mà cặp dài hạn chưa đồng thuận
- * (ví dụ vừa đảo chiều: SMA50 đã xuống dưới SMA100 nhưng SMA100 vẫn trên SMA200) thì coi là đang chuyển pha:
- * trend = SIDEWAYS và `reversing` cho biết hướng đang chuyển. Tổng chỉ có 4 điểm nên hai phe không thể cùng đạt ngưỡng.
+ * Có xu hướng khi một phe đạt từ TREND_MIN_SCORE điểm (3/4). Cặp SMA100/SMA200 (1.5 điểm) nặng hơn hẳn:
+ * thiếu nó thì phe đó tối đa 0.5 + 2 = 2.5 điểm, nên không thể có xu hướng khi SMA100 chưa đồng thuận với SMA200
+ * (ví dụ vừa đảo chiều: SMA50 đã xuống dưới SMA100 nhưng SMA100 vẫn trên SMA200). Có nó mà cả kênh giá lẫn độ dốc
+ * cùng đồng thuận thì đủ điểm kể cả khi SMA50 đang hồi ngược. Tổng chỉ có 4 điểm nên hai phe không thể cùng đạt ngưỡng.
  */
 export const TREND_WEIGHTS = { maOrder: 2, trendline: 1, maSlope: 1 } as const;
+
+/** Điểm của từng cặp trong trật tự SMA (cộng lại bằng TREND_WEIGHTS.maOrder). */
+const PAIR_50_100 = 0.5;
+const PAIR_100_200 = 1.5;
 
 /** Số điểm tối thiểu (trên 4) của một phe để công nhận có xu hướng. */
 export const TREND_MIN_SCORE = 3;
@@ -27,8 +31,8 @@ export function trendAt(s: Series, i: number): TrendResult {
   // 1. Trật tự SMA50 / SMA100 / SMA200: mỗi cặp liền kề đúng thứ tự được 1 điểm cho phe tương ứng
   const maOrderLabel = 'Trật tự SMA50 / SMA100 / SMA200';
   if (m50 !== null && m100 !== null && m200 !== null) {
-    const up = (m50 > m100 ? 1 : 0) + (m100 > m200 ? 1 : 0);
-    const down = (m50 < m100 ? 1 : 0) + (m100 < m200 ? 1 : 0);
+    const up = (m50 > m100 ? PAIR_50_100 : 0) + (m100 > m200 ? PAIR_100_200 : 0);
+    const down = (m50 < m100 ? PAIR_50_100 : 0) + (m100 < m200 ? PAIR_100_200 : 0);
     criteria.push({
       key: 'maOrder', label: maOrderLabel, weight: TREND_WEIGHTS.maOrder,
       vote: up > down ? 1 : down > up ? -1 : 0, up, down,
@@ -72,18 +76,11 @@ export function trendAt(s: Series, i: number): TrendResult {
   const maxScore = criteria.reduce((a, b) => a + b.weight, 0);
   const upScore = criteria.reduce((a, b) => a + b.up, 0);
   const downScore = criteria.reduce((a, b) => a + b.down, 0);
-  const longPair = m100 !== null && m200 !== null ? Math.sign(m100 - m200) : 0; // chiều của cặp dài hạn SMA100/SMA200
   let trend: TrendResult['trend'] = 'SIDEWAYS';
-  let reversing: TrendResult['reversing'];
-  if (upScore >= TREND_MIN_SCORE) {
-    if (longPair === 1) trend = 'UP';
-    else reversing = 'UP';
-  } else if (downScore >= TREND_MIN_SCORE) {
-    if (longPair === -1) trend = 'DOWN';
-    else reversing = 'DOWN';
-  }
+  if (upScore >= TREND_MIN_SCORE) trend = 'UP';
+  else if (downScore >= TREND_MIN_SCORE) trend = 'DOWN';
 
-  return { trend, reversing, upScore, downScore, maxScore, criteria };
+  return { trend, upScore, downScore, maxScore, criteria };
 }
 
 export const TREND_LABEL: Record<TrendResult['trend'], string> = {

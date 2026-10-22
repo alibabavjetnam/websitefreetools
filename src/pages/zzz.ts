@@ -246,14 +246,13 @@ function analyze(withBacktest: boolean) {
 function renderTrend(el: HTMLElement, title: string, t: TrendResult) {
   const segs: string[] = [];
   for (let k = 0; k < t.maxScore; k++) {
-    const cls = k < t.upScore ? 'u' : k >= t.maxScore - t.downScore ? 'd' : '';
+    const cls = k < Math.floor(t.upScore) ? 'u' : k >= t.maxScore - Math.floor(t.downScore) ? 'd' : '';
     segs.push(`<span class="${cls}"></span>`);
   }
   const voteText = (v: number | null) => (v === 1 ? 'tăng' : v === -1 ? 'giảm' : v === 0 ? 'trung tính' : 'thiếu dữ liệu');
   el.innerHTML = `
     <h3>${esc(title)}</h3>
     <div class="trend-value" data-trend="${t.trend}">${TREND_LABEL[t.trend]}</div>
-    ${t.reversing ? `<div class="trend-note">Đang chuyển sang ${t.reversing === 'UP' ? 'tăng' : 'giảm'}: đủ ${t.reversing === 'UP' ? t.upScore : t.downScore}/${t.maxScore} điểm nhưng SMA100 chưa ${t.reversing === 'UP' ? 'lên trên' : 'xuống dưới'} SMA200, chưa tính là có xu hướng.</div>` : ''}
     <div class="score" title="Tăng ${t.upScore} · Giảm ${t.downScore} / ${t.maxScore} điểm">${segs.join('')}</div>
     <details>
       <summary>Tăng ${t.upScore} · Giảm ${t.downScore} trên ${t.maxScore} điểm</summary>
