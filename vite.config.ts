@@ -1,6 +1,30 @@
-import { defineConfig } from 'vite';
+import { defineConfig, type Plugin } from 'vite';
 import { readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
+
+// Google Analytics (gtag.js): chèn vào <head> của mọi trang khi build (không chèn khi chạy dev).
+// Bỏ qua trang ẩn /zzz và trang khách xem menu /m/ (đường link menu chứa dữ liệu sau dấu #).
+const GA_ID = 'G-2RCGQ2LS9Y';
+const NO_ANALYTICS = ['/zzz/index.html', '/m/index.html'];
+const analytics = (): Plugin => ({
+  name: 'wft-google-analytics',
+  apply: 'build',
+  transformIndexHtml(html, ctx) {
+    const file = (ctx.filename || '').replace(/\\/g, '/');
+    if (NO_ANALYTICS.some((p) => file.endsWith(p))) return html;
+    return {
+      html,
+      tags: [
+        { tag: 'script', attrs: { async: true, src: `https://www.googletagmanager.com/gtag/js?id=${GA_ID}` }, injectTo: 'head' },
+        {
+          tag: 'script',
+          children: `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', '${GA_ID}');`,
+          injectTo: 'head',
+        },
+      ],
+    };
+  },
+});
 
 // Mỗi công cụ là một trang HTML riêng (multi-page app).
 // Mọi file trong thư mục tools/ được tự nhận làm trang, không cần khai báo từng trang.
@@ -12,6 +36,7 @@ const toolPages = Object.fromEntries(
 
 // base './' giúp site chạy được cả ở tên miền gốc lẫn trong thư mục con.
 export default defineConfig({
+  plugins: [analytics()],
   base: '/',
   build: {
     rollupOptions: {
