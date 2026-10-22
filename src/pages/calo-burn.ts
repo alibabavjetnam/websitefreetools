@@ -1,7 +1,7 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml, storage } from '../ui';
 import { ACTIVITIES, caloriesBurned } from '../calc/health';
-import { pageText } from '../i18n';
+import { pageText, localeTag } from '../i18n';
 
 mountLayout({ activeTool: 'calo-burn' });
 const T = pageText();
@@ -11,7 +11,7 @@ const weightStore = storage<number>('calo-burn-weight', 60);
 let rows: Row[] = [{ id: 'r1', actIndex: 4, minutes: 30 }];
 
 const groups = [...new Set(ACTIVITIES.map((a) => a.group))];
-const vi = (n: number, d = 0) => n.toLocaleString('vi-VN', { maximumFractionDigits: d });
+const vi = (n: number, d = 0) => n.toLocaleString(localeTag(), { maximumFractionDigits: d });
 const newId = () => Math.random().toString(36).slice(2, 8);
 
 const root = $('#tool-root');

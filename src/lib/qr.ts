@@ -139,7 +139,7 @@ export function encodeQr(text: string, ecc: Ecc = 'M'): QrCode {
     const ccBits = charCountBits(seg.mode, ver);
     usedBits = 4 + ccBits + seg.bits.length;
     if (seg.numChars < 1 << ccBits && usedBits <= capacityBits) break;
-    if (ver >= 40) throw new QrCapacityError('Dữ liệu quá dài để tạo mã QR. Hãy rút ngắn nội dung hoặc giảm mức sửa lỗi.');
+    if (ver >= 40) throw new QrCapacityError(t('lib.qr.tooLong', 'Dữ liệu quá dài để tạo mã QR. Hãy rút ngắn nội dung hoặc giảm mức sửa lỗi.'));
   }
 
   const bb: number[] = [];

@@ -1,7 +1,7 @@
 import { mountLayout } from '../layout';
 import { $, storage } from '../ui';
 import { ACTIVITY_LEVELS, bmi, bmr, tdee, waistHipRisk, type Sex } from '../calc/health';
-import { pageText } from '../i18n';
+import { pageText, localeTag } from '../i18n';
 
 mountLayout({ activeTool: 'bmi-bmr' });
 const T = pageText();
@@ -44,7 +44,7 @@ root.innerHTML = `
   <p class="note">${T('note','BMI phân loại theo ngưỡng châu Á (phù hợp người Việt): bình thường 18,5–22,9. BMR tính theo công thức Mifflin–St Jeor; TDEE là tổng năng lượng tiêu hao mỗi ngày. Số liệu chỉ để tham khảo, không thay cho tư vấn của bác sĩ hoặc chuyên gia dinh dưỡng.')}</p>
 `;
 
-const vi = (n: number, d = 0) => n.toLocaleString('vi-VN', { maximumFractionDigits: d });
+const vi = (n: number, d = 0) => n.toLocaleString(localeTag(), { maximumFractionDigits: d });
 
 function read(): Form {
   return {
