@@ -1,4 +1,6 @@
 /** Nạp thư viện từ CDN khi người dùng thật sự cần (trang mở nhanh, không tải thừa) */
+import { t, tf } from '../i18n';
+
 
 export const CDN = {
   pdfLib: 'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js',
@@ -27,10 +29,10 @@ export function loadScript(url: string, globalName: string): Promise<void> {
       s.src = url;
       s.async = true;
       s.crossOrigin = 'anonymous';
-      s.onload = () => ((window as unknown as Record<string, unknown>)[globalName] ? resolve() : reject(new Error(`Thư viện ${globalName} không khởi động được.`)));
+      s.onload = () => ((window as unknown as Record<string, unknown>)[globalName] ? resolve() : reject(new Error(tf('cdn.libInit', 'Thư viện {name} không khởi động được.', { name: globalName }))));
       s.onerror = () => {
         loading.delete(url);
-        reject(new Error('Không tải được thư viện cần thiết. Kiểm tra kết nối mạng rồi thử lại.'));
+        reject(new Error(t('cdn.loadFail', 'Không tải được thư viện cần thiết. Kiểm tra kết nối mạng rồi thử lại.')));
       };
       document.head.appendChild(s);
     });
@@ -67,7 +69,7 @@ export function loadPdfJs(): Promise<PdfJs> {
     })
     .catch(() => {
       pdfjsPromise = null;
-      throw new Error('Không tải được bộ đọc PDF. Kiểm tra kết nối mạng rồi thử lại.');
+      throw new Error(t('cdn.pdfLoadFail', 'Không tải được bộ đọc PDF. Kiểm tra kết nối mạng rồi thử lại.'));
     });
   return pdfjsPromise;
 }
@@ -80,7 +82,7 @@ export async function openPdf(bytes: Uint8Array): Promise<PdfJsDoc> {
     return await pdfjs.getDocument({ data: bytes.slice() }).promise;
   } catch (e) {
     const name = (e as { name?: string }).name;
-    if (name === 'PasswordException') throw new Error('File PDF có mật khẩu. Hãy mở khoá file trước.');
-    throw new Error('Không đọc được file PDF, file có thể bị hỏng.');
+    if (name === 'PasswordException') throw new Error(t('cdn.pdfPassword', 'File PDF có mật khẩu. Hãy mở khoá file trước.'));
+    throw new Error(t('cdn.pdfCorrupt', 'Không đọc được file PDF, file có thể bị hỏng.'));
   }
 }

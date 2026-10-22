@@ -116,6 +116,32 @@ function seoHead(page, lang, c) {
   return tags.join('\n    ');
 }
 
+/**
+ * Ghi sẵn bản dịch vào HTML cho các phần tử đánh dấu data-i18n / data-i18n-ph / data-i18n-attr,
+ * để người dùng và công cụ tìm kiếm thấy đúng ngôn ngữ ngay cả trước khi JavaScript chạy.
+ * (Lúc chạy, applyI18n() trong src/i18n.ts vẫn áp dụng lại cùng từ điển.)
+ */
+function bakeStrings(html, id, lang) {
+  const merged = { ...((dicts[DEFAULT].s && dicts[DEFAULT].s[id]) || {}), ...((dicts[lang].s && dicts[lang].s[id]) || {}) };
+  if (!Object.keys(merged).length) return html;
+  html = html.replace(/<([a-z0-9]+)([^>]*?)\sdata-i18n="([^"]+)"([^>]*)>([^<]*)<\/\1>/gi, (m, tag, a, key, b, text) =>
+    merged[key] != null ? `<${tag}${a} data-i18n="${key}"${b}>${esc(merged[key])}</${tag}>` : m);
+  const setAttr = (attrs, name, value) => {
+    const re = new RegExp(`(\\s${name}=)"[^"]*"`, 'i');
+    return re.test(attrs) ? attrs.replace(re, `$1"${esc(value)}"`) : `${attrs} ${name}="${esc(value)}"`;
+  };
+  return html.replace(/<([a-z0-9]+)\b([^>]*\sdata-i18n-(?:ph|attr)="[^"]*"[^>]*)>/gi, (m, tag, attrs) => {
+    const ph = /\sdata-i18n-ph="([^"]+)"/i.exec(attrs);
+    if (ph && merged[ph[1]] != null) attrs = setAttr(attrs, 'placeholder', merged[ph[1]]);
+    const at = /\sdata-i18n-attr="([^"]+)"/i.exec(attrs);
+    if (at) for (const pair of at[1].split(';')) {
+      const [attr, key] = pair.split(':');
+      if (attr && key && merged[key.trim()] != null) attrs = setAttr(attrs, attr.trim(), merged[key.trim()]);
+    }
+    return `<${tag}${attrs}>`;
+  });
+}
+
 function localizePage(page, lang) {
   const base = readFileSync(resolve(DIST, page.file), 'utf8');
   const c = content(page, lang, base);
@@ -128,6 +154,11 @@ function localizePage(page, lang) {
     if (c.h1) html = html.replace(/<h1([^>]*)>[^<]*<\/h1>/i, `<h1$1>${esc(c.h1)}</h1>`);
     if (c.lead) html = html.replace(/<p class="lead">[^<]*<\/p>/i, `<p class="lead">${esc(c.lead)}</p>`);
   }
+  if (page.type === 'home') {
+    const kw = (dicts[lang].pages && dicts[lang].pages.home && dicts[lang].pages.home.keywords) || (dicts[DEFAULT].pages && dicts[DEFAULT].pages.home && dicts[DEFAULT].pages.home.keywords);
+    if (kw) html = html.replace(/<meta\s+name="keywords"\s+content="[^"]*"\s*\/?>/i, `<meta name="keywords" content="${esc(kw)}" />`);
+  }
+  if (page.type === 'tool') html = bakeStrings(html, page.key, lang);
   html = html.replace(/<\/head>/i, `    ${seoHead(page, lang, c)}\n  </head>`);
   const outDir = resolve(DIST, lang, dirname(page.file) === '.' ? '' : dirname(page.file));
   mkdirSync(outDir, { recursive: true });

@@ -7,6 +7,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'text-analysis' });
 const T = pageText();
+const DUR = { h: T('u.h', '{n} giờ'), m: T('u.m', '{n} phút'), s: T('u.s', '{n} giây') };
 const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const MAX_CHARS = 5_000_000;
@@ -85,8 +86,8 @@ function renderStats(text: string): void {
     s.avgWordsPerSentence > 25 ? T('hint.long','Câu khá dài, người đọc có thể khó theo dõi. Nên tách bớt câu dài hơn 25 từ.')
       : s.sentences ? T('hint.good','Độ dài câu dễ đọc.') : '';
   $('#time').innerHTML = s.words
-    ? `<div class="time-row"><span>${T('readTime','Thời gian đọc')}</span><b>${fmtDuration(Math.max(1, s.readSeconds))}</b></div>
-       <div class="time-row"><span>${T('speakTime','Thời gian đọc thành tiếng, thuyết trình')}</span><b>${fmtDuration(Math.max(1, s.speakSeconds))}</b></div>
+    ? `<div class="time-row"><span>${T('readTime','Thời gian đọc')}</span><b>${fmtDuration(Math.max(1, s.readSeconds), DUR)}</b></div>
+       <div class="time-row"><span>${T('speakTime','Thời gian đọc thành tiếng, thuyết trình')}</span><b>${fmtDuration(Math.max(1, s.speakSeconds), DUR)}</b></div>
        <p class="note">${T('timeNote1','Ước tính theo tốc độ trung bình')} ${READ_WPM} ${T('timeNote2','từ/phút khi đọc thầm và')} ${SPEAK_WPM} ${T('timeNote3','từ/phút khi nói.')} ${hint}</p>
        ${s.longestSentenceWords > 25 ? `<p class="note"><b>${T('longest','Câu dài nhất')} (${vi(s.longestSentenceWords)} ${T('wordsWord','từ')}):</b> ${escapeHtml(s.longestSentence.length > 300 ? `${s.longestSentence.slice(0, 300)}…` : s.longestSentence)}</p>` : ''}`
     : `<p class="note">${T('noText','Chưa có văn bản để phân tích.')}</p>`;

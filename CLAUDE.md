@@ -49,8 +49,12 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 
 ## Đang làm dở: i18n (rà soát tiếng Việt còn sót ở bản en/ja/zh)
 - Đã làm: Phase 2 dịch các công cụ, commit gần nhất dịch xong `pptx-pdf`
-- Đang làm khi hết hạn mức: đọc `src/data/foods.ts` để dịch tên món và khẩu phần cho công cụ Thực đơn & calo (`meal-calo`). Chưa rõ đã sửa tới đâu, cần kiểm tra lại file này
+- Đã xong (22/10/2026): dịch tên món và khẩu phần của `meal-calo` (`src/data/foods.ts` có `key` cho từng món; từ điển có `food.<key>` và `unit.*` đủ 38 món ở cả en/vi/ja/zh). `npm run typecheck` và `npm run build` đều qua
+- Còn lại, đã biết:
+  - 3 trang tĩnh `chinh-sach-bao-mat.html`, `dieu-khoan.html`, `privacy-policy.html` ở bản en/ja/zh vẫn là tiếng Việt toàn bộ (không có `data-i18n`; `scripts/i18n.mjs` chủ động giữ nội dung gốc cho trang tĩnh, chỉ gắn SEO và menu). Cần quyết định: dịch thật 3 trang này hay chấp nhận
+  - Chưa kiểm tra render thật bằng trình duyệt (máy chạy phiên này chưa có trình duyệt headless). Quét tĩnh trong `dist/` chỉ bắt được chữ gắn cứng trong HTML. Tiêu đề trang chủ ("Danh sách công cụ", "Cách dùng") được `src/pages/home.ts` dịch lúc chạy nên quét tĩnh báo nhầm
+  - Các chuỗi tiếng Việt còn trong từ điển en/ja/zh là cố ý: tên món Việt trong ngoặc (Bún bò Huế...), ký hiệu đ, số hiệu văn bản pháp luật (NĐ-CP), từ dừng (và, của), Tết
 - Cách rà soát đã dùng: render từng công cụ ở chế độ tiếng Anh rồi quét ký tự tiếng Việt còn sót
   - Build gộp cả 44 công cụ một lượt từng gây lỗi 404 (module không nạp), nên kết quả "sạch" là sai. Phải build và kiểm tra từng công cụ riêng
   - Công cụ kiểm tra phải nạp từ điển chrome thật (`__WFT_I18N__` từ `/language/en.js`), nếu không tên nhóm/công cụ trong menu sẽ báo nhầm là còn tiếng Việt
-- Bước tiếp theo: hoàn tất dịch `foods.ts`, rồi rà lại toàn bộ công cụ ở en/ja/zh theo cách trên, sửa các chuỗi còn sót trong `public/language/*.json`
+- Bước tiếp theo: render thật từng công cụ ở en/ja/zh bằng trình duyệt (build từng công cụ riêng, nạp `/language/<lang>.js`), sửa chuỗi còn sót trong `public/language/*.json`; quyết định cách xử lý 3 trang tĩnh ở trên

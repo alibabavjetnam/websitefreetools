@@ -11,7 +11,24 @@ const mealLabel = (m: string): string => T('meal.' + (MEAL_KEY[m] || m), m);
 const FG_KEY: Record<string, string> = { 'Cơm & bún phở': 'rice', 'Bánh': 'cake', 'Thịt & cá': 'meatfish', 'Rau củ': 'veggie', 'Trái cây': 'fruit', 'Đồ uống': 'drink', 'Ăn vặt': 'snack' };
 const fgLabel = (g: string): string => T('fg.' + (FG_KEY[g] || g), g);
 
-interface Entry { id: string; name: string; meal: string; kcal: number; protein: number; carb: number; fat: number; qty: number }
+const foodLabel = (f: Food): string => T('food.' + f.key, f.name);
+const FOOD_BY_NAME = new Map(FOODS.map((f) => [f.name, f]));
+const FOOD_BY_KEY = new Map(FOODS.map((f) => [f.key, f]));
+/** Tên món hiển thị theo ngôn ngữ. Mục cũ lưu trước khi có `key` được tra theo tên tiếng Việt. */
+const entryName = (e: { key?: string; name: string }): string => {
+  const f = e.key ? FOOD_BY_KEY.get(e.key) : FOOD_BY_NAME.get(e.name);
+  return f ? foodLabel(f) : e.name;
+};
+const UNIT_KEY: Record<string, string> = { 'chén': 'bowlS', 'tô': 'bowl', 'suất': 'portion', 'gói': 'pack', 'ổ': 'loaf', 'cái': 'piece', 'quả': 'piece', 'đĩa': 'plate', 'trái': 'ear', 'lát': 'slice', 'ly': 'glass', 'lon': 'can', 'miếng': 'chunk', 'cây': 'stick' };
+/** Dịch khẩu phần dạng "1 tô", "1 chén (150g)"; dạng chỉ có đơn vị khối lượng như "100g" giữ nguyên. */
+const servingLabel = (s: string): string => {
+  const m = /^(\d+(?:[.,]\d+)?)\s+(\S+)(?:\s+\((.+)\))?$/.exec(s);
+  const k = m && UNIT_KEY[m[2]];
+  if (!m || !k) return s;
+  return T('unit.' + k, `{n} ${m[2]}`).replace('{n}', m[1]) + (m[3] ? ` (${m[3]})` : '');
+};
+
+interface Entry { id: string; key?: string; name: string; meal: string; kcal: number; protein: number; carb: number; fat: number; qty: number }
 type DayData = Record<string, Entry[]>; // key = YYYY-MM-DD
 const store = storage<DayData>('meal-calo', {});
 const targetStore = storage<number>('meal-calo-target', 2000);
@@ -35,7 +52,7 @@ root.innerHTML = `
       <div class="panel-title">${T('addDish','Thêm món')}</div>
       <div class="field-row">
         <label class="field" style="flex:2"><span class="field-label">${T('chooseDish','Chọn món có sẵn')}</span>
-          <select id="food"><option value="">${T('selectDish','— Chọn món —')}</option>${groups.map((g) => `<optgroup label="${escapeHtml(fgLabel(g))}">${FOODS.filter((f) => f.group === g).map((f, i) => `<option value="${g}|${i}">${escapeHtml(f.name)} (${f.kcal} kcal/${escapeHtml(f.serving)})</option>`).join('')}</optgroup>`).join('')}</select>
+          <select id="food"><option value="">${T('selectDish','— Chọn món —')}</option>${groups.map((g) => `<optgroup label="${escapeHtml(fgLabel(g))}">${FOODS.filter((f) => f.group === g).map((f, i) => `<option value="${g}|${i}">${escapeHtml(foodLabel(f))} (${f.kcal} kcal/${escapeHtml(servingLabel(f.serving))})</option>`).join('')}</optgroup>`).join('')}</select>
         </label>
         <label class="field"><span class="field-label">${T('meal','Bữa')}</span><select id="meal">${MEALS.map((m) => `<option value="${m}">${mealLabel(m)}</option>`).join('')}</select></label>
         <label class="field"><span class="field-label">${T('servings','Số phần')}</span><input type="number" id="qty" min="0.5" step="0.5" value="1" /></label>
@@ -91,7 +108,7 @@ function render(): void {
     const mk = list.reduce((a, e) => a + e.kcal * e.qty, 0);
     return `<div class="meal-group"><h3>${mealLabel(m)} <span class="note">${vi(mk)} kcal</span></h3>
       <table class="data-table data-table--compact"><tbody>${list.map((e) => `<tr>
-        <td>${escapeHtml(e.name)}${e.qty !== 1 ? ` ×${vi(e.qty, 1)}` : ''}</td>
+        <td>${escapeHtml(entryName(e))}${e.qty !== 1 ? ` ×${vi(e.qty, 1)}` : ''}</td>
         <td>${vi(e.kcal * e.qty)} kcal</td>
         <td><button type="button" class="btn btn-sm" data-del="${e.id}">${T('del','Xoá')}</button></td></tr>`).join('')}</tbody></table></div>`;
   }).join('') || `<p class="note">${T('emptyDay','Chưa có món nào cho ngày này. Chọn món và bấm "Thêm vào thực đơn".')}</p>`;
@@ -103,7 +120,7 @@ $('#add').addEventListener('click', () => {
   const [g, i] = v.split('|');
   const f = FOODS.filter((x) => x.group === g)[Number(i)] as Food;
   const qty = Math.max(0.5, Number($<HTMLInputElement>('#qty').value) || 1);
-  setDay([...getDay(), { id: newId(), name: f.name, meal: $<HTMLSelectElement>('#meal').value, kcal: f.kcal, protein: f.protein, carb: f.carb, fat: f.fat, qty }]);
+  setDay([...getDay(), { id: newId(), key: f.key, name: f.name, meal: $<HTMLSelectElement>('#meal').value, kcal: f.kcal, protein: f.protein, carb: f.carb, fat: f.fat, qty }]);
   render();
 });
 $('#c-add').addEventListener('click', () => {

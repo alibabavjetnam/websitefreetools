@@ -44,6 +44,14 @@ const dict = (): Dict | undefined => w.__WFT_I18N__;
 export function t(key: string, fallback = ''): string {
   return dict()?.ui?.[key] ?? fallback;
 }
+/** Như t() nhưng thay các chỗ {tên} bằng giá trị trong vars. */
+export function tf(key: string, fallback: string, vars: Record<string, string | number>): string {
+  let s = t(key, fallback);
+  for (const [k, v] of Object.entries(vars)) s = s.split(`{${k}}`).join(String(v));
+  return s;
+}
+/** Mã locale cho Intl / toLocaleString theo ngôn ngữ hiện tại. */
+export const localeTag = (): string => (({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US');
 export function groupName(id: string, fallback: string): string {
   return dict()?.groups?.[id]?.name ?? fallback;
 }

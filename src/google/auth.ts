@@ -3,6 +3,8 @@
  * Dữ liệu của người dùng nằm trong Google Drive của chính họ; WFTools chỉ xin quyền drive.file
  * (chỉ thấy các file do WFTools tạo). Quyền Forms/Calendar chỉ xin khi công cụ cần đến.
  */
+import { t as tr, tf } from '../i18n';
+
 
 /** Client ID không phải bí mật: Google chỉ chấp nhận nó từ các tên miền đã đăng ký */
 export const GOOGLE_CLIENT_ID = '867291461453-5spub4rjvn0alvqs4kcchtiqtgn5rssk.apps.googleusercontent.com';
@@ -112,7 +114,7 @@ function loadGis(): Promise<void> {
     s.onload = () => resolve();
     s.onerror = () => {
       gisPromise = null;
-      reject(new GoogleAuthError('Không tải được dịch vụ đăng nhập Google. Kiểm tra kết nối mạng hoặc trình chặn quảng cáo.'));
+      reject(new GoogleAuthError(tr('google.loadFail', 'Không tải được dịch vụ đăng nhập Google. Kiểm tra kết nối mạng hoặc trình chặn quảng cáo.')));
     };
     document.head.appendChild(s);
   });
@@ -123,7 +125,7 @@ function loadGis(): Promise<void> {
 async function requestToken(scopes: string[], prompt: '' | 'consent' | 'select_account'): Promise<TokenState> {
   await loadGis();
   const oauth2 = window.google?.accounts.oauth2;
-  if (!oauth2) throw new GoogleAuthError('Dịch vụ đăng nhập Google chưa sẵn sàng.');
+  if (!oauth2) throw new GoogleAuthError(tr('google.notReady', 'Dịch vụ đăng nhập Google chưa sẵn sàng.'));
   return new Promise<TokenState>((resolve, reject) => {
     const client = oauth2.initTokenClient({
       client_id: GOOGLE_CLIENT_ID,
@@ -131,7 +133,7 @@ async function requestToken(scopes: string[], prompt: '' | 'consent' | 'select_a
       include_granted_scopes: true,
       callback: (r) => {
         if (r.error || !r.access_token) {
-          reject(new GoogleAuthError(r.error === 'access_denied' ? 'Bạn chưa cấp quyền cho WFTools.' : `Đăng nhập không thành công (${r.error_description ?? r.error}).`));
+          reject(new GoogleAuthError(r.error === 'access_denied' ? tr('google.denied', 'Bạn chưa cấp quyền cho WFTools.') : tf('google.loginFail', 'Đăng nhập không thành công ({detail}).', { detail: r.error_description ?? r.error ?? '' })));
           return;
         }
         resolve({
@@ -141,7 +143,7 @@ async function requestToken(scopes: string[], prompt: '' | 'consent' | 'select_a
         });
       },
       error_callback: (e) =>
-        reject(new GoogleAuthError(e.type === 'popup_closed' ? 'Bạn đã đóng cửa sổ đăng nhập.' : e.type === 'popup_failed_to_open' ? 'Trình duyệt chặn cửa sổ đăng nhập. Hãy cho phép cửa sổ bật lên.' : 'Đăng nhập không thành công.')),
+        reject(new GoogleAuthError(e.type === 'popup_closed' ? tr('google.popupClosed', 'Bạn đã đóng cửa sổ đăng nhập.') : e.type === 'popup_failed_to_open' ? tr('google.popupBlocked', 'Trình duyệt chặn cửa sổ đăng nhập. Hãy cho phép cửa sổ bật lên.') : tr('google.loginFailShort', 'Đăng nhập không thành công.'))),
     });
     client.requestAccessToken({ prompt, hint: currentUser()?.email });
   });
@@ -161,11 +163,11 @@ export async function signIn(extraScopes: string[] = []): Promise<GoogleUser> {
   const scopes = [...SCOPES.base, ...extraScopes];
   const t = await requestToken(scopes, currentUser() ? '' : 'select_account');
   if (!hasScopes(t, [SCOPES.base[3], ...extraScopes]))
-    throw new GoogleAuthError('Bạn cần tích chọn cho phép WFTools lưu file vào Google Drive để dùng tính năng này.');
+    throw new GoogleAuthError(tr('google.needDrive', 'Bạn cần tích chọn cho phép WFTools lưu file vào Google Drive để dùng tính năng này.'));
   memoryToken = t;
   writeToken(t);
   const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', { headers: { Authorization: `Bearer ${t.accessToken}` } });
-  if (!res.ok) throw new GoogleAuthError('Không đọc được thông tin tài khoản Google.');
+  if (!res.ok) throw new GoogleAuthError(tr('google.profileFail', 'Không đọc được thông tin tài khoản Google.'));
   const info = (await res.json()) as { email: string; name?: string; picture?: string };
   const user: GoogleUser = { email: info.email, name: info.name || info.email, picture: info.picture };
   saveUser(user);
@@ -191,7 +193,7 @@ export async function getToken(extraScopes: string[] = []): Promise<string> {
   const need = [SCOPES.base[3], ...extraScopes];
   if (!hasScopes(memoryToken, need) || (memoryToken && memoryToken.expiresAt < Date.now() + 60_000)) {
     const t = await requestToken([...SCOPES.base, ...extraScopes], '');
-    if (!hasScopes(t, need)) throw new GoogleAuthError('Bạn chưa cấp đủ quyền cho tính năng này.');
+    if (!hasScopes(t, need)) throw new GoogleAuthError(tr('google.needScopes', 'Bạn chưa cấp đủ quyền cho tính năng này.'));
     memoryToken = t;
     writeToken(t);
   }
@@ -212,7 +214,7 @@ export async function gfetch<T>(url: string, init: RequestInit = {}, extraScopes
   if (res.status === 401) {
     memoryToken = null;
     writeToken(null);
-    throw new GoogleAuthError('Phiên đăng nhập Google đã hết hạn. Hãy bấm lại để tiếp tục.');
+    throw new GoogleAuthError(tr('google.sessionExpired', 'Phiên đăng nhập Google đã hết hạn. Hãy bấm lại để tiếp tục.'));
   }
   if (!res.ok) {
     let detail = '';
@@ -221,7 +223,7 @@ export async function gfetch<T>(url: string, init: RequestInit = {}, extraScopes
     } catch {
       /* không có nội dung lỗi */
     }
-    throw new GoogleAuthError(res.status === 403 ? `Google từ chối yêu cầu (${detail || 'không đủ quyền'}).` : `Lỗi từ Google (${res.status}${detail ? `: ${detail}` : ''}).`);
+    throw new GoogleAuthError(res.status === 403 ? tf('google.refused', 'Google từ chối yêu cầu ({detail}).', { detail: detail || tr('google.noPerm', 'không đủ quyền') }) : tf('google.error', 'Lỗi từ Google ({detail}).', { detail: `${res.status}${detail ? `: ${detail}` : ''}` }));
   }
   return res.status === 204 ? (undefined as T) : ((await res.json()) as T);
 }

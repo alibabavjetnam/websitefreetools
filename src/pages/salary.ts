@@ -28,9 +28,9 @@ root.innerHTML = `
           <span class="field-label">${T('region','Vùng làm việc')}</span>
           <select id="region">
             <option value="1">${T('region.1','Vùng I (Hà Nội, TP.HCM nội thành…)')}</option>
-            <option value="2">Vùng II</option>
-            <option value="3">Vùng III</option>
-            <option value="4">Vùng IV</option>
+            <option value="2">${T('region.2','Vùng II')}</option>
+            <option value="3">${T('region.3','Vùng III')}</option>
+            <option value="4">${T('region.4','Vùng IV')}</option>
           </select>
         </label>
       </div>

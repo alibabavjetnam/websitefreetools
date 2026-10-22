@@ -132,11 +132,14 @@ export function countPhrase(raw: string, phrase: string): KeywordRow {
   return { phrase: target.join(' '), count, density: ws.length ? (count * target.length * 100) / ws.length : 0 };
 }
 
-/** "3 phút 20 giây" */
-export function fmtDuration(sec: number): string {
-  if (sec < 60) return `${sec} giây`;
+/** Mẫu hiển thị đơn vị thời gian, {n} là số. Mặc định tiếng Việt: "3 phút 20 giây". */
+export interface DurationUnits { h: string; m: string; s: string }
+export const VI_DURATION: DurationUnits = { h: '{n} giờ', m: '{n} phút', s: '{n} giây' };
+export function fmtDuration(sec: number, u: DurationUnits = VI_DURATION): string {
+  const f = (tpl: string, n: number) => tpl.replace('{n}', String(n));
+  if (sec < 60) return f(u.s, sec);
   const h = Math.floor(sec / 3600);
   const m = Math.floor((sec % 3600) / 60);
   const s = sec % 60;
-  return [h && `${h} giờ`, m && `${m} phút`, !h && s && `${s} giây`].filter(Boolean).join(' ');
+  return [h && f(u.h, h), m && f(u.m, m), !h && s && f(u.s, s)].filter(Boolean).join(' ');
 }

@@ -5,6 +5,7 @@
 import { GoogleAuthError, currentUser, hasLiveToken, signIn } from './auth';
 import { ensureSpreadsheet, findSpreadsheet, readRows, writeRows, type SpreadsheetRef } from './sheets';
 import { escapeHtml, storage, toast } from '../ui';
+import { t, tf, localeTag } from '../i18n';
 
 export interface Column<T> {
   key: keyof T & string;
@@ -109,7 +110,7 @@ export class SheetStore<D extends TableData<D>> {
     if (!user) this.setStatus('local');
     else if (this.connected) this.setStatus('synced');
     // Còn tên tài khoản nhưng phiên Google đã hết (đóng trình duyệt, quá 1 giờ): cần một cú bấm để Google cấp phiên mới
-    else this.setStatus('connect', linked && linked.email === user.email ? 'Phiên kết nối Google đã hết hạn.' : 'Chưa kết nối với Google Sheets.');
+    else this.setStatus('connect', linked && linked.email === user.email ? t('sync.expired', 'Phiên kết nối Google đã hết hạn.') : t('sync.notConnected', 'Chưa kết nối với Google Sheets.'));
   }
 
   private setStatus(s: Status, message = ''): void {
@@ -121,18 +122,18 @@ export class SheetStore<D extends TableData<D>> {
   private renderBar(): void {
     if (!this.bar) return;
     const user = currentUser();
-    const sheetLink = this.ref ? `<a href="${escapeHtml(this.ref.url)}" target="_blank" rel="noopener">Mở trong Google Sheets</a>` : '';
+    const sheetLink = this.ref ? `<a href="${escapeHtml(this.ref.url)}" target="_blank" rel="noopener">${escapeHtml(t('sync.sheetLink', 'Mở trong Google Sheets'))}</a>` : '';
     const map: Record<Status, string> = {
-      local: `<span class="sync-dot"></span><span>Dữ liệu đang lưu trên trình duyệt này.</span>
-        <button type="button" class="btn btn-sm btn-primary" data-sync="connect">Đăng nhập Google để lưu vào Google Sheets</button>`,
-      connect: `<span class="sync-dot"></span><span>Đã đăng nhập ${escapeHtml(user?.email ?? '')}. ${escapeHtml(this.message || 'Chưa kết nối với Google Sheets.')}</span>
-        <button type="button" class="btn btn-sm btn-primary" data-sync="connect">Tiếp tục đồng bộ</button>`,
-      syncing: `<span class="sync-dot is-busy"></span><span>Đang lưu vào Google Sheets…</span> ${sheetLink}`,
+      local: `<span class="sync-dot"></span><span>${escapeHtml(t('sync.local', 'Dữ liệu đang lưu trên trình duyệt này.'))}</span>
+        <button type="button" class="btn btn-sm btn-primary" data-sync="connect">${escapeHtml(t('sync.signIn', 'Đăng nhập Google để lưu vào Google Sheets'))}</button>`,
+      connect: `<span class="sync-dot"></span><span>${escapeHtml(tf('sync.signedIn', 'Đã đăng nhập {email}. {message}', { email: user?.email ?? '', message: this.message || t('sync.notConnected', 'Chưa kết nối với Google Sheets.') }))}</span>
+        <button type="button" class="btn btn-sm btn-primary" data-sync="connect">${escapeHtml(t('sync.continue', 'Tiếp tục đồng bộ'))}</button>`,
+      syncing: `<span class="sync-dot is-busy"></span><span>${escapeHtml(t('sync.saving', 'Đang lưu vào Google Sheets…'))}</span> ${sheetLink}`,
       synced: this.ref
-        ? `<span class="sync-dot is-ok"></span><span>Đã đồng bộ với Google Sheets${this.message ? `, ${escapeHtml(this.message)}` : ''}.</span> ${sheetLink}`
-        : `<span class="sync-dot is-ok"></span><span>Đã kết nối Google. Bảng tính sẽ được tạo trong Drive của bạn khi bạn thêm dữ liệu đầu tiên.</span>`,
+        ? `<span class="sync-dot is-ok"></span><span>${escapeHtml(this.message ? tf('sync.syncedAt', 'Đã đồng bộ với Google Sheets, lúc {time}.', { time: this.message }) : t('sync.synced', 'Đã đồng bộ với Google Sheets.'))}</span> ${sheetLink}`
+        : `<span class="sync-dot is-ok"></span><span>${escapeHtml(t('sync.ready', 'Đã kết nối Google. Bảng tính sẽ được tạo trong Drive của bạn khi bạn thêm dữ liệu đầu tiên.'))}</span>`,
       error: `<span class="sync-dot is-error"></span><span>${escapeHtml(this.message)}</span>
-        <button type="button" class="btn btn-sm" data-sync="${this.connected ? 'retry' : 'connect'}">Thử lại</button>`,
+        <button type="button" class="btn btn-sm" data-sync="${this.connected ? 'retry' : 'connect'}">${escapeHtml(t('sync.retry', 'Thử lại'))}</button>`,
     };
     this.bar.dataset.status = this.status;
     this.bar.innerHTML = map[this.status];
@@ -171,11 +172,11 @@ export class SheetStore<D extends TableData<D>> {
       this.listeners.forEach((fn) => fn(merged));
       // Có dòng chỉ nằm trên máy này: đẩy lên để Sheets đầy đủ
       if (JSON.stringify(merged) !== JSON.stringify(remote)) await this.push();
-      else this.setStatus('synced', `lúc ${new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}`);
+      else this.setStatus('synced', new Date().toLocaleTimeString(localeTag(), { hour: '2-digit', minute: '2-digit' }));
     } catch (e) {
       this.ref = null;
       this.connected = false;
-      this.setStatus('error', e instanceof GoogleAuthError ? e.message : `Không kết nối được Google Sheets (${(e as Error).message}).`);
+      this.setStatus('error', e instanceof GoogleAuthError ? e.message : tf('sync.connectFail', 'Không kết nối được Google Sheets ({detail}).', { detail: (e as Error).message }));
     } finally {
       this.connecting = false;
     }
@@ -203,12 +204,12 @@ export class SheetStore<D extends TableData<D>> {
         await writeRows(this.ref.id, def.sheet, cols.map((c) => c.label), ((this.data as unknown as Data)[name] ?? []).map((r) => cols.map((c) => r[c.key] ?? '')));
       }
       this.pending.set(false);
-      this.setStatus('synced', `lúc ${new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}`);
+      this.setStatus('synced', new Date().toLocaleTimeString(localeTag(), { hour: '2-digit', minute: '2-digit' }));
     } catch (e) {
       this.dirty = true;
       const msg = e instanceof GoogleAuthError ? e.message : (e as Error).message;
-      this.setStatus('error', `Chưa lưu được lên Google Sheets: ${msg} Dữ liệu vẫn còn trên trình duyệt.`);
-      if (e instanceof GoogleAuthError) toast('Cần đăng nhập lại Google để tiếp tục lưu');
+      this.setStatus('error', tf('sync.saveFail', 'Chưa lưu được lên Google Sheets: {detail} Dữ liệu vẫn còn trên trình duyệt.', { detail: msg }));
+      if (e instanceof GoogleAuthError) toast(t('sync.reauth', 'Cần đăng nhập lại Google để tiếp tục lưu'));
     }
   }
 }

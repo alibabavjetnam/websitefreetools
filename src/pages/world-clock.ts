@@ -10,14 +10,18 @@ const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record
 const store = storage<string[]>('world-clock', ['Asia/Ho_Chi_Minh', 'Asia/Tokyo', 'Europe/London', 'America/New_York']);
 const cfg = storage<{ h24: boolean }>('world-clock-cfg', { h24: true });
 
-const allZones: (Zone & { country: string; flag: string })[] = COUNTRIES.flatMap((c) => c.zones.map((z) => ({ ...z, country: c.country, flag: c.flag })));
+const regionNames = (() => { try { return new Intl.DisplayNames([currentLang()], { type: 'region' }); } catch { return null; } })();
+/** Tên nước theo ngôn ngữ trang (tiếng Việt giữ tên trong dữ liệu, ngôn ngữ khác dùng Intl.DisplayNames). */
+const countryName = (c: { country: string; code: string }): string => (currentLang() === 'vi' ? c.country : (regionNames?.of(c.code) ?? c.country));
+const cityName = (z: Zone): string => T('city.' + z.tz, z.city);
+const allZones: (Zone & { country: string; flag: string })[] = COUNTRIES.flatMap((c) => c.zones.map((z) => ({ ...z, city: cityName(z), country: countryName(c), flag: c.flag })));
 const zoneOf = (tz: string) => allZones.find((z) => z.tz === tz);
 
 const root = $('#tool-root');
 root.innerHTML = `
   <div class="panel code-toolbar">
     <label class="field field--inline" style="flex:1"><span class="field-label">${T('addCountry','Thêm quốc gia')}</span>
-      <select id="add"><option value="">${T('choose','— Chọn —')}</option>${COUNTRIES.map((c) => `<optgroup label="${c.flag} ${escapeHtml(c.country)}">${c.zones.map((z) => `<option value="${z.tz}">${escapeHtml(z.city)}</option>`).join('')}</optgroup>`).join('')}</select>
+      <select id="add"><option value="">${T('choose','— Chọn —')}</option>${COUNTRIES.map((c) => `<optgroup label="${c.flag} ${escapeHtml(countryName(c))}">${c.zones.map((z) => `<option value="${z.tz}">${escapeHtml(cityName(z))}</option>`).join('')}</optgroup>`).join('')}</select>
     </label>
     <label class="check"><input type="checkbox" id="h24" /><span>${T('h24','Định dạng 24 giờ')}</span></label>
   </div>

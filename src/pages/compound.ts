@@ -29,9 +29,9 @@ $('#tool-root').innerHTML = `
         <label class="field span-all">
           <span class="field-label">${T('freq','Nhập lãi vào gốc')}</span>
           <select id="freq">
-            <option value="12">Hằng tháng</option>
-            <option value="4">Hằng quý</option>
-            <option value="1" selected>Hằng năm</option>
+            <option value="12">${T('freq.12','Hằng tháng')}</option>
+            <option value="4">${T('freq.4','Hằng quý')}</option>
+            <option value="1" selected>${T('freq.1','Hằng năm')}</option>
           </select>
         </label>
       </div>
