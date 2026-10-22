@@ -74,9 +74,9 @@ root.innerHTML = `
       <form class="panel" id="prod-form" novalidate>
         <h2 class="panel-title">${T('addProduct','Thêm sản phẩm')}</h2>
         <div class="form-grid">
-          <label class="field"><span class="field-label">${T('sku','Mã hàng (SKU)')}</span><input id="pr-sku" type="text" maxlength="40" placeholder="AO-TRANG-M" /></label>
+          <label class="field"><span class="field-label">${T('sku','Mã hàng (SKU)')}</span><input id="pr-sku" type="text" maxlength="40" placeholder="${T('skuPh', 'AO-TRANG-M')}" /></label>
           <label class="field"><span class="field-label">${T('prodName','Tên sản phẩm *')}</span><input id="pr-name" type="text" maxlength="120" /></label>
-          <label class="field"><span class="field-label">${T('unit','Đơn vị')}</span><input id="pr-unit" type="text" maxlength="20" value="cái" /></label>
+          <label class="field"><span class="field-label">${T('unit','Đơn vị')}</span><input id="pr-unit" type="text" maxlength="20" value="${T('defaultUnit', 'cái')}" /></label>
           <label class="field"><span class="field-label">${T('minQty','Tồn tối thiểu')}</span><input id="pr-min" type="number" min="0" step="1" value="5" /></label>
           <label class="field"><span class="field-label">${T('cost','Giá vốn')}</span><input id="pr-cost" type="text" /></label>
           <label class="field"><span class="field-label">${T('price','Giá bán')}</span><input id="pr-price" type="text" /></label>
@@ -217,14 +217,14 @@ $('#prod-form').addEventListener('submit', (e) => {
   if (problem) return;
   const d = store.get();
   const p: Product = {
-    id: newId(), sku: $<HTMLInputElement>('#pr-sku').value.trim(), name, unit: $<HTMLInputElement>('#pr-unit').value.trim() || 'cái',
+    id: newId(), sku: $<HTMLInputElement>('#pr-sku').value.trim(), name, unit: $<HTMLInputElement>('#pr-unit').value.trim() || T('defaultUnit', 'cái'),
     cost: Number.isFinite(cost) ? Math.round(cost) : 0, price: Number.isFinite(price) ? Math.round(price) : 0,
     minQty: Math.max(0, Math.floor(Number($<HTMLInputElement>('#pr-min').value) || 0)),
   };
-  const moves = qty > 0 ? [...d.moves, { id: newId(), date: today(), productId: p.id, qty, note: 'Tồn đầu kỳ' }] : d.moves;
+  const moves = qty > 0 ? [...d.moves, { id: newId(), date: today(), productId: p.id, qty, note: T('openingQty', 'Tồn đầu kỳ') }] : d.moves;
   store.set({ products: [...d.products, p], moves });
   (e.target as HTMLFormElement).reset();
-  $<HTMLInputElement>('#pr-unit').value = 'cái';
+  $<HTMLInputElement>('#pr-unit').value = T('defaultUnit', 'cái');
   $<HTMLInputElement>('#pr-min').value = '5';
   renderStock();
 });
@@ -271,8 +271,8 @@ root.addEventListener('click', (e) => {
 $('#export').addEventListener('click', () => {
   const d = store.get();
   const stock = stockOf(d);
-  const csv = ['Ma hang,Ten,Don vi,Ton kho,Toi thieu,Gia von,Gia ban', ...d.products.map((p) => [p.sku, p.name, p.unit, stock.get(p.id) ?? 0, p.minQty, p.cost, p.price].map((v) => `"${String(v).replace(/"/g, '""')}"`).join(','))];
-  downloadBlob(new Blob(['﻿' + csv.join('\n')], { type: 'text/csv;charset=utf-8' }), 'ton-kho.csv');
+  const csv = [T('csv.header', 'Ma hang,Ten,Don vi,Ton kho,Toi thieu,Gia von,Gia ban'), ...d.products.map((p) => [p.sku, p.name, p.unit, stock.get(p.id) ?? 0, p.minQty, p.cost, p.price].map((v) => `"${String(v).replace(/"/g, '""')}"`).join(','))];
+  downloadBlob(new Blob(['﻿' + csv.join('\n')], { type: 'text/csv;charset=utf-8' }), `${T('csv.file', 'ton-kho')}.csv`);
 });
 
 store.onChange(renderStock);

@@ -194,8 +194,8 @@ $('#b-save').addEventListener('click', () => {
 
 $('#export').addEventListener('click', () => {
   const list = monthTx(store.get());
-  const csv = ['Ngay,Loai,Danh muc,So tien,Ghi chu', ...list.map((t) => [normDate(t.date), t.type, t.category, t.amount, t.note].map((v) => `"${String(v).replace(/"/g, '""')}"`).join(','))];
-  downloadBlob(new Blob(['﻿' + csv.join('\n')], { type: 'text/csv;charset=utf-8' }), `chi-tieu-${monthInput.value}.csv`);
+  const csv = [T('csv.header', 'Ngay,Loai,Danh muc,So tien,Ghi chu'), ...list.map((t) => [normDate(t.date), t.type === 'chi' ? T('csv.expense', 'chi') : t.type === 'thu' ? T('csv.income', 'thu') : t.type, catLabel(t.category), t.amount, t.note].map((v) => `"${String(v).replace(/"/g, '""')}"`).join(','))];
+  downloadBlob(new Blob(['﻿' + csv.join('\n')], { type: 'text/csv;charset=utf-8' }), `${T('csv.file', 'chi-tieu')}-${monthInput.value}.csv`);
 });
 
 monthInput.addEventListener('change', render);
