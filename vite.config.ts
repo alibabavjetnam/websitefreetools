@@ -5,7 +5,7 @@ import { resolve } from 'node:path';
 // Google Analytics (gtag.js): chèn vào <head> của mọi trang khi build (không chèn khi chạy dev).
 // Bỏ qua trang ẩn /zzz và trang khách xem menu /m/ (đường link menu chứa dữ liệu sau dấu #).
 const GA_ID = 'G-2RCGQ2LS9Y';
-const NO_ANALYTICS = ['/zzz/index.html', '/m/index.html'];
+const NO_ANALYTICS = ['/zzz/index.html', '/zzz2/index.html', '/m/index.html'];
 const analytics = (): Plugin => ({
   name: 'wft-google-analytics',
   apply: 'build',
@@ -48,6 +48,7 @@ export default defineConfig({
         privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
         // Trang ẩn, không có trong menu: truy cập trực tiếp tại /zzz
         zzz: resolve(__dirname, 'zzz/index.html'),
+        zzz2: resolve(__dirname, 'zzz2/index.html'),
         // Trang khách xem thực đơn khi quét mã QR (dữ liệu nằm sau dấu #)
         menu: resolve(__dirname, 'm/index.html'),
         ...toolPages,

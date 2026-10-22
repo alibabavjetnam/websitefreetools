@@ -19,6 +19,7 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - `src/lib/`: tiện ích và bộ mã hoá tự viết (QR, mã vạch, pptx, obfuscate...). `src/lib/cdn.ts` nạp thư viện từ CDN khi người dùng bấm xử lý
 - `src/google/`: đăng nhập Google + đồng bộ Google Sheets (Điểm danh, Nhật ký)
 - `src/stock/`: lõi phân tích cho trang ẩn `zzz/index.html` (4v2: nến Binance, backtest), `noindex`, không có trong menu
+- `zzz2/index.html` + `src/pages/zzz2.ts` + `src/stock2/`: phòng thử chiến lược (trang ẩn, `noindex`, không GA, không có trong menu). Engine thuần ở `src/stock2/core/engine.ts` (RR 1:1, có phí, vào lệnh ở giá mở nến kế tiếp, không nhìn trước), tải dữ liệu ở `src/stock2/data.ts`. Kết luận nghiên cứu: trên 6,8 năm BTC không có cấu hình nào cho lợi thế ổn định ngoài mẫu (AUC các chỉ báo 0,49 đến 0,52), tỷ lệ thắng 80% ở 1:1 không đạt được; đừng chỉnh tham số theo kết quả quá khứ
 - `m/index.html`: trang khách xem thực đơn khi quét QR (dữ liệu sau dấu `#`)
 - `public/language/{en,vi,ja,zh}.json`: từ điển đa ngôn ngữ
 
