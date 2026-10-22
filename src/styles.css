@@ -194,6 +194,16 @@ a {
   border-right: 1px solid var(--line);
 }
 
+/* Máy tính: menu trái không có thanh cuộn riêng, hiện đủ danh sách và cuộn cùng trang.
+   Trên điện thoại (<= 800px) menu vẫn là ngăn kéo cố định có cuộn riêng (xem bên dưới). */
+@media (min-width: 801px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    overflow-y: visible;
+  }
+}
+
 .side-search input {
   width: 100%;
   padding: 5px 12px;
