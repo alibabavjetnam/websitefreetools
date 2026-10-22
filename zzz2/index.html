@@ -45,6 +45,18 @@
           <div class="lab-actions"><button class="btn primary" type="submit" id="run">Tải dữ liệu và chạy thử</button><span id="status" class="lab-status">Chưa chạy.</span></div>
         </form>
 
+        <section class="rev" id="revBox">
+          <h2>Theo dõi: mua đáy 4h = lọc giá njs + thanh lý / funding (BTC)</h2>
+          <p class="hint" style="font-size:.85rem;color:#5b6779">Điểm vào là nến 4h tạo đáy thấp nhất 12 nến; cắt lỗ = đáy nến − 0,5 ATR, chốt lời 1 : 1, giữ tối đa 30 nến. Lọc bằng điểm njs (mô hình huấn luyện đến hết 2023, nửa trên) và z-score 30 ngày của thanh lý long / funding của ngày UTC đã đóng trước đó. Chỉ BTC (dữ liệu thanh lý, funding lấy từ kho dữ liệu công khai theo ngày). Kết quả nghiên cứu mẫu rất nhỏ, chưa phải bằng chứng.</p>
+          <div class="lab-actions"><button class="btn primary" type="button" id="runRev">Tải dữ liệu và quét tín hiệu</button><span id="revStatus" class="lab-status">Chưa chạy.</span></div>
+          <div id="revOut" hidden>
+            <p id="revNow" class="verdict" data-v="mid"></p>
+            <div class="table-wrap"><table class="lab-table" id="revRules"></table></div>
+            <h3 style="margin-top:16px">Tín hiệu gần nhất thoả ít nhất một điều kiện lọc</h3>
+            <div class="table-wrap"><table class="lab-table" id="revList"></table></div>
+          </div>
+        </section>
+
         <section id="verdict" class="verdict" hidden></section>
         <section id="cards" class="cards" hidden></section>
         <section id="njsPanel" hidden>

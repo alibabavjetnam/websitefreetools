@@ -5,10 +5,11 @@
 import { mountLayout } from '../layout';
 import '../stock2/zzz2.css';
 import {
-  DEFAULTS, makeContextFrom, run, summarize, type Bar, type Params, type Stats, type Trade,
+  DEFAULTS, makeContextFrom, resample, run, summarize, type Bar, type Params, type Stats, type Trade,
 } from '../stock2/core/engine';
 import { DataError, fetchHistory } from '../stock2/data';
 import { loadModel, runNjs, scoreBars, topNodes } from '../stock2/njsModel';
+import { currentSignal, loadDeriv, loadRevModel, RULES, scanBottoms, scoreRev, REV_WARMUP, type RevSignal, type RuleKey } from '../stock2/reversal';
 
 mountLayout();
 
@@ -156,6 +157,65 @@ $('form').addEventListener('submit', async (ev) => {
     status.textContent = e.message + (e.attempts?.length ? ` (${e.attempts.slice(0, 2).join('; ')})` : '');
   } finally {
     running = false;
+    btn.disabled = false;
+  }
+});
+
+// ---- Theo dõi: mua đáy 4h = lọc giá njs + thanh lý / funding (chỉ BTC) ----
+let revRunning = false;
+$('runRev').addEventListener('click', async () => {
+  if (revRunning) return;
+  revRunning = true;
+  const btn = $<HTMLButtonElement>('runRev'), st = $('revStatus');
+  btn.disabled = true;
+  try {
+    const H4 = 14_400_000;
+    st.textContent = 'Đang tải mô hình và dữ liệu thanh lý, funding…';
+    const [model, deriv] = await Promise.all([loadRevModel(), loadDeriv()]);
+    const from = model.trainedUntil + 1;
+    const need = Math.ceil((Date.now() - from) / H4) + REV_WARMUP + 300;
+    const b4 = (await fetchHistory('BTCUSDT', '4h', need, (d, t) => { st.textContent = `Đang tải nến 4h: ${d}/${t}`; })).filter((x) => x.t + H4 <= Date.now());
+    if (b4.length < REV_WARMUP + 100) throw new DataError('Dữ liệu 4h quá ngắn để tính node njs.');
+    const ctx = makeContextFrom(b4, H4, b4, resample(b4, 86_400_000));
+    const p = await scoreRev(ctx, model, (d, t) => { st.textContent = `Đang tính node njs: ${d}/${t}`; });
+    const fee = Math.max(0, num('fee', 0.1)), slip = Math.max(0, num('slip', 0.02));
+    const sigs = scanBottoms(ctx, p, model, deriv, { feePct: fee, slipPct: slip, from });
+    const now = currentSignal(ctx, p, model, deriv);
+
+    const fmtZ = (z: number | null) => (z === null ? '–' : z.toFixed(1));
+    const active = RULES.filter((r) => r.key !== 'all' && now.flags[r.key]);
+    const nowEl = $('revNow');
+    nowEl.dataset.v = active.length ? 'ok' : 'mid';
+    nowEl.innerHTML = `Nến 4h vừa đóng (${fmtTime(now.t)} UTC): ${now.isBottom ? 'là <b>đáy 12 nến</b>' : 'không phải đáy 12 nến'}; điểm njs ${(now.pNjs * 100).toFixed(1)}% (ngưỡng ${(model.threshold * 100).toFixed(1)}%); thanh lý long z = ${fmtZ(now.zLiq)}, funding z = ${fmtZ(now.zFund)}. `
+      + (active.length ? `<b>Thoả:</b> ${active.map((r) => r.label).join('; ')}. Vào lệnh ở giá mở nến kế tiếp, cắt lỗ ≈ ${price(now.sl)}, chốt lời 1 : 1.` : 'Chưa thoả điều kiện lọc nào.');
+
+    const stat = (k: RuleKey, rows: RevSignal[]) => {
+      const done = rows.filter((x) => x.flags[k] && x.netR !== null);
+      const open = rows.filter((x) => x.flags[k] && x.netR === null).length;
+      const n = done.length, mean = n ? done.reduce((a, x) => a + (x.netR as number), 0) / n : 0;
+      let ci = 0;
+      if (n > 1) ci = (1.96 * Math.sqrt(done.reduce((a, x) => a + ((x.netR as number) - mean) ** 2, 0) / (n - 1))) / Math.sqrt(n);
+      const wins = done.filter((x) => x.result === 'win').length;
+      return { n, open, mean, ci, win: n ? (100 * wins) / n : 0 };
+    };
+    const years = [...new Set(sigs.map((x) => new Date(x.t).getUTCFullYear()))].sort();
+    $('revRules').innerHTML = `<thead><tr><th>Điều kiện</th><th>Lệnh đã xong</th><th>Đang mở</th><th>Thắng %</th><th>Lãi sau phí (R)</th>${years.map((y) => `<th>${y} (n : R)</th>`).join('')}</tr></thead><tbody>${RULES.map((r) => {
+      const s0 = stat(r.key, sigs);
+      return `<tr><td>${r.label}</td><td>${s0.n}</td><td>${s0.open}</td><td>${s0.win.toFixed(0)}</td><td class="${sign(s0.mean)}">${s0.mean >= 0 ? '+' : ''}${s0.mean.toFixed(3)} ± ${s0.ci.toFixed(3)}</td>${years.map((y) => {
+        const sy = stat(r.key, sigs.filter((x) => new Date(x.t).getUTCFullYear() === y));
+        return `<td class="${sign(sy.mean)}">${sy.n} : ${sy.n ? (sy.mean >= 0 ? '+' : '') + sy.mean.toFixed(2) : '–'}</td>`;
+      }).join('')}</tr>`;
+    }).join('')}</tbody>`;
+    const list = sigs.filter((x) => x.flags.liq25 || x.flags.liq15njs || x.flags.fundnjs).slice(-20).reverse();
+    $('revList').innerHTML = `<thead><tr><th>Nến đáy (UTC)</th><th>Giá vào</th><th>Cắt lỗ</th><th>Điểm njs</th><th>Thanh lý z</th><th>Funding z</th><th>Kết quả</th><th>R sau phí</th></tr></thead><tbody>${list.length ? list.map((x) =>
+      `<tr><td>${fmtTime(x.t)}</td><td>${price(x.entry)}</td><td>${price(x.sl)}</td><td>${(x.pNjs * 100).toFixed(1)}%</td><td>${fmtZ(x.zLiq)}</td><td>${fmtZ(x.zFund)}</td><td>${x.result === 'win' ? 'Thắng' : x.result === 'loss' ? 'Thua' : x.result === 'timeout' ? 'Hết hạn' : 'Đang mở'}</td><td class="${sign(x.netR ?? 0)}">${x.netR === null ? '–' : x.netR.toFixed(2)}</td></tr>`).join('') : '<tr><td colspan="8">Chưa có tín hiệu.</td></tr>'}</tbody>`;
+    $('revOut').hidden = false;
+    st.textContent = `Xong: ${b4.length} nến 4h, ${sigs.length} nến đáy kể từ ${fmtDate(from)} (ngoài mẫu).`;
+  } catch (err) {
+    const e = err as DataError;
+    st.textContent = e.message + (e.attempts?.length ? ` (${e.attempts.slice(0, 2).join('; ')})` : '');
+  } finally {
+    revRunning = false;
     btn.disabled = false;
   }
 });
