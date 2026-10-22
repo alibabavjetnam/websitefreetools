@@ -253,6 +253,7 @@ function renderTrend(el: HTMLElement, title: string, t: TrendResult) {
   el.innerHTML = `
     <h3>${esc(title)}</h3>
     <div class="trend-value" data-trend="${t.trend}">${TREND_LABEL[t.trend]}</div>
+    ${t.reversing ? `<div class="trend-note">Đang chuyển sang ${t.reversing === 'UP' ? 'tăng' : 'giảm'}: đủ ${t.reversing === 'UP' ? t.upScore : t.downScore}/${t.maxScore} điểm nhưng SMA100 chưa ${t.reversing === 'UP' ? 'lên trên' : 'xuống dưới'} SMA200, chưa tính là có xu hướng.</div>` : ''}
     <div class="score" title="Tăng ${t.upScore} · Giảm ${t.downScore} / ${t.maxScore} điểm">${segs.join('')}</div>
     <details>
       <summary>Tăng ${t.upScore} · Giảm ${t.downScore} trên ${t.maxScore} điểm</summary>

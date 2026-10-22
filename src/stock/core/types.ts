@@ -44,6 +44,8 @@ export interface TrendCriterion {
 
 export interface TrendResult {
   trend: Trend;
+  /** Phe đã đủ điểm nhưng SMA100 chưa xác nhận so với SMA200: đang chuyển pha, chưa tính là có xu hướng */
+  reversing?: 'UP' | 'DOWN';
   upScore: number;
   downScore: number;
   maxScore: number;

@@ -8,8 +8,10 @@ import type { Series, TrendCriterion, TrendResult } from './types';
  *       SMA100 > SMA200 → +1 điểm tăng,  SMA100 < SMA200 → +1 điểm giảm
  *  2. Kênh giá (hồi quy 50 nến, R² ≥ 0.5) .................. 1 điểm: xác nhận giá đi có trật tự
  *  3. Độ dốc SMA50 & SMA200 (so với 10 nến trước) ........... 1 điểm: xác nhận đà của MA
- * Có xu hướng khi một phe đạt từ TREND_MIN_SCORE điểm (3/4). Tổng chỉ có 4 điểm nên hai phe
- * không thể cùng đạt ngưỡng.
+ * Có xu hướng khi một phe đạt từ TREND_MIN_SCORE điểm (3/4) VÀ cặp dài hạn SMA100/SMA200 đồng thuận với phe đó
+ * (tăng: SMA100 > SMA200, giảm: SMA100 < SMA200). Nếu đủ điểm mà cặp dài hạn chưa đồng thuận
+ * (ví dụ vừa đảo chiều: SMA50 đã xuống dưới SMA100 nhưng SMA100 vẫn trên SMA200) thì coi là đang chuyển pha:
+ * trend = SIDEWAYS và `reversing` cho biết hướng đang chuyển. Tổng chỉ có 4 điểm nên hai phe không thể cùng đạt ngưỡng.
  */
 export const TREND_WEIGHTS = { maOrder: 2, trendline: 1, maSlope: 1 } as const;
 
@@ -70,11 +72,18 @@ export function trendAt(s: Series, i: number): TrendResult {
   const maxScore = criteria.reduce((a, b) => a + b.weight, 0);
   const upScore = criteria.reduce((a, b) => a + b.up, 0);
   const downScore = criteria.reduce((a, b) => a + b.down, 0);
+  const longPair = m100 !== null && m200 !== null ? Math.sign(m100 - m200) : 0; // chiều của cặp dài hạn SMA100/SMA200
   let trend: TrendResult['trend'] = 'SIDEWAYS';
-  if (upScore >= TREND_MIN_SCORE) trend = 'UP';
-  else if (downScore >= TREND_MIN_SCORE) trend = 'DOWN';
+  let reversing: TrendResult['reversing'];
+  if (upScore >= TREND_MIN_SCORE) {
+    if (longPair === 1) trend = 'UP';
+    else reversing = 'UP';
+  } else if (downScore >= TREND_MIN_SCORE) {
+    if (longPair === -1) trend = 'DOWN';
+    else reversing = 'DOWN';
+  }
 
-  return { trend, upScore, downScore, maxScore, criteria };
+  return { trend, reversing, upScore, downScore, maxScore, criteria };
 }
 
 export const TREND_LABEL: Record<TrendResult['trend'], string> = {
