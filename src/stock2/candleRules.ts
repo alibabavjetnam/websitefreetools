@@ -86,7 +86,10 @@ export function passes(rule: CandleRule, s: { side: 1 | -1; pattern: PatternKey;
 }
 
 /** Quét toàn bộ nến ngày đã đóng; trả về tín hiệu và kết quả (SL/TP theo R×tpR, phí 0,24%). */
-export function scanCandles(bars: Bar[], rule: CandleRule = 'R3', tpR = 1, confirmN = 3): CandleSignal[] {
+export interface ScanOpts { slAtr?: number; tpPct?: number; hold?: number }
+/** Mặc định: SL = râu mẫu hình ± 0,25 ATR, TP = R×tpR. Với `tpPct` (vd 0.2): SL đặt đúng râu mẫu hình khi slAtr=0, TP = giá vào ± tpPct (netR khi đó tính theo R của lệnh đó). */
+export function scanCandles(bars: Bar[], rule: CandleRule = 'R3', tpR = 1, confirmN = 3, opts: ScanOpts = {}): CandleSignal[] {
+  const slAtr = opts.slAtr ?? 0.25, hold = opts.hold ?? CANDLE_HOLD;
   const ind = indicators(bars), n = bars.length, out: CandleSignal[] = [];
   const lead = confirmN; // confirmN nến xác nhận sau mẫu hình, rồi mới vào ở giá mở nến kế tiếp
   for (let i = 210; i < n - 1 - lead; i++) {
@@ -112,7 +115,7 @@ export function scanCandles(bars: Bar[], rule: CandleRule = 'R3', tpR = 1, confi
         const k = i + lead, e = bars[k + 1].o;
         let lo = Infinity, hi = -Infinity;
         for (let k = i - pl + 1; k <= i; k++) { lo = Math.min(lo, bars[k].l); hi = Math.max(hi, bars[k].h); }
-        const sl = side > 0 ? lo - 0.25 * ind.atr[i] : hi + 0.25 * ind.atr[i], risk = side > 0 ? e - sl : sl - e;
+        const sl = side > 0 ? lo - slAtr * ind.atr[i] : hi + slAtr * ind.atr[i], risk = side > 0 ? e - sl : sl - e;
         if (!(risk > 0)) continue;
         if (confirmN > 0) {
           // nến xác nhận đầu và cuối phải cùng chiều đảo chiều (tăng khi mua, giảm khi bán); không nến nào chạm cắt lỗ
@@ -122,17 +125,18 @@ export function scanCandles(bars: Bar[], rule: CandleRule = 'R3', tpR = 1, confi
           for (let q = i + 1; q <= k; q++) if (side > 0 ? bars[q].l <= sl : bars[q].h >= sl) hit = true;
           if (hit) continue;
         }
-        const sig: CandleSignal = { i, t: bars[i].t, side, pattern, volRatio, riskPct: (100 * risk) / e, entry: e, sl, tp: e + side * tpR * risk, result: 'open', netR: null };
+        const sig: CandleSignal = { i, t: bars[i].t, side, pattern, volRatio, riskPct: (100 * risk) / e, entry: e, sl, tp: opts.tpPct !== undefined ? e * (1 + side * opts.tpPct) : e + side * tpR * risk, result: 'open', netR: null };
         if (!passes(rule, sig)) continue;
         const cost = (FEE * e) / risk;
-        for (let j = k + 1; j <= Math.min(n - 1, k + CANDLE_HOLD); j++) {
+        const tpRr = opts.tpPct !== undefined ? (e * opts.tpPct) / risk : tpR;
+        for (let j = k + 1; j <= Math.min(n - 1, k + hold); j++) {
           const hitSL = side > 0 ? bars[j].l <= sl : bars[j].h >= sl, hitTP = side > 0 ? bars[j].h >= sig.tp : bars[j].l <= sig.tp;
           if (hitSL) { sig.result = 'loss'; sig.netR = -1 - cost; break; }
-          if (hitTP) { sig.result = 'win'; sig.netR = tpR - cost; break; }
+          if (hitTP) { sig.result = 'win'; sig.netR = tpRr - cost; break; }
         }
-        if (sig.result === 'open' && k + CANDLE_HOLD <= n - 1) {
+        if (sig.result === 'open' && k + hold <= n - 1) {
           sig.result = 'timeout';
-          sig.netR = Math.max(-1, Math.min(tpR, (side * (bars[k + CANDLE_HOLD].c - e)) / risk)) - cost;
+          sig.netR = Math.max(-1, Math.min(tpRr, (side * (bars[k + hold].c - e)) / risk)) - cost;
         }
         out.push(sig);
       }
