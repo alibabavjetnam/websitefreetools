@@ -25,7 +25,7 @@ export interface Frame {
 
 const NaNs = (n: number) => new Float64Array(n).fill(NaN);
 
-function emaArr(x: Float64Array, p: number): Float64Array {
+export function emaArr(x: Float64Array, p: number): Float64Array {
   const out = NaNs(x.length);
   if (x.length < p) return out;
   const k = 2 / (p + 1);
@@ -37,7 +37,7 @@ function emaArr(x: Float64Array, p: number): Float64Array {
   return out;
 }
 
-function wilder(x: Float64Array, p: number, start: number): Float64Array {
+export function wilder(x: Float64Array, p: number, start: number): Float64Array {
   const out = NaNs(x.length);
   if (x.length < start + p) return out;
   let s = 0;
@@ -187,7 +187,7 @@ export function summarize(tr: Trade[]): Stats {
 }
 
 export interface Context {
-  f: Frame; h4: Frame; bias: Bias;
+  f: Frame; h4: Frame; d1: Frame; bias: Bias;
   h4Idx: Int32Array; // chỉ số nến H4 đã đóng gần nhất tại mỗi nến giao dịch
   dIdx: Int32Array; // chỉ số nến D1 đã đóng gần nhất
 }
@@ -211,7 +211,7 @@ export function makeContextFrom(tfBars: Bar[], tfMs: number, h4Bars: Bar[], dBar
   const h4 = makeFrame(h4Bars, h4Ms);
   const bias = dailyBias(dBars);
   return {
-    f, h4, bias,
+    f, h4, d1: makeFrame(dBars, 86_400_000), bias,
     h4Idx: lastClosedIndex(0, tfBars, tfMs, h4Bars.map((b) => b.t), h4Ms),
     dIdx: lastClosedIndex(0, tfBars, tfMs, bias.t, 86_400_000),
   };

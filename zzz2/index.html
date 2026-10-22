@@ -28,7 +28,7 @@
           <label>Phí mỗi chiều (%)<input id="fee" type="number" step="0.01" min="0" value="0.10" /></label>
           <label>Trượt giá mỗi chiều (%)<input id="slip" type="number" step="0.01" min="0" value="0.02" /></label>
           <label>Kiểu tín hiệu
-            <select id="mode"><option value="pullback">Nhịp điều chỉnh (BB/RSI + phá cấu trúc)</option><option value="breakout">Theo đà (phá đỉnh/đáy)</option></select>
+            <select id="mode"><option value="pullback">Nhịp điều chỉnh (BB/RSI + phá cấu trúc)</option><option value="breakout">Theo đà (phá đỉnh/đáy)</option><option value="njs">Mô hình 1024 node (njs1 … njs1024)</option></select>
           </label>
           <label>Phá cấu trúc N nến<input id="breakN" type="number" min="2" max="100" value="4" /></label>
           <label>Cắt lỗ theo ATR (0 = theo râu nến)<input id="atrStop" type="number" step="0.5" min="0" max="6" value="0" /></label>
@@ -37,6 +37,7 @@
             <select id="h4"><option value="notAgainst">Không đi ngược</option><option value="agree">Phải cùng chiều</option><option value="off">Tắt</option></select>
           </label>
           <label>ADX tối đa cho kênh ngược (0 = tắt)<input id="adx" type="number" min="0" max="60" value="28" /></label>
+          <label>Ngưỡng tin cậy mô hình njs (|p − 0,5| ≥)<input id="delta" type="number" step="0.01" min="0.01" max="0.4" value="0.05" /></label>
           <label class="chk"><input id="needBB" type="checkbox" checked />Cần chạm Bollinger</label>
           <label class="chk"><input id="needRSI" type="checkbox" />Cần RSI quá bán/mua</label>
           <label class="chk"><input id="needEma" type="checkbox" checked />Đóng cửa qua EMA20</label>
@@ -46,6 +47,13 @@
 
         <section id="verdict" class="verdict" hidden></section>
         <section id="cards" class="cards" hidden></section>
+        <section id="njsPanel" hidden>
+          <h2>Mô hình njs: node có trọng số ảnh hưởng lớn nhất</h2>
+          <div class="table-wrap"><table class="lab-table" id="njsTop"></table></div>
+          <h2 style="margin-top:16px">Kiểm tra từng năm (mô hình huấn luyện đến hết 2023)</h2>
+          <div class="table-wrap"><table class="lab-table" id="njsWf"></table></div>
+          <p class="hint" id="njsNote" style="font-size:.85rem;color:#5b6779;margin-top:8px"></p>
+        </section>
         <section id="byYear" hidden>
           <h2>Theo năm</h2>
           <div class="table-wrap"><table class="lab-table" id="yearTable"></table></div>
@@ -59,6 +67,7 @@
           <summary>Đọc kết quả thế nào, vì sao khó đạt tỷ lệ thắng cao</summary>
           <p>Với cắt lỗ : chốt lời = 1 : 1, một chiến lược chỉ có lãi khi tỷ lệ thắng vượt mức <b>hòa vốn</b> (50% cộng phần phí). Tỷ lệ thắng một mình không nói lên điều gì: chốt lời nhỏ, cắt lỗ lớn sẽ cho tỷ lệ thắng rất cao nhưng vẫn lỗ tiền.</p>
           <p>Trên 6,8 năm dữ liệu BTC (238 nghìn nến 15m, 2020 đến 10/2026), mọi chỉ báo thử nghiệm (RSI, Bollinger, dòng tiền taker, ADX, xu hướng D1/H4...) chỉ cho độ chính xác dự báo gần 50% (AUC 0,49 đến 0,52), kể cả khi dùng mô hình học máy. Tỷ lệ thắng 80% ở tỉ lệ 1 : 1 không đạt được nếu không nhìn trước tương lai hoặc chọn cấu hình theo kết quả quá khứ.</p>
+          <p><b>Node thông tin (njs).</b> Mỗi node là một loại thông tin về giao dịch gồm một mảng đặc trưng, ví dụ njs1 là 16 phép so sánh giữa mở/cao/thấp/đóng của nến hiện tại với nến liền trước, njs65 là khoảng cách giá tới EMA. Có 32 họ × 32 biến thể = 1024 node (3488 đặc trưng). Trọng số của chúng được học trên dữ liệu BTC 15m từ 2020 đến 2023; từ 2024 trở đi là ngoài mẫu. Trên giai đoạn ngoài mẫu mô hình có độ chính xác chỉ nhỉnh hơn đoán ngẫu nhiên (AUC khoảng 0,53 đến 0,55), lợi thế trước phí rất nhỏ và bị phí xoá hết.</p>
           <p>Cách dùng đúng: chỉnh tham số, so sánh cột <b>huấn luyện</b> với <b>ngoài mẫu</b>. Cấu hình chỉ tốt ở giai đoạn huấn luyện mà xấu đi ở ngoài mẫu là quá khớp. Công cụ này hỗ trợ nghiên cứu, không phải lời khuyên đầu tư.</p>
         </details>
       </div>

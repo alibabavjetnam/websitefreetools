@@ -8,6 +8,7 @@ import {
   DEFAULTS, makeContextFrom, run, summarize, type Bar, type Params, type Stats, type Trade,
 } from '../stock2/core/engine';
 import { DataError, fetchHistory } from '../stock2/data';
+import { loadModel, runNjs, scoreBars, topNodes } from '../stock2/njsModel';
 
 mountLayout();
 
@@ -80,11 +81,12 @@ $('form').addEventListener('submit', async (ev) => {
   const status = $('status');
   try {
     const symbol = $<HTMLInputElement>('symbol').value.trim().toUpperCase() || 'BTCUSDT';
-    const tf = $<HTMLSelectElement>('tf').value;
+    const njs = $<HTMLSelectElement>('mode').value === 'njs';
+    const tf = njs ? '15m' : $<HTMLSelectElement>('tf').value; // mô hình njs được huấn luyện trên khung 15 phút
     const ms = TF_MS[tf];
     const days = Math.min(1500, Math.max(300, Math.round(num('days', 1000))));
     // 15 phút: giới hạn số nến tải (mỗi 1000 nến là một lần gọi), phần D1/H4 vẫn tải đủ để chấm xu hướng
-    const tfCount = Math.min(Math.round((days * 86_400_000) / ms), tf === '15m' ? 30_000 : 40_000);
+    const tfCount = Math.min(Math.round((days * 86_400_000) / ms), njs ? 60_000 : tf === '15m' ? 30_000 : 40_000);
     const closed = (b: Bar[], m: number) => b.filter((x) => x.t + m <= Date.now());
 
     status.textContent = 'Đang tải D1…';
@@ -99,12 +101,30 @@ $('form').addEventListener('submit', async (ev) => {
     await new Promise((r) => setTimeout(r, 30)); // nhường giao diện cập nhật trạng thái
     const params = readParams();
     const ctx = makeContextFrom(tfBars, ms, h4, d1);
-    const trades = run(ctx, params);
+    let trades: Trade[];
+    let modelCut = 0;
+    $('njsPanel').hidden = true;
+    if (njs) {
+      status.textContent = 'Đang tải mô hình njs…';
+      const model = await loadModel();
+      modelCut = model.trainedUntil;
+      const logit = await scoreBars(ctx, model, (d, t) => { status.textContent = `Đang tính node njs: ${d}/${t}`; });
+      trades = runNjs(ctx, logit, model, { delta: Math.max(0.01, num('delta', 0.05)), feePct: params.feePct, slipPct: params.slipPct, from: 0 });
+      $('njsTop').innerHTML = `<thead><tr><th>Node</th><th>Họ</th><th>Biến thể</th><th>Trọng số ảnh hưởng</th></tr></thead><tbody>${topNodes(model, 20).map((n) =>
+        `<tr><td>${n.name}</td><td>${n.familyName}</td><td>${n.variant + 1}/32</td><td>${(n.weight * 100).toFixed(2)}%</td></tr>`).join('')}</tbody>`;
+      $('njsWf').innerHTML = `<thead><tr><th>Năm</th><th>AUC</th><th>Số tín hiệu</th><th>Thắng %</th><th>Lãi trước phí (R)</th><th>Phí (R)</th><th>Lãi sau phí (R)</th></tr></thead><tbody>${model.walkForward.map((w) =>
+        `<tr><td>${w.year}</td><td>${w.auc.toFixed(3)}</td><td>${w.n}</td><td>${w.win.toFixed(1)}</td><td>${w.gross.toFixed(3)}</td><td>${w.cost.toFixed(3)}</td><td class="${sign(w.net)}">${w.net.toFixed(3)}</td></tr>`).join('')}</tbody>`;
+      $('njsNote').textContent = `Mô hình: cắt lỗ = chốt lời = ${model.K} × ATR, giữ tối đa ${model.H} nến 15m; huấn luyện trên ${model.trainRows} mẫu đến ${fmtDate(model.trainedUntil)}. Bảng trên tính trên từng tín hiệu độc lập; kết quả giả lập ở trên chỉ giữ một lệnh tại một thời điểm.`;
+      $('njsPanel').hidden = false;
+    } else {
+      trades = run(ctx, params);
+    }
 
     const oos = Math.min(70, Math.max(10, Math.round(num('oos', 40)))) / 100;
     const tStart = ctx.f.bars[Math.min(220, ctx.f.bars.length - 1)].t;
     const tEnd = ctx.f.bars[ctx.f.bars.length - 1].t;
-    const split = tStart + (tEnd - tStart) * (1 - oos);
+    // Với mô hình njs, mọi thứ sau thời điểm huấn luyện là ngoài mẫu
+    const split = njs ? Math.min(Math.max(modelCut, tStart), tEnd) : tStart + (tEnd - tStart) * (1 - oos);
     const tr = trades.filter((t) => t.t < split), te = trades.filter((t) => t.t >= split);
     const eAll = evaluate(trades), eTr = evaluate(tr), eTe = evaluate(te);
 
