@@ -165,6 +165,7 @@ export class PriceChart {
           },
         lineSeries('EMA20', s.ema20, '#2f9e9e'),
         lineSeries('SMA50', s.sma50, '#d4a017'),
+        lineSeries('SMA100', s.sma100, '#e07a3f'),
         lineSeries('SMA200', s.sma200, '#6b5bd2', { lineStyle: { width: 1.8, color: '#6b5bd2' } }),
         lineSeries('Bollinger', s.bbUpper, muted, { lineStyle: { width: 1, color: muted, type: 'dashed' } }),
         lineSeries('Bollinger', s.bbLower, muted, { lineStyle: { width: 1, color: muted, type: 'dashed' } }),

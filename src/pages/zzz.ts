@@ -225,8 +225,8 @@ function analyze(withBacktest: boolean) {
   const tf = buildSeries(state.tf);
   const d1 = buildSeries(state.d1.length ? state.d1 : aggregateToDaily(state.tf));
   const i = tf.close.length - 1;
-  const d1Trend = trendAt(d1, d1.close.length - 1, state.settings);
-  const tfTrend = trendAt(tf, i, state.settings);
+  const d1Trend = trendAt(d1, d1.close.length - 1);
+  const tfTrend = trendAt(tf, i);
   const res = evaluateChannels({ d1: d1Trend, tf: tfTrend, series: tf, i, cfg: state.settings });
   lastSeries = { tf, d1 };
   lastChannels = [res.with, res.counter];
@@ -256,7 +256,7 @@ function renderTrend(el: HTMLElement, title: string, t: TrendResult) {
     <div class="score" title="Tăng ${t.upScore} · Giảm ${t.downScore} / ${t.maxScore} điểm">${segs.join('')}</div>
     <details>
       <summary>Tăng ${t.upScore} · Giảm ${t.downScore} trên ${t.maxScore} điểm</summary>
-      <ul>${t.criteria.map((c) => `<li><b>${esc(c.label)}</b> (${c.weight}đ, ${voteText(c.vote)}): ${esc(c.note)}</li>`).join('')}</ul>
+      <ul>${t.criteria.map((c) => `<li><b>${esc(c.label)}</b> (${c.weight}đ, ${c.weight > 1 && c.vote !== null ? `tăng ${c.up} · giảm ${c.down}` : voteText(c.vote)}): ${esc(c.note)}</li>`).join('')}</ul>
     </details>`;
 }
 
@@ -384,7 +384,6 @@ const SETTING_FIELDS: { key: keyof Settings; label: string; step: number; min: n
   { key: 'pivotRight', label: 'Độ rộng đáy/đỉnh, bên phải', step: 1, min: 1, max: 20 },
   { key: 'rsiLow', label: 'Ngưỡng RSI quá bán', step: 1, min: 5, max: 50 },
   { key: 'rsiHigh', label: 'Ngưỡng RSI quá mua', step: 1, min: 50, max: 95 },
-  { key: 'trendMinScore', label: 'Điểm tối thiểu công nhận xu hướng (trên 7)', step: 1, min: 2, max: 7 },
 ];
 
 function renderSettings() {

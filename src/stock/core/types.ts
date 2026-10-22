@@ -22,6 +22,7 @@ export interface Series {
   close: number[];
   ema20: (number | null)[];
   sma50: (number | null)[];
+  sma100: (number | null)[];
   sma200: (number | null)[];
   rsi: (number | null)[];
   bbUpper: (number | null)[];
@@ -35,6 +36,9 @@ export interface TrendCriterion {
   weight: number;
   /** +1 ủng hộ tăng, -1 ủng hộ giảm, 0 trung tính, null = thiếu dữ liệu */
   vote: 1 | -1 | 0 | null;
+  /** Số điểm tiêu chí này cộng cho phe tăng / phe giảm (tối đa `weight` tổng cộng) */
+  up: number;
+  down: number;
   note: string;
 }
 
@@ -83,7 +87,6 @@ export interface Settings {
   pivotRight: number;
   rsiLow: number;
   rsiHigh: number;
-  trendMinScore: number; // điểm tối thiểu (trên 7) để công nhận xu hướng
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -95,7 +98,6 @@ export const DEFAULT_SETTINGS: Settings = {
   pivotRight: 2,
   rsiLow: 30,
   rsiHigh: 70,
-  trendMinScore: 4,
 };
 
 export interface Trade {

@@ -145,6 +145,7 @@ export function buildSeries(candles: Candle[]): Series {
     close,
     ema20: ema(close, 20),
     sma50: sma(close, 50),
+    sma100: sma(close, 100),
     sma200: sma(close, 200),
     rsi: rsi(close, 14),
     bbUpper: bb.upper,

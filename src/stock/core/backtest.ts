@@ -16,7 +16,7 @@ const DAY = 86_400_000;
  */
 export function runBacktest(tf: Series, d1: Series, tfMs: number, cfg: Settings, warmup = 210): BacktestResult {
   const n = tf.close.length;
-  const d1Trends: TrendResult[] = d1.close.map((_, k) => trendAt(d1, k, cfg));
+  const d1Trends: TrendResult[] = d1.close.map((_, k) => trendAt(d1, k));
   const trades: Trade[] = [];
   const busyUntil: Record<ChannelId, number> = { with: -1, counter: -1 };
   const usedAnchor: Record<ChannelId, Set<number>> = { with: new Set(), counter: new Set() };
@@ -29,7 +29,7 @@ export function runBacktest(tf: Series, d1: Series, tfMs: number, cfg: Settings,
 
     const d1t = d1Trends[dPtr];
     if (d1t.trend === 'SIDEWAYS') continue; // cả 2 kênh đều cần D1 có xu hướng
-    const tft = trendAt(tf, i, cfg);
+    const tft = trendAt(tf, i);
     const res = evaluateChannels({ d1: d1t, tf: tft, series: tf, i, cfg });
 
     for (const ch of [res.with, res.counter]) {
