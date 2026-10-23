@@ -20,11 +20,11 @@ const MAX_ITEMS = 300;
 /* ---------- Ngôn ngữ trang khách xem menu ----------
  * Trang /m/ không nạp từ điển của site (khách chỉ quét QR), nên chuỗi nằm sẵn ở đây.
  * Ngôn ngữ: theo trang công cụ nếu có (__WFT_LANG__), nếu không thì theo ngôn ngữ trình duyệt của khách. */
-export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es' | 'de' | 'ru';
+export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es' | 'de' | 'ru' | 'fr' | 'pt' | 'it' | 'tr' | 'nl';
 export function menuLang(): MenuLang {
   const w = window as unknown as { __WFT_LANG__?: string };
   const raw = (w.__WFT_LANG__ || (typeof navigator !== 'undefined' ? navigator.language : '') || 'en').slice(0, 2).toLowerCase();
-  return raw === 'vi' || raw === 'ja' || raw === 'zh' || raw === 'es' || raw === 'de' || raw === 'ru' ? raw : 'en';
+  return ['vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl'].includes(raw) ? (raw as MenuLang) : 'en';
 }
 const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
   vi: {
@@ -69,6 +69,41 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
     invalid: 'Данные меню недействительны.', tooLong: 'Ссылка на меню слишком длинная.',
     oldBrowser: 'Этот браузер слишком старый, чтобы открыть меню. Обновите браузер.', badLink: 'Ссылка на меню неверна.',
   },
+  fr: {
+    shop: 'Nom de l’établissement', cat: 'Plats', title: 'Carte', loading: 'Ouverture de la carte…', credit: 'Créez gratuitement une carte QR sur',
+    noMenu: 'Ce lien ne contient pas de carte. Scannez à nouveau le code QR de l’établissement.',
+    openFail: 'Impossible d’ouvrir la carte :', rescan: 'Scannez à nouveau le code QR de l’établissement.',
+    invalid: 'Les données de la carte ne sont pas valides.', tooLong: 'Le lien de la carte est trop long.',
+    oldBrowser: 'Ce navigateur est trop ancien pour ouvrir la carte. Mettez-le à jour.', badLink: 'Le lien de la carte n’est pas correct.',
+  },
+  pt: {
+    shop: 'Nome do estabelecimento', cat: 'Pratos', title: 'Cardápio', loading: 'Abrindo o cardápio…', credit: 'Crie um cardápio QR grátis em',
+    noMenu: 'Este link não tem cardápio. Escaneie novamente o QR code do estabelecimento.',
+    openFail: 'Não foi possível abrir o cardápio:', rescan: 'Escaneie novamente o QR code do estabelecimento.',
+    invalid: 'Os dados do cardápio não são válidos.', tooLong: 'O link do cardápio é longo demais.',
+    oldBrowser: 'Este navegador é antigo demais para abrir o cardápio. Atualize o navegador.', badLink: 'O link do cardápio não está correto.',
+  },
+  it: {
+    shop: 'Nome del locale', cat: 'Piatti', title: 'Menu', loading: 'Apertura del menu…', credit: 'Crea gratis un menu QR su',
+    noMenu: 'Questo link non contiene un menu. Scansiona di nuovo il codice QR del locale.',
+    openFail: 'Impossibile aprire il menu:', rescan: 'Scansiona di nuovo il codice QR del locale.',
+    invalid: 'I dati del menu non sono validi.', tooLong: 'Il link del menu è troppo lungo.',
+    oldBrowser: 'Questo browser è troppo vecchio per aprire il menu. Aggiornalo.', badLink: 'Il link del menu non è corretto.',
+  },
+  tr: {
+    shop: 'Mekân adı', cat: 'Yemekler', title: 'Menü', loading: 'Menü açılıyor…', credit: 'Ücretsiz QR menü oluşturun:',
+    noMenu: 'Bu bağlantıda menü yok. Mekânın QR kodunu yeniden okutun.',
+    openFail: 'Menü açılamadı:', rescan: 'Mekânın QR kodunu yeniden okutun.',
+    invalid: 'Menü verisi geçerli değil.', tooLong: 'Menü bağlantısı çok uzun.',
+    oldBrowser: 'Bu tarayıcı menüyü açmak için çok eski. Tarayıcınızı güncelleyin.', badLink: 'Menü bağlantısı doğru değil.',
+  },
+  nl: {
+    shop: 'Naam van de zaak', cat: 'Gerechten', title: 'Menukaart', loading: 'Menukaart openen…', credit: 'Maak gratis een QR-menukaart op',
+    noMenu: 'Deze link bevat geen menukaart. Scan de QR-code van de zaak opnieuw.',
+    openFail: 'Kon de menukaart niet openen:', rescan: 'Scan de QR-code van de zaak opnieuw.',
+    invalid: 'De gegevens van de menukaart zijn ongeldig.', tooLong: 'De link naar de menukaart is te lang.',
+    oldBrowser: 'Deze browser is te oud om de menukaart te openen. Werk de browser bij.', badLink: 'De link naar de menukaart is niet correct.',
+  },
   zh: {
     shop: '店名', cat: '菜品', title: '菜单', loading: '正在打开菜单…', credit: '免费制作二维码菜单：',
     noMenu: '此链接中没有菜单，请重新扫描店铺的二维码。',
@@ -78,7 +113,7 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
   },
 };
 export const menuText = (key: string): string => MENU_TEXT[menuLang()][key] ?? MENU_TEXT.vi[key] ?? key;
-const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU' };
+const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL' };
 
 /* ---------- Dạng gọn để link ngắn: mảng thay cho object ---------- */
 type Compact = [string, string, string, string, [string, [string, number, string][]][]];

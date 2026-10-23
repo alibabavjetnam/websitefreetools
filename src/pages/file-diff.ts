@@ -7,7 +7,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'file-diff' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL' } as Record<string, string>)[currentLang()] || 'en-US';
 const nf = (n: number) => n.toLocaleString(LOCALE);
 
 const CONTEXT = 3;

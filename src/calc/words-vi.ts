@@ -291,6 +291,160 @@ export function numberToRussian(value: number): string {
   return parts.join(' ');
 }
 
+// ---------- Français ----------
+const FR_U = ['', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix', 'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf'];
+const FR_D = ['', '', 'vingt', 'trente', 'quarante', 'cinquante', 'soixante'];
+/** 1..99 en français (orthographe rectifiée, traits d'union); `fin` = « quatre-vingts » prend un s en fin de nombre. */
+function frTens(r: number, fin: boolean): string {
+  if (r < 20) return FR_U[r];
+  if (r < 70) {
+    const d = Math.floor(r / 10), u = r % 10;
+    return u ? `${FR_D[d]}-${u === 1 ? 'et-' : ''}${FR_U[u]}` : FR_D[d];
+  }
+  if (r < 80) return r === 71 ? 'soixante-et-onze' : `soixante-${FR_U[r - 60]}`;
+  if (r === 80) return fin ? 'quatre-vingts' : 'quatre-vingt';
+  return `quatre-vingt-${FR_U[r - 80]}`;
+}
+function frHundreds(n: number, fin: boolean): string {
+  const c = Math.floor(n / 100), r = n % 100, parts: string[] = [];
+  if (c) parts.push(c === 1 ? 'cent' : `${FR_U[c]} cent${r === 0 && fin ? 's' : ''}`);
+  if (r) parts.push(frTens(r, fin));
+  return parts.join(' ');
+}
+function frBelowMillion(k: number, fin: boolean): string {
+  const th = Math.floor(k / 1000), r = k % 1000, parts: string[] = [];
+  if (th) parts.push(th === 1 ? 'mille' : `${frHundreds(th, false)} mille`);
+  if (r) parts.push(frHundreds(r, fin));
+  return parts.join(' ');
+}
+export function numberToFrench(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n >= 1e12) return '';
+  if (n === 0) return 'zéro';
+  const mill = Math.floor(n / 1e6), rest = n % 1e6, parts: string[] = [];
+  if (mill) parts.push(mill === 1 ? 'un million' : `${frBelowMillion(mill, false)} millions`);
+  if (rest) parts.push(frBelowMillion(rest, true));
+  return parts.join(' ');
+}
+
+// ---------- Português (Brasil) ----------
+const PT_U = ['', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove'];
+const PT_D = ['', '', 'vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa'];
+const PT_C = ['', 'cento', 'duzentos', 'trezentos', 'quatrocentos', 'quinhentos', 'seiscentos', 'setecentos', 'oitocentos', 'novecentos'];
+function ptBelowThousand(n: number): string {
+  if (n === 100) return 'cem';
+  const c = Math.floor(n / 100), r = n % 100, parts: string[] = [];
+  if (c) parts.push(PT_C[c]);
+  if (r) {
+    if (r < 20) parts.push(PT_U[r]);
+    else parts.push(r % 10 ? `${PT_D[Math.floor(r / 10)]} e ${PT_U[r % 10]}` : PT_D[Math.floor(r / 10)]);
+  }
+  return parts.join(' e ');
+}
+/** "e" liga as partes quando o resto é menor que 100 ou múltiplo de 100. */
+const ptJoin = (r: number): string => (r < 100 || r % 100 === 0 ? ' e ' : ' ');
+function ptBelowMillion(k: number): string {
+  const th = Math.floor(k / 1000), r = k % 1000;
+  let out = th ? (th === 1 ? 'mil' : `${ptBelowThousand(th)} mil`) : '';
+  if (r) out += (th ? ptJoin(r) : '') + ptBelowThousand(r);
+  return out;
+}
+export function numberToPortuguese(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n >= 1e12) return '';
+  if (n === 0) return 'zero';
+  const mill = Math.floor(n / 1e6), rest = n % 1e6;
+  let out = mill ? (mill === 1 ? 'um milhão' : `${ptBelowMillion(mill)} milhões`) : '';
+  if (rest) out += (mill ? ptJoin(rest) : '') + ptBelowMillion(rest);
+  else if (mill) out += ' de';
+  return out;
+}
+
+// ---------- Italiano ----------
+const IT_U = ['', 'uno', 'due', 'tre', 'quattro', 'cinque', 'sei', 'sette', 'otto', 'nove', 'dieci', 'undici', 'dodici', 'tredici', 'quattordici', 'quindici', 'sedici', 'diciassette', 'diciotto', 'diciannove'];
+const IT_D = ['', '', 'venti', 'trenta', 'quaranta', 'cinquanta', 'sessanta', 'settanta', 'ottanta', 'novanta'];
+function itTens(r: number): string {
+  if (r < 20) return IT_U[r];
+  const d = IT_D[Math.floor(r / 10)], u = r % 10;
+  if (!u) return d;
+  return u === 1 || u === 8 ? d.slice(0, -1) + IT_U[u] : d + IT_U[u];
+}
+function itHundreds(n: number): string {
+  const c = Math.floor(n / 100), r = n % 100;
+  let out = c ? (c === 1 ? 'cento' : `${IT_U[c]}cento`) : '';
+  if (r) {
+    if (c && r >= 80 && r < 90) out = out.slice(0, -1);
+    out += itTens(r);
+  }
+  return out;
+}
+function itBelowMillion(k: number): string {
+  const th = Math.floor(k / 1000), r = k % 1000;
+  return (th ? (th === 1 ? 'mille' : `${itHundreds(th)}mila`) : '') + (r ? itHundreds(r) : '');
+}
+export function numberToItalian(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n >= 1e12) return '';
+  if (n === 0) return 'zero';
+  const mill = Math.floor(n / 1e6), rest = n % 1e6, parts: string[] = [];
+  if (mill) parts.push(mill === 1 ? 'un milione' : `${itBelowMillion(mill)} milioni`);
+  if (rest) parts.push(itBelowMillion(rest));
+  else if (mill) parts.push('di');
+  return parts.map((w) => (w.length > 3 && w.endsWith('tre') ? w.slice(0, -1) + 'é' : w)).join(' ');
+}
+
+// ---------- Türkçe ----------
+const TR_U = ['', 'bir', 'iki', 'üç', 'dört', 'beş', 'altı', 'yedi', 'sekiz', 'dokuz'];
+const TR_D = ['', 'on', 'yirmi', 'otuz', 'kırk', 'elli', 'altmış', 'yetmiş', 'seksen', 'doksan'];
+function trBelowThousand(n: number): string {
+  const c = Math.floor(n / 100), r = n % 100, parts: string[] = [];
+  if (c) parts.push(c === 1 ? 'yüz' : `${TR_U[c]} yüz`);
+  if (r >= 10) parts.push(TR_D[Math.floor(r / 10)]);
+  if (r % 10) parts.push(TR_U[r % 10]);
+  return parts.join(' ');
+}
+function trBelowMillion(k: number): string {
+  const th = Math.floor(k / 1000), r = k % 1000, parts: string[] = [];
+  if (th) parts.push(th === 1 ? 'bin' : `${trBelowThousand(th)} bin`);
+  if (r) parts.push(trBelowThousand(r));
+  return parts.join(' ');
+}
+export function numberToTurkish(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n >= 1e12) return '';
+  if (n === 0) return 'sıfır';
+  const mill = Math.floor(n / 1e6), rest = n % 1e6, parts: string[] = [];
+  if (mill) parts.push(`${trBelowMillion(mill)} milyon`);
+  if (rest) parts.push(trBelowMillion(rest));
+  return parts.join(' ');
+}
+
+// ---------- Nederlands ----------
+const NL_U = ['', 'een', 'twee', 'drie', 'vier', 'vijf', 'zes', 'zeven', 'acht', 'negen', 'tien', 'elf', 'twaalf', 'dertien', 'veertien', 'vijftien', 'zestien', 'zeventien', 'achttien', 'negentien'];
+const NL_D = ['', '', 'twintig', 'dertig', 'veertig', 'vijftig', 'zestig', 'zeventig', 'tachtig', 'negentig'];
+function nlTens(r: number): string {
+  if (r < 20) return NL_U[r];
+  const u = r % 10, d = NL_D[Math.floor(r / 10)];
+  return u ? `${NL_U[u]}${u === 2 || u === 3 ? 'ën' : 'en'}${d}` : d;
+}
+function nlHundreds(n: number): string {
+  const c = Math.floor(n / 100), r = n % 100;
+  return (c ? (c === 1 ? 'honderd' : `${NL_U[c]}honderd`) : '') + (r ? nlTens(r) : '');
+}
+function nlBelowMillion(k: number): string {
+  const th = Math.floor(k / 1000), r = k % 1000;
+  return (th ? (th === 1 ? 'duizend' : `${nlHundreds(th)}duizend`) : '') + (r ? nlHundreds(r) : '');
+}
+export function numberToDutch(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n >= 1e12) return '';
+  if (n === 0) return 'nul';
+  const mill = Math.floor(n / 1e6), rest = n % 1e6, parts: string[] = [];
+  if (mill) parts.push(mill === 1 ? 'een miljoen' : `${nlBelowMillion(mill)} miljoen`);
+  if (rest) parts.push(nlBelowMillion(rest));
+  return parts.join(' ');
+}
+
 /** Số tiền bằng chữ theo ngôn ngữ trang: vi "... đồng", en "... dollars", es "... euros", ja "金...円也", zh "...元整" */
 export function moneyInWords(value: number): string {
   const lang = currentLang();
@@ -318,6 +472,40 @@ export function moneyInWords(value: number): string {
     const w = numberToRussian(value);
     if (!w) return '';
     const text = `${neg ? 'минус ' : ''}${w} ${ruPlural(Math.round(Math.abs(value)), ['рубль', 'рубля', 'рублей'])}`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  if (lang === 'fr') {
+    const w = numberToFrench(value);
+    if (!w) return '';
+    const n = Math.round(Math.abs(value));
+    const unit = n % 1e6 === 0 && n > 0 ? 'd’euros' : n < 2 ? 'euro' : 'euros';
+    const text = `${neg ? 'moins ' : ''}${w} ${unit}`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  if (lang === 'pt') {
+    const w = numberToPortuguese(value);
+    if (!w) return '';
+    const n = Math.round(Math.abs(value));
+    const text = `${neg ? 'menos ' : ''}${w} ${n === 1 ? 'real' : 'reais'}`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  if (lang === 'it') {
+    const w = numberToItalian(value);
+    if (!w) return '';
+    const base = w.endsWith('uno') ? w.slice(0, -1) : w;
+    const text = `${neg ? 'meno ' : ''}${base} euro`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  if (lang === 'tr') {
+    const w = numberToTurkish(value);
+    if (!w) return '';
+    const text = `${neg ? 'eksi ' : ''}${w} lira`;
+    return text.charAt(0).toLocaleUpperCase('tr-TR') + text.slice(1);
+  }
+  if (lang === 'nl') {
+    const w = numberToDutch(value);
+    if (!w) return '';
+    const text = `${neg ? 'min ' : ''}${w} euro`;
     return text.charAt(0).toUpperCase() + text.slice(1);
   }
   if (lang === 'ja') {

@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -48,6 +48,11 @@
           vi: ['Không tìm thấy trang này', 'Trang bạn tìm có thể đã đổi địa chỉ hoặc không tồn tại. Hãy quay lại trang chủ để chọn công cụ.', 'Về trang chủ', ['Tạo mã QR', 'Nén ảnh', 'Nối PDF', 'Tính khoản vay']],
           ja: ['ページが見つかりません', 'ページの場所が変わったか、存在しない可能性があります。ホームに戻ってツールを選んでください。', 'ホームへ戻る', ['QRコード', '画像を圧縮', 'PDFを結合', 'ローン計算']],
           ru: ['Страница не найдена', 'Возможно, адрес этой страницы изменился или её не существует. Вернитесь на главную, чтобы выбрать инструмент.', 'На главную', ['QR-код', 'Сжатие изображений', 'Объединение PDF', 'Кредитный калькулятор']],
+          fr: ['Page introuvable', 'Cette page a peut-être changé d’adresse ou n’existe pas. Retournez à l’accueil pour choisir un outil.', 'Retour à l’accueil', ['Code QR', 'Compresser une image', 'Fusionner des PDF', 'Calculateur de prêt']],
+          pt: ['Página não encontrada', 'Esta página pode ter mudado de endereço ou não existe. Volte à página inicial para escolher uma ferramenta.', 'Voltar ao início', ['Código QR', 'Comprimir imagem', 'Juntar PDF', 'Calculadora de empréstimos']],
+          it: ['Pagina non trovata', 'Questa pagina potrebbe aver cambiato indirizzo o non esistere. Torna alla home per scegliere uno strumento.', 'Torna alla home', ['Codice QR', 'Comprimi immagine', 'Unisci PDF', 'Calcolatore di prestiti']],
+          tr: ['Sayfa bulunamadı', 'Bu sayfanın adresi değişmiş olabilir veya sayfa mevcut değil. Bir araç seçmek için ana sayfaya dönün.', 'Ana sayfaya dön', ['QR kod', 'Görsel sıkıştır', 'PDF birleştir', 'Kredi hesaplayıcı']],
+          nl: ['Pagina niet gevonden', 'Deze pagina is mogelijk verplaatst of bestaat niet. Ga terug naar de startpagina om een tool te kiezen.', 'Terug naar home', ['QR-code', 'Afbeelding comprimeren', 'Pdf samenvoegen', 'Leningcalculator']],
           de: ['Seite nicht gefunden', 'Diese Seite hat möglicherweise ihre Adresse geändert oder existiert nicht. Gehe zurück zur Startseite, um ein Tool auszuwählen.', 'Zur Startseite', ['QR-Code', 'Bild komprimieren', 'PDF zusammenfügen', 'Kreditrechner']],
           es: ['Página no encontrada', 'Es posible que esta página haya cambiado de dirección o no exista. Vuelve al inicio para elegir una herramienta.', 'Volver al inicio', ['Código QR', 'Comprimir imagen', 'Unir PDF', 'Calculadora de préstamos']],
           zh: ['找不到此页面', '该页面可能已移动或不存在。请返回首页选择工具。', '返回首页', ['二维码', '压缩图片', '合并 PDF', '贷款计算']]

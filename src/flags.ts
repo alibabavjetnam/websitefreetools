@@ -56,7 +56,27 @@ function ruFlag(): string {
   return `<rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039a6"/><rect y="13.33" width="30" height="6.67" fill="#d52b1e"/>`;
 }
 
-const FLAGS: Record<string, () => string> = { en: usFlag, vi: vnFlag, ja: jpFlag, zh: cnFlag, es: esFlag, de: deFlag, ru: ruFlag };
+function frFlag(): string {
+  return `<rect width="30" height="20" fill="#fff"/><rect width="10" height="20" fill="#0055a4"/><rect x="20" width="10" height="20" fill="#ef4135"/>`;
+}
+
+function itFlag(): string {
+  return `<rect width="30" height="20" fill="#fff"/><rect width="10" height="20" fill="#009246"/><rect x="20" width="10" height="20" fill="#ce2b37"/>`;
+}
+
+function nlFlag(): string {
+  return `<rect width="30" height="20" fill="#fff"/><rect width="30" height="6.67" fill="#ae1c28"/><rect y="13.33" width="30" height="6.67" fill="#21468b"/>`;
+}
+
+function ptFlag(): string {
+  return `<rect width="30" height="20" fill="#009c3b"/><polygon points="15,2 27.5,10 15,18 2.5,10" fill="#ffdf00"/><circle cx="15" cy="10" r="4.2" fill="#002776"/><path d="M10.9 9.2 Q15 8.3 19.1 10.9" stroke="#fff" stroke-width="0.8" fill="none"/>`;
+}
+
+function trFlag(): string {
+  return `<rect width="30" height="20" fill="#e30a17"/><circle cx="11.2" cy="10" r="5" fill="#fff"/><circle cx="12.6" cy="10" r="4" fill="#e30a17"/><g fill="#fff">${star(17.4, 10, 2.2, 90)}</g>`;
+}
+
+const FLAGS: Record<string, () => string> = { en: usFlag, vi: vnFlag, ja: jpFlag, zh: cnFlag, es: esFlag, de: deFlag, ru: ruFlag, fr: frFlag, pt: ptFlag, it: itFlag, tr: trFlag, nl: nlFlag };
 
 /** Trả về thẻ <svg> của lá cờ ứng với mã ngôn ngữ (rỗng nếu chưa có cờ). */
 export function flagSvg(lang: string): string {
