@@ -5,7 +5,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'study-timetable' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU' } as Record<string, string>)[currentLang()] || 'en-US';
 
 interface Setting { id: string; title: string; days: string; morningCount: number; times: string }
 interface Cell { id: string; day: number; period: number; subject: string; room: string }

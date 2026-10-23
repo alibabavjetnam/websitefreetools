@@ -244,6 +244,53 @@ export function numberToGerman(value: number): string {
   return parts.join(' ');
 }
 
+// ---------- Русский ----------
+const RU_U_M = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
+const RU_U_F = ['', 'одна', 'две', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
+const RU_T = ['десять', 'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать'];
+const RU_D = ['', '', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто'];
+const RU_C = ['', 'сто', 'двести', 'триста', 'четыреста', 'пятьсот', 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот'];
+/** Склонение по числу: [1 рубль, 2 рубля, 5 рублей]. */
+function ruPlural(n: number, forms: [string, string, string]): string {
+  const m100 = n % 100, m10 = n % 10;
+  if (m100 >= 11 && m100 <= 14) return forms[2];
+  if (m10 === 1) return forms[0];
+  if (m10 >= 2 && m10 <= 4) return forms[1];
+  return forms[2];
+}
+function ruHundreds(n: number, fem: boolean): string {
+  const parts: string[] = [];
+  const c = Math.floor(n / 100), r = n % 100;
+  if (c) parts.push(RU_C[c]);
+  if (r >= 10 && r < 20) parts.push(RU_T[r - 10]);
+  else {
+    if (r >= 20) parts.push(RU_D[Math.floor(r / 10)]);
+    const u = r % 10;
+    if (u) parts.push((fem ? RU_U_F : RU_U_M)[u]);
+  }
+  return parts.join(' ');
+}
+export function numberToRussian(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n > 999_999_999_999_999) return '';
+  if (n === 0) return 'ноль';
+  const scales: [number, [string, string, string], boolean][] = [
+    [1e12, ['триллион', 'триллиона', 'триллионов'], false],
+    [1e9, ['миллиард', 'миллиарда', 'миллиардов'], false],
+    [1e6, ['миллион', 'миллиона', 'миллионов'], false],
+    [1e3, ['тысяча', 'тысячи', 'тысяч'], true],
+  ];
+  const parts: string[] = [];
+  let rest = n;
+  for (const [sz, forms, fem] of scales) {
+    const q = Math.floor(rest / sz);
+    rest %= sz;
+    if (q) parts.push(`${ruHundreds(q, fem)} ${ruPlural(q, forms)}`);
+  }
+  if (rest) parts.push(ruHundreds(rest, false));
+  return parts.join(' ');
+}
+
 /** Số tiền bằng chữ theo ngôn ngữ trang: vi "... đồng", en "... dollars", es "... euros", ja "金...円也", zh "...元整" */
 export function moneyInWords(value: number): string {
   const lang = currentLang();
@@ -265,6 +312,12 @@ export function moneyInWords(value: number): string {
     if (!w) return '';
     const one = Math.round(Math.abs(value)) === 1;
     const text = `${neg ? 'minus ' : ''}${one ? 'ein' : w} Euro`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  if (lang === 'ru') {
+    const w = numberToRussian(value);
+    if (!w) return '';
+    const text = `${neg ? 'минус ' : ''}${w} ${ruPlural(Math.round(Math.abs(value)), ['рубль', 'рубля', 'рублей'])}`;
     return text.charAt(0).toUpperCase() + text.slice(1);
   }
   if (lang === 'ja') {

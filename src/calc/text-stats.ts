@@ -17,6 +17,12 @@ const STOP = new Set(
     'và là của có cho các những một được trong với không này đã để thì mà khi đến từ theo về như cũng ra vào lại nên rất người hay hoặc nếu nhưng sẽ đang vì bị do tại trên dưới sau trước nhiều ít còn đó đây ấy nào gì ai sự việc cái chiếc thế vậy rồi chỉ mỗi mọi cả đều bằng nữa lên xuống qua hơn nhất đi làm có thể cần phải nó họ chúng ta tôi bạn anh chị em ông bà mình thêm vẫn luôn vừa mới hết cùng giữa bởi nhằm '
     // tiếng Anh
     + 'a an the and or but if of to in on at by for with from as is are was were be been being it its this that these those he she they we you i me my our your their his her them not no so do does did have has had will would can could should may might must than then there here what which who whom whose when where why how all any each also just about into over under up down out more most such only own same very s t '
+    // tiếng Tây Ban Nha
+    + ' el la los las un una unos unas y o pero si de del al en con por para como es son fue ser se su sus lo le les que no mas muy ya sin sobre entre este esta estos estas ese esa eso'
+    // tiếng Đức
+    + ' der die das den dem des ein eine einen einem einer und oder aber wenn von zu im in mit für auf an als ist sind war wird werden nicht auch es sich er sie wir ihr du so wie noch nur bei nach aus dass'
+    // tiếng Nga
+    + ' и в во не что он на я с со как а то все она так его но да ты к у же вы за бы по только ее мне было вот от меня еще нет о из ему теперь когда даже ну вдруг ли если уже или ни быть был него до вас нибудь опять уж вам ведь там потом себя ничего ей может они тут где есть надо ней для мы тебя их чем была сам чтоб без будто чего раз тоже себе под будет ж тогда кто этот того потому этого какой совсем ним здесь этом один почти мой тем чтобы нее сейчас были куда зачем всех никогда можно при наконец два об другой хоть после над больше тот через эти нас про всего них какая много разве три эту моя впрочем хорошо свою этой перед иногда лучше чуть том нельзя такой им более всегда конечно всю между'
     // tiếng Nhật
     + 'の に は を た が で て と し れ さ ある いる も する から な こと として い や れる など ない この ため その よう また もの という まで なる へ か だ これ により による です ます でき それ ので および しかし そして または こう ここ そこ あの どの'
     // tiếng Trung

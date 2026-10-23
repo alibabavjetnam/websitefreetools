@@ -4,7 +4,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'teaching-pay' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU' } as Record<string, string>)[currentLang()] || 'en-US';
 
 interface Session { id: string; date: string; title: string; hours: number; rate: number }
 const store = storage<Session[]>('teaching-pay', []);

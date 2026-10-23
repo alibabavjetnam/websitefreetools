@@ -20,11 +20,11 @@ const MAX_ITEMS = 300;
 /* ---------- Ngôn ngữ trang khách xem menu ----------
  * Trang /m/ không nạp từ điển của site (khách chỉ quét QR), nên chuỗi nằm sẵn ở đây.
  * Ngôn ngữ: theo trang công cụ nếu có (__WFT_LANG__), nếu không thì theo ngôn ngữ trình duyệt của khách. */
-export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es' | 'de';
+export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es' | 'de' | 'ru';
 export function menuLang(): MenuLang {
   const w = window as unknown as { __WFT_LANG__?: string };
   const raw = (w.__WFT_LANG__ || (typeof navigator !== 'undefined' ? navigator.language : '') || 'en').slice(0, 2).toLowerCase();
-  return raw === 'vi' || raw === 'ja' || raw === 'zh' || raw === 'es' || raw === 'de' ? raw : 'en';
+  return raw === 'vi' || raw === 'ja' || raw === 'zh' || raw === 'es' || raw === 'de' || raw === 'ru' ? raw : 'en';
 }
 const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
   vi: {
@@ -62,6 +62,13 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
     invalid: 'Die Daten der Speisekarte sind ungültig.', tooLong: 'Der Link zur Speisekarte ist zu lang.',
     oldBrowser: 'Dieser Browser ist zu alt, um die Speisekarte zu öffnen. Aktualisiere den Browser.', badLink: 'Der Link zur Speisekarte ist nicht korrekt.',
   },
+  ru: {
+    shop: 'Название заведения', cat: 'Блюда', title: 'Меню', loading: 'Открываем меню…', credit: 'Создайте QR-меню бесплатно на',
+    noMenu: 'В этой ссылке нет меню. Отсканируйте QR-код заведения ещё раз.',
+    openFail: 'Не удалось открыть меню:', rescan: 'Отсканируйте QR-код заведения ещё раз.',
+    invalid: 'Данные меню недействительны.', tooLong: 'Ссылка на меню слишком длинная.',
+    oldBrowser: 'Этот браузер слишком старый, чтобы открыть меню. Обновите браузер.', badLink: 'Ссылка на меню неверна.',
+  },
   zh: {
     shop: '店名', cat: '菜品', title: '菜单', loading: '正在打开菜单…', credit: '免费制作二维码菜单：',
     noMenu: '此链接中没有菜单，请重新扫描店铺的二维码。',
@@ -71,7 +78,7 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
   },
 };
 export const menuText = (key: string): string => MENU_TEXT[menuLang()][key] ?? MENU_TEXT.vi[key] ?? key;
-const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE' };
+const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU' };
 
 /* ---------- Dạng gọn để link ngắn: mảng thay cho object ---------- */
 type Compact = [string, string, string, string, [string, [string, number, string][]][]];
