@@ -13,9 +13,9 @@ const ROOT = resolve(__dirname, '..');
 const DIST = resolve(ROOT, 'dist');
 const SITE = 'https://websitefreetools.com';
 const OG_IMAGE = `${SITE}/og-image.png`;
-const LANGS = ['en', 'vi', 'ja', 'zh', 'es'];
+const LANGS = ['en', 'vi', 'ja', 'zh', 'es', 'de'];
 const DEFAULT = 'en';
-const LANG_NAME = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español' };
+const LANG_NAME = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español', de: 'Deutsch' };
 
 const dicts = Object.fromEntries(LANGS.map((l) => [l, JSON.parse(readFileSync(resolve(ROOT, 'public/language', `${l}.json`), 'utf8'))]));
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

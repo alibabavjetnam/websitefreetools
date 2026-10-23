@@ -27,9 +27,9 @@ export function pageText(): (key: string, fallback?: string) => string {
   return (key: string, fallback = '') => s?.[key] ?? fallback;
 }
 
-export const LANGS = ['en', 'vi', 'ja', 'zh', 'es'] as const;
+export const LANGS = ['en', 'vi', 'ja', 'zh', 'es', 'de'] as const;
 export type Lang = (typeof LANGS)[number];
-export const LANG_NAMES: Record<string, string> = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español' };
+export const LANG_NAMES: Record<string, string> = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español', de: 'Deutsch' };
 
 export const currentLang = (): string => w.__WFT_LANG__ || document.documentElement.lang || 'en';
 /** Tiền tố đường dẫn theo ngôn ngữ, ví dụ "/vi". Khi chạy dev không có tiền tố thì trả "". */
@@ -51,7 +51,7 @@ export function tf(key: string, fallback: string, vars: Record<string, string | 
   return s;
 }
 /** Mã locale cho Intl / toLocaleString theo ngôn ngữ hiện tại. */
-export const localeTag = (): string => (({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' } as Record<string, string>)[currentLang()] || 'en-US');
+export const localeTag = (): string => (({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE' } as Record<string, string>)[currentLang()] || 'en-US');
 export function groupName(id: string, fallback: string): string {
   return dict()?.groups?.[id]?.name ?? fallback;
 }

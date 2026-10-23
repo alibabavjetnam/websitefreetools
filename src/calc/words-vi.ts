@@ -205,6 +205,45 @@ export function numberToChinese(value: number): string {
   return out;
 }
 
+// ---------- Deutsch ----------
+const DE_U = ['', 'ein', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun'];
+const DE_T = ['zehn', 'elf', 'zwölf', 'dreizehn', 'vierzehn', 'fünfzehn', 'sechzehn', 'siebzehn', 'achtzehn', 'neunzehn'];
+const DE_D = ['', '', 'zwanzig', 'dreißig', 'vierzig', 'fünfzig', 'sechzig', 'siebzig', 'achtzig', 'neunzig'];
+/** 1..999 auf Deutsch, in einem Wort; `eins` = "eins" statt "ein" am Ende. */
+function deHundreds(n: number, eins: boolean): string {
+  const c = Math.floor(n / 100), r = n % 100;
+  let out = c ? DE_U[c] + 'hundert' : '';
+  if (r) {
+    if (r < 10) out += r === 1 && eins ? 'eins' : DE_U[r];
+    else if (r < 20) out += DE_T[r - 10];
+    else {
+      const u = r % 10;
+      out += u ? `${u === 1 ? 'ein' : DE_U[u]}und${DE_D[Math.floor(r / 10)]}` : DE_D[Math.floor(r / 10)];
+    }
+  }
+  return out;
+}
+export function numberToGerman(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n > 999_999_999_999_999) return '';
+  if (n === 0) return 'null';
+  const parts: string[] = [];
+  const scales: [number, string, string][] = [[1e12, 'eine Billion', 'Billionen'], [1e9, 'eine Milliarde', 'Milliarden'], [1e6, 'eine Million', 'Millionen']];
+  let rest = n;
+  for (const [sz, one, many] of scales) {
+    const q = Math.floor(rest / sz);
+    rest %= sz;
+    if (!q) continue;
+    parts.push(q === 1 ? one : `${deHundreds(q, false)} ${many}`);
+  }
+  const th = Math.floor(rest / 1000), r = rest % 1000;
+  let tail = '';
+  if (th) tail += th === 1 ? 'eintausend' : `${deHundreds(th, false)}tausend`;
+  if (r) tail += deHundreds(r, true);
+  if (tail) parts.push(tail);
+  return parts.join(' ');
+}
+
 /** Số tiền bằng chữ theo ngôn ngữ trang: vi "... đồng", en "... dollars", es "... euros", ja "金...円也", zh "...元整" */
 export function moneyInWords(value: number): string {
   const lang = currentLang();
@@ -219,6 +258,13 @@ export function moneyInWords(value: number): string {
     const w = numberToSpanish(value);
     if (!w) return '';
     const text = `${neg ? 'menos ' : ''}${w} ${Math.round(Math.abs(value)) === 1 ? 'euro' : 'euros'}`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  if (lang === 'de') {
+    const w = numberToGerman(value);
+    if (!w) return '';
+    const one = Math.round(Math.abs(value)) === 1;
+    const text = `${neg ? 'minus ' : ''}${one ? 'ein' : w} Euro`;
     return text.charAt(0).toUpperCase() + text.slice(1);
   }
   if (lang === 'ja') {

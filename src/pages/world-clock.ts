@@ -5,7 +5,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'world-clock' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const DEFAULT_ZONES = T('defaultZones', 'Asia/Ho_Chi_Minh,Asia/Tokyo,Europe/London,America/New_York').split(',').map((x) => x.trim()).filter(Boolean);
 const store = storage<string[]>('world-clock', DEFAULT_ZONES);

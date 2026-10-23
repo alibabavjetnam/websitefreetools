@@ -4,7 +4,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'fullscreen-clock' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE' } as Record<string, string>)[currentLang()] || 'en-US';
 
 type Mode = 'clock' | 'stopwatch' | 'countdown';
 interface Cfg { color: string; bg: string; font: string; h24: boolean; showSeconds: boolean; showDate: boolean }

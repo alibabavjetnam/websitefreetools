@@ -25,7 +25,7 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 ## Đa ngôn ngữ (i18n)
 - `scripts/i18n.mjs` chạy sau `vite build`: sinh bản `/en /vi /ja /zh` cho mọi trang, thẻ SEO (canonical, hreflang, Open Graph, JSON-LD), `/language/<lang>.js` và `sitemap.xml`
 - Tiếng Anh là mặc định. Thiếu bản dịch thì lùi về tiếng Anh, rồi về chuỗi gốc tiếng Việt trong HTML
-- Ngôn ngữ hiện có: en, vi, ja, zh, es (Tây Ban Nha; đã dịch đủ 1937 chuỗi, render thật 45 trang không lỗi). Kế hoạch thêm lần lượt, xong mỗi ngôn ngữ phải hỏi chủ site rồi mới làm tiếp: de, ru, fr, pt, it, tr, nl
+- Ngôn ngữ hiện có: en, vi, ja, zh, es (Tây Ban Nha), de (Đức); mỗi ngôn ngữ đã dịch đủ 1937 chuỗi, render thật 45 trang không lỗi. Kế hoạch thêm lần lượt, xong mỗi ngôn ngữ phải hỏi chủ site rồi mới làm tiếp: ru, fr, pt, it, tr, nl
 - Thêm một ngôn ngữ mới (làm theo es): (1) `public/language/<l>.json` đủ khoá như en.json; (2) `LANGS` + tên ở `scripts/i18n.mjs` và `src/i18n.ts` (cả `localeTag`); (3) thêm `<l>: '<locale>'` vào các bảng `LOCALE` trong `src/pages/*.ts`; (4) cờ ở `src/flags.ts`; (5) `moneyInWords` trong `src/calc/words-vi.ts`; (6) `MenuLang`, `MENU_TEXT`, `PRICE_LOCALE` trong `src/menu/menu.ts`; (7) bản dịch trang lỗi ở `public/404.html`; (8) kiểm tra định dạng ngày ở `expense.ts`/`invoice.ts` (mặc định ngày/tháng/năm); (9) build rồi render từng trang bằng trình duyệt, quét chữ Việt còn sót (chỉ cho phép đ, tên món Việt, NĐ-CP, Tết)
 - Chuỗi riêng từng công cụ: `s.<toolId>.<key>` trong từ điển, dùng `T('key', 'fallback Việt')` (`pageText()`) hoặc `data-i18n` / `data-i18n-ph`
 - Chuỗi dùng chung trong `src/lib`, `src/calc`, `src/ui.ts`: key `lib.<module>.<key>` trong `ui`, dùng `t()` / `tf()` (thay `{tên}`) ở lúc gọi hàm, không đọc ở top-level module

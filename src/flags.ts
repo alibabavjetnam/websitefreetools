@@ -48,7 +48,11 @@ function esFlag(): string {
   return `<rect width="30" height="20" fill="#c60b1e"/><rect y="5" width="30" height="10" fill="#ffc400"/>`;
 }
 
-const FLAGS: Record<string, () => string> = { en: usFlag, vi: vnFlag, ja: jpFlag, zh: cnFlag, es: esFlag };
+function deFlag(): string {
+  return `<rect width="30" height="20" fill="#000"/><rect y="6.67" width="30" height="6.67" fill="#dd0000"/><rect y="13.33" width="30" height="6.67" fill="#ffce00"/>`;
+}
+
+const FLAGS: Record<string, () => string> = { en: usFlag, vi: vnFlag, ja: jpFlag, zh: cnFlag, es: esFlag, de: deFlag };
 
 /** Trả về thẻ <svg> của lá cờ ứng với mã ngôn ngữ (rỗng nếu chưa có cờ). */
 export function flagSvg(lang: string): string {

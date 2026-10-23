@@ -9,7 +9,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'data-convert' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const MAX_BYTES = 30 * 1024 * 1024;
 const MAX_TEXTAREA = 200_000;
