@@ -98,6 +98,45 @@ export function numberToEnglish(value: number): string {
   return parts.join(' ');
 }
 
+// ---------- Español ----------
+const ES_U = ['', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve'];
+const ES_T = ['diez', 'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis', 'diecisiete', 'dieciocho', 'diecinueve'];
+const ES_V = ['veinte', 'veintiuno', 'veintidós', 'veintitrés', 'veinticuatro', 'veinticinco', 'veintiséis', 'veintisiete', 'veintiocho', 'veintinueve'];
+const ES_D = ['', '', '', 'treinta', 'cuarenta', 'cincuenta', 'sesenta', 'setenta', 'ochenta', 'noventa'];
+const ES_C = ['', 'ciento', 'doscientos', 'trescientos', 'cuatrocientos', 'quinientos', 'seiscientos', 'setecientos', 'ochocientos', 'novecientos'];
+/** 1..999 en español; `apo` = "uno" pasa a "un" cuando va antes de un sustantivo (un euro, veintiún mil). */
+function esHundreds(n: number, apo: boolean): string {
+  if (n === 100) return 'cien';
+  const c = Math.floor(n / 100), r = n % 100, parts: string[] = [];
+  if (c) parts.push(ES_C[c]);
+  if (r) {
+    if (r < 10) parts.push(r === 1 && apo ? 'un' : ES_U[r]);
+    else if (r < 20) parts.push(ES_T[r - 10]);
+    else if (r < 30) parts.push(r === 21 && apo ? 'veintiún' : ES_V[r - 20]);
+    else {
+      const u = r % 10, d = ES_D[Math.floor(r / 10)];
+      parts.push(u ? `${d} y ${u === 1 && apo ? 'un' : ES_U[u]}` : d);
+    }
+  }
+  return parts.join(' ');
+}
+function esBelowMillion(k: number): string {
+  const th = Math.floor(k / 1000), r = k % 1000, parts: string[] = [];
+  if (th) parts.push(th === 1 ? 'mil' : `${esHundreds(th, true)} mil`);
+  if (r) parts.push(esHundreds(r, true));
+  return parts.join(' ');
+}
+export function numberToSpanish(value: number): string {
+  const n = Math.round(Math.abs(value));
+  if (!Number.isFinite(n) || n > 999_999_999_999_999) return '';
+  if (n === 0) return 'cero';
+  const mill = Math.floor(n / 1e6), rest = n % 1e6, parts: string[] = [];
+  if (mill) parts.push(mill === 1 ? 'un millón' : `${esBelowMillion(mill)} millones`);
+  if (rest) parts.push(esBelowMillion(rest));
+  else if (mill) parts.push('de');
+  return parts.join(' ');
+}
+
 // ---------- 日本語 (大字: 金壱千弐百参拾四円也) ----------
 const JA_DIGITS = ['零', '壱', '弐', '参', '四', '伍', '六', '七', '八', '九'];
 const JA_SMALL = ['', '拾', '百', '千'];
@@ -166,7 +205,7 @@ export function numberToChinese(value: number): string {
   return out;
 }
 
-/** Số tiền bằng chữ theo ngôn ngữ trang: vi "... đồng", en "... dollars", ja "金...円也", zh "...元整" */
+/** Số tiền bằng chữ theo ngôn ngữ trang: vi "... đồng", en "... dollars", es "... euros", ja "金...円也", zh "...元整" */
 export function moneyInWords(value: number): string {
   const lang = currentLang();
   const neg = value < 0;
@@ -174,6 +213,12 @@ export function moneyInWords(value: number): string {
     const w = numberToEnglish(value);
     if (!w) return '';
     const text = `${neg ? 'minus ' : ''}${w} ${Math.round(Math.abs(value)) === 1 ? 'dollar' : 'dollars'}`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  if (lang === 'es') {
+    const w = numberToSpanish(value);
+    if (!w) return '';
+    const text = `${neg ? 'menos ' : ''}${w} ${Math.round(Math.abs(value)) === 1 ? 'euro' : 'euros'}`;
     return text.charAt(0).toUpperCase() + text.slice(1);
   }
   if (lang === 'ja') {

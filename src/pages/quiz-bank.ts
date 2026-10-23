@@ -4,7 +4,7 @@ import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'quiz-bank' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' } as Record<string, string>)[currentLang()] || 'en-US';
 
 interface Question { id: string; text: string; options: string[]; correct: number }
 interface Bank { title: string; questions: Question[] }

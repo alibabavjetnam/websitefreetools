@@ -1,6 +1,6 @@
 /**
  * Hậu xử lý sau khi Vite build: sinh các bản ngôn ngữ của mọi trang hiển thị dưới
- * /en, /vi, /ja, /zh kèm thẻ SEO (canonical, hreflang, Open Graph, JSON-LD), file
+ * /en, /vi, /ja, /zh, /es kèm thẻ SEO (canonical, hreflang, Open Graph, JSON-LD), file
  * từ điển runtime /language/<lang>.js, trang chủ chuyển hướng theo ngôn ngữ trình duyệt,
  * và sitemap.xml đa ngôn ngữ. Tiếng Anh là mặc định; thiếu bản dịch thì lùi về tiếng Anh.
  */
@@ -13,9 +13,9 @@ const ROOT = resolve(__dirname, '..');
 const DIST = resolve(ROOT, 'dist');
 const SITE = 'https://websitefreetools.com';
 const OG_IMAGE = `${SITE}/og-image.png`;
-const LANGS = ['en', 'vi', 'ja', 'zh'];
+const LANGS = ['en', 'vi', 'ja', 'zh', 'es'];
 const DEFAULT = 'en';
-const LANG_NAME = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文' };
+const LANG_NAME = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español' };
 
 const dicts = Object.fromEntries(LANGS.map((l) => [l, JSON.parse(readFileSync(resolve(ROOT, 'public/language', `${l}.json`), 'utf8'))]));
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

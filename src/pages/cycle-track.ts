@@ -7,7 +7,7 @@ type Pred = NonNullable<ReturnType<typeof predictCycle>>['predictions'];
 
 mountLayout({ activeTool: 'cycle-track' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' } as Record<string, string>)[currentLang()] || 'en-US';
 const phaseKey = (x: string): string => (({ 'Ngoài kỳ dự đoán': 'out', 'Đang hành kinh': 'menstrual', 'Ngày rụng trứng': 'ovulation', 'Khoảng dễ thụ thai': 'fertile', 'Giai đoạn nang trứng': 'follicular', 'Giai đoạn hoàng thể': 'luteal' } as Record<string, string>)[x] || 'out');
 
 interface Cfg { starts: string[]; periodLen: number }

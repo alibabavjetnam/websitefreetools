@@ -20,11 +20,11 @@ const MAX_ITEMS = 300;
 /* ---------- Ngôn ngữ trang khách xem menu ----------
  * Trang /m/ không nạp từ điển của site (khách chỉ quét QR), nên chuỗi nằm sẵn ở đây.
  * Ngôn ngữ: theo trang công cụ nếu có (__WFT_LANG__), nếu không thì theo ngôn ngữ trình duyệt của khách. */
-export type MenuLang = 'vi' | 'en' | 'ja' | 'zh';
+export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es';
 export function menuLang(): MenuLang {
   const w = window as unknown as { __WFT_LANG__?: string };
   const raw = (w.__WFT_LANG__ || (typeof navigator !== 'undefined' ? navigator.language : '') || 'en').slice(0, 2).toLowerCase();
-  return raw === 'vi' || raw === 'ja' || raw === 'zh' ? raw : 'en';
+  return raw === 'vi' || raw === 'ja' || raw === 'zh' || raw === 'es' ? raw : 'en';
 }
 const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
   vi: {
@@ -48,6 +48,13 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
     invalid: 'メニューのデータが正しくありません。', tooLong: 'メニューのリンクが長すぎます。',
     oldBrowser: 'お使いのブラウザは古いためメニューを開けません。ブラウザを更新してください。', badLink: 'メニューのリンクが正しくありません。',
   },
+  es: {
+    shop: 'Nombre del local', cat: 'Platos', title: 'Carta', loading: 'Abriendo la carta…', credit: 'Crea una carta QR gratis en',
+    noMenu: 'Este enlace no tiene carta. Vuelve a escanear el código QR del local.',
+    openFail: 'No se pudo abrir la carta:', rescan: 'Vuelve a escanear el código QR del local.',
+    invalid: 'Los datos de la carta no son válidos.', tooLong: 'El enlace de la carta es demasiado largo.',
+    oldBrowser: 'Este navegador es demasiado antiguo para abrir la carta. Actualiza el navegador.', badLink: 'El enlace de la carta no es correcto.',
+  },
   zh: {
     shop: '店名', cat: '菜品', title: '菜单', loading: '正在打开菜单…', credit: '免费制作二维码菜单：',
     noMenu: '此链接中没有菜单，请重新扫描店铺的二维码。',
@@ -57,7 +64,7 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
   },
 };
 export const menuText = (key: string): string => MENU_TEXT[menuLang()][key] ?? MENU_TEXT.vi[key] ?? key;
-const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN' };
+const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' };
 
 /* ---------- Dạng gọn để link ngắn: mảng thay cho object ---------- */
 type Compact = [string, string, string, string, [string, [string, number, string][]][]];

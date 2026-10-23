@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -47,6 +47,7 @@
           en: ['Page not found', 'This page may have moved or does not exist. Go back to the home page to pick a tool.', 'Back to home', ['QR code', 'Compress image', 'Merge PDF', 'Loan calculator']],
           vi: ['Không tìm thấy trang này', 'Trang bạn tìm có thể đã đổi địa chỉ hoặc không tồn tại. Hãy quay lại trang chủ để chọn công cụ.', 'Về trang chủ', ['Tạo mã QR', 'Nén ảnh', 'Nối PDF', 'Tính khoản vay']],
           ja: ['ページが見つかりません', 'ページの場所が変わったか、存在しない可能性があります。ホームに戻ってツールを選んでください。', 'ホームへ戻る', ['QRコード', '画像を圧縮', 'PDFを結合', 'ローン計算']],
+          es: ['Página no encontrada', 'Es posible que esta página haya cambiado de dirección o no exista. Vuelve al inicio para elegir una herramienta.', 'Volver al inicio', ['Código QR', 'Comprimir imagen', 'Unir PDF', 'Calculadora de préstamos']],
           zh: ['找不到此页面', '该页面可能已移动或不存在。请返回首页选择工具。', '返回首页', ['二维码', '压缩图片', '合并 PDF', '贷款计算']]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];

@@ -8,7 +8,7 @@ import { pageText, currentLang } from '../i18n';
 mountLayout({ activeTool: 'text-analysis' });
 const T = pageText();
 const DUR = { h: T('u.h', '{n} giờ'), m: T('u.m', '{n} phút'), s: T('u.s', '{n} giây') };
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const MAX_CHARS = 5_000_000;
 const SAMPLE_VI = `Cà phê sữa đá là thức uống quen thuộc của người Việt. Mỗi sáng, hàng triệu người bắt đầu ngày mới bằng một ly cà phê sữa đá đậm đà.
