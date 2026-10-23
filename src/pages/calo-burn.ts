@@ -10,7 +10,7 @@ interface Row { id: string; actIndex: number; minutes: number }
 const weightStore = storage<number>('calo-burn-weight', 60);
 let rows: Row[] = [{ id: 'r1', actIndex: 4, minutes: 30 }];
 
-const groups = [...new Set(ACTIVITIES.map((a) => a.group))];
+const groups = [...new Set(ACTIVITIES.map((a) => a.groupKey))];
 const vi = (n: number, d = 0) => n.toLocaleString(localeTag(), { maximumFractionDigits: d });
 const newId = () => Math.random().toString(36).slice(2, 8);
 
@@ -26,7 +26,7 @@ root.innerHTML = `
 `;
 
 function optionsHtml(sel: number): string {
-  return groups.map((g) => `<optgroup label="${escapeHtml(T('grp.' + groups.indexOf(g), g))}">${ACTIVITIES.map((a, i) => a.group === g ? `<option value="${i}"${i === sel ? ' selected' : ''}>${escapeHtml(T('act.' + i, a.name))} (MET ${a.met})</option>` : '').join('')}</optgroup>`).join('');
+  return groups.map((g) => `<optgroup label="${escapeHtml(T('grp.' + g, ACTIVITIES.find((a) => a.groupKey === g)!.group))}">${ACTIVITIES.map((a, i) => a.groupKey === g ? `<option value="${i}"${i === sel ? ' selected' : ''}>${escapeHtml(T('act.' + a.key, a.name))} (MET ${a.met})</option>` : '').join('')}</optgroup>`).join('');
 }
 
 function render(): void {

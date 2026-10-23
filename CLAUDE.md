@@ -61,9 +61,9 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
   - Định dạng số/tiền theo ngôn ngữ đang chọn (mặc định kiểu Mỹ): `fmtInt`/`fmtDec`/`fmtAmt`/`fmtField`/`fmtMoney` trong `src/ui.ts` dùng `localeTag()` và đồng tiền từng nước (bảng `CURRENCY`: en USD, ja JPY, zh CNY, de/fr/es/it/nl EUR, pt BRL, ru RUB, tr TRY, vi đ). Giá trị mẫu quy từ VND bằng `sampleMoney()`. Riêng `salary` là luật Việt Nam nên luôn hiện "đ" (`fmtVnd`) nhưng số vẫn theo ngôn ngữ. `parseNumber` ưu tiên cách hiểu dấu chấm/phẩy của ngôn ngữ đang chọn
   - Tên trang tính và cột Google Sheets bằng tiếng Anh. Bảng tính cũ (tên tiếng Việt) vẫn dùng được: `legacySheet`/`legacy` trong `SheetStore` (trang tính cũ được đổi tên, cột cũ vẫn đọc được). Giá trị dữ liệu (loại thu/chi, tên danh mục) vẫn lưu theo tiếng Việt
   - Đồng hồ thế giới so giờ với nước của ngôn ngữ đang chọn (phần tử đầu của `defaultZones`), khoá `sameRef`/`vsRef`
-- Quyết định còn mở, chờ chủ site:
-  - Hoạt động MET trong calo-burn tra theo chỉ số `act.N`, không có `key` ổn định; sức khoẻ chưa có lb / ft-in cho en
-  - `safeFilename` (`src/lib/download.ts`) bỏ dấu tiếng Việt nên tên file ja/zh rơi về giá trị mặc định
+  - `calo-burn`: mỗi hoạt động/nhóm có `key`/`groupKey` ổn định trong `ACTIVITIES` (`src/calc/health.ts`), bản dịch tra `act.<key>` / `grp.<groupKey>`
+  - `safeFilename` (`src/lib/download.ts`) bỏ dấu tiếng Việt nhưng giữ chữ Unicode (Nhật, Trung, Nga...) nên tên file đúng ngôn ngữ
+- Quyết định còn mở, chờ chủ site: sức khoẻ chưa có lb / ft-in cho en
 - Còn lại, đã biết:
   - Chưa kiểm tra render thật bằng trình duyệt (máy chạy phiên này chưa có trình duyệt headless). Quét tĩnh trong `dist/` chỉ bắt được chữ gắn cứng trong HTML. Tiêu đề trang chủ ("Danh sách công cụ", "Cách dùng") được `src/pages/home.ts` dịch lúc chạy nên quét tĩnh báo nhầm
   - Các chuỗi tiếng Việt còn trong từ điển en/ja/zh là cố ý: tên món Việt trong ngoặc (Bún bò Huế...), ký hiệu đ, số hiệu văn bản pháp luật (NĐ-CP), từ dừng (và, của), Tết

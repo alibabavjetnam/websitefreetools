@@ -42,14 +42,18 @@ export async function downloadPng(svg: string, filename: string, width: number, 
   }
 }
 
-/** Tên tệp an toàn từ nội dung mã */
+/**
+ * Tên tệp an toàn từ nội dung mã. Bỏ dấu tiếng Việt cho gọn, nhưng giữ chữ của các hệ chữ khác
+ * (Nhật, Trung, Nga...) để tên tệp đúng ngôn ngữ; chỉ thay những ký tự không dùng được trong tên tệp.
+ */
 export function safeFilename(text: string, fallback: string): string {
   const base = text
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
     .replace(/đ/g, 'd')
     .replace(/Đ/g, 'D')
-    .replace(/[^a-zA-Z0-9]+/g, '-')
+    .normalize('NFC')
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
     .replace(/^-+|-+$/g, '')
     .slice(0, 40);
   return base || fallback;

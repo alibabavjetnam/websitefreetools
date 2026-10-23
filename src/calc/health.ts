@@ -61,33 +61,37 @@ export function waistHipRisk(waist: number, hip: number, sex: Sex): { ratio: num
 
 /** Nhóm hoạt động và chỉ số MET (Compendium of Physical Activities). */
 export interface Activity {
+  /** Khoá ổn định để tra bản dịch (act.<key>) */
+  key: string;
+  /** Khoá nhóm ổn định (grp.<groupKey>) */
+  groupKey: string;
   name: string;
   met: number;
   group: string;
 }
 export const ACTIVITIES: Activity[] = [
-  { group: 'Đi lại', name: 'Đi bộ chậm (3 km/h)', met: 2.8 },
-  { group: 'Đi lại', name: 'Đi bộ nhanh (5,5 km/h)', met: 4.3 },
-  { group: 'Đi lại', name: 'Leo cầu thang', met: 8.0 },
-  { group: 'Chạy', name: 'Chạy bộ nhẹ (8 km/h)', met: 8.3 },
-  { group: 'Chạy', name: 'Chạy (10 km/h)', met: 9.8 },
-  { group: 'Chạy', name: 'Chạy nhanh (12 km/h)', met: 11.8 },
-  { group: 'Đạp xe', name: 'Đạp xe thong thả (<16 km/h)', met: 4.0 },
-  { group: 'Đạp xe', name: 'Đạp xe vừa (19–22 km/h)', met: 8.0 },
-  { group: 'Đạp xe', name: 'Đạp xe nhanh (>22 km/h)', met: 10.0 },
-  { group: 'Thể thao', name: 'Bơi lội', met: 7.0 },
-  { group: 'Thể thao', name: 'Cầu lông', met: 5.5 },
-  { group: 'Thể thao', name: 'Bóng đá', met: 7.0 },
-  { group: 'Thể thao', name: 'Bóng rổ', met: 6.5 },
-  { group: 'Thể thao', name: 'Tennis', met: 7.3 },
-  { group: 'Thể thao', name: 'Bóng bàn', met: 4.0 },
-  { group: 'Phòng tập', name: 'Tập tạ (vừa)', met: 5.0 },
-  { group: 'Phòng tập', name: 'Yoga', met: 3.0 },
-  { group: 'Phòng tập', name: 'Nhảy dây', met: 11.0 },
-  { group: 'Phòng tập', name: 'Aerobic', met: 6.5 },
-  { group: 'Việc nhà', name: 'Dọn nhà, lau nhà', met: 3.3 },
-  { group: 'Việc nhà', name: 'Làm vườn', met: 4.0 },
-  { group: 'Việc nhà', name: 'Nấu ăn', met: 2.5 },
+  { key: 'walk-slow', groupKey: 'walk', group: 'Đi lại', name: 'Đi bộ chậm (3 km/h)', met: 2.8 },
+  { key: 'walk-fast', groupKey: 'walk', group: 'Đi lại', name: 'Đi bộ nhanh (5,5 km/h)', met: 4.3 },
+  { key: 'stairs', groupKey: 'walk', group: 'Đi lại', name: 'Leo cầu thang', met: 8.0 },
+  { key: 'jog', groupKey: 'run', group: 'Chạy', name: 'Chạy bộ nhẹ (8 km/h)', met: 8.3 },
+  { key: 'run', groupKey: 'run', group: 'Chạy', name: 'Chạy (10 km/h)', met: 9.8 },
+  { key: 'run-fast', groupKey: 'run', group: 'Chạy', name: 'Chạy nhanh (12 km/h)', met: 11.8 },
+  { key: 'bike-easy', groupKey: 'bike', group: 'Đạp xe', name: 'Đạp xe thong thả (<16 km/h)', met: 4.0 },
+  { key: 'bike-mid', groupKey: 'bike', group: 'Đạp xe', name: 'Đạp xe vừa (19–22 km/h)', met: 8.0 },
+  { key: 'bike-fast', groupKey: 'bike', group: 'Đạp xe', name: 'Đạp xe nhanh (>22 km/h)', met: 10.0 },
+  { key: 'swim', groupKey: 'sport', group: 'Thể thao', name: 'Bơi lội', met: 7.0 },
+  { key: 'badminton', groupKey: 'sport', group: 'Thể thao', name: 'Cầu lông', met: 5.5 },
+  { key: 'football', groupKey: 'sport', group: 'Thể thao', name: 'Bóng đá', met: 7.0 },
+  { key: 'basketball', groupKey: 'sport', group: 'Thể thao', name: 'Bóng rổ', met: 6.5 },
+  { key: 'tennis', groupKey: 'sport', group: 'Thể thao', name: 'Tennis', met: 7.3 },
+  { key: 'tabletennis', groupKey: 'sport', group: 'Thể thao', name: 'Bóng bàn', met: 4.0 },
+  { key: 'weights', groupKey: 'gym', group: 'Phòng tập', name: 'Tập tạ (vừa)', met: 5.0 },
+  { key: 'yoga', groupKey: 'gym', group: 'Phòng tập', name: 'Yoga', met: 3.0 },
+  { key: 'rope', groupKey: 'gym', group: 'Phòng tập', name: 'Nhảy dây', met: 11.0 },
+  { key: 'aerobics', groupKey: 'gym', group: 'Phòng tập', name: 'Aerobic', met: 6.5 },
+  { key: 'cleaning', groupKey: 'chores', group: 'Việc nhà', name: 'Dọn nhà, lau nhà', met: 3.3 },
+  { key: 'gardening', groupKey: 'chores', group: 'Việc nhà', name: 'Làm vườn', met: 4.0 },
+  { key: 'cooking', groupKey: 'chores', group: 'Việc nhà', name: 'Nấu ăn', met: 2.5 },
 ];
 
 /** Calo tiêu hao = MET × 3.5 × kg / 200 × phút. */
