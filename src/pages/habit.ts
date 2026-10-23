@@ -14,11 +14,11 @@ type Data = { habits: Habit[]; logs: Log[] };
 
 const store = new SheetStore<Data>({
   tag: 'habit',
-  title: 'WFTools - Thói quen',
+  title: 'WFTools - Habits',
   empty: { habits: [], logs: [] },
   tables: {
-    habits: { sheet: 'Thói quen', columns: [{ key: 'id', label: 'Mã' }, { key: 'name', label: 'Tên thói quen' }, { key: 'created', label: 'Ngày bắt đầu' }] },
-    logs: { sheet: 'Nhật ký', columns: [{ key: 'id', label: 'Mã' }, { key: 'habitId', label: 'Mã thói quen' }, { key: 'date', label: 'Ngày hoàn thành' }] },
+    habits: { sheet: 'Habits', legacySheet: 'Thói quen', columns: [{ key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'name', label: 'Habit name', legacy: 'Tên thói quen' }, { key: 'created', label: 'Start date', legacy: 'Ngày bắt đầu' }] },
+    logs: { sheet: 'Log', legacySheet: 'Nhật ký', columns: [{ key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'habitId', label: 'Habit ID', legacy: 'Mã thói quen' }, { key: 'date', label: 'Completed on', legacy: 'Ngày hoàn thành' }] },
   },
 });
 

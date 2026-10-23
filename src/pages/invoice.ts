@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, escapeHtml, fmtDec, fmtInt, parseNumber, storage, toast } from '../ui';
+import { $, escapeHtml, fmtAmt, fmtDec, fmtField, fmtInt, parseNumber, storage, toast } from '../ui';
 import { SheetStore, newId } from '../google/sync';
 import { moneyInWords } from '../calc/words-vi';
 import { currentLang, pageText } from '../i18n';
@@ -29,14 +29,14 @@ const MAX_LOGO_BYTES = 300 * 1024;
 
 const store = new SheetStore<Data>({
   tag: 'invoice',
-  title: 'WFTools - Hoá đơn & báo giá',
+  title: 'WFTools - Invoices & quotes',
   empty: { docs: [] },
   tables: {
     docs: {
-      sheet: 'Chứng từ',
+      sheet: 'Documents', legacySheet: 'Chứng từ',
       columns: [
-        { key: 'id', label: 'Mã' }, { key: 'kind', label: 'Loại' }, { key: 'title', label: 'Số / khách hàng' },
-        { key: 'updated', label: 'Cập nhật' }, { key: 'total', label: 'Tổng tiền', type: 'number' }, { key: 'json', label: 'Dữ liệu (không sửa tay)' },
+        { key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'kind', label: 'Type', legacy: 'Loại' }, { key: 'title', label: 'Number / customer', legacy: 'Số / khách hàng' },
+        { key: 'updated', label: 'Updated', legacy: 'Cập nhật' }, { key: 'total', label: 'Total', legacy: 'Tổng tiền', type: 'number' }, { key: 'json', label: 'Data (do not edit)', legacy: 'Dữ liệu (không sửa tay)' },
       ],
     },
   },
@@ -166,7 +166,7 @@ function setPath(o: InvoiceDoc, path: string, value: string): void {
 function fillForm(): void {
   form.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('[name]').forEach((el) => {
     if (el.name === 'kind' || !el.name) return;
-    el.value = el.name === 'shipping' ? (doc.shipping ? fmtInt(doc.shipping) : '') : getPath(doc, el.name);
+    el.value = el.name === 'shipping' ? (doc.shipping ? fmtField(doc.shipping) : '') : getPath(doc, el.name);
   });
   root.querySelectorAll<HTMLInputElement>('input[name="kind"]').forEach((r) => (r.checked = r.value === doc.kind));
   $('#due-label').textContent = doc.kind === 'quote' ? T('validUntil','Hiệu lực đến') : T('dueDate','Hạn thanh toán');
@@ -182,7 +182,7 @@ function renderItems(): void {
         <input data-f="desc" type="text" value="${escapeHtml(it.desc)}" placeholder="${T('it.descPh','Tên hàng hoá, dịch vụ')}" aria-label="${T('it.descAria','Mô tả dòng')} ${i + 1}" maxlength="200" />
         <input data-f="unit" type="text" value="${escapeHtml(it.unit)}" aria-label="${T('it.unitAria','Đơn vị tính')}" maxlength="20" />
         <input data-f="qty" type="text" inputmode="decimal" value="${it.qty}" aria-label="${T('it.qtyAria','Số lượng')}" />
-        <input data-f="price" type="text" inputmode="numeric" value="${it.price ? fmtInt(it.price) : ''}" aria-label="${T('it.priceAria','Đơn giá')}" />
+        <input data-f="price" type="text" inputmode="numeric" value="${it.price ? fmtField(it.price) : ''}" aria-label="${T('it.priceAria','Đơn giá')}" />
         <input data-f="discount" type="text" inputmode="decimal" value="${it.discount || ''}" aria-label="${T('it.discAria','Chiết khấu phần trăm')}" />
         <button type="button" class="btn btn-sm" data-remove="${i}" aria-label="${T('it.removeAria','Xoá dòng')} ${i + 1}">✕</button>
       </div>`,
@@ -197,8 +197,9 @@ function totals(d: InvoiceDoc) {
     return { ...it, amount: gross - (gross * Math.min(100, Math.max(0, it.discount))) / 100 };
   });
   const subtotal = lines.reduce((s, l) => s + l.amount, 0);
-  const vatAmount = Math.round((subtotal * d.vat) / 100);
-  return { lines, subtotal, vatAmount, total: Math.round(subtotal + vatAmount + d.shipping) };
+  const r2 = (x: number) => Math.round(x * 100) / 100;
+  const vatAmount = r2((subtotal * d.vat) / 100);
+  return { lines, subtotal: r2(subtotal), vatAmount, total: r2(subtotal + vatAmount + d.shipping) };
 }
 
 const fmtDate = (s: string): string => {
@@ -235,14 +236,14 @@ function renderPreview(): void {
       <tbody>${t.lines
         .filter((l) => l.desc || l.price)
         .map((l, i) => `<tr><td>${i + 1}</td><td>${escapeHtml(l.desc)}</td><td>${escapeHtml(l.unit)}</td><td>${Number.isInteger(l.qty) ? fmtInt(l.qty) : fmtDec(l.qty)}</td>
-          <td>${fmtInt(l.price)}</td><td>${l.discount ? `${l.discount}%` : ''}</td><td>${fmtInt(l.amount)}</td></tr>`)
+          <td>${fmtAmt(l.price)}</td><td>${l.discount ? `${l.discount}%` : ''}</td><td>${fmtAmt(l.amount)}</td></tr>`)
         .join('')}</tbody>
     </table>
     <table class="pd-totals">
-      <tr><td>${T('p.subtotal','Cộng tiền hàng')}</td><td>${fmtInt(t.subtotal)}</td></tr>
-      ${doc.vat ? `<tr><td>${T('vat','Thuế GTGT')} ${doc.vat}%</td><td>${fmtInt(t.vatAmount)}</td></tr>` : ''}
-      ${doc.shipping ? `<tr><td>${T('shipping','Phí vận chuyển')}</td><td>${fmtInt(doc.shipping)}</td></tr>` : ''}
-      <tr class="pd-grand"><td>${T('p.total','Tổng thanh toán')}</td><td>${T('p.cur', '{n} đ').replace('{n}', fmtInt(t.total))}</td></tr>
+      <tr><td>${T('p.subtotal','Cộng tiền hàng')}</td><td>${fmtAmt(t.subtotal)}</td></tr>
+      ${doc.vat ? `<tr><td>${T('vat','Thuế GTGT')} ${doc.vat}%</td><td>${fmtAmt(t.vatAmount)}</td></tr>` : ''}
+      ${doc.shipping ? `<tr><td>${T('shipping','Phí vận chuyển')}</td><td>${fmtAmt(doc.shipping)}</td></tr>` : ''}
+      <tr class="pd-grand"><td>${T('p.total','Tổng thanh toán')}</td><td>${T('p.cur', '{n} đ').replace('{n}', fmtAmt(t.total))}</td></tr>
     </table>
     <p class="pd-words">${T('p.inWords','Bằng chữ')}: <i>${escapeHtml(moneyInWords(t.total))}</i></p>
     ${doc.seller.bank ? `<p class="pd-bank"><b>${T('bank','Thông tin chuyển khoản')}:</b> ${escapeHtml(doc.seller.bank)}</p>` : ''}
@@ -259,7 +260,7 @@ function renderSaved(): void {
   $('#saved').innerHTML = docs.length
     ? `<thead><tr><th>${T('th.doc','Chứng từ')}</th><th>${T('th.type','Loại')}</th><th>${T('th.updated','Cập nhật')}</th><th>${T('th.total','Tổng tiền')}</th><th></th></tr></thead><tbody>${docs
         .map((d) => `<tr><td>${escapeHtml(d.title)}</td><td>${d.kind === 'invoice' ? T('invoiceShort','Hoá đơn') : T('quote','Báo giá')}</td><td>${escapeHtml(d.updated.replace('T', ' ').slice(0, 16))}</td>
-          <td>${fmtInt(Number(d.total))}</td><td class="row"><button type="button" class="btn btn-sm" data-open="${escapeHtml(d.id)}">${T('open','Mở')}</button>
+          <td>${fmtAmt(Number(d.total))}</td><td class="row"><button type="button" class="btn btn-sm" data-open="${escapeHtml(d.id)}">${T('open','Mở')}</button>
           <button type="button" class="btn btn-sm" data-copy="${escapeHtml(d.id)}">${T('duplicate','Nhân bản')}</button><button type="button" class="btn btn-sm" data-delete="${escapeHtml(d.id)}">${T('del','Xoá')}</button></td></tr>`)
         .join('')}</tbody>`
     : `<tbody><tr><td class="note">${T('noSaved','Chưa lưu chứng từ nào. Bấm "Lưu" để lưu lại và mở ra sửa sau.')}</td></tr></tbody>`;
@@ -284,7 +285,7 @@ form.addEventListener('focusout', (e) => {
   const el = e.target as HTMLInputElement;
   if (el.dataset.f === 'price' || el.name === 'shipping') {
     const n = parseNumber(el.value);
-    if (Number.isFinite(n) && n > 0) el.value = fmtInt(n);
+    if (Number.isFinite(n) && n > 0) el.value = fmtField(n);
   }
 });
 form.addEventListener('click', (e) => {

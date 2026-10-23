@@ -17,16 +17,16 @@ const DEFAULT: Setting = { id: 'main', title: T('defaultTitle', 'Thời khoá bi
 
 const store = new SheetStore<Data>({
   tag: 'timetable',
-  title: T('sheetTitle', 'WFTools - Thời khoá biểu'),
+  title: 'WFTools - Timetable',
   empty: { settings: [], cells: [] },
   tables: {
-    settings: { sheet: 'Cấu hình', columns: [
-      { key: 'id', label: 'Mã' }, { key: 'title', label: 'Tiêu đề' }, { key: 'days', label: 'Các ngày' },
-      { key: 'morningCount', label: 'Số tiết sáng', type: 'number' }, { key: 'times', label: 'Giờ các tiết' },
+    settings: { sheet: 'Settings', legacySheet: 'Cấu hình', columns: [
+      { key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'title', label: 'Title', legacy: 'Tiêu đề' }, { key: 'days', label: 'Days', legacy: 'Các ngày' },
+      { key: 'morningCount', label: 'Morning periods', legacy: 'Số tiết sáng', type: 'number' }, { key: 'times', label: 'Period times', legacy: 'Giờ các tiết' },
     ] },
-    cells: { sheet: 'Nội dung', columns: [
-      { key: 'id', label: 'Mã' }, { key: 'day', label: 'Ngày', type: 'number' }, { key: 'period', label: 'Tiết', type: 'number' },
-      { key: 'subject', label: 'Môn học' }, { key: 'room', label: 'Phòng' },
+    cells: { sheet: 'Cells', legacySheet: 'Nội dung', columns: [
+      { key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'day', label: 'Day', legacy: 'Ngày', type: 'number' }, { key: 'period', label: 'Period', legacy: 'Tiết', type: 'number' },
+      { key: 'subject', label: 'Subject', legacy: 'Môn học' }, { key: 'room', label: 'Room', legacy: 'Phòng' },
     ] },
   },
 });

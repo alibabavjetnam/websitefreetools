@@ -1,8 +1,8 @@
 import { mountLayout } from '../layout';
-import { $, downloadBlob, escapeHtml, fmtDec, fmtInt, fmtMoney, moneyInput, parseNumber, setupTabs, storage } from '../ui';
+import { $, downloadBlob, escapeHtml, fmtAmt, fmtDec, fmtField, fmtInt, fmtMoney, moneyInput, parseNumber, priceStep, sampleMoney, setupTabs, storage } from '../ui';
 import { SheetStore, newId } from '../google/sync';
 import { breakEvenPrice, priceForMargin, profitAt, type PricingCosts } from '../calc/pricing';
-import { pageText } from '../i18n';
+import { currentLang, pageText } from '../i18n';
 
 mountLayout({ activeTool: 'inventory' });
 const T = pageText();
@@ -13,21 +13,21 @@ type Data = { products: Product[]; moves: Move[] };
 
 const store = new SheetStore<Data>({
   tag: 'inventory',
-  title: 'WFTools - Tồn kho',
+  title: 'WFTools - Inventory',
   empty: { products: [], moves: [] },
   tables: {
     products: {
-      sheet: 'Sản phẩm',
+      sheet: 'Products', legacySheet: 'Sản phẩm',
       columns: [
-        { key: 'id', label: 'Mã' }, { key: 'sku', label: 'Mã hàng (SKU)' }, { key: 'name', label: 'Tên sản phẩm' }, { key: 'unit', label: 'Đơn vị' },
-        { key: 'cost', label: 'Giá vốn', type: 'number' }, { key: 'price', label: 'Giá bán', type: 'number' }, { key: 'minQty', label: 'Tồn tối thiểu', type: 'number' },
+        { key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'sku', label: 'SKU', legacy: 'Mã hàng (SKU)' }, { key: 'name', label: 'Product name', legacy: 'Tên sản phẩm' }, { key: 'unit', label: 'Unit', legacy: 'Đơn vị' },
+        { key: 'cost', label: 'Cost', legacy: 'Giá vốn', type: 'number' }, { key: 'price', label: 'Price', legacy: 'Giá bán', type: 'number' }, { key: 'minQty', label: 'Minimum stock', legacy: 'Tồn tối thiểu', type: 'number' },
       ],
     },
     moves: {
-      sheet: 'Nhập xuất',
+      sheet: 'Stock movements', legacySheet: 'Nhập xuất',
       columns: [
-        { key: 'id', label: 'Mã' }, { key: 'date', label: 'Ngày' }, { key: 'productId', label: 'Mã sản phẩm' },
-        { key: 'qty', label: 'Số lượng (+ nhập, − xuất)', type: 'number' }, { key: 'note', label: 'Ghi chú' },
+        { key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'date', label: 'Date', legacy: 'Ngày' }, { key: 'productId', label: 'Product ID', legacy: 'Mã sản phẩm' },
+        { key: 'qty', label: 'Quantity (+ in, − out)', legacy: 'Số lượng (+ nhập, − xuất)', type: 'number' }, { key: 'note', label: 'Note', legacy: 'Ghi chú' },
       ],
     },
   },
@@ -44,12 +44,12 @@ root.innerHTML = `
     <div class="workspace">
       <form class="panel" id="price-form" novalidate>
         <div class="form-grid">
-          <label class="field"><span class="field-label">${T('costPer','Giá vốn / sản phẩm')}</span><input id="p-cost" type="text" value="120.000" /></label>
+          <label class="field"><span class="field-label">${T('costPer','Giá vốn / sản phẩm')}</span><input id="p-cost" type="text" value="${fmtField(sampleMoney(120000))}" /></label>
           <label class="field"><span class="field-label">${T('platformPct','Phí sàn, hoa hồng (%)')}</span><input id="p-platform" type="text" inputmode="decimal" value="0" /></label>
           <label class="field"><span class="field-label">${T('paymentPct','Phí thanh toán (%)')}</span><input id="p-payment" type="text" inputmode="decimal" value="0" /></label>
-          <label class="field"><span class="field-label">${T('taxPct','Thuế trên doanh thu (%)')}</span><input id="p-tax" type="text" inputmode="decimal" value="1,5" /></label>
-          <label class="field"><span class="field-label">${T('fixedPer','Phí cố định / đơn (ship, đóng gói)')}</span><input id="p-fixed" type="text" value="10.000" /></label>
-          <label class="field"><span class="field-label">${T('adsPer','Quảng cáo / đơn')}</span><input id="p-ads" type="text" value="15.000" /></label>
+          <label class="field"><span class="field-label">${T('taxPct','Thuế trên doanh thu (%)')}</span><input id="p-tax" type="text" inputmode="decimal" value="${fmtDec(1.5)}" /></label>
+          <label class="field"><span class="field-label">${T('fixedPer','Phí cố định / đơn (ship, đóng gói)')}</span><input id="p-fixed" type="text" value="${fmtField(sampleMoney(10000))}" /></label>
+          <label class="field"><span class="field-label">${T('adsPer','Quảng cáo / đơn')}</span><input id="p-ads" type="text" value="${fmtField(sampleMoney(15000))}" /></label>
         </div>
         <p class="note">${T('pricing.note','Mỗi sàn và mỗi ngành hàng có mức phí khác nhau, thay đổi theo thời gian. Hãy nhập theo biểu phí hiện hành trong trang quản lý bán hàng của bạn.')}</p>
         <fieldset class="field">
@@ -58,7 +58,7 @@ root.innerHTML = `
           <label class="check"><input type="radio" name="mode" value="price" /><span>${T('mode.price','Lợi nhuận khi bán ở một mức giá')}</span></label>
         </fieldset>
         <label class="field" id="f-margin"><span class="field-label">${T('marginWanted','Biên lợi nhuận mong muốn (% trên giá bán)')}</span><input id="p-margin" type="text" inputmode="decimal" value="20" /></label>
-        <label class="field" id="f-price" hidden><span class="field-label">${T('pricePlanned','Giá bán dự kiến')}</span><input id="p-price" type="text" value="250.000" /></label>
+        <label class="field" id="f-price" hidden><span class="field-label">${T('pricePlanned','Giá bán dự kiến')}</span><input id="p-price" type="text" value="${fmtField(sampleMoney(250000))}" /></label>
       </form>
       <section class="preview" aria-live="polite">
         <div class="stat-grid" id="p-summary"></div>
@@ -139,7 +139,7 @@ function renderPricing(): void {
   err.hidden = true;
   const be = breakEvenPrice(c);
   $('#p-summary').innerHTML = `
-    <div class="stat ${mode === 'margin' ? 'stat--main' : ''}"><span class="stat-label">${T('price','Giá bán')}</span><span class="stat-value">${fmtMoney(Math.ceil(r.price / 1000) * 1000)}</span>${mode === 'margin' ? `<span class="stat-label">${T('exact','Chính xác:')} ${fmtInt(r.price)} ${T('dong','đ, đã làm tròn lên nghìn')}</span>` : ''}</div>
+    <div class="stat ${mode === 'margin' ? 'stat--main' : ''}"><span class="stat-label">${T('price','Giá bán')}</span><span class="stat-value">${fmtMoney(Math.ceil(r.price / priceStep()) * priceStep())}</span>${mode === 'margin' ? `<span class="stat-label">${T('exact','Chính xác:')} ${fmtAmt(r.price)}${currentLang() === 'vi' ? ` ${T('dong','đ, đã làm tròn lên nghìn')}` : ''}</span>` : ''}</div>
     <div class="stat ${mode === 'price' ? 'stat--main' : ''}"><span class="stat-label">${T('profitPer','Lợi nhuận / sản phẩm')}</span><span class="stat-value ${r.profit < 0 ? 'error-text' : ''}">${fmtMoney(r.profit)}</span></div>
     <div class="stat"><span class="stat-label">${T('marginMarkup','Biên lợi nhuận / trên giá vốn')}</span><span class="stat-value">${fmtDec(r.margin)}% / ${fmtDec(r.markup)}%</span></div>
     <div class="stat"><span class="stat-label">${T('breakEven','Giá hoà vốn')}</span><span class="stat-value">${be ? fmtMoney(be) : '—'}</span></div>`;
@@ -187,7 +187,7 @@ function renderStock(): void {
         .map((p) => {
           const q = stock.get(p.id) ?? 0;
           return `<tr${q <= p.minQty ? ' class="is-low"' : ''}><td>${escapeHtml(p.name)}${q <= p.minQty ? ' <span class="badge-low">' + T('badge.low','Sắp hết') + '</span>' : ''}</td><td>${escapeHtml(p.sku)}</td>
-            <td><b>${fmtInt(q)}</b> ${escapeHtml(p.unit)}</td><td>${fmtInt(p.minQty)}</td><td>${fmtInt(p.cost)}</td><td>${fmtInt(p.price)}</td><td>${fmtInt(Math.max(0, q) * p.cost)}</td>
+            <td><b>${fmtInt(q)}</b> ${escapeHtml(p.unit)}</td><td>${fmtInt(p.minQty)}</td><td>${fmtAmt(p.cost)}</td><td>${fmtAmt(p.price)}</td><td>${fmtAmt(Math.max(0, q) * p.cost)}</td>
             <td><button type="button" class="btn btn-sm" data-del-product="${escapeHtml(p.id)}">${T('del','Xoá')}</button></td></tr>`;
         })
         .join('')}</tbody>`
@@ -218,7 +218,7 @@ $('#prod-form').addEventListener('submit', (e) => {
   const d = store.get();
   const p: Product = {
     id: newId(), sku: $<HTMLInputElement>('#pr-sku').value.trim(), name, unit: $<HTMLInputElement>('#pr-unit').value.trim() || T('defaultUnit', 'cái'),
-    cost: Number.isFinite(cost) ? Math.round(cost) : 0, price: Number.isFinite(price) ? Math.round(price) : 0,
+    cost: Number.isFinite(cost) ? Math.round(cost * 100) / 100 : 0, price: Number.isFinite(price) ? Math.round(price * 100) / 100 : 0,
     minQty: Math.max(0, Math.floor(Number($<HTMLInputElement>('#pr-min').value) || 0)),
   };
   const moves = qty > 0 ? [...d.moves, { id: newId(), date: today(), productId: p.id, qty, note: T('openingQty', 'Tồn đầu kỳ') }] : d.moves;

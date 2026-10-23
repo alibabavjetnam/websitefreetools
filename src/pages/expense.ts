@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, downloadBlob, escapeHtml, fmtInt, fmtMoney, moneyInput } from '../ui';
+import { $, downloadBlob, escapeHtml, fmtAmt, fmtField, fmtMoney, moneyInput, sampleMoney } from '../ui';
 import { SheetStore, newId } from '../google/sync';
 import { currentLang, pageText } from '../i18n';
 
@@ -22,19 +22,19 @@ const INCOME_CATS = ['Lương', 'Thưởng', 'Kinh doanh', 'Đầu tư', 'Đư�
 
 const store = new SheetStore<Data>({
   tag: 'expense',
-  title: 'WFTools - Chi tiêu',
+  title: 'WFTools - Expenses',
   empty: { tx: [], budgets: [] },
   tables: {
     tx: {
-      sheet: 'Giao dịch',
+      sheet: 'Transactions', legacySheet: 'Giao dịch',
       columns: [
-        { key: 'id', label: 'Mã' }, { key: 'date', label: 'Ngày' }, { key: 'type', label: 'Loại' },
-        { key: 'category', label: 'Danh mục' }, { key: 'amount', label: 'Số tiền', type: 'number' }, { key: 'note', label: 'Ghi chú' },
+        { key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'date', label: 'Date', legacy: 'Ngày' }, { key: 'type', label: 'Type', legacy: 'Loại' },
+        { key: 'category', label: 'Category', legacy: 'Danh mục' }, { key: 'amount', label: 'Amount', legacy: 'Số tiền', type: 'number' }, { key: 'note', label: 'Note', legacy: 'Ghi chú' },
       ],
     },
     budgets: {
-      sheet: 'Ngân sách',
-      columns: [{ key: 'id', label: 'Mã' }, { key: 'category', label: 'Danh mục' }, { key: 'limit', label: 'Hạn mức tháng', type: 'number' }],
+      sheet: 'Budgets', legacySheet: 'Ngân sách',
+      columns: [{ key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'category', label: 'Category', legacy: 'Danh mục' }, { key: 'limit', label: 'Monthly limit', legacy: 'Hạn mức tháng', type: 'number' }],
     },
   },
 });
@@ -66,7 +66,7 @@ root.innerHTML = `
         <label><input type="radio" name="type" value="thu" /><span>${T('income','Khoản thu')}</span></label>
       </div>
       <div class="form-grid">
-        <label class="field"><span class="field-label">${T('amount','Số tiền')}</span><input id="amount" type="text" placeholder="50.000" autocomplete="off" /></label>
+        <label class="field"><span class="field-label">${T('amount','Số tiền')}</span><input id="amount" type="text" placeholder="${fmtField(sampleMoney(50000))}" autocomplete="off" /></label>
         <label class="field"><span class="field-label">${T('date','Ngày')}</span><input id="date" type="date" /></label>
         <label class="field"><span class="field-label">${T('category','Danh mục')}</span><select id="category"></select></label>
         <label class="field"><span class="field-label">${T('note','Ghi chú')}</span><input id="note" type="text" maxlength="200" placeholder="${T('notePh','Không bắt buộc')}" /></label>
@@ -83,7 +83,7 @@ root.innerHTML = `
         <div class="options-body">
           <div class="form-grid">
             <label class="field"><span class="field-label">${T('category','Danh mục')}</span><select id="b-cat">${EXPENSE_CATS.map((c) => `<option value="${c}">${catLabel(c)}</option>`).join('')}</select></label>
-            <label class="field"><span class="field-label">${T('limitMonth','Hạn mức / tháng')}</span><input id="b-limit" type="text" placeholder="3.000.000" /></label>
+            <label class="field"><span class="field-label">${T('limitMonth','Hạn mức / tháng')}</span><input id="b-limit" type="text" placeholder="${fmtField(sampleMoney(3000000))}" /></label>
           </div>
           <div class="row"><button type="button" class="btn" id="b-save">${T('saveLimit','Lưu hạn mức')}</button><span class="note">${T('limitHint','Nhập 0 để bỏ hạn mức.')}</span></div>
         </div>
@@ -138,7 +138,7 @@ function render(): void {
           const pct = limit > 0 ? spent / limit : spent / maxSpent;
           const over = limit > 0 && spent > limit;
           return `<div class="cat-bar${over ? ' is-over' : ''}">
-            <div class="cat-bar-head"><span>${escapeHtml(catLabel(cat))}</span><span>${fmtInt(spent)}${limit > 0 ? ` / ${fmtInt(limit)}` : ''}</span></div>
+            <div class="cat-bar-head"><span>${escapeHtml(catLabel(cat))}</span><span>${fmtAmt(spent)}${limit > 0 ? ` / ${fmtAmt(limit)}` : ''}</span></div>
             <div class="cat-bar-track"><i style="width:${Math.min(100, pct * 100).toFixed(1)}%"></i></div>
             ${over ? `<span class="cat-bar-note">${T('over','Vượt hạn mức')} ${fmtMoney(spent - limit)}</span>` : ''}
           </div>`;
@@ -150,7 +150,7 @@ function render(): void {
     ? `<thead><tr><th>${T('th.date','Ngày')}</th><th>${T('th.cat','Danh mục')}</th><th>${T('th.note','Ghi chú')}</th><th>${T('th.amount','Số tiền')}</th><th></th></tr></thead><tbody>${list
         .map(
           (t) => `<tr><td>${escapeHtml(showDate(normDate(t.date)))}</td><td>${escapeHtml(catLabel(t.category))}</td>
-          <td>${escapeHtml(t.note)}</td><td class="${t.type === 'thu' ? 'ok-text' : ''}">${t.type === 'thu' ? '+' : '−'}${fmtInt(t.amount)}</td>
+          <td>${escapeHtml(t.note)}</td><td class="${t.type === 'thu' ? 'ok-text' : ''}">${t.type === 'thu' ? '+' : '−'}${fmtAmt(t.amount)}</td>
           <td><button type="button" class="btn btn-sm" data-del="${escapeHtml(t.id)}" aria-label="${T('delTx','Xoá giao dịch')}">${T('del','Xoá')}</button></td></tr>`,
         )
         .join('')}</tbody>`
@@ -170,7 +170,7 @@ form.addEventListener('submit', (e) => {
   err.hidden = !problem;
   if (problem) return;
   const d = store.get();
-  const tx: Tx = { id: newId(), date, type: txType(), category: $<HTMLSelectElement>('#category').value, amount: Math.round(amount), note: $<HTMLInputElement>('#note').value.trim() };
+  const tx: Tx = { id: newId(), date, type: txType(), category: $<HTMLSelectElement>('#category').value, amount: Math.round(amount * 100) / 100, note: $<HTMLInputElement>('#note').value.trim() };
   store.set({ ...d, tx: [...d.tx, tx] });
   $<HTMLInputElement>('#amount').value = '';
   $<HTMLInputElement>('#note').value = '';
@@ -193,7 +193,7 @@ $('#b-save').addEventListener('click', () => {
   if (!Number.isFinite(limit) || limit < 0) return;
   const d = store.get();
   const others = d.budgets.filter((b) => b.category !== cat);
-  store.set({ ...d, budgets: limit > 0 ? [...others, { id: newId(), category: cat, limit: Math.round(limit) }] : others });
+  store.set({ ...d, budgets: limit > 0 ? [...others, { id: newId(), category: cat, limit: Math.round(limit * 100) / 100 }] : others });
   render();
 });
 

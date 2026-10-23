@@ -1,5 +1,5 @@
 /** Xử lý ảnh dùng chung: đọc ảnh, vẽ lên canvas, xuất ra các định dạng (kể cả BMP, ICO tự mã hoá) */
-import { t, tf } from '../i18n';
+import { localeTag, t, tf } from '../i18n';
 
 export const MAX_IMAGE_BYTES = 40 * 1024 * 1024;
 
@@ -154,7 +154,7 @@ export function icoBytes(sizes: number[], pngs: Uint8Array[]): ArrayBuffer {
 }
 
 export const fmtBytes = (b: number): string =>
-  b >= 1048576 ? `${(b / 1048576).toFixed(2).replace('.', ',')} MB` : b >= 1024 ? `${Math.round(b / 1024)} KB` : `${b} byte`;
+  b >= 1048576 ? `${(b / 1048576).toLocaleString(localeTag(), { maximumFractionDigits: 2, minimumFractionDigits: 2 })} MB` : b >= 1024 ? `${Math.round(b / 1024)} KB` : `${b} byte`;
 
 /** Tên file mới: giữ tên gốc, đổi phần mở rộng, thêm hậu tố nếu có */
 export const renameFile = (name: string, ext: string, suffix = ''): string => `${name.replace(/\.[^.]+$/, '') || 'anh'}${suffix}.${ext}`;

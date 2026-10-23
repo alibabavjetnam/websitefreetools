@@ -1,5 +1,5 @@
 /** Tiện ích giao diện dùng chung cho các trang công cụ */
-import { t } from './i18n';
+import { t, currentLang, localeTag } from './i18n';
 
 export const $ = <T extends HTMLElement = HTMLElement>(sel: string, root: ParentNode = document): T => {
   const el = root.querySelector<T>(sel);
@@ -11,21 +11,57 @@ export function escapeHtml(s: string): string {
   return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string);
 }
 
-const vnNumber = new Intl.NumberFormat('vi-VN', { maximumFractionDigits: 0 });
-const vnDecimal = new Intl.NumberFormat('vi-VN', { maximumFractionDigits: 2 });
+/** Tiền tệ theo ngôn ngữ: mã ISO, số chữ số thập phân, và tỉ giá gần đúng so với VND (chỉ dùng để quy giá trị mẫu). */
+const CURRENCY: Record<string, { code: string; dec: number; perUnit: number }> = {
+  en: { code: 'USD', dec: 2, perUnit: 25000 }, vi: { code: 'VND', dec: 0, perUnit: 1 }, ja: { code: 'JPY', dec: 0, perUnit: 170 },
+  zh: { code: 'CNY', dec: 2, perUnit: 3500 }, es: { code: 'EUR', dec: 2, perUnit: 28000 }, de: { code: 'EUR', dec: 2, perUnit: 28000 },
+  ru: { code: 'RUB', dec: 2, perUnit: 300 }, fr: { code: 'EUR', dec: 2, perUnit: 28000 }, pt: { code: 'BRL', dec: 2, perUnit: 4600 },
+  it: { code: 'EUR', dec: 2, perUnit: 28000 }, tr: { code: 'TRY', dec: 2, perUnit: 600 }, nl: { code: 'EUR', dec: 2, perUnit: 28000 },
+};
+const cur = () => CURRENCY[currentLang()] || CURRENCY.en;
+const nf = (opts: Intl.NumberFormatOptions) => new Intl.NumberFormat(localeTag(), opts);
 
-/** 1234567 -> "1.234.567" */
-export const fmtInt = (n: number): string => (Number.isFinite(n) ? vnNumber.format(Math.round(n)) : '—');
-/** 1234.5 -> "1.234,5" */
-export const fmtDec = (n: number): string => (Number.isFinite(n) ? vnDecimal.format(n) : '—');
-export const fmtMoney = (n: number): string => `${fmtInt(n)} đ`;
+/** Số nguyên theo định dạng của ngôn ngữ đang chọn (mặc định kiểu Mỹ): 1234567 -> "1,234,567" */
+export const fmtInt = (n: number): string => (Number.isFinite(n) ? nf({ maximumFractionDigits: 0 }).format(Math.round(n)) : '—');
+/** Số thập phân (tối đa 2 chữ số): 1234.5 -> "1,234.5" */
+export const fmtDec = (n: number): string => (Number.isFinite(n) ? nf({ maximumFractionDigits: 2 }).format(n) : '—');
+/** Số tiền không kèm ký hiệu, đúng số lẻ của đồng tiền (USD 2 số lẻ, VND/JPY 0 số lẻ) */
+export const fmtAmt = (n: number): string => (Number.isFinite(n) ? nf({ minimumFractionDigits: cur().dec, maximumFractionDigits: cur().dec }).format(n) : '—');
+/** Số tiền để điền vào ô nhập: bỏ số lẻ thừa */
+export const fmtField = (n: number): string => (Number.isFinite(n) ? nf({ minimumFractionDigits: 0, maximumFractionDigits: cur().dec }).format(n) : '—');
+/** Số tiền kèm ký hiệu của đồng tiền theo ngôn ngữ: "$1,234.50", "1.234,50 €", "1.234 đ" */
+export const fmtMoney = (n: number): string => {
+  if (!Number.isFinite(n)) return '—';
+  if (currentLang() === 'vi') return `${fmtInt(n)} đ`;
+  return nf({ style: 'currency', currency: cur().code, minimumFractionDigits: cur().dec, maximumFractionDigits: cur().dec }).format(n);
+};
+/** Số tiền đồng Việt Nam (dùng cho công cụ tính theo luật Việt Nam) */
+export const fmtVnd = (n: number): string => `${fmtInt(n)} đ`;
+/** Quy một giá trị mẫu tính theo VND sang đồng tiền của ngôn ngữ, làm tròn gọn (2 chữ số có nghĩa) */
+export function sampleMoney(vnd: number): number {
+  const v = vnd / cur().perUnit;
+  if (v < 10) return Math.max(cur().dec ? 0.5 : 1, Math.round(v * 2) / 2);
+  const mag = Math.pow(10, Math.floor(Math.log10(v)) - 1);
+  return Math.round(v / mag) * mag;
+}
+/** Làm tròn giá lên bậc "đẹp" của đồng tiền (VND: nghìn; JPY: chục; còn lại: đơn vị) */
+export const priceStep = (): number => (currentLang() === 'vi' ? 1000 : cur().dec === 0 ? 10 : 1);
+/** Đơn vị tiền ngắn để ghi nhãn (ví dụ "VND", "USD") */
+export const currencyCode = (): string => cur().code;
+
+/** Dấu thập phân và dấu nghìn của ngôn ngữ đang chọn */
+function separators(): { dec: string; grp: string } {
+  const parts = nf({ useGrouping: true, minimumFractionDigits: 1 }).formatToParts(11111.1);
+  return { dec: parts.find((p) => p.type === 'decimal')?.value ?? '.', grp: parts.find((p) => p.type === 'group')?.value ?? ',' };
+}
 
 /**
- * Đọc số người dùng gõ: chấp nhận "15.000.000", "15,000,000", "15000000", "2,5" (thập phân kiểu Việt)
- * và "2.5" (thập phân kiểu Anh). Trả về NaN nếu không đọc được.
+ * Đọc số người dùng gõ: chấp nhận "15.000.000", "15,000,000", "15000000", "2,5" và "2.5".
+ * Khi chỉ có một loại dấu xuất hiện một lần và dễ nhầm ("1.500"), ưu tiên cách hiểu của ngôn ngữ đang chọn.
+ * Trả về NaN nếu không đọc được.
  */
 export function parseNumber(raw: string): number {
-  let s = raw.trim().replace(/\s|đ|vnđ|vnd/gi, '');
+  let s = raw.trim().replace(/[^\d.,-]/g, '');
   if (!s) return NaN;
   const lastDot = s.lastIndexOf('.');
   const lastComma = s.lastIndexOf(',');
@@ -36,22 +72,24 @@ export function parseNumber(raw: string): number {
   } else {
     const sep = lastDot >= 0 ? '.' : lastComma >= 0 ? ',' : '';
     if (sep) {
-      const count = s.split(sep).length - 1;
-      const isThousands = count > 1 || (/^\d{1,3}$/.test(s.split(sep)[0]) && /^\d{3}$/.test(s.split(sep)[1]) && s.length > 4);
-      // "15.000.000", "15,000,000", "1.500" là phân cách nghìn; "2,5", "2.5" là thập phân
-      s = isThousands ? s.split(sep).join('') : s.replace(sep, '.');
+      const parts = s.split(sep);
+      let isThousands: boolean;
+      if (parts.length > 2) isThousands = true;
+      else if (/^\d{1,3}$/.test(parts[0]) && /^\d{3}$/.test(parts[1])) isThousands = separators().grp.replace(/\s/g, '') === sep || (separators().dec !== sep && s.length > 4);
+      else isThousands = false;
+      s = isThousands ? parts.join('') : s.replace(sep, '.');
     }
   }
   const n = Number(s);
   return Number.isFinite(n) ? n : NaN;
 }
 
-/** Ô nhập số tiền: tự thêm dấu chấm phân cách nghìn khi rời ô */
+/** Ô nhập số tiền: tự thêm dấu phân cách nghìn khi rời ô */
 export function moneyInput(input: HTMLInputElement): () => number {
-  input.inputMode = 'numeric';
+  input.inputMode = 'decimal';
   input.addEventListener('blur', () => {
     const n = parseNumber(input.value);
-    if (Number.isFinite(n)) input.value = fmtInt(n);
+    if (Number.isFinite(n)) input.value = fmtField(n);
   });
   return () => parseNumber(input.value);
 }

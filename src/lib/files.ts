@@ -1,5 +1,6 @@
 /** Tiện ích chung cho các công cụ xử lý file */
 import { CDN, global, loadScript } from './cdn';
+import { localeTag } from '../i18n';
 
 /** Gắn ô chọn file + kéo thả. Gọi onFiles với danh sách file người dùng chọn. */
 export function bindDropzone(drop: HTMLElement, input: HTMLInputElement, onFiles: (files: File[]) => void): void {
@@ -20,8 +21,8 @@ export const baseName = (name: string): string => (name.includes('.') ? name.sli
 
 export function fmtSize(bytes: number): string {
   if (bytes < 1024) return `${bytes} B`;
-  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1).replace('.', ',')} KB`;
-  return `${(bytes / 1024 / 1024).toFixed(1).replace('.', ',')} MB`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toLocaleString(localeTag(), { maximumFractionDigits: 1, minimumFractionDigits: 1 })} KB`;
+  return `${(bytes / 1024 / 1024).toLocaleString(localeTag(), { maximumFractionDigits: 1, minimumFractionDigits: 1 })} MB`;
 }
 
 interface ZipWriter { file(name: string, data: Blob | Uint8Array | string): void; generateAsync(o: { type: 'blob' }): Promise<Blob> }

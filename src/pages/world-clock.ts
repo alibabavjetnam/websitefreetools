@@ -8,6 +8,8 @@ const T = pageText();
 const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL' } as Record<string, string>)[currentLang()] || 'en-US';
 
 const DEFAULT_ZONES = T('defaultZones', 'Asia/Ho_Chi_Minh,Asia/Tokyo,Europe/London,America/New_York').split(',').map((x) => x.trim()).filter(Boolean);
+/** Múi giờ gốc để so sánh: nước của ngôn ngữ đang chọn (phần tử đầu của danh sách mặc định) */
+const REF_TZ = DEFAULT_ZONES[0] || 'America/New_York';
 const store = storage<string[]>('world-clock', DEFAULT_ZONES);
 const cfg = storage<{ h24: boolean }>('world-clock-cfg', { h24: true });
 
@@ -48,11 +50,12 @@ function renderClocks(): void {
     ? list.map((tz) => {
         const z = zoneOf(tz);
         if (!z) return '';
-        const diff = offsetHours(tz, now); // chênh lệch so với giờ VN
+        const diff = offsetHours(tz, now, REF_TZ); // chênh lệch so với nước của ngôn ngữ đang chọn
+        const refName = zoneOf(REF_TZ)?.country ?? '';
         return `<div class="clock-card"><div class="clock-head"><span class="clock-flag">${z.flag}</span><div><b>${escapeHtml(z.country)}</b><span class="clock-city">${escapeHtml(z.city)}</span></div>
           <button type="button" class="clock-rm" data-rm="${tz}" aria-label="${T('remove','Bỏ')}">✕</button></div>
           <div class="clock-time" data-clock="${tz}">${fmtTime(tz, now)}</div>
-          <div class="clock-date">${fmtDate(tz, now)} · ${diff === 0 ? T('sameVN','cùng giờ VN') : `${diff > 0 ? '+' : ''}${diff}h ${T('vsVN','so với VN')}`}</div></div>`;
+          <div class="clock-date">${fmtDate(tz, now)} · ${diff === 0 ? T('sameRef','cùng giờ {name}').replace('{name}', refName) : `${diff > 0 ? '+' : ''}${diff}h ${T('vsRef','so với {name}').replace('{name}', refName)}`}</div></div>`;
       }).join('')
     : `<p class="note">${T('empty','Chưa có đồng hồ nào. Chọn quốc gia ở ô phía trên để thêm.')}</p>`;
   renderCompareBase();

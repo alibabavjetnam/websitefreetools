@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, downloadBlob, fmtDec, fmtInt, fmtMoney, moneyInput, parseNumber } from '../ui';
+import { $, downloadBlob, fmtAmt, fmtDec, fmtField, fmtMoney, moneyInput, parseNumber, sampleMoney } from '../ui';
 import { loanSchedule, type LoanMethod } from '../calc/loan';
 import { pageText } from '../i18n';
 
@@ -11,7 +11,7 @@ $('#tool-root').innerHTML = `
     <form class="panel" id="loan-form" novalidate>
       <label class="field">
         <span class="field-label">${T('principal','Số tiền vay')}</span>
-        <input id="principal" type="text" value="1.000.000.000" autocomplete="off" />
+        <input id="principal" type="text" value="${fmtField(sampleMoney(1e9))}" autocomplete="off" />
       </label>
       <div class="form-grid">
         <label class="field">
@@ -24,7 +24,7 @@ $('#tool-root').innerHTML = `
         </label>
         <label class="field">
           <span class="field-label">${T('rate','Lãi suất (%/năm)')}</span>
-          <input id="rate" type="text" inputmode="decimal" value="10,5" />
+          <input id="rate" type="text" inputmode="decimal" value="${fmtDec(10.5)}" />
         </label>
       </div>
       <fieldset class="field">
@@ -105,9 +105,9 @@ function render(): void {
   $('#schedule').innerHTML = `
     <thead><tr><th>${T('th.month','Tháng')}</th><th>${T('th.rate','Lãi suất')}</th><th>${T('th.principal','Tiền gốc')}</th><th>${T('th.interest','Tiền lãi')}</th><th>${T('th.payment','Tổng trả')}</th><th>${T('th.balance','Dư nợ còn lại')}</th></tr></thead>
     <tbody>${res.rows
-      .map((r) => `<tr><td>${r.month}</td><td>${fmtDec(r.rate)}%</td><td>${fmtInt(r.principal)}</td><td>${fmtInt(r.interest)}</td><td>${fmtInt(r.payment)}</td><td>${fmtInt(r.balance)}</td></tr>`)
+      .map((r) => `<tr><td>${r.month}</td><td>${fmtDec(r.rate)}%</td><td>${fmtAmt(r.principal)}</td><td>${fmtAmt(r.interest)}</td><td>${fmtAmt(r.payment)}</td><td>${fmtAmt(r.balance)}</td></tr>`)
       .join('')}</tbody>
-    <tfoot><tr><td>${T('total','Tổng')}</td><td></td><td>${fmtInt(principal)}</td><td>${fmtInt(res.totalInterest)}</td><td>${fmtInt(res.totalPaid)}</td><td></td></tr></tfoot>`;
+    <tfoot><tr><td>${T('total','Tổng')}</td><td></td><td>${fmtAmt(principal)}</td><td>${fmtAmt(res.totalInterest)}</td><td>${fmtAmt(res.totalPaid)}</td><td></td></tr></tfoot>`;
 }
 
 $('#export').addEventListener('click', () => {

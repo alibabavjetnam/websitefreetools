@@ -11,12 +11,12 @@ type Data = { entries: Entry[] };
 
 const store = new SheetStore<Data>({
   tag: 'journal',
-  title: T('sheetTitle', 'WFTools - Nhật ký'),
+  title: 'WFTools - Journal',
   empty: { entries: [] },
   tables: {
-    entries: { sheet: 'Nhật ký', columns: [
-      { key: 'id', label: 'Mã' }, { key: 'date', label: 'Ngày' }, { key: 'mood', label: 'Tâm trạng' },
-      { key: 'title', label: 'Tiêu đề' }, { key: 'content', label: 'Nội dung' },
+    entries: { sheet: 'Journal', legacySheet: 'Nhật ký', columns: [
+      { key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'date', label: 'Date', legacy: 'Ngày' }, { key: 'mood', label: 'Mood', legacy: 'Tâm trạng' },
+      { key: 'title', label: 'Title', legacy: 'Tiêu đề' }, { key: 'content', label: 'Content', legacy: 'Nội dung' },
     ] },
   },
 });

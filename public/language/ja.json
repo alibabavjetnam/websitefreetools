@@ -1936,7 +1936,9 @@
       "city.Pacific/Auckland": "オークランド",
       "city.Africa/Johannesburg": "ヨハネスブルグ",
       "city.Africa/Cairo": "カイロ",
-      "defaultZones": "Asia/Tokyo,Asia/Shanghai,America/New_York,Europe/London"
+      "defaultZones": "Asia/Tokyo,Asia/Shanghai,America/New_York,Europe/London",
+      "sameRef": "{name}と同じ",
+      "vsRef": "{name}比"
     },
     "utm": {
       "preset.0": "Facebook（投稿）",

@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, downloadBlob, escapeHtml, fmtInt, toast } from '../ui';
+import { $, downloadBlob, escapeHtml, fmtDec, fmtInt, toast } from '../ui';
 import { pageText } from '../i18n';
 
 mountLayout({ activeTool: 'image-convert' });
@@ -73,7 +73,7 @@ interface Item {
 }
 let items: Item[] = [];
 
-const fmtSize = (b: number) => (b >= 1048576 ? `${(b / 1048576).toFixed(2).replace('.', ',')} MB` : `${fmtInt(b / 1024)} KB`);
+const fmtSize = (b: number) => (b >= 1048576 ? `${fmtDec(b / 1048576)} MB` : `${fmtInt(b / 1024)} KB`);
 
 function addFiles(list: FileList | File[]): void {
   const errors: string[] = [];

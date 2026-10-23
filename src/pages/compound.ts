@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, fmtInt, fmtMoney, moneyInput, parseNumber } from '../ui';
+import { $, fmtAmt, fmtField, fmtMoney, moneyInput, parseNumber, sampleMoney } from '../ui';
 import { compoundGrowth, type Compounding } from '../calc/compound';
 import { pageText } from '../i18n';
 
@@ -12,11 +12,11 @@ $('#tool-root').innerHTML = `
       <div class="form-grid">
         <label class="field">
           <span class="field-label">${T('initial','Số tiền ban đầu')}</span>
-          <input id="initial" type="text" value="100.000.000" autocomplete="off" />
+          <input id="initial" type="text" value="${fmtField(sampleMoney(1e8))}" autocomplete="off" />
         </label>
         <label class="field">
           <span class="field-label">${T('monthly','Góp thêm mỗi tháng')}</span>
-          <input id="monthly" type="text" value="5.000.000" autocomplete="off" />
+          <input id="monthly" type="text" value="${fmtField(sampleMoney(5e6))}" autocomplete="off" />
         </label>
         <label class="field">
           <span class="field-label">${T('rate','Lợi suất (%/năm)')}</span>
@@ -67,8 +67,8 @@ function chart(years: { year: number; contributed: number; interest: number; bal
       const hI = ((H - padB - padT) * Math.max(0, y.interest)) / max;
       const label = years.length <= 15 || i % Math.ceil(years.length / 12) === 0 || i === years.length - 1
         ? `<text x="${x + w / 2}" y="${H - 6}" text-anchor="middle">${y.year}</text>` : '';
-      return `<rect x="${x}" y="${H - padB - hC}" width="${w}" height="${hC}" class="bar-a"><title>${T('year','Năm')} ${y.year}: ${T('contrib','góp')} ${fmtInt(y.contributed)}</title></rect>
-        <rect x="${x}" y="${H - padB - hC - hI}" width="${w}" height="${hI}" class="bar-b"><title>${T('year','Năm')} ${y.year}: ${T('interest','lãi')} ${fmtInt(y.interest)}</title></rect>${label}`;
+      return `<rect x="${x}" y="${H - padB - hC}" width="${w}" height="${hC}" class="bar-a"><title>${T('year','Năm')} ${y.year}: ${T('contrib','góp')} ${fmtAmt(y.contributed)}</title></rect>
+        <rect x="${x}" y="${H - padB - hC - hI}" width="${w}" height="${hI}" class="bar-b"><title>${T('year','Năm')} ${y.year}: ${T('interest','lãi')} ${fmtAmt(y.interest)}</title></rect>${label}`;
     })
     .join('');
   return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${bars}</svg>
@@ -101,7 +101,7 @@ function render(): void {
   $('#chart').innerHTML = chart(res.years);
   $('#table').innerHTML = `
     <thead><tr><th>${T('th.year','Năm')}</th><th>${T('th.contrib','Tổng đã góp')}</th><th>${T('th.interest','Tổng tiền lãi')}</th><th>${T('th.balance','Số dư cuối năm')}</th></tr></thead>
-    <tbody>${res.years.map((y) => `<tr><td>${y.year}</td><td>${fmtInt(y.contributed)}</td><td>${fmtInt(y.interest)}</td><td>${fmtInt(y.balance)}</td></tr>`).join('')}</tbody>`;
+    <tbody>${res.years.map((y) => `<tr><td>${y.year}</td><td>${fmtAmt(y.contributed)}</td><td>${fmtAmt(y.interest)}</td><td>${fmtAmt(y.balance)}</td></tr>`).join('')}</tbody>`;
 }
 
 form.addEventListener('input', render);

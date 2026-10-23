@@ -1936,7 +1936,9 @@
       "city.Pacific/Auckland": "Auckland",
       "city.Africa/Johannesburg": "Johannesburgo",
       "city.Africa/Cairo": "El Cairo",
-      "defaultZones": "Europe/Madrid,America/New_York,Asia/Tokyo,Asia/Ho_Chi_Minh"
+      "defaultZones": "Europe/Madrid,America/New_York,Asia/Tokyo,Asia/Ho_Chi_Minh",
+      "sameRef": "igual que {name}",
+      "vsRef": "respecto a {name}"
     },
     "utm": {
       "preset.0": "Facebook (publicación)",

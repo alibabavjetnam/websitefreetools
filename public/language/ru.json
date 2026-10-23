@@ -1936,7 +1936,9 @@
       "city.Pacific/Auckland": "Окленд",
       "city.Africa/Johannesburg": "Йоханнесбург",
       "city.Africa/Cairo": "Каир",
-      "defaultZones": "Europe/Moscow,America/New_York,Asia/Tokyo,Asia/Ho_Chi_Minh"
+      "defaultZones": "Europe/Moscow,America/New_York,Asia/Tokyo,Asia/Ho_Chi_Minh",
+      "sameRef": "как в: {name}",
+      "vsRef": "относительно: {name}"
     },
     "utm": {
       "preset.0": "Facebook (пост)",

@@ -57,10 +57,12 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 
 ## Đang làm dở: i18n (rà soát tiếng Việt còn sót ở bản en/ja/zh)
 - Đã xong (22/10/2026): Phase 2 dịch các công cụ; dịch món ăn `meal-calo`; rà soát toàn bộ 44 công cụ: thông báo lỗi của lib (xml, extract, ranges, pptx, codetools, barcode, image...), nội dung mẫu/ví dụ theo từng nước, đọc số thành chữ en/ja/zh, đếm từ ja/zh (`Intl.Segmenter`), ngày lễ VN có tên dịch, trang chủ, menu khách `/m/`. `npm run typecheck` và `npm run build` đều qua; mọi key tĩnh dùng trong code đều có đủ 4 ngôn ngữ
+- Quyết định đã chốt (23/10/2026):
+  - Định dạng số/tiền theo ngôn ngữ đang chọn (mặc định kiểu Mỹ): `fmtInt`/`fmtDec`/`fmtAmt`/`fmtField`/`fmtMoney` trong `src/ui.ts` dùng `localeTag()` và đồng tiền từng nước (bảng `CURRENCY`: en USD, ja JPY, zh CNY, de/fr/es/it/nl EUR, pt BRL, ru RUB, tr TRY, vi đ). Giá trị mẫu quy từ VND bằng `sampleMoney()`. Riêng `salary` là luật Việt Nam nên luôn hiện "đ" (`fmtVnd`) nhưng số vẫn theo ngôn ngữ. `parseNumber` ưu tiên cách hiểu dấu chấm/phẩy của ngôn ngữ đang chọn
+  - Tên trang tính và cột Google Sheets bằng tiếng Anh. Bảng tính cũ (tên tiếng Việt) vẫn dùng được: `legacySheet`/`legacy` trong `SheetStore` (trang tính cũ được đổi tên, cột cũ vẫn đọc được). Giá trị dữ liệu (loại thu/chi, tên danh mục) vẫn lưu theo tiếng Việt
+  - Đồng hồ thế giới so giờ với nước của ngôn ngữ đang chọn (phần tử đầu của `defaultZones`), khoá `sameRef`/`vsRef`
 - Quyết định còn mở, chờ chủ site:
-  - Đơn vị tiền "đ" và định dạng số kiểu vi-VN gắn cứng ở `fmtMoney`/`fmtInt`/`parseMoney` trong `src/ui.ts`, nên loan, compound, salary, teaching-pay, inventory vẫn hiện "đ" và giá trị mẫu kiểu VND ở mọi ngôn ngữ (invoice đã đổi ký hiệu tiền theo ngôn ngữ)
-  - Tên trang tính và tên cột Google Sheets (attendance, journal, habit, expense, inventory, invoice, study-timetable) vẫn tiếng Việt: code đọc lại theo đúng tên đó, dịch đi sẽ làm hỏng bảng cũ. Muốn đổi cần bước đọc tương thích tên cũ
-  - Đồng hồ thế giới đang so giờ với Việt Nam; hoạt động MET trong calo-burn tra theo chỉ số `act.N`, không có `key` ổn định; sức khoẻ chưa có lb / ft-in cho en
+  - Hoạt động MET trong calo-burn tra theo chỉ số `act.N`, không có `key` ổn định; sức khoẻ chưa có lb / ft-in cho en
   - `safeFilename` (`src/lib/download.ts`) bỏ dấu tiếng Việt nên tên file ja/zh rơi về giá trị mặc định
 - Còn lại, đã biết:
   - Chưa kiểm tra render thật bằng trình duyệt (máy chạy phiên này chưa có trình duyệt headless). Quét tĩnh trong `dist/` chỉ bắt được chữ gắn cứng trong HTML. Tiêu đề trang chủ ("Danh sách công cụ", "Cách dùng") được `src/pages/home.ts` dịch lúc chạy nên quét tĩnh báo nhầm

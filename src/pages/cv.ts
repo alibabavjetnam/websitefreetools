@@ -34,7 +34,7 @@ const store = new SheetStore<Data>({
   title: 'WFTools - CV',
   empty: { cvs: [] },
   tables: {
-    cvs: { sheet: 'CV', columns: [{ key: 'id', label: 'Mã' }, { key: 'title', label: 'Tên CV' }, { key: 'updated', label: 'Cập nhật' }, { key: 'json', label: 'Dữ liệu (không sửa tay)' }] },
+    cvs: { sheet: 'CV', columns: [{ key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'title', label: 'CV title', legacy: 'Tên CV' }, { key: 'updated', label: 'Updated', legacy: 'Cập nhật' }, { key: 'json', label: 'Data (do not edit)', legacy: 'Dữ liệu (không sửa tay)' }] },
   },
 });
 

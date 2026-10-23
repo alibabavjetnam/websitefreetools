@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, downloadBlob, escapeHtml, storage, toast } from '../ui';
+import { $, currencyCode, downloadBlob, escapeHtml, fmtMoney, sampleMoney, storage, toast } from '../ui';
 import { pageText, currentLang } from '../i18n';
 
 mountLayout({ activeTool: 'teaching-pay' });
@@ -8,7 +8,7 @@ const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES
 
 interface Session { id: string; date: string; title: string; hours: number; rate: number }
 const store = storage<Session[]>('teaching-pay', []);
-const rateStore = storage<number>('teaching-rate', 200000);
+const rateStore = storage<number>('teaching-rate', sampleMoney(200000));
 const newId = () => Math.random().toString(36).slice(2, 8);
 const todayKey = () => new Date().toLocaleDateString('en-CA');
 const vi = (n: number) => n.toLocaleString(LOCALE);
@@ -17,7 +17,8 @@ const fmtD = (k: string) => {
   const [y, m, d] = k.split('-').map(Number);
   return new Date(y, m - 1, d).toLocaleDateString(LOCALE, { year: 'numeric', month: 'short', day: 'numeric' });
 };
-const money = (n: number) => n.toLocaleString(LOCALE) + ' đ';
+const money = fmtMoney;
+const rateLabel = (s: string) => (currentLang() === 'vi' ? s : s.replace(/VND|đ/g, currencyCode()));
 
 const root = $('#tool-root');
 root.innerHTML = `
@@ -30,7 +31,7 @@ root.innerHTML = `
       </div>
       <div class="field-row">
         <label class="field"><span class="field-label">${T('hours','Số giờ')}</span><input type="number" id="hours" min="0.5" step="0.5" value="2" /></label>
-        <label class="field"><span class="field-label">${T('rate','Đơn giá (đ/giờ)')}</span><input type="number" id="rate" min="0" step="10000" /></label>
+        <label class="field"><span class="field-label">${rateLabel(T('rate','Đơn giá (đ/giờ)'))}</span><input type="number" id="rate" min="0" step="any" /></label>
       </div>
       <div class="actions"><button type="button" class="btn btn-primary" id="add">${T('add','Thêm buổi')}</button></div>
     </form>

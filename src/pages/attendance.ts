@@ -12,11 +12,11 @@ type Data = { students: Student[]; marks: Mark[] };
 
 const store = new SheetStore<Data>({
   tag: 'attendance',
-  title: T('sheetTitle', 'WFTools - Điểm danh'),
+  title: 'WFTools - Attendance',
   empty: { students: [], marks: [] },
   tables: {
-    students: { sheet: 'Học viên', columns: [{ key: 'id', label: 'Mã' }, { key: 'name', label: 'Họ tên' }] },
-    marks: { sheet: 'Điểm danh', columns: [{ key: 'id', label: 'Mã' }, { key: 'studentId', label: 'Mã học viên' }, { key: 'date', label: 'Ngày' }, { key: 'status', label: 'Trạng thái' }] },
+    students: { sheet: 'Students', legacySheet: 'Học viên', columns: [{ key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'name', label: 'Name', legacy: 'Họ tên' }] },
+    marks: { sheet: 'Attendance', legacySheet: 'Điểm danh', columns: [{ key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'studentId', label: 'Student ID', legacy: 'Mã học viên' }, { key: 'date', label: 'Date', legacy: 'Ngày' }, { key: 'status', label: 'Status', legacy: 'Trạng thái' }] },
   },
 });
 

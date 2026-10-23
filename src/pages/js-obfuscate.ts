@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, copyText, downloadBlob, toast } from '../ui';
+import { $, copyText, downloadBlob, fmtDec, toast } from '../ui';
 import { obfuscate, type ObfuscateOptions } from '../lib/obfuscate';
 import { pageText } from '../i18n';
 
@@ -71,8 +71,8 @@ async function run(): Promise<void> {
     const inKb = new Blob([src]).size;
     const outKb = new Blob([out]).size;
     $('#summary').innerHTML = out
-      ? `<div class="stat"><span class="stat-label">${T('stat.src','Mã gốc')}</span><span class="stat-value">${(inKb / 1024).toFixed(1).replace('.', ',')} KB</span></div>
-         <div class="stat stat--main"><span class="stat-label">${T('stat.out','Sau khi làm rối')}</span><span class="stat-value">${(outKb / 1024).toFixed(1).replace('.', ',')} KB</span></div>`
+      ? `<div class="stat"><span class="stat-label">${T('stat.src','Mã gốc')}</span><span class="stat-value">${fmtDec(inKb / 1024)} KB</span></div>
+         <div class="stat stat--main"><span class="stat-label">${T('stat.out','Sau khi làm rối')}</span><span class="stat-value">${fmtDec(outKb / 1024)} KB</span></div>`
       : '';
   } catch (e) {
     $<HTMLTextAreaElement>('#out').value = '';

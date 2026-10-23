@@ -1,6 +1,6 @@
 import { mountLayout } from '../layout';
 import '../menu/menu.css';
-import { $, copyText, downloadBlob, escapeHtml, fmtInt, parseNumber, storage, toast } from '../ui';
+import { $, copyText, downloadBlob, escapeHtml, fmtField, parseNumber, storage, toast } from '../ui';
 import { SheetStore, newId } from '../google/sync';
 import { VIEWER_URL, bindMenuNav, encodeMenu, menuHtml, type Menu } from '../menu/menu';
 import { encodeQr, qrToSvg } from '../lib/qr';
@@ -17,9 +17,9 @@ const ACCENTS = ['#0d6efd', '#b9000e', '#16233a', '#0e7a55', '#c2570c', '#8a5a2b
 
 const store = new SheetStore<Data>({
   tag: 'menu-qr',
-  title: 'WFTools - Menu QR',
+  title: 'WFTools - QR menu',
   empty: { menus: [] },
-  tables: { menus: { sheet: 'Thực đơn', columns: [{ key: 'id', label: 'Mã' }, { key: 'title', label: 'Tên quán' }, { key: 'updated', label: 'Cập nhật' }, { key: 'json', label: 'Dữ liệu (không sửa tay)' }] } },
+  tables: { menus: { sheet: 'Menus', legacySheet: 'Thực đơn', columns: [{ key: 'id', label: 'ID', legacy: 'Mã' }, { key: 'title', label: 'Shop name', legacy: 'Tên quán' }, { key: 'updated', label: 'Updated', legacy: 'Cập nhật' }, { key: 'json', label: 'Data (do not edit)', legacy: 'Dữ liệu (không sửa tay)' }] } },
 });
 
 const sample = (): Menu => ({
@@ -89,7 +89,7 @@ function renderCats(): void {
         .map(
           (it, ii) => `<div class="menu-item-row" data-ii="${ii}">
           <input data-item="name" type="text" value="${escapeHtml(it.name)}" placeholder="${T('itemName','Tên món')}" aria-label="${T('itemName','Tên món')}" maxlength="120" />
-          <input data-item="price" type="text" inputmode="numeric" value="${it.price ? fmtInt(it.price) : ''}" placeholder="${T('itemPrice','Giá')}" aria-label="${T('itemPrice','Giá')}" />
+          <input data-item="price" type="text" inputmode="numeric" value="${it.price ? fmtField(it.price) : ''}" placeholder="${T('itemPrice','Giá')}" aria-label="${T('itemPrice','Giá')}" />
           <button type="button" class="btn btn-sm" data-del-item aria-label="${T('delItem','Xoá món')}">✕</button>
           <input data-item="desc" type="text" value="${escapeHtml(it.desc)}" placeholder="${T('itemDesc','Mô tả ngắn (không bắt buộc)')}" aria-label="${T('itemDescAria','Mô tả')}" maxlength="300" />
         </div>`,
@@ -148,7 +148,7 @@ form.addEventListener('input', (e) => {
 });
 form.addEventListener('focusout', (e) => {
   const el = e.target as HTMLInputElement;
-  if (el.dataset.item === 'price') { const n = parseNumber(el.value); if (n > 0) el.value = fmtInt(n); }
+  if (el.dataset.item === 'price') { const n = parseNumber(el.value); if (n > 0) el.value = fmtField(n); }
 });
 form.addEventListener('click', (e) => {
   const t = e.target as HTMLElement;

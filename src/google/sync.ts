@@ -10,11 +10,15 @@ import { t, tf, localeTag } from '../i18n';
 export interface Column<T> {
   key: keyof T & string;
   label: string;
+  /** Tên cột cũ (tiếng Việt) để vẫn đọc được bảng tính tạo từ phiên bản trước */
+  legacy?: string;
   type?: 'number' | 'text';
 }
 
 export interface TableDef<T> {
   sheet: string;
+  /** Tên trang tính cũ (tiếng Việt): nếu bảng tính còn tên này thì được đổi sang tên mới, không mất dữ liệu */
+  legacySheet?: string;
   columns: Column<T>[];
 }
 
@@ -183,7 +187,7 @@ export class SheetStore<D extends TableData<D>> {
   }
 
   private specs() {
-    return (Object.values(this.opts.tables) as TableDef<Row>[]).map((t) => ({ name: t.sheet, header: t.columns.map((c) => c.label) }));
+    return (Object.values(this.opts.tables) as TableDef<Row>[]).map((t) => ({ name: t.sheet, legacyName: t.legacySheet, header: t.columns.map((c) => c.label) }));
   }
 
   private hasData(): boolean {
@@ -217,7 +221,7 @@ export class SheetStore<D extends TableData<D>> {
 function fromSheet(r: Record<string, string>, cols: Column<Row>[]): Row {
   const out: Row = {};
   for (const c of cols) {
-    const v = r[c.label] ?? '';
+    const v = c.label in r ? r[c.label] : c.legacy && c.legacy in r ? r[c.legacy] : '';
     out[c.key] = c.type === 'number' ? (v === '' ? 0 : Number(String(v).replace(',', '.')) || 0) : v;
   }
   return out;

@@ -34,6 +34,8 @@ function ensureFolder(): Promise<string> {
 
 export interface SheetSpec {
   name: string;
+  /** Tên cũ của trang tính: nếu có trang mang tên này (và chưa có tên mới) thì đổi tên thay vì tạo trang mới */
+  legacyName?: string;
   header: string[];
 }
 
@@ -68,7 +70,15 @@ async function ensureSheets(id: string, specs: SheetSpec[], fresh = false): Prom
   const meta = await gfetch<{ sheets: { properties: { sheetId: number; title: string } }[] }>(`${SHEETS}/${id}?fields=sheets.properties(sheetId,title)`);
   const existing = meta.sheets.map((s) => s.properties);
   const requests: unknown[] = [];
-  const missing = specs.filter((s) => !existing.some((e) => e.title === s.name));
+  const missing: SheetSpec[] = [];
+  for (const s of specs) {
+    if (existing.some((e) => e.title === s.name)) continue;
+    const old = s.legacyName ? existing.find((e) => e.title === s.legacyName) : undefined;
+    if (old) {
+      requests.push({ updateSheetProperties: { properties: { sheetId: old.sheetId, title: s.name }, fields: 'title' } });
+      old.title = s.name;
+    } else missing.push(s);
+  }
   missing.forEach((s, i) => {
     // Bảng mới tạo có sẵn "Sheet1": đổi tên thành trang đầu tiên thay vì để thừa
     if (fresh && i === 0 && existing.length === 1) {

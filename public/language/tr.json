@@ -1936,7 +1936,9 @@
       "city.Pacific/Auckland": "Auckland",
       "city.Africa/Johannesburg": "Johannesburg",
       "city.Africa/Cairo": "Kahire",
-      "defaultZones": "Europe/Istanbul,America/New_York,Asia/Tokyo,Asia/Ho_Chi_Minh"
+      "defaultZones": "Europe/Istanbul,America/New_York,Asia/Tokyo,Asia/Ho_Chi_Minh",
+      "sameRef": "{name} ile aynı",
+      "vsRef": "{name} saatine göre"
     },
     "utm": {
       "preset.0": "Facebook (gönderi)",

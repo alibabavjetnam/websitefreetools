@@ -1936,7 +1936,9 @@
       "city.Pacific/Auckland": "奥克兰",
       "city.Africa/Johannesburg": "约翰内斯堡",
       "city.Africa/Cairo": "开罗",
-      "defaultZones": "Asia/Shanghai,Asia/Tokyo,America/New_York,Europe/London"
+      "defaultZones": "Asia/Shanghai,Asia/Tokyo,America/New_York,Europe/London",
+      "sameRef": "与{name}相同",
+      "vsRef": "相对{name}"
     },
     "utm": {
       "preset.0": "Facebook（帖子）",

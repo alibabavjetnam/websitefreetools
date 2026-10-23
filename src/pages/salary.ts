@@ -1,5 +1,5 @@
 import { mountLayout } from '../layout';
-import { $, fmtInt, fmtMoney, moneyInput, setupTabs } from '../ui';
+import { $, fmtInt, fmtVnd as fmtMoney, moneyInput, setupTabs } from '../ui';
 import { SALARY_RULES, grossToNet, netToGross, type Region, type SalaryResult } from '../calc/salary';
 import { pageText } from '../i18n';
 
@@ -18,7 +18,7 @@ root.innerHTML = `
     <form class="panel" id="sal-form" novalidate>
       <label class="field">
         <span class="field-label" id="amount-label">${T('grossLabel','Lương Gross (tổng thu nhập trên hợp đồng)')}</span>
-        <input id="amount" type="text" value="30.000.000" autocomplete="off" />
+        <input id="amount" type="text" value="${fmtInt(30000000)}" autocomplete="off" />
       </label>
       <div class="form-grid">
         <label class="field">

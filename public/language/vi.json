@@ -2112,7 +2112,9 @@
       "city.Pacific/Auckland": "Auckland",
       "city.Africa/Johannesburg": "Johannesburg",
       "city.Africa/Cairo": "Cairo",
-      "defaultZones": "Asia/Ho_Chi_Minh,Asia/Tokyo,Europe/London,America/New_York"
+      "defaultZones": "Asia/Ho_Chi_Minh,Asia/Tokyo,Europe/London,America/New_York",
+      "sameRef": "cùng giờ {name}",
+      "vsRef": "so với {name}"
     },
     "utm": {
       "preset.0": "Facebook (bài viết)",
