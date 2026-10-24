@@ -34,7 +34,7 @@ const store = {
   },
 };
 
-const TF_LIST = ['1m', '5m', '15m', '30m', '1h', '2h', '4h'];
+const TF_LIST = ['1m', '5m', '15m', '30m', '1h', '2h', '4h', '1d'];
 const LIMIT = 1000;
 
 interface State {
@@ -194,6 +194,7 @@ const live = new LiveFeed(
     if (!target) return;
     const prevLast = target[target.length - 1]?.t;
     upsertCandle(target, candle, LIMIT);
+    if (iv === '1d' && target === state.tf) upsertCandle(state.d1, candle, LIMIT); // khung giao dịch là 1d: D1 cũng phải cập nhật
     if (iv === state.interval && candle.t !== prevLast) needBacktest = true; // một nến vừa đóng
     if (renderTimer === undefined) {
       renderTimer = window.setTimeout(() => {
