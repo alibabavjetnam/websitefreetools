@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "description": "Vỏ Android cho trang zzz (4v2) của websitefreetools.com",
   "dependencies": {
-    "@capacitor/android": "^6.1.2",
-    "@capacitor/cli": "^6.1.2",
-    "@capacitor/core": "^6.1.2"
+    "@anuradev/capacitor-background-mode": "6.0.0",
+    "@capacitor/android": "6.2.0",
+    "@capacitor/cli": "6.2.0",
+    "@capacitor/core": "6.2.0"
   }
 }

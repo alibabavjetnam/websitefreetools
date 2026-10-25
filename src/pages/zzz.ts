@@ -511,3 +511,22 @@ void loadFromBinance();
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => { navigator.serviceWorker.register('/zzz/sw.js', { scope: '/zzz/' }).catch(() => {}); });
 }
+
+/* Bản app Android (Capacitor): giữ app chạy nền để dữ liệu vẫn tải khi ẩn app / tắt màn hình */
+interface BackgroundModePlugin {
+  setSettings(o: Record<string, unknown>): Promise<void>;
+  enable(): Promise<void>;
+  requestNotificationsPermission?(): Promise<unknown>;
+  requestDisableBatteryOptimizations?(): Promise<unknown>;
+}
+const bgMode = (window as unknown as { Capacitor?: { Plugins?: { BackgroundMode?: BackgroundModePlugin } } }).Capacitor?.Plugins?.BackgroundMode;
+if (bgMode) {
+  void (async () => {
+    try {
+      await bgMode.requestNotificationsPermission?.();
+      await bgMode.setSettings({ title: '4v2', text: 'Đang theo dõi tín hiệu', silent: false, hidden: false, resume: true });
+      await bgMode.enable();
+      await bgMode.requestDisableBatteryOptimizations?.();
+    } catch { /* không có plugin hoặc bị từ chối: app vẫn chạy bình thường */ }
+  })();
+}
