@@ -239,3 +239,6 @@
   .stock-app .trend-card { padding: 10px 12px; }
 }
 @media (prefers-reduced-motion: reduce) { .stock-app * { transition: none !important; } }
+
+/* .entry trong styles.css (khung nhập của CV / thực đơn) có padding 12px; ở trang zzz không dùng padding đó */
+.stock-app .entry { padding: 0; }
