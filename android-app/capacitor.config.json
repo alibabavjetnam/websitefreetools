@@ -1,0 +1,11 @@
+{
+  "appId": "com.websitefreetools.app4v2",
+  "appName": "4v2",
+  "webDir": "www",
+  "server": {
+    "url": "https://websitefreetools.com/zzz/",
+    "cleartext": false,
+    "allowNavigation": ["websitefreetools.com", "*.binance.com", "cdnjs.cloudflare.com", "fonts.googleapis.com", "fonts.gstatic.com"]
+  },
+  "android": { "backgroundColor": "#ffffff" }
+}
