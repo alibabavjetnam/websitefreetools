@@ -145,7 +145,6 @@
 }
 .stock-app .rail span[data-s="pass"] { background: var(--up); color: #fff; }
 .stock-app .rail span[data-s="fail"] { background: color-mix(in srgb, var(--down) 18%, var(--sunken)); color: var(--down); }
-.stock-app .rail span.entry[data-s="pass"] { background: var(--signal); color: var(--signal-ink); }
 .stock-app .verdict { font-size: 0.86rem; font-weight: 600; margin: 4px 0 8px; }
 .stock-app .verdict[data-ready="true"] { color: var(--signal); }
 
@@ -154,7 +153,6 @@
 .stock-app .conds .lamp { width: 10px; height: 10px; border-radius: 50%; margin-top: 4px; background: var(--line); }
 .stock-app .conds li[data-s="pass"] .lamp { background: var(--up); }
 .stock-app .conds li[data-s="fail"] .lamp { background: var(--down); }
-.stock-app .conds li.entry[data-s="pass"] .lamp { background: var(--signal); }
 .stock-app .conds b { font-weight: 600; display: block; }
 .stock-app .conds span { color: var(--muted); }
 

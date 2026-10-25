@@ -49,6 +49,17 @@ function bbReentry(v: View, i: number, lookback: number) {
   return { pass: inIdx !== -1 && nowInside, outIdx, inIdx };
 }
 
+/** Nến k chạm hoặc cắt qua biên BB (BUY: dải dưới), và từ k đến i đã có nến đóng cửa trở lại trong dải. */
+function touchesBandAndReturns(v: View, k: number, i: number): boolean {
+  const b = v.band[k];
+  if (b === null || v.low[k] > b) return false;
+  for (let j = k; j <= i; j++) {
+    const bj = v.band[j];
+    if (bj !== null && v.close[j] > bj) return true;
+  }
+  return false;
+}
+
 /** Điều kiện RSI: có đoạn RSI ≤ 30 (BUY) trong cửa sổ, và hiện RSI đã trở lại trên 30. */
 function rsiReturn(v: View, i: number, lookback: number, level: number) {
   const start = Math.max(1, i - lookback + 1);
@@ -203,7 +214,7 @@ export function evalCounterTrend({ d1, tf, series, i, cfg }: EvalInput): Channel
 
   // Điểm 1: nến cực trị quanh đoạn RSI quá bán/quá mua
   const rs = rsiReturn(v, i, cfg.lookbackCounter, buy ? cfg.rsiLow : 100 - cfg.rsiHigh);
-  const label4 = `RSI ${buy ? '≤' : '≥'} ${w.rsiLv} tạo ${w.pt} 1, rồi có ${w.pt} 2 ${buy ? 'cao' : 'thấp'} hơn (cách ≥ ${cfg.minGap} nến)`;
+  const label4 = `RSI ${buy ? '≤' : '≥'} ${w.rsiLv} tạo ${w.pt} 1, rồi có ${w.pt} 2 ${buy ? 'cao' : 'thấp'} hơn (cách ≥ ${cfg.minGap} nến), ${w.pt} 2 chạm hoặc cắt qua ${w.band} rồi quay lại trong dải`;
   if (!rs.pass) {
     base.conditions.push(cond(label4, 'fail',
       rs.e >= 0 ? `RSI vẫn đang ở vùng ${buy ? 'quá bán' : 'quá mua'}, chưa hình thành ${w.pt} 1` : `RSI chưa chạm ${w.rsiLv} trong ${cfg.lookbackCounter} nến`));
@@ -221,7 +232,7 @@ export function evalCounterTrend({ d1, tf, series, i, cfg }: EvalInput): Channel
   let p2 = -1;
   if (!broken) {
     for (let k = i - cfg.pivotRight; k >= p1 + cfg.minGap; k--) {
-      if (isPivotLow(v.low, k, cfg.pivotLeft, cfg.pivotRight, i) && v.low[k] > v.low[p1]) { p2 = k; break; }
+      if (isPivotLow(v.low, k, cfg.pivotLeft, cfg.pivotRight, i) && v.low[k] > v.low[p1] && touchesBandAndReturns(v, k, i)) { p2 = k; break; }
     }
   }
 
@@ -232,7 +243,7 @@ export function evalCounterTrend({ d1, tf, series, i, cfg }: EvalInput): Channel
   }
   if (p2 === -1) {
     base.conditions.push(cond(label4, 'fail',
-      `${w.Pt} 1 tại ${fmt(v.back(v.low[p1]))}, chưa có ${w.pt} 2 ${buy ? 'cao' : 'thấp'} hơn cách ≥ ${cfg.minGap} nến`));
+      `${w.Pt} 1 tại ${fmt(v.back(v.low[p1]))}, chưa có ${w.pt} 2 ${buy ? 'cao' : 'thấp'} hơn, cách ≥ ${cfg.minGap} nến, chạm hoặc cắt qua ${w.band} rồi quay lại trong dải`));
     base.entry = cond('Nến vào lệnh', 'wait', `Chờ ${w.pt} số 2`);
     return finalize(base);
   }

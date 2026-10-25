@@ -14,7 +14,7 @@ const DAY = 86_400_000;
  *  - Nếu một nến chạm cả SL và TP, tính là thua (giả định thận trọng).
  *  - Mỗi kênh chỉ giữ 1 lệnh tại một thời điểm, mỗi nến N/M chỉ được dùng 1 lần.
  */
-export function runBacktest(tf: Series, d1: Series, tfMs: number, cfg: Settings, warmup = 210): BacktestResult {
+export function runBacktest(tf: Series, d1: Series, tfMs: number, cfg: Settings, warmup = 130): BacktestResult {
   const n = tf.close.length;
   const d1Trends: TrendResult[] = d1.close.map((_, k) => trendAt(d1, k));
   const trades: Trade[] = [];

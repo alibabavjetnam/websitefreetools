@@ -104,7 +104,7 @@
             <details>
               <summary>Cách hệ thống đọc tín hiệu</summary>
               <div class="guide">
-                <p><b>Xu hướng</b> được chấm trên 4 điểm: trật tự SMA50/SMA100/SMA200 (2 điểm: SMA50 trên SMA100 được 0,5 điểm, SMA100 trên SMA200 được 1,5 điểm cho xu hướng tăng; ngược lại cho xu hướng giảm), kênh giá 50 nến (1 điểm), độ dốc SMA50 và SMA200 (1 điểm). Một phe đạt từ 3/4 điểm thì được công nhận là có xu hướng. Vì cặp SMA100/SMA200 nặng nhất nên vừa đảo chiều mà SMA100 chưa vượt qua SMA200 thì chưa đủ điểm.</p>
+                <p><b>Xu hướng</b> chỉ dựa vào một điều kiện: SMA64 nằm trên SMA128 là xu hướng tăng, nằm dưới là xu hướng giảm (cần ít nhất 128 nến).</p>
                 <p><b>Kênh 1, cùng xu hướng:</b> D1 có xu hướng; khung giao dịch cùng xu hướng; giá đã chọc Bollinger (dải dưới khi tăng, dải trên khi giảm) rồi đóng cửa trở lại trong dải; RSI đã về 30 (hoặc 70) rồi quay lại. Nến vào lệnh: gọi N là nến có râu thấp nhất của nhịp điều chỉnh, giá hiện tại phải cao hơn đỉnh nến N-1 (xu hướng giảm: M là nến có râu cao nhất, giá phải thấp hơn đáy nến M-1).</p>
                 <p><b>Kênh 2, ngược xu hướng:</b> D1 có xu hướng; khung giao dịch đi ngang hoặc ngược D1; giá chọc Bollinger rồi vào trong; RSI về 30 (70) tạo đáy 1 (đỉnh 1), sau đó giá tạo đáy 2 cao hơn (đỉnh 2 thấp hơn), cách đáy 1 ít nhất 9 nến. Nến vào lệnh: N là râu đáy 2, giá hiện tại phải cao hơn đỉnh nến N-1 (với đỉnh 2 là M, giá phải thấp hơn đáy nến M-1).</p>
                         </div>

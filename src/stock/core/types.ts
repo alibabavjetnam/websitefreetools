@@ -21,9 +21,8 @@ export interface Series {
   low: number[];
   close: number[];
   ema20: (number | null)[];
-  sma50: (number | null)[];
-  sma100: (number | null)[];
-  sma200: (number | null)[];
+  sma64: (number | null)[];
+  sma128: (number | null)[];
   rsi: (number | null)[];
   bbUpper: (number | null)[];
   bbMid: (number | null)[];

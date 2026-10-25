@@ -173,7 +173,7 @@ function loadManual() {
     state.source = 'manual';
     state.lastReady = {};
     resetZoom = true;
-    notice(d1Text ? null : `Đã gộp ${d1.length} nến ngày từ dữ liệu khung giao dịch. Xu hướng D1 cần khoảng 200 ngày để đánh giá đủ 6 tiêu chí.`, 'info');
+    notice(d1Text ? null : `Đã gộp ${d1.length} nến ngày từ dữ liệu khung giao dịch. Xu hướng D1 cần ít nhất 128 ngày để tính SMA128.`, 'info');
     setStatus('static', 'Dữ liệu dán tay');
     analyze(true);
   } catch (e) {
