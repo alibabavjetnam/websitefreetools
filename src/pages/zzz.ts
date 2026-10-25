@@ -506,3 +506,8 @@ renderSettings();
 updateRawLink();
 bind();
 void loadFromBinance();
+
+/* Cài như app trên điện thoại (PWA) */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('/zzz/sw.js', { scope: '/zzz/' }).catch(() => {}); });
+}
