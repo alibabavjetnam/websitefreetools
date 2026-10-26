@@ -1,4 +1,5 @@
 import { currentLang } from '../i18n';
+import { moneyInWordsMore } from './words-more';
 
 /** Đọc số tiền thành chữ tiếng Việt, ví dụ 1.250.000 -> "Một triệu hai trăm năm mươi nghìn đồng" */
 
@@ -508,6 +509,8 @@ export function moneyInWords(value: number): string {
     const text = `${neg ? 'min ' : ''}${w} euro`;
     return text.charAt(0).toUpperCase() + text.slice(1);
   }
+  const more = moneyInWordsMore(lang, value);
+  if (more !== null) return more;
   if (lang === 'ja') {
     const w = numberToJapanese(value);
     return w ? `${neg ? 'マイナス' : ''}金${w}円也` : '';

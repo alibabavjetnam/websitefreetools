@@ -20,11 +20,11 @@ const MAX_ITEMS = 300;
 /* ---------- Ngôn ngữ trang khách xem menu ----------
  * Trang /m/ không nạp từ điển của site (khách chỉ quét QR), nên chuỗi nằm sẵn ở đây.
  * Ngôn ngữ: theo trang công cụ nếu có (__WFT_LANG__), nếu không thì theo ngôn ngữ trình duyệt của khách. */
-export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es' | 'de' | 'ru' | 'fr' | 'pt' | 'it' | 'tr' | 'nl';
+export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es' | 'de' | 'ru' | 'fr' | 'pt' | 'it' | 'tr' | 'nl' | 'ko' | 'ar' | 'hi' | 'id' | 'th' | 'pl' | 'uk' | 'bn';
 export function menuLang(): MenuLang {
   const w = window as unknown as { __WFT_LANG__?: string };
   const raw = (w.__WFT_LANG__ || (typeof navigator !== 'undefined' ? navigator.language : '') || 'en').slice(0, 2).toLowerCase();
-  return ['vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl'].includes(raw) ? (raw as MenuLang) : 'en';
+  return ['vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn'].includes(raw) ? (raw as MenuLang) : 'en';
 }
 const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
   vi: {
@@ -111,9 +111,65 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
     invalid: '菜单数据无效。', tooLong: '菜单链接过长。',
     oldBrowser: '当前浏览器版本过低，无法打开菜单，请更新浏览器。', badLink: '菜单链接不正确。',
   },
+  ko: {
+    shop: '가게 이름', cat: '메뉴', title: '메뉴', loading: '메뉴를 여는 중…', credit: 'QR 메뉴 무료 만들기:',
+    noMenu: '이 링크에는 메뉴가 없습니다. 가게의 QR 코드를 다시 스캔해 주세요.',
+    openFail: '메뉴를 열 수 없습니다:', rescan: '가게의 QR 코드를 다시 스캔해 주세요.',
+    invalid: '메뉴 데이터가 올바르지 않습니다.', tooLong: '메뉴 링크가 너무 깁니다.',
+    oldBrowser: '이 브라우저는 너무 오래되어 메뉴를 열 수 없습니다. 브라우저를 업데이트해 주세요.', badLink: '메뉴 링크가 올바르지 않습니다.',
+  },
+  ar: {
+    shop: 'اسم المطعم', cat: 'الأطباق', title: 'قائمة الطعام', loading: 'جارٍ فتح القائمة…', credit: 'أنشئ قائمة QR مجانًا على',
+    noMenu: 'لا توجد قائمة في هذا الرابط. يُرجى مسح رمز QR الخاص بالمطعم مرة أخرى.',
+    openFail: 'تعذّر فتح القائمة:', rescan: 'يُرجى مسح رمز QR الخاص بالمطعم مرة أخرى.',
+    invalid: 'بيانات القائمة غير صالحة.', tooLong: 'رابط القائمة طويل جدًا.',
+    oldBrowser: 'هذا المتصفح قديم جدًا لفتح القائمة. يُرجى تحديث المتصفح.', badLink: 'رابط القائمة غير صحيح.',
+  },
+  hi: {
+    shop: 'रेस्तरां का नाम', cat: 'व्यंजन', title: 'मेन्यू', loading: 'मेन्यू खुल रहा है…', credit: 'मुफ़्त QR मेन्यू बनाएँ:',
+    noMenu: 'इस लिंक में कोई मेन्यू नहीं है। कृपया रेस्तरां का QR कोड फिर से स्कैन करें।',
+    openFail: 'मेन्यू नहीं खुल सका:', rescan: 'कृपया रेस्तरां का QR कोड फिर से स्कैन करें।',
+    invalid: 'मेन्यू का डेटा मान्य नहीं है।', tooLong: 'मेन्यू का लिंक बहुत लंबा है।',
+    oldBrowser: 'यह ब्राउज़र मेन्यू खोलने के लिए बहुत पुराना है। कृपया ब्राउज़र अपडेट करें।', badLink: 'मेन्यू का लिंक सही नहीं है।',
+  },
+  id: {
+    shop: 'Nama restoran', cat: 'Menu makanan', title: 'Menu', loading: 'Membuka menu…', credit: 'Buat menu QR gratis di',
+    noMenu: 'Tautan ini tidak memiliki menu. Silakan pindai ulang kode QR restoran.',
+    openFail: 'Tidak dapat membuka menu:', rescan: 'Silakan pindai ulang kode QR restoran.',
+    invalid: 'Data menu tidak valid.', tooLong: 'Tautan menu terlalu panjang.',
+    oldBrowser: 'Peramban ini terlalu lama untuk membuka menu. Perbarui peramban Anda.', badLink: 'Tautan menu tidak benar.',
+  },
+  th: {
+    shop: 'ชื่อร้าน', cat: 'รายการอาหาร', title: 'เมนู', loading: 'กำลังเปิดเมนู…', credit: 'สร้างเมนู QR ฟรีที่',
+    noMenu: 'ลิงก์นี้ไม่มีเมนู กรุณาสแกนคิวอาร์โค้ดของร้านอีกครั้ง',
+    openFail: 'ไม่สามารถเปิดเมนูได้:', rescan: 'กรุณาสแกนคิวอาร์โค้ดของร้านอีกครั้ง',
+    invalid: 'ข้อมูลเมนูไม่ถูกต้อง', tooLong: 'ลิงก์เมนูยาวเกินไป',
+    oldBrowser: 'เบราว์เซอร์นี้เก่าเกินไปที่จะเปิดเมนู กรุณาอัปเดตเบราว์เซอร์', badLink: 'ลิงก์เมนูไม่ถูกต้อง',
+  },
+  pl: {
+    shop: 'Nazwa lokalu', cat: 'Dania', title: 'Menu', loading: 'Otwieranie menu…', credit: 'Stwórz darmowe menu QR na',
+    noMenu: 'Ten link nie zawiera menu. Zeskanuj ponownie kod QR lokalu.',
+    openFail: 'Nie udało się otworzyć menu:', rescan: 'Zeskanuj ponownie kod QR lokalu.',
+    invalid: 'Dane menu są nieprawidłowe.', tooLong: 'Link do menu jest za długi.',
+    oldBrowser: 'Ta przeglądarka jest zbyt stara, aby otworzyć menu. Zaktualizuj przeglądarkę.', badLink: 'Link do menu jest nieprawidłowy.',
+  },
+  uk: {
+    shop: 'Назва закладу', cat: 'Страви', title: 'Меню', loading: 'Відкриваємо меню…', credit: 'Створіть безкоштовне QR-меню на',
+    noMenu: 'За цим посиланням немає меню. Будь ласка, відскануйте QR-код закладу ще раз.',
+    openFail: 'Не вдалося відкрити меню:', rescan: 'Будь ласка, відскануйте QR-код закладу ще раз.',
+    invalid: 'Дані меню недійсні.', tooLong: 'Посилання на меню задовге.',
+    oldBrowser: 'Цей браузер надто старий, щоб відкрити меню. Оновіть браузер.', badLink: 'Посилання на меню неправильне.',
+  },
+  bn: {
+    shop: 'রেস্তোরাঁর নাম', cat: 'খাবার', title: 'মেনু', loading: 'মেনু খোলা হচ্ছে…', credit: 'বিনামূল্যে QR মেনু তৈরি করুন:',
+    noMenu: 'এই লিঙ্কে কোনো মেনু নেই। অনুগ্রহ করে রেস্তোরাঁর QR কোডটি আবার স্ক্যান করুন।',
+    openFail: 'মেনু খোলা যায়নি:', rescan: 'অনুগ্রহ করে রেস্তোরাঁর QR কোডটি আবার স্ক্যান করুন।',
+    invalid: 'মেনুর ডেটা সঠিক নয়।', tooLong: 'মেনুর লিঙ্কটি খুব দীর্ঘ।',
+    oldBrowser: 'মেনু খোলার জন্য এই ব্রাউজারটি অনেক পুরোনো। অনুগ্রহ করে ব্রাউজার আপডেট করুন।', badLink: 'মেনুর লিঙ্কটি সঠিক নয়।',
+  },
 };
 export const menuText = (key: string): string => MENU_TEXT[menuLang()][key] ?? MENU_TEXT.vi[key] ?? key;
-const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL' };
+const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' };
 
 /* ---------- Dạng gọn để link ngắn: mảng thay cho object ---------- */
 type Compact = [string, string, string, string, [string, [string, number, string][]][]];

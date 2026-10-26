@@ -17,6 +17,9 @@ const CURRENCY: Record<string, { code: string; dec: number; perUnit: number }> =
   zh: { code: 'CNY', dec: 2, perUnit: 3500 }, es: { code: 'EUR', dec: 2, perUnit: 28000 }, de: { code: 'EUR', dec: 2, perUnit: 28000 },
   ru: { code: 'RUB', dec: 2, perUnit: 300 }, fr: { code: 'EUR', dec: 2, perUnit: 28000 }, pt: { code: 'BRL', dec: 2, perUnit: 4600 },
   it: { code: 'EUR', dec: 2, perUnit: 28000 }, tr: { code: 'TRY', dec: 2, perUnit: 600 }, nl: { code: 'EUR', dec: 2, perUnit: 28000 },
+  ko: { code: 'KRW', dec: 0, perUnit: 18 }, ar: { code: 'AED', dec: 2, perUnit: 6800 }, hi: { code: 'INR', dec: 2, perUnit: 300 },
+  id: { code: 'IDR', dec: 0, perUnit: 1.6 }, th: { code: 'THB', dec: 2, perUnit: 770 }, pl: { code: 'PLN', dec: 2, perUnit: 6900 },
+  uk: { code: 'UAH', dec: 2, perUnit: 600 }, bn: { code: 'BDT', dec: 2, perUnit: 205 },
 };
 const cur = () => CURRENCY[currentLang()] || CURRENCY.en;
 const nf = (opts: Intl.NumberFormatOptions) => new Intl.NumberFormat(localeTag(), opts);

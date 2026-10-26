@@ -13,9 +13,9 @@ const ROOT = resolve(__dirname, '..');
 const DIST = resolve(ROOT, 'dist');
 const SITE = 'https://websitefreetools.com';
 const OG_IMAGE = `${SITE}/og-image.png`;
-const LANGS = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl'];
+const LANGS = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn'];
 const DEFAULT = 'en';
-const LANG_NAME = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español', de: 'Deutsch', ru: 'Русский', fr: 'Français', pt: 'Português', it: 'Italiano', tr: 'Türkçe', nl: 'Nederlands' };
+const LANG_NAME = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español', de: 'Deutsch', ru: 'Русский', fr: 'Français', pt: 'Português', it: 'Italiano', tr: 'Türkçe', nl: 'Nederlands', ko: '한국어', ar: 'العربية', hi: 'हिन्दी', id: 'Bahasa Indonesia', th: 'ไทย', pl: 'Polski', uk: 'Українська', bn: 'বাংলা' };
 
 const dicts = Object.fromEntries(LANGS.map((l) => [l, JSON.parse(readFileSync(resolve(ROOT, 'public/language', `${l}.json`), 'utf8'))]));
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -147,6 +147,7 @@ function localizePage(page, lang) {
   const c = content(page, lang, base);
   let html = base;
   html = html.replace(/<html([^>]*)\slang="[^"]*"/i, `<html$1 lang="${lang}"`);
+  if (dicts[lang].dir === 'rtl') html = html.replace(/<html([^>]*?)(\sdir="[^"]*")?>/i, '<html$1 dir="rtl">');
   html = html.replace(/<title>[^<]*<\/title>/i, `<title>${esc(c.title)}</title>`);
   if (/<meta\s+name="description"/i.test(html)) html = html.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${esc(c.desc)}" />`);
   else html = html.replace(/<\/title>/i, `</title>\n    <meta name="description" content="${esc(c.desc)}" />`);

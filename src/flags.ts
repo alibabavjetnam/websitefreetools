@@ -76,7 +76,41 @@ function trFlag(): string {
   return `<rect width="30" height="20" fill="#e30a17"/><circle cx="11.2" cy="10" r="5" fill="#fff"/><circle cx="12.6" cy="10" r="4" fill="#e30a17"/><g fill="#fff">${star(17.4, 10, 2.2, 90)}</g>`;
 }
 
-const FLAGS: Record<string, () => string> = { en: usFlag, vi: vnFlag, ja: jpFlag, zh: cnFlag, es: esFlag, de: deFlag, ru: ruFlag, fr: frFlag, pt: ptFlag, it: itFlag, tr: trFlag, nl: nlFlag };
+function krFlag(): string {
+  const bars = (x: number, y: number, rot: number) => `<g transform="rotate(${rot} ${x} ${y})" stroke="#000" stroke-width="0.6"><path d="M${x - 1.6} ${y - 0.9}h3.2M${x - 1.6} ${y}h3.2M${x - 1.6} ${y + 0.9}h3.2"/></g>`;
+  return `<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="3.6" fill="#cd2e3a"/><path d="M11.4 10a3.6 3.6 0 0 0 7.2 0a1.8 1.8 0 0 0-3.6 0a1.8 1.8 0 0 1-3.6 0z" fill="#0047a0"/>${bars(6, 4.5, -35)}${bars(24, 4.5, 35)}${bars(6, 15.5, 35)}${bars(24, 15.5, -35)}`;
+}
+
+function aeFlag(): string {
+  return `<rect width="30" height="20" fill="#fff"/><rect x="7.5" width="22.5" height="6.67" fill="#00732f"/><rect x="7.5" y="13.33" width="22.5" height="6.67" fill="#000"/><rect width="7.5" height="20" fill="#ff0000"/>`;
+}
+
+function inFlag(): string {
+  const spokes = Array.from({ length: 12 }, (_, k) => { const a = (k * Math.PI) / 6; return `M15 10L${(15 + 2.5 * Math.cos(a)).toFixed(2)} ${(10 + 2.5 * Math.sin(a)).toFixed(2)}`; }).join('');
+  return `<rect width="30" height="20" fill="#fff"/><rect width="30" height="6.67" fill="#ff9933"/><rect y="13.33" width="30" height="6.67" fill="#138808"/><circle cx="15" cy="10" r="2.5" fill="none" stroke="#000080" stroke-width="0.45"/><path d="${spokes}" stroke="#000080" stroke-width="0.3"/>`;
+}
+
+function idFlag(): string {
+  return `<rect width="30" height="20" fill="#fff"/><rect width="30" height="10" fill="#e70011"/>`;
+}
+
+function thFlag(): string {
+  return `<rect width="30" height="20" fill="#fff"/><rect width="30" height="3.33" fill="#a51931"/><rect y="16.67" width="30" height="3.33" fill="#a51931"/><rect y="6.67" width="30" height="6.67" fill="#2d2a4a"/>`;
+}
+
+function plFlag(): string {
+  return `<rect width="30" height="20" fill="#fff"/><rect y="10" width="30" height="10" fill="#dc143c"/>`;
+}
+
+function uaFlag(): string {
+  return `<rect width="30" height="20" fill="#ffd700"/><rect width="30" height="10" fill="#0057b7"/>`;
+}
+
+function bdFlag(): string {
+  return `<rect width="30" height="20" fill="#006a4e"/><circle cx="13.5" cy="10" r="4.5" fill="#f42a41"/>`;
+}
+
+const FLAGS: Record<string, () => string> = { en: usFlag, vi: vnFlag, ja: jpFlag, zh: cnFlag, es: esFlag, de: deFlag, ru: ruFlag, fr: frFlag, pt: ptFlag, it: itFlag, tr: trFlag, nl: nlFlag, ko: krFlag, ar: aeFlag, hi: inFlag, id: idFlag, th: thFlag, pl: plFlag, uk: uaFlag, bn: bdFlag };
 
 /** Trả về thẻ <svg> của lá cờ ứng với mã ngôn ngữ (rỗng nếu chưa có cờ). */
 export function flagSvg(lang: string): string {

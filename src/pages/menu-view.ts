@@ -5,6 +5,7 @@ import { bindMenuNav, decodeMenu, menuHtml, menuLang, menuText } from '../menu/m
 const root = document.getElementById('menu') as HTMLElement;
 const lang = menuLang();
 document.documentElement.lang = lang;
+if (lang === 'ar') document.documentElement.dir = 'rtl';
 document.title = menuText('title');
 root.innerHTML = `<p class="mv-loading">${menuText('loading')}</p>`;
 const credit = document.querySelector<HTMLElement>('.mv-credit');

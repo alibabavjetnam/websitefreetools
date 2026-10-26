@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -53,12 +53,21 @@
           it: ['Pagina non trovata', 'Questa pagina potrebbe aver cambiato indirizzo o non esistere. Torna alla home per scegliere uno strumento.', 'Torna alla home', ['Codice QR', 'Comprimi immagine', 'Unisci PDF', 'Calcolatore di prestiti']],
           tr: ['Sayfa bulunamadı', 'Bu sayfanın adresi değişmiş olabilir veya sayfa mevcut değil. Bir araç seçmek için ana sayfaya dönün.', 'Ana sayfaya dön', ['QR kod', 'Görsel sıkıştır', 'PDF birleştir', 'Kredi hesaplayıcı']],
           nl: ['Pagina niet gevonden', 'Deze pagina is mogelijk verplaatst of bestaat niet. Ga terug naar de startpagina om een tool te kiezen.', 'Terug naar home', ['QR-code', 'Afbeelding comprimeren', 'Pdf samenvoegen', 'Leningcalculator']],
+          ko: ['페이지를 찾을 수 없습니다', '페이지 주소가 바뀌었거나 존재하지 않을 수 있습니다. 홈으로 돌아가 도구를 선택하세요.', '홈으로 돌아가기', ['QR 코드', '이미지 압축', 'PDF 합치기', '대출 계산기']],
+          ar: ['الصفحة غير موجودة', 'ربما تغيّر عنوان هذه الصفحة أو أنها غير موجودة. عُد إلى الصفحة الرئيسية لاختيار أداة.', 'العودة إلى الرئيسية', ['رمز QR', 'ضغط الصور', 'دمج ملفات PDF', 'حاسبة القروض']],
+          hi: ['पेज नहीं मिला', 'इस पेज का पता बदल गया हो सकता है या यह मौजूद नहीं है। कोई टूल चुनने के लिए होम पेज पर लौटें।', 'होम पर जाएँ', ['QR कोड', 'इमेज कंप्रेस करें', 'PDF जोड़ें', 'लोन कैलकुलेटर']],
+          id: ['Halaman tidak ditemukan', 'Halaman ini mungkin sudah pindah atau tidak ada. Kembali ke beranda untuk memilih alat.', 'Kembali ke beranda', ['Kode QR', 'Kompres gambar', 'Gabung PDF', 'Kalkulator pinjaman']],
+          th: ['ไม่พบหน้านี้', 'หน้านี้อาจเปลี่ยนที่อยู่หรือไม่มีอยู่ กลับไปหน้าแรกเพื่อเลือกเครื่องมือ', 'กลับหน้าแรก', ['คิวอาร์โค้ด', 'บีบอัดรูปภาพ', 'รวมไฟล์ PDF', 'เครื่องคำนวณสินเชื่อ']],
+          pl: ['Nie znaleziono strony', 'Ta strona mogła zmienić adres lub nie istnieje. Wróć na stronę główną, aby wybrać narzędzie.', 'Wróć na stronę główną', ['Kod QR', 'Kompresja obrazów', 'Łączenie PDF', 'Kalkulator kredytowy']],
+          uk: ['Сторінку не знайдено', 'Адреса цієї сторінки могла змінитися, або її не існує. Поверніться на головну, щоб вибрати інструмент.', 'На головну', ['QR-код', 'Стиснення зображень', 'Об’єднання PDF', 'Кредитний калькулятор']],
+          bn: ['পৃষ্ঠাটি পাওয়া যায়নি', 'এই পৃষ্ঠার ঠিকানা বদলে যেতে পারে বা পৃষ্ঠাটি নেই। টুল বেছে নিতে হোম পেজে ফিরে যান।', 'হোমে ফিরে যান', ['QR কোড', 'ছবি সংকুচিত করুন', 'PDF যুক্ত করুন', 'ঋণ ক্যালকুলেটর']],
           de: ['Seite nicht gefunden', 'Diese Seite hat möglicherweise ihre Adresse geändert oder existiert nicht. Gehe zurück zur Startseite, um ein Tool auszuwählen.', 'Zur Startseite', ['QR-Code', 'Bild komprimieren', 'PDF zusammenfügen', 'Kreditrechner']],
           es: ['Página no encontrada', 'Es posible que esta página haya cambiado de dirección o no exista. Vuelve al inicio para elegir una herramienta.', 'Volver al inicio', ['Código QR', 'Comprimir imagen', 'Unir PDF', 'Calculadora de préstamos']],
           zh: ['找不到此页面', '该页面可能已移动或不存在。请返回首页选择工具。', '返回首页', ['二维码', '压缩图片', '合并 PDF', '贷款计算']]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
+        if (lang === 'ar') document.documentElement.dir = 'rtl';
         document.title = T[0] + ' — WFTools';
         document.getElementById('t-title').textContent = T[0];
         document.getElementById('t-text').textContent = T[1];
