@@ -1,5 +1,6 @@
 /** Tiện ích giao diện dùng chung cho các trang công cụ */
 import { t, currentLang, localeTag } from './i18n';
+import LANG_META from './langs.json';
 
 export const $ = <T extends HTMLElement = HTMLElement>(sel: string, root: ParentNode = document): T => {
   const el = root.querySelector<T>(sel);
@@ -20,6 +21,8 @@ const CURRENCY: Record<string, { code: string; dec: number; perUnit: number }> =
   ko: { code: 'KRW', dec: 0, perUnit: 18 }, ar: { code: 'AED', dec: 2, perUnit: 6800 }, hi: { code: 'INR', dec: 2, perUnit: 300 },
   id: { code: 'IDR', dec: 0, perUnit: 1.6 }, th: { code: 'THB', dec: 2, perUnit: 770 }, pl: { code: 'PLN', dec: 2, perUnit: 6900 },
   uk: { code: 'UAH', dec: 2, perUnit: 600 }, bn: { code: 'BDT', dec: 2, perUnit: 205 },
+  // Các ngôn ngữ thêm sau: lấy từ src/langs.json (trường cur = [mã, số lẻ, tỉ giá so với VND])
+  ...Object.fromEntries(Object.entries(LANG_META as unknown as Record<string, { cur?: [string, number, number] }>).filter(([, v]) => v.cur).map(([k, v]) => [k, { code: v.cur![0], dec: v.cur![1], perUnit: v.cur![2] }])),
 };
 const cur = () => CURRENCY[currentLang()] || CURRENCY.en;
 const nf = (opts: Intl.NumberFormatOptions) => new Intl.NumberFormat(localeTag(), opts);

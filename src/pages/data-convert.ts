@@ -5,11 +5,11 @@ import { CDN, global, loadScript } from '../lib/cdn';
 import { parseXml, XmlError } from '../lib/xml';
 import { detectDelimiter, parseCsv, toCsv } from '../lib/csv';
 import { inferValue, jsonToTable, jsonToXml, rowsToTable, tableToJson, xmlToJson, type Json, type Table } from '../lib/dataconv';
-import { pageText, currentLang } from '../i18n';
+import { pageText, localeTag } from '../i18n';
 
 mountLayout({ activeTool: 'data-convert' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = localeTag();
 
 const MAX_BYTES = 30 * 1024 * 1024;
 const MAX_TEXTAREA = 200_000;

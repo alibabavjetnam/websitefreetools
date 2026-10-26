@@ -27,9 +27,11 @@ export function pageText(): (key: string, fallback?: string) => string {
   return (key: string, fallback = '') => s?.[key] ?? fallback;
 }
 
-export const LANGS = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn'] as const;
-export type Lang = (typeof LANGS)[number];
-export const LANG_NAMES: Record<string, string> = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español', de: 'Deutsch', ru: 'Русский', fr: 'Français', pt: 'Português', it: 'Italiano', tr: 'Türkçe', nl: 'Nederlands', ko: '한국어', ar: 'العربية', hi: 'हिन्दी', id: 'Bahasa Indonesia', th: 'ไทย', pl: 'Polski', uk: 'Українська', bn: 'বাংলা' };
+import LANG_META from './langs.json';
+/** Danh sách ngôn ngữ lấy từ src/langs.json (dùng chung với scripts/i18n.mjs). Thứ tự = thứ tự trong menu. */
+export const LANGS: readonly string[] = Object.keys(LANG_META);
+export type Lang = string;
+export const LANG_NAMES: Record<string, string> = Object.fromEntries(Object.entries(LANG_META as Record<string, { name: string }>).map(([k, v]) => [k, v.name]));
 
 export const currentLang = (): string => w.__WFT_LANG__ || document.documentElement.lang || 'en';
 /** Tiền tố đường dẫn theo ngôn ngữ, ví dụ "/vi". Khi chạy dev không có tiền tố thì trả "". */
@@ -51,7 +53,7 @@ export function tf(key: string, fallback: string, vars: Record<string, string | 
   return s;
 }
 /** Mã locale cho Intl / toLocaleString theo ngôn ngữ hiện tại. */
-export const localeTag = (): string => (({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' } as Record<string, string>)[currentLang()] || 'en-US');
+export const localeTag = (): string => (LANG_META as Record<string, { locale: string }>)[currentLang()]?.locale || 'en-US';
 export function groupName(id: string, fallback: string): string {
   return dict()?.groups?.[id]?.name ?? fallback;
 }

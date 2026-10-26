@@ -1,10 +1,10 @@
 import { mountLayout } from '../layout';
 import { $, currencyCode, downloadBlob, escapeHtml, fmtMoney, sampleMoney, storage, toast } from '../ui';
-import { pageText, currentLang } from '../i18n';
+import { pageText, currentLang, localeTag } from '../i18n';
 
 mountLayout({ activeTool: 'teaching-pay' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = localeTag();
 
 interface Session { id: string; date: string; title: string; hours: number; rate: number }
 const store = storage<Session[]>('teaching-pay', []);

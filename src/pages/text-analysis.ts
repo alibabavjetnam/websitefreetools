@@ -3,12 +3,12 @@ import { $, copyText, escapeHtml } from '../ui';
 import { bindDropzone, fmtSize } from '../lib/files';
 import { fileToText } from '../lib/extract';
 import { READ_WPM, SPEAK_WPM, countPhrase, fmtDuration, keywords, textStats } from '../calc/text-stats';
-import { pageText, currentLang } from '../i18n';
+import { pageText, localeTag } from '../i18n';
 
 mountLayout({ activeTool: 'text-analysis' });
 const T = pageText();
 const DUR = { h: T('u.h', '{n} giờ'), m: T('u.m', '{n} phút'), s: T('u.s', '{n} giây') };
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = localeTag();
 
 const MAX_CHARS = 5_000_000;
 const SAMPLE_VI = `Cà phê sữa đá là thức uống quen thuộc của người Việt. Mỗi sáng, hàng triệu người bắt đầu ngày mới bằng một ly cà phê sữa đá đậm đà.

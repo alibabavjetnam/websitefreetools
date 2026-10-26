@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -63,11 +63,19 @@
           bn: ['পৃষ্ঠাটি পাওয়া যায়নি', 'এই পৃষ্ঠার ঠিকানা বদলে যেতে পারে বা পৃষ্ঠাটি নেই। টুল বেছে নিতে হোম পেজে ফিরে যান।', 'হোমে ফিরে যান', ['QR কোড', 'ছবি সংকুচিত করুন', 'PDF যুক্ত করুন', 'ঋণ ক্যালকুলেটর']],
           de: ['Seite nicht gefunden', 'Diese Seite hat möglicherweise ihre Adresse geändert oder existiert nicht. Gehe zurück zur Startseite, um ein Tool auszuwählen.', 'Zur Startseite', ['QR-Code', 'Bild komprimieren', 'PDF zusammenfügen', 'Kreditrechner']],
           es: ['Página no encontrada', 'Es posible que esta página haya cambiado de dirección o no exista. Vuelve al inicio para elegir una herramienta.', 'Volver al inicio', ['Código QR', 'Comprimir imagen', 'Unir PDF', 'Calculadora de préstamos']],
-          zh: ['找不到此页面', '该页面可能已移动或不存在。请返回首页选择工具。', '返回首页', ['二维码', '压缩图片', '合并 PDF', '贷款计算']]
+          zh: ['找不到此页面', '该页面可能已移动或不存在。请返回首页选择工具。', '返回首页', ['二维码', '压缩图片', '合并 PDF', '贷款计算']],
+          ms: ["Halaman tidak ditemui", "Halaman ini mungkin telah berpindah atau tidak wujud. Kembali ke laman utama untuk memilih alat.", "Kembali ke laman utama", ["Kod QR", "Mampat imej", "Gabung PDF", "Kalkulator pinjaman"]],
+          fa: ["صفحه پیدا نشد", "نشانی این صفحه ممکن است تغییر کرده باشد یا وجود نداشته باشد. برای انتخاب ابزار به صفحه اصلی برگردید.", "بازگشت به صفحه اصلی", ["کد QR", "فشرده‌سازی تصویر", "ادغام PDF", "ماشین‌حساب وام"]],
+          he: ["הדף לא נמצא", "ייתכן שכתובת הדף השתנתה או שהוא לא קיים. חזרו לדף הבית כדי לבחור כלי.", "חזרה לדף הבית", ["קוד QR", "דחיסת תמונות", "מיזוג PDF", "מחשבון הלוואות"]],
+          ur: ["صفحہ نہیں ملا", "ہو سکتا ہے اس صفحے کا پتہ بدل گیا ہو یا یہ موجود نہ ہو۔ ٹول منتخب کرنے کے لیے ہوم پیج پر واپس جائیں۔", "ہوم پر واپس جائیں", ["QR کوڈ", "تصویر کمپریس کریں", "PDF جوڑیں", "قرض کیلکولیٹر"]],
+          ta: ["பக்கம் கிடைக்கவில்லை", "இந்தப் பக்கத்தின் முகவரி மாறியிருக்கலாம் அல்லது பக்கம் இல்லாமல் இருக்கலாம். கருவியைத் தேர்ந்தெடுக்க முகப்புப் பக்கத்திற்குத் திரும்பவும்.", "முகப்புக்குத் திரும்பு", ["QR குறியீடு", "படத்தைச் சுருக்கு", "PDF இணை", "கடன் கணிப்பான்"]],
+          te: ["పేజీ కనబడలేదు", "ఈ పేజీ చిరునామా మారి ఉండవచ్చు లేదా అది లేకపోవచ్చు. టూల్ ఎంచుకోవడానికి హోమ్ పేజీకి వెళ్లండి.", "హోమ్‌కు వెళ్లండి", ["QR కోడ్", "చిత్రాన్ని కుదించు", "PDF విలీనం", "రుణ కాలిక్యులేటర్"]],
+          mr: ["पेज सापडले नाही", "या पेजचा पत्ता बदलला असावा किंवा ते अस्तित्वात नसावे. टूल निवडण्यासाठी मुख्य पेजवर परत जा.", "मुख्य पेजवर जा", ["QR कोड", "इमेज कॉम्प्रेस करा", "PDF एकत्र करा", "कर्ज कॅल्क्युलेटर"]],
+          gu: ["પેજ મળ્યું નથી", "આ પેજનું સરનામું બદલાયું હોઈ શકે અથવા તે અસ્તિત્વમાં ન હોય. ટૂલ પસંદ કરવા હોમ પેજ પર પાછા જાઓ.", "હોમ પર જાઓ", ["QR કોડ", "છબી કમ્પ્રેસ કરો", "PDF જોડો", "લોન કેલ્ક્યુલેટર"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
-        if (lang === 'ar') document.documentElement.dir = 'rtl';
+        if (['ar', 'fa', 'he', 'ur'].indexOf(lang) >= 0) document.documentElement.dir = 'rtl';
         document.title = T[0] + ' — WFTools';
         document.getElementById('t-title').textContent = T[0];
         document.getElementById('t-text').textContent = T[1];

@@ -1,11 +1,11 @@
 import { mountLayout } from '../layout';
 import { $, escapeHtml, storage } from '../ui';
 import { vnHolidaysBetween, workdaysBetween } from '../calc/workdays';
-import { pageText, currentLang } from '../i18n';
+import { pageText, currentLang, localeTag } from '../i18n';
 
 mountLayout({ activeTool: 'workdays' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = localeTag();
 
 const todayKey = () => new Date().toLocaleDateString('en-CA');
 const addMonths = (k: string, n: number) => { const [y, m, d] = k.split('-').map(Number); return new Date(y, m - 1 + n, d).toLocaleDateString('en-CA'); };

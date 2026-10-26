@@ -110,11 +110,13 @@ function bdFlag(): string {
   return `<rect width="30" height="20" fill="#006a4e"/><circle cx="13.5" cy="10" r="4.5" fill="#f42a41"/>`;
 }
 
+import EXTRA_FLAGS from './flags-extra.json';
+
 const FLAGS: Record<string, () => string> = { en: usFlag, vi: vnFlag, ja: jpFlag, zh: cnFlag, es: esFlag, de: deFlag, ru: ruFlag, fr: frFlag, pt: ptFlag, it: itFlag, tr: trFlag, nl: nlFlag, ko: krFlag, ar: aeFlag, hi: inFlag, id: idFlag, th: thFlag, pl: plFlag, uk: uaFlag, bn: bdFlag };
 
 /** Trả về thẻ <svg> của lá cờ ứng với mã ngôn ngữ (rỗng nếu chưa có cờ). */
 export function flagSvg(lang: string): string {
-  const draw = FLAGS[lang];
-  if (!draw) return '';
+  const draw = FLAGS[lang] ?? ((): string => (EXTRA_FLAGS as Record<string, string>)[lang] ?? '');
+  if (!draw()) return '';
   return `<svg class="flag" viewBox="0 0 30 20" width="21" height="14" aria-hidden="true" focusable="false">${draw()}<rect width="30" height="20" fill="none" stroke="rgba(0,0,0,.25)" stroke-width="1"/></svg>`;
 }

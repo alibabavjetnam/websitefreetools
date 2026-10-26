@@ -13,9 +13,10 @@ const ROOT = resolve(__dirname, '..');
 const DIST = resolve(ROOT, 'dist');
 const SITE = 'https://websitefreetools.com';
 const OG_IMAGE = `${SITE}/og-image.png`;
-const LANGS = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn'];
+const LANG_META = JSON.parse(readFileSync(resolve(ROOT, 'src/langs.json'), 'utf8'));
+const LANGS = Object.keys(LANG_META);
 const DEFAULT = 'en';
-const LANG_NAME = { en: 'English', vi: 'Tiếng Việt', ja: '日本語', zh: '中文', es: 'Español', de: 'Deutsch', ru: 'Русский', fr: 'Français', pt: 'Português', it: 'Italiano', tr: 'Türkçe', nl: 'Nederlands', ko: '한국어', ar: 'العربية', hi: 'हिन्दी', id: 'Bahasa Indonesia', th: 'ไทย', pl: 'Polski', uk: 'Українська', bn: 'বাংলা' };
+const LANG_NAME = Object.fromEntries(Object.entries(LANG_META).map(([k, v]) => [k, v.name]));
 
 const dicts = Object.fromEntries(LANGS.map((l) => [l, JSON.parse(readFileSync(resolve(ROOT, 'public/language', `${l}.json`), 'utf8'))]));
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

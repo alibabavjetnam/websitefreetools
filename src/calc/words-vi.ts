@@ -1,5 +1,6 @@
 import { currentLang } from '../i18n';
 import { moneyInWordsMore } from './words-more';
+import LANG_META from '../langs.json';
 
 /** Đọc số tiền thành chữ tiếng Việt, ví dụ 1.250.000 -> "Một triệu hai trăm năm mươi nghìn đồng" */
 
@@ -518,6 +519,14 @@ export function moneyInWords(value: number): string {
   if (lang === 'zh') {
     const w = numberToChinese(value);
     return w ? `${neg ? '负' : ''}${w}元整` : '';
+  }
+  if (lang !== 'vi') {
+    // Ngôn ngữ chưa có bộ đọc số riêng: đọc bằng tiếng Anh kèm mã tiền tệ của nước đó
+    const w = numberToEnglish(value);
+    const code = (LANG_META as unknown as Record<string, { cur?: [string, number, number] }>)[lang]?.cur?.[0] ?? '';
+    if (!w) return '';
+    const text = `${neg ? 'minus ' : ''}${w}${code ? ' ' + code : ''}`;
+    return text.charAt(0).toUpperCase() + text.slice(1);
   }
   return moneyInVietnamese(value);
 }

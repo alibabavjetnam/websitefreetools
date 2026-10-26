@@ -20,13 +20,15 @@ const MAX_ITEMS = 300;
 /* ---------- Ngôn ngữ trang khách xem menu ----------
  * Trang /m/ không nạp từ điển của site (khách chỉ quét QR), nên chuỗi nằm sẵn ở đây.
  * Ngôn ngữ: theo trang công cụ nếu có (__WFT_LANG__), nếu không thì theo ngôn ngữ trình duyệt của khách. */
-export type MenuLang = 'vi' | 'en' | 'ja' | 'zh' | 'es' | 'de' | 'ru' | 'fr' | 'pt' | 'it' | 'tr' | 'nl' | 'ko' | 'ar' | 'hi' | 'id' | 'th' | 'pl' | 'uk' | 'bn';
+export type MenuLang = string;
 export function menuLang(): MenuLang {
   const w = window as unknown as { __WFT_LANG__?: string };
-  const raw = (w.__WFT_LANG__ || (typeof navigator !== 'undefined' ? navigator.language : '') || 'en').slice(0, 2).toLowerCase();
-  return ['vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn'].includes(raw) ? (raw as MenuLang) : 'en';
+  const raw = (w.__WFT_LANG__ || (typeof navigator !== 'undefined' ? navigator.language : '') || 'en').split('-')[0].toLowerCase();
+  return raw !== 'en' && MENU_TEXT[raw] ? raw : 'en';
 }
-const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
+import MENU_EXTRA from './menu-extra.json';
+import LANG_META from '../langs.json';
+const MENU_TEXT: Record<string, Record<string, string>> = {
   vi: {
     shop: 'Tên quán', cat: 'Món', title: 'Thực đơn', loading: 'Đang mở thực đơn…', credit: 'Tạo thực đơn QR miễn phí tại',
     noMenu: 'Đường link chưa có thực đơn. Hãy quét lại mã QR của quán.',
@@ -168,8 +170,9 @@ const MENU_TEXT: Record<MenuLang, Record<string, string>> = {
     oldBrowser: 'মেনু খোলার জন্য এই ব্রাউজারটি অনেক পুরোনো। অনুগ্রহ করে ব্রাউজার আপডেট করুন।', badLink: 'মেনুর লিঙ্কটি সঠিক নয়।',
   },
 };
+Object.assign(MENU_TEXT, MENU_EXTRA);
 export const menuText = (key: string): string => MENU_TEXT[menuLang()][key] ?? MENU_TEXT.vi[key] ?? key;
-const PRICE_LOCALE: Record<MenuLang, string> = { vi: 'vi-VN', en: 'en-US', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' };
+const priceLocale = (l: string): string => (LANG_META as Record<string, { locale: string }>)[l]?.locale || 'en-US';
 
 /* ---------- Dạng gọn để link ngắn: mảng thay cho object ---------- */
 type Compact = [string, string, string, string, [string, [string, number, string][]][]];
@@ -243,7 +246,7 @@ export async function decodeMenu(hash: string): Promise<Menu> {
   return fromCompact(JSON.parse(new TextDecoder().decode(bytes)));
 }
 
-const fmtPrice = (n: number) => (n ? new Intl.NumberFormat(PRICE_LOCALE[menuLang()]).format(n) : '');
+const fmtPrice = (n: number) => (n ? new Intl.NumberFormat(priceLocale(menuLang())).format(n) : '');
 
 /**
  * HTML của menu (dùng cho trang khách xem và phần xem trước trong công cụ).

@@ -3,11 +3,11 @@ import { $, downloadBlob, escapeHtml, toast } from '../ui';
 import { bindDropzone, fmtSize } from '../lib/files';
 import { fileToText, type HtmlMode } from '../lib/extract';
 import { diffText, type DiffResult, type Row, type Segment } from '../calc/diff';
-import { pageText, currentLang } from '../i18n';
+import { pageText, currentLang, localeTag } from '../i18n';
 
 mountLayout({ activeTool: 'file-diff' });
 const T = pageText();
-const LOCALE = ({ en: 'en-US', vi: 'vi-VN', ja: 'ja-JP', zh: 'zh-CN', es: 'es-ES', de: 'de-DE', ru: 'ru-RU', fr: 'fr-FR', pt: 'pt-BR', it: 'it-IT', tr: 'tr-TR', nl: 'nl-NL', ko: 'ko-KR', ar: 'ar-AE-u-nu-latn', hi: 'hi-IN', id: 'id-ID', th: 'th-TH-u-ca-gregory', pl: 'pl-PL', uk: 'uk-UA', bn: 'bn-BD-u-nu-latn' } as Record<string, string>)[currentLang()] || 'en-US';
+const LOCALE = localeTag();
 const nf = (n: number) => n.toLocaleString(LOCALE);
 
 const CONTEXT = 3;
