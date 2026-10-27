@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -71,7 +71,15 @@
           ta: ["பக்கம் கிடைக்கவில்லை", "இந்தப் பக்கத்தின் முகவரி மாறியிருக்கலாம் அல்லது பக்கம் இல்லாமல் இருக்கலாம். கருவியைத் தேர்ந்தெடுக்க முகப்புப் பக்கத்திற்குத் திரும்பவும்.", "முகப்புக்குத் திரும்பு", ["QR குறியீடு", "படத்தைச் சுருக்கு", "PDF இணை", "கடன் கணிப்பான்"]],
           te: ["పేజీ కనబడలేదు", "ఈ పేజీ చిరునామా మారి ఉండవచ్చు లేదా అది లేకపోవచ్చు. టూల్ ఎంచుకోవడానికి హోమ్ పేజీకి వెళ్లండి.", "హోమ్‌కు వెళ్లండి", ["QR కోడ్", "చిత్రాన్ని కుదించు", "PDF విలీనం", "రుణ కాలిక్యులేటర్"]],
           mr: ["पेज सापडले नाही", "या पेजचा पत्ता बदलला असावा किंवा ते अस्तित्वात नसावे. टूल निवडण्यासाठी मुख्य पेजवर परत जा.", "मुख्य पेजवर जा", ["QR कोड", "इमेज कॉम्प्रेस करा", "PDF एकत्र करा", "कर्ज कॅल्क्युलेटर"]],
-          gu: ["પેજ મળ્યું નથી", "આ પેજનું સરનામું બદલાયું હોઈ શકે અથવા તે અસ્તિત્વમાં ન હોય. ટૂલ પસંદ કરવા હોમ પેજ પર પાછા જાઓ.", "હોમ પર જાઓ", ["QR કોડ", "છબી કમ્પ્રેસ કરો", "PDF જોડો", "લોન કેલ્ક્યુલેટર"]]
+          gu: ["પેજ મળ્યું નથી", "આ પેજનું સરનામું બદલાયું હોઈ શકે અથવા તે અસ્તિત્વમાં ન હોય. ટૂલ પસંદ કરવા હોમ પેજ પર પાછા જાઓ.", "હોમ પર જાઓ", ["QR કોડ", "છબી કમ્પ્રેસ કરો", "PDF જોડો", "લોન કેલ્ક્યુલેટર"]],
+          kn: ["ಪುಟ ಸಿಗಲಿಲ್ಲ", "ಈ ಪುಟದ ವಿಳಾಸ ಬದಲಾಗಿರಬಹುದು ಅಥವಾ ಅದು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲದಿರಬಹುದು. ಸಾಧನ ಆಯ್ಕೆ ಮಾಡಲು ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ.", "ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ", ["QR ಕೋಡ್", "ಚಿತ್ರ ಸಂಕುಚಿಸಿ", "PDF ವಿಲೀನ", "ಸಾಲ ಕ್ಯಾಲ್ಕುಲೇಟರ್"]],
+          ml: ["പേജ് കണ്ടെത്തിയില്ല", "ഈ പേജിന്റെ വിലാസം മാറിയിരിക്കാം, അല്ലെങ്കിൽ അത് നിലവിലില്ലായിരിക്കാം. ടൂൾ തിരഞ്ഞെടുക്കാൻ ഹോം പേജിലേക്ക് മടങ്ങുക.", "ഹോമിലേക്ക് മടങ്ങുക", ["QR കോഡ്", "ചിത്രം ചുരുക്കുക", "PDF ലയിപ്പിക്കുക", "വായ്പ കാൽക്കുലേറ്റർ"]],
+          pa: ["ਪੰਨਾ ਨਹੀਂ ਮਿਲਿਆ", "ਹੋ ਸਕਦਾ ਹੈ ਇਸ ਪੰਨੇ ਦਾ ਪਤਾ ਬਦਲ ਗਿਆ ਹੋਵੇ ਜਾਂ ਇਹ ਮੌਜੂਦ ਨਾ ਹੋਵੇ। ਟੂਲ ਚੁਣਨ ਲਈ ਮੁੱਖ ਪੰਨੇ 'ਤੇ ਵਾਪਸ ਜਾਓ।", "ਮੁੱਖ ਪੰਨੇ 'ਤੇ ਜਾਓ", ["QR ਕੋਡ", "ਤਸਵੀਰ ਸੰਕੁਚਿਤ ਕਰੋ", "PDF ਜੋੜੋ", "ਕਰਜ਼ਾ ਕੈਲਕੁਲੇਟਰ"]],
+          sv: ["Sidan hittades inte", "Sidans adress kan ha ändrats, eller så finns den inte. Gå tillbaka till startsidan för att välja ett verktyg.", "Tillbaka till startsidan", ["QR-kod", "Komprimera bilder", "Slå ihop PDF", "Lånekalkylator"]],
+          da: ["Siden blev ikke fundet", "Sidens adresse kan være ændret, eller siden findes ikke. Gå tilbage til forsiden for at vælge et værktøj.", "Tilbage til forsiden", ["QR-kode", "Komprimer billeder", "Sammenflet PDF", "Lånberegner"]],
+          nb: ["Siden ble ikke funnet", "Adressen til siden kan ha endret seg, eller siden finnes ikke. Gå tilbake til forsiden for å velge et verktøy.", "Tilbake til forsiden", ["QR-kode", "Komprimer bilder", "Slå sammen PDF", "Lånekalkulator"]],
+          fi: ["Sivua ei löytynyt", "Sivun osoite on voinut muuttua tai sivua ei ole olemassa. Palaa etusivulle valitsemaan työkalu.", "Takaisin etusivulle", ["QR-koodi", "Pienennä kuvia", "Yhdistä PDF", "Lainalaskuri"]],
+          cs: ["Stránka nenalezena", "Adresa stránky se možná změnila nebo stránka neexistuje. Vraťte se na úvodní stránku a vyberte nástroj.", "Zpět na úvodní stránku", ["QR kód", "Komprese obrázků", "Sloučení PDF", "Kalkulačka půjčky"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
