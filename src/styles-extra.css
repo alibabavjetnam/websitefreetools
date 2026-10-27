@@ -229,6 +229,7 @@ textarea:focus-visible {
   opacity: 0.85;
 }
 .winner {
+  align-self: stretch;
   padding: 16px;
   border-radius: var(--radius);
   background: var(--accent-soft);
