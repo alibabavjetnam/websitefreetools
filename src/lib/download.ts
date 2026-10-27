@@ -53,7 +53,7 @@ export function safeFilename(text: string, fallback: string): string {
     .replace(/đ/g, 'd')
     .replace(/Đ/g, 'D')
     .normalize('NFC')
-    .replace(/[^\p{L}\p{N}]+/gu, '-')
+    .replace(/[^\p{L}\p{M}\p{N}]+/gu, '-')
     .replace(/^-+|-+$/g, '')
     .slice(0, 40);
   return base || fallback;
