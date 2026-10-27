@@ -270,6 +270,14 @@ export function mountLayout(opts: { activeNav?: string; activeTool?: string } = 
       e.stopPropagation();
       langMenu.hidden = !langMenu.hidden;
       langBtn.setAttribute('aria-expanded', String(!langMenu.hidden));
+      langMenu.style.transform = '';
+      if (!langMenu.hidden) {
+        // Giữ bảng nằm trọn trong màn hình: lệch trái thì dịch sang phải, lệch phải thì dịch sang trái
+        const r = langMenu.getBoundingClientRect();
+        const gap = 12;
+        if (r.left < gap) langMenu.style.transform = `translateX(${Math.round(gap - r.left)}px)`;
+        else if (r.right > window.innerWidth - gap) langMenu.style.transform = `translateX(${Math.round(window.innerWidth - gap - r.right)}px)`;
+      }
     });
     document.addEventListener('click', (e) => {
       if (!langMenu.hidden && !(e.target as HTMLElement).closest('.lang-switch')) langMenu.hidden = true;
