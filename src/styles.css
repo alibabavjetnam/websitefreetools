@@ -2523,6 +2523,7 @@ fieldset.field {
 .lang-btn:hover { border-color: var(--accent); color: var(--accent); }
 .lang-cur { font-weight: 500; }
 .lang-menu:not([hidden]) { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); width: min(640px, calc(100vw - 24px)); max-height: min(70vh, 520px); overflow-y: auto; }
+@media (min-width: 1000px) { .lang-menu:not([hidden]) { grid-template-columns: repeat(5, 1fr); width: min(960px, calc(100vw - 24px)); } }
 .lang-menu { position: absolute; right: 0; top: calc(100% + 6px); z-index: 60; min-width: 150px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: 0 8px 24px rgba(16,24,40,.12); padding: 4px; }
 .flag { flex: none; border-radius: 2px; display: block; }
 .lang-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radius-sm); color: var(--ink); text-decoration: none; font-size: .9rem; }
