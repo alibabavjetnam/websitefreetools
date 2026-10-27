@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -79,7 +79,15 @@
           da: ["Siden blev ikke fundet", "Sidens adresse kan være ændret, eller siden findes ikke. Gå tilbage til forsiden for at vælge et værktøj.", "Tilbage til forsiden", ["QR-kode", "Komprimer billeder", "Sammenflet PDF", "Lånberegner"]],
           nb: ["Siden ble ikke funnet", "Adressen til siden kan ha endret seg, eller siden finnes ikke. Gå tilbake til forsiden for å velge et verktøy.", "Tilbake til forsiden", ["QR-kode", "Komprimer bilder", "Slå sammen PDF", "Lånekalkulator"]],
           fi: ["Sivua ei löytynyt", "Sivun osoite on voinut muuttua tai sivua ei ole olemassa. Palaa etusivulle valitsemaan työkalu.", "Takaisin etusivulle", ["QR-koodi", "Pienennä kuvia", "Yhdistä PDF", "Lainalaskuri"]],
-          cs: ["Stránka nenalezena", "Adresa stránky se možná změnila nebo stránka neexistuje. Vraťte se na úvodní stránku a vyberte nástroj.", "Zpět na úvodní stránku", ["QR kód", "Komprese obrázků", "Sloučení PDF", "Kalkulačka půjčky"]]
+          cs: ["Stránka nenalezena", "Adresa stránky se možná změnila nebo stránka neexistuje. Vraťte se na úvodní stránku a vyberte nástroj.", "Zpět na úvodní stránku", ["QR kód", "Komprese obrázků", "Sloučení PDF", "Kalkulačka půjčky"]],
+          sk: ["Stránka sa nenašla", "Adresa stránky sa mohla zmeniť alebo stránka neexistuje. Vráťte sa na úvodnú stránku a vyberte nástroj.", "Späť na úvodnú stránku", ["QR kód", "Kompresia obrázkov", "Zlúčenie PDF", "Kalkulačka úveru"]],
+          hu: ["Az oldal nem található", "Az oldal címe megváltozhatott, vagy az oldal nem létezik. Térj vissza a főoldalra, és válassz eszközt.", "Vissza a főoldalra", ["QR-kód", "Képtömörítés", "PDF-egyesítés", "Hitelkalkulátor"]],
+          ro: ["Pagina nu a fost găsită", "Adresa paginii s-ar putea să se fi schimbat sau pagina nu există. Revino la pagina principală pentru a alege un instrument.", "Înapoi la pagina principală", ["Cod QR", "Comprimare imagini", "Îmbinare PDF", "Calculator de credit"]],
+          bg: ["Страницата не е намерена", "Адресът на страницата може да е променен или страницата не съществува. Върнете се на началната страница и изберете инструмент.", "Към началната страница", ["QR код", "Компресиране на изображения", "Обединяване на PDF", "Кредитен калкулатор"]],
+          el: ["Η σελίδα δεν βρέθηκε", "Η διεύθυνση της σελίδας μπορεί να άλλαξε ή η σελίδα να μην υπάρχει. Επιστρέψτε στην αρχική σελίδα για να επιλέξετε εργαλείο.", "Επιστροφή στην αρχική", ["Κωδικός QR", "Συμπίεση εικόνων", "Συγχώνευση PDF", "Υπολογιστής δανείου"]],
+          hr: ["Stranica nije pronađena", "Adresa stranice možda se promijenila ili stranica ne postoji. Vratite se na početnu stranicu i odaberite alat.", "Natrag na početnu", ["QR kod", "Kompresija slika", "Spajanje PDF-a", "Kreditni kalkulator"]],
+          sr: ["Страница није пронађена", "Адреса странице се можда променила или страница не постоји. Вратите се на почетну страницу и изаберите алатку.", "Назад на почетну", ["QR код", "Компресија слика", "Спајање PDF-а", "Калкулатор кредита"]],
+          lt: ["Puslapis nerastas", "Puslapio adresas galėjo pasikeisti arba puslapio nėra. Grįžkite į pradžios puslapį ir pasirinkite įrankį.", "Atgal į pradžią", ["QR kodas", "Vaizdų suspaudimas", "PDF sujungimas", "Paskolos skaičiuoklė"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
