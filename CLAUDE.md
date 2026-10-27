@@ -43,6 +43,17 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 4. Phần tính toán thuần đặt trong `src/calc/`
 5. Thêm chuỗi dịch vào `public/language/*.json` cho 4 ngôn ngữ
 
+## 37 công cụ thêm ngày 27/10/2026
+- Chọn từ danh sách công cụ online được tìm nhiều nhất (mức ★★★), chạy hoàn toàn trên trình duyệt, không API trả phí. Tổng site: 81 công cụ
+- Nhóm mới: `text` (Xử lý văn bản), `calc` (Máy tính & chuyển đổi), `random` (Ngẫu nhiên & bốc thăm), `device` (Kiểm tra thiết bị), `media` (Âm thanh & video)
+- CSS riêng của các công cụ này ở `src/styles-extra.css` (nạp trong `layout.ts`)
+- Thư viện CDN mới (chỉ nạp khi bấm xử lý): Tesseract.js 5.1.1 (OCR), heic2any 0.0.4, Transformers.js 3.5.2 (`src/lib/ai.ts`: BiRefNet_lite, MODNet, Swin2SR), @ffmpeg/core 0.12.6 (`src/lib/ffmpeg.ts` + worker tự viết `public/vendor/ffmpeg-worker.js`, vì worker phải cùng tên miền), html-to-image 1.11.13 (Word → PDF)
+- Tự viết: đọc .docx → HTML (`src/lib/docxhtml.ts`), ghi .docx (`src/lib/docxwriter.ts`), ghép chữ pdf.js thành đoạn và sửa chữ có dấu bị vẽ chồng (`src/calc/pdftext.ts`), nén lại ảnh JPEG trong PDF giữ nguyên chữ (`src/lib/pdfcompress.ts`), khung đặt chữ ký/chữ/ô che lên trang PDF có xử lý trang xoay (`src/lib/pdfeditor.ts`), bộ tính biểu thức không eval (`src/calc/expr.ts`), dò cao độ YIN (`src/calc/pitch.ts`)
+- Chữ đặt lên PDF (ký tên, thêm chữ, ô biểu mẫu có chữ tiếng Việt) được vẽ thành ảnh PNG độ phân giải cao vì phông chuẩn của pdf-lib không có dấu tiếng Việt và không có fontkit
+- Bản dịch: chuỗi riêng 37 công cụ mới, tên nhóm, tên công cụ mới có đủ `vi` + `en`; 48 ngôn ngữ còn lại đang lùi về tiếng Anh. `scripts/i18n.mjs` đã sửa để tên nhóm/công cụ chưa dịch lùi về tiếng Anh (trước đây lùi về tiếng Việt)
+- Đã chạy thử bằng Chromium (Playwright) cả 37 trang ở en/ja/vi: không lỗi JS, không sót tiếng Việt ở bản en/ja. Đã kiểm tra thật đầu–cuối (thư viện chạy cục bộ): ảnh ↔ PDF, nén PDF, PDF → Word, Word → PDF, ký PDF, điền form PDF. **Chưa chạy được đầu–cuối** (máy phiên này không tải được CDN): OCR, HEIC, xoá nền AI, làm nét AI, nén video, tách MP3 — cần thử trên site thật
+- Việc tiếp theo: dịch chuỗi 37 công cụ mới sang 48 ngôn ngữ còn lại; thử các công cụ CDN ở trên trên site thật
+
 ## Quy ước
 - Giao diện và chuỗi gốc bằng tiếng Việt
 - Không phụ thuộc thư viện ngoài khi có thể (QR, mã vạch, pptx, diff, obfuscate đều tự viết)

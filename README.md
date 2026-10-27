@@ -46,10 +46,49 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Tiếp thị | Tạo link UTM | `tools/utm.html` |
 | Tiếp thị | Bảng màu & mã màu | `tools/colors.html` |
 | Năng suất & đời sống | Tiền tệ & múi giờ (tỷ giá từ open.er-api.com) | `tools/currency-time.html` |
+| Xử lý hình ảnh | Đổi kích thước ảnh (pixel, %, cỡ mạng xã hội) | `tools/image-resize.html` |
+| Xử lý hình ảnh | Cắt ảnh (tỉ lệ, tròn, xoay, lật) | `tools/image-crop.html` |
+| Xử lý hình ảnh | Lấy chữ từ ảnh / PDF scan (OCR, Tesseract.js) | `tools/image-ocr.html` |
+| Xử lý hình ảnh | HEIC sang JPG (heic2any) | `tools/heic-jpg.html` |
+| Xử lý hình ảnh | Xoá nền ảnh bằng AI (BiRefNet / MODNet, Transformers.js) | `tools/ai-bg-remove.html` |
+| Xử lý hình ảnh | Làm nét & phóng to ảnh AI (Swin2SR, xử lý theo ô) | `tools/image-upscale.html` |
+| Xử lý file | Ảnh sang PDF | `tools/image-to-pdf.html` |
+| Xử lý file | PDF sang ảnh | `tools/pdf-to-image.html` |
+| Xử lý file | Nén PDF (nén lại ảnh JPEG giữ chữ, hoặc chuyển trang thành ảnh) | `tools/pdf-compress.html` |
+| Xử lý file | PDF sang Word (.docx tự tạo) | `tools/pdf-to-word.html` |
+| Xử lý file | Word sang PDF (tự đọc .docx, phân trang, tải PDF hoặc in) | `tools/word-to-pdf.html` |
+| Xử lý file | Ký tên lên PDF | `tools/pdf-sign.html` |
+| Xử lý file | Thêm chữ & điền form PDF | `tools/pdf-edit.html` |
+| Xử lý văn bản | Đổi chữ hoa, chữ thường, camelCase… | `tools/case-convert.html` |
+| Xử lý văn bản | Tạo chữ kiểu đẹp (Unicode) | `tools/fancy-text.html` |
+| Xử lý văn bản | Đọc văn bản thành giọng nói (Web Speech) | `tools/text-to-speech.html` |
+| Xử lý văn bản | Nói thành chữ (Web Speech) | `tools/speech-to-text.html` |
+| Máy tính & chuyển đổi | Máy tính khoa học (bộ tính biểu thức tự viết, không eval) | `tools/scientific-calc.html` |
+| Máy tính & chuyển đổi | Tính phần trăm | `tools/percentage.html` |
+| Máy tính & chuyển đổi | Đổi đơn vị đo | `tools/unit-convert.html` |
+| Công cụ thời gian | Tính tuổi | `tools/age-calc.html` |
+| Công cụ thời gian | Cộng trừ ngày tháng | `tools/date-calc.html` |
+| Giáo dục & giảng dạy | Tính điểm GPA | `tools/gpa.html` |
+| Tiện ích sức khoẻ | Tính ngày dự sinh | `tools/due-date.html` |
+| Ngẫu nhiên & bốc thăm | Vòng quay may mắn | `tools/spin-wheel.html` |
+| Ngẫu nhiên & bốc thăm | Quay số ngẫu nhiên | `tools/random-number.html` |
+| Kiểm tra thiết bị | Kiểm tra tốc độ gõ phím | `tools/typing-test.html` |
+| Kiểm tra thiết bị | Đo tốc độ click (CPS) | `tools/cps-test.html` |
+| Kiểm tra thiết bị | Kiểm tra webcam | `tools/webcam-test.html` |
+| Kiểm tra thiết bị | Quay màn hình | `tools/screen-recorder.html` |
+| Âm thanh & video | Nén video (ffmpeg.wasm) | `tools/video-compress.html` |
+| Âm thanh & video | Tách MP3 từ video (ffmpeg.wasm) | `tools/video-to-mp3.html` |
+| Âm thanh & video | Lên dây đàn guitar (dò cao độ YIN) | `tools/guitar-tuner.html` |
+| Công cụ tin học | Tạo mật khẩu mạnh | `tools/password-gen.html` |
+| Kinh doanh online | Tạo chữ ký tay | `tools/signature.html` |
+| Tiếp thị | Tạo logo đơn giản | `tools/logo-maker.html` |
+| Năng suất & đời sống | Sổ ghi chú online | `tools/notepad.html` |
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
 
 Nhóm Xử lý file nạp thư viện từ CDN chỉ khi người dùng bấm xử lý (`src/lib/cdn.ts`): pdf-lib (gộp, tách, tạo PDF), pdf.js (đọc và vẽ trang PDF), PptxGenJS (tạo .pptx), JSZip (đọc .docx, .pptx), SheetJS (đọc, ghi Excel). Nhóm Công cụ tin học nạp js-beautify (định dạng JS/HTML/CSS) và acorn (kiểm lỗi, làm rối JS) từ CDN; tạo khoá RSA bằng Web Crypto sẵn có của trình duyệt. Bộ làm rối mã (`src/lib/obfuscate.ts`) tự viết trên AST acorn. Nhóm sức khoẻ và thời gian dùng công thức tự viết (BMI/BMR Mifflin–St Jeor, MET, dự đoán chu kỳ, ngày làm việc trừ lễ VN 2024–2027) và Intl API cho múi giờ. Công cụ Đếm ngược tạo video dùng WebCodecs + mp4-muxer để xuất MP4 (H.264), tự chuyển sang WebM nếu trình duyệt chưa hỗ trợ. Điểm danh và Nhật ký lưu vào Google Sheet qua bộ đồng bộ sẵn có. Bộ đọc PowerPoint (`src/lib/pptx.ts`) và vẽ trang chiếu (`src/lib/pptx-render.ts`), so sánh văn bản (`src/calc/diff.ts`, thuật toán Myers), đọc XML, CSV được viết riêng.
+
+Các công cụ thêm ngày 27/10/2026 nạp thêm từ CDN khi cần: Tesseract.js 5 (OCR, dữ liệu ngôn ngữ từ tessdata), heic2any (HEIC), Transformers.js 3 (mô hình AI từ Hugging Face, ưu tiên WebGPU), lõi @ffmpeg/core 0.12 (video, chạy trong `public/vendor/ffmpeg-worker.js` cùng tên miền vì trình duyệt không cho tạo worker từ CDN), html-to-image (Word → PDF). Bộ đọc .docx (`src/lib/docxhtml.ts`), bộ ghi .docx (`src/lib/docxwriter.ts`), ghép chữ PDF (`src/calc/pdftext.ts`), nén ảnh trong PDF (`src/lib/pdfcompress.ts`), khung soạn trang PDF (`src/lib/pdfeditor.ts`), bộ tính biểu thức (`src/calc/expr.ts`), dò cao độ (`src/calc/pitch.ts`) đều tự viết.
 
 ## Trang ẩn
 
@@ -75,10 +114,11 @@ src/
   layout.ts             Menu ngang + menu trái dùng chung
   tools.ts              Danh sách công cụ (nguồn cho menu và trang chủ)
   styles.css            Giao diện chung
+  styles-extra.css      Giao diện riêng các công cụ thêm ngày 27/10/2026
   pages/                Logic từng trang
   lib/                  Bộ mã hoá QR, mã vạch, tiện ích tải ảnh
   stock/                Lõi phân tích của trang 4v2 (chỉ báo, xu hướng, kênh, backtest, dữ liệu Binance, biểu đồ)
-public/                 Tệp tĩnh (favicon)
+public/                 Tệp tĩnh (favicon, từ điển ngôn ngữ, vendor/ffmpeg-worker.js)
 ```
 
 ## Thêm công cụ mới
