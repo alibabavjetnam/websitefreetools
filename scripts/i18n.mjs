@@ -170,10 +170,16 @@ function localizePage(page, lang) {
 function runtimeDicts() {
   for (const l of LANGS) {
     const d = dicts[l];
+    const en = dicts[DEFAULT];
+    // Nhóm / công cụ chưa dịch sang ngôn ngữ này thì lùi về tiếng Anh (không để lộ tên gốc tiếng Việt)
+    const pick = (base, own) => Object.fromEntries(Object.keys({ ...base, ...own }).map((k) => {
+      const v = { ...(base[k] || {}), ...(own[k] || {}) };
+      return [k, { name: v.name, desc: v.desc }];
+    }));
     const trimmed = {
-      lang: l, ui: d.ui,
-      groups: Object.fromEntries(Object.entries(d.groups).map(([k, v]) => [k, { name: v.name, desc: v.desc }])),
-      tools: Object.fromEntries(Object.entries(d.tools).map(([k, v]) => [k, { name: v.name, desc: v.desc }])),
+      lang: l, ui: { ...en.ui, ...d.ui },
+      groups: pick(en.groups || {}, d.groups || {}),
+      tools: pick(en.tools || {}, d.tools || {}),
     };
     writeFileSync(resolve(DIST, 'language', `${l}.js`), `window.__WFT_I18N__=${JSON.stringify(trimmed)};`);
   }

@@ -73,6 +73,82 @@ const PATHS: Record<string, string> = {
   cv: '<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="9" r="2.5"/><path d="M8 16c.7-1.8 2.2-2.8 4-2.8s3.3 1 4 2.8"/>',
   // địa cầu
   'currency-time': '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/>',
+
+  // ---- Công cụ thêm 27/10/2026
+  // khung ảnh với mũi tên kéo giãn góc
+  'image-resize': '<rect x="3" y="7" width="12" height="14" rx="1.5"/><path d="M14 3h7v7M21 3l-7 7"/>',
+  // hai góc vuông cắt chéo
+  'image-crop': '<path d="M6 2v16h16"/><path d="M2 6h16v16"/>',
+  // khung quét với dòng chữ
+  'image-ocr': '<path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M7.5 9h9M7.5 12h9M7.5 15h5"/>',
+  // máy ảnh điện thoại sang ảnh
+  'heic-jpg': '<rect x="3" y="5" width="9" height="14" rx="2"/><circle cx="7.5" cy="10" r="1.8"/><path d="M14 12h6M18 9.5l2.5 2.5-2.5 2.5"/>',
+  // người với nền ô kẻ và tia sáng
+  'ai-bg-remove': '<rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="2 2.5"/><circle cx="11" cy="10" r="3"/><path d="M5.5 19c1-2.6 3-4 5.5-4s4.5 1.4 5.5 4"/><path d="M18 3.5v3M16.5 5h3"/>',
+  // ảnh nhỏ phóng to có tia sáng
+  'image-upscale': '<rect x="3" y="12" width="9" height="9" rx="1.5"/><path d="M12 3h9v9" stroke-dasharray="2.5 2"/><path d="M10 14l8-8M14 6h4v4"/>',
+  // ảnh đi vào trang giấy
+  'image-to-pdf': '<rect x="2.5" y="4" width="9" height="8" rx="1"/><path d="M5 10l2-2 2.5 2.5"/><path d="M13 9h4l4 4v8h-8z"/><path d="M15.5 16.5h3M15.5 19h2"/>',
+  // trang giấy đi ra ảnh
+  'pdf-to-image': '<path d="M3 3h6l3 3v8H3z"/><path d="M5 9h4M5 11.5h3"/><rect x="12.5" y="12" width="9" height="9" rx="1"/><path d="M14.5 19l2-2 2.5 2.5"/>',
+  // trang giấy bị ép bởi hai mũi tên
+  'pdf-compress': '<path d="M7 4h7l4 4v12H7z"/><path d="M12 9v3M10.5 10.5L12 12l1.5-1.5M12 18v-3M10.5 16.5L12 15l1.5 1.5"/>',
+  // trang PDF sang chữ W
+  'pdf-to-word': '<path d="M4 3h7l3 3v8H4z"/><path d="M12 15h9v6h-9z"/><path d="M13.5 16.5l1 3 1-2 1 2 1-3"/>',
+  // chữ W sang trang giấy
+  'word-to-pdf': '<rect x="3" y="3" width="9" height="7" rx="1"/><path d="M4.5 4.5l1 4 1-2.5 1 2.5 1-4"/><path d="M13 11h5l3 3v7h-8z"/><path d="M15 17h4M15 19h3"/>',
+  // trang giấy với nét chữ ký
+  'pdf-sign': '<path d="M5 3h9l5 5v13H5z"/><path d="M8 16c1.2-2.6 2.2-2.6 2.6-.6s1.5 1.6 2.4.2 1.6-1 2.5.4"/><path d="M8 19h8" opacity=".5"/>',
+  // trang giấy với bút chì
+  'pdf-edit': '<path d="M5 3h9l5 5v5"/><path d="M5 3v18h7"/><path d="M8 9h5M8 12h4"/><path d="M14.5 21l.5-2.5 5-5 2 2-5 5z"/>',
+  // chữ Aa
+  'case-convert': '<path d="M3 18l4.5-12L12 18M4.7 14h5.6"/><circle cx="17.5" cy="15" r="3"/><path d="M20.5 12v6"/>',
+  // chữ T có ngôi sao lấp lánh
+  'fancy-text': '<path d="M4 6h11M9.5 6v13"/><path d="M18 3l.9 2.1L21 6l-2.1.9L18 9l-.9-2.1L15 6l2.1-.9z"/><path d="M16.5 15.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z"/>',
+  // loa phát sóng âm
+  'text-to-speech': '<path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/>',
+  // micro với dòng chữ
+  'speech-to-text': '<rect x="6" y="3" width="6" height="11" rx="3"/><path d="M3.5 11a5.5 5.5 0 0 0 11 0M9 16.5V20"/><path d="M16 9h5M16 13h5M16 17h3"/>',
+  // máy tính bỏ túi
+  'scientific-calc': '<rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8 6.5h8v3H8z"/><path d="M8.5 13h.01M12 13h.01M15.5 13h.01M8.5 16.5h.01M12 16.5h.01M15.5 16.5h.01"/>',
+  // dấu phần trăm
+  percentage: '<path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/>',
+  // thước kẻ
+  'unit-convert': '<rect x="2.5" y="8" width="19" height="8" rx="1.5"/><path d="M6 8v3M9.5 8v4.5M13 8v3M16.5 8v4.5M20 8v3"/>',
+  // bánh sinh nhật
+  'age-calc': '<path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path d="M4 15c1.3 1 2.7 1 4 0s2.7-1 4 0 2.7 1 4 0 2.7-1 4 0"/><path d="M12 11V8M12 4.5c.8.8.8 1.8 0 2.5-.8-.7-.8-1.7 0-2.5z"/>',
+  // lịch với dấu cộng trừ
+  'date-calc': '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M7 15h4M9 13v4M14 15h3"/>',
+  // mũ tốt nghiệp
+  gpa: '<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/><path d="M22 9v6"/>',
+  // em bé trong vòng tròn
+  'due-date': '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="10" r="2.6"/><path d="M8 17c.8-2 2.2-3 4-3s3.2 1 4 3"/>',
+  // vòng quay có kim chỉ
+  'spin-wheel': '<circle cx="12" cy="13" r="8"/><path d="M12 5v16M4 13h16M6.3 7.3l11.4 11.4M17.7 7.3L6.3 18.7"/><path d="M10 2h4l-2 3z"/>',
+  // xúc xắc
+  'random-number': '<rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/>',
+  // bàn phím
+  'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
+  // con trỏ chuột với vạch nhấp
+  'cps-test': '<path d="M9 9l11 4-4.5 1.5L14 19z"/><path d="M5 3.5l1.5 2.5M3 8.5l3 .5M9.5 2.5L9 5.5"/>',
+  // webcam
+  'webcam-test': '<circle cx="12" cy="10" r="6.5"/><circle cx="12" cy="10" r="2.5"/><path d="M8 20h8M12 16.5V20"/>',
+  // màn hình với chấm ghi hình
+  'screen-recorder': '<rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10.5" r="2.5"/>',
+  // cuộn phim có mũi tên thu nhỏ
+  'video-compress': '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 5v14M17 5v14" opacity=".5"/><path d="M10 9.5l2 2 2-2M10 14.5l2-2 2 2"/>',
+  // nốt nhạc
+  'video-to-mp3': '<path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/>',
+  // âm thoa / mặt đàn
+  'guitar-tuner': '<path d="M12 21a7 7 0 0 1-7-7"/><path d="M19 14a7 7 0 0 0-7-7 7 7 0 0 0-7 7"/><path d="M12 14l4-5"/><circle cx="12" cy="14" r="1.2"/>',
+  // ổ khoá với dấu sao
+  'password-gen': '<rect x="3" y="10" width="18" height="10" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/><path d="M8 15h.01M12 15h.01M16 15h.01"/>',
+  // nét chữ ký trên dòng
+  signature: '<path d="M3 16c2-5 4-9 5-8s-2 8 0 8 3-5 5-5 1 4 3 4 2-2 5-2"/><path d="M3 20h18" opacity=".5"/>',
+  // hình tròn và tam giác lồng nhau
+  'logo-maker': '<circle cx="9" cy="9" r="5.5"/><path d="M15 9.5l6 10.5H9z"/>',
+  // cuốn sổ có dòng kẻ
+  notepad: '<rect x="4.5" y="3" width="15" height="18" rx="2"/><path d="M8 3v18" opacity=".5"/><path d="M11 8h5.5M11 12h5.5M11 16h3.5"/>',
 };
 
 export function lineIcon(id: string, size = 28): string {

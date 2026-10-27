@@ -1,4 +1,5 @@
 import './styles.css';
+import './styles-extra.css';
 import { GROUPS, TOOLS, type ToolInfo } from './tools';
 import { lineIcon } from './icons';
 import { GoogleAuthError, currentUser, signIn, signOut } from './google/auth';

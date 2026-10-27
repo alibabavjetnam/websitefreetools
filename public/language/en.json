@@ -206,6 +206,26 @@
     "dev": {
       "name": "Developer Tools",
       "desc": "Format, lint, encrypt and convert source code."
+    },
+    "text": {
+      "name": "Text Tools",
+      "desc": "Change letter case, fancy fonts for social media, text to speech and voice typing."
+    },
+    "calc": {
+      "name": "Calculators & Converters",
+      "desc": "Scientific calculator, percentages and unit conversion."
+    },
+    "random": {
+      "name": "Random & Draws",
+      "desc": "Spin the wheel and random number picker for games and giveaways."
+    },
+    "device": {
+      "name": "Device Tests",
+      "desc": "Test your webcam, record your screen, measure typing speed and clicks per second."
+    },
+    "media": {
+      "name": "Audio & Video",
+      "desc": "Compress video, extract MP3 audio and tune your guitar right in the browser."
     }
   },
   "tools": {
@@ -384,6 +404,154 @@
     "currency-time": {
       "name": "Currency & Time Zones",
       "desc": "Convert currencies at the latest rates and check the time in cities around the world."
+    },
+    "image-resize": {
+      "name": "Image Resizer",
+      "desc": "Resize images by pixels or percentage, keep the aspect ratio and process many images at once."
+    },
+    "image-crop": {
+      "name": "Crop Image",
+      "desc": "Crop images freely or to 1:1, 4:3, 16:9 and 9:16, and rotate or flip before downloading."
+    },
+    "image-ocr": {
+      "name": "Image to Text (OCR)",
+      "desc": "Extract text from photos, screenshots and scanned documents. Supports English and 30+ other languages."
+    },
+    "heic-jpg": {
+      "name": "HEIC to JPG",
+      "desc": "Convert iPhone HEIC photos to JPG or PNG so they open anywhere. Batch conversion supported."
+    },
+    "ai-bg-remove": {
+      "name": "AI Background Remover",
+      "desc": "Cut out people, products and pets from any background with on-device AI and download a transparent PNG."
+    },
+    "image-upscale": {
+      "name": "AI Image Upscaler",
+      "desc": "Upscale images 2× or 4× and sharpen details with AI. Great for small, blurry or old photos."
+    },
+    "image-to-pdf": {
+      "name": "Image to PDF",
+      "desc": "Combine JPG and PNG images into one PDF, reorder pages and choose paper size and margins."
+    },
+    "pdf-to-image": {
+      "name": "PDF to Image",
+      "desc": "Turn each PDF page into a sharp JPG or PNG, choose resolution, download single images or a ZIP."
+    },
+    "pdf-compress": {
+      "name": "Compress PDF",
+      "desc": "Reduce PDF file size for email and online forms. Choose a compression level and compare sizes."
+    },
+    "pdf-to-word": {
+      "name": "PDF to Word",
+      "desc": "Convert PDF into an editable Word (.docx) file keeping text and paragraphs, or keep page layout as images."
+    },
+    "word-to-pdf": {
+      "name": "Word to PDF",
+      "desc": "Convert Word (.docx) files to PDF in your browser, preview, then download or print."
+    },
+    "pdf-sign": {
+      "name": "Sign PDF",
+      "desc": "Draw or type your signature, add an image signature and date, place it on PDF pages and download."
+    },
+    "pdf-edit": {
+      "name": "Edit PDF & Fill Forms",
+      "desc": "Add text, checkmarks and redaction boxes to PDFs and fill in existing form fields."
+    },
+    "case-convert": {
+      "name": "Case Converter",
+      "desc": "Convert text to UPPERCASE, lowercase, Title Case, Sentence case, camelCase, snake_case and more."
+    },
+    "fancy-text": {
+      "name": "Fancy Text Generator",
+      "desc": "Turn plain text into 30+ stylish fonts for Instagram, TikTok, Facebook bios and game names. Copy in one tap."
+    },
+    "text-to-speech": {
+      "name": "Text to Speech",
+      "desc": "Read text aloud with your device voices. Choose voice, speed and pitch. Supports many languages."
+    },
+    "speech-to-text": {
+      "name": "Speech to Text",
+      "desc": "Type with your voice: speak into the microphone and see text appear instantly, then copy or download it."
+    },
+    "scientific-calc": {
+      "name": "Scientific Calculator",
+      "desc": "Online calculator with trigonometry, logarithms, powers, roots, factorial, degrees/radians, memory and history."
+    },
+    "percentage": {
+      "name": "Percentage Calculator",
+      "desc": "Find X% of Y, what percent X is of Y, percentage change and sale price, with step-by-step formulas."
+    },
+    "unit-convert": {
+      "name": "Unit Converter",
+      "desc": "Convert length, weight, temperature, area, volume, speed, time, data, pressure and energy."
+    },
+    "age-calc": {
+      "name": "Age Calculator",
+      "desc": "Calculate exact age in years, months and days, total days lived, next birthday and zodiac sign."
+    },
+    "date-calc": {
+      "name": "Date Calculator",
+      "desc": "Count days between two dates, add or subtract days, weeks, months and years, and see the weekday."
+    },
+    "gpa": {
+      "name": "GPA Calculator",
+      "desc": "Calculate semester and cumulative GPA by credits on the 4.0 scale with letter grades."
+    },
+    "due-date": {
+      "name": "Due Date Calculator",
+      "desc": "Estimate your due date and pregnancy week from last period, conception date or ultrasound, with key milestones."
+    },
+    "spin-wheel": {
+      "name": "Spin the Wheel",
+      "desc": "Make a wheel with any names or prizes, spin fairly at random, remove winners, full-screen mode."
+    },
+    "random-number": {
+      "name": "Random Number Generator",
+      "desc": "Generate random numbers in any range, many at once, with or without duplicates, for draws and games."
+    },
+    "typing-test": {
+      "name": "Typing Speed Test",
+      "desc": "Measure your typing speed (WPM) and accuracy over 30 seconds to 5 minutes."
+    },
+    "cps-test": {
+      "name": "CPS Test (Click Speed)",
+      "desc": "Count clicks per second over 1 to 60 seconds, keep your best score, test spacebar and touch too."
+    },
+    "webcam-test": {
+      "name": "Webcam Test",
+      "desc": "Check whether your camera works, see resolution and frame rate, switch cameras and take a test photo."
+    },
+    "screen-recorder": {
+      "name": "Screen Recorder",
+      "desc": "Record your screen, a window or a tab with system audio and microphone, no install needed."
+    },
+    "video-compress": {
+      "name": "Video Compressor",
+      "desc": "Shrink MP4, MOV and WebM files for messaging, email and social media. Choose resolution and quality."
+    },
+    "video-to-mp3": {
+      "name": "Video to MP3",
+      "desc": "Extract audio from MP4, MOV and WebM videos as MP3, pick quality and trim the part you need."
+    },
+    "guitar-tuner": {
+      "name": "Guitar Tuner",
+      "desc": "Tune guitar, ukulele and bass with your microphone: note, cents offset and needle, plus reference tones."
+    },
+    "password-gen": {
+      "name": "Password Generator",
+      "desc": "Create strong random passwords or memorable passphrases, choose length and characters, check strength."
+    },
+    "signature": {
+      "name": "Signature Maker",
+      "desc": "Draw your signature with mouse or finger, or type it in handwriting fonts; download a transparent PNG."
+    },
+    "logo-maker": {
+      "name": "Logo Maker",
+      "desc": "Make a logo from an icon, brand name and slogan; pick fonts, colors and layout, download SVG or PNG."
+    },
+    "notepad": {
+      "name": "Online Notepad",
+      "desc": "Quick notes that auto-save in your browser: multiple notes, search, word count and TXT download."
     }
   },
   "s": {
@@ -2144,6 +2312,270 @@
       "b.dl": "Download .pptx",
       "toast.b1": "Converted",
       "toast.b2": "pages to PowerPoint"
+    },
+    "case-convert": {
+      "k.upper": "UPPERCASE",
+      "k.lower": "lowercase",
+      "k.title": "Capitalize Each Word",
+      "k.sentence": "Sentence case",
+      "k.headline": "Title Case (AP style)",
+      "k.toggle": "tOGGLE cASE",
+      "k.alternating": "aLtErNaTiNg CaSe",
+      "k.noAccent": "Remove accents",
+      "input": "Original text",
+      "placeholder": "Paste or type your text here…",
+      "sampleBtn": "Use sample text",
+      "clear": "Clear",
+      "chooseKind": "Choose a case",
+      "output": "Result",
+      "copy": "Copy result",
+      "useAsInput": "Use as original text",
+      "download": "Download .txt",
+      "chars": "characters",
+      "words": "words",
+      "sample": "the quick brown fox jumps over the lazy dog. what a lovely day for a walk in the park!\nvariable name: number of items in shopping cart",
+      "fileName": "text"
+    },
+    "fancy-text": {
+      "st.bold": "Bold",
+      "st.italic": "Italic",
+      "st.boldItalic": "Bold italic",
+      "st.sans": "Sans",
+      "st.sansBold": "Sans bold",
+      "st.sansItalic": "Sans italic",
+      "st.sansBoldItalic": "Sans bold italic",
+      "st.script": "Script",
+      "st.scriptBold": "Bold script",
+      "st.fraktur": "Gothic",
+      "st.frakturBold": "Bold gothic",
+      "st.double": "Double-struck",
+      "st.mono": "Monospace",
+      "st.bubble": "Bubbles",
+      "st.bubbleDark": "Dark bubbles",
+      "st.squared": "Squares",
+      "st.squaredDark": "Dark squares",
+      "st.fullwidth": "Wide",
+      "st.smallCaps": "Small caps",
+      "st.superscript": "Tiny",
+      "st.strike": "Strikethrough",
+      "st.underline": "Underline",
+      "st.doubleUnderline": "Double underline",
+      "st.slash": "Slashed",
+      "st.dots": "Dotted",
+      "st.hearts": "Hearts",
+      "st.stars": "Stars",
+      "st.upsideDown": "Upside down",
+      "st.mirror": "Reversed",
+      "st.wings": "Angel wings",
+      "st.sparkle": "Sparkles",
+      "st.brackets": "Brackets",
+      "st.crown": "Crown",
+      "st.arrows": "Arrows",
+      "input": "Type your text",
+      "placeholder": "e.g. Alex Johnson",
+      "tip": "Tap a row to copy it. These styles use special Unicode characters, so some devices and apps may not display all of them; test before using one as a name. Accented letters keep their accents, but some styles may show them slightly off.",
+      "sample": "WFTools Hello",
+      "clickCopy": "Click to copy",
+      "copied": "Copied, paste it wherever you need"
+    },
+    "text-to-speech": {
+      "text": "Text to read",
+      "placeholder": "Paste your text here…",
+      "play": "Read aloud",
+      "pause": "Pause",
+      "stop": "Stop",
+      "lang": "Language",
+      "voice": "Voice",
+      "rate": "Speed",
+      "pitch": "Pitch",
+      "volume": "Volume",
+      "note": "Available voices depend on your browser and operating system. Missing a language? On Windows go to Settings > Time & language > Speech to add voices; on phones install more voices under Text-to-speech settings. Browsers can't save the audio as a file; if you need one, use the Screen Recorder tool with audio.",
+      "sample": "Hello! This is the WFTools text to speech tool. Paste any text you like and press Read aloud to listen.",
+      "chars": "characters",
+      "restart": "Read again from start",
+      "errSpeak": "This voice couldn't read the text. Pick another voice or try Chrome, Edge or Safari.",
+      "noSupport": "This browser doesn't support text to speech. Please use a recent Chrome, Edge, Safari or Firefox.",
+      "empty": "Please enter some text to read.",
+      "resume": "Resume",
+      "noVoices": "No voices found on this device yet. Reload the page or install extra voices in your system settings."
+    },
+    "speech-to-text": {
+      "lang": "Language you speak",
+      "punct": "Understand spoken punctuation such as \"period\", \"comma\", \"new line\"",
+      "start": "Start speaking",
+      "ready": "Press Start speaking and allow microphone access.",
+      "privacy": "Chrome and Edge send your audio to the browser maker's speech recognition service to turn it into text; WFTools never receives or stores your audio. Safari may recognize speech on your device. Firefox doesn't support this feature yet.",
+      "result": "Text",
+      "outPh": "Your words will appear here as you speak. You can edit them directly.",
+      "copy": "Copy",
+      "download": "Download .txt",
+      "clear": "Clear",
+      "stop": "Stop",
+      "listening": "Listening… speak clearly and close to the microphone.",
+      "noSupport": "This browser doesn't support speech recognition yet. Please use Chrome or Edge (desktop, Android) or Safari (iPhone, Mac).",
+      "errMic": "The microphone is blocked. Click the lock icon next to the page address, allow Microphone, then try again.",
+      "errNoMic": "No microphone found. Plug in a microphone or a headset with a mic and try again.",
+      "errNet": "Lost connection to the speech recognition service. Check your internet connection and try again.",
+      "errLang": "This language isn't supported by your browser. Please choose another language.",
+      "errOther": "Something went wrong with speech recognition. Please try again.",
+      "fileName": "speech"
+    },
+    "scientific-calc": {
+      "angle": "Angle unit",
+      "deg": "Degrees (DEG)",
+      "rad": "Radians (RAD)",
+      "mcT": "Clear memory",
+      "mrT": "Recall memory",
+      "mpT": "Add result to memory",
+      "mmT": "Subtract result from memory",
+      "exprLabel": "Expression",
+      "kbd": "Keyboard works too: digits, + - * / ^ ( ) ! %, Enter to calculate, Esc to clear. Shortcuts allowed: sin30, 2π, 3(4+5), √2.",
+      "history": "Calculation history",
+      "clearHist": "Clear history",
+      "histTip": "Click a line to reuse that calculation. History is stored only on your device.",
+      "eSyntax": "Syntax error",
+      "eParen": "Missing parenthesis",
+      "eDomain": "Math error (out of domain)",
+      "eDiv": "Cannot divide by 0",
+      "eOver": "Number too large",
+      "noHist": "No calculations yet."
+    },
+    "percentage": {
+      "of.title": "Find X% of a number",
+      "of.q": "What is {a} % of {b}?",
+      "what.title": "What percent one number is of another",
+      "what.q": "{a} is what % of {b}?",
+      "change.title": "Percentage increase / decrease",
+      "change.q": "From {a} to {b} is a change of what %?",
+      "up": "Up by",
+      "down": "Down by",
+      "same": "No change",
+      "whole.title": "Find the whole from a percentage",
+      "whole.q": "{a} is {b} % of what number?",
+      "add.title": "Add a percentage (tax, markup)",
+      "add.q": "What is {a} plus {b} %?",
+      "added": "Amount added",
+      "sale.title": "Price after discount",
+      "sale.q": "Price {a} with {b} % off is?",
+      "saved": "You save",
+      "before.title": "Original price before discount",
+      "before.q": "After {b} % off the price is {a}; what was the original price?",
+      "diff.title": "Percentage difference between two numbers",
+      "diff.q": "What is the % difference between {a} and {b}?",
+      "enter": "Enter both numbers.",
+      "noResult": "Can't calculate (division by 0)."
+    },
+    "unit-convert": {
+      "c.length": "Length",
+      "c.weight": "Weight",
+      "c.temp": "Temperature",
+      "c.area": "Area",
+      "c.volume": "Volume",
+      "c.speed": "Speed",
+      "c.time": "Time",
+      "c.data": "Data",
+      "c.pressure": "Pressure",
+      "c.energy": "Energy",
+      "c.power": "Power",
+      "c.fuel": "Fuel economy",
+      "c.angle": "Angle",
+      "u.mm": "Millimeter",
+      "u.cm": "Centimeter",
+      "u.m": "Meter",
+      "u.km": "Kilometer",
+      "u.in": "Inch",
+      "u.ft": "Foot",
+      "u.yd": "Yard",
+      "u.mi": "Mile",
+      "u.nmi": "Nautical mile",
+      "u.um": "Micrometer",
+      "u.nm": "Nanometer",
+      "u.ly": "Light-year",
+      "u.mg": "Milligram",
+      "u.g": "Gram",
+      "u.kg": "Kilogram",
+      "u.t": "Metric ton",
+      "u.oz": "Ounce",
+      "u.lb": "Pound",
+      "u.st": "Stone",
+      "u.ust": "US ton",
+      "u.ct": "Carat",
+      "u.c": "Celsius",
+      "u.f": "Fahrenheit",
+      "u.k": "Kelvin",
+      "u.r": "Rankine",
+      "u.mm2": "Square millimeter",
+      "u.cm2": "Square centimeter",
+      "u.m2": "Square meter",
+      "u.ha": "Hectare",
+      "u.km2": "Square kilometer",
+      "u.in2": "Square inch",
+      "u.ft2": "Square foot",
+      "u.yd2": "Square yard",
+      "u.ac": "Acre",
+      "u.mi2": "Square mile",
+      "u.ml": "Milliliter",
+      "u.l": "Liter",
+      "u.m3": "Cubic meter",
+      "u.cm3": "Cubic centimeter",
+      "u.tsp": "Teaspoon (US)",
+      "u.tbsp": "Tablespoon (US)",
+      "u.floz": "Fluid ounce (US)",
+      "u.cup": "Cup (US)",
+      "u.pt": "Pint (US)",
+      "u.qt": "Quart (US)",
+      "u.gal": "Gallon (US)",
+      "u.ukgal": "Gallon (UK)",
+      "u.in3": "Cubic inch",
+      "u.ft3": "Cubic foot",
+      "u.bbl": "Oil barrel",
+      "u.ms": "Meters per second",
+      "u.kmh": "Kilometers per hour",
+      "u.mph": "Miles per hour",
+      "u.kn": "Knot",
+      "u.fts": "Feet per second",
+      "u.mach": "Mach (speed of sound)",
+      "u.light": "Speed of light",
+      "u.msec": "Millisecond",
+      "u.s": "Second",
+      "u.min": "Minute",
+      "u.h": "Hour",
+      "u.d": "Day",
+      "u.wk": "Week",
+      "u.mo": "Month (average)",
+      "u.yr": "Year (average)",
+      "u.kb": "Kilobyte (1000)",
+      "u.mb": "Megabyte (1000²)",
+      "u.gb": "Gigabyte (1000³)",
+      "u.tb": "Terabyte (1000⁴)",
+      "u.kib": "Kibibyte (1024)",
+      "u.mib": "Mebibyte (1024²)",
+      "u.gib": "Gibibyte (1024³)",
+      "u.tib": "Tebibyte (1024⁴)",
+      "u.atm": "Atmosphere",
+      "u.mmhg": "Millimeter of mercury",
+      "u.cal": "Calorie",
+      "u.kcal": "Kilocalorie",
+      "u.wh": "Watt-hour",
+      "u.kwh": "Kilowatt-hour",
+      "u.w": "Watt",
+      "u.kw": "Kilowatt",
+      "u.hp": "Horsepower (hp)",
+      "u.ps": "Metric horsepower (PS)",
+      "u.kml": "Kilometers per liter",
+      "u.l100": "Liters per 100 km",
+      "u.mpg": "Miles per gallon (US)",
+      "u.mpguk": "Miles per gallon (UK)",
+      "u.deg": "Degree",
+      "u.arcmin": "Arcminute",
+      "u.arcsec": "Arcsecond",
+      "u.turn": "Turn",
+      "value": "Value",
+      "from": "From",
+      "swap": "Swap",
+      "to": "To",
+      "all": "Convert to every unit",
+      "enterNum": "Enter a number"
     }
   }
 }
