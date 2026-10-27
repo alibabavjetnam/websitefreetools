@@ -15,6 +15,8 @@ export const CDN = {
   beautifyHtml: 'https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify-html.min.js',
   acorn: 'https://cdnjs.cloudflare.com/ajax/libs/acorn/8.14.0/acorn.min.js',
   mp4Muxer: 'https://cdn.jsdelivr.net/npm/mp4-muxer@5.2.1/build/mp4-muxer.min.js',
+  // Chụp phần tử HTML thành ảnh (Word → PDF)
+  htmlToImage: 'https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.js',
 };
 
 const loading = new Map<string, Promise<void>>();

@@ -3548,6 +3548,22 @@
       "done": "Xong!",
       "limited": "chỉ chuyển 300 trang đầu",
       "err": "Không chuyển được file này."
+    },
+    "word-to-pdf": {
+      "dropTitle": "Chọn file Word (.docx) hoặc kéo thả vào đây",
+      "dropHint": "Tối đa 50 MB. File được đọc ngay trên máy bạn, không tải lên máy chủ.",
+      "download": "Tải file PDF",
+      "print": "In / Lưu PDF chữ sắc nét",
+      "note": "\"Tải file PDF\" tạo PDF ngay (mỗi trang là ảnh chất lượng cao). \"In / Lưu PDF chữ sắc nét\" mở hộp thoại in: chọn máy in \"Lưu thành PDF\" (Save as PDF) để có PDF chữ chọn và tìm kiếm được. Bố cục phức tạp (đầu trang, chân trang, hộp văn bản, biểu đồ) có thể khác bản gốc.",
+      "oldDoc": "File .doc (Word 97-2003) chưa được hỗ trợ. Hãy mở bằng Word và lưu lại dạng .docx rồi thử lại.",
+      "notDocx": "Hãy chọn file Word dạng .docx.",
+      "tooBig": "File lớn hơn 50 MB.",
+      "reading": "Đang đọc file…",
+      "pagesU": "trang",
+      "rendering": "Đang tạo trang",
+      "done": "Xong!",
+      "err": "Không tạo được PDF. Hãy thử nút In / Lưu PDF.",
+      "printTip": "Chọn máy in \"Lưu thành PDF\" (Save as PDF) để lưu file."
     }
   }
 }

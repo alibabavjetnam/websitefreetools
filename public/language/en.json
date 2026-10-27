@@ -3224,6 +3224,22 @@
       "done": "Done!",
       "limited": "only the first 300 pages were converted",
       "err": "Couldn't convert this file."
+    },
+    "word-to-pdf": {
+      "dropTitle": "Choose a Word file (.docx) or drag it here",
+      "dropHint": "Up to 50 MB. The file is read on your device, never uploaded.",
+      "download": "Download PDF",
+      "print": "Print / Save sharp-text PDF",
+      "note": "\"Download PDF\" creates the PDF right away (each page is a high-quality image). \"Print / Save sharp-text PDF\" opens the print dialog: choose the \"Save as PDF\" printer to get a PDF with selectable, searchable text. Complex layouts (headers, footers, text boxes, charts) may differ from the original.",
+      "oldDoc": "Old .doc files (Word 97-2003) aren't supported yet. Open it in Word, save as .docx, then try again.",
+      "notDocx": "Please choose a Word .docx file.",
+      "tooBig": "The file is larger than 50 MB.",
+      "reading": "Reading file…",
+      "pagesU": "pages",
+      "rendering": "Rendering page",
+      "done": "Done!",
+      "err": "Couldn't create the PDF. Try the Print / Save PDF button.",
+      "printTip": "Choose the \"Save as PDF\" printer to save the file."
     }
   }
 }
