@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -95,7 +95,8 @@
           sw: ["Ukurasa haujapatikana", "Anwani ya ukurasa huenda imebadilika au ukurasa haupo. Rudi kwenye ukurasa wa mwanzo na uchague zana.", "Rudi kwenye ukurasa wa mwanzo", ["Msimbo wa QR", "Kubana picha", "Kuunganisha PDF", "Kikokotoo cha mkopo"]],
           ca: ["No s'ha trobat la pàgina", "L'adreça de la pàgina pot haver canviat o la pàgina no existeix. Torna a la pàgina d'inici i tria una eina.", "Torna a l'inici", ["Codi QR", "Compressió d'imatges", "Unió de PDF", "Calculadora de préstecs"]],
           lb: ["Säit net fonnt", "D'Adress vun der Säit huet sech vläicht geännert oder d'Säit gëtt et net. Gëff zréck op d'Startsäit a wielt en Tool.", "Zréck op d'Startsäit", ["QR-Code", "Biller kompriméieren", "PDFen zesummeféieren", "Kredittrechner"]],
-          is: ["Síða fannst ekki", "Slóð síðunnar gæti hafa breyst eða síðan er ekki til. Farðu aftur á forsíðuna og veldu tól.", "Aftur á forsíðu", ["QR-kóði", "Þjappa myndum", "Sameina PDF", "Lánareiknir"]]
+          is: ["Síða fannst ekki", "Slóð síðunnar gæti hafa breyst eða síðan er ekki til. Farðu aftur á forsíðuna og veldu tól.", "Aftur á forsíðu", ["QR-kóði", "Þjappa myndum", "Sameina PDF", "Lánareiknir"]],
+          yue: ["搵唔到頁面", "頁面網址可能已經改咗，或者呢個頁面唔存在。請返回首頁再揀工具。", "返回首頁", ["二維碼", "壓縮圖片", "合併 PDF", "貸款計算機"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
