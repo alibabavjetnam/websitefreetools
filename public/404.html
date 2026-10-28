@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -97,7 +97,8 @@
           lb: ["Säit net fonnt", "D'Adress vun der Säit huet sech vläicht geännert oder d'Säit gëtt et net. Gëff zréck op d'Startsäit a wielt en Tool.", "Zréck op d'Startsäit", ["QR-Code", "Biller kompriméieren", "PDFen zesummeféieren", "Kredittrechner"]],
           is: ["Síða fannst ekki", "Slóð síðunnar gæti hafa breyst eða síðan er ekki til. Farðu aftur á forsíðuna og veldu tól.", "Aftur á forsíðu", ["QR-kóði", "Þjappa myndum", "Sameina PDF", "Lánareiknir"]],
           yue: ["搵唔到頁面", "頁面網址可能已經改咗，或者呢個頁面唔存在。請返回首頁再揀工具。", "返回首頁", ["二維碼", "壓縮圖片", "合併 PDF", "貸款計算機"]],
-          ga: ["Ní bhfuarthas an leathanach", "B'fhéidir go bhfuil seoladh an leathanaigh athraithe nó nach bhfuil an leathanach ann. Téigh ar ais go dtí an leathanach baile agus roghnaigh uirlis.", "Ar ais go dtí an leathanach baile", ["Cód QR", "Comhbhrúigh íomhánna", "Cumasc PDFanna", "Áireamhán iasachta"]]
+          ga: ["Ní bhfuarthas an leathanach", "B'fhéidir go bhfuil seoladh an leathanaigh athraithe nó nach bhfuil an leathanach ann. Téigh ar ais go dtí an leathanach baile agus roghnaigh uirlis.", "Ar ais go dtí an leathanach baile", ["Cód QR", "Comhbhrúigh íomhánna", "Cumasc PDFanna", "Áireamhán iasachta"]],
+          cy: ["Heb ddod o hyd i'r dudalen", "Mae cyfeiriad y dudalen wedi newid neu nid yw'r dudalen yn bodoli. Ewch yn ôl i'r hafan a dewis offeryn.", "Yn ôl i'r hafan", ["Cod QR", "Cywasgu delweddau", "Uno PDFs", "Cyfrifiannell benthyciad"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
