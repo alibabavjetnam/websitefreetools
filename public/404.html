@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -100,7 +100,8 @@
           ga: ["Ní bhfuarthas an leathanach", "B'fhéidir go bhfuil seoladh an leathanaigh athraithe nó nach bhfuil an leathanach ann. Téigh ar ais go dtí an leathanach baile agus roghnaigh uirlis.", "Ar ais go dtí an leathanach baile", ["Cód QR", "Comhbhrúigh íomhánna", "Cumasc PDFanna", "Áireamhán iasachta"]],
           cy: ["Heb ddod o hyd i'r dudalen", "Mae cyfeiriad y dudalen wedi newid neu nid yw'r dudalen yn bodoli. Ewch yn ôl i'r hafan a dewis offeryn.", "Yn ôl i'r hafan", ["Cod QR", "Cywasgu delweddau", "Uno PDFs", "Cyfrifiannell benthyciad"]],
           zh-TW: ["找不到此頁面", "該頁面可能已移動或不存在。請回到首頁選擇工具。", "回到首頁", ["QR Code", "壓縮圖片", "合併 PDF", "貸款計算機"]],
-          mt: ["Il-paġna ma nstabitx", "L-indirizz tal-paġna jista' jkun inbidel jew il-paġna ma teżistix. Mur lura għall-paġna ewlenija u agħżel għodda.", "Lura għall-paġna ewlenija", ["Kodiċi QR", "Ikkompressa x-xbihat", "Għaqqad PDFs", "Kalkulatur tas-self"]]
+          mt: ["Il-paġna ma nstabitx", "L-indirizz tal-paġna jista' jkun inbidel jew il-paġna ma teżistix. Mur lura għall-paġna ewlenija u agħżel għodda.", "Lura għall-paġna ewlenija", ["Kodiċi QR", "Ikkompressa x-xbihat", "Għaqqad PDFs", "Kalkulatur tas-self"]],
+          eu: ["Ez da orria aurkitu", "Orriaren helbidea aldatu daiteke edo orria ez da existitzen. Itzuli hasierara eta aukeratu tresna bat.", "Itzuli hasierara", ["QR kodea", "Konprimatu irudiak", "Batu PDFak", "Mailegu-kalkulagailua"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
