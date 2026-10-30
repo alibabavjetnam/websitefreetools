@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -109,7 +109,8 @@
           mk: ["Страницата не е пронајдена", "Адресата на страницата можеби е сменета или страницата не постои. Вратете се на почетната и изберете алатка.", "Назад на почетната", ["QR-код", "Компресирај слики", "Спој PDF", "Калкулатор за кредит"]],
           kk: ["Бет табылмады", "Бет мекенжайы өзгерген немесе бет жоқ болуы мүмкін. Басты бетке оралып, құралды таңдаңыз.", "Басты бетке оралу", ["QR код", "Суреттерді сығу", "PDF біріктіру", "Несие калькуляторы"]],
           az: ["Səhifə tapılmadı", "Səhifənin ünvanı dəyişmiş və ya səhifə mövcud olmaya bilər. Ana səhifəyə qayıdın və alət seçin.", "Ana səhifəyə qayıt", ["QR kod", "Şəkilləri sıx", "PDF birləşdir", "Kredit kalkulyatoru"]],
-          ka: ["გვერდი ვერ მოიძებნა", "გვერდის მისამართი შესაძლოა შეიცვალა ან გვერდი არ არსებობს. დაბრუნდით მთავარ გვერდზე და აირჩიეთ ხელსაწყო.", "მთავარ გვერდზე დაბრუნება", ["QR კოდი", "სურათების შეკუმშვა", "PDF-ის გაერთიანება", "სესხის კალკულატორი"]]
+          ka: ["გვერდი ვერ მოიძებნა", "გვერდის მისამართი შესაძლოა შეიცვალა ან გვერდი არ არსებობს. დაბრუნდით მთავარ გვერდზე და აირჩიეთ ხელსაწყო.", "მთავარ გვერდზე დაბრუნება", ["QR კოდი", "სურათების შეკუმშვა", "PDF-ის გაერთიანება", "სესხის კალკულატორი"]],
+          hy: ["Էջը չի գտնվել", "Էջի հասցեն կարող է փոխված լինել կամ էջը գոյություն չունի։ Վերադարձեք գլխավոր էջ և ընտրեք գործիք։", "Վերադառնալ գլխավոր էջ", ["QR կոդ", "Սեղմել պատկերներ", "Միավորել PDF", "Վարկի հաշվիչ"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
