@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -102,7 +102,8 @@
           'zh-TW': ["找不到此頁面", "該頁面可能已移動或不存在。請回到首頁選擇工具。", "回到首頁", ["QR Code", "壓縮圖片", "合併 PDF", "貸款計算機"]],
           mt: ["Il-paġna ma nstabitx", "L-indirizz tal-paġna jista' jkun inbidel jew il-paġna ma teżistix. Mur lura għall-paġna ewlenija u agħżel għodda.", "Lura għall-paġna ewlenija", ["Kodiċi QR", "Ikkompressa x-xbihat", "Għaqqad PDFs", "Kalkulatur tas-self"]],
           eu: ["Ez da orria aurkitu", "Orriaren helbidea aldatu daiteke edo orria ez da existitzen. Itzuli hasierara eta aukeratu tresna bat.", "Itzuli hasierara", ["QR kodea", "Konprimatu irudiak", "Batu PDFak", "Mailegu-kalkulagailua"]],
-          gl: ["Non se atopou a páxina", "É posible que o enderezo da páxina cambiase ou que a páxina non exista. Volve ao inicio e escolle unha ferramenta.", "Volver ao inicio", ["Código QR", "Comprimir imaxes", "Unir PDF", "Calculadora de préstamos"]]
+          gl: ["Non se atopou a páxina", "É posible que o enderezo da páxina cambiase ou que a páxina non exista. Volve ao inicio e escolle unha ferramenta.", "Volver ao inicio", ["Código QR", "Comprimir imaxes", "Unir PDF", "Calculadora de préstamos"]],
+          af: ["Bladsy nie gevind nie", "Die bladsyadres het dalk verander of die bladsy bestaan nie. Gaan terug na die tuisblad en kies ’n hulpmiddel.", "Terug na tuisblad", ["QR-kode", "Pers beelde saam", "Voeg PDF saam", "Leningsakrekenaar"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
