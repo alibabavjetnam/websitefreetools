@@ -153,9 +153,15 @@ const CITIES: [string, string][] = [
 ];
 const srcSel = $<HTMLSelectElement>('#tz-src');
 const dtInput = $<HTMLInputElement>('#tz-dt');
-srcSel.innerHTML = CITIES.map(([n, z]) => `<option value="${z}">${escapeHtml(T('city.' + z, n))}</option>`).join('');
+// Múi giờ mặc định theo ngôn ngữ (vd Europe/Madrid) và múi giờ máy có thể không nằm trong CITIES: thêm vào đầu danh sách
+const validZone = (z: string): boolean => { try { new Intl.DateTimeFormat('en', { timeZone: z }); return true; } catch { return false; } };
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-srcSel.value = CITIES.some(([, z]) => z === localZone) ? localZone : T('tz.default', 'Asia/Ho_Chi_Minh');
+const defZone = T('tz.default', 'Asia/Ho_Chi_Minh');
+for (const z of [localZone, defZone]) {
+  if (z && validZone(z) && !CITIES.some(([, c]) => c === z)) CITIES.unshift([z.split('/').pop()!.replace(/_/g, ' '), z]);
+}
+srcSel.innerHTML = CITIES.map(([n, z]) => `<option value="${z}">${escapeHtml(T('city.' + z, n))}</option>`).join('');
+srcSel.value = CITIES.some(([, z]) => z === localZone) ? localZone : defZone;
 
 /** Độ lệch (ms) của múi giờ tz so với UTC tại thời điểm ms */
 function tzOffset(ms: number, tz: string): number {
