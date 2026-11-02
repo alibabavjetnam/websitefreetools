@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu', 'xh'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -115,7 +115,8 @@
           uz: ["Sahifa topilmadi", "Sahifa manzili oʻzgargan yoki sahifa mavjud boʻlmasligi mumkin. Bosh sahifaga qayting va vositani tanlang.", "Bosh sahifaga", ["QR kod", "Rasmni siqish", "PDF birlashtirish", "Kredit kalkulyatori"]],
           mn: ["Хуудас олдсонгүй", "Хуудасны хаяг өөрчлөгдсөн эсвэл хуудас байхгүй байж магадгүй. Нүүр хуудас руу буцаж хэрэгслээ сонгоно уу.", "Нүүр хуудас руу", ["QR код", "Зураг шахах", "PDF нэгтгэх", "Зээлийн тооцоолуур"]],
           ku: ["Rûpel nehat dîtin", "Dibe ku navnîşana rûpelê hatibe guherandin an rûpel tune be. Vegere destpêkê û amûrekê hilbijêre.", "Vegere destpêkê", ["Koda QR", "Wêneyan biçûk bike", "PDF yek bike", "Hesabkera deyn"]],
-          zu: ["Ikhasi alitholakalanga", "Kungenzeka ikheli lekhasi lishintshile noma ikhasi alikho. Buyela ekhaya bese ukhetha ithuluzi.", "Buyela ekhaya", ["Ikhodi ye-QR", "Cindezela izithombe", "Hlanganisa i-PDF", "Isibali semali ebolekiwe"]]
+          zu: ["Ikhasi alitholakalanga", "Kungenzeka ikheli lekhasi lishintshile noma ikhasi alikho. Buyela ekhaya bese ukhetha ithuluzi.", "Buyela ekhaya", ["Ikhodi ye-QR", "Cindezela izithombe", "Hlanganisa i-PDF", "Isibali semali ebolekiwe"]],
+          xh: ["Iphepha alifunyanwanga", "Idilesi yephepha inokuba itshintshile okanye iphepha alikho. Buyela ekhaya ukhethe isixhobo.", "Buyela ekhaya", ["Ikhowudi ye-QR", "Cinezela imifanekiso", "Hlanganisa ii-PDF", "Ikhalkyuleyitha yemali mboleko"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
