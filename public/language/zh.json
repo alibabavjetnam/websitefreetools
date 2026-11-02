@@ -852,7 +852,12 @@
       "toast.webm": "已生成WebM视频（此浏览器无法导出MP4）",
       "err.render": "无法生成视频",
       "err.renderHint": "请尝试新版Chrome/Edge浏览器，或选择较小的尺寸。",
-      "label.default": "开始倒计时"
+      "label.default": "开始倒计时",
+      "labelSize": "顶部文字大小",
+      "labelSize.s": "小",
+      "labelSize.m": "中",
+      "labelSize.l": "大",
+      "labelSize.xl": "特大"
     },
     "currency-time": {
       "aria.tabs": "选择工具",

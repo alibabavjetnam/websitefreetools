@@ -852,7 +852,12 @@
       "toast.webm": "WebM動画を作成しました（このブラウザはMP4出力不可）",
       "err.render": "動画を作成できませんでした",
       "err.renderHint": "最新のChrome/Edgeを試すか、小さいサイズを選んでください。",
-      "label.default": "開始まで"
+      "label.default": "開始まで",
+      "labelSize": "上部テキストのサイズ",
+      "labelSize.s": "小",
+      "labelSize.m": "中",
+      "labelSize.l": "大",
+      "labelSize.xl": "特大"
     },
     "currency-time": {
       "aria.tabs": "ツールを選択",

@@ -6,10 +6,11 @@ import { pageText } from '../i18n';
 mountLayout({ activeTool: 'countdown-video' });
 const T = pageText();
 
-interface Cfg { seconds: number; format: 'hms' | 'ms' | 's'; bg: string; color: string; font: string; label: string; size: string; fps: number }
-const cfg = storage<Cfg>('countdown-video', { seconds: 60, format: 'ms', bg: '#0b1324', color: '#ffd43b', label: '', size: '720p', font: 'mono', fps: 30 });
+interface Cfg { seconds: number; format: 'hms' | 'ms' | 's'; bg: string; color: string; font: string; label: string; labelSize: string; size: string; fps: number }
+const cfg = storage<Cfg>('countdown-video', { seconds: 60, format: 'ms', bg: '#0b1324', color: '#ffd43b', label: '', labelSize: 'm', size: '720p', font: 'mono', fps: 30 });
 
 const SIZES: Record<string, [number, number]> = { '720p': [1280, 720], '1080p': [1920, 1080], square: [1080, 1080], vertical: [720, 1280] };
+const LABEL_SCALE: Record<string, number> = { s: 0.05, m: 0.07, l: 0.1, xl: 0.14 };
 const FONTS: Record<string, string> = { mono: 'ui-monospace, Consolas, monospace', sans: "'Be Vietnam Pro', system-ui, sans-serif", bold: "'Arial Black', sans-serif" };
 
 const root = $('#tool-root');
@@ -21,7 +22,10 @@ root.innerHTML = `
         <label class="field"><span class="field-label">${T('display','Hiển thị')}</span><select id="format"><option value="hms">hh:mm:ss</option><option value="ms">mm:ss</option><option value="s">${T('fmt.s','Chỉ giây')}</option></select></label>
         <label class="field"><span class="field-label">${T('fps','Khung hình/giây')}</span><select id="fps"><option value="24">24</option><option value="30">30</option></select></label>
       </div>
-      <label class="field"><span class="field-label">${T('labelText','Dòng chữ phía trên')}</span><input type="text" id="label" maxlength="40" /></label>
+      <div class="field-row">
+        <label class="field"><span class="field-label">${T('labelText','Dòng chữ phía trên')}</span><input type="text" id="label" maxlength="40" /></label>
+        <label class="field"><span class="field-label">${T('labelSize','Cỡ chữ dòng trên')}</span><select id="labelSize"><option value="s">${T('labelSize.s','Nhỏ')}</option><option value="m">${T('labelSize.m','Vừa')}</option><option value="l">${T('labelSize.l','Lớn')}</option><option value="xl">${T('labelSize.xl','Rất lớn')}</option></select></label>
+      </div>
       <div class="field-row">
         <label class="field"><span class="field-label">${T('bg','Màu nền')}</span><input type="color" id="bg" /></label>
         <label class="field"><span class="field-label">${T('color','Màu số')}</span><input type="color" id="color" /></label>
@@ -53,6 +57,7 @@ function read(): Cfg {
     color: $<HTMLInputElement>('#color').value,
     font: $<HTMLSelectElement>('#font').value,
     label: $<HTMLInputElement>('#label').value,
+    labelSize: $<HTMLSelectElement>('#labelSize').value,
     size: $<HTMLSelectElement>('#size').value,
     fps: Number($<HTMLSelectElement>('#fps').value),
   };
@@ -70,16 +75,24 @@ function drawFrame(c: Cfg, remainSec: number, w: number, h: number): void {
   ctx.fillRect(0, 0, w, h);
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
+  const text = fmt(Math.ceil(remainSec), c.format);
+  const size = Math.round(h * (text.length > 5 ? 0.26 : 0.34));
   if (c.label) {
+    let ls = Math.round(h * (LABEL_SCALE[c.labelSize] ?? LABEL_SCALE.m));
+    ctx.font = `600 ${ls}px ${FONTS[c.font]}`;
+    const maxW = w * 0.92;
+    const tw = ctx.measureText(c.label).width;
+    if (tw > maxW) {
+      ls = Math.floor((ls * maxW) / tw);
+      ctx.font = `600 ${ls}px ${FONTS[c.font]}`;
+    }
     ctx.fillStyle = c.color;
     ctx.globalAlpha = 0.85;
-    ctx.font = `600 ${Math.round(h * 0.07)}px ${FONTS[c.font]}`;
-    ctx.fillText(c.label, w / 2, h * 0.3);
+    const y = Math.min(h * 0.3, h * 0.52 - size * 0.5 - ls * 0.8);
+    ctx.fillText(c.label, w / 2, Math.max(ls, y));
     ctx.globalAlpha = 1;
   }
   ctx.fillStyle = c.color;
-  const text = fmt(Math.ceil(remainSec), c.format);
-  const size = Math.round(h * (text.length > 5 ? 0.26 : 0.34));
   ctx.font = `700 ${size}px ${FONTS[c.font]}`;
   ctx.fillText(text, w / 2, h * 0.52);
 }
@@ -204,6 +217,7 @@ $<HTMLInputElement>('#seconds').value = String(c0.seconds);
 $<HTMLSelectElement>('#format').value = c0.format;
 $<HTMLSelectElement>('#fps').value = String(c0.fps);
 $<HTMLInputElement>('#label').value = c0.label || T('label.default','Bắt đầu sau');
+$<HTMLSelectElement>('#labelSize').value = c0.labelSize || 'm';
 $<HTMLInputElement>('#bg').value = c0.bg;
 $<HTMLInputElement>('#color').value = c0.color;
 $<HTMLSelectElement>('#font').value = c0.font;
