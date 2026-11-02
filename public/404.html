@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu', 'xh', 'sn', 'ceb', 'jv', 'su'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu', 'xh', 'sn', 'ceb', 'jv', 'su', 'ne'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -120,7 +120,8 @@
           sn: ["Peji harina kuwanikwa", "Kero yepeji ingangove yakachinja kana peji risipo. Dzokera kumba usarudze chishandiso.", "Dzokera kumba", ["Kodhi ye-QR", "Gadzira mifananidzo", "Batanidza ma-PDF", "Kalkuleta yechikwereti"]],
           ceb: ["Wala makita ang panid", "Posibleng nausab ang adres sa panid o wala na kini. Balik sa panid sa pagsugod ug pagpili og himan.", "Balik sa panid sa pagsugod", ["QR code", "Pagpa-ubos sa mga hulagway", "Paghiusa sa mga PDF", "Kalkulado sa utang"]],
           jv: ["Kaca ora ditemokake", "Alamat kaca bisa wis owah utawa kaca-ne wis ora ana. Bali menyang kaca ngarep banjur pilih piranti.", "Bali menyang ngarep", ["Kode QR", "Ngompres gambar", "Nggabung PDF", "Kalkulator utang"]],
-          su: ["Kaca teu kapanggih", "Alamat kaca meureun geus robah atawa kacana euweuh. Balik ka kaca utama tuluy pilih parabot.", "Balik ka kaca utama", ["Kode QR", "Ngompres gambar", "Ngagabung PDF", "Kalkulator utang"]]
+          su: ["Kaca teu kapanggih", "Alamat kaca meureun geus robah atawa kacana euweuh. Balik ka kaca utama tuluy pilih parabot.", "Balik ka kaca utama", ["Kode QR", "Ngompres gambar", "Ngagabung PDF", "Kalkulator utang"]],
+          ne: ["पृष्ठ फेला परेन", "पृष्ठको ठेगाना परिवर्तन भएको हुन सक्छ वा पृष्ठ अब छैन। गृहपृष्ठमा फर्केर औजार छान्नुहोस्।", "गृहपृष्ठमा फर्कनुहोस्", ["QR कोड", "तस्बिर कम्प्रेस", "PDF जोड्नुहोस्", "ऋण क्यालकुलेटर"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
