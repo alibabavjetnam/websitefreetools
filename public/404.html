@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu', 'xh', 'sn', 'ceb', 'jv', 'su', 'ne', 'si', 'my', 'km', 'lo', 'ky', 'tg', 'tk', 'ps', 'sd', 'ht', 'mi', 'ha'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu', 'xh', 'sn', 'ceb', 'jv', 'su', 'ne', 'si', 'my', 'km', 'lo', 'ky', 'tg', 'tk', 'ps', 'sd', 'ht', 'mi', 'ha', 'yo', 'ig', 'am'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -133,7 +133,10 @@
           sd: ["صفحو نه مليو", "صفحي جو پتو ٿي سگھي ٿو تبديل ٿيو هجي يا ختم ٿي ويو هجي. ھوم پيج تي موٽي اوزار چونڊيو.", "ھوم پيج تي موٽو", ["QR ڪوڊ", "تصويرون ننڍيون ڪريو", "PDF گڏ ڪريو", "قرض ڪيلڪيوليٽر"]],
           ht: ["Paj la pa jwenn", "Adrès paj la ka chanje oswa disparèt. Retounen sou paj dakèy la epi chwazi yon zouti.", "Retounen sou paj dakèy", ["Kòd QR", "Konprese imaj", "Fusyone PDF", "Kalkilatè prè"]],
           mi: ["Kāore i kitea te whārangi", "Kua rerekē, kua ngaro rānei te wāhitau o te whārangi. Hoki ki te whārangi matua ka kōwhiri i tētahi taputapu.", "Hoki ki te whārangi matua", ["Waehere QR", "Whakamāmā i ngā whakaahua", "Whakakotahi PDF", "Tātaitai nama"]],
-          ha: ["Ba a sami shafin ba", "Adireshin shafin na iya canzawa ko ya ɓace. Koma shafin farko ka zaɓi kayan aiki.", "Koma shafin farko", ["Lambar QR", "Matse hotuna", "Haɗa PDF", "Na'urar lissafin bashi"]]
+          ha: ["Ba a sami shafin ba", "Adireshin shafin na iya canzawa ko ya ɓace. Koma shafin farko ka zaɓi kayan aiki.", "Koma shafin farko", ["Lambar QR", "Matse hotuna", "Haɗa PDF", "Na'urar lissafin bashi"]],
+          yo: ["A kò rí ojú-ìwé náà", "Àdírẹ́sì ojú-ìwé náà lè ti yí padà tàbí kò sí mọ́. Padà sí ojú-ìwé àkọ́kọ́ kí o yan irinṣẹ́.", "Padà sí ojú-ìwé àkọ́kọ́", ["Kóòdù QR", "Dín àwòrán kù", "Dá PDF pọ̀", "Ẹ̀rọ ìṣírò gbèsè"]],
+          ig: ["Achọtaghị ibe ahụ", "Adreesị ibe ahụ nwere ike ịgbanwe ma ọ bụ furu efu. Laghachi na ibe mbụ ma họrọ ngwa.", "Laghachi na ibe mbụ", ["Koodu QR", "Mebie foto", "Jikọta PDF", "Ngwa ịgbakọ ụgwọ"]],
+          am: ["ገጹ አልተገኘም", "የገጹ አድራሻ ተቀይሮ ወይም ጠፍቶ ሊሆን ይችላል። ወደ መነሻ ገጽ ተመልሰው መሣሪያ ይምረጡ።", "ወደ መነሻ ገጽ ተመለስ", ["QR ኮድ", "ምስሎችን ማጨቅጨቅ", "PDF ማዋሃድ", "የብድር ማስሊያ"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
