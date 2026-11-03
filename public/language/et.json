@@ -852,7 +852,12 @@
       "toast.webm": "WebM-video loodud (see brauser ei saa MP4 eksportida)",
       "err.render": "Videot ei õnnestunud luua",
       "err.renderHint": "Proovi ajakohast Chrome'i/Edge'i brauserit või vali väiksem suurus.",
-      "label.default": "Algab"
+      "label.default": "Algab",
+      "labelSize": "Teksti suurus",
+      "labelSize.s": "Väike",
+      "labelSize.m": "Keskmine",
+      "labelSize.l": "Suur",
+      "labelSize.xl": "Väga suur"
     },
     "currency-time": {
       "aria.tabs": "Vali tööriist",

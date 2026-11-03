@@ -852,7 +852,12 @@
       "toast.webm": "Videoclip WebM creat (acest browser nu poate exporta MP4)",
       "err.render": "Nu s-a putut crea videoclipul",
       "err.renderHint": "Încearcă un browser Chrome/Edge recent sau alege o dimensiune mai mică.",
-      "label.default": "Începe în"
+      "label.default": "Începe în",
+      "labelSize": "Dimensiunea textului",
+      "labelSize.s": "Mică",
+      "labelSize.m": "Medie",
+      "labelSize.l": "Mare",
+      "labelSize.xl": "Foarte mare"
     },
     "currency-time": {
       "aria.tabs": "Alege instrumentul",

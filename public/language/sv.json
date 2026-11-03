@@ -852,7 +852,12 @@
       "toast.webm": "WebM-video skapad (den här webbläsaren kan inte exportera MP4)",
       "err.render": "Det gick inte att skapa videon",
       "err.renderHint": "Prova en ny Chrome-/Edge-webbläsare eller välj en mindre storlek.",
-      "label.default": "Börjar om"
+      "label.default": "Börjar om",
+      "labelSize": "Textstorlek",
+      "labelSize.s": "Liten",
+      "labelSize.m": "Medel",
+      "labelSize.l": "Stor",
+      "labelSize.xl": "Extra stor"
     },
     "currency-time": {
       "aria.tabs": "Välj verktyg",

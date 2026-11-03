@@ -852,7 +852,12 @@
       "toast.webm": "WebM 영상을 만들었습니다 (이 브라우저는 MP4 내보내기를 지원하지 않습니다)",
       "err.render": "영상을 만들지 못했습니다",
       "err.renderHint": "최신 Chrome/Edge 브라우저를 사용하거나 더 작은 크기를 선택해 보세요.",
-      "label.default": "시작까지"
+      "label.default": "시작까지",
+      "labelSize": "텍스트 크기",
+      "labelSize.s": "작게",
+      "labelSize.m": "보통",
+      "labelSize.l": "크게",
+      "labelSize.xl": "매우 크게"
     },
     "currency-time": {
       "aria.tabs": "도구 선택",

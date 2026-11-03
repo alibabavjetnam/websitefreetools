@@ -852,7 +852,12 @@
       "toast.webm": "WebM видеото е създадено (този браузър не може да експортира MP4)",
       "err.render": "Видеото не можа да се създаде",
       "err.renderHint": "Опитайте с актуален Chrome/Edge или изберете по-малък размер.",
-      "label.default": "Започва след"
+      "label.default": "Започва след",
+      "labelSize": "Размер на текста",
+      "labelSize.s": "Малък",
+      "labelSize.m": "Среден",
+      "labelSize.l": "Голям",
+      "labelSize.xl": "Много голям"
     },
     "currency-time": {
       "aria.tabs": "Изберете инструмент",

@@ -852,7 +852,12 @@
       "toast.webm": "WebM videó létrehozva (ez a böngésző nem tud MP4-be exportálni)",
       "err.render": "A videót nem sikerült létrehozni",
       "err.renderHint": "Próbálj egy friss Chrome/Edge böngészőt, vagy válassz kisebb méretet.",
-      "label.default": "Kezdés:"
+      "label.default": "Kezdés:",
+      "labelSize": "Szövegméret",
+      "labelSize.s": "Kicsi",
+      "labelSize.m": "Közepes",
+      "labelSize.l": "Nagy",
+      "labelSize.xl": "Nagyon nagy"
     },
     "currency-time": {
       "aria.tabs": "Eszköz kiválasztása",

@@ -852,7 +852,12 @@
       "toast.webm": "WebM ভিডিও তৈরি হয়েছে (এই ব্রাউজার MP4 এক্সপোর্ট করতে পারে না)",
       "err.render": "ভিডিও তৈরি করা যায়নি",
       "err.renderHint": "সাম্প্রতিক Chrome/Edge ব্রাউজার চেষ্টা করুন, অথবা ছোট আকার বেছে নিন।",
-      "label.default": "শুরু হতে বাকি"
+      "label.default": "শুরু হতে বাকি",
+      "labelSize": "লেখার আকার",
+      "labelSize.s": "ছোট",
+      "labelSize.m": "মাঝারি",
+      "labelSize.l": "বড়",
+      "labelSize.xl": "অতি বড়"
     },
     "currency-time": {
       "aria.tabs": "টুল বেছে নিন",

@@ -852,7 +852,12 @@
       "toast.webm": "WebM видео је направљен (овај прегледач не може да извезе MP4)",
       "err.render": "Видео није било могуће направити",
       "err.renderHint": "Покушајте са новијим прегледачем Chrome/Edge или изаберите мању величину.",
-      "label.default": "Почиње за"
+      "label.default": "Почиње за",
+      "labelSize": "Величина текста",
+      "labelSize.s": "Мала",
+      "labelSize.m": "Средња",
+      "labelSize.l": "Велика",
+      "labelSize.xl": "Врло велика"
     },
     "currency-time": {
       "aria.tabs": "Изаберите алат",

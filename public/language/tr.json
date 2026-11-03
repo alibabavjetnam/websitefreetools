@@ -852,7 +852,12 @@
       "toast.webm": "WebM videosu oluşturuldu (bu tarayıcı MP4 dışa aktaramıyor)",
       "err.render": "Video oluşturulamadı",
       "err.renderHint": "Güncel bir Chrome/Edge deneyin veya daha küçük bir boyut seçin.",
-      "label.default": "Başlamasına"
+      "label.default": "Başlamasına",
+      "labelSize": "Metin boyutu",
+      "labelSize.s": "Küçük",
+      "labelSize.m": "Orta",
+      "labelSize.l": "Büyük",
+      "labelSize.xl": "Çok büyük"
     },
     "currency-time": {
       "aria.tabs": "Araç seçin",

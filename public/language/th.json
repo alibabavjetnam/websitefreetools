@@ -852,7 +852,12 @@
       "toast.webm": "สร้างวิดีโอ WebM แล้ว (เบราว์เซอร์นี้ส่งออก MP4 ไม่ได้)",
       "err.render": "สร้างวิดีโอไม่ได้",
       "err.renderHint": "ลองใช้ Chrome/Edge รุ่นล่าสุด หรือเลือกขนาดที่เล็กลง",
-      "label.default": "เริ่มใน"
+      "label.default": "เริ่มใน",
+      "labelSize": "ขนาดข้อความ",
+      "labelSize.s": "เล็ก",
+      "labelSize.m": "กลาง",
+      "labelSize.l": "ใหญ่",
+      "labelSize.xl": "ใหญ่มาก"
     },
     "currency-time": {
       "aria.tabs": "เลือกเครื่องมือ",

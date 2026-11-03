@@ -852,7 +852,12 @@
       "toast.webm": "WebM-Video erstellt (dieser Browser kann kein MP4 exportieren)",
       "err.render": "Video konnte nicht erstellt werden",
       "err.renderHint": "Versuche einen aktuellen Chrome-/Edge-Browser oder wähle eine kleinere Größe.",
-      "label.default": "Beginnt in"
+      "label.default": "Beginnt in",
+      "labelSize": "Textgröße",
+      "labelSize.s": "Klein",
+      "labelSize.m": "Mittel",
+      "labelSize.l": "Groß",
+      "labelSize.xl": "Sehr groß"
     },
     "currency-time": {
       "aria.tabs": "Tool wählen",

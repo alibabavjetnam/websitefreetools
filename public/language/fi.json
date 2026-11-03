@@ -852,7 +852,12 @@
       "toast.webm": "WebM-video luotu (tämä selain ei voi viedä MP4:ää)",
       "err.render": "Videon luonti epäonnistui",
       "err.renderHint": "Kokeile uudehkoa Chrome- tai Edge-selainta tai valitse pienempi koko.",
-      "label.default": "Alkaa"
+      "label.default": "Alkaa",
+      "labelSize": "Tekstin koko",
+      "labelSize.s": "Pieni",
+      "labelSize.m": "Keskikokoinen",
+      "labelSize.l": "Suuri",
+      "labelSize.xl": "Erittäin suuri"
     },
     "currency-time": {
       "aria.tabs": "Valitse työkalu",

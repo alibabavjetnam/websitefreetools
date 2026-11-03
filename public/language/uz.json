@@ -852,7 +852,12 @@
       "toast.webm": "WebM video yaratildi (bu brauzer MP4 eksport qila olmaydi)",
       "err.render": "Video yaratib boʻlmadi",
       "err.renderHint": "Yangi Chrome/Edge brauzerini sinab koʻring yoki kichikroq oʻlchamni tanlang.",
-      "label.default": "Boshlanishiga"
+      "label.default": "Boshlanishiga",
+      "labelSize": "Matn o‘lchami",
+      "labelSize.s": "Kichik",
+      "labelSize.m": "O‘rta",
+      "labelSize.l": "Katta",
+      "labelSize.xl": "Juda katta"
     },
     "currency-time": {
       "aria.tabs": "Vositani tanlang",

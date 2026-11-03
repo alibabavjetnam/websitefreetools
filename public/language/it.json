@@ -852,7 +852,12 @@
       "toast.webm": "Video WebM creato (questo browser non può esportare in MP4)",
       "err.render": "Impossibile creare il video",
       "err.renderHint": "Prova una versione recente di Chrome/Edge o scegli una dimensione più piccola.",
-      "label.default": "Inizia tra"
+      "label.default": "Inizia tra",
+      "labelSize": "Dimensione del testo",
+      "labelSize.s": "Piccola",
+      "labelSize.m": "Media",
+      "labelSize.l": "Grande",
+      "labelSize.xl": "Molto grande"
     },
     "currency-time": {
       "aria.tabs": "Scegli lo strumento",

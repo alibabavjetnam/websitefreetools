@@ -852,7 +852,12 @@
       "toast.webm": "Відео WebM створено (цей браузер не може експортувати MP4)",
       "err.render": "Не вдалося створити відео",
       "err.renderHint": "Спробуйте сучасний браузер Chrome/Edge або виберіть менший розмір.",
-      "label.default": "Початок через"
+      "label.default": "Початок через",
+      "labelSize": "Розмір тексту",
+      "labelSize.s": "Малий",
+      "labelSize.m": "Середній",
+      "labelSize.l": "Великий",
+      "labelSize.xl": "Дуже великий"
     },
     "currency-time": {
       "aria.tabs": "Виберіть інструмент",

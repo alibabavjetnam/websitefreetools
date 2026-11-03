@@ -852,7 +852,12 @@
       "toast.webm": "تم إنشاء فيديو WebM (لا يستطيع هذا المتصفح تصدير MP4)",
       "err.render": "تعذّر إنشاء الفيديو",
       "err.renderHint": "جرّب متصفح Chrome/Edge حديثًا، أو اختر حجمًا أصغر.",
-      "label.default": "يبدأ خلال"
+      "label.default": "يبدأ خلال",
+      "labelSize": "حجم النص",
+      "labelSize.s": "صغير",
+      "labelSize.m": "متوسط",
+      "labelSize.l": "كبير",
+      "labelSize.xl": "كبير جدًا"
     },
     "currency-time": {
       "aria.tabs": "اختر الأداة",
