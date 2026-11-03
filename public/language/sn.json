@@ -434,10 +434,6 @@
       "name": "HEIC kuenda kuJPG",
       "desc": "Shandura mifananidzo yeHEIC yeiPhone kuita JPG kana PNG kuti ivhurike kwose kwose. Inogona kushandura yakawanda panguva imwe."
     },
-    "ai-bg-remove": {
-      "name": "Chishandiso Chekubvisa Kumashure neAI",
-      "desc": "Cheka vanhu, zvinhu nemhuka kubva kumashure ipi neipi neAI iri pachishandiso chako, wodhawunirodha PNG isina mashure."
-    },
     "image-upscale": {
       "name": "Chishandiso Chekukudza Mifananidzo neAI",
       "desc": "Kudza mifananidzo ka2 kana ka4 uye kujekesa zvidiki neAI. Chakanaka kumifananidzo midiki, isina kujeka kana yekare."
@@ -587,7 +583,32 @@
       "err.notImage": "Faira iri harisi mufananidzo.",
       "err.tooBig": "Mufananidzo wakakura kupfuura 40 MB.",
       "canvas.title": "Dzvanya nzvimbo yeshure kuti usarudze vara raro",
-      "toast.pickedBg": "Vara reshure rasarudzwa"
+      "toast.pickedBg": "Vara reshure rasarudzwa",
+      "ai.dropTitle": "Sarudza mifananidzo kana kuikwevera pano",
+      "ai.dropHint": "JPG, PNG, WebP. Mifananidzo yakawanda panguva imwe, yega yega isingasviki 40 MB. Unogonawo kunamata neCtrl+V.",
+      "ai.model": "Rudzi rwemufananidzo",
+      "ai.mGeneral": "Chero chinhu (zvigadzirwa, mhuka, zvinhu, vanhu)",
+      "ai.mGeneralD": "inoshanda zvakanyanya, inodhawunirodha modhi inosvika 200 MB kekutanga",
+      "ai.mPortrait": "Mifananidzo yevanhu",
+      "ai.mPortraitD": "inokurumidza, modhi yareruka inosvika 25 MB, yakanaka kumifananidzo yeID neyepurofayiri",
+      "ai.bg": "Mashure matsva",
+      "ai.bgNone": "Asina ruvara (PNG)",
+      "ai.bgWhite": "Chichena",
+      "ai.bgColor": "Rimwe ruvara",
+      "ai.run": "Bvisa mashure",
+      "ai.zip": "Dhawunirodha zvose (.zip)",
+      "ai.note": "AI inoshanda pamudziyo wako (ichishandisa graphics card kana bhurauza ichitsigira WebGPU); mifananidzo haitumirwi kupi nokupi. Modhi inodhawunirodhwa kekutanga chete uye inochengetwa nebhurauza yako. Makombuta kana mafoni ekare angatora masekondi 10–60 pamufananidzo mumwe. Kumashure machena akareruka, chishandiso cheRemove Image Background chinokurumidza.",
+      "ai.download": "Dhawunirodha",
+      "ai.tooBig": "inopfuura 40 MB",
+      "ai.suffix": "pasina-mashure",
+      "ai.loadingLib": "Kutakura AI…",
+      "ai.loadingModel": "Kudhawunirodha modhi yeAI (kekutanga chete)…",
+      "ai.working": "Kugadzirisa mufananidzo",
+      "ai.errImg": "Hatina kukwanisa kugadzirisa mufananidzo uyu",
+      "ai.done": "Zvapera!",
+      "ai.err": "Hatina kukwanisa kushandisa AI mubhurauza rino. Edza Chrome kana Edge itsva.",
+      "ai.zipName": "mashure-abviswa",
+      "tab.simple": "Mbrasho yerudzi rumwe (nekukurumidza)"
     },
     "attendance": {
       "add.label": "Wedzera mudzidzi",
@@ -3356,32 +3377,6 @@
       "errNet": "Hatina kukwanisa kudhawunirodha chishandiso chekuverenga. Tarisa intaneti yako woedza zvakare.",
       "errDecode": "Hatina kukwanisa kuverenga mufananidzo uyu (faira rakaparara kana rudzi rweHEIC rusingatsigirwe).",
       "zipName": "mifananidzo-yeHEIC-yashandurwa"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Sarudza mifananidzo kana kuikwevera pano",
-      "dropHint": "JPG, PNG, WebP. Mifananidzo yakawanda panguva imwe, yega yega isingasviki 40 MB. Unogonawo kunamata neCtrl+V.",
-      "model": "Rudzi rwemufananidzo",
-      "mGeneral": "Chero chinhu (zvigadzirwa, mhuka, zvinhu, vanhu)",
-      "mGeneralD": "inoshanda zvakanyanya, inodhawunirodha modhi inosvika 200 MB kekutanga",
-      "mPortrait": "Mifananidzo yevanhu",
-      "mPortraitD": "inokurumidza, modhi yareruka inosvika 25 MB, yakanaka kumifananidzo yeID neyepurofayiri",
-      "bg": "Mashure matsva",
-      "bgNone": "Asina ruvara (PNG)",
-      "bgWhite": "Chichena",
-      "bgColor": "Rimwe ruvara",
-      "run": "Bvisa mashure",
-      "zip": "Dhawunirodha zvose (.zip)",
-      "note": "AI inoshanda pamudziyo wako (ichishandisa graphics card kana bhurauza ichitsigira WebGPU); mifananidzo haitumirwi kupi nokupi. Modhi inodhawunirodhwa kekutanga chete uye inochengetwa nebhurauza yako. Makombuta kana mafoni ekare angatora masekondi 10–60 pamufananidzo mumwe. Kumashure machena akareruka, chishandiso cheRemove Image Background chinokurumidza.",
-      "download": "Dhawunirodha",
-      "tooBig": "inopfuura 40 MB",
-      "suffix": "pasina-mashure",
-      "loadingLib": "Kutakura AI…",
-      "loadingModel": "Kudhawunirodha modhi yeAI (kekutanga chete)…",
-      "working": "Kugadzirisa mufananidzo",
-      "errImg": "Hatina kukwanisa kugadzirisa mufananidzo uyu",
-      "done": "Zvapera!",
-      "err": "Hatina kukwanisa kushandisa AI mubhurauza rino. Edza Chrome kana Edge itsva.",
-      "zipName": "mashure-abviswa"
     },
     "image-upscale": {
       "dropTitle": "Sarudza mufananidzo kana kuukwevera pano",

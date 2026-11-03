@@ -434,10 +434,6 @@
       "name": "HEIC ki JPG",
       "desc": "Whakamitia ngā whakaahua HEIC a iPhone ki JPG, PNG rānei kia tuwhera ai ki ia wāhi. E tautoko ana i te whakamiti ā-pūranga."
     },
-    "ai-bg-remove": {
-      "name": "Kaitango Papamuri AI",
-      "desc": "Tapahia ngā tāngata, ngā hua me ngā kurī/ngā ngeru i ia papamuri mā te AI i tō pūrere, ā, tikiakehia he PNG kitea-ma."
-    },
     "image-upscale": {
       "name": "Kaiwhakanui Whakaahua AI",
       "desc": "Whakanuia ngā whakaahua 2× 4× rānei, ā, whakamāramahia ngā taipitopito mā te AI. He pai mō ngā whakaahua iti, kōpikopiko, tawhito rānei."
@@ -587,7 +583,32 @@
       "err.notImage": "Ehara tēnei kōnae i te whakaahua.",
       "err.tooBig": "Neke atu i te 40 MB te whakaahua.",
       "canvas.title": "Pāwhiria te wāhi papamuri hei tīpako i tōna tae",
-      "toast.pickedBg": "Kua tīpakohia te tae papamuri"
+      "toast.pickedBg": "Kua tīpakohia te tae papamuri",
+      "ai.dropTitle": "Tīpakohia ngā whakaahua, toia rānei ki konei",
+      "ai.dropHint": "JPG, PNG, WebP. Maha ngā whakaahua i te wā kotahi, i raro i te 40 MB ia whakaahua. Ka taea hoki te whakapiri mā Ctrl+V.",
+      "ai.model": "Momo whakaahua",
+      "ai.mGeneral": "Ahakoa he aha (ngā hua, ngā kurī/ngā ngeru, ngā ahanoa, ngā tāngata)",
+      "ai.mGeneralD": "tino tika, ka tikiake i tētahi tauira tata ki te 200 MB i te wā tuatahi",
+      "ai.mPortrait": "Ngā whakaahua tāngata",
+      "ai.mPortraitD": "tere, he tauira māmā tata ki te 25 MB, pai rawa mō ngā whakaahua ID me ngā whakaahua kōtaha",
+      "ai.bg": "Papamuri hou",
+      "ai.bgNone": "Kitea-ma (PNG)",
+      "ai.bgWhite": "Mā",
+      "ai.bgColor": "Tae kē",
+      "ai.run": "Tango papamuri",
+      "ai.zip": "Tikiake katoa (.zip)",
+      "ai.note": "Ka rere te AI i tō pūrere (mā tō kāri whakaahua mēnā e tautoko ana tō pūtirotiro i a WebGPU); e kore ngā whakaahua e tukuna ki hea. Ka tikiakehia te tauira i te wā tuatahi anake, ā, ka puritia e tō pūtirotiro. Tērā pea ka 10–60 hēkona ia whakaahua ki ngā rorohiko, ngā waea tawhito rānei. Mō ngā papamuri mā māmā, he tere ake te taputapu Tango Papamuri Whakaahua.",
+      "ai.download": "Tikiake",
+      "ai.tooBig": "neke atu i te 40 MB",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "E uta ana i te pūrere AI…",
+      "ai.loadingModel": "E tikiake ana i te tauira AI (i te wā tuatahi anake)…",
+      "ai.working": "E tukatuka ana i te whakaahua",
+      "ai.errImg": "Kāore i taea te tukatuka i tēnei whakaahua",
+      "ai.done": "Kua oti!",
+      "ai.err": "Kāore i taea te whakahaere i te AI i tēnei pūtirotiro. Whakamātauria he Chrome, Edge rānei hou.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Tāhuhu tae kotahi (tere)"
     },
     "attendance": {
       "add.label": "Tāpiri ākonga",
@@ -3356,32 +3377,6 @@
       "errNet": "Kāore i taea te tikiake i te kaiwhakawete. Tirohia tō tūhononga, ka whakamātau anō.",
       "errDecode": "Kāore i taea te pānui i tēnei whakaahua (kōnae kua pakaru, momo HEIC kāore e tautokona rānei).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Tīpakohia ngā whakaahua, toia rānei ki konei",
-      "dropHint": "JPG, PNG, WebP. Maha ngā whakaahua i te wā kotahi, i raro i te 40 MB ia whakaahua. Ka taea hoki te whakapiri mā Ctrl+V.",
-      "model": "Momo whakaahua",
-      "mGeneral": "Ahakoa he aha (ngā hua, ngā kurī/ngā ngeru, ngā ahanoa, ngā tāngata)",
-      "mGeneralD": "tino tika, ka tikiake i tētahi tauira tata ki te 200 MB i te wā tuatahi",
-      "mPortrait": "Ngā whakaahua tāngata",
-      "mPortraitD": "tere, he tauira māmā tata ki te 25 MB, pai rawa mō ngā whakaahua ID me ngā whakaahua kōtaha",
-      "bg": "Papamuri hou",
-      "bgNone": "Kitea-ma (PNG)",
-      "bgWhite": "Mā",
-      "bgColor": "Tae kē",
-      "run": "Tango papamuri",
-      "zip": "Tikiake katoa (.zip)",
-      "note": "Ka rere te AI i tō pūrere (mā tō kāri whakaahua mēnā e tautoko ana tō pūtirotiro i a WebGPU); e kore ngā whakaahua e tukuna ki hea. Ka tikiakehia te tauira i te wā tuatahi anake, ā, ka puritia e tō pūtirotiro. Tērā pea ka 10–60 hēkona ia whakaahua ki ngā rorohiko, ngā waea tawhito rānei. Mō ngā papamuri mā māmā, he tere ake te taputapu Tango Papamuri Whakaahua.",
-      "download": "Tikiake",
-      "tooBig": "neke atu i te 40 MB",
-      "suffix": "no-bg",
-      "loadingLib": "E uta ana i te pūrere AI…",
-      "loadingModel": "E tikiake ana i te tauira AI (i te wā tuatahi anake)…",
-      "working": "E tukatuka ana i te whakaahua",
-      "errImg": "Kāore i taea te tukatuka i tēnei whakaahua",
-      "done": "Kua oti!",
-      "err": "Kāore i taea te whakahaere i te AI i tēnei pūtirotiro. Whakamātauria he Chrome, Edge rānei hou.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Tīpakohia tētahi whakaahua, toia rānei ki konei",

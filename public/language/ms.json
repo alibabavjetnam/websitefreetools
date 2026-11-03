@@ -434,10 +434,6 @@
       "name": "HEIC ke JPG",
       "desc": "Tukar foto HEIC iPhone ke JPG atau PNG supaya boleh dibuka di mana-mana. Penukaran berkelompok."
     },
-    "ai-bg-remove": {
-      "name": "Buang latar dengan AI",
-      "desc": "Asingkan orang, produk dan haiwan daripada sebarang latar dengan AI pada peranti anda, kemudian muat turun PNG lut sinar."
-    },
     "image-upscale": {
       "name": "Besarkan imej dengan AI",
       "desc": "Besarkan imej 2× atau 4× dan tajamkan butiran dengan AI. Sesuai untuk foto kecil, kabur atau lama."
@@ -587,7 +583,32 @@
       "err.notImage": "Fail ini bukan imej.",
       "err.tooBig": "Imej lebih besar daripada 40 MB.",
       "canvas.title": "Klik kawasan latar belakang untuk memilih warnanya",
-      "toast.pickedBg": "Warna latar belakang dipilih"
+      "toast.pickedBg": "Warna latar belakang dipilih",
+      "ai.dropTitle": "Pilih imej atau seret ke sini",
+      "ai.dropHint": "JPG, PNG, WebP. Banyak imej, setiap satu bawah 40 MB. Boleh juga tampal dengan Ctrl+V.",
+      "ai.model": "Jenis imej",
+      "ai.mGeneral": "Apa-apa sahaja (produk, haiwan, objek, orang)",
+      "ai.mGeneralD": "paling tepat; kali pertama memuat turun model kira-kira 200 MB",
+      "ai.mPortrait": "Potret orang",
+      "ai.mPortraitD": "pantas, model ringan kira-kira 25 MB, sesuai untuk foto pasport dan foto profil",
+      "ai.bg": "Latar baharu",
+      "ai.bgNone": "Lut sinar (PNG)",
+      "ai.bgWhite": "Putih",
+      "ai.bgColor": "Warna lain",
+      "ai.run": "Buang latar",
+      "ai.zip": "Muat turun semua (.zip)",
+      "ai.note": "AI berjalan pada peranti anda (dengan kad grafik jika pelayar menyokong WebGPU); imej tidak pernah dihantar. Model hanya dimuat turun kali pertama dan disimpan oleh pelayar. Komputer atau telefon lama mungkin mengambil 10–60 saat setiap imej. Untuk latar putih biasa, alat Buang latar imej lebih pantas.",
+      "ai.download": "Muat turun",
+      "ai.tooBig": "melebihi 40 MB",
+      "ai.suffix": "tanpa-latar",
+      "ai.loadingLib": "Memuatkan enjin AI…",
+      "ai.loadingModel": "Memuat turun model AI (kali pertama sahaja)…",
+      "ai.working": "Memproses imej",
+      "ai.errImg": "Tidak dapat memproses imej ini",
+      "ai.done": "Siap!",
+      "ai.err": "AI tidak dapat berjalan dalam pelayar ini. Cuba Chrome atau Edge versi terkini.",
+      "ai.zipName": "latar-dibuang",
+      "tab.simple": "Latar belakang sekata (pantas)"
     },
     "attendance": {
       "add.label": "Tambah pelajar",
@@ -2441,32 +2462,6 @@
       "errNet": "Tidak dapat memuat turun penyahkod. Semak sambungan dan cuba lagi.",
       "errDecode": "Tidak dapat membaca foto ini (fail rosak atau jenis HEIC tidak disokong).",
       "zipName": "foto-heic-ditukar"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Pilih imej atau seret ke sini",
-      "dropHint": "JPG, PNG, WebP. Banyak imej, setiap satu bawah 40 MB. Boleh juga tampal dengan Ctrl+V.",
-      "model": "Jenis imej",
-      "mGeneral": "Apa-apa sahaja (produk, haiwan, objek, orang)",
-      "mGeneralD": "paling tepat; kali pertama memuat turun model kira-kira 200 MB",
-      "mPortrait": "Potret orang",
-      "mPortraitD": "pantas, model ringan kira-kira 25 MB, sesuai untuk foto pasport dan foto profil",
-      "bg": "Latar baharu",
-      "bgNone": "Lut sinar (PNG)",
-      "bgWhite": "Putih",
-      "bgColor": "Warna lain",
-      "run": "Buang latar",
-      "zip": "Muat turun semua (.zip)",
-      "note": "AI berjalan pada peranti anda (dengan kad grafik jika pelayar menyokong WebGPU); imej tidak pernah dihantar. Model hanya dimuat turun kali pertama dan disimpan oleh pelayar. Komputer atau telefon lama mungkin mengambil 10–60 saat setiap imej. Untuk latar putih biasa, alat Buang latar imej lebih pantas.",
-      "download": "Muat turun",
-      "tooBig": "melebihi 40 MB",
-      "suffix": "tanpa-latar",
-      "loadingLib": "Memuatkan enjin AI…",
-      "loadingModel": "Memuat turun model AI (kali pertama sahaja)…",
-      "working": "Memproses imej",
-      "errImg": "Tidak dapat memproses imej ini",
-      "done": "Siap!",
-      "err": "AI tidak dapat berjalan dalam pelayar ini. Cuba Chrome atau Edge versi terkini.",
-      "zipName": "latar-dibuang"
     },
     "image-upscale": {
       "dropTitle": "Pilih imej atau seret ke sini",

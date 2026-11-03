@@ -434,10 +434,6 @@
       "name": "HEIC 轉 JPG",
       "desc": "把 iPhone 的 HEIC 照片轉成 JPG 或 PNG，隨處都能開啟。支援批次轉換。"
     },
-    "ai-bg-remove": {
-      "name": "AI 摳圖去背景",
-      "desc": "用本地 AI 從任意背景中摳出人物、商品和寵物，下載透明背景 PNG。"
-    },
     "image-upscale": {
       "name": "AI 圖片高畫質放大",
       "desc": "用 AI 將圖片放大 2 倍或 4 倍並增強細節，適合小圖、模糊照片和老照片。"
@@ -587,7 +583,32 @@
       "err.notImage": "該檔案不是圖片。",
       "err.tooBig": "圖片大於 40 MB。",
       "canvas.title": "點選背景區域以選取顏色",
-      "toast.pickedBg": "已選取背景色"
+      "toast.pickedBg": "已選取背景色",
+      "ai.dropTitle": "選擇圖片或拖放到這裡",
+      "ai.dropHint": "JPG、PNG、WebP。可一次選多張，每張不超過 40 MB。也可以按 Ctrl+V 貼上。",
+      "ai.model": "圖片型別",
+      "ai.mGeneral": "通用（商品、寵物、物品、人物）",
+      "ai.mGeneralD": "最精準，首次需下載約 200 MB 的模型",
+      "ai.mPortrait": "人像",
+      "ai.mPortraitD": "速度快，模型約 25 MB，適合證件照和頭像",
+      "ai.bg": "新背景",
+      "ai.bgNone": "透明（PNG）",
+      "ai.bgWhite": "白色",
+      "ai.bgColor": "其他顏色",
+      "ai.run": "去除背景",
+      "ai.zip": "全部下載（.zip）",
+      "ai.note": "AI 在你的裝置上執行（瀏覽器支援 WebGPU 時使用顯示卡），圖片不會傳送到任何地方。模型只在首次下載並由瀏覽器快取。舊電腦或手機每張圖可能需要 10–60 秒。簡單的白色背景用“圖片去背景”工具更快。",
+      "ai.download": "下載",
+      "ai.tooBig": "超過 40 MB",
+      "ai.suffix": "去背景",
+      "ai.loadingLib": "正在載入 AI 執行環境…",
+      "ai.loadingModel": "正在下載 AI 模型（僅首次）…",
+      "ai.working": "正在處理圖片",
+      "ai.errImg": "無法處理這張圖片",
+      "ai.done": "完成！",
+      "ai.err": "此瀏覽器無法執行 AI。請使用最新版 Chrome 或 Edge。",
+      "ai.zipName": "已去背景",
+      "tab.simple": "純色背景（快速）"
     },
     "attendance": {
       "add.label": "新增學員",
@@ -3356,32 +3377,6 @@
       "errNet": "無法下載解碼器。請檢查網路後重試。",
       "errDecode": "無法讀取這張照片（檔案損壞或不支援的 HEIC 格式）。",
       "zipName": "已轉換的HEIC照片"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "選擇圖片或拖放到這裡",
-      "dropHint": "JPG、PNG、WebP。可一次選多張，每張不超過 40 MB。也可以按 Ctrl+V 貼上。",
-      "model": "圖片型別",
-      "mGeneral": "通用（商品、寵物、物品、人物）",
-      "mGeneralD": "最精準，首次需下載約 200 MB 的模型",
-      "mPortrait": "人像",
-      "mPortraitD": "速度快，模型約 25 MB，適合證件照和頭像",
-      "bg": "新背景",
-      "bgNone": "透明（PNG）",
-      "bgWhite": "白色",
-      "bgColor": "其他顏色",
-      "run": "去除背景",
-      "zip": "全部下載（.zip）",
-      "note": "AI 在你的裝置上執行（瀏覽器支援 WebGPU 時使用顯示卡），圖片不會傳送到任何地方。模型只在首次下載並由瀏覽器快取。舊電腦或手機每張圖可能需要 10–60 秒。簡單的白色背景用“圖片去背景”工具更快。",
-      "download": "下載",
-      "tooBig": "超過 40 MB",
-      "suffix": "去背景",
-      "loadingLib": "正在載入 AI 執行環境…",
-      "loadingModel": "正在下載 AI 模型（僅首次）…",
-      "working": "正在處理圖片",
-      "errImg": "無法處理這張圖片",
-      "done": "完成！",
-      "err": "此瀏覽器無法執行 AI。請使用最新版 Chrome 或 Edge。",
-      "zipName": "已去背景"
     },
     "image-upscale": {
       "dropTitle": "選擇圖片或拖放到這裡",

@@ -256,7 +256,7 @@
     },
     "bg-remove": {
       "name": "Remove Image Background",
-      "desc": "Remove a white or solid-color background from product photos, logos and avatars, instantly on your device."
+      "desc": "Remove white, solid-color or any background (AI, on your device) from product photos, logos, portraits and pets, then download a transparent PNG."
     },
     "watermark": {
       "name": "Add Watermark to Images",
@@ -434,10 +434,6 @@
       "name": "HEIC to JPG",
       "desc": "Convert iPhone HEIC photos to JPG or PNG so they open anywhere. Batch conversion supported."
     },
-    "ai-bg-remove": {
-      "name": "AI Background Remover",
-      "desc": "Cut out people, products and pets from any background with on-device AI and download a transparent PNG."
-    },
     "image-upscale": {
       "name": "AI Image Upscaler",
       "desc": "Upscale images 2× or 4× and sharpen details with AI. Great for small, blurry or old photos."
@@ -587,7 +583,32 @@
       "err.notImage": "This file is not an image.",
       "err.tooBig": "Image is larger than 40 MB.",
       "canvas.title": "Click the background area to pick its color",
-      "toast.pickedBg": "Picked background color"
+      "toast.pickedBg": "Picked background color",
+      "ai.dropTitle": "Choose images or drag them here",
+      "ai.dropHint": "JPG, PNG, WebP. Many images at once, each under 40 MB. You can also paste with Ctrl+V.",
+      "ai.model": "Image type",
+      "ai.mGeneral": "Anything (products, pets, objects, people)",
+      "ai.mGeneralD": "most accurate, downloads a model of about 200 MB the first time",
+      "ai.mPortrait": "People portraits",
+      "ai.mPortraitD": "fast, light model of about 25 MB, great for ID photos and profile pictures",
+      "ai.bg": "New background",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "White",
+      "ai.bgColor": "Other color",
+      "ai.run": "Remove background",
+      "ai.zip": "Download all (.zip)",
+      "ai.note": "The AI runs on your device (using your graphics card if the browser supports WebGPU); images are never sent anywhere. The model downloads only the first time and is cached by your browser. Older computers or phones may take 10–60 seconds per image. For simple white backgrounds, the Remove Image Background tool is faster.",
+      "ai.download": "Download",
+      "ai.tooBig": "larger than 40 MB",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "Loading the AI runtime…",
+      "ai.loadingModel": "Downloading the AI model (first time only)…",
+      "ai.working": "Processing image",
+      "ai.errImg": "Couldn't process this image",
+      "ai.done": "Done!",
+      "ai.err": "Couldn't run the AI in this browser. Try a recent Chrome or Edge.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Solid background (fast)"
     },
     "attendance": {
       "add.label": "Add student",
@@ -3356,32 +3377,6 @@
       "errNet": "Couldn't download the decoder. Check your connection and try again.",
       "errDecode": "Couldn't read this photo (damaged file or unsupported HEIC variant).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Choose images or drag them here",
-      "dropHint": "JPG, PNG, WebP. Many images at once, each under 40 MB. You can also paste with Ctrl+V.",
-      "model": "Image type",
-      "mGeneral": "Anything (products, pets, objects, people)",
-      "mGeneralD": "most accurate, downloads a model of about 200 MB the first time",
-      "mPortrait": "People portraits",
-      "mPortraitD": "fast, light model of about 25 MB, great for ID photos and profile pictures",
-      "bg": "New background",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "White",
-      "bgColor": "Other color",
-      "run": "Remove background",
-      "zip": "Download all (.zip)",
-      "note": "The AI runs on your device (using your graphics card if the browser supports WebGPU); images are never sent anywhere. The model downloads only the first time and is cached by your browser. Older computers or phones may take 10–60 seconds per image. For simple white backgrounds, the Remove Image Background tool is faster.",
-      "download": "Download",
-      "tooBig": "larger than 40 MB",
-      "suffix": "no-bg",
-      "loadingLib": "Loading the AI runtime…",
-      "loadingModel": "Downloading the AI model (first time only)…",
-      "working": "Processing image",
-      "errImg": "Couldn't process this image",
-      "done": "Done!",
-      "err": "Couldn't run the AI in this browser. Try a recent Chrome or Edge.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Choose an image or drag it here",

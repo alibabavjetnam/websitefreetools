@@ -434,10 +434,6 @@
       "name": "HEIC i JPG",
       "desc": "Trosi lluniau HEIC iPhone i JPG neu PNG fel eu bod yn agor ym mhobman. Cefnogir trosi swp."
     },
-    "ai-bg-remove": {
-      "name": "Tynnwr Cefndir AI",
-      "desc": "Torri pobl, cynhyrchion ac anifeiliaid anwes allan o unrhyw gefndir gydag AI ar y ddyfais a lawrlwytho PNG tryloyw."
-    },
     "image-upscale": {
       "name": "Uwchraddiwr Delweddau AI",
       "desc": "Helaethu delweddau 2× neu 4× a miniogi manylion gydag AI. Gwych ar gyfer lluniau bach, aneglur neu hen."
@@ -587,7 +583,32 @@
       "err.notImage": "Nid yw'r ffeil hon yn ddelwedd.",
       "err.tooBig": "Mae'r ddelwedd yn fwy na 40 MB.",
       "canvas.title": "Cliciwch ar ardal y cefndir i ddewis ei liw",
-      "toast.pickedBg": "Wedi dewis lliw'r cefndir"
+      "toast.pickedBg": "Wedi dewis lliw'r cefndir",
+      "ai.dropTitle": "Dewiswch ddelweddau neu llusgwch hwy yma",
+      "ai.dropHint": "JPG, PNG, WebP. Llawer o ddelweddau ar unwaith, pob un o dan 40 MB. Gallwch hefyd gludo gyda Ctrl+V.",
+      "ai.model": "Math o ddelwedd",
+      "ai.mGeneral": "Unrhyw beth (cynhyrchion, anifeiliaid anwes, gwrthrychau, pobl)",
+      "ai.mGeneralD": "y mwyaf cywir, yn lawrlwytho model o tua 200 MB y tro cyntaf",
+      "ai.mPortrait": "Portreadau o bobl",
+      "ai.mPortraitD": "model cyflym, ysgafn o tua 25 MB, gwych ar gyfer lluniau adnabod a lluniau proffil",
+      "ai.bg": "Cefndir newydd",
+      "ai.bgNone": "Tryloyw (PNG)",
+      "ai.bgWhite": "Gwyn",
+      "ai.bgColor": "Lliw arall",
+      "ai.run": "Tynnu'r cefndir",
+      "ai.zip": "Lawrlwytho'r cyfan (.zip)",
+      "ai.note": "Mae'r AI yn rhedeg ar eich dyfais (gan ddefnyddio eich cerdyn graffeg os yw'r porwr yn cefnogi WebGPU); ni chaiff delweddau eu hanfon i unman. Dim ond y tro cyntaf y caiff y model ei lawrlwytho ac mae eich porwr yn ei storio. Gall cyfrifiaduron neu ffonau hŷn gymryd 10–60 eiliad i bob delwedd. Ar gyfer cefndiroedd gwyn syml, mae'r offeryn Tynnu Cefndir Delwedd yn gyflymach.",
+      "ai.download": "Lawrlwytho",
+      "ai.tooBig": "yn fwy na 40 MB",
+      "ai.suffix": "dim-cefndir",
+      "ai.loadingLib": "Yn llwytho amser rhedeg yr AI…",
+      "ai.loadingModel": "Yn lawrlwytho model yr AI (y tro cyntaf yn unig)…",
+      "ai.working": "Yn prosesu delwedd",
+      "ai.errImg": "Methu prosesu'r ddelwedd hon",
+      "ai.done": "Wedi gorffen!",
+      "ai.err": "Methu rhedeg yr AI yn y porwr hwn. Rhowch gynnig ar Chrome neu Edge diweddar.",
+      "ai.zipName": "cefndir-wedi-tynnu",
+      "tab.simple": "Cefndir unlliw (cyflym)"
     },
     "attendance": {
       "add.label": "Ychwanegu myfyriwr",
@@ -3356,32 +3377,6 @@
       "errNet": "Methu lawrlwytho'r dadgodiwr. Gwiriwch eich cysylltiad a rhowch gynnig arall arni.",
       "errDecode": "Methu darllen y llun hwn (ffeil wedi'i difrodi neu amrywiad HEIC heb ei gefnogi).",
       "zipName": "lluniau-heic-wedi-trosi"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Dewiswch ddelweddau neu llusgwch hwy yma",
-      "dropHint": "JPG, PNG, WebP. Llawer o ddelweddau ar unwaith, pob un o dan 40 MB. Gallwch hefyd gludo gyda Ctrl+V.",
-      "model": "Math o ddelwedd",
-      "mGeneral": "Unrhyw beth (cynhyrchion, anifeiliaid anwes, gwrthrychau, pobl)",
-      "mGeneralD": "y mwyaf cywir, yn lawrlwytho model o tua 200 MB y tro cyntaf",
-      "mPortrait": "Portreadau o bobl",
-      "mPortraitD": "model cyflym, ysgafn o tua 25 MB, gwych ar gyfer lluniau adnabod a lluniau proffil",
-      "bg": "Cefndir newydd",
-      "bgNone": "Tryloyw (PNG)",
-      "bgWhite": "Gwyn",
-      "bgColor": "Lliw arall",
-      "run": "Tynnu'r cefndir",
-      "zip": "Lawrlwytho'r cyfan (.zip)",
-      "note": "Mae'r AI yn rhedeg ar eich dyfais (gan ddefnyddio eich cerdyn graffeg os yw'r porwr yn cefnogi WebGPU); ni chaiff delweddau eu hanfon i unman. Dim ond y tro cyntaf y caiff y model ei lawrlwytho ac mae eich porwr yn ei storio. Gall cyfrifiaduron neu ffonau hŷn gymryd 10–60 eiliad i bob delwedd. Ar gyfer cefndiroedd gwyn syml, mae'r offeryn Tynnu Cefndir Delwedd yn gyflymach.",
-      "download": "Lawrlwytho",
-      "tooBig": "yn fwy na 40 MB",
-      "suffix": "dim-cefndir",
-      "loadingLib": "Yn llwytho amser rhedeg yr AI…",
-      "loadingModel": "Yn lawrlwytho model yr AI (y tro cyntaf yn unig)…",
-      "working": "Yn prosesu delwedd",
-      "errImg": "Methu prosesu'r ddelwedd hon",
-      "done": "Wedi gorffen!",
-      "err": "Methu rhedeg yr AI yn y porwr hwn. Rhowch gynnig ar Chrome neu Edge diweddar.",
-      "zipName": "cefndir-wedi-tynnu"
     },
     "image-upscale": {
       "dropTitle": "Dewiswch ddelwedd neu llusgwch hi yma",

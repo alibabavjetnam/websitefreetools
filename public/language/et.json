@@ -434,10 +434,6 @@
       "name": "HEIC JPG-ks",
       "desc": "Teisenda iPhone'i HEIC-fotod JPG- või PNG-vormingusse, et need avaneksid kõikjal. Mitu faili korraga."
     },
-    "ai-bg-remove": {
-      "name": "Tausta eemaldamine tehisintellektiga",
-      "desc": "Lõika inimesed, tooted ja lemmikloomad välja mis tahes taustalt seadmes töötava tehisintellektiga ja laadi alla läbipaistev PNG."
-    },
     "image-upscale": {
       "name": "Pildi suurendamine tehisintellektiga",
       "desc": "Suurenda pilte 2× või 4× ja teravda detaile tehisintellektiga. Sobib väikestele, uduste või vanade fotode jaoks."
@@ -587,7 +583,32 @@
       "err.notImage": "See fail pole pilt.",
       "err.tooBig": "Pilt on suurem kui 40 MB.",
       "canvas.title": "Klõpsa taustapiirkonnal, et selle värvi valida",
-      "toast.pickedBg": "Taustavärv valitud"
+      "toast.pickedBg": "Taustavärv valitud",
+      "ai.dropTitle": "Vali pildid või lohista need siia",
+      "ai.dropHint": "JPG, PNG, WebP. Palju pilte korraga, igaüks alla 40 MB. Võid ka kleepida Ctrl+V-ga.",
+      "ai.model": "Pildi tüüp",
+      "ai.mGeneral": "Ükskõik mis (tooted, lemmikloomad, esemed, inimesed)",
+      "ai.mGeneralD": "kõige täpsem, laadib esimesel korral alla umbes 200 MB mudeli",
+      "ai.mPortrait": "Inimeste portreed",
+      "ai.mPortraitD": "kiire, kerge umbes 25 MB mudel, sobib dokumendi- ja profiilifotodeks",
+      "ai.bg": "Uus taust",
+      "ai.bgNone": "Läbipaistev (PNG)",
+      "ai.bgWhite": "Valge",
+      "ai.bgColor": "Muu värv",
+      "ai.run": "Eemalda taust",
+      "ai.zip": "Laadi kõik alla (.zip)",
+      "ai.note": "Tehisintellekt töötab sinu seadmes (graafikakaardiga, kui brauser toetab WebGPU-d); pilte ei saadeta kuhugi. Mudel laaditakse alla ainult esimesel korral ja brauser salvestab selle vahemällu. Vanematel arvutitel või telefonidel võib ühe pildi töötlemine võtta 10–60 sekundit. Lihtsa valge tausta jaoks on pildi tausta eemaldamise tööriist kiirem.",
+      "ai.download": "Laadi alla",
+      "ai.tooBig": "suurem kui 40 MB",
+      "ai.suffix": "ilma-taustata",
+      "ai.loadingLib": "Tehisintellekti mootori laadimine…",
+      "ai.loadingModel": "Tehisintellekti mudeli allalaadimine (ainult esimesel korral)…",
+      "ai.working": "Pildi töötlemine",
+      "ai.errImg": "Seda pilti ei õnnestunud töödelda",
+      "ai.done": "Valmis!",
+      "ai.err": "Selles brauseris ei saa tehisintellekt töötada. Proovi uuemat Chrome'i või Edge'i.",
+      "ai.zipName": "taust-eemaldatud",
+      "tab.simple": "Ühevärviline taust (kiire)"
     },
     "attendance": {
       "add.label": "Lisa õpilane",
@@ -2441,32 +2462,6 @@
       "errNet": "Dekooderit ei õnnestunud alla laadida. Kontrolli ühendust ja proovi uuesti.",
       "errDecode": "Seda fotot ei õnnestunud lugeda (kahjustatud fail või toetamata HEIC-variant).",
       "zipName": "teisendatud-heic-fotod"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Vali pildid või lohista need siia",
-      "dropHint": "JPG, PNG, WebP. Palju pilte korraga, igaüks alla 40 MB. Võid ka kleepida Ctrl+V-ga.",
-      "model": "Pildi tüüp",
-      "mGeneral": "Ükskõik mis (tooted, lemmikloomad, esemed, inimesed)",
-      "mGeneralD": "kõige täpsem, laadib esimesel korral alla umbes 200 MB mudeli",
-      "mPortrait": "Inimeste portreed",
-      "mPortraitD": "kiire, kerge umbes 25 MB mudel, sobib dokumendi- ja profiilifotodeks",
-      "bg": "Uus taust",
-      "bgNone": "Läbipaistev (PNG)",
-      "bgWhite": "Valge",
-      "bgColor": "Muu värv",
-      "run": "Eemalda taust",
-      "zip": "Laadi kõik alla (.zip)",
-      "note": "Tehisintellekt töötab sinu seadmes (graafikakaardiga, kui brauser toetab WebGPU-d); pilte ei saadeta kuhugi. Mudel laaditakse alla ainult esimesel korral ja brauser salvestab selle vahemällu. Vanematel arvutitel või telefonidel võib ühe pildi töötlemine võtta 10–60 sekundit. Lihtsa valge tausta jaoks on pildi tausta eemaldamise tööriist kiirem.",
-      "download": "Laadi alla",
-      "tooBig": "suurem kui 40 MB",
-      "suffix": "ilma-taustata",
-      "loadingLib": "Tehisintellekti mootori laadimine…",
-      "loadingModel": "Tehisintellekti mudeli allalaadimine (ainult esimesel korral)…",
-      "working": "Pildi töötlemine",
-      "errImg": "Seda pilti ei õnnestunud töödelda",
-      "done": "Valmis!",
-      "err": "Selles brauseris ei saa tehisintellekt töötada. Proovi uuemat Chrome'i või Edge'i.",
-      "zipName": "taust-eemaldatud"
     },
     "image-upscale": {
       "dropTitle": "Vali pilt või lohista see siia",

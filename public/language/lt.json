@@ -434,10 +434,6 @@
       "name": "HEIC į JPG",
       "desc": "Konvertuokite iPhone HEIC nuotraukas į JPG arba PNG, kad atsidarytų bet kur. Daug failų vienu metu."
     },
-    "ai-bg-remove": {
-      "name": "Fono šalinimas su DI",
-      "desc": "Iškirpkite žmones, produktus ir augintinius iš bet kokio fono įrenginyje veikiančiu DI ir atsisiųskite permatomą PNG."
-    },
     "image-upscale": {
       "name": "Vaizdo didinimas su DI",
       "desc": "Padidinkite vaizdus 2× arba 4× ir paryškinkite detales su DI. Puikiai tinka mažoms, neryškioms ar senoms nuotraukoms."
@@ -587,7 +583,32 @@
       "err.notImage": "Šis failas nėra vaizdas.",
       "err.tooBig": "Vaizdas didesnis nei 40 MB.",
       "canvas.title": "Spustelėkite fono sritį, kad pasirinktumėte jos spalvą",
-      "toast.pickedBg": "Fono spalva pasirinkta"
+      "toast.pickedBg": "Fono spalva pasirinkta",
+      "ai.dropTitle": "Pasirinkite vaizdus arba nutempkite juos čia",
+      "ai.dropHint": "JPG, PNG, WebP. Daug vaizdų vienu metu, kiekvienas iki 40 MB. Taip pat galite įklijuoti su Ctrl+V.",
+      "ai.model": "Vaizdo tipas",
+      "ai.mGeneral": "Bet kas (produktai, augintiniai, daiktai, žmonės)",
+      "ai.mGeneralD": "tiksliausias, pirmą kartą atsisiunčia apie 200 MB modelį",
+      "ai.mPortrait": "Žmonių portretai",
+      "ai.mPortraitD": "greitas, lengvas apie 25 MB modelis, puikiai tinka dokumentų ir profilio nuotraukoms",
+      "ai.bg": "Naujas fonas",
+      "ai.bgNone": "Permatomas (PNG)",
+      "ai.bgWhite": "Baltas",
+      "ai.bgColor": "Kita spalva",
+      "ai.run": "Pašalinti foną",
+      "ai.zip": "Atsisiųsti viską (.zip)",
+      "ai.note": "DI veikia jūsų įrenginyje (su vaizdo plokšte, jei naršyklė palaiko WebGPU); vaizdai niekur nesiunčiami. Modelis atsisiunčiamas tik pirmą kartą ir išsaugomas naršyklės podėlyje. Senesniuose kompiuteriuose ar telefonuose vienam vaizdui gali prireikti 10–60 sekundžių. Paprastam baltam fonui greitesnis yra vaizdo fono šalinimo įrankis.",
+      "ai.download": "Atsisiųsti",
+      "ai.tooBig": "didesnis nei 40 MB",
+      "ai.suffix": "be-fono",
+      "ai.loadingLib": "Įkeliamas DI modulis…",
+      "ai.loadingModel": "Atsisiunčiamas DI modelis (tik pirmą kartą)…",
+      "ai.working": "Apdorojamas vaizdas",
+      "ai.errImg": "Nepavyko apdoroti šio vaizdo",
+      "ai.done": "Atlikta!",
+      "ai.err": "Šioje naršyklėje DI paleisti nepavyko. Bandykite naujesnę Chrome ar Edge.",
+      "ai.zipName": "fonas-pasalintas",
+      "tab.simple": "Vienspalvis fonas (greitai)"
     },
     "attendance": {
       "add.label": "Pridėti mokinį",
@@ -2441,32 +2462,6 @@
       "errNet": "Nepavyko atsisiųsti dekoderio. Patikrinkite ryšį ir bandykite dar kartą.",
       "errDecode": "Nepavyko perskaityti šios nuotraukos (sugadintas failas arba nepalaikomas HEIC variantas).",
       "zipName": "konvertuotos-heic-nuotraukos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Pasirinkite vaizdus arba nutempkite juos čia",
-      "dropHint": "JPG, PNG, WebP. Daug vaizdų vienu metu, kiekvienas iki 40 MB. Taip pat galite įklijuoti su Ctrl+V.",
-      "model": "Vaizdo tipas",
-      "mGeneral": "Bet kas (produktai, augintiniai, daiktai, žmonės)",
-      "mGeneralD": "tiksliausias, pirmą kartą atsisiunčia apie 200 MB modelį",
-      "mPortrait": "Žmonių portretai",
-      "mPortraitD": "greitas, lengvas apie 25 MB modelis, puikiai tinka dokumentų ir profilio nuotraukoms",
-      "bg": "Naujas fonas",
-      "bgNone": "Permatomas (PNG)",
-      "bgWhite": "Baltas",
-      "bgColor": "Kita spalva",
-      "run": "Pašalinti foną",
-      "zip": "Atsisiųsti viską (.zip)",
-      "note": "DI veikia jūsų įrenginyje (su vaizdo plokšte, jei naršyklė palaiko WebGPU); vaizdai niekur nesiunčiami. Modelis atsisiunčiamas tik pirmą kartą ir išsaugomas naršyklės podėlyje. Senesniuose kompiuteriuose ar telefonuose vienam vaizdui gali prireikti 10–60 sekundžių. Paprastam baltam fonui greitesnis yra vaizdo fono šalinimo įrankis.",
-      "download": "Atsisiųsti",
-      "tooBig": "didesnis nei 40 MB",
-      "suffix": "be-fono",
-      "loadingLib": "Įkeliamas DI modulis…",
-      "loadingModel": "Atsisiunčiamas DI modelis (tik pirmą kartą)…",
-      "working": "Apdorojamas vaizdas",
-      "errImg": "Nepavyko apdoroti šio vaizdo",
-      "done": "Atlikta!",
-      "err": "Šioje naršyklėje DI paleisti nepavyko. Bandykite naujesnę Chrome ar Edge.",
-      "zipName": "fonas-pasalintas"
     },
     "image-upscale": {
       "dropTitle": "Pasirinkite vaizdą arba nutempkite jį čia",

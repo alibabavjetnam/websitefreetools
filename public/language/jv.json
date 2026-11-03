@@ -434,10 +434,6 @@
       "name": "HEIC menyang JPG",
       "desc": "Owahi foto HEIC iPhone dadi JPG utawa PNG supaya bisa dibukak ing ngendi wae. Konversi masal didhukung."
     },
-    "ai-bg-remove": {
-      "name": "Penghapus Latar Mburi AI",
-      "desc": "Potong wong, produk lan kewan peliharaan saka latar mburi apa wae nganggo AI ing piranti lan undhuh PNG transparan."
-    },
     "image-upscale": {
       "name": "Pembesar Gambar AI",
       "desc": "Gedhekake gambar 2× utawa 4× lan jelasake rincian nganggo AI. Apik kanggo foto cilik, burem utawa lawas."
@@ -587,7 +583,32 @@
       "err.notImage": "Berkas iki udu gambar.",
       "err.tooBig": "Gambar luwih gedhe saka 40 MB.",
       "canvas.title": "Klik area latar mburi kanggo milih warnane",
-      "toast.pickedBg": "Warna latar mburi dipilih"
+      "toast.pickedBg": "Warna latar mburi dipilih",
+      "ai.dropTitle": "Pilih gambar utawa seret mrene",
+      "ai.dropHint": "JPG, PNG, WebP. Akeh gambar bebarengan, saben-saben kurang saka 40 MB. Sampeyan uga bisa nempel nganggo Ctrl+V.",
+      "ai.model": "Jinis gambar",
+      "ai.mGeneral": "Apa wae (produk, kewan peliharaan, barang, wong)",
+      "ai.mGeneralD": "paling akurat, ngundhuh model kira-kira 200 MB sepisanan",
+      "ai.mPortrait": "Potret wong",
+      "ai.mPortraitD": "cepet, model entheng kira-kira 25 MB, apik kanggo foto ID lan foto profil",
+      "ai.bg": "Latar mburi anyar",
+      "ai.bgNone": "Transparan (PNG)",
+      "ai.bgWhite": "Putih",
+      "ai.bgColor": "Warna liya",
+      "ai.run": "Busak latar mburi",
+      "ai.zip": "Undhuh kabeh (.zip)",
+      "ai.note": "AI mlaku ing piranti sampeyan (nganggo kertu grafis yen browser ndhukung WebGPU); gambar ora tau dikirim menyang ngendi wae. Model diundhuh mung sepisanan lan disimpen browser sampeyan. Komputer utawa telpon lawas bisa butuh 10–60 detik saben gambar. Kanggo latar mburi putih sing prasaja, piranti Busak Latar Mburi Gambar luwih cepet.",
+      "ai.download": "Undhuh",
+      "ai.tooBig": "luwih saka 40 MB",
+      "ai.suffix": "tanpa-latar",
+      "ai.loadingLib": "Ngemot runtime AI…",
+      "ai.loadingModel": "Ngundhuh model AI (sepisanan wae)…",
+      "ai.working": "Ngolah gambar",
+      "ai.errImg": "Ora bisa ngolah gambar iki",
+      "ai.done": "Rampung!",
+      "ai.err": "Ora bisa mlakokake AI ing browser iki. Coba Chrome utawa Edge sing anyar.",
+      "ai.zipName": "latar-dibusak",
+      "tab.simple": "Latar sawarna (cepet)"
     },
     "attendance": {
       "add.label": "Tambah siswa",
@@ -3356,32 +3377,6 @@
       "errNet": "Ora bisa ngundhuh dekoder. Priksa sambungan lan coba maneh.",
       "errDecode": "Ora bisa maca foto iki (berkas rusak utawa varian HEIC sing ora didhukung).",
       "zipName": "foto-heic-diowahi"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Pilih gambar utawa seret mrene",
-      "dropHint": "JPG, PNG, WebP. Akeh gambar bebarengan, saben-saben kurang saka 40 MB. Sampeyan uga bisa nempel nganggo Ctrl+V.",
-      "model": "Jinis gambar",
-      "mGeneral": "Apa wae (produk, kewan peliharaan, barang, wong)",
-      "mGeneralD": "paling akurat, ngundhuh model kira-kira 200 MB sepisanan",
-      "mPortrait": "Potret wong",
-      "mPortraitD": "cepet, model entheng kira-kira 25 MB, apik kanggo foto ID lan foto profil",
-      "bg": "Latar mburi anyar",
-      "bgNone": "Transparan (PNG)",
-      "bgWhite": "Putih",
-      "bgColor": "Warna liya",
-      "run": "Busak latar mburi",
-      "zip": "Undhuh kabeh (.zip)",
-      "note": "AI mlaku ing piranti sampeyan (nganggo kertu grafis yen browser ndhukung WebGPU); gambar ora tau dikirim menyang ngendi wae. Model diundhuh mung sepisanan lan disimpen browser sampeyan. Komputer utawa telpon lawas bisa butuh 10–60 detik saben gambar. Kanggo latar mburi putih sing prasaja, piranti Busak Latar Mburi Gambar luwih cepet.",
-      "download": "Undhuh",
-      "tooBig": "luwih saka 40 MB",
-      "suffix": "tanpa-latar",
-      "loadingLib": "Ngemot runtime AI…",
-      "loadingModel": "Ngundhuh model AI (sepisanan wae)…",
-      "working": "Ngolah gambar",
-      "errImg": "Ora bisa ngolah gambar iki",
-      "done": "Rampung!",
-      "err": "Ora bisa mlakokake AI ing browser iki. Coba Chrome utawa Edge sing anyar.",
-      "zipName": "latar-dibusak"
     },
     "image-upscale": {
       "dropTitle": "Pilih gambar utawa seret mrene",

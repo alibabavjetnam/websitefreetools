@@ -434,10 +434,6 @@
       "name": "HEIC a JPG",
       "desc": "Converteix les fotos HEIC de l'iPhone a JPG o PNG perquè s'obrin a qualsevol lloc. Diverses alhora."
     },
-    "ai-bg-remove": {
-      "name": "Eliminar el fons amb IA",
-      "desc": "Retalla persones, productes i mascotes de qualsevol fons amb IA al dispositiu i baixa un PNG transparent."
-    },
     "image-upscale": {
       "name": "Ampliar imatges amb IA",
       "desc": "Amplia imatges 2× o 4× i millora la nitidesa dels detalls amb IA. Ideal per a fotos petites, borroses o antigues."
@@ -587,7 +583,32 @@
       "err.notImage": "Aquest fitxer no és una imatge.",
       "err.tooBig": "La imatge és més gran de 40 MB.",
       "canvas.title": "Fes clic a la zona de fons per triar-ne el color",
-      "toast.pickedBg": "Color de fons triat"
+      "toast.pickedBg": "Color de fons triat",
+      "ai.dropTitle": "Tria imatges o arrossega-les aquí",
+      "ai.dropHint": "JPG, PNG, WebP. Moltes imatges alhora, cadascuna de menys de 40 MB. També les pots enganxar amb Ctrl+V.",
+      "ai.model": "Tipus d'imatge",
+      "ai.mGeneral": "Qualsevol cosa (productes, mascotes, objectes, persones)",
+      "ai.mGeneralD": "el més precís; la primera vegada baixa un model d'uns 200 MB",
+      "ai.mPortrait": "Retrats de persones",
+      "ai.mPortraitD": "model ràpid i lleuger d'uns 25 MB, ideal per a fotos de carnet i de perfil",
+      "ai.bg": "Fons nou",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "Blanc",
+      "ai.bgColor": "Un altre color",
+      "ai.run": "Elimina el fons",
+      "ai.zip": "Baixa-ho tot (.zip)",
+      "ai.note": "La IA s'executa al teu dispositiu (amb la targeta gràfica si el navegador admet WebGPU); les imatges no s'envien enlloc. El model només es baixa la primera vegada i el navegador el desa a la memòria cau. En ordinadors o mòbils antics pot trigar 10–60 segons per imatge. Per a fons blancs senzills, l'eina Eliminar el fons d'una imatge és més ràpida.",
+      "ai.download": "Baixa",
+      "ai.tooBig": "de més de 40 MB",
+      "ai.suffix": "sense-fons",
+      "ai.loadingLib": "S'està carregant el motor d'IA…",
+      "ai.loadingModel": "S'està baixant el model d'IA (només la primera vegada)…",
+      "ai.working": "S'està processant la imatge",
+      "ai.errImg": "No s'ha pogut processar aquesta imatge",
+      "ai.done": "Fet!",
+      "ai.err": "No s'ha pogut executar la IA en aquest navegador. Prova amb un Chrome o Edge recent.",
+      "ai.zipName": "fons-eliminat",
+      "tab.simple": "Fons llis (ràpid)"
     },
     "attendance": {
       "add.label": "Afegeix alumne",
@@ -2441,32 +2462,6 @@
       "errNet": "No s'ha pogut baixar el descodificador. Comprova la connexió i torna-ho a provar.",
       "errDecode": "No s'ha pogut llegir aquesta foto (fitxer malmès o variant HEIC no compatible).",
       "zipName": "fotos-heic-convertides"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Tria imatges o arrossega-les aquí",
-      "dropHint": "JPG, PNG, WebP. Moltes imatges alhora, cadascuna de menys de 40 MB. També les pots enganxar amb Ctrl+V.",
-      "model": "Tipus d'imatge",
-      "mGeneral": "Qualsevol cosa (productes, mascotes, objectes, persones)",
-      "mGeneralD": "el més precís; la primera vegada baixa un model d'uns 200 MB",
-      "mPortrait": "Retrats de persones",
-      "mPortraitD": "model ràpid i lleuger d'uns 25 MB, ideal per a fotos de carnet i de perfil",
-      "bg": "Fons nou",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "Blanc",
-      "bgColor": "Un altre color",
-      "run": "Elimina el fons",
-      "zip": "Baixa-ho tot (.zip)",
-      "note": "La IA s'executa al teu dispositiu (amb la targeta gràfica si el navegador admet WebGPU); les imatges no s'envien enlloc. El model només es baixa la primera vegada i el navegador el desa a la memòria cau. En ordinadors o mòbils antics pot trigar 10–60 segons per imatge. Per a fons blancs senzills, l'eina Eliminar el fons d'una imatge és més ràpida.",
-      "download": "Baixa",
-      "tooBig": "de més de 40 MB",
-      "suffix": "sense-fons",
-      "loadingLib": "S'està carregant el motor d'IA…",
-      "loadingModel": "S'està baixant el model d'IA (només la primera vegada)…",
-      "working": "S'està processant la imatge",
-      "errImg": "No s'ha pogut processar aquesta imatge",
-      "done": "Fet!",
-      "err": "No s'ha pogut executar la IA en aquest navegador. Prova amb un Chrome o Edge recent.",
-      "zipName": "fons-eliminat"
     },
     "image-upscale": {
       "dropTitle": "Tria una imatge o arrossega-la aquí",

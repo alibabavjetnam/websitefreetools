@@ -434,10 +434,6 @@
       "name": "Da HEIC a JPG",
       "desc": "Converti le foto HEIC dell'iPhone in JPG o PNG per aprirle ovunque. Conversione multipla."
     },
-    "ai-bg-remove": {
-      "name": "Rimozione sfondo con IA",
-      "desc": "Scontorna persone, prodotti e animali da qualsiasi sfondo con l'IA sul dispositivo e scarica un PNG trasparente."
-    },
     "image-upscale": {
       "name": "Ingrandimento immagine con IA",
       "desc": "Ingrandisci le immagini 2× o 4× e rendi nitidi i dettagli con l'IA. Ideale per foto piccole, sfocate o vecchie."
@@ -587,7 +583,32 @@
       "err.notImage": "Questo file non è un'immagine.",
       "err.tooBig": "L'immagine supera i 40 MB.",
       "canvas.title": "Fai clic sull'area di sfondo per sceglierne il colore",
-      "toast.pickedBg": "Colore di sfondo scelto"
+      "toast.pickedBg": "Colore di sfondo scelto",
+      "ai.dropTitle": "Scegli le immagini o trascinale qui",
+      "ai.dropHint": "JPG, PNG, WebP. Più immagini insieme, ognuna sotto i 40 MB. Puoi anche incollare con Ctrl+V.",
+      "ai.model": "Tipo di immagine",
+      "ai.mGeneral": "Qualsiasi (prodotti, animali, oggetti, persone)",
+      "ai.mGeneralD": "il più preciso; la prima volta scarica un modello di circa 200 MB",
+      "ai.mPortrait": "Ritratti di persone",
+      "ai.mPortraitD": "veloce, modello leggero di circa 25 MB, ideale per fototessere e foto profilo",
+      "ai.bg": "Nuovo sfondo",
+      "ai.bgNone": "Trasparente (PNG)",
+      "ai.bgWhite": "Bianco",
+      "ai.bgColor": "Altro colore",
+      "ai.run": "Rimuovi sfondo",
+      "ai.zip": "Scarica tutto (.zip)",
+      "ai.note": "L'IA funziona sul tuo dispositivo (con la scheda grafica se il browser supporta WebGPU); le immagini non vengono mai inviate. Il modello si scarica solo la prima volta e il browser lo conserva. Computer datati o telefoni possono impiegare 10–60 secondi per immagine. Per semplici sfondi bianchi, lo strumento Rimuovi sfondo immagine è più veloce.",
+      "ai.download": "Scarica",
+      "ai.tooBig": "oltre 40 MB",
+      "ai.suffix": "senza-sfondo",
+      "ai.loadingLib": "Caricamento del motore IA…",
+      "ai.loadingModel": "Download del modello IA (solo la prima volta)…",
+      "ai.working": "Elaborazione dell'immagine",
+      "ai.errImg": "Impossibile elaborare questa immagine",
+      "ai.done": "Fatto!",
+      "ai.err": "Impossibile eseguire l'IA in questo browser. Prova una versione recente di Chrome o Edge.",
+      "ai.zipName": "sfondo-rimosso",
+      "tab.simple": "Sfondo tinta unita (veloce)"
     },
     "attendance": {
       "add.label": "Aggiungi studente",
@@ -2441,32 +2462,6 @@
       "errNet": "Impossibile scaricare il decoder. Controlla la connessione e riprova.",
       "errDecode": "Impossibile leggere questa foto (file danneggiato o variante HEIC non supportata).",
       "zipName": "foto-heic-convertite"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Scegli le immagini o trascinale qui",
-      "dropHint": "JPG, PNG, WebP. Più immagini insieme, ognuna sotto i 40 MB. Puoi anche incollare con Ctrl+V.",
-      "model": "Tipo di immagine",
-      "mGeneral": "Qualsiasi (prodotti, animali, oggetti, persone)",
-      "mGeneralD": "il più preciso; la prima volta scarica un modello di circa 200 MB",
-      "mPortrait": "Ritratti di persone",
-      "mPortraitD": "veloce, modello leggero di circa 25 MB, ideale per fototessere e foto profilo",
-      "bg": "Nuovo sfondo",
-      "bgNone": "Trasparente (PNG)",
-      "bgWhite": "Bianco",
-      "bgColor": "Altro colore",
-      "run": "Rimuovi sfondo",
-      "zip": "Scarica tutto (.zip)",
-      "note": "L'IA funziona sul tuo dispositivo (con la scheda grafica se il browser supporta WebGPU); le immagini non vengono mai inviate. Il modello si scarica solo la prima volta e il browser lo conserva. Computer datati o telefoni possono impiegare 10–60 secondi per immagine. Per semplici sfondi bianchi, lo strumento Rimuovi sfondo immagine è più veloce.",
-      "download": "Scarica",
-      "tooBig": "oltre 40 MB",
-      "suffix": "senza-sfondo",
-      "loadingLib": "Caricamento del motore IA…",
-      "loadingModel": "Download del modello IA (solo la prima volta)…",
-      "working": "Elaborazione dell'immagine",
-      "errImg": "Impossibile elaborare questa immagine",
-      "done": "Fatto!",
-      "err": "Impossibile eseguire l'IA in questo browser. Prova una versione recente di Chrome o Edge.",
-      "zipName": "sfondo-rimosso"
     },
     "image-upscale": {
       "dropTitle": "Scegli un'immagine o trascinala qui",

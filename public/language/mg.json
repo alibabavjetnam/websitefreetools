@@ -434,10 +434,6 @@
       "name": "HEIC ho JPG",
       "desc": "Ovay ho JPG na PNG ny sary HEIC avy amin'ny iPhone mba hosokafana na aiza na aiza. Azo ovaina miaraka maro."
     },
-    "ai-bg-remove": {
-      "name": "Mpanala foto-sary AI",
-      "desc": "Tapaho ny olona, entana ary biby fiompy avy amin'ny foto-sary rehetra amin'ny AI ao amin'ny fitaovana ary alaivo PNG mangarahara."
-    },
     "image-upscale": {
       "name": "Mpampitombo habe sary AI",
       "desc": "Ampitomboy 2× na 4× ny sary ary hamafiso ny antsipirihany amin'ny AI. Tsara ho an'ny sary kely, malaza na taloha."
@@ -587,7 +583,32 @@
       "err.notImage": "Tsy sary ity rakitra ity.",
       "err.tooBig": "Mihoatra ny 40 MB ny sary.",
       "canvas.title": "Tsindrio ny faritry ny foto-sary mba hisafidianana ny lokony",
-      "toast.pickedBg": "Voafidy ny lokon'ny foto-sary"
+      "toast.pickedBg": "Voafidy ny lokon'ny foto-sary",
+      "ai.dropTitle": "Misafidiya sary na alaviro eto",
+      "ai.dropHint": "JPG, PNG, WebP. Sary maro miaraka, latsaky ny 40 MB avy. Azonao ametaka koa amin'ny Ctrl+V.",
+      "ai.model": "Karazan'ny sary",
+      "ai.mGeneral": "Na inona na inona (entana, biby fiompy, zavatra, olona)",
+      "ai.mGeneralD": "marina indrindra, mampidina modely 200 MB eo ho eo amin'ny voalohany",
+      "ai.mPortrait": "Sarin'olona",
+      "ai.mPortraitD": "haingana, modely maivana 25 MB eo ho eo, tsara ho an'ny sary kara-panondro sy sarin'ny mombamomba",
+      "ai.bg": "Foto-sary vaovao",
+      "ai.bgNone": "Mangarahara (PNG)",
+      "ai.bgWhite": "Fotsy",
+      "ai.bgColor": "Loko hafa",
+      "ai.run": "Esory ny foto-sary",
+      "ai.zip": "Alaivo daholo (.zip)",
+      "ai.note": "Mandeha ao amin'ny fitaovanao ny AI (mampiasa ny karatra sarinao raha manohana WebGPU ny navigateur); tsy alefa na aiza na aiza ny sary. Ny modely dia alaina amin'ny voalohany ihany ary tehirizin'ny navigateur-nao. Ny ordinatera na finday taloha dia mety haharitra segondra 10–60 isaky ny sary. Ho an'ny foto-sary fotsy tsotra dia haingana kokoa ny fitaovana Esory ny foto-sary.",
+      "ai.download": "Alaivo",
+      "ai.tooBig": "mihoatra ny 40 MB",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "Mampiditra ny AI runtime…",
+      "ai.loadingModel": "Mampidina ny modely AI (amin'ny voalohany ihany)…",
+      "ai.working": "Mikarakara ny sary",
+      "ai.errImg": "Tsy voakarakara ity sary ity",
+      "ai.done": "Vita!",
+      "ai.err": "Tsy afaka nampandeha ny AI ao amin'ity navigateur ity. Andramo Chrome na Edge vaovao.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Aloka tokana loko (haingana)"
     },
     "attendance": {
       "add.label": "Ampio mpianatra",
@@ -3356,32 +3377,6 @@
       "errNet": "Tsy voaaka ny mpamaha. Jereo ny fifandraisanao ary andramo indray.",
       "errDecode": "Tsy voavaky ity sary ity (rakitra simba na karazana HEIC tsy tohanana).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Misafidiya sary na alaviro eto",
-      "dropHint": "JPG, PNG, WebP. Sary maro miaraka, latsaky ny 40 MB avy. Azonao ametaka koa amin'ny Ctrl+V.",
-      "model": "Karazan'ny sary",
-      "mGeneral": "Na inona na inona (entana, biby fiompy, zavatra, olona)",
-      "mGeneralD": "marina indrindra, mampidina modely 200 MB eo ho eo amin'ny voalohany",
-      "mPortrait": "Sarin'olona",
-      "mPortraitD": "haingana, modely maivana 25 MB eo ho eo, tsara ho an'ny sary kara-panondro sy sarin'ny mombamomba",
-      "bg": "Foto-sary vaovao",
-      "bgNone": "Mangarahara (PNG)",
-      "bgWhite": "Fotsy",
-      "bgColor": "Loko hafa",
-      "run": "Esory ny foto-sary",
-      "zip": "Alaivo daholo (.zip)",
-      "note": "Mandeha ao amin'ny fitaovanao ny AI (mampiasa ny karatra sarinao raha manohana WebGPU ny navigateur); tsy alefa na aiza na aiza ny sary. Ny modely dia alaina amin'ny voalohany ihany ary tehirizin'ny navigateur-nao. Ny ordinatera na finday taloha dia mety haharitra segondra 10–60 isaky ny sary. Ho an'ny foto-sary fotsy tsotra dia haingana kokoa ny fitaovana Esory ny foto-sary.",
-      "download": "Alaivo",
-      "tooBig": "mihoatra ny 40 MB",
-      "suffix": "no-bg",
-      "loadingLib": "Mampiditra ny AI runtime…",
-      "loadingModel": "Mampidina ny modely AI (amin'ny voalohany ihany)…",
-      "working": "Mikarakara ny sary",
-      "errImg": "Tsy voakarakara ity sary ity",
-      "done": "Vita!",
-      "err": "Tsy afaka nampandeha ny AI ao amin'ity navigateur ity. Andramo Chrome na Edge vaovao.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Misafidiya sary na alaviro eto",

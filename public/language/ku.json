@@ -434,10 +434,6 @@
       "name": "HEIC → JPG",
       "desc": "Wêneyên HEIC yên iPhone veguherîne JPG an PNG da ku li her derê vebin. Veguherîna bi kom piştgirî dike."
     },
-    "ai-bg-remove": {
-      "name": "Rakirina paşxaneyê bi AI",
-      "desc": "Mirov, berhem û heywanên malê ji her paşxaneyê bi AI ya li ser cîhaza te bibire û PNG-a zelal dakêşe."
-    },
     "image-upscale": {
       "name": "Mezinkirina wêneyê bi AI",
       "desc": "Wêneyan 2× an 4× mezin bike û hûrguliyan bi AI zelal bike. Ji bo wêneyên piçûk, nezelal an kevn pir baş e."
@@ -587,7 +583,32 @@
       "err.notImage": "Ev pel ne wêne ye.",
       "err.tooBig": "Wêne ji 40 MB mezintir e.",
       "canvas.title": "Ji bo hilbijartina rengê wê li beşeke paşxaneyê bitikîne",
-      "toast.pickedBg": "Rengê paşxaneyê yê hilbijartî"
+      "toast.pickedBg": "Rengê paşxaneyê yê hilbijartî",
+      "ai.dropTitle": "Wêneyan hilbijêre an bikişîne vir",
+      "ai.dropHint": "JPG, PNG, WebP. Gelek wêne bi carekê, her yek kêmtir ji 40 MB. Tu dikarî bi Ctrl+V jî bixî.",
+      "ai.model": "Cureyê wêneyê",
+      "ai.mGeneral": "Her tişt (berhem, heywanên malê, tişt, mirov)",
+      "ai.mGeneralD": "herî rast, cara yekem modelek nêzîkî 200 MB dakêşe",
+      "ai.mPortrait": "Portreyên mirovan",
+      "ai.mPortraitD": "bilez, modeleke sivik a nêzîkî 25 MB, ji bo wêneyên nasnameyê û profîlê pir baş e",
+      "ai.bg": "Paşxaneya nû",
+      "ai.bgNone": "Zelal (PNG)",
+      "ai.bgWhite": "Spî",
+      "ai.bgColor": "Rengekî din",
+      "ai.run": "Paşxaneyê rake",
+      "ai.zip": "Hemûyan dakêşe (.zip)",
+      "ai.note": "AI li ser cîhaza te dixebite (heke gerok piştgiriya WebGPU bike, karta grafîkê bikar tîne); wêne qet naçin tu derê. Model tenê cara yekem tê dakêşan û di bîra demkî ya gerokê de tê tomarkirin. Li ser komputer an telefonên kevn xebitandina wêneyekî dikare 10–60 saniyeyan bigire. Ji bo paşxaneyeke spî ya hêsan amûra Paşxaneya wêneyê rake zûtir e.",
+      "ai.download": "Dakêşe",
+      "ai.tooBig": "ji 40 MB mezintir e",
+      "ai.suffix": "bê-paşxane",
+      "ai.loadingLib": "Motora AI tê barkirin…",
+      "ai.loadingModel": "Modela AI tê dakêşan (tenê cara yekem)…",
+      "ai.working": "Wêne tê xebitandin",
+      "ai.errImg": "Ev wêne nehat xebitandin",
+      "ai.done": "Qediya!",
+      "ai.err": "AI di vê gerokê de dest pê nekir. Chrome an Edge ya nû biceribîne.",
+      "ai.zipName": "paşxane-rakirî",
+      "tab.simple": "Paşxaneya yekreng (bilez)"
     },
     "attendance": {
       "add.label": "Xwendekar zêde bike",
@@ -3356,32 +3377,6 @@
       "errNet": "Dekoder nehat dakêşan. Girêdana xwe kontrol bike û dîsa biceribîne.",
       "errDecode": "Ev wêne nehat xwendin (pelê xera an cureyekî HEIC yê nayê piştgirîkirin).",
       "zipName": "wêneyên-heic-veguherandî"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Wêneyan hilbijêre an bikişîne vir",
-      "dropHint": "JPG, PNG, WebP. Gelek wêne bi carekê, her yek kêmtir ji 40 MB. Tu dikarî bi Ctrl+V jî bixî.",
-      "model": "Cureyê wêneyê",
-      "mGeneral": "Her tişt (berhem, heywanên malê, tişt, mirov)",
-      "mGeneralD": "herî rast, cara yekem modelek nêzîkî 200 MB dakêşe",
-      "mPortrait": "Portreyên mirovan",
-      "mPortraitD": "bilez, modeleke sivik a nêzîkî 25 MB, ji bo wêneyên nasnameyê û profîlê pir baş e",
-      "bg": "Paşxaneya nû",
-      "bgNone": "Zelal (PNG)",
-      "bgWhite": "Spî",
-      "bgColor": "Rengekî din",
-      "run": "Paşxaneyê rake",
-      "zip": "Hemûyan dakêşe (.zip)",
-      "note": "AI li ser cîhaza te dixebite (heke gerok piştgiriya WebGPU bike, karta grafîkê bikar tîne); wêne qet naçin tu derê. Model tenê cara yekem tê dakêşan û di bîra demkî ya gerokê de tê tomarkirin. Li ser komputer an telefonên kevn xebitandina wêneyekî dikare 10–60 saniyeyan bigire. Ji bo paşxaneyeke spî ya hêsan amûra Paşxaneya wêneyê rake zûtir e.",
-      "download": "Dakêşe",
-      "tooBig": "ji 40 MB mezintir e",
-      "suffix": "bê-paşxane",
-      "loadingLib": "Motora AI tê barkirin…",
-      "loadingModel": "Modela AI tê dakêşan (tenê cara yekem)…",
-      "working": "Wêne tê xebitandin",
-      "errImg": "Ev wêne nehat xebitandin",
-      "done": "Qediya!",
-      "err": "AI di vê gerokê de dest pê nekir. Chrome an Edge ya nû biceribîne.",
-      "zipName": "paşxane-rakirî"
     },
     "image-upscale": {
       "dropTitle": "Wêneyekî hilbijêre an bikişîne vir",

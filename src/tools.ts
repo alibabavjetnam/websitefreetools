@@ -48,7 +48,7 @@ export const TOOLS: ToolInfo[] = [
   tool('image-convert', 'image', 'Nén ảnh', 'Giảm dung lượng ảnh, thu nhỏ kích thước nhiều ảnh cùng lúc để đăng web, gửi email nhanh hơn.'),
   tool('image-format', 'image', 'Chuyển đổi định dạng ảnh', 'Đổi ảnh qua lại giữa JPG, PNG, WebP, AVIF, BMP, ICO (favicon) cho website, ứng dụng hoặc lưu trữ.'),
   tool('image-base64', 'image', 'Ảnh sang Base64', 'Chuyển ảnh thành chuỗi Base64 để nhúng vào HTML, CSS, mã nguồn, và đổi Base64 ngược lại thành ảnh.'),
-  tool('bg-remove', 'image', 'Xoá nền ảnh', 'Xoá nền trắng hoặc nền một màu khỏi ảnh sản phẩm, logo, ảnh đại diện. Xử lý tức thì ngay trên máy.'),
+  tool('bg-remove', 'image', 'Xoá nền ảnh', 'Xoá nền trắng, nền một màu hoặc mọi loại nền (AI chạy ngay trên máy) khỏi ảnh sản phẩm, logo, chân dung, thú cưng, tải PNG nền trong suốt.'),
   tool('watermark', 'image', 'Thêm watermark vào ảnh', 'Chèn chữ, logo hoặc dấu bản quyền lên một hoặc nhiều ảnh cùng lúc.'),
 
   // Xử lý file
@@ -113,7 +113,6 @@ export const TOOLS: ToolInfo[] = [
   tool('image-crop', 'image', 'Cắt ảnh', 'Cắt ảnh theo khung tự chọn hoặc tỉ lệ 1:1, 4:3, 16:9, 9:16, xoay và lật ảnh trước khi tải về.'),
   tool('image-ocr', 'image', 'Lấy chữ từ ảnh (OCR)', 'Nhận dạng chữ trong ảnh chụp, ảnh màn hình, tài liệu scan thành văn bản sao chép được. Hỗ trợ tiếng Việt và hơn 30 ngôn ngữ.'),
   tool('heic-jpg', 'image', 'Chuyển HEIC sang JPG', 'Đổi ảnh HEIC chụp từ iPhone sang JPG hoặc PNG để mở được trên mọi máy, xử lý nhiều ảnh cùng lúc.'),
-  tool('ai-bg-remove', 'image', 'Xoá nền ảnh bằng AI', 'Tách người, sản phẩm, con vật khỏi mọi loại nền bằng trí tuệ nhân tạo chạy ngay trên máy, tải ảnh PNG nền trong suốt.'),
   tool('image-upscale', 'image', 'Làm nét & phóng to ảnh AI', 'Phóng to ảnh gấp 2 hoặc 4 lần và làm nét chi tiết bằng AI, phù hợp ảnh nhỏ, ảnh mờ, ảnh cũ.'),
   tool('image-to-pdf', 'file', 'Ảnh sang PDF', 'Ghép nhiều ảnh JPG, PNG thành một file PDF, sắp xếp thứ tự, chọn khổ giấy và lề.'),
   tool('pdf-to-image', 'file', 'PDF sang ảnh', 'Chuyển từng trang PDF thành ảnh JPG hoặc PNG sắc nét, chọn độ phân giải, tải từng ảnh hoặc cả file ZIP.'),

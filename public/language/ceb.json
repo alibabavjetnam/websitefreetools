@@ -434,10 +434,6 @@
       "name": "HEIC ngadto sa JPG",
       "desc": "I-convert ang HEIC nga litrato sa iPhone ngadto sa JPG o PNG aron mabuksan bisan asa. Motabang ang batch nga pag-convert."
     },
-    "ai-bg-remove": {
-      "name": "AI Background Remover",
-      "desc": "Putla ang mga tawo, produkto ug binuhi gikan sa bisan unsang background gamit ang on-device AI ug i-download ang transparent nga PNG."
-    },
     "image-upscale": {
       "name": "AI Image Upscaler",
       "desc": "Padak-a ang hulagway 2× o 4× ug paklara ang mga detalye gamit ang AI. Maayo alang sa gagmay, malabo o karaang litrato."
@@ -587,7 +583,32 @@
       "err.notImage": "Dili hulagway kini nga file.",
       "err.tooBig": "Mas dako sa 40 MB ang hulagway.",
       "canvas.title": "I-klik ang bahin sa background aron pilion ang kolor niini",
-      "toast.pickedBg": "Napili ang kolor sa background"
+      "toast.pickedBg": "Napili ang kolor sa background",
+      "ai.dropTitle": "Pili og mga hulagway o i-drag kini dinhi",
+      "ai.dropHint": "JPG, PNG, WebP. Daghang hulagway sa usa ka higayon, ang matag usa ubos sa 40 MB. Pwede usab ka mag-paste gamit ang Ctrl+V.",
+      "ai.model": "Tipo sa hulagway",
+      "ai.mGeneral": "Bisan unsa (produkto, binuhi, butang, tawo)",
+      "ai.mGeneralD": "labing saktong, nag-download og modelo nga mga 200 MB sa unang higayon",
+      "ai.mPortrait": "Mga portrait sa tawo",
+      "ai.mPortraitD": "paspas, magaan nga modelo nga mga 25 MB, maayo alang sa ID nga litrato ug profile picture",
+      "ai.bg": "Bag-ong background",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "Puti",
+      "ai.bgColor": "Lain nga kolor",
+      "ai.run": "Tangtanga ang background",
+      "ai.zip": "I-download ang tanan (.zip)",
+      "ai.note": "Ang AI modagan sa imong device (gamit ang imong graphics card kung motabang ang browser sa WebGPU); ang mga hulagway dili gayod ipadala bisan asa. Ang modelo ma-download sa unang higayon ra ug gitipigan sa imong browser. Ang karaang kompyuter o telepono basin mogahin og 10–60 segundo matag hulagway. Alang sa yano nga puti nga background, mas paspas ang Remove Image Background nga himan.",
+      "ai.download": "I-download",
+      "ai.tooBig": "mas dako sa 40 MB",
+      "ai.suffix": "walay-bg",
+      "ai.loadingLib": "Gi-load ang AI runtime…",
+      "ai.loadingModel": "Gi-download ang AI nga modelo (sa unang higayon ra)…",
+      "ai.working": "Giproseso ang hulagway",
+      "ai.errImg": "Dili maproseso kini nga hulagway",
+      "ai.done": "Human na!",
+      "ai.err": "Dili makagamit og AI niini nga browser. Sulayi ang bag-ong Chrome o Edge.",
+      "ai.zipName": "gitangtang-ang-background",
+      "tab.simple": "Usa ka kolor nga background (paspas)"
     },
     "attendance": {
       "add.label": "Dugangi og estudyante",
@@ -3356,32 +3377,6 @@
       "errNet": "Dili ma-download ang decoder. Susiha ang imong koneksyon ug sulayi pag-usab.",
       "errDecode": "Dili mabasa kini nga litrato (nadaot nga file o dili suportado nga HEIC variant).",
       "zipName": "na-convert-nga-HEIC-litrato"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Pili og mga hulagway o i-drag kini dinhi",
-      "dropHint": "JPG, PNG, WebP. Daghang hulagway sa usa ka higayon, ang matag usa ubos sa 40 MB. Pwede usab ka mag-paste gamit ang Ctrl+V.",
-      "model": "Tipo sa hulagway",
-      "mGeneral": "Bisan unsa (produkto, binuhi, butang, tawo)",
-      "mGeneralD": "labing saktong, nag-download og modelo nga mga 200 MB sa unang higayon",
-      "mPortrait": "Mga portrait sa tawo",
-      "mPortraitD": "paspas, magaan nga modelo nga mga 25 MB, maayo alang sa ID nga litrato ug profile picture",
-      "bg": "Bag-ong background",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "Puti",
-      "bgColor": "Lain nga kolor",
-      "run": "Tangtanga ang background",
-      "zip": "I-download ang tanan (.zip)",
-      "note": "Ang AI modagan sa imong device (gamit ang imong graphics card kung motabang ang browser sa WebGPU); ang mga hulagway dili gayod ipadala bisan asa. Ang modelo ma-download sa unang higayon ra ug gitipigan sa imong browser. Ang karaang kompyuter o telepono basin mogahin og 10–60 segundo matag hulagway. Alang sa yano nga puti nga background, mas paspas ang Remove Image Background nga himan.",
-      "download": "I-download",
-      "tooBig": "mas dako sa 40 MB",
-      "suffix": "walay-bg",
-      "loadingLib": "Gi-load ang AI runtime…",
-      "loadingModel": "Gi-download ang AI nga modelo (sa unang higayon ra)…",
-      "working": "Giproseso ang hulagway",
-      "errImg": "Dili maproseso kini nga hulagway",
-      "done": "Human na!",
-      "err": "Dili makagamit og AI niini nga browser. Sulayi ang bag-ong Chrome o Edge.",
-      "zipName": "gitangtang-ang-background"
     },
     "image-upscale": {
       "dropTitle": "Pili og hulagway o i-drag kini dinhi",

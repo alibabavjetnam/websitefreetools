@@ -434,10 +434,6 @@
       "name": "HEIC → JPG",
       "desc": "Guqula izithombe ze-HEIC ze-iPhone zibe yi-JPG noma i-PNG ezivuleka yonke indawo. Isekela ukuguqula ngamaqoqo."
     },
-    "ai-bg-remove": {
-      "name": "Susa ingemuva nge-AI",
-      "desc": "Sika abantu, imikhiqizo nezilwane ezifuywayo kunoma iyiphi ingemuva nge-AI kudivayisi yakho bese ulanda i-PNG esobala."
-    },
     "image-upscale": {
       "name": "Khulisa isithombe nge-AI",
       "desc": "Khulisa izithombe ngo-2× noma ngo-4× futhi ucacise imininingwane nge-AI. Kuhle kakhulu ezithombeni ezincane, ezifiphele noma ezindala."
@@ -587,7 +583,32 @@
       "err.notImage": "Leli fayela akusona isithombe.",
       "err.tooBig": "Isithombe sikhulu kune-40 MB.",
       "canvas.title": "Chofoza ingxenye yengemuva ukuze ukhethe umbala wayo",
-      "toast.pickedBg": "Umbala wengemuva okhethiwe"
+      "toast.pickedBg": "Umbala wengemuva okhethiwe",
+      "ai.dropTitle": "Khetha izithombe noma uzihudulele lapha",
+      "ai.dropHint": "JPG, PNG, WebP. Izithombe eziningi kanyekanye, ngasinye singaphansi kwe-40 MB. Ungabuye unamathisele nge-Ctrl+V.",
+      "ai.model": "Uhlobo lwesithombe",
+      "ai.mGeneral": "Noma yini (imikhiqizo, izilwane ezifuywayo, izinto, abantu)",
+      "ai.mGeneralD": "okunembe kakhulu, kulanda imodeli ecishe ibe ngu-200 MB okokuqala",
+      "ai.mPortrait": "Izithombe zabantu",
+      "ai.mPortraitD": "okusheshayo, imodeli elula ecishe ibe ngu-25 MB, ilungele izithombe zikamazisi nezephrofayela",
+      "ai.bg": "Ingemuva elisha",
+      "ai.bgNone": "Esobala (PNG)",
+      "ai.bgWhite": "Okumhlophe",
+      "ai.bgColor": "Omunye umbala",
+      "ai.run": "Susa ingemuva",
+      "ai.zip": "Landa konke (.zip)",
+      "ai.note": "I-AI isebenza kudivayisi yakho (isebenzisa ikhadi lemidwebo uma isiphequluli sisekela i-WebGPU); izithombe azithunyelwa neze ndawo. Imodeli ilandwa okokuqala kuphela futhi igcinwa kunqolobane yesiphequluli. Kumakhompyutha noma izingcingo ezindala, ukucubungula isithombe esisodwa kungathatha amasekhondi angu-10–60. Engemuva elimhlophe elilula, ithuluzi Lokususa Ingemuva Lesithombe liyashesha.",
+      "ai.download": "Landa",
+      "ai.tooBig": "likhulu kune-40 MB",
+      "ai.suffix": "akunangemuva",
+      "ai.loadingLib": "Kulayishwa injini ye-AI…",
+      "ai.loadingModel": "Kulandwa imodeli ye-AI (okokuqala kuphela)…",
+      "ai.working": "Kucutshungulwa isithombe",
+      "ai.errImg": "Akukwazanga ukucubungula lesi sithombe",
+      "ai.done": "Kuqediwe!",
+      "ai.err": "Akukwazanga ukuqala i-AI kulesi siphequluli. Zama i-Chrome noma i-Edge yakamuva.",
+      "ai.zipName": "ingemuva-lisusiwe",
+      "tab.simple": "Ingemuva yombala owodwa (ngokushesha)"
     },
     "attendance": {
       "add.label": "Engeza umfundi",
@@ -3356,32 +3377,6 @@
       "errNet": "Akukwazanga ukulanda isiqaqi. Hlola uxhumano lwakho bese uzama futhi.",
       "errDecode": "Akukwazanga ukufunda lesi sithombe (ifayela elonakele noma uhlobo lwe-HEIC olungasekelwa).",
       "zipName": "izithombe-ze-heic-eziguquliwe"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Khetha izithombe noma uzihudulele lapha",
-      "dropHint": "JPG, PNG, WebP. Izithombe eziningi kanyekanye, ngasinye singaphansi kwe-40 MB. Ungabuye unamathisele nge-Ctrl+V.",
-      "model": "Uhlobo lwesithombe",
-      "mGeneral": "Noma yini (imikhiqizo, izilwane ezifuywayo, izinto, abantu)",
-      "mGeneralD": "okunembe kakhulu, kulanda imodeli ecishe ibe ngu-200 MB okokuqala",
-      "mPortrait": "Izithombe zabantu",
-      "mPortraitD": "okusheshayo, imodeli elula ecishe ibe ngu-25 MB, ilungele izithombe zikamazisi nezephrofayela",
-      "bg": "Ingemuva elisha",
-      "bgNone": "Esobala (PNG)",
-      "bgWhite": "Okumhlophe",
-      "bgColor": "Omunye umbala",
-      "run": "Susa ingemuva",
-      "zip": "Landa konke (.zip)",
-      "note": "I-AI isebenza kudivayisi yakho (isebenzisa ikhadi lemidwebo uma isiphequluli sisekela i-WebGPU); izithombe azithunyelwa neze ndawo. Imodeli ilandwa okokuqala kuphela futhi igcinwa kunqolobane yesiphequluli. Kumakhompyutha noma izingcingo ezindala, ukucubungula isithombe esisodwa kungathatha amasekhondi angu-10–60. Engemuva elimhlophe elilula, ithuluzi Lokususa Ingemuva Lesithombe liyashesha.",
-      "download": "Landa",
-      "tooBig": "likhulu kune-40 MB",
-      "suffix": "akunangemuva",
-      "loadingLib": "Kulayishwa injini ye-AI…",
-      "loadingModel": "Kulandwa imodeli ye-AI (okokuqala kuphela)…",
-      "working": "Kucutshungulwa isithombe",
-      "errImg": "Akukwazanga ukucubungula lesi sithombe",
-      "done": "Kuqediwe!",
-      "err": "Akukwazanga ukuqala i-AI kulesi siphequluli. Zama i-Chrome noma i-Edge yakamuva.",
-      "zipName": "ingemuva-lisusiwe"
     },
     "image-upscale": {
       "dropTitle": "Khetha isithombe noma usihudulele lapha",

@@ -434,10 +434,6 @@
       "name": "HEIC en JPG",
       "desc": "Convertissez les photos HEIC de l'iPhone en JPG ou PNG pour les ouvrir partout. Conversion par lots."
     },
-    "ai-bg-remove": {
-      "name": "Suppression d'arrière-plan par IA",
-      "desc": "Détourez personnes, produits et animaux de n'importe quel fond grâce à l'IA sur l'appareil et téléchargez un PNG transparent."
-    },
     "image-upscale": {
       "name": "Agrandissement d'image par IA",
       "desc": "Agrandissez les images ×2 ou ×4 et améliorez les détails avec l'IA. Idéal pour les photos petites, floues ou anciennes."
@@ -587,7 +583,32 @@
       "err.notImage": "Ce fichier n'est pas une image.",
       "err.tooBig": "L'image dépasse 40 Mo.",
       "canvas.title": "Cliquez sur la zone de fond pour choisir sa couleur",
-      "toast.pickedBg": "Couleur de fond choisie"
+      "toast.pickedBg": "Couleur de fond choisie",
+      "ai.dropTitle": "Choisissez des images ou glissez-les ici",
+      "ai.dropHint": "JPG, PNG, WebP. Plusieurs images à la fois, moins de 40 Mo chacune. Vous pouvez aussi coller avec Ctrl+V.",
+      "ai.model": "Type d'image",
+      "ai.mGeneral": "Tout (produits, animaux, objets, personnes)",
+      "ai.mGeneralD": "le plus précis, télécharge un modèle d'environ 200 Mo la première fois",
+      "ai.mPortrait": "Portraits de personnes",
+      "ai.mPortraitD": "rapide, modèle léger d'environ 25 Mo, idéal pour photos d'identité et de profil",
+      "ai.bg": "Nouvel arrière-plan",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "Blanc",
+      "ai.bgColor": "Autre couleur",
+      "ai.run": "Supprimer l'arrière-plan",
+      "ai.zip": "Tout télécharger (.zip)",
+      "ai.note": "L'IA fonctionne sur votre appareil (avec la carte graphique si le navigateur prend en charge WebGPU) ; les images ne sont jamais envoyées. Le modèle n'est téléchargé que la première fois puis mis en cache par le navigateur. Les ordinateurs anciens ou les téléphones peuvent prendre 10 à 60 secondes par image. Pour un simple fond blanc, l'outil Supprimer l'arrière-plan d'une image est plus rapide.",
+      "ai.download": "Télécharger",
+      "ai.tooBig": "plus de 40 Mo",
+      "ai.suffix": "sans-fond",
+      "ai.loadingLib": "Chargement du moteur d'IA…",
+      "ai.loadingModel": "Téléchargement du modèle d'IA (première fois seulement)…",
+      "ai.working": "Traitement de l'image",
+      "ai.errImg": "Impossible de traiter cette image",
+      "ai.done": "Terminé !",
+      "ai.err": "Impossible d'exécuter l'IA dans ce navigateur. Essayez une version récente de Chrome ou d'Edge.",
+      "ai.zipName": "fond-supprime",
+      "tab.simple": "Fond uni (rapide)"
     },
     "attendance": {
       "add.label": "Ajouter un élève",
@@ -2441,32 +2462,6 @@
       "errNet": "Impossible de télécharger le décodeur. Vérifiez votre connexion et réessayez.",
       "errDecode": "Impossible de lire cette photo (fichier endommagé ou variante HEIC non prise en charge).",
       "zipName": "photos-heic-converties"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Choisissez des images ou glissez-les ici",
-      "dropHint": "JPG, PNG, WebP. Plusieurs images à la fois, moins de 40 Mo chacune. Vous pouvez aussi coller avec Ctrl+V.",
-      "model": "Type d'image",
-      "mGeneral": "Tout (produits, animaux, objets, personnes)",
-      "mGeneralD": "le plus précis, télécharge un modèle d'environ 200 Mo la première fois",
-      "mPortrait": "Portraits de personnes",
-      "mPortraitD": "rapide, modèle léger d'environ 25 Mo, idéal pour photos d'identité et de profil",
-      "bg": "Nouvel arrière-plan",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "Blanc",
-      "bgColor": "Autre couleur",
-      "run": "Supprimer l'arrière-plan",
-      "zip": "Tout télécharger (.zip)",
-      "note": "L'IA fonctionne sur votre appareil (avec la carte graphique si le navigateur prend en charge WebGPU) ; les images ne sont jamais envoyées. Le modèle n'est téléchargé que la première fois puis mis en cache par le navigateur. Les ordinateurs anciens ou les téléphones peuvent prendre 10 à 60 secondes par image. Pour un simple fond blanc, l'outil Supprimer l'arrière-plan d'une image est plus rapide.",
-      "download": "Télécharger",
-      "tooBig": "plus de 40 Mo",
-      "suffix": "sans-fond",
-      "loadingLib": "Chargement du moteur d'IA…",
-      "loadingModel": "Téléchargement du modèle d'IA (première fois seulement)…",
-      "working": "Traitement de l'image",
-      "errImg": "Impossible de traiter cette image",
-      "done": "Terminé !",
-      "err": "Impossible d'exécuter l'IA dans ce navigateur. Essayez une version récente de Chrome ou d'Edge.",
-      "zipName": "fond-supprime"
     },
     "image-upscale": {
       "dropTitle": "Choisissez une image ou glissez-la ici",

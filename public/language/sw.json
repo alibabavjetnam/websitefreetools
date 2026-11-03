@@ -434,10 +434,6 @@
       "name": "HEIC kuwa JPG",
       "desc": "Badilisha picha za HEIC za iPhone kuwa JPG au PNG ili zifunguke popote. Nyingi kwa pamoja."
     },
-    "ai-bg-remove": {
-      "name": "Kiondoa mandharinyuma kwa AI",
-      "desc": "Kata watu, bidhaa na wanyama vipenzi kutoka mandharinyuma yoyote kwa AI ndani ya kifaa na upakue PNG angavu."
-    },
     "image-upscale": {
       "name": "Kikuzaji picha kwa AI",
       "desc": "Kuza picha mara 2× au 4× na noa maelezo kwa AI. Bora kwa picha ndogo, zenye ukungu au za zamani."
@@ -587,7 +583,32 @@
       "err.notImage": "Faili hii si picha.",
       "err.tooBig": "Picha ni kubwa kuliko MB 40.",
       "canvas.title": "Bofya eneo la mandharinyuma kuchagua rangi yake",
-      "toast.pickedBg": "Rangi ya mandharinyuma imechaguliwa"
+      "toast.pickedBg": "Rangi ya mandharinyuma imechaguliwa",
+      "ai.dropTitle": "Chagua picha au ziburute hapa",
+      "ai.dropHint": "JPG, PNG, WebP. Picha nyingi kwa pamoja, kila moja chini ya MB 40. Unaweza pia kubandika kwa Ctrl+V.",
+      "ai.model": "Aina ya picha",
+      "ai.mGeneral": "Chochote (bidhaa, wanyama vipenzi, vitu, watu)",
+      "ai.mGeneralD": "sahihi zaidi, hupakua modeli ya takriban MB 200 mara ya kwanza",
+      "ai.mPortrait": "Picha za watu",
+      "ai.mPortraitD": "modeli ya haraka na nyepesi ya takriban MB 25, bora kwa picha za kitambulisho na wasifu",
+      "ai.bg": "Mandharinyuma mpya",
+      "ai.bgNone": "Angavu (PNG)",
+      "ai.bgWhite": "Nyeupe",
+      "ai.bgColor": "Rangi nyingine",
+      "ai.run": "Ondoa mandharinyuma",
+      "ai.zip": "Pakua zote (.zip)",
+      "ai.note": "AI inaendeshwa kwenye kifaa chako (kwa kadi ya michoro ikiwa kivinjari kinaauni WebGPU); picha hazitumwi popote. Modeli hupakuliwa mara ya kwanza tu na kuhifadhiwa na kivinjari. Kompyuta au simu za zamani zinaweza kuchukua sekunde 10–60 kwa kila picha. Kwa mandharinyuma nyeupe rahisi, zana ya Kuondoa Mandharinyuma ya Picha ni ya haraka zaidi.",
+      "ai.download": "Pakua",
+      "ai.tooBig": "zaidi ya MB 40",
+      "ai.suffix": "no-background",
+      "ai.loadingLib": "Inapakia injini ya AI…",
+      "ai.loadingModel": "Inapakua modeli ya AI (mara ya kwanza tu)…",
+      "ai.working": "Inachakata picha",
+      "ai.errImg": "Imeshindwa kuchakata picha hii",
+      "ai.done": "Imekamilika!",
+      "ai.err": "AI haiwezi kuendeshwa kwenye kivinjari hiki. Jaribu Chrome au Edge ya karibuni.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Mandharinyuma ya rangi moja (haraka)"
     },
     "attendance": {
       "add.label": "Ongeza mwanafunzi",
@@ -2441,32 +2462,6 @@
       "errNet": "Imeshindwa kupakua kisimbuzi. Angalia muunganisho na ujaribu tena.",
       "errDecode": "Imeshindwa kusoma picha hii (faili limeharibika au aina ya HEIC isiyoauniwa).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Chagua picha au ziburute hapa",
-      "dropHint": "JPG, PNG, WebP. Picha nyingi kwa pamoja, kila moja chini ya MB 40. Unaweza pia kubandika kwa Ctrl+V.",
-      "model": "Aina ya picha",
-      "mGeneral": "Chochote (bidhaa, wanyama vipenzi, vitu, watu)",
-      "mGeneralD": "sahihi zaidi, hupakua modeli ya takriban MB 200 mara ya kwanza",
-      "mPortrait": "Picha za watu",
-      "mPortraitD": "modeli ya haraka na nyepesi ya takriban MB 25, bora kwa picha za kitambulisho na wasifu",
-      "bg": "Mandharinyuma mpya",
-      "bgNone": "Angavu (PNG)",
-      "bgWhite": "Nyeupe",
-      "bgColor": "Rangi nyingine",
-      "run": "Ondoa mandharinyuma",
-      "zip": "Pakua zote (.zip)",
-      "note": "AI inaendeshwa kwenye kifaa chako (kwa kadi ya michoro ikiwa kivinjari kinaauni WebGPU); picha hazitumwi popote. Modeli hupakuliwa mara ya kwanza tu na kuhifadhiwa na kivinjari. Kompyuta au simu za zamani zinaweza kuchukua sekunde 10–60 kwa kila picha. Kwa mandharinyuma nyeupe rahisi, zana ya Kuondoa Mandharinyuma ya Picha ni ya haraka zaidi.",
-      "download": "Pakua",
-      "tooBig": "zaidi ya MB 40",
-      "suffix": "no-background",
-      "loadingLib": "Inapakia injini ya AI…",
-      "loadingModel": "Inapakua modeli ya AI (mara ya kwanza tu)…",
-      "working": "Inachakata picha",
-      "errImg": "Imeshindwa kuchakata picha hii",
-      "done": "Imekamilika!",
-      "err": "AI haiwezi kuendeshwa kwenye kivinjari hiki. Jaribu Chrome au Edge ya karibuni.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Chagua picha au iburute hapa",

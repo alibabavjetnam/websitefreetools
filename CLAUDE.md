@@ -45,7 +45,7 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 5. Thêm chuỗi dịch vào `public/language/*.json` cho 4 ngôn ngữ
 
 ## 37 công cụ thêm ngày 27/10/2026
-- Chọn từ danh sách công cụ online được tìm nhiều nhất (mức ★★★), chạy hoàn toàn trên trình duyệt, không API trả phí. Tổng site: 81 công cụ
+- Chọn từ danh sách công cụ online được tìm nhiều nhất (mức ★★★), chạy hoàn toàn trên trình duyệt, không API trả phí. Tổng site: 80 công cụ (03/11/2026 gộp "Xoá nền ảnh bằng AI" vào `bg-remove` thành tab AI; logic ở `src/lib/ai-bg-ui.ts`, chuỗi dịch `s.bg-remove.ai.*`, URL cũ `ai-bg-remove.html` chuyển hướng ở `public/404.html`)
 - Nhóm mới: `text` (Xử lý văn bản), `calc` (Máy tính & chuyển đổi), `random` (Ngẫu nhiên & bốc thăm), `device` (Kiểm tra thiết bị), `media` (Âm thanh & video)
 - CSS riêng của các công cụ này ở `src/styles-extra.css` (nạp trong `layout.ts`)
 - Thư viện CDN mới (chỉ nạp khi bấm xử lý): Tesseract.js 5.1.1 (OCR), heic2any 0.0.4, Transformers.js 3.5.2 (`src/lib/ai.ts`: BiRefNet_lite, MODNet, Swin2SR), @ffmpeg/core 0.12.6 (`src/lib/ffmpeg.ts` + worker tự viết `public/vendor/ffmpeg-worker.js`, vì worker phải cùng tên miền), html-to-image 1.11.13 (Word → PDF)

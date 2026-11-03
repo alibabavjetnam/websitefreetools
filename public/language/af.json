@@ -434,10 +434,6 @@
       "name": "HEIC na JPG",
       "desc": "Skakel iPhone-HEIC-foto’s na JPG of PNG om sodat hulle oral oopmaak. Ondersteun groepomskakeling."
     },
-    "ai-bg-remove": {
-      "name": "KI-agtergrondverwyderaar",
-      "desc": "Sny mense, produkte en troeteldiere uit enige agtergrond met KI op jou toestel en laai ’n deursigtige PNG af."
-    },
     "image-upscale": {
       "name": "KI-beeldvergroter",
       "desc": "Vergroot beelde 2× of 4× en verskerp besonderhede met KI. Wonderlik vir klein, wasige of ou foto’s."
@@ -587,7 +583,32 @@
       "err.notImage": "Hierdie lêer is nie ’n beeld nie.",
       "err.tooBig": "Beeld is groter as 40 MB.",
       "canvas.title": "Klik op die agtergrondarea om sy kleur te kies",
-      "toast.pickedBg": "Gekose agtergrondkleur"
+      "toast.pickedBg": "Gekose agtergrondkleur",
+      "ai.dropTitle": "Kies beelde of sleep hulle hier",
+      "ai.dropHint": "JPG, PNG, WebP. Baie beelde tegelyk, elk onder 40 MB. Jy kan ook met Ctrl+V plak.",
+      "ai.model": "Beeldtipe",
+      "ai.mGeneral": "Enigiets (produkte, troeteldiere, voorwerpe, mense)",
+      "ai.mGeneralD": "mees akkuraat, laai die eerste keer ’n model van ongeveer 200 MB af",
+      "ai.mPortrait": "Mensportrette",
+      "ai.mPortraitD": "vinnige, ligte model van ongeveer 25 MB, wonderlik vir ID-foto’s en profielfoto’s",
+      "ai.bg": "Nuwe agtergrond",
+      "ai.bgNone": "Deursigtig (PNG)",
+      "ai.bgWhite": "Wit",
+      "ai.bgColor": "Ander kleur",
+      "ai.run": "Verwyder agtergrond",
+      "ai.zip": "Laai alles af (.zip)",
+      "ai.note": "Die KI loop op jou toestel (met jou grafiese kaart as die blaaier WebGPU ondersteun); beelde word nooit êrens heen gestuur nie. Die model word net die eerste keer afgelaai en deur jou blaaier gekas. Ouer rekenaars of fone kan 10–60 sekondes per beeld neem. Vir eenvoudige wit agtergronde is die Verwyder beeldagtergrond-hulpmiddel vinniger.",
+      "ai.download": "Laai af",
+      "ai.tooBig": "groter as 40 MB",
+      "ai.suffix": "sonder-agtergrond",
+      "ai.loadingLib": "Laai tans die KI-enjin…",
+      "ai.loadingModel": "Laai tans die KI-model af (net die eerste keer)…",
+      "ai.working": "Verwerk beeld",
+      "ai.errImg": "Kon nie hierdie beeld verwerk nie",
+      "ai.done": "Klaar!",
+      "ai.err": "Kon nie die KI in hierdie blaaier laat loop nie. Probeer ’n onlangse Chrome of Edge.",
+      "ai.zipName": "agtergrond-verwyder",
+      "tab.simple": "Eenkleurige agtergrond (vinnig)"
     },
     "attendance": {
       "add.label": "Voeg leerder by",
@@ -3356,32 +3377,6 @@
       "errNet": "Kon nie die dekodeerder aflaai nie. Gaan jou verbinding na en probeer weer.",
       "errDecode": "Kon nie hierdie foto lees nie (beskadigde lêer of nie-ondersteunde HEIC-variant).",
       "zipName": "omgeskakelde-heic-fotos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Kies beelde of sleep hulle hier",
-      "dropHint": "JPG, PNG, WebP. Baie beelde tegelyk, elk onder 40 MB. Jy kan ook met Ctrl+V plak.",
-      "model": "Beeldtipe",
-      "mGeneral": "Enigiets (produkte, troeteldiere, voorwerpe, mense)",
-      "mGeneralD": "mees akkuraat, laai die eerste keer ’n model van ongeveer 200 MB af",
-      "mPortrait": "Mensportrette",
-      "mPortraitD": "vinnige, ligte model van ongeveer 25 MB, wonderlik vir ID-foto’s en profielfoto’s",
-      "bg": "Nuwe agtergrond",
-      "bgNone": "Deursigtig (PNG)",
-      "bgWhite": "Wit",
-      "bgColor": "Ander kleur",
-      "run": "Verwyder agtergrond",
-      "zip": "Laai alles af (.zip)",
-      "note": "Die KI loop op jou toestel (met jou grafiese kaart as die blaaier WebGPU ondersteun); beelde word nooit êrens heen gestuur nie. Die model word net die eerste keer afgelaai en deur jou blaaier gekas. Ouer rekenaars of fone kan 10–60 sekondes per beeld neem. Vir eenvoudige wit agtergronde is die Verwyder beeldagtergrond-hulpmiddel vinniger.",
-      "download": "Laai af",
-      "tooBig": "groter as 40 MB",
-      "suffix": "sonder-agtergrond",
-      "loadingLib": "Laai tans die KI-enjin…",
-      "loadingModel": "Laai tans die KI-model af (net die eerste keer)…",
-      "working": "Verwerk beeld",
-      "errImg": "Kon nie hierdie beeld verwerk nie",
-      "done": "Klaar!",
-      "err": "Kon nie die KI in hierdie blaaier laat loop nie. Probeer ’n onlangse Chrome of Edge.",
-      "zipName": "agtergrond-verwyder"
     },
     "image-upscale": {
       "dropTitle": "Kies ’n beeld of sleep dit hier",

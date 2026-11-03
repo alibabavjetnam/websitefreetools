@@ -434,10 +434,6 @@
       "name": "HEIC → JPG",
       "desc": "iPhone-un HEIC fotolarını hər yerdə açılması üçün JPG və ya PNG-yə çevirin. Toplu çevirməni dəstəkləyir."
     },
-    "ai-bg-remove": {
-      "name": "Süni intellektlə fonu silmə",
-      "desc": "İnsanları, məhsulları və ev heyvanlarını istənilən fondan cihazınızdakı süni intellektlə kəsin və şəffaf PNG yükləyin."
-    },
     "image-upscale": {
       "name": "Süni intellektlə şəkli böyütmə",
       "desc": "Şəkilləri 2× və ya 4× böyüdün və süni intellektlə detalları kəskinləşdirin. Kiçik, bulanıq və ya köhnə fotolar üçün əladır."
@@ -587,7 +583,32 @@
       "err.notImage": "Bu fayl şəkil deyil.",
       "err.tooBig": "Şəkil 40 MB-dan böyükdür.",
       "canvas.title": "Rəngini seçmək üçün fon sahəsinə klikləyin",
-      "toast.pickedBg": "Seçilmiş fon rəngi"
+      "toast.pickedBg": "Seçilmiş fon rəngi",
+      "ai.dropTitle": "Şəkillər seçin və ya bura sürükləyin",
+      "ai.dropHint": "JPG, PNG, WebP. Eyni anda çoxlu şəkil, hər biri 40 MB-dan az. Ctrl+V ilə də yapışdıra bilərsiniz.",
+      "ai.model": "Şəkil növü",
+      "ai.mGeneral": "İstənilən (məhsullar, ev heyvanları, əşyalar, insanlar)",
+      "ai.mGeneralD": "ən dəqiq, ilk dəfə təxminən 200 MB model yükləyir",
+      "ai.mPortrait": "İnsan portretləri",
+      "ai.mPortraitD": "sürətli, yüngül model, təxminən 25 MB, sənəd və profil fotoları üçün əladır",
+      "ai.bg": "Yeni fon",
+      "ai.bgNone": "Şəffaf (PNG)",
+      "ai.bgWhite": "Ağ",
+      "ai.bgColor": "Başqa rəng",
+      "ai.run": "Fonu sil",
+      "ai.zip": "Hamısını yüklə (.zip)",
+      "ai.note": "Süni intellekt cihazınızda işləyir (brauzer WebGPU dəstəkləyirsə, videokartdan istifadə edir); şəkillər heç vaxt heç yerə göndərilmir. Model yalnız ilk dəfə yüklənir və brauzer tərəfindən keşdə saxlanılır. Köhnə kompüter və ya telefonlarda hər şəkil 10–60 saniyə çəkə bilər. Sadə ağ fonlar üçün Şəklin fonunu sil aləti daha sürətlidir.",
+      "ai.download": "Yüklə",
+      "ai.tooBig": "40 MB-dan böyük",
+      "ai.suffix": "fonsuz",
+      "ai.loadingLib": "Süni intellekt mühərriki yüklənir…",
+      "ai.loadingModel": "Süni intellekt modeli yüklənir (yalnız ilk dəfə)…",
+      "ai.working": "Şəkil emal olunur",
+      "ai.errImg": "Bu şəkli emal etmək mümkün olmadı",
+      "ai.done": "Hazırdır!",
+      "ai.err": "Bu brauzerdə süni intellekti işə salmaq mümkün olmadı. Yeni Chrome və ya Edge sınayın.",
+      "ai.zipName": "fonu-silinmis",
+      "tab.simple": "Tək rəngli fon (sürətli)"
     },
     "attendance": {
       "add.label": "Şagird əlavə et",
@@ -3356,32 +3377,6 @@
       "errNet": "Dekoderi yükləmək mümkün olmadı. Bağlantını yoxlayıb yenidən cəhd edin.",
       "errDecode": "Bu fotonu oxumaq mümkün olmadı (zədələnmiş fayl və ya dəstəklənməyən HEIC variantı).",
       "zipName": "cevrilmis-heic-fotolar"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Şəkillər seçin və ya bura sürükləyin",
-      "dropHint": "JPG, PNG, WebP. Eyni anda çoxlu şəkil, hər biri 40 MB-dan az. Ctrl+V ilə də yapışdıra bilərsiniz.",
-      "model": "Şəkil növü",
-      "mGeneral": "İstənilən (məhsullar, ev heyvanları, əşyalar, insanlar)",
-      "mGeneralD": "ən dəqiq, ilk dəfə təxminən 200 MB model yükləyir",
-      "mPortrait": "İnsan portretləri",
-      "mPortraitD": "sürətli, yüngül model, təxminən 25 MB, sənəd və profil fotoları üçün əladır",
-      "bg": "Yeni fon",
-      "bgNone": "Şəffaf (PNG)",
-      "bgWhite": "Ağ",
-      "bgColor": "Başqa rəng",
-      "run": "Fonu sil",
-      "zip": "Hamısını yüklə (.zip)",
-      "note": "Süni intellekt cihazınızda işləyir (brauzer WebGPU dəstəkləyirsə, videokartdan istifadə edir); şəkillər heç vaxt heç yerə göndərilmir. Model yalnız ilk dəfə yüklənir və brauzer tərəfindən keşdə saxlanılır. Köhnə kompüter və ya telefonlarda hər şəkil 10–60 saniyə çəkə bilər. Sadə ağ fonlar üçün Şəklin fonunu sil aləti daha sürətlidir.",
-      "download": "Yüklə",
-      "tooBig": "40 MB-dan böyük",
-      "suffix": "fonsuz",
-      "loadingLib": "Süni intellekt mühərriki yüklənir…",
-      "loadingModel": "Süni intellekt modeli yüklənir (yalnız ilk dəfə)…",
-      "working": "Şəkil emal olunur",
-      "errImg": "Bu şəkli emal etmək mümkün olmadı",
-      "done": "Hazırdır!",
-      "err": "Bu brauzerdə süni intellekti işə salmaq mümkün olmadı. Yeni Chrome və ya Edge sınayın.",
-      "zipName": "fonu-silinmis"
     },
     "image-upscale": {
       "dropTitle": "Şəkil seçin və ya bura sürükləyin",

@@ -434,10 +434,6 @@
       "name": "HEIC í JPG",
       "desc": "Umbreyttu HEIC-myndum úr iPhone í JPG eða PNG svo þær opnist alls staðar. Styður magnumbreytingu."
     },
-    "ai-bg-remove": {
-      "name": "Gervigreindarbakgrunnsfjarlægir",
-      "desc": "Klipptu fólk, vörur og gæludýr út úr hvaða bakgrunni sem er með gervigreind í tækinu og sæktu gegnsætt PNG."
-    },
     "image-upscale": {
       "name": "Gervigreindarmyndastækkari",
       "desc": "Stækkaðu myndir 2× eða 4× og skerptu smáatriði með gervigreind. Frábært fyrir litlar, óskýrar eða gamlar myndir."
@@ -587,7 +583,32 @@
       "err.notImage": "Þessi skrá er ekki mynd.",
       "err.tooBig": "Myndin er stærri en 40 MB.",
       "canvas.title": "Smelltu á bakgrunnssvæðið til að velja lit þess",
-      "toast.pickedBg": "Bakgrunnslitur valinn"
+      "toast.pickedBg": "Bakgrunnslitur valinn",
+      "ai.dropTitle": "Veldu myndir eða dragðu þær hingað",
+      "ai.dropHint": "JPG, PNG, WebP. Margar myndir í einu, hver undir 40 MB. Þú getur líka límt inn með Ctrl+V.",
+      "ai.model": "Tegund myndar",
+      "ai.mGeneral": "Hvað sem er (vörur, gæludýr, hlutir, fólk)",
+      "ai.mGeneralD": "nákvæmast, sækir líkan upp á um 200 MB í fyrsta skipti",
+      "ai.mPortrait": "Andlitsmyndir af fólki",
+      "ai.mPortraitD": "hratt, létt líkan upp á um 25 MB, frábært fyrir passamyndir og prófílmyndir",
+      "ai.bg": "Nýr bakgrunnur",
+      "ai.bgNone": "Gegnsær (PNG)",
+      "ai.bgWhite": "Hvítur",
+      "ai.bgColor": "Annar litur",
+      "ai.run": "Fjarlægja bakgrunn",
+      "ai.zip": "Sækja allt (.zip)",
+      "ai.note": "Gervigreindin keyrir í tækinu þínu (með skjákortinu ef vafrinn styður WebGPU); myndir eru aldrei sendar neitt. Líkanið er aðeins sótt í fyrsta skipti og vistað í skyndiminni vafrans. Eldri tölvur eða símar geta þurft 10–60 sekúndur á mynd. Fyrir einfaldan hvítan bakgrunn er tólið Fjarlægja bakgrunn úr mynd hraðara.",
+      "ai.download": "Sækja",
+      "ai.tooBig": "stærri en 40 MB",
+      "ai.suffix": "an-bakgrunns",
+      "ai.loadingLib": "Hleður gervigreindarkeyrslunni…",
+      "ai.loadingModel": "Sækir gervigreindarlíkanið (aðeins í fyrsta skipti)…",
+      "ai.working": "Vinnur mynd",
+      "ai.errImg": "Ekki tókst að vinna þessa mynd",
+      "ai.done": "Lokið!",
+      "ai.err": "Ekki tókst að keyra gervigreindina í þessum vafra. Prófaðu nýlegan Chrome eða Edge.",
+      "ai.zipName": "bakgrunnur-fjarlaegdur",
+      "tab.simple": "Einlitur bakgrunnur (hratt)"
     },
     "attendance": {
       "add.label": "Bæta við nemanda",
@@ -3356,32 +3377,6 @@
       "errNet": "Ekki tókst að sækja afkóðarann. Athugaðu tenginguna og reyndu aftur.",
       "errDecode": "Ekki tókst að lesa þessa mynd (skemmd skrá eða óstudd HEIC-útgáfa).",
       "zipName": "umbreyttar-heic-myndir"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Veldu myndir eða dragðu þær hingað",
-      "dropHint": "JPG, PNG, WebP. Margar myndir í einu, hver undir 40 MB. Þú getur líka límt inn með Ctrl+V.",
-      "model": "Tegund myndar",
-      "mGeneral": "Hvað sem er (vörur, gæludýr, hlutir, fólk)",
-      "mGeneralD": "nákvæmast, sækir líkan upp á um 200 MB í fyrsta skipti",
-      "mPortrait": "Andlitsmyndir af fólki",
-      "mPortraitD": "hratt, létt líkan upp á um 25 MB, frábært fyrir passamyndir og prófílmyndir",
-      "bg": "Nýr bakgrunnur",
-      "bgNone": "Gegnsær (PNG)",
-      "bgWhite": "Hvítur",
-      "bgColor": "Annar litur",
-      "run": "Fjarlægja bakgrunn",
-      "zip": "Sækja allt (.zip)",
-      "note": "Gervigreindin keyrir í tækinu þínu (með skjákortinu ef vafrinn styður WebGPU); myndir eru aldrei sendar neitt. Líkanið er aðeins sótt í fyrsta skipti og vistað í skyndiminni vafrans. Eldri tölvur eða símar geta þurft 10–60 sekúndur á mynd. Fyrir einfaldan hvítan bakgrunn er tólið Fjarlægja bakgrunn úr mynd hraðara.",
-      "download": "Sækja",
-      "tooBig": "stærri en 40 MB",
-      "suffix": "an-bakgrunns",
-      "loadingLib": "Hleður gervigreindarkeyrslunni…",
-      "loadingModel": "Sækir gervigreindarlíkanið (aðeins í fyrsta skipti)…",
-      "working": "Vinnur mynd",
-      "errImg": "Ekki tókst að vinna þessa mynd",
-      "done": "Lokið!",
-      "err": "Ekki tókst að keyra gervigreindina í þessum vafra. Prófaðu nýlegan Chrome eða Edge.",
-      "zipName": "bakgrunnur-fjarlaegdur"
     },
     "image-upscale": {
       "dropTitle": "Veldu mynd eða dragðu hana hingað",

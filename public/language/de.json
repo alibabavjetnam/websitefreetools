@@ -434,10 +434,6 @@
       "name": "HEIC in JPG",
       "desc": "iPhone-Fotos im HEIC-Format in JPG oder PNG umwandeln, damit sie überall aufgehen. Mehrere auf einmal."
     },
-    "ai-bg-remove": {
-      "name": "KI-Hintergrund entfernen",
-      "desc": "Personen, Produkte und Haustiere mit KI auf dem Gerät von jedem Hintergrund freistellen und als transparentes PNG laden."
-    },
     "image-upscale": {
       "name": "KI-Bildvergrößerung",
       "desc": "Bilder mit KI 2- oder 4-fach vergrößern und Details schärfen. Ideal für kleine, unscharfe oder alte Fotos."
@@ -587,7 +583,32 @@
       "err.notImage": "Diese Datei ist kein Bild.",
       "err.tooBig": "Das Bild ist größer als 40 MB.",
       "canvas.title": "Klicke auf den Hintergrund, um seine Farbe zu wählen",
-      "toast.pickedBg": "Hintergrundfarbe gewählt"
+      "toast.pickedBg": "Hintergrundfarbe gewählt",
+      "ai.dropTitle": "Bilder auswählen oder hierher ziehen",
+      "ai.dropHint": "JPG, PNG, WebP. Viele Bilder auf einmal, jeweils unter 40 MB. Einfügen mit Strg+V geht auch.",
+      "ai.model": "Bildart",
+      "ai.mGeneral": "Alles (Produkte, Haustiere, Gegenstände, Personen)",
+      "ai.mGeneralD": "am genauesten, lädt beim ersten Mal ein Modell von ca. 200 MB",
+      "ai.mPortrait": "Porträts von Personen",
+      "ai.mPortraitD": "schnell, leichtes Modell mit ca. 25 MB, ideal für Passbilder und Profilbilder",
+      "ai.bg": "Neuer Hintergrund",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "Weiß",
+      "ai.bgColor": "Andere Farbe",
+      "ai.run": "Hintergrund entfernen",
+      "ai.zip": "Alle herunterladen (.zip)",
+      "ai.note": "Die KI läuft auf deinem Gerät (mit der Grafikkarte, wenn der Browser WebGPU unterstützt); Bilder werden nirgendwohin gesendet. Das Modell wird nur beim ersten Mal geladen und vom Browser zwischengespeichert. Ältere Computer oder Handys brauchen 10–60 Sekunden pro Bild. Für einfache weiße Hintergründe ist das Werkzeug Bildhintergrund entfernen schneller.",
+      "ai.download": "Herunterladen",
+      "ai.tooBig": "größer als 40 MB",
+      "ai.suffix": "ohne-hintergrund",
+      "ai.loadingLib": "KI-Laufzeit wird geladen…",
+      "ai.loadingModel": "KI-Modell wird geladen (nur beim ersten Mal)…",
+      "ai.working": "Bild wird verarbeitet",
+      "ai.errImg": "Dieses Bild konnte nicht verarbeitet werden",
+      "ai.done": "Fertig!",
+      "ai.err": "Die KI konnte in diesem Browser nicht ausgeführt werden. Versuche ein aktuelles Chrome oder Edge.",
+      "ai.zipName": "hintergrund-entfernt",
+      "tab.simple": "Einfarbiger Hintergrund (schnell)"
     },
     "attendance": {
       "add.label": "Schüler hinzufügen",
@@ -2441,32 +2462,6 @@
       "errNet": "Der Decoder konnte nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.",
       "errDecode": "Dieses Foto konnte nicht gelesen werden (beschädigte Datei oder nicht unterstützte HEIC-Variante).",
       "zipName": "umgewandelte-heic-fotos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Bilder auswählen oder hierher ziehen",
-      "dropHint": "JPG, PNG, WebP. Viele Bilder auf einmal, jeweils unter 40 MB. Einfügen mit Strg+V geht auch.",
-      "model": "Bildart",
-      "mGeneral": "Alles (Produkte, Haustiere, Gegenstände, Personen)",
-      "mGeneralD": "am genauesten, lädt beim ersten Mal ein Modell von ca. 200 MB",
-      "mPortrait": "Porträts von Personen",
-      "mPortraitD": "schnell, leichtes Modell mit ca. 25 MB, ideal für Passbilder und Profilbilder",
-      "bg": "Neuer Hintergrund",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "Weiß",
-      "bgColor": "Andere Farbe",
-      "run": "Hintergrund entfernen",
-      "zip": "Alle herunterladen (.zip)",
-      "note": "Die KI läuft auf deinem Gerät (mit der Grafikkarte, wenn der Browser WebGPU unterstützt); Bilder werden nirgendwohin gesendet. Das Modell wird nur beim ersten Mal geladen und vom Browser zwischengespeichert. Ältere Computer oder Handys brauchen 10–60 Sekunden pro Bild. Für einfache weiße Hintergründe ist das Werkzeug Bildhintergrund entfernen schneller.",
-      "download": "Herunterladen",
-      "tooBig": "größer als 40 MB",
-      "suffix": "ohne-hintergrund",
-      "loadingLib": "KI-Laufzeit wird geladen…",
-      "loadingModel": "KI-Modell wird geladen (nur beim ersten Mal)…",
-      "working": "Bild wird verarbeitet",
-      "errImg": "Dieses Bild konnte nicht verarbeitet werden",
-      "done": "Fertig!",
-      "err": "Die KI konnte in diesem Browser nicht ausgeführt werden. Versuche ein aktuelles Chrome oder Edge.",
-      "zipName": "hintergrund-entfernt"
     },
     "image-upscale": {
       "dropTitle": "Bild auswählen oder hierher ziehen",

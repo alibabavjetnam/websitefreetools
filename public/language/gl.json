@@ -434,10 +434,6 @@
       "name": "HEIC a JPG",
       "desc": "Converte as fotos HEIC do iPhone a JPG ou PNG para que se abran en calquera lugar. Varias á vez."
     },
-    "ai-bg-remove": {
-      "name": "Quitar o fondo con IA",
-      "desc": "Recorta persoas, produtos e mascotas de calquera fondo con IA no dispositivo e descarga un PNG transparente."
-    },
     "image-upscale": {
       "name": "Ampliar imaxes con IA",
       "desc": "Amplía imaxes 2× ou 4× e mellora a nitidez dos detalles con IA. Ideal para fotos pequenas, borrosas ou antigas."
@@ -587,7 +583,32 @@
       "err.notImage": "Este ficheiro non é unha imaxe.",
       "err.tooBig": "A imaxe ocupa máis de 40 MB.",
       "canvas.title": "Fai clic na zona de fondo para escoller a súa cor",
-      "toast.pickedBg": "Cor de fondo escollida"
+      "toast.pickedBg": "Cor de fondo escollida",
+      "ai.dropTitle": "Escolle imaxes ou arrástraas aquí",
+      "ai.dropHint": "JPG, PNG, WebP. Moitas imaxes á vez, cada unha de menos de 40 MB. Tamén as podes pegar con Ctrl+V.",
+      "ai.model": "Tipo de imaxe",
+      "ai.mGeneral": "Calquera cousa (produtos, mascotas, obxectos, persoas)",
+      "ai.mGeneralD": "o máis preciso; a primeira vez descarga un modelo de uns 200 MB",
+      "ai.mPortrait": "Retratos de persoas",
+      "ai.mPortraitD": "modelo rápido e lixeiro de uns 25 MB, ideal para fotos de carné e de perfil",
+      "ai.bg": "Fondo novo",
+      "ai.bgNone": "Transparente (PNG)",
+      "ai.bgWhite": "Branco",
+      "ai.bgColor": "Outra cor",
+      "ai.run": "Quitar o fondo",
+      "ai.zip": "Descargar todo (.zip)",
+      "ai.note": "A IA funciona no teu dispositivo (coa tarxeta gráfica se o navegador admite WebGPU); as imaxes nunca se envían a ningures. O modelo só se descarga a primeira vez e o navegador gárdao na caché. En ordenadores ou móbiles antigos pode tardar 10–60 segundos por imaxe. Para fondos brancos sinxelos, a ferramenta Quitar fondo de imaxe é máis rápida.",
+      "ai.download": "Descargar",
+      "ai.tooBig": "máis de 40 MB",
+      "ai.suffix": "sen-fondo",
+      "ai.loadingLib": "Cargando o motor de IA…",
+      "ai.loadingModel": "Descargando o modelo de IA (só a primeira vez)…",
+      "ai.working": "Procesando a imaxe",
+      "ai.errImg": "Non se puido procesar esta imaxe",
+      "ai.done": "Feito!",
+      "ai.err": "Non se puido executar a IA neste navegador. Proba cun Chrome ou Edge recente.",
+      "ai.zipName": "fondo-quitado",
+      "tab.simple": "Fondo liso (rápido)"
     },
     "attendance": {
       "add.label": "Engadir alumno",
@@ -3356,32 +3377,6 @@
       "errNet": "Non se puido descargar o descodificador. Comproba a conexión e téntao de novo.",
       "errDecode": "Non se puido ler esta foto (ficheiro danado ou variante HEIC non compatible).",
       "zipName": "fotos-heic-convertidas"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Escolle imaxes ou arrástraas aquí",
-      "dropHint": "JPG, PNG, WebP. Moitas imaxes á vez, cada unha de menos de 40 MB. Tamén as podes pegar con Ctrl+V.",
-      "model": "Tipo de imaxe",
-      "mGeneral": "Calquera cousa (produtos, mascotas, obxectos, persoas)",
-      "mGeneralD": "o máis preciso; a primeira vez descarga un modelo de uns 200 MB",
-      "mPortrait": "Retratos de persoas",
-      "mPortraitD": "modelo rápido e lixeiro de uns 25 MB, ideal para fotos de carné e de perfil",
-      "bg": "Fondo novo",
-      "bgNone": "Transparente (PNG)",
-      "bgWhite": "Branco",
-      "bgColor": "Outra cor",
-      "run": "Quitar o fondo",
-      "zip": "Descargar todo (.zip)",
-      "note": "A IA funciona no teu dispositivo (coa tarxeta gráfica se o navegador admite WebGPU); as imaxes nunca se envían a ningures. O modelo só se descarga a primeira vez e o navegador gárdao na caché. En ordenadores ou móbiles antigos pode tardar 10–60 segundos por imaxe. Para fondos brancos sinxelos, a ferramenta Quitar fondo de imaxe é máis rápida.",
-      "download": "Descargar",
-      "tooBig": "máis de 40 MB",
-      "suffix": "sen-fondo",
-      "loadingLib": "Cargando o motor de IA…",
-      "loadingModel": "Descargando o modelo de IA (só a primeira vez)…",
-      "working": "Procesando a imaxe",
-      "errImg": "Non se puido procesar esta imaxe",
-      "done": "Feito!",
-      "err": "Non se puido executar a IA neste navegador. Proba cun Chrome ou Edge recente.",
-      "zipName": "fondo-quitado"
     },
     "image-upscale": {
       "dropTitle": "Escolle unha imaxe ou arrástraa aquí",

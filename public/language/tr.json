@@ -434,10 +434,6 @@
       "name": "HEIC'ten JPG'ye",
       "desc": "iPhone HEIC fotoğraflarını her yerde açılması için JPG veya PNG'ye dönüştürün. Toplu dönüştürme."
     },
-    "ai-bg-remove": {
-      "name": "Yapay zekâ ile arka plan silme",
-      "desc": "İnsanları, ürünleri ve hayvanları cihazdaki yapay zekâ ile her türlü arka plandan ayırın, şeffaf PNG indirin."
-    },
     "image-upscale": {
       "name": "Yapay zekâ ile resim büyütme",
       "desc": "Resimleri 2× veya 4× büyütün, ayrıntıları yapay zekâ ile netleştirin. Küçük, bulanık veya eski fotoğraflar için ideal."
@@ -587,7 +583,32 @@
       "err.notImage": "Bu dosya bir görsel değil.",
       "err.tooBig": "Görsel 40 MB'tan büyük.",
       "canvas.title": "Rengini seçmek için arka plan alanına tıklayın",
-      "toast.pickedBg": "Arka plan rengi seçildi"
+      "toast.pickedBg": "Arka plan rengi seçildi",
+      "ai.dropTitle": "Resim seçin veya buraya sürükleyin",
+      "ai.dropHint": "JPG, PNG, WebP. Birden çok resim, her biri 40 MB'tan küçük. Ctrl+V ile de yapıştırabilirsiniz.",
+      "ai.model": "Resim türü",
+      "ai.mGeneral": "Her şey (ürün, hayvan, nesne, insan)",
+      "ai.mGeneralD": "en doğrusu; ilk seferde yaklaşık 200 MB'lık model indirilir",
+      "ai.mPortrait": "İnsan portreleri",
+      "ai.mPortraitD": "hızlı, yaklaşık 25 MB'lık hafif model, vesikalık ve profil fotoğrafları için ideal",
+      "ai.bg": "Yeni arka plan",
+      "ai.bgNone": "Şeffaf (PNG)",
+      "ai.bgWhite": "Beyaz",
+      "ai.bgColor": "Başka renk",
+      "ai.run": "Arka planı sil",
+      "ai.zip": "Tümünü indir (.zip)",
+      "ai.note": "Yapay zekâ cihazınızda çalışır (tarayıcı WebGPU destekliyorsa ekran kartıyla); resimler asla gönderilmez. Model yalnızca ilk seferde indirilir ve tarayıcıda saklanır. Eski bilgisayar veya telefonlarda resim başına 10–60 saniye sürebilir. Düz beyaz arka planlar için Resim arka planı silme aracı daha hızlıdır.",
+      "ai.download": "İndir",
+      "ai.tooBig": "40 MB'tan büyük",
+      "ai.suffix": "arka-plansiz",
+      "ai.loadingLib": "Yapay zekâ motoru yükleniyor…",
+      "ai.loadingModel": "Yapay zekâ modeli indiriliyor (yalnızca ilk sefer)…",
+      "ai.working": "Resim işleniyor",
+      "ai.errImg": "Bu resim işlenemedi",
+      "ai.done": "Tamamlandı!",
+      "ai.err": "Yapay zekâ bu tarayıcıda çalışamıyor. Chrome veya Edge'in güncel sürümünü deneyin.",
+      "ai.zipName": "arka-plan-silindi",
+      "tab.simple": "Düz renkli arka plan (hızlı)"
     },
     "attendance": {
       "add.label": "Öğrenci ekle",
@@ -2441,32 +2462,6 @@
       "errNet": "Çözücü indirilemedi. Bağlantınızı kontrol edip tekrar deneyin.",
       "errDecode": "Bu fotoğraf okunamadı (bozuk dosya veya desteklenmeyen HEIC türü).",
       "zipName": "donusturulmus-heic"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Resim seçin veya buraya sürükleyin",
-      "dropHint": "JPG, PNG, WebP. Birden çok resim, her biri 40 MB'tan küçük. Ctrl+V ile de yapıştırabilirsiniz.",
-      "model": "Resim türü",
-      "mGeneral": "Her şey (ürün, hayvan, nesne, insan)",
-      "mGeneralD": "en doğrusu; ilk seferde yaklaşık 200 MB'lık model indirilir",
-      "mPortrait": "İnsan portreleri",
-      "mPortraitD": "hızlı, yaklaşık 25 MB'lık hafif model, vesikalık ve profil fotoğrafları için ideal",
-      "bg": "Yeni arka plan",
-      "bgNone": "Şeffaf (PNG)",
-      "bgWhite": "Beyaz",
-      "bgColor": "Başka renk",
-      "run": "Arka planı sil",
-      "zip": "Tümünü indir (.zip)",
-      "note": "Yapay zekâ cihazınızda çalışır (tarayıcı WebGPU destekliyorsa ekran kartıyla); resimler asla gönderilmez. Model yalnızca ilk seferde indirilir ve tarayıcıda saklanır. Eski bilgisayar veya telefonlarda resim başına 10–60 saniye sürebilir. Düz beyaz arka planlar için Resim arka planı silme aracı daha hızlıdır.",
-      "download": "İndir",
-      "tooBig": "40 MB'tan büyük",
-      "suffix": "arka-plansiz",
-      "loadingLib": "Yapay zekâ motoru yükleniyor…",
-      "loadingModel": "Yapay zekâ modeli indiriliyor (yalnızca ilk sefer)…",
-      "working": "Resim işleniyor",
-      "errImg": "Bu resim işlenemedi",
-      "done": "Tamamlandı!",
-      "err": "Yapay zekâ bu tarayıcıda çalışamıyor. Chrome veya Edge'in güncel sürümünü deneyin.",
-      "zipName": "arka-plan-silindi"
     },
     "image-upscale": {
       "dropTitle": "Resim seçin veya buraya sürükleyin",

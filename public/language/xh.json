@@ -434,10 +434,6 @@
       "name": "HEIC Ukuya Kwi-JPG",
       "desc": "Guqula iifoto ze-HEIC ze-iPhone zibe yi-JPG okanye i-PNG ukuze zivule naphi na. Ukuguqula ngokubanzi kuyaxhaswa."
     },
-    "ai-bg-remove": {
-      "name": "Umsuli Wesiseko Se-AI",
-      "desc": "Sika abantu, iimveliso nezilwanyana ezifuyiweyo kuso nasiphi na isiseko nge-AI esebenza kwisixhobo uze ukhuphele i-PNG ecacileyo."
-    },
     "image-upscale": {
       "name": "Umkhulisi Wemifanekiso We-AI",
       "desc": "Khulisa imifanekiso ngo-2× okanye ngo-4× uze ubukhali iinkcukacha nge-AI. Mhle kwiifoto ezincinci, ezingacacanga okanye ezindala."
@@ -587,7 +583,32 @@
       "err.notImage": "Le fayile ayingomfanekiso.",
       "err.tooBig": "Umfanekiso mkhulu kune-40 MB.",
       "canvas.title": "Cofa indawo yesiseko ukukhetha umbala wayo",
-      "toast.pickedBg": "Umbala wesiseko ukhethiwe"
+      "toast.pickedBg": "Umbala wesiseko ukhethiwe",
+      "ai.dropTitle": "Khetha imifanekiso okanye uyirhole uyiwise apha",
+      "ai.dropHint": "JPG, PNG, WebP. Imifanekiso emininzi ngexesha elinye, nganye engaphantsi kwe-40 MB. Unokunamathisela nge-Ctrl+V.",
+      "ai.model": "Uhlobo lomfanekiso",
+      "ai.mGeneral": "Nantoni na (iimveliso, izilwanyana ezifuyiweyo, izinto, abantu)",
+      "ai.mGeneralD": "ichane kakhulu, ikhuphela imodeli engange-200 MB okokuqala",
+      "ai.mPortrait": "Iifoto zabantu",
+      "ai.mPortraitD": "ikhawuleza, imodeli elula engange-25 MB, ilungele iifoto ze-ID neefoto zeprofayile",
+      "ai.bg": "Isiseko esitsha",
+      "ai.bgNone": "Sicacileyo (PNG)",
+      "ai.bgWhite": "Simhlophe",
+      "ai.bgColor": "Omnye umbala",
+      "ai.run": "Susa isiseko",
+      "ai.zip": "Khuphela yonke (.zip)",
+      "ai.note": "I-AI isebenza kwisixhobo sakho (isebenzisa ikhadi lakho lemizobo ukuba isikhangeli sixhasa i-WebGPU); imifanekiso ayithunyelwa naphi na. Imodeli ikhutshelwa kuphela okokuqala yaye igcinwa sisikhangeli sakho. Iikhompyuter okanye iifowuni ezindala zisenokuthatha imizuzwana eyi-10–60 umfanekiso ngamnye. Kwiziseko ezimhlophe ezilula, isixhobo Sokususa Isiseko Somfanekiso siyakhawuleza.",
+      "ai.download": "Khuphela",
+      "ai.tooBig": "inkulu kune-40 MB",
+      "ai.suffix": "akukho-siseko",
+      "ai.loadingLib": "Kulayishwa i-AI runtime…",
+      "ai.loadingModel": "Kukhutshelwa imodeli ye-AI (okokuqala kuphela)…",
+      "ai.working": "Kuqhutywa umfanekiso",
+      "ai.errImg": "Ayikwazanga ukuqhuba lo mfanekiso",
+      "ai.done": "Kugqityiwe!",
+      "ai.err": "Ayikwazanga ukuqhuba i-AI kweli sikhangeli. Zama i-Chrome okanye i-Edge entsha.",
+      "ai.zipName": "isiseko-sisusiwe",
+      "tab.simple": "Imvelaphi yombala omnye (ngokukhawuleza)"
     },
     "attendance": {
       "add.label": "Yongeza umfundi",
@@ -3356,32 +3377,6 @@
       "errNet": "Ayikwazanga ukukhuphela i-decoder. Khangela uqhagamshelo lwakho uzame kwakhona.",
       "errDecode": "Ayikwazanga ukufunda le foto (ifayile ibonakele okanye uhlobo lwe-HEIC olungaxhaswanga).",
       "zipName": "iifoto-ze-heic-eziguquliweyo"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Khetha imifanekiso okanye uyirhole uyiwise apha",
-      "dropHint": "JPG, PNG, WebP. Imifanekiso emininzi ngexesha elinye, nganye engaphantsi kwe-40 MB. Unokunamathisela nge-Ctrl+V.",
-      "model": "Uhlobo lomfanekiso",
-      "mGeneral": "Nantoni na (iimveliso, izilwanyana ezifuyiweyo, izinto, abantu)",
-      "mGeneralD": "ichane kakhulu, ikhuphela imodeli engange-200 MB okokuqala",
-      "mPortrait": "Iifoto zabantu",
-      "mPortraitD": "ikhawuleza, imodeli elula engange-25 MB, ilungele iifoto ze-ID neefoto zeprofayile",
-      "bg": "Isiseko esitsha",
-      "bgNone": "Sicacileyo (PNG)",
-      "bgWhite": "Simhlophe",
-      "bgColor": "Omnye umbala",
-      "run": "Susa isiseko",
-      "zip": "Khuphela yonke (.zip)",
-      "note": "I-AI isebenza kwisixhobo sakho (isebenzisa ikhadi lakho lemizobo ukuba isikhangeli sixhasa i-WebGPU); imifanekiso ayithunyelwa naphi na. Imodeli ikhutshelwa kuphela okokuqala yaye igcinwa sisikhangeli sakho. Iikhompyuter okanye iifowuni ezindala zisenokuthatha imizuzwana eyi-10–60 umfanekiso ngamnye. Kwiziseko ezimhlophe ezilula, isixhobo Sokususa Isiseko Somfanekiso siyakhawuleza.",
-      "download": "Khuphela",
-      "tooBig": "inkulu kune-40 MB",
-      "suffix": "akukho-siseko",
-      "loadingLib": "Kulayishwa i-AI runtime…",
-      "loadingModel": "Kukhutshelwa imodeli ye-AI (okokuqala kuphela)…",
-      "working": "Kuqhutywa umfanekiso",
-      "errImg": "Ayikwazanga ukuqhuba lo mfanekiso",
-      "done": "Kugqityiwe!",
-      "err": "Ayikwazanga ukuqhuba i-AI kweli sikhangeli. Zama i-Chrome okanye i-Edge entsha.",
-      "zipName": "isiseko-sisusiwe"
     },
     "image-upscale": {
       "dropTitle": "Khetha umfanekiso okanye uwurhole uwuwise apha",

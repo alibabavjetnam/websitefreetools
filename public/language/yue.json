@@ -434,10 +434,6 @@
       "name": "HEIC 轉 JPG",
       "desc": "將 iPhone 嘅 HEIC 相片轉做 JPG 或 PNG，令佢喺任何地方都打得開。支援批量轉換。"
     },
-    "ai-bg-remove": {
-      "name": "AI 背景移除",
-      "desc": "用裝置上嘅 AI 由任何背景摳出人物、產品同寵物，並下載透明 PNG。"
-    },
     "image-upscale": {
       "name": "AI 圖片放大",
       "desc": "用 AI 將圖片放大 2 倍或 4 倍並增強細節。適合細小、模糊或舊嘅相片。"
@@ -587,7 +583,32 @@
       "err.notImage": "呢個檔案唔係圖片。",
       "err.tooBig": "圖片超過 40 MB。",
       "canvas.title": "按一下背景區域揀選佢嘅顏色",
-      "toast.pickedBg": "已揀選背景顏色"
+      "toast.pickedBg": "已揀選背景顏色",
+      "ai.dropTitle": "揀選圖片或者拖放到呢度",
+      "ai.dropHint": "JPG、PNG、WebP。可一次處理多張圖片，每張小於 40 MB。亦可以按 Ctrl+V 貼上。",
+      "ai.model": "圖片類型",
+      "ai.mGeneral": "任何類型（產品、寵物、物件、人物）",
+      "ai.mGeneralD": "最準確，第一次會下載約 200 MB 嘅模型",
+      "ai.mPortrait": "人像",
+      "ai.mPortraitD": "快速，約 25 MB 嘅輕量模型，非常適合證件相同頭像",
+      "ai.bg": "新背景",
+      "ai.bgNone": "透明（PNG）",
+      "ai.bgWhite": "白色",
+      "ai.bgColor": "其他顏色",
+      "ai.run": "移除背景",
+      "ai.zip": "下載全部（.zip）",
+      "ai.note": "AI 喺你嘅裝置運行（如果瀏覽器支援 WebGPU，會使用你嘅顯示卡）；圖片絕不會傳送去任何地方。模型只會喺第一次下載，並由瀏覽器快取。較舊嘅電腦或手機每張圖片可能需要 10–60 秒。如果只係簡單嘅白色背景，使用「移除圖片背景」工具會更快。",
+      "ai.download": "下載",
+      "ai.tooBig": "超過 40 MB",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "正在載入 AI 執行環境…",
+      "ai.loadingModel": "正在下載 AI 模型（只限第一次）…",
+      "ai.working": "正在處理圖片",
+      "ai.errImg": "處理唔到呢張圖片",
+      "ai.done": "完成！",
+      "ai.err": "呢個瀏覽器運行唔到 AI。請試最新版本嘅 Chrome 或 Edge。",
+      "ai.zipName": "background-removed",
+      "tab.simple": "純色背景（快速）"
     },
     "attendance": {
       "add.label": "新增學生",
@@ -3356,32 +3377,6 @@
       "errNet": "下載唔到解碼器。請檢查網絡連線，然後再試一次。",
       "errDecode": "讀取唔到呢張相片（檔案損壞或者唔支援嘅 HEIC 變體）。",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "揀選圖片或者拖放到呢度",
-      "dropHint": "JPG、PNG、WebP。可一次處理多張圖片，每張小於 40 MB。亦可以按 Ctrl+V 貼上。",
-      "model": "圖片類型",
-      "mGeneral": "任何類型（產品、寵物、物件、人物）",
-      "mGeneralD": "最準確，第一次會下載約 200 MB 嘅模型",
-      "mPortrait": "人像",
-      "mPortraitD": "快速，約 25 MB 嘅輕量模型，非常適合證件相同頭像",
-      "bg": "新背景",
-      "bgNone": "透明（PNG）",
-      "bgWhite": "白色",
-      "bgColor": "其他顏色",
-      "run": "移除背景",
-      "zip": "下載全部（.zip）",
-      "note": "AI 喺你嘅裝置運行（如果瀏覽器支援 WebGPU，會使用你嘅顯示卡）；圖片絕不會傳送去任何地方。模型只會喺第一次下載，並由瀏覽器快取。較舊嘅電腦或手機每張圖片可能需要 10–60 秒。如果只係簡單嘅白色背景，使用「移除圖片背景」工具會更快。",
-      "download": "下載",
-      "tooBig": "超過 40 MB",
-      "suffix": "no-bg",
-      "loadingLib": "正在載入 AI 執行環境…",
-      "loadingModel": "正在下載 AI 模型（只限第一次）…",
-      "working": "正在處理圖片",
-      "errImg": "處理唔到呢張圖片",
-      "done": "完成！",
-      "err": "呢個瀏覽器運行唔到 AI。請試最新版本嘅 Chrome 或 Edge。",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "揀選圖片或者拖放到呢度",

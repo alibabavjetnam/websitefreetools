@@ -434,10 +434,6 @@
       "name": "HEIC na JPG",
       "desc": "Převeďte fotky HEIC z iPhonu do JPG nebo PNG, aby se otevřely kdekoli. Více souborů najednou."
     },
-    "ai-bg-remove": {
-      "name": "Odstranění pozadí pomocí AI",
-      "desc": "Vyřízněte lidi, produkty a zvířata z jakéhokoli pozadí pomocí AI přímo v zařízení a stáhněte průhledné PNG."
-    },
     "image-upscale": {
       "name": "Zvětšení obrázku pomocí AI",
       "desc": "Zvětšete obrázky 2× nebo 4× a zaostřete detaily pomocí AI. Ideální pro malé, rozmazané nebo staré fotky."
@@ -587,7 +583,32 @@
       "err.notImage": "Tento soubor není obrázek.",
       "err.tooBig": "Obrázek je větší než 40 MB.",
       "canvas.title": "Kliknutím na oblast pozadí vyberete jeho barvu",
-      "toast.pickedBg": "Barva pozadí vybrána"
+      "toast.pickedBg": "Barva pozadí vybrána",
+      "ai.dropTitle": "Vyberte obrázky nebo je sem přetáhněte",
+      "ai.dropHint": "JPG, PNG, WebP. Mnoho obrázků najednou, každý do 40 MB. Můžete také vložit pomocí Ctrl+V.",
+      "ai.model": "Typ obrázku",
+      "ai.mGeneral": "Cokoli (produkty, zvířata, předměty, lidé)",
+      "ai.mGeneralD": "nejpřesnější, poprvé stáhne model o velikosti asi 200 MB",
+      "ai.mPortrait": "Portréty lidí",
+      "ai.mPortraitD": "rychlý, lehký model asi 25 MB, ideální na průkazové a profilové fotky",
+      "ai.bg": "Nové pozadí",
+      "ai.bgNone": "Průhledné (PNG)",
+      "ai.bgWhite": "Bílé",
+      "ai.bgColor": "Jiná barva",
+      "ai.run": "Odstranit pozadí",
+      "ai.zip": "Stáhnout vše (.zip)",
+      "ai.note": "AI běží ve vašem zařízení (s grafickou kartou, pokud prohlížeč podporuje WebGPU); obrázky se nikam neodesílají. Model se stáhne jen poprvé a prohlížeč si ho uloží do mezipaměti. Starší počítače nebo telefony mohou potřebovat 10–60 sekund na obrázek. Pro jednoduchá bílá pozadí je rychlejší nástroj Odstranění pozadí obrázku.",
+      "ai.download": "Stáhnout",
+      "ai.tooBig": "větší než 40 MB",
+      "ai.suffix": "bez-pozadi",
+      "ai.loadingLib": "Načítám prostředí AI…",
+      "ai.loadingModel": "Stahuji model AI (jen poprvé)…",
+      "ai.working": "Zpracovávám obrázek",
+      "ai.errImg": "Tento obrázek nelze zpracovat",
+      "ai.done": "Hotovo!",
+      "ai.err": "V tomto prohlížeči nelze AI spustit. Zkuste aktuální Chrome nebo Edge.",
+      "ai.zipName": "odstranene-pozadi",
+      "tab.simple": "Jednobarevné pozadí (rychlé)"
     },
     "attendance": {
       "add.label": "Přidat žáka",
@@ -2441,32 +2462,6 @@
       "errNet": "Dekodér se nepodařilo stáhnout. Zkontrolujte připojení a zkuste to znovu.",
       "errDecode": "Tuto fotku nelze přečíst (poškozený soubor nebo nepodporovaná varianta HEIC).",
       "zipName": "prevedene-fotky-heic"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Vyberte obrázky nebo je sem přetáhněte",
-      "dropHint": "JPG, PNG, WebP. Mnoho obrázků najednou, každý do 40 MB. Můžete také vložit pomocí Ctrl+V.",
-      "model": "Typ obrázku",
-      "mGeneral": "Cokoli (produkty, zvířata, předměty, lidé)",
-      "mGeneralD": "nejpřesnější, poprvé stáhne model o velikosti asi 200 MB",
-      "mPortrait": "Portréty lidí",
-      "mPortraitD": "rychlý, lehký model asi 25 MB, ideální na průkazové a profilové fotky",
-      "bg": "Nové pozadí",
-      "bgNone": "Průhledné (PNG)",
-      "bgWhite": "Bílé",
-      "bgColor": "Jiná barva",
-      "run": "Odstranit pozadí",
-      "zip": "Stáhnout vše (.zip)",
-      "note": "AI běží ve vašem zařízení (s grafickou kartou, pokud prohlížeč podporuje WebGPU); obrázky se nikam neodesílají. Model se stáhne jen poprvé a prohlížeč si ho uloží do mezipaměti. Starší počítače nebo telefony mohou potřebovat 10–60 sekund na obrázek. Pro jednoduchá bílá pozadí je rychlejší nástroj Odstranění pozadí obrázku.",
-      "download": "Stáhnout",
-      "tooBig": "větší než 40 MB",
-      "suffix": "bez-pozadi",
-      "loadingLib": "Načítám prostředí AI…",
-      "loadingModel": "Stahuji model AI (jen poprvé)…",
-      "working": "Zpracovávám obrázek",
-      "errImg": "Tento obrázek nelze zpracovat",
-      "done": "Hotovo!",
-      "err": "V tomto prohlížeči nelze AI spustit. Zkuste aktuální Chrome nebo Edge.",
-      "zipName": "odstranene-pozadi"
     },
     "image-upscale": {
       "dropTitle": "Vyberte obrázek nebo ho sem přetáhněte",

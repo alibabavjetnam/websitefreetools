@@ -434,10 +434,6 @@
       "name": "HEIC uz JPG",
       "desc": "Pārveidojiet iPhone HEIC fotoattēlus uz JPG vai PNG, lai tie atvērtos jebkur. Daudz failu vienlaikus."
     },
-    "ai-bg-remove": {
-      "name": "Fona noņemšana ar MI",
-      "desc": "Izgrieziet cilvēkus, produktus un mājdzīvniekus no jebkura fona ar ierīcē strādājošu MI un lejupielādējiet caurspīdīgu PNG."
-    },
     "image-upscale": {
       "name": "Attēla palielināšana ar MI",
       "desc": "Palieliniet attēlus 2× vai 4× un uzlabojiet detaļu asumu ar MI. Lieliski maziem, izplūdušiem vai veciem foto."
@@ -587,7 +583,32 @@
       "err.notImage": "Šis fails nav attēls.",
       "err.tooBig": "Attēls ir lielāks par 40 MB.",
       "canvas.title": "Noklikšķiniet uz fona apgabala, lai izvēlētos tā krāsu",
-      "toast.pickedBg": "Fona krāsa izvēlēta"
+      "toast.pickedBg": "Fona krāsa izvēlēta",
+      "ai.dropTitle": "Izvēlieties attēlus vai velciet tos šeit",
+      "ai.dropHint": "JPG, PNG, WebP. Daudz attēlu vienlaikus, katrs līdz 40 MB. Varat arī ielīmēt ar Ctrl+V.",
+      "ai.model": "Attēla veids",
+      "ai.mGeneral": "Jebkas (produkti, mājdzīvnieki, priekšmeti, cilvēki)",
+      "ai.mGeneralD": "visprecīzākais, pirmo reizi lejupielādē aptuveni 200 MB modeli",
+      "ai.mPortrait": "Cilvēku portreti",
+      "ai.mPortraitD": "ātrs, viegls aptuveni 25 MB modelis, lieliski dokumentu un profila foto",
+      "ai.bg": "Jauns fons",
+      "ai.bgNone": "Caurspīdīgs (PNG)",
+      "ai.bgWhite": "Balts",
+      "ai.bgColor": "Cita krāsa",
+      "ai.run": "Noņemt fonu",
+      "ai.zip": "Lejupielādēt visu (.zip)",
+      "ai.note": "MI darbojas jūsu ierīcē (ar videokarti, ja pārlūks atbalsta WebGPU); attēli nekur netiek sūtīti. Modelis tiek lejupielādēts tikai pirmo reizi un saglabāts pārlūka kešatmiņā. Vecākos datoros vai telefonos vienam attēlam var būt vajadzīgas 10–60 sekundes. Vienkāršam baltam fonam ātrāks ir attēla fona noņemšanas rīks.",
+      "ai.download": "Lejupielādēt",
+      "ai.tooBig": "lielāks par 40 MB",
+      "ai.suffix": "bez-fona",
+      "ai.loadingLib": "Ielādē MI moduli…",
+      "ai.loadingModel": "Lejupielādē MI modeli (tikai pirmo reizi)…",
+      "ai.working": "Apstrādā attēlu",
+      "ai.errImg": "Šo attēlu neizdevās apstrādāt",
+      "ai.done": "Gatavs!",
+      "ai.err": "Šajā pārlūkā MI nevar darboties. Mēģiniet jaunāku Chrome vai Edge.",
+      "ai.zipName": "fons-nonemts",
+      "tab.simple": "Vienkrāsains fons (ātri)"
     },
     "attendance": {
       "add.label": "Pievienot skolēnu",
@@ -2441,32 +2462,6 @@
       "errNet": "Neizdevās lejupielādēt dekoderu. Pārbaudiet savienojumu un mēģiniet vēlreiz.",
       "errDecode": "Neizdevās nolasīt šo fotoattēlu (bojāts fails vai neatbalstīts HEIC variants).",
       "zipName": "parveidoti-heic-foto"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Izvēlieties attēlus vai velciet tos šeit",
-      "dropHint": "JPG, PNG, WebP. Daudz attēlu vienlaikus, katrs līdz 40 MB. Varat arī ielīmēt ar Ctrl+V.",
-      "model": "Attēla veids",
-      "mGeneral": "Jebkas (produkti, mājdzīvnieki, priekšmeti, cilvēki)",
-      "mGeneralD": "visprecīzākais, pirmo reizi lejupielādē aptuveni 200 MB modeli",
-      "mPortrait": "Cilvēku portreti",
-      "mPortraitD": "ātrs, viegls aptuveni 25 MB modelis, lieliski dokumentu un profila foto",
-      "bg": "Jauns fons",
-      "bgNone": "Caurspīdīgs (PNG)",
-      "bgWhite": "Balts",
-      "bgColor": "Cita krāsa",
-      "run": "Noņemt fonu",
-      "zip": "Lejupielādēt visu (.zip)",
-      "note": "MI darbojas jūsu ierīcē (ar videokarti, ja pārlūks atbalsta WebGPU); attēli nekur netiek sūtīti. Modelis tiek lejupielādēts tikai pirmo reizi un saglabāts pārlūka kešatmiņā. Vecākos datoros vai telefonos vienam attēlam var būt vajadzīgas 10–60 sekundes. Vienkāršam baltam fonam ātrāks ir attēla fona noņemšanas rīks.",
-      "download": "Lejupielādēt",
-      "tooBig": "lielāks par 40 MB",
-      "suffix": "bez-fona",
-      "loadingLib": "Ielādē MI moduli…",
-      "loadingModel": "Lejupielādē MI modeli (tikai pirmo reizi)…",
-      "working": "Apstrādā attēlu",
-      "errImg": "Šo attēlu neizdevās apstrādāt",
-      "done": "Gatavs!",
-      "err": "Šajā pārlūkā MI nevar darboties. Mēģiniet jaunāku Chrome vai Edge.",
-      "zipName": "fons-nonemts"
     },
     "image-upscale": {
       "dropTitle": "Izvēlieties attēlu vai velciet to šeit",

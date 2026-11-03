@@ -434,10 +434,6 @@
       "name": "HEIC ilaa JPG",
       "desc": "U beddel sawirada iPhone ee HEIC JPG ama PNG si ay meel walba u furmaan. Beddelka badan ayaa la taageeraa."
     },
-    "ai-bg-remove": {
-      "name": "Ka Saarayaasha Gadaal-sawirka AI",
-      "desc": "Ka gooy dadka, alaabta iyo xayawaanka gadaal-sawir kasta adigoo adeegsanaya AI aaladda gudaheeda oo soo deji PNG hufan."
-    },
     "image-upscale": {
       "name": "Weyneeyaha Sawirka AI",
       "desc": "Weynee sawirada 2× ama 4× oo cadee faahfaahinta AI. Aad u fiican sawirada yaryar, ruxruxsan ama duug ah."
@@ -587,7 +583,32 @@
       "err.notImage": "Faylkani ma aha sawir.",
       "err.tooBig": "Sawirku wuu ka weyn yahay 40 MB.",
       "canvas.title": "Riix aagga gadaal-sawirka si aad u doorato midabkiisa",
-      "toast.pickedBg": "Midabka gadaal-sawirka waa la doortay"
+      "toast.pickedBg": "Midabka gadaal-sawirka waa la doortay",
+      "ai.dropTitle": "Dooro sawirro ama halkan ku jiid",
+      "ai.dropHint": "JPG, PNG, WebP. Sawirro badan hal mar, mid kasta ka yar 40 MB. Waxaad kaloo ku dhejin kartaa Ctrl+V.",
+      "ai.model": "Nooca sawirka",
+      "ai.mGeneral": "Wax kasta (alaab, xayawaan guri, shay, dad)",
+      "ai.mGeneralD": "ugu saxsan, wuxuu markii ugu horreysay soo dejiyaa moodel qiyaastii 200 MB ah",
+      "ai.mPortrait": "Sawirrada dadka",
+      "ai.mPortraitD": "moodel degdeg ah oo khafiif ah oo qiyaastii 25 MB ah, aad u fiican sawirrada aqoonsiga iyo profile-ka",
+      "ai.bg": "Gadaal-sawir cusub",
+      "ai.bgNone": "Hufan (PNG)",
+      "ai.bgWhite": "Cad",
+      "ai.bgColor": "Midab kale",
+      "ai.run": "Ka saar gadaal-sawirka",
+      "ai.zip": "Soo deji dhammaan (.zip)",
+      "ai.note": "AI-gu wuxuu ka shaqeeyaa aaladdaada (isagoo isticmaalaya kaarkaaga garaafiga haddii browser-ku taageero WebGPU); sawirrada meel looma dirayo. Moodelka waxaa la soo dejiyaa markii ugu horreysay oo keliya browser-kaaguna wuu kaydiyaa. Kombiyuutarada ama taleefannada duug ah waxay qaadan karaan 10–60 ilbiriqsi sawir kasta. Gadaal-sawirrada cad ee fudud, qalabka Ka Saar Gadaal-sawirka Sawirka ayaa ka degdegsan.",
+      "ai.download": "Soo deji",
+      "ai.tooBig": "ka weyn 40 MB",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "AI runtime waa la rarayaa…",
+      "ai.loadingModel": "Moodelka AI waa la soo dejinayaa (markii ugu horreysay oo keliya)…",
+      "ai.working": "Waa la habaynayaa sawirka",
+      "ai.errImg": "Sawirkan lama habayn karin",
+      "ai.done": "Waa dhammaaday!",
+      "ai.err": "AI-ga lagama shaqeyn karo browser-kan. Isku day Chrome ama Edge cusub.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Asal midab keliya (degdeg)"
     },
     "attendance": {
       "add.label": "Ku dar arday",
@@ -3356,32 +3377,6 @@
       "errNet": "Lama soo dejin karin furfuraha. Hubi isku xirkaaga oo mar kale isku day.",
       "errDecode": "Sawirkan lama akhrin karin (fayl waxyeelloobay ama nooc HEIC oo aan la taageerin).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Dooro sawirro ama halkan ku jiid",
-      "dropHint": "JPG, PNG, WebP. Sawirro badan hal mar, mid kasta ka yar 40 MB. Waxaad kaloo ku dhejin kartaa Ctrl+V.",
-      "model": "Nooca sawirka",
-      "mGeneral": "Wax kasta (alaab, xayawaan guri, shay, dad)",
-      "mGeneralD": "ugu saxsan, wuxuu markii ugu horreysay soo dejiyaa moodel qiyaastii 200 MB ah",
-      "mPortrait": "Sawirrada dadka",
-      "mPortraitD": "moodel degdeg ah oo khafiif ah oo qiyaastii 25 MB ah, aad u fiican sawirrada aqoonsiga iyo profile-ka",
-      "bg": "Gadaal-sawir cusub",
-      "bgNone": "Hufan (PNG)",
-      "bgWhite": "Cad",
-      "bgColor": "Midab kale",
-      "run": "Ka saar gadaal-sawirka",
-      "zip": "Soo deji dhammaan (.zip)",
-      "note": "AI-gu wuxuu ka shaqeeyaa aaladdaada (isagoo isticmaalaya kaarkaaga garaafiga haddii browser-ku taageero WebGPU); sawirrada meel looma dirayo. Moodelka waxaa la soo dejiyaa markii ugu horreysay oo keliya browser-kaaguna wuu kaydiyaa. Kombiyuutarada ama taleefannada duug ah waxay qaadan karaan 10–60 ilbiriqsi sawir kasta. Gadaal-sawirrada cad ee fudud, qalabka Ka Saar Gadaal-sawirka Sawirka ayaa ka degdegsan.",
-      "download": "Soo deji",
-      "tooBig": "ka weyn 40 MB",
-      "suffix": "no-bg",
-      "loadingLib": "AI runtime waa la rarayaa…",
-      "loadingModel": "Moodelka AI waa la soo dejinayaa (markii ugu horreysay oo keliya)…",
-      "working": "Waa la habaynayaa sawirka",
-      "errImg": "Sawirkan lama habayn karin",
-      "done": "Waa dhammaaday!",
-      "err": "AI-ga lagama shaqeyn karo browser-kan. Isku day Chrome ama Edge cusub.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Dooro sawir ama halkan ku jiid",

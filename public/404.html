@@ -39,6 +39,8 @@
         }
         // Địa chỉ cũ chưa có tiền tố ngôn ngữ (vd. /tools/pdf-merge.html) → chuyển sang /<lang>/...
         var path = location.pathname;
+        // Công cụ đã gộp: Xoá nền ảnh bằng AI → tab AI của Xoá nền ảnh
+        if (/tools\/ai-bg-remove\.html$/.test(path)) { location.replace(path.replace('ai-bg-remove', 'bg-remove') + location.search + location.hash); return; }
         if (/^\/(tools\/[a-z0-9-]+\.html|chinh-sach-bao-mat\.html|dieu-khoan\.html|privacy-policy\.html)$/.test(path)) {
           location.replace('/' + lang + path + location.search + location.hash);
           return;

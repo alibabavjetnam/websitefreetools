@@ -3,6 +3,7 @@ import { $, downloadBlob, toast } from '../ui';
 import { pageText } from '../i18n';
 import { MAX_IMAGE_BYTES, canvasToBlob, drawToCanvas, loadImage, renameFile } from '../lib/image';
 import { keyOutBackground } from '../lib/bg-remove';
+import { mountAiBg } from '../lib/ai-bg-ui';
 
 mountLayout({ activeTool: 'bg-remove' });
 const T = pageText();
@@ -10,6 +11,11 @@ const T = pageText();
 const MAX_SIDE = 2400; // ảnh lớn hơn được thu nhỏ để xử lý nhanh và không hết bộ nhớ
 
 $('#tool-root').innerHTML = `
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" data-tab="simple" aria-selected="true">${T('tab.simple', 'Nền đơn sắc (nhanh)')}</button>
+    <button type="button" role="tab" data-tab="ai" aria-selected="false">AI</button>
+  </div>
+  <div id="tab-simple">
   <div class="workspace tool-body">
     <div class="panel">
       <label class="dropzone" id="drop">
@@ -41,6 +47,8 @@ $('#tool-root').innerHTML = `
       <div class="actions"><button type="button" class="btn btn-primary" id="dl" disabled>${T('dl', 'Tải ảnh về')}</button></div>
     </section>
   </div>
+  </div>
+  <div id="tab-ai" hidden></div>
 `;
 
 let file: File | null = null;
@@ -176,3 +184,16 @@ $('#dl').addEventListener('click', async () => {
   const blob = await canvasToBlob(out, bg ? 'image/jpeg' : 'image/png', 0.92);
   downloadBlob(blob, renameFile(file.name, bg ? 'jpg' : 'png', '-xoa-nen'));
 });
+
+/* ---------- Tab: nền đơn sắc (nhanh) / AI ---------- */
+let aiMounted = false;
+document.querySelectorAll<HTMLButtonElement>('.tabs [data-tab]').forEach((b) => b.addEventListener('click', () => {
+  const ai = b.dataset.tab === 'ai';
+  document.querySelectorAll<HTMLButtonElement>('.tabs [data-tab]').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+  $('#tab-simple').hidden = ai;
+  $('#tab-ai').hidden = !ai;
+  if (ai && !aiMounted) {
+    aiMounted = true;
+    mountAiBg((k, f) => T('ai.' + k, f), $('#tab-ai'));
+  }
+}));

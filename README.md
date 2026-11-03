@@ -50,7 +50,7 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Xử lý hình ảnh | Cắt ảnh (tỉ lệ, tròn, xoay, lật) | `tools/image-crop.html` |
 | Xử lý hình ảnh | Lấy chữ từ ảnh / PDF scan (OCR, Tesseract.js) | `tools/image-ocr.html` |
 | Xử lý hình ảnh | HEIC sang JPG (heic2any) | `tools/heic-jpg.html` |
-| Xử lý hình ảnh | Xoá nền ảnh bằng AI (BiRefNet / MODNet, Transformers.js) | `tools/ai-bg-remove.html` |
+| Xử lý hình ảnh | Xoá nền ảnh bằng AI (BiRefNet / MODNet, Transformers.js) | `tools/bg-remove.html` (tab AI) |
 | Xử lý hình ảnh | Làm nét & phóng to ảnh AI (Swin2SR, xử lý theo ô) | `tools/image-upscale.html` |
 | Xử lý file | Ảnh sang PDF | `tools/image-to-pdf.html` |
 | Xử lý file | PDF sang ảnh | `tools/pdf-to-image.html` |

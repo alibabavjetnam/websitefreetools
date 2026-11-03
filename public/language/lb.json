@@ -434,10 +434,6 @@
       "name": "HEIC a JPG",
       "desc": "iPhone-HEIC-Fotoen a JPG oder PNG konvertéieren, sou datt se iwwerall opgoen. Stapelkonversioun ënnerstëtzt."
     },
-    "ai-bg-remove": {
-      "name": "KI-Hannergrondentfernung",
-      "desc": "Persounen, Produkter a Haustéieren mat KI um Apparat vun all Hannergrond ausschneiden an en duerchsichtege PNG eroflueden."
-    },
     "image-upscale": {
       "name": "KI-Bildvergréisserung",
       "desc": "Biller 2× oder 4× mat KI vergréisseren an Detailer schärfen. Super fir kleng, onschaarf oder al Fotoen."
@@ -587,7 +583,32 @@
       "err.notImage": "Dës Datei ass kee Bild.",
       "err.tooBig": "D'Bild ass méi grouss wéi 40 MB.",
       "canvas.title": "Klick op d'Hannergrondfläch, fir seng Faarf ze wielen",
-      "toast.pickedBg": "Hannergrondfaarf ausgewielt"
+      "toast.pickedBg": "Hannergrondfaarf ausgewielt",
+      "ai.dropTitle": "Wiel Biller aus oder zéi se heihin",
+      "ai.dropHint": "JPG, PNG, WebP. Vill Biller op eemol, all ënner 40 MB. Du kanns och mat Ctrl+V apechen.",
+      "ai.model": "Bildaart",
+      "ai.mGeneral": "Alles (Produiten, Haustéieren, Géigestänn, Leit)",
+      "ai.mGeneralD": "am genauesten, luet beim éischte Mol e Modell vun ongeféier 200 MB erof",
+      "ai.mPortrait": "Portraite vu Leit",
+      "ai.mPortraitD": "séier, liichte Modell vun ongeféier 25 MB, super fir Ausweisfotoen a Profilbiller",
+      "ai.bg": "Neien Hannergrond",
+      "ai.bgNone": "Duerchsiichteg (PNG)",
+      "ai.bgWhite": "Wäiss",
+      "ai.bgColor": "Aner Faarf",
+      "ai.run": "Hannergrond ewechhuelen",
+      "ai.zip": "Alles eroflueden (.zip)",
+      "ai.note": "D'KI leeft op dengem Apparat (mat denger Grafikkaart, wann de Browser WebGPU ënnerstëtzt); d'Biller ginn nirgendwou higeschéckt. D'Modell gëtt nëmmen den éischte Mol erofgelueden an am Browser zwëschegespäichert. Eeler Computeren oder Telefone brauche vläicht 10–60 Sekonne pro Bild. Fir einfach wäiss Hannergrënn ass den Tool Bildhannergrond ewechhuelen méi séier.",
+      "ai.download": "Eroflueden",
+      "ai.tooBig": "méi grouss wéi 40 MB",
+      "ai.suffix": "ouni-hannergrond",
+      "ai.loadingLib": "D'KI-Runtime gëtt gelueden…",
+      "ai.loadingModel": "D'KI-Modell gëtt erofgelueden (nëmmen den éischte Mol)…",
+      "ai.working": "Bild gëtt verschafft",
+      "ai.errImg": "Dëst Bild konnt net verschafft ginn",
+      "ai.done": "Fäerdeg!",
+      "ai.err": "D'KI konnt an dësem Browser net lafen. Probéier e rezente Chrome oder Edge.",
+      "ai.zipName": "hannergrond-ewechgeholl",
+      "tab.simple": "Eefarwegen Hannergrond (séier)"
     },
     "attendance": {
       "add.label": "Schüler derbäisetzen",
@@ -3356,32 +3377,6 @@
       "errNet": "Den Dekoder konnt net erofgelueden ginn. Kontrolléier deng Verbindung a probéier et nach eng Kéier.",
       "errDecode": "Dëst Foto konnt net gelies ginn (beschiedegt Datei oder net ënnerstëtzte HEIC-Variant).",
       "zipName": "ëmgewandelt-heic-fotoen"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Wiel Biller aus oder zéi se heihin",
-      "dropHint": "JPG, PNG, WebP. Vill Biller op eemol, all ënner 40 MB. Du kanns och mat Ctrl+V apechen.",
-      "model": "Bildaart",
-      "mGeneral": "Alles (Produiten, Haustéieren, Géigestänn, Leit)",
-      "mGeneralD": "am genauesten, luet beim éischte Mol e Modell vun ongeféier 200 MB erof",
-      "mPortrait": "Portraite vu Leit",
-      "mPortraitD": "séier, liichte Modell vun ongeféier 25 MB, super fir Ausweisfotoen a Profilbiller",
-      "bg": "Neien Hannergrond",
-      "bgNone": "Duerchsiichteg (PNG)",
-      "bgWhite": "Wäiss",
-      "bgColor": "Aner Faarf",
-      "run": "Hannergrond ewechhuelen",
-      "zip": "Alles eroflueden (.zip)",
-      "note": "D'KI leeft op dengem Apparat (mat denger Grafikkaart, wann de Browser WebGPU ënnerstëtzt); d'Biller ginn nirgendwou higeschéckt. D'Modell gëtt nëmmen den éischte Mol erofgelueden an am Browser zwëschegespäichert. Eeler Computeren oder Telefone brauche vläicht 10–60 Sekonne pro Bild. Fir einfach wäiss Hannergrënn ass den Tool Bildhannergrond ewechhuelen méi séier.",
-      "download": "Eroflueden",
-      "tooBig": "méi grouss wéi 40 MB",
-      "suffix": "ouni-hannergrond",
-      "loadingLib": "D'KI-Runtime gëtt gelueden…",
-      "loadingModel": "D'KI-Modell gëtt erofgelueden (nëmmen den éischte Mol)…",
-      "working": "Bild gëtt verschafft",
-      "errImg": "Dëst Bild konnt net verschafft ginn",
-      "done": "Fäerdeg!",
-      "err": "D'KI konnt an dësem Browser net lafen. Probéier e rezente Chrome oder Edge.",
-      "zipName": "hannergrond-ewechgeholl"
     },
     "image-upscale": {
       "dropTitle": "Wiel e Bild aus oder zéi et heihin",

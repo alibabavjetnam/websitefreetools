@@ -434,10 +434,6 @@
       "name": "HEIC në JPG",
       "desc": "Konverto fotot HEIC të iPhone në JPG ose PNG që të hapen kudo. Mbështet konvertimin në grup."
     },
-    "ai-bg-remove": {
-      "name": "Heqës sfondi me AI",
-      "desc": "Prit njerëz, produkte dhe kafshë shtëpiake nga çdo sfond me AI në pajisjen tënde dhe shkarko një PNG transparent."
-    },
     "image-upscale": {
       "name": "Zmadhues imazhesh me AI",
       "desc": "Zmadho imazhet 2× ose 4× dhe mpreh detajet me AI. Shkëlqyeshëm për foto të vogla, të turbullta ose të vjetra."
@@ -587,7 +583,32 @@
       "err.notImage": "Ky skedar nuk është imazh.",
       "err.tooBig": "Imazhi është më i madh se 40 MB.",
       "canvas.title": "Kliko zonën e sfondit për të zgjedhur ngjyrën e saj",
-      "toast.pickedBg": "Ngjyra e zgjedhur e sfondit"
+      "toast.pickedBg": "Ngjyra e zgjedhur e sfondit",
+      "ai.dropTitle": "Zgjidh imazhe ose tërhiqi këtu",
+      "ai.dropHint": "JPG, PNG, WebP. Shumë imazhe njëherësh, secili nën 40 MB. Mund t'i ngjitësh edhe me Ctrl+V.",
+      "ai.model": "Lloji i imazhit",
+      "ai.mGeneral": "Çdo gjë (produkte, kafshë, objekte, njerëz)",
+      "ai.mGeneralD": "më i sakti, herën e parë shkarkon një model rreth 200 MB",
+      "ai.mPortrait": "Portrete njerëzish",
+      "ai.mPortraitD": "model i shpejtë dhe i lehtë rreth 25 MB, shkëlqyeshëm për foto dokumentesh dhe profili",
+      "ai.bg": "Sfond i ri",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "I bardhë",
+      "ai.bgColor": "Ngjyrë tjetër",
+      "ai.run": "Hiq sfondin",
+      "ai.zip": "Shkarko të gjitha (.zip)",
+      "ai.note": "AI funksionon në pajisjen tënde (duke përdorur kartën grafike nëse shfletuesi mbështet WebGPU); imazhet nuk dërgohen kurrë askund. Modeli shkarkohet vetëm herën e parë dhe ruhet në memorien e shfletuesit. Kompjuterët ose telefonat e vjetër mund të marrin 10–60 sekonda për imazh. Për sfonde të thjeshta të bardha, mjeti Hiq sfondin e imazhit është më i shpejtë.",
+      "ai.download": "Shkarko",
+      "ai.tooBig": "më i madh se 40 MB",
+      "ai.suffix": "pa-sfond",
+      "ai.loadingLib": "Po ngarkohet motori i AI…",
+      "ai.loadingModel": "Po shkarkohet modeli i AI (vetëm herën e parë)…",
+      "ai.working": "Po përpunohet imazhi",
+      "ai.errImg": "Nuk u përpunua dot ky imazh",
+      "ai.done": "U krye!",
+      "ai.err": "Nuk u ekzekutua dot AI në këtë shfletues. Provo një Chrome ose Edge të fundit.",
+      "ai.zipName": "sfondi-hequr",
+      "tab.simple": "Sfond njëngjyrësh (shpejt)"
     },
     "attendance": {
       "add.label": "Shto nxënës",
@@ -3356,32 +3377,6 @@
       "errNet": "Nuk u shkarkua dot dekoduesi. Kontrollo lidhjen dhe provo përsëri.",
       "errDecode": "Nuk u lexua dot kjo foto (skedar i dëmtuar ose variant HEIC i pambështetur).",
       "zipName": "foto-heic-te-konvertuara"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Zgjidh imazhe ose tërhiqi këtu",
-      "dropHint": "JPG, PNG, WebP. Shumë imazhe njëherësh, secili nën 40 MB. Mund t'i ngjitësh edhe me Ctrl+V.",
-      "model": "Lloji i imazhit",
-      "mGeneral": "Çdo gjë (produkte, kafshë, objekte, njerëz)",
-      "mGeneralD": "më i sakti, herën e parë shkarkon një model rreth 200 MB",
-      "mPortrait": "Portrete njerëzish",
-      "mPortraitD": "model i shpejtë dhe i lehtë rreth 25 MB, shkëlqyeshëm për foto dokumentesh dhe profili",
-      "bg": "Sfond i ri",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "I bardhë",
-      "bgColor": "Ngjyrë tjetër",
-      "run": "Hiq sfondin",
-      "zip": "Shkarko të gjitha (.zip)",
-      "note": "AI funksionon në pajisjen tënde (duke përdorur kartën grafike nëse shfletuesi mbështet WebGPU); imazhet nuk dërgohen kurrë askund. Modeli shkarkohet vetëm herën e parë dhe ruhet në memorien e shfletuesit. Kompjuterët ose telefonat e vjetër mund të marrin 10–60 sekonda për imazh. Për sfonde të thjeshta të bardha, mjeti Hiq sfondin e imazhit është më i shpejtë.",
-      "download": "Shkarko",
-      "tooBig": "më i madh se 40 MB",
-      "suffix": "pa-sfond",
-      "loadingLib": "Po ngarkohet motori i AI…",
-      "loadingModel": "Po shkarkohet modeli i AI (vetëm herën e parë)…",
-      "working": "Po përpunohet imazhi",
-      "errImg": "Nuk u përpunua dot ky imazh",
-      "done": "U krye!",
-      "err": "Nuk u ekzekutua dot AI në këtë shfletues. Provo një Chrome ose Edge të fundit.",
-      "zipName": "sfondi-hequr"
     },
     "image-upscale": {
       "dropTitle": "Zgjidh një imazh ose tërhiqe këtu",

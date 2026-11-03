@@ -434,10 +434,6 @@
       "name": "HEIC sí JPG",
       "desc": "Yí àwọn fọ́tò HEIC ti iPhone padà sí JPG tàbí PNG kí wọ́n lè ṣí níbikíbi. A ṣètìlẹ́yìn fún ìyípadà ọ̀pọ̀."
     },
-    "ai-bg-remove": {
-      "name": "Olùyọ Ẹ̀yìn AI",
-      "desc": "Gé àwọn ènìyàn, ọjà àti ẹranko ọ̀sìn kúrò lára ẹ̀yìn èyíkéyìí pẹ̀lú AI lórí ẹ̀rọ kí o sì ṣe àgbéjáde PNG oníhòrìhò."
-    },
     "image-upscale": {
       "name": "Olùmú Àwòrán Tóbi AI",
       "desc": "Mú àwòrán tóbi sí 2× tàbí 4× kí o sì mú àwọn àlàyé hàn kedere pẹ̀lú AI. Ó dára fún àwọn fọ́tò kéékèèké, tí kò hàn kedere tàbí tí ó ti dàgbà."
@@ -587,7 +583,32 @@
       "err.notImage": "Fáìlì yìí kì í ṣe àwòrán.",
       "err.tooBig": "Àwòrán náà tóbi ju 40 MB lọ.",
       "canvas.title": "Tẹ agbègbè ẹ̀yìn láti yan àwọ̀ rẹ̀",
-      "toast.pickedBg": "A ti yan àwọ̀ ẹ̀yìn"
+      "toast.pickedBg": "A ti yan àwọ̀ ẹ̀yìn",
+      "ai.dropTitle": "Yan àwọn àwòrán tàbí fà wọ́n síbí",
+      "ai.dropHint": "JPG, PNG, WebP. Ọ̀pọ̀ àwòrán lẹ́ẹ̀kan, èyí tí kò ju 40 MB lọ kọ̀ọ̀kan. O tún lè lẹ̀ wọ́n pẹ̀lú Ctrl+V.",
+      "ai.model": "Irú àwòrán",
+      "ai.mGeneral": "Ohunkóhun (ọjà, ẹranko ọ̀sìn, nǹkan, ènìyàn)",
+      "ai.mGeneralD": "ó péye jù, ó ń gbé àwòṣe nǹkan bí 200 MB jáde ní ìgbà àkọ́kọ́",
+      "ai.mPortrait": "Fọ́tò ojú ènìyàn",
+      "ai.mPortraitD": "àwòṣe kíákíá, fúyẹ́ nǹkan bí 25 MB, ó dára fún fọ́tò ID àti fọ́tò àkọsílẹ̀",
+      "ai.bg": "Ẹ̀yìn tuntun",
+      "ai.bgNone": "Oníhòrìhò (PNG)",
+      "ai.bgWhite": "Funfun",
+      "ai.bgColor": "Àwọ̀ mìíràn",
+      "ai.run": "Yọ ẹ̀yìn kúrò",
+      "ai.zip": "Ṣe àgbéjáde gbogbo rẹ̀ (.zip)",
+      "ai.note": "AI ń ṣiṣẹ́ lórí ẹ̀rọ rẹ (ó ń lo káàdì ìrísí rẹ tí aṣàwákiri bá ṣètìlẹ́yìn fún WebGPU); a kì í fi àwọn àwòrán ránṣẹ́ sí ibikíbi. A ń gbé àwòṣe jáde ní ìgbà àkọ́kọ́ nìkan, aṣàwákiri rẹ sì ń pa á mọ́. Àwọn kọ̀ǹpútà tàbí fóònù àtijọ́ lè gba ìṣẹ́jú-àáyá 10–60 fún àwòrán kan. Fún àwọn ẹ̀yìn funfun lásán, irinṣẹ́ Yọ Ẹ̀yìn Àwòrán Kúrò yára jù.",
+      "ai.download": "Ṣe àgbéjáde",
+      "ai.tooBig": "tóbi ju 40 MB lọ",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "Ń gbé AI runtime jáde…",
+      "ai.loadingModel": "Ń gbé àwòṣe AI jáde (ní ìgbà àkọ́kọ́ nìkan)…",
+      "ai.working": "Ń ṣe àwòrán",
+      "ai.errImg": "A kò lè ṣe àwòrán yìí",
+      "ai.done": "Ó ti parí!",
+      "ai.err": "A kò lè ṣiṣẹ́ AI nínú aṣàwákiri yìí. Gbìyànjú Chrome tàbí Edge tuntun.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Ẹ̀yìn àwọ̀ kan (yára)"
     },
     "attendance": {
       "add.label": "Fi akẹ́kọ̀ọ́ kún un",
@@ -3356,32 +3377,6 @@
       "errNet": "A kò lè gbé olùṣí jáde. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o gbìyànjú lẹ́ẹ̀kan sí i.",
       "errDecode": "A kò lè ka fọ́tò yìí (fáìlì tó bàjẹ́ tàbí irú HEIC tí a kò ṣètìlẹ́yìn fún).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Yan àwọn àwòrán tàbí fà wọ́n síbí",
-      "dropHint": "JPG, PNG, WebP. Ọ̀pọ̀ àwòrán lẹ́ẹ̀kan, èyí tí kò ju 40 MB lọ kọ̀ọ̀kan. O tún lè lẹ̀ wọ́n pẹ̀lú Ctrl+V.",
-      "model": "Irú àwòrán",
-      "mGeneral": "Ohunkóhun (ọjà, ẹranko ọ̀sìn, nǹkan, ènìyàn)",
-      "mGeneralD": "ó péye jù, ó ń gbé àwòṣe nǹkan bí 200 MB jáde ní ìgbà àkọ́kọ́",
-      "mPortrait": "Fọ́tò ojú ènìyàn",
-      "mPortraitD": "àwòṣe kíákíá, fúyẹ́ nǹkan bí 25 MB, ó dára fún fọ́tò ID àti fọ́tò àkọsílẹ̀",
-      "bg": "Ẹ̀yìn tuntun",
-      "bgNone": "Oníhòrìhò (PNG)",
-      "bgWhite": "Funfun",
-      "bgColor": "Àwọ̀ mìíràn",
-      "run": "Yọ ẹ̀yìn kúrò",
-      "zip": "Ṣe àgbéjáde gbogbo rẹ̀ (.zip)",
-      "note": "AI ń ṣiṣẹ́ lórí ẹ̀rọ rẹ (ó ń lo káàdì ìrísí rẹ tí aṣàwákiri bá ṣètìlẹ́yìn fún WebGPU); a kì í fi àwọn àwòrán ránṣẹ́ sí ibikíbi. A ń gbé àwòṣe jáde ní ìgbà àkọ́kọ́ nìkan, aṣàwákiri rẹ sì ń pa á mọ́. Àwọn kọ̀ǹpútà tàbí fóònù àtijọ́ lè gba ìṣẹ́jú-àáyá 10–60 fún àwòrán kan. Fún àwọn ẹ̀yìn funfun lásán, irinṣẹ́ Yọ Ẹ̀yìn Àwòrán Kúrò yára jù.",
-      "download": "Ṣe àgbéjáde",
-      "tooBig": "tóbi ju 40 MB lọ",
-      "suffix": "no-bg",
-      "loadingLib": "Ń gbé AI runtime jáde…",
-      "loadingModel": "Ń gbé àwòṣe AI jáde (ní ìgbà àkọ́kọ́ nìkan)…",
-      "working": "Ń ṣe àwòrán",
-      "errImg": "A kò lè ṣe àwòrán yìí",
-      "done": "Ó ti parí!",
-      "err": "A kò lè ṣiṣẹ́ AI nínú aṣàwákiri yìí. Gbìyànjú Chrome tàbí Edge tuntun.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Yan àwòrán kan tàbí fà á síbí",

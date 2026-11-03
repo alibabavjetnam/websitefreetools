@@ -434,10 +434,6 @@
       "name": "HEIC sa JPG",
       "desc": "I-convert ang mga HEIC na litrato ng iPhone sa JPG o PNG para mabuksan kahit saan. Maramihan nang sabay."
     },
-    "ai-bg-remove": {
-      "name": "AI Background Remover",
-      "desc": "Tanggalin ang background ng tao, produkto at alagang hayop gamit ang AI sa device mo at mag-download ng transparent PNG."
-    },
     "image-upscale": {
       "name": "AI Image Upscaler",
       "desc": "Palakihin ang larawan nang 2× o 4× at patalasin ang detalye gamit ang AI. Bagay sa maliliit, malabo o lumang litrato."
@@ -587,7 +583,32 @@
       "err.notImage": "Hindi larawan ang file na ito.",
       "err.tooBig": "Mas malaki sa 40 MB ang larawan.",
       "canvas.title": "I-click ang bahagi ng background para piliin ang kulay nito",
-      "toast.pickedBg": "Napili ang kulay ng background"
+      "toast.pickedBg": "Napili ang kulay ng background",
+      "ai.dropTitle": "Pumili ng mga larawan o i-drag dito",
+      "ai.dropHint": "JPG, PNG, WebP. Marami nang sabay, bawat isa ay mas mababa sa 40 MB. Puwede ring i-paste gamit ang Ctrl+V.",
+      "ai.model": "Uri ng larawan",
+      "ai.mGeneral": "Kahit ano (produkto, alagang hayop, bagay, tao)",
+      "ai.mGeneralD": "pinakatumpak, nagda-download ng mga 200 MB na model sa unang beses",
+      "ai.mPortrait": "Portrait ng tao",
+      "ai.mPortraitD": "mabilis, magaan na model na mga 25 MB, bagay sa ID at profile picture",
+      "ai.bg": "Bagong background",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "Puti",
+      "ai.bgColor": "Ibang kulay",
+      "ai.run": "Tanggalin ang background",
+      "ai.zip": "I-download lahat (.zip)",
+      "ai.note": "Sa device mo tumatakbo ang AI (gamit ang graphics card kung sumusuporta sa WebGPU ang browser); hindi ipinapadala kahit saan ang mga larawan. Sa unang beses lang dina-download ang model at itinatabi ito ng browser. Sa lumang computer o phone, puwedeng umabot ng 10–60 segundo bawat larawan. Para sa simpleng puting background, mas mabilis ang Remove Image Background tool.",
+      "ai.download": "I-download",
+      "ai.tooBig": "lampas 40 MB",
+      "ai.suffix": "no-background",
+      "ai.loadingLib": "Nilo-load ang AI engine…",
+      "ai.loadingModel": "Dina-download ang AI model (unang beses lang)…",
+      "ai.working": "Pinoproseso ang larawan",
+      "ai.errImg": "Hindi maproseso ang larawang ito",
+      "ai.done": "Tapos na!",
+      "ai.err": "Hindi mapatakbo ang AI sa browser na ito. Subukan ang bagong Chrome o Edge.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Isang kulay na background (mabilis)"
     },
     "attendance": {
       "add.label": "Magdagdag ng estudyante",
@@ -2441,32 +2462,6 @@
       "errNet": "Hindi ma-download ang decoder. Tingnan ang connection at subukan ulit.",
       "errDecode": "Hindi mabasa ang litratong ito (sirang file o hindi suportadong uri ng HEIC).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Pumili ng mga larawan o i-drag dito",
-      "dropHint": "JPG, PNG, WebP. Marami nang sabay, bawat isa ay mas mababa sa 40 MB. Puwede ring i-paste gamit ang Ctrl+V.",
-      "model": "Uri ng larawan",
-      "mGeneral": "Kahit ano (produkto, alagang hayop, bagay, tao)",
-      "mGeneralD": "pinakatumpak, nagda-download ng mga 200 MB na model sa unang beses",
-      "mPortrait": "Portrait ng tao",
-      "mPortraitD": "mabilis, magaan na model na mga 25 MB, bagay sa ID at profile picture",
-      "bg": "Bagong background",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "Puti",
-      "bgColor": "Ibang kulay",
-      "run": "Tanggalin ang background",
-      "zip": "I-download lahat (.zip)",
-      "note": "Sa device mo tumatakbo ang AI (gamit ang graphics card kung sumusuporta sa WebGPU ang browser); hindi ipinapadala kahit saan ang mga larawan. Sa unang beses lang dina-download ang model at itinatabi ito ng browser. Sa lumang computer o phone, puwedeng umabot ng 10–60 segundo bawat larawan. Para sa simpleng puting background, mas mabilis ang Remove Image Background tool.",
-      "download": "I-download",
-      "tooBig": "lampas 40 MB",
-      "suffix": "no-background",
-      "loadingLib": "Nilo-load ang AI engine…",
-      "loadingModel": "Dina-download ang AI model (unang beses lang)…",
-      "working": "Pinoproseso ang larawan",
-      "errImg": "Hindi maproseso ang larawang ito",
-      "done": "Tapos na!",
-      "err": "Hindi mapatakbo ang AI sa browser na ito. Subukan ang bagong Chrome o Edge.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Pumili ng larawan o i-drag dito",

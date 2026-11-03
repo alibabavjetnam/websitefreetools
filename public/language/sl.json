@@ -434,10 +434,6 @@
       "name": "HEIC v JPG",
       "desc": "Pretvorite fotografije HEIC iz iPhona v JPG ali PNG, da se odprejo povsod. Več datotek hkrati."
     },
-    "ai-bg-remove": {
-      "name": "Odstranjevanje ozadja z UI",
-      "desc": "Izrežite ljudi, izdelke in hišne ljubljenčke iz katerega koli ozadja z UI na napravi in prenesite prozoren PNG."
-    },
     "image-upscale": {
       "name": "Povečava slike z UI",
       "desc": "Povečajte slike 2× ali 4× in izostrite podrobnosti z UI. Odlično za majhne, zamegljene ali stare fotografije."
@@ -587,7 +583,32 @@
       "err.notImage": "Ta datoteka ni slika.",
       "err.tooBig": "Slika je večja od 40 MB.",
       "canvas.title": "Kliknite območje ozadja za izbiro njegove barve",
-      "toast.pickedBg": "Barva ozadja izbrana"
+      "toast.pickedBg": "Barva ozadja izbrana",
+      "ai.dropTitle": "Izberite slike ali jih povlecite sem",
+      "ai.dropHint": "JPG, PNG, WebP. Veliko slik hkrati, vsaka manjša od 40 MB. Prilepite lahko tudi s Ctrl+V.",
+      "ai.model": "Vrsta slike",
+      "ai.mGeneral": "Karkoli (izdelki, ljubljenčki, predmeti, ljudje)",
+      "ai.mGeneralD": "najbolj natančno, prvič prenese model velikosti približno 200 MB",
+      "ai.mPortrait": "Portreti ljudi",
+      "ai.mPortraitD": "hiter, lahek model velikosti približno 25 MB, odličen za osebne in profilne fotografije",
+      "ai.bg": "Novo ozadje",
+      "ai.bgNone": "Prozorno (PNG)",
+      "ai.bgWhite": "Belo",
+      "ai.bgColor": "Druga barva",
+      "ai.run": "Odstrani ozadje",
+      "ai.zip": "Prenesi vse (.zip)",
+      "ai.note": "UI deluje v vaši napravi (z grafično kartico, če brskalnik podpira WebGPU); slike se nikamor ne pošiljajo. Model se prenese le prvič in ga brskalnik shrani v predpomnilnik. Na starejših računalnikih ali telefonih lahko traja 10–60 sekund na sliko. Za preprosta bela ozadja je orodje za odstranjevanje ozadja slike hitrejše.",
+      "ai.download": "Prenesi",
+      "ai.tooBig": "večja od 40 MB",
+      "ai.suffix": "brez-ozadja",
+      "ai.loadingLib": "Nalagam modul UI…",
+      "ai.loadingModel": "Prenašam model UI (samo prvič)…",
+      "ai.working": "Obdelujem sliko",
+      "ai.errImg": "Te slike ni bilo mogoče obdelati",
+      "ai.done": "Končano!",
+      "ai.err": "UI v tem brskalniku ne more delovati. Poskusite z novejšim Chromom ali Edgeom.",
+      "ai.zipName": "odstranjeno-ozadje",
+      "tab.simple": "Enobarvno ozadje (hitro)"
     },
     "attendance": {
       "add.label": "Dodaj učenca",
@@ -2441,32 +2462,6 @@
       "errNet": "Dekoderja ni bilo mogoče prenesti. Preverite povezavo in poskusite znova.",
       "errDecode": "Te fotografije ni bilo mogoče prebrati (poškodovana datoteka ali nepodprta različica HEIC).",
       "zipName": "pretvorjene-heic-fotografije"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Izberite slike ali jih povlecite sem",
-      "dropHint": "JPG, PNG, WebP. Veliko slik hkrati, vsaka manjša od 40 MB. Prilepite lahko tudi s Ctrl+V.",
-      "model": "Vrsta slike",
-      "mGeneral": "Karkoli (izdelki, ljubljenčki, predmeti, ljudje)",
-      "mGeneralD": "najbolj natančno, prvič prenese model velikosti približno 200 MB",
-      "mPortrait": "Portreti ljudi",
-      "mPortraitD": "hiter, lahek model velikosti približno 25 MB, odličen za osebne in profilne fotografije",
-      "bg": "Novo ozadje",
-      "bgNone": "Prozorno (PNG)",
-      "bgWhite": "Belo",
-      "bgColor": "Druga barva",
-      "run": "Odstrani ozadje",
-      "zip": "Prenesi vse (.zip)",
-      "note": "UI deluje v vaši napravi (z grafično kartico, če brskalnik podpira WebGPU); slike se nikamor ne pošiljajo. Model se prenese le prvič in ga brskalnik shrani v predpomnilnik. Na starejših računalnikih ali telefonih lahko traja 10–60 sekund na sliko. Za preprosta bela ozadja je orodje za odstranjevanje ozadja slike hitrejše.",
-      "download": "Prenesi",
-      "tooBig": "večja od 40 MB",
-      "suffix": "brez-ozadja",
-      "loadingLib": "Nalagam modul UI…",
-      "loadingModel": "Prenašam model UI (samo prvič)…",
-      "working": "Obdelujem sliko",
-      "errImg": "Te slike ni bilo mogoče obdelati",
-      "done": "Končano!",
-      "err": "UI v tem brskalniku ne more delovati. Poskusite z novejšim Chromom ali Edgeom.",
-      "zipName": "odstranjeno-ozadje"
     },
     "image-upscale": {
       "dropTitle": "Izberite sliko ali jo povlecite sem",

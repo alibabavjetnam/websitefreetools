@@ -434,10 +434,6 @@
       "name": "HEIC gaa JPG",
       "desc": "Gbanwee foto HEIC nke iPhone gaa JPG ma ọ bụ PNG ka ha mepee n’ebe ọ bụla. Na-akwado mgbanwe ọtụtụ."
     },
-    "ai-bg-remove": {
-      "name": "Ihe Na-ewepụ Ndabere AI",
-      "desc": "Bipụ ndị mmadụ, ngwaahịa na anụ ụlọ site n’ndabere ọ bụla site na AI dị n’ngwaọrụ gị ma budata PNG doro anya."
-    },
     "image-upscale": {
       "name": "Ihe Na-eme Foto Ka Ọ Buo Ibu AI",
       "desc": "Mee ka foto buo ibu 2× ma ọ bụ 4× ma mee ka nkọwa doo anya site na AI. Dị mma maka obere foto, ndị na-adịghị ọcha ma ọ bụ ndị ochie."
@@ -587,7 +583,32 @@
       "err.notImage": "Faịlụ a abụghị foto.",
       "err.tooBig": "Foto ahụ buru ibu karịa 40 MB.",
       "canvas.title": "Pịa ebe ndabere ka ịhọrọ agba ya",
-      "toast.pickedBg": "Ahọrọla agba ndabere"
+      "toast.pickedBg": "Ahọrọla agba ndabere",
+      "ai.dropTitle": "Họrọ foto ma ọ bụ dọkpụrụ ha ebe a",
+      "ai.dropHint": "JPG, PNG, WebP. Ọtụtụ foto n’otu oge, nke ọ bụla erughị 40 MB. Ị nwekwara ike itinye site na Ctrl+V.",
+      "ai.model": "Ụdị foto",
+      "ai.mGeneral": "Ihe ọ bụla (ngwaahịa, anụ ụlọ, ihe, ndị mmadụ)",
+      "ai.mGeneralD": "kacha ziri ezi, na-ebudata ihe nlereanya ihe dị ka 200 MB oge mbụ",
+      "ai.mPortrait": "Foto ndị mmadụ",
+      "ai.mPortraitD": "dị ngwa, ihe nlereanya dị mfe ihe dị ka 25 MB, dị mma maka foto ID na foto profaịlụ",
+      "ai.bg": "Ndabere ọhụrụ",
+      "ai.bgNone": "Doro anya (PNG)",
+      "ai.bgWhite": "Ọcha",
+      "ai.bgColor": "Agba ọzọ",
+      "ai.run": "Wepụ ndabere",
+      "ai.zip": "Budata niile (.zip)",
+      "ai.note": "AI na-arụ ọrụ n’ngwaọrụ gị (ma na-eji kaadị eserese gị ma ọ bụrụ na ihe nchọgharị kwadoro WebGPU); a naghị eziga foto n’ebe ọ bụla. A na-ebudata ihe nlereanya ahụ naanị oge mbụ ma ihe nchọgharị gị na-echekwa ya. Kọmputa ma ọ bụ ekwentị ochie nwere ike were sekọnd 10–60 n’foto ọ bụla. Maka ndabere ọcha dị mfe, ngwa Wepụ Ndabere Foto dị ngwa karị.",
+      "ai.download": "Budata",
+      "ai.tooBig": "buru ibu karịa 40 MB",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "Na-ebu AI runtime…",
+      "ai.loadingModel": "Na-ebudata ihe nlereanya AI (oge mbụ naanị)…",
+      "ai.working": "Na-ahazi foto",
+      "ai.errImg": "Enweghị ike ịhazi foto a",
+      "ai.done": "Emechaala!",
+      "ai.err": "Enweghị ike ịgba AI n’ihe nchọgharị a. Nwaa Chrome ma ọ bụ Edge ọhụrụ.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Ndabere otu agba (ngwa ngwa)"
     },
     "attendance": {
       "add.label": "Tinye nwa akwụkwọ",
@@ -3356,32 +3377,6 @@
       "errNet": "Enweghị ike ibudata ihe nkwupụta. Lelee njikọ gị ma nwaa ọzọ.",
       "errDecode": "Enweghị ike ịgụ foto a (faịlụ emebiela ma ọ bụ ụdị HEIC akwadoghị).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Họrọ foto ma ọ bụ dọkpụrụ ha ebe a",
-      "dropHint": "JPG, PNG, WebP. Ọtụtụ foto n’otu oge, nke ọ bụla erughị 40 MB. Ị nwekwara ike itinye site na Ctrl+V.",
-      "model": "Ụdị foto",
-      "mGeneral": "Ihe ọ bụla (ngwaahịa, anụ ụlọ, ihe, ndị mmadụ)",
-      "mGeneralD": "kacha ziri ezi, na-ebudata ihe nlereanya ihe dị ka 200 MB oge mbụ",
-      "mPortrait": "Foto ndị mmadụ",
-      "mPortraitD": "dị ngwa, ihe nlereanya dị mfe ihe dị ka 25 MB, dị mma maka foto ID na foto profaịlụ",
-      "bg": "Ndabere ọhụrụ",
-      "bgNone": "Doro anya (PNG)",
-      "bgWhite": "Ọcha",
-      "bgColor": "Agba ọzọ",
-      "run": "Wepụ ndabere",
-      "zip": "Budata niile (.zip)",
-      "note": "AI na-arụ ọrụ n’ngwaọrụ gị (ma na-eji kaadị eserese gị ma ọ bụrụ na ihe nchọgharị kwadoro WebGPU); a naghị eziga foto n’ebe ọ bụla. A na-ebudata ihe nlereanya ahụ naanị oge mbụ ma ihe nchọgharị gị na-echekwa ya. Kọmputa ma ọ bụ ekwentị ochie nwere ike were sekọnd 10–60 n’foto ọ bụla. Maka ndabere ọcha dị mfe, ngwa Wepụ Ndabere Foto dị ngwa karị.",
-      "download": "Budata",
-      "tooBig": "buru ibu karịa 40 MB",
-      "suffix": "no-bg",
-      "loadingLib": "Na-ebu AI runtime…",
-      "loadingModel": "Na-ebudata ihe nlereanya AI (oge mbụ naanị)…",
-      "working": "Na-ahazi foto",
-      "errImg": "Enweghị ike ịhazi foto a",
-      "done": "Emechaala!",
-      "err": "Enweghị ike ịgba AI n’ihe nchọgharị a. Nwaa Chrome ma ọ bụ Edge ọhụrụ.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Họrọ foto ma ọ bụ dọkpụrụ ya ebe a",

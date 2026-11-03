@@ -434,10 +434,6 @@
       "name": "HEIC til JPG",
       "desc": "Konverter iPhones HEIC-fotos til JPG eller PNG, så de kan åbnes overalt. Flere filer på én gang."
     },
-    "ai-bg-remove": {
-      "name": "AI-baggrundsfjerner",
-      "desc": "Klip personer, produkter og kæledyr ud af enhver baggrund med AI på enheden og download en gennemsigtig PNG."
-    },
     "image-upscale": {
       "name": "AI-billedforstørrer",
       "desc": "Forstør billeder 2× eller 4× og gør detaljer skarpere med AI. Perfekt til små, slørede eller gamle fotos."
@@ -587,7 +583,32 @@
       "err.notImage": "Filen er ikke et billede.",
       "err.tooBig": "Billedet er større end 40 MB.",
       "canvas.title": "Klik på baggrundsområdet for at vælge dets farve",
-      "toast.pickedBg": "Baggrundsfarve valgt"
+      "toast.pickedBg": "Baggrundsfarve valgt",
+      "ai.dropTitle": "Vælg billeder eller træk dem herhen",
+      "ai.dropHint": "JPG, PNG, WebP. Mange billeder på én gang, hver under 40 MB. Du kan også indsætte med Ctrl+V.",
+      "ai.model": "Billedtype",
+      "ai.mGeneral": "Hvad som helst (produkter, kæledyr, genstande, personer)",
+      "ai.mGeneralD": "mest præcis, downloader en model på ca. 200 MB første gang",
+      "ai.mPortrait": "Portrætter af personer",
+      "ai.mPortraitD": "hurtig, let model på ca. 25 MB, perfekt til pasfotos og profilbilleder",
+      "ai.bg": "Ny baggrund",
+      "ai.bgNone": "Gennemsigtig (PNG)",
+      "ai.bgWhite": "Hvid",
+      "ai.bgColor": "Anden farve",
+      "ai.run": "Fjern baggrund",
+      "ai.zip": "Download alle (.zip)",
+      "ai.note": "AI'en kører på din enhed (med grafikkortet, hvis browseren understøtter WebGPU); billeder sendes aldrig nogen steder hen. Modellen downloades kun første gang og gemmes i browserens cache. Ældre computere eller telefoner kan bruge 10–60 sekunder pr. billede. Til enkle hvide baggrunde er værktøjet Fjern billedbaggrund hurtigere.",
+      "ai.download": "Download",
+      "ai.tooBig": "større end 40 MB",
+      "ai.suffix": "uden-baggrund",
+      "ai.loadingLib": "Indlæser AI-motoren…",
+      "ai.loadingModel": "Downloader AI-modellen (kun første gang)…",
+      "ai.working": "Behandler billede",
+      "ai.errImg": "Billedet kunne ikke behandles",
+      "ai.done": "Færdig!",
+      "ai.err": "AI'en kunne ikke køre i denne browser. Prøv en nyere Chrome eller Edge.",
+      "ai.zipName": "baggrund-fjernet",
+      "tab.simple": "Ensfarvet baggrund (hurtigt)"
     },
     "attendance": {
       "add.label": "Tilføj elev",
@@ -2441,32 +2462,6 @@
       "errNet": "Dekoderen kunne ikke downloades. Tjek forbindelsen og prøv igen.",
       "errDecode": "Fotoet kunne ikke læses (beskadiget fil eller HEIC-variant, der ikke understøttes).",
       "zipName": "konverterede-heic-fotos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Vælg billeder eller træk dem herhen",
-      "dropHint": "JPG, PNG, WebP. Mange billeder på én gang, hver under 40 MB. Du kan også indsætte med Ctrl+V.",
-      "model": "Billedtype",
-      "mGeneral": "Hvad som helst (produkter, kæledyr, genstande, personer)",
-      "mGeneralD": "mest præcis, downloader en model på ca. 200 MB første gang",
-      "mPortrait": "Portrætter af personer",
-      "mPortraitD": "hurtig, let model på ca. 25 MB, perfekt til pasfotos og profilbilleder",
-      "bg": "Ny baggrund",
-      "bgNone": "Gennemsigtig (PNG)",
-      "bgWhite": "Hvid",
-      "bgColor": "Anden farve",
-      "run": "Fjern baggrund",
-      "zip": "Download alle (.zip)",
-      "note": "AI'en kører på din enhed (med grafikkortet, hvis browseren understøtter WebGPU); billeder sendes aldrig nogen steder hen. Modellen downloades kun første gang og gemmes i browserens cache. Ældre computere eller telefoner kan bruge 10–60 sekunder pr. billede. Til enkle hvide baggrunde er værktøjet Fjern billedbaggrund hurtigere.",
-      "download": "Download",
-      "tooBig": "større end 40 MB",
-      "suffix": "uden-baggrund",
-      "loadingLib": "Indlæser AI-motoren…",
-      "loadingModel": "Downloader AI-modellen (kun første gang)…",
-      "working": "Behandler billede",
-      "errImg": "Billedet kunne ikke behandles",
-      "done": "Færdig!",
-      "err": "AI'en kunne ikke køre i denne browser. Prøv en nyere Chrome eller Edge.",
-      "zipName": "baggrund-fjernet"
     },
     "image-upscale": {
       "dropTitle": "Vælg et billede eller træk det herhen",

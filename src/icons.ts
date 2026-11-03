@@ -84,7 +84,6 @@ const PATHS: Record<string, string> = {
   // máy ảnh điện thoại sang ảnh
   'heic-jpg': '<rect x="3" y="5" width="9" height="14" rx="2"/><circle cx="7.5" cy="10" r="1.8"/><path d="M14 12h6M18 9.5l2.5 2.5-2.5 2.5"/>',
   // người với nền ô kẻ và tia sáng
-  'ai-bg-remove': '<rect x="3" y="3" width="18" height="18" rx="2" stroke-dasharray="2 2.5"/><circle cx="11" cy="10" r="3"/><path d="M5.5 19c1-2.6 3-4 5.5-4s4.5 1.4 5.5 4"/><path d="M18 3.5v3M16.5 5h3"/>',
   // ảnh nhỏ phóng to có tia sáng
   'image-upscale': '<rect x="3" y="12" width="9" height="9" rx="1.5"/><path d="M12 3h9v9" stroke-dasharray="2.5 2"/><path d="M10 14l8-8M14 6h4v4"/>',
   // ảnh đi vào trang giấy

@@ -434,10 +434,6 @@
       "name": "HEIC ihinduke JPG",
       "desc": "Hindura amafoto ya HEIC yo kuri iPhone ube JPG cyangwa PNG kugira ngo afunguke ahantu hose. Guhindura menshi icyarimwe birashoboka."
     },
-    "ai-bg-remove": {
-      "name": "Gukuraho inyuma hakoreshejwe AI",
-      "desc": "Kuraho abantu, ibicuruzwa n'amatungo ku nyuma iyo ari yo yose ukoresheje AI iri ku gikoresho cyawe, ukure PNG itagaragara."
-    },
     "image-upscale": {
       "name": "Kwagura amashusho hakoreshejwe AI",
       "desc": "Agura amashusho 2× cyangwa 4× kandi usobanure utuntu twayo na AI. Ikwiye amafoto mato, atagaragara neza cyangwa ashaje."
@@ -587,7 +583,32 @@
       "err.notImage": "Iyi dosiye si ishusho.",
       "err.tooBig": "Ishusho irenze MB 40.",
       "canvas.title": "Kanda ahari inyuma kugira ngo uhitemo ibara ryaho",
-      "toast.pickedBg": "Ibara ry'inyuma ryatoranyijwe"
+      "toast.pickedBg": "Ibara ry'inyuma ryatoranyijwe",
+      "ai.dropTitle": "Hitamo amashusho cyangwa uyakurure hano",
+      "ai.dropHint": "JPG, PNG, WebP. Amashusho menshi icyarimwe, buri rimwe munsi ya MB 40. Ushobora no gushyiramo ukoresheje Ctrl+V.",
+      "ai.model": "Ubwoko bw'ishusho",
+      "ai.mGeneral": "Icyo ari cyo cyose (ibicuruzwa, amatungo, ibintu, abantu)",
+      "ai.mGeneralD": "nyakuri cyane, ikura icyitegererezo cya hafi MB 200 ku nshuro ya mbere",
+      "ai.mPortrait": "Amafoto y'abantu",
+      "ai.mPortraitD": "yihuse, icyitegererezo cyoroheje cya hafi MB 25, cyiza ku mafoto y'indangamuntu n'amafoto y'umwirondoro",
+      "ai.bg": "Inyuma nshya",
+      "ai.bgNone": "Itagaragara (PNG)",
+      "ai.bgWhite": "Umweru",
+      "ai.bgColor": "Irindi bara",
+      "ai.run": "Kuraho inyuma",
+      "ai.zip": "Kura byose (.zip)",
+      "ai.note": "AI ikorera ku gikoresho cyawe (ikoresha karita yawe y'amashusho niba browser ishyigikira WebGPU); amashusho ntiyoherezwa ahandi. Icyitegererezo gikurwa ku nshuro ya mbere gusa kandi kibikwa na browser yawe. Mudasobwa cyangwa telefone zishaje zishobora gufata amasegonda 10–60 kuri buri shusho. Ku nyuma y'umweru yoroshye, igikoresho cyo Kuraho inyuma y'ishusho kirihuta.",
+      "ai.download": "Kura",
+      "ai.tooBig": "irenze MB 40",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "Gufungura uburyo bwa AI…",
+      "ai.loadingModel": "Gukura icyitegererezo cya AI (ku nshuro ya mbere gusa)…",
+      "ai.working": "Gutunganya ishusho",
+      "ai.errImg": "Ntibishobotse gutunganya iyi shusho",
+      "ai.done": "Byarangiye!",
+      "ai.err": "Ntibishobotse gukoresha AI muri iyi browser. Gerageza Chrome cyangwa Edge nshya.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Ibara rimwe (byihuse)"
     },
     "attendance": {
       "add.label": "Ongeraho umunyeshuri",
@@ -3356,32 +3377,6 @@
       "errNet": "Ntibishobotse gukura igikoresho gisoma. Reba interineti yawe maze wongere ugerageze.",
       "errDecode": "Ntibishobotse gusoma iyi foto (idosiye yangiritse cyangwa ubwoko bwa HEIC budashyigikiwe).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Hitamo amashusho cyangwa uyakurure hano",
-      "dropHint": "JPG, PNG, WebP. Amashusho menshi icyarimwe, buri rimwe munsi ya MB 40. Ushobora no gushyiramo ukoresheje Ctrl+V.",
-      "model": "Ubwoko bw'ishusho",
-      "mGeneral": "Icyo ari cyo cyose (ibicuruzwa, amatungo, ibintu, abantu)",
-      "mGeneralD": "nyakuri cyane, ikura icyitegererezo cya hafi MB 200 ku nshuro ya mbere",
-      "mPortrait": "Amafoto y'abantu",
-      "mPortraitD": "yihuse, icyitegererezo cyoroheje cya hafi MB 25, cyiza ku mafoto y'indangamuntu n'amafoto y'umwirondoro",
-      "bg": "Inyuma nshya",
-      "bgNone": "Itagaragara (PNG)",
-      "bgWhite": "Umweru",
-      "bgColor": "Irindi bara",
-      "run": "Kuraho inyuma",
-      "zip": "Kura byose (.zip)",
-      "note": "AI ikorera ku gikoresho cyawe (ikoresha karita yawe y'amashusho niba browser ishyigikira WebGPU); amashusho ntiyoherezwa ahandi. Icyitegererezo gikurwa ku nshuro ya mbere gusa kandi kibikwa na browser yawe. Mudasobwa cyangwa telefone zishaje zishobora gufata amasegonda 10–60 kuri buri shusho. Ku nyuma y'umweru yoroshye, igikoresho cyo Kuraho inyuma y'ishusho kirihuta.",
-      "download": "Kura",
-      "tooBig": "irenze MB 40",
-      "suffix": "no-bg",
-      "loadingLib": "Gufungura uburyo bwa AI…",
-      "loadingModel": "Gukura icyitegererezo cya AI (ku nshuro ya mbere gusa)…",
-      "working": "Gutunganya ishusho",
-      "errImg": "Ntibishobotse gutunganya iyi shusho",
-      "done": "Byarangiye!",
-      "err": "Ntibishobotse gukoresha AI muri iyi browser. Gerageza Chrome cyangwa Edge nshya.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Hitamo ishusho cyangwa uyikurure hano",

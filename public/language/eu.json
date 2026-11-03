@@ -434,10 +434,6 @@
       "name": "HEIC JPG bihurtu",
       "desc": "Bihurtu iPhone-ko HEIC argazkiak JPG edo PNG formatura edonon ireki ahal izateko. Sortakako bihurketa onartzen da."
     },
-    "ai-bg-remove": {
-      "name": "AA bidezko atzeko planoaren kentzailea",
-      "desc": "Atera pertsonak, produktuak eta maskotak edozein atzeko planotatik gailuko AA batekin eta deskargatu PNG gardena."
-    },
     "image-upscale": {
       "name": "AA bidezko irudi-handitzailea",
       "desc": "Handitu irudiak 2× edo 4× eta zorroztu xehetasunak AA-rekin. Argazki txiki, lausoetarako edo zaharretarako ezin hobea."
@@ -587,7 +583,32 @@
       "err.notImage": "Fitxategi hau ez da irudi bat.",
       "err.tooBig": "Irudia 40 MB baino handiagoa da.",
       "canvas.title": "Egin klik atzeko planoan bere kolorea hautatzeko",
-      "toast.pickedBg": "Atzeko planoaren kolorea hautatu da"
+      "toast.pickedBg": "Atzeko planoaren kolorea hautatu da",
+      "ai.dropTitle": "Aukeratu irudiak edo arrastatu hona",
+      "ai.dropHint": "JPG, PNG, WebP. Irudi asko batera, bakoitza 40 MB baino gutxiago. Ctrl+V-rekin ere itsats dezakezu.",
+      "ai.model": "Irudi mota",
+      "ai.mGeneral": "Edozer (produktuak, maskotak, objektuak, pertsonak)",
+      "ai.mGeneralD": "zehatzena, 200 MB inguruko eredu bat deskargatzen du lehen aldian",
+      "ai.mPortrait": "Pertsona-erretratuak",
+      "ai.mPortraitD": "eredu azkarra eta arina, 25 MB ingurukoa, NAN argazkietarako eta profileko argazkietarako bikaina",
+      "ai.bg": "Atzeko plano berria",
+      "ai.bgNone": "Gardena (PNG)",
+      "ai.bgWhite": "Zuria",
+      "ai.bgColor": "Beste kolore bat",
+      "ai.run": "Kendu atzeko planoa",
+      "ai.zip": "Deskargatu guztiak (.zip)",
+      "ai.note": "AA zure gailuan exekutatzen da (zure txartel grafikoa erabiliz nabigatzaileak WebGPU onartzen badu); irudiak ez dira inoiz inora bidaltzen. Eredua lehen aldian soilik deskargatzen da eta zure nabigatzaileak cachean gordetzen du. Ordenagailu edo telefono zaharragoek 10–60 segundo behar ditzakete irudi bakoitzeko. Atzeko plano zuri soilen kasuan, Kendu irudiaren atzeko planoa tresna azkarragoa da.",
+      "ai.download": "Deskargatu",
+      "ai.tooBig": "40 MB baino handiagoa",
+      "ai.suffix": "atzeko-planorik-gabe",
+      "ai.loadingLib": "AA exekuzio-ingurunea kargatzen…",
+      "ai.loadingModel": "AA eredua deskargatzen (lehen aldian soilik)…",
+      "ai.working": "Irudia prozesatzen",
+      "ai.errImg": "Ezin izan da irudi hau prozesatu",
+      "ai.done": "Eginda!",
+      "ai.err": "Ezin izan da AA nabigatzaile honetan exekutatu. Saiatu Chrome edo Edge berri batekin.",
+      "ai.zipName": "atzeko-planoa-kenduta",
+      "tab.simple": "Atzeko kolore bakarra (azkarra)"
     },
     "attendance": {
       "add.label": "Gehitu ikaslea",
@@ -3356,32 +3377,6 @@
       "errNet": "Ezin izan da deskodetzailea deskargatu. Egiaztatu konexioa eta saiatu berriro.",
       "errDecode": "Ezin izan da argazki hau irakurri (fitxategi hondatua edo HEIC aldaera onartu gabea).",
       "zipName": "HEIC-argazki-bihurtuak"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Aukeratu irudiak edo arrastatu hona",
-      "dropHint": "JPG, PNG, WebP. Irudi asko batera, bakoitza 40 MB baino gutxiago. Ctrl+V-rekin ere itsats dezakezu.",
-      "model": "Irudi mota",
-      "mGeneral": "Edozer (produktuak, maskotak, objektuak, pertsonak)",
-      "mGeneralD": "zehatzena, 200 MB inguruko eredu bat deskargatzen du lehen aldian",
-      "mPortrait": "Pertsona-erretratuak",
-      "mPortraitD": "eredu azkarra eta arina, 25 MB ingurukoa, NAN argazkietarako eta profileko argazkietarako bikaina",
-      "bg": "Atzeko plano berria",
-      "bgNone": "Gardena (PNG)",
-      "bgWhite": "Zuria",
-      "bgColor": "Beste kolore bat",
-      "run": "Kendu atzeko planoa",
-      "zip": "Deskargatu guztiak (.zip)",
-      "note": "AA zure gailuan exekutatzen da (zure txartel grafikoa erabiliz nabigatzaileak WebGPU onartzen badu); irudiak ez dira inoiz inora bidaltzen. Eredua lehen aldian soilik deskargatzen da eta zure nabigatzaileak cachean gordetzen du. Ordenagailu edo telefono zaharragoek 10–60 segundo behar ditzakete irudi bakoitzeko. Atzeko plano zuri soilen kasuan, Kendu irudiaren atzeko planoa tresna azkarragoa da.",
-      "download": "Deskargatu",
-      "tooBig": "40 MB baino handiagoa",
-      "suffix": "atzeko-planorik-gabe",
-      "loadingLib": "AA exekuzio-ingurunea kargatzen…",
-      "loadingModel": "AA eredua deskargatzen (lehen aldian soilik)…",
-      "working": "Irudia prozesatzen",
-      "errImg": "Ezin izan da irudi hau prozesatu",
-      "done": "Eginda!",
-      "err": "Ezin izan da AA nabigatzaile honetan exekutatu. Saiatu Chrome edo Edge berri batekin.",
-      "zipName": "atzeko-planoa-kenduta"
     },
     "image-upscale": {
       "dropTitle": "Aukeratu irudi bat edo arrastatu hona",

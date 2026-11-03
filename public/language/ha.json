@@ -434,10 +434,6 @@
       "name": "HEIC zuwa JPG",
       "desc": "Sauya hotunan iPhone na HEIC zuwa JPG ko PNG don su buɗu a ko'ina. Ana goyon bayan sauya da yawa a lokaci ɗaya."
     },
-    "ai-bg-remove": {
-      "name": "Mai Cire Bayan-fage na AI",
-      "desc": "Yanke mutane, kayayyaki da dabbobi daga kowane bayan-fage da AI a na'urarka ka sauke PNG mai bayyanawa."
-    },
     "image-upscale": {
       "name": "Mai Faɗaɗa Hoto na AI",
       "desc": "Faɗaɗa hotuna sau 2 ko 4 ka kaifafa bayanai da AI. Yana da kyau ga ƙananan hotuna, marasa haske ko tsofaffi."
@@ -587,7 +583,32 @@
       "err.notImage": "Wannan fayil ɗin ba hoto ba ne.",
       "err.tooBig": "Hoton ya fi 40 MB girma.",
       "canvas.title": "Danna wurin bayan-fage don zaɓar launinsa",
-      "toast.pickedBg": "An zaɓi launin bayan-fage"
+      "toast.pickedBg": "An zaɓi launin bayan-fage",
+      "ai.dropTitle": "Zaɓi hotuna ko ka jawo su nan",
+      "ai.dropHint": "JPG, PNG, WebP. Hotuna da yawa a lokaci ɗaya, kowanne ƙasa da 40 MB. Hakanan za ka iya manna da Ctrl+V.",
+      "ai.model": "Nau'in hoto",
+      "ai.mGeneral": "Komai (kayayyaki, dabbobi, abubuwa, mutane)",
+      "ai.mGeneralD": "mafi daidai, yana sauke samfuri na kusan 200 MB a karon farko",
+      "ai.mPortrait": "Hotunan mutane",
+      "ai.mPortraitD": "mai sauri, samfuri mai sauƙi na kusan 25 MB, mai kyau ga hotunan shaida da hotunan bayanan martaba",
+      "ai.bg": "Sabon bayan-fage",
+      "ai.bgNone": "Mai bayyanawa (PNG)",
+      "ai.bgWhite": "Fari",
+      "ai.bgColor": "Wani launi",
+      "ai.run": "Cire bayan-fage",
+      "ai.zip": "Sauke duka (.zip)",
+      "ai.note": "AI yana gudana a na'urarka (yana amfani da katin zanenka idan browser yana goyon bayan WebGPU); ba a taɓa aika hotuna ko'ina ba. Ana sauke samfurin a karon farko kawai kuma browser naka yana ajiye shi. Tsofaffin kwamfutoci ko wayoyi na iya ɗaukar daƙiƙa 10–60 a kowane hoto. Don bayan-fage fari mai sauƙi, kayan aikin Cire Bayan-fagen Hoto ya fi sauri.",
+      "ai.download": "Sauke",
+      "ai.tooBig": "ya fi 40 MB girma",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "Ana loda tsarin AI…",
+      "ai.loadingModel": "Ana sauke samfurin AI (a karon farko kawai)…",
+      "ai.working": "Ana sarrafa hoto",
+      "ai.errImg": "Ba a iya sarrafa wannan hoton ba",
+      "ai.done": "An gama!",
+      "ai.err": "Ba a iya gudanar da AI a wannan browser ba. Gwada sabon Chrome ko Edge.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Bangon launi ɗaya (da sauri)"
     },
     "attendance": {
       "add.label": "Ƙara ɗalibi",
@@ -3356,32 +3377,6 @@
       "errNet": "Ba a iya sauke na'urar warwarewa ba. Duba haɗinka ka sake gwadawa.",
       "errDecode": "Ba a iya karanta wannan hoton ba (fayil ya lalace ko nau'in HEIC da ba a goyon baya).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Zaɓi hotuna ko ka jawo su nan",
-      "dropHint": "JPG, PNG, WebP. Hotuna da yawa a lokaci ɗaya, kowanne ƙasa da 40 MB. Hakanan za ka iya manna da Ctrl+V.",
-      "model": "Nau'in hoto",
-      "mGeneral": "Komai (kayayyaki, dabbobi, abubuwa, mutane)",
-      "mGeneralD": "mafi daidai, yana sauke samfuri na kusan 200 MB a karon farko",
-      "mPortrait": "Hotunan mutane",
-      "mPortraitD": "mai sauri, samfuri mai sauƙi na kusan 25 MB, mai kyau ga hotunan shaida da hotunan bayanan martaba",
-      "bg": "Sabon bayan-fage",
-      "bgNone": "Mai bayyanawa (PNG)",
-      "bgWhite": "Fari",
-      "bgColor": "Wani launi",
-      "run": "Cire bayan-fage",
-      "zip": "Sauke duka (.zip)",
-      "note": "AI yana gudana a na'urarka (yana amfani da katin zanenka idan browser yana goyon bayan WebGPU); ba a taɓa aika hotuna ko'ina ba. Ana sauke samfurin a karon farko kawai kuma browser naka yana ajiye shi. Tsofaffin kwamfutoci ko wayoyi na iya ɗaukar daƙiƙa 10–60 a kowane hoto. Don bayan-fage fari mai sauƙi, kayan aikin Cire Bayan-fagen Hoto ya fi sauri.",
-      "download": "Sauke",
-      "tooBig": "ya fi 40 MB girma",
-      "suffix": "no-bg",
-      "loadingLib": "Ana loda tsarin AI…",
-      "loadingModel": "Ana sauke samfurin AI (a karon farko kawai)…",
-      "working": "Ana sarrafa hoto",
-      "errImg": "Ba a iya sarrafa wannan hoton ba",
-      "done": "An gama!",
-      "err": "Ba a iya gudanar da AI a wannan browser ba. Gwada sabon Chrome ko Edge.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Zaɓi hoto ko ka jawo shi nan",

@@ -434,10 +434,6 @@
       "name": "HEIC → JPG",
       "desc": "iPhone’ning HEIC suratlarini hamma joyda ochilishi uchun JPG yoki PNG ga aylantiring. Guruhli aylantirishni qoʻllab-quvvatlaydi."
     },
-    "ai-bg-remove": {
-      "name": "SI bilan fonni olib tashlash",
-      "desc": "Odamlar, mahsulotlar va uy hayvonlarini istalgan fondan qurilmangizdagi SI yordamida qirqib oling va shaffof PNG yuklab oling."
-    },
     "image-upscale": {
       "name": "SI bilan rasmni kattalashtirish",
       "desc": "Rasmlarni 2× yoki 4× kattalashtiring va SI yordamida tafsilotlarni aniqlashtiring. Kichik, xira yoki eski suratlar uchun ajoyib."
@@ -587,7 +583,32 @@
       "err.notImage": "Bu fayl rasm emas.",
       "err.tooBig": "Rasm 40 MB dan katta.",
       "canvas.title": "Rangini tanlash uchun fon qismini bosing",
-      "toast.pickedBg": "Tanlangan fon rangi"
+      "toast.pickedBg": "Tanlangan fon rangi",
+      "ai.dropTitle": "Rasmlarni tanlang yoki shu yerga torting",
+      "ai.dropHint": "JPG, PNG, WebP. Birdaniga koʻp rasm, har biri 40 MB dan kam. Ctrl+V bilan ham qoʻyishingiz mumkin.",
+      "ai.model": "Rasm turi",
+      "ai.mGeneral": "Har qanday (mahsulotlar, uy hayvonlari, buyumlar, odamlar)",
+      "ai.mGeneralD": "eng aniq, birinchi marta taxminan 200 MB lik model yuklab olinadi",
+      "ai.mPortrait": "Odamlar portreti",
+      "ai.mPortraitD": "tez, taxminan 25 MB lik yengil model, hujjat suratlari va profil rasmlari uchun ajoyib",
+      "ai.bg": "Yangi fon",
+      "ai.bgNone": "Shaffof (PNG)",
+      "ai.bgWhite": "Oq",
+      "ai.bgColor": "Boshqa rang",
+      "ai.run": "Fonni olib tashlash",
+      "ai.zip": "Hammasini yuklab olish (.zip)",
+      "ai.note": "SI qurilmangizda ishlaydi (brauzer WebGPU ni qoʻllab-quvvatlasa, videokartadan foydalanadi); rasmlar hech qachon hech qayerga yuborilmaydi. Model faqat birinchi marta yuklab olinadi va brauzer keshida saqlanadi. Eski kompyuter yoki telefonlarda bitta rasmni qayta ishlash 10–60 soniya olishi mumkin. Oddiy oq fon uchun Rasm fonini olib tashlash vositasi tezroq.",
+      "ai.download": "Yuklab olish",
+      "ai.tooBig": "40 MB dan katta",
+      "ai.suffix": "fonsiz",
+      "ai.loadingLib": "SI dvigateli yuklanmoqda…",
+      "ai.loadingModel": "SI modeli yuklab olinmoqda (faqat birinchi marta)…",
+      "ai.working": "Rasm qayta ishlanmoqda",
+      "ai.errImg": "Bu rasmni qayta ishlab boʻlmadi",
+      "ai.done": "Tayyor!",
+      "ai.err": "Bu brauzerda SI ni ishga tushirib boʻlmadi. Yangi Chrome yoki Edge’ni sinab koʻring.",
+      "ai.zipName": "fon-olib-tashlangan",
+      "tab.simple": "Bir rangli fon (tez)"
     },
     "attendance": {
       "add.label": "Oʻquvchi qoʻshish",
@@ -3356,32 +3377,6 @@
       "errNet": "Dekoderni yuklab boʻlmadi. Ulanishni tekshirib, qayta urinib koʻring.",
       "errDecode": "Bu suratni oʻqib boʻlmadi (shikastlangan fayl yoki qoʻllab-quvvatlanmaydigan HEIC turi).",
       "zipName": "aylantirilgan-heic-suratlar"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Rasmlarni tanlang yoki shu yerga torting",
-      "dropHint": "JPG, PNG, WebP. Birdaniga koʻp rasm, har biri 40 MB dan kam. Ctrl+V bilan ham qoʻyishingiz mumkin.",
-      "model": "Rasm turi",
-      "mGeneral": "Har qanday (mahsulotlar, uy hayvonlari, buyumlar, odamlar)",
-      "mGeneralD": "eng aniq, birinchi marta taxminan 200 MB lik model yuklab olinadi",
-      "mPortrait": "Odamlar portreti",
-      "mPortraitD": "tez, taxminan 25 MB lik yengil model, hujjat suratlari va profil rasmlari uchun ajoyib",
-      "bg": "Yangi fon",
-      "bgNone": "Shaffof (PNG)",
-      "bgWhite": "Oq",
-      "bgColor": "Boshqa rang",
-      "run": "Fonni olib tashlash",
-      "zip": "Hammasini yuklab olish (.zip)",
-      "note": "SI qurilmangizda ishlaydi (brauzer WebGPU ni qoʻllab-quvvatlasa, videokartadan foydalanadi); rasmlar hech qachon hech qayerga yuborilmaydi. Model faqat birinchi marta yuklab olinadi va brauzer keshida saqlanadi. Eski kompyuter yoki telefonlarda bitta rasmni qayta ishlash 10–60 soniya olishi mumkin. Oddiy oq fon uchun Rasm fonini olib tashlash vositasi tezroq.",
-      "download": "Yuklab olish",
-      "tooBig": "40 MB dan katta",
-      "suffix": "fonsiz",
-      "loadingLib": "SI dvigateli yuklanmoqda…",
-      "loadingModel": "SI modeli yuklab olinmoqda (faqat birinchi marta)…",
-      "working": "Rasm qayta ishlanmoqda",
-      "errImg": "Bu rasmni qayta ishlab boʻlmadi",
-      "done": "Tayyor!",
-      "err": "Bu brauzerda SI ni ishga tushirib boʻlmadi. Yangi Chrome yoki Edge’ni sinab koʻring.",
-      "zipName": "fon-olib-tashlangan"
     },
     "image-upscale": {
       "dropTitle": "Rasm tanlang yoki shu yerga torting",

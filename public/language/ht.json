@@ -434,10 +434,6 @@
       "name": "HEIC an JPG",
       "desc": "Konvèti foto HEIC iPhone an JPG oswa PNG pou yo louvri toupatou. Konvèsyon an gwoup sipòte."
     },
-    "ai-bg-remove": {
-      "name": "Retire background ak AI",
-      "desc": "Koupe moun, pwodwi ak bèt kay soti nan nenpòt background ak AI sou aparèy la epi telechaje yon PNG transparan."
-    },
     "image-upscale": {
       "name": "Agrandi imaj ak AI",
       "desc": "Agrandi imaj 2× oswa 4× epi rann detay yo pi nèt ak AI. Ekselan pou ti foto, flou oswa ansyen."
@@ -587,7 +583,32 @@
       "err.notImage": "Fichye sa a se pa yon imaj.",
       "err.tooBig": "Imaj la pi gwo pase 40 MB.",
       "canvas.title": "Klike sou zòn background lan pou chwazi koulè li",
-      "toast.pickedBg": "Koulè background chwazi"
+      "toast.pickedBg": "Koulè background chwazi",
+      "ai.dropTitle": "Chwazi imaj oswa glise yo isit la",
+      "ai.dropHint": "JPG, PNG, WebP. Plizyè imaj alafwa, chak mwens pase 40 MB. Ou ka kole yo tou ak Ctrl+V.",
+      "ai.model": "Tip imaj",
+      "ai.mGeneral": "Nenpòt bagay (pwodwi, bèt kay, objè, moun)",
+      "ai.mGeneralD": "pi egzak, telechaje yon modèl anviwon 200 MB premye fwa a",
+      "ai.mPortrait": "Pòtrè moun",
+      "ai.mPortraitD": "rapid, modèl lejè anviwon 25 MB, ekselan pou foto idantite ak foto pwofil",
+      "ai.bg": "Nouvo background",
+      "ai.bgNone": "Transparan (PNG)",
+      "ai.bgWhite": "Blan",
+      "ai.bgColor": "Lòt koulè",
+      "ai.run": "Retire background",
+      "ai.zip": "Telechaje tout (.zip)",
+      "ai.note": "AI a mache sou aparèy ou (ak kat grafik ou si navigatè a sipòte WebGPU); imaj yo pa janm voye okenn kote. Modèl la telechaje sèlman premye fwa a epi navigatè ou kenbe l nan memwa. Ansyen òdinatè oswa telefòn ka pran 10–60 segonn pou chak imaj. Pou background blan senp, zouti Retire background imaj la pi vit.",
+      "ai.download": "Telechaje",
+      "ai.tooBig": "pi gwo pase 40 MB",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "Ap chaje sistèm AI a…",
+      "ai.loadingModel": "Ap telechaje modèl AI a (premye fwa sèlman)…",
+      "ai.working": "Ap trete imaj",
+      "ai.errImg": "Pa t ka trete imaj sa a",
+      "ai.done": "Fini!",
+      "ai.err": "Pa t ka fè AI a mache nan navigatè sa a. Eseye yon Chrome oswa Edge resan.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Fon yon sèl koulè (rapid)"
     },
     "attendance": {
       "add.label": "Ajoute elèv",
@@ -3356,32 +3377,6 @@
       "errNet": "Pa t ka telechaje dekodè a. Verifye koneksyon ou epi eseye ankò.",
       "errDecode": "Pa t ka li foto sa a (fichye domaje oswa varyant HEIC ki pa sipòte).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Chwazi imaj oswa glise yo isit la",
-      "dropHint": "JPG, PNG, WebP. Plizyè imaj alafwa, chak mwens pase 40 MB. Ou ka kole yo tou ak Ctrl+V.",
-      "model": "Tip imaj",
-      "mGeneral": "Nenpòt bagay (pwodwi, bèt kay, objè, moun)",
-      "mGeneralD": "pi egzak, telechaje yon modèl anviwon 200 MB premye fwa a",
-      "mPortrait": "Pòtrè moun",
-      "mPortraitD": "rapid, modèl lejè anviwon 25 MB, ekselan pou foto idantite ak foto pwofil",
-      "bg": "Nouvo background",
-      "bgNone": "Transparan (PNG)",
-      "bgWhite": "Blan",
-      "bgColor": "Lòt koulè",
-      "run": "Retire background",
-      "zip": "Telechaje tout (.zip)",
-      "note": "AI a mache sou aparèy ou (ak kat grafik ou si navigatè a sipòte WebGPU); imaj yo pa janm voye okenn kote. Modèl la telechaje sèlman premye fwa a epi navigatè ou kenbe l nan memwa. Ansyen òdinatè oswa telefòn ka pran 10–60 segonn pou chak imaj. Pou background blan senp, zouti Retire background imaj la pi vit.",
-      "download": "Telechaje",
-      "tooBig": "pi gwo pase 40 MB",
-      "suffix": "no-bg",
-      "loadingLib": "Ap chaje sistèm AI a…",
-      "loadingModel": "Ap telechaje modèl AI a (premye fwa sèlman)…",
-      "working": "Ap trete imaj",
-      "errImg": "Pa t ka trete imaj sa a",
-      "done": "Fini!",
-      "err": "Pa t ka fè AI a mache nan navigatè sa a. Eseye yon Chrome oswa Edge resan.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Chwazi yon imaj oswa glise l isit la",

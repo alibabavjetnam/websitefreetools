@@ -434,10 +434,6 @@
       "name": "HEIC ke JPG",
       "desc": "Ubah foto HEIC iPhone ke JPG atau PNG agar bisa dibuka di mana saja. Konversi sekaligus."
     },
-    "ai-bg-remove": {
-      "name": "Hapus latar dengan AI",
-      "desc": "Pisahkan orang, produk, dan hewan dari latar apa pun dengan AI di perangkat Anda, lalu unduh PNG transparan."
-    },
     "image-upscale": {
       "name": "Perbesar gambar dengan AI",
       "desc": "Perbesar gambar 2× atau 4× dan pertajam detail dengan AI. Cocok untuk foto kecil, buram, atau lama."
@@ -587,7 +583,32 @@
       "err.notImage": "File ini bukan gambar.",
       "err.tooBig": "Gambar lebih besar dari 40 MB.",
       "canvas.title": "Klik area latar belakang untuk memilih warnanya",
-      "toast.pickedBg": "Warna latar belakang dipilih"
+      "toast.pickedBg": "Warna latar belakang dipilih",
+      "ai.dropTitle": "Pilih gambar atau seret ke sini",
+      "ai.dropHint": "JPG, PNG, WebP. Bisa banyak gambar, masing-masing di bawah 40 MB. Bisa juga tempel dengan Ctrl+V.",
+      "ai.model": "Jenis gambar",
+      "ai.mGeneral": "Apa saja (produk, hewan, benda, orang)",
+      "ai.mGeneralD": "paling akurat; pertama kali mengunduh model sekitar 200 MB",
+      "ai.mPortrait": "Potret orang",
+      "ai.mPortraitD": "cepat, model ringan sekitar 25 MB, cocok untuk pasfoto dan foto profil",
+      "ai.bg": "Latar baru",
+      "ai.bgNone": "Transparan (PNG)",
+      "ai.bgWhite": "Putih",
+      "ai.bgColor": "Warna lain",
+      "ai.run": "Hapus latar",
+      "ai.zip": "Unduh semua (.zip)",
+      "ai.note": "AI berjalan di perangkat Anda (dengan kartu grafis jika browser mendukung WebGPU); gambar tidak pernah dikirim. Model hanya diunduh pertama kali dan disimpan browser. Komputer atau ponsel lama bisa butuh 10–60 detik per gambar. Untuk latar putih polos, alat Hapus latar gambar lebih cepat.",
+      "ai.download": "Unduh",
+      "ai.tooBig": "lebih dari 40 MB",
+      "ai.suffix": "tanpa-latar",
+      "ai.loadingLib": "Memuat mesin AI…",
+      "ai.loadingModel": "Mengunduh model AI (hanya pertama kali)…",
+      "ai.working": "Memproses gambar",
+      "ai.errImg": "Tidak dapat memproses gambar ini",
+      "ai.done": "Selesai!",
+      "ai.err": "AI tidak bisa berjalan di browser ini. Coba Chrome atau Edge versi terbaru.",
+      "ai.zipName": "latar-dihapus",
+      "tab.simple": "Latar polos (cepat)"
     },
     "attendance": {
       "add.label": "Tambah siswa",
@@ -2441,32 +2462,6 @@
       "errNet": "Tidak dapat mengunduh dekoder. Periksa koneksi lalu coba lagi.",
       "errDecode": "Tidak dapat membaca foto ini (file rusak atau jenis HEIC tidak didukung).",
       "zipName": "foto-heic-diubah"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Pilih gambar atau seret ke sini",
-      "dropHint": "JPG, PNG, WebP. Bisa banyak gambar, masing-masing di bawah 40 MB. Bisa juga tempel dengan Ctrl+V.",
-      "model": "Jenis gambar",
-      "mGeneral": "Apa saja (produk, hewan, benda, orang)",
-      "mGeneralD": "paling akurat; pertama kali mengunduh model sekitar 200 MB",
-      "mPortrait": "Potret orang",
-      "mPortraitD": "cepat, model ringan sekitar 25 MB, cocok untuk pasfoto dan foto profil",
-      "bg": "Latar baru",
-      "bgNone": "Transparan (PNG)",
-      "bgWhite": "Putih",
-      "bgColor": "Warna lain",
-      "run": "Hapus latar",
-      "zip": "Unduh semua (.zip)",
-      "note": "AI berjalan di perangkat Anda (dengan kartu grafis jika browser mendukung WebGPU); gambar tidak pernah dikirim. Model hanya diunduh pertama kali dan disimpan browser. Komputer atau ponsel lama bisa butuh 10–60 detik per gambar. Untuk latar putih polos, alat Hapus latar gambar lebih cepat.",
-      "download": "Unduh",
-      "tooBig": "lebih dari 40 MB",
-      "suffix": "tanpa-latar",
-      "loadingLib": "Memuat mesin AI…",
-      "loadingModel": "Mengunduh model AI (hanya pertama kali)…",
-      "working": "Memproses gambar",
-      "errImg": "Tidak dapat memproses gambar ini",
-      "done": "Selesai!",
-      "err": "AI tidak bisa berjalan di browser ini. Coba Chrome atau Edge versi terbaru.",
-      "zipName": "latar-dihapus"
     },
     "image-upscale": {
       "dropTitle": "Pilih gambar atau seret ke sini",

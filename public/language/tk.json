@@ -434,10 +434,6 @@
       "name": "HEIC-den JPG-e",
       "desc": "iPhone HEIC suratlaryny JPG ýa-da PNG-e öwrüň, olar islendik ýerde açylar. Köpçülikleýin öwürmek goldanylýar."
     },
-    "ai-bg-remove": {
-      "name": "AI fon aýyryjy",
-      "desc": "Adamlary, harytlary we öý haýwanlaryny islendik fondan enjamdaky AI bilen kesip alyň we aç-açan PNG ýükläň."
-    },
     "image-upscale": {
       "name": "AI surat ulaldyjy",
       "desc": "Suratlary 2× ýa-da 4× ulaldyň we AI bilen jikme-jiklikleri ýiti ediň. Kiçi, bulanyk ýa-da köne suratlar üçin ajaýyp."
@@ -587,7 +583,32 @@
       "err.notImage": "Bu faýl surat däl.",
       "err.tooBig": "Surat 40 MB-dan uly.",
       "canvas.title": "Reňkini saýlamak üçin fon ýerine basyň",
-      "toast.pickedBg": "Fon reňki saýlandy"
+      "toast.pickedBg": "Fon reňki saýlandy",
+      "ai.dropTitle": "Suratlary saýlaň ýa-da şu ýere süýräp getiriň",
+      "ai.dropHint": "JPG, PNG, WebP. Birnäçe surat bir wagtda, hersi 40 MB-dan az. Ctrl+V bilen hem ýapyşdyryp bilersiňiz.",
+      "ai.model": "Suratyň görnüşi",
+      "ai.mGeneral": "Islendik zat (harytlar, öý haýwanlary, zatlar, adamlar)",
+      "ai.mGeneralD": "iň takyk, ilkinji gezek takmynan 200 MB model ýüklenýär",
+      "ai.mPortrait": "Adam portretleri",
+      "ai.mPortraitD": "çalt, takmynan 25 MB ýeňil model, şahsyýet suratlary we profil suratlary üçin ajaýyp",
+      "ai.bg": "Täze fon",
+      "ai.bgNone": "Aç-açan (PNG)",
+      "ai.bgWhite": "Ak",
+      "ai.bgColor": "Başga reňk",
+      "ai.run": "Fony aýyr",
+      "ai.zip": "Hemmesini ýükle (.zip)",
+      "ai.note": "AI enjamyňyzda işleýär (brauzer WebGPU goldasa, grafiki kartyňyzy ulanýar); suratlar hiç ýere iberilmeýär. Model diňe ilkinji gezek ýüklenýär we brauzeriňiz tarapyndan keşde saklanýar. Köne kompýuterler ýa-da telefonlar her surat üçin 10–60 sekunt alyp biler. Ýönekeý ak fonlar üçin Suratyň fonuny aýyrmak guraly has çalt.",
+      "ai.download": "Ýükle",
+      "ai.tooBig": "40 MB-dan uly",
+      "ai.suffix": "no-bg",
+      "ai.loadingLib": "AI işleýiş gurşawy ýüklenýär…",
+      "ai.loadingModel": "AI modeli ýüklenýär (diňe ilkinji gezek)…",
+      "ai.working": "Surat işlenýär",
+      "ai.errImg": "Bu suraty işläp bolmady",
+      "ai.done": "Taýýar!",
+      "ai.err": "Bu brauzerde AI-ni işledip bolmady. Täze Chrome ýa-da Edge synanyşyň.",
+      "ai.zipName": "background-removed",
+      "tab.simple": "Bir reňkli fon (çalt)"
     },
     "attendance": {
       "add.label": "Okuwçy goş",
@@ -3356,32 +3377,6 @@
       "errNet": "Dekoderi ýükläp bolmady. Baglanyşygyňyzy barlap, gaýtadan synanyşyň.",
       "errDecode": "Bu suraty okap bolmady (zaýalanan faýl ýa-da goldanylmaýan HEIC görnüşi).",
       "zipName": "converted-heic-photos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Suratlary saýlaň ýa-da şu ýere süýräp getiriň",
-      "dropHint": "JPG, PNG, WebP. Birnäçe surat bir wagtda, hersi 40 MB-dan az. Ctrl+V bilen hem ýapyşdyryp bilersiňiz.",
-      "model": "Suratyň görnüşi",
-      "mGeneral": "Islendik zat (harytlar, öý haýwanlary, zatlar, adamlar)",
-      "mGeneralD": "iň takyk, ilkinji gezek takmynan 200 MB model ýüklenýär",
-      "mPortrait": "Adam portretleri",
-      "mPortraitD": "çalt, takmynan 25 MB ýeňil model, şahsyýet suratlary we profil suratlary üçin ajaýyp",
-      "bg": "Täze fon",
-      "bgNone": "Aç-açan (PNG)",
-      "bgWhite": "Ak",
-      "bgColor": "Başga reňk",
-      "run": "Fony aýyr",
-      "zip": "Hemmesini ýükle (.zip)",
-      "note": "AI enjamyňyzda işleýär (brauzer WebGPU goldasa, grafiki kartyňyzy ulanýar); suratlar hiç ýere iberilmeýär. Model diňe ilkinji gezek ýüklenýär we brauzeriňiz tarapyndan keşde saklanýar. Köne kompýuterler ýa-da telefonlar her surat üçin 10–60 sekunt alyp biler. Ýönekeý ak fonlar üçin Suratyň fonuny aýyrmak guraly has çalt.",
-      "download": "Ýükle",
-      "tooBig": "40 MB-dan uly",
-      "suffix": "no-bg",
-      "loadingLib": "AI işleýiş gurşawy ýüklenýär…",
-      "loadingModel": "AI modeli ýüklenýär (diňe ilkinji gezek)…",
-      "working": "Surat işlenýär",
-      "errImg": "Bu suraty işläp bolmady",
-      "done": "Taýýar!",
-      "err": "Bu brauzerde AI-ni işledip bolmady. Täze Chrome ýa-da Edge synanyşyň.",
-      "zipName": "background-removed"
     },
     "image-upscale": {
       "dropTitle": "Surat saýlaň ýa-da şu ýere süýräp getiriň",

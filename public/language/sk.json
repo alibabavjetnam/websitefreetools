@@ -434,10 +434,6 @@
       "name": "HEIC na JPG",
       "desc": "Preveďte fotky HEIC z iPhonu do JPG alebo PNG, aby sa otvorili kdekoľvek. Viac súborov naraz."
     },
-    "ai-bg-remove": {
-      "name": "Odstránenie pozadia pomocou AI",
-      "desc": "Vystrihnite ľudí, produkty a zvieratá z akéhokoľvek pozadia pomocou AI priamo v zariadení a stiahnite priehľadné PNG."
-    },
     "image-upscale": {
       "name": "Zväčšenie obrázka pomocou AI",
       "desc": "Zväčšite obrázky 2× alebo 4× a zaostrite detaily pomocou AI. Ideálne pre malé, rozmazané alebo staré fotky."
@@ -587,7 +583,32 @@
       "err.notImage": "Tento súbor nie je obrázok.",
       "err.tooBig": "Obrázok je väčší ako 40 MB.",
       "canvas.title": "Kliknutím na oblasť pozadia vyberte jeho farbu",
-      "toast.pickedBg": "Farba pozadia bola vybraná"
+      "toast.pickedBg": "Farba pozadia bola vybraná",
+      "ai.dropTitle": "Vyberte obrázky alebo ich sem presuňte",
+      "ai.dropHint": "JPG, PNG, WebP. Veľa obrázkov naraz, každý do 40 MB. Môžete tiež vložiť cez Ctrl+V.",
+      "ai.model": "Typ obrázka",
+      "ai.mGeneral": "Čokoľvek (produkty, zvieratá, predmety, ľudia)",
+      "ai.mGeneralD": "najpresnejší, prvýkrát stiahne model s veľkosťou asi 200 MB",
+      "ai.mPortrait": "Portréty ľudí",
+      "ai.mPortraitD": "rýchly, ľahký model asi 25 MB, ideálny na preukazové a profilové fotky",
+      "ai.bg": "Nové pozadie",
+      "ai.bgNone": "Priehľadné (PNG)",
+      "ai.bgWhite": "Biele",
+      "ai.bgColor": "Iná farba",
+      "ai.run": "Odstrániť pozadie",
+      "ai.zip": "Stiahnuť všetko (.zip)",
+      "ai.note": "AI beží vo vašom zariadení (s grafickou kartou, ak prehliadač podporuje WebGPU); obrázky sa nikam neposielajú. Model sa stiahne len prvýkrát a prehliadač si ho uloží do vyrovnávacej pamäte. Staršie počítače alebo telefóny môžu potrebovať 10–60 sekúnd na obrázok. Pre jednoduché biele pozadia je rýchlejší nástroj Odstránenie pozadia obrázka.",
+      "ai.download": "Stiahnuť",
+      "ai.tooBig": "väčší ako 40 MB",
+      "ai.suffix": "bez-pozadia",
+      "ai.loadingLib": "Načítavam prostredie AI…",
+      "ai.loadingModel": "Sťahujem model AI (len prvýkrát)…",
+      "ai.working": "Spracúvam obrázok",
+      "ai.errImg": "Tento obrázok sa nepodarilo spracovať",
+      "ai.done": "Hotovo!",
+      "ai.err": "V tomto prehliadači nie je možné spustiť AI. Skúste aktuálny Chrome alebo Edge.",
+      "ai.zipName": "odstranene-pozadie",
+      "tab.simple": "Jednofarebné pozadie (rýchle)"
     },
     "attendance": {
       "add.label": "Pridať žiaka",
@@ -2441,32 +2462,6 @@
       "errNet": "Dekodér sa nepodarilo stiahnuť. Skontrolujte pripojenie a skúste to znova.",
       "errDecode": "Túto fotku sa nepodarilo prečítať (poškodený súbor alebo nepodporovaný variant HEIC).",
       "zipName": "prevedene-fotky-heic"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Vyberte obrázky alebo ich sem presuňte",
-      "dropHint": "JPG, PNG, WebP. Veľa obrázkov naraz, každý do 40 MB. Môžete tiež vložiť cez Ctrl+V.",
-      "model": "Typ obrázka",
-      "mGeneral": "Čokoľvek (produkty, zvieratá, predmety, ľudia)",
-      "mGeneralD": "najpresnejší, prvýkrát stiahne model s veľkosťou asi 200 MB",
-      "mPortrait": "Portréty ľudí",
-      "mPortraitD": "rýchly, ľahký model asi 25 MB, ideálny na preukazové a profilové fotky",
-      "bg": "Nové pozadie",
-      "bgNone": "Priehľadné (PNG)",
-      "bgWhite": "Biele",
-      "bgColor": "Iná farba",
-      "run": "Odstrániť pozadie",
-      "zip": "Stiahnuť všetko (.zip)",
-      "note": "AI beží vo vašom zariadení (s grafickou kartou, ak prehliadač podporuje WebGPU); obrázky sa nikam neposielajú. Model sa stiahne len prvýkrát a prehliadač si ho uloží do vyrovnávacej pamäte. Staršie počítače alebo telefóny môžu potrebovať 10–60 sekúnd na obrázok. Pre jednoduché biele pozadia je rýchlejší nástroj Odstránenie pozadia obrázka.",
-      "download": "Stiahnuť",
-      "tooBig": "väčší ako 40 MB",
-      "suffix": "bez-pozadia",
-      "loadingLib": "Načítavam prostredie AI…",
-      "loadingModel": "Sťahujem model AI (len prvýkrát)…",
-      "working": "Spracúvam obrázok",
-      "errImg": "Tento obrázok sa nepodarilo spracovať",
-      "done": "Hotovo!",
-      "err": "V tomto prehliadači nie je možné spustiť AI. Skúste aktuálny Chrome alebo Edge.",
-      "zipName": "odstranene-pozadie"
     },
     "image-upscale": {
       "dropTitle": "Vyberte obrázok alebo ho sem presuňte",

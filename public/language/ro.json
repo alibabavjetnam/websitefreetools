@@ -434,10 +434,6 @@
       "name": "HEIC în JPG",
       "desc": "Convertește fotografiile HEIC de pe iPhone în JPG sau PNG ca să se deschidă oriunde. Mai multe fișiere deodată."
     },
-    "ai-bg-remove": {
-      "name": "Eliminare fundal cu AI",
-      "desc": "Decupează oameni, produse și animale de pe orice fundal cu AI care rulează pe dispozitiv și descarcă un PNG transparent."
-    },
     "image-upscale": {
       "name": "Mărire imagine cu AI",
       "desc": "Mărește imaginile de 2× sau 4× și clarifică detaliile cu AI. Ideal pentru fotografii mici, neclare sau vechi."
@@ -587,7 +583,32 @@
       "err.notImage": "Acest fișier nu este o imagine.",
       "err.tooBig": "Imaginea depășește 40 MB.",
       "canvas.title": "Dă clic pe zona de fundal pentru a-i alege culoarea",
-      "toast.pickedBg": "Culoarea fundalului a fost aleasă"
+      "toast.pickedBg": "Culoarea fundalului a fost aleasă",
+      "ai.dropTitle": "Alege imagini sau trage-le aici",
+      "ai.dropHint": "JPG, PNG, WebP. Multe imagini deodată, fiecare sub 40 MB. Poți și lipi cu Ctrl+V.",
+      "ai.model": "Tipul imaginii",
+      "ai.mGeneral": "Orice (produse, animale, obiecte, oameni)",
+      "ai.mGeneralD": "cel mai precis, descarcă prima dată un model de aprox. 200 MB",
+      "ai.mPortrait": "Portrete de oameni",
+      "ai.mPortraitD": "model rapid și ușor, de aprox. 25 MB, ideal pentru poze de act și de profil",
+      "ai.bg": "Fundal nou",
+      "ai.bgNone": "Transparent (PNG)",
+      "ai.bgWhite": "Alb",
+      "ai.bgColor": "Altă culoare",
+      "ai.run": "Elimină fundalul",
+      "ai.zip": "Descarcă tot (.zip)",
+      "ai.note": "AI-ul rulează pe dispozitivul tău (pe placa grafică, dacă browserul suportă WebGPU); imaginile nu sunt trimise nicăieri. Modelul se descarcă doar prima dată și e păstrat în cache-ul browserului. Pe calculatoare sau telefoane mai vechi poate dura 10–60 de secunde per imagine. Pentru fundaluri albe simple, instrumentul Eliminare fundal imagine e mai rapid.",
+      "ai.download": "Descarcă",
+      "ai.tooBig": "mai mare de 40 MB",
+      "ai.suffix": "fara-fundal",
+      "ai.loadingLib": "Se încarcă motorul AI…",
+      "ai.loadingModel": "Se descarcă modelul AI (doar prima dată)…",
+      "ai.working": "Se procesează imaginea",
+      "ai.errImg": "Această imagine nu a putut fi procesată",
+      "ai.done": "Gata!",
+      "ai.err": "AI-ul nu poate rula în acest browser. Încearcă un Chrome sau Edge recent.",
+      "ai.zipName": "fundal-eliminat",
+      "tab.simple": "Fundal uni (rapid)"
     },
     "attendance": {
       "add.label": "Adaugă elev",
@@ -2441,32 +2462,6 @@
       "errNet": "Decodorul nu a putut fi descărcat. Verifică conexiunea și încearcă din nou.",
       "errDecode": "Această fotografie nu a putut fi citită (fișier deteriorat sau variantă HEIC nesuportată).",
       "zipName": "fotografii-heic-convertite"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Alege imagini sau trage-le aici",
-      "dropHint": "JPG, PNG, WebP. Multe imagini deodată, fiecare sub 40 MB. Poți și lipi cu Ctrl+V.",
-      "model": "Tipul imaginii",
-      "mGeneral": "Orice (produse, animale, obiecte, oameni)",
-      "mGeneralD": "cel mai precis, descarcă prima dată un model de aprox. 200 MB",
-      "mPortrait": "Portrete de oameni",
-      "mPortraitD": "model rapid și ușor, de aprox. 25 MB, ideal pentru poze de act și de profil",
-      "bg": "Fundal nou",
-      "bgNone": "Transparent (PNG)",
-      "bgWhite": "Alb",
-      "bgColor": "Altă culoare",
-      "run": "Elimină fundalul",
-      "zip": "Descarcă tot (.zip)",
-      "note": "AI-ul rulează pe dispozitivul tău (pe placa grafică, dacă browserul suportă WebGPU); imaginile nu sunt trimise nicăieri. Modelul se descarcă doar prima dată și e păstrat în cache-ul browserului. Pe calculatoare sau telefoane mai vechi poate dura 10–60 de secunde per imagine. Pentru fundaluri albe simple, instrumentul Eliminare fundal imagine e mai rapid.",
-      "download": "Descarcă",
-      "tooBig": "mai mare de 40 MB",
-      "suffix": "fara-fundal",
-      "loadingLib": "Se încarcă motorul AI…",
-      "loadingModel": "Se descarcă modelul AI (doar prima dată)…",
-      "working": "Se procesează imaginea",
-      "errImg": "Această imagine nu a putut fi procesată",
-      "done": "Gata!",
-      "err": "AI-ul nu poate rula în acest browser. Încearcă un Chrome sau Edge recent.",
-      "zipName": "fundal-eliminat"
     },
     "image-upscale": {
       "dropTitle": "Alege o imagine sau trage-o aici",

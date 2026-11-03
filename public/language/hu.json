@@ -434,10 +434,6 @@
       "name": "HEIC-ből JPG",
       "desc": "Alakítsd az iPhone HEIC fotóit JPG-vé vagy PNG-vé, hogy bárhol megnyíljanak. Több fájl egyszerre."
     },
-    "ai-bg-remove": {
-      "name": "MI-s háttéreltávolító",
-      "desc": "Vágj ki embereket, termékeket és háziállatokat bármilyen háttérből az eszközön futó MI-vel, és tölts le átlátszó PNG-t."
-    },
     "image-upscale": {
       "name": "MI-s képnagyító",
       "desc": "Nagyítsd a képeket 2× vagy 4× méretre, és élesítsd a részleteket MI-vel. Ideális kicsi, elmosódott vagy régi fotókhoz."
@@ -587,7 +583,32 @@
       "err.notImage": "Ez a fájl nem kép.",
       "err.tooBig": "A kép nagyobb 40 MB-nál.",
       "canvas.title": "Kattints a háttérterületre a színének kiválasztásához",
-      "toast.pickedBg": "Háttérszín kiválasztva"
+      "toast.pickedBg": "Háttérszín kiválasztva",
+      "ai.dropTitle": "Válassz képeket, vagy húzd ide őket",
+      "ai.dropHint": "JPG, PNG, WebP. Sok kép egyszerre, mindegyik 40 MB alatt. Ctrl+V-vel be is illesztheted.",
+      "ai.model": "Kép típusa",
+      "ai.mGeneral": "Bármi (termékek, háziállatok, tárgyak, emberek)",
+      "ai.mGeneralD": "legpontosabb, első alkalommal kb. 200 MB-os modellt tölt le",
+      "ai.mPortrait": "Portrék emberekről",
+      "ai.mPortraitD": "gyors, kb. 25 MB-os könnyű modell, igazolvány- és profilképekhez ideális",
+      "ai.bg": "Új háttér",
+      "ai.bgNone": "Átlátszó (PNG)",
+      "ai.bgWhite": "Fehér",
+      "ai.bgColor": "Más szín",
+      "ai.run": "Háttér eltávolítása",
+      "ai.zip": "Összes letöltése (.zip)",
+      "ai.note": "Az MI az eszközödön fut (a videokártyával, ha a böngésző támogatja a WebGPU-t); a képek soha nem kerülnek elküldésre. A modell csak első alkalommal töltődik le, a böngésző gyorsítótárazza. Régebbi számítógépeken vagy telefonokon képenként 10–60 másodpercig tarthat. Egyszerű fehér háttérhez a Képháttér eltávolítása eszköz gyorsabb.",
+      "ai.download": "Letöltés",
+      "ai.tooBig": "nagyobb, mint 40 MB",
+      "ai.suffix": "hatter-nelkul",
+      "ai.loadingLib": "MI-motor betöltése…",
+      "ai.loadingModel": "MI-modell letöltése (csak első alkalommal)…",
+      "ai.working": "Kép feldolgozása",
+      "ai.errImg": "Ezt a képet nem sikerült feldolgozni",
+      "ai.done": "Kész!",
+      "ai.err": "Az MI nem futtatható ebben a böngészőben. Próbálj friss Chrome-ot vagy Edge-et.",
+      "ai.zipName": "hatter-eltavolitva",
+      "tab.simple": "Egyszínű háttér (gyors)"
     },
     "attendance": {
       "add.label": "Tanuló hozzáadása",
@@ -2441,32 +2462,6 @@
       "errNet": "Nem sikerült letölteni a dekódert. Ellenőrizd a kapcsolatot, és próbáld újra.",
       "errDecode": "Ezt a fotót nem sikerült beolvasni (sérült fájl vagy nem támogatott HEIC-változat).",
       "zipName": "atalakitott-heic-fotok"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Válassz képeket, vagy húzd ide őket",
-      "dropHint": "JPG, PNG, WebP. Sok kép egyszerre, mindegyik 40 MB alatt. Ctrl+V-vel be is illesztheted.",
-      "model": "Kép típusa",
-      "mGeneral": "Bármi (termékek, háziállatok, tárgyak, emberek)",
-      "mGeneralD": "legpontosabb, első alkalommal kb. 200 MB-os modellt tölt le",
-      "mPortrait": "Portrék emberekről",
-      "mPortraitD": "gyors, kb. 25 MB-os könnyű modell, igazolvány- és profilképekhez ideális",
-      "bg": "Új háttér",
-      "bgNone": "Átlátszó (PNG)",
-      "bgWhite": "Fehér",
-      "bgColor": "Más szín",
-      "run": "Háttér eltávolítása",
-      "zip": "Összes letöltése (.zip)",
-      "note": "Az MI az eszközödön fut (a videokártyával, ha a böngésző támogatja a WebGPU-t); a képek soha nem kerülnek elküldésre. A modell csak első alkalommal töltődik le, a böngésző gyorsítótárazza. Régebbi számítógépeken vagy telefonokon képenként 10–60 másodpercig tarthat. Egyszerű fehér háttérhez a Képháttér eltávolítása eszköz gyorsabb.",
-      "download": "Letöltés",
-      "tooBig": "nagyobb, mint 40 MB",
-      "suffix": "hatter-nelkul",
-      "loadingLib": "MI-motor betöltése…",
-      "loadingModel": "MI-modell letöltése (csak első alkalommal)…",
-      "working": "Kép feldolgozása",
-      "errImg": "Ezt a képet nem sikerült feldolgozni",
-      "done": "Kész!",
-      "err": "Az MI nem futtatható ebben a böngészőben. Próbálj friss Chrome-ot vagy Edge-et.",
-      "zipName": "hatter-eltavolitva"
     },
     "image-upscale": {
       "dropTitle": "Válassz képet, vagy húzd ide",

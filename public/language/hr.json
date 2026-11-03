@@ -434,10 +434,6 @@
       "name": "HEIC u JPG",
       "desc": "Pretvorite iPhone HEIC fotografije u JPG ili PNG da se otvaraju svugdje. Više datoteka odjednom."
     },
-    "ai-bg-remove": {
-      "name": "Uklanjanje pozadine pomoću AI-ja",
-      "desc": "Izrežite ljude, proizvode i ljubimce iz bilo koje pozadine pomoću AI-ja na uređaju i preuzmite prozirni PNG."
-    },
     "image-upscale": {
       "name": "Povećanje slike pomoću AI-ja",
       "desc": "Povećajte slike 2× ili 4× i izoštrite detalje pomoću AI-ja. Idealno za male, mutne ili stare fotografije."
@@ -587,7 +583,32 @@
       "err.notImage": "Ova datoteka nije slika.",
       "err.tooBig": "Slika je veća od 40 MB.",
       "canvas.title": "Kliknite područje pozadine da odaberete njezinu boju",
-      "toast.pickedBg": "Boja pozadine odabrana"
+      "toast.pickedBg": "Boja pozadine odabrana",
+      "ai.dropTitle": "Odaberite slike ili ih povucite ovamo",
+      "ai.dropHint": "JPG, PNG, WebP. Mnogo slika odjednom, svaka manja od 40 MB. Možete i zalijepiti s Ctrl+V.",
+      "ai.model": "Vrsta slike",
+      "ai.mGeneral": "Bilo što (proizvodi, ljubimci, predmeti, ljudi)",
+      "ai.mGeneralD": "najtočnije, prvi put preuzima model od oko 200 MB",
+      "ai.mPortrait": "Portreti ljudi",
+      "ai.mPortraitD": "brz, lagan model od oko 25 MB, idealan za fotografije za dokumente i profil",
+      "ai.bg": "Nova pozadina",
+      "ai.bgNone": "Prozirna (PNG)",
+      "ai.bgWhite": "Bijela",
+      "ai.bgColor": "Druga boja",
+      "ai.run": "Ukloni pozadinu",
+      "ai.zip": "Preuzmi sve (.zip)",
+      "ai.note": "AI radi na vašem uređaju (s grafičkom karticom ako preglednik podržava WebGPU); slike se nikamo ne šalju. Model se preuzima samo prvi put i preglednik ga sprema u predmemoriju. Na starijim računalima ili mobitelima može trajati 10–60 sekundi po slici. Za jednostavne bijele pozadine alat za uklanjanje pozadine slike je brži.",
+      "ai.download": "Preuzmi",
+      "ai.tooBig": "veća od 40 MB",
+      "ai.suffix": "bez-pozadine",
+      "ai.loadingLib": "Učitavam AI modul…",
+      "ai.loadingModel": "Preuzimam AI model (samo prvi put)…",
+      "ai.working": "Obrađujem sliku",
+      "ai.errImg": "Ova se slika nije mogla obraditi",
+      "ai.done": "Gotovo!",
+      "ai.err": "AI ne može raditi u ovom pregledniku. Pokušajte s novijim Chromeom ili Edgeom.",
+      "ai.zipName": "uklonjena-pozadina",
+      "tab.simple": "Jednobojna pozadina (brzo)"
     },
     "attendance": {
       "add.label": "Dodaj učenika",
@@ -2441,32 +2462,6 @@
       "errNet": "Dekoder se nije mogao preuzeti. Provjerite vezu i pokušajte ponovno.",
       "errDecode": "Ova se fotografija ne može pročitati (oštećena datoteka ili nepodržana inačica HEIC-a).",
       "zipName": "pretvorene-heic-fotografije"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Odaberite slike ili ih povucite ovamo",
-      "dropHint": "JPG, PNG, WebP. Mnogo slika odjednom, svaka manja od 40 MB. Možete i zalijepiti s Ctrl+V.",
-      "model": "Vrsta slike",
-      "mGeneral": "Bilo što (proizvodi, ljubimci, predmeti, ljudi)",
-      "mGeneralD": "najtočnije, prvi put preuzima model od oko 200 MB",
-      "mPortrait": "Portreti ljudi",
-      "mPortraitD": "brz, lagan model od oko 25 MB, idealan za fotografije za dokumente i profil",
-      "bg": "Nova pozadina",
-      "bgNone": "Prozirna (PNG)",
-      "bgWhite": "Bijela",
-      "bgColor": "Druga boja",
-      "run": "Ukloni pozadinu",
-      "zip": "Preuzmi sve (.zip)",
-      "note": "AI radi na vašem uređaju (s grafičkom karticom ako preglednik podržava WebGPU); slike se nikamo ne šalju. Model se preuzima samo prvi put i preglednik ga sprema u predmemoriju. Na starijim računalima ili mobitelima može trajati 10–60 sekundi po slici. Za jednostavne bijele pozadine alat za uklanjanje pozadine slike je brži.",
-      "download": "Preuzmi",
-      "tooBig": "veća od 40 MB",
-      "suffix": "bez-pozadine",
-      "loadingLib": "Učitavam AI modul…",
-      "loadingModel": "Preuzimam AI model (samo prvi put)…",
-      "working": "Obrađujem sliku",
-      "errImg": "Ova se slika nije mogla obraditi",
-      "done": "Gotovo!",
-      "err": "AI ne može raditi u ovom pregledniku. Pokušajte s novijim Chromeom ili Edgeom.",
-      "zipName": "uklonjena-pozadina"
     },
     "image-upscale": {
       "dropTitle": "Odaberite sliku ili je povucite ovamo",

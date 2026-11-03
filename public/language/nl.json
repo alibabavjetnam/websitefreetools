@@ -434,10 +434,6 @@
       "name": "HEIC naar JPG",
       "desc": "Zet iPhone HEIC-foto's om naar JPG of PNG zodat ze overal opengaan. Meerdere tegelijk."
     },
-    "ai-bg-remove": {
-      "name": "Achtergrond verwijderen met AI",
-      "desc": "Knip mensen, producten en dieren uit elke achtergrond met AI op je apparaat en download een transparante PNG."
-    },
     "image-upscale": {
       "name": "Afbeelding vergroten met AI",
       "desc": "Vergroot afbeeldingen 2× of 4× en maak details scherper met AI. Ideaal voor kleine, wazige of oude foto's."
@@ -587,7 +583,32 @@
       "err.notImage": "Dit bestand is geen afbeelding.",
       "err.tooBig": "De afbeelding is groter dan 40 MB.",
       "canvas.title": "Klik op het achtergrondgebied om de kleur te kiezen",
-      "toast.pickedBg": "Achtergrondkleur gekozen"
+      "toast.pickedBg": "Achtergrondkleur gekozen",
+      "ai.dropTitle": "Kies afbeeldingen of sleep ze hierheen",
+      "ai.dropHint": "JPG, PNG, WebP. Meerdere afbeeldingen, elk kleiner dan 40 MB. Plakken met Ctrl+V kan ook.",
+      "ai.model": "Soort afbeelding",
+      "ai.mGeneral": "Alles (producten, dieren, voorwerpen, mensen)",
+      "ai.mGeneralD": "het nauwkeurigst; downloadt de eerste keer een model van ongeveer 200 MB",
+      "ai.mPortrait": "Portretten van mensen",
+      "ai.mPortraitD": "snel, licht model van ongeveer 25 MB, ideaal voor pasfoto's en profielfoto's",
+      "ai.bg": "Nieuwe achtergrond",
+      "ai.bgNone": "Transparant (PNG)",
+      "ai.bgWhite": "Wit",
+      "ai.bgColor": "Andere kleur",
+      "ai.run": "Achtergrond verwijderen",
+      "ai.zip": "Alles downloaden (.zip)",
+      "ai.note": "De AI draait op je apparaat (met de videokaart als de browser WebGPU ondersteunt); afbeeldingen worden nooit verstuurd. Het model wordt alleen de eerste keer gedownload en door de browser bewaard. Oudere computers of telefoons kunnen 10–60 seconden per afbeelding nodig hebben. Voor effen witte achtergronden is de tool Afbeeldingsachtergrond verwijderen sneller.",
+      "ai.download": "Downloaden",
+      "ai.tooBig": "groter dan 40 MB",
+      "ai.suffix": "zonder-achtergrond",
+      "ai.loadingLib": "AI-engine laden…",
+      "ai.loadingModel": "AI-model downloaden (alleen de eerste keer)…",
+      "ai.working": "Afbeelding verwerken",
+      "ai.errImg": "Kan deze afbeelding niet verwerken",
+      "ai.done": "Klaar!",
+      "ai.err": "AI kan niet draaien in deze browser. Probeer een recente versie van Chrome of Edge.",
+      "ai.zipName": "achtergrond-verwijderd",
+      "tab.simple": "Effen achtergrond (snel)"
     },
     "attendance": {
       "add.label": "Leerling toevoegen",
@@ -2441,32 +2462,6 @@
       "errNet": "Kan de decoder niet downloaden. Controleer je verbinding en probeer het opnieuw.",
       "errDecode": "Kan deze foto niet lezen (beschadigd bestand of niet-ondersteunde HEIC-variant).",
       "zipName": "omgezette-heic-fotos"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Kies afbeeldingen of sleep ze hierheen",
-      "dropHint": "JPG, PNG, WebP. Meerdere afbeeldingen, elk kleiner dan 40 MB. Plakken met Ctrl+V kan ook.",
-      "model": "Soort afbeelding",
-      "mGeneral": "Alles (producten, dieren, voorwerpen, mensen)",
-      "mGeneralD": "het nauwkeurigst; downloadt de eerste keer een model van ongeveer 200 MB",
-      "mPortrait": "Portretten van mensen",
-      "mPortraitD": "snel, licht model van ongeveer 25 MB, ideaal voor pasfoto's en profielfoto's",
-      "bg": "Nieuwe achtergrond",
-      "bgNone": "Transparant (PNG)",
-      "bgWhite": "Wit",
-      "bgColor": "Andere kleur",
-      "run": "Achtergrond verwijderen",
-      "zip": "Alles downloaden (.zip)",
-      "note": "De AI draait op je apparaat (met de videokaart als de browser WebGPU ondersteunt); afbeeldingen worden nooit verstuurd. Het model wordt alleen de eerste keer gedownload en door de browser bewaard. Oudere computers of telefoons kunnen 10–60 seconden per afbeelding nodig hebben. Voor effen witte achtergronden is de tool Afbeeldingsachtergrond verwijderen sneller.",
-      "download": "Downloaden",
-      "tooBig": "groter dan 40 MB",
-      "suffix": "zonder-achtergrond",
-      "loadingLib": "AI-engine laden…",
-      "loadingModel": "AI-model downloaden (alleen de eerste keer)…",
-      "working": "Afbeelding verwerken",
-      "errImg": "Kan deze afbeelding niet verwerken",
-      "done": "Klaar!",
-      "err": "AI kan niet draaien in deze browser. Probeer een recente versie van Chrome of Edge.",
-      "zipName": "achtergrond-verwijderd"
     },
     "image-upscale": {
       "dropTitle": "Kies een afbeelding of sleep hem hierheen",

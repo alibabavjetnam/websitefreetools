@@ -434,10 +434,6 @@
       "name": "HEIC na JPG",
       "desc": "Konwertuj zdjęcia HEIC z iPhone'a do JPG lub PNG, by otwierały się wszędzie. Konwersja wielu plików."
     },
-    "ai-bg-remove": {
-      "name": "Usuwanie tła z AI",
-      "desc": "Wycinaj ludzi, produkty i zwierzęta z dowolnego tła dzięki AI na Twoim urządzeniu i pobierz przezroczysty PNG."
-    },
     "image-upscale": {
       "name": "Powiększanie obrazu z AI",
       "desc": "Powiększ obraz 2× lub 4× i wyostrz szczegóły dzięki AI. Idealne do małych, rozmytych lub starych zdjęć."
@@ -587,7 +583,32 @@
       "err.notImage": "Ten plik nie jest obrazem.",
       "err.tooBig": "Obraz jest większy niż 40 MB.",
       "canvas.title": "Kliknij obszar tła, aby wybrać jego kolor",
-      "toast.pickedBg": "Wybrano kolor tła"
+      "toast.pickedBg": "Wybrano kolor tła",
+      "ai.dropTitle": "Wybierz obrazy lub przeciągnij je tutaj",
+      "ai.dropHint": "JPG, PNG, WebP. Wiele obrazów, każdy poniżej 40 MB. Możesz też wkleić przez Ctrl+V.",
+      "ai.model": "Rodzaj obrazu",
+      "ai.mGeneral": "Cokolwiek (produkty, zwierzęta, przedmioty, ludzie)",
+      "ai.mGeneralD": "najdokładniejszy; za pierwszym razem pobiera model ok. 200 MB",
+      "ai.mPortrait": "Portrety ludzi",
+      "ai.mPortraitD": "szybki, lekki model ok. 25 MB, idealny do zdjęć do dokumentów i profilowych",
+      "ai.bg": "Nowe tło",
+      "ai.bgNone": "Przezroczyste (PNG)",
+      "ai.bgWhite": "Białe",
+      "ai.bgColor": "Inny kolor",
+      "ai.run": "Usuń tło",
+      "ai.zip": "Pobierz wszystko (.zip)",
+      "ai.note": "AI działa na Twoim urządzeniu (z kartą graficzną, jeśli przeglądarka obsługuje WebGPU); obrazy nigdy nie są wysyłane. Model pobiera się tylko za pierwszym razem i przeglądarka go przechowuje. Starsze komputery i telefony mogą potrzebować 10–60 sekund na obraz. Do jednolitego białego tła szybsze jest narzędzie Usuwanie tła obrazu.",
+      "ai.download": "Pobierz",
+      "ai.tooBig": "ponad 40 MB",
+      "ai.suffix": "bez-tla",
+      "ai.loadingLib": "Wczytywanie silnika AI…",
+      "ai.loadingModel": "Pobieranie modelu AI (tylko za pierwszym razem)…",
+      "ai.working": "Przetwarzanie obrazu",
+      "ai.errImg": "Nie można przetworzyć tego obrazu",
+      "ai.done": "Gotowe!",
+      "ai.err": "AI nie działa w tej przeglądarce. Spróbuj aktualnej wersji Chrome lub Edge.",
+      "ai.zipName": "tlo-usuniete",
+      "tab.simple": "Jednolite tło (szybko)"
     },
     "attendance": {
       "add.label": "Dodaj ucznia",
@@ -2441,32 +2462,6 @@
       "errNet": "Nie można pobrać dekodera. Sprawdź połączenie i spróbuj ponownie.",
       "errDecode": "Nie można odczytać tego zdjęcia (uszkodzony plik lub nieobsługiwany wariant HEIC).",
       "zipName": "zdjecia-heic"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Wybierz obrazy lub przeciągnij je tutaj",
-      "dropHint": "JPG, PNG, WebP. Wiele obrazów, każdy poniżej 40 MB. Możesz też wkleić przez Ctrl+V.",
-      "model": "Rodzaj obrazu",
-      "mGeneral": "Cokolwiek (produkty, zwierzęta, przedmioty, ludzie)",
-      "mGeneralD": "najdokładniejszy; za pierwszym razem pobiera model ok. 200 MB",
-      "mPortrait": "Portrety ludzi",
-      "mPortraitD": "szybki, lekki model ok. 25 MB, idealny do zdjęć do dokumentów i profilowych",
-      "bg": "Nowe tło",
-      "bgNone": "Przezroczyste (PNG)",
-      "bgWhite": "Białe",
-      "bgColor": "Inny kolor",
-      "run": "Usuń tło",
-      "zip": "Pobierz wszystko (.zip)",
-      "note": "AI działa na Twoim urządzeniu (z kartą graficzną, jeśli przeglądarka obsługuje WebGPU); obrazy nigdy nie są wysyłane. Model pobiera się tylko za pierwszym razem i przeglądarka go przechowuje. Starsze komputery i telefony mogą potrzebować 10–60 sekund na obraz. Do jednolitego białego tła szybsze jest narzędzie Usuwanie tła obrazu.",
-      "download": "Pobierz",
-      "tooBig": "ponad 40 MB",
-      "suffix": "bez-tla",
-      "loadingLib": "Wczytywanie silnika AI…",
-      "loadingModel": "Pobieranie modelu AI (tylko za pierwszym razem)…",
-      "working": "Przetwarzanie obrazu",
-      "errImg": "Nie można przetworzyć tego obrazu",
-      "done": "Gotowe!",
-      "err": "AI nie działa w tej przeglądarce. Spróbuj aktualnej wersji Chrome lub Edge.",
-      "zipName": "tlo-usuniete"
     },
     "image-upscale": {
       "dropTitle": "Wybierz obraz lub przeciągnij go tutaj",

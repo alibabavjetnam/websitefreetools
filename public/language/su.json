@@ -434,10 +434,6 @@
       "name": "HEIC ka JPG",
       "desc": "Robah poto HEIC iPhone ka JPG atawa PNG sangkan bisa dibuka di mana waé. Ngarojong konvérsi massal."
     },
-    "ai-bg-remove": {
-      "name": "Pangahapus Latar Tukang AI",
-      "desc": "Potong jalma, produk jeung sato piaraan tina latar tukang naon waé maké AI dina parangkat tuluy undeur PNG transparan."
-    },
     "image-upscale": {
       "name": "Pangagedé Gambar AI",
       "desc": "Gedékeun gambar 2× atawa 4× tuluy seukeutkeun rinci maké AI. Alus pikeun poto leutik, burem atawa lawas."
@@ -587,7 +583,32 @@
       "err.notImage": "Koropak ieu lain gambar.",
       "err.tooBig": "Gambar leuwih ti 40 MB.",
       "canvas.title": "Klik wewengkon latar tukang pikeun milih warnana",
-      "toast.pickedBg": "Warna latar tukang geus dipilih"
+      "toast.pickedBg": "Warna latar tukang geus dipilih",
+      "ai.dropTitle": "Pilih gambar atawa sered ka dieu",
+      "ai.dropHint": "JPG, PNG, WebP. Loba gambar sakaligus, masing-masing kurang ti 40 MB. Bisa ogé nempelkeun ku Ctrl+V.",
+      "ai.model": "Jenis gambar",
+      "ai.mGeneral": "Naon waé (produk, sato piaraan, objék, jalma)",
+      "ai.mGeneralD": "pangakuratna, ngaundeur modél kira-kira 200 MB pertama kali",
+      "ai.mPortrait": "Potrét jalma",
+      "ai.mPortraitD": "gancang, modél hampang kira-kira 25 MB, alus pikeun poto KTP jeung poto profil",
+      "ai.bg": "Latar tukang anyar",
+      "ai.bgNone": "Transparan (PNG)",
+      "ai.bgWhite": "Bodas",
+      "ai.bgColor": "Warna séjén",
+      "ai.run": "Hapus latar tukang",
+      "ai.zip": "Undeur sadayana (.zip)",
+      "ai.note": "AI jalan dina parangkat anjeun (maké kartu grafis lamun browser ngarojong WebGPU); gambar teu pernah dikirim ka mana-mana. Modél ngan diundeur pertama kali sarta di-cache ku browser anjeun. Komputer atawa telepon lawas meureun butuh 10–60 detik per gambar. Pikeun latar tukang bodas basajan, parabot Hapus Latar Tukang Gambar leuwih gancang.",
+      "ai.download": "Undeur",
+      "ai.tooBig": "leuwih ti 40 MB",
+      "ai.suffix": "tanpa-latar",
+      "ai.loadingLib": "Ngamuat runtime AI…",
+      "ai.loadingModel": "Ngaundeur modél AI (pertama kali waé)…",
+      "ai.working": "Ngolah gambar",
+      "ai.errImg": "Teu bisa ngolah gambar ieu",
+      "ai.done": "Réngsé!",
+      "ai.err": "Teu bisa ngajalankeun AI dina browser ieu. Cobaan Chrome atawa Edge nu anyar.",
+      "ai.zipName": "latar-dihapus",
+      "tab.simple": "Latar sawarna (gancang)"
     },
     "attendance": {
       "add.label": "Tambahkeun murid",
@@ -3356,32 +3377,6 @@
       "errNet": "Teu bisa ngaundeur dékoder. Pariksa sambungan anjeun tuluy cobaan deui.",
       "errDecode": "Teu bisa maca poto ieu (koropak ruksak atawa varian HEIC teu dirojong).",
       "zipName": "poto-heic-dirobah"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Pilih gambar atawa sered ka dieu",
-      "dropHint": "JPG, PNG, WebP. Loba gambar sakaligus, masing-masing kurang ti 40 MB. Bisa ogé nempelkeun ku Ctrl+V.",
-      "model": "Jenis gambar",
-      "mGeneral": "Naon waé (produk, sato piaraan, objék, jalma)",
-      "mGeneralD": "pangakuratna, ngaundeur modél kira-kira 200 MB pertama kali",
-      "mPortrait": "Potrét jalma",
-      "mPortraitD": "gancang, modél hampang kira-kira 25 MB, alus pikeun poto KTP jeung poto profil",
-      "bg": "Latar tukang anyar",
-      "bgNone": "Transparan (PNG)",
-      "bgWhite": "Bodas",
-      "bgColor": "Warna séjén",
-      "run": "Hapus latar tukang",
-      "zip": "Undeur sadayana (.zip)",
-      "note": "AI jalan dina parangkat anjeun (maké kartu grafis lamun browser ngarojong WebGPU); gambar teu pernah dikirim ka mana-mana. Modél ngan diundeur pertama kali sarta di-cache ku browser anjeun. Komputer atawa telepon lawas meureun butuh 10–60 detik per gambar. Pikeun latar tukang bodas basajan, parabot Hapus Latar Tukang Gambar leuwih gancang.",
-      "download": "Undeur",
-      "tooBig": "leuwih ti 40 MB",
-      "suffix": "tanpa-latar",
-      "loadingLib": "Ngamuat runtime AI…",
-      "loadingModel": "Ngaundeur modél AI (pertama kali waé)…",
-      "working": "Ngolah gambar",
-      "errImg": "Teu bisa ngolah gambar ieu",
-      "done": "Réngsé!",
-      "err": "Teu bisa ngajalankeun AI dina browser ieu. Cobaan Chrome atawa Edge nu anyar.",
-      "zipName": "latar-dihapus"
     },
     "image-upscale": {
       "dropTitle": "Pilih gambar atawa sered ka dieu",

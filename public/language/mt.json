@@ -434,10 +434,6 @@
       "name": "HEIC għal JPG",
       "desc": "Ikkonverti ritratti HEIC tal-iPhone għal JPG jew PNG biex jinfetħu kullimkien. Konverżjoni f'lottijiet appoġġjata."
     },
-    "ai-bg-remove": {
-      "name": "Neħħi l-Isfond bl-AI",
-      "desc": "Aqta' nies, prodotti u annimali domestiċi minn kwalunkwe sfond bl-AI fuq l-apparat u niżżel PNG trasparenti."
-    },
     "image-upscale": {
       "name": "Kabbar l-Istampi bl-AI",
       "desc": "Kabbar l-istampi 2× jew 4× u aħdem id-dettalji bl-AI. Tajjeb għal ritratti żgħar, mċajpra jew qodma."
@@ -587,7 +583,32 @@
       "err.notImage": "Dan il-fajl mhuwiex immaġni.",
       "err.tooBig": "L-immaġni hija akbar minn 40 MB.",
       "canvas.title": "Ikklikkja fuq iż-żona tal-isfond biex tagħżel il-kulur tagħha",
-      "toast.pickedBg": "Kulur tal-isfond magħżul"
+      "toast.pickedBg": "Kulur tal-isfond magħżul",
+      "ai.dropTitle": "Agħżel stampi jew kaxkarhom hawn",
+      "ai.dropHint": "JPG, PNG, WebP. Ħafna stampi f'daqqa, kull waħda inqas minn 40 MB. Tista' wkoll tpejstja b'Ctrl+V.",
+      "ai.model": "Tip ta' stampa",
+      "ai.mGeneral": "Kwalunkwe ħaġa (prodotti, annimali domestiċi, oġġetti, nies)",
+      "ai.mGeneralD": "l-iktar preċiż, jniżżel mudell ta' madwar 200 MB l-ewwel darba",
+      "ai.mPortrait": "Ritratti ta' nies",
+      "ai.mPortraitD": "mudell ħafif u mgħaġġel ta' madwar 25 MB, kbir għal ritratti tal-ID u ritratti tal-profil",
+      "ai.bg": "Sfond ġdid",
+      "ai.bgNone": "Trasparenti (PNG)",
+      "ai.bgWhite": "Abjad",
+      "ai.bgColor": "Kulur ieħor",
+      "ai.run": "Neħħi l-isfond",
+      "ai.zip": "Niżżel kollox (.zip)",
+      "ai.note": "L-AI taħdem fuq l-apparat tiegħek (bil-karta grafika tiegħek jekk il-browser jappoġġja WebGPU); l-istampi qatt ma jintbagħtu imkien. Il-mudell jitniżżel biss l-ewwel darba u jinżamm fil-cache tal-browser tiegħek. Kompjuters jew telefons eqdem jistgħu jieħdu 10–60 sekonda għal kull stampa. Għal sfondi bojod sempliċi, l-għodda Neħħi l-Isfond tal-Istampa hija aktar mgħaġġla.",
+      "ai.download": "Niżżel",
+      "ai.tooBig": "akbar minn 40 MB",
+      "ai.suffix": "bla-sfond",
+      "ai.loadingLib": "Qed titgħabba r-runtime tal-AI…",
+      "ai.loadingModel": "Qed jitniżżel il-mudell tal-AI (l-ewwel darba biss)…",
+      "ai.working": "Qed jipproċessa l-istampa",
+      "ai.errImg": "Ma setgħetx tiġi pproċessata din l-istampa",
+      "ai.done": "Lest!",
+      "ai.err": "Ma setgħetx taħdem l-AI f'dan il-browser. Ipprova Chrome jew Edge reċenti.",
+      "ai.zipName": "sfond-imneħħi",
+      "tab.simple": "Sfond ta’ kulur wieħed (mgħaġġel)"
     },
     "attendance": {
       "add.label": "Żid student",
@@ -3356,32 +3377,6 @@
       "errNet": "Ma setax jitniżżel id-dekoder. Iċċekkja l-konnessjoni tiegħek u erġa' pprova.",
       "errDecode": "Ma setax jinqara dan ir-ritratt (fajl bil-ħsara jew varjant HEIC mhux appoġġjat).",
       "zipName": "ritratti-heic-ikkonvertiti"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Agħżel stampi jew kaxkarhom hawn",
-      "dropHint": "JPG, PNG, WebP. Ħafna stampi f'daqqa, kull waħda inqas minn 40 MB. Tista' wkoll tpejstja b'Ctrl+V.",
-      "model": "Tip ta' stampa",
-      "mGeneral": "Kwalunkwe ħaġa (prodotti, annimali domestiċi, oġġetti, nies)",
-      "mGeneralD": "l-iktar preċiż, jniżżel mudell ta' madwar 200 MB l-ewwel darba",
-      "mPortrait": "Ritratti ta' nies",
-      "mPortraitD": "mudell ħafif u mgħaġġel ta' madwar 25 MB, kbir għal ritratti tal-ID u ritratti tal-profil",
-      "bg": "Sfond ġdid",
-      "bgNone": "Trasparenti (PNG)",
-      "bgWhite": "Abjad",
-      "bgColor": "Kulur ieħor",
-      "run": "Neħħi l-isfond",
-      "zip": "Niżżel kollox (.zip)",
-      "note": "L-AI taħdem fuq l-apparat tiegħek (bil-karta grafika tiegħek jekk il-browser jappoġġja WebGPU); l-istampi qatt ma jintbagħtu imkien. Il-mudell jitniżżel biss l-ewwel darba u jinżamm fil-cache tal-browser tiegħek. Kompjuters jew telefons eqdem jistgħu jieħdu 10–60 sekonda għal kull stampa. Għal sfondi bojod sempliċi, l-għodda Neħħi l-Isfond tal-Istampa hija aktar mgħaġġla.",
-      "download": "Niżżel",
-      "tooBig": "akbar minn 40 MB",
-      "suffix": "bla-sfond",
-      "loadingLib": "Qed titgħabba r-runtime tal-AI…",
-      "loadingModel": "Qed jitniżżel il-mudell tal-AI (l-ewwel darba biss)…",
-      "working": "Qed jipproċessa l-istampa",
-      "errImg": "Ma setgħetx tiġi pproċessata din l-istampa",
-      "done": "Lest!",
-      "err": "Ma setgħetx taħdem l-AI f'dan il-browser. Ipprova Chrome jew Edge reċenti.",
-      "zipName": "sfond-imneħħi"
     },
     "image-upscale": {
       "dropTitle": "Agħżel stampa jew kaxkarha hawn",

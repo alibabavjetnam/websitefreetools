@@ -434,10 +434,6 @@
       "name": "HEIC go JPG",
       "desc": "Tiontaigh grianghraif HEIC iPhone go JPG nó PNG le go n-osclóidh siad i ngach áit. Tacaítear le tiontú baisc."
     },
-    "ai-bg-remove": {
-      "name": "Bainteoir cúlra AI",
-      "desc": "Gearr amach daoine, táirgí agus peataí as aon chúlra le AI ar do ghléas agus íoslódáil PNG trédhearcach."
-    },
     "image-upscale": {
       "name": "Méadaitheoir íomhánna AI",
       "desc": "Méadaigh íomhánna 2× nó 4× agus géaraigh sonraí le AI. Go hiontach do ghrianghraif bheaga, doiléire nó sheanda."
@@ -587,7 +583,32 @@
       "err.notImage": "Ní íomhá é an comhad seo.",
       "err.tooBig": "Tá an íomhá níos mó ná 40 MB.",
       "canvas.title": "Cliceáil ar limistéar an chúlra chun a dhath a roghnú",
-      "toast.pickedBg": "Roghnaíodh dath an chúlra"
+      "toast.pickedBg": "Roghnaíodh dath an chúlra",
+      "ai.dropTitle": "Roghnaigh íomhánna nó tarraing anseo iad",
+      "ai.dropHint": "JPG, PNG, WebP. A lán íomhánna ag an am, gach ceann faoi 40 MB. Is féidir leat greamú le Ctrl+V freisin.",
+      "ai.model": "Cineál íomhá",
+      "ai.mGeneral": "Aon rud (táirgí, peataí, rudaí, daoine)",
+      "ai.mGeneralD": "is cruinne, íoslódálann sé samhail thart ar 200 MB an chéad uair",
+      "ai.mPortrait": "Portráidí daoine",
+      "ai.mPortraitD": "samhail thapa éadrom thart ar 25 MB, go hiontach do ghrianghraif aitheantais agus pictiúir phróifíle",
+      "ai.bg": "Cúlra nua",
+      "ai.bgNone": "Trédhearcach (PNG)",
+      "ai.bgWhite": "Bán",
+      "ai.bgColor": "Dath eile",
+      "ai.run": "Bain an cúlra",
+      "ai.zip": "Íoslódáil na comhaid ar fad (.zip)",
+      "ai.note": "Ritheann an AI ar do ghléas (ag baint úsáide as do chárta grafaicí má thacaíonn an brabhsálaí le WebGPU); ní sheoltar íomhánna áit ar bith. Íoslódálann an tsamhail an chéad uair amháin agus cuirtear i dtaisce ag do bhrabhsálaí í. D'fhéadfadh 10–60 soicind in aghaidh na híomhá a thógáil ar ríomhairí nó fóin níos sine. Le haghaidh cúlraí bána simplí, tá an uirlis Bain cúlra íomhá níos tapa.",
+      "ai.download": "Íoslódáil",
+      "ai.tooBig": "níos mó ná 40 MB",
+      "ai.suffix": "gan-chúlra",
+      "ai.loadingLib": "Am rite an AI á luchtú…",
+      "ai.loadingModel": "Samhail an AI á híoslódáil (an chéad uair amháin)…",
+      "ai.working": "Íomhá á próiseáil",
+      "ai.errImg": "Níorbh fhéidir an íomhá seo a phróiseáil",
+      "ai.done": "Déanta!",
+      "ai.err": "Níorbh fhéidir an AI a rith sa bhrabhsálaí seo. Bain triail as Chrome nó Edge le déanaí.",
+      "ai.zipName": "cúlra-bainte",
+      "tab.simple": "Cúlra aondatha (tapa)"
     },
     "attendance": {
       "add.label": "Cuir mac léinn leis",
@@ -3356,32 +3377,6 @@
       "errNet": "Níorbh fhéidir an díchódóir a íoslódáil. Seiceáil do cheangal agus bain triail eile as.",
       "errDecode": "Níorbh fhéidir an grianghraf seo a léamh (comhad damáistithe nó leagan HEIC nach dtacaítear leis).",
       "zipName": "grianghraif-heic-tiontaithe"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Roghnaigh íomhánna nó tarraing anseo iad",
-      "dropHint": "JPG, PNG, WebP. A lán íomhánna ag an am, gach ceann faoi 40 MB. Is féidir leat greamú le Ctrl+V freisin.",
-      "model": "Cineál íomhá",
-      "mGeneral": "Aon rud (táirgí, peataí, rudaí, daoine)",
-      "mGeneralD": "is cruinne, íoslódálann sé samhail thart ar 200 MB an chéad uair",
-      "mPortrait": "Portráidí daoine",
-      "mPortraitD": "samhail thapa éadrom thart ar 25 MB, go hiontach do ghrianghraif aitheantais agus pictiúir phróifíle",
-      "bg": "Cúlra nua",
-      "bgNone": "Trédhearcach (PNG)",
-      "bgWhite": "Bán",
-      "bgColor": "Dath eile",
-      "run": "Bain an cúlra",
-      "zip": "Íoslódáil na comhaid ar fad (.zip)",
-      "note": "Ritheann an AI ar do ghléas (ag baint úsáide as do chárta grafaicí má thacaíonn an brabhsálaí le WebGPU); ní sheoltar íomhánna áit ar bith. Íoslódálann an tsamhail an chéad uair amháin agus cuirtear i dtaisce ag do bhrabhsálaí í. D'fhéadfadh 10–60 soicind in aghaidh na híomhá a thógáil ar ríomhairí nó fóin níos sine. Le haghaidh cúlraí bána simplí, tá an uirlis Bain cúlra íomhá níos tapa.",
-      "download": "Íoslódáil",
-      "tooBig": "níos mó ná 40 MB",
-      "suffix": "gan-chúlra",
-      "loadingLib": "Am rite an AI á luchtú…",
-      "loadingModel": "Samhail an AI á híoslódáil (an chéad uair amháin)…",
-      "working": "Íomhá á próiseáil",
-      "errImg": "Níorbh fhéidir an íomhá seo a phróiseáil",
-      "done": "Déanta!",
-      "err": "Níorbh fhéidir an AI a rith sa bhrabhsálaí seo. Bain triail as Chrome nó Edge le déanaí.",
-      "zipName": "cúlra-bainte"
     },
     "image-upscale": {
       "dropTitle": "Roghnaigh íomhá nó tarraing anseo í",

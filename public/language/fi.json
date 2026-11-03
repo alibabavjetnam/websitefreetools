@@ -434,10 +434,6 @@
       "name": "HEIC JPG:ksi",
       "desc": "Muunna iPhonen HEIC-kuvat JPG- tai PNG-muotoon, jotta ne aukeavat kaikkialla. Monta kerralla."
     },
-    "ai-bg-remove": {
-      "name": "Tekoälytaustanpoisto",
-      "desc": "Leikkaa ihmiset, tuotteet ja lemmikit mistä tahansa taustasta laitteella toimivalla tekoälyllä ja lataa läpinäkyvä PNG."
-    },
     "image-upscale": {
       "name": "Tekoälykuvansuurennin",
       "desc": "Suurenna kuvia 2× tai 4× ja terävöitä yksityiskohtia tekoälyllä. Sopii pieniin, sumeisiin tai vanhoihin kuviin."
@@ -587,7 +583,32 @@
       "err.notImage": "Tämä tiedosto ei ole kuva.",
       "err.tooBig": "Kuva on suurempi kuin 40 Mt.",
       "canvas.title": "Napsauta taustaaluetta valitaksesi sen värin",
-      "toast.pickedBg": "Taustaväri valittu"
+      "toast.pickedBg": "Taustaväri valittu",
+      "ai.dropTitle": "Valitse kuvat tai vedä ne tähän",
+      "ai.dropHint": "JPG, PNG, WebP. Monta kuvaa kerralla, kukin alle 40 Mt. Voit myös liittää Ctrl+V:llä.",
+      "ai.model": "Kuvan tyyppi",
+      "ai.mGeneral": "Mitä tahansa (tuotteet, lemmikit, esineet, ihmiset)",
+      "ai.mGeneralD": "tarkin, lataa ensimmäisellä kerralla noin 200 Mt:n mallin",
+      "ai.mPortrait": "Henkilökuvat",
+      "ai.mPortraitD": "nopea, kevyt noin 25 Mt:n malli, sopii passi- ja profiilikuviin",
+      "ai.bg": "Uusi tausta",
+      "ai.bgNone": "Läpinäkyvä (PNG)",
+      "ai.bgWhite": "Valkoinen",
+      "ai.bgColor": "Muu väri",
+      "ai.run": "Poista tausta",
+      "ai.zip": "Lataa kaikki (.zip)",
+      "ai.note": "Tekoäly toimii laitteellasi (näytönohjaimella, jos selain tukee WebGPU:ta); kuvia ei koskaan lähetetä minnekään. Malli ladataan vain ensimmäisellä kerralla ja selain tallentaa sen välimuistiin. Vanhemmilla tietokoneilla tai puhelimilla kuva voi viedä 10–60 sekuntia. Yksinkertaisille valkoisille taustoille Poista kuvan tausta -työkalu on nopeampi.",
+      "ai.download": "Lataa",
+      "ai.tooBig": "yli 40 Mt",
+      "ai.suffix": "ilman-taustaa",
+      "ai.loadingLib": "Ladataan tekoälymoottoria…",
+      "ai.loadingModel": "Ladataan tekoälymallia (vain ensimmäisellä kerralla)…",
+      "ai.working": "Käsitellään kuvaa",
+      "ai.errImg": "Tätä kuvaa ei voitu käsitellä",
+      "ai.done": "Valmis!",
+      "ai.err": "Tekoälyä ei voitu ajaa tässä selaimessa. Kokeile uutta Chromea tai Edgeä.",
+      "ai.zipName": "tausta-poistettu",
+      "tab.simple": "Yksivärinen tausta (nopea)"
     },
     "attendance": {
       "add.label": "Lisää oppilas",
@@ -2441,32 +2462,6 @@
       "errNet": "Purkajaa ei voitu ladata. Tarkista yhteys ja yritä uudelleen.",
       "errDecode": "Kuvaa ei voitu lukea (vioittunut tiedosto tai tukematon HEIC-muunnelma).",
       "zipName": "muunnetut-heic-kuvat"
-    },
-    "ai-bg-remove": {
-      "dropTitle": "Valitse kuvat tai vedä ne tähän",
-      "dropHint": "JPG, PNG, WebP. Monta kuvaa kerralla, kukin alle 40 Mt. Voit myös liittää Ctrl+V:llä.",
-      "model": "Kuvan tyyppi",
-      "mGeneral": "Mitä tahansa (tuotteet, lemmikit, esineet, ihmiset)",
-      "mGeneralD": "tarkin, lataa ensimmäisellä kerralla noin 200 Mt:n mallin",
-      "mPortrait": "Henkilökuvat",
-      "mPortraitD": "nopea, kevyt noin 25 Mt:n malli, sopii passi- ja profiilikuviin",
-      "bg": "Uusi tausta",
-      "bgNone": "Läpinäkyvä (PNG)",
-      "bgWhite": "Valkoinen",
-      "bgColor": "Muu väri",
-      "run": "Poista tausta",
-      "zip": "Lataa kaikki (.zip)",
-      "note": "Tekoäly toimii laitteellasi (näytönohjaimella, jos selain tukee WebGPU:ta); kuvia ei koskaan lähetetä minnekään. Malli ladataan vain ensimmäisellä kerralla ja selain tallentaa sen välimuistiin. Vanhemmilla tietokoneilla tai puhelimilla kuva voi viedä 10–60 sekuntia. Yksinkertaisille valkoisille taustoille Poista kuvan tausta -työkalu on nopeampi.",
-      "download": "Lataa",
-      "tooBig": "yli 40 Mt",
-      "suffix": "ilman-taustaa",
-      "loadingLib": "Ladataan tekoälymoottoria…",
-      "loadingModel": "Ladataan tekoälymallia (vain ensimmäisellä kerralla)…",
-      "working": "Käsitellään kuvaa",
-      "errImg": "Tätä kuvaa ei voitu käsitellä",
-      "done": "Valmis!",
-      "err": "Tekoälyä ei voitu ajaa tässä selaimessa. Kokeile uutta Chromea tai Edgeä.",
-      "zipName": "tausta-poistettu"
     },
     "image-upscale": {
       "dropTitle": "Valitse kuva tai vedä se tähän",
