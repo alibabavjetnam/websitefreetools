@@ -30,7 +30,7 @@
     </div>
     <script>
       (function () {
-        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu', 'xh', 'sn', 'ceb', 'jv', 'su', 'ne', 'si', 'my', 'km', 'lo', 'ky', 'tg', 'tk', 'ps', 'sd', 'ht', 'mi', 'ha', 'yo', 'ig', 'am'];
+        var supported = ['en', 'vi', 'ja', 'zh', 'es', 'de', 'ru', 'fr', 'pt', 'it', 'tr', 'nl', 'ko', 'ar', 'hi', 'id', 'th', 'pl', 'uk', 'bn', 'ms', 'fa', 'he', 'ur', 'ta', 'te', 'mr', 'gu', 'kn', 'ml', 'pa', 'sv', 'da', 'nb', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'el', 'hr', 'sr', 'lt', 'lv', 'et', 'sl', 'fil', 'sw', 'ca', 'lb', 'is', 'yue', 'ga', 'cy', 'zh-TW', 'mt', 'eu', 'gl', 'af', 'sq', 'bs', 'mk', 'kk', 'az', 'ka', 'hy', 'be', 'uz', 'mn', 'ku', 'zu', 'xh', 'sn', 'ceb', 'jv', 'su', 'ne', 'si', 'my', 'km', 'lo', 'ky', 'tg', 'tk', 'ps', 'sd', 'ht', 'mi', 'ha', 'yo', 'ig', 'am', 'so', 'rw', 'mg', 'as', 'or', 'mai', 'bho'];
         var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
         var lang = 'en';
         outer: for (var i = 0; i < langs.length; i++) {
@@ -136,7 +136,14 @@
           ha: ["Ba a sami shafin ba", "Adireshin shafin na iya canzawa ko ya ɓace. Koma shafin farko ka zaɓi kayan aiki.", "Koma shafin farko", ["Lambar QR", "Matse hotuna", "Haɗa PDF", "Na'urar lissafin bashi"]],
           yo: ["A kò rí ojú-ìwé náà", "Àdírẹ́sì ojú-ìwé náà lè ti yí padà tàbí kò sí mọ́. Padà sí ojú-ìwé àkọ́kọ́ kí o yan irinṣẹ́.", "Padà sí ojú-ìwé àkọ́kọ́", ["Kóòdù QR", "Dín àwòrán kù", "Dá PDF pọ̀", "Ẹ̀rọ ìṣírò gbèsè"]],
           ig: ["Achọtaghị ibe ahụ", "Adreesị ibe ahụ nwere ike ịgbanwe ma ọ bụ furu efu. Laghachi na ibe mbụ ma họrọ ngwa.", "Laghachi na ibe mbụ", ["Koodu QR", "Mebie foto", "Jikọta PDF", "Ngwa ịgbakọ ụgwọ"]],
-          am: ["ገጹ አልተገኘም", "የገጹ አድራሻ ተቀይሮ ወይም ጠፍቶ ሊሆን ይችላል። ወደ መነሻ ገጽ ተመልሰው መሣሪያ ይምረጡ።", "ወደ መነሻ ገጽ ተመለስ", ["QR ኮድ", "ምስሎችን ማጨቅጨቅ", "PDF ማዋሃድ", "የብድር ማስሊያ"]]
+          am: ["ገጹ አልተገኘም", "የገጹ አድራሻ ተቀይሮ ወይም ጠፍቶ ሊሆን ይችላል። ወደ መነሻ ገጽ ተመልሰው መሣሪያ ይምረጡ።", "ወደ መነሻ ገጽ ተመለስ", ["QR ኮድ", "ምስሎችን ማጨቅጨቅ", "PDF ማዋሃድ", "የብድር ማስሊያ"]],
+          so: ["Bogga lama helin", "Cinwaanka bogga waa laga yaabaa inuu isbeddelay ama baaba'ay. Ku noqo bogga hore oo dooro qalab.", "Ku noqo bogga hore", ["Koodka QR", "Cabbir yaree sawirrada", "Isku dar PDF", "Xisaabiyaha amaahda"]],
+          rw: ["Urupapuro ntirubonetse", "Aderesi y’urupapuro ishobora kuba yarahindutse cyangwa yavuyeho. Subira ku rupapuro rwa mbere uhitemo igikoresho.", "Subira ku rupapuro rwa mbere", ["Kode ya QR", "Gutoya amafoto", "Guhuza PDF", "Kubara inguzanyo"]],
+          mg: ["Tsy hita ny pejy", "Mety niova na tsy misy intsony ny adiresin’ny pejy. Miverena any amin’ny pejy fandraisana ary mifidiana fitaovana.", "Miverina any amin’ny pejy fandraisana", ["Kaody QR", "Fanamaivanana sary", "Fampiraisana PDF", "Mpikajy trosa"]],
+          as: ["পৃষ্ঠাটো পোৱা নগ'ল", "পৃষ্ঠাটোৰ ঠিকনা সলনি হ'ব পাৰে বা আঁতৰি যাব পাৰে। মুখ্য পৃষ্ঠালৈ উভতি গৈ এটা সঁজুলি বাছনি কৰক।", "মুখ্য পৃষ্ঠালৈ উভতি যাওক", ["QR ক'ড", "প্ৰতিচ্ছবি সংকুচিত কৰক", "PDF একত্ৰিত কৰক", "ঋণ কেলকুলেটৰ"]],
+          or: ["ପୃଷ୍ଠା ମିଳିଲା ନାହିଁ", "ପୃଷ୍ଠାର ଠିକଣା ବଦଳି ଯାଇପାରେ କିମ୍ବା ହଟିଯାଇପାରେ। ମୂଳ ପୃଷ୍ଠାକୁ ଫେରି ଏକ ଟୁଲ୍ ବାଛନ୍ତୁ।", "ମୂଳ ପୃଷ୍ଠାକୁ ଫେରନ୍ତୁ", ["QR କୋଡ୍", "ଚିତ୍ର ସଙ୍କୁଚିତ କରନ୍ତୁ", "PDF ଯୋଡ଼ନ୍ତୁ", "ଋଣ କ୍ୟାଲକୁଲେଟର୍"]],
+          mai: ["पृष्ठ नहि भेटल", "पृष्ठक पता बदलि गेल हएत वा हटि गेल हएत। मुख्य पृष्ठ पर घुरि कए कोनो टूल चुनू।", "मुख्य पृष्ठ पर घुरू", ["QR कोड", "फोटो संकुचित करू", "PDF जोड़ू", "ऋण कैलकुलेटर"]],
+          bho: ["पन्ना ना मिलल", "पन्ना के पता बदल गइल होई भा हट गइल होई। मुख्य पन्ना पर लवटीं आ कवनो औजार चुनीं।", "मुख्य पन्ना पर लवटीं", ["QR कोड", "फोटो छोट करीं", "PDF जोड़ीं", "कर्जा कैलकुलेटर"]]
         }[lang];
         var ids = ['qr-code', 'image-convert', 'pdf-merge', 'loan'];
         document.documentElement.lang = lang;
