@@ -58,6 +58,10 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Xử lý file | PDF sang Word (.docx tự tạo) | `tools/pdf-to-word.html` |
 | Xử lý file | Word sang PDF (tự đọc .docx, phân trang, tải PDF hoặc in) | `tools/word-to-pdf.html` |
 | Xử lý file | Ký tên lên PDF | `tools/pdf-sign.html` |
+| Xử lý dữ liệu Excel | Điền nội dung Word từ Excel | `tools/excel-word-fill.html` |
+| Xử lý dữ liệu Excel | Gộp ô Excel nhiều sheet / nhiều file | `tools/excel-cell-merge.html` |
+| Xử lý dữ liệu Excel | Nối dòng Excel nhiều sheet / nhiều file | `tools/excel-row-concat.html` |
+| Xử lý dữ liệu Excel | Trộn dữ liệu Excel theo công thức | `tools/excel-formula-merge.html` |
 | Xử lý file | Thêm chữ & điền form PDF | `tools/pdf-edit.html` |
 | Xử lý văn bản | Đổi chữ hoa, chữ thường, camelCase… | `tools/case-convert.html` |
 | Xử lý văn bản | Tạo chữ kiểu đẹp (Unicode) | `tools/fancy-text.html` |

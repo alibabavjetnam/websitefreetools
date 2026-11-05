@@ -1011,3 +1011,18 @@ textarea:focus-visible {
   width: 36pt;
   white-space: pre;
 }
+
+/* ---- Nhóm công cụ xử lý dữ liệu Excel ---- */
+.note.ok { color: #0e7a55; font-weight: 600; }
+.note.warn { color: #b45309; font-weight: 600; }
+.xl-opts { display: flex; flex-direction: column; gap: 10px; }
+.xl-opts .check small { display: block; color: var(--muted); font-weight: 400; }
+.xl-table { max-height: 420px; overflow: auto; }
+.xl-table th { vertical-align: top; }
+.xl-table .xl-filter, .xl-formula { width: 100%; box-sizing: border-box; font: inherit; font-size: 0.8125rem; padding: 4px 6px; border: 1px solid var(--line, #d0d5dd); border-radius: 6px; background: var(--surface, #fff); color: inherit; }
+.xl-table .xl-filter { display: block; margin-top: 6px; font-weight: 400; }
+.xl-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.xl-toolbar select { font: inherit; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line, #d0d5dd); background: var(--surface, #fff); color: inherit; }
+.xl-help { max-height: 260px; overflow: auto; }
+.xl-help code { font-size: 0.78rem; white-space: pre-wrap; }
+.workspace.xl-wide { grid-template-columns: minmax(0, 1fr); }

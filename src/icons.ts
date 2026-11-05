@@ -139,6 +139,10 @@ const PATHS: Record<string, string> = {
   // nốt nhạc
   'video-to-mp3': '<path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/>',
   // âm thoa / mặt đàn
+  'excel-word-fill': '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/>',
+  'excel-cell-merge': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/><path d="M13 14h5M16 12l2 2-2 2"/>',
+  'excel-row-concat': '<rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><path d="M12 10v4M10 12.5l2 2 2-2"/>',
+  'excel-formula-merge': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 9h3M8 15h3M9.5 7.5v3M9.5 13.5v3"/><path d="M14 9l3 3M17 9l-3 3M14 15h3"/>',
   'guitar-tuner': '<path d="M12 21a7 7 0 0 1-7-7"/><path d="M19 14a7 7 0 0 0-7-7 7 7 0 0 0-7 7"/><path d="M12 14l4-5"/><circle cx="12" cy="14" r="1.2"/>',
   // ổ khoá với dấu sao
   'password-gen': '<rect x="3" y="10" width="18" height="10" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/><path d="M8 15h.01M12 15h.01M16 15h.01"/>',

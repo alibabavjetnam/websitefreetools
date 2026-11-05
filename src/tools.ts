@@ -24,6 +24,7 @@ export interface ToolInfo {
 export const GROUPS: ToolGroup[] = [
   { id: 'image', name: 'Xử lý hình ảnh', description: 'Nén, đổi định dạng, xoá nền, đóng dấu ảnh ngay trên máy.' },
   { id: 'file', name: 'Xử lý file', description: 'Gộp tách PDF, đổi PowerPoint, so sánh văn bản, chuyển đổi dữ liệu.' },
+  { id: 'excel', name: 'Xử lý dữ liệu Excel', description: 'Điền Word từ Excel, gộp ô, nối dòng và trộn dữ liệu nhiều sheet, nhiều file Excel theo công thức.' },
   { id: 'text', name: 'Xử lý văn bản', description: 'Đổi kiểu chữ, chữ đẹp mạng xã hội, đọc văn bản và gõ bằng giọng nói.' },
   { id: 'business', name: 'Kinh doanh online', description: 'Công cụ cho shop online, hộ kinh doanh, freelancer.' },
   { id: 'finance', name: 'Tài chính & tính toán', description: 'Tính toán chính xác theo công thức và quy định hiện hành.' },
@@ -141,6 +142,10 @@ export const TOOLS: ToolInfo[] = [
   tool('video-compress', 'media', 'Nén video', 'Giảm dung lượng video MP4, MOV, WebM để gửi qua Zalo, email, đăng mạng; chọn độ phân giải và chất lượng.'),
   tool('video-to-mp3', 'media', 'Tách MP3 từ video', 'Lấy âm thanh từ video MP4, MOV, WebM thành file MP3, chọn chất lượng và cắt đoạn cần lấy.'),
   tool('guitar-tuner', 'media', 'Lên dây đàn guitar', 'Chỉnh dây guitar, ukulele, bass bằng micro: hiện nốt, độ lệch và kim chỉ chính xác; có âm mẫu từng dây.'),
+  tool('excel-word-fill', 'excel', 'Điền nội dung Word từ Excel', 'Trích nội dung Excel đưa vào các đánh dấu trong file Word, tự tô đỏ dòng đề mục (1., 2., I., II.).'),
+  tool('excel-cell-merge', 'excel', 'Gộp ô Excel nhiều sheet / nhiều file', 'Gộp nội dung cùng vị trí ô của nhiều sheet hoặc nhiều file Excel thành một file, báo những ô có dữ liệu từ 2 nguồn trở lên.'),
+  tool('excel-row-concat', 'excel', 'Nối dòng Excel nhiều sheet / nhiều file', 'Ghép dọc nhiều sheet hoặc nhiều file Excel thành một bảng, giữ tiêu đề một lần, loại dòng rỗng và dòng công thức rỗng.'),
+  tool('excel-formula-merge', 'excel', 'Trộn dữ liệu Excel theo công thức', 'Tổng hợp nhiều sheet hoặc nhiều file Excel bằng công thức cho từng ô: SUM, COUNT, IF, CONCAT, UNIQUE, lồng hàm, lưu công thức theo chuyên đề.'),
   tool('password-gen', 'dev', 'Tạo mật khẩu mạnh', 'Tạo mật khẩu ngẫu nhiên an toàn, chọn độ dài, loại ký tự, cụm từ dễ nhớ; đánh giá độ mạnh mật khẩu.'),
   tool('signature', 'business', 'Tạo chữ ký tay', 'Vẽ chữ ký bằng chuột, ngón tay hoặc gõ tên với kiểu chữ ký đẹp; tải PNG nền trong suốt để chèn vào tài liệu.'),
   tool('logo-maker', 'marketing', 'Tạo logo đơn giản', 'Tạo logo từ biểu tượng, tên thương hiệu, khẩu hiệu; chọn phông, màu, bố cục và tải SVG, PNG.'),
