@@ -80,6 +80,22 @@
         </label>
     </div>
 
+    <div class="paste-box" id="autoBox">
+        <label><strong>Tải dữ liệu tự động từ Vietstock (banggia.vietstock.vn/bang-gia/chung-quyen):</strong></label>
+        <div class="paste-controls">
+            <button type="button" id="btnOpenVietstock">1. Mở bảng giá Vietstock</button>
+            <a id="cqBookmarklet" href="#" draggable="true" style="padding:6px 12px;border:1px solid #888;border-radius:4px;background:#fff;text-decoration:none;color:#000;cursor:grab;" title="Kéo nút này lên thanh dấu trang (bookmark) của trình duyệt">📥 Gửi CQ</a>
+            <button type="button" id="btnClipboard">Tải từ clipboard</button>
+            <span id="autoStatus" style="font-size: 0.9em; font-weight: bold;"></span>
+        </div>
+        <div class="hint">
+            Cách dùng (chỉ làm 1 lần đầu): kéo nút <b>📥 Gửi CQ</b> lên thanh dấu trang của trình duyệt (hoặc chuột phải &gt; Thêm vào dấu trang).<br>
+            Mỗi lần dùng: bấm <b>1. Mở bảng giá Vietstock</b>, đợi bảng giá tải xong rồi bấm dấu trang <b>📥 Gửi CQ</b> ngay trên trang Vietstock. Dữ liệu tự chuyển về trang này và
+            <b>tự cập nhật lại mỗi 15 giây</b> khi tab Vietstock còn mở. Dữ liệu chỉ đi từ trình duyệt của bạn sang trang này, không gửi lên máy chủ nào.<br>
+            Nếu dấu trang không chạy (trình duyệt chặn): trên trang Vietstock chọn bảng giá, copy HTML như hướng dẫn bên dưới rồi bấm <b>Tải từ clipboard</b>.
+        </div>
+    </div>
+
     <div class="paste-box">
         <label><strong>Dán mã nguồn HTML bảng giá iBoard vào đây (chuột phải trên bảng giá &gt; Inspect &gt; chọn thẻ chứa bảng &gt; Copy &gt; Copy outerHTML):</strong></label>
         <textarea id="iboardPasteInput" rows="6" placeholder="Dán (Ctrl+V) đoạn HTML bảng giá iBoard vào đây rồi bấm nút Phân Tích..."></textarea>
@@ -485,13 +501,15 @@
         }
 
         function parseIboardPaste() {
-            const statusEl = document.getElementById('pasteStatus');
-            const raw = document.getElementById('iboardPasteInput').value;
+            ingestHtml(document.getElementById('iboardPasteInput').value, document.getElementById('pasteStatus'), '');
+        }
 
+        // Phân tích HTML bảng giá, cập nhật cwData rồi vẽ lại bảng. Dùng chung cho dán tay, clipboard và dữ liệu tự gửi từ Vietstock.
+        function ingestHtml(raw, statusEl, label) {
             if (!raw || !raw.trim()) {
-                statusEl.innerText = 'Chưa dán dữ liệu.';
+                statusEl.innerText = 'Chưa có dữ liệu.';
                 statusEl.style.color = 'red';
-                return;
+                return false;
             }
 
             let parsed;
@@ -499,19 +517,21 @@
                 parsed = parseIboardHtml(raw);
             } catch (e) {
                 console.error(e);
-                statusEl.innerText = 'Lỗi khi phân tích đoạn HTML đã dán.';
+                statusEl.innerText = 'Lỗi khi phân tích đoạn HTML.';
                 statusEl.style.color = 'red';
-                return;
+                return false;
             }
 
             if (!parsed.length) {
-                statusEl.innerText = 'Không tìm thấy dòng dữ liệu chứng quyền hợp lệ trong đoạn đã dán.';
+                statusEl.innerText = 'Không tìm thấy dòng dữ liệu chứng quyền hợp lệ.';
                 statusEl.style.color = 'red';
-                return;
+                return false;
             }
 
             const overwriteStatic = document.getElementById('overwriteStaticFields').checked;
             let updatedCount = 0, addedCount = 0;
+            // Bỏ các dòng mẫu chưa có giá (không có trong dữ liệu mới) để bảng không lẫn dòng trống
+            cwData = cwData.filter(item => item.GiaHienTaiCP !== 0 || item.GiaHienTaiCQ !== 0 || parsed.some(p => p.MaCQ === item.MaCQ));
 
             parsed.forEach(p => {
                 let existing = cwData.find(item => item.MaCQ === p.MaCQ);
@@ -541,8 +561,9 @@
 
             processAndRenderTable();
             let timeStr = new Date().toLocaleTimeString('vi-VN');
-            statusEl.innerText = `Đã cập nhật ${updatedCount} mã, thêm mới ${addedCount} mã lúc ${timeStr}.`;
+            statusEl.innerText = `${label}Đã cập nhật ${updatedCount} mã, thêm mới ${addedCount} mã lúc ${timeStr}.`;
             statusEl.style.color = 'green';
+            return true;
         }
 
         // Tự động phân tích ngay khi người dùng dán (Ctrl+V) vào ô textarea, nếu bật tuỳ chọn
@@ -555,6 +576,67 @@
         });
 
         // ================== HẾT PHẦN PHÂN TÍCH DỮ LIỆU DÁN ==================
+
+        // ================== TẢI TỰ ĐỘNG TỪ VIETSTOCK ==================
+        // Trình duyệt không cho trang này đọc trực tiếp banggia.vietstock.vn (khác tên miền, chặn CORS),
+        // nên dùng dấu trang "Gửi CQ" chạy ngay trên trang Vietstock rồi gửi HTML sang đây bằng postMessage.
+        const VIETSTOCK_URL = 'https://banggia.vietstock.vn/bang-gia/chung-quyen';
+        const autoStatus = document.getElementById('autoStatus');
+
+        function isTrustedOrigin(origin) {
+            try {
+                const h = new URL(origin).hostname;
+                return h === 'vietstock.vn' || h.endsWith('.vietstock.vn') || h === 'localhost' || h === '127.0.0.1';
+            } catch (e) { return false; }
+        }
+
+        // Mã dấu trang: gom các dòng <tr data-symbol> của bảng giá, mở/dùng lại cửa sổ trang này và gửi mỗi 15 giây
+        function buildBookmarklet() {
+            const origin = location.origin;
+            const code = `(function(){var O=${JSON.stringify(origin)},U=O+'/cq.html';`
+              + `if(!document.querySelector('tr[data-symbol]')){alert('Chưa thấy bảng chứng quyền. Hãy mở banggia.vietstock.vn/bang-gia/chung-quyen, đợi bảng tải xong rồi bấm lại.');return;}`
+              + `function pack(){var h='<table>';document.querySelectorAll('tr[data-symbol]').forEach(function(r){h+=r.outerHTML});return h+'</table>';}`
+              + `var w=window.__cqWin;if(!w||w.closed){w=window.open(U,'cqwin');window.__cqWin=w;}`
+              + `if(!w){alert('Trình duyệt chặn cửa sổ mới. Hãy cho phép cửa sổ bật lên rồi bấm lại.');return;}`
+              + `function send(){if(!w||w.closed){clearInterval(window.__cqTimer);return;}try{w.postMessage({type:'cq-data',html:pack()},O);}catch(e){}}`
+              + `if(window.__cqListener)removeEventListener('message',window.__cqListener);`
+              + `window.__cqListener=function(e){if(e.origin===O&&e.data&&e.data.type==='cq-ready')send();};addEventListener('message',window.__cqListener);`
+              + `clearInterval(window.__cqTimer);send();window.__cqTimer=setInterval(send,15000);})();`;
+            return 'javascript:' + encodeURIComponent(code);
+        }
+        document.getElementById('cqBookmarklet').setAttribute('href', buildBookmarklet());
+        document.getElementById('cqBookmarklet').addEventListener('click', function(e) {
+            e.preventDefault();
+            autoStatus.innerText = 'Hãy KÉO nút này lên thanh dấu trang, không bấm trực tiếp tại đây.';
+            autoStatus.style.color = '#b36b00';
+        });
+
+        document.getElementById('btnOpenVietstock').addEventListener('click', function() {
+            window.open(VIETSTOCK_URL, '_blank');
+            autoStatus.innerText = 'Đã mở Vietstock. Đợi bảng tải xong rồi bấm dấu trang "📥 Gửi CQ".';
+            autoStatus.style.color = '#b36b00';
+        });
+
+        document.getElementById('btnClipboard').addEventListener('click', async function() {
+            try {
+                const text = await navigator.clipboard.readText();
+                ingestHtml(text, autoStatus, 'Clipboard: ');
+            } catch (e) {
+                autoStatus.innerText = 'Không đọc được clipboard (hãy cho phép quyền, hoặc dán vào ô bên dưới).';
+                autoStatus.style.color = 'red';
+            }
+        });
+
+        window.addEventListener('message', function(ev) {
+            if (!isTrustedOrigin(ev.origin)) return;
+            const d = ev.data;
+            if (!d || d.type !== 'cq-data' || typeof d.html !== 'string') return;
+            ingestHtml(d.html, autoStatus, 'Vietstock (tự động): ');
+        });
+        // Báo cho tab Vietstock biết trang này đã sẵn sàng nhận dữ liệu
+        if (window.opener) {
+            try { window.opener.postMessage({ type: 'cq-ready' }, '*'); } catch (e) { /* bỏ qua */ }
+        }
 
         // Render bảng khung lúc mới vào web (không còn gọi API tự động nào)
         window.onload = function() {
