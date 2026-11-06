@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Định Giá Chứng Quyền (Version 4 - Chỉ dán dữ liệu iBoard)</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 14px; margin: 20px; }
+        .controls { margin-bottom: 15px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+        input[type="number"] { padding: 5px; width: 80px; }
+        button { padding: 6px 15px; cursor: pointer; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #e3e8ee; }
+
+        .sortable { cursor: pointer; }
+        .sortable:hover { background-color: #d1d9e2; }
+        .filter-row input { width: 90%; padding: 4px; box-sizing: border-box; font-weight: normal; }
+
+        /* Bộ lọc số (>, <, =) */
+        .numfilter { display: flex; gap: 4px; justify-content: center; align-items: center; }
+        .numfilter select {
+            padding: 4px 2px;
+            font-weight: normal;
+            box-sizing: border-box;
+        }
+        .numfilter input[type="number"] {
+            width: 72px !important;
+            padding: 4px;
+            font-weight: normal;
+            box-sizing: border-box;
+        }
+
+        /* Phân loại màu nền theo G_RUIRO */
+        .ruiro-0 { background-color: #f9f9f9; color: #999; } /* Chưa có dữ liệu giá */
+        .ruiro-1 { background-color: #ffffff; color: #8b0000; }
+        .ruiro-2 { background-color: #ffcccc; color: #8b0000; }
+        .ruiro-3 { background-color: #ff3333; color: #8b0000; }
+        .ruiro-4 { background-color: #8b0000; color: silver; }
+        .ruiro-max { background-color: #8b0000; color: silver; }
+
+        /* Ưu tiên màu chữ xanh khi lợi nhuận >= 1 */
+        .text-green { color: #008000 !important; }
+
+        /* Khu vực dán dữ liệu iBoard */
+        .paste-box {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 12px;
+            background: #fafafa;
+            margin-bottom: 15px;
+        }
+        .paste-box label { display: block; margin-bottom: 6px; }
+        .paste-box textarea {
+            width: 100%;
+            box-sizing: border-box;
+            font-family: Consolas, monospace;
+            font-size: 12px;
+            resize: vertical;
+        }
+        .paste-controls {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .paste-controls label { font-weight: normal; display: inline-flex; align-items: center; gap: 5px; margin: 0; }
+        .hint { color: #666; font-size: 0.85em; margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <label>
+            <strong>Tăng trưởng dự kiến (1 năm): </strong>
+            <input type="number" id="duKienTang" value="28" step="0.1"> %
+        </label>
+    </div>
+
+    <div class="paste-box">
+        <label><strong>Dán mã nguồn HTML bảng giá iBoard vào đây (chuột phải trên bảng giá &gt; Inspect &gt; chọn thẻ chứa bảng &gt; Copy &gt; Copy outerHTML):</strong></label>
+        <textarea id="iboardPasteInput" rows="6" placeholder="Dán (Ctrl+V) đoạn HTML bảng giá iBoard vào đây rồi bấm nút Phân Tích..."></textarea>
+        <div class="paste-controls">
+            <button onclick="parseIboardPaste()">Phân Tích &amp; Cập Nhật Từ Dữ Liệu Dán</button>
+            <label>
+                <input type="checkbox" id="overwriteStaticFields" checked>
+                Ghi đè Giá TH / Tỷ lệ CĐ / Ngày ĐH nếu có trong dữ liệu dán
+            </label>
+            <label>
+                <input type="checkbox" id="autoParseOnPaste" checked>
+                Tự động phân tích ngay khi dán (Ctrl+V)
+            </label>
+            <span id="pasteStatus" style="font-size: 0.9em; font-weight: bold;"></span>
+        </div>
+        <div class="hint">
+            Công cụ tự nhận diện 2 định dạng HTML iBoard: (1) bảng dạng cũ với mỗi dòng <code>&lt;tr id="row-..." data-symbol="..."&gt;</code>,
+            và (2) bảng dạng AG-Grid mới với <code>[role="row"][row-id]</code>. Ở định dạng (2), mã cổ phiếu cơ sở được đọc trực tiếp từ dữ liệu;
+            ở định dạng (1), mã cổ phiếu cơ sở được SUY RA từ mã chứng quyền theo quy ước "C" + 3 ký tự mã CP (VD: CFPT2604 → FPT) — hãy kiểm tra lại nếu mã CQ không theo đúng quy ước này.<br>
+            Lưu ý: Cột "Ngày ĐH" được lấy từ cột "GDCC" (Ngày giao dịch cuối cùng) trên iBoard, đây chỉ là NGÀY GẦN ĐÚNG với ngày đáo hạn thực tế
+            (thường đáo hạn sau GDCC vài ngày) — hãy kiểm tra và sửa tay nếu cần độ chính xác cao.<br>
+            Với 3 cột số "GIÁ HIỆN TẠI (CQ)", "ĐỊNH GIÁ CUỐI (CQ)", "TỶ LỆ LN": chọn toán tử (&gt;, &lt;, =) rồi nhập giá trị để lọc; để trống ô giá trị nghĩa là không lọc theo cột đó.
+        </div>
+    </div>
+
+    <table id="cwTable">
+        <thead>
+            <tr>
+                <th class="sortable" onclick="sortTable('STT')">TT ↕</th>
+                <th class="sortable" onclick="sortTable('MaCP')">MÃ CỔ PHIẾU ↕</th>
+                <th class="sortable" onclick="sortTable('MaCQ')">MÃ CHỨNG QUYỀN ↕</th>
+                <th class="sortable" onclick="sortTable('GiaHienTaiCQ')">GIÁ HIỆN TẠI (CQ) ↕</th>
+                <th class="sortable" onclick="sortTable('DinhGiaCuoi')">ĐỊNH GIÁ CUỐI (CQ) ↕</th>
+                <th class="sortable" onclick="sortTable('TyLeLN')">TỶ LỆ LN ↕</th>
+                <th class="sortable" onclick="sortTable('GRuiRo')">TRỌNG SỐ RỦI RO ↕</th>
+            </tr>
+            <tr class="filter-row">
+                <th></th>
+                <th><input type="text" oninput="applyFilters()" data-col="MaCP" placeholder="Lọc Mã CP..."></th>
+                <th><input type="text" oninput="applyFilters()" data-col="MaCQ" placeholder="Lọc Mã CQ..."></th>
+                <th>
+                    <div class="numfilter">
+                        <select data-numcol="GiaHienTaiCQ" onchange="applyFilters()">
+                            <option value=">">&gt;</option>
+                            <option value="<">&lt;</option>
+                            <option value="=">=</option>
+                        </select>
+                        <input type="number" step="any" oninput="applyFilters()" data-numcol="GiaHienTaiCQ" placeholder="Giá trị">
+                    </div>
+                </th>
+                <th>
+                    <div class="numfilter">
+                        <select data-numcol="DinhGiaCuoi" onchange="applyFilters()">
+                            <option value=">">&gt;</option>
+                            <option value="<">&lt;</option>
+                            <option value="=">=</option>
+                        </select>
+                        <input type="number" step="any" oninput="applyFilters()" data-numcol="DinhGiaCuoi" placeholder="Giá trị">
+                    </div>
+                </th>
+                <th>
+                    <div class="numfilter">
+                        <select data-numcol="TyLeLN" onchange="applyFilters()">
+                            <option value=">">&gt;</option>
+                            <option value="<">&lt;</option>
+                            <option value="=">=</option>
+                        </select>
+                        <input type="number" step="any" oninput="applyFilters()" data-numcol="TyLeLN" placeholder="Giá trị">
+                    </div>
+                </th>
+                <th><input type="text" oninput="applyFilters()" data-col="GRuiRo" placeholder="Lọc Rủi ro..."></th>
+            </tr>
+        </thead>
+        <tbody id="cwTableBody">
+            <!-- Dữ liệu render tại đây -->
+        </tbody>
+    </table>
+
+    <script>
+        // Khung dữ liệu tĩnh ban đầu (sẽ được bổ sung/ghi đè bởi dữ liệu dán từ iBoard)
+        let cwData = [
+            { MaCP: 'HPG', MaCQ: 'CACB2516', GiaThucHien: 27000, TyLeThucHien: 2, NgayDaoHan: '2026-11-15', GiaHienTaiCP: 0, GiaHienTaiCQ: 0 },
+            { MaCP: 'FPT', MaCQ: 'CFPT2305', GiaThucHien: 85000, TyLeThucHien: 5, NgayDaoHan: '2026-10-10', GiaHienTaiCP: 0, GiaHienTaiCQ: 0 },
+            { MaCP: 'VNM', MaCQ: 'CVNM2306', GiaThucHien: 78000, TyLeThucHien: 4, NgayDaoHan: '2026-12-01', GiaHienTaiCP: 0, GiaHienTaiCQ: 0 },
+            { MaCP: 'MWG', MaCQ: 'CMWG2309', GiaThucHien: 60000, TyLeThucHien: 3, NgayDaoHan: '2026-09-25', GiaHienTaiCP: 0, GiaHienTaiCQ: 0 },
+            { MaCP: 'SSI', MaCQ: 'CSSI2308', GiaThucHien: 39000, TyLeThucHien: 1, NgayDaoHan: '2026-11-20', GiaHienTaiCP: 0, GiaHienTaiCQ: 0 }
+        ];
+
+        let currentSort = { col: 'MaCP', asc: true };
+
+        const formatNumber = (num, minFrac = 0, maxFrac = 2) => {
+            return num.toLocaleString('en-US', {
+                minimumFractionDigits: minFrac,
+                maximumFractionDigits: maxFrac
+            });
+        };
+
+        const inputDuKienTang = document.getElementById('duKienTang');
+        if (localStorage.getItem('DUKIEN_TANG')) {
+            inputDuKienTang.value = localStorage.getItem('DUKIEN_TANG');
+        }
+        inputDuKienTang.addEventListener('input', function() {
+            localStorage.setItem('DUKIEN_TANG', this.value);
+            processAndRenderTable();
+        });
+
+        function tinhDinhGiaCQ(cq, duKienTangGoc) {
+            // Không tính định giá nếu chưa có giá (chưa dán dữ liệu iBoard)
+            if (cq.GiaHienTaiCP === 0 || cq.GiaHienTaiCQ === 0) {
+                return { DinhGiaCuoi: 0, TyLeLN: 0, GRuiRo: 0 };
+            }
+
+            let today = new Date();
+            let ngayDaoHan = new Date(cq.NgayDaoHan);
+            let soNgay = Math.max(0, (ngayDaoHan - today) / (1000 * 60 * 60 * 24));
+
+            let gRuiRo = 1;
+            let dinhGiaCuoi = 0;
+            let chenhLech = 0;
+            let dinhGia = 0;
+
+            while (true) {
+                let tyLeKyVongNam = duKienTangGoc * gRuiRo;
+                let tyLeTangMoiNgay = tyLeKyVongNam / 365;
+                let tongTangTruong = tyLeTangMoiNgay * soNgay;
+
+                let giaCuoi = cq.GiaHienTaiCP * (1 + tongTangTruong / 100);
+                chenhLech = giaCuoi - cq.GiaThucHien;
+
+                if (chenhLech >= 0 || gRuiRo > 100) {
+                    dinhGia = chenhLech / cq.TyLeThucHien;
+                    dinhGiaCuoi = dinhGia / gRuiRo;
+                    break;
+                }
+                gRuiRo++;
+            }
+
+            let tyLeLN = cq.GiaHienTaiCQ > 0 ? (dinhGiaCuoi / cq.GiaHienTaiCQ) : 0;
+
+            return {
+                DinhGiaCuoi: dinhGiaCuoi,
+                TyLeLN: tyLeLN,
+                GRuiRo: gRuiRo
+            };
+        }
+
+        // Các cột số có bộ lọc >, <, = riêng
+        const NUMERIC_FILTER_COLS = ['GiaHienTaiCQ', 'DinhGiaCuoi', 'TyLeLN'];
+
+        function processAndRenderTable() {
+            const duKienTang = parseFloat(inputDuKienTang.value) || 0;
+
+            let processedData = cwData.map((cq, index) => {
+                let kq = tinhDinhGiaCQ(cq, duKienTang);
+                return {
+                    STT: index + 1,
+                    ...cq,
+                    ...kq
+                };
+            });
+
+            // Bộ lọc văn bản (Mã CP, Mã CQ, Rủi ro)
+            const textFilters = Array.from(document.querySelectorAll('.filter-row input[data-col]')).map(input => ({
+                col: input.getAttribute('data-col'),
+                val: input.value.toLowerCase()
+            }));
+
+            // Bộ lọc số (>, <, =) cho GIÁ HIỆN TẠI (CQ), ĐỊNH GIÁ CUỐI (CQ), TỶ LỆ LN
+            const numFilters = NUMERIC_FILTER_COLS.map(col => {
+                const select = document.querySelector(`select[data-numcol="${col}"]`);
+                const input = document.querySelector(`input[data-numcol="${col}"]`);
+                const rawVal = input ? input.value.trim() : '';
+                if (rawVal === '') return null;
+                const val = parseFloat(rawVal);
+                if (isNaN(val)) return null;
+                return { col: col, op: select ? select.value : '=', val: val };
+            }).filter(f => f !== null);
+
+            let filteredData = processedData.filter(row => {
+                const textOk = textFilters.every(f => {
+                    if (!f.val) return true;
+                    return String(row[f.col]).toLowerCase().includes(f.val);
+                });
+                if (!textOk) return false;
+
+                return numFilters.every(f => {
+                    const rowVal = row[f.col];
+                    if (f.op === '>') return rowVal > f.val;
+                    if (f.op === '<') return rowVal < f.val;
+                    // '=' : dùng sai số nhỏ để tránh lỗi làm tròn số thực (đặc biệt với TyLeLN)
+                    return Math.abs(rowVal - f.val) < 0.005;
+                });
+            });
+
+            filteredData.sort((a, b) => {
+                let valA = a[currentSort.col];
+                let valB = b[currentSort.col];
+
+                if (typeof valA === 'string') valA = valA.toLowerCase();
+                if (typeof valB === 'string') valB = valB.toLowerCase();
+
+                if (valA < valB) return currentSort.asc ? -1 : 1;
+                if (valA > valB) return currentSort.asc ? 1 : -1;
+                return 0;
+            });
+
+            const tbody = document.getElementById('cwTableBody');
+            tbody.innerHTML = '';
+
+            filteredData.forEach(row => {
+                const tr = document.createElement('tr');
+
+                if (row.GRuiRo === 0) tr.className = 'ruiro-0';
+                else if (row.GRuiRo === 1) tr.className = 'ruiro-1';
+                else if (row.GRuiRo === 2) tr.className = 'ruiro-2';
+                else if (row.GRuiRo === 3) tr.className = 'ruiro-3';
+                else if (row.GRuiRo === 4) tr.className = 'ruiro-4';
+                else tr.className = 'ruiro-max';
+
+                if (row.TyLeLN >= 1) {
+                    tr.classList.add('text-green');
+                }
+
+                tr.innerHTML = `
+                    <td>${row.STT}</td>
+                    <td><b>${row.MaCP}</b></td>
+                    <td>${row.MaCQ}</td>
+                    <td>${formatNumber(row.GiaHienTaiCQ, 0, 2)}</td>
+                    <td>${formatNumber(row.DinhGiaCuoi, 2, 2)}</td>
+                    <td>${formatNumber(row.TyLeLN, 2, 2)}</td>
+                    <td>${row.GRuiRo === 0 ? '-' : row.GRuiRo}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function sortTable(colName) {
+            if (currentSort.col === colName) {
+                currentSort.asc = !currentSort.asc;
+            } else {
+                currentSort.col = colName;
+                currentSort.asc = true;
+            }
+            processAndRenderTable();
+        }
+
+        function applyFilters() {
+            processAndRenderTable();
+        }
+
+        // ================== PHÂN TÍCH DỮ LIỆU DÁN TỪ IBOARD (nguồn dữ liệu duy nhất) ==================
+
+        // Chuyển chuỗi số kiểu VN/iBoard ("1.26", "22,100", "1.7245") thành number
+        function parseVNNum(str) {
+            if (str === undefined || str === null) return NaN;
+            str = String(str).trim();
+            if (str === '' || str === '-') return NaN;
+            str = str.replace(/,/g, ''); // bỏ dấu phẩy phân cách nghìn (nếu có)
+            let num = parseFloat(str);
+            return num;
+        }
+
+        // Chuyển "dd/mm/yyyy" hoặc "dd/mm/yy" -> "yyyy-mm-dd"
+        function ddmmyyyyToIso(str) {
+            if (!str) return null;
+            let m = String(str).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})$/);
+            if (!m) return null;
+            let dd = m[1].padStart(2, '0');
+            let mm = m[2].padStart(2, '0');
+            let yyyy = m[3].length === 2 ? ('20' + m[3]) : m[3];
+            return `${yyyy}-${mm}-${dd}`;
+        }
+
+        // Suy ra mã CK cơ sở từ mã CQ theo quy ước đặt tên phổ biến: "C" + 3 ký tự mã CP + số thứ tự
+        // (VD: CFPT2604 -> FPT, CACB2603 -> ACB). Dùng khi HTML dán vào không có sẵn cột Mã CK cơ sở.
+        function suyRaMaCPTuMaCQ(maCQ) {
+            let m = String(maCQ || '').trim().match(/^C([A-Z]{3})\d+/i);
+            return m ? m[1].toUpperCase() : '';
+        }
+
+        // ---- Định dạng A: bảng iBoard kiểu AG-Grid (mỗi ô [role="gridcell"][col-id] thuộc 1
+        // [role="row"][row-id], có thể rải rác ở nhiều container pinned-left/center/pinned-right) ----
+        function parseAgGridIboardHtml(doc) {
+            const cells = doc.querySelectorAll('[role="gridcell"][col-id]');
+            let dataMap = {};
+
+            cells.forEach(cell => {
+                const rowEl = cell.closest('[role="row"][row-id]');
+                if (!rowEl) return;
+                const rowId = rowEl.getAttribute('row-id');
+                if (!rowId) return;
+                if (!dataMap[rowId]) dataMap[rowId] = {};
+
+                const colId = cell.getAttribute('col-id');
+                dataMap[rowId][colId] = cell.textContent.trim();
+            });
+
+            let results = [];
+            Object.keys(dataMap).forEach(rowId => {
+                const d = dataMap[rowId];
+
+                const maCQ = (d.stockSymbol || rowId || '').trim();
+                const maCP = (d.underlyingSymbol || '').trim();
+                // Bỏ qua các dòng không có đủ Mã CQ / Mã CK cơ sở (không phải dòng chứng quyền hợp lệ)
+                if (!maCQ || !maCP) return;
+
+                let giaCQstr = d.matchedPrice || d.refPrice;
+                let giaHienTaiCQ = parseVNNum(giaCQstr);
+                let giaHienTaiCP = parseVNNum(d.underlyingPrice);
+                let giaThucHien = parseVNNum(d.exercisePrice);
+
+                let tyLeThucHien = NaN;
+                if (d.exerciseRatio) {
+                    let m = d.exerciseRatio.match(/^([\d.]+)\s*:\s*1$/);
+                    if (m) tyLeThucHien = parseFloat(m[1]);
+                }
+
+                let ngayDaoHan = ddmmyyyyToIso(d.lastTradingDate);
+
+                results.push({
+                    MaCQ: maCQ,
+                    MaCP: maCP,
+                    // iBoard hiển thị giá theo đơn vị nghìn đồng => nhân 1000 để ra VNĐ
+                    GiaHienTaiCQ: isNaN(giaHienTaiCQ) ? 0 : Math.round(giaHienTaiCQ * 1000),
+                    GiaHienTaiCP: isNaN(giaHienTaiCP) ? 0 : Math.round(giaHienTaiCP * 1000),
+                    GiaThucHien: isNaN(giaThucHien) ? null : Math.round(giaThucHien * 1000),
+                    TyLeThucHien: isNaN(tyLeThucHien) ? null : tyLeThucHien,
+                    NgayDaoHan: ngayDaoHan
+                });
+            });
+
+            return results;
+        }
+
+        // ---- Định dạng B: bảng iBoard kiểu cũ, mỗi dòng là <tr id="row-XXXX" data-symbol="MÃ CQ">
+        // chứa các <span id="{truong}-XXXX" data-value="..."> cho từng trường dữ liệu. Ở định dạng
+        // này data-value đã là giá trị VNĐ thực tế (KHÔNG cần nhân thêm 1000). ----
+        function parseLegacyIboardHtml(doc, legacyRows) {
+            const parseRaw = (str) => {
+                if (str === undefined || str === null) return NaN;
+                return parseFloat(String(str).trim().replace(/,/g, ''));
+            };
+
+            let results = [];
+            legacyRows.forEach(row => {
+                const maCQ = (row.getAttribute('data-symbol') || '').trim();
+                if (!maCQ) return;
+
+                const maCP = suyRaMaCPTuMaCQ(maCQ);
+                if (!maCP) return;
+
+                const getVal = (prefix) => {
+                    const el = row.querySelector(`[id^="${prefix}-"]`);
+                    return el ? el.getAttribute('data-value') : null;
+                };
+
+                // Giá hiện tại CQ: ưu tiên giá khớp lệnh (lastP), nếu chưa khớp thì lấy giá tham chiếu (basicP)
+                let giaHienTaiCQ = parseRaw(getVal('lastP'));
+                if (!giaHienTaiCQ) giaHienTaiCQ = parseRaw(getVal('basicP'));
+
+                // Giá cổ phiếu cơ sở nằm trong span có class dạng "baseLastP-<id>"
+                const baseEl = row.querySelector('[class*="baseLastP-"]');
+                let giaHienTaiCP = baseEl ? parseRaw(baseEl.getAttribute('data-value')) : NaN;
+
+                // Lưu ý: thuộc tính gốc trên iBoard bị đánh vần là "excercisePrice" (thừa 1 chữ "c")
+                let giaThucHien = parseRaw(getVal('excercisePrice') ?? getVal('exercisePrice'));
+
+                let tyLeThucHienRaw = getVal('convertRate');
+                let tyLeThucHien = tyLeThucHienRaw !== null ? parseFloat(tyLeThucHienRaw) : NaN;
+
+                // Ngày đáo hạn nằm ở ô <td class="cw-txtc"> thứ 2 của dòng (dạng dd/mm/yy)
+                const dateCells = row.querySelectorAll('td.cw-txtc');
+                let ngayDaoHan = dateCells.length >= 2 ? ddmmyyyyToIso(dateCells[1].textContent.trim()) : null;
+
+                results.push({
+                    MaCQ: maCQ,
+                    MaCP: maCP,
+                    GiaHienTaiCQ: isNaN(giaHienTaiCQ) ? 0 : Math.round(giaHienTaiCQ),
+                    GiaHienTaiCP: isNaN(giaHienTaiCP) ? 0 : Math.round(giaHienTaiCP),
+                    GiaThucHien: isNaN(giaThucHien) ? null : Math.round(giaThucHien),
+                    TyLeThucHien: isNaN(tyLeThucHien) ? null : tyLeThucHien,
+                    NgayDaoHan: ngayDaoHan
+                });
+            });
+
+            return results;
+        }
+
+        // Phân tích đoạn HTML bảng giá iBoard đã dán và trả về mảng dữ liệu chứng quyền.
+        // Tự nhận diện 1 trong 2 định dạng đang được hỗ trợ:
+        //  - Định dạng cũ: <tr id="row-XXXX" data-symbol="...">...</tr>
+        //  - Định dạng AG-Grid mới: [role="row"][row-id] chứa các [role="gridcell"][col-id]
+        function parseIboardHtml(htmlStr) {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlStr, 'text/html');
+
+            const legacyRows = doc.querySelectorAll('tr[data-symbol]');
+            if (legacyRows.length > 0) {
+                return parseLegacyIboardHtml(doc, legacyRows);
+            }
+
+            return parseAgGridIboardHtml(doc);
+        }
+
+        function parseIboardPaste() {
+            const statusEl = document.getElementById('pasteStatus');
+            const raw = document.getElementById('iboardPasteInput').value;
+
+            if (!raw || !raw.trim()) {
+                statusEl.innerText = 'Chưa dán dữ liệu.';
+                statusEl.style.color = 'red';
+                return;
+            }
+
+            let parsed;
+            try {
+                parsed = parseIboardHtml(raw);
+            } catch (e) {
+                console.error(e);
+                statusEl.innerText = 'Lỗi khi phân tích đoạn HTML đã dán.';
+                statusEl.style.color = 'red';
+                return;
+            }
+
+            if (!parsed.length) {
+                statusEl.innerText = 'Không tìm thấy dòng dữ liệu chứng quyền hợp lệ trong đoạn đã dán.';
+                statusEl.style.color = 'red';
+                return;
+            }
+
+            const overwriteStatic = document.getElementById('overwriteStaticFields').checked;
+            let updatedCount = 0, addedCount = 0;
+
+            parsed.forEach(p => {
+                let existing = cwData.find(item => item.MaCQ === p.MaCQ);
+                if (existing) {
+                    existing.MaCP = p.MaCP;
+                    existing.GiaHienTaiCQ = p.GiaHienTaiCQ;
+                    existing.GiaHienTaiCP = p.GiaHienTaiCP;
+                    if (overwriteStatic) {
+                        if (p.GiaThucHien !== null) existing.GiaThucHien = p.GiaThucHien;
+                        if (p.TyLeThucHien !== null) existing.TyLeThucHien = p.TyLeThucHien;
+                        if (p.NgayDaoHan) existing.NgayDaoHan = p.NgayDaoHan;
+                    }
+                    updatedCount++;
+                } else {
+                    cwData.push({
+                        MaCP: p.MaCP,
+                        MaCQ: p.MaCQ,
+                        GiaThucHien: p.GiaThucHien !== null ? p.GiaThucHien : 0,
+                        TyLeThucHien: p.TyLeThucHien !== null ? p.TyLeThucHien : 1,
+                        NgayDaoHan: p.NgayDaoHan || new Date().toISOString().slice(0, 10),
+                        GiaHienTaiCP: p.GiaHienTaiCP,
+                        GiaHienTaiCQ: p.GiaHienTaiCQ
+                    });
+                    addedCount++;
+                }
+            });
+
+            processAndRenderTable();
+            let timeStr = new Date().toLocaleTimeString('vi-VN');
+            statusEl.innerText = `Đã cập nhật ${updatedCount} mã, thêm mới ${addedCount} mã lúc ${timeStr}.`;
+            statusEl.style.color = 'green';
+        }
+
+        // Tự động phân tích ngay khi người dùng dán (Ctrl+V) vào ô textarea, nếu bật tuỳ chọn
+        document.getElementById('iboardPasteInput').addEventListener('paste', function() {
+            setTimeout(function() {
+                if (document.getElementById('autoParseOnPaste').checked) {
+                    parseIboardPaste();
+                }
+            }, 50);
+        });
+
+        // ================== HẾT PHẦN PHÂN TÍCH DỮ LIỆU DÁN ==================
+
+        // Render bảng khung lúc mới vào web (không còn gọi API tự động nào)
+        window.onload = function() {
+            processAndRenderTable();
+        };
+    </script>
+</body>
+</html>
