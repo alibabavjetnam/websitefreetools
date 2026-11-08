@@ -1,5 +1,5 @@
 /**
- * 4v2 — trang ẩn tại /zzz, không có trong menu hay trang chủ.
+ * 4v2 — trang ẩn tại /hidden/zzz/, không có trong menu hay trang chủ.
  * Chuyển từ repo messenger: biểu đồ nến Binance realtime, chấm điểm xu hướng, tín hiệu 2 kênh và backtest.
  */
 import { mountLayout } from '../layout';
@@ -509,7 +509,7 @@ void loadFromBinance();
 
 /* Cài như app trên điện thoại (PWA) */
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => { navigator.serviceWorker.register('/zzz/sw.js', { scope: '/zzz/' }).catch(() => {}); });
+  window.addEventListener('load', () => { navigator.serviceWorker.register('/hidden/zzz/sw.js', { scope: '/hidden/zzz/' }).catch(() => {}); });
 }
 
 /* Bản app Android (Capacitor): giữ app chạy nền để dữ liệu vẫn tải khi ẩn app / tắt màn hình */

@@ -26,24 +26,8 @@ const analytics = (): Plugin => ({
   },
 });
 
-// Các chức năng ẩn (zzz, cq, ls...) có mã nguồn gom trong thư mục hidden/, nhưng địa chỉ truy cập giữ nguyên
-// (/zzz/, /cq.html, /ls/) nhờ đổi đường dẫn file đầu ra: hidden/zzz/index.html -> zzz/index.html ...
-// Thêm chức năng ẩn mới: đặt vào hidden/, khai báo trong input bên dưới và thêm vào trang hidden/ls/index.html.
-const hiddenOutput = (): Plugin => ({
-  name: 'wft-hidden-output',
-  apply: 'build',
-  enforce: 'post',
-  generateBundle(_o, bundle) {
-    for (const key of Object.keys(bundle)) {
-      if (!key.startsWith('hidden/')) continue;
-      const item = bundle[key];
-      item.fileName = key.slice('hidden/'.length);
-      bundle[item.fileName] = item;
-      delete bundle[key];
-    }
-  },
-});
-
+// Các chức năng ẩn nằm hết trong thư mục hidden/ (mã nguồn lẫn địa chỉ): /hidden/zzz/, /hidden/cq.html, /hidden/ls/.
+// Thêm chức năng ẩn mới: đặt vào hidden/, khai báo trong input bên dưới, thêm vào NO_ANALYTICS và vào trang hidden/ls/index.html.
 // Mỗi công cụ là một trang HTML riêng (multi-page app).
 // Mọi file trong thư mục tools/ được tự nhận làm trang, không cần khai báo từng trang.
 const toolPages = Object.fromEntries(
@@ -54,7 +38,7 @@ const toolPages = Object.fromEntries(
 
 // base './' giúp site chạy được cả ở tên miền gốc lẫn trong thư mục con.
 export default defineConfig({
-  plugins: [analytics(), hiddenOutput()],
+  plugins: [analytics()],
   base: '/',
   build: {
     rollupOptions: {
@@ -64,11 +48,11 @@ export default defineConfig({
         terms: resolve(__dirname, 'dieu-khoan.html'),
         // Chính sách bảo mật dạng trang độc lập (dùng làm link Privacy Policy trong cấu hình Google OAuth)
         privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
-        // Trang ẩn, không có trong menu: truy cập trực tiếp tại /zzz
+        // Trang ẩn, không có trong menu: truy cập trực tiếp tại /hidden/zzz/
         zzz: resolve(__dirname, 'hidden/zzz/index.html'),
-        // Trang ẩn định giá chứng quyền, không dịch, không có trong menu: truy cập tại /cq.html
+        // Trang ẩn định giá chứng quyền, không dịch, không có trong menu: truy cập tại /hidden/cq.html
         cq: resolve(__dirname, 'hidden/cq.html'),
-        // Trang ẩn liệt kê các chức năng ẩn (zzz, cq...): truy cập tại /ls
+        // Trang ẩn liệt kê các chức năng ẩn (zzz, cq...): truy cập tại /hidden/ls/ (gõ /ls cũng được, 404.html chuyển sang)
         ls: resolve(__dirname, 'hidden/ls/index.html'),
         // Trang khách xem thực đơn khi quét mã QR (dữ liệu nằm sau dấu #)
         menu: resolve(__dirname, 'm/index.html'),

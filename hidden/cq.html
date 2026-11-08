@@ -593,7 +593,7 @@
         // Mã dấu trang: gom các dòng <tr data-symbol> của bảng giá, mở/dùng lại cửa sổ trang này và gửi mỗi 15 giây
         function buildBookmarklet() {
             const origin = location.origin;
-            const code = `(function(){var O=${JSON.stringify(origin)},U=O+'/cq.html';`
+            const code = `(function(){var O=${JSON.stringify(origin)},U=O+'/hidden/cq.html';`
               + `if(!document.querySelector('tr[data-symbol]')){alert('Chưa thấy bảng chứng quyền. Hãy mở banggia.vietstock.vn/bang-gia/chung-quyen, đợi bảng tải xong rồi bấm lại.');return;}`
               + `function pack(){var h='<table>';document.querySelectorAll('tr[data-symbol]').forEach(function(r){h+=r.outerHTML});return h+'</table>';}`
               + `var w=window.__cqWin;if(!w||w.closed){w=window.open(U,'cqwin');window.__cqWin=w;}`
