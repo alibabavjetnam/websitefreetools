@@ -1,0 +1,30 @@
+WFT CRAWLER - bộ hỗ trợ chạy trên máy cho Smart Search Crawler
+===============================================================
+
+1) Cài Node.js (bản LTS, 18 trở lên): https://nodejs.org  (chỉ cần làm 1 lần)
+
+2) Giải nén thư mục này ra một nơi bất kỳ.
+
+3) Chạy:
+   - Windows, chế độ NHANH:      bấm đúp  start-windows.bat
+   - Windows, chế độ TRÌNH DUYỆT: bấm đúp  start-windows-browser.bat
+   - Mac / Linux, chế độ nhanh:   mở Terminal trong thư mục này, gõ:  node wft-crawler.mjs
+   - Mac / Linux, trình duyệt:    npm install   (1 lần)  rồi:  node wft-crawler.mjs --browser
+
+4) Giữ cửa sổ lệnh mở, quay lại trang Smart Search Crawler, bấm "Kiểm tra kết nối".
+   Từ lúc đó bạn làm việc ở ô tìm kiếm trên trang web như bình thường.
+
+Hai chế độ
+- NHANH: tải thẳng trang kết quả. Bing thường chạy tốt; Google và Baidu hay đòi xác minh (CAPTCHA) hoặc đòi bật JavaScript.
+- TRÌNH DUYỆT: mở Chrome/Edge thật của bạn (cần "npm install" 1 lần để cài puppeteer-core, không tải thêm trình duyệt).
+  Khi Google/Baidu hiện CAPTCHA, bạn tự giải trong cửa sổ Chrome đó rồi việc tìm kiếm tự chạy tiếp.
+  Hồ sơ trình duyệt lưu ở thư mục .wft-crawler trong thư mục người dùng, nên lần sau ít bị hỏi lại.
+
+An toàn
+- Chỉ lắng nghe trên 127.0.0.1, chỉ nhận yêu cầu từ websitefreetools.com và localhost.
+- Không tải được địa chỉ mạng nội bộ (192.168.x.x, 10.x.x.x, localhost...).
+- Không gửi dữ liệu đi đâu ngoài các trang bạn yêu cầu. Mã nguồn là file wft-crawler.mjs, mở ra đọc được.
+
+Lưu ý
+- Hãy tìm kiếm với tốc độ vừa phải; gửi quá nhiều yêu cầu có thể bị Google/Baidu tạm chặn địa chỉ mạng của bạn.
+- Chỉ thu thập nội dung được phép truy cập và tuân thủ điều khoản sử dụng của từng website.

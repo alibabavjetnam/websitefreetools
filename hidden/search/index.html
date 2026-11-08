@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Search Crawler</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root { --bg:#f5f6f8; --card:#fff; --text:#1f2937; --muted:#6b7280; --line:#d9dde3; --accent:#2563eb; --ok:#15803d; --warn:#b45309; --err:#b91c1c; }
+      @media (prefers-color-scheme: dark) { :root { --bg:#111827; --card:#1f2937; --text:#e5e7eb; --muted:#9ca3af; --line:#374151; --accent:#60a5fa; --ok:#4ade80; --warn:#fbbf24; --err:#f87171; } }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family: Arial, sans-serif; font-size:14px; background:var(--bg); color:var(--text); }
+      main { max-width:1180px; margin:0 auto; padding:20px 14px 60px; }
+      h1 { font-size:1.5rem; margin:0 0 4px; }
+      h2 { font-size:1.05rem; margin:0 0 10px; }
+      p.lead { margin:0 0 16px; color:var(--muted); }
+      .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:14px 16px; margin-bottom:14px; }
+      .row { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:8px 0; }
+      .grow { flex:1 1 220px; }
+      label.f { display:flex; flex-direction:column; gap:3px; font-size:.85rem; color:var(--muted); }
+      label.inline { display:inline-flex; align-items:center; gap:5px; color:var(--text); font-size:.9rem; }
+      input[type=text], input[type=password], input[type=number], select, textarea { padding:7px 9px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--text); font:inherit; max-width:100%; }
+      input[type=number] { width:80px; }
+      textarea { width:100%; font-family: Consolas, monospace; font-size:12.5px; resize:vertical; }
+      #q { width:100%; font-size:1.05rem; padding:11px 12px; }
+      button, a.btn { padding:7px 14px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--text); cursor:pointer; font:inherit; text-decoration:none; display:inline-block; }
+      button:hover:not(:disabled), a.btn:hover { border-color:var(--accent); }
+      button.primary { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
+      button:disabled { opacity:.5; cursor:not-allowed; }
+      .badge { display:inline-block; padding:2px 9px; border-radius:99px; font-size:.8rem; font-weight:700; background:#e5e7eb; color:#374151; }
+      .badge.ok { background:#dcfce7; color:#166534; } .badge.err { background:#fee2e2; color:#991b1b; } .badge.warn { background:#fef3c7; color:#92400e; }
+      .muted { color:var(--muted); } .small { font-size:.85rem; }
+      .note { padding:8px 12px; border-radius:6px; background:rgba(37,99,235,.08); border:1px solid rgba(37,99,235,.25); margin:8px 0; font-size:.88rem; }
+      .note.warn { background:rgba(180,83,9,.08); border-color:rgba(180,83,9,.3); }
+      .bar { height:8px; border-radius:99px; background:var(--line); overflow:hidden; margin-top:4px; }
+      .bar > i { display:block; height:100%; width:0; background:var(--accent); transition:width .2s; }
+      .eng { display:grid; grid-template-columns: 90px 1fr; gap:4px 10px; align-items:center; font-size:.88rem; margin:6px 0; }
+      .tablewrap { max-height:560px; overflow:auto; border:1px solid var(--line); border-radius:6px; }
+      table { width:100%; border-collapse:collapse; font-size:.86rem; }
+      th, td { border-bottom:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+      th { position:sticky; top:0; background:var(--card); z-index:1; }
+      td.t { max-width:430px; word-break:break-word; }
+      td.t a { color:var(--accent); text-decoration:none; font-weight:600; } td.t .sn { color:var(--muted); font-size:.82rem; margin-top:2px; }
+      .tag { display:inline-block; padding:1px 6px; border-radius:4px; font-size:.75rem; font-weight:700; margin:0 2px 2px 0; background:rgba(37,99,235,.12); color:var(--accent); }
+      .st-done { color:var(--ok); } .st-error { color:var(--err); } .st-crawling { color:var(--warn); }
+      .detail td { background:rgba(127,127,127,.06); font-size:.82rem; white-space:pre-wrap; }
+      .report { line-height:1.55; } .report h2, .report h3 { margin:14px 0 6px; } .report ul { margin:4px 0 8px 20px; padding:0; } .report a { color:var(--accent); font-weight:700; text-decoration:none; }
+      dialog { max-width:760px; width:94vw; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--text); padding:16px; }
+      dialog::backdrop { background:rgba(0,0,0,.45); }
+      ol.steps { margin:6px 0 6px 20px; padding:0; line-height:1.6; }
+      details summary { cursor:pointer; font-weight:700; margin:6px 0; }
+      .hist { display:flex; gap:8px; align-items:center; padding:5px 0; border-bottom:1px solid var(--line); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Smart Search Crawler</h1>
+      <p class="lead">Nhập từ khóa → AI phân loại ý định → tìm trên Google, Bing, Baidu (mỗi web tới 100 kết quả) → chọn URL → thu thập nội dung → AI tổng hợp → xuất Excel. Trang ẩn, không có trong menu.</p>
+
+      <section class="card" id="s-helper">
+        <h2>1. Bộ chạy trên máy của bạn (Node.js)</h2>
+        <div class="row">
+          <span class="badge" id="hStatus">Chưa kiểm tra</span>
+          <span class="muted small" id="hDetail"></span>
+          <button type="button" id="btnConnect">Kiểm tra kết nối</button>
+          <button type="button" id="btnZip">Tải bộ chạy (.zip)</button>
+          <label class="f" style="flex-direction:row;align-items:center;gap:6px">Cách tìm
+            <select id="searchMode">
+              <option value="auto">Theo bộ chạy đang mở</option>
+              <option value="fast">Nhanh (không cần Chrome)</option>
+              <option value="browser">Trình duyệt (giải CAPTCHA được)</option>
+            </select>
+          </label>
+        </div>
+        <details>
+          <summary>Hướng dẫn cài (làm 1 lần)</summary>
+          <ol class="steps">
+            <li>Cài Node.js bản LTS (18 trở lên) tại <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">nodejs.org</a>.</li>
+            <li>Bấm <b>Tải bộ chạy (.zip)</b>, giải nén ra một thư mục.</li>
+            <li>Windows: bấm đúp <code>start-windows.bat</code> (chế độ nhanh) hoặc <code>start-windows-browser.bat</code> (mở Chrome để giải CAPTCHA). Mac/Linux: mở Terminal trong thư mục, gõ <code>node wft-crawler.mjs</code> (chế độ trình duyệt: <code>npm install</code> một lần rồi <code>node wft-crawler.mjs --browser</code>).</li>
+            <li>Giữ cửa sổ lệnh mở, quay lại đây bấm <b>Kiểm tra kết nối</b>. Từ đó bạn làm việc ngay ở ô tìm kiếm bên dưới.</li>
+          </ol>
+          <div class="note">Bộ chạy chỉ lắng nghe trên máy bạn (127.0.0.1), chỉ nhận yêu cầu từ trang này và không tải được địa chỉ mạng nội bộ. Trình duyệt có thể hỏi quyền "truy cập thiết bị trong mạng nội bộ" — hãy cho phép. Safari có thể chặn kết nối này; hãy dùng Chrome, Edge hoặc Firefox.</div>
+        </details>
+        <div class="note warn small">Google và Baidu thường đòi xác minh (CAPTCHA) hoặc đòi bật JavaScript với cách tải nhanh. Nếu bị chặn, dùng <b>chế độ Trình duyệt</b>: Chrome thật mở ra và bạn tự giải CAPTCHA, việc tìm kiếm sẽ tự chạy tiếp. Bing thường chạy tốt ở chế độ nhanh. Tìm với tốc độ vừa phải để tránh bị tạm chặn.</div>
+      </section>
+
+      <section class="card" id="s-ai">
+        <h2>2. Trợ lý AI</h2>
+        <div class="row">
+          <label class="f">Dùng AI nào
+            <select id="aiProvider">
+              <option value="none">Không dùng AI (quy tắc có sẵn)</option>
+              <option value="manual">Dán tay vào ChatGPT / Claude / Gemini bản web (miễn phí)</option>
+              <option value="gemini">Google Gemini API (có gói miễn phí)</option>
+              <option value="openai">ChatGPT API hoặc Ollama chạy trên máy</option>
+              <option value="claude">Claude API (trả phí)</option>
+            </select>
+          </label>
+          <label class="f grow" id="lblKey">Khóa API<input type="password" id="aiKey" autocomplete="off" /></label>
+          <label class="f" id="lblModel">Mô hình<input type="text" id="aiModel" size="22" /></label>
+          <label class="f grow" id="lblBase">Địa chỉ máy chủ<input type="text" id="aiBase" /></label>
+        </div>
+        <div class="row">
+          <label class="inline" id="lblRemember"><input type="checkbox" id="aiRemember" /> Nhớ khóa trên máy này</label>
+          <button type="button" id="btnAiTest">Thử kết nối AI</button>
+          <span class="small" id="aiMsg"></span>
+        </div>
+        <div class="note small" id="aiHelp"></div>
+      </section>
+
+      <section class="card" id="s-search">
+        <h2>3. Tìm kiếm</h2>
+        <input type="text" id="q" placeholder="Nhập nội dung cần tìm. Ví dụ: máy lọc nước gia đình" autocomplete="off" />
+        <div class="row">
+          <label class="inline"><input type="checkbox" class="eng-on" data-e="google" checked /> Google</label>
+          <label class="inline"><input type="checkbox" class="eng-on" data-e="bing" checked /> Bing</label>
+          <label class="inline"><input type="checkbox" class="eng-on" data-e="baidu" checked /> Baidu</label>
+          <label class="f">Số kết quả mỗi web<input type="number" id="nMain" value="100" min="10" max="100" step="10" /></label>
+          <label class="f">Mỗi từ khóa phụ<input type="number" id="nExtra" value="20" min="10" max="100" step="10" /></label>
+          <label class="f">Thị trường
+            <select id="market">
+              <option value="vi|VN">Việt Nam (tiếng Việt)</option>
+              <option value="en|US">Mỹ (tiếng Anh)</option>
+              <option value="ja|JP">Nhật Bản</option>
+              <option value="zh-CN|CN">Trung Quốc</option>
+              <option value="ko|KR">Hàn Quốc</option>
+              <option value="en|GB">Anh</option>
+            </select>
+          </label>
+          <label class="f">Thời gian
+            <select id="timeRange"><option value="">Không giới hạn</option><option value="day">24 giờ</option><option value="week">7 ngày</option><option value="month">30 ngày</option><option value="year">1 năm</option></select>
+          </label>
+        </div>
+        <div class="row">
+          <button type="button" id="btnIntent">Phân loại ý định &amp; gợi ý từ khóa phụ</button>
+          <span class="badge" id="catBadge" hidden></span>
+          <span class="muted small" id="intentList"></span>
+        </div>
+        <label class="f">Danh sách truy vấn (mỗi dòng một truy vấn, dòng đầu là từ khóa chính; xóa dòng nếu không cần)
+          <textarea id="queries" rows="3" placeholder="Để trống = chỉ tìm đúng từ khóa ở ô trên"></textarea>
+        </label>
+        <div class="row">
+          <button type="button" class="primary" id="btnSearch">Bắt đầu tìm kiếm</button>
+          <button type="button" id="btnStopSearch" disabled>Dừng</button>
+          <span class="small" id="searchMsg"></span>
+        </div>
+        <div id="engProg"></div>
+      </section>
+
+      <section class="card" id="s-urls">
+        <h2>4. Danh sách URL</h2>
+        <div class="row small" id="urlStats"><span class="muted">Chưa có kết quả.</span></div>
+        <div class="row">
+          <input type="text" id="fText" placeholder="Lọc theo chữ trong tiêu đề, mô tả, tên miền" class="grow" />
+          <select id="fEngine"><option value="">Mọi web tìm kiếm</option><option value="google">Google</option><option value="bing">Bing</option><option value="baidu">Baidu</option></select>
+          <select id="fType"><option value="">Mọi loại nguồn</option></select>
+          <label class="inline"><input type="checkbox" id="fSel" /> Chỉ đã chọn</label>
+        </div>
+        <div class="row">
+          <button type="button" id="btnSelAll">Chọn tất cả (đang lọc)</button>
+          <button type="button" id="btnSelNone">Bỏ chọn tất cả</button>
+          <button type="button" id="btnSelTop">Chọn top 20 mỗi web</button>
+          <button type="button" id="btnSelRel">Chọn liên quan ≥ 50</button>
+        </div>
+        <div class="tablewrap"><table><thead><tr><th></th><th>#</th><th>Web / hạng</th><th>Nguồn</th><th>Tiêu đề</th><th>Loại</th><th>Liên quan</th><th>Crawl</th></tr></thead><tbody id="urlBody"></tbody></table></div>
+        <details>
+          <summary>Thêm URL thủ công</summary>
+          <textarea id="manualUrls" rows="3" placeholder="Dán các địa chỉ http/https, mỗi dòng một địa chỉ"></textarea>
+          <button type="button" id="btnAddUrls">Thêm vào danh sách</button>
+        </details>
+      </section>
+
+      <section class="card" id="s-crawl">
+        <h2>5. Thu thập nội dung (Crawl)</h2>
+        <div class="row">
+          <label class="f">Chế độ
+            <select id="crawlMode"><option value="quick">Nhanh: tiêu đề, mô tả, ngày, đoạn nội dung chính</option><option value="full">Đầy đủ: thêm heading, bảng, ảnh, liên kết</option></select>
+          </label>
+          <label class="f">Chạy song song<input type="number" id="crawlPar" value="4" min="1" max="8" /></label>
+          <button type="button" class="primary" id="btnCrawl">Crawl các URL đã chọn</button>
+          <button type="button" id="btnStopCrawl" disabled>Dừng</button>
+          <span class="small" id="crawlMsg"></span>
+        </div>
+        <div class="bar"><i id="crawlBar"></i></div>
+        <div class="muted small" style="margin-top:6px">Bộ chạy trích xuất cả dữ liệu có cấu trúc (JSON-LD) của trang sản phẩm/bài viết nếu có. Trang PDF chỉ ghi nhận địa chỉ.</div>
+      </section>
+
+      <section class="card" id="s-analysis">
+        <h2>6. Phân tích &amp; xuất kết quả</h2>
+        <div class="row">
+          <button type="button" id="btnStats">Thống kê nhanh (không cần AI)</button>
+          <label class="f">Số trang đưa cho AI<input type="number" id="aiPages" value="25" min="3" max="60" /></label>
+          <button type="button" class="primary" id="btnReport">AI tổng hợp báo cáo</button>
+          <button type="button" id="btnTable">AI trích bảng dữ liệu</button>
+          <span class="small" id="anaMsg"></span>
+        </div>
+        <div id="statsOut"></div>
+        <div id="tableOut"></div>
+        <div id="reportOut" class="report"></div>
+        <div class="row">
+          <button type="button" id="btnXlsx">Xuất Excel</button>
+          <button type="button" id="btnJson">Xuất JSON</button>
+          <button type="button" id="btnMd">Xuất báo cáo (.md)</button>
+        </div>
+      </section>
+
+      <section class="card" id="s-history">
+        <h2>7. Lịch sử tìm kiếm (lưu trên máy này)</h2>
+        <div id="histOut" class="small muted">Chưa có.</div>
+      </section>
+    </main>
+
+    <dialog id="manualDlg">
+      <h2>Dán tay vào AI bản web (miễn phí)</h2>
+      <ol class="steps small">
+        <li>Bấm <b>Sao chép câu lệnh</b>.</li>
+        <li>Mở một AI bên dưới, dán câu lệnh và gửi đi.</li>
+        <li>Sao chép toàn bộ câu trả lời, dán vào ô cuối rồi bấm <b>Xong</b>.</li>
+      </ol>
+      <div class="row"><button type="button" id="mdCopy" class="primary">Sao chép câu lệnh</button>
+        <a class="btn" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Mở ChatGPT</a>
+        <a class="btn" href="https://claude.ai/new" target="_blank" rel="noopener noreferrer">Mở Claude</a>
+        <a class="btn" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Mở Gemini</a>
+        <span class="small" id="mdSize"></span></div>
+      <textarea id="mdPrompt" rows="5" readonly></textarea>
+      <label class="f" style="margin-top:8px">Câu trả lời của AI<textarea id="mdAnswer" rows="7" placeholder="Dán câu trả lời vào đây"></textarea></label>
+      <div class="row"><button type="button" class="primary" id="mdOk">Xong</button><button type="button" id="mdCancel">Hủy</button></div>
+    </dialog>
+
+    <script type="module" src="/src/pages/smartsearch.ts"></script>
+  </body>
+</html>

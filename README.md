@@ -102,6 +102,8 @@ Các công cụ thêm ngày 27/10/2026 nạp thêm từ CDN khi cần: Tesseract
 
 `hidden/ls/index.html` (truy cập tại `/hidden/ls/`, gõ `/ls` cũng được) liệt kê link các chức năng ẩn (zzz, cq...). Cũng ẩn: `noindex`, không có trong menu, sitemap, không gắn Google Analytics. Thêm chức năng ẩn mới thì thêm một dòng vào trang này.
 
+`hidden/search/index.html` (truy cập tại `/hidden/search/`) là Smart Search Crawler: tìm từ khóa trên Google, Bing, Baidu (mỗi web tới 100 kết quả), quản lý URL, crawl nội dung, AI tổng hợp, xuất Excel. Người dùng tải bộ chạy Node.js (`public/hidden/search/helper/`) về chạy trên máy để tìm và crawl; trang web làm việc với bộ chạy qua `127.0.0.1`.
+
 ## Chạy trên máy
 
 ```bash

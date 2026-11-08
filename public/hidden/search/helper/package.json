@@ -1,0 +1,9 @@
+{
+  "name": "wft-crawler",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bộ hỗ trợ chạy trên máy cho Smart Search Crawler của websitefreetools.com",
+  "scripts": { "start": "node wft-crawler.mjs", "browser": "node wft-crawler.mjs --browser" },
+  "optionalDependencies": { "puppeteer-core": "^24.0.0" }
+}
