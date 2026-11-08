@@ -178,7 +178,61 @@
     "lib.excel.missing": "缺失",
     "lib.excel.duplicate": "重复",
     "lib.excel.valid": "有效",
-    "lib.excel.invalid": "无效"
+    "lib.excel.invalid": "无效",
+    "lib.game.levels": "关卡",
+    "lib.game.level": "第 {n} 关",
+    "lib.game.unlockAll": "解锁所有关卡",
+    "lib.game.newGame": "新游戏",
+    "lib.game.retry": "再玩一次",
+    "lib.game.nextLevel": "下一关",
+    "lib.game.win": "恭喜通过第 {n} 关！",
+    "lib.game.lose": "第 {n} 关未通过，再试一次吧。",
+    "lib.game.draw": "和棋 — 第 {n} 关未通过。",
+    "lib.game.allDone": "恭喜！你已通过全部 10 关。",
+    "lib.game.time": "用时",
+    "lib.game.hint": "提示",
+    "lib.game.erase": "擦除",
+    "lib.game.check": "检查",
+    "lib.game.notes": "笔记",
+    "lib.game.generating": "正在生成题目…",
+    "lib.game.sudokuKeys": "方向键移动，数字键填写（16x16 用 A-G 表示 10-16），Backspace 擦除，N 切换笔记。",
+    "lib.game.sudokuLeft": "还剩 {n} 格",
+    "lib.game.sudokuConflict": "已填满，但仍有重复的数字，请再检查。",
+    "lib.game.sudokuWrong": "有 {n} 格错误（已标红）。",
+    "lib.game.sudokuAllRight": "暂未发现错误。",
+    "lib.game.thinking": "电脑思考中…",
+    "lib.game.yourTurn": "轮到你了",
+    "lib.game.undo": "悔棋",
+    "lib.game.resign": "认输",
+    "lib.game.resigned": "你已认输。",
+    "lib.game.chessCheck": "将军！",
+    "lib.game.chessMateWin": "将死！你赢了。",
+    "lib.game.chessMateLose": "你被将死了。",
+    "lib.game.chessDraw": "本局和棋。",
+    "lib.game.chessNote": "你执白先行。点击自己的棋子，再点击目标格。兵到底线自动升变为后。将死黑方即获胜。",
+    "lib.game.xiangqi": "中国象棋棋盘",
+    "lib.game.xqCheck": "将军！",
+    "lib.game.xqMateWin": "将死！你赢了。",
+    "lib.game.xqMateLose": "你被将死了。",
+    "lib.game.xqStaleWin": "黑方无子可动 — 你赢了。",
+    "lib.game.xqStaleLose": "你无子可动 — 你输了。",
+    "lib.game.xqNote": "你执红方（下方）先行。点击自己的棋子，再点击目标位置。双方将帅不能直接对面；被将死或无子可动即输。",
+    "lib.game.pass": "虚着",
+    "lib.game.goBoard": "围棋棋盘",
+    "lib.game.goCaps": "提子 — 黑: {b} · 白: {w}",
+    "lib.game.goScore": "得分 — 黑: {b}，白: {w} + 贴目 {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} 棋盘。你执黑先行。按数子法计分（棋子＋完全围住的空点），白方加贴目 {k}。虚着前请先提掉对方所有死子。禁止自杀和立即提回（打劫）。双方连续虚着则对局结束。",
+    "lib.game.illegal": "此处不能落子（自杀或立即提回）。",
+    "lib.game.aiPassed": "电脑虚着了。如果你也虚着，对局结束并计分。",
+    "lib.game.start": "开始",
+    "lib.game.lives": "生命",
+    "lib.game.mmAsk": "哪一格是这个图形？",
+    "lib.game.mmReady": "准备好了吗？",
+    "lib.game.mmMemorize": "记住 — 还剩 {s} 秒",
+    "lib.game.mmQuestion": "第 {i}/{n} 题",
+    "lib.game.mmDone": "完成！",
+    "lib.game.mmLost": "生命用完 — 所有格子已翻开。",
+    "lib.game.mmNote": "点击“开始”：格子会显示 {s} 秒后盖住。请记住每格的形状和颜色，然后选出与所给图形相同的格子。错误超过 {l} 次则本关失败。"
   },
   "pages": {
     "home": {
@@ -252,7 +306,7 @@
     },
     "entertainment": {
       "name": "娱乐游戏",
-      "desc": "幸运转盘、随机数生成、抽奖和轻松有趣的小游戏。"
+      "desc": "幸运转盘、随机数、抽签，以及数独、国际象棋、中国象棋、围棋和记忆力等益智游戏。"
     }
   },
   "tools": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "用公式汇总 Excel 数据",
       "desc": "按单元格公式（SUM、IF、CONCAT、UNIQUE 等）汇总多个工作表或 Excel 文件，支持嵌套函数，可保存公式重复使用。"
+    },
+    "sudoku-9x9": {
+      "name": "数独 9x9",
+      "desc": "在线玩 9x9 数独，10 个关卡由易到难，支持笔记、提示和错误检查。"
+    },
+    "sudoku-16x16": {
+      "name": "数独 16x16",
+      "desc": "使用 1-9 和 A-G 的大型 16x16 数独，10 个关卡由易到难，支持笔记和提示。"
+    },
+    "chess": {
+      "name": "人机国际象棋",
+      "desc": "与电脑对弈，10 个难度由易到难，支持王车易位、吃过路兵和升变。"
+    },
+    "xiangqi": {
+      "name": "人机中国象棋",
+      "desc": "与电脑对弈，10 个难度由易到难，支持蹩马腿、塞象眼、炮隔子吃和将帅不能对面。"
+    },
+    "go-game": {
+      "name": "人机围棋",
+      "desc": "在 5x5、7x7 和 9x9 棋盘上与电脑对弈，10 个难度由易到难，终局自动计分。"
+    },
+    "memory-shapes": {
+      "name": "图形颜色记忆",
+      "desc": "带有图形和颜色的格子显示 5 秒后盖住，凭记忆选出正确的格子，10 个关卡由易到难。"
     }
   },
   "s": {

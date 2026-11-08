@@ -178,7 +178,61 @@
     "lib.excel.missing": "不足",
     "lib.excel.duplicate": "重複",
     "lib.excel.valid": "有効",
-    "lib.excel.invalid": "無効"
+    "lib.excel.invalid": "無効",
+    "lib.game.levels": "レベル",
+    "lib.game.level": "レベル {n}",
+    "lib.game.unlockAll": "全レベルを開放",
+    "lib.game.newGame": "新しいゲーム",
+    "lib.game.retry": "もう一度",
+    "lib.game.nextLevel": "次のレベル",
+    "lib.game.win": "レベル {n} クリア！",
+    "lib.game.lose": "レベル {n} は未クリアです。もう一度挑戦しましょう。",
+    "lib.game.draw": "引き分け — レベル {n} は未クリアです。",
+    "lib.game.allDone": "おめでとうございます！10レベルすべてクリアしました。",
+    "lib.game.time": "時間",
+    "lib.game.hint": "ヒント",
+    "lib.game.erase": "消去",
+    "lib.game.check": "チェック",
+    "lib.game.notes": "メモ",
+    "lib.game.generating": "問題を作成中…",
+    "lib.game.sudokuKeys": "矢印キーで移動、数字キーで入力（16x16は A-G が 10-16）、Backspace で消去、N でメモ切替。",
+    "lib.game.sudokuLeft": "残り {n} マス",
+    "lib.game.sudokuConflict": "すべて埋まりましたが、重複している数字があります。確認してください。",
+    "lib.game.sudokuWrong": "間違いが {n} マスあります（赤で表示）。",
+    "lib.game.sudokuAllRight": "間違いは見つかりませんでした。",
+    "lib.game.thinking": "コンピューターが考え中…",
+    "lib.game.yourTurn": "あなたの番です",
+    "lib.game.undo": "待った",
+    "lib.game.resign": "投了",
+    "lib.game.resigned": "投了しました。",
+    "lib.game.chessCheck": "王手！",
+    "lib.game.chessMateWin": "チェックメイト！あなたの勝ちです。",
+    "lib.game.chessMateLose": "チェックメイトされました。",
+    "lib.game.chessDraw": "引き分けです。",
+    "lib.game.chessNote": "あなたは白で先手です。駒をクリックし、移動先のマスをクリックします。ポーンは最奥段でクイーンに昇格します。黒をチェックメイトすれば勝ちです。",
+    "lib.game.xiangqi": "シャンチーの盤",
+    "lib.game.xqCheck": "王手！",
+    "lib.game.xqMateWin": "詰み！あなたの勝ちです。",
+    "lib.game.xqMateLose": "詰まされました。",
+    "lib.game.xqStaleWin": "黒に指せる手がありません — あなたの勝ちです。",
+    "lib.game.xqStaleLose": "指せる手がありません — あなたの負けです。",
+    "lib.game.xqNote": "あなたは赤（下側）で先手です。駒をクリックし、移動先をクリックします。両将は向かい合えません。詰みまたは指せる手がなくなると負けです。",
+    "lib.game.pass": "パス",
+    "lib.game.goBoard": "囲碁の盤",
+    "lib.game.goCaps": "取った石 — 黒: {b} · 白: {w}",
+    "lib.game.goScore": "得点 — 黒: {b}、白: {w} + コミ {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} の盤です。あなたは黒で先手です。得点は地（石＋囲んだ空点）で数え、白にコミ {k} が加わります。パスする前に相手の死に石をすべて取ってください。自殺手とコウの即取り返しは禁止です。両者が続けてパスすると終局です。",
+    "lib.game.illegal": "反則の手です（自殺手またはコウ）。",
+    "lib.game.aiPassed": "コンピューターがパスしました。あなたもパスすると終局して得点を数えます。",
+    "lib.game.start": "スタート",
+    "lib.game.lives": "ライフ",
+    "lib.game.mmAsk": "この図形があったマスはどれ？",
+    "lib.game.mmReady": "準備はいいですか？",
+    "lib.game.mmMemorize": "覚えて — 残り {s} 秒",
+    "lib.game.mmQuestion": "問題 {i}/{n}",
+    "lib.game.mmDone": "クリア！",
+    "lib.game.mmLost": "ライフがなくなりました — すべてのマスを開きました。",
+    "lib.game.mmNote": "スタートを押すと、マスが {s} 秒間表示されてから伏せられます。各マスの形と色を覚え、出題された図形のマスを選んでください。{l} 回を超えて間違えるとそのレベルは失敗です。"
   },
   "pages": {
     "home": {
@@ -252,7 +306,7 @@
     },
     "entertainment": {
       "name": "エンタメ・ゲーム",
-      "desc": "ラッキールーレット、乱数生成、くじ引き、気軽に遊べるゲーム。"
+      "desc": "ラッキールーレット、乱数、くじ引き、数独・チェス・シャンチー・囲碁・記憶ゲームなどの頭脳ゲーム。"
     }
   },
   "tools": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excelデータを数式で集計",
       "desc": "セルごとの数式（SUM、IF、CONCAT、UNIQUE など）で複数のシートやExcelファイルを集計。関数の入れ子や数式の保存にも対応。"
+    },
+    "sudoku-9x9": {
+      "name": "数独 9x9",
+      "desc": "やさしいから難しいまでの10レベルで遊べる9x9数独。メモ、ヒント、間違いチェック付き。"
+    },
+    "sudoku-16x16": {
+      "name": "数独 16x16",
+      "desc": "1-9とA-Gを使う大型の16x16数独。やさしいから難しいまでの10レベル、メモとヒント付き。"
+    },
+    "chess": {
+      "name": "チェス（対コンピューター）",
+      "desc": "やさしいから強いまでの10レベルのコンピューターと対戦。キャスリング、アンパッサン、プロモーション対応。"
+    },
+    "xiangqi": {
+      "name": "シャンチー（対コンピューター）",
+      "desc": "10レベルのコンピューターと対戦する中国将棋。馬の足止め、象の目、砲の飛び越え、将の対面禁止に対応。"
+    },
+    "go-game": {
+      "name": "囲碁（対コンピューター）",
+      "desc": "5路・7路・9路盤で10レベルのコンピューターと対戦。終局時に自動で得点を計算します。"
+    },
+    "memory-shapes": {
+      "name": "図形と色の記憶ゲーム",
+      "desc": "図形と色のついたマスが5秒間表示されてから伏せられます。覚えて正しいマスを選ぶ、やさしいから難しいまでの10レベル。"
     }
   },
   "s": {

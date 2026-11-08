@@ -178,7 +178,61 @@
     "lib.excel.missing": "Missing",
     "lib.excel.duplicate": "Duplicate",
     "lib.excel.valid": "Valid",
-    "lib.excel.invalid": "Invalid"
+    "lib.excel.invalid": "Invalid",
+    "lib.game.levels": "Level",
+    "lib.game.level": "Level {n}",
+    "lib.game.unlockAll": "Unlock all levels",
+    "lib.game.newGame": "New game",
+    "lib.game.retry": "Play again",
+    "lib.game.nextLevel": "Next level",
+    "lib.game.win": "You cleared level {n}!",
+    "lib.game.lose": "Level {n} not cleared. Try again.",
+    "lib.game.draw": "Draw — level {n} not cleared.",
+    "lib.game.allDone": "Congratulations! You cleared all 10 levels.",
+    "lib.game.time": "Time",
+    "lib.game.hint": "Hint",
+    "lib.game.erase": "Erase",
+    "lib.game.check": "Check",
+    "lib.game.notes": "Notes",
+    "lib.game.generating": "Generating puzzle…",
+    "lib.game.sudokuKeys": "Arrow keys to move, number keys to fill (16x16: A-G for 10-16), Backspace to erase, N to toggle notes.",
+    "lib.game.sudokuLeft": "{n} cells left",
+    "lib.game.sudokuConflict": "All cells are filled but some numbers repeat. Please check again.",
+    "lib.game.sudokuWrong": "{n} wrong cells (marked in red).",
+    "lib.game.sudokuAllRight": "No wrong cells found.",
+    "lib.game.thinking": "Computer is thinking…",
+    "lib.game.yourTurn": "Your turn",
+    "lib.game.undo": "Undo",
+    "lib.game.resign": "Resign",
+    "lib.game.resigned": "You resigned.",
+    "lib.game.chessCheck": "Check!",
+    "lib.game.chessMateWin": "Checkmate! You win.",
+    "lib.game.chessMateLose": "You are checkmated.",
+    "lib.game.chessDraw": "The game is a draw.",
+    "lib.game.chessNote": "You play White and move first. Click your piece, then the square to move to. Pawns reaching the last rank promote to a queen. Win by checkmating Black.",
+    "lib.game.xiangqi": "Xiangqi board",
+    "lib.game.xqCheck": "Check!",
+    "lib.game.xqMateWin": "Checkmate! You win.",
+    "lib.game.xqMateLose": "You are checkmated.",
+    "lib.game.xqStaleWin": "Black has no legal moves — you win.",
+    "lib.game.xqStaleLose": "You have no legal moves — you lose.",
+    "lib.game.xqNote": "You play Red (bottom) and move first. Click your piece, then the point to move to. The two generals may not face each other; checkmate or having no legal move loses.",
+    "lib.game.pass": "Pass",
+    "lib.game.goBoard": "Go board",
+    "lib.game.goCaps": "Captured — Black: {b} · White: {w}",
+    "lib.game.goScore": "Score — Black: {b}, White: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} board. You play Black and move first. Scoring is by area (stones + fully enclosed empty points); White gets {k} komi. Capture all of the opponent's dead stones before passing. Suicide and immediate recapture (ko) are not allowed. The game ends when both players pass in a row.",
+    "lib.game.illegal": "Illegal move (suicide or immediate recapture).",
+    "lib.game.aiPassed": "The computer passed. If you pass too, the game ends and is scored.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Lives",
+    "lib.game.mmAsk": "Which tile had this shape?",
+    "lib.game.mmReady": "Ready?",
+    "lib.game.mmMemorize": "Memorize — {s} s left",
+    "lib.game.mmQuestion": "Question {i}/{n}",
+    "lib.game.mmDone": "Done!",
+    "lib.game.mmLost": "Out of lives — all tiles are now revealed.",
+    "lib.game.mmNote": "Press Start: the tiles are shown for {s} seconds, then hidden. Remember the shape and colour of each tile, then pick the tile that matches the shape you are shown. More than {l} mistakes fails the level."
   },
   "pages": {
     "home": {
@@ -252,7 +306,7 @@
     },
     "entertainment": {
       "name": "Entertainment & Games",
-      "desc": "Lucky wheel, random number generator, prize draws and fun games."
+      "desc": "Lucky wheel, random numbers, prize draws and brain games: Sudoku, chess, xiangqi, Go and memory."
     }
   },
   "tools": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combine Excel Data with Formulas",
       "desc": "Combine many sheets or Excel files with a formula per cell (SUM, IF, CONCAT, UNIQUE...), nested functions, and saved formulas you can reuse."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Play 9x9 Sudoku online across 10 levels from easy to hard, with notes, hints and error checking."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Large 16x16 Sudoku using 1-9 and A-G, 10 levels from easy to hard, with notes and hints."
+    },
+    "chess": {
+      "name": "Chess vs Computer",
+      "desc": "Play chess against the computer across 10 levels from easy to hard, with castling, en passant and promotion."
+    },
+    "xiangqi": {
+      "name": "Xiangqi vs Computer",
+      "desc": "Play Chinese chess (xiangqi) against the computer across 10 levels, with horse-leg blocking, elephant eye, cannon captures and the flying-general rule."
+    },
+    "go-game": {
+      "name": "Go vs Computer",
+      "desc": "Play Go against the computer on 5x5, 7x7 and 9x9 boards across 10 levels, with automatic scoring at the end."
+    },
+    "memory-shapes": {
+      "name": "Shape & Colour Memory",
+      "desc": "Tiles with shapes and colours are shown for 5 seconds, then hidden; remember and pick the right tile, 10 levels from easy to hard."
     }
   },
   "s": {

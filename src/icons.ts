@@ -126,6 +126,12 @@ const PATHS: Record<string, string> = {
   'spin-wheel': '<circle cx="12" cy="13" r="8"/><path d="M12 5v16M4 13h16M6.3 7.3l11.4 11.4M17.7 7.3L6.3 18.7"/><path d="M10 2h4l-2 3z"/>',
   // xúc xắc
   'random-number': '<rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/>',
+  'sudoku-9x9': '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M9.2 3.5v17M14.8 3.5v17M3.5 9.2h17M3.5 14.8h17"/><path d="M6.3 6.4h.01M12 12h.01M17.7 17.6h.01" stroke-width="2.6"/>',
+  'sudoku-16x16': '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M12 3.5v17M3.5 12h17"/><path d="M7.75 3.5v17M16.25 3.5v17M3.5 7.75h17M3.5 16.25h17" opacity=".5"/>',
+  'chess': '<circle cx="12" cy="6.5" r="3"/><path d="M10.2 9.5c0 3-2.7 4-2.7 7.5h9c0-3.5-2.7-4.5-2.7-7.5"/><path d="M6 21h12M7.5 17v4M16.5 17v4"/>',
+  'xiangqi': '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6.2"/><path d="M9.5 9.5l5 5M14.5 9.5l-5 5"/>',
+  'go-game': '<path d="M4 8h16M4 16h16M8 4v16M16 4v16"/><circle cx="8" cy="8" r="2.6" fill="currentColor"/><circle cx="16" cy="16" r="2.6" fill="var(--surface,#fff)"/><circle cx="16" cy="8" r="2.6" fill="var(--surface,#fff)"/>',
+  'memory-shapes': '<rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.5"/><circle cx="16.5" cy="7.25" r="3.8"/><path d="M7.25 13.5l3.8 6.5H3.45z"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.5" opacity=".5"/><path d="M16.75 15.2v3.2M15.2 16.8h3.2" opacity=".5"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

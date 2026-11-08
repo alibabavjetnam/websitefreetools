@@ -87,6 +87,12 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Năng suất & đời sống | Sổ ghi chú online | `tools/notepad.html` |
 | Game giải trí | Vòng quay may mắn | `tools/spin-wheel.html` |
 | Game giải trí | Quay số ngẫu nhiên | `tools/random-number.html` |
+| Game giải trí | Sudoku 9x9 | `tools/sudoku-9x9.html` |
+| Game giải trí | Sudoku 16x16 | `tools/sudoku-16x16.html` |
+| Game giải trí | Cờ vua với máy | `tools/chess.html` |
+| Game giải trí | Cờ tướng với máy | `tools/xiangqi.html` |
+| Game giải trí | Cờ vây với máy | `tools/go-game.html` |
+| Game giải trí | Ghi nhớ hình và màu | `tools/memory-shapes.html` |
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
 

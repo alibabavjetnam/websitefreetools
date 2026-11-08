@@ -178,7 +178,61 @@
     "lib.excel.missing": "Thiếu",
     "lib.excel.duplicate": "Trùng",
     "lib.excel.valid": "Hợp lệ",
-    "lib.excel.invalid": "Không hợp lệ"
+    "lib.excel.invalid": "Không hợp lệ",
+    "lib.game.levels": "Cấp độ",
+    "lib.game.level": "Cấp {n}",
+    "lib.game.unlockAll": "Mở hết các cấp",
+    "lib.game.newGame": "Ván mới",
+    "lib.game.retry": "Chơi lại",
+    "lib.game.nextLevel": "Cấp tiếp theo",
+    "lib.game.win": "Bạn đã vượt qua cấp {n}!",
+    "lib.game.lose": "Chưa vượt qua cấp {n}. Thử lại nhé.",
+    "lib.game.draw": "Hoà — chưa vượt qua cấp {n}.",
+    "lib.game.allDone": "Chúc mừng! Bạn đã vượt qua cả 10 cấp.",
+    "lib.game.time": "Thời gian",
+    "lib.game.hint": "Gợi ý",
+    "lib.game.erase": "Xoá ô",
+    "lib.game.check": "Kiểm tra",
+    "lib.game.notes": "Ghi chú",
+    "lib.game.generating": "Đang tạo đề…",
+    "lib.game.sudokuKeys": "Mũi tên để di chuyển, phím số để điền (16x16: A-G cho 10-16), Backspace để xoá, N để bật/tắt ghi chú.",
+    "lib.game.sudokuLeft": "Còn {n} ô trống",
+    "lib.game.sudokuConflict": "Đã điền hết nhưng còn ô trùng số. Hãy kiểm tra lại.",
+    "lib.game.sudokuWrong": "Có {n} ô sai (đang tô đỏ).",
+    "lib.game.sudokuAllRight": "Chưa thấy ô nào sai.",
+    "lib.game.thinking": "Máy đang nghĩ…",
+    "lib.game.yourTurn": "Đến lượt bạn",
+    "lib.game.undo": "Đi lại",
+    "lib.game.resign": "Đầu hàng",
+    "lib.game.resigned": "Bạn đã đầu hàng.",
+    "lib.game.chessCheck": "Chiếu!",
+    "lib.game.chessMateWin": "Chiếu bí! Bạn thắng.",
+    "lib.game.chessMateLose": "Bạn bị chiếu bí.",
+    "lib.game.chessDraw": "Ván cờ hoà.",
+    "lib.game.chessNote": "Bạn cầm quân Trắng, đi trước. Bấm quân của bạn rồi bấm ô muốn đến. Tốt tới cuối bàn tự phong thành Hậu. Thắng bằng cách chiếu bí quân Đen.",
+    "lib.game.xiangqi": "Bàn cờ tướng",
+    "lib.game.xqCheck": "Chiếu tướng!",
+    "lib.game.xqMateWin": "Chiếu bí! Bạn thắng.",
+    "lib.game.xqMateLose": "Bạn bị chiếu bí.",
+    "lib.game.xqStaleWin": "Quân Đen hết nước đi — bạn thắng.",
+    "lib.game.xqStaleLose": "Bạn hết nước đi — bạn thua.",
+    "lib.game.xqNote": "Bạn cầm quân Đỏ (phía dưới), đi trước. Bấm quân của bạn rồi bấm ô muốn đến. Hai tướng không được đối mặt nhau; chiếu bí hoặc hết nước đi là thua.",
+    "lib.game.pass": "Bỏ lượt",
+    "lib.game.goBoard": "Bàn cờ vây",
+    "lib.game.goCaps": "Quân đã bắt — Đen: {b} · Trắng: {w}",
+    "lib.game.goScore": "Điểm — Đen: {b}, Trắng: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Bàn {n}×{n}. Bạn cầm quân Đen, đi trước. Chấm điểm theo diện tích (quân + vùng trống bao kín); quân Trắng được cộng komi {k}. Hãy bắt hết quân chết của đối thủ trước khi bỏ lượt. Không được tự sát, và không được cướp lại ngay (ko). Hai bên liên tiếp bỏ lượt thì ván kết thúc.",
+    "lib.game.illegal": "Nước đi không hợp lệ (tự sát hoặc cướp lại ngay).",
+    "lib.game.aiPassed": "Máy bỏ lượt. Nếu bạn cũng bỏ lượt, ván kết thúc và chấm điểm.",
+    "lib.game.start": "Bắt đầu",
+    "lib.game.lives": "Mạng",
+    "lib.game.mmAsk": "Ô nào có hình này?",
+    "lib.game.mmReady": "Sẵn sàng?",
+    "lib.game.mmMemorize": "Ghi nhớ — còn {s} giây",
+    "lib.game.mmQuestion": "Câu {i}/{n}",
+    "lib.game.mmDone": "Hoàn thành!",
+    "lib.game.mmLost": "Hết mạng — các ô đã mở ra để bạn xem.",
+    "lib.game.mmNote": "Bấm Bắt đầu: các ô lộ ra trong {s} giây rồi úp lại. Hãy nhớ hình và màu của từng ô. Sau đó chọn đúng ô theo hình mẫu hiện ra. Sai quá {l} lần là thua cấp."
   },
   "pages": {
     "home": {
@@ -252,7 +306,7 @@
     },
     "entertainment": {
       "name": "Game giải trí",
-      "desc": "Vòng quay may mắn, quay số ngẫu nhiên, bốc thăm và các trò chơi giải trí vui."
+      "desc": "Vòng quay may mắn, quay số ngẫu nhiên, bốc thăm và các trò chơi trí tuệ: Sudoku, cờ vua, cờ tướng, cờ vây, ghi nhớ hình."
     }
   },
   "tools": {
@@ -911,6 +965,30 @@
     "excel-formula-merge": {
       "name": "Trộn dữ liệu Excel theo công thức",
       "desc": "Tổng hợp nhiều sheet hoặc nhiều file Excel bằng công thức cho từng ô: SUM, COUNT, IF, CONCAT, UNIQUE, lồng hàm, lưu công thức theo chuyên đề."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Chơi Sudoku 9x9 online với 10 cấp từ dễ đến khó, có ghi chú, gợi ý và kiểm tra lỗi."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku cỡ lớn 16x16 dùng số 1-9 và chữ A-G, 10 cấp từ dễ đến khó, có ghi chú và gợi ý."
+    },
+    "chess": {
+      "name": "Cờ vua với máy",
+      "desc": "Chơi cờ vua với máy qua 10 cấp từ dễ đến khó, đủ luật nhập thành, bắt tốt qua đường và phong cấp."
+    },
+    "xiangqi": {
+      "name": "Cờ tướng với máy",
+      "desc": "Chơi cờ tướng với máy qua 10 cấp từ dễ đến khó, đủ luật chân mã, cản tượng, pháo ăn và hai tướng không đối mặt."
+    },
+    "go-game": {
+      "name": "Cờ vây với máy",
+      "desc": "Chơi cờ vây với máy trên bàn 5x5, 7x7 và 9x9 qua 10 cấp từ dễ đến khó, tự chấm điểm khi kết thúc."
+    },
+    "memory-shapes": {
+      "name": "Ghi nhớ hình và màu",
+      "desc": "Các ô hình và màu lộ ra 5 giây rồi úp lại; nhớ và chọn đúng ô theo hình mẫu, 10 cấp từ dễ đến khó."
     }
   },
   "s": {

@@ -37,7 +37,7 @@ export const GROUPS: ToolGroup[] = [
   { id: 'device', name: 'Kiểm tra thiết bị', description: 'Thử webcam, quay màn hình, đo tốc độ gõ phím và tốc độ click chuột.' },
   { id: 'media', name: 'Âm thanh & video', description: 'Nén video, tách nhạc MP3 và lên dây đàn guitar ngay trên trình duyệt.' },
   { id: 'dev', name: 'Công cụ tin học', description: 'Định dạng, kiểm lỗi, mã hoá và chuyển đổi mã nguồn.' },
-  { id: 'entertainment', name: 'Game giải trí', description: 'Vòng quay may mắn, quay số ngẫu nhiên, bốc thăm và các trò chơi giải trí vui.' },
+  { id: 'entertainment', name: 'Game giải trí', description: 'Vòng quay may mắn, quay số ngẫu nhiên, bốc thăm và các trò chơi trí tuệ: Sudoku, cờ vua, cờ tướng, cờ vây, ghi nhớ hình.' },
 ];
 
 const tool = (id: string, group: string, name: string, description: string, iconSample?: string): ToolInfo => ({
@@ -135,6 +135,12 @@ export const TOOLS: ToolInfo[] = [
   tool('due-date', 'health', 'Tính ngày dự sinh', 'Tính ngày dự sinh và tuổi thai theo kỳ kinh cuối, ngày thụ thai hoặc siêu âm; xem các mốc khám thai quan trọng.'),
   tool('spin-wheel', 'entertainment', 'Vòng quay may mắn', 'Tạo vòng quay với tên, phần thưởng tuỳ ý; quay ngẫu nhiên công bằng, loại người đã trúng, toàn màn hình.'),
   tool('random-number', 'entertainment', 'Quay số ngẫu nhiên', 'Tạo số ngẫu nhiên trong khoảng tuỳ chọn, nhiều số cùng lúc, không trùng lặp; dùng cho bốc thăm, xổ số vui.'),
+  tool('sudoku-9x9', 'entertainment', 'Sudoku 9x9', 'Chơi Sudoku 9x9 online với 10 cấp từ dễ đến khó, có ghi chú, gợi ý và kiểm tra lỗi.'),
+  tool('sudoku-16x16', 'entertainment', 'Sudoku 16x16', 'Sudoku cỡ lớn 16x16 dùng số 1-9 và chữ A-G, 10 cấp từ dễ đến khó, có ghi chú và gợi ý.'),
+  tool('chess', 'entertainment', 'Cờ vua với máy', 'Chơi cờ vua với máy qua 10 cấp từ dễ đến khó, đủ luật nhập thành, bắt tốt qua đường và phong cấp.'),
+  tool('xiangqi', 'entertainment', 'Cờ tướng với máy', 'Chơi cờ tướng với máy qua 10 cấp từ dễ đến khó, đủ luật chân mã, cản tượng, pháo ăn và hai tướng không đối mặt.'),
+  tool('go-game', 'entertainment', 'Cờ vây với máy', 'Chơi cờ vây với máy trên bàn 5x5, 7x7 và 9x9 qua 10 cấp từ dễ đến khó, tự chấm điểm khi kết thúc.'),
+  tool('memory-shapes', 'entertainment', 'Ghi nhớ hình và màu', 'Các ô hình và màu lộ ra 5 giây rồi úp lại; nhớ và chọn đúng ô theo hình mẫu, 10 cấp từ dễ đến khó.'),
   tool('typing-test', 'device', 'Kiểm tra tốc độ gõ phím', 'Đo tốc độ gõ (từ/phút) và độ chính xác trong 30 giây đến 5 phút, có bài tiếng Việt và tiếng Anh.'),
   tool('cps-test', 'device', 'Đo tốc độ click chuột (CPS)', 'Đếm số lần click mỗi giây trong 1 đến 60 giây, lưu kỷ lục, thử cả phím cách và chạm màn hình.'),
   tool('webcam-test', 'device', 'Kiểm tra webcam', 'Kiểm tra camera có hoạt động không, xem độ phân giải, khung hình/giây, chọn camera, chụp ảnh thử.'),
