@@ -178,7 +178,61 @@
     "lib.excel.missing": "Trūksta",
     "lib.excel.duplicate": "Dublikatas",
     "lib.excel.valid": "Tinka",
-    "lib.excel.invalid": "Netinka"
+    "lib.excel.invalid": "Netinka",
+    "lib.game.levels": "Lygis",
+    "lib.game.level": "{n} lygis",
+    "lib.game.unlockAll": "Atrakinti visus lygius",
+    "lib.game.newGame": "Naujas žaidimas",
+    "lib.game.retry": "Žaisti dar kartą",
+    "lib.game.nextLevel": "Kitas lygis",
+    "lib.game.win": "Įveikėte {n} lygį!",
+    "lib.game.lose": "{n} lygis neįveiktas. Bandykite dar kartą.",
+    "lib.game.draw": "Lygiosios — {n} lygis neįveiktas.",
+    "lib.game.allDone": "Sveikiname! Įveikėte visus 10 lygių.",
+    "lib.game.time": "Laikas",
+    "lib.game.hint": "Užuomina",
+    "lib.game.erase": "Trinti",
+    "lib.game.check": "Tikrinti",
+    "lib.game.notes": "Pastabos",
+    "lib.game.generating": "Kuriama dėlionė…",
+    "lib.game.sudokuKeys": "Rodyklėmis judate, skaičių klavišais pildote (16x16: A-G reiškia 10-16), Backspace trina, N įjungia/išjungia pastabas.",
+    "lib.game.sudokuLeft": "Liko {n} langelių",
+    "lib.game.sudokuConflict": "Visi langeliai užpildyti, bet kai kurie skaičiai kartojasi. Patikrinkite dar kartą.",
+    "lib.game.sudokuWrong": "{n} klaidingi langeliai (pažymėti raudonai).",
+    "lib.game.sudokuAllRight": "Klaidingų langelių nerasta.",
+    "lib.game.thinking": "Kompiuteris galvoja…",
+    "lib.game.yourTurn": "Jūsų ėjimas",
+    "lib.game.undo": "Atšaukti",
+    "lib.game.resign": "Pasiduoti",
+    "lib.game.resigned": "Pasidavėte.",
+    "lib.game.chessCheck": "Šachas!",
+    "lib.game.chessMateWin": "Matas! Jūs laimėjote.",
+    "lib.game.chessMateLose": "Jums matas.",
+    "lib.game.chessDraw": "Partija baigėsi lygiosiomis.",
+    "lib.game.chessNote": "Žaidžiate baltaisiais ir einate pirmi. Spustelėkite savo figūrą, tada langelį, į kurį norite eiti. Pėstininkas, pasiekęs paskutinę eilę, tampa valdove. Laimėkite sumatydami juoduosius.",
+    "lib.game.xiangqi": "Xiangqi lenta",
+    "lib.game.xqCheck": "Šachas!",
+    "lib.game.xqMateWin": "Matas! Jūs laimėjote.",
+    "lib.game.xqMateLose": "Jums matas.",
+    "lib.game.xqStaleWin": "Juodieji neturi leistinų ėjimų — jūs laimėjote.",
+    "lib.game.xqStaleLose": "Neturite leistinų ėjimų — pralaimėjote.",
+    "lib.game.xqNote": "Žaidžiate raudonaisiais (apačioje) ir einate pirmi. Spustelėkite savo figūrą, tada tašką, į kurį norite eiti. Du generolai negali žiūrėti vienas į kitą; matas arba leistinų ėjimų nebuvimas reiškia pralaimėjimą.",
+    "lib.game.pass": "Praleisti",
+    "lib.game.goBoard": "Go lenta",
+    "lib.game.goCaps": "Paimta — juodieji: {b} · baltieji: {w}",
+    "lib.game.goScore": "Rezultatas — juodieji: {b}, baltieji: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} lenta. Žaidžiate juodaisiais ir einate pirmi. Skaičiuojama pagal plotą (akmenys + visiškai apsupti tušti taškai); baltieji gauna {k} komi. Prieš praleisdami ėjimą paimkite visus negyvus priešininko akmenis. Savižudybė ir tuojautinis atsiėmimas (ko) draudžiami. Žaidimas baigiasi, kai abu žaidėjai praleidžia ėjimą iš eilės.",
+    "lib.game.illegal": "Neleistinas ėjimas (savižudybė arba tuojautinis atsiėmimas).",
+    "lib.game.aiPassed": "Kompiuteris praleido ėjimą. Jei praleisite ir jūs, žaidimas baigsis ir bus skaičiuojami taškai.",
+    "lib.game.start": "Pradėti",
+    "lib.game.lives": "Gyvybės",
+    "lib.game.mmAsk": "Kuri plytelė turėjo šią formą?",
+    "lib.game.mmReady": "Pasiruošę?",
+    "lib.game.mmMemorize": "Įsiminkite — liko {s} s",
+    "lib.game.mmQuestion": "Klausimas {i}/{n}",
+    "lib.game.mmDone": "Baigta!",
+    "lib.game.mmLost": "Gyvybės baigėsi — dabar rodomos visos plytelės.",
+    "lib.game.mmNote": "Paspauskite Pradėti: plytelės rodomos {s} sek., paskui paslepiamos. Įsiminkite kiekvienos plytelės formą ir spalvą, tada pasirinkite plytelę, atitinkančią parodytą formą. Daugiau nei {l} klaidų — lygis neįveiktas."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel duomenų derinimas su formulėmis",
       "desc": "Derinkite kelis lapus ar Excel failus naudodami formulę kiekvienam langeliui (SUM, IF, CONCAT, UNIQUE...), įdėtąsias funkcijas ir išsaugotas formules, kurias galite naudoti pakartotinai."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Žaiskite 9x9 sudoku internete 10 lygių nuo lengvo iki sunkaus, su pastabomis, užuominomis ir klaidų tikrinimu."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Didelis 16x16 sudoku su 1-9 ir A-G, 10 lygių nuo lengvo iki sunkaus, su pastabomis ir užuominomis."
+    },
+    "chess": {
+      "name": "Šachmatai prieš kompiuterį",
+      "desc": "Žaiskite šachmatais prieš kompiuterį 10 lygių nuo lengvo iki sunkaus, su rokiruote, paėmimu praeinant ir pėstininko pakeitimu."
+    },
+    "xiangqi": {
+      "name": "Xiangqi prieš kompiuterį",
+      "desc": "Žaiskite kinišku šachmatu (xiangqi) prieš kompiuterį 10 lygių, su žirgo kojos blokavimu, dramblio akimi, patrankos paėmimais ir susidūrusių generolų taisykle."
+    },
+    "go-game": {
+      "name": "Go prieš kompiuterį",
+      "desc": "Žaiskite Go prieš kompiuterį 5x5, 7x7 ir 9x9 lentose 10 lygių, su automatiniu taškų skaičiavimu pabaigoje."
+    },
+    "memory-shapes": {
+      "name": "Formų ir spalvų atmintis",
+      "desc": "Formų ir spalvų plytelės rodomos 5 sekundes, paskui paslepiamos; įsiminkite ir pasirinkite tinkamą plytelę, 10 lygių nuo lengvo iki sunkaus."
     }
   },
   "s": {

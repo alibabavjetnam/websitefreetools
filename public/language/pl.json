@@ -178,7 +178,61 @@
     "lib.excel.missing": "Brak",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Poprawne",
-    "lib.excel.invalid": "Niepoprawne"
+    "lib.excel.invalid": "Niepoprawne",
+    "lib.game.levels": "Poziom",
+    "lib.game.level": "Poziom {n}",
+    "lib.game.unlockAll": "Odblokuj wszystkie poziomy",
+    "lib.game.newGame": "Nowa gra",
+    "lib.game.retry": "Zagraj ponownie",
+    "lib.game.nextLevel": "Następny poziom",
+    "lib.game.win": "Ukończyłeś poziom {n}!",
+    "lib.game.lose": "Poziom {n} nieukończony. Spróbuj ponownie.",
+    "lib.game.draw": "Remis — poziom {n} nieukończony.",
+    "lib.game.allDone": "Gratulacje! Ukończyłeś wszystkie 10 poziomów.",
+    "lib.game.time": "Czas",
+    "lib.game.hint": "Podpowiedź",
+    "lib.game.erase": "Wymaż",
+    "lib.game.check": "Sprawdź",
+    "lib.game.notes": "Notatki",
+    "lib.game.generating": "Generowanie łamigłówki…",
+    "lib.game.sudokuKeys": "Strzałki – ruch, klawisze cyfr – wpisywanie (16x16: A-G dla 10-16), Backspace – kasowanie, N – przełączanie notatek.",
+    "lib.game.sudokuLeft": "Pozostało pól: {n}",
+    "lib.game.sudokuConflict": "Wszystkie pola są wypełnione, ale niektóre liczby się powtarzają. Sprawdź jeszcze raz.",
+    "lib.game.sudokuWrong": "Błędne pola: {n} (zaznaczone na czerwono).",
+    "lib.game.sudokuAllRight": "Nie znaleziono błędnych pól.",
+    "lib.game.thinking": "Komputer myśli…",
+    "lib.game.yourTurn": "Twój ruch",
+    "lib.game.undo": "Cofnij",
+    "lib.game.resign": "Poddaj się",
+    "lib.game.resigned": "Poddałeś się.",
+    "lib.game.chessCheck": "Szach!",
+    "lib.game.chessMateWin": "Szach-mat! Wygrywasz.",
+    "lib.game.chessMateLose": "Dostałeś szach-mata.",
+    "lib.game.chessDraw": "Partia kończy się remisem.",
+    "lib.game.chessNote": "Grasz białymi i zaczynasz. Kliknij swoją figurę, a potem pole docelowe. Piony dochodzące do ostatniego rzędu promują się na hetmana. Wygrywasz, matując czarnego króla.",
+    "lib.game.xiangqi": "Plansza xiangqi",
+    "lib.game.xqCheck": "Szach!",
+    "lib.game.xqMateWin": "Szach-mat! Wygrywasz.",
+    "lib.game.xqMateLose": "Dostałeś szach-mata.",
+    "lib.game.xqStaleWin": "Czarne nie mają legalnego ruchu — wygrywasz.",
+    "lib.game.xqStaleLose": "Nie masz legalnego ruchu — przegrywasz.",
+    "lib.game.xqNote": "Grasz czerwonymi (na dole) i zaczynasz. Kliknij swoją figurę, a potem punkt docelowy. Dwaj generałowie nie mogą stać naprzeciw siebie; mat lub brak legalnego ruchu oznacza porażkę.",
+    "lib.game.pass": "Pas",
+    "lib.game.goBoard": "Plansza go",
+    "lib.game.goCaps": "Zbite — czarne: {b} · białe: {w}",
+    "lib.game.goScore": "Wynik — czarne: {b}, białe: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Plansza {n}×{n}. Grasz czarnymi i zaczynasz. Punktacja obszarowa (kamienie + w pełni otoczone puste punkty); białe dostają komi {k}. Zbij wszystkie martwe kamienie przeciwnika przed pasem. Samobójstwo i natychmiastowe odbicie (ko) są zabronione. Gra kończy się, gdy obaj gracze spasują pod rząd.",
+    "lib.game.illegal": "Niedozwolony ruch (samobójstwo lub natychmiastowe odbicie).",
+    "lib.game.aiPassed": "Komputer spasował. Jeśli ty też spasujesz, gra się skończy i zostanie podliczona.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Życia",
+    "lib.game.mmAsk": "Które pole miało ten kształt?",
+    "lib.game.mmReady": "Gotowy?",
+    "lib.game.mmMemorize": "Zapamiętaj — zostało {s} s",
+    "lib.game.mmQuestion": "Pytanie {i}/{n}",
+    "lib.game.mmDone": "Gotowe!",
+    "lib.game.mmLost": "Brak żyć — wszystkie pola zostały odkryte.",
+    "lib.game.mmNote": "Naciśnij Start: pola są pokazywane przez {s} s, a potem ukrywane. Zapamiętaj kształt i kolor każdego pola, a potem wybierz pole pasujące do pokazanego kształtu. Więcej niż {l} błędów kończy poziom porażką."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Łączenie danych Excela za pomocą formuł",
       "desc": "Łączy wiele arkuszy lub plików Excel formułą w każdej komórce (SUM, IF, CONCAT, UNIQUE...), z funkcjami zagnieżdżonymi i zapisanymi formułami do ponownego użycia."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Graj online w sudoku 9x9 na 10 poziomach od łatwego do trudnego, z notatkami, podpowiedziami i sprawdzaniem błędów."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Duże sudoku 16x16 z cyframi 1-9 i literami A-G, 10 poziomów od łatwego do trudnego, z notatkami i podpowiedziami."
+    },
+    "chess": {
+      "name": "Szachy z komputerem",
+      "desc": "Graj w szachy z komputerem na 10 poziomach od łatwego do trudnego, z roszadą, biciem w przelocie i promocją."
+    },
+    "xiangqi": {
+      "name": "Xiangqi z komputerem",
+      "desc": "Graj w szachy chińskie (xiangqi) z komputerem na 10 poziomach, z blokadą nogi konia, okiem słonia, biciem armaty i zasadą latającego generała."
+    },
+    "go-game": {
+      "name": "Go z komputerem",
+      "desc": "Graj w go z komputerem na planszach 5x5, 7x7 i 9x9 na 10 poziomach, z automatycznym liczeniem punktów na koniec."
+    },
+    "memory-shapes": {
+      "name": "Pamięć kształtów i kolorów",
+      "desc": "Pola z kształtami i kolorami są pokazywane przez 5 sekund, a potem ukrywane; zapamiętaj i wybierz właściwe pole, 10 poziomów od łatwego do trudnego."
     }
   },
   "s": {

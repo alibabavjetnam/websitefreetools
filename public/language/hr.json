@@ -178,7 +178,61 @@
     "lib.excel.missing": "Nedostaje",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Ispravno",
-    "lib.excel.invalid": "Neispravno"
+    "lib.excel.invalid": "Neispravno",
+    "lib.game.levels": "Razina",
+    "lib.game.level": "Razina {n}",
+    "lib.game.unlockAll": "Otključaj sve razine",
+    "lib.game.newGame": "Nova igra",
+    "lib.game.retry": "Igraj ponovno",
+    "lib.game.nextLevel": "Sljedeća razina",
+    "lib.game.win": "Prešli ste razinu {n}!",
+    "lib.game.lose": "Razina {n} nije prijeđena. Pokušajte ponovno.",
+    "lib.game.draw": "Remi — razina {n} nije prijeđena.",
+    "lib.game.allDone": "Čestitamo! Prešli ste svih 10 razina.",
+    "lib.game.time": "Vrijeme",
+    "lib.game.hint": "Savjet",
+    "lib.game.erase": "Obriši",
+    "lib.game.check": "Provjeri",
+    "lib.game.notes": "Bilješke",
+    "lib.game.generating": "Izrada zagonetke…",
+    "lib.game.sudokuKeys": "Strelice za kretanje, tipke s brojevima za unos (16x16: A-G za 10-16), Backspace za brisanje, N za uključivanje bilješki.",
+    "lib.game.sudokuLeft": "Preostalo polja: {n}",
+    "lib.game.sudokuConflict": "Sva su polja popunjena, ali se neki brojevi ponavljaju. Provjerite ponovno.",
+    "lib.game.sudokuWrong": "Pogrešnih polja: {n} (označena crveno).",
+    "lib.game.sudokuAllRight": "Nema pogrešnih polja.",
+    "lib.game.thinking": "Računalo razmišlja…",
+    "lib.game.yourTurn": "Vi ste na potezu",
+    "lib.game.undo": "Poništi",
+    "lib.game.resign": "Predaj se",
+    "lib.game.resigned": "Predali ste se.",
+    "lib.game.chessCheck": "Šah!",
+    "lib.game.chessMateWin": "Šah-mat! Pobijedili ste.",
+    "lib.game.chessMateLose": "Dobili ste šah-mat.",
+    "lib.game.chessDraw": "Partija je neriješena.",
+    "lib.game.chessNote": "Igrate bijelima i prvi ste na potezu. Kliknite svoju figuru, a zatim polje na koje se želite pomaknuti. Pješaci koji stignu do posljednjeg reda promoviraju se u damu. Pobjeđujete matiranjem crnog.",
+    "lib.game.xiangqi": "Xiangqi ploča",
+    "lib.game.xqCheck": "Šah!",
+    "lib.game.xqMateWin": "Šah-mat! Pobijedili ste.",
+    "lib.game.xqMateLose": "Dobili ste šah-mat.",
+    "lib.game.xqStaleWin": "Crni nema dopuštenih poteza — pobijedili ste.",
+    "lib.game.xqStaleLose": "Nemate dopuštenih poteza — izgubili ste.",
+    "lib.game.xqNote": "Igrate crvenima (dolje) i prvi ste na potezu. Kliknite svoju figuru, a zatim točku na koju se želite pomaknuti. Dva generala ne smiju stajati licem u lice; mat ili nepostojanje dopuštenog poteza znači poraz.",
+    "lib.game.pass": "Pas",
+    "lib.game.goBoard": "Go ploča",
+    "lib.game.goCaps": "Zarobljeno — crni: {b} · bijeli: {w}",
+    "lib.game.goScore": "Rezultat — crni: {b}, bijeli: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Ploča {n}×{n}. Igrate crnima i prvi ste na potezu. Bodovanje je po površini (kamenovi + potpuno okružene prazne točke); bijeli dobiva komi {k}. Zarobite sve mrtve kamenove protivnika prije pasa. Samoubojstvo i trenutačno uzvraćanje (ko) nisu dopušteni. Igra završava kad oba igrača uzastopno spasuju.",
+    "lib.game.illegal": "Nedopušten potez (samoubojstvo ili trenutačno uzvraćanje).",
+    "lib.game.aiPassed": "Računalo je spasovalo. Ako i vi spasujete, igra završava i boduje se.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Životi",
+    "lib.game.mmAsk": "Koja je pločica imala ovaj oblik?",
+    "lib.game.mmReady": "Spremni?",
+    "lib.game.mmMemorize": "Zapamtite — preostalo {s} s",
+    "lib.game.mmQuestion": "Pitanje {i}/{n}",
+    "lib.game.mmDone": "Gotovo!",
+    "lib.game.mmLost": "Nema više života — sve su pločice sada otkrivene.",
+    "lib.game.mmNote": "Pritisnite Start: pločice se prikazuju {s} sekundi, a zatim se skrivaju. Zapamtite oblik i boju svake pločice, a zatim odaberite onu koja odgovara prikazanom obliku. Više od {l} pogrešaka znači da razina nije prijeđena."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Kombiniranje Excel podataka pomoću formula",
       "desc": "Kombinirajte mnogo listova ili Excel datoteka s jednom formulom po ćeliji (SUM, IF, CONCAT, UNIQUE...), ugniježđenim funkcijama i spremljenim formulama koje možete ponovno koristiti."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Igrajte sudoku 9x9 na mreži kroz 10 razina od lakog do teškog, s bilješkama, savjetima i provjerom pogrešaka."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Veliki sudoku 16x16 s 1-9 i A-G, 10 razina od lakog do teškog, s bilješkama i savjetima."
+    },
+    "chess": {
+      "name": "Šah protiv računala",
+      "desc": "Igrajte šah protiv računala kroz 10 razina od lakog do teškog, s rokadom, en passantom i promaknućem."
+    },
+    "xiangqi": {
+      "name": "Xiangqi protiv računala",
+      "desc": "Igrajte kineski šah (xiangqi) protiv računala kroz 10 razina, s blokadom konjske noge, slonovim okom, topovskim hvatanjem i pravilom generala."
+    },
+    "go-game": {
+      "name": "Go protiv računala",
+      "desc": "Igrajte go protiv računala na pločama 5x5, 7x7 i 9x9 kroz 10 razina, s automatskim bodovanjem na kraju."
+    },
+    "memory-shapes": {
+      "name": "Pamćenje oblika i boja",
+      "desc": "Pločice s oblicima i bojama prikazuju se 5 sekundi, a zatim skrivaju; zapamtite i odaberite pravu pločicu, 10 razina od lakog do teškog."
     }
   },
   "s": {

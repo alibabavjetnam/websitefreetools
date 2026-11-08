@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ilahlekile",
     "lib.excel.duplicate": "Iphindiwe",
     "lib.excel.valid": "Isebenza",
-    "lib.excel.invalid": "Ayisebenzi"
+    "lib.excel.invalid": "Ayisebenzi",
+    "lib.game.levels": "Inqanaba",
+    "lib.game.level": "Inqanaba {n}",
+    "lib.game.unlockAll": "Vula onke amanqanaba",
+    "lib.game.newGame": "Umdlalo omtsha",
+    "lib.game.retry": "Dlala kwakhona",
+    "lib.game.nextLevel": "Inqanaba elilandelayo",
+    "lib.game.win": "Uwugqibile umgangatho {n}!",
+    "lib.game.lose": "Inqanaba {n} aligqitywanga. Zama kwakhona.",
+    "lib.game.draw": "Ukulingana — inqanaba {n} aligqitywanga.",
+    "lib.game.allDone": "Halala! Ugqibe onke amanqanaba ali-10.",
+    "lib.game.time": "Ixesha",
+    "lib.game.hint": "Isalathiso",
+    "lib.game.erase": "Cima",
+    "lib.game.check": "Khangela",
+    "lib.game.notes": "Amanqaku",
+    "lib.game.generating": "Kwenziwa ipuzulu…",
+    "lib.game.sudokuKeys": "Utolo ukuhamba, amanani ukuzalisa (16x16: A-G ye-10-16), Backspace ukucima, N ukutshintsha amanqaku.",
+    "lib.game.sudokuLeft": "Kusele iibhokisi ezi-{n}",
+    "lib.game.sudokuConflict": "Zonke iibhokisi zizaliswe kodwa amanye amanani aphindaphindiwe. Nceda ukhangele kwakhona.",
+    "lib.game.sudokuWrong": "Iibhokisi ezi-{n} ezingalunganga (zikhonjiswe ngebala elibomvu).",
+    "lib.game.sudokuAllRight": "Akukho bhokisi ingalunganga efunyenweyo.",
+    "lib.game.thinking": "Ikhompyutha iyacinga…",
+    "lib.game.yourTurn": "Ithuba lakho",
+    "lib.game.undo": "Hlengahlengisa",
+    "lib.game.resign": "Yeka",
+    "lib.game.resigned": "Uyekile.",
+    "lib.game.chessCheck": "Itshekhi!",
+    "lib.game.chessMateWin": "Itshekhimeyithi! Uphumelele.",
+    "lib.game.chessMateLose": "Utshekhimeyithiwe.",
+    "lib.game.chessDraw": "Umdlalo ugqityelwe ekulinganeni.",
+    "lib.game.chessNote": "Udlala ngabamhlophe kwaye uqala. Cofa isiqwenga sakho emva koko isikwere ofuna ukuya kuso. Ipawn efikelela kumqolo wokugqibela iba yikumkanikazi. Phumelela ngokutshekhimeyitha abamnyama.",
+    "lib.game.xiangqi": "Ibhodi ye-xiangqi",
+    "lib.game.xqCheck": "Itshekhi!",
+    "lib.game.xqMateWin": "Itshekhimeyithi! Uphumelele.",
+    "lib.game.xqMateLose": "Utshekhimeyithiwe.",
+    "lib.game.xqStaleWin": "Abamnyama abanamanyathelo avumelekileyo — uphumelele.",
+    "lib.game.xqStaleLose": "Awunamanyathelo avumelekileyo — uphulukene.",
+    "lib.game.xqNote": "Udlala ngabaBomvu (ezantsi) kwaye uqala. Cofa isiqwenga sakho emva koko indawo ofuna ukuya kuyo. Amajenelali amabini akavumelekanga ukujongana; ophulukene nguye otshekhimeyithiweyo okanye ongenamanyathelo avumelekileyo.",
+    "lib.game.pass": "Dlulisa",
+    "lib.game.goBoard": "Ibhodi ye-Go",
+    "lib.game.goCaps": "Ezibanjiweyo — Abamnyama: {b} · Abamhlophe: {w}",
+    "lib.game.goScore": "Amanqaku — Abamnyama: {b}, Abamhlophe: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Ibhodi ye-{n}×{n}. Udlala ngabamnyama kwaye uqala. Amanqaku abalwa ngommandla (amatye + iindawo ezingenanto ezijikelezwe ngokupheleleyo); abamhlophe bafumana ikomi {k}. Bamba onke amatye afileyo omchasi phambi kokudlulisa. Ukuzibulala nokubamba kwakhona ngoko nangoko (ko) akuvumelekanga. Umdlalo uyaphela xa bobabini abadlali bedlulisa ngokulandelelana.",
+    "lib.game.illegal": "Inyathelo elingavumelekanga (ukuzibulala okanye ukubamba kwakhona ngoko nangoko).",
+    "lib.game.aiPassed": "Ikhompyutha idlulisile. Ukuba nawe udlulisa, umdlalo uyaphela kwaye amanqaku ayabalwa.",
+    "lib.game.start": "Qala",
+    "lib.game.lives": "Ubomi",
+    "lib.game.mmAsk": "Yeyiphi itayile eyayinalo mbumbo?",
+    "lib.game.mmReady": "Ukulungele?",
+    "lib.game.mmMemorize": "Khumbula — kusele i-{s} s",
+    "lib.game.mmQuestion": "Umbuzo {i}/{n}",
+    "lib.game.mmDone": "Kugqityiwe!",
+    "lib.game.mmLost": "Ubomi buphelile — zonke iitayile ziveziwe ngoku.",
+    "lib.game.mmNote": "Cinezela Qala: iitayile zibonakaliswa imizuzwana eyi-{s}, emva koko zifihlwe. Khumbula umbumbo nebala letayile nganye, emva koko khetha itayile edibana nombumbo obonisiweyo. Iimpazamo ezingaphezu kwe-{l} zenza ukuba inqanaba lingagqitywa."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Dibanisa iDatha yeExcel ngeeFomyula",
       "desc": "Dibanisa amashiti okanye iifayile zeExcel ezininzi ngefomyula kwiseli nganye (SUM, IF, CONCAT, UNIQUE...), imisebenzi engaphakathi komnye, neefomyula ezigciniweyo onokuzisebenzisa kwakhona."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Dlala i-Sudoku 9x9 kwi-intanethi kumanqanaba ali-10 ukusuka kokulula ukuya kokunzima, ngamanqaku, izalathiso nokukhangela iimpazamo."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "I-Sudoku enkulu 16x16 esebenzisa i-1-9 ne-A-G, amanqanaba ali-10 ukusuka kokulula ukuya kokunzima, ngamanqaku nezalathiso."
+    },
+    "chess": {
+      "name": "Chess vs Ikhompyutha",
+      "desc": "Dlala i-chess ngokuchasene nekhompyutha kumanqanaba ali-10 ukusuka kokulula ukuya kokunzima, nge-castling, en passant nokunyuselwa."
+    },
+    "xiangqi": {
+      "name": "Xiangqi vs Ikhompyutha",
+      "desc": "Dlala i-chess yaseTshayina (xiangqi) ngokuchasene nekhompyutha kumanqanaba ali-10, ngokuvalwa komlenze wehashe, iliso lendlovu, ukubamba ngecannon nomthetho wamajenelali ajongana."
+    },
+    "go-game": {
+      "name": "Go vs Ikhompyutha",
+      "desc": "Dlala i-Go ngokuchasene nekhompyutha kumabhodi e-5x5, 7x7 ne-9x9 kumanqanaba ali-10, ngokubala amanqaku ngokuzenzekelayo ekugqibeleni."
+    },
+    "memory-shapes": {
+      "name": "Inkumbulo yoMbumbo noMbala",
+      "desc": "Iitayile ezinemibumbo neebala zibonakaliswa imizuzwana emi-5, emva koko zifihlwe; khumbula ukhethe itayile echanekileyo, amanqanaba ali-10 ukusuka kokulula ukuya kokunzima."
     }
   },
   "s": {

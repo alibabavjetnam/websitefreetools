@@ -178,7 +178,61 @@
     "lib.excel.missing": "Mangler",
     "lib.excel.duplicate": "Dublet",
     "lib.excel.valid": "Gyldig",
-    "lib.excel.invalid": "Ugyldig"
+    "lib.excel.invalid": "Ugyldig",
+    "lib.game.levels": "Niveau",
+    "lib.game.level": "Niveau {n}",
+    "lib.game.unlockAll": "Lås alle niveauer op",
+    "lib.game.newGame": "Nyt spil",
+    "lib.game.retry": "Spil igen",
+    "lib.game.nextLevel": "Næste niveau",
+    "lib.game.win": "Du klarede niveau {n}!",
+    "lib.game.lose": "Niveau {n} er ikke klaret. Prøv igen.",
+    "lib.game.draw": "Uafgjort — niveau {n} er ikke klaret.",
+    "lib.game.allDone": "Tillykke! Du har klaret alle 10 niveauer.",
+    "lib.game.time": "Tid",
+    "lib.game.hint": "Hint",
+    "lib.game.erase": "Slet",
+    "lib.game.check": "Tjek",
+    "lib.game.notes": "Noter",
+    "lib.game.generating": "Genererer opgave…",
+    "lib.game.sudokuKeys": "Piletaster for at flytte, taltaster for at udfylde (16x16: A-G for 10-16), Backspace for at slette, N for at skifte noter.",
+    "lib.game.sudokuLeft": "{n} felter tilbage",
+    "lib.game.sudokuConflict": "Alle felter er udfyldt, men nogle tal går igen. Tjek igen.",
+    "lib.game.sudokuWrong": "{n} forkerte felter (markeret med rødt).",
+    "lib.game.sudokuAllRight": "Ingen forkerte felter fundet.",
+    "lib.game.thinking": "Computeren tænker…",
+    "lib.game.yourTurn": "Din tur",
+    "lib.game.undo": "Fortryd",
+    "lib.game.resign": "Giv op",
+    "lib.game.resigned": "Du gav op.",
+    "lib.game.chessCheck": "Skak!",
+    "lib.game.chessMateWin": "Skakmat! Du vinder.",
+    "lib.game.chessMateLose": "Du er sat skakmat.",
+    "lib.game.chessDraw": "Partiet er uafgjort.",
+    "lib.game.chessNote": "Du spiller hvid og trækker først. Klik på din brik og derefter på feltet, den skal flytte til. Bønder, der når sidste række, forvandles til dronning. Vind ved at sætte sort skakmat.",
+    "lib.game.xiangqi": "Xiangqi-bræt",
+    "lib.game.xqCheck": "Skak!",
+    "lib.game.xqMateWin": "Skakmat! Du vinder.",
+    "lib.game.xqMateLose": "Du er sat skakmat.",
+    "lib.game.xqStaleWin": "Sort har ingen lovlige træk — du vinder.",
+    "lib.game.xqStaleLose": "Du har ingen lovlige træk — du taber.",
+    "lib.game.xqNote": "Du spiller rød (nederst) og trækker først. Klik på din brik og derefter på punktet, den skal flytte til. De to generaler må ikke stå ansigt til ansigt; du taber, hvis du sættes skakmat eller ikke har lovlige træk.",
+    "lib.game.pass": "Pas",
+    "lib.game.goBoard": "Go-bræt",
+    "lib.game.goCaps": "Fanget — Sort: {b} · Hvid: {w}",
+    "lib.game.goScore": "Point — Sort: {b}, Hvid: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-bræt. Du spiller sort og trækker først. Der tælles efter areal (sten + helt omsluttede tomme punkter); hvid får {k} i komi. Fang alle modstanderens døde sten, før du passer. Selvmord og øjeblikkelig generobring (ko) er ikke tilladt. Spillet slutter, når begge spillere passer efter hinanden.",
+    "lib.game.illegal": "Ulovligt træk (selvmord eller øjeblikkelig generobring).",
+    "lib.game.aiPassed": "Computeren passede. Hvis du også passer, slutter spillet, og der tælles point.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Liv",
+    "lib.game.mmAsk": "Hvilken brik havde denne form?",
+    "lib.game.mmReady": "Klar?",
+    "lib.game.mmMemorize": "Husk — {s} s tilbage",
+    "lib.game.mmQuestion": "Spørgsmål {i}/{n}",
+    "lib.game.mmDone": "Færdig!",
+    "lib.game.mmLost": "Ingen liv tilbage — alle brikker vises nu.",
+    "lib.game.mmNote": "Tryk på Start: Brikkerne vises i {s} sekunder og skjules derefter. Husk form og farve på hver brik, og vælg derefter den brik, der passer til den viste form. Mere end {l} fejl betyder, at niveauet ikke er klaret."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Kombiner Excel-data med formler",
       "desc": "Kombiner mange ark eller Excel-filer med en formel pr. celle (SUM, IF, CONCAT, UNIQUE...), indlejrede funktioner og gemte formler, du kan genbruge."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Spil 9x9 sudoku online på 10 niveauer fra let til svær, med noter, hints og fejltjek."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Stor 16x16 sudoku med 1-9 og A-G, 10 niveauer fra let til svær, med noter og hints."
+    },
+    "chess": {
+      "name": "Skak mod computeren",
+      "desc": "Spil skak mod computeren på 10 niveauer fra let til svær, med rokade, en passant og forvandling."
+    },
+    "xiangqi": {
+      "name": "Xiangqi mod computeren",
+      "desc": "Spil kinesisk skak (xiangqi) mod computeren på 10 niveauer, med hestebenets blokering, elefantens øje, kanonslag og reglen om generalernes ansigt til ansigt."
+    },
+    "go-game": {
+      "name": "Go mod computeren",
+      "desc": "Spil Go mod computeren på 5x5-, 7x7- og 9x9-bræt på 10 niveauer, med automatisk pointtælling til sidst."
+    },
+    "memory-shapes": {
+      "name": "Hukommelse: form og farve",
+      "desc": "Brikker med former og farver vises i 5 sekunder og skjules derefter; husk og vælg den rigtige brik, 10 niveauer fra let til svær."
     }
   },
   "s": {

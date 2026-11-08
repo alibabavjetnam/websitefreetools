@@ -178,7 +178,61 @@
     "lib.excel.missing": "Haupo",
     "lib.excel.duplicate": "Chakapetwa",
     "lib.excel.valid": "Chakarurama",
-    "lib.excel.invalid": "Hachina kururama"
+    "lib.excel.invalid": "Hachina kururama",
+    "lib.game.levels": "Chikamu",
+    "lib.game.level": "Chikamu {n}",
+    "lib.game.unlockAll": "Vhura zvikamu zvose",
+    "lib.game.newGame": "Mutambo mutsva",
+    "lib.game.retry": "Tamba zvakare",
+    "lib.game.nextLevel": "Chikamu chinotevera",
+    "lib.game.win": "Wapedza chikamu {n}!",
+    "lib.game.lose": "Hausatiwapedza chikamu {n}. Edzazve.",
+    "lib.game.draw": "Zvakaenzana — chikamu {n} hachina kupera.",
+    "lib.game.allDone": "Mazvita! Wapedza zvikamu zvose gumi.",
+    "lib.game.time": "Nguva",
+    "lib.game.hint": "Mubatsiro",
+    "lib.game.erase": "Dzima",
+    "lib.game.check": "Tarisa",
+    "lib.game.notes": "Zvinyorwa",
+    "lib.game.generating": "Tiri kugadzira puzzle…",
+    "lib.game.sudokuKeys": "Tsvaga miseve kuti uende, mabhatani enhamba kuzadza (16x16: A-G ye10-16), Backspace kudzima, N kuvhura zvinyorwa.",
+    "lib.game.sudokuLeft": "Matanho asara: {n}",
+    "lib.game.sudokuConflict": "Matanho ose azadzwa asi dzimwe nhamba dzinodzokororwa. Tarisa zvakare.",
+    "lib.game.sudokuWrong": "Matanho akaipa {n} (akatsvukirwa).",
+    "lib.game.sudokuAllRight": "Hapana matanho akaipa akawanikwa.",
+    "lib.game.thinking": "Komputa iri kufunga…",
+    "lib.game.yourTurn": "Nguva yako",
+    "lib.game.undo": "Dzosera",
+    "lib.game.resign": "Ramba",
+    "lib.game.resigned": "Warambira.",
+    "lib.game.chessCheck": "Cheki!",
+    "lib.game.chessMateWin": "Chekimeti! Wakunda.",
+    "lib.game.chessMateLose": "Wakaitwa chekimeti.",
+    "lib.game.chessDraw": "Mutambo wapera wakaenzana.",
+    "lib.game.chessNote": "Unotamba chena uye unotanga. Dzvanya chimiti chako, wobva wadzvanya pakaenda. Mapawn anosvika mutsara wokupedzisira anova mambokadzi. Kunda nokuita chekimeti nhema.",
+    "lib.game.xiangqi": "Bhodhi reXiangqi",
+    "lib.game.xqCheck": "Cheki!",
+    "lib.game.xqMateWin": "Chekimeti! Wakunda.",
+    "lib.game.xqMateLose": "Wakaitwa chekimeti.",
+    "lib.game.xqStaleWin": "Nhema haina matanho akatenderwa — wakunda.",
+    "lib.game.xqStaleLose": "Hauna matanho akatenderwa — wakurwa.",
+    "lib.game.xqNote": "Unotamba tsvuku (pasi) uye unotanga. Dzvanya chimiti chako, wobva wadzvanya pointi yaunoenda. Majenari maviri haakwanisi kutarisana; chekimeti kana kusava nematanho akatenderwa kunokukurwisa.",
+    "lib.game.pass": "Pasa",
+    "lib.game.goBoard": "Bhodhi reGo",
+    "lib.game.goCaps": "Dzakabatwa — nhema: {b} · chena: {w}",
+    "lib.game.goScore": "Zvibodzwa — nhema: {b}, chena: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Bhodhi re{n}×{n}. Unotamba nhema uye unotanga. Zvibodzwa zvinoverengwa nenzvimbo (mabwe + mapoinzi isina chinhu akakomberedzwa zvizere); chena inowana komi {k}. Batai mabwe ose akafa omuvengi usati wapasa. Kuzvipondesa uye kudzoreredza nokukasira (ko) hazvitenderwi. Mutambo unopera kana vose vapasa vachiteverana.",
+    "lib.game.illegal": "Tanho risingatenderwi (kuzvipondesa kana kudzoreredza nokukasira).",
+    "lib.game.aiPassed": "Komputa yapasa. Kana newe ukapasa, mutambo unopera uye unoverengwa.",
+    "lib.game.start": "Tanga",
+    "lib.game.lives": "Hupenyu",
+    "lib.game.mmAsk": "Tile ipi yaiva nechimiro ichi?",
+    "lib.game.mmReady": "Wakagadzirira?",
+    "lib.game.mmMemorize": "Rangarira — masekonzi {s} asara",
+    "lib.game.mmQuestion": "Mubvunzo {i}/{n}",
+    "lib.game.mmDone": "Wapedza!",
+    "lib.game.mmLost": "Hupenyu hwapera — matile ose ave kuonekwa.",
+    "lib.game.mmNote": "Dzvanya Tanga: matile anoratidzwa kwemasekonzi {s}, ozvivigwa. Rangarira chimiro nemavara etile rimwe nerimwe, wobva wasarudza tile inofanana nechimiro chaunoratidzwa. Kukanganisa kupfuura {l} kunoita kuti chikamu chikundwe."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Batanidza Data yeExcel neMafomula",
       "desc": "Batanidza ma sheet kana mafaira eExcel akawanda nefomula pacell imwe neimwe (SUM, IF, CONCAT, UNIQUE...), mabasa ari mukati memamwe, uye mafomula akachengetwa aunogona kushandisazve."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Tamba Sudoku 9x9 paonline mu10 zvikamu kubva pakareruka kusvika pakaoma, une zvinyorwa, mibatsiro nokuongorora zvikanganiso."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku huru 16x16 inoshandisa 1-9 ne A-G, zvikamu 10 kubva pakareruka kusvika pakaoma, une zvinyorwa nemibatsiro."
+    },
+    "chess": {
+      "name": "Chess vs Komputa",
+      "desc": "Tamba chess nekomputa mu10 zvikamu kubva pakareruka kusvika pakaoma, une castling, en passant nokukwidziridza."
+    },
+    "xiangqi": {
+      "name": "Xiangqi vs Komputa",
+      "desc": "Tamba chess yeChina (xiangqi) nekomputa mu10 zvikamu, une kudzivirira gumbo rebhiza, ziso reninzi, kubata kwedasvingo nemutemo wejenari rinobhururuka."
+    },
+    "go-game": {
+      "name": "Go vs Komputa",
+      "desc": "Tamba Go nekomputa pamabhodhi e5x5, 7x7 ne9x9 mu10 zvikamu, une kuverenga zvibodzwa zvega pakupedzisira."
+    },
+    "memory-shapes": {
+      "name": "Ndangariro yeChimiro neMavara",
+      "desc": "Matile ane zvimiro nemavara anoratidzwa kwemasekonzi 5, ozvivigwa; rangarira usarudze tile chaiyo, zvikamu 10 kubva pakareruka kusvika pakaoma."
     }
   },
   "s": {

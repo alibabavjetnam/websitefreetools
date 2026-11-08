@@ -178,7 +178,61 @@
     "lib.excel.missing": "Falta",
     "lib.excel.duplicate": "Duplicat",
     "lib.excel.valid": "Vàlid",
-    "lib.excel.invalid": "No vàlid"
+    "lib.excel.invalid": "No vàlid",
+    "lib.game.levels": "Nivell",
+    "lib.game.level": "Nivell {n}",
+    "lib.game.unlockAll": "Desbloqueja tots els nivells",
+    "lib.game.newGame": "Partida nova",
+    "lib.game.retry": "Torna a jugar",
+    "lib.game.nextLevel": "Nivell següent",
+    "lib.game.win": "Has superat el nivell {n}!",
+    "lib.game.lose": "No has superat el nivell {n}. Torna-ho a provar.",
+    "lib.game.draw": "Taules — nivell {n} no superat.",
+    "lib.game.allDone": "Enhorabona! Has superat els 10 nivells.",
+    "lib.game.time": "Temps",
+    "lib.game.hint": "Pista",
+    "lib.game.erase": "Esborra",
+    "lib.game.check": "Comprova",
+    "lib.game.notes": "Notes",
+    "lib.game.generating": "Generant el trencaclosques…",
+    "lib.game.sudokuKeys": "Fletxes per moure's, tecles numèriques per omplir (16x16: A-G per a 10-16), Retrocés per esborrar, N per activar les notes.",
+    "lib.game.sudokuLeft": "Queden {n} caselles",
+    "lib.game.sudokuConflict": "Totes les caselles estan plenes, però alguns números es repeteixen. Torna-ho a comprovar.",
+    "lib.game.sudokuWrong": "{n} caselles incorrectes (marcades en vermell).",
+    "lib.game.sudokuAllRight": "No s'ha trobat cap casella incorrecta.",
+    "lib.game.thinking": "L'ordinador està pensant…",
+    "lib.game.yourTurn": "El teu torn",
+    "lib.game.undo": "Desfés",
+    "lib.game.resign": "Abandona",
+    "lib.game.resigned": "Has abandonat.",
+    "lib.game.chessCheck": "Escac!",
+    "lib.game.chessMateWin": "Escac i mat! Has guanyat.",
+    "lib.game.chessMateLose": "T'han fet escac i mat.",
+    "lib.game.chessDraw": "La partida acaba en taules.",
+    "lib.game.chessNote": "Jugues amb blanques i mous primer. Fes clic a la teva peça i després a la casella de destinació. Els peons que arriben a l'última fila es coronen com a dama. Guanyes fent escac i mat a les negres.",
+    "lib.game.xiangqi": "Tauler de xiangqi",
+    "lib.game.xqCheck": "Escac!",
+    "lib.game.xqMateWin": "Escac i mat! Has guanyat.",
+    "lib.game.xqMateLose": "T'han fet escac i mat.",
+    "lib.game.xqStaleWin": "Les negres no tenen moviments legals — has guanyat.",
+    "lib.game.xqStaleLose": "No tens moviments legals — has perdut.",
+    "lib.game.xqNote": "Jugues amb vermelles (a baix) i mous primer. Fes clic a la teva peça i després al punt de destinació. Els dos generals no poden quedar cara a cara; l'escac i mat o no tenir cap moviment legal fa perdre.",
+    "lib.game.pass": "Passa",
+    "lib.game.goBoard": "Tauler de go",
+    "lib.game.goCaps": "Capturades — negres: {b} · blanques: {w}",
+    "lib.game.goScore": "Puntuació — negres: {b}, blanques: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Tauler de {n}×{n}. Jugues amb negres i mous primer. La puntuació és per àrea (pedres + punts buits totalment envoltats); les blanques reben {k} de komi. Captura totes les pedres mortes de l'adversari abans de passar. No es permeten el suïcidi ni la recaptura immediata (ko). La partida acaba quan tots dos passen seguidament.",
+    "lib.game.illegal": "Moviment il·legal (suïcidi o recaptura immediata).",
+    "lib.game.aiPassed": "L'ordinador ha passat. Si tu també passes, la partida acaba i es puntua.",
+    "lib.game.start": "Comença",
+    "lib.game.lives": "Vides",
+    "lib.game.mmAsk": "Quina fitxa tenia aquesta forma?",
+    "lib.game.mmReady": "Preparat?",
+    "lib.game.mmMemorize": "Memoritza — queden {s} s",
+    "lib.game.mmQuestion": "Pregunta {i}/{n}",
+    "lib.game.mmDone": "Fet!",
+    "lib.game.mmLost": "Sense vides — ara es mostren totes les fitxes.",
+    "lib.game.mmNote": "Prem Comença: les fitxes es mostren durant {s} segons i després s'amaguen. Recorda la forma i el color de cada fitxa i tria la que coincideix amb la forma que es mostra. Més de {l} errors i el nivell no se supera."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combina dades d'Excel amb fórmules",
       "desc": "Combina molts fulls o fitxers Excel amb una fórmula per cel·la (SUM, IF, CONCAT, UNIQUE...), funcions imbricades i fórmules desades que pots reutilitzar."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Juga a sudoku 9x9 en línia amb 10 nivells de fàcil a difícil, amb notes, pistes i comprovació d'errors."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku gran de 16x16 amb 1-9 i A-G, 10 nivells de fàcil a difícil, amb notes i pistes."
+    },
+    "chess": {
+      "name": "Escacs contra l'ordinador",
+      "desc": "Juga als escacs contra l'ordinador amb 10 nivells de fàcil a difícil, amb enroc, captura al pas i promoció."
+    },
+    "xiangqi": {
+      "name": "Xiangqi contra l'ordinador",
+      "desc": "Juga als escacs xinesos (xiangqi) contra l'ordinador amb 10 nivells, amb bloqueig de la pota del cavall, ull de l'elefant, captures del canó i regla dels generals."
+    },
+    "go-game": {
+      "name": "Go contra l'ordinador",
+      "desc": "Juga al go contra l'ordinador en taulers de 5x5, 7x7 i 9x9 amb 10 nivells, amb puntuació automàtica al final."
+    },
+    "memory-shapes": {
+      "name": "Memòria de formes i colors",
+      "desc": "Es mostren fitxes amb formes i colors durant 5 segons i després s'amaguen; recorda i tria la fitxa correcta, 10 nivells de fàcil a difícil."
     }
   },
   "s": {

@@ -178,7 +178,61 @@
     "lib.excel.missing": "Manke",
     "lib.excel.duplicate": "Doub",
     "lib.excel.valid": "Valid",
-    "lib.excel.invalid": "Envalid"
+    "lib.excel.invalid": "Envalid",
+    "lib.game.levels": "Nivo",
+    "lib.game.level": "Nivo {n}",
+    "lib.game.unlockAll": "Debloke tout nivo yo",
+    "lib.game.newGame": "Nouvo jwèt",
+    "lib.game.retry": "Jwe ankò",
+    "lib.game.nextLevel": "Pwochen nivo",
+    "lib.game.win": "Ou pase nivo {n}!",
+    "lib.game.lose": "Ou poko pase nivo {n}. Eseye ankò.",
+    "lib.game.draw": "Egalite — ou poko pase nivo {n}.",
+    "lib.game.allDone": "Felisitasyon! Ou pase tout 10 nivo yo.",
+    "lib.game.time": "Tan",
+    "lib.game.hint": "Endis",
+    "lib.game.erase": "Efase",
+    "lib.game.check": "Verifye",
+    "lib.game.notes": "Nòt",
+    "lib.game.generating": "N ap kreye devinèt la…",
+    "lib.game.sudokuKeys": "Flèch pou deplase, chif pou ranpli (16x16: A-G pou 10-16), Backspace pou efase, N pou aktive/dezaktive nòt yo.",
+    "lib.game.sudokuLeft": "Rete {n} ka",
+    "lib.game.sudokuConflict": "Tout ka yo ranpli men gen kèk chif ki repete. Tanpri verifye ankò.",
+    "lib.game.sudokuWrong": "{n} move ka (make an wouj).",
+    "lib.game.sudokuAllRight": "Pa gen okenn move ka.",
+    "lib.game.thinking": "Òdinatè a ap reflechi…",
+    "lib.game.yourTurn": "Se tou pa w",
+    "lib.game.undo": "Anile",
+    "lib.game.resign": "Abandone",
+    "lib.game.resigned": "Ou abandone.",
+    "lib.game.chessCheck": "Chèk!",
+    "lib.game.chessMateWin": "Chèkmat! Ou genyen.",
+    "lib.game.chessMateLose": "Yo fè w chèkmat.",
+    "lib.game.chessDraw": "Pati a fini egalite.",
+    "lib.game.chessNote": "Ou jwe ak Blan epi ou jwe an premye. Klike sou pyès ou a, apre sa sou kare kote w vle ale a. Yon pyon ki rive nan dènye ranje a vin tounen larenn. Genyen lè w fè Nwa chèkmat.",
+    "lib.game.xiangqi": "Tablo Xiangqi",
+    "lib.game.xqCheck": "Chèk!",
+    "lib.game.xqMateWin": "Chèkmat! Ou genyen.",
+    "lib.game.xqMateLose": "Yo fè w chèkmat.",
+    "lib.game.xqStaleWin": "Nwa pa gen okenn mouvman lejitim — ou genyen.",
+    "lib.game.xqStaleLose": "Ou pa gen okenn mouvman lejitim — ou pèdi.",
+    "lib.game.xqNote": "Ou jwe ak Wouj (anba) epi ou jwe an premye. Klike sou pyès ou a, apre sa sou pwen kote w vle ale a. De jeneral yo pa ka fè fas a fas; chèkmat oswa pa gen mouvman lejitim vle di w pèdi.",
+    "lib.game.pass": "Pase",
+    "lib.game.goBoard": "Tablo Go",
+    "lib.game.goCaps": "Kaptire — Nwa: {b} · Blan: {w}",
+    "lib.game.goScore": "Pwen — Nwa: {b}, Blan: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Tablo {n}×{n}. Ou jwe ak Nwa epi ou jwe an premye. Pwen yo konte dapre zòn (wòch + pwen vid ki antoure nèt); Blan resevwa {k} komi. Kaptire tout wòch mouri advèsè a anvan w pase. Swisid ak repriz imedyat (ko) pa pèmèt. Jwèt la fini lè de jwè yo pase youn apre lòt.",
+    "lib.game.illegal": "Mouvman ilegal (swisid oswa repriz imedyat).",
+    "lib.game.aiPassed": "Òdinatè a pase. Si ou pase tou, jwèt la fini epi yo konte pwen yo.",
+    "lib.game.start": "Kòmanse",
+    "lib.game.lives": "Lavi",
+    "lib.game.mmAsk": "Ki tuile ki te gen fòm sa a?",
+    "lib.game.mmReady": "Pare?",
+    "lib.game.mmMemorize": "Memorize — rete {s} s",
+    "lib.game.mmQuestion": "Kesyon {i}/{n}",
+    "lib.game.mmDone": "Fini!",
+    "lib.game.mmLost": "Pa gen lavi ankò — kounye a tout tuile yo parèt.",
+    "lib.game.mmNote": "Peze Kòmanse: tuile yo parèt pandan {s} segonn, epi yo kache. Sonje fòm ak koulè chak tuile, epi chwazi tuile ki koresponn ak fòm yo montre w la. Plis pase {l} erè, nivo a echwe."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Konbine done Excel ak fòmil",
       "desc": "Konbine anpil fèy oswa fichye Excel ak yon fòmil pou chak selil (SUM, IF, CONCAT, UNIQUE...), fonksyon anboze, ak fòmil anrejistre ou ka itilize ankò."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Jwe Sudoku 9x9 sou entènèt nan 10 nivo ki soti nan fasil rive difisil, ak nòt, endis ak verifikasyon erè."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Gwo Sudoku 16x16 ki itilize 1-9 ak A-G, 10 nivo ki soti nan fasil rive difisil, ak nòt ak endis."
+    },
+    "chess": {
+      "name": "Echèk kont òdinatè",
+      "desc": "Jwe echèk kont òdinatè a nan 10 nivo ki soti nan fasil rive difisil, ak woke, ann pasan ak pwomosyon."
+    },
+    "xiangqi": {
+      "name": "Xiangqi kont òdinatè",
+      "desc": "Jwe echèk chinwa (xiangqi) kont òdinatè a nan 10 nivo, ak blokaj pye chwal, je elefan, kaptire kanon ak règ jeneral fas a fas."
+    },
+    "go-game": {
+      "name": "Go kont òdinatè",
+      "desc": "Jwe Go kont òdinatè a sou tablo 5x5, 7x7 ak 9x9 nan 10 nivo, ak kalkil pwen otomatik nan fen."
+    },
+    "memory-shapes": {
+      "name": "Memwa fòm ak koulè",
+      "desc": "Tuile ak fòm ak koulè parèt pandan 5 segonn, epi yo kache; sonje epi chwazi bon tuile a, 10 nivo ki soti nan fasil rive difisil."
     }
   },
   "s": {

@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ntihari",
     "lib.excel.duplicate": "Byisubiyemo",
     "lib.excel.valid": "Byemewe",
-    "lib.excel.invalid": "Ntibyemewe"
+    "lib.excel.invalid": "Ntibyemewe",
+    "lib.game.levels": "Urwego",
+    "lib.game.level": "Urwego rwa {n}",
+    "lib.game.unlockAll": "Fungura inzego zose",
+    "lib.game.newGame": "Umukino mushya",
+    "lib.game.retry": "Ongera ukine",
+    "lib.game.nextLevel": "Urwego rukurikira",
+    "lib.game.win": "Warangije urwego rwa {n}!",
+    "lib.game.lose": "Urwego rwa {n} ntirurangira. Ongera ugerageze.",
+    "lib.game.draw": "Kunganya — urwego rwa {n} ntirurangira.",
+    "lib.game.allDone": "Turakwishimiye! Warangije inzego zose 10.",
+    "lib.game.time": "Igihe",
+    "lib.game.hint": "Inama",
+    "lib.game.erase": "Siba",
+    "lib.game.check": "Genzura",
+    "lib.game.notes": "Inyandiko",
+    "lib.game.generating": "Turimo gukora ikibazo…",
+    "lib.game.sudokuKeys": "Koresha imyambi kugenda, imibare kuzuza (16x16: A-G kuri 10-16), Backspace gusiba, N guhindura inyandiko.",
+    "lib.game.sudokuLeft": "Hasigaye utwugarizo {n}",
+    "lib.game.sudokuConflict": "Utwugarizo twose twuzuye ariko imibare imwe irasubiramo. Ongera ugenzure.",
+    "lib.game.sudokuWrong": "Utwugarizo {n} tutari two (dufite ibara ry'umutuku).",
+    "lib.game.sudokuAllRight": "Nta twugarizo tutari twiza twabonetse.",
+    "lib.game.thinking": "Mudasobwa iratekereza…",
+    "lib.game.yourTurn": "Ni wowe ugiye",
+    "lib.game.undo": "Subiza inyuma",
+    "lib.game.resign": "Emera gutsindwa",
+    "lib.game.resigned": "Wemeye gutsindwa.",
+    "lib.game.chessCheck": "Shah!",
+    "lib.game.chessMateWin": "Mate! Watsinze.",
+    "lib.game.chessMateLose": "Bagukoreye mate.",
+    "lib.game.chessDraw": "Umukino warangiye ari kunganya.",
+    "lib.game.chessNote": "Ukina n'umweru kandi ni wowe utangira. Kanda ku gice cyawe, hanyuma ku kazu ushaka kujyamo. Inzirakarengane igeze ku murongo wa nyuma iba umwamikazi. Tsinda ukora mate umukara.",
+    "lib.game.xiangqi": "Ikibaho cya xiangqi",
+    "lib.game.xqCheck": "Shah!",
+    "lib.game.xqMateWin": "Mate! Watsinze.",
+    "lib.game.xqMateLose": "Bagukoreye mate.",
+    "lib.game.xqStaleWin": "Umukara nta rugendo rwemewe afite — watsinze.",
+    "lib.game.xqStaleLose": "Nta rugendo rwemewe ufite — watsinzwe.",
+    "lib.game.xqNote": "Ukina n'umutuku (hasi) kandi ni wowe utangira. Kanda ku gice cyawe, hanyuma ku ngingo ushaka kujyaho. Abajenerali bombi ntibashobora guhagarara bareba mu maso; mate cyangwa kutagira urugendo rwemewe bisobanura gutsindwa.",
+    "lib.game.pass": "Simbuka",
+    "lib.game.goBoard": "Ikibaho cya Go",
+    "lib.game.goCaps": "Zafashwe — Umukara: {b} · Umweru: {w}",
+    "lib.game.goScore": "Amanota — Umukara: {b}, Umweru: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Ikibaho cya {n}×{n}. Ukina n'umukara kandi ni wowe utangira. Amanota abarwa hakurikijwe ubuso (amabuye + ingingo zirimo ubusa zikikijwe burundu); umweru ubona komi {k}. Fata amabuye yose y'uwo muhanganye yapfuye mbere yo gusimbuka. Kwiyahura no gufata ako kanya (ko) ntibyemewe. Umukino urangira abakinnyi bombi basimbutse ikurikiranye.",
+    "lib.game.illegal": "Urugendo rutemewe (kwiyahura cyangwa gufata ako kanya).",
+    "lib.game.aiPassed": "Mudasobwa yasimbutse. Nawe usimbutse, umukino urarangira hakabarwa amanota.",
+    "lib.game.start": "Tangira",
+    "lib.game.lives": "Ubuzima",
+    "lib.game.mmAsk": "Ni iyihe tile yariho iri shusho?",
+    "lib.game.mmReady": "Witeguye?",
+    "lib.game.mmMemorize": "Wibuke — hasigaye amasegonda {s}",
+    "lib.game.mmQuestion": "Ikibazo {i}/{n}",
+    "lib.game.mmDone": "Birarangiye!",
+    "lib.game.mmLost": "Ubuzima bwarangiye — tile zose zirerekanwe.",
+    "lib.game.mmNote": "Kanda Tangira: tile ziragaragazwa amasegonda {s}, hanyuma zigahishwa. Wibuke ishusho n'ibara bya buri tile, hanyuma uhitemo tile ihuye n'ishusho yerekanwe. Amakosa arenze {l} atuma urwego rudatsinda."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Huza amakuru ya Excel ukoresheje formula",
       "desc": "Huza impapuro cyangwa amadosiye ya Excel menshi ukoresheje formula kuri buri gasanduku (SUM, IF, CONCAT, UNIQUE...), imikorere ishyizwe mu yindi, na formula zibitswe wakongera gukoresha."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Kina Sudoku 9x9 kuri interineti mu nzego 10 uhereye ku koroshye ukageza ku kugora, hamwe n'inyandiko, inama no kugenzura amakosa."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku nini 16x16 ikoresha 1-9 na A-G, inzego 10 uhereye ku koroshye ukageza ku kugora, hamwe n'inyandiko n'inama."
+    },
+    "chess": {
+      "name": "Chess na Mudasobwa",
+      "desc": "Kina chess na mudasobwa mu nzego 10 uhereye ku koroshye ukageza ku kugora, hamwe na castling, en passant no kuzamurwa mu ntera."
+    },
+    "xiangqi": {
+      "name": "Xiangqi na Mudasobwa",
+      "desc": "Kina chess y'Abashinwa (xiangqi) na mudasobwa mu nzego 10, hamwe no gufunga ukuguru kw'ifarasi, ijisho ry'inzovu, gufata n'igisasu n'itegeko ry'umujenerali uguruka."
+    },
+    "go-game": {
+      "name": "Go na Mudasobwa",
+      "desc": "Kina Go na mudasobwa ku bibaho bya 5x5, 7x7 na 9x9 mu nzego 10, hamwe no kubara amanota byikora ku iherezo."
+    },
+    "memory-shapes": {
+      "name": "Kwibuka Ishusho n'Ibara",
+      "desc": "Tile zifite amashusho n'amabara ziragaragazwa amasegonda 5, hanyuma zigahishwa; wibuke uhitemo tile ikwiye, inzego 10 uhereye ku koroshye ukageza ku kugora."
     }
   },
   "s": {

@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ausente",
     "lib.excel.duplicate": "Duplicado",
     "lib.excel.valid": "Válido",
-    "lib.excel.invalid": "Inválido"
+    "lib.excel.invalid": "Inválido",
+    "lib.game.levels": "Nível",
+    "lib.game.level": "Nível {n}",
+    "lib.game.unlockAll": "Desbloquear todos os níveis",
+    "lib.game.newGame": "Novo jogo",
+    "lib.game.retry": "Jogar novamente",
+    "lib.game.nextLevel": "Próximo nível",
+    "lib.game.win": "Você passou do nível {n}!",
+    "lib.game.lose": "Nível {n} não concluído. Tente novamente.",
+    "lib.game.draw": "Empate — nível {n} não concluído.",
+    "lib.game.allDone": "Parabéns! Você concluiu todos os 10 níveis.",
+    "lib.game.time": "Tempo",
+    "lib.game.hint": "Dica",
+    "lib.game.erase": "Apagar",
+    "lib.game.check": "Verificar",
+    "lib.game.notes": "Anotações",
+    "lib.game.generating": "Gerando o quebra-cabeça…",
+    "lib.game.sudokuKeys": "Setas para mover, teclas numéricas para preencher (16x16: A-G para 10-16), Backspace para apagar, N para alternar as anotações.",
+    "lib.game.sudokuLeft": "Faltam {n} células",
+    "lib.game.sudokuConflict": "Todas as células estão preenchidas, mas há números repetidos. Verifique novamente.",
+    "lib.game.sudokuWrong": "{n} células erradas (marcadas em vermelho).",
+    "lib.game.sudokuAllRight": "Nenhuma célula errada encontrada.",
+    "lib.game.thinking": "O computador está pensando…",
+    "lib.game.yourTurn": "Sua vez",
+    "lib.game.undo": "Desfazer",
+    "lib.game.resign": "Desistir",
+    "lib.game.resigned": "Você desistiu.",
+    "lib.game.chessCheck": "Xeque!",
+    "lib.game.chessMateWin": "Xeque-mate! Você venceu.",
+    "lib.game.chessMateLose": "Você levou xeque-mate.",
+    "lib.game.chessDraw": "A partida terminou empatada.",
+    "lib.game.chessNote": "Você joga com as brancas e começa. Clique na sua peça e depois na casa de destino. Peões que chegam à última fileira são promovidos a dama. Vença dando xeque-mate nas pretas.",
+    "lib.game.xiangqi": "Tabuleiro de xiangqi",
+    "lib.game.xqCheck": "Xeque!",
+    "lib.game.xqMateWin": "Xeque-mate! Você venceu.",
+    "lib.game.xqMateLose": "Você levou xeque-mate.",
+    "lib.game.xqStaleWin": "As pretas não têm jogadas legais — você venceu.",
+    "lib.game.xqStaleLose": "Você não tem jogadas legais — você perdeu.",
+    "lib.game.xqNote": "Você joga com o vermelho (embaixo) e começa. Clique na sua peça e depois no ponto de destino. Os dois generais não podem ficar frente a frente; perde quem leva xeque-mate ou fica sem jogadas legais.",
+    "lib.game.pass": "Passar",
+    "lib.game.goBoard": "Tabuleiro de Go",
+    "lib.game.goCaps": "Capturas — Pretas: {b} · Brancas: {w}",
+    "lib.game.goScore": "Pontuação — Pretas: {b}, Brancas: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Tabuleiro {n}×{n}. Você joga com as pretas e começa. A pontuação é por área (pedras + pontos vazios totalmente cercados); as brancas recebem {k} de komi. Capture todas as pedras mortas do adversário antes de passar. Suicídio e recaptura imediata (ko) não são permitidos. O jogo termina quando os dois jogadores passam seguidamente.",
+    "lib.game.illegal": "Jogada ilegal (suicídio ou recaptura imediata).",
+    "lib.game.aiPassed": "O computador passou. Se você também passar, o jogo termina e é pontuado.",
+    "lib.game.start": "Iniciar",
+    "lib.game.lives": "Vidas",
+    "lib.game.mmAsk": "Qual peça tinha esta forma?",
+    "lib.game.mmReady": "Pronto?",
+    "lib.game.mmMemorize": "Memorize — restam {s} s",
+    "lib.game.mmQuestion": "Pergunta {i}/{n}",
+    "lib.game.mmDone": "Pronto!",
+    "lib.game.mmLost": "Sem vidas — todas as peças foram reveladas.",
+    "lib.game.mmNote": "Toque em Iniciar: as peças aparecem por {s} segundos e depois somem. Memorize a forma e a cor de cada uma e escolha a que corresponde à forma mostrada. Mais de {l} erros reprovam o nível."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combinar dados do Excel com fórmulas",
       "desc": "Combine várias planilhas ou arquivos do Excel com uma fórmula por célula (SUM, IF, CONCAT, UNIQUE...), funções aninhadas e fórmulas salvas para reutilizar."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Jogue sudoku 9x9 online em 10 níveis, do fácil ao difícil, com anotações, dicas e verificação de erros."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku grande 16x16 com 1-9 e A-G, 10 níveis do fácil ao difícil, com anotações e dicas."
+    },
+    "chess": {
+      "name": "Xadrez contra o computador",
+      "desc": "Jogue xadrez contra o computador em 10 níveis, do fácil ao difícil, com roque, en passant e promoção."
+    },
+    "xiangqi": {
+      "name": "Xiangqi contra o computador",
+      "desc": "Jogue xadrez chinês (xiangqi) contra o computador em 10 níveis, com bloqueio do cavalo, olho do elefante, capturas do canhão e regra dos generais frente a frente."
+    },
+    "go-game": {
+      "name": "Go contra o computador",
+      "desc": "Jogue Go contra o computador em tabuleiros 5x5, 7x7 e 9x9 com 10 níveis, com pontuação automática no final."
+    },
+    "memory-shapes": {
+      "name": "Memória de formas e cores",
+      "desc": "Peças com formas e cores aparecem por 5 segundos e depois somem; lembre-se e escolha a peça certa, 10 níveis do fácil ao difícil."
     }
   },
   "s": {

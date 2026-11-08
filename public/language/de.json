@@ -178,7 +178,61 @@
     "lib.excel.missing": "Fehlt",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Gültig",
-    "lib.excel.invalid": "Ungültig"
+    "lib.excel.invalid": "Ungültig",
+    "lib.game.levels": "Stufe",
+    "lib.game.level": "Stufe {n}",
+    "lib.game.unlockAll": "Alle Stufen freischalten",
+    "lib.game.newGame": "Neues Spiel",
+    "lib.game.retry": "Nochmal spielen",
+    "lib.game.nextLevel": "Nächste Stufe",
+    "lib.game.win": "Du hast Stufe {n} geschafft!",
+    "lib.game.lose": "Stufe {n} nicht geschafft. Versuche es erneut.",
+    "lib.game.draw": "Unentschieden – Stufe {n} nicht geschafft.",
+    "lib.game.allDone": "Glückwunsch! Du hast alle 10 Stufen geschafft.",
+    "lib.game.time": "Zeit",
+    "lib.game.hint": "Tipp",
+    "lib.game.erase": "Löschen",
+    "lib.game.check": "Prüfen",
+    "lib.game.notes": "Notizen",
+    "lib.game.generating": "Rätsel wird erstellt…",
+    "lib.game.sudokuKeys": "Pfeiltasten zum Bewegen, Zifferntasten zum Ausfüllen (16x16: A-G für 10-16), Rücktaste zum Löschen, N für Notizen.",
+    "lib.game.sudokuLeft": "Noch {n} Felder",
+    "lib.game.sudokuConflict": "Alle Felder sind ausgefüllt, aber einige Zahlen wiederholen sich. Bitte prüfe erneut.",
+    "lib.game.sudokuWrong": "{n} falsche Felder (rot markiert).",
+    "lib.game.sudokuAllRight": "Keine falschen Felder gefunden.",
+    "lib.game.thinking": "Computer denkt nach…",
+    "lib.game.yourTurn": "Du bist am Zug",
+    "lib.game.undo": "Rückgängig",
+    "lib.game.resign": "Aufgeben",
+    "lib.game.resigned": "Du hast aufgegeben.",
+    "lib.game.chessCheck": "Schach!",
+    "lib.game.chessMateWin": "Schachmatt! Du gewinnst.",
+    "lib.game.chessMateLose": "Du bist schachmatt.",
+    "lib.game.chessDraw": "Die Partie endet unentschieden.",
+    "lib.game.chessNote": "Du spielst Weiß und ziehst zuerst. Klicke auf deine Figur und dann auf das Zielfeld. Bauern, die die letzte Reihe erreichen, werden zur Dame. Gewinne, indem du Schwarz mattsetzt.",
+    "lib.game.xiangqi": "Xiangqi-Brett",
+    "lib.game.xqCheck": "Schach!",
+    "lib.game.xqMateWin": "Schachmatt! Du gewinnst.",
+    "lib.game.xqMateLose": "Du bist schachmatt.",
+    "lib.game.xqStaleWin": "Schwarz hat keinen legalen Zug – du gewinnst.",
+    "lib.game.xqStaleLose": "Du hast keinen legalen Zug – du verlierst.",
+    "lib.game.xqNote": "Du spielst Rot (unten) und ziehst zuerst. Klicke auf deine Figur und dann auf den Zielpunkt. Die beiden Generäle dürfen sich nicht gegenüberstehen; Schachmatt oder kein legaler Zug bedeutet Niederlage.",
+    "lib.game.pass": "Passen",
+    "lib.game.goBoard": "Go-Brett",
+    "lib.game.goCaps": "Gefangen – Schwarz: {b} · Weiß: {w}",
+    "lib.game.goScore": "Punkte – Schwarz: {b}, Weiß: {w} + Komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-Brett. Du spielst Schwarz und ziehst zuerst. Gezählt wird nach Fläche (Steine + vollständig umschlossene leere Punkte); Weiß erhält {k} Komi. Nimm alle toten Steine des Gegners, bevor du passt. Selbstmord und sofortiges Zurückschlagen (Ko) sind nicht erlaubt. Das Spiel endet, wenn beide nacheinander passen.",
+    "lib.game.illegal": "Unzulässiger Zug (Selbstmord oder sofortiges Zurückschlagen).",
+    "lib.game.aiPassed": "Der Computer hat gepasst. Wenn du auch passt, endet das Spiel und wird gewertet.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Leben",
+    "lib.game.mmAsk": "Welches Feld hatte diese Form?",
+    "lib.game.mmReady": "Bereit?",
+    "lib.game.mmMemorize": "Merken – noch {s} s",
+    "lib.game.mmQuestion": "Frage {i}/{n}",
+    "lib.game.mmDone": "Geschafft!",
+    "lib.game.mmLost": "Keine Leben mehr – alle Felder werden jetzt aufgedeckt.",
+    "lib.game.mmNote": "Drücke Start: Die Felder werden {s} Sekunden lang gezeigt und dann verdeckt. Merke dir Form und Farbe jedes Feldes und wähle dann das Feld, das zur gezeigten Form passt. Mehr als {l} Fehler, und die Stufe ist verloren."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel-Daten mit Formeln kombinieren",
       "desc": "Kombiniert viele Tabellenblätter oder Excel-Dateien mit einer Formel pro Zelle (SUM, IF, CONCAT, UNIQUE...), verschachtelten Funktionen und wiederverwendbaren gespeicherten Formeln."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Spiele 9x9-Sudoku online in 10 Stufen von leicht bis schwer, mit Notizen, Tipps und Fehlerprüfung."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Großes 16x16-Sudoku mit 1-9 und A-G, 10 Stufen von leicht bis schwer, mit Notizen und Tipps."
+    },
+    "chess": {
+      "name": "Schach gegen Computer",
+      "desc": "Spiele Schach gegen den Computer in 10 Stufen von leicht bis schwer, mit Rochade, En passant und Umwandlung."
+    },
+    "xiangqi": {
+      "name": "Xiangqi gegen Computer",
+      "desc": "Spiele chinesisches Schach (Xiangqi) gegen den Computer in 10 Stufen, mit Pferdebein-Blockade, Elefantenauge, Kanonenschlag und Generalsregel."
+    },
+    "go-game": {
+      "name": "Go gegen Computer",
+      "desc": "Spiele Go gegen den Computer auf 5x5-, 7x7- und 9x9-Brettern in 10 Stufen, mit automatischer Wertung am Ende."
+    },
+    "memory-shapes": {
+      "name": "Form- & Farbgedächtnis",
+      "desc": "Felder mit Formen und Farben werden 5 Sekunden gezeigt und dann verdeckt; merke sie dir und wähle das richtige Feld, 10 Stufen von leicht bis schwer."
     }
   },
   "s": {

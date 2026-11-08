@@ -178,7 +178,61 @@
     "lib.excel.missing": "Tsy hita",
     "lib.excel.duplicate": "Miverimberina",
     "lib.excel.valid": "Mety",
-    "lib.excel.invalid": "Tsy mety"
+    "lib.excel.invalid": "Tsy mety",
+    "lib.game.levels": "Haavo",
+    "lib.game.level": "Haavo {n}",
+    "lib.game.unlockAll": "Sokafy ny haavo rehetra",
+    "lib.game.newGame": "Lalao vaovao",
+    "lib.game.retry": "Milalao indray",
+    "lib.game.nextLevel": "Haavo manaraka",
+    "lib.game.win": "Vita ny haavo {n}!",
+    "lib.game.lose": "Tsy vita ny haavo {n}. Andramo indray.",
+    "lib.game.draw": "Ndrai-mandry — tsy vita ny haavo {n}.",
+    "lib.game.allDone": "Arahaba! Vita ny haavo 10 rehetra.",
+    "lib.game.time": "Fotoana",
+    "lib.game.hint": "Torohevitra",
+    "lib.game.erase": "Fafao",
+    "lib.game.check": "Hamarino",
+    "lib.game.notes": "Naotra",
+    "lib.game.generating": "Mamorona ny tsikombakomba…",
+    "lib.game.sudokuKeys": "Fanalahidy zana-tsipìka hifindrana, fanalahidy isa hampidirana (16x16: A-G ho an'ny 10-16), Backspace hamafana, N hanomboka/hampitsahatra ny naotra.",
+    "lib.game.sudokuLeft": "Sisa {n} efamira",
+    "lib.game.sudokuConflict": "Feno ny efamira rehetra saingy misy isa averina. Hamarino indray azafady.",
+    "lib.game.sudokuWrong": "{n} efamira diso (voamarika mena).",
+    "lib.game.sudokuAllRight": "Tsy nahitana efamira diso.",
+    "lib.game.thinking": "Mieritreritra ny solosaina…",
+    "lib.game.yourTurn": "Anao ny anjara",
+    "lib.game.undo": "Foano",
+    "lib.game.resign": "Miala",
+    "lib.game.resigned": "Nialà ianao.",
+    "lib.game.chessCheck": "Sheka!",
+    "lib.game.chessMateWin": "Sheka mata! Nandresy ianao.",
+    "lib.game.chessMateLose": "Voasheka mata ianao.",
+    "lib.game.chessDraw": "Ndrai-mandry ny lalao.",
+    "lib.game.chessNote": "Milalao fotsy ianao ary voalohany. Tsindrio ny sarotanao, avy eo ny efamira alehanao. Ny piona tonga amin'ny andalana farany dia lasa mpanjakavavy. Mandresy amin'ny fanaovana sheka mata ny mainty.",
+    "lib.game.xiangqi": "Solaitrabe Xiangqi",
+    "lib.game.xqCheck": "Sheka!",
+    "lib.game.xqMateWin": "Sheka mata! Nandresy ianao.",
+    "lib.game.xqMateLose": "Voasheka mata ianao.",
+    "lib.game.xqStaleWin": "Tsy manana hetsika azo atao ny mainty — nandresy ianao.",
+    "lib.game.xqStaleLose": "Tsy manana hetsika azo atao ianao — resy ianao.",
+    "lib.game.xqNote": "Milalao mena (eo ambany) ianao ary voalohany. Tsindrio ny sarotanao, avy eo ny teboka alehanao. Tsy azon'ny jeneraly roa atao ny mifanatrika; resy raha voasheka mata na tsy manana hetsika azo atao.",
+    "lib.game.pass": "Mandalo",
+    "lib.game.goBoard": "Solaitrabe Go",
+    "lib.game.goCaps": "Voasambotra — Mainty: {b} · Fotsy: {w}",
+    "lib.game.goScore": "Isa — Mainty: {b}, Fotsy: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Solaitrabe {n}×{n}. Milalao mainty ianao ary voalohany. Kajiana araka ny velarana ny isa (vato + teboka foana voahodidina tanteraka); mahazo komi {k} ny fotsy. Sambory ny vato maty rehetra an'ny mpifanandrina alohan'ny handalovana. Tsy azo atao ny famonoan-tena sy ny fakana indray avy hatrany (ko). Vita ny lalao rehefa mandalo misesy ny mpilalao roa.",
+    "lib.game.illegal": "Hetsika tsy azo atao (famonoan-tena na fakana indray avy hatrany).",
+    "lib.game.aiPassed": "Nandalo ny solosaina. Raha mandalo koa ianao, vita ny lalao ary kajiana ny isa.",
+    "lib.game.start": "Atombohy",
+    "lib.game.lives": "Aina",
+    "lib.game.mmAsk": "Iza no tuile nanana endrika toy izao?",
+    "lib.game.mmReady": "Vonona?",
+    "lib.game.mmMemorize": "Tadidio — sisa {s} s",
+    "lib.game.mmQuestion": "Fanontaniana {i}/{n}",
+    "lib.game.mmDone": "Vita!",
+    "lib.game.mmLost": "Lany ny aina — aseho izao ny tuile rehetra.",
+    "lib.game.mmNote": "Tsindrio ny Atombohy: aseho mandritra ny {s} segondra ny tuile, avy eo afenina. Tadidio ny endrika sy ny lokon'ny tuile tsirairay, avy eo fidio ny tuile mifanaraka amin'ny endrika aseho. Raha mihoatra ny {l} ny diso dia tsy vita ny haavo."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Ampiarahina ny angona Excel amin'ny raikipohy",
       "desc": "Ampiarahina ny takelaka na rakitra Excel maromaro amin'ny raikipohy isaky ny sela (SUM, IF, CONCAT, UNIQUE...), fonction miorina anaty hafa, ary raikipohy voatahiry azo ampiasaina indray."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Milalao Sudoku 9x9 an-tserasera amin'ny haavo 10 manomboka amin'ny mora ka hatramin'ny sarotra, misy naotra, torohevitra ary fanamarinana diso."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku lehibe 16x16 mampiasa 1-9 sy A-G, haavo 10 manomboka amin'ny mora ka hatramin'ny sarotra, misy naotra sy torohevitra."
+    },
+    "chess": {
+      "name": "Chess atrehin'ny solosaina",
+      "desc": "Milalao chess atrehin'ny solosaina amin'ny haavo 10 manomboka amin'ny mora ka hatramin'ny sarotra, misy roque, en passant ary fampiakarana."
+    },
+    "xiangqi": {
+      "name": "Xiangqi atrehin'ny solosaina",
+      "desc": "Milalao chess sinoa (xiangqi) atrehin'ny solosaina amin'ny haavo 10, misy fanakanana ny tongotry ny soavaly, ny masoandron'ny elefanta, ny fakana ny tafondro ary ny lalàna momba ny jeneraly mifanatrika."
+    },
+    "go-game": {
+      "name": "Go atrehin'ny solosaina",
+      "desc": "Milalao Go atrehin'ny solosaina amin'ny solaitrabe 5x5, 7x7 ary 9x9 amin'ny haavo 10, misy kajy isa mandeha ho azy amin'ny farany."
+    },
+    "memory-shapes": {
+      "name": "Fitadidiana endrika sy loko",
+      "desc": "Aseho mandritra ny 5 segondra ny tuile misy endrika sy loko, avy eo afenina; tadidio ary fidio ny tuile marina, haavo 10 manomboka amin'ny mora ka hatramin'ny sarotra."
     }
   },
   "s": {

@@ -178,7 +178,61 @@
     "lib.excel.missing": "Hiányzik",
     "lib.excel.duplicate": "Duplikált",
     "lib.excel.valid": "Érvényes",
-    "lib.excel.invalid": "Érvénytelen"
+    "lib.excel.invalid": "Érvénytelen",
+    "lib.game.levels": "Szint",
+    "lib.game.level": "{n}. szint",
+    "lib.game.unlockAll": "Összes szint feloldása",
+    "lib.game.newGame": "Új játék",
+    "lib.game.retry": "Újra",
+    "lib.game.nextLevel": "Következő szint",
+    "lib.game.win": "Teljesítetted a(z) {n}. szintet!",
+    "lib.game.lose": "A(z) {n}. szint nem sikerült. Próbáld újra.",
+    "lib.game.draw": "Döntetlen — a(z) {n}. szint nem sikerült.",
+    "lib.game.allDone": "Gratulálunk! Mind a 10 szintet teljesítetted.",
+    "lib.game.time": "Idő",
+    "lib.game.hint": "Tipp",
+    "lib.game.erase": "Törlés",
+    "lib.game.check": "Ellenőrzés",
+    "lib.game.notes": "Jegyzetek",
+    "lib.game.generating": "Feladvány generálása…",
+    "lib.game.sudokuKeys": "Nyilak: mozgás, számbillentyűk: kitöltés (16x16: A-G a 10-16-hoz), Backspace: törlés, N: jegyzetek be/ki.",
+    "lib.game.sudokuLeft": "{n} mező maradt",
+    "lib.game.sudokuConflict": "Minden mező ki van töltve, de néhány szám ismétlődik. Ellenőrizd újra.",
+    "lib.game.sudokuWrong": "{n} hibás mező (pirossal jelölve).",
+    "lib.game.sudokuAllRight": "Nincs hibás mező.",
+    "lib.game.thinking": "A gép gondolkodik…",
+    "lib.game.yourTurn": "Te jössz",
+    "lib.game.undo": "Visszavonás",
+    "lib.game.resign": "Feladás",
+    "lib.game.resigned": "Feladtad.",
+    "lib.game.chessCheck": "Sakk!",
+    "lib.game.chessMateWin": "Matt! Nyertél.",
+    "lib.game.chessMateLose": "Mattot kaptál.",
+    "lib.game.chessDraw": "A játszma döntetlen.",
+    "lib.game.chessNote": "Te állsz világossal, és te lépsz először. Kattints a bábudra, majd a célmezőre. Az utolsó sorba érő gyalog vezérré változik. Akkor nyersz, ha mattot adsz a sötétnek.",
+    "lib.game.xiangqi": "Xiangqi tábla",
+    "lib.game.xqCheck": "Sakk!",
+    "lib.game.xqMateWin": "Matt! Nyertél.",
+    "lib.game.xqMateLose": "Mattot kaptál.",
+    "lib.game.xqStaleWin": "A feketének nincs szabályos lépése — nyertél.",
+    "lib.game.xqStaleLose": "Nincs szabályos lépésed — vesztettél.",
+    "lib.game.xqNote": "Te vagy a piros (alul), és te lépsz először. Kattints a bábudra, majd a célpontra. A két tábornok nem nézhet farkasszemet; a matt vagy a szabályos lépés hiánya vereség.",
+    "lib.game.pass": "Passz",
+    "lib.game.goBoard": "Go tábla",
+    "lib.game.goCaps": "Leütött kövek — fekete: {b} · fehér: {w}",
+    "lib.game.goScore": "Pontszám — fekete: {b}, fehér: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-es tábla. Te vagy a fekete, és te lépsz először. A pontozás terület alapján történik (kövek + teljesen körbezárt üres pontok); a fehér {k} komit kap. Passz előtt ejtsd el az ellenfél összes halott kövét. Öngyilkosság és azonnali visszaütés (kó) tilos. A játék véget ér, ha mindketten egymás után passzolnak.",
+    "lib.game.illegal": "Szabálytalan lépés (öngyilkosság vagy azonnali visszaütés).",
+    "lib.game.aiPassed": "A gép passzolt. Ha te is passzolsz, a játék véget ér és pontozás következik.",
+    "lib.game.start": "Indítás",
+    "lib.game.lives": "Életek",
+    "lib.game.mmAsk": "Melyik lapon volt ez az alakzat?",
+    "lib.game.mmReady": "Kész vagy?",
+    "lib.game.mmMemorize": "Jegyezd meg — még {s} mp",
+    "lib.game.mmQuestion": "{i}/{n}. kérdés",
+    "lib.game.mmDone": "Kész!",
+    "lib.game.mmLost": "Elfogytak az életek — most minden lap felfedésre kerül.",
+    "lib.game.mmNote": "Nyomd meg az Indítást: a lapok {s} másodpercig látszanak, majd eltűnnek. Jegyezd meg minden lap alakját és színét, majd válaszd azt a lapot, amelyik a mutatott alakzatnak felel meg. {l}-nál több hiba esetén a szint elbukik."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel-adatok kombinálása képletekkel",
       "desc": "Több munkalap vagy Excel-fájl kombinálása cellánkénti képlettel (SUM, IF, CONCAT, UNIQUE...), egymásba ágyazott függvényekkel és újrahasználható mentett képletekkel."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Játssz 9x9-es sudokut online 10 szinten a könnyűtől a nehézig, jegyzetekkel, tippekkel és hibaellenőrzéssel."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Nagy 16x16-os sudoku 1-9 és A-G jelekkel, 10 szint a könnyűtől a nehézig, jegyzetekkel és tippekkel."
+    },
+    "chess": {
+      "name": "Sakk a gép ellen",
+      "desc": "Játssz sakkot a gép ellen 10 szinten a könnyűtől a nehézig, sáncolással, en passant-nal és átalakulással."
+    },
+    "xiangqi": {
+      "name": "Xiangqi a gép ellen",
+      "desc": "Játssz kínai sakkot (xiangqi) a gép ellen 10 szinten, lólábblokkolással, elefánt-szemmel, ágyúval való ütéssel és a szemben álló tábornokok szabályával."
+    },
+    "go-game": {
+      "name": "Go a gép ellen",
+      "desc": "Játssz gót a gép ellen 5x5-ös, 7x7-es és 9x9-es táblán 10 szinten, a végén automatikus pontszámítással."
+    },
+    "memory-shapes": {
+      "name": "Alak- és színmemória",
+      "desc": "Alakzatokkal és színekkel ellátott lapok 5 másodpercig látszanak, majd eltűnnek; jegyezd meg és válaszd ki a helyes lapot, 10 szint a könnyűtől a nehézig."
     }
   },
   "s": {

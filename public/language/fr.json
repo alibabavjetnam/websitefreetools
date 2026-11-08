@@ -178,7 +178,61 @@
     "lib.excel.missing": "Manquant",
     "lib.excel.duplicate": "Doublon",
     "lib.excel.valid": "Valide",
-    "lib.excel.invalid": "Invalide"
+    "lib.excel.invalid": "Invalide",
+    "lib.game.levels": "Niveau",
+    "lib.game.level": "Niveau {n}",
+    "lib.game.unlockAll": "Débloquer tous les niveaux",
+    "lib.game.newGame": "Nouvelle partie",
+    "lib.game.retry": "Rejouer",
+    "lib.game.nextLevel": "Niveau suivant",
+    "lib.game.win": "Vous avez réussi le niveau {n} !",
+    "lib.game.lose": "Niveau {n} non réussi. Réessayez.",
+    "lib.game.draw": "Match nul — niveau {n} non réussi.",
+    "lib.game.allDone": "Félicitations ! Vous avez réussi les 10 niveaux.",
+    "lib.game.time": "Temps",
+    "lib.game.hint": "Indice",
+    "lib.game.erase": "Effacer",
+    "lib.game.check": "Vérifier",
+    "lib.game.notes": "Notes",
+    "lib.game.generating": "Génération de la grille…",
+    "lib.game.sudokuKeys": "Flèches pour se déplacer, chiffres pour remplir (16x16 : A-G pour 10-16), Retour arrière pour effacer, N pour activer les notes.",
+    "lib.game.sudokuLeft": "{n} cases restantes",
+    "lib.game.sudokuConflict": "Toutes les cases sont remplies mais certains nombres se répètent. Vérifiez à nouveau.",
+    "lib.game.sudokuWrong": "{n} cases fausses (en rouge).",
+    "lib.game.sudokuAllRight": "Aucune case fausse.",
+    "lib.game.thinking": "L'ordinateur réfléchit…",
+    "lib.game.yourTurn": "À vous de jouer",
+    "lib.game.undo": "Annuler",
+    "lib.game.resign": "Abandonner",
+    "lib.game.resigned": "Vous avez abandonné.",
+    "lib.game.chessCheck": "Échec !",
+    "lib.game.chessMateWin": "Échec et mat ! Vous gagnez.",
+    "lib.game.chessMateLose": "Vous êtes échec et mat.",
+    "lib.game.chessDraw": "La partie est nulle.",
+    "lib.game.chessNote": "Vous jouez les Blancs et commencez. Cliquez sur votre pièce, puis sur la case d'arrivée. Un pion arrivant à la dernière rangée est promu en dame. Gagnez en mettant les Noirs échec et mat.",
+    "lib.game.xiangqi": "Plateau de xiangqi",
+    "lib.game.xqCheck": "Échec !",
+    "lib.game.xqMateWin": "Échec et mat ! Vous gagnez.",
+    "lib.game.xqMateLose": "Vous êtes échec et mat.",
+    "lib.game.xqStaleWin": "Les Noirs n'ont aucun coup légal — vous gagnez.",
+    "lib.game.xqStaleLose": "Vous n'avez aucun coup légal — vous perdez.",
+    "lib.game.xqNote": "Vous jouez les Rouges (en bas) et commencez. Cliquez sur votre pièce, puis sur le point d'arrivée. Les deux généraux ne peuvent pas se faire face ; l'échec et mat ou l'absence de coup légal fait perdre.",
+    "lib.game.pass": "Passer",
+    "lib.game.goBoard": "Goban",
+    "lib.game.goCaps": "Prises — Noir : {b} · Blanc : {w}",
+    "lib.game.goScore": "Score — Noir : {b}, Blanc : {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Plateau {n}×{n}. Vous jouez les Noirs et commencez. Décompte par aire (pierres + points vides entièrement entourés) ; les Blancs reçoivent {k} de komi. Capturez toutes les pierres mortes de l'adversaire avant de passer. Le suicide et la reprise immédiate (ko) sont interdits. La partie se termine quand les deux joueurs passent à la suite.",
+    "lib.game.illegal": "Coup interdit (suicide ou reprise immédiate).",
+    "lib.game.aiPassed": "L'ordinateur a passé. Si vous passez aussi, la partie se termine et est comptée.",
+    "lib.game.start": "Démarrer",
+    "lib.game.lives": "Vies",
+    "lib.game.mmAsk": "Quelle tuile avait cette forme ?",
+    "lib.game.mmReady": "Prêt ?",
+    "lib.game.mmMemorize": "Mémorisez — encore {s} s",
+    "lib.game.mmQuestion": "Question {i}/{n}",
+    "lib.game.mmDone": "Terminé !",
+    "lib.game.mmLost": "Plus de vies — toutes les tuiles sont révélées.",
+    "lib.game.mmNote": "Appuyez sur Démarrer : les tuiles s'affichent pendant {s} secondes, puis se cachent. Retenez la forme et la couleur de chaque tuile, puis choisissez celle qui correspond à la forme montrée. Plus de {l} erreurs et le niveau est perdu."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combiner des données Excel avec des formules",
       "desc": "Combinez plusieurs feuilles ou fichiers Excel avec une formule par cellule (SUM, IF, CONCAT, UNIQUE...), des fonctions imbriquées et des formules enregistrées réutilisables."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Jouez au Sudoku 9x9 en ligne sur 10 niveaux, du facile au difficile, avec notes, indices et vérification des erreurs."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Grand Sudoku 16x16 avec 1-9 et A-G, 10 niveaux du facile au difficile, avec notes et indices."
+    },
+    "chess": {
+      "name": "Échecs contre l'ordinateur",
+      "desc": "Jouez aux échecs contre l'ordinateur sur 10 niveaux, du facile au difficile, avec roque, prise en passant et promotion."
+    },
+    "xiangqi": {
+      "name": "Xiangqi contre l'ordinateur",
+      "desc": "Jouez aux échecs chinois (xiangqi) contre l'ordinateur sur 10 niveaux, avec blocage du cheval, œil de l'éléphant, prises du canon et règle des généraux face à face."
+    },
+    "go-game": {
+      "name": "Go contre l'ordinateur",
+      "desc": "Jouez au Go contre l'ordinateur sur des plateaux 5x5, 7x7 et 9x9, sur 10 niveaux, avec décompte automatique à la fin."
+    },
+    "memory-shapes": {
+      "name": "Mémoire des formes et couleurs",
+      "desc": "Des tuiles de formes et couleurs s'affichent 5 secondes puis se cachent ; mémorisez et choisissez la bonne tuile, 10 niveaux du facile au difficile."
     }
   },
   "s": {

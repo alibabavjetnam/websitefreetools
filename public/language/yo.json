@@ -178,7 +178,61 @@
     "lib.excel.missing": "Kò sí",
     "lib.excel.duplicate": "Ìdánakọ",
     "lib.excel.valid": "Tó tọ́",
-    "lib.excel.invalid": "Kò tọ́"
+    "lib.excel.invalid": "Kò tọ́",
+    "lib.game.levels": "Ìpele",
+    "lib.game.level": "Ìpele {n}",
+    "lib.game.unlockAll": "Ṣí gbogbo àwọn ìpele",
+    "lib.game.newGame": "Eré tuntun",
+    "lib.game.retry": "Tún ṣeré",
+    "lib.game.nextLevel": "Ìpele tó kàn",
+    "lib.game.win": "O ti parí ìpele {n}!",
+    "lib.game.lose": "O kò parí ìpele {n}. Gbìyànjú lẹ́ẹ̀kan sí i.",
+    "lib.game.draw": "Dọ́gba — a kò parí ìpele {n}.",
+    "lib.game.allDone": "Ẹ kú oríire! O ti parí gbogbo ìpele mẹ́wàá.",
+    "lib.game.time": "Àkókò",
+    "lib.game.hint": "Ìtọ́ka",
+    "lib.game.erase": "Pa rẹ́",
+    "lib.game.check": "Ṣàyẹ̀wò",
+    "lib.game.notes": "Àkọsílẹ̀",
+    "lib.game.generating": "Ń ṣẹ̀dá àlọ́…",
+    "lib.game.sudokuKeys": "Lo àwọn kọ́kọ́rọ́ ọfà láti rìn, àwọn kọ́kọ́rọ́ nọ́ńbà láti kún (16x16: A-G fún 10-16), Backspace láti pa rẹ́, N láti tan/pa àkọsílẹ̀.",
+    "lib.game.sudokuLeft": "Àpótí {n} ló kù",
+    "lib.game.sudokuConflict": "Gbogbo àpótí ti kún ṣùgbọ́n àwọn nọ́ńbà kan tún ṣe. Jọ̀wọ́ ṣàyẹ̀wò lẹ́ẹ̀kan sí i.",
+    "lib.game.sudokuWrong": "Àpótí {n} tí kò tọ́ (àmì pupa).",
+    "lib.game.sudokuAllRight": "A kò rí àpótí tí kò tọ́.",
+    "lib.game.thinking": "Kọ̀ǹpútà ń ronú…",
+    "lib.game.yourTurn": "Ìgbà rẹ ni",
+    "lib.game.undo": "Dá padà",
+    "lib.game.resign": "Juwọ́ sílẹ̀",
+    "lib.game.resigned": "O ti juwọ́ sílẹ̀.",
+    "lib.game.chessCheck": "Ṣáà!",
+    "lib.game.chessMateWin": "Ṣáà-mátì! O ṣẹ́gun.",
+    "lib.game.chessMateLose": "A ti ṣáà-mátì rẹ.",
+    "lib.game.chessDraw": "Eré náà dọ́gba.",
+    "lib.game.chessNote": "O ń lo funfun, o sì kọ́kọ́ rìn. Tẹ ege rẹ, lẹ́yìn náà tẹ onígun tí o fẹ́ gbé e lọ. Ọmọ-ogun tó bá dé ìlà ìkẹyìn di ayaba. Ṣẹ́gun nípa ṣíṣe ṣáà-mátì dúdú.",
+    "lib.game.xiangqi": "Pẹpẹ xiangqi",
+    "lib.game.xqCheck": "Ṣáà!",
+    "lib.game.xqMateWin": "Ṣáà-mátì! O ṣẹ́gun.",
+    "lib.game.xqMateLose": "A ti ṣáà-mátì rẹ.",
+    "lib.game.xqStaleWin": "Dúdú kò ní ìrìn tó bófin mu — o ṣẹ́gun.",
+    "lib.game.xqStaleLose": "O kò ní ìrìn tó bófin mu — o pàdánù.",
+    "lib.game.xqNote": "O ń lo pupa (nísàlẹ̀), o sì kọ́kọ́ rìn. Tẹ ege rẹ, lẹ́yìn náà tẹ ibi tí o fẹ́ lọ. Àwọn ọ̀gágun méjèèjì kò gbọdọ̀ dojú kọ ara wọn; ṣáà-mátì tàbí àìní ìrìn tó bófin mu túmọ̀ sí ìpàdánù.",
+    "lib.game.pass": "Fò",
+    "lib.game.goBoard": "Pẹpẹ Go",
+    "lib.game.goCaps": "A mú — Dúdú: {b} · Funfun: {w}",
+    "lib.game.goScore": "Ìdíwọ̀n — Dúdú: {b}, Funfun: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Pẹpẹ {n}×{n}. O ń lo dúdú, o sì kọ́kọ́ rìn. Ìdíwọ̀n jẹ́ nípasẹ̀ àyè (àwọn òkúta + àwọn ibi òfo tí a yí ká pátápátá); funfun ń gba komi {k}. Mú gbogbo òkúta òkú alátakò kí o tó fò. A kò gbà ìpara-ẹni àti ìmúpadàbọ̀ lẹ́sẹ̀kẹsẹ̀ (ko). Eré dópin nígbà tí àwọn ẹlẹ́ṣẹ̀ méjèèjì bá fò ní àtẹ̀léra.",
+    "lib.game.illegal": "Ìrìn tí kò bófin mu (ìpara-ẹni tàbí ìmúpadàbọ̀ lẹ́sẹ̀kẹsẹ̀).",
+    "lib.game.aiPassed": "Kọ̀ǹpútà fò. Tí o bá fò náà, eré yóò dópin, a ó sì díwọ̀n rẹ̀.",
+    "lib.game.start": "Bẹ̀rẹ̀",
+    "lib.game.lives": "Ẹ̀mí",
+    "lib.game.mmAsk": "Tailì wo ni ó ní àwòrán yìí?",
+    "lib.game.mmReady": "Ṣé o ti ṣetán?",
+    "lib.game.mmMemorize": "Ṣe àkọsílẹ̀ nínú ọkàn — ìṣẹ́jú-àáyá {s} ló kù",
+    "lib.game.mmQuestion": "Ìbéèrè {i}/{n}",
+    "lib.game.mmDone": "Parí!",
+    "lib.game.mmLost": "Ẹ̀mí ti tán — a ti ṣí gbogbo tailì.",
+    "lib.game.mmNote": "Tẹ Bẹ̀rẹ̀: a ó fi àwọn tailì hàn fún ìṣẹ́jú-àáyá {s}, lẹ́yìn náà a ó fi wọ́n pamọ́. Ranti àwòrán àti àwọ̀ tailì kọ̀ọ̀kan, lẹ́yìn náà yan tailì tó bá àwòrán tí a fihàn mu. Àṣìṣe tó ju {l} yóò mú ìpele kùnà."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Da dátà Excel pọ̀ pẹ̀lú àwọn àgbékalẹ̀",
       "desc": "Ó da ọ̀pọ̀ ojú ìwé tàbí faili Excel pọ̀ pẹ̀lú àgbékalẹ̀ fún sẹ́ẹ̀lì kọ̀ọ̀kan (SUM, IF, CONCAT, UNIQUE...), àwọn iṣẹ́ inú iṣẹ́, àti àwọn àgbékalẹ̀ tí a fi pamọ́ tí o lè tún lò."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Ṣe Sudoku 9x9 lórí ayélujára ní ìpele mẹ́wàá láti rọrùn dé le, pẹ̀lú àkọsílẹ̀, ìtọ́ka àti àyẹ̀wò àṣìṣe."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku 16x16 ńlá tó ń lo 1-9 àti A-G, ìpele mẹ́wàá láti rọrùn dé le, pẹ̀lú àkọsílẹ̀ àti ìtọ́ka."
+    },
+    "chess": {
+      "name": "Chess lòdì sí Kọ̀ǹpútà",
+      "desc": "Ṣe chess lòdì sí kọ̀ǹpútà ní ìpele mẹ́wàá láti rọrùn dé le, pẹ̀lú castling, en passant àti gbígbéga."
+    },
+    "xiangqi": {
+      "name": "Xiangqi lòdì sí Kọ̀ǹpútà",
+      "desc": "Ṣe chess ti Ṣáínà (xiangqi) lòdì sí kọ̀ǹpútà ní ìpele mẹ́wàá, pẹ̀lú dídínà ẹsẹ̀ ẹṣin, ojú erin, mímú pẹ̀lú ìbọn àti òfin ọ̀gágun tó ń fò."
+    },
+    "go-game": {
+      "name": "Go lòdì sí Kọ̀ǹpútà",
+      "desc": "Ṣe Go lòdì sí kọ̀ǹpútà lórí pẹpẹ 5x5, 7x7 àti 9x9 ní ìpele mẹ́wàá, pẹ̀lú ìdíwọ̀n aládàáṣe ní ìparí."
+    },
+    "memory-shapes": {
+      "name": "Ìrántí Àwòrán àti Àwọ̀",
+      "desc": "A ó fi àwọn tailì tó ní àwòrán àti àwọ̀ hàn fún ìṣẹ́jú-àáyá 5, lẹ́yìn náà a ó fi wọ́n pamọ́; ranti kí o sì yan tailì tó tọ́, ìpele mẹ́wàá láti rọrùn dé le."
     }
   },
   "s": {

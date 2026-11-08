@@ -178,7 +178,61 @@
     "lib.excel.missing": "Nieqes",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Validu",
-    "lib.excel.invalid": "Invalidu"
+    "lib.excel.invalid": "Invalidu",
+    "lib.game.levels": "Livell",
+    "lib.game.level": "Livell {n}",
+    "lib.game.unlockAll": "Ħoll il-livelli kollha",
+    "lib.game.newGame": "Logħba ġdida",
+    "lib.game.retry": "Lagħab mill-ġdid",
+    "lib.game.nextLevel": "Livell li jmiss",
+    "lib.game.win": "Għaddejt il-livell {n}!",
+    "lib.game.lose": "Il-livell {n} ma ġiex mgħoddi. Erġa' pprova.",
+    "lib.game.draw": "Draw — il-livell {n} ma ġiex mgħoddi.",
+    "lib.game.allDone": "Prosit! Għaddejt il-10 livelli kollha.",
+    "lib.game.time": "Ħin",
+    "lib.game.hint": "Ħjiel",
+    "lib.game.erase": "Ħassar",
+    "lib.game.check": "Iċċekkja",
+    "lib.game.notes": "Noti",
+    "lib.game.generating": "Qed jinħoloq il-puzzle…",
+    "lib.game.sudokuKeys": "Vleġeġ biex timxi, numri biex timla (16x16: A-G għal 10-16), Backspace biex tħassar, N biex tixgħel/titfi n-noti.",
+    "lib.game.sudokuLeft": "Fadal {n} ċelloli",
+    "lib.game.sudokuConflict": "Iċ-ċelloli kollha mimlijin imma xi numri huma ripetuti. Jekk jogħġbok iċċekkja mill-ġdid.",
+    "lib.game.sudokuWrong": "{n} ċelloli ħżiena (immarkati bl-aħmar).",
+    "lib.game.sudokuAllRight": "Ma nstabu l-ebda ċelloli ħżiena.",
+    "lib.game.thinking": "Il-kompjuter qed jaħseb…",
+    "lib.game.yourTurn": "Id-dawra tiegħek",
+    "lib.game.undo": "Żfar",
+    "lib.game.resign": "Ċedi",
+    "lib.game.resigned": "Ċedejt.",
+    "lib.game.chessCheck": "Xakk!",
+    "lib.game.chessMateWin": "Xakkmat! Rbaħt.",
+    "lib.game.chessMateLose": "Ħadulek ix-xakkmat.",
+    "lib.game.chessDraw": "Il-logħba spiċċat draw.",
+    "lib.game.chessNote": "Tilgħab bl-abjad u tibda int. Ikklikkja l-biċċa tiegħek u mbagħad il-kwadru fejn trid tmur. Is-sold li jaslu fl-aħħar fila jsiru reġina. Rbaħ billi tagħti xakkmat lill-iswed.",
+    "lib.game.xiangqi": "Bord tax-xiangqi",
+    "lib.game.xqCheck": "Xakk!",
+    "lib.game.xqMateWin": "Xakkmat! Rbaħt.",
+    "lib.game.xqMateLose": "Ħadulek ix-xakkmat.",
+    "lib.game.xqStaleWin": "L-iswed m'għandux mossi legali — rbaħt.",
+    "lib.game.xqStaleLose": "M'għandekx mossi legali — tlift.",
+    "lib.game.xqNote": "Tilgħab bl-aħmar (isfel) u tibda int. Ikklikkja l-biċċa tiegħek u mbagħad il-punt fejn trid tmur. Iż-żewġ ġenerali ma jistgħux jiffaċċjaw lil xulxin; titlef jekk tieħu xakkmat jew m'għandekx mossi legali.",
+    "lib.game.pass": "Għaddi",
+    "lib.game.goBoard": "Bord tal-Go",
+    "lib.game.goCaps": "Maqbuda — Iswed: {b} · Abjad: {w}",
+    "lib.game.goScore": "Punti — Iswed: {b}, Abjad: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Bord {n}×{n}. Tilgħab bl-iswed u tibda int. L-immarkar huwa skont l-erja (ġebel + punti vojta mdawra għal kollox); l-abjad jieħu komi {k}. Aqbad il-ġebel mejjet kollu tal-avversarju qabel ma tgħaddi. Is-suwiċidju u r-rikattura immedjata (ko) mhumiex permessi. Il-logħba tispiċċa meta ż-żewġ plejers jgħaddu wara xulxin.",
+    "lib.game.illegal": "Mossa illegali (suwiċidju jew rikattura immedjata).",
+    "lib.game.aiPassed": "Il-kompjuter għadda. Jekk tgħaddi int ukoll, il-logħba tispiċċa u jingħataw il-punti.",
+    "lib.game.start": "Ibda",
+    "lib.game.lives": "Ħajjiet",
+    "lib.game.mmAsk": "Liema madum kellu din il-forma?",
+    "lib.game.mmReady": "Lest?",
+    "lib.game.mmMemorize": "Ftakar — fadal {s} s",
+    "lib.game.mmQuestion": "Mistoqsija {i}/{n}",
+    "lib.game.mmDone": "Lest!",
+    "lib.game.mmLost": "Spiċċaw il-ħajjiet — il-madum kollu issa huwa żvelat.",
+    "lib.game.mmNote": "Agħfas Ibda: il-madum jintwera għal {s} sekondi u mbagħad jinħeba. Ftakar il-forma u l-kulur ta' kull madum, u mbagħad agħżel dak li jaqbel mal-forma murija. Aktar minn {l} żbalji jfissru li ma tgħaddix il-livell."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Għaqqad id-Dejta Excel bil-Formuli",
       "desc": "Għaqqad ħafna folji jew fajls Excel b'formula għal kull ċellola (SUM, IF, CONCAT, UNIQUE...), funzjonijiet mdaħħlin, u formuli maħżuna li tista' terġa' tuża."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Lagħab Sudoku 9x9 online f'10 livelli minn faċli għal diffiċli, b'noti, ħjiel u verifika tal-iżbalji."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku kbir 16x16 bl-użu ta' 1-9 u A-G, 10 livelli minn faċli għal diffiċli, b'noti u ħjiel."
+    },
+    "chess": {
+      "name": "Chess kontra l-Kompjuter",
+      "desc": "Lagħab chess kontra l-kompjuter f'10 livelli minn faċli għal diffiċli, bil-kastlu, en passant u promozzjoni."
+    },
+    "xiangqi": {
+      "name": "Xiangqi kontra l-Kompjuter",
+      "desc": "Lagħab chess Ċiniż (xiangqi) kontra l-kompjuter f'10 livelli, bil-imblukkar tas-sieq taż-żiemel, għajn tal-iljunfant, qbid tal-kanun u r-regola tal-ġenerali wiċċ imb wiċċ."
+    },
+    "go-game": {
+      "name": "Go kontra l-Kompjuter",
+      "desc": "Lagħab Go kontra l-kompjuter fuq bordijiet 5x5, 7x7 u 9x9 f'10 livelli, b'għadd awtomatiku tal-punti fl-aħħar."
+    },
+    "memory-shapes": {
+      "name": "Memorja tal-Forom u l-Kuluri",
+      "desc": "Madum b'forom u kuluri jintwera għal 5 sekondi u mbagħad jinħeba; ftakar u agħżel il-madum t-tajjeb, 10 livelli minn faċli għal diffiċli."
     }
   },
   "s": {

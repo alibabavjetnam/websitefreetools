@@ -178,7 +178,61 @@
     "lib.excel.missing": "Leungit",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Valid",
-    "lib.excel.invalid": "Teu valid"
+    "lib.excel.invalid": "Teu valid",
+    "lib.game.levels": "Tingkat",
+    "lib.game.level": "Tingkat {n}",
+    "lib.game.unlockAll": "Buka sadaya tingkat",
+    "lib.game.newGame": "Kaulinan anyar",
+    "lib.game.retry": "Ulin deui",
+    "lib.game.nextLevel": "Tingkat salajengna",
+    "lib.game.win": "Anjeun parantos réngsé tingkat {n}!",
+    "lib.game.lose": "Tingkat {n} acan réngsé. Cobian deui.",
+    "lib.game.draw": "Sami kuat — tingkat {n} acan réngsé.",
+    "lib.game.allDone": "Wilujeng! Anjeun parantos réngsé kabéh 10 tingkat.",
+    "lib.game.time": "Waktos",
+    "lib.game.hint": "Pitunjuk",
+    "lib.game.erase": "Pupus",
+    "lib.game.check": "Pariksa",
+    "lib.game.notes": "Catetan",
+    "lib.game.generating": "Nyieun teka-teki…",
+    "lib.game.sudokuKeys": "Tombol panah pikeun mindahkeun, tombol angka pikeun ngeusian (16x16: A-G pikeun 10-16), Backspace pikeun mupus, N pikeun ngaktipkeun catetan.",
+    "lib.game.sudokuLeft": "Sésa {n} kotak",
+    "lib.game.sudokuConflict": "Sakabéh kotak parantos kaeusi tapi aya angka anu kaulang. Mangga pariksa deui.",
+    "lib.game.sudokuWrong": "{n} kotak salah (dituduhan beureum).",
+    "lib.game.sudokuAllRight": "Teu aya kotak salah.",
+    "lib.game.thinking": "Komputer keur mikir…",
+    "lib.game.yourTurn": "Giliran anjeun",
+    "lib.game.undo": "Wangsulkeun",
+    "lib.game.resign": "Nyerah",
+    "lib.game.resigned": "Anjeun nyerah.",
+    "lib.game.chessCheck": "Skak!",
+    "lib.game.chessMateWin": "Skakmat! Anjeun meunang.",
+    "lib.game.chessMateLose": "Anjeun diskakmat.",
+    "lib.game.chessDraw": "Kaulinan réngsé sami kuat.",
+    "lib.game.chessNote": "Anjeun maénkeun Bodas jeung mimiti. Klik bidak anjeun, tuluy kotak tujuan. Pion anu nepi ka baris pamungkas jadi ratu. Meunang ku cara nyekakmat Hideung.",
+    "lib.game.xiangqi": "Papan xiangqi",
+    "lib.game.xqCheck": "Skak!",
+    "lib.game.xqMateWin": "Skakmat! Anjeun meunang.",
+    "lib.game.xqMateLose": "Anjeun diskakmat.",
+    "lib.game.xqStaleWin": "Hideung teu boga léngkah sah — anjeun meunang.",
+    "lib.game.xqStaleLose": "Anjeun teu boga léngkah sah — anjeun éléh.",
+    "lib.game.xqNote": "Anjeun maénkeun Beureum (handap) jeung mimiti. Klik bidak anjeun, tuluy titik tujuan. Dua jenderal teu meunang héadap-héadapan; éléh upami diskakmat atawa teu boga léngkah sah.",
+    "lib.game.pass": "Lewat",
+    "lib.game.goBoard": "Papan Go",
+    "lib.game.goCaps": "Katawan — Hideung: {b} · Bodas: {w}",
+    "lib.game.goScore": "Skor — Hideung: {b}, Bodas: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Papan {n}×{n}. Anjeun maénkeun Hideung jeung mimiti. Skor dihitung dumasar wewengkon (batu + titik kosong anu kasaung pinuh); Bodas meunang komi {k}. Tawan sakabéh batu paéh lawan samemeh lewat. Bunuh diri jeung nawan deui langsung (ko) teu diidinan. Kaulinan réngsé nalika dua pamaén lewat tuturut-tuturut.",
+    "lib.game.illegal": "Léngkah teu sah (bunuh diri atawa nawan deui langsung).",
+    "lib.game.aiPassed": "Komputer lewat. Upami anjeun ogé lewat, kaulinan réngsé jeung skor dihitung.",
+    "lib.game.start": "Mimitian",
+    "lib.game.lives": "Nyawa",
+    "lib.game.mmAsk": "Ubin mana anu bentukna kieu?",
+    "lib.game.mmReady": "Siap?",
+    "lib.game.mmMemorize": "Apalkeun — sésa {s} detik",
+    "lib.game.mmQuestion": "Patarosan {i}/{n}",
+    "lib.game.mmDone": "Réngsé!",
+    "lib.game.mmLost": "Nyawa béak — sakabéh ubin ayeuna dibuka.",
+    "lib.game.mmNote": "Pencét Mimitian: ubin ditémbongkeun {s} detik, tuluy disumputkeun. Apalkeun bentuk jeung warna unggal ubin, tuluy pilih ubin anu cocog jeung bentuk anu ditémbongkeun. Langkung ti {l} kasalahan hartosna tingkat gagal."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Gabungkeun data Excel maké rumus",
       "desc": "Gabungkeun sababaraha lembar atawa berkas Excel maké hiji rumus per sél (SUM, IF, CONCAT, UNIQUE...), fungsi nyarang, jeung rumus nu disimpen nu bisa dipaké deui."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Ulin Sudoku 9x9 online dina 10 tingkat tina gampang nepi ka hésé, kalawan catetan, pitunjuk jeung pamariksaan kasalahan."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku ageung 16x16 migunakeun 1-9 jeung A-G, 10 tingkat tina gampang nepi ka hésé, kalawan catetan jeung pitunjuk."
+    },
+    "chess": {
+      "name": "Catur ngalawan Komputer",
+      "desc": "Ulin catur ngalawan komputer dina 10 tingkat tina gampang nepi ka hésé, kalawan rokade, en passant jeung promosi."
+    },
+    "xiangqi": {
+      "name": "Xiangqi ngalawan Komputer",
+      "desc": "Ulin catur Tiongkok (xiangqi) ngalawan komputer dina 10 tingkat, kalawan blokir suku kuda, panon gajah, néwak ku mariem jeung aturan jenderal héadap-héadapan."
+    },
+    "go-game": {
+      "name": "Go ngalawan Komputer",
+      "desc": "Ulin Go ngalawan komputer dina papan 5x5, 7x7 jeung 9x9 dina 10 tingkat, kalawan itungan skor otomatis di tungtung."
+    },
+    "memory-shapes": {
+      "name": "Mémori Wangun & Warna",
+      "desc": "Ubin kalawan wangun jeung warna ditémbongkeun 5 detik, tuluy disumputkeun; apalkeun jeung pilih ubin anu bener, 10 tingkat tina gampang nepi ka hésé."
     }
   },
   "s": {

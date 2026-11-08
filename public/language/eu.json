@@ -178,7 +178,61 @@
     "lib.excel.missing": "Falta da",
     "lib.excel.duplicate": "Bikoiztua",
     "lib.excel.valid": "Baliozkoa",
-    "lib.excel.invalid": "Baliogabea"
+    "lib.excel.invalid": "Baliogabea",
+    "lib.game.levels": "Maila",
+    "lib.game.level": "{n}. maila",
+    "lib.game.unlockAll": "Desblokeatu maila guztiak",
+    "lib.game.newGame": "Partida berria",
+    "lib.game.retry": "Jolastu berriro",
+    "lib.game.nextLevel": "Hurrengo maila",
+    "lib.game.win": "{n}. maila gainditu duzu!",
+    "lib.game.lose": "{n}. maila ez da gainditu. Saiatu berriro.",
+    "lib.game.draw": "Berdinketa — {n}. maila ez da gainditu.",
+    "lib.game.allDone": "Zorionak! 10 mailak gainditu dituzu.",
+    "lib.game.time": "Denbora",
+    "lib.game.hint": "Aholkua",
+    "lib.game.erase": "Ezabatu",
+    "lib.game.check": "Egiaztatu",
+    "lib.game.notes": "Oharrak",
+    "lib.game.generating": "Puzzlea sortzen…",
+    "lib.game.sudokuKeys": "Geziak mugitzeko, zenbaki-teklak betetzeko (16x16: A-G 10-16rako), Backspace ezabatzeko, N oharrak aktibatzeko.",
+    "lib.game.sudokuLeft": "{n} gelaxka geratzen dira",
+    "lib.game.sudokuConflict": "Gelaxka guztiak beteta daude, baina zenbaki batzuk errepikatzen dira. Egiaztatu berriro.",
+    "lib.game.sudokuWrong": "{n} gelaxka oker (gorriz markatuta).",
+    "lib.game.sudokuAllRight": "Ez da gelaxka okerrik aurkitu.",
+    "lib.game.thinking": "Ordenagailua pentsatzen ari da…",
+    "lib.game.yourTurn": "Zure txanda",
+    "lib.game.undo": "Desegin",
+    "lib.game.resign": "Amore eman",
+    "lib.game.resigned": "Amore eman duzu.",
+    "lib.game.chessCheck": "Xake!",
+    "lib.game.chessMateWin": "Xake-mate! Irabazi duzu.",
+    "lib.game.chessMateLose": "Xake-mate egin dizute.",
+    "lib.game.chessDraw": "Partida berdinketan amaitu da.",
+    "lib.game.chessNote": "Zuriekin jokatzen duzu eta zu hasten zara. Egin klik zure piezan eta gero joateko laukian. Azken errenkadara iristen diren peoiak erregina bihurtzen dira. Irabazteko, egin xake-mate beltzari.",
+    "lib.game.xiangqi": "Xiangqi taula",
+    "lib.game.xqCheck": "Xake!",
+    "lib.game.xqMateWin": "Xake-mate! Irabazi duzu.",
+    "lib.game.xqMateLose": "Xake-mate egin dizute.",
+    "lib.game.xqStaleWin": "Beltzak ez dauka mugimendu legalik — irabazi duzu.",
+    "lib.game.xqStaleLose": "Zuk ez daukazu mugimendu legalik — galdu duzu.",
+    "lib.game.xqNote": "Gorriekin jokatzen duzu (behean) eta zu hasten zara. Egin klik zure piezan eta gero joateko puntuan. Bi jeneralek ezin dute elkarri aurrez aurre begiratu; xake-mate egiteak edo mugimendu legalik ez izateak galtzera behartzen du.",
+    "lib.game.pass": "Pasa",
+    "lib.game.goBoard": "Go taula",
+    "lib.game.goCaps": "Harrapatuak — beltza: {b} · zuria: {w}",
+    "lib.game.goScore": "Puntuazioa — beltza: {b}, zuria: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} taula. Beltzekin jokatzen duzu eta zu hasten zara. Puntuazioa eremuaren arabera da (harriak + guztiz inguratutako puntu hutsak); zuriak {k} komi jasotzen du. Pasa baino lehen, harrapatu aurkariaren harri hil guztiak. Suizidioa eta berehalako berreskuratzea (ko) debekatuta daude. Biek jarraian pasatzen dutenean amaitzen da jokoa.",
+    "lib.game.illegal": "Mugimendu ilegala (suizidioa edo berehalako berreskuratzea).",
+    "lib.game.aiPassed": "Ordenagailuak pasa du. Zuk ere pasatzen baduzu, jokoa amaitu eta puntuatuko da.",
+    "lib.game.start": "Hasi",
+    "lib.game.lives": "Bizitzak",
+    "lib.game.mmAsk": "Zein lauzak zuen forma hau?",
+    "lib.game.mmReady": "Prest?",
+    "lib.game.mmMemorize": "Gogoratu — {s} s falta dira",
+    "lib.game.mmQuestion": "{i}/{n} galdera",
+    "lib.game.mmDone": "Eginda!",
+    "lib.game.mmLost": "Bizitzarik ez — lauza guztiak erakutsi dira orain.",
+    "lib.game.mmNote": "Sakatu Hasi: lauzak {s} segundoz erakusten dira eta gero ezkutatu. Gogoratu lauza bakoitzaren forma eta kolorea, eta aukeratu erakusten zaizun formarekin bat datorrena. {l} akats baino gehiago eginez gero, maila galtzen da."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Konbinatu Excel datuak formulekin",
       "desc": "Konbinatu hainbat orri edo Excel fitxategi gelaxka bakoitzeko formula batekin (SUM, IF, CONCAT, UNIQUE...), funtzio habiaratuekin eta berrerabil daitezkeen formula gordeekin."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Jokatu 9x9 Sudokua linean, 10 mailatan erraletik zailera, oharrekin, aholkuekin eta akatsen egiaztapenarekin."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "16x16 Sudoku handia 1-9 eta A-G erabiliz, 10 maila erraletik zailera, oharrekin eta aholkuekin."
+    },
+    "chess": {
+      "name": "Xakea ordenagailuaren aurka",
+      "desc": "Jokatu xakean ordenagailuaren aurka, 10 mailatan erraletik zailera, enrokearekin, en passant-ekin eta promozioarekin."
+    },
+    "xiangqi": {
+      "name": "Xiangqi ordenagailuaren aurka",
+      "desc": "Jokatu Txinako xakea (xiangqi) ordenagailuaren aurka, 10 mailatan, zaldiaren hanka blokeatzearekin, elefantearen begiarekin, kanoiaren harrapaketekin eta jeneralen arauarekin."
+    },
+    "go-game": {
+      "name": "Go ordenagailuaren aurka",
+      "desc": "Jokatu Go ordenagailuaren aurka 5x5, 7x7 eta 9x9 taulatan, 10 mailatan, amaieran puntuazio automatikoarekin."
+    },
+    "memory-shapes": {
+      "name": "Forma eta kolore memoria",
+      "desc": "Forma eta koloredun lauzak 5 segundoz erakusten dira eta gero ezkutatu; gogoratu eta aukeratu lauza zuzena, 10 maila erraletik zailera."
     }
   },
   "s": {

@@ -178,7 +178,61 @@
     "lib.excel.missing": "Feelt",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Gëlteg",
-    "lib.excel.invalid": "Ongëlteg"
+    "lib.excel.invalid": "Ongëlteg",
+    "lib.game.levels": "Niveau",
+    "lib.game.level": "Niveau {n}",
+    "lib.game.unlockAll": "All Niveauen fräischalten",
+    "lib.game.newGame": "Neit Spill",
+    "lib.game.retry": "Nach eng Kéier spillen",
+    "lib.game.nextLevel": "Nächst Niveau",
+    "lib.game.win": "Du hues Niveau {n} geschafft!",
+    "lib.game.lose": "Niveau {n} net geschafft. Probéier nach eng Kéier.",
+    "lib.game.draw": "Remis — Niveau {n} net geschafft.",
+    "lib.game.allDone": "Gratulatioun! Du hues all 10 Niveauen geschafft.",
+    "lib.game.time": "Zäit",
+    "lib.game.hint": "Tipp",
+    "lib.game.erase": "Läschen",
+    "lib.game.check": "Préiwen",
+    "lib.game.notes": "Notizen",
+    "lib.game.generating": "Rätsel gëtt erstallt…",
+    "lib.game.sudokuKeys": "Pfeiltasten zum Beweegen, Zifferen zum Ausfëllen (16x16: A-G fir 10-16), Backspace zum Läschen, N fir d'Notizen.",
+    "lib.game.sudokuLeft": "{n} Felder iwwreg",
+    "lib.game.sudokuConflict": "All Felder sinn ausgefëllt, awer e puer Zuelen widderhuelen sech. Kuck nach eng Kéier no.",
+    "lib.game.sudokuWrong": "{n} falsch Felder (rout markéiert).",
+    "lib.game.sudokuAllRight": "Keng falsch Felder fonnt.",
+    "lib.game.thinking": "De Computer denkt no…",
+    "lib.game.yourTurn": "Du bass drun",
+    "lib.game.undo": "Réckgängeg",
+    "lib.game.resign": "Opgi",
+    "lib.game.resigned": "Du hues opginn.",
+    "lib.game.chessCheck": "Schach!",
+    "lib.game.chessMateWin": "Schachmatt! Du hues gewonnen.",
+    "lib.game.chessMateLose": "Du bass schachmatt.",
+    "lib.game.chessDraw": "D'Spill ass remis.",
+    "lib.game.chessNote": "Du spills mat Wäiss a fänks un. Klick op deng Figur, dann op d'Feld, wou s de hin wëlls. E Bauer, deen déi lescht Rei erreecht, gëtt eng Damm. Gewënn andeems s de Schwaarz schachmatt setz.",
+    "lib.game.xiangqi": "Xiangqi-Brett",
+    "lib.game.xqCheck": "Schach!",
+    "lib.game.xqMateWin": "Matt! Du hues gewonnen.",
+    "lib.game.xqMateLose": "Du bass matt.",
+    "lib.game.xqStaleWin": "Schwaarz huet keng erlaabt Zich — du hues gewonnen.",
+    "lib.game.xqStaleLose": "Du hues keng erlaabt Zich — du hues verluer.",
+    "lib.game.xqNote": "Du spills mat Rout (ënnen) a fänks un. Klick op deng Figur, dann op de Punkt, wou s de hin wëlls. Déi zwee Generäl däerfen sech net géigeniwwerstoen; Matt oder keng erlaabt Zich bedeit Néierlag.",
+    "lib.game.pass": "Passen",
+    "lib.game.goBoard": "Go-Brett",
+    "lib.game.goCaps": "Gefaangen — Schwaarz: {b} · Wäiss: {w}",
+    "lib.game.goScore": "Score — Schwaarz: {b}, Wäiss: {w} + Komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-Brett. Du spills mat Schwaarz a fänks un. Gezielt gëtt no Fläch (Steng + komplett émgi eidel Punkten); Wäiss kritt {k} Komi. Huel all dout Steng vum Géigner erof, ier s de passs. Suizid an direkt Zréckfänke (Ko) sinn net erlaabt. D'Spill ass eriwwer, wann allebéid Spiller hannereneen passen.",
+    "lib.game.illegal": "Onerlaabten Zuch (Suizid oder direkt Zréckfänke).",
+    "lib.game.aiPassed": "De Computer huet gepasst. Wann du och passs, ass d'Spill eriwwer an et gëtt gezielt.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Liewen",
+    "lib.game.mmAsk": "Op wéi enger Fliesen war dës Form?",
+    "lib.game.mmReady": "Prett?",
+    "lib.game.mmMemorize": "Merk der — nach {s} s",
+    "lib.game.mmQuestion": "Fro {i}/{n}",
+    "lib.game.mmDone": "Fäerdeg!",
+    "lib.game.mmLost": "Keng Liewe méi — all Fliesen sinn opgedeckt.",
+    "lib.game.mmNote": "Dréck Start: d'Fliesen ginn {s} Sekonne gewisen, dann verstoppt. Merk der d'Form an d'Faarf vun all Fliesen, dann wiel d'Fliesen mat der gewisener Form. Méi wéi {l} Feeler a Niveau net geschafft."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel-Daten mat Formele kombinéieren",
       "desc": "Kombinéier vill Bläter oder Excel-Fichieren mat enger Formel pro Zell (SUM, IF, CONCAT, UNIQUE...), verschachtelte Funktiounen a gespäicherte Formelen, déi s de nei benotze kanns."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Spill 9x9-Sudoku online op 10 Niveauen vun einfach bis schwéier, mat Notizen, Tipps a Feelerkontroll."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Grousst 16x16-Sudoku mat 1-9 an A-G, 10 Niveauen vun einfach bis schwéier, mat Notizen an Tipps."
+    },
+    "chess": {
+      "name": "Schach géint de Computer",
+      "desc": "Spill Schach géint de Computer op 10 Niveauen vun einfach bis schwéier, mat Rochade, en passant a Promotioun."
+    },
+    "xiangqi": {
+      "name": "Xiangqi géint de Computer",
+      "desc": "Spill chinesescht Schach (Xiangqi) géint de Computer op 10 Niveauen: Päerdsbeen-Blockade, Elefantenaen, Kanounefänke a Fliegende-General-Regel."
+    },
+    "go-game": {
+      "name": "Go géint de Computer",
+      "desc": "Spill Go géint de Computer op 5x5-, 7x7- an 9x9-Bretter op 10 Niveauen, mat automatescher Zielung um Enn."
+    },
+    "memory-shapes": {
+      "name": "Form- a Faarfgedächtnis",
+      "desc": "Fliesen mat Forme a Faarwen ginn 5 Sekonne gewisen, dann verstoppt; merk der se a wiel déi richteg Fliesen, 10 Niveauen vun einfach bis schwéier."
     }
   },
   "s": {

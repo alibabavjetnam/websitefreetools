@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ontbreekt",
     "lib.excel.duplicate": "Dubbel",
     "lib.excel.valid": "Geldig",
-    "lib.excel.invalid": "Ongeldig"
+    "lib.excel.invalid": "Ongeldig",
+    "lib.game.levels": "Niveau",
+    "lib.game.level": "Niveau {n}",
+    "lib.game.unlockAll": "Alle niveaus ontgrendelen",
+    "lib.game.newGame": "Nieuw spel",
+    "lib.game.retry": "Opnieuw spelen",
+    "lib.game.nextLevel": "Volgend niveau",
+    "lib.game.win": "Je hebt niveau {n} gehaald!",
+    "lib.game.lose": "Niveau {n} niet gehaald. Probeer opnieuw.",
+    "lib.game.draw": "Remise — niveau {n} niet gehaald.",
+    "lib.game.allDone": "Gefeliciteerd! Je hebt alle 10 niveaus gehaald.",
+    "lib.game.time": "Tijd",
+    "lib.game.hint": "Hint",
+    "lib.game.erase": "Wissen",
+    "lib.game.check": "Controleren",
+    "lib.game.notes": "Notities",
+    "lib.game.generating": "Puzzel genereren…",
+    "lib.game.sudokuKeys": "Pijltjestoetsen om te bewegen, cijfertoetsen om in te vullen (16x16: A-G voor 10-16), Backspace om te wissen, N om notities aan/uit te zetten.",
+    "lib.game.sudokuLeft": "Nog {n} vakjes",
+    "lib.game.sudokuConflict": "Alle vakjes zijn gevuld, maar sommige cijfers komen dubbel voor. Controleer opnieuw.",
+    "lib.game.sudokuWrong": "{n} foute vakjes (rood gemarkeerd).",
+    "lib.game.sudokuAllRight": "Geen foute vakjes gevonden.",
+    "lib.game.thinking": "De computer denkt na…",
+    "lib.game.yourTurn": "Jouw beurt",
+    "lib.game.undo": "Ongedaan maken",
+    "lib.game.resign": "Opgeven",
+    "lib.game.resigned": "Je hebt opgegeven.",
+    "lib.game.chessCheck": "Schaak!",
+    "lib.game.chessMateWin": "Schaakmat! Je wint.",
+    "lib.game.chessMateLose": "Je staat schaakmat.",
+    "lib.game.chessDraw": "Het spel is remise.",
+    "lib.game.chessNote": "Je speelt wit en begint. Klik op je stuk en daarna op het veld waar het heen moet. Een pion die de laatste rij bereikt, promoveert tot dame. Win door zwart schaakmat te zetten.",
+    "lib.game.xiangqi": "Xiangqi-bord",
+    "lib.game.xqCheck": "Schaak!",
+    "lib.game.xqMateWin": "Schaakmat! Je wint.",
+    "lib.game.xqMateLose": "Je staat schaakmat.",
+    "lib.game.xqStaleWin": "Zwart heeft geen geldige zetten — je wint.",
+    "lib.game.xqStaleLose": "Je hebt geen geldige zetten — je verliest.",
+    "lib.game.xqNote": "Je speelt rood (onderaan) en begint. Klik op je stuk en daarna op het punt waar het heen moet. De twee generaals mogen elkaar niet aankijken; schaakmat of geen geldige zet betekent verlies.",
+    "lib.game.pass": "Passen",
+    "lib.game.goBoard": "Gobord",
+    "lib.game.goCaps": "Geslagen — Zwart: {b} · Wit: {w}",
+    "lib.game.goScore": "Score — Zwart: {b}, Wit: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Bord van {n}×{n}. Je speelt zwart en begint. Er wordt geteld op gebied (stenen + volledig omsloten lege punten); wit krijgt {k} komi. Sla alle dode stenen van de tegenstander voordat je past. Zelfmoord en direct terugslaan (ko) zijn niet toegestaan. Het spel eindigt als beide spelers achter elkaar passen.",
+    "lib.game.illegal": "Ongeldige zet (zelfmoord of direct terugslaan).",
+    "lib.game.aiPassed": "De computer paste. Als jij ook past, eindigt het spel en wordt het geteld.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Levens",
+    "lib.game.mmAsk": "Welke tegel had deze vorm?",
+    "lib.game.mmReady": "Klaar?",
+    "lib.game.mmMemorize": "Onthoud — nog {s} s",
+    "lib.game.mmQuestion": "Vraag {i}/{n}",
+    "lib.game.mmDone": "Klaar!",
+    "lib.game.mmLost": "Geen levens meer — alle tegels worden nu getoond.",
+    "lib.game.mmNote": "Druk op Start: de tegels worden {s} seconden getoond en daarna verborgen. Onthoud de vorm en kleur van elke tegel en kies dan de tegel die bij de getoonde vorm past. Meer dan {l} fouten en het niveau is mislukt."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel-gegevens combineren met formules",
       "desc": "Combineer veel werkbladen of Excel-bestanden met een formule per cel (SUM, IF, CONCAT, UNIQUE...), geneste functies en opgeslagen formules die u opnieuw kunt gebruiken."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Speel online 9x9-sudoku in 10 niveaus van makkelijk tot moeilijk, met notities, hints en foutcontrole."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Grote 16x16-sudoku met 1-9 en A-G, 10 niveaus van makkelijk tot moeilijk, met notities en hints."
+    },
+    "chess": {
+      "name": "Schaken tegen de computer",
+      "desc": "Speel schaak tegen de computer in 10 niveaus van makkelijk tot moeilijk, met rokade, en passant en promotie."
+    },
+    "xiangqi": {
+      "name": "Xiangqi tegen de computer",
+      "desc": "Speel Chinees schaken (xiangqi) tegen de computer in 10 niveaus, met paardblokkade, olifantsoog, kanonslagen en de regel van de tegenover elkaar staande generaals."
+    },
+    "go-game": {
+      "name": "Go tegen de computer",
+      "desc": "Speel Go tegen de computer op borden van 5x5, 7x7 en 9x9 in 10 niveaus, met automatische telling aan het einde."
+    },
+    "memory-shapes": {
+      "name": "Vorm- en kleurgeheugen",
+      "desc": "Tegels met vormen en kleuren worden 5 seconden getoond en dan verborgen; onthoud en kies de juiste tegel, 10 niveaus van makkelijk tot moeilijk."
     }
   },
   "s": {

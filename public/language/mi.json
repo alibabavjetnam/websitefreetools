@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ngaro",
     "lib.excel.duplicate": "Tīaroaro",
     "lib.excel.valid": "Whaimana",
-    "lib.excel.invalid": "Kāore e whaimana"
+    "lib.excel.invalid": "Kāore e whaimana",
+    "lib.game.levels": "Taumata",
+    "lib.game.level": "Taumata {n}",
+    "lib.game.unlockAll": "Tuwhera i ngā taumata katoa",
+    "lib.game.newGame": "Kēmu hou",
+    "lib.game.retry": "Tākaro anō",
+    "lib.game.nextLevel": "Taumata e whai ake nei",
+    "lib.game.win": "Kua oti i a koe te taumata {n}!",
+    "lib.game.lose": "Kāore anō te taumata {n} kia oti. Whakamātauria anō.",
+    "lib.game.draw": "Hautoru — kāore anō te taumata {n} kia oti.",
+    "lib.game.allDone": "Kia ora! Kua oti i a koe ngā taumata 10 katoa.",
+    "lib.game.time": "Wā",
+    "lib.game.hint": "Tohu āwhina",
+    "lib.game.erase": "Muku",
+    "lib.game.check": "Arowhai",
+    "lib.game.notes": "Tuhipoka",
+    "lib.game.generating": "E waihanga ana i te panga…",
+    "lib.game.sudokuKeys": "Ngā pātene pere hei neke, ngā pātene tau hei whakakī (16x16: A-G mō 10-16), Backspace hei muku, N hei whakakā/whakaweto i ngā tuhipoka.",
+    "lib.game.sudokuLeft": "{n} ngā pūtau e toe ana",
+    "lib.game.sudokuConflict": "Kua whakakīia ngā pūtau katoa engari he tau e takaroa ana. Tirohia anō.",
+    "lib.game.sudokuWrong": "{n} ngā pūtau he (kua tohua ki te whero).",
+    "lib.game.sudokuAllRight": "Kāore he pūtau he i kitea.",
+    "lib.game.thinking": "Kei te whakaaro te rorohiko…",
+    "lib.game.yourTurn": "Tō wā",
+    "lib.game.undo": "Whakakore",
+    "lib.game.resign": "Tuku",
+    "lib.game.resigned": "I tuku koe.",
+    "lib.game.chessCheck": "Haki!",
+    "lib.game.chessMateWin": "Mate-rangatira! I wini koe.",
+    "lib.game.chessMateLose": "I mate-rangatira koe.",
+    "lib.game.chessDraw": "He hautoru te kēmu.",
+    "lib.game.chessNote": "Ko koe te Mā, ā, nōu te neke tuatahi. Pāwhiritia tō kongakonga, ā, ko te tapawhā e haere ai. Ka noho kuini te pōhi ka tae ki te rārangi whakamutunga. Wini mā te mate-rangatira i te Mangu.",
+    "lib.game.xiangqi": "Papa xiangqi",
+    "lib.game.xqCheck": "Haki!",
+    "lib.game.xqMateWin": "Mate-rangatira! I wini koe.",
+    "lib.game.xqMateLose": "I mate-rangatira koe.",
+    "lib.game.xqStaleWin": "Kāore he neke ture a te Mangu — i wini koe.",
+    "lib.game.xqStaleLose": "Kāore āu neke ture — i hinga koe.",
+    "lib.game.xqNote": "Ko koe te Whero (kei raro), ā, nōu te neke tuatahi. Pāwhiritia tō kongakonga, ā, ko te wāhi e haere ai. Kāore e āhei te tokorua ngā tianara ki te tū aroaro; ka hinga te tangata ka mate-rangatira, ka kore rānei he neke ture.",
+    "lib.game.pass": "Pahemo",
+    "lib.game.goBoard": "Papa Go",
+    "lib.game.goCaps": "I mauhia — Mangu: {b} · Mā: {w}",
+    "lib.game.goScore": "Piro — Mangu: {b}, Mā: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "He papa {n}×{n}. Ko koe te Mangu, ā, nōu te neke tuatahi. Ka tatau ki te horahanga (ngā kōhatu + ngā tohu kau kua karapotia katoa); ka riro i te Mā te komi {k}. Mauria ngā kōhatu mate katoa a te hoa tauwhainga i mua i te pahemo. Kāore e whakaaetia te whakamomori me te mau tonu anō (ko). Ka mutu te kēmu ina pahemo ngā kaitākaro e rua i te taha o tētahi i tētahi.",
+    "lib.game.illegal": "Neke ture kore (whakamomori, mau tonu rānei).",
+    "lib.game.aiPassed": "I pahemo te rorohiko. Mēnā ka pahemo koe, ka mutu te kēmu ā, ka tatauria ngā piro.",
+    "lib.game.start": "Tīmata",
+    "lib.game.lives": "Ora",
+    "lib.game.mmAsk": "Ko tēhea taera tēnei āhua?",
+    "lib.game.mmReady": "Kua reri?",
+    "lib.game.mmMemorize": "Maumahara — {s} hēkona e toe ana",
+    "lib.game.mmQuestion": "Pātai {i}/{n}",
+    "lib.game.mmDone": "Kua oti!",
+    "lib.game.mmLost": "Kua pau ngā ora — kua kitea katoatia ngā taera.",
+    "lib.game.mmNote": "Pēhia Tīmata: ka whakaaturia ngā taera mō te {s} hēkona, ka huna. Maumahara ki te āhua me te tae o ia taera, ā, tīpakohia te taera e rite ana ki te āhua e whakaaturia ana. Ki te nui ake i te {l} ngā hapa, ka rahua te taumata."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Whakakotahi raraunga Excel ki te tātai",
       "desc": "Ka whakakotahi i ētahi whārangi, kōnae Excel rānei ki te tātai mō ia ngāwhā (SUM, IF, CONCAT, UNIQUE...), ngā ritenga kōpuku, me ngā tātai kua tiakina e taea ai te whakamahi anō."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Tākarohia te Sudoku 9x9 i runga ipurangi, 10 ngā taumata mai i te māmā ki te uaua, me ngā tuhipoka, ngā tohu āwhina me te arowhai hapa."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "He Sudoku 16x16 nui e whakamahi ana i te 1-9 me te A-G, 10 ngā taumata mai i te māmā ki te uaua, me ngā tuhipoka me ngā tohu āwhina."
+    },
+    "chess": {
+      "name": "Whakatū (Chess) i te Rorohiko",
+      "desc": "Tākarohia te chess ki te rorohiko, 10 ngā taumata mai i te māmā ki te uaua, me te castling, te en passant me te whakatairanga."
+    },
+    "xiangqi": {
+      "name": "Xiangqi i te Rorohiko",
+      "desc": "Tākarohia te chess Hainamana (xiangqi) ki te rorohiko, 10 ngā taumata, me te aukati i te waewae hōiho, te kanohi arewhana, te hopu a te pūkōkiri me te ture o ngā tianara tū aroaro."
+    },
+    "go-game": {
+      "name": "Go i te Rorohiko",
+      "desc": "Tākarohia te Go ki te rorohiko i runga i ngā papa 5x5, 7x7 me 9x9, 10 ngā taumata, me te tatau piro aunoa i te mutunga."
+    },
+    "memory-shapes": {
+      "name": "Maumahara Āhua me te Tae",
+      "desc": "Ka whakaaturia ngā taera he āhua, he tae mō te 5 hēkona, ka huna; maumahara, ā, tīpakohia te taera tika, 10 ngā taumata mai i te māmā ki te uaua."
     }
   },
   "s": {

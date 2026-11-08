@@ -178,7 +178,61 @@
     "lib.excel.missing": "Kosong",
     "lib.excel.duplicate": "Dobel",
     "lib.excel.valid": "Sah",
-    "lib.excel.invalid": "Ora sah"
+    "lib.excel.invalid": "Ora sah",
+    "lib.game.levels": "Level",
+    "lib.game.level": "Level {n}",
+    "lib.game.unlockAll": "Bukak kabeh level",
+    "lib.game.newGame": "Dolanan anyar",
+    "lib.game.retry": "Dolanan maneh",
+    "lib.game.nextLevel": "Level candhake",
+    "lib.game.win": "Sampeyan wis ngrampungake level {n}!",
+    "lib.game.lose": "Level {n} durung rampung. Cobanen maneh.",
+    "lib.game.draw": "Seri — level {n} durung rampung.",
+    "lib.game.allDone": "Sugeng! Sampeyan wis ngrampungake kabeh 10 level.",
+    "lib.game.time": "Wektu",
+    "lib.game.hint": "Pitunjuk",
+    "lib.game.erase": "Busak",
+    "lib.game.check": "Priksa",
+    "lib.game.notes": "Cathetan",
+    "lib.game.generating": "Nggawe teka-teki…",
+    "lib.game.sudokuKeys": "Tombol panah kanggo pindhah, tombol angka kanggo ngisi (16x16: A-G kanggo 10-16), Backspace kanggo mbusak, N kanggo urip/mati cathetan.",
+    "lib.game.sudokuLeft": "Isih {n} kothak",
+    "lib.game.sudokuConflict": "Kabeh kothak wis kapenuhan nanging ana angka sing kaping pindho. Mangga priksa maneh.",
+    "lib.game.sudokuWrong": "{n} kothak salah (ditandhani abang).",
+    "lib.game.sudokuAllRight": "Ora ana kothak sing salah.",
+    "lib.game.thinking": "Komputer lagi mikir…",
+    "lib.game.yourTurn": "Giliranmu",
+    "lib.game.undo": "Walik",
+    "lib.game.resign": "Nyerah",
+    "lib.game.resigned": "Sampeyan nyerah.",
+    "lib.game.chessCheck": "Skak!",
+    "lib.game.chessMateWin": "Skakmat! Sampeyan menang.",
+    "lib.game.chessMateLose": "Sampeyan kena skakmat.",
+    "lib.game.chessDraw": "Dolanan rampung seri.",
+    "lib.game.chessNote": "Sampeyan main Putih lan mlaku luwih dhisik. Klik bidakmu, banjur kothak tujuan. Pion sing tekan baris pungkasan dadi ratu. Menang kanthi skakmat Ireng.",
+    "lib.game.xiangqi": "Papan Xiangqi",
+    "lib.game.xqCheck": "Skak!",
+    "lib.game.xqMateWin": "Skakmat! Sampeyan menang.",
+    "lib.game.xqMateLose": "Sampeyan kena skakmat.",
+    "lib.game.xqStaleWin": "Ireng ora duwe langkah sing sah — sampeyan menang.",
+    "lib.game.xqStaleLose": "Sampeyan ora duwe langkah sing sah — sampeyan kalah.",
+    "lib.game.xqNote": "Sampeyan main Abang (ing ngisor) lan mlaku luwih dhisik. Klik bidakmu, banjur titik tujuan. Rong jenderal ora keno hadap-hadapan; skakmat utawa ora ana langkah sah tegese kalah.",
+    "lib.game.pass": "Lewati",
+    "lib.game.goBoard": "Papan Go",
+    "lib.game.goCaps": "Katangkep — Ireng: {b} · Putih: {w}",
+    "lib.game.goScore": "Skor — Ireng: {b}, Putih: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Papan {n}×{n}. Sampeyan main Ireng lan mlaku luwih dhisik. Skor diitung miturut wilayah (watu + titik kosong sing kepung kabeh); Putih entuk komi {k}. Tangkepa kabeh watu mati lawan sadurunge lewati. Bunuh diri lan ngrebut bali langsung (ko) ora olèh. Dolanan rampung nalika loro pemain lewati urut-urutan.",
+    "lib.game.illegal": "Langkah ora sah (bunuh diri utawa ngrebut bali langsung).",
+    "lib.game.aiPassed": "Komputer lewati giliran. Yen sampeyan uga lewati, dolanan rampung lan skor diitung.",
+    "lib.game.start": "Miwiti",
+    "lib.game.lives": "Nyawa",
+    "lib.game.mmAsk": "Petak endi sing bentuke kaya iki?",
+    "lib.game.mmReady": "Siap?",
+    "lib.game.mmMemorize": "Apalna — isih {s} detik",
+    "lib.game.mmQuestion": "Pitakon {i}/{n}",
+    "lib.game.mmDone": "Rampung!",
+    "lib.game.mmLost": "Nyawa entek — kabeh petak saiki dibukak.",
+    "lib.game.mmNote": "Pencet Miwiti: petak ditampilake {s} detik, banjur didhelikake. Éling bentuk lan warna saben petak, banjur pilih petak sing cocog karo bentuk sing ditampilake. Luwih saka {l} kesalahan, level gagal."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Gabungake Data Excel nganggo Rumus",
       "desc": "Gabungake akeh lembar utawa file Excel nganggo rumus saben sel (SUM, IF, CONCAT, UNIQUE...), fungsi bersarang, lan rumus kesimpen sing bisa dienggo maneh."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Dolanan Sudoku 9x9 online ing 10 level saka gampang nganti angel, nganggo cathetan, pitunjuk lan priksa kesalahan."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku gedhe 16x16 nganggo 1-9 lan A-G, 10 level saka gampang nganti angel, nganggo cathetan lan pitunjuk."
+    },
+    "chess": {
+      "name": "Catur lawan komputer",
+      "desc": "Main catur lawan komputer ing 10 level saka gampang nganti angel, nganggo rokade, en passant lan promosi."
+    },
+    "xiangqi": {
+      "name": "Xiangqi lawan komputer",
+      "desc": "Main catur Tiongkok (xiangqi) lawan komputer ing 10 level, nganggo aturan sikil jaran kablokir, mripat gajah, mangsa meriam lan aturan jenderal hadap-hadapan."
+    },
+    "go-game": {
+      "name": "Go lawan komputer",
+      "desc": "Main Go lawan komputer ing papan 5x5, 7x7 lan 9x9 ing 10 level, nganggo etungan skor otomatis ing pungkasan."
+    },
+    "memory-shapes": {
+      "name": "Memori wujud & warna",
+      "desc": "Petak kanthi wujud lan warna ditampilake 5 detik, banjur didhelikake; apalna lan pilih petak sing bener, 10 level saka gampang nganti angel."
     }
   },
   "s": {

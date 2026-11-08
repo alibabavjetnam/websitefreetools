@@ -178,7 +178,61 @@
     "lib.excel.missing": "Mancante",
     "lib.excel.duplicate": "Duplicato",
     "lib.excel.valid": "Valido",
-    "lib.excel.invalid": "Non valido"
+    "lib.excel.invalid": "Non valido",
+    "lib.game.levels": "Livello",
+    "lib.game.level": "Livello {n}",
+    "lib.game.unlockAll": "Sblocca tutti i livelli",
+    "lib.game.newGame": "Nuova partita",
+    "lib.game.retry": "Gioca ancora",
+    "lib.game.nextLevel": "Livello successivo",
+    "lib.game.win": "Hai superato il livello {n}!",
+    "lib.game.lose": "Livello {n} non superato. Riprova.",
+    "lib.game.draw": "Pareggio — livello {n} non superato.",
+    "lib.game.allDone": "Complimenti! Hai superato tutti i 10 livelli.",
+    "lib.game.time": "Tempo",
+    "lib.game.hint": "Aiuto",
+    "lib.game.erase": "Cancella",
+    "lib.game.check": "Controlla",
+    "lib.game.notes": "Note",
+    "lib.game.generating": "Generazione del puzzle…",
+    "lib.game.sudokuKeys": "Frecce per muoverti, tasti numerici per inserire (16x16: A-G per 10-16), Backspace per cancellare, N per attivare le note.",
+    "lib.game.sudokuLeft": "{n} caselle rimaste",
+    "lib.game.sudokuConflict": "Tutte le caselle sono piene ma alcuni numeri si ripetono. Controlla di nuovo.",
+    "lib.game.sudokuWrong": "{n} caselle errate (segnate in rosso).",
+    "lib.game.sudokuAllRight": "Nessuna casella errata.",
+    "lib.game.thinking": "Il computer sta pensando…",
+    "lib.game.yourTurn": "Tocca a te",
+    "lib.game.undo": "Annulla",
+    "lib.game.resign": "Abbandona",
+    "lib.game.resigned": "Hai abbandonato.",
+    "lib.game.chessCheck": "Scacco!",
+    "lib.game.chessMateWin": "Scacco matto! Hai vinto.",
+    "lib.game.chessMateLose": "Hai subito scacco matto.",
+    "lib.game.chessDraw": "La partita è patta.",
+    "lib.game.chessNote": "Giochi con il Bianco e muovi per primo. Clicca il tuo pezzo, poi la casa di destinazione. I pedoni che raggiungono l'ultima traversa promuovono a donna. Vinci dando scacco matto al Nero.",
+    "lib.game.xiangqi": "Scacchiera di xiangqi",
+    "lib.game.xqCheck": "Scacco!",
+    "lib.game.xqMateWin": "Scacco matto! Hai vinto.",
+    "lib.game.xqMateLose": "Hai subito scacco matto.",
+    "lib.game.xqStaleWin": "Il Nero non ha mosse legali — hai vinto.",
+    "lib.game.xqStaleLose": "Non hai mosse legali — hai perso.",
+    "lib.game.xqNote": "Giochi con il Rosso (in basso) e muovi per primo. Clicca il tuo pezzo, poi il punto di destinazione. I due generali non possono guardarsi; lo scacco matto o l'assenza di mosse legali fa perdere.",
+    "lib.game.pass": "Passa",
+    "lib.game.goBoard": "Goban",
+    "lib.game.goCaps": "Catturate — Nero: {b} · Bianco: {w}",
+    "lib.game.goScore": "Punteggio — Nero: {b}, Bianco: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Goban {n}×{n}. Giochi con il Nero e muovi per primo. Il punteggio è per area (pietre + punti vuoti completamente circondati); il Bianco riceve {k} di komi. Cattura tutte le pietre morte dell'avversario prima di passare. Suicidio e ripresa immediata (ko) non sono consentiti. La partita termina quando entrambi passano di seguito.",
+    "lib.game.illegal": "Mossa illegale (suicidio o ripresa immediata).",
+    "lib.game.aiPassed": "Il computer ha passato. Se passi anche tu, la partita termina e viene contata.",
+    "lib.game.start": "Inizia",
+    "lib.game.lives": "Vite",
+    "lib.game.mmAsk": "Quale tessera aveva questa forma?",
+    "lib.game.mmReady": "Pronto?",
+    "lib.game.mmMemorize": "Memorizza — {s} s rimasti",
+    "lib.game.mmQuestion": "Domanda {i}/{n}",
+    "lib.game.mmDone": "Fatto!",
+    "lib.game.mmLost": "Vite esaurite — ora tutte le tessere sono scoperte.",
+    "lib.game.mmNote": "Premi Inizia: le tessere vengono mostrate per {s} secondi, poi nascoste. Ricorda forma e colore di ogni tessera, poi scegli quella che corrisponde alla forma mostrata. Più di {l} errori e il livello è fallito."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combina dati Excel con le formule",
       "desc": "Combina più fogli o file Excel con una formula per cella (SUM, IF, CONCAT, UNIQUE...), funzioni annidate e formule salvate da riutilizzare."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Gioca online a Sudoku 9x9 in 10 livelli da facile a difficile, con note, aiuti e controllo errori."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Grande Sudoku 16x16 con 1-9 e A-G, 10 livelli da facile a difficile, con note e aiuti."
+    },
+    "chess": {
+      "name": "Scacchi contro il computer",
+      "desc": "Gioca a scacchi contro il computer in 10 livelli da facile a difficile, con arrocco, presa en passant e promozione."
+    },
+    "xiangqi": {
+      "name": "Xiangqi contro il computer",
+      "desc": "Gioca a scacchi cinesi (xiangqi) contro il computer in 10 livelli, con blocco della zampa del cavallo, occhio dell'elefante, catture del cannone e regola dei generali."
+    },
+    "go-game": {
+      "name": "Go contro il computer",
+      "desc": "Gioca a Go contro il computer su goban 5x5, 7x7 e 9x9 in 10 livelli, con conteggio automatico a fine partita."
+    },
+    "memory-shapes": {
+      "name": "Memoria di forme e colori",
+      "desc": "Tessere con forme e colori vengono mostrate per 5 secondi e poi nascoste; ricorda e scegli la tessera giusta, 10 livelli da facile a difficile."
     }
   },
   "s": {

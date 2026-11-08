@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ar iarraidh",
     "lib.excel.duplicate": "Dúblach",
     "lib.excel.valid": "Bailí",
-    "lib.excel.invalid": "Neamhbhailí"
+    "lib.excel.invalid": "Neamhbhailí",
+    "lib.game.levels": "Leibhéal",
+    "lib.game.level": "Leibhéal {n}",
+    "lib.game.unlockAll": "Díghlasáil gach leibhéal",
+    "lib.game.newGame": "Cluiche nua",
+    "lib.game.retry": "Imir arís",
+    "lib.game.nextLevel": "An chéad leibhéal eile",
+    "lib.game.win": "Chríochnaigh tú leibhéal {n}!",
+    "lib.game.lose": "Níor chríochnaigh tú leibhéal {n}. Bain triail eile as.",
+    "lib.game.draw": "Comhscór — níor chríochnaíodh leibhéal {n}.",
+    "lib.game.allDone": "Comhghairdeas! Chríochnaigh tú gach ceann de na 10 leibhéal.",
+    "lib.game.time": "Am",
+    "lib.game.hint": "Leid",
+    "lib.game.erase": "Scrios",
+    "lib.game.check": "Seiceáil",
+    "lib.game.notes": "Nótaí",
+    "lib.game.generating": "Ag cruthú an chrosfhocail…",
+    "lib.game.sudokuKeys": "Na heochracha saighde le bogadh, eochracha uimhreacha le líonadh (16x16: A-G do 10-16), Backspace le scriosadh, N le nótaí a thoghlú.",
+    "lib.game.sudokuLeft": "{n} cealla fágtha",
+    "lib.game.sudokuConflict": "Tá gach cill líonta ach tá roinnt uimhreacha athdhéanta. Seiceáil arís le do thoil.",
+    "lib.game.sudokuWrong": "{n} cill mhícheart (marcáilte i ndearg).",
+    "lib.game.sudokuAllRight": "Níor aimsíodh cill mhícheart ar bith.",
+    "lib.game.thinking": "Tá an ríomhaire ag smaoineamh…",
+    "lib.game.yourTurn": "Do sheal",
+    "lib.game.undo": "Cealaigh",
+    "lib.game.resign": "Géill",
+    "lib.game.resigned": "Ghéill tú.",
+    "lib.game.chessCheck": "Seic!",
+    "lib.game.chessMateWin": "Seicmhaith! Bhuaigh tú.",
+    "lib.game.chessMateLose": "Cuireadh seicmhaith ort.",
+    "lib.game.chessDraw": "Is comhscór an cluiche.",
+    "lib.game.chessNote": "Imríonn tú bán agus bogann tú ar dtús. Cliceáil ar do phíosa agus ansin ar an chearnóg le bogadh chuici. Déantar banríon de phéisteanna a shroicheann an rang deireanach. Buaigh trí sheicmhaith a chur ar dhubh.",
+    "lib.game.xiangqi": "Clár xiangqi",
+    "lib.game.xqCheck": "Seic!",
+    "lib.game.xqMateWin": "Seicmhaith! Bhuaigh tú.",
+    "lib.game.xqMateLose": "Cuireadh seicmhaith ort.",
+    "lib.game.xqStaleWin": "Níl aon bhogadh dlisteanach ag dubh — bhuaigh tú.",
+    "lib.game.xqStaleLose": "Níl aon bhogadh dlisteanach agat — chaill tú.",
+    "lib.game.xqNote": "Imríonn tú dearg (thíos) agus bogann tú ar dtús. Cliceáil ar do phíosa agus ansin ar an bpointe le bogadh chuige. Ní féidir leis an dá ghinearál aghaidh a thabhairt ar a chéile; caillfear le seicmhaith nó gan bogadh dlisteanach.",
+    "lib.game.pass": "Pas",
+    "lib.game.goBoard": "Clár Go",
+    "lib.game.goCaps": "Gafa — dubh: {b} · bán: {w}",
+    "lib.game.goScore": "Scór — dubh: {b}, bán: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Clár {n}×{n}. Imríonn tú dubh agus bogann tú ar dtús. Scóráiltear de réir achair (clocha + pointí folmha atá faoi iamh go hiomlán); faigheann bán komi {k}. Gabh clocha marbha uile an chéile comhraic sula ndéanann tú pas. Ní cheadaítear féinmharú ná athghabháil láithreach (ko). Críochnaíonn an cluiche nuair a dhéanann an bheirt pas as a chéile.",
+    "lib.game.illegal": "Bogadh mídhleathach (féinmharú nó athghabháil láithreach).",
+    "lib.game.aiPassed": "Rinne an ríomhaire pas. Má dhéanann tusa pas freisin, críochnaíonn an cluiche agus scóráiltear é.",
+    "lib.game.start": "Tosaigh",
+    "lib.game.lives": "Saolta",
+    "lib.game.mmAsk": "Cén tíl a raibh an cruth seo uirthi?",
+    "lib.game.mmReady": "Réidh?",
+    "lib.game.mmMemorize": "Cuimhnigh — {s} s fágtha",
+    "lib.game.mmQuestion": "Ceist {i}/{n}",
+    "lib.game.mmDone": "Críochnaithe!",
+    "lib.game.mmLost": "Níl saol fágtha — tá gach tíl nochtaithe anois.",
+    "lib.game.mmNote": "Brúigh Tosaigh: taispeántar na tíleanna ar feadh {s} soicind agus ansin folaítear iad. Cuimhnigh ar chruth agus ar dhath gach tíle, ansin roghnaigh an tíl a oireann don chruth a thaispeántar duit. Má dhéanann tú níos mó ná {l} botún, teipeann ar an leibhéal."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Comhcheangail sonraí Excel le foirmlí",
       "desc": "Comhcheangail go leor bileog nó comhad Excel le foirmle in aghaidh na cille (SUM, IF, CONCAT, UNIQUE...), feidhmeanna neadaithe, agus foirmlí sábháilte is féidir a athúsáid."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Imir Sudoku 9x9 ar líne thar 10 leibhéal ó éasca go deacair, le nótaí, leideanna agus seiceáil earráidí."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku mór 16x16 le 1-9 agus A-G, 10 leibhéal ó éasca go deacair, le nótaí agus leideanna."
+    },
+    "chess": {
+      "name": "Ficheall i gcoinne an ríomhaire",
+      "desc": "Imir ficheall i gcoinne an ríomhaire thar 10 leibhéal ó éasca go deacair, le caisleánú, en passant agus ardú céime."
+    },
+    "xiangqi": {
+      "name": "Xiangqi i gcoinne an ríomhaire",
+      "desc": "Imir ficheall na Síne (xiangqi) i gcoinne an ríomhaire thar 10 leibhéal, le bac cos an chapaill, súil an eilifint, gabháil an chanóin agus riail an ghinearáil eitilte."
+    },
+    "go-game": {
+      "name": "Go i gcoinne an ríomhaire",
+      "desc": "Imir Go i gcoinne an ríomhaire ar chláir 5x5, 7x7 agus 9x9 thar 10 leibhéal, le scóráil uathoibríoch ag an deireadh."
+    },
+    "memory-shapes": {
+      "name": "Cuimhne Cruth & Dath",
+      "desc": "Taispeántar tíleanna le cruthanna agus dathanna ar feadh 5 soicind agus ansin folaítear iad; cuimhnigh agus roghnaigh an tíl cheart, 10 leibhéal ó éasca go deacair."
     }
   },
   "s": {

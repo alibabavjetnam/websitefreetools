@@ -178,7 +178,61 @@
     "lib.excel.missing": "Saknas",
     "lib.excel.duplicate": "Dubblett",
     "lib.excel.valid": "Giltig",
-    "lib.excel.invalid": "Ogiltig"
+    "lib.excel.invalid": "Ogiltig",
+    "lib.game.levels": "Nivå",
+    "lib.game.level": "Nivå {n}",
+    "lib.game.unlockAll": "Lås upp alla nivåer",
+    "lib.game.newGame": "Nytt spel",
+    "lib.game.retry": "Spela igen",
+    "lib.game.nextLevel": "Nästa nivå",
+    "lib.game.win": "Du klarade nivå {n}!",
+    "lib.game.lose": "Nivå {n} klarades inte. Försök igen.",
+    "lib.game.draw": "Oavgjort — nivå {n} klarades inte.",
+    "lib.game.allDone": "Grattis! Du har klarat alla 10 nivåer.",
+    "lib.game.time": "Tid",
+    "lib.game.hint": "Tips",
+    "lib.game.erase": "Radera",
+    "lib.game.check": "Kontrollera",
+    "lib.game.notes": "Anteckningar",
+    "lib.game.generating": "Skapar pussel…",
+    "lib.game.sudokuKeys": "Piltangenter för att flytta, siffertangenter för att fylla i (16x16: A-G för 10-16), Backsteg för att radera, N för att slå på/av anteckningar.",
+    "lib.game.sudokuLeft": "{n} rutor kvar",
+    "lib.game.sudokuConflict": "Alla rutor är ifyllda men vissa siffror upprepas. Kontrollera igen.",
+    "lib.game.sudokuWrong": "{n} felaktiga rutor (markerade i rött).",
+    "lib.game.sudokuAllRight": "Inga felaktiga rutor hittades.",
+    "lib.game.thinking": "Datorn tänker…",
+    "lib.game.yourTurn": "Din tur",
+    "lib.game.undo": "Ångra",
+    "lib.game.resign": "Ge upp",
+    "lib.game.resigned": "Du gav upp.",
+    "lib.game.chessCheck": "Schack!",
+    "lib.game.chessMateWin": "Schackmatt! Du vinner.",
+    "lib.game.chessMateLose": "Du är schackmatt.",
+    "lib.game.chessDraw": "Partiet slutade oavgjort.",
+    "lib.game.chessNote": "Du spelar vit och börjar. Klicka på din pjäs och sedan på rutan du vill flytta till. En bonde som når sista raden blir dam. Vinn genom att sätta svart schackmatt.",
+    "lib.game.xiangqi": "Xiangqi-bräde",
+    "lib.game.xqCheck": "Schack!",
+    "lib.game.xqMateWin": "Schackmatt! Du vinner.",
+    "lib.game.xqMateLose": "Du är schackmatt.",
+    "lib.game.xqStaleWin": "Svart har inga lagliga drag — du vinner.",
+    "lib.game.xqStaleLose": "Du har inga lagliga drag — du förlorar.",
+    "lib.game.xqNote": "Du spelar rött (nederst) och börjar. Klicka på din pjäs och sedan på punkten du vill flytta till. De två generalerna får inte se varandra; schackmatt eller inga lagliga drag förlorar.",
+    "lib.game.pass": "Passa",
+    "lib.game.goBoard": "Go-bräde",
+    "lib.game.goCaps": "Tagna — Svart: {b} · Vit: {w}",
+    "lib.game.goScore": "Poäng — Svart: {b}, Vit: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-bräde. Du spelar svart och börjar. Poängräkning sker efter område (stenar + helt omslutna tomma punkter); vit får {k} komi. Fånga alla motståndarens döda stenar innan du passar. Självmord och omedelbart återtagande (ko) är inte tillåtet. Spelet slutar när båda spelarna passar i följd.",
+    "lib.game.illegal": "Ogiltigt drag (självmord eller omedelbart återtagande).",
+    "lib.game.aiPassed": "Datorn passade. Om du också passar tar spelet slut och poängen räknas.",
+    "lib.game.start": "Starta",
+    "lib.game.lives": "Liv",
+    "lib.game.mmAsk": "Vilken bricka hade den här formen?",
+    "lib.game.mmReady": "Redo?",
+    "lib.game.mmMemorize": "Memorera — {s} s kvar",
+    "lib.game.mmQuestion": "Fråga {i}/{n}",
+    "lib.game.mmDone": "Klart!",
+    "lib.game.mmLost": "Inga liv kvar — alla brickor visas nu.",
+    "lib.game.mmNote": "Tryck på Starta: brickorna visas i {s} sekunder och döljs sedan. Kom ihåg form och färg på varje bricka och välj sedan brickan som matchar formen du får se. Fler än {l} fel och nivån misslyckas."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Kombinera Excel-data med formler",
       "desc": "Kombinera flera kalkylblad eller Excel-filer med en formel per cell (SUM, IF, CONCAT, UNIQUE...), kapslade funktioner och sparade formler som du kan återanvända."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Spela 9x9-sudoku online på 10 nivåer från lätt till svår, med anteckningar, tips och felkontroll."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Stor 16x16-sudoku med 1-9 och A-G, 10 nivåer från lätt till svår, med anteckningar och tips."
+    },
+    "chess": {
+      "name": "Schack mot datorn",
+      "desc": "Spela schack mot datorn på 10 nivåer från lätt till svår, med rockad, en passant och promovering."
+    },
+    "xiangqi": {
+      "name": "Xiangqi mot datorn",
+      "desc": "Spela kinesiskt schack (xiangqi) mot datorn på 10 nivåer, med hästbenet, elefantögat, kanonslag och regeln om generalerna som möts."
+    },
+    "go-game": {
+      "name": "Go mot datorn",
+      "desc": "Spela Go mot datorn på 5x5-, 7x7- och 9x9-bräden på 10 nivåer, med automatisk poängräkning i slutet."
+    },
+    "memory-shapes": {
+      "name": "Form- och färgminne",
+      "desc": "Brickor med former och färger visas i 5 sekunder och döljs sedan; kom ihåg och välj rätt bricka, 10 nivåer från lätt till svår."
     }
   },
   "s": {

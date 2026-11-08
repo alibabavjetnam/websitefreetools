@@ -178,7 +178,61 @@
     "lib.excel.missing": "Çatışmır",
     "lib.excel.duplicate": "Təkrar",
     "lib.excel.valid": "Düzgün",
-    "lib.excel.invalid": "Yanlış"
+    "lib.excel.invalid": "Yanlış",
+    "lib.game.levels": "Səviyyə",
+    "lib.game.level": "Səviyyə {n}",
+    "lib.game.unlockAll": "Bütün səviyyələri aç",
+    "lib.game.newGame": "Yeni oyun",
+    "lib.game.retry": "Yenidən oyna",
+    "lib.game.nextLevel": "Növbəti səviyyə",
+    "lib.game.win": "{n}-ci səviyyəni keçdiniz!",
+    "lib.game.lose": "{n}-ci səviyyə keçilmədi. Yenidən cəhd edin.",
+    "lib.game.draw": "Heç-heçə — {n}-ci səviyyə keçilmədi.",
+    "lib.game.allDone": "Təbriklər! 10 səviyyənin hamısını keçdiniz.",
+    "lib.game.time": "Vaxt",
+    "lib.game.hint": "İpucu",
+    "lib.game.erase": "Sil",
+    "lib.game.check": "Yoxla",
+    "lib.game.notes": "Qeydlər",
+    "lib.game.generating": "Tapmaca yaradılır…",
+    "lib.game.sudokuKeys": "Hərəkət üçün ox düymələri, doldurmaq üçün rəqəm düymələri (16x16: 10-16 üçün A-G), silmək üçün Backspace, qeydləri açıb-bağlamaq üçün N.",
+    "lib.game.sudokuLeft": "{n} xana qalıb",
+    "lib.game.sudokuConflict": "Bütün xanalar doludur, lakin bəzi rəqəmlər təkrarlanır. Zəhmət olmasa yenidən yoxlayın.",
+    "lib.game.sudokuWrong": "{n} səhv xana (qırmızı ilə işarələnib).",
+    "lib.game.sudokuAllRight": "Səhv xana tapılmadı.",
+    "lib.game.thinking": "Kompüter düşünür…",
+    "lib.game.yourTurn": "Sizin növbəniz",
+    "lib.game.undo": "Geri al",
+    "lib.game.resign": "Təslim ol",
+    "lib.game.resigned": "Təslim oldunuz.",
+    "lib.game.chessCheck": "Şah!",
+    "lib.game.chessMateWin": "Mat! Qalib gəldiniz.",
+    "lib.game.chessMateLose": "Sizə mat verildi.",
+    "lib.game.chessDraw": "Oyun heç-heçə bitdi.",
+    "lib.game.chessNote": "Siz ağ rənglə oynayırsınız və birinci gedirsiniz. Fiqurunuzu, sonra gedəcəyi xananı klikləyin. Son cərgəyə çatan piyada vəzirə çevrilir. Qaraya mat verməklə qalib gəlin.",
+    "lib.game.xiangqi": "Syanqi taxtası",
+    "lib.game.xqCheck": "Şah!",
+    "lib.game.xqMateWin": "Mat! Qalib gəldiniz.",
+    "lib.game.xqMateLose": "Sizə mat verildi.",
+    "lib.game.xqStaleWin": "Qaranın qanuni gedişi yoxdur — qalib gəldiniz.",
+    "lib.game.xqStaleLose": "Sizin qanuni gedişiniz yoxdur — uduzdunuz.",
+    "lib.game.xqNote": "Siz qırmızı (aşağıda) ilə oynayırsınız və birinci gedirsiniz. Fiqurunuzu, sonra gedəcəyi nöqtəni klikləyin. İki general üz-üzə dayana bilməz; mat verilən və ya qanuni gedişi qalmayan uduzur.",
+    "lib.game.pass": "Keç",
+    "lib.game.goBoard": "Qo taxtası",
+    "lib.game.goCaps": "Əsir alınanlar — Qara: {b} · Ağ: {w}",
+    "lib.game.goScore": "Xal — Qara: {b}, Ağ: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} taxta. Siz qara ilə oynayırsınız və birinci gedirsiniz. Xal sahəyə görə hesablanır (daşlar + tam əhatə olunmuş boş nöqtələr); ağa {k} komi verilir. Keçməzdən əvvəl rəqibin bütün ölü daşlarını götürün. İntihar və dərhal geri alma (ko) qadağandır. Hər iki oyunçu ardıcıl keçdikdə oyun bitir.",
+    "lib.game.illegal": "Qeyri-qanuni gediş (intihar və ya dərhal geri alma).",
+    "lib.game.aiPassed": "Kompüter keçdi. Siz də keçsəniz, oyun bitəcək və xal hesablanacaq.",
+    "lib.game.start": "Başla",
+    "lib.game.lives": "Can",
+    "lib.game.mmAsk": "Bu forma hansı kafelin idi?",
+    "lib.game.mmReady": "Hazırsınız?",
+    "lib.game.mmMemorize": "Yadda saxlayın — {s} san qalıb",
+    "lib.game.mmQuestion": "Sual {i}/{n}",
+    "lib.game.mmDone": "Hazırdır!",
+    "lib.game.mmLost": "Can qalmadı — bütün kafellər açıldı.",
+    "lib.game.mmNote": "Başla düyməsini basın: kafellər {s} saniyə göstərilir, sonra gizlənir. Hər kafelin formasını və rəngini yadda saxlayın, sonra göstərilən formaya uyğun kafeli seçin. {l} səhvdən çox olarsa, səviyyə keçilmir."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel məlumatlarını düsturlarla birləşdirmə",
       "desc": "Çox vərəq və ya Excel faylını hər xana üçün düsturla (SUM, IF, CONCAT, UNIQUE...), iç-içə funksiyalar və təkrar istifadə edilən saxlanmış düsturlarla birləşdirir."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "9x9 Sudokunu onlayn oynayın: asandan çətinə 10 səviyyə, qeydlər, ipucular və səhv yoxlaması ilə."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "1-9 və A-G istifadə edən böyük 16x16 Sudoku, asandan çətinə 10 səviyyə, qeydlər və ipucular ilə."
+    },
+    "chess": {
+      "name": "Kompüterə qarşı şahmat",
+      "desc": "Kompüterə qarşı şahmat oynayın: asandan çətinə 10 səviyyə, rokirovka, en passant və piyadanın çevrilməsi ilə."
+    },
+    "xiangqi": {
+      "name": "Kompüterə qarşı Syanqi",
+      "desc": "Kompüterə qarşı Çin şahmatı (syanqi) oynayın: 10 səviyyə, atın ayağının bağlanması, filin gözü, topla tutma və generalların üz-üzə gəlməsi qaydası ilə."
+    },
+    "go-game": {
+      "name": "Kompüterə qarşı Qo",
+      "desc": "Kompüterə qarşı Qo oynayın: 5x5, 7x7 və 9x9 taxtalarda 10 səviyyə, sonda avtomatik xal hesablanması ilə."
+    },
+    "memory-shapes": {
+      "name": "Forma və rəng yaddaşı",
+      "desc": "Forma və rəngləri olan kafellər 5 saniyə göstərilir, sonra gizlənir; yadda saxlayıb düzgün kafeli seçin, asandan çətinə 10 səviyyə."
     }
   },
   "s": {

@@ -178,7 +178,61 @@
     "lib.excel.missing": "Mangler",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Gyldig",
-    "lib.excel.invalid": "Ugyldig"
+    "lib.excel.invalid": "Ugyldig",
+    "lib.game.levels": "Nivå",
+    "lib.game.level": "Nivå {n}",
+    "lib.game.unlockAll": "Lås opp alle nivåer",
+    "lib.game.newGame": "Nytt spill",
+    "lib.game.retry": "Spill igjen",
+    "lib.game.nextLevel": "Neste nivå",
+    "lib.game.win": "Du klarte nivå {n}!",
+    "lib.game.lose": "Nivå {n} ikke klart. Prøv igjen.",
+    "lib.game.draw": "Remis — nivå {n} ikke klart.",
+    "lib.game.allDone": "Gratulerer! Du klarte alle 10 nivåene.",
+    "lib.game.time": "Tid",
+    "lib.game.hint": "Hint",
+    "lib.game.erase": "Slett",
+    "lib.game.check": "Kontroller",
+    "lib.game.notes": "Notater",
+    "lib.game.generating": "Lager oppgave…",
+    "lib.game.sudokuKeys": "Piltaster for å flytte, tallstaster for å fylle ut (16x16: A-G for 10-16), Backspace for å slette, N for å slå notater av/på.",
+    "lib.game.sudokuLeft": "{n} ruter igjen",
+    "lib.game.sudokuConflict": "Alle ruter er fylt ut, men noen tall gjentas. Kontroller på nytt.",
+    "lib.game.sudokuWrong": "{n} feil ruter (merket med rødt).",
+    "lib.game.sudokuAllRight": "Ingen feil ruter funnet.",
+    "lib.game.thinking": "Datamaskinen tenker …",
+    "lib.game.yourTurn": "Din tur",
+    "lib.game.undo": "Angre",
+    "lib.game.resign": "Gi opp",
+    "lib.game.resigned": "Du ga opp.",
+    "lib.game.chessCheck": "Sjakk!",
+    "lib.game.chessMateWin": "Sjakkmatt! Du vinner.",
+    "lib.game.chessMateLose": "Du er satt sjakkmatt.",
+    "lib.game.chessDraw": "Partiet ble remis.",
+    "lib.game.chessNote": "Du spiller hvit og trekker først. Klikk på brikken din og deretter på ruten du vil flytte til. Bønder som når siste rad, forfremmes til dronning. Vinn ved å sette svart sjakkmatt.",
+    "lib.game.xiangqi": "Xiangqi-brett",
+    "lib.game.xqCheck": "Sjakk!",
+    "lib.game.xqMateWin": "Sjakkmatt! Du vinner.",
+    "lib.game.xqMateLose": "Du er satt sjakkmatt.",
+    "lib.game.xqStaleWin": "Svart har ingen lovlige trekk — du vinner.",
+    "lib.game.xqStaleLose": "Du har ingen lovlige trekk — du taper.",
+    "lib.game.xqNote": "Du spiller rød (nederst) og trekker først. Klikk på brikken din og deretter på punktet du vil flytte til. De to generalene kan ikke stå ansikt til ansikt; sjakkmatt eller ingen lovlige trekk taper.",
+    "lib.game.pass": "Pass",
+    "lib.game.goBoard": "Go-brett",
+    "lib.game.goCaps": "Fanget — svart: {b} · hvit: {w}",
+    "lib.game.goScore": "Poeng — svart: {b}, hvit: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-brett. Du spiller svart og trekker først. Poengtelling etter område (steiner + helt omsluttede tomme punkter); hvit får {k} i komi. Fang alle motstanderens døde steiner før du passer. Selvmord og umiddelbar gjenfangst (ko) er ikke tillatt. Spillet er over når begge passer på rad.",
+    "lib.game.illegal": "Ulovlig trekk (selvmord eller umiddelbar gjenfangst).",
+    "lib.game.aiPassed": "Datamaskinen passet. Hvis du også passer, er spillet over og telles opp.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Liv",
+    "lib.game.mmAsk": "Hvilken brikke hadde denne formen?",
+    "lib.game.mmReady": "Klar?",
+    "lib.game.mmMemorize": "Husk — {s} s igjen",
+    "lib.game.mmQuestion": "Spørsmål {i}/{n}",
+    "lib.game.mmDone": "Ferdig!",
+    "lib.game.mmLost": "Tom for liv — alle brikkene vises nå.",
+    "lib.game.mmNote": "Trykk Start: Brikkene vises i {s} sekunder og skjules deretter. Husk formen og fargen på hver brikke, og velg så brikken som passer til formen du får se. Mer enn {l} feil, og nivået er tapt."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Kombiner Excel-data med formler",
       "desc": "Kombinerer flere ark eller Excel-filer med en formel per celle (SUM, IF, CONCAT, UNIQUE...), nestede funksjoner og lagrede formler du kan bruke igjen."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Spill 9x9-sudoku på nett i 10 nivåer fra lett til vanskelig, med notater, hint og feilkontroll."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Stor 16x16-sudoku med 1-9 og A-G, 10 nivåer fra lett til vanskelig, med notater og hint."
+    },
+    "chess": {
+      "name": "Sjakk mot datamaskinen",
+      "desc": "Spill sjakk mot datamaskinen i 10 nivåer fra lett til vanskelig, med rokade, en passant og forfremmelse."
+    },
+    "xiangqi": {
+      "name": "Xiangqi mot datamaskinen",
+      "desc": "Spill kinesisk sjakk (xiangqi) mot datamaskinen i 10 nivåer, med blokkert hestebein, elefantøye, kanonslag og regelen om generalene."
+    },
+    "go-game": {
+      "name": "Go mot datamaskinen",
+      "desc": "Spill go mot datamaskinen på brett på 5x5, 7x7 og 9x9 i 10 nivåer, med automatisk poengtelling til slutt."
+    },
+    "memory-shapes": {
+      "name": "Form- og fargeminne",
+      "desc": "Brikker med former og farger vises i 5 sekunder og skjules så; husk og velg riktig brikke, 10 nivåer fra lett til vanskelig."
     }
   },
   "s": {

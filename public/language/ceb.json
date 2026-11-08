@@ -178,7 +178,61 @@
     "lib.excel.missing": "Kulang",
     "lib.excel.duplicate": "Doble",
     "lib.excel.valid": "Balido",
-    "lib.excel.invalid": "Di balido"
+    "lib.excel.invalid": "Di balido",
+    "lib.game.levels": "Lebel",
+    "lib.game.level": "Lebel {n}",
+    "lib.game.unlockAll": "Ablihi ang tanang lebel",
+    "lib.game.newGame": "Bag-ong dula",
+    "lib.game.retry": "Dula pag-usab",
+    "lib.game.nextLevel": "Sunod nga lebel",
+    "lib.game.win": "Nahuman nimo ang lebel {n}!",
+    "lib.game.lose": "Wala mahuman ang lebel {n}. Sulayi pag-usab.",
+    "lib.game.draw": "Tabla — wala mahuman ang lebel {n}.",
+    "lib.game.allDone": "Congratulations! Nahuman nimo ang tanang 10 ka lebel.",
+    "lib.game.time": "Oras",
+    "lib.game.hint": "Pahiwatig",
+    "lib.game.erase": "Papas",
+    "lib.game.check": "Susiha",
+    "lib.game.notes": "Mga nota",
+    "lib.game.generating": "Naghimo og puzzle…",
+    "lib.game.sudokuKeys": "Arrow keys sa paglihok, number keys sa pagpuno (16x16: A-G para sa 10-16), Backspace sa pagpapas, N sa pag-toggle sa mga nota.",
+    "lib.game.sudokuLeft": "{n} ka kahon ang nahabilin",
+    "lib.game.sudokuConflict": "Napuno na ang tanang kahon pero adunay mga numero nga balik-balik. Susiha pag-usab palihog.",
+    "lib.game.sudokuWrong": "{n} ka sayop nga kahon (markado nga pula).",
+    "lib.game.sudokuAllRight": "Walay nakitang sayop nga kahon.",
+    "lib.game.thinking": "Naghunahuna ang kompyuter…",
+    "lib.game.yourTurn": "Imong turno",
+    "lib.game.undo": "Ibalik",
+    "lib.game.resign": "Mosurender",
+    "lib.game.resigned": "Nisurender ka.",
+    "lib.game.chessCheck": "Sah!",
+    "lib.game.chessMateWin": "Checkmate! Midaog ka.",
+    "lib.game.chessMateLose": "Na-checkmate ka.",
+    "lib.game.chessDraw": "Tabla ang dula.",
+    "lib.game.chessNote": "Puti ang imong dulaon ug ikaw ang mauna. I-klik ang imong piyesa, unya ang kwadro nga imong gusto adtoan. Ang pawn nga moabot sa katapusang laray mahimong rayna. Daog pinaagi sa pag-checkmate sa itom.",
+    "lib.game.xiangqi": "Xiangqi board",
+    "lib.game.xqCheck": "Sah!",
+    "lib.game.xqMateWin": "Checkmate! Midaog ka.",
+    "lib.game.xqMateLose": "Na-checkmate ka.",
+    "lib.game.xqStaleWin": "Walay legal nga lakang ang itom — midaog ka.",
+    "lib.game.xqStaleLose": "Wala kay legal nga lakang — nawad-an ka.",
+    "lib.game.xqNote": "Pula (sa ubos) ang imong dulaon ug ikaw ang mauna. I-klik ang imong piyesa, unya ang punto nga imong gusto adtoan. Dili mag-atubang ang duha ka heneral; ang checkmate o kakulang sa legal nga lakang mao ang pagkapildi.",
+    "lib.game.pass": "Pass",
+    "lib.game.goBoard": "Go board",
+    "lib.game.goCaps": "Nakuha — Itom: {b} · Puti: {w}",
+    "lib.game.goScore": "Iskor — Itom: {b}, Puti: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} nga board. Itom ang imong dulaon ug ikaw ang mauna. Ang pag-iskor kay pinaagi sa lugar (mga bato + hingpit nga gilibotan nga mga walay sulod nga punto); ang puti makakuha og {k} nga komi. Kuhaa ang tanang patay nga bato sa kontra una mag-pass. Dili tugotan ang pagpapatay-sa-kaugalingon ug ang dayon nga pagbawi (ko). Matapos ang dula kon nagsunod nga nag-pass ang duha ka magdudula.",
+    "lib.game.illegal": "Ilegal nga lakang (pagpapatay-sa-kaugalingon o dayon nga pagbawi).",
+    "lib.game.aiPassed": "Nag-pass ang kompyuter. Kon mag-pass ka usab, matapos ang dula ug i-iskor.",
+    "lib.game.start": "Sugdi",
+    "lib.game.lives": "Kinabuhi",
+    "lib.game.mmAsk": "Asa nga tile kini nga porma?",
+    "lib.game.mmReady": "Andam na?",
+    "lib.game.mmMemorize": "Handurawa — {s} s ang nahabilin",
+    "lib.game.mmQuestion": "Pangutana {i}/{n}",
+    "lib.game.mmDone": "Human na!",
+    "lib.game.mmLost": "Nahurot ang kinabuhi — gibutyag na ang tanang tile.",
+    "lib.game.mmNote": "Pindota ang Sugdi: ipakita ang mga tile sulod sa {s} segundo, unya itago. Handurawa ang porma ug kolor sa matag tile, unya pilia ang tile nga motakdo sa gipakita nga porma. Sobra sa {l} ka sayop, napakyas ang lebel."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Paghiusa sa Data sa Excel gamit ang mga Pormula",
       "desc": "Hiusa ang daghang sheet o Excel file gamit ang pormula matag cell (SUM, IF, CONCAT, UNIQUE...), nested nga mga function, ug natipigan nga mga pormula nga magamit pag-usab."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Dula og 9x9 Sudoku online sa 10 ka lebel gikan sa sayon hangtod lisod, nga adunay mga nota, pahiwatig ug pagsusi sa sayop."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Dako nga 16x16 Sudoku nga naggamit og 1-9 ug A-G, 10 ka lebel gikan sa sayon hangtod lisod, nga adunay mga nota ug pahiwatig."
+    },
+    "chess": {
+      "name": "Chess batok sa Kompyuter",
+      "desc": "Dula og chess batok sa kompyuter sa 10 ka lebel gikan sa sayon hangtod lisod, nga adunay castling, en passant ug promotion."
+    },
+    "xiangqi": {
+      "name": "Xiangqi batok sa Kompyuter",
+      "desc": "Dula og Chinese chess (xiangqi) batok sa kompyuter sa 10 ka lebel, nga adunay horse-leg blocking, elephant eye, cannon captures ug flying-general rule."
+    },
+    "go-game": {
+      "name": "Go batok sa Kompyuter",
+      "desc": "Dula og Go batok sa kompyuter sa 5x5, 7x7 ug 9x9 nga board sa 10 ka lebel, nga adunay awtomatikong pag-iskor sa katapusan."
+    },
+    "memory-shapes": {
+      "name": "Panumdoman sa Porma ug Kolor",
+      "desc": "Ang mga tile nga adunay porma ug kolor ipakita sulod sa 5 segundo, unya itago; handurawa ug pilia ang husto nga tile, 10 ka lebel gikan sa sayon hangtod lisod."
     }
   },
   "s": {

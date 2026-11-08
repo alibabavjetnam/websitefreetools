@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ontbreek",
     "lib.excel.duplicate": "Duplikaat",
     "lib.excel.valid": "Geldig",
-    "lib.excel.invalid": "Ongeldig"
+    "lib.excel.invalid": "Ongeldig",
+    "lib.game.levels": "Vlak",
+    "lib.game.level": "Vlak {n}",
+    "lib.game.unlockAll": "Ontsluit alle vlakke",
+    "lib.game.newGame": "Nuwe speletjie",
+    "lib.game.retry": "Speel weer",
+    "lib.game.nextLevel": "Volgende vlak",
+    "lib.game.win": "Jy het vlak {n} voltooi!",
+    "lib.game.lose": "Vlak {n} nie voltooi nie. Probeer weer.",
+    "lib.game.draw": "Gelykopspel — vlak {n} nie voltooi nie.",
+    "lib.game.allDone": "Geluk! Jy het al 10 vlakke voltooi.",
+    "lib.game.time": "Tyd",
+    "lib.game.hint": "Wenk",
+    "lib.game.erase": "Vee uit",
+    "lib.game.check": "Kontroleer",
+    "lib.game.notes": "Notas",
+    "lib.game.generating": "Skep tans legkaart…",
+    "lib.game.sudokuKeys": "Pyltjiesleutels om te beweeg, syferleutels om in te vul (16x16: A-G vir 10-16), Backspace om uit te vee, N om notas aan/af te skakel.",
+    "lib.game.sudokuLeft": "{n} blokkies oor",
+    "lib.game.sudokuConflict": "Al die blokkies is ingevul, maar party syfers herhaal. Kontroleer asseblief weer.",
+    "lib.game.sudokuWrong": "{n} verkeerde blokkies (rooi gemerk).",
+    "lib.game.sudokuAllRight": "Geen verkeerde blokkies gevind nie.",
+    "lib.game.thinking": "Rekenaar dink…",
+    "lib.game.yourTurn": "Jou beurt",
+    "lib.game.undo": "Maak ongedaan",
+    "lib.game.resign": "Gee op",
+    "lib.game.resigned": "Jy het opgegee.",
+    "lib.game.chessCheck": "Skaak!",
+    "lib.game.chessMateWin": "Skaakmat! Jy wen.",
+    "lib.game.chessMateLose": "Jy is skaakmat.",
+    "lib.game.chessDraw": "Die spel is gelykop.",
+    "lib.game.chessNote": "Jy speel wit en gaan eerste. Klik op jou stuk en dan op die blokkie waarheen dit moet gaan. 'n Pion wat die laaste ry bereik, word 'n koningin. Wen deur swart skaakmat te sit.",
+    "lib.game.xiangqi": "Xiangqi-bord",
+    "lib.game.xqCheck": "Skaak!",
+    "lib.game.xqMateWin": "Skaakmat! Jy wen.",
+    "lib.game.xqMateLose": "Jy is skaakmat.",
+    "lib.game.xqStaleWin": "Swart het geen wettige skuiwe nie — jy wen.",
+    "lib.game.xqStaleLose": "Jy het geen wettige skuiwe nie — jy verloor.",
+    "lib.game.xqNote": "Jy speel rooi (onder) en gaan eerste. Klik op jou stuk en dan op die punt waarheen dit moet gaan. Die twee generaals mag nie reg teenoor mekaar staan nie; skaakmat of geen wettige skuif beteken verlies.",
+    "lib.game.pass": "Pas",
+    "lib.game.goBoard": "Go-bord",
+    "lib.game.goCaps": "Gevang — Swart: {b} · Wit: {w}",
+    "lib.game.goScore": "Telling — Swart: {b}, Wit: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-bord. Jy speel swart en gaan eerste. Telling is volgens gebied (klippe + heeltemal omsingelde leë punte); wit kry {k} komi. Vang al die opponent se dooie klippe voordat jy pas. Selfmoord en onmiddellike terugvang (ko) is nie toegelaat nie. Die spel eindig wanneer albei spelers agtereenvolgens pas.",
+    "lib.game.illegal": "Ongeldige skuif (selfmoord of onmiddellike terugvang).",
+    "lib.game.aiPassed": "Die rekenaar het gepas. As jy ook pas, eindig die spel en word dit getel.",
+    "lib.game.start": "Begin",
+    "lib.game.lives": "Lewens",
+    "lib.game.mmAsk": "Watter teël het hierdie vorm gehad?",
+    "lib.game.mmReady": "Gereed?",
+    "lib.game.mmMemorize": "Onthou — {s} s oor",
+    "lib.game.mmQuestion": "Vraag {i}/{n}",
+    "lib.game.mmDone": "Klaar!",
+    "lib.game.mmLost": "Lewens op — alle teëls word nou gewys.",
+    "lib.game.mmNote": "Druk Begin: die teëls word vir {s} sekondes gewys en dan versteek. Onthou die vorm en kleur van elke teël en kies dan die teël wat by die getoonde vorm pas. Meer as {l} foute en die vlak misluk."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Kombineer Excel-data met formules",
       "desc": "Kombineer baie werkblaaie of Excel-lêers met 'n formule per sel (SUM, IF, CONCAT, UNIQUE...), geneste funksies en gestoorde formules wat jy kan hergebruik."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Speel 9x9-sudoku aanlyn in 10 vlakke van maklik tot moeilik, met notas, wenke en foutkontrole."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Groot 16x16-sudoku met 1-9 en A-G, 10 vlakke van maklik tot moeilik, met notas en wenke."
+    },
+    "chess": {
+      "name": "Skaak teen die rekenaar",
+      "desc": "Speel skaak teen die rekenaar in 10 vlakke van maklik tot moeilik, met rokade, en passant en bevordering."
+    },
+    "xiangqi": {
+      "name": "Xiangqi teen die rekenaar",
+      "desc": "Speel Chinese skaak (xiangqi) teen die rekenaar in 10 vlakke, met perdbeen-blokkering, olifantoog, kanonvangs en die reël van generaals wat mekaar in die oë kyk."
+    },
+    "go-game": {
+      "name": "Go teen die rekenaar",
+      "desc": "Speel Go teen die rekenaar op 5x5-, 7x7- en 9x9-borde in 10 vlakke, met outomatiese telling aan die einde."
+    },
+    "memory-shapes": {
+      "name": "Vorm- en kleurgeheue",
+      "desc": "Teëls met vorms en kleure word 5 sekondes gewys en dan versteek; onthou en kies die regte teël, 10 vlakke van maklik tot moeilik."
     }
   },
   "s": {

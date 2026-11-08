@@ -178,7 +178,61 @@
     "lib.excel.missing": "Hilang",
     "lib.excel.duplicate": "Duplikat",
     "lib.excel.valid": "Valid",
-    "lib.excel.invalid": "Tidak valid"
+    "lib.excel.invalid": "Tidak valid",
+    "lib.game.levels": "Level",
+    "lib.game.level": "Level {n}",
+    "lib.game.unlockAll": "Buka semua level",
+    "lib.game.newGame": "Permainan baru",
+    "lib.game.retry": "Main lagi",
+    "lib.game.nextLevel": "Level berikutnya",
+    "lib.game.win": "Kamu menyelesaikan level {n}!",
+    "lib.game.lose": "Level {n} belum selesai. Coba lagi.",
+    "lib.game.draw": "Seri — level {n} belum selesai.",
+    "lib.game.allDone": "Selamat! Kamu menyelesaikan semua 10 level.",
+    "lib.game.time": "Waktu",
+    "lib.game.hint": "Petunjuk",
+    "lib.game.erase": "Hapus",
+    "lib.game.check": "Periksa",
+    "lib.game.notes": "Catatan",
+    "lib.game.generating": "Membuat teka-teki…",
+    "lib.game.sudokuKeys": "Tombol panah untuk bergerak, tombol angka untuk mengisi (16x16: A-G untuk 10-16), Backspace untuk menghapus, N untuk mengaktifkan catatan.",
+    "lib.game.sudokuLeft": "Sisa {n} kotak",
+    "lib.game.sudokuConflict": "Semua kotak terisi tetapi ada angka yang berulang. Silakan periksa lagi.",
+    "lib.game.sudokuWrong": "{n} kotak salah (ditandai merah).",
+    "lib.game.sudokuAllRight": "Tidak ada kotak yang salah.",
+    "lib.game.thinking": "Komputer sedang berpikir…",
+    "lib.game.yourTurn": "Giliranmu",
+    "lib.game.undo": "Urungkan",
+    "lib.game.resign": "Menyerah",
+    "lib.game.resigned": "Kamu menyerah.",
+    "lib.game.chessCheck": "Skak!",
+    "lib.game.chessMateWin": "Skakmat! Kamu menang.",
+    "lib.game.chessMateLose": "Kamu terkena skakmat.",
+    "lib.game.chessDraw": "Permainan berakhir seri.",
+    "lib.game.chessNote": "Kamu bermain Putih dan jalan lebih dulu. Klik bidakmu, lalu kotak tujuan. Pion yang mencapai baris terakhir dipromosikan menjadi ratu. Menang dengan men-skakmat Hitam.",
+    "lib.game.xiangqi": "Papan Xiangqi",
+    "lib.game.xqCheck": "Skak!",
+    "lib.game.xqMateWin": "Skakmat! Kamu menang.",
+    "lib.game.xqMateLose": "Kamu terkena skakmat.",
+    "lib.game.xqStaleWin": "Hitam tidak punya langkah sah — kamu menang.",
+    "lib.game.xqStaleLose": "Kamu tidak punya langkah sah — kamu kalah.",
+    "lib.game.xqNote": "Kamu bermain Merah (bawah) dan jalan lebih dulu. Klik bidakmu, lalu titik tujuan. Dua jenderal tidak boleh berhadapan langsung; skakmat atau tidak ada langkah sah berarti kalah.",
+    "lib.game.pass": "Lewat",
+    "lib.game.goBoard": "Papan Go",
+    "lib.game.goCaps": "Tertangkap — Hitam: {b} · Putih: {w}",
+    "lib.game.goScore": "Skor — Hitam: {b}, Putih: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Papan {n}×{n}. Kamu bermain Hitam dan jalan lebih dulu. Penilaian berdasarkan area (batu + titik kosong yang terkurung penuh); Putih mendapat komi {k}. Tangkap semua batu mati lawan sebelum melewati giliran. Bunuh diri dan rebut balik langsung (ko) tidak diperbolehkan. Permainan berakhir saat kedua pemain lewat berturut-turut.",
+    "lib.game.illegal": "Langkah tidak sah (bunuh diri atau rebut balik langsung).",
+    "lib.game.aiPassed": "Komputer melewati giliran. Jika kamu juga lewat, permainan berakhir dan dihitung skornya.",
+    "lib.game.start": "Mulai",
+    "lib.game.lives": "Nyawa",
+    "lib.game.mmAsk": "Petak mana yang berbentuk seperti ini?",
+    "lib.game.mmReady": "Siap?",
+    "lib.game.mmMemorize": "Hafalkan — sisa {s} dtk",
+    "lib.game.mmQuestion": "Pertanyaan {i}/{n}",
+    "lib.game.mmDone": "Selesai!",
+    "lib.game.mmLost": "Nyawa habis — semua petak kini dibuka.",
+    "lib.game.mmNote": "Tekan Mulai: petak ditampilkan selama {s} detik, lalu disembunyikan. Ingat bentuk dan warna tiap petak, lalu pilih petak yang cocok dengan bentuk yang ditampilkan. Lebih dari {l} kesalahan berarti level gagal."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Gabung Data Excel dengan Rumus",
       "desc": "Padukan banyak lembar atau file Excel dengan satu rumus per sel (SUM, IF, CONCAT, UNIQUE...), fungsi bersarang, dan rumus tersimpan yang bisa dipakai ulang."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Mainkan Sudoku 9x9 online dalam 10 level dari mudah hingga sulit, dengan catatan, petunjuk, dan pemeriksaan kesalahan."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku besar 16x16 dengan 1-9 dan A-G, 10 level dari mudah hingga sulit, dengan catatan dan petunjuk."
+    },
+    "chess": {
+      "name": "Catur lawan komputer",
+      "desc": "Main catur melawan komputer dalam 10 level dari mudah hingga sulit, dengan rokade, en passant, dan promosi."
+    },
+    "xiangqi": {
+      "name": "Xiangqi lawan komputer",
+      "desc": "Main catur Tiongkok (xiangqi) melawan komputer dalam 10 level, lengkap dengan aturan kaki kuda terhalang, mata gajah, tangkapan meriam, dan aturan jenderal berhadapan."
+    },
+    "go-game": {
+      "name": "Go lawan komputer",
+      "desc": "Main Go melawan komputer di papan 5x5, 7x7, dan 9x9 dalam 10 level, dengan penghitungan skor otomatis di akhir."
+    },
+    "memory-shapes": {
+      "name": "Memori bentuk & warna",
+      "desc": "Petak berbentuk dan berwarna ditampilkan 5 detik lalu disembunyikan; ingat dan pilih petak yang benar, 10 level dari mudah hingga sulit."
     }
   },
   "s": {

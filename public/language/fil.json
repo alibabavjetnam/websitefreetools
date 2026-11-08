@@ -178,7 +178,61 @@
     "lib.excel.missing": "Nawawala",
     "lib.excel.duplicate": "Duplicate",
     "lib.excel.valid": "Valid",
-    "lib.excel.invalid": "Hindi valid"
+    "lib.excel.invalid": "Hindi valid",
+    "lib.game.levels": "Antas",
+    "lib.game.level": "Antas {n}",
+    "lib.game.unlockAll": "I-unlock ang lahat ng antas",
+    "lib.game.newGame": "Bagong laro",
+    "lib.game.retry": "Maglaro ulit",
+    "lib.game.nextLevel": "Susunod na antas",
+    "lib.game.win": "Natapos mo ang antas {n}!",
+    "lib.game.lose": "Hindi pa tapos ang antas {n}. Subukan ulit.",
+    "lib.game.draw": "Tabla — hindi pa tapos ang antas {n}.",
+    "lib.game.allDone": "Congratulations! Natapos mo ang lahat ng 10 antas.",
+    "lib.game.time": "Oras",
+    "lib.game.hint": "Pahiwatig",
+    "lib.game.erase": "Burahin",
+    "lib.game.check": "Suriin",
+    "lib.game.notes": "Mga tala",
+    "lib.game.generating": "Ginagawa ang puzzle…",
+    "lib.game.sudokuKeys": "Arrow keys para gumalaw, number keys para magpuno (16x16: A-G para sa 10-16), Backspace para magbura, N para i-on/off ang mga tala.",
+    "lib.game.sudokuLeft": "{n} kahon pa ang natitira",
+    "lib.game.sudokuConflict": "Puno na ang lahat ng kahon pero may mga numerong inuulit. Suriin ulit.",
+    "lib.game.sudokuWrong": "{n} maling kahon (may pulang marka).",
+    "lib.game.sudokuAllRight": "Walang nakitang maling kahon.",
+    "lib.game.thinking": "Nag-iisip ang computer…",
+    "lib.game.yourTurn": "Ikaw naman",
+    "lib.game.undo": "Ibalik",
+    "lib.game.resign": "Sumuko",
+    "lib.game.resigned": "Sumuko ka.",
+    "lib.game.chessCheck": "Tsek!",
+    "lib.game.chessMateWin": "Checkmate! Panalo ka.",
+    "lib.game.chessMateLose": "Na-checkmate ka.",
+    "lib.game.chessDraw": "Tabla ang laro.",
+    "lib.game.chessNote": "Ikaw ang Puti at ikaw ang unang gagalaw. I-click ang piyesa mo, saka ang parisukat na pupuntahan. Ang pawn na umabot sa huling hanay ay magiging reyna. Manalo sa pag-checkmate sa Itim.",
+    "lib.game.xiangqi": "Xiangqi board",
+    "lib.game.xqCheck": "Tsek!",
+    "lib.game.xqMateWin": "Checkmate! Panalo ka.",
+    "lib.game.xqMateLose": "Na-checkmate ka.",
+    "lib.game.xqStaleWin": "Walang legal na galaw ang Itim — panalo ka.",
+    "lib.game.xqStaleLose": "Wala kang legal na galaw — talo ka.",
+    "lib.game.xqNote": "Ikaw ang Pula (nasa ibaba) at ikaw ang unang gagalaw. I-click ang piyesa mo, saka ang puntong pupuntahan. Hindi puwedeng magkaharap ang dalawang heneral; talo kapag na-checkmate o walang legal na galaw.",
+    "lib.game.pass": "Pass",
+    "lib.game.goBoard": "Go board",
+    "lib.game.goCaps": "Nakuha — Itim: {b} · Puti: {w}",
+    "lib.game.goScore": "Puntos — Itim: {b}, Puti: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} na board. Ikaw ang Itim at ikaw ang unang gagalaw. Area ang basehan ng puntos (mga bato + buong napaligirang bakanteng punto); may {k} komi ang Puti. Kunin ang lahat ng patay na bato ng kalaban bago mag-pass. Bawal ang suicide at agarang pagbawi (ko). Tapos ang laro kapag sunud-sunod na nag-pass ang dalawang manlalaro.",
+    "lib.game.illegal": "Ilegal na galaw (suicide o agarang pagbawi).",
+    "lib.game.aiPassed": "Nag-pass ang computer. Kung mag-pass ka rin, matatapos ang laro at bibilangin ang puntos.",
+    "lib.game.start": "Simulan",
+    "lib.game.lives": "Buhay",
+    "lib.game.mmAsk": "Aling tile ang may ganitong hugis?",
+    "lib.game.mmReady": "Handa na?",
+    "lib.game.mmMemorize": "Tandaan — {s} s na lang",
+    "lib.game.mmQuestion": "Tanong {i}/{n}",
+    "lib.game.mmDone": "Tapos na!",
+    "lib.game.mmLost": "Ubos na ang buhay — ipinapakita na ang lahat ng tile.",
+    "lib.game.mmNote": "Pindutin ang Simulan: ipapakita ang mga tile sa loob ng {s} segundo, saka itatago. Tandaan ang hugis at kulay ng bawat tile, saka piliin ang tile na tugma sa ipinakitang hugis. Lampas sa {l} pagkakamali, bagsak ang antas."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Pagsamahin ang Data ng Excel gamit ang mga Formula",
       "desc": "Pagsamahin ang maraming sheet o Excel file gamit ang formula sa bawat cell (SUM, IF, CONCAT, UNIQUE...), nested na function, at mga naka-save na formula na magagamit ulit."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Maglaro ng 9x9 Sudoku online sa 10 antas mula madali hanggang mahirap, may mga tala, pahiwatig at pagsusuri ng mali."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Malaking 16x16 Sudoku na gumagamit ng 1-9 at A-G, 10 antas mula madali hanggang mahirap, may mga tala at pahiwatig."
+    },
+    "chess": {
+      "name": "Chess laban sa Computer",
+      "desc": "Maglaro ng chess laban sa computer sa 10 antas mula madali hanggang mahirap, may castling, en passant at promotion."
+    },
+    "xiangqi": {
+      "name": "Xiangqi laban sa Computer",
+      "desc": "Maglaro ng Chinese chess (xiangqi) laban sa computer sa 10 antas, may harang sa paa ng kabayo, mata ng elepante, pagkuha ng kanyon at patakaran ng magkaharap na heneral."
+    },
+    "go-game": {
+      "name": "Go laban sa Computer",
+      "desc": "Maglaro ng Go laban sa computer sa 5x5, 7x7 at 9x9 na board sa 10 antas, may awtomatikong pagbilang ng puntos sa dulo."
+    },
+    "memory-shapes": {
+      "name": "Memorya ng Hugis at Kulay",
+      "desc": "Ipinapakita ang mga tile na may hugis at kulay sa loob ng 5 segundo, saka itatago; tandaan at piliin ang tamang tile, 10 antas mula madali hanggang mahirap."
     }
   },
   "s": {

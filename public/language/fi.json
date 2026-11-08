@@ -178,7 +178,61 @@
     "lib.excel.missing": "Puuttuu",
     "lib.excel.duplicate": "Kaksoiskappale",
     "lib.excel.valid": "Kelvollinen",
-    "lib.excel.invalid": "Virheellinen"
+    "lib.excel.invalid": "Virheellinen",
+    "lib.game.levels": "Taso",
+    "lib.game.level": "Taso {n}",
+    "lib.game.unlockAll": "Avaa kaikki tasot",
+    "lib.game.newGame": "Uusi peli",
+    "lib.game.retry": "Pelaa uudelleen",
+    "lib.game.nextLevel": "Seuraava taso",
+    "lib.game.win": "Läpäisit tason {n}!",
+    "lib.game.lose": "Tasoa {n} ei läpäisty. Yritä uudelleen.",
+    "lib.game.draw": "Tasapeli — tasoa {n} ei läpäisty.",
+    "lib.game.allDone": "Onnittelut! Läpäisit kaikki 10 tasoa.",
+    "lib.game.time": "Aika",
+    "lib.game.hint": "Vihje",
+    "lib.game.erase": "Poista",
+    "lib.game.check": "Tarkista",
+    "lib.game.notes": "Muistiinpanot",
+    "lib.game.generating": "Luodaan pulmaa…",
+    "lib.game.sudokuKeys": "Nuolinäppäimillä liikut, numeronäppäimillä täytät (16x16: A-G luvuille 10-16), Backspace poistaa, N vaihtaa muistiinpanotilaa.",
+    "lib.game.sudokuLeft": "{n} ruutua jäljellä",
+    "lib.game.sudokuConflict": "Kaikki ruudut on täytetty, mutta jotkin luvut toistuvat. Tarkista uudelleen.",
+    "lib.game.sudokuWrong": "{n} väärää ruutua (merkitty punaisella).",
+    "lib.game.sudokuAllRight": "Vääriä ruutuja ei löytynyt.",
+    "lib.game.thinking": "Tietokone miettii…",
+    "lib.game.yourTurn": "Sinun vuorosi",
+    "lib.game.undo": "Kumoa",
+    "lib.game.resign": "Luovuta",
+    "lib.game.resigned": "Luovutit.",
+    "lib.game.chessCheck": "Shakki!",
+    "lib.game.chessMateWin": "Shakkimatti! Voitit.",
+    "lib.game.chessMateLose": "Sinut matitettiin.",
+    "lib.game.chessDraw": "Peli päättyi tasapeliin.",
+    "lib.game.chessNote": "Pelaat valkoisilla ja aloitat. Napsauta nappulaasi ja sitten ruutua, johon haluat siirtää. Viimeiselle riville päässyt sotilas ylennetään kuningattareksi. Voita matittamalla musta.",
+    "lib.game.xiangqi": "Xiangqi-lauta",
+    "lib.game.xqCheck": "Shakki!",
+    "lib.game.xqMateWin": "Matti! Voitit.",
+    "lib.game.xqMateLose": "Sinut matitettiin.",
+    "lib.game.xqStaleWin": "Mustalla ei ole laillisia siirtoja — voitit.",
+    "lib.game.xqStaleLose": "Sinulla ei ole laillisia siirtoja — hävisit.",
+    "lib.game.xqNote": "Pelaat punaisilla (alhaalla) ja aloitat. Napsauta nappulaasi ja sitten pistettä, johon haluat siirtää. Kaksi kenraalia ei saa olla vastakkain; matti tai laillisten siirtojen puute johtaa tappioon.",
+    "lib.game.pass": "Ohita",
+    "lib.game.goBoard": "Go-lauta",
+    "lib.game.goCaps": "Vangitut — musta: {b} · valkoinen: {w}",
+    "lib.game.goScore": "Pisteet — musta: {b}, valkoinen: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n}-lauta. Pelaat mustalla ja aloitat. Pisteytys alueen mukaan (kivet + täysin ympäröidyt tyhjät pisteet); valkoinen saa {k} komia. Poista vastustajan kuolleet kivet ennen ohitusta. Itsemurha ja välitön takaisinotto (ko) ovat kiellettyjä. Peli päättyy, kun molemmat pelaajat ohittavat peräkkäin.",
+    "lib.game.illegal": "Laiton siirto (itsemurha tai välitön takaisinotto).",
+    "lib.game.aiPassed": "Tietokone ohitti. Jos ohitat myös, peli päättyy ja pisteet lasketaan.",
+    "lib.game.start": "Aloita",
+    "lib.game.lives": "Elämät",
+    "lib.game.mmAsk": "Missä laatassa tämä muoto oli?",
+    "lib.game.mmReady": "Valmiina?",
+    "lib.game.mmMemorize": "Opettele — {s} s jäljellä",
+    "lib.game.mmQuestion": "Kysymys {i}/{n}",
+    "lib.game.mmDone": "Valmis!",
+    "lib.game.mmLost": "Elämät loppuivat — kaikki laatat paljastettiin.",
+    "lib.game.mmNote": "Paina Aloita: laatat näytetään {s} sekuntia ja piilotetaan sitten. Muista jokaisen laatan muoto ja väri ja valitse sitten laatta, joka vastaa näytettyä muotoa. Yli {l} virhettä hylkää tason."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Yhdistä Excel-tietoja kaavoilla",
       "desc": "Yhdistä useita taulukoita tai Excel-tiedostoja kaavalla solua kohden (SUM, IF, CONCAT, UNIQUE...), sisäkkäisillä funktioilla ja tallennetuilla kaavoilla, joita voit käyttää uudelleen."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Pelaa 9x9-sudokua verkossa 10 tasolla helposta vaikeaan, muistiinpanoilla, vihjeillä ja virheiden tarkistuksella."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Suuri 16x16-sudoku numeroilla 1-9 ja kirjaimilla A-G, 10 tasoa helposta vaikeaan, muistiinpanoilla ja vihjeillä."
+    },
+    "chess": {
+      "name": "Shakki tietokonetta vastaan",
+      "desc": "Pelaa shakkia tietokonetta vastaan 10 tasolla helposta vaikeaan, linnoitus, ohestalyönti ja ylennys mukana."
+    },
+    "xiangqi": {
+      "name": "Xiangqi tietokonetta vastaan",
+      "desc": "Pelaa kiinalaista shakkia (xiangqi) tietokonetta vastaan 10 tasolla: hevosen jalan esto, norsun silmä, tykin lyönti ja lentävän kenraalin sääntö."
+    },
+    "go-game": {
+      "name": "Go tietokonetta vastaan",
+      "desc": "Pelaa goa tietokonetta vastaan 5x5-, 7x7- ja 9x9-laudoilla 10 tasolla, lopussa automaattinen pisteytys."
+    },
+    "memory-shapes": {
+      "name": "Muoto- ja värimuisti",
+      "desc": "Muotoja ja värejä sisältävät laatat näytetään 5 sekuntia ja piilotetaan; muista ja valitse oikea laatta, 10 tasoa helposta vaikeaan."
     }
   },
   "s": {

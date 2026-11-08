@@ -178,7 +178,61 @@
     "lib.excel.missing": "Yo'q",
     "lib.excel.duplicate": "Takror",
     "lib.excel.valid": "To'g'ri",
-    "lib.excel.invalid": "Noto'g'ri"
+    "lib.excel.invalid": "Noto'g'ri",
+    "lib.game.levels": "Daraja",
+    "lib.game.level": "{n}-daraja",
+    "lib.game.unlockAll": "Barcha darajalarni ochish",
+    "lib.game.newGame": "Yangi o‘yin",
+    "lib.game.retry": "Qayta o‘ynash",
+    "lib.game.nextLevel": "Keyingi daraja",
+    "lib.game.win": "Siz {n}-darajani o‘tdingiz!",
+    "lib.game.lose": "{n}-daraja o‘tilmadi. Qayta urinib ko‘ring.",
+    "lib.game.draw": "Durang — {n}-daraja o‘tilmadi.",
+    "lib.game.allDone": "Tabriklaymiz! Siz barcha 10 darajani o‘tdingiz.",
+    "lib.game.time": "Vaqt",
+    "lib.game.hint": "Maslahat",
+    "lib.game.erase": "O‘chirish",
+    "lib.game.check": "Tekshirish",
+    "lib.game.notes": "Qaydlar",
+    "lib.game.generating": "Jumboq yaratilmoqda…",
+    "lib.game.sudokuKeys": "Harakat uchun strelka tugmalari, to‘ldirish uchun raqam tugmalari (16x16: 10-16 uchun A-G), o‘chirish uchun Backspace, qaydlarni almashtirish uchun N.",
+    "lib.game.sudokuLeft": "{n} ta katak qoldi",
+    "lib.game.sudokuConflict": "Barcha kataklar to‘ldirilgan, lekin ba’zi raqamlar takrorlangan. Qayta tekshiring.",
+    "lib.game.sudokuWrong": "{n} ta noto‘g‘ri katak (qizil bilan belgilangan).",
+    "lib.game.sudokuAllRight": "Noto‘g‘ri katak topilmadi.",
+    "lib.game.thinking": "Kompyuter o‘ylamoqda…",
+    "lib.game.yourTurn": "Sizning navbatingiz",
+    "lib.game.undo": "Bekor qilish",
+    "lib.game.resign": "Taslim bo‘lish",
+    "lib.game.resigned": "Siz taslim bo‘ldingiz.",
+    "lib.game.chessCheck": "Shoh!",
+    "lib.game.chessMateWin": "Mat! Siz yutdingiz.",
+    "lib.game.chessMateLose": "Sizga mat qo‘yildi.",
+    "lib.game.chessDraw": "O‘yin durang bilan tugadi.",
+    "lib.game.chessNote": "Siz oq bilan o‘ynaysiz va birinchi yurasiz. Donangizni, so‘ng borish kerak bo‘lgan katakni bosing. Oxirgi qatorga yetgan piyoda farzinga aylanadi. Qoraga mat qo‘yib yuting.",
+    "lib.game.xiangqi": "Syanqi taxtasi",
+    "lib.game.xqCheck": "Shoh!",
+    "lib.game.xqMateWin": "Mat! Siz yutdingiz.",
+    "lib.game.xqMateLose": "Sizga mat qo‘yildi.",
+    "lib.game.xqStaleWin": "Qorada qonuniy yurish yo‘q — siz yutdingiz.",
+    "lib.game.xqStaleLose": "Sizda qonuniy yurish yo‘q — siz yutqazdingiz.",
+    "lib.game.xqNote": "Siz qizil (pastda) bilan o‘ynaysiz va birinchi yurasiz. Donangizni, so‘ng borish kerak bo‘lgan nuqtani bosing. Ikki general bir-biriga ro‘para turishi mumkin emas; mat bo‘lgan yoki qonuniy yurishi qolmagan yutqazadi.",
+    "lib.game.pass": "O‘tkazish",
+    "lib.game.goBoard": "Go taxtasi",
+    "lib.game.goCaps": "Olingan toshlar — Qora: {b} · Oq: {w}",
+    "lib.game.goScore": "Hisob — Qora: {b}, Oq: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} taxta. Siz qora bilan o‘ynaysiz va birinchi yurasiz. Hisob maydon bo‘yicha olinadi (toshlar + to‘liq o‘ralgan bo‘sh nuqtalar); oqqa {k} komi beriladi. O‘tkazishdan oldin raqibning barcha o‘lik toshlarini oling. O‘zini o‘ldirish va darhol qaytarib olish (ko) mumkin emas. Ikkala o‘yinchi ketma-ket o‘tkazsa, o‘yin tugaydi.",
+    "lib.game.illegal": "Noqonuniy yurish (o‘zini o‘ldirish yoki darhol qaytarib olish).",
+    "lib.game.aiPassed": "Kompyuter o‘tkazdi. Siz ham o‘tkazsangiz, o‘yin tugaydi va hisob chiqariladi.",
+    "lib.game.start": "Boshlash",
+    "lib.game.lives": "Jon",
+    "lib.game.mmAsk": "Bu shakl qaysi plitkada edi?",
+    "lib.game.mmReady": "Tayyormisiz?",
+    "lib.game.mmMemorize": "Yodlang — {s} soniya qoldi",
+    "lib.game.mmQuestion": "Savol {i}/{n}",
+    "lib.game.mmDone": "Tayyor!",
+    "lib.game.mmLost": "Jon qolmadi — barcha plitkalar ochildi.",
+    "lib.game.mmNote": "Boshlash tugmasini bosing: plitkalar {s} soniya ko‘rsatiladi, so‘ng yashiriladi. Har bir plitkaning shakli va rangini eslab qoling, so‘ng ko‘rsatilgan shaklga mos plitkani tanlang. {l} tadan ko‘p xato qilsangiz, daraja o‘tilmaydi."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel ma'lumotlarini formulalar bilan ulash",
       "desc": "Ko'p varaq yoki Excel fayllarni har bir katak uchun formula bilan ulang (SUM, IF, CONCAT, UNIQUE...), ichma-ich funksiyalar va qayta ishlatsa bo'ladigan saqlangan formulalar bilan."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "9x9 Sudokuni onlayn o‘ynang: oddiydan qiyingacha 10 daraja, qaydlar, maslahatlar va xatolarni tekshirish bilan."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "1-9 va A-G dan foydalanadigan katta 16x16 Sudoku, oddiydan qiyingacha 10 daraja, qaydlar va maslahatlar bilan."
+    },
+    "chess": {
+      "name": "Kompyuterga qarshi shaxmat",
+      "desc": "Kompyuterga qarshi shaxmat o‘ynang: oddiydan qiyingacha 10 daraja, rokirovka, en passant va piyoda almashinuvi bilan."
+    },
+    "xiangqi": {
+      "name": "Kompyuterga qarshi Syanqi",
+      "desc": "Kompyuterga qarshi xitoy shaxmati (syanqi) o‘ynang: 10 daraja, ot oyog‘ini to‘sish, fil ko‘zi, to‘p bilan olish va generallarning ro‘para turish qoidasi bilan."
+    },
+    "go-game": {
+      "name": "Kompyuterga qarshi Go",
+      "desc": "Kompyuterga qarshi Go o‘ynang: 5x5, 7x7 va 9x9 taxtalarda 10 daraja, oxirida avtomatik hisob bilan."
+    },
+    "memory-shapes": {
+      "name": "Shakl va rang xotirasi",
+      "desc": "Shakl va rangli plitkalar 5 soniya ko‘rsatiladi, so‘ng yashiriladi; eslab qoling va to‘g‘ri plitkani tanlang, oddiydan qiyingacha 10 daraja."
     }
   },
   "s": {

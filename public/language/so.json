@@ -178,7 +178,61 @@
     "lib.excel.missing": "Maqan",
     "lib.excel.duplicate": "Nuqul",
     "lib.excel.valid": "Sax",
-    "lib.excel.invalid": "Aan sax ahayn"
+    "lib.excel.invalid": "Aan sax ahayn",
+    "lib.game.levels": "Heer",
+    "lib.game.level": "Heerka {n}",
+    "lib.game.unlockAll": "Fur dhammaan heerarka",
+    "lib.game.newGame": "Ciyaar cusub",
+    "lib.game.retry": "Mar kale ciyaar",
+    "lib.game.nextLevel": "Heerka xiga",
+    "lib.game.win": "Waxaad gudubtay heerka {n}!",
+    "lib.game.lose": "Heerka {n} lama gudbin. Mar kale isku day.",
+    "lib.game.draw": "Barbaro — heerka {n} lama gudbin.",
+    "lib.game.allDone": "Hambalyo! Waxaad gudubtay dhammaan 10-ka heer.",
+    "lib.game.time": "Waqti",
+    "lib.game.hint": "Tilmaam",
+    "lib.game.erase": "Tir",
+    "lib.game.check": "Hubi",
+    "lib.game.notes": "Qoraallo",
+    "lib.game.generating": "Xujada waa la samaynayaa…",
+    "lib.game.sudokuKeys": "Fallaadhaha u adeeg si aad u dhaqaaqdo, furayaasha tirooyinka si aad u buuxiso (16x16: A-G 10-16), Backspace si aad u tirtirto, N si aad u furto qoraallada.",
+    "lib.game.sudokuLeft": "{n} sanduuq ayaa harsan",
+    "lib.game.sudokuConflict": "Dhammaan sanduuqyada waa buuxaan laakiin tirooyin qaar ayaa soo noqnoqday. Fadlan mar kale hubi.",
+    "lib.game.sudokuWrong": "{n} sanduuq oo khalad ah (casaan lagu calaamadeeyay).",
+    "lib.game.sudokuAllRight": "Sanduuq khalad ah lama helin.",
+    "lib.game.thinking": "Kombuyuutarku wuu fikirayaa…",
+    "lib.game.yourTurn": "Markaaga",
+    "lib.game.undo": "Ka noqo",
+    "lib.game.resign": "Dhiib",
+    "lib.game.resigned": "Waad dhiibtay.",
+    "lib.game.chessCheck": "Shaah!",
+    "lib.game.chessMateWin": "Mat! Waad guuleysatay.",
+    "lib.game.chessMateLose": "Waa lagugu mat-gareeyay.",
+    "lib.game.chessDraw": "Ciyaartu waa barbaro.",
+    "lib.game.chessNote": "Waxaad ciyaartaa cad oo adigaa bilaabaya. Guji gabalkaaga, kaddib sanduuqa aad u dhaqaaqayso. Askartu markay gaadho safka ugu dambeeya waxay noqotaa boqorad. Ku guuleyso adiga oo mat ku sameeya madow.",
+    "lib.game.xiangqi": "Looxa Xiangqi",
+    "lib.game.xqCheck": "Shaah!",
+    "lib.game.xqMateWin": "Mat! Waad guuleysatay.",
+    "lib.game.xqMateLose": "Waa lagugu mat-gareeyay.",
+    "lib.game.xqStaleWin": "Madowga dhaqdhaqaaq sharci ah ma laha — waad guuleysatay.",
+    "lib.game.xqStaleLose": "Dhaqdhaqaaq sharci ah ma lihid — waad lumisay.",
+    "lib.game.xqNote": "Waxaad ciyaartaa casaan (hoose) oo adigaa bilaabaya. Guji gabalkaaga, kaddib dhibicda aad u dhaqaaqayso. Labada jeneraal ma wada wajahi karaan; mat ama dhaqdhaqaaq sharci ah oo aan jirin waa lumis.",
+    "lib.game.pass": "Gudub",
+    "lib.game.goBoard": "Looxa Go",
+    "lib.game.goCaps": "La qabtay — madow: {b} · cad: {w}",
+    "lib.game.goScore": "Dhibco — madow: {b}, cad: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Looxa {n}×{n}. Waxaad ciyaartaa madow oo adigaa bilaabaya. Dhibcaha waxaa lagu tiriyaa aagga (dhagaxyo + dhibco madhan oo gebi ahaanba la hareeraystay); cadku wuxuu helaa komi {k}. Qabo dhammaan dhagaxyada dhintay ee kuwa kula ciyaaraya ka hor intaadan gudbin. Is-dil iyo dib-qabasho degdeg ah (ko) lagama ogola. Ciyaartu waxay dhamaataa marka labadooduba isku xigxig gudbaan.",
+    "lib.game.illegal": "Dhaqdhaqaaq aan sharci ahayn (is-dil ama dib-qabasho degdeg ah).",
+    "lib.game.aiPassed": "Kombuyuutarku wuu gudbay. Haddii aad adna gudubto, ciyaartu way dhamaanaysaa waana la tirinayaa.",
+    "lib.game.start": "Bilow",
+    "lib.game.lives": "Nolol",
+    "lib.game.mmAsk": "Taayilka kee ayaa lahaa qaabkan?",
+    "lib.game.mmReady": "Diyaar?",
+    "lib.game.mmMemorize": "Xusuuso — {s} ilbiriqsi ayaa hadhay",
+    "lib.game.mmQuestion": "Su'aasha {i}/{n}",
+    "lib.game.mmDone": "Waa dhammaaday!",
+    "lib.game.mmLost": "Nolosha waa dhammaatay — hadda dhammaan taayilada waa la muujiyay.",
+    "lib.game.mmNote": "Taabo Bilow: taayilada waxaa la muujiyaa {s} ilbiriqsi, kaddibna waa la qariyaa. Xusuuso qaabka iyo midabka taayil kasta, kaddib dooro taayilka ku habboon qaabka la muujiyay. Khaladaad ka badan {l} waxay keenaan in heerka laga hoobto."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Ku dar xogta Excel foomulooyin",
       "desc": "Waxay isku darsaa xaashiyo ama faylal Excel oo badan iyadoo foomulo unug kasta loo isticmaalayo (SUM, IF, CONCAT, UNIQUE...), shaqooyin gudaha ah, iyo foomulooyin la keydiyay oo dib loo isticmaali karo."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Ku ciyaar Sudoku 9x9 khadka 10 heer oo ka bilaabma fudud ilaa adag, leh qoraallo, tilmaamo iyo hubinta khaladaadka."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku weyn 16x16 oo isticmaalaya 1-9 iyo A-G, 10 heer oo fudud ilaa adag, leh qoraallo iyo tilmaamo."
+    },
+    "chess": {
+      "name": "Shatranj Kombuyuutar",
+      "desc": "Ku ciyaar shatranj kombuyuutarka 10 heer oo fudud ilaa adag, leh castling, en passant iyo kor-u-qaadis."
+    },
+    "xiangqi": {
+      "name": "Xiangqi Kombuyuutar",
+      "desc": "Ku ciyaar shatranjka Shiinaha (xiangqi) kombuyuutarka 10 heer, leh xiritaanka lugta fardaha, il maroodiga, qabashada madfaca iyo xeerka jeneraalada is-eegaya."
+    },
+    "go-game": {
+      "name": "Go Kombuyuutar",
+      "desc": "Ku ciyaar Go kombuyuutarka looxyada 5x5, 7x7 iyo 9x9 ee 10 heer, leh tirin otomaatig ah dhammaadka."
+    },
+    "memory-shapes": {
+      "name": "Xusuusta Qaabka & Midabka",
+      "desc": "Taayilo leh qaabab iyo midabbo ayaa la muujiyaa 5 ilbiriqsi, kaddibna waa la qariyaa; xusuuso oo dooro taayilka saxda ah, 10 heer oo fudud ilaa adag."
     }
   },
   "s": {

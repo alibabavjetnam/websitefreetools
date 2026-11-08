@@ -178,7 +178,61 @@
     "lib.excel.missing": "Falta",
     "lib.excel.duplicate": "Duplicado",
     "lib.excel.valid": "Válido",
-    "lib.excel.invalid": "Non válido"
+    "lib.excel.invalid": "Non válido",
+    "lib.game.levels": "Nivel",
+    "lib.game.level": "Nivel {n}",
+    "lib.game.unlockAll": "Desbloquear todos os niveis",
+    "lib.game.newGame": "Xogo novo",
+    "lib.game.retry": "Xogar de novo",
+    "lib.game.nextLevel": "Seguinte nivel",
+    "lib.game.win": "Superaches o nivel {n}!",
+    "lib.game.lose": "Non superaches o nivel {n}. Téntao de novo.",
+    "lib.game.draw": "Táboas — non superaches o nivel {n}.",
+    "lib.game.allDone": "Parabéns! Superaches os 10 niveis.",
+    "lib.game.time": "Tempo",
+    "lib.game.hint": "Pista",
+    "lib.game.erase": "Borrar",
+    "lib.game.check": "Comprobar",
+    "lib.game.notes": "Notas",
+    "lib.game.generating": "Xerando o crebacabezas…",
+    "lib.game.sudokuKeys": "Frechas para moverte, números para encher (16x16: A-G para 10-16), Retroceso para borrar, N para activar as notas.",
+    "lib.game.sudokuLeft": "Quedan {n} celas",
+    "lib.game.sudokuConflict": "Todas as celas están cheas, pero algúns números repítense. Volve comprobar.",
+    "lib.game.sudokuWrong": "{n} celas incorrectas (marcadas en vermello).",
+    "lib.game.sudokuAllRight": "Non se atoparon celas incorrectas.",
+    "lib.game.thinking": "O ordenador está a pensar…",
+    "lib.game.yourTurn": "É o teu turno",
+    "lib.game.undo": "Desfacer",
+    "lib.game.resign": "Abandonar",
+    "lib.game.resigned": "Abandonaches.",
+    "lib.game.chessCheck": "Xaque!",
+    "lib.game.chessMateWin": "Xaque mate! Gañaches.",
+    "lib.game.chessMateLose": "Déronche xaque mate.",
+    "lib.game.chessDraw": "A partida rematou en táboas.",
+    "lib.game.chessNote": "Xogas coas brancas e moves primeiro. Preme na túa peza e despois na casa á que queres ir. O peón que chega á última fila coróase como dama. Gaña dando xaque mate ás negras.",
+    "lib.game.xiangqi": "Taboleiro de xiangqi",
+    "lib.game.xqCheck": "Xaque!",
+    "lib.game.xqMateWin": "Mate! Gañaches.",
+    "lib.game.xqMateLose": "Déronche mate.",
+    "lib.game.xqStaleWin": "As negras non teñen xogadas lexítimas — gañaches.",
+    "lib.game.xqStaleLose": "Non tes xogadas lexítimas — perdiches.",
+    "lib.game.xqNote": "Xogas cos vermellos (abaixo) e moves primeiro. Preme na túa peza e despois no punto ao que queres ir. Os dous xenerais non poden quedar cara a cara; mate ou non ter xogadas lexítimas significa perder.",
+    "lib.game.pass": "Pasar",
+    "lib.game.goBoard": "Taboleiro de go",
+    "lib.game.goCaps": "Capturadas — negras: {b} · brancas: {w}",
+    "lib.game.goScore": "Puntuación — negras: {b}, brancas: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Taboleiro de {n}×{n}. Xogas coas negras e moves primeiro. A puntuación é por área (pedras + puntos baleiros totalmente rodeados); as brancas reciben {k} de komi. Captura todas as pedras mortas do rival antes de pasar. Están prohibidos o suicidio e a recaptura inmediata (ko). A partida remata cando os dous xogadores pasan seguidos.",
+    "lib.game.illegal": "Xogada ilegal (suicidio ou recaptura inmediata).",
+    "lib.game.aiPassed": "O ordenador pasou. Se ti tamén pasas, a partida remata e puntúase.",
+    "lib.game.start": "Comezar",
+    "lib.game.lives": "Vidas",
+    "lib.game.mmAsk": "En que ficha estaba esta forma?",
+    "lib.game.mmReady": "Preparado?",
+    "lib.game.mmMemorize": "Memoriza — quedan {s} s",
+    "lib.game.mmQuestion": "Pregunta {i}/{n}",
+    "lib.game.mmDone": "Feito!",
+    "lib.game.mmLost": "Quedaches sen vidas — todas as fichas están descubertas.",
+    "lib.game.mmNote": "Preme Comezar: as fichas móstranse {s} segundos e despois ocúltanse. Lembra a forma e a cor de cada ficha e escolle a que coincide coa forma mostrada. Máis de {l} erros e non superas o nivel."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combinar datos de Excel con fórmulas",
       "desc": "Combina varias follas ou ficheiros Excel cunha fórmula por cela (SUM, IF, CONCAT, UNIQUE...), funcións aniñadas e fórmulas gardadas que podes reutilizar."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Xoga ao Sudoku 9x9 en liña en 10 niveis de fácil a difícil, con notas, pistas e comprobación de erros."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku grande de 16x16 con 1-9 e A-G, 10 niveis de fácil a difícil, con notas e pistas."
+    },
+    "chess": {
+      "name": "Xadrez contra o ordenador",
+      "desc": "Xoga ao xadrez contra o ordenador en 10 niveis de fácil a difícil, con enroque, captura ao paso e coroación."
+    },
+    "xiangqi": {
+      "name": "Xiangqi contra o ordenador",
+      "desc": "Xoga ao xadrez chinés (xiangqi) contra o ordenador en 10 niveis: bloqueo da pata do cabalo, ollo do elefante, capturas co canón e regra do xeneral voador."
+    },
+    "go-game": {
+      "name": "Go contra o ordenador",
+      "desc": "Xoga ao go contra o ordenador en taboleiros de 5x5, 7x7 e 9x9 en 10 niveis, con puntuación automática ao final."
+    },
+    "memory-shapes": {
+      "name": "Memoria de formas e cores",
+      "desc": "Móstranse fichas con formas e cores durante 5 segundos e despois ocúltanse; lembra e escolle a ficha correcta, 10 niveis de fácil a difícil."
     }
   },
   "s": {

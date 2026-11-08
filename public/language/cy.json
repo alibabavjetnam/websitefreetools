@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ar goll",
     "lib.excel.duplicate": "Dyblyg",
     "lib.excel.valid": "Dilys",
-    "lib.excel.invalid": "Annilys"
+    "lib.excel.invalid": "Annilys",
+    "lib.game.levels": "Lefel",
+    "lib.game.level": "Lefel {n}",
+    "lib.game.unlockAll": "Datgloi pob lefel",
+    "lib.game.newGame": "Gêm newydd",
+    "lib.game.retry": "Chwarae eto",
+    "lib.game.nextLevel": "Lefel nesaf",
+    "lib.game.win": "Rydych wedi cwblhau lefel {n}!",
+    "lib.game.lose": "Heb gwblhau lefel {n}. Rhowch gynnig arall arni.",
+    "lib.game.draw": "Cyfartal — heb gwblhau lefel {n}.",
+    "lib.game.allDone": "Llongyfarchiadau! Rydych wedi cwblhau pob un o'r 10 lefel.",
+    "lib.game.time": "Amser",
+    "lib.game.hint": "Awgrym",
+    "lib.game.erase": "Dileu",
+    "lib.game.check": "Gwirio",
+    "lib.game.notes": "Nodiadau",
+    "lib.game.generating": "Yn creu'r pos…",
+    "lib.game.sudokuKeys": "Bysellau saeth i symud, bysellau rhif i lenwi (16x16: A-G ar gyfer 10-16), Backspace i ddileu, N i droi nodiadau ymlaen/i ffwrdd.",
+    "lib.game.sudokuLeft": "{n} cell ar ôl",
+    "lib.game.sudokuConflict": "Mae pob cell wedi'i llenwi ond mae rhai rhifau'n ailadrodd. Gwiriwch eto.",
+    "lib.game.sudokuWrong": "{n} cell anghywir (wedi'u marcio'n goch).",
+    "lib.game.sudokuAllRight": "Heb ganfod unrhyw gell anghywir.",
+    "lib.game.thinking": "Mae'r cyfrifiadur yn meddwl…",
+    "lib.game.yourTurn": "Eich tro chi",
+    "lib.game.undo": "Dadwneud",
+    "lib.game.resign": "Ildio",
+    "lib.game.resigned": "Rydych wedi ildio.",
+    "lib.game.chessCheck": "Siarc!",
+    "lib.game.chessMateWin": "Mat! Rydych wedi ennill.",
+    "lib.game.chessMateLose": "Rydych wedi cael mat.",
+    "lib.game.chessDraw": "Mae'r gêm yn gyfartal.",
+    "lib.game.chessNote": "Rydych yn chwarae'r gwyn ac yn symud gyntaf. Cliciwch ar eich darn, yna ar y sgwâr i symud iddo. Mae gwerinwr sy'n cyrraedd y rhes olaf yn dod yn frenhines. Ennill drwy roi mat i'r du.",
+    "lib.game.xiangqi": "Bwrdd xiangqi",
+    "lib.game.xqCheck": "Siarc!",
+    "lib.game.xqMateWin": "Mat! Rydych wedi ennill.",
+    "lib.game.xqMateLose": "Rydych wedi cael mat.",
+    "lib.game.xqStaleWin": "Nid oes gan y du symudiadau cyfreithlon — rydych wedi ennill.",
+    "lib.game.xqStaleLose": "Nid oes gennych symudiadau cyfreithlon — rydych wedi colli.",
+    "lib.game.xqNote": "Rydych yn chwarae'r coch (ar y gwaelod) ac yn symud gyntaf. Cliciwch ar eich darn, yna ar y pwynt i symud iddo. Ni all y ddau gadfridog wynebu ei gilydd; mae mat neu ddiffyg symudiadau cyfreithlon yn golygu colli.",
+    "lib.game.pass": "Pasio",
+    "lib.game.goBoard": "Bwrdd Go",
+    "lib.game.goCaps": "Wedi'u dal — Du: {b} · Gwyn: {w}",
+    "lib.game.goScore": "Sgôr — Du: {b}, Gwyn: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Bwrdd {n}×{n}. Rydych yn chwarae'r du ac yn symud gyntaf. Sgorir yn ôl arwynebedd (cerrig + pwyntiau gwag wedi'u hamgylchynu'n llwyr); mae'r gwyn yn cael komi o {k}. Cipiwch holl gerrig marw'r gwrthwynebydd cyn pasio. Ni chaniateir hunanladdiad nac ail-ddal ar unwaith (ko). Daw'r gêm i ben pan fydd y ddau chwaraewr yn pasio'n olynol.",
+    "lib.game.illegal": "Symudiad anghyfreithlon (hunanladdiad neu ail-ddal ar unwaith).",
+    "lib.game.aiPassed": "Pasiodd y cyfrifiadur. Os byddwch chi'n pasio hefyd, daw'r gêm i ben a sgorir hi.",
+    "lib.game.start": "Dechrau",
+    "lib.game.lives": "Bywydau",
+    "lib.game.mmAsk": "Pa deilsen oedd â'r siâp hwn?",
+    "lib.game.mmReady": "Barod?",
+    "lib.game.mmMemorize": "Cofiwch — {s} eiliad ar ôl",
+    "lib.game.mmQuestion": "Cwestiwn {i}/{n}",
+    "lib.game.mmDone": "Wedi gorffen!",
+    "lib.game.mmLost": "Dim bywydau ar ôl — mae pob teilsen bellach wedi'i datgelu.",
+    "lib.game.mmNote": "Pwyswch Dechrau: dangosir y teils am {s} eiliad, yna cuddir hwy. Cofiwch siâp a lliw pob teilsen, yna dewiswch y deilsen sy'n cyfateb i'r siâp a ddangosir. Mwy na {l} camgymeriad a methir y lefel."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Cyfuno Data Excel â Fformiwlâu",
       "desc": "Cyfunwch sawl taflen neu ffeil Excel gyda fformiwla ar gyfer pob cell (SUM, IF, CONCAT, UNIQUE...), ffwythiannau nythedig, a fformiwlâu wedi'u cadw y gallwch eu hailddefnyddio."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Chwaraewch Sudoku 9x9 ar-lein mewn 10 lefel o hawdd i anodd, gyda nodiadau, awgrymiadau a gwirio gwallau."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku mawr 16x16 gyda 1-9 ac A-G, 10 lefel o hawdd i anodd, gyda nodiadau ac awgrymiadau."
+    },
+    "chess": {
+      "name": "Gwyddbwyll yn erbyn y cyfrifiadur",
+      "desc": "Chwaraewch wyddbwyll yn erbyn y cyfrifiadur mewn 10 lefel o hawdd i anodd, gyda chastellu, en passant a dyrchafu."
+    },
+    "xiangqi": {
+      "name": "Xiangqi yn erbyn y cyfrifiadur",
+      "desc": "Chwaraewch wyddbwyll Tsieineaidd (xiangqi) yn erbyn y cyfrifiadur mewn 10 lefel, gyda rhwystro coes y ceffyl, llygad yr eliffant, dal â'r canon a rheol y cadfridog hedfan."
+    },
+    "go-game": {
+      "name": "Go yn erbyn y cyfrifiadur",
+      "desc": "Chwaraewch Go yn erbyn y cyfrifiadur ar fyrddau 5x5, 7x7 a 9x9 mewn 10 lefel, gyda sgorio awtomatig ar y diwedd."
+    },
+    "memory-shapes": {
+      "name": "Cof siapiau a lliwiau",
+      "desc": "Dangosir teils â siapiau a lliwiau am 5 eiliad, yna cuddir hwy; cofiwch a dewiswch y deilsen gywir, 10 lefel o hawdd i anodd."
     }
   },
   "s": {

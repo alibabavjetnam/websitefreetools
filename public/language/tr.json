@@ -178,7 +178,61 @@
     "lib.excel.missing": "Eksik",
     "lib.excel.duplicate": "Tekrar",
     "lib.excel.valid": "Geçerli",
-    "lib.excel.invalid": "Geçersiz"
+    "lib.excel.invalid": "Geçersiz",
+    "lib.game.levels": "Seviye",
+    "lib.game.level": "Seviye {n}",
+    "lib.game.unlockAll": "Tüm seviyelerin kilidini aç",
+    "lib.game.newGame": "Yeni oyun",
+    "lib.game.retry": "Tekrar oyna",
+    "lib.game.nextLevel": "Sonraki seviye",
+    "lib.game.win": "{n}. seviyeyi geçtiniz!",
+    "lib.game.lose": "{n}. seviye geçilemedi. Tekrar deneyin.",
+    "lib.game.draw": "Berabere — {n}. seviye geçilemedi.",
+    "lib.game.allDone": "Tebrikler! 10 seviyenin hepsini geçtiniz.",
+    "lib.game.time": "Süre",
+    "lib.game.hint": "İpucu",
+    "lib.game.erase": "Sil",
+    "lib.game.check": "Kontrol et",
+    "lib.game.notes": "Notlar",
+    "lib.game.generating": "Bulmaca hazırlanıyor…",
+    "lib.game.sudokuKeys": "Ok tuşlarıyla gezinin, rakam tuşlarıyla doldurun (16x16: 10-16 için A-G), silmek için Backspace, notları açıp kapatmak için N.",
+    "lib.game.sudokuLeft": "{n} hücre kaldı",
+    "lib.game.sudokuConflict": "Tüm hücreler dolu ancak bazı sayılar tekrar ediyor. Lütfen tekrar kontrol edin.",
+    "lib.game.sudokuWrong": "{n} hatalı hücre (kırmızı ile işaretli).",
+    "lib.game.sudokuAllRight": "Hatalı hücre bulunamadı.",
+    "lib.game.thinking": "Bilgisayar düşünüyor…",
+    "lib.game.yourTurn": "Sıra sizde",
+    "lib.game.undo": "Geri al",
+    "lib.game.resign": "Çekil",
+    "lib.game.resigned": "Çekildiniz.",
+    "lib.game.chessCheck": "Şah!",
+    "lib.game.chessMateWin": "Şah mat! Kazandınız.",
+    "lib.game.chessMateLose": "Şah mat oldunuz.",
+    "lib.game.chessDraw": "Oyun berabere bitti.",
+    "lib.game.chessNote": "Beyazları siz oynarsınız ve ilk hamleyi yaparsınız. Taşınıza, sonra gideceği kareye tıklayın. Son sıraya ulaşan piyon vezire terfi eder. Siyaha şah mat çekerek kazanın.",
+    "lib.game.xiangqi": "Xiangqi tahtası",
+    "lib.game.xqCheck": "Şah!",
+    "lib.game.xqMateWin": "Şah mat! Kazandınız.",
+    "lib.game.xqMateLose": "Şah mat oldunuz.",
+    "lib.game.xqStaleWin": "Siyahın yasal hamlesi yok — kazandınız.",
+    "lib.game.xqStaleLose": "Yasal hamleniz yok — kaybettiniz.",
+    "lib.game.xqNote": "Kırmızıyı (altta) siz oynarsınız ve ilk hamleyi yaparsınız. Taşınıza, sonra gideceği noktaya tıklayın. İki general karşı karşıya gelemez; şah mat olmak veya yasal hamlesi kalmamak kaybettirir.",
+    "lib.game.pass": "Pas",
+    "lib.game.goBoard": "Go tahtası",
+    "lib.game.goCaps": "Alınan taşlar — Siyah: {b} · Beyaz: {w}",
+    "lib.game.goScore": "Skor — Siyah: {b}, Beyaz: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} tahta. Siyahı siz oynarsınız ve ilk hamleyi yaparsınız. Puanlama alana göre yapılır (taşlar + tamamen çevrilmiş boş noktalar); Beyaz {k} komi alır. Pas geçmeden önce rakibin tüm ölü taşlarını alın. İntihar ve hemen geri alma (ko) yasaktır. Oyun, iki oyuncu art arda pas geçince biter.",
+    "lib.game.illegal": "Geçersiz hamle (intihar veya hemen geri alma).",
+    "lib.game.aiPassed": "Bilgisayar pas geçti. Siz de pas geçerseniz oyun biter ve puanlanır.",
+    "lib.game.start": "Başla",
+    "lib.game.lives": "Can",
+    "lib.game.mmAsk": "Bu şekil hangi karedeydi?",
+    "lib.game.mmReady": "Hazır mısınız?",
+    "lib.game.mmMemorize": "Ezberleyin — {s} sn kaldı",
+    "lib.game.mmQuestion": "Soru {i}/{n}",
+    "lib.game.mmDone": "Bitti!",
+    "lib.game.mmLost": "Canınız bitti — tüm kareler açıldı.",
+    "lib.game.mmNote": "Başla'ya basın: kareler {s} saniye gösterilir, sonra gizlenir. Her karenin şeklini ve rengini aklınızda tutun, sonra gösterilen şekle uyan kareyi seçin. {l} hatadan fazlası seviyeyi geçersiz kılar."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel verilerini formüllerle birleştir",
       "desc": "Birçok sayfayı veya Excel dosyasını hücre başına bir formülle (SUM, IF, CONCAT, UNIQUE...), iç içe işlevlerle ve tekrar kullanabileceğiniz kayıtlı formüllerle birleştirin."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Kolaydan zora 10 seviyede çevrimiçi 9x9 Sudoku oynayın; notlar, ipuçları ve hata kontrolü ile."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "1-9 ve A-G kullanan büyük 16x16 Sudoku, kolaydan zora 10 seviye, notlar ve ipuçlarıyla."
+    },
+    "chess": {
+      "name": "Bilgisayara karşı Satranç",
+      "desc": "Kolaydan zora 10 seviyede bilgisayara karşı satranç oynayın; rok, en passant ve terfi dahil."
+    },
+    "xiangqi": {
+      "name": "Bilgisayara karşı Xiangqi",
+      "desc": "Bilgisayara karşı Çin satrancı (xiangqi) oynayın, 10 seviye; at ayağı engeli, fil gözü, top ile alma ve uçan general kuralı dahil."
+    },
+    "go-game": {
+      "name": "Bilgisayara karşı Go",
+      "desc": "5x5, 7x7 ve 9x9 tahtalarda bilgisayara karşı Go oynayın, 10 seviye; oyun sonunda otomatik puanlama."
+    },
+    "memory-shapes": {
+      "name": "Şekil ve Renk Hafızası",
+      "desc": "Şekilli ve renkli kareler 5 saniye gösterilip gizlenir; hatırlayıp doğru kareyi seçin, kolaydan zora 10 seviye."
     }
   },
   "s": {

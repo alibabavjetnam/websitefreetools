@@ -178,7 +178,61 @@
     "lib.excel.missing": "Falta",
     "lib.excel.duplicate": "Duplicado",
     "lib.excel.valid": "Válido",
-    "lib.excel.invalid": "No válido"
+    "lib.excel.invalid": "No válido",
+    "lib.game.levels": "Nivel",
+    "lib.game.level": "Nivel {n}",
+    "lib.game.unlockAll": "Desbloquear todos los niveles",
+    "lib.game.newGame": "Nueva partida",
+    "lib.game.retry": "Jugar de nuevo",
+    "lib.game.nextLevel": "Siguiente nivel",
+    "lib.game.win": "¡Has superado el nivel {n}!",
+    "lib.game.lose": "No superaste el nivel {n}. Inténtalo de nuevo.",
+    "lib.game.draw": "Empate: nivel {n} no superado.",
+    "lib.game.allDone": "¡Felicidades! Has superado los 10 niveles.",
+    "lib.game.time": "Tiempo",
+    "lib.game.hint": "Pista",
+    "lib.game.erase": "Borrar",
+    "lib.game.check": "Comprobar",
+    "lib.game.notes": "Notas",
+    "lib.game.generating": "Generando puzle…",
+    "lib.game.sudokuKeys": "Flechas para moverte, números para rellenar (16x16: A-G para 10-16), Retroceso para borrar, N para activar las notas.",
+    "lib.game.sudokuLeft": "Faltan {n} casillas",
+    "lib.game.sudokuConflict": "Todas las casillas están llenas, pero hay números repetidos. Revísalo de nuevo.",
+    "lib.game.sudokuWrong": "{n} casillas incorrectas (marcadas en rojo).",
+    "lib.game.sudokuAllRight": "No se encontraron casillas incorrectas.",
+    "lib.game.thinking": "El ordenador está pensando…",
+    "lib.game.yourTurn": "Tu turno",
+    "lib.game.undo": "Deshacer",
+    "lib.game.resign": "Rendirse",
+    "lib.game.resigned": "Te has rendido.",
+    "lib.game.chessCheck": "¡Jaque!",
+    "lib.game.chessMateWin": "¡Jaque mate! Ganas.",
+    "lib.game.chessMateLose": "Te han dado jaque mate.",
+    "lib.game.chessDraw": "La partida es tablas.",
+    "lib.game.chessNote": "Juegas con blancas y mueves primero. Haz clic en tu pieza y luego en la casilla de destino. Los peones que llegan a la última fila se coronan como dama. Gana dando jaque mate a las negras.",
+    "lib.game.xiangqi": "Tablero de xiangqi",
+    "lib.game.xqCheck": "¡Jaque!",
+    "lib.game.xqMateWin": "¡Jaque mate! Ganas.",
+    "lib.game.xqMateLose": "Te han dado jaque mate.",
+    "lib.game.xqStaleWin": "Las negras no tienen movimientos legales: ganas.",
+    "lib.game.xqStaleLose": "No tienes movimientos legales: pierdes.",
+    "lib.game.xqNote": "Juegas con rojas (abajo) y mueves primero. Haz clic en tu pieza y luego en el punto de destino. Los dos generales no pueden quedar frente a frente; pierde quien recibe jaque mate o se queda sin movimientos legales.",
+    "lib.game.pass": "Pasar",
+    "lib.game.goBoard": "Tablero de Go",
+    "lib.game.goCaps": "Capturas — Negras: {b} · Blancas: {w}",
+    "lib.game.goScore": "Puntuación — Negras: {b}, Blancas: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Tablero de {n}×{n}. Juegas con negras y mueves primero. Se puntúa por área (piedras + puntos vacíos totalmente rodeados); las blancas reciben {k} de komi. Captura todas las piedras muertas del rival antes de pasar. No se permite el suicidio ni la recaptura inmediata (ko). La partida termina cuando ambos jugadores pasan seguidos.",
+    "lib.game.illegal": "Movimiento ilegal (suicidio o recaptura inmediata).",
+    "lib.game.aiPassed": "El ordenador ha pasado. Si tú también pasas, la partida termina y se puntúa.",
+    "lib.game.start": "Empezar",
+    "lib.game.lives": "Vidas",
+    "lib.game.mmAsk": "¿Qué baldosa tenía esta forma?",
+    "lib.game.mmReady": "¿Listo?",
+    "lib.game.mmMemorize": "Memoriza: quedan {s} s",
+    "lib.game.mmQuestion": "Pregunta {i}/{n}",
+    "lib.game.mmDone": "¡Listo!",
+    "lib.game.mmLost": "Sin vidas: ahora se muestran todas las baldosas.",
+    "lib.game.mmNote": "Pulsa Empezar: las baldosas se muestran {s} segundos y luego se ocultan. Recuerda la forma y el color de cada una y elige la que coincide con la forma mostrada. Más de {l} errores y no superas el nivel."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combinar datos de Excel con fórmulas",
       "desc": "Combina varias hojas o archivos de Excel con una fórmula por celda (SUM, IF, CONCAT, UNIQUE...), funciones anidadas y fórmulas guardadas que puedes reutilizar."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Juega al sudoku 9x9 en línea con 10 niveles de fácil a difícil, con notas, pistas y comprobación de errores."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku grande 16x16 con 1-9 y A-G, 10 niveles de fácil a difícil, con notas y pistas."
+    },
+    "chess": {
+      "name": "Ajedrez contra el ordenador",
+      "desc": "Juega al ajedrez contra el ordenador en 10 niveles de fácil a difícil, con enroque, captura al paso y promoción."
+    },
+    "xiangqi": {
+      "name": "Xiangqi contra el ordenador",
+      "desc": "Juega al ajedrez chino (xiangqi) contra el ordenador en 10 niveles, con bloqueo del caballo, ojo del elefante, capturas del cañón y regla de los generales enfrentados."
+    },
+    "go-game": {
+      "name": "Go contra el ordenador",
+      "desc": "Juega al Go contra el ordenador en tableros de 5x5, 7x7 y 9x9 con 10 niveles, con puntuación automática al final."
+    },
+    "memory-shapes": {
+      "name": "Memoria de formas y colores",
+      "desc": "Se muestran baldosas con formas y colores durante 5 segundos y luego se ocultan; recuerda y elige la correcta, 10 niveles de fácil a difícil."
     }
   },
   "s": {

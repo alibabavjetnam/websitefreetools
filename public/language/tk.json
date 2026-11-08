@@ -178,7 +178,61 @@
     "lib.excel.missing": "Ýok",
     "lib.excel.duplicate": "Gaýtalanýar",
     "lib.excel.valid": "Dogry",
-    "lib.excel.invalid": "Nädogry"
+    "lib.excel.invalid": "Nädogry",
+    "lib.game.levels": "Derejesi",
+    "lib.game.level": "{n}-nji dereje",
+    "lib.game.unlockAll": "Ähli derejeleri aç",
+    "lib.game.newGame": "Täze oýun",
+    "lib.game.retry": "Ýene oýna",
+    "lib.game.nextLevel": "Indiki dereje",
+    "lib.game.win": "Siz {n}-nji derejäni geçdiňiz!",
+    "lib.game.lose": "{n}-nji dereje geçilmedi. Ýene synanyşyň.",
+    "lib.game.draw": "Deň — {n}-nji dereje geçilmedi.",
+    "lib.game.allDone": "Gutlaýarys! Siz ähli 10 derejäni geçdiňiz.",
+    "lib.game.time": "Wagt",
+    "lib.game.hint": "Maslahat",
+    "lib.game.erase": "Poz",
+    "lib.game.check": "Barla",
+    "lib.game.notes": "Bellikler",
+    "lib.game.generating": "Tapmaça döredilýär…",
+    "lib.game.sudokuKeys": "Hereket üçin ok düwmeleri, doldurmak üçin san düwmeleri (16x16: 10-16 üçin A-G), pozmak üçin Backspace, bellikleri çalyşmak üçin N.",
+    "lib.game.sudokuLeft": "{n} öýjük galdy",
+    "lib.game.sudokuConflict": "Ähli öýjükler doldy, emma käbir sanlar gaýtalanýar. Ýene barlaň.",
+    "lib.game.sudokuWrong": "{n} ýalňyş öýjük (gyzyl bilen bellendi).",
+    "lib.game.sudokuAllRight": "Ýalňyş öýjük tapylmady.",
+    "lib.game.thinking": "Kompýuter pikir edýär…",
+    "lib.game.yourTurn": "Siziň nobatyňyz",
+    "lib.game.undo": "Yzyna al",
+    "lib.game.resign": "Boýun bol",
+    "lib.game.resigned": "Siz boýun boldyňyz.",
+    "lib.game.chessCheck": "Şa!",
+    "lib.game.chessMateWin": "Mat! Siz ýeňdiňiz.",
+    "lib.game.chessMateLose": "Size mat goýuldy.",
+    "lib.game.chessDraw": "Oýun deň gutardy.",
+    "lib.game.chessNote": "Siz ak bilen oýnaýarsyňyz we ilki ýöreýärsiňiz. Daşyňyza, soňra barjak öýjügiňize basyň. Soňky hatara ýeten piýada weziriň ornuna geçýär. Gara mat goýup ýeňiň.",
+    "lib.game.xiangqi": "Syanşi tagtasy",
+    "lib.game.xqCheck": "Şa!",
+    "lib.game.xqMateWin": "Mat! Siz ýeňdiňiz.",
+    "lib.game.xqMateLose": "Size mat goýuldy.",
+    "lib.game.xqStaleWin": "Garanyň kanuny ýörişi ýok — siz ýeňdiňiz.",
+    "lib.game.xqStaleLose": "Siziň kanuny ýörişiňiz ýok — siz ýeňildiňiz.",
+    "lib.game.xqNote": "Siz gyzyl (aşakda) bilen oýnaýarsyňyz we ilki ýöreýärsiňiz. Daşyňyza, soňra barjak nokadyňyza basyň. Iki general ýüzbe-ýüz durup bilmez; mat goýulan ýa-da kanuny ýörişi galmadyk ýeňilýär.",
+    "lib.game.pass": "Geç",
+    "lib.game.goBoard": "Go tagtasy",
+    "lib.game.goCaps": "Alnanlar — Gara: {b} · Ak: {w}",
+    "lib.game.goScore": "Utuk — Gara: {b}, Ak: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} tagta. Siz gara bilen oýnaýarsyňyz we ilki ýöreýärsiňiz. Utuk meýdana görä hasaplanýar (daşlar + doly gurşalan boş nokatlar); aga {k} komi berilýär. Geçmezden öň garşydaşyň ähli ölen daşlaryny alyň. Özüni öldürmek we derrew yzyna almak (ko) gadagan. Iki oýunçy yzly-yzyna geçse, oýun gutarýar.",
+    "lib.game.illegal": "Kanunsyz ýöriş (özüni öldürmek ýa-da derrew yzyna almak).",
+    "lib.game.aiPassed": "Kompýuter geçdi. Siz hem geçseňiz, oýun gutarar we utuk hasaplanar.",
+    "lib.game.start": "Başla",
+    "lib.game.lives": "Jan",
+    "lib.game.mmAsk": "Bu şekil haýsy plitkada boldy?",
+    "lib.game.mmReady": "Taýynmy?",
+    "lib.game.mmMemorize": "Ýat tutuň — {s} sek galdy",
+    "lib.game.mmQuestion": "Sorag {i}/{n}",
+    "lib.game.mmDone": "Taýýar!",
+    "lib.game.mmLost": "Jan galmady — ähli plitkalar açyldy.",
+    "lib.game.mmNote": "Başla düwmesine basyň: plitkalar {s} sekunt görkezilýär, soňra gizlenýär. Her plitkanyň şekilini we reňkini ýat tutuň, soňra görkezilen şekile gabat gelýän plitkany saýlaň. {l}-den köp ýalňyşlyk dereje geçilmezligine getirýär."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel maglumatlaryny formulalar bilen utgaşdyr",
       "desc": "Köp sahypany ýa-da Excel faýlyny her öýjük üçin bir formula bilen (SUM, IF, CONCAT, UNIQUE...) utgaşdyrýar; içine goýlan funksiýalar we gaýtadan ulanyp boljak saklanan formulalar bar."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "9x9 Sudokuny onlaýn oýnaň: ýeňilden kyna 10 dereje, bellikler, maslahatlar we ýalňyşlyk barlagy bilen."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "1-9 we A-G ulanýan uly 16x16 Sudoku, ýeňilden kyna 10 dereje, bellikler we maslahatlar bilen."
+    },
+    "chess": {
+      "name": "Kompýutere garşy şahmat",
+      "desc": "Kompýutere garşy şahmat oýnaň: ýeňilden kyna 10 dereje, rokirowka, en passant we piýada ýokarlanmasy bilen."
+    },
+    "xiangqi": {
+      "name": "Kompýutere garşy Syanşi",
+      "desc": "Kompýutere garşy hytaý şahmaty (syanşi) oýnaň: 10 dereje, at aýagynyň petlenmegi, pil gözi, top bilen almak we generallaryň ýüzbe-ýüz durmak düzgüni bilen."
+    },
+    "go-game": {
+      "name": "Kompýutere garşy Go",
+      "desc": "Kompýutere garşy Go oýnaň: 5x5, 7x7 we 9x9 tagtalarda 10 dereje, ahyrynda awtomatik utuk hasaplamasy bilen."
+    },
+    "memory-shapes": {
+      "name": "Şekil we reňk ýady",
+      "desc": "Şekilli we reňkli plitkalar 5 sekunt görkezilýär, soňra gizlenýär; ýat tutup dogry plitkany saýlaň, ýeňilden kyna 10 dereje."
     }
   },
   "s": {

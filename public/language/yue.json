@@ -178,7 +178,61 @@
     "lib.excel.missing": "缺失",
     "lib.excel.duplicate": "重複",
     "lib.excel.valid": "有效",
-    "lib.excel.invalid": "無效"
+    "lib.excel.invalid": "無效",
+    "lib.game.levels": "關卡",
+    "lib.game.level": "第 {n} 關",
+    "lib.game.unlockAll": "解鎖所有關卡",
+    "lib.game.newGame": "新遊戲",
+    "lib.game.retry": "再玩一次",
+    "lib.game.nextLevel": "下一關",
+    "lib.game.win": "你已經過咗第 {n} 關！",
+    "lib.game.lose": "第 {n} 關未過，再試吓。",
+    "lib.game.draw": "和棋 — 第 {n} 關未過。",
+    "lib.game.allDone": "恭喜！你已經過晒全部 10 關。",
+    "lib.game.time": "時間",
+    "lib.game.hint": "提示",
+    "lib.game.erase": "擦除",
+    "lib.game.check": "檢查",
+    "lib.game.notes": "筆記",
+    "lib.game.generating": "生成緊題目…",
+    "lib.game.sudokuKeys": "用方向鍵移動、數字鍵填寫（16x16：A-G 代表 10-16）、Backspace 擦除、N 切換筆記。",
+    "lib.game.sudokuLeft": "仲有 {n} 格",
+    "lib.game.sudokuConflict": "所有格都填滿咗，不過有數字重複。請再檢查。",
+    "lib.game.sudokuWrong": "有 {n} 格錯咗（用紅色標示）。",
+    "lib.game.sudokuAllRight": "搵唔到錯嘅格。",
+    "lib.game.thinking": "電腦諗緊…",
+    "lib.game.yourTurn": "到你行",
+    "lib.game.undo": "悔棋",
+    "lib.game.resign": "認輸",
+    "lib.game.resigned": "你已認輸。",
+    "lib.game.chessCheck": "將軍！",
+    "lib.game.chessMateWin": "將死！你贏咗。",
+    "lib.game.chessMateLose": "你被將死。",
+    "lib.game.chessDraw": "呢盤棋和局。",
+    "lib.game.chessNote": "你執白棋，先行。點擊你嘅棋子，再點擊目標格。兵到達底線會升變做后。將死黑棋就贏。",
+    "lib.game.xiangqi": "象棋棋盤",
+    "lib.game.xqCheck": "將軍！",
+    "lib.game.xqMateWin": "將死！你贏咗。",
+    "lib.game.xqMateLose": "你被將死。",
+    "lib.game.xqStaleWin": "黑方冇合法著法 — 你贏咗。",
+    "lib.game.xqStaleLose": "你冇合法著法 — 你輸咗。",
+    "lib.game.xqNote": "你執紅棋（喺下面），先行。點擊你嘅棋子，再點擊目標點。兩個將帥不可以對面；被將死或者冇合法著法就輸。",
+    "lib.game.pass": "虛手",
+    "lib.game.goBoard": "圍棋棋盤",
+    "lib.game.goCaps": "提子 — 黑：{b} · 白：{w}",
+    "lib.game.goScore": "得分 — 黑：{b}，白：{w} + 貼目 {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} 棋盤。你執黑棋，先行。按面積計分（棋子 + 完全圍住嘅空點）；白棋有 {k} 貼目。虛手之前要提晒對手嘅死子。唔准自殺同即時回提（劫）。雙方連續虛手就終局。",
+    "lib.game.illegal": "唔合法嘅著法（自殺或者即時回提）。",
+    "lib.game.aiPassed": "電腦虛手。如果你都虛手，棋局就會結束並計分。",
+    "lib.game.start": "開始",
+    "lib.game.lives": "生命",
+    "lib.game.mmAsk": "邊塊方塊係呢個形狀？",
+    "lib.game.mmReady": "準備好未？",
+    "lib.game.mmMemorize": "記住 — 仲有 {s} 秒",
+    "lib.game.mmQuestion": "第 {i}/{n} 題",
+    "lib.game.mmDone": "完成！",
+    "lib.game.mmLost": "生命用晒 — 所有方塊而家全部翻開。",
+    "lib.game.mmNote": "㩒開始：方塊會顯示 {s} 秒，然後隱藏。記住每塊方塊嘅形狀同顏色，再揀返同顯示形狀一樣嘅方塊。錯多過 {l} 次就過唔到呢一關。"
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "用公式組合 Excel 資料",
       "desc": "每個儲存格用一條公式（SUM、IF、CONCAT、UNIQUE...）組合多個工作表或 Excel 檔案，支援巢狀函數，仲可以儲存公式重複使用。"
+    },
+    "sudoku-9x9": {
+      "name": "數獨 9x9",
+      "desc": "喺網上玩 9x9 數獨，10 個關卡由易到難，有筆記、提示同檢查錯誤。"
+    },
+    "sudoku-16x16": {
+      "name": "數獨 16x16",
+      "desc": "大型 16x16 數獨，用 1-9 同 A-G，10 個關卡由易到難，有筆記同提示。"
+    },
+    "chess": {
+      "name": "同電腦下國際象棋",
+      "desc": "同電腦下國際象棋，10 個關卡由易到難，支援王車易位、吃過路兵同升變。"
+    },
+    "xiangqi": {
+      "name": "同電腦下象棋",
+      "desc": "同電腦下中國象棋，10 個關卡，支援蹩馬腳、塞象眼、炮打隔子同將帥不能對面嘅規則。"
+    },
+    "go-game": {
+      "name": "同電腦下圍棋",
+      "desc": "同電腦喺 5x5、7x7 同 9x9 棋盤下圍棋，10 個關卡，終局自動計分。"
+    },
+    "memory-shapes": {
+      "name": "形狀同顏色記憶",
+      "desc": "有形狀同顏色嘅方塊顯示 5 秒後隱藏；記住並揀出正確嘅方塊，10 個關卡由易到難。"
     }
   },
   "s": {

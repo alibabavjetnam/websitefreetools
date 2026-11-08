@@ -178,7 +178,61 @@
     "lib.excel.missing": "Puudub",
     "lib.excel.duplicate": "Dubleeritud",
     "lib.excel.valid": "Kehtiv",
-    "lib.excel.invalid": "Kehtetu"
+    "lib.excel.invalid": "Kehtetu",
+    "lib.game.levels": "Tase",
+    "lib.game.level": "Tase {n}",
+    "lib.game.unlockAll": "Ava kõik tasemed",
+    "lib.game.newGame": "Uus mäng",
+    "lib.game.retry": "Mängi uuesti",
+    "lib.game.nextLevel": "Järgmine tase",
+    "lib.game.win": "Läbisid taseme {n}!",
+    "lib.game.lose": "Taset {n} ei läbitud. Proovi uuesti.",
+    "lib.game.draw": "Viik — taset {n} ei läbitud.",
+    "lib.game.allDone": "Palju õnne! Läbisid kõik 10 taset.",
+    "lib.game.time": "Aeg",
+    "lib.game.hint": "Vihje",
+    "lib.game.erase": "Kustuta",
+    "lib.game.check": "Kontrolli",
+    "lib.game.notes": "Märkmed",
+    "lib.game.generating": "Mõistatuse loomine…",
+    "lib.game.sudokuKeys": "Nooleklahvid liikumiseks, numbriklahvid täitmiseks (16x16: A-G arvude 10-16 jaoks), Backspace kustutamiseks, N märkmete lülitamiseks.",
+    "lib.game.sudokuLeft": "Jäänud {n} lahtrit",
+    "lib.game.sudokuConflict": "Kõik lahtrid on täidetud, kuid mõned numbrid kordavad. Kontrolli uuesti.",
+    "lib.game.sudokuWrong": "{n} valet lahtrit (märgitud punasega).",
+    "lib.game.sudokuAllRight": "Valesid lahtreid ei leitud.",
+    "lib.game.thinking": "Arvuti mõtleb…",
+    "lib.game.yourTurn": "Sinu käik",
+    "lib.game.undo": "Võta tagasi",
+    "lib.game.resign": "Anna alla",
+    "lib.game.resigned": "Andsid alla.",
+    "lib.game.chessCheck": "Šahh!",
+    "lib.game.chessMateWin": "Matt! Sa võitsid.",
+    "lib.game.chessMateLose": "Sulle anti matt.",
+    "lib.game.chessDraw": "Partii lõppes viigiga.",
+    "lib.game.chessNote": "Sa mängid valgetega ja teed esimese käigu. Klõpsa oma nupul ja seejärel ruudul, kuhu minna. Viimasele reale jõudnud ettur muutub lipuks. Võidad, kui annad mustale matti.",
+    "lib.game.xiangqi": "Xiangqi laud",
+    "lib.game.xqCheck": "Šahh!",
+    "lib.game.xqMateWin": "Matt! Sa võitsid.",
+    "lib.game.xqMateLose": "Sulle anti matt.",
+    "lib.game.xqStaleWin": "Mustal pole lubatud käike — sa võitsid.",
+    "lib.game.xqStaleLose": "Sul pole lubatud käike — sa kaotasid.",
+    "lib.game.xqNote": "Sa mängid punasega (all) ja teed esimese käigu. Klõpsa oma nupul ja seejärel sihtpunktil. Kaks kindralit ei tohi näost näkku seista; matt või lubatud käigu puudumine tähendab kaotust.",
+    "lib.game.pass": "Pass",
+    "lib.game.goBoard": "Go laud",
+    "lib.game.goCaps": "Vangistatud — must: {b} · valge: {w}",
+    "lib.game.goScore": "Skoor — must: {b}, valge: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} laud. Sa mängid mustaga ja teed esimese käigu. Punktid loetakse pindala järgi (kivid + täielikult ümbritsetud tühjad punktid); valge saab {k} komi. Püüa kõik vastase surnud kivid enne passimist. Enesetapp ja kohene tagasivõtmine (ko) pole lubatud. Mäng lõpeb, kui mõlemad passivad järjest.",
+    "lib.game.illegal": "Keelatud käik (enesetapp või kohene tagasivõtmine).",
+    "lib.game.aiPassed": "Arvuti passis. Kui passid ka sina, mäng lõpeb ja punktid loetakse.",
+    "lib.game.start": "Alusta",
+    "lib.game.lives": "Elud",
+    "lib.game.mmAsk": "Millisel plaadil oli see kuju?",
+    "lib.game.mmReady": "Valmis?",
+    "lib.game.mmMemorize": "Jäta meelde — jäänud {s} s",
+    "lib.game.mmQuestion": "Küsimus {i}/{n}",
+    "lib.game.mmDone": "Valmis!",
+    "lib.game.mmLost": "Elud on otsas — kõik plaadid on nüüd avatud.",
+    "lib.game.mmNote": "Vajuta Alusta: plaate näidatakse {s} sekundit ja seejärel peidetakse. Jäta meelde iga plaadi kuju ja värv ning vali plaat, mis vastab näidatud kujule. Rohkem kui {l} viga tähendab, et tase kukkus läbi."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Kombineeri Exceli andmeid valemitega",
       "desc": "Kombineeri mitu lehte või Exceli faili lahtripõhise valemiga (SUM, IF, CONCAT, UNIQUE...), pesastatud funktsioonide ja korduvkasutatavate salvestatud valemitega."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Mängi 9x9 sudokut veebis 10 tasemel lihtsast raskeni, märkmete, vihjete ja vigade kontrolliga."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Suur 16x16 sudoku numbritega 1-9 ja tähtedega A-G, 10 taset lihtsast raskeni, märkmete ja vihjetega."
+    },
+    "chess": {
+      "name": "Male arvuti vastu",
+      "desc": "Mängi malet arvuti vastu 10 tasemel lihtsast raskeni, rokaadi, möödaminnes löömise ja ettur-muutmisega."
+    },
+    "xiangqi": {
+      "name": "Xiangqi arvuti vastu",
+      "desc": "Mängi Hiina malet (xiangqi) arvuti vastu 10 tasemel, hobuse jala blokeerimise, elevandi silma, kahuriga löömise ja kindralite reegliga."
+    },
+    "go-game": {
+      "name": "Go arvuti vastu",
+      "desc": "Mängi goo arvuti vastu 5x5, 7x7 ja 9x9 laual 10 tasemel, lõpus automaatse punktiarvestusega."
+    },
+    "memory-shapes": {
+      "name": "Kuju- ja värvimälu",
+      "desc": "Kujude ja värvidega plaate näidatakse 5 sekundit ja seejärel peidetakse; jäta meelde ja vali õige plaat, 10 taset lihtsast raskeni."
     }
   },
   "s": {

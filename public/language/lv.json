@@ -178,7 +178,61 @@
     "lib.excel.missing": "Trūkst",
     "lib.excel.duplicate": "Dublikāts",
     "lib.excel.valid": "Derīgs",
-    "lib.excel.invalid": "Nederīgs"
+    "lib.excel.invalid": "Nederīgs",
+    "lib.game.levels": "Līmenis",
+    "lib.game.level": "{n}. līmenis",
+    "lib.game.unlockAll": "Atslēgt visus līmeņus",
+    "lib.game.newGame": "Jauna spēle",
+    "lib.game.retry": "Spēlēt vēlreiz",
+    "lib.game.nextLevel": "Nākamais līmenis",
+    "lib.game.win": "Jūs izpildījāt {n}. līmeni!",
+    "lib.game.lose": "{n}. līmenis nav izpildīts. Mēģiniet vēlreiz.",
+    "lib.game.draw": "Neizšķirts — {n}. līmenis nav izpildīts.",
+    "lib.game.allDone": "Apsveicam! Jūs izpildījāt visus 10 līmeņus.",
+    "lib.game.time": "Laiks",
+    "lib.game.hint": "Padoms",
+    "lib.game.erase": "Dzēst",
+    "lib.game.check": "Pārbaudīt",
+    "lib.game.notes": "Piezīmes",
+    "lib.game.generating": "Veido mīklu…",
+    "lib.game.sudokuKeys": "Bultiņas — pārvietoties, ciparu taustiņi — aizpildīt (16x16: A-G ciparam 10-16), Backspace — dzēst, N — pārslēgt piezīmes.",
+    "lib.game.sudokuLeft": "Atlikušas {n} rūtiņas",
+    "lib.game.sudokuConflict": "Visas rūtiņas aizpildītas, bet daži cipari atkārtojas. Lūdzu, pārbaudiet vēlreiz.",
+    "lib.game.sudokuWrong": "{n} nepareizas rūtiņas (atzīmētas sarkanā krāsā).",
+    "lib.game.sudokuAllRight": "Nepareizu rūtiņu nav.",
+    "lib.game.thinking": "Dators domā…",
+    "lib.game.yourTurn": "Jūsu gājiens",
+    "lib.game.undo": "Atsaukt",
+    "lib.game.resign": "Padoties",
+    "lib.game.resigned": "Jūs padevāties.",
+    "lib.game.chessCheck": "Šahs!",
+    "lib.game.chessMateWin": "Mats! Jūs uzvarējāt.",
+    "lib.game.chessMateLose": "Jums ir mats.",
+    "lib.game.chessDraw": "Partija beidzās neizšķirti.",
+    "lib.game.chessNote": "Jūs spēlējat ar baltajiem un ejat pirmais. Noklikšķiniet uz savas figūras un pēc tam uz lauciņa, uz kuru iet. Bandinieks, kas sasniedz pēdējo rindu, kļūst par dāmu. Uzvariet, pieliekot melnajiem matu.",
+    "lib.game.xiangqi": "Siandzi galds",
+    "lib.game.xqCheck": "Šahs!",
+    "lib.game.xqMateWin": "Mats! Jūs uzvarējāt.",
+    "lib.game.xqMateLose": "Jums ir mats.",
+    "lib.game.xqStaleWin": "Melnajiem nav likumīgu gājienu — jūs uzvarējāt.",
+    "lib.game.xqStaleLose": "Jums nav likumīgu gājienu — jūs zaudējāt.",
+    "lib.game.xqNote": "Jūs spēlējat ar sarkanajiem (apakšā) un ejat pirmais. Noklikšķiniet uz savas figūras un pēc tam uz punkta, uz kuru iet. Abi ģenerāļi nedrīkst atrasties viens pret otru; zaudē tas, kuram ir mats vai nav likumīgu gājienu.",
+    "lib.game.pass": "Izlaist",
+    "lib.game.goBoard": "Go galds",
+    "lib.game.goCaps": "Sagūstīti — Melnie: {b} · Baltie: {w}",
+    "lib.game.goScore": "Rezultāts — Melnie: {b}, Baltie: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} galds. Jūs spēlējat ar melnajiem un ejat pirmais. Punktus skaita pēc laukuma (akmeņi + pilnībā ielenkti tukšie punkti); baltie saņem {k} komi. Pirms izlaišanas sagūstiet visus pretinieka beigtos akmeņus. Pašnāvība un tūlītēja atkārtota sagūstīšana (ko) nav atļauta. Spēle beidzas, kad abi spēlētāji izlaiž gājienu pēc kārtas.",
+    "lib.game.illegal": "Neatļauts gājiens (pašnāvība vai tūlītēja atkārtota sagūstīšana).",
+    "lib.game.aiPassed": "Dators izlaida gājienu. Ja arī jūs izlaidīsiet, spēle beigsies un tiks saskaitīti punkti.",
+    "lib.game.start": "Sākt",
+    "lib.game.lives": "Dzīvības",
+    "lib.game.mmAsk": "Kurai flīzei bija šī forma?",
+    "lib.game.mmReady": "Gatavi?",
+    "lib.game.mmMemorize": "Iegaumējiet — atlikušas {s} s",
+    "lib.game.mmQuestion": "{i}. jautājums no {n}",
+    "lib.game.mmDone": "Gatavs!",
+    "lib.game.mmLost": "Dzīvību vairs nav — visas flīzes atklātas.",
+    "lib.game.mmNote": "Nospiediet Sākt: flīzes tiek rādītas {s} sekundes un tad paslēptas. Atcerieties katras flīzes formu un krāsu, pēc tam izvēlieties flīzi, kas atbilst parādītajai formai. Vairāk nekā {l} kļūdas nozīmē, ka līmenis nav izpildīts."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Excel datu apvienošana ar formulām",
       "desc": "Apvieno vairākas lapas vai Excel failus ar formulu katrai šūnai (SUM, IF, CONCAT, UNIQUE...), ligzdotām funkcijām un saglabātām formulām, ko var izmantot atkārtoti."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Spēlējiet 9x9 sudoku tiešsaistē 10 līmeņos no vieglā līdz sarežģītam, ar piezīmēm, padomiem un kļūdu pārbaudi."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Liels 16x16 sudoku ar cipariem 1-9 un burtiem A-G, 10 līmeņi no vieglā līdz sarežģītam, ar piezīmēm un padomiem."
+    },
+    "chess": {
+      "name": "Šahs pret datoru",
+      "desc": "Spēlējiet šahu pret datoru 10 līmeņos no vieglā līdz sarežģītam, ar rokādi, sitienu ejot garām un pārvēršanu."
+    },
+    "xiangqi": {
+      "name": "Siandzi pret datoru",
+      "desc": "Spēlējiet ķīniešu šahu (siandzi) pret datoru 10 līmeņos, ar zirga kājas bloķēšanu, ziloņa aci, lielgabala sitienu un ģenerāļu savstarpējā skata noteikumu."
+    },
+    "go-game": {
+      "name": "Go pret datoru",
+      "desc": "Spēlējiet Go pret datoru uz 5x5, 7x7 un 9x9 galdiem 10 līmeņos, ar automātisku punktu skaitīšanu beigās."
+    },
+    "memory-shapes": {
+      "name": "Formu un krāsu atmiņa",
+      "desc": "Flīzes ar formām un krāsām tiek rādītas 5 sekundes un tad paslēptas; atcerieties un izvēlieties pareizo flīzi, 10 līmeņi no vieglā līdz sarežģītam."
     }
   },
   "s": {

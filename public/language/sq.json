@@ -178,7 +178,61 @@
     "lib.excel.missing": "Mungon",
     "lib.excel.duplicate": "Dublikuar",
     "lib.excel.valid": "I vlefshëm",
-    "lib.excel.invalid": "I pavlefshëm"
+    "lib.excel.invalid": "I pavlefshëm",
+    "lib.game.levels": "Niveli",
+    "lib.game.level": "Niveli {n}",
+    "lib.game.unlockAll": "Hap të gjitha nivelet",
+    "lib.game.newGame": "Lojë e re",
+    "lib.game.retry": "Luaj përsëri",
+    "lib.game.nextLevel": "Niveli tjetër",
+    "lib.game.win": "E kaluat nivelin {n}!",
+    "lib.game.lose": "Niveli {n} nuk u kalua. Provoni përsëri.",
+    "lib.game.draw": "Baraspeshë — niveli {n} nuk u kalua.",
+    "lib.game.allDone": "Urime! I kaluat të 10 nivelet.",
+    "lib.game.time": "Koha",
+    "lib.game.hint": "Ndihmë",
+    "lib.game.erase": "Fshi",
+    "lib.game.check": "Kontrollo",
+    "lib.game.notes": "Shënime",
+    "lib.game.generating": "Po krijohet enigma…",
+    "lib.game.sudokuKeys": "Shigjetat për lëvizje, tastet e numrave për plotësim (16x16: A-G për 10-16), Backspace për fshirje, N për shënimet.",
+    "lib.game.sudokuLeft": "Edhe {n} qeliza",
+    "lib.game.sudokuConflict": "Të gjitha qelizat janë plotësuar, por disa numra përsëriten. Kontrolloni përsëri.",
+    "lib.game.sudokuWrong": "{n} qeliza të gabuara (të shënuara me të kuqe).",
+    "lib.game.sudokuAllRight": "Nuk u gjetën qeliza të gabuara.",
+    "lib.game.thinking": "Kompjuteri po mendon…",
+    "lib.game.yourTurn": "Radha juaj",
+    "lib.game.undo": "Zhbëj",
+    "lib.game.resign": "Dorëzohu",
+    "lib.game.resigned": "U dorëzuat.",
+    "lib.game.chessCheck": "Shah!",
+    "lib.game.chessMateWin": "Shah mat! Fituat.",
+    "lib.game.chessMateLose": "Ju vunë shah mat.",
+    "lib.game.chessDraw": "Loja përfundoi baras.",
+    "lib.game.chessNote": "Ju luani me të bardhët dhe filloni i pari. Klikoni figurën tuaj, pastaj katrorin ku do ta lëvizni. Ushtarët që arrijnë në rreshtin e fundit shndërrohen në mbretëreshë. Fitoni duke i vënë shah mat të zezëve.",
+    "lib.game.xiangqi": "Tabela e xiangqi-t",
+    "lib.game.xqCheck": "Shah!",
+    "lib.game.xqMateWin": "Shah mat! Fituat.",
+    "lib.game.xqMateLose": "Ju vunë shah mat.",
+    "lib.game.xqStaleWin": "Të zezët nuk kanë lëvizje të ligjshme — fituat.",
+    "lib.game.xqStaleLose": "Nuk keni lëvizje të ligjshme — humbët.",
+    "lib.game.xqNote": "Ju luani me të kuqtë (poshtë) dhe filloni i pari. Klikoni figurën tuaj, pastaj pikën ku do ta lëvizni. Dy gjeneralët nuk lejohen të përballen; humbet kush merr shah mat ose nuk ka lëvizje të ligjshme.",
+    "lib.game.pass": "Kalo",
+    "lib.game.goBoard": "Tabela e Go-s",
+    "lib.game.goCaps": "Të kapura — Të zezët: {b} · Të bardhët: {w}",
+    "lib.game.goScore": "Pikët — Të zezët: {b}, Të bardhët: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Tabelë {n}×{n}. Ju luani me të zezët dhe filloni i pari. Pikët numërohen sipas sipërfaqes (gurë + pika bosh plotësisht të rrethuara); të bardhët marrin komi {k}. Kapni të gjithë gurët e vdekur të kundërshtarit para se të kaloni. Vetëvrasja dhe rikapja e menjëhershme (ko) nuk lejohen. Loja përfundon kur të dy lojtarët kalojnë njëri pas tjetrit.",
+    "lib.game.illegal": "Lëvizje e palejuar (vetëvrasje ose rikapje e menjëhershme).",
+    "lib.game.aiPassed": "Kompjuteri kaloi. Nëse kaloni edhe ju, loja përfundon dhe numërohen pikët.",
+    "lib.game.start": "Fillo",
+    "lib.game.lives": "Jetë",
+    "lib.game.mmAsk": "Cila pllakë kishte këtë formë?",
+    "lib.game.mmReady": "Gati?",
+    "lib.game.mmMemorize": "Mbaje mend — edhe {s} s",
+    "lib.game.mmQuestion": "Pyetja {i}/{n}",
+    "lib.game.mmDone": "U krye!",
+    "lib.game.mmLost": "Mbaruan jetët — të gjitha pllakat tani janë zbuluar.",
+    "lib.game.mmNote": "Shtypni Fillo: pllakat shfaqen për {s} sekonda dhe pastaj fshihen. Mbani mend formën dhe ngjyrën e secilës pllakë, pastaj zgjidhni pllakën që përputhet me formën e shfaqur. Më shumë se {l} gabime e dështojnë nivelin."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Kombino të dhënat Excel me formula",
       "desc": "Kombinoni shumë fletë ose skedarë Excel me një formulë për çdo qelizë (SUM, IF, CONCAT, UNIQUE...), funksione të ndërthurura dhe formula të ruajtura që mund t'i ripërdorni."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Luani Sudoku 9x9 online në 10 nivele nga e lehta te e vështira, me shënime, ndihma dhe kontroll gabimesh."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku i madh 16x16 me 1-9 dhe A-G, 10 nivele nga e lehta te e vështira, me shënime dhe ndihma."
+    },
+    "chess": {
+      "name": "Shah kundër kompjuterit",
+      "desc": "Luani shah kundër kompjuterit në 10 nivele nga e lehta te e vështira, me rokadë, en passant dhe promovim."
+    },
+    "xiangqi": {
+      "name": "Xiangqi kundër kompjuterit",
+      "desc": "Luani shahun kinez (xiangqi) kundër kompjuterit në 10 nivele, me bllokimin e këmbës së kalit, syrin e elefantit, kapjen me top dhe rregullin e gjeneralëve përballë."
+    },
+    "go-game": {
+      "name": "Go kundër kompjuterit",
+      "desc": "Luani Go kundër kompjuterit në tabela 5x5, 7x7 dhe 9x9 në 10 nivele, me numërim automatik të pikëve në fund."
+    },
+    "memory-shapes": {
+      "name": "Kujtesa e formave dhe ngjyrave",
+      "desc": "Pllaka me forma dhe ngjyra shfaqen për 5 sekonda dhe pastaj fshihen; mbani mend dhe zgjidhni pllakën e duhur, 10 nivele nga e lehta te e vështira."
     }
   },
   "s": {

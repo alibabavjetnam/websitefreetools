@@ -178,7 +178,61 @@
     "lib.excel.missing": "Haipo",
     "lib.excel.duplicate": "Rudufu",
     "lib.excel.valid": "Sahihi",
-    "lib.excel.invalid": "Si sahihi"
+    "lib.excel.invalid": "Si sahihi",
+    "lib.game.levels": "Kiwango",
+    "lib.game.level": "Kiwango cha {n}",
+    "lib.game.unlockAll": "Fungua viwango vyote",
+    "lib.game.newGame": "Mchezo mpya",
+    "lib.game.retry": "Cheza tena",
+    "lib.game.nextLevel": "Kiwango kinachofuata",
+    "lib.game.win": "Umemaliza kiwango cha {n}!",
+    "lib.game.lose": "Kiwango cha {n} hakijakamilika. Jaribu tena.",
+    "lib.game.draw": "Sare — kiwango cha {n} hakijakamilika.",
+    "lib.game.allDone": "Hongera! Umemaliza viwango vyote 10.",
+    "lib.game.time": "Muda",
+    "lib.game.hint": "Kidokezo",
+    "lib.game.erase": "Futa",
+    "lib.game.check": "Kagua",
+    "lib.game.notes": "Vidokezo",
+    "lib.game.generating": "Inaunda fumbo…",
+    "lib.game.sudokuKeys": "Vitufe vya mishale kusogeza, vitufe vya nambari kujaza (16x16: A-G kwa 10-16), Backspace kufuta, N kuwasha/kuzima madokezo.",
+    "lib.game.sudokuLeft": "Visanduku {n} vimebaki",
+    "lib.game.sudokuConflict": "Visanduku vyote vimejazwa lakini baadhi ya nambari zinajirudia. Tafadhali kagua tena.",
+    "lib.game.sudokuWrong": "Visanduku {n} si sahihi (vimewekwa alama nyekundu).",
+    "lib.game.sudokuAllRight": "Hakuna visanduku visivyo sahihi.",
+    "lib.game.thinking": "Kompyuta inafikiri…",
+    "lib.game.yourTurn": "Zamu yako",
+    "lib.game.undo": "Tendua",
+    "lib.game.resign": "Jisalimishe",
+    "lib.game.resigned": "Umejisalimisha.",
+    "lib.game.chessCheck": "Kishi!",
+    "lib.game.chessMateWin": "Mati! Umeshinda.",
+    "lib.game.chessMateLose": "Umewekwa mati.",
+    "lib.game.chessDraw": "Mchezo umeisha kwa sare.",
+    "lib.game.chessNote": "Unacheza Nyeupe na unaanza. Bofya kipande chako kisha mraba wa kuhamia. Pauni anayefika safu ya mwisho anapandishwa kuwa malkia. Shinda kwa kuiweka Nyeusi mati.",
+    "lib.game.xiangqi": "Ubao wa xiangqi",
+    "lib.game.xqCheck": "Kishi!",
+    "lib.game.xqMateWin": "Mati! Umeshinda.",
+    "lib.game.xqMateLose": "Umewekwa mati.",
+    "lib.game.xqStaleWin": "Nyeusi haina hatua halali — umeshinda.",
+    "lib.game.xqStaleLose": "Huna hatua halali — umeshindwa.",
+    "lib.game.xqNote": "Unacheza Nyekundu (chini) na unaanza. Bofya kipande chako kisha nukta ya kuhamia. Majenerali wawili hawaruhusiwi kutazamana; anayewekwa mati au asiye na hatua halali hushindwa.",
+    "lib.game.pass": "Ruka",
+    "lib.game.goBoard": "Ubao wa Go",
+    "lib.game.goCaps": "Zilizokamatwa — Nyeusi: {b} · Nyeupe: {w}",
+    "lib.game.goScore": "Alama — Nyeusi: {b}, Nyeupe: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Ubao wa {n}×{n}. Unacheza Nyeusi na unaanza. Alama hupatikana kwa eneo (mawe + nukta tupu zilizozungukwa kabisa); Nyeupe hupata komi {k}. Kamata mawe yote yaliyokufa ya mpinzani kabla ya kuruka. Kujiua na kukamata tena papo hapo (ko) haviruhusiwi. Mchezo huisha wachezaji wote wawili wakiruka mfululizo.",
+    "lib.game.illegal": "Hatua haramu (kujiua au kukamata tena papo hapo).",
+    "lib.game.aiPassed": "Kompyuta imeruka. Ukiruka pia, mchezo utaisha na alama kuhesabiwa.",
+    "lib.game.start": "Anza",
+    "lib.game.lives": "Maisha",
+    "lib.game.mmAsk": "Kigae kipi kilikuwa na umbo hili?",
+    "lib.game.mmReady": "Tayari?",
+    "lib.game.mmMemorize": "Kariri — sekunde {s} zimebaki",
+    "lib.game.mmQuestion": "Swali {i}/{n}",
+    "lib.game.mmDone": "Imekamilika!",
+    "lib.game.mmLost": "Maisha yameisha — vigae vyote vimefunuliwa.",
+    "lib.game.mmNote": "Bonyeza Anza: vigae vinaonyeshwa kwa sekunde {s} kisha vinafichwa. Kumbuka umbo na rangi ya kila kigae, kisha chagua kigae kinacholingana na umbo lililoonyeshwa. Makosa zaidi ya {l} yanamaanisha kiwango kimeshindwa."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Changanya data ya Excel kwa fomula",
       "desc": "Changanya karatasi au mafaili mengi ya Excel kwa fomula moja kwa kila seli (SUM, IF, CONCAT, UNIQUE...), kazi zilizowekwa ndani ya nyingine, na fomula zilizohifadhiwa unazoweza kutumia tena."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Cheza Sudoku 9x9 mtandaoni katika viwango 10 kutoka rahisi hadi ngumu, ukiwa na madokezo, vidokezo na ukaguzi wa makosa."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku kubwa ya 16x16 inayotumia 1-9 na A-G, viwango 10 kutoka rahisi hadi ngumu, ukiwa na madokezo na vidokezo."
+    },
+    "chess": {
+      "name": "Chesi dhidi ya Kompyuta",
+      "desc": "Cheza chesi dhidi ya kompyuta katika viwango 10 kutoka rahisi hadi ngumu, ukiwa na kasri, en passant na kupandishwa cheo."
+    },
+    "xiangqi": {
+      "name": "Xiangqi dhidi ya Kompyuta",
+      "desc": "Cheza chesi ya Kichina (xiangqi) dhidi ya kompyuta katika viwango 10, ukiwa na kuzuiwa mguu wa farasi, jicho la tembo, kukamata kwa kanuni na kanuni ya majenerali kutazamana."
+    },
+    "go-game": {
+      "name": "Go dhidi ya Kompyuta",
+      "desc": "Cheza Go dhidi ya kompyuta kwenye mbao za 5x5, 7x7 na 9x9 katika viwango 10, ukiwa na kuhesabu alama kiotomatiki mwishoni."
+    },
+    "memory-shapes": {
+      "name": "Kumbukumbu ya Umbo na Rangi",
+      "desc": "Vigae vyenye maumbo na rangi vinaonyeshwa kwa sekunde 5 kisha vinafichwa; kumbuka na uchague kigae sahihi, viwango 10 kutoka rahisi hadi ngumu."
     }
   },
   "s": {

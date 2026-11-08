@@ -178,7 +178,61 @@
     "lib.excel.missing": "Efu",
     "lib.excel.duplicate": "Ugboro abụọ",
     "lib.excel.valid": "Ziri ezi",
-    "lib.excel.invalid": "Ezighi ezi"
+    "lib.excel.invalid": "Ezighi ezi",
+    "lib.game.levels": "Ọkwa",
+    "lib.game.level": "Ọkwa {n}",
+    "lib.game.unlockAll": "Meghee ọkwa niile",
+    "lib.game.newGame": "Egwuregwu ọhụrụ",
+    "lib.game.retry": "Kpọọ ọzọ",
+    "lib.game.nextLevel": "Ọkwa na-esote",
+    "lib.game.win": "I mechala ọkwa {n}!",
+    "lib.game.lose": "Ọkwa {n} emebeghị. Nwaa ọzọ.",
+    "lib.game.draw": "Nha nha — ọkwa {n} emebeghị.",
+    "lib.game.allDone": "Ekele! I mechala ọkwa 10 niile.",
+    "lib.game.time": "Oge",
+    "lib.game.hint": "Ntụnye aka",
+    "lib.game.erase": "Hichapụ",
+    "lib.game.check": "Lelee",
+    "lib.game.notes": "Ndetu",
+    "lib.game.generating": "Na-emepụta ajụjụ…",
+    "lib.game.sudokuKeys": "Ọnụ akụ iji kwaga, ọnụ ọnụọgụ iji mejupụta (16x16: A-G maka 10-16), Backspace iji hichapụ, N iji mepee/mechie ndetu.",
+    "lib.game.sudokuLeft": "{n} igbe fọrọ",
+    "lib.game.sudokuConflict": "Igbe niile jupụtara mana ụfọdụ ọnụọgụ na-emegharị. Biko lelee ọzọ.",
+    "lib.game.sudokuWrong": "{n} igbe ezighi ezi (e were uhie gosi).",
+    "lib.game.sudokuAllRight": "Achọtaghị igbe ọ bụla ezighi ezi.",
+    "lib.game.thinking": "Kọmputa na-eche echiche…",
+    "lib.game.yourTurn": "Oge gị",
+    "lib.game.undo": "Jigharịa azụ",
+    "lib.game.resign": "Hapụ",
+    "lib.game.resigned": "I hapụrụ.",
+    "lib.game.chessCheck": "Chek!",
+    "lib.game.chessMateWin": "Chekmeet! I meriri.",
+    "lib.game.chessMateLose": "E mere gị chekmeet.",
+    "lib.game.chessDraw": "Egwuregwu ahụ bụ nha nha.",
+    "lib.game.chessNote": "Ị na-agba ọcha ma bụrụ onye mbụ na-aga. Pịa uzo gị, wee pịa ebe ị chọrọ ịga. Pọn rutere ahịrị ikpeazụ ghọrọ eze nwanyị. Merie site n'ikpochi Ojii chekmeet.",
+    "lib.game.xiangqi": "Bọọdụ Xiangqi",
+    "lib.game.xqCheck": "Chek!",
+    "lib.game.xqMateWin": "Chekmeet! I meriri.",
+    "lib.game.xqMateLose": "E mere gị chekmeet.",
+    "lib.game.xqStaleWin": "Ojii enweghị ije kwesịrị ekwesị — i meriri.",
+    "lib.game.xqStaleLose": "Ị enweghị ije kwesịrị ekwesị — ị dara.",
+    "lib.game.xqNote": "Ị na-agba uhie (n'okpuru) ma bụrụ onye mbụ na-aga. Pịa uzo gị, wee pịa ebe ị chọrọ ịga. Ndị agha abụọ enweghị ike iche ihu; chekmeet ma ọ bụ enweghị ije kwesịrị ekwesị pụtara mfu.",
+    "lib.game.pass": "Gafee",
+    "lib.game.goBoard": "Bọọdụ Go",
+    "lib.game.goCaps": "A jidere — Ojii: {b} · Ọcha: {w}",
+    "lib.game.goScore": "Akara — Ojii: {b}, Ọcha: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Bọọdụ {n}×{n}. Ị na-agba Ojii ma bụrụ onye mbụ na-aga. A na-agụ akara dị ka ebe (nkume + isi ebe efu a kpọchiri kpam kpam); Ọcha na-enweta komi {k}. Jide nkume niile nwụrụ anwụ nke onye mmegide tupu ịgafe. Igbu onwe onye na iweghachi ozugbo (ko) abaghị. Egwuregwu na-agwụ mgbe ndị egwuregwu abụọ gafere n'otu n'otu.",
+    "lib.game.illegal": "Ije na-ekwesịghị (igbu onwe onye ma ọ bụ iweghachi ozugbo).",
+    "lib.game.aiPassed": "Kọmputa gafere. Ọ bụrụ na ị gafekwara, egwuregwu ga-agwụ ma a gụọ akara.",
+    "lib.game.start": "Malite",
+    "lib.game.lives": "Ndụ",
+    "lib.game.mmAsk": "Kedu tile nwere ọdịdị a?",
+    "lib.game.mmReady": "Ịkwadebere?",
+    "lib.game.mmMemorize": "Chetara — {s} s fọrọ",
+    "lib.game.mmQuestion": "Ajụjụ {i}/{n}",
+    "lib.game.mmDone": "Emechala!",
+    "lib.game.mmLost": "Ndụ agwụla — a na-egosi tile niile ugbu a.",
+    "lib.game.mmNote": "Pịa Malite: a ga-egosi tile niile ruo sekọnd {s}, wee zoo ha. Chetara ọdịdị na agba nke tile ọ bụla, wee họrọ tile kwekọrọ n'ọdịdị egosiri. Ihe karịrị njehie {l} ga-eme ka ọkwa daa."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Jikọta data Excel na fọmula",
       "desc": "Jikọta ọtụtụ sheet ma ọ bụ faịlụ Excel na fọmula n'otu n'otu cell (SUM, IF, CONCAT, UNIQUE...), ọrụ dị n'ime ọrụ ọzọ, na fọmula echekwara i nwere ike iji ọzọ."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Kpọọ Sudoku 9x9 n'ịntanetị n'ọkwa 10 site n'ọdịnihu ruo ọnụ ọgụ, nwere ndetu, ntụnye aka na nyocha njehie."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku buru ibu 16x16 na-eji 1-9 na A-G, ọkwa 10 site n'ọdịnihu ruo ọnụ ọgụ, nwere ndetu na ntụnye aka."
+    },
+    "chess": {
+      "name": "Chess megide kọmputa",
+      "desc": "Kpọọ chess megide kọmputa n'ọkwa 10 site n'ọdịnihu ruo ọnụ ọgụ, nwere castling, en passant na mmelite."
+    },
+    "xiangqi": {
+      "name": "Xiangqi megide kọmputa",
+      "desc": "Kpọọ chess China (xiangqi) megide kọmputa n'ọkwa 10, nwere mgbochi ụkwụ inyinya, anya enyí, ijide egbe na iwu ndị agha na-eche ihu."
+    },
+    "go-game": {
+      "name": "Go megide kọmputa",
+      "desc": "Kpọọ Go megide kọmputa n'elu bọọdụ 5x5, 7x7 na 9x9 n'ọkwa 10, nwere ọgụgụ akara onwe ya na njedebe."
+    },
+    "memory-shapes": {
+      "name": "Ebe nchekwa ọdịdị na agba",
+      "desc": "A na-egosi tile nwere ọdịdị na agba ruo sekọnd 5, wee zoo ha; chetara ma họrọ tile ziri ezi, ọkwa 10 site n'ọdịnihu ruo ọnụ ọgụ."
     }
   },
   "s": {

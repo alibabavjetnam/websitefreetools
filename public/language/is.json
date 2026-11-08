@@ -178,7 +178,61 @@
     "lib.excel.missing": "Vantar",
     "lib.excel.duplicate": "Tvítekning",
     "lib.excel.valid": "Gilt",
-    "lib.excel.invalid": "Ógilt"
+    "lib.excel.invalid": "Ógilt",
+    "lib.game.levels": "Borð",
+    "lib.game.level": "Borð {n}",
+    "lib.game.unlockAll": "Opna öll borð",
+    "lib.game.newGame": "Nýr leikur",
+    "lib.game.retry": "Spila aftur",
+    "lib.game.nextLevel": "Næsta borð",
+    "lib.game.win": "Þú kláraðir borð {n}!",
+    "lib.game.lose": "Borð {n} er ekki klárað. Reyndu aftur.",
+    "lib.game.draw": "Jafntefli — borð {n} er ekki klárað.",
+    "lib.game.allDone": "Til hamingju! Þú kláraðir öll 10 borðin.",
+    "lib.game.time": "Tími",
+    "lib.game.hint": "Vísbending",
+    "lib.game.erase": "Eyða",
+    "lib.game.check": "Athuga",
+    "lib.game.notes": "Minnispunktar",
+    "lib.game.generating": "Bý til þraut…",
+    "lib.game.sudokuKeys": "Örvatakkar til að færa, talnatakkar til að fylla út (16x16: A-G fyrir 10-16), Backspace til að eyða, N til að kveikja/slökkva á minnispunktum.",
+    "lib.game.sudokuLeft": "{n} reitir eftir",
+    "lib.game.sudokuConflict": "Allir reitir eru útfylltir en sumar tölur endurtaka sig. Athugaðu aftur.",
+    "lib.game.sudokuWrong": "{n} rangir reitir (merktir með rauðu).",
+    "lib.game.sudokuAllRight": "Engir rangir reitir fundust.",
+    "lib.game.thinking": "Tölvan er að hugsa…",
+    "lib.game.yourTurn": "Þú átt leik",
+    "lib.game.undo": "Afturkalla",
+    "lib.game.resign": "Gefast upp",
+    "lib.game.resigned": "Þú gafst upp.",
+    "lib.game.chessCheck": "Skák!",
+    "lib.game.chessMateWin": "Mát! Þú vinnur.",
+    "lib.game.chessMateLose": "Þú ert mát.",
+    "lib.game.chessDraw": "Skákinni lauk með jafntefli.",
+    "lib.game.chessNote": "Þú teflir með hvítu og átt fyrsta leik. Smelltu á taflmanninn og síðan á reitinn sem þú vilt fara á. Peð sem nær síðustu röð verður að drottningu. Þú vinnur með því að máta svart.",
+    "lib.game.xiangqi": "Xiangqi-borð",
+    "lib.game.xqCheck": "Skák!",
+    "lib.game.xqMateWin": "Mát! Þú vinnur.",
+    "lib.game.xqMateLose": "Þú ert mát.",
+    "lib.game.xqStaleWin": "Svartur á enga löglega leiki — þú vinnur.",
+    "lib.game.xqStaleLose": "Þú átt enga löglega leiki — þú tapar.",
+    "lib.game.xqNote": "Þú teflir með rauðu (neðst) og átt fyrsta leik. Smelltu á taflmanninn og síðan á punktinn sem þú vilt fara á. Hershöfðingjarnir tveir mega ekki horfast í augu; mát eða engir löglegir leikir þýðir tap.",
+    "lib.game.pass": "Sleppa",
+    "lib.game.goBoard": "Go-borð",
+    "lib.game.goCaps": "Teknir — svartur: {b} · hvítur: {w}",
+    "lib.game.goScore": "Stig — svartur: {b}, hvítur: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} borð. Þú spilar með svörtu og átt fyrsta leik. Stig eru talin eftir svæði (steinar + alveg umkringdir auðir punktar); hvítur fær {k} komi. Taktu alla dauða steina andstæðingsins áður en þú sleppir. Sjálfsvíg og tafarlaus endurtaka (ko) eru bönnuð. Leiknum lýkur þegar báðir leikmenn sleppa í röð.",
+    "lib.game.illegal": "Ólöglegur leikur (sjálfsvíg eða tafarlaus endurtaka).",
+    "lib.game.aiPassed": "Tölvan sleppti. Ef þú sleppir líka lýkur leiknum og stig eru talin.",
+    "lib.game.start": "Byrja",
+    "lib.game.lives": "Líf",
+    "lib.game.mmAsk": "Hvaða flís var með þessu lagi?",
+    "lib.game.mmReady": "Tilbúin(n)?",
+    "lib.game.mmMemorize": "Leggðu á minnið — {s} s eftir",
+    "lib.game.mmQuestion": "Spurning {i}/{n}",
+    "lib.game.mmDone": "Búið!",
+    "lib.game.mmLost": "Líf búin — allar flísar eru nú sýndar.",
+    "lib.game.mmNote": "Ýttu á Byrja: flísarnar eru sýndar í {s} sekúndur og síðan faldar. Mundu lögun og lit hverrar flísar og veldu svo flísina sem passar við lögunina sem birtist. Fleiri en {l} mistök og borðið misheppnast."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Sameina Excel-gögn með formúlum",
       "desc": "Sameinar mörg blöð eða Excel-skrár með formúlu fyrir hvern reit (SUM, IF, CONCAT, UNIQUE...), hreiðruðum aðgerðum og vistuðum formúlum sem hægt er að endurnýta."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Spilaðu 9x9 Sudoku á netinu á 10 borðum frá léttu til erfiðs, með minnispunktum, vísbendingum og villuathugun."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Stórt 16x16 Sudoku með 1-9 og A-G, 10 borð frá léttu til erfiðs, með minnispunktum og vísbendingum."
+    },
+    "chess": {
+      "name": "Skák gegn tölvu",
+      "desc": "Tefldu skák gegn tölvunni á 10 borðum frá léttu til erfiðs, með hrókun, framhjáhlaupi og peðsuppskiptum."
+    },
+    "xiangqi": {
+      "name": "Xiangqi gegn tölvu",
+      "desc": "Tefldu kínverska skák (xiangqi) gegn tölvunni á 10 borðum, með hindrun hestsfótar, augum fílsins, fallbyssuleikjum og reglunni um hershöfðingja augliti til auglitis."
+    },
+    "go-game": {
+      "name": "Go gegn tölvu",
+      "desc": "Spilaðu Go gegn tölvunni á 5x5, 7x7 og 9x9 borðum á 10 borðum, með sjálfvirkri stigatalningu í lokin."
+    },
+    "memory-shapes": {
+      "name": "Minni á form og liti",
+      "desc": "Flísar með formum og litum eru sýndar í 5 sekúndur og síðan faldar; mundu og veldu réttu flísina, 10 borð frá léttu til erfiðs."
     }
   },
   "s": {

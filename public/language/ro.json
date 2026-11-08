@@ -178,7 +178,61 @@
     "lib.excel.missing": "Lipsă",
     "lib.excel.duplicate": "Duplicat",
     "lib.excel.valid": "Valid",
-    "lib.excel.invalid": "Invalid"
+    "lib.excel.invalid": "Invalid",
+    "lib.game.levels": "Nivel",
+    "lib.game.level": "Nivelul {n}",
+    "lib.game.unlockAll": "Deblochează toate nivelurile",
+    "lib.game.newGame": "Joc nou",
+    "lib.game.retry": "Joacă din nou",
+    "lib.game.nextLevel": "Nivelul următor",
+    "lib.game.win": "Ai terminat nivelul {n}!",
+    "lib.game.lose": "Nivelul {n} nu a fost terminat. Încearcă din nou.",
+    "lib.game.draw": "Remiză — nivelul {n} nu a fost terminat.",
+    "lib.game.allDone": "Felicitări! Ai terminat toate cele 10 niveluri.",
+    "lib.game.time": "Timp",
+    "lib.game.hint": "Indiciu",
+    "lib.game.erase": "Șterge",
+    "lib.game.check": "Verifică",
+    "lib.game.notes": "Notițe",
+    "lib.game.generating": "Se generează puzzle-ul…",
+    "lib.game.sudokuKeys": "Săgețile mută cursorul, tastele numerice completează (16x16: A-G pentru 10-16), Backspace șterge, N comută notițele.",
+    "lib.game.sudokuLeft": "Au rămas {n} căsuțe",
+    "lib.game.sudokuConflict": "Toate căsuțele sunt completate, dar unele numere se repetă. Verifică din nou.",
+    "lib.game.sudokuWrong": "{n} căsuțe greșite (marcate cu roșu).",
+    "lib.game.sudokuAllRight": "Nu s-au găsit căsuțe greșite.",
+    "lib.game.thinking": "Calculatorul se gândește…",
+    "lib.game.yourTurn": "Rândul tău",
+    "lib.game.undo": "Anulează",
+    "lib.game.resign": "Renunță",
+    "lib.game.resigned": "Ai renunțat.",
+    "lib.game.chessCheck": "Șah!",
+    "lib.game.chessMateWin": "Șah mat! Ai câștigat.",
+    "lib.game.chessMateLose": "Ai fost pus șah mat.",
+    "lib.game.chessDraw": "Partida s-a încheiat remiză.",
+    "lib.game.chessNote": "Joci cu albele și muți primul. Apasă pe piesa ta, apoi pe pătratul unde vrei să muți. Pionul care ajunge pe ultima linie devine regină. Câștigi dând șah mat negrului.",
+    "lib.game.xiangqi": "Tabla de xiangqi",
+    "lib.game.xqCheck": "Șah!",
+    "lib.game.xqMateWin": "Șah mat! Ai câștigat.",
+    "lib.game.xqMateLose": "Ai fost pus șah mat.",
+    "lib.game.xqStaleWin": "Negrul nu are mutări legale — ai câștigat.",
+    "lib.game.xqStaleLose": "Nu ai mutări legale — ai pierdut.",
+    "lib.game.xqNote": "Joci cu roșu (jos) și muți primul. Apasă pe piesa ta, apoi pe punctul unde vrei să muți. Cei doi generali nu se pot privi față în față; mat sau lipsa mutărilor legale înseamnă înfrângere.",
+    "lib.game.pass": "Pas",
+    "lib.game.goBoard": "Tabla de go",
+    "lib.game.goCaps": "Capturate — negru: {b} · alb: {w}",
+    "lib.game.goScore": "Scor — negru: {b}, alb: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Tablă {n}×{n}. Joci cu negrul și muți primul. Punctajul se calculează pe arie (pietre + puncte goale complet înconjurate); albul primește komi {k}. Capturează toate pietrele moarte ale adversarului înainte de pas. Sinuciderea și recapturarea imediată (ko) sunt interzise. Jocul se termină când ambii jucători dau pas consecutiv.",
+    "lib.game.illegal": "Mutare ilegală (sinucidere sau recapturare imediată).",
+    "lib.game.aiPassed": "Calculatorul a dat pas. Dacă dai și tu pas, jocul se termină și se numără punctele.",
+    "lib.game.start": "Start",
+    "lib.game.lives": "Vieți",
+    "lib.game.mmAsk": "Pe ce placă era această formă?",
+    "lib.game.mmReady": "Gata?",
+    "lib.game.mmMemorize": "Memorează — mai sunt {s} s",
+    "lib.game.mmQuestion": "Întrebarea {i}/{n}",
+    "lib.game.mmDone": "Gata!",
+    "lib.game.mmLost": "Ai rămas fără vieți — toate plăcile sunt acum dezvăluite.",
+    "lib.game.mmNote": "Apasă Start: plăcile sunt afișate {s} secunde, apoi ascunse. Reține forma și culoarea fiecărei plăci, apoi alege placa cu forma arătată. Mai mult de {l} greșeli înseamnă nivel ratat."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Combinare date Excel cu formule",
       "desc": "Combină mai multe foi sau fișiere Excel cu o formulă pe celulă (SUM, IF, CONCAT, UNIQUE...), funcții imbricate și formule salvate pe care le puteți reutiliza."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Joacă Sudoku 9x9 online pe 10 niveluri de la ușor la greu, cu notițe, indicii și verificarea erorilor."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudoku mare 16x16 cu cifrele 1-9 și literele A-G, 10 niveluri de la ușor la greu, cu notițe și indicii."
+    },
+    "chess": {
+      "name": "Șah contra calculatorului",
+      "desc": "Joacă șah împotriva calculatorului pe 10 niveluri de la ușor la greu, cu rocadă, en passant și promovare."
+    },
+    "xiangqi": {
+      "name": "Xiangqi contra calculatorului",
+      "desc": "Joacă șah chinezesc (xiangqi) împotriva calculatorului pe 10 niveluri: blocarea piciorului calului, ochiul elefantului, capturi cu tunul și regula generalului zburător."
+    },
+    "go-game": {
+      "name": "Go contra calculatorului",
+      "desc": "Joacă go împotriva calculatorului pe table de 5x5, 7x7 și 9x9, pe 10 niveluri, cu punctaj automat la final."
+    },
+    "memory-shapes": {
+      "name": "Memorie forme și culori",
+      "desc": "Plăci cu forme și culori sunt afișate 5 secunde, apoi ascunse; ține minte și alege placa potrivită, 10 niveluri de la ușor la greu."
     }
   },
   "s": {

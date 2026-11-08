@@ -178,7 +178,61 @@
     "lib.excel.missing": "Kêm",
     "lib.excel.duplicate": "Dubare",
     "lib.excel.valid": "Derbasdar",
-    "lib.excel.invalid": "Nederbasdar"
+    "lib.excel.invalid": "Nederbasdar",
+    "lib.game.levels": "Asta",
+    "lib.game.level": "Asta {n}",
+    "lib.game.unlockAll": "Hemû astan veke",
+    "lib.game.newGame": "Lîstika nû",
+    "lib.game.retry": "Dîsa bilîze",
+    "lib.game.nextLevel": "Astaya din",
+    "lib.game.win": "Te asta {n} derbas kir!",
+    "lib.game.lose": "Asta {n} derbas nebû. Dîsa biceribîne.",
+    "lib.game.draw": "Wekhev — asta {n} derbas nebû.",
+    "lib.game.allDone": "Pîroz be! Te hemû 10 astan derbas kirin.",
+    "lib.game.time": "Dem",
+    "lib.game.hint": "Nîşan",
+    "lib.game.erase": "Jê bibe",
+    "lib.game.check": "Kontrol bike",
+    "lib.game.notes": "Nîşe",
+    "lib.game.generating": "Puzle tê çêkirin…",
+    "lib.game.sudokuKeys": "Bi tîrokan bigere, bi hejmaran tijî bike (16x16: A-G ji bo 10-16), bi Backspace jê bibe, bi N nîşeyan veke/bigire.",
+    "lib.game.sudokuLeft": "{n} xane mane",
+    "lib.game.sudokuConflict": "Hemû xane tijî ne lê hin hejmar dubare ne. Ji kerema xwe dîsa kontrol bike.",
+    "lib.game.sudokuWrong": "{n} xaneyên şaş (bi sor hatine nîşankirin).",
+    "lib.game.sudokuAllRight": "Xaneyên şaş nehatin dîtin.",
+    "lib.game.thinking": "Komputer difikire…",
+    "lib.game.yourTurn": "Rêza te ye",
+    "lib.game.undo": "Vegerîne",
+    "lib.game.resign": "Teslîm bibe",
+    "lib.game.resigned": "Te teslîm bû.",
+    "lib.game.chessCheck": "Şah!",
+    "lib.game.chessMateWin": "Mat! Te bi ser ket.",
+    "lib.game.chessMateLose": "Te mat kirin.",
+    "lib.game.chessDraw": "Lîstik wekhev bi dawî bû.",
+    "lib.game.chessNote": "Tu bi spî dilîzî û yekem dest pê dikî. Li kevirê xwe bitikîne, paşê li qada ku tu dixwazî biçî. Piyonê ku digihîje rêza dawî dibe şahbanû. Bi mat kirina reş bi ser keve.",
+    "lib.game.xiangqi": "Tabloya xiangqi",
+    "lib.game.xqCheck": "Şah!",
+    "lib.game.xqMateWin": "Mat! Te bi ser ket.",
+    "lib.game.xqMateLose": "Te mat kirin.",
+    "lib.game.xqStaleWin": "Reş tu tevgera rewa nîne — te bi ser ket.",
+    "lib.game.xqStaleLose": "Tu tevgera te ya rewa nîne — te winda kir.",
+    "lib.game.xqNote": "Tu bi sor (li jêr) dilîzî û yekem dest pê dikî. Li kevirê xwe bitikîne, paşê li xala ku tu dixwazî biçî. Her du general nikarin rû bi rû bisekinin; mat an tunebûna tevgera rewa windakirin e.",
+    "lib.game.pass": "Derbas",
+    "lib.game.goBoard": "Tabloya go",
+    "lib.game.goCaps": "Hatin girtin — Reş: {b} · Spî: {w}",
+    "lib.game.goScore": "Encam — Reş: {b}, Spî: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Tabloya {n}×{n}. Tu bi reş dilîzî û yekem dest pê dikî. Hejmartin li gorî qada ye (kevir + xalên vala yên bi temamî dorpêçkirî); spî {k} komi werdigire. Berî derbasbûnê hemû keviren mirî yên dijber bigire. Xwekujî û girtina vegerê ya tavilê (ko) qedexe ne. Gava her du lîstikvan li pey hev derbas bikin lîstik diqede.",
+    "lib.game.illegal": "Tevgera neqanûnî (xwekujî an girtina vegerê ya tavilê).",
+    "lib.game.aiPassed": "Komputer derbas kir. Heke tu jî derbas bikî, lîstik diqede û pûan têne hejmartin.",
+    "lib.game.start": "Dest pê bike",
+    "lib.game.lives": "Can",
+    "lib.game.mmAsk": "Ev şikl li ser kîjan kasê bû?",
+    "lib.game.mmReady": "Amade yî?",
+    "lib.game.mmMemorize": "Bi bîr bîne — {s} çirk ma",
+    "lib.game.mmQuestion": "Pirs {i}/{n}",
+    "lib.game.mmDone": "Qediya!",
+    "lib.game.mmLost": "Can qediyan — hemû kas hatin vekirin.",
+    "lib.game.mmNote": "Li Dest pê bike bitikîne: kas {s} çirkeyan têne nîşandan, paşê têne veşartin. Şikl û rengê her kasê bi bîr bîne, paşê kasa bi şiklê nîşandayî hilbijêre. Ji {l} xeletiyan zêdetir asta têk dibe."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Daneyên Excel bi formûlan bike yek",
       "desc": "Çend rûpel an pelên Excel bi formûlekê ji bo her şaneyê (SUM, IF, CONCAT, UNIQUE...), fonksiyonên hundurîn û formûlên tomarkirî yên ji bo bikaranîna dubare digihîne hev."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Sudoku 9x9 serhêl di 10 astan de ji hêsan heta dijwar bilîze, bi nîşe, nîşan û kontrolkirina xeletiyan."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Sudokuya mezin a 16x16 bi 1-9 û A-G, 10 astên ji hêsan heta dijwar, bi nîşe û nîşanan."
+    },
+    "chess": {
+      "name": "Şetrenc li dijî komputerê",
+      "desc": "Şetrenc li dijî komputerê di 10 astan de ji hêsan heta dijwar bilîze, bi rokad, en passant û bilindkirinê."
+    },
+    "xiangqi": {
+      "name": "Xiangqi li dijî komputerê",
+      "desc": "Şetrenca çînî (xiangqi) li dijî komputerê di 10 astan de bilîze: asteng kirina lingê hespê, çavê fîl, girtina bi top û qaîdeya generalê firok."
+    },
+    "go-game": {
+      "name": "Go li dijî komputerê",
+      "desc": "Go li dijî komputerê li ser tabloyên 5x5, 7x7 û 9x9 di 10 astan de bilîze, di dawiyê de bi hejmartina otomatîk."
+    },
+    "memory-shapes": {
+      "name": "Bîra şikl û rengan",
+      "desc": "Kasên bi şikl û rengan 5 çirkeyan têne nîşandan, paşê têne veşartin; bi bîr bîne û kasa rast hilbijêre, 10 astên ji hêsan heta dijwar."
     }
   },
   "s": {

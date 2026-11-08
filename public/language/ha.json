@@ -178,7 +178,61 @@
     "lib.excel.missing": "Babu",
     "lib.excel.duplicate": "Maimaici",
     "lib.excel.valid": "Daidai",
-    "lib.excel.invalid": "Ba daidai ba"
+    "lib.excel.invalid": "Ba daidai ba",
+    "lib.game.levels": "Mataki",
+    "lib.game.level": "Mataki na {n}",
+    "lib.game.unlockAll": "Buɗe duk matakai",
+    "lib.game.newGame": "Sabon wasa",
+    "lib.game.retry": "Sake yin wasa",
+    "lib.game.nextLevel": "Mataki na gaba",
+    "lib.game.win": "Ka ƙetare mataki na {n}!",
+    "lib.game.lose": "Ba ka ƙetare mataki na {n} ba. Sake gwadawa.",
+    "lib.game.draw": "Canjaras — ba a ƙetare mataki na {n} ba.",
+    "lib.game.allDone": "Barka! Ka ƙetare dukkan matakai 10.",
+    "lib.game.time": "Lokaci",
+    "lib.game.hint": "Manuniya",
+    "lib.game.erase": "Goge",
+    "lib.game.check": "Duba",
+    "lib.game.notes": "Bayanan kula",
+    "lib.game.generating": "Ana ƙirƙirar wasan…",
+    "lib.game.sudokuKeys": "Maɓallan kibiya don motsawa, maɓallan lamba don cikawa (16x16: A-G don 10-16), Backspace don gogewa, N don kunna bayanan kula.",
+    "lib.game.sudokuLeft": "Sauran akwatuna {n}",
+    "lib.game.sudokuConflict": "An cika dukkan akwatuna amma wasu lambobi sun maimaita. Da fatan za a sake dubawa.",
+    "lib.game.sudokuWrong": "Akwatuna {n} marasa daidai (alama ja).",
+    "lib.game.sudokuAllRight": "Ba a sami akwati mara daidai ba.",
+    "lib.game.thinking": "Kwamfuta tana tunani…",
+    "lib.game.yourTurn": "Lokacinka",
+    "lib.game.undo": "Warware",
+    "lib.game.resign": "Mika wuya",
+    "lib.game.resigned": "Ka mika wuya.",
+    "lib.game.chessCheck": "Sakin!",
+    "lib.game.chessMateWin": "Mat! Ka yi nasara.",
+    "lib.game.chessMateLose": "An yi maka mat.",
+    "lib.game.chessDraw": "Wasan ya ƙare da canjaras.",
+    "lib.game.chessNote": "Kana wasa da fari kuma kana farawa. Danna kayanka sannan filin da za ka je. Sojojin da suka kai layi na ƙarshe suna zama sarauniya. Ka ci nasara ta yi wa baƙi mat.",
+    "lib.game.xiangqi": "Allon Xiangqi",
+    "lib.game.xqCheck": "Sakin!",
+    "lib.game.xqMateWin": "Mat! Ka yi nasara.",
+    "lib.game.xqMateLose": "An yi maka mat.",
+    "lib.game.xqStaleWin": "Baƙi ba su da motsi halal — ka yi nasara.",
+    "lib.game.xqStaleLose": "Ba ka da motsi halal — ka sha kashi.",
+    "lib.game.xqNote": "Kana wasa da ja (ƙasa) kuma kana farawa. Danna kayanka sannan wurin da za ka je. Janar biyu ba za su fuskanci juna ba; mat ko rashin motsi halal yana nufin asara.",
+    "lib.game.pass": "Wuce",
+    "lib.game.goBoard": "Allon Go",
+    "lib.game.goCaps": "An kama — baƙi: {b} · fari: {w}",
+    "lib.game.goScore": "Maki — baƙi: {b}, fari: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Allo na {n}×{n}. Kana wasa da baƙi kuma kana farawa. Ana ƙirga maki ta yanki (duwatsu + wuraren da suka rage a kewaye gaba ɗaya); fari yana samun komi {k}. Ka kama duk matattun duwatsun abokin hamayya kafin ka wuce. Kashe kai da kamawa nan take (ko) an hana. Wasa yana ƙarewa idan duka sun wuce a jere.",
+    "lib.game.illegal": "Motsi haramtacce (kashe kai ko kamawa nan take).",
+    "lib.game.aiPassed": "Kwamfuta ta wuce. Idan kai ma ka wuce, wasa zai ƙare a ƙirga maki.",
+    "lib.game.start": "Fara",
+    "lib.game.lives": "Rayuka",
+    "lib.game.mmAsk": "Wane tayal ne yake da wannan siffa?",
+    "lib.game.mmReady": "A shirye?",
+    "lib.game.mmMemorize": "Haddace — sauran daƙiƙa {s}",
+    "lib.game.mmQuestion": "Tambaya {i}/{n}",
+    "lib.game.mmDone": "An gama!",
+    "lib.game.mmLost": "Rayuka sun ƙare — yanzu an bayyana dukkan tayal.",
+    "lib.game.mmNote": "Danna Fara: ana nuna tayal na daƙiƙa {s} sannan a ɓoye. Haddace siffa da launin kowane tayal, sannan ka zaɓi tayal ɗin da ya dace da siffar da aka nuna. Kuskure fiye da {l} yana sa matakin ya faɗi."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Haɗa Bayanan Excel da Dabaru",
       "desc": "Haɗa sheet ko fayilolin Excel da yawa da dabara a kowane cell (SUM, IF, CONCAT, UNIQUE...), ayyuka cikin juna, da dabarun da aka adana waɗanda za ka iya sake amfani da su."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Yi wasan Sudoku 9x9 a intanet a matakai 10 daga sauƙi zuwa wuya, tare da bayanan kula, manuniya da duba kurakurai."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Babban Sudoku 16x16 mai 1-9 da A-G, matakai 10 daga sauƙi zuwa wuya, tare da bayanan kula da manuniya."
+    },
+    "chess": {
+      "name": "Dara da Kwamfuta",
+      "desc": "Yi wasan dara da kwamfuta a matakai 10 daga sauƙi zuwa wuya, tare da castling, en passant da haɓakawa."
+    },
+    "xiangqi": {
+      "name": "Xiangqi da Kwamfuta",
+      "desc": "Yi wasan dara na Sin (xiangqi) da kwamfuta a matakai 10, tare da toshe ƙafar doki, idon giwa, kama da igwa da dokar janar masu fuskantar juna."
+    },
+    "go-game": {
+      "name": "Go da Kwamfuta",
+      "desc": "Yi wasan Go da kwamfuta a allon 5x5, 7x7 da 9x9 a matakai 10, tare da ƙirga maki ta atomatik a ƙarshe."
+    },
+    "memory-shapes": {
+      "name": "Ƙwaƙwalwar Siffa & Launi",
+      "desc": "Ana nuna tayal masu siffofi da launuka na daƙiƙa 5 sannan a ɓoye; haddace ka zaɓi tayal ɗin da ya dace, matakai 10 daga sauƙi zuwa wuya."
     }
   },
   "s": {

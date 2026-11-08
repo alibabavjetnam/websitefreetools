@@ -178,7 +178,61 @@
     "lib.excel.missing": "Chýba",
     "lib.excel.duplicate": "Duplicita",
     "lib.excel.valid": "Platné",
-    "lib.excel.invalid": "Neplatné"
+    "lib.excel.invalid": "Neplatné",
+    "lib.game.levels": "Úroveň",
+    "lib.game.level": "Úroveň {n}",
+    "lib.game.unlockAll": "Odomknúť všetky úrovne",
+    "lib.game.newGame": "Nová hra",
+    "lib.game.retry": "Hrať znova",
+    "lib.game.nextLevel": "Ďalšia úroveň",
+    "lib.game.win": "Prešli ste úrovňou {n}!",
+    "lib.game.lose": "Úroveň {n} nebola splnená. Skúste znova.",
+    "lib.game.draw": "Remíza — úroveň {n} nebola splnená.",
+    "lib.game.allDone": "Gratulujeme! Splnili ste všetkých 10 úrovní.",
+    "lib.game.time": "Čas",
+    "lib.game.hint": "Nápoveda",
+    "lib.game.erase": "Vymazať",
+    "lib.game.check": "Skontrolovať",
+    "lib.game.notes": "Poznámky",
+    "lib.game.generating": "Generuje sa hlavolam…",
+    "lib.game.sudokuKeys": "Šípky na pohyb, číselné klávesy na vyplnenie (16x16: A-G pre 10-16), Backspace na vymazanie, N na prepnutie poznámok.",
+    "lib.game.sudokuLeft": "Zostáva {n} políčok",
+    "lib.game.sudokuConflict": "Všetky políčka sú vyplnené, ale niektoré čísla sa opakujú. Skontrolujte ich znova.",
+    "lib.game.sudokuWrong": "{n} nesprávnych políčok (označené červenou).",
+    "lib.game.sudokuAllRight": "Nenašli sa žiadne nesprávne políčka.",
+    "lib.game.thinking": "Počítač rozmýšľa…",
+    "lib.game.yourTurn": "Ste na ťahu",
+    "lib.game.undo": "Späť",
+    "lib.game.resign": "Vzdať sa",
+    "lib.game.resigned": "Vzdali ste sa.",
+    "lib.game.chessCheck": "Šach!",
+    "lib.game.chessMateWin": "Šach mat! Vyhrali ste.",
+    "lib.game.chessMateLose": "Dostali ste šach mat.",
+    "lib.game.chessDraw": "Partia skončila remízou.",
+    "lib.game.chessNote": "Hráte za bielych a ťaháte prvý. Kliknite na svoju figúru a potom na políčko, kam chcete ísť. Pešiak, ktorý dôjde na poslednú radu, sa premení na dámu. Vyhráte, ak dáte čiernemu šach mat.",
+    "lib.game.xiangqi": "Xiangqi šachovnica",
+    "lib.game.xqCheck": "Šach!",
+    "lib.game.xqMateWin": "Šach mat! Vyhrali ste.",
+    "lib.game.xqMateLose": "Dostali ste šach mat.",
+    "lib.game.xqStaleWin": "Čierny nemá žiadny platný ťah — vyhrali ste.",
+    "lib.game.xqStaleLose": "Nemáte žiadny platný ťah — prehrali ste.",
+    "lib.game.xqNote": "Hráte za červených (dole) a ťaháte prvý. Kliknite na svoju figúru a potom na bod, kam chcete ísť. Dvaja generáli nesmú stáť oproti sebe; prehráva ten, kto dostane šach mat alebo nemá platný ťah.",
+    "lib.game.pass": "Pasovať",
+    "lib.game.goBoard": "Doska Go",
+    "lib.game.goCaps": "Zajaté — Čierny: {b} · Biely: {w}",
+    "lib.game.goScore": "Skóre — Čierny: {b}, Biely: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Doska {n}×{n}. Hráte za čierneho a ťaháte prvý. Počíta sa plocha (kamene + úplne obkľúčené prázdne body); biely dostáva komi {k}. Pred pasom zajmite všetky mŕtve kamene súpera. Samovražda a okamžité spätné zajatie (ko) nie sú povolené. Hra sa skončí, keď obaja hráči po sebe pasujú.",
+    "lib.game.illegal": "Neplatný ťah (samovražda alebo okamžité spätné zajatie).",
+    "lib.game.aiPassed": "Počítač pasoval. Ak pasujete aj vy, hra sa skončí a spočíta sa skóre.",
+    "lib.game.start": "Štart",
+    "lib.game.lives": "Životy",
+    "lib.game.mmAsk": "Ktorá dlaždica mala tento tvar?",
+    "lib.game.mmReady": "Pripravení?",
+    "lib.game.mmMemorize": "Zapamätajte si — zostáva {s} s",
+    "lib.game.mmQuestion": "Otázka {i}/{n}",
+    "lib.game.mmDone": "Hotovo!",
+    "lib.game.mmLost": "Žiadne životy — všetky dlaždice sa odkryli.",
+    "lib.game.mmNote": "Stlačte Štart: dlaždice sa zobrazia na {s} s a potom sa skryjú. Zapamätajte si tvar a farbu každej dlaždice a potom vyberte tú, ktorá zodpovedá zobrazenému tvaru. Viac ako {l} chýb znamená nesplnenú úroveň."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Spájanie údajov Excelu pomocou vzorcov",
       "desc": "Spájajte viac hárkov alebo súborov Excel jedným vzorcom na bunku (SUM, IF, CONCAT, UNIQUE...), s vnorenými funkciami a uloženými vzorcami, ktoré môžete znova použiť."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Hrajte sudoku 9x9 online v 10 úrovniach od ľahkých po ťažké, s poznámkami, nápovedami a kontrolou chýb."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Veľké sudoku 16x16 s číslami 1-9 a písmenami A-G, 10 úrovní od ľahkých po ťažké, s poznámkami a nápovedami."
+    },
+    "chess": {
+      "name": "Šach proti počítaču",
+      "desc": "Hrajte šach proti počítaču v 10 úrovniach od ľahkých po ťažké, s rošádou, braním mimochodom a premenou."
+    },
+    "xiangqi": {
+      "name": "Xiangqi proti počítaču",
+      "desc": "Hrajte čínsky šach (xiangqi) proti počítaču v 10 úrovniach, s blokovaním koňa, okom slona, bratím delom a pravidlom o generáloch oproti sebe."
+    },
+    "go-game": {
+      "name": "Go proti počítaču",
+      "desc": "Hrajte Go proti počítaču na doskách 5x5, 7x7 a 9x9 v 10 úrovniach, s automatickým spočítaním skóre na konci."
+    },
+    "memory-shapes": {
+      "name": "Pamäť tvarov a farieb",
+      "desc": "Dlaždice s tvarmi a farbami sa zobrazia na 5 sekúnd a potom sa skryjú; zapamätajte si a vyberte správnu dlaždicu, 10 úrovní od ľahkých po ťažké."
     }
   },
   "s": {

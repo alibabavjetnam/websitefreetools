@@ -178,7 +178,61 @@
     "lib.excel.missing": "누락",
     "lib.excel.duplicate": "중복",
     "lib.excel.valid": "유효",
-    "lib.excel.invalid": "유효하지 않음"
+    "lib.excel.invalid": "유효하지 않음",
+    "lib.game.levels": "레벨",
+    "lib.game.level": "레벨 {n}",
+    "lib.game.unlockAll": "모든 레벨 열기",
+    "lib.game.newGame": "새 게임",
+    "lib.game.retry": "다시 하기",
+    "lib.game.nextLevel": "다음 레벨",
+    "lib.game.win": "레벨 {n}을(를) 클리어했습니다!",
+    "lib.game.lose": "레벨 {n}을(를) 클리어하지 못했습니다. 다시 도전하세요.",
+    "lib.game.draw": "무승부 — 레벨 {n} 클리어 실패.",
+    "lib.game.allDone": "축하합니다! 10개 레벨을 모두 클리어했습니다.",
+    "lib.game.time": "시간",
+    "lib.game.hint": "힌트",
+    "lib.game.erase": "지우기",
+    "lib.game.check": "확인",
+    "lib.game.notes": "메모",
+    "lib.game.generating": "퍼즐 생성 중…",
+    "lib.game.sudokuKeys": "방향키로 이동, 숫자 키로 입력(16x16: 10-16은 A-G), Backspace로 지우기, N으로 메모 전환.",
+    "lib.game.sudokuLeft": "남은 칸 {n}개",
+    "lib.game.sudokuConflict": "모든 칸이 채워졌지만 중복된 숫자가 있습니다. 다시 확인하세요.",
+    "lib.game.sudokuWrong": "틀린 칸 {n}개 (빨간색 표시).",
+    "lib.game.sudokuAllRight": "틀린 칸이 없습니다.",
+    "lib.game.thinking": "컴퓨터가 생각 중…",
+    "lib.game.yourTurn": "내 차례",
+    "lib.game.undo": "되돌리기",
+    "lib.game.resign": "기권",
+    "lib.game.resigned": "기권했습니다.",
+    "lib.game.chessCheck": "체크!",
+    "lib.game.chessMateWin": "체크메이트! 승리했습니다.",
+    "lib.game.chessMateLose": "체크메이트를 당했습니다.",
+    "lib.game.chessDraw": "무승부입니다.",
+    "lib.game.chessNote": "당신은 백이며 먼저 둡니다. 말을 클릭한 뒤 이동할 칸을 클릭하세요. 마지막 줄에 도달한 폰은 퀸으로 승급합니다. 흑에게 체크메이트를 걸면 승리합니다.",
+    "lib.game.xiangqi": "장기판(샹치)",
+    "lib.game.xqCheck": "장군!",
+    "lib.game.xqMateWin": "외통수! 승리했습니다.",
+    "lib.game.xqMateLose": "외통수를 당했습니다.",
+    "lib.game.xqStaleWin": "흑이 둘 수 있는 수가 없습니다 — 승리했습니다.",
+    "lib.game.xqStaleLose": "둘 수 있는 수가 없습니다 — 패배했습니다.",
+    "lib.game.xqNote": "당신은 홍(아래쪽)이며 먼저 둡니다. 말을 클릭한 뒤 이동할 점을 클릭하세요. 두 장군이 마주 볼 수 없으며, 외통수를 당하거나 둘 수 있는 수가 없으면 패배합니다.",
+    "lib.game.pass": "패스",
+    "lib.game.goBoard": "바둑판",
+    "lib.game.goCaps": "따낸 돌 — 흑: {b} · 백: {w}",
+    "lib.game.goScore": "점수 — 흑: {b}, 백: {w} + 덤 {k} = {wt}",
+    "lib.game.goNote": "{n}×{n} 바둑판. 당신은 흑이며 먼저 둡니다. 계가는 집(돌 + 완전히 둘러싸인 빈 점) 기준이며, 백에게 덤 {k}집이 주어집니다. 패스하기 전에 상대의 죽은 돌을 모두 따내세요. 자충수와 즉시 되따냄(패)은 금지입니다. 두 사람이 연달아 패스하면 대국이 끝납니다.",
+    "lib.game.illegal": "둘 수 없는 수입니다 (자충수 또는 즉시 되따냄).",
+    "lib.game.aiPassed": "컴퓨터가 패스했습니다. 당신도 패스하면 대국이 끝나고 계가합니다.",
+    "lib.game.start": "시작",
+    "lib.game.lives": "목숨",
+    "lib.game.mmAsk": "이 모양은 어느 타일이었나요?",
+    "lib.game.mmReady": "준비됐나요?",
+    "lib.game.mmMemorize": "기억하세요 — {s}초 남음",
+    "lib.game.mmQuestion": "문제 {i}/{n}",
+    "lib.game.mmDone": "완료!",
+    "lib.game.mmLost": "목숨이 없습니다 — 모든 타일을 공개합니다.",
+    "lib.game.mmNote": "시작을 누르면 타일이 {s}초 동안 보였다가 가려집니다. 각 타일의 모양과 색을 기억한 뒤, 제시된 모양과 일치하는 타일을 고르세요. {l}번을 넘게 틀리면 레벨 실패입니다."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "수식으로 Excel 데이터 결합",
       "desc": "셀마다 수식(SUM, IF, CONCAT, UNIQUE...)을 지정해 여러 시트나 Excel 파일을 결합합니다. 중첩 함수와 재사용 가능한 수식 저장을 지원합니다."
+    },
+    "sudoku-9x9": {
+      "name": "스도쿠 9x9",
+      "desc": "쉬움부터 어려움까지 10단계의 9x9 스도쿠를 온라인으로 즐기세요. 메모, 힌트, 오류 확인 기능이 있습니다."
+    },
+    "sudoku-16x16": {
+      "name": "스도쿠 16x16",
+      "desc": "1-9와 A-G를 사용하는 큰 16x16 스도쿠. 쉬움부터 어려움까지 10단계, 메모와 힌트 제공."
+    },
+    "chess": {
+      "name": "컴퓨터와 체스",
+      "desc": "쉬움부터 어려움까지 10단계로 컴퓨터와 체스를 두세요. 캐슬링, 앙파상, 프로모션 지원."
+    },
+    "xiangqi": {
+      "name": "컴퓨터와 샹치",
+      "desc": "컴퓨터와 중국 장기(샹치)를 10단계로 즐기세요. 마의 다리 막기, 상의 눈, 포의 잡기, 장군 마주보기 규칙을 지원합니다."
+    },
+    "go-game": {
+      "name": "컴퓨터와 바둑",
+      "desc": "5x5, 7x7, 9x9 바둑판에서 10단계로 컴퓨터와 바둑을 두세요. 대국이 끝나면 자동으로 계가합니다."
+    },
+    "memory-shapes": {
+      "name": "모양·색깔 기억 게임",
+      "desc": "모양과 색이 있는 타일이 5초 동안 보였다가 가려집니다. 기억해서 맞는 타일을 고르세요. 쉬움부터 어려움까지 10단계."
     }
   },
   "s": {

@@ -178,7 +178,61 @@
     "lib.excel.missing": "Manjka",
     "lib.excel.duplicate": "Podvojeno",
     "lib.excel.valid": "Veljavno",
-    "lib.excel.invalid": "Neveljavno"
+    "lib.excel.invalid": "Neveljavno",
+    "lib.game.levels": "Stopnja",
+    "lib.game.level": "Stopnja {n}",
+    "lib.game.unlockAll": "Odkleni vse stopnje",
+    "lib.game.newGame": "Nova igra",
+    "lib.game.retry": "Igraj znova",
+    "lib.game.nextLevel": "Naslednja stopnja",
+    "lib.game.win": "Stopnjo {n} ste opravili!",
+    "lib.game.lose": "Stopnje {n} niste opravili. Poskusite znova.",
+    "lib.game.draw": "Remi — stopnje {n} niste opravili.",
+    "lib.game.allDone": "Čestitke! Opravili ste vseh 10 stopenj.",
+    "lib.game.time": "Čas",
+    "lib.game.hint": "Namig",
+    "lib.game.erase": "Izbriši",
+    "lib.game.check": "Preveri",
+    "lib.game.notes": "Opombe",
+    "lib.game.generating": "Ustvarjanje uganke…",
+    "lib.game.sudokuKeys": "Puščice za premik, številke za vnos (16x16: A-G za 10-16), Backspace za brisanje, N za preklop opomb.",
+    "lib.game.sudokuLeft": "Še {n} polj",
+    "lib.game.sudokuConflict": "Vsa polja so izpolnjena, a nekatere številke se ponavljajo. Preverite znova.",
+    "lib.game.sudokuWrong": "{n} napačnih polj (označena rdeče).",
+    "lib.game.sudokuAllRight": "Napačnih polj ni.",
+    "lib.game.thinking": "Računalnik razmišlja …",
+    "lib.game.yourTurn": "Vi ste na potezi",
+    "lib.game.undo": "Razveljavi",
+    "lib.game.resign": "Vzdaj se",
+    "lib.game.resigned": "Vzdali ste se.",
+    "lib.game.chessCheck": "Šah!",
+    "lib.game.chessMateWin": "Šah mat! Zmagali ste.",
+    "lib.game.chessMateLose": "Dobili ste šah mat.",
+    "lib.game.chessDraw": "Partija se je končala z remijem.",
+    "lib.game.chessNote": "Igrate z belimi in začnete. Kliknite svojo figuro, nato polje, kamor želite potegniti. Kmet, ki doseže zadnjo vrsto, se spremeni v damo. Zmagajte tako, da matirate črnega.",
+    "lib.game.xiangqi": "Plošča xiangqi",
+    "lib.game.xqCheck": "Šah!",
+    "lib.game.xqMateWin": "Mat! Zmagali ste.",
+    "lib.game.xqMateLose": "Dobili ste mat.",
+    "lib.game.xqStaleWin": "Črni nima dovoljenih potez — zmagali ste.",
+    "lib.game.xqStaleLose": "Nimate dovoljenih potez — izgubili ste.",
+    "lib.game.xqNote": "Igrate z rdečimi (spodaj) in začnete. Kliknite svojo figuro, nato točko, kamor želite potegniti. Generala se ne smeta gledati iz oči v oči; mat ali pomanjkanje dovoljenih potez pomeni poraz.",
+    "lib.game.pass": "Preskoči",
+    "lib.game.goBoard": "Plošča go",
+    "lib.game.goCaps": "Ujeti — črni: {b} · beli: {w}",
+    "lib.game.goScore": "Rezultat — črni: {b}, beli: {w} + komi {k} = {wt}",
+    "lib.game.goNote": "Plošča {n}×{n}. Igrate s črnimi in začnete. Točkovanje je po površini (kamni + popolnoma obdana prazna polja); beli dobi komi {k}. Pred preskokom odstranite vse mrtve kamne nasprotnika. Samomor in takojšnje povratno zajetje (ko) nista dovoljena. Igra se konča, ko oba igralca zaporedoma preskočita.",
+    "lib.game.illegal": "Nedovoljena poteza (samomor ali takojšnje povratno zajetje).",
+    "lib.game.aiPassed": "Računalnik je preskočil. Če preskočite tudi vi, se igra konča in točke se preštejejo.",
+    "lib.game.start": "Začni",
+    "lib.game.lives": "Življenja",
+    "lib.game.mmAsk": "Na kateri ploščici je bila ta oblika?",
+    "lib.game.mmReady": "Pripravljeni?",
+    "lib.game.mmMemorize": "Zapomnite si — še {s} s",
+    "lib.game.mmQuestion": "Vprašanje {i}/{n}",
+    "lib.game.mmDone": "Končano!",
+    "lib.game.mmLost": "Zmanjkalo je življenj — vse ploščice so razkrite.",
+    "lib.game.mmNote": "Pritisnite Začni: ploščice se prikažejo za {s} sekund, nato se skrijejo. Zapomnite si obliko in barvo vsake ploščice, nato izberite ploščico s prikazano obliko. Več kot {l} napak pomeni neuspeh."
   },
   "pages": {
     "home": {
@@ -591,6 +645,30 @@
     "excel-formula-merge": {
       "name": "Združi podatke Excel s formulami",
       "desc": "Združite več listov ali datotek Excel s formulo za vsako celico (SUM, IF, CONCAT, UNIQUE...), gnezdenimi funkcijami in shranjenimi formulami za ponovno uporabo."
+    },
+    "sudoku-9x9": {
+      "name": "Sudoku 9x9",
+      "desc": "Igrajte sudoku 9x9 na spletu na 10 stopnjah od lahkega do težkega, z opombami, namigi in preverjanjem napak."
+    },
+    "sudoku-16x16": {
+      "name": "Sudoku 16x16",
+      "desc": "Velik sudoku 16x16 s števkami 1-9 in črkami A-G, 10 stopenj od lahkega do težkega, z opombami in namigi."
+    },
+    "chess": {
+      "name": "Šah proti računalniku",
+      "desc": "Igrajte šah proti računalniku na 10 stopnjah od lahkega do težkega, z rokado, en passant in promocijo."
+    },
+    "xiangqi": {
+      "name": "Xiangqi proti računalniku",
+      "desc": "Igrajte kitajski šah (xiangqi) proti računalniku na 10 stopnjah: blokada konjeve noge, slonovo oko, zajem s topom in pravilo letečega generala."
+    },
+    "go-game": {
+      "name": "Go proti računalniku",
+      "desc": "Igrajte go proti računalniku na ploščah 5x5, 7x7 in 9x9 na 10 stopnjah, z samodejnim točkovanjem na koncu."
+    },
+    "memory-shapes": {
+      "name": "Spomin oblik in barv",
+      "desc": "Ploščice z oblikami in barvami se pokažejo za 5 sekund, nato se skrijejo; zapomnite si in izberite pravo ploščico, 10 stopenj od lahkega do težkega."
     }
   },
   "s": {
