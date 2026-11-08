@@ -238,10 +238,6 @@
       "name": "Kalkulaatorid ja teisendajad",
       "desc": "Teaduslik kalkulaator, protsendid ja ühikute teisendamine."
     },
-    "random": {
-      "name": "Juhuslikkus ja loosimine",
-      "desc": "Õnneratas ja juhuslike arvude generaator mängudeks ja loosimisteks."
-    },
     "device": {
       "name": "Seadme testid",
       "desc": "Testi veebikaamerat, salvesta ekraani, mõõda trükkimiskiirust ja klikke sekundis."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Exceli andmete töötlemine",
       "desc": "Täida Word Excelist, ühenda lahtreid, laota ridu ja kombineeri mitut lehte või Exceli faili valemitega."
+    },
+    "entertainment": {
+      "name": "Meelelahutus ja mängud",
+      "desc": "Õnneratas, juhuslike arvude generaator, auhinnaloosid ja lõbusad mängud."
     }
   },
   "tools": {

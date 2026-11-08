@@ -238,10 +238,6 @@
       "name": "Calculadores i convertidors",
       "desc": "Calculadora científica, percentatges i conversió d'unitats."
     },
-    "random": {
-      "name": "Atzar i sortejos",
-      "desc": "Ruleta de la sort i generador de nombres aleatoris per a jocs i sortejos."
-    },
     "device": {
       "name": "Proves del dispositiu",
       "desc": "Prova la càmera web, grava la pantalla, mesura la velocitat d'escriptura i els clics per segon."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Processament de dades d'Excel",
       "desc": "Omple Word des d'Excel, combina cel·les, apila files i uneix molts fulls o fitxers Excel amb fórmules."
+    },
+    "entertainment": {
+      "name": "Entreteniment i jocs",
+      "desc": "Ruleta de la sort, generador de nombres aleatoris, sortejos de premis i jocs divertits."
     }
   },
   "tools": {

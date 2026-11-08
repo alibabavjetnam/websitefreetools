@@ -238,10 +238,6 @@
       "name": "Skaičiuotuvai ir keitikliai",
       "desc": "Mokslinis skaičiuotuvas, procentai ir matavimo vienetų keitimas."
     },
-    "random": {
-      "name": "Atsitiktinumas ir burtai",
-      "desc": "Laimės ratas ir atsitiktinių skaičių generatorius žaidimams ir loterijoms."
-    },
     "device": {
       "name": "Įrenginio testai",
       "desc": "Patikrinkite internetinę kamerą, įrašykite ekraną, išmatuokite rašymo greitį ir paspaudimus per sekundę."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Excel duomenų apdorojimas",
       "desc": "Užpildykite Word iš Excel, sujunkite langelius, sudėkite eilutes ir derinkite daug lapų ar Excel failų su formulėmis."
+    },
+    "entertainment": {
+      "name": "Pramogos ir žaidimai",
+      "desc": "Laimės ratas, atsitiktinių skaičių generatorius, prizų traukimas ir smagūs žaidimai."
     }
   },
   "tools": {

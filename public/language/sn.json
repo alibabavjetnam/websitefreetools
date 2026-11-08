@@ -238,10 +238,6 @@
       "name": "Makarkuretari neKushandura",
       "desc": "Karkuretari yesayenzi, zvikamu pamusoro pe100 nekushandura zvikero."
     },
-    "random": {
-      "name": "Zvisina Kurongwa neKusarudza",
-      "desc": "Tenderedza vhiri nekusarudza nhamba zvisina kurongwa kumitambo nemipiro."
-    },
     "device": {
       "name": "Kuongorora Zvishandiso",
       "desc": "Edza webcam yako, rekodha screen, yera kumhanya kwekunyora nekudzvanya pasekondi."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Kugadzirisa Data yeExcel",
       "desc": "Zadza Word kubva kuExcel, batanidza ma cell, isa mitsetse pamusoro pemimwe uye batanidza ma sheet kana mafaira eExcel akawanda nemafomula."
+    },
+    "entertainment": {
+      "name": "Varaidzo nemitambo",
+      "desc": "Vhiri reunamato, jenareta yenhamba dzisina ruzivo, kuendesa mazano emigove nemitambo inonakidza."
     }
   },
   "tools": {

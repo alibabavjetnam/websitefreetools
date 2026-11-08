@@ -74,8 +74,6 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Công cụ thời gian | Cộng trừ ngày tháng | `tools/date-calc.html` |
 | Giáo dục & giảng dạy | Tính điểm GPA | `tools/gpa.html` |
 | Tiện ích sức khoẻ | Tính ngày dự sinh | `tools/due-date.html` |
-| Ngẫu nhiên & bốc thăm | Vòng quay may mắn | `tools/spin-wheel.html` |
-| Ngẫu nhiên & bốc thăm | Quay số ngẫu nhiên | `tools/random-number.html` |
 | Kiểm tra thiết bị | Kiểm tra tốc độ gõ phím | `tools/typing-test.html` |
 | Kiểm tra thiết bị | Đo tốc độ click (CPS) | `tools/cps-test.html` |
 | Kiểm tra thiết bị | Kiểm tra webcam | `tools/webcam-test.html` |
@@ -87,6 +85,8 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Kinh doanh online | Tạo chữ ký tay | `tools/signature.html` |
 | Tiếp thị | Tạo logo đơn giản | `tools/logo-maker.html` |
 | Năng suất & đời sống | Sổ ghi chú online | `tools/notepad.html` |
+| Game giải trí | Vòng quay may mắn | `tools/spin-wheel.html` |
+| Game giải trí | Quay số ngẫu nhiên | `tools/random-number.html` |
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
 

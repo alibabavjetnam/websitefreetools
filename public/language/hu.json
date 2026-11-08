@@ -238,10 +238,6 @@
       "name": "Számológépek és átváltók",
       "desc": "Tudományos számológép, százalékszámítás és mértékegység-átváltás."
     },
-    "random": {
-      "name": "Véletlen és sorsolás",
-      "desc": "Szerencsekerék és véletlenszám-generátor játékokhoz és nyereményjátékokhoz."
-    },
     "device": {
       "name": "Eszköztesztek",
       "desc": "Teszteld a webkamerát, rögzítsd a képernyőt, mérd a gépelési sebességet és a másodpercenkénti kattintásokat."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Excel-adatfeldolgozás",
       "desc": "Word kitöltése Excelből, cellák egyesítése, sorok egymás alá fűzése, valamint több munkalap vagy Excel-fájl kombinálása képletekkel."
+    },
+    "entertainment": {
+      "name": "Szórakozás és játékok",
+      "desc": "Szerencsekerék, véletlenszám-generátor, nyereménysorsolások és szórakoztató játékok."
     }
   },
   "tools": {

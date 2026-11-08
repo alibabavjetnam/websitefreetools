@@ -238,10 +238,6 @@
       "name": "Laskimet ja muuntimet",
       "desc": "Funktiolaskin, prosentit ja yksikkömuunnokset."
     },
-    "random": {
-      "name": "Satunnaisuus ja arvonta",
-      "desc": "Onnenpyörä ja satunnaislukujen arvonta peleihin ja arvontoihin."
-    },
     "device": {
       "name": "Laitetestit",
       "desc": "Testaa verkkokamera, tallenna näyttö, mittaa kirjoitusnopeus ja klikkaukset sekunnissa."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Excel-tietojen käsittely",
       "desc": "Täytä Word Excelistä, yhdistä soluja, pinoa rivejä ja yhdistä useita taulukoita tai Excel-tiedostoja kaavoilla."
+    },
+    "entertainment": {
+      "name": "Viihde ja pelit",
+      "desc": "Onnenpyörä, satunnaislukugeneraattori, palkintoarvonnat ja hauskat pelit."
     }
   },
   "tools": {

@@ -238,10 +238,6 @@
       "name": "Calculatrices et convertisseurs",
       "desc": "Calculatrice scientifique, pourcentages et conversion d'unités."
     },
-    "random": {
-      "name": "Hasard et tirages au sort",
-      "desc": "Roue de la fortune et nombres aléatoires pour jeux et concours."
-    },
     "device": {
       "name": "Tests d'appareil",
       "desc": "Tester la webcam, enregistrer l'écran, mesurer la vitesse de frappe et les clics par seconde."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Traitement de données Excel",
       "desc": "Remplissez Word depuis Excel, fusionnez des cellules, empilez des lignes et combinez plusieurs feuilles ou fichiers Excel avec des formules."
+    },
+    "entertainment": {
+      "name": "Divertissement et jeux",
+      "desc": "Roue de la chance, générateur de nombres aléatoires, tirages au sort et jeux amusants."
     }
   },
   "tools": {

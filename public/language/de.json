@@ -238,10 +238,6 @@
       "name": "Rechner & Umrechner",
       "desc": "Wissenschaftlicher Taschenrechner, Prozentrechnung und Einheitenumrechnung."
     },
-    "random": {
-      "name": "Zufall & Verlosungen",
-      "desc": "Glücksrad und Zufallszahlen für Spiele und Gewinnspiele."
-    },
     "device": {
       "name": "Gerätetests",
       "desc": "Webcam testen, Bildschirm aufnehmen, Tippgeschwindigkeit und Klicks pro Sekunde messen."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Excel-Daten verarbeiten",
       "desc": "Word aus Excel befüllen, Zellen zusammenführen, Zeilen untereinander setzen und viele Tabellenblätter oder Excel-Dateien mit Formeln kombinieren."
+    },
+    "entertainment": {
+      "name": "Unterhaltung & Spiele",
+      "desc": "Glücksrad, Zufallszahlengenerator, Gewinnauslosungen und unterhaltsame Spiele."
     }
   },
   "tools": {

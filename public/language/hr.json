@@ -238,10 +238,6 @@
       "name": "Kalkulatori i pretvarači",
       "desc": "Znanstveni kalkulator, postoci i pretvorba mjernih jedinica."
     },
-    "random": {
-      "name": "Nasumično i izvlačenje",
-      "desc": "Kolo sreće i generator nasumičnih brojeva za igre i nagradne igre."
-    },
     "device": {
       "name": "Testovi uređaja",
       "desc": "Testirajte web-kameru, snimite zaslon, izmjerite brzinu tipkanja i broj klikova u sekundi."
@@ -253,6 +249,10 @@
     "excel": {
       "name": "Obrada Excel podataka",
       "desc": "Popunite Word iz Excela, spajajte ćelije, slažite retke i kombinirajte mnogo listova ili Excel datoteka pomoću formula."
+    },
+    "entertainment": {
+      "name": "Zabava i igre",
+      "desc": "Kolo sreće, generator slučajnih brojeva, izvlačenje nagrada i zabavne igre."
     }
   },
   "tools": {

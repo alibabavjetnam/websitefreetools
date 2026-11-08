@@ -31,13 +31,13 @@ export const GROUPS: ToolGroup[] = [
   { id: 'calc', name: 'Máy tính & chuyển đổi', description: 'Máy tính khoa học, tính phần trăm, đổi đơn vị đo.' },
   { id: 'marketing', name: 'Tiếp thị', description: 'Mã QR, liên kết chiến dịch, màu sắc thương hiệu.' },
   { id: 'life', name: 'Năng suất & đời sống', description: 'Tiện ích dùng hằng ngày.' },
-  { id: 'random', name: 'Ngẫu nhiên & bốc thăm', description: 'Vòng quay may mắn, quay số ngẫu nhiên cho trò chơi, bốc thăm trúng thưởng.' },
   { id: 'health', name: 'Tiện ích sức khoẻ', description: 'Theo dõi cân nặng, dinh dưỡng, nước uống, vận động, chu kỳ.' },
   { id: 'edu', name: 'Giáo dục & giảng dạy', description: 'Thời khoá biểu, đề thi, điểm danh, sơ đồ tư duy, thù lao.' },
   { id: 'time', name: 'Công cụ thời gian', description: 'Đồng hồ, đếm ngược, múi giờ, ngày làm việc, nhật ký.' },
   { id: 'device', name: 'Kiểm tra thiết bị', description: 'Thử webcam, quay màn hình, đo tốc độ gõ phím và tốc độ click chuột.' },
   { id: 'media', name: 'Âm thanh & video', description: 'Nén video, tách nhạc MP3 và lên dây đàn guitar ngay trên trình duyệt.' },
   { id: 'dev', name: 'Công cụ tin học', description: 'Định dạng, kiểm lỗi, mã hoá và chuyển đổi mã nguồn.' },
+  { id: 'entertainment', name: 'Game giải trí', description: 'Vòng quay may mắn, quay số ngẫu nhiên, bốc thăm và các trò chơi giải trí vui.' },
 ];
 
 const tool = (id: string, group: string, name: string, description: string, iconSample?: string): ToolInfo => ({
@@ -133,8 +133,8 @@ export const TOOLS: ToolInfo[] = [
   tool('date-calc', 'time', 'Cộng trừ ngày tháng', 'Đếm số ngày giữa hai ngày, cộng hoặc trừ ngày, tuần, tháng, năm vào một ngày; xem thứ trong tuần.'),
   tool('gpa', 'edu', 'Tính điểm GPA', 'Tính điểm trung bình học kỳ, tích luỹ theo tín chỉ; thang 4, thang 10 và quy đổi điểm chữ A, B, C, D.'),
   tool('due-date', 'health', 'Tính ngày dự sinh', 'Tính ngày dự sinh và tuổi thai theo kỳ kinh cuối, ngày thụ thai hoặc siêu âm; xem các mốc khám thai quan trọng.'),
-  tool('spin-wheel', 'random', 'Vòng quay may mắn', 'Tạo vòng quay với tên, phần thưởng tuỳ ý; quay ngẫu nhiên công bằng, loại người đã trúng, toàn màn hình.'),
-  tool('random-number', 'random', 'Quay số ngẫu nhiên', 'Tạo số ngẫu nhiên trong khoảng tuỳ chọn, nhiều số cùng lúc, không trùng lặp; dùng cho bốc thăm, xổ số vui.'),
+  tool('spin-wheel', 'entertainment', 'Vòng quay may mắn', 'Tạo vòng quay với tên, phần thưởng tuỳ ý; quay ngẫu nhiên công bằng, loại người đã trúng, toàn màn hình.'),
+  tool('random-number', 'entertainment', 'Quay số ngẫu nhiên', 'Tạo số ngẫu nhiên trong khoảng tuỳ chọn, nhiều số cùng lúc, không trùng lặp; dùng cho bốc thăm, xổ số vui.'),
   tool('typing-test', 'device', 'Kiểm tra tốc độ gõ phím', 'Đo tốc độ gõ (từ/phút) và độ chính xác trong 30 giây đến 5 phút, có bài tiếng Việt và tiếng Anh.'),
   tool('cps-test', 'device', 'Đo tốc độ click chuột (CPS)', 'Đếm số lần click mỗi giây trong 1 đến 60 giây, lưu kỷ lục, thử cả phím cách và chạm màn hình.'),
   tool('webcam-test', 'device', 'Kiểm tra webcam', 'Kiểm tra camera có hoạt động không, xem độ phân giải, khung hình/giây, chọn camera, chụp ảnh thử.'),
