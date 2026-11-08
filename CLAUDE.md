@@ -18,7 +18,8 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - `src/calc/`: phần tính toán thuần (kiểm thử riêng được), ví dụ `salary.ts` (quy định lương 2026)
 - `src/lib/`: tiện ích và bộ mã hoá tự viết (QR, mã vạch, pptx, obfuscate...). `src/lib/cdn.ts` nạp thư viện từ CDN khi người dùng bấm xử lý
 - `src/google/`: đăng nhập Google + đồng bộ Google Sheets (Điểm danh, Nhật ký)
-- `src/stock/`: lõi phân tích cho trang ẩn `zzz/index.html` (4v2: nến Binance, backtest), `noindex`, không có trong menu
+- `src/stock/`: lõi phân tích cho trang ẩn `hidden/zzz/index.html` (địa chỉ vẫn là `/zzz/`) (4v2: nến Binance, backtest), `noindex`, không có trong menu
+- `hidden/`: mã nguồn mọi chức năng ẩn (không có trong menu/sitemap, `noindex`, không Google Analytics, không dịch): `hidden/zzz/index.html` → `/zzz/`, `hidden/cq.html` → `/cq.html` (định giá chứng quyền, tải dữ liệu Vietstock bằng dấu trang), `hidden/ls/index.html` → `/ls/` (danh sách link các chức năng ẩn). Plugin `hiddenOutput` trong `vite.config.ts` đổi đường dẫn đầu ra nên địa chỉ không đổi. Thêm chức năng ẩn mới: đặt vào `hidden/`, khai báo input trong `vite.config.ts`, thêm vào `NO_ANALYTICS`, thêm một dòng vào `hidden/ls/index.html`. Tài nguyên PWA của zzz (manifest, icon, sw) vẫn ở `public/zzz/`
 - `m/index.html`: trang khách xem thực đơn khi quét QR (dữ liệu sau dấu `#`)
 - `public/language/{en,vi,ja,zh}.json`: từ điển đa ngôn ngữ
 

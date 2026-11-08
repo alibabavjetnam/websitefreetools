@@ -5,7 +5,7 @@ import { resolve } from 'node:path';
 // Google Analytics (gtag.js): chèn vào <head> của mọi trang khi build (không chèn khi chạy dev).
 // Bỏ qua trang ẩn /zzz và trang khách xem menu /m/ (đường link menu chứa dữ liệu sau dấu #).
 const GA_ID = 'G-2RCGQ2LS9Y';
-const NO_ANALYTICS = ['/zzz/index.html', '/m/index.html', '/cq.html', '/ls/index.html'];
+const NO_ANALYTICS = ['/hidden/zzz/index.html', '/m/index.html', '/hidden/cq.html', '/hidden/ls/index.html'];
 const analytics = (): Plugin => ({
   name: 'wft-google-analytics',
   apply: 'build',
@@ -26,6 +26,24 @@ const analytics = (): Plugin => ({
   },
 });
 
+// Các chức năng ẩn (zzz, cq, ls...) có mã nguồn gom trong thư mục hidden/, nhưng địa chỉ truy cập giữ nguyên
+// (/zzz/, /cq.html, /ls/) nhờ đổi đường dẫn file đầu ra: hidden/zzz/index.html -> zzz/index.html ...
+// Thêm chức năng ẩn mới: đặt vào hidden/, khai báo trong input bên dưới và thêm vào trang hidden/ls/index.html.
+const hiddenOutput = (): Plugin => ({
+  name: 'wft-hidden-output',
+  apply: 'build',
+  enforce: 'post',
+  generateBundle(_o, bundle) {
+    for (const key of Object.keys(bundle)) {
+      if (!key.startsWith('hidden/')) continue;
+      const item = bundle[key];
+      item.fileName = key.slice('hidden/'.length);
+      bundle[item.fileName] = item;
+      delete bundle[key];
+    }
+  },
+});
+
 // Mỗi công cụ là một trang HTML riêng (multi-page app).
 // Mọi file trong thư mục tools/ được tự nhận làm trang, không cần khai báo từng trang.
 const toolPages = Object.fromEntries(
@@ -36,7 +54,7 @@ const toolPages = Object.fromEntries(
 
 // base './' giúp site chạy được cả ở tên miền gốc lẫn trong thư mục con.
 export default defineConfig({
-  plugins: [analytics()],
+  plugins: [analytics(), hiddenOutput()],
   base: '/',
   build: {
     rollupOptions: {
@@ -47,11 +65,11 @@ export default defineConfig({
         // Chính sách bảo mật dạng trang độc lập (dùng làm link Privacy Policy trong cấu hình Google OAuth)
         privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
         // Trang ẩn, không có trong menu: truy cập trực tiếp tại /zzz
-        zzz: resolve(__dirname, 'zzz/index.html'),
+        zzz: resolve(__dirname, 'hidden/zzz/index.html'),
         // Trang ẩn định giá chứng quyền, không dịch, không có trong menu: truy cập tại /cq.html
-        cq: resolve(__dirname, 'cq.html'),
+        cq: resolve(__dirname, 'hidden/cq.html'),
         // Trang ẩn liệt kê các chức năng ẩn (zzz, cq...): truy cập tại /ls
-        ls: resolve(__dirname, 'ls/index.html'),
+        ls: resolve(__dirname, 'hidden/ls/index.html'),
         // Trang khách xem thực đơn khi quét mã QR (dữ liệu nằm sau dấu #)
         menu: resolve(__dirname, 'm/index.html'),
         ...toolPages,

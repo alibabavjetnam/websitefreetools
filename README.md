@@ -96,11 +96,11 @@ Các công cụ thêm ngày 27/10/2026 nạp thêm từ CDN khi cần: Tesseract
 
 ## Trang ẩn
 
-`zzz/index.html` (truy cập tại `/zzz`) là công cụ 4v2 chuyển từ repo messenger: biểu đồ nến Binance realtime, tín hiệu 2 kênh, backtest. Trang này không có trong menu, trang chủ và được đánh dấu `noindex` để công cụ tìm kiếm không liệt kê.
+`hidden/zzz/index.html` (truy cập tại `/zzz`) là công cụ 4v2 chuyển từ repo messenger: biểu đồ nến Binance realtime, tín hiệu 2 kênh, backtest. Trang này không có trong menu, trang chủ và được đánh dấu `noindex` để công cụ tìm kiếm không liệt kê.
 
-`cq.html` (truy cập tại `/cq.html`) là trang ẩn định giá chứng quyền: dán HTML bảng giá iBoard để tính định giá và tỷ lệ lợi nhuận. Một file độc lập, không dịch, `noindex`, không có trong menu, sitemap và không gắn Google Analytics.
+`hidden/cq.html` (truy cập tại `/cq.html`) là trang ẩn định giá chứng quyền: dán HTML bảng giá iBoard để tính định giá và tỷ lệ lợi nhuận. Một file độc lập, không dịch, `noindex`, không có trong menu, sitemap và không gắn Google Analytics.
 
-`ls/index.html` (truy cập tại `/ls`) liệt kê link các chức năng ẩn (zzz, cq...). Cũng ẩn: `noindex`, không có trong menu, sitemap, không gắn Google Analytics. Thêm chức năng ẩn mới thì thêm một dòng vào trang này.
+`hidden/ls/index.html` (truy cập tại `/ls`) liệt kê link các chức năng ẩn (zzz, cq...). Cũng ẩn: `noindex`, không có trong menu, sitemap, không gắn Google Analytics. Thêm chức năng ẩn mới thì thêm một dòng vào trang này.
 
 ## Chạy trên máy
 
