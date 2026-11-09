@@ -41,6 +41,7 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Công cụ tin học | Làm rối mã JavaScript (obfuscator) | `tools/js-obfuscate.html` |
 | Công cụ tin học | Khoá RSA + mã hoá/giải mã văn bản (AES + RSA lai) | `tools/rsa-keys.html` |
 | Công cụ tin học | Soạn văn bản thành HTML | `tools/text-to-html.html` |
+| Công cụ tin học | Desktop online (quản lý file, Notepad, xem ảnh/PDF, máy tính, lịch, thùng rác; file lưu vào Google Drive) | `tools/web-desktop.html` |
 | Tài chính & tính toán | Lương Gross ↔ Net (quy định 2026 trong `src/calc/salary.ts`) | `tools/salary.html` |
 | Tiếp thị | Tạo mã QR | `tools/qr-code.html` |
 | Tiếp thị | Tạo link UTM | `tools/utm.html` |

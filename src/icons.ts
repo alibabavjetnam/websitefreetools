@@ -157,6 +157,7 @@ const PATHS: Record<string, string> = {
   // hình tròn và tam giác lồng nhau
   'logo-maker': '<circle cx="9" cy="9" r="5.5"/><path d="M15 9.5l6 10.5H9z"/>',
   // cuốn sổ có dòng kẻ
+  'web-desktop': '<rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/><rect x="6" y="7" width="6" height="4" rx=".6"/><path d="M3 14.5h18" opacity=".5"/>',
   notepad: '<rect x="4.5" y="3" width="15" height="18" rx="2"/><path d="M8 3v18" opacity=".5"/><path d="M11 8h5.5M11 12h5.5M11 16h3.5"/>',
 };
 

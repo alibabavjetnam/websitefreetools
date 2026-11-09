@@ -86,6 +86,7 @@ export const TOOLS: ToolInfo[] = [
   tool('js-obfuscate', 'dev', 'Làm rối mã JavaScript', 'Mã hoá chuỗi, đổi tên biến, che giấu mã JavaScript để khó đọc, khó sao chép (JavaScript Obfuscator).'),
   tool('rsa-keys', 'dev', 'Khoá RSA & mã hoá', 'Tạo cặp khoá RSA (PEM), mã hoá văn bản bằng khoá công khai và giải mã bằng khoá bí mật ngay trên máy.'),
   tool('text-to-html', 'dev', 'Soạn văn bản thành HTML', 'Soạn thảo trực quan có in đậm, tiêu đề, danh sách, bảng, liên kết và lấy mã HTML sạch.'),
+  tool('web-desktop', 'dev', 'Desktop online', 'Màn hình máy tính ngay trên trình duyệt: quản lý file, Notepad, xem ảnh, PDF, máy tính, lịch, thùng rác. File lưu vào Google Drive của bạn.'),
 
   // Kinh doanh online
   tool('inventory', 'business', 'Tồn kho & tính giá bán', 'Tính giá bán theo phí sàn, quảng cáo, biên lợi nhuận. Quản lý nhập xuất tồn, cảnh báo sắp hết hàng.'),

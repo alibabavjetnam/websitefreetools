@@ -16,7 +16,8 @@ async function findByTag(tag: string, mime: string): Promise<DriveFile | null> {
 }
 
 let folderPromise: Promise<string> | null = null;
-function ensureFolder(): Promise<string> {
+/** Thư mục "WFTools" trong Drive của người dùng (tạo nếu chưa có); dùng chung cho mọi công cụ */
+export function ensureFolder(): Promise<string> {
   folderPromise ??= (async () => {
     const found = await findByTag('folder', FOLDER_MIME);
     if (found) return found.id;
