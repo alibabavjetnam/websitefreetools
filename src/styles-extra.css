@@ -1110,7 +1110,7 @@ textarea:focus-visible {
 .xq-pc.hid .sh { fill: #2a1808; opacity: .28; filter: url(#xqSoftS); }
 .xq-pc.hid .edge { fill: #b9803f; }
 .xq-pc.hid .face { fill: url(#xqBack); stroke: #b17a3c; stroke-width: 1; }
-.xq-pc.hid .xq-ring { stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 1 4.2; opacity: 1; }
+.xq-pc.hid .xq-ring { stroke-width: 0.9; stroke-linecap: round; stroke-dasharray: 0.5 2.6; opacity: 1; }
 .xq-pc.hid.red .xq-ring { stroke: #8b0000; }
 .xq-pc.hid.blk .xq-ring { stroke: #0b2a5b; }
 .xq-pc.hid .dome-sh { fill: #7a4a18; opacity: .3; }
