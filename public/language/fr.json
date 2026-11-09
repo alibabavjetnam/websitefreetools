@@ -281,7 +281,7 @@
     "lib.online.saving": "Enregistrement de la partie dans Google Drive…",
     "lib.online.saveFail": "La partie n'a pas encore pu être enregistrée dans Drive.",
     "lib.online.save": "Enregistrer la partie dans Google Drive",
-    "lib.game.darkNote": "Xiangqi caché (Cờ úp) : les deux Généraux commencent face visible, toutes les autres pièces sont mélangées et posées face cachée. Une pièce cachée se déplace comme la pièce qui commence normalement sur sa case (sur la case d'un Char, elle se déplace comme un Char), puis elle est retournée et se déplace ensuite comme sa vraie pièce. Les Conseillers et les Éléphants peuvent aller partout sur l'échiquier. Être mat ou n'avoir plus aucun coup fait perdre.",
+    "lib.game.darkNote": "Xiangqi caché : les deux Généraux commencent face visible, toutes les autres pièces sont mélangées et posées face cachée. Une pièce cachée se déplace comme la pièce qui commence normalement sur sa case (sur la case d'un Char, elle se déplace comme un Char), puis elle est retournée et se déplace ensuite comme sa vraie pièce. Les Conseillers et les Éléphants peuvent aller partout sur l'échiquier. Être mat ou n'avoir plus aucun coup fait perdre.",
     "lib.game.darkBoard": "Échiquier de Xiangqi caché",
     "lib.online.red": "Rouge",
     "lib.online.black": "Noir",
@@ -739,7 +739,7 @@
       "desc": "Un bureau d'ordinateur dans votre navigateur : gestionnaire de fichiers, Notepad, visionneuse d'images et de PDF, calculatrice, calendrier et corbeille. Les fichiers sont enregistrés dans votre Google Drive."
     },
     "co-up": {
-      "name": "Xiangqi caché (Cờ úp)",
+      "name": "Xiangqi caché",
       "desc": "Jouez au Xiangqi caché vietnamien : les pièces commencent face cachée et se retournent après leur premier coup. Contre l'ordinateur sur 10 niveaux ou en ligne avec des amis ou de nouveaux adversaires."
     }
   },

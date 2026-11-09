@@ -281,7 +281,7 @@
     "lib.online.saving": "Zapisywanie partii na Google Drive…",
     "lib.online.saveFail": "Nie udało się jeszcze zapisać partii na Drive.",
     "lib.online.save": "Zapisz partię na Google Drive",
-    "lib.game.darkNote": "Xiangqi zakryte (Cờ úp): obaj generałowie stoją odkryci, pozostałe figury są tasowane i ustawiane zakryte. Zakryta figura rusza się jak figura, która normalnie zaczyna na jej polu (na polu rydwanu jak rydwan), potem zostaje odkryta i od tej pory rusza się jak jej prawdziwa figura. Doradcy i słonie mogą chodzić po całej planszy. Mat albo brak ruchu oznacza przegraną.",
+    "lib.game.darkNote": "Xiangqi zakryte: obaj generałowie stoją odkryci, pozostałe figury są tasowane i ustawiane zakryte. Zakryta figura rusza się jak figura, która normalnie zaczyna na jej polu (na polu rydwanu jak rydwan), potem zostaje odkryta i od tej pory rusza się jak jej prawdziwa figura. Doradcy i słonie mogą chodzić po całej planszy. Mat albo brak ruchu oznacza przegraną.",
     "lib.game.darkBoard": "Plansza zakrytego Xiangqi",
     "lib.online.red": "Czerwone",
     "lib.online.black": "Czarne",
@@ -739,7 +739,7 @@
       "desc": "Pulpit komputera w przeglądarce: menedżer plików, Notepad, przeglądarka obrazów i PDF, kalkulator, kalendarz i kosz. Pliki są zapisywane na Twoim Dysku Google."
     },
     "co-up": {
-      "name": "Zakryte Xiangqi (Cờ úp)",
+      "name": "Zakryte Xiangqi",
       "desc": "Zagraj w wietnamskie zakryte Xiangqi: figury zaczynają zakryte i odsłaniają się po pierwszym ruchu. Z komputerem na 10 poziomach albo online ze znajomymi i nowymi przeciwnikami."
     }
   },

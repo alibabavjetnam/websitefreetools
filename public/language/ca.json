@@ -283,7 +283,7 @@
     "lib.online.saving": "S'està desant la partida a Google Drive…",
     "lib.online.saveFail": "Encara no s'ha pogut desar la partida a Drive.",
     "lib.online.save": "Desa la partida a Google Drive",
-    "lib.game.darkNote": "Xiangqi ocult (Cờ úp): els dos generals comencen descoberts, la resta de peces es barregen i es col·loquen cap per avall. Una peça oculta es mou com la peça que normalment comença a la seva casella (a la casella d'un carro es mou com un carro), després es gira i a partir d'aleshores es mou com la seva peça real. Els consellers i els elefants poden anar per tot el tauler. Escac i mat o quedar-se sense jugades vol dir perdre.",
+    "lib.game.darkNote": "Xiangqi ocult: els dos generals comencen descoberts, la resta de peces es barregen i es col·loquen cap per avall. Una peça oculta es mou com la peça que normalment comença a la seva casella (a la casella d'un carro es mou com un carro), després es gira i a partir d'aleshores es mou com la seva peça real. Els consellers i els elefants poden anar per tot el tauler. Escac i mat o quedar-se sense jugades vol dir perdre.",
     "lib.game.darkBoard": "Tauler de Xiangqi ocult",
     "lib.online.red": "Vermelles",
     "lib.online.black": "Negres",
@@ -739,7 +739,7 @@
       "desc": "Un escriptori d'ordinador al navegador: gestor de fitxers, Notepad, visor d'imatges i PDF, calculadora, calendari i paperera. Els fitxers es desen al teu Google Drive."
     },
     "co-up": {
-      "name": "Xiangqi ocult (Cờ úp)",
+      "name": "Xiangqi ocult",
       "desc": "Juga al Xiangqi ocult vietnamita: les peces comencen cap per avall i es giren després de la primera jugada. Contra l'ordinador en 10 nivells o en línia amb amics i rivals nous."
     }
   },
