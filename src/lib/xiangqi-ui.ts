@@ -7,7 +7,7 @@ import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import { Position, xiangqiAiMove } from '../calc/xiangqi';
 import { DarkPosition, darkAiMove, randomDeal, validDeal } from '../calc/xiangqi-dark';
-import { clearBanner, gameShell, modeTabs, progressOf, renderLevelBar, showBanner, type GameMode } from './game-ui';
+import { clearBanner, fullscreenButton, gameShell, modeTabs, progressOf, renderLevelBar, showBanner, type GameMode } from './game-ui';
 import { OnlineRoom, resultText, type Color, type OnlineResult } from './online';
 
 const CELL = 60, PAD = 40;
@@ -337,6 +337,7 @@ export function mountXiangqi(id: string, variant: 'classic' | 'dark' = 'classic'
   });
   $('#xq-new').addEventListener('click', () => startAi(level));
 
+  fullscreenButton();
   const tabs = modeTabs(setMode);
   if (tabs.initial === 'online') setMode('online');
   else startAi(level);

@@ -6,7 +6,7 @@
 import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import { BLACK, GO_LEVELS, WHITE, areaScore, candidateMoves, goAiMove, play } from '../calc/go';
-import { clearBanner, gameShell, modeTabs, progressOf, renderLevelBar, showBanner, type GameMode } from './game-ui';
+import { clearBanner, fullscreenButton, gameShell, modeTabs, progressOf, renderLevelBar, showBanner, type GameMode } from './game-ui';
 import { OnlineRoom, resultText, type Color, type OnlineResult } from './online';
 
 const CELL = 60, PAD = 40;
@@ -299,6 +299,7 @@ export function mountGo(id: string): void {
   $('#go-resign').addEventListener('click', () => { if (mode === 'ai' && !over) finishAi(true); });
   $('#go-new').addEventListener('click', () => startAi(level));
 
+  fullscreenButton();
   const tabs = modeTabs(setMode);
   if (tabs.initial === 'online') setMode('online');
   else startAi(level);

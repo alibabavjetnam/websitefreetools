@@ -6,7 +6,7 @@
 import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import { Position, chessAiMove, type Move } from '../calc/chess';
-import { clearBanner, gameShell, modeTabs, progressOf, renderLevelBar, showBanner, type GameMode } from './game-ui';
+import { clearBanner, fullscreenButton, gameShell, modeTabs, progressOf, renderLevelBar, showBanner, type GameMode } from './game-ui';
 import { OnlineRoom, resultText, type Color, type OnlineResult } from './online';
 
 const GLYPH = ['', '♟', '♞', '♝', '♜', '♛', '♚'];
@@ -236,6 +236,7 @@ export function mountChess(id: string): void {
   });
   $('#ch-new').addEventListener('click', () => startAi(level));
 
+  fullscreenButton();
   const tabs = modeTabs(setMode);
   if (tabs.initial === 'online') setMode('online');
   else startAi(level);

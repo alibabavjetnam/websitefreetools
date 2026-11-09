@@ -1107,9 +1107,9 @@ textarea:focus-visible {
 .xq-pc.check .face { stroke: #e11d48; stroke-width: 3.5; }
 @media (prefers-reduced-motion: no-preference) { .xq-pc { transition: transform .12s ease; } }
 /* Cờ úp: mặt lưng đỏ sẫm / xanh đậm, núm tròn nổi giữa, vòng chấm, bóng đổ nhẹ sang phía đông */
-.xq-pc.hid .sh { fill: #2a1808; opacity: .28; filter: url(#xqSoftS); }
-.xq-pc.hid .edge { fill: #b9803f; }
-.xq-pc.hid .face { fill: #f2c98a; stroke: #b17a3c; stroke-width: 1; }
+.xq-pc.hid .sh { fill: #2a1808; opacity: .22; filter: url(#xqSoftS); }
+.xq-pc.hid .edge { fill: #d3a467; }
+.xq-pc.hid .face { fill: #fbe3b6; stroke: #c99a5c; stroke-width: 1; }
 .xq-pc.hid .xq-ring { stroke-width: 0.9; stroke-linecap: round; stroke-dasharray: 0.5 2.6; opacity: 1; }
 .xq-pc.hid.red .xq-ring { stroke: #8b0000; }
 .xq-pc.hid.blk .xq-ring { stroke: #0b2a5b; }
@@ -1393,3 +1393,14 @@ html.wd-noscroll, html.wd-noscroll body { overflow: hidden; }
 .on-saved { color: #15803d; }
 .on-privacy { font-size: 12.5px; }
 .game-side .btn-danger, .on-panel .btn-danger { background: #b42318; border-color: #b42318; color: #fff; }
+
+/* Nút toàn màn hình của các game cờ */
+.game-status .game-fs { margin-inline-start: auto; display: inline-grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); color: inherit; cursor: pointer; flex: none; }
+.game-status .game-fs:hover, .game-status .game-fs:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+.game-wrap:fullscreen, .game-wrap.is-pseudo-full { background: var(--paper, #f4f6f9); padding: 16px 20px; margin: 0; overflow: auto; }
+.game-wrap.is-pseudo-full { position: fixed; inset: 0; z-index: 2147483000; }
+.game-wrap:fullscreen .xq-board, .game-wrap.is-pseudo-full .xq-board { width: min(100%, calc((100vh - 240px) * 0.9)); margin-inline: auto; }
+.game-wrap:fullscreen .go-board, .game-wrap.is-pseudo-full .go-board { width: min(100%, calc(100vh - 240px)); margin-inline: auto; }
+.game-wrap:fullscreen .chess-board, .game-wrap.is-pseudo-full .chess-board { width: min(100%, calc(100vh - 240px)); margin-inline: auto; }
+.game-wrap:fullscreen .game-main, .game-wrap.is-pseudo-full .game-main { grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); }
+@media (max-width: 760px) { .game-wrap:fullscreen .game-main, .game-wrap.is-pseudo-full .game-main { grid-template-columns: minmax(0, 1fr); } }

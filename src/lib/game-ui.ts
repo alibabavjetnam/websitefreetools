@@ -101,3 +101,51 @@ export function modeTabs(onChange: (m: GameMode) => void): { el: HTMLElement; in
   set(initial);
   return { el, initial, set };
 }
+
+/**
+ * Nút toàn màn hình ở góc phải dòng trạng thái của game cờ: phóng cả vùng game (bàn + bảng bên cạnh).
+ * Trình duyệt không cho (iPhone) thì phủ kín cửa sổ trình duyệt; Esc để thoát.
+ */
+export function fullscreenButton(): void {
+  const wrap = document.querySelector<HTMLElement>('.game-wrap');
+  const bar = document.querySelector<HTMLElement>('.game-status');
+  if (!wrap || !bar) return;
+  const ENTER = '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>';
+  const EXIT = '<path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/>';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'game-fs';
+  bar.appendChild(btn);
+  const doc = document as Document & { webkitFullscreenElement?: Element | null; webkitExitFullscreen?: () => void };
+  const el = wrap as HTMLElement & { webkitRequestFullscreen?: () => void };
+  const isOn = (): boolean => wrap.classList.contains('is-pseudo-full') || (doc.fullscreenElement ?? doc.webkitFullscreenElement) === wrap;
+  const paint = (): void => {
+    const on = isOn();
+    const label = on ? t('lib.game.exitFullscreen', 'Thoát toàn màn hình') : t('lib.game.fullscreen', 'Toàn màn hình');
+    btn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${on ? EXIT : ENTER}</svg>`;
+    btn.title = label;
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('aria-pressed', String(on));
+    document.documentElement.classList.toggle('wd-noscroll', wrap.classList.contains('is-pseudo-full'));
+  };
+  const pseudo = (on: boolean): void => {
+    wrap.classList.toggle('is-pseudo-full', on);
+    paint();
+  };
+  btn.addEventListener('click', () => {
+    if (wrap.classList.contains('is-pseudo-full')) return pseudo(false);
+    if (doc.fullscreenElement ?? doc.webkitFullscreenElement) {
+      if (doc.exitFullscreen) void doc.exitFullscreen().catch(() => undefined);
+      else doc.webkitExitFullscreen?.();
+    } else if (el.requestFullscreen && document.fullscreenEnabled !== false) {
+      el.requestFullscreen().catch(() => pseudo(true));
+    } else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+    else pseudo(true);
+  });
+  document.addEventListener('fullscreenchange', paint);
+  document.addEventListener('webkitfullscreenchange', paint);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && wrap.classList.contains('is-pseudo-full')) pseudo(false);
+  });
+  paint();
+}

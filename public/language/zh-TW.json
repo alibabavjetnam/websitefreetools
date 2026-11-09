@@ -232,7 +232,9 @@
     "lib.game.mmQuestion": "第 {i}/{n} 題",
     "lib.game.mmDone": "完成！",
     "lib.game.mmLost": "生命用盡 — 現在顯示所有方塊。",
-    "lib.game.mmNote": "按下開始：方塊會顯示 {s} 秒後隱藏。記住每個方塊的形狀與顏色，再選出與所示形狀相符的方塊。錯誤超過 {l} 次則該關失敗。"
+    "lib.game.mmNote": "按下開始：方塊會顯示 {s} 秒後隱藏。記住每個方塊的形狀與顏色，再選出與所示形狀相符的方塊。錯誤超過 {l} 次則該關失敗。",
+    "lib.game.fullscreen": "全螢幕",
+    "lib.game.exitFullscreen": "結束全螢幕"
   },
   "pages": {
     "home": {
