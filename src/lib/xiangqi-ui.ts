@@ -23,10 +23,8 @@ const DEFS = `<defs>
   <linearGradient id="xqWood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e2b8"/><stop offset=".55" stop-color="#efd29b"/><stop offset="1" stop-color="#e6c184"/></linearGradient>
   <radialGradient id="xqFace" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#fffdf6"/><stop offset=".62" stop-color="#f7ead0"/><stop offset="1" stop-color="#e9d2a6"/></radialGradient>
   <linearGradient id="xqEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b47a"/><stop offset="1" stop-color="#a67a43"/></linearGradient>
-  <radialGradient id="xqBackR" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#9e1f1f"/><stop offset="1" stop-color="#6a0d0d"/></radialGradient>
-  <radialGradient id="xqDomeR" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#c2433b"/><stop offset=".55" stop-color="#951b1b"/><stop offset="1" stop-color="#6e0f0f"/></radialGradient>
-  <radialGradient id="xqBackB" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#1f4470"/><stop offset="1" stop-color="#0f2744"/></radialGradient>
-  <radialGradient id="xqDomeB" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#3d6a9e"/><stop offset=".55" stop-color="#1d4273"/><stop offset="1" stop-color="#112b4d"/></radialGradient>
+  <radialGradient id="xqBack" cx=".45" cy=".4" r=".72"><stop offset="0" stop-color="#f9d9a4"/><stop offset=".7" stop-color="#efbf7c"/><stop offset="1" stop-color="#dfa560"/></radialGradient>
+  <radialGradient id="xqDome" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#ffe7bf"/><stop offset=".55" stop-color="#f3c98c"/><stop offset="1" stop-color="#d9a05c"/></radialGradient>
   <filter id="xqSoftS" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.3"/></filter>
   <linearGradient id="xqGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
   <filter id="xqSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2"/></filter>

@@ -1108,17 +1108,16 @@ textarea:focus-visible {
 @media (prefers-reduced-motion: no-preference) { .xq-pc { transition: transform .12s ease; } }
 /* Cờ úp: mặt lưng đỏ sẫm / xanh đậm, núm tròn nổi giữa, vòng chấm, bóng đổ nhẹ sang phía đông */
 .xq-pc.hid .sh { fill: #2a1808; opacity: .28; filter: url(#xqSoftS); }
-.xq-pc.hid.red .edge { fill: #4a0808; }
-.xq-pc.hid.blk .edge { fill: #0a1a2e; }
-.xq-pc.hid.red .face { fill: url(#xqBackR); stroke: #4a0808; stroke-width: 1; }
-.xq-pc.hid.blk .face { fill: url(#xqBackB); stroke: #0a1a2e; stroke-width: 1; }
-.xq-pc.hid .xq-ring { stroke: #f3dfb6; stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 1 4.2; opacity: .9; }
-.xq-pc.hid .dome-sh { fill: #000; opacity: .28; }
-.xq-pc.hid.red .dome { fill: url(#xqDomeR); stroke: #5a0a0a; stroke-width: .8; }
-.xq-pc.hid.blk .dome { fill: url(#xqDomeB); stroke: #0c2038; stroke-width: .8; }
+.xq-pc.hid .edge { fill: #b9803f; }
+.xq-pc.hid .face { fill: url(#xqBack); stroke: #b17a3c; stroke-width: 1; }
+.xq-pc.hid .xq-ring { stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 1 4.2; opacity: 1; }
+.xq-pc.hid.red .xq-ring { stroke: #8b0000; }
+.xq-pc.hid.blk .xq-ring { stroke: #0b2a5b; }
+.xq-pc.hid .dome-sh { fill: #7a4a18; opacity: .3; }
+.xq-pc.hid .dome { fill: url(#xqDome); stroke: #c08a4a; stroke-width: .8; }
 .xq-pc.hid .gloss { opacity: .45; }
 .xq-pc.hid.sel .face { stroke: #1d6ff2; stroke-width: 3.5; }
-.xq-pc.hid.sel .xq-ring { stroke: #fff; opacity: 1; }
+.xq-pc.hid.sel .xq-ring { opacity: 1; }
 .xq-caps { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; min-height: 30px; margin-top: 8px; font-size: 13px; color: var(--muted); }
 .xq-caps-l { margin-inline-end: 4px; }
 .xq-mini { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #fffdf6, #f3e3c2 65%, #e2c693); box-shadow: 0 2px 0 #b58a50, 0 3px 5px rgba(60, 35, 10, .3); font: 800 14px/1 'Noto Serif CJK SC', 'Songti SC', 'KaiTi', 'SimSun', serif; }
