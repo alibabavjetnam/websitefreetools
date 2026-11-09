@@ -340,7 +340,70 @@
     "lib.arcade.target": "Manufa: {n}",
     "lib.arcade.up": "Sama",
     "lib.arcade.youVsAi": "Kai {a} – Kwamfuta {b}",
-    "lib.arcade.noHintFc": "Babu sauran motsi mai amfani. Soke wasu motsi ko sake farawa."
+    "lib.arcade.noHintFc": "Babu sauran motsi mai amfani. Soke wasu motsi ko sake farawa.",
+    "lib.arcade.recycles": "Sauran sake rabawa: {n}",
+    "lib.arcade.stockLeft": "Tari: {n}",
+    "lib.arcade.wrapOn": "Sarki yana haɗuwa da Ace",
+    "lib.arcade.wrapOff": "Sarki ba ya haɗuwa da Ace",
+    "lib.arcade.hintDraw": "Babu sauran nau'i-nau'i. Danna tari don ɗaukar kati.",
+    "lib.arcade.betMax": "Mafi yawa",
+    "lib.arcade.deal": "Raba",
+    "lib.arcade.hit": "Ɗauki kati",
+    "lib.arcade.stand": "Tsaya",
+    "lib.arcade.double": "Ninka",
+    "lib.arcade.split": "Raba biyu",
+    "lib.arcade.nextHand": "Hannu na gaba",
+    "lib.arcade.note.blackjack": "Kuɗin wasa kawai — ba kuɗi na gaske ba. Kuna farawa da guntuna 500; ku kai adadin guntun da ake nema a cikin hannayen da aka yarda don ku ci matakin. Ku kusanci 21 fiye da mai raba ba tare da wuce shi ba. Mai raba yana ɗaukar kati har sai ya kai 17. Blackjack (Ace da kati mai darajar goma) yana biya fiye da haka. Ninka: kuna ninka fare ku ɗauki kati ɗaya kawai. Raba biyu: yana yiwuwa idan katinku biyu na farko suna da daraja ɗaya.",
+    "lib.arcade.dealer": "Mai raba",
+    "lib.arcade.you": "Kai",
+    "lib.arcade.bet": "Fare",
+    "lib.arcade.chips": "Guntuna: {n}",
+    "lib.arcade.handsLeft": "Hannaye {n} sun rage",
+    "lib.arcade.won": "Kun ci guntuna {n}.",
+    "lib.arcade.lost": "Kun rasa guntuna {n}.",
+    "lib.arcade.even": "Canjaras.",
+    "lib.arcade.note.videopoker": "Kuɗin wasa kawai — ba kuɗi na gaske ba. Zaɓi fare na guntu 1–5, danna Raba don samun kati biyar, danna katin da kake son riƙewa, sannan ka danna Ɗauka don musanya sauran. Biyu na Jack ko fiye yana biya. Kuna farawa da guntuna 100; ku kai adadin guntun da ake nema a cikin hannayen da aka yarda don ku ci matakin.",
+    "lib.arcade.hold": "RIƘE",
+    "lib.arcade.draw": "Ɗauka",
+    "lib.arcade.note.checkers": "Kuna wasa da Ja (a ƙasa) kuma kuna fara motsi. Dutse yana motsawa fili ɗaya a kaikaice zuwa gaba a kan fili mara kowa. Idan za ku iya tsallake dutsen abokin hamayya, dole ne ku yi haka, kuma kuna iya ci gaba da tsallakewa don kama duwatsu da yawa. Dutsen da ya kai layi na ƙarshe ya zama sarki, yana iya motsawa da kamawa baya ma. Kuna rashin nasara idan ba ku da duwatsu ko motsi na halal.",
+    "lib.arcade.ckDraw": "Wasan ya yi canjaras.",
+    "lib.arcade.ckWin": "Baƙi ba shi da motsi na halal — kun ci nasara.",
+    "lib.arcade.ckLose": "Ba ku da motsi na halal — kun fadi.",
+    "lib.arcade.ckMust": "Dole ne ku kama idan za ku iya — zaɓi ɗaya daga cikin duwatsun da ke walƙiya.",
+    "lib.arcade.note.oanquan": "Wasan gargajiya na Vietnam. Jere na ƙasa naku ne, na sama na kwamfuta ne, ƙarshen biyu kuma filayen Mandarin ne. Danna ɗaya daga cikin filayenku sannan ku zaɓi hanya: duk duwatsun da ke ciki ana ɗauka a shuka su ɗaya-ɗaya a kowane fili. Bayan shuka, idan filin na gaba yana da duwatsu, ku ɗauke su ku ci gaba da shuka; idan filin na gaba babu komai kuma wanda ke bayansa yana da duwatsu ko Mandarin, kun kama shi (kuma kuna ci gaba da kamawa idan fili mara komai ya biyo bayan fili cike). Kuna tsayawa a filin Mandarin ko bayan filaye marasa komai guda biyu a jere. Mandarin yana da maki 10, dutse maki 1. Idan gefenku ya ƙare da duwatsu, ana sake shuka maki 5 na waɗanda kuka kama. Wasan yana ƙarewa idan an kama Mandarin biyu; wanda ya fi maki yana nasara.",
+    "lib.arcade.oqWin": "Wasa ya ƙare — kuna da maki fiye.",
+    "lib.arcade.oqLose": "Wasa ya ƙare — kwamfuta tana da maki fiye.",
+    "lib.arcade.oqDraw": "Wasa ya ƙare — canjaras.",
+    "lib.arcade.oqPick": "Zaɓi hanya: ◀ ko ▶.",
+    "lib.arcade.roll": "Jefa dice",
+    "lib.arcade.note.ludo": "Kuna wasa da Ja; kwamfuta tana wasa da sauran launuka. Jefa dice: kuna buƙatar 6 don fitar da dutse daga gida, kuma 6 yana ba ku sake jefawa (6 uku a jere yana ɓata juyinku). Duwatsu suna zagaya allo a hanyar agogo, sannan su juya zuwa hanyar gida ta launinsu; kuna buƙatar lamba daidai don kai ƙarshe a tsakiya. Sauka daidai kan dutsen abokin hamayya yana mayar da shi gida (sai a filayen tauraro da filayen farawa). Wanda ya fara kai duwatsunsa 4 gida shi ne mai nasara.",
+    "lib.arcade.pickToken": "Zaɓi dutse da za a motsa.",
+    "lib.arcade.turnOf": "Juyin {c}…",
+    "lib.arcade.ldWin": "Duwatsunku 4 duka sun isa gida!",
+    "lib.arcade.ldLose": "{c} ya isa gida da farko.",
+    "lib.arcade.threeSix": "6 uku a jere — kun rasa juyinku.",
+    "lib.arcade.noMove": "Babu dutse da zai iya motsawa.",
+    "lib.arcade.note.pyramid": "Cire dukkan katin 28 na dala. Danna katin kyauta biyu (waɗanda babu wani kati da ya rufe) da jimillarsu ta kai 13 (A=1, J=11, Q=12) don cire duka biyun; ana cire Sarki shi kaɗai da danna ɗaya. Hakanan kuna iya amfani da katin saman tarin jefarwa. Danna tari don ɗaukar kati; adadin sau da za a sake amfani da tarin jefarwa yana da iyaka.",
+    "lib.arcade.note.tripeaks": "Cire dukkan katin 28 na kololuwa uku. Danna katin kyauta wanda ya fi na bayyane a tarin jefarwa daraja ɗaya ko ya ragu da daraja ɗaya daidai (kowane iri) don saukar da shi. Idan motsi ya ƙare, danna tari don ɗaukar kati. A matakai masu sauƙi, Sarki yana haɗuwa da Ace.",
+    "lib.arcade.note.golf": "Cire dukkan ginshiƙai. Za a iya danna katin ƙasa na kowane ginshiƙi kawai: dole ya fi na bayyane daraja ɗaya ko ya ragu da daraja ɗaya daidai. Idan motsi ya ƙare, danna tari don ɗaukar kati. A matakai masu sauƙi, Sarki yana haɗuwa da Ace.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Huɗu iri ɗaya",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Uku iri ɗaya",
+    "lib.arcade.ph.twopair": "Biyu-biyu",
+    "lib.arcade.ph.jacks": "Jack ko fiye",
+    "lib.arcade.ph.none": "Babu komai",
+    "lib.arcade.res.win": "Nasara",
+    "lib.arcade.res.lose": "Faɗuwa",
+    "lib.arcade.res.push": "Canjaras",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Ja",
+    "lib.arcade.cGreen": "Kore",
+    "lib.arcade.cYellow": "Rawaya",
+    "lib.arcade.cBlue": "Shuɗi"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Mai fasa bulo",
       "desc": "Jagoranci allo kuma ka sa ƙwallo ta yi tsalle don fasa kowane bulo; matakai 10 masu tsari daban-daban, da linzami, taɓawa ko maɓallai."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Cire dalar kati 28 ta hanyar haɗa katin da jimillarsu ta kai 13; matakai 10 tare da raguwar sake rabawa."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Cire kololuwa uku ta hanyar haɗa katin da suka bambanta da daraja ɗaya; matakai 10 daga sauƙi zuwa wahala."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Cire ginshiƙai ta hanyar haɗa katin da suka bambanta da daraja ɗaya daga katin da ake gani; matakai 10 tare da ƙarin ginshiƙai yayin ci gaba."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Yi wasan blackjack da mai raba da guntuna na zahiri: ku kusanci 21 ba tare da wuce shi ba; ninka da raba biyu; matakai 10 tare da manufofin guntu masu ƙaruwa."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker na kati biyar na musanya da guntuna na zahiri (Jack ko fiye); matakai 10 tare da teburan biyan kuɗi masu tsauri."
+    },
+    "checkers": {
+      "name": "Dara",
+      "desc": "Yi wasan dara 8x8 da kwamfuta: kamawa dole, tsallake-tsallake da sarakuna; matakai 10 daga sauƙi zuwa wahala."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Wasan gudu mai launuka huɗu: jefa dice ku kai duwatsunku 4 gida da farko; yi wasa da 'yan wasan kwamfuta 1 zuwa 3 a matakai 10."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Wasan gargajiya na Vietnam na shuka duwatsu: shuka duwatsu ku kama Mandarin da kwamfuta; matakai 10 daga sauƙi zuwa wahala."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Doel: {n}",
     "lib.arcade.up": "Omhoog",
     "lib.arcade.youVsAi": "Jij {a} – Computer {b}",
-    "lib.arcade.noHintFc": "Geen zinvolle zet meer. Maak een paar zetten ongedaan of begin opnieuw."
+    "lib.arcade.noHintFc": "Geen zinvolle zet meer. Maak een paar zetten ongedaan of begin opnieuw.",
+    "lib.arcade.recycles": "Herdelingen over: {n}",
+    "lib.arcade.stockLeft": "Voorraad: {n}",
+    "lib.arcade.wrapOn": "Heer sluit aan op aas",
+    "lib.arcade.wrapOff": "Heer sluit niet aan op aas",
+    "lib.arcade.hintDraw": "Geen paren meer. Klik op de voorraad om te trekken.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Delen",
+    "lib.arcade.hit": "Kaart",
+    "lib.arcade.stand": "Blijven",
+    "lib.arcade.double": "Verdubbelen",
+    "lib.arcade.split": "Splitsen",
+    "lib.arcade.nextHand": "Volgende hand",
+    "lib.arcade.note.blackjack": "Alleen met speelgeld — geen echt geld. Je begint met 500 fiches; haal het doelaantal fiches binnen het toegestane aantal handen om het level te halen. Kom dichter bij 21 dan de deler zonder erover te gaan. De deler trekt tot 17. Een blackjack (een aas plus een kaart met waarde tien) betaalt extra. Verdubbelen: verdubbel je inzet en neem precies één kaart extra. Splitsen: mogelijk als je eerste twee kaarten dezelfde waarde hebben.",
+    "lib.arcade.dealer": "Deler",
+    "lib.arcade.you": "Jij",
+    "lib.arcade.bet": "Inzet",
+    "lib.arcade.chips": "Fiches: {n}",
+    "lib.arcade.handsLeft": "Nog {n} handen",
+    "lib.arcade.won": "Je hebt {n} fiches gewonnen.",
+    "lib.arcade.lost": "Je hebt {n} fiches verloren.",
+    "lib.arcade.even": "Gelijkspel.",
+    "lib.arcade.note.videopoker": "Alleen met speelgeld — geen echt geld. Kies een inzet van 1–5 fiches, druk op Delen voor vijf kaarten, klik op de kaarten die je wilt houden en druk dan op Trekken om de rest te vervangen. Een paar boeren of beter wordt uitbetaald. Je begint met 100 fiches; haal het doelaantal fiches binnen het toegestane aantal handen om het level te halen.",
+    "lib.arcade.hold": "HOUDEN",
+    "lib.arcade.draw": "Trekken",
+    "lib.arcade.note.checkers": "Jij speelt rood (onder) en begint. Een schijf gaat één vakje diagonaal vooruit naar een leeg vakje. Als je over een tegenstander kunt springen, moet dat, en je mag doorspringen om meer stukken te slaan. Een schijf die de overkant bereikt wordt dam en mag ook achteruit lopen en slaan. Je verliest als je geen schijven of geen zetten meer hebt.",
+    "lib.arcade.ckDraw": "Het spel is remise.",
+    "lib.arcade.ckWin": "Zwart heeft geen zetten meer — jij wint.",
+    "lib.arcade.ckLose": "Jij hebt geen zetten meer — je verliest.",
+    "lib.arcade.ckMust": "Je moet slaan als het kan — kies een van de pulserende schijven.",
+    "lib.arcade.note.oanquan": "Een traditioneel Vietnamees spel. De onderste rij is van jou, de bovenste van de computer, en de twee uiteinden zijn de Mandarijnvakken. Klik op een van je vakken en kies een richting: alle stenen erin worden opgepakt en één per vakje uitgezaaid. Als het volgende vakje na het zaaien stenen bevat, pak je ze op en zaai je verder; is het volgende vakje leeg en bevat het daarop volgende stenen of een Mandarijn, dan sla je dat (en je blijft slaan als op een leeg vakje weer een gevuld volgt). Stop bij een Mandarijnvak of na twee lege vakken achter elkaar. Een Mandarijn is 10 punten waard, een steen 1. Heb je geen stenen meer, dan worden 5 van je gewonnen punten teruggezaaid. Het spel eindigt als beide Mandarijnen geslagen zijn; de hoogste score wint.",
+    "lib.arcade.oqWin": "Einde spel — jij hebt meer punten.",
+    "lib.arcade.oqLose": "Einde spel — de computer heeft meer punten.",
+    "lib.arcade.oqDraw": "Einde spel — gelijkspel.",
+    "lib.arcade.oqPick": "Kies een richting: ◀ of ▶.",
+    "lib.arcade.roll": "Gooi de dobbelsteen",
+    "lib.arcade.note.ludo": "Jij speelt rood; de andere kleuren worden door de computer gespeeld. Gooi de dobbelsteen: je hebt een 6 nodig om een pion uit het huis te halen, en een 6 geeft nog een worp (drie keer 6 achter elkaar kost je de beurt). Pionnen gaan met de klok mee over het bord en slaan dan af naar de thuiskolom van hun kleur; je hebt het exacte aantal nodig om het eindvak in het midden te bereiken. Precies op een pion van een tegenstander landen stuurt die terug naar zijn huis (behalve op sterrenvakken en startvakken). Wie als eerste alle 4 pionnen thuis heeft, wint.",
+    "lib.arcade.pickToken": "Kies een pion om te verzetten.",
+    "lib.arcade.turnOf": "{c} is aan de beurt…",
+    "lib.arcade.ldWin": "Al je 4 pionnen zijn thuis!",
+    "lib.arcade.ldLose": "{c} was als eerste thuis.",
+    "lib.arcade.threeSix": "Drie keer 6 achter elkaar — je beurt vervalt.",
+    "lib.arcade.noMove": "Geen enkele pion kan bewegen.",
+    "lib.arcade.note.pyramid": "Ruim alle 28 kaarten van de piramide op. Klik op twee vrije kaarten (die door geen enkele kaart bedekt worden) die samen 13 zijn (A=1, B=11, V=12) om ze te verwijderen; een Heer verdwijnt alleen met één klik. De bovenste kaart van de aflegstapel mag ook. Klik op de voorraad om te trekken; je mag de aflegstapel maar een beperkt aantal keer opnieuw gebruiken.",
+    "lib.arcade.note.tripeaks": "Ruim alle 28 kaarten van de drie pieken op. Klik op een vrije kaart die precies één waarde hoger of lager is dan de zichtbare kaart op de aflegstapel (elke kleur) om hem naar beneden te spelen. Zit je vast, klik dan op de voorraad om te trekken. Op de makkelijkere levels sluit Heer aan op Aas.",
+    "lib.arcade.note.golf": "Ruim alle kolommen op. Alleen de onderste kaart van elke kolom kan worden aangeklikt: die moet precies één waarde hoger of lager zijn dan de zichtbare kaart. Zit je vast, klik dan op de voorraad om te trekken. Op de makkelijkere levels sluit Heer aan op Aas.",
+    "lib.arcade.ph.royal": "Koninklijke straight flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Carré",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straat",
+    "lib.arcade.ph.trips": "Drie gelijke",
+    "lib.arcade.ph.twopair": "Twee paar",
+    "lib.arcade.ph.jacks": "Paar boeren of beter",
+    "lib.arcade.ph.none": "Niets",
+    "lib.arcade.res.win": "Winst",
+    "lib.arcade.res.lose": "Verlies",
+    "lib.arcade.res.push": "Gelijk",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rood",
+    "lib.arcade.cGreen": "Groen",
+    "lib.arcade.cYellow": "Geel",
+    "lib.arcade.cBlue": "Blauw"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Stenen breken",
       "desc": "Stuur het batje en kaats de bal om alle stenen te breken; 10 levels met verschillende patronen, met muis, aanraking of toetsen."
+    },
+    "pyramid": {
+      "name": "Pyramidepatience",
+      "desc": "Ruim de piramide van 28 kaarten op door kaarten te koppelen die samen 13 zijn; 10 levels met steeds minder herdelingen."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-patience",
+      "desc": "Ruim drie pieken op door kaarten te koppelen die één waarde verschillen; 10 levels van makkelijk tot moeilijk."
+    },
+    "golf": {
+      "name": "Golfpatience",
+      "desc": "Ruim de kolommen op door kaarten te koppelen die één waarde verschillen van de zichtbare kaart; 10 levels met steeds meer kolommen."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Speel blackjack tegen de deler met virtuele fiches: kom het dichtst bij 21 zonder erover te gaan; verdubbel en splits; 10 levels met stijgende fichedoelen."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Vijfkaarten-drawpoker met virtuele fiches (paar boeren of beter); 10 levels met steeds krappere uitbetalingstabellen."
+    },
+    "checkers": {
+      "name": "Dammen",
+      "desc": "Speel dammen op 8x8 tegen de computer: slagdwang, meervoudig slaan en dammen; 10 levels van makkelijk tot moeilijk."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Racespel in vier kleuren: gooi de dobbelsteen en breng als eerste je 4 pionnen thuis; speel tegen 1 tot 3 computerspelers over 10 levels."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Een traditioneel Vietnamees zaaispel: zaai stenen en sla de Mandarijnen tegen de computer; 10 levels van makkelijk tot moeilijk."
     }
   },
   "s": {

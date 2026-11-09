@@ -340,7 +340,70 @@
     "lib.arcade.target": "Sasaran: {n}",
     "lib.arcade.up": "Atas",
     "lib.arcade.youVsAi": "Anda {a} – Komputer {b}",
-    "lib.arcade.noHintFc": "Tiada langkah berguna lagi. Buat asal beberapa langkah atau mula semula."
+    "lib.arcade.noHintFc": "Tiada langkah berguna lagi. Buat asal beberapa langkah atau mula semula.",
+    "lib.arcade.recycles": "Agihan semula berbaki: {n}",
+    "lib.arcade.stockLeft": "Longgokan: {n}",
+    "lib.arcade.wrapOn": "K bersambung ke A",
+    "lib.arcade.wrapOff": "K tidak bersambung ke A",
+    "lib.arcade.hintDraw": "Tiada pasangan lagi. Klik longgokan untuk mengambil kad.",
+    "lib.arcade.betMax": "Maks",
+    "lib.arcade.deal": "Agih",
+    "lib.arcade.hit": "Ambil kad",
+    "lib.arcade.stand": "Berhenti",
+    "lib.arcade.double": "Gandakan",
+    "lib.arcade.split": "Pisah",
+    "lib.arcade.nextHand": "Tangan seterusnya",
+    "lib.arcade.note.blackjack": "Wang main sahaja, bukan wang sebenar. Anda bermula dengan 500 cip; capai sasaran cip dalam bilangan tangan yang dibenarkan untuk melepasi tahap. Dapatkan jumlah yang lebih hampir kepada 21 daripada peniaga tanpa melebihinya. Peniaga mengambil kad sehingga mencapai 17. Blackjack (satu As dan satu kad bernilai sepuluh) membayar lebih. Gandakan: gandakan pertaruhan dan ambil tepat satu kad lagi. Pisah: boleh dilakukan apabila dua kad pertama anda sama nilai.",
+    "lib.arcade.dealer": "Peniaga",
+    "lib.arcade.you": "Anda",
+    "lib.arcade.bet": "Pertaruhan",
+    "lib.arcade.chips": "Cip: {n}",
+    "lib.arcade.handsLeft": "Tinggal {n} tangan",
+    "lib.arcade.won": "Anda menang {n} cip.",
+    "lib.arcade.lost": "Anda kalah {n} cip.",
+    "lib.arcade.even": "Seri.",
+    "lib.arcade.note.videopoker": "Wang main sahaja, bukan wang sebenar. Pilih pertaruhan 1–5 cip, tekan Agih untuk mendapat lima kad, klik kad yang mahu disimpan, kemudian tekan Tukar untuk menggantikan yang lain. Sepasang Jack atau lebih baik akan dibayar. Anda bermula dengan 100 cip; capai sasaran cip dalam bilangan tangan yang dibenarkan untuk melepasi tahap.",
+    "lib.arcade.hold": "SIMPAN",
+    "lib.arcade.draw": "Tukar",
+    "lib.arcade.note.checkers": "Anda bermain merah (di bawah) dan bergerak dahulu. Sekeping buah bergerak satu petak serong ke hadapan ke petak kosong. Jika anda boleh melompat melepasi buah lawan, anda wajib melompat, dan boleh terus melompat untuk menangkap beberapa buah. Buah yang sampai ke baris paling jauh dimahkotakan menjadi raja dan boleh bergerak serta menangkap ke belakang juga. Anda kalah apabila tiada lagi buah atau langkah yang sah.",
+    "lib.arcade.ckDraw": "Permainan berakhir seri.",
+    "lib.arcade.ckWin": "Hitam tiada langkah yang sah — anda menang.",
+    "lib.arcade.ckLose": "Anda tiada langkah yang sah — anda kalah.",
+    "lib.arcade.ckMust": "Anda wajib menangkap apabila boleh — pilih salah satu buah yang berdenyut.",
+    "lib.arcade.note.oanquan": "Permainan tradisional Vietnam. Baris bawah milik anda, baris atas milik komputer, dan kedua-dua hujung ialah petak Mandarin. Klik salah satu petak anda, kemudian pilih arah: semua batu di dalamnya diambil dan disemai satu demi satu pada setiap petak. Selepas menyemai, jika petak seterusnya ada batu, ambil dan teruskan menyemai; jika petak seterusnya kosong dan petak selepasnya ada batu atau Mandarin, anda menangkapnya (dan terus menangkap jika selepas satu lagi petak kosong ada petak berbatu). Berhenti pada petak Mandarin atau selepas dua petak kosong berturut-turut. Satu Mandarin bernilai 10 mata, satu batu 1 mata. Jika bahagian anda kehabisan batu, 5 mata tangkapan anda disemai semula. Permainan tamat apabila kedua-dua Mandarin ditangkap; markah lebih tinggi menang.",
+    "lib.arcade.oqWin": "Permainan tamat — anda mendapat lebih banyak mata.",
+    "lib.arcade.oqLose": "Permainan tamat — komputer mendapat lebih banyak mata.",
+    "lib.arcade.oqDraw": "Permainan tamat — seri.",
+    "lib.arcade.oqPick": "Pilih arah: ◀ atau ▶.",
+    "lib.arcade.roll": "Baling dadu",
+    "lib.arcade.note.ludo": "Anda bermain merah; warna lain dimainkan oleh komputer. Baling dadu: anda perlukan nombor 6 untuk mengeluarkan buah dari kandang, dan nombor 6 memberi anda satu lagi balingan (tiga nombor 6 berturut-turut menyebabkan anda hilang giliran). Buah bergerak ikut arah jam mengelilingi papan, kemudian masuk ke lorong rumah mengikut warnanya; anda perlukan nombor tepat untuk sampai ke penamat di tengah. Mendarat tepat pada buah lawan menghantarnya pulang ke kandang (kecuali pada petak bintang dan petak permulaan). Pemain pertama yang membawa pulang kesemua 4 buah menang.",
+    "lib.arcade.pickToken": "Pilih sebiji buah untuk digerakkan.",
+    "lib.arcade.turnOf": "Giliran {c}…",
+    "lib.arcade.ldWin": "Kesemua 4 buah anda sudah sampai ke rumah!",
+    "lib.arcade.ldLose": "{c} sampai ke rumah dahulu.",
+    "lib.arcade.threeSix": "Tiga nombor 6 berturut-turut — anda hilang giliran.",
+    "lib.arcade.noMove": "Tiada buah yang boleh bergerak.",
+    "lib.arcade.note.pyramid": "Kosongkan kesemua 28 kad piramid. Klik dua kad bebas (tidak ditindih kad lain) yang jumlahnya 13 (A=1, J=11, Q=12) untuk mengalihkan kedua-duanya; Raja dialihkan sendiri dengan satu klik. Kad teratas longgokan buangan juga boleh digunakan. Klik longgokan untuk mengambil kad; bilangan kali anda boleh mengitar semula longgokan buangan adalah terhad.",
+    "lib.arcade.note.tripeaks": "Kosongkan kesemua 28 kad tiga puncak. Klik kad bebas yang tepat satu pangkat lebih tinggi atau lebih rendah daripada kad yang kelihatan pada longgokan buangan (apa-apa jenis) untuk menurunkannya. Apabila tiada langkah lagi, klik longgokan untuk mengambil kad. Pada tahap yang lebih mudah, K bersambung ke As.",
+    "lib.arcade.note.golf": "Kosongkan semua lajur. Hanya kad paling bawah setiap lajur boleh diklik: ia mestilah tepat satu pangkat lebih tinggi atau lebih rendah daripada kad yang kelihatan. Apabila tiada langkah lagi, klik longgokan untuk mengambil kad. Pada tahap yang lebih mudah, K bersambung ke As.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Empat sejenis",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Tiga sejenis",
+    "lib.arcade.ph.twopair": "Dua pasang",
+    "lib.arcade.ph.jacks": "Jack atau lebih baik",
+    "lib.arcade.ph.none": "Tiada",
+    "lib.arcade.res.win": "Menang",
+    "lib.arcade.res.lose": "Kalah",
+    "lib.arcade.res.push": "Seri",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Merah",
+    "lib.arcade.cGreen": "Hijau",
+    "lib.arcade.cYellow": "Kuning",
+    "lib.arcade.cBlue": "Biru"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Pemecah Bata",
       "desc": "Kawal pemukul dan lantunkan bola untuk memecahkan semua bata; 10 peringkat dengan susunan berbeza, guna tetikus, sentuhan atau kekunci."
+    },
+    "pyramid": {
+      "name": "Solitaire Piramid",
+      "desc": "Kosongkan piramid 28 kad dengan memadankan kad yang jumlahnya 13; 10 tahap dengan agihan semula yang semakin sedikit."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Kosongkan tiga puncak dengan menyambung kad yang berbeza satu pangkat; 10 tahap daripada mudah hingga sukar."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Kosongkan lajur dengan menyambung kad yang berbeza satu pangkat daripada kad yang kelihatan; 10 tahap dengan lebih banyak lajur apabila meningkat."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Main blackjack menentang peniaga dengan cip maya: dapatkan jumlah paling hampir 21 tanpa melebihinya; gandakan dan pisah; 10 tahap dengan sasaran cip yang meningkat."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker tarik lima kad dengan cip maya (Jack atau lebih baik); 10 tahap dengan jadual bayaran yang semakin ketat."
+    },
+    "checkers": {
+      "name": "Dam",
+      "desc": "Main dam 8x8 menentang komputer: tangkapan wajib, lompatan berganda dan raja; 10 tahap daripada mudah hingga sukar."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Permainan perlumbaan empat warna: baling dadu dan bawa pulang 4 buah anda dahulu; main menentang 1 hingga 3 pemain komputer dalam 10 tahap."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Permainan menyemai batu tradisional Vietnam: semai batu dan tangkap Mandarin menentang komputer; 10 tahap daripada mudah hingga sukar."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Udagan: {n}",
     "lib.arcade.up": "Luhur",
     "lib.arcade.youVsAi": "Anjeun {a} – Komputer {b}",
-    "lib.arcade.noHintFc": "Teu aya léngkah nu mangpaat deui. Bolaykeun sababaraha léngkah atawa mimitian deui."
+    "lib.arcade.noHintFc": "Teu aya léngkah nu mangpaat deui. Bolaykeun sababaraha léngkah atawa mimitian deui.",
+    "lib.arcade.recycles": "Sésa ngacak deui: {n}",
+    "lib.arcade.stockLeft": "Tumpukan: {n}",
+    "lib.arcade.wrapOn": "K nyambung ka A",
+    "lib.arcade.wrapOff": "K teu nyambung ka A",
+    "lib.arcade.hintDraw": "Teu aya pasangan deui. Pencét tumpukan pikeun nyokot kartu.",
+    "lib.arcade.betMax": "Maks",
+    "lib.arcade.deal": "Bagikeun",
+    "lib.arcade.hit": "Candak kartu",
+    "lib.arcade.stand": "Cukup",
+    "lib.arcade.double": "Dua kali",
+    "lib.arcade.split": "Pisahkeun",
+    "lib.arcade.nextHand": "Leungeun saterusna",
+    "lib.arcade.note.blackjack": "Duit kaulinan wungkul — lain duit nyata. Anjeun mimitian ku 500 cip; capai target cip dina jumlah leungeun nu diidinan pikeun lulus tingkat. Deukeutan 21 leuwih ti bandar tanpa leuwih. Bandar nyokot kartu nepi ka 17. Blackjack (hiji as jeung kartu nilai sapuluh) mayar leuwih. Dua kali: taruhan dilipetkeun dua jeung nyokot persis hiji kartu deui. Pisahkeun: bisa lamun dua kartu mimiti nilaina sarua.",
+    "lib.arcade.dealer": "Bandar",
+    "lib.arcade.you": "Anjeun",
+    "lib.arcade.bet": "Taruhan",
+    "lib.arcade.chips": "Cip: {n}",
+    "lib.arcade.handsLeft": "Sésa {n} leungeun",
+    "lib.arcade.won": "Anjeun meunang {n} cip.",
+    "lib.arcade.lost": "Anjeun kalah {n} cip.",
+    "lib.arcade.even": "Sérié.",
+    "lib.arcade.note.videopoker": "Duit kaulinan wungkul — lain duit nyata. Pilih taruhan 1–5 cip, pencét Bagikeun pikeun meunang lima kartu, klik kartu nu hayang dicekel, tuluy pencét Gantian pikeun ngagantian sésana. Sapasang jack atawa leuwih alus dibayar. Anjeun mimitian ku 100 cip; capai target cip dina jumlah leungeun nu diidinan pikeun lulus tingkat.",
+    "lib.arcade.hold": "CEKEL",
+    "lib.arcade.draw": "Gantian",
+    "lib.arcade.note.checkers": "Anjeun maénkeun beureum (handap) jeung leumpang heula. Hiji bidak leumpang sakotak sacara diagonal ka hareup ka kotak kosong. Lamun bisa luncat ngaliwatan bidak lawan, kudu luncat, jeung bisa terus luncat pikeun nyokot sababaraha bidak. Bidak nu nepi ka baris pamungkas jadi raja jeung bisa leumpang sarta nyokot ka tukang ogé. Anjeun éléh lamun teu aya bidak atawa léngkah nu sah.",
+    "lib.arcade.ckDraw": "Kaulinan réngsé sérié.",
+    "lib.arcade.ckWin": "Hideung teu boga léngkah nu sah — anjeun meunang.",
+    "lib.arcade.ckLose": "Anjeun teu boga léngkah nu sah — anjeun éléh.",
+    "lib.arcade.ckMust": "Kudu nyokot lamun bisa — pilih salah sahiji bidak nu kedip-kedip.",
+    "lib.arcade.note.oanquan": "Kaulinan tradisional Vietnam. Baris handap kagungan anjeun, baris luhur kagungan komputer, jeung dua tungtung nyaéta kotak Mandarin. Klik salah sahiji kotak anjeun, tuluy pilih arah: sakabéh batu di jerona dicokot jeung disebar hiji-hiji unggal kotak. Sanggeus nyebar, lamun kotak saterusna aya batuna, cokot jeung terus nyebar; lamun kotak saterusna kosong jeung nu satungtung eta aya batu atawa Mandarin, anjeun nyokot éta (jeung terus nyokot lamun sanggeus kotak kosong séjén aya kotak nu aya batuna). Eureun di kotak Mandarin atawa sanggeus dua kotak kosong sarimbit. Hiji Mandarin hargana 10 poin, hiji batu 1. Lamun sisi anjeun béak batu, 5 poin nu geus dicokot disebar deui. Kaulinan réngsé lamun dua Mandarin geus dicokot; nu poinna leuwih loba meunang.",
+    "lib.arcade.oqWin": "Kaulinan réngsé — poin anjeun leuwih loba.",
+    "lib.arcade.oqLose": "Kaulinan réngsé — poin komputer leuwih loba.",
+    "lib.arcade.oqDraw": "Kaulinan réngsé — sérié.",
+    "lib.arcade.oqPick": "Pilih arah: ◀ atawa ▶.",
+    "lib.arcade.roll": "Lémparkeun dadu",
+    "lib.arcade.note.ludo": "Anjeun maénkeun beureum; warna séjén dimaénkeun ku komputer. Lémparkeun dadu: butuh 6 pikeun ngaluarkeun bidak ti imah, jeung 6 méré lémparan deui (tilu 6 berturut-turut leungit giliran). Bidak ngurilingan papan nurutkeun arah jarum jam, tuluy bélok kana jalur imah warna maranéhna; butuh angka persis pikeun nepi ka tungtung di tengah. Lamun ragrag persis dina bidak lawan, bidak éta mulang ka imahna (iwal dina kotak béntang jeung kotak mimiti). Nu mimiti mawa 4 bidakna ka imah meunang.",
+    "lib.arcade.pickToken": "Pilih bidak pikeun digerakkeun.",
+    "lib.arcade.turnOf": "Giliran {c}…",
+    "lib.arcade.ldWin": "Sakabéh 4 bidak anjeun geus nepi ka imah!",
+    "lib.arcade.ldLose": "{c} nepi ka imah heula.",
+    "lib.arcade.threeSix": "Tilu 6 berturut-turut — giliran anjeun leungit.",
+    "lib.arcade.noMove": "Euweuh bidak nu bisa digerakkeun.",
+    "lib.arcade.note.pyramid": "Bersihkeun sakabéh 28 kartu piramida. Klik dua kartu bébas (teu katutupan kartu séjén) nu jumlahna 13 (A=1, J=11, Q=12) pikeun miceun duanana; Raja dibuang sorangan ku sakali klik. Kartu paling luhur tumpukan buangan ogé bisa dipaké. Klik tumpukan pikeun nyokot kartu; sabaraha kali tumpukan buangan bisa didaur ulang diwatesan.",
+    "lib.arcade.note.tripeaks": "Bersihkeun sakabéh 28 kartu tilu puncak. Klik kartu bébas nu persis hiji tingkat leuwih luhur atawa leuwih handap tibatan kartu nu katémbong dina tumpukan buangan (sagala jenis) pikeun mindahkeunana ka handap. Lamun teu aya léngkah, klik tumpukan pikeun nyokot kartu. Dina tingkat nu gampang, K nyambung ka A.",
+    "lib.arcade.note.golf": "Bersihkeun sakabéh kolom. Ngan kartu panghandapna unggal kolom nu bisa diklik: kudu persis hiji tingkat leuwih luhur atawa leuwih handap tibatan kartu nu katémbong. Lamun teu aya léngkah, klik tumpukan pikeun nyokot kartu. Dina tingkat nu gampang, K nyambung ka A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Opat sarupa",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Tilu sarupa",
+    "lib.arcade.ph.twopair": "Dua pasang",
+    "lib.arcade.ph.jacks": "Jack atawa leuwih alus",
+    "lib.arcade.ph.none": "Euweuh",
+    "lib.arcade.res.win": "Meunang",
+    "lib.arcade.res.lose": "Éléh",
+    "lib.arcade.res.push": "Sérié",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Beureum",
+    "lib.arcade.cGreen": "Héjo",
+    "lib.arcade.cYellow": "Konéng",
+    "lib.arcade.cBlue": "Biru"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Pangrempak Bata",
       "desc": "Arahkeun papan pantul sarta mantulkeun bal pikeun ngarempak sakabéh bata; 10 tahap kalawan susunan béda, maké beurit, toél atawa tombol."
+    },
+    "pyramid": {
+      "name": "Solitaire Piramida",
+      "desc": "Bersihkeun piramida 28 kartu ku cara masangkeun kartu nu jumlahna 13; 10 tingkat kalayan ngacak deui nu beuki saeutik."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Bersihkeun tilu puncak ku cara nyambungkeun kartu nu bédana hiji tingkat; 10 tingkat tina gampang nepi ka hésé."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Bersihkeun kolom ku cara nyambungkeun kartu nu bédana hiji tingkat tina kartu nu katémbong; 10 tingkat kalayan kolom beuki loba."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Maénkeun blackjack ngalawan bandar maké cip virtual: deukeutan 21 tanpa leuwih; dua kali jeung pisahkeun; 10 tingkat kalayan target cip nu beuki luhur."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker lima kartu maké cip virtual (jack atawa leuwih alus); 10 tingkat kalayan tabél bayaran nu beuki ketat."
+    },
+    "checkers": {
+      "name": "Dam",
+      "desc": "Maénkeun dam 8x8 ngalawan komputer: nyokot wajib, luncat sababaraha kali jeung raja; 10 tingkat tina gampang nepi ka hésé."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Kaulinan balap opat warna: lémparkeun dadu jeung bawa 4 bidak anjeun ka imah heula; maén ngalawan 1 nepi ka 3 pamaén komputer dina 10 tingkat."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Kaulinan tradisional Vietnam nyebar batu: sebar batu jeung cokot Mandarin ngalawan komputer; 10 tingkat tina gampang nepi ka hésé."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Cilj: {n}",
     "lib.arcade.up": "Gor",
     "lib.arcade.youVsAi": "Vi {a} – Računalnik {b}",
-    "lib.arcade.noHintFc": "Ni več koristnih potez. Razveljavite nekaj potez ali začnite znova."
+    "lib.arcade.noHintFc": "Ni več koristnih potez. Razveljavite nekaj potez ali začnite znova.",
+    "lib.arcade.recycles": "Preostala deljenja: {n}",
+    "lib.arcade.stockLeft": "Kup: {n}",
+    "lib.arcade.wrapOn": "Kralj se nadaljuje na asa",
+    "lib.arcade.wrapOff": "Kralj se ne nadaljuje na asa",
+    "lib.arcade.hintDraw": "Ni več parov. Kliknite kup, da potegnete karto.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Deli",
+    "lib.arcade.hit": "Še eno",
+    "lib.arcade.stand": "Dovolj",
+    "lib.arcade.double": "Podvoji",
+    "lib.arcade.split": "Razdeli",
+    "lib.arcade.nextHand": "Naslednja roka",
+    "lib.arcade.note.blackjack": "Samo igralni denar — brez pravega denarja. Začnete s 500 žetoni; za dokončanje stopnje dosezite ciljno število žetonov v dovoljenem številu rok. Bodite bliže 21 kot delivec, a ga ne presezite. Delivec vleče karte do 17. Blackjack (as in karta z vrednostjo deset) izplača več. Podvoji: podvojite stavo in dobite natanko eno karto več. Razdeli: na voljo, ko imata prvi dve karti enako vrednost.",
+    "lib.arcade.dealer": "Delivec",
+    "lib.arcade.you": "Vi",
+    "lib.arcade.bet": "Stava",
+    "lib.arcade.chips": "Žetoni: {n}",
+    "lib.arcade.handsLeft": "Preostalo rok: {n}",
+    "lib.arcade.won": "Zmagali ste {n} žetonov.",
+    "lib.arcade.lost": "Izgubili ste {n} žetonov.",
+    "lib.arcade.even": "Neodločeno.",
+    "lib.arcade.note.videopoker": "Samo igralni denar — brez pravega denarja. Izberite stavo od 1 do 5 žetonov, pritisnite Deli, da dobite pet kart, kliknite karte, ki jih želite obdržati, nato pritisnite Zamenjaj, da zamenjate ostale. Par fantov ali boljše se izplača. Začnete s 100 žetoni; za dokončanje stopnje dosezite ciljno število žetonov v dovoljenem številu rok.",
+    "lib.arcade.hold": "OBDRŽI",
+    "lib.arcade.draw": "Zamenjaj",
+    "lib.arcade.note.checkers": "Igrate z rdečimi (spodaj) in ste prvi na potezi. Figura se premakne za eno polje diagonalno naprej na prazno polje. Če lahko preskočite nasprotnikovo figuro, morate, in lahko skačete naprej ter ujamete več figur. Figura, ki doseže zadnjo vrsto, postane kralj in se lahko premika in jemlje tudi nazaj. Izgubite, ko nimate več figur ali dovoljenih potez.",
+    "lib.arcade.ckDraw": "Igra je neodločena.",
+    "lib.arcade.ckWin": "Črni nima dovoljenih potez — zmagali ste.",
+    "lib.arcade.ckLose": "Nimate dovoljenih potez — izgubili ste.",
+    "lib.arcade.ckMust": "Če lahko jemljete, morate — izberite eno od utripajočih figur.",
+    "lib.arcade.note.oanquan": "Tradicionalna vietnamska igra. Spodnja vrsta je vaša, zgornja računalnikova, skrajni polji pa sta mandarinski. Kliknite eno od svojih polj in izberite smer: vsi kamenčki v njem se poberejo in razdelijo po enega na polje. Po razdelitvi, če so na naslednjem polju kamenčki, jih poberite in nadaljujte; če je naslednje polje prazno in so na tistem za njim kamenčki ali mandarin, jih osvojite (in nadaljujete, če po praznem polju spet sledi polno). Ustavite se na mandarinskem polju ali po dveh praznih poljih zapored. Mandarin je vreden 10 točk, kamenček 1. Če vaši strani zmanjka kamenčkov, se 5 osvojenih točk vrne na ploščo. Igra se konča, ko sta oba mandarina osvojena; zmaga tisti z več točkami.",
+    "lib.arcade.oqWin": "Konec igre — imate več točk.",
+    "lib.arcade.oqLose": "Konec igre — računalnik ima več točk.",
+    "lib.arcade.oqDraw": "Konec igre — neodločeno.",
+    "lib.arcade.oqPick": "Izberite smer: ◀ ali ▶.",
+    "lib.arcade.roll": "Vrzi kocko",
+    "lib.arcade.note.ludo": "Igrate z rdečo; ostale barve igra računalnik. Mečite kocko: za izhod žetona iz hišice potrebujete 6, šestica pa prinese še en met (tri šestice zapored pomenijo izgubljeno potezo). Žetoni krožijo po plošči v smeri urinega kazalca, nato zavijejo na domačo stezo svoje barve; za cilj v sredini potrebujete natančno število. Če pristanete natanko na nasprotnikovem žetonu, se ta vrne v hišico (razen na poljih z zvezdo in štartnih poljih). Zmaga prvi, ki pripelje vse 4 žetone domov.",
+    "lib.arcade.pickToken": "Izberite žeton za premik.",
+    "lib.arcade.turnOf": "Na vrsti je: {c}…",
+    "lib.arcade.ldWin": "Vsi 4 vaši žetoni so doma!",
+    "lib.arcade.ldLose": "{c} je prvi prišel domov.",
+    "lib.arcade.threeSix": "Tri šestice zapored — izgubite potezo.",
+    "lib.arcade.noMove": "Noben žeton se ne more premakniti.",
+    "lib.arcade.note.pyramid": "Odstranite vseh 28 kart piramide. Kliknite dve prosti karti (ki ju nobena karta ne pokriva) z vsoto 13 (A=1, J=11, Q=12), da odstranite obe; kralj se odstrani sam z enim klikom. Uporabite lahko tudi zgornjo karto odlagalnega kupa. Kliknite kup, da potegnete karto; število obračanj odlagalnega kupa je omejeno.",
+    "lib.arcade.note.tripeaks": "Odstranite vseh 28 kart treh vrhov. Kliknite prosto karto, ki je za natanko eno stopnjo višja ali nižja od karte na odlagalnem kupu (katera koli barva), da jo premaknete dol. Ko ni več potez, kliknite kup. Na lažjih stopnjah se kralj nadaljuje na asa.",
+    "lib.arcade.note.golf": "Odstranite vse stolpce. Kliknete lahko le spodnjo karto vsakega stolpca: biti mora za natanko eno stopnjo višja ali nižja od vidne karte. Ko ni več potez, kliknite kup. Na lažjih stopnjah se kralj nadaljuje na asa.",
+    "lib.arcade.ph.royal": "Kraljevi flush",
+    "lib.arcade.ph.sflush": "Barvna lestvica",
+    "lib.arcade.ph.quads": "Poker (štirje enaki)",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Barva (flush)",
+    "lib.arcade.ph.straight": "Lestvica",
+    "lib.arcade.ph.trips": "Tris",
+    "lib.arcade.ph.twopair": "Dva para",
+    "lib.arcade.ph.jacks": "Fant ali boljše",
+    "lib.arcade.ph.none": "Nič",
+    "lib.arcade.res.win": "Zmaga",
+    "lib.arcade.res.lose": "Poraz",
+    "lib.arcade.res.push": "Neodločeno",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rdeča",
+    "lib.arcade.cGreen": "Zelena",
+    "lib.arcade.cYellow": "Rumena",
+    "lib.arcade.cBlue": "Modra"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Razbijanje opek",
       "desc": "Upravljajte lopar in odbijajte žogico, da razbijete vse opeke; 10 stopenj z različno razporeditvijo, z miško, dotikom ali tipkami."
+    },
+    "pyramid": {
+      "name": "Piramidni pasjans",
+      "desc": "Odstranite piramido s 28 kartami s pari z vsoto 13; 10 stopenj z vedno manj deljenji."
+    },
+    "tripeaks": {
+      "name": "TriPeaks pasjans",
+      "desc": "Odstranite tri vrhove z združevanjem kart, ki se razlikujeta za eno stopnjo; 10 stopenj od lahkih do težkih."
+    },
+    "golf": {
+      "name": "Golf pasjans",
+      "desc": "Odstranite stolpce z združevanjem kart, ki se razlikujejo za eno stopnjo od vidne karte; 10 stopenj z vedno več stolpci."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Igrajte blackjack proti delivcu z navideznimi žetoni: pridite čim bližje 21, a ga ne presezite; podvojite in razdelite; 10 stopenj z naraščajočimi cilji."
+    },
+    "video-poker": {
+      "name": "Video poker",
+      "desc": "Poker s petimi kartami in zamenjavo z navideznimi žetoni (fant ali boljše); 10 stopenj z strožjimi tabelami izplačil."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Igrajte damo 8x8 proti računalniku: obvezno jemanje, večkratni skoki in kralji; 10 stopenj od lahkih do težkih."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Dirka v štirih barvah: mečite kocko in prvi pripeljite svoje 4 žetone domov; igra proti 1 do 3 računalniškim igralcem na 10 stopnjah."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Tradicionalna vietnamska igra razdeljevanja kamenčkov: razdeljujte kamenčke in osvojite mandarine proti računalniku; 10 stopenj od lahkih do težkih."
     }
   },
   "s": {

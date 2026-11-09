@@ -340,7 +340,70 @@
     "lib.arcade.target": "Eesmärk: {n}",
     "lib.arcade.up": "Üles",
     "lib.arcade.youVsAi": "Sina {a} – Arvuti {b}",
-    "lib.arcade.noHintFc": "Kasulikke käike pole enam. Võta mõni käik tagasi või alusta uuesti."
+    "lib.arcade.noHintFc": "Kasulikke käike pole enam. Võta mõni käik tagasi või alusta uuesti.",
+    "lib.arcade.recycles": "Järelejäänud ümberjagamisi: {n}",
+    "lib.arcade.stockLeft": "Pakk: {n}",
+    "lib.arcade.wrapOn": "Kuningas ühendub ässaga",
+    "lib.arcade.wrapOff": "Kuningas ei ühendu ässaga",
+    "lib.arcade.hintDraw": "Paare pole enam. Tõmbamiseks klõpsa pakil.",
+    "lib.arcade.betMax": "Maks",
+    "lib.arcade.deal": "Jaga",
+    "lib.arcade.hit": "Võta kaart",
+    "lib.arcade.stand": "Jää",
+    "lib.arcade.double": "Topelda",
+    "lib.arcade.split": "Jaga kaheks",
+    "lib.arcade.nextHand": "Järgmine käsi",
+    "lib.arcade.note.blackjack": "Ainult mängurahad, päris raha pole. Alustad 500 žetooniga; taseme läbimiseks jõua lubatud käte jooksul sihtžetoonide arvuni. Jõua 21-le lähemale kui jagaja, ületamata seda. Jagaja võtab kaarte, kuni jõuab 17-ni. Blackjack (äss pluss kümne väärtusega kaart) maksab rohkem. Topeldamine: kahekordistad panuse ja saad täpselt ühe kaardi. Kaheks jagamine: võimalik, kui kahel esimesel kaardil on sama väärtus.",
+    "lib.arcade.dealer": "Jagaja",
+    "lib.arcade.you": "Sina",
+    "lib.arcade.bet": "Panus",
+    "lib.arcade.chips": "Žetoone: {n}",
+    "lib.arcade.handsLeft": "Käsi jäänud: {n}",
+    "lib.arcade.won": "Võitsid {n} žetooni.",
+    "lib.arcade.lost": "Kaotasid {n} žetooni.",
+    "lib.arcade.even": "Viik.",
+    "lib.arcade.note.videopoker": "Ainult mängurahad, päris raha pole. Vali panus 1–5 žetooni, vajuta Jaga, et saada viis kaarti, klõpsa kaartidel, mida tahad hoida, ja vajuta Võta, et ülejäänud välja vahetada. Maksab paar poissi või parem. Alustad 100 žetooniga; taseme läbimiseks jõua lubatud käte jooksul sihtžetoonide arvuni.",
+    "lib.arcade.hold": "HOIA",
+    "lib.arcade.draw": "Võta",
+    "lib.arcade.note.checkers": "Sa mängid punasega (all) ja teed esimese käigu. Nupp liigub ühe ruudu diagonaalselt edasi tühjale ruudule. Kui saad vastase nupu üle hüpata, pead seda tegema ning võid hüpata edasi, et võtta mitu nuppu. Nupp, mis jõuab vastasreani, saab kuningaks ning võib liikuda ja võtta ka tagasi. Kaotad, kui sul pole nuppe ega lubatud käike.",
+    "lib.arcade.ckDraw": "Mäng lõppes viigiga.",
+    "lib.arcade.ckWin": "Mustal pole lubatud käike – sa võitsid.",
+    "lib.arcade.ckLose": "Sul pole lubatud käike – sa kaotasid.",
+    "lib.arcade.ckMust": "Võtmine on kohustuslik – vali üks sädelevatest nuppudest.",
+    "lib.arcade.note.oanquan": "Traditsiooniline Vietnami mäng. Alumine rida on sinu, ülemine arvuti oma ja kaks otsa on mandariiniruudud. Klõpsa ühel oma ruudul ja vali suund: kõik selle kivid võetakse üles ja külvatakse ühekaupa järgmistele ruutudele. Pärast külvamist: kui järgmisel ruudul on kive, võta need ja külva edasi; kui järgmine ruut on tühi ja sellele järgneval on kive või mandariin, võtad selle (ja jätkad võtmist, kui tühjale ruudule järgneb täis ruut). Peatud mandariiniruudul või pärast kahte tühja ruutu järjest. Mandariin on väärt 10 punkti, kivi 1. Kui sinu poolel saavad kivid otsa, külvatakse 5 sinu võetud punkti tagasi. Mäng lõpeb, kui mõlemad mandariinid on võetud; võidab suurema skooriga mängija.",
+    "lib.arcade.oqWin": "Mäng läbi – sul on rohkem punkte.",
+    "lib.arcade.oqLose": "Mäng läbi – arvutil on rohkem punkte.",
+    "lib.arcade.oqDraw": "Mäng läbi – viik.",
+    "lib.arcade.oqPick": "Vali suund: ◀ või ▶.",
+    "lib.arcade.roll": "Viska täringut",
+    "lib.arcade.note.ludo": "Sa mängid punasega, ülejäänud värve juhib arvuti. Veereta täringut: nupu kodust välja toomiseks on vaja kuut ja kuus annab uue viske (kolm kuut järjest jätavad sind käigust ilma). Nupud liiguvad ümber laua päripäeva ja pöörduvad siis oma värvi koduraja peale; keskel sihtruudule jõudmiseks on vaja täpset silmade arvu. Täpselt vastase nupule maandumine saadab selle tagasi koju (välja arvatud tärniruutudel ja stardiruutudel). Võidab see, kes toob esimesena kõik 4 nuppu koju.",
+    "lib.arcade.pickToken": "Vali nupp, mida liigutada.",
+    "lib.arcade.turnOf": "{c} käik…",
+    "lib.arcade.ldWin": "Kõik sinu 4 nuppu on kodus!",
+    "lib.arcade.ldLose": "{c} jõudis koju esimesena.",
+    "lib.arcade.threeSix": "Kolm kuut järjest – jääd käigust ilma.",
+    "lib.arcade.noMove": "Ükski nupp ei saa liikuda.",
+    "lib.arcade.note.pyramid": "Eemalda kõik püramiidi 28 kaarti. Klõpsa kahel vabal kaardil (mida ükski teine kaart ei kata), mille summa on 13 (A=1, J=11, Q=12), et eemaldada mõlemad; kuningas eemaldatakse üksi ühe klõpsuga. Kasutada saab ka äraviskepunga pealmist kaarti. Tõmbamiseks klõpsa pakil; äraviskepunga ümbertegemise kordi on piiratud.",
+    "lib.arcade.note.tripeaks": "Eemalda kõigi kolme tipu 28 kaarti. Klõpsa vabal kaardil, mis on täpselt ühe väärtuse võrra kõrgem või madalam kui äraviskepunga nähtav kaart (suvaline mast), et see alla tõsta. Kui käigud saavad otsa, klõpsa tõmbamiseks pakil. Lihtsamatel tasemetel ühendub kuningas ässaga.",
+    "lib.arcade.note.golf": "Eemalda kõik veerud. Klõpsata saab ainult iga veeru alumisel kaardil: see peab olema täpselt ühe väärtuse võrra kõrgem või madalam kui nähtav kaart. Kui käigud saavad otsa, klõpsa tõmbamiseks pakil. Lihtsamatel tasemetel ühendub kuningas ässaga.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Nelik",
+    "lib.arcade.ph.full": "Täismaja",
+    "lib.arcade.ph.flush": "Mast",
+    "lib.arcade.ph.straight": "Rida",
+    "lib.arcade.ph.trips": "Kolmik",
+    "lib.arcade.ph.twopair": "Kaks paari",
+    "lib.arcade.ph.jacks": "Poisid või parem",
+    "lib.arcade.ph.none": "Mitte midagi",
+    "lib.arcade.res.win": "Võit",
+    "lib.arcade.res.lose": "Kaotus",
+    "lib.arcade.res.push": "Viik",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Punane",
+    "lib.arcade.cGreen": "Roheline",
+    "lib.arcade.cYellow": "Kollane",
+    "lib.arcade.cBlue": "Sinine"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Tellisepurustaja",
       "desc": "Juhi reketit ja põrguta palli, et purustada kõik tellised; 10 erineva paigutusega taset, hiire, puute või klahvidega."
+    },
+    "pyramid": {
+      "name": "Püramiidpasjanss",
+      "desc": "Eemalda 28 kaardiga püramiid, ühendades kaardid, mille summa on 13; 10 taset üha vähemate ümberjagamistega."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-pasjanss",
+      "desc": "Eemalda kolm tippu, ühendades kaarte, mis erinevad ühe väärtuse võrra; 10 taset lihtsast raskeni."
+    },
+    "golf": {
+      "name": "Golfipasjanss",
+      "desc": "Eemalda veerud, ühendades kaarte, mis erinevad nähtavast kaardist ühe väärtuse võrra; 10 taset üha rohkemate veergudega."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Mängi blackjacki jagaja vastu virtuaalsete žetoonidega: jõua 21-le võimalikult lähedale ületamata; topelda ja jaga kaheks; 10 taset kasvavate žetoonisihtidega."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Viiekaardiline vahetuspoker virtuaalsete žetoonidega (poisid või parem); 10 taset karmimate väljamaksetabelitega."
+    },
+    "checkers": {
+      "name": "Kabe",
+      "desc": "Mängi 8x8 kabet arvuti vastu: kohustuslik võtmine, mitmikhüpped ja kuningad; 10 taset lihtsast raskeni."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Neljavärviline võidujooksumäng: veereta täringut ja too oma 4 nuppu esimesena koju; mängi 10 tasemel 1–3 arvutimängija vastu."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Traditsiooniline Vietnami kivide külvamise mäng: külva kive ja võta mandariine arvuti vastu; 10 taset lihtsast raskeni."
     }
   },
   "s": {

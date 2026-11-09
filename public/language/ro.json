@@ -340,7 +340,70 @@
     "lib.arcade.target": "Țintă: {n}",
     "lib.arcade.up": "Sus",
     "lib.arcade.youVsAi": "Tu {a} – Calculator {b}",
-    "lib.arcade.noHintFc": "Nu mai există mutări utile. Anulează câteva mutări sau începe din nou."
+    "lib.arcade.noHintFc": "Nu mai există mutări utile. Anulează câteva mutări sau începe din nou.",
+    "lib.arcade.recycles": "Redistribuiri rămase: {n}",
+    "lib.arcade.stockLeft": "Pachet: {n}",
+    "lib.arcade.wrapOn": "Popa se leagă de As",
+    "lib.arcade.wrapOff": "Popa nu se leagă de As",
+    "lib.arcade.hintDraw": "Nu mai sunt perechi. Apasă pe pachet ca să tragi o carte.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Împarte",
+    "lib.arcade.hit": "Cer carte",
+    "lib.arcade.stand": "Stau",
+    "lib.arcade.double": "Dublez",
+    "lib.arcade.split": "Împart",
+    "lib.arcade.nextHand": "Mâna următoare",
+    "lib.arcade.note.blackjack": "Doar bani de joacă — fără bani reali. Începi cu 500 de jetoane; ca să treci nivelul, atinge numărul țintă de jetoane în numărul de mâini permis. Apropie-te de 21 mai mult decât dealerul, fără să depășești. Dealerul trage cărți până ajunge la 17. Blackjack (un as și o carte de valoare zece) plătește mai mult. Dublare: îți dublezi miza și primești exact încă o carte. Împărțire: disponibilă când primele tale două cărți au aceeași valoare.",
+    "lib.arcade.dealer": "Dealer",
+    "lib.arcade.you": "Tu",
+    "lib.arcade.bet": "Miză",
+    "lib.arcade.chips": "Jetoane: {n}",
+    "lib.arcade.handsLeft": "{n} mâini rămase",
+    "lib.arcade.won": "Ai câștigat {n} jetoane.",
+    "lib.arcade.lost": "Ai pierdut {n} jetoane.",
+    "lib.arcade.even": "Egalitate.",
+    "lib.arcade.note.videopoker": "Doar bani de joacă — fără bani reali. Alege o miză de 1–5 jetoane, apasă Împarte ca să primești cinci cărți, apasă pe cărțile pe care vrei să le păstrezi, apoi apasă Schimbă ca să le înlocuiești pe celelalte. O pereche de valeți sau mai bună plătește. Începi cu 100 de jetoane; ca să treci nivelul, atinge numărul țintă de jetoane în numărul de mâini permis.",
+    "lib.arcade.hold": "PĂSTREAZĂ",
+    "lib.arcade.draw": "Schimbă",
+    "lib.arcade.note.checkers": "Joci cu roșu (jos) și muți primul. O piesă se mută o căsuță pe diagonală înainte, pe o căsuță liberă. Dacă poți sări peste o piesă a adversarului, ești obligat să o faci și poți continua să sari pentru a captura mai multe piese. O piesă care ajunge pe ultimul rând devine rege și poate muta și captura și înapoi. Pierzi când nu mai ai piese sau mutări permise.",
+    "lib.arcade.ckDraw": "Partida s-a încheiat la egalitate.",
+    "lib.arcade.ckWin": "Negrul nu mai are mutări permise — ai câștigat.",
+    "lib.arcade.ckLose": "Nu mai ai mutări permise — ai pierdut.",
+    "lib.arcade.ckMust": "Trebuie să capturezi când poți — alege una dintre piesele care pulsează.",
+    "lib.arcade.note.oanquan": "Un joc vietnamez tradițional. Rândul de jos e al tău, cel de sus al calculatorului, iar cele două capete sunt căsuțele Mandarin. Apasă pe una dintre căsuțele tale, apoi alege o direcție: toate pietrele din ea sunt ridicate și semănate câte una în fiecare căsuță. După semănat, dacă în căsuța următoare sunt pietre, ridică-le și continuă; dacă următoarea e goală iar cea de după are pietre sau un Mandarin, le capturezi (și continui să capturezi dacă după o căsuță goală urmează una plină). Te oprești la o căsuță Mandarin sau după două căsuțe goale la rând. Un Mandarin valorează 10 puncte, o piatră 1. Dacă partea ta rămâne fără pietre, 5 dintre punctele capturate sunt semănate înapoi. Jocul se termină când ambii Mandarini sunt capturați; câștigă cine are mai multe puncte.",
+    "lib.arcade.oqWin": "Joc încheiat — ai mai multe puncte.",
+    "lib.arcade.oqLose": "Joc încheiat — calculatorul are mai multe puncte.",
+    "lib.arcade.oqDraw": "Joc încheiat — egalitate.",
+    "lib.arcade.oqPick": "Alege o direcție: ◀ sau ▶.",
+    "lib.arcade.roll": "Aruncă zarul",
+    "lib.arcade.note.ludo": "Joci cu roșu; celelalte culori sunt jucate de calculator. Aruncă zarul: ai nevoie de 6 ca să scoți un pion din casă, iar un 6 îți dă o nouă aruncare (trei de 6 la rând îți fac pierdută tura). Pionii merg în sensul acelor de ceasornic, apoi intră pe culoarul de final al culorii lor; ai nevoie de numărul exact ca să ajungi la final, în centru. Dacă aterizezi exact pe pionul unui adversar, acesta se întoarce în casă (cu excepția căsuțelor cu stea și a celor de start). Câștigă primul jucător care aduce toți cei 4 pioni acasă.",
+    "lib.arcade.pickToken": "Alege un pion de mutat.",
+    "lib.arcade.turnOf": "Rândul lui {c}…",
+    "lib.arcade.ldWin": "Toți cei 4 pioni ai tăi sunt acasă!",
+    "lib.arcade.ldLose": "{c} a ajuns acasă primul.",
+    "lib.arcade.threeSix": "Trei de 6 la rând — pierzi tura.",
+    "lib.arcade.noMove": "Niciun pion nu se poate muta.",
+    "lib.arcade.note.pyramid": "Elimină toate cele 28 de cărți ale piramidei. Apasă pe două cărți libere (neacoperite de nicio carte) a căror sumă este 13 (A=1, J=11, Q=12) ca să le elimini pe amândouă; un Popă (K) se elimină singur dintr-o apăsare. Se poate folosi și cartea de sus din grămada de deșeuri. Apasă pe pachet ca să tragi o carte; numărul de reluări ale grămezii de deșeuri este limitat.",
+    "lib.arcade.note.tripeaks": "Elimină toate cele 28 de cărți ale celor trei piscuri. Apasă pe o carte liberă cu exact un rang mai mare sau mai mic decât cartea vizibilă din grămada de deșeuri (orice culoare) ca s-o muți jos. Când nu mai ai mutări, apasă pe pachet. La nivelurile ușoare, Popa se leagă de As.",
+    "lib.arcade.note.golf": "Elimină toate coloanele. Poate fi apăsată doar cartea de jos din fiecare coloană: trebuie să aibă exact un rang mai mare sau mai mic decât cartea vizibilă. Când nu mai ai mutări, apasă pe pachet. La nivelurile ușoare, Popa se leagă de As.",
+    "lib.arcade.ph.royal": "Roial flush",
+    "lib.arcade.ph.sflush": "Chintă culoare",
+    "lib.arcade.ph.quads": "Careu",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Culoare",
+    "lib.arcade.ph.straight": "Chintă",
+    "lib.arcade.ph.trips": "Trei de un fel",
+    "lib.arcade.ph.twopair": "Două perechi",
+    "lib.arcade.ph.jacks": "Valeți sau mai bine",
+    "lib.arcade.ph.none": "Nimic",
+    "lib.arcade.res.win": "Câștig",
+    "lib.arcade.res.lose": "Pierdere",
+    "lib.arcade.res.push": "Egalitate",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Roșu",
+    "lib.arcade.cGreen": "Verde",
+    "lib.arcade.cYellow": "Galben",
+    "lib.arcade.cBlue": "Albastru"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Spărgătorul de cărămizi",
       "desc": "Condu paleta și respinge mingea ca să spargi toate cărămizile; 10 niveluri cu aranjamente diferite, cu mouse, atingere sau taste."
+    },
+    "pyramid": {
+      "name": "Pasiența Piramida",
+      "desc": "Elimină piramida de 28 de cărți formând perechi cu suma 13; 10 niveluri cu tot mai puține redistribuiri."
+    },
+    "tripeaks": {
+      "name": "Pasiența TriPeaks",
+      "desc": "Elimină trei piscuri legând cărți la distanță de un rang; 10 niveluri de la ușor la greu."
+    },
+    "golf": {
+      "name": "Pasiența Golf",
+      "desc": "Elimină coloanele legând cărți la distanță de un rang de cartea vizibilă; 10 niveluri cu tot mai multe coloane."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Joacă blackjack împotriva dealerului cu jetoane virtuale: apropie-te cât mai mult de 21 fără să depășești; dublează și împarte; 10 niveluri cu ținte tot mai mari."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker cu cinci cărți și schimb, cu jetoane virtuale (valeți sau mai bine); 10 niveluri cu tabele de plată tot mai stricte."
+    },
+    "checkers": {
+      "name": "Dame",
+      "desc": "Joacă dame 8x8 împotriva calculatorului: capturi obligatorii, sărituri multiple și regi; 10 niveluri de la ușor la greu."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Joc de cursă în patru culori: aruncă zarul și adu primul cei 4 pioni acasă; joacă împotriva a 1–3 jucători calculator, pe 10 niveluri."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Un joc vietnamez tradițional de semănat pietre: semănă pietre și capturează Mandarinii împotriva calculatorului; 10 niveluri de la ușor la greu."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Helburua: {n}",
     "lib.arcade.up": "Gora",
     "lib.arcade.youVsAi": "Zu {a} – Ordenagailua {b}",
-    "lib.arcade.noHintFc": "Ez dago mugimendu baliagarririk. Desegin mugimendu batzuk edo hasi berriro."
+    "lib.arcade.noHintFc": "Ez dago mugimendu baliagarririk. Desegin mugimendu batzuk edo hasi berriro.",
+    "lib.arcade.recycles": "Geratzen diren banaketak: {n}",
+    "lib.arcade.stockLeft": "Multzoa: {n}",
+    "lib.arcade.wrapOn": "Erregea Asarekin lotzen da",
+    "lib.arcade.wrapOff": "Erregea ez da Asarekin lotzen",
+    "lib.arcade.hintDraw": "Ez da bikoterik geratzen. Egin klik multzoan karta hartzeko.",
+    "lib.arcade.betMax": "Gehienez",
+    "lib.arcade.deal": "Banatu",
+    "lib.arcade.hit": "Karta hartu",
+    "lib.arcade.stand": "Plantatu",
+    "lib.arcade.double": "Bikoiztu",
+    "lib.arcade.split": "Banatu bitan",
+    "lib.arcade.nextHand": "Hurrengo eskua",
+    "lib.arcade.note.blackjack": "Jolas-dirua soilik, benetako dirurik gabe. 500 fitxarekin hasten zara; maila gainditzeko, lortu helburuko fitxa kopurua baimendutako esku kopuruaren barruan. Hurbildu 21era banatzailea baino gehiago, gainditu gabe. Banatzaileak 17ra heldu arte hartzen du karta. Blackjack-ak (As bat eta hamar balioko karta bat) gehiago ordaintzen du. Bikoiztu: apustua bikoiztu eta karta bakarra gehiago jasotzen duzu. Banatu bitan: lehen bi kartek balio bera dutenean egin daiteke.",
+    "lib.arcade.dealer": "Banatzailea",
+    "lib.arcade.you": "Zu",
+    "lib.arcade.bet": "Apustua",
+    "lib.arcade.chips": "Fitxak: {n}",
+    "lib.arcade.handsLeft": "{n} esku geratzen dira",
+    "lib.arcade.won": "{n} fitxa irabazi dituzu.",
+    "lib.arcade.lost": "{n} fitxa galdu dituzu.",
+    "lib.arcade.even": "Berdinketa.",
+    "lib.arcade.note.videopoker": "Jolas-dirua soilik, benetako dirurik gabe. Aukeratu 1–5 fitxako apustua, sakatu Banatu bost karta jasotzeko, egin klik gorde nahi dituzun kartetan eta sakatu Hartu gainerakoak aldatzeko. Jota bikote batek edo hobeak ordaintzen du. 100 fitxarekin hasten zara; maila gainditzeko, lortu helburuko fitxa kopurua baimendutako esku kopuruaren barruan.",
+    "lib.arcade.hold": "GORDE",
+    "lib.arcade.draw": "Hartu",
+    "lib.arcade.note.checkers": "Gorriarekin jokatzen duzu (behean) eta zu hasten zara. Fitxa batek lauki bat egiten du diagonalean aurrera, lauki huts batera. Aurkariaren fitxa bat gainditu badezakezu, egin behar duzu, eta jauzika jarrai dezakezu fitxa bat baino gehiago hartzeko. Azken errenkadara iristen den fitxa dama bihurtzen da, eta atzera ere mugitu eta har dezake. Galtzen duzu fitxarik edo mugimendu legalik ez duzunean.",
+    "lib.arcade.ckDraw": "Partida berdinketan amaitu da.",
+    "lib.arcade.ckWin": "Beltzak ez du mugimendu legalik — irabazi duzu.",
+    "lib.arcade.ckLose": "Ez duzu mugimendu legalik — galdu duzu.",
+    "lib.arcade.ckMust": "Har behar duzu ahal duzunean — aukeratu taupadaka dauden fitxetako bat.",
+    "lib.arcade.note.oanquan": "Vietnamgo joko tradizionala. Beheko errenkada zurea da, goikoa ordenagailuarena, eta bi muturrak Mandarin laukiak dira. Egin klik zure laukietako batean eta aukeratu norabide bat: bertako harri guztiak hartu eta lauki bakoitzean bana ereiten dira. Ereitearen ondoren, hurrengo laukian harriak badaude, hartu eta jarraitu ereiten; hurrengo laukia hutsik badago eta ondoren harriak edo Mandarin bat badago, hura hartzen duzu (eta hartzen jarraitzen duzu lauki huts baten ondoren lauki beteak badatoz). Mandarin lauki batean edo lauki huts bi jarraian ondoren gelditzen zara. Mandarin batek 10 puntu balio ditu, harri batek 1. Zure aldea harririk gabe geratzen bada, hartutako zure puntuetatik 5 berriro ereiten dira. Partida bi Mandarinak hartzen direnean amaitzen da; puntu gehien dituenak irabazten du.",
+    "lib.arcade.oqWin": "Partida amaitu da — puntu gehiago dituzu.",
+    "lib.arcade.oqLose": "Partida amaitu da — ordenagailuak puntu gehiago ditu.",
+    "lib.arcade.oqDraw": "Partida amaitu da — berdinketa.",
+    "lib.arcade.oqPick": "Aukeratu norabide bat: ◀ edo ▶.",
+    "lib.arcade.roll": "Bota dadoa",
+    "lib.arcade.note.ludo": "Gorriarekin jokatzen duzu; beste koloreak ordenagailuak jokatzen ditu. Bota dadoa: 6 bat behar duzu fitxa bat etxetik ateratzeko, eta 6 batek beste jaurtiketa bat ematen dizu (hiru 6 jarraian izanez gero txanda galtzen duzu). Fitxek taula erloju-orratzen noranzkoan zeharkatzen dute, eta gero beren koloreko etxerako zutabera biratzen dute; erdiko helmugara iristeko zenbaki zehatza behar duzu. Aurkariaren fitxa baten gainean zehazki geratzen bazara, etxera itzultzen da (izar-laukietan eta hasierako laukietan izan ezik). 4 fitxak lehenik etxera eramaten dituenak irabazten du.",
+    "lib.arcade.pickToken": "Aukeratu mugitzeko fitxa bat.",
+    "lib.arcade.turnOf": "{c}(r)en txanda…",
+    "lib.arcade.ldWin": "Zure 4 fitxak etxean daude!",
+    "lib.arcade.ldLose": "{c} iritsi da etxera lehenik.",
+    "lib.arcade.threeSix": "Hiru 6 jarraian — txanda galtzen duzu.",
+    "lib.arcade.noMove": "Ez dago mugi daitekeen fitxarik.",
+    "lib.arcade.note.pyramid": "Kendu piramideko 28 kartak. Egin klik bi karta librez (beste kartaz estalita ez daudenak), batura 13 dutenak (A=1, J=11, Q=12), biak kentzeko; Errege bat bakarrik kentzen da klik batekin. Baztertutakoen multzoko goiko karta ere erabil daiteke. Egin klik multzoan karta hartzeko; baztertutakoak berrerabil daitezkeen aldi kopurua mugatua da.",
+    "lib.arcade.note.tripeaks": "Kendu hiru gailurretako 28 kartak. Egin klik karta libre batean, baztertutakoen multzoan ageri den kartaren aurretik edo ondotik zehazki maila bat duena (edozein pintu), jaisteko. Mugimendurik ez duzunean, egin klik multzoan karta hartzeko. Maila errazagoetan, Erregea Asarekin lotzen da.",
+    "lib.arcade.note.golf": "Kendu zutabe guztiak. Zutabe bakoitzeko beheko karta bakarrik egin daiteke klik: ageri den kartaren gainetik edo azpitik zehazki maila bat izan behar du. Mugimendurik ez duzunean, egin klik multzoan karta hartzeko. Maila errazagoetan, Erregea Asarekin lotzen da.",
+    "lib.arcade.ph.royal": "Eskala erreala",
+    "lib.arcade.ph.sflush": "Kolore-eskala",
+    "lib.arcade.ph.quads": "Pokerra",
+    "lib.arcade.ph.full": "Full",
+    "lib.arcade.ph.flush": "Kolorea",
+    "lib.arcade.ph.straight": "Eskala",
+    "lib.arcade.ph.trips": "Trio",
+    "lib.arcade.ph.twopair": "Bi bikote",
+    "lib.arcade.ph.jacks": "Jotak edo hobea",
+    "lib.arcade.ph.none": "Ezer ez",
+    "lib.arcade.res.win": "Irabazi",
+    "lib.arcade.res.lose": "Galdu",
+    "lib.arcade.res.push": "Berdinketa",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Gorria",
+    "lib.arcade.cGreen": "Berdea",
+    "lib.arcade.cYellow": "Horia",
+    "lib.arcade.cBlue": "Urdina"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Adreilu-apurtzailea",
       "desc": "Gidatu pala eta errebotarazi pilota adreilu guztiak apurtzeko; diseinu desberdineko 10 fase, saguarekin, ukipenarekin edo teklekin."
+    },
+    "pyramid": {
+      "name": "Piramide solitarioa",
+      "desc": "Kendu 28 kartako piramidea, batura 13 duten kartak bikotatuz; 10 maila, gero eta berrazkeinketa gutxiagorekin."
+    },
+    "tripeaks": {
+      "name": "TriPeaks solitarioa",
+      "desc": "Kendu hiru gailurrak, maila bateko aldea duten kartak lotuz; 10 maila errazetik zailera."
+    },
+    "golf": {
+      "name": "Golf solitarioa",
+      "desc": "Kendu zutabeak, ageri den kartarekin maila bateko aldea duten kartak lotuz; 10 maila, aurrera egin ahala zutabe gehiagorekin."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Jokatu blackjack banatzailearen aurka fitxa birtualekin: hurbildu 21era gainditu gabe; bikoiztu eta banatu bitan; 10 maila, fitxa-helburu gero eta handiagoekin."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Bost kartako poker aldaketarekin eta fitxa birtualekin (jotak edo hobea); 10 maila, ordainketa-taula zorrotzagoekin."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Jokatu 8x8 dama ordenagailuaren aurka: hartze derrigorrezkoa, jauzi anitzak eta damak; 10 maila errazetik zailera."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Lau koloreko lasterketa-jokoa: bota dadoa eta eraman zure 4 fitxak etxera lehenik; jokatu 1etik 3ra ordenagailu-jokalarien aurka 10 mailatan."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Vietnamgo harri-ereite joko tradizionala: erein harriak eta hartu Mandarinak ordenagailuaren aurka; 10 maila errazetik zailera."
     }
   },
   "s": {

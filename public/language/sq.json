@@ -340,7 +340,70 @@
     "lib.arcade.target": "Objektivi: {n}",
     "lib.arcade.up": "Lart",
     "lib.arcade.youVsAi": "Ti {a} – Kompjuteri {b}",
-    "lib.arcade.noHintFc": "Nuk ka më lëvizje të dobishme. Zhbëj disa lëvizje ose fillo nga e para."
+    "lib.arcade.noHintFc": "Nuk ka më lëvizje të dobishme. Zhbëj disa lëvizje ose fillo nga e para.",
+    "lib.arcade.recycles": "Përzierje të mbetura: {n}",
+    "lib.arcade.stockLeft": "Pirgu: {n}",
+    "lib.arcade.wrapOn": "K lidhet me A",
+    "lib.arcade.wrapOff": "K nuk lidhet me A",
+    "lib.arcade.hintDraw": "Nuk ka më çifte. Kliko pirgun për të tërhequr një letër.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Shpërndaj",
+    "lib.arcade.hit": "Merr letër",
+    "lib.arcade.stand": "Ndalo",
+    "lib.arcade.double": "Dyfisho",
+    "lib.arcade.split": "Ndaj",
+    "lib.arcade.nextHand": "Dora tjetër",
+    "lib.arcade.note.blackjack": "Vetëm para loje, jo para të vërteta. Fillon me 500 zhetone; arri objektivin e zhetoneve brenda numrit të lejuar të duarve për ta kaluar nivelin. Afrohu më shumë te 21 se shpërndarësi, pa e kaluar. Shpërndarësi tërheq letra deri sa të arrijë 17. Një blackjack (një as plus një letër me vlerë dhjetë) paguan më shumë. Dyfisho: dyfishon basin dhe merr saktësisht një letër tjetër. Ndaj: i disponueshëm kur dy letrat e para kanë të njëjtën vlerë.",
+    "lib.arcade.dealer": "Shpërndarësi",
+    "lib.arcade.you": "Ti",
+    "lib.arcade.bet": "Basi",
+    "lib.arcade.chips": "Zhetone: {n}",
+    "lib.arcade.handsLeft": "Kanë mbetur {n} duar",
+    "lib.arcade.won": "Fitove {n} zhetone.",
+    "lib.arcade.lost": "Humbe {n} zhetone.",
+    "lib.arcade.even": "Baraspeshë.",
+    "lib.arcade.note.videopoker": "Vetëm para loje, jo para të vërteta. Zgjidh një bast prej 1–5 zhetonesh, shtyp Shpërndaj për të marrë pesë letra, kliko letrat që do të mbash, pastaj shtyp Ndrysho për të zëvendësuar të tjerat. Një çift fantash ose më mirë paguhet. Fillon me 100 zhetone; arri objektivin e zhetoneve brenda numrit të lejuar të duarve për ta kaluar nivelin.",
+    "lib.arcade.hold": "MBAJ",
+    "lib.arcade.draw": "Ndrysho",
+    "lib.arcade.note.checkers": "Ti luan me të kuqet (poshtë) dhe lëviz i pari. Një gur lëviz një katror diagonalisht përpara në një katror bosh. Nëse mund të kapërcesh një gur të kundërshtarit, je i detyruar ta bësh, dhe mund të vazhdosh të kapërcesh për të kapur disa gurë. Një gur që arrin rreshtin e fundit kurorëzohet mbret dhe mund të lëvizë e të kapë edhe mbrapa. Humbet kur nuk ke më gurë ose lëvizje të ligjshme.",
+    "lib.arcade.ckDraw": "Loja përfundoi baras.",
+    "lib.arcade.ckWin": "Të zinjtë nuk kanë lëvizje të ligjshme — fitove.",
+    "lib.arcade.ckLose": "Nuk ke lëvizje të ligjshme — humbe.",
+    "lib.arcade.ckMust": "Duhet të kapësh kur mundesh — zgjidh një nga gurët që pulsojnë.",
+    "lib.arcade.note.oanquan": "Një lojë tradicionale vietnameze. Rreshti poshtë është yti, ai lart është i kompjuterit dhe dy skajet janë katrorët e Mandarinit. Kliko një nga katrorët e tu, pastaj zgjidh një drejtim: të gjitha gurët brenda tij merren dhe mbillen nga një në çdo katror. Pas mbjelljes, nëse katrori tjetër ka gurë, merri dhe vazhdo të mbjellësh; nëse katrori tjetër është bosh dhe ai pas tij ka gurë ose Mandarin, e kap (dhe vazhdon të kapësh nëse pas një katrori tjetër bosh vjen një me gurë). Ndalo te një katror Mandarini ose pas dy katrorëve bosh radhazi. Një Mandarin vlen 10 pikë, një gur 1. Nëse ana jote mbetet pa gurë, 5 nga pikët e kapura mbillen përsëri. Loja mbaron kur kapen të dy Mandarinët; fiton ai me më shumë pikë.",
+    "lib.arcade.oqWin": "Loja mbaroi — ke më shumë pikë.",
+    "lib.arcade.oqLose": "Loja mbaroi — kompjuteri ka më shumë pikë.",
+    "lib.arcade.oqDraw": "Loja mbaroi — baraspeshë.",
+    "lib.arcade.oqPick": "Zgjidh një drejtim: ◀ ose ▶.",
+    "lib.arcade.roll": "Hidh zarin",
+    "lib.arcade.note.ludo": "Ti luan me të kuqen; ngjyrat e tjera i luan kompjuteri. Hidh zarin: të duhet një 6 për të nxjerrë një gur nga foleja, dhe një 6 të jep një hedhje tjetër (tre 6-sha radhazi të humbasin radhën). Gurët udhëtojnë rreth tabelës në drejtim të akrepave të orës, pastaj kthehen në shtegun e shtëpisë së ngjyrës së tyre; të duhet numri i saktë për të arritur përfundimin në qendër. Nëse ul saktësisht mbi një gur të kundërshtarit, ai kthehet në folenë e tij (përveç në katrorët me yll dhe katrorët e nisjes). I pari që sjell të 4 gurët në shtëpi fiton.",
+    "lib.arcade.pickToken": "Zgjidh një gur për ta lëvizur.",
+    "lib.arcade.turnOf": "Radha e {c}…",
+    "lib.arcade.ldWin": "Të 4 gurët e tu arritën në shtëpi!",
+    "lib.arcade.ldLose": "{c} arriti i pari në shtëpi.",
+    "lib.arcade.threeSix": "Tre 6-sha radhazi — humbe radhën.",
+    "lib.arcade.noMove": "Asnjë gur nuk mund të lëvizë.",
+    "lib.arcade.note.pyramid": "Pastro të 28 letrat e piramidës. Kliko dy letra të lira (jo të mbuluara nga letër tjetër) që mblidhen 13 (A=1, J=11, Q=12) për t'i hequr të dyja; një Mbret hiqet vetëm me një klikim. Mund të përdorësh edhe letrën e sipërme të pirgut të hedhurave. Kliko pirgun për të tërhequr; numri i herëve që mund ta riciklosh pirgun e hedhurave është i kufizuar.",
+    "lib.arcade.note.tripeaks": "Pastro të 28 letrat e tri majave. Kliko një letër të lirë që është saktësisht një gradë më e lartë ose më e ulët se letra e dukshme në pirgun e hedhurave (çdo lloj) për ta ulur poshtë. Kur nuk ke lëvizje, kliko pirgun për të tërhequr. Në nivelet më të lehta, K lidhet me A.",
+    "lib.arcade.note.golf": "Pastro të gjitha kolonat. Mund të klikohet vetëm letra e poshtme e çdo kolone: duhet të jetë saktësisht një gradë më e lartë ose më e ulët se letra e dukshme. Kur nuk ke lëvizje, kliko pirgun për të tërhequr. Në nivelet më të lehta, K lidhet me A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Katër të njëjta",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Tre të njëjta",
+    "lib.arcade.ph.twopair": "Dy çifte",
+    "lib.arcade.ph.jacks": "Fantë ose më mirë",
+    "lib.arcade.ph.none": "Asgjë",
+    "lib.arcade.res.win": "Fitore",
+    "lib.arcade.res.lose": "Humbje",
+    "lib.arcade.res.push": "Baraspeshë",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "E kuqe",
+    "lib.arcade.cGreen": "E gjelbër",
+    "lib.arcade.cYellow": "E verdhë",
+    "lib.arcade.cBlue": "Blu"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Thyesi i tullave",
       "desc": "Drejto dërrasën dhe kërce topin për të thyer çdo tullë; 10 faza me rregullime të ndryshme, me mi, prekje ose taste."
+    },
+    "pyramid": {
+      "name": "Solitari Piramidë",
+      "desc": "Pastro piramidën me 28 letra duke çiftuar letra që mblidhen 13; 10 nivele me gjithnjë e më pak përzierje."
+    },
+    "tripeaks": {
+      "name": "Solitari TriPeaks",
+      "desc": "Pastro tri maja duke lidhur letra që ndryshojnë me një gradë; 10 nivele nga të lehta te të vështira."
+    },
+    "golf": {
+      "name": "Solitari Golf",
+      "desc": "Pastro kolonat duke lidhur letra që ndryshojnë me një gradë nga letra e dukshme; 10 nivele me gjithnjë e më shumë kolona."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Luaj blackjack kundër shpërndarësit me zhetone virtuale: afrohu sa më shumë te 21 pa e kaluar; dyfisho dhe ndaj; 10 nivele me objektiva zhetonesh në rritje."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker me pesë letra dhe këmbim, me zhetone virtuale (fantë ose më mirë); 10 nivele me tabela pagesash gjithnjë e më të ngushta."
+    },
+    "checkers": {
+      "name": "Damë",
+      "desc": "Luaj damë 8x8 kundër kompjuterit: kapje të detyrueshme, kapërcime të shumëfishta dhe mbretër; 10 nivele nga të lehta te të vështira."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Lojë gare me katër ngjyra: hidh zarin dhe sill i pari 4 gurët e tu në shtëpi; luaj kundër 1 deri në 3 lojtarëve të kompjuterit në 10 nivele."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Një lojë tradicionale vietnameze me mbjellje gurësh: mbill gurë dhe kap Mandarinët kundër kompjuterit; 10 nivele nga të lehta te të vështira."
     }
   },
   "s": {

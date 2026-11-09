@@ -340,7 +340,70 @@
     "lib.arcade.target": "Àfojúsùn: {n}",
     "lib.arcade.up": "Òkè",
     "lib.arcade.youVsAi": "Ìwọ {a} – Kọ̀ǹpútà {b}",
-    "lib.arcade.noHintFc": "Kò sí ìgbésẹ̀ tó wúlò mọ́. Fagilé ìgbésẹ̀ díẹ̀ tàbí bẹ̀rẹ̀ lẹ́ẹ̀kan sí i."
+    "lib.arcade.noHintFc": "Kò sí ìgbésẹ̀ tó wúlò mọ́. Fagilé ìgbésẹ̀ díẹ̀ tàbí bẹ̀rẹ̀ lẹ́ẹ̀kan sí i.",
+    "lib.arcade.recycles": "Àtúnpín tó kù: {n}",
+    "lib.arcade.stockLeft": "Àkójọpọ̀ káàdì: {n}",
+    "lib.arcade.wrapOn": "K so mọ́ A",
+    "lib.arcade.wrapOff": "K kò so mọ́ A",
+    "lib.arcade.hintDraw": "Kò sí àwọn ìpele mọ́. Tẹ àkójọpọ̀ káàdì láti fa káàdì kan.",
+    "lib.arcade.betMax": "Pọ̀jù",
+    "lib.arcade.deal": "Pín",
+    "lib.arcade.hit": "Fa káàdì",
+    "lib.arcade.stand": "Dúró",
+    "lib.arcade.double": "Ìlọ́po méjì",
+    "lib.arcade.split": "Pín sí méjì",
+    "lib.arcade.nextHand": "Ọwọ́ tó kàn",
+    "lib.arcade.note.blackjack": "Owó eré nìkan ni — kì í ṣe owó gidi. O bẹ̀rẹ̀ pẹ̀lú àwọn chip 500; láti parí ìpele, dé iye chip tí a fojú sùn láàrín iye ọwọ́ tí a gbà láàyè. Súnmọ́ 21 ju olùpín lọ láì kọjá. Olùpín ń fa káàdì títí tí yóò fi dé 17. Blackjack (káàdì ace àti káàdì oní iye mẹ́wàá) ń san ju bó ṣe yẹ lọ. Ìlọ́po méjì: ṣe ìlọ́po méjì tẹ́tẹ́ rẹ kí o sì gba káàdì kan péré sí i. Pín sí méjì: ó wà nígbà tí káàdì méjì àkọ́kọ́ rẹ bá ní iye kan náà.",
+    "lib.arcade.dealer": "Olùpín",
+    "lib.arcade.you": "Ìwọ",
+    "lib.arcade.bet": "Tẹ́tẹ́",
+    "lib.arcade.chips": "Chip: {n}",
+    "lib.arcade.handsLeft": "Ọwọ́ {n} ló kù",
+    "lib.arcade.won": "O ṣẹ́gun chip {n}.",
+    "lib.arcade.lost": "O pàdánù chip {n}.",
+    "lib.arcade.even": "Dọ́gba.",
+    "lib.arcade.note.videopoker": "Owó eré nìkan ni — kì í ṣe owó gidi. Yan tẹ́tẹ́ chip 1–5, tẹ Pín láti gba káàdì márùn-ún, tẹ àwọn káàdì tí o fẹ́ kí o pa mọ́, lẹ́yìn náà tẹ Fa káàdì láti paarọ àwọn tó kù. Ìpele jack méjì tàbí tó dára jù ń san. O bẹ̀rẹ̀ pẹ̀lú chip 100; láti parí ìpele, dé iye chip tí a fojú sùn láàrín iye ọwọ́ tí a gbà láàyè.",
+    "lib.arcade.hold": "PA MỌ́",
+    "lib.arcade.draw": "Fa káàdì",
+    "lib.arcade.note.checkers": "Pupa (ní ìsàlẹ̀) ni o ń ṣeré, ìwọ ni o sì kọ́kọ́ rìn. Ẹyọ kan ń rìn àpótí kan sí iwájú ní ìlà ọ̀kánkán sí àpótí òfìfo. Tí o bá lè fo ẹyọ alátakò kọjá, o gbọ́dọ̀ ṣe bẹ́ẹ̀, o sì lè máa fò títí láti gba ẹyọ púpọ̀. Ẹyọ tó bá dé ìlà ìkẹyìn ni a fi dé ọba, ó sì lè rìn kí ó sì gbà sẹ́yìn pẹ̀lú. O ṣẹ́gun tàbí o pàdánù nígbà tí kò bá sí ẹyọ tàbí ìrìn tó tọ́ mọ́.",
+    "lib.arcade.ckDraw": "Eré náà dọ́gba.",
+    "lib.arcade.ckWin": "Dúdú kò ní ìrìn tó tọ́ mọ́ — o borí.",
+    "lib.arcade.ckLose": "Kò sí ìrìn tó tọ́ fún ọ mọ́ — o pàdánù.",
+    "lib.arcade.ckMust": "Ó gbọ́dọ̀ gbà nígbà tí o bá lè — yan ọ̀kan nínú àwọn ẹyọ tó ń kọ mọ́lẹ̀.",
+    "lib.arcade.note.oanquan": "Eré ìbílẹ̀ Vietnam. Ìlà ìsàlẹ̀ jẹ́ tìrẹ, ìlà òkè jẹ́ ti kọ̀ǹpútà, àwọn ìpẹ̀kun méjèèjì sì ni àwọn àpótí Mandarin. Tẹ ọ̀kan nínú àwọn àpótí rẹ, lẹ́yìn náà yan ìdà: gbogbo òkúta inú rẹ̀ ni a gbé tí a sì fọ́n ọ̀kọ̀ọ̀kan sí àpótí kọ̀ọ̀kan. Lẹ́yìn títúká, tí àpótí tó kàn bá ní òkúta, gbé wọn kí o sì tẹ̀síwájú; tí àpótí tó kàn bá jẹ́ òfìfo tí èyí tó tẹ̀lé e sì ní òkúta tàbí Mandarin, o gbà á (o sì tẹ̀síwájú tí àpótí kún bá tún tẹ̀lé àpótí òfìfo). Dúró ní àpótí Mandarin tàbí lẹ́yìn àpótí òfìfo méjì tẹ̀léra. Mandarin jẹ́ àmì 10, òkúta jẹ́ 1. Tí òkúta bá tán ní ìhà rẹ, a tún fọ́n àmì 5 tí o gbà padà. Eré náà parí nígbà tí a bá gba Mandarin méjèèjì; ẹni tó ní àmì púpọ̀ jù ló borí.",
+    "lib.arcade.oqWin": "Eré parí — o ní àmì púpọ̀ jù.",
+    "lib.arcade.oqLose": "Eré parí — kọ̀ǹpútà ní àmì púpọ̀ jù.",
+    "lib.arcade.oqDraw": "Eré parí — dọ́gba.",
+    "lib.arcade.oqPick": "Yan ìdà: ◀ tàbí ▶.",
+    "lib.arcade.roll": "Ju dísì",
+    "lib.arcade.note.ludo": "Pupa ni o ń ṣeré; kọ̀ǹpútà ló ń ṣe àwọn àwọ̀ yòókù. Ju dísì: o nílò 6 láti mú tókìnì jáde kúrò nílé, 6 sì ń fún ọ ní ìjù mìíràn (6 mẹ́ta tẹ̀léra máa ń gba ìgbà rẹ). Àwọn tókìnì ń yípo pátákó ní ìtọ́sọ́nà aago, lẹ́yìn náà wọ́n yà sí ọ̀nà ilé àwọ̀ wọn; o nílò iye gangan láti dé òpin ní àárín. Tí o bá balẹ̀ gangan lórí tókìnì alátakò, ó padà sí ilé rẹ̀ (àyàfi lórí àpótí ìràwọ̀ àti àpótí ìbẹ̀rẹ̀). Ẹni àkọ́kọ́ tó mú gbogbo tókìnì 4 dé ilé ni ó borí.",
+    "lib.arcade.pickToken": "Yan tókìnì láti gbé.",
+    "lib.arcade.turnOf": "Ìgbà {c}…",
+    "lib.arcade.ldWin": "Gbogbo tókìnì rẹ 4 ti dé ilé!",
+    "lib.arcade.ldLose": "{c} dé ilé kọ́kọ́.",
+    "lib.arcade.threeSix": "6 mẹ́ta tẹ̀léra — o pàdánù ìgbà rẹ.",
+    "lib.arcade.noMove": "Kò sí tókìnì tó lè rìn.",
+    "lib.arcade.note.pyramid": "Pa gbogbo káàdì 28 ti pírámídì rẹ́. Tẹ káàdì ọ̀fẹ́ méjì (tí káàdì kankan kò bò) tí àròpọ̀ wọn jẹ́ 13 (A=1, J=11, Q=12) láti yọ àwọn méjèèjì; Ọba (K) ń jáde fúnrarẹ̀ pẹ̀lú títẹ̀ kan. A tún lè lo káàdì òkè ti òkìtì ìdàrúdàpọ̀. Tẹ àkójọpọ̀ káàdì láti fa káàdì; iye ìgbà tí a lè tún òkìtì ìdàrúdàpọ̀ lò kéré.",
+    "lib.arcade.note.tripeaks": "Pa gbogbo káàdì 28 ti òkè mẹ́ta rẹ́. Tẹ káàdì ọ̀fẹ́ tó ga tàbí tó kéré ju káàdì tó ń hàn lórí òkìtì ìdàrúdàpọ̀ lọ ní ipò kan gangan (irú kankan) láti gbé e sísàlẹ̀. Nígbà tí ìrìn bá tán, tẹ àkójọpọ̀ káàdì. Ní àwọn ìpele tó rọrùn, K so mọ́ A.",
+    "lib.arcade.note.golf": "Pa gbogbo àwọn ọ̀wọ́ rẹ́. Káàdì ìsàlẹ̀ ti ọ̀wọ́ kọ̀ọ̀kan nìkan ni a lè tẹ̀: ó gbọ́dọ̀ ga tàbí kéré ju káàdì tó ń hàn lọ ní ipò kan gangan. Nígbà tí ìrìn bá tán, tẹ àkójọpọ̀ káàdì. Ní àwọn ìpele tó rọrùn, K so mọ́ A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Mẹ́rin bákan náà",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Mẹ́ta bákan náà",
+    "lib.arcade.ph.twopair": "Ìpele méjì",
+    "lib.arcade.ph.jacks": "Jack tàbí tó dára jù",
+    "lib.arcade.ph.none": "Kò sí nǹkan",
+    "lib.arcade.res.win": "Ìṣẹ́gun",
+    "lib.arcade.res.lose": "Ìpàdánù",
+    "lib.arcade.res.push": "Dọ́gba",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Pupa",
+    "lib.arcade.cGreen": "Àwọ̀ ewé",
+    "lib.arcade.cYellow": "Ofeefee",
+    "lib.arcade.cBlue": "Búlúù"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Afọ́ bíríkì",
       "desc": "Darí pákó kí o sì jẹ́ kí bọ́ọ̀lù ta láti fọ́ gbogbo bíríkì; ìpele 10 pẹ̀lú ètò tó yàtọ̀, pẹ̀lú eku kọ̀ǹpútà, ìfọwọ́kàn tàbí bọ́tìnnì."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Pa pírámídì káàdì 28 rẹ́ nípa ṣíṣe ìpele àwọn káàdì tí àròpọ̀ wọn jẹ́ 13; ìpele mẹ́wàá pẹ̀lú àtúnpín tó ń dínkù."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Pa òkè mẹ́ta rẹ́ nípa sísopọ̀ àwọn káàdì tó yàtọ̀ ní ipò kan; ìpele mẹ́wàá láti rọrùn dé le."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Pa àwọn ọ̀wọ́ rẹ́ nípa sísopọ̀ àwọn káàdì tó yàtọ̀ ní ipò kan sí káàdì tó ń hàn; ìpele mẹ́wàá pẹ̀lú ọ̀wọ́ tó ń pọ̀ sí i."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Ṣe blackjack lòdì sí olùpín pẹ̀lú àwọn chip àfarawé: súnmọ́ 21 jù láì kọjá; ṣe ìlọ́po méjì kí o sì pín; ìpele mẹ́wàá pẹ̀lú àfojúsùn tó ń ga sí i."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker fífà káàdì márùn-ún pẹ̀lú àwọn chip àfarawé (Jack tàbí tó dára jù); ìpele mẹ́wàá pẹ̀lú tábìlì ìsanwó tó le sí i."
+    },
+    "checkers": {
+      "name": "Checkers",
+      "desc": "Ṣe checkers 8x8 lòdì sí kọ̀ǹpútà: gbígbà tó jẹ́ dandan, fífò púpọ̀ àti ọba; ìpele mẹ́wàá láti rọrùn dé le."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Eré ìje oníàwọ̀ mẹ́rin: ju dísì kí o sì mú tókìnì rẹ 4 dé ilé kọ́kọ́; lòdì sí olùṣeré kọ̀ǹpútà 1 sí 3 ní ìpele mẹ́wàá."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Eré ìbílẹ̀ Vietnam ti fífọ́n òkúta: fọ́n òkúta kí o sì gba àwọn Mandarin lòdì sí kọ̀ǹpútà; ìpele mẹ́wàá láti rọrùn dé le."
     }
   },
   "s": {

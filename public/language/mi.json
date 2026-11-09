@@ -340,7 +340,70 @@
     "lib.arcade.target": "Whāinga: {n}",
     "lib.arcade.up": "Runga",
     "lib.arcade.youVsAi": "Koe {a} – Rorohiko {b}",
-    "lib.arcade.noHintFc": "Kāore he nekehanga whai hua e toe ana. Wetekina ētahi nekehanga, tīmata anō rānei."
+    "lib.arcade.noHintFc": "Kāore he nekehanga whai hua e toe ana. Wetekina ētahi nekehanga, tīmata anō rānei.",
+    "lib.arcade.recycles": "Ngā tāwhiri anō e toe ana: {n}",
+    "lib.arcade.stockLeft": "Puranga: {n}",
+    "lib.arcade.wrapOn": "Ka hono te K ki te A",
+    "lib.arcade.wrapOff": "Kāore te K e hono ki te A",
+    "lib.arcade.hintDraw": "Kua kore he takirua. Pāwhiria te puranga hei tango i tētahi kāri.",
+    "lib.arcade.betMax": "Mea nui",
+    "lib.arcade.deal": "Tuari",
+    "lib.arcade.hit": "Tango",
+    "lib.arcade.stand": "Tū",
+    "lib.arcade.double": "Whakarua",
+    "lib.arcade.split": "Wāhia",
+    "lib.arcade.nextHand": "Ringa e whai ake nei",
+    "lib.arcade.note.blackjack": "Moni tākaro anake — kāore he moni tūturu. Ka tīmata koe me te 500 tiupa; whakatutukihia te tapeke tiupa i roto i te maha o ngā ringa e whakaaetia ana hei whakaoti i te taumata. Kia tata ake koe ki te 21 i te kaituari me te kore e tāpiri ake. Ka tango te kaituari kia eke ki te 17. Ka nui ake te utu mō te blackjack (he ace me tētahi kāri uara tekau). Whakarua: ka whakaruatia tō nama, ā, ka tangohia he kāri kotahi anō. Wāhia: e wātea ana ina rite te uara o ō kāri tuatahi e rua.",
+    "lib.arcade.dealer": "Kaituari",
+    "lib.arcade.you": "Koe",
+    "lib.arcade.bet": "Nama",
+    "lib.arcade.chips": "Tiupa: {n}",
+    "lib.arcade.handsLeft": "{n} ngā ringa e toe ana",
+    "lib.arcade.won": "I wini koe i te {n} tiupa.",
+    "lib.arcade.lost": "I ngaro i a koe te {n} tiupa.",
+    "lib.arcade.even": "Rite tonu.",
+    "lib.arcade.note.videopoker": "Moni tākaro anake — kāore he moni tūturu. Kōwhiria he nama 1–5 tiupa, pāwhiria Tuari kia whiwhi koe ki ngā kāri e rima, pāwhiria ngā kāri e hiahia ana koe ki te pupuri, ka pāwhiri i Whakawhiti hei whakakapi i ērā atu. Ka utua te takirua jack, neke atu rānei. Ka tīmata koe me te 100 tiupa; whakatutukihia te tapeke tiupa i roto i te maha o ngā ringa e whakaaetia ana hei whakaoti i te taumata.",
+    "lib.arcade.hold": "PUPURI",
+    "lib.arcade.draw": "Whakawhiti",
+    "lib.arcade.note.checkers": "Ko koe te kaitākaro whero (kei raro) ā, ko koe te tuatahi. Ka neke te kongakonga i te wāhi kotahi whakamahuki whakamua ki tētahi wāhi kau. Mēnā ka taea e koe te peke i runga i te kongakonga a te hoariri, me peke koe, ā, ka taea te haere tonu te peke hei hopu i ētahi kongakonga maha. Ka karaunahia hei kīngi te kongakonga ka eke ki te rārangi whakamutunga, ā, ka taea te neke me te hopu whakamuri. Ka hinga koe ina kore he kongakonga, he nekehanga ture rānei.",
+    "lib.arcade.ckDraw": "I mutu te kēmu i te rite tonu.",
+    "lib.arcade.ckWin": "Kāore he nekehanga ture a te pango — i toa koe.",
+    "lib.arcade.ckLose": "Kāore āu nekehanga ture — i hinga koe.",
+    "lib.arcade.ckMust": "Me hopu koe ina taea — kōwhiria tētahi o ngā kongakonga e kōrapa ana.",
+    "lib.arcade.note.oanquan": "He kēmu tuku iho nō Vietnam. Nōu te rārangi o raro, nā te rorohiko te rārangi o runga, ā, ko ngā pito e rua ko ngā tapawhā Mandarin. Pāwhiria tētahi o ōu tapawhā, ka kōwhiri i tētahi ahunga: ka tangohia ngā kōhatu katoa o roto, ka rūkia kotahi ki ia tapawhā. Whai muri i te rūkahu, mēnā he kōhatu kei te tapawhā e whai ake nei, tangohia ka haere tonu te rūkahu; mēnā kua kore he mea i te tapawhā e whai ake nei, ā, he kōhatu, he Mandarin rānei kei muri i a ia, ka hopukina e koe (ā, ka haere tonu te hopu mēnā i muri i tētahi atu tapawhā kau he tapawhā kōhatu). Kia tū ki te tapawhā Mandarin, ki muri rānei i ngā tapawhā kau e rua i te taha o tētahi. E 10 te whiwhinga o te Mandarin, e 1 o te kōhatu. Mēnā ka pau ngā kōhatu i tō taha, ka rūkia anō e 5 o ōu piro hopu. Ka mutu te kēmu ina hopukina ngā Mandarin e rua; ko te nui ake o ngā piro te toa.",
+    "lib.arcade.oqWin": "Kua mutu te kēmu — he nui ake ō piro.",
+    "lib.arcade.oqLose": "Kua mutu te kēmu — he nui ake ngā piro a te rorohiko.",
+    "lib.arcade.oqDraw": "Kua mutu te kēmu — rite tonu.",
+    "lib.arcade.oqPick": "Kōwhiria he ahunga: ◀ rānei ▶.",
+    "lib.arcade.roll": "Whiua te kōtuku",
+    "lib.arcade.note.ludo": "Ko koe te kaitākaro whero; nā te rorohiko ngā tae o toe. Whiua te kōtuku: me 6 hei tango i tētahi kongakonga i te kāinga, ā, ka whiwhi koe ki tētahi atu whiunga i te 6 (ka ngaro tō wā mēnā e toru ngā 6 i te taha o tētahi). Ka haere ngā kongakonga huri noa i te papa i te ahunga o te karaka, ka huri ki te ara kāinga o tō rātou tae; me te tau tika hei eke ki te mutunga i waenganui. Mēnā ka tau tika koe ki runga i te kongakonga a te hoariri, ka hoki ki tōna kāinga (haunga ngā tapawhā whetū me ngā tapawhā tīmatanga). Ko te tuatahi ki te whakahoki mai i ngā kongakonga e 4 ki te kāinga, ka toa.",
+    "lib.arcade.pickToken": "Kōwhiria he kongakonga hei neke.",
+    "lib.arcade.turnOf": "Te wā o {c}…",
+    "lib.arcade.ldWin": "Kua tae ō kongakonga e 4 katoa ki te kāinga!",
+    "lib.arcade.ldLose": "Nā {c} i tae tuatahi ki te kāinga.",
+    "lib.arcade.threeSix": "E toru ngā 6 i te taha o tētahi — kua ngaro tō wā.",
+    "lib.arcade.noMove": "Kāore he kongakonga e taea ana te neke.",
+    "lib.arcade.note.pyramid": "Whakawātea i ngā kāri 28 katoa o te pyramid. Pāwhiria ngā kāri herekore e rua (kāore i te hipokina e tētahi atu kāri) ka tapeke ki te 13 (A=1, J=11, Q=12) hei tango i ngā mea e rua; ka tangohia te Kīngi anake ma te pāwhiri kotahi. Ka taea hoki te kāri o runga o te puranga whiu. Pāwhiria te puranga hei tango; he iti noa te maha o ngā wā e taea ai te hangarua te puranga whiu.",
+    "lib.arcade.note.tripeaks": "Whakawātea i ngā kāri 28 katoa o ngā tihi e toru. Pāwhiria he kāri herekore kotahi anake te taumata teitei ake, te iti iho rānei i te kāri e kitea ana i te puranga whiu (ahakoa te momo) hei whakaheke. Ina kore he nekehanga, pāwhiria te puranga hei tango kāri. I ngā taumata ngāwari, ka hono te K ki te A.",
+    "lib.arcade.note.golf": "Whakawātea i ngā tīwhana katoa. Ko te kāri o raro anake o ia tīwhana te pāwhiri: me kotahi anake te taumata teitei ake, te iti iho rānei i te kāri e kitea ana. Ina kore he nekehanga, pāwhiria te puranga hei tango kāri. I ngā taumata ngāwari, ka hono te K ki te A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Whā o te momo kotahi",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Toru o te momo kotahi",
+    "lib.arcade.ph.twopair": "Takirua e rua",
+    "lib.arcade.ph.jacks": "Jack, pai ake rānei",
+    "lib.arcade.ph.none": "Kāore",
+    "lib.arcade.res.win": "Toa",
+    "lib.arcade.res.lose": "Hinga",
+    "lib.arcade.res.push": "Rite",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Whero",
+    "lib.arcade.cGreen": "Kākāriki",
+    "lib.arcade.cYellow": "Kōwhai",
+    "lib.arcade.cBlue": "Kikorangi"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Wāwāhi Pereki",
       "desc": "Whakahaerehia te hoe, whakapanaia te pōro kia wāwāhia ngā pereki katoa; 10 wāhanga me ngā tahora rerekē, mā te kiore, mā te pā, mā ngā pātuhi rānei."
+    },
+    "pyramid": {
+      "name": "Solitaire Pyramid",
+      "desc": "Whakawātea i te pyramid kāri 28 mā te takirua i ngā kāri ka tapeke ki te 13; 10 ngā taumata me ngā tāwhiri iti haere."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Whakawātea i ngā tihi e toru mā te hono i ngā kāri he taumata kotahi te rerekē; 10 ngā taumata mai i te ngāwari ki te uaua."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Whakawātea i ngā tīwhana mā te hono i ngā kāri he taumata kotahi te rerekē i te kāri e kitea ana; 10 ngā taumata me ngā tīwhana maha ake i a koe e haere ana."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Tākaro blackjack ki te kaituari me ngā tiupa mariko: kia tata ki te 21 me te kore e tāpiri ake; whakarua me te wāhi; 10 ngā taumata me ngā whāinga tiupa e piki haere ana."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker kāri e rima me ngā tiupa mariko (jack, pai ake rānei); 10 ngā taumata me ngā ripanga utu e kaha haere ana."
+    },
+    "checkers": {
+      "name": "Draughts",
+      "desc": "Tākaro i te draughts 8x8 ki te rorohiko: hopu herea, peke maha me ngā kīngi; 10 ngā taumata mai i te ngāwari ki te uaua."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "He kēmu reihi e whā ngā tae: whiua te kōtuku ka whakahoki i ō kongakonga e 4 ki te kāinga i te tuatahi; tākaro ki te 1 ki te 3 ngā kaitākaro rorohiko i ngā taumata 10."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "He kēmu rūkahu kōhatu tuku iho nō Vietnam: rūkia ngā kōhatu ka hopu i ngā Mandarin ki te rorohiko; 10 ngā taumata mai i te ngāwari ki te uaua."
     }
   },
   "s": {

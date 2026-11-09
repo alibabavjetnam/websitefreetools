@@ -340,7 +340,70 @@
     "lib.arcade.target": "Meta: {n}",
     "lib.arcade.up": "Cima",
     "lib.arcade.youVsAi": "Você {a} – Computador {b}",
-    "lib.arcade.noHintFc": "Não há mais jogadas úteis. Desfaça algumas jogadas ou recomece."
+    "lib.arcade.noHintFc": "Não há mais jogadas úteis. Desfaça algumas jogadas ou recomece.",
+    "lib.arcade.recycles": "Redistribuições restantes: {n}",
+    "lib.arcade.stockLeft": "Baralho: {n}",
+    "lib.arcade.wrapOn": "O K liga ao A",
+    "lib.arcade.wrapOff": "O K não liga ao A",
+    "lib.arcade.hintDraw": "Não há mais pares. Clique no baralho para comprar.",
+    "lib.arcade.betMax": "Máx.",
+    "lib.arcade.deal": "Distribuir",
+    "lib.arcade.hit": "Pedir",
+    "lib.arcade.stand": "Parar",
+    "lib.arcade.double": "Dobrar",
+    "lib.arcade.split": "Dividir",
+    "lib.arcade.nextHand": "Próxima mão",
+    "lib.arcade.note.blackjack": "Apenas dinheiro de mentira, sem dinheiro real. Você começa com 500 fichas; alcance a meta de fichas dentro do número de mãos permitido para vencer o nível. Chegue mais perto de 21 do que o carteador sem estourar. O carteador compra até chegar a 17. Um blackjack (um ás mais uma carta de valor 10) paga a mais. Dobrar: você dobra a aposta e recebe exatamente mais uma carta. Dividir: disponível quando suas duas primeiras cartas têm o mesmo valor.",
+    "lib.arcade.dealer": "Carteador",
+    "lib.arcade.you": "Você",
+    "lib.arcade.bet": "Aposta",
+    "lib.arcade.chips": "Fichas: {n}",
+    "lib.arcade.handsLeft": "Restam {n} mãos",
+    "lib.arcade.won": "Você ganhou {n} fichas.",
+    "lib.arcade.lost": "Você perdeu {n} fichas.",
+    "lib.arcade.even": "Empate.",
+    "lib.arcade.note.videopoker": "Apenas dinheiro de mentira, sem dinheiro real. Escolha uma aposta de 1 a 5 fichas, toque em Distribuir para receber cinco cartas, clique nas cartas que quer manter e toque em Trocar para substituir as demais. Um par de valetes ou melhor paga. Você começa com 100 fichas; alcance a meta de fichas dentro do número de mãos permitido para vencer o nível.",
+    "lib.arcade.hold": "MANTER",
+    "lib.arcade.draw": "Trocar",
+    "lib.arcade.note.checkers": "Você joga com as vermelhas (embaixo) e começa. Uma peça anda uma casa na diagonal para a frente até uma casa vazia. Se puder pular sobre uma peça adversária, você é obrigado a pular, e pode continuar pulando para capturar várias peças. Uma peça que chega à última fileira vira dama e também pode andar e capturar para trás. Você perde quando não tem mais peças ou jogadas legais.",
+    "lib.arcade.ckDraw": "O jogo terminou empatado.",
+    "lib.arcade.ckWin": "As pretas não têm jogadas legais: você venceu!",
+    "lib.arcade.ckLose": "Você não tem jogadas legais: você perdeu.",
+    "lib.arcade.ckMust": "Você deve capturar quando puder: escolha uma das peças piscando.",
+    "lib.arcade.note.oanquan": "Um jogo tradicional vietnamita. A fileira de baixo é sua, a de cima é do computador, e as duas pontas são as casas do Mandarim. Clique em uma das suas casas e escolha uma direção: todas as pedras dela são recolhidas e semeadas uma por casa. Depois de semear, se a casa seguinte tiver pedras, recolha-as e continue semeando; se a seguinte estiver vazia e a depois dela tiver pedras ou um Mandarim, você a captura (e continua capturando se após outra casa vazia houver uma com pedras). Pare numa casa de Mandarim ou após duas casas vazias seguidas. Um Mandarim vale 10 pontos e uma pedra 1. Se o seu lado ficar sem pedras, 5 dos seus pontos capturados são devolvidos ao tabuleiro. O jogo termina quando os dois Mandarins são capturados; vence quem tiver mais pontos.",
+    "lib.arcade.oqWin": "Fim de jogo: você tem mais pontos.",
+    "lib.arcade.oqLose": "Fim de jogo: o computador tem mais pontos.",
+    "lib.arcade.oqDraw": "Fim de jogo: empate.",
+    "lib.arcade.oqPick": "Escolha uma direção: ◀ ou ▶.",
+    "lib.arcade.roll": "Lançar o dado",
+    "lib.arcade.note.ludo": "Você joga com o vermelho; as outras cores são do computador. Lance o dado: é preciso tirar 6 para tirar um peão da base, e um 6 dá direito a outra jogada (três 6 seguidos fazem você perder a vez). Os peões percorrem o tabuleiro no sentido horário e depois entram na reta final da sua cor; é preciso o número exato para chegar ao final, no centro. Cair exatamente sobre um peão adversário o manda de volta à base (exceto em casas com estrela e casas de saída). Vence quem levar os 4 peões para casa primeiro.",
+    "lib.arcade.pickToken": "Escolha um peão para mover.",
+    "lib.arcade.turnOf": "Vez de {c}…",
+    "lib.arcade.ldWin": "Seus 4 peões chegaram em casa!",
+    "lib.arcade.ldLose": "{c} chegou em casa primeiro.",
+    "lib.arcade.threeSix": "Três 6 seguidos: você perde a vez.",
+    "lib.arcade.noMove": "Nenhum peão pode se mover.",
+    "lib.arcade.note.pyramid": "Elimine as 28 cartas da pirâmide. Clique em duas cartas livres (não cobertas por outra) que somem 13 (A=1, J=11, Q=12) para removê-las; um Rei sai sozinho com um clique. A carta do topo do descarte também pode ser usada. Clique no baralho para comprar; o número de vezes que você pode reciclar o descarte é limitado.",
+    "lib.arcade.note.tripeaks": "Elimine as 28 cartas dos três picos. Clique em uma carta livre que seja exatamente um valor acima ou abaixo da carta visível no descarte (de qualquer naipe) para movê-la. Quando não houver jogadas, clique no baralho para comprar. Nos níveis mais fáceis, o Rei liga ao Ás.",
+    "lib.arcade.note.golf": "Elimine todas as colunas. Só a carta de baixo de cada coluna pode ser clicada: ela deve ser exatamente um valor acima ou abaixo da carta visível. Quando não houver jogadas, clique no baralho para comprar. Nos níveis mais fáceis, o Rei liga ao Ás.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Quadra",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Sequência",
+    "lib.arcade.ph.trips": "Trinca",
+    "lib.arcade.ph.twopair": "Dois pares",
+    "lib.arcade.ph.jacks": "Valetes ou melhor",
+    "lib.arcade.ph.none": "Nada",
+    "lib.arcade.res.win": "Ganhou",
+    "lib.arcade.res.lose": "Perdeu",
+    "lib.arcade.res.push": "Empate",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Vermelho",
+    "lib.arcade.cGreen": "Verde",
+    "lib.arcade.cYellow": "Amarelo",
+    "lib.arcade.cBlue": "Azul"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Quebra-tijolos",
       "desc": "Mova a raquete e rebata a bola para quebrar todos os tijolos; 10 fases com formatos diferentes, com mouse, toque ou teclado."
+    },
+    "pyramid": {
+      "name": "Paciência Pirâmide",
+      "desc": "Elimine a pirâmide de 28 cartas combinando cartas que somam 13; 10 níveis com cada vez menos redistribuições."
+    },
+    "tripeaks": {
+      "name": "Paciência TriPeaks",
+      "desc": "Elimine três picos ligando cartas com valores consecutivos; 10 níveis, do fácil ao difícil."
+    },
+    "golf": {
+      "name": "Paciência Golf",
+      "desc": "Elimine as colunas ligando cartas de valor consecutivo à carta visível; 10 níveis com mais colunas conforme você avança."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Jogue blackjack contra o carteador com fichas virtuais: chegue o mais perto de 21 sem estourar; dobre e divida; 10 níveis com metas de fichas crescentes."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Pôquer de cinco cartas com troca, com fichas virtuais (Valetes ou melhor); 10 níveis com tabelas de pagamento cada vez mais apertadas."
+    },
+    "checkers": {
+      "name": "Damas",
+      "desc": "Jogue damas 8x8 contra o computador: capturas obrigatórias, saltos múltiplos e damas; 10 níveis, do fácil ao difícil."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Jogo de corrida em quatro cores: lance o dado e leve seus 4 peões para casa primeiro; jogue contra 1 a 3 jogadores do computador em 10 níveis."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Um jogo tradicional vietnamita de semeadura: semeie pedras e capture os Mandarins contra o computador; 10 níveis, do fácil ao difícil."
     }
   },
   "s": {

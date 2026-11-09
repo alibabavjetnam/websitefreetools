@@ -340,7 +340,70 @@
     "lib.arcade.target": "Mērķis: {n}",
     "lib.arcade.up": "Uz augšu",
     "lib.arcade.youVsAi": "Jūs {a} – Dators {b}",
-    "lib.arcade.noHintFc": "Noderīgu gājienu vairs nav. Atsauciet dažus gājienus vai sāciet no jauna."
+    "lib.arcade.noHintFc": "Noderīgu gājienu vairs nav. Atsauciet dažus gājienus vai sāciet no jauna.",
+    "lib.arcade.recycles": "Atlikušie pārsajaukumi: {n}",
+    "lib.arcade.stockLeft": "Kava: {n}",
+    "lib.arcade.wrapOn": "K savienojas ar A",
+    "lib.arcade.wrapOff": "K nesavienojas ar A",
+    "lib.arcade.hintDraw": "Pāru vairs nav. Noklikšķiniet uz kavas, lai vilktu kārti.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Dalīt",
+    "lib.arcade.hit": "Vilkt kārti",
+    "lib.arcade.stand": "Pietiek",
+    "lib.arcade.double": "Dubultot",
+    "lib.arcade.split": "Sadalīt",
+    "lib.arcade.nextHand": "Nākamā roka",
+    "lib.arcade.note.blackjack": "Tikai spēles nauda, nevis īsta nauda. Jūs sākat ar 500 žetoniem; sasniedziet mērķa žetonu skaitu atļautajā roku skaitā, lai izietu līmeni. Tuvojieties 21 labāk nekā dīleris, to nepārsniedzot. Dīleris velk kārtis, līdz sasniedz 17. Blekdžeks (dzeksis un desmit vērtības kārts) maksā papildus. Dubultot: jūs dubultojat likmi un saņemat tieši vienu kārti. Sadalīt: pieejams, kad abām pirmajām kārtīm ir vienāda vērtība.",
+    "lib.arcade.dealer": "Dīleris",
+    "lib.arcade.you": "Jūs",
+    "lib.arcade.bet": "Likme",
+    "lib.arcade.chips": "Žetoni: {n}",
+    "lib.arcade.handsLeft": "Atlikušas {n} rokas",
+    "lib.arcade.won": "Jūs laimējāt {n} žetonus.",
+    "lib.arcade.lost": "Jūs zaudējāt {n} žetonus.",
+    "lib.arcade.even": "Neizšķirts.",
+    "lib.arcade.note.videopoker": "Tikai spēles nauda, nevis īsta nauda. Izvēlieties likmi no 1 līdz 5 žetoniem, nospiediet Dalīt, lai saņemtu piecas kārtis, noklikšķiniet uz kārtīm, kuras vēlaties paturēt, un nospiediet Mainīt, lai aizstātu pārējās. Maksā valetu pāris vai labāks. Jūs sākat ar 100 žetoniem; sasniedziet mērķa žetonu skaitu atļautajā roku skaitā, lai izietu līmeni.",
+    "lib.arcade.hold": "PATURĒT",
+    "lib.arcade.draw": "Mainīt",
+    "lib.arcade.note.checkers": "Jūs spēlējat ar sarkanajiem (apakšā) un gājienu sākat pirmais. Kauliņš pārvietojas par vienu lauciņu pa diagonāli uz priekšu uz tukšu lauciņu. Ja varat pārlēkt pāri pretinieka kauliņam, jums tas ir jādara, un varat turpināt lēkt, lai ņemtu vairākus kauliņus. Kauliņš, kas sasniedz pēdējo rindu, kļūst par dāmu un var pārvietoties un ņemt arī atpakaļ. Jūs zaudējat, kad nav kauliņu vai atļautu gājienu.",
+    "lib.arcade.ckDraw": "Spēle beidzās neizšķirti.",
+    "lib.arcade.ckWin": "Melnajiem nav atļautu gājienu — jūs uzvarējāt.",
+    "lib.arcade.ckLose": "Jums nav atļautu gājienu — jūs zaudējāt.",
+    "lib.arcade.ckMust": "Ja var ņemt, tas jādara — izvēlieties vienu no mirgojošajiem kauliņiem.",
+    "lib.arcade.note.oanquan": "Tradicionāla vjetnamiešu spēle. Apakšējā rinda ir jūsu, augšējā — datora, un abi gali ir mandarīna lauciņi. Noklikšķiniet uz sava lauciņa un izvēlieties virzienu: visi tajā esošie akmentiņi tiek paņemti un izsēti pa vienam katrā lauciņā. Pēc izsēšanas, ja nākamajā lauciņā ir akmentiņi, paņemiet tos un turpiniet sēt; ja nākamais lauciņš ir tukšs, bet aiz tā ir akmentiņi vai mandarīns, jūs to paņemat (un turpināt ņemt, ja aiz vēl viena tukša lauciņa seko lauciņš ar akmentiņiem). Apstājieties mandarīna lauciņā vai pēc diviem tukšiem lauciņiem pēc kārtas. Mandarīns ir vērts 10 punktus, akmentiņš — 1. Ja jūsu pusē beidzas akmentiņi, tiek izsēti 5 jūsu iegūtie punkti. Spēle beidzas, kad paņemti abi mandarīni; uzvar tas, kam vairāk punktu.",
+    "lib.arcade.oqWin": "Spēle beigusies — jums ir vairāk punktu.",
+    "lib.arcade.oqLose": "Spēle beigusies — datoram ir vairāk punktu.",
+    "lib.arcade.oqDraw": "Spēle beigusies — neizšķirts.",
+    "lib.arcade.oqPick": "Izvēlieties virzienu: ◀ vai ▶.",
+    "lib.arcade.roll": "Mest kauliņu",
+    "lib.arcade.note.ludo": "Jūs spēlējat ar sarkano; pārējās krāsas spēlē dators. Metiet kauliņu: lai izvestu figūru no mājas, vajag 6, un ar 6 jūs metat vēlreiz (trīs sešnieki pēc kārtas — zaudējat gājienu). Figūras pārvietojas pa dēli pulksteņrādītāja virzienā un tad iegriežas savas krāsas mājas taciņā; lai sasniegtu finišu centrā, vajag precīzu skaitli. Ja nokļūstat tieši uz pretinieka figūras, tā atgriežas mājā (izņemot zvaigžņu un starta lauciņus). Uzvar tas, kurš pirmais atved mājās visas 4 figūras.",
+    "lib.arcade.pickToken": "Izvēlieties figūru, ar kuru iet.",
+    "lib.arcade.turnOf": "{c} gājiens…",
+    "lib.arcade.ldWin": "Visas jūsu 4 figūras ir mājās!",
+    "lib.arcade.ldLose": "{c} pirmais nonāca mājās.",
+    "lib.arcade.threeSix": "Trīs sešnieki pēc kārtas — jūs zaudējat gājienu.",
+    "lib.arcade.noMove": "Nevienu figūru nevar pārvietot.",
+    "lib.arcade.note.pyramid": "Notīriet visas 28 piramīdas kārtis. Noklikšķiniet uz divām brīvām kārtīm (kuras neapsedz neviena cita kārts), kuru summa ir 13 (A=1, J=11, Q=12), lai noņemtu abas; karali noņem vienu ar vienu klikšķi. Var izmantot arī atmesto kāršu kavas augšējo kārti. Noklikšķiniet uz kavas, lai vilktu kārti; reižu skaits, cik var pārstrādāt atmesto kavu, ir ierobežots.",
+    "lib.arcade.note.tripeaks": "Notīriet visas 28 trīs virsotņu kārtis. Noklikšķiniet uz brīvas kārts, kas ir tieši par vienu pakāpi augstāka vai zemāka par atmesto kāršu kavā redzamo kārti (jebkura masts), lai to pārvietotu. Kad gājienu nav, noklikšķiniet uz kavas, lai vilktu kārti. Vieglākajos līmeņos K savienojas ar A.",
+    "lib.arcade.note.golf": "Notīriet visas kolonnas. Noklikšķināt var tikai uz katras kolonnas apakšējās kārts: tai jābūt tieši par vienu pakāpi augstākai vai zemākai par redzamo kārti. Kad gājienu nav, noklikšķiniet uz kavas, lai vilktu kārti. Vieglākajos līmeņos K savienojas ar A.",
+    "lib.arcade.ph.royal": "Karaliskais flušs",
+    "lib.arcade.ph.sflush": "Strīta flušs",
+    "lib.arcade.ph.quads": "Kareja",
+    "lib.arcade.ph.full": "Full hauss",
+    "lib.arcade.ph.flush": "Flušs",
+    "lib.arcade.ph.straight": "Strīts",
+    "lib.arcade.ph.trips": "Trijnieks",
+    "lib.arcade.ph.twopair": "Divi pāri",
+    "lib.arcade.ph.jacks": "Valeti vai labāk",
+    "lib.arcade.ph.none": "Nekas",
+    "lib.arcade.res.win": "Uzvara",
+    "lib.arcade.res.lose": "Zaudējums",
+    "lib.arcade.res.push": "Neizšķirts",
+    "lib.arcade.res.blackjack": "Blekdžeks!",
+    "lib.arcade.cRed": "Sarkans",
+    "lib.arcade.cGreen": "Zaļš",
+    "lib.arcade.cYellow": "Dzeltens",
+    "lib.arcade.cBlue": "Zils"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Ķieģeļu dauzīšana",
       "desc": "Vadiet raketi un atsitiet bumbu, lai sadauzītu visus ķieģeļus; 10 līmeņi ar dažādu izkārtojumu, ar peli, skārienu vai taustiņiem."
+    },
+    "pyramid": {
+      "name": "Piramīdas pasjanss",
+      "desc": "Notīriet 28 kāršu piramīdu, savienojot kārtis ar summu 13; 10 līmeņi ar arvien mazāk pārsajaukumu."
+    },
+    "tripeaks": {
+      "name": "TriPeaks pasjanss",
+      "desc": "Notīriet trīs virsotnes, savienojot kārtis, kas atšķiras par vienu pakāpi; 10 līmeņi no viegla līdz grūtam."
+    },
+    "golf": {
+      "name": "Golfa pasjanss",
+      "desc": "Notīriet kolonnas, savienojot kārtis, kas atšķiras par vienu pakāpi no redzamās kārts; 10 līmeņi ar arvien vairāk kolonnām."
+    },
+    "blackjack": {
+      "name": "Blekdžeks",
+      "desc": "Spēlējiet blekdžeku pret dīleri ar virtuāliem žetoniem: tuvojieties 21, to nepārsniedzot; dubultojiet un sadaliet; 10 līmeņi ar augošiem žetonu mērķiem."
+    },
+    "video-poker": {
+      "name": "Video pokers",
+      "desc": "Piecu kāršu pokers ar apmaiņu un virtuāliem žetoniem (valeti vai labāk); 10 līmeņi ar arvien stingrākām izmaksu tabulām."
+    },
+    "checkers": {
+      "name": "Dambrete",
+      "desc": "Spēlējiet 8x8 dambreti pret datoru: obligāta ņemšana, vairāki lēcieni un dāmas; 10 līmeņi no viegla līdz grūtam."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Četru krāsu skriešanās spēle: metiet kauliņu un pirmais atvediet mājās savas 4 figūras; spēlējiet pret 1 līdz 3 datora spēlētājiem 10 līmeņos."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Tradicionāla vjetnamiešu akmentiņu sēšanas spēle: sējiet akmentiņus un ņemiet mandarīnus pret datoru; 10 līmeņi no viegla līdz grūtam."
     }
   },
   "s": {

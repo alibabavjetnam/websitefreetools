@@ -340,7 +340,70 @@
     "lib.arcade.target": "Objectiu: {n}",
     "lib.arcade.up": "Amunt",
     "lib.arcade.youVsAi": "Tu {a} – Ordinador {b}",
-    "lib.arcade.noHintFc": "No queden moviments útils. Desfés alguns moviments o torna a començar."
+    "lib.arcade.noHintFc": "No queden moviments útils. Desfés alguns moviments o torna a començar.",
+    "lib.arcade.recycles": "Repartiments restants: {n}",
+    "lib.arcade.stockLeft": "Munt: {n}",
+    "lib.arcade.wrapOn": "El rei s'enllaça amb l'as",
+    "lib.arcade.wrapOff": "El rei no s'enllaça amb l'as",
+    "lib.arcade.hintDraw": "No queden parelles. Fes clic al munt per robar.",
+    "lib.arcade.betMax": "Màx.",
+    "lib.arcade.deal": "Reparteix",
+    "lib.arcade.hit": "Demana carta",
+    "lib.arcade.stand": "Plantar-se",
+    "lib.arcade.double": "Doblar",
+    "lib.arcade.split": "Dividir",
+    "lib.arcade.nextHand": "Mà següent",
+    "lib.arcade.note.blackjack": "Només diners de joc, sense diners reals. Comences amb 500 fitxes; arriba al nombre de fitxes objectiu dins de les mans permeses per superar el nivell. Acosta't més a 21 que el crupier sense passar-te'n. El crupier roba fins arribar a 17. Un blackjack (un as i una carta de valor deu) paga més. Doblar: dobles l'aposta i reps exactament una carta més. Dividir: és possible quan les dues primeres cartes tenen el mateix valor.",
+    "lib.arcade.dealer": "Crupier",
+    "lib.arcade.you": "Tu",
+    "lib.arcade.bet": "Aposta",
+    "lib.arcade.chips": "Fitxes: {n}",
+    "lib.arcade.handsLeft": "Queden {n} mans",
+    "lib.arcade.won": "Has guanyat {n} fitxes.",
+    "lib.arcade.lost": "Has perdut {n} fitxes.",
+    "lib.arcade.even": "Empat.",
+    "lib.arcade.note.videopoker": "Només diners de joc, sense diners reals. Tria una aposta d'1 a 5 fitxes, prem Reparteix per rebre cinc cartes, fes clic a les cartes que vulguis conservar i prem Roba per canviar la resta. Paga una parella de jotes o millor. Comences amb 100 fitxes; arriba al nombre de fitxes objectiu dins de les mans permeses per superar el nivell.",
+    "lib.arcade.hold": "CONSERVA",
+    "lib.arcade.draw": "Roba",
+    "lib.arcade.note.checkers": "Jugues amb les vermelles (a baix) i mous primer. Una peça avança una casella en diagonal cap endavant a una casella buida. Si pots saltar una peça rival, has de fer-ho, i pots continuar saltant per capturar-ne diverses. Una peça que arriba a l'última fila es converteix en dama i també pot moure's i capturar cap enrere. Perds quan no tens peces ni moviments legals.",
+    "lib.arcade.ckDraw": "La partida acaba en taules.",
+    "lib.arcade.ckWin": "Les negres no tenen moviments legals: has guanyat.",
+    "lib.arcade.ckLose": "No tens moviments legals: has perdut.",
+    "lib.arcade.ckMust": "Has de capturar quan pots: tria una de les peces que bateguen.",
+    "lib.arcade.note.oanquan": "Un joc tradicional vietnamita. La fila de baix és teva, la de dalt és de l'ordinador, i els dos extrems són les caselles dels Mandarins. Fes clic en una de les teves caselles i tria una direcció: totes les pedres s'agafen i se sembren d'una en una a cada casella. Després de sembrar, si la casella següent té pedres, les agafes i continues sembrant; si la casella següent és buida i la que ve després té pedres o un Mandarí, la captures (i continues capturant si després d'una casella buida n'hi ha una de plena). T'aturas en una casella de Mandarí o després de dues caselles buides seguides. Un Mandarí val 10 punts i una pedra 1. Si el teu costat es queda sense pedres, es tornen a sembrar 5 dels teus punts capturats. La partida acaba quan els dos Mandarins han estat capturats; guanya qui té més punts.",
+    "lib.arcade.oqWin": "Fi de la partida: tens més punts.",
+    "lib.arcade.oqLose": "Fi de la partida: l'ordinador té més punts.",
+    "lib.arcade.oqDraw": "Fi de la partida: empat.",
+    "lib.arcade.oqPick": "Tria una direcció: ◀ o ▶.",
+    "lib.arcade.roll": "Llança el dau",
+    "lib.arcade.note.ludo": "Jugues amb el vermell i l'ordinador porta la resta de colors. Llança el dau: necessites un 6 per treure una fitxa de la casa, i un 6 et dona una altra tirada (tres 6 seguits fan perdre el torn). Les fitxes avancen en el sentit de les agulles del rellotge pel tauler i després giren cap al passadís final del seu color; necessites el número exacte per arribar a la meta del centre. Si caus exactament sobre una fitxa rival, la fas tornar a casa (excepte a les caselles d'estrella i de sortida). Guanya qui primer porta les 4 fitxes a la meta.",
+    "lib.arcade.pickToken": "Tria una fitxa per moure.",
+    "lib.arcade.turnOf": "Torn de {c}…",
+    "lib.arcade.ldWin": "Les teves 4 fitxes han arribat a la meta!",
+    "lib.arcade.ldLose": "{c} ha arribat primer a la meta.",
+    "lib.arcade.threeSix": "Tres 6 seguits: perds el torn.",
+    "lib.arcade.noMove": "Cap fitxa es pot moure.",
+    "lib.arcade.note.pyramid": "Elimina les 28 cartes de la piràmide. Fes clic en dues cartes lliures (no cobertes per cap altra) que sumin 13 (A=1, J=11, Q=12) per treure-les totes dues; un Rei es treu sol amb un sol clic. També es pot fer servir la carta de dalt de la pila de descart. Fes clic al munt per robar; el nombre de vegades que pots reciclar la pila de descart és limitat.",
+    "lib.arcade.note.tripeaks": "Elimina les 28 cartes dels tres cims. Fes clic en una carta lliure que sigui exactament un rang superior o inferior a la carta visible de la pila de descart (de qualsevol coll) per baixar-la. Quan t'esgotin els moviments, fes clic al munt per robar. En els nivells més fàcils, el Rei s'enllaça amb l'as.",
+    "lib.arcade.note.golf": "Elimina totes les columnes. Només es pot fer clic a la carta inferior de cada columna: ha de ser exactament un rang superior o inferior a la carta visible. Quan t'esgotin els moviments, fes clic al munt per robar. En els nivells més fàcils, el Rei s'enllaça amb l'as.",
+    "lib.arcade.ph.royal": "Escala reial",
+    "lib.arcade.ph.sflush": "Escala de color",
+    "lib.arcade.ph.quads": "Pòquer",
+    "lib.arcade.ph.full": "Full",
+    "lib.arcade.ph.flush": "Color",
+    "lib.arcade.ph.straight": "Escala",
+    "lib.arcade.ph.trips": "Trio",
+    "lib.arcade.ph.twopair": "Doble parella",
+    "lib.arcade.ph.jacks": "Jotes o millor",
+    "lib.arcade.ph.none": "Res",
+    "lib.arcade.res.win": "Guanyes",
+    "lib.arcade.res.lose": "Perds",
+    "lib.arcade.res.push": "Empat",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Vermell",
+    "lib.arcade.cGreen": "Verd",
+    "lib.arcade.cYellow": "Groc",
+    "lib.arcade.cBlue": "Blau"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Trencamaons",
       "desc": "Mou la pala i fes rebotar la pilota per trencar tots els maons; 10 fases amb formes diferents, amb ratolí, pantalla tàctil o teclat."
+    },
+    "pyramid": {
+      "name": "Solitari Piràmide",
+      "desc": "Elimina la piràmide de 28 cartes aparellant cartes que sumin 13; 10 nivells amb cada cop menys repartiments."
+    },
+    "tripeaks": {
+      "name": "Solitari TriPeaks",
+      "desc": "Elimina tres cims enllaçant cartes que difereixen en un rang; 10 nivells de fàcil a difícil."
+    },
+    "golf": {
+      "name": "Solitari Golf",
+      "desc": "Elimina les columnes enllaçant cartes que difereixen en un rang de la carta visible; 10 nivells amb cada cop més columnes."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Juga al blackjack contra el crupier amb fitxes virtuals: acosta't a 21 sense passar-te'n; dobla i divideix; 10 nivells amb objectius de fitxes creixents."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Pòquer de cinc cartes amb canvi i fitxes virtuals (jotes o millor); 10 nivells amb taules de pagament més ajustades."
+    },
+    "checkers": {
+      "name": "Dames",
+      "desc": "Juga a dames 8x8 contra l'ordinador: captura obligatòria, salts múltiples i dames; 10 nivells de fàcil a difícil."
+    },
+    "ludo": {
+      "name": "Parxís",
+      "desc": "Joc de carreres de quatre colors: llança el dau i porta primer les teves 4 fitxes a casa; juga contra 1 a 3 jugadors de l'ordinador en 10 nivells."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Un joc tradicional vietnamita de sembra de pedres: sembra pedres i captura els Mandarins contra l'ordinador; 10 nivells de fàcil a difícil."
     }
   },
   "s": {

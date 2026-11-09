@@ -340,7 +340,70 @@
     "lib.arcade.target": "Targed: {n}",
     "lib.arcade.up": "I fyny",
     "lib.arcade.youVsAi": "Chi {a} – Cyfrifiadur {b}",
-    "lib.arcade.noHintFc": "Does dim symudiad defnyddiol ar ôl. Dadwnewch ychydig o symudiadau neu dechreuwch eto."
+    "lib.arcade.noHintFc": "Does dim symudiad defnyddiol ar ôl. Dadwnewch ychydig o symudiadau neu dechreuwch eto.",
+    "lib.arcade.recycles": "Ailddosbarthiadau ar ôl: {n}",
+    "lib.arcade.stockLeft": "Stoc: {n}",
+    "lib.arcade.wrapOn": "Mae'r Brenin yn cysylltu â'r Ás",
+    "lib.arcade.wrapOff": "Nid yw'r Brenin yn cysylltu â'r Ás",
+    "lib.arcade.hintDraw": "Dim parau ar ôl. Cliciwch ar y stoc i dynnu cerdyn.",
+    "lib.arcade.betMax": "Uchaf",
+    "lib.arcade.deal": "Dosbarthu",
+    "lib.arcade.hit": "Taro",
+    "lib.arcade.stand": "Aros",
+    "lib.arcade.double": "Dyblu",
+    "lib.arcade.split": "Hollti",
+    "lib.arcade.nextHand": "Llaw nesaf",
+    "lib.arcade.note.blackjack": "Arian chwarae yn unig — dim arian go iawn. Rydych chi'n dechrau gyda 500 o sglodion; i basio'r lefel, cyrhaeddwch y nifer targed o sglodion o fewn y nifer o ddwylo a ganiateir. Dewch yn nes at 21 na'r deliwr heb fynd drosodd. Mae'r deliwr yn tynnu cardiau nes cyrraedd 17. Mae blackjack (ás a cherdyn gwerth deg) yn talu mwy. Dyblu: dyblwch eich bet a chymryd un cerdyn arall yn union. Hollti: ar gael pan fydd gan eich dau gerdyn cyntaf yr un gwerth.",
+    "lib.arcade.dealer": "Deliwr",
+    "lib.arcade.you": "Chi",
+    "lib.arcade.bet": "Bet",
+    "lib.arcade.chips": "Sglodion: {n}",
+    "lib.arcade.handsLeft": "{n} llaw ar ôl",
+    "lib.arcade.won": "Enillasoch {n} sglodyn.",
+    "lib.arcade.lost": "Collasoch {n} sglodyn.",
+    "lib.arcade.even": "Cyfartal.",
+    "lib.arcade.note.videopoker": "Arian chwarae yn unig — dim arian go iawn. Dewiswch bet o 1–5 sglodyn, pwyswch Dosbarthu i gael pum cerdyn, cliciwch ar y cardiau rydych am eu cadw, yna pwyswch Tynnu i newid y gweddill. Mae pâr o jaciau neu well yn talu. Rydych chi'n dechrau gyda 100 o sglodion; i basio'r lefel, cyrhaeddwch y nifer targed o sglodion o fewn y nifer o ddwylo a ganiateir.",
+    "lib.arcade.hold": "CADW",
+    "lib.arcade.draw": "Tynnu",
+    "lib.arcade.note.checkers": "Rydych chi'n chwarae coch (ar y gwaelod) ac yn symud gyntaf. Mae darn yn symud un sgwâr yn groeslinol ymlaen i sgwâr gwag. Os gallwch neidio dros ddarn y gwrthwynebydd, rhaid i chi wneud hynny, a gallwch ddal ati i neidio i ddal sawl darn. Mae darn sy'n cyrraedd y rhes bellaf yn cael ei goroni'n frenin a gall symud a dal am yn ôl hefyd. Rydych chi'n colli pan nad oes gennych ddarnau na symudiad cyfreithlon.",
+    "lib.arcade.ckDraw": "Mae'r gêm yn gyfartal.",
+    "lib.arcade.ckWin": "Nid oes gan ddu symudiadau cyfreithlon — rydych chi'n ennill.",
+    "lib.arcade.ckLose": "Nid oes gennych symudiadau cyfreithlon — rydych chi'n colli.",
+    "lib.arcade.ckMust": "Rhaid dal pan fo modd — dewiswch un o'r darnau sy'n curo.",
+    "lib.arcade.note.oanquan": "Gêm Fietnamaidd draddodiadol. Eich rhes chi yw'r un isaf, rhes y cyfrifiadur yw'r un uchaf, a'r ddau ben yw'r sgwariau Mandarin. Cliciwch ar un o'ch sgwariau, yna dewiswch gyfeiriad: codir yr holl gerrig ynddo a'u hau, un i bob sgwâr. Ar ôl hau, os oes cerrig yn y sgwâr nesaf, codwch nhw a daliwch ati; os yw'r sgwâr nesaf yn wag a bod cerrig neu Fandarin yn yr un ar ei ôl, rydych chi'n ei ddal (ac yn dal ati os daw sgwâr llawn ar ôl sgwâr gwag eto). Stopiwch ar sgwâr Mandarin neu ar ôl dau sgwâr gwag yn olynol. Mae Mandarin yn werth 10 pwynt, carreg yn 1. Os yw eich ochr yn rhedeg allan o gerrig, hauir 5 o'ch pwyntiau a ddaliwyd yn ôl. Daw'r gêm i ben pan fydd y ddau Fandarin wedi'u dal; yr un â'r sgôr uchaf sy'n ennill.",
+    "lib.arcade.oqWin": "Gêm drosodd — mae gennych fwy o bwyntiau.",
+    "lib.arcade.oqLose": "Gêm drosodd — mae gan y cyfrifiadur fwy o bwyntiau.",
+    "lib.arcade.oqDraw": "Gêm drosodd — cyfartal.",
+    "lib.arcade.oqPick": "Dewiswch gyfeiriad: ◀ neu ▶.",
+    "lib.arcade.roll": "Taflu'r dis",
+    "lib.arcade.note.ludo": "Rydych chi'n chwarae coch; y cyfrifiadur sy'n chwarae'r lliwiau eraill. Taflwch y dis: mae angen 6 arnoch i ddod â darn allan o'r cartref, ac mae 6 yn rhoi tafliad arall i chi (mae tair 6 yn olynol yn colli eich tro). Mae darnau'n teithio clocwedd o amgylch y bwrdd, yna'n troi i golofn gartref eu lliw; mae angen y rhif union i gyrraedd y diwedd yn y canol. Os glaniwch yn union ar ddarn gwrthwynebydd, caiff ei anfon yn ôl i'w gartref (heblaw ar sgwariau seren a sgwariau cychwyn). Y chwaraewr cyntaf i ddod â'i 4 darn adref sy'n ennill.",
+    "lib.arcade.pickToken": "Dewiswch ddarn i'w symud.",
+    "lib.arcade.turnOf": "Tro {c}…",
+    "lib.arcade.ldWin": "Mae eich 4 darn i gyd adref!",
+    "lib.arcade.ldLose": "Cyrhaeddodd {c} adref yn gyntaf.",
+    "lib.arcade.threeSix": "Tair 6 yn olynol — rydych chi'n colli eich tro.",
+    "lib.arcade.noMove": "Ni all unrhyw ddarn symud.",
+    "lib.arcade.note.pyramid": "Clirio holl 28 cerdyn y pyramid. Cliciwch ar ddau gerdyn rhydd (heb eu gorchuddio gan unrhyw gerdyn) sy'n adio i 13 (A=1, J=11, Q=12) i'w tynnu ill dau; caiff Brenin ei dynnu ar ei ben ei hun gydag un clic. Gellir defnyddio cerdyn uchaf y pentwr gwastraff hefyd. Cliciwch ar y stoc i dynnu cerdyn; mae nifer yr adegau y gellir ailgylchu'r pentwr gwastraff yn gyfyngedig.",
+    "lib.arcade.note.tripeaks": "Clirio holl 28 cerdyn y tri chopa. Cliciwch ar gerdyn rhydd sydd union un rheng yn uwch neu'n is na'r cerdyn sy'n dangos ar y pentwr gwastraff (unrhyw siwt) i'w symud i lawr. Pan nad oes symudiadau ar ôl, cliciwch ar y stoc. Ar y lefelau haws, mae Brenin yn cysylltu ag Ás.",
+    "lib.arcade.note.golf": "Clirio'r holl golofnau. Dim ond cerdyn gwaelod pob colofn y gellir ei glicio: rhaid iddo fod union un rheng yn uwch neu'n is na'r cerdyn sy'n dangos. Pan nad oes symudiadau ar ôl, cliciwch ar y stoc. Ar y lefelau haws, mae Brenin yn cysylltu ag Ás.",
+    "lib.arcade.ph.royal": "Fflysh brenhinol",
+    "lib.arcade.ph.sflush": "Fflysh syth",
+    "lib.arcade.ph.quads": "Pedwar o'r un fath",
+    "lib.arcade.ph.full": "Tŷ llawn",
+    "lib.arcade.ph.flush": "Fflysh",
+    "lib.arcade.ph.straight": "Syth",
+    "lib.arcade.ph.trips": "Tri o'r un fath",
+    "lib.arcade.ph.twopair": "Dau bâr",
+    "lib.arcade.ph.jacks": "Jaciau neu well",
+    "lib.arcade.ph.none": "Dim byd",
+    "lib.arcade.res.win": "Ennill",
+    "lib.arcade.res.lose": "Colli",
+    "lib.arcade.res.push": "Cyfartal",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Coch",
+    "lib.arcade.cGreen": "Gwyrdd",
+    "lib.arcade.cYellow": "Melyn",
+    "lib.arcade.cBlue": "Glas"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Torri Brics",
       "desc": "Llywiwch y bat a bowndiwch y bêl i dorri pob bricsen; 10 cam â chynlluniau gwahanol, gyda llygoden, cyffwrdd neu fysellau."
+    },
+    "pyramid": {
+      "name": "Solitaire Pyramid",
+      "desc": "Clirio'r pyramid 28 cerdyn trwy baru cardiau sy'n adio i 13; 10 lefel gyda llai a llai o ailddosbarthiadau."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Clirio tri chopa trwy gysylltu cardiau un rheng ar wahân; 10 lefel o hawdd i anodd."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Clirio'r colofnau trwy gysylltu cardiau un rheng ar wahân i'r cerdyn sy'n dangos; 10 lefel gyda mwy o golofnau wrth fynd ymlaen."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Chwaraewch blackjack yn erbyn y deliwr gyda sglodion rhithwir: dewch mor agos â phosibl at 21 heb fynd drosodd; dyblu a hollti; 10 lefel gyda thargedau cynyddol."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker tynnu pum cerdyn gyda sglodion rhithwir (Jaciau neu well); 10 lefel gyda thablau talu tynnach."
+    },
+    "checkers": {
+      "name": "Drafftiau",
+      "desc": "Chwaraewch ddrafftiau 8x8 yn erbyn y cyfrifiadur: dal gorfodol, neidiau lluosog a brenhinoedd; 10 lefel o hawdd i anodd."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Gêm ras pedwar lliw: taflwch y dis a dewch â'ch 4 darn adref yn gyntaf; chwaraewch yn erbyn 1 i 3 chwaraewr cyfrifiadur dros 10 lefel."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Gêm hau cerrig draddodiadol o Fietnam: heuwch gerrig a daliwch y Mandarinau yn erbyn y cyfrifiadur; 10 lefel o hawdd i anodd."
     }
   },
   "s": {

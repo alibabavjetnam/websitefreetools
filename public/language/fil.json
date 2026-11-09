@@ -340,7 +340,70 @@
     "lib.arcade.target": "Target: {n}",
     "lib.arcade.up": "Pataas",
     "lib.arcade.youVsAi": "Ikaw {a} – Computer {b}",
-    "lib.arcade.noHintFc": "Wala nang kapaki-pakinabang na tira. Ibalik ang ilang tira o magsimula ulit."
+    "lib.arcade.noHintFc": "Wala nang kapaki-pakinabang na tira. Ibalik ang ilang tira o magsimula ulit.",
+    "lib.arcade.recycles": "Natitirang redeal: {n}",
+    "lib.arcade.stockLeft": "Stock: {n}",
+    "lib.arcade.wrapOn": "Ang K ay kumakabit sa A",
+    "lib.arcade.wrapOff": "Ang K ay hindi kumakabit sa A",
+    "lib.arcade.hintDraw": "Wala nang pares. I-click ang stock para bumunot.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Magbigay",
+    "lib.arcade.hit": "Hit",
+    "lib.arcade.stand": "Stand",
+    "lib.arcade.double": "Double",
+    "lib.arcade.split": "Split",
+    "lib.arcade.nextHand": "Susunod na kamay",
+    "lib.arcade.note.blackjack": "Pekeng pera lang — walang totoong pera. Magsisimula ka sa 500 chips; abutin ang target na bilang ng chips sa loob ng pinapayagang bilang ng kamay para malampasan ang level. Mas lumapit sa 21 kaysa sa dealer nang hindi lumalampas. Bumubunot ang dealer hanggang umabot sa 17. Mas malaki ang bayad sa blackjack (isang alas at card na may halagang sampu). Double: doblehin ang taya at kumuha ng isa pang card. Split: puwede kapag magkapareho ang halaga ng unang dalawang card mo.",
+    "lib.arcade.dealer": "Dealer",
+    "lib.arcade.you": "Ikaw",
+    "lib.arcade.bet": "Taya",
+    "lib.arcade.chips": "Chips: {n}",
+    "lib.arcade.handsLeft": "{n} kamay ang natitira",
+    "lib.arcade.won": "Nanalo ka ng {n} chips.",
+    "lib.arcade.lost": "Natalo ka ng {n} chips.",
+    "lib.arcade.even": "Tabla.",
+    "lib.arcade.note.videopoker": "Pekeng pera lang — walang totoong pera. Pumili ng taya na 1–5 chips, pindutin ang Magbigay para sa limang card, i-click ang mga card na gusto mong itago, saka pindutin ang Bumunot para palitan ang iba. Binabayaran ang pares ng jack o mas mataas. Magsisimula ka sa 100 chips; abutin ang target na bilang ng chips sa loob ng pinapayagang bilang ng kamay para malampasan ang level.",
+    "lib.arcade.hold": "ITAGO",
+    "lib.arcade.draw": "Bumunot",
+    "lib.arcade.note.checkers": "Ikaw ang Pula (nasa ibaba) at ikaw ang unang gagalaw. Ang piyesa ay gumagalaw nang isang kuwadrado pahilis pasulong sa walang laman na kuwadrado. Kung makakatalon ka sa piyesa ng kalaban, dapat kang tumalon, at puwede kang magpatuloy sa pagtalon para makakuha ng maraming piyesa. Ang piyesang aabot sa pinakamalayong hanay ay magiging hari at puwede ring gumalaw at kumain pabalik. Matatalo ka kapag wala ka nang piyesa o legal na galaw.",
+    "lib.arcade.ckDraw": "Tabla ang laro.",
+    "lib.arcade.ckWin": "Wala nang legal na galaw ang Itim — panalo ka.",
+    "lib.arcade.ckLose": "Wala ka nang legal na galaw — talo ka.",
+    "lib.arcade.ckMust": "Dapat kang kumain kapag may pagkakataon — pumili ng isa sa mga kumikislap na piyesa.",
+    "lib.arcade.note.oanquan": "Isang tradisyonal na larong Vietnamese. Sa iyo ang ibabang hanay, sa computer ang itaas na hanay, at ang dalawang dulo ay mga kuwadradong Mandarin. I-click ang isa sa mga kuwadrado mo, saka pumili ng direksyon: kukunin ang lahat ng bato rito at ihahasik nang tig-iisa sa bawat kuwadrado. Pagkatapos maghasik, kung may bato ang susunod na kuwadrado, kunin ang mga ito at ituloy ang paghahasik; kung walang laman ang susunod na kuwadrado at may bato o Mandarin ang kasunod nito, makukuha mo iyon (at magpapatuloy ka kung may kasunod na punong kuwadrado ang isa pang walang laman). Huminto sa kuwadradong Mandarin o pagkatapos ng dalawang walang laman na kuwadrado nang sunod-sunod. Ang Mandarin ay 10 puntos, ang bato ay 1. Kung maubusan ng bato ang panig mo, 5 sa nakuha mong puntos ang ihahasik pabalik. Tapos ang laro kapag nakuha na ang dalawang Mandarin; panalo ang mas mataas ang iskor.",
+    "lib.arcade.oqWin": "Tapos na ang laro — mas marami kang puntos.",
+    "lib.arcade.oqLose": "Tapos na ang laro — mas marami ang puntos ng computer.",
+    "lib.arcade.oqDraw": "Tapos na ang laro — tabla.",
+    "lib.arcade.oqPick": "Pumili ng direksyon: ◀ o ▶.",
+    "lib.arcade.roll": "Ihagis ang dice",
+    "lib.arcade.note.ludo": "Ikaw ang Pula; ang computer ang gumagalaw sa ibang kulay. Ihagis ang dice: kailangan mo ng 6 para mailabas ang token sa bahay, at ang 6 ay nagbibigay ng isa pang hagis (tatlong 6 nang sunod-sunod, nawawala ang turn mo). Umiikot ang mga token nang pakanan sa board, saka liliko sa home column ng kanilang kulay; kailangan ang eksaktong bilang para marating ang finish sa gitna. Kapag eksaktong dumapo sa token ng kalaban, babalik ito sa bahay nito (maliban sa mga star square at start square). Ang unang makapag-uwi ng lahat ng 4 na token ang mananalo.",
+    "lib.arcade.pickToken": "Pumili ng token na igagalaw.",
+    "lib.arcade.turnOf": "Turn ni {c}…",
+    "lib.arcade.ldWin": "Nakauwi na ang lahat ng 4 mong token!",
+    "lib.arcade.ldLose": "Nauna si {c} sa pag-uwi.",
+    "lib.arcade.threeSix": "Tatlong 6 nang sunod-sunod — nawala ang turn mo.",
+    "lib.arcade.noMove": "Walang token na makagalaw.",
+    "lib.arcade.note.pyramid": "Alisin ang lahat ng 28 card ng pyramid. I-click ang dalawang libreng card (walang nakatakip na card) na may kabuuang 13 (A=1, J=11, Q=12) para alisin ang dalawa; ang King ay inaalis nang mag-isa sa isang click. Magagamit din ang pinakataas na card ng waste pile. I-click ang stock para bumunot; limitado ang bilang ng beses na puwedeng i-recycle ang waste pile.",
+    "lib.arcade.note.tripeaks": "Alisin ang lahat ng 28 card ng tatlong tuktok. I-click ang libreng card na eksaktong isang ranggo na mas mataas o mas mababa sa card na nakikita sa waste pile (anumang suit) para ilipat ito pababa. Kapag wala ka nang galaw, i-click ang stock para bumunot. Sa mas madaling level, ang King ay kumakabit sa Ace.",
+    "lib.arcade.note.golf": "Alisin ang lahat ng column. Ang pinakailalim na card lang ng bawat column ang puwedeng i-click: dapat eksaktong isang ranggo na mas mataas o mas mababa sa card na nakikita. Kapag wala ka nang galaw, i-click ang stock para bumunot. Sa mas madaling level, ang King ay kumakabit sa Ace.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Four of a kind",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Three of a kind",
+    "lib.arcade.ph.twopair": "Two pair",
+    "lib.arcade.ph.jacks": "Jacks o mas mataas",
+    "lib.arcade.ph.none": "Wala",
+    "lib.arcade.res.win": "Panalo",
+    "lib.arcade.res.lose": "Talo",
+    "lib.arcade.res.push": "Tabla",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Pula",
+    "lib.arcade.cGreen": "Berde",
+    "lib.arcade.cYellow": "Dilaw",
+    "lib.arcade.cBlue": "Asul"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Basag-Ladrilyo",
       "desc": "Kontrolin ang paddle at patalbugin ang bola para basagin lahat ng ladrilyo; 10 yugto na iba-iba ang ayos, gamit ang mouse, touch, o keys."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Alisin ang 28-card na pyramid sa pagpapares ng mga card na may kabuuang 13; 10 level na paunti nang paunti ang redeal."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Alisin ang tatlong tuktok sa pagkakabit ng mga card na isang ranggo ang pagitan; 10 level mula madali hanggang mahirap."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Alisin ang mga column sa pagkakabit ng mga card na isang ranggo ang pagitan sa nakikitang card; 10 level na pataas nang pataas ang bilang ng column."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Maglaro ng blackjack laban sa dealer gamit ang virtual chips: lumapit sa 21 nang hindi lumalampas; mag-double at mag-split; 10 level na tumataas ang target na chips."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Five-card draw poker gamit ang virtual chips (Jacks or Better); 10 level na paliit nang paliit ang bayad."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Maglaro ng 8x8 na dama laban sa computer: sapilitang pagkain, sunod-sunod na talon, at hari; 10 level mula madali hanggang mahirap."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Larong karera na may apat na kulay: ihagis ang dice at maunang iuwi ang 4 mong token; lumaban sa 1 hanggang 3 computer player sa 10 level."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Isang tradisyonal na larong Vietnamese na may paghahasik ng bato: maghasik ng bato at kunin ang mga Mandarin laban sa computer; 10 level mula madali hanggang mahirap."
     }
   },
   "s": {

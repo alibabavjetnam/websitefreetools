@@ -340,7 +340,70 @@
     "lib.arcade.target": "目標：{n}",
     "lib.arcade.up": "上",
     "lib.arcade.youVsAi": "你 {a} – 電腦 {b}",
-    "lib.arcade.noHintFc": "冇有用嘅步數喇。試吓還原幾步或者重新開始。"
+    "lib.arcade.noHintFc": "冇有用嘅步數喇。試吓還原幾步或者重新開始。",
+    "lib.arcade.recycles": "剩返重洗次數:{n}",
+    "lib.arcade.stockLeft": "牌堆:{n}",
+    "lib.arcade.wrapOn": "K 可以接 A",
+    "lib.arcade.wrapOff": "K 唔可以接 A",
+    "lib.arcade.hintDraw": "冇啱配對喇。㩒牌堆攞牌。",
+    "lib.arcade.betMax": "最大",
+    "lib.arcade.deal": "派牌",
+    "lib.arcade.hit": "叫牌",
+    "lib.arcade.stand": "停牌",
+    "lib.arcade.double": "加倍",
+    "lib.arcade.split": "分牌",
+    "lib.arcade.nextHand": "下一手",
+    "lib.arcade.note.blackjack": "淨係用遊戲籌碼,唔係真錢。你一開始有 500 個籌碼;喺限定手數內達到目標籌碼數就過關。要比莊家更接近 21 點,但唔可以爆牌。莊家要攞牌到 17 點為止。Blackjack(一隻 A 加一張值十點嘅牌)賠多啲。加倍:押注加倍,仲要即刻攞多一張牌。分牌:頭兩張牌點數一樣就可以分牌。",
+    "lib.arcade.dealer": "莊家",
+    "lib.arcade.you": "你",
+    "lib.arcade.bet": "下注",
+    "lib.arcade.chips": "籌碼:{n}",
+    "lib.arcade.handsLeft": "仲有 {n} 手",
+    "lib.arcade.won": "你贏咗 {n} 個籌碼。",
+    "lib.arcade.lost": "你輸咗 {n} 個籌碼。",
+    "lib.arcade.even": "打和。",
+    "lib.arcade.note.videopoker": "淨係用遊戲籌碼,唔係真錢。揀 1–5 個籌碼落注,㩒「派牌」攞五張牌,點選你想留低嘅牌,再㩒「換牌」換走其餘嘅牌。一對 J 或者更好嘅牌型就有賠。你一開始有 100 個籌碼;喺限定手數內達到目標籌碼數就過關。",
+    "lib.arcade.hold": "留牌",
+    "lib.arcade.draw": "換牌",
+    "lib.arcade.note.checkers": "你執紅棋(喺下面),先行。棋子斜住向前行一格去空位。如果可以跳過對方嘅棋子,就一定要跳,而且可以連續跳去食多隻棋。去到最遠嗰行嘅棋子會升做王,可以向後行同食子。冇棋或者冇合法著法就輸。",
+    "lib.arcade.ckDraw": "和棋。",
+    "lib.arcade.ckWin": "黑棋冇合法著法 — 你贏咗!",
+    "lib.arcade.ckLose": "你冇合法著法 — 你輸咗。",
+    "lib.arcade.ckMust": "有得食就一定要食 — 揀其中一隻閃緊嘅棋子。",
+    "lib.arcade.note.oanquan": "越南傳統遊戲。下面一行係你嘅,上面一行係電腦嘅,兩端係「官」格。點選你其中一格,再揀方向:格入面所有石仔都會攞起,逐格逐粒咁撒落去。撒完之後,如果下一格有石仔,就攞起繼續撒;如果下一格係空,而再下一格有石仔或者官,就食咗佢(如果再隔一個空格後面又係有石仔嘅格,就繼續食)。去到官格或者連續兩個空格就停。一個官值 10 分,一粒石仔值 1 分。如果你嗰邊冇晒石仔,會將你食到嘅 5 分撒返落去。兩個官都被食咗,遊戲就完結,分數高嗰個贏。",
+    "lib.arcade.oqWin": "遊戲完結 — 你嘅分數較高。",
+    "lib.arcade.oqLose": "遊戲完結 — 電腦嘅分數較高。",
+    "lib.arcade.oqDraw": "遊戲完結 — 打和。",
+    "lib.arcade.oqPick": "揀方向:◀ 或者 ▶。",
+    "lib.arcade.roll": "擲骰仔",
+    "lib.arcade.note.ludo": "你揸紅色;其他顏色由電腦揸。擲骰仔:要擲到 6 先可以將棋子由營地放出嚟,擲到 6 可以再擲一次(連續三個 6 就要跳過今次)。棋子順時針行一圈,然後轉入自己顏色嘅終點通道;要擲到啱啱好嘅點數先可以去到中間嘅終點。如果啱啱好落喺對方棋子嗰格,對方棋子要返回營地(星星格同起點格除外)。邊個最先將 4 隻棋子全部帶返終點,邊個就贏。",
+    "lib.arcade.pickToken": "揀一隻棋子行。",
+    "lib.arcade.turnOf": "輪到{c}…",
+    "lib.arcade.ldWin": "你嘅 4 隻棋子全部返到終點喇!",
+    "lib.arcade.ldLose": "{c}最先返到終點。",
+    "lib.arcade.threeSix": "連續三個 6 — 你要跳過今次。",
+    "lib.arcade.noMove": "冇棋子可以行。",
+    "lib.arcade.note.pyramid": "清走金字塔嘅全部 28 張牌。點選兩張自由牌(上面冇其他牌壓住)而點數加埋係 13(A=1、J=11、Q=12),就可以一齊清走;K 單獨㩒一下就清走。棄牌堆最上面嗰張牌都可以用。㩒牌堆攞牌;棄牌堆可以回收嘅次數有限。",
+    "lib.arcade.note.tripeaks": "清走三座山峰嘅全部 28 張牌。點選一張自由牌,只要佢比棄牌堆上面見到嘅牌大一點或者細一點(唔計花色),就可以移落去。冇得行嗰陣,㩒牌堆攞牌。簡單關卡入面,K 可以接 A。",
+    "lib.arcade.note.golf": "清走所有直行。每行只可以點選最底嗰張牌:佢一定要比見到嘅牌大一點或者細一點。冇得行嗰陣,㩒牌堆攞牌。簡單關卡入面,K 可以接 A。",
+    "lib.arcade.ph.royal": "皇家同花順",
+    "lib.arcade.ph.sflush": "同花順",
+    "lib.arcade.ph.quads": "四條",
+    "lib.arcade.ph.full": "葫蘆",
+    "lib.arcade.ph.flush": "同花",
+    "lib.arcade.ph.straight": "順子",
+    "lib.arcade.ph.trips": "三條",
+    "lib.arcade.ph.twopair": "兩對",
+    "lib.arcade.ph.jacks": "一對 J 或以上",
+    "lib.arcade.ph.none": "冇牌型",
+    "lib.arcade.res.win": "贏",
+    "lib.arcade.res.lose": "輸",
+    "lib.arcade.res.push": "和",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "紅",
+    "lib.arcade.cGreen": "綠",
+    "lib.arcade.cYellow": "黃",
+    "lib.arcade.cBlue": "藍"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "打磚塊",
       "desc": "控制擋板反彈個波打爛晒所有磚；10個唔同佈局嘅關卡，用滑鼠、觸控或者鍵盤玩。"
+    },
+    "pyramid": {
+      "name": "金字塔接龍",
+      "desc": "將加埋係 13 嘅牌配對,清走 28 張牌嘅金字塔;10 個關卡,重洗次數越嚟越少。"
+    },
+    "tripeaks": {
+      "name": "TriPeaks 接龍",
+      "desc": "將差一點嘅牌連埋一齊,清走三座山峰;10 個關卡,由易到難。"
+    },
+    "golf": {
+      "name": "Golf 接龍",
+      "desc": "將同見到嘅牌差一點嘅牌連埋一齊,清走所有直行;10 個關卡,越玩直行越多。"
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "用虛擬籌碼同莊家玩 Blackjack:要最接近 21 點但唔可以爆牌;可以加倍同分牌;10 個關卡,目標籌碼越嚟越多。"
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "用虛擬籌碼玩五張換牌撲克(J 或以上先有賠);10 個關卡,賠率表越嚟越嚴。"
+    },
+    "checkers": {
+      "name": "國際跳棋",
+      "desc": "同電腦玩 8x8 國際跳棋:強制食子、連環跳同升王;10 個關卡,由易到難。"
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "四色賽跑遊戲:擲骰仔,爭取將你嘅 4 隻棋子最先帶返終點;同 1 至 3 個電腦玩家對戰,共 10 個關卡。"
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan(官棋)",
+      "desc": "越南傳統撒石仔遊戲:撒石仔,同電腦鬥食「官」;10 個關卡,由易到難。"
     }
   },
   "s": {

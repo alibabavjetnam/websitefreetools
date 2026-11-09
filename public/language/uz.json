@@ -340,7 +340,70 @@
     "lib.arcade.target": "Maqsad: {n}",
     "lib.arcade.up": "Yuqoriga",
     "lib.arcade.youVsAi": "Siz {a} – Kompyuter {b}",
-    "lib.arcade.noHintFc": "Foydali yurish qolmadi. Bir necha yurishni bekor qiling yoki qaytadan boshlang."
+    "lib.arcade.noHintFc": "Foydali yurish qolmadi. Bir necha yurishni bekor qiling yoki qaytadan boshlang.",
+    "lib.arcade.recycles": "Qolgan qayta aralashtirishlar: {n}",
+    "lib.arcade.stockLeft": "Zaxira: {n}",
+    "lib.arcade.wrapOn": "K A bilan bog‘lanadi",
+    "lib.arcade.wrapOff": "K A bilan bog‘lanmaydi",
+    "lib.arcade.hintDraw": "Juftlik qolmadi. Karta olish uchun zaxiraga bosing.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Tarqatish",
+    "lib.arcade.hit": "Karta olish",
+    "lib.arcade.stand": "To‘xtash",
+    "lib.arcade.double": "Ikki barobar",
+    "lib.arcade.split": "Ajratish",
+    "lib.arcade.nextHand": "Keyingi qo‘l",
+    "lib.arcade.note.blackjack": "Faqat o‘yin puli, haqiqiy pul emas. Siz 500 ta jeton bilan boshlaysiz; bosqichni o‘tish uchun ruxsat etilgan qo‘llar soni ichida maqsadli jeton soniga yeting. 21 dan oshib ketmasdan, dilerga qaraganda 21 ga yaqinroq bo‘ling. Diler 17 ga yetguncha karta oladi. Blekjek (tuz va qiymati o‘n bo‘lgan karta) ko‘proq to‘laydi. Ikki barobar: tikishni ikki barobar oshirib, aynan bitta karta olasiz. Ajratish: dastlabki ikki karta qiymati bir xil bo‘lsa mumkin.",
+    "lib.arcade.dealer": "Diler",
+    "lib.arcade.you": "Siz",
+    "lib.arcade.bet": "Tikish",
+    "lib.arcade.chips": "Jetonlar: {n}",
+    "lib.arcade.handsLeft": "{n} ta qo‘l qoldi",
+    "lib.arcade.won": "Siz {n} jeton yutdingiz.",
+    "lib.arcade.lost": "Siz {n} jeton yutqazdingiz.",
+    "lib.arcade.even": "Durang.",
+    "lib.arcade.note.videopoker": "Faqat o‘yin puli, haqiqiy pul emas. 1–5 jeton tikishni tanlang, beshta karta olish uchun Tarqatish tugmasini bosing, saqlamoqchi bo‘lgan kartalarni bosing, so‘ng qolganlarini almashtirish uchun Almashtirish tugmasini bosing. Bir juft valet yoki undan yaxshisi to‘lanadi. Siz 100 ta jeton bilan boshlaysiz; bosqichni o‘tish uchun ruxsat etilgan qo‘llar soni ichida maqsadli jeton soniga yeting.",
+    "lib.arcade.hold": "SAQLASH",
+    "lib.arcade.draw": "Almashtirish",
+    "lib.arcade.note.checkers": "Siz qizil (pastda) bilan o‘ynaysiz va birinchi yurasiz. Shashka bir katak qiyshiq oldinga bo‘sh katakka yuradi. Raqibning shashkasi ustidan sakray olsangiz, sakrashingiz shart va bir nechta shashkani olish uchun sakrashni davom ettirishingiz mumkin. Oxirgi qatorga yetgan shashka shoh bo‘ladi va orqaga ham yura oladi, ola oladi. Shashkangiz yoki qonuniy yurishingiz qolmasa, yutqazasiz.",
+    "lib.arcade.ckDraw": "O‘yin durang bilan tugadi.",
+    "lib.arcade.ckWin": "Qoralarning qonuniy yurishi yo‘q — siz yutdingiz.",
+    "lib.arcade.ckLose": "Sizning qonuniy yurishingiz yo‘q — siz yutqazdingiz.",
+    "lib.arcade.ckMust": "Olish mumkin bo‘lsa, olishingiz shart — miltillayotgan shashkalardan birini tanlang.",
+    "lib.arcade.note.oanquan": "An’anaviy Vetnam o‘yini. Pastki qator sizniki, yuqori qator kompyuterniki, ikki chet esa Mandarin kataklari. Kataklaringizdan birini bosing, so‘ng yo‘nalishni tanlang: undagi barcha toshlar olinadi va har bir katakka bittadan sepiladi. Sepib bo‘lgach, keyingi katakda tosh bo‘lsa, ularni olib sepishni davom ettiring; keyingi katak bo‘sh bo‘lib, undan keyingisida tosh yoki Mandarin bo‘lsa, uni olasiz (yana bir bo‘sh katakdan keyin toshli katak kelsa, olishni davom ettirasiz). Mandarin katagida yoki ketma-ket ikkita bo‘sh katakdan keyin to‘xtang. Mandarin 10 ball, tosh 1 ball turadi. Tomoningizda tosh qolmasa, olgan ballaringizdan 5 tasi qayta sepiladi. Ikkala Mandarin olingach, o‘yin tugaydi; ko‘proq ball to‘plagan yutadi.",
+    "lib.arcade.oqWin": "O‘yin tugadi — ballaringiz ko‘proq.",
+    "lib.arcade.oqLose": "O‘yin tugadi — kompyuterning ballari ko‘proq.",
+    "lib.arcade.oqDraw": "O‘yin tugadi — durang.",
+    "lib.arcade.oqPick": "Yo‘nalishni tanlang: ◀ yoki ▶.",
+    "lib.arcade.roll": "Zar tashlash",
+    "lib.arcade.note.ludo": "Siz qizil bilan o‘ynaysiz; boshqa ranglarni kompyuter o‘ynaydi. Zar tashlang: toshni uydan chiqarish uchun 6 kerak, 6 tushsa yana bir marta tashlaysiz (ketma-ket uchta 6 navbatingizni yo‘qotadi). Toshlar taxta bo‘ylab soat mili yo‘nalishida yuradi, so‘ng o‘z rangining uy yo‘lagiga buriladi; markazdagi marraga yetish uchun aniq son kerak. Raqib toshi turgan katakka aynan tushsangiz, u o‘z uyiga qaytadi (yulduzcha va boshlang‘ich kataklar bundan mustasno). 4 ta toshini birinchi bo‘lib uyiga olib kirgan yutadi.",
+    "lib.arcade.pickToken": "Yuradigan toshni tanlang.",
+    "lib.arcade.turnOf": "{c} navbati…",
+    "lib.arcade.ldWin": "4 ta toshingizning hammasi uyga yetdi!",
+    "lib.arcade.ldLose": "{c} uyga birinchi yetdi.",
+    "lib.arcade.threeSix": "Ketma-ket uchta 6 — navbatingiz o‘tib ketdi.",
+    "lib.arcade.noMove": "Hech bir tosh yura olmaydi.",
+    "lib.arcade.note.pyramid": "Piramidaning barcha 28 kartasini tozalang. Yig‘indisi 13 bo‘lgan (A=1, J=11, Q=12) ikkita ochiq kartani (ustini boshqa karta yopmagan) bosing, ikkalasi ham olinadi; Shoh bitta bosish bilan yolg‘iz olinadi. Tashlangan kartalar uyumining ustki kartasidan ham foydalanish mumkin. Karta olish uchun zaxiraga bosing; tashlangan uyumni qayta ishlatish soni cheklangan.",
+    "lib.arcade.note.tripeaks": "Uchta cho‘qqining barcha 28 kartasini tozalang. Tashlangan uyumda ko‘rinib turgan kartadan aynan bir daraja yuqori yoki past bo‘lgan ochiq kartani (istalgan mast) bosing, u pastga tushadi. Yurish qolmaganda zaxiraga bosib karta oling. Oson bosqichlarda K A bilan bog‘lanadi.",
+    "lib.arcade.note.golf": "Barcha ustunlarni tozalang. Har bir ustunning faqat pastki kartasini bosish mumkin: u ko‘rinib turgan kartadan aynan bir daraja yuqori yoki past bo‘lishi kerak. Yurish qolmaganda zaxiraga bosib karta oling. Oson bosqichlarda K A bilan bog‘lanadi.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "To‘rtlik",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Uchlik",
+    "lib.arcade.ph.twopair": "Ikki juft",
+    "lib.arcade.ph.jacks": "Valet yoki undan yaxshi",
+    "lib.arcade.ph.none": "Hech narsa",
+    "lib.arcade.res.win": "Yutuq",
+    "lib.arcade.res.lose": "Yutqazish",
+    "lib.arcade.res.push": "Durang",
+    "lib.arcade.res.blackjack": "Blekjek!",
+    "lib.arcade.cRed": "Qizil",
+    "lib.arcade.cGreen": "Yashil",
+    "lib.arcade.cYellow": "Sariq",
+    "lib.arcade.cBlue": "Ko‘k"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "G'isht sindirgich",
       "desc": "Raketkani boshqaring va barcha g'ishtlarni sindirish uchun to'pni sakrating; turli joylashuvli 10 bosqich, sichqoncha, sensor yoki tugmalar bilan."
+    },
+    "pyramid": {
+      "name": "Piramida soliteri",
+      "desc": "Yig‘indisi 13 bo‘lgan kartalarni juftlab, 28 kartali piramidani tozalang; qayta aralashtirish tobora kamayib boradigan 10 bosqich."
+    },
+    "tripeaks": {
+      "name": "TriPeaks soliteri",
+      "desc": "Bir daraja farq qiladigan kartalarni bog‘lab, uchta cho‘qqini tozalang; osondan qiyingacha 10 bosqich."
+    },
+    "golf": {
+      "name": "Golf soliteri",
+      "desc": "Ko‘rinib turgan kartadan bir daraja farq qiladigan kartalarni bog‘lab, ustunlarni tozalang; oldinga borgan sari ustunlar ko‘payadigan 10 bosqich."
+    },
+    "blackjack": {
+      "name": "Blekjek",
+      "desc": "Virtual jetonlar bilan dilerga qarshi blekjek o‘ynang: oshib ketmasdan 21 ga eng yaqin bo‘ling; ikki barobar va ajratish; maqsadli jetonlar oshib boradigan 10 bosqich."
+    },
+    "video-poker": {
+      "name": "Video poker",
+      "desc": "Virtual jetonlar bilan beshta kartali almashtirishli poker (valet yoki undan yaxshi); to‘lov jadvallari tobora qattiqlashadigan 10 bosqich."
+    },
+    "checkers": {
+      "name": "Shashka",
+      "desc": "Kompyuterga qarshi 8x8 shashka o‘ynang: majburiy olish, ko‘p sakrash va shohlar; osondan qiyingacha 10 bosqich."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "To‘rt rangli poyga o‘yini: zar tashlab, 4 ta toshingizni birinchi bo‘lib uyga olib keling; 10 bosqichda 1 dan 3 gacha kompyuter o‘yinchisiga qarshi o‘ynang."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "An’anaviy Vetnam tosh sepish o‘yini: toshlarni sepib, kompyuterga qarshi Mandarinlarni oling; osondan qiyingacha 10 bosqich."
     }
   },
   "s": {

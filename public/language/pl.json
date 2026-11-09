@@ -340,7 +340,70 @@
     "lib.arcade.target": "Cel: {n}",
     "lib.arcade.up": "W górę",
     "lib.arcade.youVsAi": "Ty {a} – Komputer {b}",
-    "lib.arcade.noHintFc": "Brak przydatnych ruchów. Cofnij kilka ruchów albo zacznij od nowa."
+    "lib.arcade.noHintFc": "Brak przydatnych ruchów. Cofnij kilka ruchów albo zacznij od nowa.",
+    "lib.arcade.recycles": "Pozostałe przetasowania: {n}",
+    "lib.arcade.stockLeft": "Talia: {n}",
+    "lib.arcade.wrapOn": "Król łączy się z asem",
+    "lib.arcade.wrapOff": "Król nie łączy się z asem",
+    "lib.arcade.hintDraw": "Brak par. Kliknij talię, aby dobrać kartę.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Rozdaj",
+    "lib.arcade.hit": "Dobierz",
+    "lib.arcade.stand": "Pas",
+    "lib.arcade.double": "Podwój",
+    "lib.arcade.split": "Rozdziel",
+    "lib.arcade.nextHand": "Następne rozdanie",
+    "lib.arcade.note.blackjack": "Tylko wirtualne pieniądze, bez prawdziwych pieniędzy. Zaczynasz z 500 żetonami; osiągnij docelową liczbę żetonów w dozwolonej liczbie rozdań, aby zaliczyć poziom. Zbliż się do 21 bardziej niż krupier, nie przekraczając tej wartości. Krupier dobiera do 17. Blackjack (as i karta wartości dziesięciu) płaci więcej. Podwojenie: podwajasz stawkę i dostajesz dokładnie jedną kartę. Rozdzielenie: możliwe, gdy pierwsze dwie karty mają taką samą wartość.",
+    "lib.arcade.dealer": "Krupier",
+    "lib.arcade.you": "Ty",
+    "lib.arcade.bet": "Stawka",
+    "lib.arcade.chips": "Żetony: {n}",
+    "lib.arcade.handsLeft": "Pozostało rozdań: {n}",
+    "lib.arcade.won": "Wygrywasz {n} żetonów.",
+    "lib.arcade.lost": "Tracisz {n} żetonów.",
+    "lib.arcade.even": "Remis.",
+    "lib.arcade.note.videopoker": "Tylko wirtualne pieniądze, bez prawdziwych pieniędzy. Wybierz stawkę 1–5 żetonów, naciśnij Rozdaj, aby dostać pięć kart, kliknij karty, które chcesz zatrzymać, i naciśnij Dobierz, aby wymienić resztę. Płaci para waletów lub lepszy układ. Zaczynasz ze 100 żetonami; osiągnij docelową liczbę żetonów w dozwolonej liczbie rozdań, aby zaliczyć poziom.",
+    "lib.arcade.hold": "ZATRZYMAJ",
+    "lib.arcade.draw": "Dobierz",
+    "lib.arcade.note.checkers": "Grasz czerwonymi (na dole) i zaczynasz. Pionek porusza się o jedno pole po przekątnej do przodu na puste pole. Jeśli możesz przeskoczyć pionek przeciwnika, musisz to zrobić, a możesz skakać dalej, bijąc kilka pionków. Pionek, który dotrze do ostatniego rzędu, zostaje damką i może poruszać się oraz bić także do tyłu. Przegrywasz, gdy nie masz pionków albo możliwych ruchów.",
+    "lib.arcade.ckDraw": "Gra kończy się remisem.",
+    "lib.arcade.ckWin": "Czarne nie mają ruchu — wygrywasz.",
+    "lib.arcade.ckLose": "Nie masz żadnego ruchu — przegrywasz.",
+    "lib.arcade.ckMust": "Bicie jest obowiązkowe — wybierz jeden z pulsujących pionków.",
+    "lib.arcade.note.oanquan": "Tradycyjna wietnamska gra. Dolny rząd jest twój, górny należy do komputera, a oba końce to pola mandarynów. Kliknij jedno ze swoich pól, a następnie wybierz kierunek: wszystkie kamienie z niego zostają zabrane i rozsiane po jednym na kolejne pola. Po rozsianiu, jeśli następne pole zawiera kamienie, zabierasz je i siejesz dalej; jeśli następne pole jest puste, a kolejne ma kamienie lub mandarynka, zdobywasz je (i bijesz dalej, jeśli po pustym polu następuje pełne). Przerywasz na polu mandarynka lub po dwóch pustych polach z rzędu. Mandarynek jest wart 10 punktów, kamień 1. Jeśli twojej stronie zabraknie kamieni, 5 twoich zdobytych punktów zostaje rozsianych z powrotem. Gra kończy się, gdy zdobyte zostaną oba mandarynki; wygrywa wyższy wynik.",
+    "lib.arcade.oqWin": "Koniec gry — masz więcej punktów.",
+    "lib.arcade.oqLose": "Koniec gry — komputer ma więcej punktów.",
+    "lib.arcade.oqDraw": "Koniec gry — remis.",
+    "lib.arcade.oqPick": "Wybierz kierunek: ◀ lub ▶.",
+    "lib.arcade.roll": "Rzuć kostką",
+    "lib.arcade.note.ludo": "Grasz czerwonymi, pozostałe kolory prowadzi komputer. Rzuć kostką: potrzebujesz szóstki, aby wyprowadzić pionek z bazy, a szóstka daje dodatkowy rzut (trzy szóstki z rzędu przepadają kolejką). Pionki okrążają planszę zgodnie z ruchem wskazówek zegara, a potem wchodzą na ścieżkę domową swojego koloru; do mety w środku potrzebujesz dokładnej liczby oczek. Wylądowanie dokładnie na pionku przeciwnika odsyła go do bazy (poza polami gwiazdy i polami startowymi). Wygrywa gracz, który pierwszy sprowadzi do domu wszystkie 4 pionki.",
+    "lib.arcade.pickToken": "Wybierz pionek do ruchu.",
+    "lib.arcade.turnOf": "Kolej: {c}…",
+    "lib.arcade.ldWin": "Wszystkie 4 twoje pionki są w domu!",
+    "lib.arcade.ldLose": "{c} dotarł do domu pierwszy.",
+    "lib.arcade.threeSix": "Trzy szóstki z rzędu — tracisz kolejkę.",
+    "lib.arcade.noMove": "Żaden pionek nie może się ruszyć.",
+    "lib.arcade.note.pyramid": "Usuń wszystkie 28 kart piramidy. Kliknij dwie wolne karty (niezakryte żadną inną), które dają razem 13 (A=1, J=11, Q=12), aby usunąć obie; Króla usuwa się samego jednym kliknięciem. Można też użyć wierzchniej karty ze stosu odrzuconych. Kliknij talię, aby dobrać kartę; liczba przetasowań stosu odrzuconych jest ograniczona.",
+    "lib.arcade.note.tripeaks": "Usuń wszystkie 28 kart z trzech szczytów. Kliknij wolną kartę, która jest dokładnie o jedną wartość wyższa lub niższa od karty widocznej na stosie odrzuconych (dowolny kolor), aby ją przenieść. Gdy skończą ci się ruchy, kliknij talię, aby dobrać kartę. Na łatwiejszych poziomach Król łączy się z asem.",
+    "lib.arcade.note.golf": "Usuń wszystkie kolumny. Można kliknąć tylko dolną kartę każdej kolumny: musi być dokładnie o jedną wartość wyższa lub niższa od widocznej karty. Gdy skończą ci się ruchy, kliknij talię, aby dobrać kartę. Na łatwiejszych poziomach Król łączy się z asem.",
+    "lib.arcade.ph.royal": "Poker królewski",
+    "lib.arcade.ph.sflush": "Poker",
+    "lib.arcade.ph.quads": "Kareta",
+    "lib.arcade.ph.full": "Full",
+    "lib.arcade.ph.flush": "Kolor",
+    "lib.arcade.ph.straight": "Street",
+    "lib.arcade.ph.trips": "Trójka",
+    "lib.arcade.ph.twopair": "Dwie pary",
+    "lib.arcade.ph.jacks": "Walety lub lepiej",
+    "lib.arcade.ph.none": "Nic",
+    "lib.arcade.res.win": "Wygrana",
+    "lib.arcade.res.lose": "Przegrana",
+    "lib.arcade.res.push": "Remis",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Czerwony",
+    "lib.arcade.cGreen": "Zielony",
+    "lib.arcade.cYellow": "Żółty",
+    "lib.arcade.cBlue": "Niebieski"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Rozbijanie cegieł",
       "desc": "Steruj paletką i odbijaj piłkę, by rozbić wszystkie cegły; 10 etapów o różnych układach, mysz, dotyk lub klawiatura."
+    },
+    "pyramid": {
+      "name": "Piramida (pasjans)",
+      "desc": "Usuń piramidę z 28 kart, łącząc karty dające razem 13; 10 poziomów z coraz mniejszą liczbą przetasowań."
+    },
+    "tripeaks": {
+      "name": "Pasjans TriPeaks",
+      "desc": "Usuń trzy szczyty, łącząc karty różniące się o jedną wartość; 10 poziomów od łatwych do trudnych."
+    },
+    "golf": {
+      "name": "Pasjans Golf",
+      "desc": "Usuń kolumny, łącząc karty różniące się o jedną wartość od widocznej karty; 10 poziomów z coraz większą liczbą kolumn."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Zagraj w blackjacka z krupierem na wirtualne żetony: zbliż się do 21, nie przekraczając; podwajaj i rozdzielaj; 10 poziomów z rosnącymi celami żetonów."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker z wymianą pięciu kart na wirtualne żetony (walety lub lepiej); 10 poziomów z coraz skromniejszymi tabelami wypłat."
+    },
+    "checkers": {
+      "name": "Warcaby",
+      "desc": "Zagraj w warcaby 8x8 z komputerem: obowiązkowe bicie, wielokrotne skoki i damki; 10 poziomów od łatwych do trudnych."
+    },
+    "ludo": {
+      "name": "Chińczyk",
+      "desc": "Wyścigowa gra w czterech kolorach: rzucaj kostką i jako pierwszy sprowadź do domu swoje 4 pionki; graj z 1 do 3 graczami komputerowymi na 10 poziomach."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Tradycyjna wietnamska gra w rozsiewanie kamieni: rozsiewaj kamienie i zdobywaj mandarynów w starciu z komputerem; 10 poziomów od łatwych do trudnych."
     }
   },
   "s": {

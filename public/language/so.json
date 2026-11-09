@@ -340,7 +340,70 @@
     "lib.arcade.target": "Bartilmaameed: {n}",
     "lib.arcade.up": "Kor",
     "lib.arcade.youVsAi": "Adiga {a} – Kombiyuutar {b}",
-    "lib.arcade.noHintFc": "Ma jiro dhaqaaq waxtar leh oo haray. Dib u celi dhowr dhaqaaq ama dib u bilow."
+    "lib.arcade.noHintFc": "Ma jiro dhaqaaq waxtar leh oo haray. Dib u celi dhowr dhaqaaq ama dib u bilow.",
+    "lib.arcade.recycles": "Dib-u-qaybin harsan: {n}",
+    "lib.arcade.stockLeft": "Xirmada: {n}",
+    "lib.arcade.wrapOn": "Boqorku wuxuu ku xirmaa Ace",
+    "lib.arcade.wrapOff": "Boqorku kuma xirmo Ace",
+    "lib.arcade.hintDraw": "Lammaane kale ma harin. Guji xirmada si aad kaarka u qaaddo.",
+    "lib.arcade.betMax": "Ugu badan",
+    "lib.arcade.deal": "Qaybi",
+    "lib.arcade.hit": "Qaad kaar",
+    "lib.arcade.stand": "Istaag",
+    "lib.arcade.double": "Laban laab",
+    "lib.arcade.split": "Kala qaybi",
+    "lib.arcade.nextHand": "Gacanta xigta",
+    "lib.arcade.note.blackjack": "Lacag ciyaar oo kaliya — maaha lacag dhab ah. Waxaad bilaabaysaa 500 jeeto; gaar tirada jeetooyinka bartilmaameedka ah gacmaha la ogolyahay gudahood si aad heerka u gudubto. U dhowaw 21 in ka badan qaybiyaha adigoon dhaafin. Qaybiyuhu wuu qaadaa kaararka ilaa uu gaaro 17. Blackjack (Ace iyo kaar qiimihiisu toban yahay) wuxuu bixiyaa wax dheeraad ah. Laban laab: waxaad labanlaabtaa ciyaarta oo waxaad qaadataa hal kaar oo keliya. Kala qaybi: waa suurtogal marka laba kaar ee ugu horreeya qiimo isku mid ah leeyihiin.",
+    "lib.arcade.dealer": "Qaybiye",
+    "lib.arcade.you": "Adiga",
+    "lib.arcade.bet": "Ciyaar",
+    "lib.arcade.chips": "Jeetooyin: {n}",
+    "lib.arcade.handsLeft": "{n} gacmood ayaa harsan",
+    "lib.arcade.won": "Waxaad ku guulaysatay {n} jeeto.",
+    "lib.arcade.lost": "Waxaad lumisay {n} jeeto.",
+    "lib.arcade.even": "Barbarro.",
+    "lib.arcade.note.videopoker": "Lacag ciyaar oo kaliya — maaha lacag dhab ah. Dooro ciyaar 1–5 jeeto ah, taabo Qaybi si aad shan kaar u hesho, guji kaararka aad rabto inaad haysato, kaddibna taabo Qaad si aad kuwa kale u beddesho. Lammaane Jack ah ama ka sii wanaagsan ayaa lacag bixiya. Waxaad bilaabaysaa 100 jeeto; gaar tirada jeetooyinka bartilmaameedka ah gacmaha la ogolyahay gudahood si aad heerka u gudubto.",
+    "lib.arcade.hold": "HAYSO",
+    "lib.arcade.draw": "Qaad",
+    "lib.arcade.note.checkers": "Waxaad ciyaartaa Casaan (hoose) oo aad horeysaa. Xabbad waxay u dhaqaaqdaa hal square oo jiif ah hore gaar ah square madhan. Haddii aad xabbadda khasmiga ka boodi karto, waa inaad boodaa, waxaadna sii wadi kartaa boodka si aad xabbado badan u qabato. Xabbadda gaadha safka ugu dambeeya waxay noqotaa boqor oo dib ayay u dhaqaaqi kartaa una qabsan kartaa. Waad ku guuldareysataa marka aadan haysan xabbado ama dhaqdhaqaaq sharci ah.",
+    "lib.arcade.ckDraw": "Ciyaarta waa barbarro.",
+    "lib.arcade.ckWin": "Madaxa Madow dhaqdhaqaaq sharci ah ma laha — waad guulaysatay.",
+    "lib.arcade.ckLose": "Dhaqdhaqaaq sharci ah ma lihid — waad lumisay.",
+    "lib.arcade.ckMust": "Waa inaad qabataa marka aad awooddo — dooro mid ka mid ah xabbadaha dhalaalaya.",
+    "lib.arcade.note.oanquan": "Ciyaar dhaqameed Vietnam. Safka hoose waa kaaga, safka sare waa kombuyuutarka, labada darafna waa laba square oo Mandarin ah. Guji mid ka mid ah square-yadaada kadibna dooro jiho: dhagaxyada oo dhan waa la qaadaa lana beeraa mid mid square kasta. Kadib beerista, haddii square-ka xiga uu dhagaxyo leeyahay, qaad oo sii beer; haddii square-ka xiga madhan yahay kan ka dambeeyana uu dhagaxyo ama Mandarin leeyahay, waad qabataa (waxaadna sii qabataa haddii square madhan uu raaco mid buuxa). Waxaad istaagtaa square-ka Mandarin ama kadib laba square oo madhan oo is xigta. Mandarin wuxuu leeyahay 10 dhibcood, dhagaxna 1. Haddii dhinaca aad dhagaxyo ka dhamaadaan, 5 dhibcood oo aad qabatay ayaa dib loo beeraa. Ciyaartu waxay dhamaanaysaa marka labada Mandarin la qabto; ciyaaryahanka dhibcaha badan leh ayaa guulaysta.",
+    "lib.arcade.oqWin": "Ciyaartii way dhammaatay — dhibco badan ayaad leedahay.",
+    "lib.arcade.oqLose": "Ciyaartii way dhammaatay — kombuyuutarku dhibco badan ayuu leeyahay.",
+    "lib.arcade.oqDraw": "Ciyaartii way dhammaatay — barbarro.",
+    "lib.arcade.oqPick": "Dooro jiho: ◀ ama ▶.",
+    "lib.arcade.roll": "Tuur laabta",
+    "lib.arcade.note.ludo": "Waxaad ciyaartaa Casaan; midabada kale kombuyuutarka ayaa ciyaara. Tuur laabta: waxaad u baahan tahay 6 si aad xabbad ugu soo saarto gurigeeda, 6 na waxay ku siisaa tuur kale (saddex 6 oo isdaba joog ah waxay ku lumisaa mudadaada). Xabbadaha waxay wareegaan sabuuradda jihada saacadda, kadibna waxay gelaan wadada guriga ee midabkooda; waxaad u baahan tahay tiro sax ah si aad dhamaadka dhexda u gaarto. Ku degidda saxda ah xabbadda khasmiga waxay u celisaa gurigeeda (marka laga reebo square-yada xiddigta iyo bilowga). Ciyaaryahanka marka hore keena dhammaan 4 xabbadood guriga ayaa guulaysta.",
+    "lib.arcade.pickToken": "Dooro xabbad lagu dhaqaajiyo.",
+    "lib.arcade.turnOf": "Mudadda {c}…",
+    "lib.arcade.ldWin": "Dhammaan 4 xabbadood guriga way gaareen!",
+    "lib.arcade.ldLose": "{c} ayaa marka hore gaaray guriga.",
+    "lib.arcade.threeSix": "Saddex 6 oo isdaba joog ah — waxaad lumisay mudadaada.",
+    "lib.arcade.noMove": "Xabbad dhaqaaqi karta ma jirto.",
+    "lib.arcade.note.pyramid": "Ka saar dhammaan 28 kaar ee pyramid-ka. Guji laba kaar oo bannaan (aan kaar kale ku daboolnayn) oo isugeynta ay tahay 13 (A=1, J=11, Q=12) si labadaba loo saaro; Boqorka waxaa keligiis lagu saaraa hal guji. Kaarka sare ee xirmada qashinka sidoo kale waa la isticmaali karaa. Guji xirmada si aad kaar u qaaddo; tirada jeer ee xirmada qashinka dib loo isticmaali karo waa xaddidan tahay.",
+    "lib.arcade.note.tripeaks": "Ka saar dhammaan 28 kaar ee saddexda qalcad. Guji kaar bannaan oo si sax ah hal darajo uga sarreeya ama uga hooseeya kaarka ka muuqda xirmada qashinka (nooc kasta) si aad hoos ugu dhaqaajiso. Marka dhaqdhaqaaqyadu dhamaadaan, guji xirmada si aad kaar u qaaddo. Heerarka fudud, Boqorku wuxuu ku xirmaa Ace.",
+    "lib.arcade.note.golf": "Ka saar dhammaan tiirarka. Kaarka hoose ee tiir kasta oo kaliya ayaa la gujin karaa: waa inuu si sax ah hal darajo uga sarreeyaa ama uga hooseeyaa kaarka muuqda. Marka dhaqdhaqaaqyadu dhamaadaan, guji xirmada si aad kaar u qaaddo. Heerarka fudud, Boqorku wuxuu ku xirmaa Ace.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Afar isku mid ah",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Saddex isku mid ah",
+    "lib.arcade.ph.twopair": "Laba lammaane",
+    "lib.arcade.ph.jacks": "Jacks ama ka wanaagsan",
+    "lib.arcade.ph.none": "Waxba",
+    "lib.arcade.res.win": "Guul",
+    "lib.arcade.res.lose": "Guuldarro",
+    "lib.arcade.res.push": "Barbarro",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Casaan",
+    "lib.arcade.cGreen": "Cagaar",
+    "lib.arcade.cYellow": "Huruud",
+    "lib.arcade.cBlue": "Buluug"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Burburiyaha leebka",
       "desc": "Hag sabuuradda oo kubadda ka boodi si aad u burburiso leeb kasta; 10 marxaladood oo qaabab kala duwan leh, jiir, taabasho ama furayaal."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Ka saar pyramid-ka 28 kaar adigoo isku qabanaya kaararka isugeyntoodu tahay 13; 10 heer oo harsan oo dib u qaybin yaraanaya."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Ka saar saddex qalcad adigoo isku xirayo kaararka hal darajo ku kala duwan; 10 heer oo fudud ilaa adag."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Ka saar tiirarka adigoo isku xirayo kaararka hal darajo uga duwan kaarka muuqda; 10 heer oo tiirar badan marka aad horumarto."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Ku ciyaar blackjack qaybiyaha jeetooyin virtual ah: u dhowaw 21 adigoon dhaafin; laban laab oo kala qaybi; 10 heer oo bartilmaameedyo jeeto kordhaya leh."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker shan kaar ee beddelka leh oo jeetooyin virtual ah (Jacks ama ka wanaagsan); 10 heer oo jadwalyo lacag-bixin ka adag leh."
+    },
+    "checkers": {
+      "name": "Checkers",
+      "desc": "Ku ciyaar checkers 8x8 kombuyuutarka: qabasho khasab ah, boodo badan iyo boqorro; 10 heer oo fudud ilaa adag."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Ciyaar tartan ah oo afar midab leh: tuur laabta oo keen 4-ta xabbadood guriga marka hore; la ciyaar 1 ilaa 3 ciyaaryahan kombuyuutar 10 heer ah gudahood."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Ciyaar dhaqameed Vietnam oo beerista dhagaxyada ah: beer dhagaxyada oo qabo Mandarin-ka kombuyuutarka; 10 heer oo fudud ilaa adag."
     }
   },
   "s": {

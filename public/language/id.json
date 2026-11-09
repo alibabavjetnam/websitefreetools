@@ -340,7 +340,70 @@
     "lib.arcade.target": "Target: {n}",
     "lib.arcade.up": "Atas",
     "lib.arcade.youVsAi": "Kamu {a} – Komputer {b}",
-    "lib.arcade.noHintFc": "Tidak ada langkah yang berguna lagi. Batalkan beberapa langkah atau mulai ulang."
+    "lib.arcade.noHintFc": "Tidak ada langkah yang berguna lagi. Batalkan beberapa langkah atau mulai ulang.",
+    "lib.arcade.recycles": "Sisa kocok ulang: {n}",
+    "lib.arcade.stockLeft": "Tumpukan: {n}",
+    "lib.arcade.wrapOn": "K bersambung ke A",
+    "lib.arcade.wrapOff": "K tidak bersambung ke A",
+    "lib.arcade.hintDraw": "Tidak ada pasangan lagi. Klik tumpukan untuk mengambil kartu.",
+    "lib.arcade.betMax": "Maks",
+    "lib.arcade.deal": "Bagikan",
+    "lib.arcade.hit": "Tambah",
+    "lib.arcade.stand": "Berhenti",
+    "lib.arcade.double": "Gandakan",
+    "lib.arcade.split": "Pisah",
+    "lib.arcade.nextHand": "Tangan berikutnya",
+    "lib.arcade.note.blackjack": "Hanya uang mainan — bukan uang sungguhan. Anda mulai dengan 500 chip; capai target chip dalam jumlah tangan yang diizinkan untuk menyelesaikan level. Dapatkan nilai lebih dekat ke 21 daripada bandar tanpa melebihinya. Bandar mengambil kartu sampai mencapai 17. Blackjack (as plus kartu bernilai sepuluh) dibayar lebih. Gandakan: gandakan taruhan dan ambil tepat satu kartu lagi. Pisah: tersedia jika dua kartu pertama bernilai sama.",
+    "lib.arcade.dealer": "Bandar",
+    "lib.arcade.you": "Anda",
+    "lib.arcade.bet": "Taruhan",
+    "lib.arcade.chips": "Chip: {n}",
+    "lib.arcade.handsLeft": "Sisa {n} tangan",
+    "lib.arcade.won": "Anda menang {n} chip.",
+    "lib.arcade.lost": "Anda kalah {n} chip.",
+    "lib.arcade.even": "Seri.",
+    "lib.arcade.note.videopoker": "Hanya uang mainan — bukan uang sungguhan. Pilih taruhan 1–5 chip, tekan Bagikan untuk mendapat lima kartu, klik kartu yang ingin ditahan, lalu tekan Ganti untuk mengganti sisanya. Sepasang jack atau lebih tinggi akan dibayar. Anda mulai dengan 100 chip; capai target chip dalam jumlah tangan yang diizinkan untuk menyelesaikan level.",
+    "lib.arcade.hold": "TAHAN",
+    "lib.arcade.draw": "Ganti",
+    "lib.arcade.note.checkers": "Anda memainkan Merah (di bawah) dan jalan lebih dulu. Bidak maju satu petak diagonal ke depan ke petak kosong. Jika bisa melompati bidak lawan, Anda wajib melakukannya, dan boleh terus melompat untuk menangkap beberapa bidak. Bidak yang mencapai baris terjauh dimahkotai menjadi raja dan bisa bergerak serta menangkap ke belakang juga. Anda kalah jika tidak punya bidak atau langkah sah.",
+    "lib.arcade.ckDraw": "Permainan seri.",
+    "lib.arcade.ckWin": "Hitam tidak punya langkah sah — Anda menang.",
+    "lib.arcade.ckLose": "Anda tidak punya langkah sah — Anda kalah.",
+    "lib.arcade.ckMust": "Anda wajib menangkap jika bisa — pilih salah satu bidak yang berdenyut.",
+    "lib.arcade.note.oanquan": "Permainan tradisional Vietnam. Baris bawah milik Anda, baris atas milik komputer, dan dua ujungnya adalah petak Mandarin. Klik salah satu petak Anda, lalu pilih arah: semua batu di dalamnya diambil dan disebar satu per petak. Setelah menyebar, jika petak berikutnya berisi batu, ambil dan lanjutkan menyebar; jika petak berikutnya kosong dan petak sesudahnya berisi batu atau Mandarin, Anda menangkapnya (dan terus menangkap jika petak kosong lain diikuti petak berisi). Berhenti di petak Mandarin atau setelah dua petak kosong berturut-turut. Satu Mandarin bernilai 10 poin, satu batu 1. Jika sisi Anda kehabisan batu, 5 poin tangkapan Anda disebar kembali. Permainan berakhir saat kedua Mandarin tertangkap; skor tertinggi menang.",
+    "lib.arcade.oqWin": "Permainan selesai — poin Anda lebih banyak.",
+    "lib.arcade.oqLose": "Permainan selesai — poin komputer lebih banyak.",
+    "lib.arcade.oqDraw": "Permainan selesai — seri.",
+    "lib.arcade.oqPick": "Pilih arah: ◀ atau ▶.",
+    "lib.arcade.roll": "Lempar dadu",
+    "lib.arcade.note.ludo": "Anda memainkan Merah; warna lain dimainkan komputer. Lempar dadu: Anda butuh angka 6 untuk mengeluarkan bidak dari kandang, dan angka 6 memberi lemparan lagi (tiga angka 6 berturut-turut membuat giliran hangus). Bidak berjalan searah jarum jam mengelilingi papan, lalu masuk ke jalur akhir sesuai warnanya; Anda butuh angka yang pas untuk mencapai garis akhir di tengah. Mendarat tepat di bidak lawan mengirimnya kembali ke kandang (kecuali di petak bintang dan petak awal). Pemain pertama yang membawa keempat bidaknya pulang menang.",
+    "lib.arcade.pickToken": "Pilih bidak untuk digerakkan.",
+    "lib.arcade.turnOf": "Giliran {c}…",
+    "lib.arcade.ldWin": "Keempat bidak Anda sudah sampai!",
+    "lib.arcade.ldLose": "{c} sampai lebih dulu.",
+    "lib.arcade.threeSix": "Tiga angka 6 berturut-turut — giliran Anda hangus.",
+    "lib.arcade.noMove": "Tidak ada bidak yang bisa bergerak.",
+    "lib.arcade.note.pyramid": "Bersihkan semua 28 kartu piramida. Klik dua kartu bebas (tidak tertutup kartu lain) yang jumlahnya 13 (A=1, J=11, Q=12) untuk menyingkirkan keduanya; King disingkirkan sendiri dengan satu klik. Kartu teratas tumpukan buangan juga bisa dipakai. Klik tumpukan untuk mengambil kartu; jumlah kali tumpukan buangan boleh didaur ulang terbatas.",
+    "lib.arcade.note.tripeaks": "Bersihkan semua 28 kartu dari tiga puncak. Klik kartu bebas yang tepat satu tingkat lebih tinggi atau lebih rendah dari kartu yang terlihat di tumpukan buangan (semua jenis) untuk memindahkannya. Jika tidak ada langkah, klik tumpukan untuk mengambil kartu. Pada level mudah, King bersambung ke As.",
+    "lib.arcade.note.golf": "Bersihkan semua kolom. Hanya kartu paling bawah di tiap kolom yang bisa diklik: harus tepat satu tingkat lebih tinggi atau lebih rendah dari kartu yang terlihat. Jika tidak ada langkah, klik tumpukan untuk mengambil kartu. Pada level mudah, King bersambung ke As.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Four of a kind",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Three of a kind",
+    "lib.arcade.ph.twopair": "Dua pasang",
+    "lib.arcade.ph.jacks": "Sepasang jack atau lebih",
+    "lib.arcade.ph.none": "Tidak ada",
+    "lib.arcade.res.win": "Menang",
+    "lib.arcade.res.lose": "Kalah",
+    "lib.arcade.res.push": "Seri",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Merah",
+    "lib.arcade.cGreen": "Hijau",
+    "lib.arcade.cYellow": "Kuning",
+    "lib.arcade.cBlue": "Biru"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Pemecah Bata",
       "desc": "Gerakkan pemukul dan pantulkan bola untuk memecahkan semua bata; 10 tahap dengan susunan berbeda, main dengan mouse, sentuhan, atau tombol."
+    },
+    "pyramid": {
+      "name": "Solitaire Piramida",
+      "desc": "Bersihkan piramida 28 kartu dengan memasangkan kartu yang jumlahnya 13; 10 level dengan kocok ulang yang makin sedikit."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Bersihkan tiga puncak dengan menyambung kartu yang berselisih satu tingkat; 10 level dari mudah hingga sulit."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Bersihkan kolom dengan menyambung kartu yang berselisih satu tingkat dari kartu yang terlihat; 10 level dengan kolom makin banyak."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Main blackjack melawan bandar dengan chip virtual: dekati 21 tanpa melebihinya; gandakan dan pisah; 10 level dengan target chip yang naik."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker lima kartu dengan chip virtual (Jacks or Better); 10 level dengan tabel pembayaran yang makin ketat."
+    },
+    "checkers": {
+      "name": "Dam",
+      "desc": "Main dam 8x8 melawan komputer: wajib menangkap, lompatan berantai, dan raja; 10 level dari mudah hingga sulit."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Permainan balap empat warna: lempar dadu dan bawa 4 bidak Anda pulang lebih dulu; lawan 1 sampai 3 pemain komputer di 10 level."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Permainan tabur batu tradisional Vietnam: sebar batu dan tangkap Mandarin melawan komputer; 10 level dari mudah hingga sulit."
     }
   },
   "s": {

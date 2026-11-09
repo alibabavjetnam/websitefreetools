@@ -340,7 +340,70 @@
     "lib.arcade.target": "Tanjona: {n}",
     "lib.arcade.up": "Miakatra",
     "lib.arcade.youVsAi": "Ianao {a} – Solosaina {b}",
-    "lib.arcade.noHintFc": "Tsy misy hetsika mahasoa intsony. Foano ny hetsika vitsivitsy na manomboka indray."
+    "lib.arcade.noHintFc": "Tsy misy hetsika mahasoa intsony. Foano ny hetsika vitsivitsy na manomboka indray.",
+    "lib.arcade.recycles": "Fanodinana sisa: {n}",
+    "lib.arcade.stockLeft": "Tapa-kara: {n}",
+    "lib.arcade.wrapOn": "Ny Mpanjaka dia mifandray amin'ny Aza",
+    "lib.arcade.wrapOff": "Ny Mpanjaka tsy mifandray amin'ny Aza",
+    "lib.arcade.hintDraw": "Tsy misy mpiara intsony. Tsindrio ny tapa-kara hisintona karatra.",
+    "lib.arcade.betMax": "Faran'izay betsaka",
+    "lib.arcade.deal": "Zarao",
+    "lib.arcade.hit": "Alaivo",
+    "lib.arcade.stand": "Mijanona",
+    "lib.arcade.double": "Avaozo avo roa heny",
+    "lib.arcade.split": "Zarao roa",
+    "lib.arcade.nextHand": "Tanana manaraka",
+    "lib.arcade.note.blackjack": "Vola fanaovana fotsiny — tsy vola tena izy. Manomboka amin'ny jetona 500 ianao; ho tonga amin'ny isan'ny jetona tanjona anatin'ny isan'ny tanana avela vao afaka ny ambaratonga. Manakaiky ny 21 mihoatra noho ny mpizara nefa tsy mihoatra. Misintona ny mpizara mandra-pahatonga azy ho 17. Mandoa bebe kokoa ny blackjack (Aza sy karatra mitentina folo). Avo roa heny: avo roa heny ny filokana ary alaivo tsara ny karatra iray fanampiny. Zarao roa: azo atao rehefa mitovy sandany ny karatra roa voalohany.",
+    "lib.arcade.dealer": "Mpizara",
+    "lib.arcade.you": "Ianao",
+    "lib.arcade.bet": "Filokana",
+    "lib.arcade.chips": "Jetona: {n}",
+    "lib.arcade.handsLeft": "Tanana {n} sisa",
+    "lib.arcade.won": "Nahazo jetona {n} ianao.",
+    "lib.arcade.lost": "Very jetona {n} ianao.",
+    "lib.arcade.even": "Mitovy.",
+    "lib.arcade.note.videopoker": "Vola fanaovana fotsiny — tsy vola tena izy. Mifidiana filokana jetona 1–5, tsindrio ny Zarao hahazoana karatra dimy, tsindrio ireo karatra tianao hitazonana, avy eo tsindrio ny Sintony hanoloana ny sisa. Mandoa ny Zazalahy roa na mihoatra. Manomboka amin'ny jetona 100 ianao; ho tonga amin'ny isan'ny jetona tanjona anatin'ny isan'ny tanana avela vao afaka ny ambaratonga.",
+    "lib.arcade.hold": "TAZONY",
+    "lib.arcade.draw": "Sintony",
+    "lib.arcade.note.checkers": "Milalao Mena ianao (eo ambany) ary ianao no voalohany. Mandroso efa-joro iray mitsivalana mankany amin'ny efa-joro foana ny vato. Raha afaka mandingana ny vatony mpifanandrina ianao dia tsy maintsy mandingana, ary afaka manohy mandingana hakana vato maromaro. Ny vato tonga amin'ny andalana farany dia lasa mpanjaka ary afaka mihetsika sy mangalatra miverina koa. Resy ianao raha tsy manana vato intsony na hetsika ara-dalàna.",
+    "lib.arcade.ckDraw": "Mitovy ny lalao.",
+    "lib.arcade.ckWin": "Tsy manana hetsika ara-dalàna ny Mainty — nandresy ianao.",
+    "lib.arcade.ckLose": "Tsy manana hetsika ara-dalàna ianao — resy ianao.",
+    "lib.arcade.ckMust": "Tsy maintsy maka ianao raha mety — mifidiana iray amin'ireo vato mikorontana.",
+    "lib.arcade.note.oanquan": "Lalao nentim-paharazana vietnamiana. Anao ny andalana ambany, an'ny solosaina ny ambony, ary ny faran'izy roa dia efa-joron'ny Mandarin. Tsindrio ny iray amin'ny efa-joronao, avy eo mifidiana lalana: alaina ny vato rehetra ao anatiny ary afafy iray isaky ny efa-joro. Aorian'ny fanafihana, raha misy vato ny efa-joro manaraka dia alaivo ary tohizo ny fanafihana; raha foana ny manaraka ary misy vato na Mandarin ny aorian'izany, dia azonao izany (ary manohy mandray ianao raha misy efa-joro feno aorian'ny foana hafa). Mijanona amin'ny efa-joron'ny Mandarin na aorian'ny efa-joro foana roa misesy. Ny Mandarin dia mitentina isa 10, ny vato 1. Raha lany ny vato ny tolakao dia 5 amin'ny isa azonao no afafy miverina. Tapitra ny lalao rehefa azo ny Mandarin roa; ny isa betsaka no mandresy.",
+    "lib.arcade.oqWin": "Tapitra ny lalao — betsaka ny isanao.",
+    "lib.arcade.oqLose": "Tapitra ny lalao — betsaka ny isan'ny solosaina.",
+    "lib.arcade.oqDraw": "Tapitra ny lalao — mitovy.",
+    "lib.arcade.oqPick": "Mifidiana lalana: ◀ na ▶.",
+    "lib.arcade.roll": "Atopazo ny zary",
+    "lib.arcade.note.ludo": "Milalao Mena ianao; ny solosaina no milalao ny loko hafa. Atopazo ny zary: ilaina ny 6 hamoahana vato avy amin'ny trano, ary ny 6 dia manome fanipazana iray hafa (6 intelo misesy dia manala ny fotoananao). Mivezivezy araka ny fihodinan'ny famantaranandro manodidina ny tabilao ny vato, avy eo mivily any amin'ny tsanganana trano amin'ny lokony; ilaina ny isa marina vao tonga amin'ny faran'izay eo afovoany. Raha latsaka marina eo ambonin'ny vatony mpifanandrina ianao dia miverina any an-tranony izy (afa-tsy eo amin'ny efa-joron'ny kintana sy ny fanombohana). Ny voalohany mampiditra ny vato 4 rehetra any an-trano no mandresy.",
+    "lib.arcade.pickToken": "Mifidiana vato horaisina.",
+    "lib.arcade.turnOf": "Fotoanan'i {c}…",
+    "lib.arcade.ldWin": "Tonga any an-trano ny vato 4 rehetra anao!",
+    "lib.arcade.ldLose": "{c} no tonga voalohany.",
+    "lib.arcade.threeSix": "6 intelo misesy — very ny fotoananao.",
+    "lib.arcade.noMove": "Tsy misy vato afaka mihetsika.",
+    "lib.arcade.note.pyramid": "Fafao ny karatra 28 rehetra amin'ny piramidy. Tsindrio ny karatra malalaka roa (tsy rakofan'ny karatra) izay 13 ny fitambarany (A=1, Z=11, R=12) hanesorana azy roa; esorina irery amin'ny tsindrio iray ny Mpanjaka. Azo ampiasaina koa ny karatra ambony indrindra amin'ny antontan-taratasy. Tsindrio ny tapa-kara hisintona karatra; voafetra ny isan'ny fampiasana indray ny antontan-taratasy.",
+    "lib.arcade.note.tripeaks": "Fafao ny karatra 28 rehetra amin'ny tampon-tendrombohitra telo. Tsindrio ny karatra malalaka iray izay marina ny haavon'ny iray mihoatra na latsaka noho ny karatra hita eo amin'ny antontan-taratasy (karazana rehetra) hampidinana azy. Rehefa tsy misy hetsika intsony dia tsindrio ny tapa-kara hisintona. Amin'ny ambaratonga mora, mifandray amin'ny Aza ny Mpanjaka.",
+    "lib.arcade.note.golf": "Fafao ny tsanganana rehetra. Ny karatra ambany indrindra amin'ny tsanganana tsirairay ihany no azo tsindriana: tsy maintsy marina ny haavon'ny iray mihoatra na latsaka noho ny karatra hita. Rehefa tsy misy hetsika intsony dia tsindrio ny tapa-kara hisintona. Amin'ny ambaratonga mora, mifandray amin'ny Aza ny Mpanjaka.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Efatra mitovy",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Telo mitovy",
+    "lib.arcade.ph.twopair": "Mpiara-dalana roa",
+    "lib.arcade.ph.jacks": "Zazalahy roa na mihoatra",
+    "lib.arcade.ph.none": "Tsy misy",
+    "lib.arcade.res.win": "Fandresena",
+    "lib.arcade.res.lose": "Faharesena",
+    "lib.arcade.res.push": "Mitovy",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Mena",
+    "lib.arcade.cGreen": "Maitso",
+    "lib.arcade.cYellow": "Mavo",
+    "lib.arcade.cBlue": "Manga"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Mpamaky biriky",
       "desc": "Tariho ny raketa ary ampitsambikino ny baolina mba hamakiana ny biriky rehetra; dingana 10 misy fandaminana samihafa, amin'ny totozy, fikasihana na fitendry."
+    },
+    "pyramid": {
+      "name": "Solitaire Piramidy",
+      "desc": "Fafao ny piramidy karatra 28 amin'ny fampiarahana karatra izay 13 ny fitambarany; ambaratonga 10 misy fanodinana mihena."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Fafao ny tampon-tendrombohitra telo amin'ny fampifandraisana karatra tokana ny fahasamihafany; ambaratonga 10 manomboka amin'ny mora ka hatrany amin'ny sarotra."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Fafao ny tsanganana amin'ny fampifandraisana karatra tokana ny fahasamihafany amin'ny karatra hita; ambaratonga 10 misy tsanganana mitombo."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Milalaova blackjack miady amin'ny mpizara amin'ny jetona virtoaly: manakaiky ny 21 nefa tsy mihoatra; avo roa heny sy zarao roa; ambaratonga 10 misy tanjona jetona miakatra."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker karatra dimy misy fanoloana amin'ny jetona virtoaly (Jacks or Better); ambaratonga 10 misy tabilao fandoavana mihamafy."
+    },
+    "checkers": {
+      "name": "Dama (Checkers)",
+      "desc": "Milalaova dama 8x8 miady amin'ny solosaina: fakana tsy maintsy atao, fandinganana maro ary mpanjaka; ambaratonga 10 manomboka amin'ny mora ka hatrany amin'ny sarotra."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Lalao hazakazaka loko efatra: atopazo ny zary ary ampidiro voalohany any an-trano ny vato 4 anao; milalaova miady amin'ny mpilalao solosaina 1 hatramin'ny 3 amin'ny ambaratonga 10."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Lalao nentim-paharazana vietnamiana fanafihana vato: afafy ny vato ary alaivo ny Mandarin miady amin'ny solosaina; ambaratonga 10 manomboka amin'ny mora ka hatrany amin'ny sarotra."
     }
   },
   "s": {

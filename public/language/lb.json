@@ -340,7 +340,70 @@
     "lib.arcade.target": "Zil: {n}",
     "lib.arcade.up": "Erop",
     "lib.arcade.youVsAi": "Du {a} – Computer {b}",
-    "lib.arcade.noHintFc": "Keen nëtzlechen Zuch méi. Maach e puer Zich réckgängeg oder fänk nei un."
+    "lib.arcade.noHintFc": "Keen nëtzlechen Zuch méi. Maach e puer Zich réckgängeg oder fänk nei un.",
+    "lib.arcade.recycles": "Nei Austeelunge iwwreg: {n}",
+    "lib.arcade.stockLeft": "Stapel: {n}",
+    "lib.arcade.wrapOn": "De Kinnek geet op den Ass",
+    "lib.arcade.wrapOff": "De Kinnek geet net op den Ass",
+    "lib.arcade.hintDraw": "Keng Puer méi. Klick op de Stapel fir eng Kaart ze zéien.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Gi",
+    "lib.arcade.hit": "Kaart",
+    "lib.arcade.stand": "Bleiwen",
+    "lib.arcade.double": "Verduebelen",
+    "lib.arcade.split": "Deelen",
+    "lib.arcade.nextHand": "Nächst Hand",
+    "lib.arcade.note.blackjack": "Nëmme Spillgeld — kee richtegt Geld. Du fänks mat 500 Jetonen un; fir de Niveau ze packen, erreechs d'Zielzuel u Jetonen an der erlaabter Unzuel vun Hänn. Kämm méi no un 21 wéi de Croupier, ouni driwwer ze goen. De Croupier zitt Kaarten, bis hien 17 erreecht. E Blackjack (en Ass an eng Kaart mat Wäert zéng) bezilt méi. Verduebelen: du verduebels däin Asaz a kriss genau eng Kaart méi. Deelen: méiglech, wann deng éischt zwou Kaarte selwechte Wäert hunn.",
+    "lib.arcade.dealer": "Croupier",
+    "lib.arcade.you": "Du",
+    "lib.arcade.bet": "Asaz",
+    "lib.arcade.chips": "Jetonen: {n}",
+    "lib.arcade.handsLeft": "Nach {n} Hänn",
+    "lib.arcade.won": "Du hues {n} Jetonen gewonnen.",
+    "lib.arcade.lost": "Du hues {n} Jetonen verluer.",
+    "lib.arcade.even": "Gläichstand.",
+    "lib.arcade.note.videopoker": "Nëmme Spillgeld — kee richtegt Geld. Wiel en Asaz vun 1–5 Jetonen, dréck op Gi fir fënnef Kaarten ze kréien, klick d'Kaarten un, déi s de wëlls behalen, a dréck dann op Zéien fir de Rescht ze ersetzen. E Paar Buermänner oder besser bezilt. Du fänks mat 100 Jetonen un; fir de Niveau ze packen, erreechs d'Zielzuel u Jetonen an der erlaabter Unzuel vun Hänn.",
+    "lib.arcade.hold": "BEHALEN",
+    "lib.arcade.draw": "Zéien",
+    "lib.arcade.note.checkers": "Du spills Rout (ënnen) a fänks un. E Steen geet ee Feld diagonal no vir op e fräist Feld. Wann s de iwwer e géigneresche Steen sprange kanns, muss s de et maachen, an du däerfs weider sprange fir méi Steng ze fänken. E Steen, deen déi lescht Reih erreecht, gëtt Damm a kann och no hannen goen a fänken. Du verléiers, wann s de keng Steng oder keng erlaabte Zich méi hues.",
+    "lib.arcade.ckDraw": "D'Spill ass onentscheed.",
+    "lib.arcade.ckWin": "Schwaarz huet keng erlaabte Zich méi — du hues gewonnen.",
+    "lib.arcade.ckLose": "Du hues keng erlaabte Zich méi — du hues verluer.",
+    "lib.arcade.ckMust": "Du muss fänken, wann s de kanns — wiel ee vun de blénkende Steng.",
+    "lib.arcade.note.oanquan": "En traditionellt vietnamesescht Spill. Déi ënnescht Reih ass däin, déi iewescht ass dem Computer seng, an déi zwee Enner sinn d'Mandarin-Felder. Klick op ee vun denge Felder a wiel eng Richtung: all Steng dran ginn opgeholl a jee ee pro Feld verdeelt. Wann nom Verdeele vum nächste Feld Steng drasinn, huel se op a verdeel weider; ass dat nächst Feld eidel an dat doriwwer huet Steng oder e Mandarin, fänks de se (a weider, wann nom eidele Feld nees e voll Feld kënnt). Stopp op engem Mandarin-Feld oder no zwee eidele Felder hannereneen. E Mandarin ass 10 Punkte wäert, e Steen 1. Wann deng Säit keng Steng méi huet, ginn 5 vun denge gewonnene Punkten zréckverdeelt. D'Spill ass eriwwer, wann déi zwee Mandarinen ageholl sinn; wien méi Punkte huet, gewënnt.",
+    "lib.arcade.oqWin": "Spill eriwwer — du hues méi Punkten.",
+    "lib.arcade.oqLose": "Spill eriwwer — de Computer huet méi Punkten.",
+    "lib.arcade.oqDraw": "Spill eriwwer — Gläichstand.",
+    "lib.arcade.oqPick": "Wiel eng Richtung: ◀ oder ▶.",
+    "lib.arcade.roll": "De Würfel werfen",
+    "lib.arcade.note.ludo": "Du spills Rout; déi aner Faarwe spillt de Computer. Wärf de Würfel: fir e Steen aus dem Haus ze kréien, brauchs de eng 6, an eng 6 gëtt der nach e Wuerf (dräi 6 hannereneen verlees de Choix). D'Steng lafen am Auersënn ronderëm d'Brett an dréien dann an hir Faarf-Heemspur; fir an d'Ziel an der Mëtt ze kommen, brauchs de déi exakt Zuel. Wann s de genau op engem géigneresche Steen lands, geet dee zréck an säin Haus (ausser op Stären- a Startfelder). Wien als Éischte seng 4 Steng heembréngt, gewënnt.",
+    "lib.arcade.pickToken": "Wiel e Steen fir ze réckelen.",
+    "lib.arcade.turnOf": "{c} ass drun…",
+    "lib.arcade.ldWin": "All deng 4 Steng sinn doheem!",
+    "lib.arcade.ldLose": "{c} war als Éischte doheem.",
+    "lib.arcade.threeSix": "Dräi 6 hannereneen — däin Tour ass fort.",
+    "lib.arcade.noMove": "Kee Steen kann sech réckelen.",
+    "lib.arcade.note.pyramid": "Raum all 28 Kaarte vun der Pyramid ewech. Klick zwou fräi Kaarten (déi vun keng Kaart zougedeckt sinn) un, déi zesummen 13 ergëtt (A=1, B=11, D=12), fir se allebéid ewechzehuelen; e Kinnek gëtt mat engem Klick eleng ewechgeholl. Déi iewescht Kaart vum Offallstapel kann een och notzen. Klick op de Stapel fir eng Kaart ze zéien; wéi dacks den Offallstapel recycléiert ka ginn, ass limitéiert.",
+    "lib.arcade.note.tripeaks": "Raum all 28 Kaarte vun den dräi Spëtzten ewech. Klick eng fräi Kaart un, déi genau een Rang méi héich oder méi niddereg ass wéi déi sichtbar Kaart um Offallstapel (egal wéi eng Faarf), fir se erofzesetzen. Wann s de keng Zich méi hues, klick op de Stapel. Op de méi einfachen Niveauen geet de Kinnek op den Ass.",
+    "lib.arcade.note.golf": "Raum all Kolonnen ewech. Nëmmen déi ënnescht Kaart vun all Kolonn kann ugeklickt ginn: si muss genau een Rang méi héich oder méi niddereg si wéi déi sichtbar Kaart. Wann s de keng Zich méi hues, klick op de Stapel. Op de méi einfachen Niveauen geet de Kinnek op den Ass.",
+    "lib.arcade.ph.royal": "Royal Flush",
+    "lib.arcade.ph.sflush": "Straight Flush",
+    "lib.arcade.ph.quads": "Vierling",
+    "lib.arcade.ph.full": "Full House",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Strooss",
+    "lib.arcade.ph.trips": "Drilling",
+    "lib.arcade.ph.twopair": "Zwee Puer",
+    "lib.arcade.ph.jacks": "Buermänner oder besser",
+    "lib.arcade.ph.none": "Näischt",
+    "lib.arcade.res.win": "Gewonnen",
+    "lib.arcade.res.lose": "Verluer",
+    "lib.arcade.res.push": "Push",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rout",
+    "lib.arcade.cGreen": "Gréng",
+    "lib.arcade.cYellow": "Giel",
+    "lib.arcade.cBlue": "Blo"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Stengbriecher",
       "desc": "Steier de Paddel a looss de Ball sprangen, fir all d'Steng ze briechen; 10 Etappe mat ënnerschiddleche Layouten, mat Maus, Touch oder Tasten."
+    },
+    "pyramid": {
+      "name": "Pyramid-Solitaire",
+      "desc": "Raum d'Pyramid vun 28 Kaarten of, andeems s de Kaarte mat der Zomm 13 paars; 10 Niveauen mat ëmmer manner neien Austeelungen."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-Solitaire",
+      "desc": "Raum dräi Spëtzten of, andeems s de Kaarten, déi een Rang auserneeliggen, verbënns; 10 Niveauen vun einfach bis schwéier."
+    },
+    "golf": {
+      "name": "Golf-Solitaire",
+      "desc": "Raum d'Kolonnen of, andeems s de Kaarten, déi een Rang vun der sichtbarer Kaart ofweichen, verbënns; 10 Niveauen mat ëmmer méi Kolonnen."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Spill Blackjack géint de Croupier mat virtuelle Jetonen: kämm esou no wéi méiglech u 21, ouni driwwer ze goen; verduebel an deel; 10 Niveauen mat steigenden Ziler."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Fënnef-Kaarte-Draw-Poker mat virtuelle Jetonen (Buermänner oder besser); 10 Niveauen mat ëmmer méi strenge Gewënntabellen."
+    },
+    "checkers": {
+      "name": "Dammspill",
+      "desc": "Spill Dammspill 8x8 géint de Computer: Fangzwang, Méifachsprénk a Dammen; 10 Niveauen vun einfach bis schwéier."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Rennspill a véier Faarwen: wärf de Würfel a bréng deng 4 Steng als Éischt heem; géint 1 bis 3 Computerspiller iwwer 10 Niveauen."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "E traditionellt vietnamesescht Spill, wou ee Steng verdeelt: verdeel Steng a fang d'Mandarinen géint de Computer; 10 Niveauen vun einfach bis schwéier."
     }
   },
   "s": {

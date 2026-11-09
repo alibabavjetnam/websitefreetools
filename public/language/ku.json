@@ -340,7 +340,70 @@
     "lib.arcade.target": "Armanc: {n}",
     "lib.arcade.up": "Jor",
     "lib.arcade.youVsAi": "Tu {a} – Kompîter {b}",
-    "lib.arcade.noHintFc": "Tevgereke kêrhatî nemaye. Çend tevgeran vegerîne an ji nû ve dest pê bike."
+    "lib.arcade.noHintFc": "Tevgereke kêrhatî nemaye. Çend tevgeran vegerîne an ji nû ve dest pê bike.",
+    "lib.arcade.recycles": "Dabeşkirinên mayî: {n}",
+    "lib.arcade.stockLeft": "Destik: {n}",
+    "lib.arcade.wrapOn": "Şah bi Asê ve girêdidin",
+    "lib.arcade.wrapOff": "Şah bi Asê ve nayê girêdan",
+    "lib.arcade.hintDraw": "Cot nema. Ji bo kartekê kişandinê li ser destikê bitikîne.",
+    "lib.arcade.betMax": "Zêde",
+    "lib.arcade.deal": "Dabeş bike",
+    "lib.arcade.hit": "Kartê bide",
+    "lib.arcade.stand": "Disekine",
+    "lib.arcade.double": "Du carî",
+    "lib.arcade.split": "Parve bike",
+    "lib.arcade.nextHand": "Destê din",
+    "lib.arcade.note.blackjack": "Tenê pereyê lîstikê — pereyê rast tune. Hûn bi 500 çîpan dest pê dikin; ji bo derbaskirina astê, di hejmara destên destûrdayî de bigihîjin hejmara çîpên armanc. Ji dîlerê nêzîktirî 21 bin bêyî ku jê derbas bibin. Dîler heta 17 kart dikişîne. Blackjack (Asek û karteke bi nirxa dehan) zêdetir dide. Du carî: bahsê du caran dike û tam yek kartê din werdigire. Parve bike: gava du kartên pêşîn nirxek wekhev hebin heye.",
+    "lib.arcade.dealer": "Dîler",
+    "lib.arcade.you": "Tu",
+    "lib.arcade.bet": "Bahs",
+    "lib.arcade.chips": "Çîp: {n}",
+    "lib.arcade.handsLeft": "{n} dest mane",
+    "lib.arcade.won": "Te {n} çîp bir.",
+    "lib.arcade.lost": "Te {n} çîp winda kir.",
+    "lib.arcade.even": "Wekhev.",
+    "lib.arcade.note.videopoker": "Tenê pereyê lîstikê — pereyê rast tune. Bahsek ji 1–5 çîpan hilbijêre, ji bo pênc kartan Dabeş bike bitikîne, li kartên ku dixwazî bihêlî bitikîne, paşê Bikişîne bitikîne da ku yên din biguherî. Cotek Valeyan an çêtir dide. Bi 100 çîpan dest pê dikî; ji bo derbaskirina astê, di hejmara destên destûrdayî de bigihîje hejmara çîpên armanc.",
+    "lib.arcade.hold": "BIHÊLE",
+    "lib.arcade.draw": "Bikişîne",
+    "lib.arcade.note.checkers": "Tu bi sor (li jêr) dilîzî û pêşî dilîzî. Berd yek xanê çarpazî ber bi pêş ve diçe xaneke vala. Heke tu bikaribî ji ser berdê dijber bazdî, divê bikî, û dikarî berdewam bikî da ku gelek berdan bigirî. Berdê ku digihîje rêza dawî dibe şah û dikare paş ve jî biçe û bigire. Gava berd an livîna rewa nemîne, tu winda dikî.",
+    "lib.arcade.ckDraw": "Lîstik wekhev bû.",
+    "lib.arcade.ckWin": "Reş livîna rewa nîne — tu bi ser ketî.",
+    "lib.arcade.ckLose": "Livîna te ya rewa nîne — tu winda kirî.",
+    "lib.arcade.ckMust": "Gava bikaribî divê bigirî — yek ji berdên ku dilebitin hilbijêre.",
+    "lib.arcade.note.oanquan": "Lîstikeke kevneşopî ya Viyetnamî. Rêza jêrîn a te ye, ya jorîn a komputerê ye, û her du serî xaneyên Mandarîn in. Li ser yek ji xaneyên xwe bitikîne, paşê alî hilbijêre: hemû kevir jê têne hilgirtin û yek bi yek li her xanê têne belavkirin. Piştî belavkirinê, heke di xaneya din de kevir hebin, wan hilgire û berdewam bike; heke xaneya din vala be û ya piştî wê kevir an Mandarînek hebe, tu wê digirî (û heke piştî xaneyeke vala dîsa xaneyeke tije were, berdewam dikî). Li xaneyeke Mandarînê an piştî du xaneyên vala yên li pey hev bisekine. Mandarîn 10 pûan e, kevir 1. Heke kevirên aliyê te biqedin, 5 ji pûanên te yên girtî dîsa têne belavkirin. Gava her du Mandarîn hatin girtin lîstik diqede; yê ku pûanên wî zêdetir be dibe serketî.",
+    "lib.arcade.oqWin": "Lîstik qediya — pûanên te zêdetir in.",
+    "lib.arcade.oqLose": "Lîstik qediya — pûanên komputerê zêdetir in.",
+    "lib.arcade.oqDraw": "Lîstik qediya — wekhev.",
+    "lib.arcade.oqPick": "Alî hilbijêre: ◀ an ▶.",
+    "lib.arcade.roll": "Zarê biavêje",
+    "lib.arcade.note.ludo": "Tu bi sor dilîzî; rengên din komputer dilîze. Zarê biavêje: ji bo derxistina berdekê ji malê 6 divê, û 6 avêtineke din dide (sê 6 li pey hev dora te winda dike). Berd li ser tabloyê li gorî rêça demjimêrê diçin, paşê dikevin rêya malê ya rengê xwe; ji bo gihîştina dawiyê li navendê hejmara rast divê. Heke tam li ser berdekî dijber bikevî, ew vedigere malê (ji xaneyên stêrk û destpêkê pê ve). Yê ku pêşî her 4 berdên xwe bigihîne malê dibe serketî.",
+    "lib.arcade.pickToken": "Berdekê ji bo livandinê hilbijêre.",
+    "lib.arcade.turnOf": "Dora {c}…",
+    "lib.arcade.ldWin": "Her 4 berdên te gihîştin malê!",
+    "lib.arcade.ldLose": "{c} pêşî gihîşt malê.",
+    "lib.arcade.threeSix": "Sê 6 li pey hev — dora te winda bû.",
+    "lib.arcade.noMove": "Tu berd nikare bilive.",
+    "lib.arcade.note.pyramid": "Hemû 28 kartên piramîdê rake. Li ser du kartên azad (yên ku tu kart li ser wan nîne) ên ku kom dikin 13 (A=1, J=11, Q=12) bitikîne da ku her duyan rakî; Şah bi tikandinekê tenê tê rakirin. Karta jorîn a komika bermayiyan jî dikare were bikaranîn. Ji bo kişandina kartê li ser destikê bitikîne; hejmara carên vegerandina komika bermayiyan sînorkirî ye.",
+    "lib.arcade.note.tripeaks": "Hemû 28 kartên sê lûtkeyan rake. Li ser karta azad a ku tam yek rêzê ji karta xuya ya li ser komika bermayiyan bilindtir an nizmtir e (her reng) bitikîne da ku wê daxî. Gava livîn nemînin, li ser destikê bitikîne. Di astên hêsan de Şah bi Asê ve girêdidin.",
+    "lib.arcade.note.golf": "Hemû stûnan paqij bike. Tenê karta jêrîn a her stûnê dikare were tikandin: divê tam yek rêzê ji karta xuya bilindtir an nizmtir be. Gava livîn nemînin, li ser destikê bitikîne. Di astên hêsan de Şah bi Asê ve girêdidin.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Çar yek",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Sê yek",
+    "lib.arcade.ph.twopair": "Du cot",
+    "lib.arcade.ph.jacks": "Valeyan an çêtir",
+    "lib.arcade.ph.none": "Tiştek",
+    "lib.arcade.res.win": "Serketin",
+    "lib.arcade.res.lose": "Windabûn",
+    "lib.arcade.res.push": "Wekhev",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Sor",
+    "lib.arcade.cGreen": "Kesk",
+    "lib.arcade.cYellow": "Zer",
+    "lib.arcade.cBlue": "Şîn"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Keçşikên",
       "desc": "Raketê birêve bibe û gogê biçirpîne da ku hemû keçan bişikînî; 10 qonaxên bi rêzkirinên cuda, bi mişk, destdan an bişkojkan."
+    },
+    "pyramid": {
+      "name": "Solitaire Piramîd",
+      "desc": "Piramîda 28 kartan bi cotkirina kartên ku kom dikin 13 paqij bike; 10 ast bi dabeşkirinên kêmtir û kêmtir."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Sê lûtkeyan bi girêdana kartên ku yek rêz ji hev cuda ne paqij bike; 10 ast ji hêsan heta dijwar."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Stûnan bi girêdana kartên ku yek rêz ji karta xuya cuda ne paqij bike; 10 ast bi stûnên zêdetir."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Bi çîpên virtual li hember dîlerê blackjack bilîze: bêyî derbaskirinê herî nêzî 21 bibe; du carî bike û parve bike; 10 ast bi armancên bilind dibin."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Pokera pênc kartî ya bi guherandinê bi çîpên virtual (Valeyan an çêtir); 10 ast bi tabloyên dayînê yên tengtir."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Li hember komputerê dama 8x8 bilîze: girtina bi zorê, bazdanên pirjimar û şah; 10 ast ji hêsan heta dijwar."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Lîstika pêşbaziyê ya çar rengî: zarê biavêje û pêşî her 4 berdên xwe bigihîne malê; li hember 1 heta 3 lîstikvanên komputerê di 10 astan de."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Lîstikeke kevneşopî ya Viyetnamî ya belavkirina keviran: kevir belav bike û li hember komputerê Mandarînan bigire; 10 ast ji hêsan heta dijwar."
     }
   },
   "s": {

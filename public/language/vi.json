@@ -340,7 +340,70 @@
     "lib.arcade.target": "Mục tiêu: {n}",
     "lib.arcade.up": "Lên",
     "lib.arcade.youVsAi": "Bạn {a} – Máy {b}",
-    "lib.arcade.noHintFc": "Không còn nước đi có ích. Thử đi lại vài nước hoặc chơi lại."
+    "lib.arcade.noHintFc": "Không còn nước đi có ích. Thử đi lại vài nước hoặc chơi lại.",
+    "lib.arcade.recycles": "Lật lại: {n}",
+    "lib.arcade.stockLeft": "Chồng bài: {n}",
+    "lib.arcade.wrapOn": "K nối A",
+    "lib.arcade.wrapOff": "K không nối A",
+    "lib.arcade.hintDraw": "Không còn cặp nào. Hãy bấm chồng bài để rút.",
+    "lib.arcade.betMax": "Tối đa",
+    "lib.arcade.deal": "Chia bài",
+    "lib.arcade.hit": "Rút thêm",
+    "lib.arcade.stand": "Dừng",
+    "lib.arcade.double": "Gấp đôi",
+    "lib.arcade.split": "Tách đôi",
+    "lib.arcade.nextHand": "Ván tiếp",
+    "lib.arcade.note.blackjack": "Chơi bằng xu ảo, không có tiền thật. Bạn có 500 xu; đạt số xu mục tiêu trong số ván cho phép để qua cấp. Gần 21 hơn nhà cái mà không quá 21 là thắng. Nhà cái rút đến khi được 17. Blackjack (A + lá 10 điểm) được trả thêm. Gấp đôi: cược gấp đôi và chỉ rút thêm một lá. Tách đôi: khi hai lá đầu cùng giá trị.",
+    "lib.arcade.dealer": "Nhà cái",
+    "lib.arcade.you": "Bạn",
+    "lib.arcade.bet": "Cược",
+    "lib.arcade.chips": "Xu: {n}",
+    "lib.arcade.handsLeft": "Còn {n} ván",
+    "lib.arcade.won": "Bạn được {n} xu.",
+    "lib.arcade.lost": "Bạn mất {n} xu.",
+    "lib.arcade.even": "Hoà vốn.",
+    "lib.arcade.note.videopoker": "Chơi bằng xu ảo, không có tiền thật. Chọn mức cược 1–5 xu, bấm Chia bài để nhận 5 lá, bấm các lá muốn giữ rồi bấm Đổi bài để thay các lá còn lại. Bài từ đôi J trở lên là có thưởng. Bạn có 100 xu; đạt số xu mục tiêu trong số ván cho phép để qua cấp.",
+    "lib.arcade.hold": "GIỮ",
+    "lib.arcade.draw": "Đổi bài",
+    "lib.arcade.note.checkers": "Bạn cầm quân Đỏ (phía dưới), đi trước. Quân đi chéo tiến một ô vào ô trống. Nếu có thể nhảy qua quân đối phương thì bắt buộc phải ăn, và được ăn liên tiếp nhiều quân. Quân tới hàng cuối của đối phương được phong Vua, đi và ăn được cả lùi. Hết quân hoặc hết nước đi là thua.",
+    "lib.arcade.ckDraw": "Ván cờ hoà.",
+    "lib.arcade.ckWin": "Quân Đen hết nước đi — bạn thắng.",
+    "lib.arcade.ckLose": "Bạn hết nước đi — bạn thua.",
+    "lib.arcade.ckMust": "Bạn phải ăn quân khi có thể — hãy chọn quân đang nhấp nháy.",
+    "lib.arcade.note.oanquan": "Trò dân gian Việt Nam. Hàng dưới là của bạn, hàng trên của máy; hai đầu là ô Quan. Bấm một ô dân của bạn rồi chọn hướng rải: lấy hết dân trong ô và rải mỗi ô một viên. Rải xong, nếu ô kế tiếp có dân thì bốc tiếp rải tiếp; nếu ô kế tiếp trống và liền sau nó có dân hoặc quan thì ăn hết ô đó (ăn liên tiếp nếu lại cách một ô trống). Gặp ô Quan hoặc hai ô trống liền nhau thì dừng. Quan = 10 điểm, dân = 1 điểm. Hết dân ở phía mình thì lấy 5 điểm đã ăn rải lại. Hai ô Quan bị ăn hết, ván kết thúc; ai nhiều điểm hơn thắng.",
+    "lib.arcade.oqWin": "Ván kết thúc — bạn nhiều điểm hơn.",
+    "lib.arcade.oqLose": "Ván kết thúc — máy nhiều điểm hơn.",
+    "lib.arcade.oqDraw": "Ván kết thúc — hoà điểm.",
+    "lib.arcade.oqPick": "Chọn hướng rải: ◀ hoặc ▶.",
+    "lib.arcade.roll": "Tung xúc xắc",
+    "lib.arcade.note.ludo": "Bạn cầm quân Đỏ, các màu khác do máy điều khiển. Tung xúc xắc: ra 6 mới được đưa một quân ra khỏi chuồng, và được tung tiếp (ra 6 ba lần liền thì mất lượt). Quân đi theo chiều kim đồng hồ quanh bàn rồi rẽ vào đường về nhà của màu mình; cần số chấm vừa đủ để vào ô đích giữa bàn. Dừng đúng ô có quân đối phương thì đá nó về chuồng (trừ ô ngôi sao và ô xuất phát). Ai đưa đủ 4 quân về đích trước thắng.",
+    "lib.arcade.pickToken": "Chọn một quân để đi.",
+    "lib.arcade.turnOf": "Lượt của {c}…",
+    "lib.arcade.ldWin": "Cả 4 quân của bạn đã về đích!",
+    "lib.arcade.ldLose": "{c} đã về đích trước.",
+    "lib.arcade.threeSix": "Ba lần 6 liền — mất lượt.",
+    "lib.arcade.noMove": "Không có quân nào đi được.",
+    "lib.arcade.note.pyramid": "Gỡ hết 28 lá của kim tự tháp. Bấm hai lá tự do (không bị lá nào che) có tổng bằng 13 (A=1, J=11, Q=12) để gỡ cả hai; lá K gỡ riêng bằng một lần bấm. Lá trên cùng chồng bỏ cũng dùng được. Bấm chồng bài để rút; số lần lật lại chồng bỏ có hạn.",
+    "lib.arcade.note.tripeaks": "Gỡ hết 28 lá của ba đỉnh. Bấm lá tự do hơn hoặc kém lá đang lộ ở chồng bỏ đúng 1 bậc (không phân biệt chất) để chuyển nó xuống. Hết nước thì bấm chồng bài để rút. Ở các cấp dễ, K nối được với A.",
+    "lib.arcade.note.golf": "Gỡ hết các cột bài. Chỉ lá dưới cùng mỗi cột được bấm: nó phải hơn hoặc kém lá đang lộ đúng 1 bậc. Hết nước thì bấm chồng bài để rút. Ở các cấp dễ, K nối được với A.",
+    "lib.arcade.ph.royal": "Thùng phá sảnh lớn",
+    "lib.arcade.ph.sflush": "Thùng phá sảnh",
+    "lib.arcade.ph.quads": "Tứ quý",
+    "lib.arcade.ph.full": "Cù lũ",
+    "lib.arcade.ph.flush": "Thùng",
+    "lib.arcade.ph.straight": "Sảnh",
+    "lib.arcade.ph.trips": "Sám cô",
+    "lib.arcade.ph.twopair": "Hai đôi",
+    "lib.arcade.ph.jacks": "Đôi J trở lên",
+    "lib.arcade.ph.none": "Không có gì",
+    "lib.arcade.res.win": "Thắng",
+    "lib.arcade.res.lose": "Thua",
+    "lib.arcade.res.push": "Hoà",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Đỏ",
+    "lib.arcade.cGreen": "Xanh lá",
+    "lib.arcade.cYellow": "Vàng",
+    "lib.arcade.cBlue": "Xanh dương"
   },
   "pages": {
     "home": {
@@ -1157,6 +1220,38 @@
     "brick-breaker": {
       "name": "Phá gạch",
       "desc": "Điều khiển thanh đỡ đánh bóng phá hết gạch; 10 màn bố cục khác nhau, chơi bằng chuột, chạm hoặc phím."
+    },
+    "pyramid": {
+      "name": "Bài Kim tự tháp",
+      "desc": "Gỡ hết 28 lá của kim tự tháp bằng cách ghép các cặp lá cộng đủ 13; 10 cấp với số lần lật lại chồng bài giảm dần."
+    },
+    "tripeaks": {
+      "name": "Bài Ba đỉnh (TriPeaks)",
+      "desc": "Gỡ hết ba đỉnh bài bằng cách nối các lá hơn kém nhau 1 bậc; 10 cấp từ dễ đến khó."
+    },
+    "golf": {
+      "name": "Bài Golf",
+      "desc": "Gỡ hết các cột bài bằng cách nối lá hơn kém nhau 1 bậc với lá đang lộ; 10 cấp, càng cao càng nhiều cột."
+    },
+    "blackjack": {
+      "name": "Xì dách (Blackjack)",
+      "desc": "Chơi Xì dách bằng xu ảo với nhà cái: gần 21 nhất mà không quá; gấp đôi, tách đôi; 10 cấp với mục tiêu xu tăng dần."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker 5 lá giữ và đổi bài bằng xu ảo (Jacks or Better); 10 cấp với bảng thưởng chặt dần."
+    },
+    "checkers": {
+      "name": "Cờ đam",
+      "desc": "Cờ đam 8x8 đánh với máy: bắt buộc ăn, ăn liên tiếp, phong Vua; 10 cấp từ dễ đến khó."
+    },
+    "ludo": {
+      "name": "Cờ cá ngựa",
+      "desc": "Cờ cá ngựa bốn màu: tung xúc xắc, đưa 4 quân về đích trước; chơi với 1 đến 3 máy qua 10 cấp."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Trò dân gian Việt Nam: rải dân, ăn quan, đánh với máy qua 10 cấp từ dễ đến khó."
     }
   },
   "s": {

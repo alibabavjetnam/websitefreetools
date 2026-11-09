@@ -340,7 +340,70 @@
     "lib.arcade.target": "Lengo: {n}",
     "lib.arcade.up": "Juu",
     "lib.arcade.youVsAi": "Wewe {a} – Kompyuta {b}",
-    "lib.arcade.noHintFc": "Hakuna hatua yenye manufaa iliyobaki. Tendua hatua chache au anza upya."
+    "lib.arcade.noHintFc": "Hakuna hatua yenye manufaa iliyobaki. Tendua hatua chache au anza upya.",
+    "lib.arcade.recycles": "Mchanganyo uliobaki: {n}",
+    "lib.arcade.stockLeft": "Rundo la kadi: {n}",
+    "lib.arcade.wrapOn": "K inaunganishwa na A",
+    "lib.arcade.wrapOff": "K haiunganishwi na A",
+    "lib.arcade.hintDraw": "Hakuna jozi zilizobaki. Bofya rundo ili kuchukua kadi.",
+    "lib.arcade.betMax": "Juu",
+    "lib.arcade.deal": "Gawa",
+    "lib.arcade.hit": "Ongeza kadi",
+    "lib.arcade.stand": "Simama",
+    "lib.arcade.double": "Maradufu",
+    "lib.arcade.split": "Gawanya",
+    "lib.arcade.nextHand": "Mkono unaofuata",
+    "lib.arcade.note.blackjack": "Pesa za kuchezea tu — hakuna pesa halisi. Unaanza na chipu 500; fikia idadi lengwa ya chipu ndani ya idadi ya mikono inayoruhusiwa ili kumaliza kiwango. Karibia 21 kuliko muuzaji bila kuvuka. Muuzaji huchukua kadi hadi afikie 17. Blackjack (ace na kadi yenye thamani ya kumi) hulipa zaidi. Maradufu: unaongeza dau mara mbili na kupokea kadi moja tu zaidi. Gawanya: inapatikana kadi zako mbili za kwanza zikiwa na thamani sawa.",
+    "lib.arcade.dealer": "Muuzaji",
+    "lib.arcade.you": "Wewe",
+    "lib.arcade.bet": "Dau",
+    "lib.arcade.chips": "Chipu: {n}",
+    "lib.arcade.handsLeft": "Mikono {n} imebaki",
+    "lib.arcade.won": "Umeshinda chipu {n}.",
+    "lib.arcade.lost": "Umepoteza chipu {n}.",
+    "lib.arcade.even": "Sare.",
+    "lib.arcade.note.videopoker": "Pesa za kuchezea tu — hakuna pesa halisi. Chagua dau la chipu 1–5, bonyeza Gawa upate kadi tano, bofya kadi unazotaka kuzihifadhi, kisha bonyeza Badilisha ili kubadilisha zilizobaki. Jozi ya jaki au bora zaidi inalipa. Unaanza na chipu 100; fikia idadi lengwa ya chipu ndani ya idadi ya mikono inayoruhusiwa ili kumaliza kiwango.",
+    "lib.arcade.hold": "SHIKILIA",
+    "lib.arcade.draw": "Badilisha",
+    "lib.arcade.note.checkers": "Unacheza nyekundu (chini) na unaanza. Kete husogea mraba mmoja kwa mshazari mbele hadi mraba tupu. Ukiweza kuruka juu ya kete ya mpinzani, lazima uruke, na unaweza kuendelea kuruka ili kukamata kete kadhaa. Kete inayofika safu ya mwisho hutawazwa kuwa mfalme na pia inaweza kusogea na kukamata kurudi nyuma. Unashindwa usipokuwa na kete au hatua halali.",
+    "lib.arcade.ckDraw": "Mchezo umeisha kwa sare.",
+    "lib.arcade.ckWin": "Nyeusi haina hatua halali — umeshinda.",
+    "lib.arcade.ckLose": "Huna hatua halali — umeshindwa.",
+    "lib.arcade.ckMust": "Lazima ukamate unapoweza — chagua mojawapo ya kete zinazomweka.",
+    "lib.arcade.note.oanquan": "Mchezo wa jadi wa Kivietinamu. Safu ya chini ni yako, ya juu ni ya kompyuta, na ncha mbili ni miraba ya Mandarin. Bofya mojawapo ya miraba yako, kisha chagua mwelekeo: mawe yote ndani yake huokotwa na kupandwa moja kwa kila mraba. Baada ya kupanda, mraba unaofuata ukiwa na mawe, yaokote na endelea kupanda; mraba unaofuata ukiwa tupu na ule unaofuata una mawe au Mandarin, unaukamata (na unaendelea kukamata ikiwa baada ya mraba mwingine tupu kuna wenye mawe). Simama kwenye mraba wa Mandarin au baada ya miraba miwili tupu mfululizo. Mandarin ina thamani ya pointi 10, jiwe pointi 1. Upande wako ukiishiwa mawe, pointi 5 ulizokamata hupandwa tena. Mchezo huisha Mandarin zote mbili zikikamatwa; mwenye pointi nyingi zaidi hushinda.",
+    "lib.arcade.oqWin": "Mchezo umeisha — una pointi nyingi zaidi.",
+    "lib.arcade.oqLose": "Mchezo umeisha — kompyuta ina pointi nyingi zaidi.",
+    "lib.arcade.oqDraw": "Mchezo umeisha — sare.",
+    "lib.arcade.oqPick": "Chagua mwelekeo: ◀ au ▶.",
+    "lib.arcade.roll": "Tupa kete",
+    "lib.arcade.note.ludo": "Unacheza nyekundu; rangi nyingine zinachezwa na kompyuta. Tupa kete: unahitaji 6 ili kutoa kete kwenye kambi, na 6 inakupa tupo jingine (6 tatu mfululizo zinakupotezea zamu). Kete husafiri kuzunguka ubao kwa mwelekeo wa saa, kisha kugeuka kuingia njia ya nyumbani ya rangi yake; unahitaji nambari kamili kufika mwisho katikati. Ukitua kamili kwenye kete ya mpinzani, inarudi kambini (isipokuwa kwenye miraba ya nyota na miraba ya kuanzia). Mchezaji wa kwanza kurudisha kete zake zote 4 nyumbani ndiye mshindi.",
+    "lib.arcade.pickToken": "Chagua kete ya kusogeza.",
+    "lib.arcade.turnOf": "Zamu ya {c}…",
+    "lib.arcade.ldWin": "Kete zako zote 4 zimefika nyumbani!",
+    "lib.arcade.ldLose": "{c} amefika nyumbani kwanza.",
+    "lib.arcade.threeSix": "6 tatu mfululizo — umepoteza zamu.",
+    "lib.arcade.noMove": "Hakuna kete inayoweza kusogea.",
+    "lib.arcade.note.pyramid": "Ondoa kadi zote 28 za piramidi. Bofya kadi mbili huru (zisizofunikwa na kadi nyingine) zinazojumlishwa kuwa 13 (A=1, J=11, Q=12) ili kuziondoa zote mbili; Mfalme (King) huondolewa peke yake kwa kubofya mara moja. Kadi ya juu ya rundo la kutupwa pia inaweza kutumika. Bofya rundo la kuchukua kadi; idadi ya mara unazoweza kuchakata upya rundo la kutupwa ni ndogo.",
+    "lib.arcade.note.tripeaks": "Ondoa kadi zote 28 za vilele vitatu. Bofya kadi huru iliyo juu au chini kwa daraja moja tu ya kadi inayoonekana kwenye rundo la kutupwa (aina yoyote) ili kuishusha. Hakuna hatua zilizobaki, bofya rundo la kuchukua kadi. Katika viwango rahisi, K inaunganishwa na A.",
+    "lib.arcade.note.golf": "Ondoa safu wima zote. Kadi ya chini tu ya kila safu wima inaweza kubofywa: lazima iwe juu au chini kwa daraja moja tu ya kadi inayoonekana. Hakuna hatua zilizobaki, bofya rundo la kuchukua kadi. Katika viwango rahisi, K inaunganishwa na A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Nne za aina moja",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Tatu za aina moja",
+    "lib.arcade.ph.twopair": "Jozi mbili",
+    "lib.arcade.ph.jacks": "Jaki au bora zaidi",
+    "lib.arcade.ph.none": "Hakuna",
+    "lib.arcade.res.win": "Ushindi",
+    "lib.arcade.res.lose": "Kushindwa",
+    "lib.arcade.res.push": "Sare",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Nyekundu",
+    "lib.arcade.cGreen": "Kijani",
+    "lib.arcade.cYellow": "Njano",
+    "lib.arcade.cBlue": "Bluu"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Vunja Matofali",
       "desc": "Endesha kibao na rudisha mpira ili kuvunja matofali yote; hatua 10 zenye mipangilio tofauti, kwa kipanya, kugusa au vitufe."
+    },
+    "pyramid": {
+      "name": "Solitaire ya Piramidi",
+      "desc": "Ondoa piramidi ya kadi 28 kwa kuoanisha kadi zinazojumlishwa kuwa 13; viwango 10 vyenye michanganyo michache zaidi."
+    },
+    "tripeaks": {
+      "name": "Solitaire ya TriPeaks",
+      "desc": "Ondoa vilele vitatu kwa kuunganisha kadi zinazotofautiana kwa daraja moja; viwango 10 kutoka rahisi hadi ngumu."
+    },
+    "golf": {
+      "name": "Solitaire ya Golf",
+      "desc": "Ondoa safu wima kwa kuunganisha kadi zinazotofautiana kwa daraja moja na kadi inayoonekana; viwango 10 vyenye safu wima zaidi unavyoendelea."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Cheza blackjack dhidi ya muuzaji kwa chipu pepe: karibia 21 bila kuvuka; maradufu na gawanya; viwango 10 vyenye malengo ya chipu yanayopanda."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poka ya kadi tano yenye kubadilisha, kwa chipu pepe (jaki au bora zaidi); viwango 10 vyenye majedwali magumu zaidi ya malipo."
+    },
+    "checkers": {
+      "name": "Drafti",
+      "desc": "Cheza drafti 8x8 dhidi ya kompyuta: kukamata kwa lazima, kuruka mara nyingi na wafalme; viwango 10 kutoka rahisi hadi ngumu."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Mchezo wa mbio wa rangi nne: tupa kete na rudisha kete zako 4 nyumbani kwanza; cheza dhidi ya wachezaji 1 hadi 3 wa kompyuta kwa viwango 10."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Mchezo wa jadi wa Kivietinamu wa kupanda mawe: panda mawe na ukamate Mandarin dhidi ya kompyuta; viwango 10 kutoka rahisi hadi ngumu."
     }
   },
   "s": {

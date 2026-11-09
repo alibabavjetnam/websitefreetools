@@ -107,6 +107,14 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Game giải trí | Nối 4 | `tools/connect-four.html` |
 | Game giải trí | Ghép 3 | `tools/match-3.html` |
 | Game giải trí | Phá gạch | `tools/brick-breaker.html` |
+| Game giải trí | Bài Kim tự tháp | `tools/pyramid.html` |
+| Game giải trí | Bài Ba đỉnh (TriPeaks) | `tools/tripeaks.html` |
+| Game giải trí | Bài Golf | `tools/golf.html` |
+| Game giải trí | Xì dách (Blackjack) | `tools/blackjack.html` |
+| Game giải trí | Video Poker | `tools/video-poker.html` |
+| Game giải trí | Cờ đam | `tools/checkers.html` |
+| Game giải trí | Cờ cá ngựa | `tools/ludo.html` |
+| Game giải trí | Ô ăn quan | `tools/o-an-quan.html` |
 
 Chơi online (cờ vua, cờ tướng, cờ úp, cờ vây): nước đi chuyển qua broker MQTT công cộng miễn phí (`src/lib/mqtt.ts` tự viết, `src/lib/online.ts`), mã hoá AES-GCM theo từng bàn; bàn công khai lên danh sách "Bàn chờ bạn", bàn riêng mời bằng link `?id=<guid>`; đăng nhập Google thì ván đấu (JSON) lưu vào Drive của người chơi (`WFTools/Games`).
 

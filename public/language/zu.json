@@ -340,7 +340,70 @@
     "lib.arcade.target": "Umgomo: {n}",
     "lib.arcade.up": "Phezulu",
     "lib.arcade.youVsAi": "Wena {a} – Ikhompyutha {b}",
-    "lib.arcade.noHintFc": "Akusekho ukunyakaza okuwusizo. Hlehlisa ukunyakaza okumbalwa noma uqale kabusha."
+    "lib.arcade.noHintFc": "Akusekho ukunyakaza okuwusizo. Hlehlisa ukunyakaza okumbalwa noma uqale kabusha.",
+    "lib.arcade.recycles": "Ukuhlanganisa kabusha okusele: {n}",
+    "lib.arcade.stockLeft": "Isitoko: {n}",
+    "lib.arcade.wrapOn": "iKhosi ixhumana ne-A",
+    "lib.arcade.wrapOff": "iKhosi ayixhumani ne-A",
+    "lib.arcade.hintDraw": "Awusekho amapheya. Chofoza isitoko ukuze udwebe.",
+    "lib.arcade.betMax": "Ubuningi",
+    "lib.arcade.deal": "Phakela",
+    "lib.arcade.hit": "Thola",
+    "lib.arcade.stand": "Ima",
+    "lib.arcade.double": "Phindaza",
+    "lib.arcade.split": "Hlukanisa",
+    "lib.arcade.nextHand": "Isandla esilandelayo",
+    "lib.arcade.note.blackjack": "Imali yokudlala kuphela — hhayi imali yangempela. Uqala ngamashipsi angu-500; finyelela inani lamashipsi okuhlosiwe ngaphakathi kwenani lezandla ezivunyelwe ukuze uphase izinga. Sondela ku-21 kakhulu kuneshuwele ngaphandle kokudlula. Umphakeli udweba aze afinyelele ku-17. I-blackjack (i-ace nekhadi elinenani leshumi) ikhokha okwengeziwe. Phindaza: phindaza inkokhelo uthathe ikhadi elilodwa kuphela. Hlukanisa: kungenzeka uma amakhadi akho amabili okuqala enenani elifanayo.",
+    "lib.arcade.dealer": "Umphakeli",
+    "lib.arcade.you": "Wena",
+    "lib.arcade.bet": "Inkokhelo",
+    "lib.arcade.chips": "Amashipsi: {n}",
+    "lib.arcade.handsLeft": "Izandla ezisele: {n}",
+    "lib.arcade.won": "Uwine amashipsi angu-{n}.",
+    "lib.arcade.lost": "Ulahlekelwe amashipsi angu-{n}.",
+    "lib.arcade.even": "Alikho owinile.",
+    "lib.arcade.note.videopoker": "Imali yokudlala kuphela — hhayi imali yangempela. Khetha inkokhelo engu-1–5 yamashipsi, cindezela Phakela ukuthola amakhadi amahlanu, chofoza amakhadi ofuna ukuwagcina, bese ucindezela Dweba ukushintsha asele. Ipheya yama-jack noma engcono iyakhokhwa. Uqala ngamashipsi angu-100; finyelela inani lamashipsi okuhlosiwe ngaphakathi kwenani lezandla ezivunyelwe ukuze uphase izinga.",
+    "lib.arcade.hold": "GCINA",
+    "lib.arcade.draw": "Dweba",
+    "lib.arcade.note.checkers": "Udlala Obomvu (ngezansi) futhi uqala. Ucezu lunyakaza isikwele esisodwa ngokuthambekile phambili siye esikhaleni esingenalutho. Uma ungagxuma phezu kocezu lomphikisi, kumele ugxume, futhi ungaqhubeka ugxuma ukuze uthathe izingcezu eziningi. Ucezu oluyofinyelela emgqeni ongasekupheleni luba yinkosi futhi lungahamba lubambe nangemuva. Uyahlulwa uma ungasenazo izingcezu noma ukunyakaza okuvumelekile.",
+    "lib.arcade.ckDraw": "Umdlalo uphelele ngokulingana.",
+    "lib.arcade.ckWin": "Abamnyama abanakunyakaza okuvumelekile — uwinile.",
+    "lib.arcade.ckLose": "Awunakunyakaza okuvumelekile — uhlulwe.",
+    "lib.arcade.ckMust": "Kumele uthathe uma ukwazi — khetha esinye sezingcezu ezikhanyayo.",
+    "lib.arcade.note.oanquan": "Umdlalo wendabuko waseVietnam. Umugqa ongezansi ungowakho, ongaphezulu ungowekhompyutha, futhi imikhawulo emibili yizikwele zeMandarin. Chofoza esinye sezikwele zakho, bese ukhetha isiqondiso: wonke amatshe aphakathi athathwa afafazwe linye esikweleni ngasinye. Ngemva kokufafaza, uma isikwele esilandelayo sinamatshe, awathathe uqhubeke ufafaza; uma isikwele esilandelayo singenalutho futhi esilandela sona sinamatshe noma iMandarin, uyasithatha (futhi uqhubeka uthatha uma esinye isikwele esingenalutho silandelwa esigcwele). Yima esikweleni seMandarin noma ngemuva kwezikwele ezimbili ezingenalutho ngokulandelana. IMandarin ibiza amaphuzu angu-10, itshe lilodwa. Uma uhlangothi lwakho luphelelwa amatshe, angu-5 amaphuzu akho owathathile afafazwa emuva. Umdlalo uphela lapho womabili amaMandarin esethathiwe; ophumelele onamaphuzu amaningi.",
+    "lib.arcade.oqWin": "Umdlalo uphelile — unamaphuzu amaningi.",
+    "lib.arcade.oqLose": "Umdlalo uphelile — ikhompyutha inamaphuzu amaningi.",
+    "lib.arcade.oqDraw": "Umdlalo uphelile — alikho owinile.",
+    "lib.arcade.oqPick": "Khetha isiqondiso: ◀ noma ▶.",
+    "lib.arcade.roll": "Jikijela idayisi",
+    "lib.arcade.note.ludo": "Udlala Obomvu; ezinye izinhlobo zidlalwa yikhompyutha. Jikijela idayisi: udinga u-6 ukukhipha ucezu ekhaya, futhi u-6 ukunika ukujikijela okunye (ama-6 amathathu ngokulandelana alahlekelwa yithuba lakho). Izingcezu zihamba ngokwehora ngaphandle kwebhodi, bese zijikela kukholomu yasekhaya yombala wazo; udinga inombolo eqondile ukuze ufinyelele ekugcineni maphakathi. Ukufika kahle phezu kocezu lomphikisi kulubuyisela ekhaya lalo (ngaphandle kwezikwele zenkanyezi nezokuqala). Owokuqala ukufikisa izingcezu zakhe ezi-4 ekhaya uyawina.",
+    "lib.arcade.pickToken": "Khetha ucezu lokunyakazisa.",
+    "lib.arcade.turnOf": "Isikhathi sika-{c}…",
+    "lib.arcade.ldWin": "Zonke izingcezu zakho ezi-4 sezisekhaya!",
+    "lib.arcade.ldLose": "{c} ufike ekhaya kuqala.",
+    "lib.arcade.threeSix": "Ama-6 amathathu ngokulandelana — ulahlekelwe yithuba.",
+    "lib.arcade.noMove": "Akukho ucezu olungahamba.",
+    "lib.arcade.note.pyramid": "Susa wonke amakhadi angu-28 ephiramidi. Chofoza amakhadi amabili akhululekile (angembozwanga yikhadi) ahlangana abe ngu-13 (A=1, J=11, Q=12) ukuze ususe womabili; iKhosi isuswa yodwa ngokuchofoza kanye. Ikhadi eliphezulu lenqwaba yezilahlwa nalo lingasetshenziswa. Chofoza isitoko ukuze udwebe; inani lezikhathi ongasebenzisa kabusha inqwaba yezilahlwa lilinganiselwe.",
+    "lib.arcade.note.tripeaks": "Susa wonke amakhadi angu-28 ezincwadi ezintathu. Chofoza ikhadi elikhululekile elingaphezulu noma elingaphansi ngezinga elilodwa kunekhadi elibonakala enqwabeni yezilahlwa (noma yisiphi isimo) ukulehlisa. Uma ungasenazo izinyathelo, chofoza isitoko ukuze udwebe. Emazingeni alula, iKhosi ixhumana ne-Ace.",
+    "lib.arcade.note.golf": "Susa wonke amakholomu. Ikhadi eliphansi kuphela lekholomu ngayinye lingachofozwa: kumele libe ngaphezulu noma ngaphansi ngezinga elilodwa kunekhadi elibonakalayo. Uma ungasenazo izinyathelo, chofoza isitoko ukuze udwebe. Emazingeni alula, iKhosi ixhumana ne-Ace.",
+    "lib.arcade.ph.royal": "I-Royal flush",
+    "lib.arcade.ph.sflush": "I-Straight flush",
+    "lib.arcade.ph.quads": "Ezine ezifanayo",
+    "lib.arcade.ph.full": "I-Full house",
+    "lib.arcade.ph.flush": "I-Flush",
+    "lib.arcade.ph.straight": "I-Straight",
+    "lib.arcade.ph.trips": "Ezintathu ezifanayo",
+    "lib.arcade.ph.twopair": "Amapheya amabili",
+    "lib.arcade.ph.jacks": "Ipheya yama-jack noma engcono",
+    "lib.arcade.ph.none": "Lutho",
+    "lib.arcade.res.win": "Uwinile",
+    "lib.arcade.res.lose": "Uhlulwe",
+    "lib.arcade.res.push": "Alikho owinile",
+    "lib.arcade.res.blackjack": "I-Blackjack!",
+    "lib.arcade.cRed": "Obomvu",
+    "lib.arcade.cGreen": "Luhlaza",
+    "lib.arcade.cYellow": "Phuzi",
+    "lib.arcade.cBlue": "Luhlaza okwesibhakabhaka"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Umphihlizi wezitini",
       "desc": "Qondisa iphedi bese ugxumisa ibhola ukuze uphihlize zonke izitini; izigaba ezingu-10 ezinokuhleleka okuhlukile, ngegundane, ukuthinta noma okhiye."
+    },
+    "pyramid": {
+      "name": "I-Pyramid Solitaire",
+      "desc": "Susa iphiramidi yamakhadi angu-28 ngokubhanqa amakhadi ahlangana abe ngu-13; amazinga angu-10 anokuhlanganisa kabusha okuncipha."
+    },
+    "tripeaks": {
+      "name": "I-TriPeaks Solitaire",
+      "desc": "Susa izincwadi ezintathu ngokuxhumanisa amakhadi ahlukene ngezinga elilodwa; amazinga angu-10 asukela kokulula aye kokunzima."
+    },
+    "golf": {
+      "name": "I-Golf Solitaire",
+      "desc": "Susa amakholomu ngokuxhumanisa amakhadi ahlukene ngezinga elilodwa nekhadi elibonakalayo; amazinga angu-10 anamakholomu amaningi kakhulu."
+    },
+    "blackjack": {
+      "name": "I-Blackjack",
+      "desc": "Dlala i-blackjack ngokumelene nomphakeli ngamashipsi anamandla okucabanga: sondela ku-21 ngaphandle kokudlula; phindaza futhi uhlukanise; amazinga angu-10 anenhloso yamashipsi enyukayo."
+    },
+    "video-poker": {
+      "name": "I-Video Poker",
+      "desc": "I-poker yamakhadi amahlanu ngamashipsi anamandla okucabanga (Jacks or Better); amazinga angu-10 anamathebula enkokhelo aqinile."
+    },
+    "checkers": {
+      "name": "Ama-Checkers",
+      "desc": "Dlala ama-checkers angu-8x8 ngokumelene nekhompyutha: ukubamba okuphoqelekile, ukugxuma okuningi namakhosi; amazinga angu-10 asukela kokulula aye kokunzima."
+    },
+    "ludo": {
+      "name": "I-Ludo",
+      "desc": "Umdlalo womjaho onemibala emine: jikijela idayisi ufikise izingcezu zakho ezi-4 ekhaya kuqala; dlala ngokumelene nabadlali bekhompyutha abangu-1 kuya ku-3 emazingeni angu-10."
+    },
+    "o-an-quan": {
+      "name": "I-Ô ăn quan",
+      "desc": "Umdlalo wendabuko waseVietnam wokufafaza amatshe: fafaza amatshe ubambe amaMandarin ngokumelene nekhompyutha; amazinga angu-10 asukela kokulula aye kokunzima."
     }
   },
   "s": {

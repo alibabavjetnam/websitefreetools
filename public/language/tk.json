@@ -340,7 +340,70 @@
     "lib.arcade.target": "Maksat: {n}",
     "lib.arcade.up": "Ýokary",
     "lib.arcade.youVsAi": "Siz {a} – Kompýuter {b}",
-    "lib.arcade.noHintFc": "Peýdaly ýöriş galmady. Birnäçe ýörişi yzyna alyň ýa-da täzeden başlaň."
+    "lib.arcade.noHintFc": "Peýdaly ýöriş galmady. Birnäçe ýörişi yzyna alyň ýa-da täzeden başlaň.",
+    "lib.arcade.recycles": "Galan täzeden garyşmalar: {n}",
+    "lib.arcade.stockLeft": "Desga: {n}",
+    "lib.arcade.wrapOn": "K A bilen birigýär",
+    "lib.arcade.wrapOff": "K A bilen birigenok",
+    "lib.arcade.hintDraw": "Jübüt galmady. Kart çekmek üçin desgany basyň.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Paýla",
+    "lib.arcade.hit": "Kart al",
+    "lib.arcade.stand": "Dur",
+    "lib.arcade.double": "Ikiqat",
+    "lib.arcade.split": "Bölmek",
+    "lib.arcade.nextHand": "Indiki el",
+    "lib.arcade.note.blackjack": "Diňe oýun puly, hakyky pul däl. Siz 500 žeton bilen başlaýarsyňyz; derejäni geçmek üçin rugsat berlen el sany içinde maksat edilen žeton sanyna ýetiň. 21-den geçmän, dilerden 21-e ýakyn boluň. Diler 17-ä ýetýänçä kart alýar. Blekjek (tuz we on bahaly kart) goşmaça töleýär. Ikiqat: bahany ikiqatlaýarsyňyz we takyk bir kart alýarsyňyz. Bölmek: ilkinji iki kartyň bahasy deň bolanda elýeterli.",
+    "lib.arcade.dealer": "Diler",
+    "lib.arcade.you": "Siz",
+    "lib.arcade.bet": "Bahalaşyk",
+    "lib.arcade.chips": "Žetonlar: {n}",
+    "lib.arcade.handsLeft": "{n} el galdy",
+    "lib.arcade.won": "Siz {n} žeton utdyňyz.",
+    "lib.arcade.lost": "Siz {n} žeton ýitirdiňiz.",
+    "lib.arcade.even": "Deňlik.",
+    "lib.arcade.note.videopoker": "Diňe oýun puly, hakyky pul däl. 1–5 žeton bahalaşygy saýlaň, bäş kart almak üçin Paýla düwmesine basyň, saklamak isleýän kartlaryňyza basyň, soňra galanlaryny çalyşmak üçin Çalyş düwmesine basyň. Bir jübüt walet ýa-da has gowusy töleýär. Siz 100 žeton bilen başlaýarsyňyz; derejäni geçmek üçin rugsat berlen el sany içinde maksat edilen žeton sanyna ýetiň.",
+    "lib.arcade.hold": "SAKLA",
+    "lib.arcade.draw": "Çalyş",
+    "lib.arcade.note.checkers": "Siz gyzyl (aşakda) bilen oýnaýarsyňyz we ilki ýöreýärsiňiz. Daş bir tarapa gyşarnyk öňe boş öýjüge ýöreýär. Garşydaşyň daşynyň üstünden böküp bilseňiz, bökmeli, we birnäçe daşy almak üçin bökmegi dowam etdirip bilersiňiz. Soňky hatara ýeten daş şa bolýar we yzyna hem ýöräp, alyp biler. Daşyňyz ýa-da kanuny ýörişiňiz galmasa, utulýarsyňyz.",
+    "lib.arcade.ckDraw": "Oýun deňlik bilen tamamlandy.",
+    "lib.arcade.ckWin": "Garalaryň kanuny ýörişi ýok — siz ýeňdiňiz.",
+    "lib.arcade.ckLose": "Siziň kanuny ýörişiňiz ýok — siz utuldyňyz.",
+    "lib.arcade.ckMust": "Alyp bilseňiz, almalysyňyz — ýanyp-sönýän daşlaryň birini saýlaň.",
+    "lib.arcade.note.oanquan": "Wýetnamyň dessurly oýny. Aşaky hatar siziňki, ýokarky hatar kompýuteriňki, iki ujy bolsa Mandarin öýjükleri. Öýjükleriňiziň birine basyň, soňra ugry saýlaň: onuň içindäki ähli daşlar alynýar we her öýjüge birden sepilýär. Sependen soň, indiki öýjükde daş bar bolsa, olary alyp, sepmegi dowam ediň; indiki öýjük boş we ondan soňky öýjükde daş ýa-da Mandarin bar bolsa, ony alýarsyňyz (ýene bir boş öýjükden soň daşly öýjük gelse, almagy dowam etdirýärsiňiz). Mandarin öýjügünde ýa-da yzly-yzyna iki boş öýjükden soň duruň. Mandarin 10 utuk, daş 1 utuk bahalydyr. Tarapyňyzda daş gutarsa, alan utuklaryňyzyň 5-si täzeden sepilýär. Iki Mandarin hem alnanda oýun gutarýar; utugy köp bolan ýeňýär.",
+    "lib.arcade.oqWin": "Oýun gutardy — siziň utugyňyz köp.",
+    "lib.arcade.oqLose": "Oýun gutardy — kompýuteriň utugy köp.",
+    "lib.arcade.oqDraw": "Oýun gutardy — deňlik.",
+    "lib.arcade.oqPick": "Ugry saýlaň: ◀ ýa-da ▶.",
+    "lib.arcade.roll": "Zar zyň",
+    "lib.arcade.note.ludo": "Siz gyzyl bilen oýnaýarsyňyz; beýleki reňkleri kompýuter oýnaýar. Zar zyňyň: daşy öýden çykarmak üçin 6 gerek, 6 gelse ýene bir gezek zyňýarsyňyz (yzly-yzyna üç 6 nobatyňyzy ýitirýär). Daşlar tagtanyň daşyndan sagadyň ugry boýunça ýöreýär, soňra öz reňkiniň öý ýoluna öwrülýär; merkezdäki finişe ýetmek üçin takyk san gerek. Garşydaşyň daşynyň üstüne takyk düşseňiz, ol öz öýüne gaýdýar (ýyldyz we başlangyç öýjükler muňa girmeýär). 4 daşyny ilki öýe getiren ýeňýär.",
+    "lib.arcade.pickToken": "Ýörejek daşy saýlaň.",
+    "lib.arcade.turnOf": "{c} nobaty…",
+    "lib.arcade.ldWin": "4 daşyňyzyň hemmesi öýe ýetdi!",
+    "lib.arcade.ldLose": "{c} öýe ilki ýetdi.",
+    "lib.arcade.threeSix": "Yzly-yzyna üç 6 — nobatyňyz ýitdi.",
+    "lib.arcade.noMove": "Hiç bir daş ýöräp bilmeýär.",
+    "lib.arcade.note.pyramid": "Piramidanyň ähli 28 kartyny arassalaň. Jemi 13 bolýan (A=1, J=11, Q=12) iki erkin karta (üstüni başga kart ýapmadyk) basyň, ikisi hem aýrylýar; Patyşa bir basyş bilen ýeke aýrylýar. Taşlanan desganyň üstki kartyny hem ulanyp bolýar. Kart çekmek üçin desgany basyň; taşlanan desgany gaýtadan ulanmagyň sany çäkli.",
+    "lib.arcade.note.tripeaks": "Üç depäniň ähli 28 kartyny arassalaň. Taşlanan desgada görünýän kartdan takyk bir derejä ýokary ýa-da aşak bolan erkin karta (islendik mast) basyp, aşak göçüriň. Ýöriş galmasa, kart çekmek üçin desgany basyň. Aňsat derejelerde K A bilen birigýär.",
+    "lib.arcade.note.golf": "Ähli sütünleri arassalaň. Diňe her sütüniň aşaky kartyna basyp bolýar: ol görünýän kartdan takyk bir derejä ýokary ýa-da aşak bolmaly. Ýöriş galmasa, kart çekmek üçin desgany basyň. Aňsat derejelerde K A bilen birigýär.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Dörtlük",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Üçlük",
+    "lib.arcade.ph.twopair": "Iki jübüt",
+    "lib.arcade.ph.jacks": "Walet ýa-da has gowusy",
+    "lib.arcade.ph.none": "Hiç zat",
+    "lib.arcade.res.win": "Ýeňiş",
+    "lib.arcade.res.lose": "Ýeňlis",
+    "lib.arcade.res.push": "Deňlik",
+    "lib.arcade.res.blackjack": "Blekjek!",
+    "lib.arcade.cRed": "Gyzyl",
+    "lib.arcade.cGreen": "Ýaşyl",
+    "lib.arcade.cYellow": "Sary",
+    "lib.arcade.cBlue": "Gök"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Kerpiç döwüji",
       "desc": "Raketkany dolandyryň we ähli kerpiçleri döwmek üçin topy böküriň; dürli ýerleşişli 10 tapgyr, syçanjyk, duýgur ekran ýa-da düwmeler bilen."
+    },
+    "pyramid": {
+      "name": "Piramida soliteri",
+      "desc": "Jemi 13 bolýan kartlary jübütläp, 28 kartly piramidany arassalaň; täzeden garyşmalary barha azalýan 10 derece."
+    },
+    "tripeaks": {
+      "name": "TriPeaks soliteri",
+      "desc": "Bir derejä tapawutlanýan kartlary birikdirip, üç depäni arassalaň; aňsatdan kyna 10 derece."
+    },
+    "golf": {
+      "name": "Golf soliteri",
+      "desc": "Görünýän kartdan bir derejä tapawutlanýan kartlary birikdirip, sütünleri arassalaň; öňe gidedigiçe sütünleri artýan 10 derece."
+    },
+    "blackjack": {
+      "name": "Blekjek",
+      "desc": "Wirtual žetonlar bilen dilere garşy blekjek oýnaň: 21-den geçmän, oňa iň ýakyn boluň; ikiqat we bölmek; maksat žetonlary ösýän 10 derece."
+    },
+    "video-poker": {
+      "name": "Wideo poker",
+      "desc": "Wirtual žetonlar bilen bäş kartly çalyşmaly poker (walet ýa-da has gowusy); töleg tablisalary barha berkeýän 10 derece."
+    },
+    "checkers": {
+      "name": "Şaşka",
+      "desc": "Kompýutere garşy 8x8 şaşka oýnaň: hökmany almak, köp bökmek we şalar; aňsatdan kyna 10 derece."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Dört reňkli ýaryş oýny: zar zyňyp, 4 daşyňyzy ilki öýe getiriň; 10 derejede 1-den 3-e çenli kompýuter oýunçysyna garşy oýnaň."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Wýetnamyň dessurly daş sepmek oýny: daşlary sepip, kompýutere garşy Mandarinleri alyň; aňsatdan kyna 10 derece."
     }
   },
   "s": {

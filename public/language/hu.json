@@ -340,7 +340,70 @@
     "lib.arcade.target": "Cél: {n}",
     "lib.arcade.up": "Fel",
     "lib.arcade.youVsAi": "Te {a} – Gép {b}",
-    "lib.arcade.noHintFc": "Nincs több hasznos lépés. Vonj vissza néhány lépést, vagy kezdd újra."
+    "lib.arcade.noHintFc": "Nincs több hasznos lépés. Vonj vissza néhány lépést, vagy kezdd újra.",
+    "lib.arcade.recycles": "Hátralévő újraosztások: {n}",
+    "lib.arcade.stockLeft": "Pakli: {n}",
+    "lib.arcade.wrapOn": "A király kapcsolódik az ászhoz",
+    "lib.arcade.wrapOff": "A király nem kapcsolódik az ászhoz",
+    "lib.arcade.hintDraw": "Nincs több pár. Kattints a paklira a húzáshoz.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Osztás",
+    "lib.arcade.hit": "Lapot kérek",
+    "lib.arcade.stand": "Megállok",
+    "lib.arcade.double": "Duplázás",
+    "lib.arcade.split": "Szétosztás",
+    "lib.arcade.nextHand": "Következő kéz",
+    "lib.arcade.note.blackjack": "Csak játékpénz, valódi pénz nélkül. 500 zsetonnal indulsz; a szint teljesítéséhez a megengedett számú kézen belül érd el a célként megadott zsetonszámot. Közelebb kerülj a 21-hez, mint az osztó, anélkül hogy túllépnéd. Az osztó 17-ig húz. A blackjack (egy ász és egy tízértékű lap) többet fizet. Duplázás: megduplázod a tétet, és pontosan egy lapot kapsz. Szétosztás: akkor lehetséges, ha az első két lapod értéke megegyezik.",
+    "lib.arcade.dealer": "Osztó",
+    "lib.arcade.you": "Te",
+    "lib.arcade.bet": "Tét",
+    "lib.arcade.chips": "Zsetonok: {n}",
+    "lib.arcade.handsLeft": "{n} kéz van hátra",
+    "lib.arcade.won": "Nyertél {n} zsetont.",
+    "lib.arcade.lost": "Veszítettél {n} zsetont.",
+    "lib.arcade.even": "Döntetlen.",
+    "lib.arcade.note.videopoker": "Csak játékpénz, valódi pénz nélkül. Válassz 1–5 zsetonos tétet, nyomd meg az Osztás gombot öt lapért, kattints a megtartani kívánt lapokra, majd nyomd meg a Húzás gombot a többi lecseréléséhez. Egy pár bubi vagy jobb nyer. 100 zsetonnal indulsz; a szint teljesítéséhez a megengedett számú kézen belül érd el a célként megadott zsetonszámot.",
+    "lib.arcade.hold": "TARTOM",
+    "lib.arcade.draw": "Húzás",
+    "lib.arcade.note.checkers": "Te vörössel játszol (alul), és te lépsz először. A bábu egy mezőt lép átlósan előre egy üres mezőre. Ha át tudsz ugrani egy ellenfélbábut, muszáj, és több bábu leütéséhez folytathatod az ugrást. Az utolsó sorba érő bábu dámává válik, és hátrafelé is léphet és üthet. Veszítesz, ha nincs több bábud vagy szabályos lépésed.",
+    "lib.arcade.ckDraw": "A játszma döntetlen.",
+    "lib.arcade.ckWin": "A feketének nincs szabályos lépése – nyertél.",
+    "lib.arcade.ckLose": "Nincs szabályos lépésed – vesztettél.",
+    "lib.arcade.ckMust": "Ütési kényszer van – válaszd az egyik pulzáló bábut.",
+    "lib.arcade.note.oanquan": "Hagyományos vietnami játék. Az alsó sor a tiéd, a felső a számítógépé, a két vég pedig a mandarin mező. Kattints az egyik meződre, majd válassz irányt: a benne lévő összes követ felveszed, és mezőnként egyet leraksz. A szórás után, ha a következő mezőn vannak kövek, felveszed őket, és folytatod a szórást; ha a következő mező üres, az utána következőn pedig kövek vagy mandarin van, azt megszerzed (és tovább szerzel, ha egy üres mezőt újra tele mező követ). Mandarin mezőnél vagy két egymás utáni üres mező után megállsz. Egy mandarin 10 pontot ér, egy kő 1-et. Ha a te oldalad kifogy a kövekből, a megszerzett pontjaidból 5-öt visszaszórnak. A játék akkor ér véget, ha mindkét mandarint megszerezték; a több pontot elérő nyer.",
+    "lib.arcade.oqWin": "Vége a játéknak – több pontod van.",
+    "lib.arcade.oqLose": "Vége a játéknak – a számítógépnek több pontja van.",
+    "lib.arcade.oqDraw": "Vége a játéknak – döntetlen.",
+    "lib.arcade.oqPick": "Válassz irányt: ◀ vagy ▶.",
+    "lib.arcade.roll": "Dobás",
+    "lib.arcade.note.ludo": "Te vörössel játszol, a többi színt a számítógép viszi. Dobj a kockával: hatos kell ahhoz, hogy kihozz egy bábut a házból, és a hatos újabb dobást ad (három hatos egymás után elveszi a körödet). A bábuk az óramutató járásával megegyezően körbejárják a táblát, majd a saját színük célsávjába fordulnak; a középső célhoz pontos dobás kell. Ha pontosan egy ellenfélbábura lépsz, az visszakerül a házába (kivéve a csillag és a startmezőkön). Az nyer, aki először hozza be mind a 4 bábuját a célba.",
+    "lib.arcade.pickToken": "Válassz egy bábut a lépéshez.",
+    "lib.arcade.turnOf": "{c} következik…",
+    "lib.arcade.ldWin": "Mind a 4 bábud célba ért!",
+    "lib.arcade.ldLose": "{c} ért be elsőként.",
+    "lib.arcade.threeSix": "Három hatos egymás után – kimaradsz a körből.",
+    "lib.arcade.noMove": "Egyik bábu sem léphet.",
+    "lib.arcade.note.pyramid": "Told el a piramis mind a 28 lapját. Kattints két szabad lapra (amelyeket nem takar más lap), amelyek összege 13 (A=1, J=11, Q=12), hogy mindkettőt eltávolítsd; a királyt egyedül, egy kattintással lehet elvenni. A dobópakli felső lapja is használható. Kattints a paklira a húzáshoz; a dobópakli újrahasznosításának száma korlátozott.",
+    "lib.arcade.note.tripeaks": "Told el a három csúcs mind a 28 lapját. Kattints egy szabad lapra, amely pontosan eggyel magasabb vagy alacsonyabb a dobópakli látható lapjánál (bármilyen színű), hogy lerakd. Ha elfogytak a lépéseid, kattints a paklira a húzáshoz. A könnyebb szinteken a király kapcsolódik az ászhoz.",
+    "lib.arcade.note.golf": "Told el az összes oszlopot. Csak az egyes oszlopok legalsó lapjára lehet kattintani: pontosan eggyel magasabbnak vagy alacsonyabbnak kell lennie a látható lapnál. Ha elfogytak a lépéseid, kattints a paklira a húzáshoz. A könnyebb szinteken a király kapcsolódik az ászhoz.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Színsor",
+    "lib.arcade.ph.quads": "Póker",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Szín",
+    "lib.arcade.ph.straight": "Sor",
+    "lib.arcade.ph.trips": "Drill",
+    "lib.arcade.ph.twopair": "Két pár",
+    "lib.arcade.ph.jacks": "Bubi vagy jobb",
+    "lib.arcade.ph.none": "Semmi",
+    "lib.arcade.res.win": "Nyert",
+    "lib.arcade.res.lose": "Vesztett",
+    "lib.arcade.res.push": "Döntetlen",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Piros",
+    "lib.arcade.cGreen": "Zöld",
+    "lib.arcade.cYellow": "Sárga",
+    "lib.arcade.cBlue": "Kék"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Téglatörő",
       "desc": "Irányítsd az ütőt, pattintsd a labdát, és törd össze az összes téglát; 10 pálya különböző elrendezéssel, egérrel, érintéssel vagy billentyűkkel."
+    },
+    "pyramid": {
+      "name": "Piramis pasziánsz",
+      "desc": "Told el a 28 lapos piramist úgy, hogy 13 összegű lappárokat választasz le; 10 szint egyre kevesebb újraosztással."
+    },
+    "tripeaks": {
+      "name": "TriPeaks pasziánsz",
+      "desc": "Told el a három csúcsot egymástól egy értékre lévő lapok összekapcsolásával; 10 szint a könnyűtől a nehézig."
+    },
+    "golf": {
+      "name": "Golf pasziánsz",
+      "desc": "Told el az oszlopokat a látható laptól egy értékre lévő lapok összekapcsolásával; 10 szint, haladva egyre több oszloppal."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Játssz blackjacket az osztó ellen virtuális zsetonokkal: kerülj minél közelebb a 21-hez túllépés nélkül; duplázz és ossz szét; 10 szint emelkedő zsetoncélokkal."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Ötlapos cserélős póker virtuális zsetonokkal (bubi vagy jobb); 10 szint szigorúbb nyereménytáblákkal."
+    },
+    "checkers": {
+      "name": "Dáma",
+      "desc": "Játssz 8x8-as dámát a számítógép ellen: kötelező ütés, többszörös ugrás és dámák; 10 szint a könnyűtől a nehézig."
+    },
+    "ludo": {
+      "name": "Ki nevet a végén",
+      "desc": "Négyszínű versenyjáték: dobj a kockával, és hozd haza elsőként a 4 bábudat; játssz 1–3 számítógépes játékos ellen 10 szinten."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Hagyományos vietnami kőszóró játék: szórj köveket és szerezd meg a mandarinokat a számítógép ellen; 10 szint a könnyűtől a nehézig."
     }
   },
   "s": {

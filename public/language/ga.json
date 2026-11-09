@@ -340,7 +340,70 @@
     "lib.arcade.target": "Sprioc: {n}",
     "lib.arcade.up": "Suas",
     "lib.arcade.youVsAi": "Tusa {a} – Ríomhaire {b}",
-    "lib.arcade.noHintFc": "Níl aon bheart úsáideach fágtha. Cealaigh cúpla beart nó tosaigh as an nua."
+    "lib.arcade.noHintFc": "Níl aon bheart úsáideach fágtha. Cealaigh cúpla beart nó tosaigh as an nua.",
+    "lib.arcade.recycles": "Athroinnt fágtha: {n}",
+    "lib.arcade.stockLeft": "Stoc: {n}",
+    "lib.arcade.wrapOn": "Nascann an Rí leis an Aon",
+    "lib.arcade.wrapOff": "Ní nascann an Rí leis an Aon",
+    "lib.arcade.hintDraw": "Níl péirí fágtha. Cliceáil ar an stoc chun tarraingt.",
+    "lib.arcade.betMax": "Uasmhéid",
+    "lib.arcade.deal": "Roinn",
+    "lib.arcade.hit": "Tarraing",
+    "lib.arcade.stand": "Fan",
+    "lib.arcade.double": "Dúbláil",
+    "lib.arcade.split": "Scoilt",
+    "lib.arcade.nextHand": "An chéad lámh eile",
+    "lib.arcade.note.blackjack": "Airgead súgartha amháin — níl airgead fíor i gceist. Tosaíonn tú le 500 sliseog; sroich an spriocuimhir sliseog laistigh den líon lámh a cheadaítear chun an leibhéal a rith. Faigh níos gaire do 21 ná an déileálaí gan dul thar. Tarraingíonn an déileálaí go sroicheann sé 17. Íocann blackjack (aon móide cárta deich bpointe) breis. Dúbláil: dúbláil do gheall agus faigh go beacht cárta amháin eile. Scoilt: ar fáil nuair a bhíonn an luach céanna ar do chéad dá chárta.",
+    "lib.arcade.dealer": "Déileálaí",
+    "lib.arcade.you": "Tusa",
+    "lib.arcade.bet": "Geall",
+    "lib.arcade.chips": "Sliseoga: {n}",
+    "lib.arcade.handsLeft": "{n} lámh fágtha",
+    "lib.arcade.won": "Bhuaigh tú {n} sliseog.",
+    "lib.arcade.lost": "Chaill tú {n} sliseog.",
+    "lib.arcade.even": "Cluiche cothrom.",
+    "lib.arcade.note.videopoker": "Airgead súgartha amháin — níl airgead fíor i gceist. Roghnaigh geall 1–5 sliseog, brúigh Roinn chun cúig chárta a fháil, cliceáil ar na cártaí ar mhaith leat a choinneáil, agus brúigh Tarraing chun an chuid eile a athrú. Íocann péire ciontóirí nó níos fearr. Tosaíonn tú le 100 sliseog; sroich an spriocuimhir sliseog laistigh den líon lámh a cheadaítear chun an leibhéal a rith.",
+    "lib.arcade.hold": "COINNIGH",
+    "lib.arcade.draw": "Tarraing",
+    "lib.arcade.note.checkers": "Imríonn tú Dearg (thíos) agus bogann tú ar dtús. Bogann píosa cearnóg amháin trasna ar aghaidh go cearnóg fholamh. Má thig leat léim thar phíosa an chéile comhraic, caithfidh tú; agus is féidir leat leanúint ar aghaidh ag léim chun roinnt píosaí a ghabháil. Déantar rí de phíosa a shroicheann an sraith is faide uait agus is féidir leis bogadh agus gabháil siar freisin. Cailleann tú nuair nach bhfuil píosaí ná gluaiseachtaí dlisteanacha agat.",
+    "lib.arcade.ckDraw": "Tá an cluiche cothrom.",
+    "lib.arcade.ckWin": "Níl gluaiseacht dhlisteanach ag Dubh — bhuaigh tú.",
+    "lib.arcade.ckLose": "Níl gluaiseacht dhlisteanach agat — chaill tú.",
+    "lib.arcade.ckMust": "Caithfidh tú gabháil nuair is féidir — roghnaigh ceann de na píosaí ag preabadh.",
+    "lib.arcade.note.oanquan": "Cluiche traidisiúnta Vítneamach. Is leatsa an tsraith thíos, is leis an ríomhaire an tsraith thuas, agus is cearnóga Mandairíneacha iad an dá cheann. Cliceáil ar cheann de do chearnóga, ansin roghnaigh treo: tógtar na clocha go léir ann agus scaipeann tú iad, ceann in aghaidh na cearnóige. Tar éis scaipthe, má tá clocha sa chéad chearnóg eile, tóg iad agus lean ort ag scaipeadh; má tá an chéad chearnóg eile folamh agus clocha nó Mandairíneach sa chearnóg ina diaidh, gabhann tú é (agus leanann tú ort ag gabháil má leanann cearnóg lán cearnóg fholamh). Stopann tú ag cearnóg Mandairíneach nó tar éis dhá chearnóg fholamh as a chéile. Luach 10 bpointe atá ar Mhandairíneach, 1 ar chloch. Má ritheann do thaobh as clocha, scaiptear 5 de do phointí gafa ar ais. Críochnaíonn an cluiche nuair a ghabhtar an dá Mhandairíneach; buaiteoidh an scór is airde.",
+    "lib.arcade.oqWin": "Deireadh an chluiche — tá níos mó pointí agat.",
+    "lib.arcade.oqLose": "Deireadh an chluiche — tá níos mó pointí ag an ríomhaire.",
+    "lib.arcade.oqDraw": "Deireadh an chluiche — cluiche cothrom.",
+    "lib.arcade.oqPick": "Roghnaigh treo: ◀ nó ▶.",
+    "lib.arcade.roll": "Caith an dísle",
+    "lib.arcade.note.ludo": "Imríonn tú Dearg; imríonn an ríomhaire na dathanna eile. Caith an dísle: ní mór duit 6 chun comhartha a thabhairt amach as a theach, agus tugann 6 chaitheamh eile duit (cailleann tú do sheal má chaitheann tú trí 6 as a chéile). Taistealaíonn na comharthaí timpeall an bhoird deiseal, ansin casann isteach i gcolún baile a ndath; teastaíonn an uimhir cheart chun an críochphointe sa lár a bhaint amach. Má thuirlingíonn tú go beacht ar chomhartha an chéile comhraic, cuirtear ar ais chuig a theach é (ach amháin ar chearnóga réalta agus cearnóga tosaigh). Buaiteoidh an chéad imreoir a thugann a 4 chomhartha abhaile.",
+    "lib.arcade.pickToken": "Roghnaigh comhartha le bogadh.",
+    "lib.arcade.turnOf": "Seal {c}…",
+    "lib.arcade.ldWin": "Tá do 4 chomhartha go léir sa bhaile!",
+    "lib.arcade.ldLose": "Shroich {c} an baile ar dtús.",
+    "lib.arcade.threeSix": "Trí 6 as a chéile — chaill tú do sheal.",
+    "lib.arcade.noMove": "Ní féidir le comhartha ar bith bogadh.",
+    "lib.arcade.note.pyramid": "Glan 28 cárta uile an phirimid. Cliceáil ar dhá chárta saor (nach bhfuil clúdaithe ag cárta ar bith) a chuireann suas le 13 (A=1, J=11, Q=12) chun an bheirt acu a bhaint; baintear Rí leis féin le cliceáil amháin. Is féidir cárta uachtair na dumpa a úsáid freisin. Cliceáil ar an stoc chun tarraingt; tá teorainn le líon na n-uaireanta a athchúrsálann tú an dumpa.",
+    "lib.arcade.note.tripeaks": "Glan 28 cárta uile na dtrí bhuaic. Cliceáil ar chárta saor atá go beacht céim amháin níos airde nó níos ísle ná an cárta atá le feiceáil ar an dumpa (aon chulaith) chun é a bhogadh síos. Nuair a ritheann do ghluaiseachtaí amach, cliceáil ar an stoc chun tarraingt. Ar na leibhéil is éasca, nascann Rí le hAon.",
+    "lib.arcade.note.golf": "Glan na colúin go léir. Ní féidir ach cárta íochtair gach colúin a chliceáil: caithfidh sé a bheith go beacht céim amháin níos airde nó níos ísle ná an cárta atá le feiceáil. Nuair a ritheann do ghluaiseachtaí amach, cliceáil ar an stoc chun tarraingt. Ar na leibhéil is éasca, nascann Rí le hAon.",
+    "lib.arcade.ph.royal": "Sruth ríoga",
+    "lib.arcade.ph.sflush": "Sruth díreach",
+    "lib.arcade.ph.quads": "Ceathrar",
+    "lib.arcade.ph.full": "Teach lán",
+    "lib.arcade.ph.flush": "Sruth",
+    "lib.arcade.ph.straight": "Sraith",
+    "lib.arcade.ph.trips": "Triúr",
+    "lib.arcade.ph.twopair": "Dhá phéire",
+    "lib.arcade.ph.jacks": "Ciontóirí nó níos fearr",
+    "lib.arcade.ph.none": "Faic",
+    "lib.arcade.res.win": "Bua",
+    "lib.arcade.res.lose": "Cailleadh",
+    "lib.arcade.res.push": "Cothrom",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Dearg",
+    "lib.arcade.cGreen": "Glas",
+    "lib.arcade.cYellow": "Buí",
+    "lib.arcade.cBlue": "Gorm"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Briseadh Bríce",
       "desc": "Stiúir an slacán agus preab an liathróid chun gach bríce a bhriseadh; 10 gcéim le leagan amach éagsúil, le luch, tadhall nó eochracha."
+    },
+    "pyramid": {
+      "name": "Solitéar Pirimide",
+      "desc": "Glan pirimid 28 cárta trí chártaí a phéireáil a chuireann suas le 13; 10 leibhéal le níos lú athroinnte de réir a chéile."
+    },
+    "tripeaks": {
+      "name": "Solitéar TriPeaks",
+      "desc": "Glan trí bhuaic trí chártaí atá céim amháin óna chéile a nascadh; 10 leibhéal ó éasca go deacair."
+    },
+    "golf": {
+      "name": "Solitéar Gailf",
+      "desc": "Glan na colúin trí chártaí atá céim amháin ón gcárta infheicthe a nascadh; 10 leibhéal le níos mó colún de réir mar a théann tú ar aghaidh."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Imir blackjack in aghaidh an déileálaí le sliseoga fíorúla: téigh chomh gar do 21 agus is féidir gan dul thar; dúbláil agus scoilt; 10 leibhéal le spriocanna sliseog ag méadú."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Pócar tarraingthe cúig chárta le sliseoga fíorúla (ciontóirí nó níos fearr); 10 leibhéal le táblaí íocaíochta níos docra."
+    },
+    "checkers": {
+      "name": "Dréacht",
+      "desc": "Imir dréacht 8x8 in aghaidh an ríomhaire: gabháil éigeantach, il-léimeanna agus ríthe; 10 leibhéal ó éasca go deacair."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Cluiche rása ceithre dhath: caith an dísle agus tabhair do 4 chomhartha abhaile ar dtús; imir in aghaidh 1 go 3 imreoir ríomhaire thar 10 leibhéal."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Cluiche traidisiúnta Vítneamach scaipthe cloch: scaip clocha agus gabh na Mandairíneacha in aghaidh an ríomhaire; 10 leibhéal ó éasca go deacair."
     }
   },
   "s": {

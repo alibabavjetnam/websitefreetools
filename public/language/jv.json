@@ -340,7 +340,70 @@
     "lib.arcade.target": "Target: {n}",
     "lib.arcade.up": "Munggah",
     "lib.arcade.youVsAi": "Kowé {a} – Komputer {b}",
-    "lib.arcade.noHintFc": "Ora ana langkah sing migunani manèh. Batalaké sawetara langkah utawa wiwiti manèh."
+    "lib.arcade.noHintFc": "Ora ana langkah sing migunani manèh. Batalaké sawetara langkah utawa wiwiti manèh.",
+    "lib.arcade.recycles": "Isih ngacak maneh: {n}",
+    "lib.arcade.stockLeft": "Tumpukan: {n}",
+    "lib.arcade.wrapOn": "Raja nyambung menyang As",
+    "lib.arcade.wrapOff": "Raja ora nyambung menyang As",
+    "lib.arcade.hintDraw": "Ora ana pasangan maneh. Klik tumpukan kanggo narik kertu.",
+    "lib.arcade.betMax": "Maks",
+    "lib.arcade.deal": "Mbagi",
+    "lib.arcade.hit": "Njupuk",
+    "lib.arcade.stand": "Mandheg",
+    "lib.arcade.double": "Dikali loro",
+    "lib.arcade.split": "Pisah",
+    "lib.arcade.nextHand": "Tangan sabanjure",
+    "lib.arcade.note.blackjack": "Mung dhuwit dolanan — dudu dhuwit sing nyata. Sampeyan miwiti nganggo 500 chip; tekan target chip ing jumlah tangan sing diidini kanggo lulus level. Cedhak 21 luwih saka bandar tanpa ngluwihi. Bandar narik nganti tekan 17. Blackjack (As lan kertu sing regane sepuluh) mbayar luwih. Dikali loro: gandakake taruhan lan jupuk persis siji kertu maneh. Pisah: bisa yen rong kertu pisanan regane padha.",
+    "lib.arcade.dealer": "Bandar",
+    "lib.arcade.you": "Sampeyan",
+    "lib.arcade.bet": "Taruhan",
+    "lib.arcade.chips": "Chip: {n}",
+    "lib.arcade.handsLeft": "Isih {n} tangan",
+    "lib.arcade.won": "Sampeyan menang {n} chip.",
+    "lib.arcade.lost": "Sampeyan kalah {n} chip.",
+    "lib.arcade.even": "Imbang.",
+    "lib.arcade.note.videopoker": "Mung dhuwit dolanan — dudu dhuwit sing nyata. Pilih taruhan 1–5 chip, pencet Mbagi kanggo olèh limang kertu, klik kertu sing arep dijaga, banjur pencet Tarik kanggo ngganti sing liyane. Pasangan Jack utawa sing luwih apik dibayar. Sampeyan miwiti nganggo 100 chip; tekan target chip ing jumlah tangan sing diidini kanggo lulus level.",
+    "lib.arcade.hold": "JAGA",
+    "lib.arcade.draw": "Tarik",
+    "lib.arcade.note.checkers": "Sampeyan main Abang (ing ngisor) lan mlaku dhisik. Bidak mlaku siji kotak miring maju menyang kotak kosong. Yen bisa mlumpat bidak mungsuh, sampeyan kudu mlumpat, lan bisa terus mlumpat kanggo njupuk pirang-pirang bidak. Bidak sing tekan baris pungkasan dadi raja lan bisa mlaku lan njupuk mundur uga. Sampeyan kalah yen ora duwe bidak utawa langkah sing sah.",
+    "lib.arcade.ckDraw": "Dolanan rampung imbang.",
+    "lib.arcade.ckWin": "Ireng ora duwe langkah sing sah — sampeyan menang.",
+    "lib.arcade.ckLose": "Sampeyan ora duwe langkah sing sah — sampeyan kalah.",
+    "lib.arcade.ckMust": "Sampeyan kudu njupuk yen bisa — pilih salah siji bidak sing kedhip-kedhip.",
+    "lib.arcade.note.oanquan": "Dolanan tradisional Vietnam. Baris ngisor iku duweke sampeyan, baris ndhuwur duweke komputer, lan ujung loro iku kotak Mandarin. Klik salah siji kotak sampeyan, banjur pilih arah: kabeh watu ing kono dijupuk lan disebar siji-siji saben kotak. Sawise nyebar, yen kotak sabanjure ana watune, jupuk lan terus nyebar; yen kotak sabanjure kosong lan kotak sawise iku ana watu utawa Mandarin, sampeyan njupuk kotak kuwi (lan terus njupuk yen kotak kosong liyane disusul kotak sing kebak). Mandheg ing kotak Mandarin utawa sawise rong kotak kosong urut. Mandarin regane 10 poin, watu 1. Yen sisih sampeyan entek watune, 5 poin sing wis sampeyan jupuk disebar bali. Dolanan rampung yen Mandarin loro-lorone wis dijupuk; skor sing luwih dhuwur menang.",
+    "lib.arcade.oqWin": "Dolanan rampung — poinmu luwih akeh.",
+    "lib.arcade.oqLose": "Dolanan rampung — komputer poine luwih akeh.",
+    "lib.arcade.oqDraw": "Dolanan rampung — imbang.",
+    "lib.arcade.oqPick": "Pilih arah: ◀ utawa ▶.",
+    "lib.arcade.roll": "Uncalan dadu",
+    "lib.arcade.note.ludo": "Sampeyan main Abang; werna liyane dimainake komputer. Uncalan dadu: butuh angka 6 kanggo medhun bidak saka kandhang, lan angka 6 menehi uncalan maneh (telu angka 6 urut ndadekake giliran ilang). Bidak mlaku nutut arah jarum jam ngubengi papan, banjur mbelok menyang jalur omah warnane; butuh angka sing pas kanggo tekan finis ing tengah. Yen mendhet persis ing bidak mungsuh, bidak kuwi bali menyang kandhang (kajaba ing kotak lintang lan kotak wiwitan). Pemain pisanan sing nggawa 4 bidak bali menyang omah menang.",
+    "lib.arcade.pickToken": "Pilih bidak kanggo digeser.",
+    "lib.arcade.turnOf": "Giliran {c}…",
+    "lib.arcade.ldWin": "Kabeh 4 bidak sampeyan wis tekan omah!",
+    "lib.arcade.ldLose": "{c} tekan omah dhisik.",
+    "lib.arcade.threeSix": "Telu angka 6 urut — giliran sampeyan ilang.",
+    "lib.arcade.noMove": "Ora ana bidak sing bisa mlaku.",
+    "lib.arcade.note.pyramid": "Resiki kabeh 28 kertu piramida. Klik rong kertu bebas (ora ketutupan kertu liya) sing jumlahe 13 (A=1, J=11, Q=12) kanggo mbusak loro-lorone; Raja dibusak dhewekan kanthi sapisan klik. Kertu paling ndhuwur tumpukan buangan uga bisa dienggo. Klik tumpukan kanggo narik kertu; kaping pirang-pirang tumpukan buangan bisa didaur ulang diwatesi.",
+    "lib.arcade.note.tripeaks": "Resiki kabeh 28 kertu telung pucuk. Klik kertu bebas sing persis siji tingkat luwih dhuwur utawa luwih endhek tinimbang kertu sing katon ing tumpukan buangan (jinis apa wae) kanggo mindhah mudhun. Yen ora ana langkah maneh, klik tumpukan kanggo narik kertu. Ing level sing luwih gampang, Raja nyambung menyang As.",
+    "lib.arcade.note.golf": "Resiki kabeh kolom. Mung kertu paling ngisor saben kolom sing bisa diklik: kudu persis siji tingkat luwih dhuwur utawa luwih endhek tinimbang kertu sing katon. Yen ora ana langkah maneh, klik tumpukan kanggo narik kertu. Ing level sing luwih gampang, Raja nyambung menyang As.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Four of a kind",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Three of a kind",
+    "lib.arcade.ph.twopair": "Two pair",
+    "lib.arcade.ph.jacks": "Jack utawa luwih apik",
+    "lib.arcade.ph.none": "Ora ana",
+    "lib.arcade.res.win": "Menang",
+    "lib.arcade.res.lose": "Kalah",
+    "lib.arcade.res.push": "Imbang",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Abang",
+    "lib.arcade.cGreen": "Ijo",
+    "lib.arcade.cYellow": "Kuning",
+    "lib.arcade.cBlue": "Biru"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Pangremuk Bata",
       "desc": "Arahna papan pantul lan mantulake bal kanggo ngremuk kabèh bata; 10 tahap kanthi tata letak béda, nganggo mouse, sentuhan utawa tombol."
+    },
+    "pyramid": {
+      "name": "Solitaire Piramida",
+      "desc": "Resiki piramida 28 kertu kanthi masangake kertu sing jumlahe 13; 10 level kanthi ngacak maneh sing saya sithik."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Resiki telung pucuk kanthi nyambungake kertu sing bedane siji tingkat; 10 level saka gampang nganti angel."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Resiki kolom kanthi nyambungake kertu sing bedane siji tingkat saka kertu sing katon; 10 level kanthi kolom sing saya akeh."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Main blackjack nglawan bandar nganggo chip virtual: cedhak 21 tanpa ngluwihi; kali loro lan pisah; 10 level kanthi target chip sing saya munggah."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker lima kertu karo ganti nganggo chip virtual (Jacks or Better); 10 level kanthi tabel pambayaran sing saya ketat."
+    },
+    "checkers": {
+      "name": "Dam-daman (Checkers)",
+      "desc": "Main dam-daman 8x8 nglawan komputer: njupuk wajib, mlumpat bola-bali lan raja; 10 level saka gampang nganti angel."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Dolanan balapan papat werna: uncalan dadu lan gawa 4 bidak sampeyan bali omah dhisik; main nglawan 1 nganti 3 pemain komputer ing 10 level."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Dolanan tradisional Vietnam nyebar watu: sebar watu lan jupuk Mandarin nglawan komputer; 10 level saka gampang nganti angel."
     }
   },
   "s": {

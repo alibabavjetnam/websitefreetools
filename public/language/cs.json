@@ -340,7 +340,70 @@
     "lib.arcade.target": "Cíl: {n}",
     "lib.arcade.up": "Nahoru",
     "lib.arcade.youVsAi": "Vy {a} – Počítač {b}",
-    "lib.arcade.noHintFc": "Nezbyl žádný užitečný tah. Vraťte pár tahů nebo začněte znovu."
+    "lib.arcade.noHintFc": "Nezbyl žádný užitečný tah. Vraťte pár tahů nebo začněte znovu.",
+    "lib.arcade.recycles": "Zbývá přehození: {n}",
+    "lib.arcade.stockLeft": "Talón: {n}",
+    "lib.arcade.wrapOn": "Král navazuje na eso",
+    "lib.arcade.wrapOff": "Král nenavazuje na eso",
+    "lib.arcade.hintDraw": "Žádné další dvojice. Kliknutím na talón si lízněte kartu.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Rozdat",
+    "lib.arcade.hit": "Líznout",
+    "lib.arcade.stand": "Stačí",
+    "lib.arcade.double": "Zdvojit",
+    "lib.arcade.split": "Rozdělit",
+    "lib.arcade.nextHand": "Další ruka",
+    "lib.arcade.note.blackjack": "Pouze hra o virtuální peníze — žádné skutečné peníze. Začínáte s 500 žetony; dosáhněte cílového počtu žetonů v povoleném počtu rozdání a splníte úroveň. Dostaňte se k 21 blíž než krupiér, ale nepřekročte ji. Krupiér lízá, dokud nedosáhne 17. Blackjack (eso a karta s hodnotou deset) vyplácí navíc. Zdvojit: zdvojnásobte sázku a vezměte přesně jednu další kartu. Rozdělit: možné, mají-li vaše první dvě karty stejnou hodnotu.",
+    "lib.arcade.dealer": "Krupiér",
+    "lib.arcade.you": "Vy",
+    "lib.arcade.bet": "Sázka",
+    "lib.arcade.chips": "Žetony: {n}",
+    "lib.arcade.handsLeft": "Zbývá {n} rozdání",
+    "lib.arcade.won": "Vyhráli jste {n} žetonů.",
+    "lib.arcade.lost": "Prohráli jste {n} žetonů.",
+    "lib.arcade.even": "Remíza.",
+    "lib.arcade.note.videopoker": "Pouze hra o virtuální peníze — žádné skutečné peníze. Zvolte sázku 1–5 žetonů, stiskem Rozdat dostanete pět karet, klikněte na karty, které chcete ponechat, a stiskem Vyměnit nahradíte ostatní. Vyplácí se dvojice kluků nebo lepší. Začínáte se 100 žetony; dosáhněte cílového počtu žetonů v povoleném počtu rozdání a splníte úroveň.",
+    "lib.arcade.hold": "PONECHAT",
+    "lib.arcade.draw": "Vyměnit",
+    "lib.arcade.note.checkers": "Hrajete za červené (dole) a začínáte. Kámen se posouvá o jedno pole šikmo vpřed na prázdné pole. Pokud můžete přeskočit soupeřův kámen, musíte, a můžete skákat dál a brát více kamenů. Kámen, který dojde do poslední řady, se stává dámou a může se pohybovat i brát dozadu. Prohráváte, pokud nemáte žádné kameny nebo žádný platný tah.",
+    "lib.arcade.ckDraw": "Hra skončila remízou.",
+    "lib.arcade.ckWin": "Černý nemá žádný platný tah — vyhráváte.",
+    "lib.arcade.ckLose": "Nemáte žádný platný tah — prohráváte.",
+    "lib.arcade.ckMust": "Když můžete brát, musíte — vyberte jeden z pulzujících kamenů.",
+    "lib.arcade.note.oanquan": "Tradiční vietnamská hra. Spodní řada je vaše, horní patří počítači a oba konce jsou mandarínská pole. Klikněte na jedno ze svých polí a zvolte směr: všechny kameny z něj se zvednou a rozsévají se po jednom na pole. Pokud je po rozsetí další pole plné kamenů, zvedněte je a pokračujte v setí; je-li další pole prázdné a to za ním obsahuje kameny nebo mandarína, získáte ho (a berete dál, následuje-li po prázdném poli další plné). Zastavte se na mandarínském poli nebo po dvou prázdných polích za sebou. Mandarín má hodnotu 10 bodů, kámen 1. Pokud vaší straně dojdou kameny, rozsejí se zpět 5 vašich získaných bodů. Hra končí, když jsou získáni oba mandarínové; vyhrává vyšší skóre.",
+    "lib.arcade.oqWin": "Konec hry — máte víc bodů.",
+    "lib.arcade.oqLose": "Konec hry — počítač má víc bodů.",
+    "lib.arcade.oqDraw": "Konec hry — remíza.",
+    "lib.arcade.oqPick": "Zvolte směr: ◀ nebo ▶.",
+    "lib.arcade.roll": "Hodit kostkou",
+    "lib.arcade.note.ludo": "Hrajete za červené; ostatní barvy hraje počítač. Hoďte kostkou: k vyvedení figurky z domečku potřebujete šestku a šestka znamená další hod (tři šestky v řadě znamenají ztrátu tahu). Figurky obíhají desku po směru hodinových ručiček a pak zahnou do cílového pruhu své barvy; k dosažení cíle uprostřed potřebujete přesné číslo. Přistání přesně na soupeřově figurce ji pošle zpět do domečku (kromě polí s hvězdou a startovních polí). Vyhrává ten, kdo první dovede domů všechny 4 figurky.",
+    "lib.arcade.pickToken": "Vyberte figurku, kterou chcete posunout.",
+    "lib.arcade.turnOf": "Na tahu je {c}…",
+    "lib.arcade.ldWin": "Všechny vaše 4 figurky jsou doma!",
+    "lib.arcade.ldLose": "{c} dorazil domů první.",
+    "lib.arcade.threeSix": "Tři šestky v řadě — ztrácíte tah.",
+    "lib.arcade.noMove": "Žádná figurka se nemůže pohnout.",
+    "lib.arcade.note.pyramid": "Odstraňte všech 28 karet pyramidy. Kliknutím na dvě volné karty (které nejsou ničím zakryté) s součtem 13 (eso=1, spodek=11, královna=12) obě odstraníte; král se odstraní sám jedním kliknutím. Použít lze i vrchní kartu odkládacího balíčku. Kliknutím na talón lízněte kartu; počet přehození odkládacího balíčku je omezený.",
+    "lib.arcade.note.tripeaks": "Odstraňte všech 28 karet ze tří vrcholů. Kliknutím na volnou kartu, která je přesně o jednu hodnotu vyšší nebo nižší než karta na odkládacím balíčku (libovolná barva), ji přesunete. Když nemáte tah, kliknutím na talón lízněte kartu. Na lehčích úrovních král navazuje na eso.",
+    "lib.arcade.note.golf": "Odstraňte všechny sloupce. Kliknout lze jen na spodní kartu každého sloupce: musí být přesně o jednu hodnotu vyšší nebo nižší než viditelná karta. Když nemáte tah, kliknutím na talón lízněte kartu. Na lehčích úrovních král navazuje na eso.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Postupka v barvě",
+    "lib.arcade.ph.quads": "Poker",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Barva",
+    "lib.arcade.ph.straight": "Postupka",
+    "lib.arcade.ph.trips": "Trojice",
+    "lib.arcade.ph.twopair": "Dva páry",
+    "lib.arcade.ph.jacks": "Kluci nebo lepší",
+    "lib.arcade.ph.none": "Nic",
+    "lib.arcade.res.win": "Výhra",
+    "lib.arcade.res.lose": "Prohra",
+    "lib.arcade.res.push": "Remíza",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Červená",
+    "lib.arcade.cGreen": "Zelená",
+    "lib.arcade.cYellow": "Žlutá",
+    "lib.arcade.cBlue": "Modrá"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Rozbíjení cihel",
       "desc": "Ovládejte pálku a odrážejte míček, abyste rozbili všechny cihly; 10 kol s různým rozložením, myší, dotykem nebo klávesami."
+    },
+    "pyramid": {
+      "name": "Pyramida (solitaire)",
+      "desc": "Odstraňte pyramidu z 28 karet spárováním karet se součtem 13; 10 úrovní s čím dál méně přehozeními."
+    },
+    "tripeaks": {
+      "name": "TriPeaks (solitaire)",
+      "desc": "Odstraňte tři vrcholy navazováním karet o jednu hodnotu vedle sebe; 10 úrovní od lehké po těžkou."
+    },
+    "golf": {
+      "name": "Golf (solitaire)",
+      "desc": "Odstraňte sloupce navazováním karet o jednu hodnotu od viditelné karty; 10 úrovní s přibývajícími sloupci."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Hrajte blackjack proti krupiérovi s virtuálními žetony: dostaňte se co nejblíž 21 bez překročení; zdvojujte a dělte; 10 úrovní s rostoucím cílem žetonů."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Pětikartový poker s výměnou a virtuálními žetony (dvojice kluků nebo lepší); 10 úrovní s čím dál přísnějšími výplatními tabulkami."
+    },
+    "checkers": {
+      "name": "Dáma",
+      "desc": "Hrajte dámu 8x8 proti počítači: povinné braní, vícenásobné skoky a dámy; 10 úrovní od lehké po těžkou."
+    },
+    "ludo": {
+      "name": "Ludo (Člověče, nezlob se)",
+      "desc": "Závodní hra ve čtyřech barvách: hoďte kostkou a dovedte první domů své 4 figurky; hrajte proti 1 až 3 počítačovým hráčům v 10 úrovních."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Tradiční vietnamská hra se zasýváním kamenů: rozsévejte kameny a získávejte mandaríny proti počítači; 10 úrovní od lehké po těžkou."
     }
   },
   "s": {

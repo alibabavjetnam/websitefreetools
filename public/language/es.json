@@ -340,7 +340,70 @@
     "lib.arcade.target": "Objetivo: {n}",
     "lib.arcade.up": "Arriba",
     "lib.arcade.youVsAi": "Tú {a} – Ordenador {b}",
-    "lib.arcade.noHintFc": "No quedan movimientos útiles. Deshaz algunos movimientos o empieza de nuevo."
+    "lib.arcade.noHintFc": "No quedan movimientos útiles. Deshaz algunos movimientos o empieza de nuevo.",
+    "lib.arcade.recycles": "Repartos restantes: {n}",
+    "lib.arcade.stockLeft": "Mazo: {n}",
+    "lib.arcade.wrapOn": "El K enlaza con el A",
+    "lib.arcade.wrapOff": "El K no enlaza con el A",
+    "lib.arcade.hintDraw": "No quedan parejas. Haz clic en el mazo para robar.",
+    "lib.arcade.betMax": "Máx.",
+    "lib.arcade.deal": "Repartir",
+    "lib.arcade.hit": "Pedir",
+    "lib.arcade.stand": "Plantarse",
+    "lib.arcade.double": "Doblar",
+    "lib.arcade.split": "Dividir",
+    "lib.arcade.nextHand": "Siguiente mano",
+    "lib.arcade.note.blackjack": "Solo dinero ficticio, sin dinero real. Empiezas con 500 fichas; alcanza el objetivo de fichas dentro del número de manos permitido para superar el nivel. Acércate a 21 más que la banca sin pasarte. La banca pide carta hasta llegar a 17. Un blackjack (un as más una carta de valor 10) paga extra. Doblar: duplicas tu apuesta y recibes exactamente una carta más. Dividir: disponible cuando tus dos primeras cartas tienen el mismo valor.",
+    "lib.arcade.dealer": "Crupier",
+    "lib.arcade.you": "Tú",
+    "lib.arcade.bet": "Apuesta",
+    "lib.arcade.chips": "Fichas: {n}",
+    "lib.arcade.handsLeft": "Quedan {n} manos",
+    "lib.arcade.won": "Ganaste {n} fichas.",
+    "lib.arcade.lost": "Perdiste {n} fichas.",
+    "lib.arcade.even": "Empate.",
+    "lib.arcade.note.videopoker": "Solo dinero ficticio, sin dinero real. Elige una apuesta de 1 a 5 fichas, pulsa Repartir para recibir cinco cartas, haz clic en las cartas que quieras conservar y pulsa Cambiar para sustituir el resto. Paga un par de jotas o mejor. Empiezas con 100 fichas; alcanza el objetivo de fichas dentro del número de manos permitido para superar el nivel.",
+    "lib.arcade.hold": "CONSERVAR",
+    "lib.arcade.draw": "Cambiar",
+    "lib.arcade.note.checkers": "Juegas con las rojas (abajo) y mueves primero. Una pieza avanza una casilla en diagonal hacia delante a una casilla vacía. Si puedes saltar sobre una pieza rival, estás obligado a hacerlo, y puedes seguir saltando para capturar varias piezas. Una pieza que llega a la fila del fondo se corona dama y también puede mover y capturar hacia atrás. Pierdes cuando no te quedan piezas o movimientos legales.",
+    "lib.arcade.ckDraw": "La partida termina en tablas.",
+    "lib.arcade.ckWin": "Las negras no tienen movimientos legales: ¡has ganado!",
+    "lib.arcade.ckLose": "No tienes movimientos legales: has perdido.",
+    "lib.arcade.ckMust": "Debes capturar cuando puedas: elige una de las piezas que parpadean.",
+    "lib.arcade.note.oanquan": "Un juego tradicional vietnamita. La fila de abajo es tuya, la de arriba es de la máquina, y los dos extremos son las casillas del Mandarín. Haz clic en una de tus casillas y elige una dirección: se recogen todas sus piedras y se reparten de una en una. Tras repartir, si la casilla siguiente tiene piedras, recógelas y sigue repartiendo; si la siguiente está vacía y la que viene después tiene piedras o un Mandarín, la capturas (y sigues capturando si tras otra casilla vacía hay una con piedras). Te detienes en una casilla de Mandarín o tras dos casillas vacías seguidas. Un Mandarín vale 10 puntos y una piedra 1. Si tu lado se queda sin piedras, se reponen 5 de tus puntos capturados. La partida termina cuando se capturan ambos Mandarines; gana quien tenga más puntos.",
+    "lib.arcade.oqWin": "Fin de la partida: tienes más puntos.",
+    "lib.arcade.oqLose": "Fin de la partida: la máquina tiene más puntos.",
+    "lib.arcade.oqDraw": "Fin de la partida: empate.",
+    "lib.arcade.oqPick": "Elige una dirección: ◀ o ▶.",
+    "lib.arcade.roll": "Tirar el dado",
+    "lib.arcade.note.ludo": "Juegas con el rojo; los demás colores los controla la máquina. Tira el dado: necesitas un 6 para sacar una ficha de la casa, y un 6 te da otra tirada (tres 6 seguidos pierdes el turno). Las fichas recorren el tablero en el sentido de las agujas del reloj y luego entran en el pasillo final de su color; necesitas la cifra exacta para llegar a la meta del centro. Si caes exactamente sobre una ficha rival, la mandas de vuelta a su casa (salvo en casillas con estrella y casillas de salida). Gana el primero que lleve sus 4 fichas a la meta.",
+    "lib.arcade.pickToken": "Elige una ficha para mover.",
+    "lib.arcade.turnOf": "Turno de {c}…",
+    "lib.arcade.ldWin": "¡Tus 4 fichas han llegado a la meta!",
+    "lib.arcade.ldLose": "{c} llegó primero a la meta.",
+    "lib.arcade.threeSix": "Tres 6 seguidos: pierdes el turno.",
+    "lib.arcade.noMove": "Ninguna ficha puede moverse.",
+    "lib.arcade.note.pyramid": "Despeja las 28 cartas de la pirámide. Haz clic en dos cartas libres (no cubiertas por otra) que sumen 13 (A=1, J=11, Q=12) para retirarlas; un Rey se retira solo con un clic. También puedes usar la carta superior del descarte. Haz clic en el mazo para robar; el número de veces que puedes reciclar el descarte es limitado.",
+    "lib.arcade.note.tripeaks": "Despeja las 28 cartas de los tres picos. Haz clic en una carta libre que sea exactamente un valor mayor o menor que la carta visible en el descarte (de cualquier palo) para bajarla. Cuando no tengas movimientos, haz clic en el mazo para robar. En los niveles fáciles, el Rey enlaza con el As.",
+    "lib.arcade.note.golf": "Despeja todas las columnas. Solo se puede pulsar la carta inferior de cada columna: debe ser exactamente un valor mayor o menor que la carta visible. Cuando no tengas movimientos, haz clic en el mazo para robar. En los niveles fáciles, el Rey enlaza con el As.",
+    "lib.arcade.ph.royal": "Escalera real",
+    "lib.arcade.ph.sflush": "Escalera de color",
+    "lib.arcade.ph.quads": "Póquer",
+    "lib.arcade.ph.full": "Full",
+    "lib.arcade.ph.flush": "Color",
+    "lib.arcade.ph.straight": "Escalera",
+    "lib.arcade.ph.trips": "Trío",
+    "lib.arcade.ph.twopair": "Doble pareja",
+    "lib.arcade.ph.jacks": "Jotas o mejor",
+    "lib.arcade.ph.none": "Nada",
+    "lib.arcade.res.win": "Ganas",
+    "lib.arcade.res.lose": "Pierdes",
+    "lib.arcade.res.push": "Empate",
+    "lib.arcade.res.blackjack": "¡Blackjack!",
+    "lib.arcade.cRed": "Rojo",
+    "lib.arcade.cGreen": "Verde",
+    "lib.arcade.cYellow": "Amarillo",
+    "lib.arcade.cBlue": "Azul"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Rompeladrillos",
       "desc": "Mueve la pala y haz rebotar la bola para romper todos los ladrillos; 10 fases con distintas formas, con ratón, pantalla táctil o teclado."
+    },
+    "pyramid": {
+      "name": "Solitario Pirámide",
+      "desc": "Despeja la pirámide de 28 cartas emparejando cartas que sumen 13; 10 niveles con cada vez menos repartos."
+    },
+    "tripeaks": {
+      "name": "Solitario TriPeaks",
+      "desc": "Despeja tres picos enlazando cartas de valores consecutivos; 10 niveles de fácil a difícil."
+    },
+    "golf": {
+      "name": "Solitario Golf",
+      "desc": "Despeja las columnas enlazando cartas de valor consecutivo a la carta visible; 10 niveles con más columnas a medida que avanzas."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Juega al blackjack contra la banca con fichas virtuales: acércate a 21 sin pasarte; dobla y divide; 10 niveles con objetivos de fichas crecientes."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Póquer con cinco cartas y cambio, con fichas virtuales (Jotas o mejor); 10 niveles con tablas de pagos cada vez más ajustadas."
+    },
+    "checkers": {
+      "name": "Damas",
+      "desc": "Juega a las damas 8x8 contra la máquina: capturas obligatorias, saltos múltiples y damas; 10 niveles de fácil a difícil."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Juego de carreras de cuatro colores: tira el dado y lleva tus 4 fichas a la meta antes que nadie; juega contra 1 a 3 jugadores de la máquina en 10 niveles."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Un juego tradicional vietnamita de siembra: reparte piedras y captura los Mandarines contra la máquina; 10 niveles de fácil a difícil."
     }
   },
   "s": {

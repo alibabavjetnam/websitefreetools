@@ -340,7 +340,70 @@
     "lib.arcade.target": "Mål: {n}",
     "lib.arcade.up": "Op",
     "lib.arcade.youVsAi": "Dig {a} – Computer {b}",
-    "lib.arcade.noHintFc": "Ingen nyttige træk tilbage. Fortryd et par træk, eller start forfra."
+    "lib.arcade.noHintFc": "Ingen nyttige træk tilbage. Fortryd et par træk, eller start forfra.",
+    "lib.arcade.recycles": "Omdelinger tilbage: {n}",
+    "lib.arcade.stockLeft": "Bunke: {n}",
+    "lib.arcade.wrapOn": "K kan lægges på A",
+    "lib.arcade.wrapOff": "K kan ikke lægges på A",
+    "lib.arcade.hintDraw": "Ingen par tilbage. Klik på bunken for at trække.",
+    "lib.arcade.betMax": "Maks",
+    "lib.arcade.deal": "Del ud",
+    "lib.arcade.hit": "Træk",
+    "lib.arcade.stand": "Stå",
+    "lib.arcade.double": "Fordobl",
+    "lib.arcade.split": "Split",
+    "lib.arcade.nextHand": "Næste hånd",
+    "lib.arcade.note.blackjack": "Kun legepenge, ingen rigtige penge. Du starter med 500 jetoner; nå målet for antal jetoner inden for det tilladte antal hænder for at klare niveauet. Kom tættere på 21 end dealeren uden at gå over. Dealeren trækker, indtil han har 17. Et blackjack (et es og et kort med værdien ti) giver ekstra. Fordobl: du fordobler indsatsen og får præcis ét kort mere. Split: kan bruges, når dine to første kort har samme værdi.",
+    "lib.arcade.dealer": "Dealer",
+    "lib.arcade.you": "Dig",
+    "lib.arcade.bet": "Indsats",
+    "lib.arcade.chips": "Jetoner: {n}",
+    "lib.arcade.handsLeft": "{n} hænder tilbage",
+    "lib.arcade.won": "Du vandt {n} jetoner.",
+    "lib.arcade.lost": "Du tabte {n} jetoner.",
+    "lib.arcade.even": "Uafgjort.",
+    "lib.arcade.note.videopoker": "Kun legepenge, ingen rigtige penge. Vælg en indsats på 1–5 jetoner, tryk på Del ud for at få fem kort, klik på de kort, du vil beholde, og tryk derefter på Træk for at bytte resten. Et par knægte eller bedre giver gevinst. Du starter med 100 jetoner; nå målet for antal jetoner inden for det tilladte antal hænder for at klare niveauet.",
+    "lib.arcade.hold": "BEHOLD",
+    "lib.arcade.draw": "Træk",
+    "lib.arcade.note.checkers": "Du spiller rød (nederst) og rykker først. En brik rykker ét felt diagonalt fremad til et tomt felt. Hvis du kan hoppe over en modstanders brik, skal du, og du kan blive ved med at hoppe for at slå flere brikker. En brik, der når den yderste række, bliver til konge og kan også rykke og slå baglæns. Du taber, når du ikke har flere brikker eller lovlige træk.",
+    "lib.arcade.ckDraw": "Spillet endte uafgjort.",
+    "lib.arcade.ckWin": "Sort har ingen lovlige træk — du vinder.",
+    "lib.arcade.ckLose": "Du har ingen lovlige træk — du taber.",
+    "lib.arcade.ckMust": "Du skal slå, når du kan — vælg en af de blinkende brikker.",
+    "lib.arcade.note.oanquan": "Et traditionelt vietnamesisk spil. Den nederste række er din, den øverste er computerens, og de to ender er mandarin-felterne. Klik på et af dine felter, og vælg derefter en retning: alle sten i feltet samles op og fordeles én pr. felt. Efter fordelingen gælder det: har det næste felt sten, samler du dem op og fortsætter; er det næste felt tomt, og feltet efter har sten eller en mandarin, slår du det (og du fortsætter, hvis der efter endnu et tomt felt følger et med sten). Stop på et mandarin-felt eller efter to tomme felter i træk. En mandarin er 10 point værd, en sten 1. Løber din side tør for sten, lægges 5 af dine vundne point tilbage. Spillet slutter, når begge mandarinerne er slået; flest point vinder.",
+    "lib.arcade.oqWin": "Spillet er slut — du har flere point.",
+    "lib.arcade.oqLose": "Spillet er slut — computeren har flere point.",
+    "lib.arcade.oqDraw": "Spillet er slut — uafgjort.",
+    "lib.arcade.oqPick": "Vælg en retning: ◀ eller ▶.",
+    "lib.arcade.roll": "Slå med terningen",
+    "lib.arcade.note.ludo": "Du spiller rød; computeren styrer de andre farver. Slå med terningen: du skal bruge en 6'er for at få en brik ud af hjemmet, og en 6'er giver dig et ekstra slag (tre 6'ere i træk koster dig turen). Brikkerne går med uret rundt på brættet og drejer så ind på hjemmestrækningen i deres farve; du skal slå det præcise tal for at nå målet i midten. Lander du præcis på en modstanders brik, sendes den tilbage til sit hjem (undtagen på stjernefelter og startfelter). Den første, der får alle 4 brikker hjem, vinder.",
+    "lib.arcade.pickToken": "Vælg en brik at flytte.",
+    "lib.arcade.turnOf": "{c}s tur…",
+    "lib.arcade.ldWin": "Alle dine 4 brikker er hjemme!",
+    "lib.arcade.ldLose": "{c} kom først hjem.",
+    "lib.arcade.threeSix": "Tre 6'ere i træk — du mister turen.",
+    "lib.arcade.noMove": "Ingen brik kan flyttes.",
+    "lib.arcade.note.pyramid": "Ryd alle 28 kort i pyramiden. Klik på to frie kort (som ikke er dækket af andre kort), der tilsammen giver 13 (A=1, J=11, Q=12), for at fjerne begge; en konge fjernes alene med ét klik. Det øverste kort i kassebunken kan også bruges. Klik på bunken for at trække; antallet af gange, du kan genbruge kassebunken, er begrænset.",
+    "lib.arcade.note.tripeaks": "Ryd alle 28 kort på de tre toppe. Klik på et frit kort, der er præcis én værdi højere eller lavere end kortet i kassebunken (uanset kulør), for at flytte det ned. Når du ikke har flere træk, så klik på bunken for at trække. På de lette niveauer kan K lægges på A.",
+    "lib.arcade.note.golf": "Ryd alle søjlerne. Kun det nederste kort i hver søjle kan klikkes på: det skal være præcis én værdi højere eller lavere end det viste kort. Når du ikke har flere træk, så klik på bunken for at trække. På de lette niveauer kan K lægges på A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Fire ens",
+    "lib.arcade.ph.full": "Fuldt hus",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Tre ens",
+    "lib.arcade.ph.twopair": "To par",
+    "lib.arcade.ph.jacks": "Knægte eller bedre",
+    "lib.arcade.ph.none": "Intet",
+    "lib.arcade.res.win": "Gevinst",
+    "lib.arcade.res.lose": "Tab",
+    "lib.arcade.res.push": "Uafgjort",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rød",
+    "lib.arcade.cGreen": "Grøn",
+    "lib.arcade.cYellow": "Gul",
+    "lib.arcade.cBlue": "Blå"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Murbryder",
       "desc": "Styr battet og lad bolden springe for at smadre alle mursten; 10 baner med forskellige mønstre, med mus, touch eller taster."
+    },
+    "pyramid": {
+      "name": "Pyramidepatience",
+      "desc": "Ryd pyramiden med 28 kort ved at parre kort, der giver 13; 10 niveauer med færre og færre omdelinger."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-patience",
+      "desc": "Ryd tre toppe ved at lægge kort, der er én værdi fra hinanden; 10 niveauer fra let til svær."
+    },
+    "golf": {
+      "name": "Golf-patience",
+      "desc": "Ryd søjlerne ved at lægge kort, der er én værdi fra det viste kort; 10 niveauer med flere og flere søjler."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Spil blackjack mod dealeren med virtuelle jetoner: kom tættest på 21 uden at gå over; fordobl og split; 10 niveauer med stigende mål."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Femkorts draw-poker med virtuelle jetoner (knægte eller bedre); 10 niveauer med strammere gevinsttabeller."
+    },
+    "checkers": {
+      "name": "Dam",
+      "desc": "Spil dam på 8x8 mod computeren: tvungne slag, flere spring og konger; 10 niveauer fra let til svær."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Løbsspil i fire farver: slå med terningen og få dine 4 brikker først hjem; spil mod 1 til 3 computerspillere over 10 niveauer."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Et traditionelt vietnamesisk spil, hvor man fordeler sten: fordel sten og slå mandarinerne mod computeren; 10 niveauer fra let til svær."
     }
   },
   "s": {

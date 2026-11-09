@@ -340,7 +340,70 @@
     "lib.arcade.target": "Objectif : {n}",
     "lib.arcade.up": "Haut",
     "lib.arcade.youVsAi": "Vous {a} – Ordinateur {b}",
-    "lib.arcade.noHintFc": "Plus aucun coup utile. Annulez quelques coups ou recommencez."
+    "lib.arcade.noHintFc": "Plus aucun coup utile. Annulez quelques coups ou recommencez.",
+    "lib.arcade.recycles": "Redistributions restantes : {n}",
+    "lib.arcade.stockLeft": "Talon : {n}",
+    "lib.arcade.wrapOn": "Le roi se place sur l'as",
+    "lib.arcade.wrapOff": "Le roi ne se place pas sur l'as",
+    "lib.arcade.hintDraw": "Plus aucune paire. Cliquez sur le talon pour piocher.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Distribuer",
+    "lib.arcade.hit": "Tirer",
+    "lib.arcade.stand": "Rester",
+    "lib.arcade.double": "Doubler",
+    "lib.arcade.split": "Séparer",
+    "lib.arcade.nextHand": "Main suivante",
+    "lib.arcade.note.blackjack": "Jeu avec de l'argent fictif uniquement — aucun argent réel. Vous commencez avec 500 jetons ; atteignez l'objectif de jetons dans le nombre de mains imparti pour réussir le niveau. Approchez-vous de 21 plus près que le croupier sans dépasser. Le croupier tire jusqu'à 17. Un blackjack (un as et une carte valant 10) paie davantage. Doubler : doublez votre mise et prenez exactement une carte de plus. Séparer : possible quand vos deux premières cartes ont la même valeur.",
+    "lib.arcade.dealer": "Croupier",
+    "lib.arcade.you": "Vous",
+    "lib.arcade.bet": "Mise",
+    "lib.arcade.chips": "Jetons : {n}",
+    "lib.arcade.handsLeft": "{n} mains restantes",
+    "lib.arcade.won": "Vous avez gagné {n} jetons.",
+    "lib.arcade.lost": "Vous avez perdu {n} jetons.",
+    "lib.arcade.even": "Égalité.",
+    "lib.arcade.note.videopoker": "Jeu avec de l'argent fictif uniquement — aucun argent réel. Choisissez une mise de 1 à 5 jetons, appuyez sur Distribuer pour recevoir cinq cartes, cliquez sur celles que vous gardez, puis sur Échanger pour remplacer les autres. Une paire de valets ou mieux est payée. Vous commencez avec 100 jetons ; atteignez l'objectif de jetons dans le nombre de mains imparti pour réussir le niveau.",
+    "lib.arcade.hold": "GARDER",
+    "lib.arcade.draw": "Échanger",
+    "lib.arcade.note.checkers": "Vous jouez les Rouges (en bas) et commencez. Un pion avance d'une case en diagonale vers l'avant sur une case vide. Si vous pouvez sauter un pion adverse, vous devez le faire, et vous pouvez enchaîner les sauts pour capturer plusieurs pions. Un pion qui atteint la dernière rangée devient dame et peut aussi se déplacer et capturer en arrière. Vous perdez quand vous n'avez plus de pions ou plus de coup possible.",
+    "lib.arcade.ckDraw": "Partie nulle.",
+    "lib.arcade.ckWin": "Les Noirs n'ont aucun coup possible — vous gagnez.",
+    "lib.arcade.ckLose": "Vous n'avez aucun coup possible — vous perdez.",
+    "lib.arcade.ckMust": "Vous devez capturer quand c'est possible — choisissez l'un des pions qui clignotent.",
+    "lib.arcade.note.oanquan": "Un jeu traditionnel vietnamien. La rangée du bas est la vôtre, celle du haut est celle de l'ordinateur, et les deux extrémités sont les cases des Mandarins. Cliquez sur l'une de vos cases, puis choisissez un sens : toutes les pierres qu'elle contient sont ramassées et semées une par case. Après le semis, si la case suivante contient des pierres, ramassez-les et continuez à semer ; si la case suivante est vide et la suivante contient des pierres ou un Mandarin, vous la capturez (et vous continuez à capturer si une autre case vide est suivie d'une case pleine). On s'arrête sur une case Mandarin ou après deux cases vides d'affilée. Un Mandarin vaut 10 points, une pierre 1. Si votre camp n'a plus de pierres, 5 de vos points capturés sont resemés. La partie se termine quand les deux Mandarins sont capturés ; le meilleur score gagne.",
+    "lib.arcade.oqWin": "Fin de partie — vous avez plus de points.",
+    "lib.arcade.oqLose": "Fin de partie — l'ordinateur a plus de points.",
+    "lib.arcade.oqDraw": "Fin de partie — égalité.",
+    "lib.arcade.oqPick": "Choisissez un sens : ◀ ou ▶.",
+    "lib.arcade.roll": "Lancer le dé",
+    "lib.arcade.note.ludo": "Vous jouez les Rouges ; les autres couleurs sont jouées par l'ordinateur. Lancez le dé : il faut un 6 pour sortir un pion de son écurie, et un 6 vous donne un nouveau lancer (trois 6 de suite font perdre votre tour). Les pions avancent dans le sens des aiguilles d'une montre autour du plateau, puis entrent dans la colonne d'arrivée de leur couleur ; il faut le nombre exact pour atteindre l'arrivée au centre. Tomber exactement sur un pion adverse le renvoie à son écurie (sauf sur les cases étoile et les cases de départ). Le premier joueur qui ramène ses 4 pions à l'arrivée gagne.",
+    "lib.arcade.pickToken": "Choisissez un pion à déplacer.",
+    "lib.arcade.turnOf": "Au tour de {c}…",
+    "lib.arcade.ldWin": "Vos 4 pions sont arrivés !",
+    "lib.arcade.ldLose": "{c} est arrivé le premier.",
+    "lib.arcade.threeSix": "Trois 6 de suite — vous perdez votre tour.",
+    "lib.arcade.noMove": "Aucun pion ne peut bouger.",
+    "lib.arcade.note.pyramid": "Éliminez les 28 cartes de la pyramide. Cliquez sur deux cartes libres (non recouvertes) dont la somme fait 13 (A=1, V=11, D=12) pour les retirer ; un Roi se retire seul d'un clic. La carte du dessus de la défausse peut aussi servir. Cliquez sur le talon pour piocher ; le nombre de fois où vous pouvez recycler la défausse est limité.",
+    "lib.arcade.note.tripeaks": "Éliminez les 28 cartes des trois pics. Cliquez sur une carte libre d'une valeur exactement supérieure ou inférieure d'un cran à la carte visible sur la défausse (toutes couleurs) pour la déplacer. Quand vous n'avez plus de coup, cliquez sur le talon pour piocher. Aux niveaux faciles, le Roi se place sur l'As.",
+    "lib.arcade.note.golf": "Éliminez toutes les colonnes. Seule la carte du bas de chaque colonne peut être jouée : elle doit être exactement d'un cran supérieure ou inférieure à la carte visible. Quand vous n'avez plus de coup, cliquez sur le talon pour piocher. Aux niveaux faciles, le Roi se place sur l'As.",
+    "lib.arcade.ph.royal": "Quinte flush royale",
+    "lib.arcade.ph.sflush": "Quinte flush",
+    "lib.arcade.ph.quads": "Carré",
+    "lib.arcade.ph.full": "Full",
+    "lib.arcade.ph.flush": "Couleur",
+    "lib.arcade.ph.straight": "Quinte",
+    "lib.arcade.ph.trips": "Brelan",
+    "lib.arcade.ph.twopair": "Double paire",
+    "lib.arcade.ph.jacks": "Paire de valets ou mieux",
+    "lib.arcade.ph.none": "Rien",
+    "lib.arcade.res.win": "Gagné",
+    "lib.arcade.res.lose": "Perdu",
+    "lib.arcade.res.push": "Égalité",
+    "lib.arcade.res.blackjack": "Blackjack !",
+    "lib.arcade.cRed": "Rouge",
+    "lib.arcade.cGreen": "Vert",
+    "lib.arcade.cYellow": "Jaune",
+    "lib.arcade.cBlue": "Bleu"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Casse-briques",
       "desc": "Dirigez la raquette et faites rebondir la balle pour casser toutes les briques ; 10 niveaux de dispositions différentes, à la souris, au doigt ou au clavier."
+    },
+    "pyramid": {
+      "name": "Solitaire Pyramide",
+      "desc": "Éliminez la pyramide de 28 cartes en associant des cartes dont la somme fait 13 ; 10 niveaux avec de moins en moins de redistributions."
+    },
+    "tripeaks": {
+      "name": "Solitaire TriPeaks",
+      "desc": "Éliminez trois pics en enchaînant des cartes d'un cran d'écart ; 10 niveaux de facile à difficile."
+    },
+    "golf": {
+      "name": "Solitaire Golf",
+      "desc": "Éliminez les colonnes en enchaînant des cartes d'un cran d'écart avec la carte visible ; 10 niveaux avec de plus en plus de colonnes."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Jouez au blackjack contre le croupier avec des jetons virtuels : approchez-vous de 21 sans le dépasser ; doublez et séparez ; 10 niveaux avec des objectifs de jetons croissants."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker à cinq cartes avec échange et jetons virtuels (paire de valets ou mieux) ; 10 niveaux avec des tableaux de gains de plus en plus serrés."
+    },
+    "checkers": {
+      "name": "Jeu de dames",
+      "desc": "Jouez aux dames 8x8 contre l'ordinateur : prises obligatoires, rafles et dames ; 10 niveaux de facile à difficile."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Jeu de course à quatre couleurs : lancez le dé et ramenez vos 4 pions en premier ; jouez contre 1 à 3 joueurs ordinateur sur 10 niveaux."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Un jeu de semis traditionnel vietnamien : semez les pierres et capturez les Mandarins face à l'ordinateur ; 10 niveaux de facile à difficile."
     }
   },
   "s": {

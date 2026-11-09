@@ -340,7 +340,70 @@
     "lib.arcade.target": "Ebumnuche: {n}",
     "lib.arcade.up": "Elu",
     "lib.arcade.youVsAi": "Gị {a} – Kọmputa {b}",
-    "lib.arcade.noHintFc": "Ọ dịghị mmegharị bara uru fọdụrụ. Kagbuo mmegharị ole na ole ma ọ bụ malite ọzọ."
+    "lib.arcade.noHintFc": "Ọ dịghị mmegharị bara uru fọdụrụ. Kagbuo mmegharị ole na ole ma ọ bụ malite ọzọ.",
+    "lib.arcade.recycles": "Ntụgharị fọdụrụ: {n}",
+    "lib.arcade.stockLeft": "Ọkpọkọ kaadị: {n}",
+    "lib.arcade.wrapOn": "Eze na-ejikọ na A",
+    "lib.arcade.wrapOff": "Eze anaghị ejikọ na A",
+    "lib.arcade.hintDraw": "Enweghị ụzọ abụọ ọzọ. Pịa ọkpọkọ kaadị iji dọpụta.",
+    "lib.arcade.betMax": "Kasị elu",
+    "lib.arcade.deal": "Kesaa",
+    "lib.arcade.hit": "Were",
+    "lib.arcade.stand": "Kwụsị",
+    "lib.arcade.double": "Okpukpu abụọ",
+    "lib.arcade.split": "Kewaa",
+    "lib.arcade.nextHand": "Aka ọzọ",
+    "lib.arcade.note.blackjack": "Ego egwuregwu naanị — ọ bụghị ego ezi. Ị na-amalite na chips 500; nweta ọnụọgụ chips a chọrọ n'ime ọnụọgụ aka ekwere ka ị gafee larịị ahụ. Bịaruo 21 nso karịa onye na-ekesa n'amaghị karịa ya. Onye na-ekesa na-adọpụta ruo mgbe ọ ruru 17. Blackjack (A na kaadị bara uru iri) na-akwụ ụgwọ ọzọ. Okpukpu abụọ: mee ka ntinye gị bụrụ okpukpu abụọ ma were kaadị naanị otu ọzọ. Kewaa: ọ ga-ekwe omume mgbe kaadị abụọ mbụ gị nwere otu uru.",
+    "lib.arcade.dealer": "Onye na-ekesa",
+    "lib.arcade.you": "Gị",
+    "lib.arcade.bet": "Ntinye",
+    "lib.arcade.chips": "Chips: {n}",
+    "lib.arcade.handsLeft": "Aka {n} fọdụrụ",
+    "lib.arcade.won": "I meriri chips {n}.",
+    "lib.arcade.lost": "I funyere chips {n}.",
+    "lib.arcade.even": "Nha anya.",
+    "lib.arcade.note.videopoker": "Ego egwuregwu naanị — ọ bụghị ego ezi. Họrọ ntinye chips 1–5, pịa Kesaa maka kaadị ise, pịa kaadị ndị ịchọrọ idebe, wee pịa Dọpụta iji dochie ndị ọzọ. Jack abụọ ma ọ bụ nke ka mma na-akwụ ụgwọ. Ị na-amalite na chips 100; nweta ọnụọgụ chips a chọrọ n'ime ọnụọgụ aka ekwere ka ị gafee larịị ahụ.",
+    "lib.arcade.hold": "DEBE",
+    "lib.arcade.draw": "Dọpụta",
+    "lib.arcade.note.checkers": "Ị na-egwu Ọbara ọbara (n'ala) ma bụrụ onye mbụ na-eje ije. Otu mpempe na-aga otu ogige n'akụkụ n'ihu gaa n'ogige efu. Ọ bụrụ na ị nwere ike ịkpafe n'elu mpempe onye mmegide, ị ghaghị ime ya, ma ị nwere ike ịga n'ihu na-akpafe iji jide ọtụtụ mpempe. Mpempe na-eru ahịrị kacha ime ime ghọọ eze ma nwee ike ịga ma jide azụ. Ị ga-enwe mfu mgbe ị nweghị mpempe ma ọ bụ nzọ ziri ezi.",
+    "lib.arcade.ckDraw": "Egwuregwu a bụ nha anya.",
+    "lib.arcade.ckWin": "Ojii enweghị nzọ ziri ezi — ị meriri.",
+    "lib.arcade.ckLose": "Ị nweghị nzọ ziri ezi — ị funyere.",
+    "lib.arcade.ckMust": "Ị ghaghị ijide mgbe ị nwere ike — họrọ otu n'ime mpempe na-egbuke egbuke.",
+    "lib.arcade.note.oanquan": "Egwuregwu ọdịnala Vietnam. Ahịrị ala bụ nke gị, nke elu bụ nke kọmputa, ma njedebe abụọ bụ ogige Mandarin. Pịa otu n'ime ogige gị, wee họrọ ntụziaka: a na-ewepụta nkume niile dị n'ime ya ma gbasaa otu n'ogige ọ bụla. Mgbe ịgbasachara, ọ bụrụ na ogige na-esote nwere nkume, were ha gaa n'ihu na-agbasa; ọ bụrụ na ogige na-esote tọgbọrọ chakoo ma nke sochiri ya nwere nkume ma ọ bụ Mandarin, ị na-ejide ya (ma na-aga n'ihu ijide ma ọ bụrụ na ogige tọgbọrọ chakoo ọzọ sochiri nke jupụtara). Kwụsị n'ogige Mandarin ma ọ bụ mgbe ogige abụọ tọgbọrọ chakoo n'usoro. Mandarin bụ isi 10, nkume bụ 1. Ọ bụrụ na akụkụ gị ezughị nkume, a na-agbasa isi 5 i jidere azụ. Egwuregwu na-eru njedebe mgbe a jidere Mandarin abụọ; onye nwere isi karịa na-emeri.",
+    "lib.arcade.oqWin": "Egwuregwu agwụla — ị nwere isi karịa.",
+    "lib.arcade.oqLose": "Egwuregwu agwụla — kọmputa nwere isi karịa.",
+    "lib.arcade.oqDraw": "Egwuregwu agwụla — nha anya.",
+    "lib.arcade.oqPick": "Họrọ ntụziaka: ◀ ma ọ bụ ▶.",
+    "lib.arcade.roll": "Tụba dice",
+    "lib.arcade.note.ludo": "Ị na-egwu Ọbara ọbara; kọmputa na-egwu agba ndị ọzọ. Tụba dice: ị chọrọ 6 iji wepụta mpempe n'ụlọ, 6 na-enyekwa gị mkpọpụta ọzọ (6 atọ n'usoro na-eme ka ị funahụ oge gị). Mpempe na-agagharị n'akụkụ elekere gburugburu bọọdụ, wee tụgharịa n'ogidi ụlọ nke agba ha; ị chọrọ ọnụọgụ kpọmkwem iji rute njedebe n'etiti. Ịdabere kpọmkwem n'elu mpempe onye mmegide na-eziga ya azụ n'ụlọ ya (ewezuga n'ogige kpakpando na ogige mmalite). Onye mbụ nwetara mpempe 4 ya niile n'ụlọ na-emeri.",
+    "lib.arcade.pickToken": "Họrọ mpempe ịkwaga.",
+    "lib.arcade.turnOf": "Oge {c}…",
+    "lib.arcade.ldWin": "Mpempe gị 4 niile erutela n'ụlọ!",
+    "lib.arcade.ldLose": "{c} bụ onye mbụ rutere n'ụlọ.",
+    "lib.arcade.threeSix": "6 atọ n'usoro — ị funahụrụ oge gị.",
+    "lib.arcade.noMove": "Enweghị mpempe nwere ike ịkwaga.",
+    "lib.arcade.note.pyramid": "Hichaa kaadị 28 niile nke pịramịd ahụ. Pịa kaadị abụọ gbasara (nke kaadị ọzọ na-ekpuchighị) nke ngụkọta ha bụ 13 (A=1, J=11, Q=12) iji wepụ abụọ; a na-ewepụ Eze naanị ya site n'otu pịa. Kaadị kacha elu nke ikpo ihe ịtụfu nwekwara ike iji. Pịa ọkpọkọ kaadị iji dọpụta; ọnụọgụ oge ị nwere ike iji ikpo ihe ịtụfu ọzọ nwere oke.",
+    "lib.arcade.note.tripeaks": "Hichaa kaadị 28 niile nke ugwu atọ ahụ. Pịa kaadị gbasara nke dị elu ma ọ bụ dị ala otu ọkwa kpọmkwem karịa kaadị ahụ na-ekpughe n'ikpo ihe ịtụfu (agba ọ bụla) iji bubata ya n'ala. Mgbe ị nweghị nzọ, pịa ọkpọkọ kaadị iji dọpụta. Na larịị ndị dị mfe, Eze na-ejikọ na A.",
+    "lib.arcade.note.golf": "Hichaa kọlụm niile. Naanị kaadị kacha ala nke kọlụm ọ bụla ka a ga-apị: ọ ghaghị ịdị elu ma ọ bụ dị ala otu ọkwa kpọmkwem karịa kaadị ahụ na-ekpughe. Mgbe ị nweghị nzọ, pịa ọkpọkọ kaadị iji dọpụta. Na larịị ndị dị mfe, Eze na-ejikọ na A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Anọ nke otu ụdị",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Atọ nke otu ụdị",
+    "lib.arcade.ph.twopair": "Ụzọ abụọ",
+    "lib.arcade.ph.jacks": "Jack abụọ ma ọ bụ nke ka mma",
+    "lib.arcade.ph.none": "Ọ dịghị ihe",
+    "lib.arcade.res.win": "Mmeri",
+    "lib.arcade.res.lose": "Mfu",
+    "lib.arcade.res.push": "Nha anya",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Ọbara ọbara",
+    "lib.arcade.cGreen": "Akwụkwọ ndụ",
+    "lib.arcade.cYellow": "Odo",
+    "lib.arcade.cBlue": "Anụnụ anụnụ"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Onye na-awa brik",
       "desc": "Duzie paddụ ma mee ka bọọlụ wụgharịa iji waa brik niile; nkebi 10 nwere nhazi dị iche iche, jiri òké, mmetụ ma ọ bụ igodo."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Hichaa pịramịd kaadị 28 site n'ịkpakọta kaadị ndị ngụkọta ha bụ 13; larịị 10 nwere ntụgharị na-ebelata."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Hichaa ugwu atọ site n'ijikọta kaadị ndị dị iche otu ọkwa; larịị 10 site na mfe ruo na siri ike."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Hichaa kọlụm site n'ijikọta kaadị ndị dị iche otu ọkwa na kaadị ahụ na-ekpughe; larịị 10 nwere kọlụm na-abawanye."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Gwuo blackjack megide onye na-ekesa na chips virtual: bịaruo 21 nso n'amaghị karịa; okpukpu abụọ na kewaa; larịị 10 nwere ihe mgbaru ọsọ chips na-ebili."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker kaadị ise na mgbanwe na chips virtual (Jacks or Better); larịị 10 nwere tebụl ịkwụ ụgwọ na-esi ike."
+    },
+    "checkers": {
+      "name": "Checkers",
+      "desc": "Gwuo checkers 8x8 megide kọmputa: ijide ọ bụla na-adịghị ala, ịkpafe ọtụtụ ugboro na eze; larịị 10 site na mfe ruo na siri ike."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Egwuregwu ọsọ agba anọ: tụba dice ma buru mpempe gị 4 ruo n'ụlọ n'ihu; gwuo megide ndị kọmputa 1 ruo 3 n'ime larịị 10."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Egwuregwu ọdịnala Vietnam nke ịgbasa nkume: gbasaa nkume ma jide Mandarin megide kọmputa; larịị 10 site na mfe ruo na siri ike."
     }
   },
   "s": {

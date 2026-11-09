@@ -340,7 +340,70 @@
     "lib.arcade.target": "Markmið: {n}",
     "lib.arcade.up": "Upp",
     "lib.arcade.youVsAi": "Þú {a} – Tölva {b}",
-    "lib.arcade.noHintFc": "Enginn gagnlegur leikur eftir. Afturkallaðu nokkra leiki eða byrjaðu upp á nýtt."
+    "lib.arcade.noHintFc": "Enginn gagnlegur leikur eftir. Afturkallaðu nokkra leiki eða byrjaðu upp á nýtt.",
+    "lib.arcade.recycles": "Endurgjafir eftir: {n}",
+    "lib.arcade.stockLeft": "Bunki: {n}",
+    "lib.arcade.wrapOn": "Kóngur tengist ási",
+    "lib.arcade.wrapOff": "Kóngur tengist ekki ási",
+    "lib.arcade.hintDraw": "Engin pör eftir. Smelltu á bunkann til að draga spil.",
+    "lib.arcade.betMax": "Hám.",
+    "lib.arcade.deal": "Gefa",
+    "lib.arcade.hit": "Taka spil",
+    "lib.arcade.stand": "Standa",
+    "lib.arcade.double": "Tvöfalda",
+    "lib.arcade.split": "Skipta",
+    "lib.arcade.nextHand": "Næsta hönd",
+    "lib.arcade.note.blackjack": "Eingöngu leikpeningar — engir alvörupeningar. Þú byrjar með 500 spilapeninga; náðu markmiðinu í spilapeningum innan leyfilegs fjölda handa til að ljúka borðinu. Komdu nær 21 en gjafarinn án þess að fara yfir. Gjafarinn dregur þar til hann nær 17. Blackjack (ás og spil sem er tíu virði) borgar aukalega. Tvöfalda: tvöfaldaðu veðmálið og taktu nákvæmlega eitt spil í viðbót. Skipta: hægt þegar fyrstu tvö spilin hafa sama gildi.",
+    "lib.arcade.dealer": "Gjafari",
+    "lib.arcade.you": "Þú",
+    "lib.arcade.bet": "Veðmál",
+    "lib.arcade.chips": "Spilapeningar: {n}",
+    "lib.arcade.handsLeft": "{n} hendur eftir",
+    "lib.arcade.won": "Þú vannst {n} spilapeninga.",
+    "lib.arcade.lost": "Þú tapaðir {n} spilapeningum.",
+    "lib.arcade.even": "Jafntefli.",
+    "lib.arcade.note.videopoker": "Eingöngu leikpeningar — engir alvörupeningar. Veldu veðmál upp á 1–5 spilapeninga, ýttu á Gefa til að fá fimm spil, smelltu á spilin sem þú vilt halda og ýttu síðan á Draga til að skipta hinum út. Borgað er fyrir par af gosum eða betra. Þú byrjar með 100 spilapeninga; náðu markmiðinu í spilapeningum innan leyfilegs fjölda handa til að ljúka borðinu.",
+    "lib.arcade.hold": "HALDA",
+    "lib.arcade.draw": "Draga",
+    "lib.arcade.note.checkers": "Þú spilar rautt (neðst) og byrjar. Kubbur færist einn reit á ská áfram á auðan reit. Ef þú getur hoppað yfir kubb andstæðingsins verðurðu að gera það, og þú mátt halda áfram að hoppa til að taka marga kubba. Kubbur sem nær öftustu röð verður drottning og getur líka fært sig og tekið aftur á bak. Þú tapar þegar þú átt enga kubba eða engan löglegan leik.",
+    "lib.arcade.ckDraw": "Leiknum lauk með jafntefli.",
+    "lib.arcade.ckWin": "Svartur á engan löglegan leik — þú vinnur.",
+    "lib.arcade.ckLose": "Þú átt engan löglegan leik — þú tapar.",
+    "lib.arcade.ckMust": "Þú verður að taka þegar þú getur — veldu einn af blikkandi kubbunum.",
+    "lib.arcade.note.oanquan": "Hefðbundinn víetnamskur leikur. Neðsta röðin er þín, efsta röðin er tölvunnar og endarnir tveir eru mandarínureitirnir. Smelltu á einn af reitunum þínum og veldu síðan átt: allir steinarnir í honum eru teknir upp og sáð einum í hvern reit. Ef næsti reitur hefur steina eftir sáninguna skaltu taka þá upp og halda áfram; ef næsti reitur er tómur og reiturinn á eftir honum hefur steina eða mandarínu tekurðu hann (og heldur áfram ef annar tómur reitur er á eftir fullum). Stoppaðu á mandarínureit eða eftir tvo tóma reiti í röð. Mandarína er 10 stig, steinn 1. Ef þína megin klárast steinarnir er 5 af unnum stigum þínum sáð aftur. Leiknum lýkur þegar báðar mandarínurnar hafa verið teknar; hærra skor vinnur.",
+    "lib.arcade.oqWin": "Leik lokið — þú ert með fleiri stig.",
+    "lib.arcade.oqLose": "Leik lokið — tölvan er með fleiri stig.",
+    "lib.arcade.oqDraw": "Leik lokið — jafntefli.",
+    "lib.arcade.oqPick": "Veldu átt: ◀ eða ▶.",
+    "lib.arcade.roll": "Kasta teningnum",
+    "lib.arcade.note.ludo": "Þú spilar rautt; tölvan spilar hina litina. Kastaðu teningnum: þú þarft sexu til að koma peði út úr heimilinu og sexa gefur annað kast (þrjár sexur í röð þýða að þú missir af umferðinni). Peðin ferðast réttsælis um borðið og beygja síðan inn á heimasúlu síns litar; þú þarft nákvæma tölu til að ná í mark í miðjunni. Ef þú lendir nákvæmlega á peði andstæðings fer það aftur heim (nema á stjörnureitum og upphafsreitum). Sá sem kemur öllum 4 peðunum heim fyrst vinnur.",
+    "lib.arcade.pickToken": "Veldu peð til að færa.",
+    "lib.arcade.turnOf": "{c} á leik…",
+    "lib.arcade.ldWin": "Öll 4 peðin þín eru komin heim!",
+    "lib.arcade.ldLose": "{c} kom fyrst heim.",
+    "lib.arcade.threeSix": "Þrjár sexur í röð — þú missir af umferðinni.",
+    "lib.arcade.noMove": "Ekkert peð getur hreyft sig.",
+    "lib.arcade.note.pyramid": "Hreinsaðu öll 28 spil pýramídans. Smelltu á tvö laus spil (sem ekkert spil liggur yfir) sem leggjast saman í 13 (ás=1, gosi=11, drottning=12) til að fjarlægja bæði; kóngur er fjarlægður einn með einum smelli. Efsta spil kastbunkans má líka nota. Smelltu á bunkann til að draga spil; fjöldi skipta sem má endurvinna kastbunkann er takmarkaður.",
+    "lib.arcade.note.tripeaks": "Hreinsaðu öll 28 spil tindanna þriggja. Smelltu á laust spil sem er nákvæmlega einu gildi hærra eða lægra en spilið sem sést á kastbunkanum (hvaða litur sem er) til að færa það niður. Þegar þú átt enga leiki eftir skaltu smella á bunkann til að draga. Á auðveldari borðum tengist kóngur ási.",
+    "lib.arcade.note.golf": "Hreinsaðu alla dálka. Aðeins neðsta spil hvers dálks er smellanlegt: það verður að vera nákvæmlega einu gildi hærra eða lægra en spilið sem sést. Þegar þú átt enga leiki eftir skaltu smella á bunkann til að draga. Á auðveldari borðum tengist kóngur ási.",
+    "lib.arcade.ph.royal": "Konungleg litaröð",
+    "lib.arcade.ph.sflush": "Litaröð",
+    "lib.arcade.ph.quads": "Fjórir eins",
+    "lib.arcade.ph.full": "Fullt hús",
+    "lib.arcade.ph.flush": "Litur",
+    "lib.arcade.ph.straight": "Röð",
+    "lib.arcade.ph.trips": "Þrír eins",
+    "lib.arcade.ph.twopair": "Tvö pör",
+    "lib.arcade.ph.jacks": "Gosapar eða betra",
+    "lib.arcade.ph.none": "Ekkert",
+    "lib.arcade.res.win": "Vinningur",
+    "lib.arcade.res.lose": "Tap",
+    "lib.arcade.res.push": "Jafnt",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rauður",
+    "lib.arcade.cGreen": "Grænn",
+    "lib.arcade.cYellow": "Gulur",
+    "lib.arcade.cBlue": "Blár"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Múrsteinabrjótur",
       "desc": "Stýrðu spaðanum og láttu boltann skoppa til að brjóta alla múrsteina; 10 borð með mismunandi uppröðun, með mús, snertingu eða lyklum."
+    },
+    "pyramid": {
+      "name": "Pýramídaþolinmæði",
+      "desc": "Hreinsaðu 28 spila pýramída með því að para spil sem leggjast saman í 13; 10 borð með sífellt færri endurgjöfum."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-þolinmæði",
+      "desc": "Hreinsaðu þrjá tinda með því að tengja spil sem eru einu gildi frá hvort öðru; 10 borð frá léttu til erfiðs."
+    },
+    "golf": {
+      "name": "Golfþolinmæði",
+      "desc": "Hreinsaðu dálka með því að tengja spil sem eru einu gildi frá spilinu sem sést; 10 borð með sífellt fleiri dálkum."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Spilaðu blackjack gegn gjafara með sýndarpeningum: komdu sem næst 21 án þess að fara yfir; tvöfaldaðu og skiptu; 10 borð með hækkandi markmiðum."
+    },
+    "video-poker": {
+      "name": "Vídeópóker",
+      "desc": "Fimm spila skiptipóker með sýndarpeningum (gosar eða betra); 10 borð með sífellt knappari vinningatöflum."
+    },
+    "checkers": {
+      "name": "Damm",
+      "desc": "Spilaðu 8x8 damm gegn tölvunni: skylda til að taka, margföld stökk og drottningar; 10 borð frá léttu til erfiðs."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Kappaksturs-leikur í fjórum litum: kastaðu teningnum og komdu 4 peðum þínum fyrst heim; spilaðu gegn 1 til 3 tölvuspilurum í 10 borðum."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Hefðbundinn víetnamskur sáningarleikur: sáðu steinum og taktu mandarínur gegn tölvunni; 10 borð frá léttu til erfiðs."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Tavoite: {n}",
     "lib.arcade.up": "Ylös",
     "lib.arcade.youVsAi": "Sinä {a} – Tietokone {b}",
-    "lib.arcade.noHintFc": "Hyödyllisiä siirtoja ei ole jäljellä. Peru muutama siirto tai aloita alusta."
+    "lib.arcade.noHintFc": "Hyödyllisiä siirtoja ei ole jäljellä. Peru muutama siirto tai aloita alusta.",
+    "lib.arcade.recycles": "Uusia jakoja jäljellä: {n}",
+    "lib.arcade.stockLeft": "Pakka: {n}",
+    "lib.arcade.wrapOn": "Kuningas jatkuu ässään",
+    "lib.arcade.wrapOff": "Kuningas ei jatku ässään",
+    "lib.arcade.hintDraw": "Pareja ei ole jäljellä. Nosta kortti napsauttamalla pakkaa.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Jaa",
+    "lib.arcade.hit": "Lisää",
+    "lib.arcade.stand": "Jää",
+    "lib.arcade.double": "Tuplaa",
+    "lib.arcade.split": "Jaa kädet",
+    "lib.arcade.nextHand": "Seuraava käsi",
+    "lib.arcade.note.blackjack": "Vain pelirahaa — ei oikeaa rahaa. Aloitat 500 pelimerkillä; läpäise taso saavuttamalla tavoitemäärä pelimerkkejä sallitussa määrässä käsiä. Pääse jakajaa lähemmäs 21:tä ylittämättä sitä. Jakaja nostaa kortteja 17:ään asti. Blackjack (ässä ja kymmenen arvoinen kortti) maksaa enemmän. Tuplaus: kaksinkertaistat panoksen ja saat täsmälleen yhden kortin lisää. Jako: mahdollinen, kun kahdella ensimmäisellä kortillasi on sama arvo.",
+    "lib.arcade.dealer": "Jakaja",
+    "lib.arcade.you": "Sinä",
+    "lib.arcade.bet": "Panos",
+    "lib.arcade.chips": "Pelimerkit: {n}",
+    "lib.arcade.handsLeft": "{n} kättä jäljellä",
+    "lib.arcade.won": "Voitit {n} pelimerkkiä.",
+    "lib.arcade.lost": "Hävisit {n} pelimerkkiä.",
+    "lib.arcade.even": "Tasapeli.",
+    "lib.arcade.note.videopoker": "Vain pelirahaa — ei oikeaa rahaa. Valitse panos 1–5 pelimerkkiä, saat viisi korttia painamalla Jaa, napsauta kortteja, jotka haluat pitää, ja vaihda loput painamalla Vaihda. Jätkäpari tai parempi maksaa. Aloitat 100 pelimerkillä; läpäise taso saavuttamalla tavoitemäärä pelimerkkejä sallitussa määrässä käsiä.",
+    "lib.arcade.hold": "PIDÄ",
+    "lib.arcade.draw": "Vaihda",
+    "lib.arcade.note.checkers": "Pelaat punaisella (alhaalla) ja aloitat. Nappula liikkuu yhden ruudun vinosti eteenpäin tyhjään ruutuun. Jos voit hypätä vastustajan nappulan yli, sinun on pakko, ja voit jatkaa hyppäämistä ja syödä useita nappuloita. Viimeiselle riville päässyt nappula kruunataan kuninkaaksi ja se voi liikkua ja syödä myös taaksepäin. Häviät, kun sinulla ei ole nappuloita tai laillista siirtoa.",
+    "lib.arcade.ckDraw": "Peli päättyi tasapeliin.",
+    "lib.arcade.ckWin": "Mustalla ei ole laillisia siirtoja — voitit.",
+    "lib.arcade.ckLose": "Sinulla ei ole laillisia siirtoja — hävisit.",
+    "lib.arcade.ckMust": "Sinun on syötävä, kun voit — valitse yksi sykkivistä nappuloista.",
+    "lib.arcade.note.oanquan": "Perinteinen vietnamilainen peli. Alarivi on sinun, ylärivi tietokoneen, ja päädyt ovat mandariiniruutuja. Napsauta yhtä ruuduistasi ja valitse suunta: kaikki sen kivet otetaan ja jaetaan yksi kullekin ruudulle. Jaon jälkeen, jos seuraavassa ruudussa on kiviä, ota ne ja jatka jakamista; jos seuraava ruutu on tyhjä ja sen jälkeisessä on kiviä tai mandariini, voitat sen (ja jatkat voittamista, jos tyhjän ruudun jälkeen on taas täysi ruutu). Pysähdy mandariiniruutuun tai kahden peräkkäisen tyhjän ruudun jälkeen. Mandariini on 10 pisteen arvoinen, kivi 1. Jos kivesi loppuvat, 5 voittamaasi pistettä jaetaan takaisin. Peli päättyy, kun molemmat mandariinit on voitettu; enemmän pisteitä saanut voittaa.",
+    "lib.arcade.oqWin": "Peli päättyi — sinulla on enemmän pisteitä.",
+    "lib.arcade.oqLose": "Peli päättyi — tietokoneella on enemmän pisteitä.",
+    "lib.arcade.oqDraw": "Peli päättyi — tasapeli.",
+    "lib.arcade.oqPick": "Valitse suunta: ◀ tai ▶.",
+    "lib.arcade.roll": "Heitä noppaa",
+    "lib.arcade.note.ludo": "Pelaat punaisella; muut värit pelaa tietokone. Heitä noppaa: nappulan saaminen pesästä vaatii kuutosen, ja kuutonen antaa uuden heiton (kolme kuutosta peräkkäin menettää vuoron). Nappulat kiertävät lautaa myötäpäivään ja kääntyvät sitten oman värinsä kotipolulle; keskellä olevaan maaliin pääsy vaatii tarkan silmäluvun. Jos osut täsmälleen vastustajan nappulaan, se palaa pesäänsä (paitsi tähti- ja aloitusruuduissa). Ensimmäisenä kaikki 4 nappulaansa kotiin saanut voittaa.",
+    "lib.arcade.pickToken": "Valitse siirrettävä nappula.",
+    "lib.arcade.turnOf": "Vuorossa: {c}…",
+    "lib.arcade.ldWin": "Kaikki 4 nappulaasi ovat kotona!",
+    "lib.arcade.ldLose": "{c} pääsi kotiin ensimmäisenä.",
+    "lib.arcade.threeSix": "Kolme kuutosta peräkkäin — menetät vuoron.",
+    "lib.arcade.noMove": "Mikään nappula ei voi liikkua.",
+    "lib.arcade.note.pyramid": "Tyhjennä pyramidin kaikki 28 korttia. Napsauta kahta vapaata korttia (joiden päällä ei ole kortteja), joiden summa on 13 (A=1, J=11, Q=12), poistaaksesi molemmat; kuningas poistuu yksin yhdellä napsautuksella. Myös hylkypinon päällimmäistä korttia voi käyttää. Nosta kortti napsauttamalla pakkaa; hylkypinon kierrätyskertoja on rajoitetusti.",
+    "lib.arcade.note.tripeaks": "Tyhjennä kolmen huipun kaikki 28 korttia. Napsauta vapaata korttia, joka on täsmälleen yhtä arvoa korkeampi tai matalampi kuin hylkypinon näkyvä kortti (mikä tahansa maa), siirtääksesi sen alas. Kun siirtoja ei ole, nosta pakasta. Helpoilla tasoilla kuningas jatkuu ässään.",
+    "lib.arcade.note.golf": "Tyhjennä kaikki sarakkeet. Vain kunkin sarakkeen alinta korttia voi napsauttaa: sen on oltava täsmälleen yhtä arvoa korkeampi tai matalampi kuin näkyvä kortti. Kun siirtoja ei ole, nosta pakasta. Helpoilla tasoilla kuningas jatkuu ässään.",
+    "lib.arcade.ph.royal": "Värisuora (kuninkaallinen)",
+    "lib.arcade.ph.sflush": "Värisuora",
+    "lib.arcade.ph.quads": "Neloset",
+    "lib.arcade.ph.full": "Täyskäsi",
+    "lib.arcade.ph.flush": "Väri",
+    "lib.arcade.ph.straight": "Suora",
+    "lib.arcade.ph.trips": "Kolmoset",
+    "lib.arcade.ph.twopair": "Kaksi paria",
+    "lib.arcade.ph.jacks": "Jätkäpari tai parempi",
+    "lib.arcade.ph.none": "Ei mitään",
+    "lib.arcade.res.win": "Voitto",
+    "lib.arcade.res.lose": "Häviö",
+    "lib.arcade.res.push": "Tasapeli",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Punainen",
+    "lib.arcade.cGreen": "Vihreä",
+    "lib.arcade.cYellow": "Keltainen",
+    "lib.arcade.cBlue": "Sininen"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Tiilenrikkoja",
       "desc": "Ohjaa mailaa ja kimmota palloa rikkoaksesi kaikki tiilet; 10 kenttää eri kuvioin, hiirellä, kosketuksella tai näppäimillä."
+    },
+    "pyramid": {
+      "name": "Pyramidisolitaire",
+      "desc": "Tyhjennä 28 kortin pyramidi yhdistämällä kortteja, joiden summa on 13; 10 tasoa, yhä vähemmän uusia jakoja."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-solitaire",
+      "desc": "Tyhjennä kolme huippua yhdistämällä kortteja, joiden arvo eroaa yhdellä; 10 tasoa helposta vaikeaan."
+    },
+    "golf": {
+      "name": "Golf-solitaire",
+      "desc": "Tyhjennä sarakkeet yhdistämällä kortteja, joiden arvo eroaa näkyvästä kortista yhdellä; 10 tasoa, sarakkeita tulee lisää."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Pelaa blackjackia jakajaa vastaan virtuaalisilla pelimerkeillä: pääse mahdollisimman lähelle 21:tä ylittämättä sitä; tuplaa ja jaa kädet; 10 tasoa kasvavilla tavoitteilla."
+    },
+    "video-poker": {
+      "name": "Videopokeri",
+      "desc": "Viiden kortin vaihtopokeri virtuaalisilla pelimerkeillä (jätkäpari tai parempi); 10 tasoa tiukemmilla voittotaulukoilla."
+    },
+    "checkers": {
+      "name": "Tammi",
+      "desc": "Pelaa 8x8-tammea tietokonetta vastaan: pakollinen syönti, moninkertaiset hypyt ja kuninkaat; 10 tasoa helposta vaikeaan."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Nelivärinen kilpapeli: heitä noppaa ja vie 4 nappulaasi ensimmäisenä kotiin; pelaa 1–3 tietokonepelaajaa vastaan 10 tasolla."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Perinteinen vietnamilainen kivienjakopeli: jaa kiviä ja voita mandariinit tietokonetta vastaan; 10 tasoa helposta vaikeaan."
     }
   },
   "s": {

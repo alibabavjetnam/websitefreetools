@@ -340,7 +340,70 @@
     "lib.arcade.target": "Target: {n}",
     "lib.arcade.up": "Ibabaw",
     "lib.arcade.youVsAi": "Ikaw {a} – Kompyuter {b}",
-    "lib.arcade.noHintFc": "Wala nay mapuslanong lihok. I-undo ang pipila ka lihok o sugdi pag-usab."
+    "lib.arcade.noHintFc": "Wala nay mapuslanong lihok. I-undo ang pipila ka lihok o sugdi pag-usab.",
+    "lib.arcade.recycles": "Nahibilin nga redeal: {n}",
+    "lib.arcade.stockLeft": "Stock: {n}",
+    "lib.arcade.wrapOn": "Ang K ma-link sa A",
+    "lib.arcade.wrapOff": "Ang K dili ma-link sa A",
+    "lib.arcade.hintDraw": "Wala nay pares. I-klik ang stock aron mokuha og baraha.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Ipang-apod",
+    "lib.arcade.hit": "Hit",
+    "lib.arcade.stand": "Stand",
+    "lib.arcade.double": "Double",
+    "lib.arcade.split": "Split",
+    "lib.arcade.nextHand": "Sunod nga kamot",
+    "lib.arcade.note.blackjack": "Dulaan ra nga kuwarta — walay tinuod nga kuwarta. Magsugod ka sa 500 ka chips; aron mapasa ang level, abta ang target nga gidaghanon sa chips sulod sa gitugotang gidaghanon sa mga kamot. Mas suki sa 21 kaysa dealer nga dili molapas. Ang dealer mokuha og baraha hangtod moabot sa 17. Ang blackjack (usa ka alas ug barahang may bili nga napulo) mas daghan ang bayad. Double: doblehon ang imong pusta ug mokuha og eksaktong usa pa ka baraha. Split: magamit kung ang imong unang duha ka baraha parehas og bili.",
+    "lib.arcade.dealer": "Dealer",
+    "lib.arcade.you": "Ikaw",
+    "lib.arcade.bet": "Pusta",
+    "lib.arcade.chips": "Chips: {n}",
+    "lib.arcade.handsLeft": "{n} ka kamot ang nahabilin",
+    "lib.arcade.won": "Nakadaog ka og {n} ka chips.",
+    "lib.arcade.lost": "Nawad-an ka og {n} ka chips.",
+    "lib.arcade.even": "Patas.",
+    "lib.arcade.note.videopoker": "Dulaan ra nga kuwarta — walay tinuod nga kuwarta. Pili og pusta nga 1–5 ka chips, pindota ang Deal aron makakuha og lima ka baraha, i-klik ang mga barahang gusto nimong tipigan, dayon pindota ang Draw aron ilisan ang uban. Ang pares sa jack o mas maayo ang gibayran. Magsugod ka sa 100 ka chips; aron mapasa ang level, abta ang target nga gidaghanon sa chips sulod sa gitugotang gidaghanon sa mga kamot.",
+    "lib.arcade.hold": "TIPIGI",
+    "lib.arcade.draw": "Draw",
+    "lib.arcade.note.checkers": "Pula ang imong dulaon (sa ubos) ug ikaw ang mauna. Ang piyesa mopanaw og usa ka kwadro nga pahilis paabante ngadto sa walay sulod nga kwadro. Kung makalukso ka sa piyesa sa kontra, kinahanglan nimo kining buhaton, ug mahimo kang magpadayon sa paglukso aron makakuha og daghang piyesa. Ang piyesa nga makaabot sa kataposang laray gikoronahan nga hari ug makalihok ug makakuha usab paatras. Mawad-an ka kung wala nay piyesa o legal nga lakaw.",
+    "lib.arcade.ckDraw": "Patas ang dula.",
+    "lib.arcade.ckWin": "Ang itom wala nay legal nga lakaw — nakadaog ka.",
+    "lib.arcade.ckLose": "Wala ka nay legal nga lakaw — napildi ka.",
+    "lib.arcade.ckMust": "Kinahanglan kang mokuha kung mahimo — pili og usa sa mga piyesang nagkidlap.",
+    "lib.arcade.note.oanquan": "Usa ka tradisyonal nga dula sa Vietnam. Imo ang ubos nga laray, sa kompyuter ang ibabaw, ug ang duha ka tumoy mao ang mga kwadro sa Mandarin. I-klik ang usa sa imong mga kwadro, dayon pili og direksyon: ang tanang bato niini kuhaon ug isabwag, tag-usa kada kwadro. Human sa pagsabwag, kung ang sunod nga kwadro adunay mga bato, kuhaa kini ug padayon; kung wala'y sulod ang sunod nga kwadro ug ang sunod pa niini adunay bato o Mandarin, madaog nimo kini (ug magpadayon kung human sa walay sulod nga kwadro adunay puno na usab). Undang sa kwadro sa Mandarin o human sa duha ka walay sulod nga kwadro nga sunud-sunod. Ang Mandarin kantidad og 10 ka puntos, ang bato 1. Kung maubusan ug bato ang imong kiliran, 5 sa imong nakuha nga puntos ibalik sa pagsabwag. Matapos ang dula kung nakuha na ang duha ka Mandarin; ang mas daghan og puntos ang modaog.",
+    "lib.arcade.oqWin": "Tapos na ang dula — mas daghan ang imong puntos.",
+    "lib.arcade.oqLose": "Tapos na ang dula — mas daghan ang puntos sa kompyuter.",
+    "lib.arcade.oqDraw": "Tapos na ang dula — patas.",
+    "lib.arcade.oqPick": "Pili og direksyon: ◀ o ▶.",
+    "lib.arcade.roll": "Itaktak ang dice",
+    "lib.arcade.note.ludo": "Pula ang imong dulaon; ang uban nga mga kolor dulaon sa kompyuter. Itaktak ang dice: kinahanglan nimo og 6 aron mopagawas og token gikan sa balay, ug ang 6 maghatag og usa pa ka taktak (ang tulo ka 6 nga sunud-sunod mawad-an ka sa turno). Ang mga token mopadayon pakanan libot sa tabla, dayon moliko ngadto sa balay nga linya sa ilang kolor; kinahanglan ang eksaktong numero aron makaabot sa katapusan sa tunga. Kung eksakto kang mahulog sa token sa kontra, mobalik kini sa iyang balay (gawas sa mga kwadro nga bitoon ug sugod). Ang unang makahatod sa tanang 4 ka token sa balay mao ang modaog.",
+    "lib.arcade.pickToken": "Pili og token nga ibalhin.",
+    "lib.arcade.turnOf": "Turno ni {c}…",
+    "lib.arcade.ldWin": "Ang tanan nimong 4 ka token naa na sa balay!",
+    "lib.arcade.ldLose": "Una nga nakabalik sa balay si {c}.",
+    "lib.arcade.threeSix": "Tulo ka 6 nga sunud-sunod — nawala ang imong turno.",
+    "lib.arcade.noMove": "Walay token nga makalihok.",
+    "lib.arcade.note.pyramid": "Hawani ang tanang 28 ka baraha sa piramide. I-klik ang duha ka gawas nga baraha (walay baraha nga nagtabon) nga ang suma 13 (A=1, J=11, Q=12) aron tangtangon ang duha; ang Hari (K) matangtang nga mag-isa sa usa ka klik. Magamit usab ang pinakaibabaw nga baraha sa waste pile. I-klik ang stock aron mokuha og baraha; limitado ang pila ka higayon nga ma-recycle ang waste pile.",
+    "lib.arcade.note.tripeaks": "Hawani ang tanang 28 ka baraha sa tulo ka tuktok. I-klik ang gawas nga baraha nga eksakto usa ka ranggo mas taas o mas ubos kaysa sa baraha nga makita sa waste pile (bisan unsang suit) aron ibalhin kini paubos. Kung wala nay lakaw, i-klik ang stock. Sa mas sayon nga mga level, ang Hari ma-link sa Alas.",
+    "lib.arcade.note.golf": "Hawani ang tanang kolum. Ang pinakaubos nga baraha lang sa matag kolum ang ma-klik: kinahanglan kini eksakto usa ka ranggo mas taas o mas ubos kaysa sa makita nga baraha. Kung wala nay lakaw, i-klik ang stock. Sa mas sayon nga mga level, ang Hari ma-link sa Alas.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Upat ka parehas",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Tulo ka parehas",
+    "lib.arcade.ph.twopair": "Duha ka pares",
+    "lib.arcade.ph.jacks": "Jacks o mas maayo",
+    "lib.arcade.ph.none": "Wala",
+    "lib.arcade.res.win": "Daog",
+    "lib.arcade.res.lose": "Pildi",
+    "lib.arcade.res.push": "Patas",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Pula",
+    "lib.arcade.cGreen": "Berde",
+    "lib.arcade.cYellow": "Dalag",
+    "lib.arcade.cBlue": "Asul"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Tagbuak og Tisa",
       "desc": "Giyahi ang paddle ug pabawoga ang bola aron mabuak ang tanang tisa; 10 ka yugto nga lainlain og han-ay, gamit ang mouse, tandog o mga key."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Hawani ang 28-ka-baraha nga piramide pinaagi sa pag-pares sa mga barahang ang suma 13; 10 ka level nga mas kaunti ang redeal."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Hawani ang tulo ka tuktok pinaagi sa pag-link sa mga barahang usa ka ranggo ang kalainan; 10 ka level gikan sa sayon hangtod lisod."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Hawani ang mga kolum pinaagi sa pag-link sa mga barahang usa ka ranggo ang kalainan sa makita nga baraha; 10 ka level nga mas daghan ang kolum."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Dulaa ang blackjack batok sa dealer gamit ang virtual nga chips: pinakaduol sa 21 nga dili molapas; mag-double ug mag-split; 10 ka level nga misaka ang target."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Five-card draw poker gamit ang virtual nga chips (Jacks o mas maayo); 10 ka level nga mas hugot ang pay table."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Dulaa ang 8x8 nga dama batok sa kompyuter: obligadong pagkuha, daghang paglukso ug hari; 10 ka level gikan sa sayon hangtod lisod."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Dula sa lumba nga upat ka kolor: itaktak ang dice ug unahon ang pagpauli sa imong 4 ka token; batok sa 1 hangtod 3 ka kompyuter nga magdudula sulod sa 10 ka level."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Usa ka tradisyonal nga dula sa Vietnam sa pagsabwag og bato: magsabwag og bato ug kuhaa ang mga Mandarin batok sa kompyuter; 10 ka level gikan sa sayon hangtod lisod."
     }
   },
   "s": {

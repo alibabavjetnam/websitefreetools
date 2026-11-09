@@ -340,7 +340,70 @@
     "lib.arcade.target": "Cilj: {n}",
     "lib.arcade.up": "Gore",
     "lib.arcade.youVsAi": "Vi {a} – Računar {b}",
-    "lib.arcade.noHintFc": "Nema više korisnih poteza. Poništite nekoliko poteza ili počnite ispočetka."
+    "lib.arcade.noHintFc": "Nema više korisnih poteza. Poništite nekoliko poteza ili počnite ispočetka.",
+    "lib.arcade.recycles": "Preostala miješanja: {n}",
+    "lib.arcade.stockLeft": "Špil: {n}",
+    "lib.arcade.wrapOn": "Kralj se nastavlja na asa",
+    "lib.arcade.wrapOff": "Kralj se ne nastavlja na asa",
+    "lib.arcade.hintDraw": "Nema više parova. Kliknite na špil da povučete kartu.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Podijeli",
+    "lib.arcade.hit": "Vuci",
+    "lib.arcade.stand": "Stani",
+    "lib.arcade.double": "Udvostruči",
+    "lib.arcade.split": "Razdvoji",
+    "lib.arcade.nextHand": "Sljedeća ruka",
+    "lib.arcade.note.blackjack": "Samo igraći novac, bez pravog novca. Počinjete sa 500 žetona; dostignite ciljni broj žetona u dozvoljenom broju ruku da biste prošli nivo. Budite bliže 21 od djelitelja, a da ne pređete. Djelitelj vuče dok ne dostigne 17. Blackjack (as i karta od deset bodova) isplaćuje se više. Udvostručenje: udvostručite ulog i dobijate tačno jednu kartu. Razdvajanje: moguće kada prve dvije karte imaju istu vrijednost.",
+    "lib.arcade.dealer": "Djelitelj",
+    "lib.arcade.you": "Vi",
+    "lib.arcade.bet": "Ulog",
+    "lib.arcade.chips": "Žetoni: {n}",
+    "lib.arcade.handsLeft": "Preostalo ruku: {n}",
+    "lib.arcade.won": "Osvojili ste {n} žetona.",
+    "lib.arcade.lost": "Izgubili ste {n} žetona.",
+    "lib.arcade.even": "Neriješeno.",
+    "lib.arcade.note.videopoker": "Samo igraći novac, bez pravog novca. Odaberite ulog od 1 do 5 žetona, pritisnite Podijeli da dobijete pet karata, kliknite na karte koje želite zadržati, a zatim pritisnite Vuci da zamijenite ostale. Isplaćuje se par dečki ili bolje. Počinjete sa 100 žetona; dostignite ciljni broj žetona u dozvoljenom broju ruku da biste prošli nivo.",
+    "lib.arcade.hold": "ZADRŽI",
+    "lib.arcade.draw": "Vuci",
+    "lib.arcade.note.checkers": "Igrate crvenim (dolje) i prvi ste na potezu. Figura se pomjera jedno polje dijagonalno naprijed na prazno polje. Ako možete preskočiti protivničku figuru, morate, a možete nastaviti skakati i uzeti više figura. Figura koja stigne do posljednjeg reda postaje dama i može se pomjerati i uzimati i unazad. Gubite kada nemate figura ili dozvoljenih poteza.",
+    "lib.arcade.ckDraw": "Igra je neriješena.",
+    "lib.arcade.ckWin": "Crni nema dozvoljenih poteza – pobijedili ste.",
+    "lib.arcade.ckLose": "Nemate dozvoljenih poteza – izgubili ste.",
+    "lib.arcade.ckMust": "Uzimanje je obavezno – odaberite jednu od pulsirajućih figura.",
+    "lib.arcade.note.oanquan": "Tradicionalna vijetnamska igra. Donji red je vaš, gornji je računarov, a dva kraja su polja mandarina. Kliknite na jedno od svojih polja pa odaberite smjer: svi kamenčići iz njega se uzimaju i siju jedan po polju. Nakon sijanja, ako sljedeće polje ima kamenčiće, uzmite ih i nastavite sijati; ako je sljedeće polje prazno, a ono iza njega ima kamenčiće ili mandarina, uzimate ga (i nastavljate uzimati ako iza praznog polja slijedi puno). Zaustavljate se na polju mandarina ili nakon dva uzastopna prazna polja. Mandarin vrijedi 10 bodova, kamenčić 1. Ako vašoj strani ponestane kamenčića, 5 vaših osvojenih bodova se ponovo sije. Igra završava kada su oba mandarina uzeta; pobjeđuje onaj s više bodova.",
+    "lib.arcade.oqWin": "Igra je završena – imate više bodova.",
+    "lib.arcade.oqLose": "Igra je završena – računar ima više bodova.",
+    "lib.arcade.oqDraw": "Igra je završena – neriješeno.",
+    "lib.arcade.oqPick": "Odaberite smjer: ◀ ili ▶.",
+    "lib.arcade.roll": "Baci kockicu",
+    "lib.arcade.note.ludo": "Igrate crvenim, a ostale boje igra računar. Bacite kockicu: treba vam šestica da izvedete figuru iz kućice, a šestica donosi još jedno bacanje (tri šestice zaredom gube vaš potez). Figure idu u smjeru kazaljke na satu oko table, a zatim skreću u ciljni stupac svoje boje; za cilj u sredini treba vam tačan broj. Ako tačno stanete na protivničku figuru, ona se vraća u kućicu (osim na poljima sa zvijezdom i startnim poljima). Pobjeđuje ko prvi dovede sve 4 figure kući.",
+    "lib.arcade.pickToken": "Odaberite figuru za pomjeranje.",
+    "lib.arcade.turnOf": "Na redu je: {c}…",
+    "lib.arcade.ldWin": "Sve 4 vaše figure su kod kuće!",
+    "lib.arcade.ldLose": "{c} je prvi stigao kući.",
+    "lib.arcade.threeSix": "Tri šestice zaredom – gubite potez.",
+    "lib.arcade.noMove": "Nijedna figura se ne može pomjeriti.",
+    "lib.arcade.note.pyramid": "Uklonite svih 28 karata piramide. Kliknite na dvije slobodne karte (koje nijedna druga karta ne pokriva) čiji je zbir 13 (A=1, J=11, Q=12) da uklonite obje; kralj se uklanja sam jednim klikom. Može se koristiti i gornja karta odbačenog špila. Kliknite na špil da povučete kartu; broj puta koliko možete ponovo koristiti odbačeni špil je ograničen.",
+    "lib.arcade.note.tripeaks": "Uklonite svih 28 karata triju vrhova. Kliknite na slobodnu kartu koja je tačno za jedan rang viša ili niža od karte koja je otkrivena na odbačenom špilu (bilo koja boja) da je premjestite. Kada ostanete bez poteza, kliknite na špil da povučete kartu. Na lakšim nivoima kralj se nastavlja na asa.",
+    "lib.arcade.note.golf": "Uklonite sve stupce. Može se kliknuti samo donja karta svakog stupca: mora biti tačno za jedan rang viša ili niža od otkrivene karte. Kada ostanete bez poteza, kliknite na špil da povučete kartu. Na lakšim nivoima kralj se nastavlja na asa.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Poker (četiri ista)",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Boja",
+    "lib.arcade.ph.straight": "Niz",
+    "lib.arcade.ph.trips": "Tri ista",
+    "lib.arcade.ph.twopair": "Dva para",
+    "lib.arcade.ph.jacks": "Dečki ili bolje",
+    "lib.arcade.ph.none": "Ništa",
+    "lib.arcade.res.win": "Pobjeda",
+    "lib.arcade.res.lose": "Poraz",
+    "lib.arcade.res.push": "Neriješeno",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Crvena",
+    "lib.arcade.cGreen": "Zelena",
+    "lib.arcade.cYellow": "Žuta",
+    "lib.arcade.cBlue": "Plava"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Razbijanje cigli",
       "desc": "Upravljajte reketom i odbijajte loptu da razbijete sve cigle; 10 nivoa s različitim rasporedom, mišem, dodirom ili tipkama."
+    },
+    "pyramid": {
+      "name": "Pasijans Piramida",
+      "desc": "Uklonite piramidu od 28 karata uparivanjem karata čiji je zbir 13; 10 nivoa sa sve manje miješanja."
+    },
+    "tripeaks": {
+      "name": "Pasijans TriPeaks",
+      "desc": "Uklonite tri vrha povezivanjem karata koje se razlikuju za jedan rang; 10 nivoa od lakih do teških."
+    },
+    "golf": {
+      "name": "Pasijans Golf",
+      "desc": "Uklonite stupce povezivanjem karata koje se razlikuju za jedan rang od otkrivene karte; 10 nivoa sa sve više stupaca."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Igrajte blackjack protiv djelitelja s virtualnim žetonima: budite što bliže 21 bez prelaska; udvostručujte i razdvajajte; 10 nivoa s rastućim ciljevima žetona."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker s pet karata i zamjenom uz virtualne žetone (dečki ili bolje); 10 nivoa sa strožim tabelama isplate."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Igrajte damu 8x8 protiv računara: obavezno uzimanje, višestruki skokovi i dame; 10 nivoa od lakih do teških."
+    },
+    "ludo": {
+      "name": "Čovječe, ne ljuti se",
+      "desc": "Igra utrke u četiri boje: bacite kockicu i prvi dovedite svoje 4 figure kući; igrajte protiv 1 do 3 računarska igrača kroz 10 nivoa."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Tradicionalna vijetnamska igra sijanja kamenčića: sijte kamenčiće i uzimajte mandarine protiv računara; 10 nivoa od lakih do teških."
     }
   },
   "s": {

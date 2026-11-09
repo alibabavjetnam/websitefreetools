@@ -340,7 +340,70 @@
     "lib.arcade.target": "Teiken: {n}",
     "lib.arcade.up": "Op",
     "lib.arcade.youVsAi": "Jy {a} – Rekenaar {b}",
-    "lib.arcade.noHintFc": "Geen nuttige skuif oor nie. Ontdoen 'n paar skuiwe of begin oor."
+    "lib.arcade.noHintFc": "Geen nuttige skuif oor nie. Ontdoen 'n paar skuiwe of begin oor.",
+    "lib.arcade.recycles": "Oorskuiwe oor: {n}",
+    "lib.arcade.stockLeft": "Stapel: {n}",
+    "lib.arcade.wrapOn": "Koning skakel met aas",
+    "lib.arcade.wrapOff": "Koning skakel nie met aas nie",
+    "lib.arcade.hintDraw": "Geen pare meer nie. Klik op die stapel om te trek.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Deel",
+    "lib.arcade.hit": "Tref",
+    "lib.arcade.stand": "Staan",
+    "lib.arcade.double": "Verdubbel",
+    "lib.arcade.split": "Split",
+    "lib.arcade.nextHand": "Volgende hand",
+    "lib.arcade.note.blackjack": "Slegs speelgeld — geen regte geld nie. Jy begin met 500 skyfies; bereik die teikenaantal skyfies binne die toegelate aantal hande om die vlak te slaag. Kom nader aan 21 as die handelaar sonder om oor te gaan. Die handelaar trek tot 17. 'n Blackjack ('n aas plus 'n kaart met waarde tien) betaal ekstra. Verdubbel: verdubbel jou inset en neem presies een kaart meer. Split: moontlik wanneer jou eerste twee kaarte dieselfde waarde het.",
+    "lib.arcade.dealer": "Handelaar",
+    "lib.arcade.you": "Jy",
+    "lib.arcade.bet": "Inset",
+    "lib.arcade.chips": "Skyfies: {n}",
+    "lib.arcade.handsLeft": "{n} hande oor",
+    "lib.arcade.won": "Jy het {n} skyfies gewen.",
+    "lib.arcade.lost": "Jy het {n} skyfies verloor.",
+    "lib.arcade.even": "Gelykop.",
+    "lib.arcade.note.videopoker": "Slegs speelgeld — geen regte geld nie. Kies 'n inset van 1–5 skyfies, druk Deel vir vyf kaarte, klik op die kaarte wat jy wil hou en druk dan Trek om die res te vervang. 'n Paar boere of beter betaal. Jy begin met 100 skyfies; bereik die teikenaantal skyfies binne die toegelate aantal hande om die vlak te slaag.",
+    "lib.arcade.hold": "HOU",
+    "lib.arcade.draw": "Trek",
+    "lib.arcade.note.checkers": "Jy speel Rooi (onder) en gaan eerste. 'n Skyf beweeg een blokkie diagonaal vorentoe na 'n leë blokkie. As jy oor 'n teenstander se skyf kan spring, moet jy, en jy mag aanhou spring om verskeie skywe te vang. 'n Skyf wat die verste ry bereik, word gekroon tot koning en kan ook agtertoe beweeg en vang. Jy verloor wanneer jy geen skywe of geldige skuif meer het nie.",
+    "lib.arcade.ckDraw": "Die spel is gelykop.",
+    "lib.arcade.ckWin": "Swart het geen geldige skuiwe nie — jy wen.",
+    "lib.arcade.ckLose": "Jy het geen geldige skuiwe nie — jy verloor.",
+    "lib.arcade.ckMust": "Jy moet vang wanneer jy kan — kies een van die flikkerende skywe.",
+    "lib.arcade.note.oanquan": "'n Tradisionele Viëtnamese spel. Die onderste ry is joune, die boonste ry is die rekenaar s'n, en die twee punte is die Mandaryn-blokkies. Klik op een van jou blokkies en kies dan 'n rigting: al die klippe daarin word opgetel en een per blokkie gesaai. As die volgende blokkie ná die saaiery klippe het, tel dit op en saai verder; as die volgende blokkie leeg is en die een daarna klippe of 'n Mandaryn het, vang jy dit (en jy vang verder as nog 'n leë blokkie deur 'n volle een gevolg word). Stop by 'n Mandaryn-blokkie of ná twee leë blokkies agtereenvolgens. 'n Mandaryn is 10 punte werd, 'n klip 1. As jou kant sonder klippe raak, word 5 van jou gevangde punte teruggesaai. Die spel eindig wanneer albei Mandaryne gevang is; die hoogste telling wen.",
+    "lib.arcade.oqWin": "Spel verby — jy het meer punte.",
+    "lib.arcade.oqLose": "Spel verby — die rekenaar het meer punte.",
+    "lib.arcade.oqDraw": "Spel verby — gelykop.",
+    "lib.arcade.oqPick": "Kies 'n rigting: ◀ of ▶.",
+    "lib.arcade.roll": "Gooi die dobbelsteen",
+    "lib.arcade.note.ludo": "Jy speel Rooi; die ander kleure word deur die rekenaar gespeel. Gooi die dobbelsteen: jy het 'n 6 nodig om 'n stuk uit die tuiste te kry, en 'n 6 gee jou nog 'n gooi (drie 6's agtereenvolgens kos jou beurt). Stukke beweeg kloksgewys om die bord en draai dan in die tuiskolom van hul kleur; jy het die presiese getal nodig om die einde in die middel te bereik. As jy presies op 'n teenstander se stuk beland, gaan dit terug na sy tuiste (behalwe op sterblokkies en beginblokkies). Die eerste speler wat al 4 stukke tuis kry, wen.",
+    "lib.arcade.pickToken": "Kies 'n stuk om te skuif.",
+    "lib.arcade.turnOf": "{c} se beurt…",
+    "lib.arcade.ldWin": "Al 4 jou stukke is tuis!",
+    "lib.arcade.ldLose": "{c} was eerste tuis.",
+    "lib.arcade.threeSix": "Drie 6's agtereenvolgens — jy verloor jou beurt.",
+    "lib.arcade.noMove": "Geen stuk kan beweeg nie.",
+    "lib.arcade.note.pyramid": "Maak al 28 kaarte van die piramide skoon. Klik op twee vrye kaarte (wat nie deur 'n kaart bedek word nie) wat saam 13 maak (A=1, B=11, V=12) om albei te verwyder; 'n Koning word alleen met een klik verwyder. Die boonste kaart van die afvalstapel kan ook gebruik word. Klik op die stapel om te trek; die aantal kere wat jy die afvalstapel kan hergebruik, is beperk.",
+    "lib.arcade.note.tripeaks": "Maak al 28 kaarte van die drie pieke skoon. Klik op 'n vrye kaart wat presies een rang hoër of laer is as die kaart wat op die afvalstapel wys (enige kleur) om dit af te skuif. Wanneer jy sonder skuiwe is, klik op die stapel om te trek. Op die makliker vlakke skakel Koning met Aas.",
+    "lib.arcade.note.golf": "Maak al die kolomme skoon. Net die onderste kaart van elke kolom kan geklik word: dit moet presies een rang hoër of laer wees as die kaart wat wys. Wanneer jy sonder skuiwe is, klik op die stapel om te trek. Op die makliker vlakke skakel Koning met Aas.",
+    "lib.arcade.ph.royal": "Koninklike reguit vloed",
+    "lib.arcade.ph.sflush": "Reguit vloed",
+    "lib.arcade.ph.quads": "Vier van 'n soort",
+    "lib.arcade.ph.full": "Volhuis",
+    "lib.arcade.ph.flush": "Vloed",
+    "lib.arcade.ph.straight": "Reguit",
+    "lib.arcade.ph.trips": "Drie van 'n soort",
+    "lib.arcade.ph.twopair": "Twee pare",
+    "lib.arcade.ph.jacks": "Boere of beter",
+    "lib.arcade.ph.none": "Niks",
+    "lib.arcade.res.win": "Wen",
+    "lib.arcade.res.lose": "Verloor",
+    "lib.arcade.res.push": "Gelykop",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rooi",
+    "lib.arcade.cGreen": "Groen",
+    "lib.arcade.cYellow": "Geel",
+    "lib.arcade.cBlue": "Blou"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Stenebreker",
       "desc": "Stuur die spaan en bons die bal om elke steen te breek; 10 fases met verskillende uitlegte, speel met muis, raakskerm of sleutels."
+    },
+    "pyramid": {
+      "name": "Piramide-patience",
+      "desc": "Maak die piramide van 28 kaarte skoon deur kaarte te paar wat saam 13 maak; 10 vlakke met al hoe minder oorskuiwe."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-patience",
+      "desc": "Maak drie pieke skoon deur kaarte een rang uitmekaar te skakel; 10 vlakke van maklik tot moeilik."
+    },
+    "golf": {
+      "name": "Gholf-patience",
+      "desc": "Maak die kolomme skoon deur kaarte een rang van die wysende kaart te skakel; 10 vlakke met al hoe meer kolomme."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Speel blackjack teen die handelaar met virtuele skyfies: kom die naaste aan 21 sonder om oor te gaan; verdubbel en split; 10 vlakke met stygende skyfie-teikens."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Vyfkaart-ruilpoker met virtuele skyfies (boere of beter); 10 vlakke met al hoe strenger uitbetalingstabelle."
+    },
+    "checkers": {
+      "name": "Dambord (Checkers)",
+      "desc": "Speel 8x8-dambord teen die rekenaar: verpligte vangs, veelvuldige spronge en konings; 10 vlakke van maklik tot moeilik."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Wedrenspel in vier kleure: gooi die dobbelsteen en kry jou 4 stukke eerste tuis; speel teen 1 tot 3 rekenaarspelers oor 10 vlakke."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "'n Tradisionele Viëtnamese saaispel: saai klippe en vang die Mandaryne teen die rekenaar; 10 vlakke van maklik tot moeilik."
     }
   },
   "s": {

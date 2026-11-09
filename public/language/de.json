@@ -340,7 +340,70 @@
     "lib.arcade.target": "Ziel: {n}",
     "lib.arcade.up": "Hoch",
     "lib.arcade.youVsAi": "Du {a} – Computer {b}",
-    "lib.arcade.noHintFc": "Kein sinnvoller Zug mehr. Mach ein paar Züge rückgängig oder fang neu an."
+    "lib.arcade.noHintFc": "Kein sinnvoller Zug mehr. Mach ein paar Züge rückgängig oder fang neu an.",
+    "lib.arcade.recycles": "Verbleibende Neuausteilungen: {n}",
+    "lib.arcade.stockLeft": "Stapel: {n}",
+    "lib.arcade.wrapOn": "König schließt an Ass an",
+    "lib.arcade.wrapOff": "König schließt nicht an Ass an",
+    "lib.arcade.hintDraw": "Keine Paare mehr. Klicke auf den Stapel, um zu ziehen.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Geben",
+    "lib.arcade.hit": "Karte",
+    "lib.arcade.stand": "Halten",
+    "lib.arcade.double": "Verdoppeln",
+    "lib.arcade.split": "Teilen",
+    "lib.arcade.nextHand": "Nächste Runde",
+    "lib.arcade.note.blackjack": "Nur Spielgeld – kein echtes Geld. Du startest mit 500 Chips; erreiche innerhalb der erlaubten Runden die Zielanzahl an Chips, um das Level zu schaffen. Komm näher an 21 als der Geber, ohne darüberzugehen. Der Geber zieht, bis er 17 erreicht. Ein Blackjack (ein Ass plus eine Zehnerkarte) zahlt extra. Verdoppeln: Du verdoppelst den Einsatz und bekommst genau eine weitere Karte. Teilen: möglich, wenn deine ersten beiden Karten denselben Wert haben.",
+    "lib.arcade.dealer": "Geber",
+    "lib.arcade.you": "Du",
+    "lib.arcade.bet": "Einsatz",
+    "lib.arcade.chips": "Chips: {n}",
+    "lib.arcade.handsLeft": "Noch {n} Runden",
+    "lib.arcade.won": "Du hast {n} Chips gewonnen.",
+    "lib.arcade.lost": "Du hast {n} Chips verloren.",
+    "lib.arcade.even": "Unentschieden.",
+    "lib.arcade.note.videopoker": "Nur Spielgeld – kein echtes Geld. Wähle einen Einsatz von 1–5 Chips, drücke auf Geben, um fünf Karten zu erhalten, klicke die Karten an, die du behalten willst, und drücke dann auf Ziehen, um den Rest zu ersetzen. Ab einem Paar Buben oder besser gibt es einen Gewinn. Du startest mit 100 Chips; erreiche innerhalb der erlaubten Runden die Zielanzahl an Chips, um das Level zu schaffen.",
+    "lib.arcade.hold": "HALTEN",
+    "lib.arcade.draw": "Ziehen",
+    "lib.arcade.note.checkers": "Du spielst Rot (unten) und beginnst. Ein Stein zieht ein Feld diagonal vorwärts auf ein freies Feld. Wenn du einen gegnerischen Stein überspringen kannst, musst du es tun, und du darfst weiterspringen, um mehrere Steine zu schlagen. Ein Stein, der die gegenüberliegende Reihe erreicht, wird zur Dame und darf auch rückwärts ziehen und schlagen. Du verlierst, wenn du keine Steine oder keinen erlaubten Zug mehr hast.",
+    "lib.arcade.ckDraw": "Das Spiel endet unentschieden.",
+    "lib.arcade.ckWin": "Schwarz hat keinen erlaubten Zug mehr – du gewinnst.",
+    "lib.arcade.ckLose": "Du hast keinen erlaubten Zug mehr – du verlierst.",
+    "lib.arcade.ckMust": "Es herrscht Schlagzwang – wähle einen der pulsierenden Steine.",
+    "lib.arcade.note.oanquan": "Ein traditionelles vietnamesisches Spiel. Die untere Reihe gehört dir, die obere dem Computer, die beiden Enden sind die Mandarinen-Felder. Klicke auf eines deiner Felder und wähle dann eine Richtung: Alle Steine darin werden aufgenommen und einzeln auf die folgenden Felder verteilt. Liegen auf dem nächsten Feld Steine, nimmst du sie auf und säst weiter; ist das nächste Feld leer und das übernächste enthält Steine oder einen Mandarin, schlägst du es (und schlägst weiter, wenn auf ein leeres Feld wieder ein gefülltes folgt). Du hörst an einem Mandarin-Feld oder nach zwei leeren Feldern in Folge auf. Ein Mandarin zählt 10 Punkte, ein Stein 1. Hat deine Seite keine Steine mehr, werden 5 deiner erbeuteten Punkte zurückgesät. Das Spiel endet, wenn beide Mandarinen geschlagen sind; wer mehr Punkte hat, gewinnt.",
+    "lib.arcade.oqWin": "Spiel vorbei – du hast mehr Punkte.",
+    "lib.arcade.oqLose": "Spiel vorbei – der Computer hat mehr Punkte.",
+    "lib.arcade.oqDraw": "Spiel vorbei – unentschieden.",
+    "lib.arcade.oqPick": "Wähle eine Richtung: ◀ oder ▶.",
+    "lib.arcade.roll": "Würfeln",
+    "lib.arcade.note.ludo": "Du spielst Rot, die anderen Farben spielt der Computer. Würfle: Du brauchst eine 6, um eine Figur aus dem Haus zu bringen, und eine 6 gibt dir einen weiteren Wurf (dreimal hintereinander eine 6 lässt deinen Zug verfallen). Die Figuren laufen im Uhrzeigersinn um das Brett und biegen dann in die Zielgasse ihrer Farbe ein; für das Ziel in der Mitte brauchst du die genaue Augenzahl. Landest du genau auf einer gegnerischen Figur, wird sie zurück ins Haus geschickt (außer auf Sternfeldern und Startfeldern). Wer zuerst alle 4 Figuren ins Ziel bringt, gewinnt.",
+    "lib.arcade.pickToken": "Wähle eine Figur zum Ziehen.",
+    "lib.arcade.turnOf": "{c} ist am Zug…",
+    "lib.arcade.ldWin": "Alle 4 deiner Figuren sind im Ziel!",
+    "lib.arcade.ldLose": "{c} war zuerst im Ziel.",
+    "lib.arcade.threeSix": "Dreimal hintereinander eine 6 – dein Zug verfällt.",
+    "lib.arcade.noMove": "Keine Figur kann ziehen.",
+    "lib.arcade.note.pyramid": "Räume alle 28 Karten der Pyramide ab. Klicke auf zwei freie Karten (nicht von anderen Karten verdeckt), deren Summe 13 ergibt (Ass=1, Bube=11, Dame=12), um beide zu entfernen; ein König wird mit einem Klick allein entfernt. Auch die oberste Karte des Ablagestapels kann verwendet werden. Klicke auf den Stapel, um zu ziehen; wie oft du den Ablagestapel neu mischen darfst, ist begrenzt.",
+    "lib.arcade.note.tripeaks": "Räume alle 28 Karten der drei Gipfel ab. Klicke auf eine freie Karte, die genau einen Rang höher oder niedriger ist als die oben liegende Karte des Ablagestapels (beliebige Farbe), um sie abzulegen. Wenn du nicht mehr weiterkommst, klicke auf den Stapel, um zu ziehen. Auf den leichteren Stufen schließt der König an das Ass an.",
+    "lib.arcade.note.golf": "Räume alle Spalten ab. Nur die unterste Karte jeder Spalte kann angeklickt werden: Sie muss genau einen Rang höher oder niedriger sein als die offene Karte. Wenn du nicht mehr weiterkommst, klicke auf den Stapel, um zu ziehen. Auf den leichteren Stufen schließt der König an das Ass an.",
+    "lib.arcade.ph.royal": "Royal Flush",
+    "lib.arcade.ph.sflush": "Straight Flush",
+    "lib.arcade.ph.quads": "Vierling",
+    "lib.arcade.ph.full": "Full House",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straße",
+    "lib.arcade.ph.trips": "Drilling",
+    "lib.arcade.ph.twopair": "Zwei Paare",
+    "lib.arcade.ph.jacks": "Buben oder besser",
+    "lib.arcade.ph.none": "Nichts",
+    "lib.arcade.res.win": "Gewonnen",
+    "lib.arcade.res.lose": "Verloren",
+    "lib.arcade.res.push": "Unentschieden",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rot",
+    "lib.arcade.cGreen": "Grün",
+    "lib.arcade.cYellow": "Gelb",
+    "lib.arcade.cBlue": "Blau"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Mauerbrecher",
       "desc": "Steuere den Schläger und lass den Ball abprallen, bis alle Steine zerstört sind; 10 Level mit verschiedenen Mustern, mit Maus, Touch oder Tasten."
+    },
+    "pyramid": {
+      "name": "Pyramide",
+      "desc": "Räume die Pyramide aus 28 Karten ab, indem du Karten mit der Summe 13 paarst; 10 Level mit immer weniger Neuausteilungen."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-Solitär",
+      "desc": "Räume drei Gipfel ab, indem du Karten im Abstand von einem Rang verbindest; 10 Level von leicht bis schwer."
+    },
+    "golf": {
+      "name": "Golf-Solitär",
+      "desc": "Räume die Spalten ab, indem du Karten im Abstand von einem Rang zur offenen Karte verbindest; 10 Level mit immer mehr Spalten."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Spiele Blackjack gegen den Geber mit virtuellen Chips: Komm 21 am nächsten, ohne darüberzugehen; verdoppeln und teilen; 10 Level mit steigenden Chip-Zielen."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Five-Card-Draw-Poker mit virtuellen Chips (Buben oder besser); 10 Level mit knapperen Gewinntabellen."
+    },
+    "checkers": {
+      "name": "Dame",
+      "desc": "Spiele Dame (8x8) gegen den Computer: Schlagzwang, Mehrfachsprünge und Damen; 10 Level von leicht bis schwer."
+    },
+    "ludo": {
+      "name": "Mensch ärgere dich nicht",
+      "desc": "Würfelspiel mit vier Farben: Würfle und bringe deine 4 Figuren als Erster ins Ziel; spiele gegen 1 bis 3 Computergegner in 10 Leveln."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Ein traditionelles vietnamesisches Säespiel: Verteile Steine und schlage die Mandarinen gegen den Computer; 10 Level von leicht bis schwer."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Mira: {n}",
     "lib.arcade.up": "'Il fuq",
     "lib.arcade.youVsAi": "Int {a} – Kompjuter {b}",
-    "lib.arcade.noHintFc": "Ma fadal l-ebda mossa utli. Ħassar xi mossi jew ibda mill-ġdid."
+    "lib.arcade.noHintFc": "Ma fadal l-ebda mossa utli. Ħassar xi mossi jew ibda mill-ġdid.",
+    "lib.arcade.recycles": "Taħlitiet li fadal: {n}",
+    "lib.arcade.stockLeft": "Munzell: {n}",
+    "lib.arcade.wrapOn": "Il-K jgħaqqad mal-A",
+    "lib.arcade.wrapOff": "Il-K ma jgħaqqadx mal-A",
+    "lib.arcade.hintDraw": "M'hemmx aktar pari. Ikklikkja l-munzell biex tiġbed karta.",
+    "lib.arcade.betMax": "Massimu",
+    "lib.arcade.deal": "Qassam",
+    "lib.arcade.hit": "Ġbed",
+    "lib.arcade.stand": "Waqqaf",
+    "lib.arcade.double": "Irduppja",
+    "lib.arcade.split": "Aqsam",
+    "lib.arcade.nextHand": "Id li jmiss",
+    "lib.arcade.note.blackjack": "Flus tal-logħob biss — mhux flus reali. Tibda b'500 ċipp; kseb in-numru fil-mira ta' ċipep fin-numru ta' idejn permess biex tgħaddi l-livell. Resaq eqreb lejn 21 mill-bank mingħajr ma taqbeż. Il-bank jiġbed sakemm jilħaq 17. Blackjack (ace u karta ta' valur għaxra) iħallas aktar. Irduppja: iddoppja l-imħatra u tieħu karta waħda biss. Aqsam: disponibbli meta l-ewwel żewġ karti tiegħek ikollhom l-istess valur.",
+    "lib.arcade.dealer": "Il-bank",
+    "lib.arcade.you": "Int",
+    "lib.arcade.bet": "Imħatra",
+    "lib.arcade.chips": "Ċipep: {n}",
+    "lib.arcade.handsLeft": "Fadal {n} idejn",
+    "lib.arcade.won": "Rbaħt {n} ċipep.",
+    "lib.arcade.lost": "Tlift {n} ċipep.",
+    "lib.arcade.even": "Parità.",
+    "lib.arcade.note.videopoker": "Flus tal-logħob biss — mhux flus reali. Agħżel imħatra ta' 1–5 ċipep, agħfas Qassam biex tieħu ħames karti, ikklikkja l-karti li trid iżżomm, imbagħad agħfas Biddel biex tissostitwixxi l-bqija. Pari ta' Jacks jew aħjar iħallsu. Tibda b'100 ċipp; kseb in-numru fil-mira ta' ċipep fin-numru ta' idejn permess biex tgħaddi l-livell.",
+    "lib.arcade.hold": "ŻOMM",
+    "lib.arcade.draw": "Biddel",
+    "lib.arcade.note.checkers": "Int tilgħab l-aħmar (isfel) u tibda int. Biċċa timxi kwadru wieħed dijagonalment 'il quddiem fuq kwadru vojt. Jekk tista' taqbeż biċċa tal-avversarju, trid taqbeż, u tista' tkompli taqbeż biex teħodlu bosta biċċiet. Biċċa li tilħaq l-aħħar filliera titkuruna re u tista' timxi u tiekol ukoll lura. Titlef meta ma jibqgħalek l-ebda biċċa jew mossa legali.",
+    "lib.arcade.ckDraw": "Il-logħba ntemmet bi parità.",
+    "lib.arcade.ckWin": "L-iswed m'għandu l-ebda mossa legali — rbaħt.",
+    "lib.arcade.ckLose": "M'għandekx mossi legali — tlift.",
+    "lib.arcade.ckMust": "Trid tiekol meta tista' — agħżel waħda mill-biċċiet li qed jaqbżu.",
+    "lib.arcade.note.oanquan": "Logħba tradizzjonali Vjetnamiża. Il-filliera t'isfel hija tiegħek, dik ta' fuq hija tal-kompjuter, u ż-żewġ truf huma l-kwadri tal-Mandarin. Ikklikkja wieħed mill-kwadri tiegħek, imbagħad agħżel direzzjoni: il-ġebel kollu fih jinġabar u jinżera' wieħed f'kull kwadru. Wara ż-żrigħ, jekk il-kwadru li jmiss fih ġebel, ġibru u kompli żrigħ; jekk il-kwadru li jmiss ikun vojt u dak ta' warajh fih ġebel jew Mandarin, tieħdu (u tkompli tieħu jekk wara kwadru vojt ieħor jiġi wieħed bil-ġebel). Waqqaf f'kwadru tal-Mandarin jew wara żewġ kwadri vojta wara xulxin. Mandarin jiswa 10 punti, ġebla 1. Jekk in-naħa tiegħek tispiċċa mill-ġebel, 5 mill-punti li ħadt jerġgħu jinżergħu. Il-logħba tintemm meta jittieħdu ż-żewġ Mandarins; min għandu aktar punti jirbaħ.",
+    "lib.arcade.oqWin": "Il-logħba spiċċat — għandek aktar punti.",
+    "lib.arcade.oqLose": "Il-logħba spiċċat — il-kompjuter għandu aktar punti.",
+    "lib.arcade.oqDraw": "Il-logħba spiċċat — parità.",
+    "lib.arcade.oqPick": "Agħżel direzzjoni: ◀ jew ▶.",
+    "lib.arcade.roll": "Idderba d-dado",
+    "lib.arcade.note.ludo": "Int tilgħab l-aħmar; il-kuluri l-oħra jilgħabhom il-kompjuter. Idderba d-dado: għandek bżonn 6 biex toħroġ pedina mill-bejt, u 6 jagħtik tefa oħra (tliet 6 wara xulxin jitilfuk id-dawra). Il-pedini jduru madwar il-bord fid-direzzjoni tal-arloġġ u mbagħad jduru fit-triq tad-dar tal-kulur tagħhom; għandek bżonn in-numru eżatt biex tilħaq it-tmiem fiċ-ċentru. Jekk tinżel eżatt fuq pedina tal-avversarju, din terġa' lura fil-bejt (barra mill-kwadri tal-kewkba u l-kwadri tal-bidu). L-ewwel wieħed li jdaħħal il-4 pedini d-dar jirbaħ.",
+    "lib.arcade.pickToken": "Agħżel pedina biex tċaqlaq.",
+    "lib.arcade.turnOf": "Id-dawra ta' {c}…",
+    "lib.arcade.ldWin": "Ir-4 pedini tiegħek kollha waslu d-dar!",
+    "lib.arcade.ldLose": "{c} wasal d-dar l-ewwel.",
+    "lib.arcade.threeSix": "Tliet 6 wara xulxin — titlef id-dawra.",
+    "lib.arcade.noMove": "L-ebda pedina ma tista' titċaqlaq.",
+    "lib.arcade.note.pyramid": "Neħħi l-28 karta kollha tal-piramida. Ikklikkja żewġ karti ħielsa (mhux mgħottija minn karti oħra) li s-somma tagħhom hija 13 (A=1, J=11, Q=12) biex titneħħa t-tnejn; Re jitneħħa waħdu b'click wieħed. Tista' tuża wkoll il-karta ta' fuq tal-munzell tal-iskart. Ikklikkja l-munzell biex tiġbed karta; in-numru ta' drabi li tista' tirriċikla l-munzell tal-iskart huwa limitat.",
+    "lib.arcade.note.tripeaks": "Neħħi l-28 karta kollha tat-tliet qċaċet. Ikklikkja karta ħielsa li hija eżattament grad għola jew inqas mill-karta murija fuq il-munzell tal-iskart (kwalunkwe sing) biex tniżżilha. Meta ma jkollokx mossi, ikklikkja l-munzell biex tiġbed karta. Fil-livelli aktar faċli, il-K jgħaqqad mal-A.",
+    "lib.arcade.note.golf": "Neħħi l-kolonni kollha. Il-karta t'isfel biss ta' kull kolonna tista' tiġi kklikkjata: trid tkun eżattament grad għola jew inqas mill-karta murija. Meta ma jkollokx mossi, ikklikkja l-munzell biex tiġbed karta. Fil-livelli aktar faċli, il-K jgħaqqad mal-A.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Erba' tal-istess",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Tlieta tal-istess",
+    "lib.arcade.ph.twopair": "Żewġ pari",
+    "lib.arcade.ph.jacks": "Jacks jew aħjar",
+    "lib.arcade.ph.none": "Xejn",
+    "lib.arcade.res.win": "Rbieħ",
+    "lib.arcade.res.lose": "Telf",
+    "lib.arcade.res.push": "Parità",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Aħmar",
+    "lib.arcade.cGreen": "Aħdar",
+    "lib.arcade.cYellow": "Isfar",
+    "lib.arcade.cBlue": "Blu"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Kissier tal-Briks",
       "desc": "Mexxi r-racket u aqbeż il-ballun biex tkisser kull brikka; 10 stadji b'disinji differenti, bil-maws, bil-mess jew bit-tasti."
+    },
+    "pyramid": {
+      "name": "Solitarju tal-Piramida",
+      "desc": "Neħħi l-piramida ta' 28 karta billi tipparja karti li s-somma tagħhom hija 13; 10 livelli b'inqas u inqas taħlitiet."
+    },
+    "tripeaks": {
+      "name": "Solitarju TriPeaks",
+      "desc": "Neħħi tliet qċaċet billi tgħaqqad karti li jvarjaw b'grad wieħed; 10 livelli minn faċli għal diffiċli."
+    },
+    "golf": {
+      "name": "Solitarju Golf",
+      "desc": "Neħħi l-kolonni billi tgħaqqad karti li jvarjaw b'grad wieħed mill-karta murija; 10 livelli b'aktar kolonni hekk kif tavvanza."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Illgħab l-blackjack kontra l-bank b'ċipep virtwali: resaq eqreb lejn 21 mingħajr ma taqbeż; irduppja u aqsam; 10 livelli b'miri ta' ċipep dejjem akbar."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker ta' ħames karti b'ċipep virtwali (Jacks jew aħjar); 10 livelli b'tabelli tal-ħlas dejjem iktar stretti."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Illgħab d-dama 8x8 kontra l-kompjuter: qbid obbligatorju, qbiżiet multipli u slaten; 10 livelli minn faċli għal diffiċli."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Logħba ta' tellieqa b'erba' kuluri: idderba d-dado u daħħal il-4 pedini tiegħek d-dar l-ewwel; illeġġi kontra 1 sa 3 plejers tal-kompjuter f'10 livelli."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Logħba tradizzjonali Vjetnamiża taż-żrigħ tal-ġebel: ẓra' l-ġebel u ħu l-Mandarins kontra l-kompjuter; 10 livelli minn faċli għal diffiċli."
     }
   },
   "s": {

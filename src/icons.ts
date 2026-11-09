@@ -145,6 +145,14 @@ const PATHS: Record<string, string> = {
   'connect-four': '<rect x="3" y="5" width="18" height="15" rx="2"/><circle cx="7.5" cy="9.5" r="1.6"/><circle cx="12" cy="9.5" r="1.6"/><circle cx="16.5" cy="9.5" r="1.6"/><circle cx="7.5" cy="15" r="1.6" fill="currentColor"/><circle cx="12" cy="15" r="1.6" fill="currentColor"/><circle cx="16.5" cy="15" r="1.6"/>',
   'match-3': '<circle cx="6" cy="7" r="2.6"/><circle cx="12" cy="7" r="2.6"/><circle cx="18" cy="7" r="2.6"/><path d="M6 14.5l2.6 4.5H3.4zM12 14l3 3-3 3-3-3z"/><rect x="15.5" y="14.5" width="5" height="5" rx="1"/>',
   'brick-breaker': '<rect x="3" y="4" width="5.5" height="3" rx=".6"/><rect x="9.25" y="4" width="5.5" height="3" rx=".6"/><rect x="15.5" y="4" width="5.5" height="3" rx=".6"/><rect x="6" y="8.5" width="5.5" height="3" rx=".6" opacity=".5"/><circle cx="14" cy="14.5" r="1.6"/><path d="M8 19.5h8"/>',
+  'pyramid': '<path d="M12 3l-8 15h16z" opacity=".35"/><rect x="9" y="9" width="6" height="8" rx="1"/><path d="M3 21h18"/>',
+  'tripeaks': '<path d="M2 18l4-9 4 9M8 18l4-12 4 12M14 18l4-9 4 9"/><path d="M2 21h20"/>',
+  'golf': '<path d="M8 21V4l9 4-9 4"/><circle cx="14" cy="19" r="1.8"/>',
+  'blackjack': '<rect x="4" y="3" width="10" height="14" rx="1.6"/><rect x="10" y="7" width="10" height="14" rx="1.6" fill="currentColor" fill-opacity=".12"/><path d="M15 12v4M13 14h4"/>',
+  'video-poker': '<rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M8 11l2-2 2 2-2 2zM14 9.5h3M14 12.5h3"/>',
+  'checkers': '<circle cx="8" cy="8" r="4"/><circle cx="16" cy="16" r="4" fill="currentColor" fill-opacity=".25"/><path d="M11 11l2 2"/>',
+  'ludo': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18" opacity=".4"/><circle cx="6" cy="6" r="1.6" fill="currentColor"/><rect x="10" y="10" width="4" height="4" rx=".8"/>',
+  'o-an-quan': '<rect x="3" y="7" width="18" height="10" rx="2"/><path d="M8 7v10M12 7v10M16 7v10M3 12h18" opacity=".45"/><circle cx="6" cy="12" r="1.2" fill="currentColor"/><circle cx="18" cy="12" r="1.2" fill="currentColor"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

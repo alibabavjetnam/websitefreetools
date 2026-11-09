@@ -340,7 +340,70 @@
     "lib.arcade.target": "Objektif: {n}",
     "lib.arcade.up": "Anwo",
     "lib.arcade.youVsAi": "Ou {a} – Òdinatè {b}",
-    "lib.arcade.noHintFc": "Pa gen okenn kou itil ki rete. Anile kèk kou oswa rekòmanse."
+    "lib.arcade.noHintFc": "Pa gen okenn kou itil ki rete. Anile kèk kou oswa rekòmanse.",
+    "lib.arcade.recycles": "Rebat ki rete: {n}",
+    "lib.arcade.stockLeft": "Pakèt: {n}",
+    "lib.arcade.wrapOn": "Wa a konekte ak Las",
+    "lib.arcade.wrapOff": "Wa a pa konekte ak Las",
+    "lib.arcade.hintDraw": "Pa gen pè ankò. Klike sou pakèt la pou rale yon kat.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Bay",
+    "lib.arcade.hit": "Pran",
+    "lib.arcade.stand": "Rete",
+    "lib.arcade.double": "Double",
+    "lib.arcade.split": "Divize",
+    "lib.arcade.nextHand": "Pwochen men",
+    "lib.arcade.note.blackjack": "Lajan pou jwe sèlman — pa gen lajan reyèl. Ou kòmanse ak 500 jeton; rive nan kantite jeton ou vize a nan kantite men yo pèmèt pou pase nivo a. Pwoche pi pre 21 pase kroupye a san depase. Kroupye a rale jiskaske li rive 17. Yon blackjack (yon Las ak yon kat ki vo dis) peye plis. Double: double parye a epi pran egzakteman yon kat anplis. Divize: posib lè de premye kat ou yo gen menm valè.",
+    "lib.arcade.dealer": "Kroupye",
+    "lib.arcade.you": "Ou menm",
+    "lib.arcade.bet": "Parye",
+    "lib.arcade.chips": "Jeton: {n}",
+    "lib.arcade.handsLeft": "{n} men ki rete",
+    "lib.arcade.won": "Ou genyen {n} jeton.",
+    "lib.arcade.lost": "Ou pèdi {n} jeton.",
+    "lib.arcade.even": "Egalite.",
+    "lib.arcade.note.videopoker": "Lajan pou jwe sèlman — pa gen lajan reyèl. Chwazi yon parye 1–5 jeton, peze Bay pou resevwa senk kat, klike sou kat ou vle kenbe yo, answit peze Rale pou ranplase lòt yo. Yon pè valè oswa pi bon peye. Ou kòmanse ak 100 jeton; rive nan kantite jeton ou vize a nan kantite men yo pèmèt pou pase nivo a.",
+    "lib.arcade.hold": "KENBE",
+    "lib.arcade.draw": "Rale",
+    "lib.arcade.note.checkers": "Ou jwe Wouj (anba) epi ou kòmanse. Yon pyès avanse yon kare an dyagonal sou yon kare vid. Si ou ka sote sou yon pyès advèsè, ou dwe fè l, epi ou ka kontinye sote pou pran plizyè pyès. Yon pyès ki rive nan dènye ranje a vin yon wa epi li ka deplase ak pran tou an rekile. Ou pèdi lè ou pa gen pyès ankò oswa pa gen mouvman legal.",
+    "lib.arcade.ckDraw": "Jwèt la fini egalite.",
+    "lib.arcade.ckWin": "Nwa pa gen mouvman legal — ou genyen.",
+    "lib.arcade.ckLose": "Ou pa gen mouvman legal — ou pèdi.",
+    "lib.arcade.ckMust": "Ou dwe pran lè ou kapab — chwazi youn nan pyès k ap klere yo.",
+    "lib.arcade.note.oanquan": "Yon jwèt tradisyonèl Vyetnamyen. Ranje anba a se pou ou, ranje anwo a se pou òdinatè a, epi de bout yo se kare Mandaren yo. Klike sou youn nan kare ou yo, answit chwazi yon direksyon: tout wòch ladan l yo ranmase epi simen youn pa kare. Apre simen an, si kare ki vini apre a gen wòch, ranmase yo epi kontinye simen; si kare ki vini apre a vid epi sa ki apre li a gen wòch oswa yon Mandaren, ou pran li (epi ou kontinye pran si yon lòt kare vid swiv pa yon kare plen). Rete sou yon kare Mandaren oswa apre de kare vid youn dèyè lòt. Yon Mandaren vo 10 pwen, yon wòch vo 1. Si bò ou a pa gen wòch ankò, 5 nan pwen ou te pran yo simen tounen. Jwèt la fini lè tou de Mandaren yo pran; pi gwo nòt la genyen.",
+    "lib.arcade.oqWin": "Jwèt fini — ou gen plis pwen.",
+    "lib.arcade.oqLose": "Jwèt fini — òdinatè a gen plis pwen.",
+    "lib.arcade.oqDraw": "Jwèt fini — egalite.",
+    "lib.arcade.oqPick": "Chwazi yon direksyon: ◀ oswa ▶.",
+    "lib.arcade.roll": "Voye dé a",
+    "lib.arcade.note.ludo": "Ou jwe Wouj; lòt koulè yo jwe pa òdinatè a. Voye dé a: ou bezwen yon 6 pou fè yon pyon soti nan kay la, epi yon 6 ba ou yon lòt jete (twa 6 youn dèyè lòt fè ou pèdi tou ou). Pyon yo vire nan sans zegwi mont toutotou tablo a, answit yo vire nan kolòn kay koulè yo; ou bezwen nonb egzak la pou rive nan fen an nan mitan an. Si ou tonbe egzakteman sou yon pyon advèsè, li tounen nan kay li (eksepte sou kare zetwal ak kare depa). Premye moun ki mete tout 4 pyon li yo lakay li genyen.",
+    "lib.arcade.pickToken": "Chwazi yon pyon pou deplase.",
+    "lib.arcade.turnOf": "Tou {c}…",
+    "lib.arcade.ldWin": "Tout 4 pyon ou yo lakay!",
+    "lib.arcade.ldLose": "{c} rive lakay anvan.",
+    "lib.arcade.threeSix": "Twa 6 youn dèyè lòt — ou pèdi tou ou.",
+    "lib.arcade.noMove": "Pa gen pyon ki ka deplase.",
+    "lib.arcade.note.pyramid": "Retire tout 28 kat piramid la. Klike sou de kat lib (ki pa kouvri pa okenn kat) ki fè 13 ansanm (A=1, V=11, D=12) pou retire toude; yon Wa retire poukont li ak yon sèl klik. Kat ki anlè pil kat jete a ka itilize tou. Klike sou pakèt la pou rale yon kat; kantite fwa ou ka resikle pil kat jete a limite.",
+    "lib.arcade.note.tripeaks": "Retire tout 28 kat twa pwent yo. Klike sou yon kat lib ki egzakteman yon ran pi wo oswa pi ba pase kat ki parèt sou pil kat jete a (nenpòt kouè) pou deplase li anba. Lè ou pa gen mouvman ankò, klike sou pakèt la pou rale. Nan nivo ki pi fasil yo, Wa a konekte ak Las.",
+    "lib.arcade.note.golf": "Retire tout kolòn yo. Se sèlman kat ki pi ba nan chak kolòn ou ka klike: li dwe egzakteman yon ran pi wo oswa pi ba pase kat ki parèt la. Lè ou pa gen mouvman ankò, klike sou pakèt la pou rale. Nan nivo ki pi fasil yo, Wa a konekte ak Las.",
+    "lib.arcade.ph.royal": "Flush wayal",
+    "lib.arcade.ph.sflush": "Flush swit",
+    "lib.arcade.ph.quads": "Kare",
+    "lib.arcade.ph.full": "Fil kay",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Swit",
+    "lib.arcade.ph.trips": "Brelan",
+    "lib.arcade.ph.twopair": "De pè",
+    "lib.arcade.ph.jacks": "Pè valè oswa pi bon",
+    "lib.arcade.ph.none": "Anyen",
+    "lib.arcade.res.win": "Genyen",
+    "lib.arcade.res.lose": "Pèdi",
+    "lib.arcade.res.push": "Egalite",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Wouj",
+    "lib.arcade.cGreen": "Vèt",
+    "lib.arcade.cYellow": "Jòn",
+    "lib.arcade.cBlue": "Ble"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Kraze brik",
       "desc": "Dirije palèt la epi fè boul la rebondi pou kraze tout brik yo; 10 etap ak aranjman diferan, ak sourit, touche oswa touch klavye."
+    },
+    "pyramid": {
+      "name": "Solitè Piramid",
+      "desc": "Retire piramid 28 kat la lè w ap marye kat ki fè 13 ansanm; 10 nivo ak mwens ak mwens rebat."
+    },
+    "tripeaks": {
+      "name": "Solitè TriPeaks",
+      "desc": "Retire twa pwent yo lè w konekte kat ki yon ran apa; 10 nivo ki soti nan fasil rive nan difisil."
+    },
+    "golf": {
+      "name": "Solitè Golf",
+      "desc": "Retire kolòn yo lè w konekte kat ki yon ran apa de kat ki parèt la; 10 nivo ak plis ak plis kolòn."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Jwe blackjack kont kroupye a ak jeton vityèl: rive pi pre 21 san depase; double epi divize; 10 nivo ak objektif jeton k ap monte."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker senk kat ak chanjman ak jeton vityèl (Jacks or Better); 10 nivo ak tablo peman ki pi di."
+    },
+    "checkers": {
+      "name": "Dam",
+      "desc": "Jwe dam 8x8 kont òdinatè a: pran obligatwa, plizyè sote ak wa; 10 nivo ki soti nan fasil rive nan difisil."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Jwèt kous kat koulè: voye dé a epi mennen 4 pyon ou yo lakay anvan; jwe kont 1 a 3 jwè òdinatè sou 10 nivo."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Yon jwèt tradisyonèl Vyetnamyen pou simen wòch: simen wòch epi pran Mandaren yo kont òdinatè a; 10 nivo ki soti nan fasil rive nan difisil."
     }
   },
   "s": {

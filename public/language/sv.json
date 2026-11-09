@@ -340,7 +340,70 @@
     "lib.arcade.target": "Mål: {n}",
     "lib.arcade.up": "Upp",
     "lib.arcade.youVsAi": "Du {a} – Datorn {b}",
-    "lib.arcade.noHintFc": "Inga användbara drag kvar. Ångra några drag eller börja om."
+    "lib.arcade.noHintFc": "Inga användbara drag kvar. Ångra några drag eller börja om.",
+    "lib.arcade.recycles": "Omgivningar kvar: {n}",
+    "lib.arcade.stockLeft": "Talong: {n}",
+    "lib.arcade.wrapOn": "Kung länkar till ess",
+    "lib.arcade.wrapOff": "Kung länkar inte till ess",
+    "lib.arcade.hintDraw": "Inga par kvar. Klicka på talongen för att dra.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Dela ut",
+    "lib.arcade.hit": "Ta kort",
+    "lib.arcade.stand": "Stanna",
+    "lib.arcade.double": "Dubbla",
+    "lib.arcade.split": "Dela",
+    "lib.arcade.nextHand": "Nästa hand",
+    "lib.arcade.note.blackjack": "Endast låtsaspengar — inga riktiga pengar. Du börjar med 500 marker; nå målet i antal marker inom tillåtet antal händer för att klara nivån. Kom närmare 21 än givaren utan att gå över. Givaren drar tills han når 17. En blackjack (ett ess plus ett kort värt tio) ger extra betalt. Dubbla: dubbla insatsen och ta exakt ett kort till. Dela: möjligt när dina två första kort har samma värde.",
+    "lib.arcade.dealer": "Givare",
+    "lib.arcade.you": "Du",
+    "lib.arcade.bet": "Insats",
+    "lib.arcade.chips": "Marker: {n}",
+    "lib.arcade.handsLeft": "{n} händer kvar",
+    "lib.arcade.won": "Du vann {n} marker.",
+    "lib.arcade.lost": "Du förlorade {n} marker.",
+    "lib.arcade.even": "Oavgjort.",
+    "lib.arcade.note.videopoker": "Endast låtsaspengar — inga riktiga pengar. Välj en insats på 1–5 marker, tryck på Dela ut för fem kort, klicka på korten du vill behålla och tryck sedan på Byt för att ersätta resten. Ett par knektar eller bättre ger vinst. Du börjar med 100 marker; nå målet i antal marker inom tillåtet antal händer för att klara nivån.",
+    "lib.arcade.hold": "BEHÅLL",
+    "lib.arcade.draw": "Byt",
+    "lib.arcade.note.checkers": "Du spelar röd (nederst) och börjar. En bricka går ett steg diagonalt framåt till en tom ruta. Om du kan hoppa över en motståndarbricka måste du göra det, och du får fortsätta hoppa för att ta flera brickor. En bricka som når sista raden blir dam och kan även gå och ta bakåt. Du förlorar när du inte har några brickor eller något lagligt drag.",
+    "lib.arcade.ckDraw": "Spelet slutade oavgjort.",
+    "lib.arcade.ckWin": "Svart har inga lagliga drag — du vinner.",
+    "lib.arcade.ckLose": "Du har inga lagliga drag — du förlorar.",
+    "lib.arcade.ckMust": "Du måste ta när du kan — välj en av de pulserande brickorna.",
+    "lib.arcade.note.oanquan": "Ett traditionellt vietnamesiskt spel. Nedre raden är din, övre raden är datorns, och de två ändarna är mandarinrutorna. Klicka på en av dina rutor och välj sedan riktning: alla stenar i den plockas upp och sås ut en per ruta. Om nästa ruta efter utsåningen har stenar plockar du upp dem och fortsätter så; om nästa ruta är tom och rutan efter den har stenar eller en mandarin tar du den (och fortsätter ta om ytterligare en tom ruta följs av en fylld). Stanna vid en mandarinruta eller efter två tomma rutor i rad. En mandarin är värd 10 poäng, en sten 1. Om din sida får slut på stenar sås 5 av dina tagna poäng tillbaka. Spelet slutar när båda mandarinerna är tagna; högst poäng vinner.",
+    "lib.arcade.oqWin": "Spelet slut — du har fler poäng.",
+    "lib.arcade.oqLose": "Spelet slut — datorn har fler poäng.",
+    "lib.arcade.oqDraw": "Spelet slut — oavgjort.",
+    "lib.arcade.oqPick": "Välj riktning: ◀ eller ▶.",
+    "lib.arcade.roll": "Kasta tärningen",
+    "lib.arcade.note.ludo": "Du spelar röd; de andra färgerna spelas av datorn. Kasta tärningen: du behöver en sexa för att få ut en pjäs ur gården, och en sexa ger ett extra kast (tre sexor i rad gör att du förlorar turen). Pjäserna går medsols runt brädet och svänger sedan in på hemkolumnen i sin färg; du behöver exakt rätt tal för att nå målet i mitten. Landar du exakt på en motståndares pjäs skickas den tillbaka till gården (utom på stjärnrutor och startrutor). Den första som får hem alla 4 pjäser vinner.",
+    "lib.arcade.pickToken": "Välj en pjäs att flytta.",
+    "lib.arcade.turnOf": "{c}s tur…",
+    "lib.arcade.ldWin": "Alla dina 4 pjäser är hemma!",
+    "lib.arcade.ldLose": "{c} kom hem först.",
+    "lib.arcade.threeSix": "Tre sexor i rad — du förlorar turen.",
+    "lib.arcade.noMove": "Ingen pjäs kan flyttas.",
+    "lib.arcade.note.pyramid": "Rensa alla 28 kort i pyramiden. Klicka på två fria kort (som inte täcks av något kort) som tillsammans blir 13 (ess=1, knekt=11, dam=12) för att ta bort båda; en kung tas bort ensam med ett klick. Översta kortet i kasthögen kan också användas. Klicka på talongen för att dra; hur många gånger du får återvinna kasthögen är begränsat.",
+    "lib.arcade.note.tripeaks": "Rensa alla 28 kort i de tre topparna. Klicka på ett fritt kort som är exakt ett steg högre eller lägre än kortet som visas på kasthögen (valfri färg) för att flytta det. När du inte har fler drag klickar du på talongen för att dra. På de lättare nivåerna länkar kung till ess.",
+    "lib.arcade.note.golf": "Rensa alla kolumner. Bara nedersta kortet i varje kolumn kan klickas: det måste vara exakt ett steg högre eller lägre än kortet som visas. När du inte har fler drag klickar du på talongen för att dra. På de lättare nivåerna länkar kung till ess.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Fyrtal",
+    "lib.arcade.ph.full": "Kåk",
+    "lib.arcade.ph.flush": "Färg",
+    "lib.arcade.ph.straight": "Stege",
+    "lib.arcade.ph.trips": "Triss",
+    "lib.arcade.ph.twopair": "Två par",
+    "lib.arcade.ph.jacks": "Knektar eller bättre",
+    "lib.arcade.ph.none": "Ingenting",
+    "lib.arcade.res.win": "Vinst",
+    "lib.arcade.res.lose": "Förlust",
+    "lib.arcade.res.push": "Oavgjort",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Röd",
+    "lib.arcade.cGreen": "Grön",
+    "lib.arcade.cYellow": "Gul",
+    "lib.arcade.cBlue": "Blå"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Tegelkross",
       "desc": "Styr racketen och studsa bollen för att krossa alla tegel; 10 banor med olika mönster, med mus, pek eller tangenter."
+    },
+    "pyramid": {
+      "name": "Pyramidpatiens",
+      "desc": "Rensa pyramiden med 28 kort genom att para ihop kort som blir 13; 10 nivåer med allt färre omgivningar."
+    },
+    "tripeaks": {
+      "name": "TriPeaks-patiens",
+      "desc": "Rensa tre toppar genom att länka kort som ligger ett steg ifrån varandra; 10 nivåer från lätt till svårt."
+    },
+    "golf": {
+      "name": "Golfpatiens",
+      "desc": "Rensa kolumnerna genom att länka kort som ligger ett steg från det synliga kortet; 10 nivåer med fler och fler kolumner."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Spela blackjack mot givaren med virtuella marker: kom närmast 21 utan att gå över; dubbla och dela; 10 nivåer med stigande målmarker."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Femkortspoker med byte och virtuella marker (knektar eller bättre); 10 nivåer med allt snålare vinsttabeller."
+    },
+    "checkers": {
+      "name": "Dam",
+      "desc": "Spela dam på 8x8 mot datorn: tvingande tagningar, flerhopp och damer; 10 nivåer från lätt till svårt."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Racerspel i fyra färger: kasta tärningen och få hem dina 4 pjäser först; spela mot 1 till 3 datorspelare över 10 nivåer."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Ett traditionellt vietnamesiskt såspel: så ut stenar och ta mandarinerna mot datorn; 10 nivåer från lätt till svårt."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Tikslas: {n}",
     "lib.arcade.up": "Aukštyn",
     "lib.arcade.youVsAi": "Jūs {a} – Kompiuteris {b}",
-    "lib.arcade.noHintFc": "Naudingų ėjimų neliko. Atšaukite kelis ėjimus arba pradėkite iš naujo."
+    "lib.arcade.noHintFc": "Naudingų ėjimų neliko. Atšaukite kelis ėjimus arba pradėkite iš naujo.",
+    "lib.arcade.recycles": "Liko permaišymų: {n}",
+    "lib.arcade.stockLeft": "Kaladė: {n}",
+    "lib.arcade.wrapOn": "Karalius jungiasi su tūzu",
+    "lib.arcade.wrapOff": "Karalius nesijungia su tūzu",
+    "lib.arcade.hintDraw": "Porų nebeliko. Spustelėkite kaladę, kad traukti kortą.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Dalyti",
+    "lib.arcade.hit": "Imti",
+    "lib.arcade.stand": "Sustoti",
+    "lib.arcade.double": "Padvigubinti",
+    "lib.arcade.split": "Skaidyti",
+    "lib.arcade.nextHand": "Kita ranka",
+    "lib.arcade.note.blackjack": "Tik žaidimo pinigai — ne tikri pinigai. Pradedate su 500 žetonų; pasiekite tikslinį žetonų skaičių per leistinį rankų skaičių ir įveiksite lygį. Priartėkite prie 21 labiau nei dalytojas, neviršydami. Dalytojas ima kortas, kol pasiekia 17. Blackjack (tūzas ir dešimties vertės korta) apmokamas daugiau. Padvigubinti: padvigubinkite statymą ir imkite lygiai vieną kortą. Skaidyti: galima, kai pirmos dvi kortos vienodos vertės.",
+    "lib.arcade.dealer": "Dalytojas",
+    "lib.arcade.you": "Jūs",
+    "lib.arcade.bet": "Statymas",
+    "lib.arcade.chips": "Žetonai: {n}",
+    "lib.arcade.handsLeft": "Liko rankų: {n}",
+    "lib.arcade.won": "Laimėjote {n} žetonų.",
+    "lib.arcade.lost": "Pralaimėjote {n} žetonų.",
+    "lib.arcade.even": "Lygiosios.",
+    "lib.arcade.note.videopoker": "Tik žaidimo pinigai — ne tikri pinigai. Pasirinkite 1–5 žetonų statymą, spauskite Dalyti ir gausite penkias kortas, spustelėkite kortas, kurias norite pasilikti, tada spauskite Keisti, kad pakeistumėte likusias. Mokama už valetų porą ar geresnę kombinaciją. Pradedate su 100 žetonų; pasiekite tikslinį žetonų skaičių per leistinį rankų skaičių ir įveiksite lygį.",
+    "lib.arcade.hold": "LAIKYTI",
+    "lib.arcade.draw": "Keisti",
+    "lib.arcade.note.checkers": "Žaidžiate raudonaisiais (apačioje) ir einate pirmi. Šaškė ženklą pasistumia įstrižai vienu langeliu pirmyn į tuščią langelį. Jei galite peršokti priešininko šaškę, privalote tai daryti, ir galite šokti toliau, kad paimtumėte kelias šaškes. Šaškė, pasiekusi tolimiausią eilę, tampa dama ir gali judėti bei imti ir atgal. Pralaimite, kai nebeturite šaškių ar leistino ėjimo.",
+    "lib.arcade.ckDraw": "Žaidimas baigėsi lygiosiomis.",
+    "lib.arcade.ckWin": "Juodieji neturi leistino ėjimo — laimite.",
+    "lib.arcade.ckLose": "Neturite leistino ėjimo — pralaimite.",
+    "lib.arcade.ckMust": "Privalote imti, kai galite — pasirinkite vieną iš pulsuojančių šaškių.",
+    "lib.arcade.note.oanquan": "Tradicinis vietnamiečių žaidimas. Apatinė eilė jūsų, viršutinė – kompiuterio, o abu galai yra mandarinų langeliai. Spustelėkite vieną savo langelį, tada pasirinkite kryptį: visi jame esantys akmenukai paimami ir dėliojami po vieną į langelį. Pasėję, jei kitame langelyje yra akmenukų, paimkite juos ir sėkite toliau; jei kitas langelis tuščias, o už jo yra akmenukų ar mandarinas, jį paimate (ir imate toliau, jei po tuščio langelio vėl eina pilnas). Sustokite ties mandarino langeliu arba po dviejų tuščių langelių iš eilės. Mandarinas vertas 10 taškų, akmenukas – 1. Jei jūsų pusėje akmenukų neliko, 5 jūsų laimėti taškai vėl išsėjami. Žaidimas baigiasi, kai paimami abu mandarinai; laimi daugiau taškų turintis.",
+    "lib.arcade.oqWin": "Žaidimas baigtas — turite daugiau taškų.",
+    "lib.arcade.oqLose": "Žaidimas baigtas — kompiuteris turi daugiau taškų.",
+    "lib.arcade.oqDraw": "Žaidimas baigtas — lygiosios.",
+    "lib.arcade.oqPick": "Pasirinkite kryptį: ◀ arba ▶.",
+    "lib.arcade.roll": "Mesti kauliuką",
+    "lib.arcade.note.ludo": "Žaidžiate raudonaisiais; kitas spalvas valdo kompiuteris. Mesk kauliuką: norint išvesti figūrėlę iš namų reikia šešetuko, o šešetukas leidžia mesti dar kartą (trys šešetukai iš eilės – ėjimas praleidžiamas). Figūrėlės juda pagal laikrodžio rodyklę aplink lentą, tada sukasi į savo spalvos namų stulpelį; norint pasiekti finišą centre reikia tikslaus skaičiaus. Nusileidus tiksliai ant priešininko figūrėlės, ji grąžinama į namus (išskyrus žvaigždžių ir starto langelius). Laimi tas, kuris pirmas parves visas 4 figūrėles.",
+    "lib.arcade.pickToken": "Pasirinkite figūrėlę, kurią norite judinti.",
+    "lib.arcade.turnOf": "{c} ėjimas…",
+    "lib.arcade.ldWin": "Visos jūsų 4 figūrėlės namie!",
+    "lib.arcade.ldLose": "{c} namo grįžo pirmas.",
+    "lib.arcade.threeSix": "Trys šešetukai iš eilės — praleidžiate ėjimą.",
+    "lib.arcade.noMove": "Nė viena figūrėlė negali judėti.",
+    "lib.arcade.note.pyramid": "Pašalinkite visas 28 piramidės kortas. Spustelėkite dvi laisvas kortas (kurių niekas neuždengia), kurių suma 13 (T=1, V=11, D=12), kad pašalintumėte abi; karalius pašalinamas vienas vienu spustelėjimu. Galima naudoti ir viršutinę atmestų kortų krūvos kortą. Spustelėkite kaladę, kad trauktumėte kortą; atmestų kortų krūvą perdirbti galima ribotą skaičių kartų.",
+    "lib.arcade.note.tripeaks": "Pašalinkite visas 28 trijų viršūnių kortas. Spustelėkite laisvą kortą, kuri lygiai vienu laipsniu aukštesnė ar žemesnė už atmestų kortų krūvoje matomą kortą (bet kokia mastis), kad ją perkeltumėte. Pritrūkę ėjimų, spustelėkite kaladę. Lengvesniuose lygiuose karalius jungiasi su tūzu.",
+    "lib.arcade.note.golf": "Pašalinkite visus stulpelius. Spustelėti galima tik apatinę kiekvieno stulpelio kortą: ji turi būti lygiai vienu laipsniu aukštesnė ar žemesnė už matomą kortą. Pritrūkę ėjimų, spustelėkite kaladę. Lengvesniuose lygiuose karalius jungiasi su tūzu.",
+    "lib.arcade.ph.royal": "Karališkoji seka",
+    "lib.arcade.ph.sflush": "Spalvų seka",
+    "lib.arcade.ph.quads": "Keturios vienodos",
+    "lib.arcade.ph.full": "Pilni namai",
+    "lib.arcade.ph.flush": "Spalva",
+    "lib.arcade.ph.straight": "Seka",
+    "lib.arcade.ph.trips": "Trys vienodos",
+    "lib.arcade.ph.twopair": "Dvi poros",
+    "lib.arcade.ph.jacks": "Valetų pora ar geriau",
+    "lib.arcade.ph.none": "Nieko",
+    "lib.arcade.res.win": "Laimėta",
+    "lib.arcade.res.lose": "Pralaimėta",
+    "lib.arcade.res.push": "Lygiosios",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Raudona",
+    "lib.arcade.cGreen": "Žalia",
+    "lib.arcade.cYellow": "Geltona",
+    "lib.arcade.cBlue": "Mėlyna"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Plytų daužymas",
       "desc": "Valdykite raketę ir atmuškite kamuolį, kad sudaužytumėte visas plytas; 10 lygių su skirtingu išdėstymu, pele, lietimu ar klavišais."
+    },
+    "pyramid": {
+      "name": "Piramidės pasjansas",
+      "desc": "Pašalinkite 28 kortų piramidę poruodami kortas, kurių suma 13; 10 lygių su vis mažiau permaišymų."
+    },
+    "tripeaks": {
+      "name": "„TriPeaks“ pasjansas",
+      "desc": "Pašalinkite tris viršūnes jungdami vienu laipsniu besiskiriančias kortas; 10 lygių nuo lengvo iki sunkaus."
+    },
+    "golf": {
+      "name": "Golfo pasjansas",
+      "desc": "Pašalinkite stulpelius jungdami vienu laipsniu nuo matomos kortos besiskiriančias kortas; 10 lygių su vis daugiau stulpelių."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Žaiskite blackjack prieš dalytoją su virtualiais žetonais: priartėkite prie 21 neviršydami; padvigubinkite ir skaidykite; 10 lygių su didėjančiais žetonų tikslais."
+    },
+    "video-poker": {
+      "name": "Video pokeris",
+      "desc": "Penkių kortų pokeris su keitimu ir virtualiais žetonais (valetų pora ar geriau); 10 lygių su vis griežtesnėmis išmokų lentelėmis."
+    },
+    "checkers": {
+      "name": "Šaškės",
+      "desc": "Žaiskite 8x8 šaškėmis prieš kompiuterį: privalomas ėmimas, daugkartiniai šuoliai ir damos; 10 lygių nuo lengvo iki sunkaus."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Keturių spalvų lenktynių žaidimas: mesk kauliuką ir pirmas parvesk savo 4 figūrėles namo; žaiskite prieš 1–3 kompiuterio žaidėjus per 10 lygių."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Tradicinis vietnamiečių akmenukų sėjimo žaidimas: sėkite akmenukus ir imkite mandarinus prieš kompiuterį; 10 lygių nuo lengvo iki sunkaus."
     }
   },
   "s": {

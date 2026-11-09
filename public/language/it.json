@@ -340,7 +340,70 @@
     "lib.arcade.target": "Obiettivo: {n}",
     "lib.arcade.up": "Su",
     "lib.arcade.youVsAi": "Tu {a} – Computer {b}",
-    "lib.arcade.noHintFc": "Non ci sono più mosse utili. Annulla qualche mossa o ricomincia."
+    "lib.arcade.noHintFc": "Non ci sono più mosse utili. Annulla qualche mossa o ricomincia.",
+    "lib.arcade.recycles": "Rimescolamenti rimasti: {n}",
+    "lib.arcade.stockLeft": "Mazzo: {n}",
+    "lib.arcade.wrapOn": "Il Re si collega all'Asso",
+    "lib.arcade.wrapOff": "Il Re non si collega all'Asso",
+    "lib.arcade.hintDraw": "Nessuna coppia disponibile. Clicca sul mazzo per pescare.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Distribuisci",
+    "lib.arcade.hit": "Carta",
+    "lib.arcade.stand": "Stai",
+    "lib.arcade.double": "Raddoppia",
+    "lib.arcade.split": "Dividi",
+    "lib.arcade.nextHand": "Mano successiva",
+    "lib.arcade.note.blackjack": "Solo denaro virtuale, nessun denaro reale. Inizi con 500 fiche; raggiungi il numero di fiche obiettivo entro le mani consentite per superare il livello. Avvicinati a 21 più del banco senza sforare. Il banco pesca fino a raggiungere 17. Un blackjack (un asso più una carta da dieci) paga di più. Raddoppia: raddoppi la puntata e ricevi esattamente una carta in più. Dividi: possibile quando le prime due carte hanno lo stesso valore.",
+    "lib.arcade.dealer": "Banco",
+    "lib.arcade.you": "Tu",
+    "lib.arcade.bet": "Puntata",
+    "lib.arcade.chips": "Fiche: {n}",
+    "lib.arcade.handsLeft": "Mani rimaste: {n}",
+    "lib.arcade.won": "Hai vinto {n} fiche.",
+    "lib.arcade.lost": "Hai perso {n} fiche.",
+    "lib.arcade.even": "Pareggio.",
+    "lib.arcade.note.videopoker": "Solo denaro virtuale, nessun denaro reale. Scegli una puntata da 1 a 5 fiche, premi Distribuisci per ricevere cinque carte, clicca sulle carte che vuoi tenere, poi premi Cambia per sostituire le altre. Si vince da una coppia di jack in su. Inizi con 100 fiche; raggiungi il numero di fiche obiettivo entro le mani consentite per superare il livello.",
+    "lib.arcade.hold": "TIENI",
+    "lib.arcade.draw": "Cambia",
+    "lib.arcade.note.checkers": "Giochi con il Rosso (in basso) e muovi per primo. Una pedina si muove di una casella in diagonale in avanti su una casella vuota. Se puoi saltare una pedina avversaria, devi farlo, e puoi continuare a saltare per catturarne più di una. Una pedina che raggiunge l'ultima fila diventa dama e può muovere e catturare anche all'indietro. Perdi quando non hai più pedine o mosse legali.",
+    "lib.arcade.ckDraw": "La partita è patta.",
+    "lib.arcade.ckWin": "Il Nero non ha mosse legali: hai vinto.",
+    "lib.arcade.ckLose": "Non hai mosse legali: hai perso.",
+    "lib.arcade.ckMust": "Devi catturare quando puoi: scegli una delle pedine che pulsano.",
+    "lib.arcade.note.oanquan": "Un gioco tradizionale vietnamita. La fila in basso è la tua, quella in alto è del computer, e le due estremità sono le caselle dei Mandarini. Clicca su una tua casella, poi scegli una direzione: tutte le pietre al suo interno vengono raccolte e seminate una per casella. Dopo la semina, se la casella successiva contiene pietre, le raccogli e continui a seminare; se la successiva è vuota e quella dopo contiene pietre o un Mandarino, la catturi (e continui a catturare se a una casella vuota ne segue una piena). Ti fermi su una casella Mandarino o dopo due caselle vuote consecutive. Un Mandarino vale 10 punti, una pietra 1. Se il tuo lato resta senza pietre, 5 dei tuoi punti catturati vengono riseminati. La partita finisce quando entrambi i Mandarini sono stati catturati; vince chi ha più punti.",
+    "lib.arcade.oqWin": "Partita finita: hai più punti.",
+    "lib.arcade.oqLose": "Partita finita: il computer ha più punti.",
+    "lib.arcade.oqDraw": "Partita finita: pareggio.",
+    "lib.arcade.oqPick": "Scegli una direzione: ◀ o ▶.",
+    "lib.arcade.roll": "Tira il dado",
+    "lib.arcade.note.ludo": "Giochi con il Rosso; gli altri colori sono del computer. Tira il dado: serve un 6 per far uscire una pedina dalla base, e un 6 ti dà un altro tiro (tre 6 di fila fanno perdere il turno). Le pedine percorrono il tabellone in senso orario, poi entrano nel corridoio finale del proprio colore; serve il numero esatto per arrivare al traguardo al centro. Fermarsi esattamente su una pedina avversaria la rimanda alla base (tranne sulle caselle stella e di partenza). Vince chi porta per primo tutte e 4 le pedine al traguardo.",
+    "lib.arcade.pickToken": "Scegli una pedina da muovere.",
+    "lib.arcade.turnOf": "Tocca a {c}…",
+    "lib.arcade.ldWin": "Tutte e 4 le tue pedine sono arrivate!",
+    "lib.arcade.ldLose": "{c} è arrivato per primo.",
+    "lib.arcade.threeSix": "Tre 6 di fila: perdi il turno.",
+    "lib.arcade.noMove": "Nessuna pedina può muovere.",
+    "lib.arcade.note.pyramid": "Elimina tutte le 28 carte della piramide. Clicca su due carte libere (non coperte da altre) la cui somma fa 13 (A=1, J=11, Q=12) per rimuoverle entrambe; un Re si rimuove da solo con un clic. Si può usare anche la carta in cima agli scarti. Clicca sul mazzo per pescare; il numero di volte in cui puoi rigirare gli scarti è limitato.",
+    "lib.arcade.note.tripeaks": "Elimina tutte le 28 carte dei tre picchi. Clicca su una carta libera che sia esattamente di un valore più alta o più bassa della carta scoperta sugli scarti (di qualsiasi seme) per spostarla. Quando non hai più mosse, clicca sul mazzo per pescare. Nei livelli più facili il Re si collega all'Asso.",
+    "lib.arcade.note.golf": "Elimina tutte le colonne. Si può cliccare solo la carta più in basso di ogni colonna: deve essere esattamente di un valore più alta o più bassa della carta scoperta. Quando non hai più mosse, clicca sul mazzo per pescare. Nei livelli più facili il Re si collega all'Asso.",
+    "lib.arcade.ph.royal": "Scala reale",
+    "lib.arcade.ph.sflush": "Scala colore",
+    "lib.arcade.ph.quads": "Poker",
+    "lib.arcade.ph.full": "Full",
+    "lib.arcade.ph.flush": "Colore",
+    "lib.arcade.ph.straight": "Scala",
+    "lib.arcade.ph.trips": "Tris",
+    "lib.arcade.ph.twopair": "Doppia coppia",
+    "lib.arcade.ph.jacks": "Jack o meglio",
+    "lib.arcade.ph.none": "Niente",
+    "lib.arcade.res.win": "Vinto",
+    "lib.arcade.res.lose": "Perso",
+    "lib.arcade.res.push": "Pari",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Rosso",
+    "lib.arcade.cGreen": "Verde",
+    "lib.arcade.cYellow": "Giallo",
+    "lib.arcade.cBlue": "Blu"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Spaccamattoni",
       "desc": "Muovi la racchetta e fai rimbalzare la pallina per distruggere tutti i mattoni; 10 livelli con schemi diversi, con mouse, touch o tastiera."
+    },
+    "pyramid": {
+      "name": "Solitario Piramide",
+      "desc": "Elimina la piramide di 28 carte abbinando carte la cui somma fa 13; 10 livelli con sempre meno rimescolamenti."
+    },
+    "tripeaks": {
+      "name": "Solitario TriPeaks",
+      "desc": "Elimina tre picchi collegando carte che differiscono di un valore; 10 livelli da facile a difficile."
+    },
+    "golf": {
+      "name": "Solitario Golf",
+      "desc": "Elimina le colonne collegando carte che differiscono di un valore dalla carta scoperta; 10 livelli con sempre più colonne."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Gioca a blackjack contro il banco con fiche virtuali: avvicinati a 21 senza sforare; raddoppia e dividi; 10 livelli con obiettivi di fiche crescenti."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker con cambio a cinque carte con fiche virtuali (Jack o meglio); 10 livelli con tabelle dei premi più avare."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Gioca a dama 8x8 contro il computer: presa obbligatoria, salti multipli e dame; 10 livelli da facile a difficile."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Gioco di corsa a quattro colori: tira il dado e porta per primo a casa le tue 4 pedine; gioca contro da 1 a 3 avversari controllati dal computer in 10 livelli."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Un gioco di semina tradizionale vietnamita: semina le pietre e cattura i Mandarini contro il computer; 10 livelli da facile a difficile."
     }
   },
   "s": {

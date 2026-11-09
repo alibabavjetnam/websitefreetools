@@ -340,7 +340,70 @@
     "lib.arcade.target": "目標：{n}",
     "lib.arcade.up": "上移",
     "lib.arcade.youVsAi": "你 {a} – 電腦 {b}",
-    "lib.arcade.noHintFc": "沒有可用的好步了。試著復原幾步或重新開始。"
+    "lib.arcade.noHintFc": "沒有可用的好步了。試著復原幾步或重新開始。",
+    "lib.arcade.recycles": "剩餘重新洗牌次數：{n}",
+    "lib.arcade.stockLeft": "牌堆：{n}",
+    "lib.arcade.wrapOn": "K 可接 A",
+    "lib.arcade.wrapOff": "K 不可接 A",
+    "lib.arcade.hintDraw": "已無可配對的牌，請點擊牌堆抽牌。",
+    "lib.arcade.betMax": "最大",
+    "lib.arcade.deal": "發牌",
+    "lib.arcade.hit": "要牌",
+    "lib.arcade.stand": "停牌",
+    "lib.arcade.double": "加倍",
+    "lib.arcade.split": "分牌",
+    "lib.arcade.nextHand": "下一手",
+    "lib.arcade.note.blackjack": "僅使用虛擬籌碼，不涉及真實金錢。你從 500 個籌碼開始；在限定手數內達到目標籌碼數即可過關。點數要比莊家更接近 21 點，但不能爆牌。莊家須抽牌到 17 點為止。Blackjack（一張 A 加一張十點牌）賠率較高。加倍：賭注加倍，並且只再拿一張牌。分牌：前兩張牌點數相同時可使用。",
+    "lib.arcade.dealer": "莊家",
+    "lib.arcade.you": "你",
+    "lib.arcade.bet": "賭注",
+    "lib.arcade.chips": "籌碼：{n}",
+    "lib.arcade.handsLeft": "剩餘 {n} 手",
+    "lib.arcade.won": "你贏了 {n} 個籌碼。",
+    "lib.arcade.lost": "你輸了 {n} 個籌碼。",
+    "lib.arcade.even": "平手。",
+    "lib.arcade.note.videopoker": "僅使用虛擬籌碼，不涉及真實金錢。選擇 1–5 個籌碼的賭注，按「發牌」取得五張牌，點選要保留的牌，再按「換牌」更換其餘的牌。一對 J 或更大的牌型即可獲得賠付。你從 100 個籌碼開始；在限定手數內達到目標籌碼數即可過關。",
+    "lib.arcade.hold": "保留",
+    "lib.arcade.draw": "換牌",
+    "lib.arcade.note.checkers": "你執紅棋（在下方）並先行。棋子斜向前進一格，走到空格。若能跳吃對方棋子，就必須跳吃，而且可以連續跳吃多顆棋子。棋子抵達對方底線後升級為王，可以向後移動與吃子。當你沒有棋子或無棋可走時就輸了。",
+    "lib.arcade.ckDraw": "和局。",
+    "lib.arcade.ckWin": "黑方無棋可走——你贏了。",
+    "lib.arcade.ckLose": "你無棋可走——你輸了。",
+    "lib.arcade.ckMust": "能吃子時必須吃子——請選擇閃爍的棋子之一。",
+    "lib.arcade.note.oanquan": "越南傳統遊戲。下排是你的，上排是電腦的，兩端是「官」格。點選你的其中一格，再選擇方向：該格所有石子會被拿起，並逐格各放一顆。放完後，若下一格有石子，就拿起繼續放；若下一格是空的，而其後一格有石子或官，你就吃掉它（若之後又是空格接著有子的格子，可繼續吃）。遇到官格，或連續兩個空格時停止。一個官值 10 分，一顆石子值 1 分。若你這一側的石子用完，須從你吃到的分數中拿出 5 分重新放回。兩個官都被吃掉時遊戲結束，分數較高者獲勝。",
+    "lib.arcade.oqWin": "遊戲結束——你的分數較高。",
+    "lib.arcade.oqLose": "遊戲結束——電腦的分數較高。",
+    "lib.arcade.oqDraw": "遊戲結束——平手。",
+    "lib.arcade.oqPick": "請選擇方向：◀ 或 ▶。",
+    "lib.arcade.roll": "擲骰子",
+    "lib.arcade.note.ludo": "你執紅色；其他顏色由電腦操控。擲骰子：需要擲出 6 才能讓棋子離開基地，擲出 6 可再擲一次（連續三次 6 會失去回合）。棋子沿棋盤順時針前進，然後轉入自己顏色的終點通道；必須剛好擲出所需點數才能抵達中央終點。恰好落在對手棋子上會把它送回基地（星形格與起點格除外）。最先讓 4 顆棋子全部回家的玩家獲勝。",
+    "lib.arcade.pickToken": "請選擇要移動的棋子。",
+    "lib.arcade.turnOf": "輪到{c}了…",
+    "lib.arcade.ldWin": "你的 4 顆棋子都回家了！",
+    "lib.arcade.ldLose": "{c}先回到家。",
+    "lib.arcade.threeSix": "連續三次 6——你失去這個回合。",
+    "lib.arcade.noMove": "沒有可移動的棋子。",
+    "lib.arcade.note.pyramid": "清除金字塔的全部 28 張牌。點擊兩張自由牌（沒有被其他牌壓住），若點數相加為 13（A=1、J=11、Q=12）就一起移除；K 只需點一下即可單獨移除。棄牌堆最上面的牌也可使用。點擊牌堆抽牌；棄牌堆可重複利用的次數有限。",
+    "lib.arcade.note.tripeaks": "清除三座山峰的全部 28 張牌。點擊一張自由牌，其點數必須比棄牌堆上顯示的牌剛好大一或小一（花色不限），即可移到下方。無牌可走時，點擊牌堆抽牌。在較簡單的關卡中，K 可接 A。",
+    "lib.arcade.note.golf": "清除所有直列。每列只有最下面的牌可以點擊：其點數必須比顯示的牌剛好大一或小一。無牌可走時，點擊牌堆抽牌。在較簡單的關卡中，K 可接 A。",
+    "lib.arcade.ph.royal": "皇家同花順",
+    "lib.arcade.ph.sflush": "同花順",
+    "lib.arcade.ph.quads": "四條",
+    "lib.arcade.ph.full": "葫蘆",
+    "lib.arcade.ph.flush": "同花",
+    "lib.arcade.ph.straight": "順子",
+    "lib.arcade.ph.trips": "三條",
+    "lib.arcade.ph.twopair": "兩對",
+    "lib.arcade.ph.jacks": "一對 J 或更大",
+    "lib.arcade.ph.none": "無牌型",
+    "lib.arcade.res.win": "贏",
+    "lib.arcade.res.lose": "輸",
+    "lib.arcade.res.push": "平手",
+    "lib.arcade.res.blackjack": "Blackjack！",
+    "lib.arcade.cRed": "紅",
+    "lib.arcade.cGreen": "綠",
+    "lib.arcade.cYellow": "黃",
+    "lib.arcade.cBlue": "藍"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "打磚塊",
       "desc": "控制擋板反彈小球打碎所有磚塊；10個佈局不同的關卡，可用滑鼠、觸控或鍵盤操作。"
+    },
+    "pyramid": {
+      "name": "金字塔接龍",
+      "desc": "將點數相加為 13 的牌配對，清除 28 張牌的金字塔；共 10 關，重新洗牌次數越來越少。"
+    },
+    "tripeaks": {
+      "name": "三峰接龍（TriPeaks）",
+      "desc": "連接點數相差一的牌，清除三座山峰；共 10 關，由易到難。"
+    },
+    "golf": {
+      "name": "高爾夫接龍",
+      "desc": "連接與顯示牌點數相差一的牌，清除所有直列；共 10 關，直列越來越多。"
+    },
+    "blackjack": {
+      "name": "Blackjack（21 點）",
+      "desc": "用虛擬籌碼與莊家玩 21 點：點數最接近 21 而不爆牌；可加倍與分牌；共 10 關，目標籌碼逐關提高。"
+    },
+    "video-poker": {
+      "name": "Video Poker（視訊撲克）",
+      "desc": "使用虛擬籌碼的五張換牌撲克（一對 J 或更大）；共 10 關，賠率表越來越嚴格。"
+    },
+    "checkers": {
+      "name": "西洋跳棋",
+      "desc": "與電腦對戰 8x8 西洋跳棋：強制吃子、連續跳吃與升王；共 10 關，由易到難。"
+    },
+    "ludo": {
+      "name": "Ludo（飛行棋）",
+      "desc": "四色競速遊戲：擲骰子，率先讓 4 顆棋子回家；共 10 關，對戰 1 至 3 位電腦玩家。"
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan（越南官棋）",
+      "desc": "越南傳統撒石子遊戲：與電腦對戰，撒石子並吃掉「官」；共 10 關，由易到難。"
     }
   },
   "s": {

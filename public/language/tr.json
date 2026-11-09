@@ -340,7 +340,70 @@
     "lib.arcade.target": "Hedef: {n}",
     "lib.arcade.up": "Yukarı",
     "lib.arcade.youVsAi": "Sen {a} – Bilgisayar {b}",
-    "lib.arcade.noHintFc": "Yararlı hamle kalmadı. Birkaç hamleyi geri alın ya da yeniden başlayın."
+    "lib.arcade.noHintFc": "Yararlı hamle kalmadı. Birkaç hamleyi geri alın ya da yeniden başlayın.",
+    "lib.arcade.recycles": "Kalan yeniden dağıtım: {n}",
+    "lib.arcade.stockLeft": "Deste: {n}",
+    "lib.arcade.wrapOn": "K, A'ya bağlanır",
+    "lib.arcade.wrapOff": "K, A'ya bağlanmaz",
+    "lib.arcade.hintDraw": "Eşleşecek kart kalmadı. Çekmek için desteye tıklayın.",
+    "lib.arcade.betMax": "Maks",
+    "lib.arcade.deal": "Dağıt",
+    "lib.arcade.hit": "Kart çek",
+    "lib.arcade.stand": "Dur",
+    "lib.arcade.double": "İkiye katla",
+    "lib.arcade.split": "Böl",
+    "lib.arcade.nextHand": "Sonraki el",
+    "lib.arcade.note.blackjack": "Sadece sanal para — gerçek para yoktur. 500 fişle başlarsınız; seviyeyi geçmek için izin verilen el sayısı içinde hedef fiş sayısına ulaşın. 21'i geçmeden krupiyeden 21'e daha yakın olun. Krupiye 17'ye ulaşana kadar çeker. Blackjack (bir as ile 10 değerinde bir kart) fazladan ödeme yapar. İkiye katla: bahsi ikiye katlayıp tam bir kart daha alırsınız. Böl: ilk iki kartınız aynı değerdeyse kullanılabilir.",
+    "lib.arcade.dealer": "Krupiye",
+    "lib.arcade.you": "Siz",
+    "lib.arcade.bet": "Bahis",
+    "lib.arcade.chips": "Fiş: {n}",
+    "lib.arcade.handsLeft": "{n} el kaldı",
+    "lib.arcade.won": "{n} fiş kazandınız.",
+    "lib.arcade.lost": "{n} fiş kaybettiniz.",
+    "lib.arcade.even": "Berabere.",
+    "lib.arcade.note.videopoker": "Sadece sanal para — gerçek para yoktur. 1–5 fiş arasında bahis seçin, beş kart almak için Dağıt'a basın, tutmak istediğiniz kartlara tıklayın, sonra kalanları değiştirmek için Çek'e basın. Bir çift vale veya üstü ödeme yapar. 100 fişle başlarsınız; seviyeyi geçmek için izin verilen el sayısı içinde hedef fiş sayısına ulaşın.",
+    "lib.arcade.hold": "TUT",
+    "lib.arcade.draw": "Çek",
+    "lib.arcade.note.checkers": "Kırmızıyı (altta) siz oynarsınız ve ilk hamle sizindir. Taş çapraz olarak bir kare ileri, boş bir kareye gider. Rakip taşı atlayabiliyorsanız atlamak zorundasınız ve birden fazla taşı art arda alabilirsiniz. Son sıraya ulaşan taş dama olur ve geri de gidip alabilir. Taşınız kalmazsa ya da yasal hamleniz olmazsa kaybedersiniz.",
+    "lib.arcade.ckDraw": "Oyun berabere bitti.",
+    "lib.arcade.ckWin": "Siyahın yasal hamlesi yok — kazandınız.",
+    "lib.arcade.ckLose": "Yasal hamleniz yok — kaybettiniz.",
+    "lib.arcade.ckMust": "Alabiliyorsanız almak zorundasınız — yanıp sönen taşlardan birini seçin.",
+    "lib.arcade.note.oanquan": "Geleneksel bir Vietnam oyunu. Alt sıra sizin, üst sıra bilgisayarın, iki uçtaki kareler ise Mandarin karelerdir. Karelerinizden birine tıklayın, sonra bir yön seçin: içindeki tüm taşlar alınır ve her kareye birer tane bırakılır. Dağıttıktan sonra sıradaki karede taş varsa onları alıp dağıtmaya devam edin; sıradaki kare boşsa ve ondan sonrakinde taş ya da Mandarin varsa onu alırsınız (boş kareden sonra dolu kare geldikçe almaya devam edersiniz). Mandarin karesinde ya da art arda iki boş karede durulur. Mandarin 10, taş 1 puandır. Tarafınızda taş kalmazsa aldığınız puanlardan 5'i geri dağıtılır. Her iki Mandarin de alınınca oyun biter; puanı yüksek olan kazanır.",
+    "lib.arcade.oqWin": "Oyun bitti — daha çok puanınız var.",
+    "lib.arcade.oqLose": "Oyun bitti — bilgisayarın puanı daha yüksek.",
+    "lib.arcade.oqDraw": "Oyun bitti — berabere.",
+    "lib.arcade.oqPick": "Bir yön seçin: ◀ veya ▶.",
+    "lib.arcade.roll": "Zar at",
+    "lib.arcade.note.ludo": "Kırmızıyı siz oynarsınız; diğer renkleri bilgisayar oynar. Zar atın: bir piyonu evinden çıkarmak için 6 gerekir ve 6 size bir atış daha verir (art arda üç 6 sırayı kaybettirir). Piyonlar tahtada saat yönünde ilerler, sonra kendi renklerinin eve giden yoluna girer; ortadaki bitişe ulaşmak için tam sayı gerekir. Rakibin piyonunun tam üstüne gelirseniz o piyon evine döner (yıldız ve başlangıç kareleri hariç). 4 piyonunu da ilk eve getiren kazanır.",
+    "lib.arcade.pickToken": "Oynatmak için bir piyon seçin.",
+    "lib.arcade.turnOf": "Sıra {c} oyuncusunda…",
+    "lib.arcade.ldWin": "4 piyonunuz da eve ulaştı!",
+    "lib.arcade.ldLose": "{c} eve ilk ulaştı.",
+    "lib.arcade.threeSix": "Art arda üç 6 — sıranız yandı.",
+    "lib.arcade.noMove": "Hiçbir piyon hareket edemiyor.",
+    "lib.arcade.note.pyramid": "Piramidin 28 kartının hepsini temizleyin. Üzeri örtülü olmayan iki serbest kartın toplamı 13 ise (A=1, J=11, Q=12) ikisine tıklayarak kaldırın; papaz (K) tek tıklamayla tek başına kalkar. Atık destesinin üstündeki kart da kullanılabilir. Çekmek için desteye tıklayın; atık destesini yeniden kullanma hakkı sınırlıdır.",
+    "lib.arcade.note.tripeaks": "Üç tepenin 28 kartının hepsini temizleyin. Atık destesinde görünen karttan tam bir derece yüksek veya düşük (herhangi bir takım) serbest bir karta tıklayarak aşağı taşıyın. Hamleniz kalmayınca desteden çekin. Kolay seviyelerde papaz (K) as ile bağlanır.",
+    "lib.arcade.note.golf": "Tüm sütunları temizleyin. Yalnızca her sütunun en alttaki kartına tıklanabilir: görünen karttan tam bir derece yüksek veya düşük olmalıdır. Hamleniz kalmayınca desteden çekin. Kolay seviyelerde papaz (K) as ile bağlanır.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Dörtlü",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Seri (straight)",
+    "lib.arcade.ph.trips": "Üçlü",
+    "lib.arcade.ph.twopair": "İki çift",
+    "lib.arcade.ph.jacks": "Vale veya üstü",
+    "lib.arcade.ph.none": "Hiçbiri",
+    "lib.arcade.res.win": "Kazandın",
+    "lib.arcade.res.lose": "Kaybetti",
+    "lib.arcade.res.push": "Beraberlik",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Kırmızı",
+    "lib.arcade.cGreen": "Yeşil",
+    "lib.arcade.cYellow": "Sarı",
+    "lib.arcade.cBlue": "Mavi"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Tuğla Kırma",
       "desc": "Raketi yönetip topu sektirerek tüm tuğlaları kır; farklı dizilişli 10 bölüm, fare, dokunmatik ya da klavyeyle."
+    },
+    "pyramid": {
+      "name": "Piramit Solitaire",
+      "desc": "Toplamı 13 olan kartları eşleştirerek 28 kartlık piramidi temizleyin; 10 seviye, giderek azalan yeniden dağıtım hakkı."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Birbirine bir derece uzaklıktaki kartları bağlayarak üç tepeyi temizleyin; kolaydan zora 10 seviye."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Görünen karta bir derece uzaklıktaki kartları bağlayarak sütunları temizleyin; 10 seviye, ilerledikçe daha çok sütun."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Sanal fişlerle krupiyeye karşı blackjack oynayın: 21'i geçmeden ona en yakın eli yapın; ikiye katlayın ve bölün; hedefi artan 10 seviye."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Sanal fişlerle beş kartlı değişmeli poker (Vale veya üstü); ödemeleri giderek daralan 10 seviye."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Bilgisayara karşı 8x8 dama oynayın: zorunlu alma, çoklu atlayış ve dama taşları; kolaydan zora 10 seviye."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Dört renkli yarış oyunu: zar atın ve 4 piyonunuzu ilk eve getirin; 1 ila 3 bilgisayar oyuncuya karşı 10 seviye."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Geleneksel bir Vietnam taş dağıtma oyunu: taşları dağıtın ve bilgisayara karşı Mandarinleri alın; kolaydan zora 10 seviye."
     }
   },
   "s": {

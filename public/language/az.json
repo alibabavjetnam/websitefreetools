@@ -340,7 +340,70 @@
     "lib.arcade.target": "Hədəf: {n}",
     "lib.arcade.up": "Yuxarı",
     "lib.arcade.youVsAi": "Siz {a} – Kompüter {b}",
-    "lib.arcade.noHintFc": "Faydalı gediş qalmayıb. Bir neçə gedişi geri qaytarın və ya yenidən başlayın."
+    "lib.arcade.noHintFc": "Faydalı gediş qalmayıb. Bir neçə gedişi geri qaytarın və ya yenidən başlayın.",
+    "lib.arcade.recycles": "Qalan yenidən qarışdırma: {n}",
+    "lib.arcade.stockLeft": "Dəst: {n}",
+    "lib.arcade.wrapOn": "K, A ilə birləşir",
+    "lib.arcade.wrapOff": "K, A ilə birləşmir",
+    "lib.arcade.hintDraw": "Cüt qalmayıb. Kart çəkmək üçün dəstə klikləyin.",
+    "lib.arcade.betMax": "Maks.",
+    "lib.arcade.deal": "Payla",
+    "lib.arcade.hit": "Kart çək",
+    "lib.arcade.stand": "Dayan",
+    "lib.arcade.double": "İkiqat",
+    "lib.arcade.split": "Böl",
+    "lib.arcade.nextHand": "Növbəti əl",
+    "lib.arcade.note.blackjack": "Yalnız oyun pulu, real pul yoxdur. 500 jetonla başlayırsınız; səviyyəni keçmək üçün icazə verilən əl sayı daxilində hədəf jeton sayına çatın. Aşmadan krupyedən daha çox 21-ə yaxınlaşın. Krupye 17-yə çatana qədər kart çəkir. Blekcek (tuz və on dəyərli kart) əlavə ödəyir. İkiqat: mərci ikiqat artırıb düz bir kart daha alırsınız. Böl: ilk iki kartın dəyəri eyni olduqda mümkündür.",
+    "lib.arcade.dealer": "Krupye",
+    "lib.arcade.you": "Siz",
+    "lib.arcade.bet": "Mərc",
+    "lib.arcade.chips": "Jeton: {n}",
+    "lib.arcade.handsLeft": "{n} əl qalıb",
+    "lib.arcade.won": "{n} jeton qazandınız.",
+    "lib.arcade.lost": "{n} jeton itirdiniz.",
+    "lib.arcade.even": "Bərabərlik.",
+    "lib.arcade.note.videopoker": "Yalnız oyun pulu, real pul yoxdur. 1–5 jeton mərc seçin, beş kart almaq üçün Payla düyməsinə basın, saxlamaq istədiyiniz kartlara klikləyin, sonra qalanları dəyişmək üçün Dəyiş düyməsinə basın. Bir cüt valet və ya daha yaxşısı ödəyir. 100 jetonla başlayırsınız; səviyyəni keçmək üçün icazə verilən əl sayı daxilində hədəf jeton sayına çatın.",
+    "lib.arcade.hold": "SAXLA",
+    "lib.arcade.draw": "Dəyiş",
+    "lib.arcade.note.checkers": "Siz qırmızı (aşağıda) oynayırsınız və birinci gedirsiniz. Daş çarpaz istiqamətdə irəli bir xana boş xanaya gedir. Rəqibin daşının üstündən tullana bilirsinizsə, tullanmalısınız və bir neçə daşı almaq üçün tullanmağa davam edə bilərsiniz. Sonuncu cərgəyə çatan daş şah olur və geriyə də gedib ala bilər. Daşınız və ya qanuni gedişiniz qalmadıqda uduzursunuz.",
+    "lib.arcade.ckDraw": "Oyun heç-heçə bitdi.",
+    "lib.arcade.ckWin": "Qaranın qanuni gedişi yoxdur — qazandınız.",
+    "lib.arcade.ckLose": "Sizin qanuni gedişiniz yoxdur — uduzdunuz.",
+    "lib.arcade.ckMust": "Ala bildiyiniz zaman almalısınız — yanıb-sönən daşlardan birini seçin.",
+    "lib.arcade.note.oanquan": "Ənənəvi Vyetnam oyunu. Aşağı cərgə sizindir, yuxarı cərgə kompüterindir, iki ucu isə Mandarin xanalarıdır. Xanalarınızdan birinə klikləyin, sonra istiqamət seçin: içindəki bütün daşlar götürülür və hər xanaya bir ədəd səpilir. Səpdikdən sonra növbəti xanada daş varsa, onları götürüb səpməyə davam edin; növbəti xana boşdursa və ondan sonrakında daş və ya Mandarin varsa, onu alırsınız (daha bir boş xanadan sonra daşlı xana gəlirsə, almağa davam edirsiniz). Mandarin xanasında və ya ardıcıl iki boş xanadan sonra dayanın. Mandarin 10 xal, daş 1 xal dəyərindədir. Tərəfinizdə daş qalmasa, qazandığınız xallardan 5-i yenidən səpilir. Hər iki Mandarin alındıqda oyun bitir; xalı çox olan qalib gəlir.",
+    "lib.arcade.oqWin": "Oyun bitdi — xalınız daha çoxdur.",
+    "lib.arcade.oqLose": "Oyun bitdi — kompüterin xalı daha çoxdur.",
+    "lib.arcade.oqDraw": "Oyun bitdi — bərabərlik.",
+    "lib.arcade.oqPick": "İstiqamət seçin: ◀ və ya ▶.",
+    "lib.arcade.roll": "Zər at",
+    "lib.arcade.note.ludo": "Siz qırmızı oynayırsınız; digər rənglərdə kompüter oynayır. Zər atın: daşı evdən çıxarmaq üçün 6 lazımdır, 6 gələndə yenidən atırsınız (ardıcıl üç 6 növbənizi itirir). Daşlar lövhə boyunca saat əqrəbi istiqamətində gedir, sonra öz rənglərinin ev yoluna dönür; mərkəzdəki bitişə çatmaq üçün dəqiq say lazımdır. Rəqibin daşının üstünə dəqiq düşsəniz, o, evinə qayıdır (ulduz və start xanaları istisna). 4 daşını ilk evə çatdıran qalib gəlir.",
+    "lib.arcade.pickToken": "Hərəkət etdirmək üçün daş seçin.",
+    "lib.arcade.turnOf": "{c} növbəsi…",
+    "lib.arcade.ldWin": "4 daşınızın hamısı evə çatdı!",
+    "lib.arcade.ldLose": "{c} evə birinci çatdı.",
+    "lib.arcade.threeSix": "Ardıcıl üç 6 — növbənizi itirdiniz.",
+    "lib.arcade.noMove": "Heç bir daş hərəkət edə bilmir.",
+    "lib.arcade.note.pyramid": "Piramidanın bütün 28 kartını təmizləyin. Cəmi 13 edən (A=1, J=11, Q=12) iki sərbəst karta (üstü başqa kartla örtülməyən) klikləyin, hər ikisi götürülür; Kral tək klikləmə ilə təkbaşına götürülür. Atılmış dəstin üst kartından da istifadə edə bilərsiniz. Kart çəkmək üçün dəstə klikləyin; atılmış dəsti təkrar istifadə etmə sayı məhduddur.",
+    "lib.arcade.note.tripeaks": "Üç zirvənin bütün 28 kartını təmizləyin. Atılmış dəstdə görünən kartdan düz bir pillə yuxarı və ya aşağı olan sərbəst karta (istənilən mastda) klikləyin, aşağı keçir. Gediş qalmayanda kart çəkmək üçün dəstə klikləyin. Asan səviyyələrdə K, A ilə birləşir.",
+    "lib.arcade.note.golf": "Bütün sütunları təmizləyin. Yalnız hər sütunun alt kartına klikləmək olar: o, görünən kartdan düz bir pillə yuxarı və ya aşağı olmalıdır. Gediş qalmayanda kart çəkmək üçün dəstə klikləyin. Asan səviyyələrdə K, A ilə birləşir.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Dördlük",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Üçlük",
+    "lib.arcade.ph.twopair": "İki cüt",
+    "lib.arcade.ph.jacks": "Valet və ya daha yaxşısı",
+    "lib.arcade.ph.none": "Heç nə",
+    "lib.arcade.res.win": "Qələbə",
+    "lib.arcade.res.lose": "Məğlubiyyət",
+    "lib.arcade.res.push": "Bərabərlik",
+    "lib.arcade.res.blackjack": "Blekcek!",
+    "lib.arcade.cRed": "Qırmızı",
+    "lib.arcade.cGreen": "Yaşıl",
+    "lib.arcade.cYellow": "Sarı",
+    "lib.arcade.cBlue": "Mavi"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Kərpic sındıran",
       "desc": "Raketkanı idarə edin və bütün kərpicləri sındırmaq üçün topu sıçradın; fərqli düzülüşlü 10 mərhələ, siçan, toxunma və ya düymələrlə."
+    },
+    "pyramid": {
+      "name": "Piramida soliter",
+      "desc": "Cəmi 13 edən kartları cütləşdirərək 28 kartlıq piramidanı təmizləyin; yenidən qarışdırma getdikcə azalan 10 səviyyə."
+    },
+    "tripeaks": {
+      "name": "TriPeaks soliter",
+      "desc": "Bir pillə fərqli kartları birləşdirərək üç zirvəni təmizləyin; asandan çətinə 10 səviyyə."
+    },
+    "golf": {
+      "name": "Qolf soliter",
+      "desc": "Görünən kartdan bir pillə fərqli kartları birləşdirərək sütunları təmizləyin; irəlilədikcə sütunları artan 10 səviyyə."
+    },
+    "blackjack": {
+      "name": "Blekcek",
+      "desc": "Virtual jetonlarla krupyeyə qarşı blekcek oynayın: aşmadan 21-ə ən yaxın olun; ikiqat və böl; hədəf jetonları artan 10 səviyyə."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Virtual jetonlarla beş kartlı dəyişdirməli poker (valet və ya daha yaxşısı); ödəniş cədvəli getdikcə sərtləşən 10 səviyyə."
+    },
+    "checkers": {
+      "name": "Dama",
+      "desc": "Kompüterə qarşı 8x8 dama oynayın: məcburi tutma, çoxlu tullanış və şahlar; asandan çətinə 10 səviyyə."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Dörd rəngli yarış oyunu: zər atın və 4 daşınızı birinci evə çatdırın; 10 səviyyədə 1–3 kompüter oyunçusuna qarşı oynayın."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Ənənəvi Vyetnam daş səpmə oyunu: kompüterə qarşı daşları səpin və Mandarinləri alın; asandan çətinə 10 səviyyə."
     }
   },
   "s": {

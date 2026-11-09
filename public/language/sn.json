@@ -340,7 +340,70 @@
     "lib.arcade.target": "Chinangwa: {n}",
     "lib.arcade.up": "Kumusoro",
     "lib.arcade.youVsAi": "Iwe {a} – Kombiyuta {b}",
-    "lib.arcade.noHintFc": "Hapana danho rinobatsira rasara. Dzosera matanho mashoma kana kutanga patsva."
+    "lib.arcade.noHintFc": "Hapana danho rinobatsira rasara. Dzosera matanho mashoma kana kutanga patsva.",
+    "lib.arcade.recycles": "Kugovera patsva kwasara: {n}",
+    "lib.arcade.stockLeft": "Dura: {n}",
+    "lib.arcade.wrapOn": "Mambo anobatana neAce",
+    "lib.arcade.wrapOff": "Mambo haabatani neAce",
+    "lib.arcade.hintDraw": "Hapachina mapeya akasara. Dzvanya pane dura kuti utore kadhi.",
+    "lib.arcade.betMax": "Yakanyanya",
+    "lib.arcade.deal": "Govera",
+    "lib.arcade.hit": "Tora kadhi",
+    "lib.arcade.stand": "Mira",
+    "lib.arcade.double": "Wedzera kaviri",
+    "lib.arcade.split": "Paradzanisa",
+    "lib.arcade.nextHand": "Ruoko rwunotevera",
+    "lib.arcade.note.blackjack": "Mari yekutamba chete — hapana mari chaiyo. Unotanga ne500 chips; svika nhamba yechips yaunotarisirwa mumaoko anotenderwa kuti upfuure danho. Swedera pedyo ne21 kupfuura mugoveri pasina kupfuura. Mugoveri anotora makadhi kusvika ave pa17. Blackjack (Ace uye kadhi rine hunhu hwegumi) inobhadhara zvakawanda. Wedzera kaviri: unowedzera kaviri mubheti wotora kadhi rimwe chete. Paradzanisa: zvinobvira kana makadhi ako maviri ekutanga ane hunhu hunofanana.",
+    "lib.arcade.dealer": "Mugoveri",
+    "lib.arcade.you": "Iwe",
+    "lib.arcade.bet": "Bheti",
+    "lib.arcade.chips": "Chips: {n}",
+    "lib.arcade.handsLeft": "Maoko {n} asara",
+    "lib.arcade.won": "Wakahwina chips {n}.",
+    "lib.arcade.lost": "Wakarasikirwa nechips {n}.",
+    "lib.arcade.even": "Zvakaenzana.",
+    "lib.arcade.note.videopoker": "Mari yekutamba chete — hapana mari chaiyo. Sarudza bheti ye1–5 chips, dzvanya Govera kuti uwane makadhi mashanu, dzvanya makadhi aunoda kuchengeta, wobva wadzvanya Tora kuti ushandure asara. Peya yema Jack kana kupfuura inobhadhara. Unotanga ne100 chips; svika nhamba yechips yaunotarisirwa mumaoko anotenderwa kuti upfuure danho.",
+    "lib.arcade.hold": "CHENGETA",
+    "lib.arcade.draw": "Tora",
+    "lib.arcade.note.checkers": "Unotamba neRed (pazasi) uye unotanga kufamba. Chidhori chinofamba bhokisi rimwe nenzira yakatsvedzerera kumberi kuenda kubhokisi risina chinhu. Kana wakwanisa kusvetuka pamusoro pechidhori chemukwikwidzi, unofanira kuita saizvozvo, uye unogona kuramba uchisvetuka kubata zvidhori zvakawanda. Chidhori chinosvika pamutsetse wekupedzisira chinoitwa mambo, chinogona kufamba nokubata kumashure futi. Unoshaya kana usina zvidhori kana matanho akatenderwa.",
+    "lib.arcade.ckDraw": "Mutambo wapera zvakaenzana.",
+    "lib.arcade.ckWin": "Black haina matanho akatenderwa — wakahwina.",
+    "lib.arcade.ckLose": "Hauna matanho akatenderwa — wakurasikirwa.",
+    "lib.arcade.ckMust": "Unofanira kubata kana wakwanisa — sarudza chimwe chezvidhori zvinopenya.",
+    "lib.arcade.note.oanquan": "Mutambo wechivanhu weVietnam. Mutsetse wepazasi ndewako, wepamusoro ndewekombuta, uye magumo maviri mabhokisi eMandarin. Dzvanya rimwe rebhokisi rako wobva wasarudza nzira: matombo ese ari mariri anotorwa otsvairwa rimwe nerimwe mubhokisi rimwe nerimwe. Mushure mekusveta, kana bhokisi rinotevera rine matombo, unoatora woramba uchisveta; kana bhokisi rinotevera risina chinhu uye rinotevera racho rine matombo kana Mandarin, unorubata (uye unoramba uchibata kana bhokisi risina chinhu rikatevedzerwa nerizere). Unomira pabhokisi reMandarin kana mushure memabhokisi maviri asina chinhu akatevedzana. Mandarin inokosha mapoinzi gumi, dombo rimwe rinokosha 1. Kana kumativi ako kwapera matombo, mapoinzi 5 awakabata anosvetwa zvakare. Mutambo unopera kana ma Mandarin ese maviri atorwa; ane mapoinzi akawanda ndiye anohwina.",
+    "lib.arcade.oqWin": "Mutambo wapera — une mapoinzi akawanda.",
+    "lib.arcade.oqLose": "Mutambo wapera — kombuta ine mapoinzi akawanda.",
+    "lib.arcade.oqDraw": "Mutambo wapera — zvakaenzana.",
+    "lib.arcade.oqPick": "Sarudza nzira: ◀ kana ▶.",
+    "lib.arcade.roll": "Phonda dice",
+    "lib.arcade.note.ludo": "Unotamba neRed; mimwe mavara anotambwa nekombuta. Phonda dice: unoda 6 kuti ubudise chidhori mumba, uye 6 inokupa kuphonda kumwe (matatu e6 akatevedzana anokubvisa ruoko rwako). Zvidhori zvinotenderera bhodhi nenzira yeawa, wobva wapinda mugwara repamba remavara azvo; unoda nhamba chaiyo kuti usvike kumugumo pakati. Kutsika chaizvo pachidhori chemukwikwidzi kunochidzosera kumba kwacho (kunze kwemabhokisi enyeredzi nemabhokisi ekutanga). Munhu wekutanga kuunza zvidhori zvese zvina kumba ndiye anohwina.",
+    "lib.arcade.pickToken": "Sarudza chidhori chekufambisa.",
+    "lib.arcade.turnOf": "Ruoko rwa{c}…",
+    "lib.arcade.ldWin": "Zvidhori zvako zvese zvina zviri kumba!",
+    "lib.arcade.ldLose": "{c} akasvika kumba pakutanga.",
+    "lib.arcade.threeSix": "Matatu e6 akatevedzana — wapotsa ruoko rwako.",
+    "lib.arcade.noMove": "Hapana chidhori chinogona kufamba.",
+    "lib.arcade.note.pyramid": "Bvisa makadhi ese 28 epiramidhi. Dzvanya makadhi maviri akasununguka (asina kafukidzwa nerimwe kadhi) ane chiyero che13 (A=1, J=11, Q=12) kuti ese abviswe; Mambo anobviswa ega nekudzvanya kamwe. Kadhi repamusoro repurazi remarara rinogonawo kushandiswa. Dzvanya pane dura kuti utore kadhi; huwandu hwekudzoreredza purazi remarara hwakaganhurirwa.",
+    "lib.arcade.note.tripeaks": "Bvisa makadhi ese 28 emakomo matatu. Dzvanya kadhi rakasununguka riri chaizvo danho rimwe kumusoro kana kuzasi kwekadhi rinoonekwa pamarara (chero rudzi) kuti uriburutire pasi. Kana matanho apera, dzvanya pane dura kuti utore kadhi. Pamatanho akareruka, Mambo anobatana neAce.",
+    "lib.arcade.note.golf": "Bvisa makoramu ese. Kadhi riri pazasi chete rekoramu rimwe nerimwe ndiro rinogona kudzvanywa: rinofanira kuva danho rimwe chaizvo kumusoro kana kuzasi kwekadhi rinoonekwa. Kana matanho apera, dzvanya pane dura kuti utore kadhi. Pamatanho akareruka, Mambo anobatana neAce.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Mana akafanana",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Matatu akafanana",
+    "lib.arcade.ph.twopair": "Mapeya maviri",
+    "lib.arcade.ph.jacks": "Majack kana kupfuura",
+    "lib.arcade.ph.none": "Hapana",
+    "lib.arcade.res.win": "Kuhwina",
+    "lib.arcade.res.lose": "Kurasikirwa",
+    "lib.arcade.res.push": "Zvakaenzana",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Tsvuku",
+    "lib.arcade.cGreen": "Girini",
+    "lib.arcade.cYellow": "Yero",
+    "lib.arcade.cBlue": "Bhuruu"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Mupwanyi wezvidhinha",
       "desc": "Tungamira pedhi uye svetesa bhora kuti upwanye zvidhinha zvese; zvikamu 10 zvine marongerwo akasiyana, nembeva, kubata kana makiyi."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Bvisa piramidhi yemakadhi 28 nekubatanidza makadhi anoita 13; mazinga 10 ane kugovera patsva kuri kuderera."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Bvisa makomo matatu nekubatanidza makadhi akasiyana nedanho rimwe; mazinga 10 kubva pakareruka kusvika pakaoma."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Bvisa makoramu nekubatanidza makadhi akasiyana nedanho rimwe nekadhi rinoonekwa; mazinga 10 ane makoramu akawanda kuri kuenderera mberi."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Tamba blackjack uchipikisana nemugoveri uchishandisa chips dzepamhepo: swedera pedyo ne21 pasina kupfuura; wedzera kaviri uye paradzanisa; mazinga 10 ane zvinangwa zvechips zviri kukwira."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Poker yemakadhi mashanu ekutora nechips dzepamhepo (Majack kana kupfuura); mazinga 10 ane matafura ekubhadhara akaomarara."
+    },
+    "checkers": {
+      "name": "Checkers",
+      "desc": "Tamba checkers 8x8 uchipikisana nekombuta: kubata kunosungirwa, kusvetuka kwakawanda nemamambo; mazinga 10 kubva pakareruka kusvika pakaoma."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Mutambo wemujaho wemavara mana: phonda dice uunze zvidhori zvako 4 kumba pakutanga; tamba uchipikisana nevatambi vekombuta 1 kusvika ku3 mumazinga 10."
+    },
+    "o-an-quan": {
+      "name": "Ô ăn quan",
+      "desc": "Mutambo wechivanhu weVietnam wekusveta matombo: sveta matombo ubate ma Mandarin uchipikisana nekombuta; mazinga 10 kubva pakareruka kusvika pakaoma."
     }
   },
   "s": {

@@ -340,7 +340,70 @@
     "lib.arcade.target": "Target: {n}",
     "lib.arcade.up": "Up",
     "lib.arcade.youVsAi": "You {a} – Computer {b}",
-    "lib.arcade.noHintFc": "No useful move left. Try undoing a few moves or start over."
+    "lib.arcade.noHintFc": "No useful move left. Try undoing a few moves or start over.",
+    "lib.arcade.recycles": "Redeals left: {n}",
+    "lib.arcade.stockLeft": "Stock: {n}",
+    "lib.arcade.wrapOn": "K links to A",
+    "lib.arcade.wrapOff": "K does not link to A",
+    "lib.arcade.hintDraw": "No pairs left. Click the stock to draw.",
+    "lib.arcade.betMax": "Max",
+    "lib.arcade.deal": "Deal",
+    "lib.arcade.hit": "Hit",
+    "lib.arcade.stand": "Stand",
+    "lib.arcade.double": "Double",
+    "lib.arcade.split": "Split",
+    "lib.arcade.nextHand": "Next hand",
+    "lib.arcade.note.blackjack": "Play money only — no real money. You start with 500 chips; reach the target chip count within the allowed number of hands to clear the level. Get closer to 21 than the dealer without going over. The dealer draws until reaching 17. A blackjack (an ace plus a ten-value card) pays extra. Double: double your bet and take exactly one more card. Split: available when your first two cards have the same value.",
+    "lib.arcade.dealer": "Dealer",
+    "lib.arcade.you": "You",
+    "lib.arcade.bet": "Bet",
+    "lib.arcade.chips": "Chips: {n}",
+    "lib.arcade.handsLeft": "{n} hands left",
+    "lib.arcade.won": "You won {n} chips.",
+    "lib.arcade.lost": "You lost {n} chips.",
+    "lib.arcade.even": "Break even.",
+    "lib.arcade.note.videopoker": "Play money only — no real money. Choose a bet of 1–5 chips, press Deal to get five cards, click the cards you want to keep, then press Draw to replace the rest. A pair of jacks or better pays. You start with 100 chips; reach the target chip count within the allowed number of hands to clear the level.",
+    "lib.arcade.hold": "HOLD",
+    "lib.arcade.draw": "Draw",
+    "lib.arcade.note.checkers": "You play Red (bottom) and move first. A piece moves one square diagonally forward onto an empty square. If you can jump over an opposing piece you must, and you may keep jumping to capture several pieces. A piece that reaches the far row is crowned king and can move and capture backward too. You lose when you have no pieces or no legal move.",
+    "lib.arcade.ckDraw": "The game is a draw.",
+    "lib.arcade.ckWin": "Black has no legal moves — you win.",
+    "lib.arcade.ckLose": "You have no legal moves — you lose.",
+    "lib.arcade.ckMust": "You must capture when you can — pick one of the pulsing pieces.",
+    "lib.arcade.note.oanquan": "A traditional Vietnamese game. The bottom row is yours, the top row is the computer's, and the two ends are the Mandarin squares. Click one of your squares, then choose a direction: all stones in it are picked up and sown one per square. After sowing, if the next square has stones, pick them up and keep sowing; if the next square is empty and the one after it has stones or a Mandarin, you capture it (and keep capturing if another empty square is followed by a loaded one). Stop at a Mandarin square or after two empty squares in a row. A Mandarin is worth 10 points, a stone 1. If your side runs out of stones, 5 of your captured points are sown back. The game ends when both Mandarins are captured; the higher score wins.",
+    "lib.arcade.oqWin": "Game over — you have more points.",
+    "lib.arcade.oqLose": "Game over — the computer has more points.",
+    "lib.arcade.oqDraw": "Game over — a tie.",
+    "lib.arcade.oqPick": "Choose a direction: ◀ or ▶.",
+    "lib.arcade.roll": "Roll the die",
+    "lib.arcade.note.ludo": "You play Red; the other colours are played by the computer. Roll the die: you need a 6 to bring a token out of its yard, and a 6 gives you another roll (three 6s in a row loses your turn). Tokens travel clockwise around the board, then turn into the home column of their colour; you need the exact number to reach the finish in the centre. Landing exactly on an opponent's token sends it back to its yard (except on star squares and start squares). The first player to bring all 4 tokens home wins.",
+    "lib.arcade.pickToken": "Pick a token to move.",
+    "lib.arcade.turnOf": "{c}'s turn…",
+    "lib.arcade.ldWin": "All 4 of your tokens are home!",
+    "lib.arcade.ldLose": "{c} got home first.",
+    "lib.arcade.threeSix": "Three 6s in a row — you lose your turn.",
+    "lib.arcade.noMove": "No token can move.",
+    "lib.arcade.note.pyramid": "Clear all 28 cards of the pyramid. Click two free cards (not covered by any card) that add up to 13 (A=1, J=11, Q=12) to remove both; a King is removed alone with one click. The top card of the waste pile can be used too. Click the stock to draw; the number of times you can recycle the waste pile is limited.",
+    "lib.arcade.note.tripeaks": "Clear all 28 cards of the three peaks. Click a free card that is exactly one rank higher or lower than the card showing on the waste pile (any suit) to move it down. When you are out of moves, click the stock to draw. On the easier levels, a King links to an Ace.",
+    "lib.arcade.note.golf": "Clear all the columns. Only the bottom card of each column can be clicked: it must be exactly one rank higher or lower than the card showing. When you are out of moves, click the stock to draw. On the easier levels, a King links to an Ace.",
+    "lib.arcade.ph.royal": "Royal flush",
+    "lib.arcade.ph.sflush": "Straight flush",
+    "lib.arcade.ph.quads": "Four of a kind",
+    "lib.arcade.ph.full": "Full house",
+    "lib.arcade.ph.flush": "Flush",
+    "lib.arcade.ph.straight": "Straight",
+    "lib.arcade.ph.trips": "Three of a kind",
+    "lib.arcade.ph.twopair": "Two pair",
+    "lib.arcade.ph.jacks": "Jacks or better",
+    "lib.arcade.ph.none": "Nothing",
+    "lib.arcade.res.win": "Win",
+    "lib.arcade.res.lose": "Lose",
+    "lib.arcade.res.push": "Push",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Red",
+    "lib.arcade.cGreen": "Green",
+    "lib.arcade.cYellow": "Yellow",
+    "lib.arcade.cBlue": "Blue"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Brick Breaker",
       "desc": "Steer the paddle and bounce the ball to break every brick; 10 stages with different layouts, play with mouse, touch or keys."
+    },
+    "pyramid": {
+      "name": "Pyramid Solitaire",
+      "desc": "Clear the 28-card pyramid by pairing cards that add up to 13; 10 levels with fewer and fewer redeals."
+    },
+    "tripeaks": {
+      "name": "TriPeaks Solitaire",
+      "desc": "Clear three peaks by linking cards one rank apart; 10 levels from easy to hard."
+    },
+    "golf": {
+      "name": "Golf Solitaire",
+      "desc": "Clear the columns by linking cards one rank apart from the showing card; 10 levels with more columns as you go."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Play blackjack against the dealer with virtual chips: get closest to 21 without going over; double down and split; 10 levels with rising chip targets."
+    },
+    "video-poker": {
+      "name": "Video Poker",
+      "desc": "Five-card draw poker with virtual chips (Jacks or Better); 10 levels with tighter pay tables."
+    },
+    "checkers": {
+      "name": "Checkers",
+      "desc": "Play 8x8 checkers against the computer: forced captures, multi-jumps and kings; 10 levels from easy to hard."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Four-colour race game: roll the die and bring your 4 tokens home first; play against 1 to 3 computer players over 10 levels."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "A traditional Vietnamese sowing game: sow stones and capture the Mandarins against the computer; 10 levels from easy to hard."
     }
   },
   "s": {

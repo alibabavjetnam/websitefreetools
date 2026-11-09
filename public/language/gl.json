@@ -340,7 +340,70 @@
     "lib.arcade.target": "Obxectivo: {n}",
     "lib.arcade.up": "Arriba",
     "lib.arcade.youVsAi": "Ti {a} – Ordenador {b}",
-    "lib.arcade.noHintFc": "Non queda ningunha xogada útil. Desfai algunhas xogadas ou comeza de novo."
+    "lib.arcade.noHintFc": "Non queda ningunha xogada útil. Desfai algunhas xogadas ou comeza de novo.",
+    "lib.arcade.recycles": "Repartos restantes: {n}",
+    "lib.arcade.stockLeft": "Baralla: {n}",
+    "lib.arcade.wrapOn": "O Rei enlaza co As",
+    "lib.arcade.wrapOff": "O Rei non enlaza co As",
+    "lib.arcade.hintDraw": "Non quedan parellas. Preme na baralla para sacar unha carta.",
+    "lib.arcade.betMax": "Máx.",
+    "lib.arcade.deal": "Repartir",
+    "lib.arcade.hit": "Pedir",
+    "lib.arcade.stand": "Plantarse",
+    "lib.arcade.double": "Dobrar",
+    "lib.arcade.split": "Dividir",
+    "lib.arcade.nextHand": "Seguinte man",
+    "lib.arcade.note.blackjack": "Só diñeiro de xogo — sen diñeiro real. Comezas con 500 fichas; para superar o nivel, acada o número de fichas obxectivo no número de mans permitido. Achégate máis a 21 ca o crupier sen pasarte. O crupier saca cartas ata chegar a 17. Un blackjack (un as e unha carta de valor dez) paga máis. Dobrar: dobras a aposta e recibes exactamente unha carta máis. Dividir: dispoñible cando as túas dúas primeiras cartas teñen o mesmo valor.",
+    "lib.arcade.dealer": "Crupier",
+    "lib.arcade.you": "Ti",
+    "lib.arcade.bet": "Aposta",
+    "lib.arcade.chips": "Fichas: {n}",
+    "lib.arcade.handsLeft": "Quedan {n} mans",
+    "lib.arcade.won": "Gañaches {n} fichas.",
+    "lib.arcade.lost": "Perdiches {n} fichas.",
+    "lib.arcade.even": "Empate.",
+    "lib.arcade.note.videopoker": "Só diñeiro de xogo — sen diñeiro real. Escolle unha aposta de 1–5 fichas, preme Repartir para recibir cinco cartas, fai clic nas que queiras conservar e preme Cambiar para substituír as demais. Pagan unha parella de xotas ou mellor. Comezas con 100 fichas; para superar o nivel, acada o número de fichas obxectivo no número de mans permitido.",
+    "lib.arcade.hold": "GARDAR",
+    "lib.arcade.draw": "Cambiar",
+    "lib.arcade.note.checkers": "Xogas coas vermellas (abaixo) e moves primeiro. Unha peza móvese unha casa en diagonal cara adiante a unha casa baleira. Se podes saltar sobre unha peza rival, tes que facelo, e podes seguir saltando para capturar varias pezas. Unha peza que chega á última fila coróase dama e tamén pode moverse e capturar cara atrás. Pérdese cando non quedan pezas ou xogadas legais.",
+    "lib.arcade.ckDraw": "A partida remata en táboas.",
+    "lib.arcade.ckWin": "As negras non teñen xogadas legais — gañas.",
+    "lib.arcade.ckLose": "Non tes xogadas legais — perdes.",
+    "lib.arcade.ckMust": "Tes que capturar cando poidas — escolle unha das pezas que palpitan.",
+    "lib.arcade.note.oanquan": "Un xogo tradicional vietnamita. A fila de abaixo é túa, a de arriba é do ordenador e os dous extremos son as casas Mandarín. Preme nunha das túas casas e escolle unha dirección: recóllense todas as pedras e sémbranse unha por casa. Despois de sementar, se a seguinte casa ten pedras, recóllelas e segue; se a seguinte está baleira e a que vén despois ten pedras ou un Mandarín, captúrasa (e segues capturando se tras unha casa baleira vén outra chea). Para nunha casa Mandarín ou despois de dúas casas baleiras seguidas. Un Mandarín vale 10 puntos, unha pedra 1. Se o teu lado se queda sen pedras, 5 dos teus puntos capturados volven sementarse. O xogo remata cando se capturan os dous Mandaríns; gaña quen teña máis puntos.",
+    "lib.arcade.oqWin": "Fin da partida — tes máis puntos.",
+    "lib.arcade.oqLose": "Fin da partida — o ordenador ten máis puntos.",
+    "lib.arcade.oqDraw": "Fin da partida — empate.",
+    "lib.arcade.oqPick": "Escolle unha dirección: ◀ ou ▶.",
+    "lib.arcade.roll": "Lanzar o dado",
+    "lib.arcade.note.ludo": "Xogas coa vermella; as demais cores lévaas o ordenador. Lanza o dado: necesitas un 6 para sacar unha ficha da casa, e un 6 dáche outro lanzamento (tres 6 seguidos fan que perdas o turno). As fichas avanzan no sentido das agullas do reloxo arredor do taboleiro e logo viran cara ao corredor final da súa cor; precisas o número exacto para chegar á meta, no centro. Se caes exactamente nunha ficha rival, esta volve á súa casa (agás nas casas de estrela e de saída). Gaña quen leve primeiro as 4 fichas á meta.",
+    "lib.arcade.pickToken": "Escolle unha ficha para mover.",
+    "lib.arcade.turnOf": "Turno de {c}…",
+    "lib.arcade.ldWin": "Todas as túas 4 fichas chegaron á casa!",
+    "lib.arcade.ldLose": "{c} chegou primeiro á casa.",
+    "lib.arcade.threeSix": "Tres 6 seguidos — perdes o turno.",
+    "lib.arcade.noMove": "Ningunha ficha pode moverse.",
+    "lib.arcade.note.pyramid": "Despexa as 28 cartas da pirámide. Fai clic en dúas cartas libres (que ningunha carta cubra) que sumen 13 (A=1, J=11, Q=12) para retirar as dúas; un Rei retírase só cun clic. Tamén se pode usar a carta superior do monte de descarte. Preme na baralla para sacar unha carta; o número de veces que se pode reciclar o descarte é limitado.",
+    "lib.arcade.note.tripeaks": "Despexa as 28 cartas dos tres picos. Fai clic nunha carta libre que sexa exactamente un rango superior ou inferior á carta visible no descarte (de calquera pau) para baixala. Cando non teñas xogadas, preme na baralla. Nos niveis máis fáciles, o Rei enlaza co As.",
+    "lib.arcade.note.golf": "Despexa todas as columnas. Só se pode premer a carta de abaixo de cada columna: ten que ser exactamente un rango superior ou inferior á carta visible. Cando non teñas xogadas, preme na baralla. Nos niveis máis fáciles, o Rei enlaza co As.",
+    "lib.arcade.ph.royal": "Escaleira real",
+    "lib.arcade.ph.sflush": "Escaleira de cor",
+    "lib.arcade.ph.quads": "Póker",
+    "lib.arcade.ph.full": "Full",
+    "lib.arcade.ph.flush": "Cor",
+    "lib.arcade.ph.straight": "Escaleira",
+    "lib.arcade.ph.trips": "Trío",
+    "lib.arcade.ph.twopair": "Dobre parella",
+    "lib.arcade.ph.jacks": "Xotas ou mellor",
+    "lib.arcade.ph.none": "Nada",
+    "lib.arcade.res.win": "Gañas",
+    "lib.arcade.res.lose": "Perdes",
+    "lib.arcade.res.push": "Empate",
+    "lib.arcade.res.blackjack": "Blackjack!",
+    "lib.arcade.cRed": "Vermello",
+    "lib.arcade.cGreen": "Verde",
+    "lib.arcade.cYellow": "Amarelo",
+    "lib.arcade.cBlue": "Azul"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "Rompeladrillos",
       "desc": "Move a pa e fai rebotar a pelota para romper todos os ladrillos; 10 fases con distintas formas, con rato, pantalla táctil ou teclado."
+    },
+    "pyramid": {
+      "name": "Solitario Pirámide",
+      "desc": "Despexa a pirámide de 28 cartas formando parellas que sumen 13; 10 niveis con cada vez menos repartos."
+    },
+    "tripeaks": {
+      "name": "Solitario TriPeaks",
+      "desc": "Despexa tres picos enlazando cartas que difiren nun rango; 10 niveis de fácil a difícil."
+    },
+    "golf": {
+      "name": "Solitario Golf",
+      "desc": "Despexa as columnas enlazando cartas que difiren nun rango da carta visible; 10 niveis con cada vez máis columnas."
+    },
+    "blackjack": {
+      "name": "Blackjack",
+      "desc": "Xoga ao blackjack contra o crupier con fichas virtuais: achégate o máximo a 21 sen pasarte; dobra e divide; 10 niveis con obxectivos crecentes."
+    },
+    "video-poker": {
+      "name": "Vídeo Póker",
+      "desc": "Póker de cinco cartas con cambio e fichas virtuais (xotas ou mellor); 10 niveis con taboas de pagos máis axustadas."
+    },
+    "checkers": {
+      "name": "Damas",
+      "desc": "Xoga ás damas 8x8 contra o ordenador: captura obrigatoria, saltos múltiples e damas; 10 niveis de fácil a difícil."
+    },
+    "ludo": {
+      "name": "Ludo",
+      "desc": "Xogo de carreira de catro cores: lanza o dado e leva primeiro as túas 4 fichas á meta; contra 1 a 3 xogadores do ordenador en 10 niveis."
+    },
+    "o-an-quan": {
+      "name": "O An Quan",
+      "desc": "Un xogo tradicional vietnamita de sementar pedras: semea pedras e captura os Mandaríns contra o ordenador; 10 niveis de fácil a difícil."
     }
   },
   "s": {

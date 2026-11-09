@@ -340,7 +340,70 @@
     "lib.arcade.target": "目标：{n}",
     "lib.arcade.up": "上移",
     "lib.arcade.youVsAi": "你 {a} – 电脑 {b}",
-    "lib.arcade.noHintFc": "没有可用的好步了。试着撤销几步或重新开始。"
+    "lib.arcade.noHintFc": "没有可用的好步了。试着撤销几步或重新开始。",
+    "lib.arcade.recycles": "剩余翻牌次数：{n}",
+    "lib.arcade.stockLeft": "牌堆：{n}",
+    "lib.arcade.wrapOn": "K 可接 A",
+    "lib.arcade.wrapOff": "K 不能接 A",
+    "lib.arcade.hintDraw": "没有可配的牌了，请点击牌堆抽牌。",
+    "lib.arcade.betMax": "全部",
+    "lib.arcade.deal": "发牌",
+    "lib.arcade.hit": "要牌",
+    "lib.arcade.stand": "停牌",
+    "lib.arcade.double": "加倍",
+    "lib.arcade.split": "分牌",
+    "lib.arcade.nextHand": "下一局",
+    "lib.arcade.note.blackjack": "仅使用虚拟筹码，不涉及真钱。你有 500 筹码，在规定局数内达到目标筹码即可过关。点数比庄家更接近 21 且不爆牌即获胜。庄家要牌到 17 点为止。黑杰克（A 加一张 10 点牌）赔率更高。加倍：赌注翻倍并只再要一张牌。分牌：前两张牌点数相同时可用。",
+    "lib.arcade.dealer": "庄家",
+    "lib.arcade.you": "你",
+    "lib.arcade.bet": "下注",
+    "lib.arcade.chips": "筹码：{n}",
+    "lib.arcade.handsLeft": "还剩 {n} 局",
+    "lib.arcade.won": "你赢了 {n} 筹码。",
+    "lib.arcade.lost": "你输了 {n} 筹码。",
+    "lib.arcade.even": "不赢不输。",
+    "lib.arcade.note.videopoker": "仅使用虚拟筹码，不涉及真钱。选择 1–5 个筹码的赌注，点击“发牌”获得五张牌，点击想保留的牌，再点击“换牌”替换其余的牌。一对 J 或更大即有奖励。你有 100 筹码，在规定局数内达到目标筹码即可过关。",
+    "lib.arcade.hold": "保留",
+    "lib.arcade.draw": "换牌",
+    "lib.arcade.note.checkers": "你执红方（下方）先行。棋子沿斜线向前走一格到空格。若能跳吃对方棋子则必须吃，并可连续吃多子。到达对方底线的棋子升为王，可向后走和吃子。没有棋子或无子可动即输。",
+    "lib.arcade.ckDraw": "本局和棋。",
+    "lib.arcade.ckWin": "黑方无子可动 — 你赢了。",
+    "lib.arcade.ckLose": "你无子可动 — 你输了。",
+    "lib.arcade.ckMust": "能吃子时必须吃子 — 请选择闪烁的棋子。",
+    "lib.arcade.note.oanquan": "越南传统游戏。下排是你的，上排是电脑的，两端是“官”格。点击你的一个格子并选择方向：取出其中所有石子，逐格各放一枚。撒完后，若下一格有石子就取起继续撒；若下一格为空而再下一格有石子或“官”，就吃掉它（之后若隔一空格又有子，可连续吃）。遇到“官”格或连续两个空格即停止。“官”值 10 分，石子值 1 分。己方没有石子时，用已得的 5 分重新撒回。两个“官”都被吃掉后游戏结束，得分高者胜。",
+    "lib.arcade.oqWin": "游戏结束 — 你的得分更高。",
+    "lib.arcade.oqLose": "游戏结束 — 电脑得分更高。",
+    "lib.arcade.oqDraw": "游戏结束 — 平局。",
+    "lib.arcade.oqPick": "请选择方向：◀ 或 ▶",
+    "lib.arcade.roll": "掷骰子",
+    "lib.arcade.note.ludo": "你执红色，其他颜色由电脑操作。掷骰子：掷出 6 才能把一枚棋子放出基地，并可再掷一次（连续三次 6 则失去回合）。棋子沿棋盘顺时针前进，再转入本色的home通道；需要点数恰好才能到达中央终点。正好停在对手棋子的格子上，可把它送回基地（星标格和起点格除外）。最先让 4 枚棋子全部回家者获胜。",
+    "lib.arcade.pickToken": "请选择要走的棋子。",
+    "lib.arcade.turnOf": "轮到{c}…",
+    "lib.arcade.ldWin": "你的 4 枚棋子全部到家了！",
+    "lib.arcade.ldLose": "{c}先到家了。",
+    "lib.arcade.threeSix": "连续三次 6 — 失去回合。",
+    "lib.arcade.noMove": "没有可走的棋子。",
+    "lib.arcade.note.pyramid": "清除金字塔的全部 28 张牌。点击两张未被压住的牌，点数之和为 13（A=1，J=11，Q=12），即可同时消去；K 单独点击即可消去。弃牌堆顶牌也可使用。点击牌堆抽牌；弃牌堆翻回的次数有限。",
+    "lib.arcade.note.tripeaks": "清除三座山峰的全部 28 张牌。点击未被压住、且与弃牌堆顶牌点数正好相差 1 的牌（不分花色），把它移到下面。无牌可走时点击牌堆抽牌。较容易的关卡中，K 可以接 A。",
+    "lib.arcade.note.golf": "清除所有牌列。每列只有最下面的一张牌可以点击，它必须与当前亮出的牌点数正好相差 1。无牌可走时点击牌堆抽牌。较容易的关卡中，K 可以接 A。",
+    "lib.arcade.ph.royal": "皇家同花顺",
+    "lib.arcade.ph.sflush": "同花顺",
+    "lib.arcade.ph.quads": "四条",
+    "lib.arcade.ph.full": "葫芦",
+    "lib.arcade.ph.flush": "同花",
+    "lib.arcade.ph.straight": "顺子",
+    "lib.arcade.ph.trips": "三条",
+    "lib.arcade.ph.twopair": "两对",
+    "lib.arcade.ph.jacks": "一对 J 或更大",
+    "lib.arcade.ph.none": "无牌型",
+    "lib.arcade.res.win": "赢",
+    "lib.arcade.res.lose": "输",
+    "lib.arcade.res.push": "平",
+    "lib.arcade.res.blackjack": "黑杰克！",
+    "lib.arcade.cRed": "红色",
+    "lib.arcade.cGreen": "绿色",
+    "lib.arcade.cYellow": "黄色",
+    "lib.arcade.cBlue": "蓝色"
   },
   "pages": {
     "home": {
@@ -833,6 +896,38 @@
     "brick-breaker": {
       "name": "打砖块",
       "desc": "控制挡板反弹小球打碎所有砖块；10个布局不同的关卡，可用鼠标、触屏或键盘操作。"
+    },
+    "pyramid": {
+      "name": "金字塔纸牌",
+      "desc": "把点数之和为 13 的牌配对，消去 28 张牌的金字塔；共 10 关，翻牌次数逐关减少。"
+    },
+    "tripeaks": {
+      "name": "三峰纸牌",
+      "desc": "连接点数相差 1 的牌，清除三座山峰；共 10 关，由易到难。"
+    },
+    "golf": {
+      "name": "高尔夫纸牌",
+      "desc": "把与亮出牌点数相差 1 的牌连接起来清空牌列；共 10 关，关卡越高牌列越多。"
+    },
+    "blackjack": {
+      "name": "二十一点（黑杰克）",
+      "desc": "用虚拟筹码与庄家对战：点数尽量接近 21 但不超过；可加倍、分牌；共 10 关，目标筹码逐关提高。"
+    },
+    "video-poker": {
+      "name": "视频扑克",
+      "desc": "用虚拟筹码玩五张换牌扑克（一对 J 起赔）；共 10 关，赔率表逐关收紧。"
+    },
+    "checkers": {
+      "name": "国际跳棋（8x8）",
+      "desc": "与电脑对战 8x8 跳棋：必须吃子、可连续跳吃、可升王；共 10 关，由易到难。"
+    },
+    "ludo": {
+      "name": "飞行棋（Ludo）",
+      "desc": "四色竞速棋：掷骰子，最先让 4 枚棋子回家；与 1 到 3 个电脑对手对战，共 10 关。"
+    },
+    "o-an-quan": {
+      "name": "越南官棋（Ô ăn quan）",
+      "desc": "越南传统撒子游戏：撒子、吃“官”，与电脑对战；共 10 关，由易到难。"
     }
   },
   "s": {
