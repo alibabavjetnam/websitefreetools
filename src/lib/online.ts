@@ -368,7 +368,7 @@ export class OnlineRoom {
 
   /** Vào bàn từ danh sách / Tìm đối thủ: nếu sau 4 giây không thấy chủ bàn (đã rời đi) thì quay lại */
   private async joinListed(room: string): Promise<void> {
-    await this.enter(room, false);
+    await this.enter(room, false, this.lobby.get([...this.lobby.entries()].find(([, e]) => e.room === room)?.[0] ?? '')?.opts ?? {});
     window.clearTimeout(this.joinTimer);
     this.joinTimer = window.setTimeout(() => {
       if (this.phase !== 'waiting' || this.roomId !== room || this.rec?.players) return;
@@ -381,7 +381,7 @@ export class OnlineRoom {
 
   private hello(): void {
     this.lastHello = Date.now();
-    void this.send({ t: 'hello', name: this.myName, n: this.rec?.moves.length ?? 0, seq: this.rec?.seq ?? 0 });
+    void this.send({ t: 'hello', name: this.myName, n: this.rec?.moves.length ?? 0, seq: this.rec?.seq ?? 0, opts: this.rec?.opts ?? {} });
   }
 
   private leaveRoom(final: boolean): void {
@@ -470,7 +470,11 @@ export class OnlineRoom {
           else void this.send({ t: 'full', to: m.cid });
         } else if (this.phase === 'waiting') {
           this.lastSeen = Date.now();
-          if (r.cid < m.cid) this.newGame([r.cid, m.cid], 1);
+          // Người vào bằng link chưa biết tuỳ chọn bàn (cỡ bàn cờ vây…): lấy theo người mở bàn
+          const mo = m.opts;
+          if (!Object.keys(r.opts ?? {}).length && mo && typeof mo === 'object' && Object.keys(mo).length && (!this.def.validOptions || this.def.validOptions(mo as Record<string, unknown>))) r.opts = mo as Record<string, unknown>;
+          if (r.cid < m.cid && (Object.keys(r.opts ?? {}).length || !this.def.optionsHtml)) this.newGame([r.cid, m.cid], 1);
+          else if (r.cid < m.cid) this.hello();
           else if (Date.now() - this.lastHello > 800) this.hello();
         }
         break;
