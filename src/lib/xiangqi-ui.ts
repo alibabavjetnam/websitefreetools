@@ -23,8 +23,6 @@ const DEFS = `<defs>
   <linearGradient id="xqWood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e2b8"/><stop offset=".55" stop-color="#efd29b"/><stop offset="1" stop-color="#e6c184"/></linearGradient>
   <radialGradient id="xqFace" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#fffdf6"/><stop offset=".62" stop-color="#f7ead0"/><stop offset="1" stop-color="#e9d2a6"/></radialGradient>
   <linearGradient id="xqEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b47a"/><stop offset="1" stop-color="#a67a43"/></linearGradient>
-  <radialGradient id="xqBack" cx=".45" cy=".4" r=".72"><stop offset="0" stop-color="#f9d9a4"/><stop offset=".7" stop-color="#efbf7c"/><stop offset="1" stop-color="#dfa560"/></radialGradient>
-  <radialGradient id="xqDome" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#ffe7bf"/><stop offset=".55" stop-color="#f3c98c"/><stop offset="1" stop-color="#d9a05c"/></radialGradient>
   <filter id="xqSoftS" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.3"/></filter>
   <linearGradient id="xqGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
   <filter id="xqSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2"/></filter>
@@ -76,15 +74,12 @@ function boardLines(px: (c: number) => number, py: (r: number) => number): strin
 /** Một quân cờ nổi khối: bóng đổ, cạnh dày, mặt ngà bóng, vòng khắc màu phe, vệt sáng */
 function piece(x: number, y: number, cls: string, label: string, hidden: boolean): string {
   if (hidden) {
-    // Mặt úp: đĩa màu phe (đỏ sẫm / xanh đậm) có núm tròn nổi ở giữa, vòng chấm bao quanh, bóng đổ nhẹ sang phía đông
+    // Mặt úp: mặt phẳng vàng gỗ, vòng chấm màu phe (đỏ sẫm / xanh đậm), bóng đổ nhẹ sang phía đông
     return `<g class="${cls}">
     <circle class="sh" cx="${x + 3}" cy="${y + 1.5}" r="24.5"/>
     <circle class="edge" cx="${x}" cy="${y + 1.6}" r="25"/>
     <circle class="face" cx="${x}" cy="${y}" r="24"/>
     <circle class="xq-ring" cx="${x}" cy="${y}" r="20"/>
-    <circle class="dome-sh" cx="${x + 1.6}" cy="${y + 1}" r="14.5"/>
-    <circle class="dome" cx="${x}" cy="${y}" r="14"/>
-    <ellipse class="gloss" cx="${x - 3.5}" cy="${y - 6}" rx="7.5" ry="4"/>
   </g>`;
   }
   return `<g class="${cls}">

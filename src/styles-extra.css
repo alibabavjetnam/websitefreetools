@@ -1109,13 +1109,10 @@ textarea:focus-visible {
 /* Cờ úp: mặt lưng đỏ sẫm / xanh đậm, núm tròn nổi giữa, vòng chấm, bóng đổ nhẹ sang phía đông */
 .xq-pc.hid .sh { fill: #2a1808; opacity: .28; filter: url(#xqSoftS); }
 .xq-pc.hid .edge { fill: #b9803f; }
-.xq-pc.hid .face { fill: url(#xqBack); stroke: #b17a3c; stroke-width: 1; }
+.xq-pc.hid .face { fill: #f2c98a; stroke: #b17a3c; stroke-width: 1; }
 .xq-pc.hid .xq-ring { stroke-width: 0.9; stroke-linecap: round; stroke-dasharray: 0.5 2.6; opacity: 1; }
 .xq-pc.hid.red .xq-ring { stroke: #8b0000; }
 .xq-pc.hid.blk .xq-ring { stroke: #0b2a5b; }
-.xq-pc.hid .dome-sh { fill: #7a4a18; opacity: .3; }
-.xq-pc.hid .dome { fill: url(#xqDome); stroke: #c08a4a; stroke-width: .8; }
-.xq-pc.hid .gloss { opacity: .45; }
 .xq-pc.hid.sel .face { stroke: #1d6ff2; stroke-width: 3.5; }
 .xq-pc.hid.sel .xq-ring { opacity: 1; }
 .xq-caps { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; min-height: 30px; margin-top: 8px; font-size: 13px; color: var(--muted); }
