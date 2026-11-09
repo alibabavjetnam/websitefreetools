@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Nahurot ang kinabuhi — gibutyag na ang tanang tile.",
     "lib.game.mmNote": "Pindota ang Sugdi: ipakita ang mga tile sulod sa {s} segundo, unya itago. Handurawa ang porma ug kolor sa matag tile, unya pilia ang tile nga motakdo sa gipakita nga porma. Sobra sa {l} ka sayop, napakyas ang lebel.",
     "lib.game.fullscreen": "Tibuok screen",
-    "lib.game.exitFullscreen": "Gawas sa tibuok screen"
+    "lib.game.exitFullscreen": "Gawas sa tibuok screen",
+    "lib.online.guest": "Bisita",
+    "lib.online.connFail": "Dili makakonektar sa server sa online nga dula. Susiha ang koneksyon (o i-off ang ad blocker) unya i-klik ang Sulayi pag-usab.",
+    "lib.online.tableGone": "Mibiya na ang nagbukas sa lamesa. Pili ug laing lamesa o abli ug bag-o.",
+    "lib.online.drawDeclined": "Gibalibaran sa kontra ang tabla.",
+    "lib.online.opponent": "Kontra",
+    "lib.online.copied": "Nakopya na ang link. Ipadala sa imong higala aron magdula mo.",
+    "lib.online.waitingFor": "naghulat {n} s",
+    "lib.online.drawAgreed": "Nagkasabot ang duha ka magdudula sa tabla.",
+    "lib.online.draw": "Natapos sa tabla ang dula.",
+    "lib.online.oppResigned": "Mi-surrender ang kontra — nidaog ka!",
+    "lib.online.youResigned": "Mi-surrender ka.",
+    "lib.online.youWin": "Nidaog ka!",
+    "lib.online.youLose": "Napildi ka.",
+    "lib.online.connecting": "Nagkonektar sa server sa online nga dula…",
+    "lib.online.retry": "Sulayi pag-usab",
+    "lib.online.quick": "Pangitag kontra",
+    "lib.online.createPublic": "Abli ug publikong lamesa",
+    "lib.online.createPrivate": "Abli ug pribadong lamesa ug dapita ang higala",
+    "lib.online.modesHint": "Makita sa lista ang mga publikong lamesa ug bisan kinsa makaapil. Sa pribadong lamesa, makasulod lang pinaagi sa link sa imbitasyon.",
+    "lib.online.openTables": "Mga publikong lamesa nga naghulat",
+    "lib.online.join": "Apil",
+    "lib.online.noTables": "Wala pay lamesa nga naghulat. I-klik ang \"Pangitag kontra\" o abli ug bag-ong lamesa.",
+    "lib.online.privacy": "Ang mga lihok moagi sa libre nga publikong MQTT server ug gi-encrypt matag lamesa; ang server dili motipig sa mga dula. Pag-sign in sa Google aron matipigan ang nahuman nga mga dula sa imong Drive.",
+    "lib.online.waitingPublic": "Publikong lamesa: naghulat nga adunay moapil…",
+    "lib.online.waitingPrivate": "Pribadong lamesa: ipadala kini nga link sa imong higala. Magsugod ang dula kon iyang ablihan.",
+    "lib.online.leave": "Biyai ang lamesa",
+    "lib.online.full": "Aduna nay 2 ka magdudula niini nga lamesa. Pangitag laing lamesa o abli ug bag-o.",
+    "lib.online.backToList": "Balik sa lista sa lamesa",
+    "lib.online.you": "Ikaw",
+    "lib.online.oppLeft": "mibiya sa lamesa",
+    "lib.online.oppOffline": "nadiskonekta",
+    "lib.online.drawOffer": "Nagtanyag og tabla ang kontra.",
+    "lib.online.accept": "Dawata",
+    "lib.online.decline": "Balibari",
+    "lib.online.drawSent": "Gitanyag ang tabla…",
+    "lib.online.offerDraw": "Tanyag og tabla",
+    "lib.online.resignConfirm": "I-klik pag-usab aron mo-surrender",
+    "lib.online.resign": "Surrender",
+    "lib.online.againSent": "Naghulat nga mouyon ang kontra…",
+    "lib.online.againAccept": "Gusto sa kontra og rematch — Dula pag-usab",
+    "lib.online.again": "Dula pag-usab (ilisi ang kolor)",
+    "lib.online.inviteLink": "Link sa imbitasyon",
+    "lib.online.copy": "Kopyaha ang link",
+    "lib.online.share": "Ipaambit",
+    "lib.online.saved": "Natipigan ang dula sa Google Drive (folder WFTools/Games).",
+    "lib.online.saving": "Gitipigan ang dula sa Google Drive…",
+    "lib.online.saveFail": "Dili pa matipigan ang dula sa Drive.",
+    "lib.online.save": "Tipigi ang dula sa Google Drive",
+    "lib.game.darkNote": "Tinagong Xiangqi (Cờ úp): ang duha ka heneral magsugod nga abli, ang ubang piyesa gisagol ug gitaob. Ang tinagong piyesa molihok sama sa piyesa nga kasagarang magsugod sa iyang kahon (sa kahon sa karwahe molihok sama sa karwahe), dayon balihon ug sukad niadto molihok isip iyang tinuod nga piyesa. Ang mga magtatambag ug elepante makaadto bisan asa sa board. Ang checkmate o walay lihok nagpasabot nga pildi.",
+    "lib.game.darkBoard": "Board sa tinagong Xiangqi",
+    "lib.online.red": "Pula",
+    "lib.online.black": "Itom",
+    "lib.game.captured": "Nakaon nga mga piyesa",
+    "lib.online.pickTable": "Pangitag kontra o abli ug lamesa sa kilid nga panel aron magsugod.",
+    "lib.online.theirTurn": "Turno sa kontra",
+    "lib.online.white": "Puti",
+    "lib.online.goNote": "{n}×{n} nga board, itom ang mauna, ang puti makakuha og {k} nga komi. Ihap sa luna; kuhaa ang tanang patay nga bato sa dili pa mo-pass. Matapos ang dula kon managsunod nga mo-pass ang duha.",
+    "lib.online.boardSize": "Gidak-on sa board",
+    "lib.online.oppPassed": "Mi-pass ang kontra. Kon mo-pass ka usab, matapos ang dula ug ihapon.",
+    "lib.online.modeAi": "Dula batok sa kompyuter",
+    "lib.online.modeOnline": "Dula online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Dako nga 16x16 Sudoku nga naggamit og 1-9 ug A-G, 10 ka lebel gikan sa sayon hangtod lisod, nga adunay mga nota ug pahiwatig."
     },
     "chess": {
-      "name": "Chess batok sa Kompyuter",
-      "desc": "Dula og chess batok sa kompyuter sa 10 ka lebel gikan sa sayon hangtod lisod, nga adunay castling, en passant ug promotion."
+      "name": "Chess",
+      "desc": "Dula og chess batok sa kompyuter sa 10 ka lebel o online: dapita ang higala gamit ang link o dula uban sa bag-ong kontra. Adunay castling, en passant ug promotion."
     },
     "xiangqi": {
-      "name": "Xiangqi batok sa Kompyuter",
-      "desc": "Dula og Chinese chess (xiangqi) batok sa kompyuter sa 10 ka lebel, nga adunay horse-leg blocking, elephant eye, cannon captures ug flying-general rule."
+      "name": "Xiangqi (Chinese chess)",
+      "desc": "Dula og Xiangqi batok sa kompyuter sa 10 ka lebel o online: dapita ang higala gamit ang link o dula uban sa bag-ong kontra. Kompleto nga lagda: tiil sa kabayo, mata sa elepante, ambak sa kanyon ug mga heneral nga dili puwedeng magkitaay."
     },
     "go-game": {
-      "name": "Go batok sa Kompyuter",
-      "desc": "Dula og Go batok sa kompyuter sa 5x5, 7x7 ug 9x9 nga board sa 10 ka lebel, nga adunay awtomatikong pag-iskor sa katapusan."
+      "name": "Go",
+      "desc": "Dula og Go batok sa kompyuter sa 10 ka lebel o online sa 9x9, 13x13 ug 19x19 nga board uban sa higala o bag-ong kontra. Awtomatikong ihap sa katapusan."
     },
     "memory-shapes": {
       "name": "Panumdoman sa Porma ug Kolor",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Online nga desktop",
       "desc": "Usa ka computer desktop sa imong browser: file manager, Notepad, tigtan-aw sa hulagway ug PDF, kalkulator, kalendaryo ug basurahan. Ang mga file gi-save sa imong Google Drive."
+    },
+    "co-up": {
+      "name": "Tinagong Xiangqi (Cờ úp)",
+      "desc": "Dula og Vietnamese nga tinagong Xiangqi: ang mga piyesa magsugod nga gitaob ug balihon human sa unang lihok. Batok sa kompyuter sa 10 ka lebel o online uban sa mga higala ug bag-ong kontra."
     }
   },
   "s": {

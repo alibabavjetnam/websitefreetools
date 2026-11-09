@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Can qalmadı — bütün kafellər açıldı.",
     "lib.game.mmNote": "Başla düyməsini basın: kafellər {s} saniyə göstərilir, sonra gizlənir. Hər kafelin formasını və rəngini yadda saxlayın, sonra göstərilən formaya uyğun kafeli seçin. {l} səhvdən çox olarsa, səviyyə keçilmir.",
     "lib.game.fullscreen": "Tam ekran",
-    "lib.game.exitFullscreen": "Tam ekrandan çıx"
+    "lib.game.exitFullscreen": "Tam ekrandan çıx",
+    "lib.online.guest": "Qonaq",
+    "lib.online.connFail": "Onlayn oyun serverinə qoşulmaq mümkün olmadı. Bağlantını yoxlayın (və ya reklam bloklayıcısını söndürün) və Yenidən cəhd edin düyməsini basın.",
+    "lib.online.tableGone": "Masanı açan oyunçu çıxıb. Başqa masa seçin və ya yenisini açın.",
+    "lib.online.drawDeclined": "Rəqib heç-heçədən imtina etdi.",
+    "lib.online.opponent": "Rəqib",
+    "lib.online.copied": "Keçid kopyalandı. Birlikdə oynamaq üçün onu dostunuza göndərin.",
+    "lib.online.waitingFor": "{n} san gözləyir",
+    "lib.online.drawAgreed": "Hər iki oyunçu heç-heçəyə razılaşdı.",
+    "lib.online.draw": "Oyun heç-heçə bitdi.",
+    "lib.online.oppResigned": "Rəqib təslim oldu — siz qalib gəldiniz!",
+    "lib.online.youResigned": "Siz təslim oldunuz.",
+    "lib.online.youWin": "Siz qalib gəldiniz!",
+    "lib.online.youLose": "Siz uduzdunuz.",
+    "lib.online.connecting": "Onlayn oyun serverinə qoşulur…",
+    "lib.online.retry": "Yenidən cəhd edin",
+    "lib.online.quick": "Rəqib tap",
+    "lib.online.createPublic": "Açıq masa aç",
+    "lib.online.createPrivate": "Şəxsi masa aç və dostu dəvət et",
+    "lib.online.modesHint": "Açıq masalar siyahıda görünür və hər kəs qoşula bilər. Şəxsi masaya yalnız dəvət keçidi ilə daxil olmaq olar.",
+    "lib.online.openTables": "Gözləyən açıq masalar",
+    "lib.online.join": "Qoşul",
+    "lib.online.noTables": "Hələ gözləyən masa yoxdur. \"Rəqib tap\" düyməsini basın və ya yeni masa açın.",
+    "lib.online.privacy": "Gedişlər pulsuz açıq MQTT serverindən keçir və hər masa üçün şifrələnir; server oyunları saxlamır. Bitmiş oyunları Drive-a saxlamaq üçün Google ilə daxil olun.",
+    "lib.online.waitingPublic": "Açıq masa: kiminsə qoşulması gözlənilir…",
+    "lib.online.waitingPrivate": "Şəxsi masa: bu keçidi dostunuza göndərin. O açanda oyun başlayacaq.",
+    "lib.online.leave": "Masadan çıx",
+    "lib.online.full": "Bu masada artıq 2 oyunçu var. Başqa masa tapın və ya yenisini açın.",
+    "lib.online.backToList": "Masalar siyahısına qayıt",
+    "lib.online.you": "Siz",
+    "lib.online.oppLeft": "masanı tərk etdi",
+    "lib.online.oppOffline": "bağlantı yoxdur",
+    "lib.online.drawOffer": "Rəqib heç-heçə təklif edir.",
+    "lib.online.accept": "Qəbul et",
+    "lib.online.decline": "İmtina et",
+    "lib.online.drawSent": "Heç-heçə təklif olundu…",
+    "lib.online.offerDraw": "Heç-heçə təklif et",
+    "lib.online.resignConfirm": "Təslim olmaq üçün yenidən basın",
+    "lib.online.resign": "Təslim ol",
+    "lib.online.againSent": "Rəqibin razılığı gözlənilir…",
+    "lib.online.againAccept": "Rəqib revanş istəyir — Yenidən oyna",
+    "lib.online.again": "Yenidən oyna (rəngləri dəyiş)",
+    "lib.online.inviteLink": "Dəvət keçidi",
+    "lib.online.copy": "Keçidi kopyala",
+    "lib.online.share": "Paylaş",
+    "lib.online.saved": "Oyun Google Drive-a saxlanıldı (WFTools/Games qovluğu).",
+    "lib.online.saving": "Oyun Google Drive-a saxlanılır…",
+    "lib.online.saveFail": "Oyunu hələ Drive-a saxlamaq mümkün olmadı.",
+    "lib.online.save": "Oyunu Google Drive-a saxla",
+    "lib.game.darkNote": "Gizli Siyanqi (Cờ úp): hər iki general açıq başlayır, qalan fiqurlar qarışdırılıb üzü aşağı qoyulur. Gizli fiqur öz xanasında adətən başlayan fiqur kimi gedir (araba xanasında araba kimi), sonra çevrilir və bundan sonra əsl fiquru kimi gedir. Məsləhətçilər və fillər bütün lövhədə gəzə bilər. Mat və ya gedişin olmaması məğlubiyyətdir.",
+    "lib.game.darkBoard": "Gizli Siyanqi lövhəsi",
+    "lib.online.red": "Qırmızı",
+    "lib.online.black": "Qara",
+    "lib.game.captured": "Vurulmuş fiqurlar",
+    "lib.online.pickTable": "Başlamaq üçün rəqib tapın və ya yan paneldə masa açın.",
+    "lib.online.theirTurn": "Rəqibin növbəsi",
+    "lib.online.white": "Ağ",
+    "lib.online.goNote": "{n}×{n} lövhə, qara başlayır, ağ {k} komi alır. Ərazi hesabı; pas deməzdən əvvəl bütün ölü daşları götürün. Hər ikisi ardıcıl pas deyəndə oyun bitir.",
+    "lib.online.boardSize": "Lövhə ölçüsü",
+    "lib.online.oppPassed": "Rəqib pas dedi. Siz də pas desəniz, oyun bitəcək və hesablanacaq.",
+    "lib.online.modeAi": "Kompüterlə oyna",
+    "lib.online.modeOnline": "Onlayn oyna"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "1-9 və A-G istifadə edən böyük 16x16 Sudoku, asandan çətinə 10 səviyyə, qeydlər və ipucular ilə."
     },
     "chess": {
-      "name": "Kompüterə qarşı şahmat",
-      "desc": "Kompüterə qarşı şahmat oynayın: asandan çətinə 10 səviyyə, rokirovka, en passant və piyadanın çevrilməsi ilə."
+      "name": "Şahmat",
+      "desc": "Şahmatı kompüterlə 10 səviyyədə və ya onlayn oynayın: dostunuzu keçidlə dəvət edin və ya yeni biri ilə oynayın. Qalaqurma, keçərkən vurma və çevrilmə ilə."
     },
     "xiangqi": {
-      "name": "Kompüterə qarşı Syanqi",
-      "desc": "Kompüterə qarşı Çin şahmatı (syanqi) oynayın: 10 səviyyə, atın ayağının bağlanması, filin gözü, topla tutma və generalların üz-üzə gəlməsi qaydası ilə."
+      "name": "Siyanqi (Çin şahmatı)",
+      "desc": "Siyanqini kompüterlə 10 səviyyədə və ya onlayn oynayın: dostunuzu keçidlə dəvət edin və ya yeni biri ilə oynayın. Tam qaydalar: atın ayağı, filin gözü, topun sıçrayışı və bir-birini görməməli olan generallar."
     },
     "go-game": {
-      "name": "Kompüterə qarşı Qo",
-      "desc": "Kompüterə qarşı Qo oynayın: 5x5, 7x7 və 9x9 taxtalarda 10 səviyyə, sonda avtomatik xal hesablanması ilə."
+      "name": "Qo",
+      "desc": "Qo oyununu kompüterlə 10 səviyyədə və ya onlayn 9x9, 13x13 və 19x19 lövhələrdə dostla və ya yeni rəqiblə oynayın. Sonda avtomatik hesablama."
     },
     "memory-shapes": {
       "name": "Forma və rəng yaddaşı",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Onlayn iş masası",
       "desc": "Brauzerinizdə kompüter iş masası: fayl meneceri, Notepad, şəkil və PDF baxıcısı, kalkulyator, təqvim və zibil qutusu. Fayllar Google Drive-ınızda saxlanılır."
+    },
+    "co-up": {
+      "name": "Gizli Siyanqi (Cờ úp)",
+      "desc": "Vyetnam gizli Siyanqisini oynayın: fiqurlar üzü aşağı başlayır və ilk gedişdən sonra çevrilir. Kompüterlə 10 səviyyədə və ya onlayn dostlar və yeni rəqiblərlə."
     }
   },
   "s": {

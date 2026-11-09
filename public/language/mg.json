@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Lany ny aina — aseho izao ny tuile rehetra.",
     "lib.game.mmNote": "Tsindrio ny Atombohy: aseho mandritra ny {s} segondra ny tuile, avy eo afenina. Tadidio ny endrika sy ny lokon'ny tuile tsirairay, avy eo fidio ny tuile mifanaraka amin'ny endrika aseho. Raha mihoatra ny {l} ny diso dia tsy vita ny haavo.",
     "lib.game.fullscreen": "Efijery feno",
-    "lib.game.exitFullscreen": "Hivoaka amin'ny efijery feno"
+    "lib.game.exitFullscreen": "Hivoaka amin'ny efijery feno",
+    "lib.online.guest": "Vahiny",
+    "lib.online.connFail": "Tsy afaka nifandray tamin'ny mpizara lalao an-tserasera. Hamarino ny fifandraisana (na vonoy ny mpanakana dokambarotra) ary tsindrio ny Andramo indray.",
+    "lib.online.tableGone": "Lasa ilay nanokatra ny latabatra. Misafidiana latabatra hafa na manokafa vaovao.",
+    "lib.online.drawDeclined": "Nandà ny sahala ny mpifanandrina.",
+    "lib.online.opponent": "Mpifanandrina",
+    "lib.online.copied": "Voadika ny rohy. Alefaso amin'ny namanao mba hilalaovanareo miaraka.",
+    "lib.online.waitingFor": "miandry {n} s",
+    "lib.online.drawAgreed": "Nifanaiky ho sahala ireo mpilalao roa.",
+    "lib.online.draw": "Nifarana tamin'ny sahala ny lalao.",
+    "lib.online.oppResigned": "Nilavo lefona ny mpifanandrina — nandresy ianao!",
+    "lib.online.youResigned": "Nilavo lefona ianao.",
+    "lib.online.youWin": "Nandresy ianao!",
+    "lib.online.youLose": "Resy ianao.",
+    "lib.online.connecting": "Mifandray amin'ny mpizara lalao an-tserasera…",
+    "lib.online.retry": "Andramo indray",
+    "lib.online.quick": "Mitadiava mpifanandrina",
+    "lib.online.createPublic": "Manokafa latabatra ho an'ny besinimaro",
+    "lib.online.createPrivate": "Manokafa latabatra manokana ary manasa namana",
+    "lib.online.modesHint": "Miseho ao amin'ny lisitra ny latabatra ho an'ny besinimaro ary afaka miditra ny olona rehetra. Ny latabatra manokana dia tsy azo idirana raha tsy amin'ny rohy fanasana.",
+    "lib.online.openTables": "Latabatra ho an'ny besinimaro miandry",
+    "lib.online.join": "Midira",
+    "lib.online.noTables": "Mbola tsy misy latabatra miandry. Tsindrio ny \"Mitadiava mpifanandrina\" na manokafa latabatra vaovao.",
+    "lib.online.privacy": "Mandalo amin'ny mpizara MQTT maimaimpoana ho an'ny besinimaro ny fihetsika ary voaafina isaky ny latabatra; tsy mitahiry lalao ny mpizara. Midira amin'ny Google mba hitahiry ireo lalao vita ao amin'ny Drive-nao.",
+    "lib.online.waitingPublic": "Latabatra ho an'ny besinimaro: miandry olona hiditra…",
+    "lib.online.waitingPrivate": "Latabatra manokana: alefaso amin'ny namanao ity rohy ity. Manomboka ny lalao rehefa sokafany.",
+    "lib.online.leave": "Ialao ny latabatra",
+    "lib.online.full": "Efa misy mpilalao 2 ity latabatra ity. Mitadiava latabatra hafa na manokafa vaovao.",
+    "lib.online.backToList": "Hiverina amin'ny lisitry ny latabatra",
+    "lib.online.you": "Ianao",
+    "lib.online.oppLeft": "niala tamin'ny latabatra",
+    "lib.online.oppOffline": "tapaka",
+    "lib.online.drawOffer": "Manolotra sahala ny mpifanandrina.",
+    "lib.online.accept": "Ekeo",
+    "lib.online.decline": "Lavio",
+    "lib.online.drawSent": "Natolotra ny sahala…",
+    "lib.online.offerDraw": "Atolory ny sahala",
+    "lib.online.resignConfirm": "Tsindrio indray raha hilavo lefona",
+    "lib.online.resign": "Milavo lefona",
+    "lib.online.againSent": "Miandry ny fanekena avy amin'ny mpifanandrina…",
+    "lib.online.againAccept": "Te hamaly faty ny mpifanandrina — Milalao indray",
+    "lib.online.again": "Milalao indray (ovay ny loko)",
+    "lib.online.inviteLink": "Rohy fanasana",
+    "lib.online.copy": "Adikao ny rohy",
+    "lib.online.share": "Zarao",
+    "lib.online.saved": "Voatahiry ao amin'ny Google Drive ny lalao (lahatahiry WFTools/Games).",
+    "lib.online.saving": "Mitahiry ny lalao ao amin'ny Google Drive…",
+    "lib.online.saveFail": "Mbola tsy voatahiry tao amin'ny Drive ny lalao.",
+    "lib.online.save": "Tehirizo ao amin'ny Google Drive ny lalao",
+    "lib.game.darkNote": "Xiangqi miafina (Cờ úp): misokatra ny jeneraly roa amin'ny fiandohana, afangaro ny sombiny hafa ary apetraka mihohoka. Mandeha toy ny sombiny mazàna manomboka amin'ny efajorony ny sombiny miafina (amin'ny efajoron'ny kalesy dia mandeha toy ny kalesy), avy eo avadika ary manomboka eo dia mandeha ho toy ny tena sombiny. Afaka mandeha manerana ny takelaka ny mpanolotsaina sy ny elefanta. Maty manontolo na tsy misy hetsika dia resy.",
+    "lib.game.darkBoard": "Takelaka Xiangqi miafina",
+    "lib.online.red": "Mena",
+    "lib.online.black": "Mainty",
+    "lib.game.captured": "Sombiny voasambotra",
+    "lib.online.pickTable": "Mitadiava mpifanandrina na manokafa latabatra ao amin'ny tontonana sisiny raha hanomboka.",
+    "lib.online.theirTurn": "Anjaran'ny mpifanandrina",
+    "lib.online.white": "Fotsy",
+    "lib.online.goNote": "Takelaka {n}×{n}, ny mainty no manomboka, mahazo komi {k} ny fotsy. Fanisana faritra; esory ny vato maty rehetra alohan'ny handalovana. Mifarana ny lalao rehefa samy mandalo misesy izy roa.",
+    "lib.online.boardSize": "Haben'ny takelaka",
+    "lib.online.oppPassed": "Nandalo ny mpifanandrina. Raha mandalo koa ianao dia mifarana ny lalao ary isaina.",
+    "lib.online.modeAi": "Milalao amin'ny solosaina",
+    "lib.online.modeOnline": "Milalao an-tserasera"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku lehibe 16x16 mampiasa 1-9 sy A-G, haavo 10 manomboka amin'ny mora ka hatramin'ny sarotra, misy naotra sy torohevitra."
     },
     "chess": {
-      "name": "Chess atrehin'ny solosaina",
-      "desc": "Milalao chess atrehin'ny solosaina amin'ny haavo 10 manomboka amin'ny mora ka hatramin'ny sarotra, misy roque, en passant ary fampiakarana."
+      "name": "Echecs",
+      "desc": "Lalao ny echecs amin'ny solosaina amin'ny ambaratonga 10 na an-tserasera: asao namana amin'ny rohy na milalaova amin'olona vaovao. Misy roque, en passant ary fampiakarana."
     },
     "xiangqi": {
-      "name": "Xiangqi atrehin'ny solosaina",
-      "desc": "Milalao chess sinoa (xiangqi) atrehin'ny solosaina amin'ny haavo 10, misy fanakanana ny tongotry ny soavaly, ny masoandron'ny elefanta, ny fakana ny tafondro ary ny lalàna momba ny jeneraly mifanatrika."
+      "name": "Xiangqi (echecs sinoa)",
+      "desc": "Lalao ny Xiangqi amin'ny solosaina amin'ny ambaratonga 10 na an-tserasera: asao namana amin'ny rohy na milalaova amin'olona vaovao. Fitsipika feno: tongotry ny soavaly, mason'ny elefanta, fitsambikin'ny tafondro ary jeneraly tsy tokony hifankahita."
     },
     "go-game": {
-      "name": "Go atrehin'ny solosaina",
-      "desc": "Milalao Go atrehin'ny solosaina amin'ny solaitrabe 5x5, 7x7 ary 9x9 amin'ny haavo 10, misy kajy isa mandeha ho azy amin'ny farany."
+      "name": "Go",
+      "desc": "Lalao ny Go amin'ny solosaina amin'ny ambaratonga 10 na an-tserasera amin'ny takelaka 9x9, 13x13 ary 19x19 miaraka amin'ny namana na mpifanandrina vaovao. Fanisana mandeha ho azy amin'ny farany."
     },
     "memory-shapes": {
       "name": "Fitadidiana endrika sy loko",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Birao an-tserasera",
       "desc": "Biraon'ny solosaina ao amin'ny mpitetinao: mpitantana rakitra, Notepad, mpijery sary sy PDF, milina fikajiana, kalandrie ary dabam-pako. Voatahiry ao amin'ny Google Drive-nao ny rakitra."
+    },
+    "co-up": {
+      "name": "Xiangqi miafina (Cờ úp)",
+      "desc": "Lalao ny Xiangqi miafina vietnamiana: manomboka mihohoka ny sombiny ary avadika aorian'ny hetsika voalohany. Amin'ny solosaina amin'ny ambaratonga 10 na an-tserasera miaraka amin'ny namana sy mpifanandrina vaovao."
     }
   },
   "s": {

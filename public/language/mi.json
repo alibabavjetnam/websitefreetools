@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Kua pau ngā ora — kua kitea katoatia ngā taera.",
     "lib.game.mmNote": "Pēhia Tīmata: ka whakaaturia ngā taera mō te {s} hēkona, ka huna. Maumahara ki te āhua me te tae o ia taera, ā, tīpakohia te taera e rite ana ki te āhua e whakaaturia ana. Ki te nui ake i te {l} ngā hapa, ka rahua te taumata.",
     "lib.game.fullscreen": "Mata katoa",
-    "lib.game.exitFullscreen": "Puta i te mata katoa"
+    "lib.game.exitFullscreen": "Puta i te mata katoa",
+    "lib.online.guest": "Manuhiri",
+    "lib.online.connFail": "Kāore i taea te hono ki te tūmau tākaro ipurangi. Tirohia tō hononga (kia whakawetohia rānei te ārai pānui) kātahi ka pāwhiri i Ngana anō.",
+    "lib.online.tableGone": "Kua wehe atu te tangata nāna te tēpu i whakatuwhera. Kōwhiria tētahi atu tēpu, whakatuwheratia rānei he mea hou.",
+    "lib.online.drawDeclined": "Kua whakakāhore te hoariri i te ōrite.",
+    "lib.online.opponent": "Hoariri",
+    "lib.online.copied": "Kua tāruatia te hono. Tukuna atu ki tō hoa kia tākaro tahi kōrua.",
+    "lib.online.waitingFor": "e tatari ana {n} h",
+    "lib.online.drawAgreed": "Kua whakaae ngā kaitākaro e rua ki te ōrite.",
+    "lib.online.draw": "I mutu te tākaro ki te ōrite.",
+    "lib.online.oppResigned": "Kua tuku te hoariri — kua toa koe!",
+    "lib.online.youResigned": "Kua tuku koe.",
+    "lib.online.youWin": "Kua toa koe!",
+    "lib.online.youLose": "Kua hinga koe.",
+    "lib.online.connecting": "E hono ana ki te tūmau tākaro ipurangi…",
+    "lib.online.retry": "Ngana anō",
+    "lib.online.quick": "Kimihia he hoariri",
+    "lib.online.createPublic": "Whakatuwhera tēpu tūmatanui",
+    "lib.online.createPrivate": "Whakatuwhera tēpu matatapu, pōwhiritia he hoa",
+    "lib.online.modesHint": "Ka puta ngā tēpu tūmatanui ki te rārangi, ā, ka taea e te katoa te hono mai. Ka taea anake te tae ki tētahi tēpu matatapu mā te hono pōwhiri.",
+    "lib.online.openTables": "Ngā tēpu tūmatanui e tatari ana",
+    "lib.online.join": "Hono",
+    "lib.online.noTables": "Kāore anō he tēpu e tatari ana. Pāwhiritia \"Kimihia he hoariri\", whakatuwheratia rānei he tēpu hou.",
+    "lib.online.privacy": "Ka haere ngā nekehanga mā tētahi tūmau MQTT tūmatanui kore utu, ā, ka whakamunatia mō ia tēpu; kāore te tūmau e penapena i ngā tākaro. Takiuru mā Google kia penapena ai i ngā tākaro kua oti ki tō Drive.",
+    "lib.online.waitingPublic": "Tēpu tūmatanui: e tatari ana kia hono mai tētahi…",
+    "lib.online.waitingPrivate": "Tēpu matatapu: tukuna tēnei hono ki tō hoa. Ka tīmata te tākaro ina whakatuwherahia e ia.",
+    "lib.online.leave": "Wehe i te tēpu",
+    "lib.online.full": "Kua tokorua kē ngā kaitākaro i tēnei tēpu. Kimihia tētahi atu tēpu, whakatuwheratia rānei he mea hou.",
+    "lib.online.backToList": "Hoki ki te rārangi tēpu",
+    "lib.online.you": "Koe",
+    "lib.online.oppLeft": "kua wehe i te tēpu",
+    "lib.online.oppOffline": "kua motu",
+    "lib.online.drawOffer": "Kei te tono te hoariri i te ōrite.",
+    "lib.online.accept": "Whakaae",
+    "lib.online.decline": "Whakakāhore",
+    "lib.online.drawSent": "Kua tonoa te ōrite…",
+    "lib.online.offerDraw": "Tonoa te ōrite",
+    "lib.online.resignConfirm": "Pāwhiritia anō kia tuku",
+    "lib.online.resign": "Tuku",
+    "lib.online.againSent": "E tatari ana kia whakaae te hoariri…",
+    "lib.online.againAccept": "E hiahia ana te hoariri ki te tākaro anō — Tākaro anō",
+    "lib.online.again": "Tākaro anō (whakawhiti tae)",
+    "lib.online.inviteLink": "Hono pōwhiri",
+    "lib.online.copy": "Tāruatia te hono",
+    "lib.online.share": "Tiri",
+    "lib.online.saved": "Kua penapenatia te tākaro ki Google Drive (kōpaki WFTools/Games).",
+    "lib.online.saving": "E penapena ana i te tākaro ki Google Drive…",
+    "lib.online.saveFail": "Kāore anō kia taea te penapena i te tākaro ki Drive.",
+    "lib.online.save": "Penapena i te tākaro ki Google Drive",
+    "lib.game.darkNote": "Xiangqi huna (Cờ úp): ka tīmata ngā tianara e rua kua tuwhera, ka ranua ētahi atu wāhanga, ka whakatakotoria kōaro. Ka neke te wāhanga huna pērā i te wāhanga e tīmata ana i tōna tapawhā (i te tapawhā o te hariata, ka neke hei hariata), kātahi ka hurihia, ā, mai i reira ka neke hei wāhanga tūturu. Ka taea e ngā kaitohutohu me ngā arewhana te haere ki ngā wāhi katoa o te papa. Ko te mate-tū, te kore nekehanga rānei, he hinganga.",
+    "lib.game.darkBoard": "Papa Xiangqi huna",
+    "lib.online.red": "Whero",
+    "lib.online.black": "Pango",
+    "lib.game.captured": "Ngā wāhanga i hopukina",
+    "lib.online.pickTable": "Kimihia he hoariri, whakatuwheratia rānei he tēpu i te paewhiri taha kia tīmata.",
+    "lib.online.theirTurn": "Tō te hoariri wā",
+    "lib.online.white": "Mā",
+    "lib.online.goNote": "Papa {n}×{n}, ka tīmata te pango, ka whiwhi te mā i te komi {k}. Tatau rohe; tangohia ngā kōhatu mate katoa i mua i te whakawhiti. Ka mutu te tākaro ina whakawhiti raua tahi i muri tētahi i tētahi.",
+    "lib.online.boardSize": "Rahi o te papa",
+    "lib.online.oppPassed": "Kua whakawhiti te hoariri. Ki te whakawhiti hoki koe, ka mutu te tākaro, ka tatauria.",
+    "lib.online.modeAi": "Tākaro ki te rorohiko",
+    "lib.online.modeOnline": "Tākaro ā-ipurangi"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "He Sudoku 16x16 nui e whakamahi ana i te 1-9 me te A-G, 10 ngā taumata mai i te māmā ki te uaua, me ngā tuhipoka me ngā tohu āwhina."
     },
     "chess": {
-      "name": "Whakatū (Chess) i te Rorohiko",
-      "desc": "Tākarohia te chess ki te rorohiko, 10 ngā taumata mai i te māmā ki te uaua, me te castling, te en passant me te whakatairanga."
+      "name": "Tūmatarau",
+      "desc": "Tākarohia te tūmatarau ki te rorohiko i ngā taumata 10, ā-ipurangi rānei: pōwhiritia he hoa mā te hono, tākaro rānei ki tētahi tangata hou. Kei roto te whakapā pā, te en passant me te whakatairanga."
     },
     "xiangqi": {
-      "name": "Xiangqi i te Rorohiko",
-      "desc": "Tākarohia te chess Hainamana (xiangqi) ki te rorohiko, 10 ngā taumata, me te aukati i te waewae hōiho, te kanohi arewhana, te hopu a te pūkōkiri me te ture o ngā tianara tū aroaro."
+      "name": "Xiangqi (tūmatarau Hainamana)",
+      "desc": "Tākarohia te Xiangqi ki te rorohiko i ngā taumata 10, ā-ipurangi rānei: pōwhiritia he hoa mā te hono, tākaro rānei ki tētahi tangata hou. Ngā ture katoa: te waewae o te hōiho, te kanohi o te arewhana, te peke o te pū repo me ngā tianara kāore e āhei kia kite tētahi i tētahi."
     },
     "go-game": {
-      "name": "Go i te Rorohiko",
-      "desc": "Tākarohia te Go ki te rorohiko i runga i ngā papa 5x5, 7x7 me 9x9, 10 ngā taumata, me te tatau piro aunoa i te mutunga."
+      "name": "Go",
+      "desc": "Tākarohia te Go ki te rorohiko i ngā taumata 10, ā-ipurangi rānei i ngā papa 9x9, 13x13, 19x19 me tētahi hoa, hoariri hou rānei. Tatau aunoa i te mutunga."
     },
     "memory-shapes": {
       "name": "Maumahara Āhua me te Tae",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Papamahi tuihono",
       "desc": "He papamahi rorohiko i tō pūtirotiro: kaiwhakahaere kōnae, Notepad, mātakitaki whakaahua me PDF, tātaitai, maramataka me te ipu para. Ka tiakina ngā kōnae ki tō Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi huna (Cờ úp)",
+      "desc": "Tākarohia te Xiangqi huna o Whītināmu: ka tīmata ngā wāhanga kōaro, ā, ka hurihia i muri i te nekehanga tuatahi. Ki te rorohiko i ngā taumata 10, ā-ipurangi rānei me ngā hoa me ngā hoariri hou."
     }
   },
   "s": {

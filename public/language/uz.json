@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Jon qolmadi — barcha plitkalar ochildi.",
     "lib.game.mmNote": "Boshlash tugmasini bosing: plitkalar {s} soniya ko‘rsatiladi, so‘ng yashiriladi. Har bir plitkaning shakli va rangini eslab qoling, so‘ng ko‘rsatilgan shaklga mos plitkani tanlang. {l} tadan ko‘p xato qilsangiz, daraja o‘tilmaydi.",
     "lib.game.fullscreen": "To‘liq ekran",
-    "lib.game.exitFullscreen": "To‘liq ekrandan chiqish"
+    "lib.game.exitFullscreen": "To‘liq ekrandan chiqish",
+    "lib.online.guest": "Mehmon",
+    "lib.online.connFail": "Onlayn o'yin serveriga ulanib bo'lmadi. Ulanishni tekshiring (yoki reklama blokerini o'chiring) va Qayta urinish tugmasini bosing.",
+    "lib.online.tableGone": "Stolni ochgan o'yinchi chiqib ketdi. Boshqa stolni tanlang yoki yangisini oching.",
+    "lib.online.drawDeclined": "Raqib durangni rad etdi.",
+    "lib.online.opponent": "Raqib",
+    "lib.online.copied": "Havola nusxalandi. Birga o'ynash uchun uni do'stingizga yuboring.",
+    "lib.online.waitingFor": "{n} s kutmoqda",
+    "lib.online.drawAgreed": "Ikkala o'yinchi durangga kelishdi.",
+    "lib.online.draw": "O'yin durang bilan tugadi.",
+    "lib.online.oppResigned": "Raqib taslim bo'ldi — siz yutdingiz!",
+    "lib.online.youResigned": "Siz taslim bo'ldingiz.",
+    "lib.online.youWin": "Siz yutdingiz!",
+    "lib.online.youLose": "Siz yutqazdingiz.",
+    "lib.online.connecting": "Onlayn o'yin serveriga ulanmoqda…",
+    "lib.online.retry": "Qayta urinish",
+    "lib.online.quick": "Raqib topish",
+    "lib.online.createPublic": "Ochiq stol ochish",
+    "lib.online.createPrivate": "Shaxsiy stol ochib, do'stni taklif qilish",
+    "lib.online.modesHint": "Ochiq stollar ro'yxatda ko'rinadi va har kim qo'shila oladi. Shaxsiy stolga faqat taklif havolasi orqali kiriladi.",
+    "lib.online.openTables": "Kutayotgan ochiq stollar",
+    "lib.online.join": "Qo'shilish",
+    "lib.online.noTables": "Hozircha kutayotgan stol yo'q. \"Raqib topish\" tugmasini bosing yoki yangi stol oching.",
+    "lib.online.privacy": "Yurishlar bepul ochiq MQTT serveri orqali o'tadi va har bir stol uchun shifrlanadi; server o'yinlarni saqlamaydi. Tugagan o'yinlarni Drive'ga saqlash uchun Google orqali kiring.",
+    "lib.online.waitingPublic": "Ochiq stol: kimdir qo'shilishini kutmoqda…",
+    "lib.online.waitingPrivate": "Shaxsiy stol: bu havolani do'stingizga yuboring. U ochganda o'yin boshlanadi.",
+    "lib.online.leave": "Stoldan chiqish",
+    "lib.online.full": "Bu stolda allaqachon 2 o'yinchi bor. Boshqa stol toping yoki yangisini oching.",
+    "lib.online.backToList": "Stollar ro'yxatiga qaytish",
+    "lib.online.you": "Siz",
+    "lib.online.oppLeft": "stoldan chiqdi",
+    "lib.online.oppOffline": "uzilgan",
+    "lib.online.drawOffer": "Raqib durang taklif qilmoqda.",
+    "lib.online.accept": "Qabul qilish",
+    "lib.online.decline": "Rad etish",
+    "lib.online.drawSent": "Durang taklif qilindi…",
+    "lib.online.offerDraw": "Durang taklif qilish",
+    "lib.online.resignConfirm": "Taslim bo'lish uchun yana bosing",
+    "lib.online.resign": "Taslim bo'lish",
+    "lib.online.againSent": "Raqibning roziligini kutmoqda…",
+    "lib.online.againAccept": "Raqib revansh xohlaydi — Yana o'ynash",
+    "lib.online.again": "Yana o'ynash (ranglarni almashtirish)",
+    "lib.online.inviteLink": "Taklif havolasi",
+    "lib.online.copy": "Havolani nusxalash",
+    "lib.online.share": "Ulashish",
+    "lib.online.saved": "O'yin Google Drive'ga saqlandi (WFTools/Games jildi).",
+    "lib.online.saving": "O'yin Google Drive'ga saqlanmoqda…",
+    "lib.online.saveFail": "O'yinni hozircha Drive'ga saqlab bo'lmadi.",
+    "lib.online.save": "O'yinni Google Drive'ga saqlash",
+    "lib.game.darkNote": "Yashirin Syangsi (Cờ úp): ikkala general ochiq boshlaydi, qolgan donalar aralashtirilib, yuzi pastga qo'yiladi. Yashirin dona o'z katagida odatda turadigan dona kabi yuradi (arava katagida arava kabi), keyin ochiladi va shundan so'ng haqiqiy donasi sifatida yuradi. Maslahatchilar va fillar butun taxta bo'ylab yura oladi. Mat yoki yurish yo'qligi mag'lubiyatdir.",
+    "lib.game.darkBoard": "Yashirin Syangsi taxtasi",
+    "lib.online.red": "Qizil",
+    "lib.online.black": "Qora",
+    "lib.game.captured": "Olingan donalar",
+    "lib.online.pickTable": "Boshlash uchun raqib toping yoki yon panelda stol oching.",
+    "lib.online.theirTurn": "Raqibning navbati",
+    "lib.online.white": "Oq",
+    "lib.online.goNote": "{n}×{n} taxta, qora boshlaydi, oq {k} komi oladi. Hudud bo'yicha hisob; pas aytishdan oldin barcha o'lik toshlarni oling. Ikkalasi ketma-ket pas aytganda o'yin tugaydi.",
+    "lib.online.boardSize": "Taxta o'lchami",
+    "lib.online.oppPassed": "Raqib pas aytdi. Siz ham pas aytsangiz, o'yin tugaydi va hisoblanadi.",
+    "lib.online.modeAi": "Kompyuter bilan o'ynash",
+    "lib.online.modeOnline": "Onlayn o'ynash"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "1-9 va A-G dan foydalanadigan katta 16x16 Sudoku, oddiydan qiyingacha 10 daraja, qaydlar va maslahatlar bilan."
     },
     "chess": {
-      "name": "Kompyuterga qarshi shaxmat",
-      "desc": "Kompyuterga qarshi shaxmat o‘ynang: oddiydan qiyingacha 10 daraja, rokirovka, en passant va piyoda almashinuvi bilan."
+      "name": "Shaxmat",
+      "desc": "Shaxmatni kompyuter bilan 10 darajada yoki onlayn o'ynang: do'stingizni havola bilan taklif qiling yoki yangi kishi bilan o'ynang. Rokirovka, o'tayotganda olish va aylanish bilan."
     },
     "xiangqi": {
-      "name": "Kompyuterga qarshi Syanqi",
-      "desc": "Kompyuterga qarshi xitoy shaxmati (syanqi) o‘ynang: 10 daraja, ot oyog‘ini to‘sish, fil ko‘zi, to‘p bilan olish va generallarning ro‘para turish qoidasi bilan."
+      "name": "Syangsi (Xitoy shaxmati)",
+      "desc": "Syangsini kompyuter bilan 10 darajada yoki onlayn o'ynang: do'stingizni havola bilan taklif qiling yoki yangi kishi bilan o'ynang. To'liq qoidalar: otning oyog'i, filning ko'zi, to'pning sakrashi va bir-birini ko'rmasligi kerak bo'lgan generallar."
     },
     "go-game": {
-      "name": "Kompyuterga qarshi Go",
-      "desc": "Kompyuterga qarshi Go o‘ynang: 5x5, 7x7 va 9x9 taxtalarda 10 daraja, oxirida avtomatik hisob bilan."
+      "name": "Go",
+      "desc": "Goni kompyuter bilan 10 darajada yoki onlayn 9x9, 13x13 va 19x19 taxtalarda do'st yoki yangi raqib bilan o'ynang. Oxirida avtomatik hisob."
     },
     "memory-shapes": {
       "name": "Shakl va rang xotirasi",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Onlayn ish stoli",
       "desc": "Brauzeringizdagi kompyuter ish stoli: fayl menejeri, Notepad, rasm va PDF ko‘ruvchi, kalkulyator, taqvim va savat. Fayllar Google Drive’ingizga saqlanadi."
+    },
+    "co-up": {
+      "name": "Yashirin Syangsi (Cờ úp)",
+      "desc": "Vyetnam yashirin Syangsisini o'ynang: donalar yuzi pastga boshlaydi va birinchi yurishdan keyin ochiladi. Kompyuter bilan 10 darajada yoki onlayn do'stlar va yangi raqiblar bilan."
     }
   },
   "s": {

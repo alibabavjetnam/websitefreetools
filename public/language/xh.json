@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Ubomi buphelile — zonke iitayile ziveziwe ngoku.",
     "lib.game.mmNote": "Cinezela Qala: iitayile zibonakaliswa imizuzwana eyi-{s}, emva koko zifihlwe. Khumbula umbumbo nebala letayile nganye, emva koko khetha itayile edibana nombumbo obonisiweyo. Iimpazamo ezingaphezu kwe-{l} zenza ukuba inqanaba lingagqitywa.",
     "lib.game.fullscreen": "Isikrini esipheleleyo",
-    "lib.game.exitFullscreen": "Phuma kwisikrini esipheleleyo"
+    "lib.game.exitFullscreen": "Phuma kwisikrini esipheleleyo",
+    "lib.online.guest": "Undwendwe",
+    "lib.online.connFail": "Akukwazekanga ukudibanisa neseva yemidlalo ye-intanethi. Jonga uqhagamshelo (okanye ucime isithintelo sezibhengezo) uze ucofe Zama kwakhona.",
+    "lib.online.tableGone": "Lowo wavula itafile umkile. Khetha enye itafile okanye uvule entsha.",
+    "lib.online.drawDeclined": "Umchasi walile ukulingana.",
+    "lib.online.opponent": "Umchasi",
+    "lib.online.copied": "Ikhonkco likhutshelwe. Lithumele kumhlobo wakho ukuze nidlale kunye.",
+    "lib.online.waitingFor": "ulindile imizuzwana eyi-{n}",
+    "lib.online.drawAgreed": "Bobabini abadlali bavumelene ngokulingana.",
+    "lib.online.draw": "Umdlalo uphele ngokulingana.",
+    "lib.online.oppResigned": "Umchasi unikezele — uphumelele!",
+    "lib.online.youResigned": "Unikezele.",
+    "lib.online.youWin": "Uphumelele!",
+    "lib.online.youLose": "Woyisiwe.",
+    "lib.online.connecting": "Iyadibanisa neseva yemidlalo ye-intanethi…",
+    "lib.online.retry": "Zama kwakhona",
+    "lib.online.quick": "Fumana umchasi",
+    "lib.online.createPublic": "Vula itafile likawonke-wonke",
+    "lib.online.createPrivate": "Vula itafile labucala uze umeme umhlobo",
+    "lib.online.modesHint": "Iitafile zikawonke-wonke ziyabonakala kuluhlu kwaye nabani na angajoyina. Itafile labucala lingenwa kuphela ngekhonkco lesimemo.",
+    "lib.online.openTables": "Iitafile zikawonke-wonke ezilindileyo",
+    "lib.online.join": "Joyina",
+    "lib.online.noTables": "Akukabikho tafile ilindileyo. Cofa \"Fumana umchasi\" okanye uvule itafile entsha.",
+    "lib.online.privacy": "Iintshukumo zidlula kwiseva ye-MQTT kawonke-wonke esimahla kwaye zifihlwe ngokwetafile nganye; iseva ayigcini midlalo. Ngena nge-Google ukuze ugcine imidlalo egqityiweyo kwi-Drive yakho.",
+    "lib.online.waitingPublic": "Itafile likawonke-wonke: kulindwe ukuba kujoyine umntu…",
+    "lib.online.waitingPrivate": "Itafile labucala: thumela eli khonkco kumhlobo wakho. Umdlalo uqala xa elivula.",
+    "lib.online.leave": "Shiya itafile",
+    "lib.online.full": "Le tafile sele inabadlali aba-2. Fumana enye itafile okanye uvule entsha.",
+    "lib.online.backToList": "Buyela kuluhlu lweetafile",
+    "lib.online.you": "Wena",
+    "lib.online.oppLeft": "ushiye itafile",
+    "lib.online.oppOffline": "akaqhagamshelwanga",
+    "lib.online.drawOffer": "Umchasi ucebisa ukulingana.",
+    "lib.online.accept": "Yamkela",
+    "lib.online.decline": "Yala",
+    "lib.online.drawSent": "Ukulingana kucetyisiwe…",
+    "lib.online.offerDraw": "Cebisa ukulingana",
+    "lib.online.resignConfirm": "Cofa kwakhona ukuze unikezele",
+    "lib.online.resign": "Nikezela",
+    "lib.online.againSent": "Kulindwe ukuba umchasi avume…",
+    "lib.online.againAccept": "Umchasi ufuna umdlalo wokuphindezela — Dlala kwakhona",
+    "lib.online.again": "Dlala kwakhona (tshintsha imibala)",
+    "lib.online.inviteLink": "Ikhonkco lesimemo",
+    "lib.online.copy": "Kopa ikhonkco",
+    "lib.online.share": "Yabelana",
+    "lib.online.saved": "Umdlalo ugcinwe kwi-Google Drive (ifolda WFTools/Games).",
+    "lib.online.saving": "Igcina umdlalo kwi-Google Drive…",
+    "lib.online.saveFail": "Umdlalo awukakwazi ukugcinwa kwi-Drive.",
+    "lib.online.save": "Gcina umdlalo kwi-Google Drive",
+    "lib.game.darkNote": "I-Xiangqi efihliweyo (Cờ úp): bobabini oonjengele baqala bevulekile, amanye amaqhekeza axutywe kwaye abekwe ejonge ezantsi. Iqhekeza elifihliweyo lihamba njengeqhekeza eliqhele ukuqala kwisikwere salo (kwisikwere senqwelo lihamba njengenqwelo), emva koko liyajikwa kwaye ukusukela apho lihamba njengeqhekeza lalo lokwenene. Abacebisi neendlovu banokuhamba ibhodi yonke. I-checkmate okanye ukungabi nantshukumo kuthetha ukoyiswa.",
+    "lib.game.darkBoard": "Ibhodi ye-Xiangqi efihliweyo",
+    "lib.online.red": "Obomvu",
+    "lib.online.black": "Omnyama",
+    "lib.game.captured": "Amaqhekeza athinjiweyo",
+    "lib.online.pickTable": "Fumana umchasi okanye uvule itafile kwiphaneli esecaleni ukuze uqale.",
+    "lib.online.theirTurn": "Ithuba lomchasi",
+    "lib.online.white": "Omhlophe",
+    "lib.online.goNote": "Ibhodi eyi-{n}×{n}, omnyama uqala, omhlophe ufumana i-komi eyi-{k}. Ukubala ummandla; susa onke amatye afileyo phambi kokudlula. Umdlalo uphela xa bobabini bedlula belandelelana.",
+    "lib.online.boardSize": "Ubungakanani bebhodi",
+    "lib.online.oppPassed": "Umchasi udlulile. Ukuba nawe uyadlula, umdlalo uyaphela kwaye ubalwe.",
+    "lib.online.modeAi": "Dlala nekhompyutha",
+    "lib.online.modeOnline": "Dlala kwi-intanethi"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "I-Sudoku enkulu 16x16 esebenzisa i-1-9 ne-A-G, amanqanaba ali-10 ukusuka kokulula ukuya kokunzima, ngamanqaku nezalathiso."
     },
     "chess": {
-      "name": "Chess vs Ikhompyutha",
-      "desc": "Dlala i-chess ngokuchasene nekhompyutha kumanqanaba ali-10 ukusuka kokulula ukuya kokunzima, nge-castling, en passant nokunyuselwa."
+      "name": "I-chess",
+      "desc": "Dlala i-chess nekhompyutha kumanqanaba ali-10 okanye kwi-intanethi: mema umhlobo ngekhonkco okanye udlale nomntu omtsha. Ine-castling, en passant nokunyuselwa."
     },
     "xiangqi": {
-      "name": "Xiangqi vs Ikhompyutha",
-      "desc": "Dlala i-chess yaseTshayina (xiangqi) ngokuchasene nekhompyutha kumanqanaba ali-10, ngokuvalwa komlenze wehashe, iliso lendlovu, ukubamba ngecannon nomthetho wamajenelali ajongana."
+      "name": "I-Xiangqi (i-chess yaseTshayina)",
+      "desc": "Dlala i-Xiangqi nekhompyutha kumanqanaba ali-10 okanye kwi-intanethi: mema umhlobo ngekhonkco okanye udlale nomntu omtsha. Imithetho epheleleyo: umlenze wehashe, iliso lendlovu, ukutsiba kwenkanunu noonjengele abangavumelekanga ukubonana."
     },
     "go-game": {
-      "name": "Go vs Ikhompyutha",
-      "desc": "Dlala i-Go ngokuchasene nekhompyutha kumabhodi e-5x5, 7x7 ne-9x9 kumanqanaba ali-10, ngokubala amanqaku ngokuzenzekelayo ekugqibeleni."
+      "name": "I-Go",
+      "desc": "Dlala i-Go nekhompyutha kumanqanaba ali-10 okanye kwi-intanethi kwiibhodi ze-9x9, 13x13 ne-19x19 nomhlobo okanye umchasi omtsha. Ukubala okuzenzekelayo ekugqibeleni."
     },
     "memory-shapes": {
       "name": "Inkumbulo yoMbumbo noMbala",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Idesktop ekwi-intanethi",
       "desc": "Idesktop yekhompyutha kwisiphequluli sakho: umphathi weefayile, Notepad, isibonisi semifanekiso nesePDF, isixhobo sokubala, ikhalenda nomgqomo. Iifayile zigcinwa kwiGoogle Drive yakho."
+    },
+    "co-up": {
+      "name": "I-Xiangqi efihliweyo (Cờ úp)",
+      "desc": "Dlala i-Xiangqi efihliweyo yaseVietnam: amaqhekeza aqala ejonge ezantsi kwaye ajikwa emva kwentshukumo yokuqala. Nekhompyutha kumanqanaba ali-10 okanye kwi-intanethi nabahlobo nabachasi abatsha."
     }
   },
   "s": {

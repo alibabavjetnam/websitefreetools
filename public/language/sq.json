@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Mbaruan jetët — të gjitha pllakat tani janë zbuluar.",
     "lib.game.mmNote": "Shtypni Fillo: pllakat shfaqen për {s} sekonda dhe pastaj fshihen. Mbani mend formën dhe ngjyrën e secilës pllakë, pastaj zgjidhni pllakën që përputhet me formën e shfaqur. Më shumë se {l} gabime e dështojnë nivelin.",
     "lib.game.fullscreen": "Ekran i plotë",
-    "lib.game.exitFullscreen": "Dil nga ekrani i plotë"
+    "lib.game.exitFullscreen": "Dil nga ekrani i plotë",
+    "lib.online.guest": "Mysafir",
+    "lib.online.connFail": "Nuk u lidh dot me serverin e lojës online. Kontrollo lidhjen (ose çaktivizo bllokuesin e reklamave) dhe kliko Provo sërish.",
+    "lib.online.tableGone": "Ai që hapi tavolinën është larguar. Zgjidh një tavolinë tjetër ose hap një të re.",
+    "lib.online.drawDeclined": "Kundërshtari refuzoi barazimin.",
+    "lib.online.opponent": "Kundërshtari",
+    "lib.online.copied": "Lidhja u kopjua. Dërgoja mikut për të luajtur bashkë.",
+    "lib.online.waitingFor": "pret {n} s",
+    "lib.online.drawAgreed": "Të dy lojtarët ranë dakord për barazim.",
+    "lib.online.draw": "Loja përfundoi barazim.",
+    "lib.online.oppResigned": "Kundërshtari u dorëzua — fitove!",
+    "lib.online.youResigned": "U dorëzove.",
+    "lib.online.youWin": "Fitove!",
+    "lib.online.youLose": "Humbe.",
+    "lib.online.connecting": "Duke u lidhur me serverin e lojës online…",
+    "lib.online.retry": "Provo sërish",
+    "lib.online.quick": "Gjej kundërshtar",
+    "lib.online.createPublic": "Hap tavolinë publike",
+    "lib.online.createPrivate": "Hap tavolinë private dhe fto një mik",
+    "lib.online.modesHint": "Tavolinat publike shfaqen në listë dhe kushdo mund të bashkohet. Në tavolinë private hyhet vetëm me lidhjen e ftesës.",
+    "lib.online.openTables": "Tavolina publike në pritje",
+    "lib.online.join": "Bashkohu",
+    "lib.online.noTables": "Ende nuk pret asnjë tavolinë. Kliko \"Gjej kundërshtar\" ose hap një tavolinë të re.",
+    "lib.online.privacy": "Lëvizjet kalojnë përmes një serveri publik MQTT falas dhe enkriptohen për çdo tavolinë; serveri nuk ruan lojëra. Hyr me Google për të ruajtur lojërat e përfunduara në Drive-in tënd.",
+    "lib.online.waitingPublic": "Tavolinë publike: duke pritur që dikush të bashkohet…",
+    "lib.online.waitingPrivate": "Tavolinë private: dërgoja këtë lidhje mikut. Loja nis kur ta hapë.",
+    "lib.online.leave": "Largohu nga tavolina",
+    "lib.online.full": "Kjo tavolinë ka tashmë 2 lojtarë. Gjej një tavolinë tjetër ose hap një të re.",
+    "lib.online.backToList": "Kthehu te lista e tavolinave",
+    "lib.online.you": "Ti",
+    "lib.online.oppLeft": "u largua nga tavolina",
+    "lib.online.oppOffline": "i shkëputur",
+    "lib.online.drawOffer": "Kundërshtari ofron barazim.",
+    "lib.online.accept": "Prano",
+    "lib.online.decline": "Refuzo",
+    "lib.online.drawSent": "Barazimi u ofrua…",
+    "lib.online.offerDraw": "Ofro barazim",
+    "lib.online.resignConfirm": "Kliko sërish për t'u dorëzuar",
+    "lib.online.resign": "Dorëzohu",
+    "lib.online.againSent": "Duke pritur pëlqimin e kundërshtarit…",
+    "lib.online.againAccept": "Kundërshtari kërkon revansh — Luaj sërish",
+    "lib.online.again": "Luaj sërish (ndërro ngjyrat)",
+    "lib.online.inviteLink": "Lidhje ftese",
+    "lib.online.copy": "Kopjo lidhjen",
+    "lib.online.share": "Ndaj",
+    "lib.online.saved": "Loja u ruajt në Google Drive (dosja WFTools/Games).",
+    "lib.online.saving": "Duke ruajtur lojën në Google Drive…",
+    "lib.online.saveFail": "Loja nuk u ruajt dot ende në Drive.",
+    "lib.online.save": "Ruaj lojën në Google Drive",
+    "lib.game.darkNote": "Xiangqi i fshehur (Cờ úp): të dy gjeneralët nisin të hapur, gurët e tjerë përzihen dhe vendosen përmbys. Një gur i fshehur lëviz si guri që zakonisht nis në kutinë e tij (në kutinë e karrocës lëviz si karrocë), pastaj kthehet dhe më pas lëviz si guri i tij i vërtetë. Këshilltarët dhe elefantët mund të lëvizin në gjithë tabelën. Mati ose mungesa e lëvizjeve do të thotë humbje.",
+    "lib.game.darkBoard": "Tabela e Xiangqi të fshehur",
+    "lib.online.red": "E kuqe",
+    "lib.online.black": "E zezë",
+    "lib.game.captured": "Gurë të kapur",
+    "lib.online.pickTable": "Gjej një kundërshtar ose hap një tavolinë në panelin anësor për të filluar.",
+    "lib.online.theirTurn": "Radha e kundërshtarit",
+    "lib.online.white": "E bardhë",
+    "lib.online.goNote": "Tabelë {n}×{n}, nis e zeza, e bardha merr {k} komi. Numërim sipas sipërfaqes; hiq të gjithë gurët e vdekur para se të kalosh. Loja mbaron kur të dy kalojnë njëri pas tjetrit.",
+    "lib.online.boardSize": "Madhësia e tabelës",
+    "lib.online.oppPassed": "Kundërshtari kaloi. Nëse kalon edhe ti, loja mbaron dhe numërohet.",
+    "lib.online.modeAi": "Luaj me kompjuterin",
+    "lib.online.modeOnline": "Luaj online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku i madh 16x16 me 1-9 dhe A-G, 10 nivele nga e lehta te e vështira, me shënime dhe ndihma."
     },
     "chess": {
-      "name": "Shah kundër kompjuterit",
-      "desc": "Luani shah kundër kompjuterit në 10 nivele nga e lehta te e vështira, me rokadë, en passant dhe promovim."
+      "name": "Shah",
+      "desc": "Luaj shah me kompjuterin në 10 nivele ose online: fto një mik me lidhje ose luaj me dikë të ri. Me rokadë, en passant dhe promovim."
     },
     "xiangqi": {
-      "name": "Xiangqi kundër kompjuterit",
-      "desc": "Luani shahun kinez (xiangqi) kundër kompjuterit në 10 nivele, me bllokimin e këmbës së kalit, syrin e elefantit, kapjen me top dhe rregullin e gjeneralëve përballë."
+      "name": "Xiangqi (shah kinez)",
+      "desc": "Luaj Xiangqi me kompjuterin në 10 nivele ose online: fto një mik me lidhje ose luaj me dikë të ri. Rregulla të plota: këmba e kalit, syri i elefantit, kërcimi i topit dhe gjeneralët që nuk lejohen të shihen."
     },
     "go-game": {
-      "name": "Go kundër kompjuterit",
-      "desc": "Luani Go kundër kompjuterit në tabela 5x5, 7x7 dhe 9x9 në 10 nivele, me numërim automatik të pikëve në fund."
+      "name": "Go",
+      "desc": "Luaj Go me kompjuterin në 10 nivele ose online në tabela 9x9, 13x13 dhe 19x19 me një mik ose kundërshtar të ri. Numërim automatik në fund."
     },
     "memory-shapes": {
       "name": "Kujtesa e formave dhe ngjyrave",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktop në internet",
       "desc": "Një desktop kompjuteri në shfletuesin tënd: menaxher skedarësh, Notepad, shikues imazhesh dhe PDF, makinë llogaritëse, kalendar dhe kosh. Skedarët ruhen në Google Drive-in tënd."
+    },
+    "co-up": {
+      "name": "Xiangqi i fshehur (Cờ úp)",
+      "desc": "Luaj Xiangqi të fshehur vietnamez: gurët nisin përmbys dhe kthehen pas lëvizjes së parë. Me kompjuterin në 10 nivele ose online me miq dhe kundërshtarë të rinj."
     }
   },
   "s": {

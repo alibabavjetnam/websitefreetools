@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Hupenyu hwapera — matile ose ave kuonekwa.",
     "lib.game.mmNote": "Dzvanya Tanga: matile anoratidzwa kwemasekonzi {s}, ozvivigwa. Rangarira chimiro nemavara etile rimwe nerimwe, wobva wasarudza tile inofanana nechimiro chaunoratidzwa. Kukanganisa kupfuura {l} kunoita kuti chikamu chikundwe.",
     "lib.game.fullscreen": "Sikirini yese",
-    "lib.game.exitFullscreen": "Buda pasikirini yese"
+    "lib.game.exitFullscreen": "Buda pasikirini yese",
+    "lib.online.guest": "Muenzi",
+    "lib.online.connFail": "Hazvina kukwanisa kubatana nesevha yemitambo yepamhepo. Tarisa kubatana kwako (kana dzima chivharidzi chezviziviso) wobva wadzvanya Edza zvakare.",
+    "lib.online.tableGone": "Akavhura tafura aenda. Sarudza imwe tafura kana kuvhura itsva.",
+    "lib.online.drawDeclined": "Mukwikwidzi aramba mangange.",
+    "lib.online.opponent": "Mukwikwidzi",
+    "lib.online.copied": "Link yakopwa. Itumire kushamwari yako kuti mutambe pamwe chete.",
+    "lib.online.waitingFor": "yakamirira masekondi {n}",
+    "lib.online.drawAgreed": "Vatambi vese vabvumirana nemangange.",
+    "lib.online.draw": "Mutambo wapera nemangange.",
+    "lib.online.oppResigned": "Mukwikwidzi akanda pasi — wakunda!",
+    "lib.online.youResigned": "Wakanda pasi.",
+    "lib.online.youWin": "Wakunda!",
+    "lib.online.youLose": "Wakundwa.",
+    "lib.online.connecting": "Kubatana nesevha yemitambo yepamhepo…",
+    "lib.online.retry": "Edza zvakare",
+    "lib.online.quick": "Tsvaga mukwikwidzi",
+    "lib.online.createPublic": "Vhura tafura yeruzhinji",
+    "lib.online.createPrivate": "Vhura tafura yakavanzika ukoke shamwari",
+    "lib.online.modesHint": "Tafura dzeruzhinji dzinoratidzwa pane rondedzero uye chero munhu anogona kujoinha. Tafura yakavanzika inosvikwa chete nelink yekukoka.",
+    "lib.online.openTables": "Tafura dzeruzhinji dzakamirira",
+    "lib.online.join": "Joinha",
+    "lib.online.noTables": "Hapana tafura yakamirira parizvino. Dzvanya \"Tsvaga mukwikwidzi\" kana kuvhura tafura itsva.",
+    "lib.online.privacy": "Mafambiro anopfuura nemusevha yeMQTT yeruzhinji yemahara uye anovharidzirwa patafura imwe neimwe; sevha haichengete mitambo. Pinda neGoogle kuti uchengete mitambo yapera muDrive yako.",
+    "lib.online.waitingPublic": "Tafura yeruzhinji: kumirira kuti mumwe ajoinhe…",
+    "lib.online.waitingPrivate": "Tafura yakavanzika: tumira link iyi kushamwari yako. Mutambo unotanga kana yaivhura.",
+    "lib.online.leave": "Siya tafura",
+    "lib.online.full": "Tafura iyi yatova nevatambi 2. Tsvaga imwe tafura kana kuvhura itsva.",
+    "lib.online.backToList": "Dzokera kurondedzero yetafura",
+    "lib.online.you": "Iwe",
+    "lib.online.oppLeft": "asiya tafura",
+    "lib.online.oppOffline": "hapana kubatana",
+    "lib.online.drawOffer": "Mukwikwidzi anokurudzira mangange.",
+    "lib.online.accept": "Bvuma",
+    "lib.online.decline": "Ramba",
+    "lib.online.drawSent": "Mangange akurudzirwa…",
+    "lib.online.offerDraw": "Kurudzira mangange",
+    "lib.online.resignConfirm": "Dzvanya zvakare kuti ukande pasi",
+    "lib.online.resign": "Kanda pasi",
+    "lib.online.againSent": "Kumirira kuti mukwikwidzi abvume…",
+    "lib.online.againAccept": "Mukwikwidzi anoda kutsiva — Tamba zvakare",
+    "lib.online.again": "Tamba zvakare (chinja mavara)",
+    "lib.online.inviteLink": "Link yekukoka",
+    "lib.online.copy": "Kopa link",
+    "lib.online.share": "Govera",
+    "lib.online.saved": "Mutambo wachengetwa muGoogle Drive (forodha WFTools/Games).",
+    "lib.online.saving": "Kuchengeta mutambo muGoogle Drive…",
+    "lib.online.saveFail": "Mutambo hauna kugona kuchengetwa muDrive parizvino.",
+    "lib.online.save": "Chengeta mutambo muGoogle Drive",
+    "lib.game.darkNote": "Xiangqi yakavanzika (Cờ úp): magenerari ese ari maviri anotanga akavhurika, zvimwe zvidimbu zvinosanganiswa zvoiswa zvakatarisa pasi. Chidimbu chakavanzika chinofamba sechidimbu chinowanzotanga pasikweya yacho (pasikweya yengoro chinofamba sengoro), chozopidigurwa uye kubva ipapo chinofamba sechidimbu chacho chaicho. Vapi vezano nenzou vanogona kufamba bhodhi rese. Checkmate kana kushaya mafambiro zvinoreva kukundwa.",
+    "lib.game.darkBoard": "Bhodhi reXiangqi yakavanzika",
+    "lib.online.red": "Tsvuku",
+    "lib.online.black": "Nhema",
+    "lib.game.captured": "Zvidimbu zvakatorwa",
+    "lib.online.pickTable": "Tsvaga mukwikwidzi kana kuvhura tafura pachikamu chiri parutivi kuti utange.",
+    "lib.online.theirTurn": "Nguva yemukwikwidzi",
+    "lib.online.white": "Chena",
+    "lib.online.goNote": "Bhodhi re{n}×{n}, nhema inotanga, chena inowana komi ye{k}. Kuverenga nzvimbo; bvisa matombo ese akafa usati wapfuura. Mutambo unopera kana vese vapfuura vachitevedzana.",
+    "lib.online.boardSize": "Saizi yebhodhi",
+    "lib.online.oppPassed": "Mukwikwidzi apfuura. Kana newe ukapfuura, mutambo unopera wopiwa mamakisi.",
+    "lib.online.modeAi": "Tamba nekombiyuta",
+    "lib.online.modeOnline": "Tamba pamhepo"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku huru 16x16 inoshandisa 1-9 ne A-G, zvikamu 10 kubva pakareruka kusvika pakaoma, une zvinyorwa nemibatsiro."
     },
     "chess": {
-      "name": "Chess vs Komputa",
-      "desc": "Tamba chess nekomputa mu10 zvikamu kubva pakareruka kusvika pakaoma, une castling, en passant nokukwidziridza."
+      "name": "Chess",
+      "desc": "Tamba chess nekombiyuta pamatanho gumi kana pamhepo: koka shamwari nelink kana kutamba nemunhu mutsva. Ine castling, en passant nekusimudzirwa."
     },
     "xiangqi": {
-      "name": "Xiangqi vs Komputa",
-      "desc": "Tamba chess yeChina (xiangqi) nekomputa mu10 zvikamu, une kudzivirira gumbo rebhiza, ziso reninzi, kubata kwedasvingo nemutemo wejenari rinobhururuka."
+      "name": "Xiangqi (chess yekuChina)",
+      "desc": "Tamba Xiangqi nekombiyuta pamatanho gumi kana pamhepo: koka shamwari nelink kana kutamba nemunhu mutsva. Mitemo yakazara: gumbo rebhiza, ziso renzou, kusvetuka kwekanoni nemagenerari asingabvumirwe kuonana."
     },
     "go-game": {
-      "name": "Go vs Komputa",
-      "desc": "Tamba Go nekomputa pamabhodhi e5x5, 7x7 ne9x9 mu10 zvikamu, une kuverenga zvibodzwa zvega pakupedzisira."
+      "name": "Go",
+      "desc": "Tamba Go nekombiyuta pamatanho gumi kana pamhepo pamabhodhi e9x9, 13x13 ne19x19 neshamwari kana mukwikwidzi mutsva. Kuverenga kunozviitira pakupedzisira."
     },
     "memory-shapes": {
       "name": "Ndangariro yeChimiro neMavara",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Dhesktop yepamhepo",
       "desc": "Dhesktop yekombiyuta mubhurauza yako: maneja wemafaira, Notepad, muoni wemifananidzo nePDF, calculator, karenda nemarara. Mafaira anochengetwa muGoogle Drive yako."
+    },
+    "co-up": {
+      "name": "Xiangqi yakavanzika (Cờ úp)",
+      "desc": "Tamba Xiangqi yakavanzika yekuVietnam: zvidimbu zvinotanga zvakatarisa pasi uye zvinopidigurwa mushure mekufamba kwekutanga. Nekombiyuta pamatanho gumi kana pamhepo neshamwari nevakwikwidzi vatsva."
     }
   },
   "s": {

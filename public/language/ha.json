@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Rayuka sun ƙare — yanzu an bayyana dukkan tayal.",
     "lib.game.mmNote": "Danna Fara: ana nuna tayal na daƙiƙa {s} sannan a ɓoye. Haddace siffa da launin kowane tayal, sannan ka zaɓi tayal ɗin da ya dace da siffar da aka nuna. Kuskure fiye da {l} yana sa matakin ya faɗi.",
     "lib.game.fullscreen": "Cikakken allo",
-    "lib.game.exitFullscreen": "Fita daga cikakken allo"
+    "lib.game.exitFullscreen": "Fita daga cikakken allo",
+    "lib.online.guest": "Bako",
+    "lib.online.connFail": "An kasa haɗawa da sabar wasan kan layi. Duba haɗin ka (ko kashe mai toshe talla) sannan ka danna Sake gwadawa.",
+    "lib.online.tableGone": "Wanda ya buɗe tebur ya tafi. Zaɓi wani tebur ko buɗe sabo.",
+    "lib.online.drawDeclined": "Abokin hamayya ya ƙi canjaras.",
+    "lib.online.opponent": "Abokin hamayya",
+    "lib.online.copied": "An kwafi mahaɗi. Aika wa abokinka don ku yi wasa tare.",
+    "lib.online.waitingFor": "yana jira daƙ. {n}",
+    "lib.online.drawAgreed": "'Yan wasan biyu sun amince da canjaras.",
+    "lib.online.draw": "Wasan ya ƙare da canjaras.",
+    "lib.online.oppResigned": "Abokin hamayya ya miƙa wuya — ka ci nasara!",
+    "lib.online.youResigned": "Ka miƙa wuya.",
+    "lib.online.youWin": "Ka ci nasara!",
+    "lib.online.youLose": "An kayar da kai.",
+    "lib.online.connecting": "Ana haɗawa da sabar wasan kan layi…",
+    "lib.online.retry": "Sake gwadawa",
+    "lib.online.quick": "Nemo abokin hamayya",
+    "lib.online.createPublic": "Buɗe teburin jama'a",
+    "lib.online.createPrivate": "Buɗe teburin sirri ka gayyaci aboki",
+    "lib.online.modesHint": "Teburan jama'a suna bayyana a jerin kuma kowa zai iya shiga. Teburin sirri ana shiga ne kawai ta mahaɗin gayyata.",
+    "lib.online.openTables": "Teburan jama'a da ke jira",
+    "lib.online.join": "Shiga",
+    "lib.online.noTables": "Babu tebur da ke jira tukuna. Danna \"Nemo abokin hamayya\" ko buɗe sabon tebur.",
+    "lib.online.privacy": "Motsi-motsi suna wucewa ta sabar MQTT ta jama'a kyauta kuma ana ɓoye su ga kowane tebur; sabar ba ta adana wasanni. Shiga da Google don adana wasannin da suka ƙare a Drive ɗinka.",
+    "lib.online.waitingPublic": "Teburin jama'a: ana jiran wani ya shiga…",
+    "lib.online.waitingPrivate": "Teburin sirri: aika wa abokinka wannan mahaɗi. Wasan zai fara idan ya buɗe shi.",
+    "lib.online.leave": "Bar tebur",
+    "lib.online.full": "Wannan tebur yana da 'yan wasa 2 tuni. Nemo wani tebur ko buɗe sabo.",
+    "lib.online.backToList": "Koma jerin tebura",
+    "lib.online.you": "Kai",
+    "lib.online.oppLeft": "ya bar tebur",
+    "lib.online.oppOffline": "ba a haɗa ba",
+    "lib.online.drawOffer": "Abokin hamayya yana neman canjaras.",
+    "lib.online.accept": "Karɓa",
+    "lib.online.decline": "Ƙi",
+    "lib.online.drawSent": "An nemi canjaras…",
+    "lib.online.offerDraw": "Nemi canjaras",
+    "lib.online.resignConfirm": "Sake dannawa don miƙa wuya",
+    "lib.online.resign": "Miƙa wuya",
+    "lib.online.againSent": "Ana jiran abokin hamayya ya amince…",
+    "lib.online.againAccept": "Abokin hamayya yana son ramuwa — Sake wasa",
+    "lib.online.again": "Sake wasa (musanya launi)",
+    "lib.online.inviteLink": "Mahaɗin gayyata",
+    "lib.online.copy": "Kwafi mahaɗi",
+    "lib.online.share": "Raba",
+    "lib.online.saved": "An adana wasan a Google Drive (babban fayil WFTools/Games).",
+    "lib.online.saving": "Ana adana wasan a Google Drive…",
+    "lib.online.saveFail": "Ba a iya adana wasan a Drive tukuna ba.",
+    "lib.online.save": "Adana wasan a Google Drive",
+    "lib.game.darkNote": "Xiangqi na ɓoye (Cờ úp): janar biyu suna farawa a buɗe, sauran 'yan wasa ana cakuɗa su a juya su ƙasa. Ɗan wasa na ɓoye yana tafiya kamar ɗan wasan da yakan fara a gidansa (a gidan karusa yana tafiya kamar karusa), sannan a juya shi daga nan yana tafiya a matsayin ainihin ɗan wasansa. Masu ba da shawara da giwaye za su iya zuwa ko'ina a allo. Kashi ko rashin motsi yana nufin an kayar da kai.",
+    "lib.game.darkBoard": "Allon Xiangqi na ɓoye",
+    "lib.online.red": "Ja",
+    "lib.online.black": "Baƙi",
+    "lib.game.captured": "'Yan wasan da aka kama",
+    "lib.online.pickTable": "Nemo abokin hamayya ko buɗe tebur a gefen allo don farawa.",
+    "lib.online.theirTurn": "Lokacin abokin hamayya",
+    "lib.online.white": "Fari",
+    "lib.online.goNote": "Allo {n}×{n}, baƙi yana farawa, fari yana samun komi {k}. Ƙidayar yanki; cire duk duwatsun da suka mutu kafin ka wuce. Wasan yana ƙarewa idan duka biyu sun wuce a jere.",
+    "lib.online.boardSize": "Girman allo",
+    "lib.online.oppPassed": "Abokin hamayya ya wuce. Idan kai ma ka wuce, wasan zai ƙare a ƙidaya.",
+    "lib.online.modeAi": "Yi wasa da kwamfuta",
+    "lib.online.modeOnline": "Yi wasa a kan layi"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Babban Sudoku 16x16 mai 1-9 da A-G, matakai 10 daga sauƙi zuwa wuya, tare da bayanan kula da manuniya."
     },
     "chess": {
-      "name": "Dara da Kwamfuta",
-      "desc": "Yi wasan dara da kwamfuta a matakai 10 daga sauƙi zuwa wuya, tare da castling, en passant da haɓakawa."
+      "name": "Dara",
+      "desc": "Yi wasan dara da kwamfuta a matakai 10 ko a kan layi: gayyaci aboki da mahaɗi ko ka yi wasa da sabon mutum. Tare da castling, en passant da ɗaukaka."
     },
     "xiangqi": {
-      "name": "Xiangqi da Kwamfuta",
-      "desc": "Yi wasan dara na Sin (xiangqi) da kwamfuta a matakai 10, tare da toshe ƙafar doki, idon giwa, kama da igwa da dokar janar masu fuskantar juna."
+      "name": "Xiangqi (dara ta Sin)",
+      "desc": "Yi wasan Xiangqi da kwamfuta a matakai 10 ko a kan layi: gayyaci aboki da mahaɗi ko ka yi wasa da sabon mutum. Cikakkun dokoki: ƙafar doki, idon giwa, tsallen igwa da janar da ba za su ga juna ba."
     },
     "go-game": {
-      "name": "Go da Kwamfuta",
-      "desc": "Yi wasan Go da kwamfuta a allon 5x5, 7x7 da 9x9 a matakai 10, tare da ƙirga maki ta atomatik a ƙarshe."
+      "name": "Go",
+      "desc": "Yi wasan Go da kwamfuta a matakai 10 ko a kan layi a allunan 9x9, 13x13 da 19x19 tare da aboki ko sabon abokin hamayya. Ƙidaya ta atomatik a ƙarshe."
     },
     "memory-shapes": {
       "name": "Ƙwaƙwalwar Siffa & Launi",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Tebur na kan layi",
       "desc": "Teburin kwamfuta a burauzarka: mai sarrafa fayiloli, Notepad, mai duba hoto da PDF, na'urar lissafi, kalanda da kwandon shara. Ana adana fayiloli a Google Drive ɗinka."
+    },
+    "co-up": {
+      "name": "Xiangqi na ɓoye (Cờ úp)",
+      "desc": "Yi wasan Xiangqi na ɓoye na Vietnam: 'yan wasa suna farawa a juye kuma ana buɗe su bayan motsi na farko. Da kwamfuta a matakai 10 ko a kan layi tare da abokai da sababbin abokan hamayya."
     }
   },
   "s": {

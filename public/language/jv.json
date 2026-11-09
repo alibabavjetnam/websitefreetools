@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Nyawa entek — kabeh petak saiki dibukak.",
     "lib.game.mmNote": "Pencet Miwiti: petak ditampilake {s} detik, banjur didhelikake. Éling bentuk lan warna saben petak, banjur pilih petak sing cocog karo bentuk sing ditampilake. Luwih saka {l} kesalahan, level gagal.",
     "lib.game.fullscreen": "Layar kebak",
-    "lib.game.exitFullscreen": "Metu saka layar kebak"
+    "lib.game.exitFullscreen": "Metu saka layar kebak",
+    "lib.online.guest": "Tamu",
+    "lib.online.connFail": "Ora bisa nyambung menyang server game online. Priksa sambungan (utawa pateni pamblokir iklan) banjur klik Coba maneh.",
+    "lib.online.tableGone": "Sing mbukak meja wis lunga. Pilih meja liya utawa bukak sing anyar.",
+    "lib.online.drawDeclined": "Mungsuh nolak remis.",
+    "lib.online.opponent": "Mungsuh",
+    "lib.online.copied": "Link wis disalin. Kirim menyang kancamu supaya bisa main bareng.",
+    "lib.online.waitingFor": "ngenteni {n} dtk",
+    "lib.online.drawAgreed": "Pemain loro-lorone sarujuk remis.",
+    "lib.online.draw": "Game rampung remis.",
+    "lib.online.oppResigned": "Mungsuh nyerah — kowe menang!",
+    "lib.online.youResigned": "Kowe nyerah.",
+    "lib.online.youWin": "Kowe menang!",
+    "lib.online.youLose": "Kowe kalah.",
+    "lib.online.connecting": "Lagi nyambung menyang server game online…",
+    "lib.online.retry": "Coba maneh",
+    "lib.online.quick": "Golek mungsuh",
+    "lib.online.createPublic": "Bukak meja umum",
+    "lib.online.createPrivate": "Bukak meja pribadi lan undang kanca",
+    "lib.online.modesHint": "Meja umum katon ing dhaptar lan sapa wae bisa melu. Meja pribadi mung bisa dilebokake nganggo link undhangan.",
+    "lib.online.openTables": "Meja umum sing lagi ngenteni",
+    "lib.online.join": "Melu",
+    "lib.online.noTables": "Durung ana meja sing ngenteni. Klik \"Golek mungsuh\" utawa bukak meja anyar.",
+    "lib.online.privacy": "Langkah-langkah liwat server MQTT umum gratis lan dienkripsi saben meja; server ora nyimpen game. Mlebu nganggo Google supaya game sing wis rampung disimpen ing Drive-mu.",
+    "lib.online.waitingPublic": "Meja umum: ngenteni ana sing melu…",
+    "lib.online.waitingPrivate": "Meja pribadi: kirim link iki menyang kancamu. Game diwiwiti nalika dheweke mbukak.",
+    "lib.online.leave": "Ninggal meja",
+    "lib.online.full": "Meja iki wis ana 2 pemain. Golek meja liya utawa bukak sing anyar.",
+    "lib.online.backToList": "Bali menyang dhaptar meja",
+    "lib.online.you": "Kowe",
+    "lib.online.oppLeft": "ninggal meja",
+    "lib.online.oppOffline": "pedhot",
+    "lib.online.drawOffer": "Mungsuh nawakake remis.",
+    "lib.online.accept": "Tampa",
+    "lib.online.decline": "Tolak",
+    "lib.online.drawSent": "Remis ditawakake…",
+    "lib.online.offerDraw": "Tawakake remis",
+    "lib.online.resignConfirm": "Klik maneh kanggo nyerah",
+    "lib.online.resign": "Nyerah",
+    "lib.online.againSent": "Ngenteni mungsuh sarujuk…",
+    "lib.online.againAccept": "Mungsuh pengin males — Main maneh",
+    "lib.online.again": "Main maneh (ganti werna)",
+    "lib.online.inviteLink": "Link undhangan",
+    "lib.online.copy": "Salin link",
+    "lib.online.share": "Bagekake",
+    "lib.online.saved": "Game disimpen ing Google Drive (folder WFTools/Games).",
+    "lib.online.saving": "Lagi nyimpen game ing Google Drive…",
+    "lib.online.saveFail": "Game durung bisa disimpen ing Drive.",
+    "lib.online.save": "Simpen game ing Google Drive",
+    "lib.game.darkNote": "Xiangqi singidan (Cờ úp): jenderal loro diwiwiti kabuka, bidak liyane diacak lan diselehake kuwalik. Bidak singidan mlaku kaya bidak sing biasane diwiwiti ing kothak kasebut (ing kothak kreta mlaku kaya kreta), banjur diwalik lan sabanjure mlaku minangka bidak asline. Penasehat lan gajah bisa mlaku ing kabeh papan. Skakmat utawa ora duwe langkah tegese kalah.",
+    "lib.game.darkBoard": "Papan Xiangqi singidan",
+    "lib.online.red": "Abang",
+    "lib.online.black": "Ireng",
+    "lib.game.captured": "Bidak sing dipangan",
+    "lib.online.pickTable": "Golek mungsuh utawa bukak meja ing panel pinggir kanggo miwiti.",
+    "lib.online.theirTurn": "Giliran mungsuh",
+    "lib.online.white": "Putih",
+    "lib.online.goNote": "Papan {n}×{n}, ireng miwiti, putih entuk komi {k}. Ngitung wilayah; jupuk kabeh watu mati sadurunge pass. Game rampung yen loro-lorone pass berturut-turut.",
+    "lib.online.boardSize": "Ukuran papan",
+    "lib.online.oppPassed": "Mungsuh pass. Yen kowe uga pass, game rampung lan diitung.",
+    "lib.online.modeAi": "Main nglawan komputer",
+    "lib.online.modeOnline": "Main online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku gedhe 16x16 nganggo 1-9 lan A-G, 10 level saka gampang nganti angel, nganggo cathetan lan pitunjuk."
     },
     "chess": {
-      "name": "Catur lawan komputer",
-      "desc": "Main catur lawan komputer ing 10 level saka gampang nganti angel, nganggo rokade, en passant lan promosi."
+      "name": "Catur",
+      "desc": "Main catur nglawan komputer ing 10 level utawa online: undang kanca nganggo link utawa main karo wong anyar. Kanthi rokade, en passant lan promosi."
     },
     "xiangqi": {
-      "name": "Xiangqi lawan komputer",
-      "desc": "Main catur Tiongkok (xiangqi) lawan komputer ing 10 level, nganggo aturan sikil jaran kablokir, mripat gajah, mangsa meriam lan aturan jenderal hadap-hadapan."
+      "name": "Xiangqi (catur Tiongkok)",
+      "desc": "Main Xiangqi nglawan komputer ing 10 level utawa online: undang kanca nganggo link utawa main karo wong anyar. Aturan lengkap: sikil jaran, mripat gajah, lompatan meriam lan jenderal sing ora oleh adhep-adhepan."
     },
     "go-game": {
-      "name": "Go lawan komputer",
-      "desc": "Main Go lawan komputer ing papan 5x5, 7x7 lan 9x9 ing 10 level, nganggo etungan skor otomatis ing pungkasan."
+      "name": "Go",
+      "desc": "Main Go nglawan komputer ing 10 level utawa online ing papan 9x9, 13x13 lan 19x19 karo kanca utawa mungsuh anyar. Ngitung otomatis ing pungkasan."
     },
     "memory-shapes": {
       "name": "Memori wujud & warna",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktop online",
       "desc": "Desktop komputer ing browser panjenengan: pangatur file, Notepad, penampil gambar lan PDF, kalkulator, tanggalan lan tong sampah. File disimpen ing Google Drive panjenengan."
+    },
+    "co-up": {
+      "name": "Xiangqi singidan (Cờ úp)",
+      "desc": "Main Xiangqi singidan saka Vietnam: bidak diwiwiti kuwalik lan diwalik sawise langkah pisanan. Nglawan komputer ing 10 level utawa online karo kanca lan mungsuh anyar."
     }
   },
   "s": {

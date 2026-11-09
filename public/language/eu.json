@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Bizitzarik ez — lauza guztiak erakutsi dira orain.",
     "lib.game.mmNote": "Sakatu Hasi: lauzak {s} segundoz erakusten dira eta gero ezkutatu. Gogoratu lauza bakoitzaren forma eta kolorea, eta aukeratu erakusten zaizun formarekin bat datorrena. {l} akats baino gehiago eginez gero, maila galtzen da.",
     "lib.game.fullscreen": "Pantaila osoa",
-    "lib.game.exitFullscreen": "Irten pantaila osotik"
+    "lib.game.exitFullscreen": "Irten pantaila osotik",
+    "lib.online.guest": "Gonbidatua",
+    "lib.online.connFail": "Ezin izan da lineako joko-zerbitzarira konektatu. Egiaztatu konexioa (edo desaktibatu iragarki-blokeatzailea) eta sakatu Saiatu berriro.",
+    "lib.online.tableGone": "Mahaia ireki zuena joan egin da. Aukeratu beste mahai bat edo ireki berri bat.",
+    "lib.online.drawDeclined": "Aurkariak berdinketa baztertu du.",
+    "lib.online.opponent": "Aurkaria",
+    "lib.online.copied": "Esteka kopiatu da. Bidali lagunari elkarrekin jokatzeko.",
+    "lib.online.waitingFor": "{n} s zain",
+    "lib.online.drawAgreed": "Bi jokalariek berdinketa adostu dute.",
+    "lib.online.draw": "Partida berdinketan amaitu da.",
+    "lib.online.oppResigned": "Aurkariak amore eman du — irabazi duzu!",
+    "lib.online.youResigned": "Amore eman duzu.",
+    "lib.online.youWin": "Irabazi duzu!",
+    "lib.online.youLose": "Galdu duzu.",
+    "lib.online.connecting": "Lineako joko-zerbitzarira konektatzen…",
+    "lib.online.retry": "Saiatu berriro",
+    "lib.online.quick": "Bilatu aurkaria",
+    "lib.online.createPublic": "Ireki mahai publikoa",
+    "lib.online.createPrivate": "Ireki mahai pribatua eta gonbidatu lagun bat",
+    "lib.online.modesHint": "Mahai publikoak zerrendan agertzen dira eta edonor sar daiteke. Mahai pribatura gonbidapen-estekarekin bakarrik sar daiteke.",
+    "lib.online.openTables": "Zain dauden mahai publikoak",
+    "lib.online.join": "Sartu",
+    "lib.online.noTables": "Oraindik ez dago mahairik zain. Sakatu \"Bilatu aurkaria\" edo ireki mahai berri bat.",
+    "lib.online.privacy": "Mugimenduak doako MQTT zerbitzari publiko batetik igarotzen dira eta mahai bakoitzerako zifratzen dira; zerbitzariak ez du partidarik gordetzen. Hasi saioa Google-rekin amaitutako partidak zure Drive-n gordetzeko.",
+    "lib.online.waitingPublic": "Mahai publikoa: norbait sartzeko zain…",
+    "lib.online.waitingPrivate": "Mahai pribatua: bidali esteka hau lagunari. Partida irekitzen duenean hasiko da.",
+    "lib.online.leave": "Utzi mahaia",
+    "lib.online.full": "Mahai honek 2 jokalari ditu dagoeneko. Bilatu beste mahai bat edo ireki berri bat.",
+    "lib.online.backToList": "Itzuli mahaien zerrendara",
+    "lib.online.you": "Zu",
+    "lib.online.oppLeft": "mahaitik irten da",
+    "lib.online.oppOffline": "deskonektatuta",
+    "lib.online.drawOffer": "Aurkariak berdinketa proposatzen du.",
+    "lib.online.accept": "Onartu",
+    "lib.online.decline": "Baztertu",
+    "lib.online.drawSent": "Berdinketa proposatuta…",
+    "lib.online.offerDraw": "Proposatu berdinketa",
+    "lib.online.resignConfirm": "Sakatu berriro amore emateko",
+    "lib.online.resign": "Amore eman",
+    "lib.online.againSent": "Aurkariak onartu arte zain…",
+    "lib.online.againAccept": "Aurkariak mendekua nahi du — Jokatu berriro",
+    "lib.online.again": "Jokatu berriro (aldatu koloreak)",
+    "lib.online.inviteLink": "Gonbidapen-esteka",
+    "lib.online.copy": "Kopiatu esteka",
+    "lib.online.share": "Partekatu",
+    "lib.online.saved": "Partida Google Drive-n gorde da (WFTools/Games karpeta).",
+    "lib.online.saving": "Partida Google Drive-n gordetzen…",
+    "lib.online.saveFail": "Oraindik ezin izan da partida Drive-n gorde.",
+    "lib.online.save": "Gorde partida Google Drive-n",
+    "lib.game.darkNote": "Xiangqi ezkutua (Cờ úp): bi jeneralak agerian hasten dira, gainerako piezak nahastu eta buruz behera jartzen dira. Pieza ezkutu bat bere laukian normalean hasten den pieza bezala mugitzen da (gurdiaren laukian gurdi gisa), gero buelta ematen zaio eta aurrerantzean bere benetako pieza gisa mugitzen da. Aholkulariak eta elefanteak taula osoan zehar mugi daitezke. Matea edo mugimendurik ez izatea galtzea da.",
+    "lib.game.darkBoard": "Xiangqi ezkutuaren taula",
+    "lib.online.red": "Gorria",
+    "lib.online.black": "Beltza",
+    "lib.game.captured": "Harrapatutako piezak",
+    "lib.online.pickTable": "Hasteko, bilatu aurkaria edo ireki mahai bat alboko panelean.",
+    "lib.online.theirTurn": "Aurkariaren txanda",
+    "lib.online.white": "Zuria",
+    "lib.online.goNote": "{n}×{n} taula, beltzak hasten du, zuriak {k} komi jasotzen ditu. Eremu-zenbaketa; kendu harri hil guztiak pasatu aurretik. Partida biek jarraian pasatzen dutenean amaitzen da.",
+    "lib.online.boardSize": "Taularen tamaina",
+    "lib.online.oppPassed": "Aurkariak pasatu du. Zuk ere pasatzen baduzu, partida amaitu eta zenbatuko da.",
+    "lib.online.modeAi": "Jokatu ordenagailuaren aurka",
+    "lib.online.modeOnline": "Jokatu linean"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "16x16 Sudoku handia 1-9 eta A-G erabiliz, 10 maila erraletik zailera, oharrekin eta aholkuekin."
     },
     "chess": {
-      "name": "Xakea ordenagailuaren aurka",
-      "desc": "Jokatu xakean ordenagailuaren aurka, 10 mailatan erraletik zailera, enrokearekin, en passant-ekin eta promozioarekin."
+      "name": "Xakea",
+      "desc": "Jokatu xakean ordenagailuaren aurka 10 mailatan edo linean: gonbidatu lagun bat esteka batekin edo jokatu norbait berriarekin. Gazteluarekin, en passant-arekin eta koroatzearekin."
     },
     "xiangqi": {
-      "name": "Xiangqi ordenagailuaren aurka",
-      "desc": "Jokatu Txinako xakea (xiangqi) ordenagailuaren aurka, 10 mailatan, zaldiaren hanka blokeatzearekin, elefantearen begiarekin, kanoiaren harrapaketekin eta jeneralen arauarekin."
+      "name": "Xiangqi (xake txinatarra)",
+      "desc": "Jokatu Xiangqi ordenagailuaren aurka 10 mailatan edo linean: gonbidatu lagun bat esteka batekin edo jokatu norbait berriarekin. Arau osoak: zaldiaren hanka, elefantearen begia, kanoiaren jauzia eta elkar ikusi ezin duten jeneralak."
     },
     "go-game": {
-      "name": "Go ordenagailuaren aurka",
-      "desc": "Jokatu Go ordenagailuaren aurka 5x5, 7x7 eta 9x9 taulatan, 10 mailatan, amaieran puntuazio automatikoarekin."
+      "name": "Go",
+      "desc": "Jokatu Go ordenagailuaren aurka 10 mailatan edo linean 9x9, 13x13 eta 19x19 tauletan lagun batekin edo aurkari berri batekin. Zenbaketa automatikoa amaieran."
     },
     "memory-shapes": {
       "name": "Forma eta kolore memoria",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Lineako mahaigaina",
       "desc": "Ordenagailu-mahaigain bat zure nabigatzailean: fitxategi-kudeatzailea, Notepad, irudi- eta PDF-ikustailea, kalkulagailua, egutegia eta zakarrontzia. Fitxategiak zure Google Drive-n gordetzen dira."
+    },
+    "co-up": {
+      "name": "Xiangqi ezkutua (Cờ úp)",
+      "desc": "Jokatu Vietnamgo Xiangqi ezkutua: piezak buruz behera hasten dira eta lehen mugimenduaren ondoren irauli egiten dira. Ordenagailuaren aurka 10 mailatan edo linean lagunekin eta aurkari berriekin."
     }
   },
   "s": {

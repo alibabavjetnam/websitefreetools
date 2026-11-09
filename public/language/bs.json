@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Nema više života — sve pločice su sada otkrivene.",
     "lib.game.mmNote": "Pritisnite Start: pločice se prikazuju {s} sekundi, a zatim se sakriju. Zapamtite oblik i boju svake pločice, a zatim odaberite onu koja odgovara prikazanom obliku. Više od {l} grešaka znači da nivo nije prijeđen.",
     "lib.game.fullscreen": "Cijeli ekran",
-    "lib.game.exitFullscreen": "Izađi iz cijelog ekrana"
+    "lib.game.exitFullscreen": "Izađi iz cijelog ekrana",
+    "lib.online.guest": "Gost",
+    "lib.online.connFail": "Povezivanje sa serverom za online igru nije uspjelo. Provjerite vezu (ili isključite blokiranje reklama) i kliknite Pokušaj ponovo.",
+    "lib.online.tableGone": "Onaj ko je otvorio sto je otišao. Odaberite drugi sto ili otvorite novi.",
+    "lib.online.drawDeclined": "Protivnik je odbio remi.",
+    "lib.online.opponent": "Protivnik",
+    "lib.online.copied": "Link kopiran. Pošaljite ga prijatelju pa igrajte zajedno.",
+    "lib.online.waitingFor": "čeka {n} s",
+    "lib.online.drawAgreed": "Oba igrača su se dogovorila o remiju.",
+    "lib.online.draw": "Partija je završena remijem.",
+    "lib.online.oppResigned": "Protivnik je predao — pobijedili ste!",
+    "lib.online.youResigned": "Predali ste.",
+    "lib.online.youWin": "Pobijedili ste!",
+    "lib.online.youLose": "Izgubili ste.",
+    "lib.online.connecting": "Povezivanje sa serverom za online igru…",
+    "lib.online.retry": "Pokušaj ponovo",
+    "lib.online.quick": "Pronađi protivnika",
+    "lib.online.createPublic": "Otvori javni sto",
+    "lib.online.createPrivate": "Otvori privatni sto i pozovi prijatelja",
+    "lib.online.modesHint": "Javni stolovi se prikazuju na listi i svako se može pridružiti. Privatnom stolu pristupa se samo putem linka za poziv.",
+    "lib.online.openTables": "Javni stolovi na čekanju",
+    "lib.online.join": "Pridruži se",
+    "lib.online.noTables": "Još nijedan sto ne čeka. Kliknite \"Pronađi protivnika\" ili otvorite novi sto.",
+    "lib.online.privacy": "Potezi idu preko besplatnog javnog MQTT servera i šifrirani su za svaki sto; server ne čuva partije. Prijavite se putem Google računa da biste završene partije čuvali na svom Driveu.",
+    "lib.online.waitingPublic": "Javni sto: čeka se da se neko pridruži…",
+    "lib.online.waitingPrivate": "Privatni sto: pošaljite ovaj link prijatelju. Partija počinje kad ga otvori.",
+    "lib.online.leave": "Napusti sto",
+    "lib.online.full": "Za ovim stolom su već 2 igrača. Pronađite drugi sto ili otvorite novi.",
+    "lib.online.backToList": "Nazad na listu stolova",
+    "lib.online.you": "Vi",
+    "lib.online.oppLeft": "je napustio sto",
+    "lib.online.oppOffline": "nije povezan",
+    "lib.online.drawOffer": "Protivnik nudi remi.",
+    "lib.online.accept": "Prihvati",
+    "lib.online.decline": "Odbij",
+    "lib.online.drawSent": "Remi ponuđen…",
+    "lib.online.offerDraw": "Ponudi remi",
+    "lib.online.resignConfirm": "Kliknite ponovo za predaju",
+    "lib.online.resign": "Predaj",
+    "lib.online.againSent": "Čeka se da protivnik prihvati…",
+    "lib.online.againAccept": "Protivnik želi revanš — Igraj ponovo",
+    "lib.online.again": "Igraj ponovo (zamijeni boje)",
+    "lib.online.inviteLink": "Link za poziv",
+    "lib.online.copy": "Kopiraj link",
+    "lib.online.share": "Podijeli",
+    "lib.online.saved": "Partija sačuvana na Google Drive (folder WFTools/Games).",
+    "lib.online.saving": "Čuvanje partije na Google Drive…",
+    "lib.online.saveFail": "Partiju još nije bilo moguće sačuvati na Drive.",
+    "lib.online.save": "Sačuvaj partiju na Google Drive",
+    "lib.game.darkNote": "Skriveni Xiangqi (Cờ úp): oba generala počinju licem prema gore, ostale figure se izmiješaju i postave licem prema dolje. Skrivena figura kreće se kao figura koja inače počinje na njenom polju (na polju kola kreće se kao kola), zatim se okrene i dalje se kreće kao svoja prava figura. Savjetnici i slonovi smiju se kretati po cijeloj ploči. Mat ili nemogućnost poteza znači poraz.",
+    "lib.game.darkBoard": "Ploča za skriveni Xiangqi",
+    "lib.online.red": "Crveni",
+    "lib.online.black": "Crni",
+    "lib.game.captured": "Uzete figure",
+    "lib.online.pickTable": "Pronađite protivnika ili otvorite sto u bočnom panelu za početak.",
+    "lib.online.theirTurn": "Na potezu je protivnik",
+    "lib.online.white": "Bijeli",
+    "lib.online.goNote": "Ploča {n}×{n}, crni počinje, bijeli dobija komi {k}. Brojanje površine; uklonite sve mrtve kamenčiće prije nego što kažete pas. Partija završava kad oba igrača uzastopno kažu pas.",
+    "lib.online.boardSize": "Veličina ploče",
+    "lib.online.oppPassed": "Protivnik je rekao pas. Ako i vi kažete pas, partija završava i broji se.",
+    "lib.online.modeAi": "Igraj protiv računara",
+    "lib.online.modeOnline": "Igraj online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Veliki sudoku 16x16 s 1-9 i A-G, 10 nivoa od lakog do teškog, s bilješkama i savjetima."
     },
     "chess": {
-      "name": "Šah protiv računara",
-      "desc": "Igrajte šah protiv računara kroz 10 nivoa od lakog do teškog, s rokadom, en passantom i promocijom."
+      "name": "Šah",
+      "desc": "Igrajte šah protiv računara na 10 nivoa ili online: pozovite prijatelja linkom ili igrajte s nekim novim. S rokadom, en passantom i promocijom."
     },
     "xiangqi": {
-      "name": "Xiangqi protiv računara",
-      "desc": "Igrajte kineski šah (xiangqi) protiv računara kroz 10 nivoa, s blokadom konjske noge, slonovim okom, topovskim hvatanjem i pravilom generala."
+      "name": "Xiangqi (kineski šah)",
+      "desc": "Igrajte Xiangqi protiv računara na 10 nivoa ili online: pozovite prijatelja linkom ili igrajte s nekim novim. Potpuna pravila: noga konja, oko slona, skok topa i generali koji se ne smiju vidjeti."
     },
     "go-game": {
-      "name": "Go protiv računara",
-      "desc": "Igrajte go protiv računara na tablama 5x5, 7x7 i 9x9 kroz 10 nivoa, s automatskim bodovanjem na kraju."
+      "name": "Go",
+      "desc": "Igrajte Go protiv računara na 10 nivoa ili online na pločama 9x9, 13x13 i 19x19 s prijateljem ili novim protivnikom. Automatsko brojanje na kraju."
     },
     "memory-shapes": {
       "name": "Pamćenje oblika i boja",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Online radna površina",
       "desc": "Radna površina računara u pregledniku: upravitelj datoteka, Notepad, preglednik slika i PDF-a, kalkulator, kalendar i smeće. Datoteke se čuvaju na vašem Google Disku."
+    },
+    "co-up": {
+      "name": "Skriveni Xiangqi (Cờ úp)",
+      "desc": "Igrajte vijetnamski skriveni Xiangqi: figure počinju licem prema dolje i okreću se nakon prvog poteza. Protiv računara na 10 nivoa ili online s prijateljima i novim protivnicima."
     }
   },
   "s": {

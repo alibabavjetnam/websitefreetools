@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Quedaches sen vidas — todas as fichas están descubertas.",
     "lib.game.mmNote": "Preme Comezar: as fichas móstranse {s} segundos e despois ocúltanse. Lembra a forma e a cor de cada ficha e escolle a que coincide coa forma mostrada. Máis de {l} erros e non superas o nivel.",
     "lib.game.fullscreen": "Pantalla completa",
-    "lib.game.exitFullscreen": "Saír da pantalla completa"
+    "lib.game.exitFullscreen": "Saír da pantalla completa",
+    "lib.online.guest": "Convidado",
+    "lib.online.connFail": "Non se puido conectar co servidor de xogo en liña. Comproba a conexión (ou desactiva o bloqueador de anuncios) e preme Tentar de novo.",
+    "lib.online.tableGone": "Quen abriu a mesa marchou. Escolle outra mesa ou abre unha nova.",
+    "lib.online.drawDeclined": "O rival rexeitou as táboas.",
+    "lib.online.opponent": "Rival",
+    "lib.online.copied": "Ligazón copiada. Envíalla ao teu amigo para xogardes xuntos.",
+    "lib.online.waitingFor": "agardando {n} s",
+    "lib.online.drawAgreed": "Os dous xogadores acordaron táboas.",
+    "lib.online.draw": "A partida rematou en táboas.",
+    "lib.online.oppResigned": "O rival abandonou — gañaches!",
+    "lib.online.youResigned": "Abandonaches.",
+    "lib.online.youWin": "Gañaches!",
+    "lib.online.youLose": "Perdiches.",
+    "lib.online.connecting": "Conectando co servidor de xogo en liña…",
+    "lib.online.retry": "Tentar de novo",
+    "lib.online.quick": "Buscar rival",
+    "lib.online.createPublic": "Abrir mesa pública",
+    "lib.online.createPrivate": "Abrir mesa privada e convidar a un amigo",
+    "lib.online.modesHint": "As mesas públicas aparecen na lista e calquera pode unirse. A unha mesa privada só se chega coa ligazón de convite.",
+    "lib.online.openTables": "Mesas públicas agardando",
+    "lib.online.join": "Unirse",
+    "lib.online.noTables": "Aínda non hai ningunha mesa agardando. Preme \"Buscar rival\" ou abre unha mesa nova.",
+    "lib.online.privacy": "As xogadas pasan por un servidor MQTT público gratuíto e cífranse para cada mesa; o servidor non garda partidas. Inicia sesión con Google para gardar as partidas rematadas no teu Drive.",
+    "lib.online.waitingPublic": "Mesa pública: agardando a que alguén se una…",
+    "lib.online.waitingPrivate": "Mesa privada: envía esta ligazón ao teu amigo. A partida comeza cando a abra.",
+    "lib.online.leave": "Saír da mesa",
+    "lib.online.full": "Esta mesa xa ten 2 xogadores. Busca outra mesa ou abre unha nova.",
+    "lib.online.backToList": "Volver á lista de mesas",
+    "lib.online.you": "Ti",
+    "lib.online.oppLeft": "deixou a mesa",
+    "lib.online.oppOffline": "desconectado",
+    "lib.online.drawOffer": "O rival ofrece táboas.",
+    "lib.online.accept": "Aceptar",
+    "lib.online.decline": "Rexeitar",
+    "lib.online.drawSent": "Táboas ofrecidas…",
+    "lib.online.offerDraw": "Ofrecer táboas",
+    "lib.online.resignConfirm": "Preme de novo para abandonar",
+    "lib.online.resign": "Abandonar",
+    "lib.online.againSent": "Agardando a que o rival acepte…",
+    "lib.online.againAccept": "O rival quere a revancha — Xogar de novo",
+    "lib.online.again": "Xogar de novo (cambiar cores)",
+    "lib.online.inviteLink": "Ligazón de convite",
+    "lib.online.copy": "Copiar ligazón",
+    "lib.online.share": "Compartir",
+    "lib.online.saved": "Partida gardada en Google Drive (cartafol WFTools/Games).",
+    "lib.online.saving": "Gardando a partida en Google Drive…",
+    "lib.online.saveFail": "Aínda non se puido gardar a partida en Drive.",
+    "lib.online.save": "Gardar a partida en Google Drive",
+    "lib.game.darkNote": "Xiangqi oculto (Cờ úp): os dous xenerais comezan descubertos, o resto das pezas mestúranse e colócanse boca abaixo. Unha peza oculta móvese como a peza que normalmente comeza na súa casa (na casa dun carro móvese como un carro), logo vólvese e desde entón móvese como a súa peza real. Os conselleiros e os elefantes poden ir por todo o taboleiro. Xaque mate ou quedar sen xogadas significa perder.",
+    "lib.game.darkBoard": "Taboleiro de Xiangqi oculto",
+    "lib.online.red": "Vermellas",
+    "lib.online.black": "Negras",
+    "lib.game.captured": "Pezas capturadas",
+    "lib.online.pickTable": "Busca un rival ou abre unha mesa no panel lateral para comezar.",
+    "lib.online.theirTurn": "Quenda do rival",
+    "lib.online.white": "Brancas",
+    "lib.online.goNote": "Taboleiro de {n}×{n}, comezan as negras, as brancas reciben {k} de komi. Reconto por área; retira todas as pedras mortas antes de pasar. A partida remata cando ambos pasan seguidos.",
+    "lib.online.boardSize": "Tamaño do taboleiro",
+    "lib.online.oppPassed": "O rival pasou. Se ti tamén pasas, a partida remata e cóntase.",
+    "lib.online.modeAi": "Xogar contra o ordenador",
+    "lib.online.modeOnline": "Xogar en liña"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku grande de 16x16 con 1-9 e A-G, 10 niveis de fácil a difícil, con notas e pistas."
     },
     "chess": {
-      "name": "Xadrez contra o ordenador",
-      "desc": "Xoga ao xadrez contra o ordenador en 10 niveis de fácil a difícil, con enroque, captura ao paso e coroación."
+      "name": "Xadrez",
+      "desc": "Xoga ao xadrez contra o ordenador en 10 niveis ou en liña: convida a un amigo cunha ligazón ou xoga con alguén novo. Con enroque, captura ao paso e promoción."
     },
     "xiangqi": {
-      "name": "Xiangqi contra o ordenador",
-      "desc": "Xoga ao xadrez chinés (xiangqi) contra o ordenador en 10 niveis: bloqueo da pata do cabalo, ollo do elefante, capturas co canón e regra do xeneral voador."
+      "name": "Xiangqi (xadrez chinés)",
+      "desc": "Xoga ao Xiangqi contra o ordenador en 10 niveis ou en liña: convida a un amigo cunha ligazón ou xoga con alguén novo. Regras completas: a pata do cabalo, o ollo do elefante, o salto do canón e os xenerais que non poden verse."
     },
     "go-game": {
-      "name": "Go contra o ordenador",
-      "desc": "Xoga ao go contra o ordenador en taboleiros de 5x5, 7x7 e 9x9 en 10 niveis, con puntuación automática ao final."
+      "name": "Go",
+      "desc": "Xoga ao Go contra o ordenador en 10 niveis ou en liña en taboleiros de 9x9, 13x13 e 19x19 cun amigo ou un rival novo. Reconto automático ao final."
     },
     "memory-shapes": {
       "name": "Memoria de formas e cores",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Escritorio en liña",
       "desc": "Un escritorio de ordenador no navegador: xestor de ficheiros, Notepad, visor de imaxes e PDF, calculadora, calendario e lixo. Os ficheiros gárdanse no teu Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi oculto (Cờ úp)",
+      "desc": "Xoga ao Xiangqi oculto vietnamita: as pezas comezan boca abaixo e vólvense tras a primeira xogada. Contra o ordenador en 10 niveis ou en liña con amigos e rivais novos."
     }
   },
   "s": {

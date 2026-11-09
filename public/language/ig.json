@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Ndụ agwụla — a na-egosi tile niile ugbu a.",
     "lib.game.mmNote": "Pịa Malite: a ga-egosi tile niile ruo sekọnd {s}, wee zoo ha. Chetara ọdịdị na agba nke tile ọ bụla, wee họrọ tile kwekọrọ n'ọdịdị egosiri. Ihe karịrị njehie {l} ga-eme ka ọkwa daa.",
     "lib.game.fullscreen": "Ihuenyo zuru oke",
-    "lib.game.exitFullscreen": "Pụọ n'ihuenyo zuru oke"
+    "lib.game.exitFullscreen": "Pụọ n'ihuenyo zuru oke",
+    "lib.online.guest": "Ọbịa",
+    "lib.online.connFail": "Enweghị ike ijikọ na sava egwuregwu ịntanetị. Lelee njikọ gị (ma ọ bụ gbanyụọ ihe na-egbochi mgbasa ozi) wee pịa Nwaa ọzọ.",
+    "lib.online.tableGone": "Onye mepere tebụl ahụ apụọla. Họrọ tebụl ọzọ ma ọ bụ mepee nke ọhụrụ.",
+    "lib.online.drawDeclined": "Onye mmegide jụrụ nhata.",
+    "lib.online.opponent": "Onye mmegide",
+    "lib.online.copied": "E depụtala njikọ. Zigara enyi gị ka unu soro gwuo egwu.",
+    "lib.online.waitingFor": "na-eche sekọnd {n}",
+    "lib.online.drawAgreed": "Ndị egwuregwu abụọ ahụ kwekọrịtara na nhata.",
+    "lib.online.draw": "Egwuregwu ahụ kwụsịrị na nhata.",
+    "lib.online.oppResigned": "Onye mmegide nyefere — i meriri!",
+    "lib.online.youResigned": "I nyefere.",
+    "lib.online.youWin": "I meriri!",
+    "lib.online.youLose": "E meriri gị.",
+    "lib.online.connecting": "Na-ejikọ na sava egwuregwu ịntanetị…",
+    "lib.online.retry": "Nwaa ọzọ",
+    "lib.online.quick": "Chọọ onye mmegide",
+    "lib.online.createPublic": "Mepee tebụl ọha",
+    "lib.online.createPrivate": "Mepee tebụl nzuzo wee kpọọ enyi",
+    "lib.online.modesHint": "Tebụl ọha na-apụta na ndepụta, onye ọ bụla nwere ike ịbanye. Tebụl nzuzo bụ naanị site na njikọ ọkpụkpọ ka a na-abanye.",
+    "lib.online.openTables": "Tebụl ọha na-eche",
+    "lib.online.join": "Banye",
+    "lib.online.noTables": "Enweghị tebụl na-eche ugbu a. Pịa \"Chọọ onye mmegide\" ma ọ bụ mepee tebụl ọhụrụ.",
+    "lib.online.privacy": "Mmegharị na-agafe na sava MQTT ọha n'efu, a na-ezoro ha maka tebụl ọ bụla; sava anaghị echekwa egwuregwu. Banye site na Google iji chekwaa egwuregwu emechara na Drive gị.",
+    "lib.online.waitingPublic": "Tebụl ọha: na-eche ka mmadụ banye…",
+    "lib.online.waitingPrivate": "Tebụl nzuzo: zigara enyi gị njikọ a. Egwuregwu ga-amalite mgbe ọ mepere ya.",
+    "lib.online.leave": "Hapụ tebụl",
+    "lib.online.full": "Tebụl a nwere ndị egwuregwu 2 ugbu a. Chọọ tebụl ọzọ ma ọ bụ mepee nke ọhụrụ.",
+    "lib.online.backToList": "Laghachi na ndepụta tebụl",
+    "lib.online.you": "Gị",
+    "lib.online.oppLeft": "hapụrụ tebụl",
+    "lib.online.oppOffline": "enweghị njikọ",
+    "lib.online.drawOffer": "Onye mmegide na-atụ aro nhata.",
+    "lib.online.accept": "Nabata",
+    "lib.online.decline": "Jụ",
+    "lib.online.drawSent": "Atụrụ aro nhata…",
+    "lib.online.offerDraw": "Tụọ aro nhata",
+    "lib.online.resignConfirm": "Pịa ọzọ ka i nyefee",
+    "lib.online.resign": "Nyefee",
+    "lib.online.againSent": "Na-eche ka onye mmegide kwenye…",
+    "lib.online.againAccept": "Onye mmegide chọrọ ịbọ ọbọ — Gwuo ọzọ",
+    "lib.online.again": "Gwuo ọzọ (gbanwee agba)",
+    "lib.online.inviteLink": "Njikọ ọkpụkpọ",
+    "lib.online.copy": "Depụta njikọ",
+    "lib.online.share": "Kesaa",
+    "lib.online.saved": "E chekwara egwuregwu na Google Drive (nchekwa WFTools/Games).",
+    "lib.online.saving": "Na-echekwa egwuregwu na Google Drive…",
+    "lib.online.saveFail": "Enwebeghị ike ichekwa egwuregwu na Drive.",
+    "lib.online.save": "Chekwaa egwuregwu na Google Drive",
+    "lib.game.darkNote": "Xiangqi zoro ezo (Cờ úp): ọchịagha abụọ ahụ na-amalite ghere oghe, a na-agwakọta iberibe ndị ọzọ ma tụgharịa ha n'ihu ala. Iberibe zoro ezo na-aga dị ka iberibe na-amalitekarị n'ọnọdụ ya (n'ọnọdụ ụgbọ agha, ọ na-aga dị ka ụgbọ agha), mgbe ahụ a na-atụgharị ya, site n'oge ahụ ọ na-aga dị ka ezigbo iberibe ya. Ndị ndụmọdụ na enyi nwere ike ịga ebe ọ bụla na bọọdụ. Checkmate ma ọ bụ enweghị mmegharị pụtara na e meriri gị.",
+    "lib.game.darkBoard": "Bọọdụ Xiangqi zoro ezo",
+    "lib.online.red": "Ọbara ọbara",
+    "lib.online.black": "Oji",
+    "lib.game.captured": "Iberibe ejidere",
+    "lib.online.pickTable": "Chọọ onye mmegide ma ọ bụ mepee tebụl na panel dị n'akụkụ ka ịmalite.",
+    "lib.online.theirTurn": "Oge onye mmegide",
+    "lib.online.white": "Ọcha",
+    "lib.online.goNote": "Bọọdụ {n}×{n}, oji na-ebu ụzọ, ọcha na-enweta komi {k}. Ngụkọ mpaghara; wepụ nkume nwụrụ anwụ niile tupu i gafee. Egwuregwu na-agwụ mgbe ha abụọ gafere n'usoro.",
+    "lib.online.boardSize": "Nha bọọdụ",
+    "lib.online.oppPassed": "Onye mmegide gafere. Ọ bụrụ na i gafekwa, egwuregwu ga-agwụ a ga-agụkọ ya.",
+    "lib.online.modeAi": "Gwuo megide kọmputa",
+    "lib.online.modeOnline": "Gwuo n'ịntanetị"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku buru ibu 16x16 na-eji 1-9 na A-G, ọkwa 10 site n'ọdịnihu ruo ọnụ ọgụ, nwere ndetu na ntụnye aka."
     },
     "chess": {
-      "name": "Chess megide kọmputa",
-      "desc": "Kpọọ chess megide kọmputa n'ọkwa 10 site n'ọdịnihu ruo ọnụ ọgụ, nwere castling, en passant na mmelite."
+      "name": "Chess",
+      "desc": "Gwuo chess megide kọmputa n'ọkwa 10 ma ọ bụ n'ịntanetị: kpọọ enyi site na njikọ ma ọ bụ gwuo ya na onye ọhụrụ. Ya na castling, en passant na nkwalite."
     },
     "xiangqi": {
-      "name": "Xiangqi megide kọmputa",
-      "desc": "Kpọọ chess China (xiangqi) megide kọmputa n'ọkwa 10, nwere mgbochi ụkwụ inyinya, anya enyí, ijide egbe na iwu ndị agha na-eche ihu."
+      "name": "Xiangqi (chess ndị China)",
+      "desc": "Gwuo Xiangqi megide kọmputa n'ọkwa 10 ma ọ bụ n'ịntanetị: kpọọ enyi site na njikọ ma ọ bụ gwuo ya na onye ọhụrụ. Iwu zuru ezu: ụkwụ ịnyịnya, anya enyi, ịwụli elu nke egbe na ọchịagha ndị na-ekwesịghị ịhụ ibe ha."
     },
     "go-game": {
-      "name": "Go megide kọmputa",
-      "desc": "Kpọọ Go megide kọmputa n'elu bọọdụ 5x5, 7x7 na 9x9 n'ọkwa 10, nwere ọgụgụ akara onwe ya na njedebe."
+      "name": "Go",
+      "desc": "Gwuo Go megide kọmputa n'ọkwa 10 ma ọ bụ n'ịntanetị na bọọdụ 9x9, 13x13 na 19x19 ya na enyi ma ọ bụ onye mmegide ọhụrụ. Ngụkọ akpaaka na njedebe."
     },
     "memory-shapes": {
       "name": "Ebe nchekwa ọdịdị na agba",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktọọpụ n'ịntanetị",
       "desc": "Desktọọpụ kọmputa n'ime ihe nchọgharị gị: onye njikwa faịlụ, Notepad, onye nlele onyonyo na PDF, ihe mgbako, kalenda na ihe mkpofu. A na-echekwa faịlụ na Google Drive gị."
+    },
+    "co-up": {
+      "name": "Xiangqi zoro ezo (Cờ úp)",
+      "desc": "Gwuo Xiangqi zoro ezo nke Vietnam: iberibe na-amalite n'ihu ala ma a na-atụgharị ha mgbe mmegharị mbụ gasịrị. Megide kọmputa n'ọkwa 10 ma ọ bụ n'ịntanetị ya na ndị enyi na ndị mmegide ọhụrụ."
     }
   },
   "s": {

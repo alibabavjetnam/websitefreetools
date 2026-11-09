@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Nolosha waa dhammaatay — hadda dhammaan taayilada waa la muujiyay.",
     "lib.game.mmNote": "Taabo Bilow: taayilada waxaa la muujiyaa {s} ilbiriqsi, kaddibna waa la qariyaa. Xusuuso qaabka iyo midabka taayil kasta, kaddib dooro taayilka ku habboon qaabka la muujiyay. Khaladaad ka badan {l} waxay keenaan in heerka laga hoobto.",
     "lib.game.fullscreen": "Shaashad buuxda",
-    "lib.game.exitFullscreen": "Ka bax shaashadda buuxda"
+    "lib.game.exitFullscreen": "Ka bax shaashadda buuxda",
+    "lib.online.guest": "Marti",
+    "lib.online.connFail": "Lagama xidhiri karo server-ka ciyaarta onlaynka. Hubi xiriirka (ama dami xannibaha xayeysiiska) kadibna guji Isku day mar kale.",
+    "lib.online.tableGone": "Qofkii furay miiska wuu baxay. Dooro miis kale ama fur mid cusub.",
+    "lib.online.drawDeclined": "Ka soo horjeedaha wuu diiday barbarro.",
+    "lib.online.opponent": "Ka soo horjeedaha",
+    "lib.online.copied": "Xiriirka waa la koobiyeeyay. U dir saaxiibkaa si aad wada ciyaartaan.",
+    "lib.online.waitingFor": "sugaya {n} il",
+    "lib.online.drawAgreed": "Labada ciyaartoy waxay ku heshiiyeen barbarro.",
+    "lib.online.draw": "Ciyaartu waxay ku dhammaatay barbarro.",
+    "lib.online.oppResigned": "Ka soo horjeedaha wuu is dhiibay — adigaa guulaystay!",
+    "lib.online.youResigned": "Waad is dhiibtay.",
+    "lib.online.youWin": "Adigaa guulaystay!",
+    "lib.online.youLose": "Waad guuldaraysatay.",
+    "lib.online.connecting": "Ku xirmaya server-ka ciyaarta onlaynka…",
+    "lib.online.retry": "Isku day mar kale",
+    "lib.online.quick": "Hel ka soo horjeede",
+    "lib.online.createPublic": "Fur miis dadweyne",
+    "lib.online.createPrivate": "Fur miis gaar ah oo casuun saaxiib",
+    "lib.online.modesHint": "Miisaska dadweynaha waxay ka muuqdaan liiska qof kastana wuu ku biiri karaa. Miis gaar ah waxaa lagu gaari karaa oo keliya xiriirka casuumaadda.",
+    "lib.online.openTables": "Miisaska dadweynaha ee sugaya",
+    "lib.online.join": "Ku biir",
+    "lib.online.noTables": "Weli ma jiro miis sugaya. Guji \"Hel ka soo horjeede\" ama fur miis cusub.",
+    "lib.online.privacy": "Dhaqdhaqaaqyadu waxay maraan server MQTT dadweyne oo bilaash ah waxaana loo sir-qariyaa miis kasta; server-ku ma kaydiyo ciyaaraha. Ku gal Google si aad ciyaaraha dhammaaday ugu kaydiso Drive-kaaga.",
+    "lib.online.waitingPublic": "Miis dadweyne: sugaya in qof ku biiro…",
+    "lib.online.waitingPrivate": "Miis gaar ah: xiriirkan u dir saaxiibkaa. Ciyaartu way bilaabanaysaa marka uu furo.",
+    "lib.online.leave": "Ka bax miiska",
+    "lib.online.full": "Miiskan horeba 2 ciyaartoy ayaa ku jira. Hel miis kale ama fur mid cusub.",
+    "lib.online.backToList": "Ku noqo liiska miisaska",
+    "lib.online.you": "Adiga",
+    "lib.online.oppLeft": "wuu ka baxay miiska",
+    "lib.online.oppOffline": "xiriir la'aan",
+    "lib.online.drawOffer": "Ka soo horjeedaha wuxuu soo jeedinayaa barbarro.",
+    "lib.online.accept": "Aqbal",
+    "lib.online.decline": "Diid",
+    "lib.online.drawSent": "Barbarro ayaa la soo jeediyay…",
+    "lib.online.offerDraw": "Soo jeedi barbarro",
+    "lib.online.resignConfirm": "Mar kale guji si aad isu dhiibto",
+    "lib.online.resign": "Is dhiib",
+    "lib.online.againSent": "Sugaya in ka soo horjeedaha oggolaado…",
+    "lib.online.againAccept": "Ka soo horjeedaha wuxuu rabaa aargoosi — Mar kale ciyaar",
+    "lib.online.again": "Mar kale ciyaar (beddel midabada)",
+    "lib.online.inviteLink": "Xiriirka casuumaadda",
+    "lib.online.copy": "Koobiyee xiriirka",
+    "lib.online.share": "La wadaag",
+    "lib.online.saved": "Ciyaarta waxaa lagu kaydiyay Google Drive (galka WFTools/Games).",
+    "lib.online.saving": "Ciyaarta waxaa lagu kaydinayaa Google Drive…",
+    "lib.online.saveFail": "Ciyaarta weli lagama kaydin karin Drive.",
+    "lib.online.save": "Ku kaydi ciyaarta Google Drive",
+    "lib.game.darkNote": "Xiangqi qarsoon (Cờ úp): labada jeneraal waxay ku bilaabmaan iyagoo furan, xabbadaha kale waa la isku qasaa oo wejiga hoos ayaa loo dhigaa. Xabbad qarsoon waxay u socotaa sida xabbadda caadi ahaan ka bilaabanta guriga ay ku jirto (guriga gaadhiga waxay u socotaa sida gaadhi), kadib waa la rogaa oo intaas kadib waxay u socotaa sida xabbaddeeda dhabta ah. La-taliyayaasha iyo maroodiyaashu waxay mari karaan sabuuradda oo dhan. Jeg-mat ama dhaqdhaqaaq la'aan waa guuldarro.",
+    "lib.game.darkBoard": "Sabuuradda Xiangqi qarsoon",
+    "lib.online.red": "Casaan",
+    "lib.online.black": "Madow",
+    "lib.game.captured": "Xabbadaha la qabtay",
+    "lib.online.pickTable": "Si aad u bilowdo, hel ka soo horjeede ama fur miis ku yaal guddiga dhinaca.",
+    "lib.online.theirTurn": "Waa doorka ka soo horjeedaha",
+    "lib.online.white": "Caddaan",
+    "lib.online.goNote": "Sabuurad {n}×{n}, madowga ayaa bilaaba, caddaanku wuxuu helaa komi {k}. Tirinta aagga; ka saar dhammaan dhagxaanta dhintay ka hor intaadan dhaafin. Ciyaartu way dhammaataa marka labaduba isku xiga ay dhaafaan.",
+    "lib.online.boardSize": "Cabbirka sabuuradda",
+    "lib.online.oppPassed": "Ka soo horjeedaha wuu dhaafay. Haddii adna aad dhaafto, ciyaartu way dhammaanaysaa waana la tirinayaa.",
+    "lib.online.modeAi": "Ciyaar kombiyuutarka",
+    "lib.online.modeOnline": "Ciyaar onlayn"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku weyn 16x16 oo isticmaalaya 1-9 iyo A-G, 10 heer oo fudud ilaa adag, leh qoraallo iyo tilmaamo."
     },
     "chess": {
-      "name": "Shatranj Kombuyuutar",
-      "desc": "Ku ciyaar shatranj kombuyuutarka 10 heer oo fudud ilaa adag, leh castling, en passant iyo kor-u-qaadis."
+      "name": "Jees",
+      "desc": "Ku ciyaar jees kombiyuutarka 10 heer ama onlayn: casuun saaxiib xiriir ku dir ama la ciyaar qof cusub. Leh castling, en passant iyo dallacaad."
     },
     "xiangqi": {
-      "name": "Xiangqi Kombuyuutar",
-      "desc": "Ku ciyaar shatranjka Shiinaha (xiangqi) kombuyuutarka 10 heer, leh xiritaanka lugta fardaha, il maroodiga, qabashada madfaca iyo xeerka jeneraalada is-eegaya."
+      "name": "Xiangqi (jees Shiinees)",
+      "desc": "Ku ciyaar Xiangqi kombiyuutarka 10 heer ama onlayn: casuun saaxiib xiriir ku dir ama la ciyaar qof cusub. Xeerar dhammaystiran: lugta faraska, isha maroodiga, boodka madfaca iyo jeneraalada aan is arki karin."
     },
     "go-game": {
-      "name": "Go Kombuyuutar",
-      "desc": "Ku ciyaar Go kombuyuutarka looxyada 5x5, 7x7 iyo 9x9 ee 10 heer, leh tirin otomaatig ah dhammaadka."
+      "name": "Go",
+      "desc": "Ku ciyaar Go kombiyuutarka 10 heer ama onlayn sabuuradaha 9x9, 13x13 iyo 19x19 saaxiib ama ka soo horjeede cusub. Tirin toos ah dhammaadka."
     },
     "memory-shapes": {
       "name": "Xusuusta Qaabka & Midabka",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktop onlayn ah",
       "desc": "Desktop kombiyuutar oo biraawsarkaaga ku jira: maamulaha faylasha, Notepad, daawade sawir iyo PDF, xisaabiye, kalandar iyo qashin. Faylasha waxaa lagu kaydiyaa Google Drive-kaaga."
+    },
+    "co-up": {
+      "name": "Xiangqi qarsoon (Cờ úp)",
+      "desc": "Ciyaar Xiangqi qarsoon ee Fiyetnaam: xabbaduhu waxay ku bilaabmaan iyagoo wejiga hoos u jeeda waxaana la rogaa kadib dhaqdhaqaaqa koowaad. Kombiyuutarka 10 heer ama onlayn saaxiibo iyo ka soo horjeedayaal cusub."
     }
   },
   "s": {

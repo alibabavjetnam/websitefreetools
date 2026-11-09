@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Nyawa béak — sakabéh ubin ayeuna dibuka.",
     "lib.game.mmNote": "Pencét Mimitian: ubin ditémbongkeun {s} detik, tuluy disumputkeun. Apalkeun bentuk jeung warna unggal ubin, tuluy pilih ubin anu cocog jeung bentuk anu ditémbongkeun. Langkung ti {l} kasalahan hartosna tingkat gagal.",
     "lib.game.fullscreen": "Layar pinuh",
-    "lib.game.exitFullscreen": "Kaluar tina layar pinuh"
+    "lib.game.exitFullscreen": "Kaluar tina layar pinuh",
+    "lib.online.guest": "Sémah",
+    "lib.online.connFail": "Teu bisa nyambung ka server kaulinan online. Pariksa sambungan (atawa pareuman pameungpeuk iklan) tuluy klik Cobian deui.",
+    "lib.online.tableGone": "Nu muka méja geus indit. Pilih méja séjén atawa buka nu anyar.",
+    "lib.online.drawDeclined": "Lawan nolak seri.",
+    "lib.online.opponent": "Lawan",
+    "lib.online.copied": "Tautan geus ditiron. Kirim ka babaturan anjeun sangkan bisa ulin bareng.",
+    "lib.online.waitingFor": "ngadagoan {n} dtk",
+    "lib.online.drawAgreed": "Duanana pamaén satuju seri.",
+    "lib.online.draw": "Kaulinan réngsé seri.",
+    "lib.online.oppResigned": "Lawan nyerah — anjeun meunang!",
+    "lib.online.youResigned": "Anjeun nyerah.",
+    "lib.online.youWin": "Anjeun meunang!",
+    "lib.online.youLose": "Anjeun éléh.",
+    "lib.online.connecting": "Keur nyambung ka server kaulinan online…",
+    "lib.online.retry": "Cobian deui",
+    "lib.online.quick": "Néangan lawan",
+    "lib.online.createPublic": "Buka méja umum",
+    "lib.online.createPrivate": "Buka méja pribadi jeung ajak babaturan",
+    "lib.online.modesHint": "Méja umum témbong dina daptar sarta saha waé bisa milu. Méja pribadi ngan bisa diasupan ku tautan uleman.",
+    "lib.online.openTables": "Méja umum nu keur ngadagoan",
+    "lib.online.join": "Milu",
+    "lib.online.noTables": "Can aya méja nu ngadagoan. Klik \"Néangan lawan\" atawa buka méja anyar.",
+    "lib.online.privacy": "Léngkah-léngkah ngaliwatan server MQTT umum haratis sarta diénkripsi unggal méja; server henteu nyimpen kaulinan. Asup ku Google pikeun nyimpen kaulinan nu geus réngsé dina Drive anjeun.",
+    "lib.online.waitingPublic": "Méja umum: ngadagoan aya nu milu…",
+    "lib.online.waitingPrivate": "Méja pribadi: kirim tautan ieu ka babaturan anjeun. Kaulinan dimimitian basa manéhna muka.",
+    "lib.online.leave": "Ninggalkeun méja",
+    "lib.online.full": "Méja ieu geus aya 2 pamaén. Téangan méja séjén atawa buka nu anyar.",
+    "lib.online.backToList": "Balik ka daptar méja",
+    "lib.online.you": "Anjeun",
+    "lib.online.oppLeft": "ninggalkeun méja",
+    "lib.online.oppOffline": "pegat",
+    "lib.online.drawOffer": "Lawan nawarkeun seri.",
+    "lib.online.accept": "Tarima",
+    "lib.online.decline": "Tolak",
+    "lib.online.drawSent": "Seri ditawarkeun…",
+    "lib.online.offerDraw": "Tawarkeun seri",
+    "lib.online.resignConfirm": "Klik deui pikeun nyerah",
+    "lib.online.resign": "Nyerah",
+    "lib.online.againSent": "Ngadagoan lawan satuju…",
+    "lib.online.againAccept": "Lawan hayang males — Ulin deui",
+    "lib.online.again": "Ulin deui (ganti warna)",
+    "lib.online.inviteLink": "Tautan uleman",
+    "lib.online.copy": "Tiron tautan",
+    "lib.online.share": "Bagikeun",
+    "lib.online.saved": "Kaulinan disimpen dina Google Drive (polder WFTools/Games).",
+    "lib.online.saving": "Keur nyimpen kaulinan dina Google Drive…",
+    "lib.online.saveFail": "Kaulinan can bisa disimpen dina Drive.",
+    "lib.online.save": "Simpen kaulinan dina Google Drive",
+    "lib.game.darkNote": "Xiangqi nyumput (Cờ úp): duanana jénderal dimimitian kabuka, buah séjénna diacak tur disimpen nangkub. Buah nu nyumput maju siga buah nu biasana dimimitian dina kotakna (dina kotak karéta maju siga karéta), tuluy dibalikkeun sarta saterusna maju salaku buah aslina. Panaséhat jeung gajah bisa leumpang di sakuliah papan. Skakmat atawa teu boga léngkah hartina éléh.",
+    "lib.game.darkBoard": "Papan Xiangqi nyumput",
+    "lib.online.red": "Beureum",
+    "lib.online.black": "Hideung",
+    "lib.game.captured": "Buah nu didahar",
+    "lib.online.pickTable": "Téangan lawan atawa buka méja dina panel sisi pikeun mimitian.",
+    "lib.online.theirTurn": "Giliran lawan",
+    "lib.online.white": "Bodas",
+    "lib.online.goNote": "Papan {n}×{n}, hideung mimiti, bodas meunang komi {k}. Ngitung wewengkon; cabut kabéh batu paéh saméméh pass. Kaulinan réngsé lamun duanana pass patuturut.",
+    "lib.online.boardSize": "Ukuran papan",
+    "lib.online.oppPassed": "Lawan pass. Lamun anjeun ogé pass, kaulinan réngsé sarta diitung.",
+    "lib.online.modeAi": "Ulin ngalawan komputer",
+    "lib.online.modeOnline": "Ulin online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku ageung 16x16 migunakeun 1-9 jeung A-G, 10 tingkat tina gampang nepi ka hésé, kalawan catetan jeung pitunjuk."
     },
     "chess": {
-      "name": "Catur ngalawan Komputer",
-      "desc": "Ulin catur ngalawan komputer dina 10 tingkat tina gampang nepi ka hésé, kalawan rokade, en passant jeung promosi."
+      "name": "Catur",
+      "desc": "Ulin catur ngalawan komputer dina 10 tingkat atawa online: ajak babaturan ku tautan atawa ulin jeung jalma anyar. Kalawan rokade, en passant jeung promosi."
     },
     "xiangqi": {
-      "name": "Xiangqi ngalawan Komputer",
-      "desc": "Ulin catur Tiongkok (xiangqi) ngalawan komputer dina 10 tingkat, kalawan blokir suku kuda, panon gajah, néwak ku mariem jeung aturan jenderal héadap-héadapan."
+      "name": "Xiangqi (catur Tiongkok)",
+      "desc": "Ulin Xiangqi ngalawan komputer dina 10 tingkat atawa online: ajak babaturan ku tautan atawa ulin jeung jalma anyar. Aturan lengkep: suku kuda, panon gajah, luncatan mariem jeung jénderal nu teu meunang paadu hareupan."
     },
     "go-game": {
-      "name": "Go ngalawan Komputer",
-      "desc": "Ulin Go ngalawan komputer dina papan 5x5, 7x7 jeung 9x9 dina 10 tingkat, kalawan itungan skor otomatis di tungtung."
+      "name": "Go",
+      "desc": "Ulin Go ngalawan komputer dina 10 tingkat atawa online dina papan 9x9, 13x13 jeung 19x19 jeung babaturan atawa lawan anyar. Ngitung otomatis di ahir."
     },
     "memory-shapes": {
       "name": "Mémori Wangun & Warna",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktop online",
       "desc": "Desktop komputer dina panyungsi anjeun: pangatur file, Notepad, panémbong gambar jeung PDF, kalkulator, kalénder jeung tong runtah. File disimpen di Google Drive anjeun."
+    },
+    "co-up": {
+      "name": "Xiangqi nyumput (Cờ úp)",
+      "desc": "Ulin Xiangqi nyumput ti Vietnam: buah dimimitian nangkub sarta dibalikkeun sanggeus léngkah kahiji. Ngalawan komputer dina 10 tingkat atawa online jeung babaturan sarta lawan anyar."
     }
   },
   "s": {

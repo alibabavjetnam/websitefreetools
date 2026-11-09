@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Izimpilo ziphelile — wonke amathayili manje ayabonakala.",
     "lib.game.mmNote": "Cindezela Qala: amathayili aboniswa imizuzwana engu-{s}, bese efihlwa. Khumbula isimo nombala wethayili ngalinye, bese ukhetha ithayili efana nesimo oluboniswayo. Amaphutha angaphezu kwangu-{l} enza izinga lehluleke.",
     "lib.game.fullscreen": "Isikrini esigcwele",
-    "lib.game.exitFullscreen": "Phuma kusikrini esigcwele"
+    "lib.game.exitFullscreen": "Phuma kusikrini esigcwele",
+    "lib.online.guest": "Isivakashi",
+    "lib.online.connFail": "Akukwazekanga ukuxhuma kuseva yemidlalo ye-inthanethi. Hlola uxhumano (noma vala isivimbi sezikhangiso) bese uchofoza Zama futhi.",
+    "lib.online.tableGone": "Owavula itafula usehambile. Khetha elinye itafula noma uvule elisha.",
+    "lib.online.drawDeclined": "Imbangi yenqabe ukulingana.",
+    "lib.online.opponent": "Imbangi",
+    "lib.online.copied": "Isixhumanisi sikopishiwe. Sithumele kumngane wakho ukuze nidlale ndawonye.",
+    "lib.online.waitingFor": "ilinde imizuzwana engu-{n}",
+    "lib.online.drawAgreed": "Bobabili abadlali bavumelene ngokulingana.",
+    "lib.online.draw": "Umdlalo uphele ngokulingana.",
+    "lib.online.oppResigned": "Imbangi inikezele — uwinile!",
+    "lib.online.youResigned": "Unikezele.",
+    "lib.online.youWin": "Uwinile!",
+    "lib.online.youLose": "Uhluliwe.",
+    "lib.online.connecting": "Iyaxhuma kuseva yemidlalo ye-inthanethi…",
+    "lib.online.retry": "Zama futhi",
+    "lib.online.quick": "Thola imbangi",
+    "lib.online.createPublic": "Vula itafula lomphakathi",
+    "lib.online.createPrivate": "Vula itafula langasese bese umema umngane",
+    "lib.online.modesHint": "Amatafula omphakathi avela ohlwini futhi noma ubani angajoyina. Itafula langasese lingenwa kuphela ngesixhumanisi sesimemo.",
+    "lib.online.openTables": "Amatafula omphakathi alindile",
+    "lib.online.join": "Joyina",
+    "lib.online.noTables": "Alikho itafula elilindile okwamanje. Chofoza \"Thola imbangi\" noma uvule itafula elisha.",
+    "lib.online.privacy": "Ukunyakaza kudlula kuseva ye-MQTT yomphakathi yamahhala futhi kubethelwa itafula ngalinye; iseva ayigcini imidlalo. Ngena nge-Google ukuze ugcine imidlalo eqediwe ku-Drive yakho.",
+    "lib.online.waitingPublic": "Itafula lomphakathi: kulindwe ukuthi kujoyine othile…",
+    "lib.online.waitingPrivate": "Itafula langasese: thumela lesi sixhumanisi kumngane wakho. Umdlalo uqala lapho esivula.",
+    "lib.online.leave": "Shiya itafula",
+    "lib.online.full": "Leli tafula selinabadlali abangu-2. Thola elinye itafula noma uvule elisha.",
+    "lib.online.backToList": "Buyela ohlwini lwamatafula",
+    "lib.online.you": "Wena",
+    "lib.online.oppLeft": "ushiye itafula",
+    "lib.online.oppOffline": "akaxhunyiwe",
+    "lib.online.drawOffer": "Imbangi iphakamisa ukulingana.",
+    "lib.online.accept": "Yamukela",
+    "lib.online.decline": "Yenqaba",
+    "lib.online.drawSent": "Ukulingana kuphakanyisiwe…",
+    "lib.online.offerDraw": "Phakamisa ukulingana",
+    "lib.online.resignConfirm": "Chofoza futhi ukuze unikezele",
+    "lib.online.resign": "Nikezela",
+    "lib.online.againSent": "Kulindwe ukuthi imbangi ivume…",
+    "lib.online.againAccept": "Imbangi ifuna umdlalo wokuziphindiselela — Dlala futhi",
+    "lib.online.again": "Dlala futhi (shintsha imibala)",
+    "lib.online.inviteLink": "Isixhumanisi sesimemo",
+    "lib.online.copy": "Kopisha isixhumanisi",
+    "lib.online.share": "Yabelana",
+    "lib.online.saved": "Umdlalo ugcinwe ku-Google Drive (ifolda WFTools/Games).",
+    "lib.online.saving": "Igcina umdlalo ku-Google Drive…",
+    "lib.online.saveFail": "Umdlalo awukakwazi ukugcinwa ku-Drive.",
+    "lib.online.save": "Gcina umdlalo ku-Google Drive",
+    "lib.game.darkNote": "I-Xiangqi efihliwe (Cờ úp): bobabili ojenene baqala bevulekile, ezinye izingcezu zixutshwa futhi zibekwe zibheke phansi. Ucezu olufihliwe luhamba njengocezu oluvame ukuqala esikweleni salo (esikweleni senqola luhamba njengenqola), bese luphendulwa futhi kusukela lapho luhamba njengocezu lwalo langempela. Abeluleki nezindlovu bangahamba yonke ibhodi. Ukuthi uyi-checkmate noma ungabi nakunyakaza kusho ukuhlulwa.",
+    "lib.game.darkBoard": "Ibhodi le-Xiangqi efihliwe",
+    "lib.online.red": "Obomvu",
+    "lib.online.black": "Omnyama",
+    "lib.game.captured": "Izingcezu ezithunjiwe",
+    "lib.online.pickTable": "Thola imbangi noma uvule itafula ephaneli eseceleni ukuze uqale.",
+    "lib.online.theirTurn": "Ithuba lembangi",
+    "lib.online.white": "Omhlophe",
+    "lib.online.goNote": "Ibhodi elingu-{n}×{n}, omnyama uqala, omhlophe uthola i-komi engu-{k}. Ukubala indawo; susa onke amatshe afile ngaphambi kokudlula. Umdlalo uphela lapho bobabili bedlula kulandelana.",
+    "lib.online.boardSize": "Usayizi webhodi",
+    "lib.online.oppPassed": "Imbangi idlulile. Uma nawe udlula, umdlalo uyaphela futhi ubalwe.",
+    "lib.online.modeAi": "Dlala nekhompyutha",
+    "lib.online.modeOnline": "Dlala ku-inthanethi"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "I-Sudoku enkulu engu-16x16 esebenzisa u-1-9 no-A-G, amazinga ayi-10 kusuka kokulula kuya kokunzima, namanothi nezeluleko."
     },
     "chess": {
-      "name": "Chess nekhompyutha",
-      "desc": "Dlala chess nekhompyutha emazingeni ayi-10 kusuka kokulula kuya kokunzima, nokucasela, en passant nokukhushulwa."
+      "name": "I-chess",
+      "desc": "Dlala i-chess nekhompyutha emazingeni angu-10 noma ku-inthanethi: mema umngane ngesixhumanisi noma udlale nomuntu omusha. Ine-castling, en passant nokukhushulwa."
     },
     "xiangqi": {
-      "name": "Xiangqi nekhompyutha",
-      "desc": "Dlala chess yaseChina (xiangqi) nekhompyutha emazingeni ayi-10, nokuvimbela unyawo lwehhashi, iso lendlovu, ukuthumba ngomkhonto nomthetho wamajenerali abhekene."
+      "name": "I-Xiangqi (i-chess yaseShayina)",
+      "desc": "Dlala i-Xiangqi nekhompyutha emazingeni angu-10 noma ku-inthanethi: mema umngane ngesixhumanisi noma udlale nomuntu omusha. Imithetho ephelele: umlenze wehhashi, iso lendlovu, ukweqa kwenganono nojenene abangavunyelwe ukubonana."
     },
     "go-game": {
-      "name": "Go nekhompyutha",
-      "desc": "Dlala i-Go nekhompyutha ezibhodini ze-5x5, 7x7 ne-9x9 emazingeni ayi-10, nokubalwa kwamaphuzu ngokuzenzakalelayo ekugcineni."
+      "name": "I-Go",
+      "desc": "Dlala i-Go nekhompyutha emazingeni angu-10 noma ku-inthanethi emabhodini angu-9x9, 13x13 no-19x19 nomngane noma imbangi entsha. Ukubala okuzenzakalelayo ekugcineni."
     },
     "memory-shapes": {
       "name": "Inkumbulo yesimo nombala",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Ideskithophu ye-inthanethi",
       "desc": "Ideskithophu yekhompyutha esipheqululini sakho: umphathi wamafayela, Notepad, isibukeli sezithombe ne-PDF, isibali, ikhalenda nodoti. Amafayela alondolozwa kuGoogle Drive yakho."
+    },
+    "co-up": {
+      "name": "I-Xiangqi efihliwe (Cờ úp)",
+      "desc": "Dlala i-Xiangqi efihliwe yaseVietnam: izingcezu ziqala zibheke phansi futhi ziphendulwa ngemuva kokunyakaza kokuqala. Nekhompyutha emazingeni angu-10 noma ku-inthanethi nabangane nezimbangi ezintsha."
     }
   },
   "s": {

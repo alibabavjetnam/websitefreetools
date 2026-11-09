@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Spiċċaw il-ħajjiet — il-madum kollu issa huwa żvelat.",
     "lib.game.mmNote": "Agħfas Ibda: il-madum jintwera għal {s} sekondi u mbagħad jinħeba. Ftakar il-forma u l-kulur ta' kull madum, u mbagħad agħżel dak li jaqbel mal-forma murija. Aktar minn {l} żbalji jfissru li ma tgħaddix il-livell.",
     "lib.game.fullscreen": "Skrin sħiħ",
-    "lib.game.exitFullscreen": "Oħroġ mill-iskrin sħiħ"
+    "lib.game.exitFullscreen": "Oħroġ mill-iskrin sħiħ",
+    "lib.online.guest": "Mistieden",
+    "lib.online.connFail": "Ma setax jgħaqqad mas-server tal-logħob online. Iċċekkja l-konnessjoni (jew itfi l-imblokkatur tar-reklami) u kklikkja Erġa' pprova.",
+    "lib.online.tableGone": "Min fetaħ il-mejda telaq. Agħżel mejda oħra jew iftaħ waħda ġdida.",
+    "lib.online.drawDeclined": "L-avversarju rrifjuta d-draw.",
+    "lib.online.opponent": "Avversarju",
+    "lib.online.copied": "Il-link ġiet ikkupjata. Ibgħatha lil sieħbek biex tilagħbu flimkien.",
+    "lib.online.waitingFor": "qed jistenna {n} s",
+    "lib.online.drawAgreed": "Iż-żewġ plejers qablu fuq draw.",
+    "lib.online.draw": "Il-logħba spiċċat draw.",
+    "lib.online.oppResigned": "L-avversarju ċeda — rbaħt!",
+    "lib.online.youResigned": "Ċedejt.",
+    "lib.online.youWin": "Rbaħt!",
+    "lib.online.youLose": "Tlift.",
+    "lib.online.connecting": "Qed jgħaqqad mas-server tal-logħob online…",
+    "lib.online.retry": "Erġa' pprova",
+    "lib.online.quick": "Sib avversarju",
+    "lib.online.createPublic": "Iftaħ mejda pubblika",
+    "lib.online.createPrivate": "Iftaħ mejda privata u stieden ħabib",
+    "lib.online.modesHint": "Il-mwejjed pubbliċi jidhru fil-lista u kulħadd jista' jingħaqad. Mejda privata tintlaħaq biss bil-link tal-istedina.",
+    "lib.online.openTables": "Mwejjed pubbliċi jistennew",
+    "lib.online.join": "Ingħaqad",
+    "lib.online.noTables": "Għad m'hemm ebda mejda tistenna. Ikklikkja \"Sib avversarju\" jew iftaħ mejda ġdida.",
+    "lib.online.privacy": "Il-mossi jgħaddu minn server MQTT pubbliku b'xejn u huma kriptati għal kull mejda; is-server ma jżommx logħob. Idħol b'Google biex issalva l-logħob mitmum fid-Drive tiegħek.",
+    "lib.online.waitingPublic": "Mejda pubblika: qed nistennew li xi ħadd jingħaqad…",
+    "lib.online.waitingPrivate": "Mejda privata: ibgħat din il-link lil sieħbek. Il-logħba tibda meta jiftaħha.",
+    "lib.online.leave": "Itlaq mill-mejda",
+    "lib.online.full": "Din il-mejda diġà għandha 2 plejers. Sib mejda oħra jew iftaħ waħda ġdida.",
+    "lib.online.backToList": "Lura għal-lista tal-mwejjed",
+    "lib.online.you": "Int",
+    "lib.online.oppLeft": "telaq mill-mejda",
+    "lib.online.oppOffline": "skonnettjat",
+    "lib.online.drawOffer": "L-avversarju qed joffri draw.",
+    "lib.online.accept": "Aċċetta",
+    "lib.online.decline": "Irrifjuta",
+    "lib.online.drawSent": "Draw offrut…",
+    "lib.online.offerDraw": "Offri draw",
+    "lib.online.resignConfirm": "Erġa' kklikkja biex iċċedi",
+    "lib.online.resign": "Ċedi",
+    "lib.online.againSent": "Qed nistennew li l-avversarju jaqbel…",
+    "lib.online.againAccept": "L-avversarju jrid rivinċita — Erġa' ilgħab",
+    "lib.online.again": "Erġa' ilgħab (ibdel il-kuluri)",
+    "lib.online.inviteLink": "Link tal-istedina",
+    "lib.online.copy": "Ikkopja l-link",
+    "lib.online.share": "Aqsam",
+    "lib.online.saved": "Il-logħba ġiet salvata f'Google Drive (folder WFTools/Games).",
+    "lib.online.saving": "Qed tiġi salvata l-logħba f'Google Drive…",
+    "lib.online.saveFail": "Il-logħba għadha ma setgħetx tiġi salvata fid-Drive.",
+    "lib.online.save": "Issalva l-logħba f'Google Drive",
+    "lib.game.darkNote": "Xiangqi moħbi (Cờ úp): iż-żewġ ġenerali jibdew miftuħa, il-biċċiet l-oħra jitħalltu u jitqiegħdu maqluba. Biċċa moħbija timxi bħall-biċċa li normalment tibda fuq il-kaxxa tagħha (fuq kaxxa ta' karru timxi bħal karru), imbagħad tinqaleb u minn hemm 'il quddiem timxi bħala l-biċċa vera tagħha. Il-konsulenti u l-iljunfanti jistgħu jimxu mal-bord kollu. Checkmate jew l-ebda mossa tfisser telfa.",
+    "lib.game.darkBoard": "Bord tax-Xiangqi moħbi",
+    "lib.online.red": "Aħmar",
+    "lib.online.black": "Iswed",
+    "lib.game.captured": "Biċċiet maqbuda",
+    "lib.online.pickTable": "Sib avversarju jew iftaħ mejda fil-pannell tal-ġenb biex tibda.",
+    "lib.online.theirTurn": "Dawra tal-avversarju",
+    "lib.online.white": "Abjad",
+    "lib.online.goNote": "Bord {n}×{n}, l-iswed jibda, l-abjad jieħu {k} komi. Għadd bl-erja; neħħi l-ġebel mejjet kollu qabel ma tgħaddi. Il-logħba tispiċċa meta t-tnejn jgħaddu wara xulxin.",
+    "lib.online.boardSize": "Daqs tal-bord",
+    "lib.online.oppPassed": "L-avversarju għadda. Jekk tgħaddi int ukoll, il-logħba tispiċċa u tingħadd.",
+    "lib.online.modeAi": "Ilgħab kontra l-kompjuter",
+    "lib.online.modeOnline": "Ilgħab online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku kbir 16x16 bl-użu ta' 1-9 u A-G, 10 livelli minn faċli għal diffiċli, b'noti u ħjiel."
     },
     "chess": {
-      "name": "Chess kontra l-Kompjuter",
-      "desc": "Lagħab chess kontra l-kompjuter f'10 livelli minn faċli għal diffiċli, bil-kastlu, en passant u promozzjoni."
+      "name": "Ċess",
+      "desc": "Ilgħab iċ-ċess kontra l-kompjuter f'10 livelli jew online: stieden ħabib b'link jew ilgħab ma' xi ħadd ġdid. Bil-kastell, en passant u promozzjoni."
     },
     "xiangqi": {
-      "name": "Xiangqi kontra l-Kompjuter",
-      "desc": "Lagħab chess Ċiniż (xiangqi) kontra l-kompjuter f'10 livelli, bil-imblukkar tas-sieq taż-żiemel, għajn tal-iljunfant, qbid tal-kanun u r-regola tal-ġenerali wiċċ imb wiċċ."
+      "name": "Xiangqi (ċess Ċiniż)",
+      "desc": "Ilgħab Xiangqi kontra l-kompjuter f'10 livelli jew online: stieden ħabib b'link jew ilgħab ma' xi ħadd ġdid. Regoli sħaħ: sieq iż-żiemel, għajn l-iljunfant, il-qabża tal-kanun u ġenerali li ma jistgħux jaraw lil xulxin."
     },
     "go-game": {
-      "name": "Go kontra l-Kompjuter",
-      "desc": "Lagħab Go kontra l-kompjuter fuq bordijiet 5x5, 7x7 u 9x9 f'10 livelli, b'għadd awtomatiku tal-punti fl-aħħar."
+      "name": "Go",
+      "desc": "Ilgħab Go kontra l-kompjuter f'10 livelli jew online fuq bordijiet 9x9, 13x13 u 19x19 ma' ħabib jew avversarju ġdid. Għadd awtomatiku fl-aħħar."
     },
     "memory-shapes": {
       "name": "Memorja tal-Forom u l-Kuluri",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktop onlajn",
       "desc": "Desktop ta' kompjuter fil-brawżer tiegħek: maniġer tal-fajls, Notepad, wiri tal-istampi u PDF, kalkulatur, kalendarju u barmil. Il-fajls jiġu salvati fil-Google Drive tiegħek."
+    },
+    "co-up": {
+      "name": "Xiangqi moħbi (Cờ úp)",
+      "desc": "Ilgħab ix-Xiangqi moħbi Vjetnamiż: il-biċċiet jibdew maqluba u jinqalbu wara l-ewwel mossa. Kontra l-kompjuter f'10 livelli jew online ma' ħbieb u avversarji ġodda."
     }
   },
   "s": {

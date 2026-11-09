@@ -234,7 +234,68 @@
     "lib.game.mmLost": "生命用盡 — 現在顯示所有方塊。",
     "lib.game.mmNote": "按下開始：方塊會顯示 {s} 秒後隱藏。記住每個方塊的形狀與顏色，再選出與所示形狀相符的方塊。錯誤超過 {l} 次則該關失敗。",
     "lib.game.fullscreen": "全螢幕",
-    "lib.game.exitFullscreen": "結束全螢幕"
+    "lib.game.exitFullscreen": "結束全螢幕",
+    "lib.online.guest": "訪客",
+    "lib.online.connFail": "無法連線到線上對戰伺服器。請檢查網路（或關閉廣告攔截），再按「重試」。",
+    "lib.online.tableGone": "開桌的人已離開。請選擇其他桌或開新桌。",
+    "lib.online.drawDeclined": "對手拒絕和棋。",
+    "lib.online.opponent": "對手",
+    "lib.online.copied": "已複製連結。傳給朋友就能一起下棋。",
+    "lib.online.waitingFor": "已等待 {n} 秒",
+    "lib.online.drawAgreed": "雙方同意和棋。",
+    "lib.online.draw": "本局和棋。",
+    "lib.online.oppResigned": "對手認輸——你贏了！",
+    "lib.online.youResigned": "你已認輸。",
+    "lib.online.youWin": "你贏了！",
+    "lib.online.youLose": "你輸了。",
+    "lib.online.connecting": "正在連線到線上對戰伺服器…",
+    "lib.online.retry": "重試",
+    "lib.online.quick": "尋找對手",
+    "lib.online.createPublic": "開公開桌",
+    "lib.online.createPrivate": "開私人桌，邀請朋友",
+    "lib.online.modesHint": "公開桌會顯示在列表中，任何人都能加入。私人桌只有持有邀請連結的人才能進入。",
+    "lib.online.openTables": "等待中的公開桌",
+    "lib.online.join": "加入",
+    "lib.online.noTables": "目前沒有等待中的桌。按「尋找對手」或開新桌。",
+    "lib.online.privacy": "棋步透過免費的公共 MQTT 伺服器傳送，每桌獨立加密；伺服器不保存棋局。以 Google 登入即可將下完的棋局存到你的 Drive。",
+    "lib.online.waitingPublic": "公開桌：等待有人加入…",
+    "lib.online.waitingPrivate": "私人桌：把這個連結傳給朋友，對方開啟後就開局。",
+    "lib.online.leave": "離開桌子",
+    "lib.online.full": "這桌已有 2 位玩家。請尋找其他桌或開新桌。",
+    "lib.online.backToList": "返回桌子列表",
+    "lib.online.you": "你",
+    "lib.online.oppLeft": "已離開",
+    "lib.online.oppOffline": "已斷線",
+    "lib.online.drawOffer": "對手提議和棋。",
+    "lib.online.accept": "接受",
+    "lib.online.decline": "拒絕",
+    "lib.online.drawSent": "已提議和棋…",
+    "lib.online.offerDraw": "提議和棋",
+    "lib.online.resignConfirm": "再按一次即認輸",
+    "lib.online.resign": "認輸",
+    "lib.online.againSent": "正在等待對手同意…",
+    "lib.online.againAccept": "對手想再來一局——再下一局",
+    "lib.online.again": "再下一局（交換顏色）",
+    "lib.online.inviteLink": "邀請連結",
+    "lib.online.copy": "複製連結",
+    "lib.online.share": "分享",
+    "lib.online.saved": "棋局已存到 Google Drive（WFTools/Games 資料夾）。",
+    "lib.online.saving": "正在將棋局存到 Google Drive…",
+    "lib.online.saveFail": "暫時無法將棋局存到 Drive。",
+    "lib.online.save": "將棋局存到 Google Drive",
+    "lib.game.darkNote": "揭棋（Cờ úp）：雙方將帥明擺，其餘棋子洗亂後背面朝上擺放。暗子依所在位置原本棋子的走法走（在車位就走車），走後立即翻開，之後依真身行走。仕、相可走遍全盤。被將死或無棋可走即負。",
+    "lib.game.darkBoard": "揭棋棋盤",
+    "lib.online.red": "紅",
+    "lib.online.black": "黑",
+    "lib.game.captured": "被吃的棋子",
+    "lib.online.pickTable": "在側欄尋找對手或開桌即可開始。",
+    "lib.online.theirTurn": "輪到對手",
+    "lib.online.white": "白",
+    "lib.online.goNote": "{n}×{n} 棋盤，黑先，白貼 {k} 目。數子法；虛手前請提走所有死子。雙方連續虛手即終局。",
+    "lib.online.boardSize": "棋盤大小",
+    "lib.online.oppPassed": "對手虛手。若你也虛手，棋局結束並計數。",
+    "lib.online.modeAi": "與電腦對弈",
+    "lib.online.modeOnline": "線上對戰"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "使用 1-9 與 A-G 的大型 16x16 數獨，10 個由易到難的關卡，附筆記與提示。"
     },
     "chess": {
-      "name": "人機西洋棋",
-      "desc": "與電腦對弈西洋棋，10 個由易到難的關卡，支援王車易位、吃過路兵與升變。"
+      "name": "西洋棋",
+      "desc": "與電腦對弈西洋棋，共 10 級；或線上對戰：用連結邀請朋友或與新對手下棋。含入堡、吃過路兵與升變。"
     },
     "xiangqi": {
-      "name": "人機象棋",
-      "desc": "與電腦對弈中國象棋，10 個關卡，含蹩馬腿、塞象眼、炮吃子與將帥對面規則。"
+      "name": "象棋",
+      "desc": "與電腦對弈象棋，共 10 級；或線上對戰：用連結邀請朋友或與新對手下棋。完整規則：蹩馬腳、塞象眼、炮隔子打、將帥不得照面。"
     },
     "go-game": {
-      "name": "人機圍棋",
-      "desc": "在 5x5、7x7 與 9x9 棋盤上與電腦對弈圍棋，10 個關卡，終局自動計分。"
+      "name": "圍棋",
+      "desc": "與電腦對弈圍棋，共 10 級；或線上在 9x9、13x13、19x19 棋盤與朋友或新對手對戰。終局自動計數。"
     },
     "memory-shapes": {
       "name": "形狀與顏色記憶",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "線上桌面",
       "desc": "瀏覽器中的電腦桌面：檔案管理、Notepad、圖片與 PDF 檢視器、小算盤、行事曆和垃圾桶。檔案會儲存到您的 Google 雲端硬碟。"
+    },
+    "co-up": {
+      "name": "揭棋（Cờ úp）",
+      "desc": "玩越南揭棋：棋子背面朝上開局，第一步後翻開。與電腦對弈 10 級，或線上與朋友、新對手對戰。"
     }
   },
   "s": {

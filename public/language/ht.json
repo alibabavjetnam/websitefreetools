@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Pa gen lavi ankò — kounye a tout tuile yo parèt.",
     "lib.game.mmNote": "Peze Kòmanse: tuile yo parèt pandan {s} segonn, epi yo kache. Sonje fòm ak koulè chak tuile, epi chwazi tuile ki koresponn ak fòm yo montre w la. Plis pase {l} erè, nivo a echwe.",
     "lib.game.fullscreen": "Ekran plen",
-    "lib.game.exitFullscreen": "Soti nan ekran plen"
+    "lib.game.exitFullscreen": "Soti nan ekran plen",
+    "lib.online.guest": "Envite",
+    "lib.online.connFail": "Pa t kapab konekte ak sèvè jwèt sou entènèt la. Tcheke koneksyon an (oswa fèmen blokè piblisite a) epi klike sou Eseye ankò.",
+    "lib.online.tableGone": "Moun ki te louvri tab la ale. Chwazi yon lòt tab oswa louvri yon nouvo.",
+    "lib.online.drawDeclined": "Advèsè a refize match nil la.",
+    "lib.online.opponent": "Advèsè",
+    "lib.online.copied": "Lyen an kopye. Voye l bay zanmi w pou nou jwe ansanm.",
+    "lib.online.waitingFor": "ap tann {n} s",
+    "lib.online.drawAgreed": "Toude jwè yo dakò pou match nil.",
+    "lib.online.draw": "Jwèt la fini match nil.",
+    "lib.online.oppResigned": "Advèsè a abandone — ou genyen!",
+    "lib.online.youResigned": "Ou abandone.",
+    "lib.online.youWin": "Ou genyen!",
+    "lib.online.youLose": "Ou pèdi.",
+    "lib.online.connecting": "Ap konekte ak sèvè jwèt sou entènèt la…",
+    "lib.online.retry": "Eseye ankò",
+    "lib.online.quick": "Chèche yon advèsè",
+    "lib.online.createPublic": "Louvri tab piblik",
+    "lib.online.createPrivate": "Louvri tab prive epi envite yon zanmi",
+    "lib.online.modesHint": "Tab piblik yo parèt nan lis la e nenpòt moun ka antre. Yon tab prive sèlman aksesib ak lyen envitasyon an.",
+    "lib.online.openTables": "Tab piblik k ap tann",
+    "lib.online.join": "Antre",
+    "lib.online.noTables": "Poko gen tab k ap tann. Klike sou \"Chèche yon advèsè\" oswa louvri yon nouvo tab.",
+    "lib.online.privacy": "Mouvman yo pase nan yon sèvè MQTT piblik gratis epi yo chifre pou chak tab; sèvè a pa sere jwèt. Konekte ak Google pou sove jwèt ki fini yo nan Drive ou.",
+    "lib.online.waitingPublic": "Tab piblik: ap tann yon moun antre…",
+    "lib.online.waitingPrivate": "Tab prive: voye lyen sa a bay zanmi w. Jwèt la kòmanse lè l louvri l.",
+    "lib.online.leave": "Kite tab la",
+    "lib.online.full": "Tab sa a deja gen 2 jwè. Chèche yon lòt tab oswa louvri yon nouvo.",
+    "lib.online.backToList": "Retounen nan lis tab yo",
+    "lib.online.you": "Ou",
+    "lib.online.oppLeft": "kite tab la",
+    "lib.online.oppOffline": "dekonekte",
+    "lib.online.drawOffer": "Advèsè a ofri match nil.",
+    "lib.online.accept": "Aksepte",
+    "lib.online.decline": "Refize",
+    "lib.online.drawSent": "Match nil ofri…",
+    "lib.online.offerDraw": "Ofri match nil",
+    "lib.online.resignConfirm": "Klike ankò pou abandone",
+    "lib.online.resign": "Abandone",
+    "lib.online.againSent": "Ap tann advèsè a dakò…",
+    "lib.online.againAccept": "Advèsè a vle revanj — Jwe ankò",
+    "lib.online.again": "Jwe ankò (chanje koulè)",
+    "lib.online.inviteLink": "Lyen envitasyon",
+    "lib.online.copy": "Kopye lyen",
+    "lib.online.share": "Pataje",
+    "lib.online.saved": "Jwèt la sove nan Google Drive (dosye WFTools/Games).",
+    "lib.online.saving": "Ap sove jwèt la nan Google Drive…",
+    "lib.online.saveFail": "Jwèt la poko ka sove nan Drive.",
+    "lib.online.save": "Sove jwèt la nan Google Drive",
+    "lib.game.darkNote": "Xiangqi kache (Cờ úp): de jeneral yo kòmanse ouvè, lòt pyès yo melanje epi mete tèt anba. Yon pyès kache deplase tankou pyès ki konn kòmanse sou kare li (sou kare cha, li deplase tankou cha), apre sa yo vire l epi depi lè sa a li deplase kòm vrè pyès li. Konseye ak elefan ka ale toupatou sou tablo a. Echèk e mat oswa pa gen mouvman vle di pèdi.",
+    "lib.game.darkBoard": "Tablo Xiangqi kache",
+    "lib.online.red": "Wouj",
+    "lib.online.black": "Nwa",
+    "lib.game.captured": "Pyès yo pran",
+    "lib.online.pickTable": "Chèche yon advèsè oswa louvri yon tab nan panèl bò kote a pou kòmanse.",
+    "lib.online.theirTurn": "Tou advèsè a",
+    "lib.online.white": "Blan",
+    "lib.online.goNote": "Tablo {n}×{n}, nwa kòmanse, blan resevwa {k} komi. Konte zòn; retire tout wòch ki mouri anvan ou pase. Jwèt la fini lè toude pase youn apre lòt.",
+    "lib.online.boardSize": "Gwosè tablo",
+    "lib.online.oppPassed": "Advèsè a pase. Si ou pase tou, jwèt la fini epi yo konte.",
+    "lib.online.modeAi": "Jwe kont òdinatè",
+    "lib.online.modeOnline": "Jwe sou entènèt"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Gwo Sudoku 16x16 ki itilize 1-9 ak A-G, 10 nivo ki soti nan fasil rive difisil, ak nòt ak endis."
     },
     "chess": {
-      "name": "Echèk kont òdinatè",
-      "desc": "Jwe echèk kont òdinatè a nan 10 nivo ki soti nan fasil rive difisil, ak woke, ann pasan ak pwomosyon."
+      "name": "Echèk",
+      "desc": "Jwe echèk kont òdinatè a sou 10 nivo oswa sou entènèt: envite yon zanmi ak yon lyen oswa jwe ak yon moun nouvo. Avèk wòk, an pasan ak pwomosyon."
     },
     "xiangqi": {
-      "name": "Xiangqi kont òdinatè",
-      "desc": "Jwe echèk chinwa (xiangqi) kont òdinatè a nan 10 nivo, ak blokaj pye chwal, je elefan, kaptire kanon ak règ jeneral fas a fas."
+      "name": "Xiangqi (echèk chinwa)",
+      "desc": "Jwe Xiangqi kont òdinatè a sou 10 nivo oswa sou entènèt: envite yon zanmi ak yon lyen oswa jwe ak yon moun nouvo. Règ konplè: pye chwal la, je elefan an, so kanon an ak jeneral ki pa ka wè youn lòt."
     },
     "go-game": {
-      "name": "Go kont òdinatè",
-      "desc": "Jwe Go kont òdinatè a sou tablo 5x5, 7x7 ak 9x9 nan 10 nivo, ak kalkil pwen otomatik nan fen."
+      "name": "Go",
+      "desc": "Jwe Go kont òdinatè a sou 10 nivo oswa sou entènèt sou tablo 9x9, 13x13 ak 19x19 ak yon zanmi oswa yon nouvo advèsè. Kontaj otomatik nan fen."
     },
     "memory-shapes": {
       "name": "Memwa fòm ak koulè",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Biwo sou entènèt",
       "desc": "Yon biwo òdinatè nan navigatè ou: jesyonè fichye, Notepad, visyonè imaj ak PDF, kalkilatris, kalandriye ak pànye fatra. Fichye yo anrejistre nan Google Drive ou."
+    },
+    "co-up": {
+      "name": "Xiangqi kache (Cờ úp)",
+      "desc": "Jwe Xiangqi kache vyetnamyen: pyès yo kòmanse tèt anba epi yo vire apre premye mouvman an. Kont òdinatè a sou 10 nivo oswa sou entènèt ak zanmi ak nouvo advèsè."
     }
   },
   "s": {

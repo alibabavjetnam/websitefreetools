@@ -234,7 +234,68 @@
     "lib.game.mmLost": "ሕይወት አልቋል — ሁሉም ሰቆች ተገልጠዋል።",
     "lib.game.mmNote": "ጀምርን ይጫኑ፦ ሰቆች ለ{s} ሰከንዶች ይታያሉ ከዚያ ይደበቃሉ። የእያንዳንዱን ሰቅ ቅርጽ እና ቀለም ያስታውሱ፣ ከዚያ ከታየው ቅርጽ ጋር የሚዛመደውን ሰቅ ይምረጡ። ከ{l} በላይ ስህተቶች ደረጃውን ያስወድቃሉ።",
     "lib.game.fullscreen": "ሙሉ ማያ ገጽ",
-    "lib.game.exitFullscreen": "ከሙሉ ማያ ገጽ ውጣ"
+    "lib.game.exitFullscreen": "ከሙሉ ማያ ገጽ ውጣ",
+    "lib.online.guest": "እንግዳ",
+    "lib.online.connFail": "ከመስመር ላይ ጨዋታ አገልጋይ ጋር መገናኘት አልተቻለም። ግንኙነቱን ያረጋግጡ (ወይም የማስታወቂያ አጋጁን ያጥፉ) እና እንደገና ሞክርን ይጫኑ።",
+    "lib.online.tableGone": "ጠረጴዛውን የከፈተው ሰው ወጥቷል። ሌላ ጠረጴዛ ይምረጡ ወይም አዲስ ይክፈቱ።",
+    "lib.online.drawDeclined": "ተጋጣሚው አቻን አልተቀበለም።",
+    "lib.online.opponent": "ተጋጣሚ",
+    "lib.online.copied": "አገናኙ ተቀድቷል። አብራችሁ ለመጫወት ለጓደኛዎ ይላኩት።",
+    "lib.online.waitingFor": "{n} ሰ እየጠበቀ",
+    "lib.online.drawAgreed": "ሁለቱም ተጫዋቾች በአቻ ተስማሙ።",
+    "lib.online.draw": "ጨዋታው በአቻ ተጠናቀቀ።",
+    "lib.online.oppResigned": "ተጋጣሚው እጅ ሰጠ — አሸንፈዋል!",
+    "lib.online.youResigned": "እጅ ሰጥተዋል።",
+    "lib.online.youWin": "አሸንፈዋል!",
+    "lib.online.youLose": "ተሸንፈዋል።",
+    "lib.online.connecting": "ከመስመር ላይ ጨዋታ አገልጋይ ጋር በመገናኘት ላይ…",
+    "lib.online.retry": "እንደገና ሞክር",
+    "lib.online.quick": "ተጋጣሚ ፈልግ",
+    "lib.online.createPublic": "የሕዝብ ጠረጴዛ ክፈት",
+    "lib.online.createPrivate": "የግል ጠረጴዛ ከፍተህ ጓደኛ ጋብዝ",
+    "lib.online.modesHint": "የሕዝብ ጠረጴዛዎች በዝርዝሩ ውስጥ ይታያሉ፤ ማንኛውም ሰው መቀላቀል ይችላል። የግል ጠረጴዛ የሚደረስበት በግብዣ አገናኝ ብቻ ነው።",
+    "lib.online.openTables": "በመጠባበቅ ላይ ያሉ የሕዝብ ጠረጴዛዎች",
+    "lib.online.join": "ተቀላቀል",
+    "lib.online.noTables": "እስካሁን የሚጠብቅ ጠረጴዛ የለም። \"ተጋጣሚ ፈልግ\" ይጫኑ ወይም አዲስ ጠረጴዛ ይክፈቱ።",
+    "lib.online.privacy": "እንቅስቃሴዎች በነጻ የሕዝብ MQTT አገልጋይ በኩል ያልፋሉ፤ ለእያንዳንዱ ጠረጴዛ ይመሰጠራሉ፤ አገልጋዩ ጨዋታዎችን አያስቀምጥም። የተጠናቀቁ ጨዋታዎችን በDrive ለማስቀመጥ በGoogle ይግቡ።",
+    "lib.online.waitingPublic": "የሕዝብ ጠረጴዛ፦ አንድ ሰው እስኪቀላቀል በመጠበቅ ላይ…",
+    "lib.online.waitingPrivate": "የግል ጠረጴዛ፦ ይህን አገናኝ ለጓደኛዎ ይላኩ። ሲከፍተው ጨዋታው ይጀምራል።",
+    "lib.online.leave": "ጠረጴዛውን ልቀቅ",
+    "lib.online.full": "ይህ ጠረጴዛ አስቀድሞ 2 ተጫዋቾች አሉት። ሌላ ጠረጴዛ ይፈልጉ ወይም አዲስ ይክፈቱ።",
+    "lib.online.backToList": "ወደ ጠረጴዛ ዝርዝር ተመለስ",
+    "lib.online.you": "እርስዎ",
+    "lib.online.oppLeft": "ጠረጴዛውን ለቋል",
+    "lib.online.oppOffline": "ግንኙነት ተቋርጧል",
+    "lib.online.drawOffer": "ተጋጣሚው አቻ ያቀርባል።",
+    "lib.online.accept": "ተቀበል",
+    "lib.online.decline": "አትቀበል",
+    "lib.online.drawSent": "አቻ ቀርቧል…",
+    "lib.online.offerDraw": "አቻ አቅርብ",
+    "lib.online.resignConfirm": "እጅ ለመስጠት እንደገና ይጫኑ",
+    "lib.online.resign": "እጅ ስጥ",
+    "lib.online.againSent": "የተጋጣሚውን ስምምነት በመጠበቅ ላይ…",
+    "lib.online.againAccept": "ተጋጣሚው የመልስ ጨዋታ ይፈልጋል — እንደገና ተጫወት",
+    "lib.online.again": "እንደገና ተጫወት (ቀለም ቀይር)",
+    "lib.online.inviteLink": "የግብዣ አገናኝ",
+    "lib.online.copy": "አገናኝ ቅዳ",
+    "lib.online.share": "አጋራ",
+    "lib.online.saved": "ጨዋታው በGoogle Drive ተቀምጧል (አቃፊ WFTools/Games)።",
+    "lib.online.saving": "ጨዋታውን በGoogle Drive በማስቀመጥ ላይ…",
+    "lib.online.saveFail": "ጨዋታውን እስካሁን በDrive ማስቀመጥ አልተቻለም።",
+    "lib.online.save": "ጨዋታውን በGoogle Drive አስቀምጥ",
+    "lib.game.darkNote": "የተደበቀ ሺያንግቺ (Cờ úp)፦ ሁለቱም ጄኔራሎች ተገልጠው ይጀምራሉ፤ ሌሎቹ ጠጠሮች ተቀላቅለው ተገልብጠው ይቀመጣሉ። የተደበቀ ጠጠር በቤቱ ላይ በተለምዶ እንደሚጀምረው ጠጠር ይንቀሳቀሳል (በሰረገላ ቤት እንደ ሰረገላ)፣ ከዚያ ይገለበጣል እና ከዚያ በኋላ እንደ እውነተኛው ጠጠሩ ይንቀሳቀሳል። አማካሪዎችና ዝሆኖች በመላው ሰሌዳ መሄድ ይችላሉ። ማት ወይም እንቅስቃሴ ማጣት ሽንፈት ነው።",
+    "lib.game.darkBoard": "የተደበቀ ሺያንግቺ ሰሌዳ",
+    "lib.online.red": "ቀይ",
+    "lib.online.black": "ጥቁር",
+    "lib.game.captured": "የተበሉ ጠጠሮች",
+    "lib.online.pickTable": "ለመጀመር ተጋጣሚ ይፈልጉ ወይም በጎን ፓነል ጠረጴዛ ይክፈቱ።",
+    "lib.online.theirTurn": "የተጋጣሚው ተራ",
+    "lib.online.white": "ነጭ",
+    "lib.online.goNote": "{n}×{n} ሰሌዳ፣ ጥቁር ይጀምራል፣ ነጭ {k} ኮሚ ያገኛል። በአካባቢ ቆጠራ፤ ከማለፍዎ በፊት ሁሉንም የሞቱ ድንጋዮች ያንሱ። ሁለቱም በተከታታይ ሲያልፉ ጨዋታው ያበቃል።",
+    "lib.online.boardSize": "የሰሌዳ መጠን",
+    "lib.online.oppPassed": "ተጋጣሚው አለፈ። እርስዎም ካለፉ ጨዋታው ያበቃና ይቆጠራል።",
+    "lib.online.modeAi": "ከኮምፒውተር ጋር ተጫወት",
+    "lib.online.modeOnline": "በመስመር ላይ ተጫወት"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "1-9 እና A-Gን የሚጠቀም ትልቅ 16x16 ሱዶኩ፣ ከቀላል እስከ ከባድ 10 ደረጃዎች፣ ከማስታወሻ እና ፍንጭ ጋር።"
     },
     "chess": {
-      "name": "ቼስ ከኮምፒውተር ጋር",
-      "desc": "ከኮምፒውተር ጋር ቼስ ከቀላል እስከ ከባድ በ10 ደረጃዎች ይጫወቱ፤ ከካስሊንግ፣ ኧን ፓሳንና ማዕረግ ማሳደግ ጋር።"
+      "name": "ቼዝ",
+      "desc": "ቼዝን ከኮምፒውተር ጋር በ10 ደረጃዎች ወይም በመስመር ላይ ይጫወቱ፦ ጓደኛን በአገናኝ ይጋብዙ ወይም ከአዲስ ሰው ጋር ይጫወቱ። ካስሊንግ፣ en passant እና ማሳደግን ያካትታል።"
     },
     "xiangqi": {
-      "name": "ሺያንቺ ከኮምፒውተር ጋር",
-      "desc": "የቻይና ቼስ (ሺያንቺ) ከኮምፒውተር ጋር በ10 ደረጃዎች ይጫወቱ፤ የፈረስ እግር መዝጋት፣ የዝሆን አይን፣ የመድፍ መያዝ እና ጄኔራሎች ፊት ለፊት ደንብ ጋር።"
+      "name": "ሺያንግቺ (የቻይና ቼዝ)",
+      "desc": "ሺያንግቺን ከኮምፒውተር ጋር በ10 ደረጃዎች ወይም በመስመር ላይ ይጫወቱ፦ ጓደኛን በአገናኝ ይጋብዙ ወይም ከአዲስ ሰው ጋር ይጫወቱ። ሙሉ ሕጎች፦ የፈረስ እግር፣ የዝሆን ዓይን፣ የመድፍ ዝላይ እና እርስ በርስ መተያየት የማይችሉ ጄኔራሎች።"
     },
     "go-game": {
-      "name": "ጎ ከኮምፒውተር ጋር",
-      "desc": "ጎን ከኮምፒውተር ጋር በ5x5፣ 7x7 እና 9x9 ሰሌዳዎች በ10 ደረጃዎች ይጫወቱ፤ በመጨረሻ በራስ-ሰር ነጥብ ቆጠራ።"
+      "name": "ጎ",
+      "desc": "ጎን ከኮምፒውተር ጋር በ10 ደረጃዎች ወይም በመስመር ላይ በ9x9፣ 13x13 እና 19x19 ሰሌዳዎች ከጓደኛ ወይም ከአዲስ ተጋጣሚ ጋር ይጫወቱ። መጨረሻ ላይ ራስ-ሰር ቆጠራ።"
     },
     "memory-shapes": {
       "name": "የቅርጽና ቀለም ትውስታ",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "የመስመር ላይ ዴስክቶፕ",
       "desc": "በአሳሽዎ ውስጥ የኮምፒውተር ዴስክቶፕ፦ የፋይል አቀናባሪ፣ Notepad፣ የምስል እና PDF መመልከቻ፣ ማስያ፣ ቀን መቁጠሪያ እና መጣያ። ፋይሎች በGoogle Drive ውስጥ ይቀመጣሉ።"
+    },
+    "co-up": {
+      "name": "የተደበቀ ሺያንግቺ (Cờ úp)",
+      "desc": "የቬትናም የተደበቀ ሺያንግቺ ይጫወቱ፦ ጠጠሮች ተገልብጠው ይጀምራሉ እና ከመጀመሪያው እንቅስቃሴ በኋላ ይገለጣሉ። ከኮምፒውተር ጋር በ10 ደረጃዎች ወይም በመስመር ላይ ከጓደኞችና ከአዲስ ተጋጣሚዎች ጋር።"
     }
   },
   "s": {

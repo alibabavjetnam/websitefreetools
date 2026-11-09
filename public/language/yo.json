@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Ẹ̀mí ti tán — a ti ṣí gbogbo tailì.",
     "lib.game.mmNote": "Tẹ Bẹ̀rẹ̀: a ó fi àwọn tailì hàn fún ìṣẹ́jú-àáyá {s}, lẹ́yìn náà a ó fi wọ́n pamọ́. Ranti àwòrán àti àwọ̀ tailì kọ̀ọ̀kan, lẹ́yìn náà yan tailì tó bá àwòrán tí a fihàn mu. Àṣìṣe tó ju {l} yóò mú ìpele kùnà.",
     "lib.game.fullscreen": "Ojú-ìbòjú kíkún",
-    "lib.game.exitFullscreen": "Jáde kúrò ní ojú-ìbòjú kíkún"
+    "lib.game.exitFullscreen": "Jáde kúrò ní ojú-ìbòjú kíkún",
+    "lib.online.guest": "Àlejò",
+    "lib.online.connFail": "Kò ṣeé ṣe láti so mọ́ olupin eré orí ayélujára. Ṣàyẹ̀wò ìsopọ̀ rẹ (tàbí pa adènà ìpolówó) kí o sì tẹ Gbìyànjú lẹ́ẹ̀kan sí i.",
+    "lib.online.tableGone": "Ẹni tó ṣí tábìlì ti lọ. Yan tábìlì mìíràn tàbí ṣí tuntun.",
+    "lib.online.drawDeclined": "Alátakò kọ ọ̀mì.",
+    "lib.online.opponent": "Alátakò",
+    "lib.online.copied": "A ti da ọ̀nà-àsopọ̀ kọ. Fi ránṣẹ́ sí ọ̀rẹ́ rẹ kí ẹ lè ṣeré pọ̀.",
+    "lib.online.waitingFor": "ń dúró ìṣ. {n}",
+    "lib.online.drawAgreed": "Àwọn òṣèré méjèèjì gbà láti pa ọ̀mì.",
+    "lib.online.draw": "Eré parí ní ọ̀mì.",
+    "lib.online.oppResigned": "Alátakò juwọ́ sílẹ̀ — o borí!",
+    "lib.online.youResigned": "O juwọ́ sílẹ̀.",
+    "lib.online.youWin": "O borí!",
+    "lib.online.youLose": "O pàdánù.",
+    "lib.online.connecting": "Ń so mọ́ olupin eré orí ayélujára…",
+    "lib.online.retry": "Gbìyànjú lẹ́ẹ̀kan sí i",
+    "lib.online.quick": "Wá alátakò",
+    "lib.online.createPublic": "Ṣí tábìlì gbogbogbò",
+    "lib.online.createPrivate": "Ṣí tábìlì àdáni kí o pe ọ̀rẹ́",
+    "lib.online.modesHint": "Àwọn tábìlì gbogbogbò ń hàn nínú àkójọ, ẹnikẹ́ni sì lè darapọ̀. Tábìlì àdáni ṣeé dé nípasẹ̀ ọ̀nà-àsopọ̀ ìpè nìkan.",
+    "lib.online.openTables": "Àwọn tábìlì gbogbogbò tó ń dúró",
+    "lib.online.join": "Darapọ̀",
+    "lib.online.noTables": "Kò sí tábìlì tó ń dúró síbẹ̀. Tẹ \"Wá alátakò\" tàbí ṣí tábìlì tuntun.",
+    "lib.online.privacy": "Àwọn ìgbésẹ̀ ń gba olupin MQTT gbogbogbò ọ̀fẹ́ kọjá, a sì ń fi kóòdù pa wọ́n mọ́ fún tábìlì kọ̀ọ̀kan; olupin kò tọ́jú eré. Wọlé pẹ̀lú Google láti fi àwọn eré tó parí pamọ́ sí Drive rẹ.",
+    "lib.online.waitingPublic": "Tábìlì gbogbogbò: ń dúró de ẹnìkan láti darapọ̀…",
+    "lib.online.waitingPrivate": "Tábìlì àdáni: fi ọ̀nà-àsopọ̀ yìí ránṣẹ́ sí ọ̀rẹ́ rẹ. Eré yóò bẹ̀rẹ̀ nígbà tó bá ṣí i.",
+    "lib.online.leave": "Fi tábìlì sílẹ̀",
+    "lib.online.full": "Tábìlì yìí ti ní òṣèré 2 tẹ́lẹ̀. Wá tábìlì mìíràn tàbí ṣí tuntun.",
+    "lib.online.backToList": "Padà sí àkójọ tábìlì",
+    "lib.online.you": "Ìwọ",
+    "lib.online.oppLeft": "ti fi tábìlì sílẹ̀",
+    "lib.online.oppOffline": "kò sopọ̀",
+    "lib.online.drawOffer": "Alátakò ń dábàá ọ̀mì.",
+    "lib.online.accept": "Gbà",
+    "lib.online.decline": "Kọ̀",
+    "lib.online.drawSent": "A ti dábàá ọ̀mì…",
+    "lib.online.offerDraw": "Dábàá ọ̀mì",
+    "lib.online.resignConfirm": "Tẹ lẹ́ẹ̀kan sí i láti juwọ́ sílẹ̀",
+    "lib.online.resign": "Juwọ́ sílẹ̀",
+    "lib.online.againSent": "Ń dúró de ìfọwọ́sí alátakò…",
+    "lib.online.againAccept": "Alátakò fẹ́ ẹ̀san — Ṣeré lẹ́ẹ̀kan sí i",
+    "lib.online.again": "Ṣeré lẹ́ẹ̀kan sí i (pààrọ̀ àwọ̀)",
+    "lib.online.inviteLink": "Ọ̀nà-àsopọ̀ ìpè",
+    "lib.online.copy": "Da ọ̀nà-àsopọ̀ kọ",
+    "lib.online.share": "Pín",
+    "lib.online.saved": "A ti fi eré pamọ́ sí Google Drive (fódà WFTools/Games).",
+    "lib.online.saving": "Ń fi eré pamọ́ sí Google Drive…",
+    "lib.online.saveFail": "Kò tíì ṣeé ṣe láti fi eré pamọ́ sí Drive.",
+    "lib.online.save": "Fi eré pamọ́ sí Google Drive",
+    "lib.game.darkNote": "Xiangqi ìpamọ́ (Cờ úp): àwọn ọ̀gágun méjèèjì bẹ̀rẹ̀ ní ṣíṣí, a da àwọn ègé yòókù pọ̀ a sì dojú wọn bolẹ̀. Ègé tí a fi pamọ́ ń rìn bí ègé tó máa ń bẹ̀rẹ̀ ní àpótí rẹ̀ (ní àpótí kẹ̀kẹ́ ogun, ó ń rìn bí kẹ̀kẹ́ ogun), lẹ́yìn náà a yí i padà, láti ìgbà náà ó ń rìn bí ègé gidi rẹ̀. Àwọn olùdámọ̀ràn àti erin lè lọ káàkiri gbogbo pátákó. Ìdènà pátápátá tàbí àìní ìgbésẹ̀ túmọ̀ sí ìpàdánù.",
+    "lib.game.darkBoard": "Pátákó Xiangqi ìpamọ́",
+    "lib.online.red": "Pupa",
+    "lib.online.black": "Dúdú",
+    "lib.game.captured": "Àwọn ègé tí a mú",
+    "lib.online.pickTable": "Wá alátakò tàbí ṣí tábìlì ní pánẹ́lì ẹ̀gbẹ́ láti bẹ̀rẹ̀.",
+    "lib.online.theirTurn": "Àkókò alátakò",
+    "lib.online.white": "Funfun",
+    "lib.online.goNote": "Pátákó {n}×{n}, dúdú ló ń bẹ̀rẹ̀, funfun gba komi {k}. Ìkà agbègbè; mú gbogbo òkúta tó ti kú kúrò kí o tó kọjá. Eré parí nígbà tí àwọn méjèèjì bá kọjá tẹ̀léra.",
+    "lib.online.boardSize": "Ìwọ̀n pátákó",
+    "lib.online.oppPassed": "Alátakò kọjá. Bí ìwọ náà bá kọjá, eré yóò parí a ó sì kà á.",
+    "lib.online.modeAi": "Ṣeré pẹ̀lú kọ̀ǹpútà",
+    "lib.online.modeOnline": "Ṣeré lórí ayélujára"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku 16x16 ńlá tó ń lo 1-9 àti A-G, ìpele mẹ́wàá láti rọrùn dé le, pẹ̀lú àkọsílẹ̀ àti ìtọ́ka."
     },
     "chess": {
-      "name": "Chess lòdì sí Kọ̀ǹpútà",
-      "desc": "Ṣe chess lòdì sí kọ̀ǹpútà ní ìpele mẹ́wàá láti rọrùn dé le, pẹ̀lú castling, en passant àti gbígbéga."
+      "name": "Ṣẹ́ẹ̀sì",
+      "desc": "Ṣe ṣẹ́ẹ̀sì pẹ̀lú kọ̀ǹpútà ní ìpele 10 tàbí lórí ayélujára: pe ọ̀rẹ́ pẹ̀lú ọ̀nà-àsopọ̀ tàbí ṣeré pẹ̀lú ẹni tuntun. Pẹ̀lú castling, en passant àti ìgbéga."
     },
     "xiangqi": {
-      "name": "Xiangqi lòdì sí Kọ̀ǹpútà",
-      "desc": "Ṣe chess ti Ṣáínà (xiangqi) lòdì sí kọ̀ǹpútà ní ìpele mẹ́wàá, pẹ̀lú dídínà ẹsẹ̀ ẹṣin, ojú erin, mímú pẹ̀lú ìbọn àti òfin ọ̀gágun tó ń fò."
+      "name": "Xiangqi (ayò ṣẹ́ẹ̀sì China)",
+      "desc": "Ṣe Xiangqi pẹ̀lú kọ̀ǹpútà ní ìpele 10 tàbí lórí ayélujára: pe ọ̀rẹ́ pẹ̀lú ọ̀nà-àsopọ̀ tàbí ṣeré pẹ̀lú ẹni tuntun. Òfin pípé: ẹsẹ̀ ẹṣin, ojú erin, ìfò àgbá àti àwọn ọ̀gágun tí kò gbọdọ̀ rí ara wọn."
     },
     "go-game": {
-      "name": "Go lòdì sí Kọ̀ǹpútà",
-      "desc": "Ṣe Go lòdì sí kọ̀ǹpútà lórí pẹpẹ 5x5, 7x7 àti 9x9 ní ìpele mẹ́wàá, pẹ̀lú ìdíwọ̀n aládàáṣe ní ìparí."
+      "name": "Go",
+      "desc": "Ṣe Go pẹ̀lú kọ̀ǹpútà ní ìpele 10 tàbí lórí ayélujára lórí pátákó 9x9, 13x13 àti 19x19 pẹ̀lú ọ̀rẹ́ tàbí alátakò tuntun. Ìkà aládàáṣe ní ìparí."
     },
     "memory-shapes": {
       "name": "Ìrántí Àwòrán àti Àwọ̀",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Ojú-iṣẹ́ orí ayélujára",
       "desc": "Ojú-iṣẹ́ kọ̀ǹpútà nínú aṣàwákiri rẹ: alákòóso fáìlì, Notepad, olùwo àwòrán àti PDF, ẹ̀rọ ìṣirò, kàlẹ́ńdà àti àpótí ìdọ̀tí. Àwọn fáìlì wà nínú Google Drive rẹ."
+    },
+    "co-up": {
+      "name": "Xiangqi ìpamọ́ (Cờ úp)",
+      "desc": "Ṣe Xiangqi ìpamọ́ ti Vietnam: àwọn ègé bẹ̀rẹ̀ ní dídojúbolẹ̀ a sì ń yí wọn padà lẹ́yìn ìgbésẹ̀ àkọ́kọ́. Pẹ̀lú kọ̀ǹpútà ní ìpele 10 tàbí lórí ayélujára pẹ̀lú àwọn ọ̀rẹ́ àti alátakò tuntun."
     }
   },
   "s": {

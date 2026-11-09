@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Ubuzima bwarangiye — tile zose zirerekanwe.",
     "lib.game.mmNote": "Kanda Tangira: tile ziragaragazwa amasegonda {s}, hanyuma zigahishwa. Wibuke ishusho n'ibara bya buri tile, hanyuma uhitemo tile ihuye n'ishusho yerekanwe. Amakosa arenze {l} atuma urwego rudatsinda.",
     "lib.game.fullscreen": "Ecran yuzuye",
-    "lib.game.exitFullscreen": "Va muri ecran yuzuye"
+    "lib.game.exitFullscreen": "Va muri ecran yuzuye",
+    "lib.online.guest": "Umushyitsi",
+    "lib.online.connFail": "Ntibyashobotse kwihuza na seriveri y'imikino yo kuri interineti. Reba ihuzanzira (cyangwa uzimye icyangira kwamamaza) hanyuma ukande Ongera ugerageze.",
+    "lib.online.tableGone": "Uwafunguye ameza yagiye. Hitamo andi meza cyangwa ufungure mashya.",
+    "lib.online.drawDeclined": "Uwo muhanganye yanze kunganya.",
+    "lib.online.opponent": "Uwo muhanganye",
+    "lib.online.copied": "Ihuza ryakoporowe. Ryohereze inshuti yawe kugira ngo mukinire hamwe.",
+    "lib.online.waitingFor": "ategereje amasegonda {n}",
+    "lib.online.drawAgreed": "Abakinnyi bombi bemeranyije kunganya.",
+    "lib.online.draw": "Umukino warangiye unganya.",
+    "lib.online.oppResigned": "Uwo muhanganye yaretse — watsinze!",
+    "lib.online.youResigned": "Waretse.",
+    "lib.online.youWin": "Watsinze!",
+    "lib.online.youLose": "Watsinzwe.",
+    "lib.online.connecting": "Kwihuza na seriveri y'imikino yo kuri interineti…",
+    "lib.online.retry": "Ongera ugerageze",
+    "lib.online.quick": "Shaka uwo muhangana",
+    "lib.online.createPublic": "Fungura ameza rusange",
+    "lib.online.createPrivate": "Fungura ameza bwite utumire inshuti",
+    "lib.online.modesHint": "Ameza rusange agaragara ku rutonde kandi umuntu wese ashobora kwinjira. Ameza bwite agerwaho gusa n'ihuza ry'ubutumire.",
+    "lib.online.openTables": "Ameza rusange ategereje",
+    "lib.online.join": "Injira",
+    "lib.online.noTables": "Nta meza ategereje kugeza ubu. Kanda \"Shaka uwo muhangana\" cyangwa ufungure ameza mashya.",
+    "lib.online.privacy": "Ibikorwa binyura kuri seriveri ya MQTT rusange y'ubuntu kandi bihishwa kuri buri meza; seriveri ntibika imikino. Injira ukoresheje Google kugira ngo ubike imikino yarangiye muri Drive yawe.",
+    "lib.online.waitingPublic": "Ameza rusange: dutegereje ko hari uwinjira…",
+    "lib.online.waitingPrivate": "Ameza bwite: ohereza iri huza inshuti yawe. Umukino uratangira nirifungura.",
+    "lib.online.leave": "Va ku meza",
+    "lib.online.full": "Aya meza asanzwe afite abakinnyi 2. Shaka andi meza cyangwa ufungure mashya.",
+    "lib.online.backToList": "Subira ku rutonde rw'ameza",
+    "lib.online.you": "Wowe",
+    "lib.online.oppLeft": "yavuye ku meza",
+    "lib.online.oppOffline": "ntahujwe",
+    "lib.online.drawOffer": "Uwo muhanganye arasaba kunganya.",
+    "lib.online.accept": "Emera",
+    "lib.online.decline": "Anga",
+    "lib.online.drawSent": "Kunganya byasabwe…",
+    "lib.online.offerDraw": "Saba kunganya",
+    "lib.online.resignConfirm": "Ongera ukande kugira ngo ureke",
+    "lib.online.resign": "Reka",
+    "lib.online.againSent": "Dutegereje ko uwo muhanganye yemera…",
+    "lib.online.againAccept": "Uwo muhanganye ashaka kwihorera — Ongera ukine",
+    "lib.online.again": "Ongera ukine (hindura amabara)",
+    "lib.online.inviteLink": "Ihuza ry'ubutumire",
+    "lib.online.copy": "Koporora ihuza",
+    "lib.online.share": "Sangiza",
+    "lib.online.saved": "Umukino wabitswe muri Google Drive (ububiko WFTools/Games).",
+    "lib.online.saving": "Kubika umukino muri Google Drive…",
+    "lib.online.saveFail": "Umukino ntiwashoboye kubikwa muri Drive kugeza ubu.",
+    "lib.online.save": "Bika umukino muri Google Drive",
+    "lib.game.darkNote": "Xiangqi ihishe (Cờ úp): abajenerali bombi batangira bagaragara, ibindi bice bivangwa bigashyirwa byubitse. Igice gihishe kigenda nk'igice gisanzwe gitangirira ku kazu kacyo (ku kazu k'igare kigenda nk'igare), hanyuma kigahindurwa, kuva icyo gihe kikagenda nk'igice cyacyo nyacyo. Abajyanama n'inzovu bashobora kugenda ku kibaho cyose. Gutsindwa burundu cyangwa kubura icyo wakina bivuze gutsindwa.",
+    "lib.game.darkBoard": "Ikibaho cya Xiangqi ihishe",
+    "lib.online.red": "Umutuku",
+    "lib.online.black": "Umukara",
+    "lib.game.captured": "Ibice byafashwe",
+    "lib.online.pickTable": "Shaka uwo muhangana cyangwa ufungure ameza mu gice cy'uruhande kugira ngo utangire.",
+    "lib.online.theirTurn": "Igihe cy'uwo muhanganye",
+    "lib.online.white": "Umweru",
+    "lib.online.goNote": "Ikibaho {n}×{n}, umukara atangira, umweru ahabwa komi {k}. Kubara ubuso; kuramo amabuye yose yapfuye mbere yo gusimbuka. Umukino urangira iyo bombi basimbutse bakurikiranye.",
+    "lib.online.boardSize": "Ingano y'ikibaho",
+    "lib.online.oppPassed": "Uwo muhanganye yasimbutse. Nawe nusimbuka, umukino urarangira ukabarwa.",
+    "lib.online.modeAi": "Kina na mudasobwa",
+    "lib.online.modeOnline": "Kina kuri interineti"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku nini 16x16 ikoresha 1-9 na A-G, inzego 10 uhereye ku koroshye ukageza ku kugora, hamwe n'inyandiko n'inama."
     },
     "chess": {
-      "name": "Chess na Mudasobwa",
-      "desc": "Kina chess na mudasobwa mu nzego 10 uhereye ku koroshye ukageza ku kugora, hamwe na castling, en passant no kuzamurwa mu ntera."
+      "name": "Chess",
+      "desc": "Kina chess na mudasobwa ku nzego 10 cyangwa kuri interineti: tumira inshuti ukoresheje ihuza cyangwa ukine n'umuntu mushya. Harimo castling, en passant no kuzamurwa."
     },
     "xiangqi": {
-      "name": "Xiangqi na Mudasobwa",
-      "desc": "Kina chess y'Abashinwa (xiangqi) na mudasobwa mu nzego 10, hamwe no gufunga ukuguru kw'ifarasi, ijisho ry'inzovu, gufata n'igisasu n'itegeko ry'umujenerali uguruka."
+      "name": "Xiangqi (chess y'Abashinwa)",
+      "desc": "Kina Xiangqi na mudasobwa ku nzego 10 cyangwa kuri interineti: tumira inshuti ukoresheje ihuza cyangwa ukine n'umuntu mushya. Amategeko yuzuye: ukuguru kw'ifarashi, ijisho ry'inzovu, gusimbuka kw'igisasu n'abajenerali batemerewe kubonana."
     },
     "go-game": {
-      "name": "Go na Mudasobwa",
-      "desc": "Kina Go na mudasobwa ku bibaho bya 5x5, 7x7 na 9x9 mu nzego 10, hamwe no kubara amanota byikora ku iherezo."
+      "name": "Go",
+      "desc": "Kina Go na mudasobwa ku nzego 10 cyangwa kuri interineti ku bibaho bya 9x9, 13x13 na 19x19 n'inshuti cyangwa uwo muhangana mushya. Kubara byikora ku iherezo."
     },
     "memory-shapes": {
       "name": "Kwibuka Ishusho n'Ibara",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktop yo kuri interineti",
       "desc": "Desktop ya mudasobwa muri mushakisha yawe: umuyobozi w'amadosiye, Notepad, umureba w'amafoto na PDF, imashini ibara, kalendari n'imyanda. Amadosiye abikwa muri Google Drive yawe."
+    },
+    "co-up": {
+      "name": "Xiangqi ihishe (Cờ úp)",
+      "desc": "Kina Xiangqi ihishe yo muri Vietnam: ibice bitangira byubitse bigahindurwa nyuma y'igikorwa cya mbere. Na mudasobwa ku nzego 10 cyangwa kuri interineti n'inshuti n'abo muhanganye bashya."
     }
   },
   "s": {

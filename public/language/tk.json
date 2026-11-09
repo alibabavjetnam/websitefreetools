@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Jan galmady — ähli plitkalar açyldy.",
     "lib.game.mmNote": "Başla düwmesine basyň: plitkalar {s} sekunt görkezilýär, soňra gizlenýär. Her plitkanyň şekilini we reňkini ýat tutuň, soňra görkezilen şekile gabat gelýän plitkany saýlaň. {l}-den köp ýalňyşlyk dereje geçilmezligine getirýär.",
     "lib.game.fullscreen": "Doly ekran",
-    "lib.game.exitFullscreen": "Doly ekrandan çyk"
+    "lib.game.exitFullscreen": "Doly ekrandan çyk",
+    "lib.online.guest": "Myhman",
+    "lib.online.connFail": "Onlaýn oýun serwerine birigip bolmady. Baglanyşygy barlaň (ýa-da mahabat bökdejisini öçüriň) we Gaýtadan synanyş düwmesine basyň.",
+    "lib.online.tableGone": "Stoly açan oýunçy çykyp gitdi. Başga stol saýlaň ýa-da täzesini açyň.",
+    "lib.online.drawDeclined": "Garşydaş deňlikden ýüz öwürdi.",
+    "lib.online.opponent": "Garşydaş",
+    "lib.online.copied": "Baglanyşyk göçürildi. Bilelikde oýnamak üçin ony dostuňyza iberiň.",
+    "lib.online.waitingFor": "{n} s garaşýar",
+    "lib.online.drawAgreed": "Iki oýunçy hem deňlige razy boldy.",
+    "lib.online.draw": "Oýun deňlik bilen gutardy.",
+    "lib.online.oppResigned": "Garşydaş boýun egdi — siz ýeňdiňiz!",
+    "lib.online.youResigned": "Siz boýun egdiňiz.",
+    "lib.online.youWin": "Siz ýeňdiňiz!",
+    "lib.online.youLose": "Siz ýeňildiňiz.",
+    "lib.online.connecting": "Onlaýn oýun serwerine birikýär…",
+    "lib.online.retry": "Gaýtadan synanyş",
+    "lib.online.quick": "Garşydaş tap",
+    "lib.online.createPublic": "Açyk stol aç",
+    "lib.online.createPrivate": "Şahsy stol açyp, dost çagyr",
+    "lib.online.modesHint": "Açyk stollar sanawda görünýär we islendik adam goşulyp biler. Şahsy stola diňe çakylyk baglanyşygy arkaly girip bolýar.",
+    "lib.online.openTables": "Garaşýan açyk stollar",
+    "lib.online.join": "Goşul",
+    "lib.online.noTables": "Häzirlikçe garaşýan stol ýok. \"Garşydaş tap\" düwmesine basyň ýa-da täze stol açyň.",
+    "lib.online.privacy": "Ýörişler mugt açyk MQTT serweri arkaly geçýär we her stol üçin şifrlenýär; serwer oýunlary saklamaýar. Tamamlanan oýunlary Drive-a saklamak üçin Google bilen giriň.",
+    "lib.online.waitingPublic": "Açyk stol: kimdir biriniň goşulmagyna garaşylýar…",
+    "lib.online.waitingPrivate": "Şahsy stol: bu baglanyşygy dostuňyza iberiň. Ol açanda oýun başlar.",
+    "lib.online.leave": "Stoldan çyk",
+    "lib.online.full": "Bu stolda eýýäm 2 oýunçy bar. Başga stol tapyň ýa-da täzesini açyň.",
+    "lib.online.backToList": "Stollaryň sanawyna dolan",
+    "lib.online.you": "Siz",
+    "lib.online.oppLeft": "stoldan çykdy",
+    "lib.online.oppOffline": "baglanyşyk ýok",
+    "lib.online.drawOffer": "Garşydaş deňlik teklip edýär.",
+    "lib.online.accept": "Kabul et",
+    "lib.online.decline": "Ret et",
+    "lib.online.drawSent": "Deňlik teklip edildi…",
+    "lib.online.offerDraw": "Deňlik teklip et",
+    "lib.online.resignConfirm": "Boýun egmek üçin ýene basyň",
+    "lib.online.resign": "Boýun eg",
+    "lib.online.againSent": "Garşydaşyň razylygyna garaşylýar…",
+    "lib.online.againAccept": "Garşydaş rewanş isleýär — Ýene oýna",
+    "lib.online.again": "Ýene oýna (reňkleri çalyş)",
+    "lib.online.inviteLink": "Çakylyk baglanyşygy",
+    "lib.online.copy": "Baglanyşygy göçür",
+    "lib.online.share": "Paýlaş",
+    "lib.online.saved": "Oýun Google Drive-a saklandy (WFTools/Games bukjasy).",
+    "lib.online.saving": "Oýun Google Drive-a saklanýar…",
+    "lib.online.saveFail": "Oýuny häzirlikçe Drive-a saklap bolmady.",
+    "lib.online.save": "Oýuny Google Drive-a sakla",
+    "lib.game.darkNote": "Gizlin Sýanszi (Cờ úp): iki general açyk başlaýar, beýleki daşlar garyşdyrylyp, ýüzi aşak goýulýar. Gizlin daş öz öýjüginde adatça durýan daş ýaly ýöreýär (araba öýjüginde araba ýaly), soň öwrülýär we mundan beýläk hakyky daşy hökmünde ýöreýär. Geňeşçiler we piller bütin tagtada ýöräp bilýär. Mat ýa-da ýöriş ýoklugy ýeňlişdir.",
+    "lib.game.darkBoard": "Gizlin Sýanszi tagtasy",
+    "lib.online.red": "Gyzyl",
+    "lib.online.black": "Gara",
+    "lib.game.captured": "Alnan daşlar",
+    "lib.online.pickTable": "Başlamak üçin garşydaş tapyň ýa-da gapdal paneldäki stoly açyň.",
+    "lib.online.theirTurn": "Garşydaşyň nobaty",
+    "lib.online.white": "Ak",
+    "lib.online.goNote": "{n}×{n} tagta, gara başlaýar, ak {k} komi alýar. Meýdan boýunça hasap; pas aýtmazdan öň ähli ölü daşlary aýyryň. Ikisi yzly-yzyna pas aýdanda oýun gutarýar.",
+    "lib.online.boardSize": "Tagtanyň ölçegi",
+    "lib.online.oppPassed": "Garşydaş pas aýtdy. Siz hem pas aýtsaňyz, oýun gutaryp, hasaplanar.",
+    "lib.online.modeAi": "Kompýuter bilen oýna",
+    "lib.online.modeOnline": "Onlaýn oýna"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "1-9 we A-G ulanýan uly 16x16 Sudoku, ýeňilden kyna 10 dereje, bellikler we maslahatlar bilen."
     },
     "chess": {
-      "name": "Kompýutere garşy şahmat",
-      "desc": "Kompýutere garşy şahmat oýnaň: ýeňilden kyna 10 dereje, rokirowka, en passant we piýada ýokarlanmasy bilen."
+      "name": "Küşt",
+      "desc": "Küşti kompýuter bilen 10 derejede ýa-da onlaýn oýnaň: dostuňyzy baglanyşyk bilen çagyryň ýa-da täze biri bilen oýnaň. Galalaşmak, geçende almak we öwrülmek bilen."
     },
     "xiangqi": {
-      "name": "Kompýutere garşy Syanşi",
-      "desc": "Kompýutere garşy hytaý şahmaty (syanşi) oýnaň: 10 dereje, at aýagynyň petlenmegi, pil gözi, top bilen almak we generallaryň ýüzbe-ýüz durmak düzgüni bilen."
+      "name": "Sýanszi (Hytaý küşdü)",
+      "desc": "Sýanszini kompýuter bilen 10 derejede ýa-da onlaýn oýnaň: dostuňyzy baglanyşyk bilen çagyryň ýa-da täze biri bilen oýnaň. Doly düzgünler: atyň aýagy, piliň gözi, topuň böküşi we biri-birini görmeli däl generallar."
     },
     "go-game": {
-      "name": "Kompýutere garşy Go",
-      "desc": "Kompýutere garşy Go oýnaň: 5x5, 7x7 we 9x9 tagtalarda 10 dereje, ahyrynda awtomatik utuk hasaplamasy bilen."
+      "name": "Go",
+      "desc": "Gony kompýuter bilen 10 derejede ýa-da onlaýn 9x9, 13x13 we 19x19 tagtalarda dost ýa-da täze garşydaş bilen oýnaň. Ahyrynda awtomatik hasap."
     },
     "memory-shapes": {
       "name": "Şekil we reňk ýady",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Onlaýn iş stoly",
       "desc": "Brauzeriňizdäki kompýuter iş stoly: faýl dolandyryjy, Notepad, surat we PDF görüji, kalkulýator, senenama we sebet. Faýllar Google Drive-yňyzda saklanýar."
+    },
+    "co-up": {
+      "name": "Gizlin Sýanszi (Cờ úp)",
+      "desc": "Wýetnamyň gizlin Sýanszisini oýnaň: daşlar ýüzi aşak başlaýar we ilkinji ýörişden soň öwrülýär. Kompýuter bilen 10 derejede ýa-da onlaýn dostlar we täze garşydaşlar bilen."
     }
   },
   "s": {

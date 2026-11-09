@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Can qediyan — hemû kas hatin vekirin.",
     "lib.game.mmNote": "Li Dest pê bike bitikîne: kas {s} çirkeyan têne nîşandan, paşê têne veşartin. Şikl û rengê her kasê bi bîr bîne, paşê kasa bi şiklê nîşandayî hilbijêre. Ji {l} xeletiyan zêdetir asta têk dibe.",
     "lib.game.fullscreen": "Ekrana tijî",
-    "lib.game.exitFullscreen": "Ji ekrana tijî derkeve"
+    "lib.game.exitFullscreen": "Ji ekrana tijî derkeve",
+    "lib.online.guest": "Mêvan",
+    "lib.online.connFail": "Girêdana bi servera lîstika serhêl re pêk nehat. Girêdanê kontrol bike (an astengkera reklaman neçalak bike) û li Dîsa biceribîne bitikîne.",
+    "lib.online.tableGone": "Yê ku mase vekiribû çû. Maseyeke din hilbijêre an yeke nû veke.",
+    "lib.online.drawDeclined": "Hevrikê wekhevî red kir.",
+    "lib.online.opponent": "Hevrik",
+    "lib.online.copied": "Girêdan hate kopîkirin. Ji hevalê xwe re bişîne da ku hûn bi hev re bilîzin.",
+    "lib.online.waitingFor": "{n} ç li bendê ye",
+    "lib.online.drawAgreed": "Her du lîstikvan li ser wekhevîyê li hev kirin.",
+    "lib.online.draw": "Lîstik wekhev qediya.",
+    "lib.online.oppResigned": "Hevrik teslîm bû — te bi ser ket!",
+    "lib.online.youResigned": "Tu teslîm bûyî.",
+    "lib.online.youWin": "Te bi ser ket!",
+    "lib.online.youLose": "Tu têk çûyî.",
+    "lib.online.connecting": "Bi servera lîstika serhêl ve tê girêdan…",
+    "lib.online.retry": "Dîsa biceribîne",
+    "lib.online.quick": "Hevrikekî bibîne",
+    "lib.online.createPublic": "Maseya giştî veke",
+    "lib.online.createPrivate": "Maseya taybet veke û hevalekî vexwîne",
+    "lib.online.modesHint": "Maseyên giştî di lîsteyê de xuya dibin û her kes dikare tev li bibe. Mirov tenê bi girêdana vexwendinê dikare bigihêje maseya taybet.",
+    "lib.online.openTables": "Maseyên giştî yên li bendê",
+    "lib.online.join": "Tev li bibe",
+    "lib.online.noTables": "Hîn tu mase li bendê nîne. Li \"Hevrikekî bibîne\" bitikîne an maseyeke nû veke.",
+    "lib.online.privacy": "Tevger di servereke MQTT ya giştî ya belaş re derbas dibin û ji bo her maseyê têne şîfrekirin; server lîstikan hilnagire. Bi Google têkeve da ku lîstikên qediyayî di Drive-a xwe de tomar bikî.",
+    "lib.online.waitingPublic": "Maseya giştî: li bendê ye ku kesek tev li bibe…",
+    "lib.online.waitingPrivate": "Maseya taybet: vê girêdanê ji hevalê xwe re bişîne. Gava ew veke, lîstik dest pê dike.",
+    "lib.online.leave": "Ji maseyê derkeve",
+    "lib.online.full": "Li vê maseyê jixwe 2 lîstikvan hene. Maseyeke din bibîne an yeke nû veke.",
+    "lib.online.backToList": "Vegere lîsteya maseyan",
+    "lib.online.you": "Tu",
+    "lib.online.oppLeft": "ji maseyê derket",
+    "lib.online.oppOffline": "girêdan tune",
+    "lib.online.drawOffer": "Hevrik wekhevîyê pêşniyar dike.",
+    "lib.online.accept": "Qebûl bike",
+    "lib.online.decline": "Red bike",
+    "lib.online.drawSent": "Wekhevî hate pêşniyarkirin…",
+    "lib.online.offerDraw": "Wekhevîyê pêşniyar bike",
+    "lib.online.resignConfirm": "Ji bo teslîmbûnê dîsa bitikîne",
+    "lib.online.resign": "Teslîm bibe",
+    "lib.online.againSent": "Li benda pejirandina hevrik…",
+    "lib.online.againAccept": "Hevrik revanş dixwaze — Dîsa bilîze",
+    "lib.online.again": "Dîsa bilîze (rengan biguhêre)",
+    "lib.online.inviteLink": "Girêdana vexwendinê",
+    "lib.online.copy": "Girêdanê kopî bike",
+    "lib.online.share": "Parve bike",
+    "lib.online.saved": "Lîstik di Google Drive de hate tomarkirin (peldanka WFTools/Games).",
+    "lib.online.saving": "Lîstik di Google Drive de tê tomarkirin…",
+    "lib.online.saveFail": "Lîstik hîn nehat tomarkirin di Drive de.",
+    "lib.online.save": "Lîstikê di Google Drive de tomar bike",
+    "lib.game.darkNote": "Xiangqi ya veşartî (Cờ úp): her du general vekirî dest pê dikin, perçeyên din têne tevlihevkirin û serûbinî têne danîn. Perçeyê veşartî wek wî perçeyî diçe ku bi gelemperî li xaneya wî dest pê dike (li xaneya erebeyê wek erebe), paşê tê zivirandin û ji wir pê ve wek perçeyê xwe yê rastîn diçe. Şêwirmend û fîl dikarin li seranserê text biçin. Mat an tunebûna tevgerê têkçûn e.",
+    "lib.game.darkBoard": "Texta Xiangqi ya veşartî",
+    "lib.online.red": "Sor",
+    "lib.online.black": "Reş",
+    "lib.game.captured": "Perçeyên girtî",
+    "lib.online.pickTable": "Ji bo destpêkê hevrikekî bibîne an li panela kêlekê maseyekê veke.",
+    "lib.online.theirTurn": "Nobeta hevrik",
+    "lib.online.white": "Spî",
+    "lib.online.goNote": "Texta {n}×{n}, reş dest pê dike, spî {k} komi distîne. Hejmartina herêmê; berî ku derbas bibî hemû kevirên mirî rake. Gava her du li pey hev derbas bibin, lîstik diqede.",
+    "lib.online.boardSize": "Mezinahiya text",
+    "lib.online.oppPassed": "Hevrik derbas bû. Ger tu jî derbas bibî, lîstik diqede û tê hejmartin.",
+    "lib.online.modeAi": "Li dijî komputerê bilîze",
+    "lib.online.modeOnline": "Serhêl bilîze"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudokuya mezin a 16x16 bi 1-9 û A-G, 10 astên ji hêsan heta dijwar, bi nîşe û nîşanan."
     },
     "chess": {
-      "name": "Şetrenc li dijî komputerê",
-      "desc": "Şetrenc li dijî komputerê di 10 astan de ji hêsan heta dijwar bilîze, bi rokad, en passant û bilindkirinê."
+      "name": "Şetrenc",
+      "desc": "Şetrenc li dijî komputerê di 10 astan de an serhêl bilîze: hevalekî bi girêdanê vexwîne an bi kesekî nû re bilîze. Bi kelehkirin, en passant û bilindkirinê."
     },
     "xiangqi": {
-      "name": "Xiangqi li dijî komputerê",
-      "desc": "Şetrenca çînî (xiangqi) li dijî komputerê di 10 astan de bilîze: asteng kirina lingê hespê, çavê fîl, girtina bi top û qaîdeya generalê firok."
+      "name": "Xiangqi (şetrenca çînî)",
+      "desc": "Xiangqi li dijî komputerê di 10 astan de an serhêl bilîze: hevalekî bi girêdanê vexwîne an bi kesekî nû re bilîze. Rêzikên tevahî: lingê hespê, çavê fîl, bazdana topê û generalên ku nabe hev bibînin."
     },
     "go-game": {
-      "name": "Go li dijî komputerê",
-      "desc": "Go li dijî komputerê li ser tabloyên 5x5, 7x7 û 9x9 di 10 astan de bilîze, di dawiyê de bi hejmartina otomatîk."
+      "name": "Go",
+      "desc": "Go li dijî komputerê di 10 astan de an serhêl li ser textên 9x9, 13x13 û 19x19 bi heval an hevrikekî nû re bilîze. Hejmartina otomatîk di dawiyê de."
     },
     "memory-shapes": {
       "name": "Bîra şikl û rengan",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Sermaseya serhêl",
       "desc": "Sermaseya komputerê di geroka te de: rêveberê pelan, Notepad, wêneditin û PDF-ditin, hesabker, salname û qulika çopê. Pel di Google Drive-a te de têne tomarkirin."
+    },
+    "co-up": {
+      "name": "Xiangqi ya veşartî (Cờ úp)",
+      "desc": "Xiangqi ya veşartî ya Viyetnamî bilîze: perçe serûbinî dest pê dikin û piştî tevgera yekem têne zivirandin. Li dijî komputerê di 10 astan de an serhêl bi heval û hevrikên nû re."
     }
   },
   "s": {
