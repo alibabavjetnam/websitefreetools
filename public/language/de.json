@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Öffentlichen Tisch eröffnen",
     "lib.online.createPrivate": "Privaten Tisch eröffnen und Freund einladen",
     "lib.online.modesHint": "Öffentliche Tische stehen in der Liste, jeder kann beitreten. Private Tische erreicht man nur über den Einladungslink.",
-    "lib.online.openTables": "Wartende öffentliche Tische",
+    "lib.online.openTables": "Tische warten auf dich",
     "lib.online.join": "Beitreten",
     "lib.online.noTables": "Noch wartet kein Tisch. Klicke auf \"Gegner finden\" oder eröffne einen neuen Tisch.",
     "lib.online.privacy": "Züge laufen über einen kostenlosen öffentlichen MQTT-Server und werden pro Tisch verschlüsselt; der Server speichert keine Partien. Melde dich mit Google an, um beendete Partien in deinem Drive zu speichern.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Gegen Computer spielen",
     "lib.online.modeOnline": "Online spielen",
     "lib.game.fullscreen": "Vollbild",
-    "lib.game.exitFullscreen": "Vollbild beenden"
+    "lib.game.exitFullscreen": "Vollbild beenden",
+    "share.label": "Teilen"
   },
   "pages": {
     "home": {

@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Åpne offentlig bord",
     "lib.online.createPrivate": "Åpne privat bord og inviter en venn",
     "lib.online.modesHint": "Offentlige bord vises i listen, og alle kan bli med. Private bord nås bare med invitasjonslenken.",
-    "lib.online.openTables": "Ventende offentlige bord",
+    "lib.online.openTables": "Bord som venter på deg",
     "lib.online.join": "Bli med",
     "lib.online.noTables": "Ingen bord venter ennå. Klikk på \"Finn motstander\" eller åpne et nytt bord.",
     "lib.online.privacy": "Trekkene går via en gratis offentlig MQTT-server og krypteres per bord; serveren lagrer ingen partier. Logg på med Google for å lagre fullførte partier i Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Brettstørrelse",
     "lib.online.oppPassed": "Motstanderen passet. Passer du også, slutter partiet og telles opp.",
     "lib.online.modeAi": "Spill mot datamaskinen",
-    "lib.online.modeOnline": "Spill på nett"
+    "lib.online.modeOnline": "Spill på nett",
+    "share.label": "Del"
   },
   "pages": {
     "home": {

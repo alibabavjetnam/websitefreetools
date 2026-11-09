@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Åbn offentligt bord",
     "lib.online.createPrivate": "Åbn privat bord og inviter en ven",
     "lib.online.modesHint": "Offentlige borde vises på listen, og alle kan deltage. Private borde kan kun nås via invitationslinket.",
-    "lib.online.openTables": "Ventende offentlige borde",
+    "lib.online.openTables": "Borde venter på dig",
     "lib.online.join": "Deltag",
     "lib.online.noTables": "Ingen borde venter endnu. Klik på \"Find modstander\", eller åbn et nyt bord.",
     "lib.online.privacy": "Trækkene sendes via en gratis offentlig MQTT-server og krypteres for hvert bord; serveren gemmer ingen partier. Log ind med Google for at gemme afsluttede partier i dit Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Brætstørrelse",
     "lib.online.oppPassed": "Modstanderen meldte pas. Melder du også pas, slutter partiet og tælles op.",
     "lib.online.modeAi": "Spil mod computeren",
-    "lib.online.modeOnline": "Spil online"
+    "lib.online.modeOnline": "Spil online",
+    "share.label": "Del"
   },
   "pages": {
     "home": {

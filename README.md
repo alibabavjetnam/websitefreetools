@@ -90,10 +90,15 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Game giải trí | Quay số ngẫu nhiên | `tools/random-number.html` |
 | Game giải trí | Sudoku 9x9 | `tools/sudoku-9x9.html` |
 | Game giải trí | Sudoku 16x16 | `tools/sudoku-16x16.html` |
-| Game giải trí | Cờ vua với máy | `tools/chess.html` |
-| Game giải trí | Cờ tướng với máy | `tools/xiangqi.html` |
-| Game giải trí | Cờ vây với máy | `tools/go-game.html` |
+| Game giải trí | Cờ vua (với máy / online) | `tools/chess.html` |
+| Game giải trí | Cờ tướng (với máy / online) | `tools/xiangqi.html` |
+| Game giải trí | Cờ úp (với máy / online) | `tools/co-up.html` |
+| Game giải trí | Cờ vây (với máy / online) | `tools/go-game.html` |
 | Game giải trí | Ghi nhớ hình và màu | `tools/memory-shapes.html` |
+
+Chơi online (cờ vua, cờ tướng, cờ úp, cờ vây): nước đi chuyển qua broker MQTT công cộng miễn phí (`src/lib/mqtt.ts` tự viết, `src/lib/online.ts`), mã hoá AES-GCM theo từng bàn; bàn công khai lên danh sách "Bàn chờ bạn", bàn riêng mời bằng link `?id=<guid>`; đăng nhập Google thì ván đấu (JSON) lưu vào Drive của người chơi (`WFTools/Games`).
+
+Mọi trang công cụ có thanh chia sẻ (Facebook, X, Reddit, Threads, LinkedIn, Pinterest, Tumblr, Telegram — `src/share.ts`) và nút tự gắn biểu tượng SVG theo nghĩa của nút (`src/btn-icons.ts`).
 
 Bộ mã hoá QR (`src/lib/qr.ts`) và mã vạch (`src/lib/barcode.ts`) được viết riêng, **không phụ thuộc thư viện ngoài**.
 

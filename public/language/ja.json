@@ -252,7 +252,7 @@
     "lib.online.createPublic": "公開テーブルを開く",
     "lib.online.createPrivate": "非公開テーブルを開いて友だちを招待",
     "lib.online.modesHint": "公開テーブルは一覧に表示され、誰でも参加できます。非公開テーブルは招待リンクを持つ人だけが参加できます。",
-    "lib.online.openTables": "待機中の公開テーブル",
+    "lib.online.openTables": "あなたを待つ対局",
     "lib.online.join": "参加",
     "lib.online.noTables": "待機中のテーブルはまだありません。「対戦相手を探す」を押すか、新しいテーブルを開いてください。",
     "lib.online.privacy": "指し手は無料の公開 MQTT サーバーを経由し、テーブルごとに暗号化されます。サーバーに対局は保存されません。Google でログインすると、終わった対局をあなたの Drive に保存できます。",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "コンピューターと対戦",
     "lib.online.modeOnline": "オンライン対戦",
     "lib.game.fullscreen": "全画面",
-    "lib.game.exitFullscreen": "全画面表示を終了"
+    "lib.game.exitFullscreen": "全画面表示を終了",
+    "share.label": "共有"
   },
   "pages": {
     "home": {

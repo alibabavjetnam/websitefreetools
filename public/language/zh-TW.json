@@ -254,7 +254,7 @@
     "lib.online.createPublic": "開公開桌",
     "lib.online.createPrivate": "開私人桌，邀請朋友",
     "lib.online.modesHint": "公開桌會顯示在列表中，任何人都能加入。私人桌只有持有邀請連結的人才能進入。",
-    "lib.online.openTables": "等待中的公開桌",
+    "lib.online.openTables": "等你的桌子",
     "lib.online.join": "加入",
     "lib.online.noTables": "目前沒有等待中的桌。按「尋找對手」或開新桌。",
     "lib.online.privacy": "棋步透過免費的公共 MQTT 伺服器傳送，每桌獨立加密；伺服器不保存棋局。以 Google 登入即可將下完的棋局存到你的 Drive。",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "棋盤大小",
     "lib.online.oppPassed": "對手虛手。若你也虛手，棋局結束並計數。",
     "lib.online.modeAi": "與電腦對弈",
-    "lib.online.modeOnline": "線上對戰"
+    "lib.online.modeOnline": "線上對戰",
+    "share.label": "分享"
   },
   "pages": {
     "home": {

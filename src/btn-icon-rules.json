@@ -1,0 +1,190 @@
+[
+ [
+  "sparkles",
+  "xoá nền|\\bai\\b|làm nét"
+ ],
+ [
+  "upload",
+  "^(tải lên|chọn (file|tệp|ảnh|video|tập tin|thư mục)|thêm (ảnh|file|tệp)|mở (file|tệp|ảnh)|nhập (file|tệp)|đọc file)"
+ ],
+ [
+  "download",
+  "^tải (?!lên|lại)|tải (về|xuống)|^(tải (về|xuống|file|ảnh|tất cả|hết|bản|mã|zip|toàn bộ|.{0,24}về)|xuất|lưu (file|ảnh|thành|về máy|bản|png|svg|jpg|pdf|excel|word|csv|json)|tải [a-z0-9 .]{2,10}$)"
+ ],
+ [
+  "copy",
+  "^(sao chép|chép|copy)"
+ ],
+ [
+  "paste",
+  "^dán"
+ ],
+ [
+  "share",
+  "^chia sẻ"
+ ],
+ [
+  "link",
+  "^(tạo link|lấy link|rút gọn link)"
+ ],
+ [
+  "log-in",
+  "đăng nhập|^kết nối lại|^vào chơi"
+ ],
+ [
+  "log-out",
+  "đăng xuất"
+ ],
+ [
+  "user-plus",
+  "^mời|mời bạn"
+ ],
+ [
+  "plus",
+  "^(cv trống|thực đơn trống)|^(mở bàn|thêm|tạo mới|\\+|ghi thêm)"
+ ],
+ [
+  "trash",
+  "^bỏ (ảnh|logo)|^(xoá|bỏ hết|dọn sạch)"
+ ],
+ [
+  "undo",
+  "^(đi lại|hoàn tác|lùi)"
+ ],
+ [
+  "flag",
+  "đầu hàng"
+ ],
+ [
+  "handshake",
+  "^(xin hoà|đề nghị hoà|cầu hoà)"
+ ],
+ [
+  "refresh",
+  "^(đặt về|về thời điểm|chọn lại)|^(làm lại|đặt lại|làm mới|ván mới|tạo lại|bắt đầu lại|chơi lại|thử lại|chơi tiếp|khởi động lại|tải lại|reset)"
+ ],
+ [
+  "unlock",
+  "^(mở hết|mở khoá|giải mã)"
+ ],
+ [
+  "lock",
+  "^làm rối|^(khoá|mã hoá|đặt mật khẩu)"
+ ],
+ [
+  "pause",
+  "^tạm dừng"
+ ],
+ [
+  "stop",
+  "^(dừng|kết thúc)"
+ ],
+ [
+  "play",
+  "^(đọc|dùng thử)|^(bắt đầu|chạy|phát|quay|bấm giờ|tiếp tục|nghe)"
+ ],
+ [
+  "mic",
+  "^bật micro|^(ghi âm|thu âm)"
+ ],
+ [
+  "camera",
+  "^(chụp|bật camera|mở camera)"
+ ],
+ [
+  "maximize",
+  "toàn màn hình"
+ ],
+ [
+  "printer",
+  "^in( |$)"
+ ],
+ [
+  "save",
+  "^ghi (phiếu|lại)|^(lưu|cập nhật)"
+ ],
+ [
+  "search",
+  "^(tìm|tra cứu|tra )"
+ ],
+ [
+  "lightbulb",
+  "^gợi ý"
+ ],
+ [
+  "shuffle",
+  "ngẫu nhiên|^(xáo|trộn|bốc|rút thăm|quay số)"
+ ],
+ [
+  "calculator",
+  "^(tính|quy đổi|đếm)"
+ ],
+ [
+  "compress",
+  "^(nén|giảm dung lượng|thu nhỏ)"
+ ],
+ [
+  "merge",
+  "^(ghép|gộp|nối)"
+ ],
+ [
+  "scissors",
+  "^(tách|cắt|chia)"
+ ],
+ [
+  "rotate",
+  "^xoay"
+ ],
+ [
+  "swap",
+  "^lật|^(đảo|hoán đổi|đổi chiều)"
+ ],
+ [
+  "sort",
+  "^xếp|^sắp xếp"
+ ],
+ [
+  "skip",
+  "^bỏ lượt"
+ ],
+ [
+  "settings",
+  "^(thiết lập|cài đặt)"
+ ],
+ [
+  "list",
+  "^(danh sách|tóm tắt)"
+ ],
+ [
+  "arrow-up",
+  "^lên$"
+ ],
+ [
+  "arrow-down",
+  "^xuống$"
+ ],
+ [
+  "convert",
+  "^(xử lý|lấy từ|áp)|^(chuyển|đổi|định dạng|làm đẹp|làm gọn|rút gọn|tạo mã|tạo|sinh|điền|dịch|nhận dạng|trích|lấy chữ|áp dụng)"
+ ],
+ [
+  "check",
+  "^(chọn tất cả|dùng)|^(kiểm tra|xác nhận|đồng ý|chấp nhận|phân tích|so sánh|chấm|nộp|hoàn thành|xong|ok$)"
+ ],
+ [
+  "arrow-left",
+  "^(quay lại|trở về|trở lại|về danh sách|← )"
+ ],
+ [
+  "x",
+  "^bỏ chọn|^(đóng|huỷ|thoát|từ chối|bỏ qua|rời bàn)"
+ ],
+ [
+  "eye",
+  "^(xem|mở|hiện)"
+ ],
+ [
+  "edit",
+  "^ghi chú|^(sửa|chỉnh|đổi tên|viết)"
+ ]
+]

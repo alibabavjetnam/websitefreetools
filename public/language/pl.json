@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Otwórz stół publiczny",
     "lib.online.createPrivate": "Otwórz stół prywatny i zaproś znajomego",
     "lib.online.modesHint": "Stoły publiczne są widoczne na liście i każdy może dołączyć. Do stołów prywatnych wchodzi się tylko przez link z zaproszeniem.",
-    "lib.online.openTables": "Czekające stoły publiczne",
+    "lib.online.openTables": "Stoły czekają na ciebie",
     "lib.online.join": "Dołącz",
     "lib.online.noTables": "Nie ma jeszcze czekających stołów. Kliknij \"Znajdź przeciwnika\" albo otwórz nowy stół.",
     "lib.online.privacy": "Ruchy przechodzą przez darmowy publiczny serwer MQTT i są szyfrowane osobno dla każdego stołu; serwer nie przechowuje partii. Zaloguj się przez Google, aby zapisywać zakończone partie na swoim Drive.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Graj z komputerem",
     "lib.online.modeOnline": "Graj online",
     "lib.game.fullscreen": "Pełny ekran",
-    "lib.game.exitFullscreen": "Zamknij pełny ekran"
+    "lib.game.exitFullscreen": "Zamknij pełny ekran",
+    "share.label": "Udostępnij"
   },
   "pages": {
     "home": {

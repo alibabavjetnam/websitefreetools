@@ -6,6 +6,8 @@ import { GoogleAuthError, currentUser, signIn, signOut } from './google/auth';
 import { encodeQr, qrToSvg } from './lib/qr';
 import { barcodeToSvg, encodeBarcode } from './lib/barcode';
 import { flagSvg } from './flags';
+import { autoButtonIcons } from './btn-icons';
+import { mountShareBar } from './share';
 import { LANGS, LANG_NAMES, applyI18n, currentLang, groupName, homeHref, langBase, staticHref, t, toolDesc, toolName } from './i18n';
 
 export function toolHref(tool: ToolInfo): string {
@@ -238,6 +240,14 @@ export function mountLayout(opts: { activeNav?: string; activeTool?: string } = 
   setupAccount();
   // Dịch các nhãn tĩnh có sẵn trong HTML của trang (nếu công cụ dùng data-i18n)
   applyI18n(document);
+
+  if (opts.activeTool) {
+    const head = main.querySelector<HTMLElement>('.tool-head') || main;
+    const tool = TOOLS.find((x) => x.id === opts.activeTool);
+    const h1 = main.querySelector('h1')?.textContent?.trim();
+    mountShareBar(head, `${h1 || (tool ? toolName(tool.id, tool.name) : document.title)} — WFTools`);
+    autoButtonIcons(main, opts.activeTool);
+  }
 
   // Tìm kiếm trong menu trái
   const sidebar = document.getElementById('sidebar') as HTMLElement;

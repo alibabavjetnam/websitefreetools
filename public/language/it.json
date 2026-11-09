@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Apri un tavolo pubblico",
     "lib.online.createPrivate": "Apri un tavolo privato e invita un amico",
     "lib.online.modesHint": "I tavoli pubblici compaiono nell'elenco e chiunque può entrare. Ai tavoli privati si accede solo con il link d'invito.",
-    "lib.online.openTables": "Tavoli pubblici in attesa",
+    "lib.online.openTables": "Tavoli che ti aspettano",
     "lib.online.join": "Entra",
     "lib.online.noTables": "Nessun tavolo in attesa per ora. Fai clic su \"Trova un avversario\" o apri un tavolo nuovo.",
     "lib.online.privacy": "Le mosse passano da un server MQTT pubblico gratuito e sono cifrate per ogni tavolo; il server non conserva le partite. Accedi con Google per salvare le partite finite nel tuo Drive.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Gioca contro il computer",
     "lib.online.modeOnline": "Gioca online",
     "lib.game.fullscreen": "Schermo intero",
-    "lib.game.exitFullscreen": "Esci da schermo intero"
+    "lib.game.exitFullscreen": "Esci da schermo intero",
+    "share.label": "Condividi"
   },
   "pages": {
     "home": {

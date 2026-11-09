@@ -75,11 +75,16 @@ export type GameMode = 'ai' | 'online';
  * Thanh chọn chế độ cho các game cờ hai người: Đánh với máy / Chơi với người (online).
  * Địa chỉ có ?id= (link mời) thì mở thẳng chế độ online.
  */
+const MODE_IC = {
+  ai: '<svg class="bi" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>',
+  online: '<svg class="bi" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2A5 5 0 0 1 21.5 19"/></svg>',
+};
+
 export function modeTabs(onChange: (m: GameMode) => void): { el: HTMLElement; initial: GameMode; set: (m: GameMode) => void } {
   const el = document.createElement('div');
   el.className = 'game-modes';
   el.setAttribute('role', 'tablist');
-  el.innerHTML = `<button type="button" role="tab" data-mode="ai">${escapeHtml(t('lib.online.modeAi', 'Đánh với máy'))}</button><button type="button" role="tab" data-mode="online">${escapeHtml(t('lib.online.modeOnline', 'Chơi với người'))}</button>`;
+  el.innerHTML = `<button type="button" role="tab" data-mode="ai">${MODE_IC.ai}${escapeHtml(t('lib.online.modeAi', 'Đánh với máy'))}</button><button type="button" role="tab" data-mode="online">${MODE_IC.online}${escapeHtml(t('lib.online.modeOnline', 'Chơi với người'))}</button>`;
   const wrap = document.querySelector('.game-wrap');
   wrap?.insertBefore(el, wrap.firstChild);
   const set = (m: GameMode): void => {
@@ -116,6 +121,22 @@ export function fullscreenButton(): void {
   btn.type = 'button';
   btn.className = 'game-fs';
   bar.appendChild(btn);
+  bar.classList.add('has-fs');
+  // Thanh trạng thái (chứa nút toàn màn hình) rộng đúng bằng bàn cờ, nên nút nằm ngay phía trên, góc phải bàn cờ
+  const col = bar.parentElement as HTMLElement;
+  const board = col.querySelector<HTMLElement>('.chess-board, .xq-board, .go-board, .sudoku, .mm-grid');
+  if (board) {
+    const fit = (): void => {
+      const b = board.getBoundingClientRect(), c = col.getBoundingClientRect();
+      if (!b.width) return;
+      bar.style.width = `${Math.round(b.width)}px`;
+      if (getComputedStyle(col).direction === 'rtl') bar.style.marginRight = `${Math.round(c.right - b.right)}px`;
+      else bar.style.marginLeft = `${Math.round(b.left - c.left)}px`;
+    };
+    new ResizeObserver(fit).observe(board);
+    new ResizeObserver(fit).observe(col);
+    fit();
+  }
   const doc = document as Document & { webkitFullscreenElement?: Element | null; webkitExitFullscreen?: () => void };
   const el = wrap as HTMLElement & { webkitRequestFullscreen?: () => void };
   const isOn = (): boolean => wrap.classList.contains('is-pseudo-full') || (doc.fullscreenElement ?? doc.webkitFullscreenElement) === wrap;

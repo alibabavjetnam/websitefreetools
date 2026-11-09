@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Opna opinbert borð",
     "lib.online.createPrivate": "Opna einkaborð og bjóða vini",
     "lib.online.modesHint": "Opinber borð birtast á listanum og hver sem er getur tekið þátt. Á einkaborð kemst aðeins sá sem hefur boðstengilinn.",
-    "lib.online.openTables": "Opinber borð sem bíða",
+    "lib.online.openTables": "Borð sem bíða þín",
     "lib.online.join": "Taka þátt",
     "lib.online.noTables": "Engin borð bíða enn. Smelltu á \"Finna andstæðing\" eða opnaðu nýtt borð.",
     "lib.online.privacy": "Leikirnir fara um ókeypis opinberan MQTT-þjón og eru dulkóðaðir fyrir hvert borð; þjónninn geymir ekki skákirnar. Skráðu þig inn með Google til að vista lokið skákir á Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Stærð borðs",
     "lib.online.oppPassed": "Andstæðingurinn sagði pass. Ef þú segir líka pass lýkur skákinni og er talin.",
     "lib.online.modeAi": "Spila við tölvuna",
-    "lib.online.modeOnline": "Spila á netinu"
+    "lib.online.modeOnline": "Spila á netinu",
+    "share.label": "Deila"
   },
   "pages": {
     "home": {

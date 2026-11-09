@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Openbare tafel openen",
     "lib.online.createPrivate": "Privétafel openen en vriend uitnodigen",
     "lib.online.modesHint": "Openbare tafels staan in de lijst, iedereen kan aanschuiven. Privétafels zijn alleen te bereiken met de uitnodigingslink.",
-    "lib.online.openTables": "Wachtende openbare tafels",
+    "lib.online.openTables": "Tafels wachten op jou",
     "lib.online.join": "Aanschuiven",
     "lib.online.noTables": "Er wacht nog geen tafel. Klik op \"Tegenstander zoeken\" of open een nieuwe tafel.",
     "lib.online.privacy": "Zetten gaan via een gratis openbare MQTT-server en worden per tafel versleuteld; de server bewaart geen partijen. Log in met Google om afgelopen partijen in je Drive op te slaan.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Tegen de computer spelen",
     "lib.online.modeOnline": "Online spelen",
     "lib.game.fullscreen": "Volledig scherm",
-    "lib.game.exitFullscreen": "Volledig scherm afsluiten"
+    "lib.game.exitFullscreen": "Volledig scherm afsluiten",
+    "share.label": "Delen"
   },
   "pages": {
     "home": {

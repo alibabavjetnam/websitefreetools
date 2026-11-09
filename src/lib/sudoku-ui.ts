@@ -2,7 +2,7 @@
 import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import { digitLabel, generatePuzzle, isComplete, type Puzzle } from '../calc/sudoku';
-import { clearBanner, fmtTime, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
+import { clearBanner, fullscreenButton, fmtTime, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 
 export function mountSudoku(n: 9 | 16, id: string): void {
   const { levelBar, banner } = gameShell(`
@@ -187,5 +187,6 @@ export function mountSudoku(n: 9 | 16, id: string): void {
     else if (n === 16 && /^[a-gA-G]$/.test(k)) { setValue(k.toUpperCase().charCodeAt(0) - 55); e.preventDefault(); }
   });
 
+  fullscreenButton();
   start(level);
 }

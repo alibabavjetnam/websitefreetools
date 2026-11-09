@@ -797,7 +797,7 @@ export class OnlineRoom {
       case 'idle': {
         const tables = this.openTables();
         html = `
-          <h3 class="on-h"><span class="on-count">(${tables.length})</span> ${T('openTables', 'Bàn công khai đang chờ')}</h3>
+          <h3 class="on-h"><span class="on-count">${tables.length}</span> <span class="on-ht">${T('openTables', 'Bàn chờ bạn')}</span></h3>
           ${
             tables.length
               ? `<ul class="on-list">${tables

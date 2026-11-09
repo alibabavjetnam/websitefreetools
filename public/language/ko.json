@@ -252,7 +252,7 @@
     "lib.online.createPublic": "공개 테이블 열기",
     "lib.online.createPrivate": "비공개 테이블을 열고 친구 초대",
     "lib.online.modesHint": "공개 테이블은 목록에 나타나 누구나 들어올 수 있습니다. 비공개 테이블은 초대 링크가 있는 사람만 들어올 수 있습니다.",
-    "lib.online.openTables": "대기 중인 공개 테이블",
+    "lib.online.openTables": "당신을 기다리는 테이블",
     "lib.online.join": "입장",
     "lib.online.noTables": "아직 대기 중인 테이블이 없습니다. \"상대 찾기\"를 누르거나 새 테이블을 여세요.",
     "lib.online.privacy": "수는 무료 공개 MQTT 서버를 거쳐 전달되며 테이블마다 암호화됩니다. 서버는 대국을 저장하지 않습니다. Google로 로그인하면 끝난 대국을 내 Drive에 저장할 수 있습니다.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "컴퓨터와 대국",
     "lib.online.modeOnline": "온라인 대국",
     "lib.game.fullscreen": "전체 화면",
-    "lib.game.exitFullscreen": "전체 화면 종료"
+    "lib.game.exitFullscreen": "전체 화면 종료",
+    "share.label": "공유"
   },
   "pages": {
     "home": {

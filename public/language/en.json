@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Open a public table",
     "lib.online.createPrivate": "Open a private table and invite a friend",
     "lib.online.modesHint": "Public tables appear in the list so anyone can join. Private tables can only be joined with the invite link.",
-    "lib.online.openTables": "Public tables waiting",
+    "lib.online.openTables": "Tables waiting for you",
     "lib.online.join": "Join",
     "lib.online.noTables": "No tables are waiting yet. Click \"Find an opponent\" or open a new table.",
     "lib.online.privacy": "Moves travel through a free public MQTT server and are encrypted per table; the server doesn't keep your games. Sign in with Google to save finished games to your Drive.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Play the computer",
     "lib.online.modeOnline": "Play online",
     "lib.game.fullscreen": "Full screen",
-    "lib.game.exitFullscreen": "Exit full screen"
+    "lib.game.exitFullscreen": "Exit full screen",
+    "share.label": "Share"
   },
   "pages": {
     "home": {

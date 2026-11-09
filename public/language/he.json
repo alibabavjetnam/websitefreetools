@@ -252,7 +252,7 @@
     "lib.online.createPublic": "פתיחת שולחן ציבורי",
     "lib.online.createPrivate": "פתיחת שולחן פרטי והזמנת חבר",
     "lib.online.modesHint": "שולחנות ציבוריים מופיעים ברשימה וכל אחד יכול להצטרף. לשולחן פרטי נכנסים רק עם קישור ההזמנה.",
-    "lib.online.openTables": "שולחנות ציבוריים ממתינים",
+    "lib.online.openTables": "שולחנות מחכים לך",
     "lib.online.join": "הצטרפות",
     "lib.online.noTables": "עדיין אין שולחנות ממתינים. לחצו על \"מציאת יריב\" או פתחו שולחן חדש.",
     "lib.online.privacy": "המהלכים עוברים דרך שרת MQTT ציבורי וחינמי ומוצפנים לכל שולחן בנפרד; השרת לא שומר את המשחקים. היכנסו עם Google כדי לשמור משחקים שהסתיימו ב-Drive שלכם.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "משחק נגד המחשב",
     "lib.online.modeOnline": "משחק מקוון",
     "lib.game.fullscreen": "מסך מלא",
-    "lib.game.exitFullscreen": "יציאה ממסך מלא"
+    "lib.game.exitFullscreen": "יציאה ממסך מלא",
+    "share.label": "שיתוף"
   },
   "pages": {
     "home": {

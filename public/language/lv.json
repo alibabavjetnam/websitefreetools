@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Atvērt publisku galdu",
     "lib.online.createPrivate": "Atvērt privātu galdu un uzaicināt draugu",
     "lib.online.modesHint": "Publiskie galdi redzami sarakstā, un pievienoties var ikviens. Privātam galdam var piekļūt tikai ar uzaicinājuma saiti.",
-    "lib.online.openTables": "Gaidošie publiskie galdi",
+    "lib.online.openTables": "Galdi, kas gaida jūs",
     "lib.online.join": "Pievienoties",
     "lib.online.noTables": "Vēl neviens galds negaida. Noklikšķiniet uz \"Atrast pretinieku\" vai atveriet jaunu galdu.",
     "lib.online.privacy": "Gājieni iet caur bezmaksas publisku MQTT serveri un tiek šifrēti katram galdam atsevišķi; serveris partijas neglabā. Piesakieties ar Google, lai pabeigtās partijas saglabātu savā Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Dēļa izmērs",
     "lib.online.oppPassed": "Pretinieks pasēja. Ja arī jūs pasēsiet, partija beigsies un tiks saskaitīta.",
     "lib.online.modeAi": "Spēlēt pret datoru",
-    "lib.online.modeOnline": "Spēlēt tiešsaistē"
+    "lib.online.modeOnline": "Spēlēt tiešsaistē",
+    "share.label": "Kopīgot"
   },
   "pages": {
     "home": {

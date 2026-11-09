@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Abrir mesa pública",
     "lib.online.createPrivate": "Abrir mesa privada e invitar a un amigo",
     "lib.online.modesHint": "Las mesas públicas aparecen en la lista para que cualquiera se una. A las mesas privadas solo se entra con el enlace de invitación.",
-    "lib.online.openTables": "Mesas públicas en espera",
+    "lib.online.openTables": "Mesas que te esperan",
     "lib.online.join": "Unirse",
     "lib.online.noTables": "Aún no hay mesas en espera. Pulsa \"Buscar rival\" o abre una mesa nueva.",
     "lib.online.privacy": "Las jugadas pasan por un servidor MQTT público gratuito y se cifran por mesa; el servidor no guarda tus partidas. Inicia sesión con Google para guardar las partidas terminadas en tu Drive.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Jugar contra el ordenador",
     "lib.online.modeOnline": "Jugar en línea",
     "lib.game.fullscreen": "Pantalla completa",
-    "lib.game.exitFullscreen": "Salir de pantalla completa"
+    "lib.game.exitFullscreen": "Salir de pantalla completa",
+    "share.label": "Compartir"
   },
   "pages": {
     "home": {

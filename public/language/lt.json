@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Atidaryti viešą stalą",
     "lib.online.createPrivate": "Atidaryti privatų stalą ir pakviesti draugą",
     "lib.online.modesHint": "Vieši stalai rodomi sąraše, prie jų gali prisijungti bet kas. Prie privataus stalo patenkama tik per kvietimo nuorodą.",
-    "lib.online.openTables": "Laukiantys vieši stalai",
+    "lib.online.openTables": "Jūsų laukiantys stalai",
     "lib.online.join": "Prisijungti",
     "lib.online.noTables": "Kol kas nelaukia nė vienas stalas. Spustelėkite \"Rasti varžovą\" arba atidarykite naują stalą.",
     "lib.online.privacy": "Ėjimai siunčiami per nemokamą viešą MQTT serverį ir šifruojami kiekvienam stalui atskirai; serveris partijų nesaugo. Prisijunkite su Google, kad baigtas partijas išsaugotumėte savo Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Lentos dydis",
     "lib.online.oppPassed": "Varžovas pasakė „pas“. Jei ir jūs pasakysite „pas“, partija baigsis ir bus suskaičiuota.",
     "lib.online.modeAi": "Žaisti su kompiuteriu",
-    "lib.online.modeOnline": "Žaisti internetu"
+    "lib.online.modeOnline": "Žaisti internetu",
+    "share.label": "Bendrinti"
   },
   "pages": {
     "home": {

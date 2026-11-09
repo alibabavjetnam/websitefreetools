@@ -252,7 +252,7 @@
     "lib.online.createPublic": "开公开桌",
     "lib.online.createPrivate": "开私人桌并邀请朋友",
     "lib.online.modesHint": "公开桌会显示在列表中，任何人都能加入。私人桌只有拿到邀请链接的人才能加入。",
-    "lib.online.openTables": "等待中的公开桌",
+    "lib.online.openTables": "等你的牌桌",
     "lib.online.join": "加入",
     "lib.online.noTables": "暂时没有等待中的牌桌。点击“寻找对手”或开一张新桌。",
     "lib.online.privacy": "棋步通过免费的公共 MQTT 服务器传送，并按牌桌加密；服务器不保存对局。用 Google 登录后可把下完的棋局保存到你的 Drive。",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "人机对战",
     "lib.online.modeOnline": "在线对战",
     "lib.game.fullscreen": "全屏",
-    "lib.game.exitFullscreen": "退出全屏"
+    "lib.game.exitFullscreen": "退出全屏",
+    "share.label": "分享"
   },
   "pages": {
     "home": {

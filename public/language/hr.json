@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Otvori javni stol",
     "lib.online.createPrivate": "Otvori privatni stol i pozovi prijatelja",
     "lib.online.modesHint": "Javni stolovi prikazuju se na popisu i svatko se može pridružiti. Privatnom stolu pristupa se samo putem poveznice za poziv.",
-    "lib.online.openTables": "Javni stolovi na čekanju",
+    "lib.online.openTables": "Stolovi vas čekaju",
     "lib.online.join": "Pridruži se",
     "lib.online.noTables": "Još nijedan stol ne čeka. Kliknite \"Pronađi protivnika\" ili otvorite novi stol.",
     "lib.online.privacy": "Potezi idu preko besplatnog javnog MQTT poslužitelja i šifrirani su za svaki stol; poslužitelj ne sprema partije. Prijavite se Googleom da biste završene partije spremali na svoj Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Veličina ploče",
     "lib.online.oppPassed": "Protivnik je rekao pas. Ako i vi kažete pas, partija završava i broji se.",
     "lib.online.modeAi": "Igraj protiv računala",
-    "lib.online.modeOnline": "Igraj online"
+    "lib.online.modeOnline": "Igraj online",
+    "share.label": "Podijeli"
   },
   "pages": {
     "home": {

@@ -2,7 +2,7 @@
 import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import { MEMORY_LEVELS, COLORS, makeBoard, shapeSvg, type Tile } from '../calc/memory';
-import { clearBanner, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
+import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 
 const SHOW_SECONDS = 5;
 const LIVES = 3;
@@ -128,5 +128,6 @@ export function mountMemory(id: string): void {
   $('#mm-start').addEventListener('click', begin);
   $('#mm-new').addEventListener('click', () => start(level));
 
+  fullscreenButton();
   start(level);
 }

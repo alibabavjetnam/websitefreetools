@@ -254,7 +254,7 @@
     "lib.online.createPublic": "सार्वजनिक टेबुल खोलीं",
     "lib.online.createPrivate": "निजी टेबुल खोल के दोस्त के बोलाईं",
     "lib.online.modesHint": "सार्वजनिक टेबुल सूची में देखाला आ केहू जुड़ सकेला। निजी टेबुल तक खाली न्योता लिंक से पहुँचल जा सकेला।",
-    "lib.online.openTables": "इंतजार करत सार्वजनिक टेबुल",
+    "lib.online.openTables": "रउआ के इंतजार में टेबुल",
     "lib.online.join": "जुड़ीं",
     "lib.online.noTables": "अबहीं कवनो टेबुल इंतजार में नइखे। \"विरोधी खोजीं\" दबाईं भा नया टेबुल खोलीं।",
     "lib.online.privacy": "चाल मुफ्त सार्वजनिक MQTT सर्वर से जाला आ हर टेबुल खातिर एन्क्रिप्ट होला; सर्वर खेल ना राखेला। पूरा भइल खेल अपना Drive में सहेजे खातिर Google से साइन इन करीं।",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "बोर्ड के आकार",
     "lib.online.oppPassed": "विरोधी पास कइलें। रउओ पास करब त खेल खतम होके गिनाई।",
     "lib.online.modeAi": "कंप्यूटर से खेलीं",
-    "lib.online.modeOnline": "ऑनलाइन खेलीं"
+    "lib.online.modeOnline": "ऑनलाइन खेलीं",
+    "share.label": "साझा करीं"
   },
   "pages": {
     "home": {

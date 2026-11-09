@@ -252,7 +252,7 @@
     "lib.online.createPublic": "เปิดโต๊ะสาธารณะ",
     "lib.online.createPrivate": "เปิดโต๊ะส่วนตัวแล้วชวนเพื่อน",
     "lib.online.modesHint": "โต๊ะสาธารณะจะแสดงในรายการให้ใครก็เข้ามาได้ ส่วนโต๊ะส่วนตัวเข้าได้เฉพาะคนที่มีลิงก์เชิญ",
-    "lib.online.openTables": "โต๊ะสาธารณะที่รออยู่",
+    "lib.online.openTables": "โต๊ะที่รอคุณอยู่",
     "lib.online.join": "เข้าร่วม",
     "lib.online.noTables": "ยังไม่มีโต๊ะที่รออยู่ กด \"หาคู่แข่ง\" หรือเปิดโต๊ะใหม่",
     "lib.online.privacy": "การเดินหมากส่งผ่านเซิร์ฟเวอร์ MQTT สาธารณะฟรีและเข้ารหัสแยกตามโต๊ะ เซิร์ฟเวอร์ไม่เก็บเกมของคุณ ลงชื่อเข้าใช้ด้วย Google เพื่อบันทึกเกมที่เล่นจบแล้วลง Drive ของคุณ",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "เล่นกับคอมพิวเตอร์",
     "lib.online.modeOnline": "เล่นออนไลน์",
     "lib.game.fullscreen": "เต็มหน้าจอ",
-    "lib.game.exitFullscreen": "ออกจากโหมดเต็มหน้าจอ"
+    "lib.game.exitFullscreen": "ออกจากโหมดเต็มหน้าจอ",
+    "share.label": "แชร์"
   },
   "pages": {
     "home": {

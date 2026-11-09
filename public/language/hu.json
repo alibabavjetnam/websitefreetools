@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Nyilvános asztal nyitása",
     "lib.online.createPrivate": "Privát asztal nyitása és barát meghívása",
     "lib.online.modesHint": "A nyilvános asztalok megjelennek a listán, és bárki csatlakozhat. Privát asztalhoz csak a meghívó linkkel lehet bejutni.",
-    "lib.online.openTables": "Várakozó nyilvános asztalok",
+    "lib.online.openTables": "Rád váró asztalok",
     "lib.online.join": "Csatlakozás",
     "lib.online.noTables": "Még nem vár egy asztal sem. Kattints az \"Ellenfél keresése\" gombra, vagy nyiss új asztalt.",
     "lib.online.privacy": "A lépések egy ingyenes nyilvános MQTT-szerveren mennek át, asztalonként titkosítva; a szerver nem tárol játszmákat. Jelentkezz be Google-fiókkal, hogy a befejezett játszmákat a Drive-odra mentsd.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Táblaméret",
     "lib.online.oppPassed": "Az ellenfél passzolt. Ha te is passzolsz, a játszma véget ér, és megtörténik a számolás.",
     "lib.online.modeAi": "Játék a gép ellen",
-    "lib.online.modeOnline": "Online játék"
+    "lib.online.modeOnline": "Online játék",
+    "share.label": "Megosztás"
   },
   "pages": {
     "home": {

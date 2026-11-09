@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Otvoriť verejný stôl",
     "lib.online.createPrivate": "Otvoriť súkromný stôl a pozvať kamaráta",
     "lib.online.modesHint": "Verejné stoly sú v zozname a pridať sa môže ktokoľvek. K súkromnému stolu sa dostanete len cez odkaz s pozvánkou.",
-    "lib.online.openTables": "Čakajúce verejné stoly",
+    "lib.online.openTables": "Stoly čakajú na vás",
     "lib.online.join": "Pridať sa",
     "lib.online.noTables": "Zatiaľ nečaká žiadny stôl. Kliknite na \"Nájsť súpera\" alebo otvorte nový stôl.",
     "lib.online.privacy": "Ťahy idú cez bezplatný verejný server MQTT a sú šifrované pre každý stôl zvlášť; server partie neukladá. Prihláste sa cez Google a ukladajte dohrané partie na svoj Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Veľkosť dosky",
     "lib.online.oppPassed": "Súper pasoval. Ak pasujete aj vy, partia sa skončí a spočíta.",
     "lib.online.modeAi": "Hrať proti počítaču",
-    "lib.online.modeOnline": "Hrať online"
+    "lib.online.modeOnline": "Hrať online",
+    "share.label": "Zdieľať"
   },
   "pages": {
     "home": {

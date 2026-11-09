@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Ireki mahai publikoa",
     "lib.online.createPrivate": "Ireki mahai pribatua eta gonbidatu lagun bat",
     "lib.online.modesHint": "Mahai publikoak zerrendan agertzen dira eta edonor sar daiteke. Mahai pribatura gonbidapen-estekarekin bakarrik sar daiteke.",
-    "lib.online.openTables": "Zain dauden mahai publikoak",
+    "lib.online.openTables": "Zure zain dauden mahaiak",
     "lib.online.join": "Sartu",
     "lib.online.noTables": "Oraindik ez dago mahairik zain. Sakatu \"Bilatu aurkaria\" edo ireki mahai berri bat.",
     "lib.online.privacy": "Mugimenduak doako MQTT zerbitzari publiko batetik igarotzen dira eta mahai bakoitzerako zifratzen dira; zerbitzariak ez du partidarik gordetzen. Hasi saioa Google-rekin amaitutako partidak zure Drive-n gordetzeko.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Taularen tamaina",
     "lib.online.oppPassed": "Aurkariak pasatu du. Zuk ere pasatzen baduzu, partida amaitu eta zenbatuko da.",
     "lib.online.modeAi": "Jokatu ordenagailuaren aurka",
-    "lib.online.modeOnline": "Jokatu linean"
+    "lib.online.modeOnline": "Jokatu linean",
+    "share.label": "Partekatu"
   },
   "pages": {
     "home": {

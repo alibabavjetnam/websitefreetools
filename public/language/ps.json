@@ -254,7 +254,7 @@
     "lib.online.createPublic": "عامه مېز پرانیزئ",
     "lib.online.createPrivate": "شخصي مېز پرانیزئ او ملګری راوبلئ",
     "lib.online.modesHint": "عامه مېزونه په لېست کې ښکاري او هر څوک پکې ګډون کولی شي. شخصي مېز ته یوازې د بلنې له لینک سره رسېدای شئ.",
-    "lib.online.openTables": "په انتظار کې عامه مېزونه",
+    "lib.online.openTables": "ستاسو په انتظار مېزونه",
     "lib.online.join": "ګډون",
     "lib.online.noTables": "تر اوسه هېڅ مېز په انتظار کې نشته. \"سیال ومومئ\" کېکاږئ یا نوی مېز پرانیزئ.",
     "lib.online.privacy": "حرکتونه د وړیا عامه MQTT سرور له لارې تېرېږي او د هر مېز لپاره کوډ کېږي؛ سرور لوبې نه ساتي. د Google له لارې ننوځئ ترڅو بشپړې شوې لوبې په خپل Drive کې خوندي کړئ.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "د تختې اندازه",
     "lib.online.oppPassed": "سیال پاس وکړ. که تاسو هم پاس وکړئ، لوبه پای ته رسېږي او شمېرل کېږي.",
     "lib.online.modeAi": "له کمپیوټر سره لوبه",
-    "lib.online.modeOnline": "آنلاین لوبه"
+    "lib.online.modeOnline": "آنلاین لوبه",
+    "share.label": "شریکول"
   },
   "pages": {
     "home": {

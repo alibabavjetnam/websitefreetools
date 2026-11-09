@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Hap tavolinë publike",
     "lib.online.createPrivate": "Hap tavolinë private dhe fto një mik",
     "lib.online.modesHint": "Tavolinat publike shfaqen në listë dhe kushdo mund të bashkohet. Në tavolinë private hyhet vetëm me lidhjen e ftesës.",
-    "lib.online.openTables": "Tavolina publike në pritje",
+    "lib.online.openTables": "Tavolina që të presin",
     "lib.online.join": "Bashkohu",
     "lib.online.noTables": "Ende nuk pret asnjë tavolinë. Kliko \"Gjej kundërshtar\" ose hap një tavolinë të re.",
     "lib.online.privacy": "Lëvizjet kalojnë përmes një serveri publik MQTT falas dhe enkriptohen për çdo tavolinë; serveri nuk ruan lojëra. Hyr me Google për të ruajtur lojërat e përfunduara në Drive-in tënd.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Madhësia e tabelës",
     "lib.online.oppPassed": "Kundërshtari kaloi. Nëse kalon edhe ti, loja mbaron dhe numërohet.",
     "lib.online.modeAi": "Luaj me kompjuterin",
-    "lib.online.modeOnline": "Luaj online"
+    "lib.online.modeOnline": "Luaj online",
+    "share.label": "Ndaj"
   },
   "pages": {
     "home": {

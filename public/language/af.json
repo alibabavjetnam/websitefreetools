@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Maak publieke tafel oop",
     "lib.online.createPrivate": "Maak privaat tafel oop en nooi 'n vriend",
     "lib.online.modesHint": "Publieke tafels verskyn in die lys en enigiemand kan aansluit. 'n Privaat tafel is net met die uitnodigingskakel bereikbaar.",
-    "lib.online.openTables": "Publieke tafels wat wag",
+    "lib.online.openTables": "Tafels wag vir jou",
     "lib.online.join": "Sluit aan",
     "lib.online.noTables": "Nog geen tafels wag nie. Klik \"Vind 'n opponent\" of maak 'n nuwe tafel oop.",
     "lib.online.privacy": "Skuiwe gaan deur 'n gratis publieke MQTT-bediener en word per tafel geïnkripteer; die bediener stoor geen spelle nie. Meld aan met Google om voltooide spelle in jou Drive te stoor.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Bordgrootte",
     "lib.online.oppPassed": "Die opponent het gepas. As jy ook pas, eindig die spel en word getel.",
     "lib.online.modeAi": "Speel teen die rekenaar",
-    "lib.online.modeOnline": "Speel aanlyn"
+    "lib.online.modeOnline": "Speel aanlyn",
+    "share.label": "Deel"
   },
   "pages": {
     "home": {

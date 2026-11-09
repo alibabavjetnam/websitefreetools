@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Odpri javno mizo",
     "lib.online.createPrivate": "Odpri zasebno mizo in povabi prijatelja",
     "lib.online.modesHint": "Javne mize so na seznamu in pridruži se lahko kdorkoli. Do zasebne mize pridete le s povezavo za povabilo.",
-    "lib.online.openTables": "Javne mize, ki čakajo",
+    "lib.online.openTables": "Mize vas čakajo",
     "lib.online.join": "Pridruži se",
     "lib.online.noTables": "Nobena miza še ne čaka. Kliknite \"Poišči nasprotnika\" ali odprite novo mizo.",
     "lib.online.privacy": "Poteze gredo prek brezplačnega javnega strežnika MQTT in so šifrirane za vsako mizo posebej; strežnik partij ne shranjuje. Prijavite se z računom Google, da končane partije shranite na svoj Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Velikost plošče",
     "lib.online.oppPassed": "Nasprotnik je rekel pas. Če tudi vi rečete pas, se partija konča in prešteje.",
     "lib.online.modeAi": "Igraj proti računalniku",
-    "lib.online.modeOnline": "Igraj na spletu"
+    "lib.online.modeOnline": "Igraj na spletu",
+    "share.label": "Deli"
   },
   "pages": {
     "home": {

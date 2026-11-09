@@ -252,7 +252,7 @@
     "lib.online.createPublic": "सार्वजनिक टेबल खोलें",
     "lib.online.createPrivate": "निजी टेबल खोलें और दोस्त को बुलाएँ",
     "lib.online.modesHint": "सार्वजनिक टेबल सूची में दिखती हैं, कोई भी जुड़ सकता है। निजी टेबल में सिर्फ़ आमंत्रण लिंक वाले ही आ सकते हैं।",
-    "lib.online.openTables": "इंतज़ार कर रही सार्वजनिक टेबल",
+    "lib.online.openTables": "आपकी प्रतीक्षा में टेबल",
     "lib.online.join": "जुड़ें",
     "lib.online.noTables": "अभी कोई टेबल इंतज़ार में नहीं है। \"विरोधी खोजें\" दबाएँ या नई टेबल खोलें।",
     "lib.online.privacy": "चालें एक मुफ़्त सार्वजनिक MQTT सर्वर से होकर जाती हैं और हर टेबल के लिए एन्क्रिप्ट होती हैं; सर्वर आपके खेल सहेजता नहीं। पूरे हुए खेल अपनी Drive में सहेजने के लिए Google से साइन इन करें।",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "कंप्यूटर से खेलें",
     "lib.online.modeOnline": "ऑनलाइन खेलें",
     "lib.game.fullscreen": "पूर्ण स्क्रीन",
-    "lib.game.exitFullscreen": "पूर्ण स्क्रीन से बाहर निकलें"
+    "lib.game.exitFullscreen": "पूर्ण स्क्रीन से बाहर निकलें",
+    "share.label": "साझा करें"
   },
   "pages": {
     "home": {

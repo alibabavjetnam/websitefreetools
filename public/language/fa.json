@@ -252,7 +252,7 @@
     "lib.online.createPublic": "باز کردن میز عمومی",
     "lib.online.createPrivate": "باز کردن میز خصوصی و دعوت دوست",
     "lib.online.modesHint": "میزهای عمومی در فهرست نمایش داده می‌شوند و هر کسی می‌تواند وارد شود. به میز خصوصی فقط با پیوند دعوت می‌توان وارد شد.",
-    "lib.online.openTables": "میزهای عمومی در انتظار",
+    "lib.online.openTables": "میزهای منتظر شما",
     "lib.online.join": "ورود",
     "lib.online.noTables": "هنوز میزی در انتظار نیست. «یافتن حریف» را بزنید یا میز تازه‌ای باز کنید.",
     "lib.online.privacy": "حرکت‌ها از طریق یک سرور MQTT عمومی و رایگان منتقل می‌شوند و برای هر میز رمزگذاری می‌شوند؛ سرور بازی‌های شما را نگه نمی‌دارد. برای ذخیرهٔ بازی‌های تمام‌شده در Drive خود، با Google وارد شوید.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "بازی با رایانه",
     "lib.online.modeOnline": "بازی آنلاین",
     "lib.game.fullscreen": "تمام‌صفحه",
-    "lib.game.exitFullscreen": "خروج از تمام‌صفحه"
+    "lib.game.exitFullscreen": "خروج از تمام‌صفحه",
+    "share.label": "اشتراک‌گذاری"
   },
   "pages": {
     "home": {

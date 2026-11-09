@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Avaa julkinen pöytä",
     "lib.online.createPrivate": "Avaa yksityinen pöytä ja kutsu ystävä",
     "lib.online.modesHint": "Julkiset pöydät näkyvät listassa, ja kuka tahansa voi liittyä. Yksityiseen pöytään pääsee vain kutsulinkillä.",
-    "lib.online.openTables": "Odottavat julkiset pöydät",
+    "lib.online.openTables": "Sinua odottavat pöydät",
     "lib.online.join": "Liity",
     "lib.online.noTables": "Yhtään pöytää ei vielä odota. Valitse \"Etsi vastustaja\" tai avaa uusi pöytä.",
     "lib.online.privacy": "Siirrot kulkevat ilmaisen julkisen MQTT-palvelimen kautta ja salataan pöytäkohtaisesti; palvelin ei tallenna pelejä. Kirjaudu Googlella, niin voit tallentaa päättyneet pelit Driveesi.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Laudan koko",
     "lib.online.oppPassed": "Vastustaja passasi. Jos sinäkin passaat, peli päättyy ja lasketaan.",
     "lib.online.modeAi": "Pelaa tietokonetta vastaan",
-    "lib.online.modeOnline": "Pelaa verkossa"
+    "lib.online.modeOnline": "Pelaa verkossa",
+    "share.label": "Jaa"
   },
   "pages": {
     "home": {

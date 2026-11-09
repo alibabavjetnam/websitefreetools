@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Ochiq stol ochish",
     "lib.online.createPrivate": "Shaxsiy stol ochib, do'stni taklif qilish",
     "lib.online.modesHint": "Ochiq stollar ro'yxatda ko'rinadi va har kim qo'shila oladi. Shaxsiy stolga faqat taklif havolasi orqali kiriladi.",
-    "lib.online.openTables": "Kutayotgan ochiq stollar",
+    "lib.online.openTables": "Sizni kutayotgan stollar",
     "lib.online.join": "Qo'shilish",
     "lib.online.noTables": "Hozircha kutayotgan stol yo'q. \"Raqib topish\" tugmasini bosing yoki yangi stol oching.",
     "lib.online.privacy": "Yurishlar bepul ochiq MQTT serveri orqali o'tadi va har bir stol uchun shifrlanadi; server o'yinlarni saqlamaydi. Tugagan o'yinlarni Drive'ga saqlash uchun Google orqali kiring.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Taxta o'lchami",
     "lib.online.oppPassed": "Raqib pas aytdi. Siz ham pas aytsangiz, o'yin tugaydi va hisoblanadi.",
     "lib.online.modeAi": "Kompyuter bilan o'ynash",
-    "lib.online.modeOnline": "Onlayn o'ynash"
+    "lib.online.modeOnline": "Onlayn o'ynash",
+    "share.label": "Ulashish"
   },
   "pages": {
     "home": {

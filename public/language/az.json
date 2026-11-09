@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Açıq masa aç",
     "lib.online.createPrivate": "Şəxsi masa aç və dostu dəvət et",
     "lib.online.modesHint": "Açıq masalar siyahıda görünür və hər kəs qoşula bilər. Şəxsi masaya yalnız dəvət keçidi ilə daxil olmaq olar.",
-    "lib.online.openTables": "Gözləyən açıq masalar",
+    "lib.online.openTables": "Sizi gözləyən masalar",
     "lib.online.join": "Qoşul",
     "lib.online.noTables": "Hələ gözləyən masa yoxdur. \"Rəqib tap\" düyməsini basın və ya yeni masa açın.",
     "lib.online.privacy": "Gedişlər pulsuz açıq MQTT serverindən keçir və hər masa üçün şifrələnir; server oyunları saxlamır. Bitmiş oyunları Drive-a saxlamaq üçün Google ilə daxil olun.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Lövhə ölçüsü",
     "lib.online.oppPassed": "Rəqib pas dedi. Siz də pas desəniz, oyun bitəcək və hesablanacaq.",
     "lib.online.modeAi": "Kompüterlə oyna",
-    "lib.online.modeOnline": "Onlayn oyna"
+    "lib.online.modeOnline": "Onlayn oyna",
+    "share.label": "Paylaş"
   },
   "pages": {
     "home": {

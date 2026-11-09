@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Deschide masă publică",
     "lib.online.createPrivate": "Deschide masă privată și invită un prieten",
     "lib.online.modesHint": "Mesele publice apar în listă și oricine se poate alătura. La o masă privată se ajunge doar prin linkul de invitație.",
-    "lib.online.openTables": "Mese publice în așteptare",
+    "lib.online.openTables": "Mese care te așteaptă",
     "lib.online.join": "Alătură-te",
     "lib.online.noTables": "Nicio masă nu așteaptă încă. Apasă \"Găsește adversar\" sau deschide o masă nouă.",
     "lib.online.privacy": "Mutările trec printr-un server MQTT public gratuit și sunt criptate pentru fiecare masă; serverul nu păstrează partidele. Conectează-te cu Google ca să salvezi partidele terminate în Drive-ul tău.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Mărimea tablei",
     "lib.online.oppPassed": "Adversarul a spus pas. Dacă spui și tu pas, partida se termină și se numără.",
     "lib.online.modeAi": "Joacă cu calculatorul",
-    "lib.online.modeOnline": "Joacă online"
+    "lib.online.modeOnline": "Joacă online",
+    "share.label": "Distribuie"
   },
   "pages": {
     "home": {

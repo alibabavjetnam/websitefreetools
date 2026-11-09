@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Mở bàn công khai",
     "lib.online.createPrivate": "Mở bàn riêng, mời bạn",
     "lib.online.modesHint": "Bàn công khai hiện trong danh sách để người khác vào chơi. Bàn riêng chỉ ai có link mời mới vào được.",
-    "lib.online.openTables": "Bàn công khai đang chờ",
+    "lib.online.openTables": "Bàn chờ bạn",
     "lib.online.join": "Vào chơi",
     "lib.online.noTables": "Chưa có bàn nào đang chờ. Bấm \"Tìm đối thủ\" hoặc mở bàn mới.",
     "lib.online.privacy": "Nước đi được chuyển qua máy chủ MQTT công cộng miễn phí và được mã hoá theo từng bàn; máy chủ không lưu ván. Đăng nhập Google để lưu ván đã chơi vào Drive của bạn.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Đánh với máy",
     "lib.online.modeOnline": "Chơi với người",
     "lib.game.fullscreen": "Toàn màn hình",
-    "lib.game.exitFullscreen": "Thoát toàn màn hình"
+    "lib.game.exitFullscreen": "Thoát toàn màn hình",
+    "share.label": "Chia sẻ"
   },
   "pages": {
     "home": {

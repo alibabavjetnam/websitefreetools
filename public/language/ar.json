@@ -252,7 +252,7 @@
     "lib.online.createPublic": "افتح طاولة عامة",
     "lib.online.createPrivate": "افتح طاولة خاصة وادعُ صديقًا",
     "lib.online.modesHint": "تظهر الطاولات العامة في القائمة ويمكن لأي شخص الانضمام. أما الطاولات الخاصة فلا يدخلها إلا من لديه رابط الدعوة.",
-    "lib.online.openTables": "طاولات عامة تنتظر",
+    "lib.online.openTables": "طاولات بانتظارك",
     "lib.online.join": "انضم",
     "lib.online.noTables": "لا توجد طاولات تنتظر بعد. انقر \"ابحث عن خصم\" أو افتح طاولة جديدة.",
     "lib.online.privacy": "تمر النقلات عبر خادم MQTT عام ومجاني وتُشفَّر لكل طاولة؛ لا يحتفظ الخادم بمبارياتك. سجّل الدخول باستخدام Google لحفظ المباريات المنتهية في Drive الخاص بك.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "العب ضد الكمبيوتر",
     "lib.online.modeOnline": "العب عبر الإنترنت",
     "lib.game.fullscreen": "ملء الشاشة",
-    "lib.game.exitFullscreen": "الخروج من ملء الشاشة"
+    "lib.game.exitFullscreen": "الخروج من ملء الشاشة",
+    "share.label": "مشاركة"
   },
   "pages": {
     "home": {

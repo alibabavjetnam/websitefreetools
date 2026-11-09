@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Magbukas ng pampublikong mesa",
     "lib.online.createPrivate": "Magbukas ng pribadong mesa at mag-imbita ng kaibigan",
     "lib.online.modesHint": "Nasa listahan ang mga pampublikong mesa at puwedeng sumali ang kahit sino. Sa pribadong mesa, makakapasok lang gamit ang link ng imbitasyon.",
-    "lib.online.openTables": "Mga pampublikong mesang naghihintay",
+    "lib.online.openTables": "Mga mesang naghihintay sa iyo",
     "lib.online.join": "Sumali",
     "lib.online.noTables": "Wala pang naghihintay na mesa. I-click ang \"Maghanap ng kalaban\" o magbukas ng bagong mesa.",
     "lib.online.privacy": "Dumadaan ang mga tira sa libreng pampublikong MQTT server at naka-encrypt bawat mesa; hindi nag-iimbak ng laro ang server. Mag-sign in sa Google para mai-save ang mga natapos na laro sa iyong Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Laki ng board",
     "lib.online.oppPassed": "Nag-pass ang kalaban. Kung mag-pass ka rin, tapos ang laro at bibilangin.",
     "lib.online.modeAi": "Laban sa computer",
-    "lib.online.modeOnline": "Maglaro online"
+    "lib.online.modeOnline": "Maglaro online",
+    "share.label": "Ibahagi"
   },
   "pages": {
     "home": {

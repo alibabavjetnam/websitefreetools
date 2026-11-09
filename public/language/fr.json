@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Ouvrir une table publique",
     "lib.online.createPrivate": "Ouvrir une table privée et inviter un ami",
     "lib.online.modesHint": "Les tables publiques apparaissent dans la liste et tout le monde peut les rejoindre. Les tables privées ne sont accessibles qu'avec le lien d'invitation.",
-    "lib.online.openTables": "Tables publiques en attente",
+    "lib.online.openTables": "Tables qui vous attendent",
     "lib.online.join": "Rejoindre",
     "lib.online.noTables": "Aucune table en attente pour l'instant. Cliquez sur \"Trouver un adversaire\" ou ouvrez une nouvelle table.",
     "lib.online.privacy": "Les coups passent par un serveur MQTT public gratuit et sont chiffrés pour chaque table ; le serveur ne conserve pas vos parties. Connectez-vous avec Google pour enregistrer les parties terminées dans votre Drive.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Jouer contre l'ordinateur",
     "lib.online.modeOnline": "Jouer en ligne",
     "lib.game.fullscreen": "Plein écran",
-    "lib.game.exitFullscreen": "Quitter le plein écran"
+    "lib.game.exitFullscreen": "Quitter le plein écran",
+    "share.label": "Partager"
   },
   "pages": {
     "home": {

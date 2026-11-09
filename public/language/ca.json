@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Obre una taula pública",
     "lib.online.createPrivate": "Obre una taula privada i convida un amic",
     "lib.online.modesHint": "Les taules públiques surten a la llista i s'hi pot unir qualsevol. A una taula privada només s'hi entra amb l'enllaç d'invitació.",
-    "lib.online.openTables": "Taules públiques en espera",
+    "lib.online.openTables": "Taules que t'esperen",
     "lib.online.join": "Uneix-t'hi",
     "lib.online.noTables": "Encara no hi ha cap taula en espera. Fes clic a \"Busca rival\" o obre una taula nova.",
     "lib.online.privacy": "Les jugades passen per un servidor MQTT públic gratuït i es xifren per a cada taula; el servidor no desa partides. Inicia sessió amb Google per desar les partides acabades al teu Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Mida del tauler",
     "lib.online.oppPassed": "El rival ha passat. Si tu també passes, la partida acaba i es compta.",
     "lib.online.modeAi": "Juga contra l'ordinador",
-    "lib.online.modeOnline": "Juga en línia"
+    "lib.online.modeOnline": "Juga en línia",
+    "share.label": "Comparteix"
   },
   "pages": {
     "home": {

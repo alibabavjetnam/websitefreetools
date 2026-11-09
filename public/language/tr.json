@@ -252,7 +252,7 @@
     "lib.online.createPublic": "Herkese açık masa aç",
     "lib.online.createPrivate": "Özel masa aç ve arkadaşını davet et",
     "lib.online.modesHint": "Herkese açık masalar listede görünür, herkes katılabilir. Özel masalara yalnızca davet bağlantısıyla girilir.",
-    "lib.online.openTables": "Bekleyen açık masalar",
+    "lib.online.openTables": "Seni bekleyen masalar",
     "lib.online.join": "Katıl",
     "lib.online.noTables": "Henüz bekleyen masa yok. \"Rakip bul\"a tıkla ya da yeni bir masa aç.",
     "lib.online.privacy": "Hamleler ücretsiz, herkese açık bir MQTT sunucusu üzerinden iletilir ve her masa için şifrelenir; sunucu oyunları saklamaz. Biten oyunları Drive'ına kaydetmek için Google ile giriş yap.",
@@ -295,7 +295,8 @@
     "lib.online.modeAi": "Bilgisayara karşı oyna",
     "lib.online.modeOnline": "Çevrim içi oyna",
     "lib.game.fullscreen": "Tam ekran",
-    "lib.game.exitFullscreen": "Tam ekrandan çık"
+    "lib.game.exitFullscreen": "Tam ekrandan çık",
+    "share.label": "Paylaş"
   },
   "pages": {
     "home": {

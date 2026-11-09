@@ -1371,7 +1371,8 @@ html.wd-noscroll, html.wd-noscroll body { overflow: hidden; }
 @keyframes on-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .on-spin { animation: none; } }
 .on-h { margin: 2px 0 0; font-size: 20px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; line-height: 1.25; }
-.on-h .on-count { color: var(--accent, #2563eb); }
+.on-h .on-count { color: darkred; }
+.on-h .on-ht { color: #0d6efd; }
 .on-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; max-height: 260px; overflow: auto; }
 .on-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
 .on-list li span { display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
@@ -1395,12 +1396,27 @@ html.wd-noscroll, html.wd-noscroll body { overflow: hidden; }
 .game-side .btn-danger, .on-panel .btn-danger { background: #b42318; border-color: #b42318; color: #fff; }
 
 /* Nút toàn màn hình của các game cờ */
+.game-status.has-fs { flex-wrap: nowrap; align-items: center; align-self: flex-start; max-width: 100%; }
+.game-status.has-fs > :not(.game-fs) { min-width: 0; }
 .game-status .game-fs { margin-inline-start: auto; display: inline-grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); color: inherit; cursor: pointer; flex: none; }
 .game-status .game-fs:hover, .game-status .game-fs:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
 .game-wrap:fullscreen, .game-wrap.is-pseudo-full { background: var(--paper, #f4f6f9); padding: 16px 20px; margin: 0; overflow: auto; }
 .game-wrap.is-pseudo-full { position: fixed; inset: 0; z-index: 2147483000; }
 .game-wrap:fullscreen .xq-board, .game-wrap.is-pseudo-full .xq-board { width: min(100%, calc((100vh - 240px) * 0.9)); margin-inline: auto; }
 .game-wrap:fullscreen .go-board, .game-wrap.is-pseudo-full .go-board { width: min(100%, calc(100vh - 240px)); margin-inline: auto; }
-.game-wrap:fullscreen .chess-board, .game-wrap.is-pseudo-full .chess-board { width: min(100%, calc(100vh - 240px)); margin-inline: auto; }
+.game-wrap:fullscreen .sudoku, .game-wrap.is-pseudo-full .sudoku, .game-wrap:fullscreen .chess-board, .game-wrap.is-pseudo-full .chess-board { width: min(100%, calc(100vh - 240px)); margin-inline: auto; }
 .game-wrap:fullscreen .game-main, .game-wrap.is-pseudo-full .game-main { grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); }
 @media (max-width: 760px) { .game-wrap:fullscreen .game-main, .game-wrap.is-pseudo-full .game-main { grid-template-columns: minmax(0, 1fr); } }
+
+/* Thanh chia sẻ mạng xã hội ở đầu trang công cụ */
+.share-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px; margin: 0 0 10px; }
+.share-bar .sh-label { font-size: 13px; color: var(--muted); margin-inline-end: 2px; }
+.share-bar .sh-btn { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--c); box-shadow: 0 1px 2px rgba(0,0,0,.15); transition: transform .15s, box-shadow .15s; }
+.share-bar .sh-btn:hover, .share-bar .sh-btn:focus-visible { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.2); outline: none; }
+@media (prefers-color-scheme: dark) { .share-bar .sh-x, .share-bar .sh-threads { box-shadow: 0 0 0 1px rgba(255,255,255,.35); } }
+
+/* Biểu tượng tự gắn trên nút */
+.btn > svg.bi { width: 1.1em; height: 1.1em; vertical-align: -0.2em; margin-inline-end: .45em; flex: none; }
+.btn-sm > svg.bi { width: 1.05em; height: 1.05em; margin-inline-end: .35em; }
+
+[data-mode] > svg.bi { width: 1.1em; height: 1.1em; vertical-align: -0.2em; margin-inline-end: .4em; }

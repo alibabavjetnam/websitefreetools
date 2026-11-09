@@ -254,7 +254,7 @@
     "lib.online.createPublic": "Agor bwrdd cyhoeddus",
     "lib.online.createPrivate": "Agor bwrdd preifat a gwahodd ffrind",
     "lib.online.modesHint": "Mae byrddau cyhoeddus yn ymddangos yn y rhestr a gall unrhyw un ymuno. Dim ond gyda'r ddolen wahodd y gellir cyrraedd bwrdd preifat.",
-    "lib.online.openTables": "Byrddau cyhoeddus yn aros",
+    "lib.online.openTables": "Byrddau'n aros amdanoch",
     "lib.online.join": "Ymuno",
     "lib.online.noTables": "Does dim bwrdd yn aros eto. Cliciwch \"Dod o hyd i wrthwynebydd\" neu agorwch fwrdd newydd.",
     "lib.online.privacy": "Mae'r symudiadau'n mynd drwy weinydd MQTT cyhoeddus am ddim ac yn cael eu hamgryptio ar gyfer pob bwrdd; nid yw'r gweinydd yn cadw gemau. Mewngofnodwch gyda Google i gadw gemau gorffenedig yn eich Drive.",
@@ -295,7 +295,8 @@
     "lib.online.boardSize": "Maint y bwrdd",
     "lib.online.oppPassed": "Pasiodd y gwrthwynebydd. Os byddwch chithau'n pasio, daw'r gêm i ben a chaiff ei chyfrif.",
     "lib.online.modeAi": "Chwarae yn erbyn y cyfrifiadur",
-    "lib.online.modeOnline": "Chwarae ar-lein"
+    "lib.online.modeOnline": "Chwarae ar-lein",
+    "share.label": "Rhannu"
   },
   "pages": {
     "home": {
