@@ -68,3 +68,36 @@ export function gameShell(html: string): { levelBar: HTMLElement; banner: HTMLEl
   $('#tool-root').innerHTML = `<div class="game-wrap"><div id="lv-bar"></div>${html}<div id="game-banner" aria-live="polite"></div></div>`;
   return { levelBar: $('#lv-bar'), banner: $('#game-banner') };
 }
+
+export type GameMode = 'ai' | 'online';
+
+/**
+ * Thanh chọn chế độ cho các game cờ hai người: Đánh với máy / Chơi với người (online).
+ * Địa chỉ có ?id= (link mời) thì mở thẳng chế độ online.
+ */
+export function modeTabs(onChange: (m: GameMode) => void): { el: HTMLElement; initial: GameMode; set: (m: GameMode) => void } {
+  const el = document.createElement('div');
+  el.className = 'game-modes';
+  el.setAttribute('role', 'tablist');
+  el.innerHTML = `<button type="button" role="tab" data-mode="ai">${escapeHtml(t('lib.online.modeAi', 'Đánh với máy'))}</button><button type="button" role="tab" data-mode="online">${escapeHtml(t('lib.online.modeOnline', 'Chơi với người'))}</button>`;
+  const wrap = document.querySelector('.game-wrap');
+  wrap?.insertBefore(el, wrap.firstChild);
+  const set = (m: GameMode): void => {
+    el.querySelectorAll<HTMLElement>('[data-mode]').forEach((b) => {
+      const on = b.dataset.mode === m;
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-selected', String(on));
+    });
+    document.querySelector('.game-wrap')?.setAttribute('data-mode', m);
+  };
+  el.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLElement>('[data-mode]');
+    if (!b || b.classList.contains('on')) return;
+    const m = b.dataset.mode as GameMode;
+    set(m);
+    onChange(m);
+  });
+  const initial: GameMode = /[?&]id=/.test(location.search) ? 'online' : 'ai';
+  set(initial);
+  return { el, initial, set };
+}

@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Câu {i}/{n}",
     "lib.game.mmDone": "Hoàn thành!",
     "lib.game.mmLost": "Hết mạng — các ô đã mở ra để bạn xem.",
-    "lib.game.mmNote": "Bấm Bắt đầu: các ô lộ ra trong {s} giây rồi úp lại. Hãy nhớ hình và màu của từng ô. Sau đó chọn đúng ô theo hình mẫu hiện ra. Sai quá {l} lần là thua cấp."
+    "lib.game.mmNote": "Bấm Bắt đầu: các ô lộ ra trong {s} giây rồi úp lại. Hãy nhớ hình và màu của từng ô. Sau đó chọn đúng ô theo hình mẫu hiện ra. Sai quá {l} lần là thua cấp.",
+    "lib.online.guest": "Khách",
+    "lib.online.connFail": "Không kết nối được máy chủ chơi online. Kiểm tra mạng (hoặc tắt trình chặn quảng cáo) rồi bấm Thử lại.",
+    "lib.online.tableGone": "Người mở bàn đã rời đi. Hãy chọn bàn khác hoặc mở bàn mới.",
+    "lib.online.drawDeclined": "Đối thủ không đồng ý hoà.",
+    "lib.online.opponent": "Đối thủ",
+    "lib.online.copied": "Đã chép link. Gửi cho bạn của bạn để cùng chơi.",
+    "lib.online.waitingFor": "đang chờ {n} giây",
+    "lib.online.drawAgreed": "Hai bên đồng ý hoà.",
+    "lib.online.draw": "Ván cờ hoà.",
+    "lib.online.oppResigned": "Đối thủ đầu hàng — bạn thắng!",
+    "lib.online.youResigned": "Bạn đã đầu hàng.",
+    "lib.online.youWin": "Bạn thắng!",
+    "lib.online.youLose": "Bạn thua.",
+    "lib.online.connecting": "Đang kết nối máy chủ chơi online…",
+    "lib.online.retry": "Thử lại",
+    "lib.online.quick": "Tìm đối thủ",
+    "lib.online.createPublic": "Mở bàn công khai",
+    "lib.online.createPrivate": "Mở bàn riêng, mời bạn",
+    "lib.online.modesHint": "Bàn công khai hiện trong danh sách để người khác vào chơi. Bàn riêng chỉ ai có link mời mới vào được.",
+    "lib.online.openTables": "Bàn công khai đang chờ",
+    "lib.online.join": "Vào chơi",
+    "lib.online.noTables": "Chưa có bàn nào đang chờ. Bấm \"Tìm đối thủ\" hoặc mở bàn mới.",
+    "lib.online.privacy": "Nước đi được chuyển qua máy chủ MQTT công cộng miễn phí và được mã hoá theo từng bàn; máy chủ không lưu ván. Đăng nhập Google để lưu ván đã chơi vào Drive của bạn.",
+    "lib.online.waitingPublic": "Bàn công khai: đang chờ người vào chơi…",
+    "lib.online.waitingPrivate": "Bàn riêng: gửi link này cho bạn của bạn. Khi bạn ấy mở link, ván cờ bắt đầu.",
+    "lib.online.leave": "Rời bàn",
+    "lib.online.full": "Bàn này đã đủ 2 người. Hãy tìm bàn khác hoặc mở bàn mới.",
+    "lib.online.backToList": "Về danh sách bàn",
+    "lib.online.you": "Bạn",
+    "lib.online.oppLeft": "đã rời bàn",
+    "lib.online.oppOffline": "mất kết nối",
+    "lib.online.drawOffer": "Đối thủ xin hoà.",
+    "lib.online.accept": "Đồng ý",
+    "lib.online.decline": "Từ chối",
+    "lib.online.drawSent": "Đã xin hoà…",
+    "lib.online.offerDraw": "Xin hoà",
+    "lib.online.resignConfirm": "Bấm lần nữa để đầu hàng",
+    "lib.online.resign": "Đầu hàng",
+    "lib.online.againSent": "Đang chờ đối thủ đồng ý…",
+    "lib.online.againAccept": "Đối thủ muốn chơi tiếp — Chơi ván mới",
+    "lib.online.again": "Chơi ván mới (đổi màu)",
+    "lib.online.inviteLink": "Link mời",
+    "lib.online.copy": "Chép link",
+    "lib.online.share": "Chia sẻ",
+    "lib.online.saved": "Đã lưu ván vào Google Drive (thư mục WFTools/Games).",
+    "lib.online.saving": "Đang lưu ván vào Google Drive…",
+    "lib.online.saveFail": "Chưa lưu được ván vào Drive.",
+    "lib.online.save": "Lưu ván vào Google Drive",
+    "lib.game.darkNote": "Cờ úp: hai Tướng ngửa, các quân khác úp ngẫu nhiên. Quân úp đi theo quân của vị trí nó đứng (đứng chỗ Xe thì đi như Xe), đi xong thì lật lên và từ đó đi theo quân thật. Sĩ và Tượng được đi khắp bàn. Chiếu bí hoặc hết nước đi là thua.",
+    "lib.game.darkBoard": "Bàn cờ úp",
+    "lib.online.red": "Đỏ",
+    "lib.online.black": "Đen",
+    "lib.game.captured": "Quân đã bị ăn",
+    "lib.online.pickTable": "Tìm đối thủ hoặc mở bàn ở bên cạnh để bắt đầu.",
+    "lib.online.theirTurn": "Đến lượt đối thủ",
+    "lib.online.white": "Trắng",
+    "lib.online.goNote": "Bàn {n}×{n}, Đen đi trước, Trắng được cộng komi {k}. Chấm điểm theo diện tích; hãy bắt hết quân chết trước khi bỏ lượt. Hai bên liên tiếp bỏ lượt thì ván kết thúc.",
+    "lib.online.boardSize": "Cỡ bàn",
+    "lib.online.oppPassed": "Đối thủ bỏ lượt. Nếu bạn cũng bỏ lượt, ván kết thúc và chấm điểm.",
+    "lib.online.modeAi": "Đánh với máy",
+    "lib.online.modeOnline": "Chơi với người"
   },
   "pages": {
     "home": {
@@ -975,16 +1036,16 @@
       "desc": "Sudoku cỡ lớn 16x16 dùng số 1-9 và chữ A-G, 10 cấp từ dễ đến khó, có ghi chú và gợi ý."
     },
     "chess": {
-      "name": "Cờ vua với máy",
-      "desc": "Chơi cờ vua với máy qua 10 cấp từ dễ đến khó, đủ luật nhập thành, bắt tốt qua đường và phong cấp."
+      "name": "Cờ vua",
+      "desc": "Chơi cờ vua với máy qua 10 cấp, hoặc mời bạn, ghép với người lạ qua mạng. Đủ luật nhập thành, bắt tốt qua đường và phong cấp."
     },
     "xiangqi": {
-      "name": "Cờ tướng với máy",
-      "desc": "Chơi cờ tướng với máy qua 10 cấp từ dễ đến khó, đủ luật chân mã, cản tượng, pháo ăn và hai tướng không đối mặt."
+      "name": "Cờ tướng",
+      "desc": "Chơi cờ tướng với máy qua 10 cấp, hoặc mời bạn, ghép với người lạ qua mạng. Đủ luật chân mã, cản tượng, pháo ăn, hai tướng không đối mặt."
     },
     "go-game": {
-      "name": "Cờ vây với máy",
-      "desc": "Chơi cờ vây với máy trên bàn 5x5, 7x7 và 9x9 qua 10 cấp từ dễ đến khó, tự chấm điểm khi kết thúc."
+      "name": "Cờ vây",
+      "desc": "Chơi cờ vây với máy qua 10 cấp, hoặc mời bạn, ghép với người lạ qua mạng trên bàn 9x9, 13x13, 19x19. Tự chấm điểm khi kết thúc."
     },
     "memory-shapes": {
       "name": "Ghi nhớ hình và màu",
@@ -997,6 +1058,10 @@
       "metaDescription": "Màn hình máy tính ngay trên trình duyệt: quản lý file, Notepad, xem ảnh, PDF, máy tính, lịch, thùng rác. File lưu vào Google Drive của bạn.",
       "h1": "Desktop online",
       "lead": "Màn hình máy tính ngay trên trình duyệt: quản lý file, soạn văn bản, xem ảnh và PDF. File lưu vào Google Drive của bạn."
+    },
+    "co-up": {
+      "name": "Cờ úp",
+      "desc": "Chơi cờ úp: quân úp ngẫu nhiên, đi xong mới lật. Đánh với máy 10 cấp hoặc mời bạn, ghép với người lạ qua mạng."
     }
   },
   "s": {

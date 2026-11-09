@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Question {i}/{n}",
     "lib.game.mmDone": "Done!",
     "lib.game.mmLost": "Out of lives — all tiles are now revealed.",
-    "lib.game.mmNote": "Press Start: the tiles are shown for {s} seconds, then hidden. Remember the shape and colour of each tile, then pick the tile that matches the shape you are shown. More than {l} mistakes fails the level."
+    "lib.game.mmNote": "Press Start: the tiles are shown for {s} seconds, then hidden. Remember the shape and colour of each tile, then pick the tile that matches the shape you are shown. More than {l} mistakes fails the level.",
+    "lib.online.guest": "Guest",
+    "lib.online.connFail": "Couldn't connect to the online play server. Check your connection (or turn off your ad blocker), then click Try again.",
+    "lib.online.tableGone": "The player who opened this table has left. Pick another table or open a new one.",
+    "lib.online.drawDeclined": "Your opponent declined the draw.",
+    "lib.online.opponent": "Opponent",
+    "lib.online.copied": "Link copied. Send it to your friend to play together.",
+    "lib.online.waitingFor": "waiting {n} s",
+    "lib.online.drawAgreed": "Both players agreed to a draw.",
+    "lib.online.draw": "The game is a draw.",
+    "lib.online.oppResigned": "Your opponent resigned — you win!",
+    "lib.online.youResigned": "You resigned.",
+    "lib.online.youWin": "You win!",
+    "lib.online.youLose": "You lose.",
+    "lib.online.connecting": "Connecting to the online play server…",
+    "lib.online.retry": "Try again",
+    "lib.online.quick": "Find an opponent",
+    "lib.online.createPublic": "Open a public table",
+    "lib.online.createPrivate": "Open a private table and invite a friend",
+    "lib.online.modesHint": "Public tables appear in the list so anyone can join. Private tables can only be joined with the invite link.",
+    "lib.online.openTables": "Public tables waiting",
+    "lib.online.join": "Join",
+    "lib.online.noTables": "No tables are waiting yet. Click \"Find an opponent\" or open a new table.",
+    "lib.online.privacy": "Moves travel through a free public MQTT server and are encrypted per table; the server doesn't keep your games. Sign in with Google to save finished games to your Drive.",
+    "lib.online.waitingPublic": "Public table: waiting for someone to join…",
+    "lib.online.waitingPrivate": "Private table: send this link to your friend. The game starts when they open it.",
+    "lib.online.leave": "Leave table",
+    "lib.online.full": "This table already has 2 players. Find another table or open a new one.",
+    "lib.online.backToList": "Back to the table list",
+    "lib.online.you": "You",
+    "lib.online.oppLeft": "left the table",
+    "lib.online.oppOffline": "disconnected",
+    "lib.online.drawOffer": "Your opponent offers a draw.",
+    "lib.online.accept": "Accept",
+    "lib.online.decline": "Decline",
+    "lib.online.drawSent": "Draw offered…",
+    "lib.online.offerDraw": "Offer a draw",
+    "lib.online.resignConfirm": "Click again to resign",
+    "lib.online.resign": "Resign",
+    "lib.online.againSent": "Waiting for your opponent to agree…",
+    "lib.online.againAccept": "Your opponent wants a rematch — Play again",
+    "lib.online.again": "Play again (swap colors)",
+    "lib.online.inviteLink": "Invite link",
+    "lib.online.copy": "Copy link",
+    "lib.online.share": "Share",
+    "lib.online.saved": "Game saved to Google Drive (WFTools/Games folder).",
+    "lib.online.saving": "Saving the game to Google Drive…",
+    "lib.online.saveFail": "Couldn't save the game to Drive yet.",
+    "lib.online.save": "Save game to Google Drive",
+    "lib.game.darkNote": "Dark chess: both Generals start face up; every other piece is shuffled and placed face down. A face-down piece moves like the piece that normally starts on its square (on a Chariot square it moves like a Chariot), then flips over and moves as its real piece from then on. Advisors and Elephants may move anywhere on the board. Checkmate or having no legal move loses.",
+    "lib.game.darkBoard": "Dark chess board",
+    "lib.online.red": "Red",
+    "lib.online.black": "Black",
+    "lib.game.captured": "Captured",
+    "lib.online.pickTable": "Find an opponent or open a table on the side to start.",
+    "lib.online.theirTurn": "Opponent's turn",
+    "lib.online.white": "White",
+    "lib.online.goNote": "{n}×{n} board, Black moves first, White gets komi {k}. Area scoring; capture all dead stones before passing. The game ends when both players pass in a row.",
+    "lib.online.boardSize": "Board size",
+    "lib.online.oppPassed": "Your opponent passed. If you pass too, the game ends and is scored.",
+    "lib.online.modeAi": "Play the computer",
+    "lib.online.modeOnline": "Play online"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Large 16x16 Sudoku using 1-9 and A-G, 10 levels from easy to hard, with notes and hints."
     },
     "chess": {
-      "name": "Chess vs Computer",
-      "desc": "Play chess against the computer across 10 levels from easy to hard, with castling, en passant and promotion."
+      "name": "Chess",
+      "desc": "Play chess against the computer across 10 levels, or online: invite a friend by link or get matched with someone new. Castling, en passant and promotion included."
     },
     "xiangqi": {
-      "name": "Xiangqi vs Computer",
-      "desc": "Play Chinese chess (xiangqi) against the computer across 10 levels, with horse-leg blocking, elephant eye, cannon captures and the flying-general rule."
+      "name": "Chinese Chess (Xiangqi)",
+      "desc": "Play Xiangqi against the computer across 10 levels, or online: invite a friend by link or get matched with someone new. Full rules: horse leg, elephant eye, cannon jumps, flying general."
     },
     "go-game": {
-      "name": "Go vs Computer",
-      "desc": "Play Go against the computer on 5x5, 7x7 and 9x9 boards across 10 levels, with automatic scoring at the end."
+      "name": "Go",
+      "desc": "Play Go against the computer across 10 levels, or online on 9x9, 13x13 and 19x19 boards with a friend or a new opponent. Automatic scoring at the end."
     },
     "memory-shapes": {
       "name": "Shape & Colour Memory",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Online Desktop",
       "desc": "A computer desktop in your browser: file manager, Notepad, image and PDF viewer, calculator, calendar and trash. Files are saved to your Google Drive."
+    },
+    "co-up": {
+      "name": "Dark Chess (Cờ úp)",
+      "desc": "Play Vietnamese dark Xiangqi: pieces start face down and flip after their first move. Play the computer across 10 levels or play online with friends or new opponents."
     }
   },
   "s": {

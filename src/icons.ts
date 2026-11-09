@@ -130,6 +130,7 @@ const PATHS: Record<string, string> = {
   'sudoku-16x16': '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M12 3.5v17M3.5 12h17"/><path d="M7.75 3.5v17M16.25 3.5v17M3.5 7.75h17M3.5 16.25h17" opacity=".5"/>',
   'chess': '<circle cx="12" cy="6.5" r="3"/><path d="M10.2 9.5c0 3-2.7 4-2.7 7.5h9c0-3.5-2.7-4.5-2.7-7.5"/><path d="M6 21h12M7.5 17v4M16.5 17v4"/>',
   'xiangqi': '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6.2"/><path d="M9.5 9.5l5 5M14.5 9.5l-5 5"/>',
+  'co-up': '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6.2"/><path d="M10.2 10.2a1.9 1.9 0 1 1 2.8 1.6c-.6.4-1 .8-1 1.5M12 15.7h.01"/>',
   'go-game': '<path d="M4 8h16M4 16h16M8 4v16M16 4v16"/><circle cx="8" cy="8" r="2.6" fill="currentColor"/><circle cx="16" cy="16" r="2.6" fill="var(--surface,#fff)"/><circle cx="16" cy="8" r="2.6" fill="var(--surface,#fff)"/>',
   'memory-shapes': '<rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.5"/><circle cx="16.5" cy="7.25" r="3.8"/><path d="M7.25 13.5l3.8 6.5H3.45z"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.5" opacity=".5"/><path d="M16.75 15.2v3.2M15.2 16.8h3.2" opacity=".5"/>',
   // bàn phím
