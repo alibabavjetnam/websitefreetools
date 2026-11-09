@@ -9,12 +9,20 @@ import { calcApp, calendarApp, filesApp, imageApp, mountDesktopIcons, nameApps, 
 mountLayout({ activeTool: 'web-desktop' });
 const T = pageText();
 const host = $('#tool-root');
-const local = storage<DeskSettings>('desktop-settings', { theme: 'light', wallpaper: 'dawn', clock24: true });
+const local = storage<DeskSettings>('desktop-settings', { theme: 'light', wallpaper: 'dawn', clock24: true, iconSize: 'medium', sortBy: 'name' });
 
 function sanitize(s: Partial<DeskSettings>): DeskSettings {
   const base = local.get();
   const wall = typeof s.wallpaper === 'string' && (s.wallpaper in WALLPAPERS || /^file:[\w-]+$/.test(s.wallpaper)) ? s.wallpaper : base.wallpaper;
-  return { theme: s.theme === 'dark' ? 'dark' : s.theme === 'light' ? 'light' : base.theme, wallpaper: wall, clock24: typeof s.clock24 === 'boolean' ? s.clock24 : base.clock24 };
+  const size = (v: unknown): DeskSettings['iconSize'] | null => (v === 'small' || v === 'medium' || v === 'large' ? v : null);
+  const sort = (v: unknown): DeskSettings['sortBy'] | null => (v === 'name' || v === 'date' || v === 'size' || v === 'type' ? v : null);
+  return {
+    theme: s.theme === 'dark' ? 'dark' : s.theme === 'light' ? 'light' : base.theme,
+    wallpaper: wall,
+    clock24: typeof s.clock24 === 'boolean' ? s.clock24 : base.clock24,
+    iconSize: size(s.iconSize) ?? size(base.iconSize) ?? 'medium',
+    sortBy: sort(s.sortBy) ?? sort(base.sortBy) ?? 'name',
+  };
 }
 
 /** Cài đặt nằm trong file ẩn ở gốc Desktop trên Drive để dùng chung giữa các máy; luôn có bản sao ở trình duyệt */

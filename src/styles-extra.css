@@ -1259,6 +1259,69 @@ textarea:focus-visible {
 .wd-gate h2 { margin-top: 0; }
 .wd-gate-err { color: var(--danger); min-height: 1em; }
 .wd-loading { padding: 40px; text-align: center; color: var(--muted); }
+
+/* Toàn màn hình: nút góc trên phải màn hình nền + nút ở khay hệ thống */
+.wd { -webkit-touch-callout: none; }
+.wd-fsbtn { position: absolute; top: 8px; right: 8px; z-index: 2; display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 1px solid rgba(255,255,255,.45); border-radius: 9px; background: rgba(15, 25, 45, .38); color: #fff; cursor: pointer; backdrop-filter: blur(6px); box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.wd-fsbtn:hover, .wd-fsbtn:focus-visible { background: rgba(15, 25, 45, .6); outline: none; border-color: #fff; }
+.wd-fsbtn .wd-ico { width: 20px; height: 20px; }
+.wd-icons { padding-right: 54px; }
+.wd-traybtn { display: inline-grid; place-items: center; width: 34px; height: 36px; padding: 0; border: 0; border-radius: 7px; background: none; color: inherit; cursor: pointer; }
+.wd-traybtn:hover, .wd-traybtn:focus-visible { background: var(--wd-hover); outline: none; }
+.wd-traybtn .wd-ico { width: 18px; height: 18px; }
+.wd.is-pseudo-full { position: fixed; inset: 0; z-index: 2147483000; height: auto; border: 0; border-radius: 0; }
+html.wd-noscroll, html.wd-noscroll body { overflow: hidden; }
+
+/* Cỡ biểu tượng màn hình nền */
+.wd-icons[data-size="small"] { grid-template-rows: repeat(auto-fill, 74px); grid-auto-columns: 78px; }
+.wd-icons[data-size="small"] .wd-dicon { font-size: 11.5px; padding: 4px 2px; }
+.wd-icons[data-size="small"] .wd-dicon .wd-ico { width: 30px; height: 30px; padding: 4px; border-radius: 8px; }
+.wd-icons[data-size="small"] .wd-dicon span { max-width: 72px; }
+.wd-icons[data-size="large"] { grid-template-rows: repeat(auto-fill, 118px); grid-auto-columns: 116px; }
+.wd-icons[data-size="large"] .wd-dicon { font-size: 13.5px; }
+.wd-icons[data-size="large"] .wd-dicon .wd-ico { width: 60px; height: 60px; padding: 9px; border-radius: 14px; }
+.wd-icons[data-size="large"] .wd-dicon span { max-width: 108px; }
+
+/* Biểu tượng file: trang giấy gắn ô màu có chữ đại diện (W, E, P, PDF…) */
+.wd-fi { position: relative; display: inline-block; box-sizing: border-box; container-type: size; }
+.wd-fi::before { content: ""; position: absolute; top: 2%; bottom: 2%; left: 20%; right: 8%; background: #fff; border: 1px solid #b9c2cf; border-radius: 2px 26% 2px 2px; box-shadow: inset -1px 1px 0 #e7ebf1; }
+.wd-fi::after { content: ""; position: absolute; top: 2%; right: 8%; width: 26%; height: 22%; background: linear-gradient(225deg, transparent 50%, #dfe5ee 50%); border-radius: 0 0 0 2px; }
+.wd-fi b { position: absolute; left: 4%; bottom: 14%; z-index: 1; display: grid; place-items: center; min-width: 62%; height: 50%; padding: 0 6%; box-sizing: border-box; border-radius: 12%; background: var(--fi, #78909c); color: #fff; font: 700 30cqw/1 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: -.02em; box-shadow: 0 1px 2px rgba(0,0,0,.25); white-space: nowrap; }
+.wd-fi.is-l3 b { font-size: 24cqw; }
+.wd-fi.is-l4 b { font-size: 19cqw; min-width: 78%; }
+.wd-c-word { --fi: #2b579a; } .wd-c-excel { --fi: #1d6f42; } .wd-c-ppt { --fi: #c43e1c; } .wd-c-pdf { --fi: #d93025; }
+.wd-c-text { --fi: #5f6b7a; } .wd-c-md { --fi: #37474f; } .wd-c-code { --fi: #6741d9; } .wd-c-data { --fi: #a16207; }
+.wd-c-image { --fi: #0e8f6e; } .wd-c-audio { --fi: #c2255c; } .wd-c-video { --fi: #7048e8; } .wd-c-archive { --fi: #8d6e63; }
+.wd-c-app { --fi: #455a64; } .wd-c-font { --fi: #3949ab; } .wd-c-other { --fi: #78909c; }
+.wd[data-theme="dark"] .wd-fi::before { background: #eef1f6; border-color: #8995a7; }
+.wd-dicon .wd-fi, .wd-dicon .wd-k-folder { background: none; padding: 0; border-radius: 0; filter: drop-shadow(0 2px 3px rgba(0,0,0,.35)); }
+.wd-files.is-list .wd-fi, .wd-files.is-list .wd-k-folder { width: 22px; height: 22px; }
+.wd-files.is-grid .wd-item .wd-fi, .wd-files.is-grid .wd-item .wd-k-folder { width: 44px; height: 44px; }
+.is-cut > .wd-ico { opacity: .45; }
+.is-cut > span { opacity: .7; }
+
+/* Menu chuột phải */
+.wd-menu { position: absolute; z-index: 100003; min-width: 220px; max-width: min(320px, calc(100% - 8px)); max-height: calc(100% - 8px); overflow: auto; padding: 5px; background: var(--wd-bg); color: var(--wd-ink); border: 1px solid var(--wd-line); border-radius: 10px; box-shadow: 0 12px 36px rgba(10,20,40,.3); outline: none; font-size: 13.5px; }
+.wd-mi { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 32px; padding: 4px 10px 4px 8px; border: 0; border-radius: 6px; background: none; color: inherit; font: inherit; text-align: start; cursor: default; }
+.wd-mi:focus, .wd-mi:hover:not([disabled]) { background: var(--wd-hover); outline: none; }
+.wd-mi[aria-expanded="true"] { background: var(--wd-sel); }
+.wd-mi[disabled] { opacity: .42; }
+.wd-mi.is-strong .wd-mlabel { font-weight: 700; }
+.wd-mi.is-danger .wd-mico { color: #d92d20; }
+.wd-mico { width: 17px; height: 17px; flex: none; color: var(--wd-acc); }
+.wd-mlabel { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wd-mhint { flex: none; color: var(--wd-muted); font-size: 12px; padding-inline-start: 12px; }
+.wd-mhint .wd-mico { width: 14px; height: 14px; color: var(--wd-muted); }
+[dir="rtl"] .wd-mhint .wd-mico { transform: scaleX(-1); }
+.wd-msep { height: 1px; margin: 4px 6px; background: var(--wd-line); }
+@media (pointer: coarse) { .wd-mi { min-height: 42px; } }
+
+/* Hộp Thuộc tính */
+.wd-props-head { display: flex; align-items: center; gap: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--wd-line); word-break: break-word; }
+.wd-props-head .wd-ico { width: 36px; height: 36px; }
+.wd-props { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0; font-size: 13.5px; }
+.wd-props dt { color: var(--wd-muted); }
+.wd-props dd { margin: 0; word-break: break-word; }
 @media (max-width: 640px) {
   .wd { height: clamp(480px, 82vh, 900px); }
   .wd-tb span, .wd-startbtn span, .wd-store span, .wd-task span { display: none; }

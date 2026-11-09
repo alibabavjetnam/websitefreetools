@@ -29,6 +29,8 @@ export interface DesktopFs {
   createFile(parent: string, name: string, data: Blob): Promise<FsNode>;
   writeFile(id: string, data: Blob): Promise<FsNode>;
   rename(id: string, name: string): Promise<FsNode>;
+  /** Chuyển sang thư mục khác (Cắt rồi Dán) */
+  move(id: string, parent: string): Promise<FsNode>;
   /** Đưa vào thùng rác (khôi phục được) */
   trash(id: string): Promise<void>;
   restore(id: string): Promise<void>;
@@ -178,6 +180,14 @@ export class DriveFs implements DesktopFs {
     return toNode(await this.patch(id, { name }));
   }
 
+  async move(id: string, parent: string): Promise<FsNode> {
+    const cur = await this.get(id);
+    if (cur.parent === parent) return cur;
+    if (!/^[\w-]+$/.test(parent) || !/^[\w-]*$/.test(cur.parent)) throw new Error('bad id');
+    const q = `addParents=${parent}${cur.parent ? `&removeParents=${cur.parent}` : ''}`;
+    return toNode(await gfetch<DriveFile>(`${DRIVE}/${encodeURIComponent(id)}?${q}&fields=${FIELDS}`, { method: 'PATCH', body: '{}' }));
+  }
+
   async trash(id: string): Promise<void> {
     await this.patch(id, { trashed: true });
   }
@@ -296,6 +306,11 @@ export class LocalFs implements DesktopFs {
   async rename(id: string, name: string): Promise<FsNode> {
     const r = await this.rec(id);
     return this.put({ ...r, name, modified: Date.now() });
+  }
+
+  async move(id: string, parent: string): Promise<FsNode> {
+    const r = await this.rec(id);
+    return this.put({ ...r, parent, modified: Date.now() });
   }
 
   async trash(id: string): Promise<void> {

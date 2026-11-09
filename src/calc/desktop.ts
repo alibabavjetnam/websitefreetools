@@ -95,3 +95,58 @@ export function monthGrid(year: number, month: number, weekStart: 0 | 1): { date
 }
 
 export const sameDay = (a: Date, b: Date): boolean => a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+
+/* ---------------- Biểu tượng chữ cái theo loại file ---------------- */
+
+export type BadgeCat = 'word' | 'excel' | 'ppt' | 'pdf' | 'text' | 'md' | 'code' | 'data' | 'image' | 'audio' | 'video' | 'archive' | 'app' | 'font' | 'other';
+
+const CAT_EXT: [BadgeCat, string[], string?][] = [
+  ['word', ['doc', 'docx', 'docm', 'dot', 'dotx', 'odt', 'rtf', 'pages'], 'W'],
+  ['excel', ['xls', 'xlsx', 'xlsm', 'xlsb', 'xlt', 'xltx', 'ods', 'csv', 'tsv', 'numbers'], 'E'],
+  ['ppt', ['ppt', 'pptx', 'pptm', 'pps', 'ppsx', 'pot', 'potx', 'odp', 'key'], 'P'],
+  ['pdf', ['pdf'], 'PDF'],
+  ['text', ['txt', 'log', 'ini', 'cfg', 'conf', 'env', 'srt', 'vtt'], 'T'],
+  ['md', ['md', 'markdown'], 'M'],
+  ['data', ['json', 'yml', 'yaml', 'xml', 'sql', 'db', 'sqlite']],
+  ['code', ['js', 'mjs', 'cjs', 'ts', 'tsx', 'jsx', 'py', 'java', 'c', 'cpp', 'h', 'cs', 'go', 'rs', 'php', 'rb', 'sh', 'bat', 'ps1', 'html', 'htm', 'css', 'scss', 'vue', 'kt', 'swift']],
+  ['image', ['png', 'jpg', 'jpeg', 'gif', 'webp', 'bmp', 'svg', 'avif', 'ico', 'heic', 'heif', 'tif', 'tiff', 'psd']],
+  ['audio', ['mp3', 'wav', 'ogg', 'oga', 'm4a', 'flac', 'aac', 'wma', 'opus', 'mid', 'midi']],
+  ['video', ['mp4', 'mov', 'avi', 'mkv', 'webm', 'wmv', 'flv', 'm4v', '3gp']],
+  ['archive', ['zip', 'rar', '7z', 'tar', 'gz', 'tgz', 'bz2', 'xz', 'iso']],
+  ['app', ['exe', 'msi', 'apk', 'dmg', 'deb', 'rpm', 'appimage', 'jar']],
+  ['font', ['ttf', 'otf', 'woff', 'woff2'], 'Aa'],
+];
+const EXT_CAT = new Map<string, [BadgeCat, string | undefined]>();
+for (const [cat, exts, letter] of CAT_EXT) for (const e of exts) EXT_CAT.set(e, [cat, letter]);
+
+/**
+ * Chữ đại diện và nhóm màu cho biểu tượng file: W (Word), E (Excel), P (PowerPoint), PDF, T (văn bản)…
+ * Nhóm không có chữ riêng dùng phần mở rộng viết hoa, tối đa 4 ký tự (PNG, MP3, ZIP).
+ */
+export function fileBadge(name: string): { label: string; cat: BadgeCat } {
+  const ext = splitExt(name)[1].slice(1).toLowerCase();
+  const hit = EXT_CAT.get(ext);
+  if (hit) return { label: hit[1] ?? ext.toUpperCase().slice(0, 4), cat: hit[0] };
+  const clean = ext.replace(/[^\p{L}\p{N}]/gu, '').toUpperCase().slice(0, 4);
+  return { label: clean || '?', cat: 'other' };
+}
+
+/* ---------------- Sắp xếp ---------------- */
+
+export type SortKey = 'name' | 'date' | 'size' | 'type';
+
+interface Sortable { name: string; folder: boolean; size: number; modified: number }
+
+/** Sắp xếp như Windows: thư mục luôn đứng trước; tên so theo ngôn ngữ, số trong tên so theo giá trị (2 < 10) */
+export function sortNodes<T extends Sortable>(nodes: T[], by: SortKey, locale?: string): T[] {
+  const coll = new Intl.Collator(locale, { numeric: true, sensitivity: 'base' });
+  const byName = (a: T, b: T): number => coll.compare(a.name, b.name);
+  const cmp: Record<SortKey, (a: T, b: T) => number> = {
+    name: byName,
+    date: (a, b) => b.modified - a.modified || byName(a, b),
+    size: (a, b) => b.size - a.size || byName(a, b),
+    type: (a, b) => coll.compare(splitExt(a.name)[1], splitExt(b.name)[1]) || byName(a, b),
+  };
+  return [...nodes].sort((a, b) => Number(b.folder) - Number(a.folder) || cmp[by](a, b));
+}
+

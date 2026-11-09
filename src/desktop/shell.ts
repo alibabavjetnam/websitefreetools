@@ -4,7 +4,9 @@
  */
 import { escapeHtml } from '../ui';
 import { localeTag } from '../i18n';
+import type { SortKey } from '../calc/desktop';
 import type { DesktopFs, FsNode } from './fs';
+import { bindContextMenu, closeMenu, type MenuItem } from './menu';
 
 export type Tr = (key: string, fallback?: string) => string;
 
@@ -79,6 +81,7 @@ export class Win {
     this.taskBtn = document.createElement('button');
     this.taskBtn.type = 'button';
     this.taskBtn.className = 'wd-task';
+    this.taskBtn.dataset.win = this.id;
     this.taskBtn.innerHTML = `${svg(opts.icon)}<span></span>`;
     (this.taskBtn.lastElementChild as HTMLElement).textContent = opts.title;
     this.taskBtn.addEventListener('click', () => {
@@ -96,8 +99,13 @@ export class Win {
       if (!(e.target as HTMLElement).closest('button')) this.toggleMax();
     });
     this.drag(bar, 'move');
+    bindContextMenu(desk.root, bar, (t) => (t.closest('button') ? null : desk.winMenu(this)));
     this.drag(el.querySelector('.wd-resize') as HTMLElement, 'resize');
     if (area.width < 640) this.toggleMax();
+  }
+
+  get maximized(): boolean {
+    return this.restoreRect !== null;
   }
 
   setTitle(title: string): void {
@@ -176,7 +184,22 @@ export interface DeskSettings {
   /** Mã hình nền có sẵn, hoặc "file:<id>" cho ảnh trong kho file */
   wallpaper: string;
   clock24: boolean;
+  /** Cỡ biểu tượng trên màn hình nền */
+  iconSize: 'small' | 'medium' | 'large';
+  /** Cách sắp xếp biểu tượng trên màn hình nền */
+  sortBy: SortKey;
 }
+
+/** Bộ nhớ tạm của Cắt / Sao chép */
+export interface Clip {
+  mode: 'copy' | 'cut';
+  node: FsNode;
+}
+
+export const FS_ICON = {
+  enter: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+  exit: '<path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/>',
+};
 
 export const WALLPAPERS: Record<string, string> = {
   dawn: 'linear-gradient(135deg,#1e3c72 0%,#2a5298 45%,#7f9ed6 100%)',
@@ -200,7 +223,11 @@ export class Desktop {
   private z = 10;
   private listeners = new Set<(folder: string) => void>();
   private wallUrl = '';
+  private wallKey = '';
   rootId = '';
+  clip: Clip | null = null;
+  /** Chế độ toàn màn hình giả lập khi trình duyệt không cho (iPhone) */
+  private pseudoFull = false;
 
   constructor(
     host: HTMLElement,
@@ -215,6 +242,7 @@ export class Desktop {
         <div class="wd-screen">
           <div class="wd-icons" role="list"></div>
           <div class="wd-layer"></div>
+          <button type="button" class="wd-fsbtn" data-full></button>
         </div>
         <nav class="wd-start" hidden aria-label="${escapeHtml(T('start', 'Start'))}">
           <div class="wd-start-apps"></div>
@@ -224,6 +252,7 @@ export class Desktop {
           <button type="button" class="wd-startbtn" aria-haspopup="true" aria-expanded="false">${svg('<rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/>')}<span>${escapeHtml(T('start', 'Start'))}</span></button>
           <div class="wd-tasks"></div>
           <span class="wd-store" title="${escapeHtml(fs.kind === 'drive' ? T('storeDriveTip', 'File được lưu trong thư mục WFTools/Desktop của Google Drive') : T('storeLocalTip', 'File chỉ được lưu trong trình duyệt trên máy này'))}">${svg(fs.kind === 'drive' ? '<path d="M7 18a4 4 0 0 1-.6-8 5.5 5.5 0 0 1 10.8-1.3A4.5 4.5 0 0 1 17.5 18Z"/>' : '<rect x="3" y="5" width="18" height="11" rx="1.5"/><path d="M8 20h8M12 16v4"/>')}<span>${escapeHtml(fs.kind === 'drive' ? 'Google Drive' : T('thisDevice', 'Máy này'))}</span></span>
+          <button type="button" class="wd-traybtn" data-full></button>
           <button type="button" class="wd-clock" data-open="calendar"></button>
         </footer>
       </div>`;
@@ -248,6 +277,25 @@ export class Desktop {
       }
     });
     this.clock.addEventListener('click', () => this.app('calendar')?.open(this));
+    this.root.querySelectorAll('.wd-fsbtn,.wd-traybtn').forEach((b) => b.addEventListener('click', () => this.toggleFullscreen()));
+    const onFull = (): void => this.paintFull();
+    document.addEventListener('fullscreenchange', onFull);
+    document.addEventListener('webkitfullscreenchange', onFull);
+    this.root.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.pseudoFull && !this.root.querySelector('.wd-modal,.wd-menu') && this.startMenu.hidden) this.toggleFullscreen();
+      if (e.key === 'F11') {
+        e.preventDefault();
+        this.toggleFullscreen();
+      }
+    });
+    const bar = host.querySelector('.wd-taskbar') as HTMLElement;
+    bindContextMenu(this.root, bar, (t) => {
+      const task = t.closest<HTMLElement>('.wd-task');
+      const w = task && this.windows.find((x) => x.id === task.dataset.win);
+      if (w) return this.winMenu(w);
+      if (t.closest('.wd-startbtn,.wd-clock,.wd-traybtn')) return null;
+      return this.taskbarMenu();
+    });
     this.renderStart();
     this.tick();
     window.setInterval(() => this.tick(), 15_000);
@@ -268,6 +316,11 @@ export class Desktop {
   private applySettings(): void {
     const s = this.settings;
     this.root.dataset.theme = s.theme;
+    this.icons.dataset.size = s.iconSize;
+    this.tick();
+    // Hình nền không đổi thì giữ nguyên, không tải lại ảnh
+    if (s.wallpaper === this.wallKey) return;
+    this.wallKey = s.wallpaper;
     if (this.wallUrl) URL.revokeObjectURL(this.wallUrl);
     this.wallUrl = '';
     if (s.wallpaper.startsWith('file:')) {
@@ -281,7 +334,6 @@ export class Desktop {
     } else {
       this.screen.style.background = WALLPAPERS[s.wallpaper] ?? WALLPAPERS.dawn;
     }
-    this.tick();
   }
 
   private tick(): void {
@@ -307,12 +359,102 @@ export class Desktop {
       this.app(b.dataset.app ?? '')?.open(this);
     });
     const foot = this.startMenu.querySelector('.wd-start-foot') as HTMLElement;
-    foot.innerHTML = `<button type="button" class="wd-start-item" data-full>${svg('<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>')}<span>${escapeHtml(this.T('fullscreen', 'Toàn màn hình'))}</span></button>`;
+    foot.innerHTML = `<button type="button" class="wd-start-item" data-full></button>`;
     foot.querySelector('[data-full]')?.addEventListener('click', () => {
       this.toggleStart(false);
-      if (document.fullscreenElement) void document.exitFullscreen();
-      else void this.root.requestFullscreen?.().catch(() => undefined);
+      this.toggleFullscreen();
     });
+    this.paintFull();
+  }
+
+  /* ---------- Toàn màn hình ---------- */
+
+  isFullscreen(): boolean {
+    const doc = document as Document & { webkitFullscreenElement?: Element | null };
+    return this.pseudoFull || (doc.fullscreenElement ?? doc.webkitFullscreenElement) === this.root;
+  }
+
+  /** Bật/tắt toàn màn hình; trình duyệt không hỗ trợ (iPhone) thì phủ kín cửa sổ trình duyệt */
+  toggleFullscreen(): void {
+    closeMenu();
+    const doc = document as Document & { webkitFullscreenElement?: Element | null; webkitExitFullscreen?: () => void };
+    const el = this.root as HTMLElement & { webkitRequestFullscreen?: () => void };
+    if (this.pseudoFull) {
+      this.pseudoFull = false;
+    } else if (doc.fullscreenElement ?? doc.webkitFullscreenElement) {
+      if (doc.exitFullscreen) void doc.exitFullscreen().catch(() => undefined);
+      else doc.webkitExitFullscreen?.();
+    } else if (el.requestFullscreen && document.fullscreenEnabled !== false) {
+      el.requestFullscreen().catch(() => {
+        this.pseudoFull = true;
+        this.paintFull();
+      });
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    } else {
+      this.pseudoFull = true;
+    }
+    this.paintFull();
+  }
+
+  private paintFull(): void {
+    const on = this.isFullscreen();
+    this.root.classList.toggle('is-pseudo-full', this.pseudoFull);
+    document.documentElement.classList.toggle('wd-noscroll', this.pseudoFull);
+    const label = on ? this.T('exitFullscreen', 'Thoát toàn màn hình') : this.T('fullscreen', 'Toàn màn hình');
+    this.root.querySelectorAll<HTMLElement>('[data-full]').forEach((b) => {
+      if (b.classList.contains('wd-start-item')) b.innerHTML = `${svg(on ? FS_ICON.exit : FS_ICON.enter)}<span>${escapeHtml(label)}</span>`;
+      else {
+        b.innerHTML = svg(on ? FS_ICON.exit : FS_ICON.enter);
+        b.title = label;
+        b.setAttribute('aria-label', label);
+        b.setAttribute('aria-pressed', String(on));
+      }
+    });
+  }
+
+  /* ---------- Menu chuột phải dùng chung ---------- */
+
+  fullscreenItem(): MenuItem {
+    const on = this.isFullscreen();
+    return { label: on ? this.T('exitFullscreen', 'Thoát toàn màn hình') : this.T('fullscreen', 'Toàn màn hình'), icon: on ? FS_ICON.exit : FS_ICON.enter, hint: 'F11', run: () => this.toggleFullscreen() };
+  }
+
+  winMenu(w: Win): MenuItem[] {
+    const T = this.T;
+    const min = w.el.hidden === true;
+    return [
+      { label: T('restore', 'Khôi phục'), icon: '<rect x="5" y="8" width="11" height="11" rx="1"/><path d="M8 8V5h11v11h-3"/>', disabled: !min && !w.maximized, run: () => (min ? w.focus() : w.toggleMax()) },
+      { label: T('minimize', 'Thu nhỏ'), icon: '<path d="M6 17h12"/>', disabled: min, run: () => w.minimize() },
+      { label: T('maximize', 'Phóng to'), icon: '<rect x="6" y="6" width="12" height="12" rx="1"/>', disabled: w.maximized && !min, run: () => {
+        w.focus();
+        if (!w.maximized) w.toggleMax();
+      } },
+      { sep: true },
+      { label: T('close', 'Đóng'), icon: '<path d="M7 7l10 10M17 7 7 17"/>', strong: true, run: () => void w.close() },
+    ];
+  }
+
+  private taskbarMenu(): MenuItem[] {
+    const T = this.T;
+    return [
+      { label: T('showDesktop', 'Hiện màn hình nền'), icon: '<rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8"/>', disabled: !this.windows.some((w) => !w.el.hidden), run: () => this.showDesktop() },
+      { label: T('closeAll', 'Đóng tất cả cửa sổ'), icon: '<path d="M7 7l10 10M17 7 7 17"/>', disabled: !this.windows.length, run: () => void this.closeAll() },
+      { sep: true },
+      this.fullscreenItem(),
+      { label: T('appSettings', 'Cài đặt'), icon: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/>', run: () => this.app('settings')?.open(this) },
+    ];
+  }
+
+  showDesktop(): void {
+    for (const w of this.windows) w.el.hidden = true;
+    this.bringToFront(null);
+  }
+
+  /** Đặt bộ nhớ tạm Cắt/Sao chép và báo cho các cửa sổ vẽ lại dấu "đang cắt" */
+  setClip(c: Clip | null): void {
+    this.clip = c;
+    this.changed('clip');
   }
 
   toggleStart(show: boolean = this.startMenu.hidden === true): void {
@@ -454,6 +596,22 @@ export class Desktop {
             return;
           }
           done(v);
+        });
+      },
+    );
+  }
+
+  /** Hộp thông tin dạng bảng (Thuộc tính) */
+  async info(title: string, icon: string, rows: [string, string][]): Promise<void> {
+    await this.modal(
+      `<div class="wd-props-head">${icon}<strong>${escapeHtml(title)}</strong></div>
+       <dl class="wd-props">${rows.map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join('')}</dl>
+       <div class="wd-dactions"><button type="submit" class="btn btn-sm btn-primary">${escapeHtml(this.T('ok', 'OK'))}</button></div>`,
+      (box, done) => {
+        (box.querySelector('[type="submit"]') as HTMLButtonElement).focus();
+        box.addEventListener('submit', (e) => {
+          e.preventDefault();
+          done('ok');
         });
       },
     );
