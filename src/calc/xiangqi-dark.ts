@@ -168,13 +168,15 @@ export class DarkPosition {
           for (const [dr, dc] of ORTH) if (inPalace(r + dr, c + dc)) add(sq, r + dr, c + dc);
           break;
         case A:
-          for (const [dr, dc] of DIAG1) add(sq, r + dr, c + dc);
+          // Sĩ còn úp đi như sĩ thường (trong cung); chỉ sĩ đã lật mới đi khắp bàn
+          for (const [dr, dc] of DIAG1) if (!this.hidden[sq] || inPalace(r + dr, c + dc)) add(sq, r + dr, c + dc);
           break;
         case E:
           for (const [dr, dc] of DIAG1) {
             const rr = r + 2 * dr, cc = c + 2 * dc;
             if (rr < 0 || rr >= ROWS || cc < 0 || cc >= COLS) continue;
-            if (!b[(r + dr) * 9 + c + dc]) add(sq, rr, cc);
+            // Tượng còn úp không qua sông; tượng đã lật đi khắp bàn
+            if (!b[(r + dr) * 9 + c + dc] && (!this.hidden[sq] || ownSide(rr))) add(sq, rr, cc);
           }
           break;
         case H:
