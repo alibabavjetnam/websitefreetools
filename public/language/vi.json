@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Chơi với người",
     "lib.game.fullscreen": "Toàn màn hình",
     "lib.game.exitFullscreen": "Thoát toàn màn hình",
-    "share.label": "Chia sẻ"
+    "share.label": "Chia sẻ",
+    "lib.arcade.aiNoMove": "Máy không còn chỗ đặt, đến lượt bạn.",
+    "lib.arcade.autoFinish": "Tự đưa bài lên",
+    "lib.arcade.best": "Kỷ lục: {n}",
+    "lib.arcade.blocksBoard": "Bàn xếp gạch",
+    "lib.arcade.breakoutBoard": "Sân phá gạch",
+    "lib.arcade.dealRow": "Chia thêm bài",
+    "lib.arcade.down": "Xuống",
+    "lib.arcade.drawN": "Rút {n} lá",
+    "lib.arcade.drop": "Thả nhanh",
+    "lib.arcade.flagMode": "Cắm cờ",
+    "lib.arcade.freeCells": "Ô trống: {n}",
+    "lib.arcade.left": "Sang trái",
+    "lib.arcade.length": "Độ dài: {n}/{t}",
+    "lib.arcade.lines": "Hàng: {n}/{t}",
+    "lib.arcade.minesLeft": "Mìn: {n}",
+    "lib.arcade.moves": "Nước đi: {n}",
+    "lib.arcade.movesLeft": "Còn {n} lượt",
+    "lib.arcade.mustPass": "Bạn không còn chỗ đặt — mất lượt.",
+    "lib.arcade.next": "Khối tiếp theo",
+    "lib.arcade.noHint": "Không còn nước đi có ích. Thử rút bài, chia thêm hoặc chơi lại.",
+    "lib.arcade.note.2048": "Dùng phím mũi tên hoặc vuốt để trượt mọi ô. Hai ô cùng số chạm nhau sẽ gộp thành một. Tạo được ô bằng mục tiêu là qua cấp; hết chỗ trượt là thua.",
+    "lib.arcade.note.blocks": "Xoay và xếp các khối rơi để lấp kín hàng ngang; hàng đầy sẽ biến mất. Phím ← → để di chuyển, ↑ để xoay, ↓ rơi nhanh, phím cách thả thẳng xuống, P để tạm dừng. Xoá đủ số hàng là qua cấp; khối chạm đỉnh là thua.",
+    "lib.arcade.note.breakout": "Di chuột, kéo ngón tay trên sân hoặc dùng phím ← → để điều khiển thanh đỡ, giữ cho bóng không rơi. Phá hết gạch là qua cấp; gạch viền đậm cần đánh hai lần. Bạn có 3 mạng. Phím cách để bắt đầu hoặc tạm dừng.",
+    "lib.arcade.note.connect4": "Bạn cầm quân đỏ, đi trước. Bấm một cột để thả quân, quân rơi xuống ô thấp nhất còn trống. Ai có 4 quân liên tiếp theo hàng ngang, dọc hoặc chéo trước là thắng.",
+    "lib.arcade.note.freecell": "Mọi lá đều ngửa. Đưa hết 52 lá lên 4 ô đích theo chất từ A đến K. Trên bàn xếp giảm dần, xen kẽ đỏ đen. Các ô trống ở góc trái giữ tạm mỗi ô một lá; số lá chuyển được một lần phụ thuộc số ô trống và cột trống. Cấp cao có ít ô trống hơn.",
+    "lib.arcade.note.gomoku": "Bạn cầm quân X, đi trước; máy cầm O. Hai bên lần lượt đặt quân vào ô trống trên bàn 15×15. Ai có 5 quân liên tiếp theo hàng ngang, dọc hoặc chéo trước là thắng.",
+    "lib.arcade.note.klondike": "Xếp hết 52 lá lên 4 ô đích theo từng chất, từ A đến K. Trên bàn, xếp giảm dần và xen kẽ đỏ đen; chỉ K mới đặt vào cột trống. Bấm chồng úp góc trái để rút bài. Bấm một lá rồi bấm chỗ muốn đặt, hoặc bấm lá đó lần nữa để tự đưa đến chỗ hợp lệ. Cấp 1–5 rút 1 lá, cấp 6–10 rút 3 lá.",
+    "lib.arcade.note.match3": "Đổi chỗ hai viên kề nhau (bấm lần lượt hoặc vuốt) để tạo hàng từ 3 viên cùng loại trở lên; hàng đó nổ và các viên phía trên rơi xuống. Nổ dây chuyền được nhân điểm. Đạt điểm mục tiêu trước khi hết lượt là qua cấp.",
+    "lib.arcade.note.minesweeper": "Bấm một ô để mở. Số trên ô cho biết có bao nhiêu mìn ở 8 ô xung quanh. Cắm cờ lên ô nghi có mìn bằng chuột phải, nhấn giữ hoặc bật chế độ Cắm cờ. Bấm vào ô số đã đủ cờ để mở nhanh các ô còn lại. Mở hết ô không có mìn là thắng.",
+    "lib.arcade.note.reversi": "Bạn cầm quân Đen, đi trước. Đặt quân sao cho kẹp được một hay nhiều quân Trắng giữa quân mới và quân Đen có sẵn (ngang, dọc, chéo); các quân bị kẹp đổi sang màu của bạn. Không có chỗ đặt hợp lệ thì mất lượt. Hết bàn, ai nhiều quân hơn thắng.",
+    "lib.arcade.note.snake": "Điều khiển rắn bằng phím mũi tên, WASD, nút bên dưới hoặc vuốt. Ăn mồi đỏ để dài ra; đạt đủ độ dài là qua cấp. Từ cấp 3 đâm vào tường là thua; cấp cao có thêm chướng ngại. Đừng cắn vào thân mình.",
+    "lib.arcade.note.spider": "Xếp mỗi chất thành một dãy từ K xuống A trên bàn; dãy đủ 13 lá sẽ tự được gỡ đi. Lá nào cũng đặt được lên lá lớn hơn 1, nhưng chỉ dãy cùng chất mới kéo đi cùng nhau. Hết nước thì bấm Chia thêm bài (mọi cột phải có bài). Cấp 1–3 một chất, 4–7 hai chất, 8–10 bốn chất.",
+    "lib.arcade.pause": "Tạm dừng",
+    "lib.arcade.paused": "Đang tạm dừng",
+    "lib.arcade.right": "Sang phải",
+    "lib.arcade.rotate": "Xoay",
+    "lib.arcade.score": "Điểm: {n}",
+    "lib.arcade.shuffled": "Hết nước đi — đã xáo lại bàn.",
+    "lib.arcade.snakeBoard": "Bàn rắn săn mồi",
+    "lib.arcade.suitsN": "{n} chất",
+    "lib.arcade.target": "Mục tiêu: {n}",
+    "lib.arcade.up": "Lên",
+    "lib.arcade.youVsAi": "Bạn {a} – Máy {b}",
+    "lib.arcade.noHintFc": "Không còn nước đi có ích. Thử đi lại vài nước hoặc chơi lại."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Game giải trí",
-      "desc": "Vòng quay may mắn, quay số ngẫu nhiên, bốc thăm và các trò chơi trí tuệ: Sudoku, cờ vua, cờ tướng, cờ vây, ghi nhớ hình."
+      "desc": "Vòng quay may mắn, quay số ngẫu nhiên và các trò chơi trên trình duyệt: Sudoku, cờ vua, cờ tướng, cờ caro, 2048, dò mìn, xếp gạch, rắn săn mồi, xếp bài, phá gạch."
     }
   },
   "tools": {
@@ -1065,6 +1109,54 @@
     "co-up": {
       "name": "Cờ úp",
       "desc": "Chơi cờ úp: quân úp ngẫu nhiên, đi xong mới lật. Đánh với máy 10 cấp hoặc mời bạn, ghép với người lạ qua mạng."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Trượt và gộp các ô số giống nhau để tạo ô 2048; 10 cấp từ mục tiêu 64 đến 8192, có đi lại."
+    },
+    "minesweeper": {
+      "name": "Dò mìn",
+      "desc": "Trò dò mìn cổ điển: mở ô, cắm cờ, đoán vị trí mìn qua các con số; 10 cấp từ bàn 8x8 đến 18x18, chơi được trên điện thoại."
+    },
+    "block-puzzle": {
+      "name": "Xếp gạch",
+      "desc": "Xoay và xếp các khối gạch rơi để lấp kín hàng; 10 cấp tốc độ tăng dần, chơi bằng bàn phím hoặc nút cảm ứng."
+    },
+    "snake": {
+      "name": "Rắn săn mồi",
+      "desc": "Điều khiển rắn ăn mồi để dài ra, tránh tường và thân mình; 10 cấp tăng tốc, có chướng ngại."
+    },
+    "solitaire": {
+      "name": "Xếp bài Solitaire",
+      "desc": "Solitaire Klondike cổ điển: xếp bài xen màu, đưa lên ô đích từ A đến K; rút 1 hoặc 3 lá, có đi lại và gợi ý."
+    },
+    "spider-solitaire": {
+      "name": "Xếp bài Nhện (Spider)",
+      "desc": "Spider Solitaire 1, 2 và 4 chất: xếp dãy K đến A cùng chất để gỡ khỏi bàn; 10 cấp, có đi lại và gợi ý."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Xếp bài FreeCell: mọi lá đều ngửa, dùng các ô trống để sắp bài lên ô đích; 10 cấp với số ô trống giảm dần."
+    },
+    "gomoku": {
+      "name": "Cờ caro",
+      "desc": "Chơi cờ caro 5 quân liên tiếp với máy trên bàn 15x15, 10 cấp từ dễ đến khó, có đi lại."
+    },
+    "reversi": {
+      "name": "Cờ lật (Reversi)",
+      "desc": "Kẹp quân đối thủ để lật thành màu của mình; chơi Reversi 8x8 với máy qua 10 cấp."
+    },
+    "connect-four": {
+      "name": "Nối 4",
+      "desc": "Thả quân vào cột, nối 4 quân liên tiếp ngang, dọc hoặc chéo trước máy; 10 cấp từ dễ đến khó."
+    },
+    "match-3": {
+      "name": "Ghép 3 viên kẹo",
+      "desc": "Đổi chỗ các viên kẹo để ghép 3 viên cùng loại, nổ dây chuyền ghi điểm; 10 cấp có mục tiêu điểm và số lượt."
+    },
+    "brick-breaker": {
+      "name": "Phá gạch",
+      "desc": "Điều khiển thanh đỡ đánh bóng phá hết gạch; 10 màn bố cục khác nhau, chơi bằng chuột, chạm hoặc phím."
     }
   },
   "s": {

@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Onye mmegide gafere. Ọ bụrụ na i gafekwa, egwuregwu ga-agwụ a ga-agụkọ ya.",
     "lib.online.modeAi": "Gwuo megide kọmputa",
     "lib.online.modeOnline": "Gwuo n'ịntanetị",
-    "share.label": "Kesaa"
+    "share.label": "Kesaa",
+    "lib.arcade.aiNoMove": "Kọmputa enweghị mmegharị ziri ezi — ọ bụ oge gị.",
+    "lib.arcade.autoFinish": "Mechaa na-akpaghị aka",
+    "lib.arcade.best": "Ndekọ kacha mma: {n}",
+    "lib.arcade.blocksBoard": "Bọọdụ ngọngọ na-ada ada",
+    "lib.arcade.breakoutBoard": "Ogige iwa brik",
+    "lib.arcade.dealRow": "Kesaa ahịrị ọhụrụ",
+    "lib.arcade.down": "Ala",
+    "lib.arcade.drawN": "Were {n}",
+    "lib.arcade.drop": "Tụpụ ozugbo",
+    "lib.arcade.flagMode": "Ọnọdụ ọkọlọtọ",
+    "lib.arcade.freeCells": "Igbe efu: {n}",
+    "lib.arcade.left": "Aka ekpe",
+    "lib.arcade.length": "Ogologo: {n}/{t}",
+    "lib.arcade.lines": "Ahịrị: {n}/{t}",
+    "lib.arcade.minesLeft": "Bọmbụ: {n}",
+    "lib.arcade.moves": "Mmegharị: {n}",
+    "lib.arcade.movesLeft": "Mmegharị {n} fọdụrụ",
+    "lib.arcade.mustPass": "Ị nweghị mmegharị ziri ezi — ị gafere oge gị.",
+    "lib.arcade.next": "Iberibe na-esote",
+    "lib.arcade.noHint": "Ọ dịghị mmegharị bara uru fọdụrụ. Were kaadị, kesaa ahịrị ọhụrụ ma ọ bụ malite ọzọ.",
+    "lib.arcade.note.2048": "Jiri igodo akụ ma ọ bụ swaịp iji bugharịa taịlị niile. Taịlị abụọ nwere otu nọmba na-ejikọ ọnụ mgbe ha metụrụ onwe ha. Mee taịlị hà nhata ebumnuche iji gafee ọkwa ahụ; ọ bụrụ na ọ dịghị taịlị nwere ike ịkpali, a meriri gị.",
+    "lib.arcade.note.blocks": "Tụgharịa ma tọọ iberibe na-ada ada iji mejupụta ahịrị kwụ ọtọ n'akụkụ; ahịrị jupụtara na-apụ n'anya. ← → bugharịa, ↑ tụgharịa, ↓ gbadata ngwa ngwa, Oghere na-atụpụ ozugbo, P kwụsịtụ. Kpochapụ ọnụ ọgụgụ ahịrị achọrọ iji gafee ọkwa ahụ; ọ bụrụ na iberibe eruo n'elu, a meriri gị.",
+    "lib.arcade.note.breakout": "Bugharịa òké, dọkpụrụ mkpịsị aka gị n'ogige ma ọ bụ jiri ← → duzie paddụ ma debe bọọlụ n'egwuregwu. Waa brik niile iji gafee ọkwa ahụ; brik nwere oke ọkpụrụkpụ chọrọ iti ugboro abụọ. I nwere ndụ 3. Oghere na-amalite ma ọ bụ kwụsịtụ.",
+    "lib.arcade.note.connect4": "Ị na-egwu uhie ma ị na-ebu ụzọ. Pịa kọlụm iji tụpụ diski; ọ na-ada n'ebe efu kacha ala. Onye buru ụzọ dokwasị diski 4 n'ahịrị n'akụkụ, kwụ ọtọ ma ọ bụ n'akụkụ akụkụ na-emeri.",
+    "lib.arcade.note.freecell": "Kaadị niile ghe oghe. Bugharịa kaadị 52 niile gaa na ntọala 4 dịka ụdị ha si dị, site na A ruo K. N'elu tebụl, wuo na-agbadata na-agbanwe agba. Igbe efu ọ bụla dị n'elu aka ekpe na-ejide otu kaadị; ọnụ ọgụgụ kaadị ị nwere ike ibugharị otu mgbe dabere na igbe efu na kọlụm efu. Ọkwa ndị dị elu nwere igbe ole na ole.",
+    "lib.arcade.note.gomoku": "Ị na-egwu X ma ị na-ebu ụzọ; kọmputa na-egwu O. Unu na-agbanwe na-etinye akara n'ebe efu na bọọdụ 15×15. Onye buru ụzọ nweta 5 n'ahịrị n'akụkụ, kwụ ọtọ ma ọ bụ n'akụkụ akụkụ na-emeri.",
+    "lib.arcade.note.klondike": "Bugharịa kaadị 52 niile gaa na ntọala 4 dịka ụdị ha si dị, site na A ruo K. N'elu tebụl, wuo na-agbadata na-agbanwe agba; naanị K nwere ike ịbanye na kọlụm efu. Pịa ikpo kaadị chere ihu n'ala n'elu aka ekpe iji were kaadị. Pịa kaadị wee pịa ebe ị chọrọ itinye ya, ma ọ bụ pịa ya ọzọ ka ọ gaa n'onwe ya n'ebe ziri ezi. Ọkwa 1–5: were 1; ọkwa 6–10: were 3.",
+    "lib.arcade.note.match3": "Gbanwee ebe iberibe abụọ nọ n'akụkụ ibe ha (pịa otu wee pịa nke ọzọ, ma ọ bụ swaịp) iji mee ahịrị nke 3 ma ọ bụ karịa yiri ibe ha; ahịrị ahụ na-agbawa, iberibe dị n'elu na-adakwa. Mmeghachi omume yinye na-amụba akara gị. Ruo akara ebumnuche tupu mmegharị agwụ.",
+    "lib.arcade.note.minesweeper": "Pịa igbe iji meghee ya. Nọmba na-egosi ole bọmbụ dị n'igbe 8 gbara ya gburugburu. Tinye akara na bọmbụ ị na-enyo enyo site na ịpị aka nri, ịpị ogologo oge ma ọ bụ ọnọdụ ọkọlọtọ. Pịa nọmba nwere ọkọlọtọ zuru ezu gburugburu ya iji meghee ndị fọdụrụ ngwa ngwa. Meghee igbe niile na-enweghị bọmbụ iji merie.",
+    "lib.arcade.note.reversi": "Ị na-egwu oji ma ị na-ebu ụzọ. Tọọ diski ka o wee jide otu diski ọcha ma ọ bụ karịa n'etiti ya na diski oji ọzọ (n'akụkụ, kwụ ọtọ ma ọ bụ n'akụkụ akụkụ); diski ejidere na-atụgharị gaa n'agba gị. Ọ bụrụ na ị nweghị mmegharị ziri ezi, ị gafere oge gị. Mgbe bọọdụ jupụtara, onye nwere diski karịrị na-emeri.",
+    "lib.arcade.note.snake": "Duzie agwọ ahụ site na igodo akụ, WASD, bọtịnụ ndị dị n'okpuru ma ọ bụ site na swaịp. Rie nri uhie iji too; ruo ogologo achọrọ iji gafee ọkwa ahụ. Site na ọkwa 3, ịkụ mgbidi na-akwụsị egwuregwu; ọkwa ndị dị elu nwere ihe mgbochi. Akụla ọdụ gị.",
+    "lib.arcade.note.spider": "N'elu tebụl, wuo ụdị ọ bụla n'usoro site na K gbadaa ruo A; usoro zuru ezu nke kaadị 13 na-apụ na-akpaghị aka. Kaadị ọ bụla nwere ike ịga n'elu kaadị dị elu otu ọkwa, mana naanị usoro otu ụdị na-aga ọnụ. Ọ bụrụ na ị rapaara, pịa Kesaa ahịrị ọhụrụ (kọlụm ọ bụla ga-enwerịrị kaadị). Ọkwa 1–3: otu ụdị; 4–7: abụọ; 8–10: anọ.",
+    "lib.arcade.pause": "Kwụsịtụ",
+    "lib.arcade.paused": "Akwụsịtụrụ",
+    "lib.arcade.right": "Aka nri",
+    "lib.arcade.rotate": "Tụgharịa",
+    "lib.arcade.score": "Akara: {n}",
+    "lib.arcade.shuffled": "Mmegharị agwụla — a gwakọtara bọọdụ ọzọ.",
+    "lib.arcade.snakeBoard": "Ogige agwọ",
+    "lib.arcade.suitsN": "Ụdị {n}",
+    "lib.arcade.target": "Ebumnuche: {n}",
+    "lib.arcade.up": "Elu",
+    "lib.arcade.youVsAi": "Gị {a} – Kọmputa {b}",
+    "lib.arcade.noHintFc": "Ọ dịghị mmegharị bara uru fọdụrụ. Kagbuo mmegharị ole na ole ma ọ bụ malite ọzọ."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Ntụrụndụ na Egwuregwu",
-      "desc": "Ụbụrụ ọnụ ọgụ mmeri, ngwa ọnụọgụ enweghị usoro, ịdọta onyinye na egwuregwu na-atọ ụtọ."
+      "desc": "Wiil ọdịmma, nọmba enweghị usoro na egwuregwu nchọgharị: Sudoku, chess, chess ndị China, Gomoku, 2048, ịchọ bọmbụ, ngọngọ na-ada ada, agwọ, solitaire na onye na-awa brik."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi zoro ezo",
       "desc": "Gwuo Xiangqi zoro ezo nke Vietnam: iberibe na-amalite n'ihu ala ma a na-atụgharị ha mgbe mmegharị mbụ gasịrị. Megide kọmputa n'ọkwa 10 ma ọ bụ n'ịntanetị ya na ndị enyi na ndị mmegide ọhụrụ."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Swaịp ma jikọta nọmba yiri ibe ha ruo mgbe ị nwetara taịlị 2048; ọkwa 10 nwere ebumnuche site na 64 ruo 8192, ya na nkagbu."
+    },
+    "minesweeper": {
+      "name": "Ịchọ bọmbụ",
+      "desc": "Egwuregwu ịchọ bọmbụ ochie: meghee igbe, tinye ọkọlọtọ ma chọpụta site na nọmba ebe bọmbụ dị; ọkwa 10 site na 8x8 ruo 18x18, na-arụ ọrụ na ekwentị."
+    },
+    "block-puzzle": {
+      "name": "Ngọngọ na-ada ada",
+      "desc": "Tụgharịa ma kpokọta ngọngọ na-ada ada iji kpochapụ ahịrị; ọkwa 10 na-agbawanye ọsọ, jiri ahụigodo ma ọ bụ bọtịnụ mmetụ."
+    },
+    "snake": {
+      "name": "Agwọ",
+      "desc": "Duzie agwọ ka o rie ma too n'akụghị mgbidi ma ọ bụ ọdụ ya; ọkwa 10 na-agba ọsọ karịa nwere ihe mgbochi."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klondike Solitaire ochie: wuo na-agbadata na-agbanwe agba ma bugharịa kaadị gaa na ntọala site na A ruo K; were 1 ma ọ bụ 3, ya na nkagbu na ndụmọdụ."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Ududo",
+      "desc": "Ududo nwere ụdị 1, 2 na 4: wuo usoro otu ụdị site na K ruo A iji wepụ ha na tebụl; ọkwa 10 nwere nkagbu na ndụmọdụ."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: kaadị niile ghe oghe; jiri igbe efu bugharịa kaadị gaa na ntọala; ọkwa 10 nwere igbe na-ebelata."
+    },
+    "gomoku": {
+      "name": "Gomoku (ise n'ahịrị)",
+      "desc": "Gwuo Gomoku, ise n'ahịrị, megide kọmputa na bọọdụ 15x15; ọkwa 10 site na mfe ruo isi ike, ya na nkagbu."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Jide diski onye mmegide gị ka ha tụgharịa gaa n'agba gị; gwuo Reversi 8x8 megide kọmputa n'ọkwa 10."
+    },
+    "connect-four": {
+      "name": "Anọ n'ahịrị",
+      "desc": "Tụpụ diski na kọlụm ma dokwasị 4 n'akụkụ, kwụ ọtọ ma ọ bụ n'akụkụ akụkụ tupu kọmputa; ọkwa 10 site na mfe ruo isi ike."
+    },
+    "match-3": {
+      "name": "Jikọta 3",
+      "desc": "Gbanwee swiit iji jikọta 3 ma ọ bụ karịa yiri ibe ha ma kpalite mmeghachi omume yinye; ọkwa 10 nwere akara ebumnuche na mmegharị nwere oke."
+    },
+    "brick-breaker": {
+      "name": "Onye na-awa brik",
+      "desc": "Duzie paddụ ma mee ka bọọlụ wụgharịa iji waa brik niile; nkebi 10 nwere nhazi dị iche iche, jiri òké, mmetụ ma ọ bụ igodo."
     }
   },
   "s": {

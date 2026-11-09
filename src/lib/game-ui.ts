@@ -124,7 +124,7 @@ export function fullscreenButton(): void {
   bar.classList.add('has-fs');
   // Thanh trạng thái (chứa nút toàn màn hình) rộng đúng bằng bàn cờ, nên nút nằm ngay phía trên, góc phải bàn cờ
   const col = bar.parentElement as HTMLElement;
-  const board = col.querySelector<HTMLElement>('.chess-board, .xq-board, .go-board, .sudoku, .mm-grid');
+  const board = col.querySelector<HTMLElement>('.chess-board, .xq-board, .go-board, .sudoku, .mm-grid, .gboard');
   if (board) {
     const fit = (): void => {
       const b = board.getBoundingClientRect(), c = col.getBoundingClientRect();

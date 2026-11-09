@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Abokin hamayya ya wuce. Idan kai ma ka wuce, wasan zai ƙare a ƙidaya.",
     "lib.online.modeAi": "Yi wasa da kwamfuta",
     "lib.online.modeOnline": "Yi wasa a kan layi",
-    "share.label": "Raba"
+    "share.label": "Raba",
+    "lib.arcade.aiNoMove": "Kwamfuta ba ta da motsi mai inganci — lokacinka ne.",
+    "lib.arcade.autoFinish": "Kammala kai tsaye",
+    "lib.arcade.best": "Mafi kyau: {n}",
+    "lib.arcade.blocksBoard": "Allon tubalan da ke faɗuwa",
+    "lib.arcade.breakoutBoard": "Filin fasa bulo",
+    "lib.arcade.dealRow": "Raba sabon jere",
+    "lib.arcade.down": "Ƙasa",
+    "lib.arcade.drawN": "Ɗauki {n}",
+    "lib.arcade.drop": "Jefa nan take",
+    "lib.arcade.flagMode": "Yanayin tuta",
+    "lib.arcade.freeCells": "Ƙofofi marasa komai: {n}",
+    "lib.arcade.left": "Hagu",
+    "lib.arcade.length": "Tsawo: {n}/{t}",
+    "lib.arcade.lines": "Layuka: {n}/{t}",
+    "lib.arcade.minesLeft": "Nakiyoyi: {n}",
+    "lib.arcade.moves": "Motsi: {n}",
+    "lib.arcade.movesLeft": "Saura motsi {n}",
+    "lib.arcade.mustPass": "Ba ka da motsi mai inganci — ka tsallake lokacinka.",
+    "lib.arcade.next": "Guda masu zuwa",
+    "lib.arcade.noHint": "Babu sauran motsi mai amfani. Ɗauki kati, raba sabon jere ko sake farawa.",
+    "lib.arcade.note.2048": "Yi amfani da maɓallan kibiya ko ka goge yatsa don matsar da dukkan tayal. Tayal biyu masu lamba ɗaya suna haɗuwa idan sun taɓa juna. Yi tayal da ya yi daidai da manufa don wuce matakin; idan babu tayal da zai iya motsawa, ka yi rashin nasara.",
+    "lib.arcade.note.blocks": "Juya kuma ka ajiye guda masu faɗuwa don cike layukan kwance; layukan da suka cika suna ɓacewa. ← → matsawa, ↑ juyawa, ↓ sauka da sauri, Sarari yana jefawa nan take, P tsayawa. Share adadin layukan da ake buƙata don wuce matakin; idan guda sun kai sama, ka yi rashin nasara.",
+    "lib.arcade.note.breakout": "Matsar da linzami, ja yatsanka a kan filin ko yi amfani da ← → don jagorantar allo da kiyaye ƙwallo a wasa. Fasa dukkan bulo don wuce matakin; bulo masu kauri a gefe suna buƙatar bugawa sau biyu. Kana da rayuka 3. Sarari yana farawa ko tsayarwa.",
+    "lib.arcade.note.connect4": "Kana wasa da ja kuma kai ne ka fara. Taɓa ginshiƙi don jefa faifai; yana faɗuwa zuwa wurin da babu komai mafi ƙasa. Wanda ya fara jera faifai 4 a kwance, a tsaye ko a karkace shi ne ya ci nasara.",
+    "lib.arcade.note.freecell": "Dukkan katunan a buɗe suke. Matsar da dukkan katunan 52 zuwa tushe 4 bisa nau'i, daga A zuwa K. A kan tebur, jera ƙasa da launuka masu musanya. Kowace ƙofa marar komai a saman hagu tana riƙe kati ɗaya; yawan katunan da za ka iya matsarwa lokaci ɗaya ya dogara da ƙofofi marasa komai da ginshiƙai marasa komai. Matakai masu girma suna da ƙofofi kaɗan.",
+    "lib.arcade.note.gomoku": "Kana wasa da X kuma kai ne ka fara; kwamfuta tana wasa da O. Ku riƙa sanya alama a wurin da babu komai a allon 15×15. Wanda ya fara samun 5 a jere a kwance, a tsaye ko a karkace shi ne ya ci nasara.",
+    "lib.arcade.note.klondike": "Matsar da dukkan katunan 52 zuwa tushe 4 bisa nau'i, daga A zuwa K. A kan tebur, jera ƙasa da launuka masu musanya; K kaɗai ne zai iya shiga ginshiƙi marar komai. Taɓa tarin da ke kife a saman hagu don ɗaukar katuna. Taɓa kati sannan wurin da kake son sanya shi, ko ka sake taɓa shi don ya tafi da kansa zuwa wuri mai inganci. Matakai 1–5: ɗauki 1; matakai 6–10: ɗauki 3.",
+    "lib.arcade.note.match3": "Musanya guda biyu maƙwabta (taɓa ɗaya sannan ɗayan, ko goge) don yin layi na 3 ko fiye iri ɗaya; layin yana fashewa kuma gudan da ke sama suna faɗuwa. Martani na jere suna ninka makinka. Kai ga makin manufa kafin motsi ya ƙare.",
+    "lib.arcade.note.minesweeper": "Taɓa ƙofa don buɗe ta. Lamba tana nuna nakiyoyi nawa ne ke cikin ƙofofi 8 da ke kewaye da ita. Yi alamar nakiyar da kake zargi da danna dama, latsa na dogon lokaci ko yanayin tuta. Taɓa lamba wadda ke da isassun tutoci a kewaye don buɗe sauran da sauri. Buɗe dukkan ƙofofi marasa nakiya don cin nasara.",
+    "lib.arcade.note.reversi": "Kana wasa da baƙi kuma kai ne ka fara. Sanya faifai ta yadda zai kama faifai fari ɗaya ko fiye tsakaninsa da wani faifai baƙi (a kwance, a tsaye ko a karkace); faifan da aka kama suna juyawa zuwa launinka. Idan ba ka da motsi mai inganci, ka tsallake lokacinka. Idan allon ya cika, wanda ke da faifai mafi yawa ya ci nasara.",
+    "lib.arcade.note.snake": "Jagoranci maciji da maɓallan kibiya, WASD, maɓallan da ke ƙasa ko ta gogewa. Ci abinci ja don girma; kai ga tsawon da ake buƙata don wuce matakin. Daga mataki na 3, buga bango yana kawo ƙarshen wasan; matakai masu girma suna da cikas. Kada ka bugi wutsiyarka.",
+    "lib.arcade.note.spider": "A kan tebur, jera kowane nau'i a jere daga K zuwa ƙasa har A; cikakken jere na katuna 13 ana cire shi kai tsaye. Kowane kati zai iya hawa kan kati mafi girma da daraja ɗaya, amma jerin nau'i ɗaya kaɗai ke motsawa tare. Idan ka makale, taɓa Raba sabon jere (kowane ginshiƙi dole ya kasance yana da katuna). Matakai 1–3: nau'i ɗaya; 4–7: biyu; 8–10: huɗu.",
+    "lib.arcade.pause": "Tsaya",
+    "lib.arcade.paused": "An tsaya",
+    "lib.arcade.right": "Dama",
+    "lib.arcade.rotate": "Juya",
+    "lib.arcade.score": "Maki: {n}",
+    "lib.arcade.shuffled": "Babu sauran motsi — an sake gauraya allon.",
+    "lib.arcade.snakeBoard": "Filin maciji",
+    "lib.arcade.suitsN": "Nau'i {n}",
+    "lib.arcade.target": "Manufa: {n}",
+    "lib.arcade.up": "Sama",
+    "lib.arcade.youVsAi": "Kai {a} – Kwamfuta {b}",
+    "lib.arcade.noHintFc": "Babu sauran motsi mai amfani. Soke wasu motsi ko sake farawa."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Nishaɗi da Wasanni",
-      "desc": "Ƙafar sa'a, na'urar samar da lambobi bazuwar, cacar kyauta da wasanni masu daɗi."
+      "desc": "Dabaran sa'a, lambobin bazuwar da wasannin burauza: Sudoku, dara, darar Sin, Gomoku, 2048, mai neman nakiya, tubalan da ke faɗuwa, maciji, solitaire da mai fasa bulo."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi na ɓoye",
       "desc": "Yi wasan Xiangqi na ɓoye na Vietnam: 'yan wasa suna farawa a juye kuma ana buɗe su bayan motsi na farko. Da kwamfuta a matakai 10 ko a kan layi tare da abokai da sababbin abokan hamayya."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Goge kuma ka haɗa lambobi iri ɗaya har ka samu tayal na 2048; matakai 10 masu manufa daga 64 zuwa 8192, tare da sokewa."
+    },
+    "minesweeper": {
+      "name": "Mai neman nakiya",
+      "desc": "Mai neman nakiya na gargajiya: buɗe ƙofofi, sanya tutoci kuma gano daga lambobi inda nakiyoyi suke; matakai 10 daga 8x8 zuwa 18x18, yana aiki a waya."
+    },
+    "block-puzzle": {
+      "name": "Tubalan da ke faɗuwa",
+      "desc": "Juya kuma ka tara tubalan da ke faɗuwa don share layuka; matakai 10 masu ƙara sauri, da madannai ko maɓallan taɓawa."
+    },
+    "snake": {
+      "name": "Maciji",
+      "desc": "Jagoranci maciji don ya ci ya girma ba tare da ya bugi bango ko wutsiyarsa ba; matakai 10 masu sauri da cikas."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klondike Solitaire na gargajiya: jera ƙasa da launuka masu musanya kuma ka matsar da katuna zuwa tushe daga A zuwa K; ɗauki 1 ko 3, tare da sokewa da shawarwari."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire na Gizo-gizo",
+      "desc": "Gizo-gizo mai nau'i 1, 2 da 4: gina jerin nau'i ɗaya daga K zuwa A don cire su daga tebur; matakai 10 tare da sokewa da shawarwari."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: dukkan katuna a buɗe suke; yi amfani da ƙofofi marasa komai don matsar da katuna zuwa tushe; matakai 10 masu ƙofofi masu raguwa."
+    },
+    "gomoku": {
+      "name": "Gomoku (biyar a jere)",
+      "desc": "Yi wasan Gomoku, biyar a jere, da kwamfuta a kan allon 15x15; matakai 10 daga sauƙi zuwa wahala, tare da sokewa."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Kama faifan abokin hamayyarka don su juya zuwa launinka; yi wasan Reversi 8x8 da kwamfuta a matakai 10."
+    },
+    "connect-four": {
+      "name": "Huɗu a jere",
+      "desc": "Jefa faifai cikin ginshiƙai kuma ka jera 4 a kwance, a tsaye ko a karkace kafin kwamfuta; matakai 10 daga sauƙi zuwa wahala."
+    },
+    "match-3": {
+      "name": "Haɗa 3",
+      "desc": "Musanya alewa don haɗa 3 ko fiye iri ɗaya da tayar da martani na jere; matakai 10 masu makin manufa da ƙayyadaddun motsi."
+    },
+    "brick-breaker": {
+      "name": "Mai fasa bulo",
+      "desc": "Jagoranci allo kuma ka sa ƙwallo ta yi tsalle don fasa kowane bulo; matakai 10 masu tsari daban-daban, da linzami, taɓawa ko maɓallai."
     }
   },
   "s": {

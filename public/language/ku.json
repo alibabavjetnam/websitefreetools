@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Hevrik derbas bû. Ger tu jî derbas bibî, lîstik diqede û tê hejmartin.",
     "lib.online.modeAi": "Li dijî komputerê bilîze",
     "lib.online.modeOnline": "Serhêl bilîze",
-    "share.label": "Parve bike"
+    "share.label": "Parve bike",
+    "lib.arcade.aiNoMove": "Kompîter tu tevgereke rast nîne — dora te ye.",
+    "lib.arcade.autoFinish": "Bixweber biqedîne",
+    "lib.arcade.best": "Rekor: {n}",
+    "lib.arcade.blocksBoard": "Qada blokên dikevin",
+    "lib.arcade.breakoutBoard": "Qada şikandina keçan",
+    "lib.arcade.dealRow": "Rêzeke nû belav bike",
+    "lib.arcade.down": "Jêr",
+    "lib.arcade.drawN": "{n} bikişîne",
+    "lib.arcade.drop": "Yekser bavêje",
+    "lib.arcade.flagMode": "Moda alê",
+    "lib.arcade.freeCells": "Xaneyên vala: {n}",
+    "lib.arcade.left": "Çep",
+    "lib.arcade.length": "Dirêjî: {n}/{t}",
+    "lib.arcade.lines": "Rêz: {n}/{t}",
+    "lib.arcade.minesLeft": "Mayîn: {n}",
+    "lib.arcade.moves": "Tevger: {n}",
+    "lib.arcade.movesLeft": "{n} tevger mane",
+    "lib.arcade.mustPass": "Tevgereke te ya rast tune — dora xwe derbas dikî.",
+    "lib.arcade.next": "Parçeyên din",
+    "lib.arcade.noHint": "Tevgereke kêrhatî nemaye. Kartekê bikişîne, rêzeke nû belav bike an ji nû ve dest pê bike.",
+    "lib.arcade.note.2048": "Ji bo ku hemû kerpîçokan bilivînî bişkojkên tîran bi kar bîne an tiliya xwe bişemitîne. Du kerpîçokên bi heman hejmarê dema li hev dikevin dibin yek. Ji bo derbaskirina astê kerpîçokeke wekhevî armancê çêke; heke tu kerpîçok nikaribe bilive, tu winda dikî.",
+    "lib.arcade.note.blocks": "Parçeyên dikevin bizivirîne û bi cih bike da ku rêzên asoyî tije bibin; rêzên tije winda dibin. ← → livandin, ↑ zivirandin, ↓ zûtir daxistin, Valahî yekser davêje, P rawestan. Ji bo derbaskirina astê hejmara pêwîst a rêzan paqij bike; heke parçe bigihîjin jor, tu winda dikî.",
+    "lib.arcade.note.breakout": "Mişkê bilivîne, tiliya xwe li ser qadê bikişîne an ← → bi kar bîne da ku raketê birêve bibî û gogê di lîstikê de bihêlî. Ji bo derbaskirina astê hemû keçan bişikîne; keçên bi kenarê stûr du lêdanan dixwazin. 3 canên te hene. Valahî dest pê dike an radiwestîne.",
+    "lib.arcade.note.connect4": "Tu bi sor dilîzî û pêşî tu dest pê dikî. Ji bo avêtina pûlekê li ser stûnekê bitikîne; ew dikeve cihê vala yê herî jêr. Kî pêşî 4 pûlan bi asoyî, stûnî an xêzikî rêz bike, ew bi ser dikeve.",
+    "lib.arcade.note.freecell": "Hemû kart vekirî ne. Hemû 52 kartan li gorî rengan bibe 4 bingehan, ji A heta K. Li ser masê bi rengên guhêrbar ber bi jêr ve rêz bike. Xaneyên vala yên jor-çep her yek kartekê digirin; çend kartan bi carekê dikarî bilivînî bi xaneyên vala û stûnên vala ve girêdayî ye. Astên bilind xaneyên kêmtir hene.",
+    "lib.arcade.note.gomoku": "Tu bi X dilîzî û pêşî tu dest pê dikî; kompîter bi O dilîze. Bi dorê li xaleke vala ya tabloya 15×15 nîşanekê deynin. Kî pêşî 5 di rêzekê de bi asoyî, stûnî an xêzikî bîne, ew bi ser dikeve.",
+    "lib.arcade.note.klondike": "Hemû 52 kartan li gorî rengan bibe 4 bingehan, ji A heta K. Li ser masê bi rengên guhêrbar ber bi jêr ve rêz bike; tenê K dikare here stûneke vala. Ji bo kişandina kartan li ser deste yê girtî yê jor-çep bitikîne. Li ser kartekê û paşê li cihê ku dixwazî biçe bitikîne, an dîsa li ser bitikîne da ku bi xwe here cihekî rast. Ast 1–5: 1 bikişîne; ast 6–10: 3 bikişîne.",
+    "lib.arcade.note.match3": "Cihê du parçeyên cîran biguherîne (yekê û paşê yê din bitikîne, an bişemitîne) da ku rêzeke ji 3 an zêdetir parçeyên wek hev çêbikî; rêz diteqe û parçeyên li jor dikevin. Reaksiyonên zincîrî xalan pirtir dikin. Berî ku tevger biqedin bigihîje xala armancê.",
+    "lib.arcade.note.minesweeper": "Ji bo vekirina xaneyekê li ser bitikîne. Hejmar nîşan dide ka di 8 xaneyên derdorê de çend mayîn hene. Mayîneke gumanbar bi klîka rast, pêlêkirina dirêj an moda alê nîşan bike. Li ser hejmareke ku jixwe têra xwe ala li derdora wê hene bitikîne da ku yên mayî zû vebin. Ji bo serketinê hemû xaneyên bê mayîn veke.",
+    "lib.arcade.note.reversi": "Tu bi reş dilîzî û pêşî tu dest pê dikî. Pûlekê wisa deyne ku yek an çend pûlên spî di navbera wê û pûleke reş a din de bimînin (asoyî, stûnî an xêzikî); pûlên girtî dibin rengê te. Heke tevgereke te ya rast tune be, dora xwe derbas dikî. Dema tablo tije bibe, yê ku pûlên wî zêdetir in bi ser dikeve.",
+    "lib.arcade.note.snake": "Marê bi bişkojkên tîran, WASD, bişkojkên jêrîn an bi şemitandinê birêve bibe. Ji bo mezinbûnê xwarina sor bixwe; ji bo derbaskirina astê bigihîje dirêjiya pêwîst. Ji asta 3 û pê ve, lêketina dîwarê lîstikê diqedîne; astên bilind astengî hene. Li dûvê xwe nekeve.",
+    "lib.arcade.note.spider": "Li ser masê her rengî ji K heta A di rêzekê de rêz bike; rêzeke temam a 13 kartan bixweber tê rakirin. Her kart dikare li ser karteke yek pile bilindtir be, lê tenê rêzên heman rengî bi hev re dilivin. Heke asê mayî, li ser Rêzeke nû belav bike bitikîne (divê di her stûnê de kart hebin). Ast 1–3: rengek; 4–7: du; 8–10: çar.",
+    "lib.arcade.pause": "Rawestîne",
+    "lib.arcade.paused": "Rawestiyayî",
+    "lib.arcade.right": "Rast",
+    "lib.arcade.rotate": "Bizivirîne",
+    "lib.arcade.score": "Xal: {n}",
+    "lib.arcade.shuffled": "Tevger nemabûn — tablo hate tevlihevkirin.",
+    "lib.arcade.snakeBoard": "Qada marê",
+    "lib.arcade.suitsN": "{n} reng",
+    "lib.arcade.target": "Armanc: {n}",
+    "lib.arcade.up": "Jor",
+    "lib.arcade.youVsAi": "Tu {a} – Kompîter {b}",
+    "lib.arcade.noHintFc": "Tevgereke kêrhatî nemaye. Çend tevgeran vegerîne an ji nû ve dest pê bike."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Ranewarî û Lîstik",
-      "desc": "Çerxa şansê, afirînerê hejmarên rasthatî, kişandina xelatan û lîstikên xweş."
+      "desc": "Çerxa şansê, hejmarên tesadufî û lîstikên gerokê: sudoku, şetrenc, şetrenca çînî, gomoku, 2048, mayîngeran, blokên dikevin, mar, solîter û keçşikên."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi ya veşartî",
       "desc": "Xiangqi ya veşartî ya Viyetnamî bilîze: perçe serûbinî dest pê dikin û piştî tevgera yekem têne zivirandin. Li dijî komputerê di 10 astan de an serhêl bi heval û hevrikên nû re."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Hejmarên wek hev bişemitîne û bike yek heta kerpîçoka 2048; 10 ast bi armancên ji 64 heta 8192, bi vegerandina tevgerê."
+    },
+    "minesweeper": {
+      "name": "Mayîngeran",
+      "desc": "Mayîngerana klasîk: xaneyan veke, alan deyne û ji hejmaran bibîne ka mayîn li ku ne; 10 ast ji 8x8 heta 18x18, li ser telefonê jî dixebite."
+    },
+    "block-puzzle": {
+      "name": "Blokên dikevin",
+      "desc": "Blokên dikevin bizivirîne û li ser hev deyne da ku rêz paqij bibin; 10 astên ku her ku diçe bileztir dibin, bi klavyeyê an bişkojkên destdanê."
+    },
+    "snake": {
+      "name": "Mar",
+      "desc": "Marê birêve bibe da ku bixwe û mezin bibe bêyî ku li dîwaran an dûvê xwe bikeve; 10 astên bileztir bi astengiyan."
+    },
+    "solitaire": {
+      "name": "Solîter",
+      "desc": "Solîtera Klondike ya klasîk: bi rengên guhêrbar ber bi jêr ve rêz bike û kartan bibe bingehan ji A heta K; 1 an 3 bikişîne, bi vegerandin û şîretan."
+    },
+    "spider-solitaire": {
+      "name": "Solîtera Pîrê",
+      "desc": "Pîrê bi 1, 2 û 4 rengan: ji bo rakirina wan ji masê rêzên heman rengî ji K heta A çêke; 10 ast bi vegerandin û şîretan."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solîtera FreeCell: hemû kart vekirî ne; ji bo birina kartan bo bingehan xaneyên vala bi kar bîne; 10 ast bi xaneyên her ku diçe kêmtir."
+    },
+    "gomoku": {
+      "name": "Gomoku (pênc di rêzekê de)",
+      "desc": "Li dijî kompîterê li ser tabloya 15x15 gomoku, pênc di rêzekê de bilîze; 10 ast ji hêsan heta dijwar, bi vegerandina tevgerê."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Pûlên hevrikê xwe bigire da ku bibin rengê te; li dijî kompîterê Reversiya 8x8 di 10 astan de bilîze."
+    },
+    "connect-four": {
+      "name": "Çar di rêzekê de",
+      "desc": "Pûlan bavêje stûnan û berî kompîterê 4 bi asoyî, stûnî an xêzikî rêz bike; 10 ast ji hêsan heta dijwar."
+    },
+    "match-3": {
+      "name": "Sisêyan bigihîne hev",
+      "desc": "Cihê şekiran biguherîne da ku 3 an zêdetir yên wek hev bigihînî hev û reaksiyonên zincîrî çêbikî; 10 ast bi xala armancê û tevgerên sînorkirî."
+    },
+    "brick-breaker": {
+      "name": "Keçşikên",
+      "desc": "Raketê birêve bibe û gogê biçirpîne da ku hemû keçan bişikînî; 10 qonaxên bi rêzkirinên cuda, bi mişk, destdan an bişkojkan."
     }
   },
   "s": {

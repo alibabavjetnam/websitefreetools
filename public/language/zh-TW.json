@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "對手虛手。若你也虛手，棋局結束並計數。",
     "lib.online.modeAi": "與電腦對弈",
     "lib.online.modeOnline": "線上對戰",
-    "share.label": "分享"
+    "share.label": "分享",
+    "lib.arcade.aiNoMove": "電腦無處可下，輪到你了。",
+    "lib.arcade.autoFinish": "自動收牌",
+    "lib.arcade.best": "最高分：{n}",
+    "lib.arcade.blocksBoard": "方塊下落棋盤",
+    "lib.arcade.breakoutBoard": "打磚塊場地",
+    "lib.arcade.dealRow": "發一行牌",
+    "lib.arcade.down": "下移",
+    "lib.arcade.drawN": "翻{n}張",
+    "lib.arcade.drop": "直接落下",
+    "lib.arcade.flagMode": "插旗模式",
+    "lib.arcade.freeCells": "空格：{n}",
+    "lib.arcade.left": "左移",
+    "lib.arcade.length": "長度：{n}/{t}",
+    "lib.arcade.lines": "行數：{n}/{t}",
+    "lib.arcade.minesLeft": "地雷：{n}",
+    "lib.arcade.moves": "步數：{n}",
+    "lib.arcade.movesLeft": "剩餘{n}步",
+    "lib.arcade.mustPass": "你無處可下，本輪跳過。",
+    "lib.arcade.next": "下一個方塊",
+    "lib.arcade.noHint": "沒有有用的走法了。請翻牌、發牌或重新開始。",
+    "lib.arcade.note.2048": "用方向鍵或滑動來移動所有方塊，相同數字的方塊相碰會合併成一個。合成目標數字即過關；無法再移動就輸了。",
+    "lib.arcade.note.blocks": "旋轉並擺放下落的方塊，填滿一整行就會消除。← → 移動，↑ 旋轉，↓ 加速下落，空白鍵直接落下，P 暫停。消除規定行數即過關；方塊堆到頂部就輸了。",
+    "lib.arcade.note.breakout": "移動滑鼠、在場地上拖曳手指或用 ← → 鍵控制擋板，別讓球掉下去。打碎所有磚塊即過關，粗邊磚塊要打兩次。共有3條命，空白鍵開始或暫停。",
+    "lib.arcade.note.connect4": "你執紅子先走。點選一欄放下棋子，棋子會落到該欄最低的空位。先把4枚棋子連成橫、直或斜線的一方獲勝。",
+    "lib.arcade.note.freecell": "所有牌都正面朝上。把52張牌依花色從A到K移到4個收牌區。牌桌上依遞減、紅黑交替疊放。左上角的空格每格可暫放一張牌；一次能移動多少張取決於空格和空欄的數量。級別越高空格越少。",
+    "lib.arcade.note.gomoku": "你執✕先走，電腦執○。雙方輪流在15×15棋盤的空位落子，先在橫、直或斜線上連成5子者獲勝。",
+    "lib.arcade.note.klondike": "把52張牌依花色從A到K移到4個收牌區。牌桌上依遞減、紅黑交替疊放，空欄只能放K。點選左上角的牌堆翻牌。先點一張牌再點要放的位置，或再點一次該牌讓它自動移到可放的位置。第1–5級每次翻1張，第6–10級每次翻3張。",
+    "lib.arcade.note.match3": "交換相鄰的兩個（依序點選或滑動），連成3個或以上同類就會消除，上方的會掉下來。連鎖消除得分加倍。在步數用完前達到目標分數即過關。",
+    "lib.arcade.note.minesweeper": "點選格子打開它。數字表示周圍8格中有幾顆地雷。用右鍵、長按或插旗模式在可疑格子上插旗。點選周圍旗子已插夠的數字可快速打開其餘格子。打開所有沒有地雷的格子即獲勝。",
+    "lib.arcade.note.reversi": "你執黑先走。落子時要把一枚或多枚白子夾在新子和已有黑子之間（橫、直、斜），被夾住的子會翻成你的顏色。沒有合法位置就跳過。棋盤下滿時，子多的一方獲勝。",
+    "lib.arcade.note.snake": "用方向鍵、WASD、下方按鈕或滑動來控制蛇。吃到紅色食物會變長，達到規定長度即過關。從第3級起撞牆就輸，高級別還有障礙物。別咬到自己。",
+    "lib.arcade.note.spider": "在牌桌上把每種花色排成從K到A的序列，湊滿13張的序列會自動移走。任何牌都能放在大1點的牌上，但只有同花色的序列才能整體移動。沒路可走時點「發一行牌」（每欄都必須有牌）。第1–3級一種花色，4–7級兩種，8–10級四種。",
+    "lib.arcade.pause": "暫停",
+    "lib.arcade.paused": "已暫停",
+    "lib.arcade.right": "右移",
+    "lib.arcade.rotate": "旋轉",
+    "lib.arcade.score": "得分：{n}",
+    "lib.arcade.shuffled": "無路可走，已重新洗牌。",
+    "lib.arcade.snakeBoard": "貪食蛇場地",
+    "lib.arcade.suitsN": "{n}種花色",
+    "lib.arcade.target": "目標：{n}",
+    "lib.arcade.up": "上移",
+    "lib.arcade.youVsAi": "你 {a} – 電腦 {b}",
+    "lib.arcade.noHintFc": "沒有可用的好步了。試著復原幾步或重新開始。"
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "娛樂與遊戲",
-      "desc": "幸運轉盤、隨機數字產生器、抽獎活動與趣味遊戲。"
+      "desc": "幸運轉盤、隨機數和網頁小遊戲：數獨、西洋棋、象棋、五子棋、2048、踩地雷、方塊消除、貪食蛇、接龍、打磚塊。"
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "揭棋",
       "desc": "玩越南揭棋：棋子背面朝上開局，第一步後翻開。與電腦對弈 10 級，或線上與朋友、新對手對戰。"
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "滑動並合併相同數字，拼出2048方塊；目標從64到8192共10級，可悔一步。"
+    },
+    "minesweeper": {
+      "name": "踩地雷",
+      "desc": "經典踩地雷：打開格子、插旗，根據數字推斷地雷位置；從8x8到18x18共10級，手機也能玩。"
+    },
+    "block-puzzle": {
+      "name": "方塊消除",
+      "desc": "旋轉並堆疊下落的方塊來消除整行；10級速度逐步加快，可用鍵盤或觸控按鈕操作。"
+    },
+    "snake": {
+      "name": "貪食蛇",
+      "desc": "控制小蛇吃食物變長，避開牆壁和自己的身體；10級逐步加速並有障礙物。"
+    },
+    "solitaire": {
+      "name": "接龍",
+      "desc": "經典克朗代克接龍：紅黑交替疊放，把牌從A到K收到收牌區；可選翻1張或3張，支援悔牌與提示。"
+    },
+    "spider-solitaire": {
+      "name": "蜘蛛紙牌",
+      "desc": "1、2、4種花色的蜘蛛紙牌：排出從K到A的同花色序列將其移出牌桌；10個級別，支援悔牌與提示。"
+    },
+    "freecell": {
+      "name": "新接龍",
+      "desc": "新接龍（FreeCell）：所有牌都正面朝上，利用空格把牌收到收牌區；10個級別，空格逐漸減少。"
+    },
+    "gomoku": {
+      "name": "五子棋",
+      "desc": "在15x15棋盤上與電腦下五子棋，從易到難10個級別，可悔棋。"
+    },
+    "reversi": {
+      "name": "黑白棋",
+      "desc": "把對手的棋子夾住翻成你的顏色；與電腦對弈8x8黑白棋，共10個級別。"
+    },
+    "connect-four": {
+      "name": "四子棋",
+      "desc": "把棋子投入欄中，先於電腦在橫、直或斜線上連成4子；從易到難10個級別。"
+    },
+    "match-3": {
+      "name": "三消遊戲",
+      "desc": "交換糖果湊成3個或以上同類，觸發連鎖得分；10個級別，有目標分數和步數限制。"
+    },
+    "brick-breaker": {
+      "name": "打磚塊",
+      "desc": "控制擋板反彈小球打碎所有磚塊；10個佈局不同的關卡，可用滑鼠、觸控或鍵盤操作。"
     }
   },
   "s": {

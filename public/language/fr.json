@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Jouer en ligne",
     "lib.game.fullscreen": "Plein écran",
     "lib.game.exitFullscreen": "Quitter le plein écran",
-    "share.label": "Partager"
+    "share.label": "Partager",
+    "lib.arcade.aiNoMove": "L'ordinateur n'a aucun coup possible : à vous de jouer.",
+    "lib.arcade.autoFinish": "Tout ranger",
+    "lib.arcade.best": "Record : {n}",
+    "lib.arcade.blocksBoard": "Plateau de blocs",
+    "lib.arcade.breakoutBoard": "Terrain de casse-briques",
+    "lib.arcade.dealRow": "Distribuer une rangée",
+    "lib.arcade.down": "Bas",
+    "lib.arcade.drawN": "Piocher {n}",
+    "lib.arcade.drop": "Lâcher",
+    "lib.arcade.flagMode": "Mode drapeau",
+    "lib.arcade.freeCells": "Cellules libres : {n}",
+    "lib.arcade.left": "Gauche",
+    "lib.arcade.length": "Longueur : {n}/{t}",
+    "lib.arcade.lines": "Lignes : {n}/{t}",
+    "lib.arcade.minesLeft": "Mines : {n}",
+    "lib.arcade.moves": "Coups : {n}",
+    "lib.arcade.movesLeft": "Encore {n} coups",
+    "lib.arcade.mustPass": "Vous n'avez aucun coup possible : vous passez.",
+    "lib.arcade.next": "Pièces suivantes",
+    "lib.arcade.noHint": "Plus aucun coup utile. Piochez une carte, distribuez une rangée ou recommencez.",
+    "lib.arcade.note.2048": "Utilisez les flèches ou faites glisser pour déplacer toutes les tuiles. Deux tuiles de même valeur fusionnent en se touchant. Obtenez une tuile égale à l'objectif pour réussir le niveau ; si plus rien ne bouge, c'est perdu.",
+    "lib.arcade.note.blocks": "Faites pivoter et placez les pièces qui tombent pour compléter des lignes horizontales ; les lignes pleines disparaissent. ← → pour déplacer, ↑ pour pivoter, ↓ pour accélérer, Espace pour lâcher, P pour la pause. Effacez le nombre de lignes demandé pour réussir ; si la pile atteint le haut, c'est perdu.",
+    "lib.arcade.note.breakout": "Bougez la souris, glissez le doigt sur le terrain ou utilisez ← → pour diriger la raquette et garder la balle en jeu. Cassez toutes les briques pour réussir le niveau ; celles à bord épais demandent deux coups. Vous avez 3 vies. Espace pour démarrer ou mettre en pause.",
+    "lib.arcade.note.connect4": "Vous jouez les rouges et commencez. Touchez une colonne pour y lâcher un pion ; il tombe dans la case libre la plus basse. Le premier à aligner 4 pions à l'horizontale, à la verticale ou en diagonale gagne.",
+    "lib.arcade.note.freecell": "Toutes les cartes sont visibles. Rangez les 52 cartes sur les 4 piles de fondation par couleur, de l'As au Roi. Sur la table, empilez en ordre décroissant en alternant rouge et noir. Les cellules libres en haut à gauche gardent une carte chacune ; le nombre de cartes déplaçables d'un coup dépend des cellules et colonnes vides. Les niveaux élevés ont moins de cellules.",
+    "lib.arcade.note.gomoku": "Vous jouez les X et commencez ; l'ordinateur joue les O. Posez tour à tour sur une intersection libre du plateau 15×15. Le premier à aligner 5 à l'horizontale, à la verticale ou en diagonale gagne.",
+    "lib.arcade.note.klondike": "Rangez les 52 cartes sur les 4 piles de fondation par couleur, de l'As au Roi. Sur la table, empilez en ordre décroissant en alternant rouge et noir ; seul un Roi peut aller dans une colonne vide. Touchez la pioche face cachée en haut à gauche pour piocher. Touchez une carte puis l'endroit voulu, ou touchez-la à nouveau pour l'envoyer à une place valide. Niveaux 1–5 : piocher 1 carte ; niveaux 6–10 : 3 cartes.",
+    "lib.arcade.note.match3": "Échangez deux pièces voisines (touchez l'une puis l'autre, ou faites glisser) pour aligner 3 pièces identiques ou plus ; la ligne explose et les pièces du dessus tombent. Les réactions en chaîne multiplient les points. Atteignez le score visé avant d'épuiser vos coups.",
+    "lib.arcade.note.minesweeper": "Touchez une case pour l'ouvrir. Le chiffre indique le nombre de mines dans les 8 cases voisines. Placez un drapeau sur une case suspecte par clic droit, appui long ou en mode drapeau. Touchez un chiffre déjà entouré d'assez de drapeaux pour ouvrir vite le reste. Ouvrez toutes les cases sans mine pour gagner.",
+    "lib.arcade.note.reversi": "Vous jouez les noirs et commencez. Posez un pion de façon à encadrer un ou plusieurs pions blancs entre lui et un autre pion noir (horizontale, verticale, diagonale) ; les pions encadrés passent à votre couleur. Sans coup possible, vous passez. Quand le plateau est plein, celui qui a le plus de pions gagne.",
+    "lib.arcade.note.snake": "Dirigez le serpent avec les flèches, ZQSD/WASD, les boutons en dessous ou en faisant glisser. Mangez la nourriture rouge pour grandir ; atteignez la longueur demandée pour réussir le niveau. À partir du niveau 3, toucher un mur fait perdre ; les niveaux élevés ajoutent des obstacles. Ne vous mordez pas la queue.",
+    "lib.arcade.note.spider": "Formez sur la table une suite de chaque couleur du Roi à l'As ; une suite complète de 13 cartes est retirée automatiquement. Toute carte peut aller sur une carte d'un rang au-dessus, mais seules les suites de même couleur se déplacent ensemble. Si vous êtes bloqué, touchez Distribuer une rangée (toutes les colonnes doivent avoir des cartes). Niveaux 1–3 : une couleur ; 4–7 : deux ; 8–10 : quatre.",
+    "lib.arcade.pause": "Pause",
+    "lib.arcade.paused": "En pause",
+    "lib.arcade.right": "Droite",
+    "lib.arcade.rotate": "Pivoter",
+    "lib.arcade.score": "Score : {n}",
+    "lib.arcade.shuffled": "Plus de coups possibles : le plateau a été mélangé.",
+    "lib.arcade.snakeBoard": "Terrain du serpent",
+    "lib.arcade.suitsN": "{n} couleurs",
+    "lib.arcade.target": "Objectif : {n}",
+    "lib.arcade.up": "Haut",
+    "lib.arcade.youVsAi": "Vous {a} – Ordinateur {b}",
+    "lib.arcade.noHintFc": "Plus aucun coup utile. Annulez quelques coups ou recommencez."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Divertissement et jeux",
-      "desc": "Roue de la chance, générateur de nombres aléatoires, tirages au sort et jeux amusants."
+      "desc": "Roue de la chance, nombres aléatoires et jeux dans le navigateur : sudoku, échecs, échecs chinois, gomoku, 2048, démineur, blocs, snake, solitaire et casse-briques."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi caché",
       "desc": "Jouez au Xiangqi caché vietnamien : les pièces commencent face cachée et se retournent après leur premier coup. Contre l'ordinateur sur 10 niveaux ou en ligne avec des amis ou de nouveaux adversaires."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Faites glisser et fusionnez les nombres identiques jusqu'à la tuile 2048 ; 10 niveaux avec des objectifs de 64 à 8192, avec annulation."
+    },
+    "minesweeper": {
+      "name": "Démineur",
+      "desc": "Le démineur classique : ouvrez des cases, posez des drapeaux et déduisez où sont les mines grâce aux chiffres ; 10 niveaux de 8x8 à 18x18, jouable sur mobile."
+    },
+    "block-puzzle": {
+      "name": "Blocs qui tombent",
+      "desc": "Faites pivoter et empilez les blocs qui tombent pour effacer des lignes ; 10 niveaux de plus en plus rapides, au clavier ou avec les boutons tactiles."
+    },
+    "snake": {
+      "name": "Snake",
+      "desc": "Guidez le serpent pour manger et grandir en évitant les murs et votre propre queue ; 10 niveaux plus rapides avec obstacles."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Le solitaire Klondike classique : empilez en alternant les couleurs et rangez les cartes de l'As au Roi ; piocher 1 ou 3, avec annulation et indices."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Spider",
+      "desc": "Spider à 1, 2 et 4 couleurs : formez des suites de même couleur du Roi à l'As pour les retirer ; 10 niveaux avec annulation et indices."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitaire FreeCell : toutes les cartes sont visibles ; utilisez les cellules libres pour ranger les cartes ; 10 niveaux avec de moins en moins de cellules."
+    },
+    "gomoku": {
+      "name": "Gomoku (cinq en ligne)",
+      "desc": "Jouez au gomoku, cinq en ligne, contre l'ordinateur sur un plateau 15x15 ; 10 niveaux du plus facile au plus difficile, avec annulation."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Encadrez les pions adverses pour les retourner à votre couleur ; jouez au Reversi 8x8 contre l'ordinateur sur 10 niveaux."
+    },
+    "connect-four": {
+      "name": "Quatre en ligne",
+      "desc": "Lâchez des pions dans les colonnes et alignez-en 4 à l'horizontale, à la verticale ou en diagonale avant l'ordinateur ; 10 niveaux du facile au difficile."
+    },
+    "match-3": {
+      "name": "Match 3",
+      "desc": "Échangez les bonbons pour en aligner 3 ou plus et déclencher des réactions en chaîne ; 10 niveaux avec score à atteindre et coups limités."
+    },
+    "brick-breaker": {
+      "name": "Casse-briques",
+      "desc": "Dirigez la raquette et faites rebondir la balle pour casser toutes les briques ; 10 niveaux de dispositions différentes, à la souris, au doigt ou au clavier."
     }
   },
   "s": {

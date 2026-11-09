@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Main online",
     "lib.game.fullscreen": "Layar penuh",
     "lib.game.exitFullscreen": "Keluar dari layar penuh",
-    "share.label": "Bagikan"
+    "share.label": "Bagikan",
+    "lib.arcade.aiNoMove": "Komputer tidak punya langkah — giliranmu.",
+    "lib.arcade.autoFinish": "Naikkan otomatis",
+    "lib.arcade.best": "Rekor: {n}",
+    "lib.arcade.blocksBoard": "Papan balok jatuh",
+    "lib.arcade.breakoutBoard": "Arena pemecah bata",
+    "lib.arcade.dealRow": "Bagikan satu baris",
+    "lib.arcade.down": "Bawah",
+    "lib.arcade.drawN": "Ambil {n}",
+    "lib.arcade.drop": "Jatuhkan",
+    "lib.arcade.flagMode": "Mode bendera",
+    "lib.arcade.freeCells": "Sel kosong: {n}",
+    "lib.arcade.left": "Kiri",
+    "lib.arcade.length": "Panjang: {n}/{t}",
+    "lib.arcade.lines": "Baris: {n}/{t}",
+    "lib.arcade.minesLeft": "Ranjau: {n}",
+    "lib.arcade.moves": "Langkah: {n}",
+    "lib.arcade.movesLeft": "Sisa {n} langkah",
+    "lib.arcade.mustPass": "Kamu tidak punya langkah — giliranmu dilewati.",
+    "lib.arcade.next": "Balok berikutnya",
+    "lib.arcade.noHint": "Tidak ada langkah berguna lagi. Ambil kartu, bagikan satu baris, atau mulai ulang.",
+    "lib.arcade.note.2048": "Gunakan tombol panah atau geser untuk menggeser semua ubin. Dua ubin dengan angka sama akan bergabung saat bersentuhan. Buat ubin seukuran target untuk lulus level; jika tidak ada yang bisa bergeser, kamu kalah.",
+    "lib.arcade.note.blocks": "Putar dan letakkan balok yang jatuh untuk mengisi baris mendatar; baris penuh akan hilang. ← → menggeser, ↑ memutar, ↓ turun cepat, Spasi menjatuhkan, P jeda. Hapus jumlah baris yang diminta untuk lulus level; jika tumpukan mencapai atas, kamu kalah.",
+    "lib.arcade.note.breakout": "Gerakkan mouse, seret jari di arena, atau pakai ← → untuk menggerakkan pemukul dan menjaga bola tetap di permainan. Pecahkan semua bata untuk lulus level; bata bertepi tebal perlu dua kali pukulan. Kamu punya 3 nyawa. Spasi untuk mulai atau jeda.",
+    "lib.arcade.note.connect4": "Kamu bermain merah dan jalan duluan. Ketuk kolom untuk menjatuhkan keping; keping jatuh ke tempat kosong paling bawah. Yang pertama menjajarkan 4 keping mendatar, tegak, atau diagonal menang.",
+    "lib.arcade.note.freecell": "Semua kartu terbuka. Pindahkan ke-52 kartu ke 4 tumpukan dasar per jenis, dari A sampai K. Di meja, susun menurun dengan warna merah-hitam berselang. Sel kosong di kiri atas masing-masing menampung satu kartu; berapa kartu yang bisa dipindah sekaligus tergantung sel dan kolom kosong. Level tinggi punya sel kosong lebih sedikit.",
+    "lib.arcade.note.gomoku": "Kamu bermain X dan jalan duluan; komputer bermain O. Bergantian taruh tanda di titik kosong papan 15×15. Yang pertama mendapat 5 berderet mendatar, tegak, atau diagonal menang.",
+    "lib.arcade.note.klondike": "Pindahkan ke-52 kartu ke 4 tumpukan dasar per jenis, dari A sampai K. Di meja, susun menurun dengan warna merah-hitam berselang; hanya K yang boleh ke kolom kosong. Ketuk tumpukan tertutup di kiri atas untuk mengambil kartu. Ketuk kartu lalu tempat tujuan, atau ketuk kartu itu lagi agar pindah sendiri ke tempat yang sah. Level 1–5 ambil 1 kartu, level 6–10 ambil 3.",
+    "lib.arcade.note.match3": "Tukar dua kepingan bersebelahan (ketuk bergantian atau geser) untuk membentuk deret 3 atau lebih yang sama; deret meledak dan kepingan di atasnya jatuh. Ledakan berantai melipatgandakan poin. Capai skor target sebelum langkah habis.",
+    "lib.arcade.note.minesweeper": "Ketuk kotak untuk membukanya. Angka menunjukkan jumlah ranjau di 8 kotak sekitarnya. Tandai kotak yang dicurigai dengan klik kanan, tekan lama, atau mode bendera. Ketuk angka yang benderanya sudah cukup untuk membuka sisanya dengan cepat. Buka semua kotak tanpa ranjau untuk menang.",
+    "lib.arcade.note.reversi": "Kamu bermain hitam dan jalan duluan. Letakkan keping sehingga mengapit satu atau lebih keping putih di antara keping baru dan keping hitam lain (mendatar, tegak, diagonal); keping yang terapit berubah ke warnamu. Jika tidak ada langkah sah, kamu dilewati. Saat papan penuh, yang kepingnya lebih banyak menang.",
+    "lib.arcade.note.snake": "Arahkan ular dengan tombol panah, WASD, tombol di bawah, atau geser. Makan makanan merah agar memanjang; capai panjang yang diminta untuk lulus level. Mulai level 3 menabrak dinding berarti kalah; level tinggi punya rintangan. Jangan menggigit ekor sendiri.",
+    "lib.arcade.note.spider": "Susun di meja tiap jenis menjadi deret dari K ke A; deret lengkap 13 kartu diangkat otomatis. Kartu apa pun bisa ditaruh di atas kartu satu tingkat lebih tinggi, tetapi hanya deret sejenis yang bisa dipindah bersama. Kalau buntu, ketuk Bagikan satu baris (setiap kolom harus ada kartu). Level 1–3 satu jenis, 4–7 dua, 8–10 empat.",
+    "lib.arcade.pause": "Jeda",
+    "lib.arcade.paused": "Dijeda",
+    "lib.arcade.right": "Kanan",
+    "lib.arcade.rotate": "Putar",
+    "lib.arcade.score": "Skor: {n}",
+    "lib.arcade.shuffled": "Tidak ada langkah — papan diacak ulang.",
+    "lib.arcade.snakeBoard": "Arena ular",
+    "lib.arcade.suitsN": "{n} jenis",
+    "lib.arcade.target": "Target: {n}",
+    "lib.arcade.up": "Atas",
+    "lib.arcade.youVsAi": "Kamu {a} – Komputer {b}",
+    "lib.arcade.noHintFc": "Tidak ada langkah yang berguna lagi. Batalkan beberapa langkah atau mulai ulang."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Hiburan & Permainan",
-      "desc": "Roda keberuntungan, pengacak angka, undian hadiah, dan permainan seru."
+      "desc": "Roda keberuntungan, angka acak, dan game di browser: sudoku, catur, catur Tiongkok, gomoku, 2048, minesweeper, balok jatuh, ular, solitaire, dan pemecah bata."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi tertutup",
       "desc": "Main Xiangqi tertutup ala Vietnam: bidak mulai tertutup dan terbuka setelah langkah pertamanya. Melawan komputer dalam 10 level atau online dengan teman dan lawan baru."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Geser dan gabungkan angka yang sama hingga terbentuk ubin 2048; 10 level dengan target 64 sampai 8192, bisa urungkan."
+    },
+    "minesweeper": {
+      "name": "Minesweeper",
+      "desc": "Minesweeper klasik: buka kotak, pasang bendera, dan tebak letak ranjau dari angka; 10 level dari 8x8 sampai 18x18, bisa di ponsel."
+    },
+    "block-puzzle": {
+      "name": "Balok Jatuh",
+      "desc": "Putar dan tumpuk balok yang jatuh untuk menghapus baris; 10 level makin cepat, main dengan keyboard atau tombol sentuh."
+    },
+    "snake": {
+      "name": "Ular",
+      "desc": "Arahkan ular untuk makan dan memanjang sambil menghindari dinding dan ekornya; 10 level makin cepat dengan rintangan."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Solitaire Klondike klasik: susun berselang warna dan naikkan kartu ke tumpukan dasar dari A sampai K; ambil 1 atau 3, dengan urungkan dan petunjuk."
+    },
+    "spider-solitaire": {
+      "name": "Spider Solitaire",
+      "desc": "Spider 1, 2, dan 4 jenis: susun deret sejenis dari K ke A untuk mengangkatnya dari meja; 10 level dengan urungkan dan petunjuk."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitaire FreeCell: semua kartu terbuka; gunakan sel kosong untuk menaikkan kartu ke tumpukan dasar; 10 level dengan sel kosong yang makin sedikit."
+    },
+    "gomoku": {
+      "name": "Gomoku (Lima Berderet)",
+      "desc": "Main gomoku, lima berderet, melawan komputer di papan 15x15; 10 level dari mudah ke sulit, bisa urungkan."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Apit keping lawan untuk membaliknya ke warnamu; main Reversi 8x8 melawan komputer dalam 10 level."
+    },
+    "connect-four": {
+      "name": "Empat Berderet",
+      "desc": "Jatuhkan keping ke kolom dan jajarkan 4 mendatar, tegak, atau diagonal sebelum komputer; 10 level dari mudah ke sulit."
+    },
+    "match-3": {
+      "name": "Cocokkan 3",
+      "desc": "Tukar permen untuk mencocokkan 3 atau lebih yang sama dan picu ledakan berantai; 10 level dengan skor target dan batas langkah."
+    },
+    "brick-breaker": {
+      "name": "Pemecah Bata",
+      "desc": "Gerakkan pemukul dan pantulkan bola untuk memecahkan semua bata; 10 tahap dengan susunan berbeda, main dengan mouse, sentuhan, atau tombol."
     }
   },
   "s": {

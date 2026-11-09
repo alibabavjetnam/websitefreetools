@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Vastustaja passasi. Jos sinäkin passaat, peli päättyy ja lasketaan.",
     "lib.online.modeAi": "Pelaa tietokonetta vastaan",
     "lib.online.modeOnline": "Pelaa verkossa",
-    "share.label": "Jaa"
+    "share.label": "Jaa",
+    "lib.arcade.aiNoMove": "Tietokoneella ei ole siirtoa – sinun vuorosi.",
+    "lib.arcade.autoFinish": "Siirrä kaikki ylös",
+    "lib.arcade.best": "Ennätys: {n}",
+    "lib.arcade.blocksBoard": "Putoavien palikoiden lauta",
+    "lib.arcade.breakoutBoard": "Tiilenrikkojan kenttä",
+    "lib.arcade.dealRow": "Jaa uusi rivi",
+    "lib.arcade.down": "Alas",
+    "lib.arcade.drawN": "Nosta {n}",
+    "lib.arcade.drop": "Pudota heti",
+    "lib.arcade.flagMode": "Lippumuoto",
+    "lib.arcade.freeCells": "Vapaat solut: {n}",
+    "lib.arcade.left": "Vasemmalle",
+    "lib.arcade.length": "Pituus: {n}/{t}",
+    "lib.arcade.lines": "Rivit: {n}/{t}",
+    "lib.arcade.minesLeft": "Miinat: {n}",
+    "lib.arcade.moves": "Siirrot: {n}",
+    "lib.arcade.movesLeft": "{n} siirtoa jäljellä",
+    "lib.arcade.mustPass": "Sinulla ei ole siirtoa – vuorosi ohitetaan.",
+    "lib.arcade.next": "Seuraavat palikat",
+    "lib.arcade.noHint": "Hyödyllisiä siirtoja ei ole. Nosta kortti, jaa uusi rivi tai aloita alusta.",
+    "lib.arcade.note.2048": "Liu'uta kaikkia laattoja nuolinäppäimillä tai pyyhkäisemällä. Kaksi samanarvoista laattaa yhdistyy osuessaan toisiinsa. Tee tavoitteen kokoinen laatta läpäistäksesi tason; jos mikään ei liiku, hävisit.",
+    "lib.arcade.note.blocks": "Käännä ja aseta putoavat palikat niin, että vaakarivit täyttyvät; täydet rivit katoavat. ← → siirtää, ↑ kääntää, ↓ pudottaa nopeammin, välilyönti pudottaa heti, P tauko. Poista vaadittu määrä rivejä läpäistäksesi tason; jos palikat ylettyvät ylös, hävisit.",
+    "lib.arcade.note.breakout": "Liikuta hiirtä, vedä sormella kentällä tai käytä ← →-näppäimiä ohjataksesi mailaa ja pitääksesi pallon pelissä. Riko kaikki tiilet läpäistäksesi tason; paksureunaiset tiilet vaativat kaksi osumaa. Sinulla on 3 elämää. Välilyönti aloittaa tai pysäyttää.",
+    "lib.arcade.note.connect4": "Pelaat punaisilla ja aloitat. Napauta saraketta pudottaaksesi kiekon; se putoaa alimpaan vapaaseen kohtaan. Ensimmäisenä 4 kiekkoa vaakaan, pystyyn tai vinoon riviin saanut voittaa.",
+    "lib.arcade.note.freecell": "Kaikki kortit ovat kuvapuoli ylöspäin. Siirrä kaikki 52 korttia 4 peruspinoon maittain ässästä kuninkaaseen. Pöydällä kortit ladotaan laskevasti vuorotellen punainen ja musta. Vasemman yläkulman vapaisiin soluihin mahtuu yksi kortti kuhunkin; kerralla siirrettävien korttien määrä riippuu vapaista soluista ja tyhjistä sarakkeista. Korkeilla tasoilla vapaita soluja on vähemmän.",
+    "lib.arcade.note.gomoku": "Pelaat X:llä ja aloitat; tietokone pelaa O:lla. Merkkejä asetetaan vuorotellen 15×15-laudan vapaisiin pisteisiin. Ensimmäisenä viisi vaakaan, pystyyn tai vinoon riviin saanut voittaa.",
+    "lib.arcade.note.klondike": "Siirrä kaikki 52 korttia 4 peruspinoon maittain ässästä kuninkaaseen. Pöydällä kortit ladotaan laskevasti vuorotellen punainen ja musta; tyhjään sarakkeeseen saa laittaa vain kuninkaan. Nosta kortteja napauttamalla vasemman yläkulman nurinpäin olevaa pakkaa. Napauta korttia ja sitten paikkaa, tai napauta korttia uudelleen, niin se siirtyy itse sallittuun paikkaan. Tasoilla 1–5 nostetaan 1 kortti, tasoilla 6–10 kolme.",
+    "lib.arcade.note.match3": "Vaihda kahden vierekkäisen palan paikkaa (napauta peräkkäin tai pyyhkäise) muodostaaksesi rivin, jossa on vähintään 3 samanlaista; rivi poksahtaa ja yläpuolella olevat palat putoavat. Ketjureaktiot moninkertaistavat pisteet. Saavuta tavoitepisteet ennen kuin siirrot loppuvat.",
+    "lib.arcade.note.minesweeper": "Napauta ruutua avataksesi sen. Numero kertoo, montako miinaa ympäröivissä 8 ruudussa on. Merkitse epäilyttävä ruutu lipulla oikealla napsautuksella, pitkällä painalluksella tai lippumuodossa. Napauta numeroa, jonka ympärillä on jo tarpeeksi lippuja, avataksesi loput nopeasti. Avaa kaikki miinattomat ruudut voittaaksesi.",
+    "lib.arcade.note.reversi": "Pelaat mustilla ja aloitat. Aseta kiekko niin, että saarrat yhden tai useamman valkoisen sen ja toisen mustan väliin (vaakaan, pystyyn tai vinoon); saarretut kiekot kääntyvät sinun väriisi. Jos sinulla ei ole siirtoa, vuorosi ohitetaan. Kun lauta on täynnä, eniten kiekkoja omaava voittaa.",
+    "lib.arcade.note.snake": "Ohjaa matoa nuolinäppäimillä, WASD:lla, alla olevilla painikkeilla tai pyyhkäisemällä. Syö punaista ruokaa kasvaaksesi; saavuta vaadittu pituus läpäistäksesi tason. Tasosta 3 alkaen seinään törmääminen tarkoittaa häviötä; korkeammilla tasoilla on esteitä. Älä pure omaa häntääsi.",
+    "lib.arcade.note.spider": "Rakenna pöydälle jokaisesta maasta jono kuninkaasta ässään; valmiit 13 kortin jonot poistuvat itsestään. Minkä tahansa kortin voi laittaa yhtä suuremman kortin päälle, mutta vain samaa maata olevat jonot siirtyvät yhdessä. Jos jäät jumiin, napauta Jaa uusi rivi (jokaisessa sarakkeessa on oltava kortteja). Tasot 1–3 yksi maa, 4–7 kaksi, 8–10 neljä.",
+    "lib.arcade.pause": "Tauko",
+    "lib.arcade.paused": "Tauolla",
+    "lib.arcade.right": "Oikealle",
+    "lib.arcade.rotate": "Käännä",
+    "lib.arcade.score": "Pisteet: {n}",
+    "lib.arcade.shuffled": "Siirtoja ei ole – lauta sekoitettiin uudelleen.",
+    "lib.arcade.snakeBoard": "Madon kenttä",
+    "lib.arcade.suitsN": "{n} maata",
+    "lib.arcade.target": "Tavoite: {n}",
+    "lib.arcade.up": "Ylös",
+    "lib.arcade.youVsAi": "Sinä {a} – Tietokone {b}",
+    "lib.arcade.noHintFc": "Hyödyllisiä siirtoja ei ole jäljellä. Peru muutama siirto tai aloita alusta."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Viihde ja pelit",
-      "desc": "Onnenpyörä, satunnaislukugeneraattori, palkintoarvonnat ja hauskat pelit."
+      "desc": "Onnenpyörä, satunnaisluvut ja selainpelit: sudoku, shakki, kiinalainen shakki, gomoku, 2048, miinaharava, putoavat palikat, matopeli, pasianssi ja tiilenrikkoja."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Piilo-Xiangqi",
       "desc": "Pelaa vietnamilaista piilo-Xiangqia: nappulat aloittavat kuvapuoli alaspäin ja kääntyvät ensimmäisen siirron jälkeen. Tietokonetta vastaan 10 tasolla tai verkossa ystävien ja uusien vastustajien kanssa."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Liu'uta ja yhdistä samoja numeroita, kunnes syntyy laatta 2048; 10 tasoa tavoitteilla 64–8192, kumoa-toiminnolla."
+    },
+    "minesweeper": {
+      "name": "Miinaharava",
+      "desc": "Klassinen miinaharava: avaa ruutuja, aseta lippuja ja päättele numeroista, missä miinat ovat; 10 tasoa 8x8:sta 18x18:aan, toimii myös puhelimella."
+    },
+    "block-puzzle": {
+      "name": "Putoavat palikat",
+      "desc": "Käännä ja pinoa putoavia palikoita rivien poistamiseksi; 10 yhä nopeampaa tasoa, näppäimistöllä tai kosketuspainikkeilla."
+    },
+    "snake": {
+      "name": "Matopeli",
+      "desc": "Ohjaa matoa syömään ja kasvamaan väistellen seiniä ja omaa häntääsi; 10 nopeutuvaa tasoa esteineen."
+    },
+    "solitaire": {
+      "name": "Pasianssi",
+      "desc": "Klassinen Klondike-pasianssi: lado kortit vuorovärein ja siirrä ne peruspinoihin ässästä kuninkaaseen; nosta 1 tai 3, kumoa ja vihjeet."
+    },
+    "spider-solitaire": {
+      "name": "Hämähäkkipasianssi",
+      "desc": "Hämähäkki 1, 2 ja 4 maalla: rakenna samaa maata olevia jonoja kuninkaasta ässään poistaaksesi ne pöydältä; 10 tasoa, kumoa ja vihjeet."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-pasianssi: kaikki kortit kuvapuoli ylöspäin; siirrä kortit peruspinoihin vapaiden solujen avulla; 10 tasoa yhä vähemmillä soluilla."
+    },
+    "gomoku": {
+      "name": "Gomoku (viisi rivissä)",
+      "desc": "Pelaa gomokua eli viittä rivissä tietokonetta vastaan 15x15-laudalla; 10 tasoa helposta vaikeaan, kumoa-toiminnolla."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Saarra vastustajan kiekot kääntääksesi ne omaan väriisi; pelaa 8x8-Reversiä tietokonetta vastaan 10 tasolla."
+    },
+    "connect-four": {
+      "name": "Neljän suora",
+      "desc": "Pudota kiekkoja sarakkeisiin ja saa 4 riviin vaakaan, pystyyn tai vinoon ennen tietokonetta; 10 tasoa helposta vaikeaan."
+    },
+    "match-3": {
+      "name": "Kolmen suora",
+      "desc": "Vaihda karkkien paikkoja yhdistääksesi vähintään 3 samanlaista ja käynnistä ketjureaktioita; 10 tasoa tavoitepisteillä ja rajatuilla siirroilla."
+    },
+    "brick-breaker": {
+      "name": "Tiilenrikkoja",
+      "desc": "Ohjaa mailaa ja kimmota palloa rikkoaksesi kaikki tiilet; 10 kenttää eri kuvioin, hiirellä, kosketuksella tai näppäimillä."
     }
   },
   "s": {

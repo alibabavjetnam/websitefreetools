@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Play online",
     "lib.game.fullscreen": "Full screen",
     "lib.game.exitFullscreen": "Exit full screen",
-    "share.label": "Share"
+    "share.label": "Share",
+    "lib.arcade.aiNoMove": "The computer has no legal move — your turn.",
+    "lib.arcade.autoFinish": "Auto-finish",
+    "lib.arcade.best": "Best: {n}",
+    "lib.arcade.blocksBoard": "Falling blocks board",
+    "lib.arcade.breakoutBoard": "Brick breaker field",
+    "lib.arcade.dealRow": "Deal a new row",
+    "lib.arcade.down": "Down",
+    "lib.arcade.drawN": "Draw {n}",
+    "lib.arcade.drop": "Hard drop",
+    "lib.arcade.flagMode": "Flag mode",
+    "lib.arcade.freeCells": "Free cells: {n}",
+    "lib.arcade.left": "Left",
+    "lib.arcade.length": "Length: {n}/{t}",
+    "lib.arcade.lines": "Lines: {n}/{t}",
+    "lib.arcade.minesLeft": "Mines: {n}",
+    "lib.arcade.moves": "Moves: {n}",
+    "lib.arcade.movesLeft": "{n} moves left",
+    "lib.arcade.mustPass": "You have no legal move — you pass.",
+    "lib.arcade.next": "Next pieces",
+    "lib.arcade.noHint": "No useful move left. Draw a card, deal a new row or start over.",
+    "lib.arcade.note.2048": "Use the arrow keys or swipe to slide every tile. Two tiles with the same number merge into one when they touch. Make a tile equal to the target to clear the level; if no tile can move, you lose.",
+    "lib.arcade.note.blocks": "Rotate and place the falling pieces to fill horizontal lines; full lines disappear. ← → move, ↑ rotates, ↓ soft drops, Space hard drops, P pauses. Clear the required number of lines to pass the level; if the stack reaches the top, you lose.",
+    "lib.arcade.note.breakout": "Move the mouse, drag your finger on the field or use ← → to steer the paddle and keep the ball in play. Break every brick to clear the level; bricks with a thick border take two hits. You have 3 lives. Press Space to start or pause.",
+    "lib.arcade.note.connect4": "You play red and move first. Tap a column to drop a disc; it falls to the lowest empty spot. The first to line up 4 discs horizontally, vertically or diagonally wins.",
+    "lib.arcade.note.freecell": "All cards are face up. Move all 52 cards to the 4 foundations by suit, from A to K. On the tableau, build down in alternating colors. The free cells at the top left hold one card each; how many cards you can move at once depends on the free cells and empty columns. Higher levels have fewer free cells.",
+    "lib.arcade.note.gomoku": "You play X and move first; the computer plays O. Take turns placing a mark on an empty point of the 15×15 board. The first to get 5 in a row horizontally, vertically or diagonally wins.",
+    "lib.arcade.note.klondike": "Move all 52 cards to the 4 foundations by suit, from A to K. On the tableau, build down in alternating colors; only a K can go into an empty column. Tap the face-down pile at the top left to draw. Tap a card and then where you want it, or tap the card again to send it to a valid spot. Levels 1–5 draw 1 card, levels 6–10 draw 3.",
+    "lib.arcade.note.match3": "Swap two neighboring pieces (tap one then the other, or swipe) to make a line of 3 or more of the same kind; the line pops and the pieces above fall down. Chain reactions multiply your points. Reach the target score before you run out of moves.",
+    "lib.arcade.note.minesweeper": "Tap a cell to open it. A number shows how many mines are in the 8 cells around it. Flag a suspected mine with a right click, a long press or Flag mode. Tap a number that already has enough flags around it to open the rest quickly. Open every cell without a mine to win.",
+    "lib.arcade.note.reversi": "You play Black and move first. Place a disc so that it traps one or more White discs between it and another Black disc (horizontally, vertically or diagonally); the trapped discs flip to your color. If you have no legal move, you pass. When the board is full, whoever has more discs wins.",
+    "lib.arcade.note.snake": "Steer the snake with the arrow keys, WASD, the buttons below or by swiping. Eat the red food to grow; reach the required length to pass the level. From level 3, hitting a wall ends the game; higher levels add obstacles. Don't bite your own tail.",
+    "lib.arcade.note.spider": "Build each suit into a run from K down to A on the tableau; a complete 13-card run is removed automatically. Any card can go on a card one rank higher, but only same-suit runs move together. When you're stuck, tap Deal a new row (every column must have cards). Levels 1–3 use one suit, 4–7 two suits, 8–10 four suits.",
+    "lib.arcade.pause": "Pause",
+    "lib.arcade.paused": "Paused",
+    "lib.arcade.right": "Right",
+    "lib.arcade.rotate": "Rotate",
+    "lib.arcade.score": "Score: {n}",
+    "lib.arcade.shuffled": "No moves left — the board was reshuffled.",
+    "lib.arcade.snakeBoard": "Snake field",
+    "lib.arcade.suitsN": "{n} suits",
+    "lib.arcade.target": "Target: {n}",
+    "lib.arcade.up": "Up",
+    "lib.arcade.youVsAi": "You {a} – Computer {b}",
+    "lib.arcade.noHintFc": "No useful move left. Try undoing a few moves or start over."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Entertainment & Games",
-      "desc": "Lucky wheel, random numbers, prize draws and brain games: Sudoku, chess, xiangqi, Go and memory."
+      "desc": "Lucky wheel, random numbers and browser games: Sudoku, chess, Chinese chess, Gomoku, 2048, Minesweeper, falling blocks, Snake, solitaire, Brick Breaker."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Dark Chess",
       "desc": "Play Vietnamese dark Xiangqi: pieces start face down and flip after their first move. Play the computer across 10 levels or play online with friends or new opponents."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Slide and merge matching numbers to build the 2048 tile; 10 levels with targets from 64 to 8192, with undo."
+    },
+    "minesweeper": {
+      "name": "Minesweeper",
+      "desc": "Classic Minesweeper: open cells, place flags and work out where the mines are from the numbers; 10 levels from 8x8 to 18x18, works on phones."
+    },
+    "block-puzzle": {
+      "name": "Falling Blocks",
+      "desc": "Rotate and stack falling blocks to clear lines; 10 levels of increasing speed, play with the keyboard or touch buttons."
+    },
+    "snake": {
+      "name": "Snake",
+      "desc": "Steer the snake to eat and grow while avoiding walls and your own tail; 10 levels of increasing speed with obstacles."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Classic Klondike Solitaire: build down in alternating colors and move cards to the foundations from A to K; draw 1 or 3, with undo and hints."
+    },
+    "spider-solitaire": {
+      "name": "Spider Solitaire",
+      "desc": "Spider Solitaire with 1, 2 and 4 suits: build same-suit runs from K to A to clear them off the table; 10 levels with undo and hints."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: every card is face up; use the free cells to move cards to the foundations; 10 levels with fewer free cells as you go."
+    },
+    "gomoku": {
+      "name": "Gomoku (Five in a Row)",
+      "desc": "Play Gomoku, five in a row, against the computer on a 15x15 board; 10 levels from easy to hard, with undo."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Trap your opponent's discs to flip them to your color; play 8x8 Reversi against the computer across 10 levels."
+    },
+    "connect-four": {
+      "name": "Four in a Row",
+      "desc": "Drop discs into columns and line up 4 in a row horizontally, vertically or diagonally before the computer; 10 levels from easy to hard."
+    },
+    "match-3": {
+      "name": "Match 3",
+      "desc": "Swap candies to match 3 or more of a kind and set off chain reactions; 10 levels with a target score and a move limit."
+    },
+    "brick-breaker": {
+      "name": "Brick Breaker",
+      "desc": "Steer the paddle and bounce the ball to break every brick; 10 stages with different layouts, play with mouse, touch or keys."
     }
   },
   "s": {

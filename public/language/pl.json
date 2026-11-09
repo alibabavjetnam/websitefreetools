@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Graj online",
     "lib.game.fullscreen": "Pełny ekran",
     "lib.game.exitFullscreen": "Zamknij pełny ekran",
-    "share.label": "Udostępnij"
+    "share.label": "Udostępnij",
+    "lib.arcade.aiNoMove": "Komputer nie ma ruchu — twoja kolej.",
+    "lib.arcade.autoFinish": "Odłóż wszystko",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Plansza spadających klocków",
+    "lib.arcade.breakoutBoard": "Plansza rozbijania cegieł",
+    "lib.arcade.dealRow": "Rozdaj rząd",
+    "lib.arcade.down": "W dół",
+    "lib.arcade.drawN": "Dobieraj po {n}",
+    "lib.arcade.drop": "Zrzuć",
+    "lib.arcade.flagMode": "Tryb flag",
+    "lib.arcade.freeCells": "Wolne komórki: {n}",
+    "lib.arcade.left": "W lewo",
+    "lib.arcade.length": "Długość: {n}/{t}",
+    "lib.arcade.lines": "Linie: {n}/{t}",
+    "lib.arcade.minesLeft": "Miny: {n}",
+    "lib.arcade.moves": "Ruchy: {n}",
+    "lib.arcade.movesLeft": "Zostało ruchów: {n}",
+    "lib.arcade.mustPass": "Nie masz ruchu — tracisz kolejkę.",
+    "lib.arcade.next": "Następne klocki",
+    "lib.arcade.noHint": "Brak sensownych ruchów. Dobierz kartę, rozdaj rząd albo zacznij od nowa.",
+    "lib.arcade.note.2048": "Strzałkami lub przesunięciem palca przesuwasz wszystkie kafelki. Dwa kafelki z tą samą liczbą łączą się, gdy się zetkną. Zrób kafelek równy celowi, by przejść poziom; jeśli nic już się nie rusza, przegrywasz.",
+    "lib.arcade.note.blocks": "Obracaj i układaj spadające klocki, by wypełniać poziome linie; pełne linie znikają. ← → ruch, ↑ obrót, ↓ szybciej w dół, spacja zrzut, P pauza. Usuń wymaganą liczbę linii, by przejść poziom; gdy klocki dojdą do góry, przegrywasz.",
+    "lib.arcade.note.breakout": "Ruszaj myszą, przeciągaj palcem po planszy lub używaj ← →, by sterować paletką i nie upuścić piłki. Rozbij wszystkie cegły, by przejść poziom; cegły z grubą ramką trzeba trafić dwa razy. Masz 3 życia. Spacja startuje lub pauzuje.",
+    "lib.arcade.note.connect4": "Grasz czerwonymi i zaczynasz. Stuknij kolumnę, by wrzucić krążek; spada na najniższe wolne pole. Wygrywa ten, kto pierwszy ułoży 4 krążki w poziomie, pionie lub po skosie.",
+    "lib.arcade.note.freecell": "Wszystkie karty są odkryte. Przełóż wszystkie 52 karty na 4 stosy bazowe według koloru, od A do K. Na stole układaj malejąco, na przemian czerwone i czarne. Wolne komórki w lewym górnym rogu mieszczą po jednej karcie; ile kart przeniesiesz naraz, zależy od wolnych komórek i pustych kolumn. Wyższe poziomy mają mniej komórek.",
+    "lib.arcade.note.gomoku": "Grasz krzyżykiem i zaczynasz; komputer gra kółkiem. Na zmianę stawiacie znak na wolnym polu planszy 15×15. Wygrywa ten, kto pierwszy ułoży 5 w rzędzie w poziomie, pionie lub po skosie.",
+    "lib.arcade.note.klondike": "Przełóż wszystkie 52 karty na 4 stosy bazowe według koloru, od A do K. Na stole układaj malejąco, na przemian czerwone i czarne; do pustej kolumny można dać tylko K. Stuknij zakryty stos w lewym górnym rogu, by dobrać karty. Stuknij kartę, a potem miejsce docelowe, albo stuknij ją jeszcze raz, by sama trafiła na dozwolone miejsce. Poziomy 1–5: dobierasz 1 kartę, 6–10: 3 karty.",
+    "lib.arcade.note.match3": "Zamień dwa sąsiednie elementy (stuknij jeden, potem drugi, albo przesuń), by ułożyć rząd 3 lub więcej takich samych; rząd znika, a elementy z góry spadają. Reakcje łańcuchowe mnożą punkty. Zdobądź wymagany wynik, zanim skończą się ruchy.",
+    "lib.arcade.note.minesweeper": "Stuknij pole, by je odkryć. Liczba mówi, ile min jest w 8 sąsiednich polach. Oznacz podejrzane pole flagą prawym przyciskiem, długim przytrzymaniem lub w trybie flag. Stuknij liczbę, wokół której jest już dość flag, by szybko odkryć resztę. Odkryj wszystkie pola bez min, by wygrać.",
+    "lib.arcade.note.reversi": "Grasz czarnymi i zaczynasz. Połóż pionek tak, by zamknąć jeden lub więcej białych między nim a innym czarnym (w poziomie, pionie, po skosie); zamknięte pionki zmieniają kolor na twój. Bez ruchu tracisz kolejkę. Gdy plansza się zapełni, wygrywa ten, kto ma więcej pionków.",
+    "lib.arcade.note.snake": "Steruj wężem strzałkami, WASD, przyciskami poniżej lub przesunięciem palca. Jedz czerwone jedzenie, by rosnąć; osiągnij wymaganą długość, by przejść poziom. Od poziomu 3 uderzenie w ścianę oznacza przegraną; wyższe poziomy mają przeszkody. Nie gryź własnego ogona.",
+    "lib.arcade.note.spider": "Ułóż na stole każdy kolor w sekwencję od K do A; pełne sekwencje 13 kart znikają same. Każdą kartę można położyć na kartę o jeden wyższą, ale razem przenosi się tylko sekwencje jednego koloru. Gdy utkniesz, stuknij Rozdaj rząd (każda kolumna musi mieć karty). Poziomy 1–3: jeden kolor, 4–7: dwa, 8–10: cztery.",
+    "lib.arcade.pause": "Pauza",
+    "lib.arcade.paused": "Wstrzymano",
+    "lib.arcade.right": "W prawo",
+    "lib.arcade.rotate": "Obróć",
+    "lib.arcade.score": "Wynik: {n}",
+    "lib.arcade.shuffled": "Brak ruchów — plansza została przetasowana.",
+    "lib.arcade.snakeBoard": "Plansza węża",
+    "lib.arcade.suitsN": "Kolory: {n}",
+    "lib.arcade.target": "Cel: {n}",
+    "lib.arcade.up": "W górę",
+    "lib.arcade.youVsAi": "Ty {a} – Komputer {b}",
+    "lib.arcade.noHintFc": "Brak przydatnych ruchów. Cofnij kilka ruchów albo zacznij od nowa."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Rozrywka i gry",
-      "desc": "Koło fortuny, generator liczb losowych, losowanie nagród i zabawne gry."
+      "desc": "Koło fortuny, liczby losowe i gry w przeglądarce: sudoku, szachy, szachy chińskie, gomoku, 2048, saper, spadające klocki, wąż, pasjans i rozbijanie cegieł."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Zakryte Xiangqi",
       "desc": "Zagraj w wietnamskie zakryte Xiangqi: figury zaczynają zakryte i odsłaniają się po pierwszym ruchu. Z komputerem na 10 poziomach albo online ze znajomymi i nowymi przeciwnikami."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Przesuwaj i łącz takie same liczby, aż powstanie kafelek 2048; 10 poziomów z celami od 64 do 8192, z cofaniem."
+    },
+    "minesweeper": {
+      "name": "Saper",
+      "desc": "Klasyczny saper: odkrywaj pola, stawiaj flagi i wnioskuj z liczb, gdzie są miny; 10 poziomów od 8x8 do 18x18, działa też na telefonie."
+    },
+    "block-puzzle": {
+      "name": "Spadające klocki",
+      "desc": "Obracaj i układaj spadające klocki, by usuwać linie; 10 coraz szybszych poziomów, klawiatura lub przyciski dotykowe."
+    },
+    "snake": {
+      "name": "Wąż",
+      "desc": "Prowadź węża do jedzenia, by rósł, omijając ściany i własny ogon; 10 coraz szybszych poziomów z przeszkodami."
+    },
+    "solitaire": {
+      "name": "Pasjans",
+      "desc": "Klasyczny pasjans Klondike: układaj na przemian kolorami i odkładaj karty na stosy od A do K; dobieranie po 1 lub 3, z cofaniem i podpowiedziami."
+    },
+    "spider-solitaire": {
+      "name": "Pasjans Pająk",
+      "desc": "Pająk na 1, 2 i 4 kolory: układaj sekwencje jednego koloru od K do A, by zdjąć je ze stołu; 10 poziomów z cofaniem i podpowiedziami."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Pasjans FreeCell: wszystkie karty odkryte; używaj wolnych komórek, by odłożyć karty na stosy; 10 poziomów z coraz mniejszą liczbą komórek."
+    },
+    "gomoku": {
+      "name": "Gomoku (pięć w rzędzie)",
+      "desc": "Graj w gomoku, pięć w rzędzie, z komputerem na planszy 15x15; 10 poziomów od łatwego do trudnego, z cofaniem."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Zamykaj pionki przeciwnika, by obrócić je na swój kolor; graj w Reversi 8x8 z komputerem na 10 poziomach."
+    },
+    "connect-four": {
+      "name": "Cztery w rzędzie",
+      "desc": "Wrzucaj krążki do kolumn i ułóż 4 w poziomie, pionie lub po skosie przed komputerem; 10 poziomów od łatwego do trudnego."
+    },
+    "match-3": {
+      "name": "Połącz 3",
+      "desc": "Zamieniaj cukierki, by łączyć 3 lub więcej takich samych i wywoływać reakcje łańcuchowe; 10 poziomów z celem punktowym i limitem ruchów."
+    },
+    "brick-breaker": {
+      "name": "Rozbijanie cegieł",
+      "desc": "Steruj paletką i odbijaj piłkę, by rozbić wszystkie cegły; 10 etapów o różnych układach, mysz, dotyk lub klawiatura."
     }
   },
   "s": {

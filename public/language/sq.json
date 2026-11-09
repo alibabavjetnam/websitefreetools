@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Kundërshtari kaloi. Nëse kalon edhe ti, loja mbaron dhe numërohet.",
     "lib.online.modeAi": "Luaj me kompjuterin",
     "lib.online.modeOnline": "Luaj online",
-    "share.label": "Ndaj"
+    "share.label": "Ndaj",
+    "lib.arcade.aiNoMove": "Kompjuteri nuk ka lëvizje të vlefshme — është radha jote.",
+    "lib.arcade.autoFinish": "Përfundo automatikisht",
+    "lib.arcade.best": "Rekordi: {n}",
+    "lib.arcade.blocksBoard": "Fusha e blloqeve që bien",
+    "lib.arcade.breakoutBoard": "Fusha e thyerjes së tullave",
+    "lib.arcade.dealRow": "Shpërndaj një rresht të ri",
+    "lib.arcade.down": "Poshtë",
+    "lib.arcade.drawN": "Merr {n}",
+    "lib.arcade.drop": "Lësho menjëherë",
+    "lib.arcade.flagMode": "Modaliteti i flamurit",
+    "lib.arcade.freeCells": "Qeliza të lira: {n}",
+    "lib.arcade.left": "Majtas",
+    "lib.arcade.length": "Gjatësia: {n}/{t}",
+    "lib.arcade.lines": "Rreshta: {n}/{t}",
+    "lib.arcade.minesLeft": "Mina: {n}",
+    "lib.arcade.moves": "Lëvizje: {n}",
+    "lib.arcade.movesLeft": "Mbeten {n} lëvizje",
+    "lib.arcade.mustPass": "Nuk ke lëvizje të vlefshme — e humb radhën.",
+    "lib.arcade.next": "Pjesët e radhës",
+    "lib.arcade.noHint": "Nuk ka më lëvizje të dobishme. Merr një letër, shpërndaj një rresht të ri ose fillo nga e para.",
+    "lib.arcade.note.2048": "Përdor shigjetat ose rrëshqit gishtin për të lëvizur të gjitha pllakat. Dy pllaka me të njëjtin numër bashkohen kur prekin njëra-tjetrën. Krijo një pllakë sa objektivi për të kaluar nivelin; nëse asnjë pllakë nuk lëviz më, humb.",
+    "lib.arcade.note.blocks": "Rrotullo dhe vendos pjesët që bien për të mbushur rreshta horizontalë; rreshtat e plotë zhduken. ← → lëviz, ↑ rrotullo, ↓ zbrit më shpejt, Hapësira lësho menjëherë, P pushim. Pastro numrin e kërkuar të rreshtave për të kaluar nivelin; nëse pjesët arrijnë lart, humb.",
+    "lib.arcade.note.breakout": "Lëviz miun, tërhiq gishtin në fushë ose përdor ← → për të drejtuar dërrasën dhe për ta mbajtur topin në lojë. Thyej të gjitha tullat për të kaluar nivelin; tullat me buzë të trashë duan dy goditje. Ke 3 jetë. Hapësira nis ose ndal lojën.",
+    "lib.arcade.note.connect4": "Ti luan me të kuqen dhe nis i pari. Prek një kolonë për të lëshuar një disk; ai bie në vendin më të ulët të lirë. Fiton kush rreshton i pari 4 disqe horizontalisht, vertikalisht ose diagonalisht.",
+    "lib.arcade.note.freecell": "Të gjitha letrat janë të hapura. Çoji të 52 letrat në 4 bazat sipas ngjyrës, nga A te K. Në tavolinë, rendit në rënie me ngjyra të alternuara. Qelizat e lira lart majtas mbajnë nga një letër; sa letra mund të lëvizësh njëherësh varet nga qelizat e lira dhe kolonat bosh. Nivelet e larta kanë më pak qeliza.",
+    "lib.arcade.note.gomoku": "Ti luan me X dhe nis i pari; kompjuteri luan me O. Me radhë vendosni një shenjë në një pikë të lirë të fushës 15×15. Fiton kush bën i pari 5 në rresht horizontalisht, vertikalisht ose diagonalisht.",
+    "lib.arcade.note.klondike": "Çoji të 52 letrat në 4 bazat sipas ngjyrës, nga A te K. Në tavolinë, rendit në rënie me ngjyra të alternuara; vetëm një K mund të shkojë në kolonë bosh. Prek grumbullin e mbyllur lart majtas për të marrë letra. Prek një letër dhe pastaj vendin ku do ta çosh, ose prek sërish për ta çuar vetë në një vend të vlefshëm. Nivelet 1–5: merr 1; nivelet 6–10: merr 3.",
+    "lib.arcade.note.match3": "Ndërro dy pjesë fqinje (prek njërën e pastaj tjetrën, ose rrëshqit) për të krijuar një rresht me 3 ose më shumë të njëjta; rreshti shpërthen dhe pjesët sipër bien. Reaksionet zinxhir shumëfishojnë pikët. Arri pikët e objektivit para se të mbarojnë lëvizjet.",
+    "lib.arcade.note.minesweeper": "Prek një qelizë për ta hapur. Numri tregon sa mina ka në 8 qelizat përreth. Shëno një minë të dyshuar me klik të djathtë, shtypje të gjatë ose modalitetin e flamurit. Prek një numër që ka tashmë mjaft flamuj përreth për të hapur shpejt të tjerat. Hap të gjitha qelizat pa mina për të fituar.",
+    "lib.arcade.note.reversi": "Ti luan me të zezat dhe nis i pari. Vendos një disk që të zërë një ose më shumë disqe të bardhë mes tij dhe një disku tjetër të zi (horizontalisht, vertikalisht ose diagonalisht); disqet e zëna kthehen në ngjyrën tënde. Nëse s'ke lëvizje të vlefshme, e humb radhën. Kur fusha mbushet, fiton kush ka më shumë disqe.",
+    "lib.arcade.note.snake": "Drejto gjarprin me shigjetat, WASD, butonat poshtë ose duke rrëshqitur. Ha ushqimin e kuq për t'u rritur; arri gjatësinë e kërkuar për të kaluar nivelin. Nga niveli 3, përplasja me murin e mbyll lojën; nivelet e larta kanë pengesa. Mos u përplas me bishtin tënd.",
+    "lib.arcade.note.spider": "Në tavolinë, ndërto për çdo ngjyrë një varg nga K deri te A; vargu i plotë me 13 letra hiqet vetë. Çdo letër mund të vihet mbi një letër një shkallë më të lartë, por vetëm vargjet e së njëjtës ngjyrë lëvizin bashkë. Nëse ngec, prek Shpërndaj një rresht të ri (çdo kolonë duhet të ketë letra). Nivelet 1–3: një ngjyrë; 4–7: dy; 8–10: katër.",
+    "lib.arcade.pause": "Pushim",
+    "lib.arcade.paused": "Në pushim",
+    "lib.arcade.right": "Djathtas",
+    "lib.arcade.rotate": "Rrotullo",
+    "lib.arcade.score": "Pikë: {n}",
+    "lib.arcade.shuffled": "Nuk kishte më lëvizje — fusha u përzie.",
+    "lib.arcade.snakeBoard": "Fusha e gjarprit",
+    "lib.arcade.suitsN": "{n} ngjyra",
+    "lib.arcade.target": "Objektivi: {n}",
+    "lib.arcade.up": "Lart",
+    "lib.arcade.youVsAi": "Ti {a} – Kompjuteri {b}",
+    "lib.arcade.noHintFc": "Nuk ka më lëvizje të dobishme. Zhbëj disa lëvizje ose fillo nga e para."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Argëtim dhe lojëra",
-      "desc": "Rrota e fatit, gjeneratori i numrave të rastësishëm, shorti i çmimeve dhe lojëra argëtuese."
+      "desc": "Rrota e fatit, numra të rastësishëm dhe lojëra në shfletues: Sudoku, shah, shah kinez, Gomoku, 2048, minat, blloqet që bien, gjarpri, pasians dhe thyesi i tullave."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi i fshehur",
       "desc": "Luaj Xiangqi të fshehur vietnamez: gurët nisin përmbys dhe kthehen pas lëvizjes së parë. Me kompjuterin në 10 nivele ose online me miq dhe kundërshtarë të rinj."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Rrëshqit dhe bashko numrat e njëjtë deri te pllaka 2048; 10 nivele me objektiva nga 64 deri në 8192, me zhbërje."
+    },
+    "minesweeper": {
+      "name": "Minat",
+      "desc": "Loja klasike e minave: hap qeliza, vendos flamuj dhe gjej nga numrat ku janë minat; 10 nivele nga 8x8 deri në 18x18, punon edhe në telefon."
+    },
+    "block-puzzle": {
+      "name": "Blloqet që bien",
+      "desc": "Rrotullo dhe grumbullo blloqet që bien për të pastruar rreshta; 10 nivele gjithnjë e më të shpejta, me tastierë ose butona prekjeje."
+    },
+    "snake": {
+      "name": "Gjarpri",
+      "desc": "Drejto gjarprin të hajë e të rritet duke shmangur muret dhe bishtin e vet; 10 nivele më të shpejta me pengesa."
+    },
+    "solitaire": {
+      "name": "Pasians",
+      "desc": "Pasians klasik Klondike: rendit me ngjyra të alternuara dhe çoji letrat në baza nga A te K; merr 1 ose 3, me zhbërje dhe ndihma."
+    },
+    "spider-solitaire": {
+      "name": "Pasians Merimanga",
+      "desc": "Merimanga me 1, 2 dhe 4 ngjyra: ndërto vargje të së njëjtës ngjyrë nga K te A për t'i hequr nga tavolina; 10 nivele me zhbërje dhe ndihma."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Pasians FreeCell: të gjitha letrat të hapura; përdor qelizat e lira për t'i çuar letrat në baza; 10 nivele me gjithnjë e më pak qeliza."
+    },
+    "gomoku": {
+      "name": "Gomoku (pesë në rresht)",
+      "desc": "Luaj Gomoku, pesë në rresht, kundër kompjuterit në fushë 15x15; 10 nivele nga e lehtë te e vështirë, me zhbërje."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Zër disqet e kundërshtarit për t'i kthyer në ngjyrën tënde; luaj Reversi 8x8 kundër kompjuterit në 10 nivele."
+    },
+    "connect-four": {
+      "name": "Katër në rresht",
+      "desc": "Lësho disqe në kolona dhe rreshto 4 horizontalisht, vertikalisht ose diagonalisht para kompjuterit; 10 nivele nga e lehtë te e vështirë."
+    },
+    "match-3": {
+      "name": "Bashko 3",
+      "desc": "Ndërro karamele për të bashkuar 3 ose më shumë të njëjta dhe për të nisur reaksione zinxhir; 10 nivele me pikë objektiv dhe lëvizje të kufizuara."
+    },
+    "brick-breaker": {
+      "name": "Thyesi i tullave",
+      "desc": "Drejto dërrasën dhe kërce topin për të thyer çdo tullë; 10 faza me rregullime të ndryshme, me mi, prekje ose taste."
     }
   },
   "s": {

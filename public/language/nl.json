@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Online spelen",
     "lib.game.fullscreen": "Volledig scherm",
     "lib.game.exitFullscreen": "Volledig scherm afsluiten",
-    "share.label": "Delen"
+    "share.label": "Delen",
+    "lib.arcade.aiNoMove": "De computer kan geen zet doen — jij bent aan de beurt.",
+    "lib.arcade.autoFinish": "Alles wegleggen",
+    "lib.arcade.best": "Record: {n}",
+    "lib.arcade.blocksBoard": "Speelveld met vallende blokken",
+    "lib.arcade.breakoutBoard": "Speelveld voor stenen breken",
+    "lib.arcade.dealRow": "Nieuwe rij delen",
+    "lib.arcade.down": "Omlaag",
+    "lib.arcade.drawN": "{n} pakken",
+    "lib.arcade.drop": "Laten vallen",
+    "lib.arcade.flagMode": "Vlagmodus",
+    "lib.arcade.freeCells": "Vrije cellen: {n}",
+    "lib.arcade.left": "Links",
+    "lib.arcade.length": "Lengte: {n}/{t}",
+    "lib.arcade.lines": "Rijen: {n}/{t}",
+    "lib.arcade.minesLeft": "Mijnen: {n}",
+    "lib.arcade.moves": "Zetten: {n}",
+    "lib.arcade.movesLeft": "Nog {n} zetten",
+    "lib.arcade.mustPass": "Je kunt geen zet doen — je past.",
+    "lib.arcade.next": "Volgende blokken",
+    "lib.arcade.noHint": "Geen zinvolle zet meer. Pak een kaart, deel een rij of begin opnieuw.",
+    "lib.arcade.note.2048": "Gebruik de pijltjestoetsen of veeg om alle tegels te schuiven. Twee tegels met hetzelfde getal smelten samen als ze elkaar raken. Maak een tegel gelijk aan het doel om het level te halen; kan er niets meer bewegen, dan verlies je.",
+    "lib.arcade.note.blocks": "Draai en plaats de vallende blokken om horizontale rijen te vullen; volle rijen verdwijnen. ← → verplaatsen, ↑ draaien, ↓ sneller vallen, spatie laten vallen, P pauze. Wis genoeg rijen om het level te halen; reikt de stapel tot boven, dan verlies je.",
+    "lib.arcade.note.breakout": "Beweeg de muis, sleep met je vinger over het veld of gebruik ← → om het batje te sturen en de bal in het spel te houden. Breek alle stenen om het level te halen; stenen met een dikke rand moet je twee keer raken. Je hebt 3 levens. Spatie start of pauzeert.",
+    "lib.arcade.note.connect4": "Jij speelt rood en begint. Tik op een kolom om een schijf te laten vallen; die valt naar de laagste vrije plek. Wie als eerste 4 schijven op een rij heeft, horizontaal, verticaal of diagonaal, wint.",
+    "lib.arcade.note.freecell": "Alle kaarten liggen open. Leg alle 52 kaarten per kleur van A tot K op de 4 aflegstapels. Op tafel leg je aflopend en afwisselend rood en zwart. De vrije cellen linksboven houden elk één kaart; hoeveel kaarten je tegelijk kunt verplaatsen hangt af van vrije cellen en lege kolommen. Hogere levels hebben minder vrije cellen.",
+    "lib.arcade.note.gomoku": "Jij speelt X en begint; de computer speelt O. Om de beurt zet je een teken op een vrij punt van het 15×15-bord. Wie als eerste 5 op een rij heeft, horizontaal, verticaal of diagonaal, wint.",
+    "lib.arcade.note.klondike": "Leg alle 52 kaarten per kleur van A tot K op de 4 aflegstapels. Op tafel leg je aflopend en afwisselend rood en zwart; alleen een K mag in een lege kolom. Tik op de dichte stapel linksboven om kaarten te pakken. Tik op een kaart en dan op de plek waar die heen moet, of tik nog eens op de kaart om hem naar een geldige plek te sturen. Level 1–5: 1 kaart pakken, level 6–10: 3 kaarten.",
+    "lib.arcade.note.match3": "Wissel twee buren om (tik ze na elkaar aan of veeg) om een rij van 3 of meer gelijke te maken; de rij knalt weg en de stukken erboven vallen naar beneden. Kettingreacties vermenigvuldigen je punten. Haal de doelscore voordat je zetten op zijn.",
+    "lib.arcade.note.minesweeper": "Tik op een vakje om het te openen. Het getal toont hoeveel mijnen er in de 8 omliggende vakjes liggen. Markeer een verdacht vakje met rechtsklikken, lang drukken of de vlagmodus. Tik op een getal met genoeg vlaggen eromheen om de rest snel te openen. Open alle vakjes zonder mijn om te winnen.",
+    "lib.arcade.note.reversi": "Jij speelt zwart en begint. Leg een schijf zo dat je één of meer witte schijven insluit tussen die schijf en een andere zwarte (horizontaal, verticaal of diagonaal); de ingesloten schijven worden van jouw kleur. Kun je niet zetten, dan pas je. Is het bord vol, dan wint wie de meeste schijven heeft.",
+    "lib.arcade.note.snake": "Stuur de slang met de pijltjestoetsen, WASD, de knoppen eronder of door te vegen. Eet het rode voer om te groeien; haal de vereiste lengte om het level te halen. Vanaf level 3 verlies je als je tegen de muur botst; hogere levels hebben obstakels. Bijt niet in je eigen staart.",
+    "lib.arcade.note.spider": "Maak op tafel van elke kleur een reeks van K tot A; volledige reeksen van 13 kaarten verdwijnen vanzelf. Elke kaart past op een kaart die één hoger is, maar alleen reeksen van dezelfde kleur verplaats je samen. Zit je vast, tik dan op Nieuwe rij delen (elke kolom moet kaarten hebben). Level 1–3: één kleur, 4–7: twee, 8–10: vier.",
+    "lib.arcade.pause": "Pauze",
+    "lib.arcade.paused": "Gepauzeerd",
+    "lib.arcade.right": "Rechts",
+    "lib.arcade.rotate": "Draaien",
+    "lib.arcade.score": "Score: {n}",
+    "lib.arcade.shuffled": "Geen zetten meer — het bord is opnieuw geschud.",
+    "lib.arcade.snakeBoard": "Speelveld voor de slang",
+    "lib.arcade.suitsN": "{n} kleuren",
+    "lib.arcade.target": "Doel: {n}",
+    "lib.arcade.up": "Omhoog",
+    "lib.arcade.youVsAi": "Jij {a} – Computer {b}",
+    "lib.arcade.noHintFc": "Geen zinvolle zet meer. Maak een paar zetten ongedaan of begin opnieuw."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Entertainment & spellen",
-      "desc": "Rad van fortuin, willekeurige getallengenerator, prijstrekkingen en leuke spelletjes."
+      "desc": "Gelukswiel, willekeurige getallen en browserspellen: sudoku, schaken, Chinees schaken, gomoku, 2048, mijnenveger, vallende blokken, slang, patience en stenen breken."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Verdekt Xiangqi",
       "desc": "Speel Vietnamees verdekt Xiangqi: de stukken beginnen verdekt en worden na hun eerste zet omgedraaid. Tegen de computer op 10 niveaus of online met vrienden en nieuwe tegenstanders."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Schuif en voeg gelijke getallen samen tot de tegel 2048; 10 levels met doelen van 64 tot 8192, met ongedaan maken."
+    },
+    "minesweeper": {
+      "name": "Mijnenveger",
+      "desc": "De klassieke mijnenveger: open vakjes, zet vlaggen en leid uit de getallen af waar de mijnen liggen; 10 levels van 8x8 tot 18x18, ook op je telefoon."
+    },
+    "block-puzzle": {
+      "name": "Vallende blokken",
+      "desc": "Draai en stapel vallende blokken om rijen te wissen; 10 steeds snellere levels, met toetsenbord of aanraakknoppen."
+    },
+    "snake": {
+      "name": "Slang",
+      "desc": "Stuur de slang naar het voer om te groeien en ontwijk muren en je eigen staart; 10 snellere levels met obstakels."
+    },
+    "solitaire": {
+      "name": "Patience",
+      "desc": "Klassieke Klondike-patience: leg afwisselend rood en zwart en breng de kaarten van A tot K naar de aflegstapels; 1 of 3 kaarten pakken, met ongedaan maken en tips."
+    },
+    "spider-solitaire": {
+      "name": "Spider Patience",
+      "desc": "Spider met 1, 2 en 4 kleuren: maak reeksen van dezelfde kleur van K tot A om ze van tafel te halen; 10 levels met ongedaan maken en tips."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-patience: alle kaarten open; gebruik de vrije cellen om de kaarten af te leggen; 10 levels met steeds minder vrije cellen."
+    },
+    "gomoku": {
+      "name": "Gomoku (vijf op een rij)",
+      "desc": "Speel gomoku, vijf op een rij, tegen de computer op een bord van 15x15; 10 levels van makkelijk tot moeilijk, met ongedaan maken."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Sluit de schijven van je tegenstander in om ze naar jouw kleur te keren; speel 8x8-Reversi tegen de computer in 10 levels."
+    },
+    "connect-four": {
+      "name": "Vier op een rij",
+      "desc": "Laat schijven in de kolommen vallen en maak eerder dan de computer 4 op een rij, horizontaal, verticaal of diagonaal; 10 levels van makkelijk tot moeilijk."
+    },
+    "match-3": {
+      "name": "Match 3",
+      "desc": "Wissel snoepjes om 3 of meer gelijke te combineren en kettingreacties te starten; 10 levels met een doelscore en beperkte zetten."
+    },
+    "brick-breaker": {
+      "name": "Stenen breken",
+      "desc": "Stuur het batje en kaats de bal om alle stenen te breken; 10 levels met verschillende patronen, met muis, aanraking of toetsen."
     }
   },
   "s": {

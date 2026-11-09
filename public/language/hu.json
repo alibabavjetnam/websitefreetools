@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Az ellenfél passzolt. Ha te is passzolsz, a játszma véget ér, és megtörténik a számolás.",
     "lib.online.modeAi": "Játék a gép ellen",
     "lib.online.modeOnline": "Online játék",
-    "share.label": "Megosztás"
+    "share.label": "Megosztás",
+    "lib.arcade.aiNoMove": "A gépnek nincs szabályos lépése — te jössz.",
+    "lib.arcade.autoFinish": "Mindent felrak",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Lehulló elemek táblája",
+    "lib.arcade.breakoutBoard": "Téglatörő pálya",
+    "lib.arcade.dealRow": "Új sor osztása",
+    "lib.arcade.down": "Le",
+    "lib.arcade.drawN": "{n} lap húzása",
+    "lib.arcade.drop": "Ledobás",
+    "lib.arcade.flagMode": "Zászló mód",
+    "lib.arcade.freeCells": "Szabad cellák: {n}",
+    "lib.arcade.left": "Balra",
+    "lib.arcade.length": "Hossz: {n}/{t}",
+    "lib.arcade.lines": "Sorok: {n}/{t}",
+    "lib.arcade.minesLeft": "Aknák: {n}",
+    "lib.arcade.moves": "Lépések: {n}",
+    "lib.arcade.movesLeft": "Még {n} lépés",
+    "lib.arcade.mustPass": "Nincs szabályos lépésed — passzolsz.",
+    "lib.arcade.next": "Következő elemek",
+    "lib.arcade.noHint": "Nincs több hasznos lépés. Húzz egy lapot, ossz új sort, vagy kezdd újra.",
+    "lib.arcade.note.2048": "A nyilakkal vagy húzással mozgasd az összes lapkát. Két azonos számú lapka összeolvad, ha összeér. Készíts a célértékkel egyenlő lapkát a szint teljesítéséhez; ha semmi sem mozdul, vesztettél.",
+    "lib.arcade.note.blocks": "Forgasd és helyezd el a lehulló elemeket, hogy vízszintes sorokat tölts ki; a teli sorok eltűnnek. ← → mozgatás, ↑ forgatás, ↓ gyorsabb esés, szóköz ledobás, P szünet. Töröld a szükséges számú sort a szint teljesítéséhez; ha az elemek elérik a tetejét, vesztettél.",
+    "lib.arcade.note.breakout": "Mozgasd az egeret, húzd az ujjad a pályán, vagy használd a ← → billentyűket az ütő irányításához, és ne hagyd leesni a labdát. Törj össze minden téglát a szint teljesítéséhez; a vastag szegélyű téglákat kétszer kell eltalálni. 3 életed van. A szóköz indít vagy szüneteltet.",
+    "lib.arcade.note.connect4": "Pirossal játszol és te kezdesz. Koppints egy oszlopra, hogy bedobj egy korongot; az a legalsó szabad helyre esik. Aki elsőként rak ki 4 korongot vízszintesen, függőlegesen vagy átlósan, nyer.",
+    "lib.arcade.note.freecell": "Minden lap felfordítva van. Tedd át mind az 52 lapot a 4 alapkupacra színek szerint, ásztól királyig. Az asztalon csökkenő sorrendben, piros és fekete váltakozásával rakj. A bal felső szabad cellákba egy-egy lap fér; hogy egyszerre hány lapot mozgathatsz, a szabad cellák és üres oszlopok számától függ. Magasabb szinten kevesebb a szabad cella.",
+    "lib.arcade.note.gomoku": "X-szel játszol és te kezdesz; a gép O-val. Felváltva tesztek jelet a 15×15-ös tábla szabad pontjaira. Aki elsőként rak ki ötöt egy sorban vízszintesen, függőlegesen vagy átlósan, nyer.",
+    "lib.arcade.note.klondike": "Tedd át mind az 52 lapot a 4 alapkupacra színek szerint, ásztól királyig. Az asztalon csökkenő sorrendben, piros és fekete váltakozásával rakj; üres oszlopba csak K kerülhet. Lapot a bal felső lefordított pakli megérintésével húzhatsz. Érints meg egy lapot, majd a helyet, ahová tennéd, vagy érintsd meg újra a lapot, és magától szabályos helyre kerül. Az 1–5. szinten 1, a 6–10. szinten 3 lapot húzol.",
+    "lib.arcade.note.match3": "Cserélj fel két szomszédos elemet (egymás után érintve vagy húzással), hogy 3 vagy több egyforma kerüljön egy sorba; a sor kipukkan, a felette lévők lehullanak. A láncreakciók megsokszorozzák a pontokat. Érd el a célpontszámot, mielőtt elfogynak a lépések.",
+    "lib.arcade.note.minesweeper": "Koppints egy mezőre a felfedéséhez. A szám megmutatja, hány akna van a körülötte lévő 8 mezőben. Jelöld zászlóval a gyanús mezőt jobb kattintással, hosszú nyomással vagy zászló módban. Koppints egy olyan számra, amely körül már elég zászló van, hogy gyorsan felfedd a többit. Fedd fel az összes aknamentes mezőt a győzelemhez.",
+    "lib.arcade.note.reversi": "Feketével játszol és te kezdesz. Úgy tedd le a korongot, hogy egy vagy több fehéret közrefogj közte és egy másik fekete között (vízszintesen, függőlegesen, átlósan); a közrefogott korongok a te színedre fordulnak. Ha nincs szabályos lépésed, passzolsz. Ha megtelt a tábla, az nyer, akinek több korongja van.",
+    "lib.arcade.note.snake": "Irányítsd a kígyót a nyilakkal, WASD-vel, a lenti gombokkal vagy húzással. Edd meg a piros ételt, hogy nőj; érd el az előírt hosszt a szint teljesítéséhez. A 3. szinttől a falnak ütközés vereség; a magasabb szinteken akadályok is vannak. Ne harapj a saját farkadba.",
+    "lib.arcade.note.spider": "Rakj ki az asztalon minden színből egy sort királytól ászig; a teljes, 13 lapos sorok maguktól eltűnnek. Bármelyik lap rátehető egy eggyel nagyobbra, de csak az azonos színű sorok mozognak együtt. Ha elakadsz, koppints az Új sor osztása gombra (minden oszlopban lennie kell lapnak). Az 1–3. szint egy szín, a 4–7. kettő, a 8–10. négy.",
+    "lib.arcade.pause": "Szünet",
+    "lib.arcade.paused": "Szüneteltetve",
+    "lib.arcade.right": "Jobbra",
+    "lib.arcade.rotate": "Forgatás",
+    "lib.arcade.score": "Pont: {n}",
+    "lib.arcade.shuffled": "Nincs több lépés — a tábla újrakeverve.",
+    "lib.arcade.snakeBoard": "Kígyó pálya",
+    "lib.arcade.suitsN": "{n} szín",
+    "lib.arcade.target": "Cél: {n}",
+    "lib.arcade.up": "Fel",
+    "lib.arcade.youVsAi": "Te {a} – Gép {b}",
+    "lib.arcade.noHintFc": "Nincs több hasznos lépés. Vonj vissza néhány lépést, vagy kezdd újra."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Szórakozás és játékok",
-      "desc": "Szerencsekerék, véletlenszám-generátor, nyereménysorsolások és szórakoztató játékok."
+      "desc": "Szerencsekerék, véletlen számok és böngészős játékok: sudoku, sakk, kínai sakk, gomoku, 2048, aknakereső, lehulló elemek, kígyó, pasziánsz és téglatörő."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Rejtett Xiangqi",
       "desc": "Játssz vietnami rejtett Xiangqit: a bábuk képpel lefelé kezdenek, és az első lépés után megfordulnak. A gép ellen 10 szinten vagy online barátokkal és új ellenfelekkel."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Csúsztasd és egyesítsd az azonos számokat, amíg meg nem lesz a 2048-as lapka; 10 szint 64 és 8192 közötti célokkal, visszavonással."
+    },
+    "minesweeper": {
+      "name": "Aknakereső",
+      "desc": "A klasszikus aknakereső: fedj fel mezőket, tegyél zászlót, és a számokból találd ki, hol vannak az aknák; 10 szint 8x8-tól 18x18-ig, telefonon is működik."
+    },
+    "block-puzzle": {
+      "name": "Lehulló elemek",
+      "desc": "Forgasd és rakd egymásra a lehulló elemeket, hogy sorokat törölj; 10 egyre gyorsabb szint, billentyűzettel vagy érintőgombokkal."
+    },
+    "snake": {
+      "name": "Kígyós játék",
+      "desc": "Vezesd a kígyót az ételhez, hogy nőjön, és kerüld a falakat meg a saját farkát; 10 gyorsuló szint akadályokkal."
+    },
+    "solitaire": {
+      "name": "Pasziánsz",
+      "desc": "A klasszikus Klondike pasziánsz: rakj váltakozó színekkel, és tedd fel a lapokat az alapkupacokra ásztól királyig; 1 vagy 3 lap húzása, visszavonással és tippekkel."
+    },
+    "spider-solitaire": {
+      "name": "Pók pasziánsz",
+      "desc": "Pók 1, 2 és 4 színnel: építs azonos színű sorokat királytól ászig, hogy lekerüljenek az asztalról; 10 szint visszavonással és tippekkel."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell pasziánsz: minden lap felfordítva; a szabad cellák segítségével tedd fel a lapokat; 10 szint egyre kevesebb szabad cellával."
+    },
+    "gomoku": {
+      "name": "Gomoku (ötös sor)",
+      "desc": "Játssz gomokut, vagyis ötös sort a gép ellen 15x15-ös táblán; 10 szint a könnyűtől a nehézig, visszavonással."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Fogd közre az ellenfél korongjait, hogy a te színedre forduljanak; játssz 8x8-as Reversit a gép ellen 10 szinten."
+    },
+    "connect-four": {
+      "name": "Négy egy sorban",
+      "desc": "Dobj korongokat az oszlopokba, és rakj ki 4-et vízszintesen, függőlegesen vagy átlósan a gép előtt; 10 szint a könnyűtől a nehézig."
+    },
+    "match-3": {
+      "name": "Hármas párosító",
+      "desc": "Cserélgesd a cukorkákat, hogy 3 vagy több egyformát párosíts, és indíts láncreakciókat; 10 szint célpontszámmal és korlátozott lépésszámmal."
+    },
+    "brick-breaker": {
+      "name": "Téglatörő",
+      "desc": "Irányítsd az ütőt, pattintsd a labdát, és törd össze az összes téglát; 10 pálya különböző elrendezéssel, egérrel, érintéssel vagy billentyűkkel."
     }
   },
   "s": {

@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Lawan pass. Lamun anjeun ogé pass, kaulinan réngsé sarta diitung.",
     "lib.online.modeAi": "Ulin ngalawan komputer",
     "lib.online.modeOnline": "Ulin online",
-    "share.label": "Bagikeun"
+    "share.label": "Bagikeun",
+    "lib.arcade.aiNoMove": "Komputer teu boga léngkah nu sah — giliran anjeun.",
+    "lib.arcade.autoFinish": "Réngsékeun otomatis",
+    "lib.arcade.best": "Rékor: {n}",
+    "lib.arcade.blocksBoard": "Papan blok ragrag",
+    "lib.arcade.breakoutBoard": "Lapang ngarempak bata",
+    "lib.arcade.dealRow": "Bagikeun jajaran anyar",
+    "lib.arcade.down": "Handap",
+    "lib.arcade.drawN": "Candak {n}",
+    "lib.arcade.drop": "Ragragkeun langsung",
+    "lib.arcade.flagMode": "Mode bandéra",
+    "lib.arcade.freeCells": "Sél kosong: {n}",
+    "lib.arcade.left": "Kénca",
+    "lib.arcade.length": "Panjang: {n}/{t}",
+    "lib.arcade.lines": "Garis: {n}/{t}",
+    "lib.arcade.minesLeft": "Ranjau: {n}",
+    "lib.arcade.moves": "Léngkah: {n}",
+    "lib.arcade.movesLeft": "Kari {n} léngkah",
+    "lib.arcade.mustPass": "Anjeun teu boga léngkah nu sah — anjeun ngaliwat giliran.",
+    "lib.arcade.next": "Potongan salajengna",
+    "lib.arcade.noHint": "Teu aya léngkah nu mangpaat deui. Candak kartu, bagikeun jajaran anyar atawa mimitian deui.",
+    "lib.arcade.note.2048": "Paké tombol panah atawa usap pikeun mindahkeun sakabéh ubin. Dua ubin nu angkana sarua ngahiji lamun paantel. Jieun ubin nu sarua jeung udagan pikeun lulus tingkat; lamun teu aya ubin nu bisa gerak, anjeun éléh.",
+    "lib.arcade.note.blocks": "Puteran jeung tempatkeun potongan nu ragrag pikeun ngeusian garis datar; garis nu pinuh bakal leungit. ← → mindahkeun, ↑ muterkeun, ↓ turun leuwih gancang, Spasi ragragkeun langsung, P reureuh. Beresihan jumlah garis nu diperlukeun pikeun lulus tingkat; lamun potongan nepi ka luhur, anjeun éléh.",
+    "lib.arcade.note.breakout": "Gerakkeun beurit, sered ramo dina lapang atawa paké ← → pikeun ngarahkeun papan pantul sarta ngajaga bal tetep maén. Rempak sakabéh bata pikeun lulus tingkat; bata nu sisina kandel kudu diteunggeul dua kali. Anjeun boga 3 nyawa. Spasi pikeun ngamimitian atawa reureuh.",
+    "lib.arcade.note.connect4": "Anjeun maén beureum sarta jalan heula. Toél hiji kolom pikeun ngaragragkeun cakram; cakram ragrag ka tempat kosong panghandapna. Nu heula ngajajarkeun 4 cakram datar, nangtung atawa diagonal, meunang.",
+    "lib.arcade.note.freecell": "Sakabéh kartu kabuka. Pindahkeun sakabéh 52 kartu ka 4 pondasi dumasar jenisna, ti A nepi ka K. Dina méja, susun ka handap kalawan warna silih ganti. Sél kosong di kénca luhur masing-masing nyimpen hiji kartu; sabaraha kartu nu bisa dipindahkeun sakaligus gumantung kana sél kosong jeung kolom kosong. Tingkat luhur sélna leuwih saeutik.",
+    "lib.arcade.note.gomoku": "Anjeun maén X sarta jalan heula; komputer maén O. Silih genti nempatkeun tanda dina titik kosong papan 15×15. Nu heula meunang 5 sajajar datar, nangtung atawa diagonal, meunang.",
+    "lib.arcade.note.klondike": "Pindahkeun sakabéh 52 kartu ka 4 pondasi dumasar jenisna, ti A nepi ka K. Dina méja, susun ka handap kalawan warna silih ganti; ngan K nu bisa asup ka kolom kosong. Toél tumpukan nu nangkub di kénca luhur pikeun nyandak kartu. Toél kartu tuluy tempat nu dipikahayang, atawa toél deui sangkan pindah sorangan ka tempat nu sah. Tingkat 1–5: candak 1; tingkat 6–10: candak 3.",
+    "lib.arcade.note.match3": "Tukeurkeun dua potongan nu padeukeut (toél hiji tuluy nu séjén, atawa usap) pikeun nyieun jajaran 3 atawa leuwih nu sarua; jajaran éta bitu sarta potongan di luhurna ragrag. Réaksi berantai ngalikeun poin. Hontal skor udagan saméméh léngkah béak.",
+    "lib.arcade.note.minesweeper": "Toél sél pikeun mukana. Angka nuduhkeun sabaraha ranjau dina 8 sél di sabudeureunana. Tandaan ranjau nu disangka ku klik katuhu, pencét lila atawa mode bandéra. Toél angka nu geus cukup bandéra di sabudeureunana pikeun muka sésana gancang. Buka sakabéh sél tanpa ranjau pikeun meunang.",
+    "lib.arcade.note.reversi": "Anjeun maén hideung sarta jalan heula. Tempatkeun cakram sangkan ngapit hiji atawa leuwih cakram bodas antara cakram éta jeung cakram hideung séjén (datar, nangtung atawa diagonal); cakram nu kaapit malik jadi warna anjeun. Lamun teu boga léngkah nu sah, anjeun ngaliwat giliran. Lamun papan pinuh, nu cakramna leuwih loba meunang.",
+    "lib.arcade.note.snake": "Arahkeun oray ku tombol panah, WASD, tombol di handap atawa ku ngusap. Dahar kadaharan beureum sangkan tumuwuh; hontal panjang nu diperlukeun pikeun lulus tingkat. Ti tingkat 3, nabrak témbok ngeureunkeun kaulinan; tingkat luhur aya halanganana. Ulah nabrak buntut sorangan.",
+    "lib.arcade.note.spider": "Dina méja, susun unggal jenis jadi runtuyan ti K ka handap nepi ka A; runtuyan lengkep 13 kartu dipiceun otomatis. Kartu naon waé bisa ditempatkeun dina kartu nu saundak leuwih luhur, tapi ngan runtuyan nu jenisna sarua nu bisa pindah babarengan. Lamun macét, toél Bagikeun jajaran anyar (unggal kolom kudu aya kartuna). Tingkat 1–3: hiji jenis; 4–7: dua; 8–10: opat.",
+    "lib.arcade.pause": "Reureuh",
+    "lib.arcade.paused": "Keur reureuh",
+    "lib.arcade.right": "Katuhu",
+    "lib.arcade.rotate": "Puteran",
+    "lib.arcade.score": "Skor: {n}",
+    "lib.arcade.shuffled": "Teu aya léngkah deui — papan diacak deui.",
+    "lib.arcade.snakeBoard": "Lapang oray",
+    "lib.arcade.suitsN": "{n} jenis",
+    "lib.arcade.target": "Udagan: {n}",
+    "lib.arcade.up": "Luhur",
+    "lib.arcade.youVsAi": "Anjeun {a} – Komputer {b}",
+    "lib.arcade.noHintFc": "Teu aya léngkah nu mangpaat deui. Bolaykeun sababaraha léngkah atawa mimitian deui."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Hiburan jeung kaulinan",
-      "desc": "Roda untung, generator angka acak, undian hadiah jeung kaulinan anu pikaseurieun."
+      "desc": "Roda untung, angka acak jeung kaulinan dina browser: Sudoku, catur, catur Tiongkok, Gomoku, 2048, pamaluruh ranjau, blok ragrag, oray, solitaire jeung pangrempak bata."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi nyumput",
       "desc": "Ulin Xiangqi nyumput ti Vietnam: buah dimimitian nangkub sarta dibalikkeun sanggeus léngkah kahiji. Ngalawan komputer dina 10 tingkat atawa online jeung babaturan sarta lawan anyar."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Usap jeung gabungkeun angka nu sarua nepi ka jadi ubin 2048; 10 tingkat kalawan udagan ti 64 nepi ka 8192, aya ngabatalkeun léngkah."
+    },
+    "minesweeper": {
+      "name": "Pamaluruh Ranjau",
+      "desc": "Pamaluruh ranjau klasik: buka sél, pasang bandéra jeung pigawé tina angka di mana ranjauna; 10 tingkat ti 8x8 nepi ka 18x18, bisa dina HP."
+    },
+    "block-puzzle": {
+      "name": "Blok Ragrag",
+      "desc": "Puteran jeung tumpuk blok nu ragrag pikeun ngabersihan garis; 10 tingkat nu beuki gancang, maké kibor atawa tombol layar."
+    },
+    "snake": {
+      "name": "Oray",
+      "desc": "Arahkeun oray sangkan dahar jeung tumuwuh tanpa nabrak témbok atawa buntutna sorangan; 10 tingkat nu beuki gancang kalawan halangan."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Solitaire Klondike klasik: susun ka handap kalawan warna silih ganti sarta pindahkeun kartu ka pondasi ti A nepi ka K; candak 1 atawa 3, aya ngabatalkeun jeung pitunjuk."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Lancah",
+      "desc": "Lancah kalawan 1, 2 jeung 4 jenis: jieun runtuyan nu jenisna sarua ti K nepi ka A sangkan leungit tina méja; 10 tingkat aya ngabatalkeun jeung pitunjuk."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitaire FreeCell: sakabéh kartu kabuka; paké sél kosong pikeun mindahkeun kartu ka pondasi; 10 tingkat kalawan sél nu beuki saeutik."
+    },
+    "gomoku": {
+      "name": "Gomoku (lima sajajar)",
+      "desc": "Maén Gomoku, lima sajajar, ngalawan komputer dina papan 15x15; 10 tingkat ti gampang nepi ka hésé, aya ngabatalkeun léngkah."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Apit cakram lawan sangkan malik jadi warna anjeun; maén Reversi 8x8 ngalawan komputer dina 10 tingkat."
+    },
+    "connect-four": {
+      "name": "Opat Sajajar",
+      "desc": "Ragragkeun cakram kana kolom sarta jajarkeun 4 datar, nangtung atawa diagonal saméméh komputer; 10 tingkat ti gampang nepi ka hésé."
+    },
+    "match-3": {
+      "name": "Cocogkeun 3",
+      "desc": "Tukeurkeun permén pikeun nyocogkeun 3 atawa leuwih nu sarua sarta nimbulkeun réaksi berantai; 10 tingkat kalawan skor udagan jeung léngkah kawates."
+    },
+    "brick-breaker": {
+      "name": "Pangrempak Bata",
+      "desc": "Arahkeun papan pantul sarta mantulkeun bal pikeun ngarempak sakabéh bata; 10 tahap kalawan susunan béda, maké beurit, toél atawa tombol."
     }
   },
   "s": {

@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Imbangi idlulile. Uma nawe udlula, umdlalo uyaphela futhi ubalwe.",
     "lib.online.modeAi": "Dlala nekhompyutha",
     "lib.online.modeOnline": "Dlala ku-inthanethi",
-    "share.label": "Yabelana"
+    "share.label": "Yabelana",
+    "lib.arcade.aiNoMove": "Ikhompyutha ayinakho ukunyakaza okuvumelekile — sekuyithuba lakho.",
+    "lib.arcade.autoFinish": "Qedela ngokuzenzakalela",
+    "lib.arcade.best": "Irekhodi: {n}",
+    "lib.arcade.blocksBoard": "Ibhodi lamabhulokhi awayo",
+    "lib.arcade.breakoutBoard": "Inkundla yokuphihliza izitini",
+    "lib.arcade.dealRow": "Yaba umugqa omusha",
+    "lib.arcade.down": "Phansi",
+    "lib.arcade.drawN": "Dweba {n}",
+    "lib.arcade.drop": "Wisa ngokushesha",
+    "lib.arcade.flagMode": "Imodi yefulegi",
+    "lib.arcade.freeCells": "Amaseli angenalutho: {n}",
+    "lib.arcade.left": "Kwesobunxele",
+    "lib.arcade.length": "Ubude: {n}/{t}",
+    "lib.arcade.lines": "Imigqa: {n}/{t}",
+    "lib.arcade.minesLeft": "Iziqhumane: {n}",
+    "lib.arcade.moves": "Ukunyakaza: {n}",
+    "lib.arcade.movesLeft": "Kusele ukunyakaza okungu-{n}",
+    "lib.arcade.mustPass": "Awunakho ukunyakaza okuvumelekile — uyalidlula ithuba.",
+    "lib.arcade.next": "Izicucu ezilandelayo",
+    "lib.arcade.noHint": "Akusekho ukunyakaza okuwusizo. Dweba ikhadi, yaba umugqa omusha noma uqale kabusha.",
+    "lib.arcade.note.2048": "Sebenzisa okhiye bemicibisholo noma uswayiphe ukuze ususe zonke izithayela. Izithayela ezimbili ezinenombolo efanayo ziyahlangana uma zithintana. Yenza isithayela esilingana nomgomo ukuze udlule izinga; uma kungekho sithayela esingasuka, uyehlulwa.",
+    "lib.arcade.note.blocks": "Jikisa futhi ubeke izicucu eziwayo ukuze ugcwalise imigqa evundlile; imigqa egcwele iyanyamalala. ← → susa, ↑ jikisa, ↓ yehlisa ngokushesha, Isikhala siwisa ngokushesha, P misa kancane. Sula inani lemigqa elidingekayo ukuze udlule izinga; uma izicucu zifika phezulu, uyehlulwa.",
+    "lib.arcade.note.breakout": "Nyakazisa igundane, hudula umunwe enkundleni noma usebenzise ← → ukuqondisa iphedi bese ugcina ibhola lisemdlalweni. Phihliza zonke izitini ukuze udlule izinga; izitini ezinomngcele omkhulu zidinga ukushaywa kabili. Unezimpilo ezi-3. Isikhala siqala noma simisa kancane.",
+    "lib.arcade.note.connect4": "Udlala ngokubomvu futhi uqala kuqala. Thepha ikholomu ukuze uwise idiski; iwela endaweni engenalutho ephansi kakhulu. Owokuqala ukuhlela amadiski angu-4 ngokuvundlile, ngokuqondile noma ngokudayagonali uyanqoba.",
+    "lib.arcade.note.freecell": "Wonke amakhadi avuliwe. Hambisa wonke amakhadi angu-52 aye ezisekelweni ezi-4 ngohlobo, kusuka ku-A kuya ku-K. Etafuleni, hlela wehle ngemibala eshintshanayo. Amaseli angenalutho phezulu kwesobunxele aphatha ikhadi elilodwa ngalinye; mangaki amakhadi ongawahambisa ngesikhathi esisodwa kuncike kumaseli angenalutho namakholomu angenalutho. Amazinga aphezulu anamaseli ambalwa.",
+    "lib.arcade.note.gomoku": "Udlala ngo-X futhi uqala kuqala; ikhompyutha idlala ngo-O. Nishintshana nibeke uphawu endaweni engenalutho yebhodi elingu-15×15. Owokuqala ukuthola angu-5 elandelanayo ngokuvundlile, ngokuqondile noma ngokudayagonali uyanqoba.",
+    "lib.arcade.note.klondike": "Hambisa wonke amakhadi angu-52 aye ezisekelweni ezi-4 ngohlobo, kusuka ku-A kuya ku-K. Etafuleni, hlela wehle ngemibala eshintshanayo; yi-K kuphela engangena ekholomu engenalutho. Thepha inqwaba ebheke phansi phezulu kwesobunxele ukuze udwebe amakhadi. Thepha ikhadi bese uthepha indawo ofuna liye kuyo, noma ulithephe futhi ukuze liziyele endaweni evumelekile. Amazinga 1–5: dweba elilodwa; amazinga 6–10: dweba amathathu.",
+    "lib.arcade.note.match3": "Shintsha izicucu ezimbili ezingomakhelwane (thepha esisodwa bese kuba esinye, noma uswayiphe) ukuze wenze umugqa wezi-3 noma ngaphezulu ezifanayo; umugqa uyaqhuma bese izicucu ezingaphezulu ziwa. Ukusabela okulandelanayo kuphindaphinda amaphuzu akho. Fika emaphuzwini omgomo ngaphambi kokuthi ukunyakaza kuphele.",
+    "lib.arcade.note.minesweeper": "Thepha iseli ukuze ulivule. Inombolo ikhombisa ukuthi zingaki iziqhumane emaselini angu-8 alizungezile. Maka isiqhumane osisolayo ngokuchofoza kwesokudla, ukucindezela isikhathi eside noma imodi yefulegi. Thepha inombolo esivele inamafulegi anele eduze kwayo ukuze uvule amanye ngokushesha. Vula wonke amaseli angenaziqhumane ukuze unqobe.",
+    "lib.arcade.note.reversi": "Udlala ngokumnyama futhi uqala kuqala. Beka idiski ukuze ivalele idiski elimhlophe elilodwa noma ngaphezulu phakathi kwayo nelinye idiski elimnyama (ngokuvundlile, ngokuqondile noma ngokudayagonali); amadiski avalelwe aphenduka abe umbala wakho. Uma ungenakho ukunyakaza okuvumelekile, uyalidlula ithuba. Uma ibhodi seligcwele, onamadiski amaningi uyanqoba.",
+    "lib.arcade.note.snake": "Qondisa inyoka ngokhiye bemicibisholo, i-WASD, izinkinobho ezingezansi noma ngokuswayipha. Dla ukudla okubomvu ukuze ukhule; fika ebudeni obudingekayo ukuze udlule izinga. Kusukela ezingeni lesi-3, ukushayisa udonga kuqeda umdlalo; amazinga aphezulu anezithiyo. Ungashayisi umsila wakho.",
+    "lib.arcade.note.spider": "Etafuleni, hlela uhlobo ngalunye lube uchungechunge kusuka ku-K wehle kuya ku-A; uchungechunge oluphelele lwamakhadi angu-13 lususwa ngokuzenzakalela. Noma yiliphi ikhadi lingabekwa phezu kwekhadi eliphakeme ngezinga elilodwa, kodwa uchungechunge lohlobo olufanayo kuphela oluhamba ndawonye. Uma ubambeka, thepha u-Yaba umugqa omusha (yonke ikholomu kufanele ibe namakhadi). Amazinga 1–3: uhlobo olulodwa; 4–7: ezimbili; 8–10: ezine.",
+    "lib.arcade.pause": "Misa kancane",
+    "lib.arcade.paused": "Kumisiwe kancane",
+    "lib.arcade.right": "Kwesokudla",
+    "lib.arcade.rotate": "Jikisa",
+    "lib.arcade.score": "Amaphuzu: {n}",
+    "lib.arcade.shuffled": "Bekungasekho ukunyakaza — ibhodi lixutshwe kabusha.",
+    "lib.arcade.snakeBoard": "Inkundla yenyoka",
+    "lib.arcade.suitsN": "izinhlobo ezingu-{n}",
+    "lib.arcade.target": "Umgomo: {n}",
+    "lib.arcade.up": "Phezulu",
+    "lib.arcade.youVsAi": "Wena {a} – Ikhompyutha {b}",
+    "lib.arcade.noHintFc": "Akusekho ukunyakaza okuwusizo. Hlehlisa ukunyakaza okumbalwa noma uqale kabusha."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Zokuzijabulisa nemidlalo",
-      "desc": "Isondo lenhlanhla, isenzi samanani angahleliwe, imidlalo yokudwebela imikhonzo nemidlalo ethokozisayo."
+      "desc": "Isondo lenhlanhla, izinombolo ezingahleliwe nemidlalo yesiphequluli: i-Sudoku, i-chess, i-chess yaseShayina, i-Gomoku, i-2048, umseshi weziqhumane, amabhulokhi awayo, inyoka, i-solitaire nomphihlizi wezitini."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "I-Xiangqi efihliwe",
       "desc": "Dlala i-Xiangqi efihliwe yaseVietnam: izingcezu ziqala zibheke phansi futhi ziphendulwa ngemuva kokunyakaza kokuqala. Nekhompyutha emazingeni angu-10 noma ku-inthanethi nabangane nezimbangi ezintsha."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Swayipha futhi uhlanganise izinombolo ezifanayo kuze kube isithayela esingu-2048; amazinga angu-10 anemigomo kusuka ku-64 kuya ku-8192, nokuhlehlisa."
+    },
+    "minesweeper": {
+      "name": "Umseshi weziqhumane",
+      "desc": "Umseshi weziqhumane wakudala: vula amaseli, beka amafulegi bese uthola ezinombolweni ukuthi iziqhumane zikuphi; amazinga angu-10 kusuka ku-8x8 kuya ku-18x18, kusebenza nasefonini."
+    },
+    "block-puzzle": {
+      "name": "Amabhulokhi awayo",
+      "desc": "Jikisa futhi unqwabelanise amabhulokhi awayo ukuze usule imigqa; amazinga angu-10 ashesha ngokwengeziwe, ngekhibhodi noma ngezinkinobho zokuthinta."
+    },
+    "snake": {
+      "name": "Inyoka",
+      "desc": "Qondisa inyoka idle futhi ikhule ngaphandle kokushayisa izindonga noma umsila wayo; amazinga angu-10 asheshayo anezithiyo."
+    },
+    "solitaire": {
+      "name": "I-Solitaire",
+      "desc": "I-Klondike Solitaire yakudala: hlela wehle ngemibala eshintshanayo bese uhambisa amakhadi ezisekelweni kusuka ku-A kuya ku-K; dweba elilodwa noma amathathu, nokuhlehlisa namacebiso."
+    },
+    "spider-solitaire": {
+      "name": "I-Solitaire yesicabucabu",
+      "desc": "Isicabucabu esinezinhlobo ezi-1, ezi-2 nezi-4: yakha uchungechunge lohlobo olufanayo kusuka ku-K kuya ku-A ukuze uwasuse etafuleni; amazinga angu-10 anokuhlehlisa namacebiso."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "I-FreeCell Solitaire: wonke amakhadi avuliwe; sebenzisa amaseli angenalutho ukuhambisa amakhadi ezisekelweni; amazinga angu-10 anamaseli ancipha."
+    },
+    "gomoku": {
+      "name": "I-Gomoku (amahlanu alandelanayo)",
+      "desc": "Dlala i-Gomoku, amahlanu alandelanayo, ubhekene nekhompyutha ebhodini elingu-15x15; amazinga angu-10 kusuka kokulula kuya kokunzima, nokuhlehlisa."
+    },
+    "reversi": {
+      "name": "I-Reversi",
+      "desc": "Valela amadiski omphikisi wakho ukuze aphenduke abe umbala wakho; dlala i-Reversi engu-8x8 ubhekene nekhompyutha emazingeni angu-10."
+    },
+    "connect-four": {
+      "name": "Amane Alandelanayo",
+      "desc": "Wisa amadiski emakholomu bese uhlela angu-4 ngokuvundlile, ngokuqondile noma ngokudayagonali ngaphambi kwekhompyutha; amazinga angu-10 kusuka kokulula kuya kokunzima."
+    },
+    "match-3": {
+      "name": "Hlanganisa ama-3",
+      "desc": "Shintsha amaswidi ukuze uhlanganise ama-3 noma ngaphezulu afanayo futhi uqalise ukusabela okulandelanayo; amazinga angu-10 anamaphuzu omgomo nokunyakaza okulinganiselwe."
+    },
+    "brick-breaker": {
+      "name": "Umphihlizi wezitini",
+      "desc": "Qondisa iphedi bese ugxumisa ibhola ukuze uphihlize zonke izitini; izigaba ezingu-10 ezinokuhleleka okuhlukile, ngegundane, ukuthinta noma okhiye."
     }
   },
   "s": {

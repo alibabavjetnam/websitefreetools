@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Nandalo ny mpifanandrina. Raha mandalo koa ianao dia mifarana ny lalao ary isaina.",
     "lib.online.modeAi": "Milalao amin'ny solosaina",
     "lib.online.modeOnline": "Milalao an-tserasera",
-    "share.label": "Zarao"
+    "share.label": "Zarao",
+    "lib.arcade.aiNoMove": "Tsy manana hetsika ara-dalàna ny solosaina — anjaranao izao.",
+    "lib.arcade.autoFinish": "Vitao ho azy",
+    "lib.arcade.best": "Firaketana: {n}",
+    "lib.arcade.blocksBoard": "Takelaka bilaoka mianjera",
+    "lib.arcade.breakoutBoard": "Kianja famakiana biriky",
+    "lib.arcade.dealRow": "Mizara andalana vaovao",
+    "lib.arcade.down": "Midina",
+    "lib.arcade.drawN": "Misintona {n}",
+    "lib.arcade.drop": "Alatsaho avy hatrany",
+    "lib.arcade.flagMode": "Fomba saina",
+    "lib.arcade.freeCells": "Sela malalaka: {n}",
+    "lib.arcade.left": "Ankavia",
+    "lib.arcade.length": "Halava: {n}/{t}",
+    "lib.arcade.lines": "Andalana: {n}/{t}",
+    "lib.arcade.minesLeft": "Baomba: {n}",
+    "lib.arcade.moves": "Hetsika: {n}",
+    "lib.arcade.movesLeft": "Hetsika {n} sisa",
+    "lib.arcade.mustPass": "Tsy manana hetsika ara-dalàna ianao — mandingana ny anjaranao.",
+    "lib.arcade.next": "Ireo ampahany manaraka",
+    "lib.arcade.noHint": "Tsy misy hetsika mahasoa intsony. Misintona karatra, mizara andalana vaovao na manomboka indray.",
+    "lib.arcade.note.2048": "Ampiasao ny bokotra zana-tsipika na asosay ny rantsantananao hanetsehana ny tile rehetra. Mitambatra ho iray ny tile roa mitovy isa rehefa mifanendry. Mamorona tile mitovy amin'ny tanjona mba handalovana ny ambaratonga; raha tsy misy tile afaka mihetsika, resy ianao.",
+    "lib.arcade.note.blocks": "Ahodino sy apetraho ireo ampahany mianjera mba hamenoana andalana marindrano; manjavona ny andalana feno. ← → manetsika, ↑ manodina, ↓ midina haingana kokoa, Elanelana alatsaka avy hatrany, P mijanona kely. Diovy ny isan'ny andalana ilaina mba handalovana ny ambaratonga; raha tonga any ambony ireo ampahany, resy ianao.",
+    "lib.arcade.note.breakout": "Afindrafindrao ny totozy, sintony amin'ny kianja ny rantsantananao na ampiasao ny ← → hitarihana ny raketa ary hitazomana ny baolina ao anaty lalao. Vakio ny biriky rehetra mba handalovana ny ambaratonga; mila kapoka indroa ny biriky misy sisiny matevina. Manana aina 3 ianao. Ny Elanelana manomboka na mampijanona.",
+    "lib.arcade.note.connect4": "Ianao no mena ary ianao no voalohany. Tsindrio ny tsanganana iray hampidinana kapila; latsaka any amin'ny toerana foana ambany indrindra izy. Izay voalohany mandahatra kapila 4 marindrano, mitsangana na mitongilana no mandresy.",
+    "lib.arcade.note.freecell": "Misokatra avokoa ny karatra rehetra. Afindrao any amin'ireo fototra 4 araka ny karazany ny karatra 52 rehetra, manomboka amin'ny A ka hatramin'ny K. Eo ambony latabatra, alaharo midina miaraka amin'ny loko mifandimby. Samy mitazona karatra iray ireo sela malalaka eo ambony ankavia; miankina amin'ny sela malalaka sy ny tsanganana foana ny isan'ny karatra azonao afindra indray mandeha. Kely kokoa ny sela amin'ny ambaratonga ambony.",
+    "lib.arcade.note.gomoku": "Ianao no X ary ianao no voalohany; O ny solosaina. Mifandimby mametraka marika amin'ny teboka foana amin'ny takelaka 15×15 ianareo. Izay voalohany mahazo 5 milahatra marindrano, mitsangana na mitongilana no mandresy.",
+    "lib.arcade.note.klondike": "Afindrao any amin'ireo fototra 4 araka ny karazany ny karatra 52 rehetra, manomboka amin'ny A ka hatramin'ny K. Eo ambony latabatra, alaharo midina miaraka amin'ny loko mifandimby; K ihany no azo apetraka amin'ny tsanganana foana. Tsindrio ny antontam-karatra mihohoka eo ambony ankavia mba hisintonana karatra. Tsindrio ny karatra iray dia ny toerana tianao hametrahana azy, na tsindrio indray mba handeha ho azy any amin'ny toerana ara-dalàna. Ambaratonga 1–5: misintona 1; ambaratonga 6–10: misintona 3.",
+    "lib.arcade.note.match3": "Ampifanakalozy toerana ny ampahany roa mifanila (tsindrio ny iray dia ny iray hafa, na asosay) mba hamoronana andalana misy 3 na mihoatra mitovy; mipoaka ny andalana ary latsaka ireo ampahany eo ambony. Mampitombo ny isa ny fihetsika mifanohy. Tratrarina ny isa tanjona alohan'ny hahalanian'ny hetsika.",
+    "lib.arcade.note.minesweeper": "Tsindrio ny sela iray hanokafana azy. Ny isa dia milaza hoe firy ny baomba ao amin'ireo sela 8 manodidina azy. Mariho ny baomba ahiahiana amin'ny tsindry havanana, tsindry lava na fomba saina. Tsindrio ny isa efa manana saina ampy manodidina mba hanokafana haingana ny sisa. Sokafy ny sela rehetra tsy misy baomba mba handresena.",
+    "lib.arcade.note.reversi": "Ianao no mainty ary ianao no voalohany. Apetraho ny kapila mba hamandrihana kapila fotsy iray na maromaro eo anelanelan'izy sy kapila mainty hafa (marindrano, mitsangana na mitongilana); mivadika ho lokonao ireo kapila voafandrika. Raha tsy manana hetsika ara-dalàna ianao dia mandingana ny anjaranao. Rehefa feno ny takelaka, izay manana kapila betsaka kokoa no mandresy.",
+    "lib.arcade.note.snake": "Tariho ny bibilava amin'ny bokotra zana-tsipika, WASD, ireo bokotra eo ambany na amin'ny fanosehana. Hano ny sakafo mena mba hitomboana; tratrarina ny halava ilaina mba handalovana ny ambaratonga. Manomboka amin'ny ambaratonga 3, mamarana ny lalao ny fifandonana amin'ny rindrina; misy sakana ny ambaratonga ambony. Aza mifanojo amin'ny rambonao.",
+    "lib.arcade.note.spider": "Eo ambony latabatra, alaharo ho filaharana avy amin'ny K midina hatramin'ny A ny karazany tsirairay; esorina ho azy ny filaharana feno misy karatra 13. Ny karatra rehetra dia azo apetraka eo ambonin'ny karatra ambony iray ambaratonga, fa ny filaharana mitovy karazany ihany no mifamindra miaraka. Raha tsy mahita lalana ianao, tsindrio ny Mizara andalana vaovao (tsy maintsy misy karatra ny tsanganana rehetra). Ambaratonga 1–3: karazany iray; 4–7: roa; 8–10: efatra.",
+    "lib.arcade.pause": "Mijanona kely",
+    "lib.arcade.paused": "Mijanona kely",
+    "lib.arcade.right": "Ankavanana",
+    "lib.arcade.rotate": "Ahodino",
+    "lib.arcade.score": "Isa: {n}",
+    "lib.arcade.shuffled": "Tsy nisy hetsika intsony — nafangaroana indray ny takelaka.",
+    "lib.arcade.snakeBoard": "Kianjan'ny bibilava",
+    "lib.arcade.suitsN": "Karazany {n}",
+    "lib.arcade.target": "Tanjona: {n}",
+    "lib.arcade.up": "Miakatra",
+    "lib.arcade.youVsAi": "Ianao {a} – Solosaina {b}",
+    "lib.arcade.noHintFc": "Tsy misy hetsika mahasoa intsony. Foano ny hetsika vitsivitsy na manomboka indray."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Fialam-boly & Lalao",
-      "desc": "Kodia-pahafahana, mpamoaka laharana kisendrasendra, filaharana loka sy lalao mahafinaritra."
+      "desc": "Kodiaran'ny vintana, isa kisendrasendra ary lalao amin'ny navigateur: Sudoku, echecs, echecs sinoa, Gomoku, 2048, mpikaroka baomba, bilaoka mianjera, bibilava, solitaire ary mpamaky biriky."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi miafina",
       "desc": "Lalao ny Xiangqi miafina vietnamiana: manomboka mihohoka ny sombiny ary avadika aorian'ny hetsika voalohany. Amin'ny solosaina amin'ny ambaratonga 10 na an-tserasera miaraka amin'ny namana sy mpifanandrina vaovao."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Asosay ary atambaro ny isa mitovy mandra-pahatongan'ny tile 2048; ambaratonga 10 misy tanjona manomboka amin'ny 64 ka hatramin'ny 8192, misy fanafoanana."
+    },
+    "minesweeper": {
+      "name": "Mpikaroka baomba",
+      "desc": "Mpikaroka baomba mahazatra: sokafy ny sela, apetraho ny saina ary hitao amin'ny isa hoe aiza ny baomba; ambaratonga 10 manomboka amin'ny 8x8 ka hatramin'ny 18x18, mandeha amin'ny finday koa."
+    },
+    "block-puzzle": {
+      "name": "Bilaoka mianjera",
+      "desc": "Ahodino sy atambaro ny bilaoka mianjera mba hanadiovana andalana; ambaratonga 10 mihamafaingana, amin'ny fitendry na bokotra kasihina."
+    },
+    "snake": {
+      "name": "Bibilava",
+      "desc": "Tariho ny bibilava mba hihinana sy hitombo nefa tsy mifanojo amin'ny rindrina na ny rambony; ambaratonga 10 mihamafaingana misy sakana."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klondike Solitaire mahazatra: alaharo midina miaraka amin'ny loko mifandimby ary afindrao any amin'ny fototra ny karatra manomboka amin'ny A ka hatramin'ny K; misintona 1 na 3, misy fanafoanana sy torohevitra."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Hala",
+      "desc": "Hala misy karazany 1, 2 ary 4: amboary ny filaharana mitovy karazany avy amin'ny K ka hatramin'ny A mba hanesorana azy amin'ny latabatra; ambaratonga 10 misy fanafoanana sy torohevitra."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: misokatra avokoa ny karatra; ampiasao ny sela malalaka hamindrana ny karatra any amin'ny fototra; ambaratonga 10 mihena hatrany ny sela."
+    },
+    "gomoku": {
+      "name": "Gomoku (dimy milahatra)",
+      "desc": "Milalaova Gomoku, dimy milahatra, amin'ny solosaina eo amin'ny takelaka 15x15; ambaratonga 10 manomboka amin'ny mora ka hatramin'ny sarotra, misy fanafoanana."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Fandriho ny kapilan'ny mpifanandrina aminao mba hivadika ho lokonao; milalaova Reversi 8x8 amin'ny solosaina amin'ny ambaratonga 10."
+    },
+    "connect-four": {
+      "name": "Efatra milahatra",
+      "desc": "Alatsaho ao anaty tsanganana ny kapila ary alaharo 4 marindrano, mitsangana na mitongilana alohan'ny solosaina; ambaratonga 10 manomboka amin'ny mora ka hatramin'ny sarotra."
+    },
+    "match-3": {
+      "name": "Ampifanaraho 3",
+      "desc": "Ampifanakalozy ny vatomamy mba hampifanarahana 3 na mihoatra mitovy sy hiteraka fihetsika mifanohy; ambaratonga 10 misy isa tanjona sy hetsika voafetra."
+    },
+    "brick-breaker": {
+      "name": "Mpamaky biriky",
+      "desc": "Tariho ny raketa ary ampitsambikino ny baolina mba hamakiana ny biriky rehetra; dingana 10 misy fandaminana samihafa, amin'ny totozy, fikasihana na fitendry."
     }
   },
   "s": {

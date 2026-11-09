@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Main dalam talian",
     "lib.game.fullscreen": "Skrin penuh",
     "lib.game.exitFullscreen": "Keluar dari skrin penuh",
-    "share.label": "Kongsi"
+    "share.label": "Kongsi",
+    "lib.arcade.aiNoMove": "Komputer tiada langkah — giliran anda.",
+    "lib.arcade.autoFinish": "Naikkan semua",
+    "lib.arcade.best": "Rekod: {n}",
+    "lib.arcade.blocksBoard": "Papan blok jatuh",
+    "lib.arcade.breakoutBoard": "Gelanggang pemecah bata",
+    "lib.arcade.dealRow": "Bahagi satu baris",
+    "lib.arcade.down": "Bawah",
+    "lib.arcade.drawN": "Cabut {n}",
+    "lib.arcade.drop": "Jatuhkan terus",
+    "lib.arcade.flagMode": "Mod bendera",
+    "lib.arcade.freeCells": "Sel kosong: {n}",
+    "lib.arcade.left": "Kiri",
+    "lib.arcade.length": "Panjang: {n}/{t}",
+    "lib.arcade.lines": "Baris: {n}/{t}",
+    "lib.arcade.minesLeft": "Periuk api: {n}",
+    "lib.arcade.moves": "Langkah: {n}",
+    "lib.arcade.movesLeft": "Tinggal {n} langkah",
+    "lib.arcade.mustPass": "Anda tiada langkah — giliran dilangkau.",
+    "lib.arcade.next": "Blok seterusnya",
+    "lib.arcade.noHint": "Tiada langkah berguna lagi. Cabut kad, bahagi satu baris atau mula semula.",
+    "lib.arcade.note.2048": "Gunakan kekunci anak panah atau leret untuk menggerakkan semua jubin. Dua jubin bernombor sama bercantum apabila bersentuhan. Hasilkan jubin sama dengan sasaran untuk lulus tahap; jika tiada yang boleh bergerak, anda kalah.",
+    "lib.arcade.note.blocks": "Putar dan letak blok yang jatuh untuk memenuhkan baris mendatar; baris penuh akan hilang. ← → gerak, ↑ putar, ↓ turun laju, Space jatuh terus, P jeda. Kosongkan bilangan baris yang diperlukan untuk lulus tahap; jika blok sampai ke atas, anda kalah.",
+    "lib.arcade.note.breakout": "Gerakkan tetikus, seret jari di gelanggang atau guna ← → untuk mengawal pemukul dan jangan biarkan bola jatuh. Pecahkan semua bata untuk lulus tahap; bata bertepi tebal perlu dipukul dua kali. Anda ada 3 nyawa. Space untuk mula atau jeda.",
+    "lib.arcade.note.connect4": "Anda bermain merah dan bergerak dahulu. Ketik lajur untuk menjatuhkan kepingan; ia jatuh ke ruang kosong paling bawah. Sesiapa yang dahulu menyusun 4 kepingan mendatar, menegak atau menyerong menang.",
+    "lib.arcade.note.freecell": "Semua kad terbuka. Pindahkan semua 52 kad ke 4 longgokan asas mengikut sut, dari A hingga K. Di meja, susun menurun dengan warna merah dan hitam berselang. Sel kosong di kiri atas memegang satu kad setiap satu; berapa kad yang boleh dipindah sekali gus bergantung pada sel dan lajur kosong. Tahap tinggi mempunyai kurang sel kosong.",
+    "lib.arcade.note.gomoku": "Anda bermain X dan bergerak dahulu; komputer bermain O. Bergilir meletakkan tanda pada titik kosong papan 15×15. Sesiapa yang dahulu mendapat 5 sebaris mendatar, menegak atau menyerong menang.",
+    "lib.arcade.note.klondike": "Pindahkan semua 52 kad ke 4 longgokan asas mengikut sut, dari A hingga K. Di meja, susun menurun dengan warna merah dan hitam berselang; hanya K boleh diletak di lajur kosong. Ketik longgokan tertutup di kiri atas untuk mencabut kad. Ketik kad lalu tempat yang dikehendaki, atau ketik kad itu sekali lagi supaya ia bergerak sendiri ke tempat yang sah. Tahap 1–5 cabut 1 kad, tahap 6–10 cabut 3.",
+    "lib.arcade.note.match3": "Tukar dua kepingan bersebelahan (ketik satu demi satu atau leret) untuk membentuk barisan 3 atau lebih yang sama; barisan itu meletup dan kepingan di atas jatuh. Letupan berantai menggandakan mata. Capai skor sasaran sebelum langkah habis.",
+    "lib.arcade.note.minesweeper": "Ketik petak untuk membukanya. Nombor menunjukkan bilangan periuk api dalam 8 petak di sekeliling. Tandakan petak yang disyaki dengan klik kanan, tekan lama atau mod bendera. Ketik nombor yang benderanya sudah cukup untuk membuka selebihnya dengan cepat. Buka semua petak tanpa periuk api untuk menang.",
+    "lib.arcade.note.reversi": "Anda bermain hitam dan bergerak dahulu. Letak kepingan supaya mengepit satu atau lebih kepingan putih di antara kepingan baharu dan kepingan hitam lain (mendatar, menegak, menyerong); kepingan yang terkepit bertukar ke warna anda. Jika tiada langkah sah, giliran dilangkau. Apabila papan penuh, yang mempunyai lebih banyak kepingan menang.",
+    "lib.arcade.note.snake": "Kawal ular dengan kekunci anak panah, WASD, butang di bawah atau leretan. Makan makanan merah untuk memanjang; capai panjang yang diperlukan untuk lulus tahap. Dari tahap 3, melanggar dinding bermakna kalah; tahap tinggi ada halangan. Jangan gigit ekor sendiri.",
+    "lib.arcade.note.spider": "Susun setiap sut di meja menjadi siri dari K hingga A; siri lengkap 13 kad diangkat sendiri. Mana-mana kad boleh diletak atas kad satu nilai lebih tinggi, tetapi hanya siri sut yang sama boleh dipindah bersama. Jika buntu, ketik Bahagi satu baris (setiap lajur mesti ada kad). Tahap 1–3 satu sut, 4–7 dua, 8–10 empat.",
+    "lib.arcade.pause": "Jeda",
+    "lib.arcade.paused": "Dijeda",
+    "lib.arcade.right": "Kanan",
+    "lib.arcade.rotate": "Putar",
+    "lib.arcade.score": "Skor: {n}",
+    "lib.arcade.shuffled": "Tiada langkah — papan dikocok semula.",
+    "lib.arcade.snakeBoard": "Gelanggang ular",
+    "lib.arcade.suitsN": "{n} sut",
+    "lib.arcade.target": "Sasaran: {n}",
+    "lib.arcade.up": "Atas",
+    "lib.arcade.youVsAi": "Anda {a} – Komputer {b}",
+    "lib.arcade.noHintFc": "Tiada langkah berguna lagi. Buat asal beberapa langkah atau mula semula."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Hiburan & Permainan",
-      "desc": "Roda bertuah, penjana nombor rawak, cabutan hadiah dan permainan menyeronokkan."
+      "desc": "Roda tuah, nombor rawak dan permainan pelayar: sudoku, catur, catur Cina, gomoku, 2048, penyapu periuk api, blok jatuh, ular, solitaire dan pemecah bata."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi tertutup",
       "desc": "Main Xiangqi tertutup gaya Vietnam: buah bermula tertutup dan terbuka selepas langkah pertama. Melawan komputer dalam 10 tahap atau dalam talian dengan rakan dan lawan baharu."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Leret dan cantumkan nombor yang sama hingga terhasil jubin 2048; 10 tahap dengan sasaran 64 hingga 8192, boleh buat asal."
+    },
+    "minesweeper": {
+      "name": "Penyapu Periuk Api",
+      "desc": "Permainan penyapu periuk api klasik: buka petak, pasang bendera dan teka lokasi periuk api daripada nombor; 10 tahap dari 8x8 hingga 18x18, boleh dimain di telefon."
+    },
+    "block-puzzle": {
+      "name": "Blok Jatuh",
+      "desc": "Putar dan susun blok yang jatuh untuk mengosongkan baris; 10 tahap makin laju, main dengan papan kekunci atau butang sentuh."
+    },
+    "snake": {
+      "name": "Ular",
+      "desc": "Kawal ular untuk makan dan memanjang sambil mengelak dinding dan ekor sendiri; 10 tahap makin laju dengan halangan."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Solitaire Klondike klasik: susun berselang warna dan naikkan kad ke longgokan asas dari A hingga K; cabut 1 atau 3, dengan buat asal dan petunjuk."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Labah-labah",
+      "desc": "Spider 1, 2 dan 4 sut: susun siri sut yang sama dari K hingga A untuk diangkat dari meja; 10 tahap dengan buat asal dan petunjuk."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitaire FreeCell: semua kad terbuka; guna sel kosong untuk menaikkan kad ke longgokan asas; 10 tahap dengan sel kosong yang makin berkurang."
+    },
+    "gomoku": {
+      "name": "Gomoku (Lima Sebaris)",
+      "desc": "Main gomoku, lima sebaris, melawan komputer di papan 15x15; 10 tahap dari mudah ke sukar, boleh buat asal."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Kepit kepingan lawan untuk menterbalikkannya ke warna anda; main Reversi 8x8 melawan komputer dalam 10 tahap."
+    },
+    "connect-four": {
+      "name": "Empat Sebaris",
+      "desc": "Jatuhkan kepingan ke lajur dan susun 4 sebaris mendatar, menegak atau menyerong sebelum komputer; 10 tahap dari mudah ke sukar."
+    },
+    "match-3": {
+      "name": "Padan 3",
+      "desc": "Tukar gula-gula untuk memadankan 3 atau lebih yang sama dan cetuskan letupan berantai; 10 tahap dengan skor sasaran dan had langkah."
+    },
+    "brick-breaker": {
+      "name": "Pemecah Bata",
+      "desc": "Kawal pemukul dan lantunkan bola untuk memecahkan semua bata; 10 peringkat dengan susunan berbeza, guna tetikus, sentuhan atau kekunci."
     }
   },
   "s": {

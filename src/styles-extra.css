@@ -1420,3 +1420,99 @@ html.wd-noscroll, html.wd-noscroll body { overflow: hidden; }
 .btn-sm > svg.bi { width: 1.05em; height: 1.05em; margin-inline-end: .35em; }
 
 [data-mode] > svg.bi { width: 1.1em; height: 1.1em; vertical-align: -0.2em; margin-inline-end: .4em; }
+
+/* ===================== Game đợt 1 (2048, dò mìn, xếp gạch, rắn, bài, cờ caro, reversi, nối 4, ghép 3, phá gạch) ===================== */
+.gboard { user-select: none; -webkit-user-select: none; }
+.game-wrap:fullscreen .gboard, .game-wrap.is-pseudo-full .gboard { width: min(100%, calc((100vh - 240px) * var(--ar, 1))); margin-inline: auto; }
+
+/* 2048 */
+.g4-board { --n: 4; display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 10px; padding: 10px; width: min(100%, 480px); aspect-ratio: 1; background: #bbada0; border-radius: 12px; touch-action: none; }
+.g4-cell { display: grid; place-items: center; border-radius: 8px; background: rgba(238,228,218,.35); font-weight: 800; font-size: clamp(16px, calc(36px * 4 / var(--n)), 44px); color: #776e65; container-type: size; }
+.g4-cell.v2 { background: #eee4da; } .g4-cell.v4 { background: #ede0c8; }
+.g4-cell.v8 { background: #f2b179; color: #fff; } .g4-cell.v16 { background: #f59563; color: #fff; }
+.g4-cell.v32 { background: #f67c5f; color: #fff; } .g4-cell.v64 { background: #f65e3b; color: #fff; }
+.g4-cell.v128, .g4-cell.v256, .g4-cell.v512 { background: #edcf72; color: #fff; font-size: clamp(14px, calc(30px * 4 / var(--n)), 38px); }
+.g4-cell.v1024, .g4-cell.v2048 { background: #edc22e; color: #fff; font-size: clamp(12px, calc(24px * 4 / var(--n)), 30px); }
+.g4-cell.v4096, .g4-cell.v8192 { background: #3c3a32; color: #fff; font-size: clamp(12px, calc(24px * 4 / var(--n)), 30px); }
+.g4-cell.new { animation: g4in .16s ease-out; } .g4-cell.pop { animation: g4pop .18s ease-out; }
+@keyframes g4in { from { transform: scale(.3); opacity: .2; } }
+@keyframes g4pop { 50% { transform: scale(1.14); } }
+
+/* Dò mìn */
+.ms-board { --w: 9; display: grid; grid-template-columns: repeat(var(--w), 1fr); gap: 2px; width: min(100%, calc(var(--w) * 38px)); background: #adb5bd; padding: 2px; border-radius: 6px; }
+.ms-cell { aspect-ratio: 1; border: 0; padding: 0; border-radius: 3px; background: linear-gradient(#e9ecef, #ced4da); font: inherit; font-weight: 800; font-size: clamp(10px, calc(min(100vw, 680px) / var(--w) * .5), 20px); cursor: pointer; display: grid; place-items: center; line-height: 1; }
+.ms-cell.open { background: #f8f9fa; cursor: default; }
+.ms-cell.n1 { color: #1971c2; } .ms-cell.n2 { color: #2f9e44; } .ms-cell.n3 { color: #e03131; } .ms-cell.n4 { color: #5f3dc4; }
+.ms-cell.n5 { color: #a61e4d; } .ms-cell.n6 { color: #0c8599; } .ms-cell.n7 { color: #212529; } .ms-cell.n8 { color: #868e96; }
+.ms-cell.mine { color: #212529; } .ms-cell.boom { background: #ff6b6b; color: #fff; }
+.ms-cell.flag { font-size: clamp(9px, calc(min(100vw, 680px) / var(--w) * .42), 17px); }
+
+/* Sân canvas (xếp gạch, rắn, phá gạch) */
+.ar-stage { position: relative; width: min(100%, 480px); }
+.ar-stage canvas { display: block; width: 100%; height: auto; border-radius: 10px; }
+#bk-stage { width: min(100%, 300px); } #sn-stage { width: min(100%, 480px); }
+.ar-overlay { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(10,15,30,.55); color: #fff; font-size: 1.4rem; font-weight: 800; border-radius: 10px; cursor: pointer; text-align: center; padding: 12px; }
+.ar-pad { display: flex; gap: 8px; flex-wrap: wrap; width: min(100%, 480px); }
+.ar-key { flex: 1 1 0; min-width: 52px; height: 52px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface); color: var(--ink); cursor: pointer; touch-action: none; }
+.ar-key:active { background: var(--accent); color: #fff; border-color: var(--accent); }
+@media (hover: hover) and (pointer: fine) { .ar-pad { display: none; } }
+.bk-next { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+.bk-next canvas { width: 72px; height: 216px; background: #101828; border-radius: 8px; padding: 6px; box-sizing: content-box; }
+
+/* Xếp bài */
+.sol-main { grid-template-columns: minmax(0, 1fr) minmax(180px, 230px); }
+.sol-board { width: 100%; background: radial-gradient(circle at 30% 20%, #2f9e44, #1b5e2a); border-radius: 12px; padding: 10px; box-sizing: border-box; min-height: 420px; }
+.sol-row { display: grid; gap: var(--gap); justify-content: space-between; }
+.sol-top { margin-bottom: 14px; }
+.pile { position: relative; border-radius: 6px; min-width: 0; }
+.pile:empty, .pile.found, .pile.cell, .pile.stock, .pile.waste { box-shadow: inset 0 0 0 2px rgba(255,255,255,.22); }
+.pile-ph { position: absolute; inset: 0; display: grid; place-items: center; color: rgba(255,255,255,.4); font-size: calc(var(--cw) * .45); }
+.pile-n { position: absolute; right: 4px; bottom: 4px; background: rgba(0,0,0,.55); color: #fff; font-size: 12px; border-radius: 8px; padding: 0 6px; }
+.cd { position: absolute; left: 0; width: var(--cw); height: calc(var(--cw) * 1.4); border-radius: calc(var(--cw) * .08); box-shadow: 0 1px 2px rgba(0,0,0,.35); cursor: pointer; box-sizing: border-box; }
+.cd.down { background: repeating-linear-gradient(45deg, #1c5fbf 0 4px, #2b74d9 4px 8px); border: 3px solid #fff; }
+.cd.up { background: #fff; color: #212529; border: 1px solid #ced4da; }
+.cd.up.red { color: #d6336c; }
+.cd .ci { position: absolute; left: 6%; top: 3%; font-weight: 800; font-size: calc(var(--cw) * .28); line-height: 1; display: flex; flex-direction: column; align-items: center; }
+.cd .ci i { font-style: normal; font-size: .85em; }
+.cd .cb { position: absolute; right: 8%; bottom: 6%; font-size: calc(var(--cw) * .5); line-height: 1; }
+.cd.sel { outline: 3px solid #ffd43b; outline-offset: -1px; box-shadow: 0 0 0 3px rgba(255,212,59,.5), 0 4px 10px rgba(0,0,0,.35); }
+.pile.done .cd { cursor: default; }
+
+/* Cờ caro, Reversi, Nối 4 */
+.du-board { display: grid; width: min(100%, 560px); aspect-ratio: 1; }
+.du-gomoku { --n: 15; grid-template-columns: repeat(var(--n), 1fr); background: #f3d9a4; border: 2px solid #8a6a3a; border-radius: 6px; }
+.du-gomoku .du-cell { border: 0; border-right: 1px solid rgba(110,80,40,.35); border-bottom: 1px solid rgba(110,80,40,.35); background: transparent; padding: 0; display: grid; place-items: center; cursor: pointer; font: inherit; }
+.du-gomoku .du-cell:hover { background: rgba(255,255,255,.3); }
+.du-gomoku .gx, .du-gomoku .go { font-style: normal; font-weight: 900; font-size: clamp(12px, 3.2vw, 26px); line-height: 1; }
+.du-gomoku .gx { color: #c92a2a; } .du-gomoku .go { color: #1864ab; }
+.du-gomoku .du-cell.last { background: rgba(255,212,59,.55); }
+.du-gomoku .du-cell.win { background: #b2f2bb; }
+.du-reversi { grid-template-columns: repeat(8, 1fr); gap: 2px; background: #1b5e20; padding: 4px; border-radius: 8px; }
+.du-reversi .du-cell { background: #2e7d32; border: 0; padding: 0; display: grid; place-items: center; cursor: pointer; }
+.du-reversi .du-cell.hint::after { content: ''; width: 22%; height: 22%; border-radius: 50%; background: rgba(255,255,255,.35); }
+.du-reversi .du-cell.last { box-shadow: inset 0 0 0 3px #ffd43b; }
+.disc { width: 82%; height: 82%; border-radius: 50%; display: block; box-shadow: 0 2px 3px rgba(0,0,0,.4); }
+.disc.b { background: radial-gradient(circle at 35% 30%, #555, #111); }
+.disc.w { background: radial-gradient(circle at 35% 30%, #fff, #d0d0d0); }
+.du-connect4 { grid-template-columns: repeat(7, 1fr); aspect-ratio: 7 / 6; background: #1c5fbf; padding: 8px; gap: 6px; border-radius: 12px; --ar: 1.17; }
+.du-connect4 .du-cell { background: #e7f0ff; border: 0; border-radius: 50%; padding: 0; display: grid; place-items: center; cursor: pointer; }
+.du-connect4 .disc { width: 100%; height: 100%; }
+.disc.r { background: radial-gradient(circle at 35% 30%, #ff8787, #e03131); }
+.disc.y { background: radial-gradient(circle at 35% 30%, #ffe066, #f59f00); }
+.du-connect4 .du-cell.win .disc { box-shadow: 0 0 0 4px #fff, 0 0 12px 4px #fff; }
+
+/* Ghép 3 */
+.m3-board { display: grid; grid-template-columns: repeat(8, 1fr); gap: 4px; width: min(100%, 520px); aspect-ratio: 1; background: #283c5a; padding: 6px; border-radius: 12px; }
+.m3-cell { border: 0; border-radius: 10px; background: rgba(255,255,255,.08); padding: 6%; cursor: pointer; display: grid; place-items: center; }
+.m3-cell svg { width: 100%; height: 100%; }
+.m3-cell.sel { background: rgba(255,255,255,.35); }
+.m3-cell.hint { animation: m3hint .8s ease-in-out infinite; }
+.m3-cell.pop svg { animation: m3pop .22s ease-in forwards; }
+@keyframes m3hint { 50% { background: rgba(255,212,59,.55); } }
+@keyframes m3pop { to { transform: scale(0); opacity: 0; } }
+@media (max-width: 760px) { .sol-board { padding: 6px; } }
+.du-gomoku { grid-template-rows: repeat(var(--n), 1fr); }
+.du-reversi { grid-template-rows: repeat(8, 1fr); }
+.du-connect4 { grid-template-rows: repeat(6, 1fr); }
+.m3-board { grid-template-rows: repeat(8, 1fr); }
+.g4-board { grid-template-rows: repeat(var(--n), 1fr); }

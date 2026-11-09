@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Gioca online",
     "lib.game.fullscreen": "Schermo intero",
     "lib.game.exitFullscreen": "Esci da schermo intero",
-    "share.label": "Condividi"
+    "share.label": "Condividi",
+    "lib.arcade.aiNoMove": "Il computer non ha mosse valide: tocca a te.",
+    "lib.arcade.autoFinish": "Sistema tutto",
+    "lib.arcade.best": "Record: {n}",
+    "lib.arcade.blocksBoard": "Campo dei blocchi",
+    "lib.arcade.breakoutBoard": "Campo di Spaccamattoni",
+    "lib.arcade.dealRow": "Distribuisci una fila",
+    "lib.arcade.down": "Giù",
+    "lib.arcade.drawN": "Pesca {n}",
+    "lib.arcade.drop": "Lascia cadere",
+    "lib.arcade.flagMode": "Modalità bandierina",
+    "lib.arcade.freeCells": "Celle libere: {n}",
+    "lib.arcade.left": "Sinistra",
+    "lib.arcade.length": "Lunghezza: {n}/{t}",
+    "lib.arcade.lines": "Righe: {n}/{t}",
+    "lib.arcade.minesLeft": "Mine: {n}",
+    "lib.arcade.moves": "Mosse: {n}",
+    "lib.arcade.movesLeft": "Ancora {n} mosse",
+    "lib.arcade.mustPass": "Non hai mosse valide: passi il turno.",
+    "lib.arcade.next": "Pezzi successivi",
+    "lib.arcade.noHint": "Nessuna mossa utile. Pesca una carta, distribuisci una fila o ricomincia.",
+    "lib.arcade.note.2048": "Usa le frecce o scorri per spostare tutte le tessere. Due tessere con lo stesso numero si fondono quando si toccano. Crea una tessera pari all'obiettivo per superare il livello; se non si muove più nulla, hai perso.",
+    "lib.arcade.note.blocks": "Ruota e posiziona i pezzi che cadono per completare righe orizzontali; le righe piene scompaiono. ← → per spostare, ↑ per ruotare, ↓ per scendere più veloce, Spazio per lasciar cadere, P per la pausa. Elimina le righe richieste per superare il livello; se la pila arriva in cima, hai perso.",
+    "lib.arcade.note.breakout": "Muovi il mouse, trascina il dito sul campo o usa ← → per guidare la racchetta e non far cadere la pallina. Distruggi tutti i mattoni per superare il livello; quelli col bordo spesso vanno colpiti due volte. Hai 3 vite. Spazio per iniziare o mettere in pausa.",
+    "lib.arcade.note.connect4": "Giochi con il rosso e muovi per primo. Tocca una colonna per far cadere una pedina: scende nello spazio libero più basso. Vince chi allinea per primo 4 pedine in orizzontale, verticale o diagonale.",
+    "lib.arcade.note.freecell": "Tutte le carte sono scoperte. Porta tutte le 52 carte nelle 4 basi per seme, dall'A al K. Sul tavolo impila in ordine decrescente alternando i colori. Le celle libere in alto a sinistra tengono una carta ciascuna; quante carte puoi spostare insieme dipende da celle e colonne vuote. I livelli alti hanno meno celle.",
+    "lib.arcade.note.gomoku": "Giochi con la X e muovi per primo; il computer gioca con la O. A turno si mette un segno su un punto libero del tavoliere 15×15. Vince chi fa per primo 5 in fila in orizzontale, verticale o diagonale.",
+    "lib.arcade.note.klondike": "Porta tutte le 52 carte nelle 4 basi per seme, dall'A al K. Sul tavolo impila in ordine decrescente alternando i colori; solo un K può andare in una colonna vuota. Tocca il mazzo coperto in alto a sinistra per pescare. Tocca una carta e poi il punto in cui metterla, oppure toccala di nuovo per mandarla in un posto valido. Livelli 1–5: pesca 1; livelli 6–10: pesca 3.",
+    "lib.arcade.note.match3": "Scambia due pezzi vicini (toccandoli uno dopo l'altro o scorrendo) per formare una fila di 3 o più uguali; la fila esplode e i pezzi sopra cadono. Le reazioni a catena moltiplicano i punti. Raggiungi il punteggio obiettivo prima di finire le mosse.",
+    "lib.arcade.note.minesweeper": "Tocca una casella per aprirla. Il numero indica quante mine ci sono nelle 8 caselle intorno. Segna una mina sospetta con il tasto destro, una pressione lunga o la modalità bandierina. Tocca un numero che ha già abbastanza bandierine per aprire in fretta il resto. Apri tutte le caselle senza mine per vincere.",
+    "lib.arcade.note.reversi": "Giochi con il nero e muovi per primo. Posa una pedina in modo da racchiudere una o più pedine bianche tra lei e un'altra nera (in orizzontale, verticale o diagonale); le pedine racchiuse passano al tuo colore. Senza mosse valide, passi. A tavoliere pieno vince chi ha più pedine.",
+    "lib.arcade.note.snake": "Guida il serpente con le frecce, WASD, i pulsanti sotto o scorrendo. Mangia il cibo rosso per crescere; raggiungi la lunghezza richiesta per superare il livello. Dal livello 3 sbattere contro il muro fa perdere; i livelli alti hanno ostacoli. Non morderti la coda.",
+    "lib.arcade.note.spider": "Componi sul tavolo una scala per ogni seme dal K all'A; le scale complete di 13 carte vengono tolte da sole. Ogni carta può andare su una di valore superiore di uno, ma solo le scale dello stesso seme si spostano insieme. Se sei bloccato, tocca Distribuisci una fila (ogni colonna deve avere carte). Livelli 1–3: un seme; 4–7: due; 8–10: quattro.",
+    "lib.arcade.pause": "Pausa",
+    "lib.arcade.paused": "In pausa",
+    "lib.arcade.right": "Destra",
+    "lib.arcade.rotate": "Ruota",
+    "lib.arcade.score": "Punti: {n}",
+    "lib.arcade.shuffled": "Nessuna mossa rimasta: il campo è stato rimescolato.",
+    "lib.arcade.snakeBoard": "Campo del serpente",
+    "lib.arcade.suitsN": "{n} semi",
+    "lib.arcade.target": "Obiettivo: {n}",
+    "lib.arcade.up": "Su",
+    "lib.arcade.youVsAi": "Tu {a} – Computer {b}",
+    "lib.arcade.noHintFc": "Non ci sono più mosse utili. Annulla qualche mossa o ricomincia."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Intrattenimento e giochi",
-      "desc": "Ruota della fortuna, generatore di numeri casuali, estrazioni a premi e giochi divertenti."
+      "desc": "Ruota della fortuna, numeri casuali e giochi nel browser: sudoku, scacchi, scacchi cinesi, gomoku, 2048, campo minato, blocchi, snake, solitario e spaccamattoni."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi coperto",
       "desc": "Gioca allo Xiangqi coperto vietnamita: i pezzi partono coperti e si scoprono dopo la prima mossa. Contro il computer su 10 livelli o online con amici e nuovi avversari."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Fai scorrere e unisci i numeri uguali fino alla tessera 2048; 10 livelli con obiettivi da 64 a 8192, con annulla."
+    },
+    "minesweeper": {
+      "name": "Campo minato",
+      "desc": "Il classico campo minato: apri caselle, metti bandierine e scopri dove sono le mine grazie ai numeri; 10 livelli da 8x8 a 18x18, anche da telefono."
+    },
+    "block-puzzle": {
+      "name": "Blocchi che cadono",
+      "desc": "Ruota e impila i blocchi che cadono per eliminare righe; 10 livelli sempre più veloci, con tastiera o pulsanti touch."
+    },
+    "snake": {
+      "name": "Snake",
+      "desc": "Guida il serpente a mangiare e crescere evitando i muri e la propria coda; 10 livelli più veloci con ostacoli."
+    },
+    "solitaire": {
+      "name": "Solitario",
+      "desc": "Il classico solitario Klondike: impila alternando i colori e porta le carte nelle basi dall'A al K; pesca 1 o 3, con annulla e suggerimenti."
+    },
+    "spider-solitaire": {
+      "name": "Solitario Spider",
+      "desc": "Spider a 1, 2 e 4 semi: forma scale dello stesso seme dal K all'A per toglierle dal tavolo; 10 livelli con annulla e suggerimenti."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitario FreeCell: tutte le carte scoperte; usa le celle libere per portare le carte nelle basi; 10 livelli con sempre meno celle."
+    },
+    "gomoku": {
+      "name": "Gomoku (cinque in fila)",
+      "desc": "Gioca a gomoku, cinque in fila, contro il computer su un tavoliere 15x15; 10 livelli da facile a difficile, con annulla."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Racchiudi le pedine avversarie per girarle del tuo colore; gioca a Reversi 8x8 contro il computer in 10 livelli."
+    },
+    "connect-four": {
+      "name": "Quattro in fila",
+      "desc": "Fai cadere le pedine nelle colonne e allineane 4 in orizzontale, verticale o diagonale prima del computer; 10 livelli da facile a difficile."
+    },
+    "match-3": {
+      "name": "Match 3",
+      "desc": "Scambia le caramelle per unirne 3 o più uguali e scatenare reazioni a catena; 10 livelli con punteggio obiettivo e mosse limitate."
+    },
+    "brick-breaker": {
+      "name": "Spaccamattoni",
+      "desc": "Muovi la racchetta e fai rimbalzare la pallina per distruggere tutti i mattoni; 10 livelli con schemi diversi, con mouse, touch o tastiera."
     }
   },
   "s": {

@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Jugar en línea",
     "lib.game.fullscreen": "Pantalla completa",
     "lib.game.exitFullscreen": "Salir de pantalla completa",
-    "share.label": "Compartir"
+    "share.label": "Compartir",
+    "lib.arcade.aiNoMove": "El ordenador no tiene jugada válida: te toca a ti.",
+    "lib.arcade.autoFinish": "Subir todas",
+    "lib.arcade.best": "Récord: {n}",
+    "lib.arcade.blocksBoard": "Tablero de bloques",
+    "lib.arcade.breakoutBoard": "Campo de rompeladrillos",
+    "lib.arcade.dealRow": "Repartir una fila",
+    "lib.arcade.down": "Abajo",
+    "lib.arcade.drawN": "Robar {n}",
+    "lib.arcade.drop": "Caída rápida",
+    "lib.arcade.flagMode": "Modo bandera",
+    "lib.arcade.freeCells": "Celdas libres: {n}",
+    "lib.arcade.left": "Izquierda",
+    "lib.arcade.length": "Longitud: {n}/{t}",
+    "lib.arcade.lines": "Líneas: {n}/{t}",
+    "lib.arcade.minesLeft": "Minas: {n}",
+    "lib.arcade.moves": "Movimientos: {n}",
+    "lib.arcade.movesLeft": "Quedan {n} movimientos",
+    "lib.arcade.mustPass": "No tienes jugada válida: pasas turno.",
+    "lib.arcade.next": "Siguientes piezas",
+    "lib.arcade.noHint": "No queda ninguna jugada útil. Roba una carta, reparte una fila o empieza de nuevo.",
+    "lib.arcade.note.2048": "Usa las flechas o desliza para mover todas las fichas. Dos fichas con el mismo número se unen al tocarse. Consigue una ficha igual al objetivo para superar el nivel; si ya no puedes mover, pierdes.",
+    "lib.arcade.note.blocks": "Gira y coloca las piezas que caen para completar líneas horizontales; las líneas llenas desaparecen. ← → para mover, ↑ para girar, ↓ para bajar, Espacio para dejar caer y P para pausar. Borra las líneas necesarias para superar el nivel; si las piezas llegan arriba, pierdes.",
+    "lib.arcade.note.breakout": "Mueve el ratón, arrastra el dedo por el campo o usa ← → para mover la pala y que la bola no caiga. Rompe todos los ladrillos para superar el nivel; los de borde grueso necesitan dos golpes. Tienes 3 vidas. Pulsa Espacio para empezar o pausar.",
+    "lib.arcade.note.connect4": "Juegas con rojo y empiezas tú. Toca una columna para soltar una ficha; cae al hueco libre más bajo. Gana quien alinee primero 4 fichas en horizontal, vertical o diagonal.",
+    "lib.arcade.note.freecell": "Todas las cartas están boca arriba. Lleva las 52 cartas a las 4 bases por palo, del A a la K. En la mesa, apila en orden descendente alternando colores. Las celdas libres de arriba a la izquierda guardan una carta cada una; cuántas cartas puedes mover a la vez depende de las celdas y columnas vacías. Los niveles altos tienen menos celdas libres.",
+    "lib.arcade.note.gomoku": "Juegas con X y empiezas tú; el ordenador juega con O. Colocad por turnos en un punto libre del tablero de 15×15. Gana quien consiga primero 5 en línea en horizontal, vertical o diagonal.",
+    "lib.arcade.note.klondike": "Lleva las 52 cartas a las 4 bases por palo, del A a la K. En la mesa, apila en orden descendente alternando colores; solo una K puede ir a una columna vacía. Toca el mazo boca abajo de arriba a la izquierda para robar. Toca una carta y luego el lugar donde quieres ponerla, o tócala otra vez para enviarla a un sitio válido. Niveles 1–5: robar 1; niveles 6–10: robar 3.",
+    "lib.arcade.note.match3": "Intercambia dos piezas vecinas (tocando una y luego la otra, o deslizando) para formar una línea de 3 o más iguales; la línea explota y las piezas de arriba caen. Las reacciones en cadena multiplican los puntos. Alcanza la puntuación objetivo antes de quedarte sin movimientos.",
+    "lib.arcade.note.minesweeper": "Toca una casilla para abrirla. El número indica cuántas minas hay en las 8 casillas de alrededor. Marca una mina sospechosa con clic derecho, pulsación larga o el modo bandera. Toca un número que ya tenga suficientes banderas para abrir rápido el resto. Abre todas las casillas sin mina para ganar.",
+    "lib.arcade.note.reversi": "Juegas con negras y empiezas tú. Coloca una ficha de modo que encierre una o más fichas blancas entre ella y otra negra (en horizontal, vertical o diagonal); las fichas encerradas pasan a tu color. Si no tienes jugada válida, pasas. Con el tablero lleno, gana quien tenga más fichas.",
+    "lib.arcade.note.snake": "Dirige la serpiente con las flechas, WASD, los botones de abajo o deslizando. Come la comida roja para crecer; alcanza la longitud necesaria para superar el nivel. Desde el nivel 3, chocar con la pared hace perder; los niveles altos añaden obstáculos. No te muerdas la cola.",
+    "lib.arcade.note.spider": "Forma en la mesa una escalera de cada palo de la K al A; las escaleras completas de 13 cartas se retiran solas. Cualquier carta puede ir sobre otra un punto mayor, pero solo las escaleras del mismo palo se mueven juntas. Si te atascas, pulsa Repartir una fila (todas las columnas deben tener cartas). Niveles 1–3: un palo; 4–7: dos; 8–10: cuatro.",
+    "lib.arcade.pause": "Pausa",
+    "lib.arcade.paused": "En pausa",
+    "lib.arcade.right": "Derecha",
+    "lib.arcade.rotate": "Girar",
+    "lib.arcade.score": "Puntos: {n}",
+    "lib.arcade.shuffled": "No quedaban jugadas: el tablero se ha mezclado.",
+    "lib.arcade.snakeBoard": "Campo de la serpiente",
+    "lib.arcade.suitsN": "{n} palos",
+    "lib.arcade.target": "Objetivo: {n}",
+    "lib.arcade.up": "Arriba",
+    "lib.arcade.youVsAi": "Tú {a} – Ordenador {b}",
+    "lib.arcade.noHintFc": "No quedan movimientos útiles. Deshaz algunos movimientos o empieza de nuevo."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Entretenimiento y juegos",
-      "desc": "Ruleta de la suerte, generador de números aleatorios, sorteos de premios y juegos divertidos."
+      "desc": "Ruleta de la suerte, números al azar y juegos en el navegador: sudoku, ajedrez, ajedrez chino, gomoku, 2048, buscaminas, bloques, serpiente, solitario y rompeladrillos."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi oculto",
       "desc": "Juega el Xiangqi oculto vietnamita: las piezas empiezan boca abajo y se voltean tras su primer movimiento. Juega contra el ordenador en 10 niveles o en línea con amigos o rivales nuevos."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Desliza y une números iguales hasta formar la ficha 2048; 10 niveles con objetivos de 64 a 8192 y opción de deshacer."
+    },
+    "minesweeper": {
+      "name": "Buscaminas",
+      "desc": "El buscaminas clásico: abre casillas, pon banderas y deduce dónde están las minas con los números; 10 niveles de 8x8 a 18x18, también en el móvil."
+    },
+    "block-puzzle": {
+      "name": "Bloques que caen",
+      "desc": "Gira y apila los bloques que caen para completar líneas; 10 niveles cada vez más rápidos, con teclado o botones táctiles."
+    },
+    "snake": {
+      "name": "La serpiente",
+      "desc": "Guía a la serpiente para comer y crecer evitando paredes y su propia cola; 10 niveles más rápidos y con obstáculos."
+    },
+    "solitaire": {
+      "name": "Solitario",
+      "desc": "Solitario Klondike clásico: apila alternando colores y sube las cartas a las bases del A a la K; robar 1 o 3, con deshacer y pistas."
+    },
+    "spider-solitaire": {
+      "name": "Solitario Spider",
+      "desc": "Solitario Spider de 1, 2 y 4 palos: forma escaleras del mismo palo de la K al A para retirarlas; 10 niveles con deshacer y pistas."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitario FreeCell: todas las cartas boca arriba; usa las celdas libres para subir las cartas a las bases; 10 niveles con cada vez menos celdas."
+    },
+    "gomoku": {
+      "name": "Gomoku (cinco en línea)",
+      "desc": "Juega al gomoku, cinco en línea, contra el ordenador en un tablero de 15x15; 10 niveles de fácil a difícil, con deshacer."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Encierra las fichas del rival para darles la vuelta a tu color; juega al Reversi 8x8 contra el ordenador en 10 niveles."
+    },
+    "connect-four": {
+      "name": "Cuatro en raya",
+      "desc": "Suelta fichas en las columnas y alinea 4 en horizontal, vertical o diagonal antes que el ordenador; 10 niveles de fácil a difícil."
+    },
+    "match-3": {
+      "name": "Combina 3",
+      "desc": "Intercambia caramelos para juntar 3 o más iguales y provocar reacciones en cadena; 10 niveles con puntuación objetivo y límite de movimientos."
+    },
+    "brick-breaker": {
+      "name": "Rompeladrillos",
+      "desc": "Mueve la pala y haz rebotar la bola para romper todos los ladrillos; 10 fases con distintas formas, con ratón, pantalla táctil o teclado."
     }
   },
   "s": {

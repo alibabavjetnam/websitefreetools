@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Rəqib pas dedi. Siz də pas desəniz, oyun bitəcək və hesablanacaq.",
     "lib.online.modeAi": "Kompüterlə oyna",
     "lib.online.modeOnline": "Onlayn oyna",
-    "share.label": "Paylaş"
+    "share.label": "Paylaş",
+    "lib.arcade.aiNoMove": "Kompüterin qanuni gedişi yoxdur — növbə sizindir.",
+    "lib.arcade.autoFinish": "Avtomatik tamamla",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Düşən bloklar lövhəsi",
+    "lib.arcade.breakoutBoard": "Kərpic sındırma meydançası",
+    "lib.arcade.dealRow": "Yeni sıra payla",
+    "lib.arcade.down": "Aşağı",
+    "lib.arcade.drawN": "{n} götür",
+    "lib.arcade.drop": "Dərhal sal",
+    "lib.arcade.flagMode": "Bayraq rejimi",
+    "lib.arcade.freeCells": "Boş xanalar: {n}",
+    "lib.arcade.left": "Sola",
+    "lib.arcade.length": "Uzunluq: {n}/{t}",
+    "lib.arcade.lines": "Xətlər: {n}/{t}",
+    "lib.arcade.minesLeft": "Minalar: {n}",
+    "lib.arcade.moves": "Gedişlər: {n}",
+    "lib.arcade.movesLeft": "{n} gediş qalıb",
+    "lib.arcade.mustPass": "Qanuni gedişiniz yoxdur — növbəni ötürürsünüz.",
+    "lib.arcade.next": "Növbəti fiqurlar",
+    "lib.arcade.noHint": "Faydalı gediş qalmayıb. Kart götürün, yeni sıra paylayın və ya yenidən başlayın.",
+    "lib.arcade.note.2048": "Bütün kafelləri sürüşdürmək üçün ox düymələrindən istifadə edin və ya barmağınızla sürüşdürün. Eyni rəqəmli iki kafel toxunduqda birləşir. Səviyyəni keçmək üçün hədəfə bərabər kafel düzəldin; heç bir kafel hərəkət edə bilməzsə, uduzursunuz.",
+    "lib.arcade.note.blocks": "Düşən fiqurları fırladıb yerləşdirərək üfüqi xətləri doldurun; dolu xətlər yox olur. ← → hərəkət, ↑ fırlatmaq, ↓ daha sürətli endirmək, Boşluq dərhal salır, P fasilə. Səviyyəni keçmək üçün tələb olunan sayda xətti təmizləyin; fiqurlar yuxarıya çatsa, uduzursunuz.",
+    "lib.arcade.note.breakout": "Raketkanı idarə edib topu oyunda saxlamaq üçün siçanı hərəkət etdirin, barmağınızı meydançada sürüşdürün və ya ← → düymələrindən istifadə edin. Səviyyəni keçmək üçün bütün kərpicləri sındırın; qalın çərçivəli kərpiclərə iki zərbə lazımdır. 3 canınız var. Boşluq başladır və ya fasilə verir.",
+    "lib.arcade.note.connect4": "Siz qırmızı ilə oynayır və birinci gedirsiniz. Fiş atmaq üçün sütuna toxunun; fiş ən aşağı boş yerə düşür. 4 fişi üfüqi, şaquli və ya diaqonal ilk düzən qalib gəlir.",
+    "lib.arcade.note.freecell": "Bütün kartlar açıqdır. 52 kartın hamısını rəngə görə 4 bazaya A-dan K-ya qədər köçürün. Masada rəngləri növbələşdirərək azalan sırada düzün. Yuxarı soldakı boş xanaların hər biri bir kart saxlayır; bir dəfəyə neçə kart köçürə biləcəyiniz boş xanalardan və boş sütunlardan asılıdır. Yuxarı səviyyələrdə xana azdır.",
+    "lib.arcade.note.gomoku": "Siz X ilə oynayır və birinci gedirsiniz; kompüter O ilə oynayır. Növbə ilə 15×15 lövhənin boş nöqtəsinə işarə qoyun. 5-i üfüqi, şaquli və ya diaqonal ilk düzən qalib gəlir.",
+    "lib.arcade.note.klondike": "52 kartın hamısını rəngə görə 4 bazaya A-dan K-ya qədər köçürün. Masada rəngləri növbələşdirərək azalan sırada düzün; boş sütuna yalnız K qoymaq olar. Kart götürmək üçün yuxarı soldakı qapalı dəstəyə toxunun. Karta, sonra onu qoymaq istədiyiniz yerə toxunun və ya onun özü uyğun yerə keçməsi üçün yenidən toxunun. 1–5 səviyyələr: 1 götür; 6–10 səviyyələr: 3 götür.",
+    "lib.arcade.note.match3": "Eyni növdən 3 və ya daha çox elementdən sıra yaratmaq üçün iki qonşu elementin yerini dəyişin (birinə, sonra digərinə toxunun və ya sürüşdürün); sıra partlayır və yuxarıdakı elementlər düşür. Zəncirvari reaksiyalar xalları artırır. Gedişlər bitməmiş hədəf xala çatın.",
+    "lib.arcade.note.minesweeper": "Xananı açmaq üçün ona toxunun. Rəqəm ətrafdakı 8 xanada neçə mina olduğunu göstərir. Şübhəli minanı sağ kliklə, uzun basmaqla və ya bayraq rejimi ilə işarələyin. Ətrafında artıq kifayət qədər bayraq olan rəqəmə toxunaraq qalanlarını tez açın. Qalib gəlmək üçün minasız bütün xanaları açın.",
+    "lib.arcade.note.reversi": "Siz qara ilə oynayır və birinci gedirsiniz. Fişi elə qoyun ki, bir və ya bir neçə ağ fiş onunla başqa bir qara fiş arasında sıxışsın (üfüqi, şaquli və ya diaqonal); sıxışan fişlər sizin rənginizə çevrilir. Qanuni gedişiniz yoxdursa, növbəni ötürürsünüz. Lövhə dolduqda daha çox fişi olan qalib gəlir.",
+    "lib.arcade.note.snake": "İlanı ox düymələri, WASD, aşağıdakı düymələr və ya sürüşdürməklə idarə edin. Böyümək üçün qırmızı yeməyi yeyin; səviyyəni keçmək üçün tələb olunan uzunluğa çatın. 3-cü səviyyədən divara dəymək oyunu bitirir; yuxarı səviyyələrdə maneələr var. Öz quyruğunuza dəyməyin.",
+    "lib.arcade.note.spider": "Masada hər rəngi K-dan A-ya qədər ardıcıllıqla yığın; 13 kartlıq tam ardıcıllıq avtomatik götürülür. İstənilən kartı bir dərəcə yüksək kartın üstünə qoymaq olar, lakin yalnız eyni rəngli ardıcıllıqlar birlikdə hərəkət edir. Çıxılmaz vəziyyətdə Yeni sıra payla düyməsinə toxunun (hər sütunda kart olmalıdır). 1–3 səviyyələr: bir rəng; 4–7: iki; 8–10: dörd.",
+    "lib.arcade.pause": "Fasilə",
+    "lib.arcade.paused": "Fasilədə",
+    "lib.arcade.right": "Sağa",
+    "lib.arcade.rotate": "Fırlat",
+    "lib.arcade.score": "Xal: {n}",
+    "lib.arcade.shuffled": "Gediş qalmamışdı — lövhə qarışdırıldı.",
+    "lib.arcade.snakeBoard": "İlan meydançası",
+    "lib.arcade.suitsN": "{n} rəng",
+    "lib.arcade.target": "Hədəf: {n}",
+    "lib.arcade.up": "Yuxarı",
+    "lib.arcade.youVsAi": "Siz {a} – Kompüter {b}",
+    "lib.arcade.noHintFc": "Faydalı gediş qalmayıb. Bir neçə gedişi geri qaytarın və ya yenidən başlayın."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Əyləncə və oyunlar",
-      "desc": "Şans çarxı, təsadüfi ədəd generatoru, hədiyyə çəkilişləri və əyləncəli oyunlar."
+      "desc": "Bəxt çarxı, təsadüfi rəqəmlər və brauzer oyunları: sudoku, şahmat, Çin şahmatı, qomoku, 2048, mina axtaran, düşən bloklar, ilan, pasyans və kərpic sındıran."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Gizli Siyanqi",
       "desc": "Vyetnam gizli Siyanqisini oynayın: fiqurlar üzü aşağı başlayır və ilk gedişdən sonra çevrilir. Kompüterlə 10 səviyyədə və ya onlayn dostlar və yeni rəqiblərlə."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "2048 kafelini yaratmaq üçün eyni rəqəmləri sürüşdürüb birləşdirin; 64-dən 8192-yə qədər hədəfli 10 səviyyə, gedişi geri qaytarma ilə."
+    },
+    "minesweeper": {
+      "name": "Mina axtaran",
+      "desc": "Klassik mina axtaran: xanaları açın, bayraq qoyun və rəqəmlərə görə minaların harada olduğunu tapın; 8x8-dən 18x18-ə qədər 10 səviyyə, telefonda da işləyir."
+    },
+    "block-puzzle": {
+      "name": "Düşən bloklar",
+      "desc": "Xətləri təmizləmək üçün düşən blokları fırladıb yığın; sürəti artan 10 səviyyə, klaviatura və ya toxunma düymələri ilə."
+    },
+    "snake": {
+      "name": "İlan",
+      "desc": "İlanı divarlara və öz quyruğuna dəymədən yeyib böyüməsi üçün idarə edin; maneələri olan, getdikcə sürətlənən 10 səviyyə."
+    },
+    "solitaire": {
+      "name": "Pasyans",
+      "desc": "Klassik Klondayk pasyansı: rəngləri növbələşdirərək azalan sırada düzün və kartları bazalara A-dan K-ya qədər köçürün; 1 və ya 3 götürmə, geri qaytarma və ipucları ilə."
+    },
+    "spider-solitaire": {
+      "name": "Hörümçək pasyansı",
+      "desc": "1, 2 və 4 rəngli Hörümçək: masadan götürmək üçün eyni rəngli ardıcıllıqları K-dan A-ya qədər yığın; geri qaytarma və ipucları olan 10 səviyyə."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell pasyansı: bütün kartlar açıqdır; kartları bazalara köçürmək üçün boş xanalardan istifadə edin; xanaları getdikcə azalan 10 səviyyə."
+    },
+    "gomoku": {
+      "name": "Qomoku (beşi bir sırada)",
+      "desc": "Kompüterə qarşı 15x15 lövhədə qomoku, beşi bir sırada oynayın; asandan çətinə 10 səviyyə, gedişi geri qaytarma ilə."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Rəqibin fişlərini sıxışdırıb öz rənginizə çevirin; kompüterə qarşı 8x8 Reversini 10 səviyyədə oynayın."
+    },
+    "connect-four": {
+      "name": "Dördü bir sırada",
+      "desc": "Fişləri sütunlara atın və kompüterdən əvvəl 4-ü üfüqi, şaquli və ya diaqonal düzün; asandan çətinə 10 səviyyə."
+    },
+    "match-3": {
+      "name": "Üçünü birləşdir",
+      "desc": "Eyni növdən 3 və ya daha çox konfeti birləşdirib zəncirvari reaksiyalar yaratmaq üçün yerlərini dəyişin; hədəf xalı və məhdud gedişi olan 10 səviyyə."
+    },
+    "brick-breaker": {
+      "name": "Kərpic sındıran",
+      "desc": "Raketkanı idarə edin və bütün kərpicləri sındırmaq üçün topu sıçradın; fərqli düzülüşlü 10 mərhələ, siçan, toxunma və ya düymələrlə."
     }
   },
   "s": {

@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Vastane passis. Kui ka teie passite, partii lõpeb ja loetakse kokku.",
     "lib.online.modeAi": "Mängi arvuti vastu",
     "lib.online.modeOnline": "Mängi võrgus",
-    "share.label": "Jaga"
+    "share.label": "Jaga",
+    "lib.arcade.aiNoMove": "Arvutil pole käiku — sinu kord.",
+    "lib.arcade.autoFinish": "Tõsta kõik üles",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Langevate klotside väljak",
+    "lib.arcade.breakoutBoard": "Tellisepurustaja väljak",
+    "lib.arcade.dealRow": "Jaga uus rida",
+    "lib.arcade.down": "Alla",
+    "lib.arcade.drawN": "Võta {n} kaupa",
+    "lib.arcade.drop": "Kukuta",
+    "lib.arcade.flagMode": "Lipurežiim",
+    "lib.arcade.freeCells": "Vabad lahtrid: {n}",
+    "lib.arcade.left": "Vasakule",
+    "lib.arcade.length": "Pikkus: {n}/{t}",
+    "lib.arcade.lines": "Read: {n}/{t}",
+    "lib.arcade.minesLeft": "Miinid: {n}",
+    "lib.arcade.moves": "Käigud: {n}",
+    "lib.arcade.movesLeft": "Jäänud {n} käiku",
+    "lib.arcade.mustPass": "Sul pole käiku — jätad vahele.",
+    "lib.arcade.next": "Järgmised klotsid",
+    "lib.arcade.noHint": "Kasulikke käike pole. Võta kaart, jaga uus rida või alusta uuesti.",
+    "lib.arcade.note.2048": "Noolte või libistamisega liigutad kõiki plaate. Kaks sama numbriga plaati ühinevad, kui need kokku puutuvad. Tee eesmärgiga võrdne plaat ja tase on läbitud; kui midagi ei liigu, kaotasid.",
+    "lib.arcade.note.blocks": "Pööra ja aseta langevaid klotse nii, et horisontaalsed read täituksid; täis read kaovad. ← → liigutab, ↑ pöörab, ↓ kiiremini alla, tühik kukutab, P paus. Kustuta nõutud arv ridu ja tase on läbitud; kui klotsid jõuavad üles, kaotasid.",
+    "lib.arcade.note.breakout": "Liiguta hiirt, libista sõrme väljakul või kasuta ← → reketi juhtimiseks ja ära lase pallil kukkuda. Purusta kõik tellised ja tase on läbitud; paksu äärega tellised vajavad kahte tabamust. Sul on 3 elu. Tühik alustab või peatab.",
+    "lib.arcade.note.connect4": "Mängid punastega ja alustad. Puuduta veergu, et nupp sisse visata; see kukub madalaimale vabale kohale. Võidab see, kes esimesena saab 4 nuppu ritta horisontaalselt, vertikaalselt või diagonaalselt.",
+    "lib.arcade.note.freecell": "Kõik kaardid on avatud. Vii kõik 52 kaarti 4 alushunnikusse mastide kaupa ässast kuningani. Laual laota kahanevas järjekorras, punast ja musta vaheldades. Ülal vasakul olevad vabad lahtrid mahutavad igaüks ühe kaardi; mitu kaarti korraga liigutada saad, sõltub vabadest lahtritest ja tühjadest veergudest. Kõrgematel tasemetel on lahtreid vähem.",
+    "lib.arcade.note.gomoku": "Mängid X-iga ja alustad; arvuti mängib O-ga. Kordamööda pannakse märk 15×15 laua vabale punktile. Võidab see, kes esimesena saab 5 ritta horisontaalselt, vertikaalselt või diagonaalselt.",
+    "lib.arcade.note.klondike": "Vii kõik 52 kaarti 4 alushunnikusse mastide kaupa ässast kuningani. Laual laota kahanevas järjekorras, punast ja musta vaheldades; tühja veergu tohib panna ainult K. Kaartide võtmiseks puuduta ülal vasakul kinnist pakki. Puuduta kaarti ja siis kohta, või puuduta kaarti uuesti, et see ise lubatud kohta liiguks. Tasemetel 1–5 võetakse 1 kaart, 6–10 kolm.",
+    "lib.arcade.note.match3": "Vaheta kahe naabertüki kohad (puudutades järjest või libistades), et tekiks rida vähemalt 3 ühesugusest; rida plahvatab ja ülemised tükid kukuvad alla. Ahelreaktsioonid korrutavad punkte. Jõua sihtpunktideni enne, kui käigud otsa saavad.",
+    "lib.arcade.note.minesweeper": "Puuduta ruutu selle avamiseks. Number näitab, mitu miini on 8 ümbritsevas ruudus. Märgi kahtlane ruut lipuga paremklõpsu, pika vajutuse või lipurežiimiga. Puuduta numbrit, mille ümber on juba piisavalt lippe, et ülejäänud kiiresti avada. Ava kõik miinideta ruudud, et võita.",
+    "lib.arcade.note.reversi": "Mängid mustadega ja alustad. Aseta nupp nii, et piirad ühe või mitu valget selle ja teise musta vahele (horisontaalselt, vertikaalselt, diagonaalselt); piiratud nupud pöörduvad sinu värvi. Kui sul pole käiku, jätad vahele. Kui laud on täis, võidab see, kellel on rohkem nuppe.",
+    "lib.arcade.note.snake": "Juhi madu noolte, WASD, all olevate nuppude või libistamisega. Söö punast toitu, et kasvada; jõua nõutud pikkuseni ja tase on läbitud. Alates 3. tasemest tähendab seina vastu sõitmine kaotust; kõrgematel tasemetel on takistused. Ära hammusta oma saba.",
+    "lib.arcade.note.spider": "Laota laual iga mast reaks kuningast ässani; täielikud 13 kaardi read eemaldatakse ise. Iga kaardi võib panna ühe võrra suuremale kaardile, kuid koos liiguvad ainult sama masti read. Kui jääd kinni, puuduta Jaga uus rida (igas veerus peab olema kaarte). Tasemed 1–3 üks mast, 4–7 kaks, 8–10 neli.",
+    "lib.arcade.pause": "Paus",
+    "lib.arcade.paused": "Peatatud",
+    "lib.arcade.right": "Paremale",
+    "lib.arcade.rotate": "Pööra",
+    "lib.arcade.score": "Punktid: {n}",
+    "lib.arcade.shuffled": "Käike pole — laud segati uuesti.",
+    "lib.arcade.snakeBoard": "Mao väljak",
+    "lib.arcade.suitsN": "{n} masti",
+    "lib.arcade.target": "Eesmärk: {n}",
+    "lib.arcade.up": "Üles",
+    "lib.arcade.youVsAi": "Sina {a} – Arvuti {b}",
+    "lib.arcade.noHintFc": "Kasulikke käike pole enam. Võta mõni käik tagasi või alusta uuesti."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Meelelahutus ja mängud",
-      "desc": "Õnneratas, juhuslike arvude generaator, auhinnaloosid ja lõbusad mängud."
+      "desc": "Õnneratas, juhuslikud numbrid ja brauserimängud: sudoku, male, hiina male, gomoku, 2048, miiniotsija, langevad klotsid, uss, pasjanss ja tellisepurustaja."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Peidetud Xiangqi",
       "desc": "Mängige Vietnami peidetud Xiangqit: nupud alustavad tagurpidi ja pöörduvad pärast esimest käiku. Arvuti vastu 10 tasemel või võrgus sõprade ja uute vastastega."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Libista ja ühenda samu numbreid, kuni tekib plaat 2048; 10 taset eesmärkidega 64 kuni 8192, tagasivõtmisega."
+    },
+    "minesweeper": {
+      "name": "Miiniotsija",
+      "desc": "Klassikaline miiniotsija: ava ruute, pane lippe ja tuleta numbritest, kus on miinid; 10 taset 8x8 kuni 18x18, töötab ka telefonis."
+    },
+    "block-puzzle": {
+      "name": "Langevad klotsid",
+      "desc": "Pööra ja laota langevaid klotse, et ridu kustutada; 10 järjest kiiremat taset, klaviatuuri või puutenuppudega."
+    },
+    "snake": {
+      "name": "Uss",
+      "desc": "Juhi madu toidu juurde, et see kasvaks, ning väldi seinu ja oma saba; 10 kiirenevat taset takistustega."
+    },
+    "solitaire": {
+      "name": "Pasjanss",
+      "desc": "Klassikaline Klondike pasjanss: laota värve vaheldades ja vii kaardid alushunnikutesse ässast kuningani; võta 1 või 3, tagasivõtmise ja vihjetega."
+    },
+    "spider-solitaire": {
+      "name": "Ämblikupasjanss",
+      "desc": "Ämblik 1, 2 ja 4 mastiga: laota sama masti read kuningast ässani, et need laualt eemaldada; 10 taset tagasivõtmise ja vihjetega."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCelli pasjanss: kõik kaardid avatud; kasuta vabu lahtreid, et viia kaardid alushunnikutesse; 10 taset järjest vähemate lahtritega."
+    },
+    "gomoku": {
+      "name": "Gomoku (viis ritta)",
+      "desc": "Mängi gomokut ehk viit ritta arvuti vastu 15x15 laual; 10 taset kergest raskeni, tagasivõtmisega."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Piira vastase nupud, et pöörata need oma värvi; mängi 8x8 Reversit arvuti vastu 10 tasemel."
+    },
+    "connect-four": {
+      "name": "Neli ritta",
+      "desc": "Viska nupud veergudesse ja saa 4 ritta horisontaalselt, vertikaalselt või diagonaalselt enne arvutit; 10 taset kergest raskeni."
+    },
+    "match-3": {
+      "name": "Kolm ritta",
+      "desc": "Vaheta komme, et ühendada vähemalt 3 ühesugust ja käivitada ahelreaktsioone; 10 taset sihtpunktide ja piiratud käikudega."
+    },
+    "brick-breaker": {
+      "name": "Tellisepurustaja",
+      "desc": "Juhi reketit ja põrguta palli, et purustada kõik tellised; 10 erineva paigutusega taset, hiire, puute või klahvidega."
     }
   },
   "s": {

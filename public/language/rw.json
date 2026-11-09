@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Uwo muhanganye yasimbutse. Nawe nusimbuka, umukino urarangira ukabarwa.",
     "lib.online.modeAi": "Kina na mudasobwa",
     "lib.online.modeOnline": "Kina kuri interineti",
-    "share.label": "Sangiza"
+    "share.label": "Sangiza",
+    "lib.arcade.aiNoMove": "Mudasobwa nta nyimbo yemewe ifite — ni wowe ukina.",
+    "lib.arcade.autoFinish": "Rangiza mu buryo bwikora",
+    "lib.arcade.best": "Agahigo: {n}",
+    "lib.arcade.blocksBoard": "Ikibuga cy'amabuye agwa",
+    "lib.arcade.breakoutBoard": "Ikibuga cyo kumena amatafari",
+    "lib.arcade.dealRow": "Gabura umurongo mushya",
+    "lib.arcade.down": "Hasi",
+    "lib.arcade.drawN": "Fata {n}",
+    "lib.arcade.drop": "Ta ako kanya",
+    "lib.arcade.flagMode": "Uburyo bw'ibendera",
+    "lib.arcade.freeCells": "Uturemba twisanzuye: {n}",
+    "lib.arcade.left": "Ibumoso",
+    "lib.arcade.length": "Uburebure: {n}/{t}",
+    "lib.arcade.lines": "Imirongo: {n}/{t}",
+    "lib.arcade.minesLeft": "Ibisasu: {n}",
+    "lib.arcade.moves": "Inyimbo: {n}",
+    "lib.arcade.movesLeft": "Hasigaye inyimbo {n}",
+    "lib.arcade.mustPass": "Nta nyimbo yemewe ufite — urasimbuka uruhare rwawe.",
+    "lib.arcade.next": "Ibice bikurikira",
+    "lib.arcade.noHint": "Nta nyimbo ifite akamaro isigaye. Fata ikarita, gabura umurongo mushya cyangwa wongere utangire.",
+    "lib.arcade.note.2048": "Koresha utubuto tw'imyambi cyangwa unyereze urutoki kugira ngo wimure amakaro yose. Amakaro abiri afite umubare umwe ahurira hamwe iyo akoranye. Kora ikaro ringana n'intego kugira ngo urenge urwego; niba nta karo rishobora kwimuka, uratsinzwe.",
+    "lib.arcade.note.blocks": "Hindukiza kandi ushyire ibice bigwa kugira ngo wuzuze imirongo itambitse; imirongo yuzuye irazimira. ← → kwimura, ↑ guhindukiza, ↓ kumanura vuba, Umwanya uta ako kanya, P guhagarara gato. Siba umubare w'imirongo usabwa kugira ngo urenge urwego; ibice nibigera hejuru, uratsinzwe.",
+    "lib.arcade.note.breakout": "Imura imbeba, kurura urutoki ku kibuga cyangwa ukoreshe ← → kugira ngo uyobore akabaho ugumishe umupira mu mukino. Mena amatafari yose kugira ngo urenge urwego; amatafari afite impande zibyibushye akenera gukubitwa kabiri. Ufite ubuzima 3. Umwanya utangiza cyangwa uhagarika.",
+    "lib.arcade.note.connect4": "Ukina umutuku kandi ni wowe utangira. Kanda inkingi kugira ngo uta agacuma; kagwa ahantu hasigaye ubusa hasi cyane. Uwa mbere utondeka uducuma 4 dutambitse, duhagaze cyangwa twibereje aratsinda.",
+    "lib.arcade.note.freecell": "Amakarita yose arafunguye. Imura amakarita yose 52 ku mfatiro 4 ukurikije ubwoko, kuva kuri A kugeza kuri K. Ku meza, tondeka umanuka usimburanya amabara. Utuzu twisanzuye two hejuru ibumoso buri kamwe kabika ikarita imwe; umubare w'amakarita ushobora kwimura icyarimwe ushingiye ku tuzu twisanzuye n'inkingi zirimo ubusa. Inzego zo hejuru zifite utuzu duke.",
+    "lib.arcade.note.gomoku": "Ukina X kandi ni wowe utangira; mudasobwa ikina O. Musimburane mushyira ikimenyetso ahantu hasigaye ubusa ku kibaho cya 15×15. Uwa mbere ubona 5 bikurikiranye bitambitse, bihagaze cyangwa byibereje aratsinda.",
+    "lib.arcade.note.klondike": "Imura amakarita yose 52 ku mfatiro 4 ukurikije ubwoko, kuva kuri A kugeza kuri K. Ku meza, tondeka umanuka usimburanya amabara; K yonyine ni yo ishobora kujya mu nkingi irimo ubusa. Kanda igipande cyubitse cyo hejuru ibumoso kugira ngo ufate amakarita. Kanda ikarita hanyuma ukande aho ushaka kuyishyira, cyangwa wongere uyikande ngo yijyane ahantu hemewe. Inzego 1–5: fata 1; inzego 6–10: fata 3.",
+    "lib.arcade.note.match3": "Hinduranya ibice bibiri byegeranye (kanda kimwe hanyuma ikindi, cyangwa unyereze) kugira ngo ukore umurongo w'ibice 3 cyangwa birenga bisa; umurongo uraturika maze ibice byo hejuru bikagwa. Ibikorwa bikurikirana bikuba amanota. Gera ku manota y'intego mbere y'uko inyimbo zishira.",
+    "lib.arcade.note.minesweeper": "Kanda akazu kugira ngo ugafungure. Umubare werekana ibisasu biri mu tuzu 8 tugakikije. Shyira ikimenyetso ku gisasu ukeka ukanze iburyo, ukanze igihe kirekire cyangwa ukoresheje uburyo bw'ibendera. Kanda umubare umaze kugira amabendera ahagije hafi yawo kugira ngo ufungure utundi vuba. Fungura utuzu twose tudafite igisasu kugira ngo utsinde.",
+    "lib.arcade.note.reversi": "Ukina umukara kandi ni wowe utangira. Shyira agacuma ku buryo gafatira agacuma kamwe cyangwa twinshi tw'umweru hagati yako n'akandi gacuma k'umukara (bitambitse, bihagaze cyangwa byibereje); uducuma twafatiwe duhinduka ibara ryawe. Niba nta nyimbo yemewe ufite, urasimbuka uruhare rwawe. Ikibaho nicyuzura, ufite uducuma twinshi aratsinda.",
+    "lib.arcade.note.snake": "Yobora inzoka ukoresheje utubuto tw'imyambi, WASD, utubuto two hasi cyangwa unyereza. Rya ibiryo bitukura kugira ngo ukure; gera ku burebure busabwa kugira ngo urenge urwego. Kuva ku rwego rwa 3, kugonga urukuta birangiza umukino; inzego zo hejuru zifite inzitizi. Ntugonge umurizo wawe.",
+    "lib.arcade.note.spider": "Ku meza, tondeka buri bwoko mu ruhererekane kuva kuri K kumanuka kugeza kuri A; uruhererekane rwuzuye rw'amakarita 13 rukurwaho mu buryo bwikora. Ikarita iyo ari yo yose ishobora kujya ku ikarita iyiruta ku ntera imwe, ariko uruhererekane rw'ubwoko bumwe gusa ni rwo rwimukira hamwe. Niba wafashwe, kanda Gabura umurongo mushya (buri nkingi igomba kugira amakarita). Inzego 1–3: ubwoko bumwe; 4–7: bubiri; 8–10: bune.",
+    "lib.arcade.pause": "Hagarara gato",
+    "lib.arcade.paused": "Byahagaze gato",
+    "lib.arcade.right": "Iburyo",
+    "lib.arcade.rotate": "Hindukiza",
+    "lib.arcade.score": "Amanota: {n}",
+    "lib.arcade.shuffled": "Nta nyimbo zari zisigaye — ikibuga cyavanzwe bundi bushya.",
+    "lib.arcade.snakeBoard": "Ikibuga cy'inzoka",
+    "lib.arcade.suitsN": "Ubwoko {n}",
+    "lib.arcade.target": "Intego: {n}",
+    "lib.arcade.up": "Hejuru",
+    "lib.arcade.youVsAi": "Wowe {a} – Mudasobwa {b}",
+    "lib.arcade.noHintFc": "Nta nyimbo ifite akamaro isigaye. Subiza inyuma inyimbo nke cyangwa wongere utangire."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Imyidagaduro n'imikino",
-      "desc": "Uruziga rw'amahirwe, kubona imibare ku bw'amahirwe, gutombora ibihembo n'imikino ishimishije."
+      "desc": "Uruziga rw'amahirwe, imibare itunguranye n'imikino yo muri mushakisha: Sudoku, chess, chess y'Abashinwa, Gomoku, 2048, gushakisha ibisasu, amabuye agwa, inzoka, solitaire no kumena amatafari."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi ihishe",
       "desc": "Kina Xiangqi ihishe yo muri Vietnam: ibice bitangira byubitse bigahindurwa nyuma y'igikorwa cya mbere. Na mudasobwa ku nzego 10 cyangwa kuri interineti n'inshuti n'abo muhanganye bashya."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Nyereza kandi uhuze imibare isa kugeza ubonye ikaro rya 2048; inzego 10 zifite intego kuva kuri 64 kugeza kuri 8192, hamwe no gusubiza inyuma."
+    },
+    "minesweeper": {
+      "name": "Gushakisha ibisasu",
+      "desc": "Umukino wa kera wo gushakisha ibisasu: fungura utuzu, shyira amabendera kandi umenye ukoresheje imibare aho ibisasu biri; inzego 10 kuva kuri 8x8 kugeza kuri 18x18, ukora no kuri telefoni."
+    },
+    "block-puzzle": {
+      "name": "Amabuye agwa",
+      "desc": "Hindukiza kandi utondeke amabuye agwa kugira ngo usibe imirongo; inzego 10 zigenda zihuta, ukoresheje mwandikisho cyangwa utubuto two gukoraho."
+    },
+    "snake": {
+      "name": "Inzoka",
+      "desc": "Yobora inzoka ngo irye ikure itagonze inkuta cyangwa umurizo wayo; inzego 10 zihuta kurushaho zifite inzitizi."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klondike Solitaire ya kera: tondeka umanuka usimburanya amabara kandi wimure amakarita ku mfatiro kuva kuri A kugeza kuri K; fata 1 cyangwa 3, hamwe no gusubiza inyuma n'inama."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire y'Igitagangurirwa",
+      "desc": "Igitagangurirwa gifite ubwoko 1, 2 na 4: kora uruhererekane rw'ubwoko bumwe kuva kuri K kugeza kuri A kugira ngo ubikure ku meza; inzego 10 zifite gusubiza inyuma n'inama."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: amakarita yose arafunguye; koresha utuzu twisanzuye kugira ngo wimure amakarita ku mfatiro; inzego 10 zifite utuzu tugenda tugabanuka."
+    },
+    "gomoku": {
+      "name": "Gomoku (atanu akurikiranye)",
+      "desc": "Kina Gomoku, atanu akurikiranye, uhanganye na mudasobwa ku kibaho cya 15x15; inzego 10 kuva ku byoroshye kugeza ku bikomeye, hamwe no gusubiza inyuma."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Fatira uducuma tw'uwo muhanganye kugira ngo duhinduke ibara ryawe; kina Reversi ya 8x8 uhanganye na mudasobwa mu nzego 10."
+    },
+    "connect-four": {
+      "name": "Ane akurikiranye",
+      "desc": "Ta uducuma mu nkingi maze utondeke 4 dutambitse, duhagaze cyangwa twibereje mbere ya mudasobwa; inzego 10 kuva ku byoroshye kugeza ku bikomeye."
+    },
+    "match-3": {
+      "name": "Huza 3",
+      "desc": "Hinduranya bombo kugira ngo uhuze 3 cyangwa zirenga zisa kandi utere ibikorwa bikurikirana; inzego 10 zifite amanota y'intego n'inyimbo zigarukira."
+    },
+    "brick-breaker": {
+      "name": "Kumena amatafari",
+      "desc": "Yobora akabaho kandi usimbutse umupira kugira ngo umene amatafari yose; ibyiciro 10 bifite imitondekere itandukanye, ukoresheje imbeba, gukoraho cyangwa utubuto."
     }
   },
   "s": {

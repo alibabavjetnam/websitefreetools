@@ -133,6 +133,18 @@ const PATHS: Record<string, string> = {
   'co-up': '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6.2"/><path d="M10.2 10.2a1.9 1.9 0 1 1 2.8 1.6c-.6.4-1 .8-1 1.5M12 15.7h.01"/>',
   'go-game': '<path d="M4 8h16M4 16h16M8 4v16M16 4v16"/><circle cx="8" cy="8" r="2.6" fill="currentColor"/><circle cx="16" cy="16" r="2.6" fill="var(--surface,#fff)"/><circle cx="16" cy="8" r="2.6" fill="var(--surface,#fff)"/>',
   'memory-shapes': '<rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.5"/><circle cx="16.5" cy="7.25" r="3.8"/><path d="M7.25 13.5l3.8 6.5H3.45z"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.5" opacity=".5"/><path d="M16.75 15.2v3.2M15.2 16.8h3.2" opacity=".5"/>',
+  'game-2048': '<rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.5"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="1.5"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.5"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.5" opacity=".5"/><path d="M6 6.5h2.5l-2.5 3h2.5M15.4 6.5v3M17.6 6.5v3"/>',
+  'minesweeper': '<circle cx="12" cy="13" r="5.5"/><path d="M12 4.5v3M12 18.5v2M3.5 13h3M17.5 13h3M6 7l2 2M18 7l-2 2"/><circle cx="10.3" cy="11.3" r="1.2"/>',
+  'block-puzzle': '<rect x="4" y="13" width="5" height="5"/><rect x="9" y="13" width="5" height="5"/><rect x="14" y="13" width="5" height="5"/><rect x="9" y="8" width="5" height="5"/><rect x="14" y="3" width="5" height="5" opacity=".5"/>',
+  'snake': '<path d="M5 17c0-2 1.5-3 3.5-3h7a3 3 0 0 0 0-6H9"/><circle cx="8" cy="8" r="2.2"/><path d="M5 17h3"/><circle cx="18.5" cy="18" r="1.4"/>',
+  'solitaire': '<rect x="3" y="5" width="10" height="14" rx="1.5" transform="rotate(-8 8 12)"/><rect x="10" y="4" width="10" height="14" rx="1.5"/><path d="M15 8.5l1.8 2.5-1.8 2.5-1.8-2.5z"/>',
+  'spider-solitaire': '<rect x="7" y="3.5" width="10" height="14" rx="1.5"/><circle cx="12" cy="10.5" r="2.2"/><path d="M9.8 9.3L7.5 8M9.8 11.7L7.5 13M14.2 9.3l2.3-1.3M14.2 11.7l2.3 1.3"/><path d="M5 20.5h14" opacity=".5"/>',
+  'freecell': '<rect x="3" y="4" width="8" height="11" rx="1.5"/><rect x="13" y="4" width="8" height="11" rx="1.5" stroke-dasharray="2.5 2"/><path d="M7 7.5v4M5 9.5h4"/><path d="M3 19h18" opacity=".5"/>',
+  'gomoku': '<path d="M4 4h16v16H4zM4 9.3h16M4 14.6h16M9.3 4v16M14.6 4v16" opacity=".55"/><path d="M5.5 5.5l2.4 2.4M7.9 5.5L5.5 7.9M10.8 10.8l2.4 2.4M13.2 10.8l-2.4 2.4"/><circle cx="17.3" cy="17.3" r="1.6"/>',
+  'reversi': '<circle cx="8" cy="8" r="3.6"/><circle cx="16" cy="8" r="3.6" fill="currentColor"/><circle cx="8" cy="16" r="3.6" fill="currentColor"/><circle cx="16" cy="16" r="3.6"/>',
+  'connect-four': '<rect x="3" y="5" width="18" height="15" rx="2"/><circle cx="7.5" cy="9.5" r="1.6"/><circle cx="12" cy="9.5" r="1.6"/><circle cx="16.5" cy="9.5" r="1.6"/><circle cx="7.5" cy="15" r="1.6" fill="currentColor"/><circle cx="12" cy="15" r="1.6" fill="currentColor"/><circle cx="16.5" cy="15" r="1.6"/>',
+  'match-3': '<circle cx="6" cy="7" r="2.6"/><circle cx="12" cy="7" r="2.6"/><circle cx="18" cy="7" r="2.6"/><path d="M6 14.5l2.6 4.5H3.4zM12 14l3 3-3 3-3-3z"/><rect x="15.5" y="14.5" width="5" height="5" rx="1"/>',
+  'brick-breaker': '<rect x="3" y="4" width="5.5" height="3" rx=".6"/><rect x="9.25" y="4" width="5.5" height="3" rx=".6"/><rect x="15.5" y="4" width="5.5" height="3" rx=".6"/><rect x="6" y="8.5" width="5.5" height="3" rx=".6" opacity=".5"/><circle cx="14" cy="14.5" r="1.6"/><path d="M8 19.5h8"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

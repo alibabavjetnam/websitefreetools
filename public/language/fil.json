@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Nag-pass ang kalaban. Kung mag-pass ka rin, tapos ang laro at bibilangin.",
     "lib.online.modeAi": "Laban sa computer",
     "lib.online.modeOnline": "Maglaro online",
-    "share.label": "Ibahagi"
+    "share.label": "Ibahagi",
+    "lib.arcade.aiNoMove": "Walang tira ang computer — ikaw na.",
+    "lib.arcade.autoFinish": "Iakyat lahat",
+    "lib.arcade.best": "Pinakamataas: {n}",
+    "lib.arcade.blocksBoard": "Board ng mga nahuhulog na bloke",
+    "lib.arcade.breakoutBoard": "Arena ng pagbasag ng ladrilyo",
+    "lib.arcade.dealRow": "Mamigay ng bagong hanay",
+    "lib.arcade.down": "Pababa",
+    "lib.arcade.drawN": "Bumunot ng {n}",
+    "lib.arcade.drop": "Ihulog agad",
+    "lib.arcade.flagMode": "Mode ng bandila",
+    "lib.arcade.freeCells": "Bakanteng cell: {n}",
+    "lib.arcade.left": "Pakaliwa",
+    "lib.arcade.length": "Haba: {n}/{t}",
+    "lib.arcade.lines": "Hanay: {n}/{t}",
+    "lib.arcade.minesLeft": "Mina: {n}",
+    "lib.arcade.moves": "Tira: {n}",
+    "lib.arcade.movesLeft": "{n} tira na lang",
+    "lib.arcade.mustPass": "Wala kang tira — laktaw ang turno mo.",
+    "lib.arcade.next": "Mga susunod na bloke",
+    "lib.arcade.noHint": "Wala nang kapaki-pakinabang na tira. Bumunot ng baraha, mamigay ng bagong hanay, o magsimula ulit.",
+    "lib.arcade.note.2048": "Gamitin ang mga arrow key o mag-swipe para i-slide ang lahat ng tile. Nagsasama ang dalawang tile na may parehong numero kapag nagdikit. Gumawa ng tile na katumbas ng target para pumasa sa level; kung wala nang gumagalaw, talo ka.",
+    "lib.arcade.note.blocks": "Iikot at ilagay ang mga nahuhulog na bloke para mapuno ang mga pahalang na hanay; nawawala ang punong hanay. ← → igalaw, ↑ iikot, ↓ pabilisin pababa, Space ihulog agad, P pause. Burahin ang kinakailangang bilang ng hanay para pumasa; kapag umabot sa itaas ang mga bloke, talo ka.",
+    "lib.arcade.note.breakout": "Igalaw ang mouse, i-drag ang daliri sa arena, o gamitin ang ← → para kontrolin ang paddle at huwag hayaang mahulog ang bola. Basagin lahat ng ladrilyo para pumasa; dalawang tama ang kailangan ng ladrilyong makapal ang gilid. May 3 buhay ka. Space para magsimula o mag-pause.",
+    "lib.arcade.note.connect4": "Pula ka at ikaw ang mauuna. I-tap ang isang column para maghulog ng piyesa; babagsak ito sa pinakamababang bakanteng puwesto. Ang unang makahanay ng 4 na pahalang, patayo, o pahilis ang panalo.",
+    "lib.arcade.note.freecell": "Nakaharap ang lahat ng baraha. Ilipat ang lahat ng 52 baraha sa 4 na foundation ayon sa suit, mula A hanggang K. Sa mesa, isalansan nang pababa at salitan ang pula at itim. Isang baraha bawat isa ang kasya sa mga bakanteng cell sa kaliwang itaas; ilan ang maililipat nang sabay ay nakadepende sa bakanteng cell at bakanteng column. Mas kaunti ang cell sa mataas na level.",
+    "lib.arcade.note.gomoku": "X ka at ikaw ang mauuna; O ang computer. Salitan kayong maglalagay ng marka sa bakanteng punto ng 15×15 na board. Ang unang makahanay ng 5 nang pahalang, patayo, o pahilis ang panalo.",
+    "lib.arcade.note.klondike": "Ilipat ang lahat ng 52 baraha sa 4 na foundation ayon sa suit, mula A hanggang K. Sa mesa, isalansan nang pababa at salitan ang pula at itim; K lang ang puwede sa bakanteng column. I-tap ang nakataob na tumpok sa kaliwang itaas para bumunot. I-tap ang baraha tapos ang pupuntahan, o i-tap ulit ang baraha para kusa itong lumipat sa tamang puwesto. Level 1–5 bumubunot ng 1, level 6–10 ng 3.",
+    "lib.arcade.note.match3": "Pagpalitin ang dalawang magkatabing piraso (i-tap nang sunod o i-swipe) para makabuo ng hanay ng 3 o higit pang magkakapareho; puputok ang hanay at babagsak ang mga nasa itaas. Pinararami ng sunod-sunod na putok ang puntos. Abutin ang target na puntos bago maubos ang mga tira.",
+    "lib.arcade.note.minesweeper": "I-tap ang isang kahon para buksan. Ipinapakita ng numero kung ilang mina ang nasa 8 kahong nakapalibot. Lagyan ng bandila ang kahinahinalang kahon gamit ang right-click, matagal na pindot, o mode ng bandila. I-tap ang numerong may sapat nang bandila sa paligid para mabilis buksan ang iba. Buksan ang lahat ng kahong walang mina para manalo.",
+    "lib.arcade.note.reversi": "Itim ka at ikaw ang mauuna. Ilagay ang piyesa para maipit ang isa o higit pang puti sa pagitan nito at ng isa pang itim (pahalang, patayo, pahilis); magiging kulay mo ang mga naipit. Kung wala kang tira, laktaw ka. Kapag puno na ang board, panalo ang may mas maraming piyesa.",
+    "lib.arcade.note.snake": "Kontrolin ang ahas gamit ang arrow key, WASD, mga button sa ibaba, o pag-swipe. Kainin ang pulang pagkain para humaba; abutin ang kailangang haba para pumasa. Mula level 3, talo kapag bumangga sa pader; may mga harang sa matataas na level. Huwag kagatin ang sariling buntot.",
+    "lib.arcade.note.spider": "Bumuo sa mesa ng sunod-sunod mula K pababa sa A para sa bawat suit; kusang inaalis ang kumpletong 13 baraha. Puwedeng ipatong ang anumang baraha sa barahang mas mataas ng isa, pero ang magkaparehong suit lang ang sabay na nalilipat. Kapag naipit, i-tap ang Mamigay ng bagong hanay (dapat may baraha ang bawat column). Level 1–3 isang suit, 4–7 dalawa, 8–10 apat.",
+    "lib.arcade.pause": "I-pause",
+    "lib.arcade.paused": "Naka-pause",
+    "lib.arcade.right": "Pakanan",
+    "lib.arcade.rotate": "Iikot",
+    "lib.arcade.score": "Puntos: {n}",
+    "lib.arcade.shuffled": "Wala nang tira — binalasa ulit ang board.",
+    "lib.arcade.snakeBoard": "Arena ng ahas",
+    "lib.arcade.suitsN": "{n} suit",
+    "lib.arcade.target": "Target: {n}",
+    "lib.arcade.up": "Pataas",
+    "lib.arcade.youVsAi": "Ikaw {a} – Computer {b}",
+    "lib.arcade.noHintFc": "Wala nang kapaki-pakinabang na tira. Ibalik ang ilang tira o magsimula ulit."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Libangan at Laro",
-      "desc": "Lucky wheel, random number generator, pagbubunot ng premyo at mga nakakatuwang laro."
+      "desc": "Gulong ng suwerte, random na numero, at mga laro sa browser: sudoku, chess, Chinese chess, gomoku, 2048, minesweeper, nahuhulog na bloke, ahas, solitaire, at basag-ladrilyo."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Nakatagong Xiangqi",
       "desc": "Maglaro ng Vietnamese na nakatagong Xiangqi: nakataob ang mga piyesa at binabaligtad pagkatapos ng unang tira. Laban sa computer sa 10 antas o online kasama ang mga kaibigan at bagong kalaban."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "I-slide at pagsamahin ang magkaparehong numero hanggang mabuo ang tile na 2048; 10 level na may target mula 64 hanggang 8192, may undo."
+    },
+    "minesweeper": {
+      "name": "Minesweeper",
+      "desc": "Klasikong minesweeper: buksan ang mga kahon, maglagay ng bandila, at alamin ang mga mina mula sa mga numero; 10 level mula 8x8 hanggang 18x18, gumagana sa phone."
+    },
+    "block-puzzle": {
+      "name": "Nahuhulog na Bloke",
+      "desc": "Iikot at isalansan ang mga nahuhulog na bloke para magbura ng hanay; 10 level na pabilis nang pabilis, gamit ang keyboard o touch button."
+    },
+    "snake": {
+      "name": "Ahas",
+      "desc": "Gabayan ang ahas sa pagkain para humaba habang iniiwasan ang pader at sariling buntot; 10 mas mabibilis na level na may harang."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klasikong Klondike Solitaire: isalansan nang salitan ang kulay at iakyat ang mga baraha sa foundation mula A hanggang K; bunot ng 1 o 3, may undo at hint."
+    },
+    "spider-solitaire": {
+      "name": "Spider Solitaire",
+      "desc": "Spider na may 1, 2 at 4 na suit: bumuo ng sunod-sunod na parehong suit mula K hanggang A para alisin sa mesa; 10 level na may undo at hint."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: nakaharap ang lahat ng baraha; gamitin ang bakanteng cell para iakyat ang mga baraha; 10 level na pakaunti nang pakaunti ang cell."
+    },
+    "gomoku": {
+      "name": "Gomoku (Lima sa Hanay)",
+      "desc": "Maglaro ng gomoku, lima sa hanay, laban sa computer sa 15x15 na board; 10 level mula madali hanggang mahirap, may undo."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Ipitin ang mga piyesa ng kalaban para baligtarin sa kulay mo; maglaro ng 8x8 Reversi laban sa computer sa 10 level."
+    },
+    "connect-four": {
+      "name": "Apat sa Hanay",
+      "desc": "Maghulog ng piyesa sa mga column at humanay ng 4 nang pahalang, patayo, o pahilis bago ang computer; 10 level mula madali hanggang mahirap."
+    },
+    "match-3": {
+      "name": "Pagtugmain ang 3",
+      "desc": "Pagpalitin ang mga kendi para pagtugmain ang 3 o higit pang magkapareho at magpasabog nang sunod-sunod; 10 level na may target na puntos at limitadong tira."
+    },
+    "brick-breaker": {
+      "name": "Basag-Ladrilyo",
+      "desc": "Kontrolin ang paddle at patalbugin ang bola para basagin lahat ng ladrilyo; 10 yugto na iba-iba ang ayos, gamit ang mouse, touch, o keys."
     }
   },
   "s": {

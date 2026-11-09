@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "L-avversarju għadda. Jekk tgħaddi int ukoll, il-logħba tispiċċa u tingħadd.",
     "lib.online.modeAi": "Ilgħab kontra l-kompjuter",
     "lib.online.modeOnline": "Ilgħab online",
-    "share.label": "Aqsam"
+    "share.label": "Aqsam",
+    "lib.arcade.aiNoMove": "Il-kompjuter m'għandu l-ebda mossa valida — imissek int.",
+    "lib.arcade.autoFinish": "Lesti awtomatikament",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Bord tal-blokki li jaqgħu",
+    "lib.arcade.breakoutBoard": "Grawnd tat-tkissir tal-briks",
+    "lib.arcade.dealRow": "Qassam ringiela ġdida",
+    "lib.arcade.down": "'L isfel",
+    "lib.arcade.drawN": "Iġbed {n}",
+    "lib.arcade.drop": "Waqqa' mill-ewwel",
+    "lib.arcade.flagMode": "Modalità tal-bandiera",
+    "lib.arcade.freeCells": "Ċelloli ħielsa: {n}",
+    "lib.arcade.left": "Xellug",
+    "lib.arcade.length": "Tul: {n}/{t}",
+    "lib.arcade.lines": "Linji: {n}/{t}",
+    "lib.arcade.minesLeft": "Mini: {n}",
+    "lib.arcade.moves": "Mossi: {n}",
+    "lib.arcade.movesLeft": "Fadal {n} mossi",
+    "lib.arcade.mustPass": "M'għandek l-ebda mossa valida — titlef id-dawra.",
+    "lib.arcade.next": "Il-biċċiet li jmiss",
+    "lib.arcade.noHint": "Ma fadal l-ebda mossa utli. Iġbed karta, qassam ringiela ġdida jew ibda mill-ġdid.",
+    "lib.arcade.note.2048": "Uża l-vleġeġ jew żerżaq biex iċċaqlaq il-madum kollu. Żewġ madumiet bl-istess numru jingħaqdu meta jmissu. Agħmel madum daqs il-mira biex tgħaddi l-livell; jekk l-ebda madum ma jista' jiċċaqlaq, titlef.",
+    "lib.arcade.note.blocks": "Dawwar u poġġi l-biċċiet li jaqgħu biex timla linji orizzontali; il-linji mimlija jisparixxu. ← → ċċaqlaq, ↑ dawwar, ↓ niżla aktar malajr, Spazju waqqa' mill-ewwel, P waqfa. Neħħi n-numru ta' linji meħtieġ biex tgħaddi l-livell; jekk il-biċċiet jilħqu l-quċċata, titlef.",
+    "lib.arcade.note.breakout": "Ċaqlaq il-maws, kaxkar subgħajk fuq il-grawnd jew uża ← → biex tmexxi r-racket u żżomm il-ballun fil-logħba. Kisser il-briks kollha biex tgħaddi l-livell; il-briks b'tarf oħxon iridu żewġ daqqiet. Għandek 3 ħajjiet. L-Ispazju jibda jew iwaqqaf.",
+    "lib.arcade.note.connect4": "Int tilgħab bl-aħmar u tibda l-ewwel. Agħfas kolonna biex twaqqa' diska; taqa' fl-iktar post baxx vojt. Jirbaħ min l-ewwel jallinja 4 diski orizzontalment, vertikalment jew djagonalment.",
+    "lib.arcade.note.freecell": "Il-karti kollha huma miftuħa. Ġib il-52 karta fl-4 bażijiet skont is-semi, minn A sa K. Fuq il-mejda, ibni 'l isfel b'kuluri alternati. Iċ-ċelloli ħielsa fuq ix-xellug iżommu karta kull waħda; kemm-il karta tista' ċċaqlaq f'daqqa jiddependi miċ-ċelloli ħielsa u l-kolonni vojta. Il-livelli ogħla għandhom inqas ċelloli.",
+    "lib.arcade.note.gomoku": "Int tilgħab bl-X u tibda l-ewwel; il-kompjuter jilgħab bl-O. Bil-dawra poġġu marka fuq punt vojt tal-bord 15×15. Jirbaħ min l-ewwel jagħmel 5 f'ringiela orizzontalment, vertikalment jew djagonalment.",
+    "lib.arcade.note.klondike": "Ġib il-52 karta fl-4 bażijiet skont is-semi, minn A sa K. Fuq il-mejda, ibni 'l isfel b'kuluri alternati; K biss tista' tmur f'kolonna vojta. Agħfas il-munzell magħluq fuq ix-xellug biex tiġbed il-karti. Agħfas karta u mbagħad il-post fejn trid tpoġġiha, jew erġa' agħfasha biex tmur waħedha f'post validu. Livelli 1–5: iġbed 1; livelli 6–10: iġbed 3.",
+    "lib.arcade.note.match3": "Ibdel żewġ biċċiet ħdejn xulxin (agħfas waħda u mbagħad l-oħra, jew żerżaq) biex tagħmel linja ta' 3 jew aktar tal-istess tip; il-linja tisplodi u l-biċċiet ta' fuqha jaqgħu. Ir-reazzjonijiet katina jimmultiplikaw il-punti. Ilħaq il-punteġġ mira qabel ma jispiċċaw il-mossi.",
+    "lib.arcade.note.minesweeper": "Agħfas ċellola biex tiftaħha. In-numru juri kemm hemm mini fit-8 ċelloli ta' madwarha. Immarka mina suspettata bi klikk tal-lemin, għafsa twila jew il-modalità tal-bandiera. Agħfas numru li diġà għandu biżżejjed bnadar madwaru biex tiftaħ il-bqija malajr. Iftaħ iċ-ċelloli kollha mingħajr mini biex tirbaħ.",
+    "lib.arcade.note.reversi": "Int tilgħab bl-iswed u tibda l-ewwel. Poġġi diska b'mod li taqbad diska bajda jew aktar bejnha u diska sewda oħra (orizzontalment, vertikalment jew djagonalment); id-diski maqbuda jinqalbu għall-kulur tiegħek. Jekk m'għandekx mossa valida, titlef id-dawra. Meta l-bord jimtela, jirbaħ min għandu l-aktar diski.",
+    "lib.arcade.note.snake": "Mexxi s-serp bil-vleġeġ, WASD, il-buttuni t'isfel jew billi żżerżaq. Kul l-ikel aħmar biex tikber; ilħaq it-tul meħtieġ biex tgħaddi l-livell. Mil-livell 3, jekk tolqot ħajt tispiċċa l-logħba; il-livelli ogħla għandhom ostakli. Toħbatx mad-denb tiegħek.",
+    "lib.arcade.note.spider": "Fuq il-mejda ibni kull seme f'sekwenza minn K 'l isfel sa A; sekwenza sħiħa ta' 13-il karta titneħħa waħedha. Kull karta tista' tmur fuq karta grad ogħla, iżda s-sekwenzi tal-istess seme biss jiċċaqilqu flimkien. Jekk teħel, agħfas Qassam ringiela ġdida (kull kolonna trid ikollha karti). Livelli 1–3: seme wieħed; 4–7: tnejn; 8–10: erbgħa.",
+    "lib.arcade.pause": "Waqfa",
+    "lib.arcade.paused": "Fil-waqfa",
+    "lib.arcade.right": "Lemin",
+    "lib.arcade.rotate": "Dawwar",
+    "lib.arcade.score": "Punti: {n}",
+    "lib.arcade.shuffled": "Ma kien fadal l-ebda mossa — il-bord tħawwad.",
+    "lib.arcade.snakeBoard": "Grawnd tas-serp",
+    "lib.arcade.suitsN": "{n} semi",
+    "lib.arcade.target": "Mira: {n}",
+    "lib.arcade.up": "'Il fuq",
+    "lib.arcade.youVsAi": "Int {a} – Kompjuter {b}",
+    "lib.arcade.noHintFc": "Ma fadal l-ebda mossa utli. Ħassar xi mossi jew ibda mill-ġdid."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Divertiment u Logħob",
-      "desc": "Rota tal-fortuna, ġeneratur ta' numri każwali, tiġbid ta' premjijiet u logħob divertenti."
+      "desc": "Rota tax-xorti, numri bl-addoċċ u logħob fil-browser: Sudoku, ċess, ċess Ċiniż, Gomoku, 2048, kaċċa għall-mini, blokki li jaqgħu, serp, solitarju u kissier tal-briks."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi moħbi",
       "desc": "Ilgħab ix-Xiangqi moħbi Vjetnamiż: il-biċċiet jibdew maqluba u jinqalbu wara l-ewwel mossa. Kontra l-kompjuter f'10 livelli jew online ma' ħbieb u avversarji ġodda."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Żerżaq u għaqqad numri l-istess sal-madum 2048; 10 livelli b'miri minn 64 sa 8192, b'ħassar l-aħħar mossa."
+    },
+    "minesweeper": {
+      "name": "Kaċċa għall-Mini",
+      "desc": "Il-logħba klassika tal-mini: iftaħ iċ-ċelloli, poġġi bnadar u aħdem min-numri fejn qegħdin il-mini; 10 livelli minn 8x8 sa 18x18, taħdem fuq il-mowbajl."
+    },
+    "block-puzzle": {
+      "name": "Blokki li Jaqgħu",
+      "desc": "Dawwar u gerfex il-blokki li jaqgħu biex tneħħi l-linji; 10 livelli dejjem aktar mgħaġġla, bit-tastiera jew b'buttuni tal-mess."
+    },
+    "snake": {
+      "name": "Is-Serp",
+      "desc": "Mexxi s-serp biex jiekol u jikber filwaqt li jevita l-ħitan u d-denb tiegħu; 10 livelli aktar mgħaġġla b'ostakli."
+    },
+    "solitaire": {
+      "name": "Solitarju",
+      "desc": "Solitarju klassiku Klondike: ibni 'l isfel b'kuluri alternati u ġib il-karti fil-bażijiet minn A sa K; iġbed 1 jew 3, b'ħassar u ħjiel."
+    },
+    "spider-solitaire": {
+      "name": "Solitarju tal-Brimba",
+      "desc": "Brimba b'1, 2 u 4 semi: ibni sekwenzi tal-istess seme minn K sa A biex tneħħihom mill-mejda; 10 livelli b'ħassar u ħjiel."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitarju FreeCell: il-karti kollha miftuħa; uża ċ-ċelloli ħielsa biex iġġib il-karti fil-bażijiet; 10 livelli b'dejjem inqas ċelloli."
+    },
+    "gomoku": {
+      "name": "Gomoku (ħamsa f'ringiela)",
+      "desc": "Ilgħab Gomoku, ħamsa f'ringiela, kontra l-kompjuter fuq bord 15x15; 10 livelli minn faċli għal diffiċli, b'ħassar."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Aqbad id-diski tal-avversarju biex taqlibhom għall-kulur tiegħek; ilgħab Reversi 8x8 kontra l-kompjuter f'10 livelli."
+    },
+    "connect-four": {
+      "name": "Erbgħa f'Ringiela",
+      "desc": "Waqqa' diski fil-kolonni u allinja 4 orizzontalment, vertikalment jew djagonalment qabel il-kompjuter; 10 livelli minn faċli għal diffiċli."
+    },
+    "match-3": {
+      "name": "Qabbel 3",
+      "desc": "Ibdel il-ħelu biex tqabbel 3 jew aktar tal-istess tip u tqanqal reazzjonijiet katina; 10 livelli b'punteġġ mira u mossi limitati."
+    },
+    "brick-breaker": {
+      "name": "Kissier tal-Briks",
+      "desc": "Mexxi r-racket u aqbeż il-ballun biex tkisser kull brikka; 10 stadji b'disinji differenti, bil-maws, bil-mess jew bit-tasti."
     }
   },
   "s": {

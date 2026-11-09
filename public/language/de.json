@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Online spielen",
     "lib.game.fullscreen": "Vollbild",
     "lib.game.exitFullscreen": "Vollbild beenden",
-    "share.label": "Teilen"
+    "share.label": "Teilen",
+    "lib.arcade.aiNoMove": "Der Computer hat keinen gültigen Zug – du bist dran.",
+    "lib.arcade.autoFinish": "Automatisch ablegen",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Spielfeld für fallende Blöcke",
+    "lib.arcade.breakoutBoard": "Spielfeld für Mauerbrecher",
+    "lib.arcade.dealRow": "Neue Reihe austeilen",
+    "lib.arcade.down": "Runter",
+    "lib.arcade.drawN": "{n} ziehen",
+    "lib.arcade.drop": "Fallen lassen",
+    "lib.arcade.flagMode": "Flaggenmodus",
+    "lib.arcade.freeCells": "Freie Zellen: {n}",
+    "lib.arcade.left": "Links",
+    "lib.arcade.length": "Länge: {n}/{t}",
+    "lib.arcade.lines": "Reihen: {n}/{t}",
+    "lib.arcade.minesLeft": "Minen: {n}",
+    "lib.arcade.moves": "Züge: {n}",
+    "lib.arcade.movesLeft": "Noch {n} Züge",
+    "lib.arcade.mustPass": "Du hast keinen gültigen Zug – du setzt aus.",
+    "lib.arcade.next": "Nächste Blöcke",
+    "lib.arcade.noHint": "Kein sinnvoller Zug mehr. Ziehe eine Karte, teile eine Reihe aus oder beginne neu.",
+    "lib.arcade.note.2048": "Mit den Pfeiltasten oder per Wischen schiebst du alle Kacheln. Zwei Kacheln mit gleicher Zahl verschmelzen, wenn sie sich berühren. Erreiche eine Kachel mit dem Zielwert, um die Stufe zu schaffen; geht kein Zug mehr, hast du verloren.",
+    "lib.arcade.note.blocks": "Drehe und platziere die fallenden Blöcke, um waagerechte Reihen zu füllen; volle Reihen verschwinden. ← → bewegen, ↑ drehen, ↓ schneller fallen, Leertaste fallen lassen, P pausieren. Lösche genug Reihen, um die Stufe zu schaffen; reicht der Stapel bis oben, hast du verloren.",
+    "lib.arcade.note.breakout": "Bewege die Maus, ziehe den Finger über das Feld oder nutze ← →, um den Schläger zu steuern und den Ball im Spiel zu halten. Zerstöre alle Steine, um die Stufe zu schaffen; Steine mit dickem Rand brauchen zwei Treffer. Du hast 3 Leben. Leertaste startet oder pausiert.",
+    "lib.arcade.note.connect4": "Du spielst Rot und beginnst. Tippe auf eine Spalte, um einen Stein einzuwerfen; er fällt auf den untersten freien Platz. Wer zuerst 4 Steine waagerecht, senkrecht oder diagonal in eine Reihe bringt, gewinnt.",
+    "lib.arcade.note.freecell": "Alle Karten liegen offen. Lege alle 52 Karten nach Farbe von A bis K auf die 4 Ablagestapel. Auf dem Tisch wird absteigend mit wechselnden Farben angelegt. Die freien Zellen oben links halten je eine Karte; wie viele Karten du auf einmal verschieben kannst, hängt von freien Zellen und leeren Spalten ab. Höhere Stufen haben weniger freie Zellen.",
+    "lib.arcade.note.gomoku": "Du spielst X und beginnst, der Computer spielt O. Abwechselnd wird ein Stein auf einen freien Punkt des 15×15-Bretts gesetzt. Wer zuerst 5 in einer Reihe hat – waagerecht, senkrecht oder diagonal –, gewinnt.",
+    "lib.arcade.note.klondike": "Lege alle 52 Karten nach Farbe von A bis K auf die 4 Ablagestapel. Auf dem Tisch wird absteigend mit wechselnden Farben angelegt; nur ein K darf in eine leere Spalte. Tippe auf den verdeckten Stapel oben links, um zu ziehen. Tippe auf eine Karte und dann auf das Ziel, oder tippe die Karte erneut an, damit sie automatisch an einen gültigen Platz wandert. Stufe 1–5: 1 Karte ziehen, Stufe 6–10: 3 Karten.",
+    "lib.arcade.note.match3": "Tausche zwei benachbarte Teile (nacheinander antippen oder wischen), um eine Reihe aus 3 oder mehr gleichen zu bilden; die Reihe platzt und die Teile darüber fallen nach. Kettenreaktionen vervielfachen die Punkte. Erreiche die Zielpunktzahl, bevor die Züge ausgehen.",
+    "lib.arcade.note.minesweeper": "Tippe auf ein Feld, um es aufzudecken. Die Zahl zeigt, wie viele Minen in den 8 Nachbarfeldern liegen. Markiere vermutete Minen per Rechtsklick, langem Drücken oder im Flaggenmodus. Tippe auf eine Zahl mit genug Flaggen ringsum, um den Rest schnell aufzudecken. Decke alle Felder ohne Mine auf, um zu gewinnen.",
+    "lib.arcade.note.reversi": "Du spielst Schwarz und beginnst. Setze einen Stein so, dass er einen oder mehrere weiße Steine zwischen sich und einem anderen schwarzen Stein einschließt (waagerecht, senkrecht, diagonal); die eingeschlossenen Steine wechseln zu deiner Farbe. Ohne gültigen Zug setzt du aus. Ist das Brett voll, gewinnt, wer mehr Steine hat.",
+    "lib.arcade.note.snake": "Steuere die Schlange mit den Pfeiltasten, WASD, den Tasten unten oder per Wischen. Friss das rote Futter, um zu wachsen; erreiche die geforderte Länge, um die Stufe zu schaffen. Ab Stufe 3 bedeutet die Wand das Aus; höhere Stufen haben Hindernisse. Beiß dir nicht in den Schwanz.",
+    "lib.arcade.note.spider": "Bilde auf dem Tisch für jede Farbe eine Folge von K bis A; vollständige Folgen aus 13 Karten werden automatisch entfernt. Jede Karte passt auf eine um eins höhere, aber nur Folgen gleicher Farbe lassen sich zusammen verschieben. Wenn nichts mehr geht, tippe auf Neue Reihe austeilen (jede Spalte braucht Karten). Stufe 1–3 eine Farbe, 4–7 zwei, 8–10 vier.",
+    "lib.arcade.pause": "Pause",
+    "lib.arcade.paused": "Pausiert",
+    "lib.arcade.right": "Rechts",
+    "lib.arcade.rotate": "Drehen",
+    "lib.arcade.score": "Punkte: {n}",
+    "lib.arcade.shuffled": "Keine Züge mehr – das Brett wurde neu gemischt.",
+    "lib.arcade.snakeBoard": "Spielfeld für Snake",
+    "lib.arcade.suitsN": "{n} Farben",
+    "lib.arcade.target": "Ziel: {n}",
+    "lib.arcade.up": "Hoch",
+    "lib.arcade.youVsAi": "Du {a} – Computer {b}",
+    "lib.arcade.noHintFc": "Kein sinnvoller Zug mehr. Mach ein paar Züge rückgängig oder fang neu an."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Unterhaltung & Spiele",
-      "desc": "Glücksrad, Zufallszahlengenerator, Gewinnauslosungen und unterhaltsame Spiele."
+      "desc": "Glücksrad, Zufallszahlen und Browserspiele: Sudoku, Schach, Xiangqi, Gomoku, 2048, Minesweeper, fallende Blöcke, Snake, Solitär und Mauerbrecher."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Verdecktes Xiangqi",
       "desc": "Spiele vietnamesisches verdecktes Xiangqi: Die Steine beginnen verdeckt und werden nach ihrem ersten Zug aufgedeckt. Gegen den Computer in 10 Stufen oder online mit Freunden und neuen Gegnern."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Schiebe gleiche Zahlen zusammen, bis die Kachel 2048 entsteht; 10 Stufen mit Zielen von 64 bis 8192, mit Rückgängig."
+    },
+    "minesweeper": {
+      "name": "Minesweeper",
+      "desc": "Das klassische Minesweeper: Felder aufdecken, Flaggen setzen und anhand der Zahlen die Minen finden; 10 Stufen von 8x8 bis 18x18, auch am Handy."
+    },
+    "block-puzzle": {
+      "name": "Fallende Blöcke",
+      "desc": "Drehe und staple fallende Blöcke, um Reihen zu löschen; 10 immer schnellere Stufen, mit Tastatur oder Touch-Tasten."
+    },
+    "snake": {
+      "name": "Snake",
+      "desc": "Lenke die Schlange zum Futter, lass sie wachsen und weiche Wänden und dem eigenen Schwanz aus; 10 schnellere Stufen mit Hindernissen."
+    },
+    "solitaire": {
+      "name": "Solitär",
+      "desc": "Klassisches Klondike-Solitär: absteigend mit wechselnden Farben anlegen und die Karten von A bis K ablegen; 1 oder 3 ziehen, mit Rückgängig und Tipps."
+    },
+    "spider-solitaire": {
+      "name": "Spider Solitär",
+      "desc": "Spider Solitär mit 1, 2 und 4 Farben: Folgen gleicher Farbe von K bis A bilden und abräumen; 10 Stufen mit Rückgängig und Tipps."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-Solitär: alle Karten offen; nutze die freien Zellen, um die Karten abzulegen; 10 Stufen mit immer weniger freien Zellen."
+    },
+    "gomoku": {
+      "name": "Gomoku (Fünf in einer Reihe)",
+      "desc": "Spiele Gomoku – fünf in einer Reihe – gegen den Computer auf einem 15x15-Brett; 10 Stufen von leicht bis schwer, mit Rückgängig."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Schließe gegnerische Steine ein, um sie in deine Farbe umzudrehen; spiele 8x8-Reversi gegen den Computer in 10 Stufen."
+    },
+    "connect-four": {
+      "name": "Vier in einer Reihe",
+      "desc": "Wirf Steine in die Spalten und bring vor dem Computer 4 in eine Reihe – waagerecht, senkrecht oder diagonal; 10 Stufen von leicht bis schwer."
+    },
+    "match-3": {
+      "name": "Match 3",
+      "desc": "Tausche Bonbons, um 3 oder mehr gleiche zu verbinden und Kettenreaktionen auszulösen; 10 Stufen mit Zielpunktzahl und begrenzten Zügen."
+    },
+    "brick-breaker": {
+      "name": "Mauerbrecher",
+      "desc": "Steuere den Schläger und lass den Ball abprallen, bis alle Steine zerstört sind; 10 Level mit verschiedenen Mustern, mit Maus, Touch oder Tasten."
     }
   },
   "s": {

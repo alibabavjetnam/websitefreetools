@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Motståndaren passade. Om du också passar slutar partiet och räknas.",
     "lib.online.modeAi": "Spela mot datorn",
     "lib.online.modeOnline": "Spela online",
-    "share.label": "Dela"
+    "share.label": "Dela",
+    "lib.arcade.aiNoMove": "Datorn har inget giltigt drag – din tur.",
+    "lib.arcade.autoFinish": "Lägg upp allt",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Spelplan för fallande block",
+    "lib.arcade.breakoutBoard": "Spelplan för tegelkross",
+    "lib.arcade.dealRow": "Dela ut en rad",
+    "lib.arcade.down": "Ner",
+    "lib.arcade.drawN": "Dra {n}",
+    "lib.arcade.drop": "Släpp direkt",
+    "lib.arcade.flagMode": "Flaggläge",
+    "lib.arcade.freeCells": "Fria celler: {n}",
+    "lib.arcade.left": "Vänster",
+    "lib.arcade.length": "Längd: {n}/{t}",
+    "lib.arcade.lines": "Rader: {n}/{t}",
+    "lib.arcade.minesLeft": "Minor: {n}",
+    "lib.arcade.moves": "Drag: {n}",
+    "lib.arcade.movesLeft": "{n} drag kvar",
+    "lib.arcade.mustPass": "Du har inget giltigt drag – du står över.",
+    "lib.arcade.next": "Nästa block",
+    "lib.arcade.noHint": "Inga användbara drag kvar. Dra ett kort, dela ut en rad eller börja om.",
+    "lib.arcade.note.2048": "Använd piltangenterna eller svep för att flytta alla brickor. Två brickor med samma tal slås ihop när de möts. Gör en bricka som når målet för att klara nivån; går inget att flytta har du förlorat.",
+    "lib.arcade.note.blocks": "Vrid och placera de fallande blocken så att vågräta rader fylls; fulla rader försvinner. ← → flyttar, ↑ vrider, ↓ snabbare ned, mellanslag släpper direkt, P pausar. Rensa så många rader som krävs för att klara nivån; når blocken toppen har du förlorat.",
+    "lib.arcade.note.breakout": "Rör musen, dra fingret över planen eller använd ← → för att styra racketen och hålla bollen i spel. Krossa alla tegel för att klara nivån; tegel med tjock kant kräver två träffar. Du har 3 liv. Mellanslag startar eller pausar.",
+    "lib.arcade.note.connect4": "Du spelar röd och börjar. Tryck på en kolumn för att släppa en bricka; den faller till den lägsta lediga platsen. Den som först får 4 i rad vågrätt, lodrätt eller diagonalt vinner.",
+    "lib.arcade.note.freecell": "Alla kort ligger uppvända. Flytta alla 52 kort till de 4 grundhögarna efter färg, från A till K. På bordet läggs korten i fallande ordning med växlande rött och svart. De fria cellerna uppe till vänster rymmer ett kort var; hur många kort du kan flytta på en gång beror på fria celler och tomma kolumner. Högre nivåer har färre fria celler.",
+    "lib.arcade.note.gomoku": "Du spelar X och börjar; datorn spelar O. Turas om att sätta ett märke på en ledig punkt på 15×15-brädet. Den som först får 5 i rad vågrätt, lodrätt eller diagonalt vinner.",
+    "lib.arcade.note.klondike": "Flytta alla 52 kort till de 4 grundhögarna efter färg, från A till K. På bordet läggs korten i fallande ordning med växlande rött och svart; bara en K får läggas i en tom kolumn. Tryck på den nedvända högen uppe till vänster för att dra kort. Tryck på ett kort och sedan där du vill lägga det, eller tryck på kortet igen så flyttas det själv till en giltig plats. Nivå 1–5 drar 1 kort, nivå 6–10 drar 3.",
+    "lib.arcade.note.match3": "Byt plats på två intilliggande bitar (tryck på dem i tur och ordning eller svep) för att bilda en rad med 3 eller fler likadana; raden spricker och bitarna ovanför faller ner. Kedjereaktioner ger multiplicerade poäng. Nå målpoängen innan dragen tar slut.",
+    "lib.arcade.note.minesweeper": "Tryck på en ruta för att öppna den. Talet visar hur många minor som finns i de 8 rutorna runt omkring. Flagga misstänkta rutor med högerklick, långt tryck eller flaggläget. Tryck på ett tal som redan har tillräckligt många flaggor runt sig för att snabbt öppna resten. Öppna alla rutor utan minor för att vinna.",
+    "lib.arcade.note.reversi": "Du spelar svart och börjar. Lägg en bricka så att du stänger in en eller flera vita brickor mellan den och en annan svart (vågrätt, lodrätt eller diagonalt); de inneslutna brickorna vänds till din färg. Har du inget giltigt drag står du över. När brädet är fullt vinner den med flest brickor.",
+    "lib.arcade.note.snake": "Styr ormen med piltangenterna, WASD, knapparna nedanför eller genom att svepa. Ät den röda maten för att växa; nå den längd som krävs för att klara nivån. Från nivå 3 förlorar du om du kör in i väggen; högre nivåer har hinder. Bit inte dig själv i svansen.",
+    "lib.arcade.note.spider": "Bygg varje färg till en följd från K ner till A på bordet; kompletta följder om 13 kort tas bort automatiskt. Vilket kort som helst kan läggas på ett kort som är ett steg högre, men bara följder i samma färg kan flyttas tillsammans. Kör du fast, tryck på Dela ut en rad (alla kolumner måste ha kort). Nivå 1–3 en färg, 4–7 två, 8–10 fyra.",
+    "lib.arcade.pause": "Paus",
+    "lib.arcade.paused": "Pausat",
+    "lib.arcade.right": "Höger",
+    "lib.arcade.rotate": "Vrid",
+    "lib.arcade.score": "Poäng: {n}",
+    "lib.arcade.shuffled": "Inga drag kvar – brädet har blandats om.",
+    "lib.arcade.snakeBoard": "Spelplan för ormen",
+    "lib.arcade.suitsN": "{n} färger",
+    "lib.arcade.target": "Mål: {n}",
+    "lib.arcade.up": "Upp",
+    "lib.arcade.youVsAi": "Du {a} – Datorn {b}",
+    "lib.arcade.noHintFc": "Inga användbara drag kvar. Ångra några drag eller börja om."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Nöje och spel",
-      "desc": "Lyckohjul, slumptalsgenerator, prisdragningar och roliga spel."
+      "desc": "Lyckohjul, slumptal och webbläsarspel: sudoku, schack, kinesiskt schack, gomoku, 2048, minröjning, fallande block, masken, patiens och tegelkross."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Dold Xiangqi",
       "desc": "Spela vietnamesisk dold Xiangqi: pjäserna börjar med baksidan upp och vänds efter första draget. Mot datorn i 10 nivåer eller online med vänner och nya motståndare."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Skjut ihop lika tal tills brickan 2048 dyker upp; 10 nivåer med mål från 64 till 8192, med ångra."
+    },
+    "minesweeper": {
+      "name": "Minröjning",
+      "desc": "Klassisk minröjning: öppna rutor, sätt flaggor och räkna ut var minorna ligger utifrån talen; 10 nivåer från 8x8 till 18x18, fungerar även i mobilen."
+    },
+    "block-puzzle": {
+      "name": "Fallande block",
+      "desc": "Vrid och stapla fallande block för att rensa rader; 10 allt snabbare nivåer, spela med tangentbord eller pekknappar."
+    },
+    "snake": {
+      "name": "Masken",
+      "desc": "Styr ormen så att den äter och växer och undvik väggar och din egen svans; 10 snabbare nivåer med hinder."
+    },
+    "solitaire": {
+      "name": "Patiens",
+      "desc": "Klassisk Klondike-patiens: lägg korten i växlande färger och flytta dem till grundhögarna från A till K; dra 1 eller 3, med ångra och tips."
+    },
+    "spider-solitaire": {
+      "name": "Spindelpatiens",
+      "desc": "Spindel med 1, 2 och 4 färger: bygg följder i samma färg från K till A för att ta bort dem från bordet; 10 nivåer med ångra och tips."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-patiens: alla kort uppvända; använd de fria cellerna för att lägga upp korten; 10 nivåer med allt färre fria celler."
+    },
+    "gomoku": {
+      "name": "Gomoku (fem i rad)",
+      "desc": "Spela gomoku, fem i rad, mot datorn på ett 15x15-bräde; 10 nivåer från lätt till svår, med ångra."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Stäng in motståndarens brickor för att vända dem till din färg; spela 8x8-Reversi mot datorn i 10 nivåer."
+    },
+    "connect-four": {
+      "name": "Fyra i rad",
+      "desc": "Släpp brickor i kolumnerna och få 4 i rad vågrätt, lodrätt eller diagonalt före datorn; 10 nivåer från lätt till svår."
+    },
+    "match-3": {
+      "name": "Tre i rad",
+      "desc": "Byt plats på godisbitar för att matcha 3 eller fler likadana och starta kedjereaktioner; 10 nivåer med målpoäng och begränsat antal drag."
+    },
+    "brick-breaker": {
+      "name": "Tegelkross",
+      "desc": "Styr racketen och studsa bollen för att krossa alla tegel; 10 banor med olika mönster, med mus, pek eller tangenter."
     }
   },
   "s": {

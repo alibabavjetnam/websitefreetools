@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Pasiodd y gwrthwynebydd. Os byddwch chithau'n pasio, daw'r gêm i ben a chaiff ei chyfrif.",
     "lib.online.modeAi": "Chwarae yn erbyn y cyfrifiadur",
     "lib.online.modeOnline": "Chwarae ar-lein",
-    "share.label": "Rhannu"
+    "share.label": "Rhannu",
+    "lib.arcade.aiNoMove": "Does gan y cyfrifiadur ddim symudiad dilys — eich tro chi yw hi.",
+    "lib.arcade.autoFinish": "Gorffen yn awtomatig",
+    "lib.arcade.best": "Record: {n}",
+    "lib.arcade.blocksBoard": "Bwrdd blociau sy'n cwympo",
+    "lib.arcade.breakoutBoard": "Cae torri brics",
+    "lib.arcade.dealRow": "Delio rhes newydd",
+    "lib.arcade.down": "I lawr",
+    "lib.arcade.drawN": "Tynnu {n}",
+    "lib.arcade.drop": "Gollwng ar unwaith",
+    "lib.arcade.flagMode": "Modd baner",
+    "lib.arcade.freeCells": "Celloedd rhydd: {n}",
+    "lib.arcade.left": "Chwith",
+    "lib.arcade.length": "Hyd: {n}/{t}",
+    "lib.arcade.lines": "Llinellau: {n}/{t}",
+    "lib.arcade.minesLeft": "Ffrwydron: {n}",
+    "lib.arcade.moves": "Symudiadau: {n}",
+    "lib.arcade.movesLeft": "{n} symudiad ar ôl",
+    "lib.arcade.mustPass": "Does gennych chi ddim symudiad dilys — rydych chi'n pasio.",
+    "lib.arcade.next": "Darnau nesaf",
+    "lib.arcade.noHint": "Does dim symudiad defnyddiol ar ôl. Tynnwch gerdyn, deliwch res newydd neu dechreuwch eto.",
+    "lib.arcade.note.2048": "Defnyddiwch y bysellau saeth neu llithrwch i symud pob teilsen. Mae dwy deilsen â'r un rhif yn uno pan fyddan nhw'n cyffwrdd. Gwnewch deilsen sy'n hafal i'r targed i basio'r lefel; os na all unrhyw deilsen symud, rydych chi'n colli.",
+    "lib.arcade.note.blocks": "Trowch a gosodwch y darnau sy'n cwympo i lenwi llinellau llorweddol; mae llinellau llawn yn diflannu. ← → symud, ↑ troi, ↓ cwympo'n gynt, Bylchwr yn gollwng ar unwaith, P yn oedi. Cliriwch y nifer gofynnol o linellau i basio'r lefel; os bydd y darnau'n cyrraedd y brig, rydych chi'n colli.",
+    "lib.arcade.note.breakout": "Symudwch y llygoden, llusgwch eich bys ar y cae neu defnyddiwch ← → i lywio'r bat a chadw'r bêl mewn chwarae. Torrwch bob bricsen i basio'r lefel; mae angen dwy ergyd ar frics ag ymyl drwchus. Mae gennych 3 bywyd. Mae'r Bylchwr yn dechrau neu'n oedi.",
+    "lib.arcade.note.connect4": "Rydych chi'n chwarae coch ac yn dechrau. Tapiwch golofn i ollwng disg; mae'n cwympo i'r lle gwag isaf. Y cyntaf i gael 4 disg mewn rhes yn llorweddol, yn fertigol neu'n groeslinol sy'n ennill.",
+    "lib.arcade.note.freecell": "Mae pob cerdyn wyneb i fyny. Symudwch y 52 cerdyn i'r 4 sylfaen yn ôl siwt, o A i K. Ar y bwrdd, adeiladwch i lawr gan newid lliw bob yn ail. Mae pob cell rydd ar y chwith uchaf yn dal un cerdyn; mae faint o gardiau y gallwch eu symud ar unwaith yn dibynnu ar y celloedd rhydd a'r colofnau gwag. Mae gan lefelau uwch lai o gelloedd.",
+    "lib.arcade.note.gomoku": "Rydych chi'n chwarae X ac yn dechrau; mae'r cyfrifiadur yn chwarae O. Bob yn ail, rhowch farc ar bwynt gwag ar y bwrdd 15×15. Y cyntaf i gael 5 mewn rhes yn llorweddol, yn fertigol neu'n groeslinol sy'n ennill.",
+    "lib.arcade.note.klondike": "Symudwch y 52 cerdyn i'r 4 sylfaen yn ôl siwt, o A i K. Ar y bwrdd, adeiladwch i lawr gan newid lliw bob yn ail; dim ond K all fynd i golofn wag. Tapiwch y pentwr wyneb i lawr ar y chwith uchaf i dynnu cardiau. Tapiwch gerdyn ac yna'r lle rydych chi am ei roi, neu tapiwch ef eto iddo symud ei hun i le dilys. Lefelau 1–5: tynnu 1; lefelau 6–10: tynnu 3.",
+    "lib.arcade.note.match3": "Cyfnewidiwch ddau ddarn cyfagos (tapiwch un ac yna'r llall, neu llithrwch) i wneud llinell o 3 neu fwy o'r un math; mae'r llinell yn ffrwydro ac mae'r darnau uwchben yn cwympo. Mae adweithiau cadwyn yn lluosi eich pwyntiau. Cyrhaeddwch y sgôr darged cyn i'r symudiadau ddod i ben.",
+    "lib.arcade.note.minesweeper": "Tapiwch gell i'w hagor. Mae rhif yn dangos faint o ffrwydron sydd yn yr 8 cell o'i chwmpas. Marciwch ffrwydryn amheus â chlic de, gwasgiad hir neu'r modd baner. Tapiwch rif sydd â digon o faneri o'i gwmpas yn barod i agor y gweddill yn gyflym. Agorwch bob cell heb ffrwydryn i ennill.",
+    "lib.arcade.note.reversi": "Rydych chi'n chwarae du ac yn dechrau. Gosodwch ddisg fel ei fod yn dal un neu fwy o ddisgiau gwyn rhyngddo a disg du arall (yn llorweddol, yn fertigol neu'n groeslinol); mae'r disgiau sydd wedi'u dal yn troi i'ch lliw chi. Os nad oes gennych symudiad dilys, rydych chi'n pasio. Pan fydd y bwrdd yn llawn, yr un â'r mwyaf o ddisgiau sy'n ennill.",
+    "lib.arcade.note.snake": "Llywiwch y neidr gyda'r bysellau saeth, WASD, y botymau isod neu drwy lithro. Bwytewch y bwyd coch i dyfu; cyrhaeddwch yr hyd gofynnol i basio'r lefel. O lefel 3 ymlaen, mae taro wal yn dod â'r gêm i ben; mae rhwystrau ar lefelau uwch. Peidiwch â tharo eich cynffon eich hun.",
+    "lib.arcade.note.spider": "Adeiladwch bob siwt yn rhediad o K i lawr i A ar y bwrdd; mae rhediad cyflawn o 13 cerdyn yn cael ei dynnu'n awtomatig. Gall unrhyw gerdyn fynd ar gerdyn un safle'n uwch, ond dim ond rhediadau o'r un siwt sy'n symud gyda'i gilydd. Os ydych chi'n sownd, tapiwch Delio rhes newydd (rhaid i bob colofn gael cardiau). Lefelau 1–3: un siwt; 4–7: dwy; 8–10: pedair.",
+    "lib.arcade.pause": "Oedi",
+    "lib.arcade.paused": "Wedi oedi",
+    "lib.arcade.right": "De",
+    "lib.arcade.rotate": "Troi",
+    "lib.arcade.score": "Sgôr: {n}",
+    "lib.arcade.shuffled": "Doedd dim symudiadau ar ôl — mae'r bwrdd wedi'i gymysgu.",
+    "lib.arcade.snakeBoard": "Cae'r neidr",
+    "lib.arcade.suitsN": "{n} siwt",
+    "lib.arcade.target": "Targed: {n}",
+    "lib.arcade.up": "I fyny",
+    "lib.arcade.youVsAi": "Chi {a} – Cyfrifiadur {b}",
+    "lib.arcade.noHintFc": "Does dim symudiad defnyddiol ar ôl. Dadwnewch ychydig o symudiadau neu dechreuwch eto."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Hwyl a gemau",
-      "desc": "Olwyn lwcus, generadur rhifau ar hap, tynnu enwau am wobrau a gemau llawn hwyl."
+      "desc": "Olwyn lwc, rhifau ar hap a gemau porwr: Sudoku, gwyddbwyll, gwyddbwyll Tsieineaidd, Gomoku, 2048, chwilio ffrwydron, blociau sy'n cwympo, neidr, solitaire a thorri brics."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi cudd",
       "desc": "Chwaraewch Xiangqi cudd Fietnam: mae'r darnau'n dechrau wyneb i lawr ac yn cael eu troi ar ôl y symudiad cyntaf. Yn erbyn y cyfrifiadur ar 10 lefel neu ar-lein gyda ffrindiau a gwrthwynebwyr newydd."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Llithrwch ac unwch rifau sy'n cyfateb i greu'r deilsen 2048; 10 lefel gyda thargedau o 64 i 8192, gyda dadwneud."
+    },
+    "minesweeper": {
+      "name": "Chwilio Ffrwydron",
+      "desc": "Chwilio ffrwydron clasurol: agorwch gelloedd, gosodwch faneri a gweithiwch allan o'r rhifau ble mae'r ffrwydron; 10 lefel o 8x8 i 18x18, yn gweithio ar ffonau."
+    },
+    "block-puzzle": {
+      "name": "Blociau sy'n Cwympo",
+      "desc": "Trowch a phentyrrwch flociau sy'n cwympo i glirio llinellau; 10 lefel sy'n cyflymu, gyda'r bysellfwrdd neu fotymau cyffwrdd."
+    },
+    "snake": {
+      "name": "Neidr",
+      "desc": "Llywiwch y neidr i fwyta a thyfu gan osgoi waliau a'i chynffon ei hun; 10 lefel gyflymach gyda rhwystrau."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Solitaire Klondike clasurol: adeiladwch i lawr gan newid lliw a symudwch gardiau i'r sylfeini o A i K; tynnu 1 neu 3, gyda dadwneud ac awgrymiadau."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Corryn",
+      "desc": "Corryn gydag 1, 2 a 4 siwt: adeiladwch rediadau o'r un siwt o K i A i'w clirio oddi ar y bwrdd; 10 lefel gyda dadwneud ac awgrymiadau."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitaire FreeCell: mae pob cerdyn wyneb i fyny; defnyddiwch y celloedd rhydd i symud cardiau i'r sylfeini; 10 lefel gyda llai o gelloedd wrth fynd ymlaen."
+    },
+    "gomoku": {
+      "name": "Gomoku (pump mewn rhes)",
+      "desc": "Chwaraewch Gomoku, pump mewn rhes, yn erbyn y cyfrifiadur ar fwrdd 15x15; 10 lefel o hawdd i anodd, gyda dadwneud."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Daliwch ddisgiau eich gwrthwynebydd i'w troi i'ch lliw chi; chwaraewch Reversi 8x8 yn erbyn y cyfrifiadur dros 10 lefel."
+    },
+    "connect-four": {
+      "name": "Pedwar mewn Rhes",
+      "desc": "Gollyngwch ddisgiau i golofnau a chael 4 mewn rhes yn llorweddol, yn fertigol neu'n groeslinol cyn y cyfrifiadur; 10 lefel o hawdd i anodd."
+    },
+    "match-3": {
+      "name": "Paru 3",
+      "desc": "Cyfnewidiwch losin i baru 3 neu fwy o'r un math a sbarduno adweithiau cadwyn; 10 lefel gyda sgôr darged a nifer cyfyngedig o symudiadau."
+    },
+    "brick-breaker": {
+      "name": "Torri Brics",
+      "desc": "Llywiwch y bat a bowndiwch y bêl i dorri pob bricsen; 10 cam â chynlluniau gwahanol, gyda llygoden, cyffwrdd neu fysellau."
     }
   },
   "s": {

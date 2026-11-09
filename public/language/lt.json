@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Varžovas pasakė „pas“. Jei ir jūs pasakysite „pas“, partija baigsis ir bus suskaičiuota.",
     "lib.online.modeAi": "Žaisti su kompiuteriu",
     "lib.online.modeOnline": "Žaisti internetu",
-    "share.label": "Bendrinti"
+    "share.label": "Bendrinti",
+    "lib.arcade.aiNoMove": "Kompiuteris neturi ėjimo — jūsų eilė.",
+    "lib.arcade.autoFinish": "Sudėti viską",
+    "lib.arcade.best": "Rekordas: {n}",
+    "lib.arcade.blocksBoard": "Krintančių blokų lenta",
+    "lib.arcade.breakoutBoard": "Plytų daužymo aikštelė",
+    "lib.arcade.dealRow": "Išdalyti eilę",
+    "lib.arcade.down": "Žemyn",
+    "lib.arcade.drawN": "Traukti po {n}",
+    "lib.arcade.drop": "Numesti",
+    "lib.arcade.flagMode": "Vėliavėlių režimas",
+    "lib.arcade.freeCells": "Laisvi langeliai: {n}",
+    "lib.arcade.left": "Kairėn",
+    "lib.arcade.length": "Ilgis: {n}/{t}",
+    "lib.arcade.lines": "Eilutės: {n}/{t}",
+    "lib.arcade.minesLeft": "Minos: {n}",
+    "lib.arcade.moves": "Ėjimai: {n}",
+    "lib.arcade.movesLeft": "Liko ėjimų: {n}",
+    "lib.arcade.mustPass": "Neturite ėjimo — praleidžiate.",
+    "lib.arcade.next": "Kiti blokai",
+    "lib.arcade.noHint": "Naudingų ėjimų nebėra. Ištraukite kortą, išdalykite eilę arba pradėkite iš naujo.",
+    "lib.arcade.note.2048": "Rodyklėmis arba braukdami stumkite visas plyteles. Dvi plytelės su tuo pačiu skaičiumi susilieja, kai susiliečia. Sudarykite plytelę, lygią tikslui, ir lygis įveiktas; jei niekas nebejuda, pralaimėjote.",
+    "lib.arcade.note.blocks": "Sukite ir dėkite krintančius blokus, kad užpildytumėte horizontalias eilutes; pilnos eilutės dingsta. ← → judėti, ↑ pasukti, ↓ greičiau žemyn, tarpas numesti, P pauzė. Išvalykite reikiamą eilučių skaičių ir lygis įveiktas; jei blokai pasiekia viršų, pralaimėjote.",
+    "lib.arcade.note.breakout": "Judinkite pelę, braukite pirštu per aikštelę arba spauskite ← →, kad valdytumėte raketę ir neleistumėte kamuoliui nukristi. Sudaužykite visas plytas ir lygis įveiktas; plytas su storu rėmeliu reikia pataikyti du kartus. Turite 3 gyvybes. Tarpas pradeda arba pristabdo.",
+    "lib.arcade.note.connect4": "Žaidžiate raudonais ir einate pirmi. Bakstelėkite stulpelį, kad įmestumėte žetoną; jis nukrenta į žemiausią laisvą langelį. Laimi tas, kuris pirmas sudėlioja 4 žetonus horizontaliai, vertikaliai arba įstrižai.",
+    "lib.arcade.note.freecell": "Visos kortos atverstos. Perkelkite visas 52 kortas į 4 bazines krūveles pagal rūšį nuo A iki K. Ant stalo dėkite mažėjančia tvarka, kaitaliodami raudoną ir juodą. Laisvi langeliai viršuje kairėje talpina po vieną kortą; kiek kortų galite perkelti iš karto, priklauso nuo laisvų langelių ir tuščių stulpelių. Aukštesniuose lygiuose langelių mažiau.",
+    "lib.arcade.note.gomoku": "Žaidžiate X ir einate pirmi; kompiuteris žaidžia O. Paeiliui dedate ženklą į laisvą 15×15 lentos tašką. Laimi tas, kuris pirmas sudėlioja 5 iš eilės horizontaliai, vertikaliai arba įstrižai.",
+    "lib.arcade.note.klondike": "Perkelkite visas 52 kortas į 4 bazines krūveles pagal rūšį nuo A iki K. Ant stalo dėkite mažėjančia tvarka, kaitaliodami raudoną ir juodą; į tuščią stulpelį galima dėti tik K. Bakstelėkite užverstą kaladę viršuje kairėje, kad trauktumėte kortas. Bakstelėkite kortą, o paskui vietą, arba bakstelėkite ją dar kartą, kad ji pati nukeliautų į tinkamą vietą. 1–5 lygiuose traukiama po 1 kortą, 6–10 – po 3.",
+    "lib.arcade.note.match3": "Sukeiskite du gretimus elementus (bakstelėdami paeiliui arba braukdami), kad sudarytumėte 3 ar daugiau vienodų eilę; eilė sprogsta, o viršutiniai elementai nukrenta. Grandininės reakcijos daugina taškus. Surinkite tikslinius taškus, kol nesibaigė ėjimai.",
+    "lib.arcade.note.minesweeper": "Bakstelėkite langelį, kad jį atidarytumėte. Skaičius rodo, kiek minų yra 8 aplinkiniuose langeliuose. Įtartiną langelį pažymėkite vėliavėle dešiniuoju spustelėjimu, ilgu paspaudimu arba vėliavėlių režimu. Bakstelėkite skaičių, aplink kurį jau pakanka vėliavėlių, kad greitai atidarytumėte likusius. Atidarykite visus langelius be minų ir laimėsite.",
+    "lib.arcade.note.reversi": "Žaidžiate juodais ir einate pirmi. Padėkite žetoną taip, kad tarp jo ir kito juodo užspaustumėte vieną ar daugiau baltų (horizontaliai, vertikaliai, įstrižai); užspausti žetonai apsiverčia į jūsų spalvą. Neturėdami ėjimo, praleidžiate. Kai lenta pilna, laimi tas, kas turi daugiau žetonų.",
+    "lib.arcade.note.snake": "Valdykite gyvatę rodyklėmis, WASD, mygtukais apačioje arba braukdami. Valgykite raudoną maistą, kad augtumėte; pasiekite reikiamą ilgį ir lygis įveiktas. Nuo 3 lygio atsitrenkimas į sieną reiškia pralaimėjimą; aukštesniuose lygiuose yra kliūčių. Nesikandžiokite savo uodegos.",
+    "lib.arcade.note.spider": "Ant stalo sudėliokite kiekvienos rūšies seką nuo K iki A; pilnos 13 kortų sekos pašalinamos automatiškai. Bet kurią kortą galima dėti ant vienetu didesnės, bet kartu perkeliamos tik tos pačios rūšies sekos. Užstrigę bakstelėkite Išdalyti eilę (kiekviename stulpelyje turi būti kortų). 1–3 lygiai – viena rūšis, 4–7 – dvi, 8–10 – keturios.",
+    "lib.arcade.pause": "Pauzė",
+    "lib.arcade.paused": "Pristabdyta",
+    "lib.arcade.right": "Dešinėn",
+    "lib.arcade.rotate": "Pasukti",
+    "lib.arcade.score": "Taškai: {n}",
+    "lib.arcade.shuffled": "Ėjimų nebėra — lenta permaišyta.",
+    "lib.arcade.snakeBoard": "Gyvatės aikštelė",
+    "lib.arcade.suitsN": "{n} rūšys",
+    "lib.arcade.target": "Tikslas: {n}",
+    "lib.arcade.up": "Aukštyn",
+    "lib.arcade.youVsAi": "Jūs {a} – Kompiuteris {b}",
+    "lib.arcade.noHintFc": "Naudingų ėjimų neliko. Atšaukite kelis ėjimus arba pradėkite iš naujo."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Pramogos ir žaidimai",
-      "desc": "Laimės ratas, atsitiktinių skaičių generatorius, prizų traukimas ir smagūs žaidimai."
+      "desc": "Laimės ratas, atsitiktiniai skaičiai ir naršyklės žaidimai: sudoku, šachmatai, kinų šachmatai, gomoku, 2048, minų laukas, krintantys blokai, gyvatėlė, pasjansas ir plytų daužymas."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Paslėptas Xiangqi",
       "desc": "Žaiskite vietnamietišką paslėptą Xiangqi: figūros pradeda užverstos ir atverčiamos po pirmojo ėjimo. Su kompiuteriu 10 lygių arba internetu su draugais ir naujais varžovais."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Stumkite ir sujunkite vienodus skaičius, kol gausite plytelę 2048; 10 lygių su tikslais nuo 64 iki 8192, su atšaukimu."
+    },
+    "minesweeper": {
+      "name": "Minų laukas",
+      "desc": "Klasikinis minų laukas: atidarykite langelius, statykite vėliavėles ir iš skaičių nuspręskite, kur minos; 10 lygių nuo 8x8 iki 18x18, veikia ir telefone."
+    },
+    "block-puzzle": {
+      "name": "Krintantys blokai",
+      "desc": "Sukite ir krauskite krintančius blokus, kad išvalytumėte eilutes; 10 vis greitėjančių lygių, klaviatūra arba lietimo mygtukais."
+    },
+    "snake": {
+      "name": "Gyvatėlė",
+      "desc": "Vedžiokite gyvatę prie maisto, kad augtų, ir venkite sienų bei savo uodegos; 10 greitėjančių lygių su kliūtimis."
+    },
+    "solitaire": {
+      "name": "Pasjansas",
+      "desc": "Klasikinis Klondaiko pasjansas: dėliokite kaitaliodami spalvas ir perkelkite kortas į bazines krūveles nuo A iki K; traukite po 1 arba 3, su atšaukimu ir patarimais."
+    },
+    "spider-solitaire": {
+      "name": "Voro pasjansas",
+      "desc": "Voras su 1, 2 ir 4 rūšimis: sudėliokite tos pačios rūšies sekas nuo K iki A, kad pašalintumėte jas nuo stalo; 10 lygių su atšaukimu ir patarimais."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell pasjansas: visos kortos atverstos; laisvais langeliais pasinaudokite perkeldami kortas į bazes; 10 lygių su vis mažiau langelių."
+    },
+    "gomoku": {
+      "name": "Gomoku (penki iš eilės)",
+      "desc": "Žaiskite gomoku, penkis iš eilės, prieš kompiuterį 15x15 lentoje; 10 lygių nuo lengvo iki sunkaus, su atšaukimu."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Užspauskite priešininko žetonus ir apverskite juos į savo spalvą; žaiskite 8x8 Reversi prieš kompiuterį 10 lygių."
+    },
+    "connect-four": {
+      "name": "Keturi iš eilės",
+      "desc": "Meskite žetonus į stulpelius ir sudėliokite 4 horizontaliai, vertikaliai arba įstrižai anksčiau už kompiuterį; 10 lygių nuo lengvo iki sunkaus."
+    },
+    "match-3": {
+      "name": "Sujunk 3",
+      "desc": "Keiskite saldainius vietomis, junkite 3 ar daugiau vienodų ir sukelkite grandinines reakcijas; 10 lygių su tiksliniais taškais ir ribotais ėjimais."
+    },
+    "brick-breaker": {
+      "name": "Plytų daužymas",
+      "desc": "Valdykite raketę ir atmuškite kamuolį, kad sudaužytumėte visas plytas; 10 lygių su skirtingu išdėstymu, pele, lietimu ar klavišais."
     }
   },
   "s": {

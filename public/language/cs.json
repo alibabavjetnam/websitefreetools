@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Soupeř pasoval. Pokud pasujete i vy, partie skončí a sečte se.",
     "lib.online.modeAi": "Hrát proti počítači",
     "lib.online.modeOnline": "Hrát online",
-    "share.label": "Sdílet"
+    "share.label": "Sdílet",
+    "lib.arcade.aiNoMove": "Počítač nemá platný tah — jste na řadě.",
+    "lib.arcade.autoFinish": "Odložit vše",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Hrací plocha padajících kostek",
+    "lib.arcade.breakoutBoard": "Hřiště pro rozbíjení cihel",
+    "lib.arcade.dealRow": "Rozdat řadu",
+    "lib.arcade.down": "Dolů",
+    "lib.arcade.drawN": "Brát po {n}",
+    "lib.arcade.drop": "Shodit",
+    "lib.arcade.flagMode": "Režim vlajek",
+    "lib.arcade.freeCells": "Volná pole: {n}",
+    "lib.arcade.left": "Doleva",
+    "lib.arcade.length": "Délka: {n}/{t}",
+    "lib.arcade.lines": "Řady: {n}/{t}",
+    "lib.arcade.minesLeft": "Miny: {n}",
+    "lib.arcade.moves": "Tahy: {n}",
+    "lib.arcade.movesLeft": "Zbývá tahů: {n}",
+    "lib.arcade.mustPass": "Nemáte platný tah — stojíte.",
+    "lib.arcade.next": "Další kostky",
+    "lib.arcade.noHint": "Žádný užitečný tah nezbývá. Otočte kartu, rozdejte řadu nebo začněte znovu.",
+    "lib.arcade.note.2048": "Šipkami nebo přejetím posunujte všechny dlaždice. Dvě dlaždice se stejným číslem se při dotyku spojí. Vytvořte dlaždici rovnou cíli a úroveň máte; když se nic nepohne, prohráli jste.",
+    "lib.arcade.note.blocks": "Otáčejte a skládejte padající kostky tak, aby se zaplnily vodorovné řady; plné řady zmizí. ← → posun, ↑ otočení, ↓ rychlejší pád, mezerník shození, P pauza. Odstraňte požadovaný počet řad a úroveň máte; když kostky dosáhnou vrcholu, prohráli jste.",
+    "lib.arcade.note.breakout": "Pohybujte myší, táhněte prstem po hřišti nebo použijte ← → k ovládání pálky a nenechte míček spadnout. Rozbijte všechny cihly a úroveň máte; cihly se silným okrajem potřebují dva zásahy. Máte 3 životy. Mezerník spustí nebo pozastaví hru.",
+    "lib.arcade.note.connect4": "Hrajete za červené a začínáte. Klepněte na sloupec a pusťte kámen; spadne na nejnižší volné místo. Kdo první spojí 4 kameny vodorovně, svisle nebo úhlopříčně, vyhrává.",
+    "lib.arcade.note.freecell": "Všechny karty jsou otočené lícem nahoru. Přesuňte všech 52 karet na 4 odkládací balíčky podle barev od A do K. Na stole skládejte sestupně se střídáním červené a černé. Volná pole vlevo nahoře pojmou po jedné kartě; kolik karet přesunete najednou, závisí na volných polích a prázdných sloupcích. Vyšší úrovně mají méně volných polí.",
+    "lib.arcade.note.gomoku": "Hrajete za křížky a začínáte; počítač hraje za kolečka. Střídavě kladete značku na volný bod desky 15×15. Kdo první spojí 5 v řadě vodorovně, svisle nebo úhlopříčně, vyhrává.",
+    "lib.arcade.note.klondike": "Přesuňte všech 52 karet na 4 odkládací balíčky podle barev od A do K. Na stole skládejte sestupně se střídáním červené a černé; do prázdného sloupce lze dát jen K. Kliknutím na otočený balíček vlevo nahoře berete karty. Klepněte na kartu a pak na místo, kam ji chcete dát, nebo na ni klepněte znovu a přesune se sama na platné místo. Úrovně 1–5 berou po 1 kartě, 6–10 po 3.",
+    "lib.arcade.note.match3": "Prohoďte dva sousední dílky (klepnutím postupně nebo přejetím), aby vznikla řada 3 a více stejných; řada praskne a dílky nad ní spadnou. Řetězové reakce násobí body. Dosáhněte cílového skóre, než vám dojdou tahy.",
+    "lib.arcade.note.minesweeper": "Klepnutím otevřete políčko. Číslo ukazuje, kolik min je v 8 okolních políčkách. Podezřelé políčko označte vlajkou pravým tlačítkem, dlouhým stiskem nebo v režimu vlajek. Klepnutím na číslo, které už má kolem dost vlajek, rychle otevřete zbytek. Otevřete všechna políčka bez min a vyhrajete.",
+    "lib.arcade.note.reversi": "Hrajete za černé a začínáte. Položte kámen tak, abyste mezi něj a jiný černý sevřeli jeden či více bílých (vodorovně, svisle nebo úhlopříčně); sevřené kameny se otočí na vaši barvu. Bez platného tahu stojíte. Když je deska plná, vyhrává ten s více kameny.",
+    "lib.arcade.note.snake": "Hada ovládejte šipkami, WASD, tlačítky dole nebo přejetím. Jezte červené jídlo, ať rostete; dosáhněte požadované délky a úroveň máte. Od 3. úrovně je náraz do zdi prohra; vyšší úrovně mají překážky. Nekousněte se do ocasu.",
+    "lib.arcade.note.spider": "Na stole skládejte každou barvu do postupky od K po A; kompletní postupky z 13 karet se odstraní samy. Jakoukoli kartu lze položit na kartu o jedna vyšší, ale společně se přesouvají jen postupky stejné barvy. Když se zaseknete, klepněte na Rozdat řadu (každý sloupec musí mít karty). Úrovně 1–3 jedna barva, 4–7 dvě, 8–10 čtyři.",
+    "lib.arcade.pause": "Pauza",
+    "lib.arcade.paused": "Pozastaveno",
+    "lib.arcade.right": "Doprava",
+    "lib.arcade.rotate": "Otočit",
+    "lib.arcade.score": "Skóre: {n}",
+    "lib.arcade.shuffled": "Žádné tahy — deska byla zamíchána.",
+    "lib.arcade.snakeBoard": "Hřiště pro hada",
+    "lib.arcade.suitsN": "Barvy: {n}",
+    "lib.arcade.target": "Cíl: {n}",
+    "lib.arcade.up": "Nahoru",
+    "lib.arcade.youVsAi": "Vy {a} – Počítač {b}",
+    "lib.arcade.noHintFc": "Nezbyl žádný užitečný tah. Vraťte pár tahů nebo začněte znovu."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Zábava a hry",
-      "desc": "Kolo štěstí, generátor náhodných čísel, losování cen a zábavné hry."
+      "desc": "Kolo štěstí, náhodná čísla a hry v prohlížeči: sudoku, šachy, čínské šachy, gomoku, 2048, hledání min, padající kostky, had, solitaire a rozbíjení cihel."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Skrytý Xiangqi",
       "desc": "Hrajte vietnamský skrytý Xiangqi: kameny začínají rubem nahoru a otočí se po prvním tahu. Proti počítači v 10 úrovních nebo online s přáteli a novými soupeři."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Posunujte a spojujte stejná čísla, dokud nevznikne dlaždice 2048; 10 úrovní s cíli od 64 do 8192, s krokem zpět."
+    },
+    "minesweeper": {
+      "name": "Hledání min",
+      "desc": "Klasické hledání min: otevírejte políčka, dávejte vlajky a z čísel odvoďte, kde jsou miny; 10 úrovní od 8x8 do 18x18, funguje i v mobilu."
+    },
+    "block-puzzle": {
+      "name": "Padající kostky",
+      "desc": "Otáčejte a skládejte padající kostky a mažte řady; 10 stále rychlejších úrovní, hrajte klávesnicí nebo dotykovými tlačítky."
+    },
+    "snake": {
+      "name": "Had",
+      "desc": "Veďte hada k jídlu, ať roste, a vyhýbejte se zdem i vlastnímu ocasu; 10 rychlejších úrovní s překážkami."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klasický Klondike solitaire: skládejte se střídáním barev a odkládejte karty od A do K; brát po 1 nebo 3, s krokem zpět a nápovědou."
+    },
+    "spider-solitaire": {
+      "name": "Pavouk solitaire",
+      "desc": "Pavouk s 1, 2 a 4 barvami: skládejte postupky stejné barvy od K do A a odstraňte je ze stolu; 10 úrovní s krokem zpět a nápovědou."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell solitaire: všechny karty lícem nahoru; volnými poli si pomozte odložit karty; 10 úrovní se stále méně volnými poli."
+    },
+    "gomoku": {
+      "name": "Gomoku (pět v řadě)",
+      "desc": "Hrajte gomoku, pět v řadě, proti počítači na desce 15x15; 10 úrovní od snadné po těžkou, s krokem zpět."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Sevřete kameny soupeře a otočte je na svou barvu; hrajte Reversi 8x8 proti počítači v 10 úrovních."
+    },
+    "connect-four": {
+      "name": "Čtyři v řadě",
+      "desc": "Pouštějte kameny do sloupců a spojte 4 vodorovně, svisle nebo úhlopříčně dřív než počítač; 10 úrovní od snadné po těžkou."
+    },
+    "match-3": {
+      "name": "Spoj 3",
+      "desc": "Prohazujte bonbony, spojujte 3 a více stejných a spouštějte řetězové reakce; 10 úrovní s cílovým skóre a omezeným počtem tahů."
+    },
+    "brick-breaker": {
+      "name": "Rozbíjení cihel",
+      "desc": "Ovládejte pálku a odrážejte míček, abyste rozbili všechny cihly; 10 kol s různým rozložením, myší, dotykem nebo klávesami."
     }
   },
   "s": {

@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Mpinzani amepita. Ukipita pia, mchezo utaisha na kuhesabiwa.",
     "lib.online.modeAi": "Cheza na kompyuta",
     "lib.online.modeOnline": "Cheza mtandaoni",
-    "share.label": "Shiriki"
+    "share.label": "Shiriki",
+    "lib.arcade.aiNoMove": "Kompyuta haina hatua — zamu yako.",
+    "lib.arcade.autoFinish": "Panga zote juu",
+    "lib.arcade.best": "Bora: {n}",
+    "lib.arcade.blocksBoard": "Ubao wa vitalu vinavyoanguka",
+    "lib.arcade.breakoutBoard": "Uwanja wa kuvunja matofali",
+    "lib.arcade.dealRow": "Gawa safu mpya",
+    "lib.arcade.down": "Chini",
+    "lib.arcade.drawN": "Chukua {n}",
+    "lib.arcade.drop": "Angusha moja kwa moja",
+    "lib.arcade.flagMode": "Hali ya bendera",
+    "lib.arcade.freeCells": "Visanduku wazi: {n}",
+    "lib.arcade.left": "Kushoto",
+    "lib.arcade.length": "Urefu: {n}/{t}",
+    "lib.arcade.lines": "Mistari: {n}/{t}",
+    "lib.arcade.minesLeft": "Mabomu: {n}",
+    "lib.arcade.moves": "Hatua: {n}",
+    "lib.arcade.movesLeft": "Zimebaki hatua {n}",
+    "lib.arcade.mustPass": "Huna hatua — zamu yako inarukwa.",
+    "lib.arcade.next": "Vitalu vifuatavyo",
+    "lib.arcade.noHint": "Hakuna hatua yenye manufaa. Chukua karata, gawa safu mpya au anza upya.",
+    "lib.arcade.note.2048": "Tumia vitufe vya mishale au telezesha ili kusogeza vigae vyote. Vigae viwili vyenye namba sawa huungana vinapogusana. Tengeneza kigae kinacholingana na lengo ili kupita kiwango; kikiwa hakuna kinachosogea, umeshindwa.",
+    "lib.arcade.note.blocks": "Zungusha na weka vitalu vinavyoanguka ili kujaza mistari ya mlalo; mstari uliojaa hupotea. ← → kusogeza, ↑ kuzungusha, ↓ kushuka haraka, Space kuangusha moja kwa moja, P kusitisha. Futa idadi ya mistari inayohitajika ili kupita kiwango; vitalu vikifika juu, umeshindwa.",
+    "lib.arcade.note.breakout": "Sogeza kipanya, buruta kidole uwanjani au tumia ← → kuendesha kibao na usiruhusu mpira uanguke. Vunja matofali yote ili kupita kiwango; matofali yenye ukingo mnene yanahitaji kupigwa mara mbili. Una maisha 3. Space kuanza au kusitisha.",
+    "lib.arcade.note.connect4": "Unacheza kwa rangi nyekundu na unaanza. Gusa safu wima ili kudondosha kete; huanguka kwenye nafasi tupu ya chini kabisa. Wa kwanza kupanga kete 4 kwa mlalo, wima au mshazari anashinda.",
+    "lib.arcade.note.freecell": "Karata zote ziko wazi. Hamisha karata zote 52 kwenye mafungu 4 ya msingi kwa aina, kutoka A hadi K. Mezani panga kwa mpangilio wa kushuka ukibadilisha nyekundu na nyeusi. Visanduku wazi vya juu kushoto vinashika karata moja kila kimoja; idadi ya karata unazoweza kuhamisha kwa mara moja inategemea visanduku wazi na safu tupu. Viwango vya juu vina visanduku vichache.",
+    "lib.arcade.note.gomoku": "Unacheza kwa X na unaanza; kompyuta inacheza kwa O. Mnapokezana kuweka alama kwenye nukta tupu ya ubao wa 15×15. Wa kwanza kupanga 5 mfululizo kwa mlalo, wima au mshazari anashinda.",
+    "lib.arcade.note.klondike": "Hamisha karata zote 52 kwenye mafungu 4 ya msingi kwa aina, kutoka A hadi K. Mezani panga kwa mpangilio wa kushuka ukibadilisha nyekundu na nyeusi; safu tupu inapokea K pekee. Gusa fungu lililopinduliwa juu kushoto ili kuchukua karata. Gusa karata kisha mahali unapotaka, au igusa tena ili ijiendee yenyewe mahali halali. Viwango 1–5 huchukua karata 1, viwango 6–10 huchukua 3.",
+    "lib.arcade.note.match3": "Badilisha nafasi za vipande viwili vilivyo jirani (gusa kimoja baada ya kingine au telezesha) ili kupanga safu ya 3 au zaidi vinavyofanana; safu hiyo hupasuka na vilivyo juu huanguka. Milipuko mfululizo huzidisha alama. Fikia alama lengwa kabla hatua hazijaisha.",
+    "lib.arcade.note.minesweeper": "Gusa kisanduku ili kukifungua. Namba inaonyesha mabomu mangapi yako kwenye visanduku 8 vinavyozunguka. Weka bendera kwenye kisanduku unachoshuku kwa kubofya kulia, kubonyeza kwa muda au hali ya bendera. Gusa namba yenye bendera za kutosha kuzunguka ili kufungua vilivyobaki haraka. Fungua visanduku vyote visivyo na mabomu ili kushinda.",
+    "lib.arcade.note.reversi": "Unacheza kwa rangi nyeusi na unaanza. Weka kete ili kubana kete nyeupe moja au zaidi kati yake na kete nyingine nyeusi (mlalo, wima, mshazari); kete zilizobanwa hugeuka rangi yako. Usipokuwa na hatua halali, zamu inarukwa. Ubao ukijaa, mwenye kete nyingi zaidi anashinda.",
+    "lib.arcade.note.snake": "Endesha nyoka kwa vitufe vya mishale, WASD, vitufe vilivyo chini au kutelezesha. Kula chakula chekundu ili urefuke; fikia urefu unaohitajika ili kupita kiwango. Kuanzia kiwango 3, kugonga ukuta ni kushindwa; viwango vya juu vina vizuizi. Usiume mkia wako mwenyewe.",
+    "lib.arcade.note.spider": "Panga mezani kila aina katika mfuatano kutoka K hadi A; mfuatano kamili wa karata 13 huondolewa wenyewe. Karata yoyote inaweza kuwekwa juu ya karata kubwa kwa moja, lakini mifuatano ya aina moja tu ndiyo husogea pamoja. Ukikwama, gusa Gawa safu mpya (kila safu wima lazima iwe na karata). Viwango 1–3 aina moja, 4–7 mbili, 8–10 nne.",
+    "lib.arcade.pause": "Sitisha",
+    "lib.arcade.paused": "Imesitishwa",
+    "lib.arcade.right": "Kulia",
+    "lib.arcade.rotate": "Zungusha",
+    "lib.arcade.score": "Alama: {n}",
+    "lib.arcade.shuffled": "Hakuna hatua — ubao umechanganywa upya.",
+    "lib.arcade.snakeBoard": "Uwanja wa nyoka",
+    "lib.arcade.suitsN": "Aina {n}",
+    "lib.arcade.target": "Lengo: {n}",
+    "lib.arcade.up": "Juu",
+    "lib.arcade.youVsAi": "Wewe {a} – Kompyuta {b}",
+    "lib.arcade.noHintFc": "Hakuna hatua yenye manufaa iliyobaki. Tendua hatua chache au anza upya."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Burudani na michezo",
-      "desc": "Gurudumu la bahati, kitengeneza nambari nasibu, droo za zawadi na michezo ya kufurahisha."
+      "desc": "Gurudumu la bahati, namba nasibu na michezo ya kivinjari: sudoku, chesi, chesi ya Kichina, gomoku, 2048, kitegua mabomu, vitalu vinavyoanguka, nyoka, solitaire na vunja matofali."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi iliyofichwa",
       "desc": "Cheza Xiangqi iliyofichwa ya Kivietnamu: vipande huanza vimepinduliwa na hufunuliwa baada ya hatua ya kwanza. Dhidi ya kompyuta katika viwango 10 au mtandaoni na marafiki na wapinzani wapya."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Telezesha na unganisha namba zinazofanana hadi upate kigae 2048; viwango 10 vyenye malengo kutoka 64 hadi 8192, pamoja na kurudisha hatua."
+    },
+    "minesweeper": {
+      "name": "Kitegua Mabomu",
+      "desc": "Mchezo wa kawaida wa kutegua mabomu: fungua visanduku, weka bendera na ugundue mabomu kutokana na namba; viwango 10 kutoka 8x8 hadi 18x18, unafanya kazi kwenye simu."
+    },
+    "block-puzzle": {
+      "name": "Vitalu Vinavyoanguka",
+      "desc": "Zungusha na panga vitalu vinavyoanguka ili kufuta mistari; viwango 10 vinavyozidi kuwa vya kasi, kwa kibodi au vitufe vya kugusa."
+    },
+    "snake": {
+      "name": "Nyoka",
+      "desc": "Mwongoze nyoka kwenye chakula ili arefuke huku ukiepuka kuta na mkia wake; viwango 10 vya kasi zaidi vyenye vizuizi."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Solitaire ya Klondike ya kawaida: panga kwa kubadilisha rangi na hamisha karata kwenye mafungu ya msingi kutoka A hadi K; chukua 1 au 3, pamoja na kurudisha na vidokezo."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire ya Buibui",
+      "desc": "Buibui ya aina 1, 2 na 4: panga mifuatano ya aina moja kutoka K hadi A ili kuiondoa mezani; viwango 10 pamoja na kurudisha na vidokezo."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitaire ya FreeCell: karata zote ziko wazi; tumia visanduku wazi kuhamisha karata kwenye mafungu ya msingi; viwango 10 vyenye visanduku vinavyopungua."
+    },
+    "gomoku": {
+      "name": "Gomoku (Tano Mfululizo)",
+      "desc": "Cheza gomoku, tano mfululizo, dhidi ya kompyuta kwenye ubao wa 15x15; viwango 10 kutoka rahisi hadi ngumu, pamoja na kurudisha hatua."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Bana kete za mpinzani ili kuzigeuza kuwa rangi yako; cheza Reversi 8x8 dhidi ya kompyuta katika viwango 10."
+    },
+    "connect-four": {
+      "name": "Nne Mfululizo",
+      "desc": "Dondosha kete kwenye safu wima na panga 4 kwa mlalo, wima au mshazari kabla ya kompyuta; viwango 10 kutoka rahisi hadi ngumu."
+    },
+    "match-3": {
+      "name": "Linganisha 3",
+      "desc": "Badilisha pipi ili kulinganisha 3 au zaidi zinazofanana na kusababisha milipuko mfululizo; viwango 10 vyenye alama lengwa na hatua chache."
+    },
+    "brick-breaker": {
+      "name": "Vunja Matofali",
+      "desc": "Endesha kibao na rudisha mpira ili kuvunja matofali yote; hatua 10 zenye mipangilio tofauti, kwa kipanya, kugusa au vitufe."
     }
   },
   "s": {

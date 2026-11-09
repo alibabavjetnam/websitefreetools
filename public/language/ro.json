@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Adversarul a spus pas. Dacă spui și tu pas, partida se termină și se numără.",
     "lib.online.modeAi": "Joacă cu calculatorul",
     "lib.online.modeOnline": "Joacă online",
-    "share.label": "Distribuie"
+    "share.label": "Distribuie",
+    "lib.arcade.aiNoMove": "Calculatorul nu are nicio mutare validă — e rândul tău.",
+    "lib.arcade.autoFinish": "Urcă tot automat",
+    "lib.arcade.best": "Record: {n}",
+    "lib.arcade.blocksBoard": "Tabla pieselor care cad",
+    "lib.arcade.breakoutBoard": "Teren de spart cărămizi",
+    "lib.arcade.dealRow": "Împarte un rând",
+    "lib.arcade.down": "Jos",
+    "lib.arcade.drawN": "Trage câte {n}",
+    "lib.arcade.drop": "Lasă să cadă",
+    "lib.arcade.flagMode": "Mod steag",
+    "lib.arcade.freeCells": "Celule libere: {n}",
+    "lib.arcade.left": "Stânga",
+    "lib.arcade.length": "Lungime: {n}/{t}",
+    "lib.arcade.lines": "Linii: {n}/{t}",
+    "lib.arcade.minesLeft": "Mine: {n}",
+    "lib.arcade.moves": "Mutări: {n}",
+    "lib.arcade.movesLeft": "Mai ai {n} mutări",
+    "lib.arcade.mustPass": "Nu ai nicio mutare validă — pierzi rândul.",
+    "lib.arcade.next": "Piesele următoare",
+    "lib.arcade.noHint": "Nu mai e nicio mutare utilă. Trage o carte, împarte un rând sau începe din nou.",
+    "lib.arcade.note.2048": "Folosește săgețile sau glisează ca să muți toate plăcuțele. Două plăcuțe cu același număr se unesc când se ating. Fă o plăcuță egală cu ținta ca să treci nivelul; dacă nu se mai mișcă nimic, ai pierdut.",
+    "lib.arcade.note.blocks": "Rotește și așază piesele care cad ca să umpli linii orizontale; liniile pline dispar. ← → mută, ↑ rotește, ↓ coboară mai repede, Spațiu lasă să cadă, P pauză. Șterge numărul de linii cerut ca să treci nivelul; dacă piesele ajung sus, ai pierdut.",
+    "lib.arcade.note.breakout": "Mișcă mouse-ul, trage cu degetul pe teren sau folosește ← → ca să conduci paleta și să nu scapi mingea. Sparge toate cărămizile ca să treci nivelul; cele cu margine groasă trebuie lovite de două ori. Ai 3 vieți. Spațiu pornește sau pune pauză.",
+    "lib.arcade.note.connect4": "Joci cu roșu și începi tu. Atinge o coloană ca să lași o piesă; ea cade în cea mai de jos căsuță liberă. Câștigă cine aliniază primul 4 piese pe orizontală, verticală sau diagonală.",
+    "lib.arcade.note.freecell": "Toate cărțile sunt cu fața în sus. Mută toate cele 52 de cărți pe cele 4 fundații după culoare, de la A la K. Pe masă, așază descrescător alternând roșu și negru. Celulele libere din stânga sus țin câte o carte; câte cărți poți muta deodată depinde de celulele și coloanele goale. Nivelurile mari au mai puține celule libere.",
+    "lib.arcade.note.gomoku": "Joci cu X și începi tu; calculatorul joacă cu O. Puneți pe rând un semn pe un punct liber al tablei de 15×15. Câștigă cine aliniază primul 5 pe orizontală, verticală sau diagonală.",
+    "lib.arcade.note.klondike": "Mută toate cele 52 de cărți pe cele 4 fundații după culoare, de la A la K. Pe masă, așază descrescător alternând roșu și negru; doar un K poate merge pe o coloană goală. Atinge pachetul cu fața în jos din stânga sus ca să tragi cărți. Atinge o carte și apoi locul dorit, sau atinge-o din nou ca să meargă singură într-un loc valid. Nivelurile 1–5 trag câte 1 carte, 6–10 câte 3.",
+    "lib.arcade.note.match3": "Schimbă între ele două piese vecine (atingându-le pe rând sau glisând) ca să formezi un rând de 3 sau mai multe la fel; rândul explodează și piesele de deasupra cad. Reacțiile în lanț înmulțesc punctele. Atinge scorul țintă înainte să rămâi fără mutări.",
+    "lib.arcade.note.minesweeper": "Atinge o căsuță ca s-o deschizi. Numărul arată câte mine sunt în cele 8 căsuțe din jur. Marchează o căsuță suspectă cu clic dreapta, apăsare lungă sau modul steag. Atinge un număr care are deja destule steaguri în jur ca să deschizi rapid restul. Deschide toate căsuțele fără mine ca să câștigi.",
+    "lib.arcade.note.reversi": "Joci cu negru și începi tu. Pune o piesă astfel încât să prinzi una sau mai multe piese albe între ea și altă piesă neagră (orizontal, vertical sau diagonal); piesele prinse trec la culoarea ta. Dacă nu ai nicio mutare validă, pierzi rândul. Când tabla e plină, câștigă cine are mai multe piese.",
+    "lib.arcade.note.snake": "Condu șarpele cu săgețile, WASD, butoanele de dedesubt sau glisând. Mănâncă hrana roșie ca să crești; atinge lungimea cerută ca să treci nivelul. De la nivelul 3, lovirea zidului înseamnă pierdere; nivelurile mari au obstacole. Nu-ți mușca propria coadă.",
+    "lib.arcade.note.spider": "Formează pe masă, pentru fiecare culoare, un șir de la K la A; șirurile complete de 13 cărți se scot singure. Orice carte poate merge pe o carte mai mare cu unu, dar numai șirurile de aceeași culoare se mută împreună. Dacă te blochezi, atinge Împarte un rând (fiecare coloană trebuie să aibă cărți). Nivelurile 1–3 o culoare, 4–7 două, 8–10 patru.",
+    "lib.arcade.pause": "Pauză",
+    "lib.arcade.paused": "În pauză",
+    "lib.arcade.right": "Dreapta",
+    "lib.arcade.rotate": "Rotește",
+    "lib.arcade.score": "Scor: {n}",
+    "lib.arcade.shuffled": "Nu mai sunt mutări — tabla a fost amestecată.",
+    "lib.arcade.snakeBoard": "Terenul șarpelui",
+    "lib.arcade.suitsN": "{n} culori",
+    "lib.arcade.target": "Țintă: {n}",
+    "lib.arcade.up": "Sus",
+    "lib.arcade.youVsAi": "Tu {a} – Calculator {b}",
+    "lib.arcade.noHintFc": "Nu mai există mutări utile. Anulează câteva mutări sau începe din nou."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Divertisment și jocuri",
-      "desc": "Roata norocului, generator de numere aleatorii, tombole cu premii și jocuri distractive."
+      "desc": "Roata norocului, numere aleatorii și jocuri în browser: sudoku, șah, șah chinezesc, gomoku, 2048, minesweeper, piese care cad, șarpele, solitaire și spărgătorul de cărămizi."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi ascuns",
       "desc": "Joacă Xiangqi ascuns vietnamez: piesele încep cu fața în jos și se întorc după prima mutare. Cu calculatorul pe 10 niveluri sau online cu prieteni și adversari noi."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Glisează și unește numere egale până obții plăcuța 2048; 10 niveluri cu ținte de la 64 la 8192, cu anulare."
+    },
+    "minesweeper": {
+      "name": "Minesweeper",
+      "desc": "Minesweeper clasic: deschide căsuțe, pune steaguri și deduce din numere unde sunt minele; 10 niveluri de la 8x8 la 18x18, merge și pe telefon."
+    },
+    "block-puzzle": {
+      "name": "Piese care cad",
+      "desc": "Rotește și stivuiește piesele care cad ca să ștergi linii; 10 niveluri tot mai rapide, cu tastatura sau butoane tactile."
+    },
+    "snake": {
+      "name": "Șarpele",
+      "desc": "Condu șarpele spre hrană ca să crească, ferindu-te de ziduri și de propria coadă; 10 niveluri mai rapide, cu obstacole."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Solitaire Klondike clasic: așază alternând culorile și urcă cărțile pe fundații de la A la K; tragi 1 sau 3, cu anulare și indicii."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Păianjen",
+      "desc": "Păianjen cu 1, 2 și 4 culori: formează șiruri de aceeași culoare de la K la A ca să le scoți de pe masă; 10 niveluri cu anulare și indicii."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitaire FreeCell: toate cărțile la vedere; folosește celulele libere ca să urci cărțile pe fundații; 10 niveluri cu tot mai puține celule."
+    },
+    "gomoku": {
+      "name": "Gomoku (cinci în linie)",
+      "desc": "Joacă gomoku, cinci în linie, cu calculatorul pe o tablă de 15x15; 10 niveluri de la ușor la greu, cu anulare."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Prinde piesele adversarului ca să le întorci în culoarea ta; joacă Reversi 8x8 cu calculatorul în 10 niveluri."
+    },
+    "connect-four": {
+      "name": "Patru în linie",
+      "desc": "Lasă piese în coloane și aliniază 4 pe orizontală, verticală sau diagonală înaintea calculatorului; 10 niveluri de la ușor la greu."
+    },
+    "match-3": {
+      "name": "Potrivește 3",
+      "desc": "Schimbă bomboanele ca să potrivești 3 sau mai multe la fel și să declanșezi reacții în lanț; 10 niveluri cu scor țintă și mutări limitate."
+    },
+    "brick-breaker": {
+      "name": "Spărgătorul de cărămizi",
+      "desc": "Condu paleta și respinge mingea ca să spargi toate cărămizile; 10 niveluri cu aranjamente diferite, cu mouse, atingere sau taste."
     }
   },
   "s": {

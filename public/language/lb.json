@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "De Géigner huet gepasst. Wann Dir och passt, ass d'Partie eriwwer a gëtt gezielt.",
     "lib.online.modeAi": "Géint de Computer spillen",
     "lib.online.modeOnline": "Online spillen",
-    "share.label": "Deelen"
+    "share.label": "Deelen",
+    "lib.arcade.aiNoMove": "De Computer huet kee gültegen Zuch — du bass drun.",
+    "lib.arcade.autoFinish": "Automatesch ofschléissen",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Briet mat falende Bléck",
+    "lib.arcade.breakoutBoard": "Feld fir Steng ze briechen",
+    "lib.arcade.dealRow": "Eng nei Rei ginn",
+    "lib.arcade.down": "Erof",
+    "lib.arcade.drawN": "{n} zéien",
+    "lib.arcade.drop": "Direkt falen loossen",
+    "lib.arcade.flagMode": "Fändelmodus",
+    "lib.arcade.freeCells": "Fräi Zellen: {n}",
+    "lib.arcade.left": "Lénks",
+    "lib.arcade.length": "Längt: {n}/{t}",
+    "lib.arcade.lines": "Linnen: {n}/{t}",
+    "lib.arcade.minesLeft": "Minnen: {n}",
+    "lib.arcade.moves": "Zich: {n}",
+    "lib.arcade.movesLeft": "Nach {n} Zich",
+    "lib.arcade.mustPass": "Du hues kee gültegen Zuch — du muss passen.",
+    "lib.arcade.next": "Nächst Stécker",
+    "lib.arcade.noHint": "Keen nëtzlechen Zuch méi. Zéi eng Kaart, gëff eng nei Rei oder fänk nei un.",
+    "lib.arcade.note.2048": "Benotz d'Pfeiltasten oder wäisch, fir all d'Plättercher ze verréckelen. Zwee Plättercher mat der selwechter Zuel ginn eent, wa se sech beréieren. Maach e Plättchen esou grouss wéi d'Zil, fir den Niveau ze packen; wa sech keent méi beweege kann, hues de verluer.",
+    "lib.arcade.note.blocks": "Dréi a placéier déi falend Stécker, fir horizontal Linnen ze fëllen; voll Linnen verschwannen. ← → verréckelen, ↑ dréinen, ↓ méi séier falen, Espace direkt falen, P Paus. Läsch déi néideg Zuel u Linnen, fir den Niveau ze packen; wann d'Stécker uewen ukommen, hues de verluer.",
+    "lib.arcade.note.breakout": "Beweeg d'Maus, zéi de Fanger iwwert d'Feld oder benotz ← →, fir de Paddel ze steieren an de Ball am Spill ze halen. Briech all d'Steng, fir den Niveau ze packen; Steng mat décke Rand brauche zwee Schléi. Du hues 3 Liewen. Espace start oder mécht Paus.",
+    "lib.arcade.note.connect4": "Du spills rout a fänks un. Tipp op eng Kolonn, fir eng Scheif falen ze loossen; si fält op déi ënnescht fräi Plaz. Wien als Éischt 4 Scheiwen horizontal, vertikal oder diagonal an eng Rei kritt, gewënnt.",
+    "lib.arcade.note.freecell": "All d'Kaarte leien op. Bréng all 52 Kaarten no Faarf op déi 4 Basen, vun A bis K. Um Dësch lees de erof mat ofwiesselende Faarwen. Déi fräi Zellen uewe lénks halen all eng Kaart; wéi vill Kaarten s de op eemol réckele kanns, hänkt vun de fräien Zellen an eidele Kolonnen of. Méi héich Niveauen hu manner Zellen.",
+    "lib.arcade.note.gomoku": "Du spills X a fänks un; de Computer spillt O. Dir setzt ofwiesselnd e Zeechen op e fräie Punkt vum 15×15-Briet. Wien als Éischt 5 an enger Rei horizontal, vertikal oder diagonal kritt, gewënnt.",
+    "lib.arcade.note.klondike": "Bréng all 52 Kaarten no Faarf op déi 4 Basen, vun A bis K. Um Dësch lees de erof mat ofwiesselende Faarwen; nëmmen e K däerf an eng eidel Kolonn. Tipp op den zouenen Tas uewe lénks, fir Kaarten ze zéien. Tipp eng Kaart an dann d'Plaz, wou se hi soll, oder tipp nach eng Kéier drop, fir datt se eleng op eng gülteg Plaz geet. Niveau 1–5: 1 zéien; Niveau 6–10: 3 zéien.",
+    "lib.arcade.note.match3": "Tausch zwee Nopeschstécker (tipp een an dann deen aneren, oder wäisch), fir eng Rei vun 3 oder méi gläichen ze maachen; d'Rei explodéiert an d'Stécker driwwer falen erof. Kettereaktiounen multiplizéieren d'Punkten. Erreech d'Zilpunkten, ier d'Zich eriwwer sinn.",
+    "lib.arcade.note.minesweeper": "Tipp op eng Zell, fir se opzemaachen. D'Zuel weist, wéi vill Minnen an den 8 Zellen ronderëm leien. Markéier eng verdächteg Minn mat Rietsklick, laangem Drécken oder dem Fändelmodus. Tipp op eng Zuel, déi scho genuch Fändele ronderëm huet, fir de Rescht séier opzemaachen. Maach all Zelle ouni Minn op, fir ze gewannen.",
+    "lib.arcade.note.reversi": "Du spills schwaarz a fänks un. Setz eng Scheif esou, datt se eng oder méi wäiss Scheiwen tëscht sech an enger anerer schwaarzer Scheif aspaart (horizontal, vertikal oder diagonal); déi agespaarte Scheiwe wiesselen op deng Faarf. Hues de kee gültegen Zuch, muss de passen. Wann d'Briet voll ass, gewënnt deen, deen der méi huet.",
+    "lib.arcade.note.snake": "Steier d'Schlaang mat de Pfeiltasten, WASD, de Knäppercher ënnen oder mat Wäischen. Iess dat rout Iessen, fir ze wuessen; erreech déi néideg Längt, fir den Niveau ze packen. Vum Niveau 3 un ass d'Spill eriwwer, wann s de an eng Mauer fiers; méi héich Niveauen hun Hindernisser. Fuer net an däin eegene Schwanz.",
+    "lib.arcade.note.spider": "Lee um Dësch all Faarf an eng Rei vu K erof bis A; eng komplett Rei vun 13 Kaarte gëtt automatesch ewechgeholl. All Kaart kann op eng Kaart, déi ee Rang méi héich ass, mä nëmme Reie vun der selwechter Faarf réckelen zesummen. Wann s de hänks, tipp op Eng nei Rei ginn (all Kolonn muss Kaarten hunn). Niveau 1–3: eng Faarf; 4–7: zwou; 8–10: véier.",
+    "lib.arcade.pause": "Paus",
+    "lib.arcade.paused": "Op Paus",
+    "lib.arcade.right": "Riets",
+    "lib.arcade.rotate": "Dréinen",
+    "lib.arcade.score": "Punkten: {n}",
+    "lib.arcade.shuffled": "Et waren keng Zich méi — d'Briet gouf gemëscht.",
+    "lib.arcade.snakeBoard": "Feld vun der Schlaang",
+    "lib.arcade.suitsN": "{n} Faarwen",
+    "lib.arcade.target": "Zil: {n}",
+    "lib.arcade.up": "Erop",
+    "lib.arcade.youVsAi": "Du {a} – Computer {b}",
+    "lib.arcade.noHintFc": "Keen nëtzlechen Zuch méi. Maach e puer Zich réckgängeg oder fänk nei un."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Ennerhalung & Spiller",
-      "desc": "Gléckrad, Zoufallszuelegenerator, Verlousungen a witzeg Spiller."
+      "desc": "Glécksrad, Zoufallszuelen a Spiller am Browser: Sudoku, Schach, chineesescht Schach, Gomoku, 2048, Minnesich, falend Bléck, Schlaang, Patience a Stengbriecher."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Verstoppt Xiangqi",
       "desc": "Spillt vietnamesescht verstoppt Xiangqi: d'Figure fänken ëmgedréint un a ginn nom éischten Zuch opgedeckt. Géint de Computer op 10 Niveauen oder online mat Frënn an neie Géigner."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Verréck a fusionéier gläich Zuelen bis zum 2048-Plättchen; 10 Niveauen mat Ziler vu 64 bis 8192, mat Réckgängeg."
+    },
+    "minesweeper": {
+      "name": "Minnesich",
+      "desc": "De klassesche Minnesich: Zellen opmaachen, Fändele setzen an aus den Zuelen erausfannen, wou d'Minne sinn; 10 Niveauen vun 8x8 bis 18x18, och um Handy."
+    },
+    "block-puzzle": {
+      "name": "Falend Bléck",
+      "desc": "Dréi a stapel falend Bléck, fir Linnen ze läschen; 10 ëmmer méi séier Niveauen, mat Tastatur oder Touch-Knäppercher."
+    },
+    "snake": {
+      "name": "Schlaang",
+      "desc": "Steier d'Schlaang, fir z'iessen an ze wuessen, ouni a Mauere oder hiren eegene Schwanz ze fueren; 10 méi séier Niveauen mat Hindernisser."
+    },
+    "solitaire": {
+      "name": "Patience",
+      "desc": "Klassesch Klondike-Patience: erof leeë mat ofwiesselende Faarwen a Kaarten op d'Basen vun A bis K bréngen; 1 oder 3 zéien, mat Réckgängeg an Tipps."
+    },
+    "spider-solitaire": {
+      "name": "Spann-Patience",
+      "desc": "Spann mat 1, 2 a 4 Faarwen: Reie vun der selwechter Faarf vu K bis A leeën, fir se vum Dësch ze huelen; 10 Niveauen mat Réckgängeg an Tipps."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-Patience: all d'Kaarte leien op; benotz déi fräi Zellen, fir d'Kaarten op d'Basen ze bréngen; 10 Niveauen mat ëmmer manner Zellen."
+    },
+    "gomoku": {
+      "name": "Gomoku (fënnef an enger Rei)",
+      "desc": "Spill Gomoku, fënnef an enger Rei, géint de Computer op engem 15x15-Briet; 10 Niveauen vu liicht bis schwéier, mat Réckgängeg."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Spär d'Scheiwe vum Géigner an, fir se an deng Faarf ëmzedréinen; spill 8x8-Reversi géint de Computer an 10 Niveauen."
+    },
+    "connect-four": {
+      "name": "Véier an enger Rei",
+      "desc": "Looss Scheiwen an d'Kolonne falen a kritt 4 an eng Rei horizontal, vertikal oder diagonal virum Computer; 10 Niveauen vu liicht bis schwéier."
+    },
+    "match-3": {
+      "name": "Dräi zesummen",
+      "desc": "Tausch Séissegkeeten, fir 3 oder méi gläich zesummenzebréngen a Kettereaktiounen auszeléisen; 10 Niveauen mat Zilpunkten a limitéierten Zich."
+    },
+    "brick-breaker": {
+      "name": "Stengbriecher",
+      "desc": "Steier de Paddel a looss de Ball sprangen, fir all d'Steng ze briechen; 10 Etappe mat ënnerschiddleche Layouten, mat Maus, Touch oder Tasten."
     }
   },
   "s": {

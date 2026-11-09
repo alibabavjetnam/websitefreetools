@@ -95,6 +95,18 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Game giải trí | Cờ úp (với máy / online) | `tools/co-up.html` |
 | Game giải trí | Cờ vây (với máy / online) | `tools/go-game.html` |
 | Game giải trí | Ghi nhớ hình và màu | `tools/memory-shapes.html` |
+| Game giải trí | 2048 | `tools/game-2048.html` |
+| Game giải trí | Dò mìn | `tools/minesweeper.html` |
+| Game giải trí | Xếp gạch | `tools/block-puzzle.html` |
+| Game giải trí | Rắn săn mồi | `tools/snake.html` |
+| Game giải trí | Xếp bài Solitaire | `tools/solitaire.html` |
+| Game giải trí | Xếp bài Nhện | `tools/spider-solitaire.html` |
+| Game giải trí | FreeCell | `tools/freecell.html` |
+| Game giải trí | Cờ caro | `tools/gomoku.html` |
+| Game giải trí | Reversi | `tools/reversi.html` |
+| Game giải trí | Nối 4 | `tools/connect-four.html` |
+| Game giải trí | Ghép 3 | `tools/match-3.html` |
+| Game giải trí | Phá gạch | `tools/brick-breaker.html` |
 
 Chơi online (cờ vua, cờ tướng, cờ úp, cờ vây): nước đi chuyển qua broker MQTT công cộng miễn phí (`src/lib/mqtt.ts` tự viết, `src/lib/online.ts`), mã hoá AES-GCM theo từng bàn; bàn công khai lên danh sách "Bàn chờ bạn", bàn riêng mời bằng link `?id=<guid>`; đăng nhập Google thì ván đấu (JSON) lưu vào Drive của người chơi (`WFTools/Games`).
 

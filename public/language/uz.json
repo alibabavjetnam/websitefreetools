@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Raqib pas aytdi. Siz ham pas aytsangiz, o'yin tugaydi va hisoblanadi.",
     "lib.online.modeAi": "Kompyuter bilan o'ynash",
     "lib.online.modeOnline": "Onlayn o'ynash",
-    "share.label": "Ulashish"
+    "share.label": "Ulashish",
+    "lib.arcade.aiNoMove": "Kompyuterda to'g'ri yurish yo'q — navbat sizda.",
+    "lib.arcade.autoFinish": "Avtomatik tugatish",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Tushayotgan bloklar maydoni",
+    "lib.arcade.breakoutBoard": "G'isht sindirish maydoni",
+    "lib.arcade.dealRow": "Yangi qator tarqatish",
+    "lib.arcade.down": "Pastga",
+    "lib.arcade.drawN": "{n} ta olish",
+    "lib.arcade.drop": "Darhol tushirish",
+    "lib.arcade.flagMode": "Bayroqcha rejimi",
+    "lib.arcade.freeCells": "Bo'sh kataklar: {n}",
+    "lib.arcade.left": "Chapga",
+    "lib.arcade.length": "Uzunlik: {n}/{t}",
+    "lib.arcade.lines": "Qatorlar: {n}/{t}",
+    "lib.arcade.minesLeft": "Minalar: {n}",
+    "lib.arcade.moves": "Yurishlar: {n}",
+    "lib.arcade.movesLeft": "{n} ta yurish qoldi",
+    "lib.arcade.mustPass": "Sizda to'g'ri yurish yo'q — navbatni o'tkazasiz.",
+    "lib.arcade.next": "Keyingi shakllar",
+    "lib.arcade.noHint": "Foydali yurish qolmadi. Karta oling, yangi qator tarqating yoki qaytadan boshlang.",
+    "lib.arcade.note.2048": "Barcha plitkalarni surish uchun strelka tugmalaridan foydalaning yoki barmog'ingiz bilan suring. Bir xil sonli ikki plitka tegib ketganda birlashadi. Bosqichdan o'tish uchun maqsadga teng plitka yasang; hech bir plitka siljiy olmasa, yutqazasiz.",
+    "lib.arcade.note.blocks": "Tushayotgan shakllarni burab joylashtirib, gorizontal qatorlarni to'ldiring; to'lgan qatorlar yo'qoladi. ← → siljitish, ↑ burash, ↓ tezroq tushirish, Bo'sh joy darhol tushiradi, P pauza. Bosqichdan o'tish uchun kerakli sondagi qatorni tozalang; shakllar tepaga yetsa, yutqazasiz.",
+    "lib.arcade.note.breakout": "Raketkani boshqarib, to'pni o'yinda ushlab turish uchun sichqonchani yuriting, barmog'ingizni maydonda suring yoki ← → tugmalaridan foydalaning. Bosqichdan o'tish uchun barcha g'ishtlarni sindiring; qalin chegarali g'ishtlarga ikki marta urish kerak. Sizda 3 ta jon bor. Bo'sh joy boshlaydi yoki to'xtatadi.",
+    "lib.arcade.note.connect4": "Siz qizil bilan o'ynaysiz va birinchi yurasiz. Fishka tashlash uchun ustunga bosing; u eng pastdagi bo'sh joyga tushadi. 4 ta fishkani gorizontal, vertikal yoki diagonal birinchi tizgan g'olib bo'ladi.",
+    "lib.arcade.note.freecell": "Barcha kartalar ochiq. 52 ta kartaning hammasini mastiga ko'ra 4 ta asosga A dan K gacha o'tkazing. Stolda ranglarni almashtirib, kamayish tartibida tering. Yuqori chapdagi bo'sh kataklarning har biri bitta kartani saqlaydi; bir vaqtda nechta karta ko'chira olishingiz bo'sh kataklar va bo'sh ustunlarga bog'liq. Yuqori bosqichlarda kataklar kam.",
+    "lib.arcade.note.gomoku": "Siz X bilan o'ynaysiz va birinchi yurasiz; kompyuter O bilan o'ynaydi. Navbatma-navbat 15×15 taxtaning bo'sh nuqtasiga belgi qo'ying. 5 tasini gorizontal, vertikal yoki diagonal birinchi tizgan g'olib bo'ladi.",
+    "lib.arcade.note.klondike": "52 ta kartaning hammasini mastiga ko'ra 4 ta asosga A dan K gacha o'tkazing. Stolda ranglarni almashtirib, kamayish tartibida tering; bo'sh ustunga faqat K qo'yish mumkin. Karta olish uchun yuqori chapdagi yopiq dastaga bosing. Kartaga, so'ng uni qo'ymoqchi bo'lgan joyga bosing yoki u o'zi to'g'ri joyga o'tishi uchun yana bir marta bosing. 1–5 bosqichlar: 1 ta olish; 6–10 bosqichlar: 3 ta olish.",
+    "lib.arcade.note.match3": "Bir xil turdagi 3 yoki undan ortiq elementdan qator hosil qilish uchun qo'shni ikki elementning o'rnini almashtiring (birini, keyin ikkinchisini bosing yoki suring); qator portlaydi va tepadagi elementlar tushadi. Zanjirli reaksiyalar ochkolarni ko'paytiradi. Yurishlar tugamasdan maqsadli ochkoga yeting.",
+    "lib.arcade.note.minesweeper": "Katakni ochish uchun unga bosing. Son atrofdagi 8 ta katakda nechta mina borligini ko'rsatadi. Shubhali minani o'ng tugma, uzoq bosish yoki bayroqcha rejimi bilan belgilang. Atrofida yetarlicha bayroqcha bor songa bosib, qolganlarini tez oching. G'olib bo'lish uchun minasiz barcha kataklarni oching.",
+    "lib.arcade.note.reversi": "Siz qora bilan o'ynaysiz va birinchi yurasiz. Fishkani shunday qo'yingki, bir yoki bir nechta oq fishka u bilan boshqa qora fishka orasida qisilib qolsin (gorizontal, vertikal yoki diagonal); qisilgan fishkalar sizning rangingizga o'giriladi. To'g'ri yurish bo'lmasa, navbatni o'tkazasiz. Taxta to'lganda fishkasi ko'p bo'lgan g'olib bo'ladi.",
+    "lib.arcade.note.snake": "Ilonni strelka tugmalari, WASD, pastdagi tugmalar yoki surish orqali boshqaring. O'sish uchun qizil ovqatni yeng; bosqichdan o'tish uchun kerakli uzunlikka yeting. 3-bosqichdan boshlab devorga urilish o'yinni tugatadi; yuqori bosqichlarda to'siqlar bor. O'z dumingizga urilmang.",
+    "lib.arcade.note.spider": "Stolda har bir mastni K dan A gacha ketma-ketlikka tering; 13 ta kartadan iborat to'liq ketma-ketlik avtomatik olib tashlanadi. Istalgan kartani bir pog'ona yuqori kartaning ustiga qo'yish mumkin, lekin faqat bir xil mastli ketma-ketliklar birga siljiydi. Yo'l topilmasa, Yangi qator tarqatish tugmasini bosing (har bir ustunda karta bo'lishi kerak). 1–3 bosqichlar: bitta mast; 4–7: ikkita; 8–10: to'rtta.",
+    "lib.arcade.pause": "Pauza",
+    "lib.arcade.paused": "Pauzada",
+    "lib.arcade.right": "O'ngga",
+    "lib.arcade.rotate": "Burash",
+    "lib.arcade.score": "Ochko: {n}",
+    "lib.arcade.shuffled": "Yurish qolmagan edi — maydon aralashtirildi.",
+    "lib.arcade.snakeBoard": "Ilon maydoni",
+    "lib.arcade.suitsN": "{n} ta mast",
+    "lib.arcade.target": "Maqsad: {n}",
+    "lib.arcade.up": "Yuqoriga",
+    "lib.arcade.youVsAi": "Siz {a} – Kompyuter {b}",
+    "lib.arcade.noHintFc": "Foydali yurish qolmadi. Bir necha yurishni bekor qiling yoki qaytadan boshlang."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Ko'ngilochar va o'yinlar",
-      "desc": "Omad g'ildiragi, tasodifiy raqamlar generatori, sovrin o'yinlari va qiziqarli o'yinlar."
+      "desc": "Omad g'ildiragi, tasodifiy sonlar va brauzer o'yinlari: sudoku, shaxmat, xitoy shaxmati, gomoku, 2048, minalar, tushayotgan bloklar, ilon, pasyans va g'isht sindirgich."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Yashirin Syangsi",
       "desc": "Vyetnam yashirin Syangsisini o'ynang: donalar yuzi pastga boshlaydi va birinchi yurishdan keyin ochiladi. Kompyuter bilan 10 darajada yoki onlayn do'stlar va yangi raqiblar bilan."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "2048 plitkasini hosil qilish uchun bir xil sonlarni surib birlashtiring; 64 dan 8192 gacha maqsadli 10 bosqich, yurishni bekor qilish bilan."
+    },
+    "minesweeper": {
+      "name": "Minalar",
+      "desc": "Klassik minalar o'yini: kataklarni oching, bayroqcha qo'ying va sonlar orqali minalar qayerdaligini aniqlang; 8x8 dan 18x18 gacha 10 bosqich, telefonda ham ishlaydi."
+    },
+    "block-puzzle": {
+      "name": "Tushayotgan bloklar",
+      "desc": "Qatorlarni tozalash uchun tushayotgan bloklarni burab, taxlang; tezligi oshib boruvchi 10 bosqich, klaviatura yoki sensor tugmalar bilan."
+    },
+    "snake": {
+      "name": "Ilon",
+      "desc": "Ilonni devorlarga va o'z dumiga urilmasdan ovqat yeb o'sishi uchun boshqaring; to'siqli, tobora tezlashuvchi 10 bosqich."
+    },
+    "solitaire": {
+      "name": "Pasyans",
+      "desc": "Klassik Klondayk pasyansi: ranglarni almashtirib kamayish tartibida tering va kartalarni asoslarga A dan K gacha o'tkazing; 1 yoki 3 ta olish, bekor qilish va maslahatlar bilan."
+    },
+    "spider-solitaire": {
+      "name": "O'rgimchak pasyansi",
+      "desc": "1, 2 va 4 mastli O'rgimchak: stoldan olib tashlash uchun bir xil mastli ketma-ketliklarni K dan A gacha tering; bekor qilish va maslahatli 10 bosqich."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell pasyansi: barcha kartalar ochiq; kartalarni asoslarga o'tkazish uchun bo'sh kataklardan foydalaning; kataklari kamayib boruvchi 10 bosqich."
+    },
+    "gomoku": {
+      "name": "Gomoku (qatorda beshta)",
+      "desc": "Kompyuterga qarshi 15x15 taxtada gomoku, qatorda beshta o'ynang; osondan qiyinga 10 bosqich, yurishni bekor qilish bilan."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Raqib fishkalarini qisib, o'z rangingizga o'giring; kompyuterga qarshi 8x8 Reversini 10 bosqichda o'ynang."
+    },
+    "connect-four": {
+      "name": "Qatorda to'rtta",
+      "desc": "Fishkalarni ustunlarga tashlang va kompyuterdan oldin 4 tasini gorizontal, vertikal yoki diagonal tizing; osondan qiyinga 10 bosqich."
+    },
+    "match-3": {
+      "name": "Uchtasini birlashtir",
+      "desc": "Bir xil turdagi 3 yoki undan ortiq konfetni birlashtirib, zanjirli reaksiyalar uchun o'rnini almashtiring; maqsadli ochko va cheklangan yurishli 10 bosqich."
+    },
+    "brick-breaker": {
+      "name": "G'isht sindirgich",
+      "desc": "Raketkani boshqaring va barcha g'ishtlarni sindirish uchun to'pni sakrating; turli joylashuvli 10 bosqich, sichqoncha, sensor yoki tugmalar bilan."
     }
   },
   "s": {

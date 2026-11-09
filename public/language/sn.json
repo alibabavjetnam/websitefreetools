@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Mukwikwidzi apfuura. Kana newe ukapfuura, mutambo unopera wopiwa mamakisi.",
     "lib.online.modeAi": "Tamba nekombiyuta",
     "lib.online.modeOnline": "Tamba pamhepo",
-    "share.label": "Govera"
+    "share.label": "Govera",
+    "lib.arcade.aiNoMove": "Kombiyuta haina danho rakabvumirwa — ndiro jana rako.",
+    "lib.arcade.autoFinish": "Pedzisa ega",
+    "lib.arcade.best": "Rekodhi: {n}",
+    "lib.arcade.blocksBoard": "Bhodhi remabhuroko anowira",
+    "lib.arcade.breakoutBoard": "Nhandare yekupwanya zvidhinha",
+    "lib.arcade.dealRow": "Govera mutsara mutsva",
+    "lib.arcade.down": "Pasi",
+    "lib.arcade.drawN": "Tora {n}",
+    "lib.arcade.drop": "Wisira pakarepo",
+    "lib.arcade.flagMode": "Modhi yemureza",
+    "lib.arcade.freeCells": "Masero asina chinhu: {n}",
+    "lib.arcade.left": "Kuruboshwe",
+    "lib.arcade.length": "Kureba: {n}/{t}",
+    "lib.arcade.lines": "Mitsara: {n}/{t}",
+    "lib.arcade.minesLeft": "Mabhomba: {n}",
+    "lib.arcade.moves": "Matanho: {n}",
+    "lib.arcade.movesLeft": "Masara matanho {n}",
+    "lib.arcade.mustPass": "Hauna danho rakabvumirwa — unopfuura jana rako.",
+    "lib.arcade.next": "Zvidimbu zvinotevera",
+    "lib.arcade.noHint": "Hapana danho rinobatsira rasara. Tora kadhi, govera mutsara mutsva kana kutanga patsva.",
+    "lib.arcade.note.2048": "Shandisa makiyi emiseve kana kukwenya kuti ufambise mataira ese. Mataira maviri ane nhamba imwe chete anobatana kana achibatana. Gadzira taira rakaenzana nechinangwa kuti upfuure danho; kana pasina taira ringafamba, wakundwa.",
+    "lib.arcade.note.blocks": "Tenderedza uye isa zvidimbu zvinowira kuti uzadze mitsara yakatwasuka; mitsara yakazara inonyangarika. ← → fambisa, ↑ tenderedza, ↓ dzikisa nekukurumidza, Nzvimbo inowisira pakarepo, P mira kwechinguva. Bvisa nhamba yemitsara inodiwa kuti upfuure danho; kana zvidimbu zvikasvika kumusoro, wakundwa.",
+    "lib.arcade.note.breakout": "Fambisa mbeva, kweva munwe panhandare kana kushandisa ← → kutungamira pedhi uye kuchengeta bhora richitambwa. Pwanya zvidhinha zvese kuti upfuure danho; zvidhinha zvine mupendero mukobvu zvinoda kurohwa kaviri. Une hupenyu 3. Nzvimbo inotanga kana kumisa.",
+    "lib.arcade.note.connect4": "Iwe unotamba nemutsvuku uye unotanga. Baya koramu kuti uwisire dhisiki; rinowira panzvimbo isina chinhu yakaderera. Anotanga kuronga madhisiki 4 akatwasuka, akamira kana akatsveyama anokunda.",
+    "lib.arcade.note.freecell": "Makadhi ese akavhurika. Endesa makadhi ese 52 kunheyo 4 zvichienderana nerudzi, kubva paA kusvika paK. Patafura, ronga uchidzika uchichinjanisa mavara. Masero asina chinhu kumusoro kuruboshwe rimwe nerimwe rinobata kadhi rimwe; makadhi mangani aunogona kufambisa kamwe chete zvinoenderana nemasero asina chinhu nemakoramu asina chinhu. Madanho epamusoro ane masero mashoma.",
+    "lib.arcade.note.gomoku": "Iwe unotamba neX uye unotanga; kombiyuta inotamba neO. Chinjanai muchiisa chiratidzo panzvimbo isina chinhu pabhodhi re15×15. Anotanga kuwana 5 zvakatevedzana zvakatwasuka, zvakamira kana zvakatsveyama anokunda.",
+    "lib.arcade.note.klondike": "Endesa makadhi ese 52 kunheyo 4 zvichienderana nerudzi, kubva paA kusvika paK. Patafura, ronga uchidzika uchichinjanisa mavara; K chete ndiyo inogona kuenda mukoramu isina chinhu. Baya murwi wakatarisa pasi kumusoro kuruboshwe kuti utore makadhi. Baya kadhi wobva wabaya nzvimbo yaunoda kuriisa, kana kuribaya zvakare kuti riende roga kunzvimbo yakabvumirwa. Madanho 1–5: tora 1; madanho 6–10: tora 3.",
+    "lib.arcade.note.match3": "Chinjana zvidimbu zviviri zvakavakidzana (baya chimwe wobva wabaya chimwe, kana kukwenya) kuti uite mutsara wezvitatu kana kupfuura zvakafanana; mutsara unoputika uye zvidimbu zviri pamusoro zvinowira. Zvinoitika zvakatevedzana zvinowedzera mapoinzi. Svika pamapoinzi echinangwa matanho asati apera.",
+    "lib.arcade.note.minesweeper": "Baya sero kuti urivhure. Nhamba inoratidza kuti mangani mabhomba ari mumasero 8 akaripoteredza. Maka bhomba raunofungira nekudzvanya kurudyi, kudzvanya kwenguva refu kana modhi yemureza. Baya nhamba yatova nemireza yakakwana yakaipoteredza kuti uvhure mamwe nekukurumidza. Vhura masero ese asina bhomba kuti ukunde.",
+    "lib.arcade.note.reversi": "Iwe unotamba nemutema uye unotanga. Isa dhisiki zvekuti rivharire dhisiki chena rimwe kana kupfuura pakati paro nerimwe dhisiki dema (zvakatwasuka, zvakamira kana zvakatsveyama); madhisiki akavharirwa anochinja kuita ruvara rwako. Kana usina danho rakabvumirwa, unopfuura jana rako. Bhodhi pakazara, ane madhisiki akawanda anokunda.",
+    "lib.arcade.note.snake": "Tungamira nyoka nemakiyi emiseve, WASD, mabhatani ari pasi kana nekukwenya. Idya chikafu chitsvuku kuti ukure; svika pakureba kunodiwa kuti upfuure danho. Kubva padanho 3, kurovera madziro kunopedza mutambo; madanho epamusoro ane zvipingamupinyi. Usarovera muswe wako.",
+    "lib.arcade.note.spider": "Patafura, ronga rudzi rwega rwega kuita mutsetse kubva paK kusvika paA; mutsetse wakazara wemakadhi 13 unobviswa woga. Chero kadhi rinogona kuiswa pakadhi riri pamusoro nedanho rimwe, asi mitsetse yerudzi rumwe chete ndiyo inofamba pamwe chete. Kana wakanamatira, baya Govera mutsara mutsva (koramu yega yega inofanira kuva nemakadhi). Madanho 1–3: rudzi rumwe; 4–7: mbiri; 8–10: ina.",
+    "lib.arcade.pause": "Mira kwechinguva",
+    "lib.arcade.paused": "Yakamiswa",
+    "lib.arcade.right": "Kurudyi",
+    "lib.arcade.rotate": "Tenderedza",
+    "lib.arcade.score": "Mapoinzi: {n}",
+    "lib.arcade.shuffled": "Pakanga pasisina matanho — bhodhi rasanganiswa patsva.",
+    "lib.arcade.snakeBoard": "Nhandare yenyoka",
+    "lib.arcade.suitsN": "marudzi {n}",
+    "lib.arcade.target": "Chinangwa: {n}",
+    "lib.arcade.up": "Kumusoro",
+    "lib.arcade.youVsAi": "Iwe {a} – Kombiyuta {b}",
+    "lib.arcade.noHintFc": "Hapana danho rinobatsira rasara. Dzosera matanho mashoma kana kutanga patsva."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Varaidzo nemitambo",
-      "desc": "Vhiri reunamato, jenareta yenhamba dzisina ruzivo, kuendesa mazano emigove nemitambo inonakidza."
+      "desc": "Vhiri remhanza, nhamba dzisina kurongwa nemitambo yebhurawuza: Sudoku, chess, chess yeChina, Gomoku, 2048, mutsvaga mabhomba, mabhuroko anowira, nyoka, solitaire nemupwanyi wezvidhinha."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi yakavanzika",
       "desc": "Tamba Xiangqi yakavanzika yekuVietnam: zvidimbu zvinotanga zvakatarisa pasi uye zvinopidigurwa mushure mekufamba kwekutanga. Nekombiyuta pamatanho gumi kana pamhepo neshamwari nevakwikwidzi vatsva."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Kwenya uye batanidza nhamba dzakafanana kusvika pataira re2048; madanho 10 ane zvinangwa kubva pa64 kusvika pa8192, nekudzosera."
+    },
+    "minesweeper": {
+      "name": "Mutsvaga mabhomba",
+      "desc": "Mutambo wekare wekutsvaga mabhomba: vhura masero, isa mireza uye shandisa nhamba kuziva kuti mabhomba aripi; madanho 10 kubva pa8x8 kusvika pa18x18, inoshanda parunhare."
+    },
+    "block-puzzle": {
+      "name": "Mabhuroko anowira",
+      "desc": "Tenderedza uye unganidza mabhuroko anowira kuti ubvise mitsara; madanho 10 anowedzera kumhanya, nekhibhodi kana mabhatani ekubata."
+    },
+    "snake": {
+      "name": "Nyoka",
+      "desc": "Tungamira nyoka kuti idye ikure isingarovere madziro kana muswe wayo; madanho 10 anokurumidza ane zvipingamupinyi."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klondike Solitaire yekare: ronga uchidzika uchichinjanisa mavara uye endesa makadhi kunheyo kubva paA kusvika paK; tora 1 kana 3, nekudzosera nemazano."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire yeDandemutande",
+      "desc": "Dandemutande rine marudzi 1, 2 ne4: gadzira mitsetse yerudzi rumwe kubva paK kusvika paA kuti uibvise patafura; madanho 10 ane kudzosera nemazano."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: makadhi ese akavhurika; shandisa masero asina chinhu kuendesa makadhi kunheyo; madanho 10 ane masero anoderera."
+    },
+    "gomoku": {
+      "name": "Gomoku (mashanu akatevedzana)",
+      "desc": "Tamba Gomoku, mashanu akatevedzana, uchipikisana nekombiyuta pabhodhi re15x15; madanho 10 kubva pakureruka kusvika pakuoma, nekudzosera."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Vharira madhisiki emupikisi wako kuti achinje kuita ruvara rwako; tamba Reversi ye8x8 uchipikisana nekombiyuta mumadanho 10."
+    },
+    "connect-four": {
+      "name": "Mana Akatevedzana",
+      "desc": "Wisira madhisiki mumakoramu uye ronga 4 akatwasuka, akamira kana akatsveyama kombiyuta isati yadaro; madanho 10 kubva pakureruka kusvika pakuoma."
+    },
+    "match-3": {
+      "name": "Batanidza 3",
+      "desc": "Chinjana maswiti kuti ubatanidze 3 kana kupfuura akafanana uye utange zvinoitika zvakatevedzana; madanho 10 ane mapoinzi echinangwa nematanho mashoma."
+    },
+    "brick-breaker": {
+      "name": "Mupwanyi wezvidhinha",
+      "desc": "Tungamira pedhi uye svetesa bhora kuti upwanye zvidhinha zvese; zvikamu 10 zvine marongerwo akasiyana, nembeva, kubata kana makiyi."
     }
   },
   "s": {

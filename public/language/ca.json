@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "El rival ha passat. Si tu també passes, la partida acaba i es compta.",
     "lib.online.modeAi": "Juga contra l'ordinador",
     "lib.online.modeOnline": "Juga en línia",
-    "share.label": "Comparteix"
+    "share.label": "Comparteix",
+    "lib.arcade.aiNoMove": "L'ordinador no té cap jugada vàlida: et toca a tu.",
+    "lib.arcade.autoFinish": "Puja-ho tot",
+    "lib.arcade.best": "Rècord: {n}",
+    "lib.arcade.blocksBoard": "Tauler de blocs que cauen",
+    "lib.arcade.breakoutBoard": "Camp de trencamaons",
+    "lib.arcade.dealRow": "Reparteix una fila",
+    "lib.arcade.down": "Avall",
+    "lib.arcade.drawN": "Roba'n {n}",
+    "lib.arcade.drop": "Deixa caure",
+    "lib.arcade.flagMode": "Mode bandera",
+    "lib.arcade.freeCells": "Cel·les lliures: {n}",
+    "lib.arcade.left": "Esquerra",
+    "lib.arcade.length": "Longitud: {n}/{t}",
+    "lib.arcade.lines": "Línies: {n}/{t}",
+    "lib.arcade.minesLeft": "Mines: {n}",
+    "lib.arcade.moves": "Jugades: {n}",
+    "lib.arcade.movesLeft": "Queden {n} jugades",
+    "lib.arcade.mustPass": "No tens cap jugada vàlida: passes torn.",
+    "lib.arcade.next": "Peces següents",
+    "lib.arcade.noHint": "No queda cap jugada útil. Roba una carta, reparteix una fila o torna a començar.",
+    "lib.arcade.note.2048": "Fes servir les fletxes o llisca per moure totes les fitxes. Dues fitxes amb el mateix número s'uneixen quan es toquen. Fes una fitxa igual a l'objectiu per superar el nivell; si ja no es mou res, perds.",
+    "lib.arcade.note.blocks": "Gira i col·loca les peces que cauen per completar línies horitzontals; les línies plenes desapareixen. ← → per moure, ↑ per girar, ↓ per baixar més ràpid, Espai per deixar caure, P per fer pausa. Esborra les línies que calen per superar el nivell; si les peces arriben a dalt, perds.",
+    "lib.arcade.note.breakout": "Mou el ratolí, arrossega el dit pel camp o fes servir ← → per moure la pala i que la pilota no caigui. Trenca tots els maons per superar el nivell; els de vora gruixuda necessiten dos cops. Tens 3 vides. Espai per començar o fer pausa.",
+    "lib.arcade.note.connect4": "Jugues amb vermell i comences tu. Toca una columna per deixar-hi caure una fitxa; cau al forat lliure més baix. Guanya qui alinea primer 4 fitxes en horitzontal, vertical o diagonal.",
+    "lib.arcade.note.freecell": "Totes les cartes són a la vista. Porta les 52 cartes a les 4 piles base per pal, de l'A a la K. A la taula, apila en ordre descendent alternant colors. Les cel·les lliures de dalt a l'esquerra guarden una carta cadascuna; quantes cartes pots moure alhora depèn de les cel·les i columnes buides. Els nivells alts tenen menys cel·les.",
+    "lib.arcade.note.gomoku": "Jugues amb la X i comences tu; l'ordinador juga amb la O. Per torns poseu una marca en un punt lliure del tauler de 15×15. Guanya qui fa primer 5 en línia en horitzontal, vertical o diagonal.",
+    "lib.arcade.note.klondike": "Porta les 52 cartes a les 4 piles base per pal, de l'A a la K. A la taula, apila en ordre descendent alternant colors; només una K pot anar a una columna buida. Toca el munt cap per avall de dalt a l'esquerra per robar. Toca una carta i després on la vols posar, o torna-la a tocar perquè vagi sola a un lloc vàlid. Nivells 1–5: robar 1; nivells 6–10: robar 3.",
+    "lib.arcade.note.match3": "Intercanvia dues peces veïnes (tocant-ne una i després l'altra, o lliscant) per fer una línia de 3 o més d'iguals; la línia esclata i les peces de dalt cauen. Les reaccions en cadena multipliquen els punts. Arriba a la puntuació objectiu abans que s'acabin les jugades.",
+    "lib.arcade.note.minesweeper": "Toca una casella per obrir-la. El número indica quantes mines hi ha a les 8 caselles del voltant. Marca una casella sospitosa amb clic dret, pulsació llarga o el mode bandera. Toca un número que ja tingui prou banderes al voltant per obrir ràpidament la resta. Obre totes les caselles sense mina per guanyar.",
+    "lib.arcade.note.reversi": "Jugues amb negres i comences tu. Col·loca una fitxa de manera que tanquis una o més fitxes blanques entre ella i una altra negra (en horitzontal, vertical o diagonal); les fitxes tancades passen al teu color. Si no tens cap jugada vàlida, passes. Amb el tauler ple, guanya qui té més fitxes.",
+    "lib.arcade.note.snake": "Dirigeix la serp amb les fletxes, WASD, els botons de sota o lliscant. Menja el menjar vermell per créixer; arriba a la longitud necessària per superar el nivell. A partir del nivell 3, xocar amb la paret fa perdre; els nivells alts tenen obstacles. No et mosseguis la cua.",
+    "lib.arcade.note.spider": "Forma a la taula una escala de cada pal de la K a l'A; les escales completes de 13 cartes es retiren soles. Qualsevol carta pot anar sobre una altra un punt més alta, però només les escales del mateix pal es mouen juntes. Si t'encalles, toca Reparteix una fila (totes les columnes han de tenir cartes). Nivells 1–3: un pal; 4–7: dos; 8–10: quatre.",
+    "lib.arcade.pause": "Pausa",
+    "lib.arcade.paused": "En pausa",
+    "lib.arcade.right": "Dreta",
+    "lib.arcade.rotate": "Gira",
+    "lib.arcade.score": "Punts: {n}",
+    "lib.arcade.shuffled": "No quedaven jugades: s'ha barrejat el tauler.",
+    "lib.arcade.snakeBoard": "Camp de la serp",
+    "lib.arcade.suitsN": "{n} pals",
+    "lib.arcade.target": "Objectiu: {n}",
+    "lib.arcade.up": "Amunt",
+    "lib.arcade.youVsAi": "Tu {a} – Ordinador {b}",
+    "lib.arcade.noHintFc": "No queden moviments útils. Desfés alguns moviments o torna a començar."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Entreteniment i jocs",
-      "desc": "Ruleta de la sort, generador de nombres aleatoris, sortejos de premis i jocs divertits."
+      "desc": "Roda de la sort, nombres aleatoris i jocs al navegador: sudoku, escacs, escacs xinesos, gomoku, 2048, pescamines, blocs, serp, solitari i trencamaons."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi ocult",
       "desc": "Juga al Xiangqi ocult vietnamita: les peces comencen cap per avall i es giren després de la primera jugada. Contra l'ordinador en 10 nivells o en línia amb amics i rivals nous."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Llisca i uneix números iguals fins a formar la fitxa 2048; 10 nivells amb objectius de 64 a 8192, amb desfer."
+    },
+    "minesweeper": {
+      "name": "Pescamines",
+      "desc": "El pescamines clàssic: obre caselles, posa banderes i dedueix on són les mines a partir dels números; 10 nivells de 8x8 a 18x18, també al mòbil."
+    },
+    "block-puzzle": {
+      "name": "Blocs que cauen",
+      "desc": "Gira i apila els blocs que cauen per esborrar línies; 10 nivells cada cop més ràpids, amb teclat o botons tàctils."
+    },
+    "snake": {
+      "name": "La serp",
+      "desc": "Guia la serp perquè mengi i creixi, evitant les parets i la seva cua; 10 nivells més ràpids amb obstacles."
+    },
+    "solitaire": {
+      "name": "Solitari",
+      "desc": "El solitari Klondike clàssic: apila alternant colors i puja les cartes a les piles base de l'A a la K; robar 1 o 3, amb desfer i pistes."
+    },
+    "spider-solitaire": {
+      "name": "Solitari Aranya",
+      "desc": "Aranya d'1, 2 i 4 pals: forma escales del mateix pal de la K a l'A per treure-les de la taula; 10 nivells amb desfer i pistes."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitari FreeCell: totes les cartes a la vista; fes servir les cel·les lliures per pujar les cartes a les piles base; 10 nivells amb cada cop menys cel·les."
+    },
+    "gomoku": {
+      "name": "Gomoku (cinc en línia)",
+      "desc": "Juga al gomoku, cinc en línia, contra l'ordinador en un tauler de 15x15; 10 nivells de fàcil a difícil, amb desfer."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Tanca les fitxes del rival per girar-les al teu color; juga al Reversi 8x8 contra l'ordinador en 10 nivells."
+    },
+    "connect-four": {
+      "name": "Quatre en línia",
+      "desc": "Deixa caure fitxes a les columnes i alinea'n 4 en horitzontal, vertical o diagonal abans que l'ordinador; 10 nivells de fàcil a difícil."
+    },
+    "match-3": {
+      "name": "Combina 3",
+      "desc": "Intercanvia caramels per ajuntar-ne 3 o més d'iguals i provocar reaccions en cadena; 10 nivells amb puntuació objectiu i jugades limitades."
+    },
+    "brick-breaker": {
+      "name": "Trencamaons",
+      "desc": "Mou la pala i fes rebotar la pilota per trencar tots els maons; 10 fases amb formes diferents, amb ratolí, pantalla tàctil o teclat."
     }
   },
   "s": {

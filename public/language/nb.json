@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Motstanderen passet. Passer du også, slutter partiet og telles opp.",
     "lib.online.modeAi": "Spill mot datamaskinen",
     "lib.online.modeOnline": "Spill på nett",
-    "share.label": "Del"
+    "share.label": "Del",
+    "lib.arcade.aiNoMove": "Datamaskinen har ingen gyldige trekk – din tur.",
+    "lib.arcade.autoFinish": "Legg opp alt",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Brett med fallende blokker",
+    "lib.arcade.breakoutBoard": "Bane for murknusing",
+    "lib.arcade.dealRow": "Del ut en ny rad",
+    "lib.arcade.down": "Ned",
+    "lib.arcade.drawN": "Trekk {n}",
+    "lib.arcade.drop": "Slipp rett ned",
+    "lib.arcade.flagMode": "Flaggmodus",
+    "lib.arcade.freeCells": "Frie celler: {n}",
+    "lib.arcade.left": "Venstre",
+    "lib.arcade.length": "Lengde: {n}/{t}",
+    "lib.arcade.lines": "Rader: {n}/{t}",
+    "lib.arcade.minesLeft": "Miner: {n}",
+    "lib.arcade.moves": "Trekk: {n}",
+    "lib.arcade.movesLeft": "{n} trekk igjen",
+    "lib.arcade.mustPass": "Du har ingen gyldige trekk – du står over.",
+    "lib.arcade.next": "Neste blokker",
+    "lib.arcade.noHint": "Ingen nyttige trekk igjen. Trekk et kort, del ut en ny rad eller start på nytt.",
+    "lib.arcade.note.2048": "Bruk piltastene eller sveip for å skyve alle brikkene. To brikker med samme tall smelter sammen når de møtes. Lag en brikke som når målet for å klare nivået; går ingenting å flytte, har du tapt.",
+    "lib.arcade.note.blocks": "Drei og plasser de fallende blokkene så vannrette rader blir fylt; fulle rader forsvinner. ← → flytter, ↑ dreier, ↓ faller raskere, mellomrom slipper rett ned, P pauser. Fjern så mange rader som kreves for å klare nivået; når blokkene toppen, har du tapt.",
+    "lib.arcade.note.breakout": "Beveg musen, dra fingeren over banen eller bruk ← → for å styre racketen og holde ballen i spill. Knus alle mursteinene for å klare nivået; steiner med tykk kant må treffes to ganger. Du har 3 liv. Mellomrom starter eller pauser.",
+    "lib.arcade.note.connect4": "Du spiller rød og begynner. Trykk på en kolonne for å slippe en brikke; den faller ned på den laveste ledige plassen. Den som først får 4 på rad vannrett, loddrett eller diagonalt, vinner.",
+    "lib.arcade.note.freecell": "Alle kortene ligger med forsiden opp. Flytt alle 52 kort til de 4 grunnbunkene etter farge, fra A til K. På bordet legges kortene i synkende rekkefølge med vekslende rødt og svart. De frie cellene oppe til venstre rommer ett kort hver; hvor mange kort du kan flytte samtidig, avhenger av frie celler og tomme kolonner. Høyere nivåer har færre frie celler.",
+    "lib.arcade.note.gomoku": "Du spiller X og begynner; datamaskinen spiller O. Dere setter et merke etter tur på et ledig punkt på 15×15-brettet. Den som først får 5 på rad vannrett, loddrett eller diagonalt, vinner.",
+    "lib.arcade.note.klondike": "Flytt alle 52 kort til de 4 grunnbunkene etter farge, fra A til K. På bordet legges kortene i synkende rekkefølge med vekslende rødt og svart; bare en K kan legges i en tom kolonne. Trykk på den nedvendte bunken oppe til venstre for å trekke kort. Trykk på et kort og så der du vil legge det, eller trykk på kortet igjen så flytter det seg selv til en gyldig plass. Nivå 1–5 trekker 1 kort, nivå 6–10 trekker 3.",
+    "lib.arcade.note.match3": "Bytt plass på to nabobiter (trykk på dem etter hverandre eller sveip) for å lage en rad med 3 eller flere like; raden sprekker og bitene over faller ned. Kjedereaksjoner ganger poengene. Nå målpoengene før trekkene tar slutt.",
+    "lib.arcade.note.minesweeper": "Trykk på en rute for å åpne den. Tallet viser hvor mange miner som ligger i de 8 rutene rundt. Sett flagg på mistenkelige ruter med høyreklikk, langt trykk eller flaggmodus. Trykk på et tall som allerede har nok flagg rundt seg for å åpne resten raskt. Åpne alle ruter uten miner for å vinne.",
+    "lib.arcade.note.reversi": "Du spiller svart og begynner. Legg en brikke slik at du stenger inne én eller flere hvite brikker mellom den og en annen svart (vannrett, loddrett eller diagonalt); de innestengte brikkene snus til din farge. Har du ingen gyldige trekk, står du over. Når brettet er fullt, vinner den med flest brikker.",
+    "lib.arcade.note.snake": "Styr slangen med piltastene, WASD, knappene under eller ved å sveipe. Spis den røde maten for å vokse; nå lengden som kreves for å klare nivået. Fra nivå 3 taper du hvis du treffer veggen; høyere nivåer har hindringer. Ikke bit deg selv i halen.",
+    "lib.arcade.note.spider": "Bygg hver farge til en rekke fra K ned til A på bordet; komplette rekker på 13 kort fjernes automatisk. Hvilket som helst kort kan legges på et kort som er én høyere, men bare rekker i samme farge kan flyttes sammen. Står du fast, trykk på Del ut en ny rad (alle kolonner må ha kort). Nivå 1–3 én farge, 4–7 to, 8–10 fire.",
+    "lib.arcade.pause": "Pause",
+    "lib.arcade.paused": "På pause",
+    "lib.arcade.right": "Høyre",
+    "lib.arcade.rotate": "Drei",
+    "lib.arcade.score": "Poeng: {n}",
+    "lib.arcade.shuffled": "Ingen trekk igjen – brettet er stokket på nytt.",
+    "lib.arcade.snakeBoard": "Bane for slangen",
+    "lib.arcade.suitsN": "{n} farger",
+    "lib.arcade.target": "Mål: {n}",
+    "lib.arcade.up": "Opp",
+    "lib.arcade.youVsAi": "Du {a} – Datamaskin {b}",
+    "lib.arcade.noHintFc": "Ingen nyttige trekk igjen. Angre noen trekk eller start på nytt."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Moro og spill",
-      "desc": "Lykkehjul, tilfeldig tallgenerator, premietrekning og morsomme spill."
+      "desc": "Lykkehjul, tilfeldige tall og nettleserspill: sudoku, sjakk, kinesisk sjakk, gomoku, 2048, minesveiper, fallende blokker, slange, kabal og murknuser."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Skjult Xiangqi",
       "desc": "Spill vietnamesisk skjult Xiangqi: brikkene starter med baksiden opp og snus etter første trekk. Mot datamaskinen på 10 nivåer eller på nett med venner og nye motstandere."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Skyv og slå sammen like tall til brikken 2048 dukker opp; 10 nivåer med mål fra 64 til 8192, med angre."
+    },
+    "minesweeper": {
+      "name": "Minesveiper",
+      "desc": "Klassisk minesveiper: åpne ruter, sett flagg og finn ut ut fra tallene hvor minene ligger; 10 nivåer fra 8x8 til 18x18, fungerer også på mobil."
+    },
+    "block-puzzle": {
+      "name": "Fallende blokker",
+      "desc": "Drei og stable fallende blokker for å fjerne rader; 10 stadig raskere nivåer, spill med tastatur eller berøringsknapper."
+    },
+    "snake": {
+      "name": "Slangespill",
+      "desc": "Styr slangen til maten så den vokser, og unngå vegger og din egen hale; 10 raskere nivåer med hindringer."
+    },
+    "solitaire": {
+      "name": "Kabal",
+      "desc": "Klassisk Klondike-kabal: legg kortene i vekslende farger og flytt dem til grunnbunkene fra A til K; trekk 1 eller 3, med angre og tips."
+    },
+    "spider-solitaire": {
+      "name": "Edderkoppkabal",
+      "desc": "Edderkopp med 1, 2 og 4 farger: bygg rekker i samme farge fra K til A for å fjerne dem fra bordet; 10 nivåer med angre og tips."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-kabal: alle kortene med forsiden opp; bruk de frie cellene for å legge opp kortene; 10 nivåer med stadig færre frie celler."
+    },
+    "gomoku": {
+      "name": "Gomoku (fem på rad)",
+      "desc": "Spill gomoku, fem på rad, mot datamaskinen på et 15x15-brett; 10 nivåer fra lett til vanskelig, med angre."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Steng inne motstanderens brikker for å snu dem til din farge; spill 8x8-Reversi mot datamaskinen i 10 nivåer."
+    },
+    "connect-four": {
+      "name": "Fire på rad",
+      "desc": "Slipp brikker i kolonnene og få 4 på rad vannrett, loddrett eller diagonalt før datamaskinen; 10 nivåer fra lett til vanskelig."
+    },
+    "match-3": {
+      "name": "Tre på rad",
+      "desc": "Bytt plass på godteri for å matche 3 eller flere like og starte kjedereaksjoner; 10 nivåer med målpoeng og begrenset antall trekk."
+    },
+    "brick-breaker": {
+      "name": "Murknuser",
+      "desc": "Styr racketen og la ballen sprette for å knuse alle mursteinene; 10 baner med ulike mønstre, med mus, berøring eller taster."
     }
   },
   "s": {

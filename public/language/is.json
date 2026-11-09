@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Andstæðingurinn sagði pass. Ef þú segir líka pass lýkur skákinni og er talin.",
     "lib.online.modeAi": "Spila við tölvuna",
     "lib.online.modeOnline": "Spila á netinu",
-    "share.label": "Deila"
+    "share.label": "Deila",
+    "lib.arcade.aiNoMove": "Tölvan á engan löglegan leik — þú átt leik.",
+    "lib.arcade.autoFinish": "Klára sjálfkrafa",
+    "lib.arcade.best": "Met: {n}",
+    "lib.arcade.blocksBoard": "Borð með fallandi kubbum",
+    "lib.arcade.breakoutBoard": "Völlur til að brjóta múrsteina",
+    "lib.arcade.dealRow": "Gefa nýja röð",
+    "lib.arcade.down": "Niður",
+    "lib.arcade.drawN": "Draga {n}",
+    "lib.arcade.drop": "Sleppa strax",
+    "lib.arcade.flagMode": "Fánahamur",
+    "lib.arcade.freeCells": "Lausir reitir: {n}",
+    "lib.arcade.left": "Vinstri",
+    "lib.arcade.length": "Lengd: {n}/{t}",
+    "lib.arcade.lines": "Línur: {n}/{t}",
+    "lib.arcade.minesLeft": "Sprengjur: {n}",
+    "lib.arcade.moves": "Leikir: {n}",
+    "lib.arcade.movesLeft": "{n} leikir eftir",
+    "lib.arcade.mustPass": "Þú átt engan löglegan leik — þú segir pass.",
+    "lib.arcade.next": "Næstu kubbar",
+    "lib.arcade.noHint": "Enginn gagnlegur leikur eftir. Dragðu spil, gefðu nýja röð eða byrjaðu upp á nýtt.",
+    "lib.arcade.note.2048": "Notaðu örvatakkana eða strjúktu til að renna öllum flísunum. Tvær flísar með sömu tölu renna saman þegar þær snertast. Búðu til flís sem jafngildir markmiðinu til að klára borðið; ef engin flís getur hreyfst tapar þú.",
+    "lib.arcade.note.blocks": "Snúðu og raðaðu fallandi kubbunum til að fylla láréttar línur; fullar línur hverfa. ← → færa, ↑ snúa, ↓ falla hraðar, Bilslá sleppir strax, P gerir hlé. Hreinsaðu tilskilinn fjölda lína til að klára borðið; ef kubbarnir ná upp tapar þú.",
+    "lib.arcade.note.breakout": "Hreyfðu músina, dragðu fingurinn yfir völlinn eða notaðu ← → til að stýra spaðanum og halda boltanum í leik. Brjóttu alla múrsteina til að klára borðið; múrsteinar með þykkum ramma þurfa tvö högg. Þú hefur 3 líf. Bilslá byrjar eða gerir hlé.",
+    "lib.arcade.note.connect4": "Þú spilar rauðu og byrjar. Pikkaðu á dálk til að sleppa skífu; hún fellur í neðsta lausa reitinn. Sá vinnur sem fyrstur raðar 4 skífum lárétt, lóðrétt eða á ská.",
+    "lib.arcade.note.freecell": "Öll spil snúa upp. Færðu öll 52 spilin á 4 grunnana eftir sortum, frá A til K. Á borðinu raðar þú niður á við með víxluðum litum. Lausu reitirnir efst til vinstri geyma eitt spil hver; hve mörg spil má færa í einu fer eftir lausum reitum og tómum dálkum. Hærri borð hafa færri reiti.",
+    "lib.arcade.note.gomoku": "Þú spilar X og byrjar; tölvan spilar O. Þið setjið til skiptis merki á lausan punkt á 15×15 borðinu. Sá vinnur sem fyrstur nær 5 í röð lárétt, lóðrétt eða á ská.",
+    "lib.arcade.note.klondike": "Færðu öll 52 spilin á 4 grunnana eftir sortum, frá A til K. Á borðinu raðar þú niður á við með víxluðum litum; aðeins K má fara í tóman dálk. Pikkaðu á bunkann efst til vinstri til að draga spil. Pikkaðu á spil og svo á staðinn sem það á að fara á, eða pikkaðu aftur á það til að það fari sjálft á löglegan stað. Borð 1–5: draga 1; borð 6–10: draga 3.",
+    "lib.arcade.note.match3": "Víxlaðu tveimur nágrannakubbum (pikkaðu á annan og svo hinn, eða strjúktu) til að mynda röð af 3 eða fleiri eins; röðin springur og kubbarnir fyrir ofan falla niður. Keðjuverkanir margfalda stigin. Náðu markstigunum áður en leikirnir klárast.",
+    "lib.arcade.note.minesweeper": "Pikkaðu á reit til að opna hann. Talan sýnir hve margar sprengjur eru í 8 reitunum umhverfis. Merktu grunaða sprengju með hægrismelli, löngu pikki eða fánaham. Pikkaðu á tölu sem hefur þegar nógu marga fána í kring til að opna hina í hvelli. Opnaðu alla reiti án sprengju til að vinna.",
+    "lib.arcade.note.reversi": "Þú spilar svörtu og byrjar. Settu skífu þannig að hún króar eina eða fleiri hvítar skífur á milli sín og annarrar svartrar skífu (lárétt, lóðrétt eða á ská); króuðu skífurnar snúast í þinn lit. Ef þú átt engan löglegan leik segir þú pass. Þegar borðið er fullt vinnur sá sem á fleiri skífur.",
+    "lib.arcade.note.snake": "Stýrðu snáknum með örvatökkunum, WASD, hnöppunum hér fyrir neðan eða með því að strjúka. Borðaðu rauða matinn til að stækka; náðu tilskilinni lengd til að klára borðið. Frá borði 3 lýkur leiknum ef þú lendir á vegg; hærri borð hafa hindranir. Ekki rekast á þitt eigið skott.",
+    "lib.arcade.note.spider": "Raðaðu hverri sort í röð frá K niður í A á borðinu; heil 13 spila röð fjarlægist sjálfkrafa. Hvaða spil sem er má fara á spil sem er einu hærra, en aðeins raðir í sömu sort færast saman. Ef þú festist, pikkaðu á Gefa nýja röð (allir dálkar verða að hafa spil). Borð 1–3: ein sort; 4–7: tvær; 8–10: fjórar.",
+    "lib.arcade.pause": "Hlé",
+    "lib.arcade.paused": "Í hléi",
+    "lib.arcade.right": "Hægri",
+    "lib.arcade.rotate": "Snúa",
+    "lib.arcade.score": "Stig: {n}",
+    "lib.arcade.shuffled": "Engir leikir voru eftir — borðið var stokkað.",
+    "lib.arcade.snakeBoard": "Völlur snáksins",
+    "lib.arcade.suitsN": "{n} sortir",
+    "lib.arcade.target": "Markmið: {n}",
+    "lib.arcade.up": "Upp",
+    "lib.arcade.youVsAi": "Þú {a} – Tölva {b}",
+    "lib.arcade.noHintFc": "Enginn gagnlegur leikur eftir. Afturkallaðu nokkra leiki eða byrjaðu upp á nýtt."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Afþreying og leikir",
-      "desc": "Lukkuhjól, handahófskenndur talnaframleiðandi, útdráttur verðlauna og skemmtilegir leikir."
+      "desc": "Lukkuhjól, slembitölur og vafraleikir: Sudoku, skák, kínversk skák, Gomoku, 2048, sprengjuleit, fallandi kubbar, snákur, kapall og múrsteinabrjótur."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Falið Xiangqi",
       "desc": "Spilaðu víetnamskt falið Xiangqi: taflmennirnir byrja á hvolfi og snúast við eftir fyrsta leik. Við tölvuna á 10 stigum eða á netinu með vinum og nýjum andstæðingum."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Renndu og sameinaðu eins tölur upp í 2048 flísina; 10 borð með markmiðum frá 64 upp í 8192, með afturkalla."
+    },
+    "minesweeper": {
+      "name": "Sprengjuleit",
+      "desc": "Klassísk sprengjuleit: opnaðu reiti, settu fána og finndu út frá tölunum hvar sprengjurnar eru; 10 borð frá 8x8 upp í 18x18, virkar líka í síma."
+    },
+    "block-puzzle": {
+      "name": "Fallandi kubbar",
+      "desc": "Snúðu og staflaðu fallandi kubbum til að hreinsa línur; 10 sífellt hraðari borð, með lyklaborði eða snertihnöppum."
+    },
+    "snake": {
+      "name": "Snákur",
+      "desc": "Stýrðu snáknum til að borða og stækka án þess að lenda á veggjum eða eigin skotti; 10 hraðari borð með hindrunum."
+    },
+    "solitaire": {
+      "name": "Kapall",
+      "desc": "Klassískur Klondike-kapall: raðaðu með víxluðum litum og færðu spil á grunnana frá A til K; draga 1 eða 3, með afturkalla og vísbendingum."
+    },
+    "spider-solitaire": {
+      "name": "Köngulóarkapall",
+      "desc": "Köngulóarkapall með 1, 2 og 4 sortum: myndaðu raðir í sömu sort frá K til A til að fjarlægja þær; 10 borð með afturkalla og vísbendingum."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-kapall: öll spil snúa upp; notaðu lausu reitina til að færa spil á grunnana; 10 borð með sífellt færri reitum."
+    },
+    "gomoku": {
+      "name": "Gomoku (fimm í röð)",
+      "desc": "Spilaðu Gomoku, fimm í röð, gegn tölvunni á 15x15 borði; 10 borð frá léttu til erfiðs, með afturkalla."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Króaðu skífur andstæðingsins til að snúa þeim í þinn lit; spilaðu 8x8 Reversi gegn tölvunni í 10 borðum."
+    },
+    "connect-four": {
+      "name": "Fjórir í röð",
+      "desc": "Slepptu skífum í dálka og raðaðu 4 lárétt, lóðrétt eða á ská á undan tölvunni; 10 borð frá léttu til erfiðs."
+    },
+    "match-3": {
+      "name": "Paraðu 3",
+      "desc": "Víxlaðu sælgæti til að para 3 eða fleiri eins og hrinda af stað keðjuverkunum; 10 borð með markstigum og takmörkuðum leikjum."
+    },
+    "brick-breaker": {
+      "name": "Múrsteinabrjótur",
+      "desc": "Stýrðu spaðanum og láttu boltann skoppa til að brjóta alla múrsteina; 10 borð með mismunandi uppröðun, með mús, snertingu eða lyklum."
     }
   },
   "s": {

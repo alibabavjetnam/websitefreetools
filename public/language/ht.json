@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Advèsè a pase. Si ou pase tou, jwèt la fini epi yo konte.",
     "lib.online.modeAi": "Jwe kont òdinatè",
     "lib.online.modeOnline": "Jwe sou entènèt",
-    "share.label": "Pataje"
+    "share.label": "Pataje",
+    "lib.arcade.aiNoMove": "Òdinatè a pa gen okenn kou ki valab — se tou pa w.",
+    "lib.arcade.autoFinish": "Fini otomatikman",
+    "lib.arcade.best": "Rekò: {n}",
+    "lib.arcade.blocksBoard": "Tablo blòk k ap tonbe",
+    "lib.arcade.breakoutBoard": "Teren pou kraze brik",
+    "lib.arcade.dealRow": "Distribye yon nouvo ranje",
+    "lib.arcade.down": "Anba",
+    "lib.arcade.drawN": "Rale {n}",
+    "lib.arcade.drop": "Lage touswit",
+    "lib.arcade.flagMode": "Mòd drapo",
+    "lib.arcade.freeCells": "Selil lib: {n}",
+    "lib.arcade.left": "Agòch",
+    "lib.arcade.length": "Longè: {n}/{t}",
+    "lib.arcade.lines": "Liy: {n}/{t}",
+    "lib.arcade.minesLeft": "Min: {n}",
+    "lib.arcade.moves": "Kou: {n}",
+    "lib.arcade.movesLeft": "Rete {n} kou",
+    "lib.arcade.mustPass": "Ou pa gen okenn kou ki valab — ou pase tou w.",
+    "lib.arcade.next": "Pwochen moso yo",
+    "lib.arcade.noHint": "Pa gen okenn kou itil ki rete. Rale yon kat, distribye yon nouvo ranje oswa rekòmanse.",
+    "lib.arcade.note.2048": "Sèvi ak flèch klavye yo oswa glise dwèt ou pou deplase tout kawo yo. De kawo ki gen menm chif la ap fè yon sèl lè yo touche. Fè yon kawo ki egal ak objektif la pou w pase nivo a; si okenn kawo pa ka deplase ankò, ou pèdi.",
+    "lib.arcade.note.blocks": "Vire epi mete moso k ap tonbe yo pou ranpli liy orizontal; liy ki plen yo disparèt. ← → deplase, ↑ vire, ↓ desann pi vit, Espas lage touswit, P poze. Netwaye kantite liy ki nesesè pou w pase nivo a; si moso yo rive anwo, ou pèdi.",
+    "lib.arcade.note.breakout": "Deplase sourit la, trennen dwèt ou sou teren an oswa sèvi ak ← → pou dirije palèt la epi kenbe boul la nan jwèt la. Kraze tout brik yo pou w pase nivo a; brik ki gen bòdi epè bezwen de kou. Ou gen 3 vi. Espas kòmanse oswa poze.",
+    "lib.arcade.note.connect4": "Ou jwe wouj epi ou kòmanse anvan. Tape yon kolòn pou lage yon jeton; li tonbe nan plas vid ki pi ba a. Premye moun ki aliyen 4 jeton orizontalman, vètikalman oswa an dyagonal genyen.",
+    "lib.arcade.note.freecell": "Tout kat yo louvri. Mennen tout 52 kat yo sou 4 fondasyon yo dapre koulè, soti nan A rive nan K. Sou tab la, ranje an desandan ak koulè ki altène. Chak selil lib anwo agòch kenbe yon kat; konbyen kat ou ka deplase alafwa depann de selil lib yo ak kolòn vid yo. Nivo ki pi wo yo gen mwens selil.",
+    "lib.arcade.note.gomoku": "Ou jwe X epi ou kòmanse anvan; òdinatè a jwe O. Nou chak nan tou pa nou mete yon mak sou yon pwen vid nan tablo 15×15 la. Premye moun ki fè 5 nan yon ranje orizontalman, vètikalman oswa an dyagonal genyen.",
+    "lib.arcade.note.klondike": "Mennen tout 52 kat yo sou 4 fondasyon yo dapre koulè, soti nan A rive nan K. Sou tab la, ranje an desandan ak koulè ki altène; se sèlman yon K ki ka ale nan yon kolòn vid. Tape pil fèmen anwo agòch la pou rale kat. Tape yon kat epi plas kote ou vle mete l, oswa tape l ankò pou li ale poukont li nan yon plas ki valab. Nivo 1–5: rale 1; nivo 6–10: rale 3.",
+    "lib.arcade.note.match3": "Chanje plas de moso ki bò kote youn lòt (tape youn epi lòt la, oswa glise) pou fè yon liy 3 oswa plis ki menm; liy lan eklate epi moso ki anwo yo tonbe. Reyaksyon an chèn miltipliye pwen ou. Rive nan pwen objektif la anvan kou yo fini.",
+    "lib.arcade.note.minesweeper": "Tape yon selil pou louvri l. Chif la montre konbyen min ki genyen nan 8 selil ki antoure l. Make yon min ou sispèk ak klike adwat, peze lontan oswa mòd drapo. Tape yon chif ki deja gen ase drapo bò kote l pou louvri rès yo vit. Louvri tout selil ki pa gen min pou w genyen.",
+    "lib.arcade.note.reversi": "Ou jwe nwa epi ou kòmanse anvan. Mete yon jeton yon fason pou li kwense youn oswa plizyè jeton blan ant li menm ak yon lòt jeton nwa (orizontalman, vètikalman oswa an dyagonal); jeton ki kwense yo vire nan koulè pa w. Si ou pa gen kou ki valab, ou pase tou w. Lè tablo a plen, moun ki gen plis jeton genyen.",
+    "lib.arcade.note.snake": "Dirije koulèv la ak flèch yo, WASD, bouton anba yo oswa lè w glise. Manje manje wouj la pou w grandi; rive nan longè ki nesesè pou w pase nivo a. Depi nivo 3, frape yon mi fini jwèt la; nivo ki pi wo yo gen obstak. Pa frape pwòp ke w.",
+    "lib.arcade.note.spider": "Sou tab la, ranje chak koulè an yon seri soti nan K desann rive nan A; yon seri konplè 13 kat retire otomatikman. Nenpòt kat ka ale sou yon kat ki yon ran pi wo, men se sèlman seri ki menm koulè ki deplase ansanm. Si ou bloke, tape Distribye yon nouvo ranje (chak kolòn dwe gen kat). Nivo 1–3: yon koulè; 4–7: de; 8–10: kat.",
+    "lib.arcade.pause": "Poze",
+    "lib.arcade.paused": "An poz",
+    "lib.arcade.right": "Adwat",
+    "lib.arcade.rotate": "Vire",
+    "lib.arcade.score": "Pwen: {n}",
+    "lib.arcade.shuffled": "Pa t gen kou ankò — tablo a melanje ankò.",
+    "lib.arcade.snakeBoard": "Teren koulèv la",
+    "lib.arcade.suitsN": "{n} koulè",
+    "lib.arcade.target": "Objektif: {n}",
+    "lib.arcade.up": "Anwo",
+    "lib.arcade.youVsAi": "Ou {a} – Òdinatè {b}",
+    "lib.arcade.noHintFc": "Pa gen okenn kou itil ki rete. Anile kèk kou oswa rekòmanse."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Amizman ak Jwèt",
-      "desc": "Wou chans, jeneratè nimewo o aza, tiraj pri ak jwèt amizan."
+      "desc": "Wou chans, nimewo o aza ak jwèt nan navigatè: Sudoku, echèk, echèk chinwa, Gomoku, 2048, detektè min, blòk k ap tonbe, koulèv, solitè ak kraze brik."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi kache",
       "desc": "Jwe Xiangqi kache vyetnamyen: pyès yo kòmanse tèt anba epi yo vire apre premye mouvman an. Kont òdinatè a sou 10 nivo oswa sou entènèt ak zanmi ak nouvo advèsè."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Glise epi mete ansanm chif ki menm jiskaske ou fè kawo 2048 la; 10 nivo ak objektif soti 64 rive 8192, ak anile."
+    },
+    "minesweeper": {
+      "name": "Detektè min",
+      "desc": "Detektè min klasik: louvri selil, mete drapo epi devine ak chif yo kote min yo ye; 10 nivo soti 8x8 rive 18x18, mache sou telefòn tou."
+    },
+    "block-puzzle": {
+      "name": "Blòk k ap tonbe",
+      "desc": "Vire epi anpile blòk k ap tonbe pou netwaye liy; 10 nivo ki vin pi rapid, ak klavye oswa bouton pou touche."
+    },
+    "snake": {
+      "name": "Koulèv",
+      "desc": "Dirije koulèv la pou l manje epi grandi san l pa frape mi yo oswa pwòp ke l; 10 nivo pi rapid ak obstak."
+    },
+    "solitaire": {
+      "name": "Solitè",
+      "desc": "Solitè Klondike klasik: ranje an desandan ak koulè ki altène epi mennen kat yo sou fondasyon yo soti nan A rive nan K; rale 1 oswa 3, ak anile ak konsèy."
+    },
+    "spider-solitaire": {
+      "name": "Solitè Arenyen",
+      "desc": "Arenyen ak 1, 2 ak 4 koulè: fè seri ki menm koulè soti nan K rive nan A pou retire yo sou tab la; 10 nivo ak anile ak konsèy."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Solitè FreeCell: tout kat yo louvri; sèvi ak selil lib yo pou mennen kat yo sou fondasyon yo; 10 nivo ak mwens selil pi devan."
+    },
+    "gomoku": {
+      "name": "Gomoku (senk nan yon ranje)",
+      "desc": "Jwe Gomoku, senk nan yon ranje, kont òdinatè a sou yon tablo 15x15; 10 nivo soti fasil rive difisil, ak anile."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Kwense jeton advèsè w pou vire yo nan koulè pa w; jwe Reversi 8x8 kont òdinatè a sou 10 nivo."
+    },
+    "connect-four": {
+      "name": "Kat nan yon ranje",
+      "desc": "Lage jeton nan kolòn yo epi aliyen 4 orizontalman, vètikalman oswa an dyagonal anvan òdinatè a; 10 nivo soti fasil rive difisil."
+    },
+    "match-3": {
+      "name": "Ini 3",
+      "desc": "Chanje plas bonbon pou ini 3 oswa plis ki menm epi deklanche reyaksyon an chèn; 10 nivo ak pwen objektif ak kou limite."
+    },
+    "brick-breaker": {
+      "name": "Kraze brik",
+      "desc": "Dirije palèt la epi fè boul la rebondi pou kraze tout brik yo; 10 etap ak aranjman diferan, ak sourit, touche oswa touch klavye."
     }
   },
   "s": {

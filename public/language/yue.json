@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "對手虛手。如果你都虛手，就終局計數。",
     "lib.online.modeAi": "同電腦玩",
     "lib.online.modeOnline": "網上對戰",
-    "share.label": "分享"
+    "share.label": "分享",
+    "lib.arcade.aiNoMove": "電腦冇位落子，到你喇。",
+    "lib.arcade.autoFinish": "自動收牌",
+    "lib.arcade.best": "最高分：{n}",
+    "lib.arcade.blocksBoard": "跌落方塊棋盤",
+    "lib.arcade.breakoutBoard": "打磚塊場地",
+    "lib.arcade.dealRow": "派多一行牌",
+    "lib.arcade.down": "落",
+    "lib.arcade.drawN": "每次揭{n}張",
+    "lib.arcade.drop": "即刻跌落",
+    "lib.arcade.flagMode": "插旗模式",
+    "lib.arcade.freeCells": "空格：{n}",
+    "lib.arcade.left": "左",
+    "lib.arcade.length": "長度：{n}/{t}",
+    "lib.arcade.lines": "行數：{n}/{t}",
+    "lib.arcade.minesLeft": "地雷：{n}",
+    "lib.arcade.moves": "步數：{n}",
+    "lib.arcade.movesLeft": "仲有{n}步",
+    "lib.arcade.mustPass": "你冇位落子，今輪跳過。",
+    "lib.arcade.next": "下一個方塊",
+    "lib.arcade.noHint": "冇有用嘅走法喇。揭牌、派多一行或者重新開始啦。",
+    "lib.arcade.note.2048": "用方向鍵或者掃一掃嚟推郁所有方塊，同一個數字嘅方塊撞埋會夾埋一個。砌到目標數字就過關；冇得再郁就輸咗。",
+    "lib.arcade.note.blocks": "轉同擺好跌落嘅方塊，填滿成行就會消除。← → 移動，↑ 轉，↓ 加速落，空白鍵即刻跌落，P 暫停。消除指定行數就過關；方塊疊到頂就輸咗。",
+    "lib.arcade.note.breakout": "郁滑鼠、喺場地拖手指或者用 ← → 鍵控制擋板，唔好俾個波跌落去。打爛晒所有磚就過關，粗邊磚要打兩次。有3條命，空白鍵開始或者暫停。",
+    "lib.arcade.note.connect4": "你揸紅子先行。㩒一欄落子，粒子會跌到嗰欄最低嘅空位。邊個先將4粒子連成橫、直或者斜線就贏。",
+    "lib.arcade.note.freecell": "所有牌都係面朝上。將52張牌按花色由A到K放上4個收牌位。枱面上由大到細、紅黑交替疊。左上角嘅空格每格可以暫放一張牌；一次搬得幾多張視乎空格同空欄數量。級數越高空格越少。",
+    "lib.arcade.note.gomoku": "你揸✕先行，電腦揸○。雙方輪流喺15×15棋盤嘅空位落子，邊個先喺橫、直或者斜線連成5粒就贏。",
+    "lib.arcade.note.klondike": "將52張牌按花色由A到K放上4個收牌位。枱面上由大到細、紅黑交替疊，空欄只可以放K。㩒左上角嘅牌堆嚟揭牌。先㩒一張牌再㩒想放嘅位，或者再㩒多次嗰張牌，佢會自己去啱嘅位。第1–5級每次揭1張，第6–10級每次揭3張。",
+    "lib.arcade.note.match3": "調換相鄰兩粒（逐粒㩒或者掃），砌成3粒或以上同款就會消除，上面嘅會跌落嚟。連鎖消除分數加倍。用晒步數之前夠目標分就過關。",
+    "lib.arcade.note.minesweeper": "㩒一格嚟揭開。數字代表周圍8格有幾多粒地雷。用右鍵、長㩒或者插旗模式喺可疑嘅格插旗。㩒一個周圍已經插夠旗嘅數字，就可以快啲揭開其餘嘅格。揭晒所有冇地雷嘅格就贏。",
+    "lib.arcade.note.reversi": "你揸黑子先行。落子要將一粒或者多粒白子夾喺新子同另一粒黑子中間（橫、直、斜），夾住嘅子會反轉做你嘅顏色。冇合法位就跳過。棋盤落滿嗰陣，子多嗰個贏。",
+    "lib.arcade.note.snake": "用方向鍵、WASD、下面啲掣或者掃嚟控制條蛇。食紅色食物就會變長，夠規定長度就過關。由第3級開始撞牆就輸，高級仲有障礙物。唔好咬親自己條尾。",
+    "lib.arcade.note.spider": "喺枱面將每款花色排成由K到A嘅序列，湊夠13張嘅序列會自動移走。任何牌都可以放喺大1點嘅牌上面，但係只有同花色嘅序列先可以成串搬。冇路行就㩒「派多一行牌」（每欄都要有牌）。第1–3級一款花色，4–7級兩款，8–10級四款。",
+    "lib.arcade.pause": "暫停",
+    "lib.arcade.paused": "暫停咗",
+    "lib.arcade.right": "右",
+    "lib.arcade.rotate": "轉",
+    "lib.arcade.score": "分數：{n}",
+    "lib.arcade.shuffled": "冇路可行，已經重新洗牌。",
+    "lib.arcade.snakeBoard": "蛇仔場地",
+    "lib.arcade.suitsN": "{n}款花色",
+    "lib.arcade.target": "目標：{n}",
+    "lib.arcade.up": "上",
+    "lib.arcade.youVsAi": "你 {a} – 電腦 {b}",
+    "lib.arcade.noHintFc": "冇有用嘅步數喇。試吓還原幾步或者重新開始。"
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "娛樂同遊戲",
-      "desc": "幸運轉盤、隨機數字產生器、抽獎同好玩嘅遊戲。"
+      "desc": "幸運轉盤、隨機數同網頁小遊戲：數獨、國際象棋、象棋、五子棋、2048、踩地雷、跌落方塊、貪食蛇、接龍、打磚塊。"
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "揭棋",
       "desc": "玩越南揭棋：棋子反轉開局，第一步之後揭開。同電腦玩 10 級，或者網上同朋友、新對手對戰。"
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "推郁同合併相同數字，砌出2048方塊；目標由64到8192共10級，可以悔一步。"
+    },
+    "minesweeper": {
+      "name": "踩地雷",
+      "desc": "經典踩地雷：揭格、插旗，靠數字推斷地雷喺邊；由8x8到18x18共10級，手機都玩得。"
+    },
+    "block-puzzle": {
+      "name": "跌落方塊",
+      "desc": "轉同疊跌落嘅方塊嚟消除成行；10級越嚟越快，用鍵盤或者觸控掣玩。"
+    },
+    "snake": {
+      "name": "貪食蛇",
+      "desc": "控制條蛇食嘢變長，避開牆同自己個身；10級越嚟越快兼有障礙物。"
+    },
+    "solitaire": {
+      "name": "接龍",
+      "desc": "經典克朗代克接龍：紅黑交替疊牌，將牌由A到K收上收牌位；揭1張或者3張，可以悔牌同有提示。"
+    },
+    "spider-solitaire": {
+      "name": "蜘蛛紙牌",
+      "desc": "1、2、4款花色嘅蜘蛛紙牌：排出由K到A嘅同花色序列將佢移走；10級，可以悔牌同有提示。"
+    },
+    "freecell": {
+      "name": "新接龍",
+      "desc": "新接龍（FreeCell）：所有牌面朝上，用空格幫手將牌收上收牌位；10級，空格越嚟越少。"
+    },
+    "gomoku": {
+      "name": "五子棋",
+      "desc": "喺15x15棋盤同電腦玩五子棋，由易到難10級，可以悔棋。"
+    },
+    "reversi": {
+      "name": "黑白棋",
+      "desc": "夾住對手嘅子反轉做你嘅顏色；同電腦玩8x8黑白棋，共10級。"
+    },
+    "connect-four": {
+      "name": "四子棋",
+      "desc": "將棋子掉落欄入面，趕喺電腦之前喺橫、直或者斜線連成4粒；由易到難10級。"
+    },
+    "match-3": {
+      "name": "三消遊戲",
+      "desc": "調換糖果湊夠3粒或以上同款，觸發連鎖得分；10級，有目標分數同步數限制。"
+    },
+    "brick-breaker": {
+      "name": "打磚塊",
+      "desc": "控制擋板反彈個波打爛晒所有磚；10個唔同佈局嘅關卡，用滑鼠、觸控或者鍵盤玩。"
     }
   },
   "s": {

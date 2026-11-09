@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Die opponent het gepas. As jy ook pas, eindig die spel en word getel.",
     "lib.online.modeAi": "Speel teen die rekenaar",
     "lib.online.modeOnline": "Speel aanlyn",
-    "share.label": "Deel"
+    "share.label": "Deel",
+    "lib.arcade.aiNoMove": "Die rekenaar het geen geldige skuif nie — dis jou beurt.",
+    "lib.arcade.autoFinish": "Voltooi outomaties",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Bord met vallende blokke",
+    "lib.arcade.breakoutBoard": "Stene-breek-veld",
+    "lib.arcade.dealRow": "Deel 'n nuwe ry",
+    "lib.arcade.down": "Af",
+    "lib.arcade.drawN": "Trek {n}",
+    "lib.arcade.drop": "Laat val",
+    "lib.arcade.flagMode": "Vlagmodus",
+    "lib.arcade.freeCells": "Vrye selle: {n}",
+    "lib.arcade.left": "Links",
+    "lib.arcade.length": "Lengte: {n}/{t}",
+    "lib.arcade.lines": "Lyne: {n}/{t}",
+    "lib.arcade.minesLeft": "Myne: {n}",
+    "lib.arcade.moves": "Skuiwe: {n}",
+    "lib.arcade.movesLeft": "{n} skuiwe oor",
+    "lib.arcade.mustPass": "Jy het geen geldige skuif nie — jy pas.",
+    "lib.arcade.next": "Volgende stukke",
+    "lib.arcade.noHint": "Geen nuttige skuif oor nie. Trek 'n kaart, deel 'n nuwe ry of begin oor.",
+    "lib.arcade.note.2048": "Gebruik die pyltjiesleutels of swiep om al die teëls te skuif. Twee teëls met dieselfde getal smelt saam wanneer hulle raak. Maak 'n teël gelyk aan die teiken om die vlak te voltooi; as geen teël meer kan skuif nie, verloor jy.",
+    "lib.arcade.note.blocks": "Draai en plaas die vallende stukke om horisontale lyne vol te maak; vol lyne verdwyn. ← → skuif, ↑ draai, ↓ val vinniger, Spasie laat val, P onderbreek. Maak die vereiste aantal lyne skoon om die vlak te voltooi; as die stukke die bokant bereik, verloor jy.",
+    "lib.arcade.note.breakout": "Beweeg die muis, sleep jou vinger oor die veld of gebruik ← → om die spaan te stuur en die bal in die spel te hou. Breek elke steen om die vlak te voltooi; stene met 'n dik rand moet twee keer geslaan word. Jy het 3 lewens. Spasie begin of onderbreek.",
+    "lib.arcade.note.connect4": "Jy speel rooi en begin eerste. Tik op 'n kolom om 'n skyf te laat val; dit val tot by die laagste oop plek. Wie eerste 4 skywe horisontaal, vertikaal of diagonaal in 'n ry kry, wen.",
+    "lib.arcade.note.freecell": "Alle kaarte lê oop. Skuif al 52 kaarte na die 4 fondasies volgens kleur, van A tot K. Bou op die tafel afwaarts in afwisselende kleure. Die vrye selle links bo hou elk een kaart; hoeveel kaarte jy op een slag kan skuif, hang af van die vrye selle en leë kolomme. Hoër vlakke het minder vrye selle.",
+    "lib.arcade.note.gomoku": "Jy speel X en begin eerste; die rekenaar speel O. Plaas om die beurt 'n merk op 'n oop punt van die 15×15-bord. Wie eerste 5 in 'n ry horisontaal, vertikaal of diagonaal kry, wen.",
+    "lib.arcade.note.klondike": "Skuif al 52 kaarte na die 4 fondasies volgens kleur, van A tot K. Bou op die tafel afwaarts in afwisselende kleure; net 'n K mag in 'n leë kolom. Tik op die toe stapel links bo om kaarte te trek. Tik op 'n kaart en dan op die plek waar dit moet gaan, of tik weer daarop om dit outomaties te skuif. Vlakke 1–5: trek 1; vlakke 6–10: trek 3.",
+    "lib.arcade.note.match3": "Ruil twee buurstukke om (tik op een en dan die ander, of swiep) om 'n lyn van 3 of meer dieselfde te maak; die lyn bars en die stukke daarbo val af. Kettingreaksies vermenigvuldig jou punte. Haal die teikentelling voordat jou skuiwe opraak.",
+    "lib.arcade.note.minesweeper": "Tik op 'n sel om dit oop te maak. 'n Getal wys hoeveel myne in die 8 selle rondom is. Merk 'n verdagte myn met 'n regsklik, 'n lang druk of Vlagmodus. Tik op 'n getal wat reeds genoeg vlae rondom het om die res vinnig oop te maak. Maak alle selle sonder myne oop om te wen.",
+    "lib.arcade.note.reversi": "Jy speel swart en begin eerste. Plaas 'n skyf sodat dit een of meer wit skywe tussen hom en 'n ander swart skyf vasvang (horisontaal, vertikaal of diagonaal); die vasgevangde skywe draai om na jou kleur. Het jy geen geldige skuif nie, pas jy. Wanneer die bord vol is, wen wie die meeste skywe het.",
+    "lib.arcade.note.snake": "Stuur die slang met die pyltjiesleutels, WASD, die knoppies hieronder of deur te swiep. Eet die rooi kos om te groei; bereik die vereiste lengte om die vlak te voltooi. Vanaf vlak 3 beëindig 'n muur die spel; hoër vlakke het hindernisse. Moenie in jou eie stert vasloop nie.",
+    "lib.arcade.note.spider": "Bou op die tafel elke kleur in 'n ry van K af tot A; 'n volledige ry van 13 kaarte word outomaties verwyder. Enige kaart kan op 'n kaart een rang hoër gaan, maar net rye van dieselfde kleur skuif saam. As jy vassit, tik op Deel 'n nuwe ry (elke kolom moet kaarte hê). Vlakke 1–3: een kleur; 4–7: twee; 8–10: vier.",
+    "lib.arcade.pause": "Onderbreek",
+    "lib.arcade.paused": "Onderbreek",
+    "lib.arcade.right": "Regs",
+    "lib.arcade.rotate": "Draai",
+    "lib.arcade.score": "Punte: {n}",
+    "lib.arcade.shuffled": "Geen skuiwe oor nie — die bord is geskommel.",
+    "lib.arcade.snakeBoard": "Slangveld",
+    "lib.arcade.suitsN": "{n} kleure",
+    "lib.arcade.target": "Teiken: {n}",
+    "lib.arcade.up": "Op",
+    "lib.arcade.youVsAi": "Jy {a} – Rekenaar {b}",
+    "lib.arcade.noHintFc": "Geen nuttige skuif oor nie. Ontdoen 'n paar skuiwe of begin oor."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Vermaak & speletjies",
-      "desc": "Gelukswiel, ewekansige getalle, prystrekkings en prettige speletjies."
+      "desc": "Gelukswiel, ewekansige getalle en blaaierspeletjies: Sudoku, skaak, Chinese skaak, Gomoku, 2048, mynveër, vallende blokke, slang, solitaire en stenebreker."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Versteekte Xiangqi",
       "desc": "Speel Viëtnamese versteekte Xiangqi: stukke begin onderstebo en word na die eerste skuif omgedraai. Teen die rekenaar op 10 vlakke of aanlyn met vriende en nuwe opponente."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Skuif en smelt dieselfde getalle saam tot die 2048-teël; 10 vlakke met teikens van 64 tot 8192, met ontdoen."
+    },
+    "minesweeper": {
+      "name": "Mynveër",
+      "desc": "Die klassieke mynveër: maak selle oop, plaas vlae en lei uit die getalle af waar die myne is; 10 vlakke van 8x8 tot 18x18, werk ook op die foon."
+    },
+    "block-puzzle": {
+      "name": "Vallende blokke",
+      "desc": "Draai en stapel vallende blokke om lyne skoon te maak; 10 vlakke wat al vinniger word, met sleutelbord of raakknoppies."
+    },
+    "snake": {
+      "name": "Slang",
+      "desc": "Stuur die slang om te eet en te groei sonder om mure of sy eie stert te tref; 10 vlakke, al vinniger, met hindernisse."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klassieke Klondike-solitaire: bou afwaarts in afwisselende kleure en skuif kaarte na die fondasies van A tot K; trek 1 of 3, met ontdoen en wenke."
+    },
+    "spider-solitaire": {
+      "name": "Spinnekop-solitaire",
+      "desc": "Spinnekop met 1, 2 en 4 kleure: bou rye van dieselfde kleur van K tot A om hulle van die tafel te verwyder; 10 vlakke met ontdoen en wenke."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell-solitaire: alle kaarte lê oop; gebruik die vrye selle om kaarte na die fondasies te skuif; 10 vlakke met al minder vrye selle."
+    },
+    "gomoku": {
+      "name": "Gomoku (vyf op 'n ry)",
+      "desc": "Speel Gomoku, vyf op 'n ry, teen die rekenaar op 'n 15x15-bord; 10 vlakke van maklik tot moeilik, met ontdoen."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Vang jou opponent se skywe vas om hulle na jou kleur om te draai; speel 8x8-Reversi teen die rekenaar oor 10 vlakke."
+    },
+    "connect-four": {
+      "name": "Vier op 'n ry",
+      "desc": "Laat skywe in kolomme val en kry 4 op 'n ry horisontaal, vertikaal of diagonaal voor die rekenaar; 10 vlakke van maklik tot moeilik."
+    },
+    "match-3": {
+      "name": "Pas 3",
+      "desc": "Ruil lekkers om om 3 of meer dieselfde te pas en kettingreaksies te begin; 10 vlakke met 'n teikentelling en beperkte skuiwe."
+    },
+    "brick-breaker": {
+      "name": "Stenebreker",
+      "desc": "Stuur die spaan en bons die bal om elke steen te breek; 10 fases met verskillende uitlegte, speel met muis, raakskerm of sleutels."
     }
   },
   "s": {

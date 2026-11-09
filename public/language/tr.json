@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Çevrim içi oyna",
     "lib.game.fullscreen": "Tam ekran",
     "lib.game.exitFullscreen": "Tam ekrandan çık",
-    "share.label": "Paylaş"
+    "share.label": "Paylaş",
+    "lib.arcade.aiNoMove": "Bilgisayarın geçerli hamlesi yok — sıra sende.",
+    "lib.arcade.autoFinish": "Otomatik yerleştir",
+    "lib.arcade.best": "Rekor: {n}",
+    "lib.arcade.blocksBoard": "Düşen bloklar tahtası",
+    "lib.arcade.breakoutBoard": "Tuğla kırma alanı",
+    "lib.arcade.dealRow": "Yeni sıra dağıt",
+    "lib.arcade.down": "Aşağı",
+    "lib.arcade.drawN": "{n} kart çek",
+    "lib.arcade.drop": "Hemen düşür",
+    "lib.arcade.flagMode": "Bayrak modu",
+    "lib.arcade.freeCells": "Boş hücre: {n}",
+    "lib.arcade.left": "Sola",
+    "lib.arcade.length": "Uzunluk: {n}/{t}",
+    "lib.arcade.lines": "Satır: {n}/{t}",
+    "lib.arcade.minesLeft": "Mayın: {n}",
+    "lib.arcade.moves": "Hamle: {n}",
+    "lib.arcade.movesLeft": "{n} hamle kaldı",
+    "lib.arcade.mustPass": "Geçerli hamlen yok — pas geçiyorsun.",
+    "lib.arcade.next": "Sıradaki bloklar",
+    "lib.arcade.noHint": "Yararlı hamle kalmadı. Kart çek, yeni sıra dağıt ya da baştan başla.",
+    "lib.arcade.note.2048": "Ok tuşlarıyla ya da kaydırarak tüm karoları kaydır. Aynı sayılı iki karo değince birleşir. Hedef sayıya ulaşan bir karo yaparsan seviyeyi geçersin; hiçbir karo kaymıyorsa kaybedersin.",
+    "lib.arcade.note.blocks": "Düşen blokları döndürüp yerleştirerek yatay satırları doldur; dolan satırlar silinir. ← → hareket, ↑ döndür, ↓ hızlı indir, Boşluk hemen düşür, P duraklat. Gereken satır sayısını silersen seviyeyi geçersin; bloklar tepeye ulaşırsa kaybedersin.",
+    "lib.arcade.note.breakout": "Fareyi oynat, parmağını alanda kaydır ya da ← → tuşlarıyla raketi yönet, topu düşürme. Tüm tuğlaları kırarsan seviyeyi geçersin; kalın kenarlı tuğlalar iki vuruş ister. 3 canın var. Boşluk başlatır ya da duraklatır.",
+    "lib.arcade.note.connect4": "Kırmızıyla oynuyorsun ve ilk sen başlıyorsun. Bir sütuna dokunarak taş bırak; taş en alttaki boş yere düşer. 4 taşı yatay, dikey ya da çapraz ilk dizen kazanır.",
+    "lib.arcade.note.freecell": "Tüm kartlar açık. 52 kartın hepsini türlerine göre A'dan K'ya 4 temel desteye taşı. Masada kartları azalan sırada, kırmızı-siyah dönüşümlü diz. Sol üstteki boş hücrelerin her biri bir kart tutar; bir seferde kaç kart taşıyabileceğin boş hücre ve boş sütun sayısına bağlıdır. Üst seviyelerde boş hücre azdır.",
+    "lib.arcade.note.gomoku": "Sen X ile ve ilk oynuyorsun; bilgisayar O ile oynuyor. 15×15 tahtada sırayla boş noktalara taş koyun. Yatay, dikey ya da çapraz 5'i ilk dizen kazanır.",
+    "lib.arcade.note.klondike": "52 kartın hepsini türlerine göre A'dan K'ya 4 temel desteye taşı. Masada kartları azalan sırada, kırmızı-siyah dönüşümlü diz; boş sütuna yalnızca K konabilir. Kart çekmek için sol üstteki kapalı desteye dokun. Bir karta, sonra koymak istediğin yere dokun ya da karta tekrar dokunarak uygun bir yere gitmesini sağla. Seviye 1–5'te 1, 6–10'da 3 kart çekilir.",
+    "lib.arcade.note.match3": "Yan yana iki parçanın yerini değiştir (sırayla dokun ya da kaydır), aynı türden 3 veya daha fazlasını diz; sıra patlar ve üstteki parçalar düşer. Zincirleme patlamalar puanı katlar. Hamlelerin bitmeden hedef puana ulaş.",
+    "lib.arcade.note.minesweeper": "Açmak için bir kareye dokun. Sayı, çevredeki 8 karede kaç mayın olduğunu gösterir. Şüpheli kareye sağ tıkla, uzun bas ya da bayrak modunu aç. Etrafında yeterli bayrak olan bir sayıya dokunarak kalan kareleri hızlıca aç. Mayınsız tüm kareleri açarsan kazanırsın.",
+    "lib.arcade.note.reversi": "Siyahla oynuyorsun ve ilk sen başlıyorsun. Taşını, bir veya daha çok beyaz taşı kendisiyle başka bir siyah taş arasına sıkıştıracak şekilde koy (yatay, dikey, çapraz); sıkışan taşlar senin rengine döner. Geçerli hamlen yoksa pas geçersin. Tahta dolunca taşı çok olan kazanır.",
+    "lib.arcade.note.snake": "Yılanı ok tuşları, WASD, alttaki düğmeler ya da kaydırarak yönet. Kırmızı yemi yiyerek uza; gereken uzunluğa ulaşırsan seviyeyi geçersin. 3. seviyeden itibaren duvara çarpmak kaybettirir; üst seviyelerde engeller vardır. Kendi kuyruğunu ısırma.",
+    "lib.arcade.note.spider": "Masada her türü K'dan A'ya bir sıra halinde diz; 13 kartlık tam sıralar kendiliğinden kalkar. Her kart bir büyük kartın üstüne konabilir, ama yalnızca aynı türden sıralar birlikte taşınır. Takılırsan Yeni sıra dağıt'a dokun (her sütunda kart olmalı). Seviye 1–3 tek tür, 4–7 iki tür, 8–10 dört tür.",
+    "lib.arcade.pause": "Duraklat",
+    "lib.arcade.paused": "Duraklatıldı",
+    "lib.arcade.right": "Sağa",
+    "lib.arcade.rotate": "Döndür",
+    "lib.arcade.score": "Puan: {n}",
+    "lib.arcade.shuffled": "Hamle kalmadı — tahta karıştırıldı.",
+    "lib.arcade.snakeBoard": "Yılan alanı",
+    "lib.arcade.suitsN": "{n} tür",
+    "lib.arcade.target": "Hedef: {n}",
+    "lib.arcade.up": "Yukarı",
+    "lib.arcade.youVsAi": "Sen {a} – Bilgisayar {b}",
+    "lib.arcade.noHintFc": "Yararlı hamle kalmadı. Birkaç hamleyi geri alın ya da yeniden başlayın."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Eğlence ve Oyunlar",
-      "desc": "Şans çarkı, rastgele sayı üretici, ödül çekilişleri ve eğlenceli oyunlar."
+      "desc": "Şans çarkı, rastgele sayılar ve tarayıcı oyunları: sudoku, satranç, Çin satrancı, gomoku, 2048, mayın tarlası, düşen bloklar, yılan, solitaire ve tuğla kırma."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Kapalı Xiangqi",
       "desc": "Vietnam'ın kapalı Xiangqi oyununu oyna: taşlar kapalı başlar, ilk hamleden sonra açılır. Bilgisayara karşı 10 seviyede ya da çevrim içi arkadaşlarınla ve yeni rakiplerle."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Aynı sayıları kaydırıp birleştirerek 2048 karosunu yap; 64'ten 8192'ye hedefli 10 seviye, geri alma var."
+    },
+    "minesweeper": {
+      "name": "Mayın Tarlası",
+      "desc": "Klasik mayın tarlası: kareleri aç, bayrak koy ve sayılardan mayınların yerini bul; 8x8'den 18x18'e 10 seviye, telefonda da oynanır."
+    },
+    "block-puzzle": {
+      "name": "Düşen Bloklar",
+      "desc": "Düşen blokları döndürüp istifleyerek satırları sil; giderek hızlanan 10 seviye, klavye ya da dokunmatik düğmelerle."
+    },
+    "snake": {
+      "name": "Yılan Oyunu",
+      "desc": "Yılanı yemlere yönlendirip büyüt, duvarlardan ve kendi kuyruğundan kaç; hızlanan ve engelli 10 seviye."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klasik Klondike solitaire: kartları renkleri dönüşümlü dizip A'dan K'ya temel destelere taşı; 1 ya da 3 kart çekme, geri alma ve ipucu."
+    },
+    "spider-solitaire": {
+      "name": "Örümcek Solitaire",
+      "desc": "1, 2 ve 4 türlü Örümcek: K'dan A'ya aynı türden sıralar kurup masadan kaldır; geri alma ve ipuçlu 10 seviye."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell solitaire: tüm kartlar açık; boş hücreleri kullanarak kartları temel destelere taşı; boş hücresi giderek azalan 10 seviye."
+    },
+    "gomoku": {
+      "name": "Gomoku (Beşli)",
+      "desc": "15x15 tahtada bilgisayara karşı gomoku, yani beşli oyna; kolaydan zora 10 seviye, geri alma var."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Rakip taşları sıkıştırıp kendi rengine çevir; bilgisayara karşı 8x8 Reversi, 10 seviye."
+    },
+    "connect-four": {
+      "name": "Dörtlü",
+      "desc": "Taşları sütunlara bırak, bilgisayardan önce yatay, dikey ya da çapraz 4'lü diz; kolaydan zora 10 seviye."
+    },
+    "match-3": {
+      "name": "Üçlü Eşleştirme",
+      "desc": "Şekerlerin yerini değiştirip aynı türden 3 ya da daha fazlasını eşleştir, zincirleme patlat; hedef puanlı ve hamle sınırlı 10 seviye."
+    },
+    "brick-breaker": {
+      "name": "Tuğla Kırma",
+      "desc": "Raketi yönetip topu sektirerek tüm tuğlaları kır; farklı dizilişli 10 bölüm, fare, dokunmatik ya da klavyeyle."
     }
   },
   "s": {

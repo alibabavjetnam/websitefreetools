@@ -296,7 +296,51 @@
     "lib.online.modeOnline": "Jogar online",
     "lib.game.fullscreen": "Tela cheia",
     "lib.game.exitFullscreen": "Sair da tela cheia",
-    "share.label": "Compartilhar"
+    "share.label": "Compartilhar",
+    "lib.arcade.aiNoMove": "O computador não tem jogada válida — é a sua vez.",
+    "lib.arcade.autoFinish": "Subir tudo",
+    "lib.arcade.best": "Recorde: {n}",
+    "lib.arcade.blocksBoard": "Tabuleiro de blocos",
+    "lib.arcade.breakoutBoard": "Campo de quebra-tijolos",
+    "lib.arcade.dealRow": "Distribuir uma fileira",
+    "lib.arcade.down": "Baixo",
+    "lib.arcade.drawN": "Comprar {n}",
+    "lib.arcade.drop": "Soltar",
+    "lib.arcade.flagMode": "Modo bandeira",
+    "lib.arcade.freeCells": "Células livres: {n}",
+    "lib.arcade.left": "Esquerda",
+    "lib.arcade.length": "Tamanho: {n}/{t}",
+    "lib.arcade.lines": "Linhas: {n}/{t}",
+    "lib.arcade.minesLeft": "Minas: {n}",
+    "lib.arcade.moves": "Jogadas: {n}",
+    "lib.arcade.movesLeft": "Faltam {n} jogadas",
+    "lib.arcade.mustPass": "Você não tem jogada válida — passa a vez.",
+    "lib.arcade.next": "Próximas peças",
+    "lib.arcade.noHint": "Não há mais jogadas úteis. Compre uma carta, distribua uma fileira ou recomece.",
+    "lib.arcade.note.2048": "Use as setas ou deslize para mover todas as peças. Duas peças com o mesmo número se juntam ao se tocar. Forme uma peça igual à meta para passar de nível; se nada mais se mover, você perde.",
+    "lib.arcade.note.blocks": "Gire e encaixe as peças que caem para completar linhas horizontais; linhas cheias somem. ← → move, ↑ gira, ↓ acelera, Espaço solta de vez e P pausa. Limpe as linhas exigidas para passar de nível; se a pilha chegar ao topo, você perde.",
+    "lib.arcade.note.breakout": "Mexa o mouse, arraste o dedo no campo ou use ← → para mover a raquete e não deixar a bola cair. Quebre todos os tijolos para passar de nível; os de borda grossa precisam de dois golpes. Você tem 3 vidas. Espaço começa ou pausa.",
+    "lib.arcade.note.connect4": "Você joga com o vermelho e começa. Toque numa coluna para soltar uma peça; ela cai no espaço livre mais baixo. Vence quem alinhar primeiro 4 peças na horizontal, vertical ou diagonal.",
+    "lib.arcade.note.freecell": "Todas as cartas ficam viradas para cima. Leve as 52 cartas às 4 fundações por naipe, do A ao K. Na mesa, empilhe em ordem decrescente alternando as cores. As células livres no canto superior esquerdo guardam uma carta cada; quantas cartas dá para mover de uma vez depende das células e colunas vazias. Níveis altos têm menos células.",
+    "lib.arcade.note.gomoku": "Você joga com X e começa; o computador joga com O. Coloquem em turnos num ponto livre do tabuleiro 15×15. Vence quem fizer primeiro 5 em linha na horizontal, vertical ou diagonal.",
+    "lib.arcade.note.klondike": "Leve as 52 cartas às 4 fundações por naipe, do A ao K. Na mesa, empilhe em ordem decrescente alternando as cores; só um K pode ir para uma coluna vazia. Toque no monte virado no canto superior esquerdo para comprar. Toque numa carta e depois no lugar desejado, ou toque nela de novo para enviá-la a um lugar válido. Níveis 1–5: compra 1; níveis 6–10: compra 3.",
+    "lib.arcade.note.match3": "Troque duas peças vizinhas (tocando uma e depois a outra, ou deslizando) para formar uma linha de 3 ou mais iguais; a linha estoura e as peças de cima caem. Reações em cadeia multiplicam os pontos. Alcance a pontuação-alvo antes de acabarem as jogadas.",
+    "lib.arcade.note.minesweeper": "Toque numa casa para abri-la. O número indica quantas minas há nas 8 casas ao redor. Marque uma mina suspeita com clique direito, toque longo ou o modo bandeira. Toque num número que já tenha bandeiras suficientes para abrir o resto rápido. Abra todas as casas sem mina para vencer.",
+    "lib.arcade.note.reversi": "Você joga com as pretas e começa. Coloque uma peça de modo a prender uma ou mais brancas entre ela e outra preta (horizontal, vertical ou diagonal); as peças presas viram para a sua cor. Sem jogada válida, você passa. Com o tabuleiro cheio, vence quem tiver mais peças.",
+    "lib.arcade.note.snake": "Controle a cobra com as setas, WASD, os botões abaixo ou deslizando. Coma a comida vermelha para crescer; alcance o tamanho exigido para passar de nível. A partir do nível 3, bater na parede faz perder; níveis altos têm obstáculos. Não morda o próprio rabo.",
+    "lib.arcade.note.spider": "Monte na mesa uma sequência de cada naipe do K ao A; sequências completas de 13 cartas saem sozinhas. Qualquer carta pode ir sobre outra um ponto maior, mas só sequências do mesmo naipe se movem juntas. Se travar, toque em Distribuir uma fileira (todas as colunas precisam ter cartas). Níveis 1–3: um naipe; 4–7: dois; 8–10: quatro.",
+    "lib.arcade.pause": "Pausar",
+    "lib.arcade.paused": "Pausado",
+    "lib.arcade.right": "Direita",
+    "lib.arcade.rotate": "Girar",
+    "lib.arcade.score": "Pontos: {n}",
+    "lib.arcade.shuffled": "Sem jogadas — o tabuleiro foi embaralhado.",
+    "lib.arcade.snakeBoard": "Campo da cobrinha",
+    "lib.arcade.suitsN": "{n} naipes",
+    "lib.arcade.target": "Meta: {n}",
+    "lib.arcade.up": "Cima",
+    "lib.arcade.youVsAi": "Você {a} – Computador {b}",
+    "lib.arcade.noHintFc": "Não há mais jogadas úteis. Desfaça algumas jogadas ou recomece."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Diversão e jogos",
-      "desc": "Roleta da sorte, gerador de números aleatórios, sorteios de prêmios e jogos divertidos."
+      "desc": "Roleta da sorte, números aleatórios e jogos no navegador: sudoku, xadrez, xadrez chinês, gomoku, 2048, campo minado, blocos, cobrinha, paciência e quebra-tijolos."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi oculto",
       "desc": "Jogue o Xiangqi oculto vietnamita: as peças começam viradas para baixo e são reveladas após o primeiro movimento. Contra o computador em 10 níveis ou online com amigos e novos adversários."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Deslize e junte números iguais até formar a peça 2048; 10 níveis com metas de 64 a 8192, com desfazer."
+    },
+    "minesweeper": {
+      "name": "Campo minado",
+      "desc": "O campo minado clássico: abra casas, marque bandeiras e descubra as minas pelos números; 10 níveis de 8x8 a 18x18, dá para jogar no celular."
+    },
+    "block-puzzle": {
+      "name": "Blocos que caem",
+      "desc": "Gire e empilhe os blocos que caem para limpar linhas; 10 níveis cada vez mais rápidos, no teclado ou com botões de toque."
+    },
+    "snake": {
+      "name": "Jogo da cobrinha",
+      "desc": "Guie a cobrinha para comer e crescer, desviando das paredes e do próprio rabo; 10 níveis mais rápidos e com obstáculos."
+    },
+    "solitaire": {
+      "name": "Paciência",
+      "desc": "Paciência Klondike clássica: empilhe alternando as cores e leve as cartas às fundações do A ao K; compra de 1 ou 3, com desfazer e dicas."
+    },
+    "spider-solitaire": {
+      "name": "Paciência Spider",
+      "desc": "Spider com 1, 2 e 4 naipes: monte sequências do mesmo naipe do K ao A para tirá-las da mesa; 10 níveis com desfazer e dicas."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Paciência FreeCell: todas as cartas viradas; use as células livres para levar as cartas às fundações; 10 níveis com cada vez menos células."
+    },
+    "gomoku": {
+      "name": "Gomoku (cinco em linha)",
+      "desc": "Jogue gomoku, cinco em linha, contra o computador num tabuleiro 15x15; 10 níveis do fácil ao difícil, com desfazer."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Prenda as peças do adversário para virá-las para a sua cor; jogue Reversi 8x8 contra o computador em 10 níveis."
+    },
+    "connect-four": {
+      "name": "Quatro em linha",
+      "desc": "Solte peças nas colunas e alinhe 4 na horizontal, vertical ou diagonal antes do computador; 10 níveis do fácil ao difícil."
+    },
+    "match-3": {
+      "name": "Combine 3",
+      "desc": "Troque doces para juntar 3 ou mais iguais e provocar reações em cadeia; 10 níveis com pontuação-alvo e limite de jogadas."
+    },
+    "brick-breaker": {
+      "name": "Quebra-tijolos",
+      "desc": "Mova a raquete e rebata a bola para quebrar todos os tijolos; 10 fases com formatos diferentes, com mouse, toque ou teclado."
     }
   },
   "s": {

@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Aurkariak pasatu du. Zuk ere pasatzen baduzu, partida amaitu eta zenbatuko da.",
     "lib.online.modeAi": "Jokatu ordenagailuaren aurka",
     "lib.online.modeOnline": "Jokatu linean",
-    "share.label": "Partekatu"
+    "share.label": "Partekatu",
+    "lib.arcade.aiNoMove": "Ordenagailuak ez du mugimendu baliozkorik — zure txanda da.",
+    "lib.arcade.autoFinish": "Amaitu automatikoki",
+    "lib.arcade.best": "Errekorra: {n}",
+    "lib.arcade.blocksBoard": "Bloke erorkorren taula",
+    "lib.arcade.breakoutBoard": "Adreiluak apurtzeko zelaia",
+    "lib.arcade.dealRow": "Banatu errenkada berri bat",
+    "lib.arcade.down": "Behera",
+    "lib.arcade.drawN": "Atera {n}",
+    "lib.arcade.drop": "Erorarazi",
+    "lib.arcade.flagMode": "Bandera modua",
+    "lib.arcade.freeCells": "Gelaxka libreak: {n}",
+    "lib.arcade.left": "Ezkerra",
+    "lib.arcade.length": "Luzera: {n}/{t}",
+    "lib.arcade.lines": "Lerroak: {n}/{t}",
+    "lib.arcade.minesLeft": "Minak: {n}",
+    "lib.arcade.moves": "Mugimenduak: {n}",
+    "lib.arcade.movesLeft": "{n} mugimendu falta dira",
+    "lib.arcade.mustPass": "Ez duzu mugimendu baliozkorik — txanda galtzen duzu.",
+    "lib.arcade.next": "Hurrengo piezak",
+    "lib.arcade.noHint": "Ez dago mugimendu baliagarririk. Atera karta bat, banatu errenkada berri bat edo hasi berriro.",
+    "lib.arcade.note.2048": "Erabili gezi-teklak edo irristatu fitxa guztiak mugitzeko. Zenbaki bera duten bi fitxa bat egiten dira elkar ukitzean. Lortu helburuaren berdina den fitxa bat maila gainditzeko; fitxarik ezin bada mugitu, galdu egiten duzu.",
+    "lib.arcade.note.blocks": "Biratu eta jarri pieza erorkorrak lerro horizontalak betetzeko; lerro beteak desagertu egiten dira. ← → mugitu, ↑ biratu, ↓ azkarrago jaitsi, Zuriunea erorarazi, P pausatu. Ezabatu behar adina lerro maila gainditzeko; piezak goraino iristen badira, galdu egiten duzu.",
+    "lib.arcade.note.breakout": "Mugitu sagua, arrastatu hatza zelaian edo erabili ← → palari eragiteko eta pilota jokoan mantentzeko. Apurtu adreilu guztiak maila gainditzeko; ertz lodiko adreiluek bi kolpe behar dituzte. 3 bizitza dituzu. Zuriuneak hasi edo pausatzen du.",
+    "lib.arcade.note.connect4": "Gorriarekin jokatzen duzu eta zu hasten zara. Sakatu zutabe bat fitxa bat erortzeko; libre dagoen beheko tokiraino erortzen da. 4 fitxa horizontalean, bertikalean edo diagonalean lerrokatzen dituen lehena irabazle.",
+    "lib.arcade.note.freecell": "Karta guztiak agerian daude. Eraman 52 kartak 4 oinarrietara paloka, A-tik K-ra. Mahaian, pilatu beheranzko ordenan koloreak txandakatuz. Goian ezkerreko gelaxka libreek karta bana gordetzen dute; aldi berean zenbat karta mugi ditzakezun gelaxka libreen eta zutabe hutsen araberakoa da. Maila altuetan gelaxka gutxiago daude.",
+    "lib.arcade.note.gomoku": "X-rekin jokatzen duzu eta zu hasten zara; ordenagailuak O-rekin. Txandaka, jarri marka bat 15×15 taulako puntu libre batean. Lehenik 5 lerroan horizontalean, bertikalean edo diagonalean lortzen dituena irabazle.",
+    "lib.arcade.note.klondike": "Eraman 52 kartak 4 oinarrietara paloka, A-tik K-ra. Mahaian, pilatu beheranzko ordenan koloreak txandakatuz; K batek bakarrik joan daiteke zutabe huts batera. Sakatu goian ezkerreko ahoz beherako pila kartak ateratzeko. Sakatu karta bat eta gero eraman nahi duzun tokia, edo sakatu berriro bera toki baliozko batera automatikoki joateko. 1–5 mailak: atera 1; 6–10 mailak: atera 3.",
+    "lib.arcade.note.match3": "Trukatu ondoko bi pieza (sakatu bat eta gero bestea, edo irristatu) berdinak diren 3 edo gehiagoko lerro bat osatzeko; lerroa lehertu eta goiko piezak erortzen dira. Kate-erreakzioek puntuak biderkatzen dituzte. Lortu helburuko puntuazioa mugimenduak amaitu baino lehen.",
+    "lib.arcade.note.minesweeper": "Sakatu gelaxka bat irekitzeko. Zenbakiak inguruko 8 gelaxketan zenbat mina dauden adierazten du. Markatu susmagarria den mina eskuineko klikarekin, sakatze luzearekin edo Bandera moduarekin. Sakatu inguruan bandera nahikoa duen zenbaki bat gainerakoak azkar irekitzeko. Ireki minarik gabeko gelaxka guztiak irabazteko.",
+    "lib.arcade.note.reversi": "Beltzarekin jokatzen duzu eta zu hasten zara. Jarri fitxa bat fitxa zuri bat edo gehiago bera eta beste fitxa beltz baten artean harrapatzeko moduan (horizontalean, bertikalean edo diagonalean); harrapatutako fitxak zure kolorera aldatzen dira. Mugimendu baliozkorik ez baduzu, txanda galtzen duzu. Taula betetakoan, fitxa gehien dituenak irabazten du.",
+    "lib.arcade.note.snake": "Gidatu sugea gezi-teklekin, WASD-rekin, beheko botoiekin edo irristatuz. Jan janari gorria hazteko; lortu behar den luzera maila gainditzeko. 3. mailatik aurrera, horma jotzeak jokoa amaitzen du; maila altuetan oztopoak daude. Ez jo zure buztanaren kontra.",
+    "lib.arcade.note.spider": "Mahaian, osatu palo bakoitzaren segida K-tik A-ra; 13 kartako segida osoak automatikoki kentzen dira. Edozein karta joan daiteke maila bat altuagoa den kartaren gainera, baina palo bereko segidak bakarrik mugitzen dira batera. Trabatuta bazaude, sakatu Banatu errenkada berri bat (zutabe guztiek kartak izan behar dituzte). 1–3 mailak: palo bat; 4–7: bi; 8–10: lau.",
+    "lib.arcade.pause": "Pausatu",
+    "lib.arcade.paused": "Pausatuta",
+    "lib.arcade.right": "Eskuina",
+    "lib.arcade.rotate": "Biratu",
+    "lib.arcade.score": "Puntuak: {n}",
+    "lib.arcade.shuffled": "Ez zegoen mugimendurik — taula nahastu da.",
+    "lib.arcade.snakeBoard": "Sugearen zelaia",
+    "lib.arcade.suitsN": "{n} palo",
+    "lib.arcade.target": "Helburua: {n}",
+    "lib.arcade.up": "Gora",
+    "lib.arcade.youVsAi": "Zu {a} – Ordenagailua {b}",
+    "lib.arcade.noHintFc": "Ez dago mugimendu baliagarririk. Desegin mugimendu batzuk edo hasi berriro."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Aisia eta jokoak",
-      "desc": "Zortearen gurpila, ausazko zenbaki sortzailea, sari-zozketak eta joko dibertigarriak."
+      "desc": "Zorionaren gurpila, ausazko zenbakiak eta nabigatzaileko jokoak: Sudokua, xakea, txinatar xakea, Gomoku, 2048, minaren bilatzailea, bloke erorkorrak, sugea, solitarioa eta adreilu-apurtzailea."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi ezkutua",
       "desc": "Jokatu Vietnamgo Xiangqi ezkutua: piezak buruz behera hasten dira eta lehen mugimenduaren ondoren irauli egiten dira. Ordenagailuaren aurka 10 mailatan edo linean lagunekin eta aurkari berriekin."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Irristatu eta batu zenbaki berdinak 2048 fitxa lortu arte; 10 maila 64tik 8192ra bitarteko helburuekin, desegitearekin."
+    },
+    "minesweeper": {
+      "name": "Minaren bilatzailea",
+      "desc": "Minaren bilatzaile klasikoa: ireki gelaxkak, jarri banderak eta asmatu zenbakiei esker non dauden minak; 10 maila 8x8tik 18x18ra, mugikorrean ere bai."
+    },
+    "block-puzzle": {
+      "name": "Bloke erorkorrak",
+      "desc": "Biratu eta pilatu bloke erorkorrak lerroak ezabatzeko; gero eta azkarragoak diren 10 maila, teklatuarekin edo ukipen-botoiekin."
+    },
+    "snake": {
+      "name": "Sugea",
+      "desc": "Gidatu sugea jan eta hazteko, hormak eta bere buztana saihestuz; gero eta azkarragoak diren 10 maila oztopoekin."
+    },
+    "solitaire": {
+      "name": "Solitarioa",
+      "desc": "Klondike solitario klasikoa: pilatu koloreak txandakatuz eta eraman kartak oinarrietara A-tik K-ra; atera 1 edo 3, desegitearekin eta pistekin."
+    },
+    "spider-solitaire": {
+      "name": "Armiarma solitarioa",
+      "desc": "1, 2 eta 4 paloko Armiarma: osatu palo bereko segidak K-tik A-ra mahaitik kentzeko; 10 maila desegitearekin eta pistekin."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell solitarioa: karta guztiak agerian; erabili gelaxka libreak kartak oinarrietara eramateko; 10 maila, gero eta gelaxka gutxiagorekin."
+    },
+    "gomoku": {
+      "name": "Gomoku (bost lerroan)",
+      "desc": "Jokatu Gomokura, bost lerroan, ordenagailuaren aurka 15x15 taulan; 10 maila errazetik zailera, desegitearekin."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Harrapatu aurkariaren fitxak zure kolorera aldatzeko; jokatu 8x8 Reversira ordenagailuaren aurka 10 mailatan."
+    },
+    "connect-four": {
+      "name": "Lau lerroan",
+      "desc": "Erorarazi fitxak zutabeetan eta lerrokatu 4 horizontalean, bertikalean edo diagonalean ordenagailuak baino lehen; 10 maila errazetik zailera."
+    },
+    "match-3": {
+      "name": "Lotu 3",
+      "desc": "Trukatu gozokiak berdinak diren 3 edo gehiago lotzeko eta kate-erreakzioak sortzeko; 10 maila helburuko puntuazioarekin eta mugimendu mugatuekin."
+    },
+    "brick-breaker": {
+      "name": "Adreilu-apurtzailea",
+      "desc": "Gidatu pala eta errebotarazi pilota adreilu guztiak apurtzeko; diseinu desberdineko 10 fase, saguarekin, ukipenarekin edo teklekin."
     }
   },
   "s": {

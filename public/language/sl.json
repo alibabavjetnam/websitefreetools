@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Nasprotnik je rekel pas. Če tudi vi rečete pas, se partija konča in prešteje.",
     "lib.online.modeAi": "Igraj proti računalniku",
     "lib.online.modeOnline": "Igraj na spletu",
-    "share.label": "Deli"
+    "share.label": "Deli",
+    "lib.arcade.aiNoMove": "Računalnik nima veljavne poteze — na vrsti ste.",
+    "lib.arcade.autoFinish": "Zloži vse",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Plošča s padajočimi kockami",
+    "lib.arcade.breakoutBoard": "Igrišče za razbijanje opek",
+    "lib.arcade.dealRow": "Razdeli vrsto",
+    "lib.arcade.down": "Dol",
+    "lib.arcade.drawN": "Vleci po {n}",
+    "lib.arcade.drop": "Spusti takoj",
+    "lib.arcade.flagMode": "Način zastavic",
+    "lib.arcade.freeCells": "Prosta polja: {n}",
+    "lib.arcade.left": "Levo",
+    "lib.arcade.length": "Dolžina: {n}/{t}",
+    "lib.arcade.lines": "Vrstice: {n}/{t}",
+    "lib.arcade.minesLeft": "Mine: {n}",
+    "lib.arcade.moves": "Poteze: {n}",
+    "lib.arcade.movesLeft": "Preostale poteze: {n}",
+    "lib.arcade.mustPass": "Nimate veljavne poteze — izpustite.",
+    "lib.arcade.next": "Naslednje kocke",
+    "lib.arcade.noHint": "Ni več koristne poteze. Izvlecite karto, razdelite vrsto ali začnite znova.",
+    "lib.arcade.note.2048": "S puščicami ali podrsavanjem premikate vse ploščice. Dve ploščici z enakim številom se ob stiku združita. Naredite ploščico, enako cilju, in stopnja je opravljena; če se nič več ne premakne, ste izgubili.",
+    "lib.arcade.note.blocks": "Vrtite in postavljajte padajoče kocke, da zapolnite vodoravne vrstice; polne vrstice izginejo. ← → premik, ↑ vrtenje, ↓ hitreje dol, preslednica spust, P premor. Počistite zahtevano število vrstic in stopnja je opravljena; če kocke dosežejo vrh, ste izgubili.",
+    "lib.arcade.note.breakout": "Premikajte miško, vlecite prst po igrišču ali uporabite ← →, da upravljate lopar in ne pustite, da žogica pade. Razbijte vse opeke in stopnja je opravljena; opeke z debelim robom je treba zadeti dvakrat. Imate 3 življenja. Preslednica začne ali ustavi.",
+    "lib.arcade.note.connect4": "Igrate z rdečimi in začnete. Tapnite stolpec, da vržete žeton; pade na najnižje prosto mesto. Zmaga, kdor prvi poveže 4 žetone vodoravno, navpično ali diagonalno.",
+    "lib.arcade.note.freecell": "Vse karte so odkrite. Premaknite vseh 52 kart na 4 temeljne kupčke po barvah, od A do K. Na mizi zlagajte padajoče in izmenično rdeče in črne. Prosta polja zgoraj levo hranijo po eno karto; koliko kart premaknete naenkrat, je odvisno od prostih polj in praznih stolpcev. Višje stopnje imajo manj prostih polj.",
+    "lib.arcade.note.gomoku": "Igrate z X in začnete; računalnik igra z O. Izmenično postavljate znak na prosto točko plošče 15×15. Zmaga, kdor prvi poveže 5 v vrsto vodoravno, navpično ali diagonalno.",
+    "lib.arcade.note.klondike": "Premaknite vseh 52 kart na 4 temeljne kupčke po barvah, od A do K. Na mizi zlagajte padajoče in izmenično rdeče in črne; v prazen stolpec gre lahko le K. Za vlečenje kart tapnite zaprt kupček zgoraj levo. Tapnite karto in nato mesto, ali jo tapnite znova, da se sama premakne na veljavno mesto. Stopnje 1–5 vlečejo po 1 karto, 6–10 po 3.",
+    "lib.arcade.note.match3": "Zamenjajte dva sosednja kosa (tapnite enega za drugim ali podrsajte), da sestavite vrsto 3 ali več enakih; vrsta poči in kosi nad njo padejo. Verižne reakcije množijo točke. Dosezite ciljni rezultat, preden zmanjka potez.",
+    "lib.arcade.note.minesweeper": "Tapnite polje, da ga odprete. Število pove, koliko min je v 8 sosednjih poljih. Sumljivo polje označite z zastavico z desnim klikom, dolgim pritiskom ali v načinu zastavic. Tapnite število, okoli katerega je že dovolj zastavic, da hitro odprete preostanek. Odprite vsa polja brez min in zmagate.",
+    "lib.arcade.note.reversi": "Igrate s črnimi in začnete. Postavite žeton tako, da med njim in drugim črnim ujamete enega ali več belih (vodoravno, navpično, diagonalno); ujeti žetoni se obrnejo v vašo barvo. Brez veljavne poteze izpustite. Ko je plošča polna, zmaga, kdor ima več žetonov.",
+    "lib.arcade.note.snake": "Upravljajte kačo s puščicami, WASD, gumbi spodaj ali podrsavanjem. Jejte rdečo hrano, da rastete; dosezite zahtevano dolžino in stopnja je opravljena. Od 3. stopnje trk v zid pomeni poraz; višje stopnje imajo ovire. Ne ugriznite se v rep.",
+    "lib.arcade.note.spider": "Na mizi zložite vsako barvo v zaporedje od K do A; popolna zaporedja 13 kart se odstranijo sama. Vsako karto lahko položite na karto, višjo za ena, a skupaj se premikajo le zaporedja iste barve. Če se zataknete, tapnite Razdeli vrsto (vsak stolpec mora imeti karte). Stopnje 1–3 ena barva, 4–7 dve, 8–10 štiri.",
+    "lib.arcade.pause": "Premor",
+    "lib.arcade.paused": "Začasno ustavljeno",
+    "lib.arcade.right": "Desno",
+    "lib.arcade.rotate": "Zavrti",
+    "lib.arcade.score": "Točke: {n}",
+    "lib.arcade.shuffled": "Ni potez — plošča je ponovno premešana.",
+    "lib.arcade.snakeBoard": "Igrišče kače",
+    "lib.arcade.suitsN": "{n} barve",
+    "lib.arcade.target": "Cilj: {n}",
+    "lib.arcade.up": "Gor",
+    "lib.arcade.youVsAi": "Vi {a} – Računalnik {b}",
+    "lib.arcade.noHintFc": "Ni več koristnih potez. Razveljavite nekaj potez ali začnite znova."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Zabava in igre",
-      "desc": "Kolo sreče, generator naključnih števil, žrebanje nagrad in zabavne igre."
+      "desc": "Kolo sreče, naključna števila in igre v brskalniku: sudoku, šah, kitajski šah, gomoku, 2048, minolovec, padajoče kocke, kača, pasjansa in razbijanje opek."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Skriti Xiangqi",
       "desc": "Igrajte vietnamski skriti Xiangqi: figure začnejo obrnjene in se odkrijejo po prvi potezi. Proti računalniku na 10 stopnjah ali na spletu s prijatelji in novimi nasprotniki."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Premikajte in združujte enaka števila, dokler ne nastane ploščica 2048; 10 stopenj s cilji od 64 do 8192, z razveljavitvijo."
+    },
+    "minesweeper": {
+      "name": "Minolovec",
+      "desc": "Klasični minolovec: odpirajte polja, postavljajte zastavice in iz števil sklepajte, kje so mine; 10 stopenj od 8x8 do 18x18, deluje tudi na telefonu."
+    },
+    "block-puzzle": {
+      "name": "Padajoče kocke",
+      "desc": "Vrtite in zlagajte padajoče kocke, da brišete vrstice; 10 vse hitrejših stopenj, s tipkovnico ali gumbi na dotik."
+    },
+    "snake": {
+      "name": "Kača",
+      "desc": "Vodite kačo do hrane, da raste, in se izogibajte zidovom in lastnemu repu; 10 hitrejših stopenj z ovirami."
+    },
+    "solitaire": {
+      "name": "Pasjansa",
+      "desc": "Klasična pasjansa Klondike: zlagajte z izmenjavanjem barv in premikajte karte na temeljne kupčke od A do K; vlečenje 1 ali 3, z razveljavitvijo in namigi."
+    },
+    "spider-solitaire": {
+      "name": "Pajkova pasjansa",
+      "desc": "Pajek z 1, 2 in 4 barvami: sestavljajte zaporedja iste barve od K do A, da jih odstranite z mize; 10 stopenj z razveljavitvijo in namigi."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Pasjansa FreeCell: vse karte so odkrite; s prostimi polji si pomagajte zložiti karte na temeljne kupčke; 10 stopenj z vse manj polji."
+    },
+    "gomoku": {
+      "name": "Gomoku (pet v vrsto)",
+      "desc": "Igrajte gomoku, pet v vrsto, proti računalniku na plošči 15x15; 10 stopenj od lahke do težke, z razveljavitvijo."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Ujemite nasprotnikove žetone, da jih obrnete v svojo barvo; igrajte Reversi 8x8 proti računalniku na 10 stopnjah."
+    },
+    "connect-four": {
+      "name": "Štiri v vrsto",
+      "desc": "Mečite žetone v stolpce in povežite 4 vodoravno, navpično ali diagonalno prej kot računalnik; 10 stopenj od lahke do težke."
+    },
+    "match-3": {
+      "name": "Poveži 3",
+      "desc": "Menjajte bonbone, povežite 3 ali več enakih in sprožite verižne reakcije; 10 stopenj s ciljnim rezultatom in omejenimi potezami."
+    },
+    "brick-breaker": {
+      "name": "Razbijanje opek",
+      "desc": "Upravljajte lopar in odbijajte žogico, da razbijete vse opeke; 10 stopenj z različno razporeditvijo, z miško, dotikom ali tipkami."
     }
   },
   "s": {

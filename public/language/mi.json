@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Kua whakawhiti te hoariri. Ki te whakawhiti hoki koe, ka mutu te tākaro, ka tatauria.",
     "lib.online.modeAi": "Tākaro ki te rorohiko",
     "lib.online.modeOnline": "Tākaro ā-ipurangi",
-    "share.label": "Tiri"
+    "share.label": "Tiri",
+    "lib.arcade.aiNoMove": "Kāore he nekehanga tika a te rorohiko — māu te wā.",
+    "lib.arcade.autoFinish": "Whakaoti aunoa",
+    "lib.arcade.best": "Tino kaute: {n}",
+    "lib.arcade.blocksBoard": "Papa poraka taka",
+    "lib.arcade.breakoutBoard": "Papa wāwāhi pereki",
+    "lib.arcade.dealRow": "Tohatoha rārangi hou",
+    "lib.arcade.down": "Raro",
+    "lib.arcade.drawN": "Tō {n}",
+    "lib.arcade.drop": "Tukua tonu",
+    "lib.arcade.flagMode": "Aratau haki",
+    "lib.arcade.freeCells": "Pūtau wātea: {n}",
+    "lib.arcade.left": "Mauī",
+    "lib.arcade.length": "Roa: {n}/{t}",
+    "lib.arcade.lines": "Rārangi: {n}/{t}",
+    "lib.arcade.minesLeft": "Pōmā: {n}",
+    "lib.arcade.moves": "Nekehanga: {n}",
+    "lib.arcade.movesLeft": "E {n} ngā nekehanga e toe ana",
+    "lib.arcade.mustPass": "Kāore āu nekehanga tika — ka hipa tō wā.",
+    "lib.arcade.next": "Ngā wāhanga e whai ake",
+    "lib.arcade.noHint": "Kāore he nekehanga whai hua e toe ana. Tōia he kāri, tohatohaina he rārangi hou, tīmata anō rānei.",
+    "lib.arcade.note.2048": "Whakamahia ngā pātuhi pere, kōkiri rānei kia nekehia ngā taera katoa. Ka hono ngā taera e rua he ōrite te nama ina pā tētahi ki tētahi. Hangaia he taera e ōrite ana ki te whāinga kia eke te taumata; ki te kore he taera e taea te neke, ka hinga koe.",
+    "lib.arcade.note.blocks": "Hurihia, whakatakotoria ngā wāhanga taka kia kī ai ngā rārangi whakapae; ka ngaro ngā rārangi kī. ← → neke, ↑ huri, ↓ heke tere, Mokowā tukua tonu, P tatari. Whakawāteatia te maha o ngā rārangi e hiahiatia ana kia eke te taumata; ki te tae ngā wāhanga ki runga, ka hinga koe.",
+    "lib.arcade.note.breakout": "Nekehia te kiore, tōia tō matimati ki te papa, whakamahia rānei te ← → hei whakahaere i te hoe kia noho te pōro ki te kēmu. Wāwāhia ngā pereki katoa kia eke te taumata; e rua ngā patu mō ngā pereki he mātotoru te taha. E 3 ō oranga. Ka tīmata, ka tatari rānei te Mokowā.",
+    "lib.arcade.note.connect4": "Ko koe te whero, ā, ko koe te tuatahi. Pātō i tētahi tīwae kia taka he kōpae; ka taka ki te wāhi wātea tino raro. Ko te tuatahi ka rārangi i ngā kōpae e 4 whakapae, poutū, hauroki rānei ka toa.",
+    "lib.arcade.note.freecell": "Kua huaki ngā kāri katoa. Nekehia ngā kāri 52 katoa ki ngā tūāpapa 4 e ai ki te momo, mai i te A ki te K. I runga i te tēpu, hangaia whakararo me ngā tae whakawhitiwhiti. Ka pupuri ia pūtau wātea kei runga mauī i te kāri kotahi; ko te maha o ngā kāri ka taea te neke i te wā kotahi ka whakawhirinaki ki ngā pūtau wātea me ngā tīwae kau. He iti iho ngā pūtau o ngā taumata teitei.",
+    "lib.arcade.note.gomoku": "Ko koe te X, ā, ko koe te tuatahi; ko te rorohiko te O. Me whakawhiti tahi kōrua ki te tuku tohu ki tētahi ira wātea o te papa 15×15. Ko te tuatahi ka whiwhi 5 i te rārangi whakapae, poutū, hauroki rānei ka toa.",
+    "lib.arcade.note.klondike": "Nekehia ngā kāri 52 katoa ki ngā tūāpapa 4 e ai ki te momo, mai i te A ki te K. I runga i te tēpu, hangaia whakararo me ngā tae whakawhitiwhiti; ko te K anake ka taea te whakanoho ki tētahi tīwae kau. Pātō i te puranga kōaro kei runga mauī kia tō kāri. Pātō i tētahi kāri kātahi i te wāhi e hiahia ana koe, pātō anō rānei kia haere noa ia ki tētahi wāhi tika. Taumata 1–5: tō 1; taumata 6–10: tō 3.",
+    "lib.arcade.note.match3": "Whakawhitihia ngā wāhanga tata e rua (pātō i tētahi kātahi i tērā atu, kōkiri rānei) kia hanga he rārangi o te 3, neke atu rānei e ōrite ana; ka pahū te rārangi, ka taka iho ngā wāhanga o runga. Ka whakareatia ō piro e ngā tauhohenga mekameka. Taea te piro whāinga i mua i te pau o ngā nekehanga.",
+    "lib.arcade.note.minesweeper": "Pātō i tētahi pūtau kia huakina. Ka whakaatu te nama i te maha o ngā pōmā kei ngā pūtau e 8 e karapoti ana. Tohua he pōmā e whakapaetia ana mā te pāwhiri matau, te pēhi roa, te aratau haki rānei. Pātō i tētahi nama kua nui kē ngā haki e karapoti ana kia tere huakina ērā atu. Huakina ngā pūtau katoa kāore he pōmā kia toa.",
+    "lib.arcade.note.reversi": "Ko koe te pango, ā, ko koe te tuatahi. Whakatakotoria tētahi kōpae kia mau tētahi kōpae mā, neke atu rānei, i waenganui i a ia me tētahi atu kōpae pango (whakapae, poutū, hauroki rānei); ka huri ngā kōpae kua mau ki tō tae. Ki te kore āu nekehanga tika, ka hipa tō wā. Ina kī te papa, ko te mea he maha ake ōna kōpae ka toa.",
+    "lib.arcade.note.snake": "Whakahaerehia te nākahi ki ngā pātuhi pere, ki te WASD, ki ngā pātene i raro, mā te kōkiri rānei. Kainga te kai whero kia tipu; taea te roa e hiahiatia ana kia eke te taumata. Mai i te taumata 3, ka mutu te kēmu ina tukituki ki te pakitara; he ārai kei ngā taumata teitei. Kaua e tukituki ki tōu ake hiku.",
+    "lib.arcade.note.spider": "I runga i te tēpu, hangaia ia momo hei raupapa mai i te K whakararo ki te A; ka tangohia aunoatia tētahi raupapa katoa o ngā kāri 13. Ka taea e tētahi kāri te noho ki runga i tētahi kāri kotahi te teitei ake, engari ko ngā raupapa o te momo kotahi anake ka neke tahi. Ki te raru koe, pātō i te Tohatoha rārangi hou (me whai kāri ia tīwae). Taumata 1–3: kotahi te momo; 4–7: e rua; 8–10: e whā.",
+    "lib.arcade.pause": "Tatari",
+    "lib.arcade.paused": "E tatari ana",
+    "lib.arcade.right": "Matau",
+    "lib.arcade.rotate": "Huri",
+    "lib.arcade.score": "Piro: {n}",
+    "lib.arcade.shuffled": "Kāore he nekehanga i toe — kua kōrorirori anō te papa.",
+    "lib.arcade.snakeBoard": "Papa nākahi",
+    "lib.arcade.suitsN": "{n} momo",
+    "lib.arcade.target": "Whāinga: {n}",
+    "lib.arcade.up": "Runga",
+    "lib.arcade.youVsAi": "Koe {a} – Rorohiko {b}",
+    "lib.arcade.noHintFc": "Kāore he nekehanga whai hua e toe ana. Wetekina ētahi nekehanga, tīmata anō rānei."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Ngahau me ngā Tākaro",
-      "desc": "Wira waimarie, kaihanga tau matapōkere, tōkahi taonga me ngā kēmu ngahau."
+      "desc": "Wīra waimarie, nama matapōkere me ngā kēmu pūtirotiro: Sudoku, te tākaro taki, te tākaro taki Hainamana, Gomoku, 2048, kimi pōmā, poraka taka, nākahi, solitaire me te wāwāhi pereki."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi huna",
       "desc": "Tākarohia te Xiangqi huna o Whītināmu: ka tīmata ngā wāhanga kōaro, ā, ka hurihia i muri i te nekehanga tuatahi. Ki te rorohiko i ngā taumata 10, ā-ipurangi rānei me ngā hoa me ngā hoariri hou."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Kōkiritia, honoa ngā nama ōrite kia puta te taera 2048; 10 taumata me ngā whāinga mai i te 64 ki te 8192, me te wetekina."
+    },
+    "minesweeper": {
+      "name": "Kimi Pōmā",
+      "desc": "Te kēmu kimi pōmā tawhito: huakina ngā pūtau, whakatakotoria ngā haki, ā, mā ngā nama e mōhio ai kei hea ngā pōmā; 10 taumata mai i te 8x8 ki te 18x18, ka mahi i ngā waea."
+    },
+    "block-puzzle": {
+      "name": "Poraka Taka",
+      "desc": "Hurihia, whakatakotoria ngā poraka taka kia whakawāteatia ngā rārangi; 10 taumata e tere haere ana, mā te papapātuhi, mā ngā pātene pā rānei."
+    },
+    "snake": {
+      "name": "Nākahi",
+      "desc": "Whakahaerehia te nākahi kia kai, kia tipu, me te karo i ngā pakitara me tōna ake hiku; 10 taumata tere ake me ngā ārai."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klondike Solitaire tawhito: hangaia whakararo me ngā tae whakawhitiwhiti, nekehia ngā kāri ki ngā tūāpapa mai i te A ki te K; tō 1, 3 rānei, me te wetekina me ngā tohu āwhina."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Pūngāwerewere",
+      "desc": "Pūngāwerewere me ngā momo 1, 2, 4: hangaia ngā raupapa momo kotahi mai i te K ki te A kia tangohia i te tēpu; 10 taumata me te wetekina me ngā tohu āwhina."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: kua huaki ngā kāri katoa; whakamahia ngā pūtau wātea hei neke i ngā kāri ki ngā tūāpapa; 10 taumata me te iti haere o ngā pūtau."
+    },
+    "gomoku": {
+      "name": "Gomoku (e rima i te rārangi)",
+      "desc": "Tākarohia te Gomoku, e rima i te rārangi, ki te rorohiko i runga i te papa 15x15; 10 taumata mai i te māmā ki te uaua, me te wetekina."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Hopukina ngā kōpae a tō hoariri kia huri ki tō tae; tākarohia te Reversi 8x8 ki te rorohiko puta noa i ngā taumata 10."
+    },
+    "connect-four": {
+      "name": "E whā i te Rārangi",
+      "desc": "Tukua ngā kōpae ki ngā tīwae, ā, rārangitia kia 4 whakapae, poutū, hauroki rānei i mua i te rorohiko; 10 taumata mai i te māmā ki te uaua."
+    },
+    "match-3": {
+      "name": "Hono 3",
+      "desc": "Whakawhitihia ngā rare kia hono te 3, neke atu rānei e ōrite ana, kia hū ake ngā tauhohenga mekameka; 10 taumata me te piro whāinga me ngā nekehanga herea."
+    },
+    "brick-breaker": {
+      "name": "Wāwāhi Pereki",
+      "desc": "Whakahaerehia te hoe, whakapanaia te pōro kia wāwāhia ngā pereki katoa; 10 wāhanga me ngā tahora rerekē, mā te kiore, mā te pā, mā ngā pātuhi rānei."
     }
   },
   "s": {

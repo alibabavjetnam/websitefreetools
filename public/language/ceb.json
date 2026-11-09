@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Mi-pass ang kontra. Kon mo-pass ka usab, matapos ang dula ug ihapon.",
     "lib.online.modeAi": "Dula batok sa kompyuter",
     "lib.online.modeOnline": "Dula online",
-    "share.label": "Ipaambit"
+    "share.label": "Ipaambit",
+    "lib.arcade.aiNoMove": "Walay balido nga lihok ang kompyuter — ikaw na.",
+    "lib.arcade.autoFinish": "Awtomatikong humanon",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Dapit sa nahulog nga mga bloke",
+    "lib.arcade.breakoutBoard": "Dapit sa pagbuak og tisa",
+    "lib.arcade.dealRow": "Pag-apod og bag-ong laray",
+    "lib.arcade.down": "Ubos",
+    "lib.arcade.drawN": "Kuha og {n}",
+    "lib.arcade.drop": "Ihulog dayon",
+    "lib.arcade.flagMode": "Mode sa bandila",
+    "lib.arcade.freeCells": "Libreng kahon: {n}",
+    "lib.arcade.left": "Wala",
+    "lib.arcade.length": "Gitas-on: {n}/{t}",
+    "lib.arcade.lines": "Linya: {n}/{t}",
+    "lib.arcade.minesLeft": "Mina: {n}",
+    "lib.arcade.moves": "Lihok: {n}",
+    "lib.arcade.movesLeft": "{n} ka lihok nga nahabilin",
+    "lib.arcade.mustPass": "Wala kay balido nga lihok — molaktaw ka.",
+    "lib.arcade.next": "Sunod nga mga piraso",
+    "lib.arcade.noHint": "Wala nay mapuslanong lihok. Kuha og kard, pag-apod og bag-ong laray o sugdi pag-usab.",
+    "lib.arcade.note.2048": "Gamita ang mga arrow key o i-swipe aron ibalhin ang tanang tile. Ang duha ka tile nga parehas og numero maghiusa kon magtandog. Paghimo og tile nga parehas sa target aron makapasar sa level; kon walay tile nga makalihok, pildi ka.",
+    "lib.arcade.note.blocks": "Ituyok ug ibutang ang nahulog nga mga piraso aron mapuno ang pinahigdang mga linya; mawala ang puno nga mga linya. ← → ibalhin, ↑ ituyok, ↓ paspas nga ipaubos, Space ihulog dayon, P hunong kadiyot. Hawana ang gikinahanglan nga gidaghanon sa linya aron makapasar; kon moabot sa ibabaw ang mga piraso, pildi ka.",
+    "lib.arcade.note.breakout": "Ilihok ang mouse, iguyod ang tudlo sa dapit o gamita ang ← → aron giyahan ang paddle ug dili mahulog ang bola. Buaka ang tanang tisa aron makapasar sa level; ang tisa nga baga og ngilit kinahanglan og duha ka igo. Aduna kay 3 ka kinabuhi. Ang Space mosugod o mohunong kadiyot.",
+    "lib.arcade.note.connect4": "Ikaw ang pula ug ikaw ang una. I-tap ang usa ka kolum aron ihulog ang disk; mahulog kini sa pinakaubos nga bakanteng dapit. Ang una nga makalinya og 4 ka disk nga pinahigda, pinatindog o pahilis ang modaog.",
+    "lib.arcade.note.freecell": "Ang tanang kard nakaatubang sa ibabaw. Ibalhin ang tanang 52 ka kard ngadto sa 4 ka pundasyon sumala sa suit, gikan A hangtod K. Sa lamesa, ihan-ay paubos nga magpuli-puli og kolor. Ang libreng kahon sa ibabaw nga wala makakupot og usa ka kard matag usa; pila ka kard ang mabalhin dungan depende sa libreng kahon ug walay sulod nga kolum. Mas gamay og kahon ang mas taas nga level.",
+    "lib.arcade.note.gomoku": "Ikaw ang X ug ikaw ang una; ang kompyuter ang O. Magpuli-puli kamo sa pagbutang og marka sa bakanteng punto sa 15×15 nga board. Ang una nga makakuha og 5 nga sunod-sunod nga pinahigda, pinatindog o pahilis ang modaog.",
+    "lib.arcade.note.klondike": "Ibalhin ang tanang 52 ka kard ngadto sa 4 ka pundasyon sumala sa suit, gikan A hangtod K. Sa lamesa, ihan-ay paubos nga magpuli-puli og kolor; K lang ang mabutang sa walay sulod nga kolum. I-tap ang nakataob nga tumpok sa ibabaw nga wala aron mokuha og kard. I-tap ang kard dayon ang dapit nga gusto nimong butangan, o i-tap kini pag-usab aron kini mismo moadto sa balidong dapit. Level 1–5: kuha og 1; level 6–10: kuha og 3.",
+    "lib.arcade.note.match3": "Bayloa ang duha ka silingang piraso (i-tap ang usa dayon ang lain, o i-swipe) aron makahimo og linya nga 3 o labaw pa nga parehas; mobuto ang linya ug mahulog ang mga piraso sa ibabaw. Ang sunod-sunod nga reaksiyon modoble sa puntos. Abta ang target nga puntos sa dili pa mahurot ang mga lihok.",
+    "lib.arcade.note.minesweeper": "I-tap ang kahon aron ablihan. Ang numero nagpakita kon pila ka mina ang anaa sa 8 ka kahon palibot niini. Markahi ang gidudahang mina pinaagi sa right click, dugay nga pagpislit o mode sa bandila. I-tap ang numero nga aduna nay igong bandila palibot aron dali maablihan ang uban. Ablihi ang tanang kahon nga walay mina aron modaog.",
+    "lib.arcade.note.reversi": "Ikaw ang itom ug ikaw ang una. Ibutang ang disk aron maipit ang usa o labaw pa nga puting disk taliwala niini ug sa laing itom nga disk (pinahigda, pinatindog o pahilis); ang naipit nga mga disk mabali ngadto sa imong kolor. Kon wala kay balido nga lihok, molaktaw ka. Kon puno na ang board, ang daghan og disk ang modaog.",
+    "lib.arcade.note.snake": "Giyahi ang bitin gamit ang mga arrow key, WASD, ang mga buton sa ubos o pinaagi sa pag-swipe. Kaona ang pula nga pagkaon aron motubo; abta ang gikinahanglan nga gitas-on aron makapasar. Sukad sa level 3, ang pagbangga sa paril makatapos sa duwa; ang mas taas nga level adunay babag. Ayaw ibangga ang kaugalingong ikog.",
+    "lib.arcade.note.spider": "Sa lamesa, ihan-ay ang matag suit gikan K paubos hangtod A; ang kompleto nga 13 ka kard nga han-ay awtomatikong makuha. Bisan unsang kard mabutang sa kard nga usa ka ranggo nga mas taas, apan ang han-ay nga parehas og suit lang ang maglihok dungan. Kon ma-stuck ka, i-tap ang Pag-apod og bag-ong laray (kinahanglan adunay kard ang matag kolum). Level 1–3: usa ka suit; 4–7: duha; 8–10: upat.",
+    "lib.arcade.pause": "Hunong kadiyot",
+    "lib.arcade.paused": "Nahunong kadiyot",
+    "lib.arcade.right": "Tuo",
+    "lib.arcade.rotate": "Ituyok",
+    "lib.arcade.score": "Puntos: {n}",
+    "lib.arcade.shuffled": "Wala nay lihok — gisagol pag-usab ang board.",
+    "lib.arcade.snakeBoard": "Dapit sa bitin",
+    "lib.arcade.suitsN": "{n} ka suit",
+    "lib.arcade.target": "Target: {n}",
+    "lib.arcade.up": "Ibabaw",
+    "lib.arcade.youVsAi": "Ikaw {a} – Kompyuter {b}",
+    "lib.arcade.noHintFc": "Wala nay mapuslanong lihok. I-undo ang pipila ka lihok o sugdi pag-usab."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Kalingawan ug mga dula",
-      "desc": "Ligid sa suwerte, random number generator, mga bunot sa premyo ug mga malipayong dula."
+      "desc": "Ligid sa swerte, random nga numero ug mga duwa sa browser: Sudoku, chess, Chinese chess, Gomoku, 2048, minesweeper, nahulog nga mga bloke, bitin, solitaire ug tagbuak og tisa."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Tinagong Xiangqi",
       "desc": "Dula og Vietnamese nga tinagong Xiangqi: ang mga piyesa magsugod nga gitaob ug balihon human sa unang lihok. Batok sa kompyuter sa 10 ka lebel o online uban sa mga higala ug bag-ong kontra."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "I-slide ug hiusaha ang parehas nga numero aron mahimo ang 2048 nga tile; 10 ka level nga adunay target gikan 64 hangtod 8192, adunay undo."
+    },
+    "minesweeper": {
+      "name": "Minesweeper",
+      "desc": "Klasikong minesweeper: ablihi ang mga kahon, butangi og bandila ug sabta gikan sa mga numero kon asa ang mina; 10 ka level gikan 8x8 hangtod 18x18, mogana usab sa telepono."
+    },
+    "block-puzzle": {
+      "name": "Nahulog nga mga Bloke",
+      "desc": "Ituyok ug tapuka ang nahulog nga mga bloke aron mahawan ang mga linya; 10 ka level nga mopaspas, gamit ang keyboard o mga buton nga tandugon."
+    },
+    "snake": {
+      "name": "Bitin",
+      "desc": "Giyahi ang bitin aron mokaon ug motubo nga dili mobangga sa paril o sa kaugalingong ikog; 10 ka level nga mas paspas nga adunay babag."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klasikong Klondike Solitaire: ihan-ay paubos nga magpuli-puli og kolor ug ibalhin ang mga kard sa pundasyon gikan A hangtod K; kuha og 1 o 3, adunay undo ug tabang."
+    },
+    "spider-solitaire": {
+      "name": "Spider Solitaire",
+      "desc": "Spider nga adunay 1, 2 ug 4 ka suit: paghimo og han-ay nga parehas og suit gikan K hangtod A aron makuha sa lamesa; 10 ka level nga adunay undo ug tabang."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: ang tanang kard nakaatubang sa ibabaw; gamita ang libreng kahon aron ibalhin ang mga kard sa pundasyon; 10 ka level nga mokunhod ang kahon."
+    },
+    "gomoku": {
+      "name": "Gomoku (lima nga sunod-sunod)",
+      "desc": "Dulaa ang Gomoku, lima nga sunod-sunod, batok sa kompyuter sa 15x15 nga board; 10 ka level gikan sayon hangtod lisod, adunay undo."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Ipita ang mga disk sa kaatbang aron mabali ngadto sa imong kolor; dulaa ang 8x8 nga Reversi batok sa kompyuter sa 10 ka level."
+    },
+    "connect-four": {
+      "name": "Upat nga Sunod-sunod",
+      "desc": "Ihulog ang mga disk sa kolum ug ilinya ang 4 nga pinahigda, pinatindog o pahilis una sa kompyuter; 10 ka level gikan sayon hangtod lisod."
+    },
+    "match-3": {
+      "name": "Ipares ang 3",
+      "desc": "Bayloa ang mga kendi aron maipares ang 3 o labaw pa nga parehas ug makapahinabo og sunod-sunod nga reaksiyon; 10 ka level nga adunay target nga puntos ug limitado nga lihok."
+    },
+    "brick-breaker": {
+      "name": "Tagbuak og Tisa",
+      "desc": "Giyahi ang paddle ug pabawoga ang bola aron mabuak ang tanang tisa; 10 ka yugto nga lainlain og han-ay, gamit ang mouse, tandog o mga key."
     }
   },
   "s": {

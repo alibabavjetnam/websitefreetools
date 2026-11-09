@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Rinne an céile comhraic pas. Má dhéanann tusa pas freisin, críochnóidh an cluiche agus comhairfear é.",
     "lib.online.modeAi": "Imir in aghaidh an ríomhaire",
     "lib.online.modeOnline": "Imir ar líne",
-    "share.label": "Comhroinn"
+    "share.label": "Comhroinn",
+    "lib.arcade.aiNoMove": "Níl aon bheart dleathach ag an ríomhaire — do shealsa atá ann.",
+    "lib.arcade.autoFinish": "Críochnaigh go huathoibríoch",
+    "lib.arcade.best": "Curiarracht: {n}",
+    "lib.arcade.blocksBoard": "Clár na mbloc a thiteann",
+    "lib.arcade.breakoutBoard": "Páirc bhriste na mbríce",
+    "lib.arcade.dealRow": "Déil ró nua",
+    "lib.arcade.down": "Síos",
+    "lib.arcade.drawN": "Tarraing {n}",
+    "lib.arcade.drop": "Lig titim láithreach",
+    "lib.arcade.flagMode": "Mód brataí",
+    "lib.arcade.freeCells": "Cealla saora: {n}",
+    "lib.arcade.left": "Clé",
+    "lib.arcade.length": "Fad: {n}/{t}",
+    "lib.arcade.lines": "Línte: {n}/{t}",
+    "lib.arcade.minesLeft": "Mianaigh: {n}",
+    "lib.arcade.moves": "Bearta: {n}",
+    "lib.arcade.movesLeft": "{n} bheart fágtha",
+    "lib.arcade.mustPass": "Níl aon bheart dleathach agat — téann do shealsa thart.",
+    "lib.arcade.next": "Na píosaí eile",
+    "lib.arcade.noHint": "Níl aon bheart úsáideach fágtha. Tarraing cárta, déil ró nua nó tosaigh as an nua.",
+    "lib.arcade.note.2048": "Úsáid na saigheadeochracha nó svaidhpeáil chun na tíleanna go léir a bhogadh. Nuair a bhuaileann dhá thíl leis an uimhir chéanna le chéile, déantar tíl amháin díobh. Déan tíl atá cothrom leis an sprioc chun an leibhéal a chur díot; mura féidir le tíl ar bith bogadh, cailleann tú.",
+    "lib.arcade.note.blocks": "Rothlaigh agus cuir na píosaí atá ag titim chun línte cothrománacha a líonadh; imíonn línte iomlána. ← → bog, ↑ rothlaigh, ↓ titim níos tapúla, Spás lig titim láithreach, P sos. Glan an líon línte atá ag teastáil chun an leibhéal a chur díot; má shroicheann na píosaí an barr, cailleann tú.",
+    "lib.arcade.note.breakout": "Bog an luch, tarraing do mhéar ar an bpáirc nó úsáid ← → chun an slacán a stiúradh agus an liathróid a choinneáil sa chluiche. Bris gach bríce chun an leibhéal a chur díot; teastaíonn dhá bhuille ó bhríceanna a bhfuil imeall tiubh orthu. Tá 3 shaol agat. Tosaíonn nó stopann Spás an cluiche.",
+    "lib.arcade.note.connect4": "Imríonn tú leis an dearg agus tosaíonn tú. Tapáil colún chun diosca a ligean síos; titeann sé go dtí an spás folamh is ísle. Is é an chéad duine a chuireann 4 dhiosca i líne go cothrománach, go hingearach nó go trasnánach a bhuann.",
+    "lib.arcade.note.freecell": "Tá na cártaí go léir aghaidh suas. Bog na 52 cárta go dtí na 4 bhonn de réir dath, ó A go K. Ar an mbord, tóg síos ag malartú dathanna. Coinníonn gach cill shaor ag barr ar chlé cárta amháin; braitheann líon na gcártaí is féidir a bhogadh le chéile ar na cealla saora agus na colúin fholmha. Bíonn níos lú ceall ag leibhéil níos airde.",
+    "lib.arcade.note.gomoku": "Imríonn tú le X agus tosaíonn tú; imríonn an ríomhaire le O. Cuireann sibh marc ar phointe folamh den chlár 15×15 ar bhur seal. Is é an chéad duine a fhaigheann 5 i líne go cothrománach, go hingearach nó go trasnánach a bhuann.",
+    "lib.arcade.note.klondike": "Bog na 52 cárta go dtí na 4 bhonn de réir dath, ó A go K. Ar an mbord, tóg síos ag malartú dathanna; ní féidir ach K a chur i gcolún folamh. Tapáil an carn bunoscionn ag barr ar chlé chun cártaí a tharraingt. Tapáil cárta agus ansin an áit ar mhaith leat é a chur, nó tapáil arís é chun go rachaidh sé féin go háit dhleathach. Leibhéil 1–5: tarraing 1; leibhéil 6–10: tarraing 3.",
+    "lib.arcade.note.match3": "Malartaigh dhá phíosa in aice a chéile (tapáil ceann amháin agus ansin an ceann eile, nó svaidhpeáil) chun líne de 3 nó níos mó den chineál céanna a dhéanamh; pléascann an líne agus titeann na píosaí os a cionn. Iolraíonn imoibrithe slabhra na pointí. Sroich an scór sprice sula mbíonn na bearta ídithe.",
+    "lib.arcade.note.minesweeper": "Tapáil cill chun í a oscailt. Taispeánann uimhir cé mhéad mianach atá sna 8 gcill thart uirthi. Marcáil mianach amhrasach le cliceáil ar dheis, brú fada nó an mód brataí. Tapáil uimhir a bhfuil go leor brataí thart uirthi cheana chun an chuid eile a oscailt go tapa. Oscail gach cill gan mhianach chun an bua a fháil.",
+    "lib.arcade.note.reversi": "Imríonn tú leis an dubh agus tosaíonn tú. Cuir diosca síos sa chaoi go ngabhann sé diosca bán amháin nó níos mó idir é féin agus diosca dubh eile (go cothrománach, go hingearach nó go trasnánach); casann na dioscaí gafa go dtí do dhath féin. Mura bhfuil beart dleathach agat, téann do shealsa thart. Nuair a bhíonn an clár lán, is é an té leis an líon is mó dioscaí a bhuann.",
+    "lib.arcade.note.snake": "Stiúir an nathair leis na saigheadeochracha, WASD, na cnaipí thíos nó trí svaidhpeáil. Ith an bia dearg chun fás; sroich an fad atá ag teastáil chun an leibhéal a chur díot. Ó leibhéal 3 ar aghaidh, críochnaíonn an cluiche má bhuaileann tú balla; bíonn constaicí ar leibhéil níos airde. Ná buail isteach i d'eireaball féin.",
+    "lib.arcade.note.spider": "Tóg gach dath ina shraith ó K síos go A ar an mbord; baintear sraith iomlán 13 chárta go huathoibríoch. Is féidir cárta ar bith a chur ar chárta atá céim amháin níos airde, ach ní bhogann ach sraitheanna den dath céanna le chéile. Má bhíonn tú i bhfostú, tapáil Déil ró nua (caithfidh cártaí a bheith i ngach colún). Leibhéil 1–3: dath amháin; 4–7: dhá dhath; 8–10: ceithre dhath.",
+    "lib.arcade.pause": "Sos",
+    "lib.arcade.paused": "Ar sos",
+    "lib.arcade.right": "Deas",
+    "lib.arcade.rotate": "Rothlaigh",
+    "lib.arcade.score": "Scór: {n}",
+    "lib.arcade.shuffled": "Ní raibh aon bheart fágtha — suaitheadh an clár.",
+    "lib.arcade.snakeBoard": "Páirc na nathrach",
+    "lib.arcade.suitsN": "{n} dhath",
+    "lib.arcade.target": "Sprioc: {n}",
+    "lib.arcade.up": "Suas",
+    "lib.arcade.youVsAi": "Tusa {a} – Ríomhaire {b}",
+    "lib.arcade.noHintFc": "Níl aon bheart úsáideach fágtha. Cealaigh cúpla beart nó tosaigh as an nua."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Siamsaíocht & Cluichí",
-      "desc": "Roth an tsaoil, gineadóir uimhreacha randamacha, tarraingtí duaiseanna agus cluichí spraíúla."
+      "desc": "Roth an áidh, uimhreacha randamacha agus cluichí brabhsálaí: Sudoku, ficheall, ficheall Síneach, Gomoku, 2048, aimsitheoir mianach, bloic a thiteann, nathair, cluiche aonair agus briseadh bríce."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi folaithe",
       "desc": "Imir Xiangqi folaithe Vítneamach: tosaíonn na píosaí béal faoi agus iompaítear iad tar éis an chéad bhirt. In aghaidh an ríomhaire ar 10 leibhéal nó ar líne le cairde agus céilí comhraic nua."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Sleamhnaigh agus cumaisc uimhreacha comhionanna go dtí an tíl 2048; 10 leibhéal le spriocanna ó 64 go 8192, le cealú."
+    },
+    "minesweeper": {
+      "name": "Aimsitheoir Mianach",
+      "desc": "An t-aimsitheoir mianach clasaiceach: oscail cealla, cuir brataí agus oibrigh amach ó na huimhreacha cá bhfuil na mianaigh; 10 leibhéal ó 8x8 go 18x18, oibríonn ar fhóin freisin."
+    },
+    "block-puzzle": {
+      "name": "Bloic a Thiteann",
+      "desc": "Rothlaigh agus carn na bloic a thiteann chun línte a ghlanadh; 10 leibhéal atá ag éirí níos tapúla, le méarchlár nó cnaipí tadhaill."
+    },
+    "snake": {
+      "name": "Nathair",
+      "desc": "Stiúir an nathair chun ithe agus fás gan na ballaí ná a heireaball féin a bhualadh; 10 leibhéal níos tapúla le constaicí."
+    },
+    "solitaire": {
+      "name": "Cluiche Aonair",
+      "desc": "Cluiche aonair clasaiceach Klondike: tóg síos ag malartú dathanna agus bog cártaí go dtí na boinn ó A go K; tarraing 1 nó 3, le cealú agus leideanna."
+    },
+    "spider-solitaire": {
+      "name": "Cluiche Aonair an Damháin Alla",
+      "desc": "Damhán Alla le 1, 2 agus 4 dhath: tóg sraitheanna den dath céanna ó K go A chun iad a bhaint den bhord; 10 leibhéal le cealú agus leideanna."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "Cluiche aonair FreeCell: tá gach cárta aghaidh suas; úsáid na cealla saora chun cártaí a bhogadh go dtí na boinn; 10 leibhéal le níos lú ceall de réir a chéile."
+    },
+    "gomoku": {
+      "name": "Gomoku (cúig i líne)",
+      "desc": "Imir Gomoku, cúig i líne, in aghaidh an ríomhaire ar chlár 15x15; 10 leibhéal ó éasca go deacair, le cealú."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Gabh dioscaí do chéile comhraic chun iad a chasadh go dtí do dhath féin; imir Reversi 8x8 in aghaidh an ríomhaire thar 10 leibhéal."
+    },
+    "connect-four": {
+      "name": "Ceithre i Líne",
+      "desc": "Lig dioscaí síos sna colúin agus cuir 4 i líne go cothrománach, go hingearach nó go trasnánach roimh an ríomhaire; 10 leibhéal ó éasca go deacair."
+    },
+    "match-3": {
+      "name": "Meaitseáil 3",
+      "desc": "Malartaigh milseáin chun 3 nó níos mó den chineál céanna a mheaitseáil agus imoibrithe slabhra a spreagadh; 10 leibhéal le scór sprice agus teorainn bheart."
+    },
+    "brick-breaker": {
+      "name": "Briseadh Bríce",
+      "desc": "Stiúir an slacán agus preab an liathróid chun gach bríce a bhriseadh; 10 gcéim le leagan amach éagsúil, le luch, tadhall nó eochracha."
     }
   },
   "s": {

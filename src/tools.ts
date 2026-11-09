@@ -37,7 +37,7 @@ export const GROUPS: ToolGroup[] = [
   { id: 'device', name: 'Kiểm tra thiết bị', description: 'Thử webcam, quay màn hình, đo tốc độ gõ phím và tốc độ click chuột.' },
   { id: 'media', name: 'Âm thanh & video', description: 'Nén video, tách nhạc MP3 và lên dây đàn guitar ngay trên trình duyệt.' },
   { id: 'dev', name: 'Công cụ tin học', description: 'Định dạng, kiểm lỗi, mã hoá và chuyển đổi mã nguồn.' },
-  { id: 'entertainment', name: 'Game giải trí', description: 'Vòng quay may mắn, quay số ngẫu nhiên, bốc thăm và các trò chơi trí tuệ: Sudoku, cờ vua, cờ tướng, cờ vây, ghi nhớ hình.' },
+  { id: 'entertainment', name: 'Game giải trí', description: 'Vòng quay may mắn, quay số ngẫu nhiên và các trò chơi trên trình duyệt: Sudoku, cờ vua, cờ tướng, cờ caro, 2048, dò mìn, xếp gạch, rắn săn mồi, xếp bài, phá gạch.' },
 ];
 
 const tool = (id: string, group: string, name: string, description: string, iconSample?: string): ToolInfo => ({
@@ -143,6 +143,18 @@ export const TOOLS: ToolInfo[] = [
   tool('co-up', 'entertainment', 'Cờ úp', 'Chơi cờ úp: quân úp ngẫu nhiên, đi xong mới lật. Đánh với máy 10 cấp hoặc mời bạn, ghép với người lạ qua mạng.'),
   tool('go-game', 'entertainment', 'Cờ vây', 'Chơi cờ vây với máy qua 10 cấp, hoặc mời bạn, ghép với người lạ qua mạng trên bàn 9x9, 13x13, 19x19. Tự chấm điểm khi kết thúc.'),
   tool('memory-shapes', 'entertainment', 'Ghi nhớ hình và màu', 'Các ô hình và màu lộ ra 5 giây rồi úp lại; nhớ và chọn đúng ô theo hình mẫu, 10 cấp từ dễ đến khó.'),
+  tool('game-2048', 'entertainment', '2048', 'Trượt và gộp các ô số giống nhau để tạo ô 2048; 10 cấp từ mục tiêu 64 đến 8192, có đi lại.'),
+  tool('minesweeper', 'entertainment', 'Dò mìn', 'Trò dò mìn cổ điển: mở ô, cắm cờ, đoán vị trí mìn qua các con số; 10 cấp từ bàn 8x8 đến 18x18, chơi được trên điện thoại.'),
+  tool('block-puzzle', 'entertainment', 'Xếp gạch', 'Xoay và xếp các khối gạch rơi để lấp kín hàng; 10 cấp tốc độ tăng dần, chơi bằng bàn phím hoặc nút cảm ứng.'),
+  tool('snake', 'entertainment', 'Rắn săn mồi', 'Điều khiển rắn ăn mồi để dài ra, tránh tường và thân mình; 10 cấp tăng tốc, có chướng ngại.'),
+  tool('solitaire', 'entertainment', 'Xếp bài Solitaire', 'Solitaire Klondike cổ điển: xếp bài xen màu, đưa lên ô đích từ A đến K; rút 1 hoặc 3 lá, có đi lại và gợi ý.'),
+  tool('spider-solitaire', 'entertainment', 'Xếp bài Nhện (Spider)', 'Spider Solitaire 1, 2 và 4 chất: xếp dãy K đến A cùng chất để gỡ khỏi bàn; 10 cấp, có đi lại và gợi ý.'),
+  tool('freecell', 'entertainment', 'FreeCell', 'Xếp bài FreeCell: mọi lá đều ngửa, dùng các ô trống để sắp bài lên ô đích; 10 cấp với số ô trống giảm dần.'),
+  tool('gomoku', 'entertainment', 'Cờ caro', 'Chơi cờ caro 5 quân liên tiếp với máy trên bàn 15x15, 10 cấp từ dễ đến khó, có đi lại.'),
+  tool('reversi', 'entertainment', 'Cờ lật (Reversi)', 'Kẹp quân đối thủ để lật thành màu của mình; chơi Reversi 8x8 với máy qua 10 cấp.'),
+  tool('connect-four', 'entertainment', 'Nối 4', 'Thả quân vào cột, nối 4 quân liên tiếp ngang, dọc hoặc chéo trước máy; 10 cấp từ dễ đến khó.'),
+  tool('match-3', 'entertainment', 'Ghép 3 viên kẹo', 'Đổi chỗ các viên kẹo để ghép 3 viên cùng loại, nổ dây chuyền ghi điểm; 10 cấp có mục tiêu điểm và số lượt.'),
+  tool('brick-breaker', 'entertainment', 'Phá gạch', 'Điều khiển thanh đỡ đánh bóng phá hết gạch; 10 màn bố cục khác nhau, chơi bằng chuột, chạm hoặc phím.'),
   tool('typing-test', 'device', 'Kiểm tra tốc độ gõ phím', 'Đo tốc độ gõ (từ/phút) và độ chính xác trong 30 giây đến 5 phút, có bài tiếng Việt và tiếng Anh.'),
   tool('cps-test', 'device', 'Đo tốc độ click chuột (CPS)', 'Đếm số lần click mỗi giây trong 1 đến 60 giây, lưu kỷ lục, thử cả phím cách và chạm màn hình.'),
   tool('webcam-test', 'device', 'Kiểm tra webcam', 'Kiểm tra camera có hoạt động không, xem độ phân giải, khung hình/giây, chọn camera, chụp ảnh thử.'),

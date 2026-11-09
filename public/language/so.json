@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Ka soo horjeedaha wuu dhaafay. Haddii adna aad dhaafto, ciyaartu way dhammaanaysaa waana la tirinayaa.",
     "lib.online.modeAi": "Ciyaar kombiyuutarka",
     "lib.online.modeOnline": "Ciyaar onlayn",
-    "share.label": "La wadaag"
+    "share.label": "La wadaag",
+    "lib.arcade.aiNoMove": "Kombiyuutarku ma laha dhaqaaq sax ah — waa kaa doorkaaga.",
+    "lib.arcade.autoFinish": "Si toos ah u dhammee",
+    "lib.arcade.best": "Rikoor: {n}",
+    "lib.arcade.blocksBoard": "Sabuuradda baloogyada dhacaya",
+    "lib.arcade.breakoutBoard": "Garoonka burburinta leebka",
+    "lib.arcade.dealRow": "Qaybi saf cusub",
+    "lib.arcade.down": "Hoos",
+    "lib.arcade.drawN": "Soo qaado {n}",
+    "lib.arcade.drop": "Isla markiiba ridi",
+    "lib.arcade.flagMode": "Habka calanka",
+    "lib.arcade.freeCells": "Unugyo bannaan: {n}",
+    "lib.arcade.left": "Bidix",
+    "lib.arcade.length": "Dherer: {n}/{t}",
+    "lib.arcade.lines": "Xariiqyo: {n}/{t}",
+    "lib.arcade.minesLeft": "Miinooyin: {n}",
+    "lib.arcade.moves": "Dhaqaaqyo: {n}",
+    "lib.arcade.movesLeft": "{n} dhaqaaq ayaa haray",
+    "lib.arcade.mustPass": "Ma lihid dhaqaaq sax ah — doorkaaga waad dhaafaysaa.",
+    "lib.arcade.next": "Qaybaha xiga",
+    "lib.arcade.noHint": "Ma jiro dhaqaaq waxtar leh oo haray. Soo qaado kaar, qaybi saf cusub ama dib u bilow.",
+    "lib.arcade.note.2048": "Isticmaal furayaasha fallaarta ama ku jiid si aad u dhaqaajiso dhammaan tiirarka. Laba tiir oo isku nambar ah way isku darmaan marka ay is taabtaan. Samee tiir la mid ah bartilmaameedka si aad u gudubto heerka; haddii aan tiir dhaqaaqi karin, waad guuldarraysatay.",
+    "lib.arcade.note.blocks": "Wareeji oo dhig qaybaha dhacaya si aad u buuxiso xariiqyada jiifka ah; xariiqyada buuxa way baaba'aan. ← → dhaqaaji, ↑ wareeji, ↓ si dhakhso ah u dhig, Booska isla markiiba wuu ridaa, P hakad. Nadiifi tirada xariiqyada loo baahan yahay si aad u gudubto heerka; haddii qaybuhu gaaraan sare, waad guuldarraysatay.",
+    "lib.arcade.note.breakout": "Dhaqaaji jiirka, farta ku jiid garoonka ama isticmaal ← → si aad u hagto sabuuradda oo kubadda ciyaarta ugu haysid. Burburi dhammaan leebka si aad u gudubto heerka; leebka cidhifkoodu qaro weyn yahay waxay u baahan yihiin laba garaac. Waxaad leedahay 3 nolol. Boosku wuu bilaabaa ama hakiyaa.",
+    "lib.arcade.note.connect4": "Waxaad ciyaaraysaa casaanka oo adigaa horreeya. Taabo tiir si aad u ridiso saxan; wuxuu ku dhacaa meesha bannaan ee ugu hoosaysa. Kii ugu horreeya ee saf ka dhiga 4 saxan oo jiif, taagan ama xagal ah ayaa guuleysta.",
+    "lib.arcade.note.freecell": "Dhammaan kaararku way furan yihiin. U guuri dhammaan 52-ka kaar 4-ta saldhig nooc ahaan, laga bilaabo A ilaa K. Miiska dusheeda, hoos u dhis adigoo midabada isweydaarsanaya. Unug kasta oo bannaan oo bidixda sare ku yaal wuxuu haystaa hal kaar; inta kaar ee aad mar keliya guurin karto waxay ku xidhan tahay unugyada bannaan iyo tiirarka madhan. Heerarka sare unugyo yar ayay leeyihiin.",
+    "lib.arcade.note.gomoku": "Waxaad ciyaaraysaa X oo adigaa horreeya; kombiyuutarku wuxuu ciyaarayaa O. Is daba-joog calaamad u dhiga bar bannaan oo ku taal sabuuradda 15×15. Kii ugu horreeya ee hela 5 saf ah oo jiif, taagan ama xagal ah ayaa guuleysta.",
+    "lib.arcade.note.klondike": "U guuri dhammaan 52-ka kaar 4-ta saldhig nooc ahaan, laga bilaabo A ilaa K. Miiska dusheeda, hoos u dhis adigoo midabada isweydaarsanaya; K oo keliya ayaa geli kara tiir madhan. Taabo tuulada xidhan ee bidixda sare si aad kaararka u soo qaadato. Taabo kaar kadibna meesha aad rabto inaad dhigto, ama mar kale taabo si uu iskiis ugu tago meel sax ah. Heerarka 1–5: soo qaado 1; heerarka 6–10: soo qaado 3.",
+    "lib.arcade.note.match3": "Isweydaarsii laba qaybood oo dariska ah (taabo mid kadibna kan kale, ama jiid) si aad u samayso saf 3 ama ka badan oo isku mid ah; safku wuu qarxaa, qaybaha ka sarreeyana way dhacaan. Falcelinta silsiladda ah ayaa dhibcahaaga laba-jibbaarta. Gaadh dhibcaha bartilmaameedka ka hor inta aysan dhaqaaqyadu dhammaan.",
+    "lib.arcade.note.minesweeper": "Taabo unug si aad u furto. Nambarku wuxuu muujinayaa inta miino ee ku jirta 8-da unug ee ku wareegsan. Ku calaamadee miino laga shakisan yahay riixid midig, taabasho dheer ama habka calanka. Taabo nambar ay hore ugu wareegsan yihiin calammo ku filan si aad dhakhso ugu furto inta kale. Fur dhammaan unugyada aan miino lahayn si aad u guuleysato.",
+    "lib.arcade.note.reversi": "Waxaad ciyaaraysaa madowga oo adigaa horreeya. Dhig saxan si uu u xannibo hal ama dhowr saxan oo cad oo u dhexeeya isaga iyo saxan kale oo madow (jiif, taagan ama xagal); saxannada la xannibay waxay isu beddelaan midabkaaga. Haddii aadan lahayn dhaqaaq sax ah, doorkaaga waad dhaafaysaa. Marka sabuuraddu buuxsanto, kan saxannada badan leh ayaa guuleysta.",
+    "lib.arcade.note.snake": "Ku hag abeesada furayaasha fallaarta, WASD, badhamada hoose ama jiidis. Cun cuntada casaanka ah si aad u korto; gaadh dhererka loo baahan yahay si aad u gudubto heerka. Laga bilaabo heerka 3, ku dhicitaanka derbiga ciyaarta wuu dhammeeyaa; heerarka sare waxay leeyihiin caqabado. Ha ku dhicin dabadaada.",
+    "lib.arcade.note.spider": "Miiska dusheeda, nooc kasta ka dhis taxane laga bilaabo K hoos ilaa A; taxanaha dhammaystiran ee 13 kaar si toos ah ayaa looga saaraa. Kaar kasta wuxuu dul fadhiisan karaa kaar hal darajo ka sarreeya, laakiin taxanaha isku nooca ah oo keliya ayaa wada dhaqaaqa. Haddii aad xayiran tahay, taabo Qaybi saf cusub (tiir kasta waa inuu kaar leeyahay). Heerarka 1–3: hal nooc; 4–7: laba; 8–10: afar.",
+    "lib.arcade.pause": "Hakad",
+    "lib.arcade.paused": "Hakad ku jira",
+    "lib.arcade.right": "Midig",
+    "lib.arcade.rotate": "Wareeji",
+    "lib.arcade.score": "Dhibcaha: {n}",
+    "lib.arcade.shuffled": "Dhaqaaq ma harin — sabuuradda dib ayaa loo qasay.",
+    "lib.arcade.snakeBoard": "Garoonka abeesada",
+    "lib.arcade.suitsN": "{n} nooc",
+    "lib.arcade.target": "Bartilmaameed: {n}",
+    "lib.arcade.up": "Kor",
+    "lib.arcade.youVsAi": "Adiga {a} – Kombiyuutar {b}",
+    "lib.arcade.noHintFc": "Ma jiro dhaqaaq waxtar leh oo haray. Dib u celi dhowr dhaqaaq ama dib u bilow."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Madadaalo iyo ciyaaro",
-      "desc": "Giraangiraha nasiibka, soo saaraha tirooyinka aan kala sooc lahayn, abaal-marin saf-saf ah iyo ciyaaro madadaalo ah."
+      "desc": "Shaagagga nasiibka, nambaro aan kala horreyn iyo ciyaaraha browser-ka: Sudoku, shax, shaxda Shiinaha, Gomoku, 2048, raadiyaha miinooyinka, baloogyada dhacaya, abeeso, solitaire iyo burburiyaha leebka."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Xiangqi qarsoon",
       "desc": "Ciyaar Xiangqi qarsoon ee Fiyetnaam: xabbaduhu waxay ku bilaabmaan iyagoo wejiga hoos u jeeda waxaana la rogaa kadib dhaqdhaqaaqa koowaad. Kombiyuutarka 10 heer ama onlayn saaxiibo iyo ka soo horjeedayaal cusub."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "Jiid oo isku dar nambarada isku midka ah ilaa aad ka samayso tiirka 2048; 10 heer oo bartilmaameedyadoodu yihiin 64 ilaa 8192, oo leh dib-u-celin."
+    },
+    "minesweeper": {
+      "name": "Raadiyaha miinooyinka",
+      "desc": "Raadiyaha miinooyinka caadiga ah: fur unugyada, dhig calammo oo nambarada ka garo halka ay miinooyinku ku jiraan; 10 heer laga bilaabo 8x8 ilaa 18x18, wuxuu ka shaqeeyaa taleefannada."
+    },
+    "block-puzzle": {
+      "name": "Baloogyada dhacaya",
+      "desc": "Wareeji oo is dul saar baloogyada dhacaya si aad u nadiifiso xariiqyada; 10 heer oo sii dhakhsaynaya, kiiboodh ama badhamada taabashada."
+    },
+    "snake": {
+      "name": "Abeeso",
+      "desc": "Hag abeesada si ay wax u cunto oo u korto iyadoo ka fogaanaysa derbiyada iyo dabadeeda; 10 heer oo dhakhso ah oo leh caqabado."
+    },
+    "solitaire": {
+      "name": "Solitaire",
+      "desc": "Klondike Solitaire-ka caadiga ah: hoos u dhis adigoo midabada isweydaarsanaya oo kaararka u guuri saldhigyada A ilaa K; soo qaado 1 ama 3, oo leh dib-u-celin iyo talooyin."
+    },
+    "spider-solitaire": {
+      "name": "Solitaire Caaro",
+      "desc": "Caaro leh 1, 2 iyo 4 nooc: dhis taxane isku nooc ah K ilaa A si aad miiska uga saarto; 10 heer oo leh dib-u-celin iyo talooyin."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell Solitaire: dhammaan kaararku way furan yihiin; isticmaal unugyada bannaan si aad kaararka ugu guuriso saldhigyada; 10 heer oo unugyadu sii yaraanayaan."
+    },
+    "gomoku": {
+      "name": "Gomoku (shan saf ah)",
+      "desc": "Ciyaar Gomoku, shan saf ah, adigoo ka soo horjeeda kombiyuutarka sabuuradda 15x15; 10 heer laga bilaabo fudud ilaa adag, oo leh dib-u-celin."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Xannib saxannada ka soo horjeedaha si ay midabkaaga ugu rogmadaan; ciyaar Reversi 8x8 oo ka dhan ah kombiyuutarka 10 heer."
+    },
+    "connect-four": {
+      "name": "Afar saf ah",
+      "desc": "Saxannada ku rid tiirarka oo saf ka dhig 4 jiif, taagan ama xagal ka hor kombiyuutarka; 10 heer laga bilaabo fudud ilaa adag."
+    },
+    "match-3": {
+      "name": "Isku keen 3",
+      "desc": "Isweydaarsii nacnaca si aad isugu keento 3 ama ka badan oo isku mid ah oo aad u kiciso falcelin silsilad ah; 10 heer oo leh dhibco bartilmaameed iyo dhaqaaqyo xaddidan."
+    },
+    "brick-breaker": {
+      "name": "Burburiyaha leebka",
+      "desc": "Hag sabuuradda oo kubadda ka boodi si aad u burburiso leeb kasta; 10 marxaladood oo qaabab kala duwan leh, jiir, taabasho ama furayaal."
     }
   },
   "s": {

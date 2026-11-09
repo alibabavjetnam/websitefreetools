@@ -296,7 +296,51 @@
     "lib.online.oppPassed": "Garşydaş pas aýtdy. Siz hem pas aýtsaňyz, oýun gutaryp, hasaplanar.",
     "lib.online.modeAi": "Kompýuter bilen oýna",
     "lib.online.modeOnline": "Onlaýn oýna",
-    "share.label": "Paýlaş"
+    "share.label": "Paýlaş",
+    "lib.arcade.aiNoMove": "Kompýuteriň dogry ýörişi ýok — siziň nobatyňyz.",
+    "lib.arcade.autoFinish": "Awtomatik tamamla",
+    "lib.arcade.best": "Rekord: {n}",
+    "lib.arcade.blocksBoard": "Gaçýan bloklar meýdany",
+    "lib.arcade.breakoutBoard": "Kerpiç döwmek meýdany",
+    "lib.arcade.dealRow": "Täze hatar paýla",
+    "lib.arcade.down": "Aşak",
+    "lib.arcade.drawN": "{n} al",
+    "lib.arcade.drop": "Derrew gaçyr",
+    "lib.arcade.flagMode": "Baýdakjyk tertibi",
+    "lib.arcade.freeCells": "Boş öýjükler: {n}",
+    "lib.arcade.left": "Çepe",
+    "lib.arcade.length": "Uzynlyk: {n}/{t}",
+    "lib.arcade.lines": "Setirler: {n}/{t}",
+    "lib.arcade.minesLeft": "Minalar: {n}",
+    "lib.arcade.moves": "Ýörişler: {n}",
+    "lib.arcade.movesLeft": "{n} ýöriş galdy",
+    "lib.arcade.mustPass": "Siziň dogry ýörişiňiz ýok — nobatyňyzy geçirýärsiňiz.",
+    "lib.arcade.next": "Indiki şekiller",
+    "lib.arcade.noHint": "Peýdaly ýöriş galmady. Kart alyň, täze hatar paýlaň ýa-da täzeden başlaň.",
+    "lib.arcade.note.2048": "Ähli plitkalary süýşürmek üçin ok düwmelerini ulanyň ýa-da barmagyňyz bilen süýşüriň. Sany birmeňzeş iki plitka degişende birleşýär. Derejeden geçmek üçin maksada deň plitka düzüň; hiç bir plitka hereket edip bilmese, utulýarsyňyz.",
+    "lib.arcade.note.blocks": "Gaçýan şekilleri aýlap ýerleşdirip, keseligine setirleri dolduryň; dolan setirler ýitýär. ← → süýşürmek, ↑ aýlamak, ↓ çalt düşürmek, Boşluk derrew gaçyrýar, P arakesme. Derejeden geçmek üçin gerekli sanda setiri arassalaň; şekiller ýokary ýetse, utulýarsyňyz.",
+    "lib.arcade.note.breakout": "Raketkany dolandyryp, topy oýunda saklamak üçin syçanjygy hereketlendiriň, barmagyňyzy meýdanda süýşüriň ýa-da ← → düwmelerini ulanyň. Derejeden geçmek üçin ähli kerpiçleri döwüň; galyň gyrasy bolan kerpiçlere iki gezek urmaly. Siziň 3 janyňyz bar. Boşluk başlaýar ýa-da saklaýar.",
+    "lib.arcade.note.connect4": "Siz gyzyl bilen oýnaýarsyňyz we ilki ýöreýärsiňiz. Fişka taşlamak üçin sütüne basyň; ol iň aşaky boş ýere gaçýar. 4 fişkany keseligine, dikligine ýa-da diagonal boýunça ilki düzen ýeňýär.",
+    "lib.arcade.note.freecell": "Ähli kartlar açyk. 52 kartyň hemmesini reňki boýunça 4 esasa A-dan K-a çenli geçiriň. Stolda reňkleri çalşyp, kemelýän tertipde düzüň. Ýokarky çepdäki boş öýjükleriň her biri bir kart saklaýar; bir gezekde näçe kart geçirip biljekdigiňiz boş öýjüklere we boş sütünlere bagly. Ýokary derejelerde öýjükler az.",
+    "lib.arcade.note.gomoku": "Siz X bilen oýnaýarsyňyz we ilki ýöreýärsiňiz; kompýuter O bilen oýnaýar. Nobatma-nobat 15×15 tagtanyň boş nokadyna belgi goýuň. 5-ini keseligine, dikligine ýa-da diagonal boýunça ilki düzen ýeňýär.",
+    "lib.arcade.note.klondike": "52 kartyň hemmesini reňki boýunça 4 esasa A-dan K-a çenli geçiriň. Stolda reňkleri çalşyp, kemelýän tertipde düzüň; boş sütüne diňe K goýup bolýar. Kart almak üçin ýokarky çepdäki ýapyk desse basyň. Karta, soňra ony goýjak ýeriňize basyň ýa-da onuň özi dogry ýere geçer ýaly ýene bir gezek basyň. 1–5 derejeler: 1 al; 6–10 derejeler: 3 al.",
+    "lib.arcade.note.match3": "Birmeňzeş görnüşli 3 ýa-da has köp elementden hatar düzmek üçin goňşy iki elementiň ýerini çalşyň (birine, soňra beýlekisine basyň ýa-da süýşüriň); hatar ýarylýar we ýokardaky elementler gaçýar. Zynjyrly täsirler utuklary köpeldýär. Ýörişler gutarmanka maksat utuga ýetiň.",
+    "lib.arcade.note.minesweeper": "Öýjügi açmak üçin oňa basyň. San töweregindäki 8 öýjükde näçe mina bardygyny görkezýär. Şübheli minany sag basmak, uzak basmak ýa-da baýdakjyk tertibi bilen belläň. Töweregi ýeterlik baýdakjykly sana basyp, galanlaryny çalt açyň. Ýeňmek üçin minasyz ähli öýjükleri açyň.",
+    "lib.arcade.note.reversi": "Siz gara bilen oýnaýarsyňyz we ilki ýöreýärsiňiz. Fişkany şeýle goýuň, bir ýa-da birnäçe ak fişka onuň bilen başga bir gara fişkanyň arasynda gysylsyn (keseligine, dikligine ýa-da diagonal boýunça); gysylan fişkalar siziň reňkiňize öwrülýär. Dogry ýörişiňiz ýok bolsa, nobatyňyzy geçirýärsiňiz. Tagta dolanda fişkasy köp bolan ýeňýär.",
+    "lib.arcade.note.snake": "Ýylany ok düwmeleri, WASD, aşakdaky düwmeler ýa-da süýşürmek arkaly dolandyryň. Ösmek üçin gyzyl iýmiti iýiň; derejeden geçmek üçin gerekli uzynlyga ýetiň. 3-nji derejeden diwara degmek oýny gutarýar; ýokary derejelerde päsgelçilikler bar. Öz guýrugyňyza degmäň.",
+    "lib.arcade.note.spider": "Stolda her reňki K-dan A-a çenli yzygiderlikde düzüň; 13 kartdan ybarat doly yzygiderlik awtomatik aýrylýar. Islendik kart bir dereje ýokary kartyň üstüne goýlup bilner, emma diňe birmeňzeş reňkli yzygiderlikler bile hereket edýär. Ýol tapylmasa, Täze hatar paýla düwmesine basyň (her sütünde kart bolmaly). 1–3 derejeler: bir reňk; 4–7: iki; 8–10: dört.",
+    "lib.arcade.pause": "Arakesme",
+    "lib.arcade.paused": "Arakesmede",
+    "lib.arcade.right": "Saga",
+    "lib.arcade.rotate": "Aýla",
+    "lib.arcade.score": "Utuk: {n}",
+    "lib.arcade.shuffled": "Ýöriş galmandy — meýdan garyşdyryldy.",
+    "lib.arcade.snakeBoard": "Ýylan meýdany",
+    "lib.arcade.suitsN": "{n} reňk",
+    "lib.arcade.target": "Maksat: {n}",
+    "lib.arcade.up": "Ýokary",
+    "lib.arcade.youVsAi": "Siz {a} – Kompýuter {b}",
+    "lib.arcade.noHintFc": "Peýdaly ýöriş galmady. Birnäçe ýörişi yzyna alyň ýa-da täzeden başlaň."
   },
   "pages": {
     "home": {
@@ -370,7 +414,7 @@
     },
     "entertainment": {
       "name": "Güýmenje we oýunlar",
-      "desc": "Bagt tigiri, tötänleýin san generatory, baýrak çekilişleri we gyzykly oýunlar."
+      "desc": "Bagt tigri, tötänleýin sanlar we brauzer oýunlary: sudoku, küşt, hytaý küşti, gomoku, 2048, mina gözleýji, gaçýan bloklar, ýylan, pasýans we kerpiç döwüji."
     }
   },
   "tools": {
@@ -741,6 +785,54 @@
     "co-up": {
       "name": "Gizlin Sýanszi",
       "desc": "Wýetnamyň gizlin Sýanszisini oýnaň: daşlar ýüzi aşak başlaýar we ilkinji ýörişden soň öwrülýär. Kompýuter bilen 10 derejede ýa-da onlaýn dostlar we täze garşydaşlar bilen."
+    },
+    "game-2048": {
+      "name": "2048",
+      "desc": "2048 plitkasyny düzmek üçin birmeňzeş sanlary süýşürip birleşdiriň; 64-den 8192-ä çenli maksatly 10 dereje, ýörişi yzyna almak bilen."
+    },
+    "minesweeper": {
+      "name": "Mina gözleýji",
+      "desc": "Nusgawy mina gözleýji: öýjükleri açyň, baýdakjyk goýuň we sanlar boýunça minalaryň nirededigini tapyň; 8x8-den 18x18-e çenli 10 dereje, telefonda hem işleýär."
+    },
+    "block-puzzle": {
+      "name": "Gaçýan bloklar",
+      "desc": "Setirleri arassalamak üçin gaçýan bloklary aýlap üýşüriň; tizligi artýan 10 dereje, klawiatura ýa-da duýgur düwmeler bilen."
+    },
+    "snake": {
+      "name": "Ýylan",
+      "desc": "Ýylany diwarlara we öz guýrugyna degmezden iýip ösmegi üçin dolandyryň; päsgelçilikli, barha çaltlaşýan 10 dereje."
+    },
+    "solitaire": {
+      "name": "Pasýans",
+      "desc": "Nusgawy Klondaýk pasýansy: reňkleri çalşyp kemelýän tertipde düzüň we kartlary esaslara A-dan K-a çenli geçiriň; 1 ýa-da 3 al, yzyna almak we maslahatlar bilen."
+    },
+    "spider-solitaire": {
+      "name": "Möý pasýansy",
+      "desc": "1, 2 we 4 reňkli Möý: stoldan aýyrmak üçin birmeňzeş reňkli yzygiderlikleri K-dan A-a çenli düzüň; yzyna almak we maslahatly 10 dereje."
+    },
+    "freecell": {
+      "name": "FreeCell",
+      "desc": "FreeCell pasýansy: ähli kartlar açyk; kartlary esaslara geçirmek üçin boş öýjükleri ulanyň; öýjükleri azalýan 10 dereje."
+    },
+    "gomoku": {
+      "name": "Gomoku (hatarda bäş)",
+      "desc": "Kompýutere garşy 15x15 tagtada gomoku, hatarda bäş oýnaň; aňsatdan kyna çenli 10 dereje, ýörişi yzyna almak bilen."
+    },
+    "reversi": {
+      "name": "Reversi",
+      "desc": "Garşydaşyň fişkalaryny gysyp, öz reňkiňize öwrüň; kompýutere garşy 8x8 Reversini 10 derejede oýnaň."
+    },
+    "connect-four": {
+      "name": "Hatarda dört",
+      "desc": "Fişkalary sütünlere taşlaň we kompýuterden öň 4-ini keseligine, dikligine ýa-da diagonal boýunça düzüň; aňsatdan kyna çenli 10 dereje."
+    },
+    "match-3": {
+      "name": "Üçüsini birleşdir",
+      "desc": "Birmeňzeş görnüşli 3 ýa-da has köp süýjüni birleşdirip, zynjyrly täsir döretmek üçin ýerini çalşyň; maksat utukly we çäkli ýörişli 10 dereje."
+    },
+    "brick-breaker": {
+      "name": "Kerpiç döwüji",
+      "desc": "Raketkany dolandyryň we ähli kerpiçleri döwmek üçin topy böküriň; dürli ýerleşişli 10 tapgyr, syçanjyk, duýgur ekran ýa-da düwmeler bilen."
     }
   },
   "s": {
