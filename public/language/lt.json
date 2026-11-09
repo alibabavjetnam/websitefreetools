@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Gyvybės baigėsi — dabar rodomos visos plytelės.",
     "lib.game.mmNote": "Paspauskite Pradėti: plytelės rodomos {s} sek., paskui paslepiamos. Įsiminkite kiekvienos plytelės formą ir spalvą, tada pasirinkite plytelę, atitinkančią parodytą formą. Daugiau nei {l} klaidų — lygis neįveiktas.",
     "lib.game.fullscreen": "Visas ekranas",
-    "lib.game.exitFullscreen": "Išeiti iš viso ekrano"
+    "lib.game.exitFullscreen": "Išeiti iš viso ekrano",
+    "lib.online.guest": "Svečias",
+    "lib.online.connFail": "Nepavyko prisijungti prie internetinio žaidimo serverio. Patikrinkite ryšį (arba išjunkite reklamų blokavimą) ir spustelėkite Bandyti dar kartą.",
+    "lib.online.tableGone": "Stalą atidaręs žaidėjas išėjo. Pasirinkite kitą stalą arba atidarykite naują.",
+    "lib.online.drawDeclined": "Varžovas atsisakė lygiųjų.",
+    "lib.online.opponent": "Varžovas",
+    "lib.online.copied": "Nuoroda nukopijuota. Nusiųskite ją draugui ir žaiskite kartu.",
+    "lib.online.waitingFor": "laukia {n} s",
+    "lib.online.drawAgreed": "Abu žaidėjai sutarė dėl lygiųjų.",
+    "lib.online.draw": "Partija baigėsi lygiosiomis.",
+    "lib.online.oppResigned": "Varžovas pasidavė — jūs laimėjote!",
+    "lib.online.youResigned": "Jūs pasidavėte.",
+    "lib.online.youWin": "Jūs laimėjote!",
+    "lib.online.youLose": "Jūs pralaimėjote.",
+    "lib.online.connecting": "Jungiamasi prie internetinio žaidimo serverio…",
+    "lib.online.retry": "Bandyti dar kartą",
+    "lib.online.quick": "Rasti varžovą",
+    "lib.online.createPublic": "Atidaryti viešą stalą",
+    "lib.online.createPrivate": "Atidaryti privatų stalą ir pakviesti draugą",
+    "lib.online.modesHint": "Vieši stalai rodomi sąraše, prie jų gali prisijungti bet kas. Prie privataus stalo patenkama tik per kvietimo nuorodą.",
+    "lib.online.openTables": "Laukiantys vieši stalai",
+    "lib.online.join": "Prisijungti",
+    "lib.online.noTables": "Kol kas nelaukia nė vienas stalas. Spustelėkite \"Rasti varžovą\" arba atidarykite naują stalą.",
+    "lib.online.privacy": "Ėjimai siunčiami per nemokamą viešą MQTT serverį ir šifruojami kiekvienam stalui atskirai; serveris partijų nesaugo. Prisijunkite su Google, kad baigtas partijas išsaugotumėte savo Drive.",
+    "lib.online.waitingPublic": "Viešas stalas: laukiama, kol kas nors prisijungs…",
+    "lib.online.waitingPrivate": "Privatus stalas: nusiųskite šią nuorodą draugui. Partija prasidės, kai jis ją atidarys.",
+    "lib.online.leave": "Palikti stalą",
+    "lib.online.full": "Prie šio stalo jau yra 2 žaidėjai. Raskite kitą stalą arba atidarykite naują.",
+    "lib.online.backToList": "Atgal į stalų sąrašą",
+    "lib.online.you": "Jūs",
+    "lib.online.oppLeft": "paliko stalą",
+    "lib.online.oppOffline": "atsijungęs",
+    "lib.online.drawOffer": "Varžovas siūlo lygiąsias.",
+    "lib.online.accept": "Priimti",
+    "lib.online.decline": "Atmesti",
+    "lib.online.drawSent": "Lygiosios pasiūlytos…",
+    "lib.online.offerDraw": "Pasiūlyti lygiąsias",
+    "lib.online.resignConfirm": "Spustelėkite dar kartą, kad pasiduotumėte",
+    "lib.online.resign": "Pasiduoti",
+    "lib.online.againSent": "Laukiama varžovo sutikimo…",
+    "lib.online.againAccept": "Varžovas nori revanšo — Žaisti dar kartą",
+    "lib.online.again": "Žaisti dar kartą (sukeisti spalvas)",
+    "lib.online.inviteLink": "Kvietimo nuoroda",
+    "lib.online.copy": "Kopijuoti nuorodą",
+    "lib.online.share": "Bendrinti",
+    "lib.online.saved": "Partija išsaugota Google Drive (aplankas WFTools/Games).",
+    "lib.online.saving": "Partija saugoma Google Drive…",
+    "lib.online.saveFail": "Partijos dar nepavyko išsaugoti Drive.",
+    "lib.online.save": "Išsaugoti partiją Google Drive",
+    "lib.game.darkNote": "Paslėptas Xiangqi (Cờ úp): abu generolai pradeda atversti, kitos figūros sumaišomos ir padedamos užverstos. Paslėpta figūra eina kaip figūra, kuri įprastai pradeda jos langelyje (vežimo langelyje eina kaip vežimas), tada atverčiama ir toliau eina kaip tikroji jos figūra. Patarėjai ir drambliai gali vaikščioti po visą lentą. Matas arba ėjimų nebuvimas reiškia pralaimėjimą.",
+    "lib.game.darkBoard": "Paslėpto Xiangqi lenta",
+    "lib.online.red": "Raudonieji",
+    "lib.online.black": "Juodieji",
+    "lib.game.captured": "Nukirstos figūros",
+    "lib.online.pickTable": "Norėdami pradėti, raskite varžovą arba atidarykite stalą šoniniame skydelyje.",
+    "lib.online.theirTurn": "Varžovo ėjimas",
+    "lib.online.white": "Baltieji",
+    "lib.online.goNote": "{n}×{n} lenta, pradeda juodieji, baltieji gauna {k} komi. Skaičiuojamas plotas; prieš pasakydami „pas“ pašalinkite visus negyvus akmenis. Partija baigiasi, kai abu žaidėjai paeiliui pasako „pas“.",
+    "lib.online.boardSize": "Lentos dydis",
+    "lib.online.oppPassed": "Varžovas pasakė „pas“. Jei ir jūs pasakysite „pas“, partija baigsis ir bus suskaičiuota.",
+    "lib.online.modeAi": "Žaisti su kompiuteriu",
+    "lib.online.modeOnline": "Žaisti internetu"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Didelis 16x16 sudoku su 1-9 ir A-G, 10 lygių nuo lengvo iki sunkaus, su pastabomis ir užuominomis."
     },
     "chess": {
-      "name": "Šachmatai prieš kompiuterį",
-      "desc": "Žaiskite šachmatais prieš kompiuterį 10 lygių nuo lengvo iki sunkaus, su rokiruote, paėmimu praeinant ir pėstininko pakeitimu."
+      "name": "Šachmatai",
+      "desc": "Žaiskite šachmatais su kompiuteriu 10 lygių arba internetu: pakvieskite draugą nuoroda arba žaiskite su nauju varžovu. Su rokiruote, kirtimu praeinant ir pakeitimu."
     },
     "xiangqi": {
-      "name": "Xiangqi prieš kompiuterį",
-      "desc": "Žaiskite kinišku šachmatu (xiangqi) prieš kompiuterį 10 lygių, su žirgo kojos blokavimu, dramblio akimi, patrankos paėmimais ir susidūrusių generolų taisykle."
+      "name": "Xiangqi (kinų šachmatai)",
+      "desc": "Žaiskite Xiangqi su kompiuteriu 10 lygių arba internetu: pakvieskite draugą nuoroda arba žaiskite su nauju varžovu. Visos taisyklės: žirgo koja, dramblio akis, patrankos šuolis ir generolai, kurie negali matyti vienas kito."
     },
     "go-game": {
-      "name": "Go prieš kompiuterį",
-      "desc": "Žaiskite Go prieš kompiuterį 5x5, 7x7 ir 9x9 lentose 10 lygių, su automatiniu taškų skaičiavimu pabaigoje."
+      "name": "Go",
+      "desc": "Žaiskite Go su kompiuteriu 10 lygių arba internetu 9x9, 13x13 ir 19x19 lentose su draugu ar nauju varžovu. Automatinis skaičiavimas pabaigoje."
     },
     "memory-shapes": {
       "name": "Formų ir spalvų atmintis",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Internetinis darbalaukis",
       "desc": "Kompiuterio darbalaukis naršyklėje: failų tvarkyklė, Notepad, paveikslėlių ir PDF peržiūra, skaičiuotuvas, kalendorius ir šiukšlinė. Failai saugomi jūsų „Google“ diske."
+    },
+    "co-up": {
+      "name": "Paslėptas Xiangqi (Cờ úp)",
+      "desc": "Žaiskite vietnamietišką paslėptą Xiangqi: figūros pradeda užverstos ir atverčiamos po pirmojo ėjimo. Su kompiuteriu 10 lygių arba internetu su draugais ir naujais varžovais."
     }
   },
   "s": {

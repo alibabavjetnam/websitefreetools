@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Níl saol fágtha — tá gach tíl nochtaithe anois.",
     "lib.game.mmNote": "Brúigh Tosaigh: taispeántar na tíleanna ar feadh {s} soicind agus ansin folaítear iad. Cuimhnigh ar chruth agus ar dhath gach tíle, ansin roghnaigh an tíl a oireann don chruth a thaispeántar duit. Má dhéanann tú níos mó ná {l} botún, teipeann ar an leibhéal.",
     "lib.game.fullscreen": "Lánscáileán",
-    "lib.game.exitFullscreen": "Scoir an lánscáileán"
+    "lib.game.exitFullscreen": "Scoir an lánscáileán",
+    "lib.online.guest": "Aoi",
+    "lib.online.connFail": "Níorbh fhéidir ceangal leis an bhfreastalaí cluichí ar líne. Seiceáil do cheangal (nó múch an bac fógraí) agus cliceáil Bain triail eile as.",
+    "lib.online.tableGone": "D'imigh an duine a d'oscail an bord. Roghnaigh bord eile nó oscail ceann nua.",
+    "lib.online.drawDeclined": "Dhiúltaigh an céile comhraic don chomhscór.",
+    "lib.online.opponent": "Céile comhraic",
+    "lib.online.copied": "Cóipeáladh an nasc. Seol chuig do chara é chun imirt le chéile.",
+    "lib.online.waitingFor": "ag fanacht {n} s",
+    "lib.online.drawAgreed": "D'aontaigh an bheirt imreoirí ar chomhscór.",
+    "lib.online.draw": "Chríochnaigh an cluiche ina chomhscór.",
+    "lib.online.oppResigned": "Ghéill an céile comhraic — bhuaigh tú!",
+    "lib.online.youResigned": "Ghéill tú.",
+    "lib.online.youWin": "Bhuaigh tú!",
+    "lib.online.youLose": "Chaill tú.",
+    "lib.online.connecting": "Ag ceangal leis an bhfreastalaí cluichí ar líne…",
+    "lib.online.retry": "Bain triail eile as",
+    "lib.online.quick": "Aimsigh céile comhraic",
+    "lib.online.createPublic": "Oscail bord poiblí",
+    "lib.online.createPrivate": "Oscail bord príobháideach agus tabhair cuireadh do chara",
+    "lib.online.modesHint": "Bíonn boird phoiblí ar an liosta agus is féidir le duine ar bith páirt a ghlacadh. Ní féidir dul chuig bord príobháideach ach leis an nasc cuiridh.",
+    "lib.online.openTables": "Boird phoiblí ag fanacht",
+    "lib.online.join": "Glac páirt",
+    "lib.online.noTables": "Níl aon bhord ag fanacht fós. Cliceáil \"Aimsigh céile comhraic\" nó oscail bord nua.",
+    "lib.online.privacy": "Téann na bearta trí fhreastalaí poiblí MQTT saor in aisce agus criptítear iad do gach bord; ní stórálann an freastalaí cluichí. Sínigh isteach le Google chun cluichí críochnaithe a shábháil i do Drive.",
+    "lib.online.waitingPublic": "Bord poiblí: ag fanacht go dtiocfaidh duine isteach…",
+    "lib.online.waitingPrivate": "Bord príobháideach: seol an nasc seo chuig do chara. Tosóidh an cluiche nuair a osclóidh sé é.",
+    "lib.online.leave": "Fág an bord",
+    "lib.online.full": "Tá 2 imreoir ag an mbord seo cheana. Aimsigh bord eile nó oscail ceann nua.",
+    "lib.online.backToList": "Ar ais chuig liosta na mbord",
+    "lib.online.you": "Tusa",
+    "lib.online.oppLeft": "d'fhág an bord",
+    "lib.online.oppOffline": "dícheangailte",
+    "lib.online.drawOffer": "Tá comhscór á thairiscint ag an gcéile comhraic.",
+    "lib.online.accept": "Glac leis",
+    "lib.online.decline": "Diúltaigh",
+    "lib.online.drawSent": "Comhscór tairgthe…",
+    "lib.online.offerDraw": "Tairg comhscór",
+    "lib.online.resignConfirm": "Cliceáil arís chun géilleadh",
+    "lib.online.resign": "Géill",
+    "lib.online.againSent": "Ag fanacht le cead an chéile comhraic…",
+    "lib.online.againAccept": "Tá athimirt uaidh an gcéile comhraic — Imir arís",
+    "lib.online.again": "Imir arís (malartaigh dathanna)",
+    "lib.online.inviteLink": "Nasc cuiridh",
+    "lib.online.copy": "Cóipeáil an nasc",
+    "lib.online.share": "Comhroinn",
+    "lib.online.saved": "Sábháladh an cluiche i Google Drive (fillteán WFTools/Games).",
+    "lib.online.saving": "Ag sábháil an chluiche i Google Drive…",
+    "lib.online.saveFail": "Níorbh fhéidir an cluiche a shábháil i Drive fós.",
+    "lib.online.save": "Sábháil an cluiche i Google Drive",
+    "lib.game.darkNote": "Xiangqi folaithe (Cờ úp): tosaíonn an dá ghinearál nochtaithe, measctar na píosaí eile agus leagtar béal faoi iad. Bogann píosa folaithe ar nós an phíosa a thosaíonn de ghnáth ar a chearnóg (ar chearnóg carbaid bogann sé mar charbad), ansin iompaítear é agus as sin amach bogann sé mar a fhíorphíosa. Is féidir le comhairleoirí agus eilifintí dul ar fud an chláir. Ciallaíonn marbhsháinn nó easpa beart go gcailltear.",
+    "lib.game.darkBoard": "Clár Xiangqi folaithe",
+    "lib.online.red": "Dearg",
+    "lib.online.black": "Dubh",
+    "lib.game.captured": "Píosaí gafa",
+    "lib.online.pickTable": "Aimsigh céile comhraic nó oscail bord sa phainéal taoibh chun tosú.",
+    "lib.online.theirTurn": "Seal an chéile comhraic",
+    "lib.online.white": "Bán",
+    "lib.online.goNote": "Clár {n}×{n}, tosaíonn dubh, faigheann bán {k} komi. Comhaireamh achair; bain gach cloch mharbh sula ndéanann tú pas. Críochnaíonn an cluiche nuair a dhéanann an bheirt pas i ndiaidh a chéile.",
+    "lib.online.boardSize": "Méid an chláir",
+    "lib.online.oppPassed": "Rinne an céile comhraic pas. Má dhéanann tusa pas freisin, críochnóidh an cluiche agus comhairfear é.",
+    "lib.online.modeAi": "Imir in aghaidh an ríomhaire",
+    "lib.online.modeOnline": "Imir ar líne"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku mór 16x16 le 1-9 agus A-G, 10 leibhéal ó éasca go deacair, le nótaí agus leideanna."
     },
     "chess": {
-      "name": "Ficheall i gcoinne an ríomhaire",
-      "desc": "Imir ficheall i gcoinne an ríomhaire thar 10 leibhéal ó éasca go deacair, le caisleánú, en passant agus ardú céime."
+      "name": "Ficheall",
+      "desc": "Imir ficheall in aghaidh an ríomhaire ar 10 leibhéal nó ar líne: tabhair cuireadh do chara le nasc nó imir le duine nua. Le caisliú, en passant agus ardú céime."
     },
     "xiangqi": {
-      "name": "Xiangqi i gcoinne an ríomhaire",
-      "desc": "Imir ficheall na Síne (xiangqi) i gcoinne an ríomhaire thar 10 leibhéal, le bac cos an chapaill, súil an eilifint, gabháil an chanóin agus riail an ghinearáil eitilte."
+      "name": "Xiangqi (ficheall Síneach)",
+      "desc": "Imir Xiangqi in aghaidh an ríomhaire ar 10 leibhéal nó ar líne: tabhair cuireadh do chara le nasc nó imir le duine nua. Rialacha iomlána: cos an chapaill, súil na heilifinte, léim an ghunna mhóir agus ginearáil nach bhfuil cead acu a chéile a fheiceáil."
     },
     "go-game": {
-      "name": "Go i gcoinne an ríomhaire",
-      "desc": "Imir Go i gcoinne an ríomhaire ar chláir 5x5, 7x7 agus 9x9 thar 10 leibhéal, le scóráil uathoibríoch ag an deireadh."
+      "name": "Go",
+      "desc": "Imir Go in aghaidh an ríomhaire ar 10 leibhéal nó ar líne ar chláir 9x9, 13x13 agus 19x19 le cara nó céile comhraic nua. Comhaireamh uathoibríoch ag an deireadh."
     },
     "memory-shapes": {
       "name": "Cuimhne Cruth & Dath",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Deasc ar líne",
       "desc": "Deasc ríomhaire i do bhrabhsálaí: bainisteoir comhad, Notepad, amharcán íomhánna agus PDF, áireamhán, féilire agus bruscar. Sábháiltear comhaid i do Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi folaithe (Cờ úp)",
+      "desc": "Imir Xiangqi folaithe Vítneamach: tosaíonn na píosaí béal faoi agus iompaítear iad tar éis an chéad bhirt. In aghaidh an ríomhaire ar 10 leibhéal nó ar líne le cairde agus céilí comhraic nua."
     }
   },
   "s": {

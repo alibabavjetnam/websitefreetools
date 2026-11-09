@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Elfogytak az életek — most minden lap felfedésre kerül.",
     "lib.game.mmNote": "Nyomd meg az Indítást: a lapok {s} másodpercig látszanak, majd eltűnnek. Jegyezd meg minden lap alakját és színét, majd válaszd azt a lapot, amelyik a mutatott alakzatnak felel meg. {l}-nál több hiba esetén a szint elbukik.",
     "lib.game.fullscreen": "Teljes képernyő",
-    "lib.game.exitFullscreen": "Kilépés a teljes képernyőből"
+    "lib.game.exitFullscreen": "Kilépés a teljes képernyőből",
+    "lib.online.guest": "Vendég",
+    "lib.online.connFail": "Nem sikerült csatlakozni az online játékszerverhez. Ellenőrizd a kapcsolatot (vagy kapcsold ki a reklámblokkolót), majd kattints az Újra gombra.",
+    "lib.online.tableGone": "Az asztalt megnyitó játékos kilépett. Válassz másik asztalt, vagy nyiss újat.",
+    "lib.online.drawDeclined": "Az ellenfél elutasította a döntetlent.",
+    "lib.online.opponent": "Ellenfél",
+    "lib.online.copied": "Link másolva. Küldd el a barátodnak, és játsszatok együtt.",
+    "lib.online.waitingFor": "{n} mp-e vár",
+    "lib.online.drawAgreed": "Mindkét játékos döntetlenben egyezett meg.",
+    "lib.online.draw": "A játszma döntetlennel ért véget.",
+    "lib.online.oppResigned": "Az ellenfél feladta — nyertél!",
+    "lib.online.youResigned": "Feladtad.",
+    "lib.online.youWin": "Nyertél!",
+    "lib.online.youLose": "Vesztettél.",
+    "lib.online.connecting": "Csatlakozás az online játékszerverhez…",
+    "lib.online.retry": "Újra",
+    "lib.online.quick": "Ellenfél keresése",
+    "lib.online.createPublic": "Nyilvános asztal nyitása",
+    "lib.online.createPrivate": "Privát asztal nyitása és barát meghívása",
+    "lib.online.modesHint": "A nyilvános asztalok megjelennek a listán, és bárki csatlakozhat. Privát asztalhoz csak a meghívó linkkel lehet bejutni.",
+    "lib.online.openTables": "Várakozó nyilvános asztalok",
+    "lib.online.join": "Csatlakozás",
+    "lib.online.noTables": "Még nem vár egy asztal sem. Kattints az \"Ellenfél keresése\" gombra, vagy nyiss új asztalt.",
+    "lib.online.privacy": "A lépések egy ingyenes nyilvános MQTT-szerveren mennek át, asztalonként titkosítva; a szerver nem tárol játszmákat. Jelentkezz be Google-fiókkal, hogy a befejezett játszmákat a Drive-odra mentsd.",
+    "lib.online.waitingPublic": "Nyilvános asztal: várakozás, hogy valaki csatlakozzon…",
+    "lib.online.waitingPrivate": "Privát asztal: küldd el ezt a linket a barátodnak. A játszma akkor indul, amikor megnyitja.",
+    "lib.online.leave": "Asztal elhagyása",
+    "lib.online.full": "Ennél az asztalnál már 2 játékos ül. Keress másik asztalt, vagy nyiss újat.",
+    "lib.online.backToList": "Vissza az asztallistához",
+    "lib.online.you": "Te",
+    "lib.online.oppLeft": "elhagyta az asztalt",
+    "lib.online.oppOffline": "nincs kapcsolat",
+    "lib.online.drawOffer": "Az ellenfél döntetlent ajánl.",
+    "lib.online.accept": "Elfogadás",
+    "lib.online.decline": "Elutasítás",
+    "lib.online.drawSent": "Döntetlen felajánlva…",
+    "lib.online.offerDraw": "Döntetlen ajánlása",
+    "lib.online.resignConfirm": "Kattints újra a feladáshoz",
+    "lib.online.resign": "Feladás",
+    "lib.online.againSent": "Várakozás az ellenfél jóváhagyására…",
+    "lib.online.againAccept": "Az ellenfél visszavágót kér — Új játék",
+    "lib.online.again": "Új játék (színcsere)",
+    "lib.online.inviteLink": "Meghívó link",
+    "lib.online.copy": "Link másolása",
+    "lib.online.share": "Megosztás",
+    "lib.online.saved": "A játszma mentve a Google Drive-ra (WFTools/Games mappa).",
+    "lib.online.saving": "Játszma mentése a Google Drive-ra…",
+    "lib.online.saveFail": "A játszmát még nem sikerült a Drive-ra menteni.",
+    "lib.online.save": "Játszma mentése a Google Drive-ra",
+    "lib.game.darkNote": "Rejtett Xiangqi (Cờ úp): a két tábornok képpel felfelé kezd, a többi bábut összekeverik és képpel lefelé teszik le. A rejtett bábu úgy lép, mint az a bábu, amely rendesen azon a mezőn kezd (szekér mezőjén szekérként), majd megfordul, és onnantól valódi bábujaként lép. A tanácsadók és elefántok az egész táblán mozoghatnak. Matt vagy lépéshiány vereséget jelent.",
+    "lib.game.darkBoard": "Rejtett Xiangqi tábla",
+    "lib.online.red": "Piros",
+    "lib.online.black": "Fekete",
+    "lib.game.captured": "Leütött bábuk",
+    "lib.online.pickTable": "A kezdéshez keress ellenfelet, vagy nyiss asztalt az oldalsávban.",
+    "lib.online.theirTurn": "Az ellenfél lép",
+    "lib.online.white": "Fehér",
+    "lib.online.goNote": "{n}×{n}-es tábla, fekete kezd, fehér {k} komit kap. Területszámítás; passzolás előtt vedd le az összes halott követ. A játszma véget ér, ha mindketten egymás után passzolnak.",
+    "lib.online.boardSize": "Táblaméret",
+    "lib.online.oppPassed": "Az ellenfél passzolt. Ha te is passzolsz, a játszma véget ér, és megtörténik a számolás.",
+    "lib.online.modeAi": "Játék a gép ellen",
+    "lib.online.modeOnline": "Online játék"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Nagy 16x16-os sudoku 1-9 és A-G jelekkel, 10 szint a könnyűtől a nehézig, jegyzetekkel és tippekkel."
     },
     "chess": {
-      "name": "Sakk a gép ellen",
-      "desc": "Játssz sakkot a gép ellen 10 szinten a könnyűtől a nehézig, sáncolással, en passant-nal és átalakulással."
+      "name": "Sakk",
+      "desc": "Játssz sakkot a gép ellen 10 szinten vagy online: hívd meg egy barátodat linkkel, vagy játssz egy új ellenféllel. Sáncolással, en passant-nal és átváltozással."
     },
     "xiangqi": {
-      "name": "Xiangqi a gép ellen",
-      "desc": "Játssz kínai sakkot (xiangqi) a gép ellen 10 szinten, lólábblokkolással, elefánt-szemmel, ágyúval való ütéssel és a szemben álló tábornokok szabályával."
+      "name": "Xiangqi (kínai sakk)",
+      "desc": "Játssz Xiangqit a gép ellen 10 szinten vagy online: hívd meg egy barátodat linkkel, vagy játssz egy új ellenféllel. Teljes szabályok: a ló lába, az elefánt szeme, az ágyú ugrása és a tábornokok, akik nem nézhetnek szembe."
     },
     "go-game": {
-      "name": "Go a gép ellen",
-      "desc": "Játssz gót a gép ellen 5x5-ös, 7x7-es és 9x9-es táblán 10 szinten, a végén automatikus pontszámítással."
+      "name": "Go",
+      "desc": "Játssz gót a gép ellen 10 szinten vagy online 9x9-es, 13x13-as és 19x19-es táblán egy baráttal vagy új ellenféllel. Automatikus számolás a végén."
     },
     "memory-shapes": {
       "name": "Alak- és színmemória",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Online asztal",
       "desc": "Számítógépes asztal a böngészőben: fájlkezelő, Notepad, kép- és PDF-nézegető, számológép, naptár és kuka. A fájlok a Google Drive-odra kerülnek."
+    },
+    "co-up": {
+      "name": "Rejtett Xiangqi (Cờ úp)",
+      "desc": "Játssz vietnami rejtett Xiangqit: a bábuk képpel lefelé kezdenek, és az első lépés után megfordulnak. A gép ellen 10 szinten vagy online barátokkal és új ellenfelekkel."
     }
   },
   "s": {

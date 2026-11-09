@@ -797,13 +797,7 @@ export class OnlineRoom {
       case 'idle': {
         const tables = this.openTables();
         html = `
-          <div class="on-actions">
-            <button type="button" class="btn btn-primary" data-on="quick">${T('quick', 'Tìm đối thủ')}</button>
-            <button type="button" class="btn" data-on="public">${T('createPublic', 'Mở bàn công khai')}</button>
-            <button type="button" class="btn" data-on="private">${T('createPrivate', 'Mở bàn riêng, mời bạn')}</button>
-          </div>
-          <p class="note">${T('modesHint', 'Bàn công khai hiện trong danh sách để người khác vào chơi. Bàn riêng chỉ ai có link mời mới vào được.')}</p>
-          <h3 class="on-h">${T('openTables', 'Bàn công khai đang chờ')} <small>(${tables.length})</small></h3>
+          <h3 class="on-h"><span class="on-count">(${tables.length})</span> ${T('openTables', 'Bàn công khai đang chờ')}</h3>
           ${
             tables.length
               ? `<ul class="on-list">${tables
@@ -813,6 +807,12 @@ export class OnlineRoom {
                   .join('')}</ul>`
               : `<p class="note">${T('noTables', 'Chưa có bàn nào đang chờ. Bấm "Tìm đối thủ" hoặc mở bàn mới.')}</p>`
           }
+          <div class="on-actions">
+            <button type="button" class="btn btn-primary" data-on="quick">${T('quick', 'Tìm đối thủ')}</button>
+            <button type="button" class="btn" data-on="public">${T('createPublic', 'Mở bàn công khai')}</button>
+            <button type="button" class="btn" data-on="private">${T('createPrivate', 'Mở bàn riêng, mời bạn')}</button>
+          </div>
+          <p class="note">${T('modesHint', 'Bàn công khai hiện trong danh sách để người khác vào chơi. Bàn riêng chỉ ai có link mời mới vào được.')}</p>
           <p class="note on-privacy">${T('privacy', 'Nước đi được chuyển qua máy chủ MQTT công cộng miễn phí và được mã hoá theo từng bàn; máy chủ không lưu ván. Đăng nhập Google để lưu ván đã chơi vào Drive của bạn.')}</p>`;
         break;
       }

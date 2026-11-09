@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Tom for liv — alle brikkene vises nå.",
     "lib.game.mmNote": "Trykk Start: Brikkene vises i {s} sekunder og skjules deretter. Husk formen og fargen på hver brikke, og velg så brikken som passer til formen du får se. Mer enn {l} feil, og nivået er tapt.",
     "lib.game.fullscreen": "Fullskjerm",
-    "lib.game.exitFullscreen": "Avslutt fullskjerm"
+    "lib.game.exitFullscreen": "Avslutt fullskjerm",
+    "lib.online.guest": "Gjest",
+    "lib.online.connFail": "Kunne ikke koble til serveren for nettspill. Sjekk tilkoblingen (eller slå av annonseblokkeringen), og klikk på Prøv igjen.",
+    "lib.online.tableGone": "Den som åpnet bordet, har gått. Velg et annet bord eller åpne et nytt.",
+    "lib.online.drawDeclined": "Motstanderen avslo remis.",
+    "lib.online.opponent": "Motstander",
+    "lib.online.copied": "Lenken er kopiert. Send den til vennen din, så kan dere spille sammen.",
+    "lib.online.waitingFor": "venter {n} s",
+    "lib.online.drawAgreed": "Begge spillerne ble enige om remis.",
+    "lib.online.draw": "Partiet endte remis.",
+    "lib.online.oppResigned": "Motstanderen ga opp — du vant!",
+    "lib.online.youResigned": "Du ga opp.",
+    "lib.online.youWin": "Du vant!",
+    "lib.online.youLose": "Du tapte.",
+    "lib.online.connecting": "Kobler til serveren for nettspill…",
+    "lib.online.retry": "Prøv igjen",
+    "lib.online.quick": "Finn motstander",
+    "lib.online.createPublic": "Åpne offentlig bord",
+    "lib.online.createPrivate": "Åpne privat bord og inviter en venn",
+    "lib.online.modesHint": "Offentlige bord vises i listen, og alle kan bli med. Private bord nås bare med invitasjonslenken.",
+    "lib.online.openTables": "Ventende offentlige bord",
+    "lib.online.join": "Bli med",
+    "lib.online.noTables": "Ingen bord venter ennå. Klikk på \"Finn motstander\" eller åpne et nytt bord.",
+    "lib.online.privacy": "Trekkene går via en gratis offentlig MQTT-server og krypteres per bord; serveren lagrer ingen partier. Logg på med Google for å lagre fullførte partier i Drive.",
+    "lib.online.waitingPublic": "Offentlig bord: venter på at noen blir med…",
+    "lib.online.waitingPrivate": "Privat bord: send denne lenken til vennen din. Partiet starter når vennen åpner den.",
+    "lib.online.leave": "Forlat bordet",
+    "lib.online.full": "Dette bordet har allerede 2 spillere. Finn et annet bord eller åpne et nytt.",
+    "lib.online.backToList": "Tilbake til bordlisten",
+    "lib.online.you": "Deg",
+    "lib.online.oppLeft": "har forlatt bordet",
+    "lib.online.oppOffline": "frakoblet",
+    "lib.online.drawOffer": "Motstanderen tilbyr remis.",
+    "lib.online.accept": "Godta",
+    "lib.online.decline": "Avslå",
+    "lib.online.drawSent": "Remis tilbudt…",
+    "lib.online.offerDraw": "Tilby remis",
+    "lib.online.resignConfirm": "Klikk igjen for å gi opp",
+    "lib.online.resign": "Gi opp",
+    "lib.online.againSent": "Venter på at motstanderen godtar…",
+    "lib.online.againAccept": "Motstanderen vil ha revansj — Spill igjen",
+    "lib.online.again": "Spill igjen (bytt farge)",
+    "lib.online.inviteLink": "Invitasjonslenke",
+    "lib.online.copy": "Kopier lenke",
+    "lib.online.share": "Del",
+    "lib.online.saved": "Partiet er lagret i Google Drive (mappen WFTools/Games).",
+    "lib.online.saving": "Lagrer partiet i Google Drive…",
+    "lib.online.saveFail": "Partiet kunne ikke lagres i Drive ennå.",
+    "lib.online.save": "Lagre partiet i Google Drive",
+    "lib.game.darkNote": "Skjult Xiangqi (Cờ úp): begge generalene starter med forsiden opp, alle andre brikker stokkes og legges med baksiden opp. En skjult brikke flytter som brikken som vanligvis starter på feltet (på en vogns felt flytter den som en vogn), snus deretter og flytter siden som sin egentlige brikke. Rådgivere og elefanter kan gå over hele brettet. Sjakkmatt eller ingen lovlige trekk betyr tap.",
+    "lib.game.darkBoard": "Brett for skjult Xiangqi",
+    "lib.online.red": "Rød",
+    "lib.online.black": "Svart",
+    "lib.game.captured": "Slåtte brikker",
+    "lib.online.pickTable": "Finn en motstander eller åpne et bord i sidepanelet for å starte.",
+    "lib.online.theirTurn": "Motstanderens tur",
+    "lib.online.white": "Hvit",
+    "lib.online.goNote": "{n}×{n}-brett, svart begynner, hvit får {k} i komi. Områdetelling; fjern alle døde steiner før du passer. Partiet slutter når begge passer etter hverandre.",
+    "lib.online.boardSize": "Brettstørrelse",
+    "lib.online.oppPassed": "Motstanderen passet. Passer du også, slutter partiet og telles opp.",
+    "lib.online.modeAi": "Spill mot datamaskinen",
+    "lib.online.modeOnline": "Spill på nett"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Stor 16x16-sudoku med 1-9 og A-G, 10 nivåer fra lett til vanskelig, med notater og hint."
     },
     "chess": {
-      "name": "Sjakk mot datamaskinen",
-      "desc": "Spill sjakk mot datamaskinen i 10 nivåer fra lett til vanskelig, med rokade, en passant og forfremmelse."
+      "name": "Sjakk",
+      "desc": "Spill sjakk mot datamaskinen på 10 nivåer eller på nett: inviter en venn med en lenke eller møt noen nye. Med rokade, en passant og forvandling."
     },
     "xiangqi": {
-      "name": "Xiangqi mot datamaskinen",
-      "desc": "Spill kinesisk sjakk (xiangqi) mot datamaskinen i 10 nivåer, med blokkert hestebein, elefantøye, kanonslag og regelen om generalene."
+      "name": "Xiangqi (kinesisk sjakk)",
+      "desc": "Spill Xiangqi mot datamaskinen på 10 nivåer eller på nett: inviter en venn med en lenke eller møt noen nye. Fullstendige regler: hestens bein, elefantens øye, kanonens hopp og generaler som ikke kan se hverandre."
     },
     "go-game": {
-      "name": "Go mot datamaskinen",
-      "desc": "Spill go mot datamaskinen på brett på 5x5, 7x7 og 9x9 i 10 nivåer, med automatisk poengtelling til slutt."
+      "name": "Go",
+      "desc": "Spill Go mot datamaskinen på 10 nivåer eller på nett på 9x9-, 13x13- og 19x19-brett med en venn eller ny motstander. Automatisk telling til slutt."
     },
     "memory-shapes": {
       "name": "Form- og fargeminne",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Skrivebord på nett",
       "desc": "Et datamaskinskrivebord i nettleseren: filbehandler, Notepad, bilde- og PDF-viser, kalkulator, kalender og papirkurv. Filene lagres i Google Disk."
+    },
+    "co-up": {
+      "name": "Skjult Xiangqi (Cờ úp)",
+      "desc": "Spill vietnamesisk skjult Xiangqi: brikkene starter med baksiden opp og snus etter første trekk. Mot datamaskinen på 10 nivåer eller på nett med venner og nye motstandere."
     }
   },
   "s": {

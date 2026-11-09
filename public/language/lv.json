@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Dzīvību vairs nav — visas flīzes atklātas.",
     "lib.game.mmNote": "Nospiediet Sākt: flīzes tiek rādītas {s} sekundes un tad paslēptas. Atcerieties katras flīzes formu un krāsu, pēc tam izvēlieties flīzi, kas atbilst parādītajai formai. Vairāk nekā {l} kļūdas nozīmē, ka līmenis nav izpildīts.",
     "lib.game.fullscreen": "Pilnekrāns",
-    "lib.game.exitFullscreen": "Iziet no pilnekrāna"
+    "lib.game.exitFullscreen": "Iziet no pilnekrāna",
+    "lib.online.guest": "Viesis",
+    "lib.online.connFail": "Neizdevās izveidot savienojumu ar tiešsaistes spēles serveri. Pārbaudiet savienojumu (vai izslēdziet reklāmu bloķētāju) un noklikšķiniet uz Mēģināt vēlreiz.",
+    "lib.online.tableGone": "Tas, kurš atvēra galdu, ir aizgājis. Izvēlieties citu galdu vai atveriet jaunu.",
+    "lib.online.drawDeclined": "Pretinieks atteicās no neizšķirta.",
+    "lib.online.opponent": "Pretinieks",
+    "lib.online.copied": "Saite nokopēta. Nosūtiet to draugam un spēlējiet kopā.",
+    "lib.online.waitingFor": "gaida {n} s",
+    "lib.online.drawAgreed": "Abi spēlētāji vienojās par neizšķirtu.",
+    "lib.online.draw": "Partija beidzās neizšķirti.",
+    "lib.online.oppResigned": "Pretinieks padevās — jūs uzvarējāt!",
+    "lib.online.youResigned": "Jūs padevāties.",
+    "lib.online.youWin": "Jūs uzvarējāt!",
+    "lib.online.youLose": "Jūs zaudējāt.",
+    "lib.online.connecting": "Savienojas ar tiešsaistes spēles serveri…",
+    "lib.online.retry": "Mēģināt vēlreiz",
+    "lib.online.quick": "Atrast pretinieku",
+    "lib.online.createPublic": "Atvērt publisku galdu",
+    "lib.online.createPrivate": "Atvērt privātu galdu un uzaicināt draugu",
+    "lib.online.modesHint": "Publiskie galdi redzami sarakstā, un pievienoties var ikviens. Privātam galdam var piekļūt tikai ar uzaicinājuma saiti.",
+    "lib.online.openTables": "Gaidošie publiskie galdi",
+    "lib.online.join": "Pievienoties",
+    "lib.online.noTables": "Vēl neviens galds negaida. Noklikšķiniet uz \"Atrast pretinieku\" vai atveriet jaunu galdu.",
+    "lib.online.privacy": "Gājieni iet caur bezmaksas publisku MQTT serveri un tiek šifrēti katram galdam atsevišķi; serveris partijas neglabā. Piesakieties ar Google, lai pabeigtās partijas saglabātu savā Drive.",
+    "lib.online.waitingPublic": "Publisks galds: gaida, kad kāds pievienosies…",
+    "lib.online.waitingPrivate": "Privāts galds: nosūtiet šo saiti draugam. Partija sāksies, kad viņš to atvērs.",
+    "lib.online.leave": "Pamest galdu",
+    "lib.online.full": "Pie šī galda jau ir 2 spēlētāji. Atrodiet citu galdu vai atveriet jaunu.",
+    "lib.online.backToList": "Atpakaļ uz galdu sarakstu",
+    "lib.online.you": "Jūs",
+    "lib.online.oppLeft": "pameta galdu",
+    "lib.online.oppOffline": "atvienots",
+    "lib.online.drawOffer": "Pretinieks piedāvā neizšķirtu.",
+    "lib.online.accept": "Pieņemt",
+    "lib.online.decline": "Noraidīt",
+    "lib.online.drawSent": "Neizšķirts piedāvāts…",
+    "lib.online.offerDraw": "Piedāvāt neizšķirtu",
+    "lib.online.resignConfirm": "Noklikšķiniet vēlreiz, lai padotos",
+    "lib.online.resign": "Padoties",
+    "lib.online.againSent": "Gaida pretinieka piekrišanu…",
+    "lib.online.againAccept": "Pretinieks vēlas revanšu — Spēlēt vēlreiz",
+    "lib.online.again": "Spēlēt vēlreiz (mainīt krāsas)",
+    "lib.online.inviteLink": "Uzaicinājuma saite",
+    "lib.online.copy": "Kopēt saiti",
+    "lib.online.share": "Kopīgot",
+    "lib.online.saved": "Partija saglabāta Google Drive (mape WFTools/Games).",
+    "lib.online.saving": "Saglabā partiju Google Drive…",
+    "lib.online.saveFail": "Partiju vēl neizdevās saglabāt Drive.",
+    "lib.online.save": "Saglabāt partiju Google Drive",
+    "lib.game.darkNote": "Slēptais Xiangqi (Cờ úp): abi ģenerāļi sāk atklāti, pārējās figūras sajauc un noliek ar seju uz leju. Slēpta figūra iet kā figūra, kas parasti sāk tās laukā (rata laukā tā iet kā rats), tad tiek apgriezta un turpmāk iet kā tās īstā figūra. Padomnieki un ziloņi drīkst iet pa visu dēli. Mats vai gājienu trūkums nozīmē zaudējumu.",
+    "lib.game.darkBoard": "Slēptā Xiangqi dēlis",
+    "lib.online.red": "Sarkanie",
+    "lib.online.black": "Melnie",
+    "lib.game.captured": "Nosistās figūras",
+    "lib.online.pickTable": "Lai sāktu, atrodiet pretinieku vai atveriet galdu sānu panelī.",
+    "lib.online.theirTurn": "Pretinieka gājiens",
+    "lib.online.white": "Baltie",
+    "lib.online.goNote": "{n}×{n} dēlis, sāk melnie, baltie saņem {k} komi. Skaita laukumu; pirms pasēšanas noņemiet visus mirušos akmeņus. Partija beidzas, kad abi pēc kārtas pasē.",
+    "lib.online.boardSize": "Dēļa izmērs",
+    "lib.online.oppPassed": "Pretinieks pasēja. Ja arī jūs pasēsiet, partija beigsies un tiks saskaitīta.",
+    "lib.online.modeAi": "Spēlēt pret datoru",
+    "lib.online.modeOnline": "Spēlēt tiešsaistē"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Liels 16x16 sudoku ar cipariem 1-9 un burtiem A-G, 10 līmeņi no vieglā līdz sarežģītam, ar piezīmēm un padomiem."
     },
     "chess": {
-      "name": "Šahs pret datoru",
-      "desc": "Spēlējiet šahu pret datoru 10 līmeņos no vieglā līdz sarežģītam, ar rokādi, sitienu ejot garām un pārvēršanu."
+      "name": "Šahs",
+      "desc": "Spēlējiet šahu pret datoru 10 līmeņos vai tiešsaistē: uzaiciniet draugu ar saiti vai spēlējiet ar kādu jaunu. Ar rokādi, ņemšanu garāmejot un pārvēršanu."
     },
     "xiangqi": {
-      "name": "Siandzi pret datoru",
-      "desc": "Spēlējiet ķīniešu šahu (siandzi) pret datoru 10 līmeņos, ar zirga kājas bloķēšanu, ziloņa aci, lielgabala sitienu un ģenerāļu savstarpējā skata noteikumu."
+      "name": "Xiangqi (ķīniešu šahs)",
+      "desc": "Spēlējiet Xiangqi pret datoru 10 līmeņos vai tiešsaistē: uzaiciniet draugu ar saiti vai spēlējiet ar kādu jaunu. Pilni noteikumi: zirga kāja, ziloņa acs, lielgabala lēciens un ģenerāļi, kas nedrīkst redzēt viens otru."
     },
     "go-game": {
-      "name": "Go pret datoru",
-      "desc": "Spēlējiet Go pret datoru uz 5x5, 7x7 un 9x9 galdiem 10 līmeņos, ar automātisku punktu skaitīšanu beigās."
+      "name": "Go",
+      "desc": "Spēlējiet Go pret datoru 10 līmeņos vai tiešsaistē uz 9x9, 13x13 un 19x19 dēļiem ar draugu vai jaunu pretinieku. Automātiska skaitīšana beigās."
     },
     "memory-shapes": {
       "name": "Formu un krāsu atmiņa",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Tiešsaistes darbvirsma",
       "desc": "Datora darbvirsma pārlūkprogrammā: failu pārvaldnieks, Notepad, attēlu un PDF skatītājs, kalkulators, kalendārs un atkritne. Faili tiek saglabāti jūsu Google diskā."
+    },
+    "co-up": {
+      "name": "Slēptais Xiangqi (Cờ úp)",
+      "desc": "Spēlējiet vjetnamiešu slēpto Xiangqi: figūras sāk ar seju uz leju un apgriežas pēc pirmā gājiena. Pret datoru 10 līmeņos vai tiešsaistē ar draugiem un jauniem pretiniekiem."
     }
   },
   "s": {

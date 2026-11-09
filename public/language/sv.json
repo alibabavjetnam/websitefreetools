@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Inga liv kvar — alla brickor visas nu.",
     "lib.game.mmNote": "Tryck på Starta: brickorna visas i {s} sekunder och döljs sedan. Kom ihåg form och färg på varje bricka och välj sedan brickan som matchar formen du får se. Fler än {l} fel och nivån misslyckas.",
     "lib.game.fullscreen": "Helskärm",
-    "lib.game.exitFullscreen": "Avsluta helskärm"
+    "lib.game.exitFullscreen": "Avsluta helskärm",
+    "lib.online.guest": "Gäst",
+    "lib.online.connFail": "Kunde inte ansluta till servern för onlinespel. Kontrollera anslutningen (eller stäng av annonsblockeraren) och klicka på Försök igen.",
+    "lib.online.tableGone": "Den som öppnade bordet har gått. Välj ett annat bord eller öppna ett nytt.",
+    "lib.online.drawDeclined": "Motståndaren avböjde remi.",
+    "lib.online.opponent": "Motståndare",
+    "lib.online.copied": "Länken har kopierats. Skicka den till din vän så kan ni spela tillsammans.",
+    "lib.online.waitingFor": "väntar {n} s",
+    "lib.online.drawAgreed": "Båda spelarna kom överens om remi.",
+    "lib.online.draw": "Partiet slutade remi.",
+    "lib.online.oppResigned": "Motståndaren gav upp — du vann!",
+    "lib.online.youResigned": "Du gav upp.",
+    "lib.online.youWin": "Du vann!",
+    "lib.online.youLose": "Du förlorade.",
+    "lib.online.connecting": "Ansluter till servern för onlinespel…",
+    "lib.online.retry": "Försök igen",
+    "lib.online.quick": "Hitta motståndare",
+    "lib.online.createPublic": "Öppna offentligt bord",
+    "lib.online.createPrivate": "Öppna privat bord och bjud in en vän",
+    "lib.online.modesHint": "Offentliga bord syns i listan och vem som helst kan gå med. Privata bord nås bara via inbjudningslänken.",
+    "lib.online.openTables": "Väntande offentliga bord",
+    "lib.online.join": "Gå med",
+    "lib.online.noTables": "Inga bord väntar ännu. Klicka på \"Hitta motståndare\" eller öppna ett nytt bord.",
+    "lib.online.privacy": "Dragen skickas via en gratis offentlig MQTT-server och krypteras per bord; servern sparar inga partier. Logga in med Google för att spara avslutade partier i din Drive.",
+    "lib.online.waitingPublic": "Offentligt bord: väntar på att någon går med…",
+    "lib.online.waitingPrivate": "Privat bord: skicka den här länken till din vän. Partiet startar när vännen öppnar den.",
+    "lib.online.leave": "Lämna bordet",
+    "lib.online.full": "Det här bordet har redan 2 spelare. Hitta ett annat bord eller öppna ett nytt.",
+    "lib.online.backToList": "Tillbaka till bordslistan",
+    "lib.online.you": "Du",
+    "lib.online.oppLeft": "har lämnat bordet",
+    "lib.online.oppOffline": "frånkopplad",
+    "lib.online.drawOffer": "Motståndaren erbjuder remi.",
+    "lib.online.accept": "Acceptera",
+    "lib.online.decline": "Avböj",
+    "lib.online.drawSent": "Remi erbjuden…",
+    "lib.online.offerDraw": "Erbjud remi",
+    "lib.online.resignConfirm": "Klicka igen för att ge upp",
+    "lib.online.resign": "Ge upp",
+    "lib.online.againSent": "Väntar på att motståndaren godkänner…",
+    "lib.online.againAccept": "Motståndaren vill ha revansch — Spela igen",
+    "lib.online.again": "Spela igen (byt färg)",
+    "lib.online.inviteLink": "Inbjudningslänk",
+    "lib.online.copy": "Kopiera länk",
+    "lib.online.share": "Dela",
+    "lib.online.saved": "Partiet sparades i Google Drive (mappen WFTools/Games).",
+    "lib.online.saving": "Sparar partiet i Google Drive…",
+    "lib.online.saveFail": "Partiet kunde inte sparas i Drive ännu.",
+    "lib.online.save": "Spara partiet i Google Drive",
+    "lib.game.darkNote": "Dold Xiangqi (Cờ úp): båda generalerna börjar öppet, alla andra pjäser blandas och läggs med baksidan upp. En dold pjäs flyttar som den pjäs som normalt börjar på dess ruta (på en vagns ruta flyttar den som en vagn), vänds sedan och flyttar därefter som sin riktiga pjäs. Rådgivare och elefanter får gå över hela brädet. Den som blir schackmatt eller saknar drag förlorar.",
+    "lib.game.darkBoard": "Bräde för dold Xiangqi",
+    "lib.online.red": "Röd",
+    "lib.online.black": "Svart",
+    "lib.game.captured": "Slagna pjäser",
+    "lib.online.pickTable": "Hitta en motståndare eller öppna ett bord i sidopanelen för att börja.",
+    "lib.online.theirTurn": "Motståndarens tur",
+    "lib.online.white": "Vit",
+    "lib.online.goNote": "{n}×{n}-bräde, svart börjar, vit får {k} i komi. Områdesräkning; ta bort alla döda stenar innan du passar. Partiet slutar när båda passar i följd.",
+    "lib.online.boardSize": "Brädstorlek",
+    "lib.online.oppPassed": "Motståndaren passade. Om du också passar slutar partiet och räknas.",
+    "lib.online.modeAi": "Spela mot datorn",
+    "lib.online.modeOnline": "Spela online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Stor 16x16-sudoku med 1-9 och A-G, 10 nivåer från lätt till svår, med anteckningar och tips."
     },
     "chess": {
-      "name": "Schack mot datorn",
-      "desc": "Spela schack mot datorn på 10 nivåer från lätt till svår, med rockad, en passant och promovering."
+      "name": "Schack",
+      "desc": "Spela schack mot datorn i 10 nivåer eller online: bjud in en vän med en länk eller möt någon ny. Med rockad, en passant och förvandling."
     },
     "xiangqi": {
-      "name": "Xiangqi mot datorn",
-      "desc": "Spela kinesiskt schack (xiangqi) mot datorn på 10 nivåer, med hästbenet, elefantögat, kanonslag och regeln om generalerna som möts."
+      "name": "Xiangqi (kinesiskt schack)",
+      "desc": "Spela Xiangqi mot datorn i 10 nivåer eller online: bjud in en vän med en länk eller möt någon ny. Fullständiga regler: hästens ben, elefantens öga, kanonens hopp och generaler som inte får se varandra."
     },
     "go-game": {
-      "name": "Go mot datorn",
-      "desc": "Spela Go mot datorn på 5x5-, 7x7- och 9x9-bräden på 10 nivåer, med automatisk poängräkning i slutet."
+      "name": "Go",
+      "desc": "Spela Go mot datorn i 10 nivåer eller online på 9x9-, 13x13- och 19x19-bräden med en vän eller ny motståndare. Automatisk räkning i slutet."
     },
     "memory-shapes": {
       "name": "Form- och färgminne",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Skrivbord online",
       "desc": "Ett datorskrivbord i webbläsaren: filhanterare, Notepad, bild- och PDF-visare, kalkylator, kalender och papperskorg. Filerna sparas på din Google Drive."
+    },
+    "co-up": {
+      "name": "Dold Xiangqi (Cờ úp)",
+      "desc": "Spela vietnamesisk dold Xiangqi: pjäserna börjar med baksidan upp och vänds efter första draget. Mot datorn i 10 nivåer eller online med vänner och nya motståndare."
     }
   },
   "s": {

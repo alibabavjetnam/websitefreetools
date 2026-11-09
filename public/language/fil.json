@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Ubos na ang buhay — ipinapakita na ang lahat ng tile.",
     "lib.game.mmNote": "Pindutin ang Simulan: ipapakita ang mga tile sa loob ng {s} segundo, saka itatago. Tandaan ang hugis at kulay ng bawat tile, saka piliin ang tile na tugma sa ipinakitang hugis. Lampas sa {l} pagkakamali, bagsak ang antas.",
     "lib.game.fullscreen": "Full screen",
-    "lib.game.exitFullscreen": "Lumabas sa full screen"
+    "lib.game.exitFullscreen": "Lumabas sa full screen",
+    "lib.online.guest": "Bisita",
+    "lib.online.connFail": "Hindi makakonekta sa server ng online na laro. Tingnan ang koneksyon (o i-off ang ad blocker) at i-click ang Subukang muli.",
+    "lib.online.tableGone": "Umalis na ang nagbukas ng mesa. Pumili ng ibang mesa o magbukas ng bago.",
+    "lib.online.drawDeclined": "Tinanggihan ng kalaban ang tabla.",
+    "lib.online.opponent": "Kalaban",
+    "lib.online.copied": "Nakopya ang link. Ipadala ito sa kaibigan mo para maglaro kayo.",
+    "lib.online.waitingFor": "naghihintay nang {n} s",
+    "lib.online.drawAgreed": "Nagkasundo ang dalawang manlalaro sa tabla.",
+    "lib.online.draw": "Natapos sa tabla ang laro.",
+    "lib.online.oppResigned": "Sumuko ang kalaban — panalo ka!",
+    "lib.online.youResigned": "Sumuko ka.",
+    "lib.online.youWin": "Panalo ka!",
+    "lib.online.youLose": "Talo ka.",
+    "lib.online.connecting": "Kumokonekta sa server ng online na laro…",
+    "lib.online.retry": "Subukang muli",
+    "lib.online.quick": "Maghanap ng kalaban",
+    "lib.online.createPublic": "Magbukas ng pampublikong mesa",
+    "lib.online.createPrivate": "Magbukas ng pribadong mesa at mag-imbita ng kaibigan",
+    "lib.online.modesHint": "Nasa listahan ang mga pampublikong mesa at puwedeng sumali ang kahit sino. Sa pribadong mesa, makakapasok lang gamit ang link ng imbitasyon.",
+    "lib.online.openTables": "Mga pampublikong mesang naghihintay",
+    "lib.online.join": "Sumali",
+    "lib.online.noTables": "Wala pang naghihintay na mesa. I-click ang \"Maghanap ng kalaban\" o magbukas ng bagong mesa.",
+    "lib.online.privacy": "Dumadaan ang mga tira sa libreng pampublikong MQTT server at naka-encrypt bawat mesa; hindi nag-iimbak ng laro ang server. Mag-sign in sa Google para mai-save ang mga natapos na laro sa iyong Drive.",
+    "lib.online.waitingPublic": "Pampublikong mesa: naghihintay na may sumali…",
+    "lib.online.waitingPrivate": "Pribadong mesa: ipadala ang link na ito sa kaibigan mo. Magsisimula ang laro kapag binuksan niya ito.",
+    "lib.online.leave": "Umalis sa mesa",
+    "lib.online.full": "May 2 manlalaro na sa mesang ito. Maghanap ng ibang mesa o magbukas ng bago.",
+    "lib.online.backToList": "Bumalik sa listahan ng mesa",
+    "lib.online.you": "Ikaw",
+    "lib.online.oppLeft": "umalis sa mesa",
+    "lib.online.oppOffline": "nadiskonekta",
+    "lib.online.drawOffer": "Nag-aalok ng tabla ang kalaban.",
+    "lib.online.accept": "Tanggapin",
+    "lib.online.decline": "Tanggihan",
+    "lib.online.drawSent": "Inalok ang tabla…",
+    "lib.online.offerDraw": "Mag-alok ng tabla",
+    "lib.online.resignConfirm": "I-click muli para sumuko",
+    "lib.online.resign": "Sumuko",
+    "lib.online.againSent": "Hinihintay ang pagsang-ayon ng kalaban…",
+    "lib.online.againAccept": "Gusto ng kalaban ng rematch — Maglaro ulit",
+    "lib.online.again": "Maglaro ulit (palit kulay)",
+    "lib.online.inviteLink": "Link ng imbitasyon",
+    "lib.online.copy": "Kopyahin ang link",
+    "lib.online.share": "Ibahagi",
+    "lib.online.saved": "Na-save ang laro sa Google Drive (folder na WFTools/Games).",
+    "lib.online.saving": "Sine-save ang laro sa Google Drive…",
+    "lib.online.saveFail": "Hindi pa ma-save ang laro sa Drive.",
+    "lib.online.save": "I-save ang laro sa Google Drive",
+    "lib.game.darkNote": "Nakatagong Xiangqi (Cờ úp): nakaharap pataas ang dalawang heneral, at binabalasa at itinataob ang iba pang piyesa. Gumagalaw ang nakatagong piyesa gaya ng piyesang karaniwang nagsisimula sa puwesto nito (sa puwesto ng karwahe, gumagalaw na parang karwahe), saka binabaligtad at mula noon ay gumagalaw bilang tunay nitong piyesa. Puwedeng pumunta saanman sa board ang mga tagapayo at elepante. Talo ang na-checkmate o walang matirang tira.",
+    "lib.game.darkBoard": "Board ng nakatagong Xiangqi",
+    "lib.online.red": "Pula",
+    "lib.online.black": "Itim",
+    "lib.game.captured": "Mga nakaing piyesa",
+    "lib.online.pickTable": "Maghanap ng kalaban o magbukas ng mesa sa gilid para magsimula.",
+    "lib.online.theirTurn": "Tira ng kalaban",
+    "lib.online.white": "Puti",
+    "lib.online.goNote": "{n}×{n} na board, itim ang nauuna, may {k} na komi ang puti. Bilang ayon sa lawak; alisin ang lahat ng patay na bato bago mag-pass. Tapos ang laro kapag parehong nag-pass nang sunod.",
+    "lib.online.boardSize": "Laki ng board",
+    "lib.online.oppPassed": "Nag-pass ang kalaban. Kung mag-pass ka rin, tapos ang laro at bibilangin.",
+    "lib.online.modeAi": "Laban sa computer",
+    "lib.online.modeOnline": "Maglaro online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Malaking 16x16 Sudoku na gumagamit ng 1-9 at A-G, 10 antas mula madali hanggang mahirap, may mga tala at pahiwatig."
     },
     "chess": {
-      "name": "Chess laban sa Computer",
-      "desc": "Maglaro ng chess laban sa computer sa 10 antas mula madali hanggang mahirap, may castling, en passant at promotion."
+      "name": "Chess",
+      "desc": "Maglaro ng chess laban sa computer sa 10 antas o online: mag-imbita ng kaibigan gamit ang link o makipaglaro sa bagong kalaban. May castling, en passant at promotion."
     },
     "xiangqi": {
-      "name": "Xiangqi laban sa Computer",
-      "desc": "Maglaro ng Chinese chess (xiangqi) laban sa computer sa 10 antas, may harang sa paa ng kabayo, mata ng elepante, pagkuha ng kanyon at patakaran ng magkaharap na heneral."
+      "name": "Xiangqi (Chinese chess)",
+      "desc": "Maglaro ng Xiangqi laban sa computer sa 10 antas o online: mag-imbita ng kaibigan gamit ang link o makipaglaro sa bagong kalaban. Kumpletong patakaran: paa ng kabayo, mata ng elepante, talon ng kanyon at mga heneral na hindi puwedeng magkaharap."
     },
     "go-game": {
-      "name": "Go laban sa Computer",
-      "desc": "Maglaro ng Go laban sa computer sa 5x5, 7x7 at 9x9 na board sa 10 antas, may awtomatikong pagbilang ng puntos sa dulo."
+      "name": "Go",
+      "desc": "Maglaro ng Go laban sa computer sa 10 antas o online sa 9x9, 13x13 at 19x19 na board kasama ang kaibigan o bagong kalaban. Awtomatikong bilang sa dulo."
     },
     "memory-shapes": {
       "name": "Memorya ng Hugis at Kulay",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Online na desktop",
       "desc": "Isang computer desktop sa iyong browser: file manager, Notepad, image at PDF viewer, calculator, kalendaryo at basurahan. Naka-save ang mga file sa iyong Google Drive."
+    },
+    "co-up": {
+      "name": "Nakatagong Xiangqi (Cờ úp)",
+      "desc": "Maglaro ng Vietnamese na nakatagong Xiangqi: nakataob ang mga piyesa at binabaligtad pagkatapos ng unang tira. Laban sa computer sa 10 antas o online kasama ang mga kaibigan at bagong kalaban."
     }
   },
   "s": {

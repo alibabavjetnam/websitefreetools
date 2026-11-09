@@ -1370,8 +1370,8 @@ html.wd-noscroll, html.wd-noscroll body { overflow: hidden; }
 .on-spin { width: 14px; height: 14px; flex: none; border: 2px solid color-mix(in srgb, var(--accent) 30%, transparent); border-top-color: var(--accent); border-radius: 50%; animation: on-spin 0.9s linear infinite; }
 @keyframes on-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .on-spin { animation: none; } }
-.on-h { margin: 6px 0 0; font-size: 15px; }
-.on-h small { color: var(--muted); font-weight: 400; }
+.on-h { margin: 2px 0 0; font-size: 20px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; line-height: 1.25; }
+.on-h .on-count { color: var(--accent, #2563eb); }
 .on-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; max-height: 260px; overflow: auto; }
 .on-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
 .on-list li span { display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }

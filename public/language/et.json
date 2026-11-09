@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Elud on otsas — kõik plaadid on nüüd avatud.",
     "lib.game.mmNote": "Vajuta Alusta: plaate näidatakse {s} sekundit ja seejärel peidetakse. Jäta meelde iga plaadi kuju ja värv ning vali plaat, mis vastab näidatud kujule. Rohkem kui {l} viga tähendab, et tase kukkus läbi.",
     "lib.game.fullscreen": "Täisekraan",
-    "lib.game.exitFullscreen": "Välju täisekraanilt"
+    "lib.game.exitFullscreen": "Välju täisekraanilt",
+    "lib.online.guest": "Külaline",
+    "lib.online.connFail": "Võrgumänguserveriga ei õnnestunud ühendust luua. Kontrollige ühendust (või lülitage reklaamiblokeerija välja) ja klõpsake Proovi uuesti.",
+    "lib.online.tableGone": "Laua avanud mängija lahkus. Valige teine laud või avage uus.",
+    "lib.online.drawDeclined": "Vastane keeldus viigist.",
+    "lib.online.opponent": "Vastane",
+    "lib.online.copied": "Link kopeeriti. Saatke see sõbrale ja mängige koos.",
+    "lib.online.waitingFor": "ootab {n} s",
+    "lib.online.drawAgreed": "Mõlemad mängijad leppisid viigis kokku.",
+    "lib.online.draw": "Partii lõppes viigiga.",
+    "lib.online.oppResigned": "Vastane andis alla — teie võitsite!",
+    "lib.online.youResigned": "Te andsite alla.",
+    "lib.online.youWin": "Te võitsite!",
+    "lib.online.youLose": "Te kaotasite.",
+    "lib.online.connecting": "Võrgumänguserveriga ühendamine…",
+    "lib.online.retry": "Proovi uuesti",
+    "lib.online.quick": "Leia vastane",
+    "lib.online.createPublic": "Ava avalik laud",
+    "lib.online.createPrivate": "Ava privaatne laud ja kutsu sõber",
+    "lib.online.modesHint": "Avalikud lauad on loendis ja liituda võib igaüks. Privaatsele lauale pääseb ainult kutselingiga.",
+    "lib.online.openTables": "Ootavad avalikud lauad",
+    "lib.online.join": "Liitu",
+    "lib.online.noTables": "Ükski laud veel ei oota. Klõpsake \"Leia vastane\" või avage uus laud.",
+    "lib.online.privacy": "Käigud liiguvad tasuta avaliku MQTT-serveri kaudu ja on iga laua jaoks krüpteeritud; server partiisid ei salvesta. Logige Google'iga sisse, et lõpetatud partiid oma Drive'i salvestada.",
+    "lib.online.waitingPublic": "Avalik laud: ootame, et keegi liituks…",
+    "lib.online.waitingPrivate": "Privaatne laud: saatke see link sõbrale. Partii algab, kui ta selle avab.",
+    "lib.online.leave": "Lahku lauast",
+    "lib.online.full": "Selle laua taga on juba 2 mängijat. Leidke teine laud või avage uus.",
+    "lib.online.backToList": "Tagasi laudade loendisse",
+    "lib.online.you": "Teie",
+    "lib.online.oppLeft": "lahkus lauast",
+    "lib.online.oppOffline": "ühendus puudub",
+    "lib.online.drawOffer": "Vastane pakub viiki.",
+    "lib.online.accept": "Nõustu",
+    "lib.online.decline": "Keeldu",
+    "lib.online.drawSent": "Viik pakutud…",
+    "lib.online.offerDraw": "Paku viiki",
+    "lib.online.resignConfirm": "Alla andmiseks klõpsake uuesti",
+    "lib.online.resign": "Anna alla",
+    "lib.online.againSent": "Ootame vastase nõusolekut…",
+    "lib.online.againAccept": "Vastane soovib revanši — Mängi uuesti",
+    "lib.online.again": "Mängi uuesti (vaheta värvid)",
+    "lib.online.inviteLink": "Kutselink",
+    "lib.online.copy": "Kopeeri link",
+    "lib.online.share": "Jaga",
+    "lib.online.saved": "Partii salvestati Google Drive'i (kaust WFTools/Games).",
+    "lib.online.saving": "Partii salvestamine Google Drive'i…",
+    "lib.online.saveFail": "Partiid ei õnnestunud veel Drive'i salvestada.",
+    "lib.online.save": "Salvesta partii Google Drive'i",
+    "lib.game.darkNote": "Peidetud Xiangqi (Cờ úp): mõlemad kindralid alustavad avatult, ülejäänud nupud segatakse ja pannakse tagurpidi. Peidetud nupp käib nagu nupp, mis tavaliselt sellelt väljalt alustab (vankri väljal käib nagu vanker), pöördub siis ümber ja käib edaspidi oma tõelise nupuna. Nõunikud ja elevandid võivad liikuda kogu laual. Matt või käikude puudumine tähendab kaotust.",
+    "lib.game.darkBoard": "Peidetud Xiangqi laud",
+    "lib.online.red": "Punane",
+    "lib.online.black": "Must",
+    "lib.game.captured": "Löödud nupud",
+    "lib.online.pickTable": "Alustamiseks leidke vastane või avage laud külgpaneelil.",
+    "lib.online.theirTurn": "Vastase käik",
+    "lib.online.white": "Valge",
+    "lib.online.goNote": "{n}×{n} laud, must alustab, valge saab {k} komit. Loetakse ala; enne passimist eemaldage kõik surnud kivid. Partii lõpeb, kui mõlemad passivad järjest.",
+    "lib.online.boardSize": "Laua suurus",
+    "lib.online.oppPassed": "Vastane passis. Kui ka teie passite, partii lõpeb ja loetakse kokku.",
+    "lib.online.modeAi": "Mängi arvuti vastu",
+    "lib.online.modeOnline": "Mängi võrgus"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Suur 16x16 sudoku numbritega 1-9 ja tähtedega A-G, 10 taset lihtsast raskeni, märkmete ja vihjetega."
     },
     "chess": {
-      "name": "Male arvuti vastu",
-      "desc": "Mängi malet arvuti vastu 10 tasemel lihtsast raskeni, rokaadi, möödaminnes löömise ja ettur-muutmisega."
+      "name": "Male",
+      "desc": "Mängige malet arvuti vastu 10 tasemel või võrgus: kutsuge sõber lingiga või mängige kellegi uuega. Vangerduse, möödaminnes löömise ja muundamisega."
     },
     "xiangqi": {
-      "name": "Xiangqi arvuti vastu",
-      "desc": "Mängi Hiina malet (xiangqi) arvuti vastu 10 tasemel, hobuse jala blokeerimise, elevandi silma, kahuriga löömise ja kindralite reegliga."
+      "name": "Xiangqi (Hiina male)",
+      "desc": "Mängige Xiangqit arvuti vastu 10 tasemel või võrgus: kutsuge sõber lingiga või mängige kellegi uuega. Täielikud reeglid: hobuse jalg, elevandi silm, kahuri hüpe ja kindralid, kes ei tohi teineteist näha."
     },
     "go-game": {
-      "name": "Go arvuti vastu",
-      "desc": "Mängi goo arvuti vastu 5x5, 7x7 ja 9x9 laual 10 tasemel, lõpus automaatse punktiarvestusega."
+      "name": "Go",
+      "desc": "Mängige Go-d arvuti vastu 10 tasemel või võrgus 9x9, 13x13 ja 19x19 laual sõbra või uue vastasega. Automaatne lugemine lõpus."
     },
     "memory-shapes": {
       "name": "Kuju- ja värvimälu",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Veebitöölaud",
       "desc": "Arvuti töölaud brauseris: failihaldur, Notepad, pildi- ja PDF-vaatur, kalkulaator, kalender ja prügikast. Failid salvestatakse sinu Google Drive'i."
+    },
+    "co-up": {
+      "name": "Peidetud Xiangqi (Cờ úp)",
+      "desc": "Mängige Vietnami peidetud Xiangqit: nupud alustavad tagurpidi ja pöörduvad pärast esimest käiku. Arvuti vastu 10 tasemel või võrgus sõprade ja uute vastastega."
     }
   },
   "s": {

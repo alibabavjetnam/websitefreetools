@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Zmanjkalo je življenj — vse ploščice so razkrite.",
     "lib.game.mmNote": "Pritisnite Začni: ploščice se prikažejo za {s} sekund, nato se skrijejo. Zapomnite si obliko in barvo vsake ploščice, nato izberite ploščico s prikazano obliko. Več kot {l} napak pomeni neuspeh.",
     "lib.game.fullscreen": "Celozaslonski način",
-    "lib.game.exitFullscreen": "Izhod iz celozaslonskega načina"
+    "lib.game.exitFullscreen": "Izhod iz celozaslonskega načina",
+    "lib.online.guest": "Gost",
+    "lib.online.connFail": "Povezave s strežnikom za spletno igro ni bilo mogoče vzpostaviti. Preverite povezavo (ali izklopite blokiranje oglasov) in kliknite Poskusi znova.",
+    "lib.online.tableGone": "Igralec, ki je odprl mizo, je odšel. Izberite drugo mizo ali odprite novo.",
+    "lib.online.drawDeclined": "Nasprotnik je zavrnil remi.",
+    "lib.online.opponent": "Nasprotnik",
+    "lib.online.copied": "Povezava kopirana. Pošljite jo prijatelju in igrajta skupaj.",
+    "lib.online.waitingFor": "čaka {n} s",
+    "lib.online.drawAgreed": "Igralca sta se dogovorila za remi.",
+    "lib.online.draw": "Partija se je končala z remijem.",
+    "lib.online.oppResigned": "Nasprotnik se je predal — zmagali ste!",
+    "lib.online.youResigned": "Predali ste se.",
+    "lib.online.youWin": "Zmagali ste!",
+    "lib.online.youLose": "Izgubili ste.",
+    "lib.online.connecting": "Povezovanje s strežnikom za spletno igro…",
+    "lib.online.retry": "Poskusi znova",
+    "lib.online.quick": "Poišči nasprotnika",
+    "lib.online.createPublic": "Odpri javno mizo",
+    "lib.online.createPrivate": "Odpri zasebno mizo in povabi prijatelja",
+    "lib.online.modesHint": "Javne mize so na seznamu in pridruži se lahko kdorkoli. Do zasebne mize pridete le s povezavo za povabilo.",
+    "lib.online.openTables": "Javne mize, ki čakajo",
+    "lib.online.join": "Pridruži se",
+    "lib.online.noTables": "Nobena miza še ne čaka. Kliknite \"Poišči nasprotnika\" ali odprite novo mizo.",
+    "lib.online.privacy": "Poteze gredo prek brezplačnega javnega strežnika MQTT in so šifrirane za vsako mizo posebej; strežnik partij ne shranjuje. Prijavite se z računom Google, da končane partije shranite na svoj Drive.",
+    "lib.online.waitingPublic": "Javna miza: čakamo, da se kdo pridruži…",
+    "lib.online.waitingPrivate": "Zasebna miza: pošljite to povezavo prijatelju. Partija se začne, ko jo odpre.",
+    "lib.online.leave": "Zapusti mizo",
+    "lib.online.full": "Za to mizo sta že 2 igralca. Poiščite drugo mizo ali odprite novo.",
+    "lib.online.backToList": "Nazaj na seznam miz",
+    "lib.online.you": "Vi",
+    "lib.online.oppLeft": "je zapustil mizo",
+    "lib.online.oppOffline": "brez povezave",
+    "lib.online.drawOffer": "Nasprotnik ponuja remi.",
+    "lib.online.accept": "Sprejmi",
+    "lib.online.decline": "Zavrni",
+    "lib.online.drawSent": "Remi ponujen…",
+    "lib.online.offerDraw": "Ponudi remi",
+    "lib.online.resignConfirm": "Kliknite znova za predajo",
+    "lib.online.resign": "Predaj se",
+    "lib.online.againSent": "Čakamo na nasprotnikovo soglasje…",
+    "lib.online.againAccept": "Nasprotnik želi revanšo — Igraj znova",
+    "lib.online.again": "Igraj znova (zamenjaj barvi)",
+    "lib.online.inviteLink": "Povezava za povabilo",
+    "lib.online.copy": "Kopiraj povezavo",
+    "lib.online.share": "Deli",
+    "lib.online.saved": "Partija je shranjena na Google Drive (mapa WFTools/Games).",
+    "lib.online.saving": "Shranjevanje partije na Google Drive…",
+    "lib.online.saveFail": "Partije še ni bilo mogoče shraniti na Drive.",
+    "lib.online.save": "Shrani partijo na Google Drive",
+    "lib.game.darkNote": "Skriti Xiangqi (Cờ úp): oba generala začneta odkrita, ostale figure se premešajo in postavijo obrnjene. Skrita figura se premika kot figura, ki običajno začne na njenem polju (na polju voza kot voz), nato se obrne in se odtlej premika kot njena prava figura. Svetovalci in sloni se smejo gibati po vsej plošči. Mat ali brez poteze pomeni poraz.",
+    "lib.game.darkBoard": "Plošča za skriti Xiangqi",
+    "lib.online.red": "Rdeči",
+    "lib.online.black": "Črni",
+    "lib.game.captured": "Zajete figure",
+    "lib.online.pickTable": "Za začetek poiščite nasprotnika ali odprite mizo v stranski plošči.",
+    "lib.online.theirTurn": "Na potezi je nasprotnik",
+    "lib.online.white": "Beli",
+    "lib.online.goNote": "Plošča {n}×{n}, začne črni, beli dobi komi {k}. Šteje se ozemlje; pred pasom odstranite vse mrtve kamne. Partija se konča, ko oba zaporedoma rečeta pas.",
+    "lib.online.boardSize": "Velikost plošče",
+    "lib.online.oppPassed": "Nasprotnik je rekel pas. Če tudi vi rečete pas, se partija konča in prešteje.",
+    "lib.online.modeAi": "Igraj proti računalniku",
+    "lib.online.modeOnline": "Igraj na spletu"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Velik sudoku 16x16 s števkami 1-9 in črkami A-G, 10 stopenj od lahkega do težkega, z opombami in namigi."
     },
     "chess": {
-      "name": "Šah proti računalniku",
-      "desc": "Igrajte šah proti računalniku na 10 stopnjah od lahkega do težkega, z rokado, en passant in promocijo."
+      "name": "Šah",
+      "desc": "Igrajte šah proti računalniku na 10 stopnjah ali na spletu: povabite prijatelja s povezavo ali igrajte z nekom novim. Z rokado, jemanjem en passant in promocijo."
     },
     "xiangqi": {
-      "name": "Xiangqi proti računalniku",
-      "desc": "Igrajte kitajski šah (xiangqi) proti računalniku na 10 stopnjah: blokada konjeve noge, slonovo oko, zajem s topom in pravilo letečega generala."
+      "name": "Xiangqi (kitajski šah)",
+      "desc": "Igrajte Xiangqi proti računalniku na 10 stopnjah ali na spletu: povabite prijatelja s povezavo ali igrajte z nekom novim. Popolna pravila: konjeva noga, slonovo oko, skok topa in generala, ki se ne smeta videti."
     },
     "go-game": {
-      "name": "Go proti računalniku",
-      "desc": "Igrajte go proti računalniku na ploščah 5x5, 7x7 in 9x9 na 10 stopnjah, z samodejnim točkovanjem na koncu."
+      "name": "Go",
+      "desc": "Igrajte Go proti računalniku na 10 stopnjah ali na spletu na ploščah 9x9, 13x13 in 19x19 s prijateljem ali novim nasprotnikom. Samodejno štetje na koncu."
     },
     "memory-shapes": {
       "name": "Spomin oblik in barv",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Spletno namizje",
       "desc": "Računalniško namizje v brskalniku: upravitelj datotek, Notepad, pregledovalnik slik in PDF, kalkulator, koledar in koš. Datoteke se shranjujejo v vaš Google Drive."
+    },
+    "co-up": {
+      "name": "Skriti Xiangqi (Cờ úp)",
+      "desc": "Igrajte vietnamski skriti Xiangqi: figure začnejo obrnjene in se odkrijejo po prvi potezi. Proti računalniku na 10 stopnjah ali na spletu s prijatelji in novimi nasprotniki."
     }
   },
   "s": {

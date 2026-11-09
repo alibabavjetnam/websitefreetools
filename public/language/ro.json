@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Ai rămas fără vieți — toate plăcile sunt acum dezvăluite.",
     "lib.game.mmNote": "Apasă Start: plăcile sunt afișate {s} secunde, apoi ascunse. Reține forma și culoarea fiecărei plăci, apoi alege placa cu forma arătată. Mai mult de {l} greșeli înseamnă nivel ratat.",
     "lib.game.fullscreen": "Ecran complet",
-    "lib.game.exitFullscreen": "Ieși din ecranul complet"
+    "lib.game.exitFullscreen": "Ieși din ecranul complet",
+    "lib.online.guest": "Invitat",
+    "lib.online.connFail": "Nu s-a putut face conexiunea cu serverul de joc online. Verifică conexiunea (sau dezactivează blocarea reclamelor) și apasă Reîncearcă.",
+    "lib.online.tableGone": "Cel care a deschis masa a plecat. Alege altă masă sau deschide una nouă.",
+    "lib.online.drawDeclined": "Adversarul a refuzat remiza.",
+    "lib.online.opponent": "Adversar",
+    "lib.online.copied": "Link copiat. Trimite-l prietenului tău ca să jucați împreună.",
+    "lib.online.waitingFor": "așteaptă de {n} s",
+    "lib.online.drawAgreed": "Ambii jucători au convenit remiză.",
+    "lib.online.draw": "Partida s-a încheiat remiză.",
+    "lib.online.oppResigned": "Adversarul a abandonat — ai câștigat!",
+    "lib.online.youResigned": "Ai abandonat.",
+    "lib.online.youWin": "Ai câștigat!",
+    "lib.online.youLose": "Ai pierdut.",
+    "lib.online.connecting": "Conectare la serverul de joc online…",
+    "lib.online.retry": "Reîncearcă",
+    "lib.online.quick": "Găsește adversar",
+    "lib.online.createPublic": "Deschide masă publică",
+    "lib.online.createPrivate": "Deschide masă privată și invită un prieten",
+    "lib.online.modesHint": "Mesele publice apar în listă și oricine se poate alătura. La o masă privată se ajunge doar prin linkul de invitație.",
+    "lib.online.openTables": "Mese publice în așteptare",
+    "lib.online.join": "Alătură-te",
+    "lib.online.noTables": "Nicio masă nu așteaptă încă. Apasă \"Găsește adversar\" sau deschide o masă nouă.",
+    "lib.online.privacy": "Mutările trec printr-un server MQTT public gratuit și sunt criptate pentru fiecare masă; serverul nu păstrează partidele. Conectează-te cu Google ca să salvezi partidele terminate în Drive-ul tău.",
+    "lib.online.waitingPublic": "Masă publică: se așteaptă să intre cineva…",
+    "lib.online.waitingPrivate": "Masă privată: trimite acest link prietenului tău. Partida începe când îl deschide.",
+    "lib.online.leave": "Părăsește masa",
+    "lib.online.full": "La această masă sunt deja 2 jucători. Caută altă masă sau deschide una nouă.",
+    "lib.online.backToList": "Înapoi la lista de mese",
+    "lib.online.you": "Tu",
+    "lib.online.oppLeft": "a părăsit masa",
+    "lib.online.oppOffline": "deconectat",
+    "lib.online.drawOffer": "Adversarul propune remiză.",
+    "lib.online.accept": "Acceptă",
+    "lib.online.decline": "Refuză",
+    "lib.online.drawSent": "Remiză propusă…",
+    "lib.online.offerDraw": "Propune remiză",
+    "lib.online.resignConfirm": "Apasă din nou pentru a abandona",
+    "lib.online.resign": "Abandonează",
+    "lib.online.againSent": "Se așteaptă acordul adversarului…",
+    "lib.online.againAccept": "Adversarul vrea revanșa — Joacă din nou",
+    "lib.online.again": "Joacă din nou (schimbă culorile)",
+    "lib.online.inviteLink": "Link de invitație",
+    "lib.online.copy": "Copiază linkul",
+    "lib.online.share": "Distribuie",
+    "lib.online.saved": "Partida a fost salvată în Google Drive (dosarul WFTools/Games).",
+    "lib.online.saving": "Se salvează partida în Google Drive…",
+    "lib.online.saveFail": "Partida nu a putut fi salvată încă în Drive.",
+    "lib.online.save": "Salvează partida în Google Drive",
+    "lib.game.darkNote": "Xiangqi ascuns (Cờ úp): ambii generali încep cu fața în sus, celelalte piese se amestecă și se așază cu fața în jos. O piesă ascunsă se mută ca piesa care pornește de obicei de pe pătratul ei (pe pătratul unui car se mută ca un car), apoi se întoarce și de acum se mută ca piesa ei reală. Sfetnicii și elefanții pot merge pe toată tabla. Matul sau lipsa mutărilor înseamnă înfrângere.",
+    "lib.game.darkBoard": "Tabla de Xiangqi ascuns",
+    "lib.online.red": "Roșu",
+    "lib.online.black": "Negru",
+    "lib.game.captured": "Piese capturate",
+    "lib.online.pickTable": "Caută un adversar sau deschide o masă în panoul lateral ca să începi.",
+    "lib.online.theirTurn": "Este rândul adversarului",
+    "lib.online.white": "Alb",
+    "lib.online.goNote": "Tablă {n}×{n}, negrul începe, albul primește {k} komi. Numărare pe arie; scoate toate pietrele moarte înainte să spui pas. Partida se termină când ambii spun pas unul după altul.",
+    "lib.online.boardSize": "Mărimea tablei",
+    "lib.online.oppPassed": "Adversarul a spus pas. Dacă spui și tu pas, partida se termină și se numără.",
+    "lib.online.modeAi": "Joacă cu calculatorul",
+    "lib.online.modeOnline": "Joacă online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku mare 16x16 cu cifrele 1-9 și literele A-G, 10 niveluri de la ușor la greu, cu notițe și indicii."
     },
     "chess": {
-      "name": "Șah contra calculatorului",
-      "desc": "Joacă șah împotriva calculatorului pe 10 niveluri de la ușor la greu, cu rocadă, en passant și promovare."
+      "name": "Șah",
+      "desc": "Joacă șah cu calculatorul pe 10 niveluri sau online: invită un prieten cu un link sau joacă cu cineva nou. Cu rocadă, en passant și transformare."
     },
     "xiangqi": {
-      "name": "Xiangqi contra calculatorului",
-      "desc": "Joacă șah chinezesc (xiangqi) împotriva calculatorului pe 10 niveluri: blocarea piciorului calului, ochiul elefantului, capturi cu tunul și regula generalului zburător."
+      "name": "Xiangqi (șah chinezesc)",
+      "desc": "Joacă Xiangqi cu calculatorul pe 10 niveluri sau online: invită un prieten cu un link sau joacă cu cineva nou. Reguli complete: piciorul calului, ochiul elefantului, săritura tunului și generalii care nu au voie să se vadă."
     },
     "go-game": {
-      "name": "Go contra calculatorului",
-      "desc": "Joacă go împotriva calculatorului pe table de 5x5, 7x7 și 9x9, pe 10 niveluri, cu punctaj automat la final."
+      "name": "Go",
+      "desc": "Joacă Go cu calculatorul pe 10 niveluri sau online pe table 9x9, 13x13 și 19x19 cu un prieten sau un adversar nou. Numărare automată la final."
     },
     "memory-shapes": {
       "name": "Memorie forme și culori",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Desktop online",
       "desc": "Desktopul unui computer în browser: manager de fișiere, Notepad, vizualizator de imagini și PDF, calculator, calendar și coș de gunoi. Fișierele se salvează în Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi ascuns (Cờ úp)",
+      "desc": "Joacă Xiangqi ascuns vietnamez: piesele încep cu fața în jos și se întorc după prima mutare. Cu calculatorul pe 10 niveluri sau online cu prieteni și adversari noi."
     }
   },
   "s": {

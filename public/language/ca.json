@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Sense vides — ara es mostren totes les fitxes.",
     "lib.game.mmNote": "Prem Comença: les fitxes es mostren durant {s} segons i després s'amaguen. Recorda la forma i el color de cada fitxa i tria la que coincideix amb la forma que es mostra. Més de {l} errors i el nivell no se supera.",
     "lib.game.fullscreen": "Pantalla completa",
-    "lib.game.exitFullscreen": "Surt de la pantalla completa"
+    "lib.game.exitFullscreen": "Surt de la pantalla completa",
+    "lib.online.guest": "Convidat",
+    "lib.online.connFail": "No s'ha pogut connectar al servidor de joc en línia. Comprova la connexió (o desactiva el bloquejador d'anuncis) i fes clic a Torna-ho a provar.",
+    "lib.online.tableGone": "Qui va obrir la taula ha marxat. Tria una altra taula o obre'n una de nova.",
+    "lib.online.drawDeclined": "El rival ha rebutjat les taules.",
+    "lib.online.opponent": "Rival",
+    "lib.online.copied": "Enllaç copiat. Envia'l al teu amic per jugar plegats.",
+    "lib.online.waitingFor": "espera fa {n} s",
+    "lib.online.drawAgreed": "Els dos jugadors han acordat taules.",
+    "lib.online.draw": "La partida ha acabat en taules.",
+    "lib.online.oppResigned": "El rival s'ha rendit — has guanyat!",
+    "lib.online.youResigned": "T'has rendit.",
+    "lib.online.youWin": "Has guanyat!",
+    "lib.online.youLose": "Has perdut.",
+    "lib.online.connecting": "S'està connectant al servidor de joc en línia…",
+    "lib.online.retry": "Torna-ho a provar",
+    "lib.online.quick": "Busca rival",
+    "lib.online.createPublic": "Obre una taula pública",
+    "lib.online.createPrivate": "Obre una taula privada i convida un amic",
+    "lib.online.modesHint": "Les taules públiques surten a la llista i s'hi pot unir qualsevol. A una taula privada només s'hi entra amb l'enllaç d'invitació.",
+    "lib.online.openTables": "Taules públiques en espera",
+    "lib.online.join": "Uneix-t'hi",
+    "lib.online.noTables": "Encara no hi ha cap taula en espera. Fes clic a \"Busca rival\" o obre una taula nova.",
+    "lib.online.privacy": "Les jugades passen per un servidor MQTT públic gratuït i es xifren per a cada taula; el servidor no desa partides. Inicia sessió amb Google per desar les partides acabades al teu Drive.",
+    "lib.online.waitingPublic": "Taula pública: esperant que s'hi uneixi algú…",
+    "lib.online.waitingPrivate": "Taula privada: envia aquest enllaç al teu amic. La partida comença quan l'obri.",
+    "lib.online.leave": "Surt de la taula",
+    "lib.online.full": "Aquesta taula ja té 2 jugadors. Busca una altra taula o obre'n una de nova.",
+    "lib.online.backToList": "Torna a la llista de taules",
+    "lib.online.you": "Tu",
+    "lib.online.oppLeft": "ha deixat la taula",
+    "lib.online.oppOffline": "desconnectat",
+    "lib.online.drawOffer": "El rival ofereix taules.",
+    "lib.online.accept": "Accepta",
+    "lib.online.decline": "Rebutja",
+    "lib.online.drawSent": "Taules ofertes…",
+    "lib.online.offerDraw": "Ofereix taules",
+    "lib.online.resignConfirm": "Torna a fer clic per rendir-te",
+    "lib.online.resign": "Rendeix-te",
+    "lib.online.againSent": "Esperant que el rival accepti…",
+    "lib.online.againAccept": "El rival vol la revenja — Torna a jugar",
+    "lib.online.again": "Torna a jugar (canvia els colors)",
+    "lib.online.inviteLink": "Enllaç d'invitació",
+    "lib.online.copy": "Copia l'enllaç",
+    "lib.online.share": "Comparteix",
+    "lib.online.saved": "Partida desada a Google Drive (carpeta WFTools/Games).",
+    "lib.online.saving": "S'està desant la partida a Google Drive…",
+    "lib.online.saveFail": "Encara no s'ha pogut desar la partida a Drive.",
+    "lib.online.save": "Desa la partida a Google Drive",
+    "lib.game.darkNote": "Xiangqi ocult (Cờ úp): els dos generals comencen descoberts, la resta de peces es barregen i es col·loquen cap per avall. Una peça oculta es mou com la peça que normalment comença a la seva casella (a la casella d'un carro es mou com un carro), després es gira i a partir d'aleshores es mou com la seva peça real. Els consellers i els elefants poden anar per tot el tauler. Escac i mat o quedar-se sense jugades vol dir perdre.",
+    "lib.game.darkBoard": "Tauler de Xiangqi ocult",
+    "lib.online.red": "Vermelles",
+    "lib.online.black": "Negres",
+    "lib.game.captured": "Peces capturades",
+    "lib.online.pickTable": "Busca un rival o obre una taula al panell lateral per començar.",
+    "lib.online.theirTurn": "Torn del rival",
+    "lib.online.white": "Blanques",
+    "lib.online.goNote": "Tauler de {n}×{n}, comencen les negres, les blanques reben {k} de komi. Recompte per àrea; treu totes les pedres mortes abans de passar. La partida acaba quan tots dos passen seguits.",
+    "lib.online.boardSize": "Mida del tauler",
+    "lib.online.oppPassed": "El rival ha passat. Si tu també passes, la partida acaba i es compta.",
+    "lib.online.modeAi": "Juga contra l'ordinador",
+    "lib.online.modeOnline": "Juga en línia"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku gran de 16x16 amb 1-9 i A-G, 10 nivells de fàcil a difícil, amb notes i pistes."
     },
     "chess": {
-      "name": "Escacs contra l'ordinador",
-      "desc": "Juga als escacs contra l'ordinador amb 10 nivells de fàcil a difícil, amb enroc, captura al pas i promoció."
+      "name": "Escacs",
+      "desc": "Juga als escacs contra l'ordinador en 10 nivells o en línia: convida un amic amb un enllaç o juga amb algú nou. Amb enroc, captura al pas i promoció."
     },
     "xiangqi": {
-      "name": "Xiangqi contra l'ordinador",
-      "desc": "Juga als escacs xinesos (xiangqi) contra l'ordinador amb 10 nivells, amb bloqueig de la pota del cavall, ull de l'elefant, captures del canó i regla dels generals."
+      "name": "Xiangqi (escacs xinesos)",
+      "desc": "Juga al Xiangqi contra l'ordinador en 10 nivells o en línia: convida un amic amb un enllaç o juga amb algú nou. Regles completes: la pota del cavall, l'ull de l'elefant, el salt del canó i els generals que no es poden veure."
     },
     "go-game": {
-      "name": "Go contra l'ordinador",
-      "desc": "Juga al go contra l'ordinador en taulers de 5x5, 7x7 i 9x9 amb 10 nivells, amb puntuació automàtica al final."
+      "name": "Go",
+      "desc": "Juga al Go contra l'ordinador en 10 nivells o en línia en taulers de 9x9, 13x13 i 19x19 amb un amic o un rival nou. Recompte automàtic al final."
     },
     "memory-shapes": {
       "name": "Memòria de formes i colors",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Escriptori en línia",
       "desc": "Un escriptori d'ordinador al navegador: gestor de fitxers, Notepad, visor d'imatges i PDF, calculadora, calendari i paperera. Els fitxers es desen al teu Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi ocult (Cờ úp)",
+      "desc": "Juga al Xiangqi ocult vietnamita: les peces comencen cap per avall i es giren després de la primera jugada. Contra l'ordinador en 10 nivells o en línia amb amics i rivals nous."
     }
   },
   "s": {

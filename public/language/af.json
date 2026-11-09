@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Lewens op — alle teëls word nou gewys.",
     "lib.game.mmNote": "Druk Begin: die teëls word vir {s} sekondes gewys en dan versteek. Onthou die vorm en kleur van elke teël en kies dan die teël wat by die getoonde vorm pas. Meer as {l} foute en die vlak misluk.",
     "lib.game.fullscreen": "Volskerm",
-    "lib.game.exitFullscreen": "Verlaat volskerm"
+    "lib.game.exitFullscreen": "Verlaat volskerm",
+    "lib.online.guest": "Gas",
+    "lib.online.connFail": "Kon nie aan die aanlynspelbediener koppel nie. Kontroleer jou verbinding (of skakel die advertensieblokkeerder af) en klik Probeer weer.",
+    "lib.online.tableGone": "Die een wat die tafel oopgemaak het, is weg. Kies 'n ander tafel of maak 'n nuwe een oop.",
+    "lib.online.drawDeclined": "Die opponent het remise geweier.",
+    "lib.online.opponent": "Opponent",
+    "lib.online.copied": "Skakel gekopieer. Stuur dit vir jou vriend sodat julle saam kan speel.",
+    "lib.online.waitingFor": "wag al {n} s",
+    "lib.online.drawAgreed": "Albei spelers het op remise ooreengekom.",
+    "lib.online.draw": "Die spel het in remise geëindig.",
+    "lib.online.oppResigned": "Die opponent het opgegee — jy het gewen!",
+    "lib.online.youResigned": "Jy het opgegee.",
+    "lib.online.youWin": "Jy het gewen!",
+    "lib.online.youLose": "Jy het verloor.",
+    "lib.online.connecting": "Koppel aan die aanlynspelbediener…",
+    "lib.online.retry": "Probeer weer",
+    "lib.online.quick": "Vind 'n opponent",
+    "lib.online.createPublic": "Maak publieke tafel oop",
+    "lib.online.createPrivate": "Maak privaat tafel oop en nooi 'n vriend",
+    "lib.online.modesHint": "Publieke tafels verskyn in die lys en enigiemand kan aansluit. 'n Privaat tafel is net met die uitnodigingskakel bereikbaar.",
+    "lib.online.openTables": "Publieke tafels wat wag",
+    "lib.online.join": "Sluit aan",
+    "lib.online.noTables": "Nog geen tafels wag nie. Klik \"Vind 'n opponent\" of maak 'n nuwe tafel oop.",
+    "lib.online.privacy": "Skuiwe gaan deur 'n gratis publieke MQTT-bediener en word per tafel geïnkripteer; die bediener stoor geen spelle nie. Meld aan met Google om voltooide spelle in jou Drive te stoor.",
+    "lib.online.waitingPublic": "Publieke tafel: wag vir iemand om aan te sluit…",
+    "lib.online.waitingPrivate": "Privaat tafel: stuur hierdie skakel vir jou vriend. Die spel begin wanneer hulle dit oopmaak.",
+    "lib.online.leave": "Verlaat tafel",
+    "lib.online.full": "Hierdie tafel het reeds 2 spelers. Vind 'n ander tafel of maak 'n nuwe een oop.",
+    "lib.online.backToList": "Terug na tafellys",
+    "lib.online.you": "Jy",
+    "lib.online.oppLeft": "het die tafel verlaat",
+    "lib.online.oppOffline": "ontkoppel",
+    "lib.online.drawOffer": "Die opponent bied remise aan.",
+    "lib.online.accept": "Aanvaar",
+    "lib.online.decline": "Weier",
+    "lib.online.drawSent": "Remise aangebied…",
+    "lib.online.offerDraw": "Bied remise aan",
+    "lib.online.resignConfirm": "Klik weer om op te gee",
+    "lib.online.resign": "Gee op",
+    "lib.online.againSent": "Wag dat die opponent instem…",
+    "lib.online.againAccept": "Die opponent wil 'n herkansing hê — Speel weer",
+    "lib.online.again": "Speel weer (ruil kleure)",
+    "lib.online.inviteLink": "Uitnodigingskakel",
+    "lib.online.copy": "Kopieer skakel",
+    "lib.online.share": "Deel",
+    "lib.online.saved": "Spel in Google Drive gestoor (vouer WFTools/Games).",
+    "lib.online.saving": "Stoor tans spel in Google Drive…",
+    "lib.online.saveFail": "Die spel kon nog nie in Drive gestoor word nie.",
+    "lib.online.save": "Stoor spel in Google Drive",
+    "lib.game.darkNote": "Versteekte Xiangqi (Cờ úp): albei generaals begin oop, alle ander stukke word geskommel en onderstebo neergesit. 'n Versteekte stuk skuif soos die stuk wat gewoonlik op sy blokkie begin (op 'n strydwa se blokkie skuif dit soos 'n strydwa), word dan omgedraai en skuif daarna as sy ware stuk. Raadgewers en olifante mag oor die hele bord beweeg. Skaakmat of geen skuiwe nie beteken jy verloor.",
+    "lib.game.darkBoard": "Versteekte Xiangqi-bord",
+    "lib.online.red": "Rooi",
+    "lib.online.black": "Swart",
+    "lib.game.captured": "Gevange stukke",
+    "lib.online.pickTable": "Vind 'n opponent of maak 'n tafel in die sypaneel oop om te begin.",
+    "lib.online.theirTurn": "Opponent se beurt",
+    "lib.online.white": "Wit",
+    "lib.online.goNote": "{n}×{n}-bord, swart begin, wit kry {k} komi. Gebiedtelling; verwyder alle dooie klippe voor jy pas. Die spel eindig wanneer albei na mekaar pas.",
+    "lib.online.boardSize": "Bordgrootte",
+    "lib.online.oppPassed": "Die opponent het gepas. As jy ook pas, eindig die spel en word getel.",
+    "lib.online.modeAi": "Speel teen die rekenaar",
+    "lib.online.modeOnline": "Speel aanlyn"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Groot 16x16-sudoku met 1-9 en A-G, 10 vlakke van maklik tot moeilik, met notas en wenke."
     },
     "chess": {
-      "name": "Skaak teen die rekenaar",
-      "desc": "Speel skaak teen die rekenaar in 10 vlakke van maklik tot moeilik, met rokade, en passant en bevordering."
+      "name": "Skaak",
+      "desc": "Speel skaak teen die rekenaar op 10 vlakke of aanlyn: nooi 'n vriend met 'n skakel of speel teen iemand nuuts. Met rokade, en passant en promosie."
     },
     "xiangqi": {
-      "name": "Xiangqi teen die rekenaar",
-      "desc": "Speel Chinese skaak (xiangqi) teen die rekenaar in 10 vlakke, met perdbeen-blokkering, olifantoog, kanonvangs en die reël van generaals wat mekaar in die oë kyk."
+      "name": "Xiangqi (Chinese skaak)",
+      "desc": "Speel Xiangqi teen die rekenaar op 10 vlakke of aanlyn: nooi 'n vriend met 'n skakel of speel teen iemand nuuts. Volledige reëls: die perd se been, die olifant se oog, die kanon se sprong en generaals wat mekaar nie mag sien nie."
     },
     "go-game": {
-      "name": "Go teen die rekenaar",
-      "desc": "Speel Go teen die rekenaar op 5x5-, 7x7- en 9x9-borde in 10 vlakke, met outomatiese telling aan die einde."
+      "name": "Go",
+      "desc": "Speel Go teen die rekenaar op 10 vlakke of aanlyn op 9x9-, 13x13- en 19x19-borde met 'n vriend of nuwe opponent. Outomatiese telling aan die einde."
     },
     "memory-shapes": {
       "name": "Vorm- en kleurgeheue",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Aanlyn lessenaar",
       "desc": "'n Rekenaarlessenaar in jou blaaier: lêerbestuurder, Notepad, beeld- en PDF-kyker, sakrekenaar, kalender en asblik. Lêers word in jou Google Drive gestoor."
+    },
+    "co-up": {
+      "name": "Versteekte Xiangqi (Cờ úp)",
+      "desc": "Speel Viëtnamese versteekte Xiangqi: stukke begin onderstebo en word na die eerste skuif omgedraai. Teen die rekenaar op 10 vlakke of aanlyn met vriende en nuwe opponente."
     }
   },
   "s": {

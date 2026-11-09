@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Líf búin — allar flísar eru nú sýndar.",
     "lib.game.mmNote": "Ýttu á Byrja: flísarnar eru sýndar í {s} sekúndur og síðan faldar. Mundu lögun og lit hverrar flísar og veldu svo flísina sem passar við lögunina sem birtist. Fleiri en {l} mistök og borðið misheppnast.",
     "lib.game.fullscreen": "Allur skjárinn",
-    "lib.game.exitFullscreen": "Hætta í öllum skjánum"
+    "lib.game.exitFullscreen": "Hætta í öllum skjánum",
+    "lib.online.guest": "Gestur",
+    "lib.online.connFail": "Ekki náðist samband við netleikjaþjóninn. Athugaðu tenginguna (eða slökktu á auglýsingavörn) og smelltu á Reyna aftur.",
+    "lib.online.tableGone": "Sá sem opnaði borðið er farinn. Veldu annað borð eða opnaðu nýtt.",
+    "lib.online.drawDeclined": "Andstæðingurinn hafnaði jafntefli.",
+    "lib.online.opponent": "Andstæðingur",
+    "lib.online.copied": "Tengillinn var afritaður. Sendu hann vini þínum til að spila saman.",
+    "lib.online.waitingFor": "bíður í {n} s",
+    "lib.online.drawAgreed": "Báðir leikmenn sömdu um jafntefli.",
+    "lib.online.draw": "Skákin endaði með jafntefli.",
+    "lib.online.oppResigned": "Andstæðingurinn gafst upp — þú vannst!",
+    "lib.online.youResigned": "Þú gafst upp.",
+    "lib.online.youWin": "Þú vannst!",
+    "lib.online.youLose": "Þú tapaðir.",
+    "lib.online.connecting": "Tengist netleikjaþjóninum…",
+    "lib.online.retry": "Reyna aftur",
+    "lib.online.quick": "Finna andstæðing",
+    "lib.online.createPublic": "Opna opinbert borð",
+    "lib.online.createPrivate": "Opna einkaborð og bjóða vini",
+    "lib.online.modesHint": "Opinber borð birtast á listanum og hver sem er getur tekið þátt. Á einkaborð kemst aðeins sá sem hefur boðstengilinn.",
+    "lib.online.openTables": "Opinber borð sem bíða",
+    "lib.online.join": "Taka þátt",
+    "lib.online.noTables": "Engin borð bíða enn. Smelltu á \"Finna andstæðing\" eða opnaðu nýtt borð.",
+    "lib.online.privacy": "Leikirnir fara um ókeypis opinberan MQTT-þjón og eru dulkóðaðir fyrir hvert borð; þjónninn geymir ekki skákirnar. Skráðu þig inn með Google til að vista lokið skákir á Drive.",
+    "lib.online.waitingPublic": "Opinbert borð: beðið eftir að einhver komi…",
+    "lib.online.waitingPrivate": "Einkaborð: sendu vininum þennan tengil. Skákin hefst þegar hann opnar hann.",
+    "lib.online.leave": "Yfirgefa borðið",
+    "lib.online.full": "Þetta borð er þegar með 2 leikmenn. Finndu annað borð eða opnaðu nýtt.",
+    "lib.online.backToList": "Aftur á borðalistann",
+    "lib.online.you": "Þú",
+    "lib.online.oppLeft": "yfirgaf borðið",
+    "lib.online.oppOffline": "sambandslaus",
+    "lib.online.drawOffer": "Andstæðingurinn býður jafntefli.",
+    "lib.online.accept": "Samþykkja",
+    "lib.online.decline": "Hafna",
+    "lib.online.drawSent": "Jafntefli boðið…",
+    "lib.online.offerDraw": "Bjóða jafntefli",
+    "lib.online.resignConfirm": "Smelltu aftur til að gefast upp",
+    "lib.online.resign": "Gefast upp",
+    "lib.online.againSent": "Beðið eftir samþykki andstæðings…",
+    "lib.online.againAccept": "Andstæðingurinn vill aðra skák — Spila aftur",
+    "lib.online.again": "Spila aftur (skipta um lit)",
+    "lib.online.inviteLink": "Boðstengill",
+    "lib.online.copy": "Afrita tengil",
+    "lib.online.share": "Deila",
+    "lib.online.saved": "Skákin var vistuð á Google Drive (mappan WFTools/Games).",
+    "lib.online.saving": "Vistar skákina á Google Drive…",
+    "lib.online.saveFail": "Ekki tókst enn að vista skákina á Drive.",
+    "lib.online.save": "Vista skákina á Google Drive",
+    "lib.game.darkNote": "Falið Xiangqi (Cờ úp): báðir hershöfðingjarnir byrja upp í loft, aðrir taflmenn eru stokkaðir og lagðir á hvolf. Falinn taflmaður gengur eins og sá taflmaður sem venjulega byrjar á reitnum hans (á reit vagns gengur hann eins og vagn), snýst svo við og gengur eftir það sem raunverulegi taflmaðurinn sinn. Ráðgjafar og fílar mega fara um allt borðið. Mát eða engir leikir eftir þýðir tap.",
+    "lib.game.darkBoard": "Borð fyrir falið Xiangqi",
+    "lib.online.red": "Rauður",
+    "lib.online.black": "Svartur",
+    "lib.game.captured": "Drepnir taflmenn",
+    "lib.online.pickTable": "Finndu andstæðing eða opnaðu borð í hliðarspjaldinu til að byrja.",
+    "lib.online.theirTurn": "Andstæðingur á leik",
+    "lib.online.white": "Hvítur",
+    "lib.online.goNote": "{n}×{n} borð, svartur byrjar, hvítur fær {k} í komi. Svæðatalning; fjarlægðu alla dauða steina áður en þú segir pass. Skákinni lýkur þegar báðir segja pass í röð.",
+    "lib.online.boardSize": "Stærð borðs",
+    "lib.online.oppPassed": "Andstæðingurinn sagði pass. Ef þú segir líka pass lýkur skákinni og er talin.",
+    "lib.online.modeAi": "Spila við tölvuna",
+    "lib.online.modeOnline": "Spila á netinu"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Stórt 16x16 Sudoku með 1-9 og A-G, 10 borð frá léttu til erfiðs, með minnispunktum og vísbendingum."
     },
     "chess": {
-      "name": "Skák gegn tölvu",
-      "desc": "Tefldu skák gegn tölvunni á 10 borðum frá léttu til erfiðs, með hrókun, framhjáhlaupi og peðsuppskiptum."
+      "name": "Skák",
+      "desc": "Tefldu skák við tölvuna á 10 stigum eða á netinu: bjóddu vini með tengli eða mættu einhverjum nýjum. Með hrókun, framhjáhlaupi og uppvakningu."
     },
     "xiangqi": {
-      "name": "Xiangqi gegn tölvu",
-      "desc": "Tefldu kínverska skák (xiangqi) gegn tölvunni á 10 borðum, með hindrun hestsfótar, augum fílsins, fallbyssuleikjum og reglunni um hershöfðingja augliti til auglitis."
+      "name": "Xiangqi (kínversk skák)",
+      "desc": "Spilaðu Xiangqi við tölvuna á 10 stigum eða á netinu: bjóddu vini með tengli eða mættu einhverjum nýjum. Fullar reglur: fótur hestsins, auga fílsins, stökk fallbyssunnar og hershöfðingjar sem mega ekki horfast í augu."
     },
     "go-game": {
-      "name": "Go gegn tölvu",
-      "desc": "Spilaðu Go gegn tölvunni á 5x5, 7x7 og 9x9 borðum á 10 borðum, með sjálfvirkri stigatalningu í lokin."
+      "name": "Go",
+      "desc": "Spilaðu Go við tölvuna á 10 stigum eða á netinu á 9x9, 13x13 og 19x19 borðum með vini eða nýjum andstæðingi. Sjálfvirk talning í lokin."
     },
     "memory-shapes": {
       "name": "Minni á form og liti",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Skjáborð á netinu",
       "desc": "Tölvuskjáborð í vafranum: skráastjóri, Notepad, mynda- og PDF-skoðari, reiknivél, dagatal og rusl. Skrár eru vistaðar á Google Drive."
+    },
+    "co-up": {
+      "name": "Falið Xiangqi (Cờ úp)",
+      "desc": "Spilaðu víetnamskt falið Xiangqi: taflmennirnir byrja á hvolfi og snúast við eftir fyrsta leik. Við tölvuna á 10 stigum eða á netinu með vinum og nýjum andstæðingum."
     }
   },
   "s": {

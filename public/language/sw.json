@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Maisha yameisha — vigae vyote vimefunuliwa.",
     "lib.game.mmNote": "Bonyeza Anza: vigae vinaonyeshwa kwa sekunde {s} kisha vinafichwa. Kumbuka umbo na rangi ya kila kigae, kisha chagua kigae kinacholingana na umbo lililoonyeshwa. Makosa zaidi ya {l} yanamaanisha kiwango kimeshindwa.",
     "lib.game.fullscreen": "Skrini nzima",
-    "lib.game.exitFullscreen": "Toka kwenye skrini nzima"
+    "lib.game.exitFullscreen": "Toka kwenye skrini nzima",
+    "lib.online.guest": "Mgeni",
+    "lib.online.connFail": "Imeshindwa kuunganisha na seva ya mchezo mtandaoni. Angalia muunganisho (au zima kizuia matangazo) kisha bofya Jaribu tena.",
+    "lib.online.tableGone": "Aliyefungua meza ameondoka. Chagua meza nyingine au fungua mpya.",
+    "lib.online.drawDeclined": "Mpinzani amekataa sare.",
+    "lib.online.opponent": "Mpinzani",
+    "lib.online.copied": "Kiungo kimenakiliwa. Mtumie rafiki yako ili mcheze pamoja.",
+    "lib.online.waitingFor": "anasubiri sekunde {n}",
+    "lib.online.drawAgreed": "Wachezaji wote wawili wamekubaliana sare.",
+    "lib.online.draw": "Mchezo umeisha kwa sare.",
+    "lib.online.oppResigned": "Mpinzani amejisalimisha — umeshinda!",
+    "lib.online.youResigned": "Umejisalimisha.",
+    "lib.online.youWin": "Umeshinda!",
+    "lib.online.youLose": "Umeshindwa.",
+    "lib.online.connecting": "Inaunganisha na seva ya mchezo mtandaoni…",
+    "lib.online.retry": "Jaribu tena",
+    "lib.online.quick": "Tafuta mpinzani",
+    "lib.online.createPublic": "Fungua meza ya umma",
+    "lib.online.createPrivate": "Fungua meza binafsi na umwalike rafiki",
+    "lib.online.modesHint": "Meza za umma huonekana kwenye orodha na mtu yeyote anaweza kujiunga. Meza binafsi hufikiwa kwa kiungo cha mwaliko tu.",
+    "lib.online.openTables": "Meza za umma zinazosubiri",
+    "lib.online.join": "Jiunge",
+    "lib.online.noTables": "Bado hakuna meza inayosubiri. Bofya \"Tafuta mpinzani\" au fungua meza mpya.",
+    "lib.online.privacy": "Hatua hupita kupitia seva ya umma ya MQTT isiyolipishwa na husimbwa kwa kila meza; seva haihifadhi michezo. Ingia kwa Google ili kuhifadhi michezo iliyokamilika kwenye Drive yako.",
+    "lib.online.waitingPublic": "Meza ya umma: inasubiri mtu ajiunge…",
+    "lib.online.waitingPrivate": "Meza binafsi: mtumie rafiki yako kiungo hiki. Mchezo utaanza akikifungua.",
+    "lib.online.leave": "Ondoka mezani",
+    "lib.online.full": "Meza hii tayari ina wachezaji 2. Tafuta meza nyingine au fungua mpya.",
+    "lib.online.backToList": "Rudi kwenye orodha ya meza",
+    "lib.online.you": "Wewe",
+    "lib.online.oppLeft": "ameondoka mezani",
+    "lib.online.oppOffline": "hayupo mtandaoni",
+    "lib.online.drawOffer": "Mpinzani anapendekeza sare.",
+    "lib.online.accept": "Kubali",
+    "lib.online.decline": "Kataa",
+    "lib.online.drawSent": "Sare imependekezwa…",
+    "lib.online.offerDraw": "Pendekeza sare",
+    "lib.online.resignConfirm": "Bofya tena ili kujisalimisha",
+    "lib.online.resign": "Jisalimishe",
+    "lib.online.againSent": "Inasubiri mpinzani akubali…",
+    "lib.online.againAccept": "Mpinzani anataka marudiano — Cheza tena",
+    "lib.online.again": "Cheza tena (badilisha rangi)",
+    "lib.online.inviteLink": "Kiungo cha mwaliko",
+    "lib.online.copy": "Nakili kiungo",
+    "lib.online.share": "Shiriki",
+    "lib.online.saved": "Mchezo umehifadhiwa kwenye Google Drive (folda WFTools/Games).",
+    "lib.online.saving": "Inahifadhi mchezo kwenye Google Drive…",
+    "lib.online.saveFail": "Bado imeshindwa kuhifadhi mchezo kwenye Drive.",
+    "lib.online.save": "Hifadhi mchezo kwenye Google Drive",
+    "lib.game.darkNote": "Xiangqi iliyofichwa (Cờ úp): majenerali wote wawili huanza wakiwa wazi, vipande vingine huchanganywa na kuwekwa vimepinduliwa. Kipande kilichofichwa husogea kama kipande ambacho kwa kawaida huanzia kwenye mraba wake (kwenye mraba wa gari husogea kama gari), kisha hupinduliwa na baadaye husogea kama kipande chake halisi. Washauri na tembo wanaweza kwenda popote ubaoni. Kushindwa kwa kufungiwa au kukosa hatua ni kushindwa.",
+    "lib.game.darkBoard": "Ubao wa Xiangqi iliyofichwa",
+    "lib.online.red": "Wekundu",
+    "lib.online.black": "Weusi",
+    "lib.game.captured": "Vipande vilivyokamatwa",
+    "lib.online.pickTable": "Tafuta mpinzani au fungua meza kwenye paneli ya pembeni ili kuanza.",
+    "lib.online.theirTurn": "Zamu ya mpinzani",
+    "lib.online.white": "Weupe",
+    "lib.online.goNote": "Ubao wa {n}×{n}, weusi huanza, weupe hupata komi ya {k}. Hesabu ya eneo; ondoa mawe yote yaliyokufa kabla ya kupita. Mchezo huisha wote wawili wakipita mfululizo.",
+    "lib.online.boardSize": "Ukubwa wa ubao",
+    "lib.online.oppPassed": "Mpinzani amepita. Ukipita pia, mchezo utaisha na kuhesabiwa.",
+    "lib.online.modeAi": "Cheza na kompyuta",
+    "lib.online.modeOnline": "Cheza mtandaoni"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku kubwa ya 16x16 inayotumia 1-9 na A-G, viwango 10 kutoka rahisi hadi ngumu, ukiwa na madokezo na vidokezo."
     },
     "chess": {
-      "name": "Chesi dhidi ya Kompyuta",
-      "desc": "Cheza chesi dhidi ya kompyuta katika viwango 10 kutoka rahisi hadi ngumu, ukiwa na kasri, en passant na kupandishwa cheo."
+      "name": "Sataranji",
+      "desc": "Cheza sataranji dhidi ya kompyuta katika viwango 10 au mtandaoni: mwalike rafiki kwa kiungo au cheza na mtu mpya. Pamoja na kasri, en passant na kupandishwa cheo."
     },
     "xiangqi": {
-      "name": "Xiangqi dhidi ya Kompyuta",
-      "desc": "Cheza chesi ya Kichina (xiangqi) dhidi ya kompyuta katika viwango 10, ukiwa na kuzuiwa mguu wa farasi, jicho la tembo, kukamata kwa kanuni na kanuni ya majenerali kutazamana."
+      "name": "Xiangqi (sataranji ya Kichina)",
+      "desc": "Cheza Xiangqi dhidi ya kompyuta katika viwango 10 au mtandaoni: mwalike rafiki kwa kiungo au cheza na mtu mpya. Sheria kamili: mguu wa farasi, jicho la tembo, kuruka kwa mzinga na majenerali wasioweza kutazamana."
     },
     "go-game": {
-      "name": "Go dhidi ya Kompyuta",
-      "desc": "Cheza Go dhidi ya kompyuta kwenye mbao za 5x5, 7x7 na 9x9 katika viwango 10, ukiwa na kuhesabu alama kiotomatiki mwishoni."
+      "name": "Go",
+      "desc": "Cheza Go dhidi ya kompyuta katika viwango 10 au mtandaoni kwenye mbao za 9x9, 13x13 na 19x19 na rafiki au mpinzani mpya. Hesabu ya kiotomatiki mwishoni."
     },
     "memory-shapes": {
       "name": "Kumbukumbu ya Umbo na Rangi",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Eneo-kazi mtandaoni",
       "desc": "Eneo-kazi la kompyuta kwenye kivinjari chako: kidhibiti faili, Notepad, kitazamaji picha na PDF, kikokotoo, kalenda na tupio. Faili huhifadhiwa kwenye Google Drive yako."
+    },
+    "co-up": {
+      "name": "Xiangqi iliyofichwa (Cờ úp)",
+      "desc": "Cheza Xiangqi iliyofichwa ya Kivietnamu: vipande huanza vimepinduliwa na hufunuliwa baada ya hatua ya kwanza. Dhidi ya kompyuta katika viwango 10 au mtandaoni na marafiki na wapinzani wapya."
     }
   },
   "s": {

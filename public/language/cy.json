@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Dim bywydau ar ôl — mae pob teilsen bellach wedi'i datgelu.",
     "lib.game.mmNote": "Pwyswch Dechrau: dangosir y teils am {s} eiliad, yna cuddir hwy. Cofiwch siâp a lliw pob teilsen, yna dewiswch y deilsen sy'n cyfateb i'r siâp a ddangosir. Mwy na {l} camgymeriad a methir y lefel.",
     "lib.game.fullscreen": "Sgrin lawn",
-    "lib.game.exitFullscreen": "Gadael sgrin lawn"
+    "lib.game.exitFullscreen": "Gadael sgrin lawn",
+    "lib.online.guest": "Gwestai",
+    "lib.online.connFail": "Methu cysylltu â'r gweinydd gemau ar-lein. Gwiriwch eich cysylltiad (neu diffoddwch yr atalydd hysbysebion) a chliciwch Rhoi cynnig arall.",
+    "lib.online.tableGone": "Mae'r un a agorodd y bwrdd wedi gadael. Dewiswch fwrdd arall neu agorwch un newydd.",
+    "lib.online.drawDeclined": "Gwrthododd y gwrthwynebydd gêm gyfartal.",
+    "lib.online.opponent": "Gwrthwynebydd",
+    "lib.online.copied": "Dolen wedi'i chopïo. Anfonwch hi at eich ffrind i chwarae gyda'ch gilydd.",
+    "lib.online.waitingFor": "yn aros {n} e",
+    "lib.online.drawAgreed": "Cytunodd y ddau chwaraewr ar gêm gyfartal.",
+    "lib.online.draw": "Daeth y gêm i ben yn gyfartal.",
+    "lib.online.oppResigned": "Ildiodd y gwrthwynebydd — chi enillodd!",
+    "lib.online.youResigned": "Fe wnaethoch ildio.",
+    "lib.online.youWin": "Chi enillodd!",
+    "lib.online.youLose": "Fe wnaethoch golli.",
+    "lib.online.connecting": "Yn cysylltu â'r gweinydd gemau ar-lein…",
+    "lib.online.retry": "Rhoi cynnig arall",
+    "lib.online.quick": "Dod o hyd i wrthwynebydd",
+    "lib.online.createPublic": "Agor bwrdd cyhoeddus",
+    "lib.online.createPrivate": "Agor bwrdd preifat a gwahodd ffrind",
+    "lib.online.modesHint": "Mae byrddau cyhoeddus yn ymddangos yn y rhestr a gall unrhyw un ymuno. Dim ond gyda'r ddolen wahodd y gellir cyrraedd bwrdd preifat.",
+    "lib.online.openTables": "Byrddau cyhoeddus yn aros",
+    "lib.online.join": "Ymuno",
+    "lib.online.noTables": "Does dim bwrdd yn aros eto. Cliciwch \"Dod o hyd i wrthwynebydd\" neu agorwch fwrdd newydd.",
+    "lib.online.privacy": "Mae'r symudiadau'n mynd drwy weinydd MQTT cyhoeddus am ddim ac yn cael eu hamgryptio ar gyfer pob bwrdd; nid yw'r gweinydd yn cadw gemau. Mewngofnodwch gyda Google i gadw gemau gorffenedig yn eich Drive.",
+    "lib.online.waitingPublic": "Bwrdd cyhoeddus: yn aros i rywun ymuno…",
+    "lib.online.waitingPrivate": "Bwrdd preifat: anfonwch y ddolen hon at eich ffrind. Bydd y gêm yn dechrau pan fydd yn ei hagor.",
+    "lib.online.leave": "Gadael y bwrdd",
+    "lib.online.full": "Mae 2 chwaraewr wrth y bwrdd hwn yn barod. Dewch o hyd i fwrdd arall neu agorwch un newydd.",
+    "lib.online.backToList": "Yn ôl i'r rhestr fyrddau",
+    "lib.online.you": "Chi",
+    "lib.online.oppLeft": "wedi gadael y bwrdd",
+    "lib.online.oppOffline": "heb gysylltiad",
+    "lib.online.drawOffer": "Mae'r gwrthwynebydd yn cynnig gêm gyfartal.",
+    "lib.online.accept": "Derbyn",
+    "lib.online.decline": "Gwrthod",
+    "lib.online.drawSent": "Cynigiwyd gêm gyfartal…",
+    "lib.online.offerDraw": "Cynnig gêm gyfartal",
+    "lib.online.resignConfirm": "Cliciwch eto i ildio",
+    "lib.online.resign": "Ildio",
+    "lib.online.againSent": "Yn aros i'r gwrthwynebydd gytuno…",
+    "lib.online.againAccept": "Mae'r gwrthwynebydd eisiau ail gêm — Chwarae eto",
+    "lib.online.again": "Chwarae eto (cyfnewid lliwiau)",
+    "lib.online.inviteLink": "Dolen wahodd",
+    "lib.online.copy": "Copïo'r ddolen",
+    "lib.online.share": "Rhannu",
+    "lib.online.saved": "Cadwyd y gêm yn Google Drive (ffolder WFTools/Games).",
+    "lib.online.saving": "Yn cadw'r gêm yn Google Drive…",
+    "lib.online.saveFail": "Methwyd cadw'r gêm yn Drive eto.",
+    "lib.online.save": "Cadw'r gêm yn Google Drive",
+    "lib.game.darkNote": "Xiangqi cudd (Cờ úp): mae'r ddau gadfridog yn dechrau wyneb i fyny, mae pob darn arall yn cael ei gymysgu a'i osod wyneb i lawr. Mae darn cudd yn symud fel y darn sydd fel arfer yn dechrau ar ei sgwâr (ar sgwâr cerbyd mae'n symud fel cerbyd), yna caiff ei droi a symud o hynny ymlaen fel ei ddarn go iawn. Caiff cynghorwyr ac eliffantod fynd i unrhyw le ar y bwrdd. Mae siachmat neu ddim symudiad yn golygu colli.",
+    "lib.game.darkBoard": "Bwrdd Xiangqi cudd",
+    "lib.online.red": "Coch",
+    "lib.online.black": "Du",
+    "lib.game.captured": "Darnau a gipiwyd",
+    "lib.online.pickTable": "Dewch o hyd i wrthwynebydd neu agorwch fwrdd yn y panel ochr i ddechrau.",
+    "lib.online.theirTurn": "Tro'r gwrthwynebydd",
+    "lib.online.white": "Gwyn",
+    "lib.online.goNote": "Bwrdd {n}×{n}, du sy'n dechrau, mae gwyn yn cael {k} komi. Cyfrif arwynebedd; tynnwch bob carreg farw cyn pasio. Daw'r gêm i ben pan fydd y ddau'n pasio un ar ôl y llall.",
+    "lib.online.boardSize": "Maint y bwrdd",
+    "lib.online.oppPassed": "Pasiodd y gwrthwynebydd. Os byddwch chithau'n pasio, daw'r gêm i ben a chaiff ei chyfrif.",
+    "lib.online.modeAi": "Chwarae yn erbyn y cyfrifiadur",
+    "lib.online.modeOnline": "Chwarae ar-lein"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Sudoku mawr 16x16 gyda 1-9 ac A-G, 10 lefel o hawdd i anodd, gyda nodiadau ac awgrymiadau."
     },
     "chess": {
-      "name": "Gwyddbwyll yn erbyn y cyfrifiadur",
-      "desc": "Chwaraewch wyddbwyll yn erbyn y cyfrifiadur mewn 10 lefel o hawdd i anodd, gyda chastellu, en passant a dyrchafu."
+      "name": "Gwyddbwyll",
+      "desc": "Chwaraewch wyddbwyll yn erbyn y cyfrifiadur ar 10 lefel neu ar-lein: gwahoddwch ffrind gyda dolen neu chwaraewch yn erbyn rhywun newydd. Gyda chastellu, en passant a dyrchafu."
     },
     "xiangqi": {
-      "name": "Xiangqi yn erbyn y cyfrifiadur",
-      "desc": "Chwaraewch wyddbwyll Tsieineaidd (xiangqi) yn erbyn y cyfrifiadur mewn 10 lefel, gyda rhwystro coes y ceffyl, llygad yr eliffant, dal â'r canon a rheol y cadfridog hedfan."
+      "name": "Xiangqi (gwyddbwyll Tsieineaidd)",
+      "desc": "Chwaraewch Xiangqi yn erbyn y cyfrifiadur ar 10 lefel neu ar-lein: gwahoddwch ffrind gyda dolen neu chwaraewch yn erbyn rhywun newydd. Rheolau llawn: coes y ceffyl, llygad yr eliffant, naid y canon a chadfridogion na chânt weld ei gilydd."
     },
     "go-game": {
-      "name": "Go yn erbyn y cyfrifiadur",
-      "desc": "Chwaraewch Go yn erbyn y cyfrifiadur ar fyrddau 5x5, 7x7 a 9x9 mewn 10 lefel, gyda sgorio awtomatig ar y diwedd."
+      "name": "Go",
+      "desc": "Chwaraewch Go yn erbyn y cyfrifiadur ar 10 lefel neu ar-lein ar fyrddau 9x9, 13x13 a 19x19 gyda ffrind neu wrthwynebydd newydd. Cyfrif awtomatig ar y diwedd."
     },
     "memory-shapes": {
       "name": "Cof siapiau a lliwiau",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Bwrdd gwaith ar-lein",
       "desc": "Bwrdd gwaith cyfrifiadur yn eich porwr: rheolwr ffeiliau, Notepad, gwyliwr delweddau a PDF, cyfrifiannell, calendr a bin sbwriel. Mae ffeiliau'n cael eu cadw yn eich Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi cudd (Cờ úp)",
+      "desc": "Chwaraewch Xiangqi cudd Fietnam: mae'r darnau'n dechrau wyneb i lawr ac yn cael eu troi ar ôl y symudiad cyntaf. Yn erbyn y cyfrifiadur ar 10 lefel neu ar-lein gyda ffrindiau a gwrthwynebwyr newydd."
     }
   },
   "s": {

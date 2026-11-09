@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Došly životy — všechny dlaždice jsou nyní odkryté.",
     "lib.game.mmNote": "Stiskněte Start: dlaždice se zobrazí na {s} s a pak se skryjí. Zapamatujte si tvar a barvu každé dlaždice a vyberte tu, která odpovídá zobrazenému tvaru. Více než {l} chyb a úroveň se nezdaří.",
     "lib.game.fullscreen": "Celá obrazovka",
-    "lib.game.exitFullscreen": "Ukončit celou obrazovku"
+    "lib.game.exitFullscreen": "Ukončit celou obrazovku",
+    "lib.online.guest": "Host",
+    "lib.online.connFail": "Nepodařilo se připojit k serveru pro online hru. Zkontrolujte připojení (nebo vypněte blokování reklam) a klikněte na Zkusit znovu.",
+    "lib.online.tableGone": "Ten, kdo stůl otevřel, odešel. Vyberte jiný stůl nebo otevřete nový.",
+    "lib.online.drawDeclined": "Soupeř odmítl remízu.",
+    "lib.online.opponent": "Soupeř",
+    "lib.online.copied": "Odkaz zkopírován. Pošlete ho kamarádovi a hrajte spolu.",
+    "lib.online.waitingFor": "čeká {n} s",
+    "lib.online.drawAgreed": "Oba hráči se dohodli na remíze.",
+    "lib.online.draw": "Partie skončila remízou.",
+    "lib.online.oppResigned": "Soupeř se vzdal — vyhráli jste!",
+    "lib.online.youResigned": "Vzdali jste se.",
+    "lib.online.youWin": "Vyhráli jste!",
+    "lib.online.youLose": "Prohráli jste.",
+    "lib.online.connecting": "Připojování k serveru pro online hru…",
+    "lib.online.retry": "Zkusit znovu",
+    "lib.online.quick": "Najít soupeře",
+    "lib.online.createPublic": "Otevřít veřejný stůl",
+    "lib.online.createPrivate": "Otevřít soukromý stůl a pozvat kamaráda",
+    "lib.online.modesHint": "Veřejné stoly jsou v seznamu a může se přidat kdokoli. Do soukromého stolu se dostanete jen přes odkaz s pozvánkou.",
+    "lib.online.openTables": "Čekající veřejné stoly",
+    "lib.online.join": "Přidat se",
+    "lib.online.noTables": "Zatím nečeká žádný stůl. Klikněte na \"Najít soupeře\" nebo otevřete nový stůl.",
+    "lib.online.privacy": "Tahy procházejí bezplatným veřejným serverem MQTT a jsou šifrované pro každý stůl zvlášť; server partie neukládá. Přihlaste se přes Google a ukládejte dohrané partie na svůj Drive.",
+    "lib.online.waitingPublic": "Veřejný stůl: čekáme, až se někdo přidá…",
+    "lib.online.waitingPrivate": "Soukromý stůl: pošlete tento odkaz kamarádovi. Partie začne, jakmile ho otevře.",
+    "lib.online.leave": "Opustit stůl",
+    "lib.online.full": "U tohoto stolu už jsou 2 hráči. Najděte jiný stůl nebo otevřete nový.",
+    "lib.online.backToList": "Zpět na seznam stolů",
+    "lib.online.you": "Vy",
+    "lib.online.oppLeft": "opustil stůl",
+    "lib.online.oppOffline": "odpojen",
+    "lib.online.drawOffer": "Soupeř nabízí remízu.",
+    "lib.online.accept": "Přijmout",
+    "lib.online.decline": "Odmítnout",
+    "lib.online.drawSent": "Remíza nabídnuta…",
+    "lib.online.offerDraw": "Nabídnout remízu",
+    "lib.online.resignConfirm": "Klikněte znovu, chcete-li se vzdát",
+    "lib.online.resign": "Vzdát se",
+    "lib.online.againSent": "Čekáme na souhlas soupeře…",
+    "lib.online.againAccept": "Soupeř chce odvetu — Hrát znovu",
+    "lib.online.again": "Hrát znovu (prohodit barvy)",
+    "lib.online.inviteLink": "Odkaz s pozvánkou",
+    "lib.online.copy": "Kopírovat odkaz",
+    "lib.online.share": "Sdílet",
+    "lib.online.saved": "Partie uložena na Google Drive (složka WFTools/Games).",
+    "lib.online.saving": "Ukládání partie na Google Drive…",
+    "lib.online.saveFail": "Partii se zatím nepodařilo uložit na Drive.",
+    "lib.online.save": "Uložit partii na Google Drive",
+    "lib.game.darkNote": "Skrytý Xiangqi (Cờ úp): oba generálové začínají lícem nahoru, ostatní kameny se zamíchají a položí rubem nahoru. Skrytý kámen táhne jako kámen, který obvykle začíná na jeho poli (na poli vozu táhne jako vůz), pak se otočí a dál táhne jako svůj skutečný kámen. Rádci a sloni se smějí pohybovat po celé desce. Mat nebo žádný tah znamená prohru.",
+    "lib.game.darkBoard": "Deska skrytého Xiangqi",
+    "lib.online.red": "Červené",
+    "lib.online.black": "Černé",
+    "lib.game.captured": "Sebrané kameny",
+    "lib.online.pickTable": "Najděte soupeře nebo otevřete stůl v bočním panelu a začněte.",
+    "lib.online.theirTurn": "Na tahu je soupeř",
+    "lib.online.white": "Bílé",
+    "lib.online.goNote": "Deska {n}×{n}, začíná černý, bílý dostává komi {k}. Počítá se plocha; před pasem seberte všechny mrtvé kameny. Partie končí, když oba hráči pasují po sobě.",
+    "lib.online.boardSize": "Velikost desky",
+    "lib.online.oppPassed": "Soupeř pasoval. Pokud pasujete i vy, partie skončí a sečte se.",
+    "lib.online.modeAi": "Hrát proti počítači",
+    "lib.online.modeOnline": "Hrát online"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Velké sudoku 16x16 s čísly 1-9 a písmeny A-G, 10 úrovní od lehké po těžkou, s poznámkami a nápovědou."
     },
     "chess": {
-      "name": "Šachy proti počítači",
-      "desc": "Hrajte šachy proti počítači v 10 úrovních od lehké po těžkou, s rošádou, braním mimochodem a proměnou."
+      "name": "Šachy",
+      "desc": "Hrajte šachy proti počítači v 10 úrovních nebo online: pozvěte kamaráda odkazem nebo si zahrajte s někým novým. S rošádou, braním mimochodem a proměnou."
     },
     "xiangqi": {
-      "name": "Xiangqi proti počítači",
-      "desc": "Hrajte čínské šachy (xiangqi) proti počítači v 10 úrovních, s blokováním koně, okem slona, braním dělem a pravidlem letícího generála."
+      "name": "Xiangqi (čínské šachy)",
+      "desc": "Hrajte Xiangqi proti počítači v 10 úrovních nebo online: pozvěte kamaráda odkazem nebo si zahrajte s někým novým. Úplná pravidla: noha koně, oko slona, skok děla a generálové, kteří se nesmí vidět."
     },
     "go-game": {
-      "name": "Go proti počítači",
-      "desc": "Hrajte Go proti počítači na deskách 5x5, 7x7 a 9x9 v 10 úrovních, s automatickým sčítáním skóre na konci."
+      "name": "Go",
+      "desc": "Hrajte Go proti počítači v 10 úrovních nebo online na deskách 9x9, 13x13 a 19x19 s kamarádem nebo novým soupeřem. Automatické sečtení na konci."
     },
     "memory-shapes": {
       "name": "Paměť tvarů a barev",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Online plocha",
       "desc": "Plocha počítače v prohlížeči: správce souborů, Notepad, prohlížeč obrázků a PDF, kalkulačka, kalendář a koš. Soubory se ukládají na váš Disk Google."
+    },
+    "co-up": {
+      "name": "Skrytý Xiangqi (Cờ úp)",
+      "desc": "Hrajte vietnamský skrytý Xiangqi: kameny začínají rubem nahoru a otočí se po prvním tahu. Proti počítači v 10 úrovních nebo online s přáteli a novými soupeři."
     }
   },
   "s": {

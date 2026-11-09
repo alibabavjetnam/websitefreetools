@@ -234,7 +234,68 @@
     "lib.game.mmLost": "Elämät loppuivat — kaikki laatat paljastettiin.",
     "lib.game.mmNote": "Paina Aloita: laatat näytetään {s} sekuntia ja piilotetaan sitten. Muista jokaisen laatan muoto ja väri ja valitse sitten laatta, joka vastaa näytettyä muotoa. Yli {l} virhettä hylkää tason.",
     "lib.game.fullscreen": "Koko näyttö",
-    "lib.game.exitFullscreen": "Poistu koko näytöstä"
+    "lib.game.exitFullscreen": "Poistu koko näytöstä",
+    "lib.online.guest": "Vieras",
+    "lib.online.connFail": "Verkkopelipalvelimeen ei saatu yhteyttä. Tarkista yhteys (tai poista mainosten esto käytöstä) ja valitse Yritä uudelleen.",
+    "lib.online.tableGone": "Pöydän avannut pelaaja on lähtenyt. Valitse toinen pöytä tai avaa uusi.",
+    "lib.online.drawDeclined": "Vastustaja ei hyväksynyt tasapeliä.",
+    "lib.online.opponent": "Vastustaja",
+    "lib.online.copied": "Linkki kopioitu. Lähetä se ystävällesi, niin voitte pelata yhdessä.",
+    "lib.online.waitingFor": "odottanut {n} s",
+    "lib.online.drawAgreed": "Pelaajat sopivat tasapelin.",
+    "lib.online.draw": "Peli päättyi tasapeliin.",
+    "lib.online.oppResigned": "Vastustaja luovutti — voitit!",
+    "lib.online.youResigned": "Luovutit.",
+    "lib.online.youWin": "Voitit!",
+    "lib.online.youLose": "Hävisit.",
+    "lib.online.connecting": "Yhdistetään verkkopelipalvelimeen…",
+    "lib.online.retry": "Yritä uudelleen",
+    "lib.online.quick": "Etsi vastustaja",
+    "lib.online.createPublic": "Avaa julkinen pöytä",
+    "lib.online.createPrivate": "Avaa yksityinen pöytä ja kutsu ystävä",
+    "lib.online.modesHint": "Julkiset pöydät näkyvät listassa, ja kuka tahansa voi liittyä. Yksityiseen pöytään pääsee vain kutsulinkillä.",
+    "lib.online.openTables": "Odottavat julkiset pöydät",
+    "lib.online.join": "Liity",
+    "lib.online.noTables": "Yhtään pöytää ei vielä odota. Valitse \"Etsi vastustaja\" tai avaa uusi pöytä.",
+    "lib.online.privacy": "Siirrot kulkevat ilmaisen julkisen MQTT-palvelimen kautta ja salataan pöytäkohtaisesti; palvelin ei tallenna pelejä. Kirjaudu Googlella, niin voit tallentaa päättyneet pelit Driveesi.",
+    "lib.online.waitingPublic": "Julkinen pöytä: odotetaan, että joku liittyy…",
+    "lib.online.waitingPrivate": "Yksityinen pöytä: lähetä tämä linkki ystävällesi. Peli alkaa, kun hän avaa sen.",
+    "lib.online.leave": "Poistu pöydästä",
+    "lib.online.full": "Pöydässä on jo 2 pelaajaa. Etsi toinen pöytä tai avaa uusi.",
+    "lib.online.backToList": "Takaisin pöytälistaan",
+    "lib.online.you": "Sinä",
+    "lib.online.oppLeft": "poistui pöydästä",
+    "lib.online.oppOffline": "yhteys katkesi",
+    "lib.online.drawOffer": "Vastustaja tarjoaa tasapeliä.",
+    "lib.online.accept": "Hyväksy",
+    "lib.online.decline": "Hylkää",
+    "lib.online.drawSent": "Tasapeliä tarjottu…",
+    "lib.online.offerDraw": "Tarjoa tasapeliä",
+    "lib.online.resignConfirm": "Luovuta valitsemalla uudelleen",
+    "lib.online.resign": "Luovuta",
+    "lib.online.againSent": "Odotetaan vastustajan hyväksyntää…",
+    "lib.online.againAccept": "Vastustaja haluaa uusintaottelun — Pelaa uudelleen",
+    "lib.online.again": "Pelaa uudelleen (vaihda värit)",
+    "lib.online.inviteLink": "Kutsulinkki",
+    "lib.online.copy": "Kopioi linkki",
+    "lib.online.share": "Jaa",
+    "lib.online.saved": "Peli tallennettiin Google Driveen (kansio WFTools/Games).",
+    "lib.online.saving": "Tallennetaan peliä Google Driveen…",
+    "lib.online.saveFail": "Peliä ei vielä saatu tallennettua Driveen.",
+    "lib.online.save": "Tallenna peli Google Driveen",
+    "lib.game.darkNote": "Piilo-Xiangqi (Cờ úp): molemmat kenraalit aloittavat kuvapuoli ylöspäin, muut nappulat sekoitetaan ja asetetaan kuvapuoli alaspäin. Piilossa oleva nappula liikkuu kuin nappula, joka tavallisesti aloittaa sen ruudusta (vaunun ruudussa kuin vaunu), kääntyy siirron jälkeen ja liikkuu sen jälkeen oikeana nappulanaan. Neuvonantajat ja norsut saavat liikkua koko laudalla. Matti tai siirtojen loppuminen tarkoittaa tappiota.",
+    "lib.game.darkBoard": "Piilo-Xiangqin lauta",
+    "lib.online.red": "Punainen",
+    "lib.online.black": "Musta",
+    "lib.game.captured": "Lyödyt nappulat",
+    "lib.online.pickTable": "Aloita etsimällä vastustaja tai avaamalla pöytä sivupaneelista.",
+    "lib.online.theirTurn": "Vastustajan vuoro",
+    "lib.online.white": "Valkoinen",
+    "lib.online.goNote": "{n}×{n}-lauta, musta aloittaa, valkoinen saa {k} komia. Aluelaskenta; poista kaikki kuolleet kivet ennen passausta. Peli päättyy, kun molemmat passaavat peräkkäin.",
+    "lib.online.boardSize": "Laudan koko",
+    "lib.online.oppPassed": "Vastustaja passasi. Jos sinäkin passaat, peli päättyy ja lasketaan.",
+    "lib.online.modeAi": "Pelaa tietokonetta vastaan",
+    "lib.online.modeOnline": "Pelaa verkossa"
   },
   "pages": {
     "home": {
@@ -657,16 +718,16 @@
       "desc": "Suuri 16x16-sudoku numeroilla 1-9 ja kirjaimilla A-G, 10 tasoa helposta vaikeaan, muistiinpanoilla ja vihjeillä."
     },
     "chess": {
-      "name": "Shakki tietokonetta vastaan",
-      "desc": "Pelaa shakkia tietokonetta vastaan 10 tasolla helposta vaikeaan, linnoitus, ohestalyönti ja ylennys mukana."
+      "name": "Shakki",
+      "desc": "Pelaa shakkia tietokonetta vastaan 10 tasolla tai verkossa: kutsu ystävä linkillä tai pelaa uutta vastustajaa vastaan. Linnoitus, ohestalyönti ja korotus mukana."
     },
     "xiangqi": {
-      "name": "Xiangqi tietokonetta vastaan",
-      "desc": "Pelaa kiinalaista shakkia (xiangqi) tietokonetta vastaan 10 tasolla: hevosen jalan esto, norsun silmä, tykin lyönti ja lentävän kenraalin sääntö."
+      "name": "Xiangqi (kiinalainen shakki)",
+      "desc": "Pelaa Xiangqia tietokonetta vastaan 10 tasolla tai verkossa: kutsu ystävä linkillä tai pelaa uutta vastustajaa vastaan. Täydet säännöt: hevosen jalka, norsun silmä, tykin hyppy ja kenraalit, jotka eivät saa nähdä toisiaan."
     },
     "go-game": {
-      "name": "Go tietokonetta vastaan",
-      "desc": "Pelaa goa tietokonetta vastaan 5x5-, 7x7- ja 9x9-laudoilla 10 tasolla, lopussa automaattinen pisteytys."
+      "name": "Go",
+      "desc": "Pelaa Gota tietokonetta vastaan 10 tasolla tai verkossa 9x9-, 13x13- ja 19x19-laudoilla ystävän tai uuden vastustajan kanssa. Automaattinen laskenta lopussa."
     },
     "memory-shapes": {
       "name": "Muoto- ja värimuisti",
@@ -675,6 +736,10 @@
     "web-desktop": {
       "name": "Verkkotyöpöytä",
       "desc": "Tietokoneen työpöytä selaimessa: tiedostonhallinta, Notepad, kuva- ja PDF-katselin, laskin, kalenteri ja roskakori. Tiedostot tallennetaan Google Driveesi."
+    },
+    "co-up": {
+      "name": "Piilo-Xiangqi (Cờ úp)",
+      "desc": "Pelaa vietnamilaista piilo-Xiangqia: nappulat aloittavat kuvapuoli alaspäin ja kääntyvät ensimmäisen siirron jälkeen. Tietokonetta vastaan 10 tasolla tai verkossa ystävien ja uusien vastustajien kanssa."
     }
   },
   "s": {
