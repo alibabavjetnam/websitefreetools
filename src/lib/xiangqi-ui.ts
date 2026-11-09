@@ -23,8 +23,11 @@ const DEFS = `<defs>
   <linearGradient id="xqWood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e2b8"/><stop offset=".55" stop-color="#efd29b"/><stop offset="1" stop-color="#e6c184"/></linearGradient>
   <radialGradient id="xqFace" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#fffdf6"/><stop offset=".62" stop-color="#f7ead0"/><stop offset="1" stop-color="#e9d2a6"/></radialGradient>
   <linearGradient id="xqEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b47a"/><stop offset="1" stop-color="#a67a43"/></linearGradient>
-  <radialGradient id="xqBackB" cx=".42" cy=".36" r=".75"><stop offset="0" stop-color="#5a7f8c"/><stop offset=".7" stop-color="#34525e"/><stop offset="1" stop-color="#243b45"/></radialGradient>
-  <radialGradient id="xqBackR" cx=".42" cy=".36" r=".75"><stop offset="0" stop-color="#d0574a"/><stop offset=".7" stop-color="#a3302a"/><stop offset="1" stop-color="#7c201d"/></radialGradient>
+  <radialGradient id="xqBackR" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#9e1f1f"/><stop offset="1" stop-color="#6a0d0d"/></radialGradient>
+  <radialGradient id="xqDomeR" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#c2433b"/><stop offset=".55" stop-color="#951b1b"/><stop offset="1" stop-color="#6e0f0f"/></radialGradient>
+  <radialGradient id="xqBackB" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#1f4470"/><stop offset="1" stop-color="#0f2744"/></radialGradient>
+  <radialGradient id="xqDomeB" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="#3d6a9e"/><stop offset=".55" stop-color="#1d4273"/><stop offset="1" stop-color="#112b4d"/></radialGradient>
+  <filter id="xqSoftS" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.3"/></filter>
   <linearGradient id="xqGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
   <filter id="xqSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2"/></filter>
 </defs>`;
@@ -74,12 +77,24 @@ function boardLines(px: (c: number) => number, py: (r: number) => number): strin
 
 /** Một quân cờ nổi khối: bóng đổ, cạnh dày, mặt ngà bóng, vòng khắc màu phe, vệt sáng */
 function piece(x: number, y: number, cls: string, label: string, hidden: boolean): string {
+  if (hidden) {
+    // Mặt úp: đĩa màu phe (đỏ sẫm / xanh đậm) có núm tròn nổi ở giữa, vòng chấm bao quanh, bóng đổ nhẹ sang phía đông
+    return `<g class="${cls}">
+    <circle class="sh" cx="${x + 3}" cy="${y + 1.5}" r="24.5"/>
+    <circle class="edge" cx="${x}" cy="${y + 1.6}" r="25"/>
+    <circle class="face" cx="${x}" cy="${y}" r="24"/>
+    <circle class="xq-ring" cx="${x}" cy="${y}" r="20"/>
+    <circle class="dome-sh" cx="${x + 1.6}" cy="${y + 1}" r="14.5"/>
+    <circle class="dome" cx="${x}" cy="${y}" r="14"/>
+    <ellipse class="gloss" cx="${x - 3.5}" cy="${y - 6}" rx="7.5" ry="4"/>
+  </g>`;
+  }
   return `<g class="${cls}">
     <ellipse class="sh" cx="${x + 1}" cy="${y + 5}" rx="25" ry="23"/>
     <circle class="edge" cx="${x}" cy="${y + 2.6}" r="25"/>
     <circle class="face" cx="${x}" cy="${y}" r="24"/>
-    <circle class="ring" cx="${x}" cy="${y}" r="${hidden ? 21 : 19.5}"/>
-    ${hidden ? `<path class="emb" d="M${x} ${y - 7} L${x + 7} ${y} L${x} ${y + 7} L${x - 7} ${y} Z"/>` : `<text x="${x}" y="${y + 9}" text-anchor="middle">${label}</text>`}
+    <circle class="xq-ring" cx="${x}" cy="${y}" r="19.5"/>
+    <text x="${x}" y="${y + 9}" text-anchor="middle">${label}</text>
     <ellipse class="gloss" cx="${x - 5}" cy="${y - 11}" rx="14" ry="7"/>
   </g>`;
 }

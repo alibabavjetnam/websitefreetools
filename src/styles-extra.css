@@ -1094,25 +1094,31 @@ textarea:focus-visible {
 .xq-pc .sh { fill: #3b2410; opacity: .32; filter: url(#xqSoft); }
 .xq-pc .edge { fill: url(#xqEdge); }
 .xq-pc .face { fill: url(#xqFace); stroke: #c39a5f; stroke-width: 1; }
-.xq-pc .ring { fill: none; stroke-width: 1.6; opacity: .85; }
+.xq-pc .xq-ring { fill: none; stroke-width: 1.6; opacity: 0; }
 .xq-pc .gloss { fill: url(#xqGloss); opacity: .55; pointer-events: none; }
 .xq-pc text { font-size: 27px; font-weight: 800; font-family: 'Noto Serif CJK SC', 'Songti SC', 'KaiTi', 'SimSun', serif; paint-order: stroke; stroke: #fffaf0; stroke-width: 1.4px; }
 .xq-pc.red text { fill: #c3161c; }
-.xq-pc.red .ring { stroke: #c3161c; }
+.xq-pc.red .xq-ring { stroke: #c3161c; }
 .xq-pc.blk text { fill: #1d2430; }
-.xq-pc.blk .ring { stroke: #1d2430; }
+.xq-pc.blk .xq-ring { stroke: #1d2430; }
 .xq-pc.sel { transform: translateY(-3px); }
 .xq-pc.sel .face { stroke: #1d6ff2; stroke-width: 3.5; }
 .xq-pc.sel .sh { opacity: .42; }
 .xq-pc.check .face { stroke: #e11d48; stroke-width: 3.5; }
 @media (prefers-reduced-motion: no-preference) { .xq-pc { transition: transform .12s ease; } }
-/* Cờ úp: mặt lưng xanh ngọc sẫm, viền màu phe để biết quân của ai */
-.xq-pc.hid.red .face { fill: url(#xqBackR); stroke: #5e1714; }
-.xq-pc.hid.blk .face { fill: url(#xqBackB); stroke: #172a32; }
-.xq-pc.hid .ring { stroke: #f1dfb8; stroke-width: 1.4; opacity: .7; }
-.xq-pc.hid .emb { fill: #f1dfb8; opacity: .8; }
-.xq-pc.hid .gloss { opacity: .35; }
+/* Cờ úp: mặt lưng đỏ sẫm / xanh đậm, núm tròn nổi giữa, vòng chấm, bóng đổ nhẹ sang phía đông */
+.xq-pc.hid .sh { fill: #2a1808; opacity: .28; filter: url(#xqSoftS); }
+.xq-pc.hid.red .edge { fill: #4a0808; }
+.xq-pc.hid.blk .edge { fill: #0a1a2e; }
+.xq-pc.hid.red .face { fill: url(#xqBackR); stroke: #4a0808; stroke-width: 1; }
+.xq-pc.hid.blk .face { fill: url(#xqBackB); stroke: #0a1a2e; stroke-width: 1; }
+.xq-pc.hid .xq-ring { stroke: #f3dfb6; stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 1 4.2; opacity: .9; }
+.xq-pc.hid .dome-sh { fill: #000; opacity: .28; }
+.xq-pc.hid.red .dome { fill: url(#xqDomeR); stroke: #5a0a0a; stroke-width: .8; }
+.xq-pc.hid.blk .dome { fill: url(#xqDomeB); stroke: #0c2038; stroke-width: .8; }
+.xq-pc.hid .gloss { opacity: .45; }
 .xq-pc.hid.sel .face { stroke: #1d6ff2; stroke-width: 3.5; }
+.xq-pc.hid.sel .xq-ring { stroke: #fff; opacity: 1; }
 .xq-caps { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; min-height: 30px; margin-top: 8px; font-size: 13px; color: var(--muted); }
 .xq-caps-l { margin-inline-end: 4px; }
 .xq-mini { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #fffdf6, #f3e3c2 65%, #e2c693); box-shadow: 0 2px 0 #b58a50, 0 3px 5px rgba(60, 35, 10, .3); font: 800 14px/1 'Noto Serif CJK SC', 'Songti SC', 'KaiTi', 'SimSun', serif; }
