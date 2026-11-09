@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Soalan {i}/{n}",
     "lib.game.mmDone": "Selesai!",
     "lib.game.mmLost": "Nyawa habis — semua jubin kini didedahkan.",
-    "lib.game.mmNote": "Tekan Mula: jubin dipaparkan selama {s} saat, kemudian disembunyikan. Ingat bentuk dan warna setiap jubin, kemudian pilih jubin yang sepadan dengan bentuk yang ditunjukkan. Lebih daripada {l} kesilapan gagalkan tahap."
+    "lib.game.mmNote": "Tekan Mula: jubin dipaparkan selama {s} saat, kemudian disembunyikan. Ingat bentuk dan warna setiap jubin, kemudian pilih jubin yang sepadan dengan bentuk yang ditunjukkan. Lebih daripada {l} kesilapan gagalkan tahap.",
+    "lib.online.guest": "Tetamu",
+    "lib.online.connFail": "Tidak dapat menyambung ke pelayan permainan dalam talian. Semak sambungan anda (atau matikan penyekat iklan), kemudian klik Cuba lagi.",
+    "lib.online.tableGone": "Orang yang membuka meja ini telah keluar. Pilih meja lain atau buka meja baharu.",
+    "lib.online.drawDeclined": "Lawan menolak seri.",
+    "lib.online.opponent": "Lawan",
+    "lib.online.copied": "Pautan disalin. Hantar kepada rakan anda untuk bermain bersama.",
+    "lib.online.waitingFor": "menunggu {n} saat",
+    "lib.online.drawAgreed": "Kedua-dua pemain bersetuju seri.",
+    "lib.online.draw": "Permainan berakhir seri.",
+    "lib.online.oppResigned": "Lawan menyerah kalah — anda menang!",
+    "lib.online.youResigned": "Anda menyerah kalah.",
+    "lib.online.youWin": "Anda menang!",
+    "lib.online.youLose": "Anda kalah.",
+    "lib.online.connecting": "Menyambung ke pelayan permainan dalam talian…",
+    "lib.online.retry": "Cuba lagi",
+    "lib.online.quick": "Cari lawan",
+    "lib.online.createPublic": "Buka meja awam",
+    "lib.online.createPrivate": "Buka meja peribadi dan jemput rakan",
+    "lib.online.modesHint": "Meja awam dipaparkan dalam senarai dan sesiapa boleh menyertai. Meja peribadi hanya boleh dimasuki dengan pautan jemputan.",
+    "lib.online.openTables": "Meja awam yang sedang menunggu",
+    "lib.online.join": "Sertai",
+    "lib.online.noTables": "Belum ada meja yang menunggu. Klik \"Cari lawan\" atau buka meja baharu.",
+    "lib.online.privacy": "Langkah dihantar melalui pelayan MQTT awam percuma dan disulitkan bagi setiap meja; pelayan tidak menyimpan permainan anda. Log masuk dengan Google untuk menyimpan permainan yang tamat ke Drive anda.",
+    "lib.online.waitingPublic": "Meja awam: menunggu seseorang menyertai…",
+    "lib.online.waitingPrivate": "Meja peribadi: hantar pautan ini kepada rakan anda. Permainan bermula apabila dia membukanya.",
+    "lib.online.leave": "Tinggalkan meja",
+    "lib.online.full": "Meja ini sudah ada 2 pemain. Cari meja lain atau buka meja baharu.",
+    "lib.online.backToList": "Kembali ke senarai meja",
+    "lib.online.you": "Anda",
+    "lib.online.oppLeft": "telah meninggalkan meja",
+    "lib.online.oppOffline": "terputus",
+    "lib.online.drawOffer": "Lawan menawarkan seri.",
+    "lib.online.accept": "Terima",
+    "lib.online.decline": "Tolak",
+    "lib.online.drawSent": "Seri ditawarkan…",
+    "lib.online.offerDraw": "Tawarkan seri",
+    "lib.online.resignConfirm": "Klik sekali lagi untuk menyerah kalah",
+    "lib.online.resign": "Menyerah kalah",
+    "lib.online.againSent": "Menunggu lawan bersetuju…",
+    "lib.online.againAccept": "Lawan mahu main semula — Main lagi",
+    "lib.online.again": "Main lagi (tukar warna)",
+    "lib.online.inviteLink": "Pautan jemputan",
+    "lib.online.copy": "Salin pautan",
+    "lib.online.share": "Kongsi",
+    "lib.online.saved": "Permainan disimpan ke Google Drive (folder WFTools/Games).",
+    "lib.online.saving": "Menyimpan permainan ke Google Drive…",
+    "lib.online.saveFail": "Permainan belum dapat disimpan ke Drive.",
+    "lib.online.save": "Simpan permainan ke Google Drive",
+    "lib.game.darkNote": "Xiangqi tertutup (Cờ úp): kedua-dua Jeneral bermula terbuka; buah lain dikocok dan diletakkan tertutup. Buah tertutup bergerak seperti buah yang biasanya bermula di petaknya (di petak Kereta perang ia bergerak seperti Kereta perang), kemudian dibuka dan selepas itu bergerak sebagai buah sebenar. Penasihat dan Gajah boleh bergerak ke seluruh papan. Kena sekakmat atau tiada langkah bermakna kalah.",
+    "lib.game.darkBoard": "Papan Xiangqi tertutup",
+    "lib.online.red": "Merah",
+    "lib.online.black": "Hitam",
+    "lib.game.captured": "Buah yang ditangkap",
+    "lib.online.pickTable": "Cari lawan atau buka meja di panel sisi untuk bermula.",
+    "lib.online.theirTurn": "Giliran lawan",
+    "lib.online.white": "Putih",
+    "lib.online.goNote": "Papan {n}×{n}, Hitam bermula, Putih mendapat komi {k}. Pengiraan kawasan; tangkap semua batu mati sebelum lalu. Permainan tamat apabila kedua-dua pemain lalu berturut-turut.",
+    "lib.online.boardSize": "Saiz papan",
+    "lib.online.oppPassed": "Lawan melalukan giliran. Jika anda juga lalu, permainan tamat dan dikira.",
+    "lib.online.modeAi": "Main melawan komputer",
+    "lib.online.modeOnline": "Main dalam talian"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Sudoku besar 16x16 menggunakan 1-9 dan A-G, 10 tahap dari mudah ke sukar, dengan nota dan petunjuk."
     },
     "chess": {
-      "name": "Catur lawan Komputer",
-      "desc": "Main catur lawan komputer dalam 10 tahap dari mudah ke sukar, dengan castling, en passant dan kenaikan pangkat."
+      "name": "Catur",
+      "desc": "Main catur melawan komputer dalam 10 tahap atau dalam talian: jemput rakan dengan pautan atau berlawan dengan orang baharu. Dengan kasling, en passant dan promosi."
     },
     "xiangqi": {
-      "name": "Xiangqi lawan Komputer",
-      "desc": "Main catur Cina (xiangqi) lawan komputer dalam 10 tahap, dengan sekatan kaki kuda, mata gajah, tangkapan meriam dan peraturan jeneral berhadapan."
+      "name": "Xiangqi (catur Cina)",
+      "desc": "Main Xiangqi melawan komputer dalam 10 tahap atau dalam talian: jemput rakan dengan pautan atau berlawan dengan orang baharu. Peraturan lengkap: kaki kuda, mata gajah, lompatan meriam dan jeneral tidak boleh bersemuka."
     },
     "go-game": {
-      "name": "Go lawan Komputer",
-      "desc": "Main Go lawan komputer pada papan 5x5, 7x7 dan 9x9 dalam 10 tahap, dengan pemarkahan automatik di akhir."
+      "name": "Go",
+      "desc": "Main Go melawan komputer dalam 10 tahap atau dalam talian di papan 9x9, 13x13 dan 19x19 bersama rakan atau lawan baharu. Pengiraan automatik di akhir permainan."
     },
     "memory-shapes": {
       "name": "Ingatan Bentuk & Warna",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Desktop dalam talian",
       "desc": "Desktop komputer dalam pelayar anda: pengurus fail, Notepad, pemapar imej dan PDF, kalkulator, kalendar dan tong sampah. Fail disimpan ke Google Drive anda."
+    },
+    "co-up": {
+      "name": "Xiangqi tertutup (Cờ úp)",
+      "desc": "Main Xiangqi tertutup gaya Vietnam: buah bermula tertutup dan terbuka selepas langkah pertama. Melawan komputer dalam 10 tahap atau dalam talian dengan rakan dan lawan baharu."
     }
   },
   "s": {

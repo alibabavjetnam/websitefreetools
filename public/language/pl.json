@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Pytanie {i}/{n}",
     "lib.game.mmDone": "Gotowe!",
     "lib.game.mmLost": "Brak żyć — wszystkie pola zostały odkryte.",
-    "lib.game.mmNote": "Naciśnij Start: pola są pokazywane przez {s} s, a potem ukrywane. Zapamiętaj kształt i kolor każdego pola, a potem wybierz pole pasujące do pokazanego kształtu. Więcej niż {l} błędów kończy poziom porażką."
+    "lib.game.mmNote": "Naciśnij Start: pola są pokazywane przez {s} s, a potem ukrywane. Zapamiętaj kształt i kolor każdego pola, a potem wybierz pole pasujące do pokazanego kształtu. Więcej niż {l} błędów kończy poziom porażką.",
+    "lib.online.guest": "Gość",
+    "lib.online.connFail": "Nie udało się połączyć z serwerem gry online. Sprawdź połączenie (lub wyłącz blokadę reklam) i kliknij Spróbuj ponownie.",
+    "lib.online.tableGone": "Osoba, która otworzyła ten stół, wyszła. Wybierz inny stół albo otwórz nowy.",
+    "lib.online.drawDeclined": "Przeciwnik odrzucił remis.",
+    "lib.online.opponent": "Przeciwnik",
+    "lib.online.copied": "Skopiowano link. Wyślij go znajomemu, żeby zagrać razem.",
+    "lib.online.waitingFor": "czeka {n} s",
+    "lib.online.drawAgreed": "Obaj gracze zgodzili się na remis.",
+    "lib.online.draw": "Partia zakończyła się remisem.",
+    "lib.online.oppResigned": "Przeciwnik się poddał — wygrywasz!",
+    "lib.online.youResigned": "Poddałeś się.",
+    "lib.online.youWin": "Wygrywasz!",
+    "lib.online.youLose": "Przegrywasz.",
+    "lib.online.connecting": "Łączenie z serwerem gry online…",
+    "lib.online.retry": "Spróbuj ponownie",
+    "lib.online.quick": "Znajdź przeciwnika",
+    "lib.online.createPublic": "Otwórz stół publiczny",
+    "lib.online.createPrivate": "Otwórz stół prywatny i zaproś znajomego",
+    "lib.online.modesHint": "Stoły publiczne są widoczne na liście i każdy może dołączyć. Do stołów prywatnych wchodzi się tylko przez link z zaproszeniem.",
+    "lib.online.openTables": "Czekające stoły publiczne",
+    "lib.online.join": "Dołącz",
+    "lib.online.noTables": "Nie ma jeszcze czekających stołów. Kliknij \"Znajdź przeciwnika\" albo otwórz nowy stół.",
+    "lib.online.privacy": "Ruchy przechodzą przez darmowy publiczny serwer MQTT i są szyfrowane osobno dla każdego stołu; serwer nie przechowuje partii. Zaloguj się przez Google, aby zapisywać zakończone partie na swoim Drive.",
+    "lib.online.waitingPublic": "Stół publiczny: czekamy, aż ktoś dołączy…",
+    "lib.online.waitingPrivate": "Stół prywatny: wyślij ten link znajomemu. Partia zacznie się, gdy go otworzy.",
+    "lib.online.leave": "Opuść stół",
+    "lib.online.full": "Przy tym stole jest już 2 graczy. Znajdź inny stół albo otwórz nowy.",
+    "lib.online.backToList": "Wróć do listy stołów",
+    "lib.online.you": "Ty",
+    "lib.online.oppLeft": "opuścił stół",
+    "lib.online.oppOffline": "rozłączony",
+    "lib.online.drawOffer": "Przeciwnik proponuje remis.",
+    "lib.online.accept": "Przyjmij",
+    "lib.online.decline": "Odrzuć",
+    "lib.online.drawSent": "Zaproponowano remis…",
+    "lib.online.offerDraw": "Zaproponuj remis",
+    "lib.online.resignConfirm": "Kliknij ponownie, aby się poddać",
+    "lib.online.resign": "Poddaj się",
+    "lib.online.againSent": "Czekamy na zgodę przeciwnika…",
+    "lib.online.againAccept": "Przeciwnik chce rewanżu — Zagraj jeszcze raz",
+    "lib.online.again": "Zagraj jeszcze raz (zamiana kolorów)",
+    "lib.online.inviteLink": "Link z zaproszeniem",
+    "lib.online.copy": "Kopiuj link",
+    "lib.online.share": "Udostępnij",
+    "lib.online.saved": "Partię zapisano na Google Drive (folder WFTools/Games).",
+    "lib.online.saving": "Zapisywanie partii na Google Drive…",
+    "lib.online.saveFail": "Nie udało się jeszcze zapisać partii na Drive.",
+    "lib.online.save": "Zapisz partię na Google Drive",
+    "lib.game.darkNote": "Xiangqi zakryte (Cờ úp): obaj generałowie stoją odkryci, pozostałe figury są tasowane i ustawiane zakryte. Zakryta figura rusza się jak figura, która normalnie zaczyna na jej polu (na polu rydwanu jak rydwan), potem zostaje odkryta i od tej pory rusza się jak jej prawdziwa figura. Doradcy i słonie mogą chodzić po całej planszy. Mat albo brak ruchu oznacza przegraną.",
+    "lib.game.darkBoard": "Plansza zakrytego Xiangqi",
+    "lib.online.red": "Czerwone",
+    "lib.online.black": "Czarne",
+    "lib.game.captured": "Zbite",
+    "lib.online.pickTable": "Znajdź przeciwnika albo otwórz stół w panelu obok, aby zacząć.",
+    "lib.online.theirTurn": "Ruch przeciwnika",
+    "lib.online.white": "Białe",
+    "lib.online.goNote": "Plansza {n}×{n}, zaczynają czarne, białe dostają {k} komi. Liczenie obszarowe; zbij wszystkie martwe kamienie przed spasowaniem. Partia kończy się, gdy obaj gracze spasują po kolei.",
+    "lib.online.boardSize": "Rozmiar planszy",
+    "lib.online.oppPassed": "Przeciwnik spasował. Jeśli też spasujesz, partia się skończy i zostanie policzona.",
+    "lib.online.modeAi": "Graj z komputerem",
+    "lib.online.modeOnline": "Graj online"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Duże sudoku 16x16 z cyframi 1-9 i literami A-G, 10 poziomów od łatwego do trudnego, z notatkami i podpowiedziami."
     },
     "chess": {
-      "name": "Szachy z komputerem",
-      "desc": "Graj w szachy z komputerem na 10 poziomach od łatwego do trudnego, z roszadą, biciem w przelocie i promocją."
+      "name": "Szachy",
+      "desc": "Graj w szachy z komputerem na 10 poziomach albo online: zaproś znajomego linkiem lub zagraj z kimś nowym. Z roszadą, biciem w przelocie i promocją."
     },
     "xiangqi": {
-      "name": "Xiangqi z komputerem",
-      "desc": "Graj w szachy chińskie (xiangqi) z komputerem na 10 poziomach, z blokadą nogi konia, okiem słonia, biciem armaty i zasadą latającego generała."
+      "name": "Xiangqi (szachy chińskie)",
+      "desc": "Graj w Xiangqi z komputerem na 10 poziomach albo online: zaproś znajomego linkiem lub zagraj z kimś nowym. Pełne zasady: noga konia, oko słonia, skok armaty i zakaz stawania generałów naprzeciw siebie."
     },
     "go-game": {
-      "name": "Go z komputerem",
-      "desc": "Graj w go z komputerem na planszach 5x5, 7x7 i 9x9 na 10 poziomach, z automatycznym liczeniem punktów na koniec."
+      "name": "Go",
+      "desc": "Graj w Go z komputerem na 10 poziomach albo online na planszach 9x9, 13x13 i 19x19 ze znajomym lub nowym przeciwnikiem. Automatyczne liczenie punktów na końcu."
     },
     "memory-shapes": {
       "name": "Pamięć kształtów i kolorów",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Pulpit online",
       "desc": "Pulpit komputera w przeglądarce: menedżer plików, Notepad, przeglądarka obrazów i PDF, kalkulator, kalendarz i kosz. Pliki są zapisywane na Twoim Dysku Google."
+    },
+    "co-up": {
+      "name": "Zakryte Xiangqi (Cờ úp)",
+      "desc": "Zagraj w wietnamskie zakryte Xiangqi: figury zaczynają zakryte i odsłaniają się po pierwszym ruchu. Z komputerem na 10 poziomach albo online ze znajomymi i nowymi przeciwnikami."
     }
   },
   "s": {

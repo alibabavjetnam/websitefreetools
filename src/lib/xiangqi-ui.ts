@@ -18,6 +18,28 @@ const BLK = ['', '將', '士', '象', '馬', '車', '砲', '卒'];
 interface XMove { from: number; to: number; cap: number; capHidden?: boolean; reveal?: boolean }
 type AnyPos = Position | DarkPosition;
 
+/** Gradient dùng chung: mặt gỗ bàn cờ, mặt quân ngà bóng, cạnh quân, vệt sáng, mặt lưng quân úp */
+const DEFS = `<defs>
+  <linearGradient id="xqWood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e2b8"/><stop offset=".55" stop-color="#efd29b"/><stop offset="1" stop-color="#e6c184"/></linearGradient>
+  <radialGradient id="xqFace" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#fffdf6"/><stop offset=".62" stop-color="#f7ead0"/><stop offset="1" stop-color="#e9d2a6"/></radialGradient>
+  <linearGradient id="xqEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b47a"/><stop offset="1" stop-color="#a67a43"/></linearGradient>
+  <radialGradient id="xqBackB" cx=".42" cy=".36" r=".75"><stop offset="0" stop-color="#5a7f8c"/><stop offset=".7" stop-color="#34525e"/><stop offset="1" stop-color="#243b45"/></radialGradient>
+  <radialGradient id="xqBackR" cx=".42" cy=".36" r=".75"><stop offset="0" stop-color="#d0574a"/><stop offset=".7" stop-color="#a3302a"/><stop offset="1" stop-color="#7c201d"/></radialGradient>
+  <linearGradient id="xqGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="xqSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2"/></filter>
+</defs>`;
+
+/** Vân gỗ mờ cố định (không ngẫu nhiên để bàn không "nhảy" khi vẽ lại) */
+function grain(): string {
+  let s = '';
+  for (let k = 0; k < 16; k++) {
+    const y = 18 + k * 39 + ((k * 37) % 13);
+    const a = 6 + ((k * 11) % 9), b = 5 + ((k * 7) % 8);
+    s += `<path d="M0 ${y} C ${W * 0.3} ${y - a}, ${W * 0.6} ${y + b}, ${W} ${y - 2}"/>`;
+  }
+  return `<g class="xq-grain">${s}</g>`;
+}
+
 function boardLines(px: (c: number) => number, py: (r: number) => number): string {
   let s = '';
   for (let r = 0; r < 10; r++) s += `<line x1="${px(0)}" y1="${py(r)}" x2="${px(8)}" y2="${py(r)}"/>`;
@@ -28,9 +50,38 @@ function boardLines(px: (c: number) => number, py: (r: number) => number): strin
   for (const r0 of [0, 7]) {
     s += `<line x1="${px(3)}" y1="${py(r0)}" x2="${px(5)}" y2="${py(r0 + 2)}"/><line x1="${px(5)}" y1="${py(r0)}" x2="${px(3)}" y2="${py(r0 + 2)}"/>`;
   }
-  s += `<rect class="xq-frame" x="${px(0) - 6}" y="${py(0) - 6}" width="${8 * CELL + 12}" height="${9 * CELL + 12}"/>`;
-  s += `<text class="xq-river" x="${px(2)}" y="${(py(4) + py(5)) / 2 + 9}" text-anchor="middle">楚 河</text><text class="xq-river" x="${px(6)}" y="${(py(4) + py(5)) / 2 + 9}" text-anchor="middle">漢 界</text>`;
+  // Dấu góc nhỏ ở vị trí Pháo và Tốt
+  const g = 5, l = 9;
+  const mark = (r: number, c: number): string => {
+    let m = '';
+    for (const dx of [-1, 1]) for (const dy of [-1, 1]) {
+      if ((c === 0 && dx < 0) || (c === 8 && dx > 0)) continue;
+      const x = px(c) + dx * g, y = py(r) + dy * g;
+      // px/py có thể đảo chiều khi xoay bàn: tính theo hướng thật trên màn hình
+      const sx = Math.sign(x - px(c)), sy = Math.sign(y - py(r));
+      m += `<path d="M${x} ${y + sy * l} V${y} H${x + sx * l}"/>`;
+    }
+    return m;
+  };
+  let marks = '';
+  for (const [r, c] of [[2, 1], [2, 7], [7, 1], [7, 7], [3, 0], [3, 2], [3, 4], [3, 6], [3, 8], [6, 0], [6, 2], [6, 4], [6, 6], [6, 8]]) marks += mark(r, c);
+  s += `<g class="xq-marks">${marks}</g>`;
+  const x0 = Math.min(px(0), px(8)), y0 = Math.min(py(0), py(9));
+  s += `<rect class="xq-frame" x="${x0 - 7}" y="${y0 - 7}" width="${8 * CELL + 14}" height="${9 * CELL + 14}" rx="2"/>`;
+  s += `<text class="xq-river" x="${PAD + 2 * CELL}" y="${PAD + 4.5 * CELL + 9}" text-anchor="middle">楚 河</text><text class="xq-river" x="${PAD + 6 * CELL}" y="${PAD + 4.5 * CELL + 9}" text-anchor="middle">漢 界</text>`;
   return s;
+}
+
+/** Một quân cờ nổi khối: bóng đổ, cạnh dày, mặt ngà bóng, vòng khắc màu phe, vệt sáng */
+function piece(x: number, y: number, cls: string, label: string, hidden: boolean): string {
+  return `<g class="${cls}">
+    <ellipse class="sh" cx="${x + 1}" cy="${y + 5}" rx="25" ry="23"/>
+    <circle class="edge" cx="${x}" cy="${y + 2.6}" r="25"/>
+    <circle class="face" cx="${x}" cy="${y}" r="24"/>
+    <circle class="ring" cx="${x}" cy="${y}" r="${hidden ? 21 : 19.5}"/>
+    ${hidden ? `<path class="emb" d="M${x} ${y - 7} L${x + 7} ${y} L${x} ${y + 7} L${x - 7} ${y} Z"/>` : `<text x="${x}" y="${y + 9}" text-anchor="middle">${label}</text>`}
+    <ellipse class="gloss" cx="${x - 5}" cy="${y - 11}" rx="14" ry="7"/>
+  </g>`;
 }
 
 export function mountXiangqi(id: string, variant: 'classic' | 'dark' = 'classic'): void {
@@ -96,17 +147,17 @@ export function mountXiangqi(id: string, variant: 'classic' | 'dark' = 'classic'
     const last = moves[moves.length - 1];
     const checkSq = pos.inCheck() ? pos.kingSq[pos.turn === 1 ? 0 : 1] : -1;
     const targets = new Set(legal.map((m) => m.to));
-    let s = `<rect class="xq-bg" width="${W}" height="${H}" rx="10"/><g class="xq-lines">${boardLines(px, py)}</g>`;
-    if (last) for (const q of [last.from, last.to]) s += `<rect class="xq-last" x="${px(q % 9) - 27}" y="${py(Math.floor(q / 9)) - 27}" width="54" height="54" rx="8"/>`;
+    let s = `${DEFS}<rect class="xq-bg" width="${W}" height="${H}" rx="12"/>${grain()}<g class="xq-lines">${boardLines(px, py)}</g>`;
+    if (last) for (const q of [last.from, last.to]) s += `<circle class="xq-last${q === last.to ? '' : ' from'}" cx="${px(q % 9)}" cy="${py(Math.floor(q / 9))}" r="${q === last.to ? 30 : 11}"/>`;
     for (let i = 0; i < 90; i++) {
       const v = pos.b[i], r = Math.floor(i / 9), c = i % 9;
       if (v) {
         const red = v > 0;
         const hid = hiddenAt(i);
         const cls = `xq-pc ${red ? 'red' : 'blk'}${hid ? ' hid' : ''}${i === sel ? ' sel' : ''}${i === checkSq ? ' check' : ''}`;
-        s += `<g class="${cls}"><circle cx="${px(c)}" cy="${py(r)}" r="25"/><circle class="in" cx="${px(c)}" cy="${py(r)}" r="20"/>${hid ? `<circle class="hid-dot" cx="${px(c)}" cy="${py(r)}" r="5"/>` : `<text x="${px(c)}" y="${py(r) + 9}" text-anchor="middle">${(red ? RED : BLK)[Math.abs(v)]}</text>`}</g>`;
+        s += piece(px(c), py(r), cls, (red ? RED : BLK)[Math.abs(v)], hid);
       }
-      if (targets.has(i)) s += v ? `<circle class="xq-cap" cx="${px(c)}" cy="${py(r)}" r="29"/>` : `<circle class="xq-dot" cx="${px(c)}" cy="${py(r)}" r="8"/>`;
+      if (targets.has(i)) s += v ? `<circle class="xq-cap" cx="${px(c)}" cy="${py(r)}" r="28.5"/>` : `<circle class="xq-dot" cx="${px(c)}" cy="${py(r)}" r="7"/>`;
       s += `<circle class="xq-hit" data-i="${i}" cx="${px(c)}" cy="${py(r)}" r="28"/>`;
     }
     svg.innerHTML = s;

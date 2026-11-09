@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "문제 {i}/{n}",
     "lib.game.mmDone": "완료!",
     "lib.game.mmLost": "목숨이 없습니다 — 모든 타일을 공개합니다.",
-    "lib.game.mmNote": "시작을 누르면 타일이 {s}초 동안 보였다가 가려집니다. 각 타일의 모양과 색을 기억한 뒤, 제시된 모양과 일치하는 타일을 고르세요. {l}번을 넘게 틀리면 레벨 실패입니다."
+    "lib.game.mmNote": "시작을 누르면 타일이 {s}초 동안 보였다가 가려집니다. 각 타일의 모양과 색을 기억한 뒤, 제시된 모양과 일치하는 타일을 고르세요. {l}번을 넘게 틀리면 레벨 실패입니다.",
+    "lib.online.guest": "손님",
+    "lib.online.connFail": "온라인 대국 서버에 연결하지 못했습니다. 인터넷 연결을 확인하고(또는 광고 차단기를 끄고) 다시 시도를 누르세요.",
+    "lib.online.tableGone": "테이블을 연 사람이 나갔습니다. 다른 테이블을 고르거나 새로 여세요.",
+    "lib.online.drawDeclined": "상대가 무승부를 거절했습니다.",
+    "lib.online.opponent": "상대",
+    "lib.online.copied": "링크를 복사했습니다. 친구에게 보내 함께 두세요.",
+    "lib.online.waitingFor": "{n}초째 대기 중",
+    "lib.online.drawAgreed": "두 사람이 무승부에 합의했습니다.",
+    "lib.online.draw": "무승부입니다.",
+    "lib.online.oppResigned": "상대가 기권했습니다 — 승리!",
+    "lib.online.youResigned": "기권했습니다.",
+    "lib.online.youWin": "승리했습니다!",
+    "lib.online.youLose": "패배했습니다.",
+    "lib.online.connecting": "온라인 대국 서버에 연결하는 중…",
+    "lib.online.retry": "다시 시도",
+    "lib.online.quick": "상대 찾기",
+    "lib.online.createPublic": "공개 테이블 열기",
+    "lib.online.createPrivate": "비공개 테이블을 열고 친구 초대",
+    "lib.online.modesHint": "공개 테이블은 목록에 나타나 누구나 들어올 수 있습니다. 비공개 테이블은 초대 링크가 있는 사람만 들어올 수 있습니다.",
+    "lib.online.openTables": "대기 중인 공개 테이블",
+    "lib.online.join": "입장",
+    "lib.online.noTables": "아직 대기 중인 테이블이 없습니다. \"상대 찾기\"를 누르거나 새 테이블을 여세요.",
+    "lib.online.privacy": "수는 무료 공개 MQTT 서버를 거쳐 전달되며 테이블마다 암호화됩니다. 서버는 대국을 저장하지 않습니다. Google로 로그인하면 끝난 대국을 내 Drive에 저장할 수 있습니다.",
+    "lib.online.waitingPublic": "공개 테이블: 상대가 들어오기를 기다리는 중…",
+    "lib.online.waitingPrivate": "비공개 테이블: 이 링크를 친구에게 보내세요. 친구가 열면 대국이 시작됩니다.",
+    "lib.online.leave": "테이블 나가기",
+    "lib.online.full": "이 테이블에는 이미 2명이 있습니다. 다른 테이블을 찾거나 새로 여세요.",
+    "lib.online.backToList": "테이블 목록으로",
+    "lib.online.you": "나",
+    "lib.online.oppLeft": "테이블을 나감",
+    "lib.online.oppOffline": "연결 끊김",
+    "lib.online.drawOffer": "상대가 무승부를 제안합니다.",
+    "lib.online.accept": "수락",
+    "lib.online.decline": "거절",
+    "lib.online.drawSent": "무승부 제안함…",
+    "lib.online.offerDraw": "무승부 제안",
+    "lib.online.resignConfirm": "한 번 더 누르면 기권합니다",
+    "lib.online.resign": "기권",
+    "lib.online.againSent": "상대의 동의를 기다리는 중…",
+    "lib.online.againAccept": "상대가 재대결을 원합니다 — 한 판 더",
+    "lib.online.again": "한 판 더 (색 바꾸기)",
+    "lib.online.inviteLink": "초대 링크",
+    "lib.online.copy": "링크 복사",
+    "lib.online.share": "공유",
+    "lib.online.saved": "대국을 Google Drive에 저장했습니다(WFTools/Games 폴더).",
+    "lib.online.saving": "대국을 Google Drive에 저장하는 중…",
+    "lib.online.saveFail": "아직 Drive에 저장하지 못했습니다.",
+    "lib.online.save": "대국을 Google Drive에 저장",
+    "lib.game.darkNote": "덮은 장기(Cờ úp, 베트남식 샹치): 양쪽 장수는 앞면으로, 나머지 기물은 섞어서 뒷면으로 놓습니다. 뒷면 기물은 그 자리에 원래 놓이는 기물처럼 움직이고(차 자리면 차처럼), 움직인 뒤 뒤집혀 그때부터는 진짜 기물로 움직입니다. 사와 상은 판 어디로든 갈 수 있습니다. 외통수를 당하거나 둘 수가 없으면 집니다.",
+    "lib.game.darkBoard": "덮은 장기 판",
+    "lib.online.red": "홍",
+    "lib.online.black": "흑",
+    "lib.game.captured": "잡힌 기물",
+    "lib.online.pickTable": "옆 패널에서 상대를 찾거나 테이블을 열어 시작하세요.",
+    "lib.online.theirTurn": "상대 차례",
+    "lib.online.white": "백",
+    "lib.online.goNote": "{n}×{n} 바둑판, 흑이 먼저 두고 백은 덤 {k}을 받습니다. 계가는 면적 방식이며, 통과하기 전에 죽은 돌을 모두 들어내세요. 두 사람이 연달아 통과하면 대국이 끝납니다.",
+    "lib.online.boardSize": "바둑판 크기",
+    "lib.online.oppPassed": "상대가 통과했습니다. 나도 통과하면 대국이 끝나고 계가합니다.",
+    "lib.online.modeAi": "컴퓨터와 대국",
+    "lib.online.modeOnline": "온라인 대국"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "1-9와 A-G를 사용하는 큰 16x16 스도쿠. 쉬움부터 어려움까지 10단계, 메모와 힌트 제공."
     },
     "chess": {
-      "name": "컴퓨터와 체스",
-      "desc": "쉬움부터 어려움까지 10단계로 컴퓨터와 체스를 두세요. 캐슬링, 앙파상, 프로모션 지원."
+      "name": "체스",
+      "desc": "컴퓨터와 10단계로 두거나 온라인으로: 링크로 친구를 초대하거나 새 상대와 대국하세요. 캐슬링, 앙파상, 프로모션 지원."
     },
     "xiangqi": {
-      "name": "컴퓨터와 샹치",
-      "desc": "컴퓨터와 중국 장기(샹치)를 10단계로 즐기세요. 마의 다리 막기, 상의 눈, 포의 잡기, 장군 마주보기 규칙을 지원합니다."
+      "name": "샹치(중국 장기)",
+      "desc": "컴퓨터와 10단계로 두거나 온라인으로: 링크로 친구를 초대하거나 새 상대와 대국하세요. 마의 다리, 상의 눈, 포 넘기, 장수 대면 금지 등 규칙 완비."
     },
     "go-game": {
-      "name": "컴퓨터와 바둑",
-      "desc": "5x5, 7x7, 9x9 바둑판에서 10단계로 컴퓨터와 바둑을 두세요. 대국이 끝나면 자동으로 계가합니다."
+      "name": "바둑",
+      "desc": "컴퓨터와 10단계로 두거나 온라인으로 9줄, 13줄, 19줄 판에서 친구나 새 상대와 대국하세요. 끝나면 자동으로 계가합니다."
     },
     "memory-shapes": {
       "name": "모양·색깔 기억 게임",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "온라인 데스크톱",
       "desc": "브라우저 속 컴퓨터 데스크톱: 파일 관리자, Notepad, 이미지·PDF 뷰어, 계산기, 달력, 휴지통. 파일은 Google 드라이브에 저장됩니다."
+    },
+    "co-up": {
+      "name": "덮은 장기(Cờ úp)",
+      "desc": "베트남식 덮은 샹치: 기물이 뒷면으로 시작해 처음 움직이면 뒤집힙니다. 컴퓨터와 10단계로, 또는 온라인으로 친구나 새 상대와 둘 수 있습니다."
     }
   },
   "s": {

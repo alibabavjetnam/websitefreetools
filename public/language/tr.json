@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Soru {i}/{n}",
     "lib.game.mmDone": "Bitti!",
     "lib.game.mmLost": "Canınız bitti — tüm kareler açıldı.",
-    "lib.game.mmNote": "Başla'ya basın: kareler {s} saniye gösterilir, sonra gizlenir. Her karenin şeklini ve rengini aklınızda tutun, sonra gösterilen şekle uyan kareyi seçin. {l} hatadan fazlası seviyeyi geçersiz kılar."
+    "lib.game.mmNote": "Başla'ya basın: kareler {s} saniye gösterilir, sonra gizlenir. Her karenin şeklini ve rengini aklınızda tutun, sonra gösterilen şekle uyan kareyi seçin. {l} hatadan fazlası seviyeyi geçersiz kılar.",
+    "lib.online.guest": "Misafir",
+    "lib.online.connFail": "Çevrim içi oyun sunucusuna bağlanılamadı. Bağlantını kontrol et (ya da reklam engelleyiciyi kapat), sonra Tekrar dene'ye tıkla.",
+    "lib.online.tableGone": "Bu masayı açan kişi ayrıldı. Başka bir masa seç ya da yeni bir masa aç.",
+    "lib.online.drawDeclined": "Rakibin beraberliği kabul etmedi.",
+    "lib.online.opponent": "Rakip",
+    "lib.online.copied": "Bağlantı kopyalandı. Birlikte oynamak için arkadaşına gönder.",
+    "lib.online.waitingFor": "{n} sn bekliyor",
+    "lib.online.drawAgreed": "İki oyuncu beraberlikte anlaştı.",
+    "lib.online.draw": "Oyun berabere bitti.",
+    "lib.online.oppResigned": "Rakibin pes etti — kazandın!",
+    "lib.online.youResigned": "Pes ettin.",
+    "lib.online.youWin": "Kazandın!",
+    "lib.online.youLose": "Kaybettin.",
+    "lib.online.connecting": "Çevrim içi oyun sunucusuna bağlanılıyor…",
+    "lib.online.retry": "Tekrar dene",
+    "lib.online.quick": "Rakip bul",
+    "lib.online.createPublic": "Herkese açık masa aç",
+    "lib.online.createPrivate": "Özel masa aç ve arkadaşını davet et",
+    "lib.online.modesHint": "Herkese açık masalar listede görünür, herkes katılabilir. Özel masalara yalnızca davet bağlantısıyla girilir.",
+    "lib.online.openTables": "Bekleyen açık masalar",
+    "lib.online.join": "Katıl",
+    "lib.online.noTables": "Henüz bekleyen masa yok. \"Rakip bul\"a tıkla ya da yeni bir masa aç.",
+    "lib.online.privacy": "Hamleler ücretsiz, herkese açık bir MQTT sunucusu üzerinden iletilir ve her masa için şifrelenir; sunucu oyunları saklamaz. Biten oyunları Drive'ına kaydetmek için Google ile giriş yap.",
+    "lib.online.waitingPublic": "Herkese açık masa: birinin katılması bekleniyor…",
+    "lib.online.waitingPrivate": "Özel masa: bu bağlantıyı arkadaşına gönder. O açınca oyun başlar.",
+    "lib.online.leave": "Masadan ayrıl",
+    "lib.online.full": "Bu masada zaten 2 oyuncu var. Başka bir masa bul ya da yeni bir masa aç.",
+    "lib.online.backToList": "Masa listesine dön",
+    "lib.online.you": "Sen",
+    "lib.online.oppLeft": "masadan ayrıldı",
+    "lib.online.oppOffline": "bağlantı koptu",
+    "lib.online.drawOffer": "Rakibin beraberlik teklif ediyor.",
+    "lib.online.accept": "Kabul et",
+    "lib.online.decline": "Reddet",
+    "lib.online.drawSent": "Beraberlik teklif edildi…",
+    "lib.online.offerDraw": "Beraberlik teklif et",
+    "lib.online.resignConfirm": "Pes etmek için bir kez daha tıkla",
+    "lib.online.resign": "Pes et",
+    "lib.online.againSent": "Rakibinin kabul etmesi bekleniyor…",
+    "lib.online.againAccept": "Rakibin rövanş istiyor — Yeniden oyna",
+    "lib.online.again": "Yeniden oyna (renkleri değiştir)",
+    "lib.online.inviteLink": "Davet bağlantısı",
+    "lib.online.copy": "Bağlantıyı kopyala",
+    "lib.online.share": "Paylaş",
+    "lib.online.saved": "Oyun Google Drive'a kaydedildi (WFTools/Games klasörü).",
+    "lib.online.saving": "Oyun Google Drive'a kaydediliyor…",
+    "lib.online.saveFail": "Oyun henüz Drive'a kaydedilemedi.",
+    "lib.online.save": "Oyunu Google Drive'a kaydet",
+    "lib.game.darkNote": "Kapalı Xiangqi (Cờ úp): iki General açık başlar; diğer taşlar karıştırılıp kapalı dizilir. Kapalı taş, normalde o karede başlayan taş gibi hareket eder (Kale karesindeyse Kale gibi), hamleden sonra açılır ve o andan itibaren gerçek taşı gibi oynar. Danışmanlar ve Filler tahtanın her yerine gidebilir. Mat olan ya da hamlesi kalmayan kaybeder.",
+    "lib.game.darkBoard": "Kapalı Xiangqi tahtası",
+    "lib.online.red": "Kırmızı",
+    "lib.online.black": "Siyah",
+    "lib.game.captured": "Alınan taşlar",
+    "lib.online.pickTable": "Başlamak için yandaki panelden rakip bul ya da masa aç.",
+    "lib.online.theirTurn": "Sıra rakipte",
+    "lib.online.white": "Beyaz",
+    "lib.online.goNote": "{n}×{n} tahta, Siyah başlar, Beyaz {k} komi alır. Alan sayımı yapılır; pas geçmeden önce tüm ölü taşları al. İki oyuncu art arda pas geçince oyun biter.",
+    "lib.online.boardSize": "Tahta boyutu",
+    "lib.online.oppPassed": "Rakibin pas geçti. Sen de pas geçersen oyun biter ve sayılır.",
+    "lib.online.modeAi": "Bilgisayara karşı oyna",
+    "lib.online.modeOnline": "Çevrim içi oyna"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "1-9 ve A-G kullanan büyük 16x16 Sudoku, kolaydan zora 10 seviye, notlar ve ipuçlarıyla."
     },
     "chess": {
-      "name": "Bilgisayara karşı Satranç",
-      "desc": "Kolaydan zora 10 seviyede bilgisayara karşı satranç oynayın; rok, en passant ve terfi dahil."
+      "name": "Satranç",
+      "desc": "Bilgisayara karşı 10 seviyede ya da çevrim içi satranç oyna: arkadaşını bağlantıyla davet et veya yeni biriyle eşleş. Rok, geçerken alma ve terfi dahil."
     },
     "xiangqi": {
-      "name": "Bilgisayara karşı Xiangqi",
-      "desc": "Bilgisayara karşı Çin satrancı (xiangqi) oynayın, 10 seviye; at ayağı engeli, fil gözü, top ile alma ve uçan general kuralı dahil."
+      "name": "Xiangqi (Çin satrancı)",
+      "desc": "Bilgisayara karşı 10 seviyede ya da çevrim içi Xiangqi oyna: arkadaşını bağlantıyla davet et veya yeni biriyle eşleş. Tam kurallar: at bacağı, fil gözü, top atlaması, generallerin karşılaşmaması."
     },
     "go-game": {
-      "name": "Bilgisayara karşı Go",
-      "desc": "5x5, 7x7 ve 9x9 tahtalarda bilgisayara karşı Go oynayın, 10 seviye; oyun sonunda otomatik puanlama."
+      "name": "Go",
+      "desc": "Bilgisayara karşı 10 seviyede ya da çevrim içi 9x9, 13x13 ve 19x19 tahtalarda arkadaşınla veya yeni bir rakiple Go oyna. Oyun sonunda otomatik sayım."
     },
     "memory-shapes": {
       "name": "Şekil ve Renk Hafızası",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Çevrimiçi masaüstü",
       "desc": "Tarayıcınızda bir bilgisayar masaüstü: dosya yöneticisi, Notepad, resim ve PDF görüntüleyici, hesap makinesi, takvim ve çöp kutusu. Dosyalar Google Drive'ınıza kaydedilir."
+    },
+    "co-up": {
+      "name": "Kapalı Xiangqi (Cờ úp)",
+      "desc": "Vietnam'ın kapalı Xiangqi oyununu oyna: taşlar kapalı başlar, ilk hamleden sonra açılır. Bilgisayara karşı 10 seviyede ya da çevrim içi arkadaşlarınla ve yeni rakiplerle."
     }
   },
   "s": {

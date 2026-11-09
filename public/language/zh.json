@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "第 {i}/{n} 题",
     "lib.game.mmDone": "完成！",
     "lib.game.mmLost": "生命用完 — 所有格子已翻开。",
-    "lib.game.mmNote": "点击“开始”：格子会显示 {s} 秒后盖住。请记住每格的形状和颜色，然后选出与所给图形相同的格子。错误超过 {l} 次则本关失败。"
+    "lib.game.mmNote": "点击“开始”：格子会显示 {s} 秒后盖住。请记住每格的形状和颜色，然后选出与所给图形相同的格子。错误超过 {l} 次则本关失败。",
+    "lib.online.guest": "访客",
+    "lib.online.connFail": "无法连接在线对战服务器。请检查网络（或关闭广告拦截插件），然后点击“重试”。",
+    "lib.online.tableGone": "开桌的玩家已离开。请选择其他牌桌或开一张新桌。",
+    "lib.online.drawDeclined": "对手不同意和棋。",
+    "lib.online.opponent": "对手",
+    "lib.online.copied": "已复制链接。发给朋友即可一起下棋。",
+    "lib.online.waitingFor": "已等待 {n} 秒",
+    "lib.online.drawAgreed": "双方同意和棋。",
+    "lib.online.draw": "本局和棋。",
+    "lib.online.oppResigned": "对手认输——你赢了！",
+    "lib.online.youResigned": "你已认输。",
+    "lib.online.youWin": "你赢了！",
+    "lib.online.youLose": "你输了。",
+    "lib.online.connecting": "正在连接在线对战服务器…",
+    "lib.online.retry": "重试",
+    "lib.online.quick": "寻找对手",
+    "lib.online.createPublic": "开公开桌",
+    "lib.online.createPrivate": "开私人桌并邀请朋友",
+    "lib.online.modesHint": "公开桌会显示在列表中，任何人都能加入。私人桌只有拿到邀请链接的人才能加入。",
+    "lib.online.openTables": "等待中的公开桌",
+    "lib.online.join": "加入",
+    "lib.online.noTables": "暂时没有等待中的牌桌。点击“寻找对手”或开一张新桌。",
+    "lib.online.privacy": "棋步通过免费的公共 MQTT 服务器传送，并按牌桌加密；服务器不保存对局。用 Google 登录后可把下完的棋局保存到你的 Drive。",
+    "lib.online.waitingPublic": "公开桌：正在等待其他人加入…",
+    "lib.online.waitingPrivate": "私人桌：把这个链接发给朋友。朋友打开后对局开始。",
+    "lib.online.leave": "离开牌桌",
+    "lib.online.full": "这张桌已有 2 名玩家。请找其他牌桌或开一张新桌。",
+    "lib.online.backToList": "返回牌桌列表",
+    "lib.online.you": "你",
+    "lib.online.oppLeft": "已离开牌桌",
+    "lib.online.oppOffline": "已断开连接",
+    "lib.online.drawOffer": "对手提出和棋。",
+    "lib.online.accept": "同意",
+    "lib.online.decline": "拒绝",
+    "lib.online.drawSent": "已提出和棋…",
+    "lib.online.offerDraw": "提议和棋",
+    "lib.online.resignConfirm": "再点一次即认输",
+    "lib.online.resign": "认输",
+    "lib.online.againSent": "正在等待对手同意…",
+    "lib.online.againAccept": "对手想再来一局——再下一局",
+    "lib.online.again": "再下一局（交换颜色）",
+    "lib.online.inviteLink": "邀请链接",
+    "lib.online.copy": "复制链接",
+    "lib.online.share": "分享",
+    "lib.online.saved": "棋局已保存到 Google Drive（WFTools/Games 文件夹）。",
+    "lib.online.saving": "正在把棋局保存到 Google Drive…",
+    "lib.online.saveFail": "暂时未能保存到 Drive。",
+    "lib.online.save": "把棋局保存到 Google Drive",
+    "lib.game.darkNote": "揭棋（越南暗棋）：双方将帅明摆，其余棋子打乱后扣放。暗子按所在位置原本棋子的走法走（在车的位置就按车走），走完后翻开，此后按真实棋子走。士和象可走遍全盘。被将死或无棋可走者负。",
+    "lib.game.darkBoard": "揭棋棋盘",
+    "lib.online.red": "红",
+    "lib.online.black": "黑",
+    "lib.game.captured": "被吃的棋子",
+    "lib.online.pickTable": "在旁边寻找对手或开桌即可开始。",
+    "lib.online.theirTurn": "轮到对手",
+    "lib.online.white": "白",
+    "lib.online.goNote": "{n}×{n} 棋盘，黑先，白贴目 {k}。按数子法（面积）计分；停着前请提掉所有死子。双方连续停着即终局。",
+    "lib.online.boardSize": "棋盘大小",
+    "lib.online.oppPassed": "对手停着了。如果你也停着，对局结束并计分。",
+    "lib.online.modeAi": "人机对战",
+    "lib.online.modeOnline": "在线对战"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "使用 1-9 和 A-G 的大型 16x16 数独，10 个关卡由易到难，支持笔记和提示。"
     },
     "chess": {
-      "name": "人机国际象棋",
-      "desc": "与电脑对弈，10 个难度由易到难，支持王车易位、吃过路兵和升变。"
+      "name": "国际象棋",
+      "desc": "与电脑进行 10 个难度的对战，或在线下棋：用链接邀请朋友，或与新对手匹配。支持王车易位、吃过路兵和升变。"
     },
     "xiangqi": {
-      "name": "人机中国象棋",
-      "desc": "与电脑对弈，10 个难度由易到难，支持蹩马腿、塞象眼、炮隔子吃和将帅不能对面。"
+      "name": "中国象棋",
+      "desc": "与电脑进行 10 个难度的对战，或在线下棋：用链接邀请朋友，或与新对手匹配。规则完整：蹩马腿、塞象眼、炮翻山、将帅不照面。"
     },
     "go-game": {
-      "name": "人机围棋",
-      "desc": "在 5x5、7x7 和 9x9 棋盘上与电脑对弈，10 个难度由易到难，终局自动计分。"
+      "name": "围棋",
+      "desc": "与电脑进行 10 个难度的对战，或在线在 9 路、13 路、19 路棋盘上与朋友或新对手对弈。终局自动计分。"
     },
     "memory-shapes": {
       "name": "图形颜色记忆",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "在线桌面",
       "desc": "浏览器中的电脑桌面：文件管理、Notepad、图片和 PDF 查看器、计算器、日历和回收站。文件保存到您的 Google 云端硬盘。"
+    },
+    "co-up": {
+      "name": "揭棋（越南暗棋）",
+      "desc": "越南揭棋：棋子开局扣放，第一次走动后翻开。可与电脑进行 10 个难度的对战，或在线与朋友、新对手对弈。"
     }
   },
   "s": {

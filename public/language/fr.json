@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Question {i}/{n}",
     "lib.game.mmDone": "Terminé !",
     "lib.game.mmLost": "Plus de vies — toutes les tuiles sont révélées.",
-    "lib.game.mmNote": "Appuyez sur Démarrer : les tuiles s'affichent pendant {s} secondes, puis se cachent. Retenez la forme et la couleur de chaque tuile, puis choisissez celle qui correspond à la forme montrée. Plus de {l} erreurs et le niveau est perdu."
+    "lib.game.mmNote": "Appuyez sur Démarrer : les tuiles s'affichent pendant {s} secondes, puis se cachent. Retenez la forme et la couleur de chaque tuile, puis choisissez celle qui correspond à la forme montrée. Plus de {l} erreurs et le niveau est perdu.",
+    "lib.online.guest": "Invité",
+    "lib.online.connFail": "Impossible de se connecter au serveur de jeu en ligne. Vérifiez votre connexion (ou désactivez le bloqueur de publicités), puis cliquez sur Réessayer.",
+    "lib.online.tableGone": "La personne qui a ouvert cette table est partie. Choisissez une autre table ou ouvrez-en une nouvelle.",
+    "lib.online.drawDeclined": "Votre adversaire a refusé la nulle.",
+    "lib.online.opponent": "Adversaire",
+    "lib.online.copied": "Lien copié. Envoyez-le à votre ami pour jouer ensemble.",
+    "lib.online.waitingFor": "en attente depuis {n} s",
+    "lib.online.drawAgreed": "Les deux joueurs ont accepté la nulle.",
+    "lib.online.draw": "La partie est nulle.",
+    "lib.online.oppResigned": "Votre adversaire a abandonné — vous gagnez !",
+    "lib.online.youResigned": "Vous avez abandonné.",
+    "lib.online.youWin": "Vous gagnez !",
+    "lib.online.youLose": "Vous perdez.",
+    "lib.online.connecting": "Connexion au serveur de jeu en ligne…",
+    "lib.online.retry": "Réessayer",
+    "lib.online.quick": "Trouver un adversaire",
+    "lib.online.createPublic": "Ouvrir une table publique",
+    "lib.online.createPrivate": "Ouvrir une table privée et inviter un ami",
+    "lib.online.modesHint": "Les tables publiques apparaissent dans la liste et tout le monde peut les rejoindre. Les tables privées ne sont accessibles qu'avec le lien d'invitation.",
+    "lib.online.openTables": "Tables publiques en attente",
+    "lib.online.join": "Rejoindre",
+    "lib.online.noTables": "Aucune table en attente pour l'instant. Cliquez sur \"Trouver un adversaire\" ou ouvrez une nouvelle table.",
+    "lib.online.privacy": "Les coups passent par un serveur MQTT public gratuit et sont chiffrés pour chaque table ; le serveur ne conserve pas vos parties. Connectez-vous avec Google pour enregistrer les parties terminées dans votre Drive.",
+    "lib.online.waitingPublic": "Table publique : en attente d'un joueur…",
+    "lib.online.waitingPrivate": "Table privée : envoyez ce lien à votre ami. La partie commence dès qu'il l'ouvre.",
+    "lib.online.leave": "Quitter la table",
+    "lib.online.full": "Cette table a déjà 2 joueurs. Cherchez une autre table ou ouvrez-en une nouvelle.",
+    "lib.online.backToList": "Retour à la liste des tables",
+    "lib.online.you": "Vous",
+    "lib.online.oppLeft": "a quitté la table",
+    "lib.online.oppOffline": "déconnecté",
+    "lib.online.drawOffer": "Votre adversaire propose la nulle.",
+    "lib.online.accept": "Accepter",
+    "lib.online.decline": "Refuser",
+    "lib.online.drawSent": "Nulle proposée…",
+    "lib.online.offerDraw": "Proposer la nulle",
+    "lib.online.resignConfirm": "Cliquez encore pour abandonner",
+    "lib.online.resign": "Abandonner",
+    "lib.online.againSent": "En attente de l'accord de votre adversaire…",
+    "lib.online.againAccept": "Votre adversaire veut une revanche — Rejouer",
+    "lib.online.again": "Rejouer (changer de couleur)",
+    "lib.online.inviteLink": "Lien d'invitation",
+    "lib.online.copy": "Copier le lien",
+    "lib.online.share": "Partager",
+    "lib.online.saved": "Partie enregistrée dans Google Drive (dossier WFTools/Games).",
+    "lib.online.saving": "Enregistrement de la partie dans Google Drive…",
+    "lib.online.saveFail": "La partie n'a pas encore pu être enregistrée dans Drive.",
+    "lib.online.save": "Enregistrer la partie dans Google Drive",
+    "lib.game.darkNote": "Xiangqi caché (Cờ úp) : les deux Généraux commencent face visible, toutes les autres pièces sont mélangées et posées face cachée. Une pièce cachée se déplace comme la pièce qui commence normalement sur sa case (sur la case d'un Char, elle se déplace comme un Char), puis elle est retournée et se déplace ensuite comme sa vraie pièce. Les Conseillers et les Éléphants peuvent aller partout sur l'échiquier. Être mat ou n'avoir plus aucun coup fait perdre.",
+    "lib.game.darkBoard": "Échiquier de Xiangqi caché",
+    "lib.online.red": "Rouge",
+    "lib.online.black": "Noir",
+    "lib.game.captured": "Pièces prises",
+    "lib.online.pickTable": "Trouvez un adversaire ou ouvrez une table sur le côté pour commencer.",
+    "lib.online.theirTurn": "Au tour de l'adversaire",
+    "lib.online.white": "Blanc",
+    "lib.online.goNote": "Goban de {n}×{n}, Noir commence, Blanc reçoit {k} de komi. Décompte par territoire et pierres ; capturez toutes les pierres mortes avant de passer. La partie s'arrête quand les deux joueurs passent à la suite.",
+    "lib.online.boardSize": "Taille du goban",
+    "lib.online.oppPassed": "Votre adversaire a passé. Si vous passez aussi, la partie se termine et est comptée.",
+    "lib.online.modeAi": "Jouer contre l'ordinateur",
+    "lib.online.modeOnline": "Jouer en ligne"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Grand Sudoku 16x16 avec 1-9 et A-G, 10 niveaux du facile au difficile, avec notes et indices."
     },
     "chess": {
-      "name": "Échecs contre l'ordinateur",
-      "desc": "Jouez aux échecs contre l'ordinateur sur 10 niveaux, du facile au difficile, avec roque, prise en passant et promotion."
+      "name": "Échecs",
+      "desc": "Jouez aux échecs contre l'ordinateur sur 10 niveaux ou en ligne : invitez un ami par lien ou affrontez quelqu'un de nouveau. Roque, prise en passant et promotion inclus."
     },
     "xiangqi": {
-      "name": "Xiangqi contre l'ordinateur",
-      "desc": "Jouez aux échecs chinois (xiangqi) contre l'ordinateur sur 10 niveaux, avec blocage du cheval, œil de l'éléphant, prises du canon et règle des généraux face à face."
+      "name": "Xiangqi (échecs chinois)",
+      "desc": "Jouez au Xiangqi contre l'ordinateur sur 10 niveaux ou en ligne : invitez un ami par lien ou affrontez quelqu'un de nouveau. Règles complètes : jambe du cheval, œil de l'éléphant, saut du canon, généraux face à face."
     },
     "go-game": {
-      "name": "Go contre l'ordinateur",
-      "desc": "Jouez au Go contre l'ordinateur sur des plateaux 5x5, 7x7 et 9x9, sur 10 niveaux, avec décompte automatique à la fin."
+      "name": "Go",
+      "desc": "Jouez au Go contre l'ordinateur sur 10 niveaux ou en ligne sur des gobans 9x9, 13x13 et 19x19 avec un ami ou un nouvel adversaire. Décompte automatique en fin de partie."
     },
     "memory-shapes": {
       "name": "Mémoire des formes et couleurs",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Bureau en ligne",
       "desc": "Un bureau d'ordinateur dans votre navigateur : gestionnaire de fichiers, Notepad, visionneuse d'images et de PDF, calculatrice, calendrier et corbeille. Les fichiers sont enregistrés dans votre Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi caché (Cờ úp)",
+      "desc": "Jouez au Xiangqi caché vietnamien : les pièces commencent face cachée et se retournent après leur premier coup. Contre l'ordinateur sur 10 niveaux ou en ligne avec des amis ou de nouveaux adversaires."
     }
   },
   "s": {

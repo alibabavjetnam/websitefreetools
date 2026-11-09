@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Domanda {i}/{n}",
     "lib.game.mmDone": "Fatto!",
     "lib.game.mmLost": "Vite esaurite — ora tutte le tessere sono scoperte.",
-    "lib.game.mmNote": "Premi Inizia: le tessere vengono mostrate per {s} secondi, poi nascoste. Ricorda forma e colore di ogni tessera, poi scegli quella che corrisponde alla forma mostrata. Più di {l} errori e il livello è fallito."
+    "lib.game.mmNote": "Premi Inizia: le tessere vengono mostrate per {s} secondi, poi nascoste. Ricorda forma e colore di ogni tessera, poi scegli quella che corrisponde alla forma mostrata. Più di {l} errori e il livello è fallito.",
+    "lib.online.guest": "Ospite",
+    "lib.online.connFail": "Impossibile collegarsi al server di gioco online. Controlla la connessione (o disattiva il blocco annunci), poi fai clic su Riprova.",
+    "lib.online.tableGone": "Chi ha aperto questo tavolo se n'è andato. Scegli un altro tavolo o aprine uno nuovo.",
+    "lib.online.drawDeclined": "L'avversario ha rifiutato la patta.",
+    "lib.online.opponent": "Avversario",
+    "lib.online.copied": "Link copiato. Mandalo al tuo amico per giocare insieme.",
+    "lib.online.waitingFor": "in attesa da {n} s",
+    "lib.online.drawAgreed": "Entrambi i giocatori hanno accettato la patta.",
+    "lib.online.draw": "La partita è patta.",
+    "lib.online.oppResigned": "L'avversario si è arreso — hai vinto!",
+    "lib.online.youResigned": "Ti sei arreso.",
+    "lib.online.youWin": "Hai vinto!",
+    "lib.online.youLose": "Hai perso.",
+    "lib.online.connecting": "Connessione al server di gioco online…",
+    "lib.online.retry": "Riprova",
+    "lib.online.quick": "Trova un avversario",
+    "lib.online.createPublic": "Apri un tavolo pubblico",
+    "lib.online.createPrivate": "Apri un tavolo privato e invita un amico",
+    "lib.online.modesHint": "I tavoli pubblici compaiono nell'elenco e chiunque può entrare. Ai tavoli privati si accede solo con il link d'invito.",
+    "lib.online.openTables": "Tavoli pubblici in attesa",
+    "lib.online.join": "Entra",
+    "lib.online.noTables": "Nessun tavolo in attesa per ora. Fai clic su \"Trova un avversario\" o apri un tavolo nuovo.",
+    "lib.online.privacy": "Le mosse passano da un server MQTT pubblico gratuito e sono cifrate per ogni tavolo; il server non conserva le partite. Accedi con Google per salvare le partite finite nel tuo Drive.",
+    "lib.online.waitingPublic": "Tavolo pubblico: in attesa di un giocatore…",
+    "lib.online.waitingPrivate": "Tavolo privato: manda questo link al tuo amico. La partita inizia quando lo apre.",
+    "lib.online.leave": "Lascia il tavolo",
+    "lib.online.full": "Questo tavolo ha già 2 giocatori. Cerca un altro tavolo o aprine uno nuovo.",
+    "lib.online.backToList": "Torna all'elenco dei tavoli",
+    "lib.online.you": "Tu",
+    "lib.online.oppLeft": "ha lasciato il tavolo",
+    "lib.online.oppOffline": "disconnesso",
+    "lib.online.drawOffer": "L'avversario propone la patta.",
+    "lib.online.accept": "Accetta",
+    "lib.online.decline": "Rifiuta",
+    "lib.online.drawSent": "Patta proposta…",
+    "lib.online.offerDraw": "Proponi patta",
+    "lib.online.resignConfirm": "Fai clic di nuovo per arrenderti",
+    "lib.online.resign": "Arrenditi",
+    "lib.online.againSent": "In attesa che l'avversario accetti…",
+    "lib.online.againAccept": "L'avversario vuole la rivincita — Gioca ancora",
+    "lib.online.again": "Gioca ancora (scambia colori)",
+    "lib.online.inviteLink": "Link d'invito",
+    "lib.online.copy": "Copia link",
+    "lib.online.share": "Condividi",
+    "lib.online.saved": "Partita salvata in Google Drive (cartella WFTools/Games).",
+    "lib.online.saving": "Salvataggio della partita in Google Drive…",
+    "lib.online.saveFail": "Non è stato ancora possibile salvare la partita in Drive.",
+    "lib.online.save": "Salva partita in Google Drive",
+    "lib.game.darkNote": "Xiangqi coperto (Cờ úp): i due Generali partono scoperti, tutti gli altri pezzi vengono mescolati e messi coperti. Un pezzo coperto si muove come il pezzo che normalmente parte dalla sua casa (sulla casa di un Carro si muove come un Carro), poi si scopre e da quel momento si muove come il suo pezzo vero. Consiglieri ed Elefanti possono muoversi in tutta la scacchiera. Perde chi subisce scacco matto o resta senza mosse.",
+    "lib.game.darkBoard": "Scacchiera di Xiangqi coperto",
+    "lib.online.red": "Rosso",
+    "lib.online.black": "Nero",
+    "lib.game.captured": "Pezzi catturati",
+    "lib.online.pickTable": "Trova un avversario o apri un tavolo di lato per iniziare.",
+    "lib.online.theirTurn": "Turno dell'avversario",
+    "lib.online.white": "Bianco",
+    "lib.online.goNote": "Goban {n}×{n}, inizia il Nero, il Bianco riceve {k} di komi. Conteggio per area; cattura tutte le pietre morte prima di passare. La partita finisce quando entrambi passano di seguito.",
+    "lib.online.boardSize": "Dimensione del goban",
+    "lib.online.oppPassed": "L'avversario ha passato. Se passi anche tu, la partita finisce e si conta.",
+    "lib.online.modeAi": "Gioca contro il computer",
+    "lib.online.modeOnline": "Gioca online"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Grande Sudoku 16x16 con 1-9 e A-G, 10 livelli da facile a difficile, con note e aiuti."
     },
     "chess": {
-      "name": "Scacchi contro il computer",
-      "desc": "Gioca a scacchi contro il computer in 10 livelli da facile a difficile, con arrocco, presa en passant e promozione."
+      "name": "Scacchi",
+      "desc": "Gioca a scacchi contro il computer su 10 livelli oppure online: invita un amico con un link o sfida qualcuno di nuovo. Con arrocco, presa en passant e promozione."
     },
     "xiangqi": {
-      "name": "Xiangqi contro il computer",
-      "desc": "Gioca a scacchi cinesi (xiangqi) contro il computer in 10 livelli, con blocco della zampa del cavallo, occhio dell'elefante, catture del cannone e regola dei generali."
+      "name": "Xiangqi (scacchi cinesi)",
+      "desc": "Gioca a Xiangqi contro il computer su 10 livelli oppure online: invita un amico con un link o sfida qualcuno di nuovo. Regole complete: gamba del cavallo, occhio dell'elefante, salto del cannone e generali faccia a faccia."
     },
     "go-game": {
-      "name": "Go contro il computer",
-      "desc": "Gioca a Go contro il computer su goban 5x5, 7x7 e 9x9 in 10 livelli, con conteggio automatico a fine partita."
+      "name": "Go",
+      "desc": "Gioca a Go contro il computer su 10 livelli oppure online su goban 9x9, 13x13 e 19x19 con un amico o un nuovo avversario. Conteggio automatico a fine partita."
     },
     "memory-shapes": {
       "name": "Memoria di forme e colori",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Desktop online",
       "desc": "Il desktop di un computer nel browser: gestione file, Notepad, visualizzatore di immagini e PDF, calcolatrice, calendario e cestino. I file vengono salvati nel tuo Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi coperto (Cờ úp)",
+      "desc": "Gioca allo Xiangqi coperto vietnamita: i pezzi partono coperti e si scoprono dopo la prima mossa. Contro il computer su 10 livelli o online con amici e nuovi avversari."
     }
   },
   "s": {

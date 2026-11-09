@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Vraag {i}/{n}",
     "lib.game.mmDone": "Klaar!",
     "lib.game.mmLost": "Geen levens meer — alle tegels worden nu getoond.",
-    "lib.game.mmNote": "Druk op Start: de tegels worden {s} seconden getoond en daarna verborgen. Onthoud de vorm en kleur van elke tegel en kies dan de tegel die bij de getoonde vorm past. Meer dan {l} fouten en het niveau is mislukt."
+    "lib.game.mmNote": "Druk op Start: de tegels worden {s} seconden getoond en daarna verborgen. Onthoud de vorm en kleur van elke tegel en kies dan de tegel die bij de getoonde vorm past. Meer dan {l} fouten en het niveau is mislukt.",
+    "lib.online.guest": "Gast",
+    "lib.online.connFail": "Kan geen verbinding maken met de server voor online spelen. Controleer je verbinding (of zet je advertentieblokker uit) en klik op Opnieuw proberen.",
+    "lib.online.tableGone": "Wie deze tafel opende is vertrokken. Kies een andere tafel of open een nieuwe.",
+    "lib.online.drawDeclined": "Je tegenstander weigerde remise.",
+    "lib.online.opponent": "Tegenstander",
+    "lib.online.copied": "Link gekopieerd. Stuur hem naar je vriend om samen te spelen.",
+    "lib.online.waitingFor": "wacht {n} s",
+    "lib.online.drawAgreed": "Beide spelers zijn remise overeengekomen.",
+    "lib.online.draw": "De partij eindigt in remise.",
+    "lib.online.oppResigned": "Je tegenstander gaf op — je wint!",
+    "lib.online.youResigned": "Je hebt opgegeven.",
+    "lib.online.youWin": "Je wint!",
+    "lib.online.youLose": "Je verliest.",
+    "lib.online.connecting": "Verbinden met de server voor online spelen…",
+    "lib.online.retry": "Opnieuw proberen",
+    "lib.online.quick": "Tegenstander zoeken",
+    "lib.online.createPublic": "Openbare tafel openen",
+    "lib.online.createPrivate": "Privétafel openen en vriend uitnodigen",
+    "lib.online.modesHint": "Openbare tafels staan in de lijst, iedereen kan aanschuiven. Privétafels zijn alleen te bereiken met de uitnodigingslink.",
+    "lib.online.openTables": "Wachtende openbare tafels",
+    "lib.online.join": "Aanschuiven",
+    "lib.online.noTables": "Er wacht nog geen tafel. Klik op \"Tegenstander zoeken\" of open een nieuwe tafel.",
+    "lib.online.privacy": "Zetten gaan via een gratis openbare MQTT-server en worden per tafel versleuteld; de server bewaart geen partijen. Log in met Google om afgelopen partijen in je Drive op te slaan.",
+    "lib.online.waitingPublic": "Openbare tafel: wachten tot iemand aanschuift…",
+    "lib.online.waitingPrivate": "Privétafel: stuur deze link naar je vriend. De partij begint zodra hij hem opent.",
+    "lib.online.leave": "Tafel verlaten",
+    "lib.online.full": "Aan deze tafel zitten al 2 spelers. Zoek een andere tafel of open een nieuwe.",
+    "lib.online.backToList": "Terug naar de tafellijst",
+    "lib.online.you": "Jij",
+    "lib.online.oppLeft": "heeft de tafel verlaten",
+    "lib.online.oppOffline": "verbinding verbroken",
+    "lib.online.drawOffer": "Je tegenstander biedt remise aan.",
+    "lib.online.accept": "Accepteren",
+    "lib.online.decline": "Weigeren",
+    "lib.online.drawSent": "Remise aangeboden…",
+    "lib.online.offerDraw": "Remise aanbieden",
+    "lib.online.resignConfirm": "Klik nogmaals om op te geven",
+    "lib.online.resign": "Opgeven",
+    "lib.online.againSent": "Wachten tot je tegenstander akkoord gaat…",
+    "lib.online.againAccept": "Je tegenstander wil een revanche — Nog een partij",
+    "lib.online.again": "Nog een partij (kleuren wisselen)",
+    "lib.online.inviteLink": "Uitnodigingslink",
+    "lib.online.copy": "Link kopiëren",
+    "lib.online.share": "Delen",
+    "lib.online.saved": "Partij opgeslagen in Google Drive (map WFTools/Games).",
+    "lib.online.saving": "Partij opslaan in Google Drive…",
+    "lib.online.saveFail": "De partij kon nog niet in Drive worden opgeslagen.",
+    "lib.online.save": "Partij opslaan in Google Drive",
+    "lib.game.darkNote": "Verdekt Xiangqi (Cờ úp): beide generaals beginnen open, alle andere stukken worden geschud en verdekt neergezet. Een verdekt stuk zet zoals het stuk dat normaal op zijn veld begint (op het veld van een wagen zet het als een wagen), wordt daarna omgedraaid en zet vanaf dan als zijn echte stuk. Raadgevers en olifanten mogen overal op het bord komen. Wie mat staat of geen zet meer heeft, verliest.",
+    "lib.game.darkBoard": "Bord voor verdekt Xiangqi",
+    "lib.online.red": "Rood",
+    "lib.online.black": "Zwart",
+    "lib.game.captured": "Geslagen",
+    "lib.online.pickTable": "Zoek een tegenstander of open een tafel aan de zijkant om te beginnen.",
+    "lib.online.theirTurn": "Tegenstander is aan zet",
+    "lib.online.white": "Wit",
+    "lib.online.goNote": "Bord {n}×{n}, Zwart begint, Wit krijgt {k} komi. Gebiedstelling; sla alle dode stenen voordat je past. De partij eindigt als beide spelers na elkaar passen.",
+    "lib.online.boardSize": "Bordgrootte",
+    "lib.online.oppPassed": "Je tegenstander paste. Als jij ook past, eindigt de partij en wordt er geteld.",
+    "lib.online.modeAi": "Tegen de computer spelen",
+    "lib.online.modeOnline": "Online spelen"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Grote 16x16-sudoku met 1-9 en A-G, 10 niveaus van makkelijk tot moeilijk, met notities en hints."
     },
     "chess": {
-      "name": "Schaken tegen de computer",
-      "desc": "Speel schaak tegen de computer in 10 niveaus van makkelijk tot moeilijk, met rokade, en passant en promotie."
+      "name": "Schaken",
+      "desc": "Speel schaak tegen de computer op 10 niveaus of online: nodig een vriend uit met een link of speel tegen iemand nieuws. Met rokade, en passant en promotie."
     },
     "xiangqi": {
-      "name": "Xiangqi tegen de computer",
-      "desc": "Speel Chinees schaken (xiangqi) tegen de computer in 10 niveaus, met paardblokkade, olifantsoog, kanonslagen en de regel van de tegenover elkaar staande generaals."
+      "name": "Xiangqi (Chinees schaken)",
+      "desc": "Speel Xiangqi tegen de computer op 10 niveaus of online: nodig een vriend uit met een link of speel tegen iemand nieuws. Volledige regels: paardenbeen, olifantsoog, kanonsprong en generaals die elkaar niet mogen zien."
     },
     "go-game": {
-      "name": "Go tegen de computer",
-      "desc": "Speel Go tegen de computer op borden van 5x5, 7x7 en 9x9 in 10 niveaus, met automatische telling aan het einde."
+      "name": "Go",
+      "desc": "Speel Go tegen de computer op 10 niveaus of online op 9x9-, 13x13- en 19x19-borden met een vriend of een nieuwe tegenstander. Automatische telling aan het einde."
     },
     "memory-shapes": {
       "name": "Vorm- en kleurgeheugen",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Online bureaublad",
       "desc": "Een computerbureaublad in je browser: bestandsbeheer, Notepad, afbeeldingen- en pdf-viewer, rekenmachine, agenda en prullenbak. Bestanden worden opgeslagen in je Google Drive."
+    },
+    "co-up": {
+      "name": "Verdekt Xiangqi (Cờ úp)",
+      "desc": "Speel Vietnamees verdekt Xiangqi: de stukken beginnen verdekt en worden na hun eerste zet omgedraaid. Tegen de computer op 10 niveaus of online met vrienden en nieuwe tegenstanders."
     }
   },
   "s": {

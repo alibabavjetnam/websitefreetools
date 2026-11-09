@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "問題 {i}/{n}",
     "lib.game.mmDone": "クリア！",
     "lib.game.mmLost": "ライフがなくなりました — すべてのマスを開きました。",
-    "lib.game.mmNote": "スタートを押すと、マスが {s} 秒間表示されてから伏せられます。各マスの形と色を覚え、出題された図形のマスを選んでください。{l} 回を超えて間違えるとそのレベルは失敗です。"
+    "lib.game.mmNote": "スタートを押すと、マスが {s} 秒間表示されてから伏せられます。各マスの形と色を覚え、出題された図形のマスを選んでください。{l} 回を超えて間違えるとそのレベルは失敗です。",
+    "lib.online.guest": "ゲスト",
+    "lib.online.connFail": "オンライン対戦サーバーに接続できませんでした。ネット接続を確認し（広告ブロッカーをオフにして）、「再試行」を押してください。",
+    "lib.online.tableGone": "テーブルを開いた人が退出しました。別のテーブルを選ぶか、新しく開いてください。",
+    "lib.online.drawDeclined": "相手は引き分けに同意しませんでした。",
+    "lib.online.opponent": "相手",
+    "lib.online.copied": "リンクをコピーしました。友だちに送って一緒に遊びましょう。",
+    "lib.online.waitingFor": "{n} 秒待機中",
+    "lib.online.drawAgreed": "双方が引き分けに同意しました。",
+    "lib.online.draw": "引き分けです。",
+    "lib.online.oppResigned": "相手が投了しました — あなたの勝ちです！",
+    "lib.online.youResigned": "あなたは投了しました。",
+    "lib.online.youWin": "あなたの勝ちです！",
+    "lib.online.youLose": "あなたの負けです。",
+    "lib.online.connecting": "オンライン対戦サーバーに接続中…",
+    "lib.online.retry": "再試行",
+    "lib.online.quick": "対戦相手を探す",
+    "lib.online.createPublic": "公開テーブルを開く",
+    "lib.online.createPrivate": "非公開テーブルを開いて友だちを招待",
+    "lib.online.modesHint": "公開テーブルは一覧に表示され、誰でも参加できます。非公開テーブルは招待リンクを持つ人だけが参加できます。",
+    "lib.online.openTables": "待機中の公開テーブル",
+    "lib.online.join": "参加",
+    "lib.online.noTables": "待機中のテーブルはまだありません。「対戦相手を探す」を押すか、新しいテーブルを開いてください。",
+    "lib.online.privacy": "指し手は無料の公開 MQTT サーバーを経由し、テーブルごとに暗号化されます。サーバーに対局は保存されません。Google でログインすると、終わった対局をあなたの Drive に保存できます。",
+    "lib.online.waitingPublic": "公開テーブル：参加者を待っています…",
+    "lib.online.waitingPrivate": "非公開テーブル：このリンクを友だちに送ってください。友だちが開くと対局が始まります。",
+    "lib.online.leave": "テーブルを離れる",
+    "lib.online.full": "このテーブルはすでに2人います。別のテーブルを探すか、新しく開いてください。",
+    "lib.online.backToList": "テーブル一覧に戻る",
+    "lib.online.you": "あなた",
+    "lib.online.oppLeft": "退出しました",
+    "lib.online.oppOffline": "接続が切れました",
+    "lib.online.drawOffer": "相手が引き分けを提案しています。",
+    "lib.online.accept": "同意する",
+    "lib.online.decline": "断る",
+    "lib.online.drawSent": "引き分けを提案中…",
+    "lib.online.offerDraw": "引き分けを提案",
+    "lib.online.resignConfirm": "もう一度押すと投了します",
+    "lib.online.resign": "投了",
+    "lib.online.againSent": "相手の同意を待っています…",
+    "lib.online.againAccept": "相手が再戦を希望 — もう一局",
+    "lib.online.again": "もう一局（先後交代）",
+    "lib.online.inviteLink": "招待リンク",
+    "lib.online.copy": "リンクをコピー",
+    "lib.online.share": "共有",
+    "lib.online.saved": "対局を Google Drive に保存しました（WFTools/Games フォルダー）。",
+    "lib.online.saving": "対局を Google Drive に保存中…",
+    "lib.online.saveFail": "まだ Drive に保存できていません。",
+    "lib.online.save": "対局を Google Drive に保存",
+    "lib.game.darkNote": "伏せ駒シャンチー（ベトナムの Cờ úp）：両方の将（帥・將）は表向き、ほかの駒はシャッフルして裏向きに置きます。裏向きの駒は、その位置に本来ある駒の動きで動き（車の位置なら車として）、動いた後に表になり、以後は本当の駒として動きます。士と象は盤上どこへでも動けます。詰みまたは指せる手がなくなると負けです。",
+    "lib.game.darkBoard": "伏せ駒シャンチーの盤",
+    "lib.online.red": "赤",
+    "lib.online.black": "黒",
+    "lib.game.captured": "取られた駒",
+    "lib.online.pickTable": "横のパネルで対戦相手を探すか、テーブルを開いて始めましょう。",
+    "lib.online.theirTurn": "相手の番です",
+    "lib.online.white": "白",
+    "lib.online.goNote": "{n}×{n} 路盤、黒が先手、白にコミ {k}。地と石の数で数える方式（エリア計算）です。パスする前に死に石をすべて取り上げてください。両者が続けてパスすると終局です。",
+    "lib.online.boardSize": "盤のサイズ",
+    "lib.online.oppPassed": "相手がパスしました。あなたもパスすると終局して計算します。",
+    "lib.online.modeAi": "コンピューターと対戦",
+    "lib.online.modeOnline": "オンライン対戦"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "1-9とA-Gを使う大型の16x16数独。やさしいから難しいまでの10レベル、メモとヒント付き。"
     },
     "chess": {
-      "name": "チェス（対コンピューター）",
-      "desc": "やさしいから強いまでの10レベルのコンピューターと対戦。キャスリング、アンパッサン、プロモーション対応。"
+      "name": "チェス",
+      "desc": "コンピューターと10レベルで対戦、またはオンラインで友だちをリンクで招待したり新しい相手と対戦したりできます。キャスリング、アンパッサン、プロモーション対応。"
     },
     "xiangqi": {
-      "name": "シャンチー（対コンピューター）",
-      "desc": "10レベルのコンピューターと対戦する中国将棋。馬の足止め、象の目、砲の飛び越え、将の対面禁止に対応。"
+      "name": "シャンチー（中国将棋）",
+      "desc": "コンピューターと10レベルで対戦、またはオンラインで友だちをリンクで招待したり新しい相手と対戦したりできます。馬の足、象の目、砲の飛び越え、王の対面などルール完備。"
     },
     "go-game": {
-      "name": "囲碁（対コンピューター）",
-      "desc": "5路・7路・9路盤で10レベルのコンピューターと対戦。終局時に自動で得点を計算します。"
+      "name": "囲碁",
+      "desc": "コンピューターと10レベルで対戦、またはオンラインで9路・13路・19路盤で友だちや新しい相手と対戦できます。終局時に自動で計算します。"
     },
     "memory-shapes": {
       "name": "図形と色の記憶ゲーム",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "オンラインデスクトップ",
       "desc": "ブラウザで使えるパソコンのデスクトップ：ファイル管理、Notepad、画像・PDF ビューアー、電卓、カレンダー、ごみ箱。ファイルは Google ドライブに保存されます。"
+    },
+    "co-up": {
+      "name": "伏せ駒シャンチー（Cờ úp）",
+      "desc": "ベトナムの伏せ駒シャンチー：駒は裏向きで始まり、最初に動いたときに表になります。コンピューターと10レベルで、またはオンラインで友だちや新しい相手と対戦できます。"
     }
   },
   "s": {

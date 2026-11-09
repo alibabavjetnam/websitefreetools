@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Pergunta {i}/{n}",
     "lib.game.mmDone": "Pronto!",
     "lib.game.mmLost": "Sem vidas — todas as peças foram reveladas.",
-    "lib.game.mmNote": "Toque em Iniciar: as peças aparecem por {s} segundos e depois somem. Memorize a forma e a cor de cada uma e escolha a que corresponde à forma mostrada. Mais de {l} erros reprovam o nível."
+    "lib.game.mmNote": "Toque em Iniciar: as peças aparecem por {s} segundos e depois somem. Memorize a forma e a cor de cada uma e escolha a que corresponde à forma mostrada. Mais de {l} erros reprovam o nível.",
+    "lib.online.guest": "Convidado",
+    "lib.online.connFail": "Não foi possível conectar ao servidor de jogo online. Verifique sua conexão (ou desative o bloqueador de anúncios) e clique em Tentar de novo.",
+    "lib.online.tableGone": "Quem abriu esta mesa saiu. Escolha outra mesa ou abra uma nova.",
+    "lib.online.drawDeclined": "Seu adversário recusou o empate.",
+    "lib.online.opponent": "Adversário",
+    "lib.online.copied": "Link copiado. Envie para seu amigo para jogarem juntos.",
+    "lib.online.waitingFor": "esperando há {n} s",
+    "lib.online.drawAgreed": "Os dois jogadores concordaram com o empate.",
+    "lib.online.draw": "A partida terminou empatada.",
+    "lib.online.oppResigned": "Seu adversário desistiu — você venceu!",
+    "lib.online.youResigned": "Você desistiu.",
+    "lib.online.youWin": "Você venceu!",
+    "lib.online.youLose": "Você perdeu.",
+    "lib.online.connecting": "Conectando ao servidor de jogo online…",
+    "lib.online.retry": "Tentar de novo",
+    "lib.online.quick": "Encontrar adversário",
+    "lib.online.createPublic": "Abrir mesa pública",
+    "lib.online.createPrivate": "Abrir mesa privada e convidar um amigo",
+    "lib.online.modesHint": "Mesas públicas aparecem na lista para qualquer pessoa entrar. Mesas privadas só aceitam quem tem o link de convite.",
+    "lib.online.openTables": "Mesas públicas esperando",
+    "lib.online.join": "Entrar",
+    "lib.online.noTables": "Nenhuma mesa esperando ainda. Clique em \"Encontrar adversário\" ou abra uma mesa nova.",
+    "lib.online.privacy": "As jogadas passam por um servidor MQTT público gratuito e são criptografadas por mesa; o servidor não guarda suas partidas. Entre com o Google para salvar as partidas terminadas no seu Drive.",
+    "lib.online.waitingPublic": "Mesa pública: esperando alguém entrar…",
+    "lib.online.waitingPrivate": "Mesa privada: envie este link para seu amigo. A partida começa quando ele abrir.",
+    "lib.online.leave": "Sair da mesa",
+    "lib.online.full": "Esta mesa já tem 2 jogadores. Procure outra mesa ou abra uma nova.",
+    "lib.online.backToList": "Voltar à lista de mesas",
+    "lib.online.you": "Você",
+    "lib.online.oppLeft": "saiu da mesa",
+    "lib.online.oppOffline": "desconectado",
+    "lib.online.drawOffer": "Seu adversário propõe empate.",
+    "lib.online.accept": "Aceitar",
+    "lib.online.decline": "Recusar",
+    "lib.online.drawSent": "Empate proposto…",
+    "lib.online.offerDraw": "Propor empate",
+    "lib.online.resignConfirm": "Clique de novo para desistir",
+    "lib.online.resign": "Desistir",
+    "lib.online.againSent": "Esperando seu adversário aceitar…",
+    "lib.online.againAccept": "Seu adversário quer revanche — Jogar de novo",
+    "lib.online.again": "Jogar de novo (trocar cores)",
+    "lib.online.inviteLink": "Link de convite",
+    "lib.online.copy": "Copiar link",
+    "lib.online.share": "Compartilhar",
+    "lib.online.saved": "Partida salva no Google Drive (pasta WFTools/Games).",
+    "lib.online.saving": "Salvando a partida no Google Drive…",
+    "lib.online.saveFail": "Ainda não foi possível salvar a partida no Drive.",
+    "lib.online.save": "Salvar partida no Google Drive",
+    "lib.game.darkNote": "Xiangqi oculto (Cờ úp): os dois Generais começam virados para cima; as outras peças são embaralhadas e colocadas viradas para baixo. Uma peça oculta se move como a peça que normalmente começa na sua casa (na casa de uma Carruagem, move-se como Carruagem); depois vira e passa a se mover como a peça real. Conselheiros e Elefantes podem andar pelo tabuleiro todo. Perde quem levar xeque-mate ou ficar sem jogadas.",
+    "lib.game.darkBoard": "Tabuleiro de Xiangqi oculto",
+    "lib.online.red": "Vermelho",
+    "lib.online.black": "Preto",
+    "lib.game.captured": "Capturadas",
+    "lib.online.pickTable": "Encontre um adversário ou abra uma mesa ao lado para começar.",
+    "lib.online.theirTurn": "Vez do adversário",
+    "lib.online.white": "Branco",
+    "lib.online.goNote": "Tabuleiro {n}×{n}, Preto começa, Branco recebe komi {k}. Contagem por área; capture todas as pedras mortas antes de passar. A partida termina quando os dois passam seguidos.",
+    "lib.online.boardSize": "Tamanho do tabuleiro",
+    "lib.online.oppPassed": "Seu adversário passou. Se você também passar, a partida termina e é contada.",
+    "lib.online.modeAi": "Jogar contra o computador",
+    "lib.online.modeOnline": "Jogar online"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Sudoku grande 16x16 com 1-9 e A-G, 10 níveis do fácil ao difícil, com anotações e dicas."
     },
     "chess": {
-      "name": "Xadrez contra o computador",
-      "desc": "Jogue xadrez contra o computador em 10 níveis, do fácil ao difícil, com roque, en passant e promoção."
+      "name": "Xadrez",
+      "desc": "Jogue xadrez contra o computador em 10 níveis ou online: convide um amigo por link ou enfrente alguém novo. Com roque, en passant e promoção."
     },
     "xiangqi": {
-      "name": "Xiangqi contra o computador",
-      "desc": "Jogue xadrez chinês (xiangqi) contra o computador em 10 níveis, com bloqueio do cavalo, olho do elefante, capturas do canhão e regra dos generais frente a frente."
+      "name": "Xiangqi (xadrez chinês)",
+      "desc": "Jogue Xiangqi contra o computador em 10 níveis ou online: convide um amigo por link ou enfrente alguém novo. Regras completas: perna do cavalo, olho do elefante, salto do canhão e generais frente a frente."
     },
     "go-game": {
-      "name": "Go contra o computador",
-      "desc": "Jogue Go contra o computador em tabuleiros 5x5, 7x7 e 9x9 com 10 níveis, com pontuação automática no final."
+      "name": "Go",
+      "desc": "Jogue Go contra o computador em 10 níveis ou online em tabuleiros 9x9, 13x13 e 19x19 com um amigo ou um adversário novo. Contagem automática no final."
     },
     "memory-shapes": {
       "name": "Memória de formas e cores",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Área de trabalho online",
       "desc": "A área de trabalho de um computador no seu navegador: gerenciador de arquivos, Notepad, visualizador de imagens e PDF, calculadora, calendário e lixeira. Os arquivos são salvos no seu Google Drive."
+    },
+    "co-up": {
+      "name": "Xiangqi oculto (Cờ úp)",
+      "desc": "Jogue o Xiangqi oculto vietnamita: as peças começam viradas para baixo e são reveladas após o primeiro movimento. Contra o computador em 10 níveis ou online com amigos e novos adversários."
     }
   },
   "s": {

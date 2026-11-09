@@ -232,7 +232,68 @@
     "lib.game.mmQuestion": "Frage {i}/{n}",
     "lib.game.mmDone": "Geschafft!",
     "lib.game.mmLost": "Keine Leben mehr – alle Felder werden jetzt aufgedeckt.",
-    "lib.game.mmNote": "Drücke Start: Die Felder werden {s} Sekunden lang gezeigt und dann verdeckt. Merke dir Form und Farbe jedes Feldes und wähle dann das Feld, das zur gezeigten Form passt. Mehr als {l} Fehler, und die Stufe ist verloren."
+    "lib.game.mmNote": "Drücke Start: Die Felder werden {s} Sekunden lang gezeigt und dann verdeckt. Merke dir Form und Farbe jedes Feldes und wähle dann das Feld, das zur gezeigten Form passt. Mehr als {l} Fehler, und die Stufe ist verloren.",
+    "lib.online.guest": "Gast",
+    "lib.online.connFail": "Keine Verbindung zum Online-Spielserver. Prüfe deine Verbindung (oder schalte den Werbeblocker aus) und klicke dann auf Erneut versuchen.",
+    "lib.online.tableGone": "Wer diesen Tisch eröffnet hat, ist gegangen. Wähle einen anderen Tisch oder eröffne einen neuen.",
+    "lib.online.drawDeclined": "Dein Gegner hat das Remis abgelehnt.",
+    "lib.online.opponent": "Gegner",
+    "lib.online.copied": "Link kopiert. Schick ihn deinem Freund, um zusammen zu spielen.",
+    "lib.online.waitingFor": "wartet seit {n} s",
+    "lib.online.drawAgreed": "Beide Spieler haben sich auf Remis geeinigt.",
+    "lib.online.draw": "Die Partie endet remis.",
+    "lib.online.oppResigned": "Dein Gegner hat aufgegeben — du gewinnst!",
+    "lib.online.youResigned": "Du hast aufgegeben.",
+    "lib.online.youWin": "Du gewinnst!",
+    "lib.online.youLose": "Du verlierst.",
+    "lib.online.connecting": "Verbinde mit dem Online-Spielserver…",
+    "lib.online.retry": "Erneut versuchen",
+    "lib.online.quick": "Gegner finden",
+    "lib.online.createPublic": "Öffentlichen Tisch eröffnen",
+    "lib.online.createPrivate": "Privaten Tisch eröffnen und Freund einladen",
+    "lib.online.modesHint": "Öffentliche Tische stehen in der Liste, jeder kann beitreten. Private Tische erreicht man nur über den Einladungslink.",
+    "lib.online.openTables": "Wartende öffentliche Tische",
+    "lib.online.join": "Beitreten",
+    "lib.online.noTables": "Noch wartet kein Tisch. Klicke auf \"Gegner finden\" oder eröffne einen neuen Tisch.",
+    "lib.online.privacy": "Züge laufen über einen kostenlosen öffentlichen MQTT-Server und werden pro Tisch verschlüsselt; der Server speichert keine Partien. Melde dich mit Google an, um beendete Partien in deinem Drive zu speichern.",
+    "lib.online.waitingPublic": "Öffentlicher Tisch: warte auf einen Mitspieler…",
+    "lib.online.waitingPrivate": "Privater Tisch: Schick diesen Link deinem Freund. Die Partie beginnt, sobald er ihn öffnet.",
+    "lib.online.leave": "Tisch verlassen",
+    "lib.online.full": "An diesem Tisch sitzen schon 2 Spieler. Such dir einen anderen Tisch oder eröffne einen neuen.",
+    "lib.online.backToList": "Zurück zur Tischliste",
+    "lib.online.you": "Du",
+    "lib.online.oppLeft": "hat den Tisch verlassen",
+    "lib.online.oppOffline": "Verbindung getrennt",
+    "lib.online.drawOffer": "Dein Gegner bietet Remis an.",
+    "lib.online.accept": "Annehmen",
+    "lib.online.decline": "Ablehnen",
+    "lib.online.drawSent": "Remis angeboten…",
+    "lib.online.offerDraw": "Remis anbieten",
+    "lib.online.resignConfirm": "Zum Aufgeben noch einmal klicken",
+    "lib.online.resign": "Aufgeben",
+    "lib.online.againSent": "Warte auf Zustimmung des Gegners…",
+    "lib.online.againAccept": "Dein Gegner will eine Revanche — Neue Partie",
+    "lib.online.again": "Neue Partie (Farben tauschen)",
+    "lib.online.inviteLink": "Einladungslink",
+    "lib.online.copy": "Link kopieren",
+    "lib.online.share": "Teilen",
+    "lib.online.saved": "Partie in Google Drive gespeichert (Ordner WFTools/Games).",
+    "lib.online.saving": "Partie wird in Google Drive gespeichert…",
+    "lib.online.saveFail": "Partie konnte noch nicht in Drive gespeichert werden.",
+    "lib.online.save": "Partie in Google Drive speichern",
+    "lib.game.darkNote": "Verdecktes Xiangqi (Cờ úp): Beide Generäle stehen offen, alle anderen Steine werden gemischt und verdeckt aufgestellt. Ein verdeckter Stein zieht wie der Stein, der normalerweise auf seinem Feld beginnt (auf dem Feld eines Wagens zieht er wie ein Wagen), dann wird er aufgedeckt und zieht ab da wie sein echter Stein. Berater und Elefanten dürfen überall auf dem Brett ziehen. Wer mattgesetzt wird oder keinen Zug mehr hat, verliert.",
+    "lib.game.darkBoard": "Brett für verdecktes Xiangqi",
+    "lib.online.red": "Rot",
+    "lib.online.black": "Schwarz",
+    "lib.game.captured": "Geschlagen",
+    "lib.online.pickTable": "Finde einen Gegner oder eröffne an der Seite einen Tisch, um zu beginnen.",
+    "lib.online.theirTurn": "Gegner ist am Zug",
+    "lib.online.white": "Weiß",
+    "lib.online.goNote": "{n}×{n}-Brett, Schwarz beginnt, Weiß erhält {k} Komi. Gebietszählung; schlage alle toten Steine, bevor du passt. Die Partie endet, wenn beide nacheinander passen.",
+    "lib.online.boardSize": "Brettgröße",
+    "lib.online.oppPassed": "Dein Gegner hat gepasst. Passt du auch, endet die Partie und wird gezählt.",
+    "lib.online.modeAi": "Gegen Computer spielen",
+    "lib.online.modeOnline": "Online spielen"
   },
   "pages": {
     "home": {
@@ -655,16 +716,16 @@
       "desc": "Großes 16x16-Sudoku mit 1-9 und A-G, 10 Stufen von leicht bis schwer, mit Notizen und Tipps."
     },
     "chess": {
-      "name": "Schach gegen Computer",
-      "desc": "Spiele Schach gegen den Computer in 10 Stufen von leicht bis schwer, mit Rochade, En passant und Umwandlung."
+      "name": "Schach",
+      "desc": "Spiele Schach gegen den Computer in 10 Stufen oder online: Lade einen Freund per Link ein oder spiele gegen neue Gegner. Mit Rochade, En passant und Umwandlung."
     },
     "xiangqi": {
-      "name": "Xiangqi gegen Computer",
-      "desc": "Spiele chinesisches Schach (Xiangqi) gegen den Computer in 10 Stufen, mit Pferdebein-Blockade, Elefantenauge, Kanonenschlag und Generalsregel."
+      "name": "Xiangqi (Chinesisches Schach)",
+      "desc": "Spiele Xiangqi gegen den Computer in 10 Stufen oder online: Lade einen Freund per Link ein oder spiele gegen neue Gegner. Volle Regeln: Pferdebein, Elefantenauge, Kanonensprung, Generäle dürfen sich nicht sehen."
     },
     "go-game": {
-      "name": "Go gegen Computer",
-      "desc": "Spiele Go gegen den Computer auf 5x5-, 7x7- und 9x9-Brettern in 10 Stufen, mit automatischer Wertung am Ende."
+      "name": "Go",
+      "desc": "Spiele Go gegen den Computer in 10 Stufen oder online auf 9x9-, 13x13- und 19x19-Brettern mit einem Freund oder neuen Gegner. Automatische Wertung am Ende."
     },
     "memory-shapes": {
       "name": "Form- & Farbgedächtnis",
@@ -673,6 +734,10 @@
     "web-desktop": {
       "name": "Online-Desktop",
       "desc": "Ein Computer-Desktop im Browser: Dateimanager, Notepad, Bild- und PDF-Betrachter, Rechner, Kalender und Papierkorb. Dateien werden in deinem Google Drive gespeichert."
+    },
+    "co-up": {
+      "name": "Verdecktes Xiangqi (Cờ úp)",
+      "desc": "Spiele vietnamesisches verdecktes Xiangqi: Die Steine beginnen verdeckt und werden nach ihrem ersten Zug aufgedeckt. Gegen den Computer in 10 Stufen oder online mit Freunden und neuen Gegnern."
     }
   },
   "s": {
