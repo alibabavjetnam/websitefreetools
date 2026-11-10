@@ -537,7 +537,22 @@
     "lib.arcade.ySmall": "Sảnh nhỏ (30)",
     "lib.arcade.yLarge": "Sảnh lớn (40)",
     "lib.arcade.yYahtzee": "Yahtzee (50)",
-    "lib.arcade.yChance": "Tuỳ ý"
+    "lib.arcade.yChance": "Tuỳ ý",
+    "lib.arcade.height": "Độ cao: {n}/{t} m",
+    "lib.arcade.money": "Tiền: {n}/{t}",
+    "lib.arcade.sliced": "Đã cắt: {n}/{t}",
+    "lib.arcade.hoopScore": "Ghi: {n}/{t}",
+    "lib.arcade.shotsLeft": "Còn {n} lần ném",
+    "lib.arcade.bubbleLeft": "Còn {n} bóng",
+    "lib.arcade.shotsN": "Lượt bắn: {n}",
+    "lib.arcade.dotsLeft": "Còn {n} chấm",
+    "lib.arcade.note.race": "Bấm ← → (hoặc chạm vào làn muốn đi) để đổi làn, né các xe phía trước. Có 3 mạng; chạy đủ quãng đường để qua cấp. Cấp cao có thêm làn và xe chạy nhanh hơn.",
+    "lib.arcade.note.jump": "Nhân vật tự nảy lên. Bấm ← → hoặc kéo ngón tay để chuyển sang bệ kế tiếp. Bệ xanh dương di chuyển, bệ nâu vỡ khi chạm. Rơi khỏi màn hình là thua; leo đủ độ cao để qua cấp.",
+    "lib.arcade.note.miner": "Móc câu đung đưa; bấm phím cách, ↓ hoặc chạm vào sân để thả móc. Vàng to và đá nặng thì kéo chậm; kim cương rất giá trị. Đạt đủ tiền mục tiêu trước khi hết 60 giây.",
+    "lib.arcade.note.slicer": "Kéo ngón tay hoặc chuột ngang qua trái cây để cắt. Tránh quả bom đen. Để rơi mất trái cây hoặc cắt trúng bom sẽ mất 1 mạng (3 mạng). Cắt đủ số quả để qua cấp.",
+    "lib.arcade.note.hoops": "Bấm vào sân rồi kéo ngón tay/chuột xuống dưới (kiểu ná cao su) và thả ra để ném bóng lên rổ. Kéo càng xa, bóng bay càng mạnh. Ghi đủ số bóng với số lần ném giới hạn; từ cấp 4 rổ di chuyển.",
+    "lib.arcade.note.bubbles": "Di chuột/ngón tay để ngắm, bấm hoặc nhấn cách/Bắn để bắn. Nối từ 3 bóng cùng màu trở lên để làm nổ; bóng mất chỗ bám sẽ rơi. Hàng bóng tụt dần xuống, đừng để chạm vạch đáy. Xoá hết bóng để qua cấp.",
+    "lib.arcade.note.chase": "Dùng phím mũi tên (hoặc vuốt/nút) để đổi hướng và ăn hết chấm trong mê cung, tránh các con ma đang đuổi. Có 3 mạng; càng lên cấp có thêm ma, ma chạy nhanh và đuổi thông minh hơn."
   },
   "pages": {
     "home": {
@@ -1518,6 +1533,34 @@
     "crazy-eights": {
       "name": "Bài 8 lá (Crazy Eights)",
       "desc": "Đánh bài cùng chất hoặc cùng số, lá 8 đổi chất; hết bài trước 1 đến 3 máy qua 10 cấp."
+    },
+    "car-race": {
+      "name": "Đua xe né xe",
+      "desc": "Đổi làn để né xe phía trước, chạy đủ quãng đường; 10 cấp thêm làn và tăng tốc."
+    },
+    "sky-jump": {
+      "name": "Nhảy lên cao",
+      "desc": "Nảy từ bệ này sang bệ khác để leo thật cao, tránh rơi; 10 cấp bệ thưa dần, có bệ di động và bệ vỡ."
+    },
+    "gold-miner": {
+      "name": "Đào vàng",
+      "desc": "Thả móc câu kéo vàng, kim cương; tránh đá nặng; đạt tiền mục tiêu trong 60 giây, 10 cấp."
+    },
+    "fruit-slice": {
+      "name": "Cắt trái cây",
+      "desc": "Vuốt ngang để cắt trái cây bay lên, né bom; 10 cấp nhiều quả và bom hơn."
+    },
+    "basketball": {
+      "name": "Ném bóng rổ",
+      "desc": "Kéo và thả để ném bóng vào rổ trong số lần giới hạn; 10 cấp, rổ di chuyển từ cấp 4."
+    },
+    "bubble-shooter": {
+      "name": "Bắn bóng màu",
+      "desc": "Bắn bóng nối từ 3 cùng màu để làm nổ, xoá hết bóng trước khi chạm đáy; 10 cấp thêm màu."
+    },
+    "dot-chase": {
+      "name": "Ăn chấm",
+      "desc": "Ăn hết chấm trong mê cung, tránh ma đuổi theo; 10 cấp, thêm ma và ma thông minh dần."
     }
   },
   "s": {

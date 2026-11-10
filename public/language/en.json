@@ -537,7 +537,22 @@
     "lib.arcade.ySmall": "Small straight (30)",
     "lib.arcade.yLarge": "Large straight (40)",
     "lib.arcade.yYahtzee": "Yahtzee (50)",
-    "lib.arcade.yChance": "Chance"
+    "lib.arcade.yChance": "Chance",
+    "lib.arcade.note.race": "Press ← → (or tap the lane you want) to change lanes and dodge the cars ahead. You have 3 lives; drive the full distance to clear the level. Higher levels add lanes and faster traffic.",
+    "lib.arcade.note.jump": "The character bounces by itself. Press ← → or drag your finger to land on the next platform. Blue platforms move, brown ones break when you land. Falling off the screen loses; climb high enough to clear the level.",
+    "lib.arcade.note.miner": "The hook swings back and forth; press Space, ↓ or tap the field to drop it. Big gold and rocks are heavy and pull slowly; diamonds are worth a lot. Reach the target money before the 60 seconds run out.",
+    "lib.arcade.note.slicer": "Swipe a finger or the mouse across the fruit to slice it. Avoid the black bombs. Missing a fruit or slicing a bomb costs a life (you have 3). Slice enough fruit to clear the level.",
+    "lib.arcade.note.hoops": "Press on the court, drag down (like a slingshot) and release to shoot the ball at the hoop. The farther you drag, the harder the throw. Score enough baskets within the shots you have; from level 4 the hoop moves.",
+    "lib.arcade.note.bubbles": "Move the mouse or finger to aim, then click/tap or press Space/Fire to shoot. Connect 3 or more bubbles of the same color to pop them; bubbles that lose their support fall. The rows slowly drop, so keep them away from the bottom line. Clear all bubbles to win.",
+    "lib.arcade.note.chase": "Use the arrow keys (or swipe / the buttons) to turn and eat every dot in the maze while avoiding the ghosts chasing you. You have 3 lives; higher levels add more ghosts that are faster and chase smarter.",
+    "lib.arcade.height": "Height: {n}/{t} m",
+    "lib.arcade.money": "Money: {n}/{t}",
+    "lib.arcade.sliced": "Sliced: {n}/{t}",
+    "lib.arcade.hoopScore": "Scored: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} shots left",
+    "lib.arcade.bubbleLeft": "{n} bubbles left",
+    "lib.arcade.shotsN": "Shots: {n}",
+    "lib.arcade.dotsLeft": "{n} dots left"
   },
   "pages": {
     "home": {
@@ -1194,6 +1209,34 @@
     "crazy-eights": {
       "name": "Crazy Eights",
       "desc": "Match suit or rank, eights change the suit; empty your hand before 1 to 3 computer opponents over 10 levels."
+    },
+    "car-race": {
+      "name": "Car Race Dodge",
+      "desc": "Change lanes to dodge the cars ahead and drive the full distance; 10 levels with more lanes and faster traffic."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Bounce from platform to platform to climb as high as you can without falling; 10 levels with sparser platforms, moving ones and breakable ones."
+    },
+    "gold-miner": {
+      "name": "Gold Miner",
+      "desc": "Drop the hook to haul in gold and diamonds, avoid heavy rocks, and reach the target money within 60 seconds; 10 levels."
+    },
+    "fruit-slice": {
+      "name": "Fruit Slice",
+      "desc": "Swipe to slice the fruit flying up and dodge the bombs; 10 levels with more fruit and more bombs."
+    },
+    "basketball": {
+      "name": "Basketball Shoot",
+      "desc": "Drag and release to shoot the ball into the hoop within a limited number of shots; 10 levels, with a moving hoop from level 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Shoot bubbles to connect 3 or more of the same color and pop them, and clear them all before they reach the bottom; 10 levels with more colors."
+    },
+    "dot-chase": {
+      "name": "Dot Chase",
+      "desc": "Eat every dot in the maze while dodging the ghosts that chase you; 10 levels with more and smarter ghosts."
     }
   },
   "s": {
