@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Aħmar",
     "lib.arcade.cGreen": "Aħdar",
     "lib.arcade.cYellow": "Isfar",
-    "lib.arcade.cBlue": "Blu"
+    "lib.arcade.cBlue": "Blu",
+    "lib.arcade.guess": "Aħseb",
+    "lib.arcade.clearRow": "Neħħi r-ringiela",
+    "lib.arcade.area": "Żona: {n}/{t}",
+    "lib.arcade.triesLeft": "Fadal {n} ipoteżi",
+    "lib.arcade.minMoves": "Minimu: {n}",
+    "lib.arcade.hnBad": "Ma tistax tpoġġi disk akbar fuq disk iżgħar.",
+    "lib.arcade.outOfMoves": "Spiċċaw il-mosez!",
+    "lib.arcade.fillAll": "Jekk jogħġbok agħżel kulur għal kull pożizzjoni.",
+    "lib.arcade.modeFill": "Imla",
+    "lib.arcade.modeMark": "Immarka ✕",
+    "lib.arcade.clearAll": "Neħħi kollox",
+    "lib.arcade.note.nonogram": "In-numri fil-bidu ta' kull ringiela u kolonna juru t-tulijiet tal-gruppi ta' ċelloli mimlija konsekuttivi f'dik il-linja, bl-ordni, b'mill-inqas ċellola vojta waħda bejn il-gruppi. Ikklikkja jew kaxkar biex timla ċ-ċelloli; aqleb għal “Immarka ✕” biex tinnota ċ-ċelloli li int ċert li huma vojta. Issodisfa l-indizji kollha biex tirbaħ.",
+    "lib.arcade.size": "Griglja {n}×{n}",
+    "lib.arcade.restartLevel": "Erġa' ibda l-livell",
+    "lib.arcade.newLayout": "Livell ieħor",
+    "lib.arcade.note.sokoban": "Mexxi l-plejer bl-ixxiri/WASD, bil-buttuni t'isfel jew billi tiswajpja. Imbotta l-kaxxi kollha fuq il-kwadri tal-mira (il-boċoċ tondi). Tista' timbotta kaxxa waħda kull darba u ma tistax tiġbed, mela evita li timbotta l-kaxxi fil-kantunieri. Uża Ħassar biex tirranġa mossa ħażina.",
+    "lib.arcade.boxesDone": "Kaxxi fuq il-mira: {n}/{t}",
+    "lib.arcade.note.block10": "Agħżel biċċa t'isfel, imbagħad ikklikkja l-griglja biex tpoġġiha (il-biċċiet ma jistgħux jinbidlu). Imla ringiela jew kolonna sħiħa biex tneħħiha u tikseb punti żejda; jekk tneħħi diversi linji f'daqqa tikseb bonus kbir. Laħħaq il-punteġġ tal-mira biex tgħaddi l-livell; jekk ebda waħda mill-biċċiet li fadal ma tidħol, titlef.",
+    "lib.arcade.note.dots": "Bit-turn, orbot żewġ punti ġirien b'linja. Min jiżbogħ ir-raba' ġenb ta' kwadru jieħu l-kwadru (bil-kulur tiegħu) u jilgħab għal darb'oħra. Meta jiġu mpoġġija l-linji kollha, jirbaħ il-plejer b'iktar kwadri. Evita li tiżbogħ it-tielet ġenb ta' kwadru, inkella l-avversarju jieħdu.",
+    "lib.arcade.note.ultimate": "Il-bord huwa magħmul minn 9 bordijiet żgħar tat-tic-tac-toe. Int tilgħab X u tibda l-ewwel. Iċ-ċellola li tagħżel ġewwa bord żgħir tiddeċiedi f'liema bord żgħir l-avversarju jrid jilgħab warajha (huwa enfasizzat); jekk dak il-bord diġà spiċċa, jista' jilgħab kullimkien. Irbaħ bord żgħir biex tirreklamah; irreklama tliet bordijiet żgħar f'ringiela, kolonna jew dijagonali biex tirbaħ il-logħba.",
+    "lib.arcade.note.lights-out": "Meta tikklikkja ċellola, din u l-4 ġirien tagħha jinqalbu (mixgħul/mitfi). Itfi d-dwal kollha. Uża s-Suġġeriment biex tara ċellola li tiswa tagħfas.",
+    "lib.arcade.note.fifteen": "Ħarrek it-tegħlijiet innumerati fil-ġenb vojt biex tqegħdhom bl-ordni 1, 2, 3… bil-vojt fir-rokna t'isfel fuq il-lemin. Ikklikkja tegħlija fl-istess ringiela jew kolonna tal-vojt biex tiċċaqlaq il-linja kollha; l-ixxiri jaħdmu wkoll.",
+    "lib.arcade.note.flood-it": "Agħżel kulur biex timla ż-żona kollha li għandek fir-rokna ta' fuq tax-xellug; tibla' ċ-ċelloli ġirien ta' dak il-kulur. Agħmel il-bord kollu kulur wieħed fil-għadd ta' mosez permess.",
+    "lib.arcade.note.mastermind": "Il-kompjuter jaħbi ringiela ta' kuluri. Agħżel kulur għal kull pożizzjoni, imbagħad agħfas Aħseb. Brimba sewda = kulur tajjeb fil-post it-tajjeb; brimba bajda = kulur tajjeb fil-post ħażin. Aqta' l-kodiċi qabel ma jispiċċaw l-ipoteżi.",
+    "lib.arcade.note.hanoi": "Ċaqlaq id-diski kollha lejn l-aħħar sies. Ċaqlaq biss id-disk ta' fuq ta' sies kull darba, u qatt tpoġġi disk akbar fuq wieħed iżgħar. Ikklikkja s-sies tal-bidu, imbagħad dak tal-mira.",
+    "lib.arcade.note.pipes": "Ikklikkja tegħlija biex iddawwar il-pajp b'90°. Qabbad il-pajpijiet kollha f'netwerk wieħed mingħajr truf miftuħa (it-truf miftuħa jidhru bl-aħmar)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Logħba tradizzjonali Vjetnamiża taż-żrigħ tal-ġebel: ẓra' l-ġebel u ħu l-Mandarins kontra l-kompjuter; 10 livelli minn faċli għal diffiċli."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Itfi d-dwal kollha: kull tagħfsa taqleb iċ-ċellola u l-4 ġirien tagħha; 10 livelli b'bordijiet li jikbru u buttuna tas-suġġeriment."
+    },
+    "fifteen": {
+      "name": "Puzzle tal-15 (puzzle li jiżżerżaq)",
+      "desc": "Żerżaq it-tegħlijiet innumerati bl-ordni; 10 livelli minn 3x3 sa 5x5, bil-maws, bit-touch jew bl-ixxiri."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Għarraq il-bord mir-rokna sakemm isir kulur wieħed f'għadd limitat ta' mosez; 10 livelli b'bordijiet akbar u aktar kuluri."
+    },
+    "mastermind": {
+      "name": "Mastermind (Kisser tal-Kodiċi)",
+      "desc": "Aqta' l-kodiċi moħbi tal-kuluri bl-indizji tal-briem suwed u bojod; 10 livelli b'kodiċijiet itwal u aktar kuluri."
+    },
+    "hanoi": {
+      "name": "Torri ta' Hanoi",
+      "desc": "Ċaqlaq id-diski mill-ewwel sies sal-aħħar mingħajr ma tpoġġi disk akbar fuq iżgħar; 10 livelli minn 3 diski sa 12-il disk fuq 4 siesi."
+    },
+    "pipes": {
+      "name": "Qabbad il-Pajpijiet",
+      "desc": "Dawwar il-biċċiet tal-pajpijiet biex tgħaqqadhom f'netwerk wieħed mingħajr truf miftuħa; 10 livelli b'bordijiet li jikbru."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Imla ċ-ċelloli bl-indizji tan-numri fuq ir-ringieli u l-kolonni biex tiżvela stampa; 10 livelli minn 5x5 sa 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Imbotta l-Kaxxi)",
+      "desc": "Imbotta l-kaxxi fuq il-kwadri tal-mira ġewwa maħżen; kull livell jista' jissolva, b'10 livelli b'aktar kaxxi u maħażen akbar."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Poġġi biċċiet fuq griglja ta' 10x10 u imla r-ringieli jew il-kolonni biex tneħħihom u tilħaq il-punteġġ tal-mira; 10 livelli."
+    },
+    "dots-boxes": {
+      "name": "Punti u Kaxxi",
+      "desc": "Bit-turn, orbot il-punti biex tieħu l-kwadri u għeleb lill-kompjuter f'10 livelli minn faċli għal diffiċli."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Ultimu",
+      "desc": "Tic-tac-toe fuq 9 bordijiet żgħar: iċ-ċellola li tagħżel tiddeċiedi fejn l-avversarju jrid jilgħab; kontra l-kompjuter f'10 livelli."
     }
   },
   "s": {

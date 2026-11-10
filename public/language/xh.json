@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Bomvu",
     "lib.arcade.cGreen": "Luhlaza",
     "lib.arcade.cYellow": "Mthubi",
-    "lib.arcade.cBlue": "Luhlaza okwesibhakabhaka"
+    "lib.arcade.cBlue": "Luhlaza okwesibhakabhaka",
+    "lib.arcade.guess": "Ukiqiqa",
+    "lib.arcade.clearRow": "Cima umqolo",
+    "lib.arcade.area": "Indawo: {n}/{t}",
+    "lib.arcade.triesLeft": "Kusele ukuqikelela {n}",
+    "lib.arcade.minMoves": "Ubuncinane: {n}",
+    "lib.arcade.hnBad": "Awunakubeka idiski enkulu phezu kwencinci.",
+    "lib.arcade.outOfMoves": "Imisebenzi iphelile!",
+    "lib.arcade.fillAll": "Nceda ukhethe umbala kwindawo nganye.",
+    "lib.arcade.modeFill": "Zalisa",
+    "lib.arcade.modeMark": "Phawula ✕",
+    "lib.arcade.clearAll": "Cima konke",
+    "lib.arcade.note.nonogram": "Amanani ekuqaleni komqolo ngamnye nekholam nganye abonisa ubude beqela lamabhokisi agcwalisiweyo alandelelanayo kuloo mgca, ngokulandelelana, kunebhokisi enye engenanto ubuncinane phakathi kwamaqela. Cofa okanye tsala ukugcwalisa amabhokisi; tshintshela kwi-“Phawula ✕” ukuphawula amabhokisi oqinisekileyo ukuba angenanto. Fezekisa zonke izikhokelo ukuze uphumelele.",
+    "lib.arcade.size": "Igridi ye-{n}×{n}",
+    "lib.arcade.restartLevel": "Qala kwakhona inqanaba",
+    "lib.arcade.newLayout": "Elinye inqanaba",
+    "lib.arcade.note.sokoban": "Hambisa umdlali ngamaqhosha omnqwazi/WASD, amaqhosha asezantsi okanye ngokutshiza. Sunduzela onke amabhokisi kwiindawo ekujoliswe kuzo (amachaphaza angqukuva). Unokusunduzela ibhokisi enye ngexesha elinye kwaye awunakutsala, ngoko phepha ukusunduzela amabhokisi emakoneni. Sebenzisa Rhoxisa ukulungisa inyathelo elibi.",
+    "lib.arcade.boxesDone": "Amabhokisi akwiindawo ekujoliswe kuzo: {n}/{t}",
+    "lib.arcade.note.block10": "Khetha isiqwenga ezantsi, emva koko ucofe igridi ukuze usibeke (iziqwenga azijikelezi). Zalisa umqolo okanye ikholam yonke ukuyicima kwaye ufumane amanqaku ongezelelweyo; ukucima imigca emininzi ngaxeshanye kunika imbasa enkulu. Fikelela kumanqaku ekujoliswe kuwo ukuze uphumelele inqanaba; ukuba akukho siqwenga sisele esifaneleyo, uyoyiswa.",
+    "lib.arcade.note.dots": "Landelelanani nidibanise amachaphaza amabini angabamelwane ngomgca. Lowo uzobe icala lesine lesikwere uyasithatha (ngombala wakhe) kwaye udlala kwakhona. Yonke imigca ikuba izotyiwe, umdlali onezikwere ezininzi uyaphumelela. Phepha ukuzoba icala lesithathu lesikwere, kungenjalo umchasi wakho uya kusithatha.",
+    "lib.arcade.note.ultimate": "Ibhodi yenziwe ngeebhodi ezincinci ezi-9 ze-tic-tac-toe. Wena udlala u-X kwaye uqala. Ibhokisi oyikhethayo ngaphakathi kwebhodi encinci ibona ukuba ngowuphi umdlalo omncinci umchasi wakho kufuneka adlale kuwo emva koko (uqaqambisiwe); ukuba loo bhodi sele iphelile, angadlala naphi na. Phumelela ibhodi encinci ukuze uyithathe; thatha iibhodi ezincinci ezintathu kumqolo, kwikholam okanye kwidayagonali ukuze uphumelele umdlalo.",
+    "lib.arcade.note.lights-out": "Ukucofa ibhokisi kutshintsha loo bhokisi kunye nabamelwane bayo abane (vula/cima). Cima zonke izibane. Sebenzisa Isiluleko ukubona ibhokisi efanele ukucofwa.",
+    "lib.arcade.note.fifteen": "Shushumbisa iithayile ezinamanani zisingise kwisikhewu uzilungiselele 1, 2, 3… isikhewu sisekoneni esezantsi ngasekunene. Cofa ithayile esemqolweni okanye kwikholam enye nesikhewu ukushushumbisa umgca wonke; amaqhosha omnqwazi nawo ayasebenza.",
+    "lib.arcade.note.flood-it": "Khetha umbala wokugcwalisa lonke indawo oyilawulayo ekoneni ephezulu ngasekhohlo; iginya amabhokisi angabamelwane ombala omnye. Yenza ibhodi yonke ibe ngumbala omnye ngaphakathi kwenani eliyivumelekileyo lamanyathelo.",
+    "lib.arcade.note.mastermind": "Ikhompyuter ifihla umqolo wemibala. Khetha umbala kwindawo nganye, emva koko ucinezele Ukiqiqa. Isikhonkwane esimnyama = umbala ochanekileyo kwindawo echanekileyo; isikhonkwane esimhlophe = umbala ochanekileyo kwindawo engachanekanga. Qhekeza ikhowudi ngaphambi kokuba iziqikelelo ziphele.",
+    "lib.arcade.note.hanoi": "Hambisa onke amadiski ukuya kwisigxina sokugqibela. Hambisa kuphela idiski ephezulu yesigxina ngasinye ngexesha, kwaye ungaze ubeke idiski enkulu phezu kwencinci. Cofa isigxina somthombo, emva koko isigxina ekujoliswe kuso.",
+    "lib.arcade.note.pipes": "Cofa ithayile ukujikelezisa umbhobho nge-90°. Dibanisa yonke imibhobho ibe yinethiwekhi enye engenamacala avulekileyo (amacala avulekileyo abonakala ngombala obomvu)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "I-Ô ăn quan",
       "desc": "Umdlalo wemveli waseVietnam wokutyala amatye: tyala amatye uthathe iiMandarin ngokuchasene nekhompyutha; amanqanaba ali-10 asuka kokulula ukuya kokunzima."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Cima zonke izibane: ukucinezela ngalinye kutshintsha ibhokisi kunye nabamelwane bayo abane; amanqanaba ali-10 anamabhodi akhulayo kunye neqhosha lesiluleko."
+    },
+    "fifteen": {
+      "name": "Ipuzzle ye-15 (ipuzzle eshushumbayo)",
+      "desc": "Shushumbisa iithayile ezinamanani ukuze zilandelelane; amanqanaba ali-10 ukusuka kwi-3x3 ukuya kwi-5x5, kudlalwa ngemawusi, ukcofa okanye amaqhosha omnqwazi."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Zalisa ibhodi ukusuka ekoneni de ibe ngumbala omnye ngaphakathi kwenani elilinganiselweyo lamanyathelo; amanqanaba ali-10 anamabhodi amakhulu kunye nemibala emininzi."
+    },
+    "mastermind": {
+      "name": "Mastermind (Umqhekezi wekhowudi)",
+      "desc": "Qhekeza ikhowudi yemibala efihliweyo usebenzisa izikhokelo zezikhonkwane ezimnyama nezimhlophe; amanqanaba ali-10 anezikhowudi ezinde kunye nemibala emininzi."
+    },
+    "hanoi": {
+      "name": "Inqaba yaseHanoi",
+      "desc": "Hambisa amadiski usuka kwisigxina sokuqala uye kwesokugqibela ungabeki idiski enkulu phezu kwencinci; amanqanaba ali-10 ukusuka kumadiski ama-3 ukuya kwayi-12 kwizigxina ezi-4."
+    },
+    "pipes": {
+      "name": "Dibanisa imibhobho",
+      "desc": "Jikelezisa iziqwenga zemibhobho ukuze zidibane zibe yinethiwekhi enye engenamacala avulekileyo; amanqanaba ali-10 anamabhodi akhulayo."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Zalisa amabhokisi usebenzisa izikhokelo zamanani kwimiqolo nakwiikholam ukuze utyhile umfanekiso; amanqanaba ali-10 ukusuka kwi-5x5 ukuya kwi-15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Umsundulizi webhokisi)",
+      "desc": "Sunduzela amabhokisi kwiindawo ekujoliswe kuzo egodaunini; onke amanqanaba ayasonjululwa, amanqanaba ali-10 anamabhokisi amaninzi namagodauni amakhulu."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Beka iziqwenga kwigridi ye-10x10 uzalise imiqolo okanye iikholam ukuze uzicime ufikelele kumanqaku ekujoliswe kuwo; amanqanaba ali-10."
+    },
+    "dots-boxes": {
+      "name": "Amachaphaza namabhokisi",
+      "desc": "Landelelanani nidibanise amachaphaza ukuze nithathe izikwere uze woyise ikhompyuter kumanqanaba ali-10 ukusuka kokulula ukuya kokunzima."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Ekhethekileyo",
+      "desc": "I-tic-tac-toe kwiibhodi ezincinci ezi-9: ibhokisi oyikhethayo ibona apho umchasi wakho kufuneka adlale khona; ngokuchasene nekhompyuter kumanqanaba ali-10."
     }
   },
   "s": {

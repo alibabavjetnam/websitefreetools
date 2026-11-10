@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rød",
     "lib.arcade.cGreen": "Grøn",
     "lib.arcade.cYellow": "Gul",
-    "lib.arcade.cBlue": "Blå"
+    "lib.arcade.cBlue": "Blå",
+    "lib.arcade.guess": "Gæt",
+    "lib.arcade.clearRow": "Ryd række",
+    "lib.arcade.area": "Areal: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} gæt tilbage",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Du kan ikke lægge en større skive oven på en mindre.",
+    "lib.arcade.outOfMoves": "Ikke flere træk!",
+    "lib.arcade.fillAll": "Vælg en farve til hver plads.",
+    "lib.arcade.modeFill": "Udfyld",
+    "lib.arcade.modeMark": "Markér ✕",
+    "lib.arcade.clearAll": "Ryd alt",
+    "lib.arcade.note.nonogram": "Tallene i starten af hver række og kolonne angiver længden af de sammenhængende udfyldte felter i den linje, i rækkefølge, med mindst ét tomt felt mellem grupperne. Klik eller træk for at udfylde felter; skift til “Markér ✕” for at notere felter, du er sikker på er tomme. Opfyld alle ledetråde for at vinde.",
+    "lib.arcade.size": "{n}×{n}-felt",
+    "lib.arcade.restartLevel": "Genstart bane",
+    "lib.arcade.newLayout": "En anden bane",
+    "lib.arcade.note.sokoban": "Flyt spilleren med piletasterne/WASD, knapperne nedenfor eller ved at stryge. Skub alle kasserne hen på målfelterne (de runde prikker). Du kan kun skubbe én kasse ad gangen og ikke trække, så undgå at skubbe kasser ind i hjørner. Brug Fortryd, hvis du har lavet et dårligt træk.",
+    "lib.arcade.boxesDone": "Kasser på plads: {n}/{t}",
+    "lib.arcade.note.block10": "Vælg en brik nederst, og klik derefter på brættet for at placere den (brikker kan ikke drejes). Fyld en hel række eller kolonne for at fjerne den og få ekstra point; fjerner du flere linjer på én gang, får du en stor bonus. Nå målpointene for at klare banen; hvis ingen af de resterende brikker kan placeres, har du tabt.",
+    "lib.arcade.note.dots": "Skiftes til at forbinde to nabopunkter med en streg. Den, der tegner den fjerde side af en firkant, vinder den (i sin farve) og får et ekstra træk. Når alle streger er tegnet, vinder spilleren med flest firkanter. Undgå at tegne den tredje side af en firkant, ellers tager din modstander den.",
+    "lib.arcade.note.ultimate": "Brættet består af 9 små kryds-og-bolle-brætter. Du spiller X og starter. Det felt, du vælger i et lille bræt, afgør, hvilket lille bræt din modstander skal spille i næste gang (det er fremhævet); hvis det bræt allerede er afgjort, må modstanderen spille hvor som helst. Vind et lille bræt for at erobre det; erobr tre små brætter på en række, i en kolonne eller på en diagonal for at vinde spillet.",
+    "lib.arcade.note.lights-out": "Et klik på et felt skifter feltet og dets 4 naboer (tændt/slukket). Sluk alle lys. Brug Hint for at se et felt, det kan betale sig at trykke på.",
+    "lib.arcade.note.fifteen": "Skub de nummererede brikker ind i hullet, så de står i rækkefølge 1, 2, 3… med hullet nederst til højre. Klik på en brik i samme række eller kolonne som hullet for at skubbe hele rækken; piletasterne virker også.",
+    "lib.arcade.note.flood-it": "Vælg en farve for at fylde hele det område, du ejer i øverste venstre hjørne; det opsluger nabofelter i den farve. Gør hele brættet til én farve inden for det tilladte antal træk.",
+    "lib.arcade.note.mastermind": "Computeren skjuler en række farver. Vælg en farve til hver plads, og tryk på Gæt. En sort pind = rigtig farve på rigtig plads; en hvid pind = rigtig farve på forkert plads. Knæk koden, før du løber tør for gæt.",
+    "lib.arcade.note.hanoi": "Flyt alle skiverne til den sidste pind. Flyt kun den øverste skive på en pind ad gangen, og læg aldrig en større skive oven på en mindre. Klik på startpinden og derefter på målpinden.",
+    "lib.arcade.note.pipes": "Klik på en brik for at dreje røret 90°. Forbind alle rør til ét netværk uden åbne ender (åbne ender vises med rødt)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Et traditionelt vietnamesisk spil, hvor man fordeler sten: fordel sten og slå mandarinerne mod computeren; 10 niveauer fra let til svær."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Sluk alle lys: hvert tryk skifter feltet og dets 4 naboer; 10 baner med voksende brætter og en hint-knap."
+    },
+    "fifteen": {
+      "name": "15-puslespil (skubbepuslespil)",
+      "desc": "Skub de nummererede brikker på plads i rækkefølge; 10 baner fra 3x3 til 5x5, spilles med mus, touch eller piletaster."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Oversvøm brættet fra hjørnet, til det er én farve inden for et begrænset antal træk; 10 baner med større brætter og flere farver."
+    },
+    "mastermind": {
+      "name": "Mastermind (kodeknækker)",
+      "desc": "Knæk den skjulte farvekode med ledetråde fra sorte og hvide pinde; 10 baner med længere koder og flere farver."
+    },
+    "hanoi": {
+      "name": "Tårnet i Hanoi",
+      "desc": "Flyt skiverne fra den første til den sidste pind uden at lægge en større skive oven på en mindre; 10 baner fra 3 skiver til 12 skiver på 4 pinde."
+    },
+    "pipes": {
+      "name": "Rørforbindelse",
+      "desc": "Drej rørstykkerne, så de bliver til ét netværk uden åbne ender; 10 baner med voksende brætter."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Udfyld felter ud fra talhjælpene ved rækker og kolonner for at afsløre et billede; 10 baner fra 5x5 til 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (kasseskubber)",
+      "desc": "Skub kasserne hen på målfelterne i et lager; alle baner kan løses, med 10 baner med flere kasser og større lagre."
+    },
+    "block-10x10": {
+      "name": "Blokpuslespil 10x10",
+      "desc": "Placér brikker på et 10x10-felt, og fyld rækker eller kolonner for at fjerne dem og nå målpointene; 10 baner."
+    },
+    "dots-boxes": {
+      "name": "Prikker og bokse",
+      "desc": "Skiftes til at forbinde prikker for at vinde firkanter, og slå computeren i 10 baner fra let til svær."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimativ kryds og bolle",
+      "desc": "Kryds og bolle på 9 små brætter: det felt, du vælger, afgør, hvor din modstander skal spille; mod computeren i 10 baner."
     }
   },
   "s": {

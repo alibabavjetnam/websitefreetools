@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Qizil",
     "lib.arcade.cGreen": "Yashil",
     "lib.arcade.cYellow": "Sariq",
-    "lib.arcade.cBlue": "Ko‘k"
+    "lib.arcade.cBlue": "Ko‘k",
+    "lib.arcade.guess": "Topish",
+    "lib.arcade.clearRow": "Qatorni tozalash",
+    "lib.arcade.area": "Maydon: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} ta taxmin qoldi",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Katta diskni kichigining ustiga qo‘yib bo‘lmaydi.",
+    "lib.arcade.outOfMoves": "Yurishlar tugadi!",
+    "lib.arcade.fillAll": "Har bir o‘rin uchun rang tanlang.",
+    "lib.arcade.modeFill": "To‘ldirish",
+    "lib.arcade.modeMark": "Belgilash ✕",
+    "lib.arcade.clearAll": "Hammasini tozalash",
+    "lib.arcade.note.nonogram": "Har bir qator va ustun boshidagi raqamlar o‘sha chiziqda ketma-ket to‘ldirilgan kataklar guruhlarining uzunligini tartib bilan ko‘rsatadi; guruhlar orasida kamida bitta bo‘sh katak bo‘ladi. Kataklarni to‘ldirish uchun bosing yoki sudrang; bo‘shligiga ishonchingiz komil kataklarni belgilash uchun “Belgilash ✕” rejimiga o‘ting. G‘alaba qozonish uchun barcha maslahatlarni bajaring.",
+    "lib.arcade.size": "{n}×{n} katak",
+    "lib.arcade.restartLevel": "Bosqichni qayta boshlash",
+    "lib.arcade.newLayout": "Boshqa bosqich",
+    "lib.arcade.note.sokoban": "O‘yinchini strelka tugmalari/WASD, pastdagi tugmalar yoki barmoq bilan surish orqali harakatlantiring. Barcha qutilarni nishon kataklarga (dumaloq nuqtalar) suring. Bir vaqtda faqat bitta qutini surish mumkin, tortib bo‘lmaydi, shuning uchun qutilarni burchakka surmang. Noto‘g‘ri yurishni tuzatish uchun Bekor qilish tugmasidan foydalaning.",
+    "lib.arcade.boxesDone": "Nishondagi qutilar: {n}/{t}",
+    "lib.arcade.note.block10": "Pastdan bir shaklni tanlang, so‘ng uni qo‘yish uchun to‘rga bosing (shakllarni aylantirib bo‘lmaydi). To‘liq qator yoki ustunni to‘ldiring, u o‘chadi va qo‘shimcha ball olasiz; bir vaqtda bir nechta chiziqni o‘chirsangiz, katta bonus beriladi. Bosqichni o‘tish uchun nishon ballga yeting; qolgan shakllarning hech biri sig‘masa, yutqazasiz.",
+    "lib.arcade.note.dots": "Navbat bilan ikkita qo‘shni nuqtani chiziq bilan ulang. Kvadratning to‘rtinchi tomonini chizgan o‘yinchi uni (o‘z rangida) egallaydi va yana yuradi. Barcha chiziqlar chizilgach, kvadratlari ko‘p o‘yinchi g‘olib bo‘ladi. Kvadratning uchinchi tomonini chizmang, aks holda raqib uni olib qo‘yadi.",
+    "lib.arcade.note.ultimate": "Taxta 9 ta kichik krestik-nolik taxtasidan iborat. Siz X bilan o‘ynaysiz va birinchi yurasiz. Kichik taxtada tanlagan katagingiz raqib keyingi yurishni qaysi kichik taxtada qilishini belgilaydi (u ajratib ko‘rsatiladi); agar o‘sha taxta tugagan bo‘lsa, raqib istalgan joyda o‘ynashi mumkin. Kichik taxtani yutib, uni egallang; qator, ustun yoki diagonal bo‘ylab uchta kichik taxtani egallasangiz, o‘yinda g‘olib bo‘lasiz.",
+    "lib.arcade.note.lights-out": "Katakka bosish o‘sha katakni va uning 4 ta qo‘shnisini almashtiradi (yoqiq/o‘chiq). Barcha chiroqlarni o‘chiring. Bosishga arziydigan katakni ko‘rish uchun Maslahatdan foydalaning.",
+    "lib.arcade.note.fifteen": "Raqamli plitkalarni bo‘sh joyga surib, 1, 2, 3… tartibida joylashtiring; bo‘sh joy pastki o‘ng burchakda bo‘lsin. Bo‘sh joy bilan bir qator yoki ustundagi plitkaga bossangiz, butun qator suriladi; strelka tugmalari ham ishlaydi.",
+    "lib.arcade.note.flood-it": "Yuqori chap burchakdagi egallagan butun maydoningizni to‘ldirish uchun rang tanlang; u shu rangdagi qo‘shni kataklarni yutadi. Ruxsat etilgan yurishlar soni ichida butun taxtani bir rangga aylantiring.",
+    "lib.arcade.note.mastermind": "Kompyuter ranglar qatorini yashiradi. Har bir o‘rin uchun rang tanlang, so‘ng Topish tugmasini bosing. Qora mix = rang ham, o‘rin ham to‘g‘ri; oq mix = rang to‘g‘ri, o‘rin noto‘g‘ri. Taxminlaringiz tugamasidan kodni toping.",
+    "lib.arcade.note.hanoi": "Barcha disklarni oxirgi tayoqqa ko‘chiring. Har safar faqat tayoqning eng yuqoridagi diskini ko‘chiring va hech qachon katta diskni kichigining ustiga qo‘ymang. Avval boshlang‘ich tayoqqa, so‘ng nishon tayoqqa bosing.",
+    "lib.arcade.note.pipes": "Quvurni 90° aylantirish uchun plitkaga bosing. Barcha quvurlarni ochiq uchlari qolmaydigan yagona tarmoqqa ulang (ochiq uchlar qizil rangda ko‘rsatiladi)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "An’anaviy Vetnam tosh sepish o‘yini: toshlarni sepib, kompyuterga qarshi Mandarinlarni oling; osondan qiyingacha 10 bosqich."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Barcha chiroqlarni o‘chiring: har bir bosish katakni va uning 4 ta qo‘shnisini almashtiradi; taxtalar kattalashib boradigan 10 ta bosqich va maslahat tugmasi."
+    },
+    "fifteen": {
+      "name": "15 boshqotirmasi (surma boshqotirma)",
+      "desc": "Raqamli plitkalarni tartibga keltirish uchun suring; 3x3 dan 5x5 gacha 10 ta bosqich, sichqoncha, sensor yoki strelka tugmalari bilan."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Cheklangan yurishlar ichida taxtani burchakdan boshlab bir rangga bo‘yang; taxtalar kattalashib, ranglar ko‘payib boradigan 10 ta bosqich."
+    },
+    "mastermind": {
+      "name": "Mastermind (Kod buzuvchi)",
+      "desc": "Qora va oq mix maslahatlari yordamida yashirin rang kodini toping; kodlar uzayib, ranglar ko‘payib boradigan 10 ta bosqich."
+    },
+    "hanoi": {
+      "name": "Hanoy minorasi",
+      "desc": "Katta diskni kichigining ustiga qo‘ymasdan disklarni birinchi tayoqdan oxirgisiga ko‘chiring; 3 diskdan 4 ta tayoqda 12 diskkacha 10 ta bosqich."
+    },
+    "pipes": {
+      "name": "Quvurlarni ulash",
+      "desc": "Quvur bo‘laklarini aylantirib, ularni ochiq uchlarsiz yagona tarmoqqa ulang; taxtalar kattalashib boradigan 10 ta bosqich."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Qator va ustunlardagi raqamli maslahatlar bo‘yicha kataklarni to‘ldirib, rasmni oching; 5x5 dan 15x15 gacha 10 ta bosqich."
+    },
+    "sokoban": {
+      "name": "Sokoban (Quti surish)",
+      "desc": "Omborda qutilarni nishon kataklarga suring; har bir bosqich yechiladi, qutilar ko‘p va omborlar katta 10 ta bosqich."
+    },
+    "block-10x10": {
+      "name": "Blok boshqotirmasi 10x10",
+      "desc": "Shakllarni 10x10 to‘rga joylashtiring, qator yoki ustunlarni to‘ldirib o‘chiring va nishon ballga yeting; 10 ta bosqich."
+    },
+    "dots-boxes": {
+      "name": "Nuqtalar va qutilar",
+      "desc": "Navbat bilan nuqtalarni ulab kvadratlarni egallang va 10 ta bosqichda osondan qiyingacha kompyuterni yeng."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate krestik-nolik",
+      "desc": "9 ta kichik taxtada krestik-nolik: tanlagan katagingiz raqib qayerda o‘ynashini belgilaydi; kompyuterga qarshi 10 ta bosqich."
     }
   },
   "s": {

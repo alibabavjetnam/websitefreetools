@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Abang",
     "lib.arcade.cGreen": "Ijo",
     "lib.arcade.cYellow": "Kuning",
-    "lib.arcade.cBlue": "Biru"
+    "lib.arcade.cBlue": "Biru",
+    "lib.arcade.guess": "Tebak",
+    "lib.arcade.clearRow": "Busak baris",
+    "lib.arcade.area": "Area: {n}/{t}",
+    "lib.arcade.triesLeft": "Isih {n} tebakan",
+    "lib.arcade.minMoves": "Minimal: {n}",
+    "lib.arcade.hnBad": "Cakram sing luwih gedhe ora oleh diselehake ing ndhuwur sing luwih cilik.",
+    "lib.arcade.outOfMoves": "Langkah entek!",
+    "lib.arcade.fillAll": "Pilih warna kanggo saben posisi.",
+    "lib.arcade.modeFill": "Isi",
+    "lib.arcade.modeMark": "Tandhani ✕",
+    "lib.arcade.clearAll": "Busak kabeh",
+    "lib.arcade.note.nonogram": "Angka ing wiwitan saben baris lan kolom nuduhake dawane deretan kothak sing kapenuhan terus-terusan ing garis kuwi, kanthi paling ora siji kothak kosong ing antarane deretan. Klik utawa seret kanggo ngisi kothak; pindhah menyang “Tandhani ✕” kanggo nyathet kothak sing sampeyan yakin kosong. Penuhi kabeh pitunjuk supaya menang.",
+    "lib.arcade.size": "Kothak {n}×{n}",
+    "lib.arcade.restartLevel": "Baleni level",
+    "lib.arcade.newLayout": "Level liyane",
+    "lib.arcade.note.sokoban": "Obahna pemain nganggo tombol panah/WASD, tombol ing ngisor, utawa kanthi nggeser. Dorong saben kothak menyang petak target (titik bunder). Mung bisa ndorong siji kothak saben wektu lan ora bisa narik, mula aja ndorong kothak menyang pojok. Gunakake Batal kanggo mbenerake langkah sing salah.",
+    "lib.arcade.boxesDone": "Kothak ing target: {n}/{t}",
+    "lib.arcade.note.block10": "Pilih siji potongan ing ngisor, banjur klik kothak kanggo nyelehake (potongan ora bisa diputer). Isi baris utawa kolom sing kebak kanggo mbusak lan entuk poin tambahan; mbusak sawetara garis bebarengan menehi bonus gedhe. Tekan skor target kanggo ngrampungake level; yen ora ana potongan sing isih cukup, sampeyan kalah.",
+    "lib.arcade.note.dots": "Gantian nyambung rong titik sing cedhak nganggo garis. Sing nggambar sisi kaping papat saka kothak bakal njupuk kothak kuwi (nganggo warnane) lan dolanan maneh. Yen kabeh garis wis digambar, pemain sing kothake luwih akeh menang. Aja nggambar sisi kaping telu saka kothak, yen ora mungsuh bakal njupuk.",
+    "lib.arcade.note.ultimate": "Papan kasusun saka 9 papan tic-tac-toe cilik. Sampeyan main X lan mlaku dhisik. Kothak sing dipilih ing papan cilik nemtokake papan cilik endi sing kudu dimainake mungsuh sabanjure (disorot); yen papan kuwi wis rampung, mungsuh bisa main ing ngendi wae. Menangna papan cilik kanggo ngrebut; rebuten telung papan cilik ing baris, kolom, utawa diagonal supaya menang.",
+    "lib.arcade.note.lights-out": "Ngeklik kothak bakal ngowahi kothak kuwi lan 4 tetanggane (urip/mati). Pateni kabeh lampu. Gunakake Pitunjuk kanggo ndeleng kothak sing patut dipencet.",
+    "lib.arcade.note.fifteen": "Geser ubin sing ana nomere menyang ruang kosong supaya urut 1, 2, 3… karo ruang kosong ing pojok tengen ngisor. Klik ubin ing baris utawa kolom sing padha karo ruang kosong kanggo nggeser kabeh baris; tombol panah uga bisa.",
+    "lib.arcade.note.flood-it": "Pilih warna kanggo ngisi kabeh area sing sampeyan kuwasani ing pojok kiwa ndhuwur; area kuwi bakal nelan kothak tetangga sing warnane padha. Gawe kabeh papan dadi siji warna ing wates jumlah langkah.",
+    "lib.arcade.note.mastermind": "Komputer ndhelikake barisan warna. Pilih warna kanggo saben posisi, banjur pencet Tebak. Pasak ireng = warna bener ing panggonan bener; pasak putih = warna bener ing panggonan salah. Pecahna kodhe sadurunge tebakan entek.",
+    "lib.arcade.note.hanoi": "Pindhahna kabeh cakram menyang tiang pungkasan. Pindhahna mung cakram paling ndhuwur saka tiang saben wektu, lan aja nate nyelehake cakram gedhe ing ndhuwur sing cilik. Klik tiang asal, banjur tiang tujuan.",
+    "lib.arcade.note.pipes": "Klik ubin kanggo muter pipa 90°. Sambungna kabeh pipa dadi siji jaringan tanpa ujung sing mbukak (ujung mbukak katon abang)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Dolanan tradisional Vietnam nyebar watu: sebar watu lan jupuk Mandarin nglawan komputer; 10 level saka gampang nganti angel."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Pateni saben lampu: saben pencetan ngowahi kothak kuwi lan 4 tetanggane; 10 level kanthi papan sing saya gedhe lan tombol pitunjuk."
+    },
+    "fifteen": {
+      "name": "Teka-teki 15 (Teka-teki Geser)",
+      "desc": "Geser ubin sing ana nomere supaya urut; 10 level saka 3x3 nganti 5x5, dimainake nganggo mouse, tutul, utawa tombol panah."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Banjiri papan saka pojok nganti dadi siji warna ing wates langkah; 10 level kanthi papan luwih gedhe lan warna luwih akeh."
+    },
+    "mastermind": {
+      "name": "Mastermind (Pemecah Kode)",
+      "desc": "Pecahna kodhe warna sing didhelikake nganggo pitunjuk pasak ireng lan putih; 10 level kanthi kodhe luwih dawa lan warna luwih akeh."
+    },
+    "hanoi": {
+      "name": "Menara Hanoi",
+      "desc": "Pindhahna cakram saka tiang pisanan menyang tiang pungkasan tanpa nyelehake cakram gedhe ing ndhuwur sing cilik; 10 level saka 3 cakram nganti 12 cakram ing 4 tiang."
+    },
+    "pipes": {
+      "name": "Nyambung Pipa",
+      "desc": "Puter potongan pipa supaya dadi siji jaringan tanpa ujung mbukak; 10 level kanthi papan sing saya gedhe."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Isi kothak nganggo pitunjuk angka ing baris lan kolom kanggo mbukak gambar; 10 level saka 5x5 nganti 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Pendorong Kothak)",
+      "desc": "Dorong kothak menyang petak target ing gudang; saben level bisa dirampungake, 10 level kanthi kothak luwih akeh lan gudang luwih gedhe."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Selehna potongan ing kothak 10x10 lan isi baris utawa kolom kanggo mbusak lan nggayuh skor target; 10 level."
+    },
+    "dots-boxes": {
+      "name": "Titik lan Kothak",
+      "desc": "Gantian nyambung titik kanggo ngrebut kothak lan ngalahake komputer ing 10 level saka gampang nganti angel."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Pungkasan",
+      "desc": "Tic-tac-toe ing 9 papan cilik: kothak sing dipilih nemtokake ing ngendi mungsuh kudu main; lawan komputer ing 10 level."
     }
   },
   "s": {

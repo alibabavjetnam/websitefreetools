@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Pula",
     "lib.arcade.cGreen": "Berde",
     "lib.arcade.cYellow": "Dalag",
-    "lib.arcade.cBlue": "Asul"
+    "lib.arcade.cBlue": "Asul",
+    "lib.arcade.guess": "Tag-ana",
+    "lib.arcade.clearRow": "Papasa ang laray",
+    "lib.arcade.area": "Dapit: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} na lang ka tag-ana ang nahabilin",
+    "lib.arcade.minMoves": "Pinakamubo: {n}",
+    "lib.arcade.hnBad": "Dili ka makabutang og mas dako nga disc ibabaw sa mas gamay.",
+    "lib.arcade.outOfMoves": "Wala nay lakang!",
+    "lib.arcade.fillAll": "Pagpili og kolor alang sa matag posisyon.",
+    "lib.arcade.modeFill": "Pun-a",
+    "lib.arcade.modeMark": "Markahi ✕",
+    "lib.arcade.clearAll": "Papasa tanan",
+    "lib.arcade.note.nonogram": "Ang mga numero sa sinugdan sa matag laray ug kolum nagpakita sa gitas-on sa mga hugpong sa magkasunod nga napunang mga kuwadro niana nga linya, sunod-sunod, nga adunay labing menos usa ka wala’y sulod nga kuwadro tali sa mga hugpong. Pag-klik o pag-drag aron pun-on ang mga kuwadro; pag-ilis sa “Markahi ✕” aron markahan ang mga kuwadro nga sigurado ka nga walay sulod. Tumana ang tanang timailhan aron madaog.",
+    "lib.arcade.size": "{n}×{n} nga grid",
+    "lib.arcade.restartLevel": "Sugdi pag-usab ang lebel",
+    "lib.arcade.newLayout": "Laing lebel",
+    "lib.arcade.note.sokoban": "Ipalihok ang magdudula gamit ang arrow keys/WASD, ang mga buton sa ubos, o pinaagi sa pag-swipe. Dasiga ang tanang kahon padulong sa mga target nga kuwadro (ang lingin nga tuldok). Usa ra ka kahon ang imong madasig matag higayon ug dili ka makabira, busa likayi ang pagduso sa mga kahon sa suok. Gamita ang Undo aron ayohon ang daotang lakang.",
+    "lib.arcade.boxesDone": "Mga kahon sa target: {n}/{t}",
+    "lib.arcade.note.block10": "Pagpili og piraso sa ubos, dayon pag-klik sa grid aron ibutang kini (dili mabalhin ang direksyon sa mga piraso). Pun-a ang tibuok laray o kolum aron mawala kini ug makakuha og dugang puntos; ang pagwagtang sa daghang linya sa usa ka higayon naghatag og dakong bonus. Abta ang target nga puntos aron mapas-an ang lebel; kon walay mohaum sa nahabiling mga piraso, matalo ka.",
+    "lib.arcade.note.dots": "Mag-ilisay sa pagdugtong sa duha ka kasikbit nga tuldok pinaagi sa linya. Kinsa ang makaguhit sa ikaupat nga kilid sa kuwadrado mao ang makakuha niini (sa iyang kolor) ug magdula usab. Kon nakaguhit na ang tanang linya, modaog ang magdudula nga daghan og kuwadrado. Likayi ang pagguhit sa ikatulo nga kilid sa kuwadrado, kay kuhaon kini sa kontra.",
+    "lib.arcade.note.ultimate": "Ang tabla gama sa 9 ka gagmay nga tic-tac-toe nga tabla. Ikaw mao ang X ug ikaw ang mauna. Ang kuwadro nga imong pilion sulod sa gamay nga tabla maoy mopasya kon asa nga gamay nga tabla kinahanglang magdula ang kontra sunod (naka-highlight kini); kon tapos na kanang tablaha, makadula siya bisan asa. Daogi ang gamay nga tabla aron makuha kini; kuhaa ang tulo ka gagmay nga tabla sa usa ka laray, kolum o dayagonal aron madaog ang dula.",
+    "lib.arcade.note.lights-out": "Ang pag-klik sa kuwadro mobaliktad niana nga kuwadro ug sa 4 ka silingan niini (bukas/patay). Patya ang tanang suga. Gamita ang Pahibalo aron makita ang kuwadro nga takos pislitan.",
+    "lib.arcade.note.fifteen": "I-slide ang mga tile nga adunay numero ngadto sa gintang aron ihan-ay kini 1, 2, 3… nga ang gintang naa sa ubos nga too nga suok. Pag-klik sa tile sa parehas nga laray o kolum sa gintang aron i-slide ang tibuok linya; molihok usab ang arrow keys.",
+    "lib.arcade.note.flood-it": "Pagpili og kolor aron pun-on ang tibuok nimong dapit sa taas nga wala nga suok; tamayon niini ang kasikbit nga mga kuwadro nga ingon-ana ang kolor. Himoa nga usa ra ka kolor ang tibuok tabla sulod sa gitugot nga gidaghanon sa lakang.",
+    "lib.arcade.note.mastermind": "Gitagoan sa kompyuter ang usa ka laray sa mga kolor. Pagpili og kolor alang sa matag posisyon, dayon pindota ang Tag-ana. Itom nga peg = husto nga kolor sa husto nga lugar; puti nga peg = husto nga kolor sa sayop nga lugar. Dekoda ang code sa dili pa mahurot ang imong mga tag-ana.",
+    "lib.arcade.note.hanoi": "Ipadulong ang tanang disc sa katapusang peg. Ang labing ibabaw ra nga disc sa peg ang ibalhin matag higayon, ug ayaw gayod butang og mas dako nga disc ibabaw sa mas gamay. Pag-klik sa gigikanan nga peg, dayon sa target nga peg.",
+    "lib.arcade.note.pipes": "Pag-klik sa tile aron ipaligid ang tubo og 90°. Ikonektar ang tanang tubo ngadto sa usa ka network nga walay bukas nga tumoy (ang bukas nga tumoy pula ang pagpakita)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Usa ka tradisyonal nga dula sa Vietnam sa pagsabwag og bato: magsabwag og bato ug kuhaa ang mga Mandarin batok sa kompyuter; 10 ka level gikan sa sayon hangtod lisod."
+    },
+    "lights-out": {
+      "name": "Lights Out (Patya ang Suga)",
+      "desc": "Patya ang tanang suga: ang matag pislit mobaliktad sa kuwadro ug sa 4 ka silingan niini; 10 ka lebel nga misaka ang gidak-on sa tabla ug adunay buton sa pahibalo."
+    },
+    "fifteen": {
+      "name": "15 Puzzle (Sliding Puzzle)",
+      "desc": "I-slide ang mga tile nga adunay numero aron mahan-ay; 10 ka lebel gikan 3x3 hangtod 5x5, dulaon gamit ang mouse, touch o arrow keys."
+    },
+    "flood-it": {
+      "name": "Flood-it (Pagpuno og Kolor)",
+      "desc": "Pun-a ang tabla gikan sa suok hangtod mahimo kini nga usa ka kolor sulod sa limitado nga lakang; 10 ka lebel nga mas dagko ang tabla ug daghan ang kolor."
+    },
+    "mastermind": {
+      "name": "Mastermind (Code Breaker)",
+      "desc": "Dekoda ang tinagong code sa mga kolor gamit ang mga timailhan nga itom ug puti nga peg; 10 ka lebel nga mas taas ang code ug daghan ang kolor."
+    },
+    "hanoi": {
+      "name": "Tore sa Hanoi",
+      "desc": "Ibalhin ang mga disc gikan sa unang peg ngadto sa katapusan nga walay pagbutang og mas dako nga disc ibabaw sa mas gamay; 10 ka lebel gikan 3 ka disc hangtod 12 ka disc sa 4 ka peg."
+    },
+    "pipes": {
+      "name": "Ikonektar ang Tubo",
+      "desc": "Ipaligid ang mga piraso sa tubo aron madugtong kini sa usa ka network nga walay bukas nga tumoy; 10 ka lebel nga misaka ang gidak-on sa tabla."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Pun-a ang mga kuwadro gamit ang mga timailhan nga numero sa mga laray ug kolum aron mapadayag ang hulagway; 10 ka lebel gikan 5x5 hangtod 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Pagduso og Kahon)",
+      "desc": "Dasiga ang mga kahon ngadto sa mga target nga kuwadro sa usa ka bodega; matag lebel mahimong masulbad, 10 ka lebel nga mas daghang kahon ug mas dagkong bodega."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Butanga og mga piraso ang 10x10 nga grid ug pun-a ang mga laray o kolum aron mawala kini ug maabot ang target nga puntos; 10 ka lebel."
+    },
+    "dots-boxes": {
+      "name": "Tuldok ug Kahon",
+      "desc": "Mag-ilisay sa pagdugtong sa mga tuldok aron makuha ang mga kuwadrado ug daogon ang kompyuter sa 10 ka lebel gikan sa sayon hangtod lisod."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate Tic-Tac-Toe",
+      "desc": "Tic-tac-toe sa 9 ka gagmay nga tabla: ang kuwadro nga imong pilion maoy mopasya kon asa magdula ang kontra; batok sa kompyuter sa 10 ka lebel."
     }
   },
   "s": {

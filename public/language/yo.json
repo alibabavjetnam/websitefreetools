@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Pupa",
     "lib.arcade.cGreen": "Àwọ̀ ewé",
     "lib.arcade.cYellow": "Ofeefee",
-    "lib.arcade.cBlue": "Búlúù"
+    "lib.arcade.cBlue": "Búlúù",
+    "lib.arcade.guess": "Ṣe àròsọ",
+    "lib.arcade.clearRow": "Pa ìlà náà rẹ́",
+    "lib.arcade.area": "Agbègbè: {n}/{t}",
+    "lib.arcade.triesLeft": "Ìgbìyànjú {n} ló kù",
+    "lib.arcade.minMoves": "Ó kéré jù lọ: {n}",
+    "lib.arcade.hnBad": "O kò lè gbé àwo ńlá lé orí àwo kékeré.",
+    "lib.arcade.outOfMoves": "Àwọn ìgbésẹ̀ ti tán!",
+    "lib.arcade.fillAll": "Jọ̀wọ́ yan àwọ̀ fún ipò kọ̀ọ̀kan.",
+    "lib.arcade.modeFill": "Kún",
+    "lib.arcade.modeMark": "Sàmì sí ✕",
+    "lib.arcade.clearAll": "Pa gbogbo rẹ̀ rẹ́",
+    "lib.arcade.note.nonogram": "Àwọn nọ́ńbà tó wà ní ìbẹ̀rẹ̀ ìlà àti ọ̀wọ́n kọ̀ọ̀kan fi gígùn àwọn ẹgbẹ́ àpótí tí a kún tẹ̀léra nínú ìlà yẹn hàn, ní ìtẹ̀léra, pẹ̀lú o kéré tán àpótí òfìfo kan láàárín àwọn ẹgbẹ́. Tẹ̀ tàbí fà láti kún àwọn àpótí; yípadà sí “Sàmì sí ✕” láti ṣàkíyèsí àwọn àpótí tí o mọ̀ dájú pé wọ́n ṣófo. Tẹ̀lé gbogbo àwọn àmì ìtọ́nisọ́nà láti borí.",
+    "lib.arcade.size": "Àwòrán {n}×{n}",
+    "lib.arcade.restartLevel": "Tún ìpele náà bẹ̀rẹ̀",
+    "lib.arcade.newLayout": "Ìpele mìíràn",
+    "lib.arcade.note.sokoban": "Gbé òǹṣeré náà nípa àwọn kọ́kọ́rọ́ ọfà/WASD, àwọn bọ́tìnì ìsàlẹ̀, tàbí nípa fífà ìka. Ti gbogbo àwọn àpótí lọ sí àwọn àpótí ibi-àfojúsùn (àwọn ojú ìkúùkú yíká). Àpótí kan ṣoṣo ni o lè tì lẹ́ẹ̀kan, o kò sì lè fà á, nítorí náà má ṣe ti àwọn àpótí sí igun. Lo Yí padà láti tún ìgbésẹ̀ búburú ṣe.",
+    "lib.arcade.boxesDone": "Àwọn àpótí lórí ibi-àfojúsùn: {n}/{t}",
+    "lib.arcade.note.block10": "Yan ègé kan ní ìsàlẹ̀, lẹ́yìn náà tẹ àwòrán láti gbé e sí (a kò lè yí àwọn ègé po). Kún ìlà tàbí ọ̀wọ́n kan pátápátá láti pa á rẹ́ kí o sì gba àmì ẹ̀bùn àfikún; píparẹ́ ọ̀pọ̀ ìlà lẹ́ẹ̀kan náà ń fúnni ní ẹ̀bùn ńlá. Dé àmì ibi-àfojúsùn láti parí ìpele; bí kò bá sí èyí tó wọ̀ nínú àwọn ègé tó kù, o pàdánù.",
+    "lib.arcade.note.dots": "Ẹ máa gba ìgbà láti so àwọn ojú ìkúùkú méjì tó sún mọ́ ara wọn pọ̀ pẹ̀lú ìlà. Ẹni tó fa ẹ̀gbẹ́ kẹrin ti onígun mẹ́rin gba onígun náà (ní àwọ̀ rẹ̀) ó sì tún ṣeré. Nígbà tí a bá ti fa gbogbo ìlà, òǹṣeré tó ní onígun mẹ́rin jù lọ ni ó borí. Yẹra fún fífa ẹ̀gbẹ́ kẹta ti onígun mẹ́rin, bí bẹ́ẹ̀ kọ́ alátakò rẹ yóò gbà á.",
+    "lib.arcade.note.ultimate": "Pákó náà jẹ́ ti pákó kékeré tic-tac-toe mẹ́sàn-án. O ń ṣeré X, o sì kọ́kọ́ lọ. Àpótí tí o yàn nínú pákó kékeré kan ló pinnu pákó kékeré tí alátakò gbọdọ̀ ṣeré nínú rẹ̀ lẹ́yìn náà (a ó fi hàn); bí pákó yẹn bá ti parí, ó lè ṣeré níbikíbi. Borí pákó kékeré láti gbà á; gba pákó kékeré mẹ́ta ní ìlà, ọ̀wọ́n tàbí òòró láti borí eré náà.",
+    "lib.arcade.note.lights-out": "Títẹ àpótí kan yóò yí àpótí yẹn àti àwọn aládùúgbò rẹ̀ mẹ́rin padà (tan/pa). Pa gbogbo iná. Lo Ìtọ́ka láti rí àpótí tó yẹ kí o tẹ̀.",
+    "lib.arcade.note.fifteen": "Fa àwọn tálì tó ní nọ́ńbà sínú àlàfo láti tò wọ́n ní ìtẹ̀léra 1, 2, 3… pẹ̀lú àlàfo ní igun ìsàlẹ̀ ọ̀tún. Tẹ tálì kan ní ìlà tàbí ọ̀wọ́n kan náà pẹ̀lú àlàfo láti fa gbogbo ìlà náà; àwọn kọ́kọ́rọ́ ọfà náà ń ṣiṣẹ́.",
+    "lib.arcade.note.flood-it": "Yan àwọ̀ kan láti kún gbogbo agbègbè rẹ ní igun òkè òsì; ó ń gbé àwọn àpótí aládùúgbò àwọ̀ yẹn mì. Ṣe gbogbo pákó náà ní àwọ̀ kan láàárín iye ìgbésẹ̀ tí a gbà láàyè.",
+    "lib.arcade.note.mastermind": "Kọ̀ǹpútà fi ìlà àwọn àwọ̀ pamọ́. Yan àwọ̀ fún ipò kọ̀ọ̀kan, lẹ́yìn náà tẹ Ṣe àròsọ. Pẹ́ẹ̀gì dúdú = àwọ̀ tó tọ́ ní ibi tó tọ́; pẹ́ẹ̀gì funfun = àwọ̀ tó tọ́ ní ibi tí kò tọ́. Ṣí kóòdù náà kí ìgbìyànjú rẹ tó tán.",
+    "lib.arcade.note.hanoi": "Gbé gbogbo àwọn àwo lọ sí ọ̀pá ìkẹyìn. Gbé àwo orí ọ̀pá kan ṣoṣo lẹ́ẹ̀kan, má sì gbé àwo ńlá lé orí àwo kékeré láé. Tẹ ọ̀pá orísun, lẹ́yìn náà ọ̀pá ibi-àfojúsùn.",
+    "lib.arcade.note.pipes": "Tẹ tálì kan láti yí páìpù náà po ní 90°. So gbogbo páìpù pọ̀ di nẹ́tíwọ́ọ̀kì kan láìsí ìkángun tó ṣí sílẹ̀ (àwọn ìkángun tó ṣí sílẹ̀ hàn ní pupa)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Eré ìbílẹ̀ Vietnam ti fífọ́n òkúta: fọ́n òkúta kí o sì gba àwọn Mandarin lòdì sí kọ̀ǹpútà; ìpele mẹ́wàá láti rọrùn dé le."
+    },
+    "lights-out": {
+      "name": "Lights Out (Pa Iná)",
+      "desc": "Pa gbogbo iná: ìtẹ̀ kọ̀ọ̀kan yóò yí àpótí yẹn àti àwọn aládùúgbò rẹ̀ mẹ́rin padà; ìpele 10 pẹ̀lú pákó tó ń tóbi sí i àti bọ́tìnì ìtọ́ka."
+    },
+    "fifteen": {
+      "name": "Àdììtú 15 (Àdììtú Ìfàsẹ́yìn)",
+      "desc": "Fa àwọn tálì tó ní nọ́ńbà sí ìtẹ̀léra; ìpele 10 láti 3x3 dé 5x5, a ń ṣeré pẹ̀lú eku, ìfọwọ́kàn tàbí àwọn kọ́kọ́rọ́ ọfà."
+    },
+    "flood-it": {
+      "name": "Flood-it (Kún Àwọ̀)",
+      "desc": "Kún pákó náà láti igun títí yóò fi di àwọ̀ kan láàárín iye ìgbésẹ̀ tó ní ààlà; ìpele 10 pẹ̀lú pákó tó tóbi jù àti àwọ̀ tó pọ̀ jù."
+    },
+    "mastermind": {
+      "name": "Mastermind (Ṣí Kóòdù)",
+      "desc": "Ṣí kóòdù àwọ̀ tó farasin nípa lílo àwọn àmì pẹ́ẹ̀gì dúdú àti funfun; ìpele 10 pẹ̀lú kóòdù gígùn jù àti àwọ̀ tó pọ̀ jù."
+    },
+    "hanoi": {
+      "name": "Ilé-ìṣọ́ Hanoi",
+      "desc": "Gbé àwọn àwo láti ọ̀pá àkọ́kọ́ sí ìkẹyìn láìgbé àwo ńlá lé orí àwo kékeré; ìpele 10 láti àwo 3 dé àwo 12 lórí ọ̀pá mẹ́rin."
+    },
+    "pipes": {
+      "name": "So Páìpù Pọ̀",
+      "desc": "Yí àwọn ègé páìpù po láti so wọ́n pọ̀ di nẹ́tíwọ́ọ̀kì kan láìsí ìkángun tó ṣí sílẹ̀; ìpele 10 pẹ̀lú pákó tó ń tóbi sí i."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Kún àwọn àpótí nípa lílo àwọn àmì nọ́ńbà ní ìlà àti ọ̀wọ́n láti fi àwòrán hàn; ìpele 10 láti 5x5 dé 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Ti Àpótí)",
+      "desc": "Ti àwọn àpótí lọ sí àwọn àpótí ibi-àfojúsùn nínú ilé ìkópamọ́; ìpele kọ̀ọ̀kan ṣeé yanjú, ìpele 10 pẹ̀lú àpótí tó pọ̀ jù àti ilé ìkópamọ́ tó tóbi jù."
+    },
+    "block-10x10": {
+      "name": "Àdììtú Bulọ́ọ̀kù 10x10",
+      "desc": "Gbé àwọn ègé sórí àwòrán 10x10 kí o sì kún àwọn ìlà tàbí ọ̀wọ́n láti pa wọ́n rẹ́ kí o sì dé àmì ibi-àfojúsùn; ìpele 10."
+    },
+    "dots-boxes": {
+      "name": "Ojú Ìkúùkú àti Àpótí",
+      "desc": "Gba ìgbà láti so àwọn ojú ìkúùkú pọ̀ láti gba onígun mẹ́rin kí o sì ṣẹ́gun kọ̀ǹpútà ní ìpele 10 láti rọrùn dé le."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate Tic-Tac-Toe",
+      "desc": "Tic-tac-toe lórí pákó kékeré mẹ́sàn-án: àpótí tí o yàn ló pinnu ibi tí alátakò gbọdọ̀ ti ṣeré; lòdì sí kọ̀ǹpútà ní ìpele 10."
     }
   },
   "s": {

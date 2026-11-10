@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Vermello",
     "lib.arcade.cGreen": "Verde",
     "lib.arcade.cYellow": "Amarelo",
-    "lib.arcade.cBlue": "Azul"
+    "lib.arcade.cBlue": "Azul",
+    "lib.arcade.guess": "Adiviñar",
+    "lib.arcade.clearRow": "Borrar fila",
+    "lib.arcade.area": "Área: {n}/{t}",
+    "lib.arcade.triesLeft": "Quedan {n} intentos",
+    "lib.arcade.minMoves": "Mínimo: {n}",
+    "lib.arcade.hnBad": "Non se pode poñer un disco máis grande sobre un máis pequeno.",
+    "lib.arcade.outOfMoves": "Quedaches sen movementos!",
+    "lib.arcade.fillAll": "Elixe unha cor para cada posición.",
+    "lib.arcade.modeFill": "Encher",
+    "lib.arcade.modeMark": "Marcar ✕",
+    "lib.arcade.clearAll": "Borrar todo",
+    "lib.arcade.note.nonogram": "Os números ao principio de cada fila e columna indican as lonxitudes das series de celas cheas consecutivas nesa liña, en orde, con polo menos unha cela baleira entre series. Fai clic ou arrastra para encher celas; cambia a «Marcar ✕» para anotar as celas que sabes seguro que están baleiras. Cumpre todas as pistas para gañar.",
+    "lib.arcade.size": "Cuadrícula {n}×{n}",
+    "lib.arcade.restartLevel": "Reiniciar o nivel",
+    "lib.arcade.newLayout": "Outro nivel",
+    "lib.arcade.note.sokoban": "Move o xogador coas frechas/WASD, cos botóns de abaixo ou deslizando. Empurra todas as caixas ata as casas de destino (os puntos redondos). Só podes empurrar unha caixa á vez e non podes tirar delas, así que evita empurralas ás esquinas. Usa Desfacer para corrixir un mal movemento.",
+    "lib.arcade.boxesDone": "Caixas no destino: {n}/{t}",
+    "lib.arcade.note.block10": "Elixe unha peza abaixo e fai clic na cuadrícula para colocala (as pezas non se poden xirar). Enche unha fila ou columna enteira para eliminala e sumar puntos extra; eliminar varias liñas á vez dá un gran bonus. Alcanza a puntuación obxectivo para superar o nivel; se ningunha das pezas restantes cabe, perdes.",
+    "lib.arcade.note.dots": "Por quendas, unide dous puntos veciños cunha liña. Quen debuxa o cuarto lado dun cadrado quédase con el (da súa cor) e xoga de novo. Cando están debuxadas todas as liñas, gaña o xogador con máis cadrados. Evita debuxar o terceiro lado dun cadrado, ou o rival levarao.",
+    "lib.arcade.note.ultimate": "O taboleiro está formado por 9 taboleiros pequenos de tres en raia. Xogas con X e empezas ti. A cela que elixas dentro dun taboleiro pequeno decide en que taboleiro pequeno debe xogar o rival a continuación (aparece resaltado); se ese taboleiro xa rematou, pode xogar onde queira. Gaña un taboleiro pequeno para reclamalo; reclama tres taboleiros pequenos en fila, columna ou diagonal para gañar a partida.",
+    "lib.arcade.note.lights-out": "Facer clic nunha cela cambia o seu estado e o das súas 4 veciñas (acender/apagar). Apaga todas as luces. Usa Pista para ver unha cela que merece a pena premer.",
+    "lib.arcade.note.fifteen": "Desliza as pezas numeradas ata o oco para ordenalas 1, 2, 3… co oco na esquina inferior dereita. Fai clic nunha peza da mesma fila ou columna que o oco para deslizar toda a liña; as frechas tamén funcionan.",
+    "lib.arcade.note.flood-it": "Elixe unha cor para encher toda a túa área na esquina superior esquerda; traga as celas veciñas desa cor. Fai que todo o taboleiro sexa dunha soa cor co número de movementos permitido.",
+    "lib.arcade.note.mastermind": "O ordenador agocha unha fila de cores. Elixe unha cor para cada posición e preme Adiviñar. Unha ficha negra = cor correcta no sitio correcto; unha ficha branca = cor correcta no sitio equivocado. Descifra o código antes de quedar sen intentos.",
+    "lib.arcade.note.hanoi": "Move todos os discos ao último poste. Move só o disco de arriba dun poste cada vez e nunca poñas un disco máis grande sobre un máis pequeno. Fai clic no poste de orixe e despois no de destino.",
+    "lib.arcade.note.pipes": "Fai clic nunha peza para xirar o tubo 90°. Conecta todos os tubos nunha soa rede sen extremos abertos (os extremos abertos móstranse en vermello)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Un xogo tradicional vietnamita de sementar pedras: semea pedras e captura os Mandaríns contra o ordenador; 10 niveis de fácil a difícil."
+    },
+    "lights-out": {
+      "name": "Lights Out (Apaga as luces)",
+      "desc": "Apaga todas as luces: cada pulsación cambia esa cela e as súas 4 veciñas; 10 niveis con taboleiros cada vez maiores e botón de pista."
+    },
+    "fifteen": {
+      "name": "Puzzle do 15 (puzzle deslizante)",
+      "desc": "Desliza as pezas numeradas ata ordenalas; 10 niveis de 3x3 a 5x5, con rato, tacto ou frechas."
+    },
+    "flood-it": {
+      "name": "Flood-it (Inundar cores)",
+      "desc": "Inunda o taboleiro desde a esquina ata que sexa dunha soa cor nun número limitado de movementos; 10 niveis con taboleiros máis grandes e máis cores."
+    },
+    "mastermind": {
+      "name": "Mastermind (Descifra o código)",
+      "desc": "Descifra o código de cores agochado coas pistas de fichas negras e brancas; 10 niveis con códigos máis longos e máis cores."
+    },
+    "hanoi": {
+      "name": "Torres de Hanói",
+      "desc": "Move os discos do primeiro poste ao último sen poñer un disco máis grande sobre un máis pequeno; 10 niveis de 3 discos a 12 discos en 4 postes."
+    },
+    "pipes": {
+      "name": "Conecta os tubos",
+      "desc": "Xira as pezas de tubo para unilas nunha soa rede sen extremos abertos; 10 niveis con taboleiros cada vez maiores."
+    },
+    "nonogram": {
+      "name": "Nonograma (Picross)",
+      "desc": "Enche celas coas pistas numéricas das filas e columnas para revelar unha imaxe; 10 niveis de 5x5 a 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Empurra caixas)",
+      "desc": "Empurra as caixas ata as casas de destino nun almacén; todos os niveis teñen solución, con 10 niveis de máis caixas e almacéns maiores."
+    },
+    "block-10x10": {
+      "name": "Puzzle de bloques 10x10",
+      "desc": "Coloca pezas nunha cuadrícula 10x10 e enche filas ou columnas para eliminalas e alcanzar a puntuación obxectivo; 10 niveis."
+    },
+    "dots-boxes": {
+      "name": "Puntos e caixas",
+      "desc": "Por quendas, une puntos para reclamar cadrados e vence ao ordenador en 10 niveis de fácil a difícil."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tres en raia definitivo",
+      "desc": "Tres en raia en 9 taboleiros pequenos: a cela que elixas decide onde debe xogar o rival; contra o ordenador en 10 niveis."
     }
   },
   "s": {

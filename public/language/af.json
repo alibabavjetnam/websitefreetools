@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rooi",
     "lib.arcade.cGreen": "Groen",
     "lib.arcade.cYellow": "Geel",
-    "lib.arcade.cBlue": "Blou"
+    "lib.arcade.cBlue": "Blou",
+    "lib.arcade.guess": "Raai",
+    "lib.arcade.clearRow": "Maak ry skoon",
+    "lib.arcade.area": "Gebied: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} raaiskote oor",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Jy kan nie ’n groter skyf op ’n kleiner een plaas nie.",
+    "lib.arcade.outOfMoves": "Geen skuiwe oor nie!",
+    "lib.arcade.fillAll": "Kies ’n kleur vir elke posisie.",
+    "lib.arcade.modeFill": "Vul",
+    "lib.arcade.modeMark": "Merk ✕",
+    "lib.arcade.clearAll": "Maak alles skoon",
+    "lib.arcade.note.nonogram": "Die getalle aan die begin van elke ry en kolom gee in volgorde die lengtes van die reekse aaneenlopende gevulde blokkies in daardie lyn, met ten minste een leë blokkie tussen reekse. Klik of sleep om blokkies te vul; skakel oor na “Merk ✕” om blokkies te noteer wat jy seker leeg is. Voldoen aan alle leidrade om te wen.",
+    "lib.arcade.size": "{n}×{n}-rooster",
+    "lib.arcade.restartLevel": "Herbegin vlak",
+    "lib.arcade.newLayout": "’n Ander vlak",
+    "lib.arcade.note.sokoban": "Beweeg die speler met die pyltjiesleutels/WASD, die knoppies hieronder of deur te swaai. Stoot elke kis op ’n doelblokkie (die ronde kolle). Jy kan net een kis op ’n slag stoot en nie trek nie, so vermy om kiste in hoeke te stoot. Gebruik Ontdoen om ’n slegte skuif reg te stel.",
+    "lib.arcade.boxesDone": "Kiste op doel: {n}/{t}",
+    "lib.arcade.note.block10": "Kies ’n stuk onder, klik dan op die rooster om dit te plaas (stukke kan nie gedraai word nie). Vul ’n hele ry of kolom om dit skoon te maak en ekstra punte te verdien; verskeie lyne gelyk skoonmaak gee ’n groot bonus. Bereik die teikentelling om die vlak te voltooi; as geen van die oorblywende stukke pas nie, verloor jy.",
+    "lib.arcade.note.dots": "Neem beurte om twee naasliggende kolletjies met ’n lyn te verbind. Wie die vierde sy van ’n vierkant teken, eis dit (in sy kleur) en speel weer. Wanneer alle lyne getrek is, wen die speler met die meeste vierkante. Moenie die derde sy van ’n vierkant teken nie, anders neem jou teenstander dit.",
+    "lib.arcade.note.ultimate": "Die bord bestaan uit 9 klein nulletjies-en-kruisies-borde. Jy speel X en gaan eerste. Die blokkie wat jy in ’n klein bord kies, bepaal in watter klein bord jou teenstander volgende moet speel (dit is uitgelig); as daardie bord reeds klaar is, mag hy enige plek speel. Wen ’n klein bord om dit te eis; eis drie klein borde in ’n ry, kolom of diagonaal om die spel te wen.",
+    "lib.arcade.note.lights-out": "As jy op ’n blokkie klik, skakel dit en sy 4 bure om (aan/af). Doof al die ligte. Gebruik Wenk om ’n blokkie te sien wat die moeite werd is om te druk.",
+    "lib.arcade.note.fifteen": "Skuif die genommerde teëls in die gaping om hulle in volgorde 1, 2, 3… te kry, met die gaping in die onderste regterhoek. Klik op ’n teël in dieselfde ry of kolom as die gaping om die hele lyn te skuif; pyltjiesleutels werk ook.",
+    "lib.arcade.note.flood-it": "Kies ’n kleur om die hele gebied wat jy besit in die boonste linkerhoek te vul; dit sluk naburige blokkies van daardie kleur in. Maak die hele bord een kleur binne die toegelate aantal skuiwe.",
+    "lib.arcade.note.mastermind": "Die rekenaar versteek ’n ry kleure. Kies ’n kleur vir elke posisie en druk dan Raai. ’n Swart penpie = regte kleur op die regte plek; ’n wit penpie = regte kleur op die verkeerde plek. Kraak die kode voordat jou raaiskote op is.",
+    "lib.arcade.note.hanoi": "Skuif al die skywe na die laaste paal. Skuif elke keer net die boonste skyf van ’n paal, en plaas nooit ’n groter skyf op ’n kleiner een nie. Klik op die bronpaal en dan op die teikenpaal.",
+    "lib.arcade.note.pipes": "Klik op ’n teël om die pyp 90° te draai. Verbind al die pype in een netwerk sonder oop punte (oop punte word rooi gewys)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "'n Tradisionele Viëtnamese saaispel: saai klippe en vang die Mandaryne teen die rekenaar; 10 vlakke van maklik tot moeilik."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Doof elke lig: elke druk skakel daardie blokkie en sy 4 bure om; 10 vlakke met groeiende borde en ’n wenkknoppie."
+    },
+    "fifteen": {
+      "name": "15-legkaart (skuiflegkaart)",
+      "desc": "Skuif die genommerde teëls in volgorde; 10 vlakke van 3x3 tot 5x5, gespeel met muis, raak of pyltjiesleutels."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Oorstroom die bord vanaf die hoek totdat dit een kleur is binne ’n beperkte aantal skuiwe; 10 vlakke met groter borde en meer kleure."
+    },
+    "mastermind": {
+      "name": "Mastermind (kodekraker)",
+      "desc": "Kraak die versteekte kleurkode met swart en wit penpies as leidrade; 10 vlakke met langer kodes en meer kleure."
+    },
+    "hanoi": {
+      "name": "Toring van Hanoi",
+      "desc": "Skuif die skywe van die eerste na die laaste paal sonder om ’n groter skyf op ’n kleiner een te plaas; 10 vlakke van 3 skywe tot 12 skywe op 4 pale."
+    },
+    "pipes": {
+      "name": "Pypverbinding",
+      "desc": "Draai die pypstukke om hulle in een netwerk sonder oop punte te verbind; 10 vlakke met groeiende borde."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Vul blokkies met die getalleidrade by die rye en kolomme om ’n prentjie te onthul; 10 vlakke van 5x5 tot 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (kisstoter)",
+      "desc": "Stoot die kiste na die doelblokkies in ’n pakhuis; elke vlak is oplosbaar, met 10 vlakke met meer kiste en groter pakhuise."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Plaas stukke op ’n 10x10-rooster en vul rye of kolomme om hulle skoon te maak en die teikentelling te bereik; 10 vlakke."
+    },
+    "dots-boxes": {
+      "name": "Kolletjies en blokkies",
+      "desc": "Neem beurte om kolletjies te verbind om vierkante te wen en klop die rekenaar oor 10 vlakke van maklik tot moeilik."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultieme nulletjies en kruisies",
+      "desc": "Nulletjies en kruisies oor 9 klein borde: die blokkie wat jy kies, bepaal waar jou teenstander moet speel; teen die rekenaar oor 10 vlakke."
     }
   },
   "s": {

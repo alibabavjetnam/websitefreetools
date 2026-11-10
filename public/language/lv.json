@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Sarkans",
     "lib.arcade.cGreen": "Zaļš",
     "lib.arcade.cYellow": "Dzeltens",
-    "lib.arcade.cBlue": "Zils"
+    "lib.arcade.cBlue": "Zils",
+    "lib.arcade.guess": "Minēt",
+    "lib.arcade.clearRow": "Notīrīt rindu",
+    "lib.arcade.area": "Laukums: {n}/{t}",
+    "lib.arcade.triesLeft": "Atlikuši {n} mēģinājumi",
+    "lib.arcade.minMoves": "Minimums: {n}",
+    "lib.arcade.hnBad": "Lielāku disku nedrīkst likt uz mazāka.",
+    "lib.arcade.outOfMoves": "Gājieni beigušies!",
+    "lib.arcade.fillAll": "Izvēlieties krāsu katrai vietai.",
+    "lib.arcade.modeFill": "Aizpildīt",
+    "lib.arcade.modeMark": "Atzīmēt ✕",
+    "lib.arcade.clearAll": "Notīrīt visu",
+    "lib.arcade.note.nonogram": "Skaitļi katras rindas un kolonnas sākumā norāda secīgi aizpildīto rūtiņu grupu garumus šajā līnijā to secībā, un starp grupām ir vismaz viena tukša rūtiņa. Klikšķiniet vai velciet, lai aizpildītu rūtiņas; pārslēdzieties uz “Atzīmēt ✕”, lai atzīmētu rūtiņas, par kurām esat pārliecināts, ka tās ir tukšas. Izpildiet visus mājienus, lai uzvarētu.",
+    "lib.arcade.size": "Režģis {n}×{n}",
+    "lib.arcade.restartLevel": "Sākt līmeni no jauna",
+    "lib.arcade.newLayout": "Cits līmenis",
+    "lib.arcade.note.sokoban": "Pārvietojiet spēlētāju ar bulttaustiņiem/WASD, zemāk esošajām pogām vai velkot ar pirkstu. Nogrūdiet visas kastes uz mērķa rūtiņām (apaļie punkti). Vienlaikus var grūst tikai vienu kasti, un vilkt nevar, tāpēc negrūdiet kastes stūros. Slikta gājiena labošanai izmantojiet Atsaukt.",
+    "lib.arcade.boxesDone": "Kastes uz mērķiem: {n}/{t}",
+    "lib.arcade.note.block10": "Apakšā izvēlieties figūru un noklikšķiniet uz režģa, lai to novietotu (figūras nevar pagriezt). Aizpildiet visu rindu vai kolonnu, lai to izdzēstu un iegūtu papildu punktus; vairāku līniju izdzēšana vienlaikus dod lielu bonusu. Sasniedziet mērķa punktu skaitu, lai pabeigtu līmeni; ja neviena atlikusī figūra neietilpst, zaudējat.",
+    "lib.arcade.note.dots": "Pēc kārtas savienojiet divus blakus esošus punktus ar līniju. Kas novelk kvadrāta ceturto malu, iegūst to (savā krāsā) un gājienu turpina. Kad visas līnijas novilktas, uzvar spēlētājs ar vairāk kvadrātu. Nenovelciet kvadrāta trešo malu, citādi pretinieks to paņems.",
+    "lib.arcade.note.ultimate": "Laukums sastāv no 9 maziem krustiņu un nulliņu laukumiem. Jūs spēlējat ar X un sākat pirmais. Rūtiņa, ko izvēlaties mazajā laukumā, nosaka, kurā mazajā laukumā pretiniekam jāspēlē nākamajā gājienā (tas ir izcelts); ja šis laukums jau ir pabeigts, viņš drīkst spēlēt jebkur. Uzvariet mazo laukumu, lai to iegūtu; iegūstiet trīs mazos laukumus rindā, kolonnā vai diagonālē, lai uzvarētu spēlē.",
+    "lib.arcade.note.lights-out": "Noklikšķinot uz rūtiņas, tiek pārslēgta šī rūtiņa un tās 4 kaimiņi (ieslēgts/izslēgts). Izslēdziet visas gaismas. Izmantojiet Mājienu, lai redzētu rūtiņu, kuru vērts nospiest.",
+    "lib.arcade.note.fifteen": "Bīdiet numurētās flīzes tukšajā vietā, lai tās sakārtotu secībā 1, 2, 3… ar tukšo vietu apakšējā labajā stūrī. Noklikšķiniet uz flīzes tajā pašā rindā vai kolonnā kā tukšā vieta, lai pabīdītu visu rindu; darbojas arī bulttaustiņi.",
+    "lib.arcade.note.flood-it": "Izvēlieties krāsu, ar kuru aizpildīt visu jūsu kontrolēto apgabalu augšējā kreisajā stūrī; tas aprij blakus esošās tās pašas krāsas rūtiņas. Ļaujiet visam laukumam kļūt vienā krāsā atļautajā gājienu skaitā.",
+    "lib.arcade.note.mastermind": "Dators paslēpj krāsu rindu. Izvēlieties krāsu katrai vietai, tad nospiediet Minēt. Melns tapiņš = pareiza krāsa pareizajā vietā; balts tapiņš = pareiza krāsa nepareizajā vietā. Atminiet kodu, pirms beidzas mēģinājumi.",
+    "lib.arcade.note.hanoi": "Pārvietojiet visus diskus uz pēdējo stieni. Vienlaikus pārvietojiet tikai stieņa augšējo disku un nekad nelieciet lielāku disku uz mazāka. Noklikšķiniet uz sākuma stieņa, tad uz mērķa stieņa.",
+    "lib.arcade.note.pipes": "Noklikšķiniet uz flīzes, lai pagrieztu cauruli par 90°. Savienojiet visas caurules vienā tīklā bez atvērtiem galiem (atvērtie gali ir sarkani)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Tradicionāla vjetnamiešu akmentiņu sēšanas spēle: sējiet akmentiņus un ņemiet mandarīnus pret datoru; 10 līmeņi no viegla līdz grūtam."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Izslēdziet visas gaismas: katrs piespiediens pārslēdz rūtiņu un tās 4 kaimiņus; 10 līmeņi ar augošiem laukumiem un mājiena pogu."
+    },
+    "fifteen": {
+      "name": "Piecpadsmitnieks (bīdāmā mīkla)",
+      "desc": "Bīdiet numurētās flīzes pareizā secībā; 10 līmeņi no 3x3 līdz 5x5, spēlē ar peli, pieskārienu vai bulttaustiņiem."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Applūdiniet laukumu no stūra, līdz tas kļūst vienā krāsā ierobežotā gājienu skaitā; 10 līmeņi ar lielākiem laukumiem un vairāk krāsām."
+    },
+    "mastermind": {
+      "name": "Mastermind (kodu lauzējs)",
+      "desc": "Atminiet slēpto krāsu kodu ar melno un balto tapiņu mājieniem; 10 līmeņi ar garākiem kodiem un vairāk krāsām."
+    },
+    "hanoi": {
+      "name": "Hanojas tornis",
+      "desc": "Pārvietojiet diskus no pirmā stieņa uz pēdējo, nekad nelekot lielāku disku uz mazāka; 10 līmeņi no 3 diskiem līdz 12 diskiem uz 4 stieņiem."
+    },
+    "pipes": {
+      "name": "Cauruļu savienošana",
+      "desc": "Pagrieziet cauruļu detaļas, lai savienotu tās vienā tīklā bez atvērtiem galiem; 10 līmeņi ar augošiem laukumiem."
+    },
+    "nonogram": {
+      "name": "Nonogramma (Picross)",
+      "desc": "Aizpildiet rūtiņas pēc skaitļu mājieniem pie rindām un kolonnām, lai atklātu attēlu; 10 līmeņi no 5x5 līdz 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (kastu grūšana)",
+      "desc": "Nogrūdiet kastes uz mērķa rūtiņām noliktavā; katrs līmenis ir atrisināms, 10 līmeņi ar vairāk kastēm un lielākām noliktavām."
+    },
+    "block-10x10": {
+      "name": "Bloku mīkla 10x10",
+      "desc": "Novietojiet figūras 10x10 režģī un aizpildiet rindas vai kolonnas, lai tās izdzēstu un sasniegtu mērķa punktu skaitu; 10 līmeņi."
+    },
+    "dots-boxes": {
+      "name": "Punkti un kastes",
+      "desc": "Pēc kārtas savienojiet punktus, lai iegūtu kvadrātus, un uzvariet datoru 10 līmeņos no vieglā līdz grūtajam."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate krustiņi un nulliņas",
+      "desc": "Krustiņi un nulliņas uz 9 maziem laukumiem: izvēlētā rūtiņa nosaka, kur jāspēlē pretiniekam; pret datoru 10 līmeņos."
     }
   },
   "s": {

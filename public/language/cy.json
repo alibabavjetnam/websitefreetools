@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Coch",
     "lib.arcade.cGreen": "Gwyrdd",
     "lib.arcade.cYellow": "Melyn",
-    "lib.arcade.cBlue": "Glas"
+    "lib.arcade.cBlue": "Glas",
+    "lib.arcade.guess": "Dyfalu",
+    "lib.arcade.clearRow": "Clirio'r rhes",
+    "lib.arcade.area": "Ardal: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} dyfaliad ar ôl",
+    "lib.arcade.minMoves": "Lleiafswm: {n}",
+    "lib.arcade.hnBad": "Ni allwch roi disg fwy ar ben disg lai.",
+    "lib.arcade.outOfMoves": "Dim symudiadau ar ôl!",
+    "lib.arcade.fillAll": "Dewiswch liw ar gyfer pob safle.",
+    "lib.arcade.modeFill": "Llenwi",
+    "lib.arcade.modeMark": "Marcio ✕",
+    "lib.arcade.clearAll": "Clirio'r cyfan",
+    "lib.arcade.note.nonogram": "Mae'r rhifau ar ddechrau pob rhes a cholofn yn dangos hyd y rhediadau o gelloedd llawn olynol yn y llinell honno, yn eu trefn, gydag o leiaf un gell wag rhwng y rhediadau. Cliciwch neu llusgwch i lenwi celloedd; newidiwch i “Marcio ✕” i nodi celloedd rydych yn siŵr eu bod yn wag. Bodlonwch bob cliw i ennill.",
+    "lib.arcade.size": "Grid {n}×{n}",
+    "lib.arcade.restartLevel": "Ailddechrau'r lefel",
+    "lib.arcade.newLayout": "Lefel arall",
+    "lib.arcade.note.sokoban": "Symudwch y chwaraewr gyda'r bysellau saeth/WASD, y botymau isod, neu drwy droi bys. Gwthiwch bob bocs i'r sgwariau targed (y dotiau crwn). Dim ond un bocs ar y tro y gallwch ei wthio ac ni allwch dynnu, felly osgowch wthio bocsys i gorneli. Defnyddiwch Dadwneud i unioni symudiad gwael.",
+    "lib.arcade.boxesDone": "Bocsys ar y targed: {n}/{t}",
+    "lib.arcade.note.block10": "Dewiswch ddarn ar y gwaelod, yna cliciwch ar y grid i'w osod (ni ellir cylchdroi'r darnau). Llenwch res neu golofn gyfan i'w chlirio a sgorio pwyntiau ychwanegol; mae clirio sawl llinell ar unwaith yn rhoi bonws mawr. Cyrhaeddwch y sgôr targed i basio'r lefel; os nad oes yr un o'r darnau sy'n weddill yn ffitio, rydych yn colli.",
+    "lib.arcade.note.dots": "Cymerwch dro i uno dau ddot cyfagos â llinell. Mae pwy bynnag sy'n tynnu pedwerydd ochr sgwâr yn ei hawlio (yn ei liw ei hun) ac yn chwarae eto. Pan fydd pob llinell wedi'i thynnu, y chwaraewr â mwy o sgwariau sy'n ennill. Osgowch dynnu trydydd ochr sgwâr, neu bydd eich gwrthwynebydd yn ei gymryd.",
+    "lib.arcade.note.ultimate": "Mae'r bwrdd yn cynnwys 9 bwrdd bach o dic-tac-toe. Rydych chi'n chwarae X ac yn mynd gyntaf. Mae'r gell a ddewiswch y tu mewn i fwrdd bach yn penderfynu ym mha fwrdd bach y mae'n rhaid i'ch gwrthwynebydd chwarae nesaf (caiff ei amlygu); os yw'r bwrdd hwnnw eisoes wedi gorffen, gall chwarae unrhyw le. Enillwch fwrdd bach i'w hawlio; hawliwch dri bwrdd bach mewn rhes, colofn neu groeslin i ennill y gêm.",
+    "lib.arcade.note.lights-out": "Mae clicio ar gell yn troi'r gell honno a'i 4 chymydog (ymlaen/i ffwrdd). Diffoddwch bob golau. Defnyddiwch Awgrym i weld cell sy'n werth ei gwasgu.",
+    "lib.arcade.note.fifteen": "Llithrwch y teils rhif i'r bwlch i'w rhoi yn y drefn 1, 2, 3… gyda'r bwlch yn y gornel waelod ar y dde. Cliciwch ar deilsen yn yr un rhes neu golofn â'r bwlch i lithro'r llinell gyfan; mae'r bysellau saeth yn gweithio hefyd.",
+    "lib.arcade.note.flood-it": "Dewiswch liw i lenwi'r ardal gyfan sy'n eiddo i chi yn y gornel uchaf ar y chwith; mae'n llyncu celloedd cyfagos o'r lliw hwnnw. Gwnewch y bwrdd cyfan yn un lliw o fewn y nifer o symudiadau a ganiateir.",
+    "lib.arcade.note.mastermind": "Mae'r cyfrifiadur yn cuddio rhes o liwiau. Dewiswch liw ar gyfer pob safle, yna pwyswch Dyfalu. Peg du = y lliw cywir yn y lle cywir; peg gwyn = y lliw cywir yn y lle anghywir. Datryswch y cod cyn i'ch dyfaliadau ddod i ben.",
+    "lib.arcade.note.hanoi": "Symudwch yr holl ddisgiau i'r peg olaf. Symudwch ddim ond disg uchaf peg bob tro, a pheidiwch byth â rhoi disg fwy ar ben disg lai. Cliciwch ar y peg ffynhonnell, yna'r peg targed.",
+    "lib.arcade.note.pipes": "Cliciwch ar deilsen i gylchdroi'r bibell 90°. Cysylltwch bob pibell yn un rhwydwaith heb unrhyw bennau agored (dangosir pennau agored mewn coch)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Gêm hau cerrig draddodiadol o Fietnam: heuwch gerrig a daliwch y Mandarinau yn erbyn y cyfrifiadur; 10 lefel o hawdd i anodd."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Diffoddwch bob golau: mae pob gwasgiad yn troi'r gell honno a'i 4 chymydog; 10 lefel gyda byrddau sy'n tyfu a botwm awgrym."
+    },
+    "fifteen": {
+      "name": "Pos 15 (Pos Llithro)",
+      "desc": "Llithrwch y teils rhif i'r drefn gywir; 10 lefel o 3x3 i 5x5, a chwaraeir gyda llygoden, cyffwrdd neu fysellau saeth."
+    },
+    "flood-it": {
+      "name": "Flood-it (Gorlifo Lliwiau)",
+      "desc": "Gorlifwch y bwrdd o'r gornel nes ei fod yn un lliw o fewn nifer cyfyngedig o symudiadau; 10 lefel gyda byrddau mwy a mwy o liwiau."
+    },
+    "mastermind": {
+      "name": "Mastermind (Datrys Cod)",
+      "desc": "Datryswch y cod lliwiau cudd gan ddefnyddio cliwiau pegiau du a gwyn; 10 lefel gyda chodau hirach a mwy o liwiau."
+    },
+    "hanoi": {
+      "name": "Tŵr Hanoi",
+      "desc": "Symudwch y disgiau o'r peg cyntaf i'r olaf heb roi disg fwy ar ben disg lai; 10 lefel o 3 disg i 12 disg ar 4 peg."
+    },
+    "pipes": {
+      "name": "Cysylltu Pibellau",
+      "desc": "Cylchdroi'r darnau pibell i'w huno'n un rhwydwaith heb bennau agored; 10 lefel gyda byrddau sy'n tyfu."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Llenwch gelloedd gan ddefnyddio'r cliwiau rhif wrth y rhesi a'r colofnau i ddatgelu llun; 10 lefel o 5x5 i 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Gwthio Bocsys)",
+      "desc": "Gwthiwch y bocsys i'r sgwariau targed mewn warws; mae modd datrys pob lefel, gyda 10 lefel o fwy o focsys a warysau mwy."
+    },
+    "block-10x10": {
+      "name": "Pos Blociau 10x10",
+      "desc": "Gosodwch ddarnau ar grid 10x10 a llenwi rhesi neu golofnau i'w clirio a chyrraedd y sgôr targed; 10 lefel."
+    },
+    "dots-boxes": {
+      "name": "Dotiau a Blychau",
+      "desc": "Cymerwch dro i uno dotiau i hawlio sgwariau a threchu'r cyfrifiadur dros 10 lefel o hawdd i anodd."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Eithaf",
+      "desc": "Tic-tac-toe ar draws 9 bwrdd bach: mae'r gell a ddewiswch yn penderfynu ble mae'n rhaid i'ch gwrthwynebydd chwarae; yn erbyn y cyfrifiadur dros 10 lefel."
     }
   },
   "s": {

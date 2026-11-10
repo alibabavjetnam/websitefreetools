@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Kırmızı",
     "lib.arcade.cGreen": "Yeşil",
     "lib.arcade.cYellow": "Sarı",
-    "lib.arcade.cBlue": "Mavi"
+    "lib.arcade.cBlue": "Mavi",
+    "lib.arcade.guess": "Tahmin Et",
+    "lib.arcade.clearRow": "Satırı temizle",
+    "lib.arcade.area": "Alan: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} tahmin hakkı kaldı",
+    "lib.arcade.minMoves": "En az: {n}",
+    "lib.arcade.hnBad": "Büyük bir diski küçük bir diskin üzerine koyamazsınız.",
+    "lib.arcade.outOfMoves": "Hamleniz kalmadı!",
+    "lib.arcade.fillAll": "Lütfen her konum için bir renk seçin.",
+    "lib.arcade.modeFill": "Doldur",
+    "lib.arcade.modeMark": "İşaretle ✕",
+    "lib.arcade.clearAll": "Tümünü temizle",
+    "lib.arcade.note.nonogram": "Her satırın ve sütunun başındaki sayılar, o çizgideki art arda dolu hücre gruplarının uzunluklarını sırasıyla verir; gruplar arasında en az bir boş hücre bulunur. Hücreleri doldurmak için tıklayın veya sürükleyin; boş olduğundan emin olduğunuz hücreleri not etmek için “İşaretle ✕” moduna geçin. Kazanmak için tüm ipuçlarını sağlayın.",
+    "lib.arcade.size": "{n}×{n} ızgara",
+    "lib.arcade.restartLevel": "Seviyeyi yeniden başlat",
+    "lib.arcade.newLayout": "Başka bir seviye",
+    "lib.arcade.note.sokoban": "Oyuncuyu ok tuşları/WASD, aşağıdaki düğmeler veya kaydırarak hareket ettirin. Tüm kutuları hedef karelere (yuvarlak noktalar) itin. Aynı anda yalnızca bir kutuyu itebilir, çekemezsiniz; bu yüzden kutuları köşelere sıkıştırmayın. Kötü bir hamleyi düzeltmek için Geri Al'ı kullanın.",
+    "lib.arcade.boxesDone": "Hedefteki kutular: {n}/{t}",
+    "lib.arcade.note.block10": "Altta bir parça seçin, sonra yerleştirmek için ızgaraya tıklayın (parçalar döndürülemez). Bir satırı veya sütunu tamamen doldurarak onu temizleyin ve ekstra puan kazanın; aynı anda birden çok çizgiyi temizlemek büyük bonus getirir. Seviyeyi geçmek için hedef puana ulaşın; kalan parçalardan hiçbiri sığmazsa kaybedersiniz.",
+    "lib.arcade.note.dots": "Sırayla iki komşu noktayı bir çizgiyle birleştirin. Bir karenin dördüncü kenarını çizen kişi o kareyi (kendi renginde) alır ve tekrar oynar. Tüm çizgiler çizildiğinde daha çok karesi olan kazanır. Bir karenin üçüncü kenarını çizmekten kaçının, yoksa rakibiniz o kareyi alır.",
+    "lib.arcade.note.ultimate": "Tahta 9 küçük XOX tahtasından oluşur. Siz X oynarsınız ve ilk başlarsınız. Küçük bir tahtada seçtiğiniz hücre, rakibinizin bir sonraki hamlesini hangi küçük tahtada yapacağını belirler (vurgulanır); o tahta zaten bittiyse istediği yerde oynayabilir. Bir küçük tahtayı kazanarak onu alın; yatay, dikey veya çapraz üç küçük tahtayı alan oyunu kazanır.",
+    "lib.arcade.note.lights-out": "Bir hücreye tıklamak o hücreyi ve 4 komşusunu açar/kapatır. Tüm ışıkları söndürün. Basmaya değer bir hücreyi görmek için İpucu'nu kullanın.",
+    "lib.arcade.note.fifteen": "Numaralı karoları boşluğa kaydırarak 1, 2, 3… sırasına dizin; boşluk sağ alt köşede olmalı. Boşlukla aynı satır veya sütundaki bir karoya tıklayarak tüm hattı kaydırın; ok tuşları da çalışır.",
+    "lib.arcade.note.flood-it": "Sol üst köşede sahip olduğunuz alanı doldurmak için bir renk seçin; alan, o renkteki komşu hücreleri yutar. İzin verilen hamle sayısı içinde tüm tahtayı tek renk yapın.",
+    "lib.arcade.note.mastermind": "Bilgisayar bir renk dizisi saklar. Her konum için bir renk seçin, sonra Tahmin Et'e basın. Siyah çubuk = doğru renk doğru yerde; beyaz çubuk = doğru renk yanlış yerde. Tahmin hakkınız bitmeden şifreyi çözün.",
+    "lib.arcade.note.hanoi": "Tüm diskleri son çubuğa taşıyın. Her seferinde yalnızca bir çubuğun en üstteki diskini taşıyın ve büyük bir diski asla küçük bir diskin üzerine koymayın. Önce kaynak çubuğa, sonra hedef çubuğa tıklayın.",
+    "lib.arcade.note.pipes": "Bir boruyu 90° döndürmek için karoya tıklayın. Tüm boruları açık ucu kalmayacak şekilde tek bir ağda birleştirin (açık uçlar kırmızı gösterilir)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Geleneksel bir Vietnam taş dağıtma oyunu: taşları dağıtın ve bilgisayara karşı Mandarinleri alın; kolaydan zora 10 seviye."
+    },
+    "lights-out": {
+      "name": "Lights Out (Işıkları Söndür)",
+      "desc": "Tüm ışıkları söndürün: her basış o hücreyi ve 4 komşusunu çevirir; büyüyen tahtalar ve ipucu düğmesiyle 10 seviye."
+    },
+    "fifteen": {
+      "name": "15 Bulmacası (Kaydırmalı Bulmaca)",
+      "desc": "Numaralı karoları sıraya dizin; 3x3'ten 5x5'e 10 seviye, fare, dokunmatik veya ok tuşlarıyla oynanır."
+    },
+    "flood-it": {
+      "name": "Flood-it (Renk Doldurma)",
+      "desc": "Tahtayı köşeden doldurarak sınırlı hamlede tek renge çevirin; daha büyük tahtalar ve daha çok renkle 10 seviye."
+    },
+    "mastermind": {
+      "name": "Mastermind (Şifre Kırıcı)",
+      "desc": "Siyah ve beyaz çubuk ipuçlarıyla gizli renk şifresini çözün; daha uzun şifreler ve daha çok renkle 10 seviye."
+    },
+    "hanoi": {
+      "name": "Hanoi Kuleleri",
+      "desc": "Büyük diski küçüğün üzerine koymadan diskleri ilk çubuktan sonuncuya taşıyın; 3 diskten 4 çubukta 12 diske 10 seviye."
+    },
+    "pipes": {
+      "name": "Boru Birleştirme",
+      "desc": "Boru parçalarını döndürerek açık ucu kalmayan tek bir ağda birleştirin; büyüyen tahtalarla 10 seviye."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Satır ve sütunlardaki sayı ipuçlarına göre hücreleri doldurarak resmi ortaya çıkarın; 5x5'ten 15x15'e 10 seviye."
+    },
+    "sokoban": {
+      "name": "Sokoban (Kutu İtme)",
+      "desc": "Bir depoda kutuları hedef karelere itin; her seviye çözülebilir, daha çok kutu ve daha büyük depolarla 10 seviye."
+    },
+    "block-10x10": {
+      "name": "Blok Bulmaca 10x10",
+      "desc": "Parçaları 10x10 ızgaraya yerleştirin, satır veya sütunları doldurup temizleyerek hedef puana ulaşın; 10 seviye."
+    },
+    "dots-boxes": {
+      "name": "Nokta ve Kutu Oyunu",
+      "desc": "Sırayla noktaları birleştirip kareleri kazanın ve kolaydan zora 10 seviyede bilgisayarı yenin."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate XOX",
+      "desc": "9 küçük tahtada XOX: seçtiğiniz hücre rakibin nerede oynayacağını belirler; 10 seviyede bilgisayara karşı."
     }
   },
   "s": {

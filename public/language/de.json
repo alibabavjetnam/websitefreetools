@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rot",
     "lib.arcade.cGreen": "Grün",
     "lib.arcade.cYellow": "Gelb",
-    "lib.arcade.cBlue": "Blau"
+    "lib.arcade.cBlue": "Blau",
+    "lib.arcade.guess": "Raten",
+    "lib.arcade.clearRow": "Zeile leeren",
+    "lib.arcade.area": "Fläche: {n}/{t}",
+    "lib.arcade.triesLeft": "Noch {n} Versuche",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Du kannst keine größere Scheibe auf eine kleinere legen.",
+    "lib.arcade.outOfMoves": "Keine Züge mehr!",
+    "lib.arcade.fillAll": "Bitte wähle für jede Position eine Farbe.",
+    "lib.arcade.modeFill": "Füllen",
+    "lib.arcade.modeMark": "Markieren ✕",
+    "lib.arcade.clearAll": "Alles löschen",
+    "lib.arcade.note.nonogram": "Die Zahlen am Anfang jeder Zeile und Spalte geben der Reihe nach die Längen der zusammenhängenden ausgefüllten Felder an, getrennt durch mindestens ein leeres Feld. Klicke oder ziehe, um Felder auszufüllen; wechsle zu „Markieren ✕“, um Felder zu kennzeichnen, die sicher leer sind. Erfülle alle Hinweise, um zu gewinnen.",
+    "lib.arcade.size": "{n}×{n}-Raster",
+    "lib.arcade.restartLevel": "Level neu starten",
+    "lib.arcade.newLayout": "Anderes Level",
+    "lib.arcade.note.sokoban": "Bewege die Figur mit den Pfeiltasten/WASD, den Tasten unten oder per Wischen. Schiebe alle Kisten auf die Zielfelder (die runden Punkte). Du kannst nur eine Kiste auf einmal schieben und nicht ziehen, also vermeide es, Kisten in Ecken zu schieben. Mit „Rückgängig“ machst du einen schlechten Zug ungeschehen.",
+    "lib.arcade.boxesDone": "Kisten auf Zielen: {n}/{t}",
+    "lib.arcade.note.block10": "Wähle unten ein Teil aus und klicke dann auf das Raster, um es zu platzieren (Teile lassen sich nicht drehen). Fülle eine ganze Zeile oder Spalte, um sie zu löschen und Extrapunkte zu erhalten; mehrere Linien auf einmal bringen einen hohen Bonus. Erreiche die Zielpunktzahl, um das Level zu schaffen; passt keines der übrigen Teile mehr, hast du verloren.",
+    "lib.arcade.note.dots": "Verbindet abwechselnd zwei benachbarte Punkte mit einer Linie. Wer die vierte Seite eines Kästchens zieht, erhält es (in seiner Farbe) und ist noch einmal dran. Sind alle Linien gezogen, gewinnt, wer mehr Kästchen hat. Zieh nicht die dritte Seite eines Kästchens, sonst schnappt es dir dein Gegner weg.",
+    "lib.arcade.note.ultimate": "Das Spielfeld besteht aus 9 kleinen Tic-Tac-Toe-Feldern. Du spielst X und beginnst. Das Feld, das du in einem kleinen Brett wählst, bestimmt, in welchem kleinen Brett dein Gegner als Nächstes spielen muss (es ist hervorgehoben); ist dieses Brett schon entschieden, darf er überall spielen. Gewinne ein kleines Brett, um es zu erobern; erobere drei kleine Bretter in einer Reihe, Spalte oder Diagonale, um das Spiel zu gewinnen.",
+    "lib.arcade.note.lights-out": "Ein Klick auf ein Feld schaltet dieses Feld und seine 4 Nachbarn um (an/aus). Schalte alle Lichter aus. Mit „Tipp“ siehst du ein Feld, das sich zu drücken lohnt.",
+    "lib.arcade.note.fifteen": "Schiebe die nummerierten Kacheln in die Lücke, bis sie in der Reihenfolge 1, 2, 3 … liegen und die Lücke unten rechts ist. Klicke auf eine Kachel in derselben Zeile oder Spalte wie die Lücke, um die ganze Reihe zu verschieben; auch die Pfeiltasten funktionieren.",
+    "lib.arcade.note.flood-it": "Wähle eine Farbe, um das gesamte Gebiet in der oberen linken Ecke damit zu füllen; es verschluckt benachbarte Felder dieser Farbe. Bringe das ganze Brett innerhalb der erlaubten Zugzahl auf eine Farbe.",
+    "lib.arcade.note.mastermind": "Der Computer versteckt eine Farbreihe. Wähle für jede Position eine Farbe und drücke dann „Raten“. Ein schwarzer Stift = richtige Farbe an der richtigen Stelle; ein weißer Stift = richtige Farbe an der falschen Stelle. Knacke den Code, bevor deine Versuche aufgebraucht sind.",
+    "lib.arcade.note.hanoi": "Bringe alle Scheiben auf den letzten Stab. Bewege jedes Mal nur die oberste Scheibe eines Stabs und lege nie eine größere auf eine kleinere. Klicke erst den Ausgangsstab, dann den Zielstab an.",
+    "lib.arcade.note.pipes": "Klicke auf ein Teil, um das Rohr um 90° zu drehen. Verbinde alle Rohre zu einem Netz, in dem kein offenes Ende mehr übrig ist (offene Enden sind rot markiert)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Ein traditionelles vietnamesisches Säespiel: Verteile Steine und schlage die Mandarinen gegen den Computer; 10 Level von leicht bis schwer."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Schalte alle Lichter aus: Jeder Klick schaltet das Feld und seine 4 Nachbarn um; 10 Level mit wachsenden Feldern und Tipp-Taste."
+    },
+    "fifteen": {
+      "name": "15-Puzzle (Schiebepuzzle)",
+      "desc": "Schiebe die nummerierten Kacheln in die richtige Reihenfolge; 10 Level von 3x3 bis 5x5, spielbar mit Maus, Touch oder Pfeiltasten."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Flute das Brett von der Ecke aus, bis es mit begrenzten Zügen einfarbig ist; 10 Level mit größeren Brettern und mehr Farben."
+    },
+    "mastermind": {
+      "name": "Mastermind (Code-Knacker)",
+      "desc": "Knacke den versteckten Farbcode anhand schwarzer und weißer Stifte als Hinweise; 10 Level mit längeren Codes und mehr Farben."
+    },
+    "hanoi": {
+      "name": "Türme von Hanoi",
+      "desc": "Bewege die Scheiben vom ersten zum letzten Stab, ohne eine größere auf eine kleinere zu legen; 10 Level von 3 Scheiben bis zu 12 Scheiben an 4 Stäben."
+    },
+    "pipes": {
+      "name": "Rohrverbindung",
+      "desc": "Drehe die Rohrteile, bis sie ein Netz ohne offene Enden bilden; 10 Level mit wachsenden Brettern."
+    },
+    "nonogram": {
+      "name": "Nonogramm (Picross)",
+      "desc": "Fülle Felder anhand der Zahlenhinweise an Zeilen und Spalten aus, um ein Bild zu enthüllen; 10 Level von 5x5 bis 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Kistenschieber)",
+      "desc": "Schiebe in einem Lager die Kisten auf die Zielfelder; jedes Level ist lösbar, 10 Level mit mehr Kisten und größeren Lagern."
+    },
+    "block-10x10": {
+      "name": "Block-Puzzle 10x10",
+      "desc": "Platziere Teile auf einem 10x10-Raster und fülle Zeilen oder Spalten, um sie zu löschen und die Zielpunktzahl zu erreichen; 10 Level."
+    },
+    "dots-boxes": {
+      "name": "Käsekästchen",
+      "desc": "Verbindet abwechselnd Punkte, um Kästchen zu erobern, und schlage den Computer in 10 Levels von leicht bis schwer."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimatives Tic-Tac-Toe",
+      "desc": "Tic-Tac-Toe über 9 kleine Bretter: Dein gewähltes Feld bestimmt, wo dein Gegner spielen muss; gegen den Computer in 10 Leveln."
     }
   },
   "s": {

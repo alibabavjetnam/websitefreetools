@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rauður",
     "lib.arcade.cGreen": "Grænn",
     "lib.arcade.cYellow": "Gulur",
-    "lib.arcade.cBlue": "Blár"
+    "lib.arcade.cBlue": "Blár",
+    "lib.arcade.guess": "Giska",
+    "lib.arcade.clearRow": "Hreinsa röð",
+    "lib.arcade.area": "Svæði: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} ágiskanir eftir",
+    "lib.arcade.minMoves": "Lágmark: {n}",
+    "lib.arcade.hnBad": "Þú getur ekki sett stærri skífu ofan á minni.",
+    "lib.arcade.outOfMoves": "Engir leikir eftir!",
+    "lib.arcade.fillAll": "Veldu lit fyrir hverja stöðu.",
+    "lib.arcade.modeFill": "Fylla",
+    "lib.arcade.modeMark": "Merkja ✕",
+    "lib.arcade.clearAll": "Hreinsa allt",
+    "lib.arcade.note.nonogram": "Tölurnar fremst í hverri röð og dálki sýna í réttri röð lengd samfelldra raða fylltra reita í línunni, með minnst einum tómum reit á milli. Smelltu eða dragðu til að fylla reiti; skiptu yfir í „Merkja ✕“ til að merkja reiti sem þú veist að eru tómir. Uppfylltu allar vísbendingar til að vinna.",
+    "lib.arcade.size": "{n}×{n} rist",
+    "lib.arcade.restartLevel": "Byrja borðið upp á nýtt",
+    "lib.arcade.newLayout": "Annað borð",
+    "lib.arcade.note.sokoban": "Færðu leikmanninn með örvatökkum/WASD, hnöppunum fyrir neðan eða með því að strjúka. Ýttu hverjum kassa á markreit (kringlóttu punktarnir). Þú getur aðeins ýtt einum kassa í einu og ekki dregið, svo forðastu að ýta kössum út í horn. Notaðu Afturkalla til að laga slæman leik.",
+    "lib.arcade.boxesDone": "Kassar á marki: {n}/{t}",
+    "lib.arcade.note.block10": "Veldu kubb neðst og smelltu síðan á ristina til að setja hann (kubbum er ekki hægt að snúa). Fylltu heila röð eða dálk til að hreinsa hana og fá aukastig; að hreinsa margar línur í einu gefur stóran bónus. Náðu markstiginu til að klára borðið; ef enginn af kubbunum sem eftir eru passar taparðu.",
+    "lib.arcade.note.dots": "Skiptist á að tengja tvo nálæga punkta með línu. Sá sem dregur fjórðu hlið ferningsins tekur hann (í sínum lit) og leikur aftur. Þegar allar línur eru dregnar vinnur sá sem á fleiri ferninga. Forðastu að draga þriðju hlið ferningsins, annars tekur andstæðingurinn hann.",
+    "lib.arcade.note.ultimate": "Borðið er gert úr 9 litlum þrjár-í-röð borðum. Þú spilar X og byrjar. Reiturinn sem þú velur í litlu borði ræður í hvaða litla borði andstæðingurinn verður að spila næst (það er auðkennt); sé það borð þegar búið má hann spila hvar sem er. Vinndu lítið borð til að eignast það; eignastu þrjú lítil borð í röð, dálki eða á ská til að vinna leikinn.",
+    "lib.arcade.note.lights-out": "Þegar þú smellir á reit víxlast hann og 4 nágrannar hans (kveikt/slökkt). Slökktu öll ljósin. Notaðu Vísbendingu til að sjá reit sem borgar sig að ýta á.",
+    "lib.arcade.note.fifteen": "Renndu númeruðu flísunum í bilið til að raða þeim 1, 2, 3… með bilið neðst í hægra horni. Smelltu á flís í sömu röð eða dálki og bilið til að renna allri línunni; örvatakkarnir virka líka.",
+    "lib.arcade.note.flood-it": "Veldu lit til að fylla allt svæðið sem þú átt efst í vinstra horni; það gleypir nálæga reiti í þeim lit. Gerðu allt borðið einlitt innan leyfilegs fjölda leikja.",
+    "lib.arcade.note.mastermind": "Tölvan felur röð af litum. Veldu lit fyrir hverja stöðu og ýttu síðan á Giska. Svartur pinni = réttur litur á réttum stað; hvítur pinni = réttur litur á röngum stað. Ráddu kóðann áður en ágiskanirnar klárast.",
+    "lib.arcade.note.hanoi": "Færðu allar skífurnar á síðasta stólpann. Færðu aðeins efstu skífu stólpa í einu og settu aldrei stærri skífu ofan á minni. Smelltu á upphafsstólpann og svo á áfangastólpann.",
+    "lib.arcade.note.pipes": "Smelltu á flís til að snúa pípunni um 90°. Tengdu allar pípur í eitt net án opinna enda (opnir endar eru rauðir)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Hefðbundinn víetnamskur sáningarleikur: sáðu steinum og taktu mandarínur gegn tölvunni; 10 borð frá léttu til erfiðs."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Slökktu öll ljósin: hver ýting víxlar reitnum og 4 nágrönnum hans; 10 borð með stækkandi borðum og vísbendingarhnappi."
+    },
+    "fifteen": {
+      "name": "15-þraut (renniþraut)",
+      "desc": "Renndu númeruðu flísunum í rétta röð; 10 borð frá 3x3 upp í 5x5, spilað með mús, snertingu eða örvatökkum."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Flæddu yfir borðið frá horninu þar til það er einlitt innan takmarkaðs fjölda leikja; 10 borð með stærri borðum og fleiri litum."
+    },
+    "mastermind": {
+      "name": "Mastermind (kóðabrjótur)",
+      "desc": "Ráddu falinn litakóða með svörtum og hvítum pinnum sem vísbendingum; 10 borð með lengri kóðum og fleiri litum."
+    },
+    "hanoi": {
+      "name": "Hanoi-turnarnir",
+      "desc": "Færðu skífurnar af fyrsta stólpanum á þann síðasta án þess að setja stærri skífu ofan á minni; 10 borð frá 3 skífum upp í 12 skífur á 4 stólpum."
+    },
+    "pipes": {
+      "name": "Pípulagnir",
+      "desc": "Snúðu pípubútunum þannig að þeir myndi eitt net án opinna enda; 10 borð með stækkandi borðum."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Fylltu reiti með tölulegu vísbendingunum við raðir og dálka til að afhjúpa mynd; 10 borð frá 5x5 upp í 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (kassaýtir)",
+      "desc": "Ýttu kössunum á markreitina í vöruhúsi; öll borð eru leysanleg, 10 borð með fleiri kössum og stærri vöruhúsum."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Settu kubba á 10x10 rist og fylltu raðir eða dálka til að hreinsa þá og ná markstiginu; 10 borð."
+    },
+    "dots-boxes": {
+      "name": "Punktar og kassar",
+      "desc": "Skiptist á að tengja punkta til að eignast ferninga og sigraðu tölvuna í 10 borðum frá auðveldum til erfiðra."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ofur þrjár-í-röð",
+      "desc": "Þrjár-í-röð á 9 litlum borðum: reiturinn sem þú velur ræður hvar andstæðingurinn verður að spila; gegn tölvunni í 10 borðum."
     }
   },
   "s": {

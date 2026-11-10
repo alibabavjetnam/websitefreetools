@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rød",
     "lib.arcade.cGreen": "Grønn",
     "lib.arcade.cYellow": "Gul",
-    "lib.arcade.cBlue": "Blå"
+    "lib.arcade.cBlue": "Blå",
+    "lib.arcade.guess": "Gjett",
+    "lib.arcade.clearRow": "Tøm rad",
+    "lib.arcade.area": "Areal: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} gjett igjen",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Du kan ikke legge en større skive oppå en mindre.",
+    "lib.arcade.outOfMoves": "Tom for trekk!",
+    "lib.arcade.fillAll": "Velg en farge for hver posisjon.",
+    "lib.arcade.modeFill": "Fyll",
+    "lib.arcade.modeMark": "Merk ✕",
+    "lib.arcade.clearAll": "Tøm alt",
+    "lib.arcade.note.nonogram": "Tallene i starten av hver rad og kolonne viser lengden på sammenhengende fylte ruter på den linjen, i rekkefølge, med minst én tom rute mellom gruppene. Klikk eller dra for å fylle ruter; bytt til «Merk ✕» for å notere ruter du er sikker på er tomme. Oppfyll alle hintene for å vinne.",
+    "lib.arcade.size": "{n}×{n}-rutenett",
+    "lib.arcade.restartLevel": "Start nivået på nytt",
+    "lib.arcade.newLayout": "Et annet nivå",
+    "lib.arcade.note.sokoban": "Flytt spilleren med piltastene/WASD, knappene under eller ved å sveipe. Dytt alle kassene på målrutene (de runde prikkene). Du kan bare dytte én kasse om gangen og kan ikke trekke, så unngå å dytte kasser inn i hjørner. Bruk Angre for å rette opp et dårlig trekk.",
+    "lib.arcade.boxesDone": "Kasser på mål: {n}/{t}",
+    "lib.arcade.note.block10": "Velg en brikke nederst, og klikk deretter på rutenettet for å plassere den (brikker kan ikke roteres). Fyll en hel rad eller kolonne for å fjerne den og få ekstra poeng; å fjerne flere linjer samtidig gir en stor bonus. Nå målpoengsummen for å klare nivået; hvis ingen av de gjenværende brikkene passer, taper du.",
+    "lib.arcade.note.dots": "Skift på å binde sammen to nabo-prikker med en strek. Den som tegner den fjerde siden av en rute, tar ruten (i sin farge) og går på nytt. Når alle strekene er tegnet, vinner spilleren med flest ruter. Unngå å tegne den tredje siden av en rute, ellers tar motstanderen den.",
+    "lib.arcade.note.ultimate": "Brettet består av 9 små tikk-takk-tå-brett. Du spiller X og begynner. Ruten du velger i et lite brett avgjør hvilket lite brett motstanderen må spille i neste gang (det er utheva); er det brettet allerede avgjort, kan motstanderen spille hvor som helst. Vinn et lite brett for å ta det; ta tre små brett på rad, i kolonne eller diagonalt for å vinne spillet.",
+    "lib.arcade.note.lights-out": "Et klikk på en rute bytter den ruten og de 4 naboene (av/på). Slå av alle lysene. Bruk Hint for å se en rute det lønner seg å trykke på.",
+    "lib.arcade.note.fifteen": "Skyv de nummererte brikkene inn i åpningen for å sette dem i rekkefølgen 1, 2, 3… med åpningen nede til høyre. Klikk på en brikke i samme rad eller kolonne som åpningen for å skyve hele rekken; piltastene fungerer også.",
+    "lib.arcade.note.flood-it": "Velg en farge for å fylle hele området du eier øverst til venstre; det sluker nabo-ruter i den fargen. Gjør hele brettet til én farge innen det tillatte antallet trekk.",
+    "lib.arcade.note.mastermind": "Datamaskinen skjuler en rekke farger. Velg en farge for hver posisjon, og trykk deretter Gjett. En svart pinne = riktig farge på riktig plass; en hvit pinne = riktig farge på feil plass. Knekk koden før du går tom for gjett.",
+    "lib.arcade.note.hanoi": "Flytt alle skivene til den siste pinnen. Flytt bare den øverste skiven på en pinne hver gang, og legg aldri en større skive oppå en mindre. Klikk på startpinnen, og deretter på målpinnen.",
+    "lib.arcade.note.pipes": "Klikk på en brikke for å rotere røret 90°. Koble alle rørene til ett nettverk uten åpne ender (åpne ender vises i rødt)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Et tradisjonelt vietnamesisk såspill: så ut steiner og ta mandarinene mot datamaskinen; 10 nivåer fra enkelt til vanskelig."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Slå av alle lysene: hvert trykk snur ruten og de 4 naboene; 10 nivåer med voksende brett og hint-knapp."
+    },
+    "fifteen": {
+      "name": "15-brikkespill (skyvepuslespill)",
+      "desc": "Skyv de nummererte brikkene i rekkefølge; 10 nivåer fra 3x3 til 5x5, spilles med mus, berøring eller piltaster."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Fyll brettet fra hjørnet til det er én farge innen et begrenset antall trekk; 10 nivåer med større brett og flere farger."
+    },
+    "mastermind": {
+      "name": "Mastermind (kodeknekker)",
+      "desc": "Knekk den skjulte fargekoden ved hjelp av hint med svarte og hvite pinner; 10 nivåer med lengre koder og flere farger."
+    },
+    "hanoi": {
+      "name": "Hanois tårn",
+      "desc": "Flytt skivene fra første til siste pinne uten å legge en større skive på en mindre; 10 nivåer fra 3 skiver til 12 skiver på 4 pinner."
+    },
+    "pipes": {
+      "name": "Rørkobling",
+      "desc": "Roter rørbrikkene for å koble dem til ett nettverk uten åpne ender; 10 nivåer med voksende brett."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Fyll ruter ved hjelp av tallhintene ved radene og kolonnene for å avsløre et bilde; 10 nivåer fra 5x5 til 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (kassedytter)",
+      "desc": "Dytt kassene på målrutene i et lager; alle nivåer kan løses, 10 nivåer med flere kasser og større lagre."
+    },
+    "block-10x10": {
+      "name": "Blokkpuslespill 10x10",
+      "desc": "Plasser brikker på et 10x10-rutenett og fyll rader eller kolonner for å fjerne dem og nå målpoengsummen; 10 nivåer."
+    },
+    "dots-boxes": {
+      "name": "Prikker og bokser",
+      "desc": "Bind sammen prikker på skift for å ta ruter, og slå datamaskinen over 10 nivåer fra lett til vanskelig."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate tikk-takk-tå",
+      "desc": "Tikk-takk-tå på 9 små brett: ruten du velger avgjør hvor motstanderen må spille; mot datamaskinen over 10 nivåer."
     }
   },
   "s": {

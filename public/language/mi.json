@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Whero",
     "lib.arcade.cGreen": "Kākāriki",
     "lib.arcade.cYellow": "Kōwhai",
-    "lib.arcade.cBlue": "Kikorangi"
+    "lib.arcade.cBlue": "Kikorangi",
+    "lib.arcade.guess": "Whakapae",
+    "lib.arcade.clearRow": "Whakawātea rārangi",
+    "lib.arcade.area": "Wāhi: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} ngā whakapae e toe ana",
+    "lib.arcade.minMoves": "Iti rawa: {n}",
+    "lib.arcade.hnBad": "Kāore e taea te whakanoho i tētahi kōpae nui ki runga i tētahi kōpae iti.",
+    "lib.arcade.outOfMoves": "Kua pau ngā nekehanga!",
+    "lib.arcade.fillAll": "Tēnā koa tīpako i tētahi tae mō ia tūnga.",
+    "lib.arcade.modeFill": "Whakakī",
+    "lib.arcade.modeMark": "Tohu ✕",
+    "lib.arcade.clearAll": "Whakawātea katoa",
+    "lib.arcade.note.nonogram": "Ko ngā tau i te tīmatanga o ia rārangi me ia tīwai e whakaatu ana i te roa o ngā rōpū pūtau kua whakakīia e whai ake nei i taua rārangi, i runga i te raupapa, me te kore e iti iho i te kotahi te pūtau putua i waenga i ngā rōpū. Pāwhiri, toia rānei hei whakakī i ngā pūtau; whakawhiti ki “Tohu ✕” hei tohu i ngā pūtau e tino mōhio ana koe he putua. Whakatutuki i ngā tohu katoa kia toa ai koe.",
+    "lib.arcade.size": "Matiti {n}×{n}",
+    "lib.arcade.restartLevel": "Tīmata anō te taumata",
+    "lib.arcade.newLayout": "Tētahi atu taumata",
+    "lib.arcade.note.sokoban": "Neke i te kaitākaro mā ngā pātene pere/WASD, ngā pātene i raro, mā te whakawhiti rānei. Tohea ngā pouaka katoa ki ngā tapawhā whāinga (ngā ira porowhita). Kotahi anake te pouaka e taea te toha i te wā kotahi, ā, kāore e taea te kume, nā reira kaua e toha i ngā pouaka ki ngā kokonga. Whakamahia Whakakore hei whakatika i tētahi nekehanga kino.",
+    "lib.arcade.boxesDone": "Ngā pouaka kei runga i ngā whāinga: {n}/{t}",
+    "lib.arcade.note.block10": "Tīpakohia tētahi wāhanga i raro, ka pāwhiri i te matiti hei whakanoho (kāore e taea te huri ngā wāhanga). Whakakīia tētahi rārangi, tīwai rānei kia ūnga ai ka whiwhi koe i ētahi kaute atu anō; ki te ūnga i ngā rārangi maha i te wā kotahi ka nui te takoha. Eke ki te kaute whāinga kia whiti ai te taumata; ki te kore he wāhanga o ngā toenga e uru, ka hinga koe.",
+    "lib.arcade.note.dots": "Whakahuri-hurihia te hono i ngā ira tata e rua ki te rārangi kotahi. Ko te tangata ka tā i te taha tuawhā o tētahi tapawhā ka riro i a ia taua tapawhā (i tōna tae) ka tākaro anō. Ina oti katoa ngā rārangi te tā, ka toa te kaitākaro he nui ake ōna tapawhā. Kaua e tā i te taha tuatoru o tētahi tapawhā, ka riro hoki i tō hoa tauwhatinga.",
+    "lib.arcade.note.ultimate": "He iwa ngā papa iti tīki-tāka-tō hei hanga i te papa. Ko koe te X, ā, ko koe te tīmata. Ko te pūtau e tīpako ai koe i roto i tētahi papa iti ka whakatau ko tēhea papa iti hei tākaro mā tō hoa tauwhatinga ā muri atu (kua whakamaramahia); ki te oti kē taua papa, ka taea e ia te tākaro ki hea noa. Toa i tētahi papa iti kia riro mai i a koe; riro mai i a koe ngā papa iti e toru i te rārangi, i te tīwai, i te whakapae rānei kia toa ai te kēmu.",
+    "lib.arcade.note.lights-out": "Ki te pāwhiri koe i tētahi pūtau ka huri taua pūtau me ōna hoa tata e whā (mura/mate). Whakamatea ngā rama katoa. Whakamahia te Tohu hei kite i tētahi pūtau e whai hua ana te pēhi.",
+    "lib.arcade.note.fifteen": "Whakaterehia ngā taera tau ki te āputa kia raupapa ai 1, 2, 3… kei te kokonga raro matau te āputa. Pāwhiri i tētahi taera kei te rārangi, tīwai rānei kotahi me te āputa hei whakatere i te rārangi katoa; e mahi ana hoki ngā pātene pere.",
+    "lib.arcade.note.flood-it": "Tīpakohia tētahi tae hei whakakī i te wāhi katoa kei a koe i te kokonga runga mauī; ka horomia e ia ngā pūtau tata o taua tae. Hurihia te papa katoa ki te tae kotahi i roto i te maha o ngā nekehanga e whakaaetia ana.",
+    "lib.arcade.note.mastermind": "Ka huna te rorohiko i tētahi rārangi tae. Tīpakohia tētahi tae mō ia tūnga, ka pēhi Whakapae. Pine pango = tae tika i te wāhi tika; pine mā = tae tika i te wāhi hē. Wāwāhia te waehere i mua i te pau o ngā whakapae.",
+    "lib.arcade.note.hanoi": "Nekehia ngā kōpae katoa ki te pou whakamutunga. Kotahi anake te kōpae i runga rawa o tētahi pou e nekehia i te wā kotahi, ā, kaua rawa e whakanoho i tētahi kōpae nui ki runga i tētahi iti. Pāwhiri i te pou taketake, ka pāwhiri i te pou whāinga.",
+    "lib.arcade.note.pipes": "Pāwhiri i tētahi taera hei huri i te paipa 90°. Hononga ngā paipa katoa hei whatunga kotahi kāore he pito tuwhera e toe ana (e whakaatuhia ana ngā pito tuwhera ki te whero)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "He kēmu rūkahu kōhatu tuku iho nō Vietnam: rūkia ngā kōhatu ka hopu i ngā Mandarin ki te rorohiko; 10 ngā taumata mai i te ngāwari ki te uaua."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Whakamatea ngā rama katoa: ka huri te pēhi kotahi i taua pūtau me ōna hoa tata e whā; 10 ngā taumata me ngā papa e tipu ana me te pātene tohu."
+    },
+    "fifteen": {
+      "name": "Panga 15 (panga whakatere)",
+      "desc": "Whakaterehia ngā taera tau kia raupapa; 10 ngā taumata mai i te 3x3 ki te 5x5, ka tākaro ki te kiore, ki te pā, ki ngā pātene pere rānei."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Whakakī i te papa mai i te kokonga kia kotahi te tae i roto i te maha iti o ngā nekehanga; 10 ngā taumata me ngā papa nui ake me ētahi atu tae."
+    },
+    "mastermind": {
+      "name": "Mastermind (Kaiwāwāhi Waehere)",
+      "desc": "Wāwāhia te waehere tae huna mā ngā tohu pine pango me te mā; 10 ngā taumata me ngā waehere roa ake me ētahi atu tae."
+    },
+    "hanoi": {
+      "name": "Pourewa o Hanoi",
+      "desc": "Nekehia ngā kōpae mai i te pou tuatahi ki te pou whakamutunga me te kore e whakanoho i tētahi kōpae nui ki runga i tētahi iti; 10 ngā taumata mai i te 3 kōpae ki te 12 kōpae i runga i ngā pou 4."
+    },
+    "pipes": {
+      "name": "Hono Paipa",
+      "desc": "Hurihia ngā wāhanga paipa kia hono hei whatunga kotahi kāore he pito tuwhera; 10 ngā taumata me ngā papa e tipu ana."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Whakakīia ngā pūtau mā ngā tohu tau o ngā rārangi me ngā tīwai hei whakaatu i tētahi pikitia; 10 ngā taumata mai i te 5x5 ki te 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Kaitohu Pouaka)",
+      "desc": "Tohea ngā pouaka ki ngā tapawhā whāinga i roto i tētahi whare putunga; ka taea te whakaoti i ia taumata, 10 ngā taumata me ngā pouaka maha ake me ngā whare putunga nui ake."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Whakanohoia ngā wāhanga ki tētahi matiti 10x10, ka whakakī i ngā rārangi, tīwai rānei hei ūnga, ā, eke ki te kaute whāinga; 10 ngā taumata."
+    },
+    "dots-boxes": {
+      "name": "Ngā Ira me Ngā Pouaka",
+      "desc": "Whakahuri-hurihia te hono i ngā ira hei tango tapawhā, ka hinga i te rorohiko i ngā taumata 10 mai i te ngāwari ki te uaua."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tīki-Tāka-Tō Mutunga",
+      "desc": "Tīki-tāka-tō i runga i ngā papa iti e iwa: ko te pūtau e tīpako ai koe ka whakatau ki hea tākaro ai tō hoa tauwhatinga; ki te rorohiko i ngā taumata 10."
     }
   },
   "s": {

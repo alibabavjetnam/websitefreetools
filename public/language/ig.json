@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Ọbara ọbara",
     "lib.arcade.cGreen": "Akwụkwọ ndụ",
     "lib.arcade.cYellow": "Odo",
-    "lib.arcade.cBlue": "Anụnụ anụnụ"
+    "lib.arcade.cBlue": "Anụnụ anụnụ",
+    "lib.arcade.guess": "Chee",
+    "lib.arcade.clearRow": "Hichapụ ahịrị",
+    "lib.arcade.area": "Mpaghara: {n}/{t}",
+    "lib.arcade.triesLeft": "Ihe e chere {n} fọdụrụ",
+    "lib.arcade.minMoves": "Opekata mpe: {n}",
+    "lib.arcade.hnBad": "Ị pụghị itinye diski ka ukwuu n’elu nke pere mpe.",
+    "lib.arcade.outOfMoves": "Ngagharị agwụla!",
+    "lib.arcade.fillAll": "Họrọ agba maka ọnọdụ ọ bụla.",
+    "lib.arcade.modeFill": "Mejupụta",
+    "lib.arcade.modeMark": "Kaa akara ✕",
+    "lib.arcade.clearAll": "Hichapụ ihe niile",
+    "lib.arcade.note.nonogram": "Ọnụọgụgụ ndị dị na mmalite ahịrị na kọlụm ọ bụla na-egosi, n’usoro, ogologo ìgwè igbe juru ejuju n’usoro n’ahịrị ahụ, yana opekata mpe otu igbe efu n’etiti ìgwè ndị ahụ. Pịa ma ọ bụ dọkpụrụ iji mejupụta igbe; gbanwee gaa “Kaa akara ✕” iji kaa akara igbe ị maara na ha efu. Mezuo ihe ngosi niile iji merie.",
+    "lib.arcade.size": "Grid {n}×{n}",
+    "lib.arcade.restartLevel": "Malitegharịa ọkwa",
+    "lib.arcade.newLayout": "Ọkwa ọzọ",
+    "lib.arcade.note.sokoban": "Kpaa onye egwuregwu site na bọtịn àkụ/WASD, bọtịn ndị dị n’okpuru, ma ọ bụ site n’ịswaịp. Kwaa igbe ọ bụla gaa n’ebe ebumnuche (ntụpọ gburugburu). Ị nwere ike ịkwa otu igbe naanị n’otu oge ma ọ dịghị ịdọrọ, ya mere zere ịkwaba igbe n’akuku. Jiri Wepụ iji dozie ngagharị adịghị mma.",
+    "lib.arcade.boxesDone": "Igbe n’ebe ebumnuche: {n}/{t}",
+    "lib.arcade.note.block10": "Họrọ otu akụkụ n’okpuru, mgbe ahụ pịa grid iji tinye ya (enweghị ike ịtụgharị akụkụ). Mejupụta ahịrị ma ọ bụ kọlụm dum iji hichapụ ya ma nweta ihe ọzọ; ihichapụ ọtụtụ eriri n’otu oge na-enye bonus buru ibu. Rute akara ebumnuche iji gafee ọkwa; ọ bụrụ na enweghị akụkụ fọdụrụ nke dabara, ị ga-atụfu.",
+    "lib.arcade.note.dots": "Na-agbanwe, jikọta ntụpọ abụọ dị nso site n’eriri. Onye na-eserị akụkụ nke anọ nke akụkụ anọ na-enweta ya (n’agba ya) ma na-egwu ọzọ. Mgbe eserịchara eriri niile, onye nwere akụkụ anọ ọtụtụ na-emeri. Zere ise akụkụ nke atọ nke akụkụ anọ, ma ọ bụghị onye mmegide gị ga-ewere ya.",
+    "lib.arcade.note.ultimate": "Bọọdụ ahụ nwere obere bọọdụ tic-tac-toe 9. Ị na-egwu X ma bụrụ onye mbụ. Igbe ị họrọ n’ime obere bọọdụ na-ekpebi obere bọọdụ onye mmegide ga-egwu n’ọzọ (a na-akọwapụta ya); ọ bụrụ na obere bọọdụ ahụ agwụla, ọ nwere ike ịgwa ebe ọ bụla. Merie obere bọọdụ iji nweta ya; nweta obere bọọdụ atọ n’ahịrị, kọlụm ma ọ bụ diagonal iji merie egwuregwu.",
+    "lib.arcade.note.lights-out": "Ịpị igbe na-agbanwe igbe ahụ na ndị agbata obi ya 4 (gbanye/gbanyụọ). Gbanyụọ ọkụ niile. Jiri Ngosi iji hụ igbe kwesịrị ịpị.",
+    "lib.arcade.note.fifteen": "Maa teeji ndị nwere ọnụọgụgụ n’ime oghere iji hazie ha 1, 2, 3… oghere ahụ n’akuku aka nri ala. Pịa teeji n’otu ahịrị ma ọ bụ kọlụm dịka oghere iji maa ahịrị dum; bọtịn àkụ na-arụkwa ọrụ.",
+    "lib.arcade.note.flood-it": "Họrọ agba iji mejupụta mpaghara dum ị nwere n’akuku aka ekpe n’elu; ọ na-eri igbe agbata obi nwere agba ahụ. Mee ka bọọdụ dum bụrụ otu agba n’ime ọnụọgụ ngagharị ekwere.",
+    "lib.arcade.note.mastermind": "Kọmputa na-ezochi ahịrị agba. Họrọ agba maka ọnọdụ ọ bụla, mgbe ahụ pịa Chee. Pin ojii = agba ziri ezi n’ebe ziri ezi; pin ọcha = agba ziri ezi n’ebe na-ezighị ezi. Mepee koodu tupu echiche gị agwụ.",
+    "lib.arcade.note.hanoi": "Kpoga diski niile n’osisi ikpeazụ. Kpoga naanị diski dị n’elu osisi n’otu oge, ọ bụkwa mgbe ọ bụla etinyela diski ka ukwuu n’elu nke pere mpe. Pịa osisi mmalite, mgbe ahụ osisi ebumnuche.",
+    "lib.arcade.note.pipes": "Pịa teeji iji tụgharịa ọkpọkọ 90°. Jikọta ọkpọkọ niile n’otu netwọk na-enweghị njedebe mepere emepe (a na-egosi njedebe mepere emepe n’uhie)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Egwuregwu ọdịnala Vietnam nke ịgbasa nkume: gbasaa nkume ma jide Mandarin megide kọmputa; larịị 10 site na mfe ruo na siri ike."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Gbanyụọ ọkụ ọ bụla: ịpị ọ bụla na-agbanwe igbe ahụ na ndị agbata obi ya 4; ọkwa 10 nwere bọọdụ na-eto eto na bọtịn ngosi."
+    },
+    "fifteen": {
+      "name": "Nsogbu 15 (Nsogbu Mgbagharị)",
+      "desc": "Maa teeji ndị nwere ọnụọgụgụ n’usoro; ọkwa 10 site na 3x3 ruo 5x5, a na-egwu ya site na mouse, mmetụ ma ọ bụ bọtịn àkụ."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Mee ka bọọdụ juputa site n’akuku ruo mgbe ọ bụrụ otu agba n’ime ọnụọgụ ngagharị oke; ọkwa 10 nwere bọọdụ ka ukwuu na agba ndị ọzọ."
+    },
+    "mastermind": {
+      "name": "Mastermind (Onye Mebi Koodu)",
+      "desc": "Mepee koodu agba zoro ezo site na ngosi pin ojii na ọcha; ọkwa 10 nwere koodu ndị ka ogologo na agba ndị ọzọ."
+    },
+    "hanoi": {
+      "name": "Ụlọ Elu Hanoi",
+      "desc": "Kpoga diski site n’osisi mbụ ruo nke ikpeazụ n’enweghị itinye diski ka ukwuu n’elu nke pere mpe; ọkwa 10 site na diski 3 ruo diski 12 na osisi 4."
+    },
+    "pipes": {
+      "name": "Njikọ Ọkpọkọ",
+      "desc": "Tụgharịa akụkụ ọkpọkọ iji mee otu netwọk na-enweghị njedebe mepere emepe; ọkwa 10 nwere bọọdụ na-eto eto."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Mejupụta igbe site na ihe ngosi ọnụọgụgụ dị n’ahịrị na kọlụm iji gosipụta foto; ọkwa 10 site na 5x5 ruo 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Onye Kwaa Igbe)",
+      "desc": "Kwaa igbe gaa n’ebe ebumnuche n’ụlọ nchekwa; ọkwa ọ bụla nwere ike idozi, yana ọkwa 10 nwere igbe ndị ọzọ na ụlọ nchekwa ka ukwuu."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Tinye akụkụ n’elu grid 10x10 ma mejupụta ahịrị ma ọ bụ kọlụm iji hichapụ ha ma rute akara ebumnuche; ọkwa 10."
+    },
+    "dots-boxes": {
+      "name": "Ntụpọ na Igbe",
+      "desc": "Na-agbanwe, jikọta ntụpọ iji nweta akụkụ anọ ma merie kọmputa n’ọkwa 10 site n’mfe ruo ọnụ."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Kasị Elu",
+      "desc": "Tic-tac-toe n’obere bọọdụ 9: igbe ị họrọ na-ekpebi ebe onye mmegide ga-egwu; megide kọmputa n’ọkwa 10."
     }
   },
   "s": {

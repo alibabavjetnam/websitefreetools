@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Punane",
     "lib.arcade.cGreen": "Roheline",
     "lib.arcade.cYellow": "Kollane",
-    "lib.arcade.cBlue": "Sinine"
+    "lib.arcade.cBlue": "Sinine",
+    "lib.arcade.guess": "Arva",
+    "lib.arcade.clearRow": "Tühjenda rida",
+    "lib.arcade.area": "Ala: {n}/{t}",
+    "lib.arcade.triesLeft": "Veel {n} arvamist",
+    "lib.arcade.minMoves": "Miinimum: {n}",
+    "lib.arcade.hnBad": "Suuremat ketast ei tohi väiksema peale panna.",
+    "lib.arcade.outOfMoves": "Käigud said otsa!",
+    "lib.arcade.fillAll": "Vali igale kohale värv.",
+    "lib.arcade.modeFill": "Täida",
+    "lib.arcade.modeMark": "Märgi ✕",
+    "lib.arcade.clearAll": "Tühjenda kõik",
+    "lib.arcade.note.nonogram": "Iga rea ja veeru alguses olevad arvud näitavad järjest selle joone täidetud ruutude järjestikuste rühmade pikkusi; rühmade vahel on vähemalt üks tühi ruut. Ruutude täitmiseks klõpsa või lohista; ruutude märkimiseks, mis on kindlasti tühjad, lülitu režiimile „Märgi ✕”. Võidu saavutamiseks täida kõik vihjed.",
+    "lib.arcade.size": "{n}×{n} ruudustik",
+    "lib.arcade.restartLevel": "Alusta taset uuesti",
+    "lib.arcade.newLayout": "Teine tase",
+    "lib.arcade.note.sokoban": "Liiguta mängijat nooleklahvide/WASD, allolevate nuppude või pühkimisega. Lükka kõik kastid siht-ruutudele (ümmargused täpid). Korraga saab lükata ainult ühte kasti ja tõmmata ei saa, nii et väldi kastide lükkamist nurkadesse. Halva käigu parandamiseks kasuta Võta tagasi.",
+    "lib.arcade.boxesDone": "Kastid sihtruutudel: {n}/{t}",
+    "lib.arcade.note.block10": "Vali all tükk ja klõpsa selle paigutamiseks ruudustikul (tükke ei saa pöörata). Täida terve rida või veerg, et see kustuks ja saaksid lisapunkte; mitme joone korraga kustutamine annab suure boonuse. Taseme läbimiseks saavuta sihtskoor; kui ükski allesjäänud tükk ei mahu, kaotad.",
+    "lib.arcade.note.dots": "Ühendage kordamööda kaks naabertäppi joonega. Kes tõmbab ruudu neljanda külje, saab ruudu (oma värvis) ja käib uuesti. Kui kõik jooned on tõmmatud, võidab rohkem ruute saanud mängija. Väldi ruudu kolmanda külje tõmbamist, muidu võtab vastane selle.",
+    "lib.arcade.note.ultimate": "Laud koosneb 9 väikesest trips-traps-trulli lauast. Sina mängid X-iga ja alustad. Väikeses laual valitud ruut määrab, millisel väikesel laual vastane järgmisena mängima peab (see on esile tõstetud); kui see laud on juba otsustatud, võib ta mängida kus tahes. Võida väike laud, et see enda omaks saada; võida kolm väikest lauda reas, veerus või diagonaalis, et mäng võita.",
+    "lib.arcade.note.lights-out": "Ruudul klõpsamine lülitab selle ruudu ja selle 4 naabrit (sees/väljas). Lülita kõik tuled välja. Vihje abil näed ruutu, mida tasub vajutada.",
+    "lib.arcade.note.fifteen": "Libista nummerdatud plaadid tühjale kohale, et need oleksid järjekorras 1, 2, 3… ja tühi koht paremas alumises nurgas. Klõpsa plaadil, mis on tühja kohaga samas reas või veerus, et kogu rida libiseks; nooleklahvid töötavad samuti.",
+    "lib.arcade.note.flood-it": "Vali värv, millega täita kogu sinu valduses olev ala vasakus ülanurgas; see neelab endasse selle värvi naaberruudud. Tee kogu laud lubatud käikude arvu piires ühevärviliseks.",
+    "lib.arcade.note.mastermind": "Arvuti peidab värvide rea. Vali igale kohale värv ja vajuta Arva. Must tihvt = õige värv õiges kohas; valge tihvt = õige värv valel kohal. Murra kood enne, kui arvamised otsa saavad.",
+    "lib.arcade.note.hanoi": "Vii kõik kettad viimasele vardale. Liiguta iga kord ainult varda ülemist ketast ja ära pane kunagi suuremat ketast väiksema peale. Klõpsa lähtevardal, seejärel sihtvardal.",
+    "lib.arcade.note.pipes": "Klõpsa plaadil, et toru 90° pöörata. Ühenda kõik torud üheks võrguks ilma lahtiste otsteta (lahtised otsad on punased)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Traditsiooniline Vietnami kivide külvamise mäng: külva kive ja võta mandariine arvuti vastu; 10 taset lihtsast raskeni."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Lülita kõik tuled välja: iga vajutus pöörab ruudu ja selle 4 naabrit; 10 taset kasvavate laudadega ja vihjenupp."
+    },
+    "fifteen": {
+      "name": "15-mäng (liugpusle)",
+      "desc": "Libista nummerdatud plaadid järjekorda; 10 taset 3x3-st 5x5-ni, mängitav hiire, puute või nooleklahvidega."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Täida laud nurgast alates, kuni see on piiratud arvu käikudega ühevärviline; 10 taset suuremate laudade ja rohkemate värvidega."
+    },
+    "mastermind": {
+      "name": "Mastermind (koodimurdja)",
+      "desc": "Murra peidetud värvikood mustade ja valgete tihvtide vihjete abil; 10 taset pikemate koodide ja rohkemate värvidega."
+    },
+    "hanoi": {
+      "name": "Hanoi torn",
+      "desc": "Vii kettad esimeselt vardalt viimasele ilma suuremat ketast väiksema peale panemata; 10 taset 3 kettast kuni 12 kettani 4 varda peal."
+    },
+    "pipes": {
+      "name": "Torude ühendamine",
+      "desc": "Pööra torutükke, et ühendada need üheks võrguks ilma lahtiste otsteta; 10 taset kasvavate laudadega."
+    },
+    "nonogram": {
+      "name": "Nonogramm (Picross)",
+      "desc": "Täida ruute ridade ja veergude arvuvihjete järgi, et paljastada pilt; 10 taset 5x5-st 15x15-ni."
+    },
+    "sokoban": {
+      "name": "Sokoban (kastilükkaja)",
+      "desc": "Lükka laos kastid siht-ruutudele; iga tase on lahendatav, 10 taset rohkemate kastide ja suuremate ladudega."
+    },
+    "block-10x10": {
+      "name": "Plokkpusle 10x10",
+      "desc": "Paiguta tükke 10x10 ruudustikule ja täida ridu või veerge, et need kustutada ja sihtskoorini jõuda; 10 taset."
+    },
+    "dots-boxes": {
+      "name": "Täpid ja kastid",
+      "desc": "Ühendage kordamööda täppe, et ruute võita, ja alista arvuti 10 tasemel lihtsast raskeni."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ülim trips-traps-trull",
+      "desc": "Trips-traps-trull 9 väikesel laual: sinu valitud ruut määrab, kus vastane mängima peab; arvuti vastu 10 tasemel."
     }
   },
   "s": {

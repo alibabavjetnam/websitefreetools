@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Nyekundu",
     "lib.arcade.cGreen": "Kijani",
     "lib.arcade.cYellow": "Njano",
-    "lib.arcade.cBlue": "Bluu"
+    "lib.arcade.cBlue": "Bluu",
+    "lib.arcade.guess": "Kisia",
+    "lib.arcade.clearRow": "Futa safu",
+    "lib.arcade.area": "Eneo: {n}/{t}",
+    "lib.arcade.triesLeft": "Makisio {n} yamebaki",
+    "lib.arcade.minMoves": "Kiwango cha chini: {n}",
+    "lib.arcade.hnBad": "Huwezi kuweka diski kubwa juu ya diski ndogo.",
+    "lib.arcade.outOfMoves": "Hatua zimeisha!",
+    "lib.arcade.fillAll": "Tafadhali chagua rangi kwa kila nafasi.",
+    "lib.arcade.modeFill": "Jaza",
+    "lib.arcade.modeMark": "Weka alama ✕",
+    "lib.arcade.clearAll": "Futa yote",
+    "lib.arcade.note.nonogram": "Namba mwanzoni mwa kila safu mlalo na safu wima zinaonyesha urefu wa makundi ya visanduku vilivyojazwa mfululizo katika mstari huo, kwa mpangilio, na angalau kisanduku kimoja tupu kati ya makundi. Bofya au buruta ili kujaza visanduku; badili hadi “Weka alama ✕” ili kuandika visanduku ulivyo na uhakika ni tupu. Timiza vidokezo vyote ili ushinde.",
+    "lib.arcade.size": "Gridi ya {n}×{n}",
+    "lib.arcade.restartLevel": "Anza ngazi upya",
+    "lib.arcade.newLayout": "Ngazi nyingine",
+    "lib.arcade.note.sokoban": "Sogeza mchezaji kwa vitufe vya mishale/WASD, vitufe vilivyo chini au kwa kutelezesha kidole. Sukuma masanduku yote hadi kwenye visanduku lengwa (vitone vya duara). Unaweza kusukuma sanduku moja tu kwa wakati na huwezi kuvuta, kwa hivyo epuka kusukuma masanduku kwenye pembe. Tumia Tendua kurekebisha hatua mbaya.",
+    "lib.arcade.boxesDone": "Masanduku yaliyo kwenye lengo: {n}/{t}",
+    "lib.arcade.note.block10": "Chagua kipande chini, kisha bofya gridi ili kukiweka (vipande haviwezi kuzungushwa). Jaza safu mlalo au safu wima nzima ili kuifuta na upate pointi za ziada; kufuta mistari kadhaa kwa mara moja hutoa bonasi kubwa. Fikia alama lengwa ili kumaliza ngazi; kama hakuna kipande kilichobaki kinachotosha, unashindwa.",
+    "lib.arcade.note.dots": "Mkipokezana, unganisheni nukta mbili jirani kwa mstari. Atakayechora upande wa nne wa mraba huudai (kwa rangi yake) na kucheza tena. Mistari yote ikishachorwa, mchezaji mwenye miraba mingi zaidi anashinda. Epuka kuchora upande wa tatu wa mraba, la sivyo mpinzani wako ataudai.",
+    "lib.arcade.note.ultimate": "Ubao una mbao ndogo 9 za tiki-taki-tou. Unacheza X na unaanza. Kisanduku unachochagua ndani ya ubao mdogo huamua ubao mdogo gani mpinzani wako lazima acheze ndani yake (umeangaziwa); kama ubao huo umeshakamilika, anaweza kucheza popote. Shinda ubao mdogo ili kuudai; dai mbao ndogo tatu mfululizo, safu wima au mshazari ili kushinda mchezo.",
+    "lib.arcade.note.lights-out": "Kubofya kisanduku hubadilisha kisanduku hicho na majirani wake 4 (washa/zima). Zima taa zote. Tumia Kidokezo kuona kisanduku kinachofaa kubonyezwa.",
+    "lib.arcade.note.fifteen": "Telezesha vigae vyenye namba hadi kwenye pengo ili kuvipanga 1, 2, 3… huku pengo likiwa pembe ya chini kulia. Bofya kigae kilicho katika safu mlalo au wima ileile na pengo ili kutelezesha mstari mzima; vitufe vya mishale pia vinafanya kazi.",
+    "lib.arcade.note.flood-it": "Chagua rangi ya kujaza eneo lote unalomiliki pembe ya juu kushoto; linameza visanduku jirani vya rangi hiyo. Fanya ubao mzima uwe rangi moja ndani ya idadi ya hatua zinazoruhusiwa.",
+    "lib.arcade.note.mastermind": "Kompyuta huficha safu ya rangi. Chagua rangi kwa kila nafasi, kisha bonyeza Kisia. Kigingi cheusi = rangi sahihi mahali sahihi; kigingi cheupe = rangi sahihi mahali pasipo sahihi. Vunja msimbo kabla makisio hayajaisha.",
+    "lib.arcade.note.hanoi": "Hamisha diski zote hadi kwenye nguzo ya mwisho. Hamisha diski ya juu tu ya nguzo kila wakati, na usiweke kamwe diski kubwa juu ya ndogo. Bofya nguzo ya kuanzia, kisha nguzo ya kulenga.",
+    "lib.arcade.note.pipes": "Bofya kigae ili kuzungusha bomba digrii 90°. Unganisha mabomba yote kuwa mtandao mmoja bila ncha wazi (ncha wazi zinaonyeshwa kwa rangi nyekundu)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Mchezo wa jadi wa Kivietinamu wa kupanda mawe: panda mawe na ukamate Mandarin dhidi ya kompyuta; viwango 10 kutoka rahisi hadi ngumu."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Zima taa zote: kila kubonyeza hubadilisha kisanduku hicho na majirani wake 4; ngazi 10 zenye mbao zinazokua na kitufe cha kidokezo."
+    },
+    "fifteen": {
+      "name": "Fumbo la 15 (fumbo la kutelezesha)",
+      "desc": "Telezesha vigae vyenye namba hadi vipangwe; ngazi 10 kutoka 3x3 hadi 5x5, kwa kipanya, mguso au vitufe vya mishale."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Furika ubao kutoka pembeni hadi uwe rangi moja ndani ya hatua chache; ngazi 10 zenye mbao kubwa zaidi na rangi nyingi zaidi."
+    },
+    "mastermind": {
+      "name": "Mastermind (Mvunja Msimbo)",
+      "desc": "Vunja msimbo wa rangi uliofichwa kwa vidokezo vya vigingi vyeusi na vyeupe; ngazi 10 zenye misimbo mirefu zaidi na rangi nyingi zaidi."
+    },
+    "hanoi": {
+      "name": "Mnara wa Hanoi",
+      "desc": "Hamisha diski kutoka nguzo ya kwanza hadi ya mwisho bila kuweka diski kubwa juu ya ndogo; ngazi 10 kutoka diski 3 hadi diski 12 kwenye nguzo 4."
+    },
+    "pipes": {
+      "name": "Unganisha Mabomba",
+      "desc": "Zungusha vipande vya mabomba ili kuviunganisha kuwa mtandao mmoja bila ncha wazi; ngazi 10 zenye mbao zinazokua."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Jaza visanduku kwa vidokezo vya namba kwenye safu mlalo na wima ili kufichua picha; ngazi 10 kutoka 5x5 hadi 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Msukuma Masanduku)",
+      "desc": "Sukuma masanduku hadi kwenye visanduku lengwa ghalani; kila ngazi inaweza kutatuliwa, ngazi 10 zenye masanduku zaidi na maghala makubwa zaidi."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Weka vipande kwenye gridi ya 10x10 na ujaze safu ili kuzifuta na kufikia alama lengwa; ngazi 10."
+    },
+    "dots-boxes": {
+      "name": "Nukta na Masanduku",
+      "desc": "Mkipokezana, unganisha nukta ili kudai miraba na umshinde kompyuta katika ngazi 10 kuanzia rahisi hadi ngumu."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tiki-Taki-Tou ya Mwisho",
+      "desc": "Tiki-taki-tou kwenye mbao ndogo 9: kisanduku unachochagua huamua mpinzani acheze wapi; dhidi ya kompyuta katika ngazi 10."
     }
   },
   "s": {

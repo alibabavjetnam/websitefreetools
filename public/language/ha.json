@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Ja",
     "lib.arcade.cGreen": "Kore",
     "lib.arcade.cYellow": "Rawaya",
-    "lib.arcade.cBlue": "Shuɗi"
+    "lib.arcade.cBlue": "Shuɗi",
+    "lib.arcade.guess": "Yi hasashe",
+    "lib.arcade.clearRow": "Share jere",
+    "lib.arcade.area": "Fili: {n}/{t}",
+    "lib.arcade.triesLeft": "Saura hasashe {n}",
+    "lib.arcade.minMoves": "Mafi ƙaranci: {n}",
+    "lib.arcade.hnBad": "Ba za ka iya sanya babban faifai a kan ƙarami ba.",
+    "lib.arcade.outOfMoves": "Motsi ya ƙare!",
+    "lib.arcade.fillAll": "Da fatan za a zaɓi launi ga kowane wuri.",
+    "lib.arcade.modeFill": "Cika",
+    "lib.arcade.modeMark": "Yi alama ✕",
+    "lib.arcade.clearAll": "Share duka",
+    "lib.arcade.note.nonogram": "Lambobin da ke farkon kowane jere da shafi suna nuna tsawon rukunin ƙwayoyin da aka cika a jere a wannan layin, bisa tsari, tare da aƙalla ƙwayar fanko ɗaya tsakanin rukunai. Danna ko ja don cika ƙwayoyi; koma zuwa “Yi alama ✕” don rubuta ƙwayoyin da ka tabbata fanko ne. Cika dukkan alamu don yin nasara.",
+    "lib.arcade.size": "Allo na {n}×{n}",
+    "lib.arcade.restartLevel": "Sake fara matakin",
+    "lib.arcade.newLayout": "Wani mataki",
+    "lib.arcade.note.sokoban": "Motsa ɗan wasa da maɓallan kibiya/WASD, maɓallan ƙasa ko shafawa da yatsa. Tura dukkan akwatuna zuwa wuraren manufa (dige-dige zagaye). Za ka iya tura akwati ɗaya a lokaci guda kuma ba za ka iya jawowa ba, don haka kauce wa tura akwatuna cikin kusurwoyi. Yi amfani da Warware don gyara mummunan motsi.",
+    "lib.arcade.boxesDone": "Akwatuna a manufa: {n}/{t}",
+    "lib.arcade.note.block10": "Zaɓi yanki a ƙasa, sannan ka danna allon don sanya shi (ba za a iya juya yankuna ba). Cika jere ko shafi duka don share shi da samun ƙarin maki; share layuka da yawa a lokaci guda yana ba da babban ƙari. Kai ga makin manufa don kammala matakin; idan babu ɗaya daga cikin yankunan da suka rage da ya dace, ka yi rashin nasara.",
+    "lib.arcade.note.dots": "Ku ɗauki turi wajen haɗa dige-dige biyu maƙwabta da layi. Wanda ya zana gefen huɗu na murabba'i ya samu shi (da launinsa) kuma ya sake wasa. Idan an zana dukkan layuka, ɗan wasan da ke da murabba'ai da yawa ya ci nasara. Ka guji zana gefe na uku na murabba'i, in ba haka ba abokin hamayyarka zai ɗauke shi.",
+    "lib.arcade.note.ultimate": "Allon ya ƙunshi ƙananan allunan tic-tac-toe 9. Kai kana wasa da X kuma kai ne ka fara. Ƙwayar da ka zaɓa a cikin ƙaramin allo tana tantance a wane ƙaramin allo abokin hamayyarka zai yi wasa na gaba (an haskaka shi); idan an riga an kammala wannan allo, zai iya yin wasa ko'ina. Ci ƙaramin allo don mallakarsa; mallaki ƙananan allunan uku a jere, shafi ko diagonal don cin wasan.",
+    "lib.arcade.note.lights-out": "Danna ƙwaya yana sauya wannan ƙwayar da maƙwabtanta 4 (kunnawa/kashewa). Kashe dukkan fitilu. Yi amfani da Alama don ganin ƙwayar da ya dace a danna.",
+    "lib.arcade.note.fifteen": "Zame tayal ɗin masu lamba cikin gibin don tsara su 1, 2, 3… tare da gibin a kusurwar ƙasa ta dama. Danna tayal a jere ko shafi ɗaya da gibin don zame dukan layin; maɓallan kibiya ma suna aiki.",
+    "lib.arcade.note.flood-it": "Zaɓi launi don cika duk yankin da kake da shi a kusurwar sama ta hagu; yana haɗiye ƙwayoyin maƙwabta masu wannan launi. Mayar da dukan allon launi ɗaya cikin adadin motsin da aka ba da izini.",
+    "lib.arcade.note.mastermind": "Kwamfuta tana ɓoye jere na launuka. Zaɓi launi ga kowane wuri, sannan ka danna Yi hasashe. Fegi baƙi = launi daidai a wuri daidai; fegi fari = launi daidai a wurin da bai dace ba. Fasa lambar kafin hasashenka ya ƙare.",
+    "lib.arcade.note.hanoi": "Matsar da dukkan faifai zuwa sandar ƙarshe. Motsa faifan saman sanda kawai a kowane lokaci, kuma kada ka taɓa sanya babban faifai a kan ƙarami. Danna sandar asali, sannan sandar manufa.",
+    "lib.arcade.note.pipes": "Danna tayal don juya bututun 90°. Haɗa dukkan bututu zuwa cibiyar sadarwa ɗaya ba tare da buɗaɗɗen ƙarshe ba (ana nuna buɗaɗɗun ƙarshe da ja)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Wasan gargajiya na Vietnam na shuka duwatsu: shuka duwatsu ku kama Mandarin da kwamfuta; matakai 10 daga sauƙi zuwa wahala."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Kashe dukkan fitilu: kowane latsa yana juya ƙwayar da maƙwabtanta 4; matakai 10 da allunan da ke girma da maɓallin Alama."
+    },
+    "fifteen": {
+      "name": "Wasan 15 (wasan zamewa)",
+      "desc": "Zame tayal ɗin masu lamba zuwa tsari; matakai 10 daga 3x3 zuwa 5x5, ana wasa da linzamin kwamfuta, taɓawa ko maɓallan kibiya."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Cika allon daga kusurwa har sai ya zama launi ɗaya cikin ƙayyadadden adadin motsi; matakai 10 da manyan alluna da ƙarin launuka."
+    },
+    "mastermind": {
+      "name": "Mastermind (mai fasa lamba)",
+      "desc": "Fasa lambar launuka da aka ɓoye ta amfani da alamun fegi baƙi da fari; matakai 10 da dogayen lambobi da ƙarin launuka."
+    },
+    "hanoi": {
+      "name": "Hasumiyar Hanoi",
+      "desc": "Matsar da faifai daga sanda ta farko zuwa ta ƙarshe ba tare da sanya babban faifai a kan ƙarami ba; matakai 10 daga faifai 3 zuwa faifai 12 a sanduna 4."
+    },
+    "pipes": {
+      "name": "Haɗa Bututu",
+      "desc": "Juya yankunan bututu don haɗa su zuwa cibiyar sadarwa ɗaya ba tare da buɗaɗɗen ƙarshe ba; matakai 10 da allunan da ke girma."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Cika ƙwayoyi ta amfani da alamun lambobi na jere da shafuka don bayyana hoto; matakai 10 daga 5x5 zuwa 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (mai tura akwati)",
+      "desc": "Tura akwatuna zuwa wuraren manufa a cikin ma'ajiya; kowane mataki ana iya warware shi, matakai 10 da ƙarin akwatuna da manyan ma'ajiyoyi."
+    },
+    "block-10x10": {
+      "name": "Wasan Toshe 10x10",
+      "desc": "Sanya yankuna a allon 10x10 ka cika jere ko shafuka don share su ka kai makin manufa; matakai 10."
+    },
+    "dots-boxes": {
+      "name": "Dige-dige da Akwatuna",
+      "desc": "Ku ɗauki turi wajen haɗa dige-dige don mallakar murabba'ai ka doke kwamfuta a matakai 10 daga sauƙi zuwa wuya."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe na Ƙarshe",
+      "desc": "Tic-tac-toe a ƙananan alluna 9: ƙwayar da ka zaɓa tana tantance inda abokin hamayyarka zai yi wasa; da kwamfuta a matakai 10."
     }
   },
   "s": {

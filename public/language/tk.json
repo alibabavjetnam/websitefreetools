@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Gyzyl",
     "lib.arcade.cGreen": "Ýaşyl",
     "lib.arcade.cYellow": "Sary",
-    "lib.arcade.cBlue": "Gök"
+    "lib.arcade.cBlue": "Gök",
+    "lib.arcade.guess": "Tap",
+    "lib.arcade.clearRow": "Hatary arassala",
+    "lib.arcade.area": "Meýdan: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} çaklama galdy",
+    "lib.arcade.minMoves": "Iň az: {n}",
+    "lib.arcade.hnBad": "Uly diski kiçi diskiň üstüne goýup bolmaýar.",
+    "lib.arcade.outOfMoves": "Ädimler gutardy!",
+    "lib.arcade.fillAll": "Her ýer üçin bir reňk saýlaň.",
+    "lib.arcade.modeFill": "Doldur",
+    "lib.arcade.modeMark": "Bellik ✕",
+    "lib.arcade.clearAll": "Hemmesini arassala",
+    "lib.arcade.note.nonogram": "Her hataryň we sütüniň başyndaky sanlar şol çyzykda yzly-yzyna doldurylan öýjükler toparynyň uzynlygyny tertip boýunça görkezýär; toparlaryň arasynda iň azyndan bir boş öýjük bolýar. Öýjükleri doldurmak üçin basyň ýa-da süýräň; boşdugyna aňyrsy bilen ynanýan öýjükleriňizi bellemek üçin “Bellik ✕” režimine geçiň. Ýeňmek üçin ähli maslahatlary ýerine ýetiriň.",
+    "lib.arcade.size": "{n}×{n} tor",
+    "lib.arcade.restartLevel": "Derejäni gaýtadan başla",
+    "lib.arcade.newLayout": "Başga dereje",
+    "lib.arcade.note.sokoban": "Oýunçyny ok düwmeleri/WASD, aşakdaky düwmeler ýa-da süýşürmek arkaly hereketlendiriň. Ähli gutulary maksat öýjüklerine (tegelek nokatlara) itiriň. Bir wagtyň özünde diňe bir gutyny itip bolýar, çekip bolmaýar, şonuň üçin gutulary burça itmäň. Erbet ädimi düzetmek üçin Yzyna al düwmesini ulanyň.",
+    "lib.arcade.boxesDone": "Maksatdaky gutular: {n}/{t}",
+    "lib.arcade.note.block10": "Aşakdan bir bölek saýlaň, soňra ony goýmak üçin tora basyň (bölekleri aýlap bolmaýar). Doly hatary ýa-da sütüni dolduryň, ol aýrylar we goşmaça utuk alarsyňyz; birnäçe çyzygy bir wagtda aýyrsaňyz, uly bonus berilýär. Derejäni geçmek üçin maksat utuga ýetiň; galan böleklerden hiç biri sygmasa, ýeňilýärsiňiz.",
+    "lib.arcade.note.dots": "Nobatma-nobat iki goňşy nokady çyzyk bilen birleşdiriň. Inedördüljigiň dördünji tarapyny çyzan ony (öz reňki bilen) alýar we ýene bir gezek oýnaýar. Ähli çyzyklar çyzylanda, inedördüljikleri köp oýunçy ýeňýär. Inedördüljigiň üçünji tarapyny çyzmaň, ýogsam garşydaşyňyz ony alar.",
+    "lib.arcade.note.ultimate": "Tagta 9 sany kiçi aýlaw-haç tagtasyndan ybarat. Siz X bilen oýnaýarsyňyz we birinji başlaýarsyňyz. Kiçi tagtada saýlan öýjügiňiz garşydaşyň indiki gezek haýsy kiçi tagtada oýnamalydygyny kesgitleýär (ol bellenýär); eger şol tagta eýýäm gutaran bolsa, ol islendik ýerde oýnap biler. Kiçi tagtany ýeňip, ony eýelläň; hatarda, sütünde ýa-da diagonalda üç kiçi tagtany eýelesiňiz, oýny ýeňýärsiňiz.",
+    "lib.arcade.note.lights-out": "Öýjüge basmak şol öýjügi we onuň 4 goňşusyny çalyşýar (ýanýar/ýok). Ähli çyralary öçüriň. Basmaga mynasyp öýjügi görmek üçin Maslahat düwmesini ulanyň.",
+    "lib.arcade.note.fifteen": "Belgili plitkalary boş ýere süýşüriň we 1, 2, 3… tertibinde goýuň; boş ýer aşaky sag burçda bolsun. Boş ýer bilen şol bir hatardaky ýa-da sütündäki plitka basyň, tutuş hatar süýşýär; ok düwmeleri hem işleýär.",
+    "lib.arcade.note.flood-it": "Ýokarky çep burçda eýelän tutuş meýdanyňyzy doldurmak üçin reňk saýlaň; ol şol reňkdäki goňşy öýjükleri ýuwdýar. Rugsat berlen ädim sany içinde tutuş tagtany bir reňke öwüriň.",
+    "lib.arcade.note.mastermind": "Kompýuter reňkleriň bir hataryny gizleýär. Her ýer üçin reňk saýlaň, soňra Tap düwmesine basyň. Gara mıh = reňk dogry, ýeri dogry; ak mıh = reňk dogry, ýeri ýalňyş. Çaklamalaryňyz gutarmanka koduny açyň.",
+    "lib.arcade.note.hanoi": "Ähli diskleri iň soňky taýaga geçiriň. Her gezek diňe taýagyň iň ýokarky diskini geçiriň we hiç haçan uly disk kiçiniň üstüne goýmaň. Ilki başlangyç taýaga, soňra maksat taýaga basyň.",
+    "lib.arcade.note.pipes": "Turbany 90° aýlamak üçin plitka basyň. Ähli turbalary açyk uçlary galmadyk bir ulgamda birleşdiriň (açyk uçlar gyzyl görkezilýär)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Wýetnamyň dessurly daş sepmek oýny: daşlary sepip, kompýutere garşy Mandarinleri alyň; aňsatdan kyna 10 derece."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Ähli çyralary öçüriň: her basyş şol öýjügi we onuň 4 goňşusyny çalyşýar; tagtalary ulalýan 10 dereje we maslahat düwmesi."
+    },
+    "fifteen": {
+      "name": "15 baş döwmesi (süýşýän baş döwme)",
+      "desc": "Belgili plitkalary tertibe salmak üçin süýşüriň; 3x3-den 5x5-e çenli 10 dereje, syçan, degmek ýa-da ok düwmeleri bilen."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Çäkli ädim sany içinde tagtany burçdan başlap bir reňke öwrüň; uly tagtalar we has köp reňkli 10 dereje."
+    },
+    "mastermind": {
+      "name": "Mastermind (Kod açyjy)",
+      "desc": "Gara we ak mıh maslahatlary bilen gizlenen reňk koduny açyň; has uzyn kodlar we has köp reňkli 10 dereje."
+    },
+    "hanoi": {
+      "name": "Hanoý diňi",
+      "desc": "Uly diski kiçiniň üstüne goýman, diskleri birinji taýakdan soňkusyna geçiriň; 3 diskden 4 taýakda 12 diske çenli 10 dereje."
+    },
+    "pipes": {
+      "name": "Turbalary birleşdir",
+      "desc": "Turba böleklerini aýlap, açyk uçlary bolmadyk bir ulgamda birleşdiriň; tagtalary ulalýan 10 dereje."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Hatarlardaky we sütünlerdäki san maslahatlary boýunça öýjükleri dolduryp, suraty açyň; 5x5-den 15x15-e çenli 10 dereje."
+    },
+    "sokoban": {
+      "name": "Sokoban (Guty itmek)",
+      "desc": "Ammarda gutulary maksat öýjüklerine itiriň; her dereje çözülýär, has köp guty we has uly ammarly 10 dereje."
+    },
+    "block-10x10": {
+      "name": "Blok baş döwmesi 10x10",
+      "desc": "Bölekleri 10x10 tora goýuň we hatarlary ýa-da sütünleri dolduryp aýyryň, maksat utuga ýetiň; 10 dereje."
+    },
+    "dots-boxes": {
+      "name": "Nokatlar we gutular",
+      "desc": "Nobatma-nobat nokatlary birleşdirip inedördüljikleri alyň we 10 derejede ýeňilden kyna çenli kompýuteri ýeňiň."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate aýlaw-haç",
+      "desc": "9 kiçi tagtada aýlaw-haç: saýlan öýjügiňiz garşydaşyň nirede oýnamalydygyny kesgitleýär; kompýutere garşy 10 dereje."
     }
   },
   "s": {

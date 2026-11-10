@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Merah",
     "lib.arcade.cGreen": "Hijau",
     "lib.arcade.cYellow": "Kuning",
-    "lib.arcade.cBlue": "Biru"
+    "lib.arcade.cBlue": "Biru",
+    "lib.arcade.guess": "Teka",
+    "lib.arcade.clearRow": "Padam baris",
+    "lib.arcade.area": "Kawasan: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} tekaan lagi",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Anda tidak boleh meletakkan cakera besar di atas cakera yang lebih kecil.",
+    "lib.arcade.outOfMoves": "Tiada langkah lagi!",
+    "lib.arcade.fillAll": "Sila pilih warna untuk setiap kedudukan.",
+    "lib.arcade.modeFill": "Isi",
+    "lib.arcade.modeMark": "Tanda ✕",
+    "lib.arcade.clearAll": "Padam semua",
+    "lib.arcade.note.nonogram": "Nombor di permulaan setiap baris dan lajur menunjukkan panjang kumpulan petak terisi berturut-turut dalam garisan itu, mengikut turutan, dengan sekurang-kurangnya satu petak kosong di antara kumpulan. Klik atau seret untuk mengisi petak; tukar kepada “Tanda ✕” untuk menanda petak yang anda pasti kosong. Penuhi semua petunjuk untuk menang.",
+    "lib.arcade.size": "Grid {n}×{n}",
+    "lib.arcade.restartLevel": "Mula semula tahap",
+    "lib.arcade.newLayout": "Tahap lain",
+    "lib.arcade.note.sokoban": "Gerakkan pemain dengan kekunci anak panah/WASD, butang di bawah atau leretan jari. Tolak semua kotak ke petak sasaran (titik bulat). Anda hanya boleh menolak satu kotak pada satu masa dan tidak boleh menarik, jadi elakkan menolak kotak ke sudut. Guna Buat asal untuk membetulkan langkah yang salah.",
+    "lib.arcade.boxesDone": "Kotak pada sasaran: {n}/{t}",
+    "lib.arcade.note.block10": "Pilih satu keping di bawah, kemudian klik grid untuk meletakkannya (keping tidak boleh diputar). Penuhkan satu baris atau lajur untuk mengosongkannya dan dapat mata tambahan; mengosongkan beberapa garisan serentak memberi bonus besar. Capai markah sasaran untuk menamatkan tahap; jika tiada keping yang tinggal muat, anda kalah.",
+    "lib.arcade.note.dots": "Bergilir-gilir menyambung dua titik berjiran dengan satu garisan. Sesiapa yang melukis sisi keempat sesebuah petak akan menuntutnya (dengan warnanya) dan bermain sekali lagi. Apabila semua garisan telah dilukis, pemain dengan lebih banyak petak menang. Elakkan melukis sisi ketiga sesebuah petak, kalau tidak lawan akan mengambilnya.",
+    "lib.arcade.note.ultimate": "Papan terdiri daripada 9 papan kecil tic-tac-toe. Anda bermain X dan bermula dahulu. Petak yang anda pilih dalam papan kecil menentukan papan kecil mana yang mesti dimainkan lawan seterusnya (ia diserlahkan); jika papan itu sudah selesai, lawan boleh bermain di mana-mana. Menangi papan kecil untuk menuntutnya; tuntut tiga papan kecil dalam satu baris, lajur atau pepenjuru untuk memenangi permainan.",
+    "lib.arcade.note.lights-out": "Mengklik petak akan menogol petak itu dan 4 jirannya (hidup/mati). Matikan semua lampu. Guna Petunjuk untuk melihat petak yang wajar ditekan.",
+    "lib.arcade.note.fifteen": "Luncurkan jubin bernombor ke dalam ruang kosong untuk disusun mengikut turutan 1, 2, 3… dengan ruang kosong di penjuru kanan bawah. Klik jubin dalam baris atau lajur yang sama dengan ruang kosong untuk meluncurkan keseluruhan garisan; kekunci anak panah juga berfungsi.",
+    "lib.arcade.note.flood-it": "Pilih satu warna untuk mengisi seluruh kawasan milik anda di penjuru kiri atas; ia menelan petak jiran berwarna sama. Jadikan seluruh papan satu warna dalam bilangan langkah yang dibenarkan.",
+    "lib.arcade.note.mastermind": "Komputer menyembunyikan satu baris warna. Pilih warna untuk setiap kedudukan, kemudian tekan Teka. Pasak hitam = warna betul di tempat betul; pasak putih = warna betul di tempat salah. Pecahkan kod sebelum tekaan anda habis.",
+    "lib.arcade.note.hanoi": "Pindahkan semua cakera ke tiang terakhir. Pindahkan hanya cakera teratas sesuatu tiang pada satu masa, dan jangan sekali-kali letak cakera besar di atas cakera kecil. Klik tiang asal, kemudian tiang sasaran.",
+    "lib.arcade.note.pipes": "Klik jubin untuk memutar paip 90°. Sambungkan semua paip menjadi satu rangkaian tanpa hujung terbuka (hujung terbuka ditunjukkan dengan warna merah)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Permainan menyemai batu tradisional Vietnam: semai batu dan tangkap Mandarin menentang komputer; 10 tahap daripada mudah hingga sukar."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Padamkan semua lampu: setiap tekanan menogol petak itu dan 4 jirannya; 10 tahap dengan papan yang semakin besar dan butang petunjuk."
+    },
+    "fifteen": {
+      "name": "Teka-teki 15 (Puzzle Gelongsor)",
+      "desc": "Luncurkan jubin bernombor mengikut turutan; 10 tahap dari 3x3 hingga 5x5, dimainkan dengan tetikus, sentuhan atau kekunci anak panah."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Banjiri papan dari penjuru sehingga menjadi satu warna dalam bilangan langkah terhad; 10 tahap dengan papan lebih besar dan lebih banyak warna."
+    },
+    "mastermind": {
+      "name": "Mastermind (Pemecah Kod)",
+      "desc": "Pecahkan kod warna tersembunyi menggunakan petunjuk pasak hitam dan putih; 10 tahap dengan kod lebih panjang dan lebih banyak warna."
+    },
+    "hanoi": {
+      "name": "Menara Hanoi",
+      "desc": "Pindahkan cakera dari tiang pertama ke tiang terakhir tanpa meletakkan cakera besar di atas cakera kecil; 10 tahap dari 3 cakera hingga 12 cakera pada 4 tiang."
+    },
+    "pipes": {
+      "name": "Sambung Paip",
+      "desc": "Putar kepingan paip untuk menyambungnya menjadi satu rangkaian tanpa hujung terbuka; 10 tahap dengan papan yang semakin besar."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Isi petak menggunakan petunjuk nombor pada baris dan lajur untuk mendedahkan gambar; 10 tahap dari 5x5 hingga 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Penolak Kotak)",
+      "desc": "Tolak kotak ke petak sasaran dalam sebuah gudang; setiap tahap boleh diselesaikan, dengan 10 tahap yang lebih banyak kotak dan gudang lebih besar."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Letakkan keping pada grid 10x10 dan penuhkan baris atau lajur untuk mengosongkannya dan mencapai markah sasaran; 10 tahap."
+    },
+    "dots-boxes": {
+      "name": "Titik dan Kotak",
+      "desc": "Bergilir-gilir menyambung titik untuk menuntut petak dan kalahkan komputer dalam 10 tahap dari mudah hingga sukar."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Muktamad",
+      "desc": "Tic-tac-toe merentasi 9 papan kecil: petak yang anda pilih menentukan tempat lawan mesti bermain; lawan komputer dalam 10 tahap."
     }
   },
   "s": {

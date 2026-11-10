@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Červená",
     "lib.arcade.cGreen": "Zelená",
     "lib.arcade.cYellow": "Žltá",
-    "lib.arcade.cBlue": "Modrá"
+    "lib.arcade.cBlue": "Modrá",
+    "lib.arcade.guess": "Hádaj",
+    "lib.arcade.clearRow": "Vymazať riadok",
+    "lib.arcade.area": "Plocha: {n}/{t}",
+    "lib.arcade.triesLeft": "Zostáva {n} tipov",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Väčší disk nemožno položiť na menší.",
+    "lib.arcade.outOfMoves": "Došli ťahy!",
+    "lib.arcade.fillAll": "Vyberte farbu pre každú pozíciu.",
+    "lib.arcade.modeFill": "Vypĺňať",
+    "lib.arcade.modeMark": "Označiť ✕",
+    "lib.arcade.clearAll": "Vymazať všetko",
+    "lib.arcade.note.nonogram": "Čísla na začiatku každého riadka a stĺpca udávajú dĺžky súvislých skupín vyplnených políčok v danom riadku, v poradí, pričom medzi skupinami je aspoň jedno prázdne políčko. Kliknutím alebo ťahaním vypĺňate políčka; prepnite na „Označiť ✕“ a poznačte si políčka, o ktorých viete, že sú prázdne. Splňte všetky nápovedy a vyhráte.",
+    "lib.arcade.size": "Mriežka {n}×{n}",
+    "lib.arcade.restartLevel": "Spustiť level znova",
+    "lib.arcade.newLayout": "Iný level",
+    "lib.arcade.note.sokoban": "Hráča ovládajte šípkami/WASD, tlačidlami pod hracou plochou alebo potiahnutím prsta. Zatlačte všetky škatule na cieľové políčka (okrúhle bodky). Naraz môžete tlačiť len jednu škatuľu a ťahať sa nedá, preto škatule netlačte do rohov. Zlý ťah opravíte tlačidlom Späť.",
+    "lib.arcade.boxesDone": "Škatule na cieli: {n}/{t}",
+    "lib.arcade.note.block10": "Dole vyberte dielik a kliknutím do mriežky ho položte (dieliky sa nedajú otáčať). Zaplnením celého riadka alebo stĺpca ho odstránite a získate body navyše; odstránenie viacerých čiar naraz prináša veľký bonus. Dosiahnite cieľové skóre a level prejdete; ak sa nezmestí žiadny zo zostávajúcich dielikov, prehrávate.",
+    "lib.arcade.note.dots": "Striedavo spájajte dva susedné body čiarou. Kto nakreslí štvrtú stranu štvorca, získa ho (vo svojej farbe) a ťahá znova. Keď sú nakreslené všetky čiary, vyhráva hráč s viac štvorcami. Nekreslite tretiu stranu štvorca, inak ho súper zoberie.",
+    "lib.arcade.note.ultimate": "Doska pozostáva z 9 malých dosiek piškvoriek. Hráte za X a začínate. Políčko, ktoré vyberiete v malej doske, určuje, na ktorej malej doske musí súper hrať ďalej (je zvýraznená); ak je táto doska už dohraná, môže hrať kdekoľvek. Víťazstvom na malej doske ju získate; ak získate tri malé dosky v riadku, stĺpci alebo uhlopriečke, vyhráte hru.",
+    "lib.arcade.note.lights-out": "Kliknutím na políčko prepnete toto políčko a jeho 4 susedov (zapnuté/vypnuté). Zhasnite všetky svetlá. Nápoveda ukáže políčko, ktoré sa oplatí stlačiť.",
+    "lib.arcade.note.fifteen": "Posúvajte očíslované dlaždice do medzery, aby boli v poradí 1, 2, 3… a medzera bola v pravom dolnom rohu. Kliknutím na dlaždicu v rovnakom riadku alebo stĺpci ako medzera posuniete celý rad; fungujú aj šípky.",
+    "lib.arcade.note.flood-it": "Vyberte farbu, ktorou vyplníte celú oblasť, ktorú vlastníte v ľavom hornom rohu; pohltí susedné políčka tejto farby. V povolenom počte ťahov premeňte celú dosku na jednu farbu.",
+    "lib.arcade.note.mastermind": "Počítač ukryje rad farieb. Vyberte farbu pre každú pozíciu a stlačte Hádaj. Čierny kolík = správna farba na správnom mieste; biely kolík = správna farba na nesprávnom mieste. Rozlúštite kód skôr, než vám dôjdu tipy.",
+    "lib.arcade.note.hanoi": "Presuňte všetky disky na posledný kolík. Naraz presúvajte iba vrchný disk kolíka a nikdy nekladte väčší disk na menší. Kliknite na zdrojový kolík a potom na cieľový.",
+    "lib.arcade.note.pipes": "Kliknutím na dlaždicu otočíte rúru o 90°. Spojte všetky rúry do jednej siete bez otvorených koncov (otvorené konce sú červené)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Tradičná vietnamská hra so sejbou kameňov: rozdeľujte kamene a berte mandarínov proti počítaču; 10 úrovní od ľahkej po ťažkú."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Zhasnite všetky svetlá: každé stlačenie prepne políčko a jeho 4 susedov; 10 levelov s rastúcimi doskami a tlačidlom nápovedy."
+    },
+    "fifteen": {
+      "name": "Pätnástka (posuvné puzzle)",
+      "desc": "Posúvajte očíslované dlaždice do správneho poradia; 10 levelov od 3x3 po 5x5, hrá sa myšou, dotykom alebo šípkami."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Zaplavte dosku z rohu, až kým nebude mať jednu farbu, v obmedzenom počte ťahov; 10 levelov s väčšími doskami a viacerými farbami."
+    },
+    "mastermind": {
+      "name": "Mastermind (lámač kódov)",
+      "desc": "Rozlúštite skrytý farebný kód pomocou čiernych a bielych kolíkov; 10 levelov s dlhšími kódmi a viacerými farbami."
+    },
+    "hanoi": {
+      "name": "Hanojská veža",
+      "desc": "Presuňte disky z prvého kolíka na posledný bez kladenia väčšieho disku na menší; 10 levelov od 3 diskov po 12 diskov na 4 kolíkoch."
+    },
+    "pipes": {
+      "name": "Spájanie rúr",
+      "desc": "Otáčajte dielce rúr a spojte ich do jednej siete bez otvorených koncov; 10 levelov s rastúcimi doskami."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Vypĺňajte políčka podľa číselných nápovedí pri riadkoch a stĺpcoch a odhaľte obrázok; 10 levelov od 5x5 po 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (tlačenie škatúľ)",
+      "desc": "Zatlačte škatule na cieľové políčka v sklade; každý level je riešiteľný, 10 levelov s viacerými škatuľami a väčšími skladmi."
+    },
+    "block-10x10": {
+      "name": "Blokové puzzle 10x10",
+      "desc": "Umiestňujte dieliky na mriežku 10x10 a zaplňte riadky či stĺpce, aby zmizli, a dosiahnite cieľové skóre; 10 levelov."
+    },
+    "dots-boxes": {
+      "name": "Bodky a štvorce",
+      "desc": "Striedavo spájajte bodky, získavajte štvorce a poraďte počítač v 10 leveloch od ľahkých po ťažké."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate piškvorky",
+      "desc": "Piškvorky na 9 malých doskách: políčko, ktoré vyberiete, určuje, kde musí hrať súper; proti počítaču v 10 leveloch."
     }
   },
   "s": {

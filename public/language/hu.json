@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Piros",
     "lib.arcade.cGreen": "Zöld",
     "lib.arcade.cYellow": "Sárga",
-    "lib.arcade.cBlue": "Kék"
+    "lib.arcade.cBlue": "Kék",
+    "lib.arcade.guess": "Tipp",
+    "lib.arcade.clearRow": "Sor törlése",
+    "lib.arcade.area": "Terület: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} tipp maradt",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Nagyobb korongot nem tehetsz kisebbre.",
+    "lib.arcade.outOfMoves": "Elfogytak a lépések!",
+    "lib.arcade.fillAll": "Válassz színt minden helyre.",
+    "lib.arcade.modeFill": "Kitöltés",
+    "lib.arcade.modeMark": "Jelölés ✕",
+    "lib.arcade.clearAll": "Összes törlése",
+    "lib.arcade.note.nonogram": "Minden sor és oszlop elején álló számok sorrendben megadják az adott vonalon egymás után kitöltött mezők csoportjainak hosszát; a csoportok között legalább egy üres mező van. Kattintással vagy húzással töltsd ki a mezőket; a „Jelölés ✕” módra váltva jelölheted azokat, amelyekről biztosan tudod, hogy üresek. Teljesítsd az összes támpontot a nyeréshez.",
+    "lib.arcade.size": "{n}×{n}-es rács",
+    "lib.arcade.restartLevel": "Szint újraindítása",
+    "lib.arcade.newLayout": "Másik szint",
+    "lib.arcade.note.sokoban": "Mozgasd a játékost a nyílbillentyűkkel/WASD-vel, az alábbi gombokkal vagy ujjhúzással. Told az összes ládát a célmezőkre (a kerek pontokra). Egyszerre csak egy ládát tolhatsz, húzni nem lehet, ezért ne told a ládákat sarokba. A Visszavonással javíthatod a rossz lépést.",
+    "lib.arcade.boxesDone": "Ládák a célon: {n}/{t}",
+    "lib.arcade.note.block10": "Válassz egy elemet alul, majd kattints a rácsra a lerakáshoz (az elemek nem forgathatók). Tölts ki egy egész sort vagy oszlopot, hogy eltűnjön, és extra pontot kapj; több vonal egyszerre történő törlése nagy bónuszt ad. Érd el a célpontszámot a szint teljesítéséhez; ha a megmaradt elemek egyike sem fér el, vesztettél.",
+    "lib.arcade.note.dots": "Felváltva kössetek össze két szomszédos pontot egy vonallal. Aki egy négyzet negyedik oldalát húzza meg, megszerzi azt (a saját színében), és újra léphet. Ha minden vonal megvan, az nyer, akinek több négyzete van. Ne húzd meg egy négyzet harmadik oldalát, mert az ellenfeled elviszi.",
+    "lib.arcade.note.ultimate": "A tábla 9 kis amőbatáblából áll. Te X-szel játszol, és te kezdesz. A kis táblán választott mező dönti el, melyik kis táblán kell az ellenfélnek játszania (ki van emelve); ha az a tábla már eldőlt, bárhol léphet. Nyerj meg egy kis táblát, hogy tiéd legyen; szerezz meg három kis táblát egy sorban, oszlopban vagy átlóban a játék megnyeréséhez.",
+    "lib.arcade.note.lights-out": "Egy mezőre kattintva az a mező és a 4 szomszédja átvált (be/ki). Kapcsold le az összes lámpát. A Tipp megmutat egy érdemes lépést.",
+    "lib.arcade.note.fifteen": "Told a számozott lapkákat az üres helyre, hogy 1, 2, 3… sorrendben legyenek, az üres hellyel a jobb alsó sarokban. Kattints egy lapkára az üres hellyel azonos sorban vagy oszlopban, hogy az egész sort eltolja; a nyílbillentyűk is működnek.",
+    "lib.arcade.note.flood-it": "Válassz egy színt, hogy kitöltsd vele a bal felső sarokban birtokolt egész területet; az elnyeli az adott színű szomszédos mezőket. A megengedett lépésszámon belül tedd az egész táblát egyszínűvé.",
+    "lib.arcade.note.mastermind": "A számítógép elrejt egy színsort. Válassz színt minden helyre, majd nyomd meg a Tipp gombot. Fekete tüske = jó szín a jó helyen; fehér tüske = jó szín rossz helyen. Törd fel a kódot, mielőtt elfogynak a tippjeid.",
+    "lib.arcade.note.hanoi": "Vidd át az összes korongot az utolsó rúdra. Mindig csak a rúd legfelső korongját mozgasd, és soha ne tegyél nagyobb korongot kisebbre. Kattints a kiinduló rúdra, majd a célrúdra.",
+    "lib.arcade.note.pipes": "Kattints egy lapkára a cső 90°-os elforgatásához. Kösd össze az összes csövet egyetlen hálózattá, nyitott vég nélkül (a nyitott végek pirossal látszanak)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Hagyományos vietnami kőszóró játék: szórj köveket és szerezd meg a mandarinokat a számítógép ellen; 10 szint a könnyűtől a nehézig."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Kapcsold le az összes lámpát: minden nyomás átbillenti a mezőt és a 4 szomszédját; 10 szint növekvő táblákkal és tipp gombbal."
+    },
+    "fifteen": {
+      "name": "15-ös játék (csúsztatós kirakó)",
+      "desc": "Told sorrendbe a számozott lapkákat; 10 szint 3x3-tól 5x5-ig, egérrel, érintéssel vagy nyílbillentyűkkel."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Árasszd el a táblát a saroktól, amíg korlátozott számú lépésben egyszínű nem lesz; 10 szint nagyobb táblákkal és több színnel."
+    },
+    "mastermind": {
+      "name": "Mastermind (kódfejtő)",
+      "desc": "Fejtsd meg a rejtett színkódot fekete és fehér tüskés támpontokkal; 10 szint hosszabb kódokkal és több színnel."
+    },
+    "hanoi": {
+      "name": "Hanoi tornyai",
+      "desc": "Told át a korongokat az első rúdról az utolsóra anélkül, hogy nagyobbat tennél kisebbre; 10 szint 3 korongtól 12 korongig 4 rúdon."
+    },
+    "pipes": {
+      "name": "Csőkötő",
+      "desc": "Forgasd a csődarabokat, hogy nyitott vég nélküli hálózatot alkossanak; 10 szint növekvő táblákkal."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Töltsd ki a mezőket a sorok és oszlopok számtámpontjai alapján, hogy kirajzolódjon a kép; 10 szint 5x5-től 15x15-ig."
+    },
+    "sokoban": {
+      "name": "Sokoban (ládatologató)",
+      "desc": "Told a ládákat a célmezőkre egy raktárban; minden szint megoldható, 10 szint több ládával és nagyobb raktárakkal."
+    },
+    "block-10x10": {
+      "name": "Blokk kirakó 10x10",
+      "desc": "Helyezz el elemeket a 10x10-es rácson, és tölts ki sorokat vagy oszlopokat a törléshez és a célpontszám eléréséhez; 10 szint."
+    },
+    "dots-boxes": {
+      "name": "Pont-pont (dobozok)",
+      "desc": "Felváltva kössetek össze pontokat négyzetek megszerzéséhez, és győzd le a számítógépet 10 szinten könnyűtől a nehézig."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate amőba",
+      "desc": "Amőba 9 kis táblán: a választott mező dönti el, hol kell az ellenfélnek játszania; a számítógép ellen 10 szinten."
     }
   },
   "s": {

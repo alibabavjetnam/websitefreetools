@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Vermell",
     "lib.arcade.cGreen": "Verd",
     "lib.arcade.cYellow": "Groc",
-    "lib.arcade.cBlue": "Blau"
+    "lib.arcade.cBlue": "Blau",
+    "lib.arcade.guess": "Endevina",
+    "lib.arcade.clearRow": "Esborra la fila",
+    "lib.arcade.area": "Àrea: {n}/{t}",
+    "lib.arcade.triesLeft": "Et queden {n} intents",
+    "lib.arcade.minMoves": "Mínim: {n}",
+    "lib.arcade.hnBad": "No pots posar un disc més gran sobre un de més petit.",
+    "lib.arcade.outOfMoves": "Sense moviments!",
+    "lib.arcade.fillAll": "Tria un color per a cada posició.",
+    "lib.arcade.modeFill": "Omple",
+    "lib.arcade.modeMark": "Marca ✕",
+    "lib.arcade.clearAll": "Esborra-ho tot",
+    "lib.arcade.note.nonogram": "Els nombres a l'inici de cada fila i columna indiquen, per ordre, les longituds dels grups de caselles omplertes consecutives d'aquella línia, amb almenys una casella buida entre els grups. Fes clic o arrossega per omplir caselles; canvia a «Marca ✕» per anotar les caselles que estàs segur que són buides. Compleix totes les pistes per guanyar.",
+    "lib.arcade.size": "Quadrícula de {n}×{n}",
+    "lib.arcade.restartLevel": "Reinicia el nivell",
+    "lib.arcade.newLayout": "Un altre nivell",
+    "lib.arcade.note.sokoban": "Mou el jugador amb les fletxes/WASD, els botons de sota o lliscant el dit. Empeny totes les caixes cap a les caselles de destinació (els punts rodons). Només pots empènyer una caixa alhora i no pots estirar, així que evita empènyer caixes cap als racons. Fes servir Desfés per corregir un mal moviment.",
+    "lib.arcade.boxesDone": "Caixes al lloc: {n}/{t}",
+    "lib.arcade.note.block10": "Tria una peça a la part inferior i després fes clic a la quadrícula per col·locar-la (les peces no es poden girar). Omple una fila o columna sencera per eliminar-la i guanyar punts extra; eliminar diverses línies alhora dona un gran bonus. Arriba a la puntuació objectiu per superar el nivell; si cap de les peces restants hi cap, perds.",
+    "lib.arcade.note.dots": "Per torns, uniu dos punts veïns amb una línia. Qui dibuixa el quart costat d'un quadrat se'l queda (amb el seu color) i torna a jugar. Quan s'han dibuixat totes les línies, guanya qui té més quadrats. Evita dibuixar el tercer costat d'un quadrat o l'adversari se'l quedarà.",
+    "lib.arcade.note.ultimate": "El tauler està format per 9 taulers petits de tres en ratlla. Tu jugues amb X i comences. La casella que triïs dins d'un tauler petit decideix en quin tauler petit ha de jugar l'adversari a continuació (està ressaltat); si aquest tauler ja està acabat, pot jugar on vulgui. Guanya un tauler petit per quedar-te'l; aconsegueix tres taulers petits en fila, columna o diagonal per guanyar la partida.",
+    "lib.arcade.note.lights-out": "Fer clic en una casella canvia aquesta casella i les seves 4 veïnes (encesa/apagada). Apaga tots els llums. Fes servir Pista per veure una casella que val la pena prémer.",
+    "lib.arcade.note.fifteen": "Llisca les fitxes numerades cap al buit per posar-les en ordre 1, 2, 3… amb el buit a la cantonada inferior dreta. Fes clic en una fitxa de la mateixa fila o columna que el buit per lliscar tota la línia; les fletxes també funcionen.",
+    "lib.arcade.note.flood-it": "Tria un color per omplir tota l'àrea que domines a la cantonada superior esquerra; engoleix les caselles veïnes d'aquest color. Fes que tot el tauler sigui d'un sol color dins del nombre de moviments permès.",
+    "lib.arcade.note.mastermind": "L'ordinador amaga una fila de colors. Tria un color per a cada posició i prem Endevina. Una clavilla negra = color correcte al lloc correcte; una clavilla blanca = color correcte al lloc incorrecte. Descobreix el codi abans de quedar-te sense intents.",
+    "lib.arcade.note.hanoi": "Mou tots els discos a l'última vareta. Cada cop mou només el disc de dalt d'una vareta i no posis mai un disc més gran sobre un de més petit. Fes clic a la vareta d'origen i després a la de destinació.",
+    "lib.arcade.note.pipes": "Fes clic en una peça per girar la canonada 90°. Connecta totes les canonades en una sola xarxa sense extrems oberts (els extrems oberts es mostren en vermell)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Un joc tradicional vietnamita de sembra de pedres: sembra pedres i captura els Mandarins contra l'ordinador; 10 nivells de fàcil a difícil."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Apaga tots els llums: cada pulsació inverteix la casella i les seves 4 veïnes; 10 nivells amb taulers cada cop més grans i botó de pista."
+    },
+    "fifteen": {
+      "name": "Joc del 15 (trencaclosques lliscant)",
+      "desc": "Fes lliscar les fitxes numerades fins a ordenar-les; 10 nivells de 3x3 a 5x5, amb ratolí, tàctil o fletxes."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Inunda el tauler des de la cantonada fins que sigui d'un sol color en un nombre limitat de moviments; 10 nivells amb taulers més grans i més colors."
+    },
+    "mastermind": {
+      "name": "Mastermind (desxifra el codi)",
+      "desc": "Desxifra el codi de colors amagat amb les pistes de les clavilles negres i blanques; 10 nivells amb codis més llargs i més colors."
+    },
+    "hanoi": {
+      "name": "Torres de Hanoi",
+      "desc": "Mou els discos de la primera vareta a l'última sense posar un disc gran sobre un de petit; 10 nivells de 3 discos fins a 12 discos amb 4 varetes."
+    },
+    "pipes": {
+      "name": "Connecta les canonades",
+      "desc": "Gira les peces de canonada per unir-les en una sola xarxa sense extrems oberts; 10 nivells amb taulers cada cop més grans."
+    },
+    "nonogram": {
+      "name": "Nonograma (Picross)",
+      "desc": "Omple caselles amb les pistes numèriques de files i columnes per revelar un dibuix; 10 nivells de 5x5 a 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (empeny caixes)",
+      "desc": "Empeny les caixes cap a les caselles de destinació en un magatzem; tots els nivells tenen solució, 10 nivells amb més caixes i magatzems més grans."
+    },
+    "block-10x10": {
+      "name": "Trencaclosques de blocs 10x10",
+      "desc": "Col·loca peces en una quadrícula de 10x10 i omple files o columnes per eliminar-les i arribar a la puntuació objectiu; 10 nivells."
+    },
+    "dots-boxes": {
+      "name": "Punts i caixes",
+      "desc": "Uniu punts per torns per conquerir quadrats i guanya l'ordinador en 10 nivells de fàcil a difícil."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tres en ratlla definitiu",
+      "desc": "Tres en ratlla en 9 taulers petits: la casella que triïs decideix on ha de jugar l'adversari; contra l'ordinador en 10 nivells."
     }
   },
   "s": {

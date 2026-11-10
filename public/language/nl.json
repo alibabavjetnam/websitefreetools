@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rood",
     "lib.arcade.cGreen": "Groen",
     "lib.arcade.cYellow": "Geel",
-    "lib.arcade.cBlue": "Blauw"
+    "lib.arcade.cBlue": "Blauw",
+    "lib.arcade.guess": "Raden",
+    "lib.arcade.clearRow": "Rij wissen",
+    "lib.arcade.area": "Gebied: {n}/{t}",
+    "lib.arcade.triesLeft": "Nog {n} pogingen",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Je kunt geen grotere schijf op een kleinere leggen.",
+    "lib.arcade.outOfMoves": "Geen zetten meer!",
+    "lib.arcade.fillAll": "Kies een kleur voor elke positie.",
+    "lib.arcade.modeFill": "Vullen",
+    "lib.arcade.modeMark": "Markeer ✕",
+    "lib.arcade.clearAll": "Alles wissen",
+    "lib.arcade.note.nonogram": "De getallen aan het begin van elke rij en kolom geven in volgorde de lengtes van de reeksen aaneengesloten gevulde vakjes in die lijn, met minstens één leeg vakje ertussen. Klik of sleep om vakjes te vullen; schakel naar “Markeer ✕” om vakjes te noteren waarvan je zeker weet dat ze leeg zijn. Voldoe aan alle aanwijzingen om te winnen.",
+    "lib.arcade.size": "Raster van {n}×{n}",
+    "lib.arcade.restartLevel": "Level opnieuw starten",
+    "lib.arcade.newLayout": "Ander level",
+    "lib.arcade.note.sokoban": "Beweeg de speler met de pijltjestoetsen/WASD, de knoppen hieronder of door te vegen. Duw elke kist op een doelvakje (de ronde stippen). Je kunt maar één kist tegelijk duwen en niet trekken, dus duw kisten niet in hoeken. Gebruik Ongedaan maken om een slechte zet te herstellen.",
+    "lib.arcade.boxesDone": "Kisten op doel: {n}/{t}",
+    "lib.arcade.note.block10": "Kies onderaan een stuk en klik dan op het raster om het te plaatsen (stukken kunnen niet draaien). Vul een hele rij of kolom om die te wissen en extra punten te scoren; meerdere lijnen tegelijk wissen levert een grote bonus op. Haal de doelscore om het level te halen; past geen van de resterende stukken meer, dan verlies je.",
+    "lib.arcade.note.dots": "Verbind om de beurt twee naastgelegen stippen met een lijn. Wie de vierde zijde van een vierkant tekent, claimt het (in zijn kleur) en mag nog een keer. Als alle lijnen getekend zijn, wint de speler met de meeste vierkanten. Teken niet de derde zijde van een vierkant, anders pakt je tegenstander het.",
+    "lib.arcade.note.ultimate": "Het bord bestaat uit 9 kleine boter-kaas-en-eieren-borden. Jij speelt X en begint. Het vakje dat je in een klein bord kiest, bepaalt in welk klein bord je tegenstander daarna moet spelen (het is gemarkeerd); is dat bord al klaar, dan mag hij overal spelen. Win een klein bord om het te veroveren; verover drie kleine borden in een rij, kolom of diagonaal om het spel te winnen.",
+    "lib.arcade.note.lights-out": "Een vakje aanklikken schakelt dat vakje en de 4 buren om (aan/uit). Zet alle lampjes uit. Gebruik Hint om een vakje te zien dat de moeite waard is.",
+    "lib.arcade.note.fifteen": "Schuif de genummerde tegels in het lege vak om ze op volgorde 1, 2, 3… te zetten met het lege vak rechtsonder. Klik op een tegel in dezelfde rij of kolom als het lege vak om de hele rij te schuiven; pijltjestoetsen werken ook.",
+    "lib.arcade.note.flood-it": "Kies een kleur om het hele gebied linksboven dat van jou is te vullen; het slokt naburige vakjes van die kleur op. Maak het hele bord één kleur binnen het toegestane aantal zetten.",
+    "lib.arcade.note.mastermind": "De computer verbergt een rij kleuren. Kies een kleur voor elke positie en druk op Raden. Een zwarte pin = juiste kleur op de juiste plek; een witte pin = juiste kleur op de verkeerde plek. Kraak de code voordat je pogingen op zijn.",
+    "lib.arcade.note.hanoi": "Verplaats alle schijven naar de laatste paal. Verplaats telkens alleen de bovenste schijf van een paal en leg nooit een grotere schijf op een kleinere. Klik op de beginpaal en dan op de doelpaal.",
+    "lib.arcade.note.pipes": "Klik op een tegel om de pijp 90° te draaien. Verbind alle pijpen tot één netwerk zonder open uiteinden (open uiteinden zijn rood)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Een traditioneel Vietnamees zaaispel: zaai stenen en sla de Mandarijnen tegen de computer; 10 levels van makkelijk tot moeilijk."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Zet elk lampje uit: elke druk schakelt dat vakje en de 4 buren om; 10 levels met groeiende borden en een hintknop."
+    },
+    "fifteen": {
+      "name": "15-puzzel (schuifpuzzel)",
+      "desc": "Schuif de genummerde tegels op volgorde; 10 levels van 3x3 tot 5x5, te spelen met muis, touch of pijltjestoetsen."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Overstroom het bord vanuit de hoek tot het één kleur heeft binnen een beperkt aantal zetten; 10 levels met grotere borden en meer kleuren."
+    },
+    "mastermind": {
+      "name": "Mastermind (codekraker)",
+      "desc": "Kraak de verborgen kleurencode met zwarte en witte pennen als aanwijzing; 10 levels met langere codes en meer kleuren."
+    },
+    "hanoi": {
+      "name": "Torens van Hanoi",
+      "desc": "Verplaats de schijven van de eerste naar de laatste paal zonder een grotere schijf op een kleinere te leggen; 10 levels van 3 schijven tot 12 schijven op 4 palen."
+    },
+    "pipes": {
+      "name": "Pijpen verbinden",
+      "desc": "Draai de pijpstukken zodat ze één netwerk zonder open uiteinden vormen; 10 levels met groeiende borden."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Vul vakjes met de cijferaanwijzingen bij de rijen en kolommen om een plaatje te onthullen; 10 levels van 5x5 tot 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (kistenschuiver)",
+      "desc": "Duw de kisten in een magazijn naar de doelvakjes; elk level is oplosbaar, met 10 levels met meer kisten en grotere magazijnen."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Plaats stukken op een raster van 10x10 en vul rijen of kolommen om ze te wissen en de doelscore te halen; 10 levels."
+    },
+    "dots-boxes": {
+      "name": "Stippen en vierkantjes",
+      "desc": "Verbind om de beurt stippen om vierkanten te veroveren en versla de computer in 10 levels van makkelijk tot moeilijk."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultieme boter-kaas-en-eieren",
+      "desc": "Boter-kaas-en-eieren over 9 kleine borden: het vakje dat je kiest bepaalt waar je tegenstander moet spelen; tegen de computer in 10 levels."
     }
   },
   "s": {

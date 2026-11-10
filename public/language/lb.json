@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rout",
     "lib.arcade.cGreen": "Gréng",
     "lib.arcade.cYellow": "Giel",
-    "lib.arcade.cBlue": "Blo"
+    "lib.arcade.cBlue": "Blo",
+    "lib.arcade.guess": "Roden",
+    "lib.arcade.clearRow": "Rei läschen",
+    "lib.arcade.area": "Fläch: {n}/{t}",
+    "lib.arcade.triesLeft": "Nach {n} Versich iwwreg",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Eng méi grouss Scheif däerf net op eng méi kleng.",
+    "lib.arcade.outOfMoves": "Keng Zich méi!",
+    "lib.arcade.fillAll": "Wielt eng Faarf fir all Positioun.",
+    "lib.arcade.modeFill": "Fëllen",
+    "lib.arcade.modeMark": "Markéieren ✕",
+    "lib.arcade.clearAll": "Alles läschen",
+    "lib.arcade.note.nonogram": "D’Zuelen um Ufank vun all Rei a Kolonn weisen d’Längt vun de Gruppe vu fortlafend gefëllte Felder an där Linn, der Reihe no, mat mindestens engem eidele Feld tëscht de Gruppen. Klickt oder zitt fir Felder ze fëllen; wiesselt op „Markéieren ✕“, fir Felder ze notéieren, vun deenen Dir sécher sidd, datt se eidel sinn. Erfëllt all Hiweiser fir ze gewannen.",
+    "lib.arcade.size": "{n}×{n} Gitter",
+    "lib.arcade.restartLevel": "Niveau nei starten",
+    "lib.arcade.newLayout": "En anert Niveau",
+    "lib.arcade.note.sokoban": "Beweegt de Spiller mat den Pfeiltasten/WASD, den Knäpp ënnendrënner oder duerch Wischen. Dréckt all Këschten op d’Zilfelder (d’ronn Punkten). Dir kënnt just eng Këscht op eemol drécken an net zéien, also dréckt keng Këschte a Ecken. Mat Réckgängeg maache korrigéiert Dir e schlechte Zuch.",
+    "lib.arcade.boxesDone": "Këschten um Zil: {n}/{t}",
+    "lib.arcade.note.block10": "Wielt ënnen e Stéck aus, da klickt op d’Gitter, fir et ofzeleeën (d’Stécker kënnen net gedréint ginn). Fëllt eng ganz Rei oder Kolonn, fir se ze läschen an Extrapunkten ze kréien; méi Linnen op eemol ze läschen bréngt e grousse Bonus. Erreecht d’Zilpunkten, fir d’Niveau ze packen; wann keent vun de reschtleche Stécker méi passt, verléiert Dir.",
+    "lib.arcade.note.dots": "Verbënnt ofwiesselnd zwee niewendrun Punkten mat enger Linn. Wien déi véierte Säit vun engem Quadrat zitt, kritt dat Quadrat (a senger Faarf) a spillt nach eng Kéier. Wann all Linnen gezunn sinn, gewënnt de Spiller mat de meeschte Quadrater. Zitt net déi drëtt Säit vun engem Quadrat, soss hëlt de Géigner et.",
+    "lib.arcade.note.ultimate": "D’Brieft besteet aus 9 klenge Dräi-gewënnt-Briefter. Dir spillt X a fänkt un. D’Feld, dat Dir an engem klenge Brieft wielt, entscheet, a wéi engem klenge Brieft de Géigner als Nächst muss spillen (et ass markéiert); wann dat Brieft schonn eriwwer ass, däerf hien iwwerall spillen. Gewënnt e klenge Brieft, fir et ze kréien; huelt dräi kleng Briefter an enger Rei, Kolonn oder Diagonal, fir d’Spill ze gewannen.",
+    "lib.arcade.note.lights-out": "E Klick op e Feld wiesselt dat Feld a seng 4 Nopere (un/aus). Maacht all Luchten aus. Mam Hiwäis gesitt Dir e Feld, dat et wäert ass ze drécken.",
+    "lib.arcade.note.fifteen": "Schiebt d’nummeréiert Plättercher an d’Lück, fir se an der Reiefolleg 1, 2, 3… ze setzen, mat der Lück ënnen riets an der Eck. Klickt op e Plättchen an der selwechter Rei oder Kolonn wéi d’Lück, fir déi ganz Linn ze schieben; d’Pfeiltaste funktionéieren och.",
+    "lib.arcade.note.flood-it": "Wielt eng Faarf, fir är ganz Fläch an der ieweschter lénkser Eck ze fëllen; si schléckt niewendrun Felder vun där Faarf. Maacht dat ganzt Brieft an der erlaabter Zuel un Zich eefaarweg.",
+    "lib.arcade.note.mastermind": "De Computer verstoppt eng Rei vu Faarwen. Wielt eng Faarf fir all Positioun, da dréckt op Roden. E schwaarze Pinn = richteg Faarf op der richteger Plaz; e wäisse Pinn = richteg Faarf op der falscher Plaz. Knackt de Code, ier Är Versich opgebraucht sinn.",
+    "lib.arcade.note.hanoi": "Réckelt all Scheiwen op de leschte Stab. Réckelt all Kéier nëmmen déi iewescht Scheif vun engem Stab a leet ni eng méi grouss Scheif op eng méi kleng. Klickt op de Quellstab, dann op den Zilstab.",
+    "lib.arcade.note.pipes": "Klickt op e Plättchen, fir d’Rouer em 90° ze dréinen. Verbënnt all Rouere zu engem Netz ouni oppen Enner (oppen Enner si rout)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "E traditionellt vietnamesescht Spill, wou ee Steng verdeelt: verdeel Steng a fang d'Mandarinen géint de Computer; 10 Niveauen vun einfach bis schwéier."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Maacht all Luchten aus: all Dréck wiesselt dat Feld a seng 4 Nopere; 10 Niveauen mat wuessende Briefter an engem Hiwäis-Knapp."
+    },
+    "fifteen": {
+      "name": "15er-Puzzle (Schiebepuzzle)",
+      "desc": "Schiebt d’nummeréiert Plättercher an d’Reiefolleg; 10 Niveauen vun 3x3 bis 5x5, gespillt mat Maus, Touch oder Pfeiltaste."
+    },
+    "flood-it": {
+      "name": "Flood-it (Faarwen-Iwwerflutung)",
+      "desc": "Iwwerflut d’Brieft vun der Eck aus, bis et eefaarweg ass, an enger limitéierter Zuel un Zich; 10 Niveauen mat gréissere Briefter a méi Faarwen."
+    },
+    "mastermind": {
+      "name": "Mastermind (Codeknacker)",
+      "desc": "Knackt de verstoppte Faarfcode mat schwaarzen a wäisse Pinn-Hiweiser; 10 Niveauen mat méi laange Coden a méi Faarwen."
+    },
+    "hanoi": {
+      "name": "Tuerm vun Hanoi",
+      "desc": "Réckelt d’Scheiwen vum éischte Stab op de leschte, ouni eng méi grouss Scheif op eng méi kleng ze leeën; 10 Niveauen vun 3 Scheiwen bis 12 Scheiwen op 4 Stäbe."
+    },
+    "pipes": {
+      "name": "Rouere verbannen",
+      "desc": "Dréit d’Rouerstécker, fir se zu engem Netz ouni oppen Enner ze verbannen; 10 Niveauen mat wuessende Briefter."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Fëllt Felder mat de Zuelen-Hiweiser bei de Reien a Kolonnen, fir e Bild opzedecken; 10 Niveauen vun 5x5 bis 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Këschten drécken)",
+      "desc": "Dréckt d’Këschten op d’Zilfelder an engem Lager; all Niveau ass léisbar, 10 Niveauen mat méi Këschten a méi grousse Lagere."
+    },
+    "block-10x10": {
+      "name": "Block-Puzzle 10x10",
+      "desc": "Setzt Stécker op e 10x10-Gitter a fëllt Reien oder Kolonnen, fir se ze läschen an d’Zilpunkten z’erreechen; 10 Niveauen."
+    },
+    "dots-boxes": {
+      "name": "Punkten a Këschten",
+      "desc": "Verbënnt ofwiesselnd Punkten, fir Quadrater ze gewannen, a schloe vum Computer a 10 Niveauen vu liicht bis schwéier."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate Dräi-gewënnt",
+      "desc": "Dräi gewënnt op 9 klenge Briefter: d’Feld, dat Dir wielt, entscheet, wou de Géigner muss spillen; géint de Computer a 10 Niveauen."
     }
   },
   "s": {

@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Beureum",
     "lib.arcade.cGreen": "Héjo",
     "lib.arcade.cYellow": "Konéng",
-    "lib.arcade.cBlue": "Biru"
+    "lib.arcade.cBlue": "Biru",
+    "lib.arcade.guess": "Tebak",
+    "lib.arcade.clearRow": "Hapus baris",
+    "lib.arcade.area": "Wewengkon: {n}/{t}",
+    "lib.arcade.triesLeft": "Sésana {n} tebakan",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Piringan gedé teu bisa disimpen di luhur piringan leutik.",
+    "lib.arcade.outOfMoves": "Lengkah geus béak!",
+    "lib.arcade.fillAll": "Mangga pilih warna pikeun unggal posisi.",
+    "lib.arcade.modeFill": "Eusian",
+    "lib.arcade.modeMark": "Tandaan ✕",
+    "lib.arcade.clearAll": "Hapus kabéh",
+    "lib.arcade.note.nonogram": "Angka di awal unggal baris jeung kolom nunjukkeun panjang gugusan kotak nu diwarnaan sambung-sinambung dina garis éta, nurutkeun urutan, kalawan sahanteuna hiji kotak kosong di antara gugusan. Klik atawa sered pikeun ngeusian kotak; pindah ka “Tandaan ✕” pikeun nyirian kotak nu anjeun yakin kosong. Penuhan sakabéh pituduh pikeun meunang.",
+    "lib.arcade.size": "Kisi {n}×{n}",
+    "lib.arcade.restartLevel": "Mimitian deui level",
+    "lib.arcade.newLayout": "Level séjén",
+    "lib.arcade.note.sokoban": "Gerakkeun pamaén ku tombol panah/WASD, tombol di handap, atawa ku nyéwét. Dorong sakabéh kotak ka kotak target (titik buleud). Anjeun ngan bisa ngadorong hiji kotak sakali jeung teu bisa narik, ku kituna ulah ngadorong kotak ka juru. Paké Batalkeun pikeun ngabenerkeun lengkah nu salah.",
+    "lib.arcade.boxesDone": "Kotak dina target: {n}/{t}",
+    "lib.arcade.note.block10": "Pilih hiji potongan di handap, terus klik kisi pikeun nempatkeunana (potongan teu bisa diputer). Eusian hiji baris atawa kolom pinuh pikeun mupus éta sarta meunangkeun poin tambahan; mupus sababaraha garis sakaligus méré bonus gedé. Cangkingkeun skor target pikeun lulus level; lamun euweuh potongan nu kari muat, anjeun éléh.",
+    "lib.arcade.note.dots": "Gantian nyambungkeun dua titik tatangga ku hiji garis. Anu ngagambar sisi kaopat pasagi nyokot éta pasagi (ku warnana) sarta maén deui. Lamun sakabéh garis geus digambar, pamaén nu pasagina leuwih loba meunang. Ulah ngagambar sisi katilu pasagi, lamun heunteu lawan bakal nyokotna.",
+    "lib.arcade.note.ultimate": "Papan diwangun ku 9 papan leutik tik-tak-tok. Anjeun maén X sarta mimiti heula. Kotak nu anjeun pilih dina papan leutik nangtukeun papan leutik mana nu kudu dimainkeun ku lawan satuluyna (disorot); lamun papan éta geus réngsé, lawan bisa maén di mana waé. Meunang papan leutik pikeun ngaklaim éta; klaim tilu papan leutik sajajar, sakolom, atawa diagonal pikeun meunang kaulinan.",
+    "lib.arcade.note.lights-out": "Ngaklik hiji kotak ngabalikeun kotak éta jeung 4 tatanggana (hurung/pareum). Pareumkeun sakabéh lampu. Paké Pitunjuk pikeun ningali kotak nu pantes dipencét.",
+    "lib.arcade.note.fifteen": "Sorong kartu nu aya nomerna kana ruang kosong pikeun nyusun urutanana 1, 2, 3… kalawan ruang kosong di juru katuhu handap. Klik kartu dina baris atawa kolom nu sarua jeung ruang kosong pikeun nyorong sakabéh barisna; tombol panah ogé jalan.",
+    "lib.arcade.note.flood-it": "Pilih hiji warna pikeun ngeusian sakabéh wewengkon nu anjeun kawasa di juru kénca luhur; éta nelen kotak tatangga nu warnana sarua. Jadikeun sakabéh papan hiji warna dina jumlah lengkah nu diidinan.",
+    "lib.arcade.note.mastermind": "Komputer nyumputkeun sabaris warna. Pilih warna pikeun unggal posisi, terus pencét Tebak. Paku hideung = warna bener di tempat nu bener; paku bodas = warna bener di tempat nu salah. Pecahkeun kodeu saméméh tebakan béak.",
+    "lib.arcade.note.hanoi": "Pindahkeun sakabéh piringan ka tihang pamungkas. Pindahkeun ngan piringan pangluhurna tina hiji tihang sakali, sarta ulah nempatkeun piringan gedé di luhur nu leutik. Klik tihang asal, terus tihang tujuan.",
+    "lib.arcade.note.pipes": "Klik hiji ubin pikeun muter pipa 90°. Sambungkeun sakabéh pipa jadi hiji jaringan tanpa tungtung nu muka (tungtung nu muka katémbong beureum)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Kaulinan tradisional Vietnam nyebar batu: sebar batu jeung cokot Mandarin ngalawan komputer; 10 tingkat tina gampang nepi ka hésé."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Pareumkeun sakabéh lampu: unggal pencétan ngabalikeun kotak éta jeung 4 tatanggana; 10 level kalawan papan nu beuki gedé jeung tombol pitunjuk."
+    },
+    "fifteen": {
+      "name": "Puzzle 15 (puzzle sorong)",
+      "desc": "Sorong ubin nomer nepi ka berurutan; 10 level ti 3x3 nepi ka 5x5, dimainkeun ku beurit, sentuh, atawa tombol panah."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Banjiran papan ti juru nepi ka jadi hiji warna dina jumlah lengkah nu diwatesan; 10 level kalawan papan leuwih gedé jeung leuwih loba warna."
+    },
+    "mastermind": {
+      "name": "Mastermind (Pamecah Kodeu)",
+      "desc": "Pecahkeun kodeu warna nu disumputkeun maké pituduh paku hideung jeung bodas; 10 level kalawan kodeu leuwih panjang jeung leuwih loba warna."
+    },
+    "hanoi": {
+      "name": "Menara Hanoi",
+      "desc": "Pindahkeun piringan ti tihang kahiji ka tihang pamungkas tanpa nempatkeun piringan gedé di luhur nu leutik; 10 level ti 3 piringan nepi ka 12 piringan dina 4 tihang."
+    },
+    "pipes": {
+      "name": "Sambungkeun Pipa",
+      "desc": "Puter potongan pipa pikeun nyambungkeunana jadi hiji jaringan tanpa tungtung nu muka; 10 level kalawan papan nu beuki gedé."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Eusian kotak maké pituduh angka dina baris jeung kolom pikeun ngungkabkeun gambar; 10 level ti 5x5 nepi ka 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Pangdorong Kotak)",
+      "desc": "Dorong kotak-kotak ka kotak target di hiji gudang; unggal level bisa direngsekeun, 10 level kalawan leuwih loba kotak jeung gudang leuwih lega."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Tempatkeun potongan dina kisi 10x10 sarta eusian baris atawa kolom pikeun mupusna jeung ngahontal skor target; 10 level."
+    },
+    "dots-boxes": {
+      "name": "Titik jeung Kotak",
+      "desc": "Gantian nyambungkeun titik pikeun ngaklaim pasagi jeung éléhkeun komputer dina 10 level ti gampang nepi ka hésé."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tik-Tak-Tok Pamungkas",
+      "desc": "Tik-tak-tok dina 9 papan leutik: kotak nu anjeun pilih nangtukeun di mana lawan kudu maén; ngalawan komputer dina 10 level."
     }
   },
   "s": {

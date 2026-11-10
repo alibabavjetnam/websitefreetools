@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rosso",
     "lib.arcade.cGreen": "Verde",
     "lib.arcade.cYellow": "Giallo",
-    "lib.arcade.cBlue": "Blu"
+    "lib.arcade.cBlue": "Blu",
+    "lib.arcade.guess": "Prova",
+    "lib.arcade.clearRow": "Cancella riga",
+    "lib.arcade.area": "Area: {n}/{t}",
+    "lib.arcade.triesLeft": "Ancora {n} tentativi",
+    "lib.arcade.minMoves": "Minimo: {n}",
+    "lib.arcade.hnBad": "Non puoi mettere un disco più grande su uno più piccolo.",
+    "lib.arcade.outOfMoves": "Mosse esaurite!",
+    "lib.arcade.fillAll": "Scegli un colore per ogni posizione.",
+    "lib.arcade.modeFill": "Riempi",
+    "lib.arcade.modeMark": "Segna ✕",
+    "lib.arcade.clearAll": "Cancella tutto",
+    "lib.arcade.note.nonogram": "I numeri all'inizio di ogni riga e colonna indicano, in ordine, la lunghezza dei gruppi di caselle piene consecutive in quella linea, separati da almeno una casella vuota. Fai clic o trascina per riempire le caselle; passa a “Segna ✕” per annotare le caselle che sei certo siano vuote. Soddisfa tutti gli indizi per vincere.",
+    "lib.arcade.size": "Griglia {n}×{n}",
+    "lib.arcade.restartLevel": "Ricomincia livello",
+    "lib.arcade.newLayout": "Altro livello",
+    "lib.arcade.note.sokoban": "Muovi il giocatore con le frecce/WASD, i pulsanti qui sotto o scorrendo il dito. Spingi ogni cassa su una casella obiettivo (i punti rotondi). Puoi spingere una sola cassa alla volta e non puoi tirare, quindi evita di spingere le casse negli angoli. Usa Annulla per rimediare a una mossa sbagliata.",
+    "lib.arcade.boxesDone": "Casse a posto: {n}/{t}",
+    "lib.arcade.note.block10": "Scegli un pezzo in basso, poi fai clic sulla griglia per piazzarlo (i pezzi non si possono ruotare). Riempi un'intera riga o colonna per eliminarla e ottenere punti extra; eliminare più linee insieme dà un grosso bonus. Raggiungi il punteggio obiettivo per superare il livello; se nessuno dei pezzi rimasti entra, perdi.",
+    "lib.arcade.note.dots": "A turno, unite due puntini vicini con una linea. Chi traccia il quarto lato di un quadrato lo conquista (con il proprio colore) e muove ancora. Quando tutte le linee sono tracciate, vince chi ha più quadrati. Evita di tracciare il terzo lato di un quadrato, o l'avversario se lo prenderà.",
+    "lib.arcade.note.ultimate": "La scacchiera è formata da 9 piccole scacchiere di tris. Tu giochi X e inizi per primo. La casella che scegli in una scacchiera piccola decide in quale scacchiera piccola dovrà giocare l'avversario (è evidenziata); se quella è già conclusa, può giocare ovunque. Vinci una scacchiera piccola per conquistarla; conquistane tre in riga, colonna o diagonale per vincere la partita.",
+    "lib.arcade.note.lights-out": "Un clic su una casella accende/spegne quella casella e le sue 4 vicine. Spegni tutte le luci. Usa Suggerimento per vedere una casella utile da premere.",
+    "lib.arcade.note.fifteen": "Fai scorrere le tessere numerate nello spazio vuoto per metterle in ordine 1, 2, 3… con lo spazio in basso a destra. Fai clic su una tessera nella stessa riga o colonna dello spazio per spostare l'intera fila; funzionano anche le frecce.",
+    "lib.arcade.note.flood-it": "Scegli un colore per riempire tutta l'area che controlli nell'angolo in alto a sinistra: inghiottirà le caselle vicine di quel colore. Rendi l'intera griglia di un unico colore entro il numero di mosse consentito.",
+    "lib.arcade.note.mastermind": "Il computer nasconde una fila di colori. Scegli un colore per ogni posizione, poi premi Prova. Un piolo nero = colore giusto al posto giusto; un piolo bianco = colore giusto al posto sbagliato. Scopri il codice prima di finire i tentativi.",
+    "lib.arcade.note.hanoi": "Sposta tutti i dischi sull'ultimo piolo. Sposta ogni volta solo il disco in cima a un piolo e non mettere mai un disco più grande su uno più piccolo. Fai clic sul piolo di partenza, poi su quello di arrivo.",
+    "lib.arcade.note.pipes": "Fai clic su una tessera per ruotare il tubo di 90°. Collega tutti i tubi in un'unica rete senza estremità aperte (quelle aperte sono in rosso)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Un gioco di semina tradizionale vietnamita: semina le pietre e cattura i Mandarini contro il computer; 10 livelli da facile a difficile."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Spegni tutte le luci: ogni pressione inverte la casella e le sue 4 vicine; 10 livelli con griglie sempre più grandi e pulsante suggerimento."
+    },
+    "fifteen": {
+      "name": "Gioco del 15 (puzzle scorrevole)",
+      "desc": "Fai scorrere le tessere numerate in ordine; 10 livelli da 3x3 a 5x5, con mouse, tocco o frecce."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Inonda la griglia partendo dall'angolo finché non diventa di un solo colore entro un numero limitato di mosse; 10 livelli con griglie più grandi e più colori."
+    },
+    "mastermind": {
+      "name": "Mastermind (Trova il codice)",
+      "desc": "Scopri il codice di colori nascosto con gli indizi dei pioli neri e bianchi; 10 livelli con codici più lunghi e più colori."
+    },
+    "hanoi": {
+      "name": "Torre di Hanoi",
+      "desc": "Sposta i dischi dal primo all'ultimo piolo senza mettere un disco grande su uno piccolo; 10 livelli da 3 dischi fino a 12 dischi su 4 pioli."
+    },
+    "pipes": {
+      "name": "Collega i tubi",
+      "desc": "Ruota i tubi per unirli in un'unica rete senza estremità aperte; 10 livelli con griglie sempre più grandi."
+    },
+    "nonogram": {
+      "name": "Nonogramma (Picross)",
+      "desc": "Riempi le caselle usando gli indizi numerici di righe e colonne per rivelare un'immagine; 10 livelli da 5x5 a 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Spingi le casse)",
+      "desc": "Spingi le casse sulle caselle obiettivo in un magazzino; ogni livello è risolvibile, 10 livelli con più casse e magazzini più grandi."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Piazza i pezzi su una griglia 10x10 e riempi righe o colonne per eliminarle e raggiungere il punteggio obiettivo; 10 livelli."
+    },
+    "dots-boxes": {
+      "name": "Unisci i puntini (Dots and Boxes)",
+      "desc": "A turno unite i puntini per conquistare quadrati e batti il computer in 10 livelli da facile a difficile."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tris Ultimate",
+      "desc": "Tris su 9 scacchiere piccole: la casella che scegli decide dove deve giocare l'avversario; contro il computer in 10 livelli."
     }
   },
   "s": {

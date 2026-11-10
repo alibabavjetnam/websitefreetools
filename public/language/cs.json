@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Červená",
     "lib.arcade.cGreen": "Zelená",
     "lib.arcade.cYellow": "Žlutá",
-    "lib.arcade.cBlue": "Modrá"
+    "lib.arcade.cBlue": "Modrá",
+    "lib.arcade.guess": "Hádat",
+    "lib.arcade.clearRow": "Smazat řádek",
+    "lib.arcade.area": "Plocha: {n}/{t}",
+    "lib.arcade.triesLeft": "Zbývá {n} pokusů",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Větší kotouč nelze položit na menší.",
+    "lib.arcade.outOfMoves": "Došly tahy!",
+    "lib.arcade.fillAll": "Vyberte barvu pro každou pozici.",
+    "lib.arcade.modeFill": "Vyplnit",
+    "lib.arcade.modeMark": "Označit ✕",
+    "lib.arcade.clearAll": "Smazat vše",
+    "lib.arcade.note.nonogram": "Čísla na začátku každého řádku a sloupce udávají v pořadí délky souvislých úseků vyplněných políček v dané řadě, mezi úseky je alespoň jedno prázdné políčko. Kliknutím nebo tažením vyplňujete políčka; přepněte na „Označit ✕“ pro poznačení políček, o kterých jste si jisti, že jsou prázdná. Splňte všechny nápovědy a vyhrajete.",
+    "lib.arcade.size": "Mřížka {n}×{n}",
+    "lib.arcade.restartLevel": "Restartovat úroveň",
+    "lib.arcade.newLayout": "Jiná úroveň",
+    "lib.arcade.note.sokoban": "Hráče posouvejte šipkami/WASD, tlačítky níže nebo přejetím prstem. Přesuňte každou bednu na cílové políčko (kulaté tečky). Můžete tlačit jen jednu bednu najednou a netáhnout, takže bedny nezatlačujte do rohů. Špatný tah opravíte tlačítkem Zpět.",
+    "lib.arcade.boxesDone": "Bedny na cíli: {n}/{t}",
+    "lib.arcade.note.block10": "Dole vyberte dílek a klikněte na mřížku, kam ho chcete umístit (dílky nelze otáčet). Vyplněním celého řádku nebo sloupce ho smažete a získáte body navíc; smazání více řad najednou přináší velký bonus. Dosáhněte cílového skóre a úroveň splníte; pokud se žádný ze zbývajících dílků nevejde, prohráváte.",
+    "lib.arcade.note.dots": "Střídavě spojujte dvě sousední tečky čarou. Kdo nakreslí čtvrtou stranu čtverce, získá ho (ve své barvě) a hraje znovu. Až jsou všechny čáry nakresleny, vyhrává hráč s více čtverci. Nekreslete třetí stranu čtverce, jinak ho získá soupeř.",
+    "lib.arcade.note.ultimate": "Hrací plocha se skládá z 9 malých piškvorkových tabulek. Hrajete za X a začínáte. Políčko, které vyberete v malé tabulce, určuje, v které malé tabulce musí soupeř hrát dál (je zvýrazněná); pokud je ta tabulka už dohraná, smí hrát kdekoli. Vyhrajte malou tabulku, abyste ji získali; získejte tři malé tabulky v řadě, sloupci nebo diagonále a vyhráváte hru.",
+    "lib.arcade.note.lights-out": "Kliknutím na políčko se přepne ono i jeho 4 sousedé (zapnuto/vypnuto). Zhasněte všechna světla. Pomocí Nápovědy zjistíte políčko, které se vyplatí stisknout.",
+    "lib.arcade.note.fifteen": "Posouvejte očíslované dlaždice do mezery, až budou seřazené 1, 2, 3… a mezera bude v pravém dolním rohu. Kliknutím na dlaždici ve stejném řádku nebo sloupci jako mezera posunete celou řadu; fungují i šipky.",
+    "lib.arcade.note.flood-it": "Vyberte barvu, kterou vyplníte celou oblast, kterou vlastníte v levém horním rohu; pohltí sousední políčka té barvy. Udělejte celou plochu jednobarevnou v povoleném počtu tahů.",
+    "lib.arcade.note.mastermind": "Počítač ukryje řadu barev. Vyberte barvu pro každou pozici a stiskněte Hádat. Černý kolík = správná barva na správném místě; bílý kolík = správná barva na špatném místě. Rozlousknete kód, než vám dojdou pokusy.",
+    "lib.arcade.note.hanoi": "Přesuňte všechny kotouče na poslední tyč. Vždy přesouvejte jen horní kotouč tyče a nikdy nepokládejte větší kotouč na menší. Klikněte na zdrojovou tyč a poté na cílovou.",
+    "lib.arcade.note.pipes": "Kliknutím na dlaždici otočíte potrubí o 90°. Propojte všechna potrubí do jedné sítě bez otevřených konců (otevřené konce jsou červené)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Tradiční vietnamská hra se zasýváním kamenů: rozsévejte kameny a získávejte mandaríny proti počítači; 10 úrovní od lehké po těžkou."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Zhasněte všechna světla: každý stisk přepne dané políčko a jeho 4 sousedy; 10 úrovní s rostoucími plochami a tlačítkem nápovědy."
+    },
+    "fifteen": {
+      "name": "Patnáctka (posuvné puzzle)",
+      "desc": "Posouvejte očíslované dlaždice do správného pořadí; 10 úrovní od 3x3 do 5x5, ovládání myší, dotykem nebo šipkami."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Zaplavte plochu z rohu, až bude jednobarevná v omezeném počtu tahů; 10 úrovní s většími plochami a více barvami."
+    },
+    "mastermind": {
+      "name": "Mastermind (luštitel kódů)",
+      "desc": "Rozluštěte skrytý barevný kód podle nápovědy černých a bílých kolíků; 10 úrovní s delšími kódy a více barvami."
+    },
+    "hanoi": {
+      "name": "Hanojské věže",
+      "desc": "Přesuňte kotouče z první na poslední tyč, aniž byste položili větší kotouč na menší; 10 úrovní od 3 kotoučů po 12 kotoučů na 4 tyčích."
+    },
+    "pipes": {
+      "name": "Propojování potrubí",
+      "desc": "Otáčejte kusy potrubí, až vytvoří jednu síť bez otevřených konců; 10 úrovní s rostoucími plochami."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Vyplňujte políčka podle číselných nápověd u řádků a sloupců a odkryjte obrázek; 10 úrovní od 5x5 do 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (posunování beden)",
+      "desc": "Zatlačte bedny ve skladišti na cílová políčka; každá úroveň je řešitelná, 10 úrovní s více bednami a většími sklady."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Umisťujte dílky na mřížku 10x10 a vyplněním řádků či sloupců je mažte, abyste dosáhli cílového skóre; 10 úrovní."
+    },
+    "dots-boxes": {
+      "name": "Tečky a čtverečky",
+      "desc": "Střídavě spojujte tečky, získávejte čtverce a porazte počítač v 10 úrovních od snadných po těžké."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimátní piškvorky",
+      "desc": "Piškvorky na 9 malých tabulkách: políčko, které vyberete, určuje, kde musí hrát soupeř; proti počítači v 10 úrovních."
     }
   },
   "s": {

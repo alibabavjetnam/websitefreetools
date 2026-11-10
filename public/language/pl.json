@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Czerwony",
     "lib.arcade.cGreen": "Zielony",
     "lib.arcade.cYellow": "Żółty",
-    "lib.arcade.cBlue": "Niebieski"
+    "lib.arcade.cBlue": "Niebieski",
+    "lib.arcade.guess": "Zgaduj",
+    "lib.arcade.clearRow": "Wyczyść wiersz",
+    "lib.arcade.area": "Pole: {n}/{t}",
+    "lib.arcade.triesLeft": "Pozostało prób: {n}",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Nie możesz położyć większego krążka na mniejszym.",
+    "lib.arcade.outOfMoves": "Brak ruchów!",
+    "lib.arcade.fillAll": "Wybierz kolor dla każdej pozycji.",
+    "lib.arcade.modeFill": "Wypełnij",
+    "lib.arcade.modeMark": "Zaznacz ✕",
+    "lib.arcade.clearAll": "Wyczyść wszystko",
+    "lib.arcade.note.nonogram": "Liczby na początku każdego wiersza i kolumny podają po kolei długości ciągów zamalowanych kratek w tej linii, rozdzielonych co najmniej jedną pustą kratką. Kliknij lub przeciągnij, aby zamalować kratki; przełącz na „Zaznacz ✕”, aby oznaczyć kratki, co do których masz pewność, że są puste. Spełnij wszystkie wskazówki, aby wygrać.",
+    "lib.arcade.size": "Siatka {n}×{n}",
+    "lib.arcade.restartLevel": "Zacznij poziom od nowa",
+    "lib.arcade.newLayout": "Inny poziom",
+    "lib.arcade.note.sokoban": "Poruszaj postacią strzałkami/WASD, przyciskami poniżej lub przeciągnięciem palca. Wepchnij wszystkie skrzynie na pola docelowe (okrągłe kropki). Możesz pchać tylko jedną skrzynię naraz i nie możesz ciągnąć, więc unikaj wpychania skrzyń w rogi. Użyj Cofnij, aby naprawić zły ruch.",
+    "lib.arcade.boxesDone": "Skrzynie na miejscu: {n}/{t}",
+    "lib.arcade.note.block10": "Wybierz klocek na dole, a potem kliknij siatkę, aby go umieścić (klocków nie można obracać). Wypełnij cały wiersz lub kolumnę, aby ją usunąć i zdobyć dodatkowe punkty; usunięcie kilku linii naraz daje duży bonus. Osiągnij docelową liczbę punktów, aby ukończyć poziom; jeśli żaden z pozostałych klocków się nie mieści, przegrywasz.",
+    "lib.arcade.note.dots": "Na zmianę łączcie linią dwie sąsiednie kropki. Kto narysuje czwarty bok kwadratu, zdobywa go (w swoim kolorze) i ma kolejny ruch. Gdy wszystkie linie zostaną narysowane, wygrywa gracz z większą liczbą kwadratów. Unikaj rysowania trzeciego boku kwadratu, bo przeciwnik go zabierze.",
+    "lib.arcade.note.ultimate": "Plansza składa się z 9 małych plansz do kółka i krzyżyk. Grasz X i zaczynasz. Pole, które wybierzesz na małej planszy, decyduje, na której małej planszy musi zagrać przeciwnik (jest podświetlona); jeśli ta plansza jest już rozstrzygnięta, może zagrać gdziekolwiek. Wygraj małą planszę, aby ją zdobyć; zdobądź trzy małe plansze w rzędzie, kolumnie lub po przekątnej, aby wygrać grę.",
+    "lib.arcade.note.lights-out": "Kliknięcie pola przełącza to pole i jego 4 sąsiadów (włączone/wyłączone). Zgaś wszystkie światła. Użyj Podpowiedzi, aby zobaczyć pole warte naciśnięcia.",
+    "lib.arcade.note.fifteen": "Przesuwaj ponumerowane kafelki w wolne miejsce, aby ułożyć je w kolejności 1, 2, 3… z pustym polem w prawym dolnym rogu. Kliknij kafelek w tym samym wierszu lub kolumnie co puste pole, aby przesunąć całą linię; działają też strzałki.",
+    "lib.arcade.note.flood-it": "Wybierz kolor, aby wypełnić nim cały obszar w lewym górnym rogu, który posiadasz; pochłonie on sąsiednie pola tego koloru. Zamień całą planszę w jeden kolor w dozwolonej liczbie ruchów.",
+    "lib.arcade.note.mastermind": "Komputer ukrywa rząd kolorów. Wybierz kolor dla każdej pozycji, a potem naciśnij Zgaduj. Czarny kołek = dobry kolor na dobrym miejscu; biały kołek = dobry kolor na złym miejscu. Złam kod, zanim skończą ci się próby.",
+    "lib.arcade.note.hanoi": "Przenieś wszystkie krążki na ostatni słupek. Za każdym razem przenoś tylko wierzchni krążek ze słupka i nigdy nie kładź większego krążka na mniejszym. Kliknij słupek źródłowy, a potem docelowy.",
+    "lib.arcade.note.pipes": "Kliknij kafelek, aby obrócić rurę o 90°. Połącz wszystkie rury w jedną sieć bez otwartych końców (otwarte końce są zaznaczone na czerwono)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Tradycyjna wietnamska gra w rozsiewanie kamieni: rozsiewaj kamienie i zdobywaj mandarynów w starciu z komputerem; 10 poziomów od łatwych do trudnych."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Zgaś wszystkie światła: każde naciśnięcie zmienia to pole i jego 4 sąsiadów; 10 poziomów z rosnącymi planszami i przyciskiem podpowiedzi."
+    },
+    "fifteen": {
+      "name": "Piętnastka (puzzle przesuwane)",
+      "desc": "Przesuwaj ponumerowane kafelki, aby ułożyć je w kolejności; 10 poziomów od 3x3 do 5x5, sterowanie myszą, dotykiem lub strzałkami."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Zalewaj planszę od rogu, aż przybierze jeden kolor w ograniczonej liczbie ruchów; 10 poziomów z większymi planszami i większą liczbą kolorów."
+    },
+    "mastermind": {
+      "name": "Mastermind (łamacz kodów)",
+      "desc": "Odgadnij ukryty kod kolorów dzięki wskazówkom w postaci czarnych i białych kołków; 10 poziomów z dłuższymi kodami i większą liczbą kolorów."
+    },
+    "hanoi": {
+      "name": "Wieże Hanoi",
+      "desc": "Przenieś krążki z pierwszego na ostatni słupek, nie kładąc większego na mniejszym; 10 poziomów od 3 krążków do 12 krążków na 4 słupkach."
+    },
+    "pipes": {
+      "name": "Połącz rury",
+      "desc": "Obracaj elementy rur, aby połączyć je w jedną sieć bez otwartych końców; 10 poziomów z rosnącymi planszami."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Zamalowuj kratki według liczbowych wskazówek przy wierszach i kolumnach, aby odkryć obrazek; 10 poziomów od 5x5 do 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (pchanie skrzyń)",
+      "desc": "Wepchnij skrzynie na pola docelowe w magazynie; każdy poziom da się rozwiązać, 10 poziomów z większą liczbą skrzyń i większymi magazynami."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Układaj klocki na siatce 10x10 i wypełniaj wiersze lub kolumny, aby je usuwać i osiągnąć docelową liczbę punktów; 10 poziomów."
+    },
+    "dots-boxes": {
+      "name": "Kropki i kwadraty",
+      "desc": "Na zmianę łącz kropki, by zdobywać kwadraty, i pokonaj komputer w 10 poziomach od łatwego do trudnego."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate kółko i krzyżyk",
+      "desc": "Kółko i krzyżyk na 9 małych planszach: wybrane przez ciebie pole decyduje, gdzie musi zagrać przeciwnik; gra z komputerem w 10 poziomach."
     }
   },
   "s": {

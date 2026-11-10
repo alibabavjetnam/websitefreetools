@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Wouj",
     "lib.arcade.cGreen": "Vèt",
     "lib.arcade.cYellow": "Jòn",
-    "lib.arcade.cBlue": "Ble"
+    "lib.arcade.cBlue": "Ble",
+    "lib.arcade.guess": "Devine",
+    "lib.arcade.clearRow": "Efase ranje a",
+    "lib.arcade.area": "Zòn: {n}/{t}",
+    "lib.arcade.triesLeft": "Rete {n} devine",
+    "lib.arcade.minMoves": "Minimòm: {n}",
+    "lib.arcade.hnBad": "Ou pa kapab mete yon gwo disk sou yon ti disk.",
+    "lib.arcade.outOfMoves": "Pa gen mouvman ankò!",
+    "lib.arcade.fillAll": "Chwazi yon koulè pou chak pozisyon.",
+    "lib.arcade.modeFill": "Ranpli",
+    "lib.arcade.modeMark": "Make ✕",
+    "lib.arcade.clearAll": "Efase tout",
+    "lib.arcade.note.nonogram": "Chif yo o kòmansman chak ranje ak chak kolòn montre, nan lòd, longè gwoup kare plen youn apre lòt nan liy sa a, ak omwen yon kare vid ant gwoup yo. Klike oswa rale pou ranpli kare yo; pase sou “Make ✕” pou make kare ou sèten yo vid. Satisfè tout endis yo pou w genyen.",
+    "lib.arcade.size": "Griy {n}×{n}",
+    "lib.arcade.restartLevel": "Rekòmanse nivo a",
+    "lib.arcade.newLayout": "Yon lòt nivo",
+    "lib.arcade.note.sokoban": "Deplase jwè a ak tou flèch yo/WASD, bouton ki anba yo, oswa lè w glise dwèt ou. Pouse chak bwat sou yon kare objektif (ti pwen won yo). Ou ka pouse yon sèl bwat alafwa epi ou pa ka rale, kidonk evite pouse bwat yo nan kwen. Itilize Anile pou korije yon move mouvman.",
+    "lib.arcade.boxesDone": "Bwat sou objektif: {n}/{t}",
+    "lib.arcade.note.block10": "Chwazi yon moso anba a, answit klike sou griy lan pou mete l (pa ka vire moso yo). Ranpli yon ranje oswa yon kolòn antye pou efase l epi genyen plis pwen; efase plizyè liy alafwa bay yon gwo bonis. Rive sou eskò objektif la pou pase nivo a; si pa gen okenn moso ki rete ki ka antre, ou pèdi.",
+    "lib.arcade.note.dots": "Chak tou pa, konekte de pwen ki toupre ak yon liy. Moun ki trase katriyèm kote yon kare a pran kare a (nan koulè li) epi jwe ankò. Lè tout liy yo trase, jwè ki gen plis kare a genyen. Evite trase twazyèm kote yon kare, otreman advèsè w la ap pran l.",
+    "lib.arcade.note.ultimate": "Tablo a fèt ak 9 ti tablo tic-tac-toe. Ou jwe X epi ou kòmanse. Kare ou chwazi nan yon ti tablo a deside nan ki ti tablo advèsè w la dwe jwe apre (li make); si tablo sa a fini deja, li ka jwe nenpòt kote. Genyen yon ti tablo pou pran l; pran twa ti tablo nan yon ranje, yon kolòn oswa yon dyagonal pou w genyen jwèt la.",
+    "lib.arcade.note.lights-out": "Klike sou yon kare chanje kare sa a ak 4 vwazen li yo (limen/etenn). Etenn tout limyè yo. Itilize Endis pou wè yon kare ki vo la pèn peze.",
+    "lib.arcade.note.fifteen": "Glise twal ki gen nimewo yo nan espas la pou mete yo nan lòd 1, 2, 3… ak espas la nan kwen anba adwat. Klike sou yon twal nan menm ranje oswa kolòn ak espas la pou glise tout liy lan; tou flèch yo mache tou.",
+    "lib.arcade.note.flood-it": "Chwazi yon koulè pou ranpli tout zòn ou posede nan kwen anwo agòch; li vale kare vwazen ki gen koulè sa a. Fè tout tablo a vin yon sèl koulè nan limit kantite mouvman yo pèmèt.",
+    "lib.arcade.note.mastermind": "Òdinatè a kache yon ranje koulè. Chwazi yon koulè pou chak pozisyon, answit peze Devine. Yon pyon nwa = bon koulè nan bon kote; yon pyon blan = bon koulè nan move kote. Dechifre kòd la anvan devine ou yo fini.",
+    "lib.arcade.note.hanoi": "Deplase tout disk yo sou dènye poto a. Deplase sèlman disk ki anwo yon poto chak fwa, epi pa janm mete yon gwo disk sou yon ti disk. Klike sou poto sous la, answit sou poto destinasyon an.",
+    "lib.arcade.note.pipes": "Klike sou yon twal pou vire tiyo a 90°. Konekte tout tiyo yo nan yon sèl rezo san okenn bout ouvè (bout ouvè yo parèt an wouj)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Yon jwèt tradisyonèl Vyetnamyen pou simen wòch: simen wòch epi pran Mandaren yo kont òdinatè a; 10 nivo ki soti nan fasil rive nan difisil."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Etenn tout limyè yo: chak peze chanje kare sa a ak 4 vwazen li yo; 10 nivo ak tablo k ap grandi ak yon bouton endis."
+    },
+    "fifteen": {
+      "name": "Puzzle 15 (Puzzle Glisan)",
+      "desc": "Glise twal ki gen nimewo yo nan lòd; 10 nivo soti nan 3x3 rive 5x5, jwe ak sourit, touche oswa tou flèch yo."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Inonde tablo a depi nan kwen an jiskaske li vin yon sèl koulè nan yon kantite mouvman limite; 10 nivo ak pi gwo tablo ak plis koulè."
+    },
+    "mastermind": {
+      "name": "Mastermind (Dechifrè Kòd)",
+      "desc": "Dechifre kòd koulè kache a ak endis pyon nwa ak blan; 10 nivo ak kòd ki pi long ak plis koulè."
+    },
+    "hanoi": {
+      "name": "Tou Hanoi",
+      "desc": "Deplase disk yo depi premye poto a rive nan dènye a san yo pa mete yon gwo disk sou yon ti disk; 10 nivo soti nan 3 disk rive 12 disk sou 4 poto."
+    },
+    "pipes": {
+      "name": "Konekte Tiyo",
+      "desc": "Vire moso tiyo yo pou fè yon sèl rezo san bout ouvè; 10 nivo ak tablo k ap grandi."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Ranpli kare yo ak endis chif yo nan ranje ak kolòn yo pou revele yon imaj; 10 nivo soti nan 5x5 rive 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Pouse Bwat)",
+      "desc": "Pouse bwat yo sou kare objektif yo nan yon depo; chak nivo ka rezoud, ak 10 nivo ki gen plis bwat ak pi gwo depo."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Mete moso sou yon griy 10x10 epi ranpli ranje oswa kolòn pou efase yo epi rive sou eskò objektif la; 10 nivo."
+    },
+    "dots-boxes": {
+      "name": "Pwen ak Kare",
+      "desc": "Chak tou pa, konekte pwen yo pou pran kare epi bat òdinatè a nan 10 nivo soti nan fasil rive difisil."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Ultim",
+      "desc": "Tic-tac-toe sou 9 ti tablo: kare ou chwazi a deside kote advèsè w la dwe jwe; kont òdinatè a nan 10 nivo."
     }
   },
   "s": {

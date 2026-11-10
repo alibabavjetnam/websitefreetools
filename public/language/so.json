@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Casaan",
     "lib.arcade.cGreen": "Cagaar",
     "lib.arcade.cYellow": "Huruud",
-    "lib.arcade.cBlue": "Buluug"
+    "lib.arcade.cBlue": "Buluug",
+    "lib.arcade.guess": "Qiyaas",
+    "lib.arcade.clearRow": "Tirtir safka",
+    "lib.arcade.area": "Aagga: {n}/{t}",
+    "lib.arcade.triesLeft": "Waxaa harsan {n} qiyaasood",
+    "lib.arcade.minMoves": "Ugu yaraan: {n}",
+    "lib.arcade.hnBad": "Ma saari kartid saxan weyn mid yar kor.",
+    "lib.arcade.outOfMoves": "Dhaqdhaqaaqyadii way dhammaadeen!",
+    "lib.arcade.fillAll": "Fadlan u dooro midab meel kasta.",
+    "lib.arcade.modeFill": "Buuxi",
+    "lib.arcade.modeMark": "Calaamadee ✕",
+    "lib.arcade.clearAll": "Tirtir dhammaan",
+    "lib.arcade.note.nonogram": "Tirooyinka bilowga safka iyo tiirka kasta waxay si kala horreeya u muujiyaan dhererka kooxaha unugyada buuxsan ee isku xiga ee xariggaas, iyadoo ugu yaraan hal unug oo madhan u dhexeeyo kooxaha. Guji ama jiid si aad unugyada u buuxiso; u beddel “Calaamadee ✕” si aad u xusto unugyada aad hubto inay madhan yihiin. Buuxi tilmaamaha oo dhan si aad u guuleysato.",
+    "lib.arcade.size": "Shabakad {n}×{n}",
+    "lib.arcade.restartLevel": "Dib u bilow heerka",
+    "lib.arcade.newLayout": "Heer kale",
+    "lib.arcade.note.sokoban": "U dhaqaaji ciyaaryahanka furayaasha fallaadhaha/WASD, badhamada hoose ama jiid far. Ku riix sanduuqyada oo dhan unugyada bartilmaameedka (dhibcaha wareegsan). Waxaad riixi kartaa hal sanduuq markiiba mana jiidi kartid, sidaa darteed ka fogow riixidda sanduuqyada geesaha. Isticmaal Ka noqo si aad u hagaajiso dhaqdhaqaaq xun.",
+    "lib.arcade.boxesDone": "Sanduuqyada bartilmaameedka: {n}/{t}",
+    "lib.arcade.note.block10": "Hoos ka dooro qayb, kadibna guji shabakadda si aad u dhigto (qaybaha lama wareejin karo). Buuxi safka ama tiirka oo dhan si loo tirtiro oo aad u hesho dhibco dheeraad ah; tirtirka dhowr xariig isku mar waxay bixisaa bonus weyn. Gaadh dhibcaha bartilmaameedka si aad heerka u dhaafto; haddii aysan qayb ka mid ah kuwa harsan ku habboonayn, waad lumisaa.",
+    "lib.arcade.note.dots": "Isu beddelka ku xidh laba dhibic oo is-dhow xariig. Ciddii sawirta dhinaca afraad ee afargeesle waxay heshaa (midabkeeda) oo mar kale ciyaartaa. Marka xariiqyada oo dhan la sawiray, ciyaaryahanka leh afargeesle badan ayaa guuleysta. Ha sawirin dhinaca saddexaad ee afargeesle, haddii kale ka soo horjeedkaaga ayaa qaadan doona.",
+    "lib.arcade.note.ultimate": "Looxa waxaa ka kooban 9 loox yar oo tic-tac-toe ah. Adigu waxaad ciyaartaa X oo waad bilaabaysaa. Unugga aad ka doorato looxa yar ayaa go'aamiya looxa yar ee ka soo horjeedkaagu ku ciyaari doono marka xigta (waa la iftiimiyaa); haddii looxaas hore loo dhammeeyey, wuxuu ku ciyaari karaa meel kasta. Ku guuleyso looxa yar si aad u hesho; hel saddex loox yar safka, tiirka ama dhidibka si aad u ku guuleysato ciyaarta.",
+    "lib.arcade.note.lights-out": "Gujiska unug wuxuu beddelaa unugga iyo 4-tiisa deriska ah (daar/dami). Dami iftiinka oo dhan. Isticmaal Tilmaan si aad u aragto unug mudan in la riixo.",
+    "lib.arcade.note.fifteen": "U simbiriirixi taayirrada tirooyinka leh meesha madhan si aad ugu hagaajiso 1, 2, 3… adoo meesha madhan dhigaya geeska hoose ee midig. Guji taayir ku jira safka ama tiirka isku mid ah meesha madhan si aad xariiqda oo dhan u simbiriirixiso; furayaasha fallaadhaha ayaa sidoo kale shaqeeya.",
+    "lib.arcade.note.flood-it": "Dooro midab si aad ugu buuxiso aagga oo dhan ee aad leedahay geeska sare ee bidix; wuxuu liqaa unugyada deriska ah ee midabkaas leh. Ka dhig looxa oo dhan hal midab gudaha tirada dhaqdhaqaaqyada la oggol yahay.",
+    "lib.arcade.note.mastermind": "Kombiyuutarku wuxuu qariyaa safka midabbo. Meel kasta dooro midab, kadibna riix Qiyaas. Qodob madow = midab sax ah meel sax ah; qodob cadaan = midab sax ah meel khaldan. Jebi koodhka ka hor inta aysan qiyaasahaagu dhammaan.",
+    "lib.arcade.note.hanoi": "U wareeji kartidhka oo dhan usha ugu dambeeya. Mar kasta dhaqaaji kartidhka usha ugu sarreeya oo keliya, mana dhigin kartid weyn mid yar kor. Guji usha asalka ah, kadibna usha bartilmaameedka.",
+    "lib.arcade.note.pipes": "Guji taayir si aad tuubada 90° u wareejiso. Ku xidh tuubooyinka oo dhan shabakad keliya oo aan lahayn dhammaadyo furan (dhammaadyada furan waxay u muuqdaan guduud)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Ciyaar dhaqameed Vietnam oo beerista dhagaxyada ah: beer dhagaxyada oo qabo Mandarin-ka kombuyuutarka; 10 heer oo fudud ilaa adag."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Dami iftiinka oo dhan: riix kasta wuxuu rogaa unugga iyo 4-tiisa deriska ah; 10 heer oo leh looxyo kordhaya iyo badhan tilmaan."
+    },
+    "fifteen": {
+      "name": "Ciyaarta 15 (halxiraale simbiriirixa)",
+      "desc": "U simbiriirixi taayirrada tirooyinka leh si ay u kala horreeyaan; 10 heer laga bilaabo 3x3 ilaa 5x5, lagu ciyaaro mouse, taabasho ama furayaasha fallaadhaha."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Buuxi looxa geeska ka bilaabo ilaa uu noqdo hal midab gudaha dhaqdhaqaaqyo xaddidan; 10 heer oo leh looxyo waaweyn iyo midabbo badan."
+    },
+    "mastermind": {
+      "name": "Mastermind (jebiyaha koodhka)",
+      "desc": "Jebi koodhka midabka ee qarsoon adigoo isticmaalaya tilmaamaha qodobbada madow iyo cadaan; 10 heer oo leh koodhyo dhaadheer iyo midabbo badan."
+    },
+    "hanoi": {
+      "name": "Munaaraddii Hanoi",
+      "desc": "U wareeji kartidhka usha ugu horreysa ilaa tan ugu dambeysa adoon kartid weyn mid yar kor dhigin; 10 heer laga bilaabo 3 kartid ilaa 12 kartid 4 usha ah."
+    },
+    "pipes": {
+      "name": "Ku xidh Tuubooyinka",
+      "desc": "Wareeji qaybaha tuubooyinka si aad ugu xidho shabakad keliya oo aan lahayn dhammaadyo furan; 10 heer oo leh looxyo kordhaya."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Buuxi unugyada adigoo isticmaalaya tilmaamaha tirooyinka ee safafka iyo tiirarka si aad sawir u muujiso; 10 heer laga bilaabo 5x5 ilaa 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (riixaha sanduuqyada)",
+      "desc": "Ku riix sanduuqyada unugyada bartilmaameedka bakhaar ku jira; heer kasta waa la xallin karaa, 10 heer oo leh sanduuqyo badan iyo bakhaarro waaweyn."
+    },
+    "block-10x10": {
+      "name": "Halxiraalaha Block 10x10",
+      "desc": "Ku dhig qaybaha shabakad 10x10 oo buuxi safaf ama tiirar si loo tirtiro oo aad u gaadho dhibcaha bartilmaameedka; 10 heer."
+    },
+    "dots-boxes": {
+      "name": "Dhibco iyo Sanduuqyo",
+      "desc": "Isu beddelka ku xidh dhibcaha si aad u hesho afargeesle oo kombiyuutarka ku garaac 10 heer laga bilaabo sahlan ilaa adag."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Ugu Dambeeya",
+      "desc": "Tic-tac-toe 9 loox yar: unugga aad doorato ayaa go'aamiya meesha ka soo horjeedkaagu ku ciyaari doono; ka dhan ah kombiyuutarka 10 heer."
     }
   },
   "s": {

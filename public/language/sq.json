@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "E kuqe",
     "lib.arcade.cGreen": "E gjelbër",
     "lib.arcade.cYellow": "E verdhë",
-    "lib.arcade.cBlue": "Blu"
+    "lib.arcade.cBlue": "Blu",
+    "lib.arcade.guess": "Hamendëso",
+    "lib.arcade.clearRow": "Pastro rreshtin",
+    "lib.arcade.area": "Sipërfaqja: {n}/{t}",
+    "lib.arcade.triesLeft": "Kanë mbetur {n} hamendësime",
+    "lib.arcade.minMoves": "Minimumi: {n}",
+    "lib.arcade.hnBad": "Nuk mund ta vendosësh një disk më të madh mbi një më të vogël.",
+    "lib.arcade.outOfMoves": "Nuk ke më lëvizje!",
+    "lib.arcade.fillAll": "Zgjidh një ngjyrë për çdo pozicion.",
+    "lib.arcade.modeFill": "Mbush",
+    "lib.arcade.modeMark": "Shëno ✕",
+    "lib.arcade.clearAll": "Pastro të gjitha",
+    "lib.arcade.note.nonogram": "Numrat në fillim të çdo rreshti dhe kolone tregojnë gjatësitë e grupeve të qelizave të mbushura njëra pas tjetrës në atë vijë, sipas radhës, me të paktën një qelizë të zbrazët midis grupeve. Kliko ose zvarrit për të mbushur qelizat; kalo te “Shëno ✕” për të shënuar qelizat që je i sigurt se janë bosh. Plotëso të gjitha treguesit për të fituar.",
+    "lib.arcade.size": "Rrjetë {n}×{n}",
+    "lib.arcade.restartLevel": "Rifillo nivelin",
+    "lib.arcade.newLayout": "Nivel tjetër",
+    "lib.arcade.note.sokoban": "Lëvize lojtarin me shigjetat/WASD, butonat poshtë ose me rrëshqitje. Shtyji të gjitha kutitë te katrorët e synuar (pikat e rrumbullakëta). Mund të shtysh vetëm një kuti në herë dhe nuk mund të tërheqësh, ndaj shmang shtyrjen e kutive në qoshe. Përdor Zhbëj për të rregulluar një lëvizje të keqe.",
+    "lib.arcade.boxesDone": "Kuti te synimi: {n}/{t}",
+    "lib.arcade.note.block10": "Zgjidh një copë poshtë, pastaj kliko rrjetën për ta vendosur (copat nuk rrotullohen). Mbush një rresht ose kolonë të plotë për ta pastruar dhe për të fituar pikë shtesë; pastrimi i disa vijave njëherësh jep bonus të madh. Arrij pikët e synuara për ta kaluar nivelin; nëse asnjë nga copat e mbetura nuk futet, humb.",
+    "lib.arcade.note.dots": "Me radhë, bashko dy pika fqinje me një vijë. Kush vizaton anën e katërt të një katrori e fiton atë (me ngjyrën e vet) dhe luan sërish. Kur vizatohen të gjitha vijat, fiton lojtari me më shumë katrorë. Shmang vizatimin e anës së tretë të një katrori, përndryshe kundërshtari do ta marrë.",
+    "lib.arcade.note.ultimate": "Tabela përbëhet nga 9 tabela të vogla të Iksit dhe Zeros. Ti luan me X dhe fillon i pari. Qeliza që zgjedh brenda një tabele të vogël vendos se në cilën tabelë të vogël duhet të luajë kundërshtari më pas (është e theksuar); nëse ajo tabelë ka mbaruar, ai mund të luajë kudo. Fito një tabelë të vogël për ta marrë; merr tri tabela të vogla në rresht, kolonë ose diagonale për të fituar lojën.",
+    "lib.arcade.note.lights-out": "Klikimi i një qelize ndërron atë qelizë dhe 4 fqinjët e saj (ndezur/fikur). Fik të gjitha dritat. Përdor Ndihmën për të parë një qelizë që ia vlen ta shtypësh.",
+    "lib.arcade.note.fifteen": "Rrëshqit pllakat e numëruara në hapësirën e lirë për t'i renditur 1, 2, 3… me hapësirën në qoshen poshtë djathtas. Kliko një pllakë në të njëjtin rresht ose kolonë me hapësirën për të rrëshqitur të gjithë vijën; funksionojnë edhe shigjetat.",
+    "lib.arcade.note.flood-it": "Zgjidh një ngjyrë për të mbushur gjithë zonën që zotëron në qoshen lart majtas; ajo gëlltit qelizat fqinje të asaj ngjyre. Bëje gjithë tabelën një ngjyrë brenda numrit të lejuar të lëvizjeve.",
+    "lib.arcade.note.mastermind": "Kompjuteri fsheh një rresht ngjyrash. Zgjidh një ngjyrë për çdo pozicion, pastaj shtyp Hamendëso. Kunj i zi = ngjyra e saktë në vendin e duhur; kunj i bardhë = ngjyra e saktë në vendin e gabuar. Zbërthe kodin përpara se të mbarojnë hamendësimet.",
+    "lib.arcade.note.hanoi": "Zhvendosi të gjitha disqet te shtylla e fundit. Zhvendos vetëm diskun e sipërm të një shtylle çdo herë dhe mos vendos kurrë një disk më të madh mbi një më të vogël. Kliko shtyllën burim, pastaj shtyllën e synuar.",
+    "lib.arcade.note.pipes": "Kliko një pllakë për të rrotulluar tubin 90°. Lidh të gjithë tubat në një rrjet të vetëm pa skaje të hapura (skajet e hapura shfaqen me të kuqe)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Një lojë tradicionale vietnameze me mbjellje gurësh: mbill gurë dhe kap Mandarinët kundër kompjuterit; 10 nivele nga të lehta te të vështira."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Fik të gjitha dritat: çdo shtypje ndërron qelizën dhe 4 fqinjët e saj; 10 nivele me tabela që rriten dhe buton ndihme."
+    },
+    "fifteen": {
+      "name": "Puzzle 15 (puzzle rrëshqitës)",
+      "desc": "Rrëshqit pllakat e numëruara në rend; 10 nivele nga 3x3 deri në 5x5, me maus, prekje ose shigjeta."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Përmbyte tabelën nga qoshja derisa të bëhet një ngjyrë brenda një numri të kufizuar lëvizjesh; 10 nivele me tabela më të mëdha dhe më shumë ngjyra."
+    },
+    "mastermind": {
+      "name": "Mastermind (Thyesi i kodit)",
+      "desc": "Zbërthe kodin e fshehur të ngjyrave me tregues kunjash të zinj dhe të bardhë; 10 nivele me kode më të gjata dhe më shumë ngjyra."
+    },
+    "hanoi": {
+      "name": "Kulla e Hanoit",
+      "desc": "Zhvendos disqet nga shtylla e parë te e fundit pa vendosur një disk më të madh mbi një më të vogël; 10 nivele nga 3 disqe deri në 12 disqe me 4 shtylla."
+    },
+    "pipes": {
+      "name": "Lidhja e tubave",
+      "desc": "Rrotullo copat e tubave për t'i bashkuar në një rrjet pa skaje të hapura; 10 nivele me tabela që rriten."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Mbush qelizat me treguesit numerikë të rreshtave dhe kolonave për të zbuluar një figurë; 10 nivele nga 5x5 deri në 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Shtyrja e kutive)",
+      "desc": "Shtyji kutitë te katrorët e synuar në një depo; çdo nivel zgjidhet, me 10 nivele me më shumë kuti dhe depo më të mëdha."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Vendos copa në një rrjetë 10x10 dhe mbush rreshta ose kolona për t'i pastruar dhe për të arritur pikët e synuara; 10 nivele."
+    },
+    "dots-boxes": {
+      "name": "Pika dhe kuti",
+      "desc": "Me radhë, bashko pika për të fituar katrorë dhe mposht kompjuterin në 10 nivele nga të lehta te të vështira."
+    },
+    "ultimate-tictactoe": {
+      "name": "Iksi-Zero Përfundimtar",
+      "desc": "Iksi-zero në 9 tabela të vogla: qeliza që zgjedh vendos ku duhet të luajë kundërshtari; kundër kompjuterit në 10 nivele."
     }
   },
   "s": {

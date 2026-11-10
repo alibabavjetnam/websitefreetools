@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Crvena",
     "lib.arcade.cGreen": "Zelena",
     "lib.arcade.cYellow": "Žuta",
-    "lib.arcade.cBlue": "Plava"
+    "lib.arcade.cBlue": "Plava",
+    "lib.arcade.guess": "Pogodi",
+    "lib.arcade.clearRow": "Očisti redak",
+    "lib.arcade.area": "Površina: {n}/{t}",
+    "lib.arcade.triesLeft": "Preostalo pokušaja: {n}",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Ne možeš staviti veći disk na manji.",
+    "lib.arcade.outOfMoves": "Nema više poteza!",
+    "lib.arcade.fillAll": "Odaberi boju za svaku poziciju.",
+    "lib.arcade.modeFill": "Popuni",
+    "lib.arcade.modeMark": "Označi ✕",
+    "lib.arcade.clearAll": "Očisti sve",
+    "lib.arcade.note.nonogram": "Brojevi na početku svakog retka i stupca redom daju duljine nizova uzastopnih popunjenih polja u toj liniji, s barem jednim praznim poljem između nizova. Klikni ili povuci za popunjavanje polja; prebaci na „Označi ✕” za bilježenje polja za koja si siguran da su prazna. Zadovolji sve tragove da pobijediš.",
+    "lib.arcade.size": "Mreža {n}×{n}",
+    "lib.arcade.restartLevel": "Ponovno pokreni razinu",
+    "lib.arcade.newLayout": "Druga razina",
+    "lib.arcade.note.sokoban": "Pomiči igrača strelicama/WASD-om, gumbima ispod ili povlačenjem prsta. Gurni sve kutije na ciljna polja (okrugle točkice). Možeš gurati samo jednu kutiju odjednom i ne možeš vući, pa izbjegavaj guranje kutija u kutove. Koristi Poništi za ispravljanje lošeg poteza.",
+    "lib.arcade.boxesDone": "Kutije na cilju: {n}/{t}",
+    "lib.arcade.note.block10": "Odaberi dio pri dnu pa klikni mrežu da ga postaviš (dijelovi se ne mogu rotirati). Popuni cijeli redak ili stupac da ga ukloniš i osvojiš dodatne bodove; uklanjanje više linija odjednom donosi velik bonus. Dosegni ciljni rezultat da prijeđeš razinu; ako nijedan od preostalih dijelova ne stane, gubiš.",
+    "lib.arcade.note.dots": "Naizmjence spajajte dvije susjedne točke crtom. Tko povuče četvrtu stranu kvadrata, osvaja ga (svojom bojom) i igra ponovno. Kad su sve crte povučene, pobjeđuje igrač s više kvadrata. Izbjegavaj povući treću stranu kvadrata ili će ga protivnik uzeti.",
+    "lib.arcade.note.ultimate": "Ploča se sastoji od 9 malih ploča za križić-kružić. Ti igraš X i kreće prvi. Polje koje odabereš unutar male ploče određuje na kojoj maloj ploči protivnik mora igrati sljedeće (istaknuta je); ako je ta ploča već završena, smije igrati bilo gdje. Pobijedi na maloj ploči da je osvojiš; osvoji tri male ploče u retku, stupcu ili dijagonali da pobijediš u igri.",
+    "lib.arcade.note.lights-out": "Klik na polje mijenja to polje i njegova 4 susjeda (uključeno/isključeno). Ugasi sva svjetla. Koristi Savjet da vidiš polje vrijedno pritiska.",
+    "lib.arcade.note.fifteen": "Klizi numerirane pločice u prazno mjesto da ih posložiš redom 1, 2, 3… s praznim mjestom u donjem desnom kutu. Klikni pločicu u istom retku ili stupcu kao prazno mjesto da pomakneš cijeli niz; rade i strelice.",
+    "lib.arcade.note.flood-it": "Odaberi boju kojom ćeš ispuniti cijelo područje koje posjeduješ u gornjem lijevom kutu; ono guta susjedna polja te boje. Cijelu ploču učini jednobojnom unutar dopuštenog broja poteza.",
+    "lib.arcade.note.mastermind": "Računalo skriva niz boja. Odaberi boju za svaku poziciju pa pritisni Pogodi. Crni klin = prava boja na pravom mjestu; bijeli klin = prava boja na krivom mjestu. Razbij šifru prije nego ti ponestane pokušaja.",
+    "lib.arcade.note.hanoi": "Premjesti sve diskove na zadnji štap. Svaki put pomakni samo gornji disk štapa i nikad ne stavljaj veći disk na manji. Klikni izvorni štap, zatim ciljni štap.",
+    "lib.arcade.note.pipes": "Klikni pločicu da zarotiraš cijev za 90°. Spoji sve cijevi u jednu mrežu bez otvorenih krajeva (otvoreni krajevi prikazani su crveno)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Tradicionalna vijetnamska igra sijanja kamenčića: sijte kamenčiće i uzimajte mandarine protiv računala; 10 razina od lakih do teških."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Ugasi sva svjetla: svaki pritisak preokreće polje i njegova 4 susjeda; 10 razina s rastućim pločama i gumbom za savjet."
+    },
+    "fifteen": {
+      "name": "Igra 15 (klizna slagalica)",
+      "desc": "Poslaži numerirane pločice redom; 10 razina od 3x3 do 5x5, igra se mišem, dodirom ili strelicama."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Plavi ploču iz kuta dok ne postane jedne boje u ograničenom broju poteza; 10 razina s većim pločama i više boja."
+    },
+    "mastermind": {
+      "name": "Mastermind (razbijač šifre)",
+      "desc": "Razbij skrivenu šifru boja uz tragove s crnim i bijelim klinovima; 10 razina s duljim šiframa i više boja."
+    },
+    "hanoi": {
+      "name": "Hanojski tornjevi",
+      "desc": "Premjesti diskove s prvog na zadnji štap bez stavljanja većeg diska na manji; 10 razina od 3 diska do 12 diskova na 4 štapa."
+    },
+    "pipes": {
+      "name": "Spajanje cijevi",
+      "desc": "Okreći dijelove cijevi da ih spojiš u jednu mrežu bez otvorenih krajeva; 10 razina s rastućim pločama."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Popunjavaj polja prema brojevnim tragovima uz retke i stupce da otkriješ sliku; 10 razina od 5x5 do 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (guranje kutija)",
+      "desc": "Gurni kutije na ciljna polja u skladištu; svaka razina je rješiva, 10 razina s više kutija i većim skladištima."
+    },
+    "block-10x10": {
+      "name": "Slagalica blokova 10x10",
+      "desc": "Postavljaj dijelove na mrežu 10x10 i popunjavaj retke ili stupce da ih ukloniš i dosegneš ciljni rezultat; 10 razina."
+    },
+    "dots-boxes": {
+      "name": "Točkice i kvadrati",
+      "desc": "Naizmjence spajaj točkice da osvojiš kvadrate i pobijedi računalo kroz 10 razina od lakih do teških."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate križić-kružić",
+      "desc": "Križić-kružić na 9 malih ploča: polje koje odabereš određuje gdje protivnik mora igrati; protiv računala kroz 10 razina."
     }
   },
   "s": {

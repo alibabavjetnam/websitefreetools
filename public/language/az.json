@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Qırmızı",
     "lib.arcade.cGreen": "Yaşıl",
     "lib.arcade.cYellow": "Sarı",
-    "lib.arcade.cBlue": "Mavi"
+    "lib.arcade.cBlue": "Mavi",
+    "lib.arcade.guess": "Tapmaq",
+    "lib.arcade.clearRow": "Cərgəni təmizlə",
+    "lib.arcade.area": "Sahə: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} təxmin qaldı",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Böyük diski kiçik diskin üstünə qoymaq olmaz.",
+    "lib.arcade.outOfMoves": "Gedişlər bitdi!",
+    "lib.arcade.fillAll": "Hər mövqe üçün bir rəng seçin.",
+    "lib.arcade.modeFill": "Doldur",
+    "lib.arcade.modeMark": "İşarələ ✕",
+    "lib.arcade.clearAll": "Hamısını təmizlə",
+    "lib.arcade.note.nonogram": "Hər sətrin və sütunun əvvəlindəki rəqəmlər həmin xətdə ardıcıl doldurulmuş xanalar qruplarının uzunluğunu sıra ilə göstərir; qruplar arasında ən azı bir boş xana olur. Xanaları doldurmaq üçün klikləyin və ya sürüşdürün; boş olduğuna əmin olduğunuz xanaları qeyd etmək üçün “İşarələ ✕” rejiminə keçin. Qalib gəlmək üçün bütün ipuclarını ödəyin.",
+    "lib.arcade.size": "{n}×{n} şəbəkə",
+    "lib.arcade.restartLevel": "Səviyyəni yenidən başlat",
+    "lib.arcade.newLayout": "Başqa səviyyə",
+    "lib.arcade.note.sokoban": "Oyunçunu ox düymələri/WASD, aşağıdakı düymələr və ya sürüşdürmə ilə hərəkət etdirin. Bütün qutuları hədəf xanalara (dairəvi nöqtələr) itələyin. Eyni anda yalnız bir qutunu itələmək olar, çəkmək olmaz, ona görə qutuları küncə itələməyin. Pis gedişi düzəltmək üçün Geri al düyməsindən istifadə edin.",
+    "lib.arcade.boxesDone": "Hədəfdəki qutular: {n}/{t}",
+    "lib.arcade.note.block10": "Aşağıdan bir fiqur seçin, sonra yerləşdirmək üçün şəbəkəyə klikləyin (fiqurları döndərmək olmaz). Tam bir sətri və ya sütunu doldurun, silinsin və əlavə xal qazanın; bir neçə xətti eyni anda silmək böyük bonus verir. Səviyyəni keçmək üçün hədəf xala çatın; qalan fiqurların heç biri yerləşməsə, uduzursunuz.",
+    "lib.arcade.note.dots": "Növbə ilə iki qonşu nöqtəni xətlə birləşdirin. Kvadratın dördüncü tərəfini çəkən onu (öz rəngi ilə) qazanır və yenidən oynayır. Bütün xətlər çəkiləndə daha çox kvadratı olan oyunçu qalib gəlir. Kvadratın üçüncü tərəfini çəkməyin, əks halda rəqib onu götürəcək.",
+    "lib.arcade.note.ultimate": "Lövhə 9 kiçik tik-tak-to lövhəsindən ibarətdir. Siz X ilə oynayırsınız və birinci başlayırsınız. Kiçik lövhədə seçdiyiniz xana rəqibin növbəti dəfə hansı kiçik lövhədə oynamalı olduğunu müəyyən edir (o, vurğulanır); həmin lövhə artıq bitibsə, rəqib istənilən yerdə oynaya bilər. Kiçik lövhəni qazanaraq onu ələ keçirin; sətirdə, sütunda və ya diaqonalda üç kiçik lövhə ələ keçirsəniz, oyunu qazanırsınız.",
+    "lib.arcade.note.lights-out": "Xananı klikləmək həmin xananı və onun 4 qonşusunu dəyişir (yanıq/sönük). Bütün işıqları söndürün. Basmağa dəyən xananı görmək üçün İpucu düyməsindən istifadə edin.",
+    "lib.arcade.note.fifteen": "Nömrəli plitələri boşluğa sürüşdürərək 1, 2, 3… sırasına düzün; boşluq aşağı sağ küncdə olmalıdır. Boşluqla eyni sətirdə və ya sütunda olan plitəyə klikləsəniz, bütün cərgə sürüşür; ox düymələri də işləyir.",
+    "lib.arcade.note.flood-it": "Yuxarı sol küncdə sahib olduğunuz bütün sahəni doldurmaq üçün rəng seçin; o, həmin rəngdəki qonşu xanaları udur. İcazə verilən gediş sayı daxilində bütün lövhəni bir rəngə çevirin.",
+    "lib.arcade.note.mastermind": "Kompüter rənglərdən ibarət bir cərgə gizlədir. Hər mövqe üçün rəng seçin, sonra Tapmaq düyməsini basın. Qara mıx = düzgün rəng düzgün yerdə; ağ mıx = düzgün rəng yanlış yerdə. Təxminləriniz bitməmiş kodu açın.",
+    "lib.arcade.note.hanoi": "Bütün diskləri son dirəyə köçürün. Hər dəfə yalnız dirəyin üstündəki diski köçürün və heç vaxt böyük diski kiçiyin üstünə qoymayın. Əvvəlcə mənbə dirəyə, sonra hədəf dirəyə klikləyin.",
+    "lib.arcade.note.pipes": "Borunu 90° döndərmək üçün plitəyə klikləyin. Bütün boruları açıq ucu qalmayan vahid şəbəkədə birləşdirin (açıq uclar qırmızı göstərilir)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Ənənəvi Vyetnam daş səpmə oyunu: kompüterə qarşı daşları səpin və Mandarinləri alın; asandan çətinə 10 səviyyə."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Bütün işıqları söndürün: hər basış həmin xananı və onun 4 qonşusunu dəyişir; böyüyən lövhələrlə 10 səviyyə və ipucu düyməsi."
+    },
+    "fifteen": {
+      "name": "15-lik tapmaca (sürüşən tapmaca)",
+      "desc": "Nömrəli plitələri sıraya düzmək üçün sürüşdürün; 3x3-dən 5x5-ə qədər 10 səviyyə, siçan, toxunuş və ya ox düymələri ilə."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Məhdud gediş sayı ilə lövhəni küncdən bir rəngə çevirənə qədər doldurun; daha böyük lövhələr və daha çox rənglə 10 səviyyə."
+    },
+    "mastermind": {
+      "name": "Mastermind (Kod açan)",
+      "desc": "Qara və ağ mıx ipuclarından istifadə edərək gizli rəng kodunu açın; daha uzun kodlar və daha çox rənglə 10 səviyyə."
+    },
+    "hanoi": {
+      "name": "Hanoy qülləsi",
+      "desc": "Böyük diski kiçiyin üstünə qoymadan diskləri birinci dirəkdən sonuncuya köçürün; 3 diskdən 4 dirəkdə 12 diskə qədər 10 səviyyə."
+    },
+    "pipes": {
+      "name": "Boruları birləşdir",
+      "desc": "Boru hissələrini fırladıb açıq ucu olmayan vahid şəbəkədə birləşdirin; böyüyən lövhələrlə 10 səviyyə."
+    },
+    "nonogram": {
+      "name": "Nonoqram (Picross)",
+      "desc": "Sətir və sütunlardakı rəqəm ipuclarına görə xanaları doldurub şəkli üzə çıxarın; 5x5-dən 15x15-ə qədər 10 səviyyə."
+    },
+    "sokoban": {
+      "name": "Sokoban (Qutu itələmə)",
+      "desc": "Anbarda qutuları hədəf xanalara itələyin; hər səviyyə həll olunandır, daha çox qutu və daha böyük anbarlarla 10 səviyyə."
+    },
+    "block-10x10": {
+      "name": "Blok tapmacası 10x10",
+      "desc": "Fiqurları 10x10 şəbəkəyə yerləşdirib sətir və ya sütunları doldurun, silin və hədəf xala çatın; 10 səviyyə."
+    },
+    "dots-boxes": {
+      "name": "Nöqtələr və qutular",
+      "desc": "Növbə ilə nöqtələri birləşdirib kvadratlar qazanın və 10 səviyyədə asandan çətinə kompüteri məğlub edin."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate tik-tak-to",
+      "desc": "9 kiçik lövhədə tik-tak-to: seçdiyiniz xana rəqibin harada oynamalı olduğunu müəyyən edir; kompüterə qarşı 10 səviyyə."
     }
   },
   "s": {

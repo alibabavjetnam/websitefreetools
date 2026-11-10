@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Tsvuku",
     "lib.arcade.cGreen": "Girini",
     "lib.arcade.cYellow": "Yero",
-    "lib.arcade.cBlue": "Bhuruu"
+    "lib.arcade.cBlue": "Bhuruu",
+    "lib.arcade.guess": "Fungidzira",
+    "lib.arcade.clearRow": "Bvisa mutsara",
+    "lib.arcade.area": "Nzvimbo: {n}/{t}",
+    "lib.arcade.triesLeft": "Wasara nemiedzo {n}",
+    "lib.arcade.minMoves": "Shoma shoma: {n}",
+    "lib.arcade.hnBad": "Haugone kuisa disc hombe pamusoro peduku.",
+    "lib.arcade.outOfMoves": "Matanho apera!",
+    "lib.arcade.fillAll": "Sarudza ruvara panzvimbo imwe neimwe.",
+    "lib.arcade.modeFill": "Zadza",
+    "lib.arcade.modeMark": "Isa mucherechedzo ✕",
+    "lib.arcade.clearAll": "Bvisa zvese",
+    "lib.arcade.note.nonogram": "Nhamba dziri pakutanga kwemutsara wese nekoramu dzinoratidza kureba kwemapoka emabhokisi akazadzwa akatevedzana pamutsetse iwoyo, nebhokisi risina chinhu rimwe chete padiki pakati pemapoka. Dzvanya kana kudhonza kuzadza mabhokisi; chinjira ku“Isa mucherechedzo ✕” kuti utarise mabhokisi aunoziva kuti haana chinhu. Zadzisa zvinotungamira zvese kuti ukunde.",
+    "lib.arcade.size": "Giridhi ye{n}×{n}",
+    "lib.arcade.restartLevel": "Tangazve nhanho",
+    "lib.arcade.newLayout": "Imwe nhanho",
+    "lib.arcade.note.sokoban": "Famisa mutambi nemakiyi ematanda/WASD, mabhatani ari pasi kana kutsvaira. Sundira mabhokisi ese pamabhokisi ekusvika (madonhwe akatenderera). Unogona kusundira bhokisi rimwe chete panguva imwe uye haugone kudhonza, saka ita hanya kusasundira mabhokisi mumakona. Shandisa Dzosera kugadzirisa danho rakashata.",
+    "lib.arcade.boxesDone": "Mabhokisi apo anofanira kuva: {n}/{t}",
+    "lib.arcade.note.block10": "Sarudza chidimbu pasi, wobva wadzvanya pagiridhi kuchiisa (zvidimbu hazvikwanise kutenderedzwa). Zadza mutsara wose kana koramu yose kuti ibviswe uwane mapoinzi akawedzera; kubvisa mitsetse yakawanda panguva imwe kunopa bhonasi hombe. Svika pamapoinzi akatarwa kuti ukunde nhanho; kana pasina chidimbu chasara chinokwana, unokundwa.",
+    "lib.arcade.note.dots": "Chimbotevedzana kubatanidza madonhwe maviri akavakidzana nemutsetse. Anodhirowa rutivi rwechina rweburi anoritora (nerutivi rwake) obva atamba zvakare. Mitsetse yese kana yapera kudhirowa, anovawo mabhokisi akawanda ndiye anokunda. Usadhirowa rutivi rwechitatu rweburi, kana kuti mwana wenyu achaitora.",
+    "lib.arcade.note.ultimate": "Bhodhi rakagadzirwa nemabhodhi madiki mapfumbamwe e-tic-tac-toe. Unotamba X uye unotanga. Bhokisi raunosarudza mukati mebhodhi diki rinosarudza bhodhi diki raunofanira kutamba mariri mudzidzi wako zvinotevera (rinoratidzwa); kana bhodhi iro rapera kare, anogona kutamba kupi zvako. Hwina bhodhi diki kuti uritore; tora mabhodhi madiki matatu mumutsara, mukoramu kana padiagonal kuti ukunde mutambo.",
+    "lib.arcade.note.lights-out": "Kudzvanya bhokisi kunochinja bhokisi iroro nevavakidzani varo 4 (kuvhura/kudzima). Dzima mwenje yese. Shandisa Chikumbiro kuona bhokisi rakakodzera kudzvanya.",
+    "lib.arcade.note.fifteen": "Tsvairira matailosi ane nhamba muchikamu chisina chinhu kuti ave nenzira 1, 2, 3… nechikamu chisina chinhu pakona yakadzika kurudyi. Dzvanya tailosi iri mumutsara kana koramu imwe chete nechikamu chisina chinhu kutsvairira mutsetse wese; makiyi ematanda anoshandawo.",
+    "lib.arcade.note.flood-it": "Sarudza ruvara rwekuzadza nzvimbo yese yaunayo pakona yepamusoro kuruboshwe; inomedza mabhokisi akavakidzana eruvara irworwo. Ita kuti bhodhi rese rive ruvara rumwe chete mukati mematanho anotenderwa.",
+    "lib.arcade.note.mastermind": "Komputa inovanza mutsara weruvara. Sarudza ruvara panzvimbo imwe neimwe, wobva wadzvanya Fungidzira. Peg nhema = ruvara rwakarurama panzvimbo chaipo; peg chena = ruvara rwakarurama panzvimbo isiri iyo. Pwanya kodhi usati wapedza miedzo.",
+    "lib.arcade.note.hanoi": "Tamisa ma disc ese kuenda kunhiyo yekupedzisira. Famisa disc yepamusoro chete panhiyo pakatenderera rimwe nerimwe, uye usaise disc hombe pamusoro peduku. Dzvanya nhiyo yekutangira, wobva wadzvanya nhiyo yekusvika.",
+    "lib.arcade.note.pipes": "Dzvanya tailosi kutenderedza paipi 90°. Batanidza mapaipi ese kuita network imwe chete isina magumo akavhurika (magumo akavhurika anoratidzwa tsvuku)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Mutambo wechivanhu weVietnam wekusveta matombo: sveta matombo ubate ma Mandarin uchipikisana nekombuta; mazinga 10 kubva pakareruka kusvika pakaoma."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Dzima mwenje yese: kudzvanya kwese kunochinja bhokisi nevavakidzani varo 4; nhanho 10 dzine mabhodhi anokura nebhatani reChikumbiro."
+    },
+    "fifteen": {
+      "name": "Mutambo we15 (puzzle inotsvairika)",
+      "desc": "Tsvairira matailosi ane nhamba kuti ave nenzira; nhanho 10 kubva ku3x3 kusvika ku5x5, unotambwa nemausi, kubata kana makiyi ematanda."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Zadza bhodhi kubva pakona kusvikira rave neruvara rumwe chete mukati mematanho akatarwa; nhanho 10 dzine mabhodhi makuru nemavara akawanda."
+    },
+    "mastermind": {
+      "name": "Mastermind (Anopwanya Kodhi)",
+      "desc": "Pwanya kodhi yemavara yakavanzwa uchishandisa zvinotungamira zvema peg matema nemachena; nhanho 10 dzine makodhi marefu nemavara akawanda."
+    },
+    "hanoi": {
+      "name": "Shongwe yeHanoi",
+      "desc": "Tamisa ma disc kubva panhiyo yekutanga kuenda kwekupedzisira usingaisi disc hombe pamusoro peduku; nhanho 10 kubva pa3 discs kusvika ku12 discs panhiyo 4."
+    },
+    "pipes": {
+      "name": "Batanidza Mapaipi",
+      "desc": "Tenderedza zvidimbu zvemapaipi kuti zvibatanidzwe kuita network imwe isina magumo akavhurika; nhanho 10 dzine mabhodhi anokura."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Zadza mabhokisi uchishandisa nhamba dzinotungamira dzemitsara nemakoramu kuratidza mufananidzo; nhanho 10 kubva ku5x5 kusvika ku15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Anosundira Mabhokisi)",
+      "desc": "Sundira mabhokisi pamabhokisi ekusvika mumagodhaundi; nhanho yese inogona kugadziriswa, nhanho 10 dzine mabhokisi akawanda nemagodhaundi makuru."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Isa zvidimbu pagiridhi ye10x10 uye uzadze mitsara kana makoramu kuti abviswe usvike pamapoinzi akatarwa; nhanho 10."
+    },
+    "dots-boxes": {
+      "name": "Madonhwe neMabhokisi",
+      "desc": "Chimbotevedzana kubatanidza madonhwe kutora mabhokisi uye ukunde komputa munhanho 10 kubva pakureruka kusvika pakuoma."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate Tic-Tac-Toe",
+      "desc": "Tic-tac-toe pamabhodhi madiki 9: bhokisi raunosarudza rinosarudza kwaanofanira kutamba mudzidzi wako; kurwisa komputa munhanho 10."
     }
   },
   "s": {

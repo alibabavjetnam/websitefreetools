@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rdeča",
     "lib.arcade.cGreen": "Zelena",
     "lib.arcade.cYellow": "Rumena",
-    "lib.arcade.cBlue": "Modra"
+    "lib.arcade.cBlue": "Modra",
+    "lib.arcade.guess": "Ugibaj",
+    "lib.arcade.clearRow": "Počisti vrstico",
+    "lib.arcade.area": "Območje: {n}/{t}",
+    "lib.arcade.triesLeft": "Preostalo ugibanj: {n}",
+    "lib.arcade.minMoves": "Najmanj: {n}",
+    "lib.arcade.hnBad": "Večjega diska ne smete postaviti na manjšega.",
+    "lib.arcade.outOfMoves": "Zmanjkalo je potez!",
+    "lib.arcade.fillAll": "Izberite barvo za vsak položaj.",
+    "lib.arcade.modeFill": "Zapolni",
+    "lib.arcade.modeMark": "Označi ✕",
+    "lib.arcade.clearAll": "Počisti vse",
+    "lib.arcade.note.nonogram": "Številke na začetku vsake vrstice in stolpca povedo dolžine skupin zaporednih zapolnjenih polj v tej liniji po vrsti, med skupinami pa je vsaj eno prazno polje. Kliknite ali povlecite za zapolnitev polj; preklopite na »Označi ✕«, da zabeležite polja, za katera ste prepričani, da so prazna. Izpolnite vse namige, da zmagate.",
+    "lib.arcade.size": "Mreža {n}×{n}",
+    "lib.arcade.restartLevel": "Znova začni stopnjo",
+    "lib.arcade.newLayout": "Druga stopnja",
+    "lib.arcade.note.sokoban": "Igralca premikajte s smernimi tipkami/WASD, spodnjimi gumbi ali z drsenjem. Potisnite vse škatle na ciljna polja (okrogle pike). Hkrati lahko potisnete le eno škatlo in je ne morete vleči, zato škatel ne potiskajte v kote. Slabo potezo popravite z Razveljavi.",
+    "lib.arcade.boxesDone": "Škatle na cilju: {n}/{t}",
+    "lib.arcade.note.block10": "Spodaj izberite kos, nato kliknite mrežo, da ga postavite (kosov ni mogoče vrteti). Zapolnite celotno vrstico ali stolpec, da ga počistite in dobite dodatne točke; čiščenje več črt naenkrat prinese velik bonus. Dosezite ciljno število točk, da opravite stopnjo; če noben preostali kos ne gre več, izgubite.",
+    "lib.arcade.note.dots": "Izmenično povezujta sosednji piki s črto. Kdor potegne četrto stranico kvadrata, ga osvoji (v svoji barvi) in igra znova. Ko so vse črte potegnjene, zmaga igralec z več kvadrati. Ne vlecite tretje stranice kvadrata, sicer ga bo nasprotnik vzel.",
+    "lib.arcade.note.ultimate": "Plošča je sestavljena iz 9 majhnih plošč križci-krožci. Vi igrate X in ste prvi na vrsti. Polje, ki ga izberete znotraj majhne plošče, določi, na kateri majhni plošči mora nasprotnik igrati naslednjič (je označena); če je ta plošča že končana, lahko igra kjerkoli. Zmagajte na majhni plošči, da jo osvojite; osvojite tri majhne plošče v vrsti, stolpcu ali diagonali in zmagajte v igri.",
+    "lib.arcade.note.lights-out": "Klik na polje preklopi to polje in njegove 4 sosede (vklop/izklop). Ugasnite vse luči. Z namigom si oglejte polje, ki ga je vredno pritisniti.",
+    "lib.arcade.note.fifteen": "Drsite oštevilčene ploščice v vrzel, da jih razvrstite 1, 2, 3… z vrzeljo v spodnjem desnem kotu. Kliknite ploščico v isti vrstici ali stolpcu kot vrzel, da premaknete celotno vrsto; delujejo tudi smerne tipke.",
+    "lib.arcade.note.flood-it": "Izberite barvo, da zapolnite vse svoje območje v zgornjem levem kotu; požre sosednja polja te barve. V dovoljenem številu potez naredite celotno ploščo enobarvno.",
+    "lib.arcade.note.mastermind": "Računalnik skrije vrsto barv. Izberite barvo za vsak položaj, nato pritisnite Ugibaj. Črn količek = prava barva na pravem mestu; bel količek = prava barva na napačnem mestu. Odkrijte kodo, preden vam zmanjka poskusov.",
+    "lib.arcade.note.hanoi": "Prestavite vse diske na zadnji količek. Vsakič premaknite le zgornji disk količka in nikoli ne postavite večjega diska na manjšega. Kliknite izvorni količek, nato ciljnega.",
+    "lib.arcade.note.pipes": "Kliknite ploščico, da cev zavrtite za 90°. Povežite vse cevi v eno omrežje brez odprtih koncev (odprti konci so rdeči)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Tradicionalna vietnamska igra razdeljevanja kamenčkov: razdeljujte kamenčke in osvojite mandarine proti računalniku; 10 stopenj od lahkih do težkih."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Ugasnite vse luči: vsak pritisk preklopi polje in njegove 4 sosede; 10 stopenj z rastočimi ploščami in gumbom za namig."
+    },
+    "fifteen": {
+      "name": "Igra 15 (drsna uganka)",
+      "desc": "Razvrstite oštevilčene ploščice; 10 stopenj od 3x3 do 5x5, igra se z miško, dotikom ali smernimi tipkami."
+    },
+    "flood-it": {
+      "name": "Flood-it (zalivanje z barvami)",
+      "desc": "Zalijte ploščo iz kota, dokler ni enobarvna, v omejenem številu potez; 10 stopenj z večjimi ploščami in več barvami."
+    },
+    "mastermind": {
+      "name": "Mastermind (razbijalec kode)",
+      "desc": "Razvozlajte skrito barvno kodo z namigi iz črnih in belih količkov; 10 stopenj z daljšimi kodami in več barvami."
+    },
+    "hanoi": {
+      "name": "Hanojski stolpi",
+      "desc": "Prestavite diske s prvega na zadnji količek, ne da bi večji disk postavili na manjšega; 10 stopenj od 3 diskov do 12 diskov na 4 količkih."
+    },
+    "pipes": {
+      "name": "Poveži cevi",
+      "desc": "Vrtite kose cevi, da jih povežete v eno omrežje brez odprtih koncev; 10 stopenj z rastočimi ploščami."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Zapolnjujte polja po številskih namigih ob vrsticah in stolpcih, da razkrijete sliko; 10 stopenj od 5x5 do 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (potiskanje škatel)",
+      "desc": "Potisnite škatle na ciljna polja v skladišču; vsaka stopnja je rešljiva, 10 stopenj z več škatlami in večjimi skladišči."
+    },
+    "block-10x10": {
+      "name": "Blok uganka 10x10",
+      "desc": "Postavljajte kose na mrežo 10x10 in zapolnjujte vrstice ali stolpce, da jih počistite in dosežete ciljne točke; 10 stopenj."
+    },
+    "dots-boxes": {
+      "name": "Pike in kvadrati",
+      "desc": "Izmenično povezujte pike, osvajajte kvadrate in premagajte računalnik v 10 stopnjah od lahke do težke."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate križci-krožci",
+      "desc": "Križci-krožci na 9 majhnih ploščah: izbrano polje določi, kje mora igrati nasprotnik; proti računalniku v 10 stopnjah."
     }
   },
   "s": {

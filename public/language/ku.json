@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Sor",
     "lib.arcade.cGreen": "Kesk",
     "lib.arcade.cYellow": "Zer",
-    "lib.arcade.cBlue": "Şîn"
+    "lib.arcade.cBlue": "Şîn",
+    "lib.arcade.guess": "Texmîn bike",
+    "lib.arcade.clearRow": "Rêzê paqij bike",
+    "lib.arcade.area": "Herêm: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} texmîn mane",
+    "lib.arcade.minMoves": "Herî kêm: {n}",
+    "lib.arcade.hnBad": "Nikarî dîskeke mezin li ser ya biçûk deynî.",
+    "lib.arcade.outOfMoves": "Tevgerên te qediyan!",
+    "lib.arcade.fillAll": "Ji bo her cihekî rengek hilbijêre.",
+    "lib.arcade.modeFill": "Tije bike",
+    "lib.arcade.modeMark": "Nîşan bike ✕",
+    "lib.arcade.clearAll": "Hemûyan paqij bike",
+    "lib.arcade.note.nonogram": "Hejmarên li destpêka her rêz û stûnê dirêjahiya komên xaneyên li pey hev ên tijekirî yên di wê xetê de bi rêzê nîşan didin, û di navbera koman de bi kêmanî xaneyek vala heye. Ji bo tijekirina xaneyan bitikîne an bikişîne; ji bo nîşankirina xaneyên ku tu bawer î valan, derbasî “Nîşan bike ✕” bibe. Ji bo serkeftinê hemû ferman pêk bîne.",
+    "lib.arcade.size": "Tora {n}×{n}",
+    "lib.arcade.restartLevel": "Astê ji nû ve dest pê bike",
+    "lib.arcade.newLayout": "Astek din",
+    "lib.arcade.note.sokoban": "Lîstikvan bi tîrên klavyeyê/WASD, bi bişkokên jêrîn an bi kaşkirinê bimeşîne. Hemû qutiyan bi ser xaneyên armancê (xalên gilover) bixe. Tu tenê carekê yek qutî dikarî bidî ber xwe û nikarî bikişînî, ji ber vê qutiyan nexe goşeyan. Ji bo rastkirina tevgerekî xirab Vegerîne bi kar bîne.",
+    "lib.arcade.boxesDone": "Qutî li armancê: {n}/{t}",
+    "lib.arcade.note.block10": "Li jêr perçeyekî hilbijêre, paşê li ser torê bitikîne da ku deynî (perçe nayên zivirandin). Rêzek an stûnek temam tije bike da ku paqij bibe û puanên zêde bistîne; paqijkirina çend xetan di carekê de bonûsek mezin dide. Ji bo derbaskirina astê bigihîje puana armancê; heke ti perçeyek ji yên mayî nebe, tu têk diçî.",
+    "lib.arcade.note.dots": "Bi rêzê du xalên cîran bi xetekê bi hev ve girêbidin. Kesê ku aliyê çaremîn yê çargoşeyekê dikşîne, wê çargoşeyê (bi rengê xwe) digire û dîsa dilîze. Gava hemû xet hatin kişandin, lîstikvanê ku çargoşeyên wî zêdetir in, bi ser dikeve. Aliyê sêyemîn yê çargoşeyekê nekişîne, wekî din dijber wê bigire.",
+    "lib.arcade.note.ultimate": "Tablo ji 9 tabloyên biçûk ên sê-bi-yek pêk tê. Tu X dilîzî û yekem dilîzî. Xaneya ku tu di tabloyeke biçûk de hildibijêrî diyar dike ku dijber divê piştre di kîjan tabloya biçûk de bilîze (ronî dibe); heke ew tablo jixwe qediyabe, dikare li ku bixwaze bilîze. Tabloyeke biçûk bi dest bixe da ku bibe a te; sê tabloyên biçûk di rêzekê, stûnekê an xeta çepikê de bi dest bixe da ku lîstikê bi dest bixe.",
+    "lib.arcade.note.lights-out": "Tikandina li ser xaneyekê wê xaneyê û 4 cîranên wê vedigerîne (vemirandin/vêxistin). Hemû ronahiyan vemirîne. Ji bo dîtina xaneyeke ku hêjayî tikandinê ye Nîşe bi kar bîne.",
+    "lib.arcade.note.fifteen": "Kaşelên bi hejmar bikişîne nav valahiyê da ku bi rêza 1, 2, 3… bin û valahî li goşeya jêrîn a rastê be. Li ser kaşeyekê di heman rêz an stûnê de wekî valahiyê bitikîne da ku tevahiya xetê bikişîne; tîrên klavyeyê jî dixebitin.",
+    "lib.arcade.note.flood-it": "Rengekî hilbijêre da ku tevahiya herêma xwe ya li goşeya jor-çepê tije bike; ew xaneyên cîran ên wî rengî dadiqurtîne. Di hejmara tevgerên destûrdayî de tevahiya tabloyê yekreng bike.",
+    "lib.arcade.note.mastermind": "Komputer rêzek rengan vedişêre. Ji bo her cihekî rengek hilbijêre, paşê Texmîn bike bitikîne. Pînê reş = rengê rast li cihê rast; pînê spî = rengê rast li cihê şaş. Berî ku texmînên te biqedin kodê çareser bike.",
+    "lib.arcade.note.hanoi": "Hemû dîskan bibe stûna dawîn. Her carê tenê dîska jorîn a stûnekê bigerîne û tu carî dîskeke mezin li ser ya biçûk nexe. Pêşî li ser stûna çavkaniyê, paşê li ser stûna armancê bitikîne.",
+    "lib.arcade.note.pipes": "Li ser kaşeyekê bitikîne da ku boriyê 90° bizivirîne. Hemû boriyan di yek torê de bi hev ve girêde, bê serên vekirî (serên vekirî sor têne nîşandan)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Lîstikeke kevneşopî ya Viyetnamî ya belavkirina keviran: kevir belav bike û li hember komputerê Mandarînan bigire; 10 ast ji hêsan heta dijwar."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Hemû ronahiyan vemirîne: her tikandin wê xaneyê û 4 cîranên wê vedigerîne; 10 astên bi tabloyên mezinbûyî û bişkokeke nîşeyê."
+    },
+    "fifteen": {
+      "name": "Puzzle 15 (Puzzle ya Gerok)",
+      "desc": "Kaşelên bi hejmar bi rêzê bikişîne; 10 astên ji 3x3 heta 5x5, bi mişk, destgirtin an tîrên klavyeyê tê lîstin."
+    },
+    "flood-it": {
+      "name": "Flood-it (Tijîkirina bi Reng)",
+      "desc": "Tabloyê ji goşeyê tije bike heta ku yek reng bibe, di hejmareke tevgerên sînorkirî de; 10 astên bi tabloyên mezintir û rengên zêdetir."
+    },
+    "mastermind": {
+      "name": "Mastermind (Şikênerê Kodê)",
+      "desc": "Kodê rengan ê veşartî bi nîşeyên pînên reş û spî çareser bike; 10 astên bi kodên dirêjtir û rengên zêdetir."
+    },
+    "hanoi": {
+      "name": "Birca Hanoî",
+      "desc": "Dîskan ji stûna yekem bibe ya dawîn bê ku dîskeke mezin li ser ya biçûk deynî; 10 astên ji 3 dîskan heta 12 dîskan li ser 4 stûnan."
+    },
+    "pipes": {
+      "name": "Boriyan Girêde",
+      "desc": "Perçeyên boriyan bizivirîne da ku wan di yek torê de bê serên vekirî bi hev ve girêbidî; 10 astên bi tabloyên mezinbûyî."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Bi nîşeyên hejmaran ên li rêz û stûnan xaneyan tije bike da ku wêneyek derkeve; 10 astên ji 5x5 heta 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Qutî Bidin Ber Xwe)",
+      "desc": "Qutiyan di embarekê de bi ser xaneyên armancê bixe; her ast çareser dibe, 10 astên bi qutiyên zêdetir û embarên mezintir."
+    },
+    "block-10x10": {
+      "name": "Puzzle ya Blokan 10x10",
+      "desc": "Perçeyan li ser torek 10x10 deyne û rêz an stûnan tije bike da ku paqij bibin û bigihîjî puana armancê; 10 ast."
+    },
+    "dots-boxes": {
+      "name": "Xal û Qutî",
+      "desc": "Bi rêzê xalan bi hev ve girêde da ku çargoşeyan bi dest bixî û di 10 astan de ji hêsan heta dijwar komputerê têk bibe."
+    },
+    "ultimate-tictactoe": {
+      "name": "Sê-bi-yek a Dawîn",
+      "desc": "Sê-bi-yek li ser 9 tabloyên biçûk: xaneya ku tu hildibijêrî diyar dike ku dijber li ku bilîze; li hemberî komputerê di 10 astan de."
     }
   },
   "s": {

@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Dearg",
     "lib.arcade.cGreen": "Glas",
     "lib.arcade.cYellow": "Buí",
-    "lib.arcade.cBlue": "Gorm"
+    "lib.arcade.cBlue": "Gorm",
+    "lib.arcade.guess": "Tomhais",
+    "lib.arcade.clearRow": "Glan an tsraith",
+    "lib.arcade.area": "Achar: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} tomhas fágtha",
+    "lib.arcade.minMoves": "Íosmhéid: {n}",
+    "lib.arcade.hnBad": "Ní féidir diosca níos mó a chur ar dhiosca níos lú.",
+    "lib.arcade.outOfMoves": "Níl aon bhogadh fágtha!",
+    "lib.arcade.fillAll": "Roghnaigh dath do gach suíomh.",
+    "lib.arcade.modeFill": "Líon",
+    "lib.arcade.modeMark": "Marcáil ✕",
+    "lib.arcade.clearAll": "Glan gach rud",
+    "lib.arcade.note.nonogram": "Cuireann na huimhreacha ag tús gach sraithe agus colúin in iúl, in ord, fad na ndreamanna cealla líonta comhleanúnacha sa líne sin, le cill fholamh amháin ar a laghad idir dreamanna. Cliceáil nó tarraing chun cealla a líonadh; athraigh go “Marcáil ✕” chun cealla a bhfuil tú cinnte go bhfuil siad folamh a nótáil. Comhlíon gach leid chun an cluiche a bhuachan.",
+    "lib.arcade.size": "Greille {n}×{n}",
+    "lib.arcade.restartLevel": "Atosaigh an leibhéal",
+    "lib.arcade.newLayout": "Leibhéal eile",
+    "lib.arcade.note.sokoban": "Bog an t-imreoir leis na heochracha saighde/WASD, na cnaipí thíos nó trí scuabadh. Brúigh gach bosca ar na cearnóga sprice (na poncanna cruinne). Ní féidir leat ach bosca amháin a bhrú ag an am agus ní féidir tarraingt, mar sin seachain boscaí a bhrú isteach i gcúinní. Úsáid Cealaigh chun droch-bhogadh a cheartú.",
+    "lib.arcade.boxesDone": "Boscaí ar spriocanna: {n}/{t}",
+    "lib.arcade.note.block10": "Roghnaigh píosa thíos, ansin cliceáil ar an ghreille chun é a chur síos (ní féidir píosaí a rothlú). Líon sraith nó colún iomlán chun é a ghlanadh agus pointí breise a fháil; faightear bónas mór as roinnt línte a ghlanadh ag an am céanna. Bain amach an scór sprice chun an leibhéal a rith; mura n-oireann aon cheann de na píosaí atá fágtha, caillfidh tú.",
+    "lib.arcade.note.dots": "Ceanglaígí dhá phonc cóngarach le líne bhur gcor féin. An té a tharraingíonn ceathrú taobh cearnóige, éilíonn sé í (ina dath féin) agus imríonn sé arís. Nuair atá gach líne tarraingthe, buaiteoidh an t-imreoir a bhfuil níos mó cearnóg aige. Seachain an tríú taobh de chearnóg a tharraingt, nó tógfaidh do chéile comhraic í.",
+    "lib.arcade.note.ultimate": "Tá an bord déanta de 9 mbord beag cros agus nialas. Imríonn tú X agus téann tú ar dtús. Cinneann an chill a roghnaíonn tú laistigh de bhord beag cén bord beag a gcaithfidh do chéile comhraic imirt ann ina dhiaidh sin (tá sé aibhsithe); má tá an bord sin críochnaithe cheana, féadann sé imirt áit ar bith. Buaigh bord beag chun é a éileamh; éiligh trí bhord beag i sraith, i gcolún nó trasnánach chun an cluiche a bhuachan.",
+    "lib.arcade.note.lights-out": "Má chliceálann tú cill, athraíonn sí agus a 4 chomharsa (air/as). Múch na soilse go léir. Úsáid Leid chun cill a bhfuil fiúntas ina brú a fheiceáil.",
+    "lib.arcade.note.fifteen": "Sleamhnaigh na leacáin uimhrithe isteach sa bhearna chun iad a chur in ord 1, 2, 3… leis an bhearna sa chúinne íochtarach ar dheis. Cliceáil ar leacán san aon sraith nó colún leis an bhearna chun an líne iomlán a shleamhnú; oibríonn na heochracha saighde freisin.",
+    "lib.arcade.note.flood-it": "Roghnaigh dath chun an limistéar iomlán atá agat sa chúinne uachtarach ar chlé a líonadh; slogann sé cealla comharsanacha den dath sin. Déan an bord iomlán d'aon dath amháin laistigh den líon bogadh a cheadaítear.",
+    "lib.arcade.note.mastermind": "Folaíonn an ríomhaire sraith dathanna. Roghnaigh dath do gach suíomh, ansin brúigh Tomhais. Biorán dubh = dath ceart san áit cheart; biorán bán = dath ceart san áit mhícheart. Réitigh an cód sula rithfidh do thomhais amach.",
+    "lib.arcade.note.hanoi": "Bog na dioscaí go léir go dtí an cuaille deireanach. Bog ach an diosca barr de chuaille gach uair, agus ná cuir diosca níos mó ar dhiosca níos lú choíche. Cliceáil an cuaille tosaigh, ansin an cuaille sprice.",
+    "lib.arcade.note.pipes": "Cliceáil leacán chun an píopa a rothlú 90°. Ceangail na píopaí go léir in aon líonra amháin gan deireadh oscailte (taispeántar deirí oscailte i ndearg)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Cluiche traidisiúnta Vítneamach scaipthe cloch: scaip clocha agus gabh na Mandairíneacha in aghaidh an ríomhaire; 10 leibhéal ó éasca go deacair."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Múch gach solas: iompaíonn gach brú an chill agus a 4 chomharsa; 10 leibhéal le boird atá ag fás agus cnaipe leide."
+    },
+    "fifteen": {
+      "name": "Cluiche 15 (mearaí sleamhnáin)",
+      "desc": "Sleamhnaigh na leacáin uimhrithe in ord; 10 leibhéal ó 3x3 go 5x5, le luch, tadhall nó eochracha saighde."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Tuilte an bord ón chúinne go mbeidh sé d'aon dath amháin laistigh de líon teoranta bogadh; 10 leibhéal le boird níos mó agus níos mó dathanna."
+    },
+    "mastermind": {
+      "name": "Mastermind (briseoir cóid)",
+      "desc": "Réitigh an cód dathanna folaithe le leideanna bioráin dhubha agus bhána; 10 leibhéal le cóid níos faide agus níos mó dathanna."
+    },
+    "hanoi": {
+      "name": "Túr Hanoi",
+      "desc": "Bog na dioscaí ón chéad chuaille go dtí an ceann deireanach gan diosca mór a chur ar dhiosca beag; 10 leibhéal ó 3 dhiosca go 12 diosca ar 4 chuaille."
+    },
+    "pipes": {
+      "name": "Ceangal Píopaí",
+      "desc": "Rothlaigh na píosaí píopa chun iad a cheangal in aon líonra amháin gan deirí oscailte; 10 leibhéal le boird atá ag fás."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Líon cealla le leideanna uimhreacha na sraitheanna agus na gcolún chun pictiúr a nochtadh; 10 leibhéal ó 5x5 go 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (brúiteoir boscaí)",
+      "desc": "Brúigh na boscaí ar na cearnóga sprice i stóras; is féidir gach leibhéal a réiteach, 10 leibhéal le níos mó boscaí agus stórais níos mó."
+    },
+    "block-10x10": {
+      "name": "Mearaí Bloc 10x10",
+      "desc": "Cuir píosaí ar ghreille 10x10 agus líon sraitheanna nó colúin chun iad a ghlanadh agus an scór sprice a bhaint amach; 10 leibhéal."
+    },
+    "dots-boxes": {
+      "name": "Poncanna agus Boscaí",
+      "desc": "Ceanglaígí poncanna ar a seal chun cearnóga a éileamh agus buail an ríomhaire thar 10 leibhéal ó éasca go deacair."
+    },
+    "ultimate-tictactoe": {
+      "name": "Cros agus Nialas Deiridh",
+      "desc": "Cros agus nialas ar 9 mbord beag: cinneann an chill a roghnaíonn tú cá gcaithfidh do chéile comhraic imirt; i gcoinne an ríomhaire thar 10 leibhéal."
     }
   },
   "s": {

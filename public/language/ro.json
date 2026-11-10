@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Roșu",
     "lib.arcade.cGreen": "Verde",
     "lib.arcade.cYellow": "Galben",
-    "lib.arcade.cBlue": "Albastru"
+    "lib.arcade.cBlue": "Albastru",
+    "lib.arcade.guess": "Ghicește",
+    "lib.arcade.clearRow": "Șterge rândul",
+    "lib.arcade.area": "Zonă: {n}/{t}",
+    "lib.arcade.triesLeft": "Încercări rămase: {n}",
+    "lib.arcade.minMoves": "Minim: {n}",
+    "lib.arcade.hnBad": "Nu poți pune un disc mai mare peste unul mai mic.",
+    "lib.arcade.outOfMoves": "Nu mai ai mutări!",
+    "lib.arcade.fillAll": "Alege o culoare pentru fiecare poziție.",
+    "lib.arcade.modeFill": "Umple",
+    "lib.arcade.modeMark": "Marcaj ✕",
+    "lib.arcade.clearAll": "Șterge tot",
+    "lib.arcade.note.nonogram": "Numerele de la începutul fiecărui rând și al fiecărei coloane arată lungimile grupurilor de celule umplute consecutive de pe linia respectivă, în ordine, cu cel puțin o celulă goală între grupuri. Fă clic sau trage pentru a umple celule; treci la „Marcaj ✕” pentru a nota celulele despre care ești sigur că sunt goale. Respectă toate indiciile pentru a câștiga.",
+    "lib.arcade.size": "Grilă {n}×{n}",
+    "lib.arcade.restartLevel": "Reia nivelul",
+    "lib.arcade.newLayout": "Alt nivel",
+    "lib.arcade.note.sokoban": "Mișcă jucătorul cu tastele săgeți/WASD, cu butoanele de mai jos sau prin glisare. Împinge toate cutiile pe pătratele țintă (punctele rotunde). Poți împinge o singură cutie odată și nu poți trage, așa că evită să împingi cutiile în colțuri. Folosește Anulează pentru a corecta o mutare greșită.",
+    "lib.arcade.boxesDone": "Cutii la țintă: {n}/{t}",
+    "lib.arcade.note.block10": "Alege o piesă din partea de jos, apoi fă clic pe grilă pentru a o plasa (piesele nu pot fi rotite). Umple un rând sau o coloană întreagă pentru a o elimina și a primi puncte în plus; eliminarea mai multor linii deodată aduce un bonus mare. Atinge scorul-țintă pentru a termina nivelul; dacă nicio piesă rămasă nu încape, pierzi.",
+    "lib.arcade.note.dots": "Pe rând, uniți două puncte vecine cu o linie. Cine trage a patra latură a unui pătrat îl câștigă (în culoarea sa) și mută din nou. Când toate liniile sunt trase, câștigă jucătorul cu mai multe pătrate. Evită să tragi a treia latură a unui pătrat, altfel adversarul îl va lua.",
+    "lib.arcade.note.ultimate": "Tabla este alcătuită din 9 table mici de X și 0. Joci cu X și începi primul. Celula aleasă într-o tablă mică decide în ce tablă mică trebuie să joace adversarul în continuare (aceasta este evidențiată); dacă acea tablă este deja încheiată, poate juca oriunde. Câștigă o tablă mică pentru a o revendica; revendică trei table mici pe un rând, o coloană sau o diagonală pentru a câștiga jocul.",
+    "lib.arcade.note.lights-out": "Un clic pe o celulă o comută pe ea și pe cele 4 vecine ale ei (aprins/stins). Stinge toate luminile. Folosește Indiciu pentru a vedea o celulă care merită apăsată.",
+    "lib.arcade.note.fifteen": "Glisează plăcuțele numerotate în spațiul liber pentru a le aranja în ordinea 1, 2, 3… cu spațiul liber în colțul din dreapta jos. Fă clic pe o plăcuță din același rând sau coloană cu spațiul liber pentru a glisa tot șirul; funcționează și tastele săgeți.",
+    "lib.arcade.note.flood-it": "Alege o culoare pentru a umple toată zona ta din colțul stânga sus; aceasta înghite celulele vecine de acea culoare. Fă toată tabla de o singură culoare în numărul de mutări permis.",
+    "lib.arcade.note.mastermind": "Calculatorul ascunde un rând de culori. Alege o culoare pentru fiecare poziție, apoi apasă Ghicește. Un știft negru = culoare corectă la locul potrivit; un știft alb = culoare corectă la locul greșit. Descifrează codul înainte să rămâi fără încercări.",
+    "lib.arcade.note.hanoi": "Mută toate discurile pe ultima tijă. Mută de fiecare dată doar discul de sus al unei tije și nu pune niciodată un disc mai mare peste unul mai mic. Fă clic pe tija sursă, apoi pe tija țintă.",
+    "lib.arcade.note.pipes": "Fă clic pe o plăcuță pentru a roti țeava cu 90°. Conectează toate țevile într-o singură rețea, fără capete deschise (capetele deschise sunt afișate cu roșu)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Un joc vietnamez tradițional de semănat pietre: semănă pietre și capturează Mandarinii împotriva calculatorului; 10 niveluri de la ușor la greu."
+    },
+    "lights-out": {
+      "name": "Lights Out (Stinge luminile)",
+      "desc": "Stinge toate luminile: fiecare apăsare comută celula și cele 4 vecine; 10 niveluri cu table tot mai mari și buton de indiciu."
+    },
+    "fifteen": {
+      "name": "Puzzle 15 (puzzle glisant)",
+      "desc": "Glisează plăcuțele numerotate în ordine; 10 niveluri de la 3x3 la 5x5, cu mouse, atingere sau taste săgeți."
+    },
+    "flood-it": {
+      "name": "Flood-it (umplere cu culori)",
+      "desc": "Umple tabla din colț până devine de o singură culoare, într-un număr limitat de mutări; 10 niveluri cu table mai mari și mai multe culori."
+    },
+    "mastermind": {
+      "name": "Mastermind (Spărgător de cod)",
+      "desc": "Descifrează codul ascuns de culori cu ajutorul indiciilor cu știfturi negre și albe; 10 niveluri cu coduri mai lungi și mai multe culori."
+    },
+    "hanoi": {
+      "name": "Turnurile din Hanoi",
+      "desc": "Mută discurile de pe prima tijă pe ultima fără a pune un disc mai mare peste unul mai mic; 10 niveluri de la 3 discuri până la 12 discuri pe 4 tije."
+    },
+    "pipes": {
+      "name": "Conectează țevile",
+      "desc": "Rotește piesele de țeavă pentru a le uni într-o singură rețea fără capete deschise; 10 niveluri cu table tot mai mari."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Umple celulele după indiciile numerice de pe rânduri și coloane pentru a dezvălui o imagine; 10 niveluri de la 5x5 la 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Împinge cutiile)",
+      "desc": "Împinge cutiile pe pătratele țintă dintr-un depozit; fiecare nivel are soluție, 10 niveluri cu mai multe cutii și depozite mai mari."
+    },
+    "block-10x10": {
+      "name": "Puzzle cu blocuri 10x10",
+      "desc": "Plasează piese pe o grilă 10x10 și umple rânduri sau coloane pentru a le elimina și a atinge scorul-țintă; 10 niveluri."
+    },
+    "dots-boxes": {
+      "name": "Puncte și pătrate",
+      "desc": "Uniți pe rând puncte pentru a câștiga pătrate și învinge calculatorul în 10 niveluri, de la ușor la greu."
+    },
+    "ultimate-tictactoe": {
+      "name": "X și 0 Ultimate",
+      "desc": "X și 0 pe 9 table mici: celula aleasă decide unde trebuie să joace adversarul; împotriva calculatorului, în 10 niveluri."
     }
   },
   "s": {

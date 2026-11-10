@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Gorria",
     "lib.arcade.cGreen": "Berdea",
     "lib.arcade.cYellow": "Horia",
-    "lib.arcade.cBlue": "Urdina"
+    "lib.arcade.cBlue": "Urdina",
+    "lib.arcade.guess": "Asmatu",
+    "lib.arcade.clearRow": "Garbitu errenkada",
+    "lib.arcade.area": "Area: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} saiakera geratzen dira",
+    "lib.arcade.minMoves": "Gutxienez: {n}",
+    "lib.arcade.hnBad": "Ezin duzu disko handiago bat txikiago baten gainean jarri.",
+    "lib.arcade.outOfMoves": "Mugimendurik ez dago!",
+    "lib.arcade.fillAll": "Aukeratu kolore bat posizio bakoitzerako.",
+    "lib.arcade.modeFill": "Bete",
+    "lib.arcade.modeMark": "Markatu ✕",
+    "lib.arcade.clearAll": "Garbitu dena",
+    "lib.arcade.note.nonogram": "Errenkada eta zutabe bakoitzaren hasierako zenbakiek, ordenan, lerro horretako gelaxka bete jarraituen taldeen luzerak adierazten dituzte, talde artean gutxienez gelaxka huts bat dagoela. Egin klik edo arrastatu gelaxkak betetzeko; aldatu “Markatu ✕” modura hutsik daudela ziur zauden gelaxkak markatzeko. Bete pista guztiak irabazteko.",
+    "lib.arcade.size": "{n}×{n} sareta",
+    "lib.arcade.restartLevel": "Berrabiarazi maila",
+    "lib.arcade.newLayout": "Beste maila",
+    "lib.arcade.note.sokoban": "Mugitu jokalaria geziekin/WASD-rekin, beheko botoiekin edo hatza irristatuz. Bultzatu kutxa guztiak helburu-laukietara (puntu borobilak). Aldi berean kutxa bakar bat bultza dezakezu eta ezin duzu tiratu, beraz saihestu kutxak ertzetara bultzatzea. Erabili Desegin mugimendu txar bat zuzentzeko.",
+    "lib.arcade.boxesDone": "Helburuko kutxak: {n}/{t}",
+    "lib.arcade.note.block10": "Aukeratu pieza bat behean eta egin klik saretan jartzeko (piezak ezin dira biratu). Bete errenkada edo zutabe oso bat garbitzeko eta puntu gehigarriak lortzeko; hainbat lerro batera garbitzeak bonus handia ematen du. Lortu helburuko puntuazioa maila gainditzeko; gelditzen diren piezetatik bat ere sartzen ez bada, galdu egiten duzu.",
+    "lib.arcade.note.dots": "Txandaka, lotu elkarren ondoko bi puntu lerro batekin. Karratu baten laugarren aldea marrazten duenak karratua eskuratzen du (bere kolorean) eta berriro jokatzen du. Lerro guztiak marraztutakoan, karratu gehien dituenak irabazten du. Saihestu karratu baten hirugarren aldea marraztea, bestela aurkariak hartuko du.",
+    "lib.arcade.note.ultimate": "Taula 9 hiru-en-lerro taula txikiz osatuta dago. Zuk X jokatzen duzu eta zu hasten zara. Taula txiki batean aukeratzen duzun laukiak erabakitzen du aurkariak zein taula txikitan jokatu behar duen (nabarmenduta dago); taula hori amaituta badago, edonon jokatu dezake. Irabazi taula txiki bat bereganatzeko; bereganatu hiru taula txiki lerro, zutabe edo diagonal batean jokoa irabazteko.",
+    "lib.arcade.note.lights-out": "Gelaxka batean klik egiteak gelaxka hori eta bere 4 auzokideak aldatzen ditu (piztu/itzali). Itzali argi guztiak. Erabili Pista sakatzea merezi duen gelaxka bat ikusteko.",
+    "lib.arcade.note.fifteen": "Irristatu zenbakidun lauzak hutsunera 1, 2, 3… ordenan jartzeko, hutsunea beheko eskuineko izkinan egonda. Egin klik hutsunearen errenkada edo zutabe berean dagoen lauza batean lerro osoa irristatzeko; geziek ere funtzionatzen dute.",
+    "lib.arcade.note.flood-it": "Aukeratu kolore bat goiko ezkerreko izkinan duzun eremu osoa betetzeko; kolore horretako auzoko gelaxkak irensten ditu. Bihurtu taula osoa kolore bakarrekoa baimendutako mugimendu kopuruaren barruan.",
+    "lib.arcade.note.mastermind": "Ordenagailuak kolore-errenkada bat ezkutatzen du. Aukeratu kolore bat posizio bakoitzerako eta sakatu Asmatu. Iltze beltza = kolore zuzena leku zuzenean; iltze zuria = kolore zuzena leku okerrean. Asmatu kodea saiakerak amaitu aurretik.",
+    "lib.arcade.note.hanoi": "Eraman disko guztiak azken makilara. Aldi bakoitzean makila bateko goiko diskoa soilik mugitu, eta ez jarri inoiz disko handiago bat txikiago baten gainean. Egin klik jatorrizko makilan eta gero helburuko makilan.",
+    "lib.arcade.note.pipes": "Egin klik lauza batean hodia 90° biratzeko. Konektatu hodi guztiak sare bakarrean, amaiera irekirik gabe (amaiera irekiak gorriz agertzen dira)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Vietnamgo harri-ereite joko tradizionala: erein harriak eta hartu Mandarinak ordenagailuaren aurka; 10 maila errazetik zailera."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Itzali argi guztiak: sakatze bakoitzak gelaxka eta bere 4 auzokideak aldatzen ditu; 10 maila taula handituz eta pista-botoiarekin."
+    },
+    "fifteen": {
+      "name": "15eko jokoa (puzzle irristakorra)",
+      "desc": "Irristatu zenbakidun lauzak ordenan jartzeko; 10 maila 3x3tik 5x5era, sagua, ukipena edo geziak erabiliz."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Urperatu taula izkinatik kolore bakarrekoa izan arte mugimendu kopuru mugatuan; 10 maila taula handiagoekin eta kolore gehiagorekin."
+    },
+    "mastermind": {
+      "name": "Mastermind (kode-hautsailea)",
+      "desc": "Asmatu ezkutuko kolore-kodea iltze beltz eta zuriekin; 10 maila kode luzeagoekin eta kolore gehiagorekin."
+    },
+    "hanoi": {
+      "name": "Hanoiko dorreak",
+      "desc": "Eraman diskoak lehen makilatik azkenera disko handiagorik txikiago baten gainean jarri gabe; 10 maila 3 diskotik 4 makilatan 12 diskora arte."
+    },
+    "pipes": {
+      "name": "Hodien konexioa",
+      "desc": "Biratu hodi-piezak amaiera irekirik gabeko sare bakarrean lotzeko; 10 maila taula handituz."
+    },
+    "nonogram": {
+      "name": "Nonograma (Picross)",
+      "desc": "Bete gelaxkak errenkada eta zutabeetako zenbaki-pistekin irudi bat azaltzeko; 10 maila 5x5etik 15x15era."
+    },
+    "sokoban": {
+      "name": "Sokoban (kutxa-bultzatzailea)",
+      "desc": "Bultzatu kutxak biltegi bateko helburu-laukietara; maila guztiak ebazgarriak dira, 10 maila kutxa gehiago eta biltegi handiagoekin."
+    },
+    "block-10x10": {
+      "name": "Bloke puzzlea 10x10",
+      "desc": "Jarri piezak 10x10 saretan eta bete errenkadak edo zutabeak garbitzeko eta helburuko puntuazioa lortzeko; 10 maila."
+    },
+    "dots-boxes": {
+      "name": "Puntuak eta kutxak",
+      "desc": "Txandaka lotu puntuak karratuak eskuratzeko eta garaitu ordenagailua 10 mailatan, errazetik zailera."
+    },
+    "ultimate-tictactoe": {
+      "name": "Hiru-en-lerro behinena",
+      "desc": "Hiru-en-lerro 9 taula txikitan: aukeratzen duzun laukiak erabakitzen du aurkariak non jokatu behar duen; ordenagailuaren aurka 10 mailatan."
     }
   },
   "s": {

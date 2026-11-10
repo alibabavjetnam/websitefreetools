@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Punainen",
     "lib.arcade.cGreen": "Vihreä",
     "lib.arcade.cYellow": "Keltainen",
-    "lib.arcade.cBlue": "Sininen"
+    "lib.arcade.cBlue": "Sininen",
+    "lib.arcade.guess": "Arvaa",
+    "lib.arcade.clearRow": "Tyhjennä rivi",
+    "lib.arcade.area": "Alue: {n}/{t}",
+    "lib.arcade.triesLeft": "Arvauksia jäljellä: {n}",
+    "lib.arcade.minMoves": "Vähintään: {n}",
+    "lib.arcade.hnBad": "Isoa kiekkoa ei voi laittaa pienemmän päälle.",
+    "lib.arcade.outOfMoves": "Siirrot loppuivat!",
+    "lib.arcade.fillAll": "Valitse väri jokaiseen paikkaan.",
+    "lib.arcade.modeFill": "Täytä",
+    "lib.arcade.modeMark": "Merkitse ✕",
+    "lib.arcade.clearAll": "Tyhjennä kaikki",
+    "lib.arcade.note.nonogram": "Jokaisen rivin ja sarakkeen alussa olevat luvut kertovat kyseisen rivin peräkkäisten täytettyjen ruutujen jaksojen pituudet järjestyksessä, ja jaksojen välissä on vähintään yksi tyhjä ruutu. Täytä ruudut napsauttamalla tai vetämällä; vaihda tilaan “Merkitse ✕” merkitäksesi ruudut, jotka ovat varmasti tyhjiä. Täytä kaikki vihjeet voittaaksesi.",
+    "lib.arcade.size": "{n}×{n} ruudukko",
+    "lib.arcade.restartLevel": "Aloita taso alusta",
+    "lib.arcade.newLayout": "Toinen taso",
+    "lib.arcade.note.sokoban": "Liikuta pelaajaa nuolinäppäimillä/WASD:lla, alla olevilla painikkeilla tai pyyhkäisemällä. Työnnä kaikki laatikot maaliruuduille (pyöreät pisteet). Voit työntää vain yhtä laatikkoa kerrallaan etkä voi vetää, joten älä työnnä laatikoita nurkkiin. Korjaa huono siirto Kumoa-painikkeella.",
+    "lib.arcade.boxesDone": "Laatikoita maalissa: {n}/{t}",
+    "lib.arcade.note.block10": "Valitse palikka alhaalta ja aseta se napsauttamalla ruudukkoa (palikoita ei voi kääntää). Täytä kokonainen rivi tai sarake tyhjentääksesi sen ja saadaksesi lisäpisteitä; useamman linjan tyhjentäminen kerralla antaa ison bonuksen. Saavuta tavoitepisteet läpäistäksesi tason; jos mikään jäljellä olevista palikoista ei mahdu, häviät.",
+    "lib.arcade.note.dots": "Yhdistäkää vuorotellen kaksi vierekkäistä pistettä viivalla. Se, joka vetää neliön neljännen sivun, saa neliön (omalla värillään) ja pelaa uudelleen. Kun kaikki viivat on vedetty, voittaa pelaaja, jolla on enemmän neliöitä. Älä vedä neliön kolmatta sivua, tai vastustaja ottaa sen.",
+    "lib.arcade.note.ultimate": "Lauta koostuu 9 pienestä ristinollalaudasta. Pelaat X:ää ja aloitat. Pienellä laudalla valitsemasi ruutu määrää, millä pienellä laudalla vastustajan on pelattava seuraavaksi (se korostetaan); jos kyseinen lauta on jo ratkennut, hän voi pelata missä tahansa. Voita pieni lauta saadaksesi sen; ota kolme pientä lautaa riviin, sarakkeeseen tai vinoon voittaaksesi pelin.",
+    "lib.arcade.note.lights-out": "Ruudun napsauttaminen vaihtaa sen ja sen 4 naapurin tilaa (päällä/pois). Sammuta kaikki valot. Vihjeellä näet ruudun, jota kannattaa painaa.",
+    "lib.arcade.note.fifteen": "Liu’uta numeroidut laatat aukkoon, jotta ne ovat järjestyksessä 1, 2, 3… ja aukko on oikeassa alakulmassa. Napsauta laattaa, joka on samalla rivillä tai sarakkeella aukon kanssa, liu’uttaaksesi koko jonon; myös nuolinäppäimet toimivat.",
+    "lib.arcade.note.flood-it": "Valitse väri täyttääksesi koko vasemmassa yläkulmassa olevan alueesi; se nielaisee saman värisiä naapuriruutuja. Tee koko laudasta yksivärinen sallitussa siirtomäärässä.",
+    "lib.arcade.note.mastermind": "Tietokone piilottaa väririvin. Valitse väri jokaiseen paikkaan ja paina Arvaa. Musta tappi = oikea väri oikealla paikalla; valkoinen tappi = oikea väri väärällä paikalla. Selvitä koodi ennen kuin arvaukset loppuvat.",
+    "lib.arcade.note.hanoi": "Siirrä kaikki kiekot viimeiseen tappiin. Siirrä kerrallaan vain tapin päällimmäistä kiekkoa äläkä koskaan laita isompaa kiekkoa pienemmän päälle. Napsauta ensin lähtötappia, sitten kohdetappia.",
+    "lib.arcade.note.pipes": "Napsauta laattaa kääntääksesi putkea 90°. Yhdistä kaikki putket yhdeksi verkoksi niin, ettei avoimia päitä jää (avoimet päät näkyvät punaisina)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "Perinteinen vietnamilainen kivienjakopeli: jaa kiviä ja voita mandariinit tietokonetta vastaan; 10 tasoa helposta vaikeaan."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Sammuta kaikki valot: jokainen painallus vaihtaa ruudun ja sen 4 naapurin tilaa; 10 tasoa kasvavilla laudoilla ja vihjepainike."
+    },
+    "fifteen": {
+      "name": "15-peli (liukupeli)",
+      "desc": "Liu’uta numeroidut laatat järjestykseen; 10 tasoa 3x3:sta 5x5:een, pelataan hiirellä, kosketuksella tai nuolinäppäimillä."
+    },
+    "flood-it": {
+      "name": "Flood-it (värien täyttö)",
+      "desc": "Täytä lauta kulmasta, kunnes se on yksivärinen rajatussa siirtomäärässä; 10 tasoa isommilla laudoilla ja useammilla väreillä."
+    },
+    "mastermind": {
+      "name": "Mastermind (koodinmurtaja)",
+      "desc": "Selvitä piilotettu värikoodi mustien ja valkoisten tappien vihjeillä; 10 tasoa pidemmillä koodeilla ja useammilla väreillä."
+    },
+    "hanoi": {
+      "name": "Hanoin torni",
+      "desc": "Siirrä kiekot ensimmäisestä tapista viimeiseen laittamatta isoa kiekkoa pienen päälle; 10 tasoa 3 kiekosta 12 kiekkoon 4 tapilla."
+    },
+    "pipes": {
+      "name": "Putkiyhteys",
+      "desc": "Käännä putkenpalat yhdeksi verkoksi ilman avoimia päitä; 10 tasoa kasvavilla laudoilla."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Täytä ruudut rivien ja sarakkeiden numerovihjeiden avulla paljastaaksesi kuvan; 10 tasoa 5x5:stä 15x15:een."
+    },
+    "sokoban": {
+      "name": "Sokoban (laatikoiden työntö)",
+      "desc": "Työnnä laatikot maaliruuduille varastossa; jokainen taso on ratkaistavissa, 10 tasoa yhä useammilla laatikoilla ja isommilla varastoilla."
+    },
+    "block-10x10": {
+      "name": "Palikkapulma 10x10",
+      "desc": "Aseta palikoita 10x10-ruudukkoon ja täytä rivejä tai sarakkeita tyhjentääksesi ne ja saavuttaaksesi tavoitepisteet; 10 tasoa."
+    },
+    "dots-boxes": {
+      "name": "Pisteet ja ruudut",
+      "desc": "Yhdistä pisteitä vuorotellen ja valtaa neliöitä; voita tietokone 10 tasolla helposta vaikeaan."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate-ristinolla",
+      "desc": "Ristinolla 9 pienellä laudalla: valitsemasi ruutu määrää, missä vastustaja pelaa; tietokonetta vastaan 10 tasolla."
     }
   },
   "s": {

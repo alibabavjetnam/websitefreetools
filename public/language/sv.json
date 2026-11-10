@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Röd",
     "lib.arcade.cGreen": "Grön",
     "lib.arcade.cYellow": "Gul",
-    "lib.arcade.cBlue": "Blå"
+    "lib.arcade.cBlue": "Blå",
+    "lib.arcade.guess": "Gissa",
+    "lib.arcade.clearRow": "Rensa raden",
+    "lib.arcade.area": "Yta: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} gissningar kvar",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Du kan inte lägga en större skiva på en mindre.",
+    "lib.arcade.outOfMoves": "Slut på drag!",
+    "lib.arcade.fillAll": "Välj en färg för varje plats.",
+    "lib.arcade.modeFill": "Fyll",
+    "lib.arcade.modeMark": "Markera ✕",
+    "lib.arcade.clearAll": "Rensa allt",
+    "lib.arcade.note.nonogram": "Siffrorna i början av varje rad och kolumn anger i ordning längden på de sammanhängande serierna av ifyllda rutor på den raden, med minst en tom ruta mellan serierna. Klicka eller dra för att fylla rutor; byt till “Markera ✕” för att notera rutor du är säker på är tomma. Uppfyll alla ledtrådar för att vinna.",
+    "lib.arcade.size": "Rutnät {n}×{n}",
+    "lib.arcade.restartLevel": "Starta om nivån",
+    "lib.arcade.newLayout": "En annan nivå",
+    "lib.arcade.note.sokoban": "Flytta spelaren med piltangenterna/WASD, knapparna nedan eller genom att svepa. Knuffa varje låda till en målruta (de runda prickarna). Du kan bara knuffa en låda åt gången och inte dra, så undvik att knuffa lådor in i hörn. Använd Ångra för att rätta ett dåligt drag.",
+    "lib.arcade.boxesDone": "Lådor på mål: {n}/{t}",
+    "lib.arcade.note.block10": "Välj en bit längst ner och klicka sedan på rutnätet för att placera den (bitar kan inte roteras). Fyll en hel rad eller kolumn för att rensa den och få extra poäng; att rensa flera linjer samtidigt ger en stor bonus. Nå målpoängen för att klara nivån; om ingen av de återstående bitarna får plats förlorar du.",
+    "lib.arcade.note.dots": "Turas om att koppla ihop två intilliggande prickar med en linje. Den som drar en kvadrats fjärde sida tar kvadraten (i sin färg) och går igen. När alla linjer är dragna vinner spelaren med flest kvadrater. Undvik att dra en kvadrats tredje sida, annars tar din motståndare den.",
+    "lib.arcade.note.ultimate": "Brädet består av 9 små tre-i-rad-brädor. Du spelar X och börjar. Rutan du väljer i ett litet bräde avgör vilket litet bräde din motståndare måste spela i härnäst (det är markerat); om det brädet redan är avgjort får hen spela var som helst. Vinn ett litet bräde för att ta det; ta tre små bräden i rad, kolumn eller diagonal för att vinna spelet.",
+    "lib.arcade.note.lights-out": "Ett klick på en ruta växlar den och dess 4 grannar (på/av). Släck alla lampor. Använd Tips för att se en ruta det lönar sig att trycka på.",
+    "lib.arcade.note.fifteen": "Skjut de numrerade brickorna in i luckan för att lägga dem i ordning 1, 2, 3… med luckan i nedre högra hörnet. Klicka på en bricka i samma rad eller kolumn som luckan för att skjuta hela raden; piltangenterna fungerar också.",
+    "lib.arcade.note.flood-it": "Välj en färg för att fylla hela området du äger i det övre vänstra hörnet; det sväljer intilliggande rutor i den färgen. Gör hela brädet till en färg inom tillåtet antal drag.",
+    "lib.arcade.note.mastermind": "Datorn gömmer en rad med färger. Välj en färg för varje plats och tryck sedan på Gissa. En svart pinne = rätt färg på rätt plats; en vit pinne = rätt färg på fel plats. Knäck koden innan gissningarna tar slut.",
+    "lib.arcade.note.hanoi": "Flytta alla skivor till sista pinnen. Flytta bara översta skivan på en pinne åt gången, och lägg aldrig en större skiva på en mindre. Klicka på startpinnen och sedan på målpinnen.",
+    "lib.arcade.note.pipes": "Klicka på en bricka för att vrida röret 90°. Koppla ihop alla rör till ett enda nätverk utan öppna ändar (öppna ändar visas i rött)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Ett traditionellt vietnamesiskt såspel: så ut stenar och ta mandarinerna mot datorn; 10 nivåer från lätt till svårt."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Släck alla lampor: varje tryck växlar den rutan och dess 4 grannar; 10 nivåer med växande brädor och en tipsknapp."
+    },
+    "fifteen": {
+      "name": "15-pussel (skjutpussel)",
+      "desc": "Skjut de numrerade brickorna i ordning; 10 nivåer från 3x3 till 5x5, spelas med mus, touch eller piltangenter."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Översvämma brädet från hörnet tills det är en enda färg inom ett begränsat antal drag; 10 nivåer med större brädor och fler färger."
+    },
+    "mastermind": {
+      "name": "Mastermind (kodknäckare)",
+      "desc": "Knäck den dolda färgkoden med hjälp av svarta och vita pinnar som ledtrådar; 10 nivåer med längre koder och fler färger."
+    },
+    "hanoi": {
+      "name": "Hanois torn",
+      "desc": "Flytta skivorna från första till sista pinnen utan att lägga en större skiva på en mindre; 10 nivåer från 3 skivor till 12 skivor på 4 pinnar."
+    },
+    "pipes": {
+      "name": "Rörkoppling",
+      "desc": "Vrid rörbitarna så att de bildar ett enda nätverk utan öppna ändar; 10 nivåer med växande brädor."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Fyll rutor med hjälp av sifferledtrådarna vid raderna och kolumnerna för att avslöja en bild; 10 nivåer från 5x5 till 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (lådknuffare)",
+      "desc": "Knuffa lådorna till målrutorna i ett lager; varje nivå går att lösa, med 10 nivåer med fler lådor och större lager."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Placera bitar på ett 10x10-rutnät och fyll rader eller kolumner för att rensa dem och nå målpoängen; 10 nivåer."
+    },
+    "dots-boxes": {
+      "name": "Prickar och rutor",
+      "desc": "Turas om att koppla ihop prickar för att ta kvadrater och slå datorn i 10 nivåer från lätt till svårt."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimat tre-i-rad",
+      "desc": "Tre-i-rad över 9 små brädor: rutan du väljer avgör var din motståndare måste spela; mot datorn i 10 nivåer."
     }
   },
   "s": {

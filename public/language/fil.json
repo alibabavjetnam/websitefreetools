@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Pula",
     "lib.arcade.cGreen": "Berde",
     "lib.arcade.cYellow": "Dilaw",
-    "lib.arcade.cBlue": "Asul"
+    "lib.arcade.cBlue": "Asul",
+    "lib.arcade.guess": "Hulaan",
+    "lib.arcade.clearRow": "Burahin ang hilera",
+    "lib.arcade.area": "Lugar: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} hula na lang",
+    "lib.arcade.minMoves": "Pinakamababa: {n}",
+    "lib.arcade.hnBad": "Hindi mo mailalagay ang mas malaking disc sa ibabaw ng mas maliit.",
+    "lib.arcade.outOfMoves": "Naubusan ng galaw!",
+    "lib.arcade.fillAll": "Pumili ng kulay para sa bawat posisyon.",
+    "lib.arcade.modeFill": "Punan",
+    "lib.arcade.modeMark": "Markahan ✕",
+    "lib.arcade.clearAll": "Burahin lahat",
+    "lib.arcade.note.nonogram": "Ang mga numero sa simula ng bawat hilera at hanay ay nagsasabi, ayon sa pagkakasunod, ng haba ng magkakasunod na puno na mga cell sa linyang iyon, na may kahit isang walang laman na cell sa pagitan ng bawat grupo. I-click o i-drag para punan ang mga cell; lumipat sa “Markahan ✕” para itala ang mga cell na sigurado kang walang laman. Tuparin ang lahat ng pahiwatig para manalo.",
+    "lib.arcade.size": "{n}×{n} na grid",
+    "lib.arcade.restartLevel": "I-restart ang level",
+    "lib.arcade.newLayout": "Ibang level",
+    "lib.arcade.note.sokoban": "Igalaw ang manlalaro gamit ang arrow keys/WASD, ang mga button sa ibaba, o sa pag-swipe. Itulak ang bawat kahon sa mga target na parisukat (ang mga bilog na tuldok). Isang kahon lang ang maitutulak mo nang sabay at hindi ka puwedeng humila, kaya iwasang itulak ang mga kahon sa sulok. Gamitin ang Bawiin para ayusin ang maling galaw.",
+    "lib.arcade.boxesDone": "Mga kahon sa target: {n}/{t}",
+    "lib.arcade.note.block10": "Pumili ng piraso sa ibaba, saka i-click ang grid para ilagay ito (hindi maaaring paikutin ang mga piraso). Punuin ang buong hilera o hanay para mabura ito at makakuha ng dagdag na puntos; malaking bonus ang makukuha sa pagbura ng ilang linya nang sabay. Abutin ang target na iskor para malampasan ang level; kung walang magkasya sa mga natitirang piraso, talo ka.",
+    "lib.arcade.note.dots": "Magpalitan sa pagdudugtong ng dalawang magkatabing tuldok gamit ang linya. Ang gumuhit ng ikaapat na gilid ng parisukat ay makakakuha nito (sa kanyang kulay) at maglalaro ulit. Kapag nakaguhit na ang lahat ng linya, panalo ang may mas maraming parisukat. Iwasang iguhit ang ikatlong gilid ng parisukat, kung hindi ay kukunin ito ng kalaban.",
+    "lib.arcade.note.ultimate": "Binubuo ang board ng 9 na maliliit na tic-tac-toe board. X ang gamit mo at ikaw ang mauuna. Ang cell na pipiliin mo sa maliit na board ang magpapasya kung saang maliit na board maglalaro ang kalaban (naka-highlight ito); kung tapos na ang board na iyon, puwede siyang maglaro kahit saan. Manalo sa maliit na board para makuha ito; kunin ang tatlong maliit na board nang pahalang, patayo o pahilis para manalo sa laro.",
+    "lib.arcade.note.lights-out": "Kapag nag-click ka sa cell, magbabago ang cell na iyon at ang 4 nitong katabi (bukas/patay). Patayin ang lahat ng ilaw. Gamitin ang Pahiwatig para makita ang cell na sulit pindutin.",
+    "lib.arcade.note.fifteen": "I-slide ang mga may-numerong tile papunta sa puwang para maayos ang pagkakasunod 1, 2, 3… na nasa kanang-ibabang sulok ang puwang. I-click ang tile na kapareho ng hilera o hanay ng puwang para i-slide ang buong linya; gumagana rin ang arrow keys.",
+    "lib.arcade.note.flood-it": "Pumili ng kulay para punuin ang buong lugar na hawak mo sa kaliwang-itaas na sulok; lalamunin nito ang mga katabing cell na may ganoong kulay. Gawing iisang kulay ang buong board sa loob ng pinapayagang bilang ng galaw.",
+    "lib.arcade.note.mastermind": "Nagtatago ang computer ng hilera ng mga kulay. Pumili ng kulay para sa bawat posisyon, saka pindutin ang Hulaan. Itim na peg = tamang kulay sa tamang lugar; puting peg = tamang kulay sa maling lugar. Lutasin ang code bago maubos ang mga hula mo.",
+    "lib.arcade.note.hanoi": "Ilipat ang lahat ng disc sa huling poste. Ang pinakaibabaw na disc lang ng poste ang ilipat sa bawat galaw, at huwag maglagay ng mas malaking disc sa ibabaw ng mas maliit. I-click ang pinagmulang poste, saka ang patutunguhang poste.",
+    "lib.arcade.note.pipes": "I-click ang tile para paikutin ang tubo nang 90°. Ikonekta ang lahat ng tubo sa iisang network na walang bukas na dulo (pula ang mga bukas na dulo)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Isang tradisyonal na larong Vietnamese na may paghahasik ng bato: maghasik ng bato at kunin ang mga Mandarin laban sa computer; 10 level mula madali hanggang mahirap."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Patayin ang bawat ilaw: bawat pindot ay nagpapalit sa cell at sa 4 nitong katabi; 10 level na palaki nang palaki ang board at may button ng pahiwatig."
+    },
+    "fifteen": {
+      "name": "15 Puzzle (Sliding Puzzle)",
+      "desc": "I-slide ang mga may-numerong tile para maayos; 10 level mula 3x3 hanggang 5x5, laruin gamit ang mouse, touch o arrow keys."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Punuin ang board mula sa sulok hanggang maging iisang kulay sa loob ng limitadong galaw; 10 level na may mas malalaking board at mas maraming kulay."
+    },
+    "mastermind": {
+      "name": "Mastermind (Code Breaker)",
+      "desc": "Lutasin ang nakatagong color code gamit ang mga pahiwatig na itim at puting peg; 10 level na may mas mahahabang code at mas maraming kulay."
+    },
+    "hanoi": {
+      "name": "Tore ng Hanoi",
+      "desc": "Ilipat ang mga disc mula sa unang poste hanggang sa huli nang hindi naglalagay ng malaking disc sa ibabaw ng maliit; 10 level mula 3 disc hanggang 12 disc sa 4 na poste."
+    },
+    "pipes": {
+      "name": "Pipe Connect",
+      "desc": "Paikutin ang mga piraso ng tubo para maging iisang network na walang bukas na dulo; 10 level na palaki nang palaki ang board."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Punan ang mga cell gamit ang mga numerong pahiwatig sa mga hilera at hanay para lumabas ang larawan; 10 level mula 5x5 hanggang 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Tagatulak ng Kahon)",
+      "desc": "Itulak ang mga kahon sa mga target na parisukat sa isang bodega; malulutas ang bawat level, may 10 level na mas maraming kahon at mas malalaking bodega."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Maglagay ng mga piraso sa 10x10 na grid at punuin ang mga hilera o hanay para mabura ang mga ito at maabot ang target na iskor; 10 level."
+    },
+    "dots-boxes": {
+      "name": "Dots and Boxes",
+      "desc": "Magpalitan sa pagdudugtong ng mga tuldok para makuha ang mga parisukat at talunin ang computer sa 10 level mula madali hanggang mahirap."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate Tic-Tac-Toe",
+      "desc": "Tic-tac-toe sa 9 na maliliit na board: ang cell na pipiliin mo ang magpapasya kung saan maglalaro ang kalaban; laban sa computer sa 10 level."
     }
   },
   "s": {

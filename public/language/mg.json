@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Mena",
     "lib.arcade.cGreen": "Maitso",
     "lib.arcade.cYellow": "Mavo",
-    "lib.arcade.cBlue": "Manga"
+    "lib.arcade.cBlue": "Manga",
+    "lib.arcade.guess": "Tsakao",
+    "lib.arcade.clearRow": "Fafao ny andalana",
+    "lib.arcade.area": "Faritra: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} tsakana sisa",
+    "lib.arcade.minMoves": "Farafahakeliny: {n}",
+    "lib.arcade.hnBad": "Tsy azo apetraka eo ambonin'ny kapila kely ny kapila lehibe.",
+    "lib.arcade.outOfMoves": "Lany ny dingana!",
+    "lib.arcade.fillAll": "Safidio ny loko isaky ny toerana.",
+    "lib.arcade.modeFill": "Fenoy",
+    "lib.arcade.modeMark": "Marihana ✕",
+    "lib.arcade.clearAll": "Fafao daholo",
+    "lib.arcade.note.nonogram": "Ny isa eo am-piandohan'ny andalana sy tsanganana tsirairay dia manondro araka ny filaharana ny halavan'ny andiana efitra feno mifanesy ao amin'io tsipika io, miaraka amin'ny efitra foana iray farafahakeliny eo anelanelan'ireo andiana. Tsindrio na mitsoaka mba hamenoana ny efitra; mifindra amin'ny “Marihana ✕” mba hanamarihana ny efitra azonao antoka fa foana. Ampiasao ny soso-kevitra rehetra mba handreseny.",
+    "lib.arcade.size": "Tablo {n}×{n}",
+    "lib.arcade.restartLevel": "Averina ny haavo",
+    "lib.arcade.newLayout": "Haavo hafa",
+    "lib.arcade.note.sokoban": "Ampifindrao ny mpilalao amin'ny bokotra zana-tsipìka/WASD, ny bokotra eto ambany, na amin'ny fisintonana. Atosiky ny boaty tsirairay mankany amin'ny efitra kendrena (ireo teboka boribory). Boaty iray ihany no azo atosika indray mandeha ary tsy azo tarihina, ka ialao ny manosika boaty mankany amin'ny too. Ampiasao ny Foano mba hanitsiana lahatra diso.",
+    "lib.arcade.boxesDone": "Boaty eo amin'ny kendrena: {n}/{t}",
+    "lib.arcade.note.block10": "Safidio ny sombina iray eo ambany, avy eo tsindrio ny tablo mba hametrahana azy (tsy azo atodika ny sombina). Fenoy tanteraka ny andalana na tsanganana mba hamafana azy sy hahazoana isa fanampiny; ny famafana tsipika maromaro miaraka dia manome loka lehibe. Tratrarao ny isa kendrena mba handalo ny haavo; raha tsy misy sombina sisa mety ho tafiditra intsony dia resy ianao.",
+    "lib.arcade.note.dots": "Mifandimby mampifandray teboka roa mifanakaiky amin'ny tsipika. Ny mihaza ny andaniny fahefatra amin'ny kare dia mahazo azy (amin'ny lokony) ary miloka indray. Rehefa voasoratra ny tsipika rehetra dia mandresy ny mpilalao manana kare betsaka kokoa. Ialao ny manoratra ny andaniny fahatelo amin'ny kare, raha tsy izany dia horaisin'ny mpifanandrina aminao izy.",
+    "lib.arcade.note.ultimate": "Ny tabilao dia vita amin'ny tabilao tic-tac-toe kely 9. Ianao no milalao X ary ianao no voalohany. Ny efitra safidinao ao anaty tabilao kely dia mamaritra ny tabilao kely tsy maintsy lalaovin'ny mpifanandrina aminao manaraka (voasongadina izy); raha vita ilay tabilao dia afaka milalao na aiza na aiza izy. Resaho ny tabilao kely mba hahazoana azy; raisonao ny tabilao kely telo amin'ny andalana, tsanganana na diagonaly mba handresena ny lalao.",
+    "lib.arcade.note.lights-out": "Ny fanindriana efitra iray dia manova io efitra io sy ny mpifanolobodirery 4 (mirehitra/maty). Vonoy ny jiro rehetra. Ampiasao ny Soso-kevitra mba hahitana efitra mendrika tsindriana.",
+    "lib.arcade.note.fifteen": "Hosino ny takelaka misy laharana ao amin'ny banga mba hampifandimbiasana azy 1, 2, 3… ary ny banga any amin'ny zoro ambany havanana. Tsindrio ny takelaka eo amin'ny andalana na tsanganana mitovy amin'ny banga mba hisintonana ny tsipika iray manontolo; mandeha koa ny bokotra zana-tsipìka.",
+    "lib.arcade.note.flood-it": "Misafidiana loko hamenoana ny faritra rehetra anananao any amin'ny zoro ambony havia; mitelina ny efitra mifanolobodirery manana io loko io izy. Ataovy loko iray ny tabilao manontolo ao anatin'ny isan'ny dingana navela.",
+    "lib.arcade.note.mastermind": "Manafina andalana loko ny solosaina. Misafidiana loko isaky ny toerana, avy eo tsindrio ny Tsakao. Fatotra mainty = loko marina eo amin'ny toerana marina; fatotra fotsy = loko marina eo amin'ny toerana diso. Vahao ny kaody alohan'ny hahalanian'ny tsakanao.",
+    "lib.arcade.note.hanoi": "Afindrao any amin'ny andry farany ny kapila rehetra. Ny kapila ambony indrindra amin'ny andry iray ihany no afindrao isaky ny mandeha, ary aza apetraka mihitsy ny kapila lehibe eo ambonin'ny kely. Tsindrio ny andry fiaviana, avy eo ny andry kendrena.",
+    "lib.arcade.note.pipes": "Tsindrio ny takelaka mba hanodinana ny fantsona 90°. Ampifandraiso ny fantsona rehetra ho tamba-jotra iray tsy misy faran'ny misokatra (mena ny faran'ny misokatra)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Lalao nentim-paharazana vietnamiana fanafihana vato: afafy ny vato ary alaivo ny Mandarin miady amin'ny solosaina; ambaratonga 10 manomboka amin'ny mora ka hatrany amin'ny sarotra."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Vonoy ny jiro rehetra: ny fanindriana tsirairay dia manova io efitra io sy ny mpifanolobodirery 4; haavo 10 miaraka amin'ny tabilao mitombo sy bokotra soso-kevitra."
+    },
+    "fifteen": {
+      "name": "Tantara 15 (Tantara Misintona)",
+      "desc": "Hosino ny takelaka misy laharana mba hanarahana ny filaharana; haavo 10 manomboka amin'ny 3x3 hatramin'ny 5x5, lalaovina amin'ny totozy, tsindry tanana na bokotra zana-tsipìka."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Vonosy ny tabilao manomboka amin'ny zoro mandra-pahatonga ho loko iray ao anatin'ny isan'ny dingana voafetra; haavo 10 miaraka amin'ny tabilao lehibe kokoa sy loko maro kokoa."
+    },
+    "mastermind": {
+      "name": "Mastermind (Mpamaha Kaody)",
+      "desc": "Vahao ny kaody loko miafina amin'ny alalan'ny soso-kevitry ny fatotra mainty sy fotsy; haavo 10 miaraka amin'ny kaody lava kokoa sy loko maro kokoa."
+    },
+    "hanoi": {
+      "name": "Tilikambo Hanoi",
+      "desc": "Afindrao ny kapila avy amin'ny andry voalohany mankany amin'ny farany tsy mametraka kapila lehibe eo ambonin'ny kely; haavo 10 manomboka amin'ny kapila 3 hatramin'ny kapila 12 amin'ny andry 4."
+    },
+    "pipes": {
+      "name": "Fampifandraisana Fantsona",
+      "desc": "Odino ny sombin-tsofina mba hamoronana tamba-jotra iray tsy misy faran'ny misokatra; haavo 10 miaraka amin'ny tabilao mitombo."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Fenoy ny efitra amin'ny alalan'ny soso-kevitra isa eo amin'ny andalana sy tsanganana mba hanehoana sary; haavo 10 manomboka amin'ny 5x5 hatramin'ny 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Mpanosika Boaty)",
+      "desc": "Atosiky ny boaty mankany amin'ny efitra kendrena ao amin'ny trano fitehirizana; azo vahana ny haavo rehetra, miaraka amin'ny haavo 10 misy boaty maro kokoa sy trano fitehirizana lehibe kokoa."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Apetaho ny sombina eo amin'ny tabilao 10x10 ary fenoy ny andalana na tsanganana mba hamafana azy sy hahatratra ny isa kendrena; haavo 10."
+    },
+    "dots-boxes": {
+      "name": "Teboka sy Boaty",
+      "desc": "Mifandimby mampifandray teboka mba hahazoana kare ary resao ny solosaina amin'ny haavo 10 manomboka amin'ny mora hatramin'ny sarotra."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Faratampony",
+      "desc": "Tic-tac-toe amin'ny tabilao kely 9: ny efitra safidinao no mamaritra izay hilalaovan'ny mpifanandrina aminao; hanohitra ny solosaina amin'ny haavo 10."
     }
   },
   "s": {

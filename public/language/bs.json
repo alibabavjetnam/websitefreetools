@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Crvena",
     "lib.arcade.cGreen": "Zelena",
     "lib.arcade.cYellow": "Žuta",
-    "lib.arcade.cBlue": "Plava"
+    "lib.arcade.cBlue": "Plava",
+    "lib.arcade.guess": "Pogodi",
+    "lib.arcade.clearRow": "Očisti red",
+    "lib.arcade.area": "Površina: {n}/{t}",
+    "lib.arcade.triesLeft": "Preostalo pokušaja: {n}",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Ne možeš staviti veći disk na manji.",
+    "lib.arcade.outOfMoves": "Nema više poteza!",
+    "lib.arcade.fillAll": "Odaberi boju za svaku poziciju.",
+    "lib.arcade.modeFill": "Popuni",
+    "lib.arcade.modeMark": "Označi ✕",
+    "lib.arcade.clearAll": "Očisti sve",
+    "lib.arcade.note.nonogram": "Brojevi na početku svakog reda i kolone redom pokazuju dužine nizova uzastopnih popunjenih polja u toj liniji, s najmanje jednim praznim poljem između nizova. Klikni ili povuci da popuniš polja; prebaci na „Označi ✕” za bilježenje polja za koja si siguran da su prazna. Ispuni sve tragove da pobijediš.",
+    "lib.arcade.size": "Mreža {n}×{n}",
+    "lib.arcade.restartLevel": "Ponovo pokreni nivo",
+    "lib.arcade.newLayout": "Drugi nivo",
+    "lib.arcade.note.sokoban": "Pomjeraj igrača strelicama/WASD-om, dugmadima ispod ili prevlačenjem prsta. Gurni sve kutije na ciljna polja (okrugle tačkice). Možeš gurati samo jednu kutiju odjednom i ne možeš vući, zato izbjegavaj guranje kutija u uglove. Koristi Poništi da ispraviš loš potez.",
+    "lib.arcade.boxesDone": "Kutije na cilju: {n}/{t}",
+    "lib.arcade.note.block10": "Odaberi dio pri dnu pa klikni na mrežu da ga postaviš (dijelovi se ne mogu rotirati). Popuni cijeli red ili kolonu da je ukloniš i osvojiš dodatne bodove; uklanjanje više linija odjednom donosi veliki bonus. Dostigni ciljni rezultat da prođeš nivo; ako nijedan od preostalih dijelova ne stane, gubiš.",
+    "lib.arcade.note.dots": "Naizmjenično spajajte dvije susjedne tačke linijom. Ko povuče četvrtu stranu kvadrata, osvaja ga (svojom bojom) i igra ponovo. Kad su sve linije povučene, pobjeđuje igrač s više kvadrata. Izbjegavaj povući treću stranu kvadrata ili će ga protivnik uzeti.",
+    "lib.arcade.note.ultimate": "Tabla se sastoji od 9 malih tabli za iks-oks. Ti igraš X i ti počinješ. Polje koje izabereš unutar male table određuje na kojoj maloj tabli protivnik mora igrati sljedeće (istaknuta je); ako je ta tabla već završena, smije igrati bilo gdje. Pobijedi na maloj tabli da je osvojiš; osvoji tri male table u redu, koloni ili dijagonali da pobijediš u igri.",
+    "lib.arcade.note.lights-out": "Klik na polje mijenja to polje i njegova 4 susjeda (uključeno/isključeno). Ugasi sva svjetla. Koristi Savjet da vidiš polje vrijedno pritiska.",
+    "lib.arcade.note.fifteen": "Pomjeraj numerisane pločice u prazno mjesto da ih poredaš redom 1, 2, 3… s praznim mjestom u donjem desnom uglu. Klikni pločicu u istom redu ili koloni kao prazno mjesto da pomjeriš cijeli niz; rade i strelice.",
+    "lib.arcade.note.flood-it": "Odaberi boju kojom ćeš popuniti cijelo područje koje posjeduješ u gornjem lijevom uglu; ono guta susjedna polja te boje. Cijelu tablu učini jednobojnom u dozvoljenom broju poteza.",
+    "lib.arcade.note.mastermind": "Računar krije niz boja. Odaberi boju za svaku poziciju pa pritisni Pogodi. Crni klin = prava boja na pravom mjestu; bijeli klin = prava boja na pogrešnom mjestu. Razbij šifru prije nego ti ponestane pokušaja.",
+    "lib.arcade.note.hanoi": "Premjesti sve diskove na posljednji štap. Svaki put pomjeri samo gornji disk štapa i nikad ne stavljaj veći disk na manji. Klikni izvorni štap, pa ciljni štap.",
+    "lib.arcade.note.pipes": "Klikni pločicu da zarotiraš cijev za 90°. Spoji sve cijevi u jednu mrežu bez otvorenih krajeva (otvoreni krajevi su prikazani crveno)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Tradicionalna vijetnamska igra sijanja kamenčića: sijte kamenčiće i uzimajte mandarine protiv računara; 10 nivoa od lakih do teških."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Ugasi sva svjetla: svaki pritisak preokreće polje i njegova 4 susjeda; 10 nivoa s rastućim tablama i dugmetom za savjet."
+    },
+    "fifteen": {
+      "name": "Igra 15 (klizna slagalica)",
+      "desc": "Poredaj numerisane pločice redom; 10 nivoa od 3x3 do 5x5, igra se mišem, dodirom ili strelicama."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Plavi tablu iz ugla dok ne postane jedne boje u ograničenom broju poteza; 10 nivoa s većim tablama i više boja."
+    },
+    "mastermind": {
+      "name": "Mastermind (razbijač šifre)",
+      "desc": "Razbij skrivenu šifru boja uz tragove s crnim i bijelim klinovima; 10 nivoa s dužim šiframa i više boja."
+    },
+    "hanoi": {
+      "name": "Hanojske kule",
+      "desc": "Premjesti diskove s prvog na posljednji štap bez stavljanja većeg diska na manji; 10 nivoa od 3 diska do 12 diskova na 4 štapa."
+    },
+    "pipes": {
+      "name": "Spajanje cijevi",
+      "desc": "Rotiraj dijelove cijevi da ih spojiš u jednu mrežu bez otvorenih krajeva; 10 nivoa s rastućim tablama."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Popunjavaj polja prema brojčanim tragovima uz redove i kolone da otkriješ sliku; 10 nivoa od 5x5 do 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (guranje kutija)",
+      "desc": "Gurni kutije na ciljna polja u skladištu; svaki nivo je rješiv, 10 nivoa s više kutija i većim skladištima."
+    },
+    "block-10x10": {
+      "name": "Slagalica blokova 10x10",
+      "desc": "Postavljaj dijelove na mrežu 10x10 i popunjavaj redove ili kolone da ih ukloniš i dostigneš ciljni rezultat; 10 nivoa."
+    },
+    "dots-boxes": {
+      "name": "Tačkice i kvadrati",
+      "desc": "Naizmjenično spajaj tačkice da osvojiš kvadrate i pobijedi računar kroz 10 nivoa od lakih do teških."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate iks-oks",
+      "desc": "Iks-oks na 9 malih tabli: polje koje izabereš određuje gdje protivnik mora igrati; protiv računara kroz 10 nivoa."
     }
   },
   "s": {

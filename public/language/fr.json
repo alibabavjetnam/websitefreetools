@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rouge",
     "lib.arcade.cGreen": "Vert",
     "lib.arcade.cYellow": "Jaune",
-    "lib.arcade.cBlue": "Bleu"
+    "lib.arcade.cBlue": "Bleu",
+    "lib.arcade.guess": "Deviner",
+    "lib.arcade.clearRow": "Effacer la ligne",
+    "lib.arcade.area": "Zone : {n}/{t}",
+    "lib.arcade.triesLeft": "{n} essais restants",
+    "lib.arcade.minMoves": "Minimum : {n}",
+    "lib.arcade.hnBad": "Impossible de poser un disque plus grand sur un plus petit.",
+    "lib.arcade.outOfMoves": "Plus de coups !",
+    "lib.arcade.fillAll": "Choisissez une couleur pour chaque position.",
+    "lib.arcade.modeFill": "Remplir",
+    "lib.arcade.modeMark": "Marquer ✕",
+    "lib.arcade.clearAll": "Tout effacer",
+    "lib.arcade.note.nonogram": "Les nombres au début de chaque ligne et colonne indiquent, dans l’ordre, la longueur des séries de cases pleines consécutives de cette ligne, séparées par au moins une case vide. Cliquez ou faites glisser pour remplir ; passez sur « Marquer ✕ » pour noter les cases que vous savez vides. Respectez tous les indices pour gagner.",
+    "lib.arcade.size": "Grille {n}×{n}",
+    "lib.arcade.restartLevel": "Recommencer le niveau",
+    "lib.arcade.newLayout": "Autre niveau",
+    "lib.arcade.note.sokoban": "Déplacez le joueur avec les flèches/WASD, les boutons ci-dessous ou en balayant. Poussez chaque caisse sur une case cible (les points ronds). Vous ne pouvez pousser qu’une caisse à la fois et jamais tirer : évitez de coincer les caisses dans un coin. Utilisez Annuler pour corriger un mauvais coup.",
+    "lib.arcade.boxesDone": "Caisses en place : {n}/{t}",
+    "lib.arcade.note.block10": "Choisissez une pièce en bas, puis cliquez sur la grille pour la poser (les pièces ne peuvent pas pivoter). Remplissez une ligne ou une colonne entière pour l’effacer et marquer des points en plus ; effacer plusieurs lignes à la fois donne un gros bonus. Atteignez le score cible pour réussir le niveau ; si aucune pièce restante ne tient, vous perdez.",
+    "lib.arcade.note.dots": "À tour de rôle, reliez deux points voisins par un trait. Celui qui trace le quatrième côté d’un carré s’en empare (à sa couleur) et rejoue. Quand tous les traits sont tracés, le joueur qui a le plus de carrés gagne. Évitez de tracer le troisième côté d’un carré, sinon votre adversaire le prendra.",
+    "lib.arcade.note.ultimate": "Le plateau est composé de 9 petits plateaux de morpion. Vous jouez X et commencez. La case que vous choisissez dans un petit plateau détermine le petit plateau où votre adversaire doit jouer ensuite (il est surligné) ; si celui-ci est déjà terminé, il peut jouer n’importe où. Gagnez un petit plateau pour le remporter ; remportez trois petits plateaux en ligne, colonne ou diagonale pour gagner la partie.",
+    "lib.arcade.note.lights-out": "Cliquer sur une case l’inverse, ainsi que ses 4 voisines (allumée/éteinte). Éteignez toutes les lumières. Utilisez l’Indice pour voir une case à presser.",
+    "lib.arcade.note.fifteen": "Faites glisser les tuiles numérotées vers le trou pour les ranger dans l’ordre 1, 2, 3… avec le trou dans le coin en bas à droite. Cliquez sur une tuile de la même ligne ou colonne que le trou pour faire glisser toute la rangée ; les flèches du clavier fonctionnent aussi.",
+    "lib.arcade.note.flood-it": "Choisissez une couleur pour remplir toute la zone que vous possédez dans le coin en haut à gauche ; elle absorbe les cases voisines de cette couleur. Rendez tout le plateau d’une seule couleur dans le nombre de coups autorisé.",
+    "lib.arcade.note.mastermind": "L’ordinateur cache une rangée de couleurs. Choisissez une couleur pour chaque position, puis appuyez sur Deviner. Un pion noir = bonne couleur au bon endroit ; un pion blanc = bonne couleur au mauvais endroit. Trouvez le code avant d’épuiser vos essais.",
+    "lib.arcade.note.hanoi": "Déplacez tous les disques sur le dernier piquet. Ne déplacez que le disque du dessus d’un piquet à la fois, et ne posez jamais un disque plus grand sur un plus petit. Cliquez sur le piquet de départ, puis sur le piquet d’arrivée.",
+    "lib.arcade.note.pipes": "Cliquez sur une tuile pour faire pivoter le tuyau de 90°. Reliez tous les tuyaux en un seul réseau sans extrémité ouverte (les extrémités ouvertes sont en rouge)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Un jeu de semis traditionnel vietnamien : semez les pierres et capturez les Mandarins face à l'ordinateur ; 10 niveaux de facile à difficile."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Éteignez toutes les lumières : chaque pression inverse la case et ses 4 voisines ; 10 niveaux avec des grilles de plus en plus grandes et un bouton d’indice."
+    },
+    "fifteen": {
+      "name": "Taquin (jeu du 15)",
+      "desc": "Faites glisser les tuiles numérotées pour les remettre dans l’ordre ; 10 niveaux de 3x3 à 5x5, à la souris, au toucher ou aux flèches."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Inondez la grille depuis le coin jusqu’à ce qu’elle soit d’une seule couleur en un nombre de coups limité ; 10 niveaux avec des grilles plus grandes et plus de couleurs."
+    },
+    "mastermind": {
+      "name": "Mastermind (casse-code)",
+      "desc": "Découvrez le code couleur caché grâce aux pions noirs et blancs ; 10 niveaux avec des codes plus longs et plus de couleurs."
+    },
+    "hanoi": {
+      "name": "Tours de Hanoï",
+      "desc": "Déplacez les disques du premier au dernier piquet sans poser un grand disque sur un petit ; 10 niveaux, de 3 disques à 12 disques sur 4 piquets."
+    },
+    "pipes": {
+      "name": "Connexion de tuyaux",
+      "desc": "Faites pivoter les tuyaux pour les relier en un seul réseau sans extrémité ouverte ; 10 niveaux avec des grilles de plus en plus grandes."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Remplissez les cases grâce aux indices numériques des lignes et colonnes pour révéler une image ; 10 niveaux de 5x5 à 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (pousse-caisses)",
+      "desc": "Poussez les caisses sur les cases cibles dans un entrepôt ; chaque niveau est soluble, avec 10 niveaux de plus en plus de caisses et d’entrepôts plus grands."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Placez des pièces sur une grille 10x10 et remplissez des lignes ou colonnes pour les effacer et atteindre le score cible ; 10 niveaux."
+    },
+    "dots-boxes": {
+      "name": "Jeu des points et des carrés",
+      "desc": "À tour de rôle, reliez des points pour capturer des carrés et battez l’ordinateur sur 10 niveaux, du facile au difficile."
+    },
+    "ultimate-tictactoe": {
+      "name": "Morpion ultime",
+      "desc": "Morpion sur 9 petites grilles : la case que vous choisissez détermine où votre adversaire doit jouer ; contre l’ordinateur sur 10 niveaux."
     }
   },
   "s": {

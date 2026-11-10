@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Merah",
     "lib.arcade.cGreen": "Hijau",
     "lib.arcade.cYellow": "Kuning",
-    "lib.arcade.cBlue": "Biru"
+    "lib.arcade.cBlue": "Biru",
+    "lib.arcade.guess": "Tebak",
+    "lib.arcade.clearRow": "Hapus baris",
+    "lib.arcade.area": "Area: {n}/{t}",
+    "lib.arcade.triesLeft": "Sisa {n} tebakan",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "Cakram yang lebih besar tidak boleh diletakkan di atas yang lebih kecil.",
+    "lib.arcade.outOfMoves": "Langkah habis!",
+    "lib.arcade.fillAll": "Pilih warna untuk setiap posisi.",
+    "lib.arcade.modeFill": "Isi",
+    "lib.arcade.modeMark": "Tandai ✕",
+    "lib.arcade.clearAll": "Hapus semua",
+    "lib.arcade.note.nonogram": "Angka di awal setiap baris dan kolom menunjukkan panjang deretan kotak terisi yang berurutan pada garis itu, sesuai urutan, dengan minimal satu kotak kosong di antara deretan. Klik atau seret untuk mengisi kotak; beralihlah ke “Tandai ✕” untuk mencatat kotak yang pasti kosong. Penuhi semua petunjuk untuk menang.",
+    "lib.arcade.size": "Kisi {n}×{n}",
+    "lib.arcade.restartLevel": "Ulangi level",
+    "lib.arcade.newLayout": "Level lain",
+    "lib.arcade.note.sokoban": "Gerakkan pemain dengan tombol panah/WASD, tombol di bawah, atau dengan menggeser. Dorong setiap kotak ke petak tujuan (titik bulat). Kamu hanya bisa mendorong satu kotak sekaligus dan tidak bisa menarik, jadi hindari mendorong kotak ke sudut. Gunakan Urungkan untuk memperbaiki langkah yang salah.",
+    "lib.arcade.boxesDone": "Kotak di tujuan: {n}/{t}",
+    "lib.arcade.note.block10": "Pilih satu bidak di bawah, lalu klik kisi untuk menempatkannya (bidak tidak bisa diputar). Isi satu baris atau kolom penuh untuk menghapusnya dan dapatkan poin tambahan; menghapus beberapa garis sekaligus memberi bonus besar. Capai skor target untuk menyelesaikan level; jika tidak ada bidak tersisa yang muat, kamu kalah.",
+    "lib.arcade.note.dots": "Bergiliran, hubungkan dua titik bertetangga dengan garis. Siapa yang menggambar sisi keempat sebuah kotak akan mengklaimnya (dengan warnanya) dan main lagi. Setelah semua garis tergambar, pemain dengan kotak terbanyak menang. Hindari menggambar sisi ketiga sebuah kotak, atau lawan akan mengambilnya.",
+    "lib.arcade.note.ultimate": "Papan terdiri dari 9 papan tic-tac-toe kecil. Kamu bermain X dan jalan lebih dulu. Petak yang kamu pilih di dalam papan kecil menentukan papan kecil mana yang harus dimainkan lawan berikutnya (disorot); jika papan itu sudah selesai, lawan boleh bermain di mana saja. Menangkan papan kecil untuk mengklaimnya; klaim tiga papan kecil dalam satu baris, kolom, atau diagonal untuk memenangkan permainan.",
+    "lib.arcade.note.lights-out": "Mengeklik sebuah petak akan membalik petak itu dan 4 tetangganya (nyala/mati). Matikan semua lampu. Gunakan Petunjuk untuk melihat petak yang layak ditekan.",
+    "lib.arcade.note.fifteen": "Geser ubin bernomor ke celah untuk mengurutkannya 1, 2, 3… dengan celah di pojok kanan bawah. Klik ubin di baris atau kolom yang sama dengan celah untuk menggeser seluruh barisnya; tombol panah juga bisa dipakai.",
+    "lib.arcade.note.flood-it": "Pilih warna untuk mengisi seluruh area milikmu di pojok kiri atas; area itu akan menelan petak tetangga yang berwarna sama. Jadikan seluruh papan satu warna dalam jumlah langkah yang diizinkan.",
+    "lib.arcade.note.mastermind": "Komputer menyembunyikan satu baris warna. Pilih warna untuk setiap posisi, lalu tekan Tebak. Pasak hitam = warna benar di tempat benar; pasak putih = warna benar di tempat salah. Pecahkan kodenya sebelum tebakanmu habis.",
+    "lib.arcade.note.hanoi": "Pindahkan semua cakram ke tiang terakhir. Pindahkan hanya cakram teratas dari sebuah tiang setiap kali, dan jangan pernah menaruh cakram besar di atas yang kecil. Klik tiang asal, lalu tiang tujuan.",
+    "lib.arcade.note.pipes": "Klik ubin untuk memutar pipa 90°. Sambungkan semua pipa menjadi satu jaringan tanpa ujung terbuka (ujung terbuka berwarna merah)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Permainan tabur batu tradisional Vietnam: sebar batu dan tangkap Mandarin melawan komputer; 10 level dari mudah hingga sulit."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Matikan semua lampu: setiap tekanan membalik petak itu dan 4 tetangganya; 10 level dengan papan yang makin besar dan tombol petunjuk."
+    },
+    "fifteen": {
+      "name": "Puzzle 15 (Puzzle Geser)",
+      "desc": "Geser ubin bernomor hingga berurutan; 10 level dari 3x3 sampai 5x5, dimainkan dengan mouse, sentuhan, atau tombol panah."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Banjiri papan dari sudut sampai satu warna dalam jumlah langkah terbatas; 10 level dengan papan lebih besar dan lebih banyak warna."
+    },
+    "mastermind": {
+      "name": "Mastermind (Pemecah Kode)",
+      "desc": "Pecahkan kode warna tersembunyi dengan petunjuk pasak hitam dan putih; 10 level dengan kode lebih panjang dan lebih banyak warna."
+    },
+    "hanoi": {
+      "name": "Menara Hanoi",
+      "desc": "Pindahkan cakram dari tiang pertama ke tiang terakhir tanpa menaruh cakram besar di atas yang kecil; 10 level dari 3 cakram hingga 12 cakram pada 4 tiang."
+    },
+    "pipes": {
+      "name": "Sambung Pipa",
+      "desc": "Putar potongan pipa untuk menyambungkannya menjadi satu jaringan tanpa ujung terbuka; 10 level dengan papan yang makin besar."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Isi kotak dengan petunjuk angka di baris dan kolom untuk menampilkan gambar; 10 level dari 5x5 sampai 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Pendorong Kotak)",
+      "desc": "Dorong kotak ke petak tujuan di sebuah gudang; setiap level bisa diselesaikan, dengan 10 level berisi lebih banyak kotak dan gudang lebih besar."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Letakkan bidak di kisi 10x10 dan isi baris atau kolom untuk menghapusnya demi mencapai skor target; 10 level."
+    },
+    "dots-boxes": {
+      "name": "Titik dan Kotak",
+      "desc": "Bergiliran hubungkan titik untuk merebut kotak dan kalahkan komputer dalam 10 level dari mudah hingga sulit."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tic-Tac-Toe Ultimate",
+      "desc": "Tic-tac-toe di 9 papan kecil: petak yang kamu pilih menentukan tempat lawan harus bermain; lawan komputer dalam 10 level."
     }
   },
   "s": {

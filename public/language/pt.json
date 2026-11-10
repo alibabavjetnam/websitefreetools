@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Vermelho",
     "lib.arcade.cGreen": "Verde",
     "lib.arcade.cYellow": "Amarelo",
-    "lib.arcade.cBlue": "Azul"
+    "lib.arcade.cBlue": "Azul",
+    "lib.arcade.guess": "Palpitar",
+    "lib.arcade.clearRow": "Limpar linha",
+    "lib.arcade.area": "Área: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} tentativas restantes",
+    "lib.arcade.minMoves": "Mínimo: {n}",
+    "lib.arcade.hnBad": "Você não pode colocar um disco maior sobre um menor.",
+    "lib.arcade.outOfMoves": "Sem jogadas!",
+    "lib.arcade.fillAll": "Escolha uma cor para cada posição.",
+    "lib.arcade.modeFill": "Preencher",
+    "lib.arcade.modeMark": "Marcar ✕",
+    "lib.arcade.clearAll": "Limpar tudo",
+    "lib.arcade.note.nonogram": "Os números no início de cada linha e coluna indicam o tamanho dos blocos de células preenchidas consecutivas nessa linha, em ordem, com pelo menos uma célula vazia entre os blocos. Clique ou arraste para preencher; mude para “Marcar ✕” para anotar as células que com certeza estão vazias. Satisfaça todas as dicas para vencer.",
+    "lib.arcade.size": "Grade {n}×{n}",
+    "lib.arcade.restartLevel": "Reiniciar fase",
+    "lib.arcade.newLayout": "Outra fase",
+    "lib.arcade.note.sokoban": "Mova o jogador com as setas/WASD, com os botões abaixo ou deslizando o dedo. Empurre todas as caixas para os locais de destino (os pontos redondos). Você só pode empurrar uma caixa por vez e não pode puxar, então evite empurrar caixas para os cantos. Use Desfazer para corrigir uma jogada ruim.",
+    "lib.arcade.boxesDone": "Caixas nos destinos: {n}/{t}",
+    "lib.arcade.note.block10": "Escolha uma peça embaixo e clique na grade para colocá-la (as peças não podem girar). Complete uma linha ou coluna inteira para eliminá-la e ganhar pontos extras; eliminar várias linhas de uma vez dá um grande bônus. Atinja a pontuação alvo para passar de fase; se nenhuma das peças restantes couber, você perde.",
+    "lib.arcade.note.dots": "Em turnos, ligue dois pontos vizinhos com uma linha. Quem desenhar o quarto lado de um quadrado fica com ele (na sua cor) e joga de novo. Quando todas as linhas forem traçadas, vence quem tiver mais quadrados. Evite desenhar o terceiro lado de um quadrado, ou o adversário o pegará.",
+    "lib.arcade.note.ultimate": "O tabuleiro é formado por 9 tabuleiros pequenos de jogo da velha. Você joga com X e começa. A casa que você escolhe dentro de um tabuleiro pequeno define em qual tabuleiro pequeno o adversário deve jogar em seguida (ele fica destacado); se esse tabuleiro já estiver encerrado, ele pode jogar em qualquer um. Vença um tabuleiro pequeno para conquistá-lo; conquiste três tabuleiros em linha, coluna ou diagonal para ganhar o jogo.",
+    "lib.arcade.note.lights-out": "Clicar em uma célula alterna essa célula e suas 4 vizinhas (ligada/desligada). Apague todas as luzes. Use a Dica para ver uma célula que vale a pena apertar.",
+    "lib.arcade.note.fifteen": "Deslize as peças numeradas para o espaço vazio e coloque-as em ordem 1, 2, 3… com o espaço no canto inferior direito. Clique em uma peça na mesma linha ou coluna do espaço para deslizar a linha toda; as setas do teclado também funcionam.",
+    "lib.arcade.note.flood-it": "Escolha uma cor para preencher toda a área que você controla no canto superior esquerdo; ela absorve as células vizinhas dessa cor. Deixe o tabuleiro inteiro de uma só cor dentro do número de jogadas permitido.",
+    "lib.arcade.note.mastermind": "O computador esconde uma sequência de cores. Escolha uma cor para cada posição e pressione Palpitar. Pino preto = cor certa no lugar certo; pino branco = cor certa no lugar errado. Descubra o código antes que as tentativas acabem.",
+    "lib.arcade.note.hanoi": "Mova todos os discos para o último pino. Mova apenas o disco do topo de um pino por vez e nunca coloque um disco maior sobre um menor. Clique no pino de origem e depois no de destino.",
+    "lib.arcade.note.pipes": "Clique em uma peça para girar o cano 90°. Conecte todos os canos em uma só rede sem pontas abertas (as pontas abertas aparecem em vermelho)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Um jogo tradicional vietnamita de semeadura: semeie pedras e capture os Mandarins contra o computador; 10 níveis, do fácil ao difícil."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Apague todas as luzes: cada toque inverte a célula e suas 4 vizinhas; 10 fases com tabuleiros cada vez maiores e botão de dica."
+    },
+    "fifteen": {
+      "name": "Jogo dos 15 (quebra-cabeça deslizante)",
+      "desc": "Deslize as peças numeradas até colocá-las em ordem; 10 fases de 3x3 a 5x5, com mouse, toque ou setas do teclado."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Inunde o tabuleiro a partir do canto até que tenha uma só cor, dentro de um número limitado de jogadas; 10 fases com tabuleiros maiores e mais cores."
+    },
+    "mastermind": {
+      "name": "Mastermind (quebra-código)",
+      "desc": "Descubra o código de cores escondido usando as dicas dos pinos pretos e brancos; 10 fases com códigos mais longos e mais cores."
+    },
+    "hanoi": {
+      "name": "Torre de Hanói",
+      "desc": "Mova os discos do primeiro pino para o último sem colocar um disco maior sobre um menor; 10 fases, de 3 discos até 12 discos com 4 pinos."
+    },
+    "pipes": {
+      "name": "Conectar canos",
+      "desc": "Gire as peças de cano para uni-las em uma só rede sem pontas abertas; 10 fases com tabuleiros cada vez maiores."
+    },
+    "nonogram": {
+      "name": "Nonograma (Picross)",
+      "desc": "Preencha as células com as dicas numéricas das linhas e colunas para revelar uma imagem; 10 fases de 5x5 a 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (empurrar caixas)",
+      "desc": "Empurre as caixas até os locais de destino em um armazém; todas as fases têm solução, com 10 fases de mais caixas e armazéns maiores."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Coloque peças em uma grade de 10x10 e complete linhas ou colunas para eliminá-las e atingir a pontuação alvo; 10 fases."
+    },
+    "dots-boxes": {
+      "name": "Ligue os Pontos (Pontos e Caixas)",
+      "desc": "Em turnos, ligue pontos para conquistar quadrados e vença o computador em 10 fases, do fácil ao difícil."
+    },
+    "ultimate-tictactoe": {
+      "name": "Jogo da Velha Definitivo",
+      "desc": "Jogo da velha em 9 tabuleiros pequenos: a casa que você escolhe define onde o adversário deve jogar; contra o computador em 10 fases."
     }
   },
   "s": {

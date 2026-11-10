@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Rojo",
     "lib.arcade.cGreen": "Verde",
     "lib.arcade.cYellow": "Amarillo",
-    "lib.arcade.cBlue": "Azul"
+    "lib.arcade.cBlue": "Azul",
+    "lib.arcade.guess": "Adivinar",
+    "lib.arcade.clearRow": "Borrar fila",
+    "lib.arcade.area": "Área: {n}/{t}",
+    "lib.arcade.triesLeft": "Quedan {n} intentos",
+    "lib.arcade.minMoves": "Mínimo: {n}",
+    "lib.arcade.hnBad": "No puedes colocar un disco grande sobre uno más pequeño.",
+    "lib.arcade.outOfMoves": "¡Sin movimientos!",
+    "lib.arcade.fillAll": "Elige un color para cada posición.",
+    "lib.arcade.modeFill": "Rellenar",
+    "lib.arcade.modeMark": "Marcar ✕",
+    "lib.arcade.clearAll": "Borrar todo",
+    "lib.arcade.note.nonogram": "Los números al inicio de cada fila y columna indican la longitud de los bloques de casillas rellenas consecutivas de esa línea, en orden, con al menos una casilla vacía entre bloques. Haz clic o arrastra para rellenar; cambia a «Marcar ✕» para anotar las casillas que seguro están vacías. Cumple todas las pistas para ganar.",
+    "lib.arcade.size": "Cuadrícula de {n}×{n}",
+    "lib.arcade.restartLevel": "Reiniciar nivel",
+    "lib.arcade.newLayout": "Otro nivel",
+    "lib.arcade.note.sokoban": "Mueve al jugador con las flechas/WASD, los botones de abajo o deslizando. Empuja todas las cajas a las casillas de destino (los puntos redondos). Solo puedes empujar una caja a la vez y no puedes tirar de ellas, así que evita empujarlas a las esquinas. Usa Deshacer para corregir un mal movimiento.",
+    "lib.arcade.boxesDone": "Cajas en su sitio: {n}/{t}",
+    "lib.arcade.note.block10": "Elige una pieza abajo y haz clic en la cuadrícula para colocarla (las piezas no se pueden girar). Completa una fila o columna entera para eliminarla y sumar puntos extra; eliminar varias líneas a la vez da un gran bono. Alcanza la puntuación objetivo para superar el nivel; si ninguna de las piezas restantes cabe, pierdes.",
+    "lib.arcade.note.dots": "Por turnos, une dos puntos vecinos con una línea. Quien dibuja el cuarto lado de un cuadrado lo reclama (con su color) y vuelve a jugar. Cuando se han trazado todas las líneas, gana quien tenga más cuadrados. Evita dibujar el tercer lado de un cuadrado o tu rival se lo llevará.",
+    "lib.arcade.note.ultimate": "El tablero se compone de 9 tableros pequeños de tres en raya. Juegas con X y empiezas. La casilla que elijas dentro de un tablero pequeño decide en qué tablero pequeño debe jugar tu rival a continuación (aparece resaltado); si ese tablero ya está terminado, puede jugar en cualquiera. Gana un tablero pequeño para reclamarlo; reclama tres tableros pequeños en fila, columna o diagonal para ganar la partida.",
+    "lib.arcade.note.lights-out": "Al pulsar una casilla se cambian ella y sus 4 vecinas (encendido/apagado). Apaga todas las luces. Usa la Pista para ver una casilla que conviene pulsar.",
+    "lib.arcade.note.fifteen": "Desliza las fichas numeradas hacia el hueco para ordenarlas 1, 2, 3… con el hueco en la esquina inferior derecha. Haz clic en una ficha de la misma fila o columna que el hueco para deslizar toda la línea; también funcionan las flechas.",
+    "lib.arcade.note.flood-it": "Elige un color para rellenar toda la zona que controlas en la esquina superior izquierda; absorbe las casillas vecinas de ese color. Deja todo el tablero de un solo color dentro del número de movimientos permitido.",
+    "lib.arcade.note.mastermind": "El ordenador oculta una fila de colores. Elige un color para cada posición y pulsa Adivinar. Una clavija negra = color correcto en el lugar correcto; una blanca = color correcto en el lugar equivocado. Descifra el código antes de quedarte sin intentos.",
+    "lib.arcade.note.hanoi": "Mueve todos los discos a la última varilla. Mueve solo el disco superior de una varilla cada vez y nunca pongas un disco grande sobre uno pequeño. Haz clic en la varilla de origen y luego en la de destino.",
+    "lib.arcade.note.pipes": "Haz clic en una pieza para girar la tubería 90°. Conecta todas las tuberías en una sola red sin extremos abiertos (los extremos abiertos se ven en rojo)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Un juego tradicional vietnamita de siembra: reparte piedras y captura los Mandarines contra la máquina; 10 niveles de fácil a difícil."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Apaga todas las luces: cada pulsación cambia esa casilla y sus 4 vecinas; 10 niveles con tableros cada vez mayores y botón de pista."
+    },
+    "fifteen": {
+      "name": "Puzle del 15 (puzle deslizante)",
+      "desc": "Desliza las fichas numeradas hasta ordenarlas; 10 niveles de 3x3 a 5x5, con ratón, pantalla táctil o flechas."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Inunda el tablero desde la esquina hasta dejarlo de un solo color en un número limitado de movimientos; 10 niveles con tableros mayores y más colores."
+    },
+    "mastermind": {
+      "name": "Mastermind (rompe códigos)",
+      "desc": "Descifra el código de colores oculto con las pistas de clavijas negras y blancas; 10 niveles con códigos más largos y más colores."
+    },
+    "hanoi": {
+      "name": "Torres de Hanói",
+      "desc": "Mueve los discos de la primera varilla a la última sin poner un disco grande sobre uno pequeño; 10 niveles de 3 discos hasta 12 discos con 4 varillas."
+    },
+    "pipes": {
+      "name": "Conectar tuberías",
+      "desc": "Gira las piezas de tubería para unirlas en una sola red sin extremos abiertos; 10 niveles con tableros cada vez mayores."
+    },
+    "nonogram": {
+      "name": "Nonograma (Picross)",
+      "desc": "Rellena casillas con las pistas numéricas de filas y columnas para revelar una imagen; 10 niveles de 5x5 a 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (empujar cajas)",
+      "desc": "Empuja las cajas hasta las casillas de destino en un almacén; todos los niveles tienen solución, con 10 niveles de más cajas y almacenes mayores."
+    },
+    "block-10x10": {
+      "name": "Puzle de bloques 10x10",
+      "desc": "Coloca piezas en una cuadrícula de 10x10 y completa filas o columnas para eliminarlas y alcanzar la puntuación objetivo; 10 niveles."
+    },
+    "dots-boxes": {
+      "name": "Puntos y cajas",
+      "desc": "Por turnos, une puntos para conseguir cuadrados y vence al ordenador en 10 niveles de fácil a difícil."
+    },
+    "ultimate-tictactoe": {
+      "name": "Tres en raya definitivo",
+      "desc": "Tres en raya en 9 tableros pequeños: la casilla que eliges decide dónde debe jugar tu rival; contra el ordenador en 10 niveles."
     }
   },
   "s": {

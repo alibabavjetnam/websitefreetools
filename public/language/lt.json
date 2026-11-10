@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Raudona",
     "lib.arcade.cGreen": "Žalia",
     "lib.arcade.cYellow": "Geltona",
-    "lib.arcade.cBlue": "Mėlyna"
+    "lib.arcade.cBlue": "Mėlyna",
+    "lib.arcade.guess": "Spėti",
+    "lib.arcade.clearRow": "Išvalyti eilutę",
+    "lib.arcade.area": "Plotas: {n}/{t}",
+    "lib.arcade.triesLeft": "Liko spėjimų: {n}",
+    "lib.arcade.minMoves": "Minimumas: {n}",
+    "lib.arcade.hnBad": "Negalima dėti didesnio disko ant mažesnio.",
+    "lib.arcade.outOfMoves": "Nebeliko ėjimų!",
+    "lib.arcade.fillAll": "Pasirinkite spalvą kiekvienai vietai.",
+    "lib.arcade.modeFill": "Pildyti",
+    "lib.arcade.modeMark": "Žymėti ✕",
+    "lib.arcade.clearAll": "Išvalyti viską",
+    "lib.arcade.note.nonogram": "Skaičiai kiekvienos eilutės ir stulpelio pradžioje iš eilės nurodo tame ruože iš eilės užpildytų langelių grupių ilgius; tarp grupių lieka bent vienas tuščias langelis. Spustelėkite arba tempkite, kad užpildytumėte langelius; perjunkite į „Žymėti ✕“, kad pažymėtumėte langelius, kurie tikrai tušti. Įvykdykite visus užuominų reikalavimus ir laimėkite.",
+    "lib.arcade.size": "{n}×{n} tinklelis",
+    "lib.arcade.restartLevel": "Pradėti lygį iš naujo",
+    "lib.arcade.newLayout": "Kitas lygis",
+    "lib.arcade.note.sokoban": "Judinkite žaidėją rodyklėmis/WASD, mygtukais žemiau arba braukdami. Stumkite kiekvieną dėžę ant tikslo langelio (apvalūs taškai). Galite stumti tik vieną dėžę vienu metu ir negalite traukti, todėl nestumkite dėžių į kampus. Blogam ėjimui ištaisyti naudokite Atšaukti.",
+    "lib.arcade.boxesDone": "Dėžės ant tikslo: {n}/{t}",
+    "lib.arcade.note.block10": "Apačioje pasirinkite figūrą, tada spustelėkite tinklelį, kad ją padėtumėte (figūrų sukti negalima). Užpildykite visą eilutę ar stulpelį, kad jį išvalytumėte ir gautumėte papildomų taškų; išvalius kelias linijas iškart gaunamas didelis priedas. Pasiekite tikslinį rezultatą, kad įveiktumėte lygį; jei netelpa nė viena likusi figūra, pralaimite.",
+    "lib.arcade.note.dots": "Pakaitomis sujunkite du gretimus taškus linija. Kas nubrėžia ketvirtą kvadrato kraštinę, tas jį pasiima (savo spalva) ir ėjimą kartoja. Kai nubrėžtos visos linijos, laimi daugiau kvadratų turintis žaidėjas. Venkite brėžti trečią kvadrato kraštinę, nes priešininkas jį pasiims.",
+    "lib.arcade.note.ultimate": "Lenta sudaryta iš 9 mažų kryžiukų-nuliukų lentų. Jūs žaidžiate X ir einate pirmas. Mažoje lentoje pasirinktas langelis nulemia, kurioje mažoje lentoje turi žaisti priešininkas (ji paryškinta); jei ta lenta jau baigta, jis gali žaisti bet kur. Laimėkite mažą lentą, kad ją užimtumėte; užimkite tris mažas lentas eilėje, stulpelyje ar įstrižainėje ir laimėsite žaidimą.",
+    "lib.arcade.note.lights-out": "Spustelėjus langelį, jis ir jo 4 kaimynai perjungiami (įjungta/išjungta). Išjunkite visas šviesas. Naudokite Užuominą, kad pamatytumėte langelį, kurį verta paspausti.",
+    "lib.arcade.note.fifteen": "Stumkite sunumeruotas plyteles į tuščią vietą, kad jos išsirikiuotų 1, 2, 3… o tuščia vieta liktų apatiniame dešiniajame kampe. Spustelėkite plytelę toje pačioje eilutėje ar stulpelyje kaip tuščia vieta, kad pastumtumėte visą eilę; veikia ir rodyklės.",
+    "lib.arcade.note.flood-it": "Pasirinkite spalvą, kad užpildytumėte visą jūsų valdomą plotą viršutiniame kairiajame kampe; jis praris gretimus tos spalvos langelius. Per leistą ėjimų skaičių padarykite visą lentą vienos spalvos.",
+    "lib.arcade.note.mastermind": "Kompiuteris paslepia spalvų eilę. Pasirinkite spalvą kiekvienai vietai ir paspauskite Spėti. Juodas kaištis = tinkama spalva tinkamoje vietoje; baltas kaištis = tinkama spalva netinkamoje vietoje. Įminkite kodą, kol nepasibaigė spėjimai.",
+    "lib.arcade.note.hanoi": "Perkelkite visus diskus ant paskutinio strypo. Kiekvieną kartą perkelkite tik viršutinį strypo diską ir niekada nedėkite didesnio disko ant mažesnio. Spustelėkite pradinį strypą, tada tikslo strypą.",
+    "lib.arcade.note.pipes": "Spustelėkite plytelę, kad vamzdį pasuktumėte 90°. Sujunkite visus vamzdžius į vieną tinklą be atvirų galų (atviri galai rodomi raudonai)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Tradicinis vietnamiečių akmenukų sėjimo žaidimas: sėkite akmenukus ir imkite mandarinus prieš kompiuterį; 10 lygių nuo lengvo iki sunkaus."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Išjunkite visas šviesas: kiekvienas paspaudimas perjungia langelį ir jo 4 kaimynus; 10 lygių su augančiomis lentomis ir užuominų mygtuku."
+    },
+    "fifteen": {
+      "name": "Penkiolikos dėlionė (stumdoma dėlionė)",
+      "desc": "Stumkite sunumeruotas plyteles į tvarką; 10 lygių nuo 3x3 iki 5x5, žaidžiama pele, liečiant ar rodyklėmis."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Užliekite lentą nuo kampo, kol ji taps vienos spalvos per ribotą ėjimų skaičių; 10 lygių su didesnėmis lentomis ir daugiau spalvų."
+    },
+    "mastermind": {
+      "name": "Mastermind (kodų laužytojas)",
+      "desc": "Įminkite paslėptą spalvų kodą pagal juodų ir baltų kaiščių užuominas; 10 lygių su ilgesniais kodais ir daugiau spalvų."
+    },
+    "hanoi": {
+      "name": "Hanojaus bokštai",
+      "desc": "Perkelkite diskus nuo pirmojo iki paskutinio strypo nedėdami didesnio disko ant mažesnio; 10 lygių nuo 3 iki 12 diskų ant 4 strypų."
+    },
+    "pipes": {
+      "name": "Vamzdžių jungimas",
+      "desc": "Sukite vamzdžių dalis, kad jos sudarytų vieną tinklą be atvirų galų; 10 lygių su augančiomis lentomis."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Pildykite langelius pagal skaičių užuominas prie eilučių ir stulpelių, kad atskleistumėte paveikslėlį; 10 lygių nuo 5x5 iki 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (dėžių stūmimas)",
+      "desc": "Sandėlyje sustumkite dėžes ant tikslo langelių; kiekvienas lygis išsprendžiamas, 10 lygių su daugiau dėžių ir didesniais sandėliais."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Dėkite figūras ant 10x10 tinklelio ir pildykite eilutes ar stulpelius, kad juos išvalytumėte ir pasiektumėte tikslinį rezultatą; 10 lygių."
+    },
+    "dots-boxes": {
+      "name": "Taškai ir dėžutės",
+      "desc": "Pakaitomis jungdami taškus laimėkite kvadratus ir nugalėkite kompiuterį per 10 lygių nuo lengvų iki sunkių."
+    },
+    "ultimate-tictactoe": {
+      "name": "Galutiniai kryžiukai-nuliukai",
+      "desc": "Kryžiukai-nuliukai 9 mažose lentose: jūsų pasirinktas langelis nulemia, kur turi žaisti priešininkas; prieš kompiuterį per 10 lygių."
     }
   },
   "s": {
