@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Ýokarky çep burçda eýelän tutuş meýdanyňyzy doldurmak üçin reňk saýlaň; ol şol reňkdäki goňşy öýjükleri ýuwdýar. Rugsat berlen ädim sany içinde tutuş tagtany bir reňke öwüriň.",
     "lib.arcade.note.mastermind": "Kompýuter reňkleriň bir hataryny gizleýär. Her ýer üçin reňk saýlaň, soňra Tap düwmesine basyň. Gara mıh = reňk dogry, ýeri dogry; ak mıh = reňk dogry, ýeri ýalňyş. Çaklamalaryňyz gutarmanka koduny açyň.",
     "lib.arcade.note.hanoi": "Ähli diskleri iň soňky taýaga geçiriň. Her gezek diňe taýagyň iň ýokarky diskini geçiriň we hiç haçan uly disk kiçiniň üstüne goýmaň. Ilki başlangyç taýaga, soňra maksat taýaga basyň.",
-    "lib.arcade.note.pipes": "Turbany 90° aýlamak üçin plitka basyň. Ähli turbalary açyk uçlary galmadyk bir ulgamda birleşdiriň (açyk uçlar gyzyl görkezilýär)."
+    "lib.arcade.note.pipes": "Turbany 90° aýlamak üçin plitka basyň. Ähli turbalary açyk uçlary galmadyk bir ulgamda birleşdiriň (açyk uçlar gyzyl görkezilýär).",
+    "lib.arcade.pongScore": "Siz {a} – {b} Kompýuter (ilki {t} utan ýeňýär)",
+    "lib.arcade.kills": "Ýok edildi: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} daş galdy",
+    "lib.arcade.timeLeft": "{n} sekunt galdy",
+    "lib.arcade.stepsN": "Ädimler: {n}",
+    "lib.arcade.crossed": "Öýde: {n}/{t}",
+    "lib.arcade.pipes": "Geçilen turbalar: {n}/{t}",
+    "lib.arcade.distance": "Aralyk: {n}/{t} m",
+    "lib.arcade.speedN": "Tizlik: {n}",
+    "lib.arcade.note.whack-a-mole": "Syçanlar deşiklerden çykýar — urmak üçin syçanyň üstüne basyň ýa-da degiň. Wagt gutarmanka ýeterlik syçan uruň. 4-nji derejeden bombalar peýda bolýar: bomba urmak utgy ýitirýär.",
+    "lib.arcade.hole": "Deşik",
+    "lib.arcade.hitsN": "Urgular: {n}/{t}",
+    "lib.arcade.note.simon": "Oýun reňkler we sesler yzygiderliligini oýnaýar — ony şol tertipde gaýtalaň. Her tapgyr bir ädim goşýar. Derejäni geçmek üçin talap edilýän uzynlygy ýadyňyzda saklaň. 7-nji derejeden 6 düwme bolýar.",
+    "lib.arcade.seqN": "Yzygiderlilik: {n}/{t}",
+    "lib.arcade.watch": "Syn ediň…",
+    "lib.arcade.yourTurnShort": "Siziň gezegiňiz",
+    "lib.arcade.note.aim-trainer": "Nyşanlar tötänleýin peýda bolýar we çalt ýitýär — mümkin boldugyça köp nyşana uruň. Olar kiçelýär we tizlenýär. Derejäni geçmek üçin 5-den köp ýalňyşman ýeterlik nyşana uruň.",
+    "lib.arcade.missN": "Ýalňyşlar: {n}/{t}",
+    "lib.arcade.answer": "Jogap",
+    "lib.arcade.note.quick-math": "Dilden mümkin boldugyça çalt hasaplaň: jogaby ýazyp Enter basyň. Her soragyň wagt çägi bar; ýalňyş jogap ýa-da wagtyň gutarmagy bir jany alýar (siziň 3 janyňyz bar). Derejäni geçmek üçin ýeterlik soraga dogry jogap beriň.",
+    "lib.arcade.correctN": "Dogry: {n}/{t}",
+    "lib.arcade.note.reaction": "Ekran ýaşyl bolýança garaşyň, soň mümkin boldugyça çalt basyň. Irki basmak kemçilik hasaplanýar (3 kemçilikden soň utulýarsyňyz). 5 tapgyrdaky ortaça netijäňiz derejäniň çäginden gowy bolmaly.",
+    "lib.arcade.roundN": "Tapgyr {n}/{t}",
+    "lib.arcade.limitMs": "Çäk: {n} ms",
+    "lib.arcade.rxWait": "Ýaşyla garaşyň…",
+    "lib.arcade.rxGo": "BASYŇ!",
+    "lib.arcade.rxEarly": "Gaty ir!",
+    "lib.arcade.gameArea": "Oýun meýdany",
+    "lib.arcade.note.pong": "Aşakdaky raketkany dolandyrmak üçin syçanjygy süýşüriň, barmagyňyzy çekiň ýa-da ← → düwmelerini ulanyň. Topy kompýuterden geçiriň; ilki 5 utuk toplan ýeňýär. Top her urguda tizlenýär.",
+    "lib.arcade.note.space-shooter": "Gämini dolandyrmak üçin syçanjygy süýşüriň, barmagyňyzy çekiň ýa-da ← → düwmelerini ulanyň; gämiňiz awtomatiki atýar. Derejäni geçmek üçin ýeterlik duşman gämisini ýok ediň, çaknyşmalardan we duşman oklaryndan gaçyň. Siziň 3 janyňyz bar.",
+    "lib.arcade.note.asteroids": "← → gämini aýlaýar, ↑ itekleýär, Boşluk atýar. Derejäni geçmek üçin ähli daşlary ýok ediň; uly daşlar kiçilere bölünýär. Gämi ekranyň gyrasyndan geçip, garşy tarapdan çykýar. Siziň 3 janyňyz bar.",
+    "lib.arcade.note.maze": "Wagt gutarmanka ýaşyl nokatdan gyzyl baýdaga ýetmek üçin ok düwmelerini ulanyň (ýa-da süýşüriň, ýa-da düwmelere basyň). 5-nji derejeden labirint dumanly: diňe daş-töweregiňizi görýärsiňiz, geçen ýerleriňiz ýatda saklanýar.",
+    "lib.arcade.note.road-cross": "Gurbagany aşakdan ýokaryk böküdirmek üçin ok düwmelerini, süýşürmegi ýa-da düwmeleri ulanyň. Ulag akymyndan gaçyň; 5-nji derejeden ýokarky bölek derýa, şonuň üçin ýüzýän agaçlara böküň. Derejäni geçmek üçin 3 gezek öýe ýetiň. Siziň 3 janyňyz bar.",
+    "lib.arcade.note.flappy": "Ganat kakmak üçin oýun meýdanyna degiň, Boşluk ýa-da ↑ basyň. Turbalara, ýere ýa-da potolokga degmän turbalaryň arasyndaky aralyklardan uçuň. Ýokary derejelerde aralyklar has dar we uçuş has çalt.",
+    "lib.arcade.note.runner": "Kaktuslardan böküp geçmek üçin oýun meýdanyna degiň, Boşluk ýa-da ↑ basyň; belent guşlaryň aşagyndan geçmek üçin ↓ basyp duruň (ýa-da pes guşlardan böküp geçiň). Derejäni geçmek üçin ýeterlik uzaga ylgaň. Tizlik hemişe ýokarlanýar.",
+    "lib.arcade.fire": "Ot aç",
+    "lib.arcade.jump": "Bökmek",
+    "lib.arcade.aimTarget": "Nyşan",
+    "lib.game.soundOn": "Sesi aç",
+    "lib.game.soundOff": "Sesi öçür",
+    "lib.arcade.note.kalah": "Siz aşaky hatarda oýnaýarsyňyz, kompýuter ýokarda; sagdaky uly çukur siziň ammaryňyz. Çukura basyp, onuň ähli dänelerini alyň we sagadyň tersine her çukura bir-bir paýlaň (garşydaşyň ammaryny geçiň). Soňky däne ammaryňyza düşse, ýene bir gezek ýöreýärsiňiz; soňky däne öz tarapyňyzdaky boş çukura düşse we onuň garşysyndaky çukurda däneler bar bolsa, olary alýarsyňyz. Bir tarap boşansa, galan däneler eýesiniň ammaryna geçýär; uly ammarly ýeňýär.",
+    "lib.arcade.note.snakes": "Zary zyň we şonça gözenek ýöräň, 1-den 100-e çenli. Basgançagyň aşagyna düşseňiz, ýokary çykýarsyňyz; ýylanyň kellesine düşseňiz, aşak süýşýärsiňiz. 4-nji derejeden 100-e düşmek üçin takyk san gerek. Ýokary derejelerde ýylanlar köp, basgançaklar az, garşydaşlar köp. 100-e ilki ýeten ýeňýär.",
+    "lib.arcade.square": "{n}-nji gözenek",
+    "lib.arcade.ladderUp": "Basgançakdan ýokary!",
+    "lib.arcade.snakeDown": "Ýylan ýuwutdy!",
+    "lib.arcade.needExact": "100-e düşmek üçin takyk san gerek.",
+    "lib.arcade.note.nmm": "Her tarapda 9 daş bar. 1-nji tapgyr: gezekli-gezegine daşlary boş nokatlara goýuň. 2-nji tapgyr: daşy goňşy boş nokada süýşüriň. Diňe 3 daş galanda islendik boş nokada “uçup” bilersiňiz. Garşydaşyň daşyny aýyrmak üçin yzly-yzyna üçüsini düzüň (“degirmen”; ilki degirmende bolmadyk daşlar alynýar). 2 daş galsa ýa-da ýöräp bilmeseňiz, utulýarsyňyz. Siz ak daşlar bilen oýnaýarsyňyz we ilki ýöreýärsiňiz.",
+    "lib.arcade.inHand": "Goýmaly: {a} · {b}",
+    "lib.arcade.removePiece": "Aýyrmak üçin garşydaşyň daşyny saýlaň.",
+    "lib.arcade.enemyWaters": "Duşman suwlary (atmak üçin basyň)",
+    "lib.arcade.yourFleet": "Siziň flotyňyz",
+    "lib.arcade.note.battleship": "Her tarapda 10x10 meýdançada tötänleýin ýerleşdirilen 5 gämi bar (uzynlygy 5, 4, 3, 3, 2). Gezekli-gezegine öýjüge ok atyň: degse gyzyl, degmese açyk gök bolýar, gämiň ähli öýjükleri urulsa, ol gark bolýar. Duşmanyň ähli flotuny ilki gark eden ýeňýär. Ýokary derejelerde kompýuter gämileriňiziň ýerini has akylly çaklaýar.",
+    "lib.arcade.shipsLeft": "Galan gämiler: siz {a} · duşman {b}",
+    "lib.arcade.theySunk": "Duşman gämileriňiziň birini gark etdi!",
+    "lib.arcade.theyHit": "Duşman gämileriňiziň birine degdi.",
+    "lib.arcade.theyMiss": "Duşman ýalňyşdy.",
+    "lib.arcade.youSunk": "Siz duşman gämisini gark etdiňiz!",
+    "lib.arcade.youHit": "Degdi!",
+    "lib.arcade.youMiss": "Degmedi.",
+    "lib.arcade.shake": "Silk",
+    "lib.arcade.clearBets": "Töleglere arassala",
+    "lib.arcade.note.bau-cua": "Diňe wirtual teňňeler — hakyky pul ýok. Çipiň bahasyny saýlaň, töleg goýmak üçin haýwanlara basyň, soň Silk düwmesine basyň. Töleg goýan haýwanyňyza gabat gelen her zar üçin tölegiňiz yzyna gaýdýar we şonuň ýaly mukdarda goşmaça alýarsyňyz. Derejäni geçmek üçin rugsat berlen tapgyrlarda maksat teňňelere ýetiň.",
+    "lib.arcade.note.baccarat": "Diňe wirtual teňňeler — hakyky pul ýok. Oýunçy, Bankir ýa-da Deňlik üstüne töleg goýuň, soň Paýla düwmesine basyň. Eliň bahasy umumy jemiň soňky sifry (A = 1, 2–9 kartanyň bahasy, 10/J/Q/K = 0); 9-a ýakyn el ýeňýär, üçünji kartalar adaty düzgünler boýunça alynýar. Oýunçy 1:1, Bankir 0,95:1, Deňlik 8:1 töleýär (deňlikde Oýunçy/Bankir tölegleri yzyna gaýtarylýar). Derejäni geçmek üçin rugsat berlen tapgyrlarda maksat teňňelere ýetiň.",
+    "lib.arcade.banker": "Bankir",
+    "lib.arcade.player": "Oýunçy",
+    "lib.arcade.tie": "Deňlik",
+    "lib.arcade.openCards": "Aç",
+    "lib.arcade.note.bai-cao": "Diňe wirtual teňňeler — hakyky pul ýok. Her tarap 3 karta alýar. Eliň utugy umumy jemiň soňky sifry (A = 1, 2–9 kartanyň bahasy, 10/J/Q/K = 10, ýagny 0 utuk). Sepleşik: üç birmeňzeş (“Sáp”) iň ýokary, soň üç şekilli karta (“Ba tiên”), soň 9 utukdan 0-a çenli. Töleg goýuň, Paýla, soň Aç düwmesine basyp diler bilen deňeşdiriň. 6-njy derejeden deňlikde diler ýeňýär. Derejäni geçmek üçin rugsat berlen tapgyrlarda maksat teňňelere ýetiň.",
+    "lib.arcade.caoSap": "Üç birmeňzeş",
+    "lib.arcade.caoBaTien": "Üç şekilli karta",
+    "lib.arcade.caoPts": "{n} utuk",
+    "lib.arcade.note.bingo": "Kompýuter 1-den 75-e çenli sanlary aýdýar. Aýdylan san kartaňyzda bar bolsa, bellemek üçin oňa basyň (merkez mugt). Hatary, sütüni ýa-da diagonaly dolduryp, BINGO! basyň — kompýuter garşydaşlaryndan öň bolmaly. Ýalňyş BINGO! düwmäni birnäçe sekuntlyk gulplaýar. Ýokary derejelerde sanlar has çalt aýdylýar we garşydaşlar köp bolýar.",
+    "lib.arcade.opponentsN": "Garşydaşlar: {n}",
+    "lib.arcade.falseBingo": "Heniz doly hatar ýok! Düwme 3 sekuntlyk gulplandy.",
+    "lib.arcade.bingoGo": "Sanlar aýdylýar!",
+    "lib.arcade.note.yahtzee": "Her gezekde 5 zary 3 gezege çenli zyňýarsyňyz: saklamak üçin zara basyň, galanlaryny täzeden zyňmak üçin Zyň düwmesine basyň. Soň utuk ýazmak üçin tablisadan öýjügi saýlaň (her öýjük bir gezek ulanylýar; laýyk gelmeýän öýjük 0 utuk berýär). Jemi 13 gezek. Birler–Altylar öýjükleriniň jemi 63 ýa-da ondan köp bolsa, 35 bonus goşulýar. Ýeňmek üçin derejäniň maksat utugyna ýetiň.",
+    "lib.arcade.turnN": "Gezek {n}/13",
+    "lib.arcade.pickCat": "Utuk ýazmak üçin öýjügi saýlaň",
+    "lib.arcade.rollsLeft": "Zyň ({n} galdy)",
+    "lib.arcade.upperBonus": "Birler–Altylar bonusy",
+    "lib.arcade.scored": "Ýazyldy {n}",
+    "lib.arcade.note.crazy-eights": "Taşlanan kartalar toplumynyň üstündäki kartasyna mast ýa-da derejesi boýunça gabat gelýän kartany taşlaň. Sekizler — jokerler: islendik wagt taşlap, täze mast saýlap bilersiňiz. Taşlap boljak karta ýok bolsa, toplumdan karta alyň (3-e çenli); ýene taşlap bilmeseňiz, gezegi geçýärsiňiz. Elini ilki boşadan ýeňýär. Ýokary derejelerde garşydaşlar köp we kompýuter has akylly oýnaýar.",
+    "lib.arcade.opponent": "Garşydaş",
+    "lib.arcade.pileLeft": "Toplum: {n}",
+    "lib.arcade.pickSuit": "Täze mast saýlaň",
+    "lib.arcade.aiSuit": "Kompýuter {s} mastyny saýlady",
+    "lib.arcade.aiPass": "Kompýuter gezegi geçdi.",
+    "lib.arcade.mustPlay": "Sizde taşlap boljak karta bar — ony taşlaň.",
+    "lib.arcade.youPass": "Siz 3 karta aldyňyz we gezegi geçdiňiz.",
+    "lib.arcade.bcGourd": "Gawun",
+    "lib.arcade.bcCrab": "Gysgyç",
+    "lib.arcade.bcShrimp": "Kreweti",
+    "lib.arcade.bcFish": "Balyk",
+    "lib.arcade.bcRooster": "Horaz",
+    "lib.arcade.bcDeer": "Maral",
+    "lib.arcade.yOnes": "Birler",
+    "lib.arcade.yTwos": "Ikiler",
+    "lib.arcade.yThrees": "Üçler",
+    "lib.arcade.yFours": "Dörtler",
+    "lib.arcade.yFives": "Bäşler",
+    "lib.arcade.ySixes": "Altylar",
+    "lib.arcade.yThree": "Üç birmeňzeş",
+    "lib.arcade.yFour": "Dört birmeňzeş",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Kiçi ýol (30)",
+    "lib.arcade.yLarge": "Uly ýol (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Mümkinçilik",
+    "lib.arcade.note.race": "← → basyň (ýa-da gerekli zolaga degiň) — zolagy çalşyp, öňdäki maşynlardan gaçyň. Siziň 3 janyňyz bar; derejäni geçmek üçin doly aralygy geçiň. Ýokary derejelerde zolaklar köp we ulag çalt.",
+    "lib.arcade.note.jump": "Gahryman özi bökýär. Indiki platforma düşmek üçin ← → basyň ýa-da barmagyňyzy çekiň. Gök platformalar hereket edýär, goňur platformalar düşeniňizde döwülýär. Ekrandan gaçsaňyz utulýarsyňyz; derejäni geçmek üçin ýeterlik belende çykyň.",
+    "lib.arcade.note.miner": "Ilmek öňe-yza yrgyldaýar; ony düşürmek üçin Boşluk, ↓ basyň ýa-da meýdança degiň. Uly altyn we daşlar agyr, haýal çekilýär; göwherler gaty gymmat. 60 sekunt gutarmanka maksat pula ýetiň.",
+    "lib.arcade.note.slicer": "Mewäni kesmek üçin ýanyndan barmagyňyzy ýa-da syçanjygy süýşüriň. Gara bombalardan gaçyň. Mewäni ýitirmek ýa-da bombany kesmek bir jany alýar (siziň 3 janyňyz bar). Derejäni geçmek üçin ýeterlik mewe kesiň.",
+    "lib.arcade.note.hoops": "Meýdança basyp, aşak çekiň (taşlaýjy ýaly) we goýberiň — top halka uçýar. Näçe uzak çekseňiz, zyňyş şonça güýçli bolýar. Berlen atyşlaryň içinde ýeterlik sebet ýasaň; 4-nji derejeden halka hereket edýär.",
+    "lib.arcade.note.bubbles": "Nyşana almak üçin syçanjygy ýa-da barmagy süýşüriň, soň atmak üçin basyň/degiň ýa-da Boşluk/Ot aç basyň. Birmeňzeş reňkdäki 3 ýa-da ondan köp pökgini birleşdirip, olary dargadyň; goldawsyz galan pökgiler gaçýar. Hatarlar haýal aşak düşýär, şonuň üçin olary aşaky çyzykdan daşda saklaň. Ýeňmek üçin ähli pökgileri arassalaň.",
+    "lib.arcade.note.chase": "Labirintdäki ähli nokatlary iýmek we sizi kowýan arwahlardan gaçmak üçin ok düwmelerini ulanyň (ýa-da süýşüriň / düwmelere basyň). Siziň 3 janyňyz bar; ýokary derejelerde arwahlar köp, çalt we akylly kowýar.",
+    "lib.arcade.height": "Beýiklik: {n}/{t} m",
+    "lib.arcade.money": "Pul: {n}/{t}",
+    "lib.arcade.sliced": "Kesildi: {n}/{t}",
+    "lib.arcade.hoopScore": "Sebetler: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} atyş galdy",
+    "lib.arcade.bubbleLeft": "{n} pökgi galdy",
+    "lib.arcade.shotsN": "Atyşlar: {n}",
+    "lib.arcade.dotsLeft": "{n} nokat galdy",
+    "lib.arcade.note.kakuro": "Ak öýjükleri 1–9 sanlary bilen şeýle dolduryň: her yzygiderlilik gara öýjükdäki görkezmä deň jem bersin (ýokarky sagdaky san saga ugrukdyrylan yzygiderlilik üçin, aşaky çepdäki — aşak ugrukdyrylan üçin), yzygiderlik içinde san gaýtalanmasyn. Hereket etmek üçin ok düwmelerini ulanyň.",
+    "lib.arcade.note.kenken": "Gözenegi 1-den N-e çenli sanlar bilen şeýle dolduryň: hiç bir hatarda we sütünde san gaýtalanmasyn. Galyň çyzyk bilen çäklendirilen her topar maksady we amaly (+, −, ×, ÷) görkezýär: topardaky sanlar şol netijäni bermeli. Hereket etmek üçin ok düwmelerini ulanyň.",
+    "lib.arcade.note.wordGuess": "Gizlin iňlisçe sözi tapyň. Her synanyşykdan soň ýaşyl — harp dogry ýerde, sary — harp sözde bar, ýöne başga ýerde, çalymtyl — harp sözde ýok diýmegi aňladýar. Klawiaturada ýa-da ekrandaky düwmelerde ýazyň we iberip bermek üçin Enter basyň. Ýokary derejelerde sözler uzyn, synanyşyklar az.",
+    "lib.arcade.note.hangman": "Gizlin iňlisçe sözi harplary birin-birin saýlap tapyň. Her ýalňyş harp asylan adamyň şekiline bir bölek goşýar; ýalňyşlyk hukugy gutarsa, utulýarsyňyz. Ýokary derejelerde sözler uzyn, rugsat berlen ýalňyşlyklar az.",
+    "lib.arcade.note.scramble": "Garyşdyrylan harplary hakyky iňlisçe söze öwrüp, jogap kutusyna ýazyň. Her derejede 5 söz bar; derejäni geçmek üçin her sözüň wagty gutarmanka azyndan 4-ni çözüň. Maslahat birinji harpy görkezýär.",
+    "lib.arcade.cellsLeft": "{n} boş öýjük galdy",
+    "lib.arcade.wrongN": "{n} öýjük nädogry.",
+    "lib.arcade.noError": "Heniz ýalňyşlyk tapylmady.",
+    "lib.arcade.tooShort": "Harplar ýeterlik däl",
+    "lib.arcade.answerIs": "Jogap: {w}",
+    "lib.arcade.livesLeft": "{n} ýalňyşlyk hukugy galdy",
+    "lib.arcade.yourAnswer": "Siziň jogabyňyz",
+    "lib.arcade.skip": "Geç",
+    "lib.arcade.notThis": "Dogry däl, ýene synanyşyň.",
+    "lib.arcade.startsWith": "Birinji harp: {c}",
+    "lib.arcade.note.domino": "Her oýunçy 7 plitka alýar; iň uly dubl eýesi başlaýar. Zynjyryň bir ujuna san boýunça gabat gelýän plitkany goýuň. Goýup bilmeseňiz, goýup boljak plitka gelýänçä ammardan alyň; ol boş bolsa, gezegi geçiň. Elini ilki boşadan ýeňýär; ikisi hem gysylsa, nokatlarynyň jemi azrak bolan ýeňýär.",
+    "lib.arcade.note.hearts": "Dört oýunçy, her kime 13 karta. Çybyk 2 başlaýar. Mümkin bolsa, başlanan masta eýermeli. Her ýürek 1 utuk, Gara aýal (♠Q) 13; elini alan onuň utuklaryny alýar. Pes has gowy, ähli 26 utugy alsaňyz, galanlar 26-dan alýar. Ýürek oýnalýança ýürek bilen başlap bilmersiňiz. Soňky eldan soň utugyňyz iň pes (ýa-da iň pes bilen deň) bolsa, ýeňýärsiňiz.",
+    "lib.arcade.note.holdem": "Diňe wirtual çipler bilen kompýutere garşy bire-bir oýun. Her oýunçy 2 şahsy karta alýar we 5 umumy karta açylýar (flop, turn, river); iň gowy 5 kartaly kombinasiýany düzüň. Her tapgyrda taşlap (fold), deňläp (call ýa-da check) ýa-da ýokarlandyryp (raise) bilersiňiz. Blindler her 4 eldan soň ýokarlanýar. Kompýuteriň çipleri gutarsa ýa-da el çäginden soň çipleriňiz köp bolsa, ýeňýärsiňiz. Hakyky pul gatnaşmaýar.",
+    "lib.arcade.dmDraw": "Plitka al",
+    "lib.arcade.dmPass": "Geç",
+    "lib.arcade.dmEmpty": "Heniz plitka goýulmady",
+    "lib.arcade.dmYard": "Ammar: {n} plitka",
+    "lib.arcade.dmLeft": "Çep ujy",
+    "lib.arcade.dmRight": "Sag ujy",
+    "lib.arcade.dmTie": "Deňlik! Iki tarap hem deň.",
+    "lib.arcade.hrHand": "El {n}/{t}",
+    "lib.arcade.hrTook": "{p} elini aldy ({n} utuk).",
+    "lib.arcade.hrIllegal": "Bu kartany oýnap bilmersiňiz (mast boýunça oýnaň, ýa-da ýürek bilen başlamak heniz mümkin däl).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Taşla",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise ýokarlandyr:",
+    "lib.arcade.raiseN": "{n}-e çenli raise",
+    "lib.arcade.thOppFold": "Kompýuter taşlady; bu eli siz ýeňdiňiz.",
+    "lib.arcade.thYouFold": "Siz taşladyňyz.",
+    "lib.arcade.thOppWin": "Bu eli kompýuter ýeňdi",
+    "lib.arcade.thYouWin": "Bu eli siz ýeňdiňiz",
+    "lib.arcade.thSplit": "Pot bölünýär",
+    "lib.arcade.thAiFold": "Kompýuter taşlady.",
+    "lib.arcade.thAiRaise": "Kompýuter {n}-e çenli ýokarlandyrdy.",
+    "lib.arcade.thAiCall": "Kompýuter deňledi / check etdi.",
+    "lib.arcade.hand.high": "Ýokary karta",
+    "lib.arcade.hand.pair": "Jübüt",
+    "lib.arcade.hand.twoPair": "Iki jübüt",
+    "lib.arcade.hand.trips": "Üç birmeňzeş",
+    "lib.arcade.hand.straight": "Ýol (Straight)",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Dört birmeňzeş",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "3x3 gözenekde öýjükler birin-birin ýanýar. Ýanan ýer N ädim öňküsi bilen birmeňzeş bolsa, \"Gabat!\" düwmesine (ýa-da Boşluk) basyň (N ýokarda görkezilýär). Derejäni geçmek üçin azyndan 80% dogry karar gerek. Ýokary derejelerde N has uly bolýar.",
+    "lib.arcade.nbMatch": "Gabat!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Dogry: {a} · Nädogry: {b}",
+    "lib.arcade.nbAcc": "Takyklyk: {n}%",
+    "lib.arcade.note.clicker": "Kökeleri bişirmek üçin köke basyň, soň olary awtomatiki bişirýän kömekçilere sarp ediň (her satyn almadan soň bahalar ýokarlanýar). Derejäni geçmek üçin 2 minutyň içinde maksat sanly köke bişiriň.",
+    "lib.arcade.ckCursor": "Kursor",
+    "lib.arcade.ckGrandma": "Bişirýän mama",
+    "lib.arcade.ckFarm": "Ferma",
+    "lib.arcade.ckMine": "Şeker känleri",
+    "lib.arcade.ckFactory": "Zawod",
+    "lib.arcade.ckCookie": "Köke",
+    "lib.arcade.ckEarned": "Bişirildi: {n}/{t}",
+    "lib.arcade.chips2": "Kökeler: {n}",
+    "lib.arcade.ckCps": "sekuntda {n} köke",
+    "lib.arcade.note.onet": "Beýleki plitkalary kesmeýän, iň köp 2 öwrümli ýol bilen birleşdirip boljak iki birmeňzeş plitkany saýlaň, olary aýyrmak üçin. Ýeňmek üçin wagt gutarmanka ähli plitkalary arassalaň. Hereket galmasa, garyp bilersiňiz (çäkli gezek).",
+    "lib.arcade.shuffle": "Gar",
+    "lib.arcade.tilesLeft": "{n} plitka galdy",
+    "lib.arcade.autoShuffle": "Hereket galmady — awtomatiki garyldy.",
+    "lib.arcade.note.jigsaw": "Surat bölekleriň içine bölünip garyldy. Çalyşmak üçin bir bölege, soň başga bölege basyň, we salgy hökmünde görkezilen suraty täzeden gurnaň. Dogry ýerdäki bölekler ýaşyl çarçuwa alýar. Ýokary derejelerde bölek köp.",
+    "lib.arcade.jgRef": "Salgy surat",
+    "lib.arcade.jgPlaced": "Ýerinde: {a}/{b}",
+    "lib.arcade.golfStrokes": "Urgular: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Siz ak şaşkalar bilen oýnaýarsyňyz, ýokarky sagdan aşaky saga (öýüňize) hereket edýärsiňiz. Zarlary zyň, süýşürmekçi bolýan şaşkaňyza basyň, soň ýagtylandyrylan ýere basyň. Diňe bir garşydaş şaşkasy bolan nokada düşseňiz, ony ortaky ştanga çykarýarsyňyz, we ol oýunçy ilki ony yzyna girizmeli. Iki ýa-da ondan köp garşydaş şaşkasy bolan nokada düşüp bilmersiňiz. Ähli 15 şaşkaňyz öýüňizde (soňky 6 nokat) bolanda, olary aýryp bilersiňiz. 15-ni hem ilki aýyran ýeňýär.",
+    "lib.arcade.bgRoll": "Zarlary zyň",
+    "lib.arcade.bgOff": "Aýyr",
+    "lib.arcade.bgRollFirst": "Zarlary zyň",
+    "lib.arcade.bgInfo": "Aýryldy: siz {a} · kompýuter {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Sizde hereket galmady.",
+    "lib.arcade.note.tienlen": "Dört oýunçy, her kime 13 karta. Kartalaryň tertibi pesden ýokary: 3, 4, … K, A, 2; mastlar pesden ýokary: gazyk, çybyk, almaz, ýürek. Gazyk 3 eýesi ilki ýöreýär. Bir karta, jübüt, üç birmeňzeş, dört birmeňzeş ýa-da yzly-yzyna 3 we ondan köp kartadan ybarat hatar (2-ler girmeýär) oýnaň. Indiki oýunçy şol görnüşdäki has ýokary kombinasiýany oýnamaly ýa-da geçmeli; dört birmeňzeş bir 2-ni ýa-da jübüt 2-ni ýeňip biler. Beýlekileriň hemmesi geçse, iň soňky oýnan islendik zady başlap biler. Elini ilki boşadan ýeňýär. Kartalary saýlaň, soň Oýna basyň.",
+    "lib.arcade.tlPlay": "Oýna",
+    "lib.arcade.tlPass": "Geç",
+    "lib.arcade.tlClear": "Saýlawy arassala",
+    "lib.arcade.tlPassed": "geçdi",
+    "lib.arcade.tlFree": "Stol boş — islendik zady başlap bilersiňiz",
+    "lib.arcade.tlLeft": "Galan kartalar: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} geçdi.",
+    "lib.arcade.tlBad": "Saýlanan kartalar dogry toplum emele getirmeýär.",
+    "lib.arcade.tlLow": "Bu toplum stoldakydan ýokary däl."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Ultimate aýlaw-haç",
       "desc": "9 kiçi tagtada aýlaw-haç: saýlan öýjügiňiz garşydaşyň nirede oýnamalydygyny kesgitleýär; kompýutere garşy 10 dereje."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Topy kompýuterden geçiriň; ilki 5 utuk toplan ýeňýär. Has çalt we has takyk garşydaşly 10 dereje."
+    },
+    "space-shooter": {
+      "name": "Kosmos atyjy",
+      "desc": "Gämiňizi dolandyryň, duşman gämilerini ýykyň we olaryň oklaryndan gaçyň; has uly tolkunly, jogap atyşly we berk duşmanly 10 dereje."
+    },
+    "asteroids": {
+      "name": "Asteroidler",
+      "desc": "Kosmos daşlaryny dargatmak üçin aýlaň, itekläň we atyň; uly daşlar kiçilere bölünýär. Daşlary köp we çalt 10 dereje."
+    },
+    "maze": {
+      "name": "Labirint",
+      "desc": "Wagt gutarmanka labirintden çykyş ýoluny tapyň; kiçiden uzaga 10 dereje, ýokary derejelerde duman bar."
+    },
+    "road-cross": {
+      "name": "Ýoldan geçmek (Frogger ýaly)",
+      "desc": "Gurbagany işjeň ýollardan we ýüzýän agaçly derýalardan geçirip, 3 gezek öýe ýetirmeli; ulag has çalt, ýokary derejelerde derýa bar 10 dereje."
+    },
+    "flappy": {
+      "name": "Flappy Bird ýaly oýun",
+      "desc": "Ganat kakmak üçin basyň we turbalaryň arasyndaky aralyklardan uçuň; aralyklary has dar we tizligi ýokarlanýan 10 dereje."
+    },
+    "runner": {
+      "name": "Dino ylgaýjy",
+      "desc": "Kaktuslardan böküp geçiň, guşlaryň aşagyndan geçiň; tizlik ýokarlanyp durka, 10 derejäniň hersini geçmek üçin ýeterlik uzaga ylgaň."
+    },
+    "whack-a-mole": {
+      "name": "Syçan ur",
+      "desc": "Wagt gutarmanka deşiklerden çykýan syçanlary uruň we bombalardan gaçyň; haýaldan gaty çalta çenli 10 dereje."
+    },
+    "simon": {
+      "name": "Simon (Reňk ýady)",
+      "desc": "Reňkler we sesler yzygiderliligini ýada salyp gaýtalaň; 10 derejede yzygiderlilikler uzalýar, 7-nji derejeden 6 düwme."
+    },
+    "aim-trainer": {
+      "name": "Nyşana almak türgenleşigi",
+      "desc": "Tötänleýin peýda bolup çalt ýitýän nyşanlara uruň; 10 derejede nyşanlar kiçelýär, reaksiýa wagtyňyz ölçelýär."
+    },
+    "quick-math": {
+      "name": "Çalt matematika",
+      "desc": "Wagt basyşy astynda dilden goşuň, aýyryň, köpeldiň we bölüň; ýönekeý jemlerden aňlatmalara çenli 10 dereje."
+    },
+    "reaction": {
+      "name": "Reaksiýa wagt synagy",
+      "desc": "Ekran ýaşyl bolan badyna basyň; 5 tapgyrdaky ortaça netijäňiz her derejäniň çäginden gowy bolmaly, 10 derejede çäk berkleýär."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Däneleri çukurlara paýlaň, garşydaşyň dänelerini alyň we ammaryňyza düşseňiz ýene ýöräň; kompýutere garşy ýeňilden kyna çenli 10 dereje."
+    },
+    "snakes-ladders": {
+      "name": "Ýylan we basgançak",
+      "desc": "Zary zyp, 1-nji gözenekden 100-e çenli gidiň, basgançaklara çykyň, ýylanlardan gaçyň we garşydaşlardan öň finişe ýetiň; 10 dereje."
+    },
+    "nine-mens-morris": {
+      "name": "Dokuz daş degirmeni (Nine Men’s Morris)",
+      "desc": "Üç daşy yzly-yzyna düzmek we garşydaş daşlaryny aýyrmak üçin daşlaryňyzy goýuň, süýşüriň we uçuryň; kompýutere garşy 10 dereje."
+    },
+    "battleship": {
+      "name": "Deňiz söweşi (Battleship)",
+      "desc": "Kompýuter sizi gark etmänkä, 10x10 meýdançada onuň flotuny tapyp gark ediň; kompýuter has akylly çaklaýan 10 dereje."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Gawun, Gysgyç, Balyk, Kreweti)",
+      "desc": "Däp bolan Wýetnam zar oýny: wirtual teňňeleri haýwanlara goýup, üç zary silkiň; 10 derejede maksat teňňelere ýetiň (hakyky pul ýok)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Adaty düzgünler boýunça paýlanan kartalar bilen Oýunçy, Bankir ýa-da Deňlik üstüne töleg goýuň, wirtual teňňeler bilen; 10 derejede maksat teňňelere ýetiň (hakyky pul ýok)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Üç kartaly oýun)",
+      "desc": "3 kartaly ellerini diler bilen deňeşdiriň: üç birmeňzeş, üç şekilli karta, soň 9 utukdan 0-a çenli; wirtual teňňeler, 10 dereje, hakyky pul ýok."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "5x5 kartaňyzdaky aýdylan sanlary belläň we kompýuter garşydaşlaryndan öň BINGO diýip gygyryň; sanlar has çalt aýdylýan 10 dereje."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Bäş zar)",
+      "desc": "Bäş zary zyň, gowularyny saklaň we 13 utuk öýjügini dolduryň; 10 derejede maksat utuga ýetiň."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Mast ýa-da derejä gabat gelýän karta taşlaň, sekizler masty üýtgedýär; 10 derejede 1-den 3-e çenli kompýuter garşydaşyndan öň elinizi boşadyň."
+    },
+    "car-race": {
+      "name": "Awtoýaryş gaçmak",
+      "desc": "Öňdäki maşynlardan gaçmak üçin zolagy çalşyň we doly aralygy geçiň; zolaklary köp we ulagy çalt 10 dereje."
+    },
+    "sky-jump": {
+      "name": "Asmana böküş",
+      "desc": "Platformadan platforma bökip, gaçman mümkin boldugyça belende çykyň; platformalary seýrek, hereket edýän we döwülýän 10 dereje."
+    },
+    "gold-miner": {
+      "name": "Altyn gazyjy",
+      "desc": "Altyn we göwherleri çekmek üçin ilmegi düşüriň, agyr daşlardan gaçyň we 60 sekuntda maksat pula ýetiň; 10 dereje."
+    },
+    "fruit-slice": {
+      "name": "Mewe kesmek",
+      "desc": "Ýokary uçýan meweleri kesmek üçin süýşüriň we bombalardan gaçyň; mewesi we bombasy köp 10 dereje."
+    },
+    "basketball": {
+      "name": "Basketbol atyşy",
+      "desc": "Çäkli atyşlar içinde topy halka salmak üçin çekiň we goýberiň; 10 dereje, 4-nji derejeden halka hereket edýär."
+    },
+    "bubble-shooter": {
+      "name": "Pökgi atyjy",
+      "desc": "Birmeňzeş reňkdäki 3 ýa-da ondan köp pökgini birleşdirip dargatmak üçin pökgi atyň, olar aşaga ýetmänkä hemmesini arassalaň; reňkleri köp 10 dereje."
+    },
+    "dot-chase": {
+      "name": "Nokat kowalaýyş",
+      "desc": "Sizi kowýan arwahlardan gaçyp, labirintdäki ähli nokatlary iýiň; arwahlary köp we akylly 10 dereje."
+    },
+    "kakuro": {
+      "name": "Kakuro (Kesişýän jemler)",
+      "desc": "Ak öýjükleri 1–9 sanlary bilen her yzygiderlilik görkezmesine deň jem berer ýaly, gaýtalanman dolduryň; 10 dereje, 5x5-den 9x9-a çenli gözenekler."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Gözenegi hatarlarda we sütünlerde gaýtalanman şeýle dolduryň: her topar öz amaly bilen maksat netijäni bersin; 10 dereje, 3x3-den 6x6-a çenli gözenekler."
+    },
+    "word-guess": {
+      "name": "Söz tapmak (Wordle ýaly)",
+      "desc": "Ýaşyl, sary we çalymtyl maslahatlar bilen gizlin iňlisçe sözi tapyň; 4–6 harply sözler we az synanyşykly 10 dereje."
+    },
+    "hangman": {
+      "name": "Hangman (Asylan adam)",
+      "desc": "Ýalňyşlyk hukugy gutarmanka iňlisçe sözi harplary birin-birin saýlap tapyň; sözleri uzyn, ýalňyşlygy az 10 dereje."
+    },
+    "word-scramble": {
+      "name": "Söz düzmek (Anagram)",
+      "desc": "Wagt gutarmanka garyşyk harplary iňlisçe söze öwüriň; her derejede 5 söz bolan 10 dereje."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Plitkalary zynjyryň islendik ujuna gabat getiriň we kompýuterden öň elinizi boşadyň; kompýuter akylly bolýan 10 dereje."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Dört adamlyk karta oýnunda ýürekler we Gara aýaldan gaçyň; pes utuk has gowy; has akylly kompýuter oýunçylaryna garşy 10 dereje."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (wirtual çipler)",
+      "desc": "Kompýutere garşy wirtual çipler bilen bire-bir poker: taşlaň, deňläň ýa-da ýokarlandyryň we kompýuteriň çipleri gutarsa ýeňiň; 10 dereje, hakyky pul ýok."
+    },
+    "n-back": {
+      "name": "N-Back ýady",
+      "desc": "Ýanan öýjüge syn ediň we ol N ädim öňküsi bilen birmeňzeş bolsa, Gabat düwmesine basyň; N 4-e çenli bolan 10 dereje."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Köke bişirmek üçin basyň, awtomatiki bişirýän kömekçileri satyn alyň we 2 minutda maksada ýetiň; 10 dereje."
+    },
+    "tile-connect": {
+      "name": "Plitka birleşdirme (Onet ýaly)",
+      "desc": "Birmeňzeş plitkalary iň köp iki öwrümli ýol bilen birleşdiriň we wagt gutarmanka meýdany arassalaň; meýdany ulalýan 10 dereje."
+    },
+    "jigsaw": {
+      "name": "Surat jigsaw",
+      "desc": "Garylan bölekleri çalşyp suraty täzeden gurnaň; 3x3-den 6x6 bölege çenli 10 dereje."
+    },
+    "mini-golf": {
+      "name": "Mini-golf",
+      "desc": "Topy çukura salmak üçin yza çekiň we goýberiň, urgy çäginiň içinde; diwarly we gumly 10 meýdança."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Zarlary zyň, şaşkalaryňyzy öýe ýetiriň we kompýuterden öň aýyryň, ýolda onuň ýeke şaşkalaryny uruň; 10 dereje."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Ondört)",
+      "desc": "Dört adamlyk Wýetnam karta oýny: elinizi ilki boşatmak üçin ýeke, jübüt, yzygiderli we dört birmeňzeş kartalary oýnaň; 10 dereje."
     }
   },
   "s": {

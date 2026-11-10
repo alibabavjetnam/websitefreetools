@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Hüppa",
     "lib.arcade.aimTarget": "Sihtmärk",
     "lib.game.soundOn": "Lülita heli sisse",
-    "lib.game.soundOff": "Lülita heli välja"
+    "lib.game.soundOff": "Lülita heli välja",
+    "lib.arcade.note.kalah": "Sina mängid alumist rida, arvuti ülemist; parempoolne suur auk on sinu hoidla. Klõpsa august, et võtta kõik seemned, ja külva need vastupäeva, igasse auku üks (vastase hoidlat vahele jättes). Kui viimane seeme langeb sinu hoidlasse, käid uuesti; kui see langeb sinu poolel tühja auku, mille vastas on seemnetega auk, võtad need seemned endale. Kui üks pool jääb tühjaks, lähevad teise poole seemned selle omaniku hoidlasse; võidab suurem hoidla.",
+    "lib.arcade.note.snakes": "Veereta täringut ja liigu nii mitu ruutu edasi, 1-st 100-ni. Redeli jalamile sattudes ronid üles, mao pähe sattudes libised alla. 4. tasemest peab 100-le jõudmiseks veeretama täpse arvu. Kõrgematel tasemetel on rohkem madusid, vähem redeleid ja rohkem vastaseid. Võidab see, kes jõuab esimesena 100-ni.",
+    "lib.arcade.square": "Ruut {n}",
+    "lib.arcade.ladderUp": "Redelit mööda üles!",
+    "lib.arcade.snakeDown": "Madu neelas su alla!",
+    "lib.arcade.needExact": "100-le jõudmiseks on vaja täpset arvu.",
+    "lib.arcade.note.nmm": "Mõlemal poolel on 9 nuppu. 1. faas: asetage vaheldumisi nuppe tühjadele kohtadele. 2. faas: libista nupp naaberkohale. Kui sul on alles vaid 3 nuppu, võid „lennata” suvalisele tühjale kohale. Tee kolm ritta (veski), et eemaldada vastase nupp (esmalt need, mis pole veskis). Kaotad, kui sul on alles 2 nuppu või sa ei saa käia. Sina mängid valgetega ja alustad.",
+    "lib.arcade.inHand": "Asetada: {a} · {b}",
+    "lib.arcade.removePiece": "Vali eemaldamiseks vastase nupp.",
+    "lib.arcade.enemyWaters": "Vaenlase veed (klõpsa tulistamiseks)",
+    "lib.arcade.yourFleet": "Sinu laevastik",
+    "lib.arcade.note.battleship": "Mõlemal poolel on 5 laeva (pikkusega 5, 4, 3, 3, 2), mis on juhuslikult paigutatud 10x10 ruudustikule. Tulistage vaheldumisi ühele ruudule: pihtas läheb punaseks, möödas helesiniseks ning kui oled tabanud kõiki laeva ruute, uppub see. Võida, uputades esimesena kogu vaenlase laevastiku. Kõrgematel tasemetel arvab arvuti sinu laevade asukohad targemini välja.",
+    "lib.arcade.shipsLeft": "Laevu alles: sina {a} · vastane {b}",
+    "lib.arcade.theySunk": "Vaenlane uputas ühe sinu laeva!",
+    "lib.arcade.theyHit": "Vaenlane tabas ühte sinu laeva.",
+    "lib.arcade.theyMiss": "Vaenlane lasi mööda.",
+    "lib.arcade.youSunk": "Uputasid vaenlase laeva!",
+    "lib.arcade.youHit": "Pihtas!",
+    "lib.arcade.youMiss": "Mööda.",
+    "lib.arcade.shake": "Raputa",
+    "lib.arcade.clearBets": "Tühjenda panused",
+    "lib.arcade.note.bau-cua": "Ainult virtuaalsed mündid, päris raha pole kaasatud. Vali žetooni väärtus, klõpsa loomadele panuse tegemiseks, seejärel vajuta Raputa. Iga täringu eest, mis ühtib looma, millele panustasid, saad oma panuse tagasi ja iga ühtivuse eest sama summa juurde. Jõua sihtmüntideni lubatud voorude jooksul, et tase läbida.",
+    "lib.arcade.note.baccarat": "Ainult virtuaalsed mündid, päris raha pole kaasatud. Panusta Mängijale, Pankurile või Viigile, seejärel vajuta Jaga. Käe väärtus on summa viimane number (A = 1, 2–9 nimiväärtus, 10/J/Q/K = 0); võidab 9-le lähem käsi, kolmas kaart tõmmatakse tavareeglite järgi. Mängija maksab 1:1, Pankur 0,95:1, Viik 8:1 (Mängija/Pankuri panused tagastatakse viigi korral). Jõua sihtmüntideni lubatud voorude jooksul, et tase läbida.",
+    "lib.arcade.banker": "Pankur",
+    "lib.arcade.player": "Mängija",
+    "lib.arcade.tie": "Viik",
+    "lib.arcade.openCards": "Näita",
+    "lib.arcade.note.bai-cao": "Ainult virtuaalsed mündid, päris raha pole kaasatud. Mõlemad pooled saavad 3 kaarti. Käe punktid on summa viimane number (A = 1, 2–9 nimiväärtus, 10/J/Q/K = 10 ehk 0 punkti). Järjestus: kolm ühesugust („Sáp”) on kõrgeim, siis kolm piltkaarti („Ba tiên”), seejärel 9 punkti kuni 0. Tee panus, vajuta Jaga ja siis Näita, et jaotajaga võrrelda. 6. tasemest alates võidab viigi korral jaotaja. Jõua sihtmüntideni lubatud voorude jooksul, et tase läbida.",
+    "lib.arcade.caoSap": "Kolm ühesugust",
+    "lib.arcade.caoBaTien": "Kolm piltkaarti",
+    "lib.arcade.caoPts": "{n} p",
+    "lib.arcade.note.bingo": "Arvuti loeb numbreid 1-st 75-ni. Kui välja kuulutatud number on sinu kaardil, klõpsa sellel, et see märkida (keskmine on tasuta). Täida rida, veerg või diagonaal ja vajuta BINGO! — pead arvutivastastest ette jõudma. Vale BINGO! lukustab nupu mõneks sekundiks. Kõrgematel tasemetel loetakse kiiremini ja vastaseid on rohkem.",
+    "lib.arcade.opponentsN": "Vastased: {n}",
+    "lib.arcade.falseBingo": "Täisjoont pole veel! Nupp lukus 3 sekundit.",
+    "lib.arcade.bingoGo": "Numbreid loetakse!",
+    "lib.arcade.note.yahtzee": "Igal käigul veeretad 5 täringut kuni 3 korda: klõpsa täringul, et see alles jätta, ja vajuta Veereta, et ülejäänud uuesti veeretada. Seejärel vali tabelist lahter punktide kirjutamiseks (iga lahtrit kasutatakse üks kord; sobimatu lahter annab 0). Kokku 13 käiku. Ühed–Kuued lahtrid annavad 35 boonust, kui nende summa on 63 või rohkem. Jõua taseme sihtpunktideni, et võita.",
+    "lib.arcade.turnN": "Käik {n}/13",
+    "lib.arcade.pickCat": "Vali lahter punktide jaoks",
+    "lib.arcade.rollsLeft": "Veereta (veel {n})",
+    "lib.arcade.upperBonus": "Ühed–Kuued boonus",
+    "lib.arcade.scored": "Punkte: {n}",
+    "lib.arcade.note.crazy-eights": "Käi kaart, mis ühtib äraviskepaki pealmise kaardiga masti või väärtuse poolest. Kaheksad on džokkerid: käi need igal ajal ja vali uus mast. Kui sul pole käidavat kaarti, tõmba pakist (kuni 3 kaarti); kui ikka ei saa käia, jätad käigu vahele. Võidab see, kes esimesena käe tühjaks saab. Kõrgematel tasemetel on rohkem vastaseid ja arvuti mängib targemini.",
+    "lib.arcade.opponent": "Vastane",
+    "lib.arcade.pileLeft": "Tõmbepakk: {n}",
+    "lib.arcade.pickSuit": "Vali uus mast",
+    "lib.arcade.aiSuit": "Arvuti valis {s}",
+    "lib.arcade.aiPass": "Arvuti jätab käigu vahele.",
+    "lib.arcade.mustPlay": "Sul on käidav kaart — käi see.",
+    "lib.arcade.youPass": "Tõmbasid 3 kaarti ja jätad käigu vahele.",
+    "lib.arcade.bcGourd": "Kõrvits",
+    "lib.arcade.bcCrab": "Krabi",
+    "lib.arcade.bcShrimp": "Krevett",
+    "lib.arcade.bcFish": "Kala",
+    "lib.arcade.bcRooster": "Kukk",
+    "lib.arcade.bcDeer": "Hirv",
+    "lib.arcade.yOnes": "Ühed",
+    "lib.arcade.yTwos": "Kahed",
+    "lib.arcade.yThrees": "Kolmed",
+    "lib.arcade.yFours": "Neljad",
+    "lib.arcade.yFives": "Viied",
+    "lib.arcade.ySixes": "Kuued",
+    "lib.arcade.yThree": "Kolm ühesugust",
+    "lib.arcade.yFour": "Neli ühesugust",
+    "lib.arcade.yFull": "Täismaja (25)",
+    "lib.arcade.ySmall": "Väike rida (30)",
+    "lib.arcade.yLarge": "Suur rida (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Juhus",
+    "lib.arcade.note.race": "Vajuta ← → (või puuduta soovitud rada), et rada vahetada ja eesolevatest autodest mööda hiilida. Sul on 3 elu; läbi kogu distants, et tase läbida. Kõrgematel tasemetel on rohkem radu ja kiirem liiklus.",
+    "lib.arcade.note.jump": "Tegelane hüppab ise. Vajuta ← → või lohista sõrmega, et maanduda järgmisele platvormile. Sinised platvormid liiguvad, pruunid lagunevad maandumisel. Ekraanilt välja kukkudes kaotad; roni piisavalt kõrgele, et tase läbida.",
+    "lib.arcade.note.miner": "Konks kõigub edasi-tagasi; vajuta tühikut, ↓ või puuduta mänguala, et see alla lasta. Suur kuld ja kivid on rasked ja tõusevad aeglaselt; teemandid on palju väärt. Jõua sihtsummani enne 60 sekundi möödumist.",
+    "lib.arcade.note.slicer": "Lohista sõrme või hiirt üle puuvilja, et see viilutada. Väldi musti pomme. Puuvilja mööda laskmine või pommi viilutamine maksab ühe elu (sul on 3). Viiluta piisavalt puuvilju, et tase läbida.",
+    "lib.arcade.note.hoops": "Vajuta väljakule, lohista alla (nagu linaga) ja lase lahti, et visata pall korvi poole. Mida kaugemale lohistad, seda tugevam on vise. Viska piisavalt korve oma visete piires; 4. tasemest liigub korv.",
+    "lib.arcade.note.bubbles": "Sihtimiseks liiguta hiirt või sõrme, seejärel klõpsa/puuduta või vajuta tühikut/Tulista, et tulistada. Ühenda 3 või rohkem sama värvi mulli, et need lõhkeda; mullid, mis kaotavad toe, kukuvad. Read vajuvad aeglaselt allapoole, nii et hoia need alumisest joonest eemal. Puhasta kõik mullid, et võita.",
+    "lib.arcade.note.chase": "Kasuta nooleklahve (või libistamist / nuppe), et pöörata ja süüa kõik täpid labürindis, vältides sind taga ajavaid kummitusi. Sul on 3 elu; kõrgematel tasemetel on rohkem kummitusi, kes on kiiremad ja ajavad sind targemini taga.",
+    "lib.arcade.height": "Kõrgus: {n}/{t} m",
+    "lib.arcade.money": "Raha: {n}/{t}",
+    "lib.arcade.sliced": "Viilutatud: {n}/{t}",
+    "lib.arcade.hoopScore": "Visatud: {n}/{t}",
+    "lib.arcade.shotsLeft": "Veel {n} viset",
+    "lib.arcade.bubbleLeft": "Veel {n} mulli",
+    "lib.arcade.shotsN": "Lasud: {n}",
+    "lib.arcade.dotsLeft": "Veel {n} täppi",
+    "lib.arcade.note.kakuro": "Täida valged lahtrid numbritega 1–9 nii, et iga rea- või veerulõik annaks musta lahtri vihje summa (üleval paremal olev arv kehtib paremale jäävale lõigule, all vasakul olev allpool olevale), ilma et lõigus number korduks. Liikumiseks kasuta nooleklahve.",
+    "lib.arcade.note.kenken": "Täida ruudustik arvudega 1 kuni N nii, et ükski arv ei kordu üheski reas ega veerus. Iga paksu joonega ümbritsetud rühm näitab sihtarvu ja tehet (+, −, ×, ÷): rühma arvud peavad andma selle tulemuse. Liikumiseks kasuta nooleklahve.",
+    "lib.arcade.note.wordGuess": "Arva ära salajane ingliskeelne sõna. Pärast iga katset tähendab roheline õiget tähte õiges kohas, kollane tähte, mis on sõnas, aga mujal, ja hall tähte, mida sõnas pole. Kirjuta klaviatuuril või kasuta ekraaniklahve ja vajuta sisestamiseks Enter. Kõrgematel tasemetel on sõnad pikemad ja katseid vähem.",
+    "lib.arcade.note.hangman": "Arva ära salajane ingliskeelne sõna, valides tähti ükshaaval. Iga vale täht lisab poodud kujule ühe osa; kui valesid arvamisi enam ei ole, kaotad. Kõrgematel tasemetel on sõnad pikemad ja lubatud vigu vähem.",
+    "lib.arcade.note.scramble": "Järjesta segatud tähed õigeks ingliskeelseks sõnaks ja kirjuta see vastusekasti. Igal tasemel on 5 sõna; lahenda vähemalt 4 enne iga sõna taimeri lõppu, et tase läbida. Vihje paljastab esimese tähe.",
+    "lib.arcade.cellsLeft": "Veel {n} tühja lahtrit",
+    "lib.arcade.wrongN": "{n} lahtrit pole õiged.",
+    "lib.arcade.noError": "Seni pole vigu leitud.",
+    "lib.arcade.tooShort": "Liiga vähe tähti",
+    "lib.arcade.answerIs": "Vastus: {w}",
+    "lib.arcade.livesLeft": "Veel {n} eksimist lubatud",
+    "lib.arcade.yourAnswer": "Sinu vastus",
+    "lib.arcade.skip": "Jäta vahele",
+    "lib.arcade.notThis": "Pole õige, proovi uuesti.",
+    "lib.arcade.startsWith": "Esimene täht: {c}",
+    "lib.arcade.note.domino": "Igaüks saab 7 kivi; alustab see, kellel on suurim topelt. Käi kivi, mille arv ühtib ketti ühe otsaga. Kui sa ei saa käia, tõmba varudest, kuni saad; kui need on otsas, jätad käigu vahele. Võidab see, kes esimesena käe tühjaks saab; kui mõlemad on blokeeritud, võidab väiksema silmasummaga mängija.",
+    "lib.arcade.note.hearts": "Neli mängijat, igaüks 13 kaarti. Alustab risti 2. Pead masti järgima, kui saad. Iga süda on 1 punkt ja poti emand 13; võtja saab võtte punktid. Madalam on parem ja kõigi 26 punkti võtmine annab kõigile teistele 26. Südamega ei saa alustada enne, kui süda on käidud. Pärast viimast kätt võidad, kui su skoor on madalaim (või jagab madalaimat).",
+    "lib.arcade.note.holdem": "Üks-ühele arvuti vastu, ainult virtuaalsete žetoonidega. Kumbki mängija saab 2 privaatset kaarti ja avatakse 5 ühiskaarti (flop, turn, river); tee parim 5 kaardi käsi. Igas ringis võid loobuda (fold), maksta või passida (call/check) või tõsta (raise). Pimedad tõusevad iga 4 käe järel. Võidad, kui arvutil saavad žetoonid otsa, või kui sul on pärast käte piiri rohkem žetoone. Päris raha pole kaasatud.",
+    "lib.arcade.dmDraw": "Tõmba kivi",
+    "lib.arcade.dmPass": "Jäta vahele",
+    "lib.arcade.dmEmpty": "Ühtegi kivi pole veel käidud",
+    "lib.arcade.dmYard": "Varud: {n} kivi",
+    "lib.arcade.dmLeft": "Vasak ots",
+    "lib.arcade.dmRight": "Parem ots",
+    "lib.arcade.dmTie": "Viik! Mõlemad pooled on võrdsed.",
+    "lib.arcade.hrHand": "Käsi {n}/{t}",
+    "lib.arcade.hrTook": "{p} võtab võtte ({n} punkti).",
+    "lib.arcade.hrIllegal": "Seda kaarti ei saa käia (järgi masti, südamega ei saa veel alustada).",
+    "lib.arcade.blinds": "Suur pime: {n}",
+    "lib.arcade.pot": "Pott: {n}",
+    "lib.arcade.fold": "Loobu",
+    "lib.arcade.check": "Passi",
+    "lib.arcade.callN": "Maksa {n}",
+    "lib.arcade.raiseTo": "Tõsta summani",
+    "lib.arcade.raiseN": "Tõsta summani {n}",
+    "lib.arcade.thOppFold": "Arvuti loobub; sina võidad selle käe.",
+    "lib.arcade.thYouFold": "Sa loobusid.",
+    "lib.arcade.thOppWin": "Arvuti võidab selle käe",
+    "lib.arcade.thYouWin": "Sina võidad selle käe",
+    "lib.arcade.thSplit": "Jagatud pott",
+    "lib.arcade.thAiFold": "Arvuti loobub.",
+    "lib.arcade.thAiRaise": "Arvuti tõstab summani {n}.",
+    "lib.arcade.thAiCall": "Arvuti maksab / passib.",
+    "lib.arcade.hand.high": "Kõrge kaart",
+    "lib.arcade.hand.pair": "Paar",
+    "lib.arcade.hand.twoPair": "Kaks paari",
+    "lib.arcade.hand.trips": "Kolm ühesugust",
+    "lib.arcade.hand.straight": "Rida",
+    "lib.arcade.hand.flush": "Mast",
+    "lib.arcade.hand.full": "Täismaja",
+    "lib.arcade.hand.quads": "Neli ühesugust",
+    "lib.arcade.hand.sflush": "Mastirida",
+    "lib.arcade.note.nback": "3x3 ruudustikul süttib ükshaaval üks ruut. Vajuta „Sobib!” (või tühikut), kui valgustatud koht on sama mis N sammu tagasi (N on ülal näidatud). Taseme läbimiseks on vaja vähemalt 80% õigeid otsuseid. Kõrgematel tasemetel on N suurem.",
+    "lib.arcade.nbMatch": "Sobib!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Õigeid: {a} · Valesid: {b}",
+    "lib.arcade.nbAcc": "Täpsus: {n}%",
+    "lib.arcade.note.clicker": "Klõpsa küpsisel, et küpsiseid küpsetada, ja kasuta neid abiliste jaoks, kes küpsetavad automaatselt (hinnad tõusevad iga ostuga). Küpseta 2 minutiga sihtarv küpsiseid, et tase läbida.",
+    "lib.arcade.ckCursor": "Kursor",
+    "lib.arcade.ckGrandma": "Küpsetaja vanaema",
+    "lib.arcade.ckFarm": "Talu",
+    "lib.arcade.ckMine": "Suhkrukaevandus",
+    "lib.arcade.ckFactory": "Tehas",
+    "lib.arcade.ckCookie": "Küpsis",
+    "lib.arcade.ckEarned": "Küpsetatud: {n}/{t}",
+    "lib.arcade.chips2": "Küpsiseid: {n}",
+    "lib.arcade.ckCps": "{n} küpsist sekundis",
+    "lib.arcade.note.onet": "Vali kaks ühesugust plaati, mida saab ühendada kuni 2 pöördega teega, mis ei lõika teisi plaate, et need eemaldada. Eemalda kõik plaadid enne aja lõppu, et võita. Kui käike enam pole, võid segada (piiratud arv kordi).",
+    "lib.arcade.shuffle": "Sega",
+    "lib.arcade.tilesLeft": "Veel {n} plaati",
+    "lib.arcade.autoShuffle": "Käike pole enam — segati automaatselt.",
+    "lib.arcade.note.jigsaw": "Pilt on tükkideks lõigatud ja segatud. Puuduta ühte tükki ja siis teist, et need vahetada, ning ehita pilt uuesti üles etalonpildi järgi. Õiges kohas olevatel tükkidel on roheline ääris. Kõrgematel tasemetel on rohkem tükke.",
+    "lib.arcade.jgRef": "Etalonpilt",
+    "lib.arcade.jgPlaced": "Õigel kohal: {a}/{b}",
+    "lib.arcade.golfStrokes": "Lööke: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Sa mängid valgete nuppudega, liikudes üleval paremalt ringiga alla paremale (sinu kodu). Veereta täringuid, klõpsa nupul, mida soovid liigutada, ja siis esiletõstetud sihtkohal. Kui maandud punktile, kus on täpselt üks vastase nupp, lööd selle keskmisele ribale ja see mängija peab selle esmalt tagasi tooma. Sa ei saa maanduda punktile, kus on kaks või rohkem vastase nuppu. Kui kõik 15 su nuppu on kodulaual (viimased 6 punkti), võid need välja viia. Võidab see, kes viib esimesena välja kõik 15.",
+    "lib.arcade.bgRoll": "Veereta täringuid",
+    "lib.arcade.bgOff": "Vii välja",
+    "lib.arcade.bgRollFirst": "Veereta täringuid",
+    "lib.arcade.bgInfo": "Väljas: sina {a} · arvuti {b} · Pipid: {c} / {d}",
+    "lib.arcade.youNoMove": "Sul pole enam lubatud käike.",
+    "lib.arcade.note.tienlen": "Neli mängijat, igaüks 13 kaarti. Kaartide järjestus madalamast kõrgemani: 3, 4, … K, A, 2; mastid madalamast kõrgemani: poti, risti, ruutu, süda. Alustab see, kellel on poti 3. Käi üks kaart, paar, kolm ühesugust, neli ühesugust või rida 3 või rohkemast järjestikusest kaardist (ilma kahtedeta). Järgmine mängija peab käima sama tüüpi ja kõrgema või jätma käigu vahele; neli ühesugust võivad lüüa ühe kahe või kahe paari. Kui kõik teised jätavad käigu vahele, võib viimane käinud mängija alustada millega tahes. Võidab see, kes esimesena käe tühjaks saab. Vali kaardid ja vajuta Käi.",
+    "lib.arcade.tlPlay": "Käi",
+    "lib.arcade.tlPass": "Jäta vahele",
+    "lib.arcade.tlClear": "Tühista valik",
+    "lib.arcade.tlPassed": "jättis vahele",
+    "lib.arcade.tlFree": "Laud on tühi — võid alustada millega tahes",
+    "lib.arcade.tlLeft": "Kaarte alles: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} jätab käigu vahele.",
+    "lib.arcade.tlBad": "Valitud kaardid ei moodusta kehtivat kombinatsiooni.",
+    "lib.arcade.tlLow": "See kombinatsioon pole laual oleva löömiseks piisavalt kõrge."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Reaktsioonitest",
       "desc": "Klõpsa hetkel, kui ekraan muutub roheliseks; sinu 5 vooru keskmine peab mahtuma taseme piiri sisse, mis muutub 10 taseme jooksul rangemaks."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Külva seemneid aukudesse, võta vastase seemned ja käi uuesti, kui lõpetad oma hoidlas; mängi arvuti vastu 10 tasemel lihtsast raskeni."
+    },
+    "snakes-ladders": {
+      "name": "Maod ja redelid",
+      "desc": "Veereta täringut ruudust 1 kuni 100, roni redelitel, väldi madusid ja jõua finišisse enne vastaseid; 10 taset."
+    },
+    "nine-mens-morris": {
+      "name": "Veskimäng (Nine Men’s Morris)",
+      "desc": "Aseta, libista ja „lenda” nuppudega, et saada kolm ritta ja eemaldada vastase nuppe; mängi arvuti vastu 10 tasemel."
+    },
+    "battleship": {
+      "name": "Laevade pommitamine",
+      "desc": "Leia ja uputa arvuti laevastik 10x10 ruudustikul enne, kui see uputab sinu oma; 10 taset, kus arvuti järeldab üha targemini."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Kõrvits-Krabi-Kala-Krevett)",
+      "desc": "Traditsiooniline Vietnami täringumäng: panusta virtuaalsete müntidega loomadele ja raputa kolme täringut; jõua sihtmüntideni 10 tasemel (päris raha pole kaasatud)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Panusta Mängijale, Pankurile või Viigile tavareeglite järgi jagatud kaartidega, kasutades virtuaalseid münte; jõua sihtmüntideni 10 tasemel (päris raha pole kaasatud)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (kolme kaardi mäng)",
+      "desc": "Võrdle oma 3 kaardi kätt jaotajaga: kolm ühesugust, kolm piltkaarti, seejärel 9 punkti kuni 0; virtuaalsed mündid, 10 taset, päris raha pole kaasatud."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Märgi väljakuulutatud numbrid oma 5x5 kaardile ja hüüa BINGO enne arvutivastaseid; numbreid kuulutatakse 10 tasemel üha kiiremini."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (viis täringut)",
+      "desc": "Veereta viit täringut, jäta head alles ja täida 13 punktilahtrit; jõua sihtpunktideni 10 tasemel."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Hullud kaheksad)",
+      "desc": "Sobita mast või väärtus, kaheksad vahetavad masti; saa käsi tühjaks enne 1–3 arvutivastast 10 tasemel."
+    },
+    "car-race": {
+      "name": "Autorallil põigeldes",
+      "desc": "Vaheta radu, et eesolevatest autodest mööda hiilida, ja sõida kogu distants läbi; 10 taset, rohkem radu ja kiirem liiklus."
+    },
+    "sky-jump": {
+      "name": "Taevahüpe",
+      "desc": "Põrka platvormilt platvormile ja roni nii kõrgele kui võimalik kukkumata; 10 taset, kus platvormid on hõredamad, liikuvad ja purunevad."
+    },
+    "gold-miner": {
+      "name": "Kullakaevur",
+      "desc": "Lase konks alla, et tõsta kuld ja teemandid üles, väldi rasket kivi ja jõua 60 sekundiga sihtsummani; 10 taset."
+    },
+    "fruit-slice": {
+      "name": "Puuviljaviilutaja",
+      "desc": "Libista sõrme, et viilutada üles lendavaid puuvilju ja põigelda pommidest; 10 taset, rohkem puuvilju ja rohkem pomme."
+    },
+    "basketball": {
+      "name": "Korvpalliviskamine",
+      "desc": "Lohista ja lase lahti, et visata pall piiratud arvu viskega korvi; 10 taset, 4. tasemest liikuva korviga."
+    },
+    "bubble-shooter": {
+      "name": "Mullilaskja",
+      "desc": "Tulista mulle, et ühendada 3 või rohkem sama värvi ja need lõhkeda, ning puhasta kõik enne, kui need põhja jõuavad; 10 taset, rohkem värve."
+    },
+    "dot-chase": {
+      "name": "Täpijaht",
+      "desc": "Söö kõik täpid labürindis, vältides sind taga ajavaid kummitusi; 10 taset, rohkem ja targemad kummitused."
+    },
+    "kakuro": {
+      "name": "Kakuro (ristsummad)",
+      "desc": "Täida valged lahtrid numbritega 1–9 nii, et iga lõik annaks vihjega võrdse summa ilma kordusteta; 10 taset, ruudustikud 5x5 kuni 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Täida ruudustik ilma kordusteta ridades ja veergudes nii, et iga rühm annaks oma tehtega sihtarvu; 10 taset, ruudustikud 3x3 kuni 6x6."
+    },
+    "word-guess": {
+      "name": "Sõnaarvamine (Wordle'i stiilis)",
+      "desc": "Arva ära salajane ingliskeelne sõna rohelise, kollase ja halli vihje abil; 10 taset 4–6-tähelisi sõnu ja üha vähem katseid."
+    },
+    "hangman": {
+      "name": "Poomismäng (Hangman)",
+      "desc": "Arva ingliskeelne sõna täht-tähe haaval enne, kui valed arvamised otsa saavad; 10 taset, pikemad sõnad ja vähem vigu."
+    },
+    "word-scramble": {
+      "name": "Sõnasegadus (anagramm)",
+      "desc": "Järjesta segatud tähed ingliskeelseks sõnaks enne aja lõppu; 10 taset, 5 sõna taseme kohta."
+    },
+    "domino": {
+      "name": "Doomino",
+      "desc": "Sobita kivid ketti ükskõik kummasse otsa ja saa käsi tühjaks enne arvutit; 10 taset, kus arvuti läheb targemaks."
+    },
+    "hearts": {
+      "name": "Hearts (Südamed)",
+      "desc": "Väldi südameid ja poti emandat nelja mängija kaardimängus; madalam skoor on parem; 10 taset üha targemate arvutimängijate vastu."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuaalsed žetoonid)",
+      "desc": "Üks-ühele poker arvuti vastu virtuaalsete žetoonidega: loobu, maksa või tõsta ja võida, kui arvutil žetoonid otsa saavad; 10 taset, päris raha pole kaasatud."
+    },
+    "n-back": {
+      "name": "N-Back mälumäng",
+      "desc": "Jälgi valgustatud ruutu ja vajuta Sobib, kui see on sama mis N sammu tagasi; 10 taset, N kuni 4."
+    },
+    "cookie-clicker": {
+      "name": "Küpsiseklõpsaja",
+      "desc": "Klõpsa küpsiste küpsetamiseks, osta automaatselt küpsetavaid abilisi ja jõua 2 minutiga sihini; 10 taset."
+    },
+    "tile-connect": {
+      "name": "Plaatide ühendamine (Onet'i stiilis)",
+      "desc": "Ühenda ühesugused plaadid kuni kahe pöördega teega ja puhasta laud enne aja lõppu; 10 taset, üha suuremad lauad."
+    },
+    "jigsaw": {
+      "name": "Pildipuzzle",
+      "desc": "Vaheta segatud tükke, et pilt uuesti kokku panna; 10 taset 3x3 kuni 6x6 tükini."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Tõmba tagasi ja lase lahti, et lüüa pall löögipiirangu piires auku; 10 rada seinte ja liivaga."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Veereta täringuid, vii oma nupud koju ja vii need välja enne arvutit, lüües teel selle üksikuid nuppe; 10 taset."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Kolmteist)",
+      "desc": "Vietnami nelja mängija kaardimäng: käi üksikuid kaarte, paare, ridu ja nelikuid, et esimesena käsi tühjaks saada; 10 taset."
     }
   },
   "s": {

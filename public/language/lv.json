@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Izvēlieties krāsu, ar kuru aizpildīt visu jūsu kontrolēto apgabalu augšējā kreisajā stūrī; tas aprij blakus esošās tās pašas krāsas rūtiņas. Ļaujiet visam laukumam kļūt vienā krāsā atļautajā gājienu skaitā.",
     "lib.arcade.note.mastermind": "Dators paslēpj krāsu rindu. Izvēlieties krāsu katrai vietai, tad nospiediet Minēt. Melns tapiņš = pareiza krāsa pareizajā vietā; balts tapiņš = pareiza krāsa nepareizajā vietā. Atminiet kodu, pirms beidzas mēģinājumi.",
     "lib.arcade.note.hanoi": "Pārvietojiet visus diskus uz pēdējo stieni. Vienlaikus pārvietojiet tikai stieņa augšējo disku un nekad nelieciet lielāku disku uz mazāka. Noklikšķiniet uz sākuma stieņa, tad uz mērķa stieņa.",
-    "lib.arcade.note.pipes": "Noklikšķiniet uz flīzes, lai pagrieztu cauruli par 90°. Savienojiet visas caurules vienā tīklā bez atvērtiem galiem (atvērtie gali ir sarkani)."
+    "lib.arcade.note.pipes": "Noklikšķiniet uz flīzes, lai pagrieztu cauruli par 90°. Savienojiet visas caurules vienā tīklā bez atvērtiem galiem (atvērtie gali ir sarkani).",
+    "lib.arcade.pongScore": "Tu {a} – {b} dators (līdz {t})",
+    "lib.arcade.kills": "Iznīcināti: {n}/{t}",
+    "lib.arcade.rocksLeft": "Atlikuši {n} akmeņi",
+    "lib.arcade.timeLeft": "Atlicis {n} s",
+    "lib.arcade.stepsN": "Soļi: {n}",
+    "lib.arcade.crossed": "Mājās: {n}/{t}",
+    "lib.arcade.pipes": "Izbrauktas caurules: {n}/{t}",
+    "lib.arcade.distance": "Attālums: {n}/{t} m",
+    "lib.arcade.speedN": "Ātrums: {n}",
+    "lib.arcade.note.whack-a-mole": "Kurmji lien ārā no alām — noklikšķini vai pieskaries kurmim, lai to notrāpītu. Notrāpi pietiekami daudz kurmju, pirms beidzas laiks. No 4. līmeņa parādās bumbas: trāpot bumbai, zaudē punktus.",
+    "lib.arcade.hole": "Ala",
+    "lib.arcade.hitsN": "Trāpījumi: {n}/{t}",
+    "lib.arcade.note.simon": "Spēle atskaņo krāsu un skaņu virkni — atkārto to tādā pašā secībā. Katrs raunds pievieno vienu soli. Atceries nepieciešamo garumu, lai izietu līmeni. No 7. līmeņa ir 6 pogas.",
+    "lib.arcade.seqN": "Virkne: {n}/{t}",
+    "lib.arcade.watch": "Skaties…",
+    "lib.arcade.yourTurnShort": "Tava kārta",
+    "lib.arcade.note.aim-trainer": "Mērķi parādās nejauši un ātri pazūd — trāpi pēc iespējas vairāk. Tie kļūst mazāki un ātrāki. Trāpi pietiekami daudz mērķu, pirms garām ir vairāk nekā 5 reizes, lai izietu līmeni.",
+    "lib.arcade.missN": "Garām: {n}/{t}",
+    "lib.arcade.answer": "Atbilde",
+    "lib.arcade.note.quick-math": "Risini galvā pēc iespējas ātrāk: ieraksti atbildi un nospied Enter. Katram jautājumam ir laika limits; nepareiza atbilde vai laika beigas maksā dzīvību (tev ir 3). Atbildi pareizi uz pietiekami daudziem jautājumiem, lai izietu līmeni.",
+    "lib.arcade.correctN": "Pareizi: {n}/{t}",
+    "lib.arcade.note.reaction": "Gaidi, kamēr ekrāns kļūst zaļš, un tad klikšķini pēc iespējas ātrāk. Pārāk agrs klikšķis ir pārkāpums (3 pārkāpumi — zaudējums). Tavam vidējam rezultātam 5 raundos jābūt labākam par līmeņa limitu.",
+    "lib.arcade.roundN": "Vārds {n}/{t}",
+    "lib.arcade.limitMs": "Limits: {n} ms",
+    "lib.arcade.rxWait": "Gaidi zaļo…",
+    "lib.arcade.rxGo": "KLIKŠĶINI!",
+    "lib.arcade.rxEarly": "Pārāk agri!",
+    "lib.arcade.gameArea": "Spēles laukums",
+    "lib.arcade.note.pong": "Kustini peli, velc ar pirkstu vai izmanto taustiņus ← →, lai vadītu apakšējo raketi. Aizsit bumbiņu garām datoram; pirmais, kurš sasniedz 5 punktus, uzvar. Bumbiņa paātrinās ar katru sitienu.",
+    "lib.arcade.note.space-shooter": "Kustini peli, velc ar pirkstu vai izmanto taustiņus ← →, lai vadītu; tavs kuģis šauj automātiski. Iznīcini pietiekami daudz ienaidnieku kuģu, lai izietu līmeni, un izvairies no sadursmēm un ienaidnieka uguns. Tev ir 3 dzīvības.",
+    "lib.arcade.note.asteroids": "← → pagriež kuģi, ↑ dod vilci, atstarpes taustiņš šauj. Iznīcini visus akmeņus, lai izietu līmeni; lielie akmeņi sadalās mazākos. Kuģis pārlido pāri ekrāna malām. Tev ir 3 dzīvības.",
+    "lib.arcade.note.maze": "Izmanto bulttaustiņus (vai velc ar pirkstu, vai pogas), lai nokļūtu no zaļā punkta līdz sarkanajam karogam, pirms beidzas laiks. No 5. līmeņa labirintā ir migla: redzi tikai sev apkārt, un apmeklētās vietas tiek atcerētas.",
+    "lib.arcade.note.road-cross": "Izmanto bulttaustiņus, velc ar pirkstu vai pogas, lai varde lēktu no apakšas uz augšu. Izvairies no satiksmes; no 5. līmeņa augšdaļā ir upe, tāpēc lec uz peldošajiem baļķiem. Nokļūsti mājās 3 reizes, lai izietu līmeni. Tev ir 3 dzīvības.",
+    "lib.arcade.note.flappy": "Pieskaries spēles laukumam, nospied atstarpi vai ↑, lai uzsistu spārniem. Lido cauri spraugām starp caurulēm, neskarot cauruli, zemi vai griestus. Augstākos līmeņos spraugas ir šaurākas un lidojums ātrāks.",
+    "lib.arcade.note.runner": "Pieskaries spēles laukumam, nospied atstarpi vai ↑, lai pārlēktu kaktusus; tur nospiestu ↓, lai pieliektos zem augstajiem putniem (vai pārlēc zemajiem). Noskrie pietiekami tālu, lai izietu līmeni. Ātrums pastāvīgi pieaug.",
+    "lib.arcade.fire": "Šaut",
+    "lib.arcade.jump": "Lēkt",
+    "lib.arcade.aimTarget": "Mērķis",
+    "lib.game.soundOn": "Ieslēgt skaņu",
+    "lib.game.soundOff": "Izslēgt skaņu",
+    "lib.arcade.note.kalah": "Tu spēlē apakšējo rindu, dators — augšējo; lielā bedre labajā pusē ir tava krātuve. Noklikšķini uz bedres, lai paņemtu visas tās sēklas un izkaisītu tās pretēji pulksteņrādītāja virzienam, pa vienai katrā bedrē (izlaižot pretinieka krātuvi). Ja pēdējā sēkla nokrīt tavā krātuvē, tu ej vēlreiz; ja tā nokrīt tukšā bedrē tavā pusē pretī bedrei ar sēklām, tu iegūsti šīs sēklas. Kad viena puse ir tukša, otras puses sēklas nonāk tās īpašnieka krātuvē; uzvar lielākā krātuve.",
+    "lib.arcade.note.snakes": "Met kauliņu un pārvietojies par tik laukumiņiem, no 1 līdz 100. Ja nokļūsti kāpņu apakšā, uzkāp augšā; ja čūskas galvā, noslīdi lejā. No 4. līmeņa uz 100 jānokļūst ar precīzu skaitli. Augstākos līmeņos ir vairāk čūsku, mazāk kāpņu un vairāk pretinieku. Pirmais, kurš sasniedz 100, uzvar.",
+    "lib.arcade.square": "Laukums {n}",
+    "lib.arcade.ladderUp": "Augšā pa kāpnēm!",
+    "lib.arcade.snakeDown": "Čūska tevi norija!",
+    "lib.arcade.needExact": "Lai nokļūtu uz 100, vajag precīzu skaitli.",
+    "lib.arcade.note.nmm": "Katrai pusei ir 9 kauliņi. 1. fāze: pēc kārtas liec kauliņus uz tukšiem punktiem. 2. fāze: pabīdi kauliņu uz blakus esošu tukšu punktu. Kad palikuši tikai 3 kauliņi, vari „lidot“ uz jebkuru tukšu punktu. Izveido trīs rindā („dzirnavas“), lai noņemtu pretinieka kauliņu (vispirms tos, kas nav dzirnavās). Zaudē, kad palikuši 2 kauliņi vai nevari kustēties. Tu spēlē ar baltajiem un sāc pirmais.",
+    "lib.arcade.inHand": "Jānoliek: {a} · {b}",
+    "lib.arcade.removePiece": "Izvēlies pretinieka kauliņu, ko noņemt.",
+    "lib.arcade.enemyWaters": "Ienaidnieka ūdeņi (klikšķini, lai šautu)",
+    "lib.arcade.yourFleet": "Tava flote",
+    "lib.arcade.note.battleship": "Katrai pusei ir 5 kuģi (garumi 5, 4, 3, 3, 2), nejauši izvietoti 10x10 režģī. Pēc kārtas šauj uz rūtiņu: trāpījums kļūst sarkans, garām — gaiši zils, un, trāpot visām kuģa rūtiņām, tas nogrimst. Uzvar tas, kurš pirmais nogremdē visu ienaidnieka floti. Augstākos līmeņos dators gudrāk nosaka tavu kuģu atrašanās vietu.",
+    "lib.arcade.shipsLeft": "Atlikuši kuģi: tu {a} · ienaidnieks {b}",
+    "lib.arcade.theySunk": "Ienaidnieks nogremdēja vienu tavu kuģi!",
+    "lib.arcade.theyHit": "Ienaidnieks trāpīja vienam tavam kuģim.",
+    "lib.arcade.theyMiss": "Ienaidnieks netrāpīja.",
+    "lib.arcade.youSunk": "Tu nogremdēji ienaidnieka kuģi!",
+    "lib.arcade.youHit": "Trāpījums!",
+    "lib.arcade.youMiss": "Garām.",
+    "lib.arcade.shake": "Kratīt",
+    "lib.arcade.clearBets": "Dzēst likmes",
+    "lib.arcade.note.bau-cua": "Tikai virtuālas monētas — nekādas īstas naudas. Izvēlies žetona vērtību, klikšķini uz dzīvniekiem, lai liktu likmes, un nospied Kratīt. Par katru kauliņu, kas atbilst dzīvniekam, uz kuru liki, tu saņem savu likmi atpakaļ plus tikpat daudz par katru sakritību. Sasniedz mērķa monētu skaitu atļautajos raundos, lai izietu līmeni.",
+    "lib.arcade.note.baccarat": "Tikai virtuālas monētas — nekādas īstas naudas. Liec uz Spēlētāju, Banķieri vai Neizšķirtu un nospied Dalīt. Rokas vērtība ir summas pēdējais cipars (A = 1, 2–9 nominālvērtība, 10/J/Q/K = 0); uzvar roka, kas tuvāka 9, un trešās kārtis tiek vilktas pēc standarta noteikumiem. Spēlētājs maksā 1:1, Banķieris 0,95:1, Neizšķirts 8:1 (likmes uz Spēlētāju/Banķieri neizšķirta gadījumā tiek atdotas). Sasniedz mērķa monētu skaitu atļautajos raundos, lai izietu līmeni.",
+    "lib.arcade.banker": "Banķieris",
+    "lib.arcade.player": "Spēlētājs",
+    "lib.arcade.tie": "Neizšķirts",
+    "lib.arcade.openCards": "Atklāt",
+    "lib.arcade.note.bai-cao": "Tikai virtuālas monētas — nekādas īstas naudas. Katra puse saņem 3 kārtis. Roku vērtē pēc summas pēdējā cipara (A = 1, 2–9 nominālvērtība, 10/J/Q/K = 10, t. i., 0 punkti). Kārtība: trīs vienādas („Sáp“) ir augstākās, tad trīs figūras („Ba tiên“), tad 9 punkti līdz 0. Veic likmi, nospied Dalīt un tad Atklāt, lai salīdzinātu ar dīleri. No 6. līmeņa neizšķirta gadījumā uzvar dīleris. Sasniedz mērķa monētu skaitu atļautajos raundos, lai izietu līmeni.",
+    "lib.arcade.caoSap": "Trīs vienādas",
+    "lib.arcade.caoBaTien": "Trīs figūras",
+    "lib.arcade.caoPts": "{n} p.",
+    "lib.arcade.note.bingo": "Dators izsauc skaitļus no 1 līdz 75. Kad izsauktais skaitlis ir uz tavas kartītes, noklikšķini uz tā, lai to atzīmētu (centrs ir bez maksas). Pabeidz rindu, kolonnu vai diagonāli un nospied BINGO! — tev jāpārspēj datora pretinieki. Nepatiess BINGO! uz dažām sekundēm bloķē pogu. Augstākos līmeņos skaitļus izsauc ātrāk un pretinieku ir vairāk.",
+    "lib.arcade.opponentsN": "Pretinieki: {n}",
+    "lib.arcade.falseBingo": "Vēl nav pilnas līnijas! Poga bloķēta uz 3 sekundēm.",
+    "lib.arcade.bingoGo": "Skaitļi tiek izsaukti!",
+    "lib.arcade.note.yahtzee": "Katrā gājienā met 5 kauliņus līdz 3 reizēm: noklikšķini uz kauliņa, lai to paturētu, tad nospied Mest, lai pārmestu pārējos. Pēc tam izvēlies tabulas lodziņu, lai iegūtu punktus (katrs lodziņš tiek izmantots vienu reizi; lodziņš, kas neder, dod 0). 13 gājieni. Lodziņi Vieninieki–Seši pievieno 35 bonusu, ja to summa ir 63 vai vairāk. Sasniedz līmeņa mērķa punktus, lai uzvarētu.",
+    "lib.arcade.turnN": "Gājiens {n}/13",
+    "lib.arcade.pickCat": "Izvēlies lodziņu punktu iegūšanai",
+    "lib.arcade.rollsLeft": "Mest (atlicis {n})",
+    "lib.arcade.upperBonus": "Bonuss Vieninieki–Seši",
+    "lib.arcade.scored": "Iegūti {n}",
+    "lib.arcade.note.crazy-eights": "Izspēlē kārti, kas sakrīt ar atmesto kāršu kaudzes augšējo kārti pēc masts vai vērtības. Astotnieki ir džokeri: izspēlē jebkurā brīdī un izvēlies jaunu mastu. Ja nav ko spēlēt, velc no kaudzes (līdz 3 kārtīm); ja joprojām nevari spēlēt, izlaid gājienu. Pirmais, kurš iztukšo rokas, uzvar. Augstākos līmeņos pretinieku ir vairāk un dators spēlē gudrāk.",
+    "lib.arcade.opponent": "Pretinieks",
+    "lib.arcade.pileLeft": "Velkamā kaudze: {n}",
+    "lib.arcade.pickSuit": "Izvēlies jaunu mastu",
+    "lib.arcade.aiSuit": "Dators izvēlējās {s}",
+    "lib.arcade.aiPass": "Dators izlaiž gājienu.",
+    "lib.arcade.mustPlay": "Tev ir kārts, ko var izspēlēt — izspēlē to.",
+    "lib.arcade.youPass": "Tu vilki 3 kārtis un izlaid gājienu.",
+    "lib.arcade.bcGourd": "Ķirbis",
+    "lib.arcade.bcCrab": "Krabis",
+    "lib.arcade.bcShrimp": "Garnele",
+    "lib.arcade.bcFish": "Zivs",
+    "lib.arcade.bcRooster": "Gailis",
+    "lib.arcade.bcDeer": "Briedis",
+    "lib.arcade.yOnes": "Vieninieki",
+    "lib.arcade.yTwos": "Divnieki",
+    "lib.arcade.yThrees": "Trijnieki",
+    "lib.arcade.yFours": "Četrnieki",
+    "lib.arcade.yFives": "Piecnieki",
+    "lib.arcade.ySixes": "Seši",
+    "lib.arcade.yThree": "Trīs vienādi",
+    "lib.arcade.yFour": "Četri vienādi",
+    "lib.arcade.yFull": "Pilna māja (25)",
+    "lib.arcade.ySmall": "Mazā taisne (30)",
+    "lib.arcade.yLarge": "Lielā taisne (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Iespēja",
+    "lib.arcade.note.race": "Spied ← → (vai pieskaries joslai, kuru vēlies), lai mainītu joslas un izvairītos no automašīnām priekšā. Tev ir 3 dzīvības; nobrauc visu attālumu, lai izietu līmeni. Augstākos līmeņos ir vairāk joslu un ātrāka satiksme.",
+    "lib.arcade.note.jump": "Varonis lec pats. Spied ← → vai velc ar pirkstu, lai nolaistos uz nākamās platformas. Zilās platformas kustas, brūnās lūst, kad uz tām nolaižas. Izkrišana no ekrāna nozīmē zaudējumu; uzkāp pietiekami augstu, lai izietu līmeni.",
+    "lib.arcade.note.miner": "Āķis šūpojas uz priekšu un atpakaļ; nospied atstarpi, ↓ vai pieskaries laukumam, lai to nolaistu. Liels zelts un akmeņi ir smagi un velkas lēni; dimanti ir vērtīgi. Sasniedz mērķa naudas summu, pirms paiet 60 sekundes.",
+    "lib.arcade.note.slicer": "Velc ar pirkstu vai peli pāri augļiem, lai tos pārgrieztu. Izvairies no melnajām bumbām. Garām palaists auglis vai pārgriezta bumba maksā dzīvību (tev ir 3). Pārgriez pietiekami daudz augļu, lai izietu līmeni.",
+    "lib.arcade.note.hoops": "Piespied laukumā, velc uz leju (kā ar prāmi) un atlaid, lai iemestu bumbu grozā. Jo tālāk velc, jo stiprāks metiens. Iemet pietiekami daudz grozu savos metienos; no 4. līmeņa grozs kustas.",
+    "lib.arcade.note.bubbles": "Kustini peli vai pirkstu, lai tēmētu, tad klikšķini/pieskaries vai nospied atstarpi/Šaut, lai raidītu. Savieno 3 vai vairāk vienas krāsas burbuļus, lai tie uzplīstu; burbuļi, kas zaudē atbalstu, nokrīt. Rindas lēnām nolaižas, tāpēc neļauj tām tikt pie apakšējās līnijas. Notīri visus burbuļus, lai uzvarētu.",
+    "lib.arcade.note.chase": "Izmanto bulttaustiņus (vai velc / pogas), lai pagrieztos un apēstu visus labirinta punktus, izvairoties no spokiem, kas tevi vajā. Tev ir 3 dzīvības; augstākos līmeņos spoku ir vairāk, tie ir ātrāki un vajā gudrāk.",
+    "lib.arcade.height": "Augstums: {n}/{t} m",
+    "lib.arcade.money": "Nauda: {n}/{t}",
+    "lib.arcade.sliced": "Pārgriezti: {n}/{t}",
+    "lib.arcade.hoopScore": "Iemesti: {n}/{t}",
+    "lib.arcade.shotsLeft": "Atlikuši {n} metieni",
+    "lib.arcade.bubbleLeft": "Atlikuši {n} burbuļi",
+    "lib.arcade.shotsN": "Metieni: {n}",
+    "lib.arcade.dotsLeft": "Atlikuši {n} punkti",
+    "lib.arcade.note.kakuro": "Aizpildi baltās rūtiņas ar cipariem 1–9 tā, lai katras rindas summa atbilstu norādei melnajā rūtiņā (skaitlis augšējā labajā stūrī attiecas uz rindu pa labi, skaitlis apakšējā kreisajā — uz rindu uz leju), neatkārtojot ciparus rindas ietvaros. Kustībai izmanto bulttaustiņus.",
+    "lib.arcade.note.kenken": "Aizpildi režģi ar skaitļiem no 1 līdz N tā, lai neviens skaitlis neatkārtotos rindā vai kolonnā. Katrs ar biezu līniju apvilktais bloks rāda mērķi un darbību (+, −, ×, ÷): bloka skaitļiem jādod šis rezultāts. Kustībai izmanto bulttaustiņus.",
+    "lib.arcade.note.wordGuess": "Uzmini slepeno angļu vārdu. Pēc katra mēģinājuma zaļš nozīmē pareizu burtu pareizajā vietā, dzeltens — burts ir vārdā, bet citur, un pelēks — burta vārdā nav. Raksti ar tastatūru vai izmanto ekrāna taustiņus un nospied Enter, lai iesniegtu. Augstākos līmeņos vārdi ir garāki un mēģinājumu mazāk.",
+    "lib.arcade.note.hangman": "Uzmini slepeno angļu vārdu, izvēloties burtus pa vienam. Katrs nepareizs burts pievieno daļu pakārtajam cilvēciņam; kad nepareizie minējumi beidzas, tu zaudē. Augstākos līmeņos vārdi ir garāki un atļauto kļūdu mazāk.",
+    "lib.arcade.note.scramble": "Pārkārto samaisītos burtus īstā angļu vārdā un ieraksti to atbildes laukā. Katrā līmenī ir 5 vārdi; atrisini vismaz 4, pirms katra vārda laiks beidzas, lai izietu līmeni. Mājiens atklāj pirmo burtu.",
+    "lib.arcade.cellsLeft": "Atlikušas {n} tukšas rūtiņas",
+    "lib.arcade.wrongN": "{n} rūtiņas nav pareizas.",
+    "lib.arcade.noError": "Līdz šim kļūdas nav atrastas.",
+    "lib.arcade.tooShort": "Nepietiek burtu",
+    "lib.arcade.answerIs": "Atbilde: {w}",
+    "lib.arcade.livesLeft": "Atlikuši {n} nepareizi minējumi",
+    "lib.arcade.yourAnswer": "Tava atbilde",
+    "lib.arcade.skip": "Izlaist",
+    "lib.arcade.notThis": "Nepareizi, mēģini vēlreiz.",
+    "lib.arcade.startsWith": "Pirmais burts: {c}",
+    "lib.arcade.note.domino": "Katrs spēlētājs saņem 7 kauliņus; sāk tas, kam ir augstākais dublis. Izspēlē kauliņu, kura skaitlis atbilst vienam ķēdes galam. Ja nevari spēlēt, velc no krājuma, līdz vari; ja tas ir tukšs, izlaid gājienu. Pirmais, kurš iztukšo rokas, uzvar; ja abi ir iestrēguši, uzvar mazāka punktu summa.",
+    "lib.arcade.note.hearts": "Četri spēlētāji, katram 13 kārtis. Sāk kreiču 2. Ja vari, jāpiemet tā pati masts. Katra sirds ir 1 punkts, bet pīķa dāma — 13; kurš ņem stiķi, iegūst tā punktus. Jo mazāk, jo labāk, un, ja kāds ņem visus 26 punktus, visi pārējie saņem 26. Sirdi nedrīkst iznest, kamēr neviena nav izspēlēta. Pēc pēdējās partijas uzvari, ja tavs rezultāts ir viszemākais (vai dalīti viszemākais).",
+    "lib.arcade.note.holdem": "Duelis pret datoru tikai ar virtuāliem žetoniem. Katrs spēlētājs saņem 2 slēptas kārtis un tiek atklātas 5 kopīgas kārtis (flops, tērns, rīvers); izveido labāko 5 kāršu kombināciju. Katrā kārtā vari nolikt kārtis (fold), pieskaitīt (call) vai pārbaudīt (check), vai paaugstināt (raise). Aklās likmes pieaug ik pēc 4 rokām. Uzvari, kad datoram beidzas žetoni, vai ja pēc roku limita tev žetonu ir vairāk. Īsta nauda netiek izmantota.",
+    "lib.arcade.dmDraw": "Vilkt kauliņu",
+    "lib.arcade.dmPass": "Izlaist",
+    "lib.arcade.dmEmpty": "Vēl nav izspēlēts neviens kauliņš",
+    "lib.arcade.dmYard": "Krājums: {n} kauliņi",
+    "lib.arcade.dmLeft": "Kreisais gals",
+    "lib.arcade.dmRight": "Labais gals",
+    "lib.arcade.dmTie": "Neizšķirts! Abas puses ir līdzās.",
+    "lib.arcade.hrHand": "Roka {n}/{t}",
+    "lib.arcade.hrTook": "{p} ņem stiķi ({n} punkti).",
+    "lib.arcade.hrIllegal": "Šo kārti nevar izspēlēt (jāpiemet masts, vai sirdis vēl nedrīkst nest).",
+    "lib.arcade.blinds": "Lielā akle: {n}",
+    "lib.arcade.pot": "Banka: {n}",
+    "lib.arcade.fold": "Nolikt kārtis",
+    "lib.arcade.check": "Pārbaudīt",
+    "lib.arcade.callN": "Pieskaitīt {n}",
+    "lib.arcade.raiseTo": "Paaugstināt līdz",
+    "lib.arcade.raiseN": "Paaugstināt līdz {n}",
+    "lib.arcade.thOppFold": "Dators nolika kārtis; tu uzvari šo roku.",
+    "lib.arcade.thYouFold": "Tu nolici kārtis.",
+    "lib.arcade.thOppWin": "Dators uzvar šo roku",
+    "lib.arcade.thYouWin": "Tu uzvari šo roku",
+    "lib.arcade.thSplit": "Dalīta banka",
+    "lib.arcade.thAiFold": "Dators nolika kārtis.",
+    "lib.arcade.thAiRaise": "Dators paaugstina līdz {n}.",
+    "lib.arcade.thAiCall": "Dators pieskaita / pārbauda.",
+    "lib.arcade.hand.high": "Augstākā kārts",
+    "lib.arcade.hand.pair": "Pāris",
+    "lib.arcade.hand.twoPair": "Divi pāri",
+    "lib.arcade.hand.trips": "Trīs vienādas",
+    "lib.arcade.hand.straight": "Taisne",
+    "lib.arcade.hand.flush": "Flešs",
+    "lib.arcade.hand.full": "Pilna māja",
+    "lib.arcade.hand.quads": "Četras vienādas",
+    "lib.arcade.hand.sflush": "Taisnes flešs",
+    "lib.arcade.note.nback": "3x3 režģī pēc kārtas iedegas kvadrāts. Nospied „Sakrīt!“ (vai atstarpi), kad iedegtā pozīcija ir tāda pati kā pirms N soļiem (N redzams augšā). Lai izietu līmeni, vajag vismaz 80 % pareizu lēmumu. Augstākos līmeņos N ir lielāks.",
+    "lib.arcade.nbMatch": "Sakrīt!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Pareizi: {a} · Nepareizi: {b}",
+    "lib.arcade.nbAcc": "Precizitāte: {n} %",
+    "lib.arcade.note.clicker": "Klikšķini uz cepuma, lai cepu cepumus, un tērē tos palīgiem, kas cep automātiski (cenas pieaug ar katru pirkumu). Izcep mērķa cepumu skaitu 2 minūšu laikā, lai izietu līmeni.",
+    "lib.arcade.ckCursor": "Kursors",
+    "lib.arcade.ckGrandma": "Cepējā vecmāmiņa",
+    "lib.arcade.ckFarm": "Ferma",
+    "lib.arcade.ckMine": "Cukura raktuves",
+    "lib.arcade.ckFactory": "Fabrika",
+    "lib.arcade.ckCookie": "Cepums",
+    "lib.arcade.ckEarned": "Izcepti: {n}/{t}",
+    "lib.arcade.chips2": "Cepumi: {n}",
+    "lib.arcade.ckCps": "{n} cepumi sekundē",
+    "lib.arcade.note.onet": "Izvēlies divus vienādus kauliņus, ko var savienot ar ceļu ar ne vairāk kā 2 pagriezieniem, nešķērsojot citus kauliņus, lai tos noņemtu. Noņem visus kauliņus, pirms beidzas laiks, lai uzvarētu. Kad gājienu vairs nav, vari samaisīt (ierobežots reižu skaits).",
+    "lib.arcade.shuffle": "Samaisīt",
+    "lib.arcade.tilesLeft": "Atlikuši {n} kauliņi",
+    "lib.arcade.autoShuffle": "Gājienu vairs nav — automātiski samaisīts.",
+    "lib.arcade.note.jigsaw": "Attēls ir sagriezts gabalos un samaisīts. Pieskaries vienam gabalam, tad citam, lai tos apmainītu, un salīdzini attēlu ar parauga attēlu. Gabali pareizajā vietā iegūst zaļu apmali. Augstākos līmeņos gabalu ir vairāk.",
+    "lib.arcade.jgRef": "Parauga attēls",
+    "lib.arcade.jgPlaced": "Vietā: {a}/{b}",
+    "lib.arcade.golfStrokes": "Sitieni: {n}/{t} (pars {p})",
+    "lib.arcade.note.backgammon": "Tu spēlē ar baltajiem kauliņiem, kas virzās no augšējā labā stūra apkārt līdz apakšējam labajam stūrim (tava māja). Met kauliņus, noklikšķini uz kauliņa, ko vēlies pārvietot, tad uz iezīmēta galamērķa. Nolaižoties uz punkta ar tieši vienu pretinieka kauliņu, tu to izsit uz vidu (bāru), un pretiniekam tas vispirms jāieved atpakaļ. Nedrīkst nolaisties uz punkta ar diviem vai vairāk pretinieka kauliņiem. Kad visi 15 tavi kauliņi ir mājas laukumā (pēdējie 6 punkti), tos var iznest. Pirmais, kurš iznes visus 15, uzvar.",
+    "lib.arcade.bgRoll": "Mest kauliņus",
+    "lib.arcade.bgOff": "Iznest",
+    "lib.arcade.bgRollFirst": "Mest kauliņus",
+    "lib.arcade.bgInfo": "Iznesti: tu {a} · dators {b} · Punkti (pips): {c} / {d}",
+    "lib.arcade.youNoMove": "Tev nav atļautu gājienu.",
+    "lib.arcade.note.tienlen": "Četri spēlētāji, katram 13 kārtis. Kāršu kārtība no zemākās uz augstāko: 3, 4, … K, A, 2; mastu kārtība no zemākā uz augstāko: pīķi, kreiči, kāravi, sirdis. Sāk tas, kam ir pīķa 3. Izspēlē vienu kārti, pāri, trīs vienādas, četras vienādas vai 3 vai vairāk secīgu kāršu virkni (bez divniekiem). Nākamajam spēlētājam jāizspēlē tāds pats veids un augstāks, vai jāizlaiž; četras vienādas var uzvarēt vienu divnieku vai divnieku pāri. Kad visi pārējie izlaiž, pēdējais izspēlētājs var iznest jebko. Pirmais, kurš iztukšo rokas, uzvar. Izvēlies kārtis un nospied Spēlēt.",
+    "lib.arcade.tlPlay": "Spēlēt",
+    "lib.arcade.tlPass": "Izlaist",
+    "lib.arcade.tlClear": "Notīrīt izvēli",
+    "lib.arcade.tlPassed": "izlaida",
+    "lib.arcade.tlFree": "Galds tukšs — vari iznest jebko",
+    "lib.arcade.tlLeft": "Atlikušas kārtis: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} izlaiž.",
+    "lib.arcade.tlBad": "Izvēlētās kārtis neveido derīgu kombināciju.",
+    "lib.arcade.tlLow": "Šī kombinācija nav pietiekami augsta, lai pārspētu galdu."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Ultimate krustiņi un nulliņas",
       "desc": "Krustiņi un nulliņas uz 9 maziem laukumiem: izvēlētā rūtiņa nosaka, kur jāspēlē pretiniekam; pret datoru 10 līmeņos."
+    },
+    "pong": {
+      "name": "Pongs",
+      "desc": "Aizsit bumbiņu garām datoram; pirmais, kurš iegūst 5 punktus, uzvar. 10 līmeņi ar ātrāku un asāku pretinieku."
+    },
+    "space-shooter": {
+      "name": "Kosmosa šāvējs",
+      "desc": "Vadi savu kuģi, notriec ienaidnieku kuģus un izvairies no to uguns; 10 līmeņi ar lielākiem vilņiem, atbildes uguni un spēcīgākiem ienaidniekiem."
+    },
+    "asteroids": {
+      "name": "Asteroīdi",
+      "desc": "Pagriezies, dod vilci un šauj, lai sadalītu kosmosa akmeņus; lielie akmeņi sadalās mazākos. 10 līmeņi ar vairāk un ātrākiem akmeņiem."
+    },
+    "maze": {
+      "name": "Labirints",
+      "desc": "Atrodi izeju no labirinta, pirms beidzas laiks; 10 līmeņi no maziem līdz lieliem labirintiem, augstākos līmeņos ar miglu."
+    },
+    "road-cross": {
+      "name": "Ceļa šķērsošana (Frogger veidā)",
+      "desc": "Lec ar vardi pāri noslogotiem ceļiem un upēm ar peldošiem baļķiem, lai nokļūtu mājās 3 reizes; 10 līmeņi ar ātrāku satiksmi un upi augstākos līmeņos."
+    },
+    "flappy": {
+      "name": "Spēle Flappy Bird stilā",
+      "desc": "Pieskaries, lai uzsistu spārniem, un lido cauri spraugām starp caurulēm; 10 līmeņi ar šaurākām spraugām un pieaugošu ātrumu."
+    },
+    "runner": {
+      "name": "Dino skrējējs",
+      "desc": "Lec pāri kaktusiem un pieliecies zem putniem; noskrie pietiekami tālu, lai izietu katru no 10 līmeņiem, kamēr ātrums pastāvīgi pieaug."
+    },
+    "whack-a-mole": {
+      "name": "Notrāpi kurmi",
+      "desc": "Notrāpi kurmjus, kas lien ārā no alām, pirms beidzas laiks, un izvairies no bumbām; 10 līmeņi no lēniem līdz ļoti ātriem."
+    },
+    "simon": {
+      "name": "Simons (krāsu atmiņa)",
+      "desc": "Atceries un atkārto krāsu un skaņu virkni; garākas virknes 10 līmeņos, no 7. līmeņa ar 6 pogām."
+    },
+    "aim-trainer": {
+      "name": "Mērķēšanas treniņš",
+      "desc": "Trāpi mērķos, kas parādās nejauši un ātri pazūd; mērķi 10 līmeņos kļūst mazāki, un tiek mērīts tavs reakcijas laiks."
+    },
+    "quick-math": {
+      "name": "Ātrā matemātika",
+      "desc": "Veic saskaitīšanu, atņemšanu, reizināšanu un dalīšanu galvā laika spiediena apstākļos; 10 līmeņi no vienkāršām summām līdz izteiksmēm."
+    },
+    "reaction": {
+      "name": "Reakcijas laika tests",
+      "desc": "Klikšķini tajā brīdī, kad ekrāns kļūst zaļš; tavam 5 raundu vidējam rezultātam jāatbilst katra līmeņa limitam, kas 10 līmeņos kļūst stingrāks."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Kaisi sēklas pa bedrēm, iegūsti pretinieka sēklas un ej vēlreiz, kad nokļūsti savā krātuvē; spēlē pret datoru 10 līmeņos no viegla līdz grūtam."
+    },
+    "snakes-ladders": {
+      "name": "Čūskas un kāpnes",
+      "desc": "Met kauliņu no laukuma 1 līdz 100, kāp pa kāpnēm, izvairies no čūskām un sasniedz finišu pirms pretiniekiem; 10 līmeņi."
+    },
+    "nine-mens-morris": {
+      "name": "Dzirnavas (Nine Men’s Morris)",
+      "desc": "Liec, bīdi un „lido“ ar kauliņiem, lai izveidotu trīs rindā un noņemtu pretinieka kauliņus; spēlē pret datoru 10 līmeņos."
+    },
+    "battleship": {
+      "name": "Jūras kauja",
+      "desc": "Atrodi un nogremdē datora floti 10x10 režģī, pirms tas nogremdē tavējo; 10 līmeņi, kuros dators spriež gudrāk."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Ķirbis, krabis, zivs, garnele)",
+      "desc": "Tradicionāla vjetnamiešu kauliņu spēle: liec virtuālas monētas uz dzīvniekiem un kratī trīs kauliņus; sasniedz mērķa monētu skaitu 10 līmeņos (nekādas īstas naudas)."
+    },
+    "baccarat": {
+      "name": "Bakarā",
+      "desc": "Liec uz Spēlētāju, Banķieri vai Neizšķirtu ar kārtīm, kas tiek dalītas pēc standarta noteikumiem, izmantojot virtuālas monētas; sasniedz mērķa monētu skaitu 10 līmeņos (nekādas īstas naudas)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (trīs kāršu spēle)",
+      "desc": "Salīdzini 3 kāršu rokas ar dīleri: trīs vienādas, trīs figūras, tad 9 punkti līdz 0; virtuālas monētas, 10 līmeņi, nekādas īstas naudas."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Atzīmē izsauktos skaitļus uz savas 5x5 kartītes un iesaucies BINGO pirms datora pretiniekiem; skaitļus 10 līmeņos izsauc ātrāk."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (pieci kauliņi)",
+      "desc": "Met piecus kauliņus, paturi labos un aizpildi 13 punktu lodziņus; sasniedz mērķa punktu skaitu 10 līmeņos."
+    },
+    "crazy-eights": {
+      "name": "Traki astotnieki",
+      "desc": "Sakārto pēc masts vai vērtības, astotnieki maina mastu; iztukšo rokas pirms 1 līdz 3 datora pretiniekiem 10 līmeņos."
+    },
+    "car-race": {
+      "name": "Izvairīšanās auto sacīkstēs",
+      "desc": "Maini joslas, lai izvairītos no automašīnām priekšā, un nobrauc visu attālumu; 10 līmeņi ar vairāk joslām un ātrāku satiksmi."
+    },
+    "sky-jump": {
+      "name": "Lēciens debesīs",
+      "desc": "Lec no platformas uz platformu, lai uzkāptu pēc iespējas augstāk, nenokrītot; 10 līmeņi ar retākām, kustīgām un lūstošām platformām."
+    },
+    "gold-miner": {
+      "name": "Zelta racējs",
+      "desc": "Nolaid āķi, lai izvilktu zeltu un dimantus, izvairies no smagiem akmeņiem un sasniedz mērķa naudu 60 sekunžu laikā; 10 līmeņi."
+    },
+    "fruit-slice": {
+      "name": "Augļu griešana",
+      "desc": "Velc, lai pārgrieztu augšup lidojošus augļus, un izvairies no bumbām; 10 līmeņi ar vairāk augļiem un vairāk bumbām."
+    },
+    "basketball": {
+      "name": "Basketbola metieni",
+      "desc": "Velc un atlaid, lai iemestu bumbu grozā ierobežotā metienu skaitā; 10 līmeņi, no 4. līmeņa ar kustīgu grozu."
+    },
+    "bubble-shooter": {
+      "name": "Burbuļu šāvējs",
+      "desc": "Šauj burbuļus, lai savienotu 3 vai vairāk vienas krāsas un tos uzspridzinātu, un notīri tos visus, pirms tie sasniedz apakšu; 10 līmeņi ar vairāk krāsām."
+    },
+    "dot-chase": {
+      "name": "Punktu dzīšanās",
+      "desc": "Apēd visus labirinta punktus, izvairoties no spokiem, kas tevi vajā; 10 līmeņi ar vairāk un gudrākiem spokiem."
+    },
+    "kakuro": {
+      "name": "Kakuro (krustotās summas)",
+      "desc": "Aizpildi baltās rūtiņas ar cipariem 1–9 tā, lai katras rindas summa atbilstu norādei bez atkārtojumiem; 10 līmeņi, režģi no 5x5 līdz 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Aizpildi režģi bez atkārtojumiem rindās un kolonnās, lai katrs bloks ar savu darbību dotu mērķi; 10 līmeņi, režģi no 3x3 līdz 6x6."
+    },
+    "word-guess": {
+      "name": "Vārdu minēšana (Wordle stilā)",
+      "desc": "Uzmini slepeno angļu vārdu pēc zaļiem, dzeltenajiem un pelēkajiem mājieniem; 10 līmeņi ar 4–6 burtu vārdiem un mazāk mēģinājumu."
+    },
+    "hangman": {
+      "name": "Karātavas (Hangman)",
+      "desc": "Uzmini angļu vārdu pa vienam burtam, pirms beidzas nepareizie minējumi; 10 līmeņi ar garākiem vārdiem un mazāk kļūdu."
+    },
+    "word-scramble": {
+      "name": "Vārdu jaukšana (anagramma)",
+      "desc": "Pārkārto samaisītus burtus angļu vārdā, pirms beidzas laiks; 10 līmeņi, 5 vārdi katrā līmenī."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Pievieno kauliņus ķēdes galiem un iztukšo rokas pirms datora; 10 līmeņi, kuros dators kļūst gudrāks."
+    },
+    "hearts": {
+      "name": "Hearts (Sirdis)",
+      "desc": "Izvairies no sirdīm un pīķa dāmas četru spēlētāju kāršu spēlē; zemāks rezultāts ir labāks; 10 līmeņi pret gudrākiem datora spēlētājiem."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuāli žetoni)",
+      "desc": "Pokers viens pret vienu pret datoru ar virtuāliem žetoniem: noliec kārtis, pieskaiti vai paaugstini un uzvari, kad datoram beidzas žetoni; 10 līmeņi, nekādas īstas naudas."
+    },
+    "n-back": {
+      "name": "N-back atmiņa",
+      "desc": "Vēro iedegto kvadrātu un nospied Sakrīt, kad tas ir tāds pats kā pirms N soļiem; 10 līmeņi ar N līdz 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klikšķini, lai cep cepumus, pērc palīgus, kas cep automātiski, un sasniedz mērķi 2 minūšu laikā; 10 līmeņi."
+    },
+    "tile-connect": {
+      "name": "Kauliņu savienošana (Onet stilā)",
+      "desc": "Savieno vienādus kauliņus ar ceļu ar ne vairāk kā diviem pagriezieniem un notīri laukumu, pirms beidzas laiks; 10 līmeņi, lielāki laukumi."
+    },
+    "jigsaw": {
+      "name": "Attēlu puzle",
+      "desc": "Apmaini samaisītos gabalus, lai salikt attēlu; 10 līmeņi no 3x3 līdz 6x6 gabaliem."
+    },
+    "mini-golf": {
+      "name": "Mini golfs",
+      "desc": "Velc atpakaļ un atlaid, lai iesistu bumbiņu bedrītē sitienu limita robežās; 10 trases ar sienām un smiltīm."
+    },
+    "backgammon": {
+      "name": "Nardi (Backgammon)",
+      "desc": "Met kauliņus, ved savus kauliņus mājās un iznes tos pirms datora, pa ceļam izsitot tā vientuļos kauliņus; 10 līmeņi."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Trīspadsmit)",
+      "desc": "Vjetnamiešu kāršu spēle četriem, kurā jāatbrīvojas no kārtīm: izspēlē atsevišķas kārtis, pārus, virknes un četrniekus, lai pirmais iztukšotu rokas; 10 līmeņi."
     }
   },
   "s": {

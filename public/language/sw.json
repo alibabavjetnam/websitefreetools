@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Chagua rangi ya kujaza eneo lote unalomiliki pembe ya juu kushoto; linameza visanduku jirani vya rangi hiyo. Fanya ubao mzima uwe rangi moja ndani ya idadi ya hatua zinazoruhusiwa.",
     "lib.arcade.note.mastermind": "Kompyuta huficha safu ya rangi. Chagua rangi kwa kila nafasi, kisha bonyeza Kisia. Kigingi cheusi = rangi sahihi mahali sahihi; kigingi cheupe = rangi sahihi mahali pasipo sahihi. Vunja msimbo kabla makisio hayajaisha.",
     "lib.arcade.note.hanoi": "Hamisha diski zote hadi kwenye nguzo ya mwisho. Hamisha diski ya juu tu ya nguzo kila wakati, na usiweke kamwe diski kubwa juu ya ndogo. Bofya nguzo ya kuanzia, kisha nguzo ya kulenga.",
-    "lib.arcade.note.pipes": "Bofya kigae ili kuzungusha bomba digrii 90°. Unganisha mabomba yote kuwa mtandao mmoja bila ncha wazi (ncha wazi zinaonyeshwa kwa rangi nyekundu)."
+    "lib.arcade.note.pipes": "Bofya kigae ili kuzungusha bomba digrii 90°. Unganisha mabomba yote kuwa mtandao mmoja bila ncha wazi (ncha wazi zinaonyeshwa kwa rangi nyekundu).",
+    "lib.arcade.pongScore": "Wewe {a} – {b} Kompyuta (wa kwanza kufika {t})",
+    "lib.arcade.kills": "Zilizoharibiwa: {n}/{t}",
+    "lib.arcade.rocksLeft": "Miamba {n} imebaki",
+    "lib.arcade.timeLeft": "Sekunde {n} zimebaki",
+    "lib.arcade.stepsN": "Hatua: {n}",
+    "lib.arcade.crossed": "Nyumbani: {n}/{t}",
+    "lib.arcade.pipes": "Mabomba uliyopita: {n}/{t}",
+    "lib.arcade.distance": "Umbali: {n}/{t} m",
+    "lib.arcade.speedN": "Kasi: {n}",
+    "lib.arcade.note.whack-a-mole": "Fuko huibuka kutoka kwenye mashimo — bofya au gusa fuko ili kumpiga. Piga fuko wa kutosha kabla muda haujaisha. Kuanzia ngazi ya 4 kuna mabomu: ukigonga moja unapoteza pointi.",
+    "lib.arcade.hole": "Shimo",
+    "lib.arcade.hitsN": "Mapigo: {n}/{t}",
+    "lib.arcade.note.simon": "Mchezo hucheza mfuatano wa rangi na sauti — urudie kwa mpangilio huo huo. Kila raundi huongeza hatua moja. Kumbuka urefu unaohitajika ili kumaliza ngazi. Kuanzia ngazi ya 7 kuna vitufe 6.",
+    "lib.arcade.seqN": "Mfuatano: {n}/{t}",
+    "lib.arcade.watch": "Tazama…",
+    "lib.arcade.yourTurnShort": "Zamu yako",
+    "lib.arcade.note.aim-trainer": "Shabaha huonekana ovyo na hupotea haraka — piga nyingi uwezavyo. Huwa ndogo na za haraka zaidi. Piga shabaha za kutosha kabla ya kukosa zaidi ya mara 5 ili kumaliza ngazi.",
+    "lib.arcade.missN": "Makosa: {n}/{t}",
+    "lib.arcade.answer": "Jibu",
+    "lib.arcade.note.quick-math": "Tatua kichwani haraka uwezavyo: andika jibu na ubonyeze Enter. Kila swali lina kikomo cha muda; jibu lisilo sahihi au muda kuisha kunagharimu maisha moja (una 3). Jibu maswali ya kutosha kwa usahihi ili kumaliza ngazi.",
+    "lib.arcade.correctN": "Sahihi: {n}/{t}",
+    "lib.arcade.note.reaction": "Subiri skrini igeuke kijani, kisha bofya haraka uwezavyo. Kubofya mapema ni kosa (makosa 3 na unashindwa). Wastani wako wa raundi 5 lazima uwe bora kuliko kikomo cha ngazi.",
+    "lib.arcade.roundN": "Neno {n}/{t}",
+    "lib.arcade.limitMs": "Kikomo: {n} ms",
+    "lib.arcade.rxWait": "Subiri kijani…",
+    "lib.arcade.rxGo": "BOFYA!",
+    "lib.arcade.rxEarly": "Mapema mno!",
+    "lib.arcade.gameArea": "Eneo la mchezo",
+    "lib.arcade.note.pong": "Sogeza kipanya, buruta kidole au tumia vitufe vya ← → kudhibiti kasia ya chini. Pitisha mpira kupita kompyuta; wa kwanza kupata pointi 5 anashinda. Mpira huongeza kasi kila unapogongwa.",
+    "lib.arcade.note.space-shooter": "Sogeza kipanya, buruta kidole au tumia vitufe vya ← → kuongoza; chombo chako hufyatua risasi chenyewe. Haribu vyombo vya adui vya kutosha ili kumaliza ngazi, na epuka migongano na risasi za adui. Una maisha 3.",
+    "lib.arcade.note.asteroids": "← → huzungusha chombo, ↑ hutoa msukumo, Space hufyatua. Haribu miamba yote ili kumaliza ngazi; miamba mikubwa hupasuka kuwa midogo. Chombo hupita upande wa pili wa skrini. Una maisha 3.",
+    "lib.arcade.note.maze": "Tumia vitufe vya mishale (au telezesha, au vitufe vya skrini) kutoka kwenye nukta ya kijani hadi bendera nyekundu kabla muda haujaisha. Kuanzia ngazi ya 5 maze ina ukungu: unaona karibu nawe tu, na maeneo uliyotembelea hukumbukwa.",
+    "lib.arcade.note.road-cross": "Tumia vitufe vya mishale, telezesha au vitufe vya skrini kumruka chura kutoka chini hadi juu. Epuka magari; kuanzia ngazi ya 5 sehemu ya juu ni mto, hivyo ruka juu ya magogo yanayoelea. Fika nyumbani mara 3 ili kumaliza ngazi. Una maisha 3.",
+    "lib.arcade.note.flappy": "Gusa eneo la mchezo, bonyeza Space au ↑ ili kupiga mabawa. Ruka kupitia mapengo kati ya mabomba bila kugusa bomba, ardhi au dari. Ngazi za juu zina mapengo membamba na kasi zaidi.",
+    "lib.arcade.note.runner": "Gusa eneo la mchezo, bonyeza Space au ↑ ili kuruka juu ya mikaktusi; shikilia ↓ ili kuinama chini ya ndege wa juu (au ruka juu ya wale wa chini). Kimbia umbali wa kutosha ili kumaliza ngazi. Kasi huendelea kuongezeka.",
+    "lib.arcade.fire": "Fyatua",
+    "lib.arcade.jump": "Ruka",
+    "lib.arcade.aimTarget": "Shabaha",
+    "lib.game.soundOn": "Washa sauti",
+    "lib.game.soundOff": "Zima sauti",
+    "lib.arcade.note.kalah": "Wewe unacheza safu ya chini, kompyuta ya juu; shimo kubwa la kulia ni ghala lako. Bofya shimo ili kuchukua mbegu zake zote na kuzigawa kinyume na saa, moja katika kila shimo (ukiruka ghala la mpinzani). Mbegu ya mwisho ikiangukia ghala lako, unacheza tena; ikiangukia shimo tupu upande wako lililo kinyume na shimo lenye mbegu, unachukua mbegu hizo. Upande mmoja ukiwa mtupu, mbegu za upande mwingine huenda kwenye ghala la mmiliki wake; ghala kubwa zaidi linashinda.",
+    "lib.arcade.note.snakes": "Tupa kete na usogee idadi hiyo ya miraba, kutoka 1 hadi 100. Ukitua chini ya ngazi, unapanda; ukitua kichwani mwa nyoka, unateleza chini. Kuanzia ngazi ya 4 lazima upate namba kamili ili kutua kwenye 100. Ngazi za juu zina nyoka wengi, ngazi chache na wapinzani zaidi. Wa kwanza kufika 100 anashinda.",
+    "lib.arcade.square": "Mraba {n}",
+    "lib.arcade.ladderUp": "Juu ya ngazi!",
+    "lib.arcade.snakeDown": "Nyoka amekumeza!",
+    "lib.arcade.needExact": "Unahitaji namba kamili ili kutua kwenye 100.",
+    "lib.arcade.note.nmm": "Kila upande una vipande 9. Awamu ya 1: kwa zamu mnaweka vipande kwenye pointi tupu. Awamu ya 2: telezesha kipande hadi pointi tupu iliyo jirani. Ukibakiwa na vipande 3 tu unaweza “kuruka” hadi pointi yoyote tupu. Tengeneza vitatu mfululizo (“kinu”) ili kuondoa kipande cha mpinzani (kwanza vile visivyo kwenye kinu). Unashindwa ukibaki na vipande 2 au huwezi kusogea. Unacheza nyeupe na unaanza.",
+    "lib.arcade.inHand": "Vya kuweka: {a} · {b}",
+    "lib.arcade.removePiece": "Chagua kipande cha mpinzani cha kuondoa.",
+    "lib.arcade.enemyWaters": "Maji ya adui (bofya kufyatua)",
+    "lib.arcade.yourFleet": "Kikosi chako",
+    "lib.arcade.note.battleship": "Kila upande una meli 5 (urefu 5, 4, 3, 3, 2) zilizowekwa ovyo kwenye gridi ya 10x10. Kwa zamu mnafyatua kwenye kisanduku: ukigonga kinakuwa chekundu, ukikosa buluu hafifu, na ukigonga visanduku vyote vya meli, inazama. Zamisha kikosi chote cha adui kwanza ili kushinda. Katika ngazi za juu kompyuta hukisia nafasi za meli zako kwa werevu zaidi.",
+    "lib.arcade.shipsLeft": "Meli zilizobaki: wewe {a} · adui {b}",
+    "lib.arcade.theySunk": "Adui amezamisha meli yako!",
+    "lib.arcade.theyHit": "Adui amegonga meli yako.",
+    "lib.arcade.theyMiss": "Adui amekosa.",
+    "lib.arcade.youSunk": "Umezamisha meli ya adui!",
+    "lib.arcade.youHit": "Umegonga!",
+    "lib.arcade.youMiss": "Umekosa.",
+    "lib.arcade.shake": "Tikisa",
+    "lib.arcade.clearBets": "Futa dau",
+    "lib.arcade.note.bau-cua": "Sarafu za mchezo tu — hakuna pesa halisi. Chagua thamani ya chip, bofya wanyama ili kuweka dau, kisha ubonyeze Tikisa. Kwa kila kete inayolingana na mnyama uliyemwekea dau, unarudishiwa dau lako pamoja na kiasi sawa kwa kila mlingano. Fikia sarafu lengwa ndani ya raundi zinazoruhusiwa ili kumaliza ngazi.",
+    "lib.arcade.note.baccarat": "Sarafu za mchezo tu — hakuna pesa halisi. Weka dau kwa Mchezaji, Benki au Sare, kisha ubonyeze Gawa. Thamani ya mkono ni tarakimu ya mwisho ya jumla (A = 1, 2–9 thamani yake, 10/J/Q/K = 0); mkono ulio karibu na 9 hushinda, na karata ya tatu huchukuliwa kwa kanuni za kawaida. Mchezaji hulipa 1:1, Benki 0.95:1, Sare 8:1 (dau la Mchezaji/Benki hurudishwa kukiwa na sare). Fikia sarafu lengwa ndani ya raundi zinazoruhusiwa ili kumaliza ngazi.",
+    "lib.arcade.banker": "Benki",
+    "lib.arcade.player": "Mchezaji",
+    "lib.arcade.tie": "Sare",
+    "lib.arcade.openCards": "Onyesha",
+    "lib.arcade.note.bai-cao": "Sarafu za mchezo tu — hakuna pesa halisi. Kila upande hupata karata 3. Mkono hupata alama ya tarakimu ya mwisho ya jumla (A = 1, 2–9 thamani yake, 10/J/Q/K = 10, yaani alama 0). Mpangilio: karata tatu zinazofanana (“Sáp”) ni za juu zaidi, kisha karata tatu za picha (“Ba tiên”), kisha alama 9 hadi 0. Weka dau, bonyeza Gawa kisha Onyesha ili kulinganisha na mgawaji. Kuanzia ngazi ya 6 mgawaji hushinda sare. Fikia sarafu lengwa ndani ya raundi zinazoruhusiwa ili kumaliza ngazi.",
+    "lib.arcade.caoSap": "Karata tatu zinazofanana",
+    "lib.arcade.caoBaTien": "Karata tatu za picha",
+    "lib.arcade.caoPts": "Alama {n}",
+    "lib.arcade.note.bingo": "Kompyuta hutaja namba kutoka 1 hadi 75. Namba iliyotajwa ikiwa kwenye kadi yako, ibofye ili kuiweka alama (katikati ni bure). Kamilisha safu mlalo, safu wima au mshazari kisha ubonyeze BINGO! — lazima uwashinde wapinzani wa kompyuta. BINGO! ya uongo hufunga kitufe kwa sekunde chache. Ngazi za juu hutaja kwa kasi zaidi na zina wapinzani wengi zaidi.",
+    "lib.arcade.opponentsN": "Wapinzani: {n}",
+    "lib.arcade.falseBingo": "Bado hujakamilisha mstari! Kitufe kimefungwa kwa sekunde 3.",
+    "lib.arcade.bingoGo": "Namba zinatajwa!",
+    "lib.arcade.note.yahtzee": "Kila zamu unatupa kete 5 hadi mara 3: bofya kete ili kuiweka, kisha ubonyeze Tupa kutupa upya nyingine. Kisha chagua kisanduku kwenye jedwali ili kupata alama (kila kisanduku hutumika mara moja; kisanduku kisichofaa hupata 0). Zamu 13. Visanduku vya Moja–Sita huongeza bonasi ya 35 jumla ikiwa ni 63 au zaidi. Fikia alama lengwa ya ngazi ili kushinda.",
+    "lib.arcade.turnN": "Zamu {n}/13",
+    "lib.arcade.pickCat": "Chagua kisanduku cha kupata alama",
+    "lib.arcade.rollsLeft": "Tupa (zimebaki {n})",
+    "lib.arcade.upperBonus": "Bonasi ya Moja–Sita",
+    "lib.arcade.scored": "Umepata {n}",
+    "lib.arcade.note.crazy-eights": "Cheza karata inayolingana na karata ya juu ya rundo la kutupia kwa aina au namba. Nane ni joka: ichezee wakati wowote na uchague aina mpya. Kama huna karata ya kucheza, chukua kutoka kwenye rundo (hadi karata 3); ukishindwa bado kucheza, unapita. Wa kwanza kumaliza karata mkononi anashinda. Ngazi za juu zina wapinzani wengi zaidi na kompyuta hucheza kwa werevu zaidi.",
+    "lib.arcade.opponent": "Mpinzani",
+    "lib.arcade.pileLeft": "Rundo la kuchukua: {n}",
+    "lib.arcade.pickSuit": "Chagua aina mpya",
+    "lib.arcade.aiSuit": "Kompyuta imechagua {s}",
+    "lib.arcade.aiPass": "Kompyuta inapita.",
+    "lib.arcade.mustPlay": "Una karata ya kucheza — ichezee.",
+    "lib.arcade.youPass": "Umechukua karata 3 na unapita.",
+    "lib.arcade.bcGourd": "Boga",
+    "lib.arcade.bcCrab": "Kaa",
+    "lib.arcade.bcShrimp": "Kamba",
+    "lib.arcade.bcFish": "Samaki",
+    "lib.arcade.bcRooster": "Jogoo",
+    "lib.arcade.bcDeer": "Paa",
+    "lib.arcade.yOnes": "Moja",
+    "lib.arcade.yTwos": "Mbili",
+    "lib.arcade.yThrees": "Tatu",
+    "lib.arcade.yFours": "Nne",
+    "lib.arcade.yFives": "Tano",
+    "lib.arcade.ySixes": "Sita",
+    "lib.arcade.yThree": "Tatu zinazofanana",
+    "lib.arcade.yFour": "Nne zinazofanana",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Mfuatano mdogo (30)",
+    "lib.arcade.yLarge": "Mfuatano mkubwa (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Bahati",
+    "lib.arcade.note.race": "Bonyeza ← → (au gusa njia unayotaka) kubadilisha njia na kukwepa magari mbele. Una maisha 3; endesha umbali wote ili kumaliza ngazi. Ngazi za juu huongeza njia na msongamano wa kasi zaidi.",
+    "lib.arcade.note.jump": "Mhusika huruka mwenyewe. Bonyeza ← → au buruta kidole ili kutua kwenye jukwaa linalofuata. Majukwaa ya buluu husogea, ya kahawia huvunjika ukitua. Kuanguka nje ya skrini ni kushindwa; panda juu vya kutosha ili kumaliza ngazi.",
+    "lib.arcade.note.miner": "Ndoano huyumba huku na huko; bonyeza Space, ↓ au gusa uwanja ili kuishusha. Dhahabu kubwa na miamba ni mizito na huvutwa polepole; almasi zina thamani kubwa. Fikia pesa lengwa kabla ya sekunde 60 kuisha.",
+    "lib.arcade.note.slicer": "Telezesha kidole au kipanya juu ya tunda ili kulikata. Epuka mabomu meusi. Kukosa tunda au kukata bomu kunagharimu maisha (una 3). Kata matunda ya kutosha ili kumaliza ngazi.",
+    "lib.arcade.note.hoops": "Bonyeza uwanjani, buruta chini (kama kombeo) kisha uachilie ili kurusha mpira kwenye kikapu. Kadiri unavyoburuta mbali, ndivyo urushaji unavyokuwa na nguvu. Funga vikapu vya kutosha ndani ya urushaji ulionao; kuanzia ngazi ya 4 kikapu husogea.",
+    "lib.arcade.note.bubbles": "Sogeza kipanya au kidole kulenga, kisha bofya/gusa au bonyeza Space/Fyatua kurusha. Unganisha viputo 3 au zaidi vya rangi moja ili kuvipasua; viputo vinavyopoteza msaada huanguka. Safu hushuka polepole, hivyo ziweke mbali na mstari wa chini. Futa viputo vyote ili kushinda.",
+    "lib.arcade.note.chase": "Tumia vitufe vya mishale (au telezesha / vitufe vya skrini) kugeuka na kula nukta zote za maze huku ukikwepa mizimu inayokufukuza. Una maisha 3; ngazi za juu huongeza mizimu zaidi iliyo ya kasi na inayofukuza kwa werevu zaidi.",
+    "lib.arcade.height": "Urefu: {n}/{t} m",
+    "lib.arcade.money": "Pesa: {n}/{t}",
+    "lib.arcade.sliced": "Zilizokatwa: {n}/{t}",
+    "lib.arcade.hoopScore": "Zilizofungwa: {n}/{t}",
+    "lib.arcade.shotsLeft": "Urushaji {n} umebaki",
+    "lib.arcade.bubbleLeft": "Viputo {n} vimebaki",
+    "lib.arcade.shotsN": "Urushaji: {n}",
+    "lib.arcade.dotsLeft": "Nukta {n} zimebaki",
+    "lib.arcade.note.kakuro": "Jaza visanduku vyeupe kwa tarakimu 1–9 ili kila mfululizo uongezeke hadi kidokezo kwenye kisanduku cheusi (namba ya juu kulia ni ya mfululizo wa kulia, ya chini kushoto ni ya mfululizo wa kwenda chini), bila kurudia tarakimu ndani ya mfululizo. Tumia vitufe vya mishale kusogea.",
+    "lib.arcade.note.kenken": "Jaza gridi kwa namba 1 hadi N ili hakuna namba inayojirudia kwenye safu mlalo wala wima. Kila kundi lenye mstari mzito linaonyesha lengo na kitendo (+, −, ×, ÷): namba zilizo kwenye kundi lazima zitoe matokeo hayo. Tumia vitufe vya mishale kusogea.",
+    "lib.arcade.note.wordGuess": "Kisia neno la siri la Kiingereza. Baada ya kila jaribio, kijani humaanisha herufi sahihi mahali sahihi, njano humaanisha herufi ipo kwenye neno lakini mahali pengine, na kijivu humaanisha haipo kwenye neno. Andika kwenye kibodi au tumia vitufe vya skrini, kisha ubonyeze Enter kuwasilisha. Ngazi za juu zina maneno marefu na majaribio machache.",
+    "lib.arcade.note.hangman": "Kisia neno la siri la Kiingereza kwa kuchagua herufi moja moja. Kila herufi isiyo sahihi huongeza sehemu kwenye mtu anayenyongwa; makosa yakiisha, unashindwa. Ngazi za juu zina maneno marefu na makosa machache yanayoruhusiwa.",
+    "lib.arcade.note.scramble": "Panga upya herufi zilizochanganywa kuwa neno halisi la Kiingereza na uliandike kwenye kisanduku cha jibu. Kila ngazi ina maneno 5; tatua angalau 4 kabla ya muda wa kila neno kuisha ili kumaliza ngazi. Kidokezo hufichua herufi ya kwanza.",
+    "lib.arcade.cellsLeft": "Visanduku tupu {n} vimebaki",
+    "lib.arcade.wrongN": "Visanduku {n} si sahihi.",
+    "lib.arcade.noError": "Hakuna makosa yaliyopatikana hadi sasa.",
+    "lib.arcade.tooShort": "Herufi hazitoshi",
+    "lib.arcade.answerIs": "Jibu: {w}",
+    "lib.arcade.livesLeft": "Makosa {n} yamebaki",
+    "lib.arcade.yourAnswer": "Jibu lako",
+    "lib.arcade.skip": "Ruka",
+    "lib.arcade.notThis": "Si sahihi, jaribu tena.",
+    "lib.arcade.startsWith": "Herufi ya kwanza: {c}",
+    "lib.arcade.note.domino": "Kila mchezaji hupata vigae 7; mwenye jozi ya juu zaidi huanza. Cheza kigae chenye namba inayolingana na upande mmoja wa mnyororo. Ukishindwa kucheza, chukua kutoka ghalani hadi uweze; ikiwa ni tupu, unapita. Wa kwanza kumaliza vigae mkononi anashinda; wote wakikwama, mwenye jumla ndogo ya nukta anashinda.",
+    "lib.arcade.note.hearts": "Wachezaji wanne, karata 13 kila mmoja. Karata 2 ya klabu huanza. Lazima ufuate aina iliyoanzishwa ukiweza. Kila moyo ni pointi 1 na Malkia wa Jembe ni 13; anayeshinda mzunguko huchukua pointi zake. Chini ni bora, na kuchukua pointi zote 26 huwapa wengine wote 26. Huwezi kuanza kwa moyo hadi moyo mmoja uchezwe. Baada ya mkono wa mwisho, unashinda kama alama yako ndiyo ya chini zaidi (au sawa na ya chini zaidi).",
+    "lib.arcade.note.holdem": "Mmoja kwa mmoja dhidi ya kompyuta kwa chip za mchezo tu. Kila mchezaji hupata karata 2 za siri na karata 5 za wazi hufunuliwa (flop, turn, river); tengeneza mkono bora wa karata 5. Kila raundi unaweza kukunja (fold), kulingana (call) au kupita (check), au kuongeza (raise). Blinds hupanda kila mikono 4. Unashinda kompyuta ikiishiwa chip, au kwa kuwa na chip nyingi zaidi baada ya kikomo cha mikono. Hakuna pesa halisi inayohusika.",
+    "lib.arcade.dmDraw": "Chukua kigae",
+    "lib.arcade.dmPass": "Pita",
+    "lib.arcade.dmEmpty": "Hakuna kigae kilichochezwa bado",
+    "lib.arcade.dmYard": "Ghala: vigae {n}",
+    "lib.arcade.dmLeft": "Upande wa kushoto",
+    "lib.arcade.dmRight": "Upande wa kulia",
+    "lib.arcade.dmTie": "Sare! Pande zote mbili ni sawa.",
+    "lib.arcade.hrHand": "Mkono {n}/{t}",
+    "lib.arcade.hrTook": "{p} anashinda mzunguko (pointi {n}).",
+    "lib.arcade.hrIllegal": "Huwezi kucheza karata hii (fuata aina, au moyo bado hauruhusiwi kuanzisha).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Chungu: {n}",
+    "lib.arcade.fold": "Kunja",
+    "lib.arcade.check": "Pita (check)",
+    "lib.arcade.callN": "Linganisha {n}",
+    "lib.arcade.raiseTo": "Ongeza hadi",
+    "lib.arcade.raiseN": "Ongeza hadi {n}",
+    "lib.arcade.thOppFold": "Kompyuta imekunja; unashinda mkono huu.",
+    "lib.arcade.thYouFold": "Umekunja.",
+    "lib.arcade.thOppWin": "Kompyuta inashinda mkono huu",
+    "lib.arcade.thYouWin": "Unashinda mkono huu",
+    "lib.arcade.thSplit": "Chungu kigawanywe",
+    "lib.arcade.thAiFold": "Kompyuta imekunja.",
+    "lib.arcade.thAiRaise": "Kompyuta inaongeza hadi {n}.",
+    "lib.arcade.thAiCall": "Kompyuta inalinganisha / inapita.",
+    "lib.arcade.hand.high": "Karata ya juu",
+    "lib.arcade.hand.pair": "Jozi",
+    "lib.arcade.hand.twoPair": "Jozi mbili",
+    "lib.arcade.hand.trips": "Tatu zinazofanana",
+    "lib.arcade.hand.straight": "Mfuatano",
+    "lib.arcade.hand.flush": "Rangi moja",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Nne zinazofanana",
+    "lib.arcade.hand.sflush": "Mfuatano wa rangi moja",
+    "lib.arcade.note.nback": "Mraba huwaka mmoja baada ya mwingine kwenye gridi ya 3x3. Bonyeza “Linganisha!” (au Space) pale nafasi iliyowaka inapofanana na ile ya hatua N zilizopita (N inaonyeshwa juu). Unahitaji angalau 80% ya maamuzi sahihi ili kumaliza ngazi. Ngazi za juu hutumia N kubwa zaidi.",
+    "lib.arcade.nbMatch": "Linganisha!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Sahihi: {a} · Makosa: {b}",
+    "lib.arcade.nbAcc": "Usahihi: {n}%",
+    "lib.arcade.note.clicker": "Bofya biskuti ili kuoka biskuti, kisha zitumie kununua wasaidizi wanaooka wenyewe (bei hupanda kwa kila unachonunua). Oka idadi lengwa ya biskuti ndani ya dakika 2 ili kumaliza ngazi.",
+    "lib.arcade.ckCursor": "Kielekezi",
+    "lib.arcade.ckGrandma": "Bibi mwokaji",
+    "lib.arcade.ckFarm": "Shamba",
+    "lib.arcade.ckMine": "Mgodi wa sukari",
+    "lib.arcade.ckFactory": "Kiwanda",
+    "lib.arcade.ckCookie": "Biskuti",
+    "lib.arcade.ckEarned": "Zilizooka: {n}/{t}",
+    "lib.arcade.chips2": "Biskuti: {n}",
+    "lib.arcade.ckCps": "Biskuti {n}/sekunde",
+    "lib.arcade.note.onet": "Chagua vigae viwili vinavyofanana vinavyoweza kuunganishwa kwa njia yenye kona zisizozidi 2 bila kuvuka vigae vingine, ili kuviondoa. Ondoa vigae vyote kabla muda haujaisha ili kushinda. Ikiwa hakuna hatua zilizobaki, unaweza kuchanganya (mara chache).",
+    "lib.arcade.shuffle": "Changanya",
+    "lib.arcade.tilesLeft": "Vigae {n} vimebaki",
+    "lib.arcade.autoShuffle": "Hakuna hatua zilizobaki — vimechanganywa kiotomatiki.",
+    "lib.arcade.note.jigsaw": "Picha imekatwa vipande na kuchanganywa. Gusa kipande kimoja, kisha kingine, ili kuvibadilisha, na ujenge upya picha inayoonyeshwa kama rejeo. Vipande vilivyo mahali sahihi hupata mpaka wa kijani. Ngazi za juu zina vipande vingi zaidi.",
+    "lib.arcade.jgRef": "Picha ya rejeo",
+    "lib.arcade.jgPlaced": "Mahali pake: {a}/{b}",
+    "lib.arcade.golfStrokes": "Mipigo: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Unacheza vipande vyeupe, vinavyosogea kutoka juu kulia kuzunguka hadi chini kulia (nyumbani kwako). Tupa kete, bofya kipande unachotaka kusogeza, kisha bofya mahali palipoangaziwa. Ukitua kwenye pointi yenye kipande kimoja tu cha mpinzani, unakigonga hadi katikati (bar), na mchezaji huyo lazima akirudishe kwanza. Huwezi kutua kwenye pointi yenye vipande viwili au zaidi vya mpinzani. Vipande vyako vyote 15 vikiwa kwenye eneo lako la nyumbani (pointi 6 za mwisho), unaweza kuviondoa. Wa kwanza kuondoa vyote 15 anashinda.",
+    "lib.arcade.bgRoll": "Tupa kete",
+    "lib.arcade.bgOff": "Ondoa",
+    "lib.arcade.bgRollFirst": "Tupa kete",
+    "lib.arcade.bgInfo": "Zilizoondolewa: wewe {a} · kompyuta {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Huna hatua halali iliyobaki.",
+    "lib.arcade.note.tienlen": "Wachezaji wanne, karata 13 kila mmoja. Mpangilio wa karata kutoka chini hadi juu: 3, 4, … K, A, 2; aina kutoka chini hadi juu: jembe, klabu, almasi, moyo. Mwenye 3 ya jembe huanza. Cheza karata moja, jozi, tatu zinazofanana, nne zinazofanana, au mfuatano wa karata 3 au zaidi mfululizo (bila 2). Mchezaji anayefuata lazima acheze aina hiyo hiyo na ya juu zaidi, au apite; nne zinazofanana zinaweza kushinda 2 moja au jozi ya 2. Wengine wote wakipita, aliyecheza mwisho anaweza kuanza na chochote. Wa kwanza kumaliza karata mkononi anashinda. Chagua karata kisha ubonyeze Cheza.",
+    "lib.arcade.tlPlay": "Cheza",
+    "lib.arcade.tlPass": "Pita",
+    "lib.arcade.tlClear": "Futa uchaguzi",
+    "lib.arcade.tlPassed": "amepita",
+    "lib.arcade.tlFree": "Meza ni tupu — unaweza kuanza na chochote",
+    "lib.arcade.tlLeft": "Karata zilizobaki: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} anapita.",
+    "lib.arcade.tlBad": "Karata ulizochagua hazifanyi seti halali.",
+    "lib.arcade.tlLow": "Seti hii si ya juu vya kutosha kushinda meza."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Tiki-Taki-Tou ya Mwisho",
       "desc": "Tiki-taki-tou kwenye mbao ndogo 9: kisanduku unachochagua huamua mpinzani acheze wapi; dhidi ya kompyuta katika ngazi 10."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Pitisha mpira kupita kompyuta; wa kwanza kupata pointi 5 anashinda. Ngazi 10 zenye mpinzani mwenye kasi na ustadi zaidi."
+    },
+    "space-shooter": {
+      "name": "Mpiga Risasi Angani",
+      "desc": "Ongoza chombo chako, angusha vyombo vya adui na ukwepe risasi zao; ngazi 10 zenye mawimbi makubwa, majibu ya risasi na maadui wagumu zaidi."
+    },
+    "asteroids": {
+      "name": "Asteroidi",
+      "desc": "Zunguka, toa msukumo na fyatua ili kuvunja miamba ya angani; miamba mikubwa hupasuka kuwa midogo. Ngazi 10 zenye miamba mingi na ya haraka zaidi."
+    },
+    "maze": {
+      "name": "Maze",
+      "desc": "Tafuta njia ya kutoka kwenye maze kabla muda haujaisha; ngazi 10 kutoka maze ndogo hadi kubwa, zenye ukungu katika ngazi za juu."
+    },
+    "road-cross": {
+      "name": "Kuvuka Barabara (mtindo wa Frogger)",
+      "desc": "Mruke chura kuvuka barabara zenye shughuli nyingi na mito yenye magogo yanayoelea ili kufika nyumbani mara 3; ngazi 10 zenye magari ya kasi zaidi na mto katika ngazi za juu."
+    },
+    "flappy": {
+      "name": "Mchezo wa mtindo wa Flappy Bird",
+      "desc": "Gusa ili kupiga mabawa na kuruka kupitia mapengo kati ya mabomba; ngazi 10 zenye mapengo membamba na kasi inayoongezeka."
+    },
+    "runner": {
+      "name": "Dino Mkimbiaji",
+      "desc": "Ruka juu ya mikaktusi na inama chini ya ndege; kimbia umbali wa kutosha ili kumaliza kila moja ya ngazi 10 huku kasi ikiendelea kuongezeka."
+    },
+    "whack-a-mole": {
+      "name": "Piga Fuko",
+      "desc": "Piga fuko wanaoibuka kutoka mashimoni kabla muda haujaisha, na epuka mabomu; ngazi 10 kutoka polepole hadi haraka sana."
+    },
+    "simon": {
+      "name": "Simon (Kumbukumbu ya Rangi)",
+      "desc": "Kumbuka na urudie mfuatano wa rangi na sauti; mifuatano mirefu zaidi katika ngazi 10, na vitufe 6 kuanzia ngazi ya 7."
+    },
+    "aim-trainer": {
+      "name": "Mazoezi ya Kulenga",
+      "desc": "Piga shabaha zinazoonekana ovyo na kupotea haraka; shabaha hupungua ukubwa katika ngazi 10, na muda wako wa kuitikia hupimwa."
+    },
+    "quick-math": {
+      "name": "Hesabu ya Haraka",
+      "desc": "Fanya kujumlisha, kutoa, kuzidisha na kugawanya kichwani ukiwa na shinikizo la muda; ngazi 10 kutoka hesabu rahisi hadi mifano mikubwa."
+    },
+    "reaction": {
+      "name": "Jaribio la Muda wa Kuitikia",
+      "desc": "Bofya pindi skrini inapogeuka kijani; wastani wako wa raundi 5 lazima ufikie kikomo cha kila ngazi, kinachobana zaidi katika ngazi 10."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Gawa mbegu kwenye mashimo, chukua mbegu za mpinzani na cheza tena unapotua kwenye ghala lako; cheza dhidi ya kompyuta katika ngazi 10 kutoka rahisi hadi ngumu."
+    },
+    "snakes-ladders": {
+      "name": "Nyoka na Ngazi",
+      "desc": "Tupa kete kutoka mraba 1 hadi 100, panda ngazi, epuka nyoka na ufike mwisho kabla ya wapinzani wako; ngazi 10."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris (Kinu)",
+      "desc": "Weka, telezesha na “ruka” vipande vyako ili kutengeneza vitatu mfululizo na kuondoa vipande vya mpinzani; cheza dhidi ya kompyuta katika ngazi 10."
+    },
+    "battleship": {
+      "name": "Vita vya Meli",
+      "desc": "Tafuta na uzamishe kikosi cha kompyuta kwenye gridi ya 10x10 kabla hakijazamisha chako; ngazi 10 ambapo kompyuta hukisia kwa werevu zaidi."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Boga, Kaa, Samaki, Kamba)",
+      "desc": "Mchezo wa kete wa jadi wa Kivietinamu: weka dau la sarafu za mchezo kwa wanyama na utikise kete tatu; fikia sarafu lengwa katika ngazi 10 (hakuna pesa halisi)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Weka dau kwa Mchezaji, Benki au Sare kwa karata zinazogawiwa kwa kanuni za kawaida, kwa sarafu za mchezo; fikia sarafu lengwa katika ngazi 10 (hakuna pesa halisi)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Mchezo wa Karata Tatu)",
+      "desc": "Linganisha mikono ya karata 3 na mgawaji: karata tatu zinazofanana, karata tatu za picha, kisha alama 9 hadi 0; sarafu za mchezo, ngazi 10, hakuna pesa halisi."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Weka alama namba zinazotajwa kwenye kadi yako ya 5x5 na upige kelele BINGO kabla ya wapinzani wa kompyuta; namba hutajwa kwa kasi zaidi katika ngazi 10."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Kete Tano)",
+      "desc": "Tupa kete tano, weka nzuri na ujaze visanduku 13 vya alama; fikia alama lengwa katika ngazi 10."
+    },
+    "crazy-eights": {
+      "name": "Nane za Kichaa",
+      "desc": "Linganisha aina au namba, nane hubadilisha aina; maliza karata mkononi kabla ya wapinzani 1 hadi 3 wa kompyuta katika ngazi 10."
+    },
+    "car-race": {
+      "name": "Kukwepa Magari Mbioni",
+      "desc": "Badilisha njia ili kukwepa magari mbele na uendeshe umbali wote; ngazi 10 zenye njia nyingi na msongamano wa kasi zaidi."
+    },
+    "sky-jump": {
+      "name": "Kuruka Angani",
+      "desc": "Ruka kutoka jukwaa hadi jukwaa ili kupanda juu uwezavyo bila kuanguka; ngazi 10 zenye majukwaa machache, yanayosogea na yanayovunjika."
+    },
+    "gold-miner": {
+      "name": "Mchimba Dhahabu",
+      "desc": "Shusha ndoano kuvuta dhahabu na almasi, epuka miamba mizito, na ufikie pesa lengwa ndani ya sekunde 60; ngazi 10."
+    },
+    "fruit-slice": {
+      "name": "Kata Matunda",
+      "desc": "Telezesha ili kukata matunda yanayoruka juu na ukwepe mabomu; ngazi 10 zenye matunda mengi zaidi na mabomu mengi zaidi."
+    },
+    "basketball": {
+      "name": "Kurusha Mpira wa Kikapu",
+      "desc": "Buruta na uachilie ili kurusha mpira kwenye kikapu ndani ya idadi ndogo ya urushaji; ngazi 10, na kikapu kinachosogea kuanzia ngazi ya 4."
+    },
+    "bubble-shooter": {
+      "name": "Mpiga Viputo",
+      "desc": "Rusha viputo ili kuunganisha 3 au zaidi vya rangi moja na kuvipasua, na uvifute vyote kabla havijafika chini; ngazi 10 zenye rangi nyingi zaidi."
+    },
+    "dot-chase": {
+      "name": "Kimbizo la Nukta",
+      "desc": "Kula nukta zote za maze huku ukikwepa mizimu inayokufukuza; ngazi 10 zenye mizimu mingi na yenye werevu zaidi."
+    },
+    "kakuro": {
+      "name": "Kakuro (Jumla Mtambuka)",
+      "desc": "Jaza visanduku vyeupe kwa tarakimu 1–9 ili kila mfululizo uongezeke hadi kidokezo chake bila kurudia; ngazi 10, gridi kutoka 5x5 hadi 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Jaza gridi bila kurudia kwenye safu mlalo au wima ili kila kundi litoe lengo lake kwa kitendo chake; ngazi 10, gridi kutoka 3x3 hadi 6x6."
+    },
+    "word-guess": {
+      "name": "Kisia Neno (mtindo wa Wordle)",
+      "desc": "Kisia neno la siri la Kiingereza kwa vidokezo vya kijani, njano na kijivu; ngazi 10 zenye maneno ya herufi 4–6 na majaribio machache."
+    },
+    "hangman": {
+      "name": "Hangman (Mnyongwa)",
+      "desc": "Kisia neno la Kiingereza herufi moja moja kabla makosa hayajaisha; ngazi 10 zenye maneno marefu zaidi na makosa machache."
+    },
+    "word-scramble": {
+      "name": "Maneno Yaliyochanganywa (Anagram)",
+      "desc": "Panga upya herufi zilizochanganywa kuwa neno la Kiingereza kabla muda haujaisha; ngazi 10, maneno 5 kwa kila ngazi."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Linganisha vigae na upande wowote wa mnyororo na umalize vigae mkononi kabla ya kompyuta; ngazi 10 kompyuta inavyozidi kuwa na werevu."
+    },
+    "hearts": {
+      "name": "Hearts (Mioyo)",
+      "desc": "Epuka mioyo na Malkia wa Jembe katika mchezo wa karata wa wachezaji wanne; alama ya chini ni bora; ngazi 10 dhidi ya wachezaji werevu zaidi wa kompyuta."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (chip za mchezo)",
+      "desc": "Poka mmoja kwa mmoja dhidi ya kompyuta kwa chip za mchezo: kunja, linganisha au ongeza, na ushinde kompyuta ikiishiwa chip; ngazi 10, hakuna pesa halisi."
+    },
+    "n-back": {
+      "name": "Kumbukumbu ya N-Back",
+      "desc": "Tazama mraba unaowaka na ubonyeze Linganisha unapofanana na ule wa hatua N zilizopita; ngazi 10 zenye N hadi 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Bofya ili kuoka biskuti, nunua wasaidizi wanaooka wenyewe na ufikie lengo ndani ya dakika 2; ngazi 10."
+    },
+    "tile-connect": {
+      "name": "Kuunganisha Vigae (mtindo wa Onet)",
+      "desc": "Unganisha vigae vinavyofanana kwa njia yenye kona zisizozidi mbili na uondoe vyote kabla muda haujaisha; ngazi 10, bodi kubwa zaidi."
+    },
+    "jigsaw": {
+      "name": "Fumbo la Picha",
+      "desc": "Badilisha vipande vilivyochanganywa ili kujenga upya picha; ngazi 10 kutoka vipande 3x3 hadi 6x6."
+    },
+    "mini-golf": {
+      "name": "Gofu Ndogo",
+      "desc": "Vuta nyuma na uachilie ili kupiga mpira kwenye shimo ndani ya kikomo cha mipigo; viwanja 10 vyenye kuta na mchanga."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Tupa kete, kimbiza vipande vyako nyumbani na uviondoe kabla ya kompyuta, ukigonga vipande vyake vilivyo peke yake njiani; ngazi 10."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Kumi na Tatu)",
+      "desc": "Mchezo wa karata wa Kivietinamu wa kumalizia karata kwa wanne: cheza karata moja, jozi, mfuatano na nne zinazofanana ili kumaliza karata mkononi kwanza; ngazi 10."
     }
   },
   "s": {

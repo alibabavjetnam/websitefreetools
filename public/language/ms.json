@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Pilih satu warna untuk mengisi seluruh kawasan milik anda di penjuru kiri atas; ia menelan petak jiran berwarna sama. Jadikan seluruh papan satu warna dalam bilangan langkah yang dibenarkan.",
     "lib.arcade.note.mastermind": "Komputer menyembunyikan satu baris warna. Pilih warna untuk setiap kedudukan, kemudian tekan Teka. Pasak hitam = warna betul di tempat betul; pasak putih = warna betul di tempat salah. Pecahkan kod sebelum tekaan anda habis.",
     "lib.arcade.note.hanoi": "Pindahkan semua cakera ke tiang terakhir. Pindahkan hanya cakera teratas sesuatu tiang pada satu masa, dan jangan sekali-kali letak cakera besar di atas cakera kecil. Klik tiang asal, kemudian tiang sasaran.",
-    "lib.arcade.note.pipes": "Klik jubin untuk memutar paip 90°. Sambungkan semua paip menjadi satu rangkaian tanpa hujung terbuka (hujung terbuka ditunjukkan dengan warna merah)."
+    "lib.arcade.note.pipes": "Klik jubin untuk memutar paip 90°. Sambungkan semua paip menjadi satu rangkaian tanpa hujung terbuka (hujung terbuka ditunjukkan dengan warna merah).",
+    "lib.arcade.pongScore": "Anda {a} – {b} CPU (pertama ke {t})",
+    "lib.arcade.kills": "Dimusnahkan: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} batu lagi",
+    "lib.arcade.timeLeft": "{n} s lagi",
+    "lib.arcade.stepsN": "Langkah: {n}",
+    "lib.arcade.crossed": "Sampai rumah: {n}/{t}",
+    "lib.arcade.pipes": "Paip dilepasi: {n}/{t}",
+    "lib.arcade.distance": "Jarak: {n}/{t} m",
+    "lib.arcade.speedN": "Kelajuan: {n}",
+    "lib.arcade.note.whack-a-mole": "Tikus tanah muncul dari lubang — klik atau ketik tikus tanah untuk memukulnya. Pukul cukup banyak tikus tanah sebelum masa tamat. Mulai tahap 4 ada bom: terkena bom akan menolak mata anda.",
+    "lib.arcade.hole": "Lubang",
+    "lib.arcade.hitsN": "Pukulan: {n}/{t}",
+    "lib.arcade.note.simon": "Permainan memainkan urutan warna dan bunyi — ulang dalam susunan yang sama. Setiap pusingan menambah satu langkah lagi. Ingat panjang yang diperlukan untuk melepasi tahap. Mulai tahap 7 ada 6 butang.",
+    "lib.arcade.seqN": "Urutan: {n}/{t}",
+    "lib.arcade.watch": "Perhatikan…",
+    "lib.arcade.yourTurnShort": "Giliran anda",
+    "lib.arcade.note.aim-trainer": "Sasaran muncul secara rawak dan cepat hilang — kenai sebanyak mungkin. Sasaran menjadi semakin kecil dan laju. Kenai cukup sasaran sebelum anda terlepas lebih daripada 5 kali untuk melepasi tahap.",
+    "lib.arcade.missN": "Terlepas: {n}/{t}",
+    "lib.arcade.answer": "Jawapan",
+    "lib.arcade.note.quick-math": "Selesaikan dalam kepala secepat mungkin: taip jawapan dan tekan Enter. Setiap soalan ada had masa; jawapan salah atau kehabisan masa menyebabkan anda kehilangan satu nyawa (anda ada 3). Jawab cukup banyak soalan dengan betul untuk melepasi tahap.",
+    "lib.arcade.correctN": "Betul: {n}/{t}",
+    "lib.arcade.note.reaction": "Tunggu skrin bertukar hijau, kemudian klik secepat mungkin. Klik terlalu awal dikira kesalahan (3 kesalahan anda kalah). Purata 5 pusingan anda mesti mengatasi had tahap.",
+    "lib.arcade.roundN": "Pusingan {n}/{t}",
+    "lib.arcade.limitMs": "Had: {n} ms",
+    "lib.arcade.rxWait": "Tunggu hijau…",
+    "lib.arcade.rxGo": "KLIK!",
+    "lib.arcade.rxEarly": "Terlalu awal!",
+    "lib.arcade.gameArea": "Kawasan permainan",
+    "lib.arcade.note.pong": "Gerakkan tetikus, seret jari atau guna kekunci ← → untuk mengawal pemukul di bawah. Lepaskan bola melepasi komputer; yang pertama mendapat 5 mata menang. Bola bertambah laju setiap kali dipukul.",
+    "lib.arcade.note.space-shooter": "Gerakkan tetikus, seret jari atau guna kekunci ← → untuk mengemudi; kapal anda menembak secara automatik. Musnahkan cukup kapal musuh untuk melepasi tahap, dan elakkan perlanggaran serta tembakan musuh. Anda ada 3 nyawa.",
+    "lib.arcade.note.asteroids": "← → memutar kapal, ↑ menujah ke depan, Space menembak. Musnahkan semua batu untuk melepasi tahap; batu besar pecah menjadi batu yang lebih kecil. Kapal muncul di sisi bertentangan apabila keluar dari tepi skrin. Anda ada 3 nyawa.",
+    "lib.arcade.note.maze": "Guna kekunci anak panah (atau leret, atau butang) untuk bergerak dari titik hijau ke bendera merah sebelum masa tamat. Mulai tahap 5 labirin berkabus: anda hanya nampak di sekeliling anda, dan kawasan yang telah dilalui diingati.",
+    "lib.arcade.note.road-cross": "Guna kekunci anak panah, leret atau butang untuk melompatkan katak dari bawah ke atas. Elakkan lalu lintas; mulai tahap 5 bahagian atas ialah sungai, jadi lompat ke atas kayu balak yang terapung. Sampai ke rumah 3 kali untuk melepasi tahap. Anda ada 3 nyawa.",
+    "lib.arcade.note.flappy": "Ketik kawasan permainan, tekan Space atau ↑ untuk mengepak. Terbang melalui ruang antara paip tanpa menyentuh paip, tanah atau siling. Tahap lebih tinggi mempunyai ruang lebih sempit dan penerbangan lebih laju.",
+    "lib.arcade.note.runner": "Ketik kawasan permainan, tekan Space atau ↑ untuk melompat melepasi kaktus; tahan ↓ untuk tunduk di bawah burung yang terbang tinggi (atau lompat melepasi yang rendah). Berlari cukup jauh untuk melepasi tahap. Kelajuan sentiasa meningkat.",
+    "lib.arcade.fire": "Tembak",
+    "lib.arcade.jump": "Lompat",
+    "lib.arcade.aimTarget": "Sasaran",
+    "lib.game.soundOn": "Hidupkan bunyi",
+    "lib.game.soundOff": "Matikan bunyi",
+    "lib.arcade.note.kalah": "Anda bermain di baris bawah, komputer di baris atas; lubang besar di sebelah kanan ialah stor anda. Klik satu lubang untuk mengambil semua bijinya dan menaburkannya ikut lawan arah jam, satu biji setiap lubang (langkau stor lawan). Jika biji terakhir jatuh dalam stor anda, anda bergerak sekali lagi; jika jatuh dalam lubang kosong di sebelah anda yang bertentangan dengan lubang berbiji, anda menawan biji-biji itu. Apabila satu pihak kosong, biji di pihak lagi satu masuk ke stor pemiliknya; stor yang lebih besar menang.",
+    "lib.arcade.note.snakes": "Baling dadu dan bergerak sebanyak petak itu, dari 1 hingga 100. Jika mendarat di kaki tangga, anda naik; jika mendarat di kepala ular, anda tergelincir turun. Mulai tahap 4 anda mesti mendapat nombor tepat untuk mendarat di 100. Tahap lebih tinggi ada lebih banyak ular, lebih sedikit tangga dan lebih ramai lawan. Yang pertama sampai 100 menang.",
+    "lib.arcade.square": "Petak {n}",
+    "lib.arcade.ladderUp": "Naik tangga!",
+    "lib.arcade.snakeDown": "Ditelan ular!",
+    "lib.arcade.needExact": "Anda perlukan nombor tepat untuk mendarat di 100.",
+    "lib.arcade.note.nmm": "Setiap pihak ada 9 buah. Fasa 1: bergilir meletakkan buah pada titik kosong. Fasa 2: gelongsorkan buah ke titik kosong bersebelahan. Apabila tinggal 3 buah, anda boleh \"terbang\" ke mana-mana titik kosong. Bentuk tiga sebaris (\"kincir\") untuk membuang sebuah buah lawan (buah yang bukan dalam kincir dahulu). Anda kalah apabila tinggal 2 buah atau tidak boleh bergerak. Anda bermain putih dan bergerak dahulu.",
+    "lib.arcade.inHand": "Untuk diletakkan: {a} · {b}",
+    "lib.arcade.removePiece": "Pilih buah lawan untuk dibuang.",
+    "lib.arcade.enemyWaters": "Perairan musuh (klik untuk menembak)",
+    "lib.arcade.yourFleet": "Armada anda",
+    "lib.arcade.note.battleship": "Setiap pihak ada 5 kapal (panjang 5, 4, 3, 3, 2) yang diletakkan secara rawak pada grid 10x10. Bergilir menembak satu sel: kenaan bertukar merah, tersasar bertukar biru muda, dan mengenai setiap sel sebuah kapal akan menenggelamkannya. Tenggelamkan seluruh armada musuh dahulu untuk menang. Pada tahap lebih tinggi komputer meneka kedudukan kapal anda dengan lebih bijak.",
+    "lib.arcade.shipsLeft": "Kapal berbaki: anda {a} · musuh {b}",
+    "lib.arcade.theySunk": "Musuh menenggelamkan satu kapal anda!",
+    "lib.arcade.theyHit": "Musuh mengenai satu kapal anda.",
+    "lib.arcade.theyMiss": "Musuh tersasar.",
+    "lib.arcade.youSunk": "Anda menenggelamkan satu kapal musuh!",
+    "lib.arcade.youHit": "Kena!",
+    "lib.arcade.youMiss": "Tersasar.",
+    "lib.arcade.shake": "Goncang",
+    "lib.arcade.clearBets": "Kosongkan pertaruhan",
+    "lib.arcade.note.bau-cua": "Syiling maya sahaja — tiada wang sebenar. Pilih nilai cip, klik haiwan untuk meletakkan pertaruhan, kemudian tekan Goncang. Bagi setiap dadu yang sepadan dengan haiwan yang anda pertaruhkan, anda mendapat semula pertaruhan ditambah jumlah yang sama untuk setiap padanan. Capai syiling sasaran dalam bilangan pusingan yang dibenarkan untuk melepasi tahap.",
+    "lib.arcade.note.baccarat": "Syiling maya sahaja — tiada wang sebenar. Pertaruh pada Pemain, Bankir atau Seri, kemudian tekan Agih. Nilai sesuatu tangan ialah digit terakhir jumlahnya (A = 1, 2–9 nilai muka, 10/J/Q/K = 0); tangan yang lebih hampir 9 menang, dan kad ketiga diambil mengikut peraturan piawai. Pemain bayar 1:1, Bankir 0.95:1, Seri 8:1 (pertaruhan Pemain/Bankir dipulangkan jika seri). Capai syiling sasaran dalam bilangan pusingan yang dibenarkan untuk melepasi tahap.",
+    "lib.arcade.banker": "Bankir",
+    "lib.arcade.player": "Pemain",
+    "lib.arcade.tie": "Seri",
+    "lib.arcade.openCards": "Dedahkan",
+    "lib.arcade.note.bai-cao": "Syiling maya sahaja — tiada wang sebenar. Setiap pihak mendapat 3 kad. Tangan dikira mengikut digit terakhir jumlahnya (A = 1, 2–9 nilai muka, 10/J/Q/K = 10, iaitu 0 mata). Susunan: tiga kad sama (\"Sáp\") tertinggi, kemudian tiga kad gambar (\"Ba tiên\"), kemudian 9 mata hingga 0. Letakkan pertaruhan, tekan Agih kemudian Dedahkan untuk membandingkan dengan bandar. Mulai tahap 6 bandar menang jika seri. Capai syiling sasaran dalam bilangan pusingan yang dibenarkan untuk melepasi tahap.",
+    "lib.arcade.caoSap": "Tiga kad sama",
+    "lib.arcade.caoBaTien": "Tiga kad gambar",
+    "lib.arcade.caoPts": "{n} mata",
+    "lib.arcade.note.bingo": "Komputer menyebut nombor dari 1 hingga 75. Apabila nombor yang disebut ada pada kad anda, klik untuk menandanya (tengah percuma). Lengkapkan satu baris, lajur atau pepenjuru dan tekan BINGO! — anda mesti mengalahkan lawan komputer. BINGO! yang palsu mengunci butang selama beberapa saat. Tahap lebih tinggi menyebut nombor lebih laju dan ada lebih ramai lawan.",
+    "lib.arcade.opponentsN": "Lawan: {n}",
+    "lib.arcade.falseBingo": "Belum ada garisan penuh! Butang dikunci selama 3 saat.",
+    "lib.arcade.bingoGo": "Menyebut nombor!",
+    "lib.arcade.note.yahtzee": "Setiap giliran anda menggolek 5 dadu sehingga 3 kali: klik dadu untuk menyimpannya, kemudian tekan Golek untuk menggolek semula yang lain. Kemudian pilih satu kotak dalam jadual untuk mata (setiap kotak digunakan sekali; kotak yang tidak sesuai mendapat 0). 13 giliran. Kotak Satu hingga Enam mendapat bonus 35 jika jumlahnya 63 atau lebih. Capai skor sasaran tahap untuk menang.",
+    "lib.arcade.turnN": "Giliran {n}/13",
+    "lib.arcade.pickCat": "Pilih kotak untuk mata",
+    "lib.arcade.rollsLeft": "Golek ({n} lagi)",
+    "lib.arcade.upperBonus": "Bonus Satu–Enam",
+    "lib.arcade.scored": "Mata {n}",
+    "lib.arcade.note.crazy-eights": "Mainkan kad yang sepadan dengan kad teratas longgokan buangan dari segi jenis atau nilai. Kad lapan ialah liar: mainkan bila-bila masa dan pilih jenis baharu. Jika tiada kad yang boleh dimainkan, ambil dari longgokan (sehingga 3 kad); jika masih tidak boleh, anda langkau. Yang pertama menghabiskan kad menang. Tahap lebih tinggi ada lebih ramai lawan dan komputer bermain lebih bijak.",
+    "lib.arcade.opponent": "Lawan",
+    "lib.arcade.pileLeft": "Longgokan ambil: {n}",
+    "lib.arcade.pickSuit": "Pilih jenis baharu",
+    "lib.arcade.aiSuit": "Komputer memilih {s}",
+    "lib.arcade.aiPass": "Komputer melangkau.",
+    "lib.arcade.mustPlay": "Anda ada kad yang boleh dimainkan — mainkannya.",
+    "lib.arcade.youPass": "Anda mengambil 3 kad dan melangkau.",
+    "lib.arcade.bcGourd": "Labu",
+    "lib.arcade.bcCrab": "Ketam",
+    "lib.arcade.bcShrimp": "Udang",
+    "lib.arcade.bcFish": "Ikan",
+    "lib.arcade.bcRooster": "Ayam jantan",
+    "lib.arcade.bcDeer": "Rusa",
+    "lib.arcade.yOnes": "Satu",
+    "lib.arcade.yTwos": "Dua",
+    "lib.arcade.yThrees": "Tiga",
+    "lib.arcade.yFours": "Empat",
+    "lib.arcade.yFives": "Lima",
+    "lib.arcade.ySixes": "Enam",
+    "lib.arcade.yThree": "Tiga sama",
+    "lib.arcade.yFour": "Empat sama",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Lurus kecil (30)",
+    "lib.arcade.yLarge": "Lurus besar (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Peluang",
+    "lib.arcade.note.race": "Tekan ← → (atau ketik lorong yang dikehendaki) untuk menukar lorong dan mengelak kereta di hadapan. Anda ada 3 nyawa; memandu sepanjang jarak penuh untuk melepasi tahap. Tahap lebih tinggi menambah lorong dan lalu lintas lebih laju.",
+    "lib.arcade.note.jump": "Watak melantun sendiri. Tekan ← → atau seret jari untuk mendarat di pelantar seterusnya. Pelantar biru bergerak, pelantar coklat pecah apabila anda mendarat. Jatuh keluar skrin bermakna kalah; panjat cukup tinggi untuk melepasi tahap.",
+    "lib.arcade.note.miner": "Cangkuk berayun ke kiri dan kanan; tekan Space, ↓ atau ketik padang untuk menjatuhkannya. Emas besar dan batu berat dan ditarik perlahan; berlian bernilai tinggi. Capai wang sasaran sebelum 60 saat tamat.",
+    "lib.arcade.note.slicer": "Leret jari atau tetikus merentas buah untuk memotongnya. Elakkan bom hitam. Terlepas buah atau memotong bom menyebabkan anda kehilangan satu nyawa (anda ada 3). Potong cukup banyak buah untuk melepasi tahap.",
+    "lib.arcade.note.hoops": "Tekan pada gelanggang, seret ke bawah (seperti lastik) dan lepaskan untuk menembak bola ke arah gelung. Semakin jauh anda seret, semakin kuat balingan. Jaringkan cukup bakul dalam bilangan tembakan yang ada; mulai tahap 4 gelung bergerak.",
+    "lib.arcade.note.bubbles": "Gerakkan tetikus atau jari untuk membidik, kemudian klik/ketik atau tekan Space/Tembak untuk menembak. Sambungkan 3 atau lebih gelembung warna sama untuk memecahkannya; gelembung yang kehilangan sokongan akan jatuh. Barisan turun perlahan-lahan, jadi jauhkannya daripada garisan bawah. Kosongkan semua gelembung untuk menang.",
+    "lib.arcade.note.chase": "Guna kekunci anak panah (atau leret / butang) untuk membelok dan makan semua titik dalam labirin sambil mengelak hantu yang mengejar anda. Anda ada 3 nyawa; tahap lebih tinggi menambah lebih banyak hantu yang lebih laju dan mengejar dengan lebih bijak.",
+    "lib.arcade.height": "Ketinggian: {n}/{t} m",
+    "lib.arcade.money": "Wang: {n}/{t}",
+    "lib.arcade.sliced": "Dipotong: {n}/{t}",
+    "lib.arcade.hoopScore": "Jaringan: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} tembakan lagi",
+    "lib.arcade.bubbleLeft": "{n} gelembung lagi",
+    "lib.arcade.shotsN": "Tembakan: {n}",
+    "lib.arcade.dotsLeft": "{n} titik lagi",
+    "lib.arcade.note.kakuro": "Isi sel putih dengan digit 1–9 supaya setiap lajur jumlahnya sama dengan petunjuk dalam sel hitam (nombor di kanan atas untuk lajur ke kanan, nombor di kiri bawah untuk lajur ke bawah), tanpa mengulang digit dalam satu lajur. Guna kekunci anak panah untuk bergerak.",
+    "lib.arcade.note.kenken": "Isi grid dengan nombor 1 hingga N supaya tiada nombor berulang dalam mana-mana baris atau lajur. Setiap kumpulan bergaris tebal menunjukkan sasaran dan operasi (+, −, ×, ÷): nombor dalam kumpulan mesti memberikan hasil itu. Guna kekunci anak panah untuk bergerak.",
+    "lib.arcade.note.wordGuess": "Teka perkataan rahsia bahasa Inggeris. Selepas setiap percubaan, hijau bermaksud huruf betul di tempat betul, kuning bermaksud huruf ada dalam perkataan tetapi di tempat lain, dan kelabu bermaksud huruf tiada dalam perkataan. Taip pada papan kekunci atau guna kekunci pada skrin, dan tekan Enter untuk hantar. Tahap lebih tinggi ada perkataan lebih panjang dan percubaan lebih sedikit.",
+    "lib.arcade.note.hangman": "Teka perkataan rahsia bahasa Inggeris dengan memilih huruf satu demi satu. Setiap huruf yang salah menambah satu bahagian pada figura yang digantung; apabila peluang salah habis, anda kalah. Tahap lebih tinggi ada perkataan lebih panjang dan peluang salah lebih sedikit.",
+    "lib.arcade.note.scramble": "Susun semula huruf yang bercampur menjadi perkataan bahasa Inggeris sebenar dan taip dalam kotak jawapan. Setiap tahap ada 5 perkataan; selesaikan sekurang-kurangnya 4 sebelum pemasa setiap perkataan tamat untuk melepasi tahap. Petunjuk mendedahkan huruf pertama.",
+    "lib.arcade.cellsLeft": "{n} sel kosong lagi",
+    "lib.arcade.wrongN": "{n} sel tidak betul.",
+    "lib.arcade.noError": "Setakat ini tiada kesilapan ditemui.",
+    "lib.arcade.tooShort": "Huruf tidak mencukupi",
+    "lib.arcade.answerIs": "Jawapan: {w}",
+    "lib.arcade.livesLeft": "{n} tekaan salah lagi",
+    "lib.arcade.yourAnswer": "Jawapan anda",
+    "lib.arcade.skip": "Langkau",
+    "lib.arcade.notThis": "Tidak betul, cuba lagi.",
+    "lib.arcade.startsWith": "Huruf pertama: {c}",
+    "lib.arcade.note.domino": "Setiap pemain mendapat 7 jubin; pemegang dublet tertinggi bermula. Mainkan jubin yang nombornya sepadan dengan satu hujung rantai. Jika tidak boleh bermain, ambil dari longgokan sehingga boleh; jika kosong, langkau. Yang pertama menghabiskan jubin menang; jika kedua-duanya tersekat, jumlah titik yang lebih rendah menang.",
+    "lib.arcade.note.hearts": "Empat pemain, 13 kad setiap seorang. Dua kelab bermula. Anda mesti mengikut jenis kad yang dimulakan jika boleh. Setiap hati bernilai 1 mata dan Ratu Sekop 13; pemenang satu pusingan mengambil mata di dalamnya. Lebih rendah lebih baik, dan mengambil kesemua 26 mata memberikan semua yang lain 26. Anda tidak boleh memulakan dengan hati sehingga ada hati dimainkan. Selepas tangan terakhir, anda menang jika skor anda paling rendah (atau seri paling rendah).",
+    "lib.arcade.note.holdem": "Satu lawan satu dengan komputer menggunakan cip maya sahaja. Setiap pemain mendapat 2 kad persendirian dan 5 kad komuniti didedahkan (flop, turn, river); bentuk tangan 5 kad terbaik. Setiap pusingan anda boleh lipat, sama (atau semak) atau naikkan. Blind naik setiap 4 tangan. Anda menang apabila cip komputer habis, atau mempunyai lebih banyak cip selepas had tangan. Tiada wang sebenar terlibat.",
+    "lib.arcade.dmDraw": "Ambil jubin",
+    "lib.arcade.dmPass": "Langkau",
+    "lib.arcade.dmEmpty": "Belum ada jubin dimainkan",
+    "lib.arcade.dmYard": "Longgokan: {n} jubin",
+    "lib.arcade.dmLeft": "Hujung kiri",
+    "lib.arcade.dmRight": "Hujung kanan",
+    "lib.arcade.dmTie": "Seri! Kedua-dua pihak sama.",
+    "lib.arcade.hrHand": "Tangan {n}/{t}",
+    "lib.arcade.hrTook": "{p} memenangi pusingan ({n} mata).",
+    "lib.arcade.hrIllegal": "Anda tidak boleh memainkan kad ini (ikut jenis kad, atau belum boleh memulakan dengan hati).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Lipat",
+    "lib.arcade.check": "Semak",
+    "lib.arcade.callN": "Sama {n}",
+    "lib.arcade.raiseTo": "Naikkan kepada",
+    "lib.arcade.raiseN": "Naikkan kepada {n}",
+    "lib.arcade.thOppFold": "Komputer melipat; anda menang tangan ini.",
+    "lib.arcade.thYouFold": "Anda telah melipat.",
+    "lib.arcade.thOppWin": "Komputer menang tangan ini",
+    "lib.arcade.thYouWin": "Anda menang tangan ini",
+    "lib.arcade.thSplit": "Pot dibahagi",
+    "lib.arcade.thAiFold": "Komputer melipat.",
+    "lib.arcade.thAiRaise": "Komputer menaikkan kepada {n}.",
+    "lib.arcade.thAiCall": "Komputer menyamakan / menyemak.",
+    "lib.arcade.hand.high": "Kad tertinggi",
+    "lib.arcade.hand.pair": "Sepasang",
+    "lib.arcade.hand.twoPair": "Dua pasang",
+    "lib.arcade.hand.trips": "Tiga sama",
+    "lib.arcade.hand.straight": "Lurus",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Empat sama",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Sebuah petak menyala satu demi satu pada grid 3x3. Tekan \"Sama!\" (atau Space) apabila kedudukan yang menyala sama dengan kedudukan N langkah lalu (N ditunjukkan di atas). Anda perlukan sekurang-kurangnya 80% keputusan betul untuk melepasi tahap. Tahap lebih tinggi menggunakan N yang lebih besar.",
+    "lib.arcade.nbMatch": "Sama!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Betul: {a} · Salah: {b}",
+    "lib.arcade.nbAcc": "Ketepatan: {n}%",
+    "lib.arcade.note.clicker": "Klik biskut untuk membakar biskut, kemudian belanjakannya pada pembantu yang membakar secara automatik (harga naik setiap kali anda membeli). Bakar bilangan biskut sasaran dalam 2 minit untuk melepasi tahap.",
+    "lib.arcade.ckCursor": "Kursor",
+    "lib.arcade.ckGrandma": "Nenek pembakar",
+    "lib.arcade.ckFarm": "Ladang",
+    "lib.arcade.ckMine": "Lombong gula",
+    "lib.arcade.ckFactory": "Kilang",
+    "lib.arcade.ckCookie": "Biskut",
+    "lib.arcade.ckEarned": "Dibakar: {n}/{t}",
+    "lib.arcade.chips2": "Biskut: {n}",
+    "lib.arcade.ckCps": "{n} biskut/saat",
+    "lib.arcade.note.onet": "Pilih dua jubin serupa yang boleh disambung dengan laluan paling banyak 2 selekoh dan tidak melintasi jubin lain untuk membuangnya. Kosongkan semua jubin sebelum masa tamat untuk menang. Apabila tiada langkah lagi, anda boleh mengocok (bilangan terhad).",
+    "lib.arcade.shuffle": "Kocok",
+    "lib.arcade.tilesLeft": "{n} jubin lagi",
+    "lib.arcade.autoShuffle": "Tiada langkah lagi — dikocok secara automatik.",
+    "lib.arcade.note.jigsaw": "Gambar dipotong menjadi kepingan dan dikocok. Ketik satu keping, kemudian satu lagi, untuk menukar ganti, dan bina semula gambar yang ditunjukkan sebagai rujukan. Kepingan di tempat betul mendapat sempadan hijau. Tahap lebih tinggi ada lebih banyak kepingan.",
+    "lib.arcade.jgRef": "Gambar rujukan",
+    "lib.arcade.jgPlaced": "Di tempat betul: {a}/{b}",
+    "lib.arcade.golfStrokes": "Pukulan: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Anda bermain buah putih, bergerak dari kanan atas mengelilingi ke kanan bawah (rumah anda). Golek dadu, klik buah yang hendak digerakkan, kemudian klik destinasi yang diserlahkan. Mendarat di titik yang ada tepat satu buah lawan akan memukulnya ke bar tengah, dan pemain itu mesti memasukkannya semula dahulu. Anda tidak boleh mendarat di titik dengan dua atau lebih buah lawan. Apabila kesemua 15 buah anda berada di papan rumah (6 titik terakhir), anda boleh mengeluarkannya. Yang pertama mengeluarkan kesemua 15 menang.",
+    "lib.arcade.bgRoll": "Golek dadu",
+    "lib.arcade.bgOff": "Keluarkan",
+    "lib.arcade.bgRollFirst": "Golek dadu",
+    "lib.arcade.bgInfo": "Keluar: anda {a} · komputer {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Anda tiada langkah sah lagi.",
+    "lib.arcade.note.tienlen": "Empat pemain, 13 kad setiap seorang. Susunan kad dari rendah ke tinggi: 3, 4, … K, A, 2; jenis dari rendah ke tinggi: sekop, kelab, wajik, hati. Pemegang 3 sekop bermula. Mainkan satu kad, sepasang, tiga sama, empat sama, atau jujukan 3 kad berturutan atau lebih (tanpa 2). Pemain seterusnya mesti memainkan jenis yang sama dan lebih tinggi, atau langkau; empat sama boleh mengalahkan satu 2 atau sepasang 2. Apabila semua yang lain langkau, pemain terakhir yang bermain boleh memulakan dengan apa sahaja. Yang pertama menghabiskan kad menang. Pilih kad, kemudian tekan Main.",
+    "lib.arcade.tlPlay": "Main",
+    "lib.arcade.tlPass": "Langkau",
+    "lib.arcade.tlClear": "Kosongkan pilihan",
+    "lib.arcade.tlPassed": "melangkau",
+    "lib.arcade.tlFree": "Meja kosong — anda boleh memulakan dengan apa sahaja",
+    "lib.arcade.tlLeft": "Kad berbaki: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} melangkau.",
+    "lib.arcade.tlBad": "Kad yang dipilih tidak membentuk set yang sah.",
+    "lib.arcade.tlLow": "Set ini tidak cukup tinggi untuk mengalahkan kad di meja."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Tic-Tac-Toe Muktamad",
       "desc": "Tic-tac-toe merentasi 9 papan kecil: petak yang anda pilih menentukan tempat lawan mesti bermain; lawan komputer dalam 10 tahap."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Lepaskan bola melepasi komputer; yang pertama mendapat 5 mata menang. 10 tahap dengan lawan yang makin laju dan tajam."
+    },
+    "space-shooter": {
+      "name": "Penembak Angkasa",
+      "desc": "Kemudikan kapal anda, tembak kapal musuh dan elak tembakan mereka; 10 tahap dengan gelombang lebih besar, tembakan balas dan musuh lebih kuat."
+    },
+    "asteroids": {
+      "name": "Asteroid",
+      "desc": "Putar, tujah dan tembak untuk memecahkan batu angkasa; batu besar pecah menjadi lebih kecil. 10 tahap dengan batu lebih banyak dan laju."
+    },
+    "maze": {
+      "name": "Labirin",
+      "desc": "Cari jalan keluar dari labirin sebelum masa tamat; 10 tahap dari labirin kecil ke besar, dengan kabus pada tahap tinggi."
+    },
+    "road-cross": {
+      "name": "Melintas Jalan (gaya Frogger)",
+      "desc": "Lompatkan katak merentasi jalan sibuk dan sungai berkayu terapung untuk sampai ke rumah 3 kali; 10 tahap dengan lalu lintas lebih laju dan sungai pada tahap tinggi."
+    },
+    "flappy": {
+      "name": "Permainan Gaya Flappy Bird",
+      "desc": "Ketik untuk mengepak dan terbang melalui ruang antara paip; 10 tahap dengan ruang lebih sempit dan kelajuan meningkat."
+    },
+    "runner": {
+      "name": "Dino Pelari",
+      "desc": "Lompat melepasi kaktus dan tunduk di bawah burung; berlari cukup jauh untuk melepasi setiap daripada 10 tahap sambil kelajuan terus meningkat."
+    },
+    "whack-a-mole": {
+      "name": "Pukul Tikus Tanah",
+      "desc": "Pukul tikus tanah yang muncul dari lubang sebelum masa tamat dan elak bom; 10 tahap dari perlahan hingga sangat laju."
+    },
+    "simon": {
+      "name": "Simon (Warna Ingatan)",
+      "desc": "Ingat dan ulang urutan warna dan bunyi; urutan lebih panjang sepanjang 10 tahap, dengan 6 butang mulai tahap 7."
+    },
+    "aim-trainer": {
+      "name": "Latihan Membidik",
+      "desc": "Kenai sasaran yang muncul secara rawak dan cepat hilang; sasaran mengecil sepanjang 10 tahap, dan masa tindak balas anda diukur."
+    },
+    "quick-math": {
+      "name": "Matematik Pantas",
+      "desc": "Buat tambah, tolak, darab dan bahagi dalam kepala di bawah tekanan masa; 10 tahap dari kira-kira mudah hingga ungkapan."
+    },
+    "reaction": {
+      "name": "Ujian Masa Tindak Balas",
+      "desc": "Klik tepat apabila skrin bertukar hijau; purata 5 pusingan anda mesti memenuhi had setiap tahap, yang makin ketat sepanjang 10 tahap."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Taburkan biji ke sekeliling lubang, tawan biji lawan dan bergerak sekali lagi apabila mendarat di stor anda; bermain menentang komputer dalam 10 tahap dari mudah hingga sukar."
+    },
+    "snakes-ladders": {
+      "name": "Ular dan Tangga",
+      "desc": "Baling dadu dari petak 1 hingga 100, naik tangga, elak ular dan sampai ke garisan penamat sebelum lawan; 10 tahap."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men's Morris",
+      "desc": "Letak, gelongsor dan terbangkan buah anda untuk membentuk tiga sebaris dan membuang buah lawan; bermain menentang komputer dalam 10 tahap."
+    },
+    "battleship": {
+      "name": "Kapal Perang (Battleship)",
+      "desc": "Cari dan tenggelamkan armada komputer pada grid 10x10 sebelum ia menenggelamkan armada anda; 10 tahap apabila komputer meneka dengan lebih bijak."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Labu Ketam Ikan Udang)",
+      "desc": "Permainan dadu tradisional Vietnam: pertaruh syiling maya pada haiwan dan goncang tiga dadu; capai syiling sasaran dalam 10 tahap (tiada wang sebenar)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Pertaruh pada Pemain, Bankir atau Seri dengan kad yang diagih mengikut peraturan piawai, menggunakan syiling maya; capai syiling sasaran dalam 10 tahap (tiada wang sebenar)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Permainan Tiga Kad)",
+      "desc": "Bandingkan tangan 3 kad dengan bandar: tiga kad sama, tiga kad gambar, kemudian 9 mata hingga 0; syiling maya, 10 tahap, tiada wang sebenar."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Tandakan nombor yang disebut pada kad 5x5 anda dan jerit BINGO sebelum lawan komputer; nombor disebut lebih laju sepanjang 10 tahap."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Lima Dadu)",
+      "desc": "Golek lima dadu, simpan yang baik dan isi 13 kotak mata; capai skor sasaran dalam 10 tahap."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Padankan jenis atau nilai, kad lapan menukar jenis; habiskan kad anda sebelum 1 hingga 3 lawan komputer dalam 10 tahap."
+    },
+    "car-race": {
+      "name": "Elak Kereta Lumba",
+      "desc": "Tukar lorong untuk mengelak kereta di hadapan dan memandu sepanjang jarak penuh; 10 tahap dengan lebih banyak lorong dan lalu lintas lebih laju."
+    },
+    "sky-jump": {
+      "name": "Lompat Langit",
+      "desc": "Melantun dari pelantar ke pelantar untuk memanjat setinggi mungkin tanpa jatuh; 10 tahap dengan pelantar lebih jarang, bergerak dan mudah pecah."
+    },
+    "gold-miner": {
+      "name": "Pelombong Emas",
+      "desc": "Jatuhkan cangkuk untuk menarik emas dan berlian, elak batu berat, dan capai wang sasaran dalam 60 saat; 10 tahap."
+    },
+    "fruit-slice": {
+      "name": "Potong Buah",
+      "desc": "Leret untuk memotong buah yang terbang ke atas dan elak bom; 10 tahap dengan lebih banyak buah dan bom."
+    },
+    "basketball": {
+      "name": "Tembakan Bola Keranjang",
+      "desc": "Seret dan lepaskan untuk menembak bola ke gelung dalam bilangan tembakan terhad; 10 tahap, dengan gelung bergerak mulai tahap 4."
+    },
+    "bubble-shooter": {
+      "name": "Penembak Gelembung",
+      "desc": "Tembak gelembung untuk menyambung 3 atau lebih yang sama warna dan memecahkannya, dan kosongkan semuanya sebelum sampai ke bawah; 10 tahap dengan lebih banyak warna."
+    },
+    "dot-chase": {
+      "name": "Kejar Titik",
+      "desc": "Makan semua titik dalam labirin sambil mengelak hantu yang mengejar anda; 10 tahap dengan hantu lebih banyak dan lebih bijak."
+    },
+    "kakuro": {
+      "name": "Kakuro (Jumlah Silang)",
+      "desc": "Isi sel putih dengan digit 1–9 supaya setiap lajur jumlahnya sama dengan petunjuk tanpa ulangan; 10 tahap, grid dari 5x5 hingga 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Isi grid tanpa ulangan dalam baris atau lajur supaya setiap kumpulan memberikan sasarannya dengan operasinya; 10 tahap, grid dari 3x3 hingga 6x6."
+    },
+    "word-guess": {
+      "name": "Teka Perkataan (gaya Wordle)",
+      "desc": "Teka perkataan rahsia bahasa Inggeris dengan petunjuk hijau, kuning dan kelabu; 10 tahap dengan perkataan 4–6 huruf dan percubaan lebih sedikit."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Teka perkataan bahasa Inggeris satu huruf demi satu sebelum peluang salah anda habis; 10 tahap dengan perkataan lebih panjang dan peluang salah lebih sedikit."
+    },
+    "word-scramble": {
+      "name": "Susun Perkataan (Anagram)",
+      "desc": "Susun semula huruf yang bercampur menjadi perkataan bahasa Inggeris sebelum masa tamat; 10 tahap, 5 perkataan setiap tahap."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Padankan jubin pada mana-mana hujung rantai dan habiskan jubin anda sebelum komputer; 10 tahap apabila komputer semakin bijak."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Elak hati dan Ratu Sekop dalam permainan kad empat pemain; skor lebih rendah lebih baik; 10 tahap menentang pemain komputer yang lebih bijak."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (cip maya)",
+      "desc": "Poker satu lawan satu menentang komputer dengan cip maya: lipat, sama atau naikkan, dan menang apabila cip komputer habis; 10 tahap, tiada wang sebenar."
+    },
+    "n-back": {
+      "name": "Ingatan N-Back",
+      "desc": "Perhatikan petak yang menyala dan tekan Sama apabila ia sama dengan N langkah lalu; 10 tahap dengan N sehingga 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klik untuk membakar biskut, beli pembantu yang membakar secara automatik dan capai sasaran dalam 2 minit; 10 tahap."
+    },
+    "tile-connect": {
+      "name": "Sambung Jubin (gaya Onet)",
+      "desc": "Sambungkan jubin sepadan dengan laluan paling banyak dua selekoh dan kosongkan papan sebelum masa tamat; 10 tahap, papan lebih besar."
+    },
+    "jigsaw": {
+      "name": "Jigsaw Gambar",
+      "desc": "Tukar ganti kepingan yang dikocok untuk membina semula gambar; 10 tahap dari 3x3 hingga 6x6 keping."
+    },
+    "mini-golf": {
+      "name": "Golf Mini",
+      "desc": "Tarik ke belakang dan lepaskan untuk memasukkan bola ke dalam lubang dalam had pukulan; 10 padang dengan dinding dan pasir."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Golek dadu, bawa buah anda pulang dan keluarkan sebelum komputer, sambil memukul buah tunggalnya di sepanjang jalan; 10 tahap."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Tiga Belas)",
+      "desc": "Permainan kad buang Vietnam untuk empat orang: mainkan kad tunggal, pasangan, jujukan dan empat sama untuk menghabiskan kad anda dahulu; 10 tahap."
     }
   },
   "s": {

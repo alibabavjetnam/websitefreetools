@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Escolha uma cor para preencher toda a área que você controla no canto superior esquerdo; ela absorve as células vizinhas dessa cor. Deixe o tabuleiro inteiro de uma só cor dentro do número de jogadas permitido.",
     "lib.arcade.note.mastermind": "O computador esconde uma sequência de cores. Escolha uma cor para cada posição e pressione Palpitar. Pino preto = cor certa no lugar certo; pino branco = cor certa no lugar errado. Descubra o código antes que as tentativas acabem.",
     "lib.arcade.note.hanoi": "Mova todos os discos para o último pino. Mova apenas o disco do topo de um pino por vez e nunca coloque um disco maior sobre um menor. Clique no pino de origem e depois no de destino.",
-    "lib.arcade.note.pipes": "Clique em uma peça para girar o cano 90°. Conecte todos os canos em uma só rede sem pontas abertas (as pontas abertas aparecem em vermelho)."
+    "lib.arcade.note.pipes": "Clique em uma peça para girar o cano 90°. Conecte todos os canos em uma só rede sem pontas abertas (as pontas abertas aparecem em vermelho).",
+    "lib.arcade.pongScore": "Você {a} – {b} CPU (primeiro a {t})",
+    "lib.arcade.kills": "Destruídos: {n}/{t}",
+    "lib.arcade.rocksLeft": "Faltam {n} rochas",
+    "lib.arcade.timeLeft": "Faltam {n} s",
+    "lib.arcade.stepsN": "Passos: {n}",
+    "lib.arcade.crossed": "Em casa: {n}/{t}",
+    "lib.arcade.pipes": "Canos passados: {n}/{t}",
+    "lib.arcade.distance": "Distância: {n}/{t} m",
+    "lib.arcade.speedN": "Velocidade: {n}",
+    "lib.arcade.note.whack-a-mole": "As toupeiras saem dos buracos — clique ou toque numa toupeira para acertá-la. Acerte toupeiras suficientes antes de o tempo acabar. A partir do nível 4 há bombas: acertar uma faz você perder pontos.",
+    "lib.arcade.hole": "Buraco",
+    "lib.arcade.hitsN": "Acertos: {n}/{t}",
+    "lib.arcade.note.simon": "O jogo toca uma sequência de cores e sons — repita na mesma ordem. Cada rodada acrescenta mais um passo. Lembre-se do tamanho exigido para passar de nível. A partir do nível 7 há 6 botões.",
+    "lib.arcade.seqN": "Sequência: {n}/{t}",
+    "lib.arcade.watch": "Observe…",
+    "lib.arcade.yourTurnShort": "Sua vez",
+    "lib.arcade.note.aim-trainer": "Os alvos aparecem aleatoriamente e somem rápido — acerte o máximo que puder. Eles ficam menores e mais rápidos. Acerte alvos suficientes antes de errar mais de 5 vezes para passar de nível.",
+    "lib.arcade.missN": "Erros: {n}/{t}",
+    "lib.arcade.answer": "Resposta",
+    "lib.arcade.note.quick-math": "Resolva de cabeça o mais rápido possível: digite a resposta e pressione Enter. Cada pergunta tem um limite de tempo; resposta errada ou tempo esgotado custa uma vida (você tem 3). Responda corretamente perguntas suficientes para passar de nível.",
+    "lib.arcade.correctN": "Corretas: {n}/{t}",
+    "lib.arcade.note.reaction": "Espere a tela ficar verde e clique o mais rápido que puder. Clicar cedo demais é falta (3 faltas e você perde). Sua média em 5 rodadas deve ficar abaixo do limite do nível.",
+    "lib.arcade.roundN": "Rodada {n}/{t}",
+    "lib.arcade.limitMs": "Limite: {n} ms",
+    "lib.arcade.rxWait": "Espere o verde…",
+    "lib.arcade.rxGo": "CLIQUE!",
+    "lib.arcade.rxEarly": "Cedo demais!",
+    "lib.arcade.gameArea": "Área de jogo",
+    "lib.arcade.note.pong": "Mova o mouse, arraste o dedo ou use as teclas ← → para controlar a raquete de baixo. Faça a bola passar pelo computador; vence quem chegar primeiro a 5 pontos. A bola acelera a cada batida.",
+    "lib.arcade.note.space-shooter": "Mova o mouse, arraste o dedo ou use as teclas ← → para guiar; sua nave atira sozinha. Destrua naves inimigas suficientes para passar de nível e evite colisões e tiros inimigos. Você tem 3 vidas.",
+    "lib.arcade.note.asteroids": "← → giram a nave, ↑ acelera e Espaço atira. Destrua todas as rochas para passar de nível; as grandes se dividem em menores. A nave reaparece do lado oposto ao sair da tela. Você tem 3 vidas.",
+    "lib.arcade.note.maze": "Use as setas (ou deslize, ou os botões) para ir do ponto verde até a bandeira vermelha antes de o tempo acabar. A partir do nível 5 o labirinto tem neblina: você só vê ao redor e as áreas visitadas ficam registradas.",
+    "lib.arcade.note.road-cross": "Use as setas, deslize ou os botões para pular com o sapo de baixo para cima. Evite o trânsito; a partir do nível 5 a parte de cima é um rio, então pule nos troncos flutuantes. Chegue em casa 3 vezes para passar de nível. Você tem 3 vidas.",
+    "lib.arcade.note.flappy": "Toque na área de jogo, pressione Espaço ou ↑ para bater as asas. Passe pelas aberturas entre os canos sem tocar em cano, no chão ou no teto. Níveis mais altos têm aberturas mais estreitas e voo mais rápido.",
+    "lib.arcade.note.runner": "Toque na área de jogo, pressione Espaço ou ↑ para pular os cactos; segure ↓ para se abaixar sob os pássaros altos (ou pule os baixos). Corra longe o bastante para passar de nível. A velocidade não para de subir.",
+    "lib.arcade.fire": "Atirar",
+    "lib.arcade.jump": "Pular",
+    "lib.arcade.aimTarget": "Alvo",
+    "lib.game.soundOn": "Ativar som",
+    "lib.game.soundOff": "Desativar som",
+    "lib.arcade.note.kalah": "Você joga na fileira de baixo e o computador na de cima; a cova grande à direita é o seu depósito. Clique numa cova para pegar todas as sementes e semeá-las no sentido anti-horário, uma por cova (pulando o depósito do adversário). Se a última semente cair no seu depósito, você joga de novo; se cair numa cova vazia do seu lado, em frente a uma cova com sementes, você captura essas sementes. Quando um lado ficar vazio, as sementes do outro lado vão para o depósito do dono; vence quem tiver o maior depósito.",
+    "lib.arcade.note.snakes": "Jogue o dado e ande essa quantidade de casas, de 1 a 100. Ao cair no pé de uma escada, você sobe; ao cair na cabeça de uma cobra, você desce. A partir do nível 4 é preciso tirar o número exato para chegar ao 100. Níveis mais altos têm mais cobras, menos escadas e mais adversários. Vence quem chegar primeiro ao 100.",
+    "lib.arcade.square": "Casa {n}",
+    "lib.arcade.ladderUp": "Subiu a escada!",
+    "lib.arcade.snakeDown": "Engolido por uma cobra!",
+    "lib.arcade.needExact": "Você precisa do número exato para chegar ao 100.",
+    "lib.arcade.note.nmm": "Cada lado tem 9 peças. Fase 1: alternem colocando peças em pontos vazios. Fase 2: deslize uma peça para um ponto vazio adjacente. Com apenas 3 peças você pode «voar» para qualquer ponto vazio. Forme três em linha (um «moinho») para remover uma peça do adversário (primeiro as que não estão em moinho). Você perde ao ficar com 2 peças ou sem movimentos. Você joga com as brancas e começa.",
+    "lib.arcade.inHand": "Para colocar: {a} · {b}",
+    "lib.arcade.removePiece": "Escolha uma peça do adversário para remover.",
+    "lib.arcade.enemyWaters": "Águas inimigas (clique para atirar)",
+    "lib.arcade.yourFleet": "Sua frota",
+    "lib.arcade.note.battleship": "Cada lado tem 5 navios (tamanhos 5, 4, 3, 3 e 2) posicionados aleatoriamente numa grade de 10x10. Alternem atirando em uma célula: acerto fica vermelho, erro fica azul-claro, e acertar todas as células de um navio o afunda. Afunde primeiro toda a frota inimiga para vencer. Em níveis mais altos o computador deduz com mais esperteza a posição dos seus navios.",
+    "lib.arcade.shipsLeft": "Navios restantes: você {a} · inimigo {b}",
+    "lib.arcade.theySunk": "O inimigo afundou um dos seus navios!",
+    "lib.arcade.theyHit": "O inimigo acertou um dos seus navios.",
+    "lib.arcade.theyMiss": "O inimigo errou.",
+    "lib.arcade.youSunk": "Você afundou um navio inimigo!",
+    "lib.arcade.youHit": "Acertou!",
+    "lib.arcade.youMiss": "Água.",
+    "lib.arcade.shake": "Sacudir",
+    "lib.arcade.clearBets": "Limpar apostas",
+    "lib.arcade.note.bau-cua": "Apenas moedas virtuais — sem dinheiro real. Escolha o valor de uma ficha, clique nos animais para apostar e pressione Sacudir. Para cada dado que coincidir com um animal em que você apostou, você recebe a aposta de volta mais o mesmo valor por cada coincidência. Alcance a meta de moedas dentro das rodadas permitidas para passar de nível.",
+    "lib.arcade.note.baccarat": "Apenas moedas virtuais — sem dinheiro real. Aposte em Jogador, Banqueiro ou Empate e pressione Distribuir. O valor de uma mão é o último dígito da soma (A = 1, 2–9 valor da carta, 10/J/Q/K = 0); vence a mão mais próxima de 9, e as terceiras cartas seguem as regras padrão. Jogador paga 1:1, Banqueiro 0,95:1, Empate 8:1 (apostas em Jogador/Banqueiro são devolvidas no empate). Alcance a meta de moedas dentro das rodadas permitidas para passar de nível.",
+    "lib.arcade.banker": "Banqueiro",
+    "lib.arcade.player": "Jogador",
+    "lib.arcade.tie": "Empate",
+    "lib.arcade.openCards": "Revelar",
+    "lib.arcade.note.bai-cao": "Apenas moedas virtuais — sem dinheiro real. Cada lado recebe 3 cartas. Uma mão vale o último dígito da soma (A = 1, 2–9 valor da carta, 10/J/Q/K = 10, ou seja, 0 ponto). Classificação: trinca («Sáp») é a mais alta, depois três figuras («Ba tiên»), depois de 9 pontos até 0. Faça sua aposta, pressione Distribuir e depois Revelar para comparar com a banca. A partir do nível 6 a banca ganha os empates. Alcance a meta de moedas dentro das rodadas permitidas para passar de nível.",
+    "lib.arcade.caoSap": "Trinca",
+    "lib.arcade.caoBaTien": "Três figuras",
+    "lib.arcade.caoPts": "{n} pts",
+    "lib.arcade.note.bingo": "O computador sorteia números de 1 a 75. Quando um número sorteado estiver na sua cartela, clique nele para marcá-lo (o centro é grátis). Complete uma linha, coluna ou diagonal e pressione BINGO! — você precisa vencer os adversários do computador. Um BINGO! falso trava o botão por alguns segundos. Níveis mais altos sorteiam mais rápido e têm mais adversários.",
+    "lib.arcade.opponentsN": "Adversários: {n}",
+    "lib.arcade.falseBingo": "Ainda não há linha completa! Botão travado por 3 segundos.",
+    "lib.arcade.bingoGo": "Sorteando números!",
+    "lib.arcade.note.yahtzee": "A cada turno você rola 5 dados até 3 vezes: clique num dado para mantê-lo e pressione Rolar para rolar os outros. Depois escolha uma casa na tabela para pontuar (cada casa é usada uma vez; se não se encaixar, vale 0). São 13 turnos. As casas de Uns a Seis dão um bônus de 35 se somarem 63 ou mais. Alcance a pontuação-meta do nível para vencer.",
+    "lib.arcade.turnN": "Turno {n}/13",
+    "lib.arcade.pickCat": "Escolha uma casa para pontuar",
+    "lib.arcade.rollsLeft": "Rolar (restam {n})",
+    "lib.arcade.upperBonus": "Bônus de Uns–Seis",
+    "lib.arcade.scored": "Pontuou {n}",
+    "lib.arcade.note.crazy-eights": "Jogue uma carta que combine com a do topo do descarte em naipe ou valor. Os oitos são coringas: jogue um quando quiser e escolha um novo naipe. Se não tiver carta jogável, compre do monte (até 3 cartas); se ainda assim não puder jogar, você passa. Vence quem ficar sem cartas primeiro. Níveis mais altos têm mais adversários e o computador joga com mais esperteza.",
+    "lib.arcade.opponent": "Adversário",
+    "lib.arcade.pileLeft": "Monte: {n}",
+    "lib.arcade.pickSuit": "Escolha um novo naipe",
+    "lib.arcade.aiSuit": "O computador escolheu {s}",
+    "lib.arcade.aiPass": "O computador passa.",
+    "lib.arcade.mustPlay": "Você tem uma carta jogável — jogue-a.",
+    "lib.arcade.youPass": "Você comprou 3 cartas e passa.",
+    "lib.arcade.bcGourd": "Cabaça",
+    "lib.arcade.bcCrab": "Caranguejo",
+    "lib.arcade.bcShrimp": "Camarão",
+    "lib.arcade.bcFish": "Peixe",
+    "lib.arcade.bcRooster": "Galo",
+    "lib.arcade.bcDeer": "Cervo",
+    "lib.arcade.yOnes": "Uns",
+    "lib.arcade.yTwos": "Dois",
+    "lib.arcade.yThrees": "Três",
+    "lib.arcade.yFours": "Quatros",
+    "lib.arcade.yFives": "Cincos",
+    "lib.arcade.ySixes": "Seis",
+    "lib.arcade.yThree": "Trinca",
+    "lib.arcade.yFour": "Quadra",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Sequência baixa (30)",
+    "lib.arcade.yLarge": "Sequência alta (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Chance",
+    "lib.arcade.note.race": "Pressione ← → (ou toque na faixa desejada) para trocar de faixa e desviar dos carros à frente. Você tem 3 vidas; percorra toda a distância para passar de nível. Níveis mais altos têm mais faixas e trânsito mais rápido.",
+    "lib.arcade.note.jump": "O personagem pula sozinho. Pressione ← → ou arraste o dedo para cair na próxima plataforma. Plataformas azuis se movem e as marrons quebram quando você pousa. Cair para fora da tela faz você perder; suba o bastante para passar de nível.",
+    "lib.arcade.note.miner": "O gancho balança de um lado para o outro; pressione Espaço, ↓ ou toque no campo para soltá-lo. Ouro grande e pedras são pesados e sobem devagar; diamantes valem muito. Alcance o dinheiro-meta antes de os 60 segundos acabarem.",
+    "lib.arcade.note.slicer": "Deslize o dedo ou o mouse sobre as frutas para cortá-las. Evite as bombas pretas. Deixar cair uma fruta ou cortar uma bomba custa uma vida (você tem 3). Corte frutas suficientes para passar de nível.",
+    "lib.arcade.note.hoops": "Pressione a quadra, arraste para baixo (como um estilingue) e solte para arremessar a bola na cesta. Quanto mais você arrastar, mais forte o arremesso. Faça cestas suficientes com os arremessos que tem; a partir do nível 4 a cesta se move.",
+    "lib.arcade.note.bubbles": "Mova o mouse ou o dedo para mirar e clique/toque ou pressione Espaço/Atirar para disparar. Conecte 3 ou mais bolhas da mesma cor para estourá-las; bolhas que perdem o apoio caem. As fileiras descem aos poucos, então mantenha-as longe da linha de baixo. Elimine todas as bolhas para vencer.",
+    "lib.arcade.note.chase": "Use as setas (ou deslize / os botões) para virar e comer todos os pontos do labirinto, desviando dos fantasmas que perseguem você. Você tem 3 vidas; níveis mais altos têm mais fantasmas, mais rápidos e mais espertos.",
+    "lib.arcade.height": "Altura: {n}/{t} m",
+    "lib.arcade.money": "Dinheiro: {n}/{t}",
+    "lib.arcade.sliced": "Cortadas: {n}/{t}",
+    "lib.arcade.hoopScore": "Cestas: {n}/{t}",
+    "lib.arcade.shotsLeft": "Restam {n} arremessos",
+    "lib.arcade.bubbleLeft": "Restam {n} bolhas",
+    "lib.arcade.shotsN": "Disparos: {n}",
+    "lib.arcade.dotsLeft": "Restam {n} pontos",
+    "lib.arcade.note.kakuro": "Preencha as células brancas com dígitos de 1 a 9 de modo que cada sequência some a dica da célula preta (o número no canto superior direito vale para a sequência à direita, o do canto inferior esquerdo para a sequência abaixo), sem repetir dígitos numa mesma sequência. Use as setas para se mover.",
+    "lib.arcade.note.kenken": "Preencha a grade com os números de 1 a N sem repetir nenhum em nenhuma linha ou coluna. Cada bloco com contorno grosso mostra um alvo e uma operação (+, −, ×, ÷): os números do bloco devem dar esse resultado. Use as setas para se mover.",
+    "lib.arcade.note.wordGuess": "Adivinhe a palavra secreta em inglês. Após cada tentativa, verde significa letra certa no lugar certo, amarelo significa que a letra está na palavra mas em outro lugar, e cinza significa que não está na palavra. Digite no teclado ou use as teclas da tela e pressione Enter para enviar. Níveis mais altos têm palavras mais longas e menos tentativas.",
+    "lib.arcade.note.hangman": "Adivinhe a palavra secreta em inglês escolhendo uma letra por vez. Cada letra errada acrescenta uma parte ao boneco da forca; ao esgotar os erros permitidos, você perde. Níveis mais altos têm palavras mais longas e menos erros permitidos.",
+    "lib.arcade.note.scramble": "Reorganize as letras embaralhadas numa palavra real em inglês e digite na caixa de resposta. Cada nível tem 5 palavras; resolva pelo menos 4 antes de o tempo de cada palavra acabar para passar de nível. A dica revela a primeira letra.",
+    "lib.arcade.cellsLeft": "Restam {n} células vazias",
+    "lib.arcade.wrongN": "{n} células estão erradas.",
+    "lib.arcade.noError": "Nenhum erro encontrado até agora.",
+    "lib.arcade.tooShort": "Faltam letras",
+    "lib.arcade.answerIs": "Resposta: {w}",
+    "lib.arcade.livesLeft": "Restam {n} erros",
+    "lib.arcade.yourAnswer": "Sua resposta",
+    "lib.arcade.skip": "Pular",
+    "lib.arcade.notThis": "Errado, tente de novo.",
+    "lib.arcade.startsWith": "Primeira letra: {c}",
+    "lib.arcade.note.domino": "Cada jogador recebe 7 peças; começa quem tiver a maior dupla. Jogue uma peça cujo número combine com uma ponta da corrente. Se não puder jogar, compre do monte até conseguir; se ele estiver vazio, passe. Vence quem ficar sem peças primeiro; se ambos travarem, vence quem tiver menos pontos.",
+    "lib.arcade.note.hearts": "Quatro jogadores, 13 cartas cada. O 2 de paus abre. Você deve seguir o naipe jogado, se puder. Cada copas vale 1 ponto e a Dama de Espadas vale 13; quem ganha uma vaza leva seus pontos. Menos é melhor, e levar todos os 26 pontos dá 26 a todos os outros. Você não pode abrir com copas até que uma tenha sido jogada. Após a última mão, você vence se sua pontuação for a mais baixa (ou empatada como a mais baixa).",
+    "lib.arcade.note.holdem": "Cara a cara contra o computador apenas com fichas virtuais. Cada jogador recebe 2 cartas privadas e 5 cartas comunitárias são reveladas (flop, turn, river); forme a melhor mão de 5 cartas. A cada rodada você pode desistir, pagar (ou passar) ou aumentar. Os blinds sobem a cada 4 mãos. Você vence quando o computador ficar sem fichas, ou por ter mais fichas após o limite de mãos. Não há dinheiro real.",
+    "lib.arcade.dmDraw": "Comprar uma peça",
+    "lib.arcade.dmPass": "Passar",
+    "lib.arcade.dmEmpty": "Nenhuma peça jogada ainda",
+    "lib.arcade.dmYard": "Monte: {n} peças",
+    "lib.arcade.dmLeft": "Ponta esquerda",
+    "lib.arcade.dmRight": "Ponta direita",
+    "lib.arcade.dmTie": "Empate! Os dois lados estão iguais.",
+    "lib.arcade.hrHand": "Mão {n}/{t}",
+    "lib.arcade.hrTook": "{p} leva a vaza ({n} pontos).",
+    "lib.arcade.hrIllegal": "Você não pode jogar esta carta (siga o naipe, ou ainda não se pode abrir com copas).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pote: {n}",
+    "lib.arcade.fold": "Desistir",
+    "lib.arcade.check": "Passar",
+    "lib.arcade.callN": "Pagar {n}",
+    "lib.arcade.raiseTo": "Aumentar para",
+    "lib.arcade.raiseN": "Aumentar para {n}",
+    "lib.arcade.thOppFold": "O computador desiste; você vence esta mão.",
+    "lib.arcade.thYouFold": "Você desistiu.",
+    "lib.arcade.thOppWin": "O computador vence esta mão",
+    "lib.arcade.thYouWin": "Você vence esta mão",
+    "lib.arcade.thSplit": "Pote dividido",
+    "lib.arcade.thAiFold": "O computador desiste.",
+    "lib.arcade.thAiRaise": "O computador aumenta para {n}.",
+    "lib.arcade.thAiCall": "O computador paga / passa.",
+    "lib.arcade.hand.high": "Carta alta",
+    "lib.arcade.hand.pair": "Par",
+    "lib.arcade.hand.twoPair": "Dois pares",
+    "lib.arcade.hand.trips": "Trinca",
+    "lib.arcade.hand.straight": "Sequência",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Quadra",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Um quadrado acende, um de cada vez, numa grade de 3x3. Pressione «Igual!» (ou Espaço) quando a posição acesa for a mesma de N passos atrás (N aparece acima). Você precisa de pelo menos 80% de acertos para passar de nível. Níveis mais altos usam um N maior.",
+    "lib.arcade.nbMatch": "Igual!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Acertos: {a} · Erros: {b}",
+    "lib.arcade.nbAcc": "Precisão: {n}%",
+    "lib.arcade.note.clicker": "Clique no biscoito para assar biscoitos e gaste-os em ajudantes que assam automaticamente (os preços sobem a cada compra). Asse o número-meta de biscoitos em 2 minutos para passar de nível.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Vovó confeiteira",
+    "lib.arcade.ckFarm": "Fazenda",
+    "lib.arcade.ckMine": "Mina de açúcar",
+    "lib.arcade.ckFactory": "Fábrica",
+    "lib.arcade.ckCookie": "Biscoito",
+    "lib.arcade.ckEarned": "Assados: {n}/{t}",
+    "lib.arcade.chips2": "Biscoitos: {n}",
+    "lib.arcade.ckCps": "{n} biscoitos/segundo",
+    "lib.arcade.note.onet": "Selecione duas peças iguais que possam ser ligadas por um caminho de no máximo 2 curvas, sem cruzar outras peças, para removê-las. Elimine todas as peças antes de o tempo acabar para vencer. Quando não houver mais jogadas, você pode embaralhar (usos limitados).",
+    "lib.arcade.shuffle": "Embaralhar",
+    "lib.arcade.tilesLeft": "Restam {n} peças",
+    "lib.arcade.autoShuffle": "Sem jogadas — embaralhado automaticamente.",
+    "lib.arcade.note.jigsaw": "A imagem foi cortada em peças e embaralhada. Toque numa peça e depois noutra para trocá-las e remonte a imagem mostrada como referência. Peças no lugar certo ganham borda verde. Níveis mais altos têm mais peças.",
+    "lib.arcade.jgRef": "Imagem de referência",
+    "lib.arcade.jgPlaced": "No lugar: {a}/{b}",
+    "lib.arcade.golfStrokes": "Tacadas: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Você joga com as peças brancas, movendo-se do canto superior direito até o inferior direito (sua casa). Role os dados, clique na peça que quer mover e depois num destino destacado. Cair num ponto com exatamente uma peça adversária a captura e a envia para a barra central, e esse jogador precisa reentrá-la primeiro. Você não pode cair num ponto com duas ou mais peças adversárias. Quando as suas 15 peças estiverem no tabuleiro de casa (os últimos 6 pontos), você pode retirá-las. Vence quem retirar as 15 primeiro.",
+    "lib.arcade.bgRoll": "Rolar os dados",
+    "lib.arcade.bgOff": "Retirar",
+    "lib.arcade.bgRollFirst": "Rolar os dados",
+    "lib.arcade.bgInfo": "Fora: você {a} · computador {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Você não tem mais jogadas legais.",
+    "lib.arcade.note.tienlen": "Quatro jogadores, 13 cartas cada. Ordem das cartas, da menor para a maior: 3, 4, … K, A, 2; naipes, do menor para o maior: espadas, paus, ouros, copas. Quem tiver o 3 de espadas começa. Jogue uma carta, um par, uma trinca, uma quadra ou uma sequência de 3 ou mais cartas consecutivas (sem 2). O próximo jogador deve jogar o mesmo tipo e mais alto, ou passar; uma quadra pode vencer um 2 isolado ou um par de 2. Quando todos os outros passam, o último a jogar pode abrir com o que quiser. Vence quem ficar sem cartas primeiro. Selecione as cartas e pressione Jogar.",
+    "lib.arcade.tlPlay": "Jogar",
+    "lib.arcade.tlPass": "Passar",
+    "lib.arcade.tlClear": "Limpar seleção",
+    "lib.arcade.tlPassed": "passou",
+    "lib.arcade.tlFree": "Mesa vazia — você pode abrir com o que quiser",
+    "lib.arcade.tlLeft": "Cartas restantes: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passa.",
+    "lib.arcade.tlBad": "As cartas selecionadas não formam uma combinação válida.",
+    "lib.arcade.tlLow": "Esta combinação não é alta o bastante para vencer a mesa."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Jogo da Velha Definitivo",
       "desc": "Jogo da velha em 9 tabuleiros pequenos: a casa que você escolhe define onde o adversário deve jogar; contra o computador em 10 fases."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Faça a bola passar pelo computador; vence quem chegar primeiro a 5 pontos. 10 níveis com um adversário cada vez mais rápido e preciso."
+    },
+    "space-shooter": {
+      "name": "Atirador espacial",
+      "desc": "Guie sua nave, derrube naves inimigas e desvie dos tiros; 10 níveis com ondas maiores, tiros de resposta e inimigos mais duros."
+    },
+    "asteroids": {
+      "name": "Asteroides",
+      "desc": "Gire, acelere e atire para quebrar as rochas espaciais; as grandes se dividem em menores. 10 níveis com rochas mais numerosas e rápidas."
+    },
+    "maze": {
+      "name": "Labirinto",
+      "desc": "Ache a saída do labirinto antes de o tempo acabar; 10 níveis de labirintos pequenos a grandes, com neblina nos níveis altos."
+    },
+    "road-cross": {
+      "name": "Travessia da estrada (estilo Frogger)",
+      "desc": "Pule com o sapo por estradas movimentadas e rios de troncos flutuantes para chegar em casa 3 vezes; 10 níveis com trânsito mais rápido e rio nos níveis altos."
+    },
+    "flappy": {
+      "name": "Jogo estilo Flappy Bird",
+      "desc": "Toque para bater as asas e voar pelas aberturas entre os canos; 10 níveis com aberturas mais estreitas e velocidade crescente."
+    },
+    "runner": {
+      "name": "Dino corredor",
+      "desc": "Pule os cactos e abaixe-se sob os pássaros; corra longe o bastante para passar cada um dos 10 níveis enquanto a velocidade só aumenta."
+    },
+    "whack-a-mole": {
+      "name": "Acerte a toupeira",
+      "desc": "Acerte as toupeiras que saem dos buracos antes de o tempo acabar e evite as bombas; 10 níveis de lento a muito rápido."
+    },
+    "simon": {
+      "name": "Simon (cores de memória)",
+      "desc": "Memorize e repita a sequência de cores e sons; sequências mais longas ao longo de 10 níveis, com 6 botões a partir do nível 7."
+    },
+    "aim-trainer": {
+      "name": "Treino de mira",
+      "desc": "Acerte os alvos que surgem aleatoriamente e somem rápido; os alvos encolhem ao longo de 10 níveis e seu tempo de reação é medido."
+    },
+    "quick-math": {
+      "name": "Cálculo rápido",
+      "desc": "Faça contas de somar, subtrair, multiplicar e dividir de cabeça sob pressão de tempo; 10 níveis de contas simples a expressões."
+    },
+    "reaction": {
+      "name": "Teste de tempo de reação",
+      "desc": "Clique no instante em que a tela ficar verde; sua média de 5 rodadas deve cumprir o limite de cada nível, que fica mais apertado ao longo de 10 níveis."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Semeie as covas, capture as sementes do adversário e jogue de novo ao cair no seu depósito; jogue contra o computador em 10 níveis, do fácil ao difícil."
+    },
+    "snakes-ladders": {
+      "name": "Cobras e escadas",
+      "desc": "Jogue o dado da casa 1 à 100, suba escadas, evite cobras e chegue ao final antes dos adversários; 10 níveis."
+    },
+    "nine-mens-morris": {
+      "name": "Jogo do moinho (Nine Men's Morris)",
+      "desc": "Coloque, deslize e voe com suas peças para formar três em linha e remover as do adversário; jogue contra o computador em 10 níveis."
+    },
+    "battleship": {
+      "name": "Batalha naval",
+      "desc": "Encontre e afunde a frota do computador numa grade de 10x10 antes que ele afunde a sua; 10 níveis em que o computador deduz com mais esperteza."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Cabaça, caranguejo, peixe e camarão)",
+      "desc": "Jogo de dados tradicional vietnamita: aposte moedas virtuais nos animais e sacuda três dados; alcance a meta de moedas em 10 níveis (sem dinheiro real)."
+    },
+    "baccarat": {
+      "name": "Bacará (Baccarat)",
+      "desc": "Aposte em Jogador, Banqueiro ou Empate com cartas distribuídas pelas regras padrão, usando moedas virtuais; alcance a meta de moedas em 10 níveis (sem dinheiro real)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (jogo de três cartas)",
+      "desc": "Compare mãos de 3 cartas com a banca: trinca, três figuras e depois de 9 pontos até 0; moedas virtuais, 10 níveis, sem dinheiro real."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marque os números sorteados na sua cartela 5x5 e grite BINGO antes dos adversários do computador; os números saem mais rápido ao longo de 10 níveis."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (cinco dados)",
+      "desc": "Role cinco dados, guarde os bons e preencha 13 casas de pontuação; alcance a pontuação-meta em 10 níveis."
+    },
+    "crazy-eights": {
+      "name": "Oitos Loucos",
+      "desc": "Combine naipe ou valor, os oitos mudam o naipe; fique sem cartas antes de 1 a 3 adversários do computador em 10 níveis."
+    },
+    "car-race": {
+      "name": "Desvio de carros",
+      "desc": "Troque de faixa para desviar dos carros à frente e percorra toda a distância; 10 níveis com mais faixas e trânsito mais rápido."
+    },
+    "sky-jump": {
+      "name": "Salto ao céu",
+      "desc": "Pule de plataforma em plataforma para subir o mais alto possível sem cair; 10 níveis com plataformas mais espaçadas, móveis e quebráveis."
+    },
+    "gold-miner": {
+      "name": "Minerador de ouro",
+      "desc": "Solte o gancho para puxar ouro e diamantes, evite pedras pesadas e alcance o dinheiro-meta em 60 segundos; 10 níveis."
+    },
+    "fruit-slice": {
+      "name": "Corte de frutas",
+      "desc": "Deslize para cortar as frutas que voam para cima e desvie das bombas; 10 níveis com mais frutas e mais bombas."
+    },
+    "basketball": {
+      "name": "Arremesso de basquete",
+      "desc": "Arraste e solte para lançar a bola na cesta com um número limitado de arremessos; 10 níveis, com cesta móvel a partir do nível 4."
+    },
+    "bubble-shooter": {
+      "name": "Atirador de bolhas",
+      "desc": "Atire bolhas para conectar 3 ou mais da mesma cor e estourá-las, eliminando todas antes que cheguem ao fundo; 10 níveis com mais cores."
+    },
+    "dot-chase": {
+      "name": "Caça aos pontos",
+      "desc": "Coma todos os pontos do labirinto enquanto desvia dos fantasmas que perseguem você; 10 níveis com fantasmas mais numerosos e mais espertos."
+    },
+    "kakuro": {
+      "name": "Kakuro (somas cruzadas)",
+      "desc": "Preencha as células brancas com dígitos de 1 a 9 para que cada sequência some sua dica, sem repetir; 10 níveis, grades de 5x5 a 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Preencha a grade sem repetir em linhas ou colunas para que cada bloco dê seu alvo com sua operação; 10 níveis, grades de 3x3 a 6x6."
+    },
+    "word-guess": {
+      "name": "Adivinhe a palavra (estilo Wordle)",
+      "desc": "Adivinhe a palavra secreta em inglês com dicas verdes, amarelas e cinzas; 10 níveis com palavras de 4 a 6 letras e menos tentativas."
+    },
+    "hangman": {
+      "name": "Jogo da forca (Hangman)",
+      "desc": "Adivinhe a palavra em inglês letra por letra antes de esgotar os erros permitidos; 10 níveis com palavras mais longas e menos erros."
+    },
+    "word-scramble": {
+      "name": "Palavras embaralhadas (anagramas)",
+      "desc": "Reorganize letras embaralhadas numa palavra em inglês antes de o tempo acabar; 10 níveis, 5 palavras por nível."
+    },
+    "domino": {
+      "name": "Dominó",
+      "desc": "Encaixe peças em qualquer ponta da corrente e fique sem peças antes do computador; 10 níveis em que o computador fica mais esperto."
+    },
+    "hearts": {
+      "name": "Copas (Hearts)",
+      "desc": "Evite as copas e a Dama de Espadas num jogo de cartas para quatro; menos pontos é melhor; 10 níveis contra jogadores do computador mais espertos."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (fichas virtuais)",
+      "desc": "Pôquer cara a cara contra o computador com fichas virtuais: desista, pague ou aumente, e vença quando o computador ficar sem fichas; 10 níveis, sem dinheiro real."
+    },
+    "n-back": {
+      "name": "Memória N-Back",
+      "desc": "Observe o quadrado aceso e pressione Igual quando for o mesmo de N passos atrás; 10 níveis com N até 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker (biscoitos)",
+      "desc": "Clique para assar biscoitos, compre ajudantes que assam automaticamente e alcance a meta em 2 minutos; 10 níveis."
+    },
+    "tile-connect": {
+      "name": "Conexão de peças (estilo Onet)",
+      "desc": "Ligue peças iguais com um caminho de no máximo duas curvas e limpe o tabuleiro antes de o tempo acabar; 10 níveis, tabuleiros maiores."
+    },
+    "jigsaw": {
+      "name": "Quebra-cabeça de imagem",
+      "desc": "Troque as peças embaralhadas para remontar a imagem; 10 níveis de 3x3 a 6x6 peças."
+    },
+    "mini-golf": {
+      "name": "Minigolfe",
+      "desc": "Puxe para trás e solte para encaçapar a bola no buraco dentro do limite de tacadas; 10 percursos com paredes e areia."
+    },
+    "backgammon": {
+      "name": "Gamão (Backgammon)",
+      "desc": "Role os dados, leve suas peças para casa e retire-as antes do computador, capturando suas peças soltas no caminho; 10 níveis."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Treze)",
+      "desc": "O jogo de cartas vietnamita para quatro: jogue cartas únicas, pares, sequências e quadras para ficar sem cartas primeiro; 10 níveis."
     }
   },
   "s": {

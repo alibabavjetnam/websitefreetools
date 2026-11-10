@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Ugrás",
     "lib.arcade.aimTarget": "Célpont",
     "lib.game.soundOn": "Hang bekapcsolása",
-    "lib.game.soundOff": "Hang kikapcsolása"
+    "lib.game.soundOff": "Hang kikapcsolása",
+    "lib.arcade.note.kalah": "Te az alsó sort játszod, a gép a felsőt; a jobb oldali nagy gödör a te kamrád. Kattints egy gödörre, hogy felvedd az összes magot, és óramutató járásával ellentétesen szórd szét egyesével a gödrökbe (az ellenfél kamráját kihagyva). Ha az utolsó mag a saját kamrádba esik, újra lépsz; ha a saját oldaladon egy üres gödörbe esik, amellyel szemben magos gödör van, megszerzed azokat a magokat. Ha az egyik oldal kiürül, a másik oldal magjai a gazdájuk kamrájába kerülnek; a nagyobb kamra nyer.",
+    "lib.arcade.note.snakes": "Dobj a kockával, és lépj annyit, ahány mezőt mutat, 1-től 100-ig. Ha egy létra aljára lépsz, felmászol rajta, ha egy kígyó fejére, lecsúszol. A 4. szinttől pontosan annyit kell dobnod, hogy a 100-as mezőre érkezz. A magasabb szinteken több a kígyó, kevesebb a létra, és több az ellenfél. Az nyer, aki elsőként éri el a 100-at.",
+    "lib.arcade.square": "{n}. mező",
+    "lib.arcade.ladderUp": "Fel a létrán!",
+    "lib.arcade.snakeDown": "Lenyelt egy kígyó!",
+    "lib.arcade.needExact": "A 100-as mezőhöz pontos dobás kell.",
+    "lib.arcade.note.nmm": "Mindkét félnek 9 bábuja van. 1. fázis: felváltva rakjátok le a bábukat az üres pontokra. 2. fázis: told a bábut egy szomszédos üres pontra. Ha már csak 3 bábud van, „repülhetsz” bármelyik üres pontra. Ha három bábu egy vonalba kerül (malom), levehetsz egy ellenfél-bábut (először a nem malomban lévőket). Veszítesz, ha már csak 2 bábud van, vagy nem tudsz lépni. Te vagy a fehér, és te kezdesz.",
+    "lib.arcade.inHand": "Lerakandó: {a} · {b}",
+    "lib.arcade.removePiece": "Válassz egy ellenfél-bábut, amelyet leveszel.",
+    "lib.arcade.enemyWaters": "Ellenséges vizek (kattints a lövéshez)",
+    "lib.arcade.yourFleet": "A te flottád",
+    "lib.arcade.note.battleship": "Mindkét félnek 5 hajója van (hossza 5, 4, 3, 3, 2), véletlenszerűen elhelyezve egy 10x10-es rácson. Felváltva lőttök egy-egy mezőre: a találat piros, a mellé lövés világoskék lesz, ha pedig a hajó minden mezőjét eltaláltad, elsüllyed. Az nyer, aki előbb elsüllyeszti az ellenség egész flottáját. A magasabb szinteken a gép ügyesebben találja ki, hol vannak a hajóid.",
+    "lib.arcade.shipsLeft": "Megmaradt hajók: te {a} · ellenfél {b}",
+    "lib.arcade.theySunk": "Az ellenség elsüllyesztette az egyik hajódat!",
+    "lib.arcade.theyHit": "Az ellenség eltalálta az egyik hajódat.",
+    "lib.arcade.theyMiss": "Az ellenség mellé lőtt.",
+    "lib.arcade.youSunk": "Elsüllyesztettél egy ellenséges hajót!",
+    "lib.arcade.youHit": "Találat!",
+    "lib.arcade.youMiss": "Mellé.",
+    "lib.arcade.shake": "Rázás",
+    "lib.arcade.clearBets": "Tétek törlése",
+    "lib.arcade.note.bau-cua": "Csak virtuális érmék, nem valódi pénz. Válassz zsetonértéket, kattints az állatokra a tétek megtételéhez, majd nyomd meg a Rázás gombot. Minden olyan kocka után, amely egyezik az egyik megtett állatoddal, visszakapod a tétedet, plusz ugyanannyit minden egyezésért. Érd el a célként kitűzött érmeszámot a megengedett körökön belül a szint teljesítéséhez.",
+    "lib.arcade.note.baccarat": "Csak virtuális érmék, nem valódi pénz. Tegyél a Játékosra, a Bankárra vagy az Egyenlőre, majd nyomd meg az Osztás gombot. A lap értéke az összeg utolsó számjegye (A = 1, 2–9 a lapon látható érték, 10/J/Q/K = 0); a 9-hez közelebbi lap nyer, a harmadik lapot a szokásos szabályok szerint húzzák. A Játékos 1:1-et, a Bankár 0,95:1-et, az Egyenlő 8:1-et fizet (döntetlennél a Játékos/Bankár téteket visszakapod). Érd el a célként kitűzött érmeszámot a megengedett körökön belül a szint teljesítéséhez.",
+    "lib.arcade.banker": "Bankár",
+    "lib.arcade.player": "Játékos",
+    "lib.arcade.tie": "Egyenlő",
+    "lib.arcade.openCards": "Felfedés",
+    "lib.arcade.note.bai-cao": "Csak virtuális érmék, nem valódi pénz. Mindkét fél 3 lapot kap. A kéz pontszáma az összeg utolsó számjegye (A = 1, 2–9 a lapon látható érték, 10/J/Q/K = 10, vagyis 0 pont). Sorrend: legerősebb a három egyforma (Sáp), utána a három figura (Ba tiên), majd a 9 ponttól a 0 pontig. Tegyél tétet, nyomd meg az Osztás, majd a Felfedés gombot, hogy összevesd a lapjaidat az osztóéval. A 6. szinttől döntetlennél az osztó nyer. Érd el a célként kitűzött érmeszámot a megengedett körökön belül a szint teljesítéséhez.",
+    "lib.arcade.caoSap": "Három egyforma",
+    "lib.arcade.caoBaTien": "Három figura",
+    "lib.arcade.caoPts": "{n} pont",
+    "lib.arcade.note.bingo": "A gép 1-től 75-ig húzza a számokat. Ha a kihúzott szám rajta van a kártyádon, kattints rá a megjelöléshez (a közepe ingyenes). Töltsd ki egy sorodat, oszlopodat vagy átlódat, és nyomd meg a BINGO! gombot — a gép ellenfeleit kell megelőznöd. A téves BINGO! néhány másodpercre lezárja a gombot. A magasabb szinteken gyorsabban húzza a számokat a gép, és több az ellenfél.",
+    "lib.arcade.opponentsN": "Ellenfelek: {n}",
+    "lib.arcade.falseBingo": "Még nincs kész vonal! A gomb 3 másodpercre zárolva.",
+    "lib.arcade.bingoGo": "Jön a számhúzás!",
+    "lib.arcade.note.yahtzee": "Minden körben legfeljebb háromszor dobsz az 5 kockával: kattints egy kockára a megtartásához, majd nyomd meg a Dobás gombot a többi újradobásához. Ezután válassz egy mezőt a táblázatban a pontozáshoz (minden mezőt egyszer használhatsz; ha nem illik a dobás, 0 pontot kapsz). Összesen 13 kör van. Az Egyesek–Hatosok mezők 63 vagy több pont esetén 35 bónuszt adnak. Érd el a szint célpontszámát a győzelemhez.",
+    "lib.arcade.turnN": "{n}. kör / 13",
+    "lib.arcade.pickCat": "Válassz egy mezőt a pontozáshoz",
+    "lib.arcade.rollsLeft": "Dobás (még {n})",
+    "lib.arcade.upperBonus": "Egyesek–Hatosok bónusz",
+    "lib.arcade.scored": "Pont: {n}",
+    "lib.arcade.note.crazy-eights": "Rakj ki egy lapot, amely szín vagy érték szerint egyezik a dobópakli felső lapjával. A nyolcasok jokerek: bármikor kirakhatod őket, és új színt választhatsz. Ha nincs kirakható lapod, húzz a pakliból (legfeljebb 3 lapot); ha így sem tudsz rakni, passzolsz. Az nyer, aki elsőként kiüríti a kezét. A magasabb szinteken több az ellenfél, és a gép ügyesebben játszik.",
+    "lib.arcade.opponent": "Ellenfél",
+    "lib.arcade.pileLeft": "Húzópakli: {n}",
+    "lib.arcade.pickSuit": "Válassz új színt",
+    "lib.arcade.aiSuit": "A gép ezt választotta: {s}",
+    "lib.arcade.aiPass": "A gép passzol.",
+    "lib.arcade.mustPlay": "Van kirakható lapod — rakd ki.",
+    "lib.arcade.youPass": "Húztál 3 lapot, és passzolsz.",
+    "lib.arcade.bcGourd": "Tök",
+    "lib.arcade.bcCrab": "Rák",
+    "lib.arcade.bcShrimp": "Garnélarák",
+    "lib.arcade.bcFish": "Hal",
+    "lib.arcade.bcRooster": "Kakas",
+    "lib.arcade.bcDeer": "Szarvas",
+    "lib.arcade.yOnes": "Egyesek",
+    "lib.arcade.yTwos": "Kettesek",
+    "lib.arcade.yThrees": "Hármasok",
+    "lib.arcade.yFours": "Négyesek",
+    "lib.arcade.yFives": "Ötösök",
+    "lib.arcade.ySixes": "Hatosok",
+    "lib.arcade.yThree": "Drill",
+    "lib.arcade.yFour": "Póker",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Kis sor (30)",
+    "lib.arcade.yLarge": "Nagy sor (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Esély",
+    "lib.arcade.note.race": "A ← → gombokkal (vagy a kívánt sávra koppintva) válts sávot, hogy kikerüld az előtted haladó autókat. 3 életed van; tedd meg a teljes távot a szint teljesítéséhez. A magasabb szinteken több a sáv, és gyorsabb a forgalom.",
+    "lib.arcade.note.jump": "A karakter magától ugrál. A ← → gombokkal vagy az ujjad húzásával érkezz a következő platformra. A kék platformok mozognak, a barnák leszálláskor összetörnek. Ha kiesel a képernyőről, veszítesz; mássz elég magasra a szint teljesítéséhez.",
+    "lib.arcade.note.miner": "A horog ide-oda leng; nyomd meg a Szóközt, a ↓ gombot, vagy koppints a pályára a ledobásához. A nagy aranyrögök és a kövek nehezek, lassan húzhatók fel; a gyémántok sokat érnek. Érd el a célösszeget, mielőtt letelik a 60 másodperc.",
+    "lib.arcade.note.slicer": "Húzd át az ujjadat vagy az egeret a gyümölcsön a felvágásához. Kerüld el a fekete bombákat. Ha elmulasztasz egy gyümölcsöt, vagy bombát vágsz el, elveszítesz egy életet (3 életed van). Vágj fel elég gyümölcsöt a szint teljesítéséhez.",
+    "lib.arcade.note.hoops": "Nyomd meg a pályát, húzd lefelé (mint egy csúzlit), majd engedd el, hogy a labdát a gyűrű felé dobd. Minél messzebb húzod, annál erősebb a dobás. Dobj elég kosarat a rendelkezésre álló dobásokból; a 4. szinttől a gyűrű mozog.",
+    "lib.arcade.note.bubbles": "Az egérrel vagy ujjal célozz, majd kattints/koppints, vagy nyomd meg a Szóközt/Lövés gombot a lövéshez. Kapcsolj össze 3 vagy több azonos színű buborékot a kipukkasztásukhoz; amelyek elveszítik a tartásukat, leesnek. A sorok lassan lejjebb ereszkednek, ezért tartsd távol őket az alsó vonaltól. Pukkaszd ki az összes buborékot a győzelemhez.",
+    "lib.arcade.note.chase": "A nyílbillentyűkkel (vagy húzással / a gombokkal) fordulj, és edd meg a labirintus összes pontját, miközben kerülöd az üldöző szellemeket. 3 életed van; a magasabb szinteken több, gyorsabb és okosabban üldöző szellem van.",
+    "lib.arcade.height": "Magasság: {n}/{t} m",
+    "lib.arcade.money": "Pénz: {n}/{t}",
+    "lib.arcade.sliced": "Felvágva: {n}/{t}",
+    "lib.arcade.hoopScore": "Találat: {n}/{t}",
+    "lib.arcade.shotsLeft": "Még {n} dobás",
+    "lib.arcade.bubbleLeft": "Még {n} buborék",
+    "lib.arcade.shotsN": "Lövések: {n}",
+    "lib.arcade.dotsLeft": "Még {n} pont",
+    "lib.arcade.note.kakuro": "Töltsd ki a fehér mezőket 1–9 közötti számjegyekkel úgy, hogy minden sor- vagy oszlopszakasz összege megegyezzen a fekete mezőben lévő számmal (a jobb felső szám a jobbra lévő szakaszra, a bal alsó a lefelé lévőre vonatkozik), és egy szakaszon belül egy számjegy se ismétlődjön. A mozgáshoz használd a nyílbillentyűket.",
+    "lib.arcade.note.kenken": "Töltsd ki a rácsot 1-től N-ig terjedő számokkal úgy, hogy egyik szám se ismétlődjön egyetlen sorban vagy oszlopban sem. Minden vastagon bekeretezett csoport egy célértéket és egy műveletet (+, −, ×, ÷) mutat: a csoportban lévő számoknak ezt az eredményt kell adniuk. A mozgáshoz használd a nyílbillentyűket.",
+    "lib.arcade.note.wordGuess": "Találd ki a titkos angol szót. Minden tipp után a zöld azt jelenti, hogy a betű helyes és jó helyen van, a sárga azt, hogy a betű szerepel a szóban, de máshol, a szürke pedig azt, hogy a betű nincs a szóban. Gépelj a billentyűzeten vagy használd a képernyő-billentyűket, és az Enterrel küldd be. A magasabb szinteken hosszabbak a szavak, és kevesebb a próbálkozás.",
+    "lib.arcade.note.hangman": "Találd ki a titkos angol szót úgy, hogy egyenként betűket választasz. Minden hibás betű újabb részt ad hozzá az akasztott alakhoz; ha elfogynak a hibalehetőségeid, veszítesz. A magasabb szinteken hosszabbak a szavak, és kevesebb hibát követhetsz el.",
+    "lib.arcade.note.scramble": "Rendezd az összekevert betűket valódi angol szóvá, és írd be a válaszmezőbe. Minden szinten 5 szó van; legalább 4-et fejts meg, mielőtt az adott szó időzítője lejár, a szint teljesítéséhez. A tipp az első betűt felfedi.",
+    "lib.arcade.cellsLeft": "Még {n} üres mező",
+    "lib.arcade.wrongN": "{n} mező nem helyes.",
+    "lib.arcade.noError": "Eddig nem találtunk hibát.",
+    "lib.arcade.tooShort": "Kevés betű",
+    "lib.arcade.answerIs": "Válasz: {w}",
+    "lib.arcade.livesLeft": "Még {n} hibázási lehetőség",
+    "lib.arcade.yourAnswer": "A válaszod",
+    "lib.arcade.skip": "Kihagyás",
+    "lib.arcade.notThis": "Nem jó, próbáld újra.",
+    "lib.arcade.startsWith": "Az első betű: {c}",
+    "lib.arcade.note.domino": "Mindenki 7 követ kap; az indít, akinél a legnagyobb dupla van. Rakj ki egy követ, amelynek száma egyezik a lánc egyik végével. Ha nem tudsz rakni, húzz a talonból, amíg nem tudsz; ha üres, passzolsz. Az nyer, aki elsőként kiüríti a kezét; ha mindkét fél elakad, az nyer, akinek kevesebb a pontösszege.",
+    "lib.arcade.note.hearts": "Négy játékos, fejenként 13 lap. A treff 2 indít. Ha tudsz, színt kell követned. Minden kőr 1 pont, a pikk dáma 13; az üt, aki a kört nyeri, megkapja a benne lévő pontokat. Minél kevesebb, annál jobb, és ha valaki mind a 26 pontot begyűjti, a többiek kapnak 26-ot. Kőrrel addig nem indíthatsz, amíg ki nem raktak egyet. Az utolsó leosztás után te nyersz, ha a pontszámod a legalacsonyabb (vagy holtversenyben a legalacsonyabb).",
+    "lib.arcade.note.holdem": "Fej fej mellett a gép ellen, csak virtuális zsetonokkal. Mindkét játékos 2 zárt lapot kap, és 5 közös lapot fednek fel (flop, turn, river); a legjobb 5 lapos kezet kell kirakni. Minden körben eldobhatod a lapjaidat (fold), megadhatod vagy passzolhatod (call/check), illetve emelhetsz (raise). A vakok 4 leosztásonként emelkednek. Nyersz, ha a gép elfogy a zsetonjaiból, vagy ha a leosztáslimit után több zsetonod van. Valódi pénzről szó sincs.",
+    "lib.arcade.dmDraw": "Kő húzása",
+    "lib.arcade.dmPass": "Passz",
+    "lib.arcade.dmEmpty": "Még nincs kirakott kő",
+    "lib.arcade.dmYard": "Talon: {n} kő",
+    "lib.arcade.dmLeft": "Bal vég",
+    "lib.arcade.dmRight": "Jobb vég",
+    "lib.arcade.dmTie": "Döntetlen! Mindkét fél egyenlő.",
+    "lib.arcade.hrHand": "{n}. leosztás / {t}",
+    "lib.arcade.hrTook": "{p} viszi az ütést ({n} pont).",
+    "lib.arcade.hrIllegal": "Ezt a lapot nem rakhatod ki (színt kell követni, és kőrrel még nem lehet indítani).",
+    "lib.arcade.blinds": "Nagy vak: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Dobás",
+    "lib.arcade.check": "Passz",
+    "lib.arcade.callN": "Megadás: {n}",
+    "lib.arcade.raiseTo": "Emelés erre:",
+    "lib.arcade.raiseN": "Emelés erre: {n}",
+    "lib.arcade.thOppFold": "A gép eldobja a lapjait; te nyered ezt a leosztást.",
+    "lib.arcade.thYouFold": "Eldobtad a lapjaidat.",
+    "lib.arcade.thOppWin": "A gép nyeri ezt a leosztást",
+    "lib.arcade.thYouWin": "Te nyered ezt a leosztást",
+    "lib.arcade.thSplit": "Osztott pot",
+    "lib.arcade.thAiFold": "A gép eldobja a lapjait.",
+    "lib.arcade.thAiRaise": "A gép emel erre: {n}.",
+    "lib.arcade.thAiCall": "A gép megadja / passzol.",
+    "lib.arcade.hand.high": "Magas lap",
+    "lib.arcade.hand.pair": "Pár",
+    "lib.arcade.hand.twoPair": "Két pár",
+    "lib.arcade.hand.trips": "Drill",
+    "lib.arcade.hand.straight": "Sor",
+    "lib.arcade.hand.flush": "Szín",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Póker",
+    "lib.arcade.hand.sflush": "Színsor",
+    "lib.arcade.note.nback": "Egy 3x3-as rácson egymás után világít fel egy-egy négyzet. Nyomd meg a „Egyezik!” gombot (vagy a Szóközt), ha a kivilágított hely megegyezik az N lépéssel korábbival (N fent látható). A szint teljesítéséhez legalább 80%-ban helyes döntések kellenek. A magasabb szinteken nagyobb az N.",
+    "lib.arcade.nbMatch": "Egyezik!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Helyes: {a} · Hibás: {b}",
+    "lib.arcade.nbAcc": "Pontosság: {n}%",
+    "lib.arcade.note.clicker": "Kattints a sütire, hogy sütit süss, majd költsd el segítőkre, akik automatikusan sütnek (az áruk minden vásárlással nő). Süss meg a célként kitűzött számú sütit 2 percen belül a szint teljesítéséhez.",
+    "lib.arcade.ckCursor": "Kurzor",
+    "lib.arcade.ckGrandma": "Sütő nagyi",
+    "lib.arcade.ckFarm": "Farm",
+    "lib.arcade.ckMine": "Cukorbánya",
+    "lib.arcade.ckFactory": "Gyár",
+    "lib.arcade.ckCookie": "Süti",
+    "lib.arcade.ckEarned": "Megsütve: {n}/{t}",
+    "lib.arcade.chips2": "Sütik: {n}",
+    "lib.arcade.ckCps": "{n} süti/másodperc",
+    "lib.arcade.note.onet": "Válassz ki két egyforma csempét, amelyeket legfeljebb 2 kanyarral összekötő, más csempéket nem átszelő út köt össze, hogy eltávolítsd őket. Távolítsd el az összes csempét, mielőtt lejár az idő. Ha nincs több lépés, megkeverheted a csempéket (korlátozott számban).",
+    "lib.arcade.shuffle": "Keverés",
+    "lib.arcade.tilesLeft": "Még {n} csempe",
+    "lib.arcade.autoShuffle": "Nincs több lépés — automatikus keverés.",
+    "lib.arcade.note.jigsaw": "A kép darabokra van vágva és összekeverve. Koppints egy darabra, majd egy másikra, hogy felcseréld őket, és rakd ki újra a referenciaképen látható képet. A jó helyen lévő darabok zöld szegélyt kapnak. A magasabb szinteken több a darab.",
+    "lib.arcade.jgRef": "Referenciakép",
+    "lib.arcade.jgPlaced": "A helyén: {a}/{b}",
+    "lib.arcade.golfStrokes": "Ütések: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "A fehér korongokkal játszol, a jobb felső saroktól körbe a jobb alsó sarokig (az otthonod). Dobj a kockákkal, kattints a lépni kívánt korongra, majd egy kiemelt célmezőre. Ha olyan pontra lépsz, ahol pontosan egy ellenfél-korong áll, leütöd azt a középső sávra, és az ellenfélnek először azt kell visszahoznia. Olyan pontra nem léphetsz, ahol két vagy több ellenfél-korong áll. Ha mind a 15 korongod az otthoni térfeledben (az utolsó 6 pont) van, elkezdheted kivenni őket. Az nyer, aki elsőként kiviszi mind a 15 korongját.",
+    "lib.arcade.bgRoll": "Dobás",
+    "lib.arcade.bgOff": "Kivitel",
+    "lib.arcade.bgRollFirst": "Dobás",
+    "lib.arcade.bgInfo": "Kivitt: te {a} · gép {b} · Pipek: {c} / {d}",
+    "lib.arcade.youNoMove": "Nincs több szabályos lépésed.",
+    "lib.arcade.note.tienlen": "Négy játékos, fejenként 13 lap. A lapok sorrendje alacsonyról magasra: 3, 4, … K, A, 2; a színek sorrendje alacsonyról magasra: pikk, treff, káró, kőr. Az indít, akinél a pikk 3 van. Kirakhatsz egy lapot, egy párt, drillt, pókert vagy 3 vagy több egymást követő lapból álló sort (2-es nélkül). A következő játékosnak ugyanolyan típust kell kiraknia, magasabbat, vagy passzolnia; a póker leütheti az egyedüli 2-est vagy a 2-es párt. Ha mindenki más passzol, az utoljára rakó játékos bármivel indíthat. Az nyer, aki elsőként kiüríti a kezét. Jelöld ki a lapokat, majd nyomd meg a Kirakás gombot.",
+    "lib.arcade.tlPlay": "Kirakás",
+    "lib.arcade.tlPass": "Passz",
+    "lib.arcade.tlClear": "Kijelölés törlése",
+    "lib.arcade.tlPassed": "passzolt",
+    "lib.arcade.tlFree": "Üres az asztal — bármivel indíthatsz",
+    "lib.arcade.tlLeft": "Megmaradt lapok: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passzol.",
+    "lib.arcade.tlBad": "A kijelölt lapok nem alkotnak érvényes kombinációt.",
+    "lib.arcade.tlLow": "Ez a kombináció nem elég magas az asztalon lévő leütéséhez."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Reakcióidő-teszt",
       "desc": "Kattints abban a pillanatban, amikor a képernyő zöldre vált; az 5 kör átlagodnak teljesítenie kell a szint korlátját, amely 10 szinten át szigorodik."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Szórd szét a magokat a gödrök között, szerezd meg az ellenfél magjait, és lépj újra, ha a kamrádba érkezel; játssz a gép ellen 10 szinten, könnyűtől a nehézig."
+    },
+    "snakes-ladders": {
+      "name": "Kígyók és létrák",
+      "desc": "Dobj a kockával az 1-es mezőtől a 100-asig, mássz fel a létrákon, kerüld a kígyókat, és érj célba az ellenfeleid előtt; 10 szint."
+    },
+    "nine-mens-morris": {
+      "name": "Malom (Nine Men’s Morris)",
+      "desc": "Rakd le, told és repítsd a bábuidat, hogy három egy vonalba kerüljön, és leveheted az ellenfél bábuit; játssz a gép ellen 10 szinten."
+    },
+    "battleship": {
+      "name": "Torpedó (Battleship)",
+      "desc": "Találd meg és süllyeszd el a gép flottáját a 10x10-es rácson, mielőtt ő süllyeszti el a tiédet; 10 szint, egyre ügyesebben következtető géppel."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Tök-Rák-Hal-Garnéla)",
+      "desc": "Hagyományos vietnami kockajáték: tegyél virtuális érmékkel az állatokra, és rázd meg a három kockát; érd el a célként kitűzött érmeszámot 10 szinten (nem valódi pénz)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Tegyél a Játékosra, a Bankárra vagy az Egyenlőre a szokásos szabályok szerint osztott lapokkal, virtuális érmékkel; érd el a célként kitűzött érmeszámot 10 szinten (nem valódi pénz)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (háromlapos játék)",
+      "desc": "Vesd össze a 3 lapos kezedet az osztóéval: három egyforma, három figura, majd 9 ponttól 0-ig; virtuális érmék, 10 szint, nem valódi pénz."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Jelöld meg a kihúzott számokat az 5x5-ös kártyádon, és kiálts BINGO-t a gép ellenfelei előtt; 10 szinten egyre gyorsabban húzzák a számokat."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (öt kocka)",
+      "desc": "Dobj öt kockával, tartsd meg a jókat, és töltsd ki a 13 pontozómezőt; érd el a célpontszámot 10 szinten."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Őrült nyolcasok)",
+      "desc": "Rakj ki azonos színű vagy értékű lapot, a nyolcasok színt váltanak; ürítsd ki a kezedet 1–3 gépi ellenfél előtt 10 szinten."
+    },
+    "car-race": {
+      "name": "Autóverseny-kitérő",
+      "desc": "Válts sávot, hogy kikerüld az előtted haladó autókat, és tedd meg a teljes távot; 10 szint, egyre több sávval és gyorsabb forgalommal."
+    },
+    "sky-jump": {
+      "name": "Égi ugrás",
+      "desc": "Ugorj platformról platformra, és mássz a lehető legmagasabbra anélkül, hogy leesnél; 10 szint, egyre ritkább, mozgó és törékeny platformokkal."
+    },
+    "gold-miner": {
+      "name": "Aranybányász",
+      "desc": "Ejtsd le a horgot, hogy felhúzd az aranyat és a gyémántokat, kerüld a nehéz köveket, és érd el a célösszeget 60 másodperc alatt; 10 szint."
+    },
+    "fruit-slice": {
+      "name": "Gyümölcsvágó",
+      "desc": "Húzd át az ujjad a felrepülő gyümölcsökön, és kerüld a bombákat; 10 szint, egyre több gyümölccsel és bombával."
+    },
+    "basketball": {
+      "name": "Kosárdobás",
+      "desc": "Húzd és engedd el, hogy a labdát a gyűrűbe dobd a korlátozott számú dobásból; 10 szint, a 4. szinttől mozgó gyűrűvel."
+    },
+    "bubble-shooter": {
+      "name": "Buborékpuki",
+      "desc": "Lőj buborékokat, hogy 3 vagy több azonos színűt összekapcsolj és kipukkassz, és mindet tüntesd el, mielőtt leérnek; 10 szint, egyre több színnel."
+    },
+    "dot-chase": {
+      "name": "Pontvadászat",
+      "desc": "Edd meg a labirintus összes pontját, miközben kerülöd az üldöző szellemeket; 10 szint, egyre több és okosabb szellemmel."
+    },
+    "kakuro": {
+      "name": "Kakuro (keresztösszeg)",
+      "desc": "Töltsd ki a fehér mezőket 1–9 közötti számjegyekkel úgy, hogy minden szakasz összege megegyezzen a jelzéssel, ismétlődés nélkül; 10 szint, 5x5-ös és 9x9-es rácsok között."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Töltsd ki a rácsot úgy, hogy egyetlen sorban vagy oszlopban se ismétlődjön szám, és minden csoport a megadott művelettel a célértéket adja; 10 szint, 3x3-as és 6x6-os rácsok között."
+    },
+    "word-guess": {
+      "name": "Szókitaláló (Wordle-stílusú)",
+      "desc": "Találd ki a titkos angol szót zöld, sárga és szürke jelzések segítségével; 10 szint 4–6 betűs szavakkal és egyre kevesebb próbálkozással."
+    },
+    "hangman": {
+      "name": "Akasztófa (Hangman)",
+      "desc": "Találd ki az angol szót betűről betűre, mielőtt elfogynak a hibalehetőségeid; 10 szint, egyre hosszabb szavakkal és kevesebb hibával."
+    },
+    "word-scramble": {
+      "name": "Betűkirakó (anagramma)",
+      "desc": "Rendezd az összekevert betűket angol szóvá az idő lejárta előtt; 10 szint, szintenként 5 szóval."
+    },
+    "domino": {
+      "name": "Dominó",
+      "desc": "Illeszd a köveket a lánc bármelyik végére, és ürítsd ki a kezedet a gép előtt; 10 szint, egyre okosabb géppel."
+    },
+    "hearts": {
+      "name": "Hearts (Kőr)",
+      "desc": "Kerüld a kőrt és a pikk dámát egy négyfős kártyajátékban; az alacsonyabb pontszám a jobb; 10 szint, egyre okosabb gépi játékosokkal."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuális zsetonok)",
+      "desc": "Fej fej melletti póker a gép ellen virtuális zsetonokkal: dobd el, add meg vagy emeld a tétet, és nyerj, ha a gép elfogy a zsetonjaiból; 10 szint, nem valódi pénz."
+    },
+    "n-back": {
+      "name": "N-Back memóriajáték",
+      "desc": "Figyeld a kivilágított négyzetet, és nyomd meg az Egyezik gombot, ha ugyanaz, mint N lépéssel korábban; 10 szint, N legfeljebb 4."
+    },
+    "cookie-clicker": {
+      "name": "Sütiklikker",
+      "desc": "Kattintva süss sütiket, vegyél automatikusan sütő segítőket, és érd el a célt 2 percen belül; 10 szint."
+    },
+    "tile-connect": {
+      "name": "Csempeösszekötő (Onet-stílusú)",
+      "desc": "Kösd össze az egyforma csempéket legfeljebb két kanyaros úttal, és tisztítsd le a táblát az idő lejárta előtt; 10 szint, egyre nagyobb táblákkal."
+    },
+    "jigsaw": {
+      "name": "Képkirakó",
+      "desc": "Cseréld fel az összekevert darabokat, hogy újra összeálljon a kép; 10 szint 3x3-as és 6x6-os darabszám között."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Húzd hátra és engedd el, hogy a labdát a lyukba üsd az ütéshatáron belül; 10 pálya falakkal és homokkal."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Dobj a kockákkal, vidd haza a korongjaidat, és vidd ki őket a gép előtt, útközben leütve az ellenfél magányos korongjait; 10 szint."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Tizenhármas)",
+      "desc": "A vietnami négyfős kártyajáték, amelyben egyedüli lapokkal, párokkal, sorokkal és pókerekkel kell elsőként kiüríteni a kezedet; 10 szint."
     }
   },
   "s": {

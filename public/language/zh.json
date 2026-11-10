@@ -698,7 +698,14 @@
     "lib.arcade.pmU": "ù 了！你立即获胜。",
     "lib.arcade.pmYou": "你",
     "lib.arcade.pmFoe": "电脑",
-    "lib.arcade.pmDraw2": "点数相同。"
+    "lib.arcade.pmDraw2": "点数相同。",
+    "lib.arcade.note.shogi": "将棋是日本象棋。你执下方先走，电脑的棋子方向相反。吃到的棋子进入你的“持驻”，可以代替走子打在任意空格上（不能把兵打在已有你方未成兵的纵列，也不能把子打在之后无法再动的底线）。棋子进入、离开或在对方底部三行内移动时可以升变（王与金除外）；若棋子之后无路可走则必须升变。将死对方的王即获胜。汉字：歩 兵、香 香车、桂 桂马、銀 银、金 金、角 角、飛 飞、玉 王；红色的と、馬、竜等是升变后的棋子。",
+    "lib.arcade.sgPromote": "升变",
+    "lib.arcade.sgKeep": "不升变",
+    "lib.arcade.sgCheck": "你被将军了！",
+    "lib.arcade.sgWin": "将死 — 你赢了。",
+    "lib.arcade.sgLose": "你被将死了。",
+    "lib.arcade.sgAskPromote": "要升变这枚棋子吗？"
   },
   "pages": {
     "home": {
@@ -1467,6 +1474,10 @@
     "phom": {
       "name": "越南拉米（Phỏm）",
       "desc": "与电脑对战的越南式拉米：摸牌或吃牌、凑成组，散牌点数少者获胜；共 10 关。"
+    },
+    "shogi": {
+      "name": "将棋",
+      "desc": "与电脑对弈日本将棋：持驻打入、升变、将死对方的王；共 10 关，可悔棋。"
     }
   },
   "s": {

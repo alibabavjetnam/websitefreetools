@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Yuxarı sol küncdə sahib olduğunuz bütün sahəni doldurmaq üçün rəng seçin; o, həmin rəngdəki qonşu xanaları udur. İcazə verilən gediş sayı daxilində bütün lövhəni bir rəngə çevirin.",
     "lib.arcade.note.mastermind": "Kompüter rənglərdən ibarət bir cərgə gizlədir. Hər mövqe üçün rəng seçin, sonra Tapmaq düyməsini basın. Qara mıx = düzgün rəng düzgün yerdə; ağ mıx = düzgün rəng yanlış yerdə. Təxminləriniz bitməmiş kodu açın.",
     "lib.arcade.note.hanoi": "Bütün diskləri son dirəyə köçürün. Hər dəfə yalnız dirəyin üstündəki diski köçürün və heç vaxt böyük diski kiçiyin üstünə qoymayın. Əvvəlcə mənbə dirəyə, sonra hədəf dirəyə klikləyin.",
-    "lib.arcade.note.pipes": "Borunu 90° döndərmək üçün plitəyə klikləyin. Bütün boruları açıq ucu qalmayan vahid şəbəkədə birləşdirin (açıq uclar qırmızı göstərilir)."
+    "lib.arcade.note.pipes": "Borunu 90° döndərmək üçün plitəyə klikləyin. Bütün boruları açıq ucu qalmayan vahid şəbəkədə birləşdirin (açıq uclar qırmızı göstərilir).",
+    "lib.arcade.pongScore": "Siz {a} – {b} Kompüter ({t} xala qədər)",
+    "lib.arcade.kills": "Məhv edilən: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} qaya qalıb",
+    "lib.arcade.timeLeft": "{n} san. qalıb",
+    "lib.arcade.stepsN": "Addımlar: {n}",
+    "lib.arcade.crossed": "Evdə: {n}/{t}",
+    "lib.arcade.pipes": "Keçilən borular: {n}/{t}",
+    "lib.arcade.distance": "Məsafə: {n}/{t} m",
+    "lib.arcade.speedN": "Sürət: {n}",
+    "lib.arcade.note.whack-a-mole": "Köstəbəklər deşiklərdən çıxır — vurmaq üçün köstəbəyin üzərinə klik edin və ya toxunun. Vaxt bitməzdən əvvəl kifayət qədər köstəbək vurun. 4-cü səviyyədən etibarən bombalar var: birinə vursanız xal itirirsiniz.",
+    "lib.arcade.hole": "Deşik",
+    "lib.arcade.hitsN": "Vuruşlar: {n}/{t}",
+    "lib.arcade.note.simon": "Oyun rənglər və səslərdən ibarət ardıcıllığı səsləndirir — onu eyni sıra ilə təkrarlayın. Hər raund bir addım əlavə edir. Səviyyəni keçmək üçün tələb olunan uzunluğu yadda saxlayın. 7-ci səviyyədən etibarən 6 düymə var.",
+    "lib.arcade.seqN": "Ardıcıllıq: {n}/{t}",
+    "lib.arcade.watch": "İzləyin…",
+    "lib.arcade.yourTurnShort": "Növbə sizdədir",
+    "lib.arcade.note.aim-trainer": "Hədəflər təsadüfi görünür və tez yox olur — bacardığınız qədər çox vurun. Onlar getdikcə kiçilir və sürətlənir. Səviyyəni keçmək üçün 5-dən çox boşa getməzdən əvvəl kifayət qədər hədəfə vurun.",
+    "lib.arcade.missN": "Boşa: {n}/{t}",
+    "lib.arcade.answer": "Cavab",
+    "lib.arcade.note.quick-math": "Ağlınızda mümkün qədər tez həll edin: cavabı yazın və Enter basın. Hər sualın vaxt limiti var; səhv cavab və ya vaxtın bitməsi bir can aparır (3 canınız var). Səviyyəni keçmək üçün kifayət qədər suala düzgün cavab verin.",
+    "lib.arcade.correctN": "Düzgün: {n}/{t}",
+    "lib.arcade.note.reaction": "Ekranın yaşıl olmasını gözləyin, sonra mümkün qədər tez klik edin. Tez klik etmək qayda pozuntusudur (3 pozuntu və uduzursunuz). 5 raund üzrə ortalamanız səviyyənin limitindən yaxşı olmalıdır.",
+    "lib.arcade.roundN": "Söz {n}/{t}",
+    "lib.arcade.limitMs": "Limit: {n} ms",
+    "lib.arcade.rxWait": "Yaşılı gözləyin…",
+    "lib.arcade.rxGo": "KLİK!",
+    "lib.arcade.rxEarly": "Çox tez!",
+    "lib.arcade.gameArea": "Oyun sahəsi",
+    "lib.arcade.note.pong": "Aşağıdakı raketi idarə etmək üçün siçanı hərəkət etdirin, barmağınızı sürüşdürün və ya ← → düymələrindən istifadə edin. Topu kompüterin yanından keçirin; ilk 5 xalı toplayan qalib gəlir. Top hər zərbədə sürətlənir.",
+    "lib.arcade.note.space-shooter": "İdarə etmək üçün siçanı hərəkət etdirin, barmağınızı sürüşdürün və ya ← → düymələrindən istifadə edin; gəmi avtomatik atəş açır. Səviyyəni keçmək üçün kifayət qədər düşmən gəmisini məhv edin, toqquşmalardan və düşmən atəşindən qaçın. 3 canınız var.",
+    "lib.arcade.note.asteroids": "← → gəmini fırladır, ↑ itələyir, Boşluq düyməsi atəş açır. Səviyyəni keçmək üçün bütün qayaları məhv edin; böyük qayalar kiçiklərə bölünür. Gəmi ekranın kənarlarından keçir. 3 canınız var.",
+    "lib.arcade.note.maze": "Vaxt bitməzdən əvvəl yaşıl nöqtədən qırmızı bayraq qədər getmək üçün ox düymələrindən (və ya sürüşdürmədən, ya da düymələrdən) istifadə edin. 5-ci səviyyədən etibarən labirintdə duman var: yalnız ətrafınızı görürsünüz, ziyarət etdiyiniz yerlər yadda qalır.",
+    "lib.arcade.note.road-cross": "Qurbağanı aşağıdan yuxarıya tullandırmaq üçün ox düymələrindən, sürüşdürmədən və ya düymələrdən istifadə edin. Nəqliyyatdan qaçın; 5-ci səviyyədən etibarən yuxarı hissə çaydır, ona görə üzən kötüklərin üstünə tullanın. Səviyyəni keçmək üçün evə 3 dəfə çatın. 3 canınız var.",
+    "lib.arcade.note.flappy": "Qanad çalmaq üçün oyun sahəsinə toxunun, Boşluq və ya ↑ basın. Boruya, yerə və ya tavana toxunmadan boruların arasındakı boşluqlardan uçun. Yüksək səviyyələrdə boşluqlar daha dar, uçuş isə daha sürətlidir.",
+    "lib.arcade.note.runner": "Kaktusların üstündən tullanmaq üçün oyun sahəsinə toxunun, Boşluq və ya ↑ basın; hündür quşların altından keçmək üçün ↓ basıb saxlayın (və ya alçaq quşların üstündən tullanın). Səviyyəni keçmək üçün kifayət qədər uzağa qaçın. Sürət durmadan artır.",
+    "lib.arcade.fire": "Atəş",
+    "lib.arcade.jump": "Tullan",
+    "lib.arcade.aimTarget": "Hədəf",
+    "lib.game.soundOn": "Səsi aç",
+    "lib.game.soundOff": "Səsi bağla",
+    "lib.arcade.note.kalah": "Siz aşağı cərgəni, kompüter yuxarı cərgəni oynayır; sağdakı böyük çuxur sizin anbarınızdır. Bir çuxura klik edərək bütün toxumlarını götürün və saat əqrəbinin əksinə, hər çuxura bir ədəd olmaqla paylayın (rəqibin anbarını keçərək). Sonuncu toxum anbarınıza düşərsə, yenidən gedirsiniz; toxumlu çuxurun qarşısındakı öz tərəfinizdəki boş çuxura düşərsə, həmin toxumları ələ keçirirsiniz. Bir tərəf boşaldıqda digər tərəfin toxumları sahibinin anbarına keçir; daha böyük anbar qalib gəlir.",
+    "lib.arcade.note.snakes": "Zər atın və həmin sayda xana irəliləyin, 1-dən 100-ə qədər. Nərdivanın dibinə düşsəniz, qalxırsınız; ilanın başına düşsəniz, sürüşüb enirsiniz. 4-cü səviyyədən etibarən 100-ə düşmək üçün dəqiq rəqəmi atmalısınız. Yüksək səviyyələrdə daha çox ilan, daha az nərdivan və daha çox rəqib var. 100-ə ilk çatan qalib gəlir.",
+    "lib.arcade.square": "Xana {n}",
+    "lib.arcade.ladderUp": "Nərdivanla yuxarı!",
+    "lib.arcade.snakeDown": "İlan sizi uddu!",
+    "lib.arcade.needExact": "100-ə düşmək üçün dəqiq rəqəm lazımdır.",
+    "lib.arcade.note.nmm": "Hər tərəfin 9 daşı var. 1-ci mərhələ: növbə ilə daşları boş nöqtələrə qoyun. 2-ci mərhələ: daşı qonşu boş nöqtəyə sürüşdürün. Yalnız 3 daşınız qalanda istənilən boş nöqtəyə “uça” bilərsiniz. Rəqibin daşını götürmək üçün cərgədə üç daş düzün (“dəyirman”) (əvvəlcə dəyirmanda olmayan daşlar). 2 daşınız qalanda və ya hərəkət edə bilməyəndə uduzursunuz. Siz ağ daşlarla oynayırsınız və birinci gedirsiniz.",
+    "lib.arcade.inHand": "Qoyulacaq: {a} · {b}",
+    "lib.arcade.removePiece": "Götürmək üçün rəqibin daşını seçin.",
+    "lib.arcade.enemyWaters": "Düşmən suları (atəş üçün klik edin)",
+    "lib.arcade.yourFleet": "Sizin donanmanız",
+    "lib.arcade.note.battleship": "Hər tərəfin 10x10 şəbəkədə təsadüfi yerləşdirilmiş 5 gəmisi var (uzunluqları 5, 4, 3, 3, 2). Növbə ilə xanaya atəş açırsınız: vuruş qırmızı, boşa gedən atış açıq mavi olur, gəminin bütün xanalarına vurduqda o batır. Düşmənin bütün donanmasını ilk batıran qalib gəlir. Yüksək səviyyələrdə kompüter gəmilərinizin yerini daha ağıllı təxmin edir.",
+    "lib.arcade.shipsLeft": "Qalan gəmilər: siz {a} · düşmən {b}",
+    "lib.arcade.theySunk": "Düşmən gəmilərinizdən birini batırdı!",
+    "lib.arcade.theyHit": "Düşmən gəmilərinizdən birinə vurdu.",
+    "lib.arcade.theyMiss": "Düşmən boşa vurdu.",
+    "lib.arcade.youSunk": "Düşmən gəmisini batırdınız!",
+    "lib.arcade.youHit": "Vurdunuz!",
+    "lib.arcade.youMiss": "Boşa.",
+    "lib.arcade.shake": "Silkələ",
+    "lib.arcade.clearBets": "Mərcləri təmizlə",
+    "lib.arcade.note.bau-cua": "Yalnız virtual sikkələr — real pul yoxdur. Çip dəyərini seçin, mərc etmək üçün heyvanlara klik edin, sonra Silkələ basın. Mərc etdiyiniz heyvana uyğun gələn hər zər üçün mərcinizi və hər uyğunluq üçün bərabər məbləği geri alırsınız. Səviyyəni keçmək üçün icazə verilən raundlar ərzində hədəf sikkələrə çatın.",
+    "lib.arcade.note.baccarat": "Yalnız virtual sikkələr — real pul yoxdur. Oyunçuya, Bankirə və ya Bərabərliyə mərc edin, sonra Payla basın. Əlin dəyəri cəmin son rəqəmidir (A = 1, 2–9 nominal dəyər, 10/J/Q/K = 0); 9-a daha yaxın əl qalib gəlir, üçüncü kartlar standart qaydalarla çəkilir. Oyunçu 1:1, Bankir 0.95:1, Bərabərlik 8:1 ödəyir (bərabərlik halında Oyunçu/Bankir mərcləri geri qaytarılır). Səviyyəni keçmək üçün icazə verilən raundlar ərzində hədəf sikkələrə çatın.",
+    "lib.arcade.banker": "Bankir",
+    "lib.arcade.player": "Oyunçu",
+    "lib.arcade.tie": "Bərabərlik",
+    "lib.arcade.openCards": "Aç",
+    "lib.arcade.note.bai-cao": "Yalnız virtual sikkələr — real pul yoxdur. Hər tərəf 3 kart alır. Əl cəmin son rəqəmi ilə qiymətləndirilir (A = 1, 2–9 nominal dəyər, 10/J/Q/K = 10, yəni 0 xal). Sıralama: üç eyni kart (“Sáp”) ən yüksəkdir, sonra üç surət kartı (“Ba tiên”), sonra 9 xaldan 0-a qədər. Mərc edin, Payla, sonra Aç basaraq dilerlə müqayisə edin. 6-cı səviyyədən etibarən bərabərlikdə diler qalib gəlir. Səviyyəni keçmək üçün icazə verilən raundlar ərzində hədəf sikkələrə çatın.",
+    "lib.arcade.caoSap": "Üç eyni",
+    "lib.arcade.caoBaTien": "Üç surət kartı",
+    "lib.arcade.caoPts": "{n} xal",
+    "lib.arcade.note.bingo": "Kompüter 1-dən 75-ə qədər rəqəmlər elan edir. Elan edilən rəqəm kartınızdadırsa, onu qeyd etmək üçün klik edin (mərkəz pulsuzdur). Cərgə, sütun və ya diaqonal tamamlayın və BINGO! basın — kompüter rəqiblərini üstələməlisiniz. Yalan BINGO! düyməni bir neçə saniyəlik bloklayır. Yüksək səviyyələrdə daha sürətli elan edilir və daha çox rəqib olur.",
+    "lib.arcade.opponentsN": "Rəqiblər: {n}",
+    "lib.arcade.falseBingo": "Hələ tam xətt yoxdur! Düymə 3 saniyəlik bloklandı.",
+    "lib.arcade.bingoGo": "Rəqəmlər elan olunur!",
+    "lib.arcade.note.yahtzee": "Hər növbədə 5 zəri 3 dəfəyə qədər atırsınız: saxlamaq üçün zərə klik edin, sonra qalanlarını yenidən atmaq üçün At basın. Sonra xal yazmaq üçün cədvəldən xana seçin (hər xana bir dəfə istifadə olunur; uyğun gəlməyən xana 0 xal verir). 13 növbə. Birlər–Altılar xanalarının cəmi 63 və ya daha çox olarsa, 35 bonus əlavə olunur. Qalib gəlmək üçün səviyyənin hədəf xalına çatın.",
+    "lib.arcade.turnN": "Növbə {n}/13",
+    "lib.arcade.pickCat": "Xal yazmaq üçün xana seçin",
+    "lib.arcade.rollsLeft": "At ({n} qalıb)",
+    "lib.arcade.upperBonus": "Birlər–Altılar bonusu",
+    "lib.arcade.scored": "{n} xal yazıldı",
+    "lib.arcade.note.crazy-eights": "Atılmış kartlar yığınının üst kartına rəngi və ya dəyəri uyğun gələn kartı oynayın. Səkkizlər joker kartdır: istənilən vaxt oynayın və yeni rəng seçin. Oynaya biləcəyiniz kart yoxdursa, yığından çəkin (3 karta qədər); hələ də oynaya bilmirsinizsə, keçirsiniz. Əlini ilk boşaldan qalib gəlir. Yüksək səviyyələrdə daha çox rəqib var və kompüter daha ağıllı oynayır.",
+    "lib.arcade.opponent": "Rəqib",
+    "lib.arcade.pileLeft": "Çəkmə yığını: {n}",
+    "lib.arcade.pickSuit": "Yeni rəng seçin",
+    "lib.arcade.aiSuit": "Kompüter {s} seçdi",
+    "lib.arcade.aiPass": "Kompüter keçir.",
+    "lib.arcade.mustPlay": "Oynaya biləcəyiniz kart var — oynayın.",
+    "lib.arcade.youPass": "3 kart çəkdiniz və keçirsiniz.",
+    "lib.arcade.bcGourd": "Qabaq",
+    "lib.arcade.bcCrab": "Xərçəng",
+    "lib.arcade.bcShrimp": "Krevet",
+    "lib.arcade.bcFish": "Balıq",
+    "lib.arcade.bcRooster": "Xoruz",
+    "lib.arcade.bcDeer": "Maral",
+    "lib.arcade.yOnes": "Birlər",
+    "lib.arcade.yTwos": "İkilər",
+    "lib.arcade.yThrees": "Üçlər",
+    "lib.arcade.yFours": "Dördlər",
+    "lib.arcade.yFives": "Beşlər",
+    "lib.arcade.ySixes": "Altılar",
+    "lib.arcade.yThree": "Üç eyni",
+    "lib.arcade.yFour": "Dörd eyni",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Kiçik sıra (30)",
+    "lib.arcade.yLarge": "Böyük sıra (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Şans",
+    "lib.arcade.note.race": "Zolaq dəyişmək və qarşıdakı maşınlardan qaçmaq üçün ← → basın (və ya istədiyiniz zolağa toxunun). 3 canınız var; səviyyəni keçmək üçün bütün məsafəni sürün. Yüksək səviyyələrdə zolaqlar çox, nəqliyyat daha sürətlidir.",
+    "lib.arcade.note.jump": "Personaj özü tullanır. Növbəti platformaya enmək üçün ← → basın və ya barmağınızı sürüşdürün. Mavi platformalar hərəkət edir, qəhvəyilər üzərinə endikdə qırılır. Ekrandan düşmək uduzmaqdır; səviyyəni keçmək üçün kifayət qədər yuxarı qalxın.",
+    "lib.arcade.note.miner": "Qarmaq irəli-geri yellənir; onu atmaq üçün Boşluq, ↓ basın və ya sahəyə toxunun. Böyük qızıl və qayalar ağırdır və yavaş çəkilir; almazlar çox dəyərlidir. 60 saniyə bitməzdən əvvəl hədəf pula çatın.",
+    "lib.arcade.note.slicer": "Meyvəni kəsmək üçün barmağınızı və ya siçanı onun üzərindən sürüşdürün. Qara bombalardan qaçın. Meyvəni qaçırmaq və ya bombanı kəsmək bir can aparır (3 canınız var). Səviyyəni keçmək üçün kifayət qədər meyvə kəsin.",
+    "lib.arcade.note.hoops": "Meydançada basın, aşağı çəkin (sapand kimi) və topu səbətə atmaq üçün buraxın. Nə qədər çox çəksəniz, atış bir o qədər güclü olur. Sahib olduğunuz atışlar ərzində kifayət qədər səbət atın; 4-cü səviyyədən etibarən səbət hərəkət edir.",
+    "lib.arcade.note.bubbles": "Hədəfləmək üçün siçanı və ya barmağı hərəkət etdirin, sonra atmaq üçün klik/toxunun və ya Boşluq/Atəş basın. Partlatmaq üçün eyni rəngdən 3 və ya daha çox balonu birləşdirin; dayağını itirən balonlar düşür. Cərgələr yavaş-yavaş enir, ona görə onları aşağı xətdən uzaq tutun. Qalib gəlmək üçün bütün balonları təmizləyin.",
+    "lib.arcade.note.chase": "Dönmək və labirintdəki bütün nöqtələri yeməyə, sizi qovan xəyallardan qaçmaq üçün ox düymələrindən (və ya sürüşdürmə / düymələrdən) istifadə edin. 3 canınız var; yüksək səviyyələrdə daha sürətli və daha ağıllı qovan daha çox xəyal var.",
+    "lib.arcade.height": "Hündürlük: {n}/{t} m",
+    "lib.arcade.money": "Pul: {n}/{t}",
+    "lib.arcade.sliced": "Kəsilən: {n}/{t}",
+    "lib.arcade.hoopScore": "Atılan: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} atış qalıb",
+    "lib.arcade.bubbleLeft": "{n} balon qalıb",
+    "lib.arcade.shotsN": "Atışlar: {n}",
+    "lib.arcade.dotsLeft": "{n} nöqtə qalıb",
+    "lib.arcade.note.kakuro": "Ağ xanaları 1–9 rəqəmləri ilə elə doldurun ki, hər sıranın cəmi qara xanadakı ipucuna bərabər olsun (yuxarı sağdakı rəqəm sağa doğru sıra, aşağı soldakı rəqəm aşağıya doğru sıra üçündür) və sıra daxilində rəqəm təkrarlanmasın. Hərəkət üçün ox düymələrindən istifadə edin.",
+    "lib.arcade.note.kenken": "Şəbəkəni 1-dən N-ə qədər rəqəmlərlə elə doldurun ki, heç bir rəqəm cərgədə və ya sütunda təkrarlanmasın. Qalın xəttlə əhatələnmiş hər qrup hədəf və əməliyyat (+, −, ×, ÷) göstərir: qrupdakı rəqəmlər bu nəticəni verməlidir. Hərəkət üçün ox düymələrindən istifadə edin.",
+    "lib.arcade.note.wordGuess": "Gizli ingilis sözünü tapın. Hər cəhddən sonra yaşıl düzgün yerdə düzgün hərf, sarı hərfin sözdə olduğunu amma başqa yerdə olduğunu, boz isə hərfin sözdə olmadığını bildirir. Klaviaturada yazın və ya ekrandakı düymələrdən istifadə edin, göndərmək üçün Enter basın. Yüksək səviyyələrdə sözlər uzun, cəhdlər azdır.",
+    "lib.arcade.note.hangman": "Gizli ingilis sözünü hərfləri bir-bir seçməklə tapın. Hər səhv hərf asılan fiqura bir hissə əlavə edir; səhv cəhdləriniz bitəndə uduzursunuz. Yüksək səviyyələrdə sözlər daha uzun, icazə verilən səhvlər daha azdır.",
+    "lib.arcade.note.scramble": "Qarışdırılmış hərfləri real ingilis sözünə düzün və cavab sahəsinə yazın. Hər səviyyədə 5 söz var; səviyyəni keçmək üçün hər sözün vaxtı bitməzdən əvvəl ən azı 4-nü həll edin. İpucu ilk hərfi göstərir.",
+    "lib.arcade.cellsLeft": "{n} boş xana qalıb",
+    "lib.arcade.wrongN": "{n} xana düzgün deyil.",
+    "lib.arcade.noError": "İndiyədək səhv tapılmadı.",
+    "lib.arcade.tooShort": "Hərflər kifayət deyil",
+    "lib.arcade.answerIs": "Cavab: {w}",
+    "lib.arcade.livesLeft": "{n} səhv cəhd qalıb",
+    "lib.arcade.yourAnswer": "Cavabınız",
+    "lib.arcade.skip": "Keç",
+    "lib.arcade.notThis": "Düz deyil, yenidən cəhd edin.",
+    "lib.arcade.startsWith": "İlk hərf: {c}",
+    "lib.arcade.note.domino": "Hər oyunçu 7 daş alır; ən yüksək dublu olan başlayır. Rəqəmi zəncirin bir ucuna uyğun gələn daşı oynayın. Oynaya bilmirsinizsə, bacarana qədər anbardan çəkin; anbar boşdursa, keçirsiniz. Əlini ilk boşaldan qalib gəlir; hər ikisi bloklanıbsa, nöqtələrin cəmi az olan qalib gəlir.",
+    "lib.arcade.note.hearts": "Dörd oyunçu, hər birində 13 kart. Xaç 2-si başlayır. Mümkündürsə, başlanan rəngə uyğun oynamalısınız. Hər ürək 1 xaldır, Pika Xanımı isə 13; əli udan oyunçu onun xallarını götürür. Az olan yaxşıdır, kimsə bütün 26 xalı toplayarsa, digərləri 26 alır. Ürək oynanmayana qədər ürək ilə başlaya bilməzsiniz. Son əldən sonra xalınız ən az (və ya ən azla bərabər) olarsa, qalib gəlirsiniz.",
+    "lib.arcade.note.holdem": "Yalnız virtual çiplərlə kompüterə qarşı tək-tək. Hər oyunçu 2 gizli kart alır və 5 ümumi kart açılır (flop, turn, river); ən yaxşı 5 kartlıq əli düzəldin. Hər raundda fold, call (və ya check) və ya raise edə bilərsiniz. Blindlər hər 4 əldən bir artır. Kompüterin çipləri bitəndə və ya əl limitindən sonra daha çox çipiniz olanda qalib gəlirsiniz. Real pul iştirak etmir.",
+    "lib.arcade.dmDraw": "Daş çək",
+    "lib.arcade.dmPass": "Keç",
+    "lib.arcade.dmEmpty": "Hələ daş oynanmayıb",
+    "lib.arcade.dmYard": "Anbar: {n} daş",
+    "lib.arcade.dmLeft": "Sol ucu",
+    "lib.arcade.dmRight": "Sağ ucu",
+    "lib.arcade.dmTie": "Bərabərlik! Hər iki tərəf bərabərdir.",
+    "lib.arcade.hrHand": "Əl {n}/{t}",
+    "lib.arcade.hrTook": "{p} əli aldı ({n} xal).",
+    "lib.arcade.hrIllegal": "Bu kartı oynaya bilməzsiniz (rəngə uyğun oynayın və ya hələ ürək ilə başlamaq olmaz).",
+    "lib.arcade.blinds": "Böyük blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise",
+    "lib.arcade.raiseN": "{n}-ə raise",
+    "lib.arcade.thOppFold": "Kompüter fold etdi; bu əli siz udursunuz.",
+    "lib.arcade.thYouFold": "Siz fold etdiniz.",
+    "lib.arcade.thOppWin": "Kompüter bu əli udur",
+    "lib.arcade.thYouWin": "Bu əli siz udursunuz",
+    "lib.arcade.thSplit": "Bölünmüş pot",
+    "lib.arcade.thAiFold": "Kompüter fold edir.",
+    "lib.arcade.thAiRaise": "Kompüter {n}-ə raise edir.",
+    "lib.arcade.thAiCall": "Kompüter call / check edir.",
+    "lib.arcade.hand.high": "Yüksək kart",
+    "lib.arcade.hand.pair": "Cüt",
+    "lib.arcade.hand.twoPair": "İki cüt",
+    "lib.arcade.hand.trips": "Üç eyni",
+    "lib.arcade.hand.straight": "Sıra",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Dörd eyni",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "3x3 şəbəkədə kvadrat ardıcıl yanır. Yanan mövqe N addım əvvəlkinlə eynidirsə, “Uyğun!” (və ya Boşluq) basın (N yuxarıda göstərilir). Səviyyəni keçmək üçün ən azı 80% düzgün qərar lazımdır. Yüksək səviyyələrdə N daha böyükdür.",
+    "lib.arcade.nbMatch": "Uyğun!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Düzgün: {a} · Səhv: {b}",
+    "lib.arcade.nbAcc": "Dəqiqlik: {n}%",
+    "lib.arcade.note.clicker": "Peçenye bişirmək üçün peçenyeyə klik edin, sonra onları avtomatik bişirən köməkçilərə xərcləyin (hər aldığınızda qiymətlər artır). Səviyyəni keçmək üçün 2 dəqiqə ərzində hədəf sayda peçenye bişirin.",
+    "lib.arcade.ckCursor": "Kursor",
+    "lib.arcade.ckGrandma": "Bişirən nənə",
+    "lib.arcade.ckFarm": "Ferma",
+    "lib.arcade.ckMine": "Şəkər mədəni",
+    "lib.arcade.ckFactory": "Fabrik",
+    "lib.arcade.ckCookie": "Peçenye",
+    "lib.arcade.ckEarned": "Bişirilən: {n}/{t}",
+    "lib.arcade.chips2": "Peçenyelər: {n}",
+    "lib.arcade.ckCps": "saniyədə {n} peçenye",
+    "lib.arcade.note.onet": "Digər daşları keçməyən və ən çox 2 dönüşü olan yolla birləşdirilə bilən iki eyni daşı seçin və onları götürün. Qalib gəlmək üçün vaxt bitməzdən əvvəl bütün daşları təmizləyin. Gedəcək hərəkət qalmayanda daşları qarışdıra bilərsiniz (məhdud sayda).",
+    "lib.arcade.shuffle": "Qarışdır",
+    "lib.arcade.tilesLeft": "{n} daş qalıb",
+    "lib.arcade.autoShuffle": "Hərəkət qalmadı — avtomatik qarışdırıldı.",
+    "lib.arcade.note.jigsaw": "Şəkil hissələrə kəsilib və qarışdırılıb. Bir hissəyə, sonra digərinə toxunaraq onları dəyişin və istinad kimi göstərilən şəkli yenidən yığın. Düzgün yerdəki hissələr yaşıl haşiyə alır. Yüksək səviyyələrdə hissələr daha çoxdur.",
+    "lib.arcade.jgRef": "İstinad şəkli",
+    "lib.arcade.jgPlaced": "Yerində: {a}/{b}",
+    "lib.arcade.golfStrokes": "Zərbələr: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Siz ağ daşlarla oynayırsınız, onlar yuxarı sağdan dövrə vurub aşağı sağa (evinizə) hərəkət edir. Zərləri atın, hərəkət etdirmək istədiyiniz daşa klik edin, sonra vurğulanmış təyinat nöqtəsinə klik edin. Rəqibin yalnız bir daşı olan nöqtəyə düşsəniz, onu ortadakı zolağa (bar) vurursunuz və o oyunçu əvvəlcə onu geri qaytarmalıdır. Rəqibin iki və ya daha çox daşı olan nöqtəyə düşə bilməzsiniz. 15 daşınızın hamısı ev bölməsində (son 6 nöqtə) olanda onları götürə bilərsiniz. Bütün 15 daşı ilk götürən qalib gəlir.",
+    "lib.arcade.bgRoll": "Zərləri at",
+    "lib.arcade.bgOff": "Götür",
+    "lib.arcade.bgRollFirst": "Zərləri at",
+    "lib.arcade.bgInfo": "Götürülən: siz {a} · kompüter {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Qanuni hərəkətiniz qalmayıb.",
+    "lib.arcade.note.tienlen": "Dörd oyunçu, hər birində 13 kart. Kart sırası aşağıdan yuxarıya: 3, 4, … K, A, 2; rənglər aşağıdan yuxarıya: pika, xaç, qara, ürək. Pika 3-ü olan başlayır. Tək kart, cüt, üç eyni, dörd eyni və ya 3 və daha çox ardıcıl kartlardan ibarət sıra oynayın (2-lər olmadan). Növbəti oyunçu eyni növü və daha yüksəyini oynamalı və ya keçməlidir; dörd eyni tək 2-ni və ya 2-lərdən ibarət cütü üstələyə bilər. Hamı keçəndə sonuncu oynayan istənilən şeylə başlaya bilər. Əlini ilk boşaldan qalib gəlir. Kartları seçin, sonra Oyna basın.",
+    "lib.arcade.tlPlay": "Oyna",
+    "lib.arcade.tlPass": "Keç",
+    "lib.arcade.tlClear": "Seçimi təmizlə",
+    "lib.arcade.tlPassed": "keçdi",
+    "lib.arcade.tlFree": "Masa boşdur — istənilən şeylə başlaya bilərsiniz",
+    "lib.arcade.tlLeft": "Qalan kartlar: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} keçir.",
+    "lib.arcade.tlBad": "Seçilmiş kartlar etibarlı kombinasiya yaratmır.",
+    "lib.arcade.tlLow": "Bu kombinasiya masanı üstələmək üçün kifayət qədər yüksək deyil."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Ultimate tik-tak-to",
       "desc": "9 kiçik lövhədə tik-tak-to: seçdiyiniz xana rəqibin harada oynamalı olduğunu müəyyən edir; kompüterə qarşı 10 səviyyə."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Topu kompüterin yanından keçirin; ilk 5 xalı toplayan qalib gəlir. Daha sürətli və daha kəskin rəqiblə 10 səviyyə."
+    },
+    "space-shooter": {
+      "name": "Kosmik atıcı",
+      "desc": "Gəminizi idarə edin, düşmən gəmilərini vurun və onların atəşindən qaçın; daha böyük dalğalar, cavab atəşi və daha güclü düşmənlərlə 10 səviyyə."
+    },
+    "asteroids": {
+      "name": "Asteroidlər",
+      "desc": "Kosmik qayaları parçalamaq üçün fırlanın, itələyin və atəş açın; böyük qayalar kiçiklərə bölünür. Daha çox və daha sürətli qayalarla 10 səviyyə."
+    },
+    "maze": {
+      "name": "Labirint",
+      "desc": "Vaxt bitməzdən əvvəl labirintdən çıxış yolunu tapın; kiçikdən böyük labirintlərə qədər 10 səviyyə, yüksək səviyyələrdə duman."
+    },
+    "road-cross": {
+      "name": "Yolu keçmək (Frogger üslubunda)",
+      "desc": "Qurbağanı işlək yollardan və üzən kötüklü çaylardan keçirib evə 3 dəfə çatdırın; daha sürətli nəqliyyat və yüksək səviyyələrdə çay ilə 10 səviyyə."
+    },
+    "flappy": {
+      "name": "Flappy Bird üslubunda oyun",
+      "desc": "Qanad çalmaq üçün toxunun və boruların arasındakı boşluqlardan uçun; daha dar boşluqlar və artan sürətlə 10 səviyyə."
+    },
+    "runner": {
+      "name": "Dino qaçışı",
+      "desc": "Kaktusların üstündən tullanın və quşların altından keçin; sürət durmadan artarkən 10 səviyyənin hər birini keçmək üçün kifayət qədər uzağa qaçın."
+    },
+    "whack-a-mole": {
+      "name": "Köstəbəyi vur",
+      "desc": "Vaxt bitməzdən əvvəl deşiklərdən çıxan köstəbəkləri vurun və bombalardan qaçın; yavaşdan çox sürətliyə qədər 10 səviyyə."
+    },
+    "simon": {
+      "name": "Simon (rəng yaddaşı)",
+      "desc": "Rənglər və səslərdən ibarət ardıcıllığı yadda saxlayıb təkrarlayın; 10 səviyyədə daha uzun ardıcıllıqlar, 7-ci səviyyədən 6 düymə."
+    },
+    "aim-trainer": {
+      "name": "Hədəf məşqi",
+      "desc": "Təsadüfi görünən və tez yox olan hədəfləri vurun; hədəflər 10 səviyyə boyunca kiçilir, reaksiya vaxtınız ölçülür."
+    },
+    "quick-math": {
+      "name": "Sürətli riyaziyyat",
+      "desc": "Vaxt təzyiqi altında ağlınızda toplama, çıxma, vurma və bölmə edin; sadə cəmlərdən ifadələrə qədər 10 səviyyə."
+    },
+    "reaction": {
+      "name": "Reaksiya vaxtı testi",
+      "desc": "Ekran yaşıl olan anda klik edin; 5 raund üzrə ortalamanız hər səviyyənin limitinə çatmalıdır, limit 10 səviyyə boyunca sərtləşir."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Toxumları çuxurlara paylayın, rəqibin toxumlarını ələ keçirin və anbarınıza düşəndə yenidən gedin; asandan çətinə 10 səviyyədə kompüterə qarşı oynayın."
+    },
+    "snakes-ladders": {
+      "name": "İlanlar və nərdivanlar",
+      "desc": "1-ci xanadan 100-ə qədər zər atın, nərdivanla qalxın, ilanlardan qaçın və rəqiblərinizdən əvvəl finişə çatın; 10 səviyyə."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris (Dəyirman)",
+      "desc": "Cərgədə üç daş düzmək və rəqibin daşlarını götürmək üçün daşlarınızı qoyun, sürüşdürün və “uçurun”; 10 səviyyədə kompüterə qarşı oynayın."
+    },
+    "battleship": {
+      "name": "Dəniz döyüşü",
+      "desc": "Kompüter sizin donanmanızı batırmazdan əvvəl 10x10 şəbəkədə onun donanmasını tapıb batırın; kompüter daha ağıllı təxmin etdikcə 10 səviyyə."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Qabaq, Xərçəng, Balıq, Krevet)",
+      "desc": "Ənənəvi Vyetnam zər oyunu: virtual sikkələrlə heyvanlara mərc edin və üç zər silkələyin; 10 səviyyədə hədəf sikkələrə çatın (real pul yoxdur)."
+    },
+    "baccarat": {
+      "name": "Bakkara",
+      "desc": "Standart qaydalarla payılan kartlarla virtual sikkələrlə Oyunçuya, Bankirə və ya Bərabərliyə mərc edin; 10 səviyyədə hədəf sikkələrə çatın (real pul yoxdur)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (üç kartlı oyun)",
+      "desc": "3 kartlıq əlləri dilerlə müqayisə edin: üç eyni, üç surət kartı, sonra 9 xaldan 0-a qədər; virtual sikkələr, 10 səviyyə, real pul yoxdur."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "5x5 kartınızda elan olunan rəqəmləri qeyd edin və kompüter rəqiblərindən əvvəl BINGO deyin; rəqəmlər 10 səviyyə boyunca daha sürətli elan olunur."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (beş zər)",
+      "desc": "Beş zər atın, yaxşıları saxlayın və 13 xal xanasını doldurun; 10 səviyyədə hədəf xala çatın."
+    },
+    "crazy-eights": {
+      "name": "Çılğın səkkizlər",
+      "desc": "Rəngi və ya dəyəri uyğunlaşdırın, səkkizlər rəngi dəyişir; 10 səviyyədə 1-dən 3-ə qədər kompüter rəqibindən əvvəl əlinizi boşaldın."
+    },
+    "car-race": {
+      "name": "Maşın yarışında qaçınma",
+      "desc": "Qarşıdakı maşınlardan qaçmaq üçün zolaq dəyişin və bütün məsafəni sürün; daha çox zolaq və daha sürətli nəqliyyatla 10 səviyyə."
+    },
+    "sky-jump": {
+      "name": "Göyə tullanış",
+      "desc": "Düşmədən bacardığınız qədər yuxarı qalxmaq üçün platformadan platformaya tullanın; daha seyrək, hərəkət edən və qırılan platformalarla 10 səviyyə."
+    },
+    "gold-miner": {
+      "name": "Qızıl mədənçisi",
+      "desc": "Qızıl və almazları çəkmək üçün qarmağı atın, ağır qayalardan qaçın və 60 saniyə ərzində hədəf pula çatın; 10 səviyyə."
+    },
+    "fruit-slice": {
+      "name": "Meyvə kəs",
+      "desc": "Yuxarı uçan meyvələri kəsmək üçün sürüşdürün və bombalardan qaçın; daha çox meyvə və daha çox bombalarla 10 səviyyə."
+    },
+    "basketball": {
+      "name": "Basketbol atışı",
+      "desc": "Məhdud sayda atış ərzində topu səbətə atmaq üçün çəkin və buraxın; 10 səviyyə, 4-cü səviyyədən hərəkət edən səbət."
+    },
+    "bubble-shooter": {
+      "name": "Balon atıcı",
+      "desc": "Eyni rəngdən 3 və ya daha çoxunu birləşdirib partlatmaq üçün balonlar atın və onlar aşağıya çatmazdan əvvəl hamısını təmizləyin; daha çox rənglə 10 səviyyə."
+    },
+    "dot-chase": {
+      "name": "Nöqtə təqibi",
+      "desc": "Sizi qovan xəyallardan qaçaraq labirintdəki bütün nöqtələri yeyin; daha çox və daha ağıllı xəyallarla 10 səviyyə."
+    },
+    "kakuro": {
+      "name": "Kakuro (kəsişən cəmlər)",
+      "desc": "Ağ xanaları 1–9 rəqəmləri ilə elə doldurun ki, hər sıranın cəmi təkrarsız olaraq ipucuna bərabər olsun; 10 səviyyə, 5x5-dən 9x9-a qədər şəbəkələr."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Şəbəkəni cərgə və sütunlarda təkrar olmadan elə doldurun ki, hər qrup öz əməliyyatı ilə hədəfini versin; 10 səviyyə, 3x3-dən 6x6-ya qədər şəbəkələr."
+    },
+    "word-guess": {
+      "name": "Söz tap (Wordle üslubunda)",
+      "desc": "Gizli ingilis sözünü yaşıl, sarı və boz ipuclarla tapın; 4–6 hərfli sözlər və daha az cəhdlə 10 səviyyə."
+    },
+    "hangman": {
+      "name": "Dar ağacı (Hangman)",
+      "desc": "Səhv cəhdləriniz bitməzdən əvvəl ingilis sözünü hərf-hərf tapın; daha uzun sözlər və daha az səhvlə 10 səviyyə."
+    },
+    "word-scramble": {
+      "name": "Qarışıq sözlər (anaqram)",
+      "desc": "Vaxt bitməzdən əvvəl qarışdırılmış hərfləri ingilis sözünə düzün; 10 səviyyə, hər səviyyədə 5 söz."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Daşları zəncirin hər iki ucuna uyğunlaşdırın və kompüterdən əvvəl əlinizi boşaldın; kompüter ağıllandıqca 10 səviyyə."
+    },
+    "hearts": {
+      "name": "Hearts (Ürəklər)",
+      "desc": "Dörd nəfərlik kart oyununda ürəklərdən və Pika Xanımından qaçın; aşağı xal daha yaxşıdır; daha ağıllı kompüter oyunçularına qarşı 10 səviyyə."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtual çiplər)",
+      "desc": "Virtual çiplərlə kompüterə qarşı tək-tək poker: fold, call və ya raise edin, kompüterin çipləri bitəndə qalib gəlin; 10 səviyyə, real pul yoxdur."
+    },
+    "n-back": {
+      "name": "N-Back yaddaşı",
+      "desc": "Yanan kvadrata baxın və N addım əvvəlkinlə eyni olduqda Uyğun basın; N 4-ə qədər olan 10 səviyyə."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Peçenye bişirmək üçün klik edin, avtomatik bişirən köməkçilər alın və 2 dəqiqə ərzində hədəfə çatın; 10 səviyyə."
+    },
+    "tile-connect": {
+      "name": "Daşları birləşdir (Onet üslubunda)",
+      "desc": "Eyni daşları ən çox iki dönüşlü yolla birləşdirin və vaxt bitməzdən əvvəl taxtanı təmizləyin; 10 səviyyə, daha böyük taxtalar."
+    },
+    "jigsaw": {
+      "name": "Şəkil pazl",
+      "desc": "Şəkli yenidən yığmaq üçün qarışdırılmış hissələri dəyişin; 3x3-dən 6x6 hissəyə qədər 10 səviyyə."
+    },
+    "mini-golf": {
+      "name": "Mini qolf",
+      "desc": "Zərbə limiti daxilində topu çuxura salmaq üçün geri çəkin və buraxın; divarlı və qumlu 10 meydança."
+    },
+    "backgammon": {
+      "name": "Nərd (Backgammon)",
+      "desc": "Zərləri atın, daşlarınızı evə çatdırın və kompüterdən əvvəl götürün, yolda onun tək qalmış daşlarını vurun; 10 səviyyə."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (On üç)",
+      "desc": "Dörd nəfərlik Vyetnam kart oyunu, kartlardan qurtulmaq üçün: əlinizi ilk boşaltmaq üçün tək kartlar, cütlər, sıralar və dördlüklər oynayın; 10 səviyyə."
     }
   },
   "s": {

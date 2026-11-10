@@ -154,6 +154,7 @@ export const TOOLS: ToolInfo[] = [
   tool('chinese-checkers', 'entertainment', 'Cờ nhảy (Chinese Checkers)', 'Cờ nhảy sao 6 cánh đánh với máy: bước hoặc nhảy liên tiếp để đưa 10 quân sang góc đối diện trước; 10 cấp.'),
   tool('mau-binh', 'entertainment', 'Mậu binh (xếp 3 chi)', 'Mậu binh đấu với máy: xếp 13 lá thành 3 chi 5-5-3 mạnh dần, tránh binh lủng; 5 ván mỗi cấp, 10 cấp.'),
   tool('phom', 'entertainment', 'Phỏm (Tá lả)', 'Phỏm 2 người đấu với máy: bốc, ăn bài, hạ phỏm và đánh bài; ai ít điểm bài rác hơn thì thắng, có ù; 10 cấp.'),
+  tool('shogi', 'entertainment', 'Shogi (cờ tướng Nhật)', 'Shogi online đánh với máy: thả quân bắt được, thăng cấp, chiếu bí Vua; 10 cấp, có đi lại.'),
   tool('gomoku', 'entertainment', 'Cờ caro', 'Chơi cờ caro 5 quân liên tiếp với máy trên bàn 15x15, 10 cấp từ dễ đến khó, có đi lại.'),
   tool('reversi', 'entertainment', 'Cờ lật (Reversi)', 'Kẹp quân đối thủ để lật thành màu của mình; chơi Reversi 8x8 với máy qua 10 cấp.'),
   tool('connect-four', 'entertainment', 'Nối 4', 'Thả quân vào cột, nối 4 quân liên tiếp ngang, dọc hoặc chéo trước máy; 10 cấp từ dễ đến khó.'),

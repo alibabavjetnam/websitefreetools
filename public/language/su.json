@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Pilih hiji warna pikeun ngeusian sakabéh wewengkon nu anjeun kawasa di juru kénca luhur; éta nelen kotak tatangga nu warnana sarua. Jadikeun sakabéh papan hiji warna dina jumlah lengkah nu diidinan.",
     "lib.arcade.note.mastermind": "Komputer nyumputkeun sabaris warna. Pilih warna pikeun unggal posisi, terus pencét Tebak. Paku hideung = warna bener di tempat nu bener; paku bodas = warna bener di tempat nu salah. Pecahkeun kodeu saméméh tebakan béak.",
     "lib.arcade.note.hanoi": "Pindahkeun sakabéh piringan ka tihang pamungkas. Pindahkeun ngan piringan pangluhurna tina hiji tihang sakali, sarta ulah nempatkeun piringan gedé di luhur nu leutik. Klik tihang asal, terus tihang tujuan.",
-    "lib.arcade.note.pipes": "Klik hiji ubin pikeun muter pipa 90°. Sambungkeun sakabéh pipa jadi hiji jaringan tanpa tungtung nu muka (tungtung nu muka katémbong beureum)."
+    "lib.arcade.note.pipes": "Klik hiji ubin pikeun muter pipa 90°. Sambungkeun sakabéh pipa jadi hiji jaringan tanpa tungtung nu muka (tungtung nu muka katémbong beureum).",
+    "lib.arcade.pongScore": "Anjeun {a} – {b} Komputer (nu mimiti nepi ka {t} meunang)",
+    "lib.arcade.kills": "Ancur: {n}/{t}",
+    "lib.arcade.rocksLeft": "Tinggal {n} batu",
+    "lib.arcade.timeLeft": "Tinggal {n} detik",
+    "lib.arcade.stepsN": "Léngkah: {n}",
+    "lib.arcade.crossed": "Di imah: {n}/{t}",
+    "lib.arcade.pipes": "Pipa nu kalangkung: {n}/{t}",
+    "lib.arcade.distance": "Jarak: {n}/{t} m",
+    "lib.arcade.speedN": "Laju: {n}",
+    "lib.arcade.note.whack-a-mole": "Beurit taneuh kaluar tina liang — klik atawa toél beurit pikeun neunggeul. Tigeuning beurit nu cukup saméméh waktuna béak. Ti level 4 aya bom: lamun kapuk, skor anjeun kurang.",
+    "lib.arcade.hole": "Liang",
+    "lib.arcade.hitsN": "Pukulan: {n}/{t}",
+    "lib.arcade.note.simon": "Kaulinan ngamaénkeun runtuyan warna jeung sora — baleanan dina urutan anu sarua. Unggal babak nambahan hiji léngkah. Inget panjang runtuyan anu diperlukeun pikeun meunangkeun level. Ti level 7 aya 6 tombol.",
+    "lib.arcade.seqN": "Runtuyan: {n}/{t}",
+    "lib.arcade.watch": "Titénan…",
+    "lib.arcade.yourTurnShort": "Giliran anjeun",
+    "lib.arcade.note.aim-trainer": "Sasaran muncul acak tur gancang ngiles — pencét saloba-lobana. Sasaran beuki leutik jeung beuki gancang. Pencét sasaran cukup saméméh leuwih ti 5 kali luput pikeun meunangkeun level.",
+    "lib.arcade.missN": "Luput: {n}/{t}",
+    "lib.arcade.answer": "Jawaban",
+    "lib.arcade.note.quick-math": "Itung dina jero haté sagancang-gancangna: ketik jawaban terus pencét Enter. Unggal patarosan aya watesan waktu; jawaban salah atawa waktu béak ngurangan hiji nyawa (anjeun boga 3). Jawab patarosan cukup bener pikeun meunangkeun level.",
+    "lib.arcade.correctN": "Bener: {n}/{t}",
+    "lib.arcade.note.reaction": "Antosan nepi ka layar jadi héjo, tuluy klik sagancang-gancangna. Klik kasép téh pelanggaran (3 pelanggaran, anjeun éléh). Rata-rata anjeun dina 5 babak kudu leuwih alus ti wates level.",
+    "lib.arcade.roundN": "Babak {n}/{t}",
+    "lib.arcade.limitMs": "Wates: {n} ms",
+    "lib.arcade.rxWait": "Antosan héjo…",
+    "lib.arcade.rxGo": "KLIK!",
+    "lib.arcade.rxEarly": "Kapagahan!",
+    "lib.arcade.gameArea": "Area maén",
+    "lib.arcade.note.pong": "Gerakkeun beurit, sered ramo anjeun, atawa paké tombol ← → pikeun ngontrol papan handap. Pukul bola ngaliwatan komputer; nu pangheulana meunang 5 poin, meunang. Bola beuki gancang unggal dipukul.",
+    "lib.arcade.note.space-shooter": "Gerakkeun beurit, sered ramo anjeun, atawa paké tombol ← → pikeun nyetir; kapal anjeun nembak otomatis. Ancurkeun kapal musuh cukup pikeun meunangkeun level, tur ulah tabrakan atawa kahalangan tembakan. Anjeun boga 3 nyawa.",
+    "lib.arcade.note.asteroids": "← → muterkeun kapal, ↑ ngadorong, Spasi nembak. Ancurkeun sakabéh batu pikeun meunangkeun level; batu gedé pecah jadi leutik. Kapal muncul ti sisi séjén lamun ngaliwatan tepi layar. Anjeun boga 3 nyawa.",
+    "lib.arcade.note.maze": "Paké tombol panah (atawa gesek, atawa tombol) pikeun ti titik héjo ka bandéra beureum saméméh waktuna béak. Ti level 5 labirinna kabut: anjeun ngan ningali sakurilingna, tempat nu geus dilalui diinget.",
+    "lib.arcade.note.road-cross": "Paké tombol panah, gesek atawa tombol pikeun ngaluncatkeun bangkong ti handap ka luhur. Ulah katabrak lalulintas; ti level 5 bagian luhur téh walungan, ku kituna luncat kana batang kai ngambang. Balik ka imah 3 kali pikeun meunangkeun level. Anjeun boga 3 nyawa.",
+    "lib.arcade.note.flappy": "Toél area maén, pencét Spasi atawa ↑ pikeun ngepakkeun jangjang. Hiber ngaliwatan celah antara pipa tanpa noél pipa, taneuh atawa siling. Level luhur boga celah leuwih heureut jeung hiber leuwih gancang.",
+    "lib.arcade.note.runner": "Toél area maén, pencét Spasi atawa ↑ pikeun ngaluncatan kaktus; tahan ↓ pikeun ngajongkok handapeun manuk luhur (atawa luncat ngaliwatan nu handap). Lumpat cukup jauh pikeun meunangkeun level. Laju terus naék.",
+    "lib.arcade.fire": "Tembak",
+    "lib.arcade.jump": "Luncat",
+    "lib.arcade.aimTarget": "Sasaran",
+    "lib.game.soundOn": "Hurungkeun sora",
+    "lib.game.soundOff": "Pareuman sora",
+    "lib.arcade.note.kalah": "Anjeun maén di baris handap, komputer di luhur; liang gedé di katuhu téh lumbung anjeun. Klik hiji liang pikeun nyokot sakabéh bijina tuluy sebarkeun lawan arah jarum jam, hiji-hiji unggal liang (lompatan lumbung lawan). Lamun biji pamungkas murag di lumbung anjeun, anjeun maén deui; lamun murag di liang kosong di sisi anjeun nu aya di hareupeun liang beunang biji, anjeun nyokot éta biji. Lamun hiji sisi kosong, biji sésa ka lumbung nu boga; lumbung nu leuwih gedé meunang.",
+    "lib.arcade.note.snakes": "Lémpar dadu tuluy maju sakitu kotakna, ti 1 nepi ka 100. Mendarat di handap tangga, anjeun naék; mendarat di sirah oray, anjeun ngaluncur ka handap. Ti level 4 kudu lémparan pas pikeun mendarat di 100. Level luhur boga leuwih loba oray, leuwih saeutik tangga jeung leuwih loba lawan. Nu mimiti nepi ka 100 meunang.",
+    "lib.arcade.square": "Kotak {n}",
+    "lib.arcade.ladderUp": "Naék tangga!",
+    "lib.arcade.snakeDown": "Dihakan oray!",
+    "lib.arcade.needExact": "Kudu angka nu pas pikeun mendarat di 100.",
+    "lib.arcade.note.nmm": "Tiap sisi boga 9 képing. Fase 1: gantian nempatkeun képing dina titik kosong. Fase 2: gésér képing ka titik kosong anu padeukeut. Lamun ngan sésa 3 képing, anjeun bisa “hiber” ka titik kosong mana waé. Jieun tilu sajajar (“kincir”) pikeun nyokot képing lawan (képing nu teu aya dina kincir didahuluan). Anjeun éléh lamun sésa 2 képing atawa teu bisa gerak. Anjeun maén bodas jeung mimiti heula.",
+    "lib.arcade.inHand": "Kudu ditempatkeun: {a} · {b}",
+    "lib.arcade.removePiece": "Pilih képing lawan pikeun dicokot.",
+    "lib.arcade.enemyWaters": "Cai musuh (klik pikeun nembak)",
+    "lib.arcade.yourFleet": "Armada anjeun",
+    "lib.arcade.note.battleship": "Tiap sisi boga 5 kapal (panjang 5, 4, 3, 3, 2) nu disimpen acak dina grid 10x10. Gantian nembak hiji kotak: kana jadi beureum, luput jadi biru ngora, sarta kapal tilelep lamun sakabéh kotakna kana. Tilelepkeun sakabéh armada musuh heula pikeun meunang. Dina level luhur komputer leuwih pinter nebak posisi kapal anjeun.",
+    "lib.arcade.shipsLeft": "Kapal sésa: anjeun {a} · musuh {b}",
+    "lib.arcade.theySunk": "Musuh geus nilelepkeun salah sahiji kapal anjeun!",
+    "lib.arcade.theyHit": "Musuh keuna ka salah sahiji kapal anjeun.",
+    "lib.arcade.theyMiss": "Musuh luput.",
+    "lib.arcade.youSunk": "Anjeun nilelepkeun kapal musuh!",
+    "lib.arcade.youHit": "Kena!",
+    "lib.arcade.youMiss": "Luput.",
+    "lib.arcade.shake": "Kocok",
+    "lib.arcade.clearBets": "Hapus taruhan",
+    "lib.arcade.note.bau-cua": "Koin maya wungkul — teu aya duit nyata. Pilih nilai chip, klik sato pikeun masang taruhan, tuluy pencét Kocok. Pikeun unggal dadu nu cocog jeung sato nu ditaruhkeun, anjeun meunangkeun taruhan balik tambah jumlah nu sarua. Capai target koin dina babak nu diidinan pikeun meunangkeun level.",
+    "lib.arcade.note.baccarat": "Koin maya wungkul — teu aya duit nyata. Pasang taruhan kana Pamaén, Bandar atawa Seri, tuluy pencét Bagikeun. Nilai leungeun nyaéta angka tungtung tina total (A = 1, 2–9 nilai kartu, 10/J/Q/K = 0); leungeun nu langkung deukeut ka 9 meunang, sarta kartu katilu ditarik dumasar aturan baku. Pamaén mayar 1:1, Bandar 0,95:1, Seri 8:1 (taruhan Pamaén/Bandar dibalikkeun lamun seri). Capai target koin dina babak nu diidinan pikeun meunangkeun level.",
+    "lib.arcade.banker": "Bandar",
+    "lib.arcade.player": "Pamaén",
+    "lib.arcade.tie": "Seri",
+    "lib.arcade.openCards": "Buka",
+    "lib.arcade.note.bai-cao": "Koin maya wungkul — teu aya duit nyata. Tiap sisi nampa 3 kartu. Skor leungeun nyaéta angka tungtung tina total (A = 1, 2–9 nilai kartu, 10/J/Q/K = 10, nyaéta 0 poin). Peringkat: Tilu sarua (“Sáp”) pangluhurna, tuluy tilu kartu gambar (“Ba tiên”), tuluy 9 poin nepi ka 0. Pasang taruhan, pencét Bagikeun tuluy Buka pikeun ngabandingkeun jeung bandar. Ti level 6 bandar meunang lamun seri. Capai target koin dina babak nu diidinan pikeun meunangkeun level.",
+    "lib.arcade.caoSap": "Tilu sarua",
+    "lib.arcade.caoBaTien": "Tilu kartu gambar",
+    "lib.arcade.caoPts": "{n} poin",
+    "lib.arcade.note.bingo": "Komputer nyebutkeun angka ti 1 nepi ka 75. Lamun angka nu disebut aya dina kartu anjeun, klik pikeun nandaan (tengah gratis). Lengkepan baris, kolom atawa diagonal tuluy pencét BINGO! — anjeun kudu ngéléhkeun lawan komputer. BINGO! nu salah ngonci tombol sababaraha detik. Level luhur nyebutkeun angka leuwih gancang jeung boga leuwih loba lawan.",
+    "lib.arcade.opponentsN": "Lawan: {n}",
+    "lib.arcade.falseBingo": "Can aya baris pinuh! Tombol dikonci 3 detik.",
+    "lib.arcade.bingoGo": "Angka keur disebutkeun!",
+    "lib.arcade.note.yahtzee": "Unggal giliran anjeun ngalempar 5 dadu nepi ka 3 kali: klik dadu pikeun nyimpen, tuluy pencét Lémpar pikeun ngalempar deui nu séjén. Tuluy pilih kotak dina tabel pikeun nyetak skor (unggal kotak dipaké sakali; kotak nu teu cocog meunang 0). 13 giliran. Kotak Hiji–Genep nambahan bonus 35 lamun total 63 atawa leuwih. Capai skor target level pikeun meunang.",
+    "lib.arcade.turnN": "Giliran {n}/13",
+    "lib.arcade.pickCat": "Pilih kotak pikeun nyetak skor",
+    "lib.arcade.rollsLeft": "Lémpar ({n} deui)",
+    "lib.arcade.upperBonus": "Bonus Hiji–Genep",
+    "lib.arcade.scored": "Skor {n}",
+    "lib.arcade.note.crazy-eights": "Maénkeun kartu nu cocog jeung kartu luhur tumpukan buangan dumasar jenis atawa nilai. Kartu 8 téh liar: maénkeun iraha waé tuluy pilih jenis anyar. Lamun euweuh kartu nu bisa dimaénkeun, tarik tina tumpukan (nepi ka 3 kartu); lamun tetep teu bisa maén, anjeun lolos. Nu pangheulana ngabolaykeun leungeun meunang. Level luhur boga leuwih loba lawan sarta komputer maén leuwih pinter.",
+    "lib.arcade.opponent": "Lawan",
+    "lib.arcade.pileLeft": "Tumpukan tarik: {n}",
+    "lib.arcade.pickSuit": "Pilih jenis anyar",
+    "lib.arcade.aiSuit": "Komputer milih {s}",
+    "lib.arcade.aiPass": "Komputer lolos.",
+    "lib.arcade.mustPlay": "Anjeun boga kartu nu bisa dimaénkeun — maénkeun.",
+    "lib.arcade.youPass": "Anjeun narik 3 kartu tuluy lolos.",
+    "lib.arcade.bcGourd": "Labu",
+    "lib.arcade.bcCrab": "Keuyeup",
+    "lib.arcade.bcShrimp": "Udang",
+    "lib.arcade.bcFish": "Lauk",
+    "lib.arcade.bcRooster": "Hayam jago",
+    "lib.arcade.bcDeer": "Uncal",
+    "lib.arcade.yOnes": "Hiji",
+    "lib.arcade.yTwos": "Dua",
+    "lib.arcade.yThrees": "Tilu",
+    "lib.arcade.yFours": "Opat",
+    "lib.arcade.yFives": "Lima",
+    "lib.arcade.ySixes": "Genep",
+    "lib.arcade.yThree": "Tilu sarua",
+    "lib.arcade.yFour": "Opat sarua",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Urut leutik (30)",
+    "lib.arcade.yLarge": "Urut gedé (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Kasempetan",
+    "lib.arcade.note.race": "Pencét ← → (atawa toél jalur nu dipikahayang) pikeun ngarobah jalur tur nyingkahan mobil di hareup. Anjeun boga 3 nyawa; tempuh jarak pinuh pikeun meunangkeun level. Level luhur nambahan jalur jeung lalulintas leuwih gancang.",
+    "lib.arcade.note.jump": "Karakter mumbul sorangan. Pencét ← → atawa sered ramo pikeun mendarat dina platform salajengna. Platform biru obah, nu coklat patah lamun diinjak. Murag ti layar téh éléh; naék cukup luhur pikeun meunangkeun level.",
+    "lib.arcade.note.miner": "Pangait ngayun bulak-balik; pencét Spasi, ↓ atawa toél lapangan pikeun nurunkeunana. Emas gedé jeung batu beurat jeung ditarikna lambat; inten hargana mahal. Capai duit target saméméh 60 detik béak.",
+    "lib.arcade.note.slicer": "Gesek ramo atawa beurit ngaliwatan buah pikeun ngirisna. Ulah kana bom hideung. Luput buah atawa ngiris bom ngurangan hiji nyawa (anjeun boga 3). Iris buah cukup pikeun meunangkeun level.",
+    "lib.arcade.note.hoops": "Pencét lapangan, sered ka handap (siga ketapel) tuluy leupaskeun pikeun nembak bola ka ring. Beuki jauh disered, beuki kuat lémparanna. Cetak cukup keranjang dina jumlah tembakan nu aya; ti level 4 ring-na obah.",
+    "lib.arcade.note.bubbles": "Gerakkeun beurit atawa ramo pikeun ngabidik, tuluy klik/toél atawa pencét Spasi/Tembak pikeun nembak. Sambungkeun 3 gelembung atawa leuwih nu warnana sarua pikeun ngabeledugkeunana; gelembung nu leungit panyanggana murag. Baris-baris laun turun, ku kituna jauhkeun tina garis handap. Bersihkeun sakabéh gelembung pikeun meunang.",
+    "lib.arcade.note.chase": "Paké tombol panah (atawa gesek / tombol) pikeun ngabelok tur dahar sakabéh titik di labirin bari nyingkahan hantu nu ngudag anjeun. Anjeun boga 3 nyawa; level luhur nambahan hantu leuwih loba, leuwih gancang jeung leuwih pinter ngudag.",
+    "lib.arcade.height": "Jangkungna: {n}/{t} m",
+    "lib.arcade.money": "Duit: {n}/{t}",
+    "lib.arcade.sliced": "Diiris: {n}/{t}",
+    "lib.arcade.hoopScore": "Cetak: {n}/{t}",
+    "lib.arcade.shotsLeft": "Tinggal {n} tembakan",
+    "lib.arcade.bubbleLeft": "Tinggal {n} gelembung",
+    "lib.arcade.shotsN": "Tembakan: {n}",
+    "lib.arcade.dotsLeft": "Tinggal {n} titik",
+    "lib.arcade.note.kakuro": "Eusian sél bodas ku angka 1–9 supados unggal rentetan jumlahna sarua jeung petunjuk dina sél hideung (angka di katuhu luhur pikeun rentetan ka katuhu, nu di kenca handap pikeun rentetan ka handap), tanpa angka nu diulang dina hiji rentetan. Paké tombol panah pikeun ngagerakkeun.",
+    "lib.arcade.note.kenken": "Eusian grid ku angka 1 nepi ka N supados euweuh angka nu diulang dina baris atawa kolom. Unggal kelompok nu dikurung ku garis kandel nuduhkeun target jeung operasi (+, −, ×, ÷): angka dina kelompok kudu ngahasilkeun hasil éta. Paké tombol panah pikeun ngagerakkeun.",
+    "lib.arcade.note.wordGuess": "Tebak kecap Inggris rusiah. Sanggeus unggal usaha, héjo hartina hurup bener di tempat bener, konéng hartina hurup aya dina kecap tapi di tempat séjén, kulawu hartina hurup teu aya dina kecap. Ketik dina kibor atawa paké tombol dina layar, tuluy pencét Enter pikeun ngirim. Level luhur boga kecap leuwih panjang jeung usaha leuwih saeutik.",
+    "lib.arcade.note.hangman": "Tebak kecap Inggris rusiah ku milih hurup hiji-hiji. Unggal hurup salah nambahan hiji bagian kana gambar nu digantung; lamun kasempetan salah béak, anjeun éléh. Level luhur boga kecap leuwih panjang jeung kasempetan salah leuwih saeutik.",
+    "lib.arcade.note.scramble": "Susun deui hurup nu diacak jadi kecap Inggris nu bener tuluy ketik dina kotak jawaban. Unggal level boga 5 kecap; réngsékeun sahenteuna 4 saméméh waktu unggal kecap béak pikeun meunangkeun level. Pitunjuk muka hurup mimiti.",
+    "lib.arcade.cellsLeft": "Tinggal {n} sél kosong",
+    "lib.arcade.wrongN": "{n} sél can bener.",
+    "lib.arcade.noError": "Can kapanggih kasalahan.",
+    "lib.arcade.tooShort": "Hurup teu cukup",
+    "lib.arcade.answerIs": "Jawaban: {w}",
+    "lib.arcade.livesLeft": "Tinggal {n} kasempetan salah",
+    "lib.arcade.yourAnswer": "Jawaban anjeun",
+    "lib.arcade.skip": "Lewati",
+    "lib.arcade.notThis": "Lain ieu, cobaan deui.",
+    "lib.arcade.startsWith": "Hurup mimiti: {c}",
+    "lib.arcade.note.domino": "Tiap pamaén nampa 7 képing; nu boga dobel pangluhurna mimiti. Maénkeun képing nu angkana cocog jeung salah sahiji ujung rante. Lamun teu bisa maén, tarik tina tumpukan nepi ka bisa; lamun geus kosong, lolos. Nu pangheulana ngabolaykeun leungeun meunang; lamun dua-duana macet, jumlah titik nu leuwih saeutik meunang.",
+    "lib.arcade.note.hearts": "Opat pamaén, 13 kartu unggal jalma. As kriting 2 mimiti. Anjeun kudu nuturkeun jenis nu dibuka lamun bisa. Unggal hati 1 poin jeung Ratu Sekop 13; nu meunang trik nyokot poinna. Beuki saeutik beuki alus, sarta nyokot kabéh 26 poin masihan unggal jalma 26. Anjeun teu bisa mimiti ku hati nepi ka aya nu geus dimaénkeun. Sanggeus leungeun pamungkas, anjeun meunang lamun skor anjeun paling rendah (atawa sarua paling rendah).",
+    "lib.arcade.note.holdem": "Hadap-hadapan ngalawan komputer maké chip maya wungkul. Tiap pamaén nampa 2 kartu pribadi sarta 5 kartu umum dibuka (flop, turn, river); jieun leungeun 5 kartu pangalusna. Unggal babak anjeun bisa fold, call (atawa check) atawa raise. Blind naék unggal 4 leungeun. Anjeun meunang lamun chip komputer béak, atawa ku boga chip leuwih loba sanggeus watesan leungeun. Teu aya duit nyata.",
+    "lib.arcade.dmDraw": "Tarik képing",
+    "lib.arcade.dmPass": "Lewati",
+    "lib.arcade.dmEmpty": "Can aya képing nu dimaénkeun",
+    "lib.arcade.dmYard": "Tumpukan: {n} képing",
+    "lib.arcade.dmLeft": "Ujung kénca",
+    "lib.arcade.dmRight": "Ujung katuhu",
+    "lib.arcade.dmTie": "Seri! Dua sisi sarua.",
+    "lib.arcade.hrHand": "Leungeun {n}/{t}",
+    "lib.arcade.hrTook": "{p} meunang trik ({n} poin).",
+    "lib.arcade.hrIllegal": "Anjeun teu bisa maénkeun kartu ieu (turutan jenis, atawa hati can bisa dibuka).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise ka",
+    "lib.arcade.raiseN": "Raise ka {n}",
+    "lib.arcade.thOppFold": "Komputer fold; anjeun meunang leungeun ieu.",
+    "lib.arcade.thYouFold": "Anjeun fold.",
+    "lib.arcade.thOppWin": "Komputer meunang leungeun ieu",
+    "lib.arcade.thYouWin": "Anjeun meunang leungeun ieu",
+    "lib.arcade.thSplit": "Pot dibagi",
+    "lib.arcade.thAiFold": "Komputer fold.",
+    "lib.arcade.thAiRaise": "Komputer raise ka {n}.",
+    "lib.arcade.thAiCall": "Komputer call / check.",
+    "lib.arcade.hand.high": "Kartu luhur",
+    "lib.arcade.hand.pair": "Sapasang",
+    "lib.arcade.hand.twoPair": "Dua pasang",
+    "lib.arcade.hand.trips": "Tilu sarua",
+    "lib.arcade.hand.straight": "Urut",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Opat sarua",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Hiji kotak hurung hiji-hiji dina grid 3x3. Pencét \"Cocog!\" (atawa Spasi) lamun posisi nu hurung sarua jeung posisi N léngkah ka tukang (N dipidangkeun di luhur). Anjeun peryogi sahenteuna 80% kaputusan bener pikeun meunangkeun level. Level luhur maké N leuwih gedé.",
+    "lib.arcade.nbMatch": "Cocog!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Bener: {a} · Salah: {b}",
+    "lib.arcade.nbAcc": "Akurasi: {n}%",
+    "lib.arcade.note.clicker": "Klik kuéh pikeun muka kuéh, tuluy belanjakeun ka pembantu nu muka kuéh sacara otomatis (harga naék unggal meuli). Pikeun target jumlah kuéh dina 2 menit pikeun meunangkeun level.",
+    "lib.arcade.ckCursor": "Kursor",
+    "lib.arcade.ckGrandma": "Nini tukang kuéh",
+    "lib.arcade.ckFarm": "Kebon",
+    "lib.arcade.ckMine": "Tambang gula",
+    "lib.arcade.ckFactory": "Pabrik",
+    "lib.arcade.ckCookie": "Kuéh",
+    "lib.arcade.ckEarned": "Dipanggang: {n}/{t}",
+    "lib.arcade.chips2": "Kuéh: {n}",
+    "lib.arcade.ckCps": "{n} kuéh/detik",
+    "lib.arcade.note.onet": "Pilih dua képing nu sarua nu bisa disambungkeun ku jalur kalawan paling loba 2 belokan tanpa nyilang képing séjén pikeun miceunana. Beresihkeun sakabéh képing saméméh waktu béak pikeun meunang. Lamun euweuh gerakan deui, anjeun bisa ngacak (watesan).",
+    "lib.arcade.shuffle": "Acak",
+    "lib.arcade.tilesLeft": "Tinggal {n} képing",
+    "lib.arcade.autoShuffle": "Euweuh gerakan deui — diacak otomatis.",
+    "lib.arcade.note.jigsaw": "Gambar dipotong-potong tur diacak. Toél hiji potongan, tuluy nu séjén, pikeun tukeur, tuluy susun deui gambar nu dipidangkeun salaku rujukan. Potongan di tempat nu bener meunang wates héjo. Level luhur boga leuwih loba potongan.",
+    "lib.arcade.jgRef": "Gambar rujukan",
+    "lib.arcade.jgPlaced": "Di tempatna: {a}/{b}",
+    "lib.arcade.golfStrokes": "Pukulan: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Anjeun maén dadu bodas, obah ti katuhu luhur ngurilingan ka katuhu handap (imah anjeun). Lémpar dadu, klik dadu nu rék digerakkeun, tuluy klik tujuan nu disorot. Mendarat dina titik nu ngan aya hiji dadu lawan bakal neunggeul éta ka bar tengah, sarta pamaén éta kudu ngabalikkeun heula. Anjeun teu bisa mendarat dina titik nu aya dua atawa leuwih dadu lawan. Sanggeus kabéh 15 dadu anjeun aya di imah (6 titik pamungkas), anjeun bisa ngaluarkeunana. Nu pangheulana ngaluarkeun kabéh 15 meunang.",
+    "lib.arcade.bgRoll": "Lémpar dadu",
+    "lib.arcade.bgOff": "Kaluarkeun",
+    "lib.arcade.bgRollFirst": "Lémpar dadu",
+    "lib.arcade.bgInfo": "Kaluar: anjeun {a} · komputer {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Anjeun teu boga gerakan sah deui.",
+    "lib.arcade.note.tienlen": "Opat pamaén, 13 kartu unggal jalma. Urutan kartu ti handap ka luhur: 3, 4, … K, A, 2; jenis ti handap ka luhur: sekop, kriting, wajik, hati. Nu boga 3 sekop mimiti. Maénkeun hiji kartu, sapasang, tilu sarua, opat sarua, atawa rentetan 3 kartu atawa leuwih nu berurutan (tanpa 2). Pamaén salajengna kudu maénkeun jenis nu sarua tapi leuwih luhur, atawa lolos; opat sarua bisa ngéléhkeun hiji 2 atawa sapasang 2. Lamun kabéh lolos, pamaén nu pamungkas maénkeun bisa mimiti naon waé. Nu pangheulana ngabolaykeun leungeun meunang. Pilih kartu, tuluy pencét Maén.",
+    "lib.arcade.tlPlay": "Maén",
+    "lib.arcade.tlPass": "Lewati",
+    "lib.arcade.tlClear": "Hapus pilihan",
+    "lib.arcade.tlPassed": "lolos",
+    "lib.arcade.tlFree": "Méja kosong — anjeun bisa mimiti naon waé",
+    "lib.arcade.tlLeft": "Kartu sésa: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} lolos.",
+    "lib.arcade.tlBad": "Kartu nu dipilih teu ngawangun set nu sah.",
+    "lib.arcade.tlLow": "Set ieu can cukup luhur pikeun ngéléhkeun méja."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Tik-Tak-Tok Pamungkas",
       "desc": "Tik-tak-tok dina 9 papan leutik: kotak nu anjeun pilih nangtukeun di mana lawan kudu maén; ngalawan komputer dina 10 level."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Pukul bola ngaliwatan komputer; nu pangheulana meunang 5 poin, meunang. 10 level kalawan lawan nu beuki gancang jeung beuki mahér."
+    },
+    "space-shooter": {
+      "name": "Penembak Angkasa",
+      "desc": "Setir kapal anjeun, tembak kapal musuh jeung nyingkahan tembakanana; 10 level kalawan gelombang leuwih gedé, tembakan balik jeung musuh leuwih kuat."
+    },
+    "asteroids": {
+      "name": "Asteroid",
+      "desc": "Puter, dorong jeung tembak pikeun mecahkeun batu angkasa; batu gedé pecah jadi leutik. 10 level kalawan batu leuwih loba jeung leuwih gancang."
+    },
+    "maze": {
+      "name": "Labirin",
+      "desc": "Manggihan jalan kaluar tina labirin saméméh waktu béak; 10 level ti labirin leutik nepi ka gedé, aya kabut dina level luhur."
+    },
+    "road-cross": {
+      "name": "Meuntas Jalan (gaya Frogger)",
+      "desc": "Luncatkeun bangkong meuntas jalan rame jeung walungan batang kai ngambang pikeun balik ka imah 3 kali; 10 level kalawan lalulintas leuwih gancang jeung walungan dina level luhur."
+    },
+    "flappy": {
+      "name": "Kaulinan gaya Flappy Bird",
+      "desc": "Toél pikeun ngepakkeun jangjang jeung hiber ngaliwatan celah antara pipa; 10 level kalawan celah leuwih heureut jeung laju beuki naék."
+    },
+    "runner": {
+      "name": "Pelari Dino",
+      "desc": "Luncat ngaliwatan kaktus jeung ngajongkok handapeun manuk; lumpat cukup jauh pikeun meunangkeun unggal tina 10 level bari laju terus naék."
+    },
+    "whack-a-mole": {
+      "name": "Pukul Beurit Taneuh",
+      "desc": "Pukul beurit nu kaluar tina liang saméméh waktu béak, jeung nyingkahan bom; 10 level ti laun nepi ka gancang pisan."
+    },
+    "simon": {
+      "name": "Simon (Warna Panginget)",
+      "desc": "Apalkeun jeung baleanan runtuyan warna jeung sora; runtuyan beuki panjang dina 10 level, aya 6 tombol ti level 7."
+    },
+    "aim-trainer": {
+      "name": "Latihan Ngabidik",
+      "desc": "Pencét sasaran nu muncul acak jeung gancang ngiles; sasaran beuki leutik dina 10 level, tur waktu réaksi anjeun diukur."
+    },
+    "quick-math": {
+      "name": "Itung Gancang",
+      "desc": "Itung tambah, kurang, kali jeung bagi dina jero haté handapeun tekanan waktu; 10 level ti itungan basajan nepi ka éksprési."
+    },
+    "reaction": {
+      "name": "Tés Waktu Réaksi",
+      "desc": "Klik pas layar jadi héjo; rata-rata anjeun dina 5 babak kudu cocog jeung wates unggal level, nu beuki heureut dina 10 level."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Sebarkeun biji ngurilingan liang, tangkep biji lawan jeung maén deui lamun murag di lumbung anjeun; lawan komputer dina 10 level ti gampang nepi ka hésé."
+    },
+    "snakes-ladders": {
+      "name": "Oray jeung Tangga",
+      "desc": "Lémpar dadu ti kotak 1 nepi ka 100, naék tangga, nyingkahan oray jeung nepi ka garis finis saméméh lawan; 10 level."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Tempatkeun, gésér jeung hiberkeun képing anjeun pikeun nyieun tilu sajajar jeung nyokot képing lawan; lawan komputer dina 10 level."
+    },
+    "battleship": {
+      "name": "Perang Kapal (Battleship)",
+      "desc": "Manggihan jeung tilelepkeun armada komputer dina grid 10x10 saméméh komputer nilelepkeun anjeun; 10 level nalika komputer beuki pinter nebak."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Labu, Keuyeup, Lauk, Udang)",
+      "desc": "Kaulinan dadu tradisional Vietnam: pasang koin maya kana sato jeung kocok tilu dadu; capai target koin dina 10 level (teu aya duit nyata)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Pasang taruhan kana Pamaén, Bandar atawa Seri kalawan kartu nu dibagikeun dumasar aturan baku, maké koin maya; capai target koin dina 10 level (teu aya duit nyata)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Kaulinan Tilu Kartu)",
+      "desc": "Bandingkeun leungeun 3 kartu jeung bandar: tilu sarua, tilu kartu gambar, tuluy 9 poin nepi ka 0; koin maya, 10 level, teu aya duit nyata."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Tandaan angka nu disebutkeun dina kartu 5x5 anjeun jeung sebut BINGO saméméh lawan komputer; angka disebutkeun leuwih gancang dina 10 level."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Lima Dadu)",
+      "desc": "Lémpar lima dadu, simpen nu alus jeung eusian 13 kotak skor; capai skor target dina 10 level."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Cocogkeun jenis atawa nilai, kartu 8 ngarobah jenis; bolaykeun leungeun anjeun saméméh 1 nepi ka 3 lawan komputer dina 10 level."
+    },
+    "car-race": {
+      "name": "Balapan Mobil Nyingkah",
+      "desc": "Robah jalur pikeun nyingkahan mobil di hareup jeung tempuh jarak pinuh; 10 level kalawan leuwih loba jalur jeung lalulintas leuwih gancang."
+    },
+    "sky-jump": {
+      "name": "Luncat ka Langit",
+      "desc": "Mumbul ti platform ka platform pikeun naék saluhur-luhurna tanpa murag; 10 level kalawan platform leuwih jarang, nu obah jeung nu bisa patah."
+    },
+    "gold-miner": {
+      "name": "Panambang Emas",
+      "desc": "Turunkeun pangait pikeun narik emas jeung inten, nyingkahan batu beurat, jeung capai duit target dina 60 detik; 10 level."
+    },
+    "fruit-slice": {
+      "name": "Iris Buah",
+      "desc": "Gesek pikeun ngiris buah nu ngapung ka luhur jeung nyingkahan bom; 10 level kalawan buah leuwih loba jeung bom leuwih loba."
+    },
+    "basketball": {
+      "name": "Tembak Basket",
+      "desc": "Sered jeung leupaskeun pikeun nembak bola kana ring dina jumlah tembakan nu kawates; 10 level, ring obah ti level 4."
+    },
+    "bubble-shooter": {
+      "name": "Penembak Gelembung",
+      "desc": "Tembak gelembung pikeun nyambungkeun 3 atawa leuwih nu warnana sarua jeung ngabeledugkeunana, jeung bersihkeun kabéh saméméh nepi ka handap; 10 level kalawan warna leuwih loba."
+    },
+    "dot-chase": {
+      "name": "Ngudag Titik",
+      "desc": "Dahar sakabéh titik di labirin bari nyingkahan hantu nu ngudag anjeun; 10 level kalawan hantu leuwih loba jeung leuwih pinter."
+    },
+    "kakuro": {
+      "name": "Kakuro (Jumlah Silang)",
+      "desc": "Eusian sél bodas ku angka 1–9 supados unggal rentetan jumlahna sarua jeung petunjukna tanpa pangulangan; 10 level, grid ti 5x5 nepi ka 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Eusian grid tanpa pangulangan dina baris atawa kolom supados unggal kelompok ngahasilkeun targétna kalawan operasina; 10 level, grid ti 3x3 nepi ka 6x6."
+    },
+    "word-guess": {
+      "name": "Tebak Kecap (gaya Wordle)",
+      "desc": "Tebak kecap Inggris rusiah ku pitunjuk héjo, konéng jeung kulawu; 10 level kalawan kecap 4–6 hurup jeung usaha leuwih saeutik."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Tebak kecap Inggris hurup demi hurup saméméh kasempetan salah béak; 10 level kalawan kecap leuwih panjang jeung kasempetan salah leuwih saeutik."
+    },
+    "word-scramble": {
+      "name": "Susun Kecap (Anagram)",
+      "desc": "Susun deui hurup nu diacak jadi kecap Inggris saméméh waktu béak; 10 level, 5 kecap unggal level."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Cocogkeun képing kana salah sahiji ujung rante jeung bolaykeun leungeun anjeun saméméh komputer; 10 level nalika komputer beuki pinter."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Nyingkahan hati jeung Ratu Sekop dina kaulinan kartu opat pamaén; skor leuwih handap leuwih alus; 10 level ngalawan pamaén komputer nu leuwih pinter."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (chip maya)",
+      "desc": "Poker hadap-hadapan ngalawan komputer maké chip maya: fold, call atawa raise, tuluy meunang lamun chip komputer béak; 10 level, teu aya duit nyata."
+    },
+    "n-back": {
+      "name": "Mémori N-Back",
+      "desc": "Titénan kotak nu hurung jeung pencét Cocog lamun sarua jeung N léngkah ka tukang; 10 level kalawan N nepi ka 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klik pikeun muka kuéh, meuli pembantu nu muka kuéh sacara otomatis jeung capai target dina 2 menit; 10 level."
+    },
+    "tile-connect": {
+      "name": "Sambung Képing (gaya Onet)",
+      "desc": "Sambungkeun képing nu sarua ku jalur kalawan paling loba dua belokan jeung bersihkeun papan saméméh waktu béak; 10 level, papan beuki gedé."
+    },
+    "jigsaw": {
+      "name": "Jigsaw Gambar",
+      "desc": "Tukeur potongan nu diacak pikeun nyusun deui gambar; 10 level ti 3x3 nepi ka 6x6 potongan."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Tarik ka tukang jeung leupaskeun pikeun nyodok bola kana liang dina watesan pukulan; 10 lapangan kalawan témbok jeung keusik."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Lémpar dadu, balapkeun dadu anjeun ka imah jeung kaluarkeun saméméh komputer, bari neunggeul dadu tunggalna di jalan; 10 level."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Tilu Belas)",
+      "desc": "Kaulinan kartu Vietnam pikeun opat: maénkeun tunggal, pasangan, rentetan jeung opat sarua pikeun ngabolaykeun leungeun anjeun heula; 10 level."
     }
   },
   "s": {

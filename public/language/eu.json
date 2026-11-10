@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Saltoa",
     "lib.arcade.aimTarget": "Helburua",
     "lib.game.soundOn": "Aktibatu soinua",
-    "lib.game.soundOff": "Desaktibatu soinua"
+    "lib.game.soundOff": "Desaktibatu soinua",
+    "lib.arcade.note.kalah": "Zuk beheko ilara jokatzen duzu, ordenagailuak goikoa; eskuineko zulo handia zure biltegia da. Egin klik zulo batean haren hazi guztiak hartzeko, eta ereiten itzazu erlojuaren kontrako norabidean, zulo bakoitzean bat (aurkariaren biltegia saltatuz). Azken haziak zure biltegian erortzen bada, berriro jokatzen duzu; zure aldeko zulo huts batean erortzen bada, hazidun zulo baten parean, hazi horiek hartzen dituzu. Alde bat hutsik geratzen denean, beste aldeko haziak jabearen biltegira joaten dira; biltegi handienak irabazten du.",
+    "lib.arcade.note.snakes": "Bota dadoa eta mugitu hainbat laukitan, 1etik 100era. Eskailera baten oinean erortzen bazara, igo egiten duzu; sugearen buruan erortzen bazara, behera irristatzen zara. 4. mailatik aurrera zenbaki zehatza atera behar duzu 100ean amaitzeko. Maila altuagoetan suge gehiago, eskailera gutxiago eta aurkari gehiago daude. 100era lehenengo iristen denak irabazten du.",
+    "lib.arcade.square": "{n}. laukia",
+    "lib.arcade.ladderUp": "Eskaileran gora!",
+    "lib.arcade.snakeDown": "Suge batek irentsi zaitu!",
+    "lib.arcade.needExact": "Zenbaki zehatza behar duzu 100ean amaitzeko.",
+    "lib.arcade.note.nmm": "Alde bakoitzak 9 pieza ditu. 1. fasea: txandaka jarri piezak puntu hutsetan. 2. fasea: irristatu pieza bat alboko puntu huts batera. 3 pieza bakarrik geratzen zaizkizunean, edozein puntu hutsera «hegan» egin dezakezu. Egin hiru lerro batean (errota) aurkariaren pieza bat kentzeko (lehenik errotan ez daudenak). Galtzen duzu 2 pieza geratzen zaizkizunean edo mugitu ezin duzunean. Zuk zuriekin jokatzen duzu eta zu hasten zara.",
+    "lib.arcade.inHand": "Jartzeko: {a} · {b}",
+    "lib.arcade.removePiece": "Aukeratu aurkariaren pieza bat kentzeko.",
+    "lib.arcade.enemyWaters": "Etsaiaren urak (egin klik tiro egiteko)",
+    "lib.arcade.yourFleet": "Zure flota",
+    "lib.arcade.note.battleship": "Alde bakoitzak 5 ontzi ditu (luzera 5, 4, 3, 3, 2), ausaz jarrita 10x10 koadrikula batean. Txandaka tiro egin laukitxo batera: tiro egokia gorri bihurtzen da, huts egindakoa urdin argi, eta ontzi bateko lauki guztiak jotzen dituzunean hondoratu egiten da. Etsaiaren flota osoa hondoratzen duen lehenak irabazten du. Maila altuagoetan ordenagailuak zure ontzien posizioa azkarrago asmatzen du.",
+    "lib.arcade.shipsLeft": "Geratzen diren ontziak: zu {a} · etsaia {b}",
+    "lib.arcade.theySunk": "Etsaiak zure ontzietako bat hondoratu du!",
+    "lib.arcade.theyHit": "Etsaiak zure ontzietako bat jo du.",
+    "lib.arcade.theyMiss": "Etsaiak huts egin du.",
+    "lib.arcade.youSunk": "Etsaiaren ontzi bat hondoratu duzu!",
+    "lib.arcade.youHit": "Jo duzu!",
+    "lib.arcade.youMiss": "Huts.",
+    "lib.arcade.shake": "Astindu",
+    "lib.arcade.clearBets": "Garbitu apustuak",
+    "lib.arcade.note.bau-cua": "Txanpon birtualak soilik — diru errealik ez. Aukeratu fitxaren balioa, egin klik animalietan apustua egiteko, eta sakatu Astindu. Apustu egin duzun animaliarekin bat datorren dado bakoitzeko, zure apustua itzultzen zaizu eta bat-etortze bakoitzeko kopuru bera irabazten duzu. Lortu helburuko txanpon kopurua baimendutako erronden barruan maila gainditzeko.",
+    "lib.arcade.note.baccarat": "Txanpon birtualak soilik — diru errealik ez. Egin apustua Jokalariaren, Bankariaren edo Berdinketaren alde, eta sakatu Banatu. Esku baten balioa guztiaren azken digitua da (A = 1, 2–9 aurpegiko balioa, 10/J/Q/K = 0); 9ra gertuago dagoen esku irabazten du, eta hirugarren karta ohiko arauen arabera ateratzen da. Jokalariak 1:1 ordaintzen du, Bankariak 0,95:1, Berdinketak 8:1 (Jokalari/Bankari apustuak itzultzen dira berdinketan). Lortu helburuko txanpon kopurua baimendutako erronden barruan maila gainditzeko.",
+    "lib.arcade.banker": "Bankaria",
+    "lib.arcade.player": "Jokalaria",
+    "lib.arcade.tie": "Berdinketa",
+    "lib.arcade.openCards": "Ikusi",
+    "lib.arcade.note.bai-cao": "Txanpon birtualak soilik — diru errealik ez. Alde bakoitzak 3 karta jasotzen ditu. Esku baten puntuazioa guztiaren azken digitua da (A = 1, 2–9 aurpegiko balioa, 10/J/Q/K = 10, hau da, 0 puntu). Sailkapena: hiru berdin («Sáp») da altuena, gero hiru irudi («Ba tiên»), gero 9 punturaino 0ra. Egin apustua, sakatu Banatu eta gero Ikusi banatzailearekin alderatzeko. 6. mailatik aurrera banatzaileak irabazten ditu berdinketak. Lortu helburuko txanpon kopurua baimendutako erronden barruan maila gainditzeko.",
+    "lib.arcade.caoSap": "Hiru berdin",
+    "lib.arcade.caoBaTien": "Hiru irudi",
+    "lib.arcade.caoPts": "{n} p",
+    "lib.arcade.note.bingo": "Ordenagailuak 1etik 75era zenbakiak ozen esaten ditu. Esandako zenbakia zure kartoian badago, egin klik markatzeko (erdikoa doakoa da). Osatu errenkada, zutabe edo diagonal bat eta sakatu BINGO! — ordenagailuaren aurkariei irabazi behar diezu. BINGO! faltsuak botoia blokeatzen du segundo batzuetarako. Maila altuagoetan azkarrago esaten dira zenbakiak eta aurkari gehiago daude.",
+    "lib.arcade.opponentsN": "Aurkariak: {n}",
+    "lib.arcade.falseBingo": "Oraindik ez dago lerro osorik! Botoia 3 segundoz blokeatuta.",
+    "lib.arcade.bingoGo": "Zenbakiak esaten ari dira!",
+    "lib.arcade.note.yahtzee": "Txanda bakoitzean 5 dado bota ditzakezu gehienez 3 aldiz: egin klik dado batean gordetzeko, eta sakatu Bota besteak berriro botatzeko. Gero aukeratu taulako kaxa bat puntuatzeko (kaxa bakoitza behin erabiltzen da; ez datorren kaxa batek 0 ematen du). 13 txanda. Batekoak–Seiekoak kaxek 35eko bonusa gehitzen dute guztira 63 edo gehiago baldin badira. Lortu mailaren helburuko puntuazioa irabazteko.",
+    "lib.arcade.turnN": "{n}. txanda / 13",
+    "lib.arcade.pickCat": "Aukeratu kaxa bat puntuatzeko",
+    "lib.arcade.rollsLeft": "Bota ({n} geratzen dira)",
+    "lib.arcade.upperBonus": "Batekoak–Seiekoak bonusa",
+    "lib.arcade.scored": "Puntuatua: {n}",
+    "lib.arcade.note.crazy-eights": "Jokatu botatako karten gaineko kartarekin bat datorren karta bat, palo edo balioaren arabera. Zortziak komodinak dira: jokatu edozein unetan eta aukeratu palo berri bat. Jokatzeko kartarik ez baduzu, hartu pilatik (3 karta arte); oraindik jokatu ezin baduzu, pasatu egiten duzu. Eskua lehenengo husten duenak irabazten du. Maila altuagoetan aurkari gehiago daude eta ordenagailuak azkarrago jokatzen du.",
+    "lib.arcade.opponent": "Aurkaria",
+    "lib.arcade.pileLeft": "Hartzeko pila: {n}",
+    "lib.arcade.pickSuit": "Aukeratu palo berri bat",
+    "lib.arcade.aiSuit": "Ordenagailuak {s} aukeratu du",
+    "lib.arcade.aiPass": "Ordenagailuak pasatu egiten du.",
+    "lib.arcade.mustPlay": "Jokatzeko karta bat duzu — jokatu ezazu.",
+    "lib.arcade.youPass": "3 karta hartu dituzu eta pasatu egiten duzu.",
+    "lib.arcade.bcGourd": "Kalabaza",
+    "lib.arcade.bcCrab": "Karramarroa",
+    "lib.arcade.bcShrimp": "Ganbak",
+    "lib.arcade.bcFish": "Arraina",
+    "lib.arcade.bcRooster": "Oilarra",
+    "lib.arcade.bcDeer": "Oreina",
+    "lib.arcade.yOnes": "Batekoak",
+    "lib.arcade.yTwos": "Biakoak",
+    "lib.arcade.yThrees": "Hirukoak",
+    "lib.arcade.yFours": "Laukoak",
+    "lib.arcade.yFives": "Bostekoak",
+    "lib.arcade.ySixes": "Seiekoak",
+    "lib.arcade.yThree": "Hiru berdin",
+    "lib.arcade.yFour": "Lau berdin",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Eskala txikia (30)",
+    "lib.arcade.yLarge": "Eskala handia (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Zortea",
+    "lib.arcade.note.race": "Sakatu ← → (edo ukitu nahi duzun errepidea) errepidea aldatzeko eta aurreko autoak saihesteko. 3 bizitza dituzu; egin distantzia osoa maila gainditzeko. Maila altuagoetan errepide gehiago eta trafiko azkarragoa daude.",
+    "lib.arcade.note.jump": "Pertsonaia bere kabuz jauzika ari da. Sakatu ← → edo arrastatu hatza hurrengo plataforman lurreratzeko. Plataforma urdinak mugitzen dira, marroiak apurtu egiten dira lurreratzean. Pantailatik erortzen bazara, galtzen duzu; igo nahikoa gora maila gainditzeko.",
+    "lib.arcade.note.miner": "Amua alde batetik bestera dabil; sakatu Zuriunea, ↓ edo ukitu eremua jaisteko. Urre handia eta harriak astunak dira eta poliki tiratzen dira; diamanteek balio handia dute. Lortu helburuko dirua 60 segundoak amaitu baino lehen.",
+    "lib.arcade.note.slicer": "Pasatu hatza edo sagua fruituaren gainetik mozteko. Saihestu bonba beltzak. Fruitu bat galtzeak edo bonba bat mozteak bizitza bat kostatzen dizu (3 dituzu). Moztu fruitu nahikoa maila gainditzeko.",
+    "lib.arcade.note.hoops": "Sakatu zelaian, arrastatu behera (tirakarri bat bezala) eta askatu baloia saskiratzeko. Zenbat eta urrunago arrastatu, orduan eta indartsuagoa da jaurtiketa. Sartu saski nahikoa dituzun jaurtiketen barruan; 4. mailatik aurrera saskia mugitzen da.",
+    "lib.arcade.note.bubbles": "Mugitu sagua edo hatza apuntatzeko, eta gero egin klik/ukitu edo sakatu Zuriunea/Tiro egin tiro egiteko. Lotu kolore bereko 3 burbuila edo gehiago lehertzeko; euskarria galtzen duten burbuilak erori egiten dira. Errenkadak poliki jaisten dira, beraz, mantendu behe-lerrotik urrun. Garbitu burbuila guztiak irabazteko.",
+    "lib.arcade.note.chase": "Erabili gezi-teklak (edo irristatu / botoiak) biratzeko eta labirintoko puntu guztiak jateko, jazartzen zaituzten mamuak saihestuz. 3 bizitza dituzu; maila altuagoetan mamu gehiago daude, azkarragoak eta jazarpen adimentsuagokoak.",
+    "lib.arcade.height": "Altuera: {n}/{t} m",
+    "lib.arcade.money": "Dirua: {n}/{t}",
+    "lib.arcade.sliced": "Mozturik: {n}/{t}",
+    "lib.arcade.hoopScore": "Saskiratuak: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} jaurtiketa geratzen dira",
+    "lib.arcade.bubbleLeft": "{n} burbuila geratzen dira",
+    "lib.arcade.shotsN": "Tiroak: {n}",
+    "lib.arcade.dotsLeft": "{n} puntu geratzen dira",
+    "lib.arcade.note.kakuro": "Bete lauki zuriak 1etik 9ra bitarteko digituekin, tarte bakoitzaren batura lauki beltzeko pistarekin bat etor dadin (goian eskuinean dagoen zenbakia eskuinerako tartearena da, behean ezkerrean dagoena beherakoarena), tarte barruan digitua errepikatu gabe. Mugitzeko erabili gezi-teklak.",
+    "lib.arcade.note.kenken": "Bete koadrikula 1etik N-ra bitarteko zenbakiekin, zenbaki bat ere errenkada edo zutabe berean errepikatu gabe. Ertz lodiz inguratutako talde bakoitzak helburu bat eta eragiketa bat (+, −, ×, ÷) erakusten ditu: taldeko zenbakiek emaitza hori eman behar dute. Mugitzeko erabili gezi-teklak.",
+    "lib.arcade.note.wordGuess": "Asmatu ingelesezko hitz sekretua. Saiakera bakoitzaren ondoren, berdeak letra zuzena toki zuzenean esan nahi du, horiak letra hitzean dagoela baina beste toki batean, eta grisak hitzean ez dagoela. Idatzi teklatuarekin edo erabili pantailako teklak, eta sakatu Sartu bidaltzeko. Maila altuagoetan hitz luzeagoak eta saiakera gutxiago daude.",
+    "lib.arcade.note.hangman": "Asmatu ingelesezko hitz sekretua letrak banan-banan aukeratuz. Letra oker bakoitzak zintzilikatutako irudiari zati bat gehitzen dio; akats-aukerak amaitzen zaizkizunean, galtzen duzu. Maila altuagoetan hitz luzeagoak daude eta akats gutxiago onartzen dira.",
+    "lib.arcade.note.scramble": "Berrordenatu nahastutako letrak benetako ingelesezko hitz bat osatzeko eta idatzi erantzun-koadroan. Maila bakoitzak 5 hitz ditu; ebatzi gutxienez 4 hitz bakoitzaren tenporizadorea amaitu baino lehen maila gainditzeko. Pistak lehen letra agerian uzten du.",
+    "lib.arcade.cellsLeft": "{n} gelaxka huts geratzen dira",
+    "lib.arcade.wrongN": "{n} gelaxka ez dira zuzenak.",
+    "lib.arcade.noError": "Oraingoz ez da akatsik aurkitu.",
+    "lib.arcade.tooShort": "Letra gutxiegi",
+    "lib.arcade.answerIs": "Erantzuna: {w}",
+    "lib.arcade.livesLeft": "{n} akats geratzen dira",
+    "lib.arcade.yourAnswer": "Zure erantzuna",
+    "lib.arcade.skip": "Saltatu",
+    "lib.arcade.notThis": "Ez da zuzena, saiatu berriro.",
+    "lib.arcade.startsWith": "Lehen letra: {c}",
+    "lib.arcade.note.domino": "Jokalari bakoitzak 7 fitxa jasotzen ditu; bikoitz handiena duenak hasten du. Jokatu kateko mutur batekin bat datorren zenbakia duen fitxa bat. Jokatu ezin baduzu, hartu biltegitik jokatu ahal izan arte; hutsik badago, pasatu. Eskua lehenengo husten duenak irabazten du; biak blokeatuta badaude, puntu-batura txikiena duenak irabazten du.",
+    "lib.arcade.note.hearts": "Lau jokalari, 13 karta bakoitzak. Hasten da hirusta 2. Palo hasierakoa jarraitu behar duzu ahal baduzu. Bihotz bakoitza puntu 1 da eta espatako erregina 13; esku bat irabazten duenak haren puntuak hartzen ditu. Gutxiago hobe da, eta 26 puntuak guztiak norbaitek hartzen baditu, besteek 26 jasotzen dituzte. Ezin duzu bihotzekin hasi bat jokatu den arte. Azken eskuaren ondoren, irabazten duzu zure puntuazioa baxuena bada (edo baxuenarekin berdinduta).",
+    "lib.arcade.note.holdem": "Bata bestearen aurka ordenagailuaren kontra, txip birtualekin soilik. Jokalari bakoitzak 2 karta pribatu jasotzen ditu eta 5 karta komun agertzen dira (flop, turn, river); osatu 5 kartako esku onena. Erronda bakoitzean fold, call (edo check) edo raise egin dezakezu. Itsuak 4 esku bakoitzeko igotzen dira. Irabazten duzu ordenagailuak txiprik gabe gelditzen denean, edo esku-mugaren ondoren txip gehiago badituzu. Ez dago diru errealik.",
+    "lib.arcade.dmDraw": "Hartu fitxa bat",
+    "lib.arcade.dmPass": "Pasatu",
+    "lib.arcade.dmEmpty": "Oraindik ez da fitxarik jokatu",
+    "lib.arcade.dmYard": "Biltegia: {n} fitxa",
+    "lib.arcade.dmLeft": "Ezkerreko muturra",
+    "lib.arcade.dmRight": "Eskuineko muturra",
+    "lib.arcade.dmTie": "Berdinketa! Bi aldeak berdinduta daude.",
+    "lib.arcade.hrHand": "{n}. eskua / {t}",
+    "lib.arcade.hrTook": "{p} jokalariak bazta irabazi du ({n} puntu).",
+    "lib.arcade.hrIllegal": "Ezin duzu karta hau jokatu (jarraitu palo hasierakoa, eta oraindik ezin da bihotzekin hasi).",
+    "lib.arcade.blinds": "Itsu handia: {n}",
+    "lib.arcade.pot": "Potea: {n}",
+    "lib.arcade.fold": "Utzi",
+    "lib.arcade.check": "Pasatu",
+    "lib.arcade.callN": "Berdindu {n}",
+    "lib.arcade.raiseTo": "Igo hona:",
+    "lib.arcade.raiseN": "Igo {n}-ra",
+    "lib.arcade.thOppFold": "Ordenagailuak uzten du; esku hau irabazi duzu.",
+    "lib.arcade.thYouFold": "Utzi egin duzu.",
+    "lib.arcade.thOppWin": "Ordenagailuak esku hau irabazi du",
+    "lib.arcade.thYouWin": "Esku hau irabazi duzu",
+    "lib.arcade.thSplit": "Pote banatua",
+    "lib.arcade.thAiFold": "Ordenagailuak uzten du.",
+    "lib.arcade.thAiRaise": "Ordenagailuak {n}-ra igotzen du.",
+    "lib.arcade.thAiCall": "Ordenagailuak berdindu / pasatu egiten du.",
+    "lib.arcade.hand.high": "Karta altua",
+    "lib.arcade.hand.pair": "Bikotea",
+    "lib.arcade.hand.twoPair": "Bi bikote",
+    "lib.arcade.hand.trips": "Hiru berdin",
+    "lib.arcade.hand.straight": "Eskala",
+    "lib.arcade.hand.flush": "Kolorea",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Lau berdin",
+    "lib.arcade.hand.sflush": "Kolore-eskala",
+    "lib.arcade.note.nback": "3x3 koadrikula batean lauki bat argitzen da bata bestearen atzetik. Sakatu «Bat dator!» (edo Zuriunea) argitutako posizioa N urrats lehenagokoaren berdina denean (N goian agertzen da). Gutxienez %80ko erabaki zuzenak behar dituzu maila gainditzeko. Maila altuagoetan N handiagoa da.",
+    "lib.arcade.nbMatch": "Bat dator!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Zuzenak: {a} · Okerrak: {b}",
+    "lib.arcade.nbAcc": "Zehaztasuna: %{n}",
+    "lib.arcade.note.clicker": "Egin klik galletan galletak labean egiteko, eta gastatu automatikoki labean egiten duten laguntzaileetan (prezioak igotzen dira erosketa bakoitzarekin). Egin helburuko galleta kopurua 2 minututan maila gainditzeko.",
+    "lib.arcade.ckCursor": "Kurtsorea",
+    "lib.arcade.ckGrandma": "Amona okina",
+    "lib.arcade.ckFarm": "Baserria",
+    "lib.arcade.ckMine": "Azukre-meategia",
+    "lib.arcade.ckFactory": "Fabrika",
+    "lib.arcade.ckCookie": "Galleta",
+    "lib.arcade.ckEarned": "Egindakoak: {n}/{t}",
+    "lib.arcade.chips2": "Galletak: {n}",
+    "lib.arcade.ckCps": "{n} galleta/segundoko",
+    "lib.arcade.note.onet": "Hautatu bi lauza berdin gehienez 2 bihurgunetako bide batez lotu daitezkeenak, beste lauzak zeharkatu gabe, kentzeko. Kendu lauza guztiak denbora amaitu baino lehen irabazteko. Mugimendurik geratzen ez denean, nahas dezakezu (aldi kopuru mugatua).",
+    "lib.arcade.shuffle": "Nahastu",
+    "lib.arcade.tilesLeft": "{n} lauza geratzen dira",
+    "lib.arcade.autoShuffle": "Mugimendurik ez dago — automatikoki nahastu da.",
+    "lib.arcade.note.jigsaw": "Irudia zatitan moztuta eta nahastuta dago. Ukitu zati bat eta gero beste bat trukatzeko, eta berreraiki erreferentzia gisa agertzen den irudia. Toki zuzenean dauden zatiek ertz berdea dute. Maila altuagoetan zati gehiago daude.",
+    "lib.arcade.jgRef": "Erreferentzia-irudia",
+    "lib.arcade.jgPlaced": "Lekuan: {a}/{b}",
+    "lib.arcade.golfStrokes": "Kolpeak: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Fitxa zuriekin jokatzen duzu, goiko eskuinetik behe eskuinera mugituz (zure etxea). Bota dadoak, egin klik mugitu nahi duzun fitxan, eta gero nabarmendutako helmugan. Aurkariaren fitxa bakar bat duen puntuan lurreratzen bazara, erdiko barrara bidaltzen duzu, eta jokalari horrek lehenik sartu behar du berriro. Ezin duzu lurreratu aurkariaren bi fitxa edo gehiago dituen puntuan. 15 fitxak etxeko taulan daudenean (azken 6 puntuak), atera ditzakezu. 15ak lehenengo ateratzen dituenak irabazten du.",
+    "lib.arcade.bgRoll": "Bota dadoak",
+    "lib.arcade.bgOff": "Atera",
+    "lib.arcade.bgRollFirst": "Bota dadoak",
+    "lib.arcade.bgInfo": "Kanpoan: zu {a} · ordenagailua {b} · Pipak: {c} / {d}",
+    "lib.arcade.youNoMove": "Ez duzu mugimendu legalik geratzen.",
+    "lib.arcade.note.tienlen": "Lau jokalari, 13 karta bakoitzak. Kartaren ordena baxutik gora: 3, 4, … K, A, 2; paloak baxutik gora: espatak, hirustak, diamanteak, bihotzak. Espatako 3a duenak hasten du. Jokatu karta bat, bikote bat, hiru berdin, lau berdin edo 3 karta edo gehiagoko segida bat (2rik gabe). Hurrengo jokalariak mota bera eta altuagoa jokatu behar du, edo pasatu; lau berdinek 2 bakar bat edo 2ko bikote bat gaindi dezakete. Besteak denak pasatzen dutenean, azkenekoz jokatu duenak edozerekin hasi dezake. Eskua lehenengo husten duenak irabazten du. Hautatu kartak eta sakatu Jokatu.",
+    "lib.arcade.tlPlay": "Jokatu",
+    "lib.arcade.tlPass": "Pasatu",
+    "lib.arcade.tlClear": "Garbitu hautapena",
+    "lib.arcade.tlPassed": "pasatu du",
+    "lib.arcade.tlFree": "Mahaia hutsik dago — edozerekin hasi zaitezke",
+    "lib.arcade.tlLeft": "Geratzen diren kartak: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} jokalariak pasatu egiten du.",
+    "lib.arcade.tlBad": "Hautatutako kartek ez dute konbinazio baliozkorik osatzen.",
+    "lib.arcade.tlLow": "Konbinazio hau ez da nahikoa altua mahaikoa gainditzeko."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Erreakzio denboraren proba",
       "desc": "Egin klik pantaila berde bihurtzen den unean; 5 itzuliko batez bestekoak mailaren muga bete behar du, eta 10 mailatan zorrotzagoa da."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Ereiten itzazu haziak zuloetan zehar, hartu aurkariaren haziak eta berriro jokatu zure biltegian amaitzen duzunean; jokatu ordenagailuaren aurka 10 mailatan, errazetik zailera."
+    },
+    "snakes-ladders": {
+      "name": "Suge eta eskailerak",
+      "desc": "Bota dadoa 1. laukitik 100era, igo eskailerak, saihestu sugeak eta iritsi helmugara aurkariak baino lehen; 10 maila."
+    },
+    "nine-mens-morris": {
+      "name": "Errota (Nine Men’s Morris)",
+      "desc": "Jarri, irristatu eta hegan egin piezak hiru lerro batean egiteko eta aurkariaren piezak kentzeko; jokatu ordenagailuaren aurka 10 mailatan."
+    },
+    "battleship": {
+      "name": "Ontzi hondoratzea (Battleship)",
+      "desc": "Aurkitu eta hondoratu ordenagailuaren flota 10x10 koadrikulan, berak zurea hondoratu baino lehen; 10 maila, ordenagailua gero eta azkarrago asmatzen duela."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Kalabaza-Karramarro-Arrain-Ganba)",
+      "desc": "Vietnamgo dado-joko tradizionala: egin apustua txanpon birtualekin animalietan eta astindu hiru dado; lortu helburuko txanpon kopurua 10 mailatan (diru errealik ez)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Egin apustua Jokalariaren, Bankariaren edo Berdinketaren alde ohiko arauen arabera banatutako kartekin, txanpon birtualekin; lortu helburuko txanpon kopurua 10 mailatan (diru errealik ez)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (hiru kartako jokoa)",
+      "desc": "Alderatu 3 kartako eskuak banatzailearekin: hiru berdin, hiru irudi, gero 9 punturaino 0ra; txanpon birtualak, 10 maila, diru errealik ez."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Markatu esandako zenbakiak zure 5x5 kartoian eta oihukatu BINGO ordenagailuaren aurkariek baino lehen; zenbakiak azkarrago esaten dira 10 mailatan."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (bost dado)",
+      "desc": "Bota bost dado, gorde onak eta bete 13 puntuazio-kaxak; lortu helburuko puntuazioa 10 mailatan."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Zortzi ero)",
+      "desc": "Bat egin paloa edo balioa, zortziek paloa aldatzen dute; hustu eskua ordenagailuko 1 eta 3 aurkariek baino lehen 10 mailatan."
+    },
+    "car-race": {
+      "name": "Auto-lasterketako saihesbidea",
+      "desc": "Aldatu errepidez aurreko autoak saihesteko eta egin distantzia osoa; 10 maila errepide gehiago eta trafiko azkarragoarekin."
+    },
+    "sky-jump": {
+      "name": "Zeruko jauzia",
+      "desc": "Salto egin plataformatik plataformara eta igo ahal duzun gorenera erori gabe; 10 maila plataforma urriagoekin, mugitzen direnekin eta apurtzen direnekin."
+    },
+    "gold-miner": {
+      "name": "Urre-meatzaria",
+      "desc": "Jaitsi amua urrea eta diamanteak igotzeko, saihestu harri astunak eta lortu helburuko dirua 60 segundotan; 10 maila."
+    },
+    "fruit-slice": {
+      "name": "Fruitu-mozketa",
+      "desc": "Pasatu hatza gora hegan doazen fruituak mozteko eta saihestu bonbak; 10 maila fruitu gehiago eta bonba gehiagorekin."
+    },
+    "basketball": {
+      "name": "Saskibaloi jaurtiketa",
+      "desc": "Arrastatu eta askatu baloia saskira sartzeko jaurtiketa kopuru mugatuan; 10 maila, 4. mailatik saski mugikorrarekin."
+    },
+    "bubble-shooter": {
+      "name": "Burbuila-tiralaria",
+      "desc": "Tiro egin burbuilak kolore bereko 3 edo gehiago lotzeko eta lehertzeko, eta garbitu denak hondora iritsi baino lehen; 10 maila kolore gehiagorekin."
+    },
+    "dot-chase": {
+      "name": "Puntu-ehiza",
+      "desc": "Jan labirintoko puntu guztiak, jazartzen zaituzten mamuak saihestuz; 10 maila mamu gehiago eta adimentsuagoekin."
+    },
+    "kakuro": {
+      "name": "Kakuro (batura gurutzatuak)",
+      "desc": "Bete lauki zuriak 1etik 9ra bitarteko digituekin, tarte bakoitzaren batura pistarekin bat etor dadin errepikatu gabe; 10 maila, 5x5etik 9x9ra bitarteko koadrikulak."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Bete koadrikula errenkada edo zutabeetan errepikatu gabe, talde bakoitzak bere eragiketarekin helburua eman dezan; 10 maila, 3x3tik 6x6ra bitarteko koadrikulak."
+    },
+    "word-guess": {
+      "name": "Hitz-asmatzea (Wordle estilokoa)",
+      "desc": "Asmatu ingelesezko hitz sekretua pista berde, hori eta grisekin; 10 maila 4–6 letrako hitzekin eta saiakera gutxiagorekin."
+    },
+    "hangman": {
+      "name": "Urkatua (Hangman)",
+      "desc": "Asmatu ingelesezko hitza letraz letra akats-aukerak amaitu baino lehen; 10 maila hitz luzeagoekin eta akats gutxiagorekin."
+    },
+    "word-scramble": {
+      "name": "Hitz nahasiak (anagrama)",
+      "desc": "Berrordenatu nahastutako letrak ingelesezko hitz bat osatzeko denbora amaitu baino lehen; 10 maila, mailako 5 hitz."
+    },
+    "domino": {
+      "name": "Dominoa",
+      "desc": "Lotu fitxak kateko edozein muturrera eta hustu eskua ordenagailuak baino lehen; 10 maila, ordenagailua adimentsuago bihurtzen den heinean."
+    },
+    "hearts": {
+      "name": "Hearts (Bihotzak)",
+      "desc": "Saihestu bihotzak eta espatako erregina lau jokalarientzako karta-jokoan; puntuazio baxuena hobea da; 10 maila ordenagailuko jokalari adimentsuagoen aurka."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (txip birtualak)",
+      "desc": "Bata bestearen aurkako pokerra ordenagailuaren aurka txip birtualekin: fold, call edo raise egin eta irabazi ordenagailuak txiprik gabe gelditzen denean; 10 maila, diru errealik ez."
+    },
+    "n-back": {
+      "name": "N-Back memoria",
+      "desc": "Begiratu argitutako laukiari eta sakatu Bat dator N urrats lehenagokoaren berdina denean; 10 maila, N 4 arte."
+    },
+    "cookie-clicker": {
+      "name": "Galleta-klikatzailea",
+      "desc": "Egin klik galletak labean egiteko, erosi automatikoki labean egiten duten laguntzaileak eta lortu helburua 2 minututan; 10 maila."
+    },
+    "tile-connect": {
+      "name": "Lauza-lotzea (Onet estilokoa)",
+      "desc": "Lotu lauza berdinak gehienez bi bihurgunetako bidearekin eta garbitu taula denbora amaitu baino lehen; 10 maila, gero eta taula handiagoekin."
+    },
+    "jigsaw": {
+      "name": "Irudi-puzzlea",
+      "desc": "Trukatu nahastutako zatiak irudia berreraikitzeko; 10 maila 3x3tik 6x6 zatira."
+    },
+    "mini-golf": {
+      "name": "Minigolfa",
+      "desc": "Atzera tiratu eta askatu baloia zuloan sartzeko kolpe-mugaren barruan; 10 zelai hormekin eta harearekin."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Bota dadoak, eraman zure fitxak etxera eta atera ordenagailuak baino lehen, bidean haren fitxa bakartiak jotzen; 10 maila."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Hamahiru)",
+      "desc": "Vietnamgo lau jokalarientzako karta-jokoa: jokatu karta bakarrak, bikoteak, eskalak eta laukoteak eskua lehenengo husteko; 10 maila."
     }
   },
   "s": {

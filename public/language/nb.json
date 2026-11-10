@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Hopp",
     "lib.arcade.aimTarget": "Blink",
     "lib.game.soundOn": "Slå på lyd",
-    "lib.game.soundOff": "Slå av lyd"
+    "lib.game.soundOff": "Slå av lyd",
+    "lib.arcade.note.kalah": "Du spiller den nederste raden, datamaskinen den øverste; den store gropen til høyre er lageret ditt. Klikk på en grop for å ta alle frøene og så dem mot klokken, ett i hver grop (lageret til motstanderen hoppes over). Hvis det siste frøet havner i lageret ditt, får du et nytt trekk; hvis det havner i en tom grop på din side rett overfor en grop med frø, fanger du de frøene. Når den ene siden er tom, går frøene på den andre siden til eierens lager; det største lageret vinner.",
+    "lib.arcade.note.snakes": "Kast terningen og flytt like mange felt, fra 1 til 100. Lander du ved foten av en stige, klatrer du opp; lander du på hodet til en slange, glir du ned. Fra nivå 4 må du kaste akkurat riktig tall for å lande på 100. Høyere nivåer har flere slanger, færre stiger og flere motstandere. Den som kommer først til 100, vinner.",
+    "lib.arcade.square": "Felt {n}",
+    "lib.arcade.ladderUp": "Opp stigen!",
+    "lib.arcade.snakeDown": "Slukt av en slange!",
+    "lib.arcade.needExact": "Du må kaste akkurat riktig tall for å lande på 100.",
+    "lib.arcade.note.nmm": "Hver side har 9 brikker. Fase 1: Dere skiftes om å sette brikker på tomme punkter. Fase 2: Flytt en brikke til et tilstøtende tomt punkt. Når du bare har 3 brikker igjen, kan du «fly» til et hvilket som helst tomt punkt. Få tre på rad (en «mølle») for å fjerne en av motstanderens brikker (først de som ikke står i en mølle). Du taper når du bare har 2 brikker igjen eller ikke kan flytte. Du spiller hvit og starter.",
+    "lib.arcade.inHand": "Skal settes: {a} · {b}",
+    "lib.arcade.removePiece": "Velg en av motstanderens brikker som skal fjernes.",
+    "lib.arcade.enemyWaters": "Fiendens farvann (klikk for å skyte)",
+    "lib.arcade.yourFleet": "Flåten din",
+    "lib.arcade.note.battleship": "Hver side har 5 skip (lengde 5, 4, 3, 3, 2) plassert tilfeldig på et 10x10-rutenett. Dere skiftes om å skyte på en rute: treff blir rødt, bom blir lyseblått, og når alle rutene til et skip er truffet, synker det. Senk hele fiendens flåte først for å vinne. På høyere nivåer gjetter datamaskinen mer lurt hvor skipene dine ligger.",
+    "lib.arcade.shipsLeft": "Skip igjen: du {a} · fienden {b}",
+    "lib.arcade.theySunk": "Fienden senket et av skipene dine!",
+    "lib.arcade.theyHit": "Fienden traff et av skipene dine.",
+    "lib.arcade.theyMiss": "Fienden bommet.",
+    "lib.arcade.youSunk": "Du senket et fiendtlig skip!",
+    "lib.arcade.youHit": "Treff!",
+    "lib.arcade.youMiss": "Bom.",
+    "lib.arcade.shake": "Rist",
+    "lib.arcade.clearBets": "Fjern innsatser",
+    "lib.arcade.note.bau-cua": "Kun virtuelle mynter, ingen ekte penger. Velg en sjetongverdi, klikk på dyrene for å satse, og trykk så Rist. For hver terning som viser et dyr du har satset på, får du innsatsen tilbake pluss like mye til for hver match. Nå målet for antall mynter innen det tillatte antallet runder for å klare nivået.",
+    "lib.arcade.note.baccarat": "Kun virtuelle mynter, ingen ekte penger. Sats på Spiller, Bankier eller Uavgjort, og trykk så Del ut. Verdien av en hånd er siste siffer i summen (A = 1, 2–9 pålydende, 10/J/Q/K = 0); hånden som er nærmest 9, vinner, og tredje kort trekkes etter standardreglene. Spiller betaler 1:1, Bankier 0,95:1, Uavgjort 8:1 (innsatser på Spiller/Bankier returneres ved uavgjort). Nå målet for antall mynter innen det tillatte antallet runder for å klare nivået.",
+    "lib.arcade.banker": "Bankier",
+    "lib.arcade.player": "Spiller",
+    "lib.arcade.tie": "Uavgjort",
+    "lib.arcade.openCards": "Vis kortene",
+    "lib.arcade.note.bai-cao": "Kun virtuelle mynter, ingen ekte penger. Hver side får 3 kort. En hånd gir poeng lik siste siffer i summen (A = 1, 2–9 pålydende, 10/J/Q/K = 10, altså 0 poeng). Rangering: Tre like («Sáp») er høyest, deretter tre bildekort («Ba tiên»), så 9 poeng ned til 0. Legg inn en innsats, trykk Del ut og deretter Vis kortene for å sammenligne med giveren. Fra nivå 6 vinner giveren ved uavgjort. Nå målet for antall mynter innen det tillatte antallet runder for å klare nivået.",
+    "lib.arcade.caoSap": "Tre like",
+    "lib.arcade.caoBaTien": "Tre bildekort",
+    "lib.arcade.caoPts": "{n} poeng",
+    "lib.arcade.note.bingo": "Datamaskinen roper opp tall fra 1 til 75. Når et oppropt tall står på kortet ditt, klikker du på det for å markere det (midten er gratis). Fullfør en rad, kolonne eller diagonal og trykk BINGO! – du må slå datamaskinmotstanderne. Et falskt BINGO! låser knappen i noen sekunder. Høyere nivåer roper raskere og har flere motstandere.",
+    "lib.arcade.opponentsN": "Motstandere: {n}",
+    "lib.arcade.falseBingo": "Ikke en full linje ennå! Knappen er låst i 3 sekunder.",
+    "lib.arcade.bingoGo": "Tallene roper opp!",
+    "lib.arcade.note.yahtzee": "I hver runde kaster du 5 terninger opptil 3 ganger: klikk på en terning for å beholde den, og trykk så Kast for å kaste de andre på nytt. Velg deretter en rute i tabellen å skrive poengene i (hver rute brukes én gang; en rute som ikke passer, gir 0). 13 runder. Rutene Enere–Seksere gir en bonus på 35 hvis summen er 63 eller mer. Nå poengmålet for nivået for å vinne.",
+    "lib.arcade.turnN": "Runde {n}/13",
+    "lib.arcade.pickCat": "Velg en rute å skrive poeng i",
+    "lib.arcade.rollsLeft": "Kast ({n} igjen)",
+    "lib.arcade.upperBonus": "Bonus Enere–Seksere",
+    "lib.arcade.scored": "Fikk {n} poeng",
+    "lib.arcade.note.crazy-eights": "Spill et kort som passer til det øverste kortet i kastbunken, enten i farge eller verdi. Åttere er jokere: du kan spille dem når som helst og velge en ny farge. Har du ikke noe kort å spille, trekker du fra bunken (opptil 3 kort); kan du fortsatt ikke spille, passer du. Den som først blir kvitt alle kortene, vinner. Høyere nivåer har flere motstandere, og datamaskinen spiller mer lurt.",
+    "lib.arcade.opponent": "Motstander",
+    "lib.arcade.pileLeft": "Trekkbunke: {n}",
+    "lib.arcade.pickSuit": "Velg en ny farge",
+    "lib.arcade.aiSuit": "Datamaskinen valgte {s}",
+    "lib.arcade.aiPass": "Datamaskinen passer.",
+    "lib.arcade.mustPlay": "Du har et kort du kan spille – spill det.",
+    "lib.arcade.youPass": "Du trakk 3 kort og passer.",
+    "lib.arcade.bcGourd": "Gresskar",
+    "lib.arcade.bcCrab": "Krabbe",
+    "lib.arcade.bcShrimp": "Reke",
+    "lib.arcade.bcFish": "Fisk",
+    "lib.arcade.bcRooster": "Hane",
+    "lib.arcade.bcDeer": "Hjort",
+    "lib.arcade.yOnes": "Enere",
+    "lib.arcade.yTwos": "Toere",
+    "lib.arcade.yThrees": "Treere",
+    "lib.arcade.yFours": "Firere",
+    "lib.arcade.yFives": "Femmere",
+    "lib.arcade.ySixes": "Seksere",
+    "lib.arcade.yThree": "Tre like",
+    "lib.arcade.yFour": "Fire like",
+    "lib.arcade.yFull": "Hus (25)",
+    "lib.arcade.ySmall": "Liten straight (30)",
+    "lib.arcade.yLarge": "Stor straight (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Sjanse",
+    "lib.arcade.note.race": "Trykk ← → (eller trykk på kjørefeltet du vil til) for å bytte felt og unngå bilene foran deg. Du har 3 liv; kjør hele distansen for å klare nivået. Høyere nivåer har flere felt og raskere trafikk.",
+    "lib.arcade.note.jump": "Figuren spretter av seg selv. Trykk ← → eller dra fingeren for å lande på neste plattform. Blå plattformer beveger seg, brune går i stykker når du lander på dem. Faller du ut av skjermen, taper du; klatre høyt nok for å klare nivået.",
+    "lib.arcade.note.miner": "Kroken svinger fram og tilbake; trykk mellomrom, ↓ eller trykk på feltet for å slippe den ned. Store gullklumper og steiner er tunge og trekkes sakte opp; diamanter er verdt mye. Nå målet for penger før de 60 sekundene er over.",
+    "lib.arcade.note.slicer": "Sveip med fingeren eller musen over frukten for å skjære den. Unngå de svarte bombene. Hvis du går glipp av en frukt eller skjærer en bombe, mister du et liv (du har 3). Skjær nok frukt for å klare nivået.",
+    "lib.arcade.note.hoops": "Trykk på banen, dra nedover (som en slangebelle) og slipp for å skyte ballen mot kurven. Jo lenger du drar, jo hardere blir kastet. Score nok kurver med skuddene du har; fra nivå 4 beveger kurven seg.",
+    "lib.arcade.note.bubbles": "Beveg musen eller fingeren for å sikte, og klikk/trykk eller trykk mellomrom/Skyt for å skyte. Koble sammen 3 eller flere bobler i samme farge for å sprenge dem; bobler som mister støtten, faller. Radene siger sakte nedover, så hold dem unna linjen nederst. Fjern alle boblene for å vinne.",
+    "lib.arcade.note.chase": "Bruk piltastene (eller sveip / knappene) for å svinge og spise alle prikkene i labyrinten mens du unngår spøkelsene som jager deg. Du har 3 liv; høyere nivåer har flere spøkelser som er raskere og jager mer lurt.",
+    "lib.arcade.height": "Høyde: {n}/{t} m",
+    "lib.arcade.money": "Penger: {n}/{t}",
+    "lib.arcade.sliced": "Skåret: {n}/{t}",
+    "lib.arcade.hoopScore": "Scoret: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} skudd igjen",
+    "lib.arcade.bubbleLeft": "{n} bobler igjen",
+    "lib.arcade.shotsN": "Skudd: {n}",
+    "lib.arcade.dotsLeft": "{n} prikker igjen",
+    "lib.arcade.note.kakuro": "Fyll de hvite rutene med sifrene 1–9 slik at hver rekke summerer seg til hintet i den svarte ruten (tallet øverst til høyre gjelder rekken mot høyre, tallet nederst til venstre rekken nedover), uten at noe siffer gjentas i en rekke. Bruk piltastene for å flytte deg.",
+    "lib.arcade.note.kenken": "Fyll rutenettet med tallene 1 til N slik at ingen tall gjentas i en rad eller kolonne. Hvert område med tykk ramme viser et mål og en regneoperasjon (+, −, ×, ÷): tallene i området må gi dette resultatet. Bruk piltastene for å flytte deg.",
+    "lib.arcade.note.wordGuess": "Gjett det hemmelige engelske ordet. Etter hvert forsøk betyr grønt riktig bokstav på riktig plass, gult at bokstaven er i ordet men et annet sted, og grått at bokstaven ikke er i ordet. Skriv på tastaturet eller bruk tastene på skjermen, og trykk Enter for å sende inn. Høyere nivåer har lengre ord og færre forsøk.",
+    "lib.arcade.note.hangman": "Gjett det hemmelige engelske ordet ved å velge bokstaver én om gangen. Hver gale bokstav legger til en del på galgemannen; når du har brukt opp feilene, taper du. Høyere nivåer har lengre ord og færre tillatte feil.",
+    "lib.arcade.note.scramble": "Sett de blandede bokstavene sammen til et ekte engelsk ord og skriv det i svarfeltet. Hvert nivå har 5 ord; løs minst 4 før tiden for hvert ord går ut for å klare nivået. Hintet viser første bokstav.",
+    "lib.arcade.cellsLeft": "{n} tomme ruter igjen",
+    "lib.arcade.wrongN": "{n} ruter er ikke riktige.",
+    "lib.arcade.noError": "Ingen feil funnet så langt.",
+    "lib.arcade.tooShort": "For få bokstaver",
+    "lib.arcade.answerIs": "Svar: {w}",
+    "lib.arcade.livesLeft": "{n} feil igjen",
+    "lib.arcade.yourAnswer": "Svaret ditt",
+    "lib.arcade.skip": "Hopp over",
+    "lib.arcade.notThis": "Ikke riktig, prøv igjen.",
+    "lib.arcade.startsWith": "Første bokstav: {c}",
+    "lib.arcade.note.domino": "Hver spiller får 7 brikker; den som har den høyeste dobbelen, starter. Spill en brikke der tallet passer til den ene enden av kjeden. Kan du ikke spille, trekker du fra bunken til du kan; er den tom, passer du. Den som først blir kvitt alle brikkene, vinner; hvis begge er blokkert, vinner den med lavest sum av øyne.",
+    "lib.arcade.note.hearts": "Fire spillere, 13 kort hver. Kløver 2 starter. Du må følge fargen som er spilt ut, hvis du kan. Hvert hjerter er 1 poeng og spar dame er 13; den som vinner et stikk, tar poengene i det. Færrest poeng er best, og hvis du tar alle 26 poengene, får alle de andre 26 i stedet. Du kan ikke spille ut hjerter før det er spilt hjerter. Etter siste runde vinner du hvis poengsummen din er den laveste (eller delt laveste).",
+    "lib.arcade.note.holdem": "Én mot én mot datamaskinen, kun med virtuelle sjetonger. Hver spiller får 2 skjulte kort, og 5 felleskort avdekkes (flopp, turn, river); lag den beste hånden på 5 kort. I hver runde kan du kaste kortene (fold), synge (call) eller sjekke (check), eller øke (raise). Blindene øker hver 4. hånd. Du vinner når datamaskinen går tom for sjetonger, eller ved å ha flest sjetonger etter at handgrensen er nådd. Ingen ekte penger er involvert.",
+    "lib.arcade.dmDraw": "Trekk en brikke",
+    "lib.arcade.dmPass": "Pass",
+    "lib.arcade.dmEmpty": "Ingen brikker spilt ennå",
+    "lib.arcade.dmYard": "Trekkbunke: {n} brikker",
+    "lib.arcade.dmLeft": "Venstre ende",
+    "lib.arcade.dmRight": "Høyre ende",
+    "lib.arcade.dmTie": "Uavgjort! Begge sider står likt.",
+    "lib.arcade.hrHand": "Hånd {n}/{t}",
+    "lib.arcade.hrTook": "{p} vinner stikket ({n} poeng).",
+    "lib.arcade.hrIllegal": "Du kan ikke spille dette kortet (følg fargen, eller hjerter kan ikke spilles ut ennå).",
+    "lib.arcade.blinds": "Stor blind: {n}",
+    "lib.arcade.pot": "Pott: {n}",
+    "lib.arcade.fold": "Kast",
+    "lib.arcade.check": "Sjekk",
+    "lib.arcade.callN": "Syng {n}",
+    "lib.arcade.raiseTo": "Øk til",
+    "lib.arcade.raiseN": "Øk til {n}",
+    "lib.arcade.thOppFold": "Datamaskinen kaster kortene; du vinner denne hånden.",
+    "lib.arcade.thYouFold": "Du kastet kortene.",
+    "lib.arcade.thOppWin": "Datamaskinen vinner denne hånden",
+    "lib.arcade.thYouWin": "Du vinner denne hånden",
+    "lib.arcade.thSplit": "Delt pott",
+    "lib.arcade.thAiFold": "Datamaskinen kaster kortene.",
+    "lib.arcade.thAiRaise": "Datamaskinen øker til {n}.",
+    "lib.arcade.thAiCall": "Datamaskinen synger / sjekker.",
+    "lib.arcade.hand.high": "Høyt kort",
+    "lib.arcade.hand.pair": "Par",
+    "lib.arcade.hand.twoPair": "To par",
+    "lib.arcade.hand.trips": "Tre like",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Hus",
+    "lib.arcade.hand.quads": "Fire like",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "En rute lyser opp etter hverandre på et 3x3-rutenett. Trykk «Match!» (eller mellomrom) når den opplyste posisjonen er den samme som for N steg siden (N vises øverst). Du trenger minst 80 % riktige valg for å klare nivået. Høyere nivåer bruker et større N.",
+    "lib.arcade.nbMatch": "Match!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Riktige: {a} · Gale: {b}",
+    "lib.arcade.nbAcc": "Treffsikkerhet: {n} %",
+    "lib.arcade.note.clicker": "Klikk på kjeksen for å bake kjeks, og bruk dem på hjelpere som baker automatisk (prisene stiger for hver du kjøper). Bak målet for antall kjeks innen 2 minutter for å klare nivået.",
+    "lib.arcade.ckCursor": "Markør",
+    "lib.arcade.ckGrandma": "Bakende bestemor",
+    "lib.arcade.ckFarm": "Gård",
+    "lib.arcade.ckMine": "Sukkergruve",
+    "lib.arcade.ckFactory": "Fabrikk",
+    "lib.arcade.ckCookie": "Kjeks",
+    "lib.arcade.ckEarned": "Bakt: {n}/{t}",
+    "lib.arcade.chips2": "Kjeks: {n}",
+    "lib.arcade.ckCps": "{n} kjeks/sekund",
+    "lib.arcade.note.onet": "Velg to like brikker som kan forbindes med en vei med høyst 2 svinger uten å krysse andre brikker, for å fjerne dem. Fjern alle brikkene før tiden går ut for å vinne. Når det ikke er flere trekk, kan du stokke om (begrenset antall ganger).",
+    "lib.arcade.shuffle": "Stokk om",
+    "lib.arcade.tilesLeft": "{n} brikker igjen",
+    "lib.arcade.autoShuffle": "Ingen flere trekk – stokket om automatisk.",
+    "lib.arcade.note.jigsaw": "Bildet er delt i biter og blandet. Trykk på én bit og så en annen for å bytte dem, og bygg opp bildet som vises som forlaget. Biter på riktig plass får grønn kant. Høyere nivåer har flere biter.",
+    "lib.arcade.jgRef": "Forlagsbilde",
+    "lib.arcade.jgPlaced": "På plass: {a}/{b}",
+    "lib.arcade.golfStrokes": "Slag: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Du spiller de hvite brikkene, som flyttes fra øverst til høyre rundt til nederst til høyre (hjemmet ditt). Kast terningene, klikk på brikken du vil flytte, og klikk så på et uthevet mål. Lander du på et punkt med nøyaktig én motstanderbrikke, slår du den ut på midtbåndet, og den spilleren må først få den inn igjen. Du kan ikke lande på et punkt med to eller flere motstanderbrikker. Når alle 15 brikkene dine er i hjemmet ditt (de siste 6 punktene), kan du ta dem ut. Den som først har tatt ut alle 15, vinner.",
+    "lib.arcade.bgRoll": "Kast terningene",
+    "lib.arcade.bgOff": "Ta ut",
+    "lib.arcade.bgRollFirst": "Kast terningene",
+    "lib.arcade.bgInfo": "Ute: du {a} · datamaskinen {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Du har ingen lovlige trekk igjen.",
+    "lib.arcade.note.tienlen": "Fire spillere, 13 kort hver. Rekkefølgen på kortene fra lavest til høyest: 3, 4, … K, A, 2; farger fra lavest til høyest: spar, kløver, ruter, hjerter. Den som har spar 3, starter. Spill ett enkelt kort, et par, tre like, fire like eller en rekke på 3 eller flere kort på rad (uten toere). Neste spiller må spille samme type og høyere, eller passe; fire like kan slå en enkelt toer eller et par toere. Når alle de andre passer, kan den som sist spilte, åpne med hva som helst. Den som først blir kvitt alle kortene, vinner. Velg kort og trykk Spill.",
+    "lib.arcade.tlPlay": "Spill",
+    "lib.arcade.tlPass": "Pass",
+    "lib.arcade.tlClear": "Fjern utvalg",
+    "lib.arcade.tlPassed": "passet",
+    "lib.arcade.tlFree": "Bordet er tomt – du kan åpne med hva som helst",
+    "lib.arcade.tlLeft": "Kort igjen: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passer.",
+    "lib.arcade.tlBad": "De valgte kortene danner ikke en gyldig kombinasjon.",
+    "lib.arcade.tlLow": "Denne kombinasjonen er ikke høy nok til å slå bordet."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Reaksjonstest",
       "desc": "Klikk i det øyeblikket skjermen blir grønn; snittet over 5 runder må holde nivåets grense, som blir strammere over 10 nivåer."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Så frø rundt gropene, fang motstanderens frø og få et nytt trekk når du lander i lageret ditt; spill mot datamaskinen i 10 nivåer fra lett til vanskelig."
+    },
+    "snakes-ladders": {
+      "name": "Stigespill",
+      "desc": "Kast terningen fra felt 1 til 100, klatre opp stiger, unngå slanger og nå målet før motstanderne dine; 10 nivåer."
+    },
+    "nine-mens-morris": {
+      "name": "Mølle (Nine Men’s Morris)",
+      "desc": "Sett, skyv og fly brikkene dine for å få tre på rad og fjerne motstanderens brikker; spill mot datamaskinen i 10 nivåer."
+    },
+    "battleship": {
+      "name": "Senke skip",
+      "desc": "Finn og senk datamaskinens flåte på et 10x10-rutenett før den senker din; 10 nivåer der datamaskinen gjetter stadig lurere."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (gresskar, krabbe, fisk, reke)",
+      "desc": "Tradisjonelt vietnamesisk terningspill: sats virtuelle mynter på dyrene og rist tre terninger; nå målet for antall mynter i 10 nivåer (ingen ekte penger)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Sats på Spiller, Bankier eller Uavgjort med kort som deles ut etter standardreglene, med virtuelle mynter; nå målet for antall mynter i 10 nivåer (ingen ekte penger)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (trekortsspill)",
+      "desc": "Sammenlign hender på 3 kort med giveren: tre like, tre bildekort, så 9 poeng ned til 0; virtuelle mynter, 10 nivåer, ingen ekte penger."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marker de oppropte tallene på 5x5-kortet ditt og rop BINGO før datamaskinmotstanderne; tallene roper opp stadig raskere gjennom 10 nivåer."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (fem terninger)",
+      "desc": "Kast fem terninger, behold de gode og fyll ut 13 poengruter; nå poengmålet i 10 nivåer."
+    },
+    "crazy-eights": {
+      "name": "Gale åttere (Crazy Eights)",
+      "desc": "Følg farge eller verdi, åttere bytter farge; bli kvitt kortene før 1 til 3 datamaskinmotstandere i 10 nivåer."
+    },
+    "car-race": {
+      "name": "Billøp – unngå bilene",
+      "desc": "Bytt felt for å unngå bilene foran deg og kjør hele distansen; 10 nivåer med flere felt og raskere trafikk."
+    },
+    "sky-jump": {
+      "name": "Himmelhopp",
+      "desc": "Sprett fra plattform til plattform og klatre så høyt du kan uten å falle; 10 nivåer med færre, bevegelige og skjøre plattformer."
+    },
+    "gold-miner": {
+      "name": "Gullgraver",
+      "desc": "Slipp kroken ned for å hale inn gull og diamanter, unngå tunge steiner og nå målet for penger innen 60 sekunder; 10 nivåer."
+    },
+    "fruit-slice": {
+      "name": "Skjær frukt",
+      "desc": "Sveip for å skjære frukten som flyr opp, og unngå bombene; 10 nivåer med mer frukt og flere bomber."
+    },
+    "basketball": {
+      "name": "Basketballskudd",
+      "desc": "Dra og slipp for å skyte ballen i kurven innenfor et begrenset antall skudd; 10 nivåer, med bevegelig kurv fra nivå 4."
+    },
+    "bubble-shooter": {
+      "name": "Boblesmell",
+      "desc": "Skyt bobler for å koble sammen 3 eller flere i samme farge og sprenge dem, og fjern alle før de når bunnen; 10 nivåer med flere farger."
+    },
+    "dot-chase": {
+      "name": "Prikkjakt",
+      "desc": "Spis alle prikkene i labyrinten mens du unngår spøkelsene som jager deg; 10 nivåer med flere og lurere spøkelser."
+    },
+    "kakuro": {
+      "name": "Kakuro (krysssummer)",
+      "desc": "Fyll de hvite rutene med sifrene 1–9 slik at hver rekke summerer seg til hintet uten gjentakelser; 10 nivåer, rutenett fra 5x5 til 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Fyll rutenettet uten gjentakelser i rader og kolonner slik at hvert område gir målet sitt med regneoperasjonen sin; 10 nivåer, rutenett fra 3x3 til 6x6."
+    },
+    "word-guess": {
+      "name": "Ordgjetting (Wordle-stil)",
+      "desc": "Gjett det hemmelige engelske ordet med grønne, gule og grå hint; 10 nivåer med ord på 4–6 bokstaver og færre forsøk."
+    },
+    "hangman": {
+      "name": "Hangman (Galgespill)",
+      "desc": "Gjett det engelske ordet én bokstav om gangen før du har brukt opp feilene; 10 nivåer med lengre ord og færre tillatte feil."
+    },
+    "word-scramble": {
+      "name": "Ordpuslespill (anagram)",
+      "desc": "Sett blandede bokstaver sammen til et engelsk ord før tiden går ut; 10 nivåer, 5 ord per nivå."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Legg brikker i begge ender av kjeden og bli kvitt brikkene dine før datamaskinen; 10 nivåer der datamaskinen blir stadig lurere."
+    },
+    "hearts": {
+      "name": "Hearts (Hjerter)",
+      "desc": "Unngå hjerter og spar dame i et kortspill for fire spillere; lavest poengsum er best; 10 nivåer mot stadig lurere datamaskinspillere."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuelle sjetonger)",
+      "desc": "Én mot én-poker mot datamaskinen med virtuelle sjetonger: kast, syng eller øk, og vinn når datamaskinen går tom for sjetonger; 10 nivåer, ingen ekte penger."
+    },
+    "n-back": {
+      "name": "N-Back-hukommelse",
+      "desc": "Se på den opplyste ruten og trykk Match når den er den samme som for N steg siden; 10 nivåer med N opptil 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klikk for å bake kjeks, kjøp hjelpere som baker automatisk, og nå målet innen 2 minutter; 10 nivåer."
+    },
+    "tile-connect": {
+      "name": "Koble brikker (Onet-stil)",
+      "desc": "Koble like brikker med en vei med høyst to svinger og tøm brettet før tiden går ut; 10 nivåer med større brett."
+    },
+    "jigsaw": {
+      "name": "Bildepuslespill",
+      "desc": "Bytt de blandede bitene for å bygge opp bildet; 10 nivåer fra 3x3 til 6x6 biter."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Dra tilbake og slipp for å putte ballen i hullet innenfor slaggrensen; 10 baner med vegger og sand."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Kast terningene, før brikkene dine hjem og ta dem ut før datamaskinen, og slå ut dens enkeltbrikker underveis; 10 nivåer."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Tretten)",
+      "desc": "Det vietnamesiske kortspillet for fire der man skal bli kvitt kortene: spill enkeltkort, par, rekker og fire like for å bli først tom for kort; 10 nivåer."
     }
   },
   "s": {

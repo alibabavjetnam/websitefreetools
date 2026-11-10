@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Skoči",
     "lib.arcade.aimTarget": "Meta",
     "lib.game.soundOn": "Uključi zvuk",
-    "lib.game.soundOff": "Isključi zvuk"
+    "lib.game.soundOff": "Isključi zvuk",
+    "lib.arcade.note.kalah": "Ti igraš donji red, računalo gornji; velika jama s desne strane je tvoja riznica. Klikni jamu da uzmeš sve sjemenke iz nje i posij ih suprotno od smjera kazaljke na satu, po jednu u svaku jamu (preskačući protivničku riznicu). Ako zadnja sjemenka padne u tvoju riznicu, igraš ponovno; ako padne u praznu jamu na tvojoj strani nasuprot jame sa sjemenkama, osvajaš te sjemenke. Kad jedna strana ostane prazna, sjemenke druge strane idu u riznicu njezina vlasnika; pobjeđuje veća riznica.",
+    "lib.arcade.note.snakes": "Baci kockicu i pomakni se za toliko polja, od 1 do 100. Ako staneš na podnožje ljestava, penješ se njima, a ako staneš na zmijinu glavu, kližeš dolje. Od 4. razine moraš baciti točan broj da bi stao na 100. Više razine imaju više zmija, manje ljestava i više protivnika. Pobjeđuje tko prvi stigne do 100.",
+    "lib.arcade.square": "Polje {n}",
+    "lib.arcade.ladderUp": "Uz ljestve!",
+    "lib.arcade.snakeDown": "Progutala te zmija!",
+    "lib.arcade.needExact": "Za polje 100 trebaš točan broj.",
+    "lib.arcade.note.nmm": "Svaka strana ima 9 figura. 1. faza: naizmjence postavljate figure na prazna mjesta. 2. faza: pomakni figuru na susjedno prazno mjesto. Kad ti ostanu samo 3 figure, možeš „letjeti” na bilo koje prazno mjesto. Složi tri u nizu (mlin) da ukloniš protivničku figuru (prvo one koje nisu u mlinu). Gubiš kad ti ostanu 2 figure ili ne možeš odigrati potez. Ti igraš bijelima i prvi si na potezu.",
+    "lib.arcade.inHand": "Za postavljanje: {a} · {b}",
+    "lib.arcade.removePiece": "Odaberi protivničku figuru za uklanjanje.",
+    "lib.arcade.enemyWaters": "Neprijateljske vode (klikni za paljbu)",
+    "lib.arcade.yourFleet": "Tvoja flota",
+    "lib.arcade.note.battleship": "Svaka strana ima 5 brodova (duljine 5, 4, 3, 3, 2) nasumično raspoređenih na mreži 10x10. Naizmjence gađate polje: pogodak postaje crven, promašaj svijetloplav, a kad pogodiš sva polja broda, on tone. Pobjeđuje tko prvi potopi cijelu neprijateljsku flotu. Na višim razinama računalo pametnije zaključuje gdje su tvoji brodovi.",
+    "lib.arcade.shipsLeft": "Preostali brodovi: ti {a} · protivnik {b}",
+    "lib.arcade.theySunk": "Neprijatelj je potopio jedan tvoj brod!",
+    "lib.arcade.theyHit": "Neprijatelj je pogodio jedan tvoj brod.",
+    "lib.arcade.theyMiss": "Neprijatelj je promašio.",
+    "lib.arcade.youSunk": "Potopio si neprijateljski brod!",
+    "lib.arcade.youHit": "Pogodak!",
+    "lib.arcade.youMiss": "Promašaj.",
+    "lib.arcade.shake": "Protresi",
+    "lib.arcade.clearBets": "Očisti oklade",
+    "lib.arcade.note.bau-cua": "Samo virtualni novčići, bez pravog novca. Odaberi vrijednost žetona, klikni životinje da uložiš okladu, zatim pritisni Protresi. Za svaku kockicu koja odgovara životinji na koju si se kladio, dobivaš ulog natrag plus isti iznos za svako podudaranje. Dosegni ciljni broj novčića u dopuštenom broju rundi da prijeđeš razinu.",
+    "lib.arcade.note.baccarat": "Samo virtualni novčići, bez pravog novca. Kladi se na Igrača, Bankara ili Neriješeno, zatim pritisni Podijeli. Vrijednost ruke je zadnja znamenka zbroja (A = 1, 2–9 nominalna vrijednost, 10/J/Q/K = 0); pobjeđuje ruka bliža broju 9, a treća se karta vuče po standardnim pravilima. Igrač plaća 1:1, Bankar 0,95:1, Neriješeno 8:1 (oklade na Igrača/Bankara vraćaju se kod neriješenog). Dosegni ciljni broj novčića u dopuštenom broju rundi da prijeđeš razinu.",
+    "lib.arcade.banker": "Bankar",
+    "lib.arcade.player": "Igrač",
+    "lib.arcade.tie": "Neriješeno",
+    "lib.arcade.openCards": "Otkrij",
+    "lib.arcade.note.bai-cao": "Samo virtualni novčići, bez pravog novca. Svaka strana dobiva 3 karte. Ruka vrijedi zadnju znamenku zbroja (A = 1, 2–9 nominalna vrijednost, 10/J/Q/K = 10, tj. 0 bodova). Poredak: tri ista („Sáp”) su najjača, zatim tri figure („Ba tiên”), pa 9 bodova do 0. Uloži okladu, pritisni Podijeli pa Otkrij da usporediš s djeliteljem. Od 6. razine djelitelj pobjeđuje kod izjednačenja. Dosegni ciljni broj novčića u dopuštenom broju rundi da prijeđeš razinu.",
+    "lib.arcade.caoSap": "Tri ista",
+    "lib.arcade.caoBaTien": "Tri figure",
+    "lib.arcade.caoPts": "{n} bod.",
+    "lib.arcade.note.bingo": "Računalo izvlači brojeve od 1 do 75. Kad je izvučeni broj na tvojoj kartici, klikni ga da ga označiš (sredina je besplatna). Dovrši redak, stupac ili dijagonalu i pritisni BINGO! — moraš pobijediti računalne protivnike. Pogrešan BINGO! zaključava gumb na nekoliko sekundi. Više razine izvlače brzo i imaju više protivnika.",
+    "lib.arcade.opponentsN": "Protivnici: {n}",
+    "lib.arcade.falseBingo": "Još nema pune linije! Gumb je zaključan 3 sekunde.",
+    "lib.arcade.bingoGo": "Izvlačimo brojeve!",
+    "lib.arcade.note.yahtzee": "U svakom potezu bacaš 5 kockica do 3 puta: klikni kockicu da je zadržiš, zatim pritisni Baci da ponovno baciš ostale. Zatim odaberi polje u tablici za upis bodova (svako se polje koristi jednom; polje koje ne odgovara donosi 0). Ukupno 13 poteza. Polja Jedinice–Šestice donose bonus od 35 ako zbroj iznosi 63 ili više. Dosegni ciljni rezultat razine da pobijediš.",
+    "lib.arcade.turnN": "Potez {n}/13",
+    "lib.arcade.pickCat": "Odaberi polje za upis bodova",
+    "lib.arcade.rollsLeft": "Baci (još {n})",
+    "lib.arcade.upperBonus": "Bonus Jedinice–Šestice",
+    "lib.arcade.scored": "Upisano {n}",
+    "lib.arcade.note.crazy-eights": "Odigraj kartu koja se podudara s gornjom kartom odbačenog špila po boji ili vrijednosti. Osmice su džokeri: odigraj ih u bilo kojem trenutku i odaberi novu boju. Ako nemaš kartu za igranje, vuci iz špila (do 3 karte); ako i dalje ne možeš igrati, preskačeš. Pobjeđuje tko prvi isprazni ruku. Više razine imaju više protivnika, a računalo igra pametnije.",
+    "lib.arcade.opponent": "Protivnik",
+    "lib.arcade.pileLeft": "Špil za vučenje: {n}",
+    "lib.arcade.pickSuit": "Odaberi novu boju",
+    "lib.arcade.aiSuit": "Računalo je odabralo {s}",
+    "lib.arcade.aiPass": "Računalo preskače.",
+    "lib.arcade.mustPlay": "Imaš kartu za igranje — odigraj je.",
+    "lib.arcade.youPass": "Povukao si 3 karte i preskačeš.",
+    "lib.arcade.bcGourd": "Tikva",
+    "lib.arcade.bcCrab": "Rak",
+    "lib.arcade.bcShrimp": "Škampi",
+    "lib.arcade.bcFish": "Riba",
+    "lib.arcade.bcRooster": "Pijetao",
+    "lib.arcade.bcDeer": "Jelen",
+    "lib.arcade.yOnes": "Jedinice",
+    "lib.arcade.yTwos": "Dvojke",
+    "lib.arcade.yThrees": "Trojke",
+    "lib.arcade.yFours": "Četvorke",
+    "lib.arcade.yFives": "Petice",
+    "lib.arcade.ySixes": "Šestice",
+    "lib.arcade.yThree": "Tri ista",
+    "lib.arcade.yFour": "Četiri ista",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Mali niz (30)",
+    "lib.arcade.yLarge": "Veliki niz (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Šansa",
+    "lib.arcade.note.race": "Pritisni ← → (ili dodirni traku koju želiš) za promjenu trake i izbjegavanje automobila ispred. Imaš 3 života; prijeđi cijelu udaljenost da prijeđeš razinu. Više razine imaju više traka i brži promet.",
+    "lib.arcade.note.jump": "Lik skače sam od sebe. Pritisni ← → ili povuci prstom da sletiš na sljedeću platformu. Plave platforme se pomiču, a smeđe se lome kad sletiš. Ako ispadneš s ekrana, gubiš; popni se dovoljno visoko da prijeđeš razinu.",
+    "lib.arcade.note.miner": "Kuka se njiše lijevo-desno; pritisni razmaknicu, ↓ ili dodirni polje da je spustiš. Veliko zlato i kamenje teški su i sporo se povlače; dijamanti vrijede puno. Dosegni ciljni iznos prije isteka 60 sekundi.",
+    "lib.arcade.note.slicer": "Prijeđi prstom ili mišem preko voća da ga prerežeš. Izbjegavaj crne bombe. Propušteno voće ili prerezana bomba koštaju te jednog života (imaš 3). Prereži dovoljno voća da prijeđeš razinu.",
+    "lib.arcade.note.hoops": "Pritisni teren, povuci prema dolje (kao praćku) i otpusti da baciš loptu prema obruču. Što dalje povučeš, to je bacanje jače. Postigni dovoljno koševa u dopuštenom broju bacanja; od 4. razine obruč se pomiče.",
+    "lib.arcade.note.bubbles": "Pomiči miš ili prst da ciljaš, zatim klikni/dodirni ili pritisni razmaknicu/Ispali da pucaš. Spoji 3 ili više mjehurića iste boje da ih puknu; mjehurići koji ostanu bez oslonca padaju. Redovi se polako spuštaju, pa ih drži podalje od donje linije. Očisti sve mjehuriće da pobijediš.",
+    "lib.arcade.note.chase": "Koristi tipke sa strelicama (ili povlačenje / gumbe) za skretanje i pojedi sve točkice u labirintu izbjegavajući duhove koji te love. Imaš 3 života; više razine imaju više duhova koji su brži i pametnije te love.",
+    "lib.arcade.height": "Visina: {n}/{t} m",
+    "lib.arcade.money": "Novac: {n}/{t}",
+    "lib.arcade.sliced": "Prerezano: {n}/{t}",
+    "lib.arcade.hoopScore": "Postignuto: {n}/{t}",
+    "lib.arcade.shotsLeft": "Preostalo bacanja: {n}",
+    "lib.arcade.bubbleLeft": "Preostalo mjehurića: {n}",
+    "lib.arcade.shotsN": "Hici: {n}",
+    "lib.arcade.dotsLeft": "Preostalo točkica: {n}",
+    "lib.arcade.note.kakuro": "Ispuni bijela polja znamenkama 1–9 tako da svaki niz zbrojem daje broj iz crnog polja (broj gore desno vrijedi za niz udesno, broj dolje lijevo za niz prema dolje), bez ponavljanja znamenki unutar niza. Za kretanje koristi tipke sa strelicama.",
+    "lib.arcade.note.kenken": "Ispuni mrežu brojevima od 1 do N tako da se nijedan broj ne ponavlja u retku ili stupcu. Svaki podebljano obrubljeni blok prikazuje cilj i računsku operaciju (+, −, ×, ÷): brojevi u bloku moraju dati taj rezultat. Za kretanje koristi tipke sa strelicama.",
+    "lib.arcade.note.wordGuess": "Pogodi tajnu englesku riječ. Nakon svakog pokušaja, zelena znači točno slovo na točnom mjestu, žuta znači da slovo postoji u riječi ali na drugom mjestu, a siva da slova nema u riječi. Tipkaj na tipkovnici ili koristi tipke na ekranu i pritisni Enter za potvrdu. Više razine imaju duže riječi i manje pokušaja.",
+    "lib.arcade.note.hangman": "Pogodi tajnu englesku riječ biranjem slova jedno po jedno. Svako pogrešno slovo dodaje dio obješene figure; kad ti ponestane pogrešaka, gubiš. Više razine imaju duže riječi i dopuštaju manje pogrešaka.",
+    "lib.arcade.note.scramble": "Presloži pomiješana slova u pravu englesku riječ i upiši je u polje za odgovor. Svaka razina ima 5 riječi; riješi barem 4 prije nego što istekne vrijeme za svaku riječ da prijeđeš razinu. Savjet otkriva prvo slovo.",
+    "lib.arcade.cellsLeft": "Preostalo praznih polja: {n}",
+    "lib.arcade.wrongN": "Netočnih polja: {n}.",
+    "lib.arcade.noError": "Za sada nema pogrešaka.",
+    "lib.arcade.tooShort": "Premalo slova",
+    "lib.arcade.answerIs": "Odgovor: {w}",
+    "lib.arcade.livesLeft": "Preostalo pogrešaka: {n}",
+    "lib.arcade.yourAnswer": "Tvoj odgovor",
+    "lib.arcade.skip": "Preskoči",
+    "lib.arcade.notThis": "Nije točno, pokušaj ponovno.",
+    "lib.arcade.startsWith": "Prvo slovo: {c}",
+    "lib.arcade.note.domino": "Svaki igrač dobiva 7 pločica; počinje onaj tko ima najveći dvostruki. Odigraj pločicu čiji broj odgovara jednom kraju lanca. Ako ne možeš igrati, vuci iz zalihe dok ne možeš; ako je prazna, preskačeš. Pobjeđuje tko prvi isprazni ruku; ako su oba igrača blokirana, pobjeđuje onaj s manjim zbrojem točkica.",
+    "lib.arcade.note.hearts": "Četiri igrača, po 13 karata. Prvi igra tref 2. Moraš pratiti boju ako možeš. Svako srce vrijedi 1 bod, a pik dama 13; tko uzme štih, uzima njegove bodove. Manje je bolje, a ako netko uzme svih 26 bodova, svi ostali dobivaju 26. Ne možeš započeti srcem dok se neko srce ne odigra. Nakon zadnje ruke pobjeđuješ ako je tvoj rezultat najniži (ili dijeli najniži).",
+    "lib.arcade.note.holdem": "Jedan na jedan protiv računala samo s virtualnim žetonima. Svaki igrač dobiva 2 privatne karte, a otkriva se 5 zajedničkih (flop, turn, river); složi najbolju ruku od 5 karata. U svakoj rundi možeš odustati (fold), pratiti (call) ili proći (check) ili povisiti (raise). Slijepi ulozi rastu svake 4 ruke. Pobjeđuješ kad računalu ponestane žetona ili ako imaš više žetona nakon ograničenog broja ruku. Pravi novac nije uključen.",
+    "lib.arcade.dmDraw": "Povuci pločicu",
+    "lib.arcade.dmPass": "Preskoči",
+    "lib.arcade.dmEmpty": "Još nije odigrana nijedna pločica",
+    "lib.arcade.dmYard": "Zaliha: {n} pločica",
+    "lib.arcade.dmLeft": "Lijevi kraj",
+    "lib.arcade.dmRight": "Desni kraj",
+    "lib.arcade.dmTie": "Neriješeno! Obje strane su izjednačene.",
+    "lib.arcade.hrHand": "Ruka {n}/{t}",
+    "lib.arcade.hrTook": "{p} osvaja štih ({n} bodova).",
+    "lib.arcade.hrIllegal": "Ne možeš odigrati ovu kartu (prati boju, a srcem se još ne može započeti).",
+    "lib.arcade.blinds": "Veliki slijepi: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Odustani",
+    "lib.arcade.check": "Proći",
+    "lib.arcade.callN": "Prati {n}",
+    "lib.arcade.raiseTo": "Povisi na",
+    "lib.arcade.raiseN": "Povisi na {n}",
+    "lib.arcade.thOppFold": "Računalo odustaje; ti osvajaš ovu ruku.",
+    "lib.arcade.thYouFold": "Odustao si.",
+    "lib.arcade.thOppWin": "Računalo osvaja ovu ruku",
+    "lib.arcade.thYouWin": "Ti osvajaš ovu ruku",
+    "lib.arcade.thSplit": "Podijeljeni pot",
+    "lib.arcade.thAiFold": "Računalo odustaje.",
+    "lib.arcade.thAiRaise": "Računalo povisuje na {n}.",
+    "lib.arcade.thAiCall": "Računalo prati / prolazi.",
+    "lib.arcade.hand.high": "Visoka karta",
+    "lib.arcade.hand.pair": "Par",
+    "lib.arcade.hand.twoPair": "Dva para",
+    "lib.arcade.hand.trips": "Tri ista",
+    "lib.arcade.hand.straight": "Niz",
+    "lib.arcade.hand.flush": "Boja",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Četiri ista",
+    "lib.arcade.hand.sflush": "Niz u boji",
+    "lib.arcade.note.nback": "Na mreži 3x3 jedno po jedno svijetli polje. Pritisni „Podudara se!” (ili razmaknicu) kad je osvijetljeni položaj isti kao prije N koraka (N je prikazan gore). Za prelazak razine treba ti najmanje 80% točnih odluka. Više razine koriste veći N.",
+    "lib.arcade.nbMatch": "Podudara se!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Točno: {a} · Netočno: {b}",
+    "lib.arcade.nbAcc": "Točnost: {n}%",
+    "lib.arcade.note.clicker": "Klikni kolačić da ispečeš kolačiće, zatim ih potroši na pomoćnike koji peku automatski (cijene rastu sa svakom kupnjom). Ispeci ciljni broj kolačića u 2 minute da prijeđeš razinu.",
+    "lib.arcade.ckCursor": "Pokazivač",
+    "lib.arcade.ckGrandma": "Baka pekarica",
+    "lib.arcade.ckFarm": "Farma",
+    "lib.arcade.ckMine": "Rudnik šećera",
+    "lib.arcade.ckFactory": "Tvornica",
+    "lib.arcade.ckCookie": "Kolačić",
+    "lib.arcade.ckEarned": "Ispečeno: {n}/{t}",
+    "lib.arcade.chips2": "Kolačići: {n}",
+    "lib.arcade.ckCps": "{n} kolačića/sekundi",
+    "lib.arcade.note.onet": "Odaberi dvije jednake pločice koje se mogu spojiti putem s najviše 2 zavoja koji ne prelazi preko drugih pločica da ih ukloniš. Ukloni sve pločice prije isteka vremena da pobijediš. Kad ne ostane poteza, možeš promiješati (ograničen broj puta).",
+    "lib.arcade.shuffle": "Promiješaj",
+    "lib.arcade.tilesLeft": "Preostalo pločica: {n}",
+    "lib.arcade.autoShuffle": "Nema više poteza — automatski promiješano.",
+    "lib.arcade.note.jigsaw": "Slika je izrezana na dijelove i promiješana. Dodirni jedan dio, pa drugi da ih zamijeniš, i ponovno složi sliku prikazanu kao uzorak. Dijelovi na pravom mjestu dobivaju zeleni obrub. Više razine imaju više dijelova.",
+    "lib.arcade.jgRef": "Slika uzorak",
+    "lib.arcade.jgPlaced": "Na mjestu: {a}/{b}",
+    "lib.arcade.golfStrokes": "Udarci: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Igraš bijelim figurama, krećući od gore desno prema dolje desno (tvoj dom). Baci kockice, klikni figuru koju želiš pomaknuti, pa istaknuto odredište. Slijetanje na polje s točno jednom protivničkom figurom izbacuje je na središnju prečku, a taj igrač je prvo mora vratiti u igru. Ne možeš sletjeti na polje s dvije ili više protivničkih figura. Kad je svih 15 tvojih figura u tvom domu (zadnjih 6 polja), možeš ih izvoditi iz igre. Pobjeđuje tko prvi izvede svih 15.",
+    "lib.arcade.bgRoll": "Baci kockice",
+    "lib.arcade.bgOff": "Izvedi",
+    "lib.arcade.bgRollFirst": "Baci kockice",
+    "lib.arcade.bgInfo": "Izvedeno: ti {a} · računalo {b} · Bodovi: {c} / {d}",
+    "lib.arcade.youNoMove": "Nemaš više valjanih poteza.",
+    "lib.arcade.note.tienlen": "Četiri igrača, po 13 karata. Poredak karata od niže prema višoj: 3, 4, … K, A, 2; boje od niže prema višoj: pik, tref, karo, srce. Prvi igra tko ima pik 3. Odigraj jednu kartu, par, tri ista, četiri ista ili niz od 3 ili više uzastopnih karata (bez dvojki). Sljedeći igrač mora odigrati istu vrstu i višu, ili preskočiti; četiri ista mogu pobijediti jednu dvojku ili par dvojki. Kad svi ostali preskoče, zadnji igrač koji je igrao može otvoriti bilo čime. Pobjeđuje tko prvi isprazni ruku. Odaberi karte pa pritisni Odigraj.",
+    "lib.arcade.tlPlay": "Odigraj",
+    "lib.arcade.tlPass": "Preskoči",
+    "lib.arcade.tlClear": "Poništi odabir",
+    "lib.arcade.tlPassed": "preskočio",
+    "lib.arcade.tlFree": "Stol je prazan — možeš otvoriti bilo čime",
+    "lib.arcade.tlLeft": "Preostalo karata: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} preskače.",
+    "lib.arcade.tlBad": "Odabrane karte ne čine valjanu kombinaciju.",
+    "lib.arcade.tlLow": "Ova kombinacija nije dovoljno visoka da pobijedi onu na stolu."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Test reakcije",
       "desc": "Klikni u trenutku kad ekran pozeleni; prosjek tvojih 5 krugova mora zadovoljiti granicu razine, koja se kroz 10 razina pooštrava."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Sij sjemenke po jamama, osvajaj protivničke sjemenke i igraj ponovno kad završiš u svojoj riznici; igraj protiv računala kroz 10 razina od lakih do teških."
+    },
+    "snakes-ladders": {
+      "name": "Zmije i ljestve",
+      "desc": "Bacaj kockicu od polja 1 do 100, penji se ljestvama, izbjegavaj zmije i stigni do cilja prije protivnika; 10 razina."
+    },
+    "nine-mens-morris": {
+      "name": "Mlin (Nine Men’s Morris)",
+      "desc": "Postavljaj, pomiči i „leti” figurama da složiš tri u nizu i ukloniš protivničke figure; igraj protiv računala kroz 10 razina."
+    },
+    "battleship": {
+      "name": "Potapanje brodova",
+      "desc": "Pronađi i potopi računalnu flotu na mreži 10x10 prije nego ona potopi tvoju; 10 razina s računalom koje sve pametnije zaključuje."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Tikva-Rak-Riba-Škampi)",
+      "desc": "Tradicionalna vijetnamska igra kockicama: kladi se virtualnim novčićima na životinje i protresi tri kockice; dosegni ciljni broj novčića kroz 10 razina (bez pravog novca)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Kladi se na Igrača, Bankara ili Neriješeno s kartama podijeljenima po standardnim pravilima, uz virtualne novčiće; dosegni ciljni broj novčića kroz 10 razina (bez pravog novca)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (igra s tri karte)",
+      "desc": "Usporedi ruku od 3 karte s djeliteljem: tri ista, tri figure, zatim 9 bodova do 0; virtualni novčići, 10 razina, bez pravog novca."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Označavaj izvučene brojeve na kartici 5x5 i viči BINGO prije računalnih protivnika; brojevi se izvlače sve brže kroz 10 razina."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (pet kockica)",
+      "desc": "Baci pet kockica, zadrži dobre i popuni 13 polja za bodovanje; dosegni ciljni rezultat kroz 10 razina."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Ludih osam)",
+      "desc": "Podudaraj boju ili vrijednost, osmice mijenjaju boju; isprazni ruku prije 1 do 3 računalna protivnika kroz 10 razina."
+    },
+    "car-race": {
+      "name": "Utrka automobila: izbjegavanje",
+      "desc": "Mijenjaj trake da izbjegneš automobile ispred i prijeđi cijelu udaljenost; 10 razina s više traka i bržim prometom."
+    },
+    "sky-jump": {
+      "name": "Skok u nebo",
+      "desc": "Skači s platforme na platformu i popni se što više bez pada; 10 razina s rjeđim, pomičnim i lomljivim platformama."
+    },
+    "gold-miner": {
+      "name": "Rudar zlata",
+      "desc": "Spusti kuku da izvučeš zlato i dijamante, izbjegavaj teško kamenje i dosegni ciljni iznos u 60 sekundi; 10 razina."
+    },
+    "fruit-slice": {
+      "name": "Rezanje voća",
+      "desc": "Prijeđi prstom da prerežeš voće koje leti prema gore i izbjegavaj bombe; 10 razina s više voća i više bombi."
+    },
+    "basketball": {
+      "name": "Bacanje u koš",
+      "desc": "Povuci i otpusti da ubaciš loptu u obruč u ograničenom broju pokušaja; 10 razina, s pomičnim obručem od 4. razine."
+    },
+    "bubble-shooter": {
+      "name": "Pucanje mjehurića",
+      "desc": "Pucaj mjehuriće da spojiš 3 ili više iste boje i puknu ih, te očisti sve prije nego dosegnu dno; 10 razina s više boja."
+    },
+    "dot-chase": {
+      "name": "Lov na točkice",
+      "desc": "Pojedi sve točkice u labirintu izbjegavajući duhove koji te love; 10 razina s više i pametnijih duhova."
+    },
+    "kakuro": {
+      "name": "Kakuro (zbrojevi u križ)",
+      "desc": "Ispuni bijela polja znamenkama 1–9 tako da svaki niz daje zadani zbroj bez ponavljanja; 10 razina, mreže od 5x5 do 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Ispuni mrežu bez ponavljanja u recima i stupcima tako da svaki blok daje svoj cilj zadanom operacijom; 10 razina, mreže od 3x3 do 6x6."
+    },
+    "word-guess": {
+      "name": "Pogađanje riječi (u stilu Wordlea)",
+      "desc": "Pogodi tajnu englesku riječ uz zelene, žute i sive naznake; 10 razina s riječima od 4–6 slova i sve manje pokušaja."
+    },
+    "hangman": {
+      "name": "Vješala (Hangman)",
+      "desc": "Pogađaj englesku riječ slovo po slovo prije nego ti ponestane pogrešaka; 10 razina s duljim riječima i manje dopuštenih pogrešaka."
+    },
+    "word-scramble": {
+      "name": "Slagalica slova (anagram)",
+      "desc": "Presloži pomiješana slova u englesku riječ prije isteka vremena; 10 razina, 5 riječi po razini."
+    },
+    "domino": {
+      "name": "Domine",
+      "desc": "Spajaj pločice s bilo kojim krajem lanca i isprazni ruku prije računala; 10 razina dok računalo postaje sve pametnije."
+    },
+    "hearts": {
+      "name": "Hearts (Srca)",
+      "desc": "Izbjegavaj srca i pik damu u kartaškoj igri za četiri igrača; manji rezultat je bolji; 10 razina protiv sve pametnijih računalnih igrača."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtualni žetoni)",
+      "desc": "Poker jedan na jedan protiv računala s virtualnim žetonima: odustani, prati ili povisi i pobijedi kad računalu ponestane žetona; 10 razina, bez pravog novca."
+    },
+    "n-back": {
+      "name": "N-Back pamćenje",
+      "desc": "Gledaj osvijetljeno polje i pritisni Podudara se kad je isto kao prije N koraka; 10 razina s N do 4."
+    },
+    "cookie-clicker": {
+      "name": "Klikanje kolačića",
+      "desc": "Klikaj da ispečeš kolačiće, kupuj pomoćnike koji peku automatski i dosegni cilj u 2 minute; 10 razina."
+    },
+    "tile-connect": {
+      "name": "Spajanje pločica (u stilu Oneta)",
+      "desc": "Spajaj jednake pločice putem s najviše dva zavoja i očisti ploču prije isteka vremena; 10 razina s većim pločama."
+    },
+    "jigsaw": {
+      "name": "Slagalica sa slikom",
+      "desc": "Zamijeni promiješane dijelove da ponovno složiš sliku; 10 razina od 3x3 do 6x6 dijelova."
+    },
+    "mini-golf": {
+      "name": "Mini golf",
+      "desc": "Povuci unatrag i otpusti da ubaciš lopticu u rupu unutar ograničenog broja udaraca; 10 terena sa zidovima i pijeskom."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Baci kockice, odvedi svoje figure kući i izvedi ih prije računala, udarajući njegove osamljene figure usput; 10 razina."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Trinaest)",
+      "desc": "Vijetnamska kartaška igra za četiri igrača: odigravaj pojedinačne karte, parove, nizove i četvorke da prvi isprazniš ruku; 10 razina."
     }
   },
   "s": {

@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Zıpla",
     "lib.arcade.aimTarget": "Hedef",
     "lib.game.soundOn": "Sesi aç",
-    "lib.game.soundOff": "Sesi kapat"
+    "lib.game.soundOff": "Sesi kapat",
+    "lib.arcade.note.kalah": "Alt sırayı siz, üst sırayı bilgisayar oynar; sağdaki büyük çukur sizin deponuzdur. Bir çukura tıklayıp içindeki tüm taşları alın ve saatin tersi yönünde her çukura birer tane bırakın (rakibin deposu atlanır). Son taş deponuza düşerse yeniden oynarsınız; kendi tarafınızdaki boş bir çukura düşer ve karşısındaki çukurda taş varsa o taşları kazanırsınız. Bir taraf boşalınca diğer tarafın taşları kendi deposuna gider; deposu daha dolu olan kazanır.",
+    "lib.arcade.note.snakes": "Zar atın ve çıkan sayı kadar kare ilerleyin, 1'den 100'e kadar. Merdivenin dibine gelirseniz tırmanırsınız, yılanın başına gelirseniz aşağı kayarsınız. 4. seviyeden itibaren 100'e tam sayıyla gelmeniz gerekir. Üst seviyelerde daha çok yılan, daha az merdiven ve daha çok rakip vardır. 100'e ilk ulaşan kazanır.",
+    "lib.arcade.square": "Kare {n}",
+    "lib.arcade.ladderUp": "Merdivenden yukarı!",
+    "lib.arcade.snakeDown": "Yılan yuttu!",
+    "lib.arcade.needExact": "100'e inmek için tam sayıyı atmalısınız.",
+    "lib.arcade.note.nmm": "Her tarafın 9 taşı vardır. 1. aşama: sırayla boş noktalara taş koyun. 2. aşama: bir taşı komşu boş noktaya kaydırın. Yalnızca 3 taşınız kaldığında istediğiniz boş noktaya «uçabilirsiniz». Yan yana üç taş dizerek («değirmen») rakibin bir taşını alırsınız (önce değirmende olmayanlar). 2 taşa düşerseniz ya da hamle yapamazsanız kaybedersiniz. Beyazı siz oynarsınız ve ilk başlarsınız.",
+    "lib.arcade.inHand": "Konacak: {a} · {b}",
+    "lib.arcade.removePiece": "Almak için rakibin bir taşını seçin.",
+    "lib.arcade.enemyWaters": "Düşman suları (ateş etmek için tıklayın)",
+    "lib.arcade.yourFleet": "Filonuz",
+    "lib.arcade.note.battleship": "Her tarafın 10x10'luk ızgaraya rastgele yerleştirilmiş 5 gemisi vardır (uzunluklar 5, 4, 3, 3, 2). Sırayla bir kareye ateş edin: isabet kırmızı, ıska açık mavi olur; bir geminin tüm kareleri vurulunca gemi batar. Kazanmak için düşman filosunun tamamını önce siz batırın. Üst seviyelerde bilgisayar gemilerinizin yerini daha akıllıca tahmin eder.",
+    "lib.arcade.shipsLeft": "Kalan gemiler: siz {a} · düşman {b}",
+    "lib.arcade.theySunk": "Düşman gemilerinizden birini batırdı!",
+    "lib.arcade.theyHit": "Düşman gemilerinizden birini vurdu.",
+    "lib.arcade.theyMiss": "Düşman ıskaladı.",
+    "lib.arcade.youSunk": "Bir düşman gemisini batırdınız!",
+    "lib.arcade.youHit": "İsabet!",
+    "lib.arcade.youMiss": "Iska.",
+    "lib.arcade.shake": "Salla",
+    "lib.arcade.clearBets": "Bahisleri temizle",
+    "lib.arcade.note.bau-cua": "Yalnızca sanal jeton — gerçek para yoktur. Bir jeton değeri seçin, hayvanlara tıklayarak bahis koyun, sonra Salla'ya basın. Bahis koyduğunuz bir hayvanla eşleşen her zar için bahsinizi geri alırsınız ve her eşleşme için bir o kadar daha kazanırsınız. Seviyeyi geçmek için izin verilen turlarda hedef jeton sayısına ulaşın.",
+    "lib.arcade.note.baccarat": "Yalnızca sanal jeton — gerçek para yoktur. Oyuncu, Bankacı veya Beraberlik üzerine bahis koyun, sonra Dağıt'a basın. Bir elin değeri toplamın son basamağıdır (As = 1, 2–9 kendi değeri, 10/J/Q/K = 0); 9'a daha yakın olan el kazanır, üçüncü kartlar standart kurallara göre çekilir. Oyuncu 1:1, Bankacı 0,95:1, Beraberlik 8:1 öder (beraberlikte Oyuncu/Bankacı bahisleri iade edilir). Seviyeyi geçmek için izin verilen turlarda hedef jeton sayısına ulaşın.",
+    "lib.arcade.banker": "Bankacı",
+    "lib.arcade.player": "Oyuncu",
+    "lib.arcade.tie": "Beraberlik",
+    "lib.arcade.openCards": "Aç",
+    "lib.arcade.note.bai-cao": "Yalnızca sanal jeton — gerçek para yoktur. Her tarafa 3 kart verilir. Bir elin puanı toplamın son basamağıdır (As = 1, 2–9 kendi değeri, 10/J/Q/K = 10 yani 0 puan). Sıralama: Üç aynı kart («Sáp») en yüksektir, sonra üç resimli kart («Ba tiên»), sonra 9 puandan 0'a doğru. Bahis koyun, Dağıt'a ve ardından krupiye ile karşılaştırmak için Aç'a basın. 6. seviyeden itibaren beraberlikte krupiye kazanır. Seviyeyi geçmek için izin verilen turlarda hedef jeton sayısına ulaşın.",
+    "lib.arcade.caoSap": "Üç aynı kart",
+    "lib.arcade.caoBaTien": "Üç resimli kart",
+    "lib.arcade.caoPts": "{n} puan",
+    "lib.arcade.note.bingo": "Bilgisayar 1'den 75'e kadar sayılar çeker. Çekilen sayı kartınızdaysa işaretlemek için tıklayın (ortadaki kare bedavadır). Bir satırı, sütunu ya da çaprazı tamamlayıp BINGO! düğmesine basın — bilgisayar rakiplerini geçmelisiniz. Yanlış BINGO! düğmeyi birkaç saniyeliğine kilitler. Üst seviyelerde sayılar daha hızlı çekilir ve daha çok rakip vardır.",
+    "lib.arcade.opponentsN": "Rakipler: {n}",
+    "lib.arcade.falseBingo": "Henüz tam bir çizgi yok! Düğme 3 saniye kilitlendi.",
+    "lib.arcade.bingoGo": "Sayılar çekiliyor!",
+    "lib.arcade.note.yahtzee": "Her turda 5 zarı en fazla 3 kez atarsınız: tutmak istediğiniz zara tıklayın, kalanları yeniden atmak için Zar At'a basın. Sonra puan yazmak için tablodan bir kutu seçin (her kutu bir kez kullanılır; uymayan kutuya 0 yazılır). Toplam 13 tur. Birler–Altılar kutularının toplamı 63 veya daha fazlaysa 35 bonus eklenir. Kazanmak için seviyenin hedef puanına ulaşın.",
+    "lib.arcade.turnN": "Tur {n}/13",
+    "lib.arcade.pickCat": "Puan yazmak için bir kutu seçin",
+    "lib.arcade.rollsLeft": "At ({n} kaldı)",
+    "lib.arcade.upperBonus": "Birler–Altılar bonusu",
+    "lib.arcade.scored": "{n} puan yazıldı",
+    "lib.arcade.note.crazy-eights": "Atılan destenin üstündeki kartla renk veya sayı bakımından eşleşen bir kart oynayın. Sekizliler jokerdir: istediğiniz zaman oynayıp yeni bir renk seçebilirsiniz. Oynanabilir kartınız yoksa desteden çekin (en fazla 3 kart); yine oynayamazsanız pas geçersiniz. Elini ilk bitiren kazanır. Üst seviyelerde daha çok rakip vardır ve bilgisayar daha akıllı oynar.",
+    "lib.arcade.opponent": "Rakip",
+    "lib.arcade.pileLeft": "Çekme destesi: {n}",
+    "lib.arcade.pickSuit": "Yeni bir renk seçin",
+    "lib.arcade.aiSuit": "Bilgisayar {s} seçti",
+    "lib.arcade.aiPass": "Bilgisayar pas geçti.",
+    "lib.arcade.mustPlay": "Oynanabilir kartınız var — oynayın.",
+    "lib.arcade.youPass": "3 kart çektiniz ve pas geçtiniz.",
+    "lib.arcade.bcGourd": "Su kabağı",
+    "lib.arcade.bcCrab": "Yengeç",
+    "lib.arcade.bcShrimp": "Karides",
+    "lib.arcade.bcFish": "Balık",
+    "lib.arcade.bcRooster": "Horoz",
+    "lib.arcade.bcDeer": "Geyik",
+    "lib.arcade.yOnes": "Birler",
+    "lib.arcade.yTwos": "İkiler",
+    "lib.arcade.yThrees": "Üçler",
+    "lib.arcade.yFours": "Dörtler",
+    "lib.arcade.yFives": "Beşler",
+    "lib.arcade.ySixes": "Altılar",
+    "lib.arcade.yThree": "Üçlü",
+    "lib.arcade.yFour": "Dörtlü",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Küçük kent (30)",
+    "lib.arcade.yLarge": "Büyük kent (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Şans",
+    "lib.arcade.note.race": "Şerit değiştirip öndeki arabalardan kaçınmak için ← → tuşlarına basın (ya da istediğiniz şeride dokunun). 3 canınız var; seviyeyi geçmek için tüm mesafeyi gidin. Üst seviyelerde daha çok şerit ve daha hızlı trafik vardır.",
+    "lib.arcade.note.jump": "Karakter kendiliğinden zıplar. Bir sonraki platforma inmek için ← → tuşlarına basın ya da parmağınızı sürükleyin. Mavi platformlar hareket eder, kahverengiler üzerine inince kırılır. Ekranın altına düşerseniz kaybedersiniz; seviyeyi geçmek için yeterince yükseğe çıkın.",
+    "lib.arcade.note.miner": "Kanca bir sağa bir sola sallanır; indirmek için Boşluk, ↓ tuşuna basın ya da alana dokunun. Büyük altınlar ve kayalar ağırdır, yavaş çekilir; elmaslar çok değerlidir. 60 saniye dolmadan hedef paraya ulaşın.",
+    "lib.arcade.note.slicer": "Meyveleri kesmek için parmağınızı ya da fareyi üzerlerinden sürükleyin. Siyah bombalardan kaçının. Bir meyveyi kaçırmak ya da bombayı kesmek bir can götürür (3 canınız var). Seviyeyi geçmek için yeterince meyve kesin.",
+    "lib.arcade.note.hoops": "Sahaya basın, aşağı doğru sürükleyin (sapan gibi) ve topu potaya atmak için bırakın. Ne kadar uzağa çekerseniz atış o kadar güçlü olur. Elinizdeki atış hakkı içinde yeterince basket atın; 4. seviyeden itibaren pota hareket eder.",
+    "lib.arcade.note.bubbles": "Nişan almak için fareyi ya da parmağınızı hareket ettirin, sonra ateş etmek için tıklayın/dokunun ya da Boşluk/Ateş'e basın. Aynı renkten 3 veya daha fazla balonu birleştirerek patlatın; dayanağını kaybeden balonlar düşer. Satırlar yavaşça alçalır, bu yüzden onları alt çizgiden uzak tutun. Kazanmak için tüm balonları temizleyin.",
+    "lib.arcade.note.chase": "Dönmek ve labirentteki tüm noktaları yemek için ok tuşlarını (ya da kaydırma / düğmeleri) kullanın; sizi kovalayan hayaletlerden kaçının. 3 canınız var; üst seviyelerde daha çok, daha hızlı ve daha akıllı hayalet vardır.",
+    "lib.arcade.height": "Yükseklik: {n}/{t} m",
+    "lib.arcade.money": "Para: {n}/{t}",
+    "lib.arcade.sliced": "Kesilen: {n}/{t}",
+    "lib.arcade.hoopScore": "Atılan: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} atış kaldı",
+    "lib.arcade.bubbleLeft": "{n} balon kaldı",
+    "lib.arcade.shotsN": "Atışlar: {n}",
+    "lib.arcade.dotsLeft": "{n} nokta kaldı",
+    "lib.arcade.note.kakuro": "Beyaz hücreleri 1–9 arası rakamlarla doldurun; her dizinin toplamı siyah hücredeki ipucuna eşit olsun (sağ üstteki sayı sağa doğru dizi, sol alttaki sayı aşağı doğru dizi içindir) ve bir dizide hiçbir rakam tekrarlanmasın. Hareket etmek için ok tuşlarını kullanın.",
+    "lib.arcade.note.kenken": "Izgarayı 1'den N'ye kadar sayılarla öyle doldurun ki hiçbir sayı bir satırda veya sütunda tekrarlanmasın. Kalın çerçeveli her bölgede bir hedef ve bir işlem (+, −, ×, ÷) yazar: bölgedeki sayılar bu sonucu vermelidir. Hareket etmek için ok tuşlarını kullanın.",
+    "lib.arcade.note.wordGuess": "Gizli İngilizce kelimeyi tahmin edin. Her denemeden sonra yeşil doğru harfin doğru yerde olduğunu, sarı harfin kelimede olduğunu ama başka yerde durduğunu, gri ise harfin kelimede olmadığını gösterir. Klavyeden yazın ya da ekrandaki tuşları kullanın ve göndermek için Enter'a basın. Üst seviyelerde kelimeler daha uzun, deneme hakkı daha azdır.",
+    "lib.arcade.note.hangman": "Gizli İngilizce kelimeyi harfleri tek tek seçerek tahmin edin. Her yanlış harf asılan figüre bir parça ekler; yanlış hakkınız bittiğinde kaybedersiniz. Üst seviyelerde kelimeler daha uzun, izin verilen yanlış sayısı daha azdır.",
+    "lib.arcade.note.scramble": "Karışık harfleri gerçek bir İngilizce kelimeye dönüştürüp cevap kutusuna yazın. Her seviyede 5 kelime vardır; seviyeyi geçmek için her kelimenin süresi dolmadan en az 4'ünü çözün. İpucu ilk harfi gösterir.",
+    "lib.arcade.cellsLeft": "{n} boş hücre kaldı",
+    "lib.arcade.wrongN": "{n} hücre doğru değil.",
+    "lib.arcade.noError": "Şimdiye kadar hata bulunmadı.",
+    "lib.arcade.tooShort": "Harf yetersiz",
+    "lib.arcade.answerIs": "Cevap: {w}",
+    "lib.arcade.livesLeft": "{n} yanlış hakkı kaldı",
+    "lib.arcade.yourAnswer": "Cevabınız",
+    "lib.arcade.skip": "Geç",
+    "lib.arcade.notThis": "Doğru değil, tekrar deneyin.",
+    "lib.arcade.startsWith": "İlk harf: {c}",
+    "lib.arcade.note.domino": "Her oyuncu 7 taş alır; en yüksek çifte sahip olan başlar. Zincirin bir ucuyla eşleşen bir taş oynayın. Oynayamazsanız, oynayabilene kadar kapalı taşlardan çekin; taşlar bittiyse pas geçin. Elini ilk bitiren kazanır; ikisi de tıkanırsa noktası az olan kazanır.",
+    "lib.arcade.note.hearts": "Dört oyuncu, herkese 13 kart. İlk oyun sinek 2 ile açılır. Mümkünse açılan renge uymalısınız. Her kupa 1 puan, maça kızı 13 puandır; eli alan kişi içindeki puanları alır. Düşük puan iyidir; 26 puanın hepsini toplarsanız diğer herkes 26 puan alır. Kupa oynanmadan kupa ile açamazsınız. Son elden sonra puanınız en düşükse (veya en düşükle eşitse) kazanırsınız.",
+    "lib.arcade.note.holdem": "Yalnızca sanal fiş kullanarak bilgisayara karşı baş başa oynanır. Her oyuncu 2 kapalı kart alır ve 5 ortak kart açılır (flop, turn, river); en iyi 5 kartlık eli yapın. Her turda pas geçebilir, görebilir (veya check yapabilir) ya da yükseltebilirsiniz. Kör bahisler her 4 elde bir artar. Bilgisayarın fişi bittiğinde ya da el sınırından sonra daha çok fişiniz olduğunda kazanırsınız. Gerçek para yoktur.",
+    "lib.arcade.dmDraw": "Taş çek",
+    "lib.arcade.dmPass": "Pas",
+    "lib.arcade.dmEmpty": "Henüz taş oynanmadı",
+    "lib.arcade.dmYard": "Kapalı taşlar: {n}",
+    "lib.arcade.dmLeft": "Sol uç",
+    "lib.arcade.dmRight": "Sağ uç",
+    "lib.arcade.dmTie": "Berabere! İki taraf eşit.",
+    "lib.arcade.hrHand": "El {n}/{t}",
+    "lib.arcade.hrTook": "{p} eli aldı ({n} puan).",
+    "lib.arcade.hrIllegal": "Bu kartı oynayamazsınız (renge uyun; henüz kupa ile açılamaz).",
+    "lib.arcade.blinds": "Büyük kör: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Pas geç",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Gör {n}",
+    "lib.arcade.raiseTo": "Yükselt",
+    "lib.arcade.raiseN": "{n} olarak yükselt",
+    "lib.arcade.thOppFold": "Bilgisayar pas geçti; bu eli siz kazandınız.",
+    "lib.arcade.thYouFold": "Pas geçtiniz.",
+    "lib.arcade.thOppWin": "Bu eli bilgisayar kazandı",
+    "lib.arcade.thYouWin": "Bu eli siz kazandınız",
+    "lib.arcade.thSplit": "Pot bölüşüldü",
+    "lib.arcade.thAiFold": "Bilgisayar pas geçti.",
+    "lib.arcade.thAiRaise": "Bilgisayar {n} olarak yükseltti.",
+    "lib.arcade.thAiCall": "Bilgisayar gördü / check yaptı.",
+    "lib.arcade.hand.high": "Yüksek kart",
+    "lib.arcade.hand.pair": "Çift",
+    "lib.arcade.hand.twoPair": "İki çift",
+    "lib.arcade.hand.trips": "Üçlü",
+    "lib.arcade.hand.straight": "Kent",
+    "lib.arcade.hand.flush": "Floş",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Dörtlü",
+    "lib.arcade.hand.sflush": "Düz floş",
+    "lib.arcade.note.nback": "3x3'lük ızgarada bir kare art arda yanar. Yanan konum N adım önceki ile aynıysa \"Eşleşti!\" düğmesine (veya Boşluk'a) basın (N yukarıda gösterilir). Seviyeyi geçmek için kararlarınızın en az %80'i doğru olmalı. Üst seviyelerde N daha büyüktür.",
+    "lib.arcade.nbMatch": "Eşleşti!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Doğru: {a} · Yanlış: {b}",
+    "lib.arcade.nbAcc": "Doğruluk: %{n}",
+    "lib.arcade.note.clicker": "Kurabiye pişirmek için kurabiyeye tıklayın, sonra kendiliğinden pişiren yardımcılara harcayın (fiyatlar aldıkça artar). Seviyeyi geçmek için 2 dakika içinde hedef sayıda kurabiye pişirin.",
+    "lib.arcade.ckCursor": "İmleç",
+    "lib.arcade.ckGrandma": "Fırıncı nine",
+    "lib.arcade.ckFarm": "Çiftlik",
+    "lib.arcade.ckMine": "Şeker madeni",
+    "lib.arcade.ckFactory": "Fabrika",
+    "lib.arcade.ckCookie": "Kurabiye",
+    "lib.arcade.ckEarned": "Pişen: {n}/{t}",
+    "lib.arcade.chips2": "Kurabiye: {n}",
+    "lib.arcade.ckCps": "Saniyede {n} kurabiye",
+    "lib.arcade.note.onet": "En fazla 2 dönüşlü ve başka taşlardan geçmeyen bir yolla birleştirilebilen iki aynı taşı seçerek kaldırın. Kazanmak için süre bitmeden tüm taşları temizleyin. Hamle kalmadığında karıştırabilirsiniz (sınırlı hak).",
+    "lib.arcade.shuffle": "Karıştır",
+    "lib.arcade.tilesLeft": "{n} taş kaldı",
+    "lib.arcade.autoShuffle": "Hamle kalmadı — otomatik karıştırıldı.",
+    "lib.arcade.note.jigsaw": "Resim parçalara bölünmüş ve karıştırılmıştır. Bir parçaya, sonra bir diğerine dokunarak yerlerini değiştirin ve referans olarak gösterilen resmi yeniden oluşturun. Doğru yerdeki parçalar yeşil çerçeve alır. Üst seviyelerde daha çok parça vardır.",
+    "lib.arcade.jgRef": "Referans resim",
+    "lib.arcade.jgPlaced": "Yerinde: {a}/{b}",
+    "lib.arcade.golfStrokes": "Vuruş: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Beyaz pulları siz oynarsınız ve sağ üstten başlayıp sağ alta (evinize) doğru ilerlersiniz. Zarları atın, oynatmak istediğiniz pula tıklayın, sonra vurgulanan bir hedefe tıklayın. Tek bir rakip pulunun olduğu noktaya inerseniz o pulu vurup ortadaki bara gönderirsiniz ve rakip önce onu oyuna sokmak zorundadır. İki veya daha fazla rakip pulunun olduğu noktaya inemezsiniz. 15 pulunuzun hepsi evinize (son 6 nokta) girince onları toplayabilirsiniz. 15 pulun hepsini ilk toplayan kazanır.",
+    "lib.arcade.bgRoll": "Zar at",
+    "lib.arcade.bgOff": "Pulu topla",
+    "lib.arcade.bgRollFirst": "Zar at",
+    "lib.arcade.bgInfo": "Toplanan: siz {a} · bilgisayar {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Yapabileceğiniz geçerli hamle kalmadı.",
+    "lib.arcade.note.tienlen": "Dört oyuncu, herkese 13 kart. Kart sırası küçükten büyüğe: 3, 4, … K, A, 2; renkler küçükten büyüğe: maça, sinek, karo, kupa. Maça 3'e sahip olan başlar. Tek kart, çift, üçlü, dörtlü ya da 3 veya daha fazla ardışık kartlık bir dizi (2'ler olmadan) oynayabilirsiniz. Sıradaki oyuncu aynı türde ve daha yüksek bir oyun yapmalı ya da pas geçmelidir; dörtlü, tek bir 2'yi veya bir çift 2'yi yenebilir. Herkes pas geçince son oynayan istediği oyunu açabilir. Elini ilk bitiren kazanır. Kartları seçin, sonra Oyna'ya basın.",
+    "lib.arcade.tlPlay": "Oyna",
+    "lib.arcade.tlPass": "Pas",
+    "lib.arcade.tlClear": "Seçimi temizle",
+    "lib.arcade.tlPassed": "pas geçti",
+    "lib.arcade.tlFree": "Masa boş — istediğinizi açabilirsiniz",
+    "lib.arcade.tlLeft": "Kalan kartlar: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} pas geçti.",
+    "lib.arcade.tlBad": "Seçilen kartlar geçerli bir grup oluşturmuyor.",
+    "lib.arcade.tlLow": "Bu grup masadakini yenecek kadar yüksek değil."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Tepki Süresi Testi",
       "desc": "Ekran yeşile döndüğü anda tıklayın; 5 turluk ortalamanız her seviyenin sınırını tutturmalı, sınır 10 seviye boyunca sıkılaşır."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Taşları çukurlara dağıtın, rakibin taşlarını kazanın ve son taş deponuza düşerse yeniden oynayın; kolaydan zora 10 seviyede bilgisayara karşı oynayın."
+    },
+    "snakes-ladders": {
+      "name": "Yılan ve Merdiven",
+      "desc": "1'den 100'e kadar zar atın, merdivenleri tırmanın, yılanlardan kaçının ve rakiplerinizden önce bitişe ulaşın; 10 seviye."
+    },
+    "nine-mens-morris": {
+      "name": "Dokuz Taş (Değirmen)",
+      "desc": "Taşlarınızı koyun, kaydırın ve uçurun; yan yana üç taş dizerek rakibin taşlarını alın; 10 seviyede bilgisayara karşı oynayın."
+    },
+    "battleship": {
+      "name": "Amiral Battı",
+      "desc": "10x10'luk ızgarada bilgisayarın filosunu o sizinkini batırmadan bulup batırın; bilgisayar daha akıllıca tahmin ettikçe 10 seviye."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Su Kabağı, Yengeç, Balık, Karides)",
+      "desc": "Geleneksel Vietnam zar oyunu: hayvanlara sanal jeton yatırın ve üç zarı sallayın; 10 seviyede hedef jeton sayısına ulaşın (gerçek para yok)."
+    },
+    "baccarat": {
+      "name": "Bakara",
+      "desc": "Standart kurallarla dağıtılan kartlarla Oyuncu, Bankacı veya Beraberlik üzerine sanal jetonla bahis koyun; 10 seviyede hedef jeton sayısına ulaşın (gerçek para yok)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Üç Kart Oyunu)",
+      "desc": "3 kartlık elleri krupiyeyle karşılaştırın: üç aynı kart, üç resimli kart, sonra 9 puandan 0'a; sanal jeton, 10 seviye, gerçek para yok."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Çekilen sayıları 5x5'lik kartınızda işaretleyin ve bilgisayar rakiplerinden önce BINGO deyin; 10 seviyede sayılar giderek hızlı çekilir."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Beş Zar)",
+      "desc": "Beş zar atın, iyilerini tutun ve 13 puan kutusunu doldurun; 10 seviyede hedef puana ulaşın."
+    },
+    "crazy-eights": {
+      "name": "Çılgın Sekizler",
+      "desc": "Renk ya da sayı eşleştirin, sekizliler rengi değiştirir; 10 seviyede 1 ila 3 bilgisayar rakibinden önce elinizi bitirin."
+    },
+    "car-race": {
+      "name": "Araba Yarışı Kaçışı",
+      "desc": "Öndeki arabalardan kaçmak için şerit değiştirin ve tüm mesafeyi gidin; daha çok şerit ve daha hızlı trafikli 10 seviye."
+    },
+    "sky-jump": {
+      "name": "Gökyüzü Zıplaması",
+      "desc": "Platformdan platforma zıplayarak düşmeden olabildiğince yükseğe çıkın; platformların seyrekleştiği, hareket ettiği ve kırıldığı 10 seviye."
+    },
+    "gold-miner": {
+      "name": "Altın Madencisi",
+      "desc": "Altın ve elmasları çekmek için kancayı indirin, ağır kayalardan kaçının ve 60 saniyede hedef paraya ulaşın; 10 seviye."
+    },
+    "fruit-slice": {
+      "name": "Meyve Kesme",
+      "desc": "Havaya fırlayan meyveleri kesmek için parmağınızı sürükleyin ve bombalardan kaçının; daha çok meyve ve bombalı 10 seviye."
+    },
+    "basketball": {
+      "name": "Basketbol Atışı",
+      "desc": "Sınırlı atış hakkıyla topu potaya atmak için sürükleyip bırakın; 10 seviye, 4. seviyeden itibaren hareketli pota."
+    },
+    "bubble-shooter": {
+      "name": "Balon Patlatma",
+      "desc": "Aynı renkten 3 veya daha fazla balonu birleştirip patlatmak için balon atın ve alta ulaşmadan hepsini temizleyin; daha çok renkli 10 seviye."
+    },
+    "dot-chase": {
+      "name": "Nokta Kovalamaca",
+      "desc": "Sizi kovalayan hayaletlerden kaçarak labirentteki tüm noktaları yiyin; daha çok ve daha akıllı hayaletli 10 seviye."
+    },
+    "kakuro": {
+      "name": "Kakuro (Çapraz Toplam)",
+      "desc": "Beyaz hücreleri 1–9 arası rakamlarla, her dizi ipucunu tekrarsız toplayacak şekilde doldurun; 10 seviye, 5x5'ten 9x9'a ızgaralar."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Izgarayı satır ve sütunlarda tekrar olmadan, her bölge kendi işlemiyle hedefini verecek şekilde doldurun; 10 seviye, 3x3'ten 6x6'ya ızgaralar."
+    },
+    "word-guess": {
+      "name": "Kelime Tahmini (Wordle tarzı)",
+      "desc": "Yeşil, sarı ve gri ipuçlarıyla gizli İngilizce kelimeyi tahmin edin; 4–6 harfli kelimeler ve daha az denemeli 10 seviye."
+    },
+    "hangman": {
+      "name": "Adam Asmaca",
+      "desc": "Yanlış hakkınız bitmeden İngilizce kelimeyi harf harf tahmin edin; daha uzun kelimeler ve daha az yanlış hakkıyla 10 seviye."
+    },
+    "word-scramble": {
+      "name": "Kelime Bulmaca (Anagram)",
+      "desc": "Süre bitmeden karışık harfleri bir İngilizce kelimeye dönüştürün; 10 seviye, seviye başına 5 kelime."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Taşları zincirin iki ucundan birine eşleyin ve elinizi bilgisayardan önce bitirin; bilgisayarın giderek akıllandığı 10 seviye."
+    },
+    "hearts": {
+      "name": "Kupa Oyunu (Hearts)",
+      "desc": "Dört kişilik kart oyununda kupalardan ve maça kızından kaçının; düşük puan iyidir; giderek akıllanan bilgisayar oyunculara karşı 10 seviye."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (sanal fiş)",
+      "desc": "Bilgisayara karşı sanal fişle baş başa poker: pas geçin, görün ya da yükseltin ve bilgisayarın fişi bitince kazanın; 10 seviye, gerçek para yok."
+    },
+    "n-back": {
+      "name": "N-Back Hafıza",
+      "desc": "Yanan kareyi izleyin ve N adım önceki ile aynı olduğunda Eşleşti'ye basın; N'nin 4'e kadar çıktığı 10 seviye."
+    },
+    "cookie-clicker": {
+      "name": "Kurabiye Tıklama",
+      "desc": "Kurabiye pişirmek için tıklayın, kendiliğinden pişiren yardımcılar satın alın ve 2 dakikada hedefe ulaşın; 10 seviye."
+    },
+    "tile-connect": {
+      "name": "Taş Birleştirme (Onet tarzı)",
+      "desc": "Aynı taşları en fazla iki dönüşlü bir yolla birleştirin ve süre bitmeden tahtayı temizleyin; tahtaların büyüdüğü 10 seviye."
+    },
+    "jigsaw": {
+      "name": "Resimli Yapboz",
+      "desc": "Karışık parçaların yerini değiştirerek resmi yeniden oluşturun; 3x3'ten 6x6 parçaya 10 seviye."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Topu geri çekip bırakarak vuruş sınırı içinde deliğe sokun; duvarlı ve kumlu 10 saha."
+    },
+    "backgammon": {
+      "name": "Tavla (Backgammon)",
+      "desc": "Zar atın, pullarınızı eve taşıyıp bilgisayardan önce toplayın ve yolda tek kalan pullarını vurun; 10 seviye."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (On Üç)",
+      "desc": "Dört kişilik Vietnam kart oyunu: tek kart, çift, dizi ve dörtlü oynayarak elinizi ilk bitirin; 10 seviye."
     }
   },
   "s": {

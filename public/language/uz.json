@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Yuqori chap burchakdagi egallagan butun maydoningizni to‘ldirish uchun rang tanlang; u shu rangdagi qo‘shni kataklarni yutadi. Ruxsat etilgan yurishlar soni ichida butun taxtani bir rangga aylantiring.",
     "lib.arcade.note.mastermind": "Kompyuter ranglar qatorini yashiradi. Har bir o‘rin uchun rang tanlang, so‘ng Topish tugmasini bosing. Qora mix = rang ham, o‘rin ham to‘g‘ri; oq mix = rang to‘g‘ri, o‘rin noto‘g‘ri. Taxminlaringiz tugamasidan kodni toping.",
     "lib.arcade.note.hanoi": "Barcha disklarni oxirgi tayoqqa ko‘chiring. Har safar faqat tayoqning eng yuqoridagi diskini ko‘chiring va hech qachon katta diskni kichigining ustiga qo‘ymang. Avval boshlang‘ich tayoqqa, so‘ng nishon tayoqqa bosing.",
-    "lib.arcade.note.pipes": "Quvurni 90° aylantirish uchun plitkaga bosing. Barcha quvurlarni ochiq uchlari qolmaydigan yagona tarmoqqa ulang (ochiq uchlar qizil rangda ko‘rsatiladi)."
+    "lib.arcade.note.pipes": "Quvurni 90° aylantirish uchun plitkaga bosing. Barcha quvurlarni ochiq uchlari qolmaydigan yagona tarmoqqa ulang (ochiq uchlar qizil rangda ko‘rsatiladi).",
+    "lib.arcade.pongScore": "Siz {a} – {b} Kompyuter (birinchi {t} ochkogacha)",
+    "lib.arcade.kills": "Yoʻq qilindi: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} ta tosh qoldi",
+    "lib.arcade.timeLeft": "{n} soniya qoldi",
+    "lib.arcade.stepsN": "Qadamlar: {n}",
+    "lib.arcade.crossed": "Uyda: {n}/{t}",
+    "lib.arcade.pipes": "Oʻtilgan quvurlar: {n}/{t}",
+    "lib.arcade.distance": "Masofa: {n}/{t} m",
+    "lib.arcade.speedN": "Tezlik: {n}",
+    "lib.arcade.note.whack-a-mole": "Sichqonlar inlardan chiqadi — ularni urish uchun sichqon ustiga bosing yoki tegining. Vaqt tugamasidan oldin yetarlicha sichqonni uring. 4-bosqichdan bombalar paydo boʻladi: bombaga ursangiz ochko yoʻqotasiz.",
+    "lib.arcade.hole": "In",
+    "lib.arcade.hitsN": "Zarbalar: {n}/{t}",
+    "lib.arcade.note.simon": "Oʻyin ranglar va tovushlar ketma-ketligini ijro etadi — uni xuddi shu tartibda takrorlang. Har bir davrada bitta qadam qoʻshiladi. Bosqichni oʻtish uchun kerakli uzunlikni eslab qoling. 7-bosqichdan 6 ta tugma boʻladi.",
+    "lib.arcade.seqN": "Ketma-ketlik: {n}/{t}",
+    "lib.arcade.watch": "Kuzating…",
+    "lib.arcade.yourTurnShort": "Navbat sizda",
+    "lib.arcade.note.aim-trainer": "Nishonlar tasodifiy paydo boʻladi va tez yoʻqoladi — iloji boricha koʻproq nishonga uring. Ular kichrayib, tezlashib boradi. Bosqichni oʻtish uchun 5 tadan koʻp xato qilmasdan yetarlicha nishonga uring.",
+    "lib.arcade.missN": "Xatolar: {n}/{t}",
+    "lib.arcade.answer": "Javob",
+    "lib.arcade.note.quick-math": "Imkon qadar tez, xayolan hisoblang: javobni yozing va Enter bosing. Har bir savolga vaqt beriladi; notoʻgʻri javob yoki vaqt tugashi bir jonni oladi (sizda 3 ta jon bor). Bosqichni oʻtish uchun yetarlicha savolga toʻgʻri javob bering.",
+    "lib.arcade.correctN": "Toʻgʻri: {n}/{t}",
+    "lib.arcade.note.reaction": "Ekran yashil boʻlishini kuting, keyin imkon qadar tez bosing. Erta bosish xato hisoblanadi (3 ta xatodan keyin yutqazasiz). 5 davradagi oʻrtacha natijangiz bosqich chegarasidan yaxshi boʻlishi kerak.",
+    "lib.arcade.roundN": "Davra {n}/{t}",
+    "lib.arcade.limitMs": "Chegara: {n} ms",
+    "lib.arcade.rxWait": "Yashilni kuting…",
+    "lib.arcade.rxGo": "BOSING!",
+    "lib.arcade.rxEarly": "Juda erta!",
+    "lib.arcade.gameArea": "Oʻyin maydoni",
+    "lib.arcade.note.pong": "Pastdagi raketkani boshqarish uchun sichqonchani siljiting, barmogʻingizni suring yoki ← → tugmalaridan foydalaning. Toʻpni kompyuterdan oʻtkazib yuboring; birinchi boʻlib 5 ochko olgan gʻolib boʻladi. Har bir zarbada toʻp tezlashadi.",
+    "lib.arcade.note.space-shooter": "Kemani boshqarish uchun sichqonchani siljiting, barmogʻingizni suring yoki ← → tugmalaridan foydalaning; kemangiz oʻzi oʻq uzadi. Bosqichni oʻtish uchun yetarlicha dushman kemasini yoʻq qiling, toʻqnashuv va dushman oʻqlaridan saqlaning. Sizda 3 ta jon bor.",
+    "lib.arcade.note.asteroids": "← → kemani aylantiradi, ↑ harakatlantiradi, Boʻsh joy tugmasi oʻq uzadi. Bosqichni oʻtish uchun barcha toshlarni yoʻq qiling; katta toshlar kichiklariga boʻlinadi. Kema ekran chetidan oʻtib, qarama-qarshi tomondan chiqadi. Sizda 3 ta jon bor.",
+    "lib.arcade.note.maze": "Vaqt tugamasidan oldin yashil nuqtadan qizil bayroqqa yetib borish uchun strelka tugmalaridan foydalaning (yoki barmoqni suring, yoki tugmalarni bosing). 5-bosqichdan labirint tumanli: faqat atrofingizni koʻrasiz, bosib oʻtgan joylar esa eslab qolinadi.",
+    "lib.arcade.note.road-cross": "Baqani pastdan tepaga sakratish uchun strelka tugmalari, surish yoki tugmalardan foydalaning. Transportdan saqlaning; 5-bosqichdan tepa qismida daryo boʻladi, suzib yurgan yogʻochlarga sakrang. Bosqichni oʻtish uchun 3 marta uyga yetib boring. Sizda 3 ta jon bor.",
+    "lib.arcade.note.flappy": "Qanot qoqish uchun oʻyin maydoniga tegining, Boʻsh joy yoki ↑ tugmasini bosing. Quvur, yer yoki shiftga tegmasdan quvurlar orasidagi oraliqlardan uchib oʻting. Yuqori bosqichlarda oraliqlar torroq, parvoz tezroq boʻladi.",
+    "lib.arcade.note.runner": "Kaktuslardan sakrash uchun oʻyin maydoniga tegining, Boʻsh joy yoki ↑ tugmasini bosing; baland qushlar tagidan oʻtish uchun ↓ tugmasini bosib turing (past qushlardan esa sakrab oʻting). Bosqichni oʻtish uchun yetarlicha uzoq yuguring. Tezlik doimo oshib boradi.",
+    "lib.arcade.fire": "Oʻt ochish",
+    "lib.arcade.jump": "Sakrash",
+    "lib.arcade.aimTarget": "Nishon",
+    "lib.game.soundOn": "Tovushni yoqish",
+    "lib.game.soundOff": "Tovushni oʻchirish",
+    "lib.arcade.note.kalah": "Siz pastki qatorda oʻynaysiz, kompyuter yuqorida; oʻngdagi katta chuqurcha — sizning omboringiz. Chuqurchani bosib, undagi barcha donalarni olasiz va soat strelkasiga teskari yoʻnalishda har bir chuqurchaga bittadan tashlaysiz (raqibning omborini oʻtkazib yuborasiz). Oxirgi dona omboringizga tushsa, yana yurasiz; oxirgi dona oʻz tomoningizdagi boʻsh chuqurchaga tushsa va uning qarshisidagi chuqurchada donalar boʻlsa, ularni olasiz. Bir tomon boʻshaganda, qolgan donalar egasining omboriga oʻtadi; ombori kattaroq boʻlgan gʻolib boʻladi.",
+    "lib.arcade.note.snakes": "Kubikni tashlang va shuncha katak yuring, 1-kakdan 100-gacha. Narvon etagiga tushsangiz, yuqoriga chiqasiz; ilon boshiga tushsangiz, pastga sirpanasiz. 4-bosqichdan 100-katakka tushish uchun aniq son tushishi kerak. Yuqori bosqichlarda ilonlar koʻproq, narvonlar kamroq, raqiblar koʻproq. 100-katakka birinchi yetgan gʻolib boʻladi.",
+    "lib.arcade.square": "{n}-katak",
+    "lib.arcade.ladderUp": "Narvondan yuqoriga!",
+    "lib.arcade.snakeDown": "Ilon yutib yubordi!",
+    "lib.arcade.needExact": "100-katakka tushish uchun aniq son tushishi kerak.",
+    "lib.arcade.note.nmm": "Har bir tomonda 9 ta dona bor. 1-bosqich: navbatma-navbat donalarni boʻsh nuqtalarga qoʻying. 2-bosqich: donani qoʻshni boʻsh nuqtaga suring. Atigi 3 ta dona qolsa, istalgan boʻsh nuqtaga “uchishingiz” mumkin. Raqib donasini olib tashlash uchun uchta donani bir qatorga tering (“tegirmon”; avval tegirmonda boʻlmagan donalar olinadi). 2 ta dona qolsa yoki yura olmasangiz, yutqazasiz. Siz oq donalarda birinchi yurasiz.",
+    "lib.arcade.inHand": "Qoʻyish kerak: {a} · {b}",
+    "lib.arcade.removePiece": "Olib tashlash uchun raqib donasini tanlang.",
+    "lib.arcade.enemyWaters": "Dushman suvlari (otish uchun bosing)",
+    "lib.arcade.yourFleet": "Sizning flotingiz",
+    "lib.arcade.note.battleship": "Har bir tomonda 10x10 maydonga tasodifiy joylashtirilgan 5 ta kema bor (uzunligi 5, 4, 3, 3, 2). Navbatma-navbat katakka oʻq uzing: tekkan joy qizil, tegmagan joy och koʻk boʻladi, kemaning barcha kataklari urilsa, u choʻkadi. Dushmanning butun flotini birinchi choʻktirgan gʻolib boʻladi. Yuqori bosqichlarda kompyuter kemalaringiz joyini aqlliroq topadi.",
+    "lib.arcade.shipsLeft": "Qolgan kemalar: siz {a} · dushman {b}",
+    "lib.arcade.theySunk": "Dushman kemangizdan birini choʻktirdi!",
+    "lib.arcade.theyHit": "Dushman kemangizdan biriga tegdi.",
+    "lib.arcade.theyMiss": "Dushman xato qildi.",
+    "lib.arcade.youSunk": "Siz dushman kemasini choʻktirdingiz!",
+    "lib.arcade.youHit": "Tegdi!",
+    "lib.arcade.youMiss": "Xato.",
+    "lib.arcade.shake": "Silkitish",
+    "lib.arcade.clearBets": "Tikishlarni tozalash",
+    "lib.arcade.note.bau-cua": "Faqat virtual tangalar — haqiqiy pul yoʻq. Fishka qiymatini tanlang, tikish uchun hayvonlarni bosing, keyin Silkitish tugmasini bosing. Tikkan hayvoningizga mos tushgan har bir zar uchun tikkan tangangiz qaytadi va qoʻshimcha shuncha miqdorda yutuq olasiz. Ruxsat etilgan davralarda maqsadli tangalarga yeting va bosqichni oʻting.",
+    "lib.arcade.note.baccarat": "Faqat virtual tangalar — haqiqiy pul yoʻq. Oʻyinchi, Bankir yoki Durangga tiking, keyin Tarqatish tugmasini bosing. Qoʻl qiymati — jami yigʻindining oxirgi raqami (A = 1, 2–9 oʻz qiymati, 10/J/Q/K = 0); 9 ga yaqinroq qoʻl yutadi, uchinchi kartalar standart qoidalar boʻyicha olinadi. Oʻyinchi 1:1, Bankir 0,95:1, Durang 8:1 toʻlaydi (durangda Oʻyinchi/Bankir tikishlari qaytariladi). Ruxsat etilgan davralarda maqsadli tangalarga yeting va bosqichni oʻting.",
+    "lib.arcade.banker": "Bankir",
+    "lib.arcade.player": "Oʻyinchi",
+    "lib.arcade.tie": "Durang",
+    "lib.arcade.openCards": "Ochish",
+    "lib.arcade.note.bai-cao": "Faqat virtual tangalar — haqiqiy pul yoʻq. Har bir tomonga 3 tadan karta beriladi. Qoʻl ochkosi — yigʻindining oxirgi raqami (A = 1, 2–9 oʻz qiymati, 10/J/Q/K = 10, ya’ni 0 ochko). Darajalar: uchta bir xil karta (“Sáp”) eng yuqori, keyin uchta rasmli karta (“Ba tiên”), keyin 9 ochkodan 0 gacha. Tikish qiling, Tarqatish, soʻng Ochish tugmasini bosib, dilerga solishtiring. 6-bosqichdan durangda diler yutadi. Ruxsat etilgan davralarda maqsadli tangalarga yeting va bosqichni oʻting.",
+    "lib.arcade.caoSap": "Uchta bir xil",
+    "lib.arcade.caoBaTien": "Uchta rasmli karta",
+    "lib.arcade.caoPts": "{n} ochko",
+    "lib.arcade.note.bingo": "Kompyuter 1 dan 75 gacha raqamlarni aytadi. Aytilgan raqam kartangizda boʻlsa, belgilash uchun uni bosing (markaz bepul). Qator, ustun yoki diagonalni toʻldirib, BINGO! tugmasini bosing — kompyuter raqiblaridan oldinroq boʻlishingiz kerak. Notoʻgʻri BINGO! tugmani bir necha soniyaga bloklaydi. Yuqori bosqichlarda raqamlar tezroq aytiladi va raqiblar koʻproq boʻladi.",
+    "lib.arcade.opponentsN": "Raqiblar: {n}",
+    "lib.arcade.falseBingo": "Hali toʻliq qator yoʻq! Tugma 3 soniyaga bloklandi.",
+    "lib.arcade.bingoGo": "Raqamlar aytilmoqda!",
+    "lib.arcade.note.yahtzee": "Har bir yurishda 5 ta zarni 3 martagacha tashlaysiz: saqlab qolish uchun zarni bosing, qolganlarini qayta tashlash uchun Tashlash tugmasini bosing. Keyin jadvaldan ochko yozish uchun katakni tanlang (har bir katak bir marta ishlatiladi; mos kelmaydigan katak 0 ochko beradi). Jami 13 yurish. Birlar–Oltilar kataklari yigʻindisi 63 yoki undan koʻp boʻlsa, 35 bonus qoʻshiladi. Gʻalaba uchun bosqichning maqsadli ochkosiga yeting.",
+    "lib.arcade.turnN": "Yurish {n}/13",
+    "lib.arcade.pickCat": "Ochko yozish uchun katakni tanlang",
+    "lib.arcade.rollsLeft": "Tashlash ({n} ta qoldi)",
+    "lib.arcade.upperBonus": "Birlar–Oltilar bonusi",
+    "lib.arcade.scored": "Yozildi: {n}",
+    "lib.arcade.note.crazy-eights": "Tashlangan kartalar uyumining ustki kartasiga mast yoki daraja boʻyicha mos kartani tashlang. Sakkizlar — joker: istalgan vaqt tashlab, yangi mastni tanlash mumkin. Tashlay oladigan karta boʻlmasa, yigʻmadan karta oling (3 tagacha); baribir tashlay olmasangiz, yurishni oʻtkazasiz. Qoʻlini birinchi boʻlib boʻshatgan gʻolib boʻladi. Yuqori bosqichlarda raqiblar koʻproq va kompyuter aqlliroq oʻynaydi.",
+    "lib.arcade.opponent": "Raqib",
+    "lib.arcade.pileLeft": "Yigʻma: {n} ta",
+    "lib.arcade.pickSuit": "Yangi mastni tanlang",
+    "lib.arcade.aiSuit": "Kompyuter {s} mastini tanladi",
+    "lib.arcade.aiPass": "Kompyuter yurishni oʻtkazdi.",
+    "lib.arcade.mustPlay": "Sizda tashlash mumkin boʻlgan karta bor — uni tashlang.",
+    "lib.arcade.youPass": "Siz 3 ta karta oldingiz va yurishni oʻtkazdingiz.",
+    "lib.arcade.bcGourd": "Qovoq",
+    "lib.arcade.bcCrab": "Qisqichbaqa",
+    "lib.arcade.bcShrimp": "Qisqichbaqasimon (krevetka)",
+    "lib.arcade.bcFish": "Baliq",
+    "lib.arcade.bcRooster": "Xoʻroz",
+    "lib.arcade.bcDeer": "Kiyik",
+    "lib.arcade.yOnes": "Birlar",
+    "lib.arcade.yTwos": "Ikkilar",
+    "lib.arcade.yThrees": "Uchlar",
+    "lib.arcade.yFours": "Toʻrtlar",
+    "lib.arcade.yFives": "Beshlar",
+    "lib.arcade.ySixes": "Oltilar",
+    "lib.arcade.yThree": "Uchta bir xil",
+    "lib.arcade.yFour": "Toʻrtta bir xil",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Kichik ketma-ketlik (30)",
+    "lib.arcade.yLarge": "Katta ketma-ketlik (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Imkoniyat",
+    "lib.arcade.note.race": "← → tugmalarini bosing (yoki kerakli yoʻlakka tegining) — yoʻlakni almashtirib, oldingi mashinalardan qoching. Sizda 3 ta jon bor; bosqichni oʻtish uchun butun masofani bosib oʻting. Yuqori bosqichlarda yoʻlaklar koʻproq, transport tezroq.",
+    "lib.arcade.note.jump": "Qahramon oʻzi sakraydi. Keyingi platformaga tushish uchun ← → tugmalarini bosing yoki barmoqni suring. Koʻk platformalar harakatlanadi, jigarranglari tushganda sinadi. Ekrandan tushib ketsangiz yutqazasiz; bosqichni oʻtish uchun yetarlicha baland chiqing.",
+    "lib.arcade.note.miner": "Ilgak oʻngga-chapga tebranadi; uni tushirish uchun Boʻsh joy, ↓ tugmasini bosing yoki maydonga tegining. Katta oltin va toshlar ogʻir, sekin tortiladi; olmoslar juda qimmat. 60 soniya tugamasidan oldin maqsadli pulga yeting.",
+    "lib.arcade.note.slicer": "Mevalarni kesish uchun ular ustidan barmoq yoki sichqoncha bilan suring. Qora bombalardan saqlaning. Mevani qoʻldan boy berish yoki bombani kesish bir jonni oladi (sizda 3 ta jon bor). Bosqichni oʻtish uchun yetarlicha meva kesing.",
+    "lib.arcade.note.hoops": "Maydonni bosib, pastga torting (xuddi tashlagich kabi) va qoʻyib yuboring — toʻp halqaga uchadi. Qancha uzoq tortsangiz, otish shuncha kuchli boʻladi. Berilgan otishlar ichida yetarlicha savat qiling; 4-bosqichdan halqa harakatlanadi.",
+    "lib.arcade.note.bubbles": "Nishonga olish uchun sichqoncha yoki barmoqni siljiting, keyin otish uchun bosing/tegining yoki Boʻsh joy/Oʻt ochish tugmasini bosing. Bir xil rangdagi 3 yoki undan koʻp sharni birlashtirib, ularni yoriting; tayanchsiz qolgan sharlar tushadi. Qatorlar sekin pastlaydi, shuning uchun ularni pastki chiziqdan uzoqda saqlang. Gʻalaba uchun barcha sharlarni tozalang.",
+    "lib.arcade.note.chase": "Labirintdagi barcha nuqtalarni yeyish va sizni quvayotgan arvohlardan qochish uchun strelka tugmalaridan foydalaning (yoki barmoqni suring / tugmalarni bosing). Sizda 3 ta jon bor; yuqori bosqichlarda arvohlar koʻproq, tezroq va aqlliroq quvadi.",
+    "lib.arcade.height": "Balandlik: {n}/{t} m",
+    "lib.arcade.money": "Pul: {n}/{t}",
+    "lib.arcade.sliced": "Kesildi: {n}/{t}",
+    "lib.arcade.hoopScore": "Savatlar: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} ta otish qoldi",
+    "lib.arcade.bubbleLeft": "{n} ta shar qoldi",
+    "lib.arcade.shotsN": "Otishlar: {n}",
+    "lib.arcade.dotsLeft": "{n} ta nuqta qoldi",
+    "lib.arcade.note.kakuro": "Oq kataklarni 1–9 raqamlari bilan shunday toʻldiringki, har bir qator qora katakdagi koʻrsatkichga teng yigʻindi bersin (yuqori oʻngdagi raqam oʻngga qarab qator uchun, pastki chapdagi — pastga qarab qator uchun), qator ichida raqamlar takrorlanmasin. Harakatlanish uchun strelka tugmalaridan foydalaning.",
+    "lib.arcade.note.kenken": "Toʻrni 1 dan N gacha raqamlar bilan shunday toʻldiringki, hech bir qator va ustunda raqam takrorlanmasin. Qalin chiziq bilan ajratilgan har bir guruhda maqsad va amal koʻrsatilgan (+, −, ×, ÷): guruhdagi raqamlar shu natijani berishi kerak. Harakatlanish uchun strelka tugmalaridan foydalaning.",
+    "lib.arcade.note.wordGuess": "Yashirin inglizcha soʻzni topishga harakat qiling. Har bir urinishdan keyin yashil — harf toʻgʻri joyda, sariq — harf soʻzda bor, lekin boshqa joyda, kulrang — harf soʻzda yoʻq degani. Klaviaturadan yoki ekrandagi tugmalardan foydalaning va yuborish uchun Enter bosing. Yuqori bosqichlarda soʻzlar uzunroq, urinishlar kamroq.",
+    "lib.arcade.note.hangman": "Yashirin inglizcha soʻzni harflarni birma-bir tanlab toping. Har bir xato harf osilgan odam shakliga bir qism qoʻshadi; xato qilish imkoniyati tugasa, yutqazasiz. Yuqori bosqichlarda soʻzlar uzunroq, ruxsat etilgan xatolar kamroq.",
+    "lib.arcade.note.scramble": "Aralashtirilgan harflarni haqiqiy inglizcha soʻzga aylantiring va javob maydoniga yozing. Har bir bosqichda 5 ta soʻz bor; bosqichni oʻtish uchun har bir soʻz vaqti tugamasidan oldin kamida 4 tasini toping. Maslahat birinchi harfni koʻrsatadi.",
+    "lib.arcade.cellsLeft": "{n} ta boʻsh katak qoldi",
+    "lib.arcade.wrongN": "{n} ta katak notoʻgʻri.",
+    "lib.arcade.noError": "Hozircha xato topilmadi.",
+    "lib.arcade.tooShort": "Harflar yetarli emas",
+    "lib.arcade.answerIs": "Javob: {w}",
+    "lib.arcade.livesLeft": "{n} ta xato imkoniyati qoldi",
+    "lib.arcade.yourAnswer": "Sizning javobingiz",
+    "lib.arcade.skip": "Oʻtkazib yuborish",
+    "lib.arcade.notThis": "Notoʻgʻri, yana urinib koʻring.",
+    "lib.arcade.startsWith": "Birinchi harf: {c}",
+    "lib.arcade.note.domino": "Har bir oʻyinchiga 7 tadan plitka beriladi; eng katta dubl egasi boshlaydi. Zanjirning bir uchiga mos raqamli plitkani qoʻying. Qoʻya olmasangiz, qoʻya oladigan plitka chiqquncha omborxonadan oling; u boʻsh boʻlsa, yurishni oʻtkazing. Qoʻlini birinchi boʻlib boʻshatgan gʻolib boʻladi; ikkalasi ham bloklanib qolsa, nuqtalari yigʻindisi kamroq boʻlgan yutadi.",
+    "lib.arcade.note.hearts": "Toʻrt oʻyinchi, har biriga 13 tadan karta. Yurishni gul 2 boshlaydi. Iloji boʻlsa, boshlangan mastga amal qilishingiz kerak. Har bir qalb 1 ochko, Qora malika (♠Q) 13 ochko; xatoni olgan kishi uning ochkolarini oladi. Kam ochko yaxshiroq, barcha 26 ochkoni olgan boʻlsa, qolganlar 26 dan oladi. Qalb tushirilmaguncha yurishni qalb bilan boshlay olmaysiz. Oxirgi qoʻldan keyin ochkoingiz eng past boʻlsa (yoki eng past bilan teng boʻlsa), yutasiz.",
+    "lib.arcade.note.holdem": "Faqat virtual fishkalar bilan kompyuterga qarshi yakkama-yakka oʻyin. Har bir oʻyinchi 2 ta yopiq karta oladi va 5 ta umumiy karta ochiladi (flop, turn, river); eng yaxshi 5 kartali kombinatsiyani tuzing. Har davrada tashlash (fold), tenglashtirish (call yoki check) yoki oshirish (raise) mumkin. Blindlar har 4 qoʻldan keyin oshadi. Kompyuterning fishkalari tugasa yoki qoʻllar chegarasidan keyin fishkangiz koʻp boʻlsa, yutasiz. Haqiqiy pul ishtirok etmaydi.",
+    "lib.arcade.dmDraw": "Plitka olish",
+    "lib.arcade.dmPass": "Oʻtkazish",
+    "lib.arcade.dmEmpty": "Hali plitka qoʻyilmagan",
+    "lib.arcade.dmYard": "Omborxona: {n} ta plitka",
+    "lib.arcade.dmLeft": "Chap uch",
+    "lib.arcade.dmRight": "Oʻng uch",
+    "lib.arcade.dmTie": "Durang! Ikkala tomon teng.",
+    "lib.arcade.hrHand": "{n}-qoʻl/{t}",
+    "lib.arcade.hrTook": "{p} xatoni oladi ({n} ochko).",
+    "lib.arcade.hrIllegal": "Bu kartani tashlay olmaysiz (mastga amal qiling yoki qalb bilan boshlash hali mumkin emas).",
+    "lib.arcade.blinds": "Katta blind: {n}",
+    "lib.arcade.pot": "Bank: {n}",
+    "lib.arcade.fold": "Tashlash",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Oshirish",
+    "lib.arcade.raiseN": "{n} gacha oshirish",
+    "lib.arcade.thOppFold": "Kompyuter tashladi; bu qoʻlni siz yutdingiz.",
+    "lib.arcade.thYouFold": "Siz tashladingiz.",
+    "lib.arcade.thOppWin": "Bu qoʻlni kompyuter yutdi",
+    "lib.arcade.thYouWin": "Bu qoʻlni siz yutdingiz",
+    "lib.arcade.thSplit": "Bankni boʻlish",
+    "lib.arcade.thAiFold": "Kompyuter tashladi.",
+    "lib.arcade.thAiRaise": "Kompyuter {n} gacha oshirdi.",
+    "lib.arcade.thAiCall": "Kompyuter tenglashtirdi / check qildi.",
+    "lib.arcade.hand.high": "Yuqori karta",
+    "lib.arcade.hand.pair": "Juftlik",
+    "lib.arcade.hand.twoPair": "Ikki juftlik",
+    "lib.arcade.hand.trips": "Uchlik",
+    "lib.arcade.hand.straight": "Ketma-ketlik",
+    "lib.arcade.hand.flush": "Flesh",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Kare",
+    "lib.arcade.hand.sflush": "Ketma-ket flesh",
+    "lib.arcade.note.nback": "3x3 toʻrda kataklar birin-ketin yonadi. Yongan joy N qadam avvalgisi bilan bir xil boʻlsa, \"Mos!\" tugmasini bosing (yoki Boʻsh joy). N qiymati yuqorida koʻrsatilgan. Bosqichni oʻtish uchun kamida 80% toʻgʻri qaror kerak. Yuqori bosqichlarda N kattaroq boʻladi.",
+    "lib.arcade.nbMatch": "Mos!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Toʻgʻri: {a} · Notoʻgʻri: {b}",
+    "lib.arcade.nbAcc": "Aniqlik: {n}%",
+    "lib.arcade.note.clicker": "Pechenye pishirish uchun pechenyeni bosing, keyin ularni avtomatik pishiradigan yordamchilarga sarflang (har bir xariddan keyin narx oshadi). Bosqichni oʻtish uchun 2 daqiqa ichida maqsadli miqdordagi pechenye pishiring.",
+    "lib.arcade.ckCursor": "Kursor",
+    "lib.arcade.ckGrandma": "Pishiruvchi buvi",
+    "lib.arcade.ckFarm": "Ferma",
+    "lib.arcade.ckMine": "Shakar koni",
+    "lib.arcade.ckFactory": "Zavod",
+    "lib.arcade.ckCookie": "Pechenye",
+    "lib.arcade.ckEarned": "Pishirildi: {n}/{t}",
+    "lib.arcade.chips2": "Pechenye: {n}",
+    "lib.arcade.ckCps": "Soniyasiga {n} ta pechenye",
+    "lib.arcade.note.onet": "Ikkitadan koʻp boʻlmagan burilishli, boshqa plitkalarni kesib oʻtmaydigan yoʻl bilan ulanadigan ikkita bir xil plitkani tanlang va ularni olib tashlang. Gʻalaba uchun vaqt tugamasidan oldin barcha plitkalarni tozalang. Yurishlar qolmaganda aralashtirish mumkin (cheklangan marta).",
+    "lib.arcade.shuffle": "Aralashtirish",
+    "lib.arcade.tilesLeft": "{n} ta plitka qoldi",
+    "lib.arcade.autoShuffle": "Yurishlar qolmadi — avtomatik aralashtirildi.",
+    "lib.arcade.note.jigsaw": "Rasm boʻlaklarga boʻlingan va aralashtirilgan. Almashtirish uchun bir boʻlakni, keyin boshqasini bosing va namuna sifatida koʻrsatilgan rasmni qayta tiklang. Toʻgʻri joydagi boʻlaklar yashil ramka oladi. Yuqori bosqichlarda boʻlaklar koʻproq.",
+    "lib.arcade.jgRef": "Namuna rasm",
+    "lib.arcade.jgPlaced": "Joyida: {a}/{b}",
+    "lib.arcade.golfStrokes": "Zarbalar: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Siz oq shashkalar bilan oʻynaysiz, yuqori oʻngdan pastki oʻngga (uyingiz) qarab harakatlanasiz. Zarlarni tashlang, yurmoqchi boʻlgan shashkani bosing, keyin yoritilgan manzilni bosing. Faqat bitta raqib shashkasi turgan nuqtaga tushsangiz, uni oʻrtadagi chiziqqa chiqarib yuborasiz va u avval qaytib kirishi kerak. Ikki yoki undan koʻp raqib shashkasi turgan nuqtaga tusha olmaysiz. Barcha 15 shashkangiz uyingiz hududida (oxirgi 6 nuqta) boʻlsa, ularni olib tashlashingiz mumkin. 15 tasini birinchi boʻlib olib tashlagan gʻolib boʻladi.",
+    "lib.arcade.bgRoll": "Zarlarni tashlash",
+    "lib.arcade.bgOff": "Olib tashlash",
+    "lib.arcade.bgRollFirst": "Zarlarni tashlash",
+    "lib.arcade.bgInfo": "Olib tashlandi: siz {a} · kompyuter {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Sizda yuradigan yurish qolmadi.",
+    "lib.arcade.note.tienlen": "Toʻrt oʻyinchi, har biriga 13 tadan karta. Kartalar tartibi pastdan yuqoriga: 3, 4, … K, A, 2; mastlar pastdan yuqoriga: qargʻa, gul, olmos, qalb. Qargʻa 3 egasi birinchi yuradi. Bitta karta, juftlik, uchta bir xil, toʻrtta bir xil yoki 3 va undan koʻp ketma-ket kartalardan iborat qator (2lar kirmaydi) tashlang. Keyingi oʻyinchi shu turdagi, lekin yuqoriroq kombinatsiyani tashlashi yoki oʻtkazishi kerak; toʻrtta bir xil karta bitta 2 yoki juft 2ni yenga oladi. Qolgan hamma oʻtkazsa, oxirgi tashlagan oʻyinchi istalgan narsani boshlashi mumkin. Qoʻlini birinchi boʻlib boʻshatgan gʻolib boʻladi. Kartalarni tanlang, keyin Tashlash tugmasini bosing.",
+    "lib.arcade.tlPlay": "Tashlash",
+    "lib.arcade.tlPass": "Oʻtkazish",
+    "lib.arcade.tlClear": "Tanlovni bekor qilish",
+    "lib.arcade.tlPassed": "oʻtkazdi",
+    "lib.arcade.tlFree": "Stol boʻsh — istalgan narsani boshlashingiz mumkin",
+    "lib.arcade.tlLeft": "Qolgan kartalar: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} yurishni oʻtkazdi.",
+    "lib.arcade.tlBad": "Tanlangan kartalar toʻgʻri kombinatsiya tashkil etmaydi.",
+    "lib.arcade.tlLow": "Bu kombinatsiya stoldagisini yenga olmaydi."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Ultimate krestik-nolik",
       "desc": "9 ta kichik taxtada krestik-nolik: tanlagan katagingiz raqib qayerda o‘ynashini belgilaydi; kompyuterga qarshi 10 ta bosqich."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Toʻpni kompyuterdan oʻtkazib yuboring; birinchi boʻlib 5 ochko olgan gʻolib boʻladi. 10 bosqich, raqib tobora tezroq va aniqroq."
+    },
+    "space-shooter": {
+      "name": "Kosmik otuvchi",
+      "desc": "Kemangizni boshqaring, dushman kemalarini urib tushiring va ularning oʻqlaridan qoching; 10 bosqich, kattaroq toʻlqinlar, javob oʻqlari va kuchliroq dushmanlar."
+    },
+    "asteroids": {
+      "name": "Asteroidlar",
+      "desc": "Kosmik toshlarni parchalash uchun aylaning, harakatlaning va oʻq uzing; katta toshlar kichiklariga boʻlinadi. 10 bosqich, toshlar koʻproq va tezroq."
+    },
+    "maze": {
+      "name": "Labirint",
+      "desc": "Vaqt tugamasidan oldin labirintdan chiqish yoʻlini toping; kichikdan kattagacha 10 bosqich, yuqori bosqichlarda tuman bor."
+    },
+    "road-cross": {
+      "name": "Yoʻldan oʻtish (Frogger uslubida)",
+      "desc": "Baqani gavjum yoʻllar va suzuvchi yogʻochli daryolardan oʻtkazib, 3 marta uyga yetkazing; 10 bosqich, transport tezroq, yuqori bosqichlarda daryo bor."
+    },
+    "flappy": {
+      "name": "Flappy Bird uslubidagi oʻyin",
+      "desc": "Qanot qoqish uchun bosing va quvurlar orasidagi oraliqlardan uching; 10 bosqich, oraliqlar torroq, tezlik oshib boradi."
+    },
+    "runner": {
+      "name": "Dino yuguruvchi",
+      "desc": "Kaktuslardan sakrang va qushlar tagidan oʻting; tezlik oshib borar ekan, 10 bosqichning har birini oʻtish uchun yetarlicha uzoq yuguring."
+    },
+    "whack-a-mole": {
+      "name": "Sichqonni ur",
+      "desc": "Vaqt tugamasidan oldin inlardan chiqayotgan sichqonlarni uring va bombalardan saqlaning; sekindan juda tezgacha 10 bosqich."
+    },
+    "simon": {
+      "name": "Simon (Rang xotirasi)",
+      "desc": "Ranglar va tovushlar ketma-ketligini eslab qoling va takrorlang; 10 bosqichda ketma-ketliklar uzayadi, 7-bosqichdan 6 ta tugma."
+    },
+    "aim-trainer": {
+      "name": "Nishonga olish mashgʻuloti",
+      "desc": "Tasodifiy paydo boʻlib, tez yoʻqoladigan nishonlarga uring; 10 bosqichda nishonlar kichrayadi, reaksiya vaqtingiz oʻlchanadi."
+    },
+    "quick-math": {
+      "name": "Tez hisob",
+      "desc": "Vaqt bosimi ostida xayolan qoʻshish, ayirish, koʻpaytirish va boʻlish amallarini bajaring; oddiy yigʻindilardan ifodalargacha 10 bosqich."
+    },
+    "reaction": {
+      "name": "Reaksiya vaqti testi",
+      "desc": "Ekran yashil boʻlgan zahoti bosing; 5 davradagi oʻrtacha natijangiz har bir bosqich chegarasiga mos kelishi kerak, 10 bosqichda chegara qattiqlashadi."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Donalarni chuqurchalar boʻylab tashlang, raqib donalarini oling va omboringizga tushganda yana yuring; kompyuterga qarshi osondan qiyingacha 10 bosqich."
+    },
+    "snakes-ladders": {
+      "name": "Ilon va narvon",
+      "desc": "Kubikni tashlab, 1-katakdan 100-gacha boring, narvonlardan chiqing, ilonlardan saqlaning va raqiblardan oldin marraga yeting; 10 bosqich."
+    },
+    "nine-mens-morris": {
+      "name": "Toʻqqiz tosh tegirmoni (Nine Men’s Morris)",
+      "desc": "Uchta donani bir qatorga terish va raqib donalarini olib tashlash uchun donalarni qoʻying, suring va uchiring; kompyuterga qarshi 10 bosqich."
+    },
+    "battleship": {
+      "name": "Dengiz jangi (Battleship)",
+      "desc": "Kompyuter sizning kemalaringizni choʻktirishidan oldin, 10x10 maydonda uning flotini toping va choʻktiring; kompyuter tobora aqlliroq oʻylaydigan 10 bosqich."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Qovoq, Qisqichbaqa, Baliq, Krevetka)",
+      "desc": "An’anaviy Vetnam zar oʻyini: virtual tangalarni hayvonlarga tiking va uchta zarni silkiting; 10 bosqichda maqsadli tangalarga yeting (haqiqiy pul yoʻq)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Standart qoidalar boʻyicha tarqatilgan kartalar bilan Oʻyinchi, Bankir yoki Durangga tiking, virtual tangalar bilan; 10 bosqichda maqsadli tangalarga yeting (haqiqiy pul yoʻq)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Uch kartali oʻyin)",
+      "desc": "3 kartali qoʻllarni diler bilan solishtiring: uchta bir xil, uchta rasmli karta, keyin 9 dan 0 gacha ochko; virtual tangalar, 10 bosqich, haqiqiy pul yoʻq."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "5x5 kartangizdagi aytilgan raqamlarni belgilang va kompyuter raqiblaridan oldin BINGO deb qichqiring; 10 bosqichda raqamlar tezroq aytiladi."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Besh zar)",
+      "desc": "Beshta zarni tashlang, yaxshilarini saqlang va 13 ochko katagini toʻldiring; 10 bosqichda maqsadli ochkoga yeting."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Mast yoki daraja boʻyicha mos karta tashlang, sakkizlar mastni oʻzgartiradi; 10 bosqichda 1 dan 3 gacha kompyuter raqibidan oldin qoʻlingizni boʻshating."
+    },
+    "car-race": {
+      "name": "Avtopoyga",
+      "desc": "Oldingi mashinalardan qochish uchun yoʻlakni almashtiring va butun masofani bosib oʻting; 10 bosqich, yoʻlaklar koʻproq va transport tezroq."
+    },
+    "sky-jump": {
+      "name": "Osmonga sakrash",
+      "desc": "Platformadan platformaga sakrab, yiqilmasdan iloji boricha baland chiqing; 10 bosqich, platformalar siyrakroq, harakatlanuvchi va sinuvchi platformalar bor."
+    },
+    "gold-miner": {
+      "name": "Oltin qazuvchi",
+      "desc": "Oltin va olmoslarni tortib olish uchun ilgakni tushiring, ogʻir toshlardan qoching va 60 soniya ichida maqsadli pulga yeting; 10 bosqich."
+    },
+    "fruit-slice": {
+      "name": "Meva kesish",
+      "desc": "Uchib chiqayotgan mevalarni kesish uchun suring va bombalardan qoching; 10 bosqich, meva ham, bomba ham koʻproq."
+    },
+    "basketball": {
+      "name": "Basketbol otish",
+      "desc": "Cheklangan otishlar ichida toʻpni halqaga tushirish uchun torting va qoʻyib yuboring; 10 bosqich, 4-bosqichdan halqa harakatlanadi."
+    },
+    "bubble-shooter": {
+      "name": "Shar otuvchi",
+      "desc": "Bir xil rangdagi 3 yoki undan koʻp sharni birlashtirib yoriting va ular pastga yetmasdan hammasini tozalang; 10 bosqich, ranglar koʻproq."
+    },
+    "dot-chase": {
+      "name": "Nuqta quvish",
+      "desc": "Sizni quvayotgan arvohlardan qochib, labirintdagi barcha nuqtalarni yeng; 10 bosqich, arvohlar koʻproq va aqlliroq."
+    },
+    "kakuro": {
+      "name": "Kakuro (Kesishuvchi yigʻindilar)",
+      "desc": "Oq kataklarni 1–9 raqamlari bilan har bir qator koʻrsatkichga teng yigʻindi beradigan va takrorlanmaydigan qilib toʻldiring; 10 bosqich, 5x5 dan 9x9 gacha toʻrlar."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Toʻrni qator va ustunlarda takrorlanmaydigan qilib toʻldiring, har bir guruh oʻz amali bilan maqsadli natijani bersin; 10 bosqich, 3x3 dan 6x6 gacha toʻrlar."
+    },
+    "word-guess": {
+      "name": "Soʻz topish (Wordle uslubida)",
+      "desc": "Yashil, sariq va kulrang maslahatlar yordamida yashirin inglizcha soʻzni toping; 10 bosqich, 4–6 harfli soʻzlar va kamroq urinishlar."
+    },
+    "hangman": {
+      "name": "Hangman (Osilgan odam)",
+      "desc": "Xato imkoniyatlari tugamasidan oldin inglizcha soʻzni harflarni birma-bir tanlab toping; 10 bosqich, soʻzlar uzunroq, xatolar kamroq."
+    },
+    "word-scramble": {
+      "name": "Soʻz tuzish (Anagramma)",
+      "desc": "Vaqt tugamasidan oldin aralashgan harflardan inglizcha soʻz tuzing; 10 bosqich, har bir bosqichda 5 ta soʻz."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Plitkalarni zanjirning ikkala uchiga moslab qoʻying va kompyuterdan oldin qoʻlingizni boʻshating; kompyuter aqlliroq boʻlib boradigan 10 bosqich."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Toʻrt kishilik karta oʻyinida qalblar va Qora malikadan saqlaning; kam ochko yaxshiroq; aqlliroq kompyuter oʻyinchilariga qarshi 10 bosqich."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtual fishkalar)",
+      "desc": "Kompyuterga qarshi yakkama-yakka poker, virtual fishkalar bilan: tashlang, tenglashtiring yoki oshiring va kompyuterning fishkalari tugaganda yuting; 10 bosqich, haqiqiy pul yoʻq."
+    },
+    "n-back": {
+      "name": "N-Back xotirasi",
+      "desc": "Yongan katakni kuzating va u N qadam avvalgisi bilan bir xil boʻlsa, Mos tugmasini bosing; N 4 gacha boʻlgan 10 bosqich."
+    },
+    "cookie-clicker": {
+      "name": "Pechenye bosish (Cookie Clicker)",
+      "desc": "Pechenye pishirish uchun bosing, avtomatik pishiradigan yordamchilarni sotib oling va 2 daqiqa ichida maqsadga yeting; 10 bosqich."
+    },
+    "tile-connect": {
+      "name": "Plitka ulash (Onet uslubida)",
+      "desc": "Bir xil plitkalarni ikkitadan koʻp boʻlmagan burilishli yoʻl bilan ulang va vaqt tugamasidan oldin maydonni tozalang; 10 bosqich, maydonlar kattalashadi."
+    },
+    "jigsaw": {
+      "name": "Rasm jigsaw",
+      "desc": "Aralashtirilgan boʻlaklarni almashtirib, rasmni qayta tiklang; 3x3 dan 6x6 boʻlakkacha 10 bosqich."
+    },
+    "mini-golf": {
+      "name": "Mini-golf",
+      "desc": "Toʻpni teshikka kiritish uchun orqaga torting va qoʻyib yuboring, zarbalar chegarasi ichida; devor va qumli 10 maydon."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Zarlarni tashlang, shashkalaringizni uyga olib boring va kompyuterdan oldin olib tashlang, yoʻlda uning yolgʻiz shashkalarini uring; 10 bosqich."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (O‘n uch)",
+      "desc": "Toʻrt kishilik Vetnam karta oʻyini: yakka, juft, ketma-ket kartalar va toʻrtliklarni tashlab, qoʻlingizni birinchi boʻlib boʻshating; 10 bosqich."
     }
   },
   "s": {

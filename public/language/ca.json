@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Salta",
     "lib.arcade.aimTarget": "Diana",
     "lib.game.soundOn": "Activa el so",
-    "lib.game.soundOff": "Desactiva el so"
+    "lib.game.soundOff": "Desactiva el so",
+    "lib.arcade.note.kalah": "Tu jugues la fila inferior i l’ordinador la superior; el pou gran de la dreta és el teu magatzem. Fes clic en un pou per agafar-ne totes les llavors i sembra-les en sentit antihorari, una a cada pou (saltant el magatzem de l’adversari). Si l’última llavor cau al teu magatzem, tornes a moure; si cau en un pou buit del teu costat davant d’un pou amb llavors, captures aquestes llavors. Quan un costat queda buit, les llavors de l’altre costat van al magatzem del seu propietari; guanya el magatzem més gran.",
+    "lib.arcade.note.snakes": "Llança el dau i avança tantes caselles, de l’1 al 100. Si caus al peu d’una escala, hi puges; si caus al cap d’una serp, rellisques cap avall. Des del nivell 4 has de treure el número exacte per arribar al 100. Els nivells més alts tenen més serps, menys escales i més adversaris. Guanya qui arriba primer al 100.",
+    "lib.arcade.square": "Casella {n}",
+    "lib.arcade.ladderUp": "Escala amunt!",
+    "lib.arcade.snakeDown": "T’ha empassat una serp!",
+    "lib.arcade.needExact": "Necessites el número exacte per arribar al 100.",
+    "lib.arcade.note.nmm": "Cada bàndol té 9 peces. Fase 1: col·loqueu peces per torns als punts buits. Fase 2: llisca una peça a un punt buit adjacent. Quan només et queden 3 peces, pots «volar» a qualsevol punt buit. Fes tres en ratlla (un «molí») per treure una peça de l’adversari (primer les que no són en un molí). Perds quan et queden 2 peces o no pots moure. Tu jugues amb blanques i comences.",
+    "lib.arcade.inHand": "Per col·locar: {a} · {b}",
+    "lib.arcade.removePiece": "Tria una peça de l’adversari per treure-la.",
+    "lib.arcade.enemyWaters": "Aigües enemigues (fes clic per disparar)",
+    "lib.arcade.yourFleet": "La teva flota",
+    "lib.arcade.note.battleship": "Cada bàndol té 5 vaixells (de longitud 5, 4, 3, 3, 2) col·locats a l’atzar en una quadrícula de 10x10. Dispareu per torns a una casella: un encert es torna vermell, una fallada blau clar, i si toques totes les caselles d’un vaixell s’enfonsa. Guanya qui enfonsa primer tota la flota enemiga. En els nivells més alts l’ordinador dedueix amb més astúcia on són els teus vaixells.",
+    "lib.arcade.shipsLeft": "Vaixells que queden: tu {a} · enemic {b}",
+    "lib.arcade.theySunk": "L’enemic ha enfonsat un dels teus vaixells!",
+    "lib.arcade.theyHit": "L’enemic ha tocat un dels teus vaixells.",
+    "lib.arcade.theyMiss": "L’enemic ha fallat.",
+    "lib.arcade.youSunk": "Has enfonsat un vaixell enemic!",
+    "lib.arcade.youHit": "Tocat!",
+    "lib.arcade.youMiss": "Aigua.",
+    "lib.arcade.shake": "Sacseja",
+    "lib.arcade.clearBets": "Esborra les aposes",
+    "lib.arcade.note.bau-cua": "Només monedes virtuals, sense diners reals. Tria el valor de la fitxa, fes clic als animals per apostar i prem Sacseja. Per cada dau que coincideixi amb un animal on has apostat, recuperes la teva aposta i guanyes la mateixa quantitat per cada coincidència. Arriba a les monedes objectiu dins de les rondes permeses per superar el nivell.",
+    "lib.arcade.note.baccarat": "Només monedes virtuals, sense diners reals. Aposta per Jugador, Banquer o Empat i prem Reparteix. El valor d’una mà és l’última xifra del total (A = 1, 2–9 valor nominal, 10/J/Q/K = 0); guanya la mà més propera al 9, i la tercera carta es treu segons les regles habituals. El Jugador paga 1:1, el Banquer 0,95:1 i l’Empat 8:1 (les aposes al Jugador/Banquer es tornen en cas d’empat). Arriba a les monedes objectiu dins de les rondes permeses per superar el nivell.",
+    "lib.arcade.banker": "Banquer",
+    "lib.arcade.player": "Jugador",
+    "lib.arcade.tie": "Empat",
+    "lib.arcade.openCards": "Mostra",
+    "lib.arcade.note.bai-cao": "Només monedes virtuals, sense diners reals. Cada bàndol rep 3 cartes. Una mà puntua l’última xifra del seu total (A = 1, 2–9 valor nominal, 10/J/Q/K = 10, és a dir, 0 punts). Ordre: tres iguals («Sáp») és la més alta, després tres figures («Ba tiên»), i després de 9 punts a 0. Fes una aposta, prem Reparteix i després Mostra per comparar amb el repartidor. A partir del nivell 6 el repartidor guanya els empats. Arriba a les monedes objectiu dins de les rondes permeses per superar el nivell.",
+    "lib.arcade.caoSap": "Tres iguals",
+    "lib.arcade.caoBaTien": "Tres figures",
+    "lib.arcade.caoPts": "{n} punts",
+    "lib.arcade.note.bingo": "L’ordinador canta números de l’1 al 75. Quan un número cantat és al teu cartró, fes-hi clic per marcar-lo (el centre és gratuït). Completa una fila, columna o diagonal i prem BINGO! — has de superar els adversaris de l’ordinador. Un BINGO! fals bloqueja el botó uns segons. Els nivells més alts canten més ràpid i tenen més adversaris.",
+    "lib.arcade.opponentsN": "Adversaris: {n}",
+    "lib.arcade.falseBingo": "Encara no hi ha cap línia completa! Botó bloquejat 3 segons.",
+    "lib.arcade.bingoGo": "Es canten els números!",
+    "lib.arcade.note.yahtzee": "A cada torn llances 5 daus fins a 3 vegades: fes clic en un dau per conservar-lo i prem Llança per tornar a tirar els altres. Després tria una casella de la taula per puntuar (cada casella s’usa una vegada; una casella que no encaixa puntua 0). 13 torns. Les caselles d’Uns a Sisos afegeixen una bonificació de 35 si sumen 63 o més. Arriba a la puntuació objectiu del nivell per guanyar.",
+    "lib.arcade.turnN": "Torn {n}/13",
+    "lib.arcade.pickCat": "Tria una casella per puntuar",
+    "lib.arcade.rollsLeft": "Llança (en queden {n})",
+    "lib.arcade.upperBonus": "Bonificació d’Uns a Sisos",
+    "lib.arcade.scored": "Puntuats {n}",
+    "lib.arcade.note.crazy-eights": "Juga una carta que coincideixi amb la carta de dalt de la pila de descart pel coll o pel valor. Els vuits són comodins: juga’ls en qualsevol moment i tria un coll nou. Si no tens cap carta per jugar, roba de la pila (fins a 3 cartes); si encara no pots jugar, passes. Guanya qui es queda primer sense cartes. Els nivells més alts tenen més adversaris i l’ordinador juga amb més astúcia.",
+    "lib.arcade.opponent": "Adversari",
+    "lib.arcade.pileLeft": "Pila de robar: {n}",
+    "lib.arcade.pickSuit": "Tria un coll nou",
+    "lib.arcade.aiSuit": "L’ordinador ha triat {s}",
+    "lib.arcade.aiPass": "L’ordinador passa.",
+    "lib.arcade.mustPlay": "Tens una carta per jugar — juga-la.",
+    "lib.arcade.youPass": "Has robat 3 cartes i passes.",
+    "lib.arcade.bcGourd": "Carbassa",
+    "lib.arcade.bcCrab": "Cranc",
+    "lib.arcade.bcShrimp": "Gamba",
+    "lib.arcade.bcFish": "Peix",
+    "lib.arcade.bcRooster": "Gall",
+    "lib.arcade.bcDeer": "Cérvol",
+    "lib.arcade.yOnes": "Uns",
+    "lib.arcade.yTwos": "Dosos",
+    "lib.arcade.yThrees": "Tresos",
+    "lib.arcade.yFours": "Quatres",
+    "lib.arcade.yFives": "Cinc",
+    "lib.arcade.ySixes": "Sisos",
+    "lib.arcade.yThree": "Tres iguals",
+    "lib.arcade.yFour": "Quatre iguals",
+    "lib.arcade.yFull": "Full (25)",
+    "lib.arcade.ySmall": "Escala petita (30)",
+    "lib.arcade.yLarge": "Escala gran (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Sort",
+    "lib.arcade.note.race": "Prem ← → (o toca el carril que vulguis) per canviar de carril i esquivar els cotxes del davant. Tens 3 vides; recorre tota la distància per superar el nivell. Els nivells més alts afegeixen carrils i un trànsit més ràpid.",
+    "lib.arcade.note.jump": "El personatge bota tot sol. Prem ← → o arrossega el dit per aterrar a la plataforma següent. Les plataformes blaves es mouen i les marrons es trenquen en aterrar-hi. Si caus de la pantalla, perds; puja prou amunt per superar el nivell.",
+    "lib.arcade.note.miner": "El ganxo oscil·la d’un costat a l’altre; prem l’espai, ↓ o toca el camp per deixar-lo caure. L’or gros i les roques pesen i s’estiren lentament; els diamants valen molt. Arriba als diners objectiu abans que s’acabin els 60 segons.",
+    "lib.arcade.note.slicer": "Passa el dit o el ratolí per sobre la fruita per tallar-la. Evita les bombes negres. Deixar passar una fruita o tallar una bomba et costa una vida (en tens 3). Talla prou fruita per superar el nivell.",
+    "lib.arcade.note.hoops": "Prem a la pista, arrossega cap avall (com una tirachines) i deixa anar per llançar la pilota cap a l’anell. Com més lluny arrossegues, més fort és el llançament. Encesta prou cistelles dins dels tirs que tens; a partir del nivell 4 l’anell es mou.",
+    "lib.arcade.note.bubbles": "Mou el ratolí o el dit per apuntar i fes clic/toca o prem l’espai/Dispara per disparar. Connecta 3 o més bombolles del mateix color per rebentar-les; les bombolles que perden el suport cauen. Les files baixen lentament, així que mantén-les lluny de la línia inferior. Neteja totes les bombolles per guanyar.",
+    "lib.arcade.note.chase": "Fes servir les tecles de fletxa (o llisca / els botons) per girar i menjar tots els punts del laberint evitant els fantasmes que et persegueixen. Tens 3 vides; els nivells més alts afegeixen més fantasmes, més ràpids i que et persegueixen amb més astúcia.",
+    "lib.arcade.height": "Alçada: {n}/{t} m",
+    "lib.arcade.money": "Diners: {n}/{t}",
+    "lib.arcade.sliced": "Tallades: {n}/{t}",
+    "lib.arcade.hoopScore": "Encistellades: {n}/{t}",
+    "lib.arcade.shotsLeft": "Et queden {n} tirs",
+    "lib.arcade.bubbleLeft": "Queden {n} bombolles",
+    "lib.arcade.shotsN": "Tirs: {n}",
+    "lib.arcade.dotsLeft": "Queden {n} punts",
+    "lib.arcade.note.kakuro": "Omple les caselles blanques amb xifres de l’1 al 9 de manera que cada tram sumi la pista de la casella negra (el número de dalt a la dreta és per al tram cap a la dreta, el de baix a l’esquerra per al tram cap avall), sense repetir cap xifra dins d’un tram. Fes servir les tecles de fletxa per moure’t.",
+    "lib.arcade.note.kenken": "Omple la quadrícula amb els números de l’1 a N de manera que cap número es repeteixi en cap fila ni columna. Cada grup emmarcat amb línia gruixuda mostra un objectiu i una operació (+, −, ×, ÷): els números del grup han de donar aquest resultat. Fes servir les tecles de fletxa per moure’t.",
+    "lib.arcade.note.wordGuess": "Endevina la paraula secreta en anglès. Després de cada intent, el verd vol dir lletra correcta al lloc correcte, el groc vol dir que la lletra és a la paraula però en un altre lloc, i el gris vol dir que no hi és. Escriu amb el teclat o fes servir les tecles de la pantalla, i prem Enter per enviar. Els nivells més alts tenen paraules més llargues i menys intents.",
+    "lib.arcade.note.hangman": "Endevina la paraula secreta en anglès triant lletres d’una en una. Cada lletra equivocada afegeix una part al ninot penjat; quan t’esgotes els errors permesos, perds. Els nivells més alts tenen paraules més llargues i admeten menys errors.",
+    "lib.arcade.note.scramble": "Reordena les lletres barrejades per formar una paraula en anglès real i escriu-la al quadre de resposta. Cada nivell té 5 paraules; resol-ne almenys 4 abans que s’acabi el temps de cada paraula per superar el nivell. La pista mostra la primera lletra.",
+    "lib.arcade.cellsLeft": "Queden {n} caselles buides",
+    "lib.arcade.wrongN": "{n} caselles no són correctes.",
+    "lib.arcade.noError": "De moment no s’ha trobat cap error.",
+    "lib.arcade.tooShort": "Falten lletres",
+    "lib.arcade.answerIs": "Resposta: {w}",
+    "lib.arcade.livesLeft": "Et queden {n} errors",
+    "lib.arcade.yourAnswer": "La teva resposta",
+    "lib.arcade.skip": "Salta",
+    "lib.arcade.notThis": "No és correcte, torna-ho a provar.",
+    "lib.arcade.startsWith": "Primera lletra: {c}",
+    "lib.arcade.note.domino": "Cada jugador rep 7 fitxes; comença qui té el doble més alt. Juga una fitxa el número de la qual coincideixi amb un extrem de la cadena. Si no pots jugar, roba del munt fins que puguis; si és buit, passes. Guanya qui es queda primer sense fitxes; si tots dos queden bloquejats, guanya qui té menys punts.",
+    "lib.arcade.note.hearts": "Quatre jugadors, 13 cartes cada un. Comença el 2 de trèvols. Has de seguir el coll de sortida si pots. Cada cor val 1 punt i la dama de piques 13; qui guanya una baza s’emporta els seus punts. Com menys millor, i si algú s’emporta els 26 punts, tots els altres en reben 26. No pots sortir amb cor fins que se n’hagi jugat un. Després de l’última mà, guanyes si la teva puntuació és la més baixa (o empata amb la més baixa).",
+    "lib.arcade.note.holdem": "Cara a cara contra l’ordinador només amb fitxes virtuals. Cada jugador rep 2 cartes privades i es descobreixen 5 cartes comunes (flop, turn, river); forma la millor mà de 5 cartes. A cada ronda pots abandonar (fold), igualar o passar (call/check) o apujar (raise). Les cegues pugen cada 4 mans. Guanyes quan l’ordinador es queda sense fitxes, o si tens més fitxes després del límit de mans. No hi ha diners reals.",
+    "lib.arcade.dmDraw": "Roba una fitxa",
+    "lib.arcade.dmPass": "Passa",
+    "lib.arcade.dmEmpty": "Encara no s’ha jugat cap fitxa",
+    "lib.arcade.dmYard": "Munt: {n} fitxes",
+    "lib.arcade.dmLeft": "Extrem esquerre",
+    "lib.arcade.dmRight": "Extrem dret",
+    "lib.arcade.dmTie": "Empat! Tots dos bàndols estan igualats.",
+    "lib.arcade.hrHand": "Mà {n}/{t}",
+    "lib.arcade.hrTook": "{p} guanya la baza ({n} punts).",
+    "lib.arcade.hrIllegal": "No pots jugar aquesta carta (segueix el coll, i encara no es pot sortir amb cor).",
+    "lib.arcade.blinds": "Cega gran: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Abandona",
+    "lib.arcade.check": "Passa",
+    "lib.arcade.callN": "Iguala {n}",
+    "lib.arcade.raiseTo": "Apuja fins a",
+    "lib.arcade.raiseN": "Apuja fins a {n}",
+    "lib.arcade.thOppFold": "L’ordinador abandona; guanyes aquesta mà.",
+    "lib.arcade.thYouFold": "Has abandonat.",
+    "lib.arcade.thOppWin": "L’ordinador guanya aquesta mà",
+    "lib.arcade.thYouWin": "Guanyes aquesta mà",
+    "lib.arcade.thSplit": "Pot dividit",
+    "lib.arcade.thAiFold": "L’ordinador abandona.",
+    "lib.arcade.thAiRaise": "L’ordinador apuja fins a {n}.",
+    "lib.arcade.thAiCall": "L’ordinador iguala / passa.",
+    "lib.arcade.hand.high": "Carta alta",
+    "lib.arcade.hand.pair": "Parella",
+    "lib.arcade.hand.twoPair": "Doble parella",
+    "lib.arcade.hand.trips": "Trio",
+    "lib.arcade.hand.straight": "Escala",
+    "lib.arcade.hand.flush": "Color",
+    "lib.arcade.hand.full": "Full",
+    "lib.arcade.hand.quads": "Pòquer",
+    "lib.arcade.hand.sflush": "Escala de color",
+    "lib.arcade.note.nback": "En una quadrícula de 3x3 s’il·lumina un quadrat darrere l’altre. Prem «Coincideix!» (o l’espai) quan la posició il·luminada sigui la mateixa que fa N passos (N es mostra a dalt). Necessites almenys un 80% de decisions correctes per superar el nivell. Els nivells més alts fan servir una N més gran.",
+    "lib.arcade.nbMatch": "Coincideix!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Correctes: {a} · Errors: {b}",
+    "lib.arcade.nbAcc": "Precisió: {n}%",
+    "lib.arcade.note.clicker": "Fes clic a la galeta per coure galetes i gasta-les en ajudants que couen automàticament (els preus pugen amb cada compra). Cou el nombre objectiu de galetes en 2 minuts per superar el nivell.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Àvia pastissera",
+    "lib.arcade.ckFarm": "Granja",
+    "lib.arcade.ckMine": "Mina de sucre",
+    "lib.arcade.ckFactory": "Fàbrica",
+    "lib.arcade.ckCookie": "Galeta",
+    "lib.arcade.ckEarned": "Cuites: {n}/{t}",
+    "lib.arcade.chips2": "Galetes: {n}",
+    "lib.arcade.ckCps": "{n} galetes/segon",
+    "lib.arcade.note.onet": "Selecciona dues fitxes idèntiques que es puguin unir amb un camí de 2 girs com a màxim que no creui altres fitxes per eliminar-les. Elimina totes les fitxes abans que s’acabi el temps per guanyar. Quan no queden jugades, pots barrejar (un nombre limitat de vegades).",
+    "lib.arcade.shuffle": "Barreja",
+    "lib.arcade.tilesLeft": "Queden {n} fitxes",
+    "lib.arcade.autoShuffle": "No queden jugades — barrejat automàticament.",
+    "lib.arcade.note.jigsaw": "La imatge està tallada en peces i barrejada. Toca una peça i després una altra per intercanviar-les, i reconstrueix la imatge que es mostra com a referència. Les peces al lloc correcte tenen una vora verda. Els nivells més alts tenen més peces.",
+    "lib.arcade.jgRef": "Imatge de referència",
+    "lib.arcade.jgPlaced": "Al seu lloc: {a}/{b}",
+    "lib.arcade.golfStrokes": "Cops: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Jugues amb les fitxes blanques, movent-te des de dalt a la dreta fins a baix a la dreta (casa teva). Llança els daus, fes clic a la fitxa que vulguis moure i després a una destinació ressaltada. Si caus en un punt amb exactament una fitxa contrària, la captures i va a la barra central, i aquell jugador l’ha de tornar a entrar primer. No pots caure en un punt amb dues o més fitxes contràries. Quan les 15 fitxes són al teu quadrant de casa (els últims 6 punts) pots començar a treure-les. Guanya qui en treu primer les 15.",
+    "lib.arcade.bgRoll": "Llança els daus",
+    "lib.arcade.bgOff": "Treu",
+    "lib.arcade.bgRollFirst": "Llança els daus",
+    "lib.arcade.bgInfo": "Fora: tu {a} · ordinador {b} · Punts: {c} / {d}",
+    "lib.arcade.youNoMove": "No et queda cap jugada legal.",
+    "lib.arcade.note.tienlen": "Quatre jugadors, 13 cartes cada un. Ordre de les cartes de menor a major: 3, 4, … K, A, 2; colls de menor a major: piques, trèvols, diamants, cors. Comença qui té el 3 de piques. Juga una carta, una parella, un trio, un pòquer o una escala de 3 o més cartes consecutives (sense dosos). El jugador següent ha de jugar el mateix tipus i més alt, o passar; un pòquer pot batre un sol 2 o una parella de 2. Quan tots els altres passen, l’últim que ha jugat pot sortir amb el que vulgui. Guanya qui es queda primer sense cartes. Selecciona cartes i prem Juga.",
+    "lib.arcade.tlPlay": "Juga",
+    "lib.arcade.tlPass": "Passa",
+    "lib.arcade.tlClear": "Esborra la selecció",
+    "lib.arcade.tlPassed": "ha passat",
+    "lib.arcade.tlFree": "Taula buida — pots sortir amb el que vulguis",
+    "lib.arcade.tlLeft": "Cartes que queden: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passa.",
+    "lib.arcade.tlBad": "Les cartes seleccionades no formen una combinació vàlida.",
+    "lib.arcade.tlLow": "Aquesta combinació no és prou alta per superar la de la taula."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Prova de reflexos",
       "desc": "Fes clic en el moment que la pantalla es posi verda; la mitjana de 5 rondes ha de complir el límit de cada nivell, que s'estreny al llarg de 10 nivells."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Sembra llavors pels pous, captura les llavors de l’adversari i torna a moure quan caiguis al teu magatzem; juga contra l’ordinador en 10 nivells de fàcil a difícil."
+    },
+    "snakes-ladders": {
+      "name": "Serps i escales",
+      "desc": "Llança el dau de la casella 1 a la 100, puja per les escales, evita les serps i arriba a la meta abans que els teus adversaris; 10 nivells."
+    },
+    "nine-mens-morris": {
+      "name": "El molí (Nine Men’s Morris)",
+      "desc": "Col·loca, llisca i vola les peces per fer tres en ratlla i treure les peces de l’adversari; juga contra l’ordinador en 10 nivells."
+    },
+    "battleship": {
+      "name": "Enfonsar la flota (Battleship)",
+      "desc": "Troba i enfonsa la flota de l’ordinador en una quadrícula de 10x10 abans que enfonsi la teva; 10 nivells amb un ordinador que dedueix cada cop millor."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Carbassa-Cranc-Peix-Gamba)",
+      "desc": "Joc de daus tradicional vietnamita: aposta monedes virtuals als animals i sacseja tres daus; arriba a les monedes objectiu en 10 nivells (sense diners reals)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Aposta per Jugador, Banquer o Empat amb cartes repartides segons les regles habituals, amb monedes virtuals; arriba a les monedes objectiu en 10 nivells (sense diners reals)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (joc de tres cartes)",
+      "desc": "Compara mans de 3 cartes amb el repartidor: tres iguals, tres figures i després de 9 punts a 0; monedes virtuals, 10 nivells, sense diners reals."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marca els números cantats al teu cartró de 5x5 i crida BINGO abans que els adversaris de l’ordinador; els números es canten més ràpid al llarg de 10 nivells."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (cinc daus)",
+      "desc": "Llança cinc daus, conserva els bons i omple 13 caselles de puntuació; arriba a la puntuació objectiu en 10 nivells."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Els vuits bojos)",
+      "desc": "Fes coincidir coll o valor, els vuits canvien el coll; queda’t sense cartes abans que d’1 a 3 adversaris de l’ordinador en 10 nivells."
+    },
+    "car-race": {
+      "name": "Esquiva de cotxes",
+      "desc": "Canvia de carril per esquivar els cotxes del davant i recorre tota la distància; 10 nivells amb més carrils i trànsit més ràpid."
+    },
+    "sky-jump": {
+      "name": "Salt al cel",
+      "desc": "Bota de plataforma en plataforma i puja tan amunt com puguis sense caure; 10 nivells amb plataformes més espaiades, mòbils i trencadisses."
+    },
+    "gold-miner": {
+      "name": "Miner d’or",
+      "desc": "Deixa caure el ganxo per estirar or i diamants, evita les roques pesades i arriba als diners objectiu en 60 segons; 10 nivells."
+    },
+    "fruit-slice": {
+      "name": "Talla fruita",
+      "desc": "Passa el dit per tallar la fruita que vola cap amunt i esquiva les bombes; 10 nivells amb més fruita i més bombes."
+    },
+    "basketball": {
+      "name": "Tir a cistella",
+      "desc": "Arrossega i deixa anar per llançar la pilota a l’anell dins d’un nombre limitat de tirs; 10 nivells, amb l’anell mòbil des del nivell 4."
+    },
+    "bubble-shooter": {
+      "name": "Dispara bombolles",
+      "desc": "Dispara bombolles per connectar-ne 3 o més del mateix color i rebentar-les, i neteja-les totes abans que arribin al fons; 10 nivells amb més colors."
+    },
+    "dot-chase": {
+      "name": "Caça de punts",
+      "desc": "Menja tots els punts del laberint mentre esquives els fantasmes que et persegueixen; 10 nivells amb més fantasmes i més intel·ligents."
+    },
+    "kakuro": {
+      "name": "Kakuro (sumes creuades)",
+      "desc": "Omple les caselles blanques amb xifres de l’1 al 9 de manera que cada tram sumi la pista sense repeticions; 10 nivells, quadrícules de 5x5 a 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Omple la quadrícula sense repeticions a files ni columnes de manera que cada grup doni el seu objectiu amb la seva operació; 10 nivells, quadrícules de 3x3 a 6x6."
+    },
+    "word-guess": {
+      "name": "Endevina la paraula (estil Wordle)",
+      "desc": "Endevina la paraula secreta en anglès amb pistes verdes, grogues i grises; 10 nivells amb paraules de 4–6 lletres i menys intents."
+    },
+    "hangman": {
+      "name": "El penjat (Hangman)",
+      "desc": "Endevina la paraula en anglès lletra a lletra abans que se t’esgotin els errors; 10 nivells amb paraules més llargues i menys errors."
+    },
+    "word-scramble": {
+      "name": "Paraules barrejades (anagrama)",
+      "desc": "Reordena les lletres barrejades per formar una paraula en anglès abans que s’acabi el temps; 10 nivells, 5 paraules per nivell."
+    },
+    "domino": {
+      "name": "Dòmino",
+      "desc": "Encaixa fitxes a qualsevol extrem de la cadena i queda’t sense fitxes abans que l’ordinador; 10 nivells a mesura que l’ordinador es fa més llest."
+    },
+    "hearts": {
+      "name": "Hearts (Cors)",
+      "desc": "Evita els cors i la dama de piques en un joc de cartes per a quatre jugadors; la puntuació més baixa és millor; 10 nivells contra jugadors de l’ordinador cada cop més llestos."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (fitxes virtuals)",
+      "desc": "Pòquer cara a cara contra l’ordinador amb fitxes virtuals: abandona, iguala o apuja i guanya quan l’ordinador es quedi sense fitxes; 10 nivells, sense diners reals."
+    },
+    "n-back": {
+      "name": "Memòria N-Back",
+      "desc": "Mira el quadrat il·luminat i prem Coincideix quan sigui el mateix que fa N passos; 10 nivells amb N fins a 4."
+    },
+    "cookie-clicker": {
+      "name": "Clica galetes",
+      "desc": "Fes clic per coure galetes, compra ajudants que couen automàticament i arriba a l’objectiu en 2 minuts; 10 nivells."
+    },
+    "tile-connect": {
+      "name": "Connecta fitxes (estil Onet)",
+      "desc": "Uneix fitxes iguals amb un camí d’un màxim de dos girs i neteja el tauler abans que s’acabi el temps; 10 nivells, taulers cada cop més grans."
+    },
+    "jigsaw": {
+      "name": "Trencaclosques d’imatge",
+      "desc": "Intercanvia les peces barrejades per reconstruir la imatge; 10 nivells de 3x3 a 6x6 peces."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Estira cap enrere i deixa anar per fer entrar la pilota al forat dins del límit de cops; 10 camps amb parets i sorra."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Llança els daus, porta les teves fitxes a casa i treu-les abans que l’ordinador, capturant les seves fitxes soles pel camí; 10 nivells."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Tretze)",
+      "desc": "El joc de cartes vietnamita per a quatre: juga cartes soltes, parelles, escales i pòquers per quedar-te primer sense cartes; 10 nivells."
     }
   },
   "s": {

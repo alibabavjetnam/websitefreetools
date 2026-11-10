@@ -698,7 +698,14 @@
     "lib.arcade.pmU": "Ù! Bạn thắng ngay.",
     "lib.arcade.pmYou": "Bạn",
     "lib.arcade.pmFoe": "Máy",
-    "lib.arcade.pmDraw2": "Hoà điểm."
+    "lib.arcade.pmDraw2": "Hoà điểm.",
+    "lib.arcade.sgPromote": "Thăng cấp",
+    "lib.arcade.sgKeep": "Giữ nguyên",
+    "lib.arcade.note.shogi": "Shogi là cờ tướng kiểu Nhật. Bạn cầm quân phía dưới, đi trước; quân của máy quay ngược đầu. Bắt được quân thì nó vào \"tay\" bạn và được thả lại lên bất kỳ ô trống nào thay cho một nước đi (không thả tốt vào cột đã có tốt của bạn, không thả quân vào hàng cuối nơi nó không đi tiếp được). Quân đi vào, đi ra hoặc đi trong ba hàng cuối của đối phương được thăng cấp (trừ Vua và Vàng), thăng cấp bắt buộc khi không còn đường đi. Chiếu bí Vua đối phương để thắng. Chữ Hán: 歩 tốt, 香 xe hương, 桂 mã, 銀 bạc, 金 vàng, 角 tượng, 飛 xe, 玉 vua, と 馬 竜 là quân đã thăng cấp.",
+    "lib.arcade.sgCheck": "Bạn đang bị chiếu!",
+    "lib.arcade.sgWin": "Chiếu bí — bạn thắng.",
+    "lib.arcade.sgLose": "Bạn bị chiếu bí.",
+    "lib.arcade.sgAskPromote": "Thăng cấp quân này?"
   },
   "pages": {
     "home": {
@@ -1791,6 +1798,10 @@
     "phom": {
       "name": "Phỏm (Tá lả)",
       "desc": "Phỏm 2 người đấu với máy: bốc, ăn bài, hạ phỏm và đánh bài; ai ít điểm bài rác hơn thì thắng, có ù; 10 cấp."
+    },
+    "shogi": {
+      "name": "Shogi (cờ tướng Nhật)",
+      "desc": "Shogi online đánh với máy: thả quân bắt được, thăng cấp, chiếu bí Vua; 10 cấp, có đi lại."
     }
   },
   "s": {

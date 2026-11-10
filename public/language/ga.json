@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Léim",
     "lib.arcade.aimTarget": "Sprioc",
     "lib.game.soundOn": "Cuir fuaim air",
-    "lib.game.soundOff": "Cuir fuaim as"
+    "lib.game.soundOff": "Cuir fuaim as",
+    "lib.arcade.note.kalah": "Imríonn tusa an kúl íochtarach, an ríomhaire an ceann uachtarach; is é an poll mór ar dheis do stór. Cliceáil poll chun a shíolta uile a thógáil agus cuir iad ina gcoinne an chloig, ceann i ngach poll (ag scipeáil stór do chéile comhraic). Má thuirlingíonn do shíol deireanach i do stór, imríonn tú arís; má thuirlingíonn sé i bpoll folamh ar do thaobh os comhair poill le síolta, glacann tú na síolta sin. Nuair a bhíonn taobh amháin folamh, téann síolta an taobh eile go stór a úinéara; buaileann an stór is mó.",
+    "lib.arcade.note.snakes": "Caith an dísle agus bog an líon cearnóg sin, ó 1 go 100. Má thuirlingíonn tú ag bun dréimire, dreapann tú é; má thuirlingíonn tú ar cheann nathrach, sleamhnaíonn tú anuas. Ó leibhéal 4 ar aghaidh caithfidh tú an uimhir chruinn a chaitheamh chun tuirlingt ar 100. Tá níos mó nathracha, níos lú dréimirí agus níos mó céile comhraic ar na leibhéil is airde. Buaileann an chéad duine a shroicheann 100.",
+    "lib.arcade.square": "Cearnóg {n}",
+    "lib.arcade.ladderUp": "Suas an dréimire!",
+    "lib.arcade.snakeDown": "Shlog nathair thú!",
+    "lib.arcade.needExact": "Teastaíonn an uimhir chruinn uait chun tuirlingt ar 100.",
+    "lib.arcade.note.nmm": "Tá 9 bpíosa ag gach taobh. Céim 1: cuirigí píosaí ar phointí folmha ar a seal. Céim 2: sleamhnaigh píosa go pointe folamh in aice láimhe. Nuair nach bhfuil fágtha agat ach 3 phíosa, féadfaidh tú “eitilt” chuig aon phointe folamh. Déan trí cinn i ndiaidh a chéile (“muileann”) chun píosa de chuid do chéile comhraic a bhaint (iad siúd nach bhfuil i muileann ar dtús). Cailleann tú nuair nach bhfuil fágtha agat ach 2 phíosa nó mura féidir leat bogadh. Imríonn tú bán agus téann tú ar dtús.",
+    "lib.arcade.inHand": "Le cur: {a} · {b}",
+    "lib.arcade.removePiece": "Roghnaigh píosa de chuid do chéile comhraic le baint.",
+    "lib.arcade.enemyWaters": "Uiscí an namhad (cliceáil chun lámhaigh)",
+    "lib.arcade.yourFleet": "Do chabhlach",
+    "lib.arcade.note.battleship": "Tá 5 long ag gach taobh (fad 5, 4, 3, 3, 2) curtha go randamach ar eangach 10x10. Lámhaigh ar chill ar a seal: casann buille dearg, casann ionsaí caillte gorm éadrom, agus nuair a bhuaileann tú gach cill de long, téann sí go tóin poill. Buaileann an chéad duine a chuireann cabhlach iomlán an namhad go tóin poill. Ar na leibhéil is airde, déanann an ríomhaire tátail níos cliste faoi shuíomh do long.",
+    "lib.arcade.shipsLeft": "Longa fágtha: tusa {a} · an namhaid {b}",
+    "lib.arcade.theySunk": "Chuir an namhaid ceann de do longa go tóin poill!",
+    "lib.arcade.theyHit": "Bhuail an namhaid ceann de do longa.",
+    "lib.arcade.theyMiss": "Chaill an namhaid.",
+    "lib.arcade.youSunk": "Chuir tú long namhad go tóin poill!",
+    "lib.arcade.youHit": "Buille!",
+    "lib.arcade.youMiss": "Chaill tú.",
+    "lib.arcade.shake": "Croith",
+    "lib.arcade.clearBets": "Glan na geallta",
+    "lib.arcade.note.bau-cua": "Boinn fhíorúla amháin — gan airgead fíor. Roghnaigh luach sceallóige, cliceáil na hainmhithe chun geall a chur, ansin brúigh Croith. Do gach dísle a mheaitseálann ainmhí ar chuir tú geall air, faigheann tú do gheall ar ais móide an méid céanna do gach meaitseáil. Sroich an sprioclíon boinn laistigh de na babhtaí a cheadaítear chun an leibhéal a rith.",
+    "lib.arcade.note.baccarat": "Boinn fhíorúla amháin — gan airgead fíor. Cuir geall ar an Imreoir, ar an mBainceoir nó ar an Comhscór, ansin brúigh Roinn. Is é luach láimhe digit dheireanach a hiomláin (A = 1, 2–9 luach aghaidhe, 10/J/Q/K = 0); buaileann an lámh is gaire do 9, agus tarraingítear tríú cárta de réir na gnáthrialacha. Íocann an tImreoir 1:1, an Bainceoir 0.95:1, an Comhscór 8:1 (tugtar geallta an Imreora/Bhainceora ar ais i gcás comhscór). Sroich an sprioclíon boinn laistigh de na babhtaí a cheadaítear chun an leibhéal a rith.",
+    "lib.arcade.banker": "Bainceoir",
+    "lib.arcade.player": "Imreoir",
+    "lib.arcade.tie": "Comhscór",
+    "lib.arcade.openCards": "Nocht",
+    "lib.arcade.note.bai-cao": "Boinn fhíorúla amháin — gan airgead fíor. Faigheann gach taobh 3 chárta. Scóráiltear lámh de réir dhigit dheireanach a hiomláin (A = 1, 2–9 luach aghaidhe, 10/J/Q/K = 10, i.e. 0 pointe). Rangú: is é trí cinn den chineál céanna (“Sáp”) is airde, ansin trí chárta pictiúir (“Ba tiên”), ansin 9 bpointe síos go 0. Cuir geall, brúigh Roinn agus ansin Nocht chun comparáid a dhéanamh leis an déileálaí. Ó leibhéal 6 buaileann an déileálaí comhscóir. Sroich an sprioclíon boinn laistigh de na babhtaí a cheadaítear chun an leibhéal a rith.",
+    "lib.arcade.caoSap": "Trí cinn den chineál céanna",
+    "lib.arcade.caoBaTien": "Trí chárta pictiúir",
+    "lib.arcade.caoPts": "{n} pt",
+    "lib.arcade.note.bingo": "Glaonn an ríomhaire uimhreacha ó 1 go 75. Nuair atá uimhir a glaodh ar do chárta, cliceáil air chun é a mharcáil (tá an lár saor in aisce). Comhlánaigh sraith, colún nó trasnán agus brúigh BINGO! — caithfidh tú bualadh ar chéilí comhraic an ríomhaire. Cuireann BINGO! bréagach an cnaipe faoi ghlas ar feadh cúpla soicind. Glaonn na leibhéil is airde níos tapúla agus tá níos mó céile comhraic acu.",
+    "lib.arcade.opponentsN": "Céilí comhraic: {n}",
+    "lib.arcade.falseBingo": "Níl líne iomlán ann fós! Cnaipe faoi ghlas ar feadh 3 shoicind.",
+    "lib.arcade.bingoGo": "Uimhreacha á nglaoch!",
+    "lib.arcade.note.yahtzee": "Gach casadh caitheann tú 5 dhísle suas le 3 huaire: cliceáil dísle chun é a choinneáil, ansin brúigh Caith chun na cinn eile a athchaitheamh. Ansin roghnaigh bosca sa tábla le scóráil (úsáidtear gach bosca uair amháin; scóráiltear 0 le bosca nach n-oireann). 13 chasadh. Cuireann na boscaí Aonta–Seisíní bónas 35 leis má bhíonn 63 nó níos mó san iomlán. Sroich scór sprice an leibhéil chun buachan.",
+    "lib.arcade.turnN": "Casadh {n}/13",
+    "lib.arcade.pickCat": "Roghnaigh bosca le scóráil",
+    "lib.arcade.rollsLeft": "Caith ({n} fágtha)",
+    "lib.arcade.upperBonus": "Bónas Aonta–Seisíní",
+    "lib.arcade.scored": "Scóráilte {n}",
+    "lib.arcade.note.crazy-eights": "Imir cárta a mheaitseálann barr na cairte caite de réir feistis nó luacha. Is cártaí fiáine iad na hochtanna: imir ceann ag am ar bith agus roghnaigh feisteas nua. Mura bhfuil cárta inimeartha agat, tarraing ón gcarn (suas le 3 chárta); mura féidir leat imirt fós, téann tú thar. Buaileann an chéad duine a fholmhaíonn a lámh. Tá níos mó céile comhraic ar na leibhéil is airde agus imríonn an ríomhaire níos cliste.",
+    "lib.arcade.opponent": "Céile comhraic",
+    "lib.arcade.pileLeft": "Carn tarraingthe: {n}",
+    "lib.arcade.pickSuit": "Roghnaigh feisteas nua",
+    "lib.arcade.aiSuit": "Roghnaigh an ríomhaire {s}",
+    "lib.arcade.aiPass": "Téann an ríomhaire thar.",
+    "lib.arcade.mustPlay": "Tá cárta inimeartha agat — imir é.",
+    "lib.arcade.youPass": "Tharraing tú 3 chárta agus téann tú thar.",
+    "lib.arcade.bcGourd": "Pumpa",
+    "lib.arcade.bcCrab": "Portán",
+    "lib.arcade.bcShrimp": "Séaclaí",
+    "lib.arcade.bcFish": "Iasc",
+    "lib.arcade.bcRooster": "Coileach",
+    "lib.arcade.bcDeer": "Fia",
+    "lib.arcade.yOnes": "Aonta",
+    "lib.arcade.yTwos": "Dóanna",
+    "lib.arcade.yThrees": "Triúracha",
+    "lib.arcade.yFours": "Ceathracha",
+    "lib.arcade.yFives": "Cúigeacha",
+    "lib.arcade.ySixes": "Seisíní",
+    "lib.arcade.yThree": "Trí cinn den chineál céanna",
+    "lib.arcade.yFour": "Ceithre cinn den chineál céanna",
+    "lib.arcade.yFull": "Teach iomlán (25)",
+    "lib.arcade.ySmall": "Sraith bheag (30)",
+    "lib.arcade.yLarge": "Sraith mhór (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Seans",
+    "lib.arcade.note.race": "Brúigh ← → (nó tapáil an lána atá uait) chun lána a athrú agus na carranna romhat a sheachaint. Tá 3 shaol agat; tiomáin an fad iomlán chun an leibhéal a rith. Cuireann na leibhéil is airde lánaí agus trácht níos tapúla leis.",
+    "lib.arcade.note.jump": "Preabann an carachtar leis féin. Brúigh ← → nó tarraing do mhéar chun tuirlingt ar an gcéad ardán eile. Bogann ardáin ghorma, briseann cinn dhonna nuair a thuirlingíonn tú. Má thiteann tú den scáileán, cailleann tú; dreap in airde go leor chun an leibhéal a rith.",
+    "lib.arcade.note.miner": "Luascann an chrúca anonn is anall; brúigh Space, ↓ nó tapáil an réimse chun é a scaoileadh. Tá ór mór agus carraigeacha trom agus tarraingítear go mall iad; tá luach mór ar dhiamaint. Sroich an sprioclíon airgid sula rithfidh 60 soicind amach.",
+    "lib.arcade.note.slicer": "Scaoil do mhéar nó do luch trasna an torthaí chun é a ghearradh. Seachain na buamaí dubha. Cosnaíonn torthaí a chailleadh nó buama a ghearradh saol (tá 3 agat). Gearr go leor torthaí chun an leibhéal a rith.",
+    "lib.arcade.note.hoops": "Brúigh ar an gcúirt, tarraing síos (cosúil le crann tabhaill) agus scaoil chun an liathróid a chaitheamh i dtreo an fháinne. Dá fhaide a tharraingíonn tú, is láidre an caitheamh. Scóráil go leor cúl laistigh de na caithimh atá agat; ó leibhéal 4 bogann an fáinne.",
+    "lib.arcade.note.bubbles": "Bog an luch nó do mhéar le díriú, ansin cliceáil/tapáil nó brúigh Space/Lámhach chun lámhach. Ceangail 3 mboilgeog nó níos mó den dath céanna chun iad a phléascadh; titeann boilgeoga a chailleann a dtacaíocht. Titeann na sraitheanna go mall, mar sin coinnigh iad ar shiúl ón líne íochtarach. Glan na boilgeoga uile chun buachan.",
+    "lib.arcade.note.chase": "Úsáid na heochracha saighde (nó sciorr / na cnaipí) chun casadh agus na poncanna uile sa mhaisín a ithe agus tú ag seachaint na taibhsí atá do do ruaigeadh. Tá 3 shaol agat; cuireann na leibhéil is airde níos mó taibhsí leis atá níos tapúla agus a ruaigeann níos cliste.",
+    "lib.arcade.height": "Airde: {n}/{t} m",
+    "lib.arcade.money": "Airgead: {n}/{t}",
+    "lib.arcade.sliced": "Gearrtha: {n}/{t}",
+    "lib.arcade.hoopScore": "Scóráilte: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} chaitheamh fágtha",
+    "lib.arcade.bubbleLeft": "{n} boilgeog fágtha",
+    "lib.arcade.shotsN": "Lámhaigh: {n}",
+    "lib.arcade.dotsLeft": "{n} ponc fágtha",
+    "lib.arcade.note.kakuro": "Líon na cealla bána le digití 1–9 ionas go mbeidh iomlán gach rith cothrom leis an leid sa chill dhubh (tá an uimhir ag barr ar dheis don rith ar dheis, an ceann ag bun ar chlé don rith síos), gan digit a athrá laistigh de rith. Úsáid na heochracha saighde chun bogadh.",
+    "lib.arcade.note.kenken": "Líon an eangach le huimhreacha 1 go N ionas nach n-athraítear uimhir in aon sraith nó colún. Taispeánann gach cás le imlíne throm sprioc agus oibríocht (+, −, ×, ÷): caithfidh na huimhreacha sa chás an toradh sin a thabhairt. Úsáid na heochracha saighde chun bogadh.",
+    "lib.arcade.note.wordGuess": "Buail faoin bhfocal rúnda Béarla. Tar éis gach iarrachta, ciallaíonn glas an litir cheart san áit cheart, ciallaíonn buí go bhfuil an litir san fhocal ach in áit eile, agus ciallaíonn liath nach bhfuil sí san fhocal. Clóscríobh ar do mhéarchlár nó úsáid na heochracha ar an scáileán, agus brúigh Enter le cur isteach. Tá focail níos faide agus níos lú iarrachtaí ar na leibhéil is airde.",
+    "lib.arcade.note.hangman": "Buail faoin bhfocal rúnda Béarla trí litreacha a roghnú ceann ar cheann. Cuireann gach litir mhícheart cuid leis an bhfigiúr crochta; nuair a ídíonn tú do chuid botún, cailleann tú. Tá focail níos faide agus níos lú botún ceadaithe ar na leibhéil is airde.",
+    "lib.arcade.note.scramble": "Athordaigh na litreacha measctha ina bhfocal Béarla fíor agus clóscríobh sa bhosca freagra é. Tá 5 fhocal i ngach leibhéal; réitigh 4 ar a laghad sula rithfidh an t-amadóir ag gach focal amach chun an leibhéal a rith. Nochtann an leid an chéad litir.",
+    "lib.arcade.cellsLeft": "{n} chill fholamh fágtha",
+    "lib.arcade.wrongN": "Níl {n} chill ceart.",
+    "lib.arcade.noError": "Níor aimsíodh aon bhotún go dtí seo.",
+    "lib.arcade.tooShort": "Gan go leor litreacha",
+    "lib.arcade.answerIs": "Freagra: {w}",
+    "lib.arcade.livesLeft": "{n} mhíthuiscint fágtha",
+    "lib.arcade.yourAnswer": "Do fhreagra",
+    "lib.arcade.skip": "Scipeáil",
+    "lib.arcade.notThis": "Níl sé ceart, bain triail eile as.",
+    "lib.arcade.startsWith": "An chéad litir: {c}",
+    "lib.arcade.note.domino": "Faigheann gach imreoir 7 gcloch; tosaíonn an té a bhfuil an dúbailte is airde aige. Imir cloch a mheaitseálann ceann amháin den slabhra. Mura féidir leat imirt, tarraing ón stoc go dtí go bhféadfaidh tú; má tá sé folamh, téann tú thar. Buaileann an chéad duine a fholmhaíonn a lámh; má bhíonn an dá thaobh bactha, buaileann an té a bhfuil iomlán poncanna níos ísle aige.",
+    "lib.arcade.note.hearts": "Ceathrar imreoirí, 13 chárta an duine. Tosaíonn 2 chlub. Caithfidh tú an feisteas a leanúint más féidir leat. Is pointe amháin gach croí agus 13 an Banríon Spád; glacann an té a bhuaigh cleas a phointí. Is fearr an scór is ísle, agus má thógann duine na 26 pointe go léir faigheann gach duine eile 26. Ní féidir leat croí a stiúradh go dtí go n-imrítear ceann. Tar éis na láimhe deireanaí, buaileann tú má tá do scór ar an scór is ísle (nó comhionann leis an scór is ísle).",
+    "lib.arcade.note.holdem": "Duine ar dhuine in aghaidh an ríomhaire le sceallóga fíorúla amháin. Faigheann gach imreoir 2 chárta príobháideacha agus nochtar 5 chárta comhchoitianta (flop, turn, river); déan an lámh is fearr de 5 chárta. I ngach babhta féadfaidh tú fold, call (nó check) nó raise a dhéanamh. Méadaíonn na dalladh gach 4 lámh. Buaileann tú nuair a ídíonn sceallóga an ríomhaire, nó tríd an iomarca sceallóg a bheith agat tar éis na teorann láimhe. Níl airgead fíor i gceist.",
+    "lib.arcade.dmDraw": "Tarraing cloch",
+    "lib.arcade.dmPass": "Téigh thar",
+    "lib.arcade.dmEmpty": "Níor imríodh aon chloch fós",
+    "lib.arcade.dmYard": "Stoc: {n} chloch",
+    "lib.arcade.dmLeft": "Ceann clé",
+    "lib.arcade.dmRight": "Ceann deas",
+    "lib.arcade.dmTie": "Comhscór! Tá an dá thaobh cothrom.",
+    "lib.arcade.hrHand": "Lámh {n}/{t}",
+    "lib.arcade.hrTook": "Buaileann {p} an cleas ({n} pointe).",
+    "lib.arcade.hrIllegal": "Ní féidir leat an cárta seo a imirt (lean an feisteas, agus ní féidir croí a stiúradh fós).",
+    "lib.arcade.blinds": "Dall mór: {n}",
+    "lib.arcade.pot": "Pota: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise go",
+    "lib.arcade.raiseN": "Raise go {n}",
+    "lib.arcade.thOppFold": "Déanann an ríomhaire fold; buaileann tú an lámh seo.",
+    "lib.arcade.thYouFold": "Rinne tú fold.",
+    "lib.arcade.thOppWin": "Buaileann an ríomhaire an lámh seo",
+    "lib.arcade.thYouWin": "Buaileann tú an lámh seo",
+    "lib.arcade.thSplit": "Pota roinnte",
+    "lib.arcade.thAiFold": "Déanann an ríomhaire fold.",
+    "lib.arcade.thAiRaise": "Déanann an ríomhaire raise go {n}.",
+    "lib.arcade.thAiCall": "Déanann an ríomhaire call / check.",
+    "lib.arcade.hand.high": "Cárta ard",
+    "lib.arcade.hand.pair": "Péire",
+    "lib.arcade.hand.twoPair": "Dhá phéire",
+    "lib.arcade.hand.trips": "Trí cinn den chineál céanna",
+    "lib.arcade.hand.straight": "Sraith",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Teach iomlán",
+    "lib.arcade.hand.quads": "Ceithre cinn den chineál céanna",
+    "lib.arcade.hand.sflush": "Sraith flush",
+    "lib.arcade.note.nback": "Soilsíonn cearnóg ceann i ndiaidh a chéile ar eangach 3x3. Brúigh “Meaitseáil!” (nó Space) nuair is ionann an suíomh soilsithe agus an ceann N céim ó shin (taispeántar N thuas). Teastaíonn 80% ar a laghad de chinntí ceart chun an leibhéal a rith. Úsáideann na leibhéil is airde N níos mó.",
+    "lib.arcade.nbMatch": "Meaitseáil!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Ceart: {a} · Mícheart: {b}",
+    "lib.arcade.nbAcc": "Cruinneas: {n}%",
+    "lib.arcade.note.clicker": "Cliceáil an briosca chun brioscaí a bhácáil, ansin caith iad ar chúntóirí a bhácálann go huathoibríoch (ardaíonn na praghsanna le gach ceannach). Bácáil an sprioclíon brioscaí laistigh de 2 nóiméad chun an leibhéal a rith.",
+    "lib.arcade.ckCursor": "Cúrsóir",
+    "lib.arcade.ckGrandma": "Máthair mhór bhácála",
+    "lib.arcade.ckFarm": "Feirm",
+    "lib.arcade.ckMine": "Mianach siúcra",
+    "lib.arcade.ckFactory": "Monarcha",
+    "lib.arcade.ckCookie": "Briosca",
+    "lib.arcade.ckEarned": "Bácáilte: {n}/{t}",
+    "lib.arcade.chips2": "Brioscaí: {n}",
+    "lib.arcade.ckCps": "{n} briosca sa soicind",
+    "lib.arcade.note.onet": "Roghnaigh dhá leac chéanna ar féidir iad a cheangal le cosán le 2 chas ar a mhéad nach dtrasnaíonn leacacha eile chun iad a bhaint. Bain na leacacha uile sula rithfidh an t-am amach chun buachan. Nuair nach bhfuil aon bhogadh fágtha, féadfaidh tú measc (líon teoranta uaireanta).",
+    "lib.arcade.shuffle": "Measc",
+    "lib.arcade.tilesLeft": "{n} leac fágtha",
+    "lib.arcade.autoShuffle": "Níl aon bhogadh fágtha — measctha go huathoibríoch.",
+    "lib.arcade.note.jigsaw": "Gearrtar an pictiúr ina phíosaí agus measctar iad. Tapáil píosa amháin, ansin ceann eile, chun iad a mhalartú, agus athchruthaigh an pictiúr a thaispeántar mar thagairt. Faigheann píosaí san áit cheart ciumhais ghlas. Tá níos mó píosaí ar na leibhéil is airde.",
+    "lib.arcade.jgRef": "Pictiúr tagartha",
+    "lib.arcade.jgPlaced": "San áit cheart: {a}/{b}",
+    "lib.arcade.golfStrokes": "Buillí: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Imríonn tú na seiceálaithe bána, ag bogadh ó bharr ar dheis timpeall go bun ar dheis (do bhaile). Caith na dísle, cliceáil an seiceálaí is mian leat a bhogadh, ansin cliceáil ceann scríbe aibhsithe. Má thuirlingíonn tú ar phointe le seiceálaí amháin go cruinn den fhreasúra, buaileann tú é go dtí an bharra lárnach, agus caithfidh an t-imreoir sin é a thabhairt ar ais isteach ar dtús. Ní féidir leat tuirlingt ar phointe le dhá sheiceálaí freasúra nó níos mó. Nuair a bhíonn do 15 seiceálaithe uile i do bhord baile (na 6 phointe dheireanacha), féadfaidh tú iad a bhaint amach. Buaileann an chéad duine a bhaineann na 15 amach.",
+    "lib.arcade.bgRoll": "Caith na dísle",
+    "lib.arcade.bgOff": "Bain amach",
+    "lib.arcade.bgRollFirst": "Caith na dísle",
+    "lib.arcade.bgInfo": "Amach: tusa {a} · ríomhaire {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Níl aon bhogadh dlíthiúil fágtha agat.",
+    "lib.arcade.note.tienlen": "Ceathrar imreoirí, 13 chárta an duine. Ord na gcártaí ón gceann is ísle go dtí an ceann is airde: 3, 4, … K, A, 2; feistis ón gceann is ísle go dtí an ceann is airde: spád, club, diamant, croí. Téann an té a bhfuil 3 spád aige ar dtús. Imir cárta amháin, péire, trí cinn, ceithre cinn, nó sraith de 3 chárta as a chéile nó níos mó (gan 2anna). Caithfidh an chéad imreoir eile an cineál céanna a imirt agus níos airde, nó dul thar; féadfaidh ceithre cinn 2 aonair nó péire 2anna a bhualadh. Nuair a théann gach duine eile thar, féadfaidh an t-imreoir deireanach a d’imir tosú le haon rud. Buaileann an chéad duine a fholmhaíonn a lámh. Roghnaigh cártaí, ansin brúigh Imir.",
+    "lib.arcade.tlPlay": "Imir",
+    "lib.arcade.tlPass": "Téigh thar",
+    "lib.arcade.tlClear": "Glan an roghnú",
+    "lib.arcade.tlPassed": "chuaigh thar",
+    "lib.arcade.tlFree": "Tá an bord folamh — féadfaidh tú tosú le haon rud",
+    "lib.arcade.tlLeft": "Cártaí fágtha: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "Téann {p} thar.",
+    "lib.arcade.tlBad": "Ní chruthaíonn na cártaí roghnaithe tacar bailí.",
+    "lib.arcade.tlLow": "Níl an tacar seo ard go leor chun an bord a bhualadh."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Tástáil imoibrithe",
       "desc": "Cliceáil an nóiméad a éiríonn an scáileán glas; caithfidh do mheán thar 5 bhabhta teorainn gach leibhéil a shásamh, agus éiríonn sí níos géire thar 10 leibhéal."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Cuir síolta timpeall na bpoll, glac síolta do chéile comhraic agus bog arís nuair a thuirlingíonn tú i do stór; imir in aghaidh an ríomhaire thar 10 leibhéal ó éasca go deacair."
+    },
+    "snakes-ladders": {
+      "name": "Nathracha agus Dréimirí",
+      "desc": "Caith an dísle ó chearnóg 1 go 100, dreap dréimirí, seachain nathracha agus sroich an líne chríochnaithe roimh do chéilí comhraic; 10 leibhéal."
+    },
+    "nine-mens-morris": {
+      "name": "Muileann (Nine Men’s Morris)",
+      "desc": "Cuir, sleamhnaigh agus eitil do phíosaí chun trí cinn a dhéanamh i ndiaidh a chéile agus píosaí do chéile comhraic a bhaint; imir in aghaidh an ríomhaire thar 10 leibhéal."
+    },
+    "battleship": {
+      "name": "Long Chogaidh (Battleship)",
+      "desc": "Faigh agus cuir cabhlach an ríomhaire go tóin poill ar eangach 10x10 sula gcuireann sé do chabhlach féin; 10 leibhéal agus an ríomhaire ag tátail níos cliste."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Pumpa-Portán-Iasc-Séaclaí)",
+      "desc": "Cluiche dísle traidisiúnta Vítneamach: cuir geall le boinn fhíorúla ar na hainmhithe agus croith trí dhísle; sroich an sprioclíon boinn thar 10 leibhéal (gan airgead fíor)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Cuir geall ar an Imreoir, ar an mBainceoir nó ar an gComhscór le cártaí roinnte de réir na gnáthrialacha, le boinn fhíorúla; sroich an sprioclíon boinn thar 10 leibhéal (gan airgead fíor)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (cluiche trí chárta)",
+      "desc": "Déan comparáid idir láimhe 3 chárta leis an déileálaí: trí cinn den chineál céanna, trí chárta pictiúir, ansin 9 bpointe síos go 0; boinn fhíorúla, 10 leibhéal, gan airgead fíor."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marcáil na huimhreacha a glaodh ar do chárta 5x5 agus glaoigh BINGO roimh chéilí comhraic an ríomhaire; glaoitear uimhreacha níos tapúla thar 10 leibhéal."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (cúig dhísle)",
+      "desc": "Caith cúig dhísle, coinnigh na cinn mhaithe agus líon 13 bhosca scórála; sroich an scór sprice thar 10 leibhéal."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Na hOchtanna Buile)",
+      "desc": "Meaitseáil feisteas nó luach, athraíonn na hochtanna an feisteas; folmhaigh do lámh roimh 1 go 3 chéile comhraic ríomhaire thar 10 leibhéal."
+    },
+    "car-race": {
+      "name": "Seachaint Rása Carranna",
+      "desc": "Athraigh lánaí chun na carranna romhat a sheachaint agus tiomáin an fad iomlán; 10 leibhéal le níos mó lánaí agus trácht níos tapúla."
+    },
+    "sky-jump": {
+      "name": "Léim Spéire",
+      "desc": "Preab ó ardán go hardán chun dreapadh chomh hard agus is féidir gan titim; 10 leibhéal le hardáin níos tanaí, ardáin ag bogadh agus cinn inbhriste."
+    },
+    "gold-miner": {
+      "name": "Mianadóir Óir",
+      "desc": "Scaoil an chrúca chun ór agus diamaint a tharraingt isteach, seachain carraigeacha troma, agus sroich an sprioclíon airgid laistigh de 60 soicind; 10 leibhéal."
+    },
+    "fruit-slice": {
+      "name": "Gearradh Torthaí",
+      "desc": "Sciorr chun torthaí atá ag eitilt suas a ghearradh agus seachain na buamaí; 10 leibhéal le níos mó torthaí agus níos mó buamaí."
+    },
+    "basketball": {
+      "name": "Caitheamh Cispheile",
+      "desc": "Tarraing agus scaoil chun an liathróid a chaitheamh isteach san fháinne laistigh de líon teoranta caithimh; 10 leibhéal, agus fáinne ag bogadh ó leibhéal 4."
+    },
+    "bubble-shooter": {
+      "name": "Lámhach Boilgeog",
+      "desc": "Lámhaigh boilgeoga chun 3 nó níos mó den dath céanna a cheangal agus iad a phléascadh, agus glan iad uile sula sroicheann siad an bun; 10 leibhéal le níos mó dathanna."
+    },
+    "dot-chase": {
+      "name": "Ruaig Poncanna",
+      "desc": "Ith na poncanna uile sa mhaisín agus seachain na taibhsí atá do do ruaigeadh; 10 leibhéal le níos mó taibhsí níos cliste."
+    },
+    "kakuro": {
+      "name": "Kakuro (Suimeanna Trasna)",
+      "desc": "Líon na cealla bána le digití 1–9 ionas go mbeidh iomlán gach rith cothrom leis an leid gan athrá; 10 leibhéal, eangacha ó 5x5 go 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Líon an eangach gan athrá i sraitheanna nó i gcolúin ionas go dtugann gach cás a sprioc lena oibríocht; 10 leibhéal, eangacha ó 3x3 go 6x6."
+    },
+    "word-guess": {
+      "name": "Buail faoin bhFocal (stíl Wordle)",
+      "desc": "Buail faoin bhfocal rúnda Béarla le leideanna glasa, buí agus liatha; 10 leibhéal le focail 4–6 litir agus níos lú iarrachtaí."
+    },
+    "hangman": {
+      "name": "Crochadóir (Hangman)",
+      "desc": "Buail faoin bhfocal Béarla litir ar litir sula n-ídíonn tú do chuid botún; 10 leibhéal le focail níos faide agus níos lú botún."
+    },
+    "word-scramble": {
+      "name": "Focail Mheasctha (Anagram)",
+      "desc": "Athordaigh litreacha measctha ina bhfocal Béarla sula rithfidh an t-am amach; 10 leibhéal, 5 fhocal in aghaidh an leibhéil."
+    },
+    "domino": {
+      "name": "Dómhíní",
+      "desc": "Meaitseáil cloch le haon cheann den slabhra agus folmhaigh do lámh roimh an ríomhaire; 10 leibhéal de réir mar a éiríonn an ríomhaire níos cliste."
+    },
+    "hearts": {
+      "name": "Hearts (Croíthe)",
+      "desc": "Seachain croíthe agus an Bhanríon Spád i gcluiche cártaí ceathrar; is fearr scór níos ísle; 10 leibhéal in aghaidh imreoirí ríomhaire níos cliste."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (sceallóga fíorúla)",
+      "desc": "Pócar duine ar dhuine in aghaidh an ríomhaire le sceallóga fíorúla: fold, call nó raise agus buaigh nuair a ídíonn sceallóga an ríomhaire; 10 leibhéal, gan airgead fíor."
+    },
+    "n-back": {
+      "name": "Cuimhne N-Back",
+      "desc": "Féach ar an gcearnóg soilsithe agus brúigh Meaitseáil nuair is ionann í agus an ceann N céim ó shin; 10 leibhéal le N suas go 4."
+    },
+    "cookie-clicker": {
+      "name": "Cliceálaí Brioscaí",
+      "desc": "Cliceáil chun brioscaí a bhácáil, ceannaigh cúntóirí a bhácálann go huathoibríoch agus sroich an sprioc laistigh de 2 nóiméad; 10 leibhéal."
+    },
+    "tile-connect": {
+      "name": "Ceangail Leacacha (stíl Onet)",
+      "desc": "Ceangail leacacha céanna le cosán le dhá chas ar a mhéad agus glan an bord sula rithfidh an t-am amach; 10 leibhéal, boird níos mó."
+    },
+    "jigsaw": {
+      "name": "Tomhaiseán Pictiúir",
+      "desc": "Malartaigh na píosaí measctha chun an pictiúr a atógáil; 10 leibhéal ó 3x3 go 6x6 píosa."
+    },
+    "mini-golf": {
+      "name": "Gailf Bheag",
+      "desc": "Tarraing siar agus scaoil chun an liathróid a chur sa pholl laistigh den teorainn buillí; 10 gcúrsa le ballaí agus gaineamh."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Caith na dísle, tabhair do sheiceálaithe abhaile agus bain amach iad roimh an ríomhaire, ag bualadh a sheiceálaithe aonair ar an mbealach; 10 leibhéal."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Trí Déag)",
+      "desc": "An cluiche cártaí Vítneamach do cheathrar: imir cártaí aonair, péirí, sraitheanna agus ceithre cinn chun do lámh a fholmhú ar dtús; 10 leibhéal."
     }
   },
   "s": {

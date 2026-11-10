@@ -698,7 +698,14 @@
     "lib.arcade.pmU": "Out! You win right away.",
     "lib.arcade.pmYou": "You",
     "lib.arcade.pmFoe": "Computer",
-    "lib.arcade.pmDraw2": "Tied on points."
+    "lib.arcade.pmDraw2": "Tied on points.",
+    "lib.arcade.note.shogi": "Shogi is Japanese chess. You play the lower side and move first; the computer's pieces point the other way. Captured pieces go into your hand and can be dropped on any empty square instead of making a move (never a pawn in a file where you already have an unpromoted pawn, and never a piece on a rank where it could not move again). A piece that moves into, out of, or within the last three ranks of the opponent may promote (except King and Gold); promotion is forced when a piece would have no moves. Checkmate the enemy King to win. Kanji: 歩 pawn, 香 lance, 桂 knight, 銀 silver, 金 gold, 角 bishop, 飛 rook, 玉 king; と, 馬, 竜 and other red pieces are promoted.",
+    "lib.arcade.sgPromote": "Promote",
+    "lib.arcade.sgKeep": "Don't promote",
+    "lib.arcade.sgCheck": "You are in check!",
+    "lib.arcade.sgWin": "Checkmate — you win.",
+    "lib.arcade.sgLose": "You were checkmated.",
+    "lib.arcade.sgAskPromote": "Promote this piece?"
   },
   "pages": {
     "home": {
@@ -1467,6 +1474,10 @@
     "phom": {
       "name": "Phom (Vietnamese Rummy)",
       "desc": "Two-player Vietnamese rummy against the computer: draw or take a discard, form melds and go out; lowest leftover points wins; 10 levels."
+    },
+    "shogi": {
+      "name": "Shogi (Japanese Chess)",
+      "desc": "Play shogi against the computer: drop captured pieces, promote, and checkmate the king; 10 levels with undo."
     }
   },
   "s": {

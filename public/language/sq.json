@@ -429,7 +429,221 @@
     "lib.arcade.note.flood-it": "Zgjidh një ngjyrë për të mbushur gjithë zonën që zotëron në qoshen lart majtas; ajo gëlltit qelizat fqinje të asaj ngjyre. Bëje gjithë tabelën një ngjyrë brenda numrit të lejuar të lëvizjeve.",
     "lib.arcade.note.mastermind": "Kompjuteri fsheh një rresht ngjyrash. Zgjidh një ngjyrë për çdo pozicion, pastaj shtyp Hamendëso. Kunj i zi = ngjyra e saktë në vendin e duhur; kunj i bardhë = ngjyra e saktë në vendin e gabuar. Zbërthe kodin përpara se të mbarojnë hamendësimet.",
     "lib.arcade.note.hanoi": "Zhvendosi të gjitha disqet te shtylla e fundit. Zhvendos vetëm diskun e sipërm të një shtylle çdo herë dhe mos vendos kurrë një disk më të madh mbi një më të vogël. Kliko shtyllën burim, pastaj shtyllën e synuar.",
-    "lib.arcade.note.pipes": "Kliko një pllakë për të rrotulluar tubin 90°. Lidh të gjithë tubat në një rrjet të vetëm pa skaje të hapura (skajet e hapura shfaqen me të kuqe)."
+    "lib.arcade.note.pipes": "Kliko një pllakë për të rrotulluar tubin 90°. Lidh të gjithë tubat në një rrjet të vetëm pa skaje të hapura (skajet e hapura shfaqen me të kuqe).",
+    "lib.arcade.pongScore": "Ti {a} – {b} Kompjuteri (deri në {t})",
+    "lib.arcade.kills": "Të shkatërruara: {n}/{t}",
+    "lib.arcade.rocksLeft": "Kanë mbetur {n} shkëmbinj",
+    "lib.arcade.timeLeft": "Kanë mbetur {n} s",
+    "lib.arcade.stepsN": "Hapa: {n}",
+    "lib.arcade.crossed": "Në shtëpi: {n}/{t}",
+    "lib.arcade.pipes": "Tuba të kaluar: {n}/{t}",
+    "lib.arcade.distance": "Distanca: {n}/{t} m",
+    "lib.arcade.speedN": "Shpejtësia: {n}",
+    "lib.arcade.note.whack-a-mole": "Urithët dalin nga vrimat — kliko ose prek një urith për ta goditur. Godit mjaft urithë para se të mbarojë koha. Nga niveli 4 ka bomba: nëse godet një, humb pikë.",
+    "lib.arcade.hole": "Vrimë",
+    "lib.arcade.hitsN": "Goditje: {n}/{t}",
+    "lib.arcade.note.simon": "Loja luan një varg ngjyrash dhe tingujsh — përsërite në të njëjtin rend. Çdo raund shton një hap. Mbaj mend gjatësinë e kërkuar për ta kaluar nivelin. Nga niveli 7 ka 6 butona.",
+    "lib.arcade.seqN": "Vargu: {n}/{t}",
+    "lib.arcade.watch": "Shiko…",
+    "lib.arcade.yourTurnShort": "Radha jote",
+    "lib.arcade.note.aim-trainer": "Shënjestrat shfaqen rastësisht dhe zhduken shpejt — godit sa më shumë. Bëhen më të vogla dhe më të shpejta. Godit mjaft shënjestra para se të humbasësh më shumë se 5 herë për ta kaluar nivelin.",
+    "lib.arcade.missN": "Humbje: {n}/{t}",
+    "lib.arcade.answer": "Përgjigja",
+    "lib.arcade.note.quick-math": "Zgjidh me mend sa më shpejt që mundesh: shkruaj përgjigjen dhe shtyp Enter. Çdo pyetje ka kufi kohe; përgjigje e gabuar ose kohë e mbaruar të kushton një jetë (ke 3). Përgjigju saktë mjaft pyetjeve për ta kaluar nivelin.",
+    "lib.arcade.correctN": "Saktë: {n}/{t}",
+    "lib.arcade.note.reaction": "Prit derisa ekrani të bëhet i gjelbër, pastaj kliko sa më shpejt që mundesh. Klikimi shumë herët është faull (3 faulle dhe humb). Mesatarja jote në 5 raunde duhet të jetë më e mirë se kufiri i nivelit.",
+    "lib.arcade.roundN": "Fjala {n}/{t}",
+    "lib.arcade.limitMs": "Kufiri: {n} ms",
+    "lib.arcade.rxWait": "Prit të gjelbrën…",
+    "lib.arcade.rxGo": "KLIKO!",
+    "lib.arcade.rxEarly": "Shumë herët!",
+    "lib.arcade.gameArea": "Zona e lojës",
+    "lib.arcade.note.pong": "Lëviz miun, tërhiq gishtin ose përdor tastet ← → për të kontrolluar raketën poshtë. Dërgo topin përtej kompjuterit; i pari që arrin 5 pikë fiton. Topi përshpejtohet me çdo goditje.",
+    "lib.arcade.note.space-shooter": "Lëviz miun, tërhiq gishtin ose përdor tastet ← → për të drejtuar; anija jote gjuan automatikisht. Shkatërro mjaft anije armike për ta kaluar nivelin dhe shmang përplasjet dhe zjarrin e armikut. Ke 3 jetë.",
+    "lib.arcade.note.asteroids": "← → rrotullon anijen, ↑ jep shtytje, Hapësira gjuan. Shkatërro të gjithë shkëmbinjtë për ta kaluar nivelin; shkëmbinjtë e mëdhenj ndahen në më të vegjël. Anija kalon nga anët e ekranit. Ke 3 jetë.",
+    "lib.arcade.note.maze": "Përdor tastet e shigjetave (ose rrëshqit gishtin, ose butonat) për të shkuar nga pika e gjelbër te flamuri i kuq para se të mbarojë koha. Nga niveli 5 labirinti ka mjegull: sheh vetëm përreth teje, dhe zonat e vizituara mbahen mend.",
+    "lib.arcade.note.road-cross": "Përdor tastet e shigjetave, rrëshqit gishtin ose butonat për ta bërë bretkosën të kërcejë nga poshtë lart. Shmang trafikun; nga niveli 5 pjesa e sipërme është lumë, prandaj kërce mbi trungjet lundruese. Arrij në shtëpi 3 herë për ta kaluar nivelin. Ke 3 jetë.",
+    "lib.arcade.note.flappy": "Prek zonën e lojës, shtyp Hapësirën ose ↑ për të rrahur krahët. Fluturo nëpër hapësirat midis tubave pa prekur tub, tokën ose tavanin. Nivelet më të larta kanë hapësira më të ngushta dhe fluturim më të shpejtë.",
+    "lib.arcade.note.runner": "Prek zonën e lojës, shtyp Hapësirën ose ↑ për të kërcyer mbi kaktuset; mbaj ↓ për t'u përkulur poshtë zogjve të lartë (ose kërce mbi ata të ulët). Vrapo mjaft larg për ta kaluar nivelin. Shpejtësia vazhdon të rritet.",
+    "lib.arcade.fire": "Gjuaj",
+    "lib.arcade.jump": "Kërce",
+    "lib.arcade.aimTarget": "Shënjestra",
+    "lib.game.soundOn": "Ndiz zërin",
+    "lib.game.soundOff": "Fik zërin",
+    "lib.arcade.note.kalah": "Ti luan rreshtin poshtë, kompjuteri atë sipër; gropa e madhe djathtas është depoja jote. Kliko një gropë për të marrë të gjitha farat e saj dhe për t'i shpërndarë në kahun e kundërt të akrepave të orës, një në çdo gropë (duke anashkaluar depon e kundërshtarit). Nëse fara e fundit bie në depon tënde, luan sërish; nëse bie në një gropë bosh në anën tënde përballë një gropë me fara, i merr ato fara. Kur një anë është bosh, farat e anës tjetër shkojnë në depon e pronarit të tyre; fiton depoja më e madhe.",
+    "lib.arcade.note.snakes": "Hidh zarin dhe lëviz aq katrorë, nga 1 deri në 100. Nëse bie në këmbën e një shkalle, ngjitesh; nëse bie në kokën e një gjarpri, rrëshqet poshtë. Nga niveli 4 duhet të hedhësh numrin e saktë për të rënë në 100. Nivelet më të larta kanë më shumë gjarpërinj, më pak shkallë dhe më shumë kundërshtarë. I pari që arrin 100 fiton.",
+    "lib.arcade.square": "Katrori {n}",
+    "lib.arcade.ladderUp": "Lart me shkallë!",
+    "lib.arcade.snakeDown": "Të gëlltiti një gjarpër!",
+    "lib.arcade.needExact": "Të duhet numri i saktë për të rënë në 100.",
+    "lib.arcade.note.nmm": "Çdo anë ka 9 gurë. Faza 1: me radhë vendosni gurë në pika bosh. Faza 2: rrëshqit një gur në një pikë bosh ngjitur. Kur të kanë mbetur vetëm 3 gurë, mund të “fluturosh” në çdo pikë bosh. Bëj tre në rresht (një “mulli”) për të hequr një gur të kundërshtarit (së pari ata që nuk janë në mulli). Humb kur të mbeten 2 gurë ose nuk mund të lëvizësh. Ti luan të bardhët dhe fillon i pari.",
+    "lib.arcade.inHand": "Për t'u vendosur: {a} · {b}",
+    "lib.arcade.removePiece": "Zgjidh një gur të kundërshtarit për ta hequr.",
+    "lib.arcade.enemyWaters": "Ujërat e armikut (kliko për të gjuajtur)",
+    "lib.arcade.yourFleet": "Flota jote",
+    "lib.arcade.note.battleship": "Çdo anë ka 5 anije (gjatësi 5, 4, 3, 3, 2) të vendosura rastësisht në një rrjet 10x10. Me radhë gjuani në një katror: goditja bëhet e kuqe, humbja bëhet blu e çelët, dhe kur godet të gjithë katrorët e një anijeje ajo fundoset. Fundos i pari gjithë flotën e armikut për të fituar. Në nivelet më të larta kompjuteri parashikon më zgjuar pozicionet e anijeve të tua.",
+    "lib.arcade.shipsLeft": "Anije të mbetura: ti {a} · armiku {b}",
+    "lib.arcade.theySunk": "Armiku fundosi një nga anijet e tua!",
+    "lib.arcade.theyHit": "Armiku goditi një nga anijet e tua.",
+    "lib.arcade.theyMiss": "Armiku humbi.",
+    "lib.arcade.youSunk": "Fundose një anije armike!",
+    "lib.arcade.youHit": "Goditje!",
+    "lib.arcade.youMiss": "Humbje.",
+    "lib.arcade.shake": "Tund",
+    "lib.arcade.clearBets": "Pastro basteve",
+    "lib.arcade.note.bau-cua": "Vetëm monedha virtuale — pa para të vërteta. Zgjidh vlerën e çipit, kliko kafshët për të vënë baste, pastaj shtyp Tund. Për çdo zar që përputhet me një kafshë ku ke vënë bast, merr kthim bastin plus një shumë të barabartë për çdo përputhje. Arrij monedhat objektiv brenda raundeve të lejuara për ta kaluar nivelin.",
+    "lib.arcade.note.baccarat": "Vetëm monedha virtuale — pa para të vërteta. Vër bast te Lojtari, Bankieri ose Barazimi, pastaj shtyp Shpërndaj. Vlera e një dore është shifra e fundit e shumës (A = 1, 2–9 vlera nominale, 10/J/Q/K = 0); fiton dora më afër 9-s, dhe letra e tretë merret sipas rregullave standarde. Lojtari paguan 1:1, Bankieri 0.95:1, Barazimi 8:1 (bastet te Lojtari/Bankieri kthehen në rast barazimi). Arrij monedhat objektiv brenda raundeve të lejuara për ta kaluar nivelin.",
+    "lib.arcade.banker": "Bankieri",
+    "lib.arcade.player": "Lojtari",
+    "lib.arcade.tie": "Barazim",
+    "lib.arcade.openCards": "Zbulo",
+    "lib.arcade.note.bai-cao": "Vetëm monedha virtuale — pa para të vërteta. Çdo anë merr 3 letra. Një dorë vlerësohet me shifrën e fundit të shumës (A = 1, 2–9 vlera nominale, 10/J/Q/K = 10, pra 0 pikë). Renditja: tre të njëjta (“Sáp”) është më e larta, pastaj tre figura (“Ba tiên”), pastaj 9 pikë deri në 0. Vër bast, shtyp Shpërndaj dhe pastaj Zbulo për t'u krahasuar me shpërndarësin. Nga niveli 6 shpërndarësi fiton barazimet. Arrij monedhat objektiv brenda raundeve të lejuara për ta kaluar nivelin.",
+    "lib.arcade.caoSap": "Tre të njëjta",
+    "lib.arcade.caoBaTien": "Tre figura",
+    "lib.arcade.caoPts": "{n} pikë",
+    "lib.arcade.note.bingo": "Kompjuteri thërret numra nga 1 deri në 75. Kur një numër i thirrur është në kartën tënde, kliko mbi të për ta shënuar (qendra është falas). Plotëso një rresht, kolonë ose diagonale dhe shtyp BINGO! — duhet të mposhtësh kundërshtarët kompjuterikë. Një BINGO! i rremë e bllokon butonin për disa sekonda. Nivelet më të larta thërrasin më shpejt dhe kanë më shumë kundërshtarë.",
+    "lib.arcade.opponentsN": "Kundërshtarë: {n}",
+    "lib.arcade.falseBingo": "Ende nuk ka një linjë të plotë! Butoni i bllokuar për 3 sekonda.",
+    "lib.arcade.bingoGo": "Po thirren numrat!",
+    "lib.arcade.note.yahtzee": "Çdo radhë hedh 5 zare deri në 3 herë: kliko një zar për ta mbajtur, pastaj shtyp Hidh për t'i rihedhur të tjerët. Pastaj zgjidh një kuti në tabelë për të marrë pikë (çdo kuti përdoret një herë; një kuti që nuk përshtatet merr 0). 13 radhë. Kutitë Njëshe–Gjashta shtojnë një bonus 35 nëse shuma është 63 ose më shumë. Arrij pikët objektiv të nivelit për të fituar.",
+    "lib.arcade.turnN": "Radha {n}/13",
+    "lib.arcade.pickCat": "Zgjidh një kuti për të marrë pikë",
+    "lib.arcade.rollsLeft": "Hidh (kanë mbetur {n})",
+    "lib.arcade.upperBonus": "Bonusi Njëshe–Gjashta",
+    "lib.arcade.scored": "Pikë të marra {n}",
+    "lib.arcade.note.crazy-eights": "Luaj një letër që përputhet me letrën e sipërme të grumbullit të hedhjes në simbol ose vlerë. Teta janë të egra: luaj një në çdo kohë dhe zgjidh një simbol të ri. Nëse nuk ke letër për të luajtur, merr nga grumbulli (deri në 3 letra); nëse prapë nuk mund të luash, kalon. I pari që boshatis dorën fiton. Nivelet më të larta kanë më shumë kundërshtarë dhe kompjuteri luan më zgjuar.",
+    "lib.arcade.opponent": "Kundërshtari",
+    "lib.arcade.pileLeft": "Grumbulli i tërheqjes: {n}",
+    "lib.arcade.pickSuit": "Zgjidh një simbol të ri",
+    "lib.arcade.aiSuit": "Kompjuteri zgjodhi {s}",
+    "lib.arcade.aiPass": "Kompjuteri kalon.",
+    "lib.arcade.mustPlay": "Ke një letër që mund të luhet — luaje.",
+    "lib.arcade.youPass": "Tërhoqe 3 letra dhe kalon.",
+    "lib.arcade.bcGourd": "Kungulli",
+    "lib.arcade.bcCrab": "Gaforrja",
+    "lib.arcade.bcShrimp": "Karkaleci",
+    "lib.arcade.bcFish": "Peshku",
+    "lib.arcade.bcRooster": "Gjeli",
+    "lib.arcade.bcDeer": "Dreri",
+    "lib.arcade.yOnes": "Njëshe",
+    "lib.arcade.yTwos": "Dyshe",
+    "lib.arcade.yThrees": "Treshe",
+    "lib.arcade.yFours": "Katërshe",
+    "lib.arcade.yFives": "Pesëshe",
+    "lib.arcade.ySixes": "Gjashta",
+    "lib.arcade.yThree": "Tre të njëjta",
+    "lib.arcade.yFour": "Katër të njëjta",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Rend i vogël (30)",
+    "lib.arcade.yLarge": "Rend i madh (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Shansi",
+    "lib.arcade.note.race": "Shtyp ← → (ose prek korsinë që dëshiron) për të ndërruar korsi dhe për të shmangur makinat përpara. Ke 3 jetë; drejto të gjithë distancën për ta kaluar nivelin. Nivelet më të larta shtojnë korsi dhe trafik më të shpejtë.",
+    "lib.arcade.note.jump": "Personazhi kërcen vetë. Shtyp ← → ose tërhiq gishtin për të rënë në platformën tjetër. Platformat blu lëvizin, ato kafe thyhen kur bie mbi to. Të rënit jashtë ekranit është humbje; ngjitu mjaft lart për ta kaluar nivelin.",
+    "lib.arcade.note.miner": "Grepi lëkundet para-mbrapa; shtyp Hapësirën, ↓ ose prek fushën për ta lëshuar. Ari i madh dhe shkëmbinjtë janë të rëndë dhe tërhiqen ngadalë; diamantët vlejnë shumë. Arrij paratë objektiv para se të kalojnë 60 sekondat.",
+    "lib.arcade.note.slicer": "Rrëshqit gishtin ose miun mbi frutat për t'i prerë. Shmang bombat e zeza. Të humbasësh një frut ose të presësh një bombë kushton një jetë (ke 3). Pri mjaft fruta për ta kaluar nivelin.",
+    "lib.arcade.note.hoops": "Shtyp në fushë, tërhiq poshtë (si me hobe) dhe lësho për ta gjuajtur topin në kosh. Sa më larg ta tërheqësh, aq më e fortë është gjuajtja. Shënoj mjaft koshe brenda gjuajtjeve që ke; nga niveli 4 koshi lëviz.",
+    "lib.arcade.note.bubbles": "Lëviz miun ose gishtin për të shënjestruar, pastaj kliko/prek ose shtyp Hapësirën/Gjuaj për të gjuajtur. Lidh 3 ose më shumë flluska të së njëjtës ngjyrë për t'i plasur; flluskat që humbin mbështetjen bien. Rreshtat ulen ngadalë, prandaj mbaji larg vijës së poshtme. Pastro të gjitha flluskat për të fituar.",
+    "lib.arcade.note.chase": "Përdor tastet e shigjetave (ose rrëshqit / butonat) për të kthyer dhe për të ngrënë të gjitha pikat e labirintit duke shmangur fantazmat që të ndjekin. Ke 3 jetë; nivelet më të larta shtojnë më shumë fantazma që janë më të shpejta dhe të ndjekin më zgjuar.",
+    "lib.arcade.height": "Lartësia: {n}/{t} m",
+    "lib.arcade.money": "Paratë: {n}/{t}",
+    "lib.arcade.sliced": "Të prera: {n}/{t}",
+    "lib.arcade.hoopScore": "Shënuar: {n}/{t}",
+    "lib.arcade.shotsLeft": "Kanë mbetur {n} gjuajtje",
+    "lib.arcade.bubbleLeft": "Kanë mbetur {n} flluska",
+    "lib.arcade.shotsN": "Gjuajtje: {n}",
+    "lib.arcade.dotsLeft": "Kanë mbetur {n} pika",
+    "lib.arcade.note.kakuro": "Plotëso qelizat e bardha me shifrat 1–9 në mënyrë që çdo varg të bëjë shumën e treguar në qelizën e zezë (numri lart djathtas është për vargun djathtas, ai poshtë majtas për vargun poshtë), pa përsëritur shifër brenda një vargu. Përdor tastet e shigjetave për të lëvizur.",
+    "lib.arcade.note.kenken": "Plotëso rrjetin me numrat 1 deri në N në mënyrë që asnjë numër të mos përsëritet në rresht ose kolonë. Çdo grup me kontur të trashë tregon një objektiv dhe një veprim (+, −, ×, ÷): numrat e grupit duhet të japin atë rezultat. Përdor tastet e shigjetave për të lëvizur.",
+    "lib.arcade.note.wordGuess": "Hamendëso fjalën e fshehtë angleze. Pas çdo përpjekjeje, e gjelbra do të thotë shkronjë e saktë në vend të saktë, e verdha do të thotë shkronja është në fjalë por diku tjetër, dhe gri do të thotë nuk është në fjalë. Shkruaj me tastierë ose përdor tastet në ekran dhe shtyp Enter për ta dërguar. Nivelet më të larta kanë fjalë më të gjata dhe më pak përpjekje.",
+    "lib.arcade.note.hangman": "Hamendëso fjalën e fshehtë angleze duke zgjedhur shkronja një nga një. Çdo shkronjë e gabuar shton një pjesë në figurën e varur; kur të mbarojnë gabimet, humb. Nivelet më të larta kanë fjalë më të gjata dhe më pak gabime të lejuara.",
+    "lib.arcade.note.scramble": "Rirenditi shkronjat e përziera në një fjalë të vërtetë angleze dhe shkruaje në kutinë e përgjigjes. Çdo nivel ka 5 fjalë; zgjidh të paktën 4 para se të mbarojë koha e çdo fjale për ta kaluar nivelin. Ndihma zbulon shkronjën e parë.",
+    "lib.arcade.cellsLeft": "Kanë mbetur {n} qeliza bosh",
+    "lib.arcade.wrongN": "{n} qeliza nuk janë të sakta.",
+    "lib.arcade.noError": "Deri tani nuk u gjetën gabime.",
+    "lib.arcade.tooShort": "Nuk ka mjaft shkronja",
+    "lib.arcade.answerIs": "Përgjigja: {w}",
+    "lib.arcade.livesLeft": "Kanë mbetur {n} gabime",
+    "lib.arcade.yourAnswer": "Përgjigja jote",
+    "lib.arcade.skip": "Kapërce",
+    "lib.arcade.notThis": "Jo e saktë, provo përsëri.",
+    "lib.arcade.startsWith": "Shkronja e parë: {c}",
+    "lib.arcade.note.domino": "Çdo lojtar merr 7 pllaka; fillon ai që ka dyshen më të lartë. Luaj një pllakë që ka numrin e njëjtë me njërin skaj të zinxhirit. Nëse nuk mund të luash, merr nga depoja derisa të mundesh; nëse është bosh, kalon. I pari që boshatis dorën fiton; nëse të dy janë të bllokuar, fiton shuma më e vogël e pikave.",
+    "lib.arcade.note.hearts": "Katër lojtarë, 13 letra secili. Fillon 2 e hardhisë. Duhet të ndjekësh simbolin e nisur nëse mundesh. Çdo zemër është 1 pikë dhe Mbretëresha e Maces është 13; kush fiton një rrahje merr pikët e saj. Më pak është më mirë, dhe nëse dikush merr të 26 pikët, të gjithë të tjerët marrin 26. Nuk mund të fillosh me zemër derisa të ketë rënë një. Pas dorës së fundit, fiton nëse rezultati yt është më i ulëti (ose i barabartë me më të ulëtin).",
+    "lib.arcade.note.holdem": "Heads-up kundër kompjuterit vetëm me çipa virtualë. Çdo lojtar merr 2 letra private dhe zbulohen 5 letra të përbashkëta (flop, turn, river); formo dorën më të mirë me 5 letra. Në çdo raund mund të bësh fold, call (ose check) ose raise. Blind-et rriten çdo 4 duar. Fiton kur kompjuteri mbetet pa çipa, ose me më shumë çipa pas kufirit të duarve. Nuk përfshihen para të vërteta.",
+    "lib.arcade.dmDraw": "Merr një pllakë",
+    "lib.arcade.dmPass": "Kalo",
+    "lib.arcade.dmEmpty": "Ende nuk është luajtur asnjë pllakë",
+    "lib.arcade.dmYard": "Depoja: {n} pllaka",
+    "lib.arcade.dmLeft": "Skaji majtas",
+    "lib.arcade.dmRight": "Skaji djathtas",
+    "lib.arcade.dmTie": "Barazim! Të dyja anët janë baras.",
+    "lib.arcade.hrHand": "Dora {n}/{t}",
+    "lib.arcade.hrTook": "{p} fiton rrahjen ({n} pikë).",
+    "lib.arcade.hrIllegal": "Nuk mund ta luash këtë letër (ndiq simbolin, ose ende nuk mund të fillosh me zemra).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise në",
+    "lib.arcade.raiseN": "Raise në {n}",
+    "lib.arcade.thOppFold": "Kompjuteri bën fold; ti fiton këtë dorë.",
+    "lib.arcade.thYouFold": "Bëre fold.",
+    "lib.arcade.thOppWin": "Kompjuteri fiton këtë dorë",
+    "lib.arcade.thYouWin": "Ti fiton këtë dorë",
+    "lib.arcade.thSplit": "Pot i ndarë",
+    "lib.arcade.thAiFold": "Kompjuteri bën fold.",
+    "lib.arcade.thAiRaise": "Kompjuteri bën raise në {n}.",
+    "lib.arcade.thAiCall": "Kompjuteri bën call / check.",
+    "lib.arcade.hand.high": "Letra e lartë",
+    "lib.arcade.hand.pair": "Çift",
+    "lib.arcade.hand.twoPair": "Dy çifte",
+    "lib.arcade.hand.trips": "Tre të njëjta",
+    "lib.arcade.hand.straight": "Rend",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Katër të njëjta",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Një katror ndizet njëri pas tjetrit në një rrjet 3x3. Shtyp “Përputhet!” (ose Hapësirën) kur pozicioni i ndezur është i njëjtë me atë N hapa më parë (N shfaqet sipër). Të duhen të paktën 80% vendime të sakta për ta kaluar nivelin. Nivelet më të larta përdorin N më të madh.",
+    "lib.arcade.nbMatch": "Përputhet!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Saktë: {a} · Gabim: {b}",
+    "lib.arcade.nbAcc": "Saktësia: {n}%",
+    "lib.arcade.note.clicker": "Kliko biskotën për të pjekur biskota, pastaj shpenzoji për ndihmës që pjekin automatikisht (çmimet rriten me çdo blerje). Piq numrin objektiv të biskotave brenda 2 minutave për ta kaluar nivelin.",
+    "lib.arcade.ckCursor": "Kursori",
+    "lib.arcade.ckGrandma": "Gjyshja pjekëse",
+    "lib.arcade.ckFarm": "Ferma",
+    "lib.arcade.ckMine": "Miniera e sheqerit",
+    "lib.arcade.ckFactory": "Fabrika",
+    "lib.arcade.ckCookie": "Biskota",
+    "lib.arcade.ckEarned": "Të pjekura: {n}/{t}",
+    "lib.arcade.chips2": "Biskota: {n}",
+    "lib.arcade.ckCps": "{n} biskota/sekondë",
+    "lib.arcade.note.onet": "Zgjidh dy pllaka identike që mund të lidhen me një shteg me më së shumti 2 kthesa që nuk kalon nëpër pllaka të tjera, për t'i hequr. Pastro të gjitha pllakat para se të mbarojë koha për të fituar. Kur nuk ka më lëvizje, mund t'i përziesh (përdorime të kufizuara).",
+    "lib.arcade.shuffle": "Përziej",
+    "lib.arcade.tilesLeft": "Kanë mbetur {n} pllaka",
+    "lib.arcade.autoShuffle": "Nuk ka më lëvizje — u përzien automatikisht.",
+    "lib.arcade.note.jigsaw": "Fotografia është prerë në pjesë dhe e përzier. Prek një pjesë, pastaj një tjetër, për t'i ndërruar, dhe rindërto fotografinë e treguar si referencë. Pjesët në vendin e duhur marrin kornizë të gjelbër. Nivelet më të larta kanë më shumë pjesë.",
+    "lib.arcade.jgRef": "Fotografia e referencës",
+    "lib.arcade.jgPlaced": "Në vend: {a}/{b}",
+    "lib.arcade.golfStrokes": "Goditje: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Ti luan gurët e bardhë, që lëvizin nga e djathta lart përreth deri në të djathtën poshtë (shtëpia jote). Hidh zaret, kliko gurin që do të lëvizësh, pastaj kliko një destinacion të theksuar. Nëse zbret në një pikë me saktësisht një gur të kundërshtarit, e godet në shiritin e mesit, dhe ai lojtar duhet ta kthejë së pari. Nuk mund të zbresësh në një pikë me dy ose më shumë gurë të kundërshtarit. Kur të 15 gurët e tu janë në shtëpinë tënde (6 pikat e fundit), mund t'i heqësh. I pari që i heq të 15 fiton.",
+    "lib.arcade.bgRoll": "Hidh zaret",
+    "lib.arcade.bgOff": "Hiq",
+    "lib.arcade.bgRollFirst": "Hidh zaret",
+    "lib.arcade.bgInfo": "Të hequr: ti {a} · kompjuteri {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Nuk ke më asnjë lëvizje të ligjshme.",
+    "lib.arcade.note.tienlen": "Katër lojtarë, 13 letra secili. Renditja e letrave nga e ulëta te e larta: 3, 4, … K, A, 2; simbolet nga i ulëti te i larti: maca, hardhia, diamanti, zemra. Fillon ai që ka 3 e maces. Luaj një letër, një çift, tre të njëjta, katër të njëjta, ose një rend me 3 ose më shumë letra të njëpasnjëshme (pa 2). Lojtari tjetër duhet të luajë të njëjtin lloj dhe më të lartë, ose të kalojë; katër të njëjta mund të mposhtin një 2 ose një çift 2-sh. Kur të gjithë të tjerët kalojnë, lojtari i fundit që luajti mund të fillojë me çfarëdo. I pari që boshatis dorën fiton. Zgjidh letrat, pastaj shtyp Luaj.",
+    "lib.arcade.tlPlay": "Luaj",
+    "lib.arcade.tlPass": "Kalo",
+    "lib.arcade.tlClear": "Pastro zgjedhjen",
+    "lib.arcade.tlPassed": "kaloi",
+    "lib.arcade.tlFree": "Tavolina është bosh — mund të fillosh me çfarëdo",
+    "lib.arcade.tlLeft": "Letra të mbetura: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} kalon.",
+    "lib.arcade.tlBad": "Letrat e zgjedhura nuk formojnë një grup të vlefshëm.",
+    "lib.arcade.tlLow": "Ky grup nuk është mjaft i lartë për të mposhtur tavolinën."
   },
   "pages": {
     "home": {
@@ -998,6 +1212,182 @@
     "ultimate-tictactoe": {
       "name": "Iksi-Zero Përfundimtar",
       "desc": "Iksi-zero në 9 tabela të vogla: qeliza që zgjedh vendos ku duhet të luajë kundërshtari; kundër kompjuterit në 10 nivele."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Dërgo topin përtej kompjuterit; i pari që arrin 5 pikë fiton. 10 nivele me kundërshtar më të shpejtë dhe më të mprehtë."
+    },
+    "space-shooter": {
+      "name": "Gjuajtës hapësinor",
+      "desc": "Drejto anijen tënde, rrëzo anijet armike dhe shmang zjarrin e tyre; 10 nivele me valë më të mëdha, përgjigje me zjarr dhe armiq më të vështirë."
+    },
+    "asteroids": {
+      "name": "Asteroidët",
+      "desc": "Rrotullo, jep shtytje dhe gjuaj për të thyer shkëmbinjtë e hapësirës; shkëmbinjtë e mëdhenj ndahen në më të vegjël. 10 nivele me më shumë shkëmbinj dhe më të shpejtë."
+    },
+    "maze": {
+      "name": "Labirinti",
+      "desc": "Gjej daljen nga labirinti para se të mbarojë koha; 10 nivele nga labirinte të vogla në të mëdha, me mjegull në nivelet e larta."
+    },
+    "road-cross": {
+      "name": "Kalimi i rrugës (stili Frogger)",
+      "desc": "Bëj bretkosën të kërcejë nëpër rrugë të zhurmshme dhe lumenj me trungje lundruese për të arritur në shtëpi 3 herë; 10 nivele me trafik më të shpejtë dhe lumë në nivelet e larta."
+    },
+    "flappy": {
+      "name": "Lojë në stilin Flappy Bird",
+      "desc": "Prek për të rrahur krahët dhe fluturo nëpër hapësirat midis tubave; 10 nivele me hapësira më të ngushta dhe shpejtësi në rritje."
+    },
+    "runner": {
+      "name": "Dino vrapues",
+      "desc": "Kërce mbi kaktuset dhe përkulu poshtë zogjve; vrapo mjaft larg për të kaluar secilin nga 10 nivelet ndërsa shpejtësia vazhdon të rritet."
+    },
+    "whack-a-mole": {
+      "name": "Godit urithin",
+      "desc": "Godit urithët që dalin nga vrimat para se të mbarojë koha, dhe shmang bombat; 10 nivele nga ngadalë deri në shumë shpejt."
+    },
+    "simon": {
+      "name": "Simon (kujtesa e ngjyrave)",
+      "desc": "Mbaj mend dhe përsërit vargun e ngjyrave dhe tingujve; vargje më të gjata në 10 nivele, me 6 butona nga niveli 7."
+    },
+    "aim-trainer": {
+      "name": "Stërvitje shënjestrimi",
+      "desc": "Godit shënjestrat që shfaqen rastësisht dhe zhduken shpejt; shënjestrat zvogëlohen në 10 nivele, dhe matet koha jote e reagimit."
+    },
+    "quick-math": {
+      "name": "Matematika e shpejtë",
+      "desc": "Bëj mbledhje, zbritje, shumëzim dhe pjesëtim me mend nën presionin e kohës; 10 nivele nga shuma të thjeshta deri te shprehje."
+    },
+    "reaction": {
+      "name": "Test i kohës së reagimit",
+      "desc": "Kliko në çastin kur ekrani bëhet i gjelbër; mesatarja jote në 5 raunde duhet të arrijë kufirin e çdo niveli, që shtrëngohet në 10 nivele."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Shpërndaj fara rreth gropave, merr farat e kundërshtarit dhe luaj sërish kur bie në depon tënde; luaj kundër kompjuterit në 10 nivele nga e lehtë në të vështirë."
+    },
+    "snakes-ladders": {
+      "name": "Gjarpërinj dhe shkallë",
+      "desc": "Hidh zarin nga katrori 1 në 100, ngjitu në shkallë, shmang gjarpërinjtë dhe arrij në fund para kundërshtarëve; 10 nivele."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris (Mulli)",
+      "desc": "Vendos, rrëshqit dhe “fluturo” gurët e tu për të bërë tre në rresht dhe për të hequr gurët e kundërshtarit; luaj kundër kompjuterit në 10 nivele."
+    },
+    "battleship": {
+      "name": "Beteja detare",
+      "desc": "Gjej dhe fundos flotën e kompjuterit në një rrjet 10x10 para se ai të fundosë tëndën; 10 nivele ndërsa kompjuteri parashikon më zgjuar."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Kungulli, Gaforrja, Peshku, Karkaleci)",
+      "desc": "Lojë tradicionale vietnameze me zare: vër baste me monedha virtuale te kafshët dhe tund tre zare; arrij monedhat objektiv në 10 nivele (pa para të vërteta)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Vër bast te Lojtari, Bankieri ose Barazimi me letra të shpërndara sipas rregullave standarde, me monedha virtuale; arrij monedhat objektiv në 10 nivele (pa para të vërteta)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (loja me tre letra)",
+      "desc": "Krahaso duart me 3 letra me shpërndarësin: tre të njëjta, tre figura, pastaj 9 pikë deri në 0; monedha virtuale, 10 nivele, pa para të vërteta."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Shëno numrat e thirrur në kartën tënde 5x5 dhe thirr BINGO para kundërshtarëve kompjuterikë; numrat thirren më shpejt në 10 nivele."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (pesë zare)",
+      "desc": "Hidh pesë zare, mbaj të mirat dhe plotëso 13 kuti pikësh; arrij pikët objektiv në 10 nivele."
+    },
+    "crazy-eights": {
+      "name": "Teta të çmendura",
+      "desc": "Përputh simbolin ose vlerën, tetat ndryshojnë simbolin; boshatis dorën para 1 deri në 3 kundërshtarëve kompjuterikë në 10 nivele."
+    },
+    "car-race": {
+      "name": "Shmangia në garë makinash",
+      "desc": "Ndërro korsi për të shmangur makinat përpara dhe drejto të gjithë distancën; 10 nivele me më shumë korsi dhe trafik më të shpejtë."
+    },
+    "sky-jump": {
+      "name": "Kërcimi në qiell",
+      "desc": "Kërce nga platforma në platformë për t'u ngjitur sa më lart pa rënë; 10 nivele me platforma më të rralla, lëvizëse dhe të thyeshme."
+    },
+    "gold-miner": {
+      "name": "Minatori i arit",
+      "desc": "Lësho grepin për të tërhequr ar dhe diamante, shmang shkëmbinjtë e rëndë dhe arrij paratë objektiv brenda 60 sekondave; 10 nivele."
+    },
+    "fruit-slice": {
+      "name": "Pri frutat",
+      "desc": "Rrëshqit për të prerë frutat që fluturojnë lart dhe shmang bombat; 10 nivele me më shumë fruta dhe më shumë bomba."
+    },
+    "basketball": {
+      "name": "Gjuajtje basketbolli",
+      "desc": "Tërhiq dhe lësho për ta gjuajtur topin në kosh brenda një numri të kufizuar gjuajtjesh; 10 nivele, me kosh që lëviz nga niveli 4."
+    },
+    "bubble-shooter": {
+      "name": "Gjuajtës flluskash",
+      "desc": "Gjuaj flluska për të lidhur 3 ose më shumë të së njëjtës ngjyrë dhe për t'i plasur, dhe pastro të gjitha para se të arrijnë në fund; 10 nivele me më shumë ngjyra."
+    },
+    "dot-chase": {
+      "name": "Ndjekja e pikave",
+      "desc": "Ha të gjitha pikat e labirintit duke shmangur fantazmat që të ndjekin; 10 nivele me më shumë fantazma dhe më të zgjuara."
+    },
+    "kakuro": {
+      "name": "Kakuro (shuma të kryqëzuara)",
+      "desc": "Plotëso qelizat e bardha me shifrat 1–9 në mënyrë që çdo varg të bëjë shumën e treguar pa përsëritje; 10 nivele, rrjete nga 5x5 deri në 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Plotëso rrjetin pa përsëritje në rreshta ose kolona në mënyrë që çdo grup të japë objektivin e tij me veprimin e tij; 10 nivele, rrjete nga 3x3 deri në 6x6."
+    },
+    "word-guess": {
+      "name": "Hamendëso fjalën (stili Wordle)",
+      "desc": "Hamendëso fjalën e fshehtë angleze me ndihma të gjelbra, të verdha dhe gri; 10 nivele me fjalë 4–6 shkronjash dhe më pak përpjekje."
+    },
+    "hangman": {
+      "name": "I varuri (Hangman)",
+      "desc": "Hamendëso fjalën angleze shkronjë pas shkronje para se të mbarojnë gabimet; 10 nivele me fjalë më të gjata dhe më pak gabime."
+    },
+    "word-scramble": {
+      "name": "Fjalë të përziera (anagram)",
+      "desc": "Rirenditi shkronjat e përziera në një fjalë angleze para se të mbarojë koha; 10 nivele, 5 fjalë për nivel."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Përputh pllakat me cilindo skaj të zinxhirit dhe boshatis dorën para kompjuterit; 10 nivele ndërsa kompjuteri bëhet më i zgjuar."
+    },
+    "hearts": {
+      "name": "Hearts (Zemrat)",
+      "desc": "Shmang zemrat dhe Mbretëreshën e Maces në një lojë letrash për katër lojtarë; rezultati më i ulët është më i mirë; 10 nivele kundër lojtarëve kompjuterikë më të zgjuar."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (çipa virtualë)",
+      "desc": "Poker heads-up kundër kompjuterit me çipa virtualë: bëj fold, call ose raise, dhe fito kur kompjuteri mbetet pa çipa; 10 nivele, pa para të vërteta."
+    },
+    "n-back": {
+      "name": "Kujtesa N-Back",
+      "desc": "Shiko katrorin e ndezur dhe shtyp Përputhet kur është i njëjtë me atë N hapa më parë; 10 nivele me N deri në 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Kliko për të pjekur biskota, bli ndihmës që pjekin automatikisht dhe arrij objektivin brenda 2 minutave; 10 nivele."
+    },
+    "tile-connect": {
+      "name": "Lidhja e pllakave (stili Onet)",
+      "desc": "Lidh pllakat identike me një shteg me më së shumti dy kthesa dhe pastro tabelën para se të mbarojë koha; 10 nivele, tabela më të mëdha."
+    },
+    "jigsaw": {
+      "name": "Puzzle me fotografi",
+      "desc": "Ndërro pjesët e përziera për të rindërtuar fotografinë; 10 nivele nga 3x3 deri në 6x6 pjesë."
+    },
+    "mini-golf": {
+      "name": "Mini golf",
+      "desc": "Tërhiq mbrapa dhe lësho për ta futur topin në vrimë brenda kufirit të goditjeve; 10 fusha me mure dhe rërë."
+    },
+    "backgammon": {
+      "name": "Backgammon (Tavëll)",
+      "desc": "Hidh zaret, çoji gurët në shtëpi dhe hiqi para kompjuterit, duke goditur gurët e tij të vetmuar gjatë rrugës; 10 nivele."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Trembëdhjetë)",
+      "desc": "Loja vietnameze e letrave për katër lojtarë ku boshatisen duart: luaj letra të vetme, çifte, rende dhe katër të njëjta për ta boshatisur dorën i pari; 10 nivele."
     }
   },
   "s": {
