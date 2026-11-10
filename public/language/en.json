@@ -653,7 +653,33 @@
     "lib.arcade.yukonFree": "Face-down cards: {n}",
     "lib.arcade.note.chinesechk": "You play the blue pieces in the right-hand corner; move all 10 of them to the opposite left-hand corner before the computer does. Each turn you move one piece: step to an empty neighbouring hole, or jump over any piece to the empty hole right behind it, and keep jumping as many times as you like. Tap one of your pieces, then tap a green hole to move.",
     "lib.arcade.ccTurn": "Your turn · Turn {n}",
-    "lib.arcade.ccDraw": "Out of turns — it is a draw."
+    "lib.arcade.ccDraw": "Out of turns — it is a draw.",
+    "lib.arcade.note.maubinh": "You and the computer each get 13 cards and arrange them into 3 hands: a 5-card back hand, a 5-card middle hand and a 3-card front hand. The back hand must be at least as strong as the middle, and the middle at least as strong as the front; otherwise your arrangement is fouled and you lose the whole round. Tap a card, then tap the row where it goes (tap a placed card to take it back). Each hand you win scores 1 point; winning all 3 scores 6. Play 5 rounds — a positive total clears the level. The front hand can only be high card, a pair or three of a kind.",
+    "lib.arcade.mbHigh": "High card",
+    "lib.arcade.mbPair": "Pair",
+    "lib.arcade.mbTwoPair": "Two pair",
+    "lib.arcade.mbTrips": "Three of a kind",
+    "lib.arcade.mbStraight": "Straight",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Four of a kind",
+    "lib.arcade.mbSflush": "Straight flush",
+    "lib.arcade.mbBack": "Back hand",
+    "lib.arcade.mbMid": "Middle hand",
+    "lib.arcade.mbFront": "Front hand",
+    "lib.arcade.mbFoe": "Computer",
+    "lib.arcade.mbYou": "You",
+    "lib.arcade.mbFoul": "Fouled!",
+    "lib.arcade.mbFoeFoul": "Computer fouled!",
+    "lib.arcade.mbConfirm": "Show cards",
+    "lib.arcade.mbReset": "Clear",
+    "lib.arcade.mbHand": "Your hand",
+    "lib.arcade.mbRound": "Round {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Finish",
+    "lib.arcade.mbNext": "Next round",
+    "lib.arcade.mbDraw": "Tied on points — play again.",
+    "lib.arcade.mbAutoMsg": "Here is a suggested arrangement. You can change it before showing the cards."
   },
   "pages": {
     "home": {
@@ -1414,6 +1440,10 @@
     "chinese-checkers": {
       "name": "Chinese Checkers",
       "desc": "Star-shaped hop-and-step game against the computer: move all 10 pieces to the opposite corner first; 10 levels."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Chinese Poker)",
+      "desc": "Arrange 13 cards into three hands of 5, 5 and 3 cards and beat the computer; 5 rounds per level, 10 levels."
     }
   },
   "s": {

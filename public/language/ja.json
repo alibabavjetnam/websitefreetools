@@ -653,7 +653,33 @@
     "lib.arcade.yukonFree": "裏向きのカード: {n}",
     "lib.arcade.note.chinesechk": "あなたは右の角にある青い駒を操作し、コンピューターより先に10個すべてを反対側の左の角へ運びます。1ターンに駒を1つ動かします。隣の空きに1歩進むか、どれかの駒を飛び越えてすぐ後ろの空きに跳び、続けて何回でも跳べます。自分の駒をタップし、緑の穴をタップして動かします。",
     "lib.arcade.ccTurn": "あなたの番 · {n}ターン目",
-    "lib.arcade.ccDraw": "ターン上限に達したため引き分けです。"
+    "lib.arcade.ccDraw": "ターン上限に達したため引き分けです。",
+    "lib.arcade.note.maubinh": "あなたとコンピューターは13枚ずつ配られ、後列5枚・中列5枚・前列3枚の3つの手札に分けます。後列は中列以上、中列は前列以上の強さにしなければならず、守れないと「反則」でそのラウンドは負けです。カードをタップし、置きたい列をタップします（置いたカードをタップすると戻せます）。勝った列ごとに1点、3列とも勝てば6点です。5ラウンド戦い、合計がプラスならクリアです。前列は役なし・ワンペア・スリーカードのみです。",
+    "lib.arcade.mbHigh": "ハイカード",
+    "lib.arcade.mbPair": "ワンペア",
+    "lib.arcade.mbTwoPair": "ツーペア",
+    "lib.arcade.mbTrips": "スリーカード",
+    "lib.arcade.mbStraight": "ストレート",
+    "lib.arcade.mbFlush": "フラッシュ",
+    "lib.arcade.mbFull": "フルハウス",
+    "lib.arcade.mbQuads": "フォーカード",
+    "lib.arcade.mbSflush": "ストレートフラッシュ",
+    "lib.arcade.mbBack": "後列",
+    "lib.arcade.mbMid": "中列",
+    "lib.arcade.mbFront": "前列",
+    "lib.arcade.mbFoe": "コンピューター",
+    "lib.arcade.mbYou": "あなた",
+    "lib.arcade.mbFoul": "反則！",
+    "lib.arcade.mbFoeFoul": "コンピューターの反則！",
+    "lib.arcade.mbConfirm": "勝負",
+    "lib.arcade.mbReset": "リセット",
+    "lib.arcade.mbHand": "手札",
+    "lib.arcade.mbRound": "ラウンド {a}/{b}",
+    "lib.arcade.mbTotal": "合計: {n}",
+    "lib.arcade.mbFinish": "終了",
+    "lib.arcade.mbNext": "次のラウンド",
+    "lib.arcade.mbDraw": "同点です — もう一度どうぞ。",
+    "lib.arcade.mbAutoMsg": "おすすめの並べ方です。勝負の前に変更できます。"
   },
   "pages": {
     "home": {
@@ -1414,6 +1440,10 @@
     "chinese-checkers": {
       "name": "ダイヤモンドゲーム",
       "desc": "星形の盤で跳んで進むゲーム。コンピューターより先に10個の駒を反対の角へ運ぼう。10レベル。"
+    },
+    "mau-binh": {
+      "name": "チャイニーズポーカー",
+      "desc": "13枚を5枚・5枚・3枚の3つの手札に分けてコンピューターと勝負。1レベル5ラウンド、10レベル。"
     }
   },
   "s": {

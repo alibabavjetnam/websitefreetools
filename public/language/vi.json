@@ -653,7 +653,33 @@
     "lib.arcade.note.yukon": "Như Klondike nhưng không có chồng rút: mọi lá ngửa đều kéo được cùng các lá nằm dưới nó, kể cả khi chúng không thành dãy; chỉ cần lá đầu hợp với cột đích (giảm dần, xen đỏ đen; K vào cột trống). Đưa đủ 52 lá lên 4 ô đích từ A đến K. Cấp thấp có sẵn nhiều lá được lật ngửa.",
     "lib.arcade.note.chinesechk": "Bạn cầm quân xanh ở góc phải, đưa cả 10 quân sang góc trái đối diện trước máy. Mỗi lượt đi một quân: bước sang ô trống kề bên, hoặc nhảy qua một quân bất kỳ để tới ô trống ngay sau nó, và được nhảy liên tiếp nhiều lần. Bấm quân của bạn rồi bấm ô chấm sáng để đi.",
     "lib.arcade.ccTurn": "Lượt của bạn · Lượt {n}",
-    "lib.arcade.ccDraw": "Hết số lượt, hai bên hoà."
+    "lib.arcade.ccDraw": "Hết số lượt, hai bên hoà.",
+    "lib.arcade.mbConfirm": "So bài",
+    "lib.arcade.mbReset": "Xếp lại",
+    "lib.arcade.note.maubinh": "Bạn và máy mỗi bên nhận 13 lá, xếp thành 3 chi: chi cuối 5 lá, chi giữa 5 lá, chi đầu 3 lá. Chi cuối phải mạnh hơn hoặc bằng chi giữa, chi giữa mạnh hơn hoặc bằng chi đầu, nếu không là \"binh lủng\" và thua cả ván. Bấm một lá rồi bấm hàng muốn đặt (bấm lá đã đặt để lấy lại). Mỗi chi thắng được 1 điểm, thắng cả 3 chi được 6 điểm. Chơi 5 ván, tổng điểm dương là qua cấp. Chi đầu chỉ có mậu thầu, đôi hoặc sám cô.",
+    "lib.arcade.mbRound": "Ván {a}/{b}",
+    "lib.arcade.mbTotal": "Tổng điểm: {n}",
+    "lib.arcade.mbFoe": "Máy",
+    "lib.arcade.mbYou": "Bạn",
+    "lib.arcade.mbFoul": "Binh lủng!",
+    "lib.arcade.mbFoeFoul": "Máy binh lủng!",
+    "lib.arcade.mbHand": "Bài trên tay",
+    "lib.arcade.mbFinish": "Xong",
+    "lib.arcade.mbNext": "Ván tiếp",
+    "lib.arcade.mbDraw": "Hoà điểm — chơi lại nhé.",
+    "lib.arcade.mbAutoMsg": "Đây là cách xếp gợi ý. Bạn có thể đổi lại trước khi so bài.",
+    "lib.arcade.mbHigh": "Mậu thầu",
+    "lib.arcade.mbPair": "Đôi",
+    "lib.arcade.mbTwoPair": "Thú (hai đôi)",
+    "lib.arcade.mbTrips": "Sám cô",
+    "lib.arcade.mbStraight": "Sảnh",
+    "lib.arcade.mbFlush": "Thùng",
+    "lib.arcade.mbFull": "Cù lũ",
+    "lib.arcade.mbQuads": "Tứ quý",
+    "lib.arcade.mbSflush": "Thùng phá sảnh",
+    "lib.arcade.mbBack": "Chi cuối",
+    "lib.arcade.mbMid": "Chi giữa",
+    "lib.arcade.mbFront": "Chi đầu"
   },
   "pages": {
     "home": {
@@ -1738,6 +1764,10 @@
     "chinese-checkers": {
       "name": "Cờ nhảy (Chinese Checkers)",
       "desc": "Cờ nhảy sao 6 cánh đánh với máy: bước hoặc nhảy liên tiếp để đưa 10 quân sang góc đối diện trước; 10 cấp."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (xếp 3 chi)",
+      "desc": "Mậu binh đấu với máy: xếp 13 lá thành 3 chi 5-5-3 mạnh dần, tránh binh lủng; 5 ván mỗi cấp, 10 cấp."
     }
   },
   "s": {

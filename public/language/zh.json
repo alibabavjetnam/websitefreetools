@@ -653,7 +653,33 @@
     "lib.arcade.yukonFree": "背面朝上的牌：{n}",
     "lib.arcade.note.chinesechk": "你执蓝色棋子，位于右侧角上，要抢在电脑之前把 10 颗棋子全部移到对面左侧的角上。每回合移动一颗：走到相邻的空位，或越过任意一颗棋子跳到它正后方的空位，并且可以连续跳多次。先点自己的棋子，再点绿色的空位即可移动。",
     "lib.arcade.ccTurn": "轮到你 · 第 {n} 回合",
-    "lib.arcade.ccDraw": "回合数用完，双方和棋。"
+    "lib.arcade.ccDraw": "回合数用完，双方和棋。",
+    "lib.arcade.note.maubinh": "你和电脑各发 13 张牌，分成三墩：后墩 5 张、中墩 5 张、前墩 3 张。后墩必须不弱于中墩，中墩必须不弱于前墩，否则算“倒水”（犯规），本局判负。先点一张牌，再点要放的那一行（点已放的牌可收回）。每赢一墩得 1 分，三墩全赢得 6 分。共打 5 局，总分为正即过关。前墩只能是高牌、一对或三条。",
+    "lib.arcade.mbHigh": "高牌",
+    "lib.arcade.mbPair": "一对",
+    "lib.arcade.mbTwoPair": "两对",
+    "lib.arcade.mbTrips": "三条",
+    "lib.arcade.mbStraight": "顺子",
+    "lib.arcade.mbFlush": "同花",
+    "lib.arcade.mbFull": "葫芦",
+    "lib.arcade.mbQuads": "四条",
+    "lib.arcade.mbSflush": "同花顺",
+    "lib.arcade.mbBack": "后墩",
+    "lib.arcade.mbMid": "中墩",
+    "lib.arcade.mbFront": "前墩",
+    "lib.arcade.mbFoe": "电脑",
+    "lib.arcade.mbYou": "你",
+    "lib.arcade.mbFoul": "倒水！",
+    "lib.arcade.mbFoeFoul": "电脑倒水！",
+    "lib.arcade.mbConfirm": "比牌",
+    "lib.arcade.mbReset": "重排",
+    "lib.arcade.mbHand": "手牌",
+    "lib.arcade.mbRound": "第 {a}/{b} 局",
+    "lib.arcade.mbTotal": "总分：{n}",
+    "lib.arcade.mbFinish": "完成",
+    "lib.arcade.mbNext": "下一局",
+    "lib.arcade.mbDraw": "总分相同 — 再来一次吧。",
+    "lib.arcade.mbAutoMsg": "这是推荐的摆法。比牌前你还可以修改。"
   },
   "pages": {
     "home": {
@@ -1414,6 +1440,10 @@
     "chinese-checkers": {
       "name": "跳棋",
       "desc": "与电脑对战的星形跳棋：抢先把 10 颗棋子移到对面的角；共 10 关。"
+    },
+    "mau-binh": {
+      "name": "十三张",
+      "desc": "把 13 张牌摆成 5、5、3 张的三墩，与电脑比大小；每关 5 局，共 10 关。"
     }
   },
   "s": {
