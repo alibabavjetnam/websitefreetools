@@ -1784,3 +1784,8 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .jg-grid{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:2px;width:min(100%,480px);margin:0 auto;aspect-ratio:1}
 .jg-p{border:2px solid transparent;padding:0;cursor:pointer;background-repeat:no-repeat;border-radius:3px}.jg-p.ok{border-color:#40c057}.jg-p.sel{border-color:#fab005;filter:brightness(1.15)}
 .jg-ref{width:140px;height:140px;border-radius:8px;display:block;margin-bottom:8px}
+
+/* ── Backgammon / Tiến lên ── */
+.bg-svg{display:block;width:min(100%,640px);height:auto;margin:0 auto;border-radius:8px;user-select:none}.bg-pt{cursor:pointer}.bg-pt.dst polygon{filter:brightness(1.35)}.bg-pt.sel polygon{filter:brightness(1.25)}.bg-can{stroke:#fab005;stroke-width:3}
+.bg-dice{display:flex;gap:10px;justify-content:center;margin-top:8px;min-height:44px}.bg-die{width:42px;height:42px;border-radius:8px;background:#fff;border:2px solid #343a40;display:flex;align-items:center;justify-content:center;font:700 22px inherit;color:#212529}
+.tl-board{min-height:420px}.tl-opps{display:flex;flex-wrap:wrap;gap:10px 18px}.tl-opp.active .cz-lbl{color:#ffd43b}.tl-opp .cz-hand{--cw:26px}.tl-hand .cd{cursor:pointer}.tl-hand .cd.selected{transform:translateY(-12px);outline:3px solid #ffd43b}.tl-table .cz-hand .cd{position:relative}.tl-table .cz-hand .cd+.cd{margin-inline-start:-18px}

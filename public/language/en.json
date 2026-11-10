@@ -297,7 +297,7 @@
     "lib.game.fullscreen": "Full screen",
     "lib.game.exitFullscreen": "Exit full screen",
     "share.label": "Share",
-    "lib.arcade.aiNoMove": "The computer has no legal move — your turn.",
+    "lib.arcade.aiNoMove": "The computer cannot move.",
     "lib.arcade.autoFinish": "Auto-finish",
     "lib.arcade.best": "Best: {n}",
     "lib.arcade.blocksBoard": "Falling blocks board",
@@ -627,7 +627,23 @@
     "lib.arcade.note.jigsaw": "The picture is cut into pieces and shuffled. Tap one piece, then another, to swap them, and rebuild the picture shown as the reference. Pieces in the right place get a green border. Higher levels have more pieces.",
     "lib.arcade.jgRef": "Reference picture",
     "lib.arcade.jgPlaced": "In place: {a}/{b}",
-    "lib.arcade.golfStrokes": "Strokes: {n}/{t} (par {p})"
+    "lib.arcade.golfStrokes": "Strokes: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "You play the white checkers, moving from the top right around to the bottom right (your home). Roll the dice, click the checker you want to move, then click a highlighted destination. Landing on a point with exactly one opposing checker hits it onto the middle bar, and that player must bring it back in first. You cannot land on a point with two or more opposing checkers. Once all 15 of your checkers are in your home board (the last 6 points) you may bear them off. The first to bear off all 15 wins.",
+    "lib.arcade.bgRoll": "Roll the dice",
+    "lib.arcade.bgOff": "Bear off",
+    "lib.arcade.bgRollFirst": "Roll the dice",
+    "lib.arcade.bgInfo": "Off: you {a} · computer {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "You have no legal move left.",
+    "lib.arcade.note.tienlen": "Four players, 13 cards each. Card order from low to high: 3, 4, … K, A, 2; suits from low to high: spades, clubs, diamonds, hearts. Whoever holds the 3 of spades goes first. Play a single card, a pair, three of a kind, four of a kind, or a run of 3 or more consecutive cards (no 2s). The next player must play the same type and higher, or pass; four of a kind can beat a single 2 or a pair of 2s. When everyone else passes, the last player to play may lead anything. First to empty their hand wins. Select cards, then press Play.",
+    "lib.arcade.tlPlay": "Play",
+    "lib.arcade.tlPass": "Pass",
+    "lib.arcade.tlClear": "Clear selection",
+    "lib.arcade.tlPassed": "passed",
+    "lib.arcade.tlFree": "Table empty — you may lead anything",
+    "lib.arcade.tlLeft": "Cards left: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passes.",
+    "lib.arcade.tlBad": "The selected cards do not form a valid set.",
+    "lib.arcade.tlLow": "This set is not high enough to beat the table."
   },
   "pages": {
     "home": {
@@ -1364,6 +1380,14 @@
     "mini-golf": {
       "name": "Mini Golf",
       "desc": "Pull back and release to putt the ball into the hole within the stroke limit; 10 courses with walls and sand."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Roll the dice, race your checkers home and bear them off before the computer, hitting its blots on the way; 10 levels."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Thirteen)",
+      "desc": "The Vietnamese shedding card game for four: play singles, pairs, runs and fours to empty your hand first; 10 levels."
     }
   },
   "s": {

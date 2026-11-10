@@ -206,6 +206,8 @@ const PATHS: Record<string, string> = {
   'tile-connect': '<path d="M4 6h5v5H4zM15 13h5v5h-5zM9 8.5h4.5V15.5H15"/>',
   'jigsaw': '<path d="M5 5h5a2 2 0 114 0h5v5a2 2 0 100 4v5h-5a2 2 0 10-4 0H5v-5a2 2 0 100-4z"/>',
   'mini-golf': '<circle cx="8" cy="18" r="2"/><path d="M10 18h10M16 18V4l-5 3 5 3"/>',
+  'backgammon': '<path d="M4 4l4 16 4-16 4 16 4-16"/>',
+  'tien-len': '<path d="M6 17l6-12 6 12M9 13h6"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

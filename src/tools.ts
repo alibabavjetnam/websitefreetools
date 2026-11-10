@@ -216,6 +216,8 @@ export const TOOLS: ToolInfo[] = [
   tool('tile-connect', 'entertainment', 'Nối cặp (kiểu Onet)', 'Nối hai ô giống nhau bằng đường không quá 2 góc rẽ để xoá hết bàn trước khi hết giờ; 10 cấp.'),
   tool('jigsaw', 'entertainment', 'Ghép hình', 'Đổi chỗ các mảnh bị xáo trộn để ghép lại bức tranh; 10 cấp từ 3x3 đến 6x6 mảnh.'),
   tool('mini-golf', 'entertainment', 'Golf mini', 'Kéo và thả để đánh bóng vào lỗ trong số gậy giới hạn; 10 sân có tường và cát.'),
+  tool('backgammon', 'entertainment', 'Backgammon (Cờ xúc xắc)', 'Tung xúc xắc, đưa quân về nhà và ra khỏi bàn trước máy, bắt quân lẻ của đối phương; 10 cấp.'),
+  tool('tien-len', 'entertainment', 'Tiến lên', 'Bài tiến lên 4 người: đánh lẻ, đôi, dãy, tứ quý để hết bài trước; 10 cấp, máy khôn dần.'),
   tool('typing-test', 'device', 'Kiểm tra tốc độ gõ phím', 'Đo tốc độ gõ (từ/phút) và độ chính xác trong 30 giây đến 5 phút, có bài tiếng Việt và tiếng Anh.'),
   tool('cps-test', 'device', 'Đo tốc độ click chuột (CPS)', 'Đếm số lần click mỗi giây trong 1 đến 60 giây, lưu kỷ lục, thử cả phím cách và chạm màn hình.'),
   tool('webcam-test', 'device', 'Kiểm tra webcam', 'Kiểm tra camera có hoạt động không, xem độ phân giải, khung hình/giây, chọn camera, chụp ảnh thử.'),

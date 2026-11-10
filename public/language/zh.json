@@ -297,7 +297,7 @@
     "lib.game.fullscreen": "全屏",
     "lib.game.exitFullscreen": "退出全屏",
     "share.label": "分享",
-    "lib.arcade.aiNoMove": "电脑无处可下，轮到你了。",
+    "lib.arcade.aiNoMove": "电脑无法行棋。",
     "lib.arcade.autoFinish": "自动收牌",
     "lib.arcade.best": "最高分：{n}",
     "lib.arcade.blocksBoard": "方块下落棋盘",
@@ -627,7 +627,23 @@
     "lib.arcade.note.jigsaw": "图片被切成小块并打乱。点击一块，再点击另一块来交换位置，拼回参考图。位置正确的小块会有绿色边框。关卡越高，小块越多。",
     "lib.arcade.jgRef": "参考图",
     "lib.arcade.jgPlaced": "已就位：{a}/{b}",
-    "lib.arcade.golfStrokes": "杆数：{n}/{t}（标准杆 {p}）"
+    "lib.arcade.golfStrokes": "杆数：{n}/{t}（标准杆 {p}）",
+    "lib.arcade.note.backgammon": "你执白棋，从右上角出发绕盘一圈，到右下角（你的家）。掷骰子，点击要移动的棋子，再点击高亮的目标点。落在恰好只有 1 枚对方棋子的点上会将其打到中间的横杠上，对方须先把它重新进场。不能落在有 2 枚及以上对方棋子的点上。15 枚棋子全部进入你的家（最后 6 个点）后即可出棋。先把 15 枚全部出完者获胜。",
+    "lib.arcade.bgRoll": "掷骰子",
+    "lib.arcade.bgOff": "出棋",
+    "lib.arcade.bgRollFirst": "请掷骰子",
+    "lib.arcade.bgInfo": "已出：你 {a} · 电脑 {b} · 点数：{c} / {d}",
+    "lib.arcade.youNoMove": "你没有可走的合法步了。",
+    "lib.arcade.note.tienlen": "四人游戏，每人 13 张。牌的大小从小到大为：3、4、……K、A、2；花色从小到大为：黑桃、梅花、方块、红桃。持黑桃 3 的人先出。可出单张、对子、三条、四条，或 3 张及以上的连续顺子（不含 2）。下家必须出同类型且更大的牌，或选择不要；四条可以打单张 2 或一对 2。其他人都不要后，最后出牌者可以任意领出。先出完手牌者获胜。选好牌后点击“出牌”。",
+    "lib.arcade.tlPlay": "出牌",
+    "lib.arcade.tlPass": "不要",
+    "lib.arcade.tlClear": "取消选择",
+    "lib.arcade.tlPassed": "不要",
+    "lib.arcade.tlFree": "桌面为空 — 你可以任意领出",
+    "lib.arcade.tlLeft": "剩余：{a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} 不要。",
+    "lib.arcade.tlBad": "所选的牌不能构成有效牌型。",
+    "lib.arcade.tlLow": "这组牌不够大，无法压过桌面上的牌。"
   },
   "pages": {
     "home": {
@@ -1364,6 +1380,14 @@
     "mini-golf": {
       "name": "迷你高尔夫",
       "desc": "拉动并松开推杆，在杆数限制内把球打进洞；共 10 个球场，有墙壁和沙地。"
+    },
+    "backgammon": {
+      "name": "西洋双陆棋（Backgammon）",
+      "desc": "掷骰子把棋子走回家并抢在电脑之前全部出棋，途中可以打掉对方落单的棋子；共 10 关。"
+    },
+    "tien-len": {
+      "name": "越南十三张（Tiến Lên）",
+      "desc": "越南流行的四人出牌游戏：用单张、对子、顺子和四条抢先出完手牌；共 10 关。"
     }
   },
   "s": {

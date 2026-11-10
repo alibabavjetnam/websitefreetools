@@ -297,7 +297,7 @@
     "lib.game.fullscreen": "Toàn màn hình",
     "lib.game.exitFullscreen": "Thoát toàn màn hình",
     "share.label": "Chia sẻ",
-    "lib.arcade.aiNoMove": "Máy không còn chỗ đặt, đến lượt bạn.",
+    "lib.arcade.aiNoMove": "Máy không đi được.",
     "lib.arcade.autoFinish": "Tự đưa bài lên",
     "lib.arcade.best": "Kỷ lục: {n}",
     "lib.arcade.blocksBoard": "Bàn xếp gạch",
@@ -627,7 +627,23 @@
     "lib.arcade.ckGrandma": "Bà nướng bánh",
     "lib.arcade.ckFarm": "Trang trại",
     "lib.arcade.ckMine": "Mỏ đường",
-    "lib.arcade.ckFactory": "Nhà máy"
+    "lib.arcade.ckFactory": "Nhà máy",
+    "lib.arcade.bgRoll": "Tung xúc xắc",
+    "lib.arcade.bgOff": "Đưa quân ra",
+    "lib.arcade.note.backgammon": "Bạn cầm quân trắng, đi từ góc trên bên phải vòng xuống góc dưới bên phải (về nhà). Tung xúc xắc rồi bấm quân muốn đi và bấm ô đích sáng lên. Đáp xuống ô có đúng 1 quân đối phương thì bắt quân đó vào thanh giữa, đối phương phải đưa quân trở lại trước. Không đáp được vào ô có từ 2 quân đối phương. Khi cả 15 quân đã về nhà (6 ô cuối) thì được đưa quân ra khỏi bàn. Ai đưa hết 15 quân ra trước là thắng.",
+    "lib.arcade.bgInfo": "Ra: bạn {a} · máy {b} · Pip: {c} / {d}",
+    "lib.arcade.bgRollFirst": "Hãy tung xúc xắc",
+    "lib.arcade.youNoMove": "Bạn không còn nước đi hợp lệ.",
+    "lib.arcade.tlPlay": "Đánh bài",
+    "lib.arcade.tlPass": "Bỏ lượt",
+    "lib.arcade.tlClear": "Bỏ chọn",
+    "lib.arcade.note.tienlen": "Bốn người, mỗi người 13 lá; thứ tự lá từ nhỏ đến lớn: 3, 4, … K, A, 2; chất từ nhỏ đến lớn: bích, chuồn, rô, cơ. Người có 3 bích đi trước. Đánh một lá, đôi, sám (3 lá), tứ quý hoặc dãy từ 3 lá liên tiếp (không có 2). Người sau phải đánh cùng loại và lớn hơn, hoặc bỏ lượt; tứ quý chặt được một lá 2 hoặc đôi 2. Khi mọi người bỏ lượt, người đánh cuối được đánh bất kỳ. Ai hết bài trước là thắng; chọn các lá rồi bấm Đánh bài.",
+    "lib.arcade.tlPassed": "bỏ lượt",
+    "lib.arcade.tlFree": "Bàn trống — bạn dẫn bài tự do",
+    "lib.arcade.tlLeft": "Còn lại: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} bỏ lượt.",
+    "lib.arcade.tlBad": "Các lá chọn chưa tạo thành bộ hợp lệ.",
+    "lib.arcade.tlLow": "Bộ này chưa đủ lớn để đánh trên bàn."
   },
   "pages": {
     "home": {
@@ -1688,6 +1704,14 @@
     "mini-golf": {
       "name": "Golf mini",
       "desc": "Kéo và thả để đánh bóng vào lỗ trong số gậy giới hạn; 10 sân có tường và cát."
+    },
+    "backgammon": {
+      "name": "Backgammon (Cờ xúc xắc)",
+      "desc": "Tung xúc xắc, đưa quân về nhà và ra khỏi bàn trước máy, bắt quân lẻ của đối phương; 10 cấp."
+    },
+    "tien-len": {
+      "name": "Tiến lên",
+      "desc": "Bài tiến lên 4 người: đánh lẻ, đôi, dãy, tứ quý để hết bài trước; 10 cấp, máy khôn dần."
     }
   },
   "s": {

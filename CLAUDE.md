@@ -130,6 +130,11 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - Không làm: đoán quốc kỳ (Windows không vẽ cờ emoji), đố vui (cần kho câu hỏi dịch 100 ngôn ngữ)
 - Còn lại: bài (tiến lên, phỏm, Yukon, Cribbage, mậu binh), cờ (Shogi, Backgammon, cờ nhảy, Janggi), pinball, thủ thành, Tangram, tô màu theo số
 
+## Game đợt 10 (10/11/2026) — Backgammon, Tiến lên
+- `backgammon` (SVG, luật đầy đủ: bắt quân, thanh giữa, đưa quân ra, bắt buộc dùng đủ xúc xắc — người chơi bị lọc nước đi bằng `bgMaxLen`; máy duyệt mọi chuỗi nước và chấm bằng heuristic pip/blot/điểm đã làm; cấp 10 thắng cấp 1 17/20), `tien-len` (4 người, đơn/đôi/sám/tứ quý/dãy, tứ quý chặt 2; **chưa có chặt đôi thông**, **không bắt buộc đánh 3♠ ở nước đầu**). Lõi `src/calc/games10.ts`, giao diện `src/lib/cards10-ui.ts`. Đặt sau `mini-golf`. Tổng site: 167 công cụ
+- Dịch: vi/en/ja/zh xong (17 khoá + 2 tên/mô tả); nguồn /tmp/claude-0/gm/b10_source_en.json
+- Còn lại: phỏm, Yukon, Cribbage, mậu binh, Shogi, cờ nhảy, Janggi, pinball, thủ thành, Tangram, tô màu theo số
+
 ## Chơi online cờ vua / cờ tướng / cờ úp / cờ vây (09/11/2026)
 - Mỗi game có 2 tab trong cùng trang: "Đánh với máy" và "Chơi với người" (`modeTabs` trong `src/lib/game-ui.ts`). Cờ úp `co-up` là game riêng (lõi `src/calc/xiangqi-dark.ts`: quân úp đi theo vị trí, sĩ/tượng đã lật đi khắp bàn, máy dùng determinization + alpha-beta)
 - Online qua broker MQTT công cộng (`wss://broker.emqx.io:8084/mqtt`, dự phòng HiveMQ; thử nghiệm đặt `localStorage 'wft:mqtt-url'`), client MQTT 3.1.1 tự viết `src/lib/mqtt.ts`, phòng `src/lib/online.ts` (topic = băm mã bàn, nội dung AES-GCM khoá suy từ mã bàn). Bàn công khai: tin retained ở `wft/g1/<game>/lobby/...`, xoá bằng LWT khi rời; bàn riêng: link `?id=<guid>`. Khôi phục khi tải lại trang (sessionStorage `wft:room:<id>`). Đăng nhập Google → lưu JSON ván vào Drive `WFTools/Games` (`src/lib/game-history.ts`)
