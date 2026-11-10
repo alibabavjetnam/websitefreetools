@@ -208,6 +208,8 @@ const PATHS: Record<string, string> = {
   'mini-golf': '<circle cx="8" cy="18" r="2"/><path d="M10 18h10M16 18V4l-5 3 5 3"/>',
   'backgammon': '<path d="M4 4l4 16 4-16 4 16 4-16"/>',
   'tien-len': '<path d="M6 17l6-12 6 12M9 13h6"/>',
+  'tower-defense': '<path d="M6 21V8l3 2V5h6v5l3-2v13zM10 21v-5h4v5"/>',
+  'color-by-number': '<path d="M12 3a9 9 0 100 18c1.5 0 2-1 1.5-2s0-2 1.5-2h2a3 3 0 003-3c0-5-4-11-8-11zM8 11h.01M12 8h.01M16 11h.01"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

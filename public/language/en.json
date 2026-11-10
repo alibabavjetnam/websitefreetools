@@ -643,7 +643,12 @@
     "lib.arcade.tlLeft": "Cards left: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} passes.",
     "lib.arcade.tlBad": "The selected cards do not form a valid set.",
-    "lib.arcade.tlLow": "This set is not high enough to beat the table."
+    "lib.arcade.tlLow": "This set is not high enough to beat the table.",
+    "lib.arcade.note.td": "Tap an empty square (not the path) to build a shooting tower, which costs gold; tap a tower again to upgrade it (up to level 5). Towers automatically shoot the enemy that has gone farthest within range. Defeat enemies to earn more gold; if 15 enemies reach the end you lose. Survive every wave to clear the level.",
+    "lib.arcade.tdInfo": "Gold: {g} · Wave {w}/{t}",
+    "lib.arcade.tdCost": "Tower: {n}",
+    "lib.arcade.note.colorNum": "Every square has a number matching a color in the palette. Pick a color, then tap the squares with that number to paint them; tapping with the wrong color paints nothing. Paint every square correctly to finish the picture. Higher levels have more colors.",
+    "lib.arcade.cnWrong": "Wrong color — check the number on the square."
   },
   "pages": {
     "home": {
@@ -1388,6 +1393,14 @@
     "tien-len": {
       "name": "Tiến Lên (Thirteen)",
       "desc": "The Vietnamese shedding card game for four: play singles, pairs, runs and fours to empty your hand first; 10 levels."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Build and upgrade towers along the path to stop every wave of enemies; 10 levels on three different maps."
+    },
+    "color-by-number": {
+      "name": "Color by Number",
+      "desc": "Paint each square with the color that matches its number to reveal the picture; 10 pictures with more colors each time."
     }
   },
   "s": {

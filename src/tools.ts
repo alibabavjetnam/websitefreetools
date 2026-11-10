@@ -218,6 +218,8 @@ export const TOOLS: ToolInfo[] = [
   tool('mini-golf', 'entertainment', 'Golf mini', 'Kéo và thả để đánh bóng vào lỗ trong số gậy giới hạn; 10 sân có tường và cát.'),
   tool('backgammon', 'entertainment', 'Backgammon (Cờ xúc xắc)', 'Tung xúc xắc, đưa quân về nhà và ra khỏi bàn trước máy, bắt quân lẻ của đối phương; 10 cấp.'),
   tool('tien-len', 'entertainment', 'Tiến lên', 'Bài tiến lên 4 người: đánh lẻ, đôi, dãy, tứ quý để hết bài trước; 10 cấp, máy khôn dần.'),
+  tool('tower-defense', 'entertainment', 'Thủ thành (Tower Defense)', 'Đặt và nâng cấp tháp bắn dọc đường đi để chặn mọi đợt kẻ địch; 10 cấp trên 3 bản đồ.'),
+  tool('color-by-number', 'entertainment', 'Tô màu theo số', 'Tô mỗi ô bằng màu ứng với con số để hiện ra bức tranh; 10 tranh, càng lên cấp càng nhiều màu.'),
   tool('typing-test', 'device', 'Kiểm tra tốc độ gõ phím', 'Đo tốc độ gõ (từ/phút) và độ chính xác trong 30 giây đến 5 phút, có bài tiếng Việt và tiếng Anh.'),
   tool('cps-test', 'device', 'Đo tốc độ click chuột (CPS)', 'Đếm số lần click mỗi giây trong 1 đến 60 giây, lưu kỷ lục, thử cả phím cách và chạm màn hình.'),
   tool('webcam-test', 'device', 'Kiểm tra webcam', 'Kiểm tra camera có hoạt động không, xem độ phân giải, khung hình/giây, chọn camera, chụp ảnh thử.'),

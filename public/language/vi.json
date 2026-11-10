@@ -643,7 +643,12 @@
     "lib.arcade.tlLeft": "Còn lại: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} bỏ lượt.",
     "lib.arcade.tlBad": "Các lá chọn chưa tạo thành bộ hợp lệ.",
-    "lib.arcade.tlLow": "Bộ này chưa đủ lớn để đánh trên bàn."
+    "lib.arcade.tlLow": "Bộ này chưa đủ lớn để đánh trên bàn.",
+    "lib.arcade.tdInfo": "Vàng: {g} · Đợt {w}/{t}",
+    "lib.arcade.tdCost": "Tháp: {n}",
+    "lib.arcade.note.colorNum": "Mỗi ô có một con số ứng với một màu trong bảng màu. Chọn màu rồi bấm vào các ô mang số đó để tô; bấm sai màu thì ô sẽ không được tô. Tô đúng hết các ô để hoàn thành bức tranh. Cấp càng cao càng nhiều màu và nhiều ô.",
+    "lib.arcade.cnWrong": "Sai màu rồi — kiểm tra lại con số trên ô.",
+    "lib.arcade.note.td": "Chạm vào ô trống (không phải đường đi) để đặt tháp bắn, tốn vàng; chạm lại vào tháp để nâng cấp (tối đa cấp 5). Tháp tự bắn kẻ địch đi xa nhất trong tầm. Tiêu diệt kẻ địch để nhận thêm vàng; để lọt 15 kẻ địch về đích là thua. Sống sót qua mọi đợt để qua cấp."
   },
   "pages": {
     "home": {
@@ -1712,6 +1717,14 @@
     "tien-len": {
       "name": "Tiến lên",
       "desc": "Bài tiến lên 4 người: đánh lẻ, đôi, dãy, tứ quý để hết bài trước; 10 cấp, máy khôn dần."
+    },
+    "tower-defense": {
+      "name": "Thủ thành (Tower Defense)",
+      "desc": "Đặt và nâng cấp tháp bắn dọc đường đi để chặn mọi đợt kẻ địch; 10 cấp trên 3 bản đồ."
+    },
+    "color-by-number": {
+      "name": "Tô màu theo số",
+      "desc": "Tô mỗi ô bằng màu ứng với con số để hiện ra bức tranh; 10 tranh, càng lên cấp càng nhiều màu."
     }
   },
   "s": {

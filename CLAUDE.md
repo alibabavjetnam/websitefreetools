@@ -135,6 +135,12 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - Dịch: vi/en/ja/zh xong (17 khoá + 2 tên/mô tả); nguồn /tmp/claude-0/gm/b10_source_en.json
 - Còn lại: phỏm, Yukon, Cribbage, mậu binh, Shogi, cờ nhảy, Janggi, pinball, thủ thành, Tangram, tô màu theo số
 
+## Game đợt 11 (10/11/2026) — Thủ thành, Tô màu theo số
+- `tower-defense` (canvas, 3 bản đồ theo cấp, tháp nâng tới cấp 5, bot thử: cấp 1-7 thắng, 9-10 thua; lõi `src/calc/arcade11.ts`), `color-by-number` (10 tranh 10x10 viết bằng chuỗi ký tự trong `PICS`, màu tăng dần; gợi ý tô ô kế tiếp). Giao diện `src/lib/fun11-ui.ts`. Đặt sau `tien-len`. Tổng site: 169 công cụ
+- Dịch: vi/en/ja/zh xong (5 khoá + 2 tên/mô tả); nguồn /tmp/claude-0/gm/b11_source_en.json
+- Dịch hàng loạt (đợt 4-11, các ngôn ngữ còn thiếu): `srcall/<mã>.json` (khoá còn thiếu từng ngôn ngữ) → agent ghi `outall/<mã>.json` → `python3 /tmp/claude-0/gm/mergeall.py` (kiểm placeholder rồi gộp)
+- Còn lại: phỏm, Yukon, Cribbage, mậu binh, Shogi, cờ nhảy, Janggi, pinball, Tangram
+
 ## Chơi online cờ vua / cờ tướng / cờ úp / cờ vây (09/11/2026)
 - Mỗi game có 2 tab trong cùng trang: "Đánh với máy" và "Chơi với người" (`modeTabs` trong `src/lib/game-ui.ts`). Cờ úp `co-up` là game riêng (lõi `src/calc/xiangqi-dark.ts`: quân úp đi theo vị trí, sĩ/tượng đã lật đi khắp bàn, máy dùng determinization + alpha-beta)
 - Online qua broker MQTT công cộng (`wss://broker.emqx.io:8084/mqtt`, dự phòng HiveMQ; thử nghiệm đặt `localStorage 'wft:mqtt-url'`), client MQTT 3.1.1 tự viết `src/lib/mqtt.ts`, phòng `src/lib/online.ts` (topic = băm mã bàn, nội dung AES-GCM khoá suy từ mã bàn). Bàn công khai: tin retained ở `wft/g1/<game>/lobby/...`, xoá bằng LWT khi rời; bàn riêng: link `?id=<guid>`. Khôi phục khi tải lại trang (sessionStorage `wft:room:<id>`). Đăng nhập Google → lưu JSON ván vào Drive `WFTools/Games` (`src/lib/game-history.ts`)

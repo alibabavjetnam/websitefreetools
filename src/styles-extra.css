@@ -1789,3 +1789,8 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .bg-svg{display:block;width:min(100%,640px);height:auto;margin:0 auto;border-radius:8px;user-select:none}.bg-pt{cursor:pointer}.bg-pt.dst polygon{filter:brightness(1.35)}.bg-pt.sel polygon{filter:brightness(1.25)}.bg-can{stroke:#fab005;stroke-width:3}
 .bg-dice{display:flex;gap:10px;justify-content:center;margin-top:8px;min-height:44px}.bg-die{width:42px;height:42px;border-radius:8px;background:#fff;border:2px solid #343a40;display:flex;align-items:center;justify-content:center;font:700 22px inherit;color:#212529}
 .tl-board{min-height:420px}.tl-opps{display:flex;flex-wrap:wrap;gap:10px 18px}.tl-opp.active .cz-lbl{color:#ffd43b}.tl-opp .cz-hand{--cw:26px}.tl-hand .cd{cursor:pointer}.tl-hand .cd.selected{transform:translateY(-12px);outline:3px solid #ffd43b}.tl-table .cz-hand .cd{position:relative}.tl-table .cz-hand .cd+.cd{margin-inline-start:-18px}
+
+/* ── Tô màu theo số ── */
+.cn-grid{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:1px;width:min(100%,460px);margin:0 auto;background:#ced4da;border:1px solid #ced4da}
+.cn-c,.cn-e{aspect-ratio:1;background:#fff;border:0;padding:0;font:600 clamp(10px,2.6vw,16px) inherit;color:#868e96;cursor:pointer}.cn-e{background:#f1f3f5}.cn-c.hl{background:#fff3bf}.cn-c.done{color:transparent}
+.cn-pal{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}.cn-sw{width:44px;height:44px;border-radius:8px;border:3px solid transparent;cursor:pointer;color:#fff;font:700 18px inherit;text-shadow:0 1px 2px rgba(0,0,0,.6)}.cn-sw.sel{border-color:#212529;transform:scale(1.08)}
