@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Izberite barvo, da zapolnite vse svoje območje v zgornjem levem kotu; požre sosednja polja te barve. V dovoljenem številu potez naredite celotno ploščo enobarvno.",
     "lib.arcade.note.mastermind": "Računalnik skrije vrsto barv. Izberite barvo za vsak položaj, nato pritisnite Ugibaj. Črn količek = prava barva na pravem mestu; bel količek = prava barva na napačnem mestu. Odkrijte kodo, preden vam zmanjka poskusov.",
     "lib.arcade.note.hanoi": "Prestavite vse diske na zadnji količek. Vsakič premaknite le zgornji disk količka in nikoli ne postavite večjega diska na manjšega. Kliknite izvorni količek, nato ciljnega.",
-    "lib.arcade.note.pipes": "Kliknite ploščico, da cev zavrtite za 90°. Povežite vse cevi v eno omrežje brez odprtih koncev (odprti konci so rdeči)."
+    "lib.arcade.note.pipes": "Kliknite ploščico, da cev zavrtite za 90°. Povežite vse cevi v eno omrežje brez odprtih koncev (odprti konci so rdeči).",
+    "lib.arcade.pongScore": "Ti {a} – {b} računalnik (prvi do {t})",
+    "lib.arcade.kills": "Uničeno: {n}/{t}",
+    "lib.arcade.rocksLeft": "Še {n} skal",
+    "lib.arcade.timeLeft": "Še {n} s",
+    "lib.arcade.stepsN": "Korakov: {n}",
+    "lib.arcade.crossed": "Doma: {n}/{t}",
+    "lib.arcade.pipes": "Prečkanih cevi: {n}/{t}",
+    "lib.arcade.distance": "Razdalja: {n}/{t} m",
+    "lib.arcade.speedN": "Hitrost: {n}",
+    "lib.arcade.note.whack-a-mole": "Krti silijo iz lukenj — klikni ali tapni krta, da ga udariš. Udari dovolj krtov, preden poteče čas. Od 4. stopnje naprej so tu bombe: zadetek bombe odšteje točke.",
+    "lib.arcade.hole": "Luknja",
+    "lib.arcade.hitsN": "Udarcev: {n}/{t}",
+    "lib.arcade.note.simon": "Igra predvaja zaporedje barv in zvokov — ponovi ga v enakem vrstnem redu. Vsak krog doda še en korak. Zapomni si zahtevano dolžino, da opraviš stopnjo. Od 7. stopnje naprej je 6 tipk.",
+    "lib.arcade.seqN": "Zaporedje: {n}/{t}",
+    "lib.arcade.watch": "Glej …",
+    "lib.arcade.yourTurnShort": "Tvoj krog",
+    "lib.arcade.note.aim-trainer": "Tarče se pojavljajo naključno in hitro izginejo — zadeni jih čim več. Postajajo manjše in hitrejše. Zadeni dovolj tarč z največ 5 zgrešenimi, da opraviš stopnjo.",
+    "lib.arcade.missN": "Zgrešenih: {n}/{t}",
+    "lib.arcade.answer": "Odgovor",
+    "lib.arcade.note.quick-math": "Računaj v glavi čim hitreje: vpiši odgovor in pritisni Enter. Vsako vprašanje ima časovno omejitev; napačen odgovor ali iztek časa stane življenje (imaš jih 3). Pravilno odgovori na dovolj vprašanj, da opraviš stopnjo.",
+    "lib.arcade.correctN": "Pravilnih: {n}/{t}",
+    "lib.arcade.note.reaction": "Počakaj, da zaslon pozeleni, nato klikni čim hitreje. Prezgodnji klik je prekršek (po 3 prekrških izgubiš). Tvoje povprečje v 5 krogih mora premagati omejitev stopnje.",
+    "lib.arcade.roundN": "Krog {n}/{t}",
+    "lib.arcade.limitMs": "Omejitev: {n} ms",
+    "lib.arcade.rxWait": "Počakaj na zeleno …",
+    "lib.arcade.rxGo": "KLIKNI!",
+    "lib.arcade.rxEarly": "Prezgodaj!",
+    "lib.arcade.gameArea": "Igralna površina",
+    "lib.arcade.note.pong": "Z gibanjem miške, vlečenjem prsta ali tipkama ← → upravljaj spodnji lopar. Žogico spusti mimo računalnika; zmaga prvi s 5 točkami. Žogica se pospeši ob vsakem udarcu.",
+    "lib.arcade.note.space-shooter": "Z gibanjem miške, vlečenjem prsta ali tipkama ← → krmili; ladja strelja samodejno. Uniči dovolj sovražnih ladij, da opraviš stopnjo, in se izogibaj trkom in sovražnemu ognju. Imaš 3 življenja.",
+    "lib.arcade.note.asteroids": "← → vrtita ladjo, ↑ potiska naprej, preslednica strelja. Uniči vse skale, da opraviš stopnjo; velike skale se razdelijo na manjše. Ladja se z roba zaslona pojavi na nasprotni strani. Imaš 3 življenja.",
+    "lib.arcade.note.maze": "S smernimi tipkami (ali s potegom ali z gumbi) pridi od zelene pike do rdeče zastavice, preden poteče čas. Od 5. stopnje naprej je labirint v megli: vidiš le okolico, obiskana območja pa se zapomnijo.",
+    "lib.arcade.note.road-cross": "S smernimi tipkami, potegom ali gumbi skači z žabo od spodaj navzgor. Izogibaj se prometu; od 5. stopnje je zgornji del reka, zato skači na plavajoča debla. Pridi domov 3-krat, da opraviš stopnjo. Imaš 3 življenja.",
+    "lib.arcade.note.flappy": "Tapni igralno površino, pritisni preslednico ali ↑ za zamah s krili. Leti skozi reže med cevmi, ne da bi se dotaknil cevi, tal ali stropa. Na višjih stopnjah so reže ožje in let hitrejši.",
+    "lib.arcade.note.runner": "Tapni igralno površino, pritisni preslednico ali ↑ za skok čez kaktuse; drži ↓, da se skloniš pod visokimi pticami (ali skoči čez nizke). Teci dovolj daleč, da opraviš stopnjo. Hitrost nenehno narašča.",
+    "lib.arcade.fire": "Streljaj",
+    "lib.arcade.jump": "Skoči",
+    "lib.arcade.aimTarget": "Tarča",
+    "lib.game.soundOn": "Vklopi zvok",
+    "lib.game.soundOff": "Izklopi zvok"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate križci-krožci",
       "desc": "Križci-krožci na 9 majhnih ploščah: izbrano polje določi, kje mora igrati nasprotnik; proti računalniku v 10 stopnjah."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Žogico spusti mimo računalnika; zmaga prvi s 5 točkami. 10 stopenj z vse hitrejšim in ostrejšim nasprotnikom."
+    },
+    "space-shooter": {
+      "name": "Vesoljski strelec",
+      "desc": "Krmili ladjo, sestreli sovražne ladje in se izogibaj njihovemu ognju; 10 stopenj z večjimi valovi, povratnim ognjem in močnejšimi sovražniki."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Vrti se, poganjaj in streljaj, da razbiješ vesoljske skale; velike skale se razdelijo na manjše. 10 stopenj z več in hitrejšimi skalami."
+    },
+    "maze": {
+      "name": "Labirint",
+      "desc": "Poišči pot iz labirinta, preden poteče čas; 10 stopenj od majhnih do velikih labirintov, na višjih stopnjah z meglo."
+    },
+    "road-cross": {
+      "name": "Prečkanje ceste (v slogu Frogger)",
+      "desc": "Pelji žabo čez prometne ceste in reke z debli, da pride domov 3-krat; 10 stopenj s hitrejšim prometom in reko na višjih stopnjah."
+    },
+    "flappy": {
+      "name": "Igra v slogu Flappy Bird",
+      "desc": "Tapni za zamah s krili in leti skozi reže med cevmi; 10 stopenj z ožjimi režami in naraščajočo hitrostjo."
+    },
+    "runner": {
+      "name": "Dino tekač",
+      "desc": "Skači čez kaktuse in se skloni pod ptice; teci dovolj daleč, da opraviš vsako od 10 stopenj, medtem ko hitrost narašča."
+    },
+    "whack-a-mole": {
+      "name": "Udari krta",
+      "desc": "Udarjaj krte, ki silijo iz lukenj, preden poteče čas, in se izogibaj bombam; 10 stopenj od počasnih do zelo hitrih."
+    },
+    "simon": {
+      "name": "Simon (barve za spomin)",
+      "desc": "Zapomni si in ponovi zaporedje barv in zvokov; vse daljša zaporedja v 10 stopnjah, od 7. stopnje s 6 tipkami."
+    },
+    "aim-trainer": {
+      "name": "Trener natančnosti",
+      "desc": "Zadevaj tarče, ki se pojavljajo naključno in hitro izginejo; tarče se čez 10 stopenj manjšajo, izmeri pa se tudi tvoj reakcijski čas."
+    },
+    "quick-math": {
+      "name": "Hitra matematika",
+      "desc": "V glavi seštevaj, odštevaj, množi in deli pod časovnim pritiskom; 10 stopenj od preprostih vsot do izrazov."
+    },
+    "reaction": {
+      "name": "Test reakcijskega časa",
+      "desc": "Klikni v trenutku, ko zaslon pozeleni; tvoje povprečje v 5 krogih mora doseči omejitev vsake stopnje, ki se v 10 stopnjah zaostruje."
     }
   },
   "s": {

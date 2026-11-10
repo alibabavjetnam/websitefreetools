@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Tria un color per omplir tota l'àrea que domines a la cantonada superior esquerra; engoleix les caselles veïnes d'aquest color. Fes que tot el tauler sigui d'un sol color dins del nombre de moviments permès.",
     "lib.arcade.note.mastermind": "L'ordinador amaga una fila de colors. Tria un color per a cada posició i prem Endevina. Una clavilla negra = color correcte al lloc correcte; una clavilla blanca = color correcte al lloc incorrecte. Descobreix el codi abans de quedar-te sense intents.",
     "lib.arcade.note.hanoi": "Mou tots els discos a l'última vareta. Cada cop mou només el disc de dalt d'una vareta i no posis mai un disc més gran sobre un de més petit. Fes clic a la vareta d'origen i després a la de destinació.",
-    "lib.arcade.note.pipes": "Fes clic en una peça per girar la canonada 90°. Connecta totes les canonades en una sola xarxa sense extrems oberts (els extrems oberts es mostren en vermell)."
+    "lib.arcade.note.pipes": "Fes clic en una peça per girar la canonada 90°. Connecta totes les canonades en una sola xarxa sense extrems oberts (els extrems oberts es mostren en vermell).",
+    "lib.arcade.pongScore": "Tu {a} – {b} CPU (guanya qui arribi a {t})",
+    "lib.arcade.kills": "Destruïts: {n}/{t}",
+    "lib.arcade.rocksLeft": "Queden {n} roques",
+    "lib.arcade.timeLeft": "Queden {n} s",
+    "lib.arcade.stepsN": "Passos: {n}",
+    "lib.arcade.crossed": "A casa: {n}/{t}",
+    "lib.arcade.pipes": "Tubs superats: {n}/{t}",
+    "lib.arcade.distance": "Distància: {n}/{t} m",
+    "lib.arcade.speedN": "Velocitat: {n}",
+    "lib.arcade.note.whack-a-mole": "Les talpes surten dels forats: fes clic o toca una talpa per picar-la. Pica prou talpes abans que s'acabi el temps. A partir del nivell 4 hi ha bombes: picar-ne una et fa perdre punts.",
+    "lib.arcade.hole": "Forat",
+    "lib.arcade.hitsN": "Cops: {n}/{t}",
+    "lib.arcade.note.simon": "El joc reprodueix una seqüència de colors i sons: repeteix-la en el mateix ordre. Cada ronda s'hi afegeix un pas. Assoleix la llargada requerida per superar el nivell. A partir del nivell 7 hi ha 6 botons.",
+    "lib.arcade.seqN": "Seqüència: {n}/{t}",
+    "lib.arcade.watch": "Mira…",
+    "lib.arcade.yourTurnShort": "Et toca",
+    "lib.arcade.note.aim-trainer": "Les dianes apareixen a l'atzar i desapareixen de pressa: encerta'n tantes com puguis. Es fan més petites i més ràpides. Encerta prou dianes abans de fallar més de 5 vegades per superar el nivell.",
+    "lib.arcade.missN": "Errades: {n}/{t}",
+    "lib.arcade.answer": "Resposta",
+    "lib.arcade.note.quick-math": "Resol mentalment tan de pressa com puguis: escriu la resposta i prem Retorn. Cada pregunta té un temps límit; una resposta errònia o esgotar el temps costa una vida (en tens 3). Respon correctament prou preguntes per superar el nivell.",
+    "lib.arcade.correctN": "Correctes: {n}/{t}",
+    "lib.arcade.note.reaction": "Espera que la pantalla es posi verda i fes clic tan de pressa com puguis. Fer clic massa aviat és falta (amb 3 faltes perds). La mitjana de 5 rondes ha de millorar el límit del nivell.",
+    "lib.arcade.roundN": "Ronda {n}/{t}",
+    "lib.arcade.limitMs": "Límit: {n} ms",
+    "lib.arcade.rxWait": "Espera el verd…",
+    "lib.arcade.rxGo": "CLIC!",
+    "lib.arcade.rxEarly": "Massa aviat!",
+    "lib.arcade.gameArea": "Zona de joc",
+    "lib.arcade.note.pong": "Mou el ratolí, arrossega el dit o fes servir les tecles ← → per controlar la pala de baix. Fes passar la pilota per darrere de l'ordinador; guanya qui arribi primer a 5 punts. La pilota va més de pressa a cada cop.",
+    "lib.arcade.note.space-shooter": "Mou el ratolí, arrossega el dit o fes servir les tecles ← → per dirigir; la nau dispara automàticament. Destrueix prou naus enemigues per superar el nivell i evita col·lisions i trets enemics. Tens 3 vides.",
+    "lib.arcade.note.asteroids": "← → fan girar la nau, ↑ l'impulsa, Espai dispara. Destrueix totes les roques per superar el nivell; les roques grans es divideixen en de més petites. La nau reapareix pel costat oposat de la pantalla. Tens 3 vides.",
+    "lib.arcade.note.maze": "Fes servir les tecles de fletxa (o llisca, o els botons) per anar del punt verd a la bandera vermella abans que s'acabi el temps. A partir del nivell 5 el laberint té boira: només veus el que tens al voltant i les zones visitades es recorden.",
+    "lib.arcade.note.road-cross": "Fes servir les tecles de fletxa, llisca o els botons per fer saltar la granota de baix a dalt. Evita el trànsit; a partir del nivell 5 la part alta és un riu, així que salta als troncs flotants. Arriba a casa 3 vegades per superar el nivell. Tens 3 vides.",
+    "lib.arcade.note.flappy": "Toca la zona de joc, prem Espai o ↑ per batre les ales. Vola per les obertures entre els tubs sense tocar cap tub, el terra ni el sostre. Els nivells alts tenen obertures més estretes i un vol més ràpid.",
+    "lib.arcade.note.runner": "Toca la zona de joc, prem Espai o ↑ per saltar els cactus; mantén ↓ per ajupir-te sota els ocells alts (o salta els baixos). Corre prou lluny per superar el nivell. La velocitat no para d'augmentar.",
+    "lib.arcade.fire": "Dispara",
+    "lib.arcade.jump": "Salta",
+    "lib.arcade.aimTarget": "Diana",
+    "lib.game.soundOn": "Activa el so",
+    "lib.game.soundOff": "Desactiva el so"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Tres en ratlla definitiu",
       "desc": "Tres en ratlla en 9 taulers petits: la casella que triïs decideix on ha de jugar l'adversari; contra l'ordinador en 10 nivells."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Fes passar la pilota per darrere de l'ordinador; guanya qui arribi primer a 5 punts. 10 nivells amb un rival cada cop més ràpid i hàbil."
+    },
+    "space-shooter": {
+      "name": "Tirador espacial",
+      "desc": "Dirigeix la nau, abat les naus enemigues i esquiva els seus trets; 10 nivells amb onades més grans, foc de resposta i enemics més durs."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Gira, impulsa't i dispara per trencar les roques espacials; les roques grans es divideixen en de més petites. 10 nivells amb roques més nombroses i ràpides."
+    },
+    "maze": {
+      "name": "Laberint",
+      "desc": "Troba la sortida del laberint abans que s'acabi el temps; 10 nivells de laberints petits a grans, amb boira als nivells alts."
+    },
+    "road-cross": {
+      "name": "Travessa la carretera (estil Frogger)",
+      "desc": "Fes saltar la granota per carreteres concorregudes i rius de troncs flotants per tornar a casa 3 vegades; 10 nivells amb trànsit més ràpid i un riu als nivells alts."
+    },
+    "flappy": {
+      "name": "Joc a l'estil Flappy Bird",
+      "desc": "Toca per batre les ales i vola per les obertures entre els tubs; 10 nivells amb obertures més estretes i velocitat creixent."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Salta els cactus i ajupe't sota els ocells; corre prou lluny per superar cadascun dels 10 nivells mentre la velocitat va pujant."
+    },
+    "whack-a-mole": {
+      "name": "Pica la talpa",
+      "desc": "Pica les talpes que surten dels forats abans que s'acabi el temps i evita les bombes; 10 nivells de lents a molt ràpids."
+    },
+    "simon": {
+      "name": "Simon (colors de memòria)",
+      "desc": "Recorda i repeteix la seqüència de colors i sons; seqüències més llargues al llarg de 10 nivells, amb 6 botons a partir del nivell 7."
+    },
+    "aim-trainer": {
+      "name": "Entrenador de punteria",
+      "desc": "Encerta les dianes que apareixen a l'atzar i desapareixen de pressa; les dianes s'encongeixen al llarg de 10 nivells i es mesura el teu temps de reacció."
+    },
+    "quick-math": {
+      "name": "Càlcul ràpid",
+      "desc": "Fes mentalment sumes, restes, multiplicacions i divisions contra el rellotge; 10 nivells de sumes senzilles a expressions."
+    },
+    "reaction": {
+      "name": "Prova de reflexos",
+      "desc": "Fes clic en el moment que la pantalla es posi verda; la mitjana de 5 rondes ha de complir el límit de cada nivell, que s'estreny al llarg de 10 nivells."
     }
   },
   "s": {

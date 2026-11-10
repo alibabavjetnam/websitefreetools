@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Valitse väri täyttääksesi koko vasemmassa yläkulmassa olevan alueesi; se nielaisee saman värisiä naapuriruutuja. Tee koko laudasta yksivärinen sallitussa siirtomäärässä.",
     "lib.arcade.note.mastermind": "Tietokone piilottaa väririvin. Valitse väri jokaiseen paikkaan ja paina Arvaa. Musta tappi = oikea väri oikealla paikalla; valkoinen tappi = oikea väri väärällä paikalla. Selvitä koodi ennen kuin arvaukset loppuvat.",
     "lib.arcade.note.hanoi": "Siirrä kaikki kiekot viimeiseen tappiin. Siirrä kerrallaan vain tapin päällimmäistä kiekkoa äläkä koskaan laita isompaa kiekkoa pienemmän päälle. Napsauta ensin lähtötappia, sitten kohdetappia.",
-    "lib.arcade.note.pipes": "Napsauta laattaa kääntääksesi putkea 90°. Yhdistä kaikki putket yhdeksi verkoksi niin, ettei avoimia päitä jää (avoimet päät näkyvät punaisina)."
+    "lib.arcade.note.pipes": "Napsauta laattaa kääntääksesi putkea 90°. Yhdistä kaikki putket yhdeksi verkoksi niin, ettei avoimia päitä jää (avoimet päät näkyvät punaisina).",
+    "lib.arcade.pongScore": "Sinä {a} – {b} tietokone (ensin {t})",
+    "lib.arcade.kills": "Tuhottu: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} kiveä jäljellä",
+    "lib.arcade.timeLeft": "{n} s jäljellä",
+    "lib.arcade.stepsN": "Askelia: {n}",
+    "lib.arcade.crossed": "Kotona: {n}/{t}",
+    "lib.arcade.pipes": "Ohitettuja putkia: {n}/{t}",
+    "lib.arcade.distance": "Matka: {n}/{t} m",
+    "lib.arcade.speedN": "Nopeus: {n}",
+    "lib.arcade.note.whack-a-mole": "Myyrät nousevat koloista – napsauta tai napauta myyrää lyödäksesi sitä. Lyö riittävästi myyriä ennen kuin aika loppuu. Tasosta 4 alkaen mukana on pommeja: pommiin osuminen vie pisteitä.",
+    "lib.arcade.hole": "Kolo",
+    "lib.arcade.hitsN": "Osumia: {n}/{t}",
+    "lib.arcade.note.simon": "Peli soittaa värien ja äänten jonon – toista se samassa järjestyksessä. Joka kierroksella jonoon tulee yksi askel lisää. Muista vaadittu pituus päästäksesi tason läpi. Tasosta 7 alkaen on 6 painiketta.",
+    "lib.arcade.seqN": "Jono: {n}/{t}",
+    "lib.arcade.watch": "Katso…",
+    "lib.arcade.yourTurnShort": "Sinun vuorosi",
+    "lib.arcade.note.aim-trainer": "Kohteet ilmestyvät satunnaisesti ja katoavat nopeasti – osu niistä mahdollisimman moneen. Ne pienenevät ja nopeutuvat. Osu riittävän moneen kohteeseen enintään 5 huteja tehden päästäksesi tason läpi.",
+    "lib.arcade.missN": "Huteja: {n}/{t}",
+    "lib.arcade.answer": "Vastaus",
+    "lib.arcade.note.quick-math": "Laske päässä niin nopeasti kuin voit: kirjoita vastaus ja paina Enter. Jokaisella kysymyksellä on aikaraja; väärä vastaus tai ajan umpeutuminen maksaa elämän (niitä on 3). Vastaa oikein riittävän moneen kysymykseen päästäksesi tason läpi.",
+    "lib.arcade.correctN": "Oikein: {n}/{t}",
+    "lib.arcade.note.reaction": "Odota, että ruutu muuttuu vihreäksi, ja napsauta sitten mahdollisimman nopeasti. Liian aikaisin napsauttaminen on virhe (3 virhettä ja häviät). Viiden kierroksen keskiarvosi on alitettava tason raja.",
+    "lib.arcade.roundN": "Kierros {n}/{t}",
+    "lib.arcade.limitMs": "Raja: {n} ms",
+    "lib.arcade.rxWait": "Odota vihreää…",
+    "lib.arcade.rxGo": "NAPSAUTA!",
+    "lib.arcade.rxEarly": "Liian aikaisin!",
+    "lib.arcade.gameArea": "Peliruutu",
+    "lib.arcade.note.pong": "Ohjaa alareunan mailaa liikuttamalla hiirtä, vetämällä sormea tai nuolinäppäimillä ← →. Lyö pallo tietokoneen ohi; ensimmäinen 5 pisteeseen voittaa. Pallo nopeutuu jokaisella osumalla.",
+    "lib.arcade.note.space-shooter": "Ohjaa liikuttamalla hiirtä, vetämällä sormea tai nuolinäppäimillä ← →; aluksesi ampuu automaattisesti. Tuhoa riittävästi vihollisaluksia päästäksesi tason läpi ja vältä törmäyksiä ja vihollisen tulta. Sinulla on 3 elämää.",
+    "lib.arcade.note.asteroids": "← → kääntää alusta, ↑ työntää eteenpäin, välilyönti ampuu. Tuhoa kaikki kivet päästäksesi tason läpi; isot kivet hajoavat pienemmiksi. Alus kiertyy ruudun reunojen yli. Sinulla on 3 elämää.",
+    "lib.arcade.note.maze": "Pääse nuolinäppäimillä (tai pyyhkäisemällä tai painikkeilla) vihreästä pisteestä punaiseen lippuun ennen kuin aika loppuu. Tasosta 5 alkaen sokkelossa on sumu: näet vain ympäristösi, ja käydyt alueet muistetaan.",
+    "lib.arcade.note.road-cross": "Hyppytä sammakko alhaalta ylös nuolinäppäimillä, pyyhkäisemällä tai painikkeilla. Väistä liikennettä; tasosta 5 alkaen yläosa on joki, joten hyppää kelluville tukeille. Pääse kotiin 3 kertaa läpäistäksesi tason. Sinulla on 3 elämää.",
+    "lib.arcade.note.flappy": "Napauta peliruutua, paina välilyöntiä tai ↑ räpyttääksesi. Lennä putkien välisistä aukoista koskematta putkiin, maahan tai kattoon. Korkeammilla tasoilla aukot ovat kapeampia ja lento nopeampaa.",
+    "lib.arcade.note.runner": "Napauta peliruutua, paina välilyöntiä tai ↑ hypätäksesi kaktusten yli; pidä ↓ painettuna kumartuaksesi korkeiden lintujen alta (tai hyppää matalien yli). Juokse riittävän pitkälle päästäksesi tason läpi. Nopeus kasvaa koko ajan.",
+    "lib.arcade.fire": "Tulita",
+    "lib.arcade.jump": "Hyppää",
+    "lib.arcade.aimTarget": "Kohde",
+    "lib.game.soundOn": "Äänet päälle",
+    "lib.game.soundOff": "Äänet pois"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate-ristinolla",
       "desc": "Ristinolla 9 pienellä laudalla: valitsemasi ruutu määrää, missä vastustaja pelaa; tietokonetta vastaan 10 tasolla."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Lyö pallo tietokoneen ohi; ensimmäinen 5 pisteeseen voittaa. 10 tasoa nopeammalla ja terävämmällä vastustajalla."
+    },
+    "space-shooter": {
+      "name": "Avaruusampuja",
+      "desc": "Ohjaa aluksesi, ammu alas vihollisaluksia ja väistä niiden tulta; 10 tasoa isommilla aalloilla, vastatulella ja kovemmilla vihollisilla."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Käänny, työnnä ja ammu rikkoaksesi avaruuskivet; isot kivet hajoavat pienemmiksi. 10 tasoa yhä useammalla ja nopeammalla kivellä."
+    },
+    "maze": {
+      "name": "Sokkelo",
+      "desc": "Löydä tie ulos sokkelosta ennen kuin aika loppuu; 10 tasoa pienistä suuriin sokkeloihin, korkeammilla tasoilla sumua."
+    },
+    "road-cross": {
+      "name": "Tienylitys (Frogger-tyyliin)",
+      "desc": "Hypytä sammakko vilkkaiden teiden ja tukkijokien yli kotiin 3 kertaa; 10 tasoa nopeammalla liikenteellä ja joella korkeammilla tasoilla."
+    },
+    "flappy": {
+      "name": "Flappy Bird -tyylinen peli",
+      "desc": "Napauta räpyttääksesi ja lennä putkien välisistä aukoista; 10 tasoa kapeammilla aukoilla ja kasvavalla nopeudella."
+    },
+    "runner": {
+      "name": "Dino-juoksu",
+      "desc": "Hyppää kaktusten yli ja kumarru lintujen alta; juokse riittävän pitkälle läpäistäksesi kaikki 10 tasoa nopeuden kasvaessa."
+    },
+    "whack-a-mole": {
+      "name": "Lyö myyrää",
+      "desc": "Lyö koloista nousevia myyriä ennen kuin aika loppuu ja väistä pommit; 10 tasoa hitaasta erittäin nopeaan."
+    },
+    "simon": {
+      "name": "Simon (muistivärit)",
+      "desc": "Muista ja toista värien ja äänten jono; yhä pidempiä jonoja 10 tasolla, tasosta 7 alkaen 6 painiketta."
+    },
+    "aim-trainer": {
+      "name": "Tähtäysharjoitus",
+      "desc": "Osu satunnaisesti ilmestyviin ja nopeasti katoaviin kohteisiin; kohteet pienenevät 10 tason aikana ja reaktioaikasi mitataan."
+    },
+    "quick-math": {
+      "name": "Pikalaskenta",
+      "desc": "Laske yhteen-, vähennys-, kerto- ja jakolaskuja päässä aikapaineessa; 10 tasoa yksinkertaisista laskuista lausekkeisiin."
+    },
+    "reaction": {
+      "name": "Reaktiotesti",
+      "desc": "Napsauta heti kun ruutu muuttuu vihreäksi; viiden kierroksen keskiarvosi on täytettävä tason raja, joka kiristyy 10 tason aikana."
     }
   },
   "s": {

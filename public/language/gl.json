@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Elixe unha cor para encher toda a túa área na esquina superior esquerda; traga as celas veciñas desa cor. Fai que todo o taboleiro sexa dunha soa cor co número de movementos permitido.",
     "lib.arcade.note.mastermind": "O ordenador agocha unha fila de cores. Elixe unha cor para cada posición e preme Adiviñar. Unha ficha negra = cor correcta no sitio correcto; unha ficha branca = cor correcta no sitio equivocado. Descifra o código antes de quedar sen intentos.",
     "lib.arcade.note.hanoi": "Move todos os discos ao último poste. Move só o disco de arriba dun poste cada vez e nunca poñas un disco máis grande sobre un máis pequeno. Fai clic no poste de orixe e despois no de destino.",
-    "lib.arcade.note.pipes": "Fai clic nunha peza para xirar o tubo 90°. Conecta todos os tubos nunha soa rede sen extremos abertos (os extremos abertos móstranse en vermello)."
+    "lib.arcade.note.pipes": "Fai clic nunha peza para xirar o tubo 90°. Conecta todos os tubos nunha soa rede sen extremos abertos (os extremos abertos móstranse en vermello).",
+    "lib.arcade.pongScore": "Ti {a} – {b} ordenador (primeiro a {t})",
+    "lib.arcade.kills": "Destruídos: {n}/{t}",
+    "lib.arcade.rocksLeft": "Quedan {n} rochas",
+    "lib.arcade.timeLeft": "Quedan {n} s",
+    "lib.arcade.stepsN": "Pasos: {n}",
+    "lib.arcade.crossed": "A casa: {n}/{t}",
+    "lib.arcade.pipes": "Tubos pasados: {n}/{t}",
+    "lib.arcade.distance": "Distancia: {n}/{t} m",
+    "lib.arcade.speedN": "Velocidade: {n}",
+    "lib.arcade.note.whack-a-mole": "As toupas saen dos buracos: fai clic ou toca unha toupa para golpeala. Golpea toupas dabondo antes de que se acabe o tempo. Desde o nivel 4 hai bombas: se golpeas unha, perdes puntos.",
+    "lib.arcade.hole": "Buraco",
+    "lib.arcade.hitsN": "Golpes: {n}/{t}",
+    "lib.arcade.note.simon": "O xogo reproduce unha secuencia de cores e sons: repíteo na mesma orde. Cada rolda engade un paso máis. Lembra a lonxitude necesaria para superar o nivel. Desde o nivel 7 hai 6 botóns.",
+    "lib.arcade.seqN": "Secuencia: {n}/{t}",
+    "lib.arcade.watch": "Mira…",
+    "lib.arcade.yourTurnShort": "Túa quenda",
+    "lib.arcade.note.aim-trainer": "Os obxectivos aparecen ao chou e esvaecen axiña: acerta cantos poidas. Cada vez son máis pequenos e rápidos. Acerta obxectivos dabondo con máximo 5 fallos para superar o nivel.",
+    "lib.arcade.missN": "Fallos: {n}/{t}",
+    "lib.arcade.answer": "Resposta",
+    "lib.arcade.note.quick-math": "Resolve de cabeza o máis rápido que poidas: escribe a resposta e preme Intro. Cada pregunta ten un límite de tempo; unha resposta errada ou quedar sen tempo custa unha vida (tes 3). Responde ben preguntas dabondo para superar o nivel.",
+    "lib.arcade.correctN": "Correctas: {n}/{t}",
+    "lib.arcade.note.reaction": "Agarda a que a pantalla se poña verde e fai clic o máis rápido que poidas. Facer clic cedo de máis é falta (con 3 faltas perdes). A túa media en 5 roldas ten que superar o límite do nivel.",
+    "lib.arcade.roundN": "Rolda {n}/{t}",
+    "lib.arcade.limitMs": "Límite: {n} ms",
+    "lib.arcade.rxWait": "Agarda o verde…",
+    "lib.arcade.rxGo": "CLIC!",
+    "lib.arcade.rxEarly": "Demasiado cedo!",
+    "lib.arcade.gameArea": "Zona de xogo",
+    "lib.arcade.note.pong": "Move o rato, arrastra o dedo ou usa as teclas ← → para controlar a pala de abaixo. Pasa a bola máis alá do ordenador; gaña quen primeiro faga 5 puntos. A bola vai máis rápida con cada golpe.",
+    "lib.arcade.note.space-shooter": "Move o rato, arrastra o dedo ou usa as teclas ← → para dirixir; a túa nave dispara soa. Destrúe naves inimigas dabondo para superar o nivel e evita colisións e o lume inimigo. Tes 3 vidas.",
+    "lib.arcade.note.asteroids": "← → xiran a nave, ↑ dá impulso, Espazo dispara. Destrúe todas as rochas para superar o nivel; as rochas grandes divídense en máis pequenas. A nave reaparece polo bordo oposto da pantalla. Tes 3 vidas.",
+    "lib.arcade.note.maze": "Usa as teclas de frecha (ou desliza, ou os botóns) para chegar do punto verde á bandeira vermella antes de que se acabe o tempo. Desde o nivel 5 o labirinto ten néboa: só ves arredor de ti e as zonas visitadas lémbranse.",
+    "lib.arcade.note.road-cross": "Usa as teclas de frecha, desliza ou os botóns para facer saltar a ra de abaixo cara arriba. Evita o tráfico; desde o nivel 5 a parte de arriba é un río, así que salta sobre os troncos flotantes. Chega a casa 3 veces para superar o nivel. Tes 3 vidas.",
+    "lib.arcade.note.flappy": "Toca a zona de xogo, preme Espazo ou ↑ para bater as ás. Voa polos ocos entre os tubos sen tocar un tubo, o chan nin o teito. Nos niveis altos os ocos son máis estreitos e o voo máis rápido.",
+    "lib.arcade.note.runner": "Toca a zona de xogo, preme Espazo ou ↑ para saltar sobre os cactus; mantén ↓ para agacharte baixo as aves altas (ou salta sobre as baixas). Corre o suficiente para superar o nivel. A velocidade non deixa de subir.",
+    "lib.arcade.fire": "Disparar",
+    "lib.arcade.jump": "Saltar",
+    "lib.arcade.aimTarget": "Obxectivo",
+    "lib.game.soundOn": "Activar o son",
+    "lib.game.soundOff": "Desactivar o son"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Tres en raia definitivo",
       "desc": "Tres en raia en 9 taboleiros pequenos: a cela que elixas decide onde debe xogar o rival; contra o ordenador en 10 niveis."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Pasa a bola máis alá do ordenador; gaña quen primeiro faga 5 puntos. 10 niveis cun rival máis rápido e afiado."
+    },
+    "space-shooter": {
+      "name": "Atirador espacial",
+      "desc": "Dirixe a túa nave, derruba naves inimigas e esquiva o seu lume; 10 niveis con ondas máis grandes, resposta de lume e inimigos máis duros."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Xira, impulsa e dispara para romper as rochas espaciais; as rochas grandes divídense en máis pequenas. 10 niveis con rochas máis numerosas e rápidas."
+    },
+    "maze": {
+      "name": "Labirinto",
+      "desc": "Atopa a saída do labirinto antes de que se acabe o tempo; 10 niveis de labirintos pequenos a grandes, con néboa nos niveis altos."
+    },
+    "road-cross": {
+      "name": "Cruzar a estrada (estilo Frogger)",
+      "desc": "Fai saltar a ra por estradas con tráfico e ríos de troncos para chegar a casa 3 veces; 10 niveis con tráfico máis rápido e un río nos niveis altos."
+    },
+    "flappy": {
+      "name": "Xogo ao estilo Flappy Bird",
+      "desc": "Toca para bater as ás e voa polos ocos entre os tubos; 10 niveis con ocos máis estreitos e velocidade crecente."
+    },
+    "runner": {
+      "name": "Dino corredor",
+      "desc": "Salta sobre os cactus e agáchate baixo as aves; corre o suficiente para superar cada un dos 10 niveis mentres a velocidade sobe."
+    },
+    "whack-a-mole": {
+      "name": "Golpea a toupa",
+      "desc": "Golpea as toupas que saen dos buracos antes de que se acabe o tempo e esquiva as bombas; 10 niveis de lento a moi rápido."
+    },
+    "simon": {
+      "name": "Simon (cores de memoria)",
+      "desc": "Lembra e repite a secuencia de cores e sons; secuencias cada vez máis longas en 10 niveis, con 6 botóns desde o nivel 7."
+    },
+    "aim-trainer": {
+      "name": "Adestrador de puntería",
+      "desc": "Acerta os obxectivos que aparecen ao chou e esvaecen axiña; os obxectivos encollen ao longo de 10 niveis e mídese o teu tempo de reacción."
+    },
+    "quick-math": {
+      "name": "Cálculo rápido",
+      "desc": "Suma, resta, multiplica e divide de cabeza con présa; 10 niveis, de sumas sinxelas a expresións."
+    },
+    "reaction": {
+      "name": "Proba de tempo de reacción",
+      "desc": "Fai clic no momento en que a pantalla se pon verde; a túa media en 5 roldas ten que cumprir o límite de cada nivel, que se aperta ao longo de 10 niveis."
     }
   },
   "s": {

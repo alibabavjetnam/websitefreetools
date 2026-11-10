@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Sol üst köşede sahip olduğunuz alanı doldurmak için bir renk seçin; alan, o renkteki komşu hücreleri yutar. İzin verilen hamle sayısı içinde tüm tahtayı tek renk yapın.",
     "lib.arcade.note.mastermind": "Bilgisayar bir renk dizisi saklar. Her konum için bir renk seçin, sonra Tahmin Et'e basın. Siyah çubuk = doğru renk doğru yerde; beyaz çubuk = doğru renk yanlış yerde. Tahmin hakkınız bitmeden şifreyi çözün.",
     "lib.arcade.note.hanoi": "Tüm diskleri son çubuğa taşıyın. Her seferinde yalnızca bir çubuğun en üstteki diskini taşıyın ve büyük bir diski asla küçük bir diskin üzerine koymayın. Önce kaynak çubuğa, sonra hedef çubuğa tıklayın.",
-    "lib.arcade.note.pipes": "Bir boruyu 90° döndürmek için karoya tıklayın. Tüm boruları açık ucu kalmayacak şekilde tek bir ağda birleştirin (açık uçlar kırmızı gösterilir)."
+    "lib.arcade.note.pipes": "Bir boruyu 90° döndürmek için karoya tıklayın. Tüm boruları açık ucu kalmayacak şekilde tek bir ağda birleştirin (açık uçlar kırmızı gösterilir).",
+    "lib.arcade.pongScore": "Sen {a} – {b} Bilgisayar (ilk {t})",
+    "lib.arcade.kills": "Yok edilen: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} kaya kaldı",
+    "lib.arcade.timeLeft": "{n} sn kaldı",
+    "lib.arcade.stepsN": "Adım: {n}",
+    "lib.arcade.crossed": "Eve varan: {n}/{t}",
+    "lib.arcade.pipes": "Geçilen boru: {n}/{t}",
+    "lib.arcade.distance": "Mesafe: {n}/{t} m",
+    "lib.arcade.speedN": "Hız: {n}",
+    "lib.arcade.note.whack-a-mole": "Köstebekler deliklerden çıkar — vurmak için köstebeğe tıklayın veya dokunun. Süre bitmeden yeterince köstebek vurun. 4. seviyeden itibaren bombalar var: bombaya vurmak puan kaybettirir.",
+    "lib.arcade.hole": "Delik",
+    "lib.arcade.hitsN": "İsabet: {n}/{t}",
+    "lib.arcade.note.simon": "Oyun bir renk ve ses dizisi çalar — aynı sırayla tekrarlayın. Her turda bir adım eklenir. Seviyeyi geçmek için gereken uzunluğu aklınızda tutun. 7. seviyeden itibaren 6 buton olur.",
+    "lib.arcade.seqN": "Dizi: {n}/{t}",
+    "lib.arcade.watch": "İzle…",
+    "lib.arcade.yourTurnShort": "Sıra sende",
+    "lib.arcade.note.aim-trainer": "Hedefler rastgele belirir ve çabuk kaybolur — mümkün olduğunca çok hedefe isabet ettirin. Hedefler küçülür ve hızlanır. Seviyeyi geçmek için 5'ten fazla ıskalamadan yeterince hedef vurun.",
+    "lib.arcade.missN": "Iskalama: {n}/{t}",
+    "lib.arcade.answer": "Cevap",
+    "lib.arcade.note.quick-math": "Zihinden olabildiğince hızlı çözün: cevabı yazıp Enter'a basın. Her sorunun süresi vardır; yanlış cevap veya süre aşımı bir can götürür (3 canınız var). Seviyeyi geçmek için yeterince soruyu doğru yanıtlayın.",
+    "lib.arcade.correctN": "Doğru: {n}/{t}",
+    "lib.arcade.note.reaction": "Ekranın yeşile dönmesini bekleyin, sonra olabildiğince hızlı tıklayın. Erken tıklamak hatadır (3 hatada kaybedersiniz). 5 turluk ortalamanız seviyenin sınırını geçmelidir.",
+    "lib.arcade.roundN": "Tur {n}/{t}",
+    "lib.arcade.limitMs": "Sınır: {n} ms",
+    "lib.arcade.rxWait": "Yeşili bekle…",
+    "lib.arcade.rxGo": "TIKLA!",
+    "lib.arcade.rxEarly": "Çok erken!",
+    "lib.arcade.gameArea": "Oyun alanı",
+    "lib.arcade.note.pong": "Alttaki raketi kontrol etmek için fareyi hareket ettirin, parmağınızı sürükleyin veya ← → tuşlarını kullanın. Topu bilgisayarın yanından geçirin; ilk 5 puanı alan kazanır. Top her vuruşta hızlanır.",
+    "lib.arcade.note.space-shooter": "Yönlendirmek için fareyi hareket ettirin, parmağınızı sürükleyin veya ← → tuşlarını kullanın; geminiz otomatik ateş eder. Seviyeyi geçmek için yeterince düşman gemisi yok edin, çarpışmalardan ve düşman ateşinden kaçının. 3 canınız var.",
+    "lib.arcade.note.asteroids": "← → gemiyi döndürür, ↑ itiş verir, Boşluk ateş eder. Seviyeyi geçmek için tüm kayaları yok edin; büyük kayalar küçüklere bölünür. Gemi ekran kenarlarından öbür taraftan çıkar. 3 canınız var.",
+    "lib.arcade.note.maze": "Süre bitmeden yeşil noktadan kırmızı bayrağa ulaşmak için ok tuşlarını (veya kaydırmayı ya da düğmeleri) kullanın. 5. seviyeden itibaren labirent sislidir: yalnızca çevrenizi görürsünüz, gidilen yerler hatırlanır.",
+    "lib.arcade.note.road-cross": "Kurbağayı aşağıdan yukarıya zıplatmak için ok tuşlarını, kaydırmayı veya düğmeleri kullanın. Trafikten kaçının; 5. seviyeden itibaren üst kısım nehirdir, yüzen kütüklere zıplayın. Seviyeyi geçmek için 3 kez eve ulaşın. 3 canınız var.",
+    "lib.arcade.note.flappy": "Kanat çırpmak için oyun alanına dokunun, Boşluk veya ↑ tuşuna basın. Borulara, zemine ve tavana değmeden boru aralıklarından geçin. Yüksek seviyelerde aralıklar daha dar, uçuş daha hızlıdır.",
+    "lib.arcade.note.runner": "Kaktüslerin üzerinden atlamak için oyun alanına dokunun, Boşluk veya ↑ tuşuna basın; yüksek kuşların altından eğilmek için ↓ tuşunu basılı tutun (alçak kuşların üzerinden atlayabilirsiniz). Seviyeyi geçmek için yeterince uzağa koşun. Hız sürekli artar.",
+    "lib.arcade.fire": "Ateş",
+    "lib.arcade.jump": "Zıpla",
+    "lib.arcade.aimTarget": "Hedef",
+    "lib.game.soundOn": "Sesi aç",
+    "lib.game.soundOff": "Sesi kapat"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate XOX",
       "desc": "9 küçük tahtada XOX: seçtiğiniz hücre rakibin nerede oynayacağını belirler; 10 seviyede bilgisayara karşı."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Topu bilgisayarın yanından geçirin; ilk 5 puanı alan kazanır. Daha hızlı ve keskin rakiple 10 seviye."
+    },
+    "space-shooter": {
+      "name": "Uzay Nişancısı",
+      "desc": "Geminizi yönlendirin, düşman gemilerini vurun ve ateşlerinden kaçının; daha büyük dalgalar, karşı ateş ve daha güçlü düşmanlarla 10 seviye."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Dönün, itiş verin ve ateş ederek uzay kayalarını parçalayın; büyük kayalar küçüklere bölünür. Daha çok ve daha hızlı kayalarla 10 seviye."
+    },
+    "maze": {
+      "name": "Labirent",
+      "desc": "Süre bitmeden labirentten çıkış yolunu bulun; küçükten büyüğe 10 seviye, yüksek seviyelerde sisli."
+    },
+    "road-cross": {
+      "name": "Yol Geçme (Frogger tarzı)",
+      "desc": "Kurbağayı işlek yollardan ve kütük nehirlerinden geçirip 3 kez eve ulaştırın; daha hızlı trafik ve yüksek seviyelerde nehirle 10 seviye."
+    },
+    "flappy": {
+      "name": "Flappy Bird tarzı oyun",
+      "desc": "Kanat çırpmak için dokunun ve borular arasından uçun; daha dar aralıklar ve artan hızla 10 seviye."
+    },
+    "runner": {
+      "name": "Dino Koşusu",
+      "desc": "Kaktüslerin üzerinden atlayın, kuşların altından eğilin; hız artarken 10 seviyenin her birini geçecek kadar uzağa koşun."
+    },
+    "whack-a-mole": {
+      "name": "Köstebek Vur",
+      "desc": "Süre bitmeden deliklerden çıkan köstebekleri vurun ve bombalardan kaçının; yavaştan çok hızlıya 10 seviye."
+    },
+    "simon": {
+      "name": "Simon (Hafıza Renkleri)",
+      "desc": "Renk ve ses dizisini hatırlayıp tekrarlayın; 10 seviyede giderek uzayan diziler, 7. seviyeden itibaren 6 buton."
+    },
+    "aim-trainer": {
+      "name": "Nişan Antrenörü",
+      "desc": "Rastgele beliren ve çabuk kaybolan hedeflere vurun; 10 seviyede hedefler küçülür ve tepki süreniz ölçülür."
+    },
+    "quick-math": {
+      "name": "Hızlı Matematik",
+      "desc": "Zaman baskısı altında zihinden toplama, çıkarma, çarpma ve bölme yapın; basit toplamalardan ifadelere 10 seviye."
+    },
+    "reaction": {
+      "name": "Tepki Süresi Testi",
+      "desc": "Ekran yeşile döndüğü anda tıklayın; 5 turluk ortalamanız her seviyenin sınırını tutturmalı, sınır 10 seviye boyunca sıkılaşır."
     }
   },
   "s": {

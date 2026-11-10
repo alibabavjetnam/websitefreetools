@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Scegli un colore per riempire tutta l'area che controlli nell'angolo in alto a sinistra: inghiottirà le caselle vicine di quel colore. Rendi l'intera griglia di un unico colore entro il numero di mosse consentito.",
     "lib.arcade.note.mastermind": "Il computer nasconde una fila di colori. Scegli un colore per ogni posizione, poi premi Prova. Un piolo nero = colore giusto al posto giusto; un piolo bianco = colore giusto al posto sbagliato. Scopri il codice prima di finire i tentativi.",
     "lib.arcade.note.hanoi": "Sposta tutti i dischi sull'ultimo piolo. Sposta ogni volta solo il disco in cima a un piolo e non mettere mai un disco più grande su uno più piccolo. Fai clic sul piolo di partenza, poi su quello di arrivo.",
-    "lib.arcade.note.pipes": "Fai clic su una tessera per ruotare il tubo di 90°. Collega tutti i tubi in un'unica rete senza estremità aperte (quelle aperte sono in rosso)."
+    "lib.arcade.note.pipes": "Fai clic su una tessera per ruotare il tubo di 90°. Collega tutti i tubi in un'unica rete senza estremità aperte (quelle aperte sono in rosso).",
+    "lib.arcade.pongScore": "Tu {a} – {b} CPU (vince chi arriva a {t})",
+    "lib.arcade.kills": "Distrutti: {n}/{t}",
+    "lib.arcade.rocksLeft": "Rocce rimaste: {n}",
+    "lib.arcade.timeLeft": "Tempo rimasto: {n} s",
+    "lib.arcade.stepsN": "Passi: {n}",
+    "lib.arcade.crossed": "A casa: {n}/{t}",
+    "lib.arcade.pipes": "Tubi superati: {n}/{t}",
+    "lib.arcade.distance": "Distanza: {n}/{t} m",
+    "lib.arcade.speedN": "Velocità: {n}",
+    "lib.arcade.note.whack-a-mole": "Le talpe spuntano dalle buche: clicca o tocca una talpa per colpirla. Colpisci abbastanza talpe prima che scada il tempo. Dal livello 4 ci sono le bombe: colpirne una fa perdere punti.",
+    "lib.arcade.hole": "Buca",
+    "lib.arcade.hitsN": "Colpi: {n}/{t}",
+    "lib.arcade.note.simon": "Il gioco riproduce una sequenza di colori e suoni: ripetila nello stesso ordine. A ogni turno si aggiunge un passo. Raggiungi la lunghezza richiesta per superare il livello. Dal livello 7 ci sono 6 pulsanti.",
+    "lib.arcade.seqN": "Sequenza: {n}/{t}",
+    "lib.arcade.watch": "Guarda…",
+    "lib.arcade.yourTurnShort": "Tocca a te",
+    "lib.arcade.note.aim-trainer": "I bersagli compaiono a caso e svaniscono in fretta: colpiscine il più possibile. Diventano più piccoli e veloci. Colpisci abbastanza bersagli prima di sbagliare più di 5 volte per superare il livello.",
+    "lib.arcade.missN": "Errori: {n}/{t}",
+    "lib.arcade.answer": "Risposta",
+    "lib.arcade.note.quick-math": "Risolvi a mente il più in fretta possibile: scrivi la risposta e premi Invio. Ogni domanda ha un limite di tempo; una risposta sbagliata o il tempo scaduto costa una vita (ne hai 3). Rispondi correttamente a abbastanza domande per superare il livello.",
+    "lib.arcade.correctN": "Corrette: {n}/{t}",
+    "lib.arcade.note.reaction": "Aspetta che lo schermo diventi verde, poi clicca più in fretta che puoi. Cliccare troppo presto è un fallo (con 3 falli perdi). La tua media su 5 round deve battere il limite del livello.",
+    "lib.arcade.roundN": "Round {n}/{t}",
+    "lib.arcade.limitMs": "Limite: {n} ms",
+    "lib.arcade.rxWait": "Aspetta il verde…",
+    "lib.arcade.rxGo": "CLICCA!",
+    "lib.arcade.rxEarly": "Troppo presto!",
+    "lib.arcade.gameArea": "Area di gioco",
+    "lib.arcade.note.pong": "Muovi il mouse, trascina il dito o usa i tasti ← → per controllare la racchetta in basso. Manda la palla oltre il computer; vince chi arriva per primo a 5 punti. La palla accelera a ogni colpo.",
+    "lib.arcade.note.space-shooter": "Muovi il mouse, trascina il dito o usa i tasti ← → per guidare; la tua nave spara in automatico. Distruggi abbastanza navi nemiche per superare il livello ed evita scontri e colpi nemici. Hai 3 vite.",
+    "lib.arcade.note.asteroids": "← → ruotano la nave, ↑ dà la spinta, Spazio spara. Distruggi tutte le rocce per superare il livello; le rocce grandi si dividono in più piccole. La nave riappare dal lato opposto dello schermo. Hai 3 vite.",
+    "lib.arcade.note.maze": "Usa i tasti freccia (o scorri, o i pulsanti) per andare dal punto verde alla bandiera rossa prima che scada il tempo. Dal livello 5 il labirinto è nella nebbia: vedi solo ciò che hai intorno e le zone già visitate restano segnate.",
+    "lib.arcade.note.road-cross": "Usa i tasti freccia, scorri o usa i pulsanti per far saltare la rana dal basso verso l'alto. Evita il traffico; dal livello 5 la parte alta è un fiume, quindi salta sui tronchi galleggianti. Arriva a casa 3 volte per superare il livello. Hai 3 vite.",
+    "lib.arcade.note.flappy": "Tocca l'area di gioco, premi Spazio o ↑ per battere le ali. Vola tra le aperture dei tubi senza toccare un tubo, il suolo o il soffitto. I livelli più alti hanno aperture più strette e volo più veloce.",
+    "lib.arcade.note.runner": "Tocca l'area di gioco, premi Spazio o ↑ per saltare i cactus; tieni premuto ↓ per abbassarti sotto gli uccelli alti (o salta quelli bassi). Corri abbastanza lontano per superare il livello. La velocità continua ad aumentare.",
+    "lib.arcade.fire": "Spara",
+    "lib.arcade.jump": "Salta",
+    "lib.arcade.aimTarget": "Bersaglio",
+    "lib.game.soundOn": "Attiva l'audio",
+    "lib.game.soundOff": "Disattiva l'audio"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Tris Ultimate",
       "desc": "Tris su 9 scacchiere piccole: la casella che scegli decide dove deve giocare l'avversario; contro il computer in 10 livelli."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Manda la palla oltre il computer; vince chi arriva per primo a 5 punti. 10 livelli con un avversario sempre più veloce e abile."
+    },
+    "space-shooter": {
+      "name": "Sparatutto spaziale",
+      "desc": "Guida la tua nave, abbatti le navi nemiche e schiva i loro colpi; 10 livelli con ondate più grandi, fuoco di risposta e nemici più forti."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Ruota, accelera e spara per spaccare le rocce spaziali; le rocce grandi si dividono in più piccole. 10 livelli con rocce più numerose e veloci."
+    },
+    "maze": {
+      "name": "Labirinto",
+      "desc": "Trova l'uscita dal labirinto prima che scada il tempo; 10 livelli da labirinti piccoli a grandi, con la nebbia ai livelli alti."
+    },
+    "road-cross": {
+      "name": "Attraversa la strada (stile Frogger)",
+      "desc": "Fai saltare la rana su strade trafficate e fiumi di tronchi galleggianti per tornare a casa 3 volte; 10 livelli con traffico più veloce e un fiume ai livelli alti."
+    },
+    "flappy": {
+      "name": "Gioco in stile Flappy Bird",
+      "desc": "Tocca per battere le ali e vola tra le aperture dei tubi; 10 livelli con aperture più strette e velocità crescente."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Salta i cactus e abbassati sotto gli uccelli; corri abbastanza lontano per superare ciascuno dei 10 livelli mentre la velocità aumenta."
+    },
+    "whack-a-mole": {
+      "name": "Acchiappa la talpa",
+      "desc": "Colpisci le talpe che spuntano dalle buche prima che scada il tempo ed evita le bombe; 10 livelli da lenti a velocissimi."
+    },
+    "simon": {
+      "name": "Simon (colori da ricordare)",
+      "desc": "Ricorda e ripeti la sequenza di colori e suoni; sequenze sempre più lunghe in 10 livelli, con 6 pulsanti dal livello 7."
+    },
+    "aim-trainer": {
+      "name": "Allenamento di mira",
+      "desc": "Colpisci i bersagli che compaiono a caso e svaniscono in fretta; i bersagli si rimpiccioliscono in 10 livelli e viene misurato il tuo tempo di reazione."
+    },
+    "quick-math": {
+      "name": "Calcolo veloce",
+      "desc": "Fai a mente addizioni, sottrazioni, moltiplicazioni e divisioni sotto pressione di tempo; 10 livelli da semplici somme a espressioni."
+    },
+    "reaction": {
+      "name": "Test dei riflessi",
+      "desc": "Clicca nel momento in cui lo schermo diventa verde; la media di 5 round deve rispettare il limite di ogni livello, sempre più stretto nei 10 livelli."
     }
   },
   "s": {

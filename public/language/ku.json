@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Rengekî hilbijêre da ku tevahiya herêma xwe ya li goşeya jor-çepê tije bike; ew xaneyên cîran ên wî rengî dadiqurtîne. Di hejmara tevgerên destûrdayî de tevahiya tabloyê yekreng bike.",
     "lib.arcade.note.mastermind": "Komputer rêzek rengan vedişêre. Ji bo her cihekî rengek hilbijêre, paşê Texmîn bike bitikîne. Pînê reş = rengê rast li cihê rast; pînê spî = rengê rast li cihê şaş. Berî ku texmînên te biqedin kodê çareser bike.",
     "lib.arcade.note.hanoi": "Hemû dîskan bibe stûna dawîn. Her carê tenê dîska jorîn a stûnekê bigerîne û tu carî dîskeke mezin li ser ya biçûk nexe. Pêşî li ser stûna çavkaniyê, paşê li ser stûna armancê bitikîne.",
-    "lib.arcade.note.pipes": "Li ser kaşeyekê bitikîne da ku boriyê 90° bizivirîne. Hemû boriyan di yek torê de bi hev ve girêde, bê serên vekirî (serên vekirî sor têne nîşandan)."
+    "lib.arcade.note.pipes": "Li ser kaşeyekê bitikîne da ku boriyê 90° bizivirîne. Hemû boriyan di yek torê de bi hev ve girêde, bê serên vekirî (serên vekirî sor têne nîşandan).",
+    "lib.arcade.pongScore": "Tu {a} – {b} komputer (yê pêşî digihîje {t})",
+    "lib.arcade.kills": "Hatin hilweşandin: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} berd mane",
+    "lib.arcade.timeLeft": "{n} çirk ma",
+    "lib.arcade.stepsN": "Gav: {n}",
+    "lib.arcade.crossed": "Gihîştin mal: {n}/{t}",
+    "lib.arcade.pipes": "Lûleyên derbasbûyî: {n}/{t}",
+    "lib.arcade.distance": "Dûrahî: {n}/{t} m",
+    "lib.arcade.speedN": "Lez: {n}",
+    "lib.arcade.note.whack-a-mole": "Kûrmêşk ji kunan derdikevin — li kûrmêşkekê bitikîne an bitikîne da ku lê bixî. Berî ku dem biqede têra xwe kûrmêşk bixe. Ji astê 4 pê ve bomb hene: lêdana bombê xalan dibire.",
+    "lib.arcade.hole": "Kun",
+    "lib.arcade.hitsN": "Lêdan: {n}/{t}",
+    "lib.arcade.note.simon": "Lîstik rêzeyek reng û dengan lê dixe — bi heman rêzê dubare bike. Her dor gavek din lê zêde dibe. Dirêjahiya pêwîst bi bîr bîne da ku astê derbas bikî. Ji astê 7 pê ve 6 pad hene.",
+    "lib.arcade.seqN": "Rêze: {n}/{t}",
+    "lib.arcade.watch": "Temaşe bike…",
+    "lib.arcade.yourTurnShort": "Rêza te",
+    "lib.arcade.note.aim-trainer": "Armanc bi şansî xuya dibin û zû winda dibin — heta ku tu dikarî hê zêdetir bi wan bixe. Biçûktir û bilêztir dibin. Bi herî zêde 5 ji dest çûyînan têra xwe armanc bixe da ku astê derbas bikî.",
+    "lib.arcade.missN": "Ji dest çûyîn: {n}/{t}",
+    "lib.arcade.answer": "Bersiv",
+    "lib.arcade.note.quick-math": "Di serê xwe de bi lez çareser bike: bersivê binivîse û Enter bitikîne. Her pirsek xwedî sînorê demê ye; bersiva şaş an qediya dem jiyanekê dibire (3 jiyanên te hene). Têra xwe pirsan rast bersiv bide da ku astê derbas bikî.",
+    "lib.arcade.correctN": "Rast: {n}/{t}",
+    "lib.arcade.note.reaction": "Li bendê be ku ekran kesk bibe, paşê bi lez bitikîne. Tikandina zû zêde xeletî ye (bi 3 xeletiyan tu têk diçî). Navînî ya te ya 5 dorên divê ji sînorê astê çêtir be.",
+    "lib.arcade.roundN": "Dor {n}/{t}",
+    "lib.arcade.limitMs": "Sînor: {n} ms",
+    "lib.arcade.rxWait": "Li benda keskê be…",
+    "lib.arcade.rxGo": "BITIKÎNE!",
+    "lib.arcade.rxEarly": "Pir zû ye!",
+    "lib.arcade.gameArea": "Qada lîstikê",
+    "lib.arcade.note.pong": "Mişkê bilivîne, tiliya xwe bikişîne an jî bi tuşên ← → raketa jêrîn bi rê ve bibe. Topê ji kêleka komputerê derbas bike; yê pêşî ku 5 xalan bigire dibe serketî. Top bi her lêdanê lez digire.",
+    "lib.arcade.note.space-shooter": "Mişkê bilivîne, tiliya xwe bikişîne an jî bi tuşên ← → rêve bibe; keştiya te bi xwe agir dike. Têra xwe keştiyên dijmin hilweşîne da ku astê derbas bikî û ji lêdan û agirê dijmin dûr bimîne. 3 jiyanên te hene.",
+    "lib.arcade.note.asteroids": "← → keştiyê dizivirînin, ↑ lez dide, Valahî agir dike. Hemû berdan hilweşîne da ku astê derbas bikî; berdên mezin dibin yên biçûktir. Keştî ji devê ekranê derdikeve û ji aliyê din vedigere. 3 jiyanên te hene.",
+    "lib.arcade.note.maze": "Bi tuşên tîran (an kişandin, an bişkojkan) berî ku dem biqede ji xala kesk bigihîje ala sor. Ji astê 5 pê ve lavirent di mijê de ye: tenê derdora xwe dibînî û cihên ku te dîtine tên bîranîn.",
+    "lib.arcade.note.road-cross": "Bi tuşên tîran, kişandin an bişkojkan beqê ji jêr ber bi jor ve bavêje. Ji seyrûsefera dûr bimîne; ji astê 5 pê ve beşa jorîn çem e, ji ber vê yekê li ser darên avê bavêje. 3 caran bigihîje malê da ku astê derbas bikî. 3 jiyanên te hene.",
+    "lib.arcade.note.flappy": "Li qada lîstikê bitikîne, Valahî an ↑ bitikîne da ku bal bikişîne. Di navbera lûleyan re bifire bêyî ku bi lûle, erd an banî ve bikevî. Di astên bilind de valahî teng û firîn bilêztir e.",
+    "lib.arcade.note.runner": "Li qada lîstikê bitikîne, Valahî an ↑ bitikîne da ku ji ser kaktusan bifirî; ↓ ragire da ku bin çûkên bilind bixomî (an ji ser yên nizm bifirî). Têra xwe dûr bireve da ku astê derbas bikî. Lez her dem zêde dibe.",
+    "lib.arcade.fire": "Agir bike",
+    "lib.arcade.jump": "Bavêje",
+    "lib.arcade.aimTarget": "Armanc",
+    "lib.game.soundOn": "Dengê veke",
+    "lib.game.soundOff": "Dengê bigire"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Sê-bi-yek a Dawîn",
       "desc": "Sê-bi-yek li ser 9 tabloyên biçûk: xaneya ku tu hildibijêrî diyar dike ku dijber li ku bilîze; li hemberî komputerê di 10 astan de."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Topê ji kêleka komputerê derbas bike; yê pêşî ku 5 xalan bigire dibe serketî. 10 astên bi hevrikek bilêztir û tûjtir."
+    },
+    "space-shooter": {
+      "name": "Gulebarana Fezayê",
+      "desc": "Keştiya xwe rêve bibe, keştiyên dijmin bixe xwarê û ji agirê wan dûr bimîne; 10 astên bi pêlên mezintir, agirê bersivê û dijminên bihêztir."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Bizivire, lez bide û agir bike da ku berdên fezayê bişkînî; berdên mezin dibin yên biçûktir. 10 astên bi berdên zêdetir û bilêztir."
+    },
+    "maze": {
+      "name": "Lavirent",
+      "desc": "Berî ku dem biqede riya derketinê ji lavirentê bibîne; 10 astên ji lavirentên biçûk heta yên mezin, di astên bilind de bi mij."
+    },
+    "road-cross": {
+      "name": "Ji Rê Derbasbûn (şêweyê Frogger)",
+      "desc": "Beqê ji ser rêyên elûz û çemên bi darên avê derbas bike da ku 3 caran bigihîje malê; 10 astên bi seyrûsefera bilêztir û çem di astên bilind de."
+    },
+    "flappy": {
+      "name": "Lîstika şêweyê Flappy Bird",
+      "desc": "Bitikîne da ku bal bikişîne û di navbera lûleyan re bifire; 10 astên bi valahiyên tengtir û lezeke zêdebûyî."
+    },
+    "runner": {
+      "name": "Dino Bazdar",
+      "desc": "Ji ser kaktusan bifire û bin çûkan bixomî; têra xwe dûr bireve da ku her yek ji 10 astan derbas bikî dema lez zêde dibe."
+    },
+    "whack-a-mole": {
+      "name": "Li Kûrmêşkê Bixe",
+      "desc": "Berî ku dem biqede li kûrmêşkên ji kunan derdikevin bixe û ji bombeyan dûr bimîne; 10 astên ji hêdî heta pir bilez."
+    },
+    "simon": {
+      "name": "Simon (Rengên Bîrê)",
+      "desc": "Rêzeya reng û dengan bi bîr bîne û dubare bike; rêzeyên dirêjtir di 10 astan de, ji astê 7 pê ve bi 6 padan."
+    },
+    "aim-trainer": {
+      "name": "Rahênerê Armancgirtinê",
+      "desc": "Li armancên ku bi şansî xuya dibin û zû winda dibin bixe; di 10 astan de armanc biçûk dibin û dema bersiva te tê pîvandin."
+    },
+    "quick-math": {
+      "name": "Matematîka Bilez",
+      "desc": "Di bin zextê dem de di serê xwe de kom bike, derxe, pir bike û par ve bike; 10 astên ji komên hêsan heta îfadeyan."
+    },
+    "reaction": {
+      "name": "Testa Dema Bersivê",
+      "desc": "Gava ekran kesk dibe bitikîne; navînî ya te ya 5 dorên divê sînorê her astê bigire, ku di 10 astan de tengtir dibe."
     }
   },
   "s": {

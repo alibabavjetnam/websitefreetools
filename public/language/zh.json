@@ -469,7 +469,75 @@
     "lib.arcade.jump": "跳跃",
     "lib.arcade.aimTarget": "靶子",
     "lib.game.soundOn": "开启声音",
-    "lib.game.soundOff": "关闭声音"
+    "lib.game.soundOff": "关闭声音",
+    "lib.arcade.note.kalah": "你在下排，电脑在上排；右侧大格是你的仓。点击一个小格取出全部豆子，按逆时针方向每格放一颗（跳过对手的仓）。最后一颗落进自己的仓可以再走一次；落在己方空格且对面有豆子时，可吃掉对面的豆子。一方没有豆子后，另一方剩下的豆子归入各自的仓，仓里豆多者获胜。",
+    "lib.arcade.note.snakes": "掷骰子并前进相应格数，从 1 走到 100。停在梯子底部会爬上去，停在蛇头会滑下来。从第 4 关起必须刚好掷出所需点数才能停在 100。关卡越高，蛇越多、梯子越少、对手越多。最先到达 100 者获胜。",
+    "lib.arcade.square": "第 {n} 格",
+    "lib.arcade.ladderUp": "爬上梯子！",
+    "lib.arcade.snakeDown": "被蛇吞了！",
+    "lib.arcade.needExact": "需要刚好的点数才能停在 100。",
+    "lib.arcade.note.nmm": "双方各有 9 枚棋子。第一阶段：轮流把棋子放到空点上。第二阶段：把棋子移到相邻的空点。只剩 3 枚时可以“飞”到任意空点。三子连成一线（“磨坊”）可吃掉对方一枚棋子（优先吃不在磨坊中的）。只剩 2 枚或无法移动即输。你执白先行。",
+    "lib.arcade.inHand": "待放：{a} · {b}",
+    "lib.arcade.removePiece": "请选择要吃掉的对方棋子。",
+    "lib.arcade.enemyWaters": "敌方海域（点击开火）",
+    "lib.arcade.yourFleet": "你的舰队",
+    "lib.arcade.note.battleship": "双方各有 5 艘船（长度 5、4、3、3、2），随机摆放在 10x10 的网格上。轮流向某格开火：命中变红，未命中变浅蓝，击中一艘船的所有格子即将其击沉。先击沉对方全部舰队者获胜。关卡越高，电脑推理你船只位置的能力越强。",
+    "lib.arcade.shipsLeft": "剩余舰船：你 {a} · 敌 {b}",
+    "lib.arcade.theySunk": "敌人击沉了你的一艘船！",
+    "lib.arcade.theyHit": "敌人击中了你的船。",
+    "lib.arcade.theyMiss": "敌人没打中。",
+    "lib.arcade.youSunk": "你击沉了一艘敌舰！",
+    "lib.arcade.youHit": "命中！",
+    "lib.arcade.youMiss": "没打中。",
+    "lib.arcade.shake": "摇骰",
+    "lib.arcade.clearBets": "清除下注",
+    "lib.arcade.note.bau-cua": "仅使用虚拟金币，不涉及真钱。选择筹码面额，点击动物下注，然后按“摇骰”。每有一颗骰子与你下注的动物相同，就退还本金并每次匹配再赢同额奖金。在限定局数内达到目标金币即可过关。",
+    "lib.arcade.note.baccarat": "仅使用虚拟金币，不涉及真钱。押“闲”“庄”或“和”，然后点“发牌”。牌点为总点数的个位数（A=1，2–9 按牌面，10/J/Q/K=0），更接近 9 者获胜，补牌按标准规则。押闲赔 1:1，押庄赔 0.95:1，押和赔 8:1（出和时闲/庄的赌注退回）。在限定局数内达到目标金币即可过关。",
+    "lib.arcade.banker": "庄",
+    "lib.arcade.player": "闲",
+    "lib.arcade.tie": "和",
+    "lib.arcade.openCards": "开牌",
+    "lib.arcade.note.bai-cao": "仅使用虚拟金币，不涉及真钱。双方各发 3 张牌。点数为总点数的个位数（A=1，2–9 按牌面，10/J/Q/K=10，即 0 点）。牌型大小：三条（“Sáp”）最大，其次是三张人头牌（“Ba tiên”），再其次是 9 点到 0 点。下注后点“发牌”，再点“开牌”与庄家比大小。从第 6 关起平局算庄家赢。在限定局数内达到目标金币即可过关。",
+    "lib.arcade.caoSap": "三条",
+    "lib.arcade.caoBaTien": "三张人头牌",
+    "lib.arcade.caoPts": "{n} 点",
+    "lib.arcade.note.bingo": "电脑会依次叫出 1 到 75 的号码。叫到的号码在你的卡上时，点击它来标记（中间格免费）。凑满一行、一列或一条对角线后点击 BINGO!——必须比电脑对手更快。错误宣布 BINGO! 会让按钮锁定几秒。关卡越高，叫号越快，对手越多。",
+    "lib.arcade.opponentsN": "对手：{n}",
+    "lib.arcade.falseBingo": "还没连成线！按钮锁定 3 秒。",
+    "lib.arcade.bingoGo": "开始叫号！",
+    "lib.arcade.note.yahtzee": "每回合最多掷 5 颗骰子 3 次：点击骰子保留它，再点“掷骰”重掷其余的。然后在表中选一栏记分（每栏只能用一次，不符合的栏记 0 分）。共 13 回合。一至六点各栏合计达到 63 分可得 35 分奖励。达到本关目标分即获胜。",
+    "lib.arcade.turnN": "第 {n}/13 回合",
+    "lib.arcade.pickCat": "请选择一栏记分",
+    "lib.arcade.rollsLeft": "掷骰（还剩 {n} 次）",
+    "lib.arcade.upperBonus": "一至六点奖励",
+    "lib.arcade.scored": "记 {n} 分",
+    "lib.arcade.note.crazy-eights": "打出与弃牌堆顶牌花色或点数相同的牌。8 是万能牌：随时可打出，并指定新花色。没有可出的牌就从牌堆抽牌（最多 3 张），仍无牌可出则跳过。最先出完手牌者获胜。关卡越高，对手越多，电脑也越聪明。",
+    "lib.arcade.opponent": "对手",
+    "lib.arcade.pileLeft": "牌堆：{n}",
+    "lib.arcade.pickSuit": "请选择新花色",
+    "lib.arcade.aiSuit": "电脑选择了 {s}",
+    "lib.arcade.aiPass": "电脑跳过。",
+    "lib.arcade.mustPlay": "你有可出的牌——请出牌。",
+    "lib.arcade.youPass": "已抽 3 张，你跳过本轮。",
+    "lib.arcade.bcGourd": "葫芦",
+    "lib.arcade.bcCrab": "螃蟹",
+    "lib.arcade.bcShrimp": "虾",
+    "lib.arcade.bcFish": "鱼",
+    "lib.arcade.bcRooster": "公鸡",
+    "lib.arcade.bcDeer": "鹿",
+    "lib.arcade.yOnes": "一点",
+    "lib.arcade.yTwos": "二点",
+    "lib.arcade.yThrees": "三点",
+    "lib.arcade.yFours": "四点",
+    "lib.arcade.yFives": "五点",
+    "lib.arcade.ySixes": "六点",
+    "lib.arcade.yThree": "三条",
+    "lib.arcade.yFour": "四条",
+    "lib.arcade.yFull": "葫芦（25）",
+    "lib.arcade.ySmall": "小顺子（30）",
+    "lib.arcade.yLarge": "大顺子（40）",
+    "lib.arcade.yYahtzee": "五条（Yahtzee，50）",
+    "lib.arcade.yChance": "机会"
   },
   "pages": {
     "home": {
@@ -1086,6 +1154,46 @@
     "reaction": {
       "name": "反应速度测试",
       "desc": "屏幕变绿的瞬间立即点击；5 轮平均成绩要达到每关的标准，标准在 10 关中逐步收紧。"
+    },
+    "kalah": {
+      "name": "卡拉哈（Kalah）",
+      "desc": "沿小格播豆子，吃掉对手的豆子，落入自己的仓可再走一次；与电脑对战，共 10 关，由易到难。"
+    },
+    "snakes-ladders": {
+      "name": "蛇梯棋",
+      "desc": "掷骰子从 1 走到 100，爬梯子、避开蛇，比对手先到终点；共 10 关。"
+    },
+    "nine-mens-morris": {
+      "name": "九子棋（Nine Men’s Morris）",
+      "desc": "放置、移动和飞行棋子，凑成三连并吃掉对方棋子；与电脑对战，共 10 关。"
+    },
+    "battleship": {
+      "name": "海战棋（Battleship）",
+      "desc": "在 10x10 网格上找到并击沉电脑的舰队，抢在它击沉你之前；共 10 关，电脑越来越会推理。"
+    },
+    "bau-cua": {
+      "name": "越南鱼虾蟹（Bầu Cua）",
+      "desc": "越南传统骰子游戏：用虚拟金币押动物、摇三颗骰子，达到目标金币即过关；共 10 关（不涉及真钱）。"
+    },
+    "baccarat": {
+      "name": "百家乐",
+      "desc": "用虚拟金币按标准规则押闲、庄或和；达到目标金币即过关，共 10 关（不涉及真钱）。"
+    },
+    "bai-cao": {
+      "name": "越南三张牌（Bài Cào）",
+      "desc": "三张牌与庄家比大小：三条、三张人头牌，再到 9 点至 0 点；虚拟金币，共 10 关，不涉及真钱。"
+    },
+    "bingo": {
+      "name": "宾果（Bingo）",
+      "desc": "在 5x5 的卡上标记叫到的号码，抢在电脑对手之前喊 BINGO；共 10 关，叫号越来越快。"
+    },
+    "yahtzee": {
+      "name": "快艇骰子（Yahtzee）",
+      "desc": "掷 5 颗骰子，保留好的点数并填满 13 个计分栏；达到目标分即过关，共 10 关。"
+    },
+    "crazy-eights": {
+      "name": "疯狂八点（Crazy Eights）",
+      "desc": "按花色或点数出牌，8 可以改变花色；在 10 关中抢在 1 到 3 个电脑对手之前出完手牌。"
     }
   },
   "s": {

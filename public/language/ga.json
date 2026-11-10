@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Roghnaigh dath chun an limistéar iomlán atá agat sa chúinne uachtarach ar chlé a líonadh; slogann sé cealla comharsanacha den dath sin. Déan an bord iomlán d'aon dath amháin laistigh den líon bogadh a cheadaítear.",
     "lib.arcade.note.mastermind": "Folaíonn an ríomhaire sraith dathanna. Roghnaigh dath do gach suíomh, ansin brúigh Tomhais. Biorán dubh = dath ceart san áit cheart; biorán bán = dath ceart san áit mhícheart. Réitigh an cód sula rithfidh do thomhais amach.",
     "lib.arcade.note.hanoi": "Bog na dioscaí go léir go dtí an cuaille deireanach. Bog ach an diosca barr de chuaille gach uair, agus ná cuir diosca níos mó ar dhiosca níos lú choíche. Cliceáil an cuaille tosaigh, ansin an cuaille sprice.",
-    "lib.arcade.note.pipes": "Cliceáil leacán chun an píopa a rothlú 90°. Ceangail na píopaí go léir in aon líonra amháin gan deireadh oscailte (taispeántar deirí oscailte i ndearg)."
+    "lib.arcade.note.pipes": "Cliceáil leacán chun an píopa a rothlú 90°. Ceangail na píopaí go léir in aon líonra amháin gan deireadh oscailte (taispeántar deirí oscailte i ndearg).",
+    "lib.arcade.pongScore": "Tusa {a} – {b} ríomhaire (an chéad duine go {t})",
+    "lib.arcade.kills": "Scriosta: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} carraig fágtha",
+    "lib.arcade.timeLeft": "{n} s fágtha",
+    "lib.arcade.stepsN": "Céimeanna: {n}",
+    "lib.arcade.crossed": "Sa bhaile: {n}/{t}",
+    "lib.arcade.pipes": "Píopaí curtha díot: {n}/{t}",
+    "lib.arcade.distance": "Achar: {n}/{t} m",
+    "lib.arcade.speedN": "Luas: {n}",
+    "lib.arcade.note.whack-a-mole": "Tagann na míolta móra amach as na poill — cliceáil nó tapáil míoltóg chun í a bhualadh. Buail go leor acu sula rithfidh an t-am amach. Ó leibhéal 4 ar aghaidh tá buamaí ann: má bhuailtear ceann caillfidh tú pointí.",
+    "lib.arcade.hole": "Poll",
+    "lib.arcade.hitsN": "Buillí: {n}/{t}",
+    "lib.arcade.note.simon": "Seinneann an cluiche seicheamh dathanna agus fuaimeanna — athdhéan é san ord céanna. Cuireann gach babhta céim eile leis. Cuimhnigh ar an fhad riachtanach chun an leibhéal a rith. Ó leibhéal 7 ar aghaidh tá 6 cnaipe ann.",
+    "lib.arcade.seqN": "Seicheamh: {n}/{t}",
+    "lib.arcade.watch": "Féach…",
+    "lib.arcade.yourTurnShort": "Do sheal",
+    "lib.arcade.note.aim-trainer": "Bíonn spriocanna le feiceáil go randamach agus imíonn siad go tapa — buail an oiread agus is féidir leat. Éiríonn siad níos lú agus níos tapúla. Buail go leor spriocanna sula ndéanann tú níos mó ná 5 chliseadh chun an leibhéal a rith.",
+    "lib.arcade.missN": "Cliseadh: {n}/{t}",
+    "lib.arcade.answer": "Freagra",
+    "lib.arcade.note.quick-math": "Réitigh i do cheann chomh tapa agus is féidir: clóscríobh an freagra agus brúigh Enter. Tá teorainn ama ar gach ceist; cosnaíonn freagra mícheart nó am a rith amach saol amháin (tá 3 agat). Freagair go leor ceisteanna i gceart chun an leibhéal a rith.",
+    "lib.arcade.correctN": "Ceart: {n}/{t}",
+    "lib.arcade.note.reaction": "Fan go n-éireoidh an scáileán glas, ansin cliceáil chomh tapa agus is féidir. Is lochtanna é cliceáil róluath (3 lochtanna agus caillfidh tú). Caithfidh do mheán thar 5 bhabhta teorainn an leibhéil a bhualadh.",
+    "lib.arcade.roundN": "Babhta {n}/{t}",
+    "lib.arcade.limitMs": "Teorainn: {n} ms",
+    "lib.arcade.rxWait": "Fan go glas…",
+    "lib.arcade.rxGo": "CLICEÁIL!",
+    "lib.arcade.rxEarly": "Róluath!",
+    "lib.arcade.gameArea": "Limistéar súgartha",
+    "lib.arcade.note.pong": "Bog an luch, tarraing le do mhéar nó úsáid na heochracha ← → chun an maide thíos a rialú. Cuir an liathróid thar an ríomhaire; buaiteoidh an chéad duine a bhainfidh 5 phointe amach. Téann an liathróid níos tapúla le gach buille.",
+    "lib.arcade.note.space-shooter": "Bog an luch, tarraing le do mhéar nó úsáid na heochracha ← → chun stiúradh; scaoileann do long go huathoibríoch. Scrios go leor long namhad chun an leibhéal a rith, agus seachain imbhuailtí agus tine an namhad. Tá 3 shaol agat.",
+    "lib.arcade.note.asteroids": "Cuireann ← → an long ag rothlú, tugann ↑ tiomáint, scaoileann an Spásbharra. Scrios gach carraig chun an leibhéal a rith; scoilteann carraigeacha móra ina gcinn níos lú. Tagann an long ar ais ón taobh eile den scáileán. Tá 3 shaol agat.",
+    "lib.arcade.note.maze": "Úsáid na heochracha saighde (nó scuab, nó na cnaipí) chun dul ón ponc glas go dtí an bhratach dhearg sula rithfidh an t-am amach. Ó leibhéal 5 tá ceo sa mhearbhall: ní fheiceann tú ach do thimpeallacht, agus cuimhnítear ar na ceantair a chuaigh tú tríd.",
+    "lib.arcade.note.road-cross": "Úsáid na heochracha saighde, scuab nó na cnaipí chun an frog a léim ón mbun go dtí an barr. Seachain an trácht; ó leibhéal 5 is abhainn é an chuid uachtarach, mar sin léim ar na lománna snámha. Téigh abhaile 3 huaire chun an leibhéal a rith. Tá 3 shaol agat.",
+    "lib.arcade.note.flappy": "Tapáil an limistéar súgartha, brúigh an Spásbharra nó ↑ chun sciatháin a bhualadh. Eitil trí na bearnaí idir na píopaí gan teagmháil a dhéanamh le píopa, leis an talamh ná leis an tsíleáil. Tá bearnaí níos caoile agus eitilt níos tapúla ar leibhéil níos airde.",
+    "lib.arcade.note.runner": "Tapáil an limistéar súgartha, brúigh an Spásbharra nó ↑ chun léim thar chachtais; coinnigh ↓ chun do cheann a chromadh faoi éin arda (nó léim thar cinn ísle). Rith chomh fada sin chun an leibhéal a rith. Tá an luas ag méadú i gcónaí.",
+    "lib.arcade.fire": "Scaoil",
+    "lib.arcade.jump": "Léim",
+    "lib.arcade.aimTarget": "Sprioc",
+    "lib.game.soundOn": "Cuir fuaim air",
+    "lib.game.soundOff": "Cuir fuaim as"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Cros agus Nialas Deiridh",
       "desc": "Cros agus nialas ar 9 mbord beag: cinneann an chill a roghnaíonn tú cá gcaithfidh do chéile comhraic imirt; i gcoinne an ríomhaire thar 10 leibhéal."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Cuir an liathróid thar an ríomhaire; buaiteoidh an chéad duine a bhainfidh 5 phointe amach. 10 leibhéal le hiomaitheoir níos tapúla agus níos géire."
+    },
+    "space-shooter": {
+      "name": "Lámhachóir spáis",
+      "desc": "Stiúir do long, scaoil síos longa an namhad agus seachain a dtine; 10 leibhéal le tonnta níos mó, tine fhrithghníomhach agus naimhde níos crua."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Rothlaigh, tiomáin agus scaoil chun na carraigeacha spáis a bhriseadh; scoilteann carraigeacha móra ina gcinn níos lú. 10 leibhéal le carraigeacha níos líonmhaire agus níos tapúla."
+    },
+    "maze": {
+      "name": "Mearbhall",
+      "desc": "Faigh an bealach amach as an mearbhall sula rithfidh an t-am amach; 10 leibhéal ó mhearbhaill bheaga go mearbhaill mhóra, le ceo ar leibhéil níos airde."
+    },
+    "road-cross": {
+      "name": "Trasnú bóthair (stíl Frogger)",
+      "desc": "Léim an frog thar bhóithre gnóthacha agus aibhneacha lománna snámha chun dul abhaile 3 huaire; 10 leibhéal le trácht níos tapúla agus abhainn ar leibhéil níos airde."
+    },
+    "flappy": {
+      "name": "Cluiche i stíl Flappy Bird",
+      "desc": "Tapáil chun sciatháin a bhualadh agus eitil trí na bearnaí idir na píopaí; 10 leibhéal le bearnaí níos caoile agus luas méadaitheach."
+    },
+    "runner": {
+      "name": "Rithí Dineasár",
+      "desc": "Léim thar chachtais agus crom faoi éin; rith chomh fada sin chun gach ceann de na 10 leibhéal a rith agus an luas ag méadú."
+    },
+    "whack-a-mole": {
+      "name": "Buail an Míoltóg",
+      "desc": "Buail na míoltóga a thagann amach as na poill sula rithfidh an t-am amach, agus seachain na buamaí; 10 leibhéal ó mhall go han-tapa."
+    },
+    "simon": {
+      "name": "Simon (dathanna cuimhne)",
+      "desc": "Cuimhnigh ar an seicheamh dathanna agus fuaimeanna agus athdhéan é; seichimh níos faide thar 10 leibhéal, le 6 chnaipe ó leibhéal 7."
+    },
+    "aim-trainer": {
+      "name": "Traenáil sprice",
+      "desc": "Buail na spriocanna a bhíonn le feiceáil go randamach agus a imíonn go tapa; laghdaíonn na spriocanna thar 10 leibhéal, agus tomhaistear d'am imoibrithe."
+    },
+    "quick-math": {
+      "name": "Matamaitic thapa",
+      "desc": "Déan suimeanna, dealuithe, iolrúcháin agus roinnt i do cheann faoi bhrú ama; 10 leibhéal ó shuimeanna simplí go slonn."
+    },
+    "reaction": {
+      "name": "Tástáil imoibrithe",
+      "desc": "Cliceáil an nóiméad a éiríonn an scáileán glas; caithfidh do mheán thar 5 bhabhta teorainn gach leibhéil a shásamh, agus éiríonn sí níos géire thar 10 leibhéal."
     }
   },
   "s": {

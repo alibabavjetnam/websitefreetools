@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Sarudza ruvara rwekuzadza nzvimbo yese yaunayo pakona yepamusoro kuruboshwe; inomedza mabhokisi akavakidzana eruvara irworwo. Ita kuti bhodhi rese rive ruvara rumwe chete mukati mematanho anotenderwa.",
     "lib.arcade.note.mastermind": "Komputa inovanza mutsara weruvara. Sarudza ruvara panzvimbo imwe neimwe, wobva wadzvanya Fungidzira. Peg nhema = ruvara rwakarurama panzvimbo chaipo; peg chena = ruvara rwakarurama panzvimbo isiri iyo. Pwanya kodhi usati wapedza miedzo.",
     "lib.arcade.note.hanoi": "Tamisa ma disc ese kuenda kunhiyo yekupedzisira. Famisa disc yepamusoro chete panhiyo pakatenderera rimwe nerimwe, uye usaise disc hombe pamusoro peduku. Dzvanya nhiyo yekutangira, wobva wadzvanya nhiyo yekusvika.",
-    "lib.arcade.note.pipes": "Dzvanya tailosi kutenderedza paipi 90°. Batanidza mapaipi ese kuita network imwe chete isina magumo akavhurika (magumo akavhurika anoratidzwa tsvuku)."
+    "lib.arcade.note.pipes": "Dzvanya tailosi kutenderedza paipi 90°. Batanidza mapaipi ese kuita network imwe chete isina magumo akavhurika (magumo akavhurika anoratidzwa tsvuku).",
+    "lib.arcade.pongScore": "Iwe {a} – {b} komputa (wokutanga kusvika {t})",
+    "lib.arcade.kills": "Zvaparadzwa: {n}/{t}",
+    "lib.arcade.rocksLeft": "Matombo {n} asara",
+    "lib.arcade.timeLeft": "Masekonzi {n} asara",
+    "lib.arcade.stepsN": "Matanho: {n}",
+    "lib.arcade.crossed": "Kumba: {n}/{t}",
+    "lib.arcade.pipes": "Mapombi akapfuura: {n}/{t}",
+    "lib.arcade.distance": "Chinhambwe: {n}/{t} m",
+    "lib.arcade.speedN": "Kumhanya: {n}",
+    "lib.arcade.note.whack-a-mole": "Makonzo anobuda mumakomba — dzvanya kana kubata konzo kumurova. Rova makonzo akakwana nguva isati yapera. Kubva paZvikamu 4 kune mabhomba: kurova rimwe kunobvisa mapoinzi.",
+    "lib.arcade.hole": "Gomba",
+    "lib.arcade.hitsN": "Kurova: {n}/{t}",
+    "lib.arcade.note.simon": "Mutambo unotamba kutevedzana kwemavara nenzwi — dzokorora nenzira imwe chete. Raundi imwe neimwe inowedzera danho rimwe. Rangarira kureba kunodiwa kuti upfuure chikamu. Kubva paChikamu 7 kune mabhatani 6.",
+    "lib.arcade.seqN": "Kutevedzana: {n}/{t}",
+    "lib.arcade.watch": "Tarisa…",
+    "lib.arcade.yourTurnShort": "Ndiwe zvino",
+    "lib.arcade.note.aim-trainer": "Zvinangwa zvinoonekera zvisina kurongeka uye zvinonyangarika nokukurumidza — rova zvakawanda sezvaunogona. Zvinoita zvidiki uye zvinokurumidza. Rova zvinangwa zvakakwana usati wapotsa kupfuura kashanu kuti upfuure chikamu.",
+    "lib.arcade.missN": "Kupotsa: {n}/{t}",
+    "lib.arcade.answer": "Mhinduro",
+    "lib.arcade.note.quick-math": "Verenga mupfungwa nokukurumidza sezvaunogona: nyora mhinduro uye dzvanya Enter. Mubvunzo mumwe nomumwe une muganhu wenguva; mhinduro isiri iyo kana nguva kupera zvinotora upenyu humwe (une 3). Pindura mibvunzo yakakwana nemazvo kuti upfuure chikamu.",
+    "lib.arcade.correctN": "Zvakarurama: {n}/{t}",
+    "lib.arcade.note.reaction": "Mira kusvika skrini yava yegirinhi, ipapo dzvanya nokukurumidza sezvaunogona. Kudzvanya nguva isati yakwana mutadzo (mitadzo 3 unokundwa). Avhareji yako mumaraundi 5 inofanira kukunda muganhu wechikamu.",
+    "lib.arcade.roundN": "Raundi {n}/{t}",
+    "lib.arcade.limitMs": "Muganhu: {n} ms",
+    "lib.arcade.rxWait": "Mira girinhi…",
+    "lib.arcade.rxGo": "DZVANYA!",
+    "lib.arcade.rxEarly": "Nekukurumidza zvikuru!",
+    "lib.arcade.gameArea": "Nzvimbo yemutambo",
+    "lib.arcade.note.pong": "Famba nemausi, kweva nemunwe kana shandisa mabhatani ← → kudzora bhati riri pazasi. Pfura bhora richipfuura komputa; wokutanga kusvika mapoinzi 5 anokunda. Bhora rinokurumidza nekurova kwega kwega.",
+    "lib.arcade.note.space-shooter": "Famba nemausi, kweva nemunwe kana shandisa mabhatani ← → kutungamira; ngarava yako inopfura yega. Paradza ngarava dzemhandu dzakakwana kuti upfuure chikamu, utize kukwenya nemoto wemhandu. Une hupenyu 3.",
+    "lib.arcade.note.asteroids": "← → inotenderedza ngarava, ↑ inosundira, Space inopfura. Paradza matombo ose kuti upfuure chikamu; matombo makuru anopfuya kuita madiki. Ngarava inoonekera kubva kune rimwe divi reskrini. Une hupenyu 3.",
+    "lib.arcade.note.maze": "Shandisa mabhatani etsvimbo (kana kupukuta, kana mabhatani) kuti ubve padota regirinhi kuenda kubendera dzvuku nguva isati yapera. Kubva paChikamu 5 mukana une gute: unoona nharaunda yako chete, nzvimbo dzawakaenda dzinorangarirwa.",
+    "lib.arcade.note.road-cross": "Shandisa mabhatani etsvimbo, kupukuta kana mabhatani kusvetuka chinyoro kubva pazasi kusvika kumusoro. Tiza mota; kubva paChikamu 5 chikamu chepamusoro rwizi, saka svetuka pamapuranga anoyangarara. Svika kumba katatu kuti upfuure chikamu. Une hupenyu 3.",
+    "lib.arcade.note.flappy": "Bata nzvimbo yemutambo, dzvanya Space kana ↑ kuti urove mapapiro. Furura napakati pemapombi usina kubata pombi, pasi kana denga. Zvikamu zvepamusoro zvine mikaha yakamanikana uye kubhururuka kunokurumidza.",
+    "lib.arcade.note.runner": "Bata nzvimbo yemutambo, dzvanya Space kana ↑ kuti usvetuke makakuti; bata ↓ kuti udonhedze pasi pehwayana dzakareba (kana svetuka dzakaderera). Mhanya kure kuti upfuure chikamu. Kumhanya kunowedzera nguva dzose.",
+    "lib.arcade.fire": "Pfura",
+    "lib.arcade.jump": "Svetuka",
+    "lib.arcade.aimTarget": "Chinangwa",
+    "lib.game.soundOn": "Vhura ruzha",
+    "lib.game.soundOff": "Vhara ruzha"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate Tic-Tac-Toe",
       "desc": "Tic-tac-toe pamabhodhi madiki 9: bhokisi raunosarudza rinosarudza kwaanofanira kutamba mudzidzi wako; kurwisa komputa munhanho 10."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Pfura bhora richipfuura komputa; wokutanga kusvika mapoinzi 5 anokunda. Zvikamu 10 nemukwikwidzi anokurumidza uye akapinza."
+    },
+    "space-shooter": {
+      "name": "Mupfuri Wedenga",
+      "desc": "Tungamira ngarava yako, bvisa ngarava dzemhandu utize moto wadzo; zvikamu 10 nemafambiro makuru, kupfura kunodzoka uye mhandu dzakasimba."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Tenderera, sundira uye pfura kuti upwanye matombo ekudenga; matombo makuru anopfuya kuita madiki. Zvikamu 10 nematombo mazhinji uye anokurumidza."
+    },
+    "maze": {
+      "name": "Gwara Rakaoma",
+      "desc": "Tsvaga mukana wekubuda mugwara nguva isati yapera; zvikamu 10 kubva kumagwara madiki kusvika makuru, negute pazvikamu zvepamusoro."
+    },
+    "road-cross": {
+      "name": "Kuyambuka Mugwagwa (rakafanana neFrogger)",
+      "desc": "Svetusa chinyoro mumigwagwa ine vanhu vazhinji nenzizi dzemapuranga anoyangarara kuti ugare wakasvika kumba katatu; zvikamu 10 nemotokari dzinokurumidza nerwizi pazvikamu zvepamusoro."
+    },
+    "flappy": {
+      "name": "Mutambo wakafanana neFlappy Bird",
+      "desc": "Bata kuti urove mapapiro uye ubhururuke napakati pemapombi; zvikamu 10 nemikaha yakamanikana uye kumhanya kuri kuwedzera."
+    },
+    "runner": {
+      "name": "Mumhanyi weDino",
+      "desc": "Svetuka makakuti uye udonhedze pasi pehwayana; mhanya kure kuti upfuure chimwe nechimwe chezvikamu 10 kumhanya kuchiwedzera."
+    },
+    "whack-a-mole": {
+      "name": "Rova Konzo",
+      "desc": "Rova makonzo anobuda mumakomba nguva isati yapera utize mabhomba; zvikamu 10 kubva pakuzorora kusvika pakukurumidza kwazvo."
+    },
+    "simon": {
+      "name": "Simon (Mavara Ekurangarira)",
+      "desc": "Rangarira uye dzokorora kutevedzana kwemavara nenzwi; kutevedzana kurefu pazvikamu 10, nemabhatani 6 kubva paChikamu 7."
+    },
+    "aim-trainer": {
+      "name": "Kudzidziswa Kunanga",
+      "desc": "Rova zvinangwa zvinoonekera zvisina kurongeka zvichinyangarika nokukurumidza; zvinangwa zvinoita zvidiki pazvikamu 10, uye nguva yako yekukurumidza kupindura inoyerwa."
+    },
+    "quick-math": {
+      "name": "Masvomhu Anokurumidza",
+      "desc": "Itai kuwedzera, kubvisa, kuwanza nekupatsanura mupfungwa muchimanikidzwa nenguva; zvikamu 10 kubva pamisiyano yakareruka kusvika pamataurirwo."
+    },
+    "reaction": {
+      "name": "Bvunzo Yekukurumidza Kupindura",
+      "desc": "Dzvanya panguva iyo skrini inova yegirinhi; avhareji yako yemaraundi 5 inofanira kusangana nemuganhu wechikamu chega chega, unoomarara pazvikamu 10."
     }
   },
   "s": {

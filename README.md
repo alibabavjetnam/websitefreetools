@@ -126,6 +126,28 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Game giải trí | Xếp khối 10x10 | `tools/block-10x10.html` |
 | Game giải trí | Nối điểm chiếm ô (Dots and Boxes) | `tools/dots-boxes.html` |
 | Game giải trí | Ultimate Tic-Tac-Toe (Caro 9 bàn) | `tools/ultimate-tictactoe.html` |
+| Game giải trí | Pong (Bóng bàn điện tử) | `tools/pong.html` |
+| Game giải trí | Bắn phi thuyền | `tools/space-shooter.html` |
+| Game giải trí | Tiểu hành tinh (Asteroids) | `tools/asteroids.html` |
+| Game giải trí | Mê cung | `tools/maze.html` |
+| Game giải trí | Qua đường (Ếch qua đường) | `tools/road-cross.html` |
+| Game giải trí | Chim bay (Flappy) | `tools/flappy.html` |
+| Game giải trí | Khủng long chạy | `tools/runner.html` |
+| Game giải trí | Đập chuột (Whack-a-mole) | `tools/whack-a-mole.html` |
+| Game giải trí | Simon (Nhớ dãy màu) | `tools/simon.html` |
+| Game giải trí | Tập ngắm (Aim Trainer) | `tools/aim-trainer.html` |
+| Game giải trí | Toán nhanh | `tools/quick-math.html` |
+| Game giải trí | Thử phản xạ | `tools/reaction.html` |
+| Game giải trí | Kalah (Mancala) | `tools/kalah.html` |
+| Game giải trí | Rắn và thang | `tools/snakes-ladders.html` |
+| Game giải trí | Cờ cối (Nine Men's Morris) | `tools/nine-mens-morris.html` |
+| Game giải trí | Hải chiến (Battleship) | `tools/battleship.html` |
+| Game giải trí | Bầu cua tôm cá | `tools/bau-cua.html` |
+| Game giải trí | Baccarat | `tools/baccarat.html` |
+| Game giải trí | Bài cào (ba lá) | `tools/bai-cao.html` |
+| Game giải trí | Bingo | `tools/bingo.html` |
+| Game giải trí | Yahtzee (Xúc xắc 5 viên) | `tools/yahtzee.html` |
+| Game giải trí | Bài 8 lá (Crazy Eights) | `tools/crazy-eights.html` |
 
 Chơi online (cờ vua, cờ tướng, cờ úp, cờ vây): nước đi chuyển qua broker MQTT công cộng miễn phí (`src/lib/mqtt.ts` tự viết, `src/lib/online.ts`), mã hoá AES-GCM theo từng bàn; bàn công khai lên danh sách "Bàn chờ bạn", bàn riêng mời bằng link `?id=<guid>`; đăng nhập Google thì ván đấu (JSON) lưu vào Drive của người chơi (`WFTools/Games`).
 

@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Velg en farge for å fylle hele området du eier øverst til venstre; det sluker nabo-ruter i den fargen. Gjør hele brettet til én farge innen det tillatte antallet trekk.",
     "lib.arcade.note.mastermind": "Datamaskinen skjuler en rekke farger. Velg en farge for hver posisjon, og trykk deretter Gjett. En svart pinne = riktig farge på riktig plass; en hvit pinne = riktig farge på feil plass. Knekk koden før du går tom for gjett.",
     "lib.arcade.note.hanoi": "Flytt alle skivene til den siste pinnen. Flytt bare den øverste skiven på en pinne hver gang, og legg aldri en større skive oppå en mindre. Klikk på startpinnen, og deretter på målpinnen.",
-    "lib.arcade.note.pipes": "Klikk på en brikke for å rotere røret 90°. Koble alle rørene til ett nettverk uten åpne ender (åpne ender vises i rødt)."
+    "lib.arcade.note.pipes": "Klikk på en brikke for å rotere røret 90°. Koble alle rørene til ett nettverk uten åpne ender (åpne ender vises i rødt).",
+    "lib.arcade.pongScore": "Du {a} – {b} PC (først til {t})",
+    "lib.arcade.kills": "Ødelagt: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} steiner igjen",
+    "lib.arcade.timeLeft": "{n} s igjen",
+    "lib.arcade.stepsN": "Steg: {n}",
+    "lib.arcade.crossed": "Hjemme: {n}/{t}",
+    "lib.arcade.pipes": "Rør passert: {n}/{t}",
+    "lib.arcade.distance": "Avstand: {n}/{t} m",
+    "lib.arcade.speedN": "Fart: {n}",
+    "lib.arcade.note.whack-a-mole": "Muldvarper titter opp av hullene – klikk eller trykk på en muldvarp for å slå den. Slå nok muldvarper før tiden går ut. Fra nivå 4 er det bomber: treffer du en, mister du poeng.",
+    "lib.arcade.hole": "Hull",
+    "lib.arcade.hitsN": "Treff: {n}/{t}",
+    "lib.arcade.note.simon": "Spillet viser en rekke med farger og lyder – gjenta den i samme rekkefølge. Hver runde kommer ett steg til. Husk den nødvendige lengden for å klare nivået. Fra nivå 7 er det 6 felt.",
+    "lib.arcade.seqN": "Rekke: {n}/{t}",
+    "lib.arcade.watch": "Se på …",
+    "lib.arcade.yourTurnShort": "Din tur",
+    "lib.arcade.note.aim-trainer": "Blink dukker opp tilfeldig og forsvinner raskt – treff så mange du kan. De blir mindre og raskere. Treff nok blink før du bommer mer enn 5 ganger for å klare nivået.",
+    "lib.arcade.missN": "Bom: {n}/{t}",
+    "lib.arcade.answer": "Svar",
+    "lib.arcade.note.quick-math": "Regn i hodet så raskt du kan: skriv svaret og trykk Enter. Hvert spørsmål har en tidsgrense; feil svar eller tidsavbrudd koster et liv (du har 3). Svar riktig på nok spørsmål for å klare nivået.",
+    "lib.arcade.correctN": "Riktig: {n}/{t}",
+    "lib.arcade.note.reaction": "Vent til skjermen blir grønn, og klikk så fort du kan. Å klikke for tidlig er en feil (3 feil og du taper). Snittet ditt over 5 runder må slå grensen for nivået.",
+    "lib.arcade.roundN": "Runde {n}/{t}",
+    "lib.arcade.limitMs": "Grense: {n} ms",
+    "lib.arcade.rxWait": "Vent på grønt …",
+    "lib.arcade.rxGo": "KLIKK!",
+    "lib.arcade.rxEarly": "For tidlig!",
+    "lib.arcade.gameArea": "Spillområde",
+    "lib.arcade.note.pong": "Flytt musen, dra med fingeren eller bruk tastene ← → for å styre racketen nederst. Slå ballen forbi datamaskinen; først til 5 poeng vinner. Ballen går fortere for hvert treff.",
+    "lib.arcade.note.space-shooter": "Flytt musen, dra med fingeren eller bruk tastene ← → for å styre; skipet skyter automatisk. Ødelegg nok fiendeskip for å klare nivået, og unngå sammenstøt og fiendens skudd. Du har 3 liv.",
+    "lib.arcade.note.asteroids": "← → dreier skipet, ↑ gir fremdrift, mellomrom skyter. Ødelegg alle steinene for å klare nivået; store steiner deler seg i mindre. Skipet dukker opp igjen på motsatt side av skjermen. Du har 3 liv.",
+    "lib.arcade.note.maze": "Bruk piltastene (eller sveip, eller knappene) for å komme fra den grønne prikken til det røde flagget før tiden går ut. Fra nivå 5 er labyrinten tåkete: du ser bare omgivelsene dine, og steder du har vært huskes.",
+    "lib.arcade.note.road-cross": "Bruk piltastene, sveip eller knappene for å hoppe frosken fra bunnen til toppen. Unngå trafikken; fra nivå 5 er øvre del en elv, så hopp på de flytende stokkene. Kom hjem 3 ganger for å klare nivået. Du har 3 liv.",
+    "lib.arcade.note.flappy": "Trykk på spillområdet, trykk mellomrom eller ↑ for å flakse. Fly gjennom åpningene mellom rørene uten å berøre rør, bakke eller tak. Høyere nivåer har smalere åpninger og raskere flyvning.",
+    "lib.arcade.note.runner": "Trykk på spillområdet, trykk mellomrom eller ↑ for å hoppe over kaktuser; hold ↓ for å dukke under høye fugler (eller hopp over lave). Løp langt nok for å klare nivået. Farten øker hele tiden.",
+    "lib.arcade.fire": "Skyt",
+    "lib.arcade.jump": "Hopp",
+    "lib.arcade.aimTarget": "Blink",
+    "lib.game.soundOn": "Slå på lyd",
+    "lib.game.soundOff": "Slå av lyd"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate tikk-takk-tå",
       "desc": "Tikk-takk-tå på 9 små brett: ruten du velger avgjør hvor motstanderen må spille; mot datamaskinen over 10 nivåer."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Slå ballen forbi datamaskinen; først til 5 poeng vinner. 10 nivåer med en stadig raskere og skarpere motstander."
+    },
+    "space-shooter": {
+      "name": "Romskyting",
+      "desc": "Styr skipet, skyt ned fiendeskip og unngå skuddene deres; 10 nivåer med større bølger, gjengjeldelse og tøffere fiender."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Roter, gi fremdrift og skyt for å knuse romsteinene; store steiner deler seg i mindre. 10 nivåer med flere og raskere steiner."
+    },
+    "maze": {
+      "name": "Labyrint",
+      "desc": "Finn veien ut av labyrinten før tiden går ut; 10 nivåer fra små til store labyrinter, med tåke på høyere nivåer."
+    },
+    "road-cross": {
+      "name": "Kryss veien (Frogger-stil)",
+      "desc": "Hopp frosken over trafikkerte veier og elver med flytende stokker for å komme hjem 3 ganger; 10 nivåer med raskere trafikk og elv på høyere nivåer."
+    },
+    "flappy": {
+      "name": "Spill i Flappy Bird-stil",
+      "desc": "Trykk for å flakse og fly gjennom åpningene mellom rørene; 10 nivåer med smalere åpninger og økende fart."
+    },
+    "runner": {
+      "name": "Dino-løper",
+      "desc": "Hopp over kaktuser og dukk under fugler; løp langt nok for å klare hvert av de 10 nivåene mens farten stiger."
+    },
+    "whack-a-mole": {
+      "name": "Slå muldvarpen",
+      "desc": "Slå muldvarpene som titter opp av hullene før tiden går ut, og unngå bombene; 10 nivåer fra rolige til lynraske."
+    },
+    "simon": {
+      "name": "Simon (fargehukommelse)",
+      "desc": "Husk og gjenta rekken av farger og lyder; lengre rekker over 10 nivåer, med 6 felt fra nivå 7."
+    },
+    "aim-trainer": {
+      "name": "Siktetrening",
+      "desc": "Treff blinkene som dukker opp tilfeldig og forsvinner raskt; blinkene krymper over 10 nivåer, og reaksjonstiden din måles."
+    },
+    "quick-math": {
+      "name": "Hoderegning",
+      "desc": "Regn pluss, minus, gange og dele i hodet under tidspress; 10 nivåer fra enkle stykker til uttrykk."
+    },
+    "reaction": {
+      "name": "Reaksjonstest",
+      "desc": "Klikk i det øyeblikket skjermen blir grønn; snittet over 5 runder må holde nivåets grense, som blir strammere over 10 nivåer."
     }
   },
   "s": {

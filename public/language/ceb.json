@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Pagpili og kolor aron pun-on ang tibuok nimong dapit sa taas nga wala nga suok; tamayon niini ang kasikbit nga mga kuwadro nga ingon-ana ang kolor. Himoa nga usa ra ka kolor ang tibuok tabla sulod sa gitugot nga gidaghanon sa lakang.",
     "lib.arcade.note.mastermind": "Gitagoan sa kompyuter ang usa ka laray sa mga kolor. Pagpili og kolor alang sa matag posisyon, dayon pindota ang Tag-ana. Itom nga peg = husto nga kolor sa husto nga lugar; puti nga peg = husto nga kolor sa sayop nga lugar. Dekoda ang code sa dili pa mahurot ang imong mga tag-ana.",
     "lib.arcade.note.hanoi": "Ipadulong ang tanang disc sa katapusang peg. Ang labing ibabaw ra nga disc sa peg ang ibalhin matag higayon, ug ayaw gayod butang og mas dako nga disc ibabaw sa mas gamay. Pag-klik sa gigikanan nga peg, dayon sa target nga peg.",
-    "lib.arcade.note.pipes": "Pag-klik sa tile aron ipaligid ang tubo og 90°. Ikonektar ang tanang tubo ngadto sa usa ka network nga walay bukas nga tumoy (ang bukas nga tumoy pula ang pagpakita)."
+    "lib.arcade.note.pipes": "Pag-klik sa tile aron ipaligid ang tubo og 90°. Ikonektar ang tanang tubo ngadto sa usa ka network nga walay bukas nga tumoy (ang bukas nga tumoy pula ang pagpakita).",
+    "lib.arcade.pongScore": "Ikaw {a} – {b} Kompyuter (una hangtod {t})",
+    "lib.arcade.kills": "Nalaglag: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} na lang ka bato",
+    "lib.arcade.timeLeft": "{n} s na lang",
+    "lib.arcade.stepsN": "Mga lakang: {n}",
+    "lib.arcade.crossed": "Nakauli: {n}/{t}",
+    "lib.arcade.pipes": "Mga tubo nga nalapasan: {n}/{t}",
+    "lib.arcade.distance": "Gilay-on: {n}/{t} m",
+    "lib.arcade.speedN": "Katulin: {n}",
+    "lib.arcade.note.whack-a-mole": "Mogawas ang mga moles gikan sa mga lungag — i-click o i-tap ang mole aron mapalo kini. Palo og igo nga mga moles sa dili pa mahutdan og oras. Gikan sa lebel 4 naay mga bomba: kung makapalo ka og bomba, mawad-an kag puntos.",
+    "lib.arcade.hole": "Lungag",
+    "lib.arcade.hitsN": "Mga igo: {n}/{t}",
+    "lib.arcade.note.simon": "Magpatugtog ang dula og han-ay sa mga kolor ug tingog — balika kini sa samang han-ay. Matag hugna madugangan og usa ka lakang. Hinumdomi ang gikinahanglan nga gitas-on aron mapasar ang lebel. Gikan sa lebel 7 naay 6 ka pad.",
+    "lib.arcade.seqN": "Han-ay: {n}/{t}",
+    "lib.arcade.watch": "Tan-awa…",
+    "lib.arcade.yourTurnShort": "Imong turno",
+    "lib.arcade.note.aim-trainer": "Ang mga target mugawas bisan asa ug dali ra mawala — igoa ang daghan kutob sa imong mahimo. Mamenos sila ug mas paspas. Igoa ang igo nga mga target nga dili molapas sa 5 ka sala aron mapasar ang lebel.",
+    "lib.arcade.missN": "Mga sala: {n}/{t}",
+    "lib.arcade.answer": "Tubag",
+    "lib.arcade.note.quick-math": "Sulbaha sa hunahuna sa pinakapaspas nga imong mahimo: i-type ang tubag ug pindota ang Enter. Ang matag pangutana naay limitasyon sa oras; ang sayop nga tubag o pagkahutdan og oras mokuha og kinabuhi (naa kay 3). Tubaga og husto ang igo nga mga pangutana aron mapasar ang lebel.",
+    "lib.arcade.correctN": "Husto: {n}/{t}",
+    "lib.arcade.note.reaction": "Hulata nga mahimong berde ang screen, unya i-click sa pinakapaspas. Ang pag-click nga sayo ra kaayo usa ka foul (3 ka foul ug mawala ka). Ang imong average sa 5 ka hugna kinahanglan molapas sa limitasyon sa lebel.",
+    "lib.arcade.roundN": "Hugna {n}/{t}",
+    "lib.arcade.limitMs": "Limitasyon: {n} ms",
+    "lib.arcade.rxWait": "Hulata ang berde…",
+    "lib.arcade.rxGo": "I-CLICK!",
+    "lib.arcade.rxEarly": "Sayo ra kaayo!",
+    "lib.arcade.gameArea": "Dapit sa dula",
+    "lib.arcade.note.pong": "Ibalhin ang mouse, i-drag ang imong tudlo o gamita ang ← → nga mga yawe aron makontrol ang ubos nga paddle. Ipalapas ang bola sa kompyuter; ang unang makakuha og 5 ka puntos mudaog. Mo-paspas ang bola sa matag igo.",
+    "lib.arcade.note.space-shooter": "Ibalhin ang mouse, i-drag ang imong tudlo o gamita ang ← → nga mga yawe aron mag-giya; awtomatikong mopabuto ang imong barko. Laglaga ang igo nga mga barko sa kaaway aron mapasar ang lebel, ug likayi ang mga bangga ug ang pabuto sa kaaway. Naa kay 3 ka kinabuhi.",
+    "lib.arcade.note.asteroids": "Ang ← → mopaliko sa barko, ang ↑ mopaspas, ang Space mopabuto. Laglaga ang tanang bato aron mapasar ang lebel; ang dagkong bato mabahin ngadto sa gagmay. Mogawas ang barko sa laing kilid sa screen. Naa kay 3 ka kinabuhi.",
+    "lib.arcade.note.maze": "Gamita ang mga arrow key (o swipe, o ang mga buton) aron makaabot gikan sa berdeng tulbok ngadto sa pulang bandila sa dili pa mahutdan og oras. Gikan sa lebel 5 naay gabon ang maze: ang makita ra nimo anaa sa palibot, ug mahinumdoman ang mga lugar nga imong nadan-an.",
+    "lib.arcade.note.road-cross": "Gamita ang mga arrow key, swipe o ang mga buton aron paluksohon ang baki gikan sa ubos paingon sa taas. Likayi ang trapiko; gikan sa lebel 5 sapa ang ibabaw nga bahin, busa luksoa ang mga naglutaw nga troso. Makauli og 3 ka higayon aron mapasar ang lebel. Naa kay 3 ka kinabuhi.",
+    "lib.arcade.note.flappy": "I-tap ang dapit sa dula, pindota ang Space o ↑ aron mo-flap. Lupad agi sa mga ruwang tali sa mga tubo nga dili mahikap ang tubo, yuta o kisame. Sa mas taas nga lebel mas pig-ot ang mga ruwang ug mas paspas ang lupad.",
+    "lib.arcade.note.runner": "I-tap ang dapit sa dula, pindota ang Space o ↑ aron molukso sa ibabaw sa mga kaktus; pugngi ang ↓ aron mokuhaw ilalom sa taas nga mga langgam (o luksoa ang ubos). Dagan og igo kalayo aron mapasar ang lebel. Padayon nga mo-paspas ang katulin.",
+    "lib.arcade.fire": "Pabuto",
+    "lib.arcade.jump": "Luksoa",
+    "lib.arcade.aimTarget": "Target",
+    "lib.game.soundOn": "I-on ang tunog",
+    "lib.game.soundOff": "I-off ang tunog"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate Tic-Tac-Toe",
       "desc": "Tic-tac-toe sa 9 ka gagmay nga tabla: ang kuwadro nga imong pilion maoy mopasya kon asa magdula ang kontra; batok sa kompyuter sa 10 ka lebel."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Ipalapas ang bola sa kompyuter; ang unang makakuha og 5 ka puntos mudaog. 10 ka lebel nga mas paspas ug mas hait nga kontra."
+    },
+    "space-shooter": {
+      "name": "Space Shooter",
+      "desc": "Giyai ang imong barko, pabuhii ang mga barko sa kaaway ug likayi ang ilang pabuto; 10 ka lebel nga mas dagkong mga balud, balos nga pabuto ug mas lisod nga mga kaaway."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Pagtuyok, pagpaspas ug pagpabuto aron madugmok ang mga bato sa kawanangan; ang dagkong bato mabahin ngadto sa gagmay. 10 ka lebel nga mas daghan ug mas paspas nga mga bato."
+    },
+    "maze": {
+      "name": "Maze",
+      "desc": "Pangitaa ang dalan paggawas sa maze sa dili pa mahutdan og oras; 10 ka lebel gikan sa gagmay hangtod sa dagkong maze, nga naay gabon sa mas taas nga lebel."
+    },
+    "road-cross": {
+      "name": "Pagtabok sa Dalan (estilo sa Frogger)",
+      "desc": "Palukso ang baki tabok sa mga busy nga dalan ug sapa nga naay mga troso aron makauli og 3 ka higayon; 10 ka lebel nga mas paspas ang trapiko ug naay sapa sa mas taas nga lebel."
+    },
+    "flappy": {
+      "name": "Dula nga estilo sa Flappy Bird",
+      "desc": "I-tap aron mo-flap ug lupad agi sa mga ruwang tali sa mga tubo; 10 ka lebel nga mas pig-ot ang mga ruwang ug nagakusog ang katulin."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Luksoa ang mga kaktus ug kuhaw ilalom sa mga langgam; dagan og igo kalayo aron mapasar ang matag usa sa 10 ka lebel samtang nagakusog ang katulin."
+    },
+    "whack-a-mole": {
+      "name": "Palo-palo sa Mole",
+      "desc": "Palua ang mga moles nga mogawas sa mga lungag sa dili pa mahutdan og oras, ug likayi ang mga bomba; 10 ka lebel gikan sa hinay hangtod sa paspas kaayo."
+    },
+    "simon": {
+      "name": "Simon (Mga Kolor sa Panumduman)",
+      "desc": "Hinumdomi ug balika ang han-ay sa mga kolor ug tingog; mas taas nga mga han-ay sa 10 ka lebel, nga naay 6 ka pad gikan sa lebel 7."
+    },
+    "aim-trainer": {
+      "name": "Tigsanay sa Pagtutok",
+      "desc": "Igoa ang mga target nga mugawas bisan asa ug dali ra mawala; mamenos ang mga target sa 10 ka lebel, ug masukod ang imong oras sa reaksyon."
+    },
+    "quick-math": {
+      "name": "Paspas nga Matematika",
+      "desc": "Pagdugang, pagkuha, pagpadaghan ug pagbahin sa hunahuna ilalom sa pugos sa oras; 10 ka lebel gikan sa yano nga mga sumada hangtod sa mga ekspresyon."
+    },
+    "reaction": {
+      "name": "Pagsulay sa Oras sa Reaksyon",
+      "desc": "I-click sa gutlo nga mahimong berde ang screen; ang imong average sa 5 ka hugna kinahanglan makaabot sa limitasyon sa matag lebel, nga mohugot sa 10 ka lebel."
     }
   },
   "s": {

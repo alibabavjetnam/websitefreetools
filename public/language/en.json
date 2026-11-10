@@ -469,7 +469,75 @@
     "lib.arcade.jump": "Jump",
     "lib.arcade.aimTarget": "Target",
     "lib.game.soundOn": "Turn sound on",
-    "lib.game.soundOff": "Turn sound off"
+    "lib.game.soundOff": "Turn sound off",
+    "lib.arcade.note.kalah": "You play the bottom row, the computer the top; the big pit on the right is your store. Click a pit to pick up all its seeds and sow them counter-clockwise, one per pit (skipping your opponent’s store). If your last seed lands in your store you move again; if it lands in an empty pit on your side opposite a pit with seeds, you capture those seeds. When one side is empty, the other side’s seeds go to its owner’s store; the bigger store wins.",
+    "lib.arcade.note.snakes": "Roll the die and move that many squares, from 1 up to 100. Land on the foot of a ladder to climb it, or on a snake’s head to slide down. From level 4 you must roll the exact number to land on 100. Higher levels have more snakes, fewer ladders and more opponents. First to reach 100 wins.",
+    "lib.arcade.square": "Square {n}",
+    "lib.arcade.ladderUp": "Up the ladder!",
+    "lib.arcade.snakeDown": "Swallowed by a snake!",
+    "lib.arcade.needExact": "You need the exact number to land on 100.",
+    "lib.arcade.note.nmm": "Each side has 9 pieces. Phase 1: take turns placing pieces on empty points. Phase 2: slide a piece to an adjacent empty point. With only 3 pieces left you may “fly” to any empty point. Make three in a row (a “mill”) to remove an opponent’s piece (pieces not in a mill first). You lose when you are down to 2 pieces or cannot move. You play white and go first.",
+    "lib.arcade.inHand": "To place: {a} · {b}",
+    "lib.arcade.removePiece": "Pick an opponent piece to remove.",
+    "lib.arcade.enemyWaters": "Enemy waters (click to fire)",
+    "lib.arcade.yourFleet": "Your fleet",
+    "lib.arcade.note.battleship": "Each side has 5 ships (lengths 5, 4, 3, 3, 2) placed at random on a 10x10 grid. Take turns firing at a cell: a hit turns red, a miss turns light blue, and hitting every cell of a ship sinks it. Sink the whole enemy fleet first to win. At higher levels the computer deduces your ships’ positions more cleverly.",
+    "lib.arcade.shipsLeft": "Ships left: you {a} · enemy {b}",
+    "lib.arcade.theySunk": "The enemy sank one of your ships!",
+    "lib.arcade.theyHit": "The enemy hit one of your ships.",
+    "lib.arcade.theyMiss": "The enemy missed.",
+    "lib.arcade.youSunk": "You sank an enemy ship!",
+    "lib.arcade.youHit": "Hit!",
+    "lib.arcade.youMiss": "Miss.",
+    "lib.arcade.shake": "Shake",
+    "lib.arcade.clearBets": "Clear bets",
+    "lib.arcade.note.bau-cua": "Virtual coins only — no real money. Pick a chip value, click the animals to place bets, then press Shake. For every die that matches an animal you bet on, you get your stake back plus an equal amount for each match. Reach the target coins within the allowed rounds to clear the level.",
+    "lib.arcade.note.baccarat": "Virtual coins only — no real money. Bet on Player, Banker or Tie, then press Deal. A hand’s value is the last digit of its total (A = 1, 2–9 face value, 10/J/Q/K = 0); the hand closer to 9 wins, and third cards are drawn by the standard rules. Player pays 1:1, Banker 0.95:1, Tie 8:1 (Player/Banker bets are returned on a tie). Reach the target coins within the allowed rounds to clear the level.",
+    "lib.arcade.banker": "Banker",
+    "lib.arcade.player": "Player",
+    "lib.arcade.tie": "Tie",
+    "lib.arcade.openCards": "Reveal",
+    "lib.arcade.note.bai-cao": "Virtual coins only — no real money. Each side gets 3 cards. A hand scores the last digit of its total (A = 1, 2–9 face value, 10/J/Q/K = 10, i.e. 0 points). Ranking: Three of a kind (“Sáp”) is highest, then three face cards (“Ba tiên”), then 9 points down to 0. Place a bet, press Deal and then Reveal to compare with the dealer. From level 6 the dealer wins ties. Reach the target coins within the allowed rounds to clear the level.",
+    "lib.arcade.caoSap": "Three of a kind",
+    "lib.arcade.caoBaTien": "Three face cards",
+    "lib.arcade.caoPts": "{n} pts",
+    "lib.arcade.note.bingo": "The computer calls numbers from 1 to 75. When a called number is on your card, click it to mark it (the centre is free). Complete a row, column or diagonal and press BINGO! — you must beat the computer opponents. A false BINGO! locks the button for a few seconds. Higher levels call faster and have more opponents.",
+    "lib.arcade.opponentsN": "Opponents: {n}",
+    "lib.arcade.falseBingo": "Not a full line yet! Button locked for 3 seconds.",
+    "lib.arcade.bingoGo": "Calling numbers!",
+    "lib.arcade.note.yahtzee": "Each turn you roll 5 dice up to 3 times: click a die to keep it, then press Roll to re-roll the others. Then pick a box in the table to score (each box is used once; a box that does not fit scores 0). 13 turns. The Ones–Sixes boxes add a 35 bonus if they total 63 or more. Reach the level’s target score to win.",
+    "lib.arcade.turnN": "Turn {n}/13",
+    "lib.arcade.pickCat": "Pick a box to score",
+    "lib.arcade.rollsLeft": "Roll ({n} left)",
+    "lib.arcade.upperBonus": "Ones–Sixes bonus",
+    "lib.arcade.scored": "Scored {n}",
+    "lib.arcade.note.crazy-eights": "Play a card that matches the top card of the discard pile by suit or rank. Eights are wild: play one any time and choose a new suit. If you have no playable card, draw from the pile (up to 3 cards); if you still cannot play, you pass. First to empty their hand wins. Higher levels have more opponents and the computer plays more cleverly.",
+    "lib.arcade.opponent": "Opponent",
+    "lib.arcade.pileLeft": "Draw pile: {n}",
+    "lib.arcade.pickSuit": "Choose a new suit",
+    "lib.arcade.aiSuit": "The computer chose {s}",
+    "lib.arcade.aiPass": "The computer passes.",
+    "lib.arcade.mustPlay": "You have a playable card — play it.",
+    "lib.arcade.youPass": "You drew 3 cards and pass.",
+    "lib.arcade.bcGourd": "Gourd",
+    "lib.arcade.bcCrab": "Crab",
+    "lib.arcade.bcShrimp": "Shrimp",
+    "lib.arcade.bcFish": "Fish",
+    "lib.arcade.bcRooster": "Rooster",
+    "lib.arcade.bcDeer": "Deer",
+    "lib.arcade.yOnes": "Ones",
+    "lib.arcade.yTwos": "Twos",
+    "lib.arcade.yThrees": "Threes",
+    "lib.arcade.yFours": "Fours",
+    "lib.arcade.yFives": "Fives",
+    "lib.arcade.ySixes": "Sixes",
+    "lib.arcade.yThree": "Three of a kind",
+    "lib.arcade.yFour": "Four of a kind",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Small straight (30)",
+    "lib.arcade.yLarge": "Large straight (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Chance"
   },
   "pages": {
     "home": {
@@ -1086,6 +1154,46 @@
     "reaction": {
       "name": "Reaction Time Test",
       "desc": "Click the moment the screen turns green; your 5-round average must meet each level’s limit, which gets tighter over 10 levels."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Sow seeds around the pits, capture your opponent’s seeds and move again when you land in your store; play the computer over 10 levels from easy to hard."
+    },
+    "snakes-ladders": {
+      "name": "Snakes and Ladders",
+      "desc": "Roll the die from square 1 to 100, climb ladders, avoid snakes and reach the finish before your opponents; 10 levels."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Place, slide and fly your pieces to make three in a row and remove your opponent’s pieces; play the computer over 10 levels."
+    },
+    "battleship": {
+      "name": "Battleship",
+      "desc": "Find and sink the computer’s fleet on a 10x10 grid before it sinks yours; 10 levels as the computer deduces more cleverly."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Gourd Crab Fish Prawn)",
+      "desc": "Traditional Vietnamese dice game: bet virtual coins on the animals and shake three dice; reach the target coins over 10 levels (no real money)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Bet on Player, Banker or Tie with cards dealt by the standard rules, using virtual coins; reach the target coins over 10 levels (no real money)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Three-Card Game)",
+      "desc": "Compare 3-card hands with the dealer: three of a kind, three face cards, then 9 points down to 0; virtual coins, 10 levels, no real money."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Mark the called numbers on your 5x5 card and shout BINGO before the computer opponents; numbers are called faster over 10 levels."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Five Dice)",
+      "desc": "Roll five dice, keep the good ones and fill 13 scoring boxes; reach the target score over 10 levels."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Match suit or rank, eights change the suit; empty your hand before 1 to 3 computer opponents over 10 levels."
     }
   },
   "s": {

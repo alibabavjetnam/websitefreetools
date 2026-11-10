@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Zaɓi launi don cika duk yankin da kake da shi a kusurwar sama ta hagu; yana haɗiye ƙwayoyin maƙwabta masu wannan launi. Mayar da dukan allon launi ɗaya cikin adadin motsin da aka ba da izini.",
     "lib.arcade.note.mastermind": "Kwamfuta tana ɓoye jere na launuka. Zaɓi launi ga kowane wuri, sannan ka danna Yi hasashe. Fegi baƙi = launi daidai a wuri daidai; fegi fari = launi daidai a wurin da bai dace ba. Fasa lambar kafin hasashenka ya ƙare.",
     "lib.arcade.note.hanoi": "Matsar da dukkan faifai zuwa sandar ƙarshe. Motsa faifan saman sanda kawai a kowane lokaci, kuma kada ka taɓa sanya babban faifai a kan ƙarami. Danna sandar asali, sannan sandar manufa.",
-    "lib.arcade.note.pipes": "Danna tayal don juya bututun 90°. Haɗa dukkan bututu zuwa cibiyar sadarwa ɗaya ba tare da buɗaɗɗen ƙarshe ba (ana nuna buɗaɗɗun ƙarshe da ja)."
+    "lib.arcade.note.pipes": "Danna tayal don juya bututun 90°. Haɗa dukkan bututu zuwa cibiyar sadarwa ɗaya ba tare da buɗaɗɗen ƙarshe ba (ana nuna buɗaɗɗun ƙarshe da ja).",
+    "lib.arcade.pongScore": "Kai {a} – {b} kwamfuta (na farko zuwa {t})",
+    "lib.arcade.kills": "An lalata: {n}/{t}",
+    "lib.arcade.rocksLeft": "Duwatsu {n} sun rage",
+    "lib.arcade.timeLeft": "Sauran daƙiƙa {n}",
+    "lib.arcade.stepsN": "Matakai: {n}",
+    "lib.arcade.crossed": "A gida: {n}/{t}",
+    "lib.arcade.pipes": "Bututun da aka wuce: {n}/{t}",
+    "lib.arcade.distance": "Nisa: {n}/{t} m",
+    "lib.arcade.speedN": "Gudu: {n}",
+    "lib.arcade.note.whack-a-mole": "Beraye suna fitowa daga ramuka — danna ko taɓa bera don ka buge shi. Ka buge berayen da suka isa kafin lokaci ya ƙare. Daga mataki na 4 akwai bama-bamai: bugun ɗaya yana rage maki.",
+    "lib.arcade.hole": "Rami",
+    "lib.arcade.hitsN": "Bugu: {n}/{t}",
+    "lib.arcade.note.simon": "Wasan yana kunna jerin launuka da sautuka — maimaita su da tsari ɗaya. Kowane zagaye yana ƙara mataki ɗaya. Ka tuna tsawon da ake buƙata don ka ci matakin. Daga mataki na 7 akwai maɓallai 6.",
+    "lib.arcade.seqN": "Jeri: {n}/{t}",
+    "lib.arcade.watch": "Kalli…",
+    "lib.arcade.yourTurnShort": "Lokacinka ne",
+    "lib.arcade.note.aim-trainer": "Abubuwan da za a buga suna fitowa ba tare da tsari ba kuma suna ɓacewa da sauri — ka buge yawancin da za ka iya. Suna ƙanƙancewa kuma suna yin sauri. Ka buge isassun manufofi kafin ka yi kuskure fiye da sau 5 don ka ci matakin.",
+    "lib.arcade.missN": "Kurakurai: {n}/{t}",
+    "lib.arcade.answer": "Amsa",
+    "lib.arcade.note.quick-math": "Yi lissafi a zuciya da sauri gwargwadon iko: rubuta amsar ka danna Enter. Kowace tambaya tana da iyakar lokaci; amsa mara kyau ko ƙarewar lokaci yana ɗaukar rai ɗaya (kana da 3). Amsa isassun tambayoyi daidai don ka ci matakin.",
+    "lib.arcade.correctN": "Daidai: {n}/{t}",
+    "lib.arcade.note.reaction": "Jira allon ya zama kore, sannan ka danna da sauri gwargwadon iko. Danna da wuri laifi ne (laifuffuka 3 kuma ka fadi). Matsakaicinka a zagaye 5 dole ya fi iyakar matakin.",
+    "lib.arcade.roundN": "Zagaye {n}/{t}",
+    "lib.arcade.limitMs": "Iyaka: {n} ms",
+    "lib.arcade.rxWait": "Jira kore…",
+    "lib.arcade.rxGo": "DANNA!",
+    "lib.arcade.rxEarly": "Da wuri sosai!",
+    "lib.arcade.gameArea": "Filin wasa",
+    "lib.arcade.note.pong": "Motsa linzamin kwamfuta, ja da yatsa ko yi amfani da maɓallan ← → don sarrafa kwalliyar ƙasa. Ka buga ƙwallon ta wuce kwamfutar; wanda ya fara samun maki 5 ya ci. Ƙwallon tana yin sauri a kowane bugu.",
+    "lib.arcade.note.space-shooter": "Motsa linzamin kwamfuta, ja da yatsa ko yi amfani da maɓallan ← → don tuƙi; jirgin ruwanka yana harbi da kansa. Lalata isassun jiragen abokan gaba don ka ci matakin, ka guji karo da harbin abokan gaba. Kana da rayuka 3.",
+    "lib.arcade.note.asteroids": "← → suna juya jirgin, ↑ yana turawa, Space yana harbi. Lalata duk duwatsu don ka ci matakin; manyan duwatsu suna rabuwa zuwa ƙanana. Jirgin yana sake bayyana daga gefen allo na can. Kana da rayuka 3.",
+    "lib.arcade.note.maze": "Yi amfani da maɓallan kibiya (ko shafawa, ko maɓallai) don ka isa daga ɗigon kore zuwa tutar ja kafin lokaci ya ƙare. Daga mataki na 5 akwai hazo a cikin hanyar: kana ganin kewayenka kawai, ana tunawa da wuraren da ka ziyarta.",
+    "lib.arcade.note.road-cross": "Yi amfani da maɓallan kibiya, shafawa ko maɓallai don tsallaka kwaɗo daga ƙasa zuwa sama. Ka guji zirga-zirga; daga mataki na 5 ɓangaren sama kogi ne, don haka tsallaka kan gwanayen da ke iyo. Ka isa gida sau 3 don ka ci matakin. Kana da rayuka 3.",
+    "lib.arcade.note.flappy": "Taɓa filin wasa, danna Space ko ↑ don ka buga fika. Tashi ta cikin giɓin da ke tsakanin bututu ba tare da taɓa bututu, ƙasa ko rufi ba. Matakai masu girma suna da giɓi masu kunkuntar tashi da sauri.",
+    "lib.arcade.note.runner": "Taɓa filin wasa, danna Space ko ↑ don ka tsallaka kan cactus; riƙe ↓ don ka sunkuya ƙarƙashin tsuntsaye masu tsawo (ko ka tsallaka na ƙasa). Gudu isasshen nisa don ka ci matakin. Gudu yana ƙaruwa kullum.",
+    "lib.arcade.fire": "Harba",
+    "lib.arcade.jump": "Tsalle",
+    "lib.arcade.aimTarget": "Manufa",
+    "lib.game.soundOn": "Kunna sauti",
+    "lib.game.soundOff": "Kashe sauti"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Tic-Tac-Toe na Ƙarshe",
       "desc": "Tic-tac-toe a ƙananan alluna 9: ƙwayar da ka zaɓa tana tantance inda abokin hamayyarka zai yi wasa; da kwamfuta a matakai 10."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Ka buga ƙwallon ta wuce kwamfutar; wanda ya fara samun maki 5 ya ci. Matakai 10 da abokin hamayya mai sauri da kaifi."
+    },
+    "space-shooter": {
+      "name": "Mai harbin sararin samaniya",
+      "desc": "Tuƙa jirginka, harbo jiragen abokan gaba ka guji harbinsu; matakai 10 masu manyan taguwa, harbin martani da abokan gaba masu ƙarfi."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Juya, tura ka harba don ka farfasa duwatsun sararin samaniya; manyan duwatsu suna rabuwa zuwa ƙanana. Matakai 10 masu ƙarin duwatsu da sauri."
+    },
+    "maze": {
+      "name": "Hanyar Ruɗani",
+      "desc": "Nemo hanyar fita daga hanyar ruɗani kafin lokaci ya ƙare; matakai 10 daga ƙanana zuwa manyan hanyoyi, da hazo a matakai masu girma."
+    },
+    "road-cross": {
+      "name": "Tsallaka Hanya (irin Frogger)",
+      "desc": "Tsallaka da kwaɗo kan hanyoyi masu cunkoso da koguna masu gwanaye masu iyo don isa gida sau 3; matakai 10 masu zirga-zirga mai sauri da kogi a matakai masu girma."
+    },
+    "flappy": {
+      "name": "Wasan irin Flappy Bird",
+      "desc": "Taɓa don buga fika ka tashi ta giɓin da ke tsakanin bututu; matakai 10 masu giɓi kunkuntar da ƙaruwar gudu."
+    },
+    "runner": {
+      "name": "Mai gudun Dino",
+      "desc": "Tsallaka kan cactus ka sunkuya ƙarƙashin tsuntsaye; gudu isasshen nisa don cin kowanne daga cikin matakai 10 yayin da gudu ke ƙaruwa."
+    },
+    "whack-a-mole": {
+      "name": "Buge Bera",
+      "desc": "Buge berayen da ke fitowa daga ramuka kafin lokaci ya ƙare ka guji bama-bamai; matakai 10 daga a hankali zuwa da sauri sosai."
+    },
+    "simon": {
+      "name": "Simon (launukan tunawa)",
+      "desc": "Tuna ka maimaita jerin launuka da sautuka; jerin da suka fi tsayi a matakai 10, da maɓallai 6 daga mataki na 7."
+    },
+    "aim-trainer": {
+      "name": "Horon Nufi",
+      "desc": "Buge manufofin da ke fitowa ba tare da tsari ba kuma suna ɓacewa da sauri; manufofi suna ƙanƙancewa a matakai 10, kuma ana auna saurin martaninka."
+    },
+    "quick-math": {
+      "name": "Lissafi Cikin Sauri",
+      "desc": "Yi tara, ragewa, ninkawa da rabawa a zuciya cikin matsin lokaci; matakai 10 daga lissafi masu sauƙi zuwa jimloli."
+    },
+    "reaction": {
+      "name": "Gwajin Saurin Martani",
+      "desc": "Danna a daidai lokacin da allon ya zama kore; matsakaicinka a zagaye 5 dole ya cika iyakar kowane mataki, wanda ke tsananta a matakai 10."
     }
   },
   "s": {

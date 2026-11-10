@@ -176,6 +176,16 @@ const PATHS: Record<string, string> = {
   'aim-trainer': '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',
   'quick-math': '<path d="M6 7h6M9 4v6M14 17h6M6 15l5 5M11 15l-5 5M14 8h6"/>',
   'reaction': '<path d="M13 2L5 14h6l-1 8 8-12h-6z"/>',
+  'kalah': '<rect x="3" y="7" width="18" height="10" rx="5"/><circle cx="8" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="16" cy="12" r="1.2"/>',
+  'snakes-ladders': '<path d="M4 20L10 4M9 20L15 4M5.5 15h5M7.5 10h5M13 20c4-1 7-3 5-6s-6-2-4-6"/>',
+  'nine-mens-morris': '<rect x="3" y="3" width="18" height="18"/><rect x="7" y="7" width="10" height="10"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/>',
+  'battleship': '<path d="M3 15h18l-3 4H6zM7 15V9h6v6M10 9V5h3"/><path d="M3 21c3-1.500 6 1.500 9 0s6 1.500 9 0" opacity=".6"/>',
+  'bau-cua': '<rect x="4" y="4" width="7" height="7" rx="1.500"/><rect x="13" y="13" width="7" height="7" rx="1.500"/><circle cx="7.500" cy="7.500" r=".8"/><circle cx="16.500" cy="16.500" r=".8"/><circle cx="14.500" cy="14.500" r=".8"/><circle cx="18.500" cy="18.500" r=".8"/>',
+  'baccarat': '<rect x="4" y="5" width="9" height="13" rx="1.500"/><rect x="11" y="7" width="9" height="13" rx="1.500"/><path d="M8.500 9v4M15.500 11v4"/>',
+  'bai-cao': '<rect x="3" y="6" width="8" height="12" rx="1.500"/><rect x="8" y="5" width="8" height="12" rx="1.500"/><rect x="13" y="6" width="8" height="12" rx="1.500"/>',
+  'bingo': '<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9.300 4v16M14.700 4v16M4 9.300h16M4 14.700h16"/><circle cx="12" cy="12" r="1.400"/>',
+  'yahtzee': '<rect x="3" y="3" width="10" height="10" rx="2"/><rect x="11" y="11" width="10" height="10" rx="2"/><circle cx="6.500" cy="6.500" r=".9"/><circle cx="9.500" cy="9.500" r=".9"/><circle cx="14" cy="14" r=".9"/><circle cx="18" cy="18" r=".9"/>',
+  'crazy-eights': '<rect x="5" y="3" width="11" height="15" rx="2"/><path d="M10.500 7.500c-1.500 0-2.500 1-2.500 2s1 2 2.500 2 2.500 1 2.500 2-1 2-2.500 2" transform="translate(0 0)"/><path d="M19 7l2 12" opacity=".6"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

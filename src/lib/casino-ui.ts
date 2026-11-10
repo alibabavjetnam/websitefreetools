@@ -10,11 +10,11 @@ import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, s
 import { A, Af, Ah } from './arcade-ui';
 import { sfx } from './sfx';
 
-const face = (c: Card, cls = '', attrs = ''): string => {
+export const face = (c: Card, cls = '', attrs = ''): string => {
   const s = SUIT[c.s], r = RANK[c.r];
   return `<div class="cd up rel${isRed(c) ? ' red' : ''}${cls ? ' ' + cls : ''}" ${attrs} role="img" aria-label="${r}${s}"><span class="ci">${r}<i>${s}</i></span><span class="cb">${s}</span></div>`;
 };
-const back = (): string => '<div class="cd down rel"></div>';
+export const back = (): string => '<div class="cd down rel"></div>';
 
 const POKER_NAME: Record<PokerHand, [string, string]> = {
   royal: ['ph.royal', 'Thùng phá sảnh lớn'], sflush: ['ph.sflush', 'Thùng phá sảnh'], quads: ['ph.quads', 'Tứ quý'], full: ['ph.full', 'Cù lũ'],

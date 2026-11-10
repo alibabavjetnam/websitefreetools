@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Dooro midab si aad ugu buuxiso aagga oo dhan ee aad leedahay geeska sare ee bidix; wuxuu liqaa unugyada deriska ah ee midabkaas leh. Ka dhig looxa oo dhan hal midab gudaha tirada dhaqdhaqaaqyada la oggol yahay.",
     "lib.arcade.note.mastermind": "Kombiyuutarku wuxuu qariyaa safka midabbo. Meel kasta dooro midab, kadibna riix Qiyaas. Qodob madow = midab sax ah meel sax ah; qodob cadaan = midab sax ah meel khaldan. Jebi koodhka ka hor inta aysan qiyaasahaagu dhammaan.",
     "lib.arcade.note.hanoi": "U wareeji kartidhka oo dhan usha ugu dambeeya. Mar kasta dhaqaaji kartidhka usha ugu sarreeya oo keliya, mana dhigin kartid weyn mid yar kor. Guji usha asalka ah, kadibna usha bartilmaameedka.",
-    "lib.arcade.note.pipes": "Guji taayir si aad tuubada 90° u wareejiso. Ku xidh tuubooyinka oo dhan shabakad keliya oo aan lahayn dhammaadyo furan (dhammaadyada furan waxay u muuqdaan guduud)."
+    "lib.arcade.note.pipes": "Guji taayir si aad tuubada 90° u wareejiso. Ku xidh tuubooyinka oo dhan shabakad keliya oo aan lahayn dhammaadyo furan (dhammaadyada furan waxay u muuqdaan guduud).",
+    "lib.arcade.pongScore": "Adiga {a} – {b} kombiyuutar (kan hore gaara {t})",
+    "lib.arcade.kills": "La burburiyay: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} dhagax ayaa hadhay",
+    "lib.arcade.timeLeft": "{n} ilbiriqsi ayaa hadhay",
+    "lib.arcade.stepsN": "Tallaabooyin: {n}",
+    "lib.arcade.crossed": "Guriga: {n}/{t}",
+    "lib.arcade.pipes": "Tuubooyin la dhaafay: {n}/{t}",
+    "lib.arcade.distance": "Masaafo: {n}/{t} m",
+    "lib.arcade.speedN": "Xawaare: {n}",
+    "lib.arcade.note.whack-a-mole": "Dixiriyada dhulka waxay ka soo baxaan godadka — guji ama taabo dixiriga si aad u dhufato. Dhufo dixiriyo ku filan ka hor inta aan waqtigu dhammaan. Laga bilaabo heerka 4 waxaa jira bambooyin: haddii aad mid dhufato dhibco ayaad lumisaa.",
+    "lib.arcade.hole": "God",
+    "lib.arcade.hitsN": "Dhufasho: {n}/{t}",
+    "lib.arcade.note.simon": "Ciyaartu waxay ciyaartaa isku xigxiga midabbo iyo codad — ku celi isla habkaas. Wareeg kasta waxaa lagu daraa hal tallaabo. Xusuuso dhererka loo baahan yahay si aad heerka u gudubto. Laga bilaabo heerka 7 waxaa jira 6 badhan.",
+    "lib.arcade.seqN": "Isku xigxiga: {n}/{t}",
+    "lib.arcade.watch": "Fiiri…",
+    "lib.arcade.yourTurnShort": "Markaa adiga ah",
+    "lib.arcade.note.aim-trainer": "Bartilmaameedyadu way soo muuqdaan si aan kala sooc lahayn oo dhaqso ayay u libdhaan — dhufo inta aad awooddo. Way yaraadaan oo way dhaqso badan yihiin. Dhufo bartilmaameedyo ku filan ka hor inta aadan 5 jeer ka khalad gelin si aad heerka u gudubto.",
+    "lib.arcade.missN": "Khaladaad: {n}/{t}",
+    "lib.arcade.answer": "Jawaab",
+    "lib.arcade.note.quick-math": "Maskaxdaada ku xal sida ugu dhaqsaha badan: qor jawaabta oo taabo Enter. Su'aal kastaa waxay leedahay xad waqti; jawaab khaldan ama waqti dhammaad ayaa nolol ku kaalaysa (waxaad haysataa 3). Ku jawaab su'aalo ku filan si sax ah si aad heerka u gudubto.",
+    "lib.arcade.correctN": "Sax: {n}/{t}",
+    "lib.arcade.note.reaction": "Sug ilaa shaashaddu cagaarto, ka dibna guji sida ugu dhaqsaha badan. Gujinta goor hore waa xad-gudub (3 xad-gudub waad lumisaa). Celceliskaaga 5 wareeg waa inuu ka fiicnaado xadka heerka.",
+    "lib.arcade.roundN": "Wareeg {n}/{t}",
+    "lib.arcade.limitMs": "Xad: {n} ms",
+    "lib.arcade.rxWait": "Sug cagaar…",
+    "lib.arcade.rxGo": "GUJI!",
+    "lib.arcade.rxEarly": "Aad bay u hore!",
+    "lib.arcade.gameArea": "Goobta ciyaarta",
+    "lib.arcade.note.pong": "Dhaqaaji jiirka, farta ku jiid ama isticmaal furayaasha ← → si aad u xakamayso lakabka hoose. Kubadda kombiyuutarka ka dhaaf; ciyaartoygii hore ee gaara 5 dhibcood ayaa guuleysta. Kubaddu way dhaqso badnaataa dhufasho kasta.",
+    "lib.arcade.note.space-shooter": "Dhaqaaji jiirka, farta ku jiid ama isticmaal furayaasha ← → si aad u hagto; maraakiibtaadu si toos ah ayay u rasaasaysaa. Burburi maraakiib cadow oo ku filan si aad heerka u gudubto, oo iska ilaali is-dhaca iyo rasaasta cadowga. Waxaad haysataa 3 nolol.",
+    "lib.arcade.note.asteroids": "← → waxay wareejiyaan maraakiibta, ↑ waa riixid, Space waa rasaasayn. Burburi dhammaan dhagaxyada si aad heerka u gudubto; dhagaxyada waaweyn way kala jabaan kuwo yaryar. Maraakiibtu waxay ka soo muuqataa geesta kale ee shaashadda. Waxaad haysataa 3 nolol.",
+    "lib.arcade.note.maze": "Isticmaal furayaasha fallaadhaha (ama fiiq, ama badhamada) si aad uga gaarto dhibicda cagaarka ah calanka cas ka hor inta aan waqtigu dhammaan. Laga bilaabo heerka 5 maze-ka waxaa ku jira ceeryaamo: waxaad aragtaa waxa kuu dhow oo kaliya, goobaha la booqday waa la xusuustaa.",
+    "lib.arcade.note.road-cross": "Isticmaal furayaasha fallaadhaha, fiiq ama badhamada si aad xaaqda uga boodsiiso hoose ilaa sare. Iska ilaali gaadiidka; laga bilaabo heerka 5 qaybta sare waa webi, sidaas darteed ka boodo qoryaha sabeynaya. Gaar guriga 3 jeer si aad heerka u gudubto. Waxaad haysataa 3 nolol.",
+    "lib.arcade.note.flappy": "Taabo goobta ciyaarta, taabo Space ama ↑ si aad baalasha u garaacdo. Ka duub daloolada u dhexeeya tuubooyinka adigoon taaban tuubo, dhulka ama saqafka. Heerarka sare waxay leeyihiin daloolo cidhiidhi ah iyo duullaan dhaqso badan.",
+    "lib.arcade.note.runner": "Taabo goobta ciyaarta, taabo Space ama ↑ si aad uga boodo kaktuska; sii wad ↓ si aad hoos ugu foorarsato shimbiraha dhaadheer (ama ka boodo kuwa gaagaaban). Orod meel ku filan si aad heerka u gudubto. Xawaaruhu waa kordhayaa.",
+    "lib.arcade.fire": "Rasaas",
+    "lib.arcade.jump": "Boodo",
+    "lib.arcade.aimTarget": "Bartilmaameed",
+    "lib.game.soundOn": "Daar codka",
+    "lib.game.soundOff": "Ka demi codka"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Tic-Tac-Toe Ugu Dambeeya",
       "desc": "Tic-tac-toe 9 loox yar: unugga aad doorato ayaa go'aamiya meesha ka soo horjeedkaagu ku ciyaari doono; ka dhan ah kombiyuutarka 10 heer."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Kubadda kombiyuutarka ka dhaaf; ciyaartoygii hore ee gaara 5 dhibcood ayaa guuleysta. 10 heer oo ay la jirto cadow aad u dhaqso badan oo xariifsan."
+    },
+    "space-shooter": {
+      "name": "Rasaasaha Hawada",
+      "desc": "Hag maraakiibtaada, hoos u soo rid maraakiibta cadowga oo iska ilaali rasaastooda; 10 heer oo leh mawjado waaweyn, rasaas jawaab ah iyo cadow adag."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Wareeji, riix oo rasaasee si aad u jebiso dhagaxyada hawada; dhagaxyada waaweyn way kala jabaan kuwo yaryar. 10 heer oo dhagaxyo badan oo dhaqso badan leh."
+    },
+    "maze": {
+      "name": "Maze",
+      "desc": "Hel jidka looga baxo maze-ka ka hor inta aan waqtigu dhammaan; 10 heer oo ka bilaabma maze yaryar ilaa kuwa waaweyn, oo heerarka sare ceeryaamo leh."
+    },
+    "road-cross": {
+      "name": "Isgoyska Wadada (nooca Frogger)",
+      "desc": "Xaaqda ka boodsii jidadka mashquulka ah iyo webiyada qoryaha sabeynaya si aad guriga u gaarto 3 jeer; 10 heer oo leh gaadiid dhaqso badan iyo webi heerarka sare."
+    },
+    "flappy": {
+      "name": "Ciyaar nooca Flappy Bird",
+      "desc": "Taabo si aad baalasha u garaacdo oo ugu duul daloolada u dhexeeya tuubooyinka; 10 heer oo leh daloolo cidhiidhi ah iyo xawaare kordhaya."
+    },
+    "runner": {
+      "name": "Orodyahanka Dino",
+      "desc": "Ka boodo kaktuska oo hoos ugu foorarso shimbiraha; orod meel ku filan si aad u gudubto mid kasta oo ka mid ah 10-ka heer, xawaaruhuna waa kordhayaa."
+    },
+    "whack-a-mole": {
+      "name": "Dhufo Dixiriga",
+      "desc": "Dhufo dixiriyada ka soo baxa godadka ka hor inta aan waqtigu dhammaan oo iska ilaali bambooyinka; 10 heer oo ka bilaabma gaabis ilaa aad u dhaqso badan."
+    },
+    "simon": {
+      "name": "Simon (midabka xusuusta)",
+      "desc": "Xusuuso oo ku celi isku xigxiga midabbada iyo codadka; isku xigxiga ka dheer 10 heer, oo leh 6 badhan laga bilaabo heerka 7."
+    },
+    "aim-trainer": {
+      "name": "Tababarka bartilmaameedka",
+      "desc": "Dhufo bartilmaameedyada si aan kala sooc lahayn u soo muuqda oo dhaqso u libdha; bartilmaameedyadu way yaraadaan 10 heer, waxaana la cabbiraa waqtigaaga falcelinta."
+    },
+    "quick-math": {
+      "name": "Xisaab degdeg ah",
+      "desc": "Maskaxdaada ku samee isku-darka, dhimista, isku-dhufashada iyo qaybinta adigoo waqti ku cadaadsan yahay; 10 heer oo ka bilaabma isku-darro fudud ilaa tibaaxo."
+    },
+    "reaction": {
+      "name": "Imtixaanka falcelinta",
+      "desc": "Guji markii shaashaddu cagaarto; celceliska 5-ka wareeg waa inuu buuxiyaa xadka heer kasta, kaasoo cidhiidhi noqda 10-ka heer."
     }
   },
   "s": {

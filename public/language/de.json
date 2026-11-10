@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Wähle eine Farbe, um das gesamte Gebiet in der oberen linken Ecke damit zu füllen; es verschluckt benachbarte Felder dieser Farbe. Bringe das ganze Brett innerhalb der erlaubten Zugzahl auf eine Farbe.",
     "lib.arcade.note.mastermind": "Der Computer versteckt eine Farbreihe. Wähle für jede Position eine Farbe und drücke dann „Raten“. Ein schwarzer Stift = richtige Farbe an der richtigen Stelle; ein weißer Stift = richtige Farbe an der falschen Stelle. Knacke den Code, bevor deine Versuche aufgebraucht sind.",
     "lib.arcade.note.hanoi": "Bringe alle Scheiben auf den letzten Stab. Bewege jedes Mal nur die oberste Scheibe eines Stabs und lege nie eine größere auf eine kleinere. Klicke erst den Ausgangsstab, dann den Zielstab an.",
-    "lib.arcade.note.pipes": "Klicke auf ein Teil, um das Rohr um 90° zu drehen. Verbinde alle Rohre zu einem Netz, in dem kein offenes Ende mehr übrig ist (offene Enden sind rot markiert)."
+    "lib.arcade.note.pipes": "Klicke auf ein Teil, um das Rohr um 90° zu drehen. Verbinde alle Rohre zu einem Netz, in dem kein offenes Ende mehr übrig ist (offene Enden sind rot markiert).",
+    "lib.arcade.pongScore": "Du {a} – {b} CPU (wer zuerst {t} hat)",
+    "lib.arcade.kills": "Zerstört: {n}/{t}",
+    "lib.arcade.rocksLeft": "Noch {n} Felsen",
+    "lib.arcade.timeLeft": "Noch {n} s",
+    "lib.arcade.stepsN": "Schritte: {n}",
+    "lib.arcade.crossed": "Zuhause: {n}/{t}",
+    "lib.arcade.pipes": "Röhren passiert: {n}/{t}",
+    "lib.arcade.distance": "Strecke: {n}/{t} m",
+    "lib.arcade.speedN": "Tempo: {n}",
+    "lib.arcade.note.whack-a-mole": "Maulwürfe tauchen aus den Löchern auf – klicke oder tippe darauf, um sie zu treffen. Triff genug Maulwürfe, bevor die Zeit abläuft. Ab Level 4 gibt es Bomben: Wer eine trifft, verliert Punkte.",
+    "lib.arcade.hole": "Loch",
+    "lib.arcade.hitsN": "Treffer: {n}/{t}",
+    "lib.arcade.note.simon": "Das Spiel zeigt eine Folge aus Farben und Tönen – wiederhole sie in derselben Reihenfolge. Jede Runde kommt ein Schritt dazu. Erreiche die geforderte Länge, um das Level zu schaffen. Ab Level 7 gibt es 6 Felder.",
+    "lib.arcade.seqN": "Folge: {n}/{t}",
+    "lib.arcade.watch": "Aufgepasst …",
+    "lib.arcade.yourTurnShort": "Du bist dran",
+    "lib.arcade.note.aim-trainer": "Ziele erscheinen zufällig und verschwinden schnell – triff so viele wie möglich. Sie werden kleiner und schneller. Triff genug Ziele, bevor du mehr als 5-mal danebenliegst, um das Level zu schaffen.",
+    "lib.arcade.missN": "Fehlschüsse: {n}/{t}",
+    "lib.arcade.answer": "Antwort",
+    "lib.arcade.note.quick-math": "Rechne so schnell du kannst im Kopf: Antwort eintippen und Enter drücken. Jede Frage hat ein Zeitlimit; eine falsche Antwort oder Zeitüberschreitung kostet ein Leben (du hast 3). Beantworte genug Fragen richtig, um das Level zu schaffen.",
+    "lib.arcade.correctN": "Richtig: {n}/{t}",
+    "lib.arcade.note.reaction": "Warte, bis der Bildschirm grün wird, und klicke dann so schnell wie möglich. Zu früh zu klicken ist ein Fehlstart (bei 3 Fehlstarts verlierst du). Dein Durchschnitt über 5 Runden muss unter dem Limit des Levels liegen.",
+    "lib.arcade.roundN": "Runde {n}/{t}",
+    "lib.arcade.limitMs": "Limit: {n} ms",
+    "lib.arcade.rxWait": "Warte auf Grün …",
+    "lib.arcade.rxGo": "KLICK!",
+    "lib.arcade.rxEarly": "Zu früh!",
+    "lib.arcade.gameArea": "Spielfeld",
+    "lib.arcade.note.pong": "Bewege die Maus, ziehe mit dem Finger oder nutze die Tasten ← →, um den unteren Schläger zu steuern. Schlage den Ball am Computer vorbei; wer zuerst 5 Punkte hat, gewinnt. Mit jedem Treffer wird der Ball schneller.",
+    "lib.arcade.note.space-shooter": "Bewege die Maus, ziehe mit dem Finger oder nutze die Tasten ← →, um zu steuern; dein Schiff feuert automatisch. Zerstöre genug feindliche Schiffe, um das Level zu schaffen, und weiche Zusammenstößen und Beschuss aus. Du hast 3 Leben.",
+    "lib.arcade.note.asteroids": "← → drehen das Schiff, ↑ gibt Schub, Leertaste feuert. Zerstöre alle Felsen, um das Level zu schaffen; große Felsen zerfallen in kleinere. Das Schiff taucht am anderen Bildschirmrand wieder auf. Du hast 3 Leben.",
+    "lib.arcade.note.maze": "Nutze die Pfeiltasten (oder wische bzw. die Tasten), um vom grünen Punkt zur roten Flagge zu kommen, bevor die Zeit abläuft. Ab Level 5 liegt Nebel über dem Labyrinth: Du siehst nur deine Umgebung, besuchte Bereiche werden gemerkt.",
+    "lib.arcade.note.road-cross": "Steuere den Frosch mit den Pfeiltasten, per Wischen oder mit den Tasten von unten nach oben. Weiche dem Verkehr aus; ab Level 5 ist der obere Teil ein Fluss, hüpfe dort auf die Baumstämme. Erreiche 3-mal das Ziel, um das Level zu schaffen. Du hast 3 Leben.",
+    "lib.arcade.note.flappy": "Tippe auf das Spielfeld, drücke die Leertaste oder ↑, um zu flattern. Fliege durch die Lücken zwischen den Röhren, ohne Röhre, Boden oder Decke zu berühren. Höhere Level haben engere Lücken und schnelleren Flug.",
+    "lib.arcade.note.runner": "Tippe auf das Spielfeld, drücke die Leertaste oder ↑, um über Kakteen zu springen; halte ↓, um dich unter hohen Vögeln zu ducken (oder springe über niedrige). Laufe weit genug, um das Level zu schaffen. Das Tempo steigt immer weiter.",
+    "lib.arcade.fire": "Feuer",
+    "lib.arcade.jump": "Springen",
+    "lib.arcade.aimTarget": "Ziel",
+    "lib.game.soundOn": "Ton einschalten",
+    "lib.game.soundOff": "Ton ausschalten"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimatives Tic-Tac-Toe",
       "desc": "Tic-Tac-Toe über 9 kleine Bretter: Dein gewähltes Feld bestimmt, wo dein Gegner spielen muss; gegen den Computer in 10 Leveln."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Schlage den Ball am Computer vorbei; wer zuerst 5 Punkte hat, gewinnt. 10 Level mit einem immer schnelleren, schärferen Gegner."
+    },
+    "space-shooter": {
+      "name": "Weltraum-Shooter",
+      "desc": "Steuere dein Schiff, schieße feindliche Schiffe ab und weiche ihrem Feuer aus; 10 Level mit größeren Wellen, Gegenfeuer und stärkeren Gegnern."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Drehen, Schub geben und schießen, um die Weltraumfelsen zu zerlegen; große Felsen zerfallen in kleinere. 10 Level mit mehr und schnelleren Felsen."
+    },
+    "maze": {
+      "name": "Labyrinth",
+      "desc": "Finde den Weg aus dem Labyrinth, bevor die Zeit abläuft; 10 Level von kleinen bis großen Labyrinthen, in höheren Levels mit Nebel."
+    },
+    "road-cross": {
+      "name": "Straße überqueren (Frogger-Stil)",
+      "desc": "Hüpfe mit dem Frosch über belebte Straßen und Flüsse voller Baumstämme, um 3-mal nach Hause zu kommen; 10 Level mit schnellerem Verkehr und einem Fluss in höheren Levels."
+    },
+    "flappy": {
+      "name": "Spiel im Flappy-Bird-Stil",
+      "desc": "Tippen zum Flattern und durch die Lücken zwischen den Röhren fliegen; 10 Level mit engeren Lücken und steigendem Tempo."
+    },
+    "runner": {
+      "name": "Dino-Läufer",
+      "desc": "Springe über Kakteen und ducke dich unter Vögeln; laufe weit genug, um jedes der 10 Level zu schaffen, während das Tempo steigt."
+    },
+    "whack-a-mole": {
+      "name": "Schlag den Maulwurf",
+      "desc": "Schlage die Maulwürfe, die aus den Löchern auftauchen, bevor die Zeit abläuft, und weiche den Bomben aus; 10 Level von langsam bis sehr schnell."
+    },
+    "simon": {
+      "name": "Simon (Farbgedächtnis)",
+      "desc": "Merke dir die Folge aus Farben und Tönen und wiederhole sie; längere Folgen über 10 Level, ab Level 7 mit 6 Feldern."
+    },
+    "aim-trainer": {
+      "name": "Ziel-Training",
+      "desc": "Triff die Ziele, die zufällig erscheinen und schnell verschwinden; die Ziele schrumpfen über 10 Level, und deine Reaktionszeit wird gemessen."
+    },
+    "quick-math": {
+      "name": "Kopfrechnen",
+      "desc": "Addiere, subtrahiere, multipliziere und dividiere im Kopf unter Zeitdruck; 10 Level von einfachen Aufgaben bis zu Termen."
+    },
+    "reaction": {
+      "name": "Reaktionstest",
+      "desc": "Klicke genau dann, wenn der Bildschirm grün wird; dein 5-Runden-Durchschnitt muss das Limit des Levels erreichen, das über 10 Level enger wird."
     }
   },
   "s": {

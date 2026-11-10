@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Dewiswch liw i lenwi'r ardal gyfan sy'n eiddo i chi yn y gornel uchaf ar y chwith; mae'n llyncu celloedd cyfagos o'r lliw hwnnw. Gwnewch y bwrdd cyfan yn un lliw o fewn y nifer o symudiadau a ganiateir.",
     "lib.arcade.note.mastermind": "Mae'r cyfrifiadur yn cuddio rhes o liwiau. Dewiswch liw ar gyfer pob safle, yna pwyswch Dyfalu. Peg du = y lliw cywir yn y lle cywir; peg gwyn = y lliw cywir yn y lle anghywir. Datryswch y cod cyn i'ch dyfaliadau ddod i ben.",
     "lib.arcade.note.hanoi": "Symudwch yr holl ddisgiau i'r peg olaf. Symudwch ddim ond disg uchaf peg bob tro, a pheidiwch byth â rhoi disg fwy ar ben disg lai. Cliciwch ar y peg ffynhonnell, yna'r peg targed.",
-    "lib.arcade.note.pipes": "Cliciwch ar deilsen i gylchdroi'r bibell 90°. Cysylltwch bob pibell yn un rhwydwaith heb unrhyw bennau agored (dangosir pennau agored mewn coch)."
+    "lib.arcade.note.pipes": "Cliciwch ar deilsen i gylchdroi'r bibell 90°. Cysylltwch bob pibell yn un rhwydwaith heb unrhyw bennau agored (dangosir pennau agored mewn coch).",
+    "lib.arcade.pongScore": "Chi {a} – {b} Cyfrifiadur (cyntaf i {t})",
+    "lib.arcade.kills": "Dinistriwyd: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} craig ar ôl",
+    "lib.arcade.timeLeft": "{n} eiliad ar ôl",
+    "lib.arcade.stepsN": "Camau: {n}",
+    "lib.arcade.crossed": "Gartref: {n}/{t}",
+    "lib.arcade.pipes": "Pibellau wedi'u pasio: {n}/{t}",
+    "lib.arcade.distance": "Pellter: {n}/{t} m",
+    "lib.arcade.speedN": "Cyflymder: {n}",
+    "lib.arcade.note.whack-a-mole": "Mae tyrchod daear yn codi o'r tyllau — cliciwch neu tapiwch dwrch i'w daro. Trawwch ddigon o dyrchod cyn i'r amser ddod i ben. O lefel 4 ymlaen mae bomiau: mae taro bom yn costio pwyntiau.",
+    "lib.arcade.hole": "Twll",
+    "lib.arcade.hitsN": "Ergydion: {n}/{t}",
+    "lib.arcade.note.simon": "Mae'r gêm yn chwarae dilyniant o liwiau a synau — ailadroddwch ef yn yr un drefn. Mae pob rownd yn ychwanegu un cam arall. Cofiwch yr hyd sydd ei angen i glirio'r lefel. O lefel 7 ymlaen mae 6 pad.",
+    "lib.arcade.seqN": "Dilyniant: {n}/{t}",
+    "lib.arcade.watch": "Gwyliwch…",
+    "lib.arcade.yourTurnShort": "Eich tro chi",
+    "lib.arcade.note.aim-trainer": "Mae targedau'n ymddangos ar hap ac yn diflannu'n gyflym — trawwch gymaint ag y gallwch. Maen nhw'n mynd yn llai ac yn gyflymach. Trawwch ddigon o dargedau gyda dim mwy na 5 methiant i glirio'r lefel.",
+    "lib.arcade.missN": "Methiannau: {n}/{t}",
+    "lib.arcade.answer": "Ateb",
+    "lib.arcade.note.quick-math": "Datryswch yn eich pen mor gyflym ag y gallwch: teipiwch yr ateb a gwasgwch Enter. Mae terfyn amser ar bob cwestiwn; mae ateb anghywir neu redeg allan o amser yn costio bywyd (mae gennych 3). Atebwch ddigon o gwestiynau'n gywir i glirio'r lefel.",
+    "lib.arcade.correctN": "Cywir: {n}/{t}",
+    "lib.arcade.note.reaction": "Arhoswch i'r sgrin droi'n wyrdd, yna cliciwch mor gyflym ag y gallwch. Mae clicio'n rhy gynnar yn ffowl (3 ffowl ac rydych chi'n colli). Rhaid i'ch cyfartaledd dros 5 rownd guro terfyn y lefel.",
+    "lib.arcade.roundN": "Rownd {n}/{t}",
+    "lib.arcade.limitMs": "Terfyn: {n} ms",
+    "lib.arcade.rxWait": "Arhoswch am wyrdd…",
+    "lib.arcade.rxGo": "CLICIWCH!",
+    "lib.arcade.rxEarly": "Rhy gynnar!",
+    "lib.arcade.gameArea": "Ardal chwarae",
+    "lib.arcade.note.pong": "Symudwch y llygoden, llusgwch eich bys neu defnyddiwch y bysellau ← → i reoli'r bat gwaelod. Anfonwch y bêl heibio'r cyfrifiadur; y cyntaf i gael 5 pwynt sy'n ennill. Mae'r bêl yn cyflymu gyda phob ergyd.",
+    "lib.arcade.note.space-shooter": "Symudwch y llygoden, llusgwch eich bys neu defnyddiwch y bysellau ← → i lywio; mae eich llong yn tanio'n awtomatig. Dinistriwch ddigon o longau gelyn i glirio'r lefel, ac osgowch wrthdrawiadau a thân y gelyn. Mae gennych 3 bywyd.",
+    "lib.arcade.note.asteroids": "Mae ← → yn troi'r llong, mae ↑ yn rhoi hwb, mae Bylchwr yn tanio. Dinistriwch bob craig i glirio'r lefel; mae creigiau mawr yn hollti'n rhai llai. Mae'r llong yn ailymddangos o ochr arall y sgrin. Mae gennych 3 bywyd.",
+    "lib.arcade.note.maze": "Defnyddiwch y bysellau saeth (neu droi bys, neu'r botymau) i gyrraedd o'r dot gwyrdd i'r faner goch cyn i'r amser ddod i ben. O lefel 5 ymlaen mae niwl yn y ddrysfa: dim ond o'ch cwmpas chi y gwelwch, ac mae mannau yr ymwelwyd â nhw yn cael eu cofio.",
+    "lib.arcade.note.road-cross": "Defnyddiwch y bysellau saeth, troi bys neu'r botymau i neidio'r broga o'r gwaelod i'r brig. Osgowch y traffig; o lefel 5 ymlaen mae'r rhan uchaf yn afon, felly neidiwch ar y boncyffion arnofiol. Cyrhaeddwch adref 3 gwaith i glirio'r lefel. Mae gennych 3 bywyd.",
+    "lib.arcade.note.flappy": "Tapiwch yr ardal chwarae, gwasgwch Fylchwr neu ↑ i fflapio. Hedfanwch drwy'r bylchau rhwng y pibellau heb gyffwrdd â phibell, y llawr na'r nenfwd. Ar lefelau uwch mae'r bylchau'n gulach a'r hedfan yn gyflymach.",
+    "lib.arcade.note.runner": "Tapiwch yr ardal chwarae, gwasgwch Fylchwr neu ↑ i neidio dros gacti; daliwch ↓ i blygu o dan adar uchel (neu neidiwch dros y rhai isel). Rhedwch yn ddigon pell i glirio'r lefel. Mae'r cyflymder yn codi o hyd.",
+    "lib.arcade.fire": "Taniwch",
+    "lib.arcade.jump": "Neidiwch",
+    "lib.arcade.aimTarget": "Targed",
+    "lib.game.soundOn": "Troi sain ymlaen",
+    "lib.game.soundOff": "Troi sain i ffwrdd"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Tic-Tac-Toe Eithaf",
       "desc": "Tic-tac-toe ar draws 9 bwrdd bach: mae'r gell a ddewiswch yn penderfynu ble mae'n rhaid i'ch gwrthwynebydd chwarae; yn erbyn y cyfrifiadur dros 10 lefel."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Anfonwch y bêl heibio'r cyfrifiadur; y cyntaf i gael 5 pwynt sy'n ennill. 10 lefel gyda gwrthwynebydd cyflymach a mwy miniog."
+    },
+    "space-shooter": {
+      "name": "Saethwr Gofod",
+      "desc": "Llywiwch eich llong, saethwch longau gelyn a osgowch eu tân; 10 lefel gyda thonnau mwy, tân yn ôl a gelynion caletach."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Cylchdrowch, rhowch hwb a saethwch i chwalu'r creigiau gofod; mae creigiau mawr yn hollti'n rhai llai. 10 lefel gyda mwy o greigiau a chyflymach."
+    },
+    "maze": {
+      "name": "Drysfa",
+      "desc": "Dewch o hyd i'ch ffordd allan o'r ddrysfa cyn i'r amser ddod i ben; 10 lefel o ddrysfeydd bach i fawr, gyda niwl ar lefelau uwch."
+    },
+    "road-cross": {
+      "name": "Croesi'r Ffordd (arddull Frogger)",
+      "desc": "Neidiwch y broga dros ffyrdd prysur ac afonydd o foncyffion i gyrraedd adref 3 gwaith; 10 lefel gyda thraffig cyflymach ac afon ar lefelau uwch."
+    },
+    "flappy": {
+      "name": "Gêm arddull Flappy Bird",
+      "desc": "Tapiwch i fflapio a hedfan drwy'r bylchau rhwng pibellau; 10 lefel gyda bylchau culach a chyflymder cynyddol."
+    },
+    "runner": {
+      "name": "Dino Rhedwr",
+      "desc": "Neidiwch dros gacti a phlygwch o dan adar; rhedwch yn ddigon pell i glirio pob un o'r 10 lefel wrth i'r cyflymder godi."
+    },
+    "whack-a-mole": {
+      "name": "Taro'r Twrch",
+      "desc": "Trawwch y tyrchod sy'n codi o'r tyllau cyn i'r amser ddod i ben, ac osgowch y bomiau; 10 lefel o araf i gyflym iawn."
+    },
+    "simon": {
+      "name": "Simon (Lliwiau Cof)",
+      "desc": "Cofiwch ac ailadroddwch y dilyniant o liwiau a synau; dilyniannau hirach dros 10 lefel, gyda 6 pad o lefel 7."
+    },
+    "aim-trainer": {
+      "name": "Hyfforddwr Anelu",
+      "desc": "Trawwch y targedau sy'n ymddangos ar hap ac yn diflannu'n gyflym; mae targedau'n crebachu dros 10 lefel, a mesurir eich amser ymateb."
+    },
+    "quick-math": {
+      "name": "Mathemateg Gyflym",
+      "desc": "Adiwch, tynnwch, lluoswch a rhannwch yn eich pen dan bwysau amser; 10 lefel o symiau syml i ymadroddion."
+    },
+    "reaction": {
+      "name": "Prawf Amser Ymateb",
+      "desc": "Cliciwch yr eiliad y mae'r sgrin yn troi'n wyrdd; rhaid i'ch cyfartaledd dros 5 rownd gyrraedd terfyn pob lefel, sy'n tynhau dros 10 lefel."
     }
   },
   "s": {

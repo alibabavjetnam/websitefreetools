@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Wybierz kolor, aby wypełnić nim cały obszar w lewym górnym rogu, który posiadasz; pochłonie on sąsiednie pola tego koloru. Zamień całą planszę w jeden kolor w dozwolonej liczbie ruchów.",
     "lib.arcade.note.mastermind": "Komputer ukrywa rząd kolorów. Wybierz kolor dla każdej pozycji, a potem naciśnij Zgaduj. Czarny kołek = dobry kolor na dobrym miejscu; biały kołek = dobry kolor na złym miejscu. Złam kod, zanim skończą ci się próby.",
     "lib.arcade.note.hanoi": "Przenieś wszystkie krążki na ostatni słupek. Za każdym razem przenoś tylko wierzchni krążek ze słupka i nigdy nie kładź większego krążka na mniejszym. Kliknij słupek źródłowy, a potem docelowy.",
-    "lib.arcade.note.pipes": "Kliknij kafelek, aby obrócić rurę o 90°. Połącz wszystkie rury w jedną sieć bez otwartych końców (otwarte końce są zaznaczone na czerwono)."
+    "lib.arcade.note.pipes": "Kliknij kafelek, aby obrócić rurę o 90°. Połącz wszystkie rury w jedną sieć bez otwartych końców (otwarte końce są zaznaczone na czerwono).",
+    "lib.arcade.pongScore": "Ty {a} – {b} komputer (do {t})",
+    "lib.arcade.kills": "Zniszczone: {n}/{t}",
+    "lib.arcade.rocksLeft": "Zostało skał: {n}",
+    "lib.arcade.timeLeft": "Zostało {n} s",
+    "lib.arcade.stepsN": "Kroki: {n}",
+    "lib.arcade.crossed": "W domu: {n}/{t}",
+    "lib.arcade.pipes": "Minięte rury: {n}/{t}",
+    "lib.arcade.distance": "Dystans: {n}/{t} m",
+    "lib.arcade.speedN": "Prędkość: {n}",
+    "lib.arcade.note.whack-a-mole": "Krety wyskakują z dziur – kliknij lub dotknij kreta, aby go walnąć. Walnij wystarczająco dużo kretów, zanim skończy się czas. Od poziomu 4 pojawiają się bomby: trafienie w nią kosztuje punkty.",
+    "lib.arcade.hole": "Dziura",
+    "lib.arcade.hitsN": "Trafienia: {n}/{t}",
+    "lib.arcade.note.simon": "Gra odtwarza sekwencję kolorów i dźwięków – powtórz ją w tej samej kolejności. Co rundę dochodzi jeden krok. Zapamiętaj wymaganą długość, aby zaliczyć poziom. Od poziomu 7 jest 6 pól.",
+    "lib.arcade.seqN": "Sekwencja: {n}/{t}",
+    "lib.arcade.watch": "Patrz…",
+    "lib.arcade.yourTurnShort": "Twoja kolej",
+    "lib.arcade.note.aim-trainer": "Cele pojawiają się losowo i szybko znikają – trafiaj jak najwięcej. Robią się mniejsze i szybsze. Trafij odpowiednio dużo celów, zanim pomylisz się więcej niż 5 razy, aby zaliczyć poziom.",
+    "lib.arcade.missN": "Pudła: {n}/{t}",
+    "lib.arcade.answer": "Odpowiedź",
+    "lib.arcade.note.quick-math": "Licz w pamięci najszybciej, jak umiesz: wpisz wynik i naciśnij Enter. Każde pytanie ma limit czasu; błędna odpowiedź lub brak czasu kosztuje życie (masz 3). Odpowiedz poprawnie na wystarczająco wiele pytań, aby zaliczyć poziom.",
+    "lib.arcade.correctN": "Poprawne: {n}/{t}",
+    "lib.arcade.note.reaction": "Poczekaj, aż ekran zrobi się zielony, i kliknij tak szybko, jak potrafisz. Kliknięcie za wcześnie to faul (po 3 faulach przegrywasz). Twoja średnia z 5 rund musi być lepsza od limitu poziomu.",
+    "lib.arcade.roundN": "Runda {n}/{t}",
+    "lib.arcade.limitMs": "Limit: {n} ms",
+    "lib.arcade.rxWait": "Czekaj na zielony…",
+    "lib.arcade.rxGo": "KLIKNIJ!",
+    "lib.arcade.rxEarly": "Za wcześnie!",
+    "lib.arcade.gameArea": "Pole gry",
+    "lib.arcade.note.pong": "Poruszaj myszą, przeciągaj palcem lub użyj klawiszy ← →, aby sterować dolną paletką. Odbij piłkę tak, by minęła komputer; wygrywa ten, kto pierwszy zdobędzie 5 punktów. Z każdym odbiciem piłka przyspiesza.",
+    "lib.arcade.note.space-shooter": "Poruszaj myszą, przeciągaj palcem lub użyj klawiszy ← →, aby sterować; statek strzela automatycznie. Zniszcz odpowiednio dużo wrogich statków, aby zaliczyć poziom, i unikaj kolizji oraz ognia wroga. Masz 3 życia.",
+    "lib.arcade.note.asteroids": "← → obracają statek, ↑ daje ciąg, spacja strzela. Zniszcz wszystkie skały, aby zaliczyć poziom; duże skały rozpadają się na mniejsze. Statek pojawia się po drugiej stronie ekranu. Masz 3 życia.",
+    "lib.arcade.note.maze": "Użyj strzałek (lub przesuń palcem, lub przycisków), aby dojść od zielonej kropki do czerwonej flagi, zanim skończy się czas. Od poziomu 5 w labiryncie jest mgła: widzisz tylko najbliższe otoczenie, a odwiedzone miejsca są zapamiętywane.",
+    "lib.arcade.note.road-cross": "Użyj strzałek, przesunięcia palcem lub przycisków, aby przeskoczyć żabą z dołu na górę. Unikaj ruchu drogowego; od poziomu 5 górna część to rzeka, więc skacz po pływających kłodach. Dotrzyj do domu 3 razy, aby zaliczyć poziom. Masz 3 życia.",
+    "lib.arcade.note.flappy": "Dotknij pola gry, naciśnij spację lub ↑, aby zatrzepotać skrzydłami. Przeleć przez szczeliny między rurami, nie dotykając rury, ziemi ani sufitu. Wyższe poziomy mają węższe szczeliny i szybszy lot.",
+    "lib.arcade.note.runner": "Dotknij pola gry, naciśnij spację lub ↑, aby przeskoczyć kaktusy; przytrzymaj ↓, aby schylić się pod wysokimi ptakami (albo przeskocz niskie). Przebiegnij wystarczająco daleko, aby zaliczyć poziom. Prędkość stale rośnie.",
+    "lib.arcade.fire": "Strzał",
+    "lib.arcade.jump": "Skok",
+    "lib.arcade.aimTarget": "Cel",
+    "lib.game.soundOn": "Włącz dźwięk",
+    "lib.game.soundOff": "Wyłącz dźwięk"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate kółko i krzyżyk",
       "desc": "Kółko i krzyżyk na 9 małych planszach: wybrane przez ciebie pole decyduje, gdzie musi zagrać przeciwnik; gra z komputerem w 10 poziomach."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Odbij piłkę tak, by minęła komputer; wygrywa ten, kto pierwszy zdobędzie 5 punktów. 10 poziomów z coraz szybszym i sprytniejszym przeciwnikiem."
+    },
+    "space-shooter": {
+      "name": "Strzelanka kosmiczna",
+      "desc": "Steruj statkiem, zestrzeliwuj wrogie statki i unikaj ich ognia; 10 poziomów z większymi falami, odwzajemnianym ogniem i silniejszymi wrogami."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Obracaj się, dodawaj ciągu i strzelaj, by rozbijać kosmiczne skały; duże skały rozpadają się na mniejsze. 10 poziomów z liczniejszymi i szybszymi skałami."
+    },
+    "maze": {
+      "name": "Labirynt",
+      "desc": "Znajdź wyjście z labiryntu, zanim skończy się czas; 10 poziomów od małych do dużych labiryntów, z mgłą na wyższych poziomach."
+    },
+    "road-cross": {
+      "name": "Przejście przez ulicę (w stylu Froggera)",
+      "desc": "Przeprowadź żabę przez ruchliwe drogi i rzeki z pływającymi kłodami, by 3 razy dotrzeć do domu; 10 poziomów z szybszym ruchem i rzeką na wyższych poziomach."
+    },
+    "flappy": {
+      "name": "Gra w stylu Flappy Bird",
+      "desc": "Dotykaj, by trzepotać skrzydłami i przelatywać przez szczeliny między rurami; 10 poziomów z węższymi szczelinami i rosnącą prędkością."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Przeskakuj kaktusy i schylaj się pod ptakami; przebiegnij wystarczająco daleko, by zaliczyć każdy z 10 poziomów, gdy prędkość stale rośnie."
+    },
+    "whack-a-mole": {
+      "name": "Uderz kreta",
+      "desc": "Walnij krety wyskakujące z dziur, zanim skończy się czas, i unikaj bomb; 10 poziomów od wolnych do bardzo szybkich."
+    },
+    "simon": {
+      "name": "Simon (kolory do zapamiętania)",
+      "desc": "Zapamiętaj i powtórz sekwencję kolorów i dźwięków; coraz dłuższe sekwencje w 10 poziomach, od poziomu 7 z 6 polami."
+    },
+    "aim-trainer": {
+      "name": "Trening celności",
+      "desc": "Trafiaj w cele, które pojawiają się losowo i szybko znikają; cele maleją przez 10 poziomów, a twój czas reakcji jest mierzony."
+    },
+    "quick-math": {
+      "name": "Szybkie liczenie",
+      "desc": "Dodawaj, odejmuj, mnóż i dziel w pamięci pod presją czasu; 10 poziomów od prostych działań do wyrażeń."
+    },
+    "reaction": {
+      "name": "Test refleksu",
+      "desc": "Kliknij w chwili, gdy ekran zrobi się zielony; średnia z 5 rund musi mieścić się w limicie poziomu, który zaostrza się przez 10 poziomów."
     }
   },
   "s": {

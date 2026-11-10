@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Wielt eng Faarf, fir är ganz Fläch an der ieweschter lénkser Eck ze fëllen; si schléckt niewendrun Felder vun där Faarf. Maacht dat ganzt Brieft an der erlaabter Zuel un Zich eefaarweg.",
     "lib.arcade.note.mastermind": "De Computer verstoppt eng Rei vu Faarwen. Wielt eng Faarf fir all Positioun, da dréckt op Roden. E schwaarze Pinn = richteg Faarf op der richteger Plaz; e wäisse Pinn = richteg Faarf op der falscher Plaz. Knackt de Code, ier Är Versich opgebraucht sinn.",
     "lib.arcade.note.hanoi": "Réckelt all Scheiwen op de leschte Stab. Réckelt all Kéier nëmmen déi iewescht Scheif vun engem Stab a leet ni eng méi grouss Scheif op eng méi kleng. Klickt op de Quellstab, dann op den Zilstab.",
-    "lib.arcade.note.pipes": "Klickt op e Plättchen, fir d’Rouer em 90° ze dréinen. Verbënnt all Rouere zu engem Netz ouni oppen Enner (oppen Enner si rout)."
+    "lib.arcade.note.pipes": "Klickt op e Plättchen, fir d’Rouer em 90° ze dréinen. Verbënnt all Rouere zu engem Netz ouni oppen Enner (oppen Enner si rout).",
+    "lib.arcade.pongScore": "Du {a} – {b} Computer (éischten zu {t})",
+    "lib.arcade.kills": "Zerstéiert: {n}/{t}",
+    "lib.arcade.rocksLeft": "Nach {n} Steng",
+    "lib.arcade.timeLeft": "Nach {n} s",
+    "lib.arcade.stepsN": "Schrëtt: {n}",
+    "lib.arcade.crossed": "Doheem: {n}/{t}",
+    "lib.arcade.pipes": "Réier passéiert: {n}/{t}",
+    "lib.arcade.distance": "Distanz: {n}/{t} m",
+    "lib.arcade.speedN": "Vitesse: {n}",
+    "lib.arcade.note.whack-a-mole": "D’Maulwërf kommen aus de Lächer — klick oder tipp op e Maulwuerf, fir en ze schloen. Schlo genuch Maulwërf, ier d’Zäit ofleeft. Ab Niveau 4 gëtt et Bomben: wann s du eng schléis, verléiers du Punkten.",
+    "lib.arcade.hole": "Lach",
+    "lib.arcade.hitsN": "Treffer: {n}/{t}",
+    "lib.arcade.note.simon": "D’Spill spillt eng Rei vu Faarwen a Téin of — widderhol se an der selwechter Reiefolleg. All Ronn kënnt een Schrëtt derbäi. Behal déi néideg Längt, fir d’Niveau ze packen. Ab Niveau 7 gëtt et 6 Pads.",
+    "lib.arcade.seqN": "Rei: {n}/{t}",
+    "lib.arcade.watch": "Kuck…",
+    "lib.arcade.yourTurnShort": "Du bass drun",
+    "lib.arcade.note.aim-trainer": "D’Zieler erschéngen zoufälleg a verschwannen séier — treff esou vill wéi méiglech. Si gi méi kleng a méi séier. Treff genuch Zieler mat héchstens 5 Feeler, fir d’Niveau ze packen.",
+    "lib.arcade.missN": "Feeler: {n}/{t}",
+    "lib.arcade.answer": "Äntwert",
+    "lib.arcade.note.quick-math": "Rechent am Kapp esou séier wéi méiglech: gëff d’Äntwert an a dréck Enter. All Fro huet eng Zäitlimit; eng falsch Äntwert oder eng ofgelaf Zäit kascht e Liewen (du hues 3). Beäntwert genuch Froen richteg, fir d’Niveau ze packen.",
+    "lib.arcade.correctN": "Richteg: {n}/{t}",
+    "lib.arcade.note.reaction": "Waart bis de Bildschierm gréng gëtt, da klick esou séier wéi méiglech. Ze fréi klicken ass e Fehler (bei 3 Feeler hues du verluer). Däin Duerchschnëtt vu 5 Ronnen muss d’Limit vum Niveau schloen.",
+    "lib.arcade.roundN": "Ronn {n}/{t}",
+    "lib.arcade.limitMs": "Limit: {n} ms",
+    "lib.arcade.rxWait": "Waart op gréng…",
+    "lib.arcade.rxGo": "KLICK!",
+    "lib.arcade.rxEarly": "Ze fréi!",
+    "lib.arcade.gameArea": "Spillfeld",
+    "lib.arcade.note.pong": "Beweg d’Maus, zéi mam Fanger oder benotz d’Tasten ← →, fir de ënneschte Schléier ze steieren. Schéiss de Ball um Computer laanscht; deen Éischten, dee 5 Punkte huet, gewënnt. De Ball gëtt mat all Treffer méi séier.",
+    "lib.arcade.note.space-shooter": "Beweg d’Maus, zéi mam Fanger oder benotz d’Tasten ← →, fir ze steieren; däi Schëff schéisst automatesch. Zerstéier genuch Feindschëffer, fir d’Niveau ze packen, a vermeid Zesummestéiss a Feindfeier. Du hues 3 Liewen.",
+    "lib.arcade.note.asteroids": "← → dréie d’Schëff, ↑ gëtt Schub, d’Leertast schéisst. Zerstéier all Steng, fir d’Niveau ze packen; grouss Steng briechen a méi kleng. D’Schëff kënnt un de Ränn vum Bildschierm op der anerer Säit erëm eraus. Du hues 3 Liewen.",
+    "lib.arcade.note.maze": "Benotz d’Feiltasten (oder Wëschen, oder d’Knäpp), fir vum gréngen Punkt zur roueter Fändel ze kommen, ier d’Zäit ofleeft. Ab Niveau 5 ass de Labyrinth am Niwwel: du gesäis nëmmen ëm dech eremm, a besichten Zonen ginn gemierkt.",
+    "lib.arcade.note.road-cross": "Benotz d’Feiltasten, Wëschen oder d’Knäpp, fir de Fräsch vun ënnen no uewen sprange ze loossen. Vermeid de Verkéier; ab Niveau 5 ass den oberen Deel e Fluss, spréng also op d’schwammend Stämm. Kämm 3 Mol heem, fir d’Niveau ze packen. Du hues 3 Liewen.",
+    "lib.arcade.note.flappy": "Tipp op d’Spillfeld, dréck d’Leertast oder ↑, fir mat de Flilleke ze schloen. Flidder duerch d’Lücke tëschent de Réier, ouni e Rouer, de Buedem oder d’Plafong ze beréieren. Op méi héijen Niveauen sinn d’Lücke méi schmuel a de Fluch méi séier.",
+    "lib.arcade.note.runner": "Tipp op d’Spillfeld, dréck d’Leertast oder ↑, fir iwwer Kaktusse ze sprangen; haal ↓ gedréckt, fir dech ënner héije Vull ze bécken (oder spréng iwwer déi niddreg). Lafe wäit genuch, fir d’Niveau ze packen. D’Vitesse klëmmt ëmmer méi.",
+    "lib.arcade.fire": "Schéiss",
+    "lib.arcade.jump": "Sprong",
+    "lib.arcade.aimTarget": "Zil",
+    "lib.game.soundOn": "Toun un",
+    "lib.game.soundOff": "Toun aus"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate Dräi-gewënnt",
       "desc": "Dräi gewënnt op 9 klenge Briefter: d’Feld, dat Dir wielt, entscheet, wou de Géigner muss spillen; géint de Computer a 10 Niveauen."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Schéiss de Ball um Computer laanscht; deen Éischten, dee 5 Punkte huet, gewënnt. 10 Niveaue mat engem ëmmer méi séiere a méi schaarfe Géigner."
+    },
+    "space-shooter": {
+      "name": "Weltraumschitzen",
+      "desc": "Steier däi Schëff, schéiss Feindschëffer of a vermeid hir Feier; 10 Niveaue mat gréisseren Wellen, Géigefeier a méi staarke Feinde."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Dréi, gëff Schub a schéiss, fir d’Weltraumsteng ze zerbriechen; grouss Steng briechen a méi kleng. 10 Niveaue mat méi a méi séieren Steng."
+    },
+    "maze": {
+      "name": "Labyrinth",
+      "desc": "Fannt de Wee aus dem Labyrinth, ier d’Zäit ofleeft; 10 Niveaue vu klenge bis grousse Labyrinthen, mat Niwwel op méi héijen Niveauen."
+    },
+    "road-cross": {
+      "name": "Stroossen iwwerqueren (am Stil vu Frogger)",
+      "desc": "Féier de Fräsch iwwer beliewt Stroossen a Flëss mat Stämm, fir 3 Mol heemzekommen; 10 Niveaue mat méi séiere Verkéier an engem Floss op méi héijen Niveauen."
+    },
+    "flappy": {
+      "name": "Spill am Stil vu Flappy Bird",
+      "desc": "Tipp, fir mat de Flilleke ze schloen, a flidder duerch d’Lücke tëschent de Réier; 10 Niveaue mat méi schmuelen Lücken a wuessender Vitesse."
+    },
+    "runner": {
+      "name": "Dino-Läufer",
+      "desc": "Spréng iwwer Kaktusse a béck dech ënner Vull; lafe wäit genuch, fir all vun den 10 Niveauen ze packen, wärend d’Vitesse klëmmt."
+    },
+    "whack-a-mole": {
+      "name": "Schlo de Maulwuerf",
+      "desc": "Schlo d’Maulwërf, déi aus de Lächer kommen, ier d’Zäit ofleeft, a vermeid d’Bomben; 10 Niveaue vu lues bis ganz séier."
+    },
+    "simon": {
+      "name": "Simon (Gediechtnisfaarwen)",
+      "desc": "Behal d’Rei vu Faarwen a Téin a widderhol se; ëmmer méi laang Reien iwwer 10 Niveauen, mat 6 Pads ab Niveau 7."
+    },
+    "aim-trainer": {
+      "name": "Zieltraining",
+      "desc": "Treff d’Zieler, déi zoufälleg erschéngen a séier verschwannen; d’Zieler gi vun 10 Niveauen ëmmer méi kleng, an deng Reaktiounszäit gëtt gemlooss."
+    },
+    "quick-math": {
+      "name": "Séier Mathe",
+      "desc": "Rechent am Kapp Additioun, Subtraktioun, Multiplikatioun an Divisioun ënner Zäitdrock; 10 Niveaue vun einfache Summen bis zu Ausdréck."
+    },
+    "reaction": {
+      "name": "Reaktiounszäit-Test",
+      "desc": "Klick am Moment, wou de Bildschierm gréng gëtt; däin Duerchschnëtt vu 5 Ronnen muss d’Limit vun all Niveau erreechen, déi sech iwwer 10 Niveauen verschäerft."
     }
   },
   "s": {

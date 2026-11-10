@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Alege o culoare pentru a umple toată zona ta din colțul stânga sus; aceasta înghite celulele vecine de acea culoare. Fă toată tabla de o singură culoare în numărul de mutări permis.",
     "lib.arcade.note.mastermind": "Calculatorul ascunde un rând de culori. Alege o culoare pentru fiecare poziție, apoi apasă Ghicește. Un știft negru = culoare corectă la locul potrivit; un știft alb = culoare corectă la locul greșit. Descifrează codul înainte să rămâi fără încercări.",
     "lib.arcade.note.hanoi": "Mută toate discurile pe ultima tijă. Mută de fiecare dată doar discul de sus al unei tije și nu pune niciodată un disc mai mare peste unul mai mic. Fă clic pe tija sursă, apoi pe tija țintă.",
-    "lib.arcade.note.pipes": "Fă clic pe o plăcuță pentru a roti țeava cu 90°. Conectează toate țevile într-o singură rețea, fără capete deschise (capetele deschise sunt afișate cu roșu)."
+    "lib.arcade.note.pipes": "Fă clic pe o plăcuță pentru a roti țeava cu 90°. Conectează toate țevile într-o singură rețea, fără capete deschise (capetele deschise sunt afișate cu roșu).",
+    "lib.arcade.pongScore": "Tu {a} – {b} calculator (primul la {t})",
+    "lib.arcade.kills": "Distruse: {n}/{t}",
+    "lib.arcade.rocksLeft": "Mai sunt {n} stânci",
+    "lib.arcade.timeLeft": "Mai sunt {n} s",
+    "lib.arcade.stepsN": "Pași: {n}",
+    "lib.arcade.crossed": "Acasă: {n}/{t}",
+    "lib.arcade.pipes": "Țevi trecute: {n}/{t}",
+    "lib.arcade.distance": "Distanță: {n}/{t} m",
+    "lib.arcade.speedN": "Viteză: {n}",
+    "lib.arcade.note.whack-a-mole": "Cârtițele ies din găuri — dă clic sau atinge o cârtiță ca să o lovești. Lovește destule cârtițe până se termină timpul. De la nivelul 4 apar bombe: dacă lovești una, pierzi puncte.",
+    "lib.arcade.hole": "Gaură",
+    "lib.arcade.hitsN": "Lovituri: {n}/{t}",
+    "lib.arcade.note.simon": "Jocul redă o secvență de culori și sunete — repet-o în aceeași ordine. În fiecare rundă se adaugă încă un pas. Ține minte lungimea cerută ca să termini nivelul. De la nivelul 7 sunt 6 butoane.",
+    "lib.arcade.seqN": "Secvență: {n}/{t}",
+    "lib.arcade.watch": "Urmărește…",
+    "lib.arcade.yourTurnShort": "Rândul tău",
+    "lib.arcade.note.aim-trainer": "Țintele apar aleatoriu și dispar repede — nimerește cât mai multe. Devin tot mai mici și mai rapide. Nimerește destule ținte cu cel mult 5 ratări ca să termini nivelul.",
+    "lib.arcade.missN": "Ratări: {n}/{t}",
+    "lib.arcade.answer": "Răspuns",
+    "lib.arcade.note.quick-math": "Rezolvă în minte cât de repede poți: scrie răspunsul și apasă Enter. Fiecare întrebare are o limită de timp; un răspuns greșit sau expirarea timpului costă o viață (ai 3). Răspunde corect la destule întrebări ca să termini nivelul.",
+    "lib.arcade.correctN": "Corecte: {n}/{t}",
+    "lib.arcade.note.reaction": "Așteaptă să devină ecranul verde, apoi dă clic cât mai repede. Un clic prea devreme e greșeală (la 3 greșeli pierzi). Media ta pe 5 runde trebuie să bată limita nivelului.",
+    "lib.arcade.roundN": "Runda {n}/{t}",
+    "lib.arcade.limitMs": "Limită: {n} ms",
+    "lib.arcade.rxWait": "Așteaptă verdele…",
+    "lib.arcade.rxGo": "CLIC!",
+    "lib.arcade.rxEarly": "Prea devreme!",
+    "lib.arcade.gameArea": "Zona de joc",
+    "lib.arcade.note.pong": "Mișcă mouse-ul, trage cu degetul sau folosește tastele ← → pentru a controla paleta de jos. Trimite mingea pe lângă calculator; câștigă primul care ajunge la 5 puncte. Mingea accelerează la fiecare lovitură.",
+    "lib.arcade.note.space-shooter": "Mișcă mouse-ul, trage cu degetul sau folosește tastele ← → pentru a conduce; nava trage automat. Distruge destule nave inamice ca să termini nivelul și evită coliziunile și focul inamic. Ai 3 vieți.",
+    "lib.arcade.note.asteroids": "← → rotesc nava, ↑ accelerează, Spațiu trage. Distruge toate stâncile ca să termini nivelul; stâncile mari se sparg în unele mai mici. Nava reapare de la marginea opusă a ecranului. Ai 3 vieți.",
+    "lib.arcade.note.maze": "Folosește tastele săgeți (sau glisarea, sau butoanele) ca să ajungi de la punctul verde la steagul roșu înainte să expire timpul. De la nivelul 5 labirintul e în ceață: vezi doar în jurul tău, iar zonele vizitate sunt memorate.",
+    "lib.arcade.note.road-cross": "Folosește tastele săgeți, glisarea sau butoanele ca să sari cu broasca de jos în sus. Evită traficul; de la nivelul 5 partea de sus e un râu, deci sari pe buștenii plutitori. Ajunge acasă de 3 ori ca să termini nivelul. Ai 3 vieți.",
+    "lib.arcade.note.flappy": "Atinge zona de joc, apasă Spațiu sau ↑ ca să dai din aripi. Zboară prin spațiile dintre țevi fără să atingi o țeavă, solul sau tavanul. La nivelurile mari spațiile sunt mai înguste și zborul mai rapid.",
+    "lib.arcade.note.runner": "Atinge zona de joc, apasă Spațiu sau ↑ ca să sari peste cactuși; ține apăsat ↓ ca să te apleci pe sub păsările de sus (sau sari peste cele de jos). Aleargă destul de departe ca să termini nivelul. Viteza crește mereu.",
+    "lib.arcade.fire": "Trage",
+    "lib.arcade.jump": "Sari",
+    "lib.arcade.aimTarget": "Țintă",
+    "lib.game.soundOn": "Pornește sunetul",
+    "lib.game.soundOff": "Oprește sunetul"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "X și 0 Ultimate",
       "desc": "X și 0 pe 9 table mici: celula aleasă decide unde trebuie să joace adversarul; împotriva calculatorului, în 10 niveluri."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Trimite mingea pe lângă calculator; câștigă primul care ajunge la 5 puncte. 10 niveluri cu un adversar tot mai rapid și mai precis."
+    },
+    "space-shooter": {
+      "name": "Trăgător spațial",
+      "desc": "Condu nava, doboară navele inamice și ferește-te de focul lor; 10 niveluri cu valuri mai mari, foc de răspuns și inamici mai duri."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Rotește, accelerează și trage ca să sparg stâncile spațiale; stâncile mari se sparg în unele mai mici. 10 niveluri cu stânci mai multe și mai rapide."
+    },
+    "maze": {
+      "name": "Labirint",
+      "desc": "Găsește ieșirea din labirint înainte să expire timpul; 10 niveluri de la labirinturi mici la mari, cu ceață la nivelurile mari."
+    },
+    "road-cross": {
+      "name": "Traversarea drumului (în stil Frogger)",
+      "desc": "Du broasca peste drumuri aglomerate și râuri cu bușteni ca să ajungă acasă de 3 ori; 10 niveluri cu trafic mai rapid și un râu la nivelurile mari."
+    },
+    "flappy": {
+      "name": "Joc în stil Flappy Bird",
+      "desc": "Atinge ca să dai din aripi și zboară prin spațiile dintre țevi; 10 niveluri cu spații mai înguste și viteză tot mai mare."
+    },
+    "runner": {
+      "name": "Dino alergător",
+      "desc": "Sari peste cactuși și apleacă-te pe sub păsări; aleargă destul de departe ca să termini fiecare din cele 10 niveluri, pe măsură ce viteza crește."
+    },
+    "whack-a-mole": {
+      "name": "Lovește cârtița",
+      "desc": "Lovește cârtițele care ies din găuri înainte să expire timpul și evită bombele; 10 niveluri de la lent la foarte rapid."
+    },
+    "simon": {
+      "name": "Simon (culori de memorie)",
+      "desc": "Ține minte și repetă secvența de culori și sunete; secvențe tot mai lungi pe 10 niveluri, cu 6 butoane de la nivelul 7."
+    },
+    "aim-trainer": {
+      "name": "Antrenor de țintire",
+      "desc": "Nimerește țintele care apar aleatoriu și dispar repede; țintele se micșorează pe parcursul a 10 niveluri, iar timpul tău de reacție este măsurat."
+    },
+    "quick-math": {
+      "name": "Calcul rapid",
+      "desc": "Fă adunări, scăderi, înmulțiri și împărțiri în minte, sub presiunea timpului; 10 niveluri de la calcule simple la expresii."
+    },
+    "reaction": {
+      "name": "Test de timp de reacție",
+      "desc": "Dă clic în clipa în care ecranul devine verde; media ta pe 5 runde trebuie să respecte limita fiecărui nivel, tot mai strânsă pe parcursul a 10 niveluri."
     }
   },
   "s": {

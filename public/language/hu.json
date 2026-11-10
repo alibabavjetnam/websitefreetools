@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Válassz egy színt, hogy kitöltsd vele a bal felső sarokban birtokolt egész területet; az elnyeli az adott színű szomszédos mezőket. A megengedett lépésszámon belül tedd az egész táblát egyszínűvé.",
     "lib.arcade.note.mastermind": "A számítógép elrejt egy színsort. Válassz színt minden helyre, majd nyomd meg a Tipp gombot. Fekete tüske = jó szín a jó helyen; fehér tüske = jó szín rossz helyen. Törd fel a kódot, mielőtt elfogynak a tippjeid.",
     "lib.arcade.note.hanoi": "Vidd át az összes korongot az utolsó rúdra. Mindig csak a rúd legfelső korongját mozgasd, és soha ne tegyél nagyobb korongot kisebbre. Kattints a kiinduló rúdra, majd a célrúdra.",
-    "lib.arcade.note.pipes": "Kattints egy lapkára a cső 90°-os elforgatásához. Kösd össze az összes csövet egyetlen hálózattá, nyitott vég nélkül (a nyitott végek pirossal látszanak)."
+    "lib.arcade.note.pipes": "Kattints egy lapkára a cső 90°-os elforgatásához. Kösd össze az összes csövet egyetlen hálózattá, nyitott vég nélkül (a nyitott végek pirossal látszanak).",
+    "lib.arcade.pongScore": "Te {a} – {b} gép (első, aki eléri: {t})",
+    "lib.arcade.kills": "Megsemmisítve: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} szikla maradt",
+    "lib.arcade.timeLeft": "{n} mp maradt",
+    "lib.arcade.stepsN": "Lépések: {n}",
+    "lib.arcade.crossed": "Otthon: {n}/{t}",
+    "lib.arcade.pipes": "Átjutott csövek: {n}/{t}",
+    "lib.arcade.distance": "Távolság: {n}/{t} m",
+    "lib.arcade.speedN": "Sebesség: {n}",
+    "lib.arcade.note.whack-a-mole": "A vakondok kibújnak a lyukakból – kattints vagy koppints egy vakondra, hogy ráüss. Üss le elég vakondot, mielőtt lejár az idő. A 4. szinttől bombák is vannak: ha eltalálsz egyet, pontot vesztesz.",
+    "lib.arcade.hole": "Lyuk",
+    "lib.arcade.hitsN": "Találatok: {n}/{t}",
+    "lib.arcade.note.simon": "A játék színek és hangok sorozatát játssza le – ismételd meg ugyanabban a sorrendben. Minden körben eggyel hosszabb lesz. Told el a szükséges hosszig a szint teljesítéséhez. A 7. szinttől 6 mező van.",
+    "lib.arcade.seqN": "Sorozat: {n}/{t}",
+    "lib.arcade.watch": "Figyelj…",
+    "lib.arcade.yourTurnShort": "Te jössz",
+    "lib.arcade.note.aim-trainer": "A célpontok véletlenszerűen jelennek meg, és gyorsan eltűnnek – találj el minél többet. Egyre kisebbek és gyorsabbak. Találj el elég célpontot, mielőtt 5-nél többször mellélősz, a szint teljesítéséhez.",
+    "lib.arcade.missN": "Mellé: {n}/{t}",
+    "lib.arcade.answer": "Válasz",
+    "lib.arcade.note.quick-math": "Számolj fejben, amilyen gyorsan csak tudsz: írd be a választ, és nyomj Entert. Minden kérdésre van időkorlát; a rossz válasz vagy az időtúllépés egy életbe kerül (3 életed van). Válaszolj helyesen elég kérdésre a szint teljesítéséhez.",
+    "lib.arcade.correctN": "Helyes: {n}/{t}",
+    "lib.arcade.note.reaction": "Várd meg, amíg a képernyő zöldre vált, majd kattints a lehető leggyorsabban. A korai kattintás hiba (3 hibánál veszítesz). Az 5 kör átlagodnak jobbnak kell lennie a szint korlátjánál.",
+    "lib.arcade.roundN": "{n}/{t}. kör",
+    "lib.arcade.limitMs": "Korlát: {n} ms",
+    "lib.arcade.rxWait": "Várj a zöldre…",
+    "lib.arcade.rxGo": "KATTINTS!",
+    "lib.arcade.rxEarly": "Túl korán!",
+    "lib.arcade.gameArea": "Játéktér",
+    "lib.arcade.note.pong": "Mozgasd az egeret, húzd az ujjad, vagy használd a ← → billentyűket az alsó ütő irányításához. Üsd el a labdát a gép mellett; az nyer, aki előbb ér el 5 pontot. A labda minden ütéssel gyorsul.",
+    "lib.arcade.note.space-shooter": "Mozgasd az egeret, húzd az ujjad, vagy használd a ← → billentyűket az irányításhoz; a hajód magától tüzel. Semmisíts meg elég ellenséges hajót a szint teljesítéséhez, és kerüld az ütközést és az ellenséges tüzet. 3 életed van.",
+    "lib.arcade.note.asteroids": "← → forgatja a hajót, ↑ gyorsít, a szóköz tüzel. Semmisítsd meg az összes sziklát a szint teljesítéséhez; a nagy sziklák kisebbekre esnek szét. A hajó a képernyő túloldalán jelenik meg újra. 3 életed van.",
+    "lib.arcade.note.maze": "A nyílbillentyűkkel (vagy ujjmozdulattal, vagy a gombokkal) juss el a zöld ponttól a piros zászlóig, mielőtt lejár az idő. Az 5. szinttől ködös a labirintus: csak a környezetedet látod, a már bejárt részeket pedig megjegyzi.",
+    "lib.arcade.note.road-cross": "A nyílbillentyűkkel, ujjmozdulattal vagy a gombokkal ugrasd a békát alulról felfelé. Kerüld a forgalmat; az 5. szinttől a felső rész folyó, ott az úszó farönkökre ugorj. Érj haza 3-szor a szint teljesítéséhez. 3 életed van.",
+    "lib.arcade.note.flappy": "Koppints a játéktérre, nyomj szóközt vagy ↑-t a csapkodáshoz. Repülj át a csövek közötti réseken anélkül, hogy csőhöz, talajhoz vagy mennyezethez érnél. A magasabb szinteken szűkebbek a rések, és gyorsabb a repülés.",
+    "lib.arcade.note.runner": "Koppints a játéktérre, nyomj szóközt vagy ↑-t, hogy átugord a kaktuszokat; tartsd lenyomva a ↓-t, hogy lebukj a magas madarak alatt (az alacsonyakat ugord át). Fuss elég messzire a szint teljesítéséhez. A sebesség folyamatosan nő.",
+    "lib.arcade.fire": "Tűz",
+    "lib.arcade.jump": "Ugrás",
+    "lib.arcade.aimTarget": "Célpont",
+    "lib.game.soundOn": "Hang bekapcsolása",
+    "lib.game.soundOff": "Hang kikapcsolása"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate amőba",
       "desc": "Amőba 9 kis táblán: a választott mező dönti el, hol kell az ellenfélnek játszania; a számítógép ellen 10 szinten."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Üsd el a labdát a gép mellett; az nyer, aki előbb ér el 5 pontot. 10 szint egyre gyorsabb és ügyesebb ellenféllel."
+    },
+    "space-shooter": {
+      "name": "Űrhajós lövöldözős",
+      "desc": "Irányítsd a hajód, lődd le az ellenséges hajókat és kerüld ki a tüzüket; 10 szint nagyobb hullámokkal, viszontlövéssel és erősebb ellenfelekkel."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Forogj, gyorsíts és lőj, hogy szétzúzd az űrsziklákat; a nagy sziklák kisebbekre esnek szét. 10 szint egyre több és gyorsabb sziklával."
+    },
+    "maze": {
+      "name": "Labirintus",
+      "desc": "Találj ki a labirintusból, mielőtt lejár az idő; 10 szint a kicsitől a nagy labirintusokig, a magasabb szinteken köddel."
+    },
+    "road-cross": {
+      "name": "Átkelés az úton (Frogger-stílus)",
+      "desc": "Ugrasd a békát forgalmas utakon és úszó farönkös folyókon át, hogy 3-szor hazaérj; 10 szint gyorsabb forgalommal és a magasabb szinteken folyóval."
+    },
+    "flappy": {
+      "name": "Flappy Bird-stílusú játék",
+      "desc": "Koppints a csapkodáshoz, és repülj át a csövek közötti réseken; 10 szint egyre szűkebb résekkel és növekvő sebességgel."
+    },
+    "runner": {
+      "name": "Dínófutó",
+      "desc": "Ugord át a kaktuszokat, és bukj le a madarak alatt; fuss elég messzire mind a 10 szint teljesítéséhez, miközben a sebesség egyre nő."
+    },
+    "whack-a-mole": {
+      "name": "Vakondütő",
+      "desc": "Üsd le a lyukakból kibújó vakondokat, mielőtt lejár az idő, és kerüld a bombákat; 10 szint a lassútól a nagyon gyorsig."
+    },
+    "simon": {
+      "name": "Simon (színmemória)",
+      "desc": "Jegyezd meg és ismételd meg a színek és hangok sorozatát; egyre hosszabb sorozatok 10 szinten át, a 7. szinttől 6 mezővel."
+    },
+    "aim-trainer": {
+      "name": "Célzásgyakorló",
+      "desc": "Találd el a véletlenszerűen megjelenő, gyorsan eltűnő célpontokat; a célpontok 10 szinten át zsugorodnak, és mérjük a reakcióidődet."
+    },
+    "quick-math": {
+      "name": "Gyorsszámolás",
+      "desc": "Végezz fejben összeadást, kivonást, szorzást és osztást időnyomás alatt; 10 szint az egyszerű példáktól a kifejezésekig."
+    },
+    "reaction": {
+      "name": "Reakcióidő-teszt",
+      "desc": "Kattints abban a pillanatban, amikor a képernyő zöldre vált; az 5 kör átlagodnak teljesítenie kell a szint korlátját, amely 10 szinten át szigorodik."
     }
   },
   "s": {

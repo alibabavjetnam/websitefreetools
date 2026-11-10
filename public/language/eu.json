@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Aukeratu kolore bat goiko ezkerreko izkinan duzun eremu osoa betetzeko; kolore horretako auzoko gelaxkak irensten ditu. Bihurtu taula osoa kolore bakarrekoa baimendutako mugimendu kopuruaren barruan.",
     "lib.arcade.note.mastermind": "Ordenagailuak kolore-errenkada bat ezkutatzen du. Aukeratu kolore bat posizio bakoitzerako eta sakatu Asmatu. Iltze beltza = kolore zuzena leku zuzenean; iltze zuria = kolore zuzena leku okerrean. Asmatu kodea saiakerak amaitu aurretik.",
     "lib.arcade.note.hanoi": "Eraman disko guztiak azken makilara. Aldi bakoitzean makila bateko goiko diskoa soilik mugitu, eta ez jarri inoiz disko handiago bat txikiago baten gainean. Egin klik jatorrizko makilan eta gero helburuko makilan.",
-    "lib.arcade.note.pipes": "Egin klik lauza batean hodia 90° biratzeko. Konektatu hodi guztiak sare bakarrean, amaiera irekirik gabe (amaiera irekiak gorriz agertzen dira)."
+    "lib.arcade.note.pipes": "Egin klik lauza batean hodia 90° biratzeko. Konektatu hodi guztiak sare bakarrean, amaiera irekirik gabe (amaiera irekiak gorriz agertzen dira).",
+    "lib.arcade.pongScore": "Zu {a} – {b} PC (lehenengoa {t}ra)",
+    "lib.arcade.kills": "Suntsituta: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} harri geratzen dira",
+    "lib.arcade.timeLeft": "{n} s geratzen dira",
+    "lib.arcade.stepsN": "Urratsak: {n}",
+    "lib.arcade.crossed": "Etxean: {n}/{t}",
+    "lib.arcade.pipes": "Igarotako hodiak: {n}/{t}",
+    "lib.arcade.distance": "Distantzia: {n}/{t} m",
+    "lib.arcade.speedN": "Abiadura: {n}",
+    "lib.arcade.note.whack-a-mole": "Satorrak zuloetatik ateratzen dira — egin klik edo ukitu satorra jotzeko. Jo nahikoa sator denbora amaitu aurretik. 4. mailatik aurrera bonbak daude: bat jotzeak puntuak kentzen dizkizu.",
+    "lib.arcade.hole": "Zuloa",
+    "lib.arcade.hitsN": "Kolpeak: {n}/{t}",
+    "lib.arcade.note.simon": "Jokoak kolore eta soinuen sekuentzia bat jotzen du — errepikatu ordena berean. Txanda bakoitzean urrats bat gehiago gehitzen da. Gogoratu eskatzen den luzera maila gainditzeko. 7. mailatik aurrera 6 botoi daude.",
+    "lib.arcade.seqN": "Sekuentzia: {n}/{t}",
+    "lib.arcade.watch": "Begira…",
+    "lib.arcade.yourTurnShort": "Zure txanda",
+    "lib.arcade.note.aim-trainer": "Helburuak ausaz agertzen dira eta azkar desagertzen dira — jo ahal dituzun guztiak. Txikiagoak eta azkarragoak bihurtzen dira. Jo nahikoa helburu 5 huts baino gehiago egin aurretik maila gainditzeko.",
+    "lib.arcade.missN": "Hutsak: {n}/{t}",
+    "lib.arcade.answer": "Erantzuna",
+    "lib.arcade.note.quick-math": "Ebatzi buruz ahalik eta azkarren: idatzi erantzuna eta sakatu Sartu. Galdera bakoitzak denbora muga du; erantzun okerrak edo denbora amaitzeak bizitza bat kentzen du (3 dituzu). Erantzun zuzen nahikoa galdera maila gainditzeko.",
+    "lib.arcade.correctN": "Zuzenak: {n}/{t}",
+    "lib.arcade.note.reaction": "Itxaron pantaila berdea izan arte, eta egin klik ahalik eta azkarren. Goizegi klik egitea falta da (3 faltarekin galtzen duzu). 5 itzuliko batez bestekoak mailaren muga gainditu behar du.",
+    "lib.arcade.roundN": "{n}/{t}. itzulia",
+    "lib.arcade.limitMs": "Muga: {n} ms",
+    "lib.arcade.rxWait": "Itxaron berdea…",
+    "lib.arcade.rxGo": "KLIK!",
+    "lib.arcade.rxEarly": "Goizegi!",
+    "lib.arcade.gameArea": "Joko area",
+    "lib.arcade.note.pong": "Mugitu sagua, arrastatu hatza edo erabili ← → teklak beheko erraketa kontrolatzeko. Pasa pilota ordenagailuaren ondotik; 5 punturaino lehenak irabazten du. Pilota azkartu egiten da kolpe bakoitzarekin.",
+    "lib.arcade.note.space-shooter": "Mugitu sagua, arrastatu hatza edo erabili ← → teklak gidatzeko; zure ontziak automatikoki tiro egiten du. Suntsitu nahikoa etsai-ontzi maila gainditzeko, eta saihestu talkak eta etsaiaren tiroak. 3 bizitza dituzu.",
+    "lib.arcade.note.asteroids": "← → teklek ontzia biratzen dute, ↑ bultzada ematen du, zuriuneak tiro egiten du. Suntsitu harri guztiak maila gainditzeko; harri handiak txikiagoetan banatzen dira. Ontzia pantailaren beste ertzetik agertzen da. 3 bizitza dituzu.",
+    "lib.arcade.note.maze": "Erabili gezi-teklak (edo hatza irristatu, edo botoiak) puntu berdetik bandera gorrira iristeko denbora amaitu aurretik. 5. mailatik aurrera labirintua laino dago: inguruan dagoena bakarrik ikusten duzu, eta bisitatutako guneak gogoratzen dira.",
+    "lib.arcade.note.road-cross": "Erabili gezi-teklak, irristatu hatza edo botoiak igela behetik gora salto eginarazteko. Saihestu trafikoa; 5. mailatik aurrera goiko zatia ibaia da, beraz egin salto enbor flotagarrietara. Iritsi etxera 3 aldiz maila gainditzeko. 3 bizitza dituzu.",
+    "lib.arcade.note.flappy": "Ukitu joko area, sakatu zuriunea edo ↑ hegoak astintzeko. Hegan egin hodien arteko zirrikituetatik, hodiak, lurra edo sabaia ukitu gabe. Maila altuagoetan zirrikituak estuagoak dira eta hegaldia azkarragoa.",
+    "lib.arcade.note.runner": "Ukitu joko area, sakatu zuriunea edo ↑ kaktusen gainetik saltatzeko; eduki sakatuta ↓ txori altuen azpian makurtzeko (edo salto egin baxuen gainetik). Korrika egin nahikoa urrun maila gainditzeko. Abiadura etengabe hazten da.",
+    "lib.arcade.fire": "Tiro egin",
+    "lib.arcade.jump": "Saltoa",
+    "lib.arcade.aimTarget": "Helburua",
+    "lib.game.soundOn": "Aktibatu soinua",
+    "lib.game.soundOff": "Desaktibatu soinua"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Hiru-en-lerro behinena",
       "desc": "Hiru-en-lerro 9 taula txikitan: aukeratzen duzun laukiak erabakitzen du aurkariak non jokatu behar duen; ordenagailuaren aurka 10 mailatan."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Pasa pilota ordenagailuaren ondotik; 5 punturaino lehenak irabazten du. 10 maila aurkari azkarrago eta zorrotzagoarekin."
+    },
+    "space-shooter": {
+      "name": "Espazio-tiroketa",
+      "desc": "Gidatu zure ontzia, bota etsai-ontziak eta saihestu haien tiroak; 10 maila uhin handiagoekin, erantzun-tiroekin eta etsai gogorragoekin."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Biratu, bultzatu eta tiro egin espazioko harriak puskatzeko; harri handiak txikiagoetan banatzen dira. 10 maila harri gehiago eta azkarragoekin."
+    },
+    "maze": {
+      "name": "Labirintua",
+      "desc": "Aurkitu labirintuaren irteera denbora amaitu aurretik; 10 maila labirinto txikietatik handietara, maila altuagoetan lainoarekin."
+    },
+    "road-cross": {
+      "name": "Errepidea gurutzatu (Frogger estilokoa)",
+      "desc": "Egin salto igelarekin errepide jendetsuetatik eta enbor flotagarrien ibaietatik etxera 3 aldiz iristeko; 10 maila trafiko azkarragoarekin eta maila altuagoetan ibaiarekin."
+    },
+    "flappy": {
+      "name": "Flappy Bird estiloko jokoa",
+      "desc": "Ukitu hegoak astintzeko eta hegan egin hodien arteko zirrikituetatik; 10 maila zirriku estuagoekin eta abiadura gero eta handiagoarekin."
+    },
+    "runner": {
+      "name": "Dino korrikalaria",
+      "desc": "Salto egin kaktusen gainetik eta makurtu txorien azpian; korrika egin nahikoa urrun 10 mailak gainditzeko, abiadura hazten doan heinean."
+    },
+    "whack-a-mole": {
+      "name": "Jo satorra",
+      "desc": "Jo zuloetatik ateratzen diren satorrak denbora amaitu aurretik eta saihestu bonbak; 10 maila motelatik oso azkarrera."
+    },
+    "simon": {
+      "name": "Simon (koloreen memoria)",
+      "desc": "Gogoratu eta errepikatu kolore eta soinuen sekuentzia; sekuentzia luzeagoak 10 mailatan, 7. mailatik aurrera 6 botoirekin."
+    },
+    "aim-trainer": {
+      "name": "Puntería entrenamendua",
+      "desc": "Jo ausaz agertzen eta azkar desagertzen diren helburuak; helburuak txikitzen dira 10 mailatan, eta zure erreakzio denbora neurtzen da."
+    },
+    "quick-math": {
+      "name": "Kalkulu azkarra",
+      "desc": "Egin buruz batuketak, kenketak, biderketak eta zatiketak denbora presiopean; 10 maila batura sinpleetatik adierazpenetara."
+    },
+    "reaction": {
+      "name": "Erreakzio denboraren proba",
+      "desc": "Egin klik pantaila berde bihurtzen den unean; 5 itzuliko batez bestekoak mailaren muga bete behar du, eta 10 mailatan zorrotzagoa da."
     }
   },
   "s": {

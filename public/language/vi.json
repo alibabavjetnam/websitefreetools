@@ -469,7 +469,75 @@
     "lib.arcade.jump": "Nhảy",
     "lib.arcade.aimTarget": "Bia",
     "lib.game.soundOn": "Bật âm thanh",
-    "lib.game.soundOff": "Tắt âm thanh"
+    "lib.game.soundOff": "Tắt âm thanh",
+    "lib.arcade.note.kalah": "Bạn chơi hàng dưới, máy hàng trên; ô lớn bên phải là kho của bạn. Bấm một ô để bốc hết hạt và rải ngược chiều kim đồng hồ, mỗi ô một hạt (bỏ qua kho của đối thủ). Hạt cuối rơi vào kho của mình thì được đi tiếp; rơi vào ô trống của mình đối diện ô có hạt thì ăn cả hạt đối diện. Khi một bên hết hạt, bên kia gom hạt còn lại về kho; ai nhiều hạt hơn thắng.",
+    "lib.arcade.note.snakes": "Tung xúc xắc rồi đi theo số chấm, từ ô 1 đến ô 100. Gặp chân thang thì leo lên, gặp đầu rắn thì tụt xuống. Từ cấp 4 phải tung đúng số để vào ô 100. Cấp càng cao càng nhiều rắn, ít thang và nhiều đối thủ. Về đích đầu tiên là thắng.",
+    "lib.arcade.square": "Ô {n}",
+    "lib.arcade.ladderUp": "Leo thang!",
+    "lib.arcade.snakeDown": "Rắn nuốt!",
+    "lib.arcade.needExact": "Cần tung đúng số để vào ô 100.",
+    "lib.arcade.note.nmm": "Mỗi bên có 9 quân. Giai đoạn 1: lần lượt đặt quân lên các điểm trống. Giai đoạn 2: di chuyển một quân sang điểm kề trống. Khi chỉ còn 3 quân, được \"bay\" tới bất kỳ điểm trống nào. Xếp được 3 quân thẳng hàng (một \"cối\") thì được bốc một quân đối thủ (ưu tiên quân không nằm trong cối). Đối thủ còn dưới 3 quân hoặc không đi được nữa là thua. Bạn cầm quân trắng, đi trước.",
+    "lib.arcade.inHand": "Chưa đặt: {a} · {b}",
+    "lib.arcade.removePiece": "Chọn một quân đối thủ để bốc.",
+    "lib.arcade.enemyWaters": "Vùng biển địch (bấm để bắn)",
+    "lib.arcade.yourFleet": "Hạm đội của bạn",
+    "lib.arcade.note.battleship": "Mỗi bên có 5 tàu (dài 5, 4, 3, 3, 2 ô) xếp ngẫu nhiên trên lưới 10x10. Lần lượt bắn vào một ô: trúng thì ô đỏ, trượt thì ô xanh nhạt; trúng hết các ô của một tàu là nhấn chìm nó. Ai nhấn chìm hết hạm đội đối phương trước thì thắng. Cấp càng cao máy càng biết suy luận vị trí tàu.",
+    "lib.arcade.shipsLeft": "Tàu còn: bạn {a} · địch {b}",
+    "lib.arcade.theySunk": "Địch nhấn chìm một tàu của bạn!",
+    "lib.arcade.theyHit": "Địch bắn trúng tàu của bạn.",
+    "lib.arcade.theyMiss": "Địch bắn trượt.",
+    "lib.arcade.youSunk": "Bạn nhấn chìm một tàu địch!",
+    "lib.arcade.youHit": "Trúng rồi!",
+    "lib.arcade.youMiss": "Trượt.",
+    "lib.arcade.shake": "Lắc",
+    "lib.arcade.clearBets": "Xoá cược",
+    "lib.arcade.note.bau-cua": "Chơi bằng xu ảo, không có tiền thật. Chọn mệnh giá rồi bấm vào các linh vật để đặt cược, sau đó bấm Lắc. Mỗi xúc xắc trùng với linh vật bạn cược thì bạn nhận lại tiền cược cộng thêm đúng bằng tiền cược cho mỗi lần trùng. Đạt số xu mục tiêu trong số ván cho phép để qua cấp.",
+    "lib.arcade.note.baccarat": "Chơi bằng xu ảo, không có tiền thật. Đặt cược vào cửa Con, cửa Cái hoặc Hoà rồi bấm Chia bài. Điểm của bài là tổng điểm lấy chữ số hàng đơn vị (A = 1, 2–9 tính theo số, 10/J/Q/K = 0); bên gần 9 hơn thắng, bài tự rút thêm theo luật chuẩn. Cược Con ăn 1:1, Cái ăn 0,95:1, Hoà ăn 8:1 (cược Con/Cái được hoàn lại khi Hoà). Đạt số xu mục tiêu trong số ván cho phép để qua cấp.",
+    "lib.arcade.banker": "Cái",
+    "lib.arcade.player": "Con",
+    "lib.arcade.tie": "Hoà",
+    "lib.arcade.openCards": "Mở bài",
+    "lib.arcade.note.bai-cao": "Chơi bằng xu ảo, không có tiền thật. Mỗi bên 3 lá. Điểm là tổng điểm lấy chữ số hàng đơn vị (A = 1, 2–9 theo số, 10/J/Q/K = 10, tức 0 nút). Thứ hạng: Sáp (3 lá cùng số) cao nhất, rồi Ba tiên (3 lá J/Q/K), rồi điểm 9 xuống 0. Đặt cược, bấm Chia bài rồi Mở bài để so với nhà cái. Từ cấp 6 nhà cái ăn khi hoà. Đạt số xu mục tiêu trong số ván cho phép để qua cấp.",
+    "lib.arcade.caoSap": "Sáp",
+    "lib.arcade.caoBaTien": "Ba tiên",
+    "lib.arcade.caoPts": "{n} nút",
+    "lib.arcade.note.bingo": "Máy lần lượt gọi các số từ 1 đến 75. Khi số được gọi có trên thẻ của bạn, hãy bấm vào ô đó để đánh dấu (ô giữa tính sẵn). Đủ một hàng ngang, dọc hoặc chéo thì bấm BINGO! — phải nhanh hơn các đối thủ máy. Bấm BINGO! khi chưa đủ hàng sẽ bị khoá nút vài giây. Cấp càng cao số gọi càng nhanh và càng nhiều đối thủ.",
+    "lib.arcade.opponentsN": "Đối thủ: {n}",
+    "lib.arcade.falseBingo": "Chưa đủ hàng! Nút bị khoá 3 giây.",
+    "lib.arcade.bingoGo": "Bắt đầu gọi số!",
+    "lib.arcade.note.yahtzee": "Mỗi lượt tung 5 xúc xắc tối đa 3 lần: bấm vào xúc xắc để giữ lại, bấm Tung để tung các viên còn lại. Sau đó chọn một ô trong bảng để ghi điểm (mỗi ô dùng một lần, ô nào không hợp lệ sẽ ghi 0). 13 lượt. Nhóm Một–Sáu cộng từ 63 trở lên được thưởng 35. Đạt số điểm mục tiêu của cấp để thắng.",
+    "lib.arcade.turnN": "Lượt {n}/13",
+    "lib.arcade.pickCat": "Chọn một ô để ghi điểm",
+    "lib.arcade.rollsLeft": "Tung ({n} lần còn lại)",
+    "lib.arcade.upperBonus": "Thưởng nhóm Một–Sáu",
+    "lib.arcade.scored": "Ghi {n} điểm",
+    "lib.arcade.note.crazy-eights": "Đánh một lá cùng chất hoặc cùng số với lá trên cùng của chồng bài đánh. Lá 8 là lá chủ: đánh được bất cứ lúc nào và bạn chọn chất mới. Không có lá hợp lệ thì bốc bài từ chồng (tối đa 3 lá), vẫn không có thì bỏ lượt. Ai hết bài trước là thắng. Cấp càng cao càng nhiều đối thủ và máy chơi càng khôn.",
+    "lib.arcade.opponent": "Đối thủ",
+    "lib.arcade.pileLeft": "Chồng bốc: {n}",
+    "lib.arcade.pickSuit": "Chọn chất mới",
+    "lib.arcade.aiSuit": "Máy chọn chất {s}",
+    "lib.arcade.aiPass": "Máy bỏ lượt.",
+    "lib.arcade.mustPlay": "Bạn đang có lá hợp lệ — hãy đánh bài.",
+    "lib.arcade.youPass": "Đã bốc 3 lá, bạn bỏ lượt.",
+    "lib.arcade.bcGourd": "Bầu",
+    "lib.arcade.bcCrab": "Cua",
+    "lib.arcade.bcShrimp": "Tôm",
+    "lib.arcade.bcFish": "Cá",
+    "lib.arcade.bcRooster": "Gà",
+    "lib.arcade.bcDeer": "Nai",
+    "lib.arcade.yOnes": "Một",
+    "lib.arcade.yTwos": "Hai",
+    "lib.arcade.yThrees": "Ba",
+    "lib.arcade.yFours": "Bốn",
+    "lib.arcade.yFives": "Năm",
+    "lib.arcade.ySixes": "Sáu",
+    "lib.arcade.yThree": "Ba giống nhau",
+    "lib.arcade.yFour": "Bốn giống nhau",
+    "lib.arcade.yFull": "Cù lũ (25)",
+    "lib.arcade.ySmall": "Sảnh nhỏ (30)",
+    "lib.arcade.yLarge": "Sảnh lớn (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Tuỳ ý"
   },
   "pages": {
     "home": {
@@ -1410,6 +1478,46 @@
     "reaction": {
       "name": "Thử phản xạ",
       "desc": "Bấm ngay khi màn hình chuyển xanh; trung bình 5 lượt phải đạt ngưỡng của cấp, 10 cấp ngưỡng chặt dần."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Rải hạt qua các ô, ăn hạt đối thủ và đi tiếp khi rơi vào kho; đánh với máy qua 10 cấp từ dễ đến khó."
+    },
+    "snakes-ladders": {
+      "name": "Rắn và thang",
+      "desc": "Tung xúc xắc đi từ ô 1 đến ô 100, leo thang, tránh rắn và về đích trước đối thủ; 10 cấp."
+    },
+    "nine-mens-morris": {
+      "name": "Cờ cối (Nine Men's Morris)",
+      "desc": "Đặt, di chuyển và bay quân để xếp ba quân thẳng hàng rồi bốc quân đối thủ; đánh với máy qua 10 cấp."
+    },
+    "battleship": {
+      "name": "Hải chiến (Battleship)",
+      "desc": "Đoán vị trí và nhấn chìm hạm đội của máy trên lưới 10x10 trước khi bị nhấn chìm; 10 cấp, máy suy luận khôn dần."
+    },
+    "bau-cua": {
+      "name": "Bầu cua tôm cá",
+      "desc": "Trò dân gian: đặt xu ảo vào các linh vật, lắc ba xúc xắc; đạt số xu mục tiêu qua 10 cấp (không dùng tiền thật)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Cược Con, Cái hoặc Hoà với bài chia theo luật chuẩn bằng xu ảo; đạt xu mục tiêu qua 10 cấp (không dùng tiền thật)."
+    },
+    "bai-cao": {
+      "name": "Bài cào (ba lá)",
+      "desc": "Chia 3 lá so điểm với nhà cái: Sáp, Ba tiên rồi tới điểm 9 xuống 0; xu ảo, 10 cấp, không dùng tiền thật."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Đánh dấu các số được gọi trên thẻ 5x5 và hô BINGO trước đối thủ máy; số gọi nhanh dần qua 10 cấp."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Xúc xắc 5 viên)",
+      "desc": "Tung 5 xúc xắc, giữ viên tốt và ghi điểm vào 13 ô; đạt điểm mục tiêu qua 10 cấp."
+    },
+    "crazy-eights": {
+      "name": "Bài 8 lá (Crazy Eights)",
+      "desc": "Đánh bài cùng chất hoặc cùng số, lá 8 đổi chất; hết bài trước 1 đến 3 máy qua 10 cấp."
     }
   },
   "s": {

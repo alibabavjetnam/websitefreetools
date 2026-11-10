@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Vali värv, millega täita kogu sinu valduses olev ala vasakus ülanurgas; see neelab endasse selle värvi naaberruudud. Tee kogu laud lubatud käikude arvu piires ühevärviliseks.",
     "lib.arcade.note.mastermind": "Arvuti peidab värvide rea. Vali igale kohale värv ja vajuta Arva. Must tihvt = õige värv õiges kohas; valge tihvt = õige värv valel kohal. Murra kood enne, kui arvamised otsa saavad.",
     "lib.arcade.note.hanoi": "Vii kõik kettad viimasele vardale. Liiguta iga kord ainult varda ülemist ketast ja ära pane kunagi suuremat ketast väiksema peale. Klõpsa lähtevardal, seejärel sihtvardal.",
-    "lib.arcade.note.pipes": "Klõpsa plaadil, et toru 90° pöörata. Ühenda kõik torud üheks võrguks ilma lahtiste otsteta (lahtised otsad on punased)."
+    "lib.arcade.note.pipes": "Klõpsa plaadil, et toru 90° pöörata. Ühenda kõik torud üheks võrguks ilma lahtiste otsteta (lahtised otsad on punased).",
+    "lib.arcade.pongScore": "Sina {a} – {b} arvuti (kuni {t}ni)",
+    "lib.arcade.kills": "Hävitatud: {n}/{t}",
+    "lib.arcade.rocksLeft": "Kive jäänud: {n}",
+    "lib.arcade.timeLeft": "Aega jäänud: {n} s",
+    "lib.arcade.stepsN": "Samme: {n}",
+    "lib.arcade.crossed": "Kodus: {n}/{t}",
+    "lib.arcade.pipes": "Läbitud torusid: {n}/{t}",
+    "lib.arcade.distance": "Vahemaa: {n}/{t} m",
+    "lib.arcade.speedN": "Kiirus: {n}",
+    "lib.arcade.note.whack-a-mole": "Mutid ilmuvad aukudest – klõpsa või puuduta muti, et teda lüüa. Löö enne aja lõppu piisavalt mutte. Alates 4. tasemest on pomme: pommi tabamine maksab punkte.",
+    "lib.arcade.hole": "Auk",
+    "lib.arcade.hitsN": "Tabamusi: {n}/{t}",
+    "lib.arcade.note.simon": "Mäng esitab värvide ja helide jada – korda seda samas järjekorras. Igas voorus lisandub üks samm. Jäta meelde nõutav pikkus, et tase läbida. Alates 7. tasemest on 6 nuppu.",
+    "lib.arcade.seqN": "Jada: {n}/{t}",
+    "lib.arcade.watch": "Vaata…",
+    "lib.arcade.yourTurnShort": "Sinu kord",
+    "lib.arcade.note.aim-trainer": "Sihtmärgid ilmuvad juhuslikult ja kaovad kiiresti – taba neid nii palju kui võimalik. Need muutuvad väiksemaks ja kiiremaks. Taba piisavalt sihtmärke, enne kui möödalaskmisi on üle 5, et tase läbida.",
+    "lib.arcade.missN": "Möödalaskmisi: {n}/{t}",
+    "lib.arcade.answer": "Vastus",
+    "lib.arcade.note.quick-math": "Arvuta peas nii kiiresti kui oskad: trüki vastus ja vajuta Enter. Igal küsimusel on ajalimiit; vale vastus või aja täissaamine maksab ühe elu (sul on 3). Vasta õigesti piisavalt küsimustele, et tase läbida.",
+    "lib.arcade.correctN": "Õigeid: {n}/{t}",
+    "lib.arcade.note.reaction": "Oota, kuni ekraan muutub roheliseks, ja klõpsa siis nii kiiresti kui suudad. Liiga vara klõpsamine on viga (3 viga ja kaotad). Sinu 5 vooru keskmine peab ületama taseme piiri.",
+    "lib.arcade.roundN": "Voor {n}/{t}",
+    "lib.arcade.limitMs": "Piir: {n} ms",
+    "lib.arcade.rxWait": "Oota rohelist…",
+    "lib.arcade.rxGo": "KLÕPSA!",
+    "lib.arcade.rxEarly": "Liiga vara!",
+    "lib.arcade.gameArea": "Mänguala",
+    "lib.arcade.note.pong": "Liiguta hiirt, lohista sõrmega või kasuta klahve ← →, et juhtida alumist reketit. Löö pall arvutist mööda; esimene 5 punktini võidab. Pall kiireneb iga löögiga.",
+    "lib.arcade.note.space-shooter": "Liiguta hiirt, lohista sõrmega või kasuta klahve ← →, et juhtida; sinu laev tulistab automaatselt. Hävita piisavalt vaenlase laevu, et tase läbida, ja väldi kokkupõrkeid ning vaenlase tuld. Sul on 3 elu.",
+    "lib.arcade.note.asteroids": "← → pöörab laeva, ↑ annab tõuke, tühik tulistab. Hävita kõik kivid, et tase läbida; suured kivid lagunevad väiksemateks. Laev ilmub ekraani teisest servast tagasi. Sul on 3 elu.",
+    "lib.arcade.note.maze": "Kasuta nooleklahve (või pühkimist või nuppe), et jõuda rohelisest täpist punase lipuni enne aja lõppu. Alates 5. tasemest on labürint udune: näed vaid oma ümbrust ja külastatud kohad jäävad meelde.",
+    "lib.arcade.note.road-cross": "Kasuta nooleklahve, pühkimist või nuppe, et hüpitada konna alt üles. Väldi liiklust; alates 5. tasemest on ülemine osa jõgi, hüppa ujuvatele palkidele. Jõua koju 3 korda, et tase läbida. Sul on 3 elu.",
+    "lib.arcade.note.flappy": "Puuduta mänguala, vajuta tühikut või ↑, et tiibu lüüa. Lenda läbi torude vahede, puudutamata toru, maad ega lage. Kõrgematel tasemetel on vahed kitsamad ja lend kiirem.",
+    "lib.arcade.note.runner": "Puuduta mänguala, vajuta tühikut või ↑, et kaktustest üle hüpata; hoia ↓, et madalduda kõrgete lindude alt (või hüppa üle madalate). Jookse piisavalt kaugele, et tase läbida. Kiirus kasvab pidevalt.",
+    "lib.arcade.fire": "Tulista",
+    "lib.arcade.jump": "Hüppa",
+    "lib.arcade.aimTarget": "Sihtmärk",
+    "lib.game.soundOn": "Lülita heli sisse",
+    "lib.game.soundOff": "Lülita heli välja"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ülim trips-traps-trull",
       "desc": "Trips-traps-trull 9 väikesel laual: sinu valitud ruut määrab, kus vastane mängima peab; arvuti vastu 10 tasemel."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Löö pall arvutist mööda; esimene 5 punktini võidab. 10 taset üha kiirema ja teravama vastasega."
+    },
+    "space-shooter": {
+      "name": "Kosmosespan",
+      "desc": "Juhi oma laeva, lase vaenlase laevad maha ja väldi nende tuld; 10 taset suuremate lainete, vasturünnaku ja tugevamate vaenlastega."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Pööra, anna tõuget ja tulista, et kosmosekive purustada; suured kivid lagunevad väiksemateks. 10 taset üha enamate ja kiiremate kividega."
+    },
+    "maze": {
+      "name": "Labürint",
+      "desc": "Leia labürindist väljapääs enne aja lõppu; 10 taset väikestest suurte labürintideni, kõrgematel tasemetel udu."
+    },
+    "road-cross": {
+      "name": "Tee ületamine (Froggeri stiilis)",
+      "desc": "Hüpita konn üle tihedalt liikluse ja ujuvate palkidega jõgede, et jõuda koju 3 korda; 10 taset kiirema liikluse ja kõrgematel tasemetel jõega."
+    },
+    "flappy": {
+      "name": "Flappy Birdi stiilis mäng",
+      "desc": "Puuduta tiibade löömiseks ja lenda läbi torude vahede; 10 taset kitsamate vahede ja kasvava kiirusega."
+    },
+    "runner": {
+      "name": "Dinojooksja",
+      "desc": "Hüppa üle kaktuste ja madaldu lindude alt; jookse piisavalt kaugele, et läbida kõik 10 taset, kui kiirus kasvab."
+    },
+    "whack-a-mole": {
+      "name": "Löö mutti",
+      "desc": "Löö mutte, kes aukudest välja ilmuvad, enne aja lõppu ja väldi pomme; 10 taset aeglasest väga kiireni."
+    },
+    "simon": {
+      "name": "Simon (värvimälu)",
+      "desc": "Jäta meelde ja korda värvide ja helide jada; üha pikemad jadad 10 tasemel, alates 7. tasemest 6 nuppu."
+    },
+    "aim-trainer": {
+      "name": "Sihtimistreening",
+      "desc": "Taba sihtmärke, mis ilmuvad juhuslikult ja kaovad kiiresti; sihtmärgid kahanevad 10 taseme jooksul ja sinu reaktsiooniaega mõõdetakse."
+    },
+    "quick-math": {
+      "name": "Kiirarvutamine",
+      "desc": "Tee peas liitmist, lahutamist, korrutamist ja jagamist ajasurve all; 10 taset lihtsatest tehetest avaldisteni."
+    },
+    "reaction": {
+      "name": "Reaktsioonitest",
+      "desc": "Klõpsa hetkel, kui ekraan muutub roheliseks; sinu 5 vooru keskmine peab mahtuma taseme piiri sisse, mis muutub 10 taseme jooksul rangemaks."
     }
   },
   "s": {

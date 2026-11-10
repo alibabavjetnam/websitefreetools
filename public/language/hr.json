@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Odaberi boju kojom ćeš ispuniti cijelo područje koje posjeduješ u gornjem lijevom kutu; ono guta susjedna polja te boje. Cijelu ploču učini jednobojnom unutar dopuštenog broja poteza.",
     "lib.arcade.note.mastermind": "Računalo skriva niz boja. Odaberi boju za svaku poziciju pa pritisni Pogodi. Crni klin = prava boja na pravom mjestu; bijeli klin = prava boja na krivom mjestu. Razbij šifru prije nego ti ponestane pokušaja.",
     "lib.arcade.note.hanoi": "Premjesti sve diskove na zadnji štap. Svaki put pomakni samo gornji disk štapa i nikad ne stavljaj veći disk na manji. Klikni izvorni štap, zatim ciljni štap.",
-    "lib.arcade.note.pipes": "Klikni pločicu da zarotiraš cijev za 90°. Spoji sve cijevi u jednu mrežu bez otvorenih krajeva (otvoreni krajevi prikazani su crveno)."
+    "lib.arcade.note.pipes": "Klikni pločicu da zarotiraš cijev za 90°. Spoji sve cijevi u jednu mrežu bez otvorenih krajeva (otvoreni krajevi prikazani su crveno).",
+    "lib.arcade.pongScore": "Ti {a} – {b} računalo (do {t})",
+    "lib.arcade.kills": "Uništeno: {n}/{t}",
+    "lib.arcade.rocksLeft": "Preostalo stijena: {n}",
+    "lib.arcade.timeLeft": "Preostalo: {n} s",
+    "lib.arcade.stepsN": "Koraci: {n}",
+    "lib.arcade.crossed": "Kod kuće: {n}/{t}",
+    "lib.arcade.pipes": "Prođenih cijevi: {n}/{t}",
+    "lib.arcade.distance": "Udaljenost: {n}/{t} m",
+    "lib.arcade.speedN": "Brzina: {n}",
+    "lib.arcade.note.whack-a-mole": "Krtice izviruju iz rupa – klikni ili dodirni krticu da je udariš. Udari dovoljno krtica prije isteka vremena. Od 4. razine pojavljuju se bombe: pogodak bombe oduzima bodove.",
+    "lib.arcade.hole": "Rupa",
+    "lib.arcade.hitsN": "Pogodaka: {n}/{t}",
+    "lib.arcade.note.simon": "Igra prikazuje niz boja i zvukova – ponovi ga istim redoslijedom. Svaki krug dodaje jedan korak. Zapamti traženu duljinu da prođeš razinu. Od 7. razine ima 6 polja.",
+    "lib.arcade.seqN": "Niz: {n}/{t}",
+    "lib.arcade.watch": "Gledaj…",
+    "lib.arcade.yourTurnShort": "Tvoj red",
+    "lib.arcade.note.aim-trainer": "Mete se pojavljuju nasumično i brzo nestaju – pogodi ih što više. Postaju sve manje i brže. Pogodi dovoljno meta prije nego promašiš više od 5 puta da prođeš razinu.",
+    "lib.arcade.missN": "Promašaji: {n}/{t}",
+    "lib.arcade.answer": "Odgovor",
+    "lib.arcade.note.quick-math": "Računaj napamet što brže možeš: upiši odgovor i pritisni Enter. Svako pitanje ima vremensko ograničenje; pogrešan odgovor ili istek vremena košta jedan život (imaš ih 3). Točno odgovori na dovoljno pitanja da prođeš razinu.",
+    "lib.arcade.correctN": "Točno: {n}/{t}",
+    "lib.arcade.note.reaction": "Pričekaj da ekran pozeleni, pa klikni što brže možeš. Prerano klikanje je faul (nakon 3 faula gubiš). Tvoj prosjek u 5 krugova mora biti bolji od ograničenja razine.",
+    "lib.arcade.roundN": "Krug {n}/{t}",
+    "lib.arcade.limitMs": "Granica: {n} ms",
+    "lib.arcade.rxWait": "Čekaj zeleno…",
+    "lib.arcade.rxGo": "KLIKNI!",
+    "lib.arcade.rxEarly": "Prerano!",
+    "lib.arcade.gameArea": "Igraće polje",
+    "lib.arcade.note.pong": "Pomiči miš, povlači prstom ili koristi tipke ← → za upravljanje donjim reketom. Probij lopticu pokraj računala; pobjeđuje tko prvi dosegne 5 bodova. Loptica ubrzava sa svakim udarcem.",
+    "lib.arcade.note.space-shooter": "Pomiči miš, povlači prstom ili koristi tipke ← → za upravljanje; brod puca automatski. Uništi dovoljno neprijateljskih brodova da prođeš razinu i izbjegavaj sudare i neprijateljsku vatru. Imaš 3 života.",
+    "lib.arcade.note.asteroids": "← → okreću brod, ↑ daje potisak, razmaknica puca. Uništi sve stijene da prođeš razinu; velike se stijene raspadaju na manje. Brod se pojavljuje s druge strane ekrana. Imaš 3 života.",
+    "lib.arcade.note.maze": "Tipkama sa strelicama (ili povlačenjem prsta, ili gumbima) dođi od zelene točke do crvene zastave prije isteka vremena. Od 5. razine labirint je u magli: vidiš samo svoju okolinu, a posjećena područja se pamte.",
+    "lib.arcade.note.road-cross": "Tipkama sa strelicama, povlačenjem prsta ili gumbima skači žabom odozdo prema gore. Izbjegavaj promet; od 5. razine gornji dio je rijeka pa skači na plutajuće balvane. Stigni kući 3 puta da prođeš razinu. Imaš 3 života.",
+    "lib.arcade.note.flappy": "Dodirni igraće polje, pritisni razmaknicu ili ↑ za mahanje krilima. Leti kroz otvore između cijevi ne dodirujući cijev, tlo ni strop. Više razine imaju uže otvore i brži let.",
+    "lib.arcade.note.runner": "Dodirni igraće polje, pritisni razmaknicu ili ↑ za skok preko kaktusa; drži ↓ da se sagneš ispod visokih ptica (ili preskoči niske). Trči dovoljno daleko da prođeš razinu. Brzina stalno raste.",
+    "lib.arcade.fire": "Pucaj",
+    "lib.arcade.jump": "Skoči",
+    "lib.arcade.aimTarget": "Meta",
+    "lib.game.soundOn": "Uključi zvuk",
+    "lib.game.soundOff": "Isključi zvuk"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate križić-kružić",
       "desc": "Križić-kružić na 9 malih ploča: polje koje odabereš određuje gdje protivnik mora igrati; protiv računala kroz 10 razina."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Probij lopticu pokraj računala; pobjeđuje tko prvi dosegne 5 bodova. 10 razina sa sve bržim i oštrijim protivnikom."
+    },
+    "space-shooter": {
+      "name": "Svemirska pucačina",
+      "desc": "Upravljaj brodom, obaraj neprijateljske brodove i izbjegavaj njihovu vatru; 10 razina s većim valovima, uzvraćanjem vatre i jačim neprijateljima."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Okreći se, daj potisak i pucaj da razbiješ svemirske stijene; velike se stijene raspadaju na manje. 10 razina s više i bržih stijena."
+    },
+    "maze": {
+      "name": "Labirint",
+      "desc": "Pronađi izlaz iz labirinta prije isteka vremena; 10 razina od malih do velikih labirinata, s maglom na višim razinama."
+    },
+    "road-cross": {
+      "name": "Prelazak ceste (u stilu Froggera)",
+      "desc": "Skači žabom preko prometnih cesta i rijeka s plutajućim balvanima da stigneš kući 3 puta; 10 razina s bržim prometom i rijekom na višim razinama."
+    },
+    "flappy": {
+      "name": "Igra u stilu Flappy Birda",
+      "desc": "Dodiruj za mahanje krilima i leti kroz otvore između cijevi; 10 razina s užim otvorima i sve većom brzinom."
+    },
+    "runner": {
+      "name": "Dino trkač",
+      "desc": "Preskači kaktuse i sagni se ispod ptica; trči dovoljno daleko da prođeš svaku od 10 razina dok brzina raste."
+    },
+    "whack-a-mole": {
+      "name": "Udari krticu",
+      "desc": "Udari krtice koje izviruju iz rupa prije isteka vremena i izbjegavaj bombe; 10 razina od sporih do vrlo brzih."
+    },
+    "simon": {
+      "name": "Simon (pamćenje boja)",
+      "desc": "Zapamti i ponovi niz boja i zvukova; sve duži nizovi kroz 10 razina, sa 6 polja od 7. razine."
+    },
+    "aim-trainer": {
+      "name": "Trening ciljanja",
+      "desc": "Pogađaj mete koje se pojavljuju nasumično i brzo nestaju; mete se smanjuju kroz 10 razina, a mjeri se tvoje vrijeme reakcije."
+    },
+    "quick-math": {
+      "name": "Brzo računanje",
+      "desc": "Zbrajaj, oduzimaj, množi i dijeli napamet pod vremenskim pritiskom; 10 razina od jednostavnih zbrojeva do izraza."
+    },
+    "reaction": {
+      "name": "Test reakcije",
+      "desc": "Klikni u trenutku kad ekran pozeleni; prosjek tvojih 5 krugova mora zadovoljiti granicu razine, koja se kroz 10 razina pooštrava."
     }
   },
   "s": {
