@@ -150,6 +150,7 @@ export const TOOLS: ToolInfo[] = [
   tool('solitaire', 'entertainment', 'Xếp bài Solitaire', 'Solitaire Klondike cổ điển: xếp bài xen màu, đưa lên ô đích từ A đến K; rút 1 hoặc 3 lá, có đi lại và gợi ý.'),
   tool('spider-solitaire', 'entertainment', 'Xếp bài Nhện (Spider)', 'Spider Solitaire 1, 2 và 4 chất: xếp dãy K đến A cùng chất để gỡ khỏi bàn; 10 cấp, có đi lại và gợi ý.'),
   tool('freecell', 'entertainment', 'FreeCell', 'Xếp bài FreeCell: mọi lá đều ngửa, dùng các ô trống để sắp bài lên ô đích; 10 cấp với số ô trống giảm dần.'),
+  tool('yukon', 'entertainment', 'Xếp bài Yukon', 'Yukon Solitaire: như Klondike nhưng không có chồng rút, kéo được cả cụm lá nằm dưới; 10 cấp, có đi lại và gợi ý.'),
   tool('gomoku', 'entertainment', 'Cờ caro', 'Chơi cờ caro 5 quân liên tiếp với máy trên bàn 15x15, 10 cấp từ dễ đến khó, có đi lại.'),
   tool('reversi', 'entertainment', 'Cờ lật (Reversi)', 'Kẹp quân đối thủ để lật thành màu của mình; chơi Reversi 8x8 với máy qua 10 cấp.'),
   tool('connect-four', 'entertainment', 'Nối 4', 'Thả quân vào cột, nối 4 quân liên tiếp ngang, dọc hoặc chéo trước máy; 10 cấp từ dễ đến khó.'),

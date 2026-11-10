@@ -5,7 +5,7 @@
 import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import {
-  RANK, SUIT, autoFoundMove, dealFreeCell, dealKlondike, dealSpider, fcCanMove, fcMove, fcSafeAuto, fcWon, isRed, klondikeCanAuto,
+  RANK, SUIT, autoFoundMove, dealYukon, yukonCanMove, yukonHint, dealFreeCell, dealKlondike, dealSpider, fcCanMove, fcMove, fcSafeAuto, fcWon, isRed, klondikeCanAuto,
   klondikeCanMove, klondikeDraw, klondikeHint, klondikeMove, klondikeWon, spiderCanDeal, spiderCanMove, spiderDeal, spiderHint, spiderMove,
   spiderWon, type Card, type FreeCell, type Klondike, type Move, type Pile, type Spider,
   freecellHint,
@@ -13,7 +13,8 @@ import {
 import { clearBanner, fmtTime, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah, bestScore } from './arcade-ui';
 
-type Variant = 'klondike' | 'spider' | 'freecell';
+type Variant = 'klondike' | 'spider' | 'freecell' | 'yukon';
+const YK_EXTRA = [4, 3, 3, 2, 2, 1, 1, 0, 0, 0];
 type State = Klondike | Spider | FreeCell;
 
 const KL_DRAW = [1, 1, 1, 1, 1, 3, 3, 3, 3, 3];
@@ -27,8 +28,10 @@ function cardHtml(c: Card, attrs: string, top: number, sel: boolean): string {
 }
 
 export function mountSolitaire(id: string, variant: Variant): void {
-  const noteKey = variant === 'klondike' ? 'note.klondike' : variant === 'spider' ? 'note.spider' : 'note.freecell';
-  const noteVi = variant === 'klondike'
+  const noteKey = variant === 'yukon' ? 'note.yukon' : variant === 'klondike' ? 'note.klondike' : variant === 'spider' ? 'note.spider' : 'note.freecell';
+  const noteVi = variant === 'yukon'
+    ? 'Như Klondike nhưng không có chồng rút: mọi lá ngửa đều kéo được cùng các lá nằm dưới nó, kể cả khi chúng không thành dãy; chỉ cần lá đầu hợp với cột đích (giảm dần, xen đỏ đen; K vào cột trống). Đưa đủ 52 lá lên 4 ô đích từ A đến K. Cấp thấp có sẵn nhiều lá được lật ngửa.'
+    : variant === 'klondike'
     ? 'Xếp hết 52 lá lên 4 ô đích theo từng chất, từ A đến K. Trên bàn, xếp giảm dần và xen kẽ đỏ đen; chỉ K mới đặt vào cột trống. Bấm chồng úp góc trái để rút bài. Bấm một lá rồi bấm chỗ muốn đặt, hoặc bấm lá đó lần nữa để tự đưa đến chỗ hợp lệ. Cấp 1–5 rút 1 lá, cấp 6–10 rút 3 lá.'
     : variant === 'spider'
       ? 'Xếp mỗi chất thành một dãy từ K xuống A trên bàn; dãy đủ 13 lá sẽ tự được gỡ đi. Lá nào cũng đặt được lên lá lớn hơn 1, nhưng chỉ dãy cùng chất mới kéo đi cùng nhau. Hết nước thì bấm Chia thêm bài (mọi cột phải có bài). Cấp 1–3 một chất, 4–7 hai chất, 8–10 bốn chất.'
@@ -44,7 +47,7 @@ export function mountSolitaire(id: string, variant: Variant): void {
           <button type="button" class="btn" id="so-undo">${escapeHtml(t('lib.game.undo', 'Đi lại'))}</button>
           <button type="button" class="btn" id="so-hint">${escapeHtml(t('lib.game.hint', 'Gợi ý'))}</button>
           ${variant === 'spider' ? `<button type="button" class="btn" id="so-deal">${Ah('dealRow', 'Chia thêm bài')}</button>` : ''}
-          ${variant === 'klondike' ? `<button type="button" class="btn" id="so-auto" hidden>${Ah('autoFinish', 'Tự đưa bài lên')}</button>` : ''}
+          ${variant === 'klondike' || variant === 'yukon' ? `<button type="button" class="btn" id="so-auto" hidden>${Ah('autoFinish', 'Tự đưa bài lên')}</button>` : ''}
           <button type="button" class="btn" id="so-new">${escapeHtml(t('lib.game.newGame', 'Ván mới'))}</button>
         </div>
         <p class="note" id="so-msg" aria-live="polite"></p>
@@ -61,7 +64,7 @@ export function mountSolitaire(id: string, variant: Variant): void {
   let over = false, moves = 0;
   let t0 = 0, secs = 0, timer = 0;
 
-  const deal = (): State => (variant === 'klondike' ? dealKlondike(KL_DRAW[level - 1]) : variant === 'spider' ? dealSpider(SP_SUITS[level - 1]) : dealFreeCell(FC_CELLS[level - 1]));
+  const deal = (): State => (variant === 'yukon' ? dealYukon(YK_EXTRA[level - 1]) : variant === 'klondike' ? dealKlondike(KL_DRAW[level - 1]) : variant === 'spider' ? dealSpider(SP_SUITS[level - 1]) : dealFreeCell(FC_CELLS[level - 1]));
 
   function start(lv: number): void {
     level = lv;
@@ -89,7 +92,7 @@ export function mountSolitaire(id: string, variant: Variant): void {
   }
 
   function checkWin(): void {
-    const won = variant === 'klondike' ? klondikeWon(st as Klondike) : variant === 'spider' ? spiderWon(st as Spider) : fcWon(st as FreeCell);
+    const won = variant === 'klondike' || variant === 'yukon' ? klondikeWon(st as Klondike) : variant === 'spider' ? spiderWon(st as Spider) : fcWon(st as FreeCell);
     if (!won) return;
     over = true; window.clearInterval(timer); timer = 0;
     bestScore(id, level).put(100000 - secs);
@@ -121,7 +124,10 @@ export function mountSolitaire(id: string, variant: Variant): void {
     };
     let top = '';
     const ph = (s: string) => `<span class="pile-ph">${s}</span>`;
-    if (variant === 'klondike') {
+    if (variant === 'yukon') {
+      const g = st as Klondike;
+      top = `<div></div><div></div><div></div>${g.found.map((f, i) => pileHtml({ kind: 'found', i }, f.slice(-1), false, 'found', ph(SUIT[i]))).join('')}`;
+    } else if (variant === 'klondike') {
       const g = st as Klondike;
       const shown = g.waste.slice(-Math.min(g.waste.length, g.draw));
       const wasteHtml = `<div class="pile waste" data-p="waste:0" style="height:${ch}px">${shown.map((c, k) => cardHtml(c, k === shown.length - 1 ? 'data-p="waste:0" data-k="top"' : '', 0, k === shown.length - 1 && sel?.pile.kind === 'waste').replace('style="top:0px"', `style="top:0;left:${k * Math.round(cw * 0.22)}px"`)).join('')}</div>`;
@@ -139,7 +145,8 @@ export function mountSolitaire(id: string, variant: Variant): void {
     const tab = (st as Klondike).tab.map((p, i) => pileHtml({ kind: 'tab', i }, p, true, 'tab', '')).join('');
     boardEl.innerHTML = `<div class="sol-row sol-top" style="grid-template-columns:repeat(${cols},${cw}px)">${top}</div><div class="sol-row" style="grid-template-columns:repeat(${cols},${cw}px)">${tab}</div>`;
     let status = '';
-    if (variant === 'klondike') status = Af('drawN', 'Rút {n} lá', { n: (st as Klondike).draw });
+    if (variant === 'yukon') status = Af('yukonFree', 'Lá còn úp: {n}', { n: (st as Klondike).tab.reduce((a, p) => a + p.filter((c) => !c.up).length, 0) });
+    else if (variant === 'klondike') status = Af('drawN', 'Rút {n} lá', { n: (st as Klondike).draw });
     else if (variant === 'spider') status = Af('suitsN', '{n} chất', { n: (st as Spider).suits });
     else status = Af('freeCells', 'Ô trống: {n}', { n: (st as FreeCell).cells.length });
     $('#so-status').textContent = `${status} · ${Af('moves', 'Nước đi: {n}', { n: moves })}`;
@@ -154,12 +161,13 @@ export function mountSolitaire(id: string, variant: Variant): void {
   const parse = (s: string): Pile => { const [kind, i] = s.split(':'); return { kind: kind as Pile['kind'], i: Number(i) }; };
   function canMoveTo(from: Pile, n: number, to: Pile): boolean {
     if (variant === 'spider') return from.kind === 'tab' && to.kind === 'tab' && spiderCanMove(st as Spider, from.i, to.i, n);
+    if (variant === 'yukon') return yukonCanMove(st as Klondike, { from, to, n });
     if (variant === 'klondike') return klondikeCanMove(st as Klondike, { from, to, n });
     return fcCanMove(st as FreeCell, { from, to, n });
   }
   function doMove(from: Pile, n: number, to: Pile): void {
     if (variant === 'spider') commit(spiderMove(st as Spider, from.i, to.i, n));
-    else if (variant === 'klondike') commit(klondikeMove(st as Klondike, { from, to, n }));
+    else if (variant === 'klondike' || variant === 'yukon') commit(klondikeMove(st as Klondike, { from, to, n }));
     else commit(fcMove(st as FreeCell, { from, to, n }));
   }
   /** Tự tìm chỗ đặt: ưu tiên ô đích, rồi cột có bài, rồi ô trống/cột trống */
@@ -220,7 +228,8 @@ export function mountSolitaire(id: string, variant: Variant): void {
   $('#so-hint').addEventListener('click', () => {
     if (over) return;
     let h: { from: Pile; n: number; to?: Pile } | null = null;
-    if (variant === 'klondike') { const m = klondikeHint(st as Klondike); if (m) h = { from: m.from, n: m.n, to: m.to }; }
+    if (variant === 'yukon') { const m = yukonHint(st as Klondike); if (m) h = { from: m.from, n: m.n, to: m.to }; }
+    else if (variant === 'klondike') { const m = klondikeHint(st as Klondike); if (m) h = { from: m.from, n: m.n, to: m.to }; }
     else if (variant === 'spider') { const m = spiderHint(st as Spider); if (m) h = { from: { kind: 'tab', i: m.from }, n: m.n, to: { kind: 'tab', i: m.to } }; }
     else { const m = freecellHint(st as FreeCell); if (m) h = { from: m.from, n: m.n, to: m.to }; }
     if (h) { sel = { pile: h.from, n: h.n }; render(); hintTo = h.to ?? null; msg.textContent = ''; }

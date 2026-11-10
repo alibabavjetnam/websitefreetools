@@ -312,3 +312,53 @@ export function freecellHint(g: FreeCell): Move | null {
   }
   return best >= 0 ? { from: { kind: 'tab', i: best }, to: { kind: 'cell', i: free }, n: 1 } : null;
 }
+
+/* ============================== Yukon ============================== */
+/** Yukon dùng cùng dạng ván với Klondike nhưng không có chồng rút; extra = số lá úp ở mỗi cột được lật sẵn (dễ hơn) */
+export function dealYukon(extra: number, rand?: () => number): Klondike {
+  const d = shuffle(deck(), rand);
+  const tab: Card[][] = [];
+  for (let i = 0; i < 7; i++) {
+    const down = d.splice(0, i);
+    const up = d.splice(0, i === 0 ? 1 : 5);
+    down.forEach((c, k) => { c.up = k >= down.length - extra; });
+    up.forEach((c) => { c.up = true; });
+    tab.push([...down, ...up]);
+  }
+  return { tab, found: [[], [], [], []], stock: [], waste: [], draw: 1, passes: 0 };
+}
+
+/** Yukon: mọi lá ngửa (kèm các lá bên dưới) đều chuyển được, chỉ cần lá đầu hợp lệ với đích */
+export function yukonCanMove(g: Klondike, m: Move): boolean {
+  if (m.from.kind === 'tab' && m.to.kind === 'tab') {
+    const src = g.tab[m.from.i];
+    if (m.n < 1 || m.n > src.length) return false;
+    const c = src[src.length - m.n];
+    if (!c.up) return false;
+    if (m.from.i === m.to.i) return false;
+    return canStackAlt(kTop(g.tab[m.to.i]), c);
+  }
+  return klondikeCanMove(g, m);
+}
+
+export function yukonHint(g: Klondike): Move | null {
+  const f = autoFoundMove(g);
+  if (f) return f;
+  let best: { m: Move; score: number } | null = null;
+  for (let i = 0; i < 7; i++) {
+    const src = g.tab[i];
+    for (let k = 0; k < src.length; k++) {
+      if (!src[k].up) continue;
+      for (let j = 0; j < 7; j++) {
+        if (i === j) continue;
+        const m: Move = { from: { kind: 'tab', i }, to: { kind: 'tab', i: j }, n: src.length - k };
+        if (!yukonCanMove(g, m)) continue;
+        if (k === 0 && !g.tab[j].length) continue;
+        // ưu tiên nước lật được lá úp, rồi nước làm trống cột
+        const score = (k > 0 && !src[k - 1].up ? 10 : 0) + (k === 0 ? 4 : 0) + (g.tab[j].length ? 1 : 0);
+        if (score > 0 && (!best || score > best.score)) best = { m, score };
+      }
+    }
+  }
+  return best ? best.m : null;
+}

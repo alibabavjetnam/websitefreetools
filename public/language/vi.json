@@ -648,7 +648,9 @@
     "lib.arcade.tdCost": "Tháp: {n}",
     "lib.arcade.note.colorNum": "Mỗi ô có một con số ứng với một màu trong bảng màu. Chọn màu rồi bấm vào các ô mang số đó để tô; bấm sai màu thì ô sẽ không được tô. Tô đúng hết các ô để hoàn thành bức tranh. Cấp càng cao càng nhiều màu và nhiều ô.",
     "lib.arcade.cnWrong": "Sai màu rồi — kiểm tra lại con số trên ô.",
-    "lib.arcade.note.td": "Chạm vào ô trống (không phải đường đi) để đặt tháp bắn, tốn vàng; chạm lại vào tháp để nâng cấp (tối đa cấp 5). Tháp tự bắn kẻ địch đi xa nhất trong tầm. Tiêu diệt kẻ địch để nhận thêm vàng; để lọt 15 kẻ địch về đích là thua. Sống sót qua mọi đợt để qua cấp."
+    "lib.arcade.note.td": "Chạm vào ô trống (không phải đường đi) để đặt tháp bắn, tốn vàng; chạm lại vào tháp để nâng cấp (tối đa cấp 5). Tháp tự bắn kẻ địch đi xa nhất trong tầm. Tiêu diệt kẻ địch để nhận thêm vàng; để lọt 15 kẻ địch về đích là thua. Sống sót qua mọi đợt để qua cấp.",
+    "lib.arcade.yukonFree": "Lá còn úp: {n}",
+    "lib.arcade.note.yukon": "Như Klondike nhưng không có chồng rút: mọi lá ngửa đều kéo được cùng các lá nằm dưới nó, kể cả khi chúng không thành dãy; chỉ cần lá đầu hợp với cột đích (giảm dần, xen đỏ đen; K vào cột trống). Đưa đủ 52 lá lên 4 ô đích từ A đến K. Cấp thấp có sẵn nhiều lá được lật ngửa."
   },
   "pages": {
     "home": {
@@ -1725,6 +1727,10 @@
     "color-by-number": {
       "name": "Tô màu theo số",
       "desc": "Tô mỗi ô bằng màu ứng với con số để hiện ra bức tranh; 10 tranh, càng lên cấp càng nhiều màu."
+    },
+    "yukon": {
+      "name": "Xếp bài Yukon",
+      "desc": "Yukon Solitaire: như Klondike nhưng không có chồng rút, kéo được cả cụm lá nằm dưới; 10 cấp, có đi lại và gợi ý."
     }
   },
   "s": {

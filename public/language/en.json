@@ -648,7 +648,9 @@
     "lib.arcade.tdInfo": "Gold: {g} · Wave {w}/{t}",
     "lib.arcade.tdCost": "Tower: {n}",
     "lib.arcade.note.colorNum": "Every square has a number matching a color in the palette. Pick a color, then tap the squares with that number to paint them; tapping with the wrong color paints nothing. Paint every square correctly to finish the picture. Higher levels have more colors.",
-    "lib.arcade.cnWrong": "Wrong color — check the number on the square."
+    "lib.arcade.cnWrong": "Wrong color — check the number on the square.",
+    "lib.arcade.note.yukon": "Like Klondike but with no stock: any face-up card can be moved together with every card on top of it, even if they are not in sequence; only the first card must fit the target column (descending, alternating red and black; a King goes to an empty column). Build all 52 cards up on the four foundations from Ace to King. Low levels start with more cards already face up.",
+    "lib.arcade.yukonFree": "Face-down cards: {n}"
   },
   "pages": {
     "home": {
@@ -1401,6 +1403,10 @@
     "color-by-number": {
       "name": "Color by Number",
       "desc": "Paint each square with the color that matches its number to reveal the picture; 10 pictures with more colors each time."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike without the stock: move any face-up card with everything on top of it; 10 levels, fewer cards face up as you go."
     }
   },
   "s": {
