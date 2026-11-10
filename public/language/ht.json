@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Chwazi yon koulè pou ranpli tout zòn ou posede nan kwen anwo agòch; li vale kare vwazen ki gen koulè sa a. Fè tout tablo a vin yon sèl koulè nan limit kantite mouvman yo pèmèt.",
     "lib.arcade.note.mastermind": "Òdinatè a kache yon ranje koulè. Chwazi yon koulè pou chak pozisyon, answit peze Devine. Yon pyon nwa = bon koulè nan bon kote; yon pyon blan = bon koulè nan move kote. Dechifre kòd la anvan devine ou yo fini.",
     "lib.arcade.note.hanoi": "Deplase tout disk yo sou dènye poto a. Deplase sèlman disk ki anwo yon poto chak fwa, epi pa janm mete yon gwo disk sou yon ti disk. Klike sou poto sous la, answit sou poto destinasyon an.",
-    "lib.arcade.note.pipes": "Klike sou yon twal pou vire tiyo a 90°. Konekte tout tiyo yo nan yon sèl rezo san okenn bout ouvè (bout ouvè yo parèt an wouj)."
+    "lib.arcade.note.pipes": "Klike sou yon twal pou vire tiyo a 90°. Konekte tout tiyo yo nan yon sèl rezo san okenn bout ouvè (bout ouvè yo parèt an wouj).",
+    "lib.arcade.pongScore": "Ou {a} – {b} òdinatè (premye ki rive {t})",
+    "lib.arcade.kills": "Detwi: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} wòch rete",
+    "lib.arcade.timeLeft": "{n} s rete",
+    "lib.arcade.stepsN": "Etap: {n}",
+    "lib.arcade.crossed": "Lakay: {n}/{t}",
+    "lib.arcade.pipes": "Tiyo pase: {n}/{t}",
+    "lib.arcade.distance": "Distans: {n}/{t} m",
+    "lib.arcade.speedN": "Vitès: {n}",
+    "lib.arcade.note.whack-a-mole": "Krapo tè yo soti nan twou yo — klike oswa manyen yon krapo tè pou frape li. Frape ase krapo tè anvan tan an fini. Apati nivo 4 gen bonm: si ou frape youn, ou pèdi pwen.",
+    "lib.arcade.hole": "Twou",
+    "lib.arcade.hitsN": "Kou: {n}/{t}",
+    "lib.arcade.note.simon": "Jwèt la jwe yon sekans koulè ak son — repete l nan menm lòd la. Chak tou ajoute yon etap anplis. Sonje longè ki nesesè a pou pase nivo a. Apati nivo 7 gen 6 plak.",
+    "lib.arcade.seqN": "Sekans: {n}/{t}",
+    "lib.arcade.watch": "Gade…",
+    "lib.arcade.yourTurnShort": "Se ou menm",
+    "lib.arcade.note.aim-trainer": "Sib yo parèt o aza epi disparèt vit — frape otank ou kapab. Yo vin pi piti epi pi rapid. Frape ase sib anvan ou rate plis pase 5 fwa pou pase nivo a.",
+    "lib.arcade.missN": "Echèk: {n}/{t}",
+    "lib.arcade.answer": "Repons",
+    "lib.arcade.note.quick-math": "Rezoud nan tèt ou otank ou kapab: tape repons lan epi peze Enter. Chak kesyon gen yon limit tan; yon move repons oswa tan ki fini koute yon lavi (ou gen 3). Reponn ase kesyon kòrèkteman pou pase nivo a.",
+    "lib.arcade.correctN": "Kòrèk: {n}/{t}",
+    "lib.arcade.note.reaction": "Tann ekran an vin vèt, apre sa klike otank ou kapab. Si ou klike twò bonè, se yon fòt (3 fòt epi ou pèdi). Mwayèn ou sou 5 tou dwe pi bon pase limit nivo a.",
+    "lib.arcade.roundN": "Mo {n}/{t}",
+    "lib.arcade.limitMs": "Limit: {n} ms",
+    "lib.arcade.rxWait": "Tann vèt…",
+    "lib.arcade.rxGo": "KLIKE!",
+    "lib.arcade.rxEarly": "Twò bonè!",
+    "lib.arcade.gameArea": "Zòn jwèt",
+    "lib.arcade.note.pong": "Deplase sourit la, glise dwèt ou oswa itilize touch ← → yo pou kontwole rakèt anba a. Voye boul la pase òdinatè a; premye ki fè 5 pwen genyen. Boul la ale pi vit ak chak kou.",
+    "lib.arcade.note.space-shooter": "Deplase sourit la, glise dwèt ou oswa itilize touch ← → yo pou dirije; vè ou a tire otomatikman. Detwi ase vè lènmi pou pase nivo a, epi evite kolizyon ak tire lènmi. Ou gen 3 lavi.",
+    "lib.arcade.note.asteroids": "← → vire vè a, ↑ pouse, Space tire. Detwi tout wòch yo pou pase nivo a; gwo wòch yo kase an pi piti. Vè a pase nan bò ekran an. Ou gen 3 lavi.",
+    "lib.arcade.note.maze": "Itilize touch flèch yo (oswa glise, oswa bouton yo) pou ale nan pwen vèt la rive nan drapo wouj la anvan tan an fini. Apati nivo 5 labirent la gen bwouya: ou wè sèlman alantou ou, epi kote ou pase yo sonje.",
+    "lib.arcade.note.road-cross": "Itilize touch flèch yo, glise oswa bouton yo pou fè krapo a sote soti anba rive anwo. Evite sikilasyon; apati nivo 5 pati anwo a se yon rivyè, kidonk sote sou bwa k ap flote yo. Rive lakay 3 fwa pou pase nivo a. Ou gen 3 lavi.",
+    "lib.arcade.note.flappy": "Manyen zòn jwèt la, peze Space oswa ↑ pou bat zèl. Vole nan espas ant tiyo yo san manyen tiyo, tè a oswa plafon an. Nivo ki pi wo gen espas ki pi etwat epi vòl pi rapid.",
+    "lib.arcade.note.runner": "Manyen zòn jwèt la, peze Space oswa ↑ pou sote sou kaktis; kenbe ↓ pou bese anba zwazo ki wo yo (oswa sote sou sa ki ba yo). Kouri ase lwen pou pase nivo a. Vitès la kontinye ap monte.",
+    "lib.arcade.fire": "Tire",
+    "lib.arcade.jump": "Sote",
+    "lib.arcade.aimTarget": "Sib",
+    "lib.game.soundOn": "Limen son",
+    "lib.game.soundOff": "Etenn son",
+    "lib.arcade.note.kalah": "Ou jwe ranje anba a, òdinatè a jwe sa anwo a; gwo twou adwat la se depo ou. Klike yon twou pou pran tout grenn ladan l epi simen yo kont sans aswadabò, yon grenn pou chak twou (sote depo advèsè a). Si dènye grenn ou tonbe nan depo ou, ou jwe ankò; si li tonbe nan yon twou vid bò ou, anfas yon twou ki gen grenn, ou pran grenn sa yo. Lè yon bò vid, grenn bò lòt la ale nan depo mèt li; pi gwo depo a genyen.",
+    "lib.arcade.note.snakes": "Lanse dé a epi avanse otan kare, soti 1 rive 100. Si ou tonbe nan pye yon nechèl, ou monte; si ou tonbe sou tèt yon koulèv, ou glise desann. Apati nivo 4 ou dwe fè nimewo egzak la pou rive sou 100. Nivo ki pi wo gen plis koulèv, mwens nechèl epi plis advèsè. Premye ki rive sou 100 genyen.",
+    "lib.arcade.square": "Kare {n}",
+    "lib.arcade.ladderUp": "Monte nechèl la!",
+    "lib.arcade.snakeDown": "Koulèv la vale ou!",
+    "lib.arcade.needExact": "Ou bezwen nimewo egzak la pou rive sou 100.",
+    "lib.arcade.note.nmm": "Chak bò gen 9 pyès. Faz 1: youn apre lòt, mete pyès sou pwen vid. Faz 2: glise yon pyès sou yon pwen vid ki bò kote l. Lè ou gen sèlman 3 pyès, ou ka «vole» sou nenpòt pwen vid. Fè twa nan yon liy («moulen») pou retire yon pyès advèsè (pyès ki pa nan moulen an dabò). Ou pèdi lè ou rete ak 2 pyès oswa ou pa ka deplase. Ou jwe blan epi ou kòmanse.",
+    "lib.arcade.inHand": "Pou mete: {a} · {b}",
+    "lib.arcade.removePiece": "Chwazi yon pyès advèsè pou retire.",
+    "lib.arcade.enemyWaters": "Dlo lènmi (klike pou tire)",
+    "lib.arcade.yourFleet": "Flòt ou",
+    "lib.arcade.note.battleship": "Chak bò gen 5 bato (longè 5, 4, 3, 3, 2) mete o aza sou yon griy 10x10. Youn apre lòt, tire sou yon kazye: yon kou vin wouj, yon echèk vin ble klè, epi frape tout kazye yon bato koule li. Koule tout flòt lènmi an an premye pou genyen. Nan nivo ki pi wo, òdinatè a devine kote bato ou yo pi entèlijan.",
+    "lib.arcade.shipsLeft": "Bato ki rete: ou {a} · lènmi {b}",
+    "lib.arcade.theySunk": "Lènmi an koule youn nan bato ou yo!",
+    "lib.arcade.theyHit": "Lènmi an frape youn nan bato ou yo.",
+    "lib.arcade.theyMiss": "Lènmi an rate.",
+    "lib.arcade.youSunk": "Ou koule yon bato lènmi!",
+    "lib.arcade.youHit": "Frape!",
+    "lib.arcade.youMiss": "Rate.",
+    "lib.arcade.shake": "Souke",
+    "lib.arcade.clearBets": "Efase parye yo",
+    "lib.arcade.note.bau-cua": "Pyès monnen vityèl sèlman — pa gen lajan reyèl. Chwazi valè yon jeton, klike bèt yo pou mete parye, epi peze Souke. Pou chak dé ki koresponn ak yon bèt ou te parye sou li, ou resevwa mize ou a plis menm kantite a pou chak koresponn. Rive nan kantite pyès ki sib la nan kantite tou ki pèmèt la pou pase nivo a.",
+    "lib.arcade.note.baccarat": "Pyès monnen vityèl sèlman — pa gen lajan reyèl. Parye sou Jwè, Bankye oswa Egalite, apre sa peze Distribye. Valè yon men se dènye chif total li (A = 1, 2–9 valè yo, 10/J/Q/K = 0); men ki pi pre 9 la genyen, epi twazyèm kat yo pran dapre règ estanda yo. Jwè peye 1:1, Bankye 0,95:1, Egalite 8:1 (parye Jwè/Bankye tounen si gen egalite). Rive nan kantite pyès ki sib la nan kantite tou ki pèmèt la pou pase nivo a.",
+    "lib.arcade.banker": "Bankye",
+    "lib.arcade.player": "Jwè",
+    "lib.arcade.tie": "Egalite",
+    "lib.arcade.openCards": "Montre",
+    "lib.arcade.note.bai-cao": "Pyès monnen vityèl sèlman — pa gen lajan reyèl. Chak bò resevwa 3 kat. Yon men make dènye chif total li (A = 1, 2–9 valè yo, 10/J/Q/K = 10, sa vle di 0 pwen). Klasman: twa kat menm valè («Sáp») se pi wo a, apre sa twa kat figi («Ba tiên»), apre sa 9 pwen rive 0. Mete yon parye, peze Distribye epi Montre pou konpare ak distribitè a. Apati nivo 6 distribitè a genyen egalite yo. Rive nan kantite pyès ki sib la nan kantite tou ki pèmèt la pou pase nivo a.",
+    "lib.arcade.caoSap": "Twa kat menm valè",
+    "lib.arcade.caoBaTien": "Twa kat figi",
+    "lib.arcade.caoPts": "{n} pwen",
+    "lib.arcade.note.bingo": "Òdinatè a rele nimewo soti 1 rive 75. Lè yon nimewo ki rele nan kat ou a, klike l pou make l (mitan an gratis). Ranpli yon ranje, yon kolòn oswa yon dyagonal epi peze BINGO! — ou dwe bat advèsè òdinatè yo. Yon BINGO! fo bloke bouton an pou kèk segonn. Nivo ki pi wo rele pi vit epi gen plis advèsè.",
+    "lib.arcade.opponentsN": "Advèsè: {n}",
+    "lib.arcade.falseBingo": "Poko gen yon liy konplè! Bouton an bloke pou 3 segonn.",
+    "lib.arcade.bingoGo": "Nimewo ap rele!",
+    "lib.arcade.note.yahtzee": "Chak tou ou jete 5 dé jiska 3 fwa: klike yon dé pou kenbe l, epi peze Jete pou jete lòt yo ankò. Apre sa chwazi yon bwat nan tablo a pou make pwen (chak bwat sèvi yon sèl fwa; yon bwat ki pa matche bay 0). 13 tou. Bwat Youn–Sis yo ajoute yon bonis 35 si total yo se 63 oswa plis. Rive nan nòt sib nivo a pou genyen.",
+    "lib.arcade.turnN": "Tou {n}/13",
+    "lib.arcade.pickCat": "Chwazi yon bwat pou make pwen",
+    "lib.arcade.rollsLeft": "Jete ({n} rete)",
+    "lib.arcade.upperBonus": "Bonis Youn–Sis",
+    "lib.arcade.scored": "Make {n}",
+    "lib.arcade.note.crazy-eights": "Jwe yon kat ki matche ak kat anlè pil jete a pa kouwè oswa valè. Uit yo se jokè: jwe youn nenpòt ki lè epi chwazi yon nouvo kouwè. Si ou pa gen kat pou jwe, pran nan pil la (jiska 3 kat); si ou toujou pa ka jwe, ou pase. Premye ki vide men l genyen. Nivo ki pi wo gen plis advèsè epi òdinatè a jwe pi entèlijan.",
+    "lib.arcade.opponent": "Advèsè",
+    "lib.arcade.pileLeft": "Pil pou pran: {n}",
+    "lib.arcade.pickSuit": "Chwazi yon nouvo kouwè",
+    "lib.arcade.aiSuit": "Òdinatè a chwazi {s}",
+    "lib.arcade.aiPass": "Òdinatè a pase.",
+    "lib.arcade.mustPlay": "Ou gen yon kat ou ka jwe — jwe l.",
+    "lib.arcade.youPass": "Ou pran 3 kat epi ou pase.",
+    "lib.arcade.bcGourd": "Kalbas",
+    "lib.arcade.bcCrab": "Krab",
+    "lib.arcade.bcShrimp": "Krevèt",
+    "lib.arcade.bcFish": "Pwason",
+    "lib.arcade.bcRooster": "Kòk",
+    "lib.arcade.bcDeer": "Sèf",
+    "lib.arcade.yOnes": "Youn",
+    "lib.arcade.yTwos": "Dé",
+    "lib.arcade.yThrees": "Twa",
+    "lib.arcade.yFours": "Kat",
+    "lib.arcade.yFives": "Senk",
+    "lib.arcade.ySixes": "Sis",
+    "lib.arcade.yThree": "Twa menm",
+    "lib.arcade.yFour": "Kat menm",
+    "lib.arcade.yFull": "Fil plen (25)",
+    "lib.arcade.ySmall": "Ti swit (30)",
+    "lib.arcade.yLarge": "Gwo swit (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Chans",
+    "lib.arcade.note.race": "Peze ← → (oswa manyen liy ou vle a) pou chanje liy epi evite machin devan yo. Ou gen 3 lavi; kondui tout distans lan pou pase nivo a. Nivo ki pi wo ajoute liy epi sikilasyon pi rapid.",
+    "lib.arcade.note.jump": "Pèsonaj la rebondi poukont li. Peze ← → oswa glise dwèt ou pou tonbe sou platfòm kap vini an. Platfòm ble yo deplase, sa mawon yo kase lè ou tonbe sou yo. Tonbe soti nan ekran an se pèdi; monte ase wo pou pase nivo a.",
+    "lib.arcade.note.miner": "Zen an balanse ale vini; peze Space, ↓ oswa manyen jaden an pou lage l. Gwo lò ak wòch yo lou epi rale dousman; dyaman yo gen anpil valè. Rive nan kòb sib la anvan 60 segonn yo fini.",
+    "lib.arcade.note.slicer": "Glise dwèt ou oswa sourit la sou fwi a pou koupe l. Evite bonm nwa yo. Rate yon fwi oswa koupe yon bonm koute yon lavi (ou gen 3). Koupe ase fwi pou pase nivo a.",
+    "lib.arcade.note.hoops": "Peze sou teren an, rale desann (tankou yon fistibal) epi lage pou tire boul la nan panye a. Plis ou rale, plis tire a fò. Make ase panye nan kantite tire ou genyen; apati nivo 4 panye a deplase.",
+    "lib.arcade.note.bubbles": "Deplase sourit la oswa dwèt ou pou vize, apre sa klike/manyen oswa peze Space/Tire pou tire. Konekte 3 oswa plis boul menm koulè pou eklate yo; boul ki pèdi sipò yo tonbe. Ranje yo desann dousman, kidonk kenbe yo lwen liy anba a. Netwaye tout boul yo pou genyen.",
+    "lib.arcade.note.chase": "Itilize touch flèch yo (oswa glise / bouton yo) pou vire epi manje tout pwen nan labirent la pandan w ap evite fantòm k ap kouri dèyè ou. Ou gen 3 lavi; nivo ki pi wo ajoute plis fantòm ki pi rapid epi chase pi entèlijan.",
+    "lib.arcade.height": "Wotè: {n}/{t} m",
+    "lib.arcade.money": "Kòb: {n}/{t}",
+    "lib.arcade.sliced": "Koupe: {n}/{t}",
+    "lib.arcade.hoopScore": "Make: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} tire rete",
+    "lib.arcade.bubbleLeft": "{n} boul rete",
+    "lib.arcade.shotsN": "Tire: {n}",
+    "lib.arcade.dotsLeft": "{n} pwen rete",
+    "lib.arcade.note.kakuro": "Ranpli kazye blan yo ak chif 1–9 pou chak ranje fè total endikasyon kazye nwa a (chif anwo adwat la se pou ranje adwat la, sa anba agoch se pou ranje anba a), san repete chif nan yon ranje. Itilize touch flèch yo pou deplase.",
+    "lib.arcade.note.kenken": "Ranpli griy lan ak nimewo 1 rive N pou pa gen nimewo ki repete nan okenn ranje oswa kolòn. Chak kaj ki antoure ak liy epè montre yon sib ak yon operasyon (+, −, ×, ÷): nimewo nan kaj la dwe bay rezilta sa a. Itilize touch flèch yo pou deplase.",
+    "lib.arcade.note.wordGuess": "Devine mo sekrè anglè a. Apre chak esè, vèt vle di bon lèt nan bon plas, jòn vle di lèt la nan mo a men nan yon lòt plas, gri vle di lèt la pa nan mo a. Tape sou klavye ou oswa itilize touch sou ekran an, epi peze Enter pou voye. Nivo ki pi wo gen mo ki pi long epi mwens esè.",
+    "lib.arcade.note.hangman": "Devine mo sekrè anglè a pa chwazi lèt youn apre lòt. Chak move lèt ajoute yon pati sou figi pandu a; lè ou fini move devine, ou pèdi. Nivo ki pi wo gen mo ki pi long epi mwens move devine.",
+    "lib.arcade.note.scramble": "Reyaranje lèt melanje yo nan yon vrè mo anglè epi tape l nan bwat repons lan. Chak nivo gen 5 mo; rezoud omwen 4 anvan revèy chak mo fini pou pase nivo a. Endis la montre premye lèt la.",
+    "lib.arcade.cellsLeft": "{n} kazye vid rete",
+    "lib.arcade.wrongN": "{n} kazye pa bon.",
+    "lib.arcade.noError": "Poko jwenn okenn erè.",
+    "lib.arcade.tooShort": "Pa gen ase lèt",
+    "lib.arcade.answerIs": "Repons: {w}",
+    "lib.arcade.livesLeft": "{n} move devine rete",
+    "lib.arcade.yourAnswer": "Repons ou",
+    "lib.arcade.skip": "Sote",
+    "lib.arcade.notThis": "Se pa sa, eseye ankò.",
+    "lib.arcade.startsWith": "Premye lèt: {c}",
+    "lib.arcade.note.domino": "Chak jwè resevwa 7 domino; sila ki gen pi gwo doub la kòmanse. Jwe yon domino ki gen nimewo ki matche ak yon bout chèn lan. Si ou pa ka jwe, pran nan depo a jiskaske ou ka; si l vid, pase. Premye ki vide men l genyen; si tou de bloke, sila ki gen pi ti total pwen genyen.",
+    "lib.arcade.note.hearts": "Kat jwè, 13 kat chak. Dis trèf la kòmanse (2 trèf). Ou dwe swiv kouwè a si ou kapab. Chak kè se 1 pwen epi Rèn pik la se 13; sila ki genyen yon tou pran pwen li yo. Pi ba se pi bon, epi si yon moun pran tout 26 pwen yo, tout lòt yo resevwa 26. Ou pa ka kòmanse ak kè jiskaske yon kè jwe. Apre dènye men an, ou genyen si nòt ou pi ba (oswa egal pi ba).",
+    "lib.arcade.note.holdem": "Kont òdinatè a, youn kont youn, ak jeton vityèl sèlman. Chak jwè resevwa 2 kat prive epi 5 kat kominote yo vire (flop, turn, river); fè pi bon men 5 kat. Chak tou ou ka kouche, swiv (oswa pase) oswa monte. Blind yo monte chak 4 men. Ou genyen lè òdinatè a pa gen jeton ankò, oswa lè ou gen plis jeton apre limit men yo. Pa gen lajan reyèl.",
+    "lib.arcade.dmDraw": "Pran yon domino",
+    "lib.arcade.dmPass": "Pase",
+    "lib.arcade.dmEmpty": "Poko gen domino ki jwe",
+    "lib.arcade.dmYard": "Depo: {n} domino",
+    "lib.arcade.dmLeft": "Bout agoch",
+    "lib.arcade.dmRight": "Bout adwat",
+    "lib.arcade.dmTie": "Egalite! De bò yo egal.",
+    "lib.arcade.hrHand": "Men {n}/{t}",
+    "lib.arcade.hrTook": "{p} genyen tou a ({n} pwen).",
+    "lib.arcade.hrIllegal": "Ou pa ka jwe kat sa a (swiv kouwè a, oswa poko gen kè ki jwe).",
+    "lib.arcade.blinds": "Gwo blind: {n}",
+    "lib.arcade.pot": "Po: {n}",
+    "lib.arcade.fold": "Kouche",
+    "lib.arcade.check": "Pase",
+    "lib.arcade.callN": "Swiv {n}",
+    "lib.arcade.raiseTo": "Monte rive",
+    "lib.arcade.raiseN": "Monte rive {n}",
+    "lib.arcade.thOppFold": "Òdinatè a kouche; ou genyen men sa a.",
+    "lib.arcade.thYouFold": "Ou kouche.",
+    "lib.arcade.thOppWin": "Òdinatè a genyen men sa a",
+    "lib.arcade.thYouWin": "Ou genyen men sa a",
+    "lib.arcade.thSplit": "Po pataje",
+    "lib.arcade.thAiFold": "Òdinatè a kouche.",
+    "lib.arcade.thAiRaise": "Òdinatè a monte rive {n}.",
+    "lib.arcade.thAiCall": "Òdinatè a swiv / pase.",
+    "lib.arcade.hand.high": "Kat wo",
+    "lib.arcade.hand.pair": "Pè",
+    "lib.arcade.hand.twoPair": "De pè",
+    "lib.arcade.hand.trips": "Brelan",
+    "lib.arcade.hand.straight": "Swit",
+    "lib.arcade.hand.flush": "Koulè",
+    "lib.arcade.hand.full": "Fil plen",
+    "lib.arcade.hand.quads": "Kare",
+    "lib.arcade.hand.sflush": "Swit koulè",
+    "lib.arcade.note.nback": "Yon kare limen youn apre lòt sou yon griy 3x3. Peze «Matche!» (oswa Space) lè pozisyon ki limen an menm ak sa ki te limen N etap anvan (N parèt anlè a). Ou bezwen omwen 80% bon desizyon pou pase nivo a. Nivo ki pi wo itilize yon N ki pi gwo.",
+    "lib.arcade.nbMatch": "Matche!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Kòrèk: {a} · Fo: {b}",
+    "lib.arcade.nbAcc": "Presizyon: {n}%",
+    "lib.arcade.note.clicker": "Klike bonbon an pou kwit bonbon, apre sa depanse yo sou asistan ki kwit otomatikman (pri a monte ak chak achte). Kwit kantite bonbon ki sib la nan 2 minit pou pase nivo a.",
+    "lib.arcade.ckCursor": "Kurseur",
+    "lib.arcade.ckGrandma": "Grann k ap kwit",
+    "lib.arcade.ckFarm": "Fèm",
+    "lib.arcade.ckMine": "Min sik",
+    "lib.arcade.ckFactory": "Izin",
+    "lib.arcade.ckCookie": "Bonbon",
+    "lib.arcade.ckEarned": "Kwit: {n}/{t}",
+    "lib.arcade.chips2": "Bonbon: {n}",
+    "lib.arcade.ckCps": "{n} bonbon/segonn",
+    "lib.arcade.note.onet": "Chwazi de tuile ki idantik ki ka konekte pa yon chemen ak pa plis pase 2 vire ki pa travèse lòt tuile pou retire yo. Retire tout tuile yo anvan tan an fini pou genyen. Lè pa gen mouvman ki rete, ou ka melanje (kantite limite).",
+    "lib.arcade.shuffle": "Melanje",
+    "lib.arcade.tilesLeft": "{n} tuile rete",
+    "lib.arcade.autoShuffle": "Pa gen mouvman ki rete — melanje otomatikman.",
+    "lib.arcade.note.jigsaw": "Foto a koupe an moso epi melanje. Manyen yon moso, apre sa yon lòt, pou chanje plas yo, epi rebati foto ki montre kòm referans lan. Moso ki nan bon plas yo gen yon bò vèt. Nivo ki pi wo gen plis moso.",
+    "lib.arcade.jgRef": "Foto referans",
+    "lib.arcade.jgPlaced": "Nan plas: {a}/{b}",
+    "lib.arcade.golfStrokes": "Kou: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Ou jwe pyès blan yo, k ap deplase soti anwo adwat rive anba adwat (kay ou). Jete dé yo, klike pyès ou vle deplase a, apre sa klike yon destinasyon ki limen. Si ou tonbe sou yon pwen ki gen egzakteman yon pyès advèsè, ou frape l sou ba mitan an, epi jwè sa a dwe antre li ankò an premye. Ou pa ka tonbe sou yon pwen ki gen de pyès advèsè oswa plis. Lè tout 15 pyès ou yo nan kay ou (6 dènye pwen yo), ou ka retire yo. Premye ki retire tout 15 yo genyen.",
+    "lib.arcade.bgRoll": "Jete dé yo",
+    "lib.arcade.bgOff": "Retire",
+    "lib.arcade.bgRollFirst": "Jete dé yo",
+    "lib.arcade.bgInfo": "Retire: ou {a} · òdinatè {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Ou pa gen mouvman lejal ankò.",
+    "lib.arcade.note.tienlen": "Kat jwè, 13 kat chak. Lòd kat soti ba rive wo: 3, 4, … K, A, 2; kouwè soti ba rive wo: pik, trèf, kawo, kè. Sila ki gen 3 pik la kòmanse. Jwe yon sèl kat, yon pè, yon brelan, yon kare, oswa yon swit 3 kat oswa plis youn apre lòt (pa gen 2). Jwè swivan an dwe jwe menm kalite a pi wo, oswa pase; yon kare ka bat yon sèl 2 oswa yon pè 2. Lè tout lòt yo pase, dènye jwè ki te jwe a ka kòmanse ak nenpòt bagay. Premye ki vide men l genyen. Chwazi kat yo, apre sa peze Jwe.",
+    "lib.arcade.tlPlay": "Jwe",
+    "lib.arcade.tlPass": "Pase",
+    "lib.arcade.tlClear": "Efase seleksyon",
+    "lib.arcade.tlPassed": "te pase",
+    "lib.arcade.tlFree": "Tab la vid — ou ka kòmanse ak nenpòt bagay",
+    "lib.arcade.tlLeft": "Kat ki rete: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} pase.",
+    "lib.arcade.tlBad": "Kat ou chwazi yo pa fòme yon ansanm valab.",
+    "lib.arcade.tlLow": "Ansanm sa a pa ase wo pou bat sa ki sou tab la.",
+    "lib.arcade.note.td": "Manyen yon kare vid (pa chemen an) pou bati yon fò ki tire, sa koute lò; manyen yon fò ankò pou amelyore l (jiska nivo 5). Fò yo tire otomatikman sou lènmi ki pi lwen nan pòte yo. Bat lènmi pou touche plis lò; si 15 lènmi rive nan bout la, ou pèdi. Siviv tout vag yo pou pase nivo a.",
+    "lib.arcade.tdInfo": "Lò: {g} · Vag {w}/{t}",
+    "lib.arcade.tdCost": "Fò: {n}",
+    "lib.arcade.note.colorNum": "Chak kare gen yon nimewo ki koresponn ak yon koulè nan palèt la. Chwazi yon koulè, apre sa manyen kare ki gen nimewo sa a pou pentire yo; manyen ak move koulè pa pentire anyen. Pentire chak kare kòrèkteman pou fini foto a. Nivo ki pi wo gen plis koulè.",
+    "lib.arcade.cnWrong": "Move koulè — gade nimewo ki sou kare a.",
+    "lib.arcade.note.yukon": "Tankou Klondike men san depo: nenpòt kat vizib ka deplase ansanm ak tout kat ki sou li, menm si yo pa swiv youn lòt; sèlman premye kat la dwe antre nan kolòn sib la (desann, wouj ak nwa altènatif; yon Wa ale nan yon kolòn vid). Bati tout 52 kat yo sou kat fondasyon yo soti nan As rive nan Wa. Nivo ki ba kòmanse ak plis kat deja vizib.",
+    "lib.arcade.yukonFree": "Kat kache: {n}",
+    "lib.arcade.note.chinesechk": "Ou jwe pyès ble yo nan kwen adwat la; deplase tout 10 yo nan kwen opoze agoch anvan òdinatè a. Chak tou ou deplase yon pyès: fè yon etap sou yon twou vid ki bò kote l, oswa sote sou nenpòt pyès nan twou vid dèyè l, epi kontinye sote otank ou vle. Manyen youn nan pyès ou yo, apre sa manyen yon twou vèt pou deplase.",
+    "lib.arcade.ccTurn": "Se ou menm · Tou {n}",
+    "lib.arcade.ccDraw": "Pa gen tou ankò — se egalite.",
+    "lib.arcade.note.maubinh": "Ou menm ak òdinatè a, chak resevwa 13 kat epi ranje yo nan 3 men: yon men dèyè 5 kat, yon men mitan 5 kat ak yon men devan 3 kat. Men dèyè a dwe omwen fò tankou mitan an, epi mitan an omwen fò tankou devan an; si non aranjman ou a gen fòt epi ou pèdi tout wonn lan. Manyen yon kat, apre sa manyen ranje kote li ale a (manyen yon kat ki mete pou reprann li). Chak men ou genyen vo 1 pwen; genyen tout 3 vo 6. Jwe 5 wonn — yon total pozitif pase nivo a. Men devan an ka sèlman kat wo, yon pè oswa yon brelan.",
+    "lib.arcade.mbHigh": "Kat wo",
+    "lib.arcade.mbPair": "Pè",
+    "lib.arcade.mbTwoPair": "De pè",
+    "lib.arcade.mbTrips": "Brelan",
+    "lib.arcade.mbStraight": "Swit",
+    "lib.arcade.mbFlush": "Koulè",
+    "lib.arcade.mbFull": "Fil plen",
+    "lib.arcade.mbQuads": "Kare",
+    "lib.arcade.mbSflush": "Swit koulè",
+    "lib.arcade.mbBack": "Men dèyè",
+    "lib.arcade.mbMid": "Men mitan",
+    "lib.arcade.mbFront": "Men devan",
+    "lib.arcade.mbFoe": "Òdinatè",
+    "lib.arcade.mbYou": "Ou",
+    "lib.arcade.mbFoul": "Fòt!",
+    "lib.arcade.mbFoeFoul": "Òdinatè a fè fòt!",
+    "lib.arcade.mbConfirm": "Montre kat yo",
+    "lib.arcade.mbReset": "Efase",
+    "lib.arcade.mbHand": "Men ou",
+    "lib.arcade.mbRound": "Wonn {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Fini",
+    "lib.arcade.mbNext": "Pwochen wonn",
+    "lib.arcade.mbDraw": "Egalite nan pwen — rejwe.",
+    "lib.arcade.mbAutoMsg": "Men yon aranjman sijere. Ou ka chanje l anvan ou montre kat yo.",
+    "lib.arcade.note.phom": "De jwè; chak resevwa 9 kat (sila ki kòmanse a resevwa 10). Yon melde se 3 kat oswa plis menm valè, oswa 3 kat oswa plis youn apre lòt menm kouwè (As se sèlman ba). Nan tou ou, pran yon kat nan pil la, oswa pran kat advèsè ou sot jete a si li fòme yon melde ak men ou (yon kat ou pran dwe kenbe), apre sa jete yon kat. Lè chak jwè jete 4 kat, wonn lan fini epi sila ki gen pi ti total kat ki pa nan melde genyen (As = 1 … Wa = 13). Si tout kat ou yo nan melde apre yon jete, ou soti («U») epi ou genyen touswit. Kat ki antoure ak vèt yo nan pi bon ansanm melde ou yo.",
+    "lib.arcade.pmDraw": "Pran",
+    "lib.arcade.pmEat": "Pran kat jete a",
+    "lib.arcade.pmThrow": "Jete",
+    "lib.arcade.pmFoeAte": "Òdinatè a pran kat ou.",
+    "lib.arcade.pmFoeU": "Òdinatè a soti!",
+    "lib.arcade.pmTurn": "Tou {a}/{b}",
+    "lib.arcade.pmLeft": "Pa nan melde: {n}",
+    "lib.arcade.pmDeck": "Pil: {n}",
+    "lib.arcade.pmFoeHand": "Men òdinatè a",
+    "lib.arcade.pmFoeDisc": "Jete òdinatè a",
+    "lib.arcade.pmFoeEaten": "Òdinatè a pran",
+    "lib.arcade.pmMyDisc": "Jete ou yo",
+    "lib.arcade.pmAte": "Ou pran kat sa a — kenbe l nan yon melde.",
+    "lib.arcade.pmKeep": "Yon kat ou pran dwe kenbe — jete yon lòt.",
+    "lib.arcade.pmU": "Soti! Ou genyen touswit.",
+    "lib.arcade.pmYou": "Ou",
+    "lib.arcade.pmFoe": "Òdinatè",
+    "lib.arcade.pmDraw2": "Egalite nan pwen.",
+    "lib.arcade.note.shogi": "Shogi se echèk japonè. Ou jwe bò anba a epi ou kòmanse; pyès òdinatè a gade lòt bò. Pyès ou kaptire antre nan men ou epi ou ka lage yo sou nenpòt kare vid olye de fè yon mouvman (pa janm yon pyon nan yon kolòn kote ou deja gen yon pyon ki pa pwomosyone, ni yon pyès sou yon ranje kote li pa ta ka deplase ankò). Yon pyès ki antre, soti, oswa deplase nan twa dènye ranje advèsè a ka pwomosyone (eksepte Wa ak Lò); pwomosyon obligatwa si pyès la pa t ap gen mouvman. Fè echèk mat sou Wa lènmi an pou genyen. Kanji: 歩 pyon, 香 lans, 桂 chwal, 銀 ajan, 金 lò, 角 fou, 飛 tou, 玉 wa; と, 馬, 竜 ak lòt pyès wouj yo pwomosyone.",
+    "lib.arcade.sgPromote": "Pwomosyone",
+    "lib.arcade.sgKeep": "Pa pwomosyone",
+    "lib.arcade.sgCheck": "Ou nan echèk!",
+    "lib.arcade.sgWin": "Echèk mat — ou genyen.",
+    "lib.arcade.sgLose": "Yo fè echèk mat sou ou.",
+    "lib.arcade.sgAskPromote": "Pwomosyone pyès sa a?",
+    "lib.arcade.note.janggi": "Janggi se echèk koreyen. Ou jwe pyès ble yo anba a epi ou kòmanse. Kontrèman ak xiangqi pa gen rivyè, epi de palè yo gen liy dyagonal. Jeneral la ak Gad yo deplase yon etap sou liy palè yo (dyagonal yo enkli); Cha a glise epi kaptire sou dyagonal palè yo tou; Kanon an dwe sote sou egzakteman yon pyès (pa yon lòt Kanon) pou deplase oswa kaptire, epi li pa ka kaptire yon Kanon; Chwal la fè yon etap dwat apre sa yon dyagonal, Elefan an yon dwat apre sa de dyagonal, tou de bloke si gen yon pyès nan chemen; Sòlda yo avanse oswa ale sou kote, epi dyagonal devan andedan palè advèsè a. De Jeneral yo pa janm ka fè fas youn ak lòt. Fè echèk mat sou Jeneral lènmi an pou genyen. Òdinatè a pa janm pase.",
+    "lib.arcade.jgCheck": "Ou nan echèk!",
+    "lib.arcade.jgWin": "Echèk mat — ou genyen.",
+    "lib.arcade.jgLose": "Yo fè echèk mat sou ou.",
+    "lib.arcade.note.pinball": "Peze Space, Anwo oswa manyen tab la pou lanse boul la. Kenbe Agoch (oswa manyen mwatye agoch tab la) pou leve flipè agoch la, epi Adwat (oswa mwatye adwat) pou sa adwat la — tape nan ritm olye de kenbe. Bonbè won yo bay 100 pwen chak. Ou gen 3 boul; rive nan nòt sib la anvan yo fini pou pase nivo a.",
+    "lib.arcade.pinBalls": "Boul: {n} · Sib: {t}",
+    "lib.arcade.note.cribbage": "Cribbage pou de jwè, yon kous jiska 61 pwen. Chak distribisyon ou resevwa 6 kat epi mete 2 fas anba nan crib la (li pou distribitè a). Yon kat starter vire anlè. Apre sa youn apre lòt jwe kat fas anlè san total la pa depase 31: rive 15 oswa 31 bay 2, menm valè ak dènye kat la bay 2/6/12, yon swit 3 kat oswa plis (nan nenpòt lòd) bay longè li, epi lè pèsonn pa ka jwe, dènye jwè a resevwa 1 («Go»). Apre sa chak men 4 kat konte ak starter la: chak konbinezon ki fè 15 bay 2, chak pè 2, yon swit 3+ longè li, kat kat menm kouwè 4 (5 ak starter la), epi yon Valè ki matche kouwè starter la 1. Moun ki pa distribitè a konte an premye, apre sa distribitè a konte men l ak crib la.",
+    "lib.arcade.cbFifteen": "Kenz",
+    "lib.arcade.cbPair": "Pè",
+    "lib.arcade.cbRun": "Swit",
+    "lib.arcade.cbFlush": "Koulè",
+    "lib.arcade.cbNobs": "Valè ki matche starter la",
+    "lib.arcade.cbHeels": "Valè kòm starter",
+    "lib.arcade.cbYou": "Ou",
+    "lib.arcade.cbFoe": "Òdinatè",
+    "lib.arcade.cbLast": "Dènye kat",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Ou distribye",
+    "lib.arcade.cbFoeDeal": "Òdinatè a distribye",
+    "lib.arcade.cbPick": "Chwazi 2 kat pou crib la",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Men ou",
+    "lib.arcade.cbFoeHand": "Men òdinatè a",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 pwen",
+    "lib.arcade.cbPlayed": "Jwe",
+    "lib.arcade.cbToCrib": "Mete nan crib",
+    "lib.arcade.cbNext": "Kontinye",
+    "lib.arcade.cbHand": "Men"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Tic-Tac-Toe Ultim",
       "desc": "Tic-tac-toe sou 9 ti tablo: kare ou chwazi a deside kote advèsè w la dwe jwe; kont òdinatè a nan 10 nivo."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Voye boul la pase òdinatè a; premye ki fè 5 pwen genyen. 10 nivo ak yon advèsè ki pi rapid epi pi egi."
+    },
+    "space-shooter": {
+      "name": "Tirè Espas",
+      "desc": "Dirije vè ou a, tire vè lènmi yo epi evite tire yo; 10 nivo ak pi gwo vag, tire an retou epi lènmi pi difisil."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Vire, pouse epi tire pou kase wòch espas yo; gwo wòch yo kase an pi piti. 10 nivo ak plis wòch ki pi rapid."
+    },
+    "maze": {
+      "name": "Labirent",
+      "desc": "Jwenn chemen soti nan labirent la anvan tan an fini; 10 nivo soti nan ti labirent rive nan gwo yo, ak bwouya nan nivo ki pi wo yo."
+    },
+    "road-cross": {
+      "name": "Travèse Wout (style Frogger)",
+      "desc": "Fè krapo a sote atravè wout okipe ak rivyè bwa k ap flote pou rive lakay 3 fwa; 10 nivo ak sikilasyon pi rapid epi yon rivyè nan nivo ki pi wo yo."
+    },
+    "flappy": {
+      "name": "Jwèt style Flappy Bird",
+      "desc": "Manyen pou bat zèl epi vole nan espas ant tiyo yo; 10 nivo ak espas ki pi etwat epi vitès k ap monte."
+    },
+    "runner": {
+      "name": "Kourè Dino",
+      "desc": "Sote sou kaktis epi bese anba zwazo; kouri ase lwen pou pase chak nan 10 nivo yo pandan vitès la kontinye monte."
+    },
+    "whack-a-mole": {
+      "name": "Frape Krapo Tè",
+      "desc": "Frape krapo tè ki soti nan twou yo anvan tan an fini, epi evite bonm yo; 10 nivo soti nan dousman rive trè rapid."
+    },
+    "simon": {
+      "name": "Simon (Koulè Memwa)",
+      "desc": "Sonje epi repete sekans koulè ak son yo; sekans ki pi long sou 10 nivo, ak 6 plak soti nan nivo 7."
+    },
+    "aim-trainer": {
+      "name": "Antrenè Vize",
+      "desc": "Frape sib ki parèt o aza epi disparèt vit; sib yo vin pi piti sou 10 nivo, epi yo mezire tan reyaksyon ou."
+    },
+    "quick-math": {
+      "name": "Kalkil Rapid",
+      "desc": "Fè adisyon, soustraksyon, miltiplikasyon ak divizyon nan tèt ou anba presyon tan; 10 nivo soti nan senp adisyon rive nan ekspresyon."
+    },
+    "reaction": {
+      "name": "Tès Tan Reyaksyon",
+      "desc": "Klike nan moman ekran an vin vèt; mwayèn 5 tou ou dwe respekte limit chak nivo, ki vin pi sere sou 10 nivo."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Simen grenn nan twou yo, kaptire grenn advèsè ou epi jwe ankò lè ou tonbe nan depo ou; jwe kont òdinatè a sou 10 nivo soti nan fasil rive difisil."
+    },
+    "snakes-ladders": {
+      "name": "Koulèv ak Nechèl",
+      "desc": "Jete dé a soti nan kare 1 rive 100, monte nechèl, evite koulèv epi rive nan fen anvan advèsè ou yo; 10 nivo."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Mete, glise epi vole pyès ou yo pou fè twa nan yon liy epi retire pyès advèsè ou; jwe kont òdinatè a sou 10 nivo."
+    },
+    "battleship": {
+      "name": "Batay Naval",
+      "desc": "Jwenn epi koule flòt òdinatè a sou yon griy 10x10 anvan li koule pa ou; 10 nivo pandan òdinatè a devine pi entèlijan."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Kalbas Krab Pwason Krevèt)",
+      "desc": "Jwèt dé tradisyonèl vyetnamyen: parye pyès monnen vityèl sou bèt yo epi souke twa dé; rive nan pyès sib yo sou 10 nivo (pa gen lajan reyèl)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Parye sou Jwè, Bankye oswa Egalite ak kat distribye dapre règ estanda yo, ak pyès monnen vityèl; rive nan pyès sib yo sou 10 nivo (pa gen lajan reyèl)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Jwèt Twa Kat)",
+      "desc": "Konpare men 3 kat ak distribitè a: twa menm, twa kat figi, apre sa 9 pwen rive 0; pyès monnen vityèl, 10 nivo, pa gen lajan reyèl."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Make nimewo yo rele sou kat 5x5 ou a epi di BINGO anvan advèsè òdinatè yo; nimewo yo rele pi vit sou 10 nivo."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Senk Dé)",
+      "desc": "Jete senk dé, kenbe bon yo epi ranpli 13 bwat pwen; rive nan nòt sib la sou 10 nivo."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Matche kouwè oswa valè, uit yo chanje kouwè a; vide men ou anvan 1 rive 3 advèsè òdinatè sou 10 nivo."
+    },
+    "car-race": {
+      "name": "Evite Machin",
+      "desc": "Chanje liy pou evite machin devan yo epi kondui tout distans lan; 10 nivo ak plis liy epi sikilasyon pi rapid."
+    },
+    "sky-jump": {
+      "name": "Sote nan Syèl",
+      "desc": "Rebondi de platfòm an platfòm pou monte otank ou kapab san tonbe; 10 nivo ak platfòm ki pi ra, ki deplase epi ki kase."
+    },
+    "gold-miner": {
+      "name": "Chèchè Lò",
+      "desc": "Lage zen an pou rale lò ak dyaman, evite wòch lou yo, epi rive nan kòb sib la nan 60 segonn; 10 nivo."
+    },
+    "fruit-slice": {
+      "name": "Koupe Fwi",
+      "desc": "Glise pou koupe fwi k ap vole anwo epi evite bonm yo; 10 nivo ak plis fwi epi plis bonm."
+    },
+    "basketball": {
+      "name": "Tire Baskètbòl",
+      "desc": "Rale epi lage pou tire boul la nan panye a nan kantite tire limite; 10 nivo, ak yon panye k ap deplase apati nivo 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Tire boul pou konekte 3 oswa plis menm koulè epi eklate yo, epi netwaye yo tout anvan yo rive anba; 10 nivo ak plis koulè."
+    },
+    "dot-chase": {
+      "name": "Kouri dèyè Pwen",
+      "desc": "Manje tout pwen nan labirent la pandan w ap evite fantòm k ap kouri dèyè ou; 10 nivo ak plis fantòm ki pi entèlijan."
+    },
+    "kakuro": {
+      "name": "Kakuro (Sòm Kwaze)",
+      "desc": "Ranpli kazye blan yo ak chif 1–9 pou chak ranje fè endikasyon li san repetisyon; 10 nivo, griy soti nan 5x5 rive 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Ranpli griy lan san repetisyon nan ranje oswa kolòn pou chak kaj bay sib li ak operasyon li; 10 nivo, griy soti nan 3x3 rive 6x6."
+    },
+    "word-guess": {
+      "name": "Devine Mo (style Wordle)",
+      "desc": "Devine mo sekrè anglè a ak endis vèt, jòn ak gri; 10 nivo ak mo 4–6 lèt epi mwens esè."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Devine mo anglè a yon lèt alafwa anvan ou fini move devine; 10 nivo ak mo ki pi long epi mwens move devine."
+    },
+    "word-scramble": {
+      "name": "Anagram (Mo Melanje)",
+      "desc": "Reyaranje lèt melanje yo nan yon mo anglè anvan tan an fini; 10 nivo, 5 mo pou chak nivo."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Matche tuile yo ak nenpòt bout chèn lan epi vide men ou anvan òdinatè a; 10 nivo pandan òdinatè a vin pi entèlijan."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Evite kè yo ak Rèn pik la nan yon jwèt kat pou kat jwè; nòt ki pi ba se pi bon; 10 nivo kont jwè òdinatè ki pi entèlijan."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (jeton vityèl)",
+      "desc": "Poker youn kont youn kont òdinatè a ak jeton vityèl: kouche, swiv oswa monte, epi genyen lè òdinatè a pa gen jeton ankò; 10 nivo, pa gen lajan reyèl."
+    },
+    "n-back": {
+      "name": "Memwa N-Back",
+      "desc": "Gade kare ki limen an epi peze Matche lè li menm ak sa ki te limen N etap anvan; 10 nivo ak N jiska 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klike pou kwit bonbon, achte asistan ki kwit otomatikman epi rive nan sib la nan 2 minit; 10 nivo."
+    },
+    "tile-connect": {
+      "name": "Konekte Tuile (style Onet)",
+      "desc": "Konekte tuile ki matche ak yon chemen ki gen pa plis pase de vire epi netwaye tab la anvan tan an fini; 10 nivo, pi gwo tab."
+    },
+    "jigsaw": {
+      "name": "Jigsaw Foto",
+      "desc": "Chanje plas moso melanje yo pou rebati foto a; 10 nivo soti nan 3x3 rive 6x6 moso."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Rale dèyè epi lage pou voye boul la nan twou a nan limit kou a; 10 teren ak mi ak sab."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Jete dé yo, mennen pyès ou yo lakay yo epi retire yo anvan òdinatè a, frape pyès li ki poukont yo sou wout la; 10 nivo."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Trèz)",
+      "desc": "Jwèt kat vyetnamyen pou kat moun: jwe youn, pè, swit ak kat menm pou vide men ou an premye; 10 nivo."
+    },
+    "tower-defense": {
+      "name": "Defans Fò",
+      "desc": "Bati epi amelyore fò sou chemen an pou kanpe tout vag lènmi yo; 10 nivo sou twa kat diferan."
+    },
+    "color-by-number": {
+      "name": "Kolorye pa Nimewo",
+      "desc": "Pentire chak kare ak koulè ki koresponn ak nimewo li pou dekouvri foto a; 10 foto ak plis koulè chak fwa."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike san depo: deplase nenpòt kat vizib ak tout sa ki sou li; 10 nivo, mwens kat vizib pandan w ap avanse."
+    },
+    "chinese-checkers": {
+      "name": "Dam Chinwa",
+      "desc": "Jwèt fòm zetwal sote-ak-pase kont òdinatè a: deplase tout 10 pyès yo nan kwen opoze a an premye; 10 nivo."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Chinwa)",
+      "desc": "Ranje 13 kat nan twa men 5, 5 ak 3 kat epi bat òdinatè a; 5 wonn pou chak nivo, 10 nivo."
+    },
+    "phom": {
+      "name": "Phom (Rummy Vyetnamyen)",
+      "desc": "Rummy vyetnamyen pou de jwè kont òdinatè a: pran oswa pran yon kat jete, fòme melde epi soti; pi ti pwen ki rete genyen; 10 nivo."
+    },
+    "shogi": {
+      "name": "Shogi (Echèk Japonè)",
+      "desc": "Jwe shogi kont òdinatè a: lage pyès kaptire, pwomosyone epi fè echèk mat sou wa a; 10 nivo ak retounen."
+    },
+    "janggi": {
+      "name": "Janggi (Echèk Koreyen)",
+      "desc": "Jwe echèk koreyen kont òdinatè a: dyagonal palè, sote Kanon ak yon sèl pyès, Elefan twa etap; 10 nivo ak retounen."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Bat agoch ak adwat pou kenbe boul la vivan, frape bonbè yo epi rive nan nòt sib la anvan 3 boul ou yo fini; 10 nivo."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage pou de jwè kont òdinatè a: crib, pegging jiska 31, konte men yo, kous jiska 61 pwen; 10 nivo."
     }
   },
   "s": {

@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Pozostałe karty: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} pasuje.",
     "lib.arcade.tlBad": "Wybrane karty nie tworzą poprawnej kombinacji.",
-    "lib.arcade.tlLow": "Ta kombinacja jest za niska, aby pobić stół."
+    "lib.arcade.tlLow": "Ta kombinacja jest za niska, aby pobić stół.",
+    "lib.arcade.note.td": "Dotknij pustego pola (nie ścieżki), aby zbudować wieżę strzelniczą, która kosztuje złoto; dotknij wieży ponownie, aby ją ulepszyć (do poziomu 5). Wieże automatycznie strzelają do wroga, który zaszedł najdalej w zasięgu. Pokonuj wrogów, aby zdobywać więcej złota; jeśli 15 wrogów dotrze do końca, przegrywasz. Przetrwaj wszystkie fale, aby ukończyć poziom.",
+    "lib.arcade.tdInfo": "Złoto: {g} · Fala {w}/{t}",
+    "lib.arcade.tdCost": "Wieża: {n}",
+    "lib.arcade.note.colorNum": "Każde pole ma numer odpowiadający kolorowi z palety. Wybierz kolor, a potem dotykaj pól z tym numerem, aby je zamalować; użycie złego koloru niczego nie maluje. Zamaluj poprawnie wszystkie pola, aby ukończyć obrazek. Wyższe poziomy mają więcej kolorów.",
+    "lib.arcade.cnWrong": "Zły kolor – sprawdź numer na polu.",
+    "lib.arcade.note.yukon": "Jak Klondike, ale bez talii rezerwowej: każdą odkrytą kartę można przenieść razem ze wszystkimi kartami na niej, nawet jeśli nie tworzą sekwencji; tylko pierwsza karta musi pasować do kolumny docelowej (malejąco, na przemian czerwona i czarna; król trafia na pustą kolumnę). Ułóż wszystkie 52 karty na czterech stosach końcowych od asa do króla. Niskie poziomy zaczynają się z większą liczbą odkrytych kart.",
+    "lib.arcade.yukonFree": "Karty zakryte: {n}",
+    "lib.arcade.note.chinesechk": "Grasz niebieskimi pionkami w prawym rogu; przenieś wszystkie 10 do przeciwległego lewego rogu, zanim zrobi to komputer. W każdej turze ruszasz jednym pionkiem: krok na puste sąsiednie pole albo skok nad dowolnym pionkiem na puste pole tuż za nim, a skakać możesz dowolnie wiele razy z rzędu. Dotknij jednego ze swoich pionków, a potem zielonego pola, aby wykonać ruch.",
+    "lib.arcade.ccTurn": "Twoja tura · Tura {n}",
+    "lib.arcade.ccDraw": "Skończyły się tury – remis.",
+    "lib.arcade.note.maubinh": "Ty i komputer dostajecie po 13 kart i układacie je w 3 układy: tylny z 5 kart, środkowy z 5 kart i przedni z 3 kart. Układ tylny musi być co najmniej tak silny jak środkowy, a środkowy co najmniej tak silny jak przedni; w przeciwnym razie twoje ułożenie jest błędne i przegrywasz całą rundę. Dotknij karty, a potem rzędu, do którego ma trafić (dotknij położonej karty, aby ją zabrać). Każdy wygrany układ daje 1 punkt; wygranie wszystkich 3 daje 6. Zagrajcie 5 rund – dodatnia suma zalicza poziom. Układ przedni może być tylko wysoką kartą, parą lub trójką.",
+    "lib.arcade.mbHigh": "Wysoka karta",
+    "lib.arcade.mbPair": "Para",
+    "lib.arcade.mbTwoPair": "Dwie pary",
+    "lib.arcade.mbTrips": "Trójka",
+    "lib.arcade.mbStraight": "Strit",
+    "lib.arcade.mbFlush": "Kolor",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Kareta",
+    "lib.arcade.mbSflush": "Poker (strit w kolorze)",
+    "lib.arcade.mbBack": "Układ tylny",
+    "lib.arcade.mbMid": "Układ środkowy",
+    "lib.arcade.mbFront": "Układ przedni",
+    "lib.arcade.mbFoe": "Komputer",
+    "lib.arcade.mbYou": "Ty",
+    "lib.arcade.mbFoul": "Błędny układ!",
+    "lib.arcade.mbFoeFoul": "Komputer ułożył błędnie!",
+    "lib.arcade.mbConfirm": "Pokaż karty",
+    "lib.arcade.mbReset": "Wyczyść",
+    "lib.arcade.mbHand": "Twoja ręka",
+    "lib.arcade.mbRound": "Runda {a}/{b}",
+    "lib.arcade.mbTotal": "Suma: {n}",
+    "lib.arcade.mbFinish": "Zakończ",
+    "lib.arcade.mbNext": "Następna runda",
+    "lib.arcade.mbDraw": "Remis punktowy – zagrajcie jeszcze raz.",
+    "lib.arcade.mbAutoMsg": "Oto proponowane ułożenie. Możesz je zmienić, zanim pokażesz karty.",
+    "lib.arcade.note.phom": "Dwóch graczy; każdy dostaje 9 kart (kto zaczyna, dostaje 10). Układ to 3 lub więcej kart tej samej wartości albo 3 lub więcej kolejnych kart tego samego koloru (as jest tylko niski). W swojej turze dobierz kartę z talii albo weź kartę właśnie odrzuconą przez przeciwnika, jeśli tworzy układ z twoją ręką (wziętą kartę trzeba zatrzymać), a potem odrzuć jedną kartę. Gdy każdy gracz odrzuci 4 karty, runda się kończy, a wygrywa ten, kto ma niższą sumę kart poza układami (as = 1 … król = 13). Jeśli po odrzuceniu wszystkie twoje karty są w układach, kończysz grę („U”) i od razu wygrywasz. Karty obwiedzione na zielono należą do twoich najlepszych układów.",
+    "lib.arcade.pmDraw": "Dobierz",
+    "lib.arcade.pmEat": "Weź odrzuconą",
+    "lib.arcade.pmThrow": "Odrzuć",
+    "lib.arcade.pmFoeAte": "Komputer wziął twoją kartę.",
+    "lib.arcade.pmFoeU": "Komputer skończył grę!",
+    "lib.arcade.pmTurn": "Tura {a}/{b}",
+    "lib.arcade.pmLeft": "Poza układami: {n}",
+    "lib.arcade.pmDeck": "Talia: {n}",
+    "lib.arcade.pmFoeHand": "Ręka komputera",
+    "lib.arcade.pmFoeDisc": "Odrzucone przez komputer",
+    "lib.arcade.pmFoeEaten": "Komputer wziął",
+    "lib.arcade.pmMyDisc": "Twoje odrzucone",
+    "lib.arcade.pmAte": "Wziąłeś tę kartę – zatrzymaj ją w układzie.",
+    "lib.arcade.pmKeep": "Wziętą kartę trzeba zatrzymać – odrzuć inną.",
+    "lib.arcade.pmU": "Koniec gry! Wygrywasz od razu.",
+    "lib.arcade.pmYou": "Ty",
+    "lib.arcade.pmFoe": "Komputer",
+    "lib.arcade.pmDraw2": "Remis punktowy.",
+    "lib.arcade.note.shogi": "Shogi to japońskie szachy. Grasz dolną stroną i zaczynasz; figury komputera są skierowane w przeciwną stronę. Zbite figury trafiają do twojej ręki i zamiast wykonać ruch, możesz je wstawić na dowolne puste pole (nigdy pionka w linię, w której masz już niepromowanego pionka, i nigdy figury na rząd, z którego nie mogłaby się już ruszyć). Figura, która wchodzi na ostatnie trzy rzędy przeciwnika, z nich wychodzi lub porusza się w ich obrębie, może zostać promowana (poza królem i złotem); promocja jest obowiązkowa, gdy figura nie miałaby już ruchów. Zamatuj króla przeciwnika, aby wygrać. Kanji: 歩 pionek, 香 lanca, 桂 skoczek, 銀 srebro, 金 złoto, 角 goniec, 飛 wieża, 玉 król; と, 馬, 竜 i inne czerwone figury są promowane.",
+    "lib.arcade.sgPromote": "Promuj",
+    "lib.arcade.sgKeep": "Nie promuj",
+    "lib.arcade.sgCheck": "Masz szacha!",
+    "lib.arcade.sgWin": "Mat – wygrywasz.",
+    "lib.arcade.sgLose": "Dostałeś mata.",
+    "lib.arcade.sgAskPromote": "Promować tę figurę?",
+    "lib.arcade.note.janggi": "Janggi to koreańskie szachy. Grasz niebieskimi figurami na dole i zaczynasz. W przeciwieństwie do xiangqi nie ma rzeki, a oba pałace mają linie ukośne. Generał i Strażnicy poruszają się o jeden krok wzdłuż linii pałacu (także po przekątnej); Rydwan również sunie i bije wzdłuż przekątnych pałacu; Armata musi przeskoczyć dokładnie jedną figurę (nie inną Armatę), aby się ruszyć lub bić, i nie może bić Armaty; Koń robi krok prosto, a potem jeden ukośnie, Słoń jeden prosto, a potem dwa ukośnie, obaj są blokowani, jeśli coś stoi na drodze; Żołnierze idą do przodu lub w bok, a w pałacu przeciwnika także ukośnie do przodu. Dwaj Generałowie nie mogą nigdy stanąć naprzeciw siebie. Zamatuj Generała przeciwnika, aby wygrać. Komputer nigdy nie pasuje.",
+    "lib.arcade.jgCheck": "Masz szacha!",
+    "lib.arcade.jgWin": "Mat – wygrywasz.",
+    "lib.arcade.jgLose": "Dostałeś mata.",
+    "lib.arcade.note.pinball": "Naciśnij spację, strzałkę w górę albo dotknij stołu, aby wystrzelić kulę. Przytrzymaj Lewo (lub dotknij lewej połowy stołu), aby podnieść lewą łapkę, i Prawo (lub prawą połowę) dla prawej – lepiej stukać w rytmie, niż przytrzymywać. Okrągłe bumpery dają po 100 punktów. Masz 3 kule; osiągnij docelowy wynik, zanim się skończą, aby ukończyć poziom.",
+    "lib.arcade.pinBalls": "Kule: {n} · Cel: {t}",
+    "lib.arcade.note.cribbage": "Cribbage dla dwóch graczy, wyścig do 61 punktów. W każdym rozdaniu dostajesz 6 kart i kładziesz 2 zakryte do crib (należy do rozdającego). Odkrywana jest karta startowa. Potem na zmianę wykładacie karty odkryte, a bieżąca suma nie może przekroczyć 31: osiągnięcie 15 lub 31 daje 2, powtórzenie ostatniej karty daje 2/6/12, sekwencja 3 lub więcej kart (w dowolnej kolejności) daje tyle punktów, ile ma kart, a gdy nikt nie może zagrać, ostatni gracz dostaje 1 punkt („Go”). Następnie każda 4-kartowa ręka jest liczona ze startową: każda kombinacja o sumie 15 daje 2, każda para 2, sekwencja 3+ tyle, ile ma kart, cztery karty w jednym kolorze 4 (5 z kartą startową), a walet w kolorze karty startowej 1. Pierwszy liczy nierozdający, potem rozdający liczy swoją rękę i crib.",
+    "lib.arcade.cbFifteen": "Piętnaście",
+    "lib.arcade.cbPair": "Para",
+    "lib.arcade.cbRun": "Sekwencja",
+    "lib.arcade.cbFlush": "Kolor",
+    "lib.arcade.cbNobs": "Walet w kolorze karty startowej",
+    "lib.arcade.cbHeels": "Walet jako karta startowa",
+    "lib.arcade.cbYou": "Ty",
+    "lib.arcade.cbFoe": "Komputer",
+    "lib.arcade.cbLast": "Ostatnia karta",
+    "lib.arcade.cbCount": "Suma: {n}",
+    "lib.arcade.cbYouDeal": "Ty rozdajesz",
+    "lib.arcade.cbFoeDeal": "Komputer rozdaje",
+    "lib.arcade.cbPick": "Wybierz 2 karty do crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Twoja ręka",
+    "lib.arcade.cbFoeHand": "Ręka komputera",
+    "lib.arcade.cbStarter": "Karta startowa",
+    "lib.arcade.cbZero": "0 punktów",
+    "lib.arcade.cbPlayed": "Zagrane",
+    "lib.arcade.cbToCrib": "Połóż do crib",
+    "lib.arcade.cbNext": "Dalej",
+    "lib.arcade.cbHand": "Ręka"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Trzynastka)",
       "desc": "Wietnamska gra karciana dla czterech osób polegająca na pozbywaniu się kart: zagrywaj pojedyncze karty, pary, sekwencje i czwórki, aby jako pierwszy opróżnić rękę; 10 poziomów."
+    },
+    "tower-defense": {
+      "name": "Tower Defense (obrona wież)",
+      "desc": "Buduj i ulepszaj wieże wzdłuż ścieżki, aby powstrzymać każdą falę wrogów; 10 poziomów na trzech różnych mapach."
+    },
+    "color-by-number": {
+      "name": "Malowanie po numerach",
+      "desc": "Zamaluj każde pole kolorem odpowiadającym jego numerowi, aby odsłonić obrazek; 10 obrazków, każdy z większą liczbą kolorów."
+    },
+    "yukon": {
+      "name": "Pasjans Yukon",
+      "desc": "Klondike bez talii rezerwowej: przenoś dowolną odkrytą kartę razem ze wszystkim, co na niej leży; 10 poziomów, z każdym mniej odkrytych kart."
+    },
+    "chinese-checkers": {
+      "name": "Chińczyk (warcaby chińskie)",
+      "desc": "Gwiaździsta gra w kroki i skoki przeciwko komputerowi: jako pierwszy przenieś wszystkie 10 pionków do przeciwległego rogu; 10 poziomów."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (poker chiński)",
+      "desc": "Ułóż 13 kart w trzy układy po 5, 5 i 3 karty i pokonaj komputer; 5 rund na poziom, 10 poziomów."
+    },
+    "phom": {
+      "name": "Phom (wietnamskie remik)",
+      "desc": "Wietnamski remik dla dwóch graczy przeciwko komputerowi: dobieraj lub bierz odrzuconą kartę, twórz układy i kończ grę; wygrywa najmniej punktów w ręce; 10 poziomów."
+    },
+    "shogi": {
+      "name": "Shogi (japońskie szachy)",
+      "desc": "Zagraj w shogi z komputerem: wstawiaj zbite figury, promuj i zamatuj króla; 10 poziomów z cofaniem ruchu."
+    },
+    "janggi": {
+      "name": "Janggi (koreańskie szachy)",
+      "desc": "Zagraj w koreańskie szachy z komputerem: przekątne pałacu, skoki armaty przez jedną figurę, słonie o trzech krokach; 10 poziomów z cofaniem ruchu."
+    },
+    "pinball": {
+      "name": "Pinball (flipper)",
+      "desc": "Używaj lewej i prawej łapki, by utrzymać kulę w grze, trafiaj w bumpery i osiągnij docelowy wynik, zanim skończą się 3 kule; 10 poziomów."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage dla dwóch graczy przeciwko komputerowi: crib, pegging do 31, liczenie rąk, wyścig do 61 punktów; 10 poziomów."
     }
   },
   "s": {

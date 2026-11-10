@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Karti li fadal: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} jgħaddi.",
     "lib.arcade.tlBad": "Il-karti magħżula ma jiffurmawx sett validu.",
-    "lib.arcade.tlLow": "Dan is-sett mhuwiex għoli biżżejjed biex jegħleb il-mejda."
+    "lib.arcade.tlLow": "Dan is-sett mhuwiex għoli biżżejjed biex jegħleb il-mejda.",
+    "lib.arcade.note.td": "Mess kwadru vojt (mhux it-triq) biex tibni torri li tisptara, li tiswa deheb. Mess torri mill-ġdid biex ittejjibha (sal-livell 5). It-torri jisparaw awtomatikament lejn l-għadu li mexa l-aktar 'il bogħod fil-medda tagħhom. Għeleb l-għedewwa biex tikseb aktar deheb. Jekk 15-il għadu jaslu fl-aħħar, titlef. Tgħaddi mill-mewġ kollu biex tlesti l-livell.",
+    "lib.arcade.tdInfo": "Deheb: {g} · Mewġa {w}/{t}",
+    "lib.arcade.tdCost": "Torri: {n}",
+    "lib.arcade.note.colorNum": "Kull kwadru għandu numru li jaqbel ma' kulur fil-paletta. Agħżel kulur, imbagħad mess il-kwadri b'dak in-numru biex tiżbgħahom. Jekk tuża kulur ħażin, ma jiġi miżbugħ xejn. Żbogħ il-kwadri kollha sew biex tlesti x-xbieha. Il-livelli ogħla għandhom aktar kuluri.",
+    "lib.arcade.cnWrong": "Kulur ħażin — iċċekkja n-numru fuq il-kwadru.",
+    "lib.arcade.note.yukon": "Bħall-Klondike imma mingħajr stokk: kwalunkwe karta mikxufa tista' tiċċaqlaq flimkien mal-karti kollha fuqha, anki jekk mhumiex f'sekwenza. Il-ewwel karta biss trid taqbel mal-kolonna fil-mira (b'mod dixxendenti, aħmar u iswed alternati; Re jmur f'kolonna vojta). Ibni l-52 karta kollha fuq l-erba' pedamenti mill-Assu sar-Re. Il-livelli baxxi jibdew b'aktar karti diġà mikxufa.",
+    "lib.arcade.yukonFree": "Karti mgħottija: {n}",
+    "lib.arcade.note.chinesechk": "Tilgħab bil-biċċiet blu fir-rokna tal-lemin. Mexxi l-10 kollha lejn ir-rokna opposta tax-xellug qabel il-kompjuter. F'kull dawra tmexxi biċċa waħda: pass lejn toqba ġirien vojta, jew qabża fuq kwalunkwe biċċa lejn it-toqba vojta eżatt warajha, u kompli aqbeż kemm trid. Mess waħda mill-biċċiet tiegħek, imbagħad mess toqba ħadra biex tmexxi.",
+    "lib.arcade.ccTurn": "Id-dawra tiegħek · Dawra {n}",
+    "lib.arcade.ccDraw": "Spiċċaw id-dawriet — draw.",
+    "lib.arcade.note.maubinh": "Int u l-kompjuter tieħdu 13-il karta kull wieħed u tirranġawhom f'3 idejn: id-id ta' wara b'5 karti, l-id tan-nofs b'5 karti u l-id ta' quddiem bi 3 karti. L-id ta' wara trid tkun tal-anqas b'saħħitha daqs dik tan-nofs, u dik tan-nofs tal-anqas daqs dik ta' quddiem; inkella l-arranġament tiegħek ikun invalidu u titlef ir-rawnd kollu. Mess karta, imbagħad mess ir-ringiela fejn tmur (mess karta mqiegħda biex terġa' teħodha). Kull id li tirbaħ tagħti punt 1; jekk tirbaħ it-3 tagħti 6. Illgħab 5 rawnds — total pożittiv jgħaddi l-livell. L-id ta' quddiem tista' tkun biss karta għolja, par jew tris.",
+    "lib.arcade.mbHigh": "Karta għolja",
+    "lib.arcade.mbPair": "Par",
+    "lib.arcade.mbTwoPair": "Żewġ pari",
+    "lib.arcade.mbTrips": "Tris",
+    "lib.arcade.mbStraight": "Sekwenza",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Erba' ta' tip",
+    "lib.arcade.mbSflush": "Sekwenza tal-istess suit",
+    "lib.arcade.mbBack": "Id ta' wara",
+    "lib.arcade.mbMid": "Id tan-nofs",
+    "lib.arcade.mbFront": "Id ta' quddiem",
+    "lib.arcade.mbFoe": "Kompjuter",
+    "lib.arcade.mbYou": "Int",
+    "lib.arcade.mbFoul": "Arranġament invalidu!",
+    "lib.arcade.mbFoeFoul": "Il-kompjuter għamel arranġament invalidu!",
+    "lib.arcade.mbConfirm": "Uri l-karti",
+    "lib.arcade.mbReset": "Ikkanċella",
+    "lib.arcade.mbHand": "Idek",
+    "lib.arcade.mbRound": "Rawnd {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Spiċċa",
+    "lib.arcade.mbNext": "Rawnd li jmiss",
+    "lib.arcade.mbDraw": "Punti indaqs — illgħab mill-ġdid.",
+    "lib.arcade.mbAutoMsg": "Hawn arranġament suġġerit. Tista' tbiddlu qabel turi l-karti.",
+    "lib.arcade.note.phom": "Żewġ plejers; kull wieħed jieħu 9 karti (min jibda jieħu 10). Kombinazzjoni hija 3 karti jew aktar tal-istess valur, jew 3 karti jew aktar konsekuttivi tal-istess suit (l-Assu huwa baxx biss). Fid-dawra tiegħek iġbed karta mill-imżiewed, jew ħu l-karta li l-avversarju għadu kemm keċċa jekk tifforma kombinazzjoni ma' idejk (karta li tieħu trid iżżommha), imbagħad keċċi karta waħda. Meta kull plejer ikun keċċa 4 karti, ir-rawnd jintemm u jirbaħ min għandu t-total l-aktar baxx ta' karti barra mill-kombinazzjonijiet (Assu = 1 … Re = 13). Jekk il-karti kollha tiegħek ikunu f'kombinazzjonijiet wara li tkeċċi, toħroġ (\"U\") u tirbaħ immedjatament. Karti b'kontorn aħdar huma fl-aħjar sett ta' kombinazzjonijiet tiegħek.",
+    "lib.arcade.pmDraw": "Iġbed",
+    "lib.arcade.pmEat": "Ħu l-karta keċċuta",
+    "lib.arcade.pmThrow": "Keċċi",
+    "lib.arcade.pmFoeAte": "Il-kompjuter ħa l-karta tiegħek.",
+    "lib.arcade.pmFoeU": "Il-kompjuter ħareġ!",
+    "lib.arcade.pmTurn": "Dawra {a}/{b}",
+    "lib.arcade.pmLeft": "Barra mill-kombinazzjonijiet: {n}",
+    "lib.arcade.pmDeck": "Imżiewed: {n}",
+    "lib.arcade.pmFoeHand": "Id tal-kompjuter",
+    "lib.arcade.pmFoeDisc": "Karti keċċuti mill-kompjuter",
+    "lib.arcade.pmFoeEaten": "Il-kompjuter ħa",
+    "lib.arcade.pmMyDisc": "Il-karti keċċuti tiegħek",
+    "lib.arcade.pmAte": "Ħadt din il-karta — żommha f'kombinazzjoni.",
+    "lib.arcade.pmKeep": "Karta li ħadt trid iżżommha — keċċi oħra.",
+    "lib.arcade.pmU": "Ħriġt! Tirbaħ immedjatament.",
+    "lib.arcade.pmYou": "Int",
+    "lib.arcade.pmFoe": "Kompjuter",
+    "lib.arcade.pmDraw2": "Punti indaqs.",
+    "lib.arcade.note.shogi": "Is-Shogi huwa x-xatranġ Ġappuniż. Tilgħab in-naħa t'isfel u tibda int; il-biċċiet tal-kompjuter jaraw lejn in-naħa l-oħra. Il-biċċiet maqbuda jidħlu f'idejk u jistgħu jitqiegħdu fuq kwalunkwe kwadru vojt minflok ma tagħmel mossa (qatt pedina f'kolonna fejn diġà għandek pedina mhux promossa, u qatt biċċa f'ringiela fejn ma setgħetx tiċċaqlaq iktar). Biċċa li tidħol, toħroġ jew titmexxa fl-aħħar tliet ringieli tal-avversarju tista' tiġi promossa (barra r-Re u d-Deheb). Il-promozzjoni hija obbligatorja jekk il-biċċa altrimenti ma jkollhiex mososs. Agħmel xakk-mat lir-Re tal-għadu biex tirbaħ. Kanji: 歩 pedina, 香 lanza, 桂 żiemel, 銀 fidda, 金 deheb, 角 alfier, 飛 torri, 玉 re. と, 馬, 竜 u biċċiet ħomor oħra huma promossi.",
+    "lib.arcade.sgPromote": "Promwovi",
+    "lib.arcade.sgKeep": "Tippromwovix",
+    "lib.arcade.sgCheck": "Int taħt xakk!",
+    "lib.arcade.sgWin": "Xakk-mat — rbaħt.",
+    "lib.arcade.sgLose": "Ħadulek xakk-mat.",
+    "lib.arcade.sgAskPromote": "Tippromwovi din il-biċċa?",
+    "lib.arcade.note.janggi": "Il-Janggi huwa x-xatranġ Korejan. Tilgħab il-biċċiet blu t'isfel u tibda int. B'differenza mix-xiangqi, m'hemmx xmara, u ż-żewġ palazzi għandhom linji djagonali. Il-Ġeneral u l-Gwardji jimxu pass wieħed tul il-linji tal-palazz (inklużi d-djagonali). Il-Karru jiżżerżaq u jaqbad ukoll tul id-djagonali tal-palazz. Il-Kanun irid jaqbeż fuq biċċa waħda eżatt (mhux kanun ieħor) biex jiċċaqlaq jew jaqbad, u ma jistax jaqbad kanun. Iż-Żiemel jagħmel pass wieħed dritt imbagħad wieħed djagonali, u l-Iljunfant wieħed dritt imbagħad tnejn djagonali; it-tnejn huma mblukkati jekk hemm biċċa fit-triq. Is-Suldati jimxu 'l quddiem jew 'il ġenb, u djagonalment 'il quddiem ġewwa l-palazz tal-għadu. Iż-żewġ Ġenerali qatt ma jistgħu jiffaċċjaw lil xulxin. Agħmel xakk-mat lill-Ġeneral tal-għadu biex tirbaħ. Il-kompjuter qatt ma jgħaddi.",
+    "lib.arcade.jgCheck": "Int taħt xakk!",
+    "lib.arcade.jgWin": "Xakk-mat — rbaħt.",
+    "lib.arcade.jgLose": "Ħadulek xakk-mat.",
+    "lib.arcade.note.pinball": "Agħfas Space, il-vleġġa 'l fuq jew mess il-mejda biex tniżżel il-ballun. Żomm ix-Xellug (jew mess in-nofs tax-xellug tal-mejda) biex tgħolli l-flipper tax-xellug u l-Lemin (jew in-nofs tal-lemin) għal dak tal-lemin — aħjar agħfas bir-ritmu milli żżomm. Il-bumpers tondi jagħtu 100 punt kull wieħed. Għandek 3 blalen. Wasal għall-punteġġ fil-mira qabel jispiċċaw biex tlesti l-livell.",
+    "lib.arcade.pinBalls": "Blalen: {n} · Mira: {t}",
+    "lib.arcade.note.cribbage": "Cribbage għal żewġ plejers, tellieqa sa 61 punt. F'kull qsim tieħu 6 karti u tpoġġi 2 wiċċhom l-isfel fil-crib (li jappartjeni lil min jaqsam). Titreġġa' karta tal-bidu. Imbagħad jilagħbu karti wiċċhom 'il fuq bil-ħsieb li t-total kontinwu ma jaqbiżx 31: jekk tilħaq 15 jew 31 tikseb 2, jekk taqbel mal-aħħar karta 2/6/12, sekwenza ta' 3 karti jew aktar (b'kull ordni) tagħti t-tul tagħha, u meta ħadd ma jista' jilgħab, l-aħħar plejer jikseb 1 (\"Go\"). Imbagħad kull id ta' 4 karti tingħadd mal-karta tal-bidu: kull kombinazzjoni b'total ta' 15 tagħti 2, kull par 2, sekwenza ta' 3+ it-tul tagħha, erba' karti tal-istess suit 4 (5 mal-karta tal-bidu), u Jack bl-istess suit tal-karta tal-bidu 1. Min ma qasamx jgħodd l-ewwel, imbagħad min qasam jgħodd idejh u l-crib.",
+    "lib.arcade.cbFifteen": "Ħmistax",
+    "lib.arcade.cbPair": "Par",
+    "lib.arcade.cbRun": "Sekwenza",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Jack bl-istess suit tal-karta tal-bidu",
+    "lib.arcade.cbHeels": "Jack bħala karta tal-bidu",
+    "lib.arcade.cbYou": "Int",
+    "lib.arcade.cbFoe": "Kompjuter",
+    "lib.arcade.cbLast": "L-aħħar karta",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Int taqsam",
+    "lib.arcade.cbFoeDeal": "Il-kompjuter jaqsam",
+    "lib.arcade.cbPick": "Agħżel 2 karti għall-crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Idek",
+    "lib.arcade.cbFoeHand": "Id tal-kompjuter",
+    "lib.arcade.cbStarter": "Karta tal-bidu",
+    "lib.arcade.cbZero": "0 punti",
+    "lib.arcade.cbPlayed": "Mlagħba",
+    "lib.arcade.cbToCrib": "Poġġi fil-crib",
+    "lib.arcade.cbNext": "Kompli",
+    "lib.arcade.cbHand": "Id"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tlettax)",
       "desc": "Il-logħba tal-karti Vjetnamiża għal erbgħa li fiha trid tbattal idek: illogħob karti waħedhom, pari, sekwenzi u erbgħa tal-istess biex tbattal idek l-ewwel; 10 livelli."
+    },
+    "tower-defense": {
+      "name": "Difiża bit-Torri (Tower Defense)",
+      "desc": "Ibni u ttejjeb torri tul it-triq biex twaqqaf kull mewġa ta' għedewwa. 10 livelli fuq tliet mapep differenti."
+    },
+    "color-by-number": {
+      "name": "Żbogħ bin-Numri",
+      "desc": "Żbogħ kull kwadru bil-kulur li jaqbel man-numru tiegħu biex tiskopri x-xbieha. 10 stampi, kull darba b'aktar kuluri."
+    },
+    "yukon": {
+      "name": "Solitaire Yukon",
+      "desc": "Klondike mingħajr stokk: mexxi kwalunkwe karta mikxufa ma' dak kollu li hemm fuqha. 10 livelli, b'inqas karti mikxufa kif tmur 'il quddiem."
+    },
+    "chinese-checkers": {
+      "name": "Dama Ċiniża",
+      "desc": "Logħba f'forma ta' stilla b'qabżiet u passi kontra l-kompjuter: mexxi l-10 biċċiet kollha lejn ir-rokna opposta l-ewwel. 10 livelli."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (Poker Ċiniż)",
+      "desc": "Irranġa 13-il karta fi tliet idejn ta' 5, 5 u 3 karti u għeleb il-kompjuter. 5 rawnds għal kull livell, 10 livelli."
+    },
+    "phom": {
+      "name": "Phỏm (Rummy Vjetnamiż)",
+      "desc": "Rummy Vjetnamiż għal tnejn kontra l-kompjuter: iġbed jew ħu karta keċċuta, ifforma kombinazzjonijiet u oħroġ. Jirbaħ min jibqa' bl-inqas punti. 10 livelli."
+    },
+    "shogi": {
+      "name": "Shogi (Xatranġ Ġappuniż)",
+      "desc": "Illgħab ix-shogi kontra l-kompjuter: waqqa' biċċiet maqbuda, ippromwovi u agħmel xakk-mat lir-re. 10 livelli b'undo."
+    },
+    "janggi": {
+      "name": "Janggi (Xatranġ Korejan)",
+      "desc": "Illgħab ix-xatranġ Korejan kontra l-kompjuter: djagonali tal-palazz, qabżiet tal-kanun fuq biċċa waħda, iljunfanti ta' tliet passi. 10 livelli b'undo."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Daqqi bil-flippers tax-xellug u tal-lemin biex iżżomm il-ballun ħaj, ħabbat il-bumpers u wasal għall-punteġġ fil-mira qabel jispiċċaw it-3 blalen tiegħek. 10 livelli."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage għal żewġ plejers kontra l-kompjuter: crib, għadd sa 31, għadd tal-idejn u tellieqa sa 61 punt. 10 livelli."
     }
   },
   "s": {

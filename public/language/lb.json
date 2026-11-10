@@ -469,7 +469,272 @@
     "lib.arcade.jump": "Sprong",
     "lib.arcade.aimTarget": "Zil",
     "lib.game.soundOn": "Toun un",
-    "lib.game.soundOff": "Toun aus"
+    "lib.game.soundOff": "Toun aus",
+    "lib.arcade.note.kalah": "Du spills déi ënnescht Rëtsch, de Computer déi iewescht; déi grouss Mulde riets ass däi Späicher. Klick op eng Mulde, fir all hir Kären opzehuelen an géint den Auer-Zéigersënn eng pro Mulde ze verdeelen (de Späicher vum Géigner gëtt iwwersprong). Wann däi leschte Kär an dengem Späicher landet, bass du nach eng Kéier un der Rei; wann en an enger eidel Mulde op denger Säit landet, géigniwwer vun enger Mulde mat Kären, fänks du dës Kären. Wann eng Säit eidel ass, kommen d’Kären vun der anerer Säit an hire Späicher; wien de gréissere Späicher huet, gewënnt.",
+    "lib.arcade.note.snakes": "Wuer de Würfel a gi sou vill Felder virun, vun 1 bis 100. Landes du um Fouss vun enger Leeder, klëmms du erop; landes du um Kapp vun enger Schlaang, rutscht du erof. Ab Niveau 4 muss du genee d’Zuel wuerfelen, fir op 100 ze landen. Méi héich Niveauen hunn méi Schlaangen, manner Leederen a méi Géigner. Wien als Éischte 100 erreecht, gewënnt.",
+    "lib.arcade.square": "Feld {n}",
+    "lib.arcade.ladderUp": "Op der Leeder erop!",
+    "lib.arcade.snakeDown": "Vun enger Schlaang giess!",
+    "lib.arcade.needExact": "Du brauchs déi genau Zuel, fir op 100 ze landen.",
+    "lib.arcade.note.nmm": "All Säit huet 9 Steng. Phas 1: Setzt ofwiesselnd Steng op fräi Punkten. Phas 2: Schiff e Steen op e niewendrun fräie Punkt. Mat nëmmen 3 Steng kanns du op all fräie Punkt „fléien“. Maach dräi an enger Rei (eng „Millen“), fir e Steen vum Géigner ze huelen (fir d’éischt Steng, déi net an enger Millen sinn). Du verléiers, wann du nëmmen nach 2 Steng hues oder dech net méi beweege kanns. Du spills wäiss a fänks un.",
+    "lib.arcade.inHand": "Nach ze setzen: {a} · {b}",
+    "lib.arcade.removePiece": "Wiel e Steen vum Géigner, deen ewechgeholl gëtt.",
+    "lib.arcade.enemyWaters": "Gewässer vum Géigner (klick fir ze schéissen)",
+    "lib.arcade.yourFleet": "Deng Flott",
+    "lib.arcade.note.battleship": "All Säit huet 5 Schëffer (Längt 5, 4, 3, 3, 2), zoufälleg op engem 10x10-Gitter verdeelt. Schéisst ofwiesselnd op e Feld: en Treffer gëtt rout, e Feelschoss hellbloen, a wann all Felder vun engem Schëff getraff sinn, ass et gesonk. Wien als Éischte déi ganz gegnerech Flott versenkt, gewënnt. Op méi héijen Niveauen erkennt de Computer méi clever, wou deng Schëffer sinn.",
+    "lib.arcade.shipsLeft": "Schëffer iwwreg: du {a} · Géigner {b}",
+    "lib.arcade.theySunk": "De Géigner huet ee vun dengen Schëffer versenkt!",
+    "lib.arcade.theyHit": "De Géigner huet ee vun dengen Schëffer getraff.",
+    "lib.arcade.theyMiss": "De Géigner huet verfeelt.",
+    "lib.arcade.youSunk": "Du hues e gegneresche Schëff versenkt!",
+    "lib.arcade.youHit": "Treffer!",
+    "lib.arcade.youMiss": "Verfeelt.",
+    "lib.arcade.shake": "Rëselen",
+    "lib.arcade.clearBets": "Asätz läschen",
+    "lib.arcade.note.bau-cua": "Nëmmen virtuell Mënzen – kee richtege Suen. Wiel e Chip-Wäert, klick op d’Déieren, fir ze setzen, a drécks dann op Rëselen. Fir jiddwer Würfel, deen zu engem Déier passt, op dat s du gesat hues, kriss du däin Asatz zréck plus nach eemol esou vill. Erreechs d’Zil u Mënzen an der erlaabter Zuel u Ronnen, fir d’Niveau ze packen.",
+    "lib.arcade.note.baccarat": "Nëmmen virtuell Mënzen – kee richtege Suen. Setz op Spiller, Bankéier oder Gläichstand an drécks dann op Austeelen. De Wäert vun enger Hand ass déi lescht Zifferen vun hirer Zomm (A = 1, 2–9 Kaartewäert, 10/B/D/K = 0); d’Hand, déi méi no bei 9 ass, gewënnt, an dat drëtt Blat gëtt no de Standardreegele gezunn. Spiller bezuelt 1:1, Bankéier 0,95:1, Gläichstand 8:1 (Asätz op Spiller/Bankéier kréie bei Gläichstand zréck). Erreechs d’Zil u Mënzen an der erlaabter Zuel u Ronnen, fir d’Niveau ze packen.",
+    "lib.arcade.banker": "Bankéier",
+    "lib.arcade.player": "Spiller",
+    "lib.arcade.tie": "Gläichstand",
+    "lib.arcade.openCards": "Opdecken",
+    "lib.arcade.note.bai-cao": "Nëmmen virtuell Mënzen – kee richtege Suen. All Säit kritt 3 Kaarten. Eng Hand zielt déi lescht Zifferen vun hirer Zomm (A = 1, 2–9 Kaartewäert, 10/B/D/K = 10, also 0 Punkten). Rang: Dräierpäsch („Sáp“) ass am héchsten, dann dräi Bildkaarten („Ba tiên“), dann 9 Punkte erof bis 0. Setz, drécks op Austeelen an dann op Opdecken, fir mam Geber ze vergläichen. Ab Niveau 6 gewënnt de Geber bei Gläichstand. Erreechs d’Zil u Mënzen an der erlaabter Zuel u Ronnen, fir d’Niveau ze packen.",
+    "lib.arcade.caoSap": "Dräierpäsch",
+    "lib.arcade.caoBaTien": "Dräi Bildkaarten",
+    "lib.arcade.caoPts": "{n} Pkt.",
+    "lib.arcade.note.bingo": "De Computer rifft Zuelen tëscht 1 a 75 un. Wann eng Zuel op denger Kaart steet, klick drop, fir se ze markéieren (d’Mëtt ass gratis). Kompletéier eng Rei, eng Kolonn oder eng Diagonal an drécks op BINGO! – du muss d’Computer-Géigner schloen. E falsche BINGO! spaart de Knäppchen e puer Sekonnen. Méi héich Niveauen ruffen méi séier un a hunn méi Géigner.",
+    "lib.arcade.opponentsN": "Géigner: {n}",
+    "lib.arcade.falseBingo": "Nach keng voll Linn! Knäppchen 3 Sekonne gespaart.",
+    "lib.arcade.bingoGo": "D’Zuelen ginn opgeruff!",
+    "lib.arcade.note.yahtzee": "All Rees wuerfels du 5 Würfelen bis zu 3 Mol: klick op e Würfel, fir en ze behalen, an drécks dann op Wuerfelen, fir déi anere nei ze wuerfelen. Dann wiels du e Feld an der Tabell, fir ze punkten (all Feld gëtt nëmmen eemol benotzt; e Feld, dat net passt, bréngt 0). 13 Rounden. D’Felder Ären–Sechsen kréien e Bonus vu 35, wann si zesumme 63 oder méi erreechen. Erreechs d’Zilpunktzuel vum Niveau, fir ze gewannen.",
+    "lib.arcade.turnN": "Ronn {n}/13",
+    "lib.arcade.pickCat": "Wiel e Feld fir ze punkten",
+    "lib.arcade.rollsLeft": "Wuerfelen ({n} iwwreg)",
+    "lib.arcade.upperBonus": "Bonus Ären–Sechsen",
+    "lib.arcade.scored": "{n} Punkte geholl",
+    "lib.arcade.note.crazy-eights": "Spill eng Kaart, déi no Faarf oder Wäert zur Kaart uewen um Offall-Stapel passt. Aachter sinn Joker: du kanns se all Moment spillen an eng nei Faarf wielen. Wann s du keng spillbar Kaart hues, zéi vum Stapel (bis zu 3 Kaarten); wanns du da jëmmer nach net spille kanns, passs du. Wien als Éischte keng Kaarten méi huet, gewënnt. Méi héich Niveauen hunn méi Géigner, an de Computer spillt méi clever.",
+    "lib.arcade.opponent": "Géigner",
+    "lib.arcade.pileLeft": "Zitt-Stapel: {n}",
+    "lib.arcade.pickSuit": "Wiel eng nei Faarf",
+    "lib.arcade.aiSuit": "De Computer huet {s} gewielt",
+    "lib.arcade.aiPass": "De Computer passt.",
+    "lib.arcade.mustPlay": "Du hues eng spillbar Kaart – spill se.",
+    "lib.arcade.youPass": "Du hues 3 Kaarte gezunn a passs.",
+    "lib.arcade.bcGourd": "Kürbis",
+    "lib.arcade.bcCrab": "Krabb",
+    "lib.arcade.bcShrimp": "Garnel",
+    "lib.arcade.bcFish": "Fësch",
+    "lib.arcade.bcRooster": "Hunn",
+    "lib.arcade.bcDeer": "Hirsch",
+    "lib.arcade.yOnes": "Ären",
+    "lib.arcade.yTwos": "Zweeën",
+    "lib.arcade.yThrees": "Dräien",
+    "lib.arcade.yFours": "Véieren",
+    "lib.arcade.yFives": "Fënnefen",
+    "lib.arcade.ySixes": "Sechsen",
+    "lib.arcade.yThree": "Dräierpäsch",
+    "lib.arcade.yFour": "Véierpäsch",
+    "lib.arcade.yFull": "Full House (25)",
+    "lib.arcade.ySmall": "Kleng Strooss (30)",
+    "lib.arcade.yLarge": "Grouss Strooss (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Chance",
+    "lib.arcade.note.race": "Drécks ← → (oder tipp op d’Spuer, déi s du wëlls), fir d’Spuer ze wiesselen an de Autoen virun dir auszeweichen. Du hues 3 Liewen; fuer déi ganz Streck, fir d’Niveau ze packen. Méi héich Niveauen hunn méi Spueren an e méi séiere Verkéier.",
+    "lib.arcade.note.jump": "D’Figur sprang vun alleguer. Drécks ← → oder zéi mam Fanger, fir op der nächster Plattform ze landen. Blo Plattforme bewegen sech, brong briechen, wann s du drop landes. Wann s du aus dem Écran fälls, hues du verluer; klëmm héich genuch, fir d’Niveau ze packen.",
+    "lib.arcade.note.miner": "De Haken schwéngt hin an hier; drécks Espace, ↓ oder tipp op d’Feld, fir en erofzelooss. Grouss Gold an Steng sinn schwéier a ginn lues eropgezunn; Diamante sinn vill wäert. Erreechs d’Zil u Suen, ier d’60 Sekonnen eriwwer sinn.",
+    "lib.arcade.note.slicer": "Wëscht mam Fanger oder der Maus iwwer d’Uebst, fir et ze schneiden. Pass op déi schwaarz Bomben op. Wann s du eng Frucht verpass oder eng Bomm schneids, kascht dat e Liewen (du hues 3). Schneid genuch Uebst, fir d’Niveau ze packen.",
+    "lib.arcade.note.hoops": "Drécks op d’Feld, zéi no ënnen (wéi mat enger Schleider) a looss lass, fir de Ball op de Kuerf ze werfen. Wat méi wäit s du zéis, dest méi haart ass de Wuerf. Triff genuch Kierb mat de Wierf, déi s du hues; ab Niveau 4 bewegt de Kuerf sech.",
+    "lib.arcade.note.bubbles": "Beweeg d’Maus oder de Fanger, fir ze ziilen, a klick/tipp oder drécks Espace/Feier, fir ze schéissen. Verbann 3 oder méi Bubbelen vun der selwechter Faarf, fir se zum Platzen ze bréngen; Bubbelen, déi hire Halt verléieren, falen erof. D’Reihen sénke lues, also haal se vun der ënnescht Linn ewech. Maach all Bubbelen ewech, fir ze gewannen.",
+    "lib.arcade.note.chase": "Benotz d’Pfeiltast (oder wëscht / d’Knäppercher), fir ze dréinen an all Punkt am Labyrinth ze iessen, während s du de Geeschter ausweichs, déi dech jagen. Du hues 3 Liewen; méi héich Niveauen hunn méi Geeschter, déi méi séier sinn an méi clever jagen.",
+    "lib.arcade.height": "Héicht: {n}/{t} m",
+    "lib.arcade.money": "Geld: {n}/{t}",
+    "lib.arcade.sliced": "Geschnidden: {n}/{t}",
+    "lib.arcade.hoopScore": "Getraff: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} Wierf iwwreg",
+    "lib.arcade.bubbleLeft": "{n} Bubbelen iwwreg",
+    "lib.arcade.shotsN": "Wierf: {n}",
+    "lib.arcade.dotsLeft": "{n} Punkte iwwreg",
+    "lib.arcade.note.kakuro": "Fëll déi wäiss Felder mat Zifferen 1–9 esou, datt all Rei sech zu der Zuel am schwaarze Feld addéiert (d’Zuel uewe riets gëllt fir d’Rei no riets, déi ënnen lénks fir d’Rei no ënnen), ouni datt eng Ziffer an enger Rei widderholl gëtt. Benotz d’Pfeiltast, fir dech ze beweegen.",
+    "lib.arcade.note.kenken": "Fëll d’Gitter mat den Zuelen 1 bis N esou, datt keng Zuel an enger Rei oder Kolonn widderholl gëtt. All déck ëmrandete Käfeg weist e Zil an eng Operatioun (+, −, ×, ÷): d’Zuelen am Käfeg musse dat Resultat ginn. Benotz d’Pfeiltast, fir dech ze beweegen.",
+    "lib.arcade.note.wordGuess": "Roden dat geheimt englescht Wuert. No all Versuch heescht gréng de richtege Buchstaw um richtege Plaz, giel de Buchstaw ass am Wuert, awer un enger anerer Plaz, a gro de Buchstaw ass net am Wuert. Tipp mat der Tastatur oder de Tasten um Écran an drécks Enter, fir ofzeschécken. Méi héich Niveauen hunn méi laang Wierder a manner Versich.",
+    "lib.arcade.note.hangman": "Roden dat geheimt englescht Wuert, andeems s du Buchstawen een nom aneren auswiels. All falsche Buchstaw füügt engem Männchen en Deel bäi; wann s du keng falsch Roden méi hues, hues du verluer. Méi héich Niveauen hunn méi laang Wierder a manner erlaabte falsch Roden.",
+    "lib.arcade.note.scramble": "Bréng déi duerchernee Buchstawen an e richtegt englescht Wuert an tipp et an d’Äntwertfeld an. Jiddwer Niveau huet 5 Wierder; léis mindestens 4, ier d’Zäit vum jewäilege Wuert ofleeft, fir d’Niveau ze packen. De Wénk verréit den éischte Buchstaw.",
+    "lib.arcade.cellsLeft": "Nach {n} eidel Felder",
+    "lib.arcade.wrongN": "{n} Felder si falsch.",
+    "lib.arcade.noError": "Bis elo goufen keng Feeler fonnt.",
+    "lib.arcade.tooShort": "Net genuch Buchstawen",
+    "lib.arcade.answerIs": "Äntwert: {w}",
+    "lib.arcade.livesLeft": "Nach {n} falsch Roden",
+    "lib.arcade.yourAnswer": "Deng Äntwert",
+    "lib.arcade.skip": "Iwwersprangen",
+    "lib.arcade.notThis": "Net richteg, probéier nach eng Kéier.",
+    "lib.arcade.startsWith": "Éischte Buchstaw: {c}",
+    "lib.arcade.note.domino": "All Spiller kritt 7 Steng; wien den héchsten Duebel huet, fänkt un. Spill e Steen, deem seng Zuel zu engem Enn vun der Kette passt. Wann s du net spille kanns, zéi aus dem Stapel, bis s du kanns; ass hien eidel, passs du. Wien als Éischte keng Steng méi huet, gewënnt; wann allebéid blockéiert sinn, gewënnt dee mat manner Augen.",
+    "lib.arcade.note.hearts": "Véier Spiller, jiddwereen 13 Kaarten. D’Kräiz 2 spillt eraus. Du muss d’Faarf bedienen, wann s du kanns. Jidd Häerz ass 1 Punkt an d’Pik Dame ass 13; wien e Stäch gewënnt, kritt seng Punkten. Manner ass besser, a wien all 26 Punkte hëlt, gëtt de Matspiller 26 amplaz. Du kanns kee Häerz ausspillen, bis ee gespillt gouf. No der leschter Hand gewënns du, wann däi Score deen niddregsten ass (oder matniddregsten).",
+    "lib.arcade.note.holdem": "Heads-up géint de Computer, nëmme mat virtuelle Chips. All Spiller kritt 2 privat Kaarten, a 5 Gemeinschaftskaarten ginn opgedeckt (Flop, Turn, River); maach déi bescht 5-Kaarte-Hand. All Ronn kanns du folden, callen (oder checken) oder raisen. D’Blinds klammen all 4 Hänn. Du gewënns, wann dem Computer d’Chips ausginn, oder duerch méi Chips no der Limit u Hänn. Et sinn keng richteg Suen am Spill.",
+    "lib.arcade.dmDraw": "Steen zéien",
+    "lib.arcade.dmPass": "Passen",
+    "lib.arcade.dmEmpty": "Nach keng Steng gespillt",
+    "lib.arcade.dmYard": "Stapel: {n} Steng",
+    "lib.arcade.dmLeft": "Lénkst Enn",
+    "lib.arcade.dmRight": "Riets Enn",
+    "lib.arcade.dmTie": "Gläichstand! Béid Säite si gläich.",
+    "lib.arcade.hrHand": "Hand {n}/{t}",
+    "lib.arcade.hrTook": "{p} gewënnt de Stäch ({n} Punkten).",
+    "lib.arcade.hrIllegal": "Du kanns dës Kaart net spillen (Faarf bedienen, oder nach kee Häerz als Ausspill).",
+    "lib.arcade.blinds": "Big Blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Folden",
+    "lib.arcade.check": "Checken",
+    "lib.arcade.callN": "{n} callen",
+    "lib.arcade.raiseTo": "Raisen op",
+    "lib.arcade.raiseN": "Op {n} raisen",
+    "lib.arcade.thOppFold": "De Computer fold; du gewënns dës Hand.",
+    "lib.arcade.thYouFold": "Du hues gefoldet.",
+    "lib.arcade.thOppWin": "De Computer gewënnt dës Hand",
+    "lib.arcade.thYouWin": "Du gewënns dës Hand",
+    "lib.arcade.thSplit": "Pot gedeelt",
+    "lib.arcade.thAiFold": "De Computer fold.",
+    "lib.arcade.thAiRaise": "De Computer raist op {n}.",
+    "lib.arcade.thAiCall": "De Computer callt / checkt.",
+    "lib.arcade.hand.high": "Héich Kaart",
+    "lib.arcade.hand.pair": "Paar",
+    "lib.arcade.hand.twoPair": "Zwee Paren",
+    "lib.arcade.hand.trips": "Dräierpäsch",
+    "lib.arcade.hand.straight": "Strooss",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full House",
+    "lib.arcade.hand.quads": "Véierpäsch",
+    "lib.arcade.hand.sflush": "Straight Flush",
+    "lib.arcade.note.nback": "Op engem 3x3-Gitter liicht een Feld nom aneren op. Drécks „Match!“ (oder Espace), wann déi beliicht Positioun déi selwecht ass wéi virun N Schrëtt (N steet uewen). Du brauchs mindestens 80 % richteg Entscheedungen, fir d’Niveau ze packen. Méi héich Niveauen benotzen en e gréissert N.",
+    "lib.arcade.nbMatch": "Match!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Richteg: {a} · Falsch: {b}",
+    "lib.arcade.nbAcc": "Genauegkeet: {n} %",
+    "lib.arcade.note.clicker": "Klick op de Cookie, fir Cookien ze backen, an gëff se fir Helfer aus, déi automatesch backen (d’Präisser klammen mat all Kaf). Back d’Zil u Cookien an 2 Minutten, fir d’Niveau ze packen.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Backoma",
+    "lib.arcade.ckFarm": "Bauerenhaff",
+    "lib.arcade.ckMine": "Zocker-Mina",
+    "lib.arcade.ckFactory": "Fabrik",
+    "lib.arcade.ckCookie": "Cookie",
+    "lib.arcade.ckEarned": "Gebak: {n}/{t}",
+    "lib.arcade.chips2": "Cookien: {n}",
+    "lib.arcade.ckCps": "{n} Cookien/Sekonn",
+    "lib.arcade.note.onet": "Wiel zwee identesch Steng, déi mat engem Wee mat héchstens 2 Kéieren verbonne kënne ginn, deen net duerch aner Steng geet, fir se ewechzehuelen. Maach all Steng ewech, ier d’Zäit ofleeft, fir ze gewannen. Wann et keng Zich méi gëtt, kanns du mëschen (limitéiert Notzung).",
+    "lib.arcade.shuffle": "Mëschen",
+    "lib.arcade.tilesLeft": "Nach {n} Steng",
+    "lib.arcade.autoShuffle": "Keng Zich méi – automatesch gemëscht.",
+    "lib.arcade.note.jigsaw": "D’Bild ass a Stécker geschnidden a gemëscht. Tipp op ee Stéck, dann op en anert, fir se auszetauschen, a bau d’Bild no, wat als Referenz gewise gëtt. Stécker um richtege Plaz kréie gréngen Rand. Méi héich Niveauen hunn méi Stécker.",
+    "lib.arcade.jgRef": "Referenzbild",
+    "lib.arcade.jgPlaced": "Um Plaz: {a}/{b}",
+    "lib.arcade.golfStrokes": "Schléi: {n}/{t} (Par {p})",
+    "lib.arcade.note.backgammon": "Du spills déi wäiss Steng a beweegs se vun uewe riets ronderëm bis ënne riets (däin Home). Wuerf d’Würfelen, klick op de Steen, deen s du beweege wëlls, an dann op e markéierten Zielpunkt. Landes du op engem Punkt mat genee engem gegneresche Steen, schléis du en op d’Mëttelbar, an deen Spiller muss en als Éischt erëm erageholl. Du kanns net op engem Punkt landen, wou zwee oder méi gegnerech Steng stinn. Wann all 15 vun dengen Steng an dengem Home-Board sinn (déi lescht 6 Punkten), kanns du se erausspillen. Wien als Éischte seng 15 Steng erausgespillt huet, gewënnt.",
+    "lib.arcade.bgRoll": "Würfele wuerfelen",
+    "lib.arcade.bgOff": "Erausspillen",
+    "lib.arcade.bgRollFirst": "Würfele wuerfelen",
+    "lib.arcade.bgInfo": "Eraus: du {a} · Computer {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Du hues kee legalen Zuch méi.",
+    "lib.arcade.note.tienlen": "Véier Spiller, jiddwereen 13 Kaarten. Kaartereiefolleg vun niddreg op héich: 3, 4, … K, A, 2; Faarwe vun niddreg op héich: Pik, Kräiz, Karo, Häerz. Wien d’Pik 3 huet, fänkt un. Spill eng eenzel Kaart, e Paar, en Dräierpäsch, e Véierpäsch oder eng Rei vu 3 oder méi openeen folgende Kaarten (keng 2eren). De nächste Spiller muss dee selwechten Typ méi héich spillen oder passen; e Véierpäsch kann eng eenzel 2 oder e Paar 2eren schloen. Wann all déi aner passen, däerf deen, deen als Lescht gespillt huet, alles ausspillen. Wien als Éischte keng Kaarten méi huet, gewënnt. Wiel Kaarten aus, dann drécks Spillen.",
+    "lib.arcade.tlPlay": "Spillen",
+    "lib.arcade.tlPass": "Passen",
+    "lib.arcade.tlClear": "Auswiel opheben",
+    "lib.arcade.tlPassed": "huet gepasst",
+    "lib.arcade.tlFree": "Dësch eidel – du däerfs alles ausspillen",
+    "lib.arcade.tlLeft": "Kaarten iwwreg: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passt.",
+    "lib.arcade.tlBad": "Déi gewielte Kaarten ginn keng gëlteg Kombinatioun.",
+    "lib.arcade.tlLow": "Dës Kombinatioun ass net héich genuch, fir den Dësch ze schloen.",
+    "lib.arcade.note.td": "Tipp op e fräit Feld (net de Wee), fir en Tuerm ze bauen, deen schéisst a Gold kascht; tipp nach eng Kéier op en Tuerm, fir en ze verbesseren (bis Niveau 5). D’Tierm schéissen automatesch op de Géigner, dee schonn am wäitste kënnt a Reechwäit ass. Besieg Géigner, fir méi Gold ze verdéngen; wann 15 Géigner d’Enn erreechen, hues du verluer. Iwwerlief all Welle, fir d’Niveau ze packen.",
+    "lib.arcade.tdInfo": "Gold: {g} · Welle {w}/{t}",
+    "lib.arcade.tdCost": "Tuerm: {n}",
+    "lib.arcade.note.colorNum": "All Feld huet eng Zuel, déi zu enger Faarf an der Palette passt. Wiel eng Faarf, dann tipp op d’Felder mat där Zuel, fir se unzemolen; mat der falscher Faarf gëtt näischt gemoolt. Mol all Felder richteg un, fir d’Bild fäerdeg ze maachen. Méi héich Niveauen hunn méi Faarwen.",
+    "lib.arcade.cnWrong": "Falsch Faarf – kuck d’Zuel um Feld no.",
+    "lib.arcade.note.yukon": "Wéi Klondike, awer ouni Stapel: all opgedeckte Kaart kann zesumme mat allem, wat drop läit, verréckelt ginn, och wann et keng Rei ass; nëmmen déi éischt Kaart muss op d’Zilkolonn passen (ofsteigend, ofwiesselnd rout a schwaarz; e Kinnek geet op eng eidel Kolonn). Bau all 52 Kaarten op de véier Fundamenter vum As bis zum Kinnek op. Niddreg Niveauen fänken mat méi scho opgedeckte Kaarten un.",
+    "lib.arcade.yukonFree": "Zougedeckte Kaarten: {n}",
+    "lib.arcade.note.chinesechk": "Du spills déi blo Steng an der rietser Eck; beweeg all 10 an déi géigniwwerleien lénks Eck, ier de Computer et mécht. All Rees beweegs du ee Steen: maach e Schrëtt op e fräit niewendrun Lach, oder sprang iwwer e beliebege Steen op dat fräit Lach direkt dohannert, a sprang esou oft s du wëlls weider. Tipp ee vun dengen Steng un, dann e gréngt Lach, fir ze beweegen.",
+    "lib.arcade.ccTurn": "Du bass drun · Zuch {n}",
+    "lib.arcade.ccDraw": "Keng Zich méi – Gläichstand.",
+    "lib.arcade.note.maubinh": "Du an de Computer kréien all 13 Kaarten a leet se an 3 Hänn: eng hannescht 5-Kaarte-Hand, eng mëttel 5-Kaarte-Hand an eng vir 3-Kaarte-Hand. D’hannescht Hand muss mindestens sou staark sinn wéi d’mëttel, an d’mëttel mindestens sou staark wéi d’vir; soss ass deng Opstellung ongëlteg a du verléiers déi ganz Ronn. Tipp op eng Kaart, dann op d’Rei, wou se higeet (tipp op eng gesate Kaart, fir se zréckzehuelen). All gewonnen Hand bréngt 1 Punkt; all 3 gewannen bréngt 6. Spill 5 Rounden – eng positiv Zomm packt d’Niveau. D’vir Hand ka just héich Kaart, e Paar oder en Dräierpäsch sinn.",
+    "lib.arcade.mbHigh": "Héich Kaart",
+    "lib.arcade.mbPair": "Paar",
+    "lib.arcade.mbTwoPair": "Zwee Paren",
+    "lib.arcade.mbTrips": "Dräierpäsch",
+    "lib.arcade.mbStraight": "Strooss",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full House",
+    "lib.arcade.mbQuads": "Véierpäsch",
+    "lib.arcade.mbSflush": "Straight Flush",
+    "lib.arcade.mbBack": "Hannescht Hand",
+    "lib.arcade.mbMid": "Mëttel Hand",
+    "lib.arcade.mbFront": "Vir Hand",
+    "lib.arcade.mbFoe": "Computer",
+    "lib.arcade.mbYou": "Du",
+    "lib.arcade.mbFoul": "Ongëlteg!",
+    "lib.arcade.mbFoeFoul": "Computer ongëlteg!",
+    "lib.arcade.mbConfirm": "Kaarte weisen",
+    "lib.arcade.mbReset": "Läschen",
+    "lib.arcade.mbHand": "Deng Hand",
+    "lib.arcade.mbRound": "Ronn {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Ofschléissen",
+    "lib.arcade.mbNext": "Nächst Ronn",
+    "lib.arcade.mbDraw": "Punktgläichstand – spill nach eng Kéier.",
+    "lib.arcade.mbAutoMsg": "Hei ass eng virgeschloen Opstellung. Du kanns se änneren, ier s du d’Kaarte weis.",
+    "lib.arcade.note.phom": "Zwee Spiller; jiddwereen kritt 9 Kaarten (wien ufänkt, kritt 10). Eng Kombinatioun sinn 3 oder méi Kaarte vum selwechte Wäert, oder 3 oder méi openeen folgend Kaarte vun der selwechter Faarf (d’As ass nëmmen niddreg). Wann s du drun bass, zéi eng Kaart vum Stapel, oder huel déi Kaart, déi de Géigner grad ofgelee huet, wann se mat denger Hand eng Kombinatioun gëtt (eng geholl Kaart muss behale ginn), an leet dann eng Kaart of. Wann all Spiller 4 Kaarte ofgelee huet, ass d’Ronn eriwwer, a wien de méi klenge Rescht u Kaarten ouni Kombinatioun huet (As = 1 … Kinnek = 13), gewënnt. Wann all deng Kaarten no engem Oflee an Kombinatioune sinn, gees du eraus („U“) a gewënns direkt. Kaarten mat gréngem Rand sinn an denger bester Kombinatioun.",
+    "lib.arcade.pmDraw": "Zéien",
+    "lib.arcade.pmEat": "Offall huelen",
+    "lib.arcade.pmThrow": "Ofleeën",
+    "lib.arcade.pmFoeAte": "De Computer huet deng Kaart geholl.",
+    "lib.arcade.pmFoeU": "De Computer ass erausgaangen!",
+    "lib.arcade.pmTurn": "Zuch {a}/{b}",
+    "lib.arcade.pmLeft": "Ouni Kombinatioun: {n}",
+    "lib.arcade.pmDeck": "Stapel: {n}",
+    "lib.arcade.pmFoeHand": "Hand vum Computer",
+    "lib.arcade.pmFoeDisc": "Offall vum Computer",
+    "lib.arcade.pmFoeEaten": "Computer huet geholl",
+    "lib.arcade.pmMyDisc": "Dien Offall",
+    "lib.arcade.pmAte": "Du hues dës Kaart geholl – behal se an enger Kombinatioun.",
+    "lib.arcade.pmKeep": "Eng geholl Kaart muss behale ginn – leet eng aner of.",
+    "lib.arcade.pmU": "Eraus! Du gewënns direkt.",
+    "lib.arcade.pmYou": "Du",
+    "lib.arcade.pmFoe": "Computer",
+    "lib.arcade.pmDraw2": "Punktgläichstand.",
+    "lib.arcade.note.shogi": "Shogi ass dat japanescht Schach. Du spills déi ënnescht Säit a fänks un; d’Steng vum Computer weisen an déi aner Richtung. Geschloe Steng kommen an deng Hand a kënne op all fräit Feld gesat ginn amplaz vun engem Zuch (ni e Bauer an enger Linn, wou s du schonn e net-befërderte Bauer hues, an ni e Steen op eng Rei, wou en sech net méi beweege kéint). E Steen, deen an déi lescht dräi Reie vum Géigner erageet, doraus erauskënnt oder dran geet, däerf befërdert ginn (ausser Kinnek a Gold); d’Befërderung ass obligatoresch, wann e Steen soss keng Zich méi hätt. Setz de gegneresche Kinnek schachmatt, fir ze gewannen. Kanji: 歩 Bauer, 香 Lanz, 桂 Päerd, 銀 Sëlwer, 金 Gold, 角 Läufer, 飛 Tuerm, 玉 Kinnek; と, 馬, 竜 an aner rout Steng si befördert.",
+    "lib.arcade.sgPromote": "Befërderen",
+    "lib.arcade.sgKeep": "Net befërderen",
+    "lib.arcade.sgCheck": "Du bass am Schach!",
+    "lib.arcade.sgWin": "Schachmatt – du gewënns.",
+    "lib.arcade.sgLose": "Du goufs schachmatt gesat.",
+    "lib.arcade.sgAskPromote": "Dëse Steen befërderen?",
+    "lib.arcade.note.janggi": "Janggi ass dat koreanescht Schach. Du spills déi blo Steng ënnen a fänks un. Anescht wéi beim Xiangqi gëtt et kee Floss, an déi zwee Palaise hunn Diagonallinnen. De General an d’Wiechter bewege sech ee Schrëtt laanscht d’Palaislinnen (Diagonalen abegraff); de Wagen rutscht a fänkt och laanscht d’Palais-Diagonalen; de Kanoun muss iwwer genee ee Steen sprangen (net iwwer en anere Kanoun), fir ze bewegen oder ze fänken, a kann keen Kanoun fänken; d’Päerd geet ee Schrëtt gerullt an dann een diagonal, de Elefant ee gerullt an dann zwee diagonal, beid blockéiert, wann een Steen am Wee steet; Zaldoten ginn no vir oder zur Säit, a diagonal no vir am gegneresche Palais. Déi zwee Generäl däerfen sech ni géigeniwwer stoen. Setz de gegneresche General schachmatt, fir ze gewannen. De Computer passt ni.",
+    "lib.arcade.jgCheck": "Du bass am Schach!",
+    "lib.arcade.jgWin": "Schachmatt – du gewënns.",
+    "lib.arcade.jgLose": "Du goufs schachmatt gesat.",
+    "lib.arcade.note.pinball": "Drécks Espace, Pfeil erop oder tipp op den Dësch, fir de Ball ze starten. Haal Lénks (oder beréier déi lénks Dëschhallschent), fir de lénksen Flipper ze hiewen, a Riets (oder déi rietser Hallschent) fir de rietsen – tipp amplaz am Rhythmus, éischter wéi ze halen. Ronn Bumpers bréngen 100 Punkten. Du hues 3 Bäll; erreechs d’Zilpunktzuel, ier se ausginn, fir d’Niveau ze packen.",
+    "lib.arcade.pinBalls": "Bäll: {n} · Zil: {t}",
+    "lib.arcade.note.cribbage": "Cribbage fir zwee Spiller, e Rennen bis 61 Punkten. All Austeelung kriss du 6 Kaarten a leets 2 verdeckt an de Crib (deen dem Geber gehéiert). Eng Starter-Kaart gëtt opgedeckt. Dann spillt ofwiesselnd Kaarten oppen, ouni datt déi lafend Zomm méi wéi 31 ass: 15 oder 31 erreechen bréngt 2, déi lescht Kaart widderhuelen bréngt 2/6/12, eng Rei vu 3 oder méi (an all Reiefolleg) bréngt hir Längt, a wann keen méi spille kann, kritt deen, deen als Lescht gespillt huet, 1 („Go“). Dann gëtt all Hand vu 4 mam Starter gezielt: all Kombinatioun, déi zesumme 15 mécht, bréngt 2, all Paar 2, eng Rei vu 3+ hir Längt, véier Kaarten vun enger Faarf 4 (5 mam Starter), a e Bauer, dee mat der Starter-Faarf passt, 1. Den Net-Geber zielt als Éischte, dann zielt de Geber seng Hand an de Crib.",
+    "lib.arcade.cbFifteen": "Fofzéng",
+    "lib.arcade.cbPair": "Paar",
+    "lib.arcade.cbRun": "Rei",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Bauer passend zum Starter",
+    "lib.arcade.cbHeels": "Bauer als Starter",
+    "lib.arcade.cbYou": "Du",
+    "lib.arcade.cbFoe": "Computer",
+    "lib.arcade.cbLast": "Lescht Kaart",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Du gees",
+    "lib.arcade.cbFoeDeal": "De Computer gëtt",
+    "lib.arcade.cbPick": "Wiel 2 Kaarten fir de Crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Deng Hand",
+    "lib.arcade.cbFoeHand": "Hand vum Computer",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 Punkten",
+    "lib.arcade.cbPlayed": "Gespillt",
+    "lib.arcade.cbToCrib": "An de Crib leeën",
+    "lib.arcade.cbNext": "Weider",
+    "lib.arcade.cbHand": "Hand"
   },
   "pages": {
     "home": {
@@ -1086,6 +1351,174 @@
     "reaction": {
       "name": "Reaktiounszäit-Test",
       "desc": "Klick am Moment, wou de Bildschierm gréng gëtt; däin Duerchschnëtt vu 5 Ronnen muss d’Limit vun all Niveau erreechen, déi sech iwwer 10 Niveauen verschäerft."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Verdeel Kären ronderëm d’Mulden, fang d’Kären vum Géigner a sief nach eng Kéier un der Rei, wann s du an dengem Späicher landes; spill géint de Computer iwwer 10 Niveauen, vu liicht bis schwéier."
+    },
+    "snakes-ladders": {
+      "name": "Schlaangen a Leederen",
+      "desc": "Wuerf de Würfel vum Feld 1 bis 100, klëmm Leederen erop, pass op d’Schlaangen op a kënn virun dengen Géigner un d’Zil; 10 Niveauen."
+    },
+    "nine-mens-morris": {
+      "name": "Mille (Nine Men’s Morris)",
+      "desc": "Setz, schiff a flitt deng Steng, fir dräi an enger Rei ze maachen an d’Steng vum Géigner ewechzehuelen; spill géint de Computer iwwer 10 Niveauen."
+    },
+    "battleship": {
+      "name": "Schëffer versenken",
+      "desc": "Fannt a versenk d’Flott vum Computer op engem 10x10-Gitter, ier hie deng versenkt; 10 Niveauen, well de Computer ëmmer méi clever erkennt."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Kürbis, Krabb, Fësch, Garnel)",
+      "desc": "Traditioneellt vietnamesescht Würfelspill: setz virtuell Mënzen op d’Déieren a rëssel dräi Würfelen; erreechs d’Zil u Mënzen iwwer 10 Niveauen (kee richtege Suen)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Setz op Spiller, Bankéier oder Gläichstand mat Kaarten no de Standardreegelen, mat virtuelle Mënzen; erreechs d’Zil u Mënzen iwwer 10 Niveauen (kee richtege Suen)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Dräi-Kaarte-Spill)",
+      "desc": "Vergläich 3-Kaarte-Hänn mam Geber: Dräierpäsch, dräi Bildkaarten, dann 9 Punkte erof bis 0; virtuell Mënzen, 10 Niveauen, kee richtege Suen."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Markéier déi opgeruffe Zuelen op denger 5x5-Kaart a ruff BINGO, ier d’Computer-Géigner et maachen; d’Zuele ginn iwwer 10 Niveauen ëmmer méi séier opgeruff."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Fënnef Würfelen)",
+      "desc": "Wuerf fënnef Würfelen, behal déi gutt a fëll 13 Punktefelder; erreechs d’Zilpunktzuel iwwer 10 Niveauen."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Spill no Faarf oder Wäert, Aachter änneren d’Faarf; gi deng Kaarten lass, ier 1 bis 3 Computer-Géigner et maachen, iwwer 10 Niveauen."
+    },
+    "car-race": {
+      "name": "Autosrennen-Ausweichen",
+      "desc": "Wiessel d’Spuer, fir de Autoen virun dir auszeweichen, a fuer déi ganz Streck; 10 Niveauen mat méi Spueren an e méi séiere Verkéier."
+    },
+    "sky-jump": {
+      "name": "Himmelssprong",
+      "desc": "Sprang vu Plattform zu Plattform, fir sou héich wéi méiglech ze klammen, ouni ze falen; 10 Niveauen mat méi wäit auserneeliegende, bewegende a brécheleche Plattformen."
+    },
+    "gold-miner": {
+      "name": "Golddigger",
+      "desc": "Looss den Haken erof, fir Gold an Diamanten eropzezéien, weich schwéiere Steng aus a erreechs d’Zil u Suen an 60 Sekonnen; 10 Niveauen."
+    },
+    "fruit-slice": {
+      "name": "Uebst schneiden",
+      "desc": "Wëscht, fir d’Uebst, dat erop flitt, ze schneiden, a weich de Bomben aus; 10 Niveauen mat méi Uebst a méi Bomben."
+    },
+    "basketball": {
+      "name": "Basketball-Wurf",
+      "desc": "Zéi a looss lass, fir de Ball an de Kuerf ze werfen, mat enger limitéierter Zuel u Wierf; 10 Niveauen, mat bewegendem Kuerf ab Niveau 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Schéiss Bubbelen, fir 3 oder méi vun der selwechter Faarf ze verbannen an zum Platzen ze bréngen, a maach se all ewech, ier se ënnen ukommen; 10 Niveauen mat méi Faarwen."
+    },
+    "dot-chase": {
+      "name": "Punktejagd",
+      "desc": "Iss all Punkt am Labyrinth a weich de Geeschter aus, déi dech jagen; 10 Niveauen mat méi a méi cleveren Geeschter."
+    },
+    "kakuro": {
+      "name": "Kakuro (Kräizsummen)",
+      "desc": "Fëll déi wäiss Felder mat Zifferen 1–9, esou datt all Rei ouni Widderhuelung op hir Zuel kënnt; 10 Niveauen, Gitter vu 5x5 bis 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Fëll d’Gitter ouni Widderhuelungen a Reien a Kolonnen esou, datt all Käfeg säin Zil mat senger Operatioun ergëtt; 10 Niveauen, Gitter vu 3x3 bis 6x6."
+    },
+    "word-guess": {
+      "name": "Wuertroden (Wordle-Stil)",
+      "desc": "Roden dat geheimt englescht Wuert mat gréngen, gielen a groen Hiweiser; 10 Niveauen mat Wierder vu 4–6 Buchstawen a manner Versich."
+    },
+    "hangman": {
+      "name": "Galgemännchen",
+      "desc": "Roden dat englescht Wuert Buchstaw fir Buchstaw, ier d’falsch Roden ausginn; 10 Niveauen mat méi laange Wierder a manner falsche Roden."
+    },
+    "word-scramble": {
+      "name": "Buchstawe-Mëschmasch (Anagramm)",
+      "desc": "Bréng duerchernee Buchstawen an e englescht Wuert, ier d’Zäit ofleeft; 10 Niveauen, 5 Wierder pro Niveau."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Leet Steng u béid Enner vun der Kette un a gi deng Steng lass, ier de Computer et mécht; 10 Niveauen, well de Computer ëmmer méi clever gëtt."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Weich Häerzer an der Pik Dame an engem Kaartespill fir véier aus; e méi niddrege Score ass besser; 10 Niveauen géint ëmmer méi clever Computer-Spiller."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuell Chips)",
+      "desc": "Heads-up-Poker géint de Computer mat virtuelle Chips: folden, callen oder raisen, a gewënn, wann dem Computer d’Chips ausginn; 10 Niveauen, kee richtege Suen."
+    },
+    "n-back": {
+      "name": "N-Back-Gedächtnis",
+      "desc": "Kuck op dat beliicht Feld an drécks Match, wann et dat selwecht ass wéi virun N Schrëtt; 10 Niveauen mat N bis 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klick, fir Cookien ze backen, kaf Helfer, déi automatesch backen, a erreechs d’Zil an 2 Minutten; 10 Niveauen."
+    },
+    "tile-connect": {
+      "name": "Steng verbannen (Onet-Stil)",
+      "desc": "Verbann passend Steng mat engem Wee mat héchstens zwou Kéieren a maach d’Brieder eidel, ier d’Zäit ofleeft; 10 Niveauen, ëmmer gréisser Brieder."
+    },
+    "jigsaw": {
+      "name": "Bild-Puzzle",
+      "desc": "Tausch déi gemëschte Stécker aus, fir d’Bild nei opzebauen; 10 Niveauen vu 3x3 bis 6x6 Stécker."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Zéi zréck a looss lass, fir de Ball an der Schlaglimit an d’Lach ze putten; 10 Pisten mat Maueren a Sand."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Wuerf d’Würfelen, bréng deng Steng heem a spill se eraus, ier de Computer et mécht, a schléi seng eenzel Steng ënnerwee; 10 Niveauen."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Dräizéng)",
+      "desc": "Dat vietnamesescht Kaartespill fir véier, wou een seng Kaarte lass gëtt: spill eenzel Kaarten, Paren, Reien a Véierpäsch, fir als Éischte keng Kaarten méi ze hunn; 10 Niveauen."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Bau a verbessert Tierm laanscht de Wee, fir all Welle vu Géigner ze stoppen; 10 Niveauen op dräi verschiddene Kaarten."
+    },
+    "color-by-number": {
+      "name": "Mol no Zuelen",
+      "desc": "Mol all Feld mat der Faarf un, déi zu senger Zuel passt, fir d’Bild opzedecken; 10 Biller mat ëmmer méi Faarwen."
+    },
+    "yukon": {
+      "name": "Yukon-Solitaire",
+      "desc": "Klondike ouni Stapel: beweeg all opgedeckte Kaart mat allem, wat drop läit; 10 Niveauen, mat ëmmer manner opgedeckte Kaarten."
+    },
+    "chinese-checkers": {
+      "name": "Chinesesch Dame (Stärendame)",
+      "desc": "Stäerfërmegt Sprang- a Schrëttspill géint de Computer: bréng als Éischte all 10 Steng an déi géigniwwerleien Eck; 10 Niveauen."
+    },
+    "mau-binh": {
+      "name": "Mậu Binh (Chinesescht Poker)",
+      "desc": "Leet 13 Kaarten an dräi Hänn vu 5, 5 an 3 Kaarten a schlo de Computer; 5 Rounden pro Niveau, 10 Niveauen."
+    },
+    "phom": {
+      "name": "Phỏm (Vietnamesesche Rommé)",
+      "desc": "Vietnamesesche Rommé fir zwee géint de Computer: zéi oder huel en Offall, bild Kombinatiounen a gi eraus; manner Rescht-Punkte gewënnt; 10 Niveauen."
+    },
+    "shogi": {
+      "name": "Shogi (Japanescht Schach)",
+      "desc": "Spill Shogi géint de Computer: setz geschloe Steng erëm, befërder a setz de Kinnek schachmatt; 10 Niveauen mat Réckgängeg-Funktioun."
+    },
+    "janggi": {
+      "name": "Janggi (Koreanescht Schach)",
+      "desc": "Spill koreanescht Schach géint de Computer: Palais-Diagonalen, Kanoun-Sprang iwwer ee Steen, Elefanten mat dräi Schrëtt; 10 Niveauen mat Réckgängeg-Funktioun."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Flipp lénks a riets, fir de Ball am Spill ze halen, triff d’Bumpers an erreechs d’Zilpunktzuel, ier deng 3 Bäll ausginn; 10 Niveauen."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage fir zwee géint de Computer: Crib, Pegging bis 31, Hänn zielen, Rennen bis 61 Punkten; 10 Niveauen."
     }
   },
   "s": {

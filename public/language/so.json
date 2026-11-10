@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kaararka hadhay: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} wuu dhaafay.",
     "lib.arcade.tlBad": "Kaararka la doortay ma sameeyaan urur sax ah.",
-    "lib.arcade.tlLow": "Ururkani kuma filna inuu garaaco kan miiska saaran."
+    "lib.arcade.tlLow": "Ururkani kuma filna inuu garaaco kan miiska saaran.",
+    "lib.arcade.note.td": "Taabo laba-xagal madhan (maaha jidka) si aad u dhisto munaarad toogasho, taas oo ku kacda dahab; mar kale taabo munaaradda si aad u kor u qaaddo (ilaa heerka 5). Munaaraduhu si toos ah ayay u toogtaan cadowga ugu fogaaday xadka dhexdiisa. Cadow jebi si aad dahab dheeraad ah u hesho; haddii 15 cadow ay gaaraan dhamaadka, waad guuldareysataa. U gudub dhammaan mowjadaha si aad heerka u dhammaysato.",
+    "lib.arcade.tdInfo": "Dahab: {g} · Mowjad {w}/{t}",
+    "lib.arcade.tdCost": "Munaarad: {n}",
+    "lib.arcade.note.colorNum": "Laba-xaglan kasta wuxuu leeyahay lambar u dhiganta midab ku jira shaxda midabada. Dooro midab, kadibna taabo laba-xagallada lambarkaas leh si aad u rinjiyeyso; midab khaldan wax lagu rinjiyeyn maayo. Rinjiyee dhammaan laba-xagallada si sax ah si aad sawirka u dhammaystirto. Heerarka sare waxay leeyihiin midabo badan.",
+    "lib.arcade.cnWrong": "Midab khaldan — hubi lambarka laba-xagalka.",
+    "lib.arcade.note.yukon": "Sida Klondike laakiin ayan kaydka lahayn: kaadh kasta oo wejiga kor leh waa la raraa isaga iyo dhammaan kaadhadhka dusiisa ku jira, xitaa haddii aysan isku xigin; kaadhka koowaad oo keliya ayaa waa inuu ku habboonaadaa tiirka bartilmaameedka (hoos u dhaca, casaan iyo madow is-beddelaya; Boqorku wuxuu aadaa tiir madhan). Dhis dhammaan 52-ka kaadh afarta aasaas ee ka bilaabma Ace ilaa Boqor. Heerarka hoose waxay bilaabmaan iyagoo kaadhadh badan horay u furan.",
+    "lib.arcade.yukonFree": "Kaadhadhka hoos wejiga ah: {n}",
+    "lib.arcade.note.chinesechk": "Waxaad ciyaartaa qaybaha buluuga ah ee geeska midig; dhammaan 10-ka u dhaaf geeska bidix ee ka soo horjeeda ka hor kombiyuutarka. Mar kasta waxaad dhaqaajisaa hal qayb: tallaabo ilaa god madhan oo ku xiga, ama ka boodid qayb kasta ilaa god madhan oo isla gadaasheeda ah, oo sii boodi inta aad rabto. Taabo qaybtaada, kadibna taabo god cagaaran si aad u dhaqaajiso.",
+    "lib.arcade.ccTurn": "Mashiinkaaga · Dhaqdhaqaaq {n}",
+    "lib.arcade.ccDraw": "Mashiinnadii way dhammaadeen — barbaro.",
+    "lib.arcade.note.maubinh": "Adiga iyo kombiyuutarku mid kastaa wuxuu helaa 13 kaadh oo waxaad u habeysaan 3 gacmood: gacanta gadaal ee 5 kaadh, gacanta dhexe ee 5 kaadh iyo gacanta hore ee 3 kaadh. Gacanta gadaal waa inayan ka daciifsanaan tan dhexe, tan dhexena waa inayan ka daciifsanaan tan hore; haddii kale habayntaadu way khalkhashaa oo wareegga oo dhan waad lumisaa. Taabo kaadh, kadibna taabo safka uu aadayo (taabo kaadh la dhigay si aad u soo celiso). Gacan kasta oo aad guuleysato waxay siisaa 1 dhibic; guuleysiga dhammaan 3 wuxuu siiyaa 6. Ciyaar 5 wareeg — wadarta togan ayaa heerka dhammaysa. Gacanta horeba waxay noqon kartaa kaadh sare, laba isku mid ah ama saddex isku mid ah oo keliya.",
+    "lib.arcade.mbHigh": "Kaadh sare",
+    "lib.arcade.mbPair": "Laba isku mid ah",
+    "lib.arcade.mbTwoPair": "Laba lammaane",
+    "lib.arcade.mbTrips": "Saddex isku mid ah",
+    "lib.arcade.mbStraight": "Isku xigta",
+    "lib.arcade.mbFlush": "Isku nooc",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Afar isku mid ah",
+    "lib.arcade.mbSflush": "Isku xigta isku nooc",
+    "lib.arcade.mbBack": "Gacanta gadaal",
+    "lib.arcade.mbMid": "Gacanta dhexe",
+    "lib.arcade.mbFront": "Gacanta hore",
+    "lib.arcade.mbFoe": "Kombiyuutar",
+    "lib.arcade.mbYou": "Adiga",
+    "lib.arcade.mbFoul": "Habayntu way khalkhashay!",
+    "lib.arcade.mbFoeFoul": "Kombiyuutarku wuu khalkhaliyay!",
+    "lib.arcade.mbConfirm": "Muuji kaadhadhka",
+    "lib.arcade.mbReset": "Nadiifi",
+    "lib.arcade.mbHand": "Kaadhadhkaaga",
+    "lib.arcade.mbRound": "Wareeg {a}/{b}",
+    "lib.arcade.mbTotal": "Wadar: {n}",
+    "lib.arcade.mbFinish": "Dhammee",
+    "lib.arcade.mbNext": "Wareegga xiga",
+    "lib.arcade.mbDraw": "Dhibcuhu waa isle'eg yihiin — mar kale ciyaar.",
+    "lib.arcade.mbAutoMsg": "Kani waa habayn la soo jeediyay. Waad beddeli kartaa ka hor intaadan kaadhadhka muujin.",
+    "lib.arcade.note.phom": "Laba ciyaaryahan; mid kastaa wuxuu helaa 9 kaadh (kan hore ciyaara wuxuu helaa 10). Meld waa 3 kaadh ama ka badan oo isku qiime ah, ama 3 kaadh ama ka badan oo isku xigta oo isku nooc ah (Ace waa hoose oo keliya). Mashiinkaaga ka qaad kaadh xirmada, ama qaado kaadhka ka soo horjeedaa uu hadda tuuray haddii uu meld la sameeyo kaadhadhkaaga (kaadhka aad qaadatay waa inaad haysataa), kadibna tuur hal kaadh. Marka ciyaaryahan kastaa tuuro 4 kaadh wareegga wuu dhammaadaa oo ka guuleysta ayaa leh wadarta kaadhadhka meld ka baxsan ee ka yar (Ace = 1 … Boqor = 13). Haddii dhammaan kaadhadhkaagu ku jiraan meld kadib tuurid, waad baxdaa (“U”) oo isla markiiba waad guuleysataa. Kaadhadhka xariijin cagaaran leh waxay ku jiraan meld-kaaga ugu fiican.",
+    "lib.arcade.pmDraw": "Qaado",
+    "lib.arcade.pmEat": "Qaado kii la tuuray",
+    "lib.arcade.pmThrow": "Tuur",
+    "lib.arcade.pmFoeAte": "Kombiyuutarku kaadhkaaga wuu qaaday.",
+    "lib.arcade.pmFoeU": "Kombiyuutarku wuu baxay!",
+    "lib.arcade.pmTurn": "Dhaqdhaqaaq {a}/{b}",
+    "lib.arcade.pmLeft": "Meld ka baxsan: {n}",
+    "lib.arcade.pmDeck": "Xirmo: {n}",
+    "lib.arcade.pmFoeHand": "Kaadhadhka kombiyuutarka",
+    "lib.arcade.pmFoeDisc": "Kuwa kombiyuutarku tuuray",
+    "lib.arcade.pmFoeEaten": "Kombiyuutarku wuu qaaday",
+    "lib.arcade.pmMyDisc": "Kuwa aad tuurtay",
+    "lib.arcade.pmAte": "Kaadhkan waad qaadatay — ku hay meld.",
+    "lib.arcade.pmKeep": "Kaadhka la qaaday waa in la haystaa — mid kale tuur.",
+    "lib.arcade.pmU": "Baxay! Isla markiiba waad guuleysatay.",
+    "lib.arcade.pmYou": "Adiga",
+    "lib.arcade.pmFoe": "Kombiyuutar",
+    "lib.arcade.pmDraw2": "Dhibcuhu waa isle'eg yihiin.",
+    "lib.arcade.note.shogi": "Shogi waa chess Jabaan ah. Adigu waxaad ciyaartaa dhinaca hoose oo waxaad bilowdaa; qaybaha kombiyuutarku waxay u jeedaan dhinaca kale. Qaybaha la qabtay gacantaada ayay galaan waxaana lagu dhigi karaa laba-xagal madhan kasta halkii dhaqdhaqaaq laga samayn lahaa (weligaa ha dhigin askari tiir uu hore uga jiro askari aan la dallacsiin, hana dhigin qayb saf aysan mar kale ka dhaqaaqi karin). Qayb gasha, ka baxda ama ku dhaqaaqda saddexdii saf ee u dambeeyay ee cadowga way dallacsiin kartaa (marka laga reebo Boqorka iyo Dahabka); dallacaaddu waa khasab haddii qaybtu aysan lahayn dhaqdhaqaaq kale. Boqorka cadowga mat ku sii si aad u guuleysato. Kanji: 歩 askari, 香 warmo, 桂 faras, 銀 qalin, 金 dahab, 角 bishop, 飛 rook, 玉 boqor; と, 馬, 竜 iyo qaybaha kale ee casaanka ah waa la dallacsiiyay.",
+    "lib.arcade.sgPromote": "Dallac",
+    "lib.arcade.sgKeep": "Ha dallacin",
+    "lib.arcade.sgCheck": "Waad ku jirtaa shak (check)!",
+    "lib.arcade.sgWin": "Mat — waad guuleysatay.",
+    "lib.arcade.sgLose": "Mat ayaa laguu sameeyay.",
+    "lib.arcade.sgAskPromote": "Qaybtan ma dallacsiisaa?",
+    "lib.arcade.note.janggi": "Janggi waa chess Kuuriyaan ah. Waxaad ciyaartaa qaybaha buluuga ah ee hoose oo waxaad bilowdaa. Si ka duwan xiangqi, webi ma jiro, labada qasriba waxay leeyihiin xariijimo dhidibbo ah. General-ka iyo Waardiyayaashu waxay u dhaqaaqaan hal tallaabo xariijimaha qasriga (oo ay ku jiraan dhidibbada); Gaariga dagaalka wuu sii sibiibaa wuuna qabtaa dhidibbada qasriga; Madaafiicdu waa inay ka boodo hal qayb oo kaliya (ma aha madfac kale) si ay u dhaqaaqdo ama u qabato, mana qaban karto madfac; Faraska wuxuu qaadaa hal tallaabo toosan ka dibna mid dhidib ah, Maroodigu mid toosan ka dibna laba dhidib ah, labaduba waa la xiraa haddii qayb jidka ku jirto; Askarigu wuxuu u socdaa hore ama dhinac, iyo hore-dhidib gudaha qasriga cadowga. Labada General weligood ma wajahi karaan midba midka kale. Ku mat General-ka cadowga si aad u guuleysato. Kombiyuutarku weligiis ma ka boodo mashiinka.",
+    "lib.arcade.jgCheck": "Waad ku jirtaa shak (check)!",
+    "lib.arcade.jgWin": "Mat — waad guuleysatay.",
+    "lib.arcade.jgLose": "Mat ayaa laguu sameeyay.",
+    "lib.arcade.note.pinball": "Riix Space, Kor ama taabo miiska si aad kubadda u furto. Haay Bidix (ama taabo badhka bidix ee miiska) si aad flipper-ka bidix kor ugu qaaddo iyo Midig (ama badhka midig) midka midig — taabo qaab xawaare ah halkii aad haysan lahayd. Bumper-yada wareegsani mid walba wuxuu siiyaa 100 dhibic. Waxaad leedahay 3 kubadood; gaar dhibcaha bartilmaameedka ka hor intaysan dhammaan si aad heerka u dhammaysato.",
+    "lib.arcade.pinBalls": "Kubado: {n} · Bartilmaameed: {t}",
+    "lib.arcade.note.cribbage": "Cribbage laba qof ah, tartan ilaa 61 dhibic. Qaybin kasta waxaad hesha 6 kaadh oo waxaad 2 hoos wejiga ugu dhigtaa crib (waxaa leh qaybiyaha). Kaadh bilow (starter) ayaa la furaa. Kadib mashiinka ku dhigo kaadhadhka wejiga kor leh iyadoo wadarta socotaa aysan weligeed 31 ka badnaan: gaarista 15 ama 31 waxay siisaa 2, la mid noqoshada kaadhkii ugu dambeeyay 2/6/12, isku xigta 3 kaadh ama ka badan (nooc kasta) waxay siisaa dhererkeeda, marka qofna ciyaari waayo kii ugu dambeeyay wuxuu helaa 1 (“Go”). Kadib gacan kasta oo 4 kaadh ah waxaa lagu tiriyaa starter-ka: isku-darka kasta oo gaadha 15 waa 2, lammaane kasta 2, isku xigta 3+ dhererkeeda, afar kaadh oo isku nooc ah 4 (5 starter-ka la socda), iyo Jack isku nooc la starter-ka 1. Kan aan qaybinayn ayaa horay u tiriya, kadibna qaybiyuhu wuxuu tiriyaa gacantiisa iyo crib-ka.",
+    "lib.arcade.cbFifteen": "Shan iyo toban",
+    "lib.arcade.cbPair": "Laba isku mid ah",
+    "lib.arcade.cbRun": "Isku xigta",
+    "lib.arcade.cbFlush": "Isku nooc",
+    "lib.arcade.cbNobs": "Jack isku nooc la starter-ka",
+    "lib.arcade.cbHeels": "Jack oo ah starter",
+    "lib.arcade.cbYou": "Adiga",
+    "lib.arcade.cbFoe": "Kombiyuutar",
+    "lib.arcade.cbLast": "Kaadhka u dambeeya",
+    "lib.arcade.cbCount": "Wadar: {n}",
+    "lib.arcade.cbYouDeal": "Adigaa qaybinaya",
+    "lib.arcade.cbFoeDeal": "Kombiyuutarku wuu qaybiyaa",
+    "lib.arcade.cbPick": "Dooro 2 kaadh crib-ka",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Kaadhadhkaaga",
+    "lib.arcade.cbFoeHand": "Kaadhadhka kombiyuutarka",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 dhibic",
+    "lib.arcade.cbPlayed": "La ciyaaray",
+    "lib.arcade.cbToCrib": "Ku dhig crib-ka",
+    "lib.arcade.cbNext": "Sii wad",
+    "lib.arcade.cbHand": "Gacan"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Toban iyo saddex)",
       "desc": "Ciyaarta kaararka Vietnam ee afarta qof: ciyaar mid, lammaane, silsilado iyo afar isku mid si aad marka hore gacantaada u madhan; 10 heer."
+    },
+    "tower-defense": {
+      "name": "Ilaalinta Munaaradaha",
+      "desc": "Dhis oo kor u qaad munaaradaha jidka agtiisa si aad u joojiso mowjad kasta oo cadow ah; 10 heer oo saddex khariidad oo kala duwan ah."
+    },
+    "color-by-number": {
+      "name": "Midab Lambar ah",
+      "desc": "Laba-xagal kasta ku rinjiyee midabka u dhigma lambarkiisa si sawirka loo muujiyo; 10 sawir oo midabo badan marba leh."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike aan kayd lahayn: u dhaqaaji kaadh kasta oo wejiga kor leh iyo wax kasta oo dusiisa ku jira; 10 heer, kaadhadh kooban oo wejiga kor leh intaad sii socoto."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Ciyaar xiddig-qaab ah oo tallaabo iyo boodid ah oo kombiyuutarka la ciyaaro: horta u dhaaf dhammaan 10-ka qayb geeska ka soo horjeeda; 10 heer."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Shiinaha)",
+      "desc": "U habee 13 kaadh saddex gacmood oo 5, 5 iyo 3 kaadh ah oo kombiyuutarka garaac; 5 wareeg heer kasta, 10 heer."
+    },
+    "phom": {
+      "name": "Phom (Rummy Vietnam)",
+      "desc": "Rummy Vietnam ah oo laba qof ah oo kombiyuutarka lala ciyaaro: qaado kaadh ama kii la tuuray, samee meld oo bax; dhibcaha hadhay ugu yar ayaa guuleysta; 10 heer."
+    },
+    "shogi": {
+      "name": "Shogi (Chess Jabaan)",
+      "desc": "Kombiyuutarka kula ciyaar shogi: dhig qaybaha la qabtay, dallac, oo boqorka mat ku sii; 10 heer oo soo celin leh."
+    },
+    "janggi": {
+      "name": "Janggi (Chess Kuuriyaan)",
+      "desc": "Kombiyuutarka kula ciyaar chess Kuuriyaan ah: dhidibbada qasriga, boodista madfaca ee hal qayb, maroodiyaal saddex tallaabo ah; 10 heer oo soo celin leh."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Bidix iyo midig flip ka samee si kubaddu u noolaato, bumper-yada dhufo oo gaar dhibcaha bartilmaameedka ka hor intaysan 3-daada kubadood dhammaan; 10 heer."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage laba qof ah oo kombiyuutarka lala ciyaaro: crib, pegging ilaa 31, tirinta gacmaha, tartan ilaa 61 dhibic; 10 heer."
     }
   },
   "s": {

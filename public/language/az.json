@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Qalan kartlar: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} keçir.",
     "lib.arcade.tlBad": "Seçilmiş kartlar etibarlı kombinasiya yaratmır.",
-    "lib.arcade.tlLow": "Bu kombinasiya masanı üstələmək üçün kifayət qədər yüksək deyil."
+    "lib.arcade.tlLow": "Bu kombinasiya masanı üstələmək üçün kifayət qədər yüksək deyil.",
+    "lib.arcade.note.td": "Atəş qülləsi tikmək üçün boş xanaya (yola yox) toxunun, bu qızıla başa gəlir; qüllənin üzərinə yenidən toxunsanız, təkmilləşdirilir (5-ci səviyyəyə qədər). Qüllələr mənzil daxilində ən uzağa getmiş düşmənə avtomatik atəş açır. Düşmənləri məğlub edib daha çox qızıl qazanın; 15 düşmən sona çatsa, uduzursunuz. Səviyyəni keçmək üçün bütün dalğalara davam gətirin.",
+    "lib.arcade.tdInfo": "Qızıl: {g} · Dalğa {w}/{t}",
+    "lib.arcade.tdCost": "Qüllə: {n}",
+    "lib.arcade.note.colorNum": "Hər xananın palitradakı rəngə uyğun nömrəsi var. Rəng seçin, sonra həmin nömrəli xanalara toxunub boyayın; səhv rənglə toxunsanız, heç nə boyanmır. Şəkli tamamlamaq üçün bütün xanaları düzgün boyayın. Yüksək səviyyələrdə rənglər daha çoxdur.",
+    "lib.arcade.cnWrong": "Səhv rəng — xanadakı nömrəyə baxın.",
+    "lib.arcade.note.yukon": "Klondike kimidir, amma ehtiyat dəstə yoxdur: üzü yuxarı olan istənilən kart üstündəki bütün kartlarla birlikdə köçürülə bilər, ardıcıl olmasalar belə; yalnız birinci kart hədəf sütuna uyğun olmalıdır (azalan sıra, qırmızı və qara növbələşir; Şah boş sütuna qoyulur). Bütün 52 kartı dörd əsas dəstədə Tuzdan Şaha qədər yığın. Aşağı səviyyələrdə daha çox kart əvvəlcədən açıq olur.",
+    "lib.arcade.yukonFree": "Üzü aşağı kartlar: {n}",
+    "lib.arcade.note.chinesechk": "Siz sağ küncdəki mavi daşlarla oynayırsınız; kompüterdən əvvəl hər 10 daşı qarşı tərəfdəki sol küncə çatdırın. Hər gedişdə bir daş hərəkət etdirin: boş qonşu çuxura addımlayın və ya istənilən daşın üstündən birbaşa arxasındakı boş çuxura tullanın, istədiyiniz qədər ardıcıl tullana bilərsiniz. Daşlarınızdan birinə, sonra hərəkət etmək üçün yaşıl çuxura toxunun.",
+    "lib.arcade.ccTurn": "Sizin gedişiniz · Gediş {n}",
+    "lib.arcade.ccDraw": "Gedişlər bitdi — heç-heçə.",
+    "lib.arcade.note.maubinh": "Siz və kompüter hər biri 13 kart alırsınız və onları 3 ələ bölürsünüz: 5 kartlıq arxa əl, 5 kartlıq orta əl və 3 kartlıq ön əl. Arxa əl ən azı orta əl qədər, orta əl isə ön əl qədər güclü olmalıdır; əks halda düzülüşünüz pozulur və bütün raundu uduzursunuz. Karta toxunun, sonra qoyulacağı cərgəyə toxunun (qoyulmuş karta toxunub geri götürün). Qazandığınız hər əl 1 xal verir; 3-nü də qazansanız, 6 xal. 5 raund oynayın — müsbət cəm səviyyəni keçir. Ön əl yalnız yüksək kart, cüt və ya üçlük ola bilər.",
+    "lib.arcade.mbHigh": "Yüksək kart",
+    "lib.arcade.mbPair": "Cüt",
+    "lib.arcade.mbTwoPair": "İki cüt",
+    "lib.arcade.mbTrips": "Üçlük",
+    "lib.arcade.mbStraight": "Sıra",
+    "lib.arcade.mbFlush": "Mast",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Dördlük",
+    "lib.arcade.mbSflush": "Mast sırası",
+    "lib.arcade.mbBack": "Arxa əl",
+    "lib.arcade.mbMid": "Orta əl",
+    "lib.arcade.mbFront": "Ön əl",
+    "lib.arcade.mbFoe": "Kompüter",
+    "lib.arcade.mbYou": "Siz",
+    "lib.arcade.mbFoul": "Düzülüş pozuldu!",
+    "lib.arcade.mbFoeFoul": "Kompüterin düzülüşü pozuldu!",
+    "lib.arcade.mbConfirm": "Kartları göstər",
+    "lib.arcade.mbReset": "Təmizlə",
+    "lib.arcade.mbHand": "Sizin əliniz",
+    "lib.arcade.mbRound": "Raund {a}/{b}",
+    "lib.arcade.mbTotal": "Cəmi: {n}",
+    "lib.arcade.mbFinish": "Bitir",
+    "lib.arcade.mbNext": "Növbəti raund",
+    "lib.arcade.mbDraw": "Xallar bərabərdir — yenidən oynayın.",
+    "lib.arcade.mbAutoMsg": "Budur təklif olunan düzülüş. Kartları göstərməzdən əvvəl dəyişə bilərsiniz.",
+    "lib.arcade.note.phom": "İki oyunçu; hər biri 9 kart alır (birinci gedən 10 kart alır). Kombinasiya eyni dəyərli 3 və ya daha çox kart, yaxud eyni mastdan 3 və ya daha çox ardıcıl kartdır (Tuz yalnız aşağıdır). Gedişinizdə dəstədən kart çəkin və ya rəqibin yenicə atdığı kart əlinizlə kombinasiya yaradırsa, onu götürün (götürülən kart saxlanmalıdır), sonra bir kart atın. Hər oyunçu 4 kart atdıqda raund bitir və kombinasiyada olmayan kartların cəmi (Tuz = 1 … Şah = 13) az olan qalib gəlir. Atışdan sonra bütün kartlarınız kombinasiyadadırsa, çıxırsınız (\"U\") və dərhal qalib gəlirsiniz. Yaşıl çərçivəli kartlar ən yaxşı kombinasiyalarınızdadır.",
+    "lib.arcade.pmDraw": "Çək",
+    "lib.arcade.pmEat": "Atılanı götür",
+    "lib.arcade.pmThrow": "At",
+    "lib.arcade.pmFoeAte": "Kompüter kartınızı götürdü.",
+    "lib.arcade.pmFoeU": "Kompüter çıxdı!",
+    "lib.arcade.pmTurn": "Gediş {a}/{b}",
+    "lib.arcade.pmLeft": "Kombinasiyasız: {n}",
+    "lib.arcade.pmDeck": "Dəstə: {n}",
+    "lib.arcade.pmFoeHand": "Kompüterin əli",
+    "lib.arcade.pmFoeDisc": "Kompüterin atdıqları",
+    "lib.arcade.pmFoeEaten": "Kompüterin götürdüyü",
+    "lib.arcade.pmMyDisc": "Sizin atdıqlarınız",
+    "lib.arcade.pmAte": "Bu kartı götürdünüz — kombinasiyada saxlayın.",
+    "lib.arcade.pmKeep": "Götürdüyünüz kart saxlanmalıdır — başqa kart atın.",
+    "lib.arcade.pmU": "Çıxdınız! Dərhal qalib gəldiniz.",
+    "lib.arcade.pmYou": "Siz",
+    "lib.arcade.pmFoe": "Kompüter",
+    "lib.arcade.pmDraw2": "Xallar bərabərdir.",
+    "lib.arcade.note.shogi": "Shogi yapon şahmatıdır. Siz aşağı tərəfdə oynayır və ilk gedirsiniz; kompüterin daşları əks istiqamətə baxır. Tutulan daşlar əlinizə düşür və gediş əvəzinə istənilən boş xanaya qoyula bilər (heç vaxt artıq çevrilməmiş piyadanız olan xəttə piyada, və bir daha hərəkət edə bilməyəcəyi cərgəyə daş qoymaq olmaz). Rəqibin son üç cərgəsinə, oradan və ya orada hərəkət edən daş çevrilə bilər (Şah və Qızıl istisna); daşın gedişi qalmayacaqsa, çevrilmək məcburidir. Qalib gəlmək üçün düşmən Şahına mat qoyun. Kanji: 歩 piyada, 香 nizə, 桂 at, 銀 gümüş, 金 qızıl, 角 fil, 飛 top, 玉 şah; と, 馬, 竜 və digər qırmızı daşlar çevrilmişdir.",
+    "lib.arcade.sgPromote": "Çevir",
+    "lib.arcade.sgKeep": "Çevirmə",
+    "lib.arcade.sgCheck": "Sizə şah çəkilib!",
+    "lib.arcade.sgWin": "Mat — qalib gəldiniz.",
+    "lib.arcade.sgLose": "Sizə mat qoyuldu.",
+    "lib.arcade.sgAskPromote": "Bu daş çevrilsin?",
+    "lib.arcade.note.janggi": "Janggi Koreya şahmatıdır. Siz aşağıdakı mavi daşlarla oynayır və ilk gedirsiniz. Xiangqidən fərqli olaraq çay yoxdur və hər iki sarayda diaqonal xətlər var. General və Mühafizəçilər saray xətləri boyunca (diaqonallar daxil) bir addım gedir; Araba da saray diaqonalları boyunca sürüşür və vurur; Top hərəkət etmək və ya vurmaq üçün düz bir daşın (başqa Top olmaz) üstündən tullanmalıdır və Topu vura bilməz; At bir xana düz, sonra bir xana diaqonal gedir, Fil isə bir düz, sonra iki diaqonal, hər ikisi yolda daş varsa bloklanır; Əsgərlər irəli və ya yana, düşmən sarayında isə diaqonal irəli gedir. İki General heç vaxt üz-üzə dura bilməz. Qalib gəlmək üçün düşmən Generalına mat qoyun. Kompüter heç vaxt gedişi ötürmür.",
+    "lib.arcade.jgCheck": "Sizə şah çəkilib!",
+    "lib.arcade.jgWin": "Mat — qalib gəldiniz.",
+    "lib.arcade.jgLose": "Sizə mat qoyuldu.",
+    "lib.arcade.note.pinball": "Topu atmaq üçün Boşluq, Yuxarı düyməsini basın və ya masaya toxunun. Sol qanadı qaldırmaq üçün Sol düyməni (və ya masanın sol yarısına toxunun), sağ qanad üçün Sağ düyməni (və ya sağ yarısını) basılı saxlayın — saxlamaq əvəzinə ritmlə toxunun. Dəyirmi bamperlərin hər biri 100 xal verir. 3 topunuz var; səviyyəni keçmək üçün onlar bitməmiş hədəf xala çatın.",
+    "lib.arcade.pinBalls": "Toplar: {n} · Hədəf: {t}",
+    "lib.arcade.note.cribbage": "İki nəfərlik Cribbage, 61 xala qədər yarış. Hər payda 6 kart alır və 2-ni üzü aşağı \"crib\"ə qoyursunuz (o, payçıya aiddir). Başlanğıc kart açılır. Sonra növbə ilə kartları üzü yuxarı oynayırsınız, cəm heç vaxt 31-dən çox olmamalıdır: 15 və ya 31-ə çatmaq 2 xal, son kartla eyni olmaq 2/6/12, 3 və ya daha çox kartlıq sıra (istənilən qaydada) uzunluğu qədər xal, heç kim oynaya bilməyəndə sonuncu oynayan 1 xal (\"Go\") qazanır. Sonra 4 kartlıq hər əl başlanğıc kartla sayılır: cəmi 15 olan hər kombinasiya 2, hər cüt 2, 3+ sıra uzunluğu qədər, bir mastdan dörd kart 4 (başlanğıc kartla 5), başlanğıc kartın mastında Valet 1 xal verir. Payçı olmayan birinci sayır, sonra payçı öz əlini və crib-i sayır.",
+    "lib.arcade.cbFifteen": "On beş",
+    "lib.arcade.cbPair": "Cüt",
+    "lib.arcade.cbRun": "Sıra",
+    "lib.arcade.cbFlush": "Mast",
+    "lib.arcade.cbNobs": "Başlanğıc kartın mastında Valet",
+    "lib.arcade.cbHeels": "Başlanğıc kart Valet",
+    "lib.arcade.cbYou": "Siz",
+    "lib.arcade.cbFoe": "Kompüter",
+    "lib.arcade.cbLast": "Son kart",
+    "lib.arcade.cbCount": "Cəmi: {n}",
+    "lib.arcade.cbYouDeal": "Siz paylayırsınız",
+    "lib.arcade.cbFoeDeal": "Kompüter paylayır",
+    "lib.arcade.cbPick": "Crib üçün 2 kart seçin",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Sizin əliniz",
+    "lib.arcade.cbFoeHand": "Kompüterin əli",
+    "lib.arcade.cbStarter": "Başlanğıc kart",
+    "lib.arcade.cbZero": "0 xal",
+    "lib.arcade.cbPlayed": "Oynanılanlar",
+    "lib.arcade.cbToCrib": "Crib-ə qoy",
+    "lib.arcade.cbNext": "Davam et",
+    "lib.arcade.cbHand": "Əl"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (On üç)",
       "desc": "Dörd nəfərlik Vyetnam kart oyunu, kartlardan qurtulmaq üçün: əlinizi ilk boşaltmaq üçün tək kartlar, cütlər, sıralar və dördlüklər oynayın; 10 səviyyə."
+    },
+    "tower-defense": {
+      "name": "Qüllə Müdafiəsi",
+      "desc": "Yol boyunca qüllələr tikib təkmilləşdirərək bütün düşmən dalğalarını dayandırın; üç müxtəlif xəritədə 10 səviyyə."
+    },
+    "color-by-number": {
+      "name": "Rəqəmlə Boyama",
+      "desc": "Şəkli üzə çıxarmaq üçün hər xananı nömrəsinə uyğun rənglə boyayın; hər dəfə daha çox rəngli 10 şəkil."
+    },
+    "yukon": {
+      "name": "Yukon Pasyans",
+      "desc": "Ehtiyat dəstəsiz Klondike: üzü yuxarı istənilən kartı üstündəki hər şeylə birlikdə köçürün; 10 səviyyə, irəlilədikcə az kart açıq olur."
+    },
+    "chinese-checkers": {
+      "name": "Çin Dama",
+      "desc": "Kompüterə qarşı ulduz formalı addım və tullanma oyunu: 10 daşı birinci olaraq qarşı küncə çatdırın; 10 səviyyə."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Çin Pokeri)",
+      "desc": "13 kartı 5, 5 və 3 kartlıq üç ələ düzün və kompüteri məğlub edin; səviyyə başına 5 raund, 10 səviyyə."
+    },
+    "phom": {
+      "name": "Phom (Vyetnam Rummisi)",
+      "desc": "Kompüterə qarşı iki nəfərlik Vyetnam rummisi: kart çəkin və ya atılanı götürün, kombinasiyalar düzəldib çıxın; ən az qalıq xalı olan qalib gəlir; 10 səviyyə."
+    },
+    "shogi": {
+      "name": "Shogi (Yapon Şahmatı)",
+      "desc": "Kompüterə qarşı shogi oynayın: tutulan daşları qoyun, çevirin və şaha mat qoyun; geri qaytarma ilə 10 səviyyə."
+    },
+    "janggi": {
+      "name": "Janggi (Koreya Şahmatı)",
+      "desc": "Kompüterə qarşı Koreya şahmatı oynayın: saray diaqonalları, bir daşın üstündən top tullanması, üç addımlıq fillər; geri qaytarma ilə 10 səviyyə."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Topu canlı saxlamaq üçün sola və sağa vurun, bamperlərə dəyin və 3 topunuz bitməmiş hədəf xala çatın; 10 səviyyə."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Kompüterə qarşı iki nəfərlik cribbage: crib, 31-ə qədər pegging, əllərin sayılması, 61 xala qədər yarış; 10 səviyyə."
     }
   },
   "s": {

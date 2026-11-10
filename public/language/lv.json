@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Atlikušas kārtis: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} izlaiž.",
     "lib.arcade.tlBad": "Izvēlētās kārtis neveido derīgu kombināciju.",
-    "lib.arcade.tlLow": "Šī kombinācija nav pietiekami augsta, lai pārspētu galdu."
+    "lib.arcade.tlLow": "Šī kombinācija nav pietiekami augsta, lai pārspētu galdu.",
+    "lib.arcade.note.td": "Pieskaries tukšam laukumam (nevis ceļam), lai uzbūvētu šaujošu torni, kas maksā zeltu. Pieskaries tornim vēlreiz, lai to uzlabotu (līdz 5. līmenim). Torņi automātiski šauj uz ienaidnieku, kurš sasniedzis vistālāko punktu to darbības rādiusā. Uzvari ienaidniekus, lai nopelnītu vairāk zelta. Ja galā nonāk 15 ienaidnieki, tu zaudē. Pārdzīvo visus vilņus, lai izietu līmeni.",
+    "lib.arcade.tdInfo": "Zelts: {g} · Vilnis {w}/{t}",
+    "lib.arcade.tdCost": "Tornis: {n}",
+    "lib.arcade.note.colorNum": "Katram laukumam ir cipars, kas atbilst krāsai paletē. Izvēlies krāsu un pieskaries laukumiem ar šo ciparu, lai tos nokrāsotu. Ja izmanto nepareizu krāsu, nekas netiek nokrāsots. Pareizi nokrāso visus laukumus, lai pabeigtu attēlu. Augstākos līmeņos ir vairāk krāsu.",
+    "lib.arcade.cnWrong": "Nepareiza krāsa — pārbaudi ciparu uz laukuma.",
+    "lib.arcade.note.yukon": "Kā Klondaika, bet bez kavas: jebkuru atvērtu kārti var pārvietot kopā ar visām kārtīm uz tās, pat ja tās nav secībā. Tikai pirmajai kārtij jāatbilst mērķa kolonnai (dilstošā secībā, mainīgi sarkana un melna; karalis iet uz tukšu kolonnu). Saliec visas 52 kārtis četrās pamatkaudzēs no dzira līdz karalim. Zemos līmeņos sākumā jau ir vairāk atvērtu kāršu.",
+    "lib.arcade.yukonFree": "Aizvērtās kārtis: {n}",
+    "lib.arcade.note.chinesechk": "Tu spēlē ar zilajiem kauliņiem labajā stūrī. Pārvieto visus 10 uz pretējo kreiso stūri, pirms to izdara dators. Katrā gājienā pārvieto vienu kauliņu: solis uz tukšu blakus esošu bedrīti vai lēciens pāri jebkuram kauliņam uz tukšo bedrīti tūlīt aiz tā, un lēkt vari tik reižu, cik vēlies. Pieskaries savam kauliņam un tad zaļai bedrītei, lai pārvietotos.",
+    "lib.arcade.ccTurn": "Tavs gājiens · Gājiens {n}",
+    "lib.arcade.ccDraw": "Gājieni beigušies — neizšķirts.",
+    "lib.arcade.note.maubinh": "Tu un dators katrs saņemat 13 kārtis un sakārtojat tās 3 rokās: aizmugurējā roka ar 5 kārtīm, vidējā roka ar 5 kārtīm un priekšējā roka ar 3 kārtīm. Aizmugurējai rokai jābūt vismaz tikpat stiprai kā vidējai, bet vidējai — vismaz tikpat stiprai kā priekšējai. Citādi tava kārtība ir nederīga un tu zaudē visu raundu. Pieskaries kārtij un tad rindai, kur tā jānovieto (pieskaries novietotai kārtij, lai to paņemtu atpakaļ). Katra uzvarēta roka dod 1 punktu, uzvara visās 3 dod 6. Spēlē 5 raundus — pozitīva summa izpilda līmeni. Priekšējā roka var būt tikai augstākā kārts, pāris vai trīs vienādas.",
+    "lib.arcade.mbHigh": "Augstākā kārts",
+    "lib.arcade.mbPair": "Pāris",
+    "lib.arcade.mbTwoPair": "Divi pāri",
+    "lib.arcade.mbTrips": "Trīs vienādas",
+    "lib.arcade.mbStraight": "Rinda",
+    "lib.arcade.mbFlush": "Masts",
+    "lib.arcade.mbFull": "Pilna māja",
+    "lib.arcade.mbQuads": "Četras vienādas",
+    "lib.arcade.mbSflush": "Mastu rinda",
+    "lib.arcade.mbBack": "Aizmugurējā roka",
+    "lib.arcade.mbMid": "Vidējā roka",
+    "lib.arcade.mbFront": "Priekšējā roka",
+    "lib.arcade.mbFoe": "Dators",
+    "lib.arcade.mbYou": "Tu",
+    "lib.arcade.mbFoul": "Nederīga kārtība!",
+    "lib.arcade.mbFoeFoul": "Datoram nederīga kārtība!",
+    "lib.arcade.mbConfirm": "Parādīt kārtis",
+    "lib.arcade.mbReset": "Notīrīt",
+    "lib.arcade.mbHand": "Tava roka",
+    "lib.arcade.mbRound": "Raunds {a}/{b}",
+    "lib.arcade.mbTotal": "Kopā: {n}",
+    "lib.arcade.mbFinish": "Pabeigt",
+    "lib.arcade.mbNext": "Nākamais raunds",
+    "lib.arcade.mbDraw": "Punkti vienādi — spēlē vēlreiz.",
+    "lib.arcade.mbAutoMsg": "Lūk, ieteiktā kārtība. Pirms kāršu parādīšanas to vari mainīt.",
+    "lib.arcade.note.phom": "Divi spēlētāji; katrs saņem 9 kārtis (kas sāk, saņem 10). Kombinācija ir 3 vai vairāk vienādas vērtības kārtis vai 3 vai vairāk secīgas viena masta kārtis (dzieris ir tikai zems). Savā gājienā velc kārti no kavas vai ņem kārti, ko pretinieks tikko nometis, ja tā kopā ar tavu roku veido kombināciju (paņemtā kārts jāatstāj), tad nomet vienu kārti. Kad katrs ir nometis 4 kārtis, raunds beidzas, un uzvar tas, kam ārpus kombinācijām esošo kāršu summa ir mazāka (dzieris = 1 … karalis = 13). Ja pēc nomešanas visas tavas kārtis ir kombinācijās, tu izej (\"U\") un uzvari uzreiz. Kārtis ar zaļu apmali ietilpst tavā labākajā kombināciju komplektā.",
+    "lib.arcade.pmDraw": "Vilkt",
+    "lib.arcade.pmEat": "Ņemt nomesto",
+    "lib.arcade.pmThrow": "Mest",
+    "lib.arcade.pmFoeAte": "Dators paņēma tavu kārti.",
+    "lib.arcade.pmFoeU": "Dators izgāja!",
+    "lib.arcade.pmTurn": "Gājiens {a}/{b}",
+    "lib.arcade.pmLeft": "Ārpus kombinācijām: {n}",
+    "lib.arcade.pmDeck": "Kava: {n}",
+    "lib.arcade.pmFoeHand": "Datora roka",
+    "lib.arcade.pmFoeDisc": "Datora nomestās",
+    "lib.arcade.pmFoeEaten": "Dators paņēma",
+    "lib.arcade.pmMyDisc": "Tavas nomestās",
+    "lib.arcade.pmAte": "Tu paņēmi šo kārti — izmanto to kombinācijā.",
+    "lib.arcade.pmKeep": "Paņemtā kārts jāatstāj — nomet citu.",
+    "lib.arcade.pmU": "Izgāji! Tu uzvari uzreiz.",
+    "lib.arcade.pmYou": "Tu",
+    "lib.arcade.pmFoe": "Dators",
+    "lib.arcade.pmDraw2": "Punkti vienādi.",
+    "lib.arcade.note.shogi": "Šogi ir japāņu šahs. Tu spēlē apakšējā pusē un sāc pirmais; datora kauliņi vērsti pretējā virzienā. Sagūstītie kauliņi nonāk tavā rokā, un gājiena vietā tos var nolikt uz jebkura tukša laukuma (nekad kaujinieku kolonnā, kur jau ir nepaaugstināts kaujinieks, un nekad kauliņu rindā, kurā tas vairs nevarētu kustēties). Kauliņš, kas ieiet pretinieka pēdējās trīs rindās, izkāpj no tām vai pārvietojas tajās, var tikt paaugstināts (izņemot karali un zelta ģenerāli). Paaugstināšana ir obligāta, ja kauliņam citādi nebūtu gājienu. Liec matu ienaidnieka karalim, lai uzvarētu. Kandži: 歩 kaujinieks, 香 šķēpnesis, 桂 zirdziņš, 銀 sudrabs, 金 zelts, 角 laidnis, 飛 tornis, 玉 karalis. と, 馬, 竜 un citi sarkanie kauliņi ir paaugstināti.",
+    "lib.arcade.sgPromote": "Paaugstināt",
+    "lib.arcade.sgKeep": "Nepaaugstināt",
+    "lib.arcade.sgCheck": "Tev ir šahs!",
+    "lib.arcade.sgWin": "Mats — tu uzvarēji.",
+    "lib.arcade.sgLose": "Tev uzlika matu.",
+    "lib.arcade.sgAskPromote": "Paaugstināt šo kauliņu?",
+    "lib.arcade.note.janggi": "Čandži ir korejiešu šahs. Tu spēlē ar zilajiem kauliņiem apakšā un sāc pirmais. Atšķirībā no sjansji, šeit nav upes, un abās pilīs ir diagonāles. Ģenerālis un sargi pārvietojas par vienu soli pa pils līnijām (arī diagonāli). Rati slīd un sit arī pa pils diagonālēm. Lielgabalam, lai kustētos vai sistu, jāpārlec tieši pāri vienam kauliņam (ne citam lielgabalam), un tas nevar sist lielgabalu. Zirgs sper soli taisni un tad vienu diagonāli, ziloņs vienu taisni un tad divus diagonāli; abus bloķē kauliņš ceļā. Kareivji iet uz priekšu vai uz sāniem, bet ienaidnieka pilī arī diagonāli uz priekšu. Abi ģenerāļi nekad nedrīkst stāvēt viens pret otru. Liec matu ienaidnieka ģenerālim, lai uzvarētu. Dators nekad nepasē.",
+    "lib.arcade.jgCheck": "Tev ir šahs!",
+    "lib.arcade.jgWin": "Mats — tu uzvarēji.",
+    "lib.arcade.jgLose": "Tev uzlika matu.",
+    "lib.arcade.note.pinball": "Spied atstarpi, bultiņu uz augšu vai pieskaries galdam, lai palaistu bumbiņu. Tur nospiestu kreiso bultiņu (vai pieskaries galda kreisajai pusei), lai pacelto kreiso flīpera plati, un labo bultiņu (vai labo pusi) labajai — labāk piesit ritmā, nevis tur nospiestu. Apaļie buferi dod pa 100 punktiem. Tev ir 3 bumbiņas. Sasniedz mērķa punktu skaitu, pirms tās beidzas, lai izietu līmeni.",
+    "lib.arcade.pinBalls": "Bumbiņas: {n} · Mērķis: {t}",
+    "lib.arcade.note.cribbage": "Kribidžs diviem spēlētājiem, sacensība līdz 61 punktam. Katrā dalījumā tu saņem 6 kārtis un 2 noliec ar seju uz leju šķirstā (tas pieder dalītājam). Tiek apgriezta starta kārts. Pēc tam pārmaiņus spēlējat kārtis ar seju uz augšu, kopsummai nekad nepārsniedzot 31: sasniegt 15 vai 31 dod 2, sakrišana ar pēdējo kārti dod 2/6/12, 3 vai vairāku kāršu rinda (jebkurā secībā) dod tās garumu, un, kad neviens vairs nevar spēlēt, pēdējais spēlētājs saņem 1 (\"Go\"). Tad katru 4 kāršu roku skaita kopā ar starta kārti: katra kombinācija ar summu 15 dod 2, katrs pāris 2, 3+ rinda tās garumu, četras viena masta kārtis 4 (5 ar starta kārti) un kalps starta kārts mastā 1. Pirmais skaita nedalītājs, tad dalītājs savu roku un šķirstu.",
+    "lib.arcade.cbFifteen": "Piecpadsmit",
+    "lib.arcade.cbPair": "Pāris",
+    "lib.arcade.cbRun": "Rinda",
+    "lib.arcade.cbFlush": "Masts",
+    "lib.arcade.cbNobs": "Kalps starta kārts mastā",
+    "lib.arcade.cbHeels": "Kalps kā starta kārts",
+    "lib.arcade.cbYou": "Tu",
+    "lib.arcade.cbFoe": "Dators",
+    "lib.arcade.cbLast": "Pēdējā kārts",
+    "lib.arcade.cbCount": "Kopā: {n}",
+    "lib.arcade.cbYouDeal": "Tu dali",
+    "lib.arcade.cbFoeDeal": "Dators dala",
+    "lib.arcade.cbPick": "Izvēlies 2 kārtis šķirstam",
+    "lib.arcade.cbCrib": "Šķirsts",
+    "lib.arcade.cbYourHand": "Tava roka",
+    "lib.arcade.cbFoeHand": "Datora roka",
+    "lib.arcade.cbStarter": "Starta kārts",
+    "lib.arcade.cbZero": "0 punktu",
+    "lib.arcade.cbPlayed": "Nospēlēts",
+    "lib.arcade.cbToCrib": "Likt šķirstā",
+    "lib.arcade.cbNext": "Turpināt",
+    "lib.arcade.cbHand": "Roka"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Trīspadsmit)",
       "desc": "Vjetnamiešu kāršu spēle četriem, kurā jāatbrīvojas no kārtīm: izspēlē atsevišķas kārtis, pārus, virknes un četrniekus, lai pirmais iztukšotu rokas; 10 līmeņi."
+    },
+    "tower-defense": {
+      "name": "Torņu aizsardzība (Tower Defense)",
+      "desc": "Būvē un uzlabo torņus gar ceļu, lai apturētu visus ienaidnieku vilņus. 10 līmeņi trijās dažādās kartēs."
+    },
+    "color-by-number": {
+      "name": "Krāsošana pēc cipariem",
+      "desc": "Nokrāso katru laukumu ar krāsu, kas atbilst tā ciparam, lai atklātu attēlu. 10 attēli, katru reizi ar vairāk krāsām."
+    },
+    "yukon": {
+      "name": "Jukonas pasjanss",
+      "desc": "Klondaika bez kavas: pārvieto jebkuru atvērtu kārti kopā ar visu, kas uz tās. 10 līmeņi, arvien mazāk atvērtu kāršu."
+    },
+    "chinese-checkers": {
+      "name": "Ķīniešu dambrete",
+      "desc": "Zvaigznes formas lēcienu un soļu spēle pret datoru: pirmais pārvieto visus 10 kauliņus uz pretējo stūri. 10 līmeņi."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (ķīniešu pokers)",
+      "desc": "Sakārto 13 kārtis trīs rokās pa 5, 5 un 3 kārtīm un uzvari datoru. 5 raundi katrā līmenī, 10 līmeņi."
+    },
+    "phom": {
+      "name": "Phỏm (vjetnamiešu remijs)",
+      "desc": "Vjetnamiešu remijs diviem pret datoru: velc vai ņem nomestu kārti, veido kombinācijas un izej. Uzvar tas, kam paliek vismazāk punktu. 10 līmeņi."
+    },
+    "shogi": {
+      "name": "Šogi (japāņu šahs)",
+      "desc": "Spēlē šogi pret datoru: nolik sagūstītos kauliņus, paaugstini un liec matu karalim. 10 līmeņi ar gājiena atcelšanu."
+    },
+    "janggi": {
+      "name": "Čandži (korejiešu šahs)",
+      "desc": "Spēlē korejiešu šahu pret datoru: pils diagonāles, lielgabala lēcieni pāri vienam kauliņam, ziloņi ar trim soļiem. 10 līmeņi ar gājiena atcelšanu."
+    },
+    "pinball": {
+      "name": "Pinbols (Pinball)",
+      "desc": "Sit ar kreiso un labo flīperi, lai bumbiņa paliktu spēlē, trāpi buferos un sasniedz mērķa punktu skaitu, pirms beidzas tavas 3 bumbiņas. 10 līmeņi."
+    },
+    "cribbage": {
+      "name": "Kribidžs (Cribbage)",
+      "desc": "Kribidžs diviem pret datoru: šķirsts, punktu skaitīšana līdz 31, roku skaitīšana un sacensība līdz 61 punktam. 10 līmeņi."
     }
   },
   "s": {

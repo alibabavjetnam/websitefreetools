@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Letra të mbetura: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} kalon.",
     "lib.arcade.tlBad": "Letrat e zgjedhura nuk formojnë një grup të vlefshëm.",
-    "lib.arcade.tlLow": "Ky grup nuk është mjaft i lartë për të mposhtur tavolinën."
+    "lib.arcade.tlLow": "Ky grup nuk është mjaft i lartë për të mposhtur tavolinën.",
+    "lib.arcade.note.td": "Prek një katror bosh (jo shtegun) për të ndërtuar një kullë qitjeje, që kushton ar; prek përsëri kullën për ta përmirësuar (deri në nivelin 5). Kullat gjuajnë automatikisht armikun që ka shkuar më larg brenda rrezes. Mundi armiqtë për të fituar më shumë ar; nëse 15 armiq arrijnë në fund, humbet. Mbijeto çdo valë për ta kaluar nivelin.",
+    "lib.arcade.tdInfo": "Ari: {g} · Vala {w}/{t}",
+    "lib.arcade.tdCost": "Kulla: {n}",
+    "lib.arcade.note.colorNum": "Çdo katror ka një numër që përputhet me një ngjyrë në paletë. Zgjidh një ngjyrë, pastaj prek katrorët me atë numër për t'i lyer; nëse prek me ngjyrën e gabuar, nuk lyhet asgjë. Lyej saktë çdo katror për të plotësuar figurën. Nivelet më të larta kanë më shumë ngjyra.",
+    "lib.arcade.cnWrong": "Ngjyrë e gabuar — kontrollo numrin në katror.",
+    "lib.arcade.note.yukon": "Si Klondike, por pa kartat rezervë: çdo kartë me fytyrë lart mund të lëvizet bashkë me të gjitha kartat sipër saj, edhe nëse nuk janë në varg; vetëm karta e parë duhet të përshtatet me kolonën e synuar (zbritëse, me ngjyra të alternuara kuq e zi; Mbreti shkon në kolonë bosh). Ndërto të 52 kartat në katër themelet nga Asi te Mbreti. Nivelet e ulëta fillojnë me më shumë karta të kthyera lart.",
+    "lib.arcade.yukonFree": "Karta me fytyrë poshtë: {n}",
+    "lib.arcade.note.chinesechk": "Ti luan me gurët blu në qoshen e djathtë; çoji të 10 në qoshen e kundërt majtas përpara kompjuterit. Në çdo radhë lëviz një gur: hap në një vrimë bosh fqinje, ose kapërce çdo gur drejt vrimës bosh pikërisht pas tij dhe vazhdo të kapërcesh sa herë të duash. Prek një nga gurët e tu, pastaj prek një vrimë të gjelbër për të lëvizur.",
+    "lib.arcade.ccTurn": "Radha jote · Radha {n}",
+    "lib.arcade.ccDraw": "Radhët mbaruan — barazim.",
+    "lib.arcade.note.maubinh": "Ti dhe kompjuteri merrni nga 13 karta dhe i rregulloni në 3 dorë: dorën e pasme me 5 karta, dorën e mesme me 5 karta dhe dorën e përparme me 3 karta. Dora e pasme duhet të jetë të paktën aq e fortë sa e mesmja, dhe e mesmja aq e fortë sa e përparmja; përndryshe rregullimi yt është i gabuar dhe humb gjithë raundin. Prek një kartë, pastaj prek rreshtin ku shkon (prek një kartë të vendosur për ta marrë mbrapsht). Çdo dorë që fiton vlen 1 pikë; fitimi i të 3 vlen 6. Luaj 5 raunde — një total pozitiv e kalon nivelin. Dora e përparme mund të jetë vetëm kartë e lartë, çift ose treshe.",
+    "lib.arcade.mbHigh": "Kartë e lartë",
+    "lib.arcade.mbPair": "Çift",
+    "lib.arcade.mbTwoPair": "Dy çifte",
+    "lib.arcade.mbTrips": "Treshe",
+    "lib.arcade.mbStraight": "Varg",
+    "lib.arcade.mbFlush": "Ngjyrë",
+    "lib.arcade.mbFull": "Shtëpi e plotë",
+    "lib.arcade.mbQuads": "Katërshe",
+    "lib.arcade.mbSflush": "Varg me ngjyrë",
+    "lib.arcade.mbBack": "Dora e pasme",
+    "lib.arcade.mbMid": "Dora e mesme",
+    "lib.arcade.mbFront": "Dora e përparme",
+    "lib.arcade.mbFoe": "Kompjuteri",
+    "lib.arcade.mbYou": "Ti",
+    "lib.arcade.mbFoul": "Rregullim i gabuar!",
+    "lib.arcade.mbFoeFoul": "Kompjuteri bëri rregullim të gabuar!",
+    "lib.arcade.mbConfirm": "Shfaq kartat",
+    "lib.arcade.mbReset": "Pastro",
+    "lib.arcade.mbHand": "Dora jote",
+    "lib.arcade.mbRound": "Raundi {a}/{b}",
+    "lib.arcade.mbTotal": "Totali: {n}",
+    "lib.arcade.mbFinish": "Përfundo",
+    "lib.arcade.mbNext": "Raundi tjetër",
+    "lib.arcade.mbDraw": "Barazim në pikë — luaj përsëri.",
+    "lib.arcade.mbAutoMsg": "Ja një rregullim i sugjeruar. Mund ta ndryshosh përpara se të shfaqësh kartat.",
+    "lib.arcade.note.phom": "Dy lojtarë; secili merr 9 karta (ai që fillon i pari merr 10). Një kombinim është 3 ose më shumë karta me të njëjtin vlerë, ose 3 ose më shumë karta të njëpasnjëshme të të njëjtës shumicë (Asi është vetëm i ulët). Në radhën tënde tërhiq një kartë nga pirgu, ose merr kartën që sapo hodhi kundërshtari nëse formon kombinim me dorën tënde (karta e marrë duhet mbajtur), pastaj hidh një kartë. Kur secili ka hedhur 4 karta, raundi mbaron dhe fiton ai me totalin më të ulët të kartave pa kombinim (Asi = 1 … Mbreti = 13). Nëse të gjitha kartat e tua janë në kombinime pas një hedhjeje, del (\"U\") dhe fiton menjëherë. Kartat me kontur jeshil janë në kombinimet e tua më të mira.",
+    "lib.arcade.pmDraw": "Tërhiq",
+    "lib.arcade.pmEat": "Merr kartën e hedhur",
+    "lib.arcade.pmThrow": "Hidh",
+    "lib.arcade.pmFoeAte": "Kompjuteri mori kartën tënde.",
+    "lib.arcade.pmFoeU": "Kompjuteri doli!",
+    "lib.arcade.pmTurn": "Radha {a}/{b}",
+    "lib.arcade.pmLeft": "Pa kombinim: {n}",
+    "lib.arcade.pmDeck": "Pirgu: {n}",
+    "lib.arcade.pmFoeHand": "Dora e kompjuterit",
+    "lib.arcade.pmFoeDisc": "Hedhjet e kompjuterit",
+    "lib.arcade.pmFoeEaten": "Kompjuteri mori",
+    "lib.arcade.pmMyDisc": "Hedhjet e tua",
+    "lib.arcade.pmAte": "E more këtë kartë — mbaje në një kombinim.",
+    "lib.arcade.pmKeep": "Karta që more duhet mbajtur — hidh një tjetër.",
+    "lib.arcade.pmU": "Dole! Fiton menjëherë.",
+    "lib.arcade.pmYou": "Ti",
+    "lib.arcade.pmFoe": "Kompjuteri",
+    "lib.arcade.pmDraw2": "Barazim në pikë.",
+    "lib.arcade.note.shogi": "Shogi është shahu japonez. Ti luan anën e poshtme dhe lëviz i pari; gurët e kompjuterit janë të kthyer në anën tjetër. Gurët e kapur shkojnë në dorën tënde dhe mund të vihen në çdo katror bosh në vend të një lëvizjeje (kurrë një ushtar në një kolonë ku ke tashmë një ushtar të pazgjeruar, dhe kurrë një gur në një rresht ku nuk do të mund të lëvizte më). Një gur që lëviz në, nga ose brenda tre rreshtave të fundit të kundërshtarit mund të promovohet (përveç Mbretit dhe Arit); promovimi është i detyrueshëm kur guri nuk do të kishte lëvizje. Bëj shah-mat mbretit të armikut për të fituar. Kanji: 歩 ushtar, 香 heshtar, 桂 kalë, 銀 argjend, 金 ar, 角 oficer, 飛 top, 玉 mbret; と, 馬, 竜 dhe gurët e tjerë të kuq janë të promovuar.",
+    "lib.arcade.sgPromote": "Promovo",
+    "lib.arcade.sgKeep": "Mos promovo",
+    "lib.arcade.sgCheck": "Je në shah!",
+    "lib.arcade.sgWin": "Shah-mat — fitove.",
+    "lib.arcade.sgLose": "Të bënë shah-mat.",
+    "lib.arcade.sgAskPromote": "Ta promovoj këtë gur?",
+    "lib.arcade.note.janggi": "Janggi është shahu korean. Ti luan gurët blu poshtë dhe lëviz i pari. Ndryshe nga xiangqi, nuk ka lumë, dhe të dy pallatet kanë vija diagonale. Gjenerali dhe Rojet lëvizin një hap përgjatë vijave të pallatit (diagonalet përfshirë); Karroca rrëshqet dhe kap edhe përgjatë diagonaleve të pallatit; Topi duhet të kapërcejë saktësisht një gur (jo një Top tjetër) për të lëvizur ose kapur, dhe nuk mund të kapë një Top; Kali hap një pikë drejt e pastaj një diagonalisht, dhe Elefanti një drejt e pastaj dy diagonalisht, të dy të bllokuar nëse ka gur në rrugë; Ushtarët lëvizin përpara ose anash, dhe diagonalisht përpara brenda pallatit të armikut. Dy Gjeneralët nuk mund të shihen kurrë ballë për ballë. Bëj shah-mat Gjeneralit të armikut për të fituar. Kompjuteri nuk e kalon kurrë radhën.",
+    "lib.arcade.jgCheck": "Je në shah!",
+    "lib.arcade.jgWin": "Shah-mat — fitove.",
+    "lib.arcade.jgLose": "Të bënë shah-mat.",
+    "lib.arcade.note.pinball": "Shtyp Hapësirën, Lart ose prek tavolinën për të lëshuar topin. Mbaj Majtas (ose prek gjysmën e majtë të tavolinës) për të ngritur krahun e majtë dhe Djathtas (ose gjysmën e djathtë) për të djathtin — prek në ritëm në vend që të mbash. Amortizatorët e rrumbullakët japin nga 100 pikë secili. Ke 3 topa; arri pikët objektiv para se të mbarojnë për ta kaluar nivelin.",
+    "lib.arcade.pinBalls": "Topa: {n} · Objektivi: {t}",
+    "lib.arcade.note.cribbage": "Cribbage me dy lojtarë, garë deri në 61 pikë. Në çdo ndarje merr 6 karta dhe vë 2 me fytyrë poshtë në \"crib\" (i përket ndarësit). Kthehet lart një kartë nisëse. Pastaj luani me radhë karta me fytyrë lart, me totalin rrjedhës asnjëherë mbi 31: arritja e 15 ose 31 jep 2, përputhja me kartën e fundit jep 2/6/12, një varg me 3 ose më shumë karta (në çdo rend) jep gjatësinë e tij, dhe kur askush nuk mund të luajë, i fundit që luajti merr 1 (\"Go\"). Pastaj numërohet çdo dorë me 4 karta bashkë me nisëset: çdo kombinim me total 15 jep 2, çdo çift 2, një varg me 3+ gjatësinë e tij, katër karta të një shumice 4 (5 me nisëset), dhe një Fant me shumicën e nisëses 1. Jo-ndarësi numëron i pari, pastaj ndarësi numëron dorën dhe cribin e tij.",
+    "lib.arcade.cbFifteen": "Pesëmbëdhjetë",
+    "lib.arcade.cbPair": "Çift",
+    "lib.arcade.cbRun": "Varg",
+    "lib.arcade.cbFlush": "Ngjyrë",
+    "lib.arcade.cbNobs": "Fant me shumicën e nisëses",
+    "lib.arcade.cbHeels": "Fant si nisëse",
+    "lib.arcade.cbYou": "Ti",
+    "lib.arcade.cbFoe": "Kompjuteri",
+    "lib.arcade.cbLast": "Karta e fundit",
+    "lib.arcade.cbCount": "Totali: {n}",
+    "lib.arcade.cbYouDeal": "Ti ndan",
+    "lib.arcade.cbFoeDeal": "Kompjuteri ndan",
+    "lib.arcade.cbPick": "Zgjidh 2 karta për crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Dora jote",
+    "lib.arcade.cbFoeHand": "Dora e kompjuterit",
+    "lib.arcade.cbStarter": "Nisësja",
+    "lib.arcade.cbZero": "0 pikë",
+    "lib.arcade.cbPlayed": "Të luajtura",
+    "lib.arcade.cbToCrib": "Vë në crib",
+    "lib.arcade.cbNext": "Vazhdo",
+    "lib.arcade.cbHand": "Dora"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Trembëdhjetë)",
       "desc": "Loja vietnameze e letrave për katër lojtarë ku boshatisen duart: luaj letra të vetme, çifte, rende dhe katër të njëjta për ta boshatisur dorën i pari; 10 nivele."
+    },
+    "tower-defense": {
+      "name": "Mbrojtja me Kulla",
+      "desc": "Ndërto dhe përmirëso kulla përgjatë shtegut për të ndaluar çdo valë armiqsh; 10 nivele në tre harta të ndryshme."
+    },
+    "color-by-number": {
+      "name": "Ngjyros sipas Numrave",
+      "desc": "Lyej çdo katror me ngjyrën që përputhet me numrin e tij për të zbuluar figurën; 10 figura me më shumë ngjyra çdo herë."
+    },
+    "yukon": {
+      "name": "Pasjansa Yukon",
+      "desc": "Klondike pa kartat rezervë: lëviz çdo kartë me fytyrë lart bashkë me gjithçka sipër saj; 10 nivele, me më pak karta lart sa më tej të shkosh."
+    },
+    "chinese-checkers": {
+      "name": "Dama Kineze",
+      "desc": "Lojë në formë ylli me hapa dhe kërcime kundër kompjuterit: çoji të 10 gurët i pari në qoshen e kundërt; 10 nivele."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Kinez)",
+      "desc": "Rregulloji 13 kartat në tre dorë me 5, 5 dhe 3 karta dhe mundi kompjuterin; 5 raunde për nivel, 10 nivele."
+    },
+    "phom": {
+      "name": "Phom (Rummy Vietnamez)",
+      "desc": "Rummy vietnamez për dy kundër kompjuterit: tërhiq ose merr një kartë të hedhur, formo kombinime dhe dil; fiton ai me më pak pikë të mbetura; 10 nivele."
+    },
+    "shogi": {
+      "name": "Shogi (Shahu Japonez)",
+      "desc": "Luaj shogi kundër kompjuterit: vë gurët e kapur, promovo dhe bëj shah-mat mbretit; 10 nivele me kthim pas."
+    },
+    "janggi": {
+      "name": "Janggi (Shahu Korean)",
+      "desc": "Luaj shahun korean kundër kompjuterit: diagonale pallati, kërcime topi mbi një gur, elefantë me tre hapa; 10 nivele me kthim pas."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Godit majtas e djathtas për ta mbajtur topin gjallë, godit amortizatorët dhe arri pikët objektiv para se të mbarojnë 3 topat; 10 nivele."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage me dy lojtarë kundër kompjuterit: crib, pegging deri në 31, numërim dorësh, garë deri në 61 pikë; 10 nivele."
     }
   },
   "s": {

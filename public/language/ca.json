@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Cartes que queden: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} passa.",
     "lib.arcade.tlBad": "Les cartes seleccionades no formen una combinació vàlida.",
-    "lib.arcade.tlLow": "Aquesta combinació no és prou alta per superar la de la taula."
+    "lib.arcade.tlLow": "Aquesta combinació no és prou alta per superar la de la taula.",
+    "lib.arcade.note.td": "Toca una casella buida (no el camí) per construir una torre de tir, que costa or; torna a tocar una torre per millorar-la (fins al nivell 5). Les torres disparen automàticament a l'enemic que ha avançat més dins l'abast. Derrota enemics per guanyar més or; si 15 enemics arriben al final, perds. Sobreviu a totes les onades per superar el nivell.",
+    "lib.arcade.tdInfo": "Or: {g} · Onada {w}/{t}",
+    "lib.arcade.tdCost": "Torre: {n}",
+    "lib.arcade.note.colorNum": "Cada casella té un número que correspon a un color de la paleta. Tria un color i toca les caselles amb aquell número per pintar-les; si toques amb un color equivocat no es pinta res. Pinta totes les caselles correctament per acabar el dibuix. Els nivells alts tenen més colors.",
+    "lib.arcade.cnWrong": "Color equivocat: mira el número de la casella.",
+    "lib.arcade.note.yukon": "Com el Klondike però sense munt de reserva: qualsevol carta descoberta es pot moure juntament amb totes les cartes que té a sobre, encara que no formin seqüència; només la primera carta ha d'encaixar a la columna de destí (descendent, alternant vermell i negre; un Rei va a una columna buida). Munta les 52 cartes als quatre fonaments de l'As al Rei. Els nivells baixos comencen amb més cartes ja descobertes.",
+    "lib.arcade.yukonFree": "Cartes tapades: {n}",
+    "lib.arcade.note.chinesechk": "Tu jugues amb les peces blaves del cantó de la dreta; porta les 10 peces al cantó oposat de l'esquerra abans que l'ordinador. A cada torn mous una peça: fes un pas fins a un forat veí buit, o salta per sobre de qualsevol peça cap al forat buit just darrere, i continua saltant tantes vegades com vulguis. Toca una de les teves peces i després un forat verd per moure.",
+    "lib.arcade.ccTurn": "El teu torn · Torn {n}",
+    "lib.arcade.ccDraw": "S'han acabat els torns: empat.",
+    "lib.arcade.note.maubinh": "Tu i l'ordinador rebeu 13 cartes cadascú i les ordeneu en 3 mans: una mà del darrere de 5 cartes, una del mig de 5 cartes i una del davant de 3 cartes. La mà del darrere ha de ser almenys tan forta com la del mig, i la del mig almenys tan forta com la del davant; si no, la teva ordenació és invàlida i perds tota la ronda. Toca una carta i després la fila on va (toca una carta col·locada per recuperar-la). Cada mà que guanyes val 1 punt; guanyar les 3 en val 6. Juga 5 rondes: un total positiu supera el nivell. La mà del davant només pot ser carta alta, parella o trio.",
+    "lib.arcade.mbHigh": "Carta alta",
+    "lib.arcade.mbPair": "Parella",
+    "lib.arcade.mbTwoPair": "Doble parella",
+    "lib.arcade.mbTrips": "Trio",
+    "lib.arcade.mbStraight": "Escala",
+    "lib.arcade.mbFlush": "Color",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Pòquer",
+    "lib.arcade.mbSflush": "Escala de color",
+    "lib.arcade.mbBack": "Mà del darrere",
+    "lib.arcade.mbMid": "Mà del mig",
+    "lib.arcade.mbFront": "Mà del davant",
+    "lib.arcade.mbFoe": "Ordinador",
+    "lib.arcade.mbYou": "Tu",
+    "lib.arcade.mbFoul": "Ordenació invàlida!",
+    "lib.arcade.mbFoeFoul": "L'ordinador ha fet una ordenació invàlida!",
+    "lib.arcade.mbConfirm": "Mostra les cartes",
+    "lib.arcade.mbReset": "Esborra",
+    "lib.arcade.mbHand": "La teva mà",
+    "lib.arcade.mbRound": "Ronda {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Acaba",
+    "lib.arcade.mbNext": "Propera ronda",
+    "lib.arcade.mbDraw": "Empat a punts: torna a jugar.",
+    "lib.arcade.mbAutoMsg": "Aquí tens una ordenació suggerida. Pots canviar-la abans de mostrar les cartes.",
+    "lib.arcade.note.phom": "Dos jugadors; cadascú rep 9 cartes (qui comença en rep 10). Un joc és de 3 o més cartes del mateix valor, o de 3 o més cartes consecutives del mateix coll (l'As només és baix). En el teu torn pesca una carta del munt, o agafa la carta que l'adversari acaba de descartar si forma un joc amb la teva mà (la carta agafada s'ha de guardar), i després descarta una carta. Quan cada jugador ha descartat 4 cartes, la ronda s'acaba i guanya qui té el total més baix de cartes sense jugar (As = 1 … Rei = 13). Si després d'un descart totes les teves cartes estan en jocs, plegues (\"U\") i guanyes a l'instant. Les cartes amb contorn verd són al teu millor conjunt de jocs.",
+    "lib.arcade.pmDraw": "Pesca",
+    "lib.arcade.pmEat": "Agafa el descart",
+    "lib.arcade.pmThrow": "Descarta",
+    "lib.arcade.pmFoeAte": "L'ordinador ha agafat la teva carta.",
+    "lib.arcade.pmFoeU": "L'ordinador ha plegat!",
+    "lib.arcade.pmTurn": "Torn {a}/{b}",
+    "lib.arcade.pmLeft": "Sense jugar: {n}",
+    "lib.arcade.pmDeck": "Munt: {n}",
+    "lib.arcade.pmFoeHand": "Mà de l'ordinador",
+    "lib.arcade.pmFoeDisc": "Descarts de l'ordinador",
+    "lib.arcade.pmFoeEaten": "L'ordinador ha agafat",
+    "lib.arcade.pmMyDisc": "Els teus descarts",
+    "lib.arcade.pmAte": "Has agafat aquesta carta: guarda-la en un joc.",
+    "lib.arcade.pmKeep": "Has de guardar la carta que has agafat: descarta'n una altra.",
+    "lib.arcade.pmU": "Has plegat! Guanyes a l'instant.",
+    "lib.arcade.pmYou": "Tu",
+    "lib.arcade.pmFoe": "Ordinador",
+    "lib.arcade.pmDraw2": "Empat a punts.",
+    "lib.arcade.note.shogi": "El shogi és l'escacs japonès. Tu jugues amb el costat de baix i mous primer; les peces de l'ordinador apunten cap a l'altre costat. Les peces capturades passen a la teva mà i, en lloc de fer un moviment, les pots deixar en qualsevol casella buida (mai un peó en una columna on ja tinguis un peó sense promocionar, ni una peça en una filera on no es pugui tornar a moure). Una peça que entra, surt o es mou dins de les tres últimes fileres de l'adversari pot promocionar (excepte el Rei i l'Or); la promoció és obligatòria quan la peça es quedaria sense moviments. Fes escac i mat al Rei enemic per guanyar. Kanji: 歩 peó, 香 llança, 桂 cavall, 銀 plata, 金 or, 角 alfil, 飛 torre, 玉 rei; と, 馬, 竜 i altres peces vermelles són promocionades.",
+    "lib.arcade.sgPromote": "Promociona",
+    "lib.arcade.sgKeep": "No promocionis",
+    "lib.arcade.sgCheck": "Estàs en escac!",
+    "lib.arcade.sgWin": "Escac i mat: guanyes.",
+    "lib.arcade.sgLose": "T'han fet escac i mat.",
+    "lib.arcade.sgAskPromote": "Vols promocionar aquesta peça?",
+    "lib.arcade.note.janggi": "El janggi és l'escacs coreà. Tu jugues amb les peces blaves de baix i mous primer. A diferència del xiangqi, no hi ha riu i els dos palaus tenen línies diagonals. El General i els Guàrdies es mouen un pas per les línies del palau (diagonals incloses); el Carro també llisca i captura per les diagonals del palau; el Canó ha de saltar exactament una peça (que no sigui un altre Canó) per moure's o capturar, i no pot capturar un Canó; el Cavall fa un pas recte i un en diagonal, i l'Elefant un recte i dos en diagonal, tots dos bloquejats si hi ha una peça pel mig; els Soldats avancen o es mouen de costat, i en diagonal cap endavant dins del palau enemic. Els dos Generals mai no es poden mirar de cara. Fes escac i mat al General enemic per guanyar. L'ordinador no passa mai.",
+    "lib.arcade.jgCheck": "Estàs en escac!",
+    "lib.arcade.jgWin": "Escac i mat: guanyes.",
+    "lib.arcade.jgLose": "T'han fet escac i mat.",
+    "lib.arcade.note.pinball": "Prem Espai, Amunt o toca la taula per llançar la bola. Mantén Esquerra (o toca la meitat esquerra de la taula) per aixecar la pala esquerra, i Dreta (o la meitat dreta) per la pala dreta; també pots tocar al ritme en lloc de mantenir. Els para-xocs rodons donen 100 punts cadascun. Tens 3 boles; arriba a la puntuació objectiu abans que s'acabin per superar el nivell.",
+    "lib.arcade.pinBalls": "Boles: {n} · Objectiu: {t}",
+    "lib.arcade.note.cribbage": "Cribbage per a dos jugadors, una cursa fins a 61 punts. A cada repartiment reps 6 cartes i en poses 2 de cara avall al \"crib\" (que pertany al qui reparteix). Es gira una carta de sortida. Després es juguen cartes de cara amunt per torns, sense que el total acumulat passi mai de 31: arribar a 15 o 31 val 2, igualar l'última carta val 2/6/12, una escala de 3 o més (en qualsevol ordre) val tantes com cartes, i quan ningú no pot jugar, l'últim jugador fa 1 (\"Go\"). Després es compta cada mà de 4 amb la carta de sortida: cada combinació que suma 15 val 2, cada parella 2, una escala de 3+ tantes com cartes, quatre cartes del mateix coll 4 (5 amb la carta de sortida), i una Sota del coll de la carta de sortida 1. Compta primer qui no reparteix, i després qui reparteix compta la seva mà i el crib.",
+    "lib.arcade.cbFifteen": "Quinze",
+    "lib.arcade.cbPair": "Parella",
+    "lib.arcade.cbRun": "Escala",
+    "lib.arcade.cbFlush": "Color",
+    "lib.arcade.cbNobs": "Sota del coll de la carta de sortida",
+    "lib.arcade.cbHeels": "Sota com a carta de sortida",
+    "lib.arcade.cbYou": "Tu",
+    "lib.arcade.cbFoe": "Ordinador",
+    "lib.arcade.cbLast": "Última carta",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Reparteixes tu",
+    "lib.arcade.cbFoeDeal": "Reparteix l'ordinador",
+    "lib.arcade.cbPick": "Tria 2 cartes per al crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "La teva mà",
+    "lib.arcade.cbFoeHand": "Mà de l'ordinador",
+    "lib.arcade.cbStarter": "Carta de sortida",
+    "lib.arcade.cbZero": "0 punts",
+    "lib.arcade.cbPlayed": "Jugades",
+    "lib.arcade.cbToCrib": "Posa al crib",
+    "lib.arcade.cbNext": "Continua",
+    "lib.arcade.cbHand": "Mà"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tretze)",
       "desc": "El joc de cartes vietnamita per a quatre: juga cartes soltes, parelles, escales i pòquers per quedar-te primer sense cartes; 10 nivells."
+    },
+    "tower-defense": {
+      "name": "Defensa de torres",
+      "desc": "Construeix i millora torres al llarg del camí per aturar totes les onades d'enemics; 10 nivells en tres mapes diferents."
+    },
+    "color-by-number": {
+      "name": "Pinta per números",
+      "desc": "Pinta cada casella amb el color que correspon al seu número per revelar el dibuix; 10 dibuixos amb més colors cada vegada."
+    },
+    "yukon": {
+      "name": "Solitari Yukon",
+      "desc": "Klondike sense munt de reserva: mou qualsevol carta descoberta amb tot el que té a sobre; 10 nivells, amb menys cartes descobertes a mesura que avances."
+    },
+    "chinese-checkers": {
+      "name": "Dames xineses",
+      "desc": "Joc d'estrella de passos i salts contra l'ordinador: porta les 10 peces al cantó oposat abans que ell; 10 nivells."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (pòquer xinès)",
+      "desc": "Ordena 13 cartes en tres mans de 5, 5 i 3 cartes i guanya l'ordinador; 5 rondes per nivell, 10 nivells."
+    },
+    "phom": {
+      "name": "Phỏm (rummy vietnamita)",
+      "desc": "Rummy vietnamita de dos jugadors contra l'ordinador: pesca o agafa un descart, forma jocs i plega; guanya qui té menys punts sobrants; 10 nivells."
+    },
+    "shogi": {
+      "name": "Shogi (escacs japonès)",
+      "desc": "Juga al shogi contra l'ordinador: deixa peces capturades, promociona i fes escac i mat al rei; 10 nivells amb desfer."
+    },
+    "janggi": {
+      "name": "Janggi (escacs coreà)",
+      "desc": "Juga als escacs coreans contra l'ordinador: diagonals del palau, salts del canó sobre una sola peça, elefants de tres passos; 10 nivells amb desfer."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Acciona les pales esquerra i dreta per mantenir la bola en joc, toca els para-xocs i arriba a la puntuació objectiu abans que s'acabin les 3 boles; 10 nivells."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage de dos jugadors contra l'ordinador: crib, joc fins a 31, recompte de mans, cursa fins a 61 punts; 10 nivells."
     }
   },
   "s": {

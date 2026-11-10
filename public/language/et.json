@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kaarte alles: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} jätab käigu vahele.",
     "lib.arcade.tlBad": "Valitud kaardid ei moodusta kehtivat kombinatsiooni.",
-    "lib.arcade.tlLow": "See kombinatsioon pole laual oleva löömiseks piisavalt kõrge."
+    "lib.arcade.tlLow": "See kombinatsioon pole laual oleva löömiseks piisavalt kõrge.",
+    "lib.arcade.note.td": "Puuduta tühja ruutu (mitte rada), et ehitada laskuri torn, mis maksab kulda; puuduta torni uuesti, et seda uuendada (kuni tasemeni 5). Tornid tulistavad automaatselt vaenlast, kes on ulatuses kõige kaugemale jõudnud. Võida vaenlasi, et teenida rohkem kulda; kui 15 vaenlast jõuab lõppu, kaotad. Ela üle kõik lained, et tase läbida.",
+    "lib.arcade.tdInfo": "Kuld: {g} · Laine {w}/{t}",
+    "lib.arcade.tdCost": "Torn: {n}",
+    "lib.arcade.note.colorNum": "Igal ruudul on number, mis vastab ühele paleti värvile. Vali värv ja puuduta selle numbriga ruute, et neid värvida; vale värviga ei värvu midagi. Värvi kõik ruudud õigesti, et pilt valmis saada. Kõrgematel tasemetel on rohkem värve.",
+    "lib.arcade.cnWrong": "Vale värv — vaata ruudu numbrit.",
+    "lib.arcade.note.yukon": "Nagu Klondike, aga ilma kaardipakita: iga näoga ülespoole kaardi saab tõsta koos kõigi selle peal olevate kaartidega, isegi kui need pole järjestuses; ainult esimene kaart peab sobima sihtveeruga (kahanevalt, vaheldumisi punane ja must; kuningas läheb tühja veergu). Ehita kõik 52 kaarti neljale alusele ülemisest äsast kuningani. Madalatel tasemetel algab rohkem kaarte juba näoga üles.",
+    "lib.arcade.yukonFree": "Näoga alla kaardid: {n}",
+    "lib.arcade.note.chinesechk": "Sa mängid paremas nurgas olevate siniste nuppudega; vii kõik 10 vastasnurka vasakule enne arvutit. Igal käigul liigutad ühte nuppu: samm tühja naaberauku või hüpe üle suvalise nupu tühja auku selle taga ning hüpata võid nii mitu korda järjest kui tahad. Puuduta oma nuppu ja seejärel rohelist auku, et liikuda.",
+    "lib.arcade.ccTurn": "Sinu käik · Käik {n}",
+    "lib.arcade.ccDraw": "Käigud said otsa — viik.",
+    "lib.arcade.note.maubinh": "Sina ja arvuti saate kumbki 13 kaarti ning paigutate need 3 kätte: 5 kaardi tagakäsi, 5 kaardi keskkäsi ja 3 kaardi esikäsi. Tagakäsi peab olema vähemalt sama tugev kui keskkäsi ja keskkäsi vähemalt sama tugev kui esikäsi; muidu on su paigutus kehtetu ja kaotad kogu vooru. Puuduta kaarti ja seejärel rida, kuhu see läheb (paigutatud kaardi puudutamine toob selle tagasi). Iga võidetud käsi annab 1 punkti; kõigi 3 võit annab 6. Mängi 5 vooru — positiivne summa läbib taseme. Esikäsi võib olla ainult kõrge kaart, paar või kolmik.",
+    "lib.arcade.mbHigh": "Kõrge kaart",
+    "lib.arcade.mbPair": "Paar",
+    "lib.arcade.mbTwoPair": "Kaks paari",
+    "lib.arcade.mbTrips": "Kolmik",
+    "lib.arcade.mbStraight": "Rida",
+    "lib.arcade.mbFlush": "Mast",
+    "lib.arcade.mbFull": "Täismaja",
+    "lib.arcade.mbQuads": "Nelik",
+    "lib.arcade.mbSflush": "Mastirida",
+    "lib.arcade.mbBack": "Tagakäsi",
+    "lib.arcade.mbMid": "Keskkäsi",
+    "lib.arcade.mbFront": "Esikäsi",
+    "lib.arcade.mbFoe": "Arvuti",
+    "lib.arcade.mbYou": "Sina",
+    "lib.arcade.mbFoul": "Kehtetu paigutus!",
+    "lib.arcade.mbFoeFoul": "Arvuti paigutus on kehtetu!",
+    "lib.arcade.mbConfirm": "Näita kaarte",
+    "lib.arcade.mbReset": "Tühjenda",
+    "lib.arcade.mbHand": "Sinu käsi",
+    "lib.arcade.mbRound": "Voor {a}/{b}",
+    "lib.arcade.mbTotal": "Kokku: {n}",
+    "lib.arcade.mbFinish": "Lõpeta",
+    "lib.arcade.mbNext": "Järgmine voor",
+    "lib.arcade.mbDraw": "Punktid võrdsed — mängi uuesti.",
+    "lib.arcade.mbAutoMsg": "Siin on soovituslik paigutus. Saad seda enne kaartide näitamist muuta.",
+    "lib.arcade.note.phom": "Kaks mängijat; kumbki saab 9 kaarti (esimesena käija saab 10). Kombinatsioon on 3 või enam sama väärtusega kaarti või 3 või enam järjestikust sama masti kaarti (äss on ainult madal). Oma käigul tõmba kaart pakist või võta vastase äsja ära visatud kaart, kui see moodustab sinu käega kombinatsiooni (võetud kaart tuleb alles hoida), seejärel viska üks kaart ära. Kui kumbki mängija on 4 kaarti ära visanud, voor lõpeb ja võidab see, kelle kombinatsioonidesse kuulumata kaartide summa on väiksem (äss = 1 … kuningas = 13). Kui pärast äraviskamist on kõik sinu kaardid kombinatsioonides, lähed välja („U”) ja võidad kohe. Rohelise äärisega kaardid kuuluvad sinu parimatesse kombinatsioonidesse.",
+    "lib.arcade.pmDraw": "Tõmba",
+    "lib.arcade.pmEat": "Võta äraviskatud kaart",
+    "lib.arcade.pmThrow": "Viska ära",
+    "lib.arcade.pmFoeAte": "Arvuti võttis sinu kaardi.",
+    "lib.arcade.pmFoeU": "Arvuti läks välja!",
+    "lib.arcade.pmTurn": "Käik {a}/{b}",
+    "lib.arcade.pmLeft": "Kombinatsioonita: {n}",
+    "lib.arcade.pmDeck": "Pakk: {n}",
+    "lib.arcade.pmFoeHand": "Arvuti käsi",
+    "lib.arcade.pmFoeDisc": "Arvuti äraviskatud",
+    "lib.arcade.pmFoeEaten": "Arvuti võttis",
+    "lib.arcade.pmMyDisc": "Sinu äraviskatud",
+    "lib.arcade.pmAte": "Võtsid selle kaardi — hoia seda kombinatsioonis.",
+    "lib.arcade.pmKeep": "Võetud kaart tuleb alles hoida — viska ära mõni teine.",
+    "lib.arcade.pmU": "Väljas! Võidad kohe.",
+    "lib.arcade.pmYou": "Sina",
+    "lib.arcade.pmFoe": "Arvuti",
+    "lib.arcade.pmDraw2": "Punktid võrdsed.",
+    "lib.arcade.note.shogi": "Shogi on Jaapani male. Sina mängid alumisel poolel ja käid esimesena; arvuti nupud on vastassuunas. Vangistatud nupud lähevad sinu kätte ja neid saab käigu asemel mis tahes tühjale ruudule panna (mitte kunagi ettur veergu, kus sul on juba edutamata ettur, ega nuppu reale, kus see enam liikuda ei saaks). Nupp, mis liigub vastase kolmele viimasele reale, sealt välja või nende sees, võib edeneda (välja arvatud kuningas ja kuld); edutamine on kohustuslik, kui nupul poleks muidu käike. Mati vaenlase kuningas, et võita. Kandzi: 歩 ettur, 香 oda, 桂 ratsu, 銀 hõbe, 金 kuld, 角 ohvitser, 飛 vanker, 玉 kuningas; と, 馬, 竜 ja teised punased nupud on edutatud.",
+    "lib.arcade.sgPromote": "Edenda",
+    "lib.arcade.sgKeep": "Ära edenda",
+    "lib.arcade.sgCheck": "Sul on tuli!",
+    "lib.arcade.sgWin": "Matt — sa võitsid.",
+    "lib.arcade.sgLose": "Said mati.",
+    "lib.arcade.sgAskPromote": "Kas edendada see nupp?",
+    "lib.arcade.note.janggi": "Janggi on Korea male. Sina mängid all olevate siniste nuppudega ja käid esimesena. Erinevalt xiangqist pole jõge ning mõlemas palees on diagonaaljooned. Kindral ja valvurid liiguvad ühe sammu mööda palee jooni (diagonaalid kaasa arvatud); vanker libiseb ja lööb ka mööda palee diagonaale; kahur peab liikumiseks või löömiseks hüppama üle täpselt ühe nupu (mitte teise kahuri) ega saa kahurit lüüa; hobune astub ühe punkti otse ja siis ühe diagonaalis, elevant ühe otse ja kaks diagonaalis, mõlemat takistab teel olev nupp; sõdurid liiguvad edasi või külgsuunas ning vaenlase paleed sees ka diagonaalis edasi. Kaks kindralit ei tohi kunagi vastamisi olla. Mati vaenlase kindral, et võita. Arvuti ei jäta kunagi käiku vahele.",
+    "lib.arcade.jgCheck": "Sul on tuli!",
+    "lib.arcade.jgWin": "Matt — sa võitsid.",
+    "lib.arcade.jgLose": "Said mati.",
+    "lib.arcade.note.pinball": "Palli väljalaskmiseks vajuta tühikut, ülesnoolt või puuduta lauda. Hoia all vasakut (või puuduta laua vasakut poolt), et tõsta vasak nüke, ja paremat (või paremat poolt) parema nüke jaoks — puuduta hoidmise asemel rütmis. Ümmargused põrkurid annavad 100 punkti tükk. Sul on 3 palli; saavuta sihtskoor enne, kui need otsa saavad, et tase läbida.",
+    "lib.arcade.pinBalls": "Pallid: {n} · Siht: {t}",
+    "lib.arcade.note.cribbage": "Kahe mängija cribbage, võidujooks 61 punktini. Igal jagamisel saad 6 kaarti ja paned 2 näoga alla cribi (see kuulub jagajale). Keeratakse üles algkaart. Seejärel mängite kordamööda kaarte näoga üles ning jooksev summa ei tohi kunagi ületada 31: 15 või 31 saavutamine annab 2, eelmise kaardiga sobimine 2/6/12, 3 või enama kaardi rida (mis tahes järjekorras) annab oma pikkuse jagu ja kui keegi ei saa mängida, saab viimane mängija 1 („Go”). Seejärel loetakse iga 4 kaardi käsi koos algkaardiga: iga kombinatsioon summaga 15 annab 2, iga paar 2, 3+ rida oma pikkuse, neli sama masti kaarti 4 (algkaardiga 5) ja algkaardi mastis poiss 1. Esimesena loeb mitte-jagaja, seejärel jagaja oma käe ja cribi.",
+    "lib.arcade.cbFifteen": "Viisteist",
+    "lib.arcade.cbPair": "Paar",
+    "lib.arcade.cbRun": "Rida",
+    "lib.arcade.cbFlush": "Mast",
+    "lib.arcade.cbNobs": "Algkaardi mastis poiss",
+    "lib.arcade.cbHeels": "Poiss algkaardina",
+    "lib.arcade.cbYou": "Sina",
+    "lib.arcade.cbFoe": "Arvuti",
+    "lib.arcade.cbLast": "Viimane kaart",
+    "lib.arcade.cbCount": "Kokku: {n}",
+    "lib.arcade.cbYouDeal": "Sina jagad",
+    "lib.arcade.cbFoeDeal": "Arvuti jagab",
+    "lib.arcade.cbPick": "Vali cribi jaoks 2 kaarti",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Sinu käsi",
+    "lib.arcade.cbFoeHand": "Arvuti käsi",
+    "lib.arcade.cbStarter": "Algkaart",
+    "lib.arcade.cbZero": "0 punkti",
+    "lib.arcade.cbPlayed": "Mängitud",
+    "lib.arcade.cbToCrib": "Pane cribi",
+    "lib.arcade.cbNext": "Jätka",
+    "lib.arcade.cbHand": "Käsi"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Kolmteist)",
       "desc": "Vietnami nelja mängija kaardimäng: käi üksikuid kaarte, paare, ridu ja nelikuid, et esimesena käsi tühjaks saada; 10 taset."
+    },
+    "tower-defense": {
+      "name": "Tornikaitse",
+      "desc": "Ehita ja uuenda torne mööda rada, et peatada kõik vaenlaselained; 10 taset kolmel erineval kaardil."
+    },
+    "color-by-number": {
+      "name": "Värvimine numbrite järgi",
+      "desc": "Värvi iga ruut oma numbrile vastava värviga, et pilt nähtavale tuua; 10 pilti, igaühes rohkem värve."
+    },
+    "yukon": {
+      "name": "Yukoni pasjanss",
+      "desc": "Klondike ilma kaardipakita: liiguta mis tahes näoga ülespoole kaarti koos kõigega selle peal; 10 taset, edenedes üha vähem kaarte näoga üles."
+    },
+    "chinese-checkers": {
+      "name": "Hiina kabe",
+      "desc": "Täheikujuline sammu- ja hüppemäng arvuti vastu: vii kõik 10 nuppu esimesena vastasnurka; 10 taset."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Hiina poker)",
+      "desc": "Paiguta 13 kaarti kolme kätte (5, 5 ja 3 kaarti) ja võida arvuti; 5 vooru taseme kohta, 10 taset."
+    },
+    "phom": {
+      "name": "Phom (Vietnami remmi)",
+      "desc": "Kahe mängija Vietnami remmi arvuti vastu: tõmba või võta äraviskatud kaart, moodusta kombinatsioone ja mine välja; võidab väiksem jääkpunktide summa; 10 taset."
+    },
+    "shogi": {
+      "name": "Shogi (Jaapani male)",
+      "desc": "Mängi shogi arvuti vastu: pane vangistatud nuppe, edenda ja maki kuningas; 10 taset käigu tühistamisega."
+    },
+    "janggi": {
+      "name": "Janggi (Korea male)",
+      "desc": "Mängi Korea male arvuti vastu: palee diagonaalid, kahuri hüpe üle ühe nupu, kolmesammulised elevandid; 10 taset käigu tühistamisega."
+    },
+    "pinball": {
+      "name": "Flipper",
+      "desc": "Löö vasakule ja paremale, et pall mängus hoida, tabab põrkureid ja saavuta sihtskoor enne, kui 3 palli otsa saavad; 10 taset."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Kahe mängija cribbage arvuti vastu: crib, pegging 31-ni, käte lugemine, võidujooks 61 punktini; 10 taset."
     }
   },
   "s": {

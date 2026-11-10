@@ -469,7 +469,272 @@
     "lib.arcade.jump": "Saltar",
     "lib.arcade.aimTarget": "Obxectivo",
     "lib.game.soundOn": "Activar o son",
-    "lib.game.soundOff": "Desactivar o son"
+    "lib.game.soundOff": "Desactivar o son",
+    "lib.arcade.note.kalah": "Ti xogas a fila de abaixo e o ordenador a de arriba; o burato grande da dereita é o teu almacén. Preme un burato para coller todas as súas sementes e repartilas en sentido antihorario, unha por burato (saltando o almacén do rival). Se a túa última semente cae no teu almacén, tes outro turno; se cae nun burato baleiro do teu lado fronte a un burato con sementes, captura esas sementes. Cando un lado queda baleiro, as sementes do outro lado van ao almacén do seu dono; gaña quen teña o almacén máis grande.",
+    "lib.arcade.note.snakes": "Tira o dado e avanza tantas casas, de 1 a 100. Se caes ao pé dunha escada, sobes; se caes na cabeza dunha serpe, esvaras cara abaixo. A partir do nivel 4 tes que sacar o número exacto para caer no 100. Os niveis máis altos teñen máis serpes, menos escadas e máis rivais. Gaña quen chegue primeiro ao 100.",
+    "lib.arcade.square": "Casa {n}",
+    "lib.arcade.ladderUp": "Escada arriba!",
+    "lib.arcade.snakeDown": "Tragouno unha serpe!",
+    "lib.arcade.needExact": "Necesitas o número exacto para caer no 100.",
+    "lib.arcade.note.nmm": "Cada lado ten 9 pezas. Fase 1: por quendas, colocade pezas en puntos baleiros. Fase 2: desliza unha peza a un punto baleiro adxacente. Cando só che quedan 3 pezas, podes “voar” a calquera punto baleiro. Fai tres en liña (un “muíño”) para retirar unha peza do rival (primeiro as que non estean nun muíño). Perdes cando che quedan 2 pezas ou non podes moverte. Xogas coas brancas e comezas ti.",
+    "lib.arcade.inHand": "Por colocar: {a} · {b}",
+    "lib.arcade.removePiece": "Escolle unha peza do rival para retirala.",
+    "lib.arcade.enemyWaters": "Augas inimigas (preme para disparar)",
+    "lib.arcade.yourFleet": "A túa flota",
+    "lib.arcade.note.battleship": "Cada lado ten 5 barcos (lonxitudes 5, 4, 3, 3, 2) colocados ao azar nunha cuadrícula de 10x10. Por quendas, dispara a unha casa: un acerto vólvese vermello, unha falla azul claro, e se acertas todas as casas dun barco, afúndese. Gaña quen afunda primeiro toda a flota inimiga. Nos niveis máis altos, o ordenador deduce con máis astucia onde están os teus barcos.",
+    "lib.arcade.shipsLeft": "Barcos restantes: ti {a} · inimigo {b}",
+    "lib.arcade.theySunk": "O inimigo afundiu un dos teus barcos!",
+    "lib.arcade.theyHit": "O inimigo acertou nun dos teus barcos.",
+    "lib.arcade.theyMiss": "O inimigo fallou.",
+    "lib.arcade.youSunk": "Afundiches un barco inimigo!",
+    "lib.arcade.youHit": "Acertaches!",
+    "lib.arcade.youMiss": "Fallaches.",
+    "lib.arcade.shake": "Axitar",
+    "lib.arcade.clearBets": "Borrar apostas",
+    "lib.arcade.note.bau-cua": "Só moedas virtuais, sen diñeiro real. Escolle o valor dunha ficha, preme os animais para apostar e logo preme Axitar. Por cada dado que coincida cun animal no que apostaches, recuperas a túa aposta máis outro tanto por cada coincidencia. Alcanza o obxectivo de moedas dentro das roldas permitidas para superar o nivel.",
+    "lib.arcade.note.baccarat": "Só moedas virtuais, sen diñeiro real. Aposta por Xogador, Banca ou Empate e logo preme Repartir. O valor dunha man é o último díxito da súa suma (A = 1, 2–9 o seu valor, 10/J/Q/K = 0); gaña a man máis preto do 9, e as terceiras cartas sácanse segundo as regras estándar. Xogador paga 1:1, Banca 0,95:1, Empate 8:1 (as apostas a Xogador/Banca devólvense en caso de empate). Alcanza o obxectivo de moedas dentro das roldas permitidas para superar o nivel.",
+    "lib.arcade.banker": "Banca",
+    "lib.arcade.player": "Xogador",
+    "lib.arcade.tie": "Empate",
+    "lib.arcade.openCards": "Mostrar",
+    "lib.arcade.note.bai-cao": "Só moedas virtuais, sen diñeiro real. Cada lado recibe 3 cartas. Unha man puntúa o último díxito da súa suma (A = 1, 2–9 o seu valor, 10/J/Q/K = 10, é dicir, 0 puntos). Orde: trío (“Sáp”) é o máis alto, despois tres figuras (“Ba tiên”), despois de 9 puntos a 0. Fai unha aposta, preme Repartir e logo Mostrar para comparar co repartidor. A partir do nivel 6 o repartidor gaña os empates. Alcanza o obxectivo de moedas dentro das roldas permitidas para superar o nivel.",
+    "lib.arcade.caoSap": "Trío",
+    "lib.arcade.caoBaTien": "Tres figuras",
+    "lib.arcade.caoPts": "{n} pts",
+    "lib.arcade.note.bingo": "O ordenador canta números do 1 ao 75. Cando un número cantado está no teu cartón, preméo para marcalo (o centro é gratis). Completa unha fila, columna ou diagonal e preme BINGO! — tes que superar os ordenadores rivais. Un BINGO! falso bloquea o botón uns segundos. Os niveis máis altos cantan máis rápido e teñen máis rivais.",
+    "lib.arcade.opponentsN": "Rivais: {n}",
+    "lib.arcade.falseBingo": "Aínda non hai liña completa! Botón bloqueado 3 segundos.",
+    "lib.arcade.bingoGo": "Cantando números!",
+    "lib.arcade.note.yahtzee": "Cada turno tiras 5 dados ata 3 veces: preme un dado para gardalo e logo preme Tirar para volver tirar os demais. Despois escolle unha casilla da táboa para puntuar (cada casilla úsase unha vez; unha casilla que non encaixa puntúa 0). 13 turnos. As casillas de Uns a Seises engaden un bonus de 35 se suman 63 ou máis. Alcanza a puntuación obxectivo do nivel para gañar.",
+    "lib.arcade.turnN": "Turno {n}/13",
+    "lib.arcade.pickCat": "Escolle unha casilla para puntuar",
+    "lib.arcade.rollsLeft": "Tirar (quedan {n})",
+    "lib.arcade.upperBonus": "Bonus de Uns a Seises",
+    "lib.arcade.scored": "Puntuaches {n}",
+    "lib.arcade.note.crazy-eights": "Xoga unha carta que coincida co pau ou co valor da carta superior do monte de descarte. Os oitos son comodíns: xoga un cando queiras e escolle un pau novo. Se non tes ningunha carta xogable, rouba do monte (ata 3 cartas); se aínda así non podes xogar, pasas. Gaña quen se quede primeiro sen cartas. Os niveis máis altos teñen máis rivais e o ordenador xoga con máis astucia.",
+    "lib.arcade.opponent": "Rival",
+    "lib.arcade.pileLeft": "Monte de roubo: {n}",
+    "lib.arcade.pickSuit": "Escolle un pau novo",
+    "lib.arcade.aiSuit": "O ordenador escolleu {s}",
+    "lib.arcade.aiPass": "O ordenador pasa.",
+    "lib.arcade.mustPlay": "Tes unha carta xogable: xógaa.",
+    "lib.arcade.youPass": "Roubaches 3 cartas e pasas.",
+    "lib.arcade.bcGourd": "Cabaza",
+    "lib.arcade.bcCrab": "Cangrexo",
+    "lib.arcade.bcShrimp": "Camarón",
+    "lib.arcade.bcFish": "Peixe",
+    "lib.arcade.bcRooster": "Galo",
+    "lib.arcade.bcDeer": "Cervo",
+    "lib.arcade.yOnes": "Uns",
+    "lib.arcade.yTwos": "Dous",
+    "lib.arcade.yThrees": "Tres",
+    "lib.arcade.yFours": "Catros",
+    "lib.arcade.yFives": "Cincos",
+    "lib.arcade.ySixes": "Seises",
+    "lib.arcade.yThree": "Trío",
+    "lib.arcade.yFour": "Póker",
+    "lib.arcade.yFull": "Full (25)",
+    "lib.arcade.ySmall": "Escaleira pequena (30)",
+    "lib.arcade.yLarge": "Escaleira grande (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Azar",
+    "lib.arcade.note.race": "Preme ← → (ou toca o carril que queiras) para cambiar de carril e esquivar os coches que van diante. Tes 3 vidas; percorre toda a distancia para superar o nivel. Os niveis máis altos engaden carrís e tráfico máis rápido.",
+    "lib.arcade.note.jump": "O personaxe bota por si mesmo. Preme ← → ou arrastra o dedo para aterrar na seguinte plataforma. As plataformas azuis móvense, as marróns rompen cando aterras nelas. Se caes fóra da pantalla, perdes; sube o bastante alto para superar o nivel.",
+    "lib.arcade.note.miner": "O gancho bambéase dun lado a outro; preme Espazo, ↓ ou toca o campo para soltalo. O ouro grande e as pedras pesan e tiran devagar; os diamantes valen moito. Alcanza o diñeiro obxectivo antes de que se acaben os 60 segundos.",
+    "lib.arcade.note.slicer": "Pasa o dedo ou o rato sobre a froita para cortala. Evita as bombas negras. Deixar escapar unha froita ou cortar unha bomba custa unha vida (tes 3). Corta froita dabondo para superar o nivel.",
+    "lib.arcade.note.hoops": "Preme na pista, arrastra cara abaixo (coma un tirachinas) e solta para lanzar a bola á canastra. Canto máis arrastres, máis forte é o lanzamento. Mete cestas dabondo cos tiros que tes; desde o nivel 4 a canastra móvese.",
+    "lib.arcade.note.bubbles": "Move o rato ou o dedo para apuntar e logo fai clic/toca ou preme Espazo/Disparar para lanzar. Xunta 3 ou máis burbullas da mesma cor para estoupalas; as burbullas que perden o apoio caen. As filas baixan aos poucos, así que mantenas lonxe da liña de abaixo. Elimina todas as burbullas para gañar.",
+    "lib.arcade.note.chase": "Usa as frechas do teclado (ou desliza / os botóns) para xirar e comer todos os puntos do labirinto evitando os pantasmas que te perseguen. Tes 3 vidas; os niveis máis altos engaden máis pantasmas, máis rápidos e que perseguen con máis astucia.",
+    "lib.arcade.height": "Altura: {n}/{t} m",
+    "lib.arcade.money": "Diñeiro: {n}/{t}",
+    "lib.arcade.sliced": "Cortadas: {n}/{t}",
+    "lib.arcade.hoopScore": "Cestas: {n}/{t}",
+    "lib.arcade.shotsLeft": "Quedan {n} tiros",
+    "lib.arcade.bubbleLeft": "Quedan {n} burbullas",
+    "lib.arcade.shotsN": "Tiros: {n}",
+    "lib.arcade.dotsLeft": "Quedan {n} puntos",
+    "lib.arcade.note.kakuro": "Enche as celas brancas con díxitos do 1 ao 9 de modo que cada tramo sume a pista da cela negra (o número de arriba á dereita é para o tramo cara á dereita, o de abaixo á esquerda para o tramo cara abaixo), sen repetir ningún díxito dentro dun tramo. Usa as frechas do teclado para moverte.",
+    "lib.arcade.note.kenken": "Enche a cuadrícula cos números do 1 ao N de modo que ningún número se repita en ningunha fila nin columna. Cada gaiola de bordo groso mostra un obxectivo e unha operación (+, −, ×, ÷): os números da gaiola deben dar ese resultado. Usa as frechas do teclado para moverte.",
+    "lib.arcade.note.wordGuess": "Adiviña a palabra secreta en inglés. Despois de cada intento, o verde significa a letra correcta no lugar correcto, o amarelo significa que a letra está na palabra pero noutro sitio, e o gris significa que non está na palabra. Escribe co teclado ou usa as teclas da pantalla e preme Intro para enviar. Os niveis máis altos teñen palabras máis longas e menos intentos.",
+    "lib.arcade.note.hangman": "Adiviña a palabra secreta en inglés escollendo letras unha a unha. Cada letra errada engade unha parte ao boneco aforcado; cando te quedas sen erros permitidos, perdes. Os niveis máis altos teñen palabras máis longas e menos erros permitidos.",
+    "lib.arcade.note.scramble": "Reordena as letras desordenadas nunha palabra inglesa real e escríbea na caixa de resposta. Cada nivel ten 5 palabras; resolve polo menos 4 antes de que se acabe o tempo de cada palabra para superar o nivel. A pista revela a primeira letra.",
+    "lib.arcade.cellsLeft": "Quedan {n} celas baleiras",
+    "lib.arcade.wrongN": "{n} celas non son correctas.",
+    "lib.arcade.noError": "Non se atoparon erros ata agora.",
+    "lib.arcade.tooShort": "Non hai letras dabondo",
+    "lib.arcade.answerIs": "Resposta: {w}",
+    "lib.arcade.livesLeft": "Quedan {n} erros",
+    "lib.arcade.yourAnswer": "A túa resposta",
+    "lib.arcade.skip": "Saltar",
+    "lib.arcade.notThis": "Non é correcto, téntao de novo.",
+    "lib.arcade.startsWith": "Primeira letra: {c}",
+    "lib.arcade.note.domino": "Cada xogador recibe 7 fichas; comeza quen teña o dobre máis alto. Xoga unha ficha cuxo número coincida cun extremo da cadea. Se non podes xogar, rouba do monte ata que poidas; se está baleiro, pasa. Gaña quen se quede primeiro sen fichas; se ambos quedan bloqueados, gaña quen teña menos puntos.",
+    "lib.arcade.note.hearts": "Catro xogadores, 13 cartas cada un. Sae o 2 de trevos. Tes que seguir o pau xogado se podes. Cada corazón vale 1 punto e a Dama de Picas 13; quen gaña unha baza leva os seus puntos. Canto menos, mellor, e se alguén leva os 26 puntos, todos os demais reciben 26. Non podes saír con corazóns ata que se xogase algún. Despois da última man, gañas se a túa puntuación é a máis baixa (ou está empatada coa máis baixa).",
+    "lib.arcade.note.holdem": "Un contra un fronte ao ordenador só con fichas virtuais. Cada xogador recibe 2 cartas privadas e descóbrense 5 cartas comúns (flop, turn, river); forma a mellor man de 5 cartas. En cada rolda podes retirarte, igualar (ou pasar) ou subir. As cegas aumentan cada 4 mans. Gañas cando ao ordenador se lle acaban as fichas, ou tendo máis fichas despois do límite de mans. Non hai diñeiro real.",
+    "lib.arcade.dmDraw": "Roubar ficha",
+    "lib.arcade.dmPass": "Pasar",
+    "lib.arcade.dmEmpty": "Aínda non se xogou ningunha ficha",
+    "lib.arcade.dmYard": "Monte: {n} fichas",
+    "lib.arcade.dmLeft": "Extremo esquerdo",
+    "lib.arcade.dmRight": "Extremo dereito",
+    "lib.arcade.dmTie": "Empate! Ambos os lados están igualados.",
+    "lib.arcade.hrHand": "Man {n}/{t}",
+    "lib.arcade.hrTook": "{p} gaña a baza ({n} puntos).",
+    "lib.arcade.hrIllegal": "Non podes xogar esta carta (segue o pau, ou aínda non se pode saír con corazóns).",
+    "lib.arcade.blinds": "Cega grande: {n}",
+    "lib.arcade.pot": "Bote: {n}",
+    "lib.arcade.fold": "Retirarse",
+    "lib.arcade.check": "Pasar",
+    "lib.arcade.callN": "Igualar {n}",
+    "lib.arcade.raiseTo": "Subir a",
+    "lib.arcade.raiseN": "Subir a {n}",
+    "lib.arcade.thOppFold": "O ordenador retírase; gañas esta man.",
+    "lib.arcade.thYouFold": "Retiraches.",
+    "lib.arcade.thOppWin": "O ordenador gaña esta man",
+    "lib.arcade.thYouWin": "Gañas esta man",
+    "lib.arcade.thSplit": "Bote repartido",
+    "lib.arcade.thAiFold": "O ordenador retírase.",
+    "lib.arcade.thAiRaise": "O ordenador sobe a {n}.",
+    "lib.arcade.thAiCall": "O ordenador iguala / pasa.",
+    "lib.arcade.hand.high": "Carta alta",
+    "lib.arcade.hand.pair": "Parella",
+    "lib.arcade.hand.twoPair": "Dobre parella",
+    "lib.arcade.hand.trips": "Trío",
+    "lib.arcade.hand.straight": "Escaleira",
+    "lib.arcade.hand.flush": "Cor",
+    "lib.arcade.hand.full": "Full",
+    "lib.arcade.hand.quads": "Póker",
+    "lib.arcade.hand.sflush": "Escaleira de cor",
+    "lib.arcade.note.nback": "Unha casa ilumínase unha tras outra nunha cuadrícula de 3x3. Preme “Coincide!” (ou Espazo) cando a posición iluminada sexa a mesma que a de hai N pasos (N móstrase arriba). Necesitas polo menos un 80 % de decisións correctas para superar o nivel. Os niveis máis altos usan un N maior.",
+    "lib.arcade.nbMatch": "Coincide!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Acertos: {a} · Erros: {b}",
+    "lib.arcade.nbAcc": "Precisión: {n} %",
+    "lib.arcade.note.clicker": "Fai clic na galleta para cocer galletas e gástaas en axudantes que cocen automaticamente (os prezos suben con cada compra). Coce o número obxectivo de galletas en 2 minutos para superar o nivel.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Avoa pasteleira",
+    "lib.arcade.ckFarm": "Granxa",
+    "lib.arcade.ckMine": "Mina de azucre",
+    "lib.arcade.ckFactory": "Fábrica",
+    "lib.arcade.ckCookie": "Galleta",
+    "lib.arcade.ckEarned": "Cocidas: {n}/{t}",
+    "lib.arcade.chips2": "Galletas: {n}",
+    "lib.arcade.ckCps": "{n} galletas/segundo",
+    "lib.arcade.note.onet": "Escolle dúas pezas idénticas que se poidan unir cun camiño de como máximo 2 xiros que non atravese outras pezas para retiralas. Elimina todas as pezas antes de que se acabe o tempo para gañar. Cando non queden movementos, podes mesturar (usos limitados).",
+    "lib.arcade.shuffle": "Mesturar",
+    "lib.arcade.tilesLeft": "Quedan {n} pezas",
+    "lib.arcade.autoShuffle": "Non quedan movementos: mesturouse automaticamente.",
+    "lib.arcade.note.jigsaw": "A imaxe está cortada en pezas e mesturada. Toca unha peza e logo outra para intercambialas, e reconstrúe a imaxe mostrada como referencia. As pezas no sitio correcto teñen un bordo verde. Os niveis máis altos teñen máis pezas.",
+    "lib.arcade.jgRef": "Imaxe de referencia",
+    "lib.arcade.jgPlaced": "No seu sitio: {a}/{b}",
+    "lib.arcade.golfStrokes": "Golpes: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Xogas coas fichas brancas, movéndote desde arriba á dereita ata abaixo á dereita (a túa casa). Tira os dados, preme a ficha que queres mover e logo un destino resaltado. Se caes nun punto con exactamente unha ficha rival, golpéala á barra central, e ese xogador ten que reintroducila primeiro. Non podes caer nun punto con dúas ou máis fichas rivais. Cando as túas 15 fichas estean no teu tabuleiro de casa (os últimos 6 puntos), podes sacalas. Gaña quen saque primeiro as súas 15 fichas.",
+    "lib.arcade.bgRoll": "Tirar os dados",
+    "lib.arcade.bgOff": "Sacar fichas",
+    "lib.arcade.bgRollFirst": "Tirar os dados",
+    "lib.arcade.bgInfo": "Fóra: ti {a} · ordenador {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Non che queda ningún movemento legal.",
+    "lib.arcade.note.tienlen": "Catro xogadores, 13 cartas cada un. Orde das cartas de menor a maior: 3, 4, … K, A, 2; paus de menor a maior: picas, trevos, ouros, corazóns. Comeza quen teña o 3 de picas. Xoga unha carta, unha parella, un trío, un póker ou unha escaleira de 3 ou máis cartas consecutivas (sen 2s). O seguinte xogador debe xogar o mesmo tipo e máis alto, ou pasar; un póker pode vencer un 2 solto ou unha parella de 2s. Cando todos os demais pasan, o último que xogou pode saír con calquera cousa. Gaña quen se quede primeiro sen cartas. Selecciona cartas e preme Xogar.",
+    "lib.arcade.tlPlay": "Xogar",
+    "lib.arcade.tlPass": "Pasar",
+    "lib.arcade.tlClear": "Borrar selección",
+    "lib.arcade.tlPassed": "pasou",
+    "lib.arcade.tlFree": "Mesa baleira: podes saír con calquera cousa",
+    "lib.arcade.tlLeft": "Cartas restantes: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} pasa.",
+    "lib.arcade.tlBad": "As cartas seleccionadas non forman unha combinación válida.",
+    "lib.arcade.tlLow": "Esta combinación non é o bastante alta para vencer a mesa.",
+    "lib.arcade.note.td": "Toca unha casa baleira (non o camiño) para construír unha torre de disparo, que custa ouro; toca unha torre de novo para melloralas (ata o nivel 5). As torres disparan automaticamente ao inimigo que máis avanzou dentro do alcance. Derrota inimigos para gañar máis ouro; se 15 inimigos chegan ao final, perdes. Sobrevive a todas as oleadas para superar o nivel.",
+    "lib.arcade.tdInfo": "Ouro: {g} · Oleada {w}/{t}",
+    "lib.arcade.tdCost": "Torre: {n}",
+    "lib.arcade.note.colorNum": "Cada casa ten un número que corresponde a unha cor da paleta. Escolle unha cor e logo toca as casas con ese número para pintalas; tocar coa cor equivocada non pinta nada. Pinta todas as casas correctamente para rematar a imaxe. Os niveis máis altos teñen máis cores.",
+    "lib.arcade.cnWrong": "Cor equivocada: mira o número da casa.",
+    "lib.arcade.note.yukon": "Coma o Klondike pero sen monte de reserva: calquera carta boca arriba pode moverse xunto con todas as que ten enriba, aínda que non estean en orde; só a primeira carta ten que encaixar na columna de destino (descendente, alternando vermello e negro; un Rei vai a unha columna baleira). Constrúe as 52 cartas nas catro bases do As ao Rei. Os niveis baixos comezan con máis cartas xa boca arriba.",
+    "lib.arcade.yukonFree": "Cartas boca abaixo: {n}",
+    "lib.arcade.note.chinesechk": "Xogas coas pezas azuis do currunchiño dereito; move as 10 ao currunchiño esquerdo oposto antes ca o ordenador. En cada turno moves unha peza: avanza a un burato baleiro veciño ou salta sobre calquera peza ao burato baleiro xusto detrás, e segue saltando todas as veces que queiras. Toca unha das túas pezas e logo un burato verde para mover.",
+    "lib.arcade.ccTurn": "É o teu turno · Turno {n}",
+    "lib.arcade.ccDraw": "Sen turnos: empate.",
+    "lib.arcade.note.maubinh": "Ti e o ordenador recibides 13 cartas cada un e ordenádelas en 3 mans: unha man traseira de 5 cartas, unha media de 5 e unha dianteira de 3. A man traseira debe ser polo menos tan forte como a media, e a media polo menos tan forte como a dianteira; se non, a túa disposición é inválida e perdes toda a rolda. Toca unha carta e logo a fila onde vai (toca unha carta colocada para retirala). Cada man que gañes vale 1 punto; gañar as 3 vale 6. Xoga 5 roldas: un total positivo supera o nivel. A man dianteira só pode ser carta alta, parella ou trío.",
+    "lib.arcade.mbHigh": "Carta alta",
+    "lib.arcade.mbPair": "Parella",
+    "lib.arcade.mbTwoPair": "Dobre parella",
+    "lib.arcade.mbTrips": "Trío",
+    "lib.arcade.mbStraight": "Escaleira",
+    "lib.arcade.mbFlush": "Cor",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Póker",
+    "lib.arcade.mbSflush": "Escaleira de cor",
+    "lib.arcade.mbBack": "Man traseira",
+    "lib.arcade.mbMid": "Man media",
+    "lib.arcade.mbFront": "Man dianteira",
+    "lib.arcade.mbFoe": "Ordenador",
+    "lib.arcade.mbYou": "Ti",
+    "lib.arcade.mbFoul": "Inválido!",
+    "lib.arcade.mbFoeFoul": "O ordenador fixo unha disposición inválida!",
+    "lib.arcade.mbConfirm": "Mostrar cartas",
+    "lib.arcade.mbReset": "Borrar",
+    "lib.arcade.mbHand": "A túa man",
+    "lib.arcade.mbRound": "Rolda {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Finalizar",
+    "lib.arcade.mbNext": "Seguinte rolda",
+    "lib.arcade.mbDraw": "Empate a puntos: xoga de novo.",
+    "lib.arcade.mbAutoMsg": "Aquí tes unha disposición suxerida. Podes cambiala antes de mostrar as cartas.",
+    "lib.arcade.note.phom": "Dous xogadores; cada un recibe 9 cartas (quen comeza recibe 10). Unha combinación son 3 ou máis cartas do mesmo valor, ou 3 ou máis cartas consecutivas do mesmo pau (o As só vale como baixo). No teu turno rouba unha carta do monte, ou colle a carta que acaba de descartar o rival se forma unha combinación coa túa man (unha carta collida hai que gardala), e logo descarta unha carta. Cando cada xogador descartou 4 cartas, remata a rolda e gaña quen teña a suma máis baixa de cartas sen combinar (As = 1 … Rei = 13). Se tras descartar todas as túas cartas están en combinacións, sáes (“U”) e gañas ao instante. As cartas con bordo verde forman parte da túa mellor serie de combinacións.",
+    "lib.arcade.pmDraw": "Roubar",
+    "lib.arcade.pmEat": "Coller descarte",
+    "lib.arcade.pmThrow": "Descartar",
+    "lib.arcade.pmFoeAte": "O ordenador colleu a túa carta.",
+    "lib.arcade.pmFoeU": "O ordenador saíu!",
+    "lib.arcade.pmTurn": "Turno {a}/{b}",
+    "lib.arcade.pmLeft": "Sen combinar: {n}",
+    "lib.arcade.pmDeck": "Monte: {n}",
+    "lib.arcade.pmFoeHand": "Man do ordenador",
+    "lib.arcade.pmFoeDisc": "Descartes do ordenador",
+    "lib.arcade.pmFoeEaten": "O ordenador colleu",
+    "lib.arcade.pmMyDisc": "Os teus descartes",
+    "lib.arcade.pmAte": "Colliches esta carta: gárdaa nunha combinación.",
+    "lib.arcade.pmKeep": "Unha carta collida hai que gardala: descarta outra.",
+    "lib.arcade.pmU": "Saíches! Gañas ao instante.",
+    "lib.arcade.pmYou": "Ti",
+    "lib.arcade.pmFoe": "Ordenador",
+    "lib.arcade.pmDraw2": "Empate a puntos.",
+    "lib.arcade.note.shogi": "O shogi é o xadrez xaponés. Xogas co lado de abaixo e comezas ti; as pezas do ordenador apuntan na outra dirección. As pezas capturadas pasan á túa man e poden soltarse en calquera casa baleira en vez de facer un movemento (nunca un peón nunha columna onde xa teñas un peón sen promover, nin unha peza nunha fila onde non puidese volver moverse). Unha peza que entre, saia ou se mova dentro das últimas tres filas do rival pode promoverse (agás o Rei e o Ouro); a promoción é obrigatoria cando unha peza non tería movementos. Fai xaque mate ao Rei inimigo para gañar. Kanji: 歩 peón, 香 lanceiro, 桂 cabalo, 銀 prata, 金 ouro, 角 bispo, 飛 torre, 玉 rei; と, 馬, 竜 e outras pezas vermellas están promovidas.",
+    "lib.arcade.sgPromote": "Promover",
+    "lib.arcade.sgKeep": "Non promover",
+    "lib.arcade.sgCheck": "Estás en xaque!",
+    "lib.arcade.sgWin": "Xaque mate: gañas.",
+    "lib.arcade.sgLose": "Déronche xaque mate.",
+    "lib.arcade.sgAskPromote": "Promover esta peza?",
+    "lib.arcade.note.janggi": "O janggi é o xadrez coreano. Xogas coas pezas azuis de abaixo e comezas ti. A diferenza do xiangqi, non hai río e os dous pazos teñen liñas diagonais. O Xeneral e os Gardas móvense un paso polas liñas do pazo (diagonais incluídas); o Carro tamén desliza e captura polas diagonais do pazo; o Canón debe saltar exactamente unha peza (non outro Canón) para moverse ou capturar, e non pode capturar un Canón; o Cabalo dá un paso recto e logo un en diagonal, e o Elefante un recto e logo dous en diagonal, ambos bloqueados se hai unha peza polo medio; os Soldados avanzan ou van de lado, e en diagonal cara adiante dentro do pazo inimigo. Os dous Xenerais nunca poden quedar fronte a fronte. Fai xaque mate ao Xeneral inimigo para gañar. O ordenador nunca pasa.",
+    "lib.arcade.jgCheck": "Estás en xaque!",
+    "lib.arcade.jgWin": "Xaque mate: gañas.",
+    "lib.arcade.jgLose": "Déronche xaque mate.",
+    "lib.arcade.note.pinball": "Preme Espazo, Arriba ou toca a mesa para lanzar a bola. Mantén Esquerda (ou toca a metade esquerda da mesa) para levantar o flíper esquerdo e Dereita (ou a metade dereita) para o dereito; toca ao ritmo en vez de manter premido. Os parachoques redondos dan 100 puntos cada un. Tes 3 bólas; alcanza a puntuación obxectivo antes de que se acaben para superar o nivel.",
+    "lib.arcade.pinBalls": "Bólas: {n} · Obxectivo: {t}",
+    "lib.arcade.note.cribbage": "Cribbage para dous xogadores, unha carreira ata 61 puntos. En cada reparto recibes 6 cartas e deixas 2 boca abaixo no crib (que pertence ao repartidor). Descóbrese unha carta inicial. Despois, por quendas, xogade cartas boca arriba sen que a suma corrente pase de 31: chegar a 15 ou 31 vale 2, igualar a última carta vale 2/6/12, unha escaleira de 3 ou máis (en calquera orde) vale a súa lonxitude, e cando ninguén pode xogar, o último que xogou leva 1 (“Go”). Despois cóntase cada man de 4 coa carta inicial: cada combinación que suma 15 vale 2, cada parella 2, unha escaleira de 3+ a súa lonxitude, catro cartas do mesmo pau 4 (5 coa inicial), e un Xoque do mesmo pau que a inicial 1. O non repartidor conta primeiro, e logo o repartidor conta a súa man e o crib.",
+    "lib.arcade.cbFifteen": "Quince",
+    "lib.arcade.cbPair": "Parella",
+    "lib.arcade.cbRun": "Escaleira",
+    "lib.arcade.cbFlush": "Cor",
+    "lib.arcade.cbNobs": "Xoque do pau da carta inicial",
+    "lib.arcade.cbHeels": "Xoque como carta inicial",
+    "lib.arcade.cbYou": "Ti",
+    "lib.arcade.cbFoe": "Ordenador",
+    "lib.arcade.cbLast": "Última carta",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Reparte ti",
+    "lib.arcade.cbFoeDeal": "Reparte o ordenador",
+    "lib.arcade.cbPick": "Escolle 2 cartas para o crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "A túa man",
+    "lib.arcade.cbFoeHand": "Man do ordenador",
+    "lib.arcade.cbStarter": "Carta inicial",
+    "lib.arcade.cbZero": "0 puntos",
+    "lib.arcade.cbPlayed": "Xogadas",
+    "lib.arcade.cbToCrib": "Deixar no crib",
+    "lib.arcade.cbNext": "Continuar",
+    "lib.arcade.cbHand": "Man"
   },
   "pages": {
     "home": {
@@ -1086,6 +1351,174 @@
     "reaction": {
       "name": "Proba de tempo de reacción",
       "desc": "Fai clic no momento en que a pantalla se pon verde; a túa media en 5 roldas ten que cumprir o límite de cada nivel, que se aperta ao longo de 10 niveis."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Reparte sementes polos buratos, captura as sementes do rival e xoga outra vez cando caias no teu almacén; xoga contra o ordenador en 10 niveis de fácil a difícil."
+    },
+    "snakes-ladders": {
+      "name": "Serpes e escadas",
+      "desc": "Tira o dado da casa 1 á 100, sobe escadas, evita as serpes e chega á meta antes ca os teus rivais; 10 niveis."
+    },
+    "nine-mens-morris": {
+      "name": "Muíño (Nine Men’s Morris)",
+      "desc": "Coloca, desliza e fai voar as túas pezas para facer tres en liña e retirar as do rival; xoga contra o ordenador en 10 niveis."
+    },
+    "battleship": {
+      "name": "Afundir a flota",
+      "desc": "Atopa e afunde a flota do ordenador nunha cuadrícula de 10x10 antes de que el afunda a túa; 10 niveis, xa que o ordenador deduce con máis astucia."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Cabaza, Cangrexo, Peixe, Camarón)",
+      "desc": "Xogo de dados tradicional vietnamita: aposta moedas virtuais nos animais e axita tres dados; alcanza o obxectivo de moedas en 10 niveis (sen diñeiro real)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Aposta por Xogador, Banca ou Empate con cartas repartidas segundo as regras estándar, con moedas virtuais; alcanza o obxectivo de moedas en 10 niveis (sen diñeiro real)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Xogo de tres cartas)",
+      "desc": "Compara mans de 3 cartas co repartidor: trío, tres figuras, despois de 9 puntos a 0; moedas virtuais, 10 niveis, sen diñeiro real."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marca os números cantados no teu cartón de 5x5 e berra BINGO antes ca os ordenadores rivais; os números cántanse máis rápido ao longo de 10 niveis."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Cinco dados)",
+      "desc": "Tira cinco dados, garda os bos e enche 13 casillas de puntuación; alcanza a puntuación obxectivo en 10 niveis."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Oitos locos)",
+      "desc": "Xoga polo pau ou polo valor, os oitos cambian o pau; queda sen cartas antes ca 1 a 3 ordenadores rivais en 10 niveis."
+    },
+    "car-race": {
+      "name": "Carreira de coches: esquiva",
+      "desc": "Cambia de carril para esquivar os coches que van diante e percorre toda a distancia; 10 niveis con máis carrís e tráfico máis rápido."
+    },
+    "sky-jump": {
+      "name": "Salto ao ceo",
+      "desc": "Bota de plataforma en plataforma para subir o máis alto posible sen caer; 10 niveis con plataformas máis separadas, móbiles e que se rompen."
+    },
+    "gold-miner": {
+      "name": "Mineiro de ouro",
+      "desc": "Solta o gancho para recoller ouro e diamantes, evita as pedras pesadas e alcanza o diñeiro obxectivo en 60 segundos; 10 niveis."
+    },
+    "fruit-slice": {
+      "name": "Corta froita",
+      "desc": "Pasa o dedo para cortar a froita que sae voando e esquiva as bombas; 10 niveis con máis froita e máis bombas."
+    },
+    "basketball": {
+      "name": "Tiro a canastra",
+      "desc": "Arrastra e solta para lanzar a bola á canastra cun número limitado de tiros; 10 niveis, con canastra móbil desde o nivel 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter (Tirador de burbullas)",
+      "desc": "Dispara burbullas para xuntar 3 ou máis da mesma cor e estoupalas, e elimínaas todas antes de que cheguen abaixo; 10 niveis con máis cores."
+    },
+    "dot-chase": {
+      "name": "Caza de puntos",
+      "desc": "Come todos os puntos do labirinto esquivando os pantasmas que te perseguen; 10 niveis con pantasmas máis numerosos e máis astutos."
+    },
+    "kakuro": {
+      "name": "Kakuro (Sumas cruzadas)",
+      "desc": "Enche as celas brancas con díxitos do 1 ao 9 para que cada tramo sume a súa pista sen repetir; 10 niveis, cuadrículas de 5x5 a 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Enche a cuadrícula sen repetir en filas nin columnas para que cada gaiola dea o seu obxectivo coa súa operación; 10 niveis, cuadrículas de 3x3 a 6x6."
+    },
+    "word-guess": {
+      "name": "Adiviña a palabra (estilo Wordle)",
+      "desc": "Adiviña a palabra secreta en inglés con pistas verdes, amarelas e grises; 10 niveis con palabras de 4–6 letras e menos intentos."
+    },
+    "hangman": {
+      "name": "O aforcado",
+      "desc": "Adiviña a palabra inglesa letra a letra antes de quedarte sen erros permitidos; 10 niveis con palabras máis longas e menos erros permitidos."
+    },
+    "word-scramble": {
+      "name": "Palabras desordenadas (Anagrama)",
+      "desc": "Reordena letras desordenadas nunha palabra inglesa antes de que se acabe o tempo; 10 niveis, 5 palabras por nivel."
+    },
+    "domino": {
+      "name": "Dominó",
+      "desc": "Xunta fichas a calquera extremo da cadea e queda sen fichas antes ca o ordenador; 10 niveis a medida que o ordenador se fai máis listo."
+    },
+    "hearts": {
+      "name": "Hearts (Corazóns)",
+      "desc": "Evita os corazóns e a Dama de Picas nun xogo de cartas para catro; gaña quen teña menos puntos; 10 niveis contra xogadores do ordenador cada vez máis listos."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (fichas virtuais)",
+      "desc": "Póker un contra un fronte ao ordenador con fichas virtuais: retírate, iguala ou sube, e gaña cando ao ordenador se lle acaben as fichas; 10 niveis, sen diñeiro real."
+    },
+    "n-back": {
+      "name": "Memoria N-Back",
+      "desc": "Mira a casa iluminada e preme Coincide cando sexa a mesma que hai N pasos; 10 niveis con N ata 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker (Galletas)",
+      "desc": "Fai clic para cocer galletas, compra axudantes que cocen automaticamente e alcanza o obxectivo en 2 minutos; 10 niveis."
+    },
+    "tile-connect": {
+      "name": "Unir pezas (estilo Onet)",
+      "desc": "Une pezas iguais cun camiño de como máximo dous xiros e baleira o taboleiro antes de que se acabe o tempo; 10 niveis, taboleiros máis grandes."
+    },
+    "jigsaw": {
+      "name": "Crebacabezas de imaxes",
+      "desc": "Intercambia as pezas mesturadas para reconstruír a imaxe; 10 niveis de 3x3 a 6x6 pezas."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Tira cara atrás e solta para meter a bola no burato dentro do límite de golpes; 10 pistas con paredes e area."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Tira os dados, leva as túas fichas á casa e sácaas antes ca o ordenador, golpeando as súas fichas soltas polo camiño; 10 niveis."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Trece)",
+      "desc": "O xogo de cartas vietnamita para catro no que hai que quedar sen cartas: xoga cartas soltas, parellas, escaleiras e pókers para baleirar primeiro a túa man; 10 niveis."
+    },
+    "tower-defense": {
+      "name": "Defensa de torres",
+      "desc": "Constrúe e mellora torres ao longo do camiño para deter todas as oleadas de inimigos; 10 niveis en tres mapas diferentes."
+    },
+    "color-by-number": {
+      "name": "Colorear por números",
+      "desc": "Pinta cada casa coa cor que corresponde ao seu número para revelar a imaxe; 10 imaxes con máis cores cada vez."
+    },
+    "yukon": {
+      "name": "Solitario Yukon",
+      "desc": "Klondike sen monte de reserva: move calquera carta boca arriba con todo o que ten enriba; 10 niveis, con menos cartas boca arriba a medida que avanzas."
+    },
+    "chinese-checkers": {
+      "name": "Damas chinesas",
+      "desc": "Xogo de saltos e pasos en forma de estrela contra o ordenador: leva primeiro as túas 10 pezas ao currunchiño oposto; 10 niveis."
+    },
+    "mau-binh": {
+      "name": "Mậu Binh (Póker chinés)",
+      "desc": "Ordena 13 cartas en tres mans de 5, 5 e 3 cartas e vence o ordenador; 5 roldas por nivel, 10 niveis."
+    },
+    "phom": {
+      "name": "Phỏm (Rummy vietnamita)",
+      "desc": "Rummy vietnamita para dous contra o ordenador: roubar ou coller un descarte, formar combinacións e saír; gaña quen teña menos puntos sobrantes; 10 niveis."
+    },
+    "shogi": {
+      "name": "Shogi (Xadrez xaponés)",
+      "desc": "Xoga ao shogi contra o ordenador: solta pezas capturadas, promove e fai xaque mate ao rei; 10 niveis con desfacer."
+    },
+    "janggi": {
+      "name": "Janggi (Xadrez coreano)",
+      "desc": "Xoga ao xadrez coreano contra o ordenador: diagonais do pazo, saltos do canón sobre unha peza, elefantes de tres pasos; 10 niveis con desfacer."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Acciona os flípers esquerdo e dereito para manter a bola viva, golpea os parachoques e alcanza a puntuación obxectivo antes de que se acaben as túas 3 bólas; 10 niveis."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage para dous contra o ordenador: crib, conteo ata 31, contar mans, carreira ata 61 puntos; 10 niveis."
     }
   },
   "s": {

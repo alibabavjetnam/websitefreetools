@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kortteja jäljellä: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} ohittaa.",
     "lib.arcade.tlBad": "Valitut kortit eivät muodosta sallittua yhdistelmää.",
-    "lib.arcade.tlLow": "Tämä yhdistelmä ei ole tarpeeksi korkea lyödäkseen pöydällä olevan."
+    "lib.arcade.tlLow": "Tämä yhdistelmä ei ole tarpeeksi korkea lyödäkseen pöydällä olevan.",
+    "lib.arcade.note.td": "Napauta tyhjää ruutua (ei polkua) rakentaaksesi tykkitornin, mikä maksaa kultaa; napauta tornia uudelleen parantaaksesi sitä (enintään taso 5). Tornit ampuvat automaattisesti kantamansa sisällä pisimmälle edennyttä vihollista. Voita viholliset ansaitaksesi lisää kultaa; jos 15 vihollista pääsee loppuun, häviät. Selviä kaikista aalloista läpäistäksesi tason.",
+    "lib.arcade.tdInfo": "Kulta: {g} · Aalto {w}/{t}",
+    "lib.arcade.tdCost": "Torni: {n}",
+    "lib.arcade.note.colorNum": "Jokaisessa ruudussa on numero, joka vastaa paletin väriä. Valitse väri ja maalaa ruudut napauttamalla ruutuja, joissa on kyseinen numero; väärällä värillä napauttaminen ei maalaa mitään. Maalaa kaikki ruudut oikein saadaksesi kuvan valmiiksi. Korkeammilla tasoilla on enemmän värejä.",
+    "lib.arcade.cnWrong": "Väärä väri — tarkista ruudun numero.",
+    "lib.arcade.note.yukon": "Kuten Klondike, mutta ilman pakkaa: minkä tahansa avoimen kortin voi siirtää yhdessä kaikkien sen päällä olevien korttien kanssa, vaikka ne eivät olisi järjestyksessä; vain ensimmäisen kortin on sovittava kohdepinoon (laskevassa järjestyksessä, punainen ja musta vuorotellen; tyhjään pinoon voi siirtää vain kuninkaan). Rakenna kaikki 52 korttia neljään peruspinoon ässästä kuninkaaseen. Matalilla tasoilla useampi kortti on valmiiksi avoinna.",
+    "lib.arcade.yukonFree": "Kuvapuoli alaspäin olevat kortit: {n}",
+    "lib.arcade.note.chinesechk": "Pelaat sinisillä nappuloilla oikeassa kulmassa; siirrä kaikki 10 nappulaa vastakkaiseen vasempaan kulmaan ennen tietokonetta. Joka vuorolla siirrät yhtä nappulaa: askel viereiseen tyhjään koloon tai hyppy minkä tahansa nappulan yli sen takana olevaan tyhjään koloon, ja voit hypätä peräkkäin niin monta kertaa kuin haluat. Napauta omaa nappulaasi ja sitten vihreää koloa siirtääksesi.",
+    "lib.arcade.ccTurn": "Sinun vuorosi · Vuoro {n}",
+    "lib.arcade.ccDraw": "Vuorot loppuivat — tasapeli.",
+    "lib.arcade.note.maubinh": "Sinä ja tietokone saatte kumpikin 13 korttia ja järjestätte ne kolmeen käteen: 5 kortin takakäsi, 5 kortin keskikäsi ja 3 kortin etukäsi. Takakäden on oltava vähintään yhtä vahva kuin keskikäsi, ja keskikäden vähintään yhtä vahva kuin etukäsi; muuten järjestyksesi on virheellinen ja häviät koko kierroksen. Napauta korttia ja sitten riviä, johon se kuuluu (napauta asetettua korttia ottaaksesi sen takaisin). Jokainen voitettu käsi tuo 1 pisteen; kaikkien kolmen voitto tuo 6. Pelaa 5 kierrosta — positiivinen kokonaistulos läpäisee tason. Etukädessä voi olla vain korkein kortti, pari tai kolmoset.",
+    "lib.arcade.mbHigh": "Korkein kortti",
+    "lib.arcade.mbPair": "Pari",
+    "lib.arcade.mbTwoPair": "Kaksi paria",
+    "lib.arcade.mbTrips": "Kolmoset",
+    "lib.arcade.mbStraight": "Suora",
+    "lib.arcade.mbFlush": "Väri",
+    "lib.arcade.mbFull": "Täyskäsi",
+    "lib.arcade.mbQuads": "Neloset",
+    "lib.arcade.mbSflush": "Värisuora",
+    "lib.arcade.mbBack": "Takakäsi",
+    "lib.arcade.mbMid": "Keskikäsi",
+    "lib.arcade.mbFront": "Etukäsi",
+    "lib.arcade.mbFoe": "Tietokone",
+    "lib.arcade.mbYou": "Sinä",
+    "lib.arcade.mbFoul": "Virheellinen järjestys!",
+    "lib.arcade.mbFoeFoul": "Tietokoneen järjestys on virheellinen!",
+    "lib.arcade.mbConfirm": "Näytä kortit",
+    "lib.arcade.mbReset": "Tyhjennä",
+    "lib.arcade.mbHand": "Kätesi",
+    "lib.arcade.mbRound": "Kierros {a}/{b}",
+    "lib.arcade.mbTotal": "Yhteensä: {n}",
+    "lib.arcade.mbFinish": "Lopeta",
+    "lib.arcade.mbNext": "Seuraava kierros",
+    "lib.arcade.mbDraw": "Pisteet tasan — pelaa uudelleen.",
+    "lib.arcade.mbAutoMsg": "Tässä ehdotettu järjestys. Voit muuttaa sitä ennen korttien näyttämistä.",
+    "lib.arcade.note.phom": "Kaksi pelaajaa; kumpikin saa 9 korttia (aloittaja 10). Yhdistelmä on vähintään 3 samanarvoista korttia tai vähintään 3 peräkkäistä samanmaista korttia (ässä on vain pieni). Vuorollasi nosta kortti pakasta tai ota vastustajan juuri pudottama kortti, jos se muodostaa yhdistelmän kätesi kanssa (otettu kortti on pidettävä), ja pudota sitten yksi kortti. Kun kumpikin on pudottanut 4 korttia, kierros päättyy ja voittaja on se, jonka yhdistelmien ulkopuolisten korttien summa on pienempi (ässä = 1 … kuningas = 13). Jos kaikki korttisi ovat yhdistelmissä pudotuksen jälkeen, lopetat («U») ja voitat heti. Vihreällä reunustetut kortit kuuluvat parhaaseen yhdistelmäsarjaasi.",
+    "lib.arcade.pmDraw": "Nosta",
+    "lib.arcade.pmEat": "Ota pudotettu",
+    "lib.arcade.pmThrow": "Pudota",
+    "lib.arcade.pmFoeAte": "Tietokone otti korttisi.",
+    "lib.arcade.pmFoeU": "Tietokone lopetti!",
+    "lib.arcade.pmTurn": "Vuoro {a}/{b}",
+    "lib.arcade.pmLeft": "Yhdistelmien ulkopuolella: {n}",
+    "lib.arcade.pmDeck": "Pakka: {n}",
+    "lib.arcade.pmFoeHand": "Tietokoneen käsi",
+    "lib.arcade.pmFoeDisc": "Tietokoneen pudotukset",
+    "lib.arcade.pmFoeEaten": "Tietokone otti",
+    "lib.arcade.pmMyDisc": "Omat pudotuksesi",
+    "lib.arcade.pmAte": "Otit tämän kortin — pidä se yhdistelmässä.",
+    "lib.arcade.pmKeep": "Otettu kortti on pidettävä — pudota toinen kortti.",
+    "lib.arcade.pmU": "Lopetit! Voitit heti.",
+    "lib.arcade.pmYou": "Sinä",
+    "lib.arcade.pmFoe": "Tietokone",
+    "lib.arcade.pmDraw2": "Pisteet tasan.",
+    "lib.arcade.note.shogi": "Shogi on japanilaista shakkia. Pelaat alapuolta ja aloitat; tietokoneen nappulat osoittavat toiseen suuntaan. Syödyt nappulat siirtyvät käteesi, ja ne voi pudottaa mille tahansa tyhjälle ruudulle siirron sijaan (ei koskaan sotilasta linjalle, jolla sinulla on jo ylentämätön sotilas, eikä nappulaa riville, jolta se ei voisi enää liikkua). Nappula, joka siirtyy vastustajan kolmelle viimeiselle riville, sieltä pois tai niiden sisällä, voidaan ylentää (paitsi kuningas ja kulta); ylennys on pakollinen, jos nappulalla ei muuten olisi siirtoja. Voita matittamalla vastustajan kuningas. Kanji: 歩 sotilas, 香 keihäs, 桂 ratsu, 銀 hopea, 金 kulta, 角 lähetti, 飛 torni, 玉 kuningas; と, 馬, 竜 ja muut punaiset nappulat ovat ylennettyjä.",
+    "lib.arcade.sgPromote": "Ylennä",
+    "lib.arcade.sgKeep": "Älä ylennä",
+    "lib.arcade.sgCheck": "Olet shakissa!",
+    "lib.arcade.sgWin": "Matti — voitit.",
+    "lib.arcade.sgLose": "Sinut matitettiin.",
+    "lib.arcade.sgAskPromote": "Ylennetäänkö tämä nappula?",
+    "lib.arcade.note.janggi": "Janggi on korealaista shakkia. Pelaat sinisillä nappuloilla alhaalla ja aloitat. Toisin kuin xiangqissa, siinä ei ole jokea, ja molemmissa palatseissa on vinoviivat. Kenraali ja vartijat liikkuvat yhden askeleen palatsin viivoja pitkin (vinot mukaan lukien); vaunu liukuu ja syö myös palatsin vinoviivoja pitkin; tykin on hypättävä täsmälleen yhden nappulan yli (ei toisen tykin) liikkuakseen tai syödäkseen, eikä se voi syödä tykkiä; hevonen astuu yhden suoraan ja sitten yhden vinosti, ja norsu yhden suoraan ja sitten kaksi vinosti, ja kummankin tie on tukossa, jos välissä on nappula; sotilaat liikkuvat eteen tai sivulle ja vastustajan palatsissa myös vinosti eteen. Kahden kenraalin ei sallita koskaan olla vastakkain. Voita matittamalla vastustajan kenraali. Tietokone ei koskaan ohita vuoroa.",
+    "lib.arcade.jgCheck": "Olet shakissa!",
+    "lib.arcade.jgWin": "Matti — voitit.",
+    "lib.arcade.jgLose": "Sinut matitettiin.",
+    "lib.arcade.note.pinball": "Paina välilyöntiä tai ylänuolta tai napauta pöytää laukaistaksesi pallon. Pidä vasenta (tai kosketa pöydän vasenta puoliskoa) nostaaksesi vasenta läppää ja oikeaa (tai oikeaa puoliskoa) oikeaa läppää — voit myös napauttaa rytmissä pitämisen sijaan. Pyöreät törmäyspehmusteet antavat 100 pistettä kukin. Sinulla on 3 palloa; saavuta tavoitepistemäärä ennen kuin ne loppuvat läpäistäksesi tason.",
+    "lib.arcade.pinBalls": "Palloja: {n} · Tavoite: {t}",
+    "lib.arcade.note.cribbage": "Kahden pelaajan cribbage, kilpajuoksu 61 pisteeseen. Jaossa saat 6 korttia ja laitat 2 kuvapuoli alaspäin cribiin (se kuuluu jakajalle). Käännetään aloituskortti. Sitten pelataan vuorotellen kortteja kuvapuoli ylöspäin niin, ettei juokseva summa ylitä 31:tä: 15:n tai 31:n saavuttaminen tuo 2, edellisen kortin kaltaisuus 2/6/12, vähintään 3 kortin sarja (missä tahansa järjestyksessä) pisteitä pituutensa verran, ja kun kukaan ei voi pelata, viimeisenä pelannut saa 1 («Go»). Sitten jokainen 4 kortin käsi lasketaan aloituskortin kanssa: jokainen 15:n summan antava yhdistelmä tuo 2, jokainen pari 2, vähintään 3 kortin sarja pituutensa verran, neljä samaa maata 4 (5 aloituskortin kanssa) ja aloituskortin maata oleva jätkä 1. Ei-jakaja laskee ensin, sitten jakaja laskee kätensä ja cribin.",
+    "lib.arcade.cbFifteen": "Viisitoista",
+    "lib.arcade.cbPair": "Pari",
+    "lib.arcade.cbRun": "Sarja",
+    "lib.arcade.cbFlush": "Väri",
+    "lib.arcade.cbNobs": "Aloituskortin maata oleva jätkä",
+    "lib.arcade.cbHeels": "Jätkä aloituskorttina",
+    "lib.arcade.cbYou": "Sinä",
+    "lib.arcade.cbFoe": "Tietokone",
+    "lib.arcade.cbLast": "Viimeinen kortti",
+    "lib.arcade.cbCount": "Summa: {n}",
+    "lib.arcade.cbYouDeal": "Sinä jaat",
+    "lib.arcade.cbFoeDeal": "Tietokone jakaa",
+    "lib.arcade.cbPick": "Valitse 2 korttia cribiin",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Kätesi",
+    "lib.arcade.cbFoeHand": "Tietokoneen käsi",
+    "lib.arcade.cbStarter": "Aloituskortti",
+    "lib.arcade.cbZero": "0 pistettä",
+    "lib.arcade.cbPlayed": "Pelatut",
+    "lib.arcade.cbToCrib": "Laita cribiin",
+    "lib.arcade.cbNext": "Jatka",
+    "lib.arcade.cbHand": "Käsi"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Kolmetoista)",
       "desc": "Vietnamilainen korteista eroon pääsemisen peli neljälle: pelaa yksittäisiä, pareja, suoria ja neljän samaa päästäksesi ensimmäisenä eroon korteistasi; 10 tasoa."
+    },
+    "tower-defense": {
+      "name": "Tornipuolustus",
+      "desc": "Rakenna ja paranna torneja polun varrelle pysäyttääksesi kaikki vihollisaallot; 10 tasoa kolmella eri kartalla."
+    },
+    "color-by-number": {
+      "name": "Maalaa numeroiden mukaan",
+      "desc": "Maalaa jokainen ruutu numeroaan vastaavalla värillä paljastaaksesi kuvan; 10 kuvaa, joissa joka kerta enemmän värejä."
+    },
+    "yukon": {
+      "name": "Yukon-pasianssi",
+      "desc": "Klondike ilman pakkaa: siirrä mikä tahansa avoin kortti kaikkien sen päällä olevien kanssa; 10 tasoa, joilla yhä harvempi kortti on avoinna."
+    },
+    "chinese-checkers": {
+      "name": "Kiinanshakki",
+      "desc": "Tähdenmuotoinen askel- ja hyppypeli tietokonetta vastaan: siirrä kaikki 10 nappulaa ensimmäisenä vastakkaiseen kulmaan; 10 tasoa."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (kiinalainen pokeri)",
+      "desc": "Järjestä 13 korttia kolmeen käteen, joissa on 5, 5 ja 3 korttia, ja voita tietokone; 5 kierrosta tasoa kohti, 10 tasoa."
+    },
+    "phom": {
+      "name": "Phỏm (vietnamilainen rommi)",
+      "desc": "Kahden pelaajan vietnamilainen rommi tietokonetta vastaan: nosta tai ota pudotettu kortti, muodosta yhdistelmiä ja lopeta; vähiten jääneitä pisteitä saanut voittaa; 10 tasoa."
+    },
+    "shogi": {
+      "name": "Shogi (japanilainen shakki)",
+      "desc": "Pelaa shogia tietokonetta vastaan: pudota syödyt nappulat, ylennä ja mattita kuningas; 10 tasoa ja siirron peruutus."
+    },
+    "janggi": {
+      "name": "Janggi (korealainen shakki)",
+      "desc": "Pelaa korealaista shakkia tietokonetta vastaan: palatsin vinoviivat, tykin hyppy yhden nappulan yli, kolmen askeleen norsu; 10 tasoa ja siirron peruutus."
+    },
+    "pinball": {
+      "name": "Pinball (flipperi)",
+      "desc": "Läppää vasemmalle ja oikealle pitääksesi pallon pelissä, osu törmäyspehmusteisiin ja saavuta tavoitepistemäärä ennen kuin 3 palloa loppuu; 10 tasoa."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Kahden pelaajan cribbage tietokonetta vastaan: crib, pelaaminen 31:een, käsien laskeminen, kilpajuoksu 61 pisteeseen; 10 tasoa."
     }
   },
   "s": {

@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Pasirinkite spalvą, kad užpildytumėte visą jūsų valdomą plotą viršutiniame kairiajame kampe; jis praris gretimus tos spalvos langelius. Per leistą ėjimų skaičių padarykite visą lentą vienos spalvos.",
     "lib.arcade.note.mastermind": "Kompiuteris paslepia spalvų eilę. Pasirinkite spalvą kiekvienai vietai ir paspauskite Spėti. Juodas kaištis = tinkama spalva tinkamoje vietoje; baltas kaištis = tinkama spalva netinkamoje vietoje. Įminkite kodą, kol nepasibaigė spėjimai.",
     "lib.arcade.note.hanoi": "Perkelkite visus diskus ant paskutinio strypo. Kiekvieną kartą perkelkite tik viršutinį strypo diską ir niekada nedėkite didesnio disko ant mažesnio. Spustelėkite pradinį strypą, tada tikslo strypą.",
-    "lib.arcade.note.pipes": "Spustelėkite plytelę, kad vamzdį pasuktumėte 90°. Sujunkite visus vamzdžius į vieną tinklą be atvirų galų (atviri galai rodomi raudonai)."
+    "lib.arcade.note.pipes": "Spustelėkite plytelę, kad vamzdį pasuktumėte 90°. Sujunkite visus vamzdžius į vieną tinklą be atvirų galų (atviri galai rodomi raudonai).",
+    "lib.arcade.pongScore": "Tu {a} – {b} kompiuteris (iki {t})",
+    "lib.arcade.kills": "Sunaikinta: {n}/{t}",
+    "lib.arcade.rocksLeft": "Liko uolų: {n}",
+    "lib.arcade.timeLeft": "Liko {n} s",
+    "lib.arcade.stepsN": "Žingsniai: {n}",
+    "lib.arcade.crossed": "Namuose: {n}/{t}",
+    "lib.arcade.pipes": "Praskrido vamzdžių: {n}/{t}",
+    "lib.arcade.distance": "Atstumas: {n}/{t} m",
+    "lib.arcade.speedN": "Greitis: {n}",
+    "lib.arcade.note.whack-a-mole": "Kurmiai iššoka iš skylių — spustelėk arba palieski kurmį, kad jį trenktum. Trenk pakankamai kurmių, kol baigsis laikas. Nuo 4 lygio atsiranda bombų: pataikius į bombą prarandami taškai.",
+    "lib.arcade.hole": "Skylė",
+    "lib.arcade.hitsN": "Pataikymai: {n}/{t}",
+    "lib.arcade.note.simon": "Žaidimas parodo spalvų ir garsų seką — pakartok ją ta pačia tvarka. Kiekvienas raundas prideda dar vieną žingsnį. Įsimink reikiamą ilgį, kad įveiktum lygį. Nuo 7 lygio yra 6 mygtukai.",
+    "lib.arcade.seqN": "Seka: {n}/{t}",
+    "lib.arcade.watch": "Žiūrėk…",
+    "lib.arcade.yourTurnShort": "Tavo eilė",
+    "lib.arcade.note.aim-trainer": "Taikiniai atsiranda atsitiktinai ir greitai išnyksta — pataikyk į kuo daugiau. Jie mažėja ir greitėja. Pataikyk į pakankamai taikinių, kol nepramovei daugiau nei 5 kartus, kad įveiktum lygį.",
+    "lib.arcade.missN": "Nepataikyta: {n}/{t}",
+    "lib.arcade.answer": "Atsakymas",
+    "lib.arcade.note.quick-math": "Skaičiuok mintyse kuo greičiau: įvesk atsakymą ir paspausk Enter. Kiekvienas klausimas turi laiko limitą; neteisingas atsakymas arba laiko pabaiga kainuoja gyvybę (turi 3). Teisingai atsakyk į pakankamai klausimų, kad įveiktum lygį.",
+    "lib.arcade.correctN": "Teisingai: {n}/{t}",
+    "lib.arcade.note.reaction": "Palauk, kol ekranas taps žalias, tada spustelėk kuo greičiau. Per ankstyvas spustelėjimas yra pražanga (po 3 pražangų pralaimi). Tavo 5 raundų vidurkis turi būti geresnis už lygio ribą.",
+    "lib.arcade.roundN": "Žodis {n}/{t}",
+    "lib.arcade.limitMs": "Riba: {n} ms",
+    "lib.arcade.rxWait": "Lauk žalios…",
+    "lib.arcade.rxGo": "SPUSTELĖK!",
+    "lib.arcade.rxEarly": "Per anksti!",
+    "lib.arcade.gameArea": "Žaidimo laukas",
+    "lib.arcade.note.pong": "Judink pelę, vilk pirštą arba naudok klavišus ← →, kad valdytum apatinę raketę. Nuvaryk kamuoliuką pro kompiuterį; laimi pirmasis surinkęs 5 taškus. Kamuoliukas greitėja po kiekvieno smūgio.",
+    "lib.arcade.note.space-shooter": "Judink pelę, vilk pirštą arba naudok klavišus ← →, kad valdytum; laivas šaudo automatiškai. Sunaikink pakankamai priešo laivų, kad įveiktum lygį, ir venk susidūrimų bei priešo ugnies. Turi 3 gyvybes.",
+    "lib.arcade.note.asteroids": "← → sukioja laivą, ↑ suteikia trauką, tarpas šaudo. Sunaikink visas uolas, kad įveiktum lygį; didelės uolos skyla į mažesnes. Laivas pereina per ekrano kraštus. Turi 3 gyvybes.",
+    "lib.arcade.note.maze": "Rodyklėmis (arba braukimu, arba mygtukais) nueik nuo žalio taško iki raudonos vėliavos, kol baigsis laikas. Nuo 5 lygio labirintas apgaubtas rūko: matai tik aplink save, o aplankytos vietos įsimenamos.",
+    "lib.arcade.note.road-cross": "Rodyklėmis, braukimu arba mygtukais perkelk varlę iš apačios į viršų. Venk eismo; nuo 5 lygio viršutinė dalis yra upė, tad šok ant plūduriuojančių rąstų. Grįžk namo 3 kartus, kad įveiktum lygį. Turi 3 gyvybes.",
+    "lib.arcade.note.flappy": "Palieski žaidimo lauką, paspausk tarpą arba ↑, kad suplaktum sparnais. Skrisk pro tarpus tarp vamzdžių nesilietęs prie vamzdžio, žemės ar lubų. Aukštesniuose lygiuose tarpai siauresni, o skrydis greitesnis.",
+    "lib.arcade.note.runner": "Palieski žaidimo lauką, paspausk tarpą arba ↑, kad peršoktum kaktusus; laikyk ↓, kad pasilenktum po aukštai skraidančiais paukščiais (arba peršok žemus). Nubėk pakankamai toli, kad įveiktum lygį. Greitis nuolat auga.",
+    "lib.arcade.fire": "Šauti",
+    "lib.arcade.jump": "Šuolis",
+    "lib.arcade.aimTarget": "Taikinys",
+    "lib.game.soundOn": "Įjungti garsą",
+    "lib.game.soundOff": "Išjungti garsą",
+    "lib.arcade.note.kalah": "Tu žaidi apatine eile, kompiuteris — viršutine; didelė duobutė dešinėje yra tavo sandėlis. Spustelėk duobutę, paimk visas sėklas ir sėk jas prieš laikrodžio rodyklę po vieną į kiekvieną duobutę (priešininko sandėlį praleisk). Jei paskutinė sėkla patenka į tavo sandėlį, ėjimą kartoji; jei į tuščią duobutę tavo pusėje, priešais duobutę su sėklomis, jas pasiimi. Kai viena pusė lieka tuščia, kitos pusės sėklos keliauja jos savininko sandėlin; laimi didesnis sandėlis.",
+    "lib.arcade.note.snakes": "Mesk kauliuką ir pajudėk tiek langelių, nuo 1 iki 100. Atsidūrus kopėčių apačioje, užlipi aukštyn; ant gyvatės galvos — nuslysti žemyn. Nuo 4 lygio norint patekti į 100 reikia išmesti tikslų skaičių. Aukštesniuose lygiuose daugiau gyvačių, mažiau kopėčių ir daugiau priešininkų. Pirmasis pasiekęs 100 laimi.",
+    "lib.arcade.square": "{n} langelis",
+    "lib.arcade.ladderUp": "Kopėčiomis aukštyn!",
+    "lib.arcade.snakeDown": "Praryja gyvatė!",
+    "lib.arcade.needExact": "Norint patekti į 100 reikia tikslaus skaičiaus.",
+    "lib.arcade.note.nmm": "Kiekviena pusė turi 9 figūras. 1 etapas: pakaitomis dėkite figūras ant tuščių taškų. 2 etapas: stumk figūrą į gretimą tuščią tašką. Kai lieka tik 3 figūros, gali „skristi“ į bet kurį tuščią tašką. Sudaryk tris iš eilės („malūną“) ir pašalink priešininko figūrą (pirmiausia tas, kurios nėra malūne). Pralaimi, kai lieki su 2 figūromis arba nebegali judėti. Žaidi baltomis ir ėjimą pradedi pirmas.",
+    "lib.arcade.inHand": "Dėti: {a} · {b}",
+    "lib.arcade.removePiece": "Pasirink priešininko figūrą pašalinti.",
+    "lib.arcade.enemyWaters": "Priešo vandenys (spustelėk, kad šautum)",
+    "lib.arcade.yourFleet": "Tavo laivynas",
+    "lib.arcade.note.battleship": "Kiekviena pusė turi 5 laivus (ilgiai 5, 4, 3, 3, 2), atsitiktinai išdėstytus 10x10 tinklelyje. Pakaitomis šaudykite į langelį: pataikymas nusidažo raudonai, nepataikymas — šviesiai mėlynai, o pataikius į visus laivo langelius jis nuskęsta. Pirmas nuskandink visą priešo laivyną ir laimėsi. Aukštesniuose lygiuose kompiuteris gudriau nuspėja tavo laivų vietas.",
+    "lib.arcade.shipsLeft": "Liko laivų: tu {a} · priešas {b}",
+    "lib.arcade.theySunk": "Priešas nuskandino vieną tavo laivą!",
+    "lib.arcade.theyHit": "Priešas pataikė į vieną tavo laivą.",
+    "lib.arcade.theyMiss": "Priešas nepataikė.",
+    "lib.arcade.youSunk": "Nuskandinai priešo laivą!",
+    "lib.arcade.youHit": "Pataikei!",
+    "lib.arcade.youMiss": "Nepataikei.",
+    "lib.arcade.shake": "Pakratyti",
+    "lib.arcade.clearBets": "Išvalyti statymus",
+    "lib.arcade.note.bau-cua": "Tik virtualios monetos — jokių tikrų pinigų. Pasirink žetono vertę, spustelėdamas gyvūnus statyk ir paspausk Pakratyti. Už kiekvieną kauliuką, atitinkantį gyvūną, ant kurio pastatei, gauni statymą atgal ir tiek pat už kiekvieną sutapimą. Pasiek tikslinį monetų skaičių per leistinus raundus, kad įveiktum lygį.",
+    "lib.arcade.note.baccarat": "Tik virtualios monetos — jokių tikrų pinigų. Statyk ant Žaidėjo, Bankininko arba Lygiųjų ir paspausk Dalyti. Rankos vertė yra paskutinis jos sumos skaitmuo (T = 1, 2–9 pagal skaičių, 10/J/Q/K = 0); laimi ranka, esanti arčiau 9, o trečios kortos imamos pagal standartines taisykles. Žaidėjas moka 1:1, Bankininkas 0,95:1, Lygiosios 8:1 (statymai ant Žaidėjo/Bankininko lygiųjų atveju grąžinami). Pasiek tikslinį monetų skaičių per leistinus raundus, kad įveiktum lygį.",
+    "lib.arcade.banker": "Bankininkas",
+    "lib.arcade.player": "Žaidėjas",
+    "lib.arcade.tie": "Lygiosios",
+    "lib.arcade.openCards": "Atidengti",
+    "lib.arcade.note.bai-cao": "Tik virtualios monetos — jokių tikrų pinigų. Kiekviena pusė gauna 3 kortas. Ranka vertinama pagal paskutinį sumos skaitmenį (T = 1, 2–9 pagal skaičių, 10/J/Q/K = 10, t. y. 0 taškų). Eilė: aukščiausia yra trejetas („Sáp“), po jo trys paveikslėlių kortos („Ba tiên“), tada nuo 9 taškų iki 0. Pastatyk, paspausk Dalyti, tada Atidengti ir palygink su dalytoju. Nuo 6 lygio lygiosiomis laimi dalytojas. Pasiek tikslinį monetų skaičių per leistinus raundus, kad įveiktum lygį.",
+    "lib.arcade.caoSap": "Trejetas",
+    "lib.arcade.caoBaTien": "Trys paveikslėlių kortos",
+    "lib.arcade.caoPts": "{n} tšk.",
+    "lib.arcade.note.bingo": "Kompiuteris šaukia skaičius nuo 1 iki 75. Kai pakviestas skaičius yra tavo kortelėje, spustelėk jį, kad pažymėtum (centras nemokamas). Užpildyk eilutę, stulpelį ar įstrižainę ir paspausk BINGO! — turi aplenkti kompiuterio varžovus. Klaidingas BINGO! kelioms sekundėms užrakina mygtuką. Aukštesniuose lygiuose skaičiai šaukiami greičiau ir yra daugiau varžovų.",
+    "lib.arcade.opponentsN": "Varžovai: {n}",
+    "lib.arcade.falseBingo": "Dar nėra pilnos linijos! Mygtukas užrakintas 3 sekundėms.",
+    "lib.arcade.bingoGo": "Šaukiami skaičiai!",
+    "lib.arcade.note.yahtzee": "Kiekvieną ėjimą meti 5 kauliukus iki 3 kartų: spustelėk kauliuką, kad jį pasilaikytum, ir paspausk Mesti, kad kitus mestum iš naujo. Tada lentelėje pasirink langelį taškams įrašyti (kiekvienas naudojamas vieną kartą; netinkantis langelis duoda 0). Iš viso 13 ėjimų. Langeliai Vienetai–Šešetai prideda 35 premiją, jei jų suma 63 ar daugiau. Pasiek lygio tikslinį rezultatą ir laimėsi.",
+    "lib.arcade.turnN": "Ėjimas {n}/13",
+    "lib.arcade.pickCat": "Pasirink langelį taškams",
+    "lib.arcade.rollsLeft": "Mesti (liko {n})",
+    "lib.arcade.upperBonus": "Vienetų–Šešetų premija",
+    "lib.arcade.scored": "Įrašyta {n}",
+    "lib.arcade.note.crazy-eights": "Žaisk kortą, atitinkančią išmestų kortų krūvos viršutinę kortą mastimi arba verte. Aštuntukai yra džokeriai: žaisk juos bet kada ir pasirink naują mastį. Jei neturi tinkamos kortos, imk iš krūvos (iki 3 kortų); jei vis tiek negali žaisti, praleidi ėjimą. Pirmas atsikratęs kortų laimi. Aukštesniuose lygiuose daugiau varžovų, o kompiuteris žaidžia gudriau.",
+    "lib.arcade.opponent": "Varžovas",
+    "lib.arcade.pileLeft": "Traukimo krūva: {n}",
+    "lib.arcade.pickSuit": "Pasirink naują mastį",
+    "lib.arcade.aiSuit": "Kompiuteris pasirinko {s}",
+    "lib.arcade.aiPass": "Kompiuteris praleidžia ėjimą.",
+    "lib.arcade.mustPlay": "Turi tinkamą kortą — žaisk ją.",
+    "lib.arcade.youPass": "Ištraukei 3 kortas ir praleidi ėjimą.",
+    "lib.arcade.bcGourd": "Moliūgas",
+    "lib.arcade.bcCrab": "Krabas",
+    "lib.arcade.bcShrimp": "Krevetė",
+    "lib.arcade.bcFish": "Žuvis",
+    "lib.arcade.bcRooster": "Gaidys",
+    "lib.arcade.bcDeer": "Elnias",
+    "lib.arcade.yOnes": "Vienetai",
+    "lib.arcade.yTwos": "Dvejetai",
+    "lib.arcade.yThrees": "Trejetai",
+    "lib.arcade.yFours": "Ketvertai",
+    "lib.arcade.yFives": "Penketai",
+    "lib.arcade.ySixes": "Šešetai",
+    "lib.arcade.yThree": "Trys vienodos",
+    "lib.arcade.yFour": "Keturios vienodos",
+    "lib.arcade.yFull": "Pilni namai (25)",
+    "lib.arcade.ySmall": "Maža seka (30)",
+    "lib.arcade.yLarge": "Didelė seka (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Šansas",
+    "lib.arcade.note.race": "Spausk ← → (arba palieski norimą juostą), kad keistum juostas ir išvengtum priekyje esančių automobilių. Turi 3 gyvybes; nuvažiuok visą atstumą, kad įveiktum lygį. Aukštesniuose lygiuose daugiau juostų ir greitesnis eismas.",
+    "lib.arcade.note.jump": "Personažas šokinėja pats. Spausk ← → arba vilk pirštą, kad nusileistum ant kitos platformos. Mėlynos platformos juda, rudos lūžta, kai ant jų nusileidi. Iškritus iš ekrano pralaimima; užlipk pakankamai aukštai, kad įveiktum lygį.",
+    "lib.arcade.note.miner": "Kablys siūbuoja pirmyn atgal; paspausk tarpą, ↓ arba palieski lauką, kad jį nuleistum. Didelis auksas ir uolos sunkūs ir traukiami lėtai; deimantai verti daug. Pasiek tikslinę pinigų sumą, kol nepraėjo 60 sekundžių.",
+    "lib.arcade.note.slicer": "Perbrauk pirštu arba pele per vaisius, kad juos perpjautum. Venk juodų bombų. Praleistas vaisius arba perpjauta bomba kainuoja gyvybę (turi 3). Perpjauk pakankamai vaisių, kad įveiktum lygį.",
+    "lib.arcade.note.hoops": "Paspausk aikštelėje, patempk žemyn (kaip kartinę) ir paleisk, kad nusviestum kamuolį į lanką. Kuo toliau tempi, tuo stipresnis metimas. Pelnyk pakankamai krepšių per turimus metimus; nuo 4 lygio lankas juda.",
+    "lib.arcade.note.bubbles": "Judink pelę arba pirštą, kad nusitaikytum, tada spustelėk/palieski arba paspausk tarpą/Šauti, kad iššautum. Sujunk 3 ar daugiau tos pačios spalvos burbulų, kad juos sprogdintum; burbulai, netekę atramos, krenta. Eilės lėtai leidžiasi, tad laikyk jas toliau nuo apatinės linijos. Pašalink visus burbulus ir laimėsi.",
+    "lib.arcade.note.chase": "Rodyklėmis (arba braukimu / mygtukais) sukis ir suvalgyk visus labirinto taškus, venk tave vejančių vaiduoklių. Turi 3 gyvybes; aukštesniuose lygiuose daugiau vaiduoklių, jie greitesni ir gudriau vejasi.",
+    "lib.arcade.height": "Aukštis: {n}/{t} m",
+    "lib.arcade.money": "Pinigai: {n}/{t}",
+    "lib.arcade.sliced": "Perpjauta: {n}/{t}",
+    "lib.arcade.hoopScore": "Pelnyta: {n}/{t}",
+    "lib.arcade.shotsLeft": "Liko {n} metimų",
+    "lib.arcade.bubbleLeft": "Liko {n} burbulų",
+    "lib.arcade.shotsN": "Šūviai: {n}",
+    "lib.arcade.dotsLeft": "Liko {n} taškų",
+    "lib.arcade.note.kakuro": "Užpildyk baltus langelius skaitmenimis 1–9 taip, kad kiekvienos eilės suma būtų lygi juodame langelyje nurodytai užuominai (skaičius viršuje dešinėje skirtas eilei į dešinę, apačioje kairėje — eilei žemyn), o eilėje skaitmenys nesikartotų. Judėk rodyklėmis.",
+    "lib.arcade.note.kenken": "Užpildyk tinklelį skaičiais nuo 1 iki N taip, kad nė vienas skaičius nesikartotų eilutėje ar stulpelyje. Kiekviena storai apibrėžta grupė rodo tikslą ir veiksmą (+, −, ×, ÷): grupės skaičiai turi duoti tą rezultatą. Judėk rodyklėmis.",
+    "lib.arcade.note.wordGuess": "Atspėk paslaptingą anglišką žodį. Po kiekvieno bandymo žalia reiškia teisingą raidę teisingoje vietoje, geltona — raidę, kuri yra žodyje, bet kitur, o pilka — raidę, kurios žodyje nėra. Rašyk klaviatūra arba ekrano klavišais ir paspausk Enter, kad pateiktum. Aukštesniuose lygiuose ilgesni žodžiai ir mažiau bandymų.",
+    "lib.arcade.note.hangman": "Atspėk paslaptingą anglišką žodį rinkdamas raides po vieną. Kiekviena klaidinga raidė prideda kūno dalį pakartam žmogeliui; kai baigiasi klaidos, pralaimi. Aukštesniuose lygiuose ilgesni žodžiai ir mažiau leidžiamų klaidų.",
+    "lib.arcade.note.scramble": "Sudėliok sumaišytas raides į tikrą anglišką žodį ir įrašyk jį atsakymo laukelyje. Kiekvienas lygis turi 5 žodžius; išspręsk bent 4, kol nesibaigė žodžio laikmatis, kad įveiktum lygį. Užuomina atskleidžia pirmąją raidę.",
+    "lib.arcade.cellsLeft": "Liko tuščių langelių: {n}",
+    "lib.arcade.wrongN": "{n} langelių neteisingi.",
+    "lib.arcade.noError": "Kol kas klaidų nerasta.",
+    "lib.arcade.tooShort": "Per mažai raidžių",
+    "lib.arcade.answerIs": "Atsakymas: {w}",
+    "lib.arcade.livesLeft": "Liko klaidingų bandymų: {n}",
+    "lib.arcade.yourAnswer": "Tavo atsakymas",
+    "lib.arcade.skip": "Praleisti",
+    "lib.arcade.notThis": "Neteisinga, bandyk dar kartą.",
+    "lib.arcade.startsWith": "Pirma raidė: {c}",
+    "lib.arcade.note.domino": "Kiekvienas žaidėjas gauna 7 kauliukus; pradeda turintis aukščiausią dublį. Žaisk kauliuką, kurio skaičius atitinka vieną grandinės galą. Jei negali žaisti, imk iš krūvos, kol galėsi; jei ji tuščia, praleisk ėjimą. Pirmas atsikratęs kauliukų laimi; jei abu užblokuoti, laimi mažesnė taškų suma.",
+    "lib.arcade.note.hearts": "Keturi žaidėjai, po 13 kortų. Pradeda kryžių dvejetas. Privalai sekti mastį, jei gali. Kiekviena širdis yra 1 taškas, o pikų dama — 13; paėmęs lupimą pasiima jo taškus. Mažiau yra geriau, o paėmus visus 26 taškus visi kiti gauna po 26. Negali eiti širdimi, kol jos nebuvo išsimestos. Po paskutinės rankos laimi turintis mažiausią (arba lygiai mažiausią) rezultatą.",
+    "lib.arcade.note.holdem": "Akistata su kompiuteriu tik su virtualiais žetonais. Kiekvienas žaidėjas gauna 2 slaptas kortas, o 5 bendros kortos atidengiamos (flopas, ternas, riveris); sudaryk geriausią 5 kortų ranką. Kiekviename rate gali mesti, sulyginti (arba praleisti) arba pakelti. Aklieji didėja kas 4 rankas. Laimi, kai kompiuteriui pritrūksta žetonų, arba turėdamas daugiau žetonų pasiekus rankų limitą. Tikrų pinigų nėra.",
+    "lib.arcade.dmDraw": "Traukti kauliuką",
+    "lib.arcade.dmPass": "Praleisti",
+    "lib.arcade.dmEmpty": "Dar nesužaista jokių kauliukų",
+    "lib.arcade.dmYard": "Krūva: {n} kauliukų",
+    "lib.arcade.dmLeft": "Kairysis galas",
+    "lib.arcade.dmRight": "Dešinysis galas",
+    "lib.arcade.dmTie": "Lygiosios! Abi pusės lygios.",
+    "lib.arcade.hrHand": "Ranka {n}/{t}",
+    "lib.arcade.hrTook": "{p} laimi lupimą ({n} taškų).",
+    "lib.arcade.hrIllegal": "Šios kortos žaisti negali (sek mastį arba širdimi dar negalima eiti).",
+    "lib.arcade.blinds": "Didysis akliasis: {n}",
+    "lib.arcade.pot": "Bankas: {n}",
+    "lib.arcade.fold": "Mesti",
+    "lib.arcade.check": "Praleisti",
+    "lib.arcade.callN": "Sulyginti {n}",
+    "lib.arcade.raiseTo": "Pakelti iki",
+    "lib.arcade.raiseN": "Pakelti iki {n}",
+    "lib.arcade.thOppFold": "Kompiuteris meta; šią ranką laimi tu.",
+    "lib.arcade.thYouFold": "Tu metei.",
+    "lib.arcade.thOppWin": "Kompiuteris laimi šią ranką",
+    "lib.arcade.thYouWin": "Tu laimi šią ranką",
+    "lib.arcade.thSplit": "Padalytas bankas",
+    "lib.arcade.thAiFold": "Kompiuteris meta.",
+    "lib.arcade.thAiRaise": "Kompiuteris pakelia iki {n}.",
+    "lib.arcade.thAiCall": "Kompiuteris sulygina / praleidžia.",
+    "lib.arcade.hand.high": "Aukščiausia korta",
+    "lib.arcade.hand.pair": "Pora",
+    "lib.arcade.hand.twoPair": "Dvi poros",
+    "lib.arcade.hand.trips": "Trys vienodos",
+    "lib.arcade.hand.straight": "Seka",
+    "lib.arcade.hand.flush": "Spalva",
+    "lib.arcade.hand.full": "Pilni namai",
+    "lib.arcade.hand.quads": "Keturios vienodos",
+    "lib.arcade.hand.sflush": "Spalvos seka",
+    "lib.arcade.note.nback": "3x3 tinklelyje paeiliui užsidega kvadratai. Paspausk „Sutampa!“ (arba tarpą), kai užsidegusi vieta tokia pati kaip prieš N žingsnių (N rodomas viršuje). Norint įveikti lygį reikia bent 80 % teisingų sprendimų. Aukštesniuose lygiuose naudojamas didesnis N.",
+    "lib.arcade.nbMatch": "Sutampa!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Teisingai: {a} · Neteisingai: {b}",
+    "lib.arcade.nbAcc": "Tikslumas: {n} %",
+    "lib.arcade.note.clicker": "Spaudyk sausainį, kad keptum sausainius, tada išleisk juos padėjėjams, kurie kepa automatiškai (kainos auga su kiekvienu pirkiniu). Iškepk tikslinį sausainių skaičių per 2 minutes, kad įveiktum lygį.",
+    "lib.arcade.ckCursor": "Žymeklis",
+    "lib.arcade.ckGrandma": "Kepanti močiutė",
+    "lib.arcade.ckFarm": "Ūkis",
+    "lib.arcade.ckMine": "Cukraus kasykla",
+    "lib.arcade.ckFactory": "Fabrikas",
+    "lib.arcade.ckCookie": "Sausainis",
+    "lib.arcade.ckEarned": "Iškepta: {n}/{t}",
+    "lib.arcade.chips2": "Sausainiai: {n}",
+    "lib.arcade.ckCps": "{n} sausainių per sekundę",
+    "lib.arcade.note.onet": "Pasirink dvi vienodas plyteles, kurias galima sujungti keliu su daugiausia 2 posūkiais, nekertančiu kitų plytelių, kad jas pašalintum. Pašalink visas plyteles, kol nesibaigė laikas, ir laimėsi. Kai nebėra ėjimų, gali sumaišyti (ribotas kartų skaičius).",
+    "lib.arcade.shuffle": "Maišyti",
+    "lib.arcade.tilesLeft": "Liko {n} plytelių",
+    "lib.arcade.autoShuffle": "Nebėra ėjimų — sumaišyta automatiškai.",
+    "lib.arcade.note.jigsaw": "Paveikslėlis supjaustytas gabalėliais ir sumaišytas. Palieski vieną gabalėlį, tada kitą, kad juos sukeistum, ir sudėliok paveikslėlį pagal pavyzdį. Gabalėliai teisingoje vietoje gauna žalią rėmelį. Aukštesniuose lygiuose daugiau gabalėlių.",
+    "lib.arcade.jgRef": "Pavyzdys",
+    "lib.arcade.jgPlaced": "Vietoje: {a}/{b}",
+    "lib.arcade.golfStrokes": "Smūgiai: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Žaidi baltomis šaškėmis, judančiomis iš viršaus dešinės aplink į apačią dešinę (tavo namai). Mesk kauliukus, spustelėk šaškę, kurią nori perkelti, tada spustelėk paryškintą tikslą. Nusileidus ant taško su lygiai viena priešininko šaške, ji išmušama ant vidurinės juostos ir tas žaidėjas pirmiausia turi ją grąžinti į žaidimą. Negalima nusileisti ant taško su dviem ar daugiau priešininko šaškių. Kai visos 15 tavo šaškių yra namų zonoje (paskutiniai 6 taškai), gali jas išvesti. Pirmas išvedęs visas 15 laimi.",
+    "lib.arcade.bgRoll": "Mesti kauliukus",
+    "lib.arcade.bgOff": "Išvesti",
+    "lib.arcade.bgRollFirst": "Mesti kauliukus",
+    "lib.arcade.bgInfo": "Išvesta: tu {a} · kompiuteris {b} · Taškai: {c} / {d}",
+    "lib.arcade.youNoMove": "Nebeturi leistinų ėjimų.",
+    "lib.arcade.note.tienlen": "Keturi žaidėjai, po 13 kortų. Kortų eilė nuo žemiausios: 3, 4, … K, A, 2; mastys nuo žemiausios: pikai, kryžiai, būgnai, širdys. Pradeda turintis pikų trejetą. Žaisk vieną kortą, porą, tris vienodas, keturias vienodas arba 3 ar daugiau iš eilės einančių kortų seką (be dvejetų). Kitas žaidėjas privalo žaisti to paties tipo aukštesnį derinį arba praleisti; keturios vienodos gali sumušti vieną dvejetą arba dvejetų porą. Kai visi kiti praleidžia, paskutinis žaidęs gali eiti bet kuo. Pirmas atsikratęs kortų laimi. Pasirink kortas ir paspausk Žaisti.",
+    "lib.arcade.tlPlay": "Žaisti",
+    "lib.arcade.tlPass": "Praleisti",
+    "lib.arcade.tlClear": "Išvalyti pasirinkimą",
+    "lib.arcade.tlPassed": "praleido",
+    "lib.arcade.tlFree": "Stalas tuščias — gali eiti bet kuo",
+    "lib.arcade.tlLeft": "Liko kortų: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} praleidžia.",
+    "lib.arcade.tlBad": "Pasirinktos kortos nesudaro tinkamo derinio.",
+    "lib.arcade.tlLow": "Šis derinys nepakankamai aukštas, kad sumuštų stalą.",
+    "lib.arcade.note.td": "Palieski tuščią langelį (ne kelią), kad pastatytum šaudantį bokštą, kuris kainuoja aukso; palieski bokštą dar kartą, kad jį patobulintum (iki 5 lygio). Bokštai automatiškai šaudo į toliausiai nukeliavusį priešą atstumo ribose. Nugalėk priešus, kad gautum daugiau aukso; jei 15 priešų pasiekia pabaigą, pralaimi. Išgyvenk visas bangas, kad įveiktum lygį.",
+    "lib.arcade.tdInfo": "Auksas: {g} · Banga {w}/{t}",
+    "lib.arcade.tdCost": "Bokštas: {n}",
+    "lib.arcade.note.colorNum": "Kiekvienas langelis turi skaičių, atitinkantį paletės spalvą. Pasirink spalvą, tada liesk langelius su tuo skaičiumi, kad juos nudažytum; lietimas netinkama spalva nieko nenudažo. Teisingai nudažyk visus langelius, kad užbaigtum paveikslėlį. Aukštesniuose lygiuose daugiau spalvų.",
+    "lib.arcade.cnWrong": "Netinkama spalva — patikrink skaičių langelyje.",
+    "lib.arcade.note.yukon": "Kaip Klondaikas, bet be atsargų krūvos: bet kurią atverstą kortą galima perkelti kartu su visomis ant jos esančiomis kortomis, net jei jos ne iš eilės; tik pirma korta turi tikti tikslo stulpeliui (mažėjančia tvarka, pakaitomis raudona ir juoda; karalius į tuščią stulpelį). Sudėk visas 52 kortas ant keturių pamatų nuo tūzo iki karaliaus. Žemuose lygiuose pradžioje daugiau kortų jau atversta.",
+    "lib.arcade.yukonFree": "Užverstų kortų: {n}",
+    "lib.arcade.note.chinesechk": "Žaidi mėlynomis figūromis dešiniajame kampe; perkelk visas 10 į priešingą kairįjį kampą anksčiau už kompiuterį. Kiekvieną ėjimą perkeli vieną figūrą: žingsnis į gretimą tuščią duobutę arba šuolis per bet kurią figūrą į tuščią duobutę iškart už jos, ir šokti galima tiek kartų iš eilės, kiek nori. Palieski savo figūrą, tada žalią duobutę, kad pajudėtum.",
+    "lib.arcade.ccTurn": "Tavo ėjimas · Ėjimas {n}",
+    "lib.arcade.ccDraw": "Ėjimai baigėsi — lygiosios.",
+    "lib.arcade.note.maubinh": "Tu ir kompiuteris gaunate po 13 kortų ir išdėliojate jas į 3 rankas: galinė 5 kortų ranka, vidurinė 5 kortų ranka ir priekinė 3 kortų ranka. Galinė ranka turi būti bent tokia pat stipri kaip vidurinė, o vidurinė — bent tokia pat kaip priekinė; kitaip tavo išdėliojimas klaidingas ir pralaimi visą raundą. Palieski kortą, tada eilę, kur ji eina (palieski padėtą kortą, kad ją atsiimtum). Kiekviena laimėta ranka duoda 1 tašką; laimėjus visas 3 — 6. Žaisk 5 raundus — teigiama bendra suma įveikia lygį. Priekinė ranka gali būti tik aukščiausia korta, pora arba trys vienodos.",
+    "lib.arcade.mbHigh": "Aukščiausia korta",
+    "lib.arcade.mbPair": "Pora",
+    "lib.arcade.mbTwoPair": "Dvi poros",
+    "lib.arcade.mbTrips": "Trys vienodos",
+    "lib.arcade.mbStraight": "Seka",
+    "lib.arcade.mbFlush": "Spalva",
+    "lib.arcade.mbFull": "Pilni namai",
+    "lib.arcade.mbQuads": "Keturios vienodos",
+    "lib.arcade.mbSflush": "Spalvos seka",
+    "lib.arcade.mbBack": "Galinė ranka",
+    "lib.arcade.mbMid": "Vidurinė ranka",
+    "lib.arcade.mbFront": "Priekinė ranka",
+    "lib.arcade.mbFoe": "Kompiuteris",
+    "lib.arcade.mbYou": "Tu",
+    "lib.arcade.mbFoul": "Klaidingas išdėliojimas!",
+    "lib.arcade.mbFoeFoul": "Kompiuteris klaidingai išdėliojo!",
+    "lib.arcade.mbConfirm": "Rodyti kortas",
+    "lib.arcade.mbReset": "Išvalyti",
+    "lib.arcade.mbHand": "Tavo ranka",
+    "lib.arcade.mbRound": "Raundas {a}/{b}",
+    "lib.arcade.mbTotal": "Iš viso: {n}",
+    "lib.arcade.mbFinish": "Baigti",
+    "lib.arcade.mbNext": "Kitas raundas",
+    "lib.arcade.mbDraw": "Taškai lygūs — žaiskite dar kartą.",
+    "lib.arcade.mbAutoMsg": "Štai siūlomas išdėliojimas. Gali jį pakeisti prieš rodydamas kortas.",
+    "lib.arcade.note.phom": "Du žaidėjai; kiekvienas gauna 9 kortas (pradedantis gauna 10). Derinys — 3 ar daugiau tos pačios vertės kortų arba 3 ar daugiau iš eilės einančių vienos mastės kortų (tūzas tik žemas). Savo ėjime traukk kortą iš kaladės arba paimk kortą, kurią priešininkas ką tik išmetė, jei ji su tavo ranka sudaro derinį (paimtą kortą privalai pasilikti), tada išmesk vieną kortą. Kai kiekvienas žaidėjas išmeta 4 kortas, raundas baigiasi ir laimi turintis mažesnę kortų už derinių sumą (tūzas = 1 … karalius = 13). Jei po išmetimo visos tavo kortos yra deriniuose, išeini („Ù“) ir laimi iškart. Žaliai apvestos kortos yra tavo geriausiame derinių rinkinyje.",
+    "lib.arcade.pmDraw": "Traukti",
+    "lib.arcade.pmEat": "Paimti išmestą",
+    "lib.arcade.pmThrow": "Išmesti",
+    "lib.arcade.pmFoeAte": "Kompiuteris paėmė tavo kortą.",
+    "lib.arcade.pmFoeU": "Kompiuteris išėjo!",
+    "lib.arcade.pmTurn": "Ėjimas {a}/{b}",
+    "lib.arcade.pmLeft": "Ne deriniuose: {n}",
+    "lib.arcade.pmDeck": "Kaladė: {n}",
+    "lib.arcade.pmFoeHand": "Kompiuterio ranka",
+    "lib.arcade.pmFoeDisc": "Kompiuterio išmestos",
+    "lib.arcade.pmFoeEaten": "Kompiuteris paėmė",
+    "lib.arcade.pmMyDisc": "Tavo išmestos",
+    "lib.arcade.pmAte": "Paėmei šią kortą — pasilik ją derinyje.",
+    "lib.arcade.pmKeep": "Paimtą kortą privalai pasilikti — išmesk kitą.",
+    "lib.arcade.pmU": "Išėjai! Laimi iškart.",
+    "lib.arcade.pmYou": "Tu",
+    "lib.arcade.pmFoe": "Kompiuteris",
+    "lib.arcade.pmDraw2": "Taškai lygūs.",
+    "lib.arcade.note.shogi": "Šogis — tai japoniški šachmatai. Žaidi apatine puse ir ėjimą pradedi pirmas; kompiuterio figūros nukreiptos priešinga kryptimi. Paimtos figūros patenka į tavo ranką ir vietoj ėjimo gali būti padėtos ant bet kurio tuščio langelio (niekada pėstininko į stulpelį, kuriame jau turi nepaaukštintą pėstininką, ir niekada figūros į eilę, kur ji nebegalėtų judėti). Figūra, įžengusi į paskutines tris priešininko eiles, iš jų išėjusi ar jose judanti, gali būti paaukštinta (išskyrus karalių ir auksą); paaukštinimas privalomas, jei figūra kitaip nebeturėtų ėjimų. Pamatuok priešo karaliui ir laimėsi. Kandži: 歩 pėstininkas, 香 ietininkas, 桂 žirgas, 銀 sidabras, 金 auksas, 角 rikis, 飛 bokštas, 玉 karalius; と, 馬, 竜 ir kitos raudonos figūros yra paaukštintos.",
+    "lib.arcade.sgPromote": "Paaukštinti",
+    "lib.arcade.sgKeep": "Nepaaukštinti",
+    "lib.arcade.sgCheck": "Tau šachas!",
+    "lib.arcade.sgWin": "Matas — tu laimėjai.",
+    "lib.arcade.sgLose": "Tau padarė matą.",
+    "lib.arcade.sgAskPromote": "Paaukštinti šią figūrą?",
+    "lib.arcade.note.janggi": "Dzangis — tai korėjietiški šachmatai. Žaidi mėlynomis figūromis apačioje ir ėjimą pradedi pirmas. Skirtingai nei sjangči, čia nėra upės, o abiejuose rūmuose yra įstrižainių. Generolas ir sargybiniai juda vienu žingsniu rūmų linijomis (įskaitant įstrižaines); vežimas taip pat slysta ir ima rūmų įstrižainėmis; patranka turi peršokti lygiai vieną figūrą (ne kitą patranką), kad judėtų ar imtų, ir negali imti patrankos; žirgas žengia vieną žingsnį tiesiai, tada įstrižai, dramblys — vieną tiesiai ir du įstrižai, abu užblokuojami figūros kelyje; kareiviai juda pirmyn arba į šonus, o priešo rūmuose ir įstrižai pirmyn. Du generolai niekada negali stovėti veidas į veidą. Pamatuok priešo generolui ir laimėsi. Kompiuteris niekada nepraleidžia ėjimo.",
+    "lib.arcade.jgCheck": "Tau šachas!",
+    "lib.arcade.jgWin": "Matas — tu laimėjai.",
+    "lib.arcade.jgLose": "Tau padarė matą.",
+    "lib.arcade.note.pinball": "Paspausk tarpą, ↑ arba palieski stalą, kad paleistum kamuoliuką. Laikyk ← (arba palieski kairę stalo pusę), kad pakeltum kairįjį mentę, o → (arba dešinę pusę) — dešinįjį; užuot laikęs, spausk ritmu. Apvalūs buferiai duoda po 100 taškų. Turi 3 kamuoliukus; pasiek tikslinį rezultatą, kol jie neišseko, kad įveiktum lygį.",
+    "lib.arcade.pinBalls": "Kamuoliukai: {n} · Tikslas: {t}",
+    "lib.arcade.note.cribbage": "Kribidžas dviem žaidėjams, lenktynės iki 61 taško. Kiekvieną dalijimą gauni 6 kortas ir 2 padedi veidu žemyn į lovelį (jis priklauso dalytojui). Atverčiama pradinė korta. Tada pakaitomis žaidžiate kortas veidu į viršų, o einamoji suma niekada neviršija 31: pasiekus 15 arba 31 gaunami 2 taškai, sutapimas su paskutine korta duoda 2/6/12, 3 ar daugiau kortų seka (bet kuria tvarka) duoda tiek taškų, kiek joje kortų, o kai niekas nebegali žaisti, paskutinis žaidęs gauna 1 („Go“). Tada skaičiuojama kiekviena 4 kortų ranka su pradine korta: kiekvienas derinys, kurio suma 15, duoda 2, kiekviena pora 2, 3+ kortų seka tiek, kiek kortų, keturios vienos mastės kortos 4 (5 su pradine), o valetas, atitinkantis pradinės kortos mastį, 1. Pirmas skaičiuoja nedalijęs, paskui dalytojas skaičiuoja savo ranką ir lovelį.",
+    "lib.arcade.cbFifteen": "Penkiolika",
+    "lib.arcade.cbPair": "Pora",
+    "lib.arcade.cbRun": "Seka",
+    "lib.arcade.cbFlush": "Spalva",
+    "lib.arcade.cbNobs": "Valetas, atitinkantis pradinę kortą",
+    "lib.arcade.cbHeels": "Valetas kaip pradinė korta",
+    "lib.arcade.cbYou": "Tu",
+    "lib.arcade.cbFoe": "Kompiuteris",
+    "lib.arcade.cbLast": "Paskutinė korta",
+    "lib.arcade.cbCount": "Suma: {n}",
+    "lib.arcade.cbYouDeal": "Tu dalini",
+    "lib.arcade.cbFoeDeal": "Kompiuteris dalija",
+    "lib.arcade.cbPick": "Pasirink 2 kortas į lovelį",
+    "lib.arcade.cbCrib": "Lovelis",
+    "lib.arcade.cbYourHand": "Tavo ranka",
+    "lib.arcade.cbFoeHand": "Kompiuterio ranka",
+    "lib.arcade.cbStarter": "Pradinė korta",
+    "lib.arcade.cbZero": "0 taškų",
+    "lib.arcade.cbPlayed": "Sužaista",
+    "lib.arcade.cbToCrib": "Į lovelį",
+    "lib.arcade.cbNext": "Tęsti",
+    "lib.arcade.cbHand": "Ranka"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Galutiniai kryžiukai-nuliukai",
       "desc": "Kryžiukai-nuliukai 9 mažose lentose: jūsų pasirinktas langelis nulemia, kur turi žaisti priešininkas; prieš kompiuterį per 10 lygių."
+    },
+    "pong": {
+      "name": "Pongas",
+      "desc": "Nuvaryk kamuoliuką pro kompiuterį; laimi pirmasis surinkęs 5 taškus. 10 lygių su vis greitesniu ir aštresniu varžovu."
+    },
+    "space-shooter": {
+      "name": "Kosminė šaudyklė",
+      "desc": "Valdyk savo laivą, šaudyk priešo laivus ir venk jų ugnies; 10 lygių su didesnėmis bangomis, atsakomąja ugnimi ir stipresniais priešais."
+    },
+    "asteroids": {
+      "name": "Asteroidai",
+      "desc": "Sukis, traukk ir šaudyk, kad suskaldytum kosmines uolas; didelės uolos skyla į mažesnes. 10 lygių su gausesnėmis ir greitesnėmis uolomis."
+    },
+    "maze": {
+      "name": "Labirintas",
+      "desc": "Raskite kelią iš labirinto, kol nesibaigė laikas; 10 lygių nuo mažų iki didelių labirintų, aukštesniuose lygiuose su rūku."
+    },
+    "road-cross": {
+      "name": "Kelio kirtimas (Frogger tipo)",
+      "desc": "Perkelk varlę per judrius kelius ir upes su plūduriuojančiais rąstais ir grįžk namo 3 kartus; 10 lygių su greitesniu eismu ir upe aukštesniuose lygiuose."
+    },
+    "flappy": {
+      "name": "Flappy Bird tipo žaidimas",
+      "desc": "Spausk, kad suplaktum sparnais ir praskristum pro tarpus tarp vamzdžių; 10 lygių su siauresniais tarpais ir didėjančiu greičiu."
+    },
+    "runner": {
+      "name": "Dino bėgikas",
+      "desc": "Šok per kaktusus ir lenkis po paukščiais; nubėk pakankamai toli, kad įveiktum kiekvieną iš 10 lygių, nors greitis nuolat auga."
+    },
+    "whack-a-mole": {
+      "name": "Kurmių mušimas",
+      "desc": "Trenk kurmius, iššokančius iš skylių, kol nesibaigė laikas, ir venk bombų; 10 lygių nuo lėtų iki labai greitų."
+    },
+    "simon": {
+      "name": "Saimonas (spalvų atmintis)",
+      "desc": "Įsimink ir pakartok spalvų ir garsų seką; ilgesnės sekos per 10 lygių, nuo 7 lygio — 6 mygtukai."
+    },
+    "aim-trainer": {
+      "name": "Taikymosi treniruoklis",
+      "desc": "Pataikyk į taikinius, kurie atsiranda atsitiktinai ir greitai išnyksta; per 10 lygių taikiniai mažėja, o tavo reakcijos laikas matuojamas."
+    },
+    "quick-math": {
+      "name": "Greita matematika",
+      "desc": "Skaičiuok mintyse sudėtį, atimtį, daugybą ir dalybą spaudžiamas laiko; 10 lygių nuo paprastų sumų iki reiškinių."
+    },
+    "reaction": {
+      "name": "Reakcijos laiko testas",
+      "desc": "Spustelėk tą akimirką, kai ekranas tampa žalias; tavo 5 raundų vidurkis turi atitikti lygio ribą, kuri per 10 lygių griežtėja."
+    },
+    "kalah": {
+      "name": "Kalah (Mankala)",
+      "desc": "Sėk sėklas aplink duobutes, imk priešininko sėklas ir ėjimą kartok, kai nusileidi savo sandėlyje; žaisk prieš kompiuterį 10 lygių nuo lengvų iki sunkių."
+    },
+    "snakes-ladders": {
+      "name": "Gyvatės ir kopėčios",
+      "desc": "Mesk kauliuką nuo 1 iki 100 langelio, lipk kopėčiomis, venk gyvačių ir pasiek finišą anksčiau už varžovus; 10 lygių."
+    },
+    "nine-mens-morris": {
+      "name": "Malūnas (Nine Men’s Morris)",
+      "desc": "Dėk, stumk ir „skrisk“ savo figūromis, kad sudarytum tris iš eilės ir pašalintum priešininko figūras; žaisk prieš kompiuterį 10 lygių."
+    },
+    "battleship": {
+      "name": "Jūrų mūšis",
+      "desc": "Surask ir nuskandink kompiuterio laivyną 10x10 tinklelyje anksčiau, nei jis nuskandins tavąjį; 10 lygių, kuriuose kompiuteris vis gudriau spėlioja."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (moliūgas, krabas, žuvis, krevetė)",
+      "desc": "Tradicinis vietnamiečių kauliukų žaidimas: statyk virtualias monetas ant gyvūnų ir pakratyk tris kauliukus; pasiek tikslinį monetų skaičių per 10 lygių (jokių tikrų pinigų)."
+    },
+    "baccarat": {
+      "name": "Bakara",
+      "desc": "Statyk ant Žaidėjo, Bankininko arba Lygiųjų su kortomis, dalijamomis pagal standartines taisykles, naudodamas virtualias monetas; pasiek tikslinį monetų skaičių per 10 lygių (jokių tikrų pinigų)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (trijų kortų žaidimas)",
+      "desc": "Palygink 3 kortų ranką su dalytoju: trys vienodos, trys paveikslėlių kortos, tada nuo 9 taškų iki 0; virtualios monetos, 10 lygių, jokių tikrų pinigų."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Žymėk iškviestus skaičius savo 5x5 kortelėje ir šūktelk BINGO anksčiau už kompiuterio varžovus; per 10 lygių skaičiai šaukiami greičiau."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (penki kauliukai)",
+      "desc": "Mesk penkis kauliukus, pasilik gerus ir užpildyk 13 taškų langelių; pasiek tikslinį rezultatą per 10 lygių."
+    },
+    "crazy-eights": {
+      "name": "Pamišę aštuntukai",
+      "desc": "Derink mastį ar vertę, aštuntukai keičia mastį; atsikratyk kortų anksčiau nei 1–3 kompiuterio varžovai per 10 lygių."
+    },
+    "car-race": {
+      "name": "Automobilių lenktynės — išsisukinėjimas",
+      "desc": "Keisk juostas, kad išvengtum priekyje esančių automobilių, ir nuvažiuok visą atstumą; 10 lygių su daugiau juostų ir greitesniu eismu."
+    },
+    "sky-jump": {
+      "name": "Dangaus šuoliai",
+      "desc": "Šokinėk iš platformos į platformą ir užlipk kuo aukščiau nenukritęs; 10 lygių su retesnėmis, judančiomis ir lūžtančiomis platformomis."
+    },
+    "gold-miner": {
+      "name": "Aukso kasėjas",
+      "desc": "Nuleisk kablį, kad ištrauktum aukso ir deimantų, venk sunkių uolų ir pasiek tikslinę sumą per 60 sekundžių; 10 lygių."
+    },
+    "fruit-slice": {
+      "name": "Vaisių pjaustymas",
+      "desc": "Braukyk, kad perpjautum aukštyn lekiančius vaisius, ir venk bombų; 10 lygių su daugiau vaisių ir daugiau bombų."
+    },
+    "basketball": {
+      "name": "Krepšinio metimai",
+      "desc": "Patempk ir paleisk, kad įmestum kamuolį į lanką per ribotą metimų skaičių; 10 lygių, nuo 4 lygio lankas juda."
+    },
+    "bubble-shooter": {
+      "name": "Burbulų šaudyklė",
+      "desc": "Šaudyk burbulais, sujunk 3 ar daugiau tos pačios spalvos, kad juos sprogdintum, ir pašalink visus, kol jie nepasiekė dugno; 10 lygių su daugiau spalvų."
+    },
+    "dot-chase": {
+      "name": "Taškų gaudynės",
+      "desc": "Suvalgyk visus labirinto taškus, venk tave vejančių vaiduoklių; 10 lygių su gausesniais ir gudresniais vaiduokliais."
+    },
+    "kakuro": {
+      "name": "Kakuro (kryžminės sumos)",
+      "desc": "Užpildyk baltus langelius skaitmenimis 1–9 taip, kad kiekvienos eilės suma atitiktų užuominą be pasikartojimų; 10 lygių, tinkleliai nuo 5x5 iki 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Užpildyk tinklelį be pasikartojimų eilutėse ir stulpeliuose taip, kad kiekviena grupė duotų savo tikslą su savo veiksmu; 10 lygių, tinkleliai nuo 3x3 iki 6x6."
+    },
+    "word-guess": {
+      "name": "Žodžių spėjimas (Wordle tipo)",
+      "desc": "Atspėk paslaptingą anglišką žodį pagal žalias, geltonas ir pilkas užuominas; 10 lygių su 4–6 raidžių žodžiais ir mažiau bandymų."
+    },
+    "hangman": {
+      "name": "Kartuvės",
+      "desc": "Atspėk anglišką žodį raidė po raidės, kol nepritrūko klaidingų bandymų; 10 lygių su ilgesniais žodžiais ir mažiau klaidų."
+    },
+    "word-scramble": {
+      "name": "Žodžių maišalynė (anagrama)",
+      "desc": "Sudėliok sumaišytas raides į anglišką žodį, kol nesibaigė laikas; 10 lygių, po 5 žodžius kiekviename."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Derink kauliukus prie bet kurio grandinės galo ir atsikratyk kauliukų anksčiau už kompiuterį; 10 lygių, kuriuose kompiuteris vis gudresnis."
+    },
+    "hearts": {
+      "name": "Širdys (Hearts)",
+      "desc": "Venk širdžių ir pikų damos keturių žaidėjų kortų žaidime; mažesnis rezultatas geresnis; 10 lygių prieš gudresnius kompiuterio žaidėjus."
+    },
+    "texas-holdem": {
+      "name": "Teksaso holdemas (virtualūs žetonai)",
+      "desc": "Pokeris akistata su kompiuteriu su virtualiais žetonais: mesk, sulyginti arba pakelti ir laimėk, kai kompiuteriui pritrūksta žetonų; 10 lygių, jokių tikrų pinigų."
+    },
+    "n-back": {
+      "name": "N-Back atmintis",
+      "desc": "Stebėk užsidegusį kvadratą ir spausk Sutampa, kai jis toks pat kaip prieš N žingsnių; 10 lygių, N iki 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Spaudyk, kad keptum sausainius, pirk padėjėjus, kurie kepa automatiškai, ir pasiek tikslą per 2 minutes; 10 lygių."
+    },
+    "tile-connect": {
+      "name": "Plytelių sujungimas (Onet tipo)",
+      "desc": "Sujunk vienodas plyteles keliu su ne daugiau kaip dviem posūkiais ir išvalyk lentą, kol nesibaigė laikas; 10 lygių, vis didesnės lentos."
+    },
+    "jigsaw": {
+      "name": "Paveikslėlių dėlionė",
+      "desc": "Keisk sumaišytus gabalėlius vietomis, kad sudėliotum paveikslėlį; 10 lygių nuo 3x3 iki 6x6 gabalėlių."
+    },
+    "mini-golf": {
+      "name": "Mini golfas",
+      "desc": "Patrauk atgal ir paleisk, kad įvarytum kamuoliuką į duobutę per smūgių limitą; 10 aikštynų su sienomis ir smėliu."
+    },
+    "backgammon": {
+      "name": "Tavlė (Backgammon)",
+      "desc": "Mesk kauliukus, parvesk šaškes namo ir išvesk jas anksčiau už kompiuterį, pakeliui išmušdamas jo pavienes šaškes; 10 lygių."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Trylika)",
+      "desc": "Vietnamiečių kortų žaidimas keturiems, kuriame reikia atsikratyti kortų: žaisk pavienes kortas, poras, sekas ir keturias vienodas, kad pirmas atsikratytum kortų; 10 lygių."
+    },
+    "tower-defense": {
+      "name": "Bokštų gynyba",
+      "desc": "Statyk ir tobulink bokštus palei kelią, kad sustabdytum kiekvieną priešų bangą; 10 lygių trijose skirtingose žemėlapiuose."
+    },
+    "color-by-number": {
+      "name": "Spalvinimas pagal skaičius",
+      "desc": "Nuspalvink kiekvieną langelį spalva, atitinkančia jo skaičių, kad atskleistum paveikslėlį; 10 paveikslėlių, kiekvieną kartą su daugiau spalvų."
+    },
+    "yukon": {
+      "name": "Jukonas (pasjansas)",
+      "desc": "Klondaikas be atsargų krūvos: perkelk bet kurią atverstą kortą su viskuo, kas ant jos; 10 lygių, vėlesniuose mažiau atverstų kortų."
+    },
+    "chinese-checkers": {
+      "name": "Kinų šaškės",
+      "desc": "Žvaigždės formos šuolių ir žingsnių žaidimas prieš kompiuterį: pirmas perkelk visas 10 figūrų į priešingą kampą; 10 lygių."
+    },
+    "mau-binh": {
+      "name": "Mậu Binh (kinų pokeris)",
+      "desc": "Išdėliok 13 kortų į tris rankas po 5, 5 ir 3 kortas ir nugalėk kompiuterį; 5 raundai per lygį, 10 lygių."
+    },
+    "phom": {
+      "name": "Phỏm (vietnamietiškas ramis)",
+      "desc": "Vietnamietiškas ramis dviem prieš kompiuterį: traukk arba imk išmestą kortą, sudaryk derinius ir išeik; laimi mažiausiai likusių taškų turintis; 10 lygių."
+    },
+    "shogi": {
+      "name": "Šogis (japoniški šachmatai)",
+      "desc": "Žaisk šogį prieš kompiuterį: dėk paimtas figūras, aukštink ir pamatuok karaliui; 10 lygių su ėjimo atšaukimu."
+    },
+    "janggi": {
+      "name": "Dzangis (korėjietiški šachmatai)",
+      "desc": "Žaisk korėjietiškus šachmatus prieš kompiuterį: rūmų įstrižainės, patrankos šuoliai per vieną figūrą, drambliai trijų žingsnių; 10 lygių su ėjimo atšaukimu."
+    },
+    "pinball": {
+      "name": "Pinbolas",
+      "desc": "Judink mentes kairėn ir dešinėn, kad kamuoliukas liktų žaidime, pataikyk į buferius ir pasiek tikslinį rezultatą, kol neišseko 3 kamuoliukai; 10 lygių."
+    },
+    "cribbage": {
+      "name": "Kribidžas",
+      "desc": "Kribidžas dviem prieš kompiuterį: lovelis, kaupimas iki 31, rankų skaičiavimas, lenktynės iki 61 taško; 10 lygių."
     }
   },
   "s": {

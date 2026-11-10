@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Họrọ agba iji mejupụta mpaghara dum ị nwere n’akuku aka ekpe n’elu; ọ na-eri igbe agbata obi nwere agba ahụ. Mee ka bọọdụ dum bụrụ otu agba n’ime ọnụọgụ ngagharị ekwere.",
     "lib.arcade.note.mastermind": "Kọmputa na-ezochi ahịrị agba. Họrọ agba maka ọnọdụ ọ bụla, mgbe ahụ pịa Chee. Pin ojii = agba ziri ezi n’ebe ziri ezi; pin ọcha = agba ziri ezi n’ebe na-ezighị ezi. Mepee koodu tupu echiche gị agwụ.",
     "lib.arcade.note.hanoi": "Kpoga diski niile n’osisi ikpeazụ. Kpoga naanị diski dị n’elu osisi n’otu oge, ọ bụkwa mgbe ọ bụla etinyela diski ka ukwuu n’elu nke pere mpe. Pịa osisi mmalite, mgbe ahụ osisi ebumnuche.",
-    "lib.arcade.note.pipes": "Pịa teeji iji tụgharịa ọkpọkọ 90°. Jikọta ọkpọkọ niile n’otu netwọk na-enweghị njedebe mepere emepe (a na-egosi njedebe mepere emepe n’uhie)."
+    "lib.arcade.note.pipes": "Pịa teeji iji tụgharịa ọkpọkọ 90°. Jikọta ọkpọkọ niile n’otu netwọk na-enweghị njedebe mepere emepe (a na-egosi njedebe mepere emepe n’uhie).",
+    "lib.arcade.pongScore": "Gị {a} – {b} kọmputa (onye buru ụzọ {t})",
+    "lib.arcade.kills": "Mebiri: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} nkume fọdụrụ",
+    "lib.arcade.timeLeft": "{n} sekọnd fọdụrụ",
+    "lib.arcade.stepsN": "Nzọụkwụ: {n}",
+    "lib.arcade.crossed": "Ụlọ: {n}/{t}",
+    "lib.arcade.pipes": "Ọkpọkọ gafere: {n}/{t}",
+    "lib.arcade.distance": "Ebe dị anya: {n}/{t} m",
+    "lib.arcade.speedN": "Ọsọ: {n}",
+    "lib.arcade.note.whack-a-mole": "Òkwu na-apụta site n’oghere — pịa ma ọ bụ metụ òkwu aka ka i tie ya. Tie òkwu zuru ezu tupu oge agwụ. Site na larịị 4 e nwere bọmbụ: ịtụ otu na-eme ka i funahụ isi.",
+    "lib.arcade.hole": "Oghere",
+    "lib.arcade.hitsN": "Ihe a tiri: {n}/{t}",
+    "lib.arcade.note.simon": "Egwuregwu a na-egwu usoro agba na ụda — megharịa ya n’otu usoro ahụ. Gburugburu ọ bụla na-agbakwụnye otu nzọụkwụ. Cheta ogologo achọrọ iji gafee larịị. Site na larịị 7 e nwere paịlị 6.",
+    "lib.arcade.seqN": "Usoro: {n}/{t}",
+    "lib.arcade.watch": "Lelee…",
+    "lib.arcade.yourTurnShort": "Oge gị",
+    "lib.arcade.note.aim-trainer": "Ebumnuche na-apụta n’enweghị usoro ma na-efunahụ ngwa ngwa — tie ọtụtụ ka i nwere ike. Ha na-abawanye obere ma na-agba ọsọ. Tie ebumnuche zuru ezu tupu ị gafee njehie 5 ka i gafee larịị.",
+    "lib.arcade.missN": "Njehie: {n}/{t}",
+    "lib.arcade.answer": "Azịza",
+    "lib.arcade.note.quick-math": "Zọpụta n’uche gị ngwa ngwa ka i nwere ike: dee azịza ma pịa Enter. Ajụjụ ọ bụla nwere oge; azịza na-ezighị ezi ma ọ bụ oge gafere na-ewepụ otu ndụ (i nwere 3). Zaa ajụjụ zuru ezu nke ọma ka i gafee larịị.",
+    "lib.arcade.correctN": "Ziri ezi: {n}/{t}",
+    "lib.arcade.note.reaction": "Chere ka ihuenyo ghọọ akwụkwọ ndụ, wee pịa ngwa ngwa ka i nwere ike. Ịpị n’oge adịghị mma bụ njehie (njehie 3 ị tufuo). Nkezi gị na gburugburu 5 ga-agafe oke larịị ahụ.",
+    "lib.arcade.roundN": "Okwu {n}/{t}",
+    "lib.arcade.limitMs": "Oke: {n} ms",
+    "lib.arcade.rxWait": "Chere akwụkwọ ndụ…",
+    "lib.arcade.rxGo": "PỊA!",
+    "lib.arcade.rxEarly": "Ọ dị oge!",
+    "lib.arcade.gameArea": "Ebe egwuregwu",
+    "lib.arcade.note.pong": "Wepụ òké, dọpụta mkpịsị aka gị ma ọ bụ jiri bọtịnụ ← → chịkwaa ihe ịkụ bọl nke ala. Kụọ bọl gafee kọmputa; onye buru ụzọ nwee isi 5 na-emeri. Bọl na-agba ọsọ ugboro ọ bụla a kụrụ ya.",
+    "lib.arcade.note.space-shooter": "Wepụ òké, dọpụta mkpịsị aka gị ma ọ bụ jiri bọtịnụ ← → duzie; ụgbọ gị na-agba égbè n’onwe ya. Bibie ụgbọ ndị iro zuru ezu ka i gafee larịị, ma zere ịkụ ya na égbè ndị iro. I nwere ndụ 3.",
+    "lib.arcade.note.asteroids": "← → na-atụgharị ụgbọ, ↑ na-agba ya, Space na-agba égbè. Bibie nkume niile ka i gafee larịị; nkume ukwu na-agbaji n’ọtụtụ ndị pere mpe. Ụgbọ na-agafe n’akụkụ ihuenyo. I nwere ndụ 3.",
+    "lib.arcade.note.maze": "Jiri bọtịnụ akụ (ma ọ bụ dọpụta, ma ọ bụ bọtịnụ) pụta site n’ebe akwụkwọ ndụ ruo ọkọlọtọ uhie tupu oge agwụ. Site na larịị 5 ụzọ ahụ nwere ájá: ị na-ahụ naanị gburugburu gị, a na-echetakwa ebe i gafere.",
+    "lib.arcade.note.road-cross": "Jiri bọtịnụ akụ, dọpụta ma ọ bụ bọtịnụ ka frọgụ wụpụ site n’ala ruo elu. Zere ụgbọala; site na larịị 5 akụkụ elu bụ osimiri, ya mere wụpụ n’elu osisi na-ese n’elu mmiri. Ruo n’ụlọ ugboro 3 ka i gafee larịị. I nwere ndụ 3.",
+    "lib.arcade.note.flappy": "Metụ ebe egwuregwu, pịa Space ma ọ bụ ↑ ka i fụọ nku. Fefe n’etiti ọkpọkọ ndị ahụ n’emetụghị ọkpọkọ, ala ma ọ bụ elu ụlọ. Larịị ndị dị elu nwere oghere dị warara na ọsọ dị ngwa.",
+    "lib.arcade.note.runner": "Metụ ebe egwuregwu, pịa Space ma ọ bụ ↑ ka i wụpụ n’elu cactus; jide ↓ ka i gbadaa n’okpuru ụmụ nnụnụ dị elu (ma ọ bụ wụpụ n’elu ndị dị ala). Gbaa ọsọ ogologo zuru ezu ka i gafee larịị. Ọsọ na-aga n’ihu na-abawanye.",
+    "lib.arcade.fire": "Gbaa égbè",
+    "lib.arcade.jump": "Wụpụ",
+    "lib.arcade.aimTarget": "Ebumnuche",
+    "lib.game.soundOn": "Mepee ụda",
+    "lib.game.soundOff": "Mechie ụda",
+    "lib.arcade.note.kalah": "I na-egwu ahịrị ala, kọmputa na-egwu nke elu; oghere ukwu aka nri bụ ụlọ nchekwa gị. Pịa oghere ka i weta mkpụrụ niile ya ma gbasaa ha n’aka ekpe, otu n’otu n’oghere ọ bụla (hapụ ụlọ nchekwa onye iro). Ọ bụrụ na mkpụrụ ikpeazụ gị dara n’ụlọ nchekwa gị, ị na-agaghachi egwu; ọ bụrụ na ọ dara n’oghere efu n’akụkụ gị n’ihu oghere nwere mkpụrụ, ị na-ejide mkpụrụ ndị ahụ. Mgbe otu akụkụ tọgbọrọ efu, mkpụrụ akụkụ nke ọzọ na-aga n’ụlọ nchekwa nwe ha; ụlọ nchekwa ka ukwuu na-emeri.",
+    "lib.arcade.note.snakes": "Tụba dị ahụ ma gaa n’ihu ọnụ ọgụgụ ọnụ ụlọ ahụ, site na 1 ruo 100. Ọ bụrụ na i rue n’ala ọrịrị, i na-arị; ọ bụrụ na i rue n’isi agwọ, i na-agbada. Site na larịị 4 ị ga-eme ọnụ ọgụgụ kpọmkwem ka i rue 100. Larịị ndị dị elu nwere agwọ ndị ọzọ, ọrịrị ole na ole na ndị iro ndị ọzọ. Onye buru ụzọ rue 100 na-emeri.",
+    "lib.arcade.square": "Ọnụ ụlọ {n}",
+    "lib.arcade.ladderUp": "Rịgoro n’ọrịrị!",
+    "lib.arcade.snakeDown": "Agwọ loro gị!",
+    "lib.arcade.needExact": "Ị chọrọ ọnụ ọgụgụ kpọmkwem ka i rue 100.",
+    "lib.arcade.note.nmm": "Akụkụ ọ bụla nwere akụkụ 9. Nkeji 1: n’usoro, tinye akụkụ n’isi ebe efu. Nkeji 2: gbaa akụkụ gaa n’ebe efu dị nso. Mgbe i nwere naanị akụkụ 3, i nwere ike «ifefe» gaa n’ebe efu ọ bụla. Mee atọ n’ahịrị («igwe nri») iwepụ akụkụ onye iro (nke na-anọghị n’igwe nri buru ụzọ). I na-atụfu mgbe i fọrọ akụkụ 2 ma ọ bụ i enweghị ike ịkpụgharị. I na-egwu ọcha ma buru ụzọ.",
+    "lib.arcade.inHand": "Itinye: {a} · {b}",
+    "lib.arcade.removePiece": "Họrọ akụkụ onye iro iwepụ.",
+    "lib.arcade.enemyWaters": "Mmiri ndị iro (pịa ịgba égbè)",
+    "lib.arcade.yourFleet": "Ụgbọ mmiri gị",
+    "lib.arcade.note.battleship": "Akụkụ ọ bụla nwere ụgbọ mmiri 5 (ogologo 5, 4, 3, 3, 2) etinyere n’enweghị usoro n’ogwe 10x10. N’usoro, gbaa égbè n’ime obere ogige: ịtụ na-acha uhie uhie, ịghara na-acha anụnụ anụnụ nchara, ịtụ obere ogige niile nke ụgbọ mmiri na-eme ka ọ rie mmiri. Mee ka ụgbọ mmiri ndị iro niile rie mmiri buru ụzọ ka i merie. Na larịị ndị dị elu kọmputa na-eche ebe ụgbọ mmiri gị dị nke ọma.",
+    "lib.arcade.shipsLeft": "Ụgbọ mmiri fọdụrụ: gị {a} · onye iro {b}",
+    "lib.arcade.theySunk": "Onye iro mere ka otu n’ime ụgbọ mmiri gị rie mmiri!",
+    "lib.arcade.theyHit": "Onye iro tụrụ otu n’ime ụgbọ mmiri gị.",
+    "lib.arcade.theyMiss": "Onye iro ghaara.",
+    "lib.arcade.youSunk": "I mere ka ụgbọ mmiri onye iro rie mmiri!",
+    "lib.arcade.youHit": "Ị tụrụ!",
+    "lib.arcade.youMiss": "Ị ghaara.",
+    "lib.arcade.shake": "Maa jijiji",
+    "lib.arcade.clearBets": "Hichapụ ntinye",
+    "lib.arcade.note.bau-cua": "Naanị mkpụrụ ego anyị n’ime ngwa — enweghị ego n’ezie. Họrọ uru chip, pịa anụmanụ ka i tinye ntinye, wee pịa Maa jijiji. Maka dị ọ bụla dabara na anụmanụ i tinyere, i na-enweta ntinye gị na nha ahụ maka otu ọ bụla dabara. Rue mkpụrụ ego mgbaru ọsọ n’ime gburugburu ekwere ka i gafee larịị.",
+    "lib.arcade.note.baccarat": "Naanị mkpụrụ ego anyị n’ime ngwa — enweghị ego n’ezie. Tinye ntinye na Onye egwu, Onye ụlọ akụ ma ọ bụ Nha nhata, wee pịa Kesaa. Uru aka bụ ọnụ ọgụgụ ikpeazụ nke ngụkọta ya (A = 1, 2–9 uru ha, 10/J/Q/K = 0); aka dị nso 9 na-emeri, a na-adọkwa kaadị nke atọ dị ka ụkpụrụ guzosiri ike si dị. Onye egwu na-akwụ 1:1, Onye ụlọ akụ 0,95:1, Nha nhata 8:1 (ntinye Onye egwu/Onye ụlọ akụ na-alaghachi na nha nhata). Rue mkpụrụ ego mgbaru ọsọ n’ime gburugburu ekwere ka i gafee larịị.",
+    "lib.arcade.banker": "Onye ụlọ akụ",
+    "lib.arcade.player": "Onye egwu",
+    "lib.arcade.tie": "Nha nhata",
+    "lib.arcade.openCards": "Gosi",
+    "lib.arcade.note.bai-cao": "Naanị mkpụrụ ego anyị n’ime ngwa — enweghị ego n’ezie. Akụkụ ọ bụla na-enweta kaadị 3. Aka na-enweta isi nke ọnụ ọgụgụ ikpeazụ nke ngụkọta ya (A = 1, 2–9 uru ha, 10/J/Q/K = 10, ya bụ isi 0). Nhazi: kaadị atọ otu («Sáp») kacha elu, ọzọ kaadị atọ ihu («Ba tiên»), ọzọ isi 9 ruo 0. Tinye ntinye, pịa Kesaa wee pịa Gosi iji tulee onye na-ekesa. Site na larịị 6 onye na-ekesa na-emeri nha nhata. Rue mkpụrụ ego mgbaru ọsọ n’ime gburugburu ekwere ka i gafee larịị.",
+    "lib.arcade.caoSap": "Kaadị atọ otu",
+    "lib.arcade.caoBaTien": "Kaadị atọ ihu",
+    "lib.arcade.caoPts": "isi {n}",
+    "lib.arcade.note.bingo": "Kọmputa na-akpọ ọnụ ọgụgụ site na 1 ruo 75. Mgbe ọnụ ọgụgụ akpọrọ dị na kaadị gị, pịa ya ka i maa ya akara (etiti n’efu). Mezue ahịrị, ogidi ma ọ bụ akụkụ na-agbagọ wee pịa BINGO! — ị ga-emeri ndị iro kọmputa. BINGO! ụgha na-akpọchi bọtịnụ ruo sekọnd ole na ole. Larịị ndị dị elu na-akpọ ngwa ngwa ma nwee ndị iro ndị ọzọ.",
+    "lib.arcade.opponentsN": "Ndị iro: {n}",
+    "lib.arcade.falseBingo": "Ọ bụghị ahịrị zuru ezu! Akpọchiri bọtịnụ sekọnd 3.",
+    "lib.arcade.bingoGo": "A na-akpọ ọnụ ọgụgụ!",
+    "lib.arcade.note.yahtzee": "Ntụgharị ọ bụla ị na-atụba dị 5 ruo ugboro 3: pịa dị ka i debe ya, wee pịa Tụba iji tụba ndị ọzọ ọzọ. Wee họrọ igbe n’ime tebụl maka isi (a na-eji igbe ọ bụla otu ugboro; igbe na-adabaghị na-enye 0). Ntụgharị 13. Igbe Otu–Isii na-agbakwụnye ihe ịrịba ama 35 ma ọ bụrụ na ngụkọta ha bụ 63 ma ọ bụ karịa. Rue isi mgbaru ọsọ larịị ka i merie.",
+    "lib.arcade.turnN": "Ntụgharị {n}/13",
+    "lib.arcade.pickCat": "Họrọ igbe maka isi",
+    "lib.arcade.rollsLeft": "Tụba ({n} fọdụrụ)",
+    "lib.arcade.upperBonus": "Ihe ịrịba ama Otu–Isii",
+    "lib.arcade.scored": "Enwetara {n}",
+    "lib.arcade.note.crazy-eights": "Gwuo kaadị dabara na kaadị dị n’elu ọkpụrụkpụ a tụfuru site na agba ma ọ bụ uru. Asatọ bụ ndị ụgha: gwuo otu oge ọ bụla wee họrọ agba ọhụrụ. Ọ bụrụ na i nweghị kaadị i ga-egwu, dọta site n’ọkpụrụkpụ (ruo kaadị 3); ọ bụrụ na i ka nweghị ike, ị na-agafe. Onye buru ụzọ mee ka aka ya tọgbọrọ efu na-emeri. Larịị ndị dị elu nwere ndị iro ndị ọzọ ma kọmputa na-egwu n’amamihe karị.",
+    "lib.arcade.opponent": "Onye iro",
+    "lib.arcade.pileLeft": "Ọkpụrụkpụ ịdọta: {n}",
+    "lib.arcade.pickSuit": "Họrọ agba ọhụrụ",
+    "lib.arcade.aiSuit": "Kọmputa họrọ {s}",
+    "lib.arcade.aiPass": "Kọmputa na-agafe.",
+    "lib.arcade.mustPlay": "I nwere kaadị i nwere ike ịgwu — gwuo ya.",
+    "lib.arcade.youPass": "I dọtara kaadị 3 wee gafee.",
+    "lib.arcade.bcGourd": "Mkpụrụ ugu",
+    "lib.arcade.bcCrab": "Akàrà",
+    "lib.arcade.bcShrimp": "Ede",
+    "lib.arcade.bcFish": "Azụ",
+    "lib.arcade.bcRooster": "Oke ọkụkọ",
+    "lib.arcade.bcDeer": "Mgbada",
+    "lib.arcade.yOnes": "Otu",
+    "lib.arcade.yTwos": "Abụọ",
+    "lib.arcade.yThrees": "Atọ",
+    "lib.arcade.yFours": "Anọ",
+    "lib.arcade.yFives": "Ise",
+    "lib.arcade.ySixes": "Isii",
+    "lib.arcade.yThree": "Atọ otu",
+    "lib.arcade.yFour": "Anọ otu",
+    "lib.arcade.yFull": "Ụlọ zuru ezu (25)",
+    "lib.arcade.ySmall": "Ahịrị nta (30)",
+    "lib.arcade.yLarge": "Ahịrị ukwu (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Ohere",
+    "lib.arcade.note.race": "Pịa ← → (ma ọ bụ metụ ụzọ ị chọrọ) ka i gbanwee ụzọ ma zere ụgbọala dị n’ihu. I nwere ndụ 3; kwọọ ụgbọ ogologo niile ka i gafee larịị. Larịị ndị dị elu na-agbakwụnye ụzọ ma ụgbọala na-agba ọsọ karị.",
+    "lib.arcade.note.jump": "Agwa ahụ na-awụlikwa n’onwe ya. Pịa ← → ma ọ bụ dọpụta mkpịsị aka gị ka i rụpụta n’elu ikpo okwu na-esote. Ikpo okwu anụnụ anụnụ na-agagharị, nke aja aja na-agbaji mgbe i rutere ya. Ịdaba n’ihuenyo bụ ọdịda; rịgoro elu zuru ezu ka i gafee larịị.",
+    "lib.arcade.note.miner": "Nkwụnye ahụ na-ama jijiji n’ihu na azụ; pịa Space, ↓ ma ọ bụ metụ ubi iji tụba ya. Ọlaedo ukwu na nkume dị arọ ma na-adọta nwayọọ; dayamọnd dị oke ọnụ. Rue ego mgbaru ọsọ tupu sekọnd 60 agwụ.",
+    "lib.arcade.note.slicer": "Gbaa mkpịsị aka ma ọ bụ òké n’elu mkpụrụ osisi iji gbuo ya. Zere bọmbụ ojii. Ịfụ mkpụrụ osisi ma ọ bụ ịgbuo bọmbụ na-ewepụ otu ndụ (i nwere 3). Gbuo mkpụrụ osisi zuru ezu ka i gafee larịị.",
+    "lib.arcade.note.hoops": "Pịa n’ala egwuregwu, dọpụta n’ala (dị ka ụta) wee hapụ ka i gbaa bọl n’ime nkata. Ka i dọpụta anya, ka tụba ahụ siri ike. Tụọ nkata zuru ezu n’ime tụba i nwere; site na larịị 4 nkata na-agagharị.",
+    "lib.arcade.note.bubbles": "Wepụ òké ma ọ bụ mkpịsị aka iji lekwasị anya, wee pịa/metụ ma ọ bụ pịa Space/Gbaa égbè iji gbaa. Jikọọ ụgbụ 3 ma ọ bụ karịa nke otu agba ka ha gbawaa; ụgbụ ndị furu nkwado na-adaba. Ahịrị ndị ahụ na-agbadata nwayọọ, ya mere debe ha na ahịrị ala. Hichaa ụgbụ niile ka i merie.",
+    "lib.arcade.note.chase": "Jiri bọtịnụ akụ (ma ọ bụ dọpụta / bọtịnụ) tụgharịa wee rie ntụpọ niile n’ụzọ ahụ ka i na-ezere mmụọ na-achụ gị. I nwere ndụ 3; larịị ndị dị elu na-agbakwụnye mmụọ ndị ọzọ ndị na-agba ọsọ ma na-achụ n’amamihe karị.",
+    "lib.arcade.height": "Elu: {n}/{t} m",
+    "lib.arcade.money": "Ego: {n}/{t}",
+    "lib.arcade.sliced": "Gbutere: {n}/{t}",
+    "lib.arcade.hoopScore": "Tụọ: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} tụba fọdụrụ",
+    "lib.arcade.bubbleLeft": "{n} ụgbụ fọdụrụ",
+    "lib.arcade.shotsN": "Tụba: {n}",
+    "lib.arcade.dotsLeft": "{n} ntụpọ fọdụrụ",
+    "lib.arcade.note.kakuro": "Jupụta obere ogige ọcha na ọnụ ọgụgụ 1–9 ka ahịrị ọ bụla gbakọta ruo ntụziaka dị n’ogige ojii (ọnụ ọgụgụ elu aka nri bụ maka ahịrị aka nri, nke ala aka ekpe bụ maka ahịrị ala), na-enweghị ịmegharịa ọnụ ọgụgụ n’ahịrị. Jiri bọtịnụ akụ gaa.",
+    "lib.arcade.note.kenken": "Jupụta ogwe ahụ na ọnụ ọgụgụ 1 ruo N ka ọ nweghị ọnụ ọgụgụ na-emegharị n’ahịrị ma ọ bụ ogidi ọ bụla. Mkpuchi ọ bụla nwere ahịrị gbara ọchịchịrị na-egosi ebumnuche na ọrụ (+, −, ×, ÷): ọnụ ọgụgụ ndị dị n’ime mkpuchi ga-enye nsonaazụ ahụ. Jiri bọtịnụ akụ gaa.",
+    "lib.arcade.note.wordGuess": "Chọpụta okwu nzuzo Bekee. Mgbe nnwale ọ bụla, akwụkwọ ndụ pụtara mkpụrụ edemede ziri ezi n’ebe ziri ezi, edo edo pụtara mkpụrụ edemede dị n’okwu ahụ mana n’ebe ọzọ, isi awọ pụtara na ọ nọghị n’okwu ahụ. Dee na keyboard gị ma ọ bụ jiri bọtịnụ ihuenyo, wee pịa Enter iji zipu. Larịị ndị dị elu nwere okwu ogologo na nnwale ole na ole.",
+    "lib.arcade.note.hangman": "Chọpụta okwu nzuzo Bekee site n’ịhọrọ mkpụrụ edemede otu n’otu. Mkpụrụ edemede na-ezighi ezi ọ bụla na-agbakwụnye akụkụ n’onyinyo a kwụgbuo; mgbe njehie gị agwụ, ị na-atụfu. Larịị ndị dị elu nwere okwu ogologo na njehie ole na ole.",
+    "lib.arcade.note.scramble": "Hazigharịa mkpụrụ edemede agwakọtara n’ime okwu Bekee n’ezie wee dee ya n’igbe azịza. Larịị ọ bụla nwere okwu 5; dozie opekata mpe 4 tupu ihe nchekwa oge okwu ọ bụla agwụ ka i gafee larịị. Ntụ aka na-egosi mkpụrụ edemede mbụ.",
+    "lib.arcade.cellsLeft": "{n} obere ogige efu fọdụrụ",
+    "lib.arcade.wrongN": "{n} obere ogige adịghị mma.",
+    "lib.arcade.noError": "Achọtabeghị njehie ruo ugbu a.",
+    "lib.arcade.tooShort": "Mkpụrụ edemede ezughị",
+    "lib.arcade.answerIs": "Azịza: {w}",
+    "lib.arcade.livesLeft": "{n} ntule na-ezighi ezi fọdụrụ",
+    "lib.arcade.yourAnswer": "Azịza gị",
+    "lib.arcade.skip": "Hapụ",
+    "lib.arcade.notThis": "Ọ bụghị nke a, nwaa ọzọ.",
+    "lib.arcade.startsWith": "Mkpụrụ edemede mbụ: {c}",
+    "lib.arcade.note.domino": "Onye ọ bụla na-enweta tile 7; onye nwere abụọ kacha elu na-amalite. Gwuo tile nke ọnụ ọgụgụ ya dabara na otu ọnụ ihe ọkwa ahụ. Ọ bụrụ na i nweghị ike, dọta site n’ebe nchekwa ruo mgbe i nwere ike; ọ bụrụ na ọ tọgbọrọ efu, gafee. Onye buru ụzọ mee ka aka ya tọgbọrọ efu na-emeri; ọ bụrụ na abụọ gbochiri, ngụkọta ntụpọ dị ala na-emeri.",
+    "lib.arcade.note.hearts": "Ndị egwu anọ, kaadị 13 onye ọ bụla. Kaadị 2 nke klọb na-edu. Ị ga-eso agba ewere ma ọ bụrụ na i nwere ike. Obi ọ bụla bụ isi 1 ma Queen nke Spade bụ 13; onye na-emeri aka na-ewere isi ya. Dị ala dị mma karị, ma iwere isi 26 niile na-enye ndị ọzọ niile 26. I nweghị ike ịmalite site n’obi ruo mgbe a gwuru otu. Mgbe aka ikpeazụ gasịrị, ị na-emeri ma ọ bụrụ na isi gị dị ala kacha (ma ọ bụ hà nhata kacha ala).",
+    "lib.arcade.note.holdem": "Onye iro n’ihu n’ihu megide kọmputa na chips ọ bụ naanị nke anyị n’ime ngwa. Onye egwu ọ bụla na-enweta kaadị nzuzo 2 ma a na-egosipụta kaadị ọha 5 (flop, turn, river); mee aka kacha mma nke kaadị 5. Gburugburu ọ bụla i nwere ike ịtụfu, ịhara (ma ọ bụ check) ma ọ bụ ịbanye elu. Blinds na-ebili kwa aka 4. I na-emeri mgbe kọmputa na-enweghị chips, ma ọ bụ site n’inwe chips karị mgbe oke aka gasịrị. Enweghị ego n’ezie.",
+    "lib.arcade.dmDraw": "Dọta tile",
+    "lib.arcade.dmPass": "Gafee",
+    "lib.arcade.dmEmpty": "Edoghị tile ọ bụla",
+    "lib.arcade.dmYard": "Ebe nchekwa: tile {n}",
+    "lib.arcade.dmLeft": "Ọnụ aka ekpe",
+    "lib.arcade.dmRight": "Ọnụ aka nri",
+    "lib.arcade.dmTie": "Nha nhata! Akụkụ abụọ hà nhata.",
+    "lib.arcade.hrHand": "Aka {n}/{t}",
+    "lib.arcade.hrTook": "{p} meriri aka ahụ (isi {n}).",
+    "lib.arcade.hrIllegal": "Ị nweghị ike ịgwu kaadị a (soro agba, ma ọ bụ a gwubeghị obi).",
+    "lib.arcade.blinds": "Blind ukwu: {n}",
+    "lib.arcade.pot": "Ọkpụrụkpụ ego: {n}",
+    "lib.arcade.fold": "Tụfuo",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Hara {n}",
+    "lib.arcade.raiseTo": "Bilie ruo",
+    "lib.arcade.raiseN": "Bilie ruo {n}",
+    "lib.arcade.thOppFold": "Kọmputa tụfuru; ị na-emeri aka a.",
+    "lib.arcade.thYouFold": "I tụfuru.",
+    "lib.arcade.thOppWin": "Kọmputa na-emeri aka a",
+    "lib.arcade.thYouWin": "Ị na-emeri aka a",
+    "lib.arcade.thSplit": "Kesaa ọkpụrụkpụ",
+    "lib.arcade.thAiFold": "Kọmputa tụfuru.",
+    "lib.arcade.thAiRaise": "Kọmputa na-ebilie ruo {n}.",
+    "lib.arcade.thAiCall": "Kọmputa na-ahara / check.",
+    "lib.arcade.hand.high": "Kaadị elu",
+    "lib.arcade.hand.pair": "Ụzọ abụọ",
+    "lib.arcade.hand.twoPair": "Ụzọ abụọ abụọ",
+    "lib.arcade.hand.trips": "Atọ otu",
+    "lib.arcade.hand.straight": "Ahịrị",
+    "lib.arcade.hand.flush": "Agba",
+    "lib.arcade.hand.full": "Ụlọ zuru ezu",
+    "lib.arcade.hand.quads": "Anọ otu",
+    "lib.arcade.hand.sflush": "Ahịrị agba",
+    "lib.arcade.note.nback": "Ogwe 3x3 na-enwu otu n’otu. Pịa «Dabara!» (ma ọ bụ Space) mgbe ọnọdụ na-enwu bụ nke a hụrụ N nzọụkwụ gara aga (N gosiri n’elu). Ị chọrọ opekata mpe 80% mkpebi ziri ezi ka i gafee larịị. Larịị ndị dị elu na-eji N ka ukwuu.",
+    "lib.arcade.nbMatch": "Dabara!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Ziri ezi: {a} · Na-ezighi ezi: {b}",
+    "lib.arcade.nbAcc": "Izi ezi: {n}%",
+    "lib.arcade.note.clicker": "Pịa kuki ka i sie kuki, wee were ha jiri ndị enyemaka na-esi n’onwe ha (ọnụ ahịa na-ebili ugboro ọ bụla i zụrụ). Sie ọnụ ọgụgụ kuki mgbaru ọsọ n’ime nkeji 2 ka i gafee larịị.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Nne nne na-esi nri",
+    "lib.arcade.ckFarm": "Ubi",
+    "lib.arcade.ckMine": "Ugbo shuga",
+    "lib.arcade.ckFactory": "Ụlọ ọrụ",
+    "lib.arcade.ckCookie": "Kuki",
+    "lib.arcade.ckEarned": "Esiri: {n}/{t}",
+    "lib.arcade.chips2": "Kuki: {n}",
+    "lib.arcade.ckCps": "{n} kuki/sekọnd",
+    "lib.arcade.note.onet": "Họrọ tile abụọ yiri onwe ha nke enwere ike ijikọ site n’ụzọ nwere ntụgharị na-adịghị karịa 2 nke na-agafeghị tile ndị ọzọ iji wepụ ha. Hichaa tile niile tupu oge agwụ ka i merie. Mgbe ọ nweghị mmegharị fọdụrụ, i nwere ike ịgwakọta (ojiji dị oke).",
+    "lib.arcade.shuffle": "Gwakọta",
+    "lib.arcade.tilesLeft": "{n} tile fọdụrụ",
+    "lib.arcade.autoShuffle": "Ọ nweghị mmegharị fọdụrụ — agwakọtara n’onwe ya.",
+    "lib.arcade.note.jigsaw": "Egbutere onyinyo ahụ n’iberibe ma gwakọta ya. Metụ otu iberibe, wee metụ ọzọ, ka ha gbanwee ebe, wee wughachi onyinyo a gosiri dị ka ntụ aka. Iberibe ndị dị n’ebe ziri ezi na-enweta oke akwụkwọ ndụ. Larịị ndị dị elu nwere iberibe ndị ọzọ.",
+    "lib.arcade.jgRef": "Onyinyo ntụ aka",
+    "lib.arcade.jgPlaced": "N’ebe ya: {a}/{b}",
+    "lib.arcade.golfStrokes": "Tụba: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "I na-egwu ihe ndị ọcha, na-agagharị site n’elu aka nri gaa n’ala aka nri (ụlọ gị). Tụba dị ahụ, pịa ihe i chọrọ ịkpụgharị, wee pịa ebe ewepụtara. Ịdaba n’ebe nwere naanị otu ihe onye iro na-atụ ya n’etiti ogwe, onye ahụ ga-eweghachikwa ya buru ụzọ. Ị nweghị ike ịdaba n’ebe nwere ihe onye iro abụọ ma ọ bụ karịa. Mgbe ihe gị 15 niile dị n’ụlọ gị (ebe 6 ikpeazụ) i nwere ike iwepụ ha. Onye buru ụzọ wepụ ihe 15 niile na-emeri.",
+    "lib.arcade.bgRoll": "Tụba dị ahụ",
+    "lib.arcade.bgOff": "Wepụ",
+    "lib.arcade.bgRollFirst": "Tụba dị ahụ",
+    "lib.arcade.bgInfo": "Wepụrụ: gị {a} · kọmputa {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Ị nweghị mmegharị kwesịrị ekwesị fọdụrụ.",
+    "lib.arcade.note.tienlen": "Ndị egwu anọ, kaadị 13 onye ọ bụla. Usoro kaadị site na dị ala ruo dị elu: 3, 4, … K, A, 2; agba site na dị ala ruo dị elu: spade, klọb, diamond, obi. Onye nwere 3 nke spade na-amalite. Gwuo otu kaadị, abụọ, atọ otu, anọ otu, ma ọ bụ ahịrị kaadị 3 ma ọ bụ karịa na-esochi onwe ha (enweghị 2). Onye egwu na-esote ga-egwu otu ụdị ahụ nke dị elu, ma ọ bụ gafee; anọ otu nwere ike ịmeri 2 otu ma ọ bụ 2 abụọ. Mgbe ndị ọzọ niile gafere, onye ikpeazụ gwuru nwere ike ịmalite ihe ọ bụla. Onye buru ụzọ mee ka aka ya tọgbọrọ efu na-emeri. Họrọ kaadị, wee pịa Gwuo.",
+    "lib.arcade.tlPlay": "Gwuo",
+    "lib.arcade.tlPass": "Gafee",
+    "lib.arcade.tlClear": "Hichapụ nhọrọ",
+    "lib.arcade.tlPassed": "gafere",
+    "lib.arcade.tlFree": "Tebụl efu — i nwere ike ịmalite ihe ọ bụla",
+    "lib.arcade.tlLeft": "Kaadị fọdụrụ: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} na-agafe.",
+    "lib.arcade.tlBad": "Kaadị ndị ahọpụtara anaghị emepụta nhazi ziri ezi.",
+    "lib.arcade.tlLow": "Nhazi a adịghị elu zuru ezu iji merie tebụl.",
+    "lib.arcade.note.td": "Metụ ogige efu (ọ bụghị ụzọ) iji wuo ụlọ elu na-agba égbè, nke na-efu ọlaedo; metụ ụlọ elu ọzọ iji kwalite ya (ruo larịị 5). Ụlọ elu na-agbaghị égbè n’onwe ha n’ahụ onye iro nke gara kacha ime n’oke. Merie ndị iro iji nweta ọlaedo ọzọ; ọ bụrụ na ndị iro 15 rue na njedebe, ị na-atụfu. Lanarị ntụli niile ka i gafee larịị.",
+    "lib.arcade.tdInfo": "Ọlaedo: {g} · Ntụli {w}/{t}",
+    "lib.arcade.tdCost": "Ụlọ elu: {n}",
+    "lib.arcade.note.colorNum": "Ogige ọ bụla nwere ọnụ ọgụgụ dabara na agba dị na paleti. Họrọ agba, wee metụ ogige ndị nwere ọnụ ọgụgụ ahụ iji see ha; ịmetụ n’agba na-ezighi ezi anaghị ese ihe ọ bụla. See ogige niile nke ọma iji mezue onyinyo ahụ. Larịị ndị dị elu nwere agba ndị ọzọ.",
+    "lib.arcade.cnWrong": "Agba na-ezighi ezi — lelee ọnụ ọgụgụ dị n’ogige.",
+    "lib.arcade.note.yukon": "Dị ka Klondike mana enweghị ebe nchekwa: kaadị ọ bụla a hụrụ ihu nwere ike ịkpụgharị ya na kaadị niile dị n’elu ya, ọbụlagodi na ha adịghị n’usoro; naanị kaadị mbụ ga-adaba na ogidi ebumnuche (na-agbadata, uhie na ojii n’aka n’aka; Eze na-aga n’ogidi efu). Wuo kaadị 52 niile n’elu ntọala anọ site na Ace ruo Eze. Larịị ndị dị ala na-amalite na kaadị ndị ọzọ a hụrụ ihu.",
+    "lib.arcade.yukonFree": "Kaadị ihu ala: {n}",
+    "lib.arcade.note.chinesechk": "I na-egwu ihe ndị anụnụ anụnụ n’akụkụ aka nri; kpụgharịa ha 10 niile gaa n’akụkụ aka ekpe ọzọ tupu kọmputa. Ntụgharị ọ bụla ị na-akpụgharị otu ihe: were nzọụkwụ gaa n’oghere efu dị nso, ma ọ bụ wụpụ n’elu ihe ọ bụla gaa n’oghere efu dị n’azụ ya, ma gaa n’ihu na-awụpụ ugboro ole i chọrọ. Metụ otu n’ime ihe gị, wee metụ oghere akwụkwọ ndụ iji kpụgharịa.",
+    "lib.arcade.ccTurn": "Oge gị · Ntụgharị {n}",
+    "lib.arcade.ccDraw": "Ntụgharị agwụla — ọ bụ nha nhata.",
+    "lib.arcade.note.maubinh": "Gị na kọmputa na-enweta kaadị 13 onye ọ bụla ma hazie ha n’aka 3: aka azụ nke kaadị 5, aka etiti nke kaadị 5 na aka ihu nke kaadị 3. Aka azụ ga-adị ike opekata mpe dị ka etiti, ma etiti dị ike opekata mpe dị ka ihu; ma ọ bụghị ya nhazi gị bụ njehie ma ị tufuo gburugburu niile. Metụ kaadị, wee metụ ahịrị ọ ga-aga (metụ kaadị edoro iji weghachi ya). Aka ọ bụla ị merie bụ isi 1; imeri 3 niile bụ 6. Gwuo gburugburu 5 — ngụkọta dị mma na-agafe larịị. Aka ihu nwere ike ịbụ naanị kaadị elu, abụọ ma ọ bụ atọ otu.",
+    "lib.arcade.mbHigh": "Kaadị elu",
+    "lib.arcade.mbPair": "Ụzọ abụọ",
+    "lib.arcade.mbTwoPair": "Ụzọ abụọ abụọ",
+    "lib.arcade.mbTrips": "Atọ otu",
+    "lib.arcade.mbStraight": "Ahịrị",
+    "lib.arcade.mbFlush": "Agba",
+    "lib.arcade.mbFull": "Ụlọ zuru ezu",
+    "lib.arcade.mbQuads": "Anọ otu",
+    "lib.arcade.mbSflush": "Ahịrị agba",
+    "lib.arcade.mbBack": "Aka azụ",
+    "lib.arcade.mbMid": "Aka etiti",
+    "lib.arcade.mbFront": "Aka ihu",
+    "lib.arcade.mbFoe": "Kọmputa",
+    "lib.arcade.mbYou": "Gị",
+    "lib.arcade.mbFoul": "Njehie!",
+    "lib.arcade.mbFoeFoul": "Kọmputa mehiere!",
+    "lib.arcade.mbConfirm": "Gosi kaadị",
+    "lib.arcade.mbReset": "Hichapụ",
+    "lib.arcade.mbHand": "Aka gị",
+    "lib.arcade.mbRound": "Gburugburu {a}/{b}",
+    "lib.arcade.mbTotal": "Ngụkọta: {n}",
+    "lib.arcade.mbFinish": "Mechaa",
+    "lib.arcade.mbNext": "Gburugburu ọzọ",
+    "lib.arcade.mbDraw": "Hà nhata n’isi — gwuo ọzọ.",
+    "lib.arcade.mbAutoMsg": "Nke a bụ nhazi akwadoro. I nwere ike ịgbanwe ya tupu igosi kaadị.",
+    "lib.arcade.note.phom": "Ndị egwu abụọ; onye ọ bụla na-enweta kaadị 9 (onye buru ụzọ nwere 10). Meld bụ kaadị 3 ma ọ bụ karịa nke otu uru, ma ọ bụ kaadị 3 ma ọ bụ karịa na-esochi onwe ha nke otu agba (Ace dị ala naanị). N’oge gị dọta kaadị site n’ọkpụrụkpụ, ma ọ bụ were kaadị onye iro gị chụpụrụ ma ọ bụrụ na ọ na-eme meld na aka gị (a ga-edebe kaadị i wepụrụ), wee chụpụ otu kaadị. Mgbe onye egwu ọ bụla chụpụrụ kaadị 4, gburugburu na-agwụ ma onye nwere ngụkọta kaadị na-abụghị meld dị ala na-emeri (Ace = 1 … Eze = 13). Ọ bụrụ na kaadị gị niile dị na meld mgbe i chụpụchara, i na-apụ («U») ma merie ozugbo. Kaadị ndị nwere oke akwụkwọ ndụ dị na nhazi meld gị kacha mma.",
+    "lib.arcade.pmDraw": "Dọta",
+    "lib.arcade.pmEat": "Were nke a chụpụrụ",
+    "lib.arcade.pmThrow": "Chụpụ",
+    "lib.arcade.pmFoeAte": "Kọmputa weere kaadị gị.",
+    "lib.arcade.pmFoeU": "Kọmputa pụrụ!",
+    "lib.arcade.pmTurn": "Ntụgharị {a}/{b}",
+    "lib.arcade.pmLeft": "Na-abụghị meld: {n}",
+    "lib.arcade.pmDeck": "Ọkpụrụkpụ: {n}",
+    "lib.arcade.pmFoeHand": "Aka kọmputa",
+    "lib.arcade.pmFoeDisc": "Kọmputa chụpụrụ",
+    "lib.arcade.pmFoeEaten": "Kọmputa weere",
+    "lib.arcade.pmMyDisc": "Ndị i chụpụrụ",
+    "lib.arcade.pmAte": "I weere kaadị a — debe ya na meld.",
+    "lib.arcade.pmKeep": "A ga-edebe kaadị i weere — chụpụ nke ọzọ.",
+    "lib.arcade.pmU": "Pụọ! Ị na-emeri ozugbo.",
+    "lib.arcade.pmYou": "Gị",
+    "lib.arcade.pmFoe": "Kọmputa",
+    "lib.arcade.pmDraw2": "Hà nhata n’isi.",
+    "lib.arcade.note.shogi": "Shogi bụ chess Japan. I na-egwu akụkụ ala ma buru ụzọ; akụkụ kọmputa na-ele anya n’akụkụ ọzọ. Akụkụ a jidere na-abanye n’aka gị ma enwere ike itinye ha n’ogige efu ọ bụla kama ime mmegharị (ọ bụghị pawn n’ogidi ebe i nwere pawn na-ekwupụtabeghị, ma ọ bụghị akụkụ n’ahịrị ebe ọ nweghị ike ịkpụgharị ọzọ). Akụkụ na-abanye, na-apụ, ma ọ bụ na-agagharị n’ime ahịrị atọ ikpeazụ nke onye iro nwere ike ịkwalite (ma e wezụga Eze na Ọlaedo); nkwalite bụ ihe a na-amanye ma ọ bụrụ na akụkụ ahụ agaghị enwe mmegharị. Mee checkmate n’Eze iro ka i merie. Kanji: 歩 pawn, 香 lance, 桂 knight, 銀 silver, 金 gold, 角 bishop, 飛 rook, 玉 king; と, 馬, 竜 na akụkụ uhie ndị ọzọ akwalitela.",
+    "lib.arcade.sgPromote": "Kwalite",
+    "lib.arcade.sgKeep": "Ekwela kwalite",
+    "lib.arcade.sgCheck": "Ị nọ na check!",
+    "lib.arcade.sgWin": "Checkmate — ị na-emeri.",
+    "lib.arcade.sgLose": "E mere gị checkmate.",
+    "lib.arcade.sgAskPromote": "Kwalite akụkụ a?",
+    "lib.arcade.note.janggi": "Janggi bụ chess Korea. I na-egwu akụkụ anụnụ anụnụ n’ala ma buru ụzọ. N’adịghị ka xiangqi enweghị osimiri, ma obí abụọ nwere ahịrị na-agbagọ. General na Guards na-akpụgharị otu nzọụkwụ n’ahịrị obí (gụnyere ndị na-agbagọ); Chariot na-ebuliga ma na-ejide n’ahịrị na-agbagọ nke obí; Cannon ga-awụpụ n’elu otu akụkụ kpọmkwem (ọ bụghị Cannon ọzọ) ka ọ kpụgharịa ma ọ bụ jide, ọ nweghịkwa ike ijide Cannon; Horse na-eme otu nzọụkwụ kwụ ọtọ wee otu na-agbagọ, Elephant otu kwụ ọtọ na abụọ na-agbagọ, ha abụọ na-egbochi ma ọ bụrụ na akụkụ nọ n’ụzọ; Soldiers na-aga n’ihu ma ọ bụ n’akụkụ, ma na-agbagọ n’ihu n’ime obí onye iro. Generals abụọ enweghị ike ịhụ ibe ha anya. Mee checkmate n’General iro ka i merie. Kọmputa anaghị agafe.",
+    "lib.arcade.jgCheck": "Ị nọ na check!",
+    "lib.arcade.jgWin": "Checkmate — ị na-emeri.",
+    "lib.arcade.jgLose": "E mere gị checkmate.",
+    "lib.arcade.note.pinball": "Pịa Space, Elu ma ọ bụ metụ tebụl iji tụba bọl. Jide Aka ekpe (ma ọ bụ metụ ọkara aka ekpe nke tebụl) ka i weli flipper aka ekpe na Aka nri (ma ọ bụ ọkara aka nri) maka nke aka nri — pịa n’ụda kama ijide. Bumpers gburugburu na-enye isi 100 nke ọ bụla. I nwere bọl 3; rue isi mgbaru ọsọ tupu ha agwụ ka i gafee larịị.",
+    "lib.arcade.pinBalls": "Bọl: {n} · Mgbaru ọsọ: {t}",
+    "lib.arcade.note.cribbage": "Cribbage maka ndị abụọ, ọsọ ruo isi 61. Nkesa ọ bụla ị na-enweta kaadị 6 ma tinye 2 ihu ala n’ime crib (ọ bụ nke onye na-ekesa). A na-atụgharị kaadị starter n’elu. Wee n’usoro gwuo kaadị ihu elu na ngụkọta na-aga n’ihu na-adịghị karịa 31: iru 15 ma ọ bụ 31 na-enye 2, ịdabara na kaadị ikpeazụ na-enye 2/6/12, ahịrị nke 3 ma ọ bụ karịa (n’usoro ọ bụla) na-enye ogologo ya, ma mgbe ọ nweghị onye nwere ike ịgwu, onye ikpeazụ na-enweta 1 («Go»). Wee a na-agụ aka 4 ọ bụla na starter: ngwakọta ọ bụla nke ngụkọta ya bụ 15 na-enye 2, ụzọ abụọ ọ bụla 2, ahịrị 3+ ogologo ya, kaadị anọ nke otu agba 4 (5 na starter), na Jack dabara na agba starter 1. Onye na-abụghị onye na-ekesa na-agụ buru ụzọ, wee onye na-ekesa na-agụ aka ya na crib.",
+    "lib.arcade.cbFifteen": "Iri na ise",
+    "lib.arcade.cbPair": "Ụzọ abụọ",
+    "lib.arcade.cbRun": "Ahịrị",
+    "lib.arcade.cbFlush": "Agba",
+    "lib.arcade.cbNobs": "Jack dabara na agba starter",
+    "lib.arcade.cbHeels": "Jack dị ka starter",
+    "lib.arcade.cbYou": "Gị",
+    "lib.arcade.cbFoe": "Kọmputa",
+    "lib.arcade.cbLast": "Kaadị ikpeazụ",
+    "lib.arcade.cbCount": "Ngụkọta: {n}",
+    "lib.arcade.cbYouDeal": "Ị na-ekesa",
+    "lib.arcade.cbFoeDeal": "Kọmputa na-ekesa",
+    "lib.arcade.cbPick": "Họrọ kaadị 2 maka crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Aka gị",
+    "lib.arcade.cbFoeHand": "Aka kọmputa",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "isi 0",
+    "lib.arcade.cbPlayed": "Egwuru",
+    "lib.arcade.cbToCrib": "Tinye na crib",
+    "lib.arcade.cbNext": "Gaa n’ihu",
+    "lib.arcade.cbHand": "Aka"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Tic-Tac-Toe Kasị Elu",
       "desc": "Tic-tac-toe n’obere bọọdụ 9: igbe ị họrọ na-ekpebi ebe onye mmegide ga-egwu; megide kọmputa n’ọkwa 10."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Kụọ bọl gafee kọmputa; onye buru ụzọ nwee isi 5 na-emeri. Larịị 10 na onye iro dị ngwa ma nwee amamihe karị."
+    },
+    "space-shooter": {
+      "name": "Onye Gbaa Égbè Mbara Igwe",
+      "desc": "Duzie ụgbọ gị, gbuo ụgbọ ndị iro ma zere égbè ha; larịị 10 nwere ntụli ukwu, nzaghachi égbè na ndị iro siri ike karị."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Tụgharịa, gbaa ma gbaa égbè ka i gbajie nkume mbara igwe; nkume ukwu na-agbaji n’obere. Larịị 10 nwere nkume ndị ọzọ ma na-agba ọsọ karị."
+    },
+    "maze": {
+      "name": "Ụzọ ájá",
+      "desc": "Chọta ụzọ ị ga-esi pụọ n’ụzọ ájá ahụ tupu oge agwụ; larịị 10 site na obere ruo nnukwu ụzọ ájá, nwere ájá na larịị dị elu."
+    },
+    "road-cross": {
+      "name": "Ịgafe Ụzọ (ụdị Frogger)",
+      "desc": "Mee ka frọgụ wụpụ n’ụzọ ndị ụgbọala jupụtara na osimiri nwere osisi na-ese n’elu mmiri ka ọ ruo n’ụlọ ugboro 3; larịị 10 nwere ụgbọala dị ngwa na osimiri na larịị dị elu."
+    },
+    "flappy": {
+      "name": "Egwuregwu ụdị Flappy Bird",
+      "desc": "Metụ ka i fụọ nku ma fefe n’etiti ọkpọkọ; larịị 10 nwere oghere dị warara na ọsọ na-ebili."
+    },
+    "runner": {
+      "name": "Onye Ọsọ Dino",
+      "desc": "Wụpụ n’elu cactus ma gbadaa n’okpuru ụmụ nnụnụ; gbaa ọsọ ogologo zuru ezu ka i gafee larịị 10 ọ bụla ka ọsọ na-aga n’ihu na-ebili."
+    },
+    "whack-a-mole": {
+      "name": "Tie Òkwu",
+      "desc": "Tie òkwu na-apụta n’oghere tupu oge agwụ, ma zere bọmbụ; larịị 10 site na nwayọọ ruo oke ngwa ngwa."
+    },
+    "simon": {
+      "name": "Simon (Agba Ncheta)",
+      "desc": "Cheta ma megharịa usoro agba na ụda; usoro ogologo n’ime larịị 10, nwere paịlị 6 site na larịị 7."
+    },
+    "aim-trainer": {
+      "name": "Onye Ọzụzụ Lekwasị Anya",
+      "desc": "Tie ebumnuche ndị na-apụta n’enweghị usoro ma na-efunahụ ngwa ngwa; ebumnuche na-agbadata n’ime larịị 10, a na-atụkwa oge nzaghachi gị."
+    },
+    "quick-math": {
+      "name": "Mgbakọ Ngwa Ngwa",
+      "desc": "Mee mgbakwunye, mwepụ, ọtụtụ na nkesa n’uche gị n’okpuru nrụgide oge; larịị 10 site na mgbakwunye dị mfe ruo okwu."
+    },
+    "reaction": {
+      "name": "Nnwale Oge Nzaghachi",
+      "desc": "Pịa n’oge ihuenyo ghọrọ akwụkwọ ndụ; nkezi gị nke gburugburu 5 ga-adabara oke larịị ọ bụla, nke na-esiwanye ike n’ime larịị 10."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Gbasaa mkpụrụ gburugburu oghere, jide mkpụrụ onye iro gị ma gaa n’ihu ma ọ bụrụ na i rue n’ụlọ nchekwa gị; gwuo kọmputa n’ime larịị 10 site na mfe ruo siri ike."
+    },
+    "snakes-ladders": {
+      "name": "Agwọ na Ọrịrị",
+      "desc": "Tụba dị ahụ site n’ogige 1 ruo 100, rịgoro ọrịrị, zere agwọ ma rue njedebe tupu ndị iro gị; larịị 10."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Tinye, gbaa ma fefe akụkụ gị ka i mee atọ n’ahịrị ma wepụ akụkụ onye iro gị; gwuo kọmputa n’ime larịị 10."
+    },
+    "battleship": {
+      "name": "Agha Mmiri",
+      "desc": "Chọta ma mee ka ụgbọ mmiri kọmputa rie mmiri n’ogwe 10x10 tupu ya emee nke gị; larịị 10 ka kọmputa na-eche ihe n’amamihe karị."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Mkpụrụ ugu Akàrà Azụ Ede)",
+      "desc": "Egwuregwu dị Vietnam ọdịnala: tinye mkpụrụ ego anyị n’ime ngwa n’ahụ anụmanụ ma maa dị atọ jijiji; rue mkpụrụ ego mgbaru ọsọ n’ime larịị 10 (enweghị ego n’ezie)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Tinye ntinye na Onye egwu, Onye ụlọ akụ ma ọ bụ Nha nhata na kaadị a kesara dị ka ụkpụrụ guzosiri ike si dị, na mkpụrụ ego anyị n’ime ngwa; rue mkpụrụ ego mgbaru ọsọ n’ime larịị 10 (enweghị ego n’ezie)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Egwuregwu Kaadị Atọ)",
+      "desc": "Tulee aka kaadị 3 na onye na-ekesa: kaadị atọ otu, kaadị atọ ihu, wee isi 9 ruo 0; mkpụrụ ego anyị n’ime ngwa, larịị 10, enweghị ego n’ezie."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Mara ọnụ ọgụgụ akpọrọ n’elu kaadị 5x5 gị ma tie BINGO tupu ndị iro kọmputa; a na-akpọ ọnụ ọgụgụ ngwa ngwa n’ime larịị 10."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Dị Ise)",
+      "desc": "Tụba dị ise, debe ndị ọma ma jupụta igbe isi 13; rue isi mgbaru ọsọ n’ime larịị 10."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Dabara agba ma ọ bụ uru, asatọ na-agbanwe agba; mee ka aka gị tọgbọrọ efu tupu ndị iro kọmputa 1 ruo 3 n’ime larịị 10."
+    },
+    "car-race": {
+      "name": "Zere Ụgbọala",
+      "desc": "Gbanwee ụzọ ka i zere ụgbọala dị n’ihu ma kwọọ ogologo niile; larịị 10 nwere ụzọ ndị ọzọ na ụgbọala dị ngwa karị."
+    },
+    "sky-jump": {
+      "name": "Mkpọ Mbara Igwe",
+      "desc": "Wụpụ site n’ikpo okwu gaa n’ikpo okwu ka i rịgoo elu ka i nwere ike n’adaghị; larịị 10 nwere ikpo okwu dị ole na ole, ndị na-agagharị na ndị na-agbaji agbaji."
+    },
+    "gold-miner": {
+      "name": "Onye Egwu Ọlaedo",
+      "desc": "Tụba nkwụnye iji dọta ọlaedo na dayamọnd, zere nkume dị arọ, ma rue ego mgbaru ọsọ n’ime sekọnd 60; larịị 10."
+    },
+    "fruit-slice": {
+      "name": "Ịgbuo Mkpụrụ Osisi",
+      "desc": "Gbaa mkpịsị aka iji gbuo mkpụrụ osisi na-efe elu ma zere bọmbụ; larịị 10 nwere mkpụrụ osisi ndị ọzọ na bọmbụ ndị ọzọ."
+    },
+    "basketball": {
+      "name": "Ịgbaba Bọl Basketball",
+      "desc": "Dọpụta ma hapụ ka i gbaa bọl n’ime nkata n’ime tụba dị oke; larịị 10, nwere nkata na-agagharị site na larịị 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Gbaa ụgbụ ka i jikọọ 3 ma ọ bụ karịa nke otu agba ma gbawaa ha, wee hichaa ha niile tupu ha eruo n’ala; larịị 10 nwere agba ndị ọzọ."
+    },
+    "dot-chase": {
+      "name": "Ịchụ Ntụpọ",
+      "desc": "Rie ntụpọ niile n’ụzọ ájá ahụ ka i na-ezere mmụọ na-achụ gị; larịị 10 nwere mmụọ ndị ọzọ ndị nwere amamihe karị."
+    },
+    "kakuro": {
+      "name": "Kakuro (Ngụkọta Obe)",
+      "desc": "Jupụta obere ogige ọcha na ọnụ ọgụgụ 1–9 ka ahịrị ọ bụla gbakọta ruo ntụziaka ya n’emegharịghị; larịị 10, ogwe site na 5x5 ruo 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Jupụta ogwe ahụ n’emegharịghị n’ahịrị ma ọ bụ ogidi ka mkpuchi ọ bụla nye ebumnuche ya na ọrụ ya; larịị 10, ogwe site na 3x3 ruo 6x6."
+    },
+    "word-guess": {
+      "name": "Chọpụta Okwu (ụdị Wordle)",
+      "desc": "Chọpụta okwu nzuzo Bekee site na ntụziaka akwụkwọ ndụ, edo edo na isi awọ; larịị 10 nwere okwu mkpụrụ edemede 4–6 na nnwale ole na ole."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Chọpụta okwu Bekee mkpụrụ edemede otu n’otu tupu njehie gị agwụ; larịị 10 nwere okwu ogologo na njehie ole na ole."
+    },
+    "word-scramble": {
+      "name": "Anagram (Okwu Agwakọtara)",
+      "desc": "Hazigharịa mkpụrụ edemede agwakọtara n’ime okwu Bekee tupu oge agwụ; larịị 10, okwu 5 n’ime larịị ọ bụla."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Dabara tile n’ọnụ ọ bụla nke ọkwa ma mee ka aka gị tọgbọrọ efu tupu kọmputa; larịị 10 ka kọmputa na-aghọ onye amamihe."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Zere obi na Queen nke Spade n’egwuregwu kaadị nke ndị egwu anọ; isi dị ala dị mma karị; larịị 10 megide ndị egwu kọmputa nwere amamihe karị."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (chips anyị n’ime ngwa)",
+      "desc": "Poker n’ihu n’ihu megide kọmputa na chips anyị n’ime ngwa: tụfuo, hara ma ọ bụ bilie, ma merie mgbe kọmputa na-enweghị chips; larịị 10, enweghị ego n’ezie."
+    },
+    "n-back": {
+      "name": "Ncheta N-Back",
+      "desc": "Lee ogige na-enwu ma pịa Dabara mgbe ọ bụ otu a hụrụ N nzọụkwụ gara aga; larịị 10 na N ruo 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Pịa ka i sie kuki, zụta ndị enyemaka na-esi n’onwe ha ma rue mgbaru ọsọ n’ime nkeji 2; larịị 10."
+    },
+    "tile-connect": {
+      "name": "Jikọta Tile (ụdị Onet)",
+      "desc": "Jikọta tile ndị dabara site n’ụzọ nwere ntụgharị abụọ na-adịghị karịa ma hichaa bọọdụ tupu oge agwụ; larịị 10, bọọdụ ndị ka ukwuu."
+    },
+    "jigsaw": {
+      "name": "Jigsaw Onyinyo",
+      "desc": "Gbanwee iberibe agwakọtara iji wughachi onyinyo; larịị 10 site na iberibe 3x3 ruo 6x6."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Dọta azụ ma hapụ ka i tụba bọl n’oghere n’ime oke ịkụ; ubi 10 nwere mgbidi na ájá."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Tụba dị ahụ, kpọga ihe gị n’ụlọ ma wepụ ha tupu kọmputa, na-atụ ihe ya naanị ya n’ụzọ; larịị 10."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Iri na Atọ)",
+      "desc": "Egwuregwu kaadị Vietnam maka ndị anọ: gwuo otu, abụọ, ahịrị na anọ otu ka i buru ụzọ mee ka aka gị tọgbọrọ efu; larịị 10."
+    },
+    "tower-defense": {
+      "name": "Nchedo Ụlọ Elu",
+      "desc": "Wuo ma kwalite ụlọ elu n’ụzọ iji kwụsị ntụli ndị iro niile; larịị 10 n’ime maapụ atọ dị iche iche."
+    },
+    "color-by-number": {
+      "name": "Ịse Ihe Site n’Ọnụ Ọgụgụ",
+      "desc": "See ogige ọ bụla n’agba dabara na ọnụ ọgụgụ ya iji gosi onyinyo ahụ; onyinyo 10 nwere agba ndị ọzọ oge ọ bụla."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike n’enweghị ebe nchekwa: kpụgharịa kaadị ọ bụla a hụrụ ihu ya na ihe niile dị n’elu ya; larịị 10, kaadị a hụrụ ihu na-ebelata ka i na-aga n’ihu."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Egwuregwu ụdị kpakpando nke ịwụpụ-na-agafe megide kọmputa: kpụgharịa akụkụ 10 niile gaa n’akụkụ ọzọ buru ụzọ; larịị 10."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Chinese)",
+      "desc": "Hazie kaadị 13 n’aka atọ nke kaadị 5, 5 na 3 ma merie kọmputa; gburugburu 5 n’ime larịị ọ bụla, larịị 10."
+    },
+    "phom": {
+      "name": "Phom (Rummy Vietnam)",
+      "desc": "Rummy Vietnam maka ndị abụọ megide kọmputa: dọta ma ọ bụ were kaadị a chụpụrụ, mepụta meld ma pụọ; isi fọdụrụ kacha ala na-emeri; larịị 10."
+    },
+    "shogi": {
+      "name": "Shogi (Chess Japan)",
+      "desc": "Gwuo shogi megide kọmputa: tinye akụkụ a jidere, kwalite ma mee checkmate n’eze; larịị 10 nwere ịlaghachi azụ."
+    },
+    "janggi": {
+      "name": "Janggi (Chess Korea)",
+      "desc": "Gwuo chess Korea megide kọmputa: ahịrị obí na-agbagọ, ịwụpụ Cannon n’otu akụkụ, Elephant nzọụkwụ atọ; larịị 10 nwere ịlaghachi azụ."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Kụọ aka ekpe na aka nri ka i debe bọl ndụ, kụọ bumpers ma rue isi mgbaru ọsọ tupu bọl 3 gị agwụ; larịị 10."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage maka ndị abụọ megide kọmputa: crib, pegging ruo 31, ịgụ aka, ọsọ ruo isi 61; larịị 10."
     }
   },
   "s": {

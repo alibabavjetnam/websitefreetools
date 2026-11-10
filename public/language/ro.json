@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Cărți rămase: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} trece.",
     "lib.arcade.tlBad": "Cărțile selectate nu formează o combinație validă.",
-    "lib.arcade.tlLow": "Această combinație nu e destul de mare ca să bată masa."
+    "lib.arcade.tlLow": "Această combinație nu e destul de mare ca să bată masa.",
+    "lib.arcade.note.td": "Atinge un pătrat gol (nu drumul) pentru a construi un turn de tragere, care costă aur; atinge din nou un turn pentru a-l îmbunătăți (până la nivelul 5). Turnurile trag automat în inamicul care a înaintat cel mai mult în raza lor. Învinge inamicii ca să câștigi mai mult aur; dacă 15 inamici ajung la capăt, pierzi. Supraviețuiește tuturor valurilor pentru a termina nivelul.",
+    "lib.arcade.tdInfo": "Aur: {g} · Valul {w}/{t}",
+    "lib.arcade.tdCost": "Turn: {n}",
+    "lib.arcade.note.colorNum": "Fiecare pătrat are un număr care corespunde unei culori din paletă. Alege o culoare, apoi atinge pătratele cu acel număr ca să le colorezi; dacă folosești culoarea greșită, nu se colorează nimic. Colorează corect toate pătratele ca să termini imaginea. Nivelurile mai mari au mai multe culori.",
+    "lib.arcade.cnWrong": "Culoare greșită — verifică numărul de pe pătrat.",
+    "lib.arcade.note.yukon": "Ca Klondike, dar fără pachet de rezervă: orice carte cu fața în sus poate fi mutată împreună cu toate cărțile de deasupra ei, chiar dacă nu formează o secvență; doar prima carte trebuie să se potrivească pe coloana țintă (descrescător, culori alternate roșu și negru; un Rege merge pe o coloană goală). Construiește toate cele 52 de cărți pe cele patru fundații, de la As la Rege. Nivelurile mici încep cu mai multe cărți deja cu fața în sus.",
+    "lib.arcade.yukonFree": "Cărți cu fața în jos: {n}",
+    "lib.arcade.note.chinesechk": "Joci cu piesele albastre din colțul din dreapta; mută-le pe toate cele 10 în colțul opus din stânga înaintea calculatorului. La fiecare tură muți o piesă: pășești într-o gaură goală vecină sau sari peste orice piesă în gaura goală de imediat în spatele ei, și poți continua să sari de câte ori vrei. Atinge una dintre piesele tale, apoi atinge o gaură verde pentru a muta.",
+    "lib.arcade.ccTurn": "Rândul tău · Tura {n}",
+    "lib.arcade.ccDraw": "Nu mai sunt ture — remiză.",
+    "lib.arcade.note.maubinh": "Tu și calculatorul primiți fiecare câte 13 cărți și le aranjați în 3 mâini: o mână din spate de 5 cărți, una din mijloc de 5 cărți și una din față de 3 cărți. Mâna din spate trebuie să fie cel puțin la fel de puternică decât cea din mijloc, iar cea din mijloc cel puțin la fel de puternică decât cea din față; altfel aranjamentul e greșit și pierzi toată runda. Atinge o carte, apoi atinge rândul unde o pui (atinge o carte pusă ca s-o iei înapoi). Fiecare mână câștigată valorează 1 punct; dacă le câștigi pe toate 3, primești 6. Joacă 5 runde — un total pozitiv termină nivelul. Mâna din față poate fi doar carte mare, pereche sau trei de același fel.",
+    "lib.arcade.mbHigh": "Carte mare",
+    "lib.arcade.mbPair": "Pereche",
+    "lib.arcade.mbTwoPair": "Două perechi",
+    "lib.arcade.mbTrips": "Trei de același fel",
+    "lib.arcade.mbStraight": "Șir",
+    "lib.arcade.mbFlush": "Culoare",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Careu",
+    "lib.arcade.mbSflush": "Culoare în șir",
+    "lib.arcade.mbBack": "Mâna din spate",
+    "lib.arcade.mbMid": "Mâna din mijloc",
+    "lib.arcade.mbFront": "Mâna din față",
+    "lib.arcade.mbFoe": "Calculator",
+    "lib.arcade.mbYou": "Tu",
+    "lib.arcade.mbFoul": "Aranjament greșit!",
+    "lib.arcade.mbFoeFoul": "Calculatorul a greșit aranjamentul!",
+    "lib.arcade.mbConfirm": "Arată cărțile",
+    "lib.arcade.mbReset": "Șterge",
+    "lib.arcade.mbHand": "Mâna ta",
+    "lib.arcade.mbRound": "Runda {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Termină",
+    "lib.arcade.mbNext": "Runda următoare",
+    "lib.arcade.mbDraw": "Egalitate la puncte — mai joacă o dată.",
+    "lib.arcade.mbAutoMsg": "Iată un aranjament sugerat. Îl poți schimba înainte de a arăta cărțile.",
+    "lib.arcade.note.phom": "Doi jucători; fiecare primește 9 cărți (cine începe primește 10). Un grup este format din 3 sau mai multe cărți de aceeași valoare sau din 3 sau mai multe cărți consecutive de aceeași culoare (Asul este doar mic). La rândul tău tragi o carte din pachet sau iei cartea aruncată de adversar dacă formează un grup cu mâna ta (o carte luată trebuie păstrată), apoi arunci o carte. Când fiecare jucător a aruncat 4 cărți, runda se termină și câștigă cel cu totalul mai mic al cărților negrupate (As = 1 … Rege = 13). Dacă după o aruncare toate cărțile tale sunt în grupuri, închizi („U”) și câștigi imediat. Cărțile conturate în verde fac parte din cea mai bună combinație de grupuri.",
+    "lib.arcade.pmDraw": "Trage",
+    "lib.arcade.pmEat": "Ia cartea aruncată",
+    "lib.arcade.pmThrow": "Aruncă",
+    "lib.arcade.pmFoeAte": "Calculatorul ți-a luat cartea.",
+    "lib.arcade.pmFoeU": "Calculatorul a închis!",
+    "lib.arcade.pmTurn": "Tura {a}/{b}",
+    "lib.arcade.pmLeft": "Negrupate: {n}",
+    "lib.arcade.pmDeck": "Pachet: {n}",
+    "lib.arcade.pmFoeHand": "Mâna calculatorului",
+    "lib.arcade.pmFoeDisc": "Cărțile aruncate de calculator",
+    "lib.arcade.pmFoeEaten": "Calculatorul a luat",
+    "lib.arcade.pmMyDisc": "Cărțile tale aruncate",
+    "lib.arcade.pmAte": "Ai luat această carte — păstreaz-o într-un grup.",
+    "lib.arcade.pmKeep": "Cartea luată trebuie păstrată — aruncă alta.",
+    "lib.arcade.pmU": "Ai închis! Câștigi pe loc.",
+    "lib.arcade.pmYou": "Tu",
+    "lib.arcade.pmFoe": "Calculator",
+    "lib.arcade.pmDraw2": "Egalitate la puncte.",
+    "lib.arcade.note.shogi": "Shogi este șahul japonez. Joci cu partea de jos și muți primul; piesele calculatorului sunt orientate invers. Piesele capturate ajung în mâna ta și pot fi plasate pe orice pătrat gol în loc de o mutare (niciodată un pion pe o coloană unde ai deja un pion nepromovat și niciodată o piesă pe un rând de unde nu s-ar mai putea mișca). O piesă care intră, iese sau se mișcă în ultimele trei rânduri ale adversarului poate fi promovată (în afară de Rege și Aur); promovarea este obligatorie când piesa n-ar mai avea mutări. Dă șah-mat regelui inamic pentru a câștiga. Kanji: 歩 pion, 香 lance, 桂 cal, 銀 argint, 金 aur, 角 nebun, 飛 turn, 玉 rege; と, 馬, 竜 și celelalte piese roșii sunt promovate.",
+    "lib.arcade.sgPromote": "Promovează",
+    "lib.arcade.sgKeep": "Nu promova",
+    "lib.arcade.sgCheck": "Ești în șah!",
+    "lib.arcade.sgWin": "Șah-mat — ai câștigat.",
+    "lib.arcade.sgLose": "Ai fost pus șah-mat.",
+    "lib.arcade.sgAskPromote": "Promovezi această piesă?",
+    "lib.arcade.note.janggi": "Janggi este șahul coreean. Joci cu piesele albastre de jos și muți primul. Spre deosebire de xiangqi, nu există râu, iar ambele palate au linii diagonale. Generalul și Gărzile se mută un pas pe liniile palatului (inclusiv diagonalele); Carul alunecă și capturează și pe diagonalele palatului; Tunul trebuie să sară peste exact o piesă (nu alt Tun) ca să se mute sau să captureze și nu poate captura un Tun; Calul face un pas drept apoi unul în diagonală, iar Elefantul unul drept apoi două în diagonală, ambii fiind blocați dacă e o piesă în cale; Soldații merg înainte sau lateral, iar în diagonală înainte în palatul inamic. Cei doi Generali nu pot sta față în față. Dă șah-mat generalului inamic pentru a câștiga. Calculatorul nu dă niciodată pas.",
+    "lib.arcade.jgCheck": "Ești în șah!",
+    "lib.arcade.jgWin": "Șah-mat — ai câștigat.",
+    "lib.arcade.jgLose": "Ai fost pus șah-mat.",
+    "lib.arcade.note.pinball": "Apasă Spațiu, Sus sau atinge masa pentru a lansa bila. Ține apăsat Stânga (sau atinge jumătatea stângă a mesei) pentru paleta stângă și Dreapta (sau jumătatea dreaptă) pentru cea dreaptă — poți și să atingi în ritm, fără să ții apăsat. Amortizoarele rotunde dau câte 100 de puncte. Ai 3 bile; atinge scorul țintă înainte să se termine ca să termini nivelul.",
+    "lib.arcade.pinBalls": "Bile: {n} · Țintă: {t}",
+    "lib.arcade.note.cribbage": "Cribbage pentru doi jucători, o cursă până la 61 de puncte. La fiecare împărțire primești 6 cărți și pui 2 cu fața în jos în crib (care aparține dealerului). Se întoarce o carte de start. Apoi puneți pe rând cărți cu fața în sus, cu totalul curent niciodată peste 31: atingerea lui 15 sau 31 valorează 2, o carte egală cu precedenta valorează 2/6/12, un șir de 3 sau mai multe (în orice ordine) valorează cât lungimea lui, iar când nimeni nu mai poate juca, ultimul jucător primește 1 („Go”). Apoi se numără fiecare mână de 4 cărți împreună cu cartea de start: fiecare combinație cu suma 15 valorează 2, fiecare pereche 2, un șir de 3+ cât lungimea lui, patru cărți de aceeași culoare 4 (5 cu cartea de start), iar un Valet de aceeași culoare cu cartea de start 1. Cel care nu e dealer numără primul, apoi dealerul își numără mâna și cribul.",
+    "lib.arcade.cbFifteen": "Cincisprezece",
+    "lib.arcade.cbPair": "Pereche",
+    "lib.arcade.cbRun": "Șir",
+    "lib.arcade.cbFlush": "Culoare",
+    "lib.arcade.cbNobs": "Valet de culoarea cărții de start",
+    "lib.arcade.cbHeels": "Valet ca carte de start",
+    "lib.arcade.cbYou": "Tu",
+    "lib.arcade.cbFoe": "Calculator",
+    "lib.arcade.cbLast": "Ultima carte",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Tu împarți",
+    "lib.arcade.cbFoeDeal": "Calculatorul împarte",
+    "lib.arcade.cbPick": "Alege 2 cărți pentru crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Mâna ta",
+    "lib.arcade.cbFoeHand": "Mâna calculatorului",
+    "lib.arcade.cbStarter": "Carte de start",
+    "lib.arcade.cbZero": "0 puncte",
+    "lib.arcade.cbPlayed": "Jucate",
+    "lib.arcade.cbToCrib": "Pune în crib",
+    "lib.arcade.cbNext": "Continuă",
+    "lib.arcade.cbHand": "Mână"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Treisprezece)",
       "desc": "Jocul vietnamez de cărți pentru patru, în care te descarci de cărți: joacă cărți singure, perechi, șiruri și careuri ca să rămâi primul fără cărți; 10 niveluri."
+    },
+    "tower-defense": {
+      "name": "Apărarea turnurilor",
+      "desc": "Construiește și îmbunătățește turnuri de-a lungul drumului pentru a opri toate valurile de inamici; 10 niveluri pe trei hărți diferite."
+    },
+    "color-by-number": {
+      "name": "Colorează după număr",
+      "desc": "Colorează fiecare pătrat cu culoarea care corespunde numărului său ca să apară imaginea; 10 imagini cu tot mai multe culori."
+    },
+    "yukon": {
+      "name": "Pasians Yukon",
+      "desc": "Klondike fără pachet de rezervă: mută orice carte cu fața în sus împreună cu tot ce e peste ea; 10 niveluri, tot mai puține cărți cu fața în sus."
+    },
+    "chinese-checkers": {
+      "name": "Dame chinezești",
+      "desc": "Joc în formă de stea cu pași și sărituri împotriva calculatorului: mută primul toate cele 10 piese în colțul opus; 10 niveluri."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker chinezesc)",
+      "desc": "Aranjează 13 cărți în trei mâini de 5, 5 și 3 cărți și învinge calculatorul; 5 runde pe nivel, 10 niveluri."
+    },
+    "phom": {
+      "name": "Phom (Remi vietnamez)",
+      "desc": "Remi vietnamez pentru doi împotriva calculatorului: trage sau ia o carte aruncată, formează grupuri și închide; câștigă cine are cele mai puține puncte rămase; 10 niveluri."
+    },
+    "shogi": {
+      "name": "Shogi (Șah japonez)",
+      "desc": "Joacă shogi împotriva calculatorului: plasează piese capturate, promovează și dă șah-mat regelui; 10 niveluri cu anulare."
+    },
+    "janggi": {
+      "name": "Janggi (Șah coreean)",
+      "desc": "Joacă șah coreean împotriva calculatorului: diagonale în palat, tun care sare peste o singură piesă, elefanți cu trei pași; 10 niveluri cu anulare."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Mișcă paletele stânga și dreapta ca să ții bila în joc, lovește amortizoarele și atinge scorul țintă înainte să-ți se termine cele 3 bile; 10 niveluri."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage pentru doi împotriva calculatorului: crib, joc până la 31, numărarea mâinilor, cursă până la 61 de puncte; 10 niveluri."
     }
   },
   "s": {

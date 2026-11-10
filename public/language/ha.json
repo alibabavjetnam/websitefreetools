@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kati da suka rage: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} ya wuce.",
     "lib.arcade.tlBad": "Kati da aka zaɓa ba sa yin ingantaccen saiti.",
-    "lib.arcade.tlLow": "Wannan saiti bai isa girma don doke wanda ke kan tebur ba."
+    "lib.arcade.tlLow": "Wannan saiti bai isa girma don doke wanda ke kan tebur ba.",
+    "lib.arcade.note.td": "Danna wani fili mara komai (ba hanya ba) don gina hasumiyar harbi, wadda ke cin zinariya; danna hasumiya sau ɗaya kuma don ƙara mata ƙarfi (har zuwa mataki na 5). Hasumiyoyi suna harbin maƙiyin da ya fi yin nisa a cikin kewayonsu ta atomatik. Ka ci maƙiya don samun ƙarin zinariya; idan maƙiya 15 suka isa ƙarshe, ka yi rashin nasara. Ka tsira daga duk raƙuman don ka kammala matakin.",
+    "lib.arcade.tdInfo": "Zinariya: {g} · Raƙuma {w}/{t}",
+    "lib.arcade.tdCost": "Hasumiya: {n}",
+    "lib.arcade.note.colorNum": "Kowane fili yana da lamba da ta dace da wani launi a cikin allon launuka. Zaɓi launi, sannan danna filayen da ke da wannan lamba don canza musu launi; danna da launi mara kyau ba zai canza komai ba. Canza launin kowane fili daidai don kammala hoton. Matakai masu girma suna da launuka da yawa.",
+    "lib.arcade.cnWrong": "Launi ba daidai ba — duba lambar da ke kan filin.",
+    "lib.arcade.note.yukon": "Kamar Klondike amma babu tarin ajiya: za a iya motsa kowane kati da ke fuskantar sama tare da duk katunan da ke kansa, ko da ba su bi jere ba; kati na farko ne kawai ya kamata ya dace da ginshiƙin da za a kai (daga babba zuwa ƙarami, jaja da baƙi a juye-juye; Sarki yana zuwa ginshiƙi mara komai). Gina duka katuna 52 a kan tushe huɗu daga Ace zuwa Sarki. Matakai masu sauƙi suna farawa da ƙarin katuna da aka riga aka juya.",
+    "lib.arcade.yukonFree": "Katuna masu fuska ƙasa: {n}",
+    "lib.arcade.note.chinesechk": "Kuna wasa da kayan shuɗi a kusurwar dama; ku kai duka 10 zuwa kusurwar hagu ta kishiyar kafin kwamfuta. Kowane juyi kuna motsa kaya ɗaya: mataki ɗaya zuwa rami mara komai a maƙwabta, ko tsallake wani kaya zuwa rami mara komai kai tsaye bayansa, kuma ku ci gaba da tsallakewa gwargwadon yadda kuke so. Danna kayanku, sannan danna rami kore don motsawa.",
+    "lib.arcade.ccTurn": "Juyinku · Juyi {n}",
+    "lib.arcade.ccDraw": "Juyi sun ƙare — an yi canjaras.",
+    "lib.arcade.note.maubinh": "Ku da kwamfuta kowanne yana samun katuna 13 kuma ku tsara su zuwa hannaye 3: hannun baya mai katuna 5, hannun tsakiya mai katuna 5 da hannun gaba mai katuna 3. Hannun baya dole ya zama ba shi da rauni fiye da na tsakiya, na tsakiya kuma ba shi da rauni fiye da na gaba; in ba haka ba tsarinku ya lalace kuma kun yi rashin nasara a zagayen gaba ɗaya. Danna kati, sannan danna jeri inda zai tafi (danna katin da aka riga aka sa don mayar da shi). Kowane hannu da kuka ci yana ba da maki 1; cin duka 3 yana ba da maki 6. Ku yi zagaye 5 — jimillar mai kyau tana kammala matakin. Hannun gaba zai iya zama kati mafi girma, nau'i-biyu ko uku iri ɗaya kawai.",
+    "lib.arcade.mbHigh": "Kati mafi girma",
+    "lib.arcade.mbPair": "Nau'i-biyu",
+    "lib.arcade.mbTwoPair": "Nau'i-biyu biyu",
+    "lib.arcade.mbTrips": "Uku iri ɗaya",
+    "lib.arcade.mbStraight": "Jere",
+    "lib.arcade.mbFlush": "Launi ɗaya",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Huɗu iri ɗaya",
+    "lib.arcade.mbSflush": "Jere mai launi ɗaya",
+    "lib.arcade.mbBack": "Hannun baya",
+    "lib.arcade.mbMid": "Hannun tsakiya",
+    "lib.arcade.mbFront": "Hannun gaba",
+    "lib.arcade.mbFoe": "Kwamfuta",
+    "lib.arcade.mbYou": "Kai",
+    "lib.arcade.mbFoul": "Tsari ya lalace!",
+    "lib.arcade.mbFoeFoul": "Tsarin kwamfuta ya lalace!",
+    "lib.arcade.mbConfirm": "Nuna katuna",
+    "lib.arcade.mbReset": "Share",
+    "lib.arcade.mbHand": "Katunanku",
+    "lib.arcade.mbRound": "Zagaye {a}/{b}",
+    "lib.arcade.mbTotal": "Jimilla: {n}",
+    "lib.arcade.mbFinish": "Gama",
+    "lib.arcade.mbNext": "Zagaye na gaba",
+    "lib.arcade.mbDraw": "Maki iri ɗaya — a sake wasa.",
+    "lib.arcade.mbAutoMsg": "Ga tsarin da aka ba da shawara. Kuna iya canza shi kafin ku nuna katunan.",
+    "lib.arcade.note.phom": "'Yan wasa biyu; kowanne yana samun katuna 9 (wanda ya fara yana samun 10). Meld shi ne katuna 3 ko fiye masu daraja iri ɗaya, ko katuna 3 ko fiye masu jere na alama iri ɗaya (Ace yana ƙasa ne kawai). A juyinku ku ɗauki kati daga tarin, ko ku ɗauki katin da abokin hamayya ya jefa yanzu idan yana yin meld da katunanku (katin da kuka ɗauka dole ku riƙe shi), sannan ku jefa kati ɗaya. Idan kowane ɗan wasa ya jefa katuna 4, zagayen ya ƙare kuma wanda ke da ƙaramin jimillar katunan da ba a yi meld da su ba (Ace = 1 … Sarki = 13) ya yi nasara. Idan duka katunanku suna cikin meld bayan jefawa, kun fita (“U”) kuma kun yi nasara nan da nan. Katunan da ke da zane kore suna cikin mafi kyawun saitin meld naku.",
+    "lib.arcade.pmDraw": "Ɗauka",
+    "lib.arcade.pmEat": "Ɗauki jefaffen",
+    "lib.arcade.pmThrow": "Jefa",
+    "lib.arcade.pmFoeAte": "Kwamfuta ta ɗauki katinku.",
+    "lib.arcade.pmFoeU": "Kwamfuta ta fita!",
+    "lib.arcade.pmTurn": "Juyi {a}/{b}",
+    "lib.arcade.pmLeft": "Wanda ba meld: {n}",
+    "lib.arcade.pmDeck": "Tari: {n}",
+    "lib.arcade.pmFoeHand": "Katunan kwamfuta",
+    "lib.arcade.pmFoeDisc": "Jefaffun kwamfuta",
+    "lib.arcade.pmFoeEaten": "Kwamfuta ta ɗauka",
+    "lib.arcade.pmMyDisc": "Jefaffunku",
+    "lib.arcade.pmAte": "Kun ɗauki wannan kati — ku riƙe shi a cikin meld.",
+    "lib.arcade.pmKeep": "Dole a riƙe katin da aka ɗauka — ku jefa wani.",
+    "lib.arcade.pmU": "Kun fita! Kun yi nasara nan da nan.",
+    "lib.arcade.pmYou": "Kai",
+    "lib.arcade.pmFoe": "Kwamfuta",
+    "lib.arcade.pmDraw2": "Maki iri ɗaya.",
+    "lib.arcade.note.shogi": "Shogi wasan dara ne na Japan. Kuna wasa da ɓangaren ƙasa kuma kuna fara tafiya; kayan kwamfuta suna fuskantar wata hanya. Kayan da aka kama suna shiga hannunku kuma ana iya sanya su a kowane fili mara komai maimakon yin tafiya (ba za a sa soja a ginshiƙin da kuke da soja wanda ba a ɗaga shi ba, kuma ba za a sa kaya a layin da ba zai iya sake tafiya ba). Kayan da suka shiga, suka fita, ko suka yi tafiya cikin layuka uku na ƙarshe na abokin hamayya za su iya ɗaukaka (sai Sarki da Zinariya); ɗaukakawa tilas ne idan kaya ba zai da sauran tafiya. Ka yi wa Sarkin abokin hamayya kisa-mat don ka ci nasara. Kanji: 歩 soja, 香 mashi, 桂 doki, 銀 azurfa, 金 zinariya, 角 bishop, 飛 rook, 玉 sarki; と, 馬, 竜 da sauran jajayen kaya an ɗaukaka su.",
+    "lib.arcade.sgPromote": "Ɗaukaka",
+    "lib.arcade.sgKeep": "Kada a ɗaukaka",
+    "lib.arcade.sgCheck": "Kuna cikin barazana (check)!",
+    "lib.arcade.sgWin": "Kisa-mat — kun yi nasara.",
+    "lib.arcade.sgLose": "An yi muku kisa-mat.",
+    "lib.arcade.sgAskPromote": "A ɗaukaka wannan kaya?",
+    "lib.arcade.note.janggi": "Janggi dara ce ta Koriya. Kuna wasa da kayan shuɗi a ƙasa kuma kuna fara tafiya. Ba kamar xiangqi ba, babu kogi, kuma fadoji biyu duka suna da layukan giciye. Janar da masu gadi suna tafiya mataki ɗaya a layukan fada (har da giciye); keken yaƙi yana zamewa kuma yana kamawa a giciyen fada; Cannon dole ya tsallake kaya ɗaya daidai (ba wani Cannon ba) don tafiya ko kamawa, kuma ba ya iya kama Cannon; Doki yana tafiya mataki ɗaya a miƙe sannan ɗaya a giciye, Giwa kuma ɗaya a miƙe sannan biyu a giciye, duka biyu ana toshe su idan akwai kaya a hanya; Sojoji suna tafiya gaba ko gefe, da gaba a giciye a cikin fadar abokin hamayya. Janar biyu ba za su taɓa fuskantar juna ba. Ka yi wa Janar na abokin hamayya kisa-mat don ka ci nasara. Kwamfuta ba ta taɓa tsallake juyi ba.",
+    "lib.arcade.jgCheck": "Kuna cikin barazana (check)!",
+    "lib.arcade.jgWin": "Kisa-mat — kun yi nasara.",
+    "lib.arcade.jgLose": "An yi muku kisa-mat.",
+    "lib.arcade.note.pinball": "Danna Space, Sama ko ka taɓa tebur don harba ƙwallo. Riƙe Hagu (ko taɓa rabin tebur na hagu) don ɗaga flipper na hagu, da Dama (ko rabin dama) na dama — ka danna cikin sauti maimakon riƙewa. Bumper masu zagaye suna ba da maki 100 kowanne. Kuna da ƙwallo 3; ku kai maki da ake nema kafin su ƙare don kammala matakin.",
+    "lib.arcade.pinBalls": "Ƙwallaye: {n} · Manufa: {t}",
+    "lib.arcade.note.cribbage": "Cribbage na mutane biyu, tseren zuwa maki 61. A kowane rarraba kuna samun katuna 6 kuma ku sanya 2 fuska ƙasa a cikin crib (na mai rarrabawa ne). Ana juya kati na farawa (starter). Sannan a yi juyi ana wasa da katuna fuska sama ba tare da jimillar da ke gudana ta wuce 31 ba: kaiwa 15 ko 31 yana ba da maki 2, daidaita katin ƙarshe yana ba da 2/6/12, jere na katuna 3 ko fiye (a kowane tsari) yana ba da tsawonsa, kuma idan babu wanda zai iya wasa na ƙarshe yana samun maki 1 (“Go”). Sannan ana ƙidaya kowane hannu na katuna 4 tare da starter: kowane haɗin da ya kai 15 yana ba da 2, kowane nau'i-biyu 2, jere na 3+ tsawonsa, katuna huɗu na alama ɗaya 4 (5 tare da starter), da Jack mai alama ɗaya da starter 1. Wanda ba mai rarrabawa ba yana ƙidaya na farko, sannan mai rarrabawa ya ƙidaya hannunsa da crib.",
+    "lib.arcade.cbFifteen": "Goma sha biyar",
+    "lib.arcade.cbPair": "Nau'i-biyu",
+    "lib.arcade.cbRun": "Jere",
+    "lib.arcade.cbFlush": "Launi ɗaya",
+    "lib.arcade.cbNobs": "Jack mai alamar starter",
+    "lib.arcade.cbHeels": "Jack a matsayin starter",
+    "lib.arcade.cbYou": "Kai",
+    "lib.arcade.cbFoe": "Kwamfuta",
+    "lib.arcade.cbLast": "Kati na ƙarshe",
+    "lib.arcade.cbCount": "Jimilla: {n}",
+    "lib.arcade.cbYouDeal": "Kai ke rarrabawa",
+    "lib.arcade.cbFoeDeal": "Kwamfuta ke rarrabawa",
+    "lib.arcade.cbPick": "Zaɓi katuna 2 don crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Katunanku",
+    "lib.arcade.cbFoeHand": "Katunan kwamfuta",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "Maki 0",
+    "lib.arcade.cbPlayed": "An buga",
+    "lib.arcade.cbToCrib": "Sa a crib",
+    "lib.arcade.cbNext": "Ci gaba",
+    "lib.arcade.cbHand": "Hannu"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Goma sha uku)",
       "desc": "Wasan kati na Vietnam na mutum huɗu: yi wasa da guda ɗaya, biyu, jeri da huɗu iri ɗaya don kwashe hannunka tukuna; matakai 10."
+    },
+    "tower-defense": {
+      "name": "Kare Hasumiya",
+      "desc": "Gina da ƙara ƙarfin hasumiyoyi a gefen hanya don dakatar da kowane raƙuman maƙiya; matakai 10 a taswirori uku daban-daban."
+    },
+    "color-by-number": {
+      "name": "Canza Launi da Lamba",
+      "desc": "Canza launin kowane fili da launin da ya dace da lambarsa don bayyana hoton; hotuna 10 masu ƙarin launuka a kowane lokaci."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike ba tare da tarin ajiya ba: motsa kowane kati mai fuska sama tare da duk abin da ke kansa; matakai 10, ƙarancin katuna masu fuska sama yayin da kuke ci gaba."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Wasan tsalle da taki mai siffar tauraro da kwamfuta: ka fara kai duka kaya 10 zuwa kusurwar kishiyar; matakai 10."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker na China)",
+      "desc": "Tsara katuna 13 zuwa hannaye uku na katuna 5, 5 da 3 ka ci kwamfuta; zagaye 5 a kowane mataki, matakai 10."
+    },
+    "phom": {
+      "name": "Phom (Rummy na Vietnam)",
+      "desc": "Rummy na Vietnam na mutane biyu da kwamfuta: ɗauki kati ko jefaffe, yi meld ka fita; mafi ƙarancin maki da suka rage yana nasara; matakai 10."
+    },
+    "shogi": {
+      "name": "Shogi (Daran Japan)",
+      "desc": "Yi wasan shogi da kwamfuta: sanya kayan da aka kama, ɗaukaka, ka yi wa sarki kisa-mat; matakai 10 tare da komawa baya."
+    },
+    "janggi": {
+      "name": "Janggi (Daran Koriya)",
+      "desc": "Yi wasan dara na Koriya da kwamfuta: giciyen fada, tsallen cannon akan kaya ɗaya, giwaye masu matakai uku; matakai 10 tare da komawa baya."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Buga hagu da dama don kiyaye ƙwallo a raye, ka bugi bumpers ka kai maki da ake nema kafin ƙwallayenka 3 su ƙare; matakai 10."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage na mutane biyu da kwamfuta: crib, pegging zuwa 31, ƙidayar hannaye, tseren zuwa maki 61; matakai 10."
     }
   },
   "s": {

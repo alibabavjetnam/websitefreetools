@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kalan kartlar: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} pas geçti.",
     "lib.arcade.tlBad": "Seçilen kartlar geçerli bir grup oluşturmuyor.",
-    "lib.arcade.tlLow": "Bu grup masadakini yenecek kadar yüksek değil."
+    "lib.arcade.tlLow": "Bu grup masadakini yenecek kadar yüksek değil.",
+    "lib.arcade.note.td": "Kule kurmak için boş bir kareye (yola değil) dokun, altın harcanır; kuleyi geliştirmek için tekrar dokun (en fazla 5. seviye). Kuleler menzildeki en ilerlemiş düşmana otomatik ateş eder. Düşmanları yenerek daha fazla altın kazan; 15 düşman çıkışa ulaşırsa kaybedersin. Tüm dalgalardan sağ çıkarak seviyeyi geç.",
+    "lib.arcade.tdInfo": "Altın: {g} · Dalga {w}/{t}",
+    "lib.arcade.tdCost": "Kule: {n}",
+    "lib.arcade.note.colorNum": "Her karede paletteki bir renge karşılık gelen bir numara var. Bir renk seç, sonra o numaralı karelere dokunarak boya; yanlış renkle dokunursan hiçbir şey boyanmaz. Resmi tamamlamak için tüm kareleri doğru boya. Yüksek seviyelerde daha çok renk var.",
+    "lib.arcade.cnWrong": "Yanlış renk — karedeki numaraya bak.",
+    "lib.arcade.note.yukon": "Klondike gibidir ama deste yoktur: açık olan herhangi bir kart, üstündeki tüm kartlarla birlikte (sıralı olmasalar bile) taşınabilir; yalnızca ilk kart hedef sütuna uymalıdır (azalan sırada, kırmızı-siyah dönüşümlü; boş sütuna sadece Papaz konur). 52 kartın hepsini dört temel yığına As'tan Papaz'a doğru diz. Düşük seviyelerde daha çok kart açık başlar.",
+    "lib.arcade.yukonFree": "Kapalı kartlar: {n}",
+    "lib.arcade.note.chinesechk": "Sağ köşedeki mavi taşları sen oynarsın; 10 taşın hepsini bilgisayardan önce karşı taraftaki sol köşeye taşı. Her turda bir taş oynarsın: boş bir komşu deliğe bir adım at ya da herhangi bir taşın üzerinden hemen arkasındaki boş deliğe atla; istediğin kadar art arda atlayabilirsin. Önce taşına, sonra yeşil bir deliğe dokunarak hamle yap.",
+    "lib.arcade.ccTurn": "Sıra sende · Tur {n}",
+    "lib.arcade.ccDraw": "Tur bitti — berabere.",
+    "lib.arcade.note.maubinh": "Sen ve bilgisayar 13'er kart alır ve 3 ele dizersiniz: 5 kartlık arka el, 5 kartlık orta el ve 3 kartlık ön el. Arka el en az orta kadar, orta el de en az ön kadar güçlü olmalıdır; aksi halde dizilimin bozuk sayılır ve turu tümden kaybedersin. Bir karta, sonra gideceği sıraya dokun (yerleştirdiğin karta dokunarak geri al). Kazandığın her el 1 puan, üçünü birden kazanmak 6 puan getirir. 5 tur oyna — toplam pozitifse seviye geçilir. Ön elde yalnızca yüksek kart, bir çift veya üçlü olabilir.",
+    "lib.arcade.mbHigh": "Yüksek kart",
+    "lib.arcade.mbPair": "Çift",
+    "lib.arcade.mbTwoPair": "İki çift",
+    "lib.arcade.mbTrips": "Üçlü",
+    "lib.arcade.mbStraight": "Seri",
+    "lib.arcade.mbFlush": "Floş",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Dörtlü",
+    "lib.arcade.mbSflush": "Düz floş",
+    "lib.arcade.mbBack": "Arka el",
+    "lib.arcade.mbMid": "Orta el",
+    "lib.arcade.mbFront": "Ön el",
+    "lib.arcade.mbFoe": "Bilgisayar",
+    "lib.arcade.mbYou": "Sen",
+    "lib.arcade.mbFoul": "Dizilim bozuk!",
+    "lib.arcade.mbFoeFoul": "Bilgisayarın dizilimi bozuk!",
+    "lib.arcade.mbConfirm": "Kartları aç",
+    "lib.arcade.mbReset": "Temizle",
+    "lib.arcade.mbHand": "Elin",
+    "lib.arcade.mbRound": "Tur {a}/{b}",
+    "lib.arcade.mbTotal": "Toplam: {n}",
+    "lib.arcade.mbFinish": "Bitir",
+    "lib.arcade.mbNext": "Sonraki tur",
+    "lib.arcade.mbDraw": "Puanlar eşit — tekrar oyna.",
+    "lib.arcade.mbAutoMsg": "İşte önerilen bir dizilim. Kartları açmadan önce değiştirebilirsin.",
+    "lib.arcade.note.phom": "İki oyuncu; herkese 9 kart dağıtılır (ilk başlayan 10 alır). Per, aynı değerden 3 veya daha fazla kart ya da aynı renkten art arda 3 veya daha fazla karttır (As yalnızca en küçüktür). Sıran gelince desteden bir kart çek ya da rakibin az önce attığı kart elinle per oluşturuyorsa onu al (aldığın kartı saklamalısın), sonra bir kart at. Herkes 4 kart attığında tur biter ve per dışı kartlarının toplamı düşük olan kazanır (As = 1 … Papaz = 13). Attıktan sonra tüm kartların perlerdeyse «Ù» deyip açarsın ve hemen kazanırsın. Yeşil çerçeveli kartlar en iyi per düzenindedir.",
+    "lib.arcade.pmDraw": "Çek",
+    "lib.arcade.pmEat": "Atılanı al",
+    "lib.arcade.pmThrow": "At",
+    "lib.arcade.pmFoeAte": "Bilgisayar kartını aldı.",
+    "lib.arcade.pmFoeU": "Bilgisayar elini açtı!",
+    "lib.arcade.pmTurn": "Tur {a}/{b}",
+    "lib.arcade.pmLeft": "Per dışı: {n}",
+    "lib.arcade.pmDeck": "Deste: {n}",
+    "lib.arcade.pmFoeHand": "Bilgisayarın eli",
+    "lib.arcade.pmFoeDisc": "Bilgisayarın attıkları",
+    "lib.arcade.pmFoeEaten": "Bilgisayarın aldığı",
+    "lib.arcade.pmMyDisc": "Attıkların",
+    "lib.arcade.pmAte": "Bu kartı aldın — bir perde tut.",
+    "lib.arcade.pmKeep": "Aldığın kartı saklamalısın — başka bir kart at.",
+    "lib.arcade.pmU": "Bitirdin! Hemen kazandın.",
+    "lib.arcade.pmYou": "Sen",
+    "lib.arcade.pmFoe": "Bilgisayar",
+    "lib.arcade.pmDraw2": "Puanlar eşit.",
+    "lib.arcade.note.shogi": "Şogi, Japon satrancıdır. Alt tarafı sen oynarsın ve ilk hamle senindir; bilgisayarın taşları ters yöne bakar. Yenen taşlar elinize geçer ve hamle yapmak yerine herhangi bir boş kareye konabilir (terfi etmemiş piyonun olduğu dikeye piyon, bir daha hareket edemeyeceği sıraya taş konamaz). Rakibin son üç sırasına giren, bu bölgeden çıkan ya da orada oynayan taş terfi edebilir (Şah ve Altın hariç); hamlesi kalmayacak taşın terfisi zorunludur. Rakip Şah'ı mat ederek kazan. Kanji: 歩 piyon, 香 mızrak, 桂 at, 銀 gümüş, 金 altın, 角 fil, 飛 kale, 玉 şah; と, 馬, 竜 ve diğer kırmızı taşlar terfi etmiştir.",
+    "lib.arcade.sgPromote": "Terfi et",
+    "lib.arcade.sgKeep": "Terfi etme",
+    "lib.arcade.sgCheck": "Şah çekildi!",
+    "lib.arcade.sgWin": "Şah mat — kazandın.",
+    "lib.arcade.sgLose": "Mat oldun.",
+    "lib.arcade.sgAskPromote": "Bu taş terfi etsin mi?",
+    "lib.arcade.note.janggi": "Janggi, Kore satrancıdır. Alttaki mavi taşları sen oynarsın ve ilk hamle senindir. Xiangqi'den farklı olarak nehir yoktur ve iki sarayda da çapraz çizgiler bulunur. General ve Muhafızlar saray çizgileri boyunca (çaprazlar dahil) bir adım gider; Kale saray çaprazlarında da kayarak gider ve alır; Top, hareket etmek veya taş almak için tam olarak bir taşın (başka bir Top olmamalı) üzerinden atlamalı ve Top'u alamaz; At önce bir düz sonra bir çapraz adım, Fil bir düz sonra iki çapraz adım atar, yolda taş varsa ikisi de engellenir; Piyonlar ileri ya da yana, rakip sarayında ise çapraz ileri de gider. İki General asla karşı karşıya gelemez. Rakip General'i mat ederek kazan. Bilgisayar pas geçmez.",
+    "lib.arcade.jgCheck": "Şah çekildi!",
+    "lib.arcade.jgWin": "Şah mat — kazandın.",
+    "lib.arcade.jgLose": "Mat oldun.",
+    "lib.arcade.note.pinball": "Topu fırlatmak için Boşluk, Yukarı tuşuna bas ya da masaya dokun. Sol çubuğu kaldırmak için Sol'u (veya masanın sol yarısına dokun), sağ çubuk için Sağ'ı (veya sağ yarıya dokun) basılı tut — basılı tutmak yerine ritimle dokunabilirsin. Yuvarlak tamponlar 100'er puan verir. 3 topun var; bitmeden hedef puana ulaşırsan seviyeyi geçersin.",
+    "lib.arcade.pinBalls": "Top: {n} · Hedef: {t}",
+    "lib.arcade.note.cribbage": "İki kişilik cribbage, 61 puana yarış. Her elde 6 kart alırsın ve 2 tanesini yüzü kapalı olarak crib'e (dağıtıcıya ait) koyarsın. Bir açılış kartı çevrilir. Sonra sırayla kartları açık oynarsınız, toplam hiçbir zaman 31'i geçmez: 15 veya 31'e ulaşmak 2, son kartla eşleşmek 2/6/12, 3 ve üzeri seri (sırasız) uzunluğu kadar puan verir; kimse oynayamazsa son oynayan 1 puan alır («Go»). Sonra 4 kartlık eller açılış kartıyla sayılır: toplamı 15 olan her kombinasyon 2, her çift 2, 3+ serinin uzunluğu kadar, aynı renkten dört kart 4 (açılışla 5), açılış kartıyla aynı renkteki Vale 1 puan. Önce dağıtıcı olmayan sayar, sonra dağıtıcı kendi elini ve crib'i sayar.",
+    "lib.arcade.cbFifteen": "On beş",
+    "lib.arcade.cbPair": "Çift",
+    "lib.arcade.cbRun": "Seri",
+    "lib.arcade.cbFlush": "Floş",
+    "lib.arcade.cbNobs": "Açılışla aynı renk Vale",
+    "lib.arcade.cbHeels": "Açılış kartı Vale",
+    "lib.arcade.cbYou": "Sen",
+    "lib.arcade.cbFoe": "Bilgisayar",
+    "lib.arcade.cbLast": "Son kart",
+    "lib.arcade.cbCount": "Toplam: {n}",
+    "lib.arcade.cbYouDeal": "Sen dağıtıyorsun",
+    "lib.arcade.cbFoeDeal": "Bilgisayar dağıtıyor",
+    "lib.arcade.cbPick": "Crib için 2 kart seç",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Elin",
+    "lib.arcade.cbFoeHand": "Bilgisayarın eli",
+    "lib.arcade.cbStarter": "Açılış kartı",
+    "lib.arcade.cbZero": "0 puan",
+    "lib.arcade.cbPlayed": "Oynanan",
+    "lib.arcade.cbToCrib": "Crib'e koy",
+    "lib.arcade.cbNext": "Devam",
+    "lib.arcade.cbHand": "El"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (On Üç)",
       "desc": "Dört kişilik Vietnam kart oyunu: tek kart, çift, dizi ve dörtlü oynayarak elinizi ilk bitirin; 10 seviye."
+    },
+    "tower-defense": {
+      "name": "Kule Savunması",
+      "desc": "Yol boyunca kule kur ve geliştir, tüm düşman dalgalarını durdur; üç farklı haritada 10 seviye."
+    },
+    "color-by-number": {
+      "name": "Sayılarla Boyama",
+      "desc": "Resmi ortaya çıkarmak için her kareyi numarasına uyan renkle boya; her seferinde daha çok renkli 10 resim."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Destesiz Klondike: açık herhangi bir kartı üstündeki her şeyle birlikte taşı; 10 seviye, ilerledikçe daha az kart açık."
+    },
+    "chinese-checkers": {
+      "name": "Çin Daması",
+      "desc": "Bilgisayara karşı yıldız şeklinde adım ve atlama oyunu: 10 taşın hepsini önce karşı köşeye taşı; 10 seviye."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (Çin Pokeri)",
+      "desc": "13 kartı 5, 5 ve 3 kartlık üç ele diz ve bilgisayarı yen; seviye başına 5 tur, 10 seviye."
+    },
+    "phom": {
+      "name": "Phỏm (Vietnam Remisi)",
+      "desc": "Bilgisayara karşı iki kişilik Vietnam remisi: kart çek ya da atılanı al, per yap ve elini aç; en az artık puanı olan kazanır; 10 seviye."
+    },
+    "shogi": {
+      "name": "Şogi (Japon Satrancı)",
+      "desc": "Bilgisayara karşı şogi oyna: yenen taşları geri koy, terfi ettir ve şahı mat et; geri alma özellikli 10 seviye."
+    },
+    "janggi": {
+      "name": "Janggi (Kore Satrancı)",
+      "desc": "Bilgisayara karşı Kore satrancı oyna: saray çaprazları, tek taşlı top atlayışı, üç adımlı fil; geri alma özellikli 10 seviye."
+    },
+    "pinball": {
+      "name": "Pinball (Langırt)",
+      "desc": "Sol ve sağ çubuklarla topu hayatta tut, tamponlara vur ve 3 topun bitmeden hedef puana ulaş; 10 seviye."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Bilgisayara karşı iki kişilik cribbage: crib, 31'e kadar oynama, el sayma, 61 puana yarış; 10 seviye."
     }
   },
   "s": {

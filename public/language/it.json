@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Carte rimaste: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} passa.",
     "lib.arcade.tlBad": "Le carte selezionate non formano una combinazione valida.",
-    "lib.arcade.tlLow": "Questa combinazione non è abbastanza alta per battere il tavolo."
+    "lib.arcade.tlLow": "Questa combinazione non è abbastanza alta per battere il tavolo.",
+    "lib.arcade.note.td": "Tocca una casella vuota (non il sentiero) per costruire una torre di tiro, che costa oro; tocca di nuovo una torre per potenziarla (fino al livello 5). Le torri sparano automaticamente al nemico che è andato più lontano nel loro raggio. Sconfiggi i nemici per guadagnare più oro; se 15 nemici raggiungono la fine, perdi. Sopravvivi a tutte le ondate per superare il livello.",
+    "lib.arcade.tdInfo": "Oro: {g} · Ondata {w}/{t}",
+    "lib.arcade.tdCost": "Torre: {n}",
+    "lib.arcade.note.colorNum": "Ogni casella ha un numero che corrisponde a un colore della tavolozza. Scegli un colore, poi tocca le caselle con quel numero per dipingerle; con il colore sbagliato non succede nulla. Dipingi correttamente tutte le caselle per completare l'immagine. I livelli più alti hanno più colori.",
+    "lib.arcade.cnWrong": "Colore sbagliato: controlla il numero sulla casella.",
+    "lib.arcade.note.yukon": "Come il Klondike ma senza mazzo di riserva: qualsiasi carta scoperta può essere spostata insieme a tutte le carte che ha sopra, anche se non sono in sequenza; solo la prima carta deve adattarsi alla colonna di destinazione (in ordine decrescente, alternando rosso e nero; un Re va in una colonna vuota). Costruisci tutte le 52 carte sulle quattro fondazioni dall'Asso al Re. I livelli bassi iniziano con più carte già scoperte.",
+    "lib.arcade.yukonFree": "Carte coperte: {n}",
+    "lib.arcade.note.chinesechk": "Giochi con i pezzi blu nell'angolo di destra; porta tutti e 10 nell'angolo opposto a sinistra prima del computer. A ogni turno muovi un pezzo: un passo in una buca vuota adiacente, oppure un salto sopra qualsiasi pezzo fino alla buca vuota subito dietro, e puoi continuare a saltare quante volte vuoi. Tocca uno dei tuoi pezzi, poi tocca una buca verde per muovere.",
+    "lib.arcade.ccTurn": "Tocca a te · Turno {n}",
+    "lib.arcade.ccDraw": "Turni esauriti: è un pareggio.",
+    "lib.arcade.note.maubinh": "Tu e il computer ricevete 13 carte ciascuno e le disponete in 3 mani: una mano posteriore di 5 carte, una centrale di 5 carte e una anteriore di 3 carte. La mano posteriore deve essere forte almeno quanto quella centrale, e quella centrale almeno quanto quella anteriore; altrimenti la tua disposizione è irregolare e perdi l'intero round. Tocca una carta, poi tocca la riga dove va (tocca una carta già posizionata per riprenderla). Ogni mano vinta vale 1 punto; vincerle tutte e 3 ne vale 6. Giocate 5 round: un totale positivo supera il livello. La mano anteriore può essere solo carta alta, coppia o tris.",
+    "lib.arcade.mbHigh": "Carta alta",
+    "lib.arcade.mbPair": "Coppia",
+    "lib.arcade.mbTwoPair": "Doppia coppia",
+    "lib.arcade.mbTrips": "Tris",
+    "lib.arcade.mbStraight": "Scala",
+    "lib.arcade.mbFlush": "Colore",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Poker",
+    "lib.arcade.mbSflush": "Scala colore",
+    "lib.arcade.mbBack": "Mano posteriore",
+    "lib.arcade.mbMid": "Mano centrale",
+    "lib.arcade.mbFront": "Mano anteriore",
+    "lib.arcade.mbFoe": "Computer",
+    "lib.arcade.mbYou": "Tu",
+    "lib.arcade.mbFoul": "Irregolare!",
+    "lib.arcade.mbFoeFoul": "Il computer è irregolare!",
+    "lib.arcade.mbConfirm": "Mostra le carte",
+    "lib.arcade.mbReset": "Azzera",
+    "lib.arcade.mbHand": "La tua mano",
+    "lib.arcade.mbRound": "Round {a}/{b}",
+    "lib.arcade.mbTotal": "Totale: {n}",
+    "lib.arcade.mbFinish": "Termina",
+    "lib.arcade.mbNext": "Round successivo",
+    "lib.arcade.mbDraw": "Parità di punti: giocate ancora.",
+    "lib.arcade.mbAutoMsg": "Ecco una disposizione suggerita. Puoi modificarla prima di mostrare le carte.",
+    "lib.arcade.note.phom": "Due giocatori; ognuno riceve 9 carte (chi inizia ne riceve 10). Una combinazione è formata da 3 o più carte dello stesso valore, oppure da 3 o più carte consecutive dello stesso seme (l'Asso è solo basso). Al tuo turno pesca una carta dal mazzo, oppure prendi la carta appena scartata dall'avversario se forma una combinazione con la tua mano (una carta presa va tenuta), poi scarta una carta. Quando ogni giocatore ha scartato 4 carte il round termina e vince chi ha il totale più basso di carte fuori dalle combinazioni (Asso = 1 … Re = 13). Se dopo uno scarto tutte le tue carte sono in combinazioni, chiudi (\"U\") e vinci subito. Le carte evidenziate in verde fanno parte delle tue migliori combinazioni.",
+    "lib.arcade.pmDraw": "Pesca",
+    "lib.arcade.pmEat": "Prendi lo scarto",
+    "lib.arcade.pmThrow": "Scarta",
+    "lib.arcade.pmFoeAte": "Il computer ha preso la tua carta.",
+    "lib.arcade.pmFoeU": "Il computer ha chiuso!",
+    "lib.arcade.pmTurn": "Turno {a}/{b}",
+    "lib.arcade.pmLeft": "Fuori dalle combinazioni: {n}",
+    "lib.arcade.pmDeck": "Mazzo: {n}",
+    "lib.arcade.pmFoeHand": "Mano del computer",
+    "lib.arcade.pmFoeDisc": "Scarti del computer",
+    "lib.arcade.pmFoeEaten": "Il computer ha preso",
+    "lib.arcade.pmMyDisc": "I tuoi scarti",
+    "lib.arcade.pmAte": "Hai preso questa carta: tienila in una combinazione.",
+    "lib.arcade.pmKeep": "Una carta presa va tenuta: scarta un'altra carta.",
+    "lib.arcade.pmU": "Chiuso! Vinci subito.",
+    "lib.arcade.pmYou": "Tu",
+    "lib.arcade.pmFoe": "Computer",
+    "lib.arcade.pmDraw2": "Parità di punti.",
+    "lib.arcade.note.shogi": "Lo shogi è gli scacchi giapponesi. Giochi dal lato inferiore e muovi per primo; i pezzi del computer sono rivolti nella direzione opposta. I pezzi catturati vanno nella tua riserva e, invece di fare una mossa, puoi inserirli in qualsiasi casella vuota (mai un pedone in una colonna dove hai già un pedone non promosso, e mai un pezzo su una traversa dove non potrebbe più muoversi). Un pezzo che entra, esce o si muove nelle ultime tre traverse avversarie può essere promosso (tranne Re e Oro); la promozione è obbligatoria quando il pezzo altrimenti non avrebbe più mosse. Dai scacco matto al Re avversario per vincere. Kanji: 歩 pedone, 香 lancia, 桂 cavallo, 銀 argento, 金 oro, 角 alfiere, 飛 torre, 玉 re; と, 馬, 竜 e gli altri pezzi rossi sono promossi.",
+    "lib.arcade.sgPromote": "Promuovi",
+    "lib.arcade.sgKeep": "Non promuovere",
+    "lib.arcade.sgCheck": "Sei sotto scacco!",
+    "lib.arcade.sgWin": "Scacco matto: hai vinto.",
+    "lib.arcade.sgLose": "Hai subito scacco matto.",
+    "lib.arcade.sgAskPromote": "Promuovere questo pezzo?",
+    "lib.arcade.note.janggi": "Il janggi sono gli scacchi coreani. Giochi con i pezzi blu in basso e muovi per primo. A differenza dello xiangqi non c'è il fiume, e entrambi i palazzi hanno linee diagonali. Il Generale e le Guardie fanno un passo lungo le linee del palazzo (diagonali comprese); il Carro scorre e cattura anche lungo le diagonali del palazzo; il Cannone deve saltare esattamente un pezzo (non un altro Cannone) per muovere o catturare, e non può catturare un Cannone; il Cavallo fa un passo dritto e poi uno in diagonale, l'Elefante uno dritto e poi due in diagonale, entrambi bloccati se un pezzo è di mezzo; i Soldati vanno avanti o di lato, e in diagonale in avanti dentro il palazzo nemico. I due Generali non possono mai guardarsi frontalmente. Dai scacco matto al Generale avversario per vincere. Il computer non passa mai.",
+    "lib.arcade.jgCheck": "Sei sotto scacco!",
+    "lib.arcade.jgWin": "Scacco matto: hai vinto.",
+    "lib.arcade.jgLose": "Hai subito scacco matto.",
+    "lib.arcade.note.pinball": "Premi Spazio, Su o tocca il tavolo per lanciare la palla. Tieni premuto Sinistra (o tocca la metà sinistra del tavolo) per alzare la paletta sinistra e Destra (o la metà destra) per quella destra: meglio toccare a ritmo che tenere premuto. I bumper rotondi valgono 100 punti ciascuno. Hai 3 palle; raggiungi il punteggio obiettivo prima che finiscano per superare il livello.",
+    "lib.arcade.pinBalls": "Palle: {n} · Obiettivo: {t}",
+    "lib.arcade.note.cribbage": "Cribbage per due giocatori, una corsa a 61 punti. A ogni mano ricevi 6 carte e ne metti 2 coperte nel crib (appartiene al mazziere). Viene girata una carta starter. Poi, a turno, giocate carte scoperte senza che il totale corrente superi 31: raggiungere 15 o 31 vale 2, ripetere l'ultima carta vale 2/6/12, una scala di 3 o più carte (in qualsiasi ordine) vale la sua lunghezza, e quando nessuno può giocare l'ultimo giocatore ottiene 1 punto (\"Go\"). Poi si conta ogni mano di 4 carte con lo starter: ogni combinazione che somma 15 vale 2, ogni coppia 2, una scala di 3+ la sua lunghezza, quattro carte dello stesso seme 4 (5 con lo starter) e un Fante dello stesso seme dello starter 1. Conta per primo chi non è il mazziere, poi il mazziere conta la sua mano e il crib.",
+    "lib.arcade.cbFifteen": "Quindici",
+    "lib.arcade.cbPair": "Coppia",
+    "lib.arcade.cbRun": "Scala",
+    "lib.arcade.cbFlush": "Colore",
+    "lib.arcade.cbNobs": "Fante dello stesso seme dello starter",
+    "lib.arcade.cbHeels": "Fante come starter",
+    "lib.arcade.cbYou": "Tu",
+    "lib.arcade.cbFoe": "Computer",
+    "lib.arcade.cbLast": "Ultima carta",
+    "lib.arcade.cbCount": "Totale: {n}",
+    "lib.arcade.cbYouDeal": "Dai tu le carte",
+    "lib.arcade.cbFoeDeal": "Dà le carte il computer",
+    "lib.arcade.cbPick": "Scegli 2 carte per il crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "La tua mano",
+    "lib.arcade.cbFoeHand": "Mano del computer",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 punti",
+    "lib.arcade.cbPlayed": "Giocate",
+    "lib.arcade.cbToCrib": "Metti nel crib",
+    "lib.arcade.cbNext": "Continua",
+    "lib.arcade.cbHand": "Mano"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tredici)",
       "desc": "Il gioco di carte vietnamita da scartare per quattro: gioca carte singole, coppie, sequenze e poker per finire per primo le carte; 10 livelli."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Costruisci e potenzia torri lungo il sentiero per fermare ogni ondata di nemici; 10 livelli su tre mappe diverse."
+    },
+    "color-by-number": {
+      "name": "Colora con i numeri",
+      "desc": "Dipingi ogni casella con il colore del suo numero per rivelare l'immagine; 10 disegni con sempre più colori."
+    },
+    "yukon": {
+      "name": "Solitario Yukon",
+      "desc": "Klondike senza mazzo di riserva: sposta qualsiasi carta scoperta con tutto ciò che ha sopra; 10 livelli, con meno carte scoperte via via."
+    },
+    "chinese-checkers": {
+      "name": "Dama cinese",
+      "desc": "Gioco a stella di passi e salti contro il computer: porta per primo tutti i 10 pezzi nell'angolo opposto; 10 livelli."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker cinese)",
+      "desc": "Disponi 13 carte in tre mani da 5, 5 e 3 carte e batti il computer; 5 round per livello, 10 livelli."
+    },
+    "phom": {
+      "name": "Phom (Ramino vietnamita)",
+      "desc": "Ramino vietnamita per due contro il computer: pesca o prendi uno scarto, forma combinazioni e chiudi; vince chi ha meno punti residui; 10 livelli."
+    },
+    "shogi": {
+      "name": "Shogi (Scacchi giapponesi)",
+      "desc": "Gioca a shogi contro il computer: inserisci i pezzi catturati, promuovi e dai scacco matto al re; 10 livelli con annulla mossa."
+    },
+    "janggi": {
+      "name": "Janggi (Scacchi coreani)",
+      "desc": "Gioca a scacchi coreani contro il computer: diagonali del palazzo, salti del cannone su un solo pezzo, elefanti a tre passi; 10 livelli con annulla mossa."
+    },
+    "pinball": {
+      "name": "Flipper (Pinball)",
+      "desc": "Aziona le palette a sinistra e a destra per tenere viva la palla, colpisci i bumper e raggiungi il punteggio obiettivo prima che finiscano le tue 3 palle; 10 livelli."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage per due contro il computer: crib, pegging fino a 31, conteggio delle mani, corsa a 61 punti; 10 livelli."
     }
   },
   "s": {

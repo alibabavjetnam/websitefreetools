@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kort tilbage: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} passer.",
     "lib.arcade.tlBad": "De valgte kort danner ikke et gyldigt sæt.",
-    "lib.arcade.tlLow": "Dette sæt er ikke højt nok til at slå bordet."
+    "lib.arcade.tlLow": "Dette sæt er ikke højt nok til at slå bordet.",
+    "lib.arcade.note.td": "Tryk på et tomt felt (ikke stien) for at bygge et skydetårn, som koster guld. Tryk på et tårn igen for at opgradere det (op til niveau 5). Tårnene skyder automatisk på den fjende, der er nået længst inden for rækkevidde. Besejr fjender for at tjene mere guld. Hvis 15 fjender når enden, taber du. Overlev alle bølger for at klare niveauet.",
+    "lib.arcade.tdInfo": "Guld: {g} · Bølge {w}/{t}",
+    "lib.arcade.tdCost": "Tårn: {n}",
+    "lib.arcade.note.colorNum": "Hvert felt har et tal, der svarer til en farve i paletten. Vælg en farve, og tryk så på felterne med det tal for at male dem. Hvis du bruger den forkerte farve, sker der ingenting. Mal alle felter rigtigt for at færdiggøre billedet. Højere niveauer har flere farver.",
+    "lib.arcade.cnWrong": "Forkert farve – tjek tallet på feltet.",
+    "lib.arcade.note.yukon": "Som Klondike, men uden bunke: Du kan flytte et hvilket som helst opadvendt kort sammen med alle kortene oven på det, også selvom de ikke står i rækkefølge. Kun det første kort skal passe på målbunken (faldende, skiftevis rød og sort; en konge kan flyttes til en tom bunke). Byg alle 52 kort op på de fire grundbunker fra es til konge. På lave niveauer ligger flere kort allerede opad.",
+    "lib.arcade.yukonFree": "Nedadvendte kort: {n}",
+    "lib.arcade.note.chinesechk": "Du spiller de blå brikker i hjørnet til højre. Flyt alle 10 til det modsatte hjørne til venstre, før computeren gør det. Hver tur flytter du én brik: ét skridt til et tomt nabohul, eller spring over en vilkårlig brik til det tomme hul lige bag den, og fortsæt med at springe, så mange gange du vil. Tryk på en af dine brikker, og tryk derefter på et grønt hul for at flytte.",
+    "lib.arcade.ccTurn": "Din tur · Tur {n}",
+    "lib.arcade.ccDraw": "Ikke flere ture – det er uafgjort.",
+    "lib.arcade.note.maubinh": "Du og computeren får hver 13 kort og arrangerer dem i 3 hænder: en bagerste hånd på 5 kort, en midterste hånd på 5 kort og en forreste hånd på 3 kort. Den bagerste hånd skal mindst være lige så stærk som den midterste, og den midterste mindst lige så stærk som den forreste. Ellers er dit arrangement ugyldigt, og du taber hele runden. Tryk på et kort, og tryk derefter på rækken, det skal ligge i (tryk på et placeret kort for at tage det tilbage). Hver hånd, du vinder, giver 1 point; vinder du alle 3, giver det 6. Spil 5 runder – en positiv sum klarer niveauet. Den forreste hånd kan kun være højt kort, et par eller tre ens.",
+    "lib.arcade.mbHigh": "Højt kort",
+    "lib.arcade.mbPair": "Et par",
+    "lib.arcade.mbTwoPair": "To par",
+    "lib.arcade.mbTrips": "Tre ens",
+    "lib.arcade.mbStraight": "Straight",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Fuldt hus",
+    "lib.arcade.mbQuads": "Fire ens",
+    "lib.arcade.mbSflush": "Straight flush",
+    "lib.arcade.mbBack": "Bagerste hånd",
+    "lib.arcade.mbMid": "Midterste hånd",
+    "lib.arcade.mbFront": "Forreste hånd",
+    "lib.arcade.mbFoe": "Computer",
+    "lib.arcade.mbYou": "Dig",
+    "lib.arcade.mbFoul": "Ugyldigt arrangement!",
+    "lib.arcade.mbFoeFoul": "Computeren har et ugyldigt arrangement!",
+    "lib.arcade.mbConfirm": "Vis kortene",
+    "lib.arcade.mbReset": "Ryd",
+    "lib.arcade.mbHand": "Din hånd",
+    "lib.arcade.mbRound": "Runde {a}/{b}",
+    "lib.arcade.mbTotal": "I alt: {n}",
+    "lib.arcade.mbFinish": "Afslut",
+    "lib.arcade.mbNext": "Næste runde",
+    "lib.arcade.mbDraw": "Uafgjort på point – spil igen.",
+    "lib.arcade.mbAutoMsg": "Her er et forslag til arrangement. Du kan ændre det, før du viser kortene.",
+    "lib.arcade.note.phom": "To spillere. Hver får 9 kort (den, der starter, får 10). En kombination er 3 eller flere kort af samme værdi eller 3 eller flere kort i rækkefølge i samme farve (esset er kun lavt). På din tur trækker du et kort fra bunken eller tager det kort, din modstander lige har kastet, hvis det danner en kombination med din hånd (et kort, du har taget, skal beholdes). Derefter kasserer du ét kort. Når hver spiller har kasseret 4 kort, slutter runden, og den med den laveste sum af kort uden for kombinationer (es = 1 … konge = 13) vinder. Hvis alle dine kort er i kombinationer efter en kassering, går du ud (\"U\") og vinder med det samme. Kort med grøn kant er i dit bedste sæt kombinationer.",
+    "lib.arcade.pmDraw": "Træk",
+    "lib.arcade.pmEat": "Tag kastet kort",
+    "lib.arcade.pmThrow": "Kassér",
+    "lib.arcade.pmFoeAte": "Computeren tog dit kort.",
+    "lib.arcade.pmFoeU": "Computeren gik ud!",
+    "lib.arcade.pmTurn": "Tur {a}/{b}",
+    "lib.arcade.pmLeft": "Uden for kombinationer: {n}",
+    "lib.arcade.pmDeck": "Bunke: {n}",
+    "lib.arcade.pmFoeHand": "Computerens hånd",
+    "lib.arcade.pmFoeDisc": "Computerens kasserede kort",
+    "lib.arcade.pmFoeEaten": "Computeren tog",
+    "lib.arcade.pmMyDisc": "Dine kasserede kort",
+    "lib.arcade.pmAte": "Du tog dette kort – brug det i en kombination.",
+    "lib.arcade.pmKeep": "Et kort, du har taget, skal beholdes – kassér et andet.",
+    "lib.arcade.pmU": "Ude! Du vinder med det samme.",
+    "lib.arcade.pmYou": "Dig",
+    "lib.arcade.pmFoe": "Computer",
+    "lib.arcade.pmDraw2": "Uafgjort på point.",
+    "lib.arcade.note.shogi": "Shogi er japansk skak. Du spiller den nederste side og starter; computerens brikker vender den modsatte vej. Slåede brikker kommer i din hånd og kan sættes ind på et hvilket som helst tomt felt i stedet for at flytte (aldrig en bonde i en kolonne, hvor du allerede har en ikke-forfremmet bonde, og aldrig en brik på en række, hvor den ikke kunne bevæge sig igen). En brik, der flytter ind i, ud af eller inden for de sidste tre rækker hos modstanderen, kan forfremmes (undtagen konge og guld). Forfremmelse er tvunget, hvis brikken ellers ikke ville have flere træk. Skakmat kongen for at vinde. Kanji: 歩 bonde, 香 lanse, 桂 springer, 銀 sølv, 金 guld, 角 løber, 飛 tårn, 玉 konge. と, 馬, 竜 og andre røde brikker er forfremmet.",
+    "lib.arcade.sgPromote": "Forfrem",
+    "lib.arcade.sgKeep": "Forfrem ikke",
+    "lib.arcade.sgCheck": "Du står i skak!",
+    "lib.arcade.sgWin": "Skakmat – du vinder.",
+    "lib.arcade.sgLose": "Du blev sat skakmat.",
+    "lib.arcade.sgAskPromote": "Vil du forfremme denne brik?",
+    "lib.arcade.note.janggi": "Janggi er koreansk skak. Du spiller de blå brikker nederst og starter. I modsætning til xiangqi er der ingen flod, og begge paladser har diagonale linjer. Generalen og vagterne flytter ét skridt langs paladsets linjer (også diagonalt). Vognen glider og slår også langs paladsets diagonaler. Kanonen skal springe over præcis én brik (ikke en anden kanon) for at flytte eller slå, og den kan ikke slå en kanon. Hesten går ét skridt ligeud og derefter ét diagonalt, og elefanten ét ligeud og derefter to diagonalt, begge blokeres, hvis en brik står i vejen. Soldater flytter fremad eller til siden og diagonalt fremad inde i fjendens palads. De to generaler må aldrig stå ansigt til ansigt. Sæt fjendens general skakmat for at vinde. Computeren går aldrig forbi.",
+    "lib.arcade.jgCheck": "Du står i skak!",
+    "lib.arcade.jgWin": "Skakmat – du vinder.",
+    "lib.arcade.jgLose": "Du blev sat skakmat.",
+    "lib.arcade.note.pinball": "Tryk på mellemrumstasten, op-piletasten eller tryk på banen for at affyre kuglen. Hold venstre (eller tryk på venstre halvdel af banen) nede for at løfte den venstre flipper og højre (eller højre halvdel) for den højre. Tryk i rytme i stedet for at holde nede. Runde bumpere giver 100 point hver. Du har 3 kugler. Nå målpointet, før de er brugt, for at klare niveauet.",
+    "lib.arcade.pinBalls": "Kugler: {n} · Mål: {t}",
+    "lib.arcade.note.cribbage": "Cribbage for to spillere, et kapløb til 61 point. Hver gang får du 6 kort og lægger 2 med forsiden nedad i krybben (den tilhører giveren). Et startkort vendes. Derefter skiftes I til at spille kort med forsiden opad, uden at den løbende sum overstiger 31: at nå 15 eller 31 giver 2, at matche det sidste kort giver 2/6/12, en række på 3 eller flere (i vilkårlig rækkefølge) giver sin længde, og når ingen kan spille, får den sidste spiller 1 (\"Go\"). Derefter tælles hver hånd på 4 kort med startkortet: hver kombination med sum 15 giver 2, hvert par 2, en række på 3+ sin længde, fire kort i samme farve 4 (5 med startkortet), og en knægt i samme farve som startkortet 1. Den, der ikke giver, tæller først, derefter tæller giveren sin hånd og krybben.",
+    "lib.arcade.cbFifteen": "Femten",
+    "lib.arcade.cbPair": "Par",
+    "lib.arcade.cbRun": "Række",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Knægt i startkortets farve",
+    "lib.arcade.cbHeels": "Knægt som startkort",
+    "lib.arcade.cbYou": "Dig",
+    "lib.arcade.cbFoe": "Computer",
+    "lib.arcade.cbLast": "Sidste kort",
+    "lib.arcade.cbCount": "I alt: {n}",
+    "lib.arcade.cbYouDeal": "Du giver",
+    "lib.arcade.cbFoeDeal": "Computeren giver",
+    "lib.arcade.cbPick": "Vælg 2 kort til krybben",
+    "lib.arcade.cbCrib": "Krybbe",
+    "lib.arcade.cbYourHand": "Din hånd",
+    "lib.arcade.cbFoeHand": "Computerens hånd",
+    "lib.arcade.cbStarter": "Startkort",
+    "lib.arcade.cbZero": "0 point",
+    "lib.arcade.cbPlayed": "Spillet",
+    "lib.arcade.cbToCrib": "Læg i krybben",
+    "lib.arcade.cbNext": "Fortsæt",
+    "lib.arcade.cbHand": "Hånd"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tretten)",
       "desc": "Det vietnamesiske kortspil for fire, hvor man skal af med kortene: spil enkelte kort, par, rækker og fire ens for at blive først af med dine kort; 10 niveauer."
+    },
+    "tower-defense": {
+      "name": "Tower Defense (tårnforsvar)",
+      "desc": "Byg og opgradér tårne langs stien for at stoppe alle bølger af fjender. 10 niveauer på tre forskellige baner."
+    },
+    "color-by-number": {
+      "name": "Mal efter tal",
+      "desc": "Mal hvert felt med den farve, der passer til dets tal, og afslør billedet. 10 billeder med flere farver for hver gang."
+    },
+    "yukon": {
+      "name": "Yukon-kabale",
+      "desc": "Klondike uden bunke: flyt et hvilket som helst opadvendt kort med alt, hvad der ligger oven på det. 10 niveauer, hvor færre kort ligger opad, jo længere du kommer."
+    },
+    "chinese-checkers": {
+      "name": "Kinaskak",
+      "desc": "Stjerneformet hop-og-skridt-spil mod computeren: flyt alle 10 brikker til det modsatte hjørne først. 10 niveauer."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (kinesisk poker)",
+      "desc": "Arrangér 13 kort i tre hænder på 5, 5 og 3 kort, og slå computeren. 5 runder pr. niveau, 10 niveauer."
+    },
+    "phom": {
+      "name": "Phỏm (vietnamesisk rummy)",
+      "desc": "Vietnamesisk rummy for to mod computeren: træk eller tag et kastet kort, lav kombinationer og gå ud. Færrest point tilbage vinder. 10 niveauer."
+    },
+    "shogi": {
+      "name": "Shogi (japansk skak)",
+      "desc": "Spil shogi mod computeren: sæt slåede brikker ind, forfrem og sæt kongen skakmat. 10 niveauer med fortryd."
+    },
+    "janggi": {
+      "name": "Janggi (koreansk skak)",
+      "desc": "Spil koreansk skak mod computeren: diagonaler i paladset, kanonspring over én brik og elefanter med tre skridt. 10 niveauer med fortryd."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Slå med venstre og højre flipper for at holde kuglen i live, ram bumperne, og nå målpointet, før dine 3 kugler er brugt. 10 niveauer."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage for to mod computeren: krybbe, pegging til 31, tælling af hænder og kapløb til 61 point. 10 niveauer."
     }
   },
   "s": {

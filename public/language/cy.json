@@ -469,7 +469,272 @@
     "lib.arcade.jump": "Neidiwch",
     "lib.arcade.aimTarget": "Targed",
     "lib.game.soundOn": "Troi sain ymlaen",
-    "lib.game.soundOff": "Troi sain i ffwrdd"
+    "lib.game.soundOff": "Troi sain i ffwrdd",
+    "lib.arcade.note.kalah": "Rydych chi'n chwarae'r rhes waelod, a'r cyfrifiadur y rhes uchaf; y pydew mawr ar y dde yw eich storfa. Cliciwch ar bydew i godi ei holl hadau a'u hau yn wrthglocwedd, un ym mhob pydew (gan hepgor storfa eich gwrthwynebydd). Os bydd eich hedyn olaf yn glanio yn eich storfa, cewch chwarae eto; os bydd yn glanio mewn pydew gwag ar eich ochr chi gyferbyn â phydew sydd â hadau, byddwch yn cipio'r hadau hynny. Pan fydd un ochr yn wag, mae hadau'r ochr arall yn mynd i storfa eu perchennog; yr un sydd â'r storfa fwyaf sy'n ennill.",
+    "lib.arcade.note.snakes": "Taflwch y dis a symudwch gymaint o sgwariau, o 1 hyd at 100. Glaniwch ar droed ysgol i ddringo i fyny, neu ar ben neidr i lithro i lawr. O lefel 4 ymlaen, rhaid taflu'r union rif i lanio ar 100. Mae gan lefelau uwch fwy o nadroedd, llai o ysgolion a mwy o wrthwynebwyr. Y cyntaf i gyrraedd 100 sy'n ennill.",
+    "lib.arcade.square": "Sgwâr {n}",
+    "lib.arcade.ladderUp": "I fyny'r ysgol!",
+    "lib.arcade.snakeDown": "Llyncwyd gan neidr!",
+    "lib.arcade.needExact": "Mae angen yr union rif i lanio ar 100.",
+    "lib.arcade.note.nmm": "Mae gan bob ochr 9 darn. Cam 1: cymerwch eich tro i osod darnau ar bwyntiau gwag. Cam 2: llithrwch ddarn i bwynt gwag cyfagos. Pan fydd gennych ddim ond 3 darn ar ôl, cewch “hedfan” i unrhyw bwynt gwag. Gwnewch dri mewn rhes (“melin”) i dynnu darn eich gwrthwynebydd (darnau nad ydynt mewn melin yn gyntaf). Rydych chi'n colli pan fydd gennych 2 ddarn ar ôl neu na allwch symud. Rydych chi'n chwarae'r gwyn ac yn mynd gyntaf.",
+    "lib.arcade.inHand": "I'w gosod: {a} · {b}",
+    "lib.arcade.removePiece": "Dewiswch ddarn y gwrthwynebydd i'w dynnu.",
+    "lib.arcade.enemyWaters": "Dyfroedd y gelyn (cliciwch i danio)",
+    "lib.arcade.yourFleet": "Eich llynges",
+    "lib.arcade.note.battleship": "Mae gan bob ochr 5 llong (hyd 5, 4, 3, 3, 2) wedi'u gosod ar hap ar grid 10x10. Cymerwch eich tro i danio at gell: mae taro yn troi'n goch, mae methu yn troi'n las golau, ac mae taro pob cell o long yn ei suddo. Suddwch lynges gyfan y gelyn yn gyntaf i ennill. Ar lefelau uwch mae'r cyfrifiadur yn dyfalu lleoliad eich llongau'n gallach.",
+    "lib.arcade.shipsLeft": "Llongau ar ôl: chi {a} · gelyn {b}",
+    "lib.arcade.theySunk": "Suddodd y gelyn un o'ch llongau!",
+    "lib.arcade.theyHit": "Trawodd y gelyn un o'ch llongau.",
+    "lib.arcade.theyMiss": "Methodd y gelyn.",
+    "lib.arcade.youSunk": "Suddoch long y gelyn!",
+    "lib.arcade.youHit": "Taro!",
+    "lib.arcade.youMiss": "Methu.",
+    "lib.arcade.shake": "Ysgwyd",
+    "lib.arcade.clearBets": "Clirio'r betiau",
+    "lib.arcade.note.bau-cua": "Darnau arian rhithwir yn unig — dim arian go iawn. Dewiswch werth sglodyn, cliciwch ar yr anifeiliaid i fetio, yna pwyswch Ysgwyd. Am bob dis sy'n cyfateb i anifail y gwnaethoch fetio arno, cewch eich bet yn ôl a swm cyfartal ar ben hynny am bob cyfatebiaeth. Cyrhaeddwch y nifer targed o ddarnau arian o fewn y rowndiau a ganiateir i gwblhau'r lefel.",
+    "lib.arcade.note.baccarat": "Darnau arian rhithwir yn unig — dim arian go iawn. Betiwch ar y Chwaraewr, y Bancwr neu Gyfartal, yna pwyswch Rhannu. Gwerth llaw yw digid olaf ei chyfanswm (A = 1, 2–9 yn ôl eu gwerth, 10/J/Q/K = 0); y llaw agosaf at 9 sy'n ennill, a thynnir trydydd cerdyn yn ôl y rheolau safonol. Mae'r Chwaraewr yn talu 1:1, y Bancwr 0.95:1, Cyfartal 8:1 (dychwelir betiau Chwaraewr/Bancwr os bydd yn gyfartal). Cyrhaeddwch y nifer targed o ddarnau arian o fewn y rowndiau a ganiateir i gwblhau'r lefel.",
+    "lib.arcade.banker": "Bancwr",
+    "lib.arcade.player": "Chwaraewr",
+    "lib.arcade.tie": "Cyfartal",
+    "lib.arcade.openCards": "Datgelu",
+    "lib.arcade.note.bai-cao": "Darnau arian rhithwir yn unig — dim arian go iawn. Mae pob ochr yn cael 3 cherdyn. Sgôr llaw yw digid olaf ei chyfanswm (A = 1, 2–9 yn ôl eu gwerth, 10/J/Q/K = 10, hynny yw 0 pwynt). Trefn: Tri o'r un fath (“Sáp”) yw'r uchaf, yna tri cherdyn llun (“Ba tiên”), yna 9 pwynt i lawr i 0. Rhowch fet, pwyswch Rhannu ac yna Datgelu i gymharu â'r deliwr. O lefel 6 ymlaen mae'r deliwr yn ennill os bydd yn gyfartal. Cyrhaeddwch y nifer targed o ddarnau arian o fewn y rowndiau a ganiateir i gwblhau'r lefel.",
+    "lib.arcade.caoSap": "Tri o'r un fath",
+    "lib.arcade.caoBaTien": "Tri cherdyn llun",
+    "lib.arcade.caoPts": "{n} pwynt",
+    "lib.arcade.note.bingo": "Mae'r cyfrifiadur yn galw rhifau o 1 i 75. Pan fydd rhif a alwyd ar eich cerdyn, cliciwch arno i'w farcio (mae'r canol am ddim). Cwblhewch res, colofn neu groeslin a gwasgwch BINGO! — rhaid i chi guro'r cyfrifiaduron eraill. Mae BINGO! ffug yn cloi'r botwm am rai eiliadau. Mae lefelau uwch yn galw'n gyflymach ac mae ganddynt fwy o wrthwynebwyr.",
+    "lib.arcade.opponentsN": "Gwrthwynebwyr: {n}",
+    "lib.arcade.falseBingo": "Dim llinell lawn eto! Botwm wedi'i gloi am 3 eiliad.",
+    "lib.arcade.bingoGo": "Yn galw'r rhifau!",
+    "lib.arcade.note.yahtzee": "Bob tro rydych chi'n taflu 5 dis hyd at 3 gwaith: cliciwch ar ddis i'w gadw, yna pwyswch Taflu i ailfwrw'r lleill. Yna dewiswch flwch yn y tabl i sgorio (defnyddir pob blwch unwaith; mae blwch nad yw'n ffitio yn sgorio 0). 13 tro. Mae blychau Unau–Chwechau yn ychwanegu bonws o 35 os yw'r cyfanswm yn 63 neu fwy. Cyrhaeddwch sgôr darged y lefel i ennill.",
+    "lib.arcade.turnN": "Tro {n}/13",
+    "lib.arcade.pickCat": "Dewiswch flwch i sgorio",
+    "lib.arcade.rollsLeft": "Taflu ({n} ar ôl)",
+    "lib.arcade.upperBonus": "Bonws Unau–Chwechau",
+    "lib.arcade.scored": "Sgoriwyd {n}",
+    "lib.arcade.note.crazy-eights": "Chwaraewch gerdyn sy'n cyfateb i'r cerdyn uchaf ar y domen daflu o ran siwt neu rif. Mae wythau yn wyllt: chwaraewch un ar unrhyw adeg a dewis siwt newydd. Os nad oes gennych gerdyn y gallwch ei chwarae, tynnwch o'r domen (hyd at 3 cherdyn); os na allwch chwarae o hyd, rydych chi'n pasio. Y cyntaf i wagio ei law sy'n ennill. Mae gan lefelau uwch fwy o wrthwynebwyr ac mae'r cyfrifiadur yn chwarae'n gallach.",
+    "lib.arcade.opponent": "Gwrthwynebydd",
+    "lib.arcade.pileLeft": "Pentwr tynnu: {n}",
+    "lib.arcade.pickSuit": "Dewiswch siwt newydd",
+    "lib.arcade.aiSuit": "Dewisodd y cyfrifiadur {s}",
+    "lib.arcade.aiPass": "Mae'r cyfrifiadur yn pasio.",
+    "lib.arcade.mustPlay": "Mae gennych gerdyn y gallwch ei chwarae — chwaraewch ef.",
+    "lib.arcade.youPass": "Tynnoch 3 cherdyn ac rydych chi'n pasio.",
+    "lib.arcade.bcGourd": "Pwmpen",
+    "lib.arcade.bcCrab": "Cranc",
+    "lib.arcade.bcShrimp": "Berdysen",
+    "lib.arcade.bcFish": "Pysgodyn",
+    "lib.arcade.bcRooster": "Ceiliog",
+    "lib.arcade.bcDeer": "Carw",
+    "lib.arcade.yOnes": "Unau",
+    "lib.arcade.yTwos": "Dau",
+    "lib.arcade.yThrees": "Tri",
+    "lib.arcade.yFours": "Pedwar",
+    "lib.arcade.yFives": "Pump",
+    "lib.arcade.ySixes": "Chwech",
+    "lib.arcade.yThree": "Tri o'r un fath",
+    "lib.arcade.yFour": "Pedwar o'r un fath",
+    "lib.arcade.yFull": "Tŷ llawn (25)",
+    "lib.arcade.ySmall": "Rhediad bach (30)",
+    "lib.arcade.yLarge": "Rhediad mawr (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Cyfle",
+    "lib.arcade.note.race": "Pwyswch ← → (neu tapiwch y lôn rydych chi ei heisiau) i newid lôn ac osgoi'r ceir o'ch blaen. Mae gennych 3 bywyd; gyrrwch y pellter llawn i gwblhau'r lefel. Mae lefelau uwch yn ychwanegu lonydd a thraffig cyflymach.",
+    "lib.arcade.note.jump": "Mae'r cymeriad yn bownsio ar ei ben ei hun. Pwyswch ← → neu llusgwch eich bys i lanio ar y platfform nesaf. Mae platfformau glas yn symud, mae rhai brown yn torri pan fyddwch chi'n glanio arnynt. Os byddwch chi'n cwympo oddi ar y sgrin rydych chi'n colli; dringwch yn ddigon uchel i gwblhau'r lefel.",
+    "lib.arcade.note.miner": "Mae'r bachyn yn siglo yn ôl ac ymlaen; pwyswch Space, ↓ neu tapiwch y cae i'w ollwng. Mae aur mawr a cherrig yn drwm ac yn tynnu'n araf; mae diemwntau'n werth llawer. Cyrhaeddwch y swm targed o arian cyn i'r 60 eiliad ddod i ben.",
+    "lib.arcade.note.slicer": "Llusgwch fys neu'r llygoden ar draws y ffrwythau i'w sleisio. Osgowch y bomiau du. Mae methu ffrwyth neu sleisio bom yn costio bywyd (mae gennych 3). Sleisiwch ddigon o ffrwythau i gwblhau'r lefel.",
+    "lib.arcade.note.hoops": "Pwyswch ar y cwrt, llusgwch i lawr (fel catapwlt) a gollyngwch i saethu'r bêl at y cylch. Po bellaf y llusgwch, y caletaf yw'r tafliad. Sgoriwch ddigon o fasgedi o fewn y ergydion sydd gennych; o lefel 4 ymlaen mae'r cylch yn symud.",
+    "lib.arcade.note.bubbles": "Symudwch y llygoden neu'r bys i anelu, yna cliciwch/tapiwch neu pwyswch Space/Tân i saethu. Cysylltwch 3 swigen neu fwy o'r un lliw i'w byrstio; mae swigod sy'n colli eu cynhaliaeth yn cwympo. Mae'r rhesi'n gostwng yn araf, felly cadwch nhw draw o'r llinell waelod. Clirio pob swigen i ennill.",
+    "lib.arcade.note.chase": "Defnyddiwch y bysellau saeth (neu swipiwch / y botymau) i droi a bwyta pob dot yn y ddrysfa wrth osgoi'r ysbrydion sy'n eich erlid. Mae gennych 3 bywyd; mae lefelau uwch yn ychwanegu mwy o ysbrydion sy'n gyflymach ac yn erlid yn gallach.",
+    "lib.arcade.height": "Uchder: {n}/{t} m",
+    "lib.arcade.money": "Arian: {n}/{t}",
+    "lib.arcade.sliced": "Sleisiwyd: {n}/{t}",
+    "lib.arcade.hoopScore": "Sgoriwyd: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} ergyd ar ôl",
+    "lib.arcade.bubbleLeft": "{n} swigen ar ôl",
+    "lib.arcade.shotsN": "Ergydion: {n}",
+    "lib.arcade.dotsLeft": "{n} dot ar ôl",
+    "lib.arcade.note.kakuro": "Llenwch y celloedd gwyn â digidau 1–9 fel bod pob rhediad yn adio i fyny at y cliw yn y gell ddu (mae'r rhif ar y brig ar y dde ar gyfer y rhediad i'r dde, yr un ar y gwaelod ar y chwith ar gyfer y rhediad islaw), heb ailadrodd digid o fewn rhediad. Defnyddiwch y bysellau saeth i symud.",
+    "lib.arcade.note.kenken": "Llenwch y grid â'r rhifau 1 i N fel nad oes rhif yn ailadrodd mewn unrhyw res neu golofn. Mae pob caets â ffin drwchus yn dangos targed a gweithrediad (+, −, ×, ÷): rhaid i'r rhifau yn y caets roi'r canlyniad hwnnw. Defnyddiwch y bysellau saeth i symud.",
+    "lib.arcade.note.wordGuess": "Dyfalwch y gair Saesneg cyfrinachol. Ar ôl pob cynnig, mae gwyrdd yn golygu'r llythyren gywir yn y lle cywir, mae melyn yn golygu bod y llythyren yn y gair ond mewn lle arall, ac mae llwyd yn golygu nad yw yn y gair. Teipiwch ar eich bysellfwrdd neu defnyddiwch y bysellau ar y sgrin, a gwasgwch Enter i gyflwyno. Mae gan lefelau uwch eiriau hirach a llai o gynigion.",
+    "lib.arcade.note.hangman": "Dyfalwch y gair Saesneg cyfrinachol drwy ddewis llythrennau fesul un. Mae pob llythyren anghywir yn ychwanegu rhan at y ffigwr crog; pan fyddwch chi'n rhedeg allan o ddyfaliadau anghywir rydych chi'n colli. Mae gan lefelau uwch eiriau hirach a llai o ddyfaliadau anghywir a ganiateir.",
+    "lib.arcade.note.scramble": "Aildrefnwch y llythrennau cymysg yn air Saesneg go iawn a'i deipio yn y blwch ateb. Mae gan bob lefel 5 gair; datryswch o leiaf 4 cyn i amserydd pob gair ddod i ben i gwblhau'r lefel. Mae'r awgrym yn datgelu'r llythyren gyntaf.",
+    "lib.arcade.cellsLeft": "{n} cell wag ar ôl",
+    "lib.arcade.wrongN": "Nid yw {n} cell yn gywir.",
+    "lib.arcade.noError": "Heb ganfod unrhyw gamgymeriadau hyd yma.",
+    "lib.arcade.tooShort": "Dim digon o lythrennau",
+    "lib.arcade.answerIs": "Ateb: {w}",
+    "lib.arcade.livesLeft": "{n} dyfaliad anghywir ar ôl",
+    "lib.arcade.yourAnswer": "Eich ateb",
+    "lib.arcade.skip": "Hepgor",
+    "lib.arcade.notThis": "Ddim yn gywir, rhowch gynnig arall arni.",
+    "lib.arcade.startsWith": "Llythyren gyntaf: {c}",
+    "lib.arcade.note.domino": "Mae pob chwaraewr yn cael 7 teilsen; y sawl sydd â'r dwbl uchaf sy'n dechrau. Chwaraewch deilsen y mae ei rhif yn cyfateb i un pen y gadwyn. Os na allwch chwarae, tynnwch o'r pentwr nes y gallwch; os yw'n wag, pasiwch. Y cyntaf i wagio ei law sy'n ennill; os yw'r ddau wedi'u blocio, y cyfanswm smotiau isaf sy'n ennill.",
+    "lib.arcade.note.hearts": "Pedwar chwaraewr, 13 cerdyn yr un. Mae 2 y clybiau yn arwain. Rhaid dilyn y siwt a arweiniwyd os gallwch. Mae pob calon yn 1 pwyth a Brenhines y Rhaw yn 13; y sawl sy'n ennill tric sy'n cymryd ei bwyntiau. Mae isel yn well, ac mae cymryd pob un o'r 26 pwynt yn rhoi 26 i bawb arall yn lle hynny. Ni allwch arwain calon nes bod un wedi'i chwarae. Ar ôl y llaw olaf, rydych chi'n ennill os mai eich sgôr chi yw'r isaf (neu'n gyfartal isaf).",
+    "lib.arcade.note.holdem": "Pen wrth ben yn erbyn y cyfrifiadur gan ddefnyddio sglodion rhithwir yn unig. Mae pob chwaraewr yn cael 2 gerdyn preifat a datgelir 5 cerdyn cymunedol (flop, turn, river); gwnewch y llaw 5 cerdyn orau. Bob rownd gallwch blygu, galw (neu wirio) neu godi. Mae'r blinds yn codi bob 4 llaw. Rydych chi'n ennill pan fydd y cyfrifiadur yn rhedeg allan o sglodion, neu drwy gael mwy o sglodion ar ôl terfyn y dwylo. Does dim arian go iawn yn gysylltiedig.",
+    "lib.arcade.dmDraw": "Tynnu teilsen",
+    "lib.arcade.dmPass": "Pasio",
+    "lib.arcade.dmEmpty": "Dim teils wedi'u chwarae eto",
+    "lib.arcade.dmYard": "Pentwr: {n} teilsen",
+    "lib.arcade.dmLeft": "Pen chwith",
+    "lib.arcade.dmRight": "Pen dde",
+    "lib.arcade.dmTie": "Cyfartal! Mae'r ddwy ochr yn gyfartal.",
+    "lib.arcade.hrHand": "Llaw {n}/{t}",
+    "lib.arcade.hrTook": "Mae {p} yn ennill y tric ({n} pwynt).",
+    "lib.arcade.hrIllegal": "Ni allwch chwarae'r cerdyn hwn (dilynwch y siwt, neu ni chaniateir arwain calon eto).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Plygu",
+    "lib.arcade.check": "Gwirio",
+    "lib.arcade.callN": "Galw {n}",
+    "lib.arcade.raiseTo": "Codi i",
+    "lib.arcade.raiseN": "Codi i {n}",
+    "lib.arcade.thOppFold": "Mae'r cyfrifiadur yn plygu; rydych chi'n ennill y llaw hon.",
+    "lib.arcade.thYouFold": "Plygoch.",
+    "lib.arcade.thOppWin": "Mae'r cyfrifiadur yn ennill y llaw hon",
+    "lib.arcade.thYouWin": "Rydych chi'n ennill y llaw hon",
+    "lib.arcade.thSplit": "Rhannu'r pot",
+    "lib.arcade.thAiFold": "Mae'r cyfrifiadur yn plygu.",
+    "lib.arcade.thAiRaise": "Mae'r cyfrifiadur yn codi i {n}.",
+    "lib.arcade.thAiCall": "Mae'r cyfrifiadur yn galw / gwirio.",
+    "lib.arcade.hand.high": "Cerdyn uchel",
+    "lib.arcade.hand.pair": "Pâr",
+    "lib.arcade.hand.twoPair": "Dau bâr",
+    "lib.arcade.hand.trips": "Tri o'r un fath",
+    "lib.arcade.hand.straight": "Rhediad",
+    "lib.arcade.hand.flush": "Fflysh",
+    "lib.arcade.hand.full": "Tŷ llawn",
+    "lib.arcade.hand.quads": "Pedwar o'r un fath",
+    "lib.arcade.hand.sflush": "Fflysh rhediad",
+    "lib.arcade.note.nback": "Mae sgwâr yn goleuo fesul un ar grid 3x3. Pwyswch “Cyfateb!” (neu Space) pan fydd y safle wedi'i oleuo yr un fath â'r un N cam yn ôl (dangosir N uchod). Mae angen o leiaf 80% o benderfyniadau cywir arnoch i gwblhau'r lefel. Mae lefelau uwch yn defnyddio N mwy.",
+    "lib.arcade.nbMatch": "Cyfateb!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Cywir: {a} · Anghywir: {b}",
+    "lib.arcade.nbAcc": "Cywirdeb: {n}%",
+    "lib.arcade.note.clicker": "Cliciwch ar y cwci i bobi cwcis, yna gwariwch nhw ar gynorthwywyr sy'n pobi'n awtomatig (mae'r prisiau'n codi gyda phob un a brynwch). Pobwch y nifer targed o gwcis o fewn 2 funud i gwblhau'r lefel.",
+    "lib.arcade.ckCursor": "Cyrchwr",
+    "lib.arcade.ckGrandma": "Mam-gu yn pobi",
+    "lib.arcade.ckFarm": "Fferm",
+    "lib.arcade.ckMine": "Mwynglawdd siwgr",
+    "lib.arcade.ckFactory": "Ffatri",
+    "lib.arcade.ckCookie": "Cwci",
+    "lib.arcade.ckEarned": "Pobwyd: {n}/{t}",
+    "lib.arcade.chips2": "Cwcis: {n}",
+    "lib.arcade.ckCps": "{n} cwci yr eiliad",
+    "lib.arcade.note.onet": "Dewiswch ddwy deilsen union yr un fath y gellir eu cysylltu â llwybr gyda dim mwy na 2 dro nad yw'n croesi teils eraill i'w tynnu. Clirio pob teilsen cyn i'r amser ddod i ben i ennill. Pan nad oes symudiadau ar ôl gallwch gymysgu (defnydd cyfyngedig).",
+    "lib.arcade.shuffle": "Cymysgu",
+    "lib.arcade.tilesLeft": "{n} teilsen ar ôl",
+    "lib.arcade.autoShuffle": "Dim symudiadau ar ôl — cymysgwyd yn awtomatig.",
+    "lib.arcade.note.jigsaw": "Mae'r llun wedi'i dorri'n ddarnau a'i gymysgu. Tapiwch un darn, yna un arall, i'w cyfnewid, ac ailadeiladwch y llun a ddangosir fel cyfeirnod. Mae darnau yn y lle cywir yn cael border gwyrdd. Mae gan lefelau uwch fwy o ddarnau.",
+    "lib.arcade.jgRef": "Llun cyfeirio",
+    "lib.arcade.jgPlaced": "Yn eu lle: {a}/{b}",
+    "lib.arcade.golfStrokes": "Ergydion: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Rydych chi'n chwarae'r darnau gwyn, gan symud o'r brig ar y dde o amgylch i'r gwaelod ar y dde (eich cartref). Taflwch y disiau, cliciwch ar y darn rydych chi am ei symud, yna cliciwch ar gyrchfan wedi'i amlygu. Mae glanio ar bwynt gydag un darn gwrthwynebol yn unig yn ei daro i'r bar canol, ac mae'n rhaid i'r chwaraewr hwnnw ei ddod yn ôl i mewn yn gyntaf. Ni allwch lanio ar bwynt â dau ddarn gwrthwynebol neu fwy. Unwaith y bydd eich holl 15 darn yn eich bwrdd cartref (y 6 phwynt olaf) cewch eu tynnu oddi ar y bwrdd. Y cyntaf i dynnu pob un o'i 15 darn sy'n ennill.",
+    "lib.arcade.bgRoll": "Taflu'r disiau",
+    "lib.arcade.bgOff": "Tynnu oddi ar y bwrdd",
+    "lib.arcade.bgRollFirst": "Taflu'r disiau",
+    "lib.arcade.bgInfo": "Oddi ar y bwrdd: chi {a} · cyfrifiadur {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Does gennych chi ddim symudiad cyfreithlon ar ôl.",
+    "lib.arcade.note.tienlen": "Pedwar chwaraewr, 13 cerdyn yr un. Trefn y cardiau o'r isaf i'r uchaf: 3, 4, … K, A, 2; siwtiau o'r isaf i'r uchaf: rhawiau, clybiau, diemwntau, calonnau. Y sawl sydd â 3 y rhawiau sy'n mynd gyntaf. Chwaraewch un cerdyn, pâr, tri o'r un fath, pedwar o'r un fath, neu rediad o 3 cherdyn olynol neu fwy (dim 2au). Rhaid i'r chwaraewr nesaf chwarae'r un math ac uwch, neu basio; gall pedwar o'r un fath guro 2 sengl neu bâr o 2au. Pan fydd pawb arall yn pasio, caiff y chwaraewr olaf i chwarae arwain unrhyw beth. Y cyntaf i wagio ei law sy'n ennill. Dewiswch gardiau, yna pwyswch Chwarae.",
+    "lib.arcade.tlPlay": "Chwarae",
+    "lib.arcade.tlPass": "Pasio",
+    "lib.arcade.tlClear": "Clirio'r dewis",
+    "lib.arcade.tlPassed": "wedi pasio",
+    "lib.arcade.tlFree": "Bwrdd gwag — cewch arwain unrhyw beth",
+    "lib.arcade.tlLeft": "Cardiau ar ôl: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "Mae {p} yn pasio.",
+    "lib.arcade.tlBad": "Nid yw'r cardiau a ddewiswyd yn ffurfio set ddilys.",
+    "lib.arcade.tlLow": "Nid yw'r set hon yn ddigon uchel i guro'r bwrdd.",
+    "lib.arcade.note.td": "Tapiwch sgwâr gwag (nid y llwybr) i adeiladu tŵr saethu, sy'n costio aur; tapiwch dŵr eto i'w uwchraddio (hyd at lefel 5). Mae'r tyrau'n saethu'n awtomatig at y gelyn sydd wedi mynd bellaf o fewn cyrraedd. Gorchfygwch elynion i ennill mwy o aur; os bydd 15 gelyn yn cyrraedd y diwedd rydych chi'n colli. Goroeswch bob ton i gwblhau'r lefel.",
+    "lib.arcade.tdInfo": "Aur: {g} · Ton {w}/{t}",
+    "lib.arcade.tdCost": "Tŵr: {n}",
+    "lib.arcade.note.colorNum": "Mae gan bob sgwâr rif sy'n cyfateb i liw yn y palet. Dewiswch liw, yna tapiwch y sgwariau gyda'r rhif hwnnw i'w paentio; nid yw tapio â'r lliw anghywir yn paentio dim. Paentiwch bob sgwâr yn gywir i orffen y llun. Mae gan lefelau uwch fwy o liwiau.",
+    "lib.arcade.cnWrong": "Lliw anghywir — gwiriwch y rhif ar y sgwâr.",
+    "lib.arcade.note.yukon": "Fel Klondike ond heb stoc: gellir symud unrhyw gerdyn wyneb i fyny ynghyd â phob cerdyn sydd arno, hyd yn oed os nad ydynt mewn trefn; dim ond y cerdyn cyntaf sydd angen ffitio'r golofn darged (disgynnol, coch a du bob yn ail; mae Brenin yn mynd i golofn wag). Adeiladwch bob un o'r 52 cerdyn ar y pedwar sylfaen o'r Ás i'r Brenin. Mae lefelau isel yn dechrau gyda mwy o gardiau wyneb i fyny'n barod.",
+    "lib.arcade.yukonFree": "Cardiau wyneb i lawr: {n}",
+    "lib.arcade.note.chinesechk": "Rydych chi'n chwarae'r darnau glas yn y gornel dde; symudwch bob un o'r 10 i'r gornel chwith gyferbyn cyn y cyfrifiadur. Bob tro rydych chi'n symud un darn: camwch i dwll gwag cyfagos, neu neidiwch dros unrhyw ddarn i'r twll gwag union y tu ôl iddo, a daliwch ati i neidio gymaint o weithiau ag y mynnwch. Tapiwch un o'ch darnau, yna tapiwch dwll gwyrdd i symud.",
+    "lib.arcade.ccTurn": "Eich tro chi · Tro {n}",
+    "lib.arcade.ccDraw": "Dim troeon ar ôl — cyfartal.",
+    "lib.arcade.note.maubinh": "Rydych chi a'r cyfrifiadur yn cael 13 cerdyn yr un ac yn eu trefnu'n 3 llaw: llaw gefn o 5 cerdyn, llaw ganol o 5 cerdyn a llaw flaen o 3 cherdyn. Rhaid i'r llaw gefn fod o leiaf mor gryf â'r un ganol, a'r un ganol o leiaf mor gryf â'r un flaen; fel arall mae eich trefniant yn annilys a rydych chi'n colli'r rownd gyfan. Tapiwch gerdyn, yna tapiwch y rhes lle mae'n mynd (tapiwch gerdyn a osodwyd i'w gymryd yn ôl). Mae pob llaw a enillwch yn sgorio 1 pwynt; mae ennill pob un o'r 3 yn sgorio 6. Chwaraewch 5 rownd — mae cyfanswm positif yn cwblhau'r lefel. Gall y llaw flaen fod yn gerdyn uchel, pâr neu dri o'r un fath yn unig.",
+    "lib.arcade.mbHigh": "Cerdyn uchel",
+    "lib.arcade.mbPair": "Pâr",
+    "lib.arcade.mbTwoPair": "Dau bâr",
+    "lib.arcade.mbTrips": "Tri o'r un fath",
+    "lib.arcade.mbStraight": "Rhediad",
+    "lib.arcade.mbFlush": "Fflysh",
+    "lib.arcade.mbFull": "Tŷ llawn",
+    "lib.arcade.mbQuads": "Pedwar o'r un fath",
+    "lib.arcade.mbSflush": "Fflysh rhediad",
+    "lib.arcade.mbBack": "Llaw gefn",
+    "lib.arcade.mbMid": "Llaw ganol",
+    "lib.arcade.mbFront": "Llaw flaen",
+    "lib.arcade.mbFoe": "Cyfrifiadur",
+    "lib.arcade.mbYou": "Chi",
+    "lib.arcade.mbFoul": "Annilys!",
+    "lib.arcade.mbFoeFoul": "Mae'r cyfrifiadur yn annilys!",
+    "lib.arcade.mbConfirm": "Dangos y cardiau",
+    "lib.arcade.mbReset": "Clirio",
+    "lib.arcade.mbHand": "Eich llaw",
+    "lib.arcade.mbRound": "Rownd {a}/{b}",
+    "lib.arcade.mbTotal": "Cyfanswm: {n}",
+    "lib.arcade.mbFinish": "Gorffen",
+    "lib.arcade.mbNext": "Rownd nesaf",
+    "lib.arcade.mbDraw": "Cyfartal o ran pwyntiau — chwaraewch eto.",
+    "lib.arcade.mbAutoMsg": "Dyma drefniant a awgrymir. Gallwch ei newid cyn dangos y cardiau.",
+    "lib.arcade.note.phom": "Dau chwaraewr; mae pob un yn cael 9 cerdyn (mae'r sawl sy'n mynd gyntaf yn cael 10). Cyfuniad yw 3 cherdyn neu fwy o'r un rhif, neu 3 cherdyn olynol neu fwy o'r un siwt (mae'r Ás yn isel yn unig). Ar eich tro tynnwch gerdyn o'r pecyn, neu cymerwch y cerdyn y mae eich gwrthwynebydd newydd ei daflu os yw'n ffurfio cyfuniad â'ch llaw (rhaid cadw cerdyn a gymerwyd), yna taflwch un cerdyn. Pan fydd pob chwaraewr wedi taflu 4 cerdyn mae'r rownd yn dod i ben a'r sawl sydd â'r cyfanswm isaf o gardiau heb gyfuniad (Ás = 1 … Brenin = 13) sy'n ennill. Os yw eich holl gardiau mewn cyfuniadau ar ôl taflu rydych chi'n mynd allan (“U”) ac yn ennill ar unwaith. Mae cardiau â border gwyrdd yn eich set orau o gyfuniadau.",
+    "lib.arcade.pmDraw": "Tynnu",
+    "lib.arcade.pmEat": "Cymryd y gwaredu",
+    "lib.arcade.pmThrow": "Taflu",
+    "lib.arcade.pmFoeAte": "Cymerodd y cyfrifiadur eich cerdyn.",
+    "lib.arcade.pmFoeU": "Aeth y cyfrifiadur allan!",
+    "lib.arcade.pmTurn": "Tro {a}/{b}",
+    "lib.arcade.pmLeft": "Heb gyfuniad: {n}",
+    "lib.arcade.pmDeck": "Pecyn: {n}",
+    "lib.arcade.pmFoeHand": "Llaw'r cyfrifiadur",
+    "lib.arcade.pmFoeDisc": "Cardiau a daflodd y cyfrifiadur",
+    "lib.arcade.pmFoeEaten": "Cymerodd y cyfrifiadur",
+    "lib.arcade.pmMyDisc": "Eich cardiau a daflwyd",
+    "lib.arcade.pmAte": "Cymeroch y cerdyn hwn — cadwch ef mewn cyfuniad.",
+    "lib.arcade.pmKeep": "Rhaid cadw cerdyn a gymerwyd — taflwch un arall.",
+    "lib.arcade.pmU": "Allan! Rydych chi'n ennill ar unwaith.",
+    "lib.arcade.pmYou": "Chi",
+    "lib.arcade.pmFoe": "Cyfrifiadur",
+    "lib.arcade.pmDraw2": "Cyfartal o ran pwyntiau.",
+    "lib.arcade.note.shogi": "Shogi yw gwyddbwyll Japan. Rydych chi'n chwarae'r ochr isaf ac yn mynd gyntaf; mae darnau'r cyfrifiadur yn wynebu'r ffordd arall. Mae darnau a gipiwyd yn mynd i'ch llaw a gellir eu gollwng ar unrhyw sgwâr gwag yn lle gwneud symudiad (byth y gwerinwr mewn ffeil lle mae gennych werinwr heb ei ddyrchafu eisoes, a byth ddarn ar res lle na allai symud eto). Gall darn sy'n symud i mewn i dair rhes olaf y gwrthwynebydd, allan ohonynt neu o'u mewn gael ei ddyrchafu (ac eithrio'r Brenin ac Aur); mae dyrchafu'n orfodol pan na fyddai gan ddarn unrhyw symudiadau. Gosodwch Frenin y gelyn yn fat i ennill. Kanji: 歩 gwerinwr, 香 gwaywffon, 桂 marchog, 銀 arian, 金 aur, 角 esgob, 飛 castell, 玉 brenin; mae と, 馬, 竜 a darnau coch eraill wedi'u dyrchafu.",
+    "lib.arcade.sgPromote": "Dyrchafu",
+    "lib.arcade.sgKeep": "Peidio â dyrchafu",
+    "lib.arcade.sgCheck": "Rydych chi mewn siec!",
+    "lib.arcade.sgWin": "Mat — rydych chi'n ennill.",
+    "lib.arcade.sgLose": "Cawsoch eich gosod yn fat.",
+    "lib.arcade.sgAskPromote": "Dyrchafu'r darn hwn?",
+    "lib.arcade.note.janggi": "Janggi yw gwyddbwyll Corea. Rydych chi'n chwarae'r darnau glas ar y gwaelod ac yn mynd gyntaf. Yn wahanol i xiangqi nid oes afon, ac mae gan y ddau balas linellau croeslin. Mae'r Cadfridog a'r Gwarchodwyr yn symud un cam ar hyd llinellau'r palas (gan gynnwys croeslinau); mae'r Cerbyd hefyd yn llithro ac yn cipio ar hyd croeslinau'r palas; rhaid i'r Magnel neidio dros un darn yn union (nid Magnel arall) i symud neu gipio, ac ni all gipio Magnel; mae'r Ceffyl yn camu un pwynt yn syth ac yna un yn groeslin, a'r Eliffant un yn syth ac yna dau yn groeslin, y ddau wedi'u blocio os oes darn yn y ffordd; mae Milwyr yn symud ymlaen neu i'r ochr, ac yn groeslin ymlaen y tu mewn i balas y gelyn. Ni chaiff y ddau Gadfridog wynebu ei gilydd byth. Gosodwch Gadfridog y gelyn yn fat i ennill. Nid yw'r cyfrifiadur byth yn pasio.",
+    "lib.arcade.jgCheck": "Rydych chi mewn siec!",
+    "lib.arcade.jgWin": "Mat — rydych chi'n ennill.",
+    "lib.arcade.jgLose": "Cawsoch eich gosod yn fat.",
+    "lib.arcade.note.pinball": "Pwyswch Space, I fyny neu tapiwch y bwrdd i lansio'r bêl. Daliwch Chwith (neu gyffyrddwch â hanner chwith y bwrdd) i godi'r fflipiwr chwith a Dde (neu'r hanner dde) ar gyfer yr un dde — tapiwch mewn rhythm yn hytrach na dal. Mae bymperi crwn yn sgorio 100 pwynt yr un. Mae gennych 3 pheli; cyrhaeddwch y sgôr darged cyn iddynt ddod i ben i gwblhau'r lefel.",
+    "lib.arcade.pinBalls": "Peli: {n} · Targed: {t}",
+    "lib.arcade.note.cribbage": "Cribbage dau chwaraewr, ras i 61 pwynt. Bob rhaniad cewch 6 cherdyn a rhoi 2 wyneb i lawr yn y crib (sy'n perthyn i'r deliwr). Datgelir cerdyn cychwynnol. Yna cymerwch eich tro i chwarae cardiau wyneb i fyny heb i'r cyfanswm rhedegol fynd dros 31: mae cyrraedd 15 neu 31 yn sgorio 2, mae cyfateb y cerdyn olaf yn sgorio 2/6/12, mae rhediad o 3 neu fwy (mewn unrhyw drefn) yn sgorio ei hyd, a phan na all neb chwarae mae'r chwaraewr olaf yn sgorio 1 (“Go”). Yna cyfrifir pob llaw o 4 gyda'r cerdyn cychwynnol: mae pob cyfuniad sy'n cyfanswm 15 yn sgorio 2, pob pâr 2, rhediad o 3+ ei hyd, pedwar cerdyn o un siwt 4 (5 gyda'r cerdyn cychwynnol), a Jac sy'n cyfateb i siwt y cerdyn cychwynnol 1. Mae'r sawl nad yw'n delio yn cyfrif yn gyntaf, yna mae'r deliwr yn cyfrif ei law a'r crib.",
+    "lib.arcade.cbFifteen": "Pymtheg",
+    "lib.arcade.cbPair": "Pâr",
+    "lib.arcade.cbRun": "Rhediad",
+    "lib.arcade.cbFlush": "Fflysh",
+    "lib.arcade.cbNobs": "Jac yn cyfateb i'r cerdyn cychwynnol",
+    "lib.arcade.cbHeels": "Jac fel cerdyn cychwynnol",
+    "lib.arcade.cbYou": "Chi",
+    "lib.arcade.cbFoe": "Cyfrifiadur",
+    "lib.arcade.cbLast": "Cerdyn olaf",
+    "lib.arcade.cbCount": "Cyfanswm: {n}",
+    "lib.arcade.cbYouDeal": "Chi sy'n delio",
+    "lib.arcade.cbFoeDeal": "Y cyfrifiadur sy'n delio",
+    "lib.arcade.cbPick": "Dewiswch 2 gerdyn ar gyfer y crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Eich llaw",
+    "lib.arcade.cbFoeHand": "Llaw'r cyfrifiadur",
+    "lib.arcade.cbStarter": "Cerdyn cychwynnol",
+    "lib.arcade.cbZero": "0 pwynt",
+    "lib.arcade.cbPlayed": "Chwaraewyd",
+    "lib.arcade.cbToCrib": "Rhoi yn y crib",
+    "lib.arcade.cbNext": "Parhau",
+    "lib.arcade.cbHand": "Llaw"
   },
   "pages": {
     "home": {
@@ -1086,6 +1351,174 @@
     "reaction": {
       "name": "Prawf Amser Ymateb",
       "desc": "Cliciwch yr eiliad y mae'r sgrin yn troi'n wyrdd; rhaid i'ch cyfartaledd dros 5 rownd gyrraedd terfyn pob lefel, sy'n tynhau dros 10 lefel."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Heuwch hadau o amgylch y pydewau, cipiwch hadau eich gwrthwynebydd a symudwch eto pan fyddwch yn glanio yn eich storfa; chwaraewch yn erbyn y cyfrifiadur dros 10 lefel o hawdd i anodd."
+    },
+    "snakes-ladders": {
+      "name": "Nadroedd ac Ysgolion",
+      "desc": "Taflwch y dis o sgwâr 1 i 100, dringwch ysgolion, osgowch nadroedd a chyrhaeddwch y diwedd cyn eich gwrthwynebwyr; 10 lefel."
+    },
+    "nine-mens-morris": {
+      "name": "Naw Dyn Morris",
+      "desc": "Gosodwch, llithrwch a hedfanwch eich darnau i wneud tri mewn rhes a thynnu darnau eich gwrthwynebydd; chwaraewch yn erbyn y cyfrifiadur dros 10 lefel."
+    },
+    "battleship": {
+      "name": "Brwydr y Llongau",
+      "desc": "Darganfyddwch a suddwch lynges y cyfrifiadur ar grid 10x10 cyn iddo suddo eich un chi; 10 lefel wrth i'r cyfrifiadur ddyfalu'n gallach."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Pwmpen, Cranc, Pysgodyn, Berdysen)",
+      "desc": "Gêm ddis draddodiadol o Fietnam: betiwch ddarnau arian rhithwir ar yr anifeiliaid ac ysgwydwch dri dis; cyrhaeddwch y darnau arian targed dros 10 lefel (dim arian go iawn)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Betiwch ar y Chwaraewr, y Bancwr neu Gyfartal gyda chardiau a rennir yn ôl y rheolau safonol, gan ddefnyddio darnau arian rhithwir; cyrhaeddwch y darnau arian targed dros 10 lefel (dim arian go iawn)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Gêm Tri Cherdyn)",
+      "desc": "Cymharwch ddwylo 3 cherdyn â'r deliwr: tri o'r un fath, tri cherdyn llun, yna 9 pwynt i lawr i 0; darnau arian rhithwir, 10 lefel, dim arian go iawn."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marciwch y rhifau a alwyd ar eich cerdyn 5x5 a gwaeddwch BINGO cyn y cyfrifiaduron eraill; galwir rhifau'n gyflymach dros 10 lefel."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Pum Dis)",
+      "desc": "Taflwch bum dis, cadwch y rhai da a llenwch 13 blwch sgorio; cyrhaeddwch y sgôr darged dros 10 lefel."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (Wythau Gwyllt)",
+      "desc": "Cyfatebwch siwt neu rif, mae wythau yn newid y siwt; gwagiwch eich llaw cyn 1 i 3 gwrthwynebydd cyfrifiadurol dros 10 lefel."
+    },
+    "car-race": {
+      "name": "Osgoi yn y Ras Geir",
+      "desc": "Newidiwch lôn i osgoi'r ceir o'ch blaen a gyrru'r pellter llawn; 10 lefel gyda mwy o lonydd a thraffig cyflymach."
+    },
+    "sky-jump": {
+      "name": "Naid i'r Awyr",
+      "desc": "Bownsiwch o blatfform i blatfform i ddringo mor uchel â phosibl heb gwympo; 10 lefel gyda phlatfformau mwy gwasgaredig, rhai symudol a rhai sy'n torri."
+    },
+    "gold-miner": {
+      "name": "Cloddiwr Aur",
+      "desc": "Gollyngwch y bachyn i gasglu aur a diemwntau, osgowch gerrig trwm, a chyrhaeddwch y swm targed o arian o fewn 60 eiliad; 10 lefel."
+    },
+    "fruit-slice": {
+      "name": "Sleisio Ffrwythau",
+      "desc": "Swipiwch i sleisio'r ffrwythau sy'n hedfan i fyny ac osgowch y bomiau; 10 lefel gyda mwy o ffrwythau a mwy o fomiau."
+    },
+    "basketball": {
+      "name": "Saethu Pêl-fasged",
+      "desc": "Llusgwch a gollyngwch i saethu'r bêl i'r cylch o fewn nifer cyfyngedig o ergydion; 10 lefel, gyda chylch sy'n symud o lefel 4."
+    },
+    "bubble-shooter": {
+      "name": "Saethwr Swigod",
+      "desc": "Saethwch swigod i gysylltu 3 neu fwy o'r un lliw a'u byrstio, a'u clirio i gyd cyn iddynt gyrraedd y gwaelod; 10 lefel gyda mwy o liwiau."
+    },
+    "dot-chase": {
+      "name": "Erlid Dotiau",
+      "desc": "Bwytewch bob dot yn y ddrysfa wrth osgoi'r ysbrydion sy'n eich erlid; 10 lefel gyda mwy o ysbrydion a rhai callach."
+    },
+    "kakuro": {
+      "name": "Kakuro (Swm Croes)",
+      "desc": "Llenwch y celloedd gwyn â digidau 1–9 fel bod pob rhediad yn adio at ei gliw heb ailadrodd; 10 lefel, gridiau o 5x5 i 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Llenwch y grid heb ailadrodd mewn rhesi na cholofnau fel bod pob caets yn rhoi ei darged gyda'i weithrediad; 10 lefel, gridiau o 3x3 i 6x6."
+    },
+    "word-guess": {
+      "name": "Dyfalu Geiriau (arddull Wordle)",
+      "desc": "Dyfalwch y gair Saesneg cyfrinachol gydag awgrymiadau gwyrdd, melyn a llwyd; 10 lefel gyda geiriau 4–6 llythyren a llai o gynigion."
+    },
+    "hangman": {
+      "name": "Dyn Crog",
+      "desc": "Dyfalwch y gair Saesneg un llythyren ar y tro cyn i chi redeg allan o ddyfaliadau anghywir; 10 lefel gyda geiriau hirach a llai o ddyfaliadau anghywir."
+    },
+    "word-scramble": {
+      "name": "Cymysgu Geiriau (Anagram)",
+      "desc": "Aildrefnwch lythrennau cymysg yn air Saesneg cyn i'r amser ddod i ben; 10 lefel, 5 gair bob lefel."
+    },
+    "domino": {
+      "name": "Dominos",
+      "desc": "Cyfatebwch deils i'r naill ben neu'r llall o'r gadwyn a gwagiwch eich llaw cyn y cyfrifiadur; 10 lefel wrth i'r cyfrifiadur ddod yn gallach."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Osgowch galonnau a Brenhines y Rhaw mewn gêm gardiau i bedwar; mae sgôr is yn well; 10 lefel yn erbyn chwaraewyr cyfrifiadurol callach."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (sglodion rhithwir)",
+      "desc": "Pocer pen wrth ben yn erbyn y cyfrifiadur gyda sglodion rhithwir: plygu, galw neu godi, ac ennill pan fydd y cyfrifiadur yn rhedeg allan o sglodion; 10 lefel, dim arian go iawn."
+    },
+    "n-back": {
+      "name": "Cof N-Back",
+      "desc": "Gwyliwch y sgwâr wedi'i oleuo a gwasgwch Cyfateb pan fydd yr un fath â N cam yn ôl; 10 lefel gyda N hyd at 4."
+    },
+    "cookie-clicker": {
+      "name": "Clicio Cwcis",
+      "desc": "Cliciwch i bobi cwcis, prynwch gynorthwywyr sy'n pobi'n awtomatig a chyrhaeddwch y targed o fewn 2 funud; 10 lefel."
+    },
+    "tile-connect": {
+      "name": "Cysylltu Teils (arddull Onet)",
+      "desc": "Cysylltwch deils cyfatebol â llwybr o ddim mwy na dau dro a chlirio'r bwrdd cyn i'r amser ddod i ben; 10 lefel, byrddau mwy."
+    },
+    "jigsaw": {
+      "name": "Jig-so Lluniau",
+      "desc": "Cyfnewidiwch y darnau cymysg i ailadeiladu'r llun; 10 lefel o 3x3 i 6x6 darn."
+    },
+    "mini-golf": {
+      "name": "Golff Mini",
+      "desc": "Tynnwch yn ôl a gollwng i botio'r bêl i'r twll o fewn y terfyn ergydion; 10 cwrs gyda waliau a thywod."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Taflwch y disiau, rasiwch eich darnau adref a'u tynnu oddi ar y bwrdd cyn y cyfrifiadur, gan daro ei ddarnau unigol ar y ffordd; 10 lefel."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Tair ar Ddeg)",
+      "desc": "Y gêm gardiau Fietnameg i bedwar lle mae pawb yn ceisio cael gwared ar eu cardiau: chwaraewch senglau, parau, rhediadau a phedwar o'r un fath i wagio'ch llaw yn gyntaf; 10 lefel."
+    },
+    "tower-defense": {
+      "name": "Amddiffyn y Tŵr",
+      "desc": "Adeiladwch ac uwchraddiwch dyrau ar hyd y llwybr i atal pob ton o elynion; 10 lefel ar dair map gwahanol."
+    },
+    "color-by-number": {
+      "name": "Lliwio yn ôl Rhif",
+      "desc": "Paentiwch bob sgwâr â'r lliw sy'n cyfateb i'w rif i ddatgelu'r llun; 10 llun gyda mwy o liwiau bob tro."
+    },
+    "yukon": {
+      "name": "Solitaire Yukon",
+      "desc": "Klondike heb y stoc: symudwch unrhyw gerdyn wyneb i fyny gyda phopeth sydd arno; 10 lefel, llai o gardiau wyneb i fyny wrth i chi fynd."
+    },
+    "chinese-checkers": {
+      "name": "Draffts Tsieineaidd",
+      "desc": "Gêm neidio a chamu siâp seren yn erbyn y cyfrifiadur: symudwch bob un o'r 10 darn i'r gornel gyferbyn yn gyntaf; 10 lefel."
+    },
+    "mau-binh": {
+      "name": "Mậu Binh (Pocer Tsieineaidd)",
+      "desc": "Trefnwch 13 cerdyn yn dair llaw o 5, 5 a 3 cherdyn a churwch y cyfrifiadur; 5 rownd bob lefel, 10 lefel."
+    },
+    "phom": {
+      "name": "Phỏm (Rummy Fietnameg)",
+      "desc": "Rummy Fietnameg i ddau yn erbyn y cyfrifiadur: tynnwch neu cymerwch gerdyn a daflwyd, ffurfiwch gyfuniadau a mynd allan; y pwyntiau lleiaf ar ôl sy'n ennill; 10 lefel."
+    },
+    "shogi": {
+      "name": "Shogi (Gwyddbwyll Japan)",
+      "desc": "Chwaraewch shogi yn erbyn y cyfrifiadur: gollyngwch ddarnau a gipiwyd, dyrchafwch, a gosodwch y brenin yn fat; 10 lefel gyda dadwneud."
+    },
+    "janggi": {
+      "name": "Janggi (Gwyddbwyll Corea)",
+      "desc": "Chwaraewch wyddbwyll Corea yn erbyn y cyfrifiadur: croeslinau'r palas, neidiau magnel dros un darn, eliffantod tri cham; 10 lefel gyda dadwneud."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Fflipiwch chwith a dde i gadw'r bêl yn fyw, trawwch y bymperi a chyrhaeddwch y sgôr darged cyn i'ch 3 pheli ddod i ben; 10 lefel."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage dau chwaraewr yn erbyn y cyfrifiadur: crib, pegio i 31, cyfrif dwylo, ras i 61 pwynt; 10 lefel."
     }
   },
   "s": {

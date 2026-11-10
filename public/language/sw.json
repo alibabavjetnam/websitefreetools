@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Karata zilizobaki: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} anapita.",
     "lib.arcade.tlBad": "Karata ulizochagua hazifanyi seti halali.",
-    "lib.arcade.tlLow": "Seti hii si ya juu vya kutosha kushinda meza."
+    "lib.arcade.tlLow": "Seti hii si ya juu vya kutosha kushinda meza.",
+    "lib.arcade.note.td": "Gusa mraba tupu (si njia) ili kujenga mnara wa kupiga risasi, ambao unagharimu dhahabu. Gusa mnara tena ili kuuboresha (hadi kiwango cha 5). Minara hupiga risasi kiotomatiki adui aliyefika mbali zaidi ndani ya masafa yake. Washinde maadui ili kupata dhahabu zaidi. Maadui 15 wakifika mwisho, unashindwa. Vuka mawimbi yote ili kukamilisha ngazi.",
+    "lib.arcade.tdInfo": "Dhahabu: {g} · Wimbi {w}/{t}",
+    "lib.arcade.tdCost": "Mnara: {n}",
+    "lib.arcade.note.colorNum": "Kila mraba una namba inayolingana na rangi katika paleti. Chagua rangi, kisha gusa miraba yenye namba hiyo ili kuipaka. Ukitumia rangi isiyo sahihi, hakuna kinachopakwa. Paka miraba yote kwa usahihi ili kukamilisha picha. Ngazi za juu zina rangi nyingi zaidi.",
+    "lib.arcade.cnWrong": "Rangi si sahihi — angalia namba iliyo kwenye mraba.",
+    "lib.arcade.note.yukon": "Kama Klondike lakini bila rundo la akiba: karata yoyote iliyo wazi inaweza kuhamishwa pamoja na karata zote zilizo juu yake, hata kama hazifuatani. Karata ya kwanza tu ndiyo inayopaswa kufaa safu lengwa (kushuka, nyekundu na nyeusi kwa kupishana; Mfalme huenda kwenye safu tupu). Jenga karata zote 52 juu ya misingi minne kuanzia Ace hadi Mfalme. Ngazi za chini huanza na karata nyingi zaidi tayari zikiwa wazi.",
+    "lib.arcade.yukonFree": "Karata zilizofunikwa: {n}",
+    "lib.arcade.note.chinesechk": "Unacheza vipande vya buluu kwenye kona ya kulia. Hamisha vyote 10 hadi kona ya kushoto iliyo kinyume kabla ya kompyuta. Kila zamu unahamisha kipande kimoja: hatua moja hadi shimo tupu jirani, au ruka juu ya kipande chochote hadi shimo tupu lililo nyuma yake, na endelea kuruka mara nyingi upendavyo. Gusa kipande chako, kisha gusa shimo la kijani ili kusogea.",
+    "lib.arcade.ccTurn": "Zamu yako · Zamu {n}",
+    "lib.arcade.ccDraw": "Zamu zimeisha — ni sare.",
+    "lib.arcade.note.maubinh": "Wewe na kompyuta mnapata karata 13 kila mmoja na kuzipanga katika mikono 3: mkono wa nyuma wa karata 5, mkono wa kati wa karata 5 na mkono wa mbele wa karata 3. Mkono wa nyuma lazima uwe angalau na nguvu sawa na wa kati, na wa kati angalau sawa na wa mbele; vinginevyo mpangilio wako una kosa na unapoteza raundi nzima. Gusa karata, kisha gusa safu inakoenda (gusa karata iliyowekwa ili kuirudisha). Kila mkono unaoshinda ni pointi 1; ukishinda yote 3 ni pointi 6. Cheza raundi 5 — jumla chanya inakamilisha ngazi. Mkono wa mbele unaweza kuwa karata ya juu, jozi au karata tatu zinazofanana tu.",
+    "lib.arcade.mbHigh": "Karata ya juu",
+    "lib.arcade.mbPair": "Jozi",
+    "lib.arcade.mbTwoPair": "Jozi mbili",
+    "lib.arcade.mbTrips": "Karata tatu zinazofanana",
+    "lib.arcade.mbStraight": "Mfuatano",
+    "lib.arcade.mbFlush": "Rangi moja",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Karata nne zinazofanana",
+    "lib.arcade.mbSflush": "Mfuatano wa rangi moja",
+    "lib.arcade.mbBack": "Mkono wa nyuma",
+    "lib.arcade.mbMid": "Mkono wa kati",
+    "lib.arcade.mbFront": "Mkono wa mbele",
+    "lib.arcade.mbFoe": "Kompyuta",
+    "lib.arcade.mbYou": "Wewe",
+    "lib.arcade.mbFoul": "Mpangilio una kosa!",
+    "lib.arcade.mbFoeFoul": "Kompyuta ina kosa la mpangilio!",
+    "lib.arcade.mbConfirm": "Onyesha karata",
+    "lib.arcade.mbReset": "Futa",
+    "lib.arcade.mbHand": "Mkono wako",
+    "lib.arcade.mbRound": "Raundi {a}/{b}",
+    "lib.arcade.mbTotal": "Jumla: {n}",
+    "lib.arcade.mbFinish": "Maliza",
+    "lib.arcade.mbNext": "Raundi inayofuata",
+    "lib.arcade.mbDraw": "Pointi zimelingana — cheza tena.",
+    "lib.arcade.mbAutoMsg": "Huu hapa mpangilio unaopendekezwa. Unaweza kuubadilisha kabla ya kuonyesha karata.",
+    "lib.arcade.note.phom": "Wachezaji wawili; kila mmoja anapata karata 9 (anayeanza anapata 10). Mchanganyiko ni karata 3 au zaidi za thamani sawa, au karata 3 au zaidi zinazofuatana za aina moja (Ace ni ya chini tu). Katika zamu yako chukua karata kutoka kwenye rundo, au chukua karata ambayo mpinzani wako ametupa tu ikiwa inaunda mchanganyiko na mkono wako (karata uliyochukua lazima ubaki nayo), kisha tupa karata moja. Kila mchezaji akishatupa karata 4, raundi inaisha na anayeshinda ni mwenye jumla ndogo ya karata zisizo kwenye mchanganyiko (Ace = 1 … Mfalme = 13). Ikiwa karata zako zote ziko kwenye michanganyiko baada ya kutupa, unatoka (\"U\") na kushinda mara moja. Karata zenye mstari wa kijani ziko katika seti yako bora ya michanganyiko.",
+    "lib.arcade.pmDraw": "Chukua",
+    "lib.arcade.pmEat": "Chukua iliyotupwa",
+    "lib.arcade.pmThrow": "Tupa",
+    "lib.arcade.pmFoeAte": "Kompyuta ilichukua karata yako.",
+    "lib.arcade.pmFoeU": "Kompyuta imetoka!",
+    "lib.arcade.pmTurn": "Zamu {a}/{b}",
+    "lib.arcade.pmLeft": "Nje ya michanganyiko: {n}",
+    "lib.arcade.pmDeck": "Rundo: {n}",
+    "lib.arcade.pmFoeHand": "Mkono wa kompyuta",
+    "lib.arcade.pmFoeDisc": "Zilizotupwa na kompyuta",
+    "lib.arcade.pmFoeEaten": "Kompyuta ilichukua",
+    "lib.arcade.pmMyDisc": "Ulizotupa",
+    "lib.arcade.pmAte": "Ulichukua karata hii — itumie kwenye mchanganyiko.",
+    "lib.arcade.pmKeep": "Karata uliyochukua lazima ubaki nayo — tupa nyingine.",
+    "lib.arcade.pmU": "Umetoka! Unashinda mara moja.",
+    "lib.arcade.pmYou": "Wewe",
+    "lib.arcade.pmFoe": "Kompyuta",
+    "lib.arcade.pmDraw2": "Pointi zimelingana.",
+    "lib.arcade.note.shogi": "Shogi ni chesi ya Kijapani. Unacheza upande wa chini na kuanza kwanza; vipande vya kompyuta vinaelekea upande mwingine. Vipande vilivyokamatwa vinaingia mkononi mwako na vinaweza kuwekwa kwenye mraba wowote tupu badala ya kusogeza (kamwe kibaraka kwenye safu wima ambayo tayari una kibaraka ambacho hakijapandishwa cheo, na kamwe kipande kwenye safu mlalo ambapo hakingeweza kusogea tena). Kipande kinachoingia, kutoka au kusogea ndani ya safu tatu za mwisho za mpinzani kinaweza kupandishwa cheo (isipokuwa Mfalme na Dhahabu). Kupandishwa cheo ni lazima kipande kisipokuwa na hatua nyingine. Mpe mfalme wa adui mati ili ushinde. Kanji: 歩 kibaraka, 香 mkuki, 桂 farasi, 銀 fedha, 金 dhahabu, 角 askofu, 飛 ngome, 玉 mfalme. と, 馬, 竜 na vipande vingine vyekundu vimepandishwa cheo.",
+    "lib.arcade.sgPromote": "Pandisha cheo",
+    "lib.arcade.sgKeep": "Usipandishe",
+    "lib.arcade.sgCheck": "Uko chini ya shah!",
+    "lib.arcade.sgWin": "Mati — umeshinda.",
+    "lib.arcade.sgLose": "Umepewa mati.",
+    "lib.arcade.sgAskPromote": "Pandisha cheo kipande hiki?",
+    "lib.arcade.note.janggi": "Janggi ni chesi ya Kikorea. Unacheza vipande vya buluu chini na kuanza kwanza. Tofauti na xiangqi, hakuna mto, na majumba yote mawili yana mistari ya mshazari. Jenerali na Walinzi husogea hatua moja kwenye mistari ya jumba (pamoja na mishazari). Gari husogea na kukamata pia kwenye mishazari ya jumba. Mzinga lazima uruke juu ya kipande kimoja hasa (si mzinga mwingine) ili kusogea au kukamata, na hauwezi kukamata mzinga. Farasi hupiga hatua moja moja kwa moja kisha moja kwa mshazari, na Ndovu hatua moja moja kwa moja kisha mbili kwa mshazari; wote huzuiwa kipande kikiwa njiani. Askari husogea mbele au pembeni, na kwa mshazari mbele ndani ya jumba la adui. Majenerali wawili hawaruhusiwi kamwe kutazamana uso kwa uso. Mpe jenerali wa adui mati ili ushinde. Kompyuta haipiti kamwe.",
+    "lib.arcade.jgCheck": "Uko chini ya shah!",
+    "lib.arcade.jgWin": "Mati — umeshinda.",
+    "lib.arcade.jgLose": "Umepewa mati.",
+    "lib.arcade.note.pinball": "Bonyeza Space, mshale wa Juu au gusa meza ili kurusha mpira. Shikilia Kushoto (au gusa nusu ya kushoto ya meza) ili kuinua flipa ya kushoto na Kulia (au nusu ya kulia) kwa ya kulia — gusa kwa mdundo badala ya kushikilia. Vizuizi vya duara vinaleta pointi 100 kila kimoja. Una mipira 3. Fikia pointi lengwa kabla haijaisha ili kukamilisha ngazi.",
+    "lib.arcade.pinBalls": "Mipira: {n} · Lengo: {t}",
+    "lib.arcade.note.cribbage": "Cribbage ya wachezaji wawili, mbio hadi pointi 61. Kila mgawo unapata karata 6 na kuweka 2 zikiwa zimeangalia chini kwenye crib (inamilikiwa na mgawaji). Karata ya kuanzia inageuzwa. Kisha mnapokezana kucheza karata zikiwa zimeangalia juu, jumla inayoendelea isizidi 31: kufikia 15 au 31 ni pointi 2, kulingana na karata ya mwisho ni 2/6/12, mfuatano wa karata 3 au zaidi (kwa mpangilio wowote) ni pointi sawa na urefu wake, na hakuna anayeweza kucheza, mchezaji wa mwisho anapata 1 (\"Go\"). Kisha kila mkono wa karata 4 unahesabiwa pamoja na karata ya kuanzia: kila mchanganyiko wenye jumla ya 15 ni 2, kila jozi 2, mfuatano wa 3+ ni urefu wake, karata nne za aina moja 4 (5 pamoja na ya kuanzia), na Jack wa aina ya karata ya kuanzia 1. Asiyegawa anahesabu kwanza, kisha mgawaji anahesabu mkono wake na crib.",
+    "lib.arcade.cbFifteen": "Kumi na tano",
+    "lib.arcade.cbPair": "Jozi",
+    "lib.arcade.cbRun": "Mfuatano",
+    "lib.arcade.cbFlush": "Rangi moja",
+    "lib.arcade.cbNobs": "Jack wa aina ya karata ya kuanzia",
+    "lib.arcade.cbHeels": "Jack kama karata ya kuanzia",
+    "lib.arcade.cbYou": "Wewe",
+    "lib.arcade.cbFoe": "Kompyuta",
+    "lib.arcade.cbLast": "Karata ya mwisho",
+    "lib.arcade.cbCount": "Jumla: {n}",
+    "lib.arcade.cbYouDeal": "Unagawa wewe",
+    "lib.arcade.cbFoeDeal": "Kompyuta inagawa",
+    "lib.arcade.cbPick": "Chagua karata 2 za crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Mkono wako",
+    "lib.arcade.cbFoeHand": "Mkono wa kompyuta",
+    "lib.arcade.cbStarter": "Karata ya kuanzia",
+    "lib.arcade.cbZero": "Pointi 0",
+    "lib.arcade.cbPlayed": "Zilizochezwa",
+    "lib.arcade.cbToCrib": "Weka kwenye crib",
+    "lib.arcade.cbNext": "Endelea",
+    "lib.arcade.cbHand": "Mkono"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Kumi na Tatu)",
       "desc": "Mchezo wa karata wa Kivietinamu wa kumalizia karata kwa wanne: cheza karata moja, jozi, mfuatano na nne zinazofanana ili kumaliza karata mkononi kwanza; ngazi 10."
+    },
+    "tower-defense": {
+      "name": "Ulinzi wa Minara (Tower Defense)",
+      "desc": "Jenga na boresha minara kando ya njia ili kuzuia kila wimbi la maadui. Ngazi 10 kwenye ramani tatu tofauti."
+    },
+    "color-by-number": {
+      "name": "Paka Rangi kwa Namba",
+      "desc": "Paka kila mraba rangi inayolingana na namba yake ili kufichua picha. Picha 10, kila moja ikiwa na rangi nyingi zaidi."
+    },
+    "yukon": {
+      "name": "Solitaire ya Yukon",
+      "desc": "Klondike bila rundo la akiba: hamisha karata yoyote iliyo wazi pamoja na kila kitu kilicho juu yake. Ngazi 10, karata chache zaidi zikiwa wazi kadri unavyoendelea."
+    },
+    "chinese-checkers": {
+      "name": "Drafti za Kichina",
+      "desc": "Mchezo wa nyota wa kuruka na kupiga hatua dhidi ya kompyuta: hamisha vipande vyote 10 hadi kona iliyo kinyume kwanza. Ngazi 10."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (Poka ya Kichina)",
+      "desc": "Panga karata 13 katika mikono mitatu ya karata 5, 5 na 3 na umshinde kompyuta. Raundi 5 kwa kila ngazi, ngazi 10."
+    },
+    "phom": {
+      "name": "Phỏm (Rummy ya Kivietnam)",
+      "desc": "Rummy ya Kivietnam ya wachezaji wawili dhidi ya kompyuta: chukua karata au chukua iliyotupwa, unda michanganyiko na utoke. Mwenye pointi chache zaidi anashinda. Ngazi 10."
+    },
+    "shogi": {
+      "name": "Shogi (Chesi ya Kijapani)",
+      "desc": "Cheza shogi dhidi ya kompyuta: weka vipande vilivyokamatwa, pandisha cheo na mpe mfalme mati. Ngazi 10 zenye kutendua."
+    },
+    "janggi": {
+      "name": "Janggi (Chesi ya Kikorea)",
+      "desc": "Cheza chesi ya Kikorea dhidi ya kompyuta: mishazari ya jumba, miruko ya mzinga juu ya kipande kimoja, ndovu wa hatua tatu. Ngazi 10 zenye kutendua."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Piga flipa za kushoto na kulia ili mpira uendelee kuwa hai, gonga vizuizi na ufikie pointi lengwa kabla mipira yako 3 haijaisha. Ngazi 10."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage ya wachezaji wawili dhidi ya kompyuta: crib, kuhesabu hadi 31, kuhesabu mikono na mbio hadi pointi 61. Ngazi 10."
     }
   },
   "s": {

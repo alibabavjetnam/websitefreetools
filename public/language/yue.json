@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "剩餘牌數：{a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} 跳過。",
     "lib.arcade.tlBad": "所揀嘅牌唔係有效嘅組合。",
-    "lib.arcade.tlLow": "呢個組合唔夠大，大唔過枱面嘅牌。"
+    "lib.arcade.tlLow": "呢個組合唔夠大，大唔過枱面嘅牌。",
+    "lib.arcade.note.td": "撳一個空格仔（唔係路）就可以起箭塔，要用金幣。再撳一次塔就可以升級（最高 5 級）。塔會自動射擊射程內行得最遠嘅敵人。打敗敵人可以賺多啲金幣。如果有 15 個敵人去到終點，你就輸。捱過所有波數就過關。",
+    "lib.arcade.tdInfo": "金幣：{g} · 第 {w}/{t} 波",
+    "lib.arcade.tdCost": "塔：{n}",
+    "lib.arcade.note.colorNum": "每一格都有個數字，對應調色盤入面一種顏色。揀一種顏色，然後撳有嗰個數字嘅格去填色；用錯顏色就唔會填到。將所有格都填啱就完成幅畫。愈高級顏色愈多。",
+    "lib.arcade.cnWrong": "顏色唔啱——睇清楚格上面嘅數字。",
+    "lib.arcade.note.yukon": "同 Klondike 差唔多，但係冇牌堆：任何一張面向上嘅牌都可以連埋佢上面所有牌一齊搬，就算唔連續都得；只有第一張牌要啱目標列（由大到細，紅黑相間；K 可以放去空列）。要將 52 張牌按 A 到 K 砌到四個終點堆。低級嘅時候，一開始已經有更多牌面向上。",
+    "lib.arcade.yukonFree": "背面向上嘅牌：{n}",
+    "lib.arcade.note.chinesechk": "你玩右邊角落嘅藍色棋子。要喺電腦之前，將 10 粒全部搬去對面左邊角落。每回合行一粒棋：行一步去隔籬嘅空位，或者跳過任何一粒棋去佢後面嘅空位，仲可以連續跳幾多次都得。撳一粒你嘅棋，再撳綠色空位就會移動。",
+    "lib.arcade.ccTurn": "到你 · 第 {n} 回合",
+    "lib.arcade.ccDraw": "回合用晒——和棋。",
+    "lib.arcade.note.maubinh": "你同電腦各自攞 13 張牌，砌成 3 墩：後墩 5 張、中墩 5 張、前墩 3 張。後墩一定要同中墩一樣大或者更大，中墩一定要同前墩一樣大或者更大；否則就係「倒水」，成局輸晒。先撳一張牌，再撳想放嘅行（撳已放好嘅牌可以攞返出嚟）。每贏一墩得 1 分，贏晒 3 墩得 6 分。玩 5 局，總分大過 0 就過關。前墩只可以係散牌、一對或者三條。",
+    "lib.arcade.mbHigh": "散牌",
+    "lib.arcade.mbPair": "一對",
+    "lib.arcade.mbTwoPair": "兩對",
+    "lib.arcade.mbTrips": "三條",
+    "lib.arcade.mbStraight": "順子",
+    "lib.arcade.mbFlush": "同花",
+    "lib.arcade.mbFull": "葫蘆",
+    "lib.arcade.mbQuads": "四條",
+    "lib.arcade.mbSflush": "同花順",
+    "lib.arcade.mbBack": "後墩",
+    "lib.arcade.mbMid": "中墩",
+    "lib.arcade.mbFront": "前墩",
+    "lib.arcade.mbFoe": "電腦",
+    "lib.arcade.mbYou": "你",
+    "lib.arcade.mbFoul": "倒水！",
+    "lib.arcade.mbFoeFoul": "電腦倒水！",
+    "lib.arcade.mbConfirm": "亮牌",
+    "lib.arcade.mbReset": "清除",
+    "lib.arcade.mbHand": "你嘅牌",
+    "lib.arcade.mbRound": "第 {a}/{b} 局",
+    "lib.arcade.mbTotal": "總分：{n}",
+    "lib.arcade.mbFinish": "完成",
+    "lib.arcade.mbNext": "下一局",
+    "lib.arcade.mbDraw": "分數一樣——再玩過。",
+    "lib.arcade.mbAutoMsg": "呢個係建議嘅砌法。亮牌之前你可以修改。",
+    "lib.arcade.note.phom": "兩人對戰，各攞 9 張牌（先出嗰個攞 10 張）。「牌組」係 3 張或以上同點數嘅牌，或者 3 張或以上同花色嘅連續牌（A 只可以做最細）。輪到你嗰陣，可以喺牌堆攞一張牌，或者攞對手啱啱打出嘅牌（如果同你手上嘅牌組成牌組；攞咗嘅牌一定要留住），然後打出一張牌。雙方各打出 4 張牌之後，呢局就完，未組成牌組嘅牌點數總和（A = 1 … K = 13）較低者勝出。如果打牌之後你所有牌都組成牌組，就可以「U」（出牌完畢），即刻贏。有綠色框嘅牌係你最佳牌組嘅一部分。",
+    "lib.arcade.pmDraw": "攞牌",
+    "lib.arcade.pmEat": "食牌",
+    "lib.arcade.pmThrow": "打牌",
+    "lib.arcade.pmFoeAte": "電腦食咗你張牌。",
+    "lib.arcade.pmFoeU": "電腦 U 咗！",
+    "lib.arcade.pmTurn": "第 {a}/{b} 輪",
+    "lib.arcade.pmLeft": "未成組：{n}",
+    "lib.arcade.pmDeck": "牌堆：{n}",
+    "lib.arcade.pmFoeHand": "電腦手牌",
+    "lib.arcade.pmFoeDisc": "電腦打出嘅牌",
+    "lib.arcade.pmFoeEaten": "電腦食咗",
+    "lib.arcade.pmMyDisc": "你打出嘅牌",
+    "lib.arcade.pmAte": "你食咗呢張牌——要組成牌組。",
+    "lib.arcade.pmKeep": "食咗嘅牌一定要留住——打另一張。",
+    "lib.arcade.pmU": "U！你即刻贏。",
+    "lib.arcade.pmYou": "你",
+    "lib.arcade.pmFoe": "電腦",
+    "lib.arcade.pmDraw2": "分數一樣。",
+    "lib.arcade.note.shogi": "將棋係日本象棋。你行下面嗰邊，並且先行；電腦嘅棋子方向相反。食咗嘅棋子會入你嘅手，可以用嚟代替行棋，放落任何空格（唔可以喺已經有未升變步兵嘅直行再放步兵，亦唔可以將棋子放喺之後行唔到嘅橫行）。棋子走入、走出或者喺對方最後三行入面移動，就可以升變（王將同金將除外）；如果棋子之後冇棋可行，就一定要升變。將死對方嘅玉將就贏。漢字：歩 步兵、香 香車、桂 桂馬、銀 銀將、金 金將、角 角行、飛 飛車、玉 玉將；と、馬、竜 同其他紅色棋子係升變咗嘅棋子。",
+    "lib.arcade.sgPromote": "升變",
+    "lib.arcade.sgKeep": "唔升變",
+    "lib.arcade.sgCheck": "你俾人將軍！",
+    "lib.arcade.sgWin": "將死——你贏咗。",
+    "lib.arcade.sgLose": "你俾人將死咗。",
+    "lib.arcade.sgAskPromote": "要升變呢粒棋嗎？",
+    "lib.arcade.note.janggi": "將棋（Janggi）係韓國象棋。你行下面嘅藍色棋子，並且先行。同中國象棋唔同，冇楚河漢界，而且兩個九宮都有斜線。將同士沿九宮線行一步（包括斜線）；車喺九宮斜線上都可以直行同食子；炮一定要跳過剛好一粒棋（唔可以係另一粒炮）先可以行或者食子，而且唔可以食炮；馬先直行一步再斜行一步，象先直行一步再斜行兩步，兩者都會俾中間嘅棋子絆住；兵向前或者橫行，入咗對方九宮之後仲可以斜行向前。兩個將帥唔可以面對面。將死對方嘅將就贏。電腦唔會棄權。",
+    "lib.arcade.jgCheck": "你俾人將軍！",
+    "lib.arcade.jgWin": "將死——你贏咗。",
+    "lib.arcade.jgLose": "你俾人將死咗。",
+    "lib.arcade.note.pinball": "撳空白鍵、向上鍵或者撳枱面就可以發射波。㩒住向左鍵（或者撳枱面左半邊）撥起左邊撥片，向右鍵（或者右半邊）就撥右邊撥片——跟住節奏點撳，唔好㩒住唔放。圓形彈射器每個得 100 分。你有 3 粒波，要喺用晒之前達到目標分數先過關。",
+    "lib.arcade.pinBalls": "波：{n} · 目標：{t}",
+    "lib.arcade.note.cribbage": "雙人 Cribbage，比賽先到 61 分。每次發牌你會攞 6 張牌，要將 2 張面向下放入 crib（屬於莊家）。然後翻開一張起始牌。之後輪流面向上打牌，累計點數唔可以超過 31：湊到 15 或者 31 得 2 分，同上一張牌相同得 2/6/12 分，3 張或以上嘅順序（次序任意）按長度計分，如果冇人打到牌，最後打牌嗰個得 1 分（「Go」）。然後每副 4 張牌連起始牌一齊計分：每個總和係 15 嘅組合得 2 分，每對得 2 分，3 張或以上嘅順子按長度計，四張同花得 4 分（連起始牌 5 分），而同起始牌同花色嘅 J 得 1 分。非莊家先數，跟住莊家數自己嘅牌同 crib。",
+    "lib.arcade.cbFifteen": "十五",
+    "lib.arcade.cbPair": "對子",
+    "lib.arcade.cbRun": "順子",
+    "lib.arcade.cbFlush": "同花",
+    "lib.arcade.cbNobs": "同起始牌同花色嘅 J",
+    "lib.arcade.cbHeels": "起始牌係 J",
+    "lib.arcade.cbYou": "你",
+    "lib.arcade.cbFoe": "電腦",
+    "lib.arcade.cbLast": "最後一張牌",
+    "lib.arcade.cbCount": "總和：{n}",
+    "lib.arcade.cbYouDeal": "你做莊",
+    "lib.arcade.cbFoeDeal": "電腦做莊",
+    "lib.arcade.cbPick": "揀 2 張牌放入 crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "你嘅牌",
+    "lib.arcade.cbFoeHand": "電腦手牌",
+    "lib.arcade.cbStarter": "起始牌",
+    "lib.arcade.cbZero": "0 分",
+    "lib.arcade.cbPlayed": "已打出",
+    "lib.arcade.cbToCrib": "放入 crib",
+    "lib.arcade.cbNext": "繼續",
+    "lib.arcade.cbHand": "手牌"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên（十三張）",
       "desc": "越南四人出牌遊戲：出單張、一對、順子同四條，先出晒手牌嘅贏；10 關。"
+    },
+    "tower-defense": {
+      "name": "塔防 (Tower Defense)",
+      "desc": "沿路起塔同升級，阻止每一波敵人。10 關，三張唔同嘅地圖。"
+    },
+    "color-by-number": {
+      "name": "數字填色",
+      "desc": "將每一格填上同數字對應嘅顏色，揭開幅畫。10 幅畫，每次顏色愈嚟愈多。"
+    },
+    "yukon": {
+      "name": "育空接龍 (Yukon)",
+      "desc": "冇牌堆嘅 Klondike：可以搬任何面向上嘅牌連埋佢上面所有牌。10 關，愈玩面向上嘅牌愈少。"
+    },
+    "chinese-checkers": {
+      "name": "跳棋",
+      "desc": "同電腦玩六角星形跳棋：搶先將 10 粒棋全部搬去對面角落。10 關。"
+    },
+    "mau-binh": {
+      "name": "Mậu binh（十三張）",
+      "desc": "將 13 張牌砌成 5、5、3 張嘅三墩，打敗電腦。每關 5 局，共 10 關。"
+    },
+    "phom": {
+      "name": "Phỏm（越南拉米）",
+      "desc": "同電腦玩越南拉米：攞牌或者食牌，組成牌組然後 U。剩低分數最少者勝。10 關。"
+    },
+    "shogi": {
+      "name": "將棋 (Shogi)",
+      "desc": "同電腦玩將棋：打入食咗嘅棋子、升變、將死玉將。10 關，可以悔棋。"
+    },
+    "janggi": {
+      "name": "將棋 (Janggi，韓國象棋)",
+      "desc": "同電腦玩韓國象棋：九宮斜線、隔一子嘅炮、三步象。10 關，可以悔棋。"
+    },
+    "pinball": {
+      "name": "彈珠機 (Pinball)",
+      "desc": "撥動左右撥片，等波唔好跌落去，撞彈射器，喺 3 粒波用晒之前達到目標分數。10 關。"
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "同電腦玩雙人 Cribbage：crib、打牌數到 31、計手牌分數，比賽先到 61 分。10 關。"
     }
   },
   "s": {

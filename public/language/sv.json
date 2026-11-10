@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Välj en färg för att fylla hela området du äger i det övre vänstra hörnet; det sväljer intilliggande rutor i den färgen. Gör hela brädet till en färg inom tillåtet antal drag.",
     "lib.arcade.note.mastermind": "Datorn gömmer en rad med färger. Välj en färg för varje plats och tryck sedan på Gissa. En svart pinne = rätt färg på rätt plats; en vit pinne = rätt färg på fel plats. Knäck koden innan gissningarna tar slut.",
     "lib.arcade.note.hanoi": "Flytta alla skivor till sista pinnen. Flytta bara översta skivan på en pinne åt gången, och lägg aldrig en större skiva på en mindre. Klicka på startpinnen och sedan på målpinnen.",
-    "lib.arcade.note.pipes": "Klicka på en bricka för att vrida röret 90°. Koppla ihop alla rör till ett enda nätverk utan öppna ändar (öppna ändar visas i rött)."
+    "lib.arcade.note.pipes": "Klicka på en bricka för att vrida röret 90°. Koppla ihop alla rör till ett enda nätverk utan öppna ändar (öppna ändar visas i rött).",
+    "lib.arcade.pongScore": "Du {a} – {b} Datorn (först till {t})",
+    "lib.arcade.kills": "Förstörda: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} stenar kvar",
+    "lib.arcade.timeLeft": "{n} s kvar",
+    "lib.arcade.stepsN": "Steg: {n}",
+    "lib.arcade.crossed": "Hemma: {n}/{t}",
+    "lib.arcade.pipes": "Passerade rör: {n}/{t}",
+    "lib.arcade.distance": "Sträcka: {n}/{t} m",
+    "lib.arcade.speedN": "Fart: {n}",
+    "lib.arcade.note.whack-a-mole": "Mullvadar dyker upp ur hålen – klicka eller tryck på en mullvad för att klubba den. Klubba tillräckligt många innan tiden går ut. Från nivå 4 finns det bomber: träffar du en förlorar du poäng.",
+    "lib.arcade.hole": "Hål",
+    "lib.arcade.hitsN": "Träffar: {n}/{t}",
+    "lib.arcade.note.simon": "Spelet visar en följd av färger och ljud – upprepa den i samma ordning. Varje runda lägger till ett steg till. Kom ihåg den längd som krävs för att klara nivån. Från nivå 7 finns det 6 knappar.",
+    "lib.arcade.seqN": "Följd: {n}/{t}",
+    "lib.arcade.watch": "Titta…",
+    "lib.arcade.yourTurnShort": "Din tur",
+    "lib.arcade.note.aim-trainer": "Mål dyker upp på slumpmässiga platser och försvinner snabbt – träffa så många du kan. De blir mindre och snabbare. Träffa tillräckligt många mål innan du missat fler än 5 gånger för att klara nivån.",
+    "lib.arcade.missN": "Missar: {n}/{t}",
+    "lib.arcade.answer": "Svar",
+    "lib.arcade.note.quick-math": "Räkna i huvudet så fort du kan: skriv svaret och tryck på Enter. Varje fråga har en tidsgräns; ett fel svar eller att tiden går ut kostar ett liv (du har 3). Svara rätt på tillräckligt många frågor för att klara nivån.",
+    "lib.arcade.correctN": "Rätt: {n}/{t}",
+    "lib.arcade.note.reaction": "Vänta tills skärmen blir grön och klicka sedan så fort du kan. Att klicka för tidigt är ett fel (efter 3 fel förlorar du). Ditt snitt över 5 omgångar måste slå nivåns gräns.",
+    "lib.arcade.roundN": "Ord {n}/{t}",
+    "lib.arcade.limitMs": "Gräns: {n} ms",
+    "lib.arcade.rxWait": "Vänta på grönt…",
+    "lib.arcade.rxGo": "KLICKA!",
+    "lib.arcade.rxEarly": "För tidigt!",
+    "lib.arcade.gameArea": "Spelyta",
+    "lib.arcade.note.pong": "Flytta musen, dra med fingret eller använd tangenterna ← → för att styra racketen längst ner. Slå bollen förbi datorn; först till 5 poäng vinner. Bollen blir snabbare för varje träff.",
+    "lib.arcade.note.space-shooter": "Flytta musen, dra med fingret eller använd tangenterna ← → för att styra; ditt skepp skjuter automatiskt. Förstör tillräckligt många fiendeskepp för att klara nivån och undvik kollisioner och fiendens eld. Du har 3 liv.",
+    "lib.arcade.note.asteroids": "← → vrider skeppet, ↑ ger gas, mellanslag skjuter. Förstör alla stenar för att klara nivån; stora stenar delar sig i mindre. Skeppet fortsätter in från andra sidan när det lämnar skärmen. Du har 3 liv.",
+    "lib.arcade.note.maze": "Använd piltangenterna (eller svep, eller knapparna) för att ta dig från den gröna pricken till den röda flaggan innan tiden går ut. Från nivå 5 är labyrinten dimmig: du ser bara runt omkring dig, och besökta områden kommer ihåg.",
+    "lib.arcade.note.road-cross": "Använd piltangenterna, svep eller knapparna för att hoppa grodan från botten till toppen. Undvik trafiken; från nivå 5 är den övre delen en flod, så hoppa på de flytande stockarna. Ta dig hem 3 gånger för att klara nivån. Du har 3 liv.",
+    "lib.arcade.note.flappy": "Tryck på spelytan, tryck på mellanslag eller ↑ för att flaxa. Flyg genom luckorna mellan rören utan att röra ett rör, marken eller taket. Högre nivåer har smalare luckor och snabbare flygning.",
+    "lib.arcade.note.runner": "Tryck på spelytan, tryck på mellanslag eller ↑ för att hoppa över kaktusar; håll ↓ för att ducka under höga fåglar (eller hoppa över låga). Spring tillräckligt långt för att klara nivån. Farten ökar hela tiden.",
+    "lib.arcade.fire": "Skjut",
+    "lib.arcade.jump": "Hoppa",
+    "lib.arcade.aimTarget": "Mål",
+    "lib.game.soundOn": "Slå på ljud",
+    "lib.game.soundOff": "Stäng av ljud",
+    "lib.arcade.note.kalah": "Du spelar den nedre raden, datorn den övre; den stora gropen till höger är ditt förråd. Klicka på en grop för att ta alla dess frön och så dem moturs, ett per grop (förbi motståndarens förråd). Om ditt sista frö hamnar i ditt förråd får du slå igen; om det hamnar i en tom grop på din sida mittemot en grop med frön tar du de fröna. När ena sidan är tom går den andra sidans frön till dess ägares förråd; det större förrådet vinner.",
+    "lib.arcade.note.snakes": "Kasta tärningen och flytta lika många rutor, från 1 upp till 100. Hamnar du vid foten av en stege klättrar du upp, hamnar du på en ormhuvud glider du ner. Från nivå 4 måste du kasta exakt för att landa på 100. Högre nivåer har fler ormar, färre stegar och fler motståndare. Först till 100 vinner.",
+    "lib.arcade.square": "Ruta {n}",
+    "lib.arcade.ladderUp": "Uppför stegen!",
+    "lib.arcade.snakeDown": "Uppäten av en orm!",
+    "lib.arcade.needExact": "Du måste kasta exakt för att landa på 100.",
+    "lib.arcade.note.nmm": "Varje sida har 9 pjäser. Fas 1: turas om att placera pjäser på tomma punkter. Fas 2: flytta en pjäs till en intilliggande tom punkt. När du bara har 3 pjäser kvar får du ”flyga” till vilken tom punkt som helst. Gör tre i rad (en ”kvarn”) för att ta bort en motståndarpjäs (pjäser som inte ingår i en kvarn först). Du förlorar när du har 2 pjäser kvar eller inte kan flytta. Du spelar vit och börjar.",
+    "lib.arcade.inHand": "Att placera: {a} · {b}",
+    "lib.arcade.removePiece": "Välj en motståndarpjäs att ta bort.",
+    "lib.arcade.enemyWaters": "Fiendens vatten (klicka för att skjuta)",
+    "lib.arcade.yourFleet": "Din flotta",
+    "lib.arcade.note.battleship": "Varje sida har 5 skepp (längd 5, 4, 3, 3, 2) som placeras slumpmässigt på ett 10x10-rutnät. Turas om att skjuta på en ruta: en träff blir röd, en miss blir ljusblå, och när alla rutor i ett skepp är träffade sänks det. Sänk hela fiendens flotta först för att vinna. På högre nivåer räknar datorn ut var dina skepp finns på ett smartare sätt.",
+    "lib.arcade.shipsLeft": "Skepp kvar: du {a} · fienden {b}",
+    "lib.arcade.theySunk": "Fienden sänkte ett av dina skepp!",
+    "lib.arcade.theyHit": "Fienden träffade ett av dina skepp.",
+    "lib.arcade.theyMiss": "Fienden missade.",
+    "lib.arcade.youSunk": "Du sänkte ett fiendeskepp!",
+    "lib.arcade.youHit": "Träff!",
+    "lib.arcade.youMiss": "Miss.",
+    "lib.arcade.shake": "Skaka",
+    "lib.arcade.clearBets": "Rensa insatser",
+    "lib.arcade.note.bau-cua": "Endast virtuella mynt – inga riktiga pengar. Välj ett marknadsvärde, klicka på djuren för att satsa och tryck sedan på Skaka. För varje tärning som matchar ett djur du satsat på får du tillbaka din insats plus lika mycket för varje träff. Nå målet i mynt inom tillåtet antal omgångar för att klara nivån.",
+    "lib.arcade.note.baccarat": "Endast virtuella mynt – inga riktiga pengar. Satsa på Spelare, Bank eller Oavgjort och tryck sedan på Dela. En hands värde är sista siffran i summan (ess = 1, 2–9 enligt valör, 10/knekt/dam/kung = 0); handen närmast 9 vinner, och tredje kort dras enligt standardreglerna. Spelare betalar 1:1, Bank 0,95:1, Oavgjort 8:1 (insatser på Spelare/Bank återbetalas vid oavgjort). Nå målet i mynt inom tillåtet antal omgångar för att klara nivån.",
+    "lib.arcade.banker": "Bank",
+    "lib.arcade.player": "Spelare",
+    "lib.arcade.tie": "Oavgjort",
+    "lib.arcade.openCards": "Visa",
+    "lib.arcade.note.bai-cao": "Endast virtuella mynt – inga riktiga pengar. Varje sida får 3 kort. En hand ger sista siffran i summan (ess = 1, 2–9 enligt valör, 10/knekt/dam/kung = 10, alltså 0 poäng). Rangordning: tretal (”Sáp”) är högst, sedan tre klädda kort (”Ba tiên”), sedan 9 poäng ner till 0. Lägg en insats, tryck på Dela och sedan på Visa för att jämföra med givaren. Från nivå 6 vinner givaren vid lika. Nå målet i mynt inom tillåtet antal omgångar för att klara nivån.",
+    "lib.arcade.caoSap": "Tretal",
+    "lib.arcade.caoBaTien": "Tre klädda kort",
+    "lib.arcade.caoPts": "{n} p",
+    "lib.arcade.note.bingo": "Datorn ropar upp nummer från 1 till 75. När ett uppropat nummer finns på din bricka klickar du på det för att markera det (mitten är gratis). Fyll en rad, kolumn eller diagonal och tryck på BINGO! – du måste slå datormotståndarna. Ett falskt BINGO! låser knappen i några sekunder. Högre nivåer ropar snabbare och har fler motståndare.",
+    "lib.arcade.opponentsN": "Motståndare: {n}",
+    "lib.arcade.falseBingo": "Ingen full rad än! Knappen är låst i 3 sekunder.",
+    "lib.arcade.bingoGo": "Numren ropas upp!",
+    "lib.arcade.note.yahtzee": "Varje tur kastar du 5 tärningar upp till 3 gånger: klicka på en tärning för att behålla den och tryck sedan på Kasta för att kasta om de andra. Välj sedan en ruta i tabellen att skriva poängen i (varje ruta används en gång; en ruta som inte passar ger 0). 13 omgångar. Rutorna Ettor–Sexor ger en bonus på 35 om de summerar till 63 eller mer. Nå nivåns målpoäng för att vinna.",
+    "lib.arcade.turnN": "Tur {n}/13",
+    "lib.arcade.pickCat": "Välj en ruta att poängsätta",
+    "lib.arcade.rollsLeft": "Kasta ({n} kvar)",
+    "lib.arcade.upperBonus": "Bonus för Ettor–Sexor",
+    "lib.arcade.scored": "Fick {n}",
+    "lib.arcade.note.crazy-eights": "Spela ett kort som matchar översta kortet i kastbunten i färg eller valör. Åttor är jokrar: spela en när som helst och välj ny färg. Har du inget kort att spela drar du från högen (upp till 3 kort); kan du fortfarande inte spela passar du. Den som först blir av med alla kort vinner. Högre nivåer har fler motståndare och datorn spelar smartare.",
+    "lib.arcade.opponent": "Motståndare",
+    "lib.arcade.pileLeft": "Draghög: {n}",
+    "lib.arcade.pickSuit": "Välj en ny färg",
+    "lib.arcade.aiSuit": "Datorn valde {s}",
+    "lib.arcade.aiPass": "Datorn passar.",
+    "lib.arcade.mustPlay": "Du har ett kort att spela – spela det.",
+    "lib.arcade.youPass": "Du drog 3 kort och passar.",
+    "lib.arcade.bcGourd": "Kalebass",
+    "lib.arcade.bcCrab": "Krabba",
+    "lib.arcade.bcShrimp": "Räka",
+    "lib.arcade.bcFish": "Fisk",
+    "lib.arcade.bcRooster": "Tupp",
+    "lib.arcade.bcDeer": "Hjort",
+    "lib.arcade.yOnes": "Ettor",
+    "lib.arcade.yTwos": "Tvåor",
+    "lib.arcade.yThrees": "Treor",
+    "lib.arcade.yFours": "Fyror",
+    "lib.arcade.yFives": "Femmor",
+    "lib.arcade.ySixes": "Sexor",
+    "lib.arcade.yThree": "Tretal",
+    "lib.arcade.yFour": "Fyrtal",
+    "lib.arcade.yFull": "Kåk (25)",
+    "lib.arcade.ySmall": "Liten stege (30)",
+    "lib.arcade.yLarge": "Stor stege (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Chans",
+    "lib.arcade.note.race": "Tryck på ← → (eller tryck på den fil du vill ha) för att byta fil och undvika bilarna framför. Du har 3 liv; kör hela sträckan för att klara nivån. Högre nivåer har fler filer och snabbare trafik.",
+    "lib.arcade.note.jump": "Figuren studsar själv. Tryck på ← → eller dra med fingret för att landa på nästa plattform. Blå plattformar rör sig, bruna går sönder när du landar. Att falla ut ur bild innebär att du förlorar; klättra tillräckligt högt för att klara nivån.",
+    "lib.arcade.note.miner": "Kroken svänger fram och tillbaka; tryck på mellanslag, ↓ eller tryck på spelytan för att släppa den. Stora guldklumpar och stenar är tunga och dras upp långsamt; diamanter är värda mycket. Nå målsumman innan de 60 sekunderna är slut.",
+    "lib.arcade.note.slicer": "Svep med fingret eller musen över frukten för att skiva den. Undvik de svarta bomberna. Att missa en frukt eller skiva en bomb kostar ett liv (du har 3). Skiva tillräckligt mycket frukt för att klara nivån.",
+    "lib.arcade.note.hoops": "Tryck på planen, dra nedåt (som en slangbella) och släpp för att skjuta bollen mot korgen. Ju längre du drar, desto hårdare kast. Gör tillräckligt många korgar på de skott du har; från nivå 4 rör sig korgen.",
+    "lib.arcade.note.bubbles": "Flytta musen eller fingret för att sikta och klicka/tryck eller tryck på mellanslag/Skjut för att skjuta. Koppla ihop 3 eller fler bubblor av samma färg för att spräcka dem; bubblor som förlorar sitt stöd faller. Raderna sjunker långsamt, så håll dem borta från nedre linjen. Rensa alla bubblor för att vinna.",
+    "lib.arcade.note.chase": "Använd piltangenterna (eller svep / knapparna) för att svänga och äta alla prickar i labyrinten medan du undviker spökena som jagar dig. Du har 3 liv; högre nivåer har fler spöken som är snabbare och jagar smartare.",
+    "lib.arcade.height": "Höjd: {n}/{t} m",
+    "lib.arcade.money": "Pengar: {n}/{t}",
+    "lib.arcade.sliced": "Skivade: {n}/{t}",
+    "lib.arcade.hoopScore": "Poäng: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} skott kvar",
+    "lib.arcade.bubbleLeft": "{n} bubblor kvar",
+    "lib.arcade.shotsN": "Skott: {n}",
+    "lib.arcade.dotsLeft": "{n} prickar kvar",
+    "lib.arcade.note.kakuro": "Fyll de vita rutorna med siffrorna 1–9 så att varje serie summerar till ledtråden i den svarta rutan (talet uppe till höger gäller serien åt höger, talet nere till vänster serien nedåt), utan att någon siffra upprepas i en serie. Använd piltangenterna för att flytta.",
+    "lib.arcade.note.kenken": "Fyll rutnätet med talen 1 till N så att inget tal upprepas i någon rad eller kolumn. Varje kraftigt inramad grupp visar ett mål och en operation (+, −, ×, ÷): talen i gruppen måste ge det resultatet. Använd piltangenterna för att flytta.",
+    "lib.arcade.note.wordGuess": "Gissa det hemliga engelska ordet. Efter varje försök betyder grönt rätt bokstav på rätt plats, gult att bokstaven finns i ordet men på annan plats, och grått att den inte finns i ordet. Skriv på tangentbordet eller använd tangenterna på skärmen och tryck på Enter för att skicka in. Högre nivåer har längre ord och färre försök.",
+    "lib.arcade.note.hangman": "Gissa det hemliga engelska ordet genom att välja en bokstav i taget. Varje fel bokstav lägger till en del på den hängda figuren; när du har slut på felgissningar förlorar du. Högre nivåer har längre ord och färre tillåtna felgissningar.",
+    "lib.arcade.note.scramble": "Ordna om de blandade bokstäverna till ett riktigt engelskt ord och skriv det i svarsrutan. Varje nivå har 5 ord; lös minst 4 innan varje ords timer går ut för att klara nivån. Ledtråden visar första bokstaven.",
+    "lib.arcade.cellsLeft": "{n} tomma rutor kvar",
+    "lib.arcade.wrongN": "{n} rutor är fel.",
+    "lib.arcade.noError": "Inga fel hittade hittills.",
+    "lib.arcade.tooShort": "För få bokstäver",
+    "lib.arcade.answerIs": "Svar: {w}",
+    "lib.arcade.livesLeft": "{n} felgissningar kvar",
+    "lib.arcade.yourAnswer": "Ditt svar",
+    "lib.arcade.skip": "Hoppa över",
+    "lib.arcade.notThis": "Fel, försök igen.",
+    "lib.arcade.startsWith": "Första bokstaven: {c}",
+    "lib.arcade.note.domino": "Varje spelare får 7 brickor; den som har den högsta dubbeln börjar. Lägg en bricka vars tal matchar ena änden av kedjan. Kan du inte spela drar du från högen tills du kan; är den tom passar du. Den som först blir av med alla brickor vinner; om båda är blockerade vinner den med lägst ögonsumma.",
+    "lib.arcade.note.hearts": "Fyra spelare, 13 kort var. Klöver 2 spelas ut först. Du måste följa färg om du kan. Varje hjärter ger 1 poäng och spader dam ger 13; den som tar en stick får dess poäng. Lägre är bättre, och tar någon alla 26 poäng får alla andra 26 istället. Du får inte spela ut hjärter förrän ett har spelats. Efter sista given vinner du om din poäng är lägst (eller delad lägst).",
+    "lib.arcade.note.holdem": "Heads-up mot datorn med endast virtuella marker. Varje spelare får 2 privata kort och 5 gemensamma kort visas (flopp, turn, river); gör den bästa handen med 5 kort. Varje runda kan du lägga dig, syna (eller checka) eller höja. Blinds höjs var 4:e giv. Du vinner när datorn får slut på marker, eller genom att ha fler marker efter maxantalet givar. Inga riktiga pengar är inblandade.",
+    "lib.arcade.dmDraw": "Dra en bricka",
+    "lib.arcade.dmPass": "Passa",
+    "lib.arcade.dmEmpty": "Inga brickor spelade än",
+    "lib.arcade.dmYard": "Draghög: {n} brickor",
+    "lib.arcade.dmLeft": "Vänster ände",
+    "lib.arcade.dmRight": "Höger ände",
+    "lib.arcade.dmTie": "Oavgjort! Båda sidor är jämna.",
+    "lib.arcade.hrHand": "Giv {n}/{t}",
+    "lib.arcade.hrTook": "{p} vinner sticket ({n} poäng).",
+    "lib.arcade.hrIllegal": "Du kan inte spela det här kortet (följ färg, eller så får hjärter inte spelas ut än).",
+    "lib.arcade.blinds": "Stora blind: {n}",
+    "lib.arcade.pot": "Pott: {n}",
+    "lib.arcade.fold": "Lägg dig",
+    "lib.arcade.check": "Checka",
+    "lib.arcade.callN": "Syna {n}",
+    "lib.arcade.raiseTo": "Höj till",
+    "lib.arcade.raiseN": "Höj till {n}",
+    "lib.arcade.thOppFold": "Datorn lägger sig; du vinner given.",
+    "lib.arcade.thYouFold": "Du la dig.",
+    "lib.arcade.thOppWin": "Datorn vinner given",
+    "lib.arcade.thYouWin": "Du vinner given",
+    "lib.arcade.thSplit": "Delad pott",
+    "lib.arcade.thAiFold": "Datorn lägger sig.",
+    "lib.arcade.thAiRaise": "Datorn höjer till {n}.",
+    "lib.arcade.thAiCall": "Datorn synar / checkar.",
+    "lib.arcade.hand.high": "Högt kort",
+    "lib.arcade.hand.pair": "Par",
+    "lib.arcade.hand.twoPair": "Två par",
+    "lib.arcade.hand.trips": "Tretal",
+    "lib.arcade.hand.straight": "Stege",
+    "lib.arcade.hand.flush": "Färg",
+    "lib.arcade.hand.full": "Kåk",
+    "lib.arcade.hand.quads": "Fyrtal",
+    "lib.arcade.hand.sflush": "Färgstege",
+    "lib.arcade.note.nback": "En ruta lyser upp efter varandra på ett 3x3-rutnät. Tryck på ”Match!” (eller mellanslag) när den upplysta platsen är densamma som för N steg sedan (N visas ovan). Du behöver minst 80 % rätta beslut för att klara nivån. Högre nivåer använder ett större N.",
+    "lib.arcade.nbMatch": "Match!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Rätt: {a} · Fel: {b}",
+    "lib.arcade.nbAcc": "Träffsäkerhet: {n} %",
+    "lib.arcade.note.clicker": "Klicka på kakan för att baka kakor och köp sedan hjälpare som bakar automatiskt (priserna stiger för varje du köper). Baka det önskade antalet kakor inom 2 minuter för att klara nivån.",
+    "lib.arcade.ckCursor": "Muspekare",
+    "lib.arcade.ckGrandma": "Bakande mormor",
+    "lib.arcade.ckFarm": "Gård",
+    "lib.arcade.ckMine": "Sockergruva",
+    "lib.arcade.ckFactory": "Fabrik",
+    "lib.arcade.ckCookie": "Kaka",
+    "lib.arcade.ckEarned": "Bakade: {n}/{t}",
+    "lib.arcade.chips2": "Kakor: {n}",
+    "lib.arcade.ckCps": "{n} kakor/sekund",
+    "lib.arcade.note.onet": "Välj två identiska brickor som kan förbindas med en bana med högst 2 svängar som inte korsar andra brickor för att ta bort dem. Rensa alla brickor innan tiden går ut för att vinna. När inga drag finns kvar kan du blanda (begränsat antal gånger).",
+    "lib.arcade.shuffle": "Blanda",
+    "lib.arcade.tilesLeft": "{n} brickor kvar",
+    "lib.arcade.autoShuffle": "Inga drag kvar – blandades automatiskt.",
+    "lib.arcade.note.jigsaw": "Bilden är uppdelad i bitar och blandad. Tryck på en bit och sedan på en annan för att byta plats på dem, och bygg om bilden som visas som förlaga. Bitar på rätt plats får en grön kant. Högre nivåer har fler bitar.",
+    "lib.arcade.jgRef": "Förlaga",
+    "lib.arcade.jgPlaced": "På plats: {a}/{b}",
+    "lib.arcade.golfStrokes": "Slag: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Du spelar de vita pjäserna och flyttar från övre högra hörnet runt till nedre högra (ditt hem). Kasta tärningarna, klicka på pjäsen du vill flytta och klicka sedan på en markerad destination. Om du landar på en punkt med exakt en motståndarpjäs slår du ut den till mittbarren, och den spelaren måste ta in den först. Du kan inte landa på en punkt med två eller fler motståndarpjäser. När alla dina 15 pjäser är i ditt hemfält (de sista 6 punkterna) får du börja ta ut dem. Först med att ta ut alla 15 vinner.",
+    "lib.arcade.bgRoll": "Kasta tärningarna",
+    "lib.arcade.bgOff": "Ta ut",
+    "lib.arcade.bgRollFirst": "Kasta tärningarna",
+    "lib.arcade.bgInfo": "Uttagna: du {a} · datorn {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Du har inga lagliga drag kvar.",
+    "lib.arcade.note.tienlen": "Fyra spelare, 13 kort var. Kortens ordning från lägst till högst: 3, 4, … K, A, 2; färger från lägst till högst: spader, klöver, ruter, hjärter. Den som har spader 3 börjar. Spela ett enskilt kort, ett par, tretal, fyrtal eller en följd på 3 eller fler kort i rad (inga tvåor). Nästa spelare måste spela samma typ och högre, eller passa; ett fyrtal kan slå en enskild tvåa eller ett par tvåor. När alla andra passar får den som spelade sist spela ut vad som helst. Först med tom hand vinner. Välj kort och tryck sedan på Spela.",
+    "lib.arcade.tlPlay": "Spela",
+    "lib.arcade.tlPass": "Passa",
+    "lib.arcade.tlClear": "Rensa val",
+    "lib.arcade.tlPassed": "passade",
+    "lib.arcade.tlFree": "Bordet är tomt – du får spela ut vad som helst",
+    "lib.arcade.tlLeft": "Kort kvar: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passar.",
+    "lib.arcade.tlBad": "De valda korten bildar ingen giltig kombination.",
+    "lib.arcade.tlLow": "Den här kombinationen är inte hög nog för att slå bordet.",
+    "lib.arcade.note.td": "Tryck på en tom ruta (inte stigen) för att bygga ett skjuttorn, vilket kostar guld; tryck på ett torn igen för att uppgradera det (upp till nivå 5). Tornen skjuter automatiskt på den fiende som kommit längst inom räckvidd. Besegra fiender för att tjäna mer guld; om 15 fiender når slutet förlorar du. Överlev alla vågor för att klara nivån.",
+    "lib.arcade.tdInfo": "Guld: {g} · Våg {w}/{t}",
+    "lib.arcade.tdCost": "Torn: {n}",
+    "lib.arcade.note.colorNum": "Varje ruta har ett nummer som matchar en färg i paletten. Välj en färg och tryck sedan på rutorna med det numret för att måla dem; att trycka med fel färg målar ingenting. Måla alla rutor rätt för att slutföra bilden. Högre nivåer har fler färger.",
+    "lib.arcade.cnWrong": "Fel färg – kolla numret på rutan.",
+    "lib.arcade.note.yukon": "Som Klondike men utan talong: vilket uppvänt kort som helst kan flyttas tillsammans med alla kort ovanpå det, även om de inte ligger i följd; bara det första kortet måste passa målkolumnen (fallande, växelvis rött och svart; en kung går till en tom kolumn). Bygg upp alla 52 kort på de fyra grundhögarna från ess till kung. Låga nivåer börjar med fler kort redan uppvända.",
+    "lib.arcade.yukonFree": "Nedvända kort: {n}",
+    "lib.arcade.note.chinesechk": "Du spelar de blå pjäserna i högra hörnet; flytta alla 10 till det motsatta vänstra hörnet före datorn. Varje tur flyttar du en pjäs: gå ett steg till ett tomt grannhål, eller hoppa över valfri pjäs till det tomma hålet direkt bakom, och fortsätt hoppa så många gånger du vill. Tryck på en av dina pjäser och sedan på ett grönt hål för att flytta.",
+    "lib.arcade.ccTurn": "Din tur · Tur {n}",
+    "lib.arcade.ccDraw": "Slut på turer – det blev oavgjort.",
+    "lib.arcade.note.maubinh": "Du och datorn får 13 kort var och ordnar dem i 3 händer: en bakre hand med 5 kort, en mellanhand med 5 kort och en främre hand med 3 kort. Den bakre handen måste vara minst lika stark som mellanhanden, och mellanhanden minst lika stark som den främre; annars är din uppställning ogiltig och du förlorar hela rundan. Tryck på ett kort och sedan på raden där det ska ligga (tryck på ett placerat kort för att ta tillbaka det). Varje hand du vinner ger 1 poäng; vinner du alla 3 ger det 6. Spela 5 rundor – en positiv summa klarar nivån. Den främre handen kan bara vara högt kort, par eller tretal.",
+    "lib.arcade.mbHigh": "Högt kort",
+    "lib.arcade.mbPair": "Par",
+    "lib.arcade.mbTwoPair": "Två par",
+    "lib.arcade.mbTrips": "Tretal",
+    "lib.arcade.mbStraight": "Stege",
+    "lib.arcade.mbFlush": "Färg",
+    "lib.arcade.mbFull": "Kåk",
+    "lib.arcade.mbQuads": "Fyrtal",
+    "lib.arcade.mbSflush": "Färgstege",
+    "lib.arcade.mbBack": "Bakre hand",
+    "lib.arcade.mbMid": "Mellanhand",
+    "lib.arcade.mbFront": "Främre hand",
+    "lib.arcade.mbFoe": "Datorn",
+    "lib.arcade.mbYou": "Du",
+    "lib.arcade.mbFoul": "Ogiltig uppställning!",
+    "lib.arcade.mbFoeFoul": "Datorn har ogiltig uppställning!",
+    "lib.arcade.mbConfirm": "Visa korten",
+    "lib.arcade.mbReset": "Rensa",
+    "lib.arcade.mbHand": "Din hand",
+    "lib.arcade.mbRound": "Runda {a}/{b}",
+    "lib.arcade.mbTotal": "Totalt: {n}",
+    "lib.arcade.mbFinish": "Slutför",
+    "lib.arcade.mbNext": "Nästa runda",
+    "lib.arcade.mbDraw": "Lika på poäng – spela igen.",
+    "lib.arcade.mbAutoMsg": "Här är ett förslag på uppställning. Du kan ändra den innan du visar korten.",
+    "lib.arcade.note.phom": "Två spelare; var och en får 9 kort (den som börjar får 10). En kombination är 3 eller fler kort av samma valör, eller 3 eller fler kort i följd i samma färg (ess är bara lågt). På din tur drar du ett kort från leken, eller tar kortet motståndaren precis kastade om det bildar en kombination med din hand (ett kort du tagit måste behållas), och kastar sedan ett kort. När varje spelare har kastat 4 kort avslutas rundan och den som har lägst summa på kort utanför kombinationer (ess = 1 … kung = 13) vinner. Om alla dina kort ingår i kombinationer efter ett kast går du ut (”U”) och vinner direkt. Kort med grön kant ingår i din bästa uppsättning kombinationer.",
+    "lib.arcade.pmDraw": "Dra",
+    "lib.arcade.pmEat": "Ta kastat kort",
+    "lib.arcade.pmThrow": "Kasta",
+    "lib.arcade.pmFoeAte": "Datorn tog ditt kort.",
+    "lib.arcade.pmFoeU": "Datorn gick ut!",
+    "lib.arcade.pmTurn": "Tur {a}/{b}",
+    "lib.arcade.pmLeft": "Utanför kombinationer: {n}",
+    "lib.arcade.pmDeck": "Lek: {n}",
+    "lib.arcade.pmFoeHand": "Datorns hand",
+    "lib.arcade.pmFoeDisc": "Datorns kast",
+    "lib.arcade.pmFoeEaten": "Datorn tog",
+    "lib.arcade.pmMyDisc": "Dina kast",
+    "lib.arcade.pmAte": "Du tog det här kortet – behåll det i en kombination.",
+    "lib.arcade.pmKeep": "Ett kort du tagit måste behållas – kasta ett annat.",
+    "lib.arcade.pmU": "Ute! Du vinner direkt.",
+    "lib.arcade.pmYou": "Du",
+    "lib.arcade.pmFoe": "Datorn",
+    "lib.arcade.pmDraw2": "Lika på poäng.",
+    "lib.arcade.note.shogi": "Shogi är japansk schack. Du spelar den nedre sidan och börjar; datorns pjäser pekar åt andra hållet. Tagna pjäser hamnar i din hand och kan placeras på valfri tom ruta istället för att göra ett drag (aldrig en bonde i en fil där du redan har en obefordrad bonde, och aldrig en pjäs på en rad där den inte skulle kunna röra sig igen). En pjäs som flyttas in i, ut ur eller inom motståndarens tre sista rader kan befordras (utom kung och guld); befordran är obligatorisk när en pjäs annars saknar drag. Schackmatta fiendens kung för att vinna. Kanji: 歩 bonde, 香 lans, 桂 springare, 銀 silver, 金 guld, 角 löpare, 飛 torn, 玉 kung; と, 馬, 竜 och andra röda pjäser är befordrade.",
+    "lib.arcade.sgPromote": "Befordra",
+    "lib.arcade.sgKeep": "Befordra inte",
+    "lib.arcade.sgCheck": "Du står i schack!",
+    "lib.arcade.sgWin": "Schackmatt – du vinner.",
+    "lib.arcade.sgLose": "Du blev schackmattad.",
+    "lib.arcade.sgAskPromote": "Befordra den här pjäsen?",
+    "lib.arcade.note.janggi": "Janggi är koreansk schack. Du spelar de blå pjäserna längst ner och börjar. Till skillnad från xiangqi finns ingen flod, och båda palatsen har diagonala linjer. Generalen och vakterna flyttar ett steg längs palatsets linjer (diagonaler inkluderade); vagnen glider och tar också längs palatsets diagonaler; kanonen måste hoppa över exakt en pjäs (inte en annan kanon) för att flytta eller ta, och kan inte ta en kanon; hästen går ett steg rakt och sedan ett diagonalt, elefanten ett rakt och sedan två diagonala, båda blockeras om en pjäs är i vägen; soldaterna går framåt eller sidledes, och diagonalt framåt inne i fiendens palats. De två generalerna får aldrig stå mitt emot varandra. Schackmatta fiendens general för att vinna. Datorn passar aldrig.",
+    "lib.arcade.jgCheck": "Du står i schack!",
+    "lib.arcade.jgWin": "Schackmatt – du vinner.",
+    "lib.arcade.jgLose": "Du blev schackmattad.",
+    "lib.arcade.note.pinball": "Tryck på mellanslag, uppåt eller tryck på bordet för att skjuta ut bollen. Håll vänster (eller tryck på bordets vänstra halva) för att lyfta vänster fläpp och höger (eller högra halvan) för det högra – tryck i takt istället för att hålla in. Runda bumpers ger 100 poäng var. Du har 3 bollar; nå målpoängen innan de tar slut för att klara nivån.",
+    "lib.arcade.pinBalls": "Bollar: {n} · Mål: {t}",
+    "lib.arcade.note.cribbage": "Cribbage för två spelare, ett race till 61 poäng. Varje giv får du 6 kort och lägger 2 nedvända i kribben (den tillhör givaren). Ett startkort vänds upp. Sedan turas ni om att spela kort uppvända med löpande summa som aldrig överstiger 31: att nå 15 eller 31 ger 2, att matcha föregående kort ger 2/6/12, en följd på 3 eller fler (i valfri ordning) ger lika många poäng som dess längd, och när ingen kan spela får den som spelade sist 1 (”Go”). Därefter räknas varje hand om 4 kort tillsammans med startkortet: varje kombination som summerar till 15 ger 2, varje par 2, en följd på 3+ dess längd, fyra kort i samma färg 4 (5 med startkortet), och en knekt i samma färg som startkortet 1. Den som inte ger räknar först, sedan räknar givaren sin hand och kribben.",
+    "lib.arcade.cbFifteen": "Femton",
+    "lib.arcade.cbPair": "Par",
+    "lib.arcade.cbRun": "Följd",
+    "lib.arcade.cbFlush": "Färg",
+    "lib.arcade.cbNobs": "Knekt i startkortets färg",
+    "lib.arcade.cbHeels": "Knekt som startkort",
+    "lib.arcade.cbYou": "Du",
+    "lib.arcade.cbFoe": "Datorn",
+    "lib.arcade.cbLast": "Sista kortet",
+    "lib.arcade.cbCount": "Summa: {n}",
+    "lib.arcade.cbYouDeal": "Du ger",
+    "lib.arcade.cbFoeDeal": "Datorn ger",
+    "lib.arcade.cbPick": "Välj 2 kort till kribben",
+    "lib.arcade.cbCrib": "Kribb",
+    "lib.arcade.cbYourHand": "Din hand",
+    "lib.arcade.cbFoeHand": "Datorns hand",
+    "lib.arcade.cbStarter": "Startkort",
+    "lib.arcade.cbZero": "0 poäng",
+    "lib.arcade.cbPlayed": "Spelade",
+    "lib.arcade.cbToCrib": "Lägg i kribben",
+    "lib.arcade.cbNext": "Fortsätt",
+    "lib.arcade.cbHand": "Hand"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Ultimat tre-i-rad",
       "desc": "Tre-i-rad över 9 små brädor: rutan du väljer avgör var din motståndare måste spela; mot datorn i 10 nivåer."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Slå bollen förbi datorn; först till 5 poäng vinner. 10 nivåer med en allt snabbare och skarpare motståndare."
+    },
+    "space-shooter": {
+      "name": "Rymdskjutare",
+      "desc": "Styr ditt skepp, skjut ner fiendeskepp och undvik deras eld; 10 nivåer med större vågor, motangrepp och tuffare fiender."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Vrid, ge gas och skjut för att slå sönder rymdstenarna; stora stenar delar sig i mindre. 10 nivåer med fler och snabbare stenar."
+    },
+    "maze": {
+      "name": "Labyrint",
+      "desc": "Hitta ut ur labyrinten innan tiden tar slut; 10 nivåer från små till stora labyrinter, med dimma på högre nivåer."
+    },
+    "road-cross": {
+      "name": "Korsa vägen (som Frogger)",
+      "desc": "Hoppa grodan över trafikerade vägar och floder med flytande stockar för att ta dig hem 3 gånger; 10 nivåer med snabbare trafik och en flod på högre nivåer."
+    },
+    "flappy": {
+      "name": "Flappy Bird-liknande spel",
+      "desc": "Tryck för att flaxa och flyg genom luckorna mellan rören; 10 nivåer med smalare luckor och stigande fart."
+    },
+    "runner": {
+      "name": "Dino-löparen",
+      "desc": "Hoppa över kaktusar och ducka under fåglar; spring tillräckligt långt för att klara var och en av de 10 nivåerna medan farten hela tiden ökar."
+    },
+    "whack-a-mole": {
+      "name": "Klubba mullvadar",
+      "desc": "Klubba mullvadarna som dyker upp ur hålen innan tiden går ut och undvik bomberna; 10 nivåer från långsamt till mycket snabbt."
+    },
+    "simon": {
+      "name": "Simon (färgminne)",
+      "desc": "Kom ihåg och upprepa följden av färger och ljud; längre följder över 10 nivåer, med 6 knappar från nivå 7."
+    },
+    "aim-trainer": {
+      "name": "Siktträning",
+      "desc": "Träffa målen som dyker upp slumpmässigt och försvinner snabbt; målen krymper över 10 nivåer, och din reaktionstid mäts."
+    },
+    "quick-math": {
+      "name": "Snabbmatte",
+      "desc": "Räkna addition, subtraktion, multiplikation och division i huvudet under tidspress; 10 nivåer från enkla summor till uttryck."
+    },
+    "reaction": {
+      "name": "Reaktionstest",
+      "desc": "Klicka i samma ögonblick som skärmen blir grön; ditt snitt över 5 omgångar måste klara varje nivås gräns, som blir tuffare över 10 nivåer."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Så frön runt groparna, ta motståndarens frön och få extra drag när du landar i ditt förråd; spela mot datorn över 10 nivåer från lätt till svårt."
+    },
+    "snakes-ladders": {
+      "name": "Ormar och stegar",
+      "desc": "Kasta tärningen från ruta 1 till 100, klättra uppför stegar, undvik ormar och nå mållinjen före dina motståndare; 10 nivåer."
+    },
+    "nine-mens-morris": {
+      "name": "Nio mäns morris",
+      "desc": "Placera, flytta och flyg med dina pjäser för att få tre i rad och ta bort motståndarens pjäser; spela mot datorn över 10 nivåer."
+    },
+    "battleship": {
+      "name": "Sänka skepp",
+      "desc": "Hitta och sänk datorns flotta på ett 10x10-rutnät innan den sänker din; 10 nivåer där datorn räknar ut mer och mer."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (kalebass, krabba, fisk, räka)",
+      "desc": "Traditionellt vietnamesiskt tärningsspel: satsa virtuella mynt på djuren och skaka tre tärningar; nå målet i mynt över 10 nivåer (inga riktiga pengar)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Satsa på Spelare, Bank eller Oavgjort med kort som delas enligt standardreglerna, med virtuella mynt; nå målet i mynt över 10 nivåer (inga riktiga pengar)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (trekortsspel)",
+      "desc": "Jämför händer med 3 kort mot givaren: tretal, tre klädda kort, sedan 9 poäng ner till 0; virtuella mynt, 10 nivåer, inga riktiga pengar."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Markera de uppropade numren på din 5x5-bricka och ropa BINGO före datormotståndarna; numren ropas allt snabbare över 10 nivåer."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (fem tärningar)",
+      "desc": "Kasta fem tärningar, behåll de bra och fyll 13 poängrutor; nå målpoängen över 10 nivåer."
+    },
+    "crazy-eights": {
+      "name": "Åttor (Crazy Eights)",
+      "desc": "Matcha färg eller valör, åttor byter färg; bli av med dina kort före 1 till 3 datormotståndare över 10 nivåer."
+    },
+    "car-race": {
+      "name": "Bilrace – väja",
+      "desc": "Byt fil för att undvika bilarna framför och kör hela sträckan; 10 nivåer med fler filer och snabbare trafik."
+    },
+    "sky-jump": {
+      "name": "Himlahopp",
+      "desc": "Studsa från plattform till plattform för att klättra så högt du kan utan att falla; 10 nivåer med glesare plattformar, rörliga och sköra sådana."
+    },
+    "gold-miner": {
+      "name": "Guldgrävare",
+      "desc": "Släpp kroken för att hala in guld och diamanter, undvik tunga stenar och nå målsumman inom 60 sekunder; 10 nivåer."
+    },
+    "fruit-slice": {
+      "name": "Frukthuggning",
+      "desc": "Svep för att skiva frukten som flyger upp och undvik bomberna; 10 nivåer med mer frukt och fler bomber."
+    },
+    "basketball": {
+      "name": "Basketskott",
+      "desc": "Dra och släpp för att skjuta bollen i korgen inom ett begränsat antal skott; 10 nivåer, med rörlig korg från nivå 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubbelskjutare",
+      "desc": "Skjut bubblor för att koppla ihop 3 eller fler av samma färg och spräck dem, och rensa alla innan de når botten; 10 nivåer med fler färger."
+    },
+    "dot-chase": {
+      "name": "Prickjakt",
+      "desc": "Ät alla prickar i labyrinten medan du undviker spökena som jagar dig; 10 nivåer med fler och smartare spöken."
+    },
+    "kakuro": {
+      "name": "Kakuro (korssummor)",
+      "desc": "Fyll de vita rutorna med siffrorna 1–9 så att varje serie summerar till sin ledtråd utan upprepningar; 10 nivåer, rutnät från 5x5 till 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Fyll rutnätet utan upprepningar i rader eller kolumner så att varje grupp ger sitt mål med sin operation; 10 nivåer, rutnät från 3x3 till 6x6."
+    },
+    "word-guess": {
+      "name": "Ordgissning (Wordle-stil)",
+      "desc": "Gissa det hemliga engelska ordet med gröna, gula och grå ledtrådar; 10 nivåer med ord på 4–6 bokstäver och färre försök."
+    },
+    "hangman": {
+      "name": "Hänga gubbe",
+      "desc": "Gissa det engelska ordet en bokstav i taget innan du får slut på felgissningar; 10 nivåer med längre ord och färre felgissningar."
+    },
+    "word-scramble": {
+      "name": "Ordpussel (anagram)",
+      "desc": "Ordna om blandade bokstäver till ett engelskt ord innan tiden går ut; 10 nivåer, 5 ord per nivå."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Lägg brickor mot någon av kedjans ändar och bli av med dina brickor före datorn; 10 nivåer där datorn blir smartare."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Undvik hjärter och spader dam i ett kortspel för fyra; lägre poäng är bättre; 10 nivåer mot smartare datorspelare."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuella marker)",
+      "desc": "Heads-up-poker mot datorn med virtuella marker: lägg dig, syna eller höj, och vinn när datorn får slut på marker; 10 nivåer, inga riktiga pengar."
+    },
+    "n-back": {
+      "name": "N-back-minne",
+      "desc": "Titta på den upplysta rutan och tryck på Match när den är densamma som för N steg sedan; 10 nivåer med N upp till 4."
+    },
+    "cookie-clicker": {
+      "name": "Kakklickaren",
+      "desc": "Klicka för att baka kakor, köp hjälpare som bakar automatiskt och nå målet inom 2 minuter; 10 nivåer."
+    },
+    "tile-connect": {
+      "name": "Brickparning (Onet-stil)",
+      "desc": "Förbind matchande brickor med en bana med högst två svängar och rensa brädet innan tiden tar slut; 10 nivåer, större brädor."
+    },
+    "jigsaw": {
+      "name": "Bildpussel",
+      "desc": "Byt plats på de blandade bitarna för att bygga om bilden; 10 nivåer från 3x3 till 6x6 bitar."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Dra tillbaka och släpp för att putta bollen i hålet inom slaggränsen; 10 banor med väggar och sand."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Kasta tärningarna, kapplöpa hem med dina pjäser och ta ut dem före datorn, och slå ut dess ensamma pjäser på vägen; 10 nivåer."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Thirteen)",
+      "desc": "Det vietnamesiska kortspelet för fyra där man blir av med sina kort: spela enstaka kort, par, följder och fyrtal för att tömma handen först; 10 nivåer."
+    },
+    "tower-defense": {
+      "name": "Tornförsvar",
+      "desc": "Bygg och uppgradera torn längs stigen för att stoppa varje våg av fiender; 10 nivåer på tre olika kartor."
+    },
+    "color-by-number": {
+      "name": "Måla efter nummer",
+      "desc": "Måla varje ruta med färgen som matchar dess nummer för att avslöja bilden; 10 bilder med fler färger varje gång."
+    },
+    "yukon": {
+      "name": "Yukon-patiens",
+      "desc": "Klondike utan talong: flytta vilket uppvänt kort som helst tillsammans med allt ovanpå det; 10 nivåer, färre kort uppvända ju längre du kommer."
+    },
+    "chinese-checkers": {
+      "name": "Kinaschack",
+      "desc": "Stjärnformat hoppa-och-gå-spel mot datorn: flytta alla 10 pjäser till det motsatta hörnet först; 10 nivåer."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (kinesisk poker)",
+      "desc": "Ordna 13 kort i tre händer om 5, 5 och 3 kort och slå datorn; 5 rundor per nivå, 10 nivåer."
+    },
+    "phom": {
+      "name": "Phỏm (vietnamesisk rummy)",
+      "desc": "Vietnamesisk rummy för två mot datorn: dra eller ta ett kastat kort, bilda kombinationer och gå ut; lägst poäng på överblivna kort vinner; 10 nivåer."
+    },
+    "shogi": {
+      "name": "Shogi (japansk schack)",
+      "desc": "Spela shogi mot datorn: placera tagna pjäser, befordra och schackmatta kungen; 10 nivåer med ångra."
+    },
+    "janggi": {
+      "name": "Janggi (koreansk schack)",
+      "desc": "Spela koreansk schack mot datorn: palatsets diagonaler, kanonhopp över en pjäs, elefanter i tre steg; 10 nivåer med ångra."
+    },
+    "pinball": {
+      "name": "Flipper",
+      "desc": "Flippa vänster och höger för att hålla bollen i spel, träffa bumperna och nå målpoängen innan dina 3 bollar tar slut; 10 nivåer."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage för två mot datorn: kribb, pegging till 31, räkna händer, race till 61 poäng; 10 nivåer."
     }
   },
   "s": {

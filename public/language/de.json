@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Verbleibende Karten: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} passt.",
     "lib.arcade.tlBad": "Die gewählten Karten ergeben keine gültige Kombination.",
-    "lib.arcade.tlLow": "Diese Kombination ist nicht hoch genug, um den Tisch zu schlagen."
+    "lib.arcade.tlLow": "Diese Kombination ist nicht hoch genug, um den Tisch zu schlagen.",
+    "lib.arcade.note.td": "Tippe auf ein leeres Feld (nicht auf den Weg), um einen Schussturm zu bauen, der Gold kostet; tippe einen Turm erneut an, um ihn zu verbessern (bis Stufe 5). Die Türme schießen automatisch auf den Gegner, der in Reichweite am weitesten vorgedrungen ist. Besiege Gegner, um mehr Gold zu verdienen; wenn 15 Gegner das Ziel erreichen, verlierst du. Überstehe alle Wellen, um das Level zu schaffen.",
+    "lib.arcade.tdInfo": "Gold: {g} · Welle {w}/{t}",
+    "lib.arcade.tdCost": "Turm: {n}",
+    "lib.arcade.note.colorNum": "Jedes Feld hat eine Zahl, die zu einer Farbe der Palette passt. Wähle eine Farbe und tippe dann auf die Felder mit dieser Zahl, um sie zu färben; mit der falschen Farbe passiert nichts. Male alle Felder richtig aus, um das Bild fertigzustellen. Höhere Level haben mehr Farben.",
+    "lib.arcade.cnWrong": "Falsche Farbe – achte auf die Zahl im Feld.",
+    "lib.arcade.note.yukon": "Wie Klondike, aber ohne Stapel: Jede aufgedeckte Karte kann mitsamt allen Karten darauf verschoben werden, auch wenn sie keine Reihenfolge bilden; nur die erste Karte muss zur Zielspalte passen (absteigend, abwechselnd Rot und Schwarz; ein König kommt auf eine leere Spalte). Baue alle 52 Karten vom Ass bis zum König auf den vier Ablagen auf. Niedrige Level beginnen mit mehr bereits aufgedeckten Karten.",
+    "lib.arcade.yukonFree": "Verdeckte Karten: {n}",
+    "lib.arcade.note.chinesechk": "Du spielst die blauen Figuren in der rechten Ecke; bringe alle 10 in die gegenüberliegende linke Ecke, bevor es der Computer tut. In jedem Zug bewegst du eine Figur: ein Schritt auf ein leeres Nachbarloch oder ein Sprung über eine beliebige Figur auf das leere Loch direkt dahinter – und du kannst beliebig oft weiterspringen. Tippe auf eine deiner Figuren und dann auf ein grünes Loch, um zu ziehen.",
+    "lib.arcade.ccTurn": "Du bist dran · Zug {n}",
+    "lib.arcade.ccDraw": "Keine Züge mehr – Unentschieden.",
+    "lib.arcade.note.maubinh": "Du und der Computer bekommt je 13 Karten und ordnet sie in 3 Blätter: ein hinteres Blatt mit 5 Karten, ein mittleres mit 5 Karten und ein vorderes mit 3 Karten. Das hintere Blatt muss mindestens so stark sein wie das mittlere, und das mittlere mindestens so stark wie das vordere; sonst ist deine Anordnung ungültig und du verlierst die ganze Runde. Tippe auf eine Karte und dann auf die Reihe, in die sie gehört (tippe auf eine gelegte Karte, um sie zurückzunehmen). Jedes gewonnene Blatt bringt 1 Punkt; gewinnst du alle 3, gibt es 6. Spielt 5 Runden – eine positive Gesamtsumme schafft das Level. Das vordere Blatt kann nur hohe Karte, Paar oder Drilling sein.",
+    "lib.arcade.mbHigh": "Hohe Karte",
+    "lib.arcade.mbPair": "Paar",
+    "lib.arcade.mbTwoPair": "Zwei Paare",
+    "lib.arcade.mbTrips": "Drilling",
+    "lib.arcade.mbStraight": "Straße",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full House",
+    "lib.arcade.mbQuads": "Vierling",
+    "lib.arcade.mbSflush": "Straight Flush",
+    "lib.arcade.mbBack": "Hinteres Blatt",
+    "lib.arcade.mbMid": "Mittleres Blatt",
+    "lib.arcade.mbFront": "Vorderes Blatt",
+    "lib.arcade.mbFoe": "Computer",
+    "lib.arcade.mbYou": "Du",
+    "lib.arcade.mbFoul": "Ungültig!",
+    "lib.arcade.mbFoeFoul": "Computer ungültig!",
+    "lib.arcade.mbConfirm": "Karten zeigen",
+    "lib.arcade.mbReset": "Leeren",
+    "lib.arcade.mbHand": "Deine Hand",
+    "lib.arcade.mbRound": "Runde {a}/{b}",
+    "lib.arcade.mbTotal": "Gesamt: {n}",
+    "lib.arcade.mbFinish": "Beenden",
+    "lib.arcade.mbNext": "Nächste Runde",
+    "lib.arcade.mbDraw": "Punktgleich – spielt noch einmal.",
+    "lib.arcade.mbAutoMsg": "Hier ist ein Anordnungsvorschlag. Du kannst ihn ändern, bevor du die Karten zeigst.",
+    "lib.arcade.note.phom": "Zwei Spieler; jeder erhält 9 Karten (wer beginnt, bekommt 10). Ein Satz sind 3 oder mehr Karten gleichen Rangs oder 3 oder mehr aufeinanderfolgende Karten derselben Farbe (das Ass ist nur niedrig). Ziehe in deinem Zug eine Karte vom Stapel oder nimm die gerade abgeworfene Karte des Gegners, wenn sie mit deiner Hand einen Satz bildet (eine genommene Karte muss behalten werden), und wirf dann eine Karte ab. Hat jeder Spieler 4 Karten abgeworfen, endet die Runde, und wer die niedrigere Summe an Karten außerhalb von Sätzen hat (Ass = 1 … König = 13), gewinnt. Gehören nach einem Abwurf alle deine Karten zu Sätzen, gehst du aus („U“) und gewinnst sofort. Grün umrandete Karten gehören zu deinen besten Sätzen.",
+    "lib.arcade.pmDraw": "Ziehen",
+    "lib.arcade.pmEat": "Abwurf nehmen",
+    "lib.arcade.pmThrow": "Abwerfen",
+    "lib.arcade.pmFoeAte": "Der Computer hat deine Karte genommen.",
+    "lib.arcade.pmFoeU": "Der Computer ist ausgegangen!",
+    "lib.arcade.pmTurn": "Zug {a}/{b}",
+    "lib.arcade.pmLeft": "Außerhalb von Sätzen: {n}",
+    "lib.arcade.pmDeck": "Stapel: {n}",
+    "lib.arcade.pmFoeHand": "Hand des Computers",
+    "lib.arcade.pmFoeDisc": "Abwürfe des Computers",
+    "lib.arcade.pmFoeEaten": "Computer nahm",
+    "lib.arcade.pmMyDisc": "Deine Abwürfe",
+    "lib.arcade.pmAte": "Du hast diese Karte genommen – behalte sie in einem Satz.",
+    "lib.arcade.pmKeep": "Eine genommene Karte muss behalten werden – wirf eine andere ab.",
+    "lib.arcade.pmU": "Ausgegangen! Du gewinnst sofort.",
+    "lib.arcade.pmYou": "Du",
+    "lib.arcade.pmFoe": "Computer",
+    "lib.arcade.pmDraw2": "Punktgleich.",
+    "lib.arcade.note.shogi": "Shogi ist japanisches Schach. Du spielst die untere Seite und ziehst zuerst; die Figuren des Computers zeigen in die andere Richtung. Geschlagene Figuren kommen in deine Hand und können statt eines Zuges auf ein beliebiges leeres Feld gesetzt werden (nie ein Bauer in eine Linie, in der du schon einen nicht umgewandelten Bauern hast, und nie eine Figur auf eine Reihe, in der sie sich nicht mehr bewegen könnte). Eine Figur, die in die letzten drei Reihen des Gegners, aus ihnen heraus oder innerhalb von ihnen zieht, darf umgewandelt werden (außer König und Gold); die Umwandlung ist Pflicht, wenn die Figur sonst keine Züge mehr hätte. Setze den gegnerischen König matt, um zu gewinnen. Kanji: 歩 Bauer, 香 Lanze, 桂 Springer, 銀 Silber, 金 Gold, 角 Läufer, 飛 Turm, 玉 König; と, 馬, 竜 und andere rote Figuren sind umgewandelt.",
+    "lib.arcade.sgPromote": "Umwandeln",
+    "lib.arcade.sgKeep": "Nicht umwandeln",
+    "lib.arcade.sgCheck": "Du stehst im Schach!",
+    "lib.arcade.sgWin": "Schachmatt – du gewinnst.",
+    "lib.arcade.sgLose": "Du wurdest schachmatt gesetzt.",
+    "lib.arcade.sgAskPromote": "Diese Figur umwandeln?",
+    "lib.arcade.note.janggi": "Janggi ist koreanisches Schach. Du spielst die blauen Figuren unten und ziehst zuerst. Anders als beim Xiangqi gibt es keinen Fluss, und beide Paläste haben diagonale Linien. General und Wächter ziehen einen Schritt entlang der Palastlinien (auch diagonal); der Wagen gleitet und schlägt auch entlang der Palastdiagonalen; die Kanone muss genau eine Figur überspringen (keine andere Kanone), um zu ziehen oder zu schlagen, und kann keine Kanone schlagen; das Pferd geht einen Punkt gerade und dann einen diagonal, der Elefant einen gerade und dann zwei diagonal, beide sind blockiert, wenn eine Figur im Weg steht; Soldaten ziehen vorwärts oder seitwärts und im gegnerischen Palast auch diagonal vorwärts. Die beiden Generäle dürfen sich nie gegenüberstehen. Setze den gegnerischen General matt, um zu gewinnen. Der Computer passt nie.",
+    "lib.arcade.jgCheck": "Du stehst im Schach!",
+    "lib.arcade.jgWin": "Schachmatt – du gewinnst.",
+    "lib.arcade.jgLose": "Du wurdest schachmatt gesetzt.",
+    "lib.arcade.note.pinball": "Drücke Leertaste oder Pfeil nach oben bzw. tippe auf das Spielfeld, um die Kugel abzuschießen. Halte Links (oder berühre die linke Spielfeldhälfte), um den linken Flipper zu heben, und Rechts (oder die rechte Hälfte) für den rechten – tippe lieber im Rhythmus, statt zu halten. Runde Bumper bringen je 100 Punkte. Du hast 3 Kugeln; erreiche die Zielpunktzahl, bevor sie aufgebraucht sind, um das Level zu schaffen.",
+    "lib.arcade.pinBalls": "Kugeln: {n} · Ziel: {t}",
+    "lib.arcade.note.cribbage": "Cribbage für zwei Spieler, ein Rennen bis 61 Punkte. In jeder Runde erhältst du 6 Karten und legst 2 verdeckt in den Crib (er gehört dem Geber). Eine Starterkarte wird aufgedeckt. Dann legt ihr abwechselnd Karten offen, wobei die laufende Summe nie über 31 liegen darf: 15 oder 31 zu erreichen bringt 2 Punkte, die letzte Karte zu wiederholen bringt 2/6/12, eine Reihe aus 3 oder mehr Karten (in beliebiger Reihenfolge) bringt ihre Länge, und wenn niemand mehr legen kann, erhält der letzte Spieler 1 Punkt („Go“). Danach wird jede Hand aus 4 Karten mit dem Starter gezählt: jede Kombination mit der Summe 15 bringt 2, jedes Paar 2, eine Reihe ab 3 Karten ihre Länge, vier Karten einer Farbe 4 (5 mit dem Starter) und ein Bube in der Farbe des Starters 1. Zuerst zählt der Nicht-Geber, dann zählt der Geber seine Hand und den Crib.",
+    "lib.arcade.cbFifteen": "Fünfzehn",
+    "lib.arcade.cbPair": "Paar",
+    "lib.arcade.cbRun": "Reihe",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Bube passend zum Starter",
+    "lib.arcade.cbHeels": "Bube als Starter",
+    "lib.arcade.cbYou": "Du",
+    "lib.arcade.cbFoe": "Computer",
+    "lib.arcade.cbLast": "Letzte Karte",
+    "lib.arcade.cbCount": "Summe: {n}",
+    "lib.arcade.cbYouDeal": "Du gibst",
+    "lib.arcade.cbFoeDeal": "Computer gibt",
+    "lib.arcade.cbPick": "Wähle 2 Karten für den Crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Deine Hand",
+    "lib.arcade.cbFoeHand": "Hand des Computers",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 Punkte",
+    "lib.arcade.cbPlayed": "Gespielt",
+    "lib.arcade.cbToCrib": "In den Crib legen",
+    "lib.arcade.cbNext": "Weiter",
+    "lib.arcade.cbHand": "Hand"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Dreizehn)",
       "desc": "Das vietnamesische Kartenspiel zum Ablegen für vier: Spiele Einzelkarten, Paare, Straßen und Vierlinge, um zuerst keine Karten mehr zu haben; 10 Levels."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Baue und verbessere Türme entlang des Wegs, um jede Gegnerwelle aufzuhalten; 10 Level auf drei verschiedenen Karten."
+    },
+    "color-by-number": {
+      "name": "Malen nach Zahlen",
+      "desc": "Male jedes Feld in der Farbe seiner Zahl aus und enthülle das Bild; 10 Bilder mit jeweils mehr Farben."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike ohne Stapel: Verschiebe jede aufgedeckte Karte mit allem, was darauf liegt; 10 Level, mit jedem weniger aufgedeckte Karten."
+    },
+    "chinese-checkers": {
+      "name": "Chinesische Dame",
+      "desc": "Sternförmiges Schritt-und-Sprung-Spiel gegen den Computer: Bringe zuerst alle 10 Figuren in die gegenüberliegende Ecke; 10 Level."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Chinesisches Poker)",
+      "desc": "Ordne 13 Karten in drei Blätter mit 5, 5 und 3 Karten und schlage den Computer; 5 Runden pro Level, 10 Level."
+    },
+    "phom": {
+      "name": "Phom (Vietnamesisches Rommé)",
+      "desc": "Vietnamesisches Rommé für zwei gegen den Computer: Ziehe oder nimm einen Abwurf, bilde Sätze und gehe aus; die niedrigste Restpunktzahl gewinnt; 10 Level."
+    },
+    "shogi": {
+      "name": "Shogi (Japanisches Schach)",
+      "desc": "Spiele Shogi gegen den Computer: Setze geschlagene Figuren ein, wandle um und setze den König matt; 10 Level mit Zug zurück."
+    },
+    "janggi": {
+      "name": "Janggi (Koreanisches Schach)",
+      "desc": "Spiele koreanisches Schach gegen den Computer: Palastdiagonalen, Kanonensprünge über genau eine Figur, Elefanten mit drei Schritten; 10 Level mit Zug zurück."
+    },
+    "pinball": {
+      "name": "Flipper (Pinball)",
+      "desc": "Betätige links und rechts die Flipper, halte die Kugel im Spiel, triff die Bumper und erreiche die Zielpunktzahl, bevor deine 3 Kugeln aufgebraucht sind; 10 Level."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage für zwei gegen den Computer: Crib, Pegging bis 31, Hände zählen, Rennen bis 61 Punkte; 10 Level."
     }
   },
   "s": {

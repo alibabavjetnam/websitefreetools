@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Megmaradt lapok: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} passzol.",
     "lib.arcade.tlBad": "A kijelölt lapok nem alkotnak érvényes kombinációt.",
-    "lib.arcade.tlLow": "Ez a kombináció nem elég magas az asztalon lévő leütéséhez."
+    "lib.arcade.tlLow": "Ez a kombináció nem elég magas az asztalon lévő leütéséhez.",
+    "lib.arcade.note.td": "Koppints egy üres mezőre (nem az útra), hogy lövőtornyot építs, ami aranyba kerül; koppints újra a toronyra a fejlesztéshez (legfeljebb 5. szintig). A tornyok automatikusan arra az ellenségre lőnek, amelyik a hatótávon belül a legtovább jutott. Győzd le az ellenségeket, hogy több aranyat szerezz; ha 15 ellenség eléri a végét, vesztettél. Élj túl minden hullámot a szint teljesítéséhez.",
+    "lib.arcade.tdInfo": "Arany: {g} · {w}/{t}. hullám",
+    "lib.arcade.tdCost": "Torony: {n}",
+    "lib.arcade.note.colorNum": "Minden mezőn van egy szám, amely a paletta egyik színének felel meg. Válassz egy színt, majd koppints az ilyen számú mezőkre a kifestésükhöz; rossz színnel semmi sem színeződik. Fesd ki helyesen az összes mezőt a kép befejezéséhez. A magasabb szinteken több szín van.",
+    "lib.arcade.cnWrong": "Rossz szín — nézd meg a mezőn lévő számot.",
+    "lib.arcade.note.yukon": "Mint a Klondike, de pakli nélkül: bármelyik felfordított lap áthelyezhető a rajta lévő összes lappal együtt, akkor is, ha nem sorrendben vannak; csak az első lapnak kell illeszkednie a céloszlopra (csökkenő sorrend, váltakozva piros és fekete; király üres oszlopba mehet). Építsd fel mind az 52 lapot a négy alapra ásztól királyig. Az alacsony szinteken több lap indul felfordítva.",
+    "lib.arcade.yukonFree": "Lefordított lapok: {n}",
+    "lib.arcade.note.chinesechk": "Te a jobb oldali sarokban lévő kék bábukat játszod; mind a 10-et told át a szemközti bal oldali sarokba, mielőtt a gép megteszi. Minden körben egy bábut mozgatsz: lépj egy szomszédos üres lyukba, vagy ugorj át bármelyik bábun a mögötte lévő üres lyukba, és ugorhatsz egymás után ahányszor csak akarsz. Koppints az egyik bábudra, majd egy zöld lyukra a lépéshez.",
+    "lib.arcade.ccTurn": "A te köröd · {n}. kör",
+    "lib.arcade.ccDraw": "Elfogytak a körök — döntetlen.",
+    "lib.arcade.note.maubinh": "Te és a gép is 13 lapot kaptok, és 3 kézbe rendezitek: 5 lapos hátsó, 5 lapos középső és 3 lapos első kézbe. A hátsó kéz legalább olyan erős legyen, mint a középső, a középső pedig legalább olyan erős, mint az első; különben érvénytelen a felállásod, és az egész kört elveszted. Koppints egy lapra, majd a sorra, ahová kerül (a lerakott lapra koppintva visszaveheted). Minden megnyert kéz 1 pontot ér; mind a 3 megnyerése 6 pont. Játssz 5 kört — a pozitív összeg teljesíti a szintet. Az első kéz csak magas lap, pár vagy drill lehet.",
+    "lib.arcade.mbHigh": "Magas lap",
+    "lib.arcade.mbPair": "Pár",
+    "lib.arcade.mbTwoPair": "Két pár",
+    "lib.arcade.mbTrips": "Drill",
+    "lib.arcade.mbStraight": "Sor",
+    "lib.arcade.mbFlush": "Szín",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Póker",
+    "lib.arcade.mbSflush": "Színsor",
+    "lib.arcade.mbBack": "Hátsó kéz",
+    "lib.arcade.mbMid": "Középső kéz",
+    "lib.arcade.mbFront": "Első kéz",
+    "lib.arcade.mbFoe": "Gép",
+    "lib.arcade.mbYou": "Te",
+    "lib.arcade.mbFoul": "Érvénytelen felállás!",
+    "lib.arcade.mbFoeFoul": "A gép felállása érvénytelen!",
+    "lib.arcade.mbConfirm": "Lapok megmutatása",
+    "lib.arcade.mbReset": "Törlés",
+    "lib.arcade.mbHand": "A te kezed",
+    "lib.arcade.mbRound": "{a}/{b}. kör",
+    "lib.arcade.mbTotal": "Összesen: {n}",
+    "lib.arcade.mbFinish": "Befejezés",
+    "lib.arcade.mbNext": "Következő kör",
+    "lib.arcade.mbDraw": "Pontegyenlőség — játssz újra.",
+    "lib.arcade.mbAutoMsg": "Itt egy javasolt elrendezés. A lapok megmutatása előtt módosíthatod.",
+    "lib.arcade.note.phom": "Két játékos; mindenki 9 lapot kap (aki kezd, 10-et). Egy kombináció 3 vagy több azonos értékű lap, vagy 3 vagy több egymást követő, azonos színű lap (az ász csak alacsony). A körödben húzz egy lapot a pakliból, vagy vedd fel az ellenfeled által épp eldobott lapot, ha kombinációt alkot a kezeddel (a felvett lapot meg kell tartani), majd dobj el egy lapot. Amikor mindkét játékos 4 lapot eldobott, a kör véget ér, és az nyer, akinek kisebb a kombináción kívüli lapok összege (ász = 1 … király = 13). Ha eldobás után minden lapod kombinációban van, kiszállsz („U”), és azonnal nyersz. A zöld szegélyű lapok a legjobb kombinációidban vannak.",
+    "lib.arcade.pmDraw": "Húzás",
+    "lib.arcade.pmEat": "Eldobott lap felvétele",
+    "lib.arcade.pmThrow": "Eldobás",
+    "lib.arcade.pmFoeAte": "A gép felvette a lapodat.",
+    "lib.arcade.pmFoeU": "A gép kiszállt!",
+    "lib.arcade.pmTurn": "{a}/{b}. kör",
+    "lib.arcade.pmLeft": "Kombináción kívül: {n}",
+    "lib.arcade.pmDeck": "Pakli: {n}",
+    "lib.arcade.pmFoeHand": "A gép keze",
+    "lib.arcade.pmFoeDisc": "A gép eldobott lapjai",
+    "lib.arcade.pmFoeEaten": "A gép felvette",
+    "lib.arcade.pmMyDisc": "Az eldobott lapjaid",
+    "lib.arcade.pmAte": "Felvetted ezt a lapot — tartsd meg egy kombinációban.",
+    "lib.arcade.pmKeep": "A felvett lapot meg kell tartani — dobj el másikat.",
+    "lib.arcade.pmU": "Kiszálltál! Azonnal nyersz.",
+    "lib.arcade.pmYou": "Te",
+    "lib.arcade.pmFoe": "Gép",
+    "lib.arcade.pmDraw2": "Pontegyenlőség.",
+    "lib.arcade.note.shogi": "A shogi japán sakk. Te az alsó oldalt játszod, és te lépsz először; a gép bábui ellenkező irányba néznek. A leütött bábuk a kezedbe kerülnek, és lépés helyett bármelyik üres mezőre letehetők (soha nem gyalog olyan oszlopba, ahol már van nem előléptetett gyalogod, és soha nem olyan sorba, ahol a bábu nem tudna többé lépni). Az a bábu, amely az ellenfél utolsó három sorába, onnan ki vagy azon belül lép, előléphet (a király és az arany kivételével); ha a bábunak nem lenne több lépése, az előléptetés kötelező. Mattold az ellenséges királyt a győzelemhez. Kandzsik: 歩 gyalog, 香 lándzsa, 桂 ló, 銀 ezüst, 金 arany, 角 futó, 飛 bástya, 玉 király; a と, 馬, 竜 és más piros bábuk előléptetettek.",
+    "lib.arcade.sgPromote": "Előléptetés",
+    "lib.arcade.sgKeep": "Nincs előléptetés",
+    "lib.arcade.sgCheck": "Sakkban vagy!",
+    "lib.arcade.sgWin": "Matt — te nyertél.",
+    "lib.arcade.sgLose": "Mattot kaptál.",
+    "lib.arcade.sgAskPromote": "Előlépteted ezt a bábut?",
+    "lib.arcade.note.janggi": "A janggi koreai sakk. Te a lent lévő kék bábukat játszod, és te lépsz először. A xiangqival ellentétben nincs folyó, és mindkét palotában átlós vonalak vannak. A tábornok és az őrök egyet lépnek a palota vonalai mentén (az átlókat is beleértve); a szekér a palota átlói mentén is csúszik és üt; az ágyúnak pontosan egy bábun (nem másik ágyún) kell átugrania a lépéshez vagy az üséshez, és ágyút nem üthet; a ló egyet lép egyenesen, majd egyet átlósan, az elefánt egyet egyenesen, majd kettőt átlósan, mindkettőt blokkolja az útban lévő bábu; a katonák előre vagy oldalra lépnek, az ellenséges palotában átlósan előre is. A két tábornok soha nem nézhet egymással szembe. Mattold az ellenséges tábornokot a győzelemhez. A gép sosem passzol.",
+    "lib.arcade.jgCheck": "Sakkban vagy!",
+    "lib.arcade.jgWin": "Matt — te nyertél.",
+    "lib.arcade.jgLose": "Mattot kaptál.",
+    "lib.arcade.note.pinball": "A labda kilövéséhez nyomd meg a szóközt vagy a felfelé nyilat, vagy koppints az asztalra. Tartsd nyomva a Balra gombot (vagy érintsd az asztal bal felét) a bal ütő felemeléséhez, a Jobbra gombot (vagy a jobb felet) a jobb ütőhöz — tartás helyett koppints ritmusban. A kerek ütközők egyenként 100 pontot érnek. 3 labdád van; érd el a célpontszámot, mielőtt elfogynak, és teljesíted a szintet.",
+    "lib.arcade.pinBalls": "Labdák: {n} · Cél: {t}",
+    "lib.arcade.note.cribbage": "Kétszemélyes cribbage, verseny 61 pontig. Minden osztásnál 6 lapot kapsz, és 2-t lefordítva a cribbe teszel (az az osztóé). Felfordítanak egy kezdőlapot. Ezután felváltva kijátsszátok a lapokat, a futó összeg soha nem lehet több 31-nél: a 15 vagy 31 elérése 2 pont, az előző lappal egyező lap 2/6/12, a 3 vagy több lapos sor (bármilyen sorrendben) a hosszával megegyező pont, és ha senki sem tud lépni, az utolsó játékos 1 pontot kap („Go”). Ezután minden 4 lapos kezet megszámolnak a kezdőlappal: minden 15 összegű kombináció 2, minden pár 2, a 3+ lapos sor a hossza, négy azonos színű lap 4 (a kezdőlappal 5), a kezdőlap színével egyező bubi 1 pont. Először a nem osztó számol, majd az osztó a saját kezét és a cribet.",
+    "lib.arcade.cbFifteen": "Tizenöt",
+    "lib.arcade.cbPair": "Pár",
+    "lib.arcade.cbRun": "Sor",
+    "lib.arcade.cbFlush": "Szín",
+    "lib.arcade.cbNobs": "A kezdőlap színével egyező bubi",
+    "lib.arcade.cbHeels": "Bubi kezdőlapként",
+    "lib.arcade.cbYou": "Te",
+    "lib.arcade.cbFoe": "Gép",
+    "lib.arcade.cbLast": "Utolsó lap",
+    "lib.arcade.cbCount": "Összesen: {n}",
+    "lib.arcade.cbYouDeal": "Te osztasz",
+    "lib.arcade.cbFoeDeal": "A gép oszt",
+    "lib.arcade.cbPick": "Válassz 2 lapot a cribbe",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "A te kezed",
+    "lib.arcade.cbFoeHand": "A gép keze",
+    "lib.arcade.cbStarter": "Kezdőlap",
+    "lib.arcade.cbZero": "0 pont",
+    "lib.arcade.cbPlayed": "Kijátszva",
+    "lib.arcade.cbToCrib": "Cribbe tesz",
+    "lib.arcade.cbNext": "Tovább",
+    "lib.arcade.cbHand": "Kéz"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tizenhármas)",
       "desc": "A vietnami négyfős kártyajáték, amelyben egyedüli lapokkal, párokkal, sorokkal és pókerekkel kell elsőként kiüríteni a kezedet; 10 szint."
+    },
+    "tower-defense": {
+      "name": "Toronyvédelem",
+      "desc": "Építs és fejlessz tornyokat az út mentén, hogy megállítsd az ellenség minden hullámát; 10 szint három különböző pályán."
+    },
+    "color-by-number": {
+      "name": "Színezés számok szerint",
+      "desc": "Fesd ki minden mezőt a számának megfelelő színnel, hogy megjelenjen a kép; 10 kép, egyre több színnel."
+    },
+    "yukon": {
+      "name": "Yukon pasziánsz",
+      "desc": "Klondike pakli nélkül: bármelyik felfordított lapot mozgathatod a rajta lévőkkel együtt; 10 szint, egyre kevesebb felfordított lappal."
+    },
+    "chinese-checkers": {
+      "name": "Kínai dámajáték",
+      "desc": "Csillag alakú lépkedő-ugrálós játék a gép ellen: told át mind a 10 bábut elsőként a szemközti sarokba; 10 szint."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (kínai póker)",
+      "desc": "Rendezz 13 lapot három, 5, 5 és 3 lapos kézbe, és győzd le a gépet; szintenként 5 kör, 10 szint."
+    },
+    "phom": {
+      "name": "Phom (vietnami römi)",
+      "desc": "Kétszemélyes vietnami römi a gép ellen: húzz vagy végy fel egy eldobott lapot, alkoss kombinációkat és szállj ki; a kevesebb megmaradt pont nyer; 10 szint."
+    },
+    "shogi": {
+      "name": "Shogi (japán sakk)",
+      "desc": "Játssz shogit a gép ellen: tedd le a leütött bábukat, léptess elő, és mattold a királyt; 10 szint visszavonással."
+    },
+    "janggi": {
+      "name": "Janggi (koreai sakk)",
+      "desc": "Játssz koreai sakkot a gép ellen: palotaátlók, ágyúugrás egy bábun át, háromlépéses elefántok; 10 szint visszavonással."
+    },
+    "pinball": {
+      "name": "Flipper",
+      "desc": "Ütögess balra és jobbra, hogy életben tartsd a labdát, találd el az ütközőket, és érd el a célpontszámot, mielőtt elfogy a 3 labdád; 10 szint."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Kétszemélyes cribbage a gép ellen: crib, pegging 31-ig, kezek számolása, verseny 61 pontig; 10 szint."
     }
   },
   "s": {

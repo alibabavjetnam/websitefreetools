@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Cártaí fágtha: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "Téann {p} thar.",
     "lib.arcade.tlBad": "Ní chruthaíonn na cártaí roghnaithe tacar bailí.",
-    "lib.arcade.tlLow": "Níl an tacar seo ard go leor chun an bord a bhualadh."
+    "lib.arcade.tlLow": "Níl an tacar seo ard go leor chun an bord a bhualadh.",
+    "lib.arcade.note.td": "Tapáil ar chearnóg fholamh (ní an cosán) chun túr lámhaigh a thógáil, a chosnaíonn ór; tapáil ar thúr arís chun é a uasghrádú (suas go leibhéal 5). Scaoileann túir go huathoibríoch ar an namhaid is faide imithe laistigh den raon. Buaigh ar naimhde chun níos mó óir a thuilleamh; má shroicheann 15 namhaid an deireadh, caillfidh tú. Mair gach tonn chun an leibhéal a réiteach.",
+    "lib.arcade.tdInfo": "Ór: {g} · Tonn {w}/{t}",
+    "lib.arcade.tdCost": "Túr: {n}",
+    "lib.arcade.note.colorNum": "Tá uimhir ar gach cearnóg a thagann le dath sa phailéad. Roghnaigh dath, ansin tapáil na cearnóga leis an uimhir sin chun iad a phéinteáil; mura bhfuil an dath ceart agat, ní phéinteálfar tada. Péinteáil gach cearnóg i gceart chun an pictiúr a chríochnú. Tá níos mó dathanna sna leibhéil níos airde.",
+    "lib.arcade.cnWrong": "Dath mícheart — seiceáil an uimhir ar an gcearnóg.",
+    "lib.arcade.note.yukon": "Cosúil le Klondike ach gan stoc: is féidir aon chárta aghaidh suas a bhogadh in éineacht le gach cárta atá os a chionn, fiú mura bhfuil siad i seicheamh; ní gá ach don chéad chárta oiriúnú don cholún sprice (ag laghdú, dearg agus dubh ag malartú; téann Rí go colún folamh). Tóg na 52 cárta ar na ceithre bhunsraith ón Ace go dtí an Rí. Tosaíonn na leibhéil íseal le níos mó cártaí aghaidh suas cheana.",
+    "lib.arcade.yukonFree": "Cártaí aghaidh síos: {n}",
+    "lib.arcade.note.chinesechk": "Imríonn tú na píosaí gorma sa chúinne ar dheis; bog na 10 gcinn go léir go dtí an cúinne os coinne ar chlé sula ndéanfaidh an ríomhaire é. Gach casadh bogann tú píosa amháin: tóg céim go poll folamh in aice láimhe, nó léim thar aon phíosa go dtí an poll folamh díreach taobh thiar de, agus lean ort ag léim an oiread uaireanta agus is mian leat. Tapáil ar do phíosa agus ansin ar pholl glas chun bogadh.",
+    "lib.arcade.ccTurn": "Do chas · Casadh {n}",
+    "lib.arcade.ccDraw": "As casadh — comhscór.",
+    "lib.arcade.note.maubinh": "Faigheann tú féin agus an ríomhaire 13 chárta an duine agus socraíonn sibh iad i 3 lámh: lámh chúil de 5 chárta, lámh láir de 5 chárta agus lámh tosaigh de 3 chárta. Caithfidh an lámh chúil a bheith chomh láidir leis an lámh láir ar a laghad, agus an lámh láir chomh láidir leis an lámh tosaigh; ar shlí eile, tá do shocrú neamhbhailí agus caillfidh tú an babhta ar fad. Tapáil cárta, ansin tapáil an tsraith ina dtéann sé (tapáil cárta atá curtha síos chun é a thógáil ar ais). Is fiú 1 phointe gach lámh a bhuaigh tú; is fiú 6 an triúr a bhuachan. Imir 5 bhabhta — réitíonn iomlán dearfach an leibhéal. Ní féidir leis an lámh tosaigh a bheith ach ina chárta ard, ina phéire nó ina thríopla.",
+    "lib.arcade.mbHigh": "Cárta ard",
+    "lib.arcade.mbPair": "Péire",
+    "lib.arcade.mbTwoPair": "Dhá phéire",
+    "lib.arcade.mbTrips": "Tríopla",
+    "lib.arcade.mbStraight": "Reathaí",
+    "lib.arcade.mbFlush": "Sraith",
+    "lib.arcade.mbFull": "Teach lán",
+    "lib.arcade.mbQuads": "Ceathrar",
+    "lib.arcade.mbSflush": "Reathaí sraithe",
+    "lib.arcade.mbBack": "Lámh chúil",
+    "lib.arcade.mbMid": "Lámh láir",
+    "lib.arcade.mbFront": "Lámh tosaigh",
+    "lib.arcade.mbFoe": "Ríomhaire",
+    "lib.arcade.mbYou": "Tusa",
+    "lib.arcade.mbFoul": "Neamhbhailí!",
+    "lib.arcade.mbFoeFoul": "Socrú neamhbhailí ag an ríomhaire!",
+    "lib.arcade.mbConfirm": "Taispeáin na cártaí",
+    "lib.arcade.mbReset": "Glan",
+    "lib.arcade.mbHand": "Do lámh",
+    "lib.arcade.mbRound": "Babhta {a}/{b}",
+    "lib.arcade.mbTotal": "Iomlán: {n}",
+    "lib.arcade.mbFinish": "Críochnaigh",
+    "lib.arcade.mbNext": "An chéad bhabhta eile",
+    "lib.arcade.mbDraw": "Comhscór — imir arís.",
+    "lib.arcade.mbAutoMsg": "Seo socrú molta. Is féidir leat é a athrú sula dtaispeánann tú na cártaí.",
+    "lib.arcade.note.phom": "Beirt imreoirí; faigheann gach duine 9 gcárta (faigheann an té a théann ar dtús 10). Is éard is meld ann 3 chárta nó níos mó den ghrád céanna, nó 3 chárta leanúnacha nó níos mó den chulaith chéanna (ní bhíonn an Ace íseal ach amháin). Ar do chas tarraing cárta ón deic, nó tóg an cárta a chaith d'fhreasatheoir díreach, má dhéanann sé meld le do lámh (caithfear cárta a thóg tú a choinneáil), ansin caith cárta. Nuair a chaith gach imreoir 4 chárta, críochnaíonn an babhta agus buaigh an té a bhfuil an t-iomlán is ísle aige de chártaí gan meld (Ace = 1 … Rí = 13). Má bhíonn do chártaí go léir i meldeanna tar éis caitheamh, téann tú amach (\"U\") agus buaigh tú láithreach. Tá cártaí le imlíne ghlas i do shocrú meld is fearr.",
+    "lib.arcade.pmDraw": "Tarraing",
+    "lib.arcade.pmEat": "Tóg an cárta caite",
+    "lib.arcade.pmThrow": "Caith",
+    "lib.arcade.pmFoeAte": "Thóg an ríomhaire do chárta.",
+    "lib.arcade.pmFoeU": "Chuaigh an ríomhaire amach!",
+    "lib.arcade.pmTurn": "Casadh {a}/{b}",
+    "lib.arcade.pmLeft": "Gan meld: {n}",
+    "lib.arcade.pmDeck": "Deic: {n}",
+    "lib.arcade.pmFoeHand": "Lámh an ríomhaire",
+    "lib.arcade.pmFoeDisc": "Cártaí caite ag an ríomhaire",
+    "lib.arcade.pmFoeEaten": "Thóg an ríomhaire",
+    "lib.arcade.pmMyDisc": "Do chártaí caite",
+    "lib.arcade.pmAte": "Thóg tú an cárta seo — coinnigh i meld é.",
+    "lib.arcade.pmKeep": "Caithfear cárta a thóg tú a choinneáil — caith ceann eile.",
+    "lib.arcade.pmU": "Amach! Buaigh tú láithreach.",
+    "lib.arcade.pmYou": "Tusa",
+    "lib.arcade.pmFoe": "Ríomhaire",
+    "lib.arcade.pmDraw2": "Comhscór.",
+    "lib.arcade.note.shogi": "Is ficheall Seapánach é Shogi. Imríonn tú an taobh íochtarach agus bogann tú ar dtús; tá píosaí an ríomhaire ag stánadh an treo eile. Téann píosaí gafa isteach i do lámh agus is féidir iad a leagan ar aon chearnóg fholamh in ionad bogadh (ná fáinleog i gcolún ina bhfuil fáinleog gan ardú agat cheana, ná píosa ar shraith nach bhféadfadh bogadh arís). Féadfaidh píosa a bhogann isteach i dtrí shraith dheireanacha an fhreasatheoir, amach astu, nó laistigh díobh, ardú céime (seachas an Rí agus an tÓr); tá ardú céime éigeantach nuair nach mbeadh aon bhogadh ag píosa. Cuir ficheall-mhat ar Rí an namhad chun an cluiche a bhuachan. Kanji: 歩 fáinleog, 香 sleá, 桂 capall, 銀 airgead, 金 ór, 角 easpag, 飛 caisleán, 玉 rí; tá と, 馬, 竜 agus píosaí dearga eile ardaithe.",
+    "lib.arcade.sgPromote": "Ardaigh",
+    "lib.arcade.sgKeep": "Ná hardaigh",
+    "lib.arcade.sgCheck": "Tá tú i gceilt!",
+    "lib.arcade.sgWin": "Ficheall-mhat — bhuaigh tú.",
+    "lib.arcade.sgLose": "Cuireadh ficheall-mhat ort.",
+    "lib.arcade.sgAskPromote": "An ardaigh tú an píosa seo?",
+    "lib.arcade.note.janggi": "Is ficheall Cóiréach é Janggi. Imríonn tú na píosaí gorma ag bun agus bogann tú ar dtús. Murab ionann agus xiangqi, níl aon abhainn ann, agus tá línte trasnánacha sa dá phálás. Bogann an Ginearál agus na Garda céim amháin feadh línte an phalais (trasnáin san áireamh); sleamhnaíonn agus gabhann an Carbad feadh trasnáin an phalais freisin; caithfidh an Gunna Móra léim thar phíosa amháin go díreach (ní Gunna Móra eile) chun bogadh nó gabháil, agus ní féidir leis Gunna Móra a ghabháil; tógann an Capall céim dhíreach amháin ansin céim trasnánach, agus an tIolfant ceann díreach amháin agus dhá cheann trasnánacha, agus cuirtear bac orthu beirt má tá píosa sa bhealach; bogann Saighdiúirí ar aghaidh nó go taobhach, agus go trasnánach ar aghaidh laistigh de phálás an namhad. Ní fhéadfaidh an dá Ghinearál aghaidh a thabhairt ar a chéile riamh. Cuir ficheall-mhat ar Ghinearál an namhad chun an cluiche a bhuachan. Ní théann an ríomhaire thar chas riamh.",
+    "lib.arcade.jgCheck": "Tá tú i gceilt!",
+    "lib.arcade.jgWin": "Ficheall-mhat — bhuaigh tú.",
+    "lib.arcade.jgLose": "Cuireadh ficheall-mhat ort.",
+    "lib.arcade.note.pinball": "Brúigh Spás, Suas nó tapáil an tábla chun an liathróid a lainseáil. Coinnigh Clé (nó teagmháil a dhéanamh le leath chlé an tábla) chun an flipéir chlé a ardú agus Deas (nó an leath dheas) don cheann deas — tapáil in am le rithim in ionad coinneáil. Tugann bumpairí cruinne 100 pointe an ceann. Tá 3 liathróid agat; sroich an scór sprice sula rithfidh siad amach chun an leibhéal a réiteach.",
+    "lib.arcade.pinBalls": "Liathróidí: {n} · Sprioc: {t}",
+    "lib.arcade.note.cribbage": "Cribbage do bheirt, rás go 61 phointe. Gach dáileadh faigheann tú 6 chárta agus cuireann tú 2 aghaidh síos sa chrib (is leis an dáileoir é). Casann cárta tosaigh aníos. Ansin imrítear cártaí aghaidh suas ar ais, gan an t-iomlán reatha dul thar 31 riamh: scóráil 2 as 15 nó 31 a bhaint amach, 2/6/12 as an gcárta deireanach a mheaitseáil, fad na reatha as reathaí de 3 nó níos mó (in ord ar bith), agus nuair nach féidir le héinne imirt scórálann an t-imreoir deireanach 1 (\"Go\"). Ansin comhaireamh gach lámh de 4 leis an gcárta tosaigh: 2 as gach teaglaim a dhéanann 15, 2 as gach péire, fad reatha de 3+, 4 as ceithre chárta den chulaith chéanna (5 leis an gcárta tosaigh), agus 1 as Jack a mheaitseálann culaith an chárta tosaigh. Comhaireann an té nach ndáileann ar dtús, ansin comhaireann an dáileoir a lámh agus an chrib.",
+    "lib.arcade.cbFifteen": "Cúig déag",
+    "lib.arcade.cbPair": "Péire",
+    "lib.arcade.cbRun": "Reathaí",
+    "lib.arcade.cbFlush": "Sraith",
+    "lib.arcade.cbNobs": "Jack a mheaitseálann an cárta tosaigh",
+    "lib.arcade.cbHeels": "Jack mar chárta tosaigh",
+    "lib.arcade.cbYou": "Tusa",
+    "lib.arcade.cbFoe": "Ríomhaire",
+    "lib.arcade.cbLast": "Cárta deireanach",
+    "lib.arcade.cbCount": "Iomlán: {n}",
+    "lib.arcade.cbYouDeal": "Dáileann tusa",
+    "lib.arcade.cbFoeDeal": "Dáileann an ríomhaire",
+    "lib.arcade.cbPick": "Roghnaigh 2 chárta don chrib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Do lámh",
+    "lib.arcade.cbFoeHand": "Lámh an ríomhaire",
+    "lib.arcade.cbStarter": "Cárta tosaigh",
+    "lib.arcade.cbZero": "0 pointe",
+    "lib.arcade.cbPlayed": "Imeartha",
+    "lib.arcade.cbToCrib": "Cuir sa chrib",
+    "lib.arcade.cbNext": "Lean ar aghaidh",
+    "lib.arcade.cbHand": "Lámh"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Trí Déag)",
       "desc": "An cluiche cártaí Vítneamach do cheathrar: imir cártaí aonair, péirí, sraitheanna agus ceithre cinn chun do lámh a fholmhú ar dtús; 10 leibhéal."
+    },
+    "tower-defense": {
+      "name": "Cosaint Túr",
+      "desc": "Tóg agus uasghrádaigh túir feadh an chosáin chun gach tonn naimhde a stopadh; 10 leibhéal ar thrí léarscáil éagsúla."
+    },
+    "color-by-number": {
+      "name": "Dathú de réir Uimhreacha",
+      "desc": "Péinteáil gach cearnóg leis an dath a thagann lena huimhir chun an pictiúr a nochtadh; 10 bpictiúr le níos mó dathanna gach uair."
+    },
+    "yukon": {
+      "name": "Solitaire Yukon",
+      "desc": "Klondike gan stoc: bog aon chárta aghaidh suas leis an méid atá os a chionn; 10 leibhéal, níos lú cártaí aghaidh suas de réir mar a théann tú ar aghaidh."
+    },
+    "chinese-checkers": {
+      "name": "Cluiche Cuileog Síneach",
+      "desc": "Cluiche réalta céim-agus-léim i gcoinne an ríomhaire: bog na 10 bpíosa go dtí an cúinne os coinne ar dtús; 10 leibhéal."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (Pócar Síneach)",
+      "desc": "Socraigh 13 chárta i dtrí lámh de 5, 5 agus 3 chárta agus buaigh ar an ríomhaire; 5 bhabhta in aghaidh an leibhéil, 10 leibhéal."
+    },
+    "phom": {
+      "name": "Phỏm (Rummy Vítneamach)",
+      "desc": "Rummy Vítneamach do bheirt i gcoinne an ríomhaire: tarraing nó tóg cárta caite, déan meldeanna agus téigh amach; buaigh an té a bhfuil na pointí is lú fágtha; 10 leibhéal."
+    },
+    "shogi": {
+      "name": "Shogi (Ficheall Seapánach)",
+      "desc": "Imir shogi i gcoinne an ríomhaire: leag píosaí gafa, ardaigh céim, agus cuir ficheall-mhat ar an rí; 10 leibhéal le cealú."
+    },
+    "janggi": {
+      "name": "Janggi (Ficheall Cóiréach)",
+      "desc": "Imir ficheall Cóiréach i gcoinne an ríomhaire: trasnáin phálais, léimeanna gunna móra thar phíosa amháin, iolfanta trí chéim; 10 leibhéal le cealú."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Bog clé agus deas chun an liathróid a choinneáil beo, buail na bumpairí agus sroich an scór sprice sula rithfidh do 3 liathróid amach; 10 leibhéal."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage do bheirt i gcoinne an ríomhaire: crib, pegáil go 31, comhaireamh lámh, rás go 61 phointe; 10 leibhéal."
     }
   },
   "s": {

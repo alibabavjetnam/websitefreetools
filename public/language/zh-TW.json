@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "選一種顏色，把左上角你佔有的整個區域染成該色；它會吞併相鄰同色的格子。在限定步數內讓整個棋盤變成同一種顏色。",
     "lib.arcade.note.mastermind": "電腦會藏起一排顏色。為每個位置選一種顏色，然後按「猜」。黑色小釘＝顏色與位置都正確；白色小釘＝顏色正確但位置錯誤。在猜測次數用完之前破解密碼。",
     "lib.arcade.note.hanoi": "把所有圓盤移到最後一根柱子。每次只能移動柱子最上面的圓盤，且絕不能把大圓盤放在小圓盤上。先點擊起始柱，再點擊目標柱。",
-    "lib.arcade.note.pipes": "點擊方塊可將水管旋轉 90°。把所有水管連成一個沒有開口的網路（開口端以紅色顯示）。"
+    "lib.arcade.note.pipes": "點擊方塊可將水管旋轉 90°。把所有水管連成一個沒有開口的網路（開口端以紅色顯示）。",
+    "lib.arcade.pongScore": "你 {a} – {b} 電腦(先得 {t} 分)",
+    "lib.arcade.kills": "已擊毀:{n}/{t}",
+    "lib.arcade.rocksLeft": "剩餘 {n} 顆隕石",
+    "lib.arcade.timeLeft": "剩餘 {n} 秒",
+    "lib.arcade.stepsN": "步數:{n}",
+    "lib.arcade.crossed": "到家:{n}/{t}",
+    "lib.arcade.pipes": "通過水管:{n}/{t}",
+    "lib.arcade.distance": "距離:{n}/{t} 公尺",
+    "lib.arcade.speedN": "速度:{n}",
+    "lib.arcade.note.whack-a-mole": "地鼠會從洞裡冒出來,點擊或輕觸地鼠即可打中牠。在時間結束前打中足夠數量的地鼠。從第 4 關起會出現炸彈,打中炸彈會扣分。",
+    "lib.arcade.hole": "洞",
+    "lib.arcade.hitsN": "命中:{n}/{t}",
+    "lib.arcade.note.simon": "遊戲會播放一連串顏色與聲音,請依相同順序重複一遍。每一輪都會多加一步。記住過關所需的長度即可通關。從第 7 關起有 6 個按鍵。",
+    "lib.arcade.seqN": "序列:{n}/{t}",
+    "lib.arcade.watch": "請看…",
+    "lib.arcade.yourTurnShort": "換你了",
+    "lib.arcade.note.aim-trainer": "目標會隨機出現並很快消失,盡量多擊中。目標會越來越小、越來越快。在失誤不超過 5 次的情況下擊中足夠數量的目標即可過關。",
+    "lib.arcade.missN": "失誤:{n}/{t}",
+    "lib.arcade.answer": "答案",
+    "lib.arcade.note.quick-math": "盡快心算:輸入答案後按 Enter。每題都有時間限制,答錯或超時會失去一條命(共 3 條命)。答對足夠題數即可過關。",
+    "lib.arcade.correctN": "答對:{n}/{t}",
+    "lib.arcade.note.reaction": "等螢幕變成綠色後,用最快的速度點擊。太早點擊算犯規(犯規 3 次就輸了)。5 回合的平均成績必須優於該關的限制。",
+    "lib.arcade.roundN": "單字 {n}/{t}",
+    "lib.arcade.limitMs": "限制:{n} 毫秒",
+    "lib.arcade.rxWait": "等待變綠…",
+    "lib.arcade.rxGo": "點擊!",
+    "lib.arcade.rxEarly": "太早了!",
+    "lib.arcade.gameArea": "遊戲區域",
+    "lib.arcade.note.pong": "移動滑鼠、拖曳手指或使用 ← → 鍵控制下方的擋板。把球打過電腦的擋板;先得 5 分者獲勝。每擊一次球,球速就會加快。",
+    "lib.arcade.note.space-shooter": "移動滑鼠、拖曳手指或使用 ← → 鍵操控飛船,飛船會自動開火。擊毀足夠數量的敵艦即可過關,並避開碰撞與敵方砲火。你有 3 條命。",
+    "lib.arcade.note.asteroids": "← → 旋轉飛船,↑ 推進,空白鍵開火。擊毀所有隕石即可過關;大隕石會分裂成小隕石。飛船飛出螢幕邊緣會從另一側出現。你有 3 條命。",
+    "lib.arcade.note.maze": "使用方向鍵(或滑動、或按鈕),在時間結束前從綠點走到紅旗。從第 5 關起迷宮會起霧:你只能看見身邊的範圍,走過的地方會被記住。",
+    "lib.arcade.note.road-cross": "使用方向鍵、滑動或按鈕,讓青蛙從下方跳到上方。避開車流;從第 5 關起上半部是河流,要跳到漂浮的木頭上。回家 3 次即可過關。你有 3 條命。",
+    "lib.arcade.note.flappy": "點擊遊戲區域、按空白鍵或 ↑ 來拍動翅膀。穿過水管之間的縫隙,不要碰到水管、地面或天花板。關卡越高,縫隙越窄,飛行速度越快。",
+    "lib.arcade.note.runner": "點擊遊戲區域、按空白鍵或 ↑ 跳過仙人掌;按住 ↓ 可閃躲高空的鳥(或跳過低空的鳥)。跑得夠遠即可過關。速度會持續加快。",
+    "lib.arcade.fire": "開火",
+    "lib.arcade.jump": "跳躍",
+    "lib.arcade.aimTarget": "目標",
+    "lib.game.soundOn": "開啟音效",
+    "lib.game.soundOff": "關閉音效",
+    "lib.arcade.note.kalah": "你操作下排,電腦操作上排;右側的大坑洞是你的倉庫。點擊一個坑洞,拿起裡面所有的種子,逆時針方向每個坑放一顆(跳過對手的倉庫)。如果最後一顆種子落在你的倉庫,你可以再走一次;如果落在你這一側的空坑,而對面的坑有種子,你就能吃掉那些種子。當一側全空時,另一側的種子歸該側擁有者的倉庫;倉庫種子較多者獲勝。",
+    "lib.arcade.note.snakes": "擲骰子並前進相應的格數,從 1 走到 100。停在梯子底端就往上爬,停在蛇頭就滑下去。從第 4 關起必須剛好擲出數字才能停在 100。關卡越高,蛇越多、梯子越少、對手越多。最先到達 100 者獲勝。",
+    "lib.arcade.square": "第 {n} 格",
+    "lib.arcade.ladderUp": "爬上梯子!",
+    "lib.arcade.snakeDown": "被蛇吞了!",
+    "lib.arcade.needExact": "你必須剛好擲出數字才能停在 100。",
+    "lib.arcade.note.nmm": "雙方各有 9 顆棋子。第一階段:輪流把棋子放在空點上。第二階段:把棋子滑到相鄰的空點。只剩 3 顆棋子時,可以「飛」到任何空點。連成三子一線(「成排」)就能移除對手一顆棋子(優先移除不在成排中的棋子)。當你只剩 2 顆棋子或無法移動時就輸了。你執白棋並先手。",
+    "lib.arcade.inHand": "待放置:{a} · {b}",
+    "lib.arcade.removePiece": "請選擇要移除的對手棋子。",
+    "lib.arcade.enemyWaters": "敵方海域(點擊開火)",
+    "lib.arcade.yourFleet": "你的艦隊",
+    "lib.arcade.note.battleship": "雙方各有 5 艘船(長度 5、4、3、3、2),隨機放置在 10x10 的格子上。輪流向一個格子開火:命中變紅,未命中變淡藍,擊中船的每一格就會擊沉該船。最先擊沉敵方整支艦隊者獲勝。關卡越高,電腦推算你船隻位置的能力越強。",
+    "lib.arcade.shipsLeft": "剩餘船艦:你 {a} · 敵方 {b}",
+    "lib.arcade.theySunk": "敵方擊沉了你的一艘船!",
+    "lib.arcade.theyHit": "敵方擊中了你的一艘船。",
+    "lib.arcade.theyMiss": "敵方沒有擊中。",
+    "lib.arcade.youSunk": "你擊沉了一艘敵艦!",
+    "lib.arcade.youHit": "命中!",
+    "lib.arcade.youMiss": "未命中。",
+    "lib.arcade.shake": "搖骰子",
+    "lib.arcade.clearBets": "清除下注",
+    "lib.arcade.note.bau-cua": "僅使用虛擬金幣,不涉及真錢。選擇籌碼面額,點擊動物下注,然後按「搖骰子」。每有一顆骰子與你下注的動物相符,你就拿回本金,並額外獲得與相符數量相等的賠付。在規定回合內達到目標金幣即可過關。",
+    "lib.arcade.note.baccarat": "僅使用虛擬金幣,不涉及真錢。押閒家、莊家或和局,然後按「發牌」。一手牌的點數是總和的個位數(A = 1,2–9 為牌面點數,10/J/Q/K = 0);點數較接近 9 者獲勝,第三張牌依標準規則補牌。閒家賠率 1:1,莊家 0.95:1,和局 8:1(和局時閒家/莊家的賭注退還)。在規定回合內達到目標金幣即可過關。",
+    "lib.arcade.banker": "莊家",
+    "lib.arcade.player": "閒家",
+    "lib.arcade.tie": "和局",
+    "lib.arcade.openCards": "開牌",
+    "lib.arcade.note.bai-cao": "僅使用虛擬金幣,不涉及真錢。雙方各拿 3 張牌。一手牌的點數是總和的個位數(A = 1,2–9 為牌面點數,10/J/Q/K = 10,即 0 點)。大小順序:三條(「Sáp」)最大,其次是三張人頭牌(「Ba tiên」),再來是 9 點到 0 點。下注後按「發牌」,再按「開牌」與莊家比較。從第 6 關起,平手時莊家獲勝。在規定回合內達到目標金幣即可過關。",
+    "lib.arcade.caoSap": "三條",
+    "lib.arcade.caoBaTien": "三張人頭牌",
+    "lib.arcade.caoPts": "{n} 點",
+    "lib.arcade.note.bingo": "電腦會叫出 1 到 75 的號碼。當叫到的號碼在你的卡片上時,點擊它做記號(中間為免費格)。連成一橫列、一直行或一條對角線後按 BINGO!——你必須贏過電腦對手。誤按 BINGO! 會讓按鈕鎖定幾秒鐘。關卡越高,叫號越快,對手越多。",
+    "lib.arcade.opponentsN": "對手:{n}",
+    "lib.arcade.falseBingo": "還沒有連成一線!按鈕鎖定 3 秒。",
+    "lib.arcade.bingoGo": "開始叫號!",
+    "lib.arcade.note.yahtzee": "每回合最多擲 5 顆骰子 3 次:點擊骰子可保留,再按「擲骰」重擲其他骰子。接著在表格中選一個欄位計分(每個欄位只能用一次;不符合的欄位得 0 分)。共 13 回合。「一點」到「六點」的總和達到 63 分以上,可獲得 35 分獎勵。達到該關的目標分數即可獲勝。",
+    "lib.arcade.turnN": "第 {n}/13 回合",
+    "lib.arcade.pickCat": "請選擇要計分的欄位",
+    "lib.arcade.rollsLeft": "擲骰(剩 {n} 次)",
+    "lib.arcade.upperBonus": "一點至六點獎勵",
+    "lib.arcade.scored": "得 {n} 分",
+    "lib.arcade.note.crazy-eights": "出一張與棄牌堆頂牌花色或點數相同的牌。8 是萬用牌:隨時可以出,並選擇新的花色。如果沒有可出的牌,就從牌堆抽牌(最多 3 張);若仍然無法出牌,就跳過。最先出完手牌者獲勝。關卡越高,對手越多,電腦也打得更聰明。",
+    "lib.arcade.opponent": "對手",
+    "lib.arcade.pileLeft": "牌堆:{n}",
+    "lib.arcade.pickSuit": "請選擇新的花色",
+    "lib.arcade.aiSuit": "電腦選擇了 {s}",
+    "lib.arcade.aiPass": "電腦跳過。",
+    "lib.arcade.mustPlay": "你有可以出的牌,請出牌。",
+    "lib.arcade.youPass": "你抽了 3 張牌,跳過。",
+    "lib.arcade.bcGourd": "葫蘆",
+    "lib.arcade.bcCrab": "螃蟹",
+    "lib.arcade.bcShrimp": "蝦",
+    "lib.arcade.bcFish": "魚",
+    "lib.arcade.bcRooster": "公雞",
+    "lib.arcade.bcDeer": "鹿",
+    "lib.arcade.yOnes": "一點",
+    "lib.arcade.yTwos": "二點",
+    "lib.arcade.yThrees": "三點",
+    "lib.arcade.yFours": "四點",
+    "lib.arcade.yFives": "五點",
+    "lib.arcade.ySixes": "六點",
+    "lib.arcade.yThree": "三條",
+    "lib.arcade.yFour": "四條",
+    "lib.arcade.yFull": "葫蘆(25)",
+    "lib.arcade.ySmall": "小順子(30)",
+    "lib.arcade.yLarge": "大順子(40)",
+    "lib.arcade.yYahtzee": "快艇(50)",
+    "lib.arcade.yChance": "機會",
+    "lib.arcade.note.race": "按 ← →(或點擊你想去的車道)換車道,閃避前方的車輛。你有 3 條命;開完全程即可過關。關卡越高,車道越多,車流越快。",
+    "lib.arcade.note.jump": "角色會自己彈跳。按 ← → 或拖曳手指,讓牠落在下一個平台上。藍色平台會移動,棕色平台踩上去會碎裂。掉出螢幕就輸了;爬得夠高即可過關。",
+    "lib.arcade.note.miner": "吊鉤會左右擺動;按空白鍵、↓ 或點擊場地來放下吊鉤。大塊黃金和石頭很重,拉起來很慢;鑽石價值很高。在 60 秒用完前達到目標金額。",
+    "lib.arcade.note.slicer": "用手指或滑鼠滑過水果來切開它。避開黑色炸彈。漏掉水果或切到炸彈會失去一條命(共 3 條命)。切開足夠數量的水果即可過關。",
+    "lib.arcade.note.hoops": "在球場上按住並向下拖曳(像彈弓一樣),放開即可把球投向籃框。拖得越遠,投得越用力。在限定的投籃次數內進足夠的球;從第 4 關起籃框會移動。",
+    "lib.arcade.note.bubbles": "移動滑鼠或手指來瞄準,然後點擊/輕觸或按空白鍵/開火鍵發射。連接 3 個或更多相同顏色的泡泡就會爆破;失去支撐的泡泡會掉落。泡泡列會慢慢下降,別讓它們碰到底線。清除所有泡泡即可獲勝。",
+    "lib.arcade.note.chase": "使用方向鍵(或滑動/按鈕)轉向,吃掉迷宮裡所有的點,同時避開追你的幽靈。你有 3 條命;關卡越高,幽靈越多、越快,追得也越聰明。",
+    "lib.arcade.height": "高度:{n}/{t} 公尺",
+    "lib.arcade.money": "金額:{n}/{t}",
+    "lib.arcade.sliced": "已切:{n}/{t}",
+    "lib.arcade.hoopScore": "進球:{n}/{t}",
+    "lib.arcade.shotsLeft": "剩餘 {n} 次投籃",
+    "lib.arcade.bubbleLeft": "剩餘 {n} 個泡泡",
+    "lib.arcade.shotsN": "發射:{n}",
+    "lib.arcade.dotsLeft": "剩餘 {n} 個點",
+    "lib.arcade.note.kakuro": "在白色格子裡填入數字 1–9,使每一段的總和等於黑格中的提示數字(右上角的數字對應向右的一段,左下角的數字對應向下的一段),且同一段內數字不可重複。使用方向鍵移動。",
+    "lib.arcade.note.kenken": "在格子中填入 1 到 N 的數字,使每一橫列和每一直行都沒有重複的數字。每個粗框區塊會顯示一個目標數字和運算符號(+、−、×、÷):區塊內的數字必須算出該結果。使用方向鍵移動。",
+    "lib.arcade.note.wordGuess": "猜出秘密的英文單字。每次猜完後,綠色代表字母正確且位置正確,黃色代表單字中有這個字母但位置不對,灰色代表單字中沒有這個字母。用鍵盤輸入或使用螢幕按鍵,按 Enter 送出。關卡越高,單字越長,可猜的次數越少。",
+    "lib.arcade.note.hangman": "一次選一個字母,猜出秘密的英文單字。每猜錯一個字母,吊刑人像就多一個部分;猜錯次數用完就輸了。關卡越高,單字越長,允許猜錯的次數越少。",
+    "lib.arcade.note.scramble": "把打亂的字母重新排成真正的英文單字,並輸入到答案欄中。每一關有 5 個單字;在每個單字的計時結束前至少答對 4 個即可過關。提示會顯示第一個字母。",
+    "lib.arcade.cellsLeft": "剩餘 {n} 個空格",
+    "lib.arcade.wrongN": "有 {n} 個格子不正確。",
+    "lib.arcade.noError": "目前沒有發現錯誤。",
+    "lib.arcade.tooShort": "字母數量不足",
+    "lib.arcade.answerIs": "答案:{w}",
+    "lib.arcade.livesLeft": "還可猜錯 {n} 次",
+    "lib.arcade.yourAnswer": "你的答案",
+    "lib.arcade.skip": "跳過",
+    "lib.arcade.notThis": "不對,再試一次。",
+    "lib.arcade.startsWith": "第一個字母:{c}",
+    "lib.arcade.note.domino": "每位玩家拿 7 張骨牌;持有最大對子(雙數牌)者先出。出一張點數與牌鏈任一端相同的骨牌。如果無法出牌,就從牌堆抽牌直到能出為止;牌堆抽完則跳過。最先出完手牌者獲勝;如果雙方都被卡住,總點數較少者獲勝。",
+    "lib.arcade.note.hearts": "四位玩家,每人 13 張牌。梅花 2 先出。如果能跟牌,就必須跟出與首家相同的花色。每張紅心是 1 分,黑桃 Q 是 13 分;贏得一墩的人拿走該墩的分數。分數越低越好,而如果一個人拿走全部 26 分,其他三人各得 26 分。在有人出過紅心之前,不能以紅心領出。最後一局結束後,如果你的分數最低(或並列最低)就獲勝。",
+    "lib.arcade.note.holdem": "與電腦單挑,只使用虛擬籌碼。每位玩家拿 2 張底牌,並翻開 5 張公共牌(翻牌、轉牌、河牌);組成最好的 5 張牌型。每一輪你可以棄牌、跟注(或過牌)或加注。盲注每 4 手牌上漲一次。當電腦的籌碼用完,或在手數上限後你的籌碼較多時獲勝。不涉及真錢。",
+    "lib.arcade.dmDraw": "抽一張骨牌",
+    "lib.arcade.dmPass": "跳過",
+    "lib.arcade.dmEmpty": "尚未出牌",
+    "lib.arcade.dmYard": "牌堆:{n} 張",
+    "lib.arcade.dmLeft": "左端",
+    "lib.arcade.dmRight": "右端",
+    "lib.arcade.dmTie": "平手!雙方勢均力敵。",
+    "lib.arcade.hrHand": "第 {n}/{t} 局",
+    "lib.arcade.hrTook": "{p} 贏得這一墩({n} 分)。",
+    "lib.arcade.hrIllegal": "你不能出這張牌(必須跟牌,或尚未有人出過紅心)。",
+    "lib.arcade.blinds": "大盲注:{n}",
+    "lib.arcade.pot": "底池:{n}",
+    "lib.arcade.fold": "棄牌",
+    "lib.arcade.check": "過牌",
+    "lib.arcade.callN": "跟注 {n}",
+    "lib.arcade.raiseTo": "加注到",
+    "lib.arcade.raiseN": "加注到 {n}",
+    "lib.arcade.thOppFold": "電腦棄牌,你贏得這手牌。",
+    "lib.arcade.thYouFold": "你棄牌了。",
+    "lib.arcade.thOppWin": "電腦贏得這手牌",
+    "lib.arcade.thYouWin": "你贏得這手牌",
+    "lib.arcade.thSplit": "平分底池",
+    "lib.arcade.thAiFold": "電腦棄牌。",
+    "lib.arcade.thAiRaise": "電腦加注到 {n}。",
+    "lib.arcade.thAiCall": "電腦跟注/過牌。",
+    "lib.arcade.hand.high": "高牌",
+    "lib.arcade.hand.pair": "一對",
+    "lib.arcade.hand.twoPair": "兩對",
+    "lib.arcade.hand.trips": "三條",
+    "lib.arcade.hand.straight": "順子",
+    "lib.arcade.hand.flush": "同花",
+    "lib.arcade.hand.full": "葫蘆",
+    "lib.arcade.hand.quads": "四條",
+    "lib.arcade.hand.sflush": "同花順",
+    "lib.arcade.note.nback": "3x3 的格子中,方塊會一個接一個亮起。當亮起的位置與 N 步之前相同時,按「相同!」(或空白鍵)(N 顯示在上方)。至少要有 80% 的判斷正確才能過關。關卡越高,N 越大。",
+    "lib.arcade.nbMatch": "相同!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "正確:{a} · 錯誤:{b}",
+    "lib.arcade.nbAcc": "準確率:{n}%",
+    "lib.arcade.note.clicker": "點擊餅乾來烤餅乾,然後用餅乾購買會自動烤餅乾的幫手(每買一個,價格就會上漲)。在 2 分鐘內烤出目標數量的餅乾即可過關。",
+    "lib.arcade.ckCursor": "游標",
+    "lib.arcade.ckGrandma": "烘焙奶奶",
+    "lib.arcade.ckFarm": "農場",
+    "lib.arcade.ckMine": "糖礦",
+    "lib.arcade.ckFactory": "工廠",
+    "lib.arcade.ckCookie": "餅乾",
+    "lib.arcade.ckEarned": "已烤:{n}/{t}",
+    "lib.arcade.chips2": "餅乾:{n}",
+    "lib.arcade.ckCps": "每秒 {n} 塊餅乾",
+    "lib.arcade.note.onet": "選擇兩張相同的圖塊,且兩者之間能以最多 2 個轉彎、不穿過其他圖塊的路徑相連,就可以消除它們。在時間結束前清除所有圖塊即可獲勝。沒有可走的步數時,可以洗牌(次數有限)。",
+    "lib.arcade.shuffle": "洗牌",
+    "lib.arcade.tilesLeft": "剩餘 {n} 張圖塊",
+    "lib.arcade.autoShuffle": "沒有可走的步數了——已自動洗牌。",
+    "lib.arcade.note.jigsaw": "圖片被切成碎片並打亂。輕觸一塊,再輕觸另一塊,即可交換位置,依照參考圖重組圖片。位置正確的碎片會有綠色邊框。關卡越高,碎片越多。",
+    "lib.arcade.jgRef": "參考圖片",
+    "lib.arcade.jgPlaced": "已歸位:{a}/{b}",
+    "lib.arcade.golfStrokes": "桿數:{n}/{t}(標準桿 {p})",
+    "lib.arcade.note.backgammon": "你執白棋,從右上方繞行到右下方(你的家區)。擲骰子,點擊要移動的棋子,再點擊亮起的目的地。落在只有一顆對方棋子的點上,就會把它打到中間的橫條上,該玩家必須先把它放回棋盤。你不能落在有兩顆或以上對方棋子的點上。當你的 15 顆棋子全部進入家區(最後 6 個點)後,就可以開始把棋子移出棋盤。最先把 15 顆棋子全部移出者獲勝。",
+    "lib.arcade.bgRoll": "擲骰子",
+    "lib.arcade.bgOff": "移出棋盤",
+    "lib.arcade.bgRollFirst": "擲骰子",
+    "lib.arcade.bgInfo": "已移出:你 {a} · 電腦 {b} · 步數:{c} / {d}",
+    "lib.arcade.youNoMove": "你已經沒有可走的步數了。",
+    "lib.arcade.note.tienlen": "四位玩家,每人 13 張牌。牌的大小從小到大:3、4、…K、A、2;花色從小到大:黑桃、梅花、方塊、紅心。持有黑桃 3 的人先出。可以出單張、對子、三條、四條,或 3 張以上的連續順子(不含 2)。下一位玩家必須出相同類型且更大的牌,否則跳過;四條可以壓過單張 2 或一對 2。當其他人都跳過時,最後出牌的人可以任意領出。最先出完手牌者獲勝。選好牌後按「出牌」。",
+    "lib.arcade.tlPlay": "出牌",
+    "lib.arcade.tlPass": "跳過",
+    "lib.arcade.tlClear": "清除選取",
+    "lib.arcade.tlPassed": "已跳過",
+    "lib.arcade.tlFree": "桌面已清空——你可以任意領出",
+    "lib.arcade.tlLeft": "剩餘牌數:{a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} 跳過。",
+    "lib.arcade.tlBad": "所選的牌不能組成有效的牌型。",
+    "lib.arcade.tlLow": "這組牌不夠大,壓不過桌面上的牌。",
+    "lib.arcade.note.td": "輕觸空地(不是路徑)建造射擊塔,需要花費金幣;再次輕觸塔可以升級(最高 5 級)。塔會自動射擊射程內走得最遠的敵人。擊敗敵人可獲得更多金幣;如果有 15 個敵人到達終點,你就輸了。撐過所有波次即可過關。",
+    "lib.arcade.tdInfo": "金幣:{g} · 第 {w}/{t} 波",
+    "lib.arcade.tdCost": "塔:{n}",
+    "lib.arcade.note.colorNum": "每個方格都有一個與調色盤中某個顏色對應的數字。選擇一種顏色,再輕觸有該數字的方格來上色;用錯顏色不會上色。把每個方格都塗對,完成整幅圖畫。關卡越高,顏色越多。",
+    "lib.arcade.cnWrong": "顏色不對——請檢查方格上的數字。",
+    "lib.arcade.note.yukon": "與接龍(Klondike)類似,但沒有牌堆:任何一張正面朝上的牌,都可以連同壓在它上面的所有牌一起移動,即使它們不是連續的;只有第一張牌必須符合目標牌列(由大到小,紅黑交替;K 可以放到空列)。把 52 張牌從 A 到 K 依序堆到四個基礎堆上。低關卡一開始已有更多牌翻開。",
+    "lib.arcade.yukonFree": "蓋著的牌:{n}",
+    "lib.arcade.note.chinesechk": "你操作位於右側角落的藍色棋子;要比電腦更快把 10 顆棋子全部移到對面左側的角落。每回合移動一顆棋子:走到相鄰的空洞,或跳過任何一顆棋子到緊接其後的空洞,並且可以連續跳躍任意次數。輕觸你的一顆棋子,再輕觸綠色的洞即可移動。",
+    "lib.arcade.ccTurn": "輪到你 · 第 {n} 回合",
+    "lib.arcade.ccDraw": "回合用完——和局。",
+    "lib.arcade.note.maubinh": "你和電腦各拿 13 張牌,並排成 3 手牌:5 張的後墩、5 張的中墩和 3 張的前墩。後墩必須不小於中墩,中墩必須不小於前墩;否則你的排法就是「倒墩」,整局算輸。輕觸一張牌,再輕觸要放的列(輕觸已放好的牌可以取回)。每贏一墩得 1 分;三墩全贏得 6 分。共玩 5 局——總分為正數即可過關。前墩只能是高牌、一對或三條。",
+    "lib.arcade.mbHigh": "高牌",
+    "lib.arcade.mbPair": "一對",
+    "lib.arcade.mbTwoPair": "兩對",
+    "lib.arcade.mbTrips": "三條",
+    "lib.arcade.mbStraight": "順子",
+    "lib.arcade.mbFlush": "同花",
+    "lib.arcade.mbFull": "葫蘆",
+    "lib.arcade.mbQuads": "四條",
+    "lib.arcade.mbSflush": "同花順",
+    "lib.arcade.mbBack": "後墩",
+    "lib.arcade.mbMid": "中墩",
+    "lib.arcade.mbFront": "前墩",
+    "lib.arcade.mbFoe": "電腦",
+    "lib.arcade.mbYou": "你",
+    "lib.arcade.mbFoul": "倒墩了!",
+    "lib.arcade.mbFoeFoul": "電腦倒墩了!",
+    "lib.arcade.mbConfirm": "攤牌",
+    "lib.arcade.mbReset": "清除",
+    "lib.arcade.mbHand": "你的手牌",
+    "lib.arcade.mbRound": "第 {a}/{b} 局",
+    "lib.arcade.mbTotal": "總分:{n}",
+    "lib.arcade.mbFinish": "結束",
+    "lib.arcade.mbNext": "下一局",
+    "lib.arcade.mbDraw": "積分相同——再玩一次。",
+    "lib.arcade.mbAutoMsg": "這是建議的排法。攤牌前你可以自行調整。",
+    "lib.arcade.note.phom": "兩位玩家;每人拿 9 張牌(先出的人拿 10 張)。一組「牌組」是 3 張或以上相同點數的牌,或 3 張或以上同花色的連續牌(A 只能當最小)。輪到你時,可以從牌堆抽一張牌,或拿對手剛打出的牌(前提是它能與你的手牌組成牌組;拿來的牌必須保留),然後打出一張牌。當雙方各打出 4 張牌後本局結束,未成組的牌點數總和較低者獲勝(A = 1 … K = 13)。如果打出一張牌後你所有的牌都已成組,就「ù」(胡牌)並立即獲勝。綠色外框的牌屬於你的最佳牌組組合。",
+    "lib.arcade.pmDraw": "抽牌",
+    "lib.arcade.pmEat": "吃牌",
+    "lib.arcade.pmThrow": "打牌",
+    "lib.arcade.pmFoeAte": "電腦吃了你的牌。",
+    "lib.arcade.pmFoeU": "電腦胡牌了!",
+    "lib.arcade.pmTurn": "第 {a}/{b} 回合",
+    "lib.arcade.pmLeft": "未成組:{n}",
+    "lib.arcade.pmDeck": "牌堆:{n}",
+    "lib.arcade.pmFoeHand": "電腦的手牌",
+    "lib.arcade.pmFoeDisc": "電腦打出的牌",
+    "lib.arcade.pmFoeEaten": "電腦吃的牌",
+    "lib.arcade.pmMyDisc": "你打出的牌",
+    "lib.arcade.pmAte": "你吃了這張牌——要把它留在牌組中。",
+    "lib.arcade.pmKeep": "吃來的牌必須保留——請打出另一張牌。",
+    "lib.arcade.pmU": "胡牌!你立即獲勝。",
+    "lib.arcade.pmYou": "你",
+    "lib.arcade.pmFoe": "電腦",
+    "lib.arcade.pmDraw2": "點數相同。",
+    "lib.arcade.note.shogi": "將棋是日本象棋。你執下方的棋子並先手;電腦的棋子方向相反。被吃掉的棋子會進入你的持駒,可以不走棋而改為打入任何空格(不可打入你已有未成金之步的那一直行,也不可把棋子打到之後無法再移動的橫列)。棋子移入、移出或在對方最後三列內移動時,可以升變(玉將和金將除外);如果棋子之後會無法移動,就必須升變。將死對方的玉將即可獲勝。漢字:歩 步兵,香 香車,桂 桂馬,銀 銀將,金 金將,角 角行,飛 飛車,玉 玉將;と、馬、竜 以及其他紅色棋子是升變後的棋子。",
+    "lib.arcade.sgPromote": "升變",
+    "lib.arcade.sgKeep": "不升變",
+    "lib.arcade.sgCheck": "你被將軍了!",
+    "lib.arcade.sgWin": "將死——你贏了。",
+    "lib.arcade.sgLose": "你被將死了。",
+    "lib.arcade.sgAskPromote": "要升變這顆棋子嗎?",
+    "lib.arcade.note.janggi": "Janggi 是韓國象棋。你執下方的藍色棋子並先手。與中國象棋不同,這裡沒有楚河漢界,而且雙方的九宮都有斜線。將(帥)和士沿著九宮線(包括斜線)每次走一步;車也可以沿著九宮斜線滑行與吃子;包必須剛好跳過一顆棋子(不能是另一顆包)才能移動或吃子,而且不能吃包;馬先走一步直線再走一步斜線,象先走一步直線再走兩步斜線,兩者只要路徑上有棋子就會被擋住;兵(卒)可以向前或橫向移動,在對方九宮內還可以斜向前進。雙方的將不可以面對面。將死對方的將即可獲勝。電腦不會跳過回合。",
+    "lib.arcade.jgCheck": "你被將軍了!",
+    "lib.arcade.jgWin": "將死——你贏了。",
+    "lib.arcade.jgLose": "你被將死了。",
+    "lib.arcade.note.pinball": "按空白鍵、↑ 或輕觸球檯來發射球。按住左鍵(或觸碰球檯左半邊)抬起左擋板,按住右鍵(或觸碰右半邊)抬起右擋板——也可以隨節奏點按,而不用一直按住。圓形彈跳器每個得 100 分。你有 3 顆球;在球用完前達到目標分數即可過關。",
+    "lib.arcade.pinBalls": "球數:{n} · 目標:{t}",
+    "lib.arcade.note.cribbage": "雙人克里比奇牌戲,先到 61 分者獲勝。每次發牌你會拿到 6 張牌,並蓋 2 張到「搖籃」(crib)裡(搖籃屬於莊家)。接著翻開一張起始牌。然後輪流把牌正面朝上打出,累計總和不得超過 31:達到 15 或 31 得 2 分,與上一張牌點數相同得 2/6/12 分,3 張或以上的順子(順序不拘)得分等於其長度,當沒有人能再出牌時,最後出牌的人得 1 分(「Go」)。之後把每手 4 張牌連同起始牌一起計分:每個總和為 15 的組合得 2 分,每一對得 2 分,3 張以上的順子得分等於其長度,四張同花色得 4 分(加上起始牌為 5 分),與起始牌花色相同的 J 得 1 分。非莊家先計分,然後莊家計算自己的手牌和搖籃。",
+    "lib.arcade.cbFifteen": "十五",
+    "lib.arcade.cbPair": "一對",
+    "lib.arcade.cbRun": "順子",
+    "lib.arcade.cbFlush": "同花",
+    "lib.arcade.cbNobs": "與起始牌同花色的 J",
+    "lib.arcade.cbHeels": "起始牌為 J",
+    "lib.arcade.cbYou": "你",
+    "lib.arcade.cbFoe": "電腦",
+    "lib.arcade.cbLast": "最後一張牌",
+    "lib.arcade.cbCount": "總和:{n}",
+    "lib.arcade.cbYouDeal": "你發牌",
+    "lib.arcade.cbFoeDeal": "電腦發牌",
+    "lib.arcade.cbPick": "選擇 2 張牌放入搖籃",
+    "lib.arcade.cbCrib": "搖籃",
+    "lib.arcade.cbYourHand": "你的手牌",
+    "lib.arcade.cbFoeHand": "電腦的手牌",
+    "lib.arcade.cbStarter": "起始牌",
+    "lib.arcade.cbZero": "0 分",
+    "lib.arcade.cbPlayed": "已出",
+    "lib.arcade.cbToCrib": "放入搖籃",
+    "lib.arcade.cbNext": "繼續",
+    "lib.arcade.cbHand": "手牌"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "終極井字棋",
       "desc": "在 9 個小棋盤上下井字棋：你選的格子決定對手必須下在哪裡；對戰電腦，共 10 關。"
+    },
+    "pong": {
+      "name": "乒乓球",
+      "desc": "把球打過電腦的擋板;先得 5 分者獲勝。10 個關卡,對手越來越快、越來越犀利。"
+    },
+    "space-shooter": {
+      "name": "太空射擊",
+      "desc": "操控飛船,擊落敵艦並閃避敵方砲火;10 個關卡,敵方波次更大、會還擊,敵人也更強悍。"
+    },
+    "asteroids": {
+      "name": "小行星",
+      "desc": "旋轉、推進並射擊,擊碎太空隕石;大隕石會分裂成小隕石。10 個關卡,隕石更多也更快。"
+    },
+    "maze": {
+      "name": "迷宮",
+      "desc": "在時間結束前找到走出迷宮的路;10 個關卡,從小迷宮到大迷宮,高關卡還會起霧。"
+    },
+    "road-cross": {
+      "name": "青蛙過馬路",
+      "desc": "讓青蛙跳過繁忙的馬路和漂著木頭的河流,回家 3 次;10 個關卡,車流更快,高關卡還有河流。"
+    },
+    "flappy": {
+      "name": "飛翔小鳥",
+      "desc": "點擊拍動翅膀,穿過水管之間的縫隙;10 個關卡,縫隙越來越窄,速度越來越快。"
+    },
+    "runner": {
+      "name": "恐龍跑酷",
+      "desc": "跳過仙人掌、閃躲飛鳥;速度持續加快,跑得夠遠即可通過 10 個關卡中的每一關。"
+    },
+    "whack-a-mole": {
+      "name": "打地鼠",
+      "desc": "在時間結束前打中從洞裡冒出來的地鼠,並避開炸彈;10 個關卡,從慢速到超快速。"
+    },
+    "simon": {
+      "name": "Simon(記憶顏色)",
+      "desc": "記住並重複一連串的顏色與聲音;10 個關卡序列越來越長,第 7 關起有 6 個按鍵。"
+    },
+    "aim-trainer": {
+      "name": "瞄準訓練",
+      "desc": "擊中隨機出現又很快消失的目標;10 個關卡中目標越來越小,並會測量你的反應時間。"
+    },
+    "quick-math": {
+      "name": "快速心算",
+      "desc": "在時間壓力下心算加、減、乘、除;10 個關卡,從簡單算式到複合運算式。"
+    },
+    "reaction": {
+      "name": "反應速度測試",
+      "desc": "螢幕變綠的瞬間點擊;5 回合的平均成績必須達到每關的限制,而限制在 10 個關卡中會越來越嚴格。"
+    },
+    "kalah": {
+      "name": "Kalah(播棋)",
+      "desc": "沿著坑洞播種,吃掉對手的種子,落在自己的倉庫時可再走一次;與電腦對戰,10 個關卡由易到難。"
+    },
+    "snakes-ladders": {
+      "name": "蛇梯棋",
+      "desc": "擲骰子從第 1 格走到第 100 格,爬梯子、避開蛇,搶在對手之前抵達終點;10 個關卡。"
+    },
+    "nine-mens-morris": {
+      "name": "九子棋",
+      "desc": "放置、滑動並飛行你的棋子,連成三子一線並移除對手的棋子;與電腦對戰,10 個關卡。"
+    },
+    "battleship": {
+      "name": "海戰棋",
+      "desc": "在 10x10 的格子上,搶在電腦擊沉你的艦隊之前找出並擊沉牠的艦隊;10 個關卡,電腦的推算越來越聰明。"
+    },
+    "bau-cua": {
+      "name": "Bầu Cua(葫蘆蟹魚蝦)",
+      "desc": "越南傳統骰子遊戲:用虛擬金幣押注動物並搖三顆骰子;10 個關卡內達到目標金幣(不涉及真錢)。"
+    },
+    "baccarat": {
+      "name": "百家樂",
+      "desc": "以標準規則發牌,用虛擬金幣押閒家、莊家或和局;10 個關卡內達到目標金幣(不涉及真錢)。"
+    },
+    "bai-cao": {
+      "name": "Bài Cào(三張牌)",
+      "desc": "與莊家比較 3 張牌的牌型:三條、三張人頭牌,然後是 9 點到 0 點;虛擬金幣,10 個關卡,不涉及真錢。"
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "在你的 5x5 卡片上標記叫到的號碼,搶在電腦對手之前喊出 BINGO;10 個關卡中叫號越來越快。"
+    },
+    "yahtzee": {
+      "name": "Yahtzee(快艇骰子)",
+      "desc": "擲五顆骰子,保留好的骰子並填滿 13 個計分欄;10 個關卡內達到目標分數。"
+    },
+    "crazy-eights": {
+      "name": "瘋狂八(Crazy Eights)",
+      "desc": "出相同花色或點數的牌,8 可以改變花色;在 1 到 3 位電腦對手之前出完手牌,共 10 個關卡。"
+    },
+    "car-race": {
+      "name": "賽車閃避",
+      "desc": "換車道閃避前方的車輛,開完全程;10 個關卡,車道更多、車流更快。"
+    },
+    "sky-jump": {
+      "name": "天空跳跳",
+      "desc": "在平台間彈跳,盡可能爬得更高又不掉下去;10 個關卡,平台更稀疏,還有會移動和會碎裂的平台。"
+    },
+    "gold-miner": {
+      "name": "黃金礦工",
+      "desc": "放下吊鉤拉起黃金與鑽石,避開沉重的石頭,在 60 秒內達到目標金額;10 個關卡。"
+    },
+    "fruit-slice": {
+      "name": "切水果",
+      "desc": "滑動切開飛起的水果,並閃避炸彈;10 個關卡,水果更多、炸彈也更多。"
+    },
+    "basketball": {
+      "name": "投籃高手",
+      "desc": "拖曳並放開,在有限的投籃次數內把球投進籃框;10 個關卡,從第 4 關起籃框會移動。"
+    },
+    "bubble-shooter": {
+      "name": "泡泡龍",
+      "desc": "發射泡泡,連接 3 個或更多相同顏色的泡泡並使其爆破,在它們到達底部之前全部清除;10 個關卡,顏色越來越多。"
+    },
+    "dot-chase": {
+      "name": "吃點追逐",
+      "desc": "吃掉迷宮裡所有的點,同時閃避追你的幽靈;10 個關卡,幽靈更多也更聰明。"
+    },
+    "kakuro": {
+      "name": "Kakuro(數和)",
+      "desc": "在白色格子裡填入數字 1–9,使每一段的總和等於提示數字且不重複;10 個關卡,格子從 5x5 到 9x9。"
+    },
+    "kenken": {
+      "name": "KenKen(算術數獨)",
+      "desc": "在格子中填入數字,使橫列和直行都不重複,並讓每個區塊依其運算符號算出目標數字;10 個關卡,格子從 3x3 到 6x6。"
+    },
+    "word-guess": {
+      "name": "猜單字(類 Wordle)",
+      "desc": "根據綠、黃、灰色的提示猜出秘密的英文單字;10 個關卡,單字為 4–6 個字母,可猜次數越來越少。"
+    },
+    "hangman": {
+      "name": "猜字遊戲(Hangman)",
+      "desc": "一次猜一個字母,在猜錯次數用完之前猜出英文單字;10 個關卡,單字越來越長,可猜錯的次數越來越少。"
+    },
+    "word-scramble": {
+      "name": "字母重組(Anagram)",
+      "desc": "在時間結束前,把打亂的字母重新排成英文單字;10 個關卡,每關 5 個單字。"
+    },
+    "domino": {
+      "name": "多米諾骨牌",
+      "desc": "把骨牌接在牌鏈的任一端,搶在電腦之前出完手牌;10 個關卡,電腦越來越聰明。"
+    },
+    "hearts": {
+      "name": "Hearts(傷心小棧)",
+      "desc": "在四人牌戲中避開紅心和黑桃 Q;分數越低越好;10 個關卡,對手電腦越來越聰明。"
+    },
+    "texas-holdem": {
+      "name": "德州撲克(虛擬籌碼)",
+      "desc": "與電腦單挑撲克,使用虛擬籌碼:棄牌、跟注或加注,電腦籌碼用完時你就獲勝;10 個關卡,不涉及真錢。"
+    },
+    "n-back": {
+      "name": "N-Back 記憶",
+      "desc": "觀察亮起的方塊,當它與 N 步之前相同時按「相同」;10 個關卡,N 最高到 4。"
+    },
+    "cookie-clicker": {
+      "name": "餅乾點點樂",
+      "desc": "點擊烤餅乾,購買會自動烤餅乾的幫手,在 2 分鐘內達到目標;10 個關卡。"
+    },
+    "tile-connect": {
+      "name": "連連看(Onet 風格)",
+      "desc": "用最多兩個轉彎的路徑連接相同的圖塊,在時間結束前清空棋盤;10 個關卡,棋盤越來越大。"
+    },
+    "jigsaw": {
+      "name": "圖片拼圖",
+      "desc": "交換被打亂的碎片,重組圖片;10 個關卡,碎片從 3x3 到 6x6。"
+    },
+    "mini-golf": {
+      "name": "迷你高爾夫",
+      "desc": "向後拉再放開,在桿數限制內把球推進洞;10 個球場,有牆壁和沙坑。"
+    },
+    "backgammon": {
+      "name": "Backgammon(西洋雙陸棋)",
+      "desc": "擲骰子,讓你的棋子搶先回家並移出棋盤,途中吃掉對手落單的棋子;10 個關卡。"
+    },
+    "tien-len": {
+      "name": "Tiến Lên(十三張)",
+      "desc": "越南四人出牌遊戲:出單張、對子、順子和四條,搶先出完手牌;10 個關卡。"
+    },
+    "tower-defense": {
+      "name": "塔防",
+      "desc": "沿著路徑建造並升級砲塔,擋住每一波敵人;10 個關卡,共三張不同的地圖。"
+    },
+    "color-by-number": {
+      "name": "數字著色",
+      "desc": "用與數字對應的顏色塗滿每個方格,顯現出圖畫;10 幅圖畫,顏色一次比一次多。"
+    },
+    "yukon": {
+      "name": "Yukon 接龍",
+      "desc": "沒有牌堆的 Klondike:可以移動任何一張正面朝上的牌及其上方的所有牌;10 個關卡,越往後翻開的牌越少。"
+    },
+    "chinese-checkers": {
+      "name": "跳棋",
+      "desc": "與電腦對戰的星形跳躍棋:搶先把 10 顆棋子全部移到對面角落;10 個關卡。"
+    },
+    "mau-binh": {
+      "name": "Mậu binh(中國撲克)",
+      "desc": "把 13 張牌排成 5、5、3 張的三手牌並擊敗電腦;每關 5 局,共 10 個關卡。"
+    },
+    "phom": {
+      "name": "Phỏm(越南拉米)",
+      "desc": "與電腦對戰的雙人越南拉米:抽牌或吃棄牌、組成牌組並胡牌;剩餘點數最少者獲勝;10 個關卡。"
+    },
+    "shogi": {
+      "name": "Shogi(日本將棋)",
+      "desc": "與電腦對弈將棋:打入吃來的棋子、升變,並將死對方的玉將;10 個關卡,可悔棋。"
+    },
+    "janggi": {
+      "name": "Janggi(韓國將棋)",
+      "desc": "與電腦對弈韓國象棋:九宮斜線、包跳過一顆棋子、象走三步;10 個關卡,可悔棋。"
+    },
+    "pinball": {
+      "name": "Pinball(彈珠檯)",
+      "desc": "左右撥動擋板讓球不落下,撞擊彈跳器,在 3 顆球用完前達到目標分數;10 個關卡。"
+    },
+    "cribbage": {
+      "name": "Cribbage(克里比奇)",
+      "desc": "與電腦對戰的雙人克里比奇:搖籃、累計到 31 的出牌、計算手牌,先到 61 分者獲勝;10 個關卡。"
     }
   },
   "s": {

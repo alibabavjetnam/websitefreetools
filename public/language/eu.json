@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Geratzen diren kartak: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} jokalariak pasatu egiten du.",
     "lib.arcade.tlBad": "Hautatutako kartek ez dute konbinazio baliozkorik osatzen.",
-    "lib.arcade.tlLow": "Konbinazio hau ez da nahikoa altua mahaikoa gainditzeko."
+    "lib.arcade.tlLow": "Konbinazio hau ez da nahikoa altua mahaikoa gainditzeko.",
+    "lib.arcade.note.td": "Ukitu karratu huts bat (ez bidea) tiro-dorre bat eraikitzeko, urrea kostatzen du; ukitu dorre bat berriro hobetzeko (5. mailara arte). Dorreek automatikoki tiro egiten diote irismenean urrunen joan den etsaiari. Garaitu etsaiak urre gehiago irabazteko; 15 etsaik amaierara iristen badira, galdu egiten duzu. Bizirik atera uhin guztietatik maila gainditzeko.",
+    "lib.arcade.tdInfo": "Urrea: {g} · {w}/{t}. uhina",
+    "lib.arcade.tdCost": "Dorrea: {n}",
+    "lib.arcade.note.colorNum": "Karratu bakoitzak paletako kolore bati dagokion zenbaki bat du. Aukeratu kolore bat eta ukitu zenbaki hori duten karratuak margotzeko; kolore okerrarekin ukitzen baduzu, ez da ezer margotzen. Margotu karratu guztiak ondo irudia osatzeko. Maila altuagoek kolore gehiago dituzte.",
+    "lib.arcade.cnWrong": "Kolore okerra: begiratu karratuko zenbakia.",
+    "lib.arcade.note.yukon": "Klondike bezala, baina stockik gabe: aurpegi gora dagoen edozein karta mugi daiteke bere gainean dauden karta guztiekin batera, sekuentzian ez badaude ere; lehen kartak bakarrik egokitu behar dio helburuko zutabeari (beherantz, gorria eta beltza txandakatuz; Errege bat zutabe huts batera doa). Eraiki 52 kartak lau oinarrietan Asetik Erregeraino. Maila baxuetan karta gehiago hasten dira aurpegi gora.",
+    "lib.arcade.yukonFree": "Aurpegi behera dauden kartak: {n}",
+    "lib.arcade.note.chinesechk": "Zuk eskuineko izkinako pieza urdinak jokatzen dituzu; eraman 10ak ordenagailuak baino lehen ezkerreko izkina kontrakora. Txanda bakoitzean pieza bat mugitzen duzu: urratsa egin alboko zulo huts batera, edo salto egin edozein pieza gainetik berehala atzean dagoen zulo hutsera, eta jarraitu nahi adina aldiz saltoka. Ukitu zure pieza bat eta gero zulo berde bat mugitzeko.",
+    "lib.arcade.ccTurn": "Zure txanda · {n}. txanda",
+    "lib.arcade.ccDraw": "Txandarik ez da geratzen: berdinketa.",
+    "lib.arcade.note.maubinh": "Zuk eta ordenagailuak 13 karta jasotzen dituzue eta 3 eskutan antolatzen dituzue: 5 kartako atzeko eskua, 5 kartako erdiko eskua eta 3 kartako aurreko eskua. Atzeko eskuak gutxienez erdikoa bezain indartsua izan behar du, eta erdikoak aurrekoa bezain indartsua; bestela, zure antolaketa baliogabea da eta txanda osoa galtzen duzu. Ukitu karta bat eta gero doan ilara (ukitu jarritako karta bat atzera hartzeko). Irabazitako esku bakoitzak 1 puntu balio du; hirurak irabazteak 6. Jokatu 5 txanda: guztira positiboa bada, maila gainditzen duzu. Aurreko eskua karta altua, bikotea edo hirukotea izan daiteke bakarrik.",
+    "lib.arcade.mbHigh": "Karta altua",
+    "lib.arcade.mbPair": "Bikotea",
+    "lib.arcade.mbTwoPair": "Bi bikote",
+    "lib.arcade.mbTrips": "Hirukotea",
+    "lib.arcade.mbStraight": "Eskala",
+    "lib.arcade.mbFlush": "Kolorea",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Pokerra",
+    "lib.arcade.mbSflush": "Kolore-eskala",
+    "lib.arcade.mbBack": "Atzeko eskua",
+    "lib.arcade.mbMid": "Erdiko eskua",
+    "lib.arcade.mbFront": "Aurreko eskua",
+    "lib.arcade.mbFoe": "Ordenagailua",
+    "lib.arcade.mbYou": "Zu",
+    "lib.arcade.mbFoul": "Baliogabea!",
+    "lib.arcade.mbFoeFoul": "Ordenagailuaren antolaketa baliogabea da!",
+    "lib.arcade.mbConfirm": "Erakutsi kartak",
+    "lib.arcade.mbReset": "Garbitu",
+    "lib.arcade.mbHand": "Zure eskua",
+    "lib.arcade.mbRound": "{a}/{b}. txanda",
+    "lib.arcade.mbTotal": "Guztira: {n}",
+    "lib.arcade.mbFinish": "Amaitu",
+    "lib.arcade.mbNext": "Hurrengo txanda",
+    "lib.arcade.mbDraw": "Puntuetan berdinduta: jokatu berriro.",
+    "lib.arcade.mbAutoMsg": "Hona hemen antolaketa proposamen bat. Alda dezakezu kartak erakutsi aurretik.",
+    "lib.arcade.note.phom": "Bi jokalari; bakoitzak 9 karta jasotzen ditu (lehenengo jokatzen duenak 10). Jokaldi bat zenbaki bereko 3 karta edo gehiago da, edo pala bereko 3 karta jarraitu edo gehiago (Asa baxua bakarrik da). Zure txandan hartu karta bat mazotik, edo hartu aurkariak utzi berri duen karta zure eskuarekin jokaldi bat osatzen badu (hartutako karta gorde behar da), eta gero bota karta bat. Jokalari bakoitzak 4 karta bota dituenean, txanda amaitzen da eta jokaldietan sartu gabeko kartak guztira gutxien dituenak irabazten du (Asa = 1 … Errege = 13). Bota ondoren zure karta guztiak jokaldietan badaude, amaitu egiten duzu (\"U\") eta berehala irabazten duzu. Ertz berdea duten kartak zure jokaldi-multzorik onenean daude.",
+    "lib.arcade.pmDraw": "Hartu",
+    "lib.arcade.pmEat": "Hartu botatakoa",
+    "lib.arcade.pmThrow": "Bota",
+    "lib.arcade.pmFoeAte": "Ordenagailuak zure karta hartu du.",
+    "lib.arcade.pmFoeU": "Ordenagailuak amaitu du!",
+    "lib.arcade.pmTurn": "{a}/{b}. txanda",
+    "lib.arcade.pmLeft": "Sartu gabe: {n}",
+    "lib.arcade.pmDeck": "Mazoa: {n}",
+    "lib.arcade.pmFoeHand": "Ordenagailuaren eskua",
+    "lib.arcade.pmFoeDisc": "Ordenagailuaren botatakoak",
+    "lib.arcade.pmFoeEaten": "Ordenagailuak hartu du",
+    "lib.arcade.pmMyDisc": "Zure botatakoak",
+    "lib.arcade.pmAte": "Karta hau hartu duzu: gorde jokaldi batean.",
+    "lib.arcade.pmKeep": "Hartutako karta gorde behar da: bota beste bat.",
+    "lib.arcade.pmU": "Amaitu duzu! Berehala irabazten duzu.",
+    "lib.arcade.pmYou": "Zu",
+    "lib.arcade.pmFoe": "Ordenagailua",
+    "lib.arcade.pmDraw2": "Puntuetan berdinduta.",
+    "lib.arcade.note.shogi": "Shogia xake japoniarra da. Zuk beheko aldea jokatzen duzu eta lehenengo mugitzen duzu; ordenagailuaren piezak beste aldera begira daude. Harrapatutako piezak zure eskuan geratzen dira eta karratu huts batean jar ditzakezu mugimendu bat egin beharrean (inoiz ez peoi bat promozionatu gabeko peoi bat duzun zutabean, eta ez pieza bat berriro mugitu ezingo litzatekeen ilaran). Aurkariaren azken hiru ilaretan sartzen, handik ateratzen edo barruan mugitzen den piezak promozionatu dezake (Erregea eta Urrea izan ezik); promozioa derrigorrezkoa da piezak mugimendurik gabe geratuko balitz. Egin xake mate etsaiaren Erregeari irabazteko. Kanjiak: 歩 peoia, 香 lantza, 桂 zaldia, 銀 zilarra, 金 urrea, 角 alfila, 飛 dorrea, 玉 erregea; と, 馬, 竜 eta gainerako pieza gorriak promozionatuak dira.",
+    "lib.arcade.sgPromote": "Promozionatu",
+    "lib.arcade.sgKeep": "Ez promozionatu",
+    "lib.arcade.sgCheck": "Xakean zaude!",
+    "lib.arcade.sgWin": "Xake mate: irabazi duzu.",
+    "lib.arcade.sgLose": "Xake mate egin dizute.",
+    "lib.arcade.sgAskPromote": "Pieza hau promozionatu?",
+    "lib.arcade.note.janggi": "Janggia xake korearra da. Zuk beheko pieza urdinak jokatzen dituzu eta lehenengo mugitzen duzu. Xiangqiren aldean, ez dago ibairik eta bi jauregiek lerro diagonalak dituzte. Jeneralak eta Guardiek urrats bat egiten dute jauregiko lerroetan zehar (diagonalak barne); Gurdiak ere jauregiko diagonaletan irristatzen eta harrapatzen du; Kanoiak pieza bakar bat gainetik saltatu behar du mugitzeko edo harrapatzeko (ez beste Kanoi bat), eta ezin du Kanoirik harrapatu; Zaldiak urrats zuzen bat eta gero diagonal bat egiten du, eta Elefanteak zuzen bat eta bi diagonal, biak blokeatuta daude tartean pieza bat badago; Soldaduek aurrera edo alde batera mugitzen dira, eta diagonalean aurrera etsaiaren jauregiaren barruan. Bi Jeneralek ezin dute inoiz aurrez aurre egon. Egin xake mate etsaiaren Jeneralari irabazteko. Ordenagailuak ez du inoiz pasatzen.",
+    "lib.arcade.jgCheck": "Xakean zaude!",
+    "lib.arcade.jgWin": "Xake mate: irabazi duzu.",
+    "lib.arcade.jgLose": "Xake mate egin dizute.",
+    "lib.arcade.note.pinball": "Sakatu Zuriunea, Gora edo ukitu mahaia bola jaurtitzeko. Mantendu Ezkerra (edo ukitu mahaiaren ezkerreko erdia) ezkerreko palanka igotzeko, eta Eskuina (edo eskuineko erdia) eskuinekoa igotzeko; mantendu beharrean erritmoan ere ukitu dezakezu. Bumper biribilek 100 puntu ematen dituzte bakoitzak. 3 bola dituzu; iritsi helburuko puntuaziora haiek amaitu aurretik maila gainditzeko.",
+    "lib.arcade.pinBalls": "Bolak: {n} · Helburua: {t}",
+    "lib.arcade.note.cribbage": "Bi jokalarirentzako cribbagea, 61 punturaino lasterketa. Banaketa bakoitzean 6 karta jasotzen dituzu eta 2 aurpegi behera jartzen dituzu \"crib\"ean (banatzaileari dagokio). Hasierako karta bat ematen da buelta. Gero txandaka karta bat jokatzen da aurpegi gora, metatutako guztizkoa inoiz 31 baino handiagoa izan gabe: 15era edo 31ra iristeak 2 ematen du, azken karta berdintzeak 2/6/12, 3 edo gehiagoko eskalak (edozein ordenatan) bere luzera adina, eta inork jokatu ezin duenean, azken jokalariak 1 egiten du (\"Go\"). Ondoren 4 kartako esku bakoitza hasierako kartarekin batera zenbatzen da: 15 batzen duen konbinazio bakoitzak 2, bikote bakoitzak 2, 3+ kartako eskalak bere luzera, pala bereko lau kartak 4 (5 hasierako kartarekin), eta hasierako kartaren palako Jotak 1. Banatzaile ez denak zenbatzen du lehenengo, gero banatzaileak bere eskua eta cribea zenbatzen ditu.",
+    "lib.arcade.cbFifteen": "Hamabost",
+    "lib.arcade.cbPair": "Bikotea",
+    "lib.arcade.cbRun": "Eskala",
+    "lib.arcade.cbFlush": "Kolorea",
+    "lib.arcade.cbNobs": "Hasierako kartaren palako Jota",
+    "lib.arcade.cbHeels": "Jota hasierako karta bezala",
+    "lib.arcade.cbYou": "Zu",
+    "lib.arcade.cbFoe": "Ordenagailua",
+    "lib.arcade.cbLast": "Azken karta",
+    "lib.arcade.cbCount": "Guztira: {n}",
+    "lib.arcade.cbYouDeal": "Zuk banatzen duzu",
+    "lib.arcade.cbFoeDeal": "Ordenagailuak banatzen du",
+    "lib.arcade.cbPick": "Aukeratu 2 karta cribrako",
+    "lib.arcade.cbCrib": "Cribra",
+    "lib.arcade.cbYourHand": "Zure eskua",
+    "lib.arcade.cbFoeHand": "Ordenagailuaren eskua",
+    "lib.arcade.cbStarter": "Hasierako karta",
+    "lib.arcade.cbZero": "0 puntu",
+    "lib.arcade.cbPlayed": "Jokatuak",
+    "lib.arcade.cbToCrib": "Jarri cribean",
+    "lib.arcade.cbNext": "Jarraitu",
+    "lib.arcade.cbHand": "Eskua"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Hamahiru)",
       "desc": "Vietnamgo lau jokalarientzako karta-jokoa: jokatu karta bakarrak, bikoteak, eskalak eta laukoteak eskua lehenengo husteko; 10 maila."
+    },
+    "tower-defense": {
+      "name": "Dorreen defentsa",
+      "desc": "Eraiki eta hobetu dorreak bidean zehar etsaien uhin guztiak geldiarazteko; 10 maila hiru mapa desberdinetan."
+    },
+    "color-by-number": {
+      "name": "Margotu zenbakien arabera",
+      "desc": "Margotu karratu bakoitza bere zenbakiari dagokion koloreaz irudia agerian uzteko; 10 irudi, bakoitzak kolore gehiagorekin."
+    },
+    "yukon": {
+      "name": "Yukon solitarioa",
+      "desc": "Klondike stockik gabe: mugitu aurpegi gora dagoen edozein karta bere gainean duen guztiarekin; 10 maila, aurrera egin ahala karta gutxiago aurpegi gora."
+    },
+    "chinese-checkers": {
+      "name": "Dama txinatarrak",
+      "desc": "Izar formako urrats eta salto jokoa ordenagailuaren aurka: eraman 10 piezak izkina kontrakora hura baino lehen; 10 maila."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (poker txinatarra)",
+      "desc": "Antolatu 13 karta 5, 5 eta 3 kartako hiru eskutan eta garaitu ordenagailua; 5 txanda maila bakoitzeko, 10 maila."
+    },
+    "phom": {
+      "name": "Phỏm (rummy vietnamdarra)",
+      "desc": "Bi jokalarirentzako rummy vietnamdarra ordenagailuaren aurka: hartu karta bat edo botatakoa, osatu jokaldiak eta amaitu; geratzen diren puntu gutxien dituenak irabazten du; 10 maila."
+    },
+    "shogi": {
+      "name": "Shogi (xake japoniarra)",
+      "desc": "Jokatu shogia ordenagailuaren aurka: jarri harrapatutako piezak, promozionatu eta egin xake mate erregeari; 10 maila desegiteko aukerarekin."
+    },
+    "janggi": {
+      "name": "Janggi (xake korearra)",
+      "desc": "Jokatu xake korearra ordenagailuaren aurka: jauregiko diagonalak, kanoiaren pieza bakarreko saltoak, hiru urratseko elefanteak; 10 maila desegiteko aukerarekin."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Eragin ezkerreko eta eskuineko palankak bola bizirik mantentzeko, jo bumperrak eta iritsi helburuko puntuaziora 3 bolak amaitu aurretik; 10 maila."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Bi jokalarirentzako cribbagea ordenagailuaren aurka: cribra, 31ra arteko jokaldiak, eskuen zenbaketa, 61 punturaino lasterketa; 10 maila."
     }
   },
   "s": {

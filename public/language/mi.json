@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Ngā kāri e toe ana: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "Ka pāhi a {p}.",
     "lib.arcade.tlBad": "Kāore ngā kāri kua tīpakohia e hanga huinga tika.",
-    "lib.arcade.tlLow": "Kāore tēnei huinga i te teitei ki te hinga i te tepu."
+    "lib.arcade.tlLow": "Kāore tēnei huinga i te teitei ki te hinga i te tepu.",
+    "lib.arcade.note.td": "Pātō tētahi tapawhā putua (ehara i te ara) hei hanga pourewa pupuhi, he koura te utu; pātō anō te pourewa hei whakapai ake (tae noa ki te taumata 5). Ka pupuhi aunoa ngā pourewa ki te hoariri kua haere tawhiti rawa i roto i tōna whānuitanga. Hinga ngā hoariri kia whiwhi koura anō; mēnā ka tae te 15 hoariri ki te mutunga ka hinga koe. Ora i ngā ngaru katoa hei whakaoti i te taumata.",
+    "lib.arcade.tdInfo": "Koura: {g} · Ngaru {w}/{t}",
+    "lib.arcade.tdCost": "Pourewa: {n}",
+    "lib.arcade.note.colorNum": "He tau tō ia tapawhā e rite ana ki tētahi tae o te papa tae. Kōwhiria he tae, ā, pātōhia ngā tapawhā e mau ana i taua tau hei peita; mēnā he hē te tae, kāore he peita. Peitahia tika ngā tapawhā katoa hei whakaoti i te whakaahua. He nui ake ngā tae i ngā taumata teitei.",
+    "lib.arcade.cnWrong": "He hē te tae — tirohia te tau kei te tapawhā.",
+    "lib.arcade.note.yukon": "Pēnei i a Klondike engari kāore he putunga rāpoi: ka taea te neke i tētahi kāri kua huri ake tahi ki ngā kāri katoa kei runga, ahakoa kāore i te raupapa; ko te kāri tuatahi anake me pai ki te tīwae whāinga (heke iho, whakawhiti whero me pango; ka haere te Kīngi ki tētahi tīwae takoto kau). Hangaia ngā kāri 52 katoa ki runga i ngā tūāpapa e whā, mai i te Ace ki te Kīngi. He maha ake ngā kāri kua huri ake i te tīmatanga o ngā taumata iti.",
+    "lib.arcade.yukonFree": "Ngā kāri kua huri iho: {n}",
+    "lib.arcade.note.chinesechk": "Ka tākaro koe i ngā kaipātuki kikorangi i te kōnui matau; nekehia ngā 10 katoa ki te kōnui ki te taha mauī i tua i mua i te rorohiko. I ia wā ka neke koe i te kotahi kaipātuki: he hīkoi ki tētahi poka tata takoto kau, he peke rānei i runga i tētahi kaipātuki ki te poka takoto kau kei muri tonu, ā, ka taea te peke tonu i te maha o ngā wā e hiahia ana koe. Pātō tētahi o ōu kaipātuki, ā, pātō i tētahi poka kākāriki hei neke.",
+    "lib.arcade.ccTurn": "Tāu tēnei wā · Wā {n}",
+    "lib.arcade.ccDraw": "Kua pau ngā wā — he haupārua.",
+    "lib.arcade.note.maubinh": "Ka whiwhi koe me te rorohiko i ngā kāri 13 ia tangata, ā, ka whakarite ki roto i ngā ringa 3: he ringa muri 5 kāri, he ringa waenga 5 kāri, he ringa mua 3 kāri. Me kaha te ringa muri i te ringa waenga i te iti rawa, me kaha te ringa waenga i te ringa mua i te iti rawa; ki te kore, he hē tō whakaritenga, ā, ka hinga koe i te rauna katoa. Pātō tētahi kāri, ā, pātō i te rārangi hei whakanoho (pātō i tētahi kāri kua whakanohoia hei tango anō). Ko ia ringa e wini ana he 1 whika; ko te wini i ngā ringa 3 katoa he 6. Tākarohia ngā rauna 5 — mēnā he tōpū tōrunga, ka oti te taumata. Ko te ringa mua he kāri teitei, he takirua, he toru rānei anake.",
+    "lib.arcade.mbHigh": "Kāri teitei",
+    "lib.arcade.mbPair": "Takirua",
+    "lib.arcade.mbTwoPair": "Takirua e rua",
+    "lib.arcade.mbTrips": "Toru o te momo kotahi",
+    "lib.arcade.mbStraight": "Raupapa",
+    "lib.arcade.mbFlush": "Tae kotahi",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Whā o te momo kotahi",
+    "lib.arcade.mbSflush": "Raupapa tae kotahi",
+    "lib.arcade.mbBack": "Ringa muri",
+    "lib.arcade.mbMid": "Ringa waenga",
+    "lib.arcade.mbFront": "Ringa mua",
+    "lib.arcade.mbFoe": "Rorohiko",
+    "lib.arcade.mbYou": "Koe",
+    "lib.arcade.mbFoul": "He hē!",
+    "lib.arcade.mbFoeFoul": "I hē te rorohiko!",
+    "lib.arcade.mbConfirm": "Whakaatu kāri",
+    "lib.arcade.mbReset": "Whakawātea",
+    "lib.arcade.mbHand": "Tō ringa",
+    "lib.arcade.mbRound": "Rauna {a}/{b}",
+    "lib.arcade.mbTotal": "Tapeke: {n}",
+    "lib.arcade.mbFinish": "Whakaoti",
+    "lib.arcade.mbNext": "Rauna panuku",
+    "lib.arcade.mbDraw": "He ōrite ngā whika — tākarohia anō.",
+    "lib.arcade.mbAutoMsg": "Anei tētahi whakaritenga e taunakitia ana. Ka taea e koe te whakarerekē i mua i te whakaatu i ngā kāri.",
+    "lib.arcade.note.phom": "E rua ngā kaitākaro; 9 kāri ia tangata (ko te tangata tuatahi 10). Ko te huinga he 3 neke atu rānei ngā kāri o te uara kotahi, he 3 neke atu rānei ngā kāri whai muri o te momo kotahi (he iti anake te Ace). I tōu wā, tīkina he kāri i te puranga, tangohia rānei te kāri katahi anō ka whakarērea e tō hoa tauwhainga mēnā ka hanga huinga ki tō ringa (me pupuri te kāri kua tangohia), ā, ka whakarere i tētahi kāri. Ina whakarere ia kaitākaro i ngā kāri 4, ka mutu te rauna, ā, ka wini te tangata he iti iho te tapeke o ngā kāri kāore i roto i ngā huinga (Ace = 1 … Kīngi = 13). Mēnā kei roto katoa ō kāri i ngā huinga i muri i te whakarere, ka puta koe (\"U\"), ā, ka wini wawe. Ko ngā kāri whai anga kākāriki kei roto i ō huinga pai rawa.",
+    "lib.arcade.pmDraw": "Tīki",
+    "lib.arcade.pmEat": "Tango i te kāri whakarere",
+    "lib.arcade.pmThrow": "Whakarere",
+    "lib.arcade.pmFoeAte": "I tango te rorohiko i tō kāri.",
+    "lib.arcade.pmFoeU": "I puta te rorohiko!",
+    "lib.arcade.pmTurn": "Wā {a}/{b}",
+    "lib.arcade.pmLeft": "Kāore i roto i ngā huinga: {n}",
+    "lib.arcade.pmDeck": "Puranga: {n}",
+    "lib.arcade.pmFoeHand": "Ringa o te rorohiko",
+    "lib.arcade.pmFoeDisc": "Ngā kāri whakarere a te rorohiko",
+    "lib.arcade.pmFoeEaten": "I tango te rorohiko",
+    "lib.arcade.pmMyDisc": "Ō kāri whakarere",
+    "lib.arcade.pmAte": "I tangohia e koe tēnei kāri — pupurihia ki roto i tētahi huinga.",
+    "lib.arcade.pmKeep": "Me pupuri te kāri kua tangohia — whakarerea tētahi atu kāri.",
+    "lib.arcade.pmU": "Kua puta! Kua wini wawe koe.",
+    "lib.arcade.pmYou": "Koe",
+    "lib.arcade.pmFoe": "Rorohiko",
+    "lib.arcade.pmDraw2": "He ōrite ngā whika.",
+    "lib.arcade.note.shogi": "Ko Shogi te tiāte Hapanihi. Ko te taha raro tāu, ā, ka neke tuatahi koe; ko ngā kaipātuki a te rorohiko e anga ana ki tērā atu taha. Ka haere ngā kaipātuki kua mauhia ki tō ringa, ā, ka taea te whakatakoto ki tētahi tapawhā takoto kau hei utu mō te neke (kaua rawa he pāno ki tētahi tīwae kei reira kē tētahi pāno kāore anō kia whakapaitia, kaua hoki he kaipātuki ki tētahi rārangi kāore e taea anō te neke). Ka taea te whakapai ake i tētahi kaipātuki ka neke ki roto, ki waho rānei, ki roto rānei i ngā rārangi toru whakamutunga o te hoariri (haunga te Kīngi me te Koura); he here te whakapai ake mēnā kāore he neke a muri mō te kaipātuki. Whakamateatia te Kīngi hoariri hei wini. Kanji: 歩 pāno, 香 tī, 桂 hōiho, 銀 hiriwa, 金 koura, 角 pīhopa, 飛 rūke, 玉 kīngi; ko と, 馬, 竜 me ērā atu kaipātuki whero kua whakapaitia.",
+    "lib.arcade.sgPromote": "Whakapai ake",
+    "lib.arcade.sgKeep": "Kaua e whakapai ake",
+    "lib.arcade.sgCheck": "Kei te kīngi-tirohia koe!",
+    "lib.arcade.sgWin": "Mate kīngi — i wini koe.",
+    "lib.arcade.sgLose": "I mate kīngi koe.",
+    "lib.arcade.sgAskPromote": "Whakapai ake i tēnei kaipātuki?",
+    "lib.arcade.note.janggi": "Ko Janggi te tiāte Kōrea. Ko ngā kaipātuki kikorangi kei raro tāu, ā, ka neke tuatahi koe. Kāore i pēnei i te xiangqi, kāore he awa, ā, he rārangi hauroki kei ngā whare rangatira e rua. Ka neke te Tianara me ngā Kaitiaki i te kotahi hīkoi i runga i ngā rārangi o te whare rangatira (tae atu ki ngā hauroki); ka retireti, ka hopu hoki te Hariata i runga i ngā hauroki o te whare rangatira; me peke te Pū i runga i te kotahi kaipātuki tonu (ehara i tētahi atu Pū) hei neke, hei hopu rānei, ā, kāore e taea te hopu i tētahi Pū; ka hīkoi te Hōiho i te kotahi tohu tōtika, ā, ka kotahi hauroki, te Arewhana kotahi tōtika, ā, e rua hauroki, ka puru ngā tokorua mēnā he kaipātuki kei te ara; ka neke whakamua, whakapāpāringa rānei ngā Hōia, ā, whakamua hauroki hoki i roto i te whare rangatira o te hoariri. Kāore e tika kia anga whakaaroaro ngā Tianara e rua ki a rāua anō. Whakamateatia te Tianara hoariri hei wini. Kāore te rorohiko e wareware i tōna wā.",
+    "lib.arcade.jgCheck": "Kei te kīngi-tirohia koe!",
+    "lib.arcade.jgWin": "Mate kīngi — i wini koe.",
+    "lib.arcade.jgLose": "I mate kīngi koe.",
+    "lib.arcade.note.pinball": "Pēhia te Mokowā, te Pere Ake, pātō rānei i te tēpu hei whakarewa i te poi. Pupuri i te Mauī (pātō rānei i te haurua mauī o te tēpu) hei hiki i te pātuki mauī, te Matau (te haurua matau rānei) mō te mea matau — pātō i runga i te tangi, kaua e pupuri. 100 whika te utu o ia pāmu porowhita. E 3 ō poi; whakatutukihia te whika whāinga i mua i te pau o ērā hei whakaoti i te taumata.",
+    "lib.arcade.pinBalls": "Ngā poi: {n} · Whāinga: {t}",
+    "lib.arcade.note.cribbage": "He Cribbage mō ngā kaitākaro e rua, he oma ki te 61 whika. I ia tohatoha ka whiwhi koe i ngā kāri 6, ā, ka tuku e 2 kāri huri iho ki roto i te crib (nā te kaitohatoha tērā). Ka huria ake tētahi kāri tīmatanga. Ka whakawhitiwhiti koe me tō hoa i te takaro i ngā kāri huri ake, kia kaua te tapeke e eke ki runga ake i te 31: ko te eke ki te 15 ki te 31 rānei he 2, ko te ōrite ki te kāri whakamutunga he 2/6/12, ko te raupapa o te 3 neke atu rānei kāri (ahakoa te raupapa) he whika rite ki tōna roa, ā, ina kāore he tangata e taea te takaro, ka whiwhi te kaitākaro whakamutunga i te 1 whika (\"Go\"). Ka tatau i ia ringa 4 kāri me te kāri tīmatanga: ia whakakotahitanga e 15 te tapeke he 2, ia takirua he 2, he raupapa 3+ he whika rite ki tōna roa, e whā kāri o te momo kotahi he 4 (5 me te kāri tīmatanga), ā, he Jack rite ki te momo o te kāri tīmatanga he 1. Ko te tangata ehara i te kaitohatoha te tuatahi ki te tatau, ā, ka tatau te kaitohatoha i tōna ringa me te crib.",
+    "lib.arcade.cbFifteen": "Tekau mā rima",
+    "lib.arcade.cbPair": "Takirua",
+    "lib.arcade.cbRun": "Raupapa",
+    "lib.arcade.cbFlush": "Tae kotahi",
+    "lib.arcade.cbNobs": "Jack rite ki te kāri tīmatanga",
+    "lib.arcade.cbHeels": "Jack hei kāri tīmatanga",
+    "lib.arcade.cbYou": "Koe",
+    "lib.arcade.cbFoe": "Rorohiko",
+    "lib.arcade.cbLast": "Kāri whakamutunga",
+    "lib.arcade.cbCount": "Tapeke: {n}",
+    "lib.arcade.cbYouDeal": "Nāu te tohatoha",
+    "lib.arcade.cbFoeDeal": "Nā te rorohiko te tohatoha",
+    "lib.arcade.cbPick": "Kōwhiria e 2 kāri mō te crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Tō ringa",
+    "lib.arcade.cbFoeHand": "Ringa o te rorohiko",
+    "lib.arcade.cbStarter": "Kāri tīmatanga",
+    "lib.arcade.cbZero": "0 whika",
+    "lib.arcade.cbPlayed": "Kua tākarotia",
+    "lib.arcade.cbToCrib": "Tuku ki te crib",
+    "lib.arcade.cbNext": "Haere tonu",
+    "lib.arcade.cbHand": "Ringa"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tekau mā Toru)",
       "desc": "Te kēmu kāri a Wīetinama mō te whā: purei i ngā kāri takitahi, ngā takirua, ngā rārangi me ngā whā ōrite hei whakaranu i tō ringa i te tuatahi; 10 ngā taumata."
+    },
+    "tower-defense": {
+      "name": "Tiaki Pourewa",
+      "desc": "Hangaia, whakapaihia hoki ngā pourewa i te taha o te ara hei aukati i ngā ngaru hoariri katoa; 10 taumata i runga i ngā mahere e toru."
+    },
+    "color-by-number": {
+      "name": "Peita ki ngā Tau",
+      "desc": "Peitahia ia tapawhā ki te tae e rite ana ki tōna tau hei whakaatu i te whakaahua; 10 whakaahua, he nui ake ngā tae i ia wā."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike kāore he putunga rāpoi: nekehia tētahi kāri kua huri ake ki te taha o ngā mea katoa kei runga; 10 taumata, he iti ake ngā kāri kua huri ake i ia wā."
+    },
+    "chinese-checkers": {
+      "name": "Tiekeka Hainamana",
+      "desc": "Taakaro whetū, hīkoi me te peke, ki te rorohiko: nekehia e 10 kaipātuki ki te kōnui ke i mua; 10 taumata."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Hainamana)",
+      "desc": "Whakaritea ngā kāri 13 ki ngā ringa e toru, 5, 5 me te 3 kāri, ā, hingaia te rorohiko; 5 rauna ia taumata, 10 taumata."
+    },
+    "phom": {
+      "name": "Phom (Rummy Whītināmu)",
+      "desc": "Rummy Whītināmu mō ngā kaitākaro e rua ki te rorohiko: tīkina, tangohia rānei he kāri whakarere, hangaia ngā huinga, ā, puta; ko te iti rawa o ngā whika toenga te wini; 10 taumata."
+    },
+    "shogi": {
+      "name": "Shogi (Tiāte Hapanihi)",
+      "desc": "Tākaro Shogi ki te rorohiko: whakatakotoria ngā kaipātuki kua mauhia, whakapaihia, ā, whakamateatia te kīngi; 10 taumata me te whakahoki neke."
+    },
+    "janggi": {
+      "name": "Janggi (Tiāte Kōrea)",
+      "desc": "Tākaro i te tiāte Kōrea ki te rorohiko: ngā hauroki whare rangatira, ngā peke pū i runga i te kotahi kaipātuki, ngā arewhana e toru hīkoi; 10 taumata me te whakahoki neke."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Pēhia te mauī me te matau kia ora tonu te poi, patua ngā pāmu, ā, tae ki te whika whāinga i mua i te pau o ō poi e 3; 10 taumata."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage mō ngā kaitākaro e rua ki te rorohiko: crib, pegging ki te 31, tatau ringa, oma ki te 61 whika; 10 taumata."
     }
   },
   "s": {

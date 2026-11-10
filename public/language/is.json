@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Veldu lit til að fylla allt svæðið sem þú átt efst í vinstra horni; það gleypir nálæga reiti í þeim lit. Gerðu allt borðið einlitt innan leyfilegs fjölda leikja.",
     "lib.arcade.note.mastermind": "Tölvan felur röð af litum. Veldu lit fyrir hverja stöðu og ýttu síðan á Giska. Svartur pinni = réttur litur á réttum stað; hvítur pinni = réttur litur á röngum stað. Ráddu kóðann áður en ágiskanirnar klárast.",
     "lib.arcade.note.hanoi": "Færðu allar skífurnar á síðasta stólpann. Færðu aðeins efstu skífu stólpa í einu og settu aldrei stærri skífu ofan á minni. Smelltu á upphafsstólpann og svo á áfangastólpann.",
-    "lib.arcade.note.pipes": "Smelltu á flís til að snúa pípunni um 90°. Tengdu allar pípur í eitt net án opinna enda (opnir endar eru rauðir)."
+    "lib.arcade.note.pipes": "Smelltu á flís til að snúa pípunni um 90°. Tengdu allar pípur í eitt net án opinna enda (opnir endar eru rauðir).",
+    "lib.arcade.pongScore": "Þú {a} – {b} tölva (fyrst í {t})",
+    "lib.arcade.kills": "Eyðilagt: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} björg eftir",
+    "lib.arcade.timeLeft": "{n} sek. eftir",
+    "lib.arcade.stepsN": "Skref: {n}",
+    "lib.arcade.crossed": "Komin heim: {n}/{t}",
+    "lib.arcade.pipes": "Rör framhjá: {n}/{t}",
+    "lib.arcade.distance": "Vegalengd: {n}/{t} m",
+    "lib.arcade.speedN": "Hraði: {n}",
+    "lib.arcade.note.whack-a-mole": "Moldvörpur skjótast upp úr holunum — smelltu eða ýttu á moldvörpu til að slá hana. Sláðu nógu margar moldvörpur áður en tíminn rennur út. Frá borði 4 eru sprengjur: ef þú slærð eina missir þú stig.",
+    "lib.arcade.hole": "Hola",
+    "lib.arcade.hitsN": "Högg: {n}/{t}",
+    "lib.arcade.note.simon": "Leikurinn spilar röð af litum og hljóðum — endurtaktu hana í sömu röð. Í hverri umferð bætist eitt skref við. Mundu nauðsynlega lengd til að komast í gegnum borðið. Frá borði 7 eru 6 púðar.",
+    "lib.arcade.seqN": "Runa: {n}/{t}",
+    "lib.arcade.watch": "Horfðu…",
+    "lib.arcade.yourTurnShort": "Þinn leikur",
+    "lib.arcade.note.aim-trainer": "Skotmörk birtast af handahófi og hverfa fljótt — hittu eins mörg og þú getur. Þau verða minni og hraðari. Hittu nógu mörg skotmörk áður en þú missir af fleiri en 5 til að komast í gegnum borðið.",
+    "lib.arcade.missN": "Misst: {n}/{t}",
+    "lib.arcade.answer": "Svar",
+    "lib.arcade.note.quick-math": "Reiknaðu í huganum eins hratt og þú getur: sláðu inn svarið og ýttu á Enter. Hver spurning hefur tímamörk; rangt svar eða tímaskortur kostar eitt líf (þú átt 3). Svaraðu nógu mörgum spurningum rétt til að komast í gegnum borðið.",
+    "lib.arcade.correctN": "Rétt: {n}/{t}",
+    "lib.arcade.note.reaction": "Bíddu þar til skjárinn verður grænn og smelltu síðan eins hratt og þú getur. Að smella of snemma er villa (3 villur og þú tapar). Meðaltal þitt úr 5 umferðum þarf að vera betra en mörk borðsins.",
+    "lib.arcade.roundN": "Orð {n}/{t}",
+    "lib.arcade.limitMs": "Mörk: {n} ms",
+    "lib.arcade.rxWait": "Bíddu eftir grænu…",
+    "lib.arcade.rxGo": "SMELLTU!",
+    "lib.arcade.rxEarly": "Of snemmt!",
+    "lib.arcade.gameArea": "Leiksvæði",
+    "lib.arcade.note.pong": "Hreyfðu músina, dragðu fingurinn eða notaðu ← → takkana til að stjórna spaðanum neðst. Sláðu boltann fram hjá tölvunni; sá sem fær 5 stig fyrst vinnur. Boltinn hraðar sér við hvert högg.",
+    "lib.arcade.note.space-shooter": "Hreyfðu músina, dragðu fingurinn eða notaðu ← → takkana til að stýra; skipið þitt skýtur sjálfkrafa. Eyddu nógu mörgum óvinaskipum til að komast í gegnum borðið og forðastu árekstra og skot óvinanna. Þú átt 3 líf.",
+    "lib.arcade.note.asteroids": "← → snúa skipinu, ↑ gefur kraft, bilslá skýtur. Eyddu öllum björgunum til að komast í gegnum borðið; stór björg splundrast í minni. Skipið kemur út hinum megin þegar það fer út af skjánum. Þú átt 3 líf.",
+    "lib.arcade.note.maze": "Notaðu örvatakkana (eða strjúktu, eða hnappana) til að komast frá græna punktinum að rauða fánanum áður en tíminn rennur út. Frá borði 5 er þoka í völundarhúsinu: þú sérð aðeins næsta nágrenni og staðir sem þú hefur komið á eru munaðir.",
+    "lib.arcade.note.road-cross": "Notaðu örvatakkana, strjúktu eða hnappana til að láta froskinn hoppa neðan frá og upp. Forðastu umferðina; frá borði 5 er efri hlutinn á og þá þarf að hoppa á flotandi trjástofna. Komdu heim 3 sinnum til að komast í gegnum borðið. Þú átt 3 líf.",
+    "lib.arcade.note.flappy": "Ýttu á leiksvæðið, ýttu á bilslá eða ↑ til að blaka vængjum. Flýgðu í gegnum bilin milli röranna án þess að snerta rör, jörð eða loft. Á hærri borðum eru bilin þrengri og flugið hraðara.",
+    "lib.arcade.note.runner": "Ýttu á leiksvæðið, ýttu á bilslá eða ↑ til að hoppa yfir kaktusa; haltu ↓ inni til að beygja þig undir háfleyga fugla (eða hoppaðu yfir lágfleyga). Hlauptu nógu langt til að komast í gegnum borðið. Hraðinn eykst stöðugt.",
+    "lib.arcade.fire": "Skjóta",
+    "lib.arcade.jump": "Hoppa",
+    "lib.arcade.aimTarget": "Skotmark",
+    "lib.game.soundOn": "Kveikja á hljóði",
+    "lib.game.soundOff": "Slökkva á hljóði",
+    "lib.arcade.note.kalah": "Þú spilar neðri röðina, tölvan þá efri; stóra holan til hægri er geymslan þín. Smelltu á holu til að taka öll fræin úr henni og sá þeim rangsælis, einu í hverja holu (slepptu geymslu andstæðingsins). Ef síðasta fræið lendir í geymslunni þinni færðu aukaleik; ef það lendir í tómri holu á þinni hlið á móti holu með fræjum, hirðir þú þau fræ. Þegar önnur hliðin er tóm fara fræ hinnar hliðarinnar í geymslu eiganda hennar; sá sem er með stærri geymslu vinnur.",
+    "lib.arcade.note.snakes": "Kastaðu teningnum og færðu þig svo mörg reiti, frá 1 upp í 100. Lendirðu við rætur stiga klifrar þú upp; lendirðu á höfði slöngu rennur þú niður. Frá borði 4 þarftu að kasta nákvæmri tölu til að lenda á 100. Á hærri borðum eru fleiri slöngur, færri stigar og fleiri andstæðingar. Sá sem kemst fyrst á 100 vinnur.",
+    "lib.arcade.square": "Reitur {n}",
+    "lib.arcade.ladderUp": "Upp stigann!",
+    "lib.arcade.snakeDown": "Slanga gleypti þig!",
+    "lib.arcade.needExact": "Þú þarft nákvæma tölu til að lenda á 100.",
+    "lib.arcade.note.nmm": "Hvor hlið hefur 9 menn. Fyrri hluti: skiptist á að setja menn á tóma punkta. Seinni hluti: renndu manni á næsta tóma punkt. Þegar aðeins 3 menn eru eftir máttu „fljúga“ á hvaða tóma punkt sem er. Myndaðu þrjá í röð („mylla“) til að fjarlægja mann andstæðingsins (fyrst þá sem eru ekki í myllu). Þú tapar þegar þú átt aðeins 2 menn eða getur ekki hreyft þig. Þú ert hvítur og byrjar.",
+    "lib.arcade.inHand": "Eftir að setja: {a} · {b}",
+    "lib.arcade.removePiece": "Veldu mann andstæðingsins til að fjarlægja.",
+    "lib.arcade.enemyWaters": "Hafsvæði óvinarins (smelltu til að skjóta)",
+    "lib.arcade.yourFleet": "Þinn floti",
+    "lib.arcade.note.battleship": "Hvor hlið hefur 5 skip (lengd 5, 4, 3, 3, 2) sem er raðað af handahófi á 10x10 rist. Skiptist á að skjóta á reit: hitt verður rautt, framhjá verður ljósblátt og skipið sekkur þegar allir reitir þess eru hittir. Sá sem sekkur öllum flota hins fyrst vinnur. Á hærri borðum ályktar tölvan staðsetningu skipa þinna á snjallari hátt.",
+    "lib.arcade.shipsLeft": "Skip eftir: þú {a} · óvinur {b}",
+    "lib.arcade.theySunk": "Óvinurinn sökkti einu skipa þinna!",
+    "lib.arcade.theyHit": "Óvinurinn hitti eitt skipa þinna.",
+    "lib.arcade.theyMiss": "Óvinurinn skaut framhjá.",
+    "lib.arcade.youSunk": "Þú sökkvaðir óvinaskipi!",
+    "lib.arcade.youHit": "Hitti!",
+    "lib.arcade.youMiss": "Framhjá.",
+    "lib.arcade.shake": "Hrista",
+    "lib.arcade.clearBets": "Hreinsa veðmál",
+    "lib.arcade.note.bau-cua": "Aðeins sýndarmynt — engir raunverulegir peningar. Veldu verðgildi spilapeninga, smelltu á dýrin til að leggja undir og ýttu svo á Hrista. Fyrir hvern tening sem passar við dýr sem þú veðjaðir á færðu innleggið til baka og jafn mikið að auki fyrir hvert samsvarandi dýr. Náðu markmiðinu í mynt innan leyfðra umferða til að komast í gegnum borðið.",
+    "lib.arcade.note.baccarat": "Aðeins sýndarmynt — engir raunverulegir peningar. Veðjaðu á Player, Banker eða Tie og ýttu svo á Gefa. Gildi handar er síðasti tölustafur summunnar (A = 1, 2–9 eftir tölugildi, 10/J/Q/K = 0); höndin sem er nær 9 vinnur og þriðja spilið er dregið samkvæmt hefðbundnum reglum. Player greiðir 1:1, Banker 0,95:1, Tie 8:1 (veðmál á Player/Banker eru endurgreidd ef jafntefli verður). Náðu markmiðinu í mynt innan leyfðra umferða til að komast í gegnum borðið.",
+    "lib.arcade.banker": "Banker",
+    "lib.arcade.player": "Player",
+    "lib.arcade.tie": "Jafntefli",
+    "lib.arcade.openCards": "Sýna",
+    "lib.arcade.note.bai-cao": "Aðeins sýndarmynt — engir raunverulegir peningar. Hvor hlið fær 3 spil. Stig handar eru síðasti tölustafur summunnar (A = 1, 2–9 eftir tölugildi, 10/J/Q/K = 10, þ.e. 0 stig). Röðun: þrjú eins („Sáp“) er hæst, svo þrjú mannspil („Ba tiên“), síðan 9 stig niður í 0. Leggðu undir, ýttu á Gefa og síðan á Sýna til að bera saman við gjafarann. Frá borði 6 vinnur gjafarinn jafntefli. Náðu markmiðinu í mynt innan leyfðra umferða til að komast í gegnum borðið.",
+    "lib.arcade.caoSap": "Þrjú eins",
+    "lib.arcade.caoBaTien": "Þrjú mannspil",
+    "lib.arcade.caoPts": "{n} stig",
+    "lib.arcade.note.bingo": "Tölvan kallar upp tölur frá 1 til 75. Þegar upphrópuð tala er á spjaldinu þínu skaltu smella á hana til að merkja (miðjan er ókeypis). Kláraðu röð, dálk eða skálínu og ýttu á BINGO! — þú þarft að vinna tölvuandstæðingana. Rangt BINGO! læsir hnappnum í nokkrar sekúndur. Á hærri borðum er kallað hraðar og andstæðingarnir fleiri.",
+    "lib.arcade.opponentsN": "Andstæðingar: {n}",
+    "lib.arcade.falseBingo": "Ekki full lína enn! Hnappurinn er læstur í 3 sekúndur.",
+    "lib.arcade.bingoGo": "Tölur kallaðar upp!",
+    "lib.arcade.note.yahtzee": "Í hverri umferð kastarðu 5 teningum allt að 3 sinnum: smelltu á tening til að halda honum og ýttu svo á Kasta til að kasta hinum aftur. Veldu síðan reit í töflunni til að skrá stig (hver reitur er notaður einu sinni; reitur sem passar ekki gefur 0). 13 umferðir. Reitirnir Einn–Sex gefa 35 í bónus ef þeir ná samtals 63 eða meira. Náðu markstigum borðsins til að vinna.",
+    "lib.arcade.turnN": "Umferð {n}/13",
+    "lib.arcade.pickCat": "Veldu reit til að skrá stig",
+    "lib.arcade.rollsLeft": "Kasta ({n} eftir)",
+    "lib.arcade.upperBonus": "Bónus fyrir Einn–Sex",
+    "lib.arcade.scored": "Skráð {n}",
+    "lib.arcade.note.crazy-eights": "Spilaðu spili sem passar við efsta spilið í kastbunkanum í lit eða gildi. Áttur eru villispil: þú getur spilað þeim hvenær sem er og valið nýjan lit. Ef þú átt ekkert spilanlegt spil skaltu draga úr bunkanum (allt að 3 spil); ef þú getur enn ekki spilað sleppirðu. Sá sem losnar fyrst við öll spilin vinnur. Á hærri borðum eru fleiri andstæðingar og tölvan spilar snjallar.",
+    "lib.arcade.opponent": "Andstæðingur",
+    "lib.arcade.pileLeft": "Dráttarbunki: {n}",
+    "lib.arcade.pickSuit": "Veldu nýjan lit",
+    "lib.arcade.aiSuit": "Tölvan valdi {s}",
+    "lib.arcade.aiPass": "Tölvan sleppir.",
+    "lib.arcade.mustPlay": "Þú átt spilanlegt spil — spilaðu því.",
+    "lib.arcade.youPass": "Þú dróst 3 spil og sleppir.",
+    "lib.arcade.bcGourd": "Grasker",
+    "lib.arcade.bcCrab": "Krabbi",
+    "lib.arcade.bcShrimp": "Rækja",
+    "lib.arcade.bcFish": "Fiskur",
+    "lib.arcade.bcRooster": "Hani",
+    "lib.arcade.bcDeer": "Dádýr",
+    "lib.arcade.yOnes": "Einn",
+    "lib.arcade.yTwos": "Tveir",
+    "lib.arcade.yThrees": "Þrír",
+    "lib.arcade.yFours": "Fjórir",
+    "lib.arcade.yFives": "Fimm",
+    "lib.arcade.ySixes": "Sex",
+    "lib.arcade.yThree": "Þrír eins",
+    "lib.arcade.yFour": "Fjórir eins",
+    "lib.arcade.yFull": "Fullt hús (25)",
+    "lib.arcade.ySmall": "Lítil runa (30)",
+    "lib.arcade.yLarge": "Stór runa (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Tækifæri",
+    "lib.arcade.note.race": "Ýttu á ← → (eða ýttu á akreinina sem þú vilt) til að skipta um akrein og forðast bílana fram undan. Þú átt 3 líf; keyrðu alla vegalengdina til að komast í gegnum borðið. Á hærri borðum eru fleiri akreinar og hraðari umferð.",
+    "lib.arcade.note.jump": "Persónan skoppar sjálf. Ýttu á ← → eða dragðu fingurinn til að lenda á næsta palli. Bláir pallar hreyfast, brúnir brotna þegar þú lendir á þeim. Þú tapar ef þú fellur út af skjánum; klifraðu nógu hátt til að komast í gegnum borðið.",
+    "lib.arcade.note.miner": "Krókurinn sveiflast fram og til baka; ýttu á bilslá, ↓ eða ýttu á svæðið til að sleppa honum. Stórt gull og björg eru þung og dragast hægt upp; demantar eru mikils virði. Náðu markfjárhæðinni áður en 60 sekúndurnar renna út.",
+    "lib.arcade.note.slicer": "Strjúktu fingri eða mús yfir ávöxtinn til að skera hann. Forðastu svörtu sprengjurnar. Að missa af ávexti eða skera sprengju kostar líf (þú átt 3). Skerðu nógu mikið af ávöxtum til að komast í gegnum borðið.",
+    "lib.arcade.note.hoops": "Ýttu á völlinn, dragðu niður á við (eins og slöngvu) og slepptu til að skjóta boltanum í körfuna. Því lengra sem þú dregur, því harðara er skotið. Skoraðu nógu margar körfur innan skotanna sem þú átt; frá borði 4 hreyfist karfan.",
+    "lib.arcade.note.bubbles": "Hreyfðu músina eða fingurinn til að miða og smelltu/ýttu svo eða ýttu á bilslá/Skjóta til að skjóta. Tengdu 3 eða fleiri kúlur í sama lit til að sprengja þær; kúlur sem missa stuðning falla. Raðirnar síga hægt niður, svo haltu þeim frá neðstu línunni. Hreinsaðu allar kúlur til að vinna.",
+    "lib.arcade.note.chase": "Notaðu örvatakkana (eða strjúktu / hnappana) til að beygja og éta alla punkta í völundarhúsinu en forðast draugana sem elta þig. Þú átt 3 líf; á hærri borðum eru fleiri draugar sem eru hraðari og elta snjallar.",
+    "lib.arcade.height": "Hæð: {n}/{t} m",
+    "lib.arcade.money": "Peningar: {n}/{t}",
+    "lib.arcade.sliced": "Skorið: {n}/{t}",
+    "lib.arcade.hoopScore": "Skorað: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} skot eftir",
+    "lib.arcade.bubbleLeft": "{n} kúlur eftir",
+    "lib.arcade.shotsN": "Skot: {n}",
+    "lib.arcade.dotsLeft": "{n} punktar eftir",
+    "lib.arcade.note.kakuro": "Fylltu hvítu reitina með tölustöfunum 1–9 þannig að hver runa leggist saman í vísbendinguna í svarta reitnum (talan efst til hægri á við um rununa til hægri, talan neðst til vinstri um rununa niður á við) og enginn tölustafur endurtaki sig í runu. Notaðu örvatakkana til að færa þig.",
+    "lib.arcade.note.kenken": "Fylltu ristina með tölunum 1 til N þannig að engin tala endurtaki sig í neinni röð eða dálki. Hvert þykkt afmarkað svæði sýnir markgildi og aðgerð (+, −, ×, ÷): tölurnar á svæðinu verða að gefa þá niðurstöðu. Notaðu örvatakkana til að færa þig.",
+    "lib.arcade.note.wordGuess": "Giskaðu á leynilega enska orðið. Eftir hverja tilraun þýðir grænt rétt stafur á réttum stað, gult að stafurinn er í orðinu en annars staðar og grátt að hann er ekki í orðinu. Skrifaðu á lyklaborðið eða notaðu takkana á skjánum og ýttu á Enter til að senda. Á hærri borðum eru orðin lengri og tilraunirnar færri.",
+    "lib.arcade.note.hangman": "Giskaðu á leynilega enska orðið með því að velja einn staf í einu. Hver rangur stafur bætir hluta við hengda fígúruna; þegar þú átt ekki fleiri rangar ágiskanir tapar þú. Á hærri borðum eru orðin lengri og færri rangar ágiskanir leyfðar.",
+    "lib.arcade.note.scramble": "Raðaðu ruglaða stöfunum upp í alvöru enskt orð og skrifaðu það í svarreitinn. Hvert borð hefur 5 orð; leystu að minnsta kosti 4 áður en tími hvers orðs rennur út til að komast í gegnum borðið. Vísbendingin sýnir fyrsta stafinn.",
+    "lib.arcade.cellsLeft": "{n} tómir reitir eftir",
+    "lib.arcade.wrongN": "{n} reitir eru ekki réttir.",
+    "lib.arcade.noError": "Engar villur fundnar enn.",
+    "lib.arcade.tooShort": "Of fáir stafir",
+    "lib.arcade.answerIs": "Svar: {w}",
+    "lib.arcade.livesLeft": "{n} rangar ágiskanir eftir",
+    "lib.arcade.yourAnswer": "Svarið þitt",
+    "lib.arcade.skip": "Sleppa",
+    "lib.arcade.notThis": "Ekki rétt, reyndu aftur.",
+    "lib.arcade.startsWith": "Fyrsti stafur: {c}",
+    "lib.arcade.note.domino": "Hver leikmaður fær 7 kubba; sá sem á hæsta tvöfalda kubbinn byrjar. Spilaðu kubbi sem passar við annan enda keðjunnar. Ef þú getur ekki spilað skaltu draga úr bunkanum þar til þú getur; ef hann er tómur sleppirðu. Sá sem losnar fyrst við alla kubba vinnur; ef báðir eru fastir vinnur sá sem hefur færri augu samtals.",
+    "lib.arcade.note.hearts": "Fjórir leikmenn, 13 spil hver. Laufatvistur byrjar. Þú verður að fylgja lit ef þú getur. Hvert hjarta er 1 stig og spaðadrottning 13; sá sem tekur slag fær stigin í honum. Lægra er betra, og ef einn tekur öll 26 stigin fá allir hinir 26. Þú mátt ekki ganga út með hjarta fyrr en hjarta hefur verið spilað. Eftir síðustu gjöf vinnur þú ef stigin þín eru lægst (eða jöfn þeim lægstu).",
+    "lib.arcade.note.holdem": "Einvígi gegn tölvunni, eingöngu með sýndarspilapeningum. Hvor leikmaður fær 2 spil á hendi og 5 sameiginleg spil eru afhjúpuð (flop, turn, river); myndaðu bestu 5 spila höndina. Í hverri umferð geturðu gefið (fold), jafnað (eða tékkað) eða hækkað. Blindir hækka á 4 gjafa fresti. Þú vinnur þegar tölvan klárar spilapeningana sína eða með fleiri spilapeninga eftir hámarksfjölda gjafa. Engir raunverulegir peningar eru í spilinu.",
+    "lib.arcade.dmDraw": "Draga kubb",
+    "lib.arcade.dmPass": "Sleppa",
+    "lib.arcade.dmEmpty": "Enginn kubbur spilaður enn",
+    "lib.arcade.dmYard": "Bunki: {n} kubbar",
+    "lib.arcade.dmLeft": "Vinstri endi",
+    "lib.arcade.dmRight": "Hægri endi",
+    "lib.arcade.dmTie": "Jafntefli! Báðir jafnir.",
+    "lib.arcade.hrHand": "Gjöf {n}/{t}",
+    "lib.arcade.hrTook": "{p} vinnur slaginn ({n} stig).",
+    "lib.arcade.hrIllegal": "Þú mátt ekki spila þessu spili (fylgdu lit, eða ekkert hjarta hefur verið spilað enn).",
+    "lib.arcade.blinds": "Stóra blind: {n}",
+    "lib.arcade.pot": "Pottur: {n}",
+    "lib.arcade.fold": "Gefa",
+    "lib.arcade.check": "Tékka",
+    "lib.arcade.callN": "Jafna {n}",
+    "lib.arcade.raiseTo": "Hækka í",
+    "lib.arcade.raiseN": "Hækka í {n}",
+    "lib.arcade.thOppFold": "Tölvan gefur; þú vinnur þessa gjöf.",
+    "lib.arcade.thYouFold": "Þú gafst.",
+    "lib.arcade.thOppWin": "Tölvan vinnur þessa gjöf",
+    "lib.arcade.thYouWin": "Þú vinnur þessa gjöf",
+    "lib.arcade.thSplit": "Potturinn skiptist",
+    "lib.arcade.thAiFold": "Tölvan gefur.",
+    "lib.arcade.thAiRaise": "Tölvan hækkar í {n}.",
+    "lib.arcade.thAiCall": "Tölvan jafnar / tékkar.",
+    "lib.arcade.hand.high": "Hæsta spil",
+    "lib.arcade.hand.pair": "Par",
+    "lib.arcade.hand.twoPair": "Tvö pör",
+    "lib.arcade.hand.trips": "Þrír eins",
+    "lib.arcade.hand.straight": "Runa",
+    "lib.arcade.hand.flush": "Litur",
+    "lib.arcade.hand.full": "Fullt hús",
+    "lib.arcade.hand.quads": "Fjórir eins",
+    "lib.arcade.hand.sflush": "Litarruna",
+    "lib.arcade.note.nback": "Reitur lýsist upp hver á eftir öðrum á 3x3 ristinni. Ýttu á „Eins!“ (eða bilslá) þegar upplýsti reiturinn er sá sami og fyrir N skrefum (N sést fyrir ofan). Þú þarft að minnsta kosti 80% rétt til að komast í gegnum borðið. Á hærri borðum er N stærra.",
+    "lib.arcade.nbMatch": "Eins!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Rétt: {a} · Rangt: {b}",
+    "lib.arcade.nbAcc": "Nákvæmni: {n}%",
+    "lib.arcade.note.clicker": "Smelltu á kökuna til að baka kökur og eyddu þeim svo í hjálparmenn sem baka sjálfkrafa (verðið hækkar með hverjum sem þú kaupir). Bakaðu markfjölda af kökum innan 2 mínútna til að komast í gegnum borðið.",
+    "lib.arcade.ckCursor": "Bendill",
+    "lib.arcade.ckGrandma": "Bakandi amma",
+    "lib.arcade.ckFarm": "Bú",
+    "lib.arcade.ckMine": "Sykurnáma",
+    "lib.arcade.ckFactory": "Verksmiðja",
+    "lib.arcade.ckCookie": "Kaka",
+    "lib.arcade.ckEarned": "Bakað: {n}/{t}",
+    "lib.arcade.chips2": "Kökur: {n}",
+    "lib.arcade.ckCps": "{n} kökur/sekúndu",
+    "lib.arcade.note.onet": "Veldu tvo eins kubba sem hægt er að tengja með leið með í mesta lagi 2 beygjum sem fer ekki yfir aðra kubba til að fjarlægja þá. Hreinsaðu alla kubba áður en tíminn rennur út til að vinna. Þegar engir leikir eru eftir geturðu stokkað (takmarkaður fjöldi skipta).",
+    "lib.arcade.shuffle": "Stokka",
+    "lib.arcade.tilesLeft": "{n} kubbar eftir",
+    "lib.arcade.autoShuffle": "Engir leikir eftir — stokkað sjálfkrafa.",
+    "lib.arcade.note.jigsaw": "Myndin er skorin í bita og stokkuð. Ýttu á einn bita og svo annan til að víxla þeim og endurbyggðu myndina sem sýnd er til viðmiðunar. Bitar á réttum stað fá grænan ramma. Á hærri borðum eru bitarnir fleiri.",
+    "lib.arcade.jgRef": "Viðmiðunarmynd",
+    "lib.arcade.jgPlaced": "Á réttum stað: {a}/{b}",
+    "lib.arcade.golfStrokes": "Högg: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Þú ert með hvítu taflmennina og færir þá frá efra horni til hægri hringinn í neðra horn til hægri (heimasvæðið þitt). Kastaðu teningunum, smelltu á taflmanninn sem þú vilt færa og smelltu síðan á upplýstan áfangastað. Ef þú lendir á punkti með nákvæmlega einum andstæðingi slærðu hann á miðjustikuna og sá leikmaður þarf að koma honum aftur inn fyrst. Þú mátt ekki lenda á punkti með tveimur eða fleiri andstæðingum. Þegar allir 15 taflmennirnir þínir eru komnir á heimaborðið (síðustu 6 punktana) máttu taka þá út. Sá sem tekur alla 15 út fyrst vinnur.",
+    "lib.arcade.bgRoll": "Kasta teningunum",
+    "lib.arcade.bgOff": "Taka út",
+    "lib.arcade.bgRollFirst": "Kasta teningunum",
+    "lib.arcade.bgInfo": "Úti: þú {a} · tölva {b} · Stig: {c} / {d}",
+    "lib.arcade.youNoMove": "Þú átt engan löglegan leik eftir.",
+    "lib.arcade.note.tienlen": "Fjórir leikmenn, 13 spil hver. Röð spila frá lágu til háu: 3, 4, … K, A, 2; litir frá lágum til háum: spaðar, lauf, tíglar, hjörtu. Sá sem á spaðaþrist byrjar. Spilaðu staku spili, pari, þremur eins, fjórum eins eða runu með 3 eða fleiri samfelldum spilum (engar tvistar). Næsti leikmaður verður að spila sömu gerð og hærra, eða sleppa; fjórir eins geta slegið einn tvist eða par af tvistum. Þegar allir aðrir sleppa má sá sem síðast spilaði ganga út með hvað sem er. Sá sem losnar fyrst við öll spilin vinnur. Veldu spil og ýttu svo á Spila.",
+    "lib.arcade.tlPlay": "Spila",
+    "lib.arcade.tlPass": "Sleppa",
+    "lib.arcade.tlClear": "Hreinsa val",
+    "lib.arcade.tlPassed": "sleppti",
+    "lib.arcade.tlFree": "Borðið er tómt — þú mátt ganga út með hvað sem er",
+    "lib.arcade.tlLeft": "Spil eftir: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} sleppir.",
+    "lib.arcade.tlBad": "Valin spil mynda ekki gilda samsetningu.",
+    "lib.arcade.tlLow": "Þessi samsetning er ekki nógu há til að slá spilin á borðinu.",
+    "lib.arcade.note.td": "Ýttu á tóman reit (ekki stíginn) til að byggja skotturn, sem kostar gull; ýttu aftur á turn til að uppfæra hann (upp í stig 5). Turnar skjóta sjálfkrafa á óvininn sem hefur komist lengst innan drægis. Sigraðu óvini til að vinna þér inn meira gull; ef 15 óvinir ná á leiðarenda tapar þú. Lifðu af allar bylgjur til að komast í gegnum borðið.",
+    "lib.arcade.tdInfo": "Gull: {g} · Bylgja {w}/{t}",
+    "lib.arcade.tdCost": "Turn: {n}",
+    "lib.arcade.note.colorNum": "Hver reitur hefur tölu sem samsvarar lit í litaspjaldinu. Veldu lit og ýttu svo á reitina með þeirri tölu til að lita þá; ef þú notar rangan lit gerist ekkert. Litaðu alla reiti rétt til að ljúka myndinni. Á hærri borðum eru litirnir fleiri.",
+    "lib.arcade.cnWrong": "Rangur litur — athugaðu töluna á reitnum.",
+    "lib.arcade.note.yukon": "Eins og Klondike en án bunka: hvert uppsnúið spil má færa ásamt öllum spilum ofan á því, jafnvel þótt þau séu ekki í röð; aðeins fyrsta spilið þarf að passa á áfangadálkinn (lækkandi, til skiptis rautt og svart; kóngur fer í tóman dálk). Byggðu öll 52 spilin upp á fjórum grunnbunkum frá ási til kóngs. Á lágum borðum eru fleiri spil þegar uppsnúin í upphafi.",
+    "lib.arcade.yukonFree": "Niðursnúin spil: {n}",
+    "lib.arcade.note.chinesechk": "Þú spilar bláu mennina í hægra horninu; færðu alla 10 yfir í gagnstæða vinstra hornið áður en tölvan gerir það. Í hverri umferð færðu einn mann: stígðu í tóma nágrannaholu eða stökktu yfir hvaða mann sem er í tóma holuna rétt fyrir aftan hann og haltu áfram að stökkva eins oft og þú vilt. Ýttu á einn manna þinna og svo á græna holu til að færa.",
+    "lib.arcade.ccTurn": "Þinn leikur · Umferð {n}",
+    "lib.arcade.ccDraw": "Umferðir búnar — jafntefli.",
+    "lib.arcade.note.maubinh": "Þú og tölvan fáið 13 spil hvort og raðið þeim í 3 hendur: 5 spila aftari hönd, 5 spila miðhönd og 3 spila fremri hönd. Aftari höndin verður að vera að minnsta kosti jafn sterk og miðhöndin og miðhöndin jafn sterk og fremri höndin; annars er uppröðunin ógild og þú tapar allri umferðinni. Ýttu á spil og svo á röðina þar sem það á að vera (ýttu á lagt spil til að taka það til baka). Hver hönd sem þú vinnur gefur 1 stig; að vinna allar 3 gefur 6. Spilaðu 5 umferðir — jákvæð heildarstig komast í gegnum borðið. Fremri höndin getur aðeins verið hæsta spil, par eða þrír eins.",
+    "lib.arcade.mbHigh": "Hæsta spil",
+    "lib.arcade.mbPair": "Par",
+    "lib.arcade.mbTwoPair": "Tvö pör",
+    "lib.arcade.mbTrips": "Þrír eins",
+    "lib.arcade.mbStraight": "Runa",
+    "lib.arcade.mbFlush": "Litur",
+    "lib.arcade.mbFull": "Fullt hús",
+    "lib.arcade.mbQuads": "Fjórir eins",
+    "lib.arcade.mbSflush": "Litarruna",
+    "lib.arcade.mbBack": "Aftari hönd",
+    "lib.arcade.mbMid": "Miðhönd",
+    "lib.arcade.mbFront": "Fremri hönd",
+    "lib.arcade.mbFoe": "Tölva",
+    "lib.arcade.mbYou": "Þú",
+    "lib.arcade.mbFoul": "Ógild uppröðun!",
+    "lib.arcade.mbFoeFoul": "Uppröðun tölvunnar er ógild!",
+    "lib.arcade.mbConfirm": "Sýna spil",
+    "lib.arcade.mbReset": "Hreinsa",
+    "lib.arcade.mbHand": "Höndin þín",
+    "lib.arcade.mbRound": "Umferð {a}/{b}",
+    "lib.arcade.mbTotal": "Samtals: {n}",
+    "lib.arcade.mbFinish": "Ljúka",
+    "lib.arcade.mbNext": "Næsta umferð",
+    "lib.arcade.mbDraw": "Jafnt á stigum — spilaðu aftur.",
+    "lib.arcade.mbAutoMsg": "Hér er tillaga að uppröðun. Þú getur breytt henni áður en þú sýnir spilin.",
+    "lib.arcade.note.phom": "Tveir leikmenn; hvor fær 9 spil (sá sem byrjar fær 10). Samstæða er 3 eða fleiri spil með sama gildi, eða 3 eða fleiri samfelld spil í sama lit (ás er aðeins lágur). Í þinni umferð dregurðu spil úr bunkanum eða tekur spilið sem andstæðingurinn henti ef það myndar samstæðu með spilunum þínum (spil sem þú tókst verður að halda), og hendir síðan einu spili. Þegar hvor hefur hent 4 spilum lýkur umferðinni og sá sem hefur lægri samtölu ósamstæðra spila (ás = 1 … kóngur = 13) vinnur. Ef öll spilin þín eru í samstæðum eftir að þú hendir spili segirðu „U“ og vinnur strax. Spil með grænni útlínu eru í bestu samstæðuuppröðun þinni.",
+    "lib.arcade.pmDraw": "Draga",
+    "lib.arcade.pmEat": "Taka hent spil",
+    "lib.arcade.pmThrow": "Henda",
+    "lib.arcade.pmFoeAte": "Tölvan tók spilið þitt.",
+    "lib.arcade.pmFoeU": "Tölvan sagði U!",
+    "lib.arcade.pmTurn": "Umferð {a}/{b}",
+    "lib.arcade.pmLeft": "Ósamstæð: {n}",
+    "lib.arcade.pmDeck": "Bunki: {n}",
+    "lib.arcade.pmFoeHand": "Hönd tölvunnar",
+    "lib.arcade.pmFoeDisc": "Spil sem tölvan henti",
+    "lib.arcade.pmFoeEaten": "Tölvan tók",
+    "lib.arcade.pmMyDisc": "Spil sem þú hentir",
+    "lib.arcade.pmAte": "Þú tókst þetta spil — haltu því í samstæðu.",
+    "lib.arcade.pmKeep": "Spil sem þú tókst verður að halda — hentu öðru spili.",
+    "lib.arcade.pmU": "U! Þú vinnur strax.",
+    "lib.arcade.pmYou": "Þú",
+    "lib.arcade.pmFoe": "Tölva",
+    "lib.arcade.pmDraw2": "Jafnt á stigum.",
+    "lib.arcade.note.shogi": "Shogi er japanskt skák. Þú spilar neðri hliðina og byrjar; menn tölvunnar vísa í hina áttina. Teknir menn fara í hönd þína og má setja á hvaða tóman reit sem er í stað þess að leika (aldrei peð í línu þar sem þú átt óuppfært peð, og aldrei mann á röð þar sem hann gæti ekki hreyft sig aftur). Maður sem færist inn á, út af eða innan síðustu þriggja raða andstæðingsins má uppfærast (nema kóngur og gull); uppfærsla er skylda ef maðurinn ætti annars enga leiki. Máttaðu kóng andstæðingsins til að vinna. Kanji: 歩 peð, 香 lensa, 桂 riddari, 銀 silfur, 金 gull, 角 biskup, 飛 hrókur, 玉 kóngur; と, 馬, 竜 og aðrir rauðir menn eru uppfærðir.",
+    "lib.arcade.sgPromote": "Uppfæra",
+    "lib.arcade.sgKeep": "Ekki uppfæra",
+    "lib.arcade.sgCheck": "Þú ert í skák!",
+    "lib.arcade.sgWin": "Mát — þú vinnur.",
+    "lib.arcade.sgLose": "Þú varst mátuð(ur).",
+    "lib.arcade.sgAskPromote": "Uppfæra þennan mann?",
+    "lib.arcade.note.janggi": "Janggi er kóreskt skák. Þú spilar bláu mennina neðst og byrjar. Ólíkt xiangqi er engin á og báðar hallirnar hafa skálínur. Hershöfðinginn og verðirnir færast eitt skref eftir línum hallarinnar (einnig skálínum); vagninn rennur og tekur líka eftir skálínum hallarinnar; fallbyssan verður að stökkva yfir nákvæmlega einn mann (ekki aðra fallbyssu) til að færast eða taka og getur ekki tekið fallbyssu; hesturinn færist eitt skref beint og síðan eitt á ská, og fíllinn eitt beint og tvö á ská, og báðir stöðvast ef maður er í leiðinni; hermennirnir færast áfram eða til hliðar og á ská áfram inni í höll andstæðingsins. Hershöfðingjarnir tveir mega aldrei horfast í augu. Máttaðu hershöfðingja andstæðingsins til að vinna. Tölvan sleppir aldrei.",
+    "lib.arcade.jgCheck": "Þú ert í skák!",
+    "lib.arcade.jgWin": "Mát — þú vinnur.",
+    "lib.arcade.jgLose": "Þú varst mátuð(ur).",
+    "lib.arcade.note.pinball": "Ýttu á bilslá, upp eða ýttu á borðið til að skjóta boltanum af stað. Haltu vinstri (eða snertu vinstri helming borðsins) til að lyfta vinstri spaða og hægri (eða hægri helming) fyrir þann hægri — ýttu í takt í stað þess að halda inni. Hver hringlaga púði gefur 100 stig. Þú átt 3 bolta; náðu markstigum áður en þeir klárast til að komast í gegnum borðið.",
+    "lib.arcade.pinBalls": "Boltar: {n} · Markmið: {t}",
+    "lib.arcade.note.cribbage": "Cribbage fyrir tvo, kapphlaup í 61 stig. Í hverri gjöf færðu 6 spil og leggur 2 niðursnúin í „crib“ (það tilheyrir gjafaranum). Opnað er eitt upphafsspil. Síðan skiptist þið á að spila spilum uppsnúnum þannig að samtalan fari aldrei yfir 31: að ná 15 eða 31 gefur 2 stig, að passa við síðasta spil gefur 2/6/12, runa með 3 eða fleiri spilum (í hvaða röð sem er) gefur jafn mörg stig og hún er löng, og þegar enginn getur spilað fær sá sem spilaði síðast 1 stig („Go“). Síðan er hver 4 spila hönd talin með upphafsspilinu: hver samsetning sem leggst saman í 15 gefur 2 stig, hvert par 2, runa með 3+ jafn mörg stig og lengdin, fjögur spil í sama lit gefa 4 (5 með upphafsspilinu) og gosi í sama lit og upphafsspilið gefur 1. Sá sem ekki gaf telur fyrst, síðan telur gjafarinn hönd sína og crib.",
+    "lib.arcade.cbFifteen": "Fimmtán",
+    "lib.arcade.cbPair": "Par",
+    "lib.arcade.cbRun": "Runa",
+    "lib.arcade.cbFlush": "Litur",
+    "lib.arcade.cbNobs": "Gosi í lit upphafsspils",
+    "lib.arcade.cbHeels": "Gosi sem upphafsspil",
+    "lib.arcade.cbYou": "Þú",
+    "lib.arcade.cbFoe": "Tölva",
+    "lib.arcade.cbLast": "Síðasta spil",
+    "lib.arcade.cbCount": "Samtals: {n}",
+    "lib.arcade.cbYouDeal": "Þú gefur",
+    "lib.arcade.cbFoeDeal": "Tölvan gefur",
+    "lib.arcade.cbPick": "Veldu 2 spil í crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Höndin þín",
+    "lib.arcade.cbFoeHand": "Hönd tölvunnar",
+    "lib.arcade.cbStarter": "Upphafsspil",
+    "lib.arcade.cbZero": "0 stig",
+    "lib.arcade.cbPlayed": "Spilað",
+    "lib.arcade.cbToCrib": "Setja í crib",
+    "lib.arcade.cbNext": "Áfram",
+    "lib.arcade.cbHand": "Hönd"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Ofur þrjár-í-röð",
       "desc": "Þrjár-í-röð á 9 litlum borðum: reiturinn sem þú velur ræður hvar andstæðingurinn verður að spila; gegn tölvunni í 10 borðum."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Sláðu boltann fram hjá tölvunni; sá sem fær 5 stig fyrst vinnur. 10 borð með sífellt hraðari og beittari andstæðingi."
+    },
+    "space-shooter": {
+      "name": "Geimskotleikur",
+      "desc": "Stýrðu skipinu, skjóttu niður óvinaskip og forðastu skot þeirra; 10 borð með stærri bylgjum, skotum á móti og harðari óvinum."
+    },
+    "asteroids": {
+      "name": "Loftsteinar",
+      "desc": "Snúðu, gefðu kraft og skjóttu til að brjóta geimbjörg; stór björg splundrast í minni. 10 borð með fleiri og hraðari björgum."
+    },
+    "maze": {
+      "name": "Völundarhús",
+      "desc": "Finndu leiðina út úr völundarhúsinu áður en tíminn rennur út; 10 borð frá litlum til stórum völundarhúsum, með þoku á hærri borðum."
+    },
+    "road-cross": {
+      "name": "Froskur yfir götu (Frogger-leikur)",
+      "desc": "Láttu froskinn hoppa yfir fjölfarnar götur og ár með flotandi trjástofnum til að komast heim 3 sinnum; 10 borð með hraðari umferð og á á hærri borðum."
+    },
+    "flappy": {
+      "name": "Flappy Bird-leikur",
+      "desc": "Ýttu til að blaka vængjum og fljúga í gegnum bilin milli röranna; 10 borð með þrengri bilum og vaxandi hraða."
+    },
+    "runner": {
+      "name": "Risaeðlu-hlaup",
+      "desc": "Hoppaðu yfir kaktusa og beygðu þig undir fugla; hlauptu nógu langt til að komast í gegnum hvert af 10 borðunum á meðan hraðinn eykst."
+    },
+    "whack-a-mole": {
+      "name": "Sláðu moldvörpuna",
+      "desc": "Sláðu moldvörpurnar sem skjótast upp úr holunum áður en tíminn rennur út og forðastu sprengjurnar; 10 borð frá hægum til mjög hraðra."
+    },
+    "simon": {
+      "name": "Simon (litaminni)",
+      "desc": "Mundu og endurtaktu röð lita og hljóða; lengri raðir yfir 10 borð, með 6 púðum frá borði 7."
+    },
+    "aim-trainer": {
+      "name": "Miðunaræfing",
+      "desc": "Hittu skotmörkin sem birtast af handahófi og hverfa fljótt; skotmörkin minnka yfir 10 borð og viðbragðstími þinn er mældur."
+    },
+    "quick-math": {
+      "name": "Hraðreikningur",
+      "desc": "Reiknaðu samlagningu, frádrátt, margföldun og deilingu í huganum undir tímapressu; 10 borð frá einföldum dæmum til flóknari reikninga."
+    },
+    "reaction": {
+      "name": "Viðbragðspróf",
+      "desc": "Smelltu um leið og skjárinn verður grænn; meðaltal þitt úr 5 umferðum þarf að ná marki hvers borðs, sem þrengist yfir 10 borð."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Sáðu fræjum í kringum holurnar, hirtu fræ andstæðingsins og fáðu aukaleik þegar þú lendir í geymslunni þinni; spilaðu gegn tölvunni í 10 borðum frá auðveldum til erfiðra."
+    },
+    "snakes-ladders": {
+      "name": "Slöngur og stigar",
+      "desc": "Kastaðu teningnum frá reit 1 til 100, klifraðu upp stiga, forðastu slöngur og náðu í mark á undan andstæðingunum; 10 borð."
+    },
+    "nine-mens-morris": {
+      "name": "Níu manna mylla",
+      "desc": "Settu, renndu og flogðu mönnum þínum til að mynda þrjá í röð og fjarlægja menn andstæðingsins; spilaðu gegn tölvunni í 10 borðum."
+    },
+    "battleship": {
+      "name": "Sjóorrusta",
+      "desc": "Finndu og sökktu flota tölvunnar á 10x10 rist áður en hún sekkur þínum; 10 borð þar sem tölvan ályktar snjallar."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (grasker, krabbi, fiskur, rækja)",
+      "desc": "Hefðbundinn víetnamskur teningaleikur: veðjaðu sýndarmynt á dýrin og hristu þrjá teninga; náðu markmiðinu í mynt yfir 10 borð (engir raunverulegir peningar)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Veðjaðu á Player, Banker eða Tie með spilum gefnum samkvæmt hefðbundnum reglum, með sýndarmynt; náðu markmiðinu í mynt yfir 10 borð (engir raunverulegir peningar)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (þriggja spila leikur)",
+      "desc": "Berðu saman 3 spila hendur við gjafarann: þrjú eins, þrjú mannspil, síðan 9 stig niður í 0; sýndarmynt, 10 borð, engir raunverulegir peningar."
+    },
+    "bingo": {
+      "name": "Bingó",
+      "desc": "Merktu upphrópuðu tölurnar á 5x5 spjaldinu þínu og kallaðu BINGO á undan tölvuandstæðingunum; tölur eru kallaðar hraðar yfir 10 borð."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (fimm teningar)",
+      "desc": "Kastaðu fimm teningum, haltu þeim góðu og fylltu 13 stigareiti; náðu markstigum yfir 10 borð."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (áttur)",
+      "desc": "Passaðu lit eða gildi, áttur breyta litnum; losaðu þig við öll spilin á undan 1 til 3 tölvuandstæðingum yfir 10 borð."
+    },
+    "car-race": {
+      "name": "Kappakstur: forðastu bíla",
+      "desc": "Skiptu um akrein til að forðast bílana fram undan og keyrðu alla vegalengdina; 10 borð með fleiri akreinum og hraðari umferð."
+    },
+    "sky-jump": {
+      "name": "Himnahopp",
+      "desc": "Skoppaðu af palli á pall til að klifra eins hátt og þú getur án þess að falla; 10 borð með strjálli pöllum, hreyfanlegum pöllum og brothættum pöllum."
+    },
+    "gold-miner": {
+      "name": "Gullgrafarinn",
+      "desc": "Slepptu króknum til að draga upp gull og demanta, forðastu þung björg og náðu markfjárhæðinni innan 60 sekúndna; 10 borð."
+    },
+    "fruit-slice": {
+      "name": "Ávaxtaskurður",
+      "desc": "Strjúktu til að skera ávextina sem fljúga upp og forðastu sprengjurnar; 10 borð með fleiri ávöxtum og fleiri sprengjum."
+    },
+    "basketball": {
+      "name": "Körfuboltaskot",
+      "desc": "Dragðu og slepptu til að skjóta boltanum í körfuna innan takmarkaðs fjölda skota; 10 borð, með hreyfanlega körfu frá borði 4."
+    },
+    "bubble-shooter": {
+      "name": "Kúluskotleikur",
+      "desc": "Skjóttu kúlum til að tengja 3 eða fleiri í sama lit og sprengja þær, og hreinsaðu þær allar áður en þær ná niður; 10 borð með fleiri litum."
+    },
+    "dot-chase": {
+      "name": "Punktaeltingaleikur",
+      "desc": "Éttu alla punktana í völundarhúsinu og forðastu draugana sem elta þig; 10 borð með fleiri og snjallari draugum."
+    },
+    "kakuro": {
+      "name": "Kakuro (krosssummur)",
+      "desc": "Fylltu hvítu reitina með tölustöfunum 1–9 þannig að hver runa leggist saman í vísbendinguna án endurtekninga; 10 borð, ristar frá 5x5 upp í 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Fylltu ristina án endurtekninga í röðum eða dálkum þannig að hvert svæði gefi markgildi sitt með aðgerðinni; 10 borð, ristar frá 3x3 upp í 6x6."
+    },
+    "word-guess": {
+      "name": "Orðagiskleikur (Wordle-leikur)",
+      "desc": "Giskaðu á leynilega enska orðið með grænum, gulum og gráum vísbendingum; 10 borð með 4–6 stafa orðum og færri tilraunum."
+    },
+    "hangman": {
+      "name": "Hengimaðurinn",
+      "desc": "Giskaðu á enska orðið einn staf í einu áður en þú klárar rangar ágiskanir; 10 borð með lengri orðum og færri röngum ágiskunum."
+    },
+    "word-scramble": {
+      "name": "Orðaruglingur (stafaruglingur)",
+      "desc": "Raðaðu ruglaða stöfunum upp í enskt orð áður en tíminn rennur út; 10 borð, 5 orð í hverju borði."
+    },
+    "domino": {
+      "name": "Dómínó",
+      "desc": "Passaðu kubba við annan enda keðjunnar og losaðu þig við alla kubba á undan tölvunni; 10 borð þar sem tölvan verður snjallari."
+    },
+    "hearts": {
+      "name": "Hearts (hjörtu)",
+      "desc": "Forðastu hjörtu og spaðadrottningu í fjögurra manna spilaleik; lægra stigaskor er betra; 10 borð gegn snjallari tölvuspilurum."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (sýndarspilapeningar)",
+      "desc": "Einvígispóker gegn tölvunni með sýndarspilapeningum: gefðu, jafnaðu eða hækkaðu og vinndu þegar tölvan klárar spilapeningana; 10 borð, engir raunverulegir peningar."
+    },
+    "n-back": {
+      "name": "N-Back minnisleikur",
+      "desc": "Fylgstu með upplýsta reitnum og ýttu á Eins þegar hann er sá sami og fyrir N skrefum; 10 borð með N upp í 4."
+    },
+    "cookie-clicker": {
+      "name": "Kökusmellur",
+      "desc": "Smelltu til að baka kökur, keyptu hjálparmenn sem baka sjálfkrafa og náðu markmiðinu innan 2 mínútna; 10 borð."
+    },
+    "tile-connect": {
+      "name": "Kubbatenging (Onet-leikur)",
+      "desc": "Tengdu eins kubba með leið með í mesta lagi tveimur beygjum og hreinsaðu borðið áður en tíminn rennur út; 10 borð, sífellt stærri."
+    },
+    "jigsaw": {
+      "name": "Myndaþraut",
+      "desc": "Víxlaðu stokkuðum bitum til að endurbyggja myndina; 10 borð frá 3x3 upp í 6x6 bita."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Dragðu til baka og slepptu til að pútta boltanum í holuna innan höggamarka; 10 brautir með veggjum og sandi."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Kastaðu teningunum, kepptu með mennina þína heim og taktu þá út á undan tölvunni, og sláðu staka menn hennar á leiðinni; 10 borð."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (þrettán)",
+      "desc": "Víetnamski spilaleikurinn fyrir fjóra: spilaðu stökum spilum, pörum, runum og fjórum eins til að losna fyrst við spilin; 10 borð."
+    },
+    "tower-defense": {
+      "name": "Turnavörn",
+      "desc": "Byggðu og uppfærðu turna meðfram stígnum til að stöðva hverja bylgju óvina; 10 borð á þremur mismunandi kortum."
+    },
+    "color-by-number": {
+      "name": "Litað eftir tölum",
+      "desc": "Litaðu hvern reit með litnum sem samsvarar tölunni til að afhjúpa myndina; 10 myndir með fleiri litum í hvert sinn."
+    },
+    "yukon": {
+      "name": "Yukon-kapall",
+      "desc": "Klondike án bunka: færðu hvaða uppsnúið spil sem er ásamt öllu ofan á því; 10 borð, færri spil uppsnúin eftir því sem líður á."
+    },
+    "chinese-checkers": {
+      "name": "Kínverskt dama",
+      "desc": "Stjörnulaga hopp- og skrefaleikur gegn tölvunni: færðu alla 10 mennina í gagnstæða horn á undan; 10 borð."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (kínverskt póker)",
+      "desc": "Raðaðu 13 spilum í þrjár hendur með 5, 5 og 3 spilum og sigraðu tölvuna; 5 umferðir í hverju borði, 10 borð."
+    },
+    "phom": {
+      "name": "Phỏm (víetnamskt rummý)",
+      "desc": "Víetnamskt rummý fyrir tvo gegn tölvunni: dragðu eða taktu hent spil, myndaðu samstæður og segðu U; fæst afgangsstig vinna; 10 borð."
+    },
+    "shogi": {
+      "name": "Shogi (japanskt skák)",
+      "desc": "Spilaðu shogi gegn tölvunni: settu tekna menn aftur inn, uppfærðu og máttaðu kónginn; 10 borð með afturköllun."
+    },
+    "janggi": {
+      "name": "Janggi (kóreskt skák)",
+      "desc": "Spilaðu kóreskt skák gegn tölvunni: skálínur hallarinnar, fallbyssustökk yfir einn mann, þriggja skrefa fílar; 10 borð með afturköllun."
+    },
+    "pinball": {
+      "name": "Spilakassi (pinball)",
+      "desc": "Sveiflaðu spöðunum til vinstri og hægri til að halda boltanum á lofti, hittu púðana og náðu markstigum áður en 3 boltarnir klárast; 10 borð."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage fyrir tvo gegn tölvunni: crib, talning upp í 31, talning handa, kapphlaup í 61 stig; 10 borð."
     }
   },
   "s": {

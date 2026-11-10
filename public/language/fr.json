@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Choisissez une couleur pour remplir toute la zone que vous possédez dans le coin en haut à gauche ; elle absorbe les cases voisines de cette couleur. Rendez tout le plateau d’une seule couleur dans le nombre de coups autorisé.",
     "lib.arcade.note.mastermind": "L’ordinateur cache une rangée de couleurs. Choisissez une couleur pour chaque position, puis appuyez sur Deviner. Un pion noir = bonne couleur au bon endroit ; un pion blanc = bonne couleur au mauvais endroit. Trouvez le code avant d’épuiser vos essais.",
     "lib.arcade.note.hanoi": "Déplacez tous les disques sur le dernier piquet. Ne déplacez que le disque du dessus d’un piquet à la fois, et ne posez jamais un disque plus grand sur un plus petit. Cliquez sur le piquet de départ, puis sur le piquet d’arrivée.",
-    "lib.arcade.note.pipes": "Cliquez sur une tuile pour faire pivoter le tuyau de 90°. Reliez tous les tuyaux en un seul réseau sans extrémité ouverte (les extrémités ouvertes sont en rouge)."
+    "lib.arcade.note.pipes": "Cliquez sur une tuile pour faire pivoter le tuyau de 90°. Reliez tous les tuyaux en un seul réseau sans extrémité ouverte (les extrémités ouvertes sont en rouge).",
+    "lib.arcade.pongScore": "Vous {a} – {b} Ordi (premier à {t})",
+    "lib.arcade.kills": "Détruits : {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} rochers restants",
+    "lib.arcade.timeLeft": "{n} s restantes",
+    "lib.arcade.stepsN": "Pas : {n}",
+    "lib.arcade.crossed": "Arrivées : {n}/{t}",
+    "lib.arcade.pipes": "Tuyaux franchis : {n}/{t}",
+    "lib.arcade.distance": "Distance : {n}/{t} m",
+    "lib.arcade.speedN": "Vitesse : {n}",
+    "lib.arcade.note.whack-a-mole": "Des taupes sortent des trous : cliquez ou touchez une taupe pour la frapper. Frappez-en assez avant la fin du temps. À partir du niveau 4, il y a des bombes : en toucher une vous fait perdre des points.",
+    "lib.arcade.hole": "Trou",
+    "lib.arcade.hitsN": "Touchés : {n}/{t}",
+    "lib.arcade.note.simon": "Le jeu joue une suite de couleurs et de sons : répétez-la dans le même ordre. Chaque manche ajoute une étape. Retenez la longueur demandée pour réussir le niveau. À partir du niveau 7, il y a 6 pads.",
+    "lib.arcade.seqN": "Séquence : {n}/{t}",
+    "lib.arcade.watch": "Regardez…",
+    "lib.arcade.yourTurnShort": "À vous",
+    "lib.arcade.note.aim-trainer": "Des cibles apparaissent au hasard et disparaissent vite : touchez-en le plus possible. Elles deviennent plus petites et plus rapides. Touchez assez de cibles avant de dépasser 5 ratés pour réussir le niveau.",
+    "lib.arcade.missN": "Ratés : {n}/{t}",
+    "lib.arcade.answer": "Réponse",
+    "lib.arcade.note.quick-math": "Calculez de tête le plus vite possible : tapez la réponse et appuyez sur Entrée. Chaque question a une limite de temps ; une mauvaise réponse ou un temps écoulé coûte une vie (vous en avez 3). Répondez correctement à assez de questions pour réussir le niveau.",
+    "lib.arcade.correctN": "Correctes : {n}/{t}",
+    "lib.arcade.note.reaction": "Attendez que l'écran devienne vert, puis cliquez le plus vite possible. Cliquer trop tôt est une faute (3 fautes et vous perdez). Votre moyenne sur 5 manches doit battre la limite du niveau.",
+    "lib.arcade.roundN": "Mot {n}/{t}",
+    "lib.arcade.limitMs": "Limite : {n} ms",
+    "lib.arcade.rxWait": "Attendez le vert…",
+    "lib.arcade.rxGo": "CLIQUEZ !",
+    "lib.arcade.rxEarly": "Trop tôt !",
+    "lib.arcade.gameArea": "Zone de jeu",
+    "lib.arcade.note.pong": "Bougez la souris, glissez le doigt ou utilisez les touches ← → pour contrôler la raquette du bas. Envoyez la balle derrière l'ordinateur ; le premier à 5 points gagne. La balle accélère à chaque coup.",
+    "lib.arcade.note.space-shooter": "Bougez la souris, glissez le doigt ou utilisez les touches ← → pour diriger votre vaisseau ; il tire automatiquement. Détruisez assez de vaisseaux ennemis pour réussir le niveau et évitez les collisions et les tirs ennemis. Vous avez 3 vies.",
+    "lib.arcade.note.asteroids": "← → font tourner le vaisseau, ↑ le propulse, Espace tire. Détruisez tous les rochers pour réussir le niveau ; les gros rochers se divisent en plus petits. Le vaisseau réapparaît de l'autre côté de l'écran. Vous avez 3 vies.",
+    "lib.arcade.note.maze": "Utilisez les flèches (ou glissez, ou les boutons) pour aller du point vert au drapeau rouge avant la fin du temps. À partir du niveau 5, le labyrinthe est dans le brouillard : vous ne voyez qu'autour de vous, et les zones visitées sont mémorisées.",
+    "lib.arcade.note.road-cross": "Utilisez les flèches, glissez ou les boutons pour faire sauter la grenouille de bas en haut. Évitez la circulation ; à partir du niveau 5, la partie haute est une rivière : sautez sur les troncs flottants. Rentrez 3 fois à la maison pour réussir le niveau. Vous avez 3 vies.",
+    "lib.arcade.note.flappy": "Touchez la zone de jeu, appuyez sur Espace ou ↑ pour battre des ailes. Passez dans les espaces entre les tuyaux sans toucher un tuyau, le sol ou le plafond. Les niveaux élevés ont des espaces plus étroits et un vol plus rapide.",
+    "lib.arcade.note.runner": "Touchez la zone de jeu, appuyez sur Espace ou ↑ pour sauter par-dessus les cactus ; maintenez ↓ pour passer sous les oiseaux hauts (ou sautez par-dessus les bas). Courez assez loin pour réussir le niveau. La vitesse ne cesse d'augmenter.",
+    "lib.arcade.fire": "Tirer",
+    "lib.arcade.jump": "Sauter",
+    "lib.arcade.aimTarget": "Cible",
+    "lib.game.soundOn": "Activer le son",
+    "lib.game.soundOff": "Couper le son",
+    "lib.arcade.note.kalah": "Vous jouez la rangée du bas, l'ordinateur celle du haut ; le grand creux à droite est votre réserve. Cliquez sur un creux pour prendre toutes ses graines et les semer dans le sens antihoraire, une par creux (en sautant la réserve de l'adversaire). Si votre dernière graine tombe dans votre réserve, vous rejouez ; si elle tombe dans un creux vide de votre côté, en face d'un creux contenant des graines, vous capturez ces graines. Quand un côté est vide, les graines de l'autre côté vont dans la réserve de son propriétaire ; la plus grande réserve gagne.",
+    "lib.arcade.note.snakes": "Lancez le dé et avancez d'autant de cases, de 1 à 100. Si vous tombez au pied d'une échelle, vous la montez ; sur la tête d'un serpent, vous glissez vers le bas. À partir du niveau 4, il faut obtenir le nombre exact pour atterrir sur 100. Les niveaux élevés ont plus de serpents, moins d'échelles et plus d'adversaires. Le premier à atteindre 100 gagne.",
+    "lib.arcade.square": "Case {n}",
+    "lib.arcade.ladderUp": "Vous montez l'échelle !",
+    "lib.arcade.snakeDown": "Avalé par un serpent !",
+    "lib.arcade.needExact": "Il faut le nombre exact pour atterrir sur 100.",
+    "lib.arcade.note.nmm": "Chaque camp a 9 pions. Phase 1 : posez tour à tour vos pions sur des points vides. Phase 2 : faites glisser un pion vers un point vide adjacent. Quand il ne vous reste que 3 pions, vous pouvez « voler » vers n'importe quel point vide. Alignez trois pions (un « moulin ») pour retirer un pion adverse (d'abord ceux qui ne sont pas dans un moulin). Vous perdez s'il ne vous reste que 2 pions ou si vous ne pouvez plus bouger. Vous jouez les blancs et commencez.",
+    "lib.arcade.inHand": "À poser : {a} · {b}",
+    "lib.arcade.removePiece": "Choisissez un pion adverse à retirer.",
+    "lib.arcade.enemyWaters": "Eaux ennemies (cliquez pour tirer)",
+    "lib.arcade.yourFleet": "Votre flotte",
+    "lib.arcade.note.battleship": "Chaque camp a 5 navires (longueurs 5, 4, 3, 3, 2) placés au hasard sur une grille 10x10. Tirez à tour de rôle sur une case : un touché devient rouge, un raté bleu clair, et toucher toutes les cases d'un navire le coule. Coulez toute la flotte ennemie en premier pour gagner. Aux niveaux élevés, l'ordinateur déduit plus intelligemment la position de vos navires.",
+    "lib.arcade.shipsLeft": "Navires restants : vous {a} · ennemi {b}",
+    "lib.arcade.theySunk": "L'ennemi a coulé l'un de vos navires !",
+    "lib.arcade.theyHit": "L'ennemi a touché l'un de vos navires.",
+    "lib.arcade.theyMiss": "L'ennemi a raté.",
+    "lib.arcade.youSunk": "Vous avez coulé un navire ennemi !",
+    "lib.arcade.youHit": "Touché !",
+    "lib.arcade.youMiss": "Raté.",
+    "lib.arcade.shake": "Secouer",
+    "lib.arcade.clearBets": "Effacer les mises",
+    "lib.arcade.note.bau-cua": "Jetons virtuels uniquement, pas d'argent réel. Choisissez la valeur d'un jeton, cliquez sur les animaux pour miser, puis appuyez sur Secouer. Pour chaque dé qui correspond à un animal sur lequel vous avez misé, vous récupérez votre mise plus un montant égal. Atteignez l'objectif de jetons dans le nombre de manches autorisé pour réussir le niveau.",
+    "lib.arcade.note.baccarat": "Jetons virtuels uniquement, pas d'argent réel. Misez sur Joueur, Banquier ou Égalité, puis appuyez sur Distribuer. La valeur d'une main est le dernier chiffre de son total (As = 1, 2–9 valeur faciale, 10/V/D/R = 0) ; la main la plus proche de 9 gagne, et les troisièmes cartes se tirent selon les règles standard. Joueur paie 1:1, Banquier 0,95:1, Égalité 8:1 (les mises Joueur/Banquier sont rendues en cas d'égalité). Atteignez l'objectif de jetons dans le nombre de manches autorisé pour réussir le niveau.",
+    "lib.arcade.banker": "Banquier",
+    "lib.arcade.player": "Joueur",
+    "lib.arcade.tie": "Égalité",
+    "lib.arcade.openCards": "Révéler",
+    "lib.arcade.note.bai-cao": "Jetons virtuels uniquement, pas d'argent réel. Chaque camp reçoit 3 cartes. Une main vaut le dernier chiffre de son total (As = 1, 2–9 valeur faciale, 10/V/D/R = 10, soit 0 point). Classement : le brelan (« Sáp ») est le plus fort, puis trois figures (« Ba tiên »), puis 9 points jusqu'à 0. Misez, appuyez sur Distribuer puis sur Révéler pour comparer avec le donneur. À partir du niveau 6, le donneur gagne les égalités. Atteignez l'objectif de jetons dans le nombre de manches autorisé pour réussir le niveau.",
+    "lib.arcade.caoSap": "Brelan",
+    "lib.arcade.caoBaTien": "Trois figures",
+    "lib.arcade.caoPts": "{n} pts",
+    "lib.arcade.note.bingo": "L'ordinateur annonce des numéros de 1 à 75. Quand un numéro annoncé est sur votre carte, cliquez dessus pour le marquer (le centre est gratuit). Complétez une ligne, une colonne ou une diagonale et appuyez sur BINGO ! : vous devez devancer les adversaires. Un faux BINGO ! bloque le bouton quelques secondes. Les niveaux élevés annoncent plus vite et ont plus d'adversaires.",
+    "lib.arcade.opponentsN": "Adversaires : {n}",
+    "lib.arcade.falseBingo": "Pas encore une ligne complète ! Bouton bloqué 3 secondes.",
+    "lib.arcade.bingoGo": "Tirage en cours !",
+    "lib.arcade.note.yahtzee": "À chaque tour, vous lancez 5 dés jusqu'à 3 fois : cliquez sur un dé pour le garder, puis appuyez sur Lancer pour relancer les autres. Choisissez ensuite une case du tableau pour marquer (chaque case ne sert qu'une fois ; une case qui ne convient pas rapporte 0). 13 tours. Les cases As à Six donnent un bonus de 35 si leur total atteint 63 ou plus. Atteignez le score cible du niveau pour gagner.",
+    "lib.arcade.turnN": "Tour {n}/13",
+    "lib.arcade.pickCat": "Choisissez une case pour marquer",
+    "lib.arcade.rollsLeft": "Lancer ({n} restants)",
+    "lib.arcade.upperBonus": "Bonus As–Six",
+    "lib.arcade.scored": "Marqué {n}",
+    "lib.arcade.note.crazy-eights": "Jouez une carte de la même couleur ou de la même valeur que la carte du dessus de la défausse. Les huit sont des jokers : jouez-en un quand vous voulez et choisissez une nouvelle couleur. Si vous n'avez aucune carte jouable, piochez (jusqu'à 3 cartes) ; si vous ne pouvez toujours pas jouer, vous passez. Le premier à vider sa main gagne. Les niveaux élevés ont plus d'adversaires et l'ordinateur joue plus finement.",
+    "lib.arcade.opponent": "Adversaire",
+    "lib.arcade.pileLeft": "Pioche : {n}",
+    "lib.arcade.pickSuit": "Choisissez une nouvelle couleur",
+    "lib.arcade.aiSuit": "L'ordinateur a choisi {s}",
+    "lib.arcade.aiPass": "L'ordinateur passe.",
+    "lib.arcade.mustPlay": "Vous avez une carte jouable : jouez-la.",
+    "lib.arcade.youPass": "Vous avez pioché 3 cartes et passez.",
+    "lib.arcade.bcGourd": "Gourde",
+    "lib.arcade.bcCrab": "Crabe",
+    "lib.arcade.bcShrimp": "Crevette",
+    "lib.arcade.bcFish": "Poisson",
+    "lib.arcade.bcRooster": "Coq",
+    "lib.arcade.bcDeer": "Cerf",
+    "lib.arcade.yOnes": "As",
+    "lib.arcade.yTwos": "Deux",
+    "lib.arcade.yThrees": "Trois",
+    "lib.arcade.yFours": "Quatre",
+    "lib.arcade.yFives": "Cinq",
+    "lib.arcade.ySixes": "Six",
+    "lib.arcade.yThree": "Brelan",
+    "lib.arcade.yFour": "Carré",
+    "lib.arcade.yFull": "Full (25)",
+    "lib.arcade.ySmall": "Petite suite (30)",
+    "lib.arcade.yLarge": "Grande suite (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Chance",
+    "lib.arcade.note.race": "Appuyez sur ← → (ou touchez la voie voulue) pour changer de voie et esquiver les voitures devant vous. Vous avez 3 vies ; parcourez toute la distance pour réussir le niveau. Les niveaux élevés ajoutent des voies et une circulation plus rapide.",
+    "lib.arcade.note.jump": "Le personnage rebondit tout seul. Appuyez sur ← → ou glissez le doigt pour atterrir sur la plateforme suivante. Les plateformes bleues bougent, les marron se brisent quand vous atterrissez dessus. Tomber hors de l'écran fait perdre ; montez assez haut pour réussir le niveau.",
+    "lib.arcade.note.miner": "Le crochet se balance de gauche à droite ; appuyez sur Espace, ↓ ou touchez le terrain pour le lâcher. Les gros morceaux d'or et les rochers sont lourds et remontent lentement ; les diamants valent beaucoup. Atteignez la somme cible avant la fin des 60 secondes.",
+    "lib.arcade.note.slicer": "Glissez le doigt ou la souris sur les fruits pour les trancher. Évitez les bombes noires. Rater un fruit ou trancher une bombe coûte une vie (vous en avez 3). Tranchez assez de fruits pour réussir le niveau.",
+    "lib.arcade.note.hoops": "Appuyez sur le terrain, tirez vers le bas (comme une fronde) et relâchez pour lancer le ballon vers le panier. Plus vous tirez loin, plus le lancer est fort. Marquez assez de paniers avec les tirs dont vous disposez ; à partir du niveau 4, le panier bouge.",
+    "lib.arcade.note.bubbles": "Bougez la souris ou le doigt pour viser, puis cliquez/touchez ou appuyez sur Espace/Tirer pour lancer. Reliez 3 bulles ou plus de la même couleur pour les éclater ; les bulles qui perdent leur appui tombent. Les rangées descendent lentement, gardez-les loin de la ligne du bas. Éclatez toutes les bulles pour gagner.",
+    "lib.arcade.note.chase": "Utilisez les flèches (ou glissez / les boutons) pour tourner et manger tous les points du labyrinthe en évitant les fantômes qui vous poursuivent. Vous avez 3 vies ; les niveaux élevés ajoutent des fantômes plus rapides qui chassent plus intelligemment.",
+    "lib.arcade.height": "Hauteur : {n}/{t} m",
+    "lib.arcade.money": "Argent : {n}/{t}",
+    "lib.arcade.sliced": "Tranchés : {n}/{t}",
+    "lib.arcade.hoopScore": "Marqués : {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} tirs restants",
+    "lib.arcade.bubbleLeft": "{n} bulles restantes",
+    "lib.arcade.shotsN": "Tirs : {n}",
+    "lib.arcade.dotsLeft": "{n} points restants",
+    "lib.arcade.note.kakuro": "Remplissez les cases blanches avec des chiffres de 1 à 9 pour que chaque série totalise l'indice de la case noire (le nombre en haut à droite concerne la série vers la droite, celui en bas à gauche la série vers le bas), sans répéter de chiffre dans une série. Utilisez les flèches pour vous déplacer.",
+    "lib.arcade.note.kenken": "Remplissez la grille avec les nombres de 1 à N sans répéter un nombre dans une ligne ou une colonne. Chaque bloc entouré d'un trait épais indique un objectif et une opération (+, −, ×, ÷) : les nombres du bloc doivent donner ce résultat. Utilisez les flèches pour vous déplacer.",
+    "lib.arcade.note.wordGuess": "Devinez le mot secret en anglais. Après chaque essai, le vert signifie la bonne lettre au bon endroit, le jaune que la lettre est dans le mot mais ailleurs, et le gris qu'elle n'est pas dans le mot. Tapez au clavier ou utilisez les touches à l'écran, et appuyez sur Entrée pour valider. Les niveaux élevés ont des mots plus longs et moins d'essais.",
+    "lib.arcade.note.hangman": "Devinez le mot secret en anglais en choisissant les lettres une à une. Chaque mauvaise lettre ajoute une partie au pendu ; quand vous n'avez plus d'erreurs permises, vous perdez. Les niveaux élevés ont des mots plus longs et moins d'erreurs permises.",
+    "lib.arcade.note.scramble": "Remettez les lettres mélangées dans l'ordre pour former un vrai mot anglais et tapez-le dans la zone de réponse. Chaque niveau compte 5 mots ; trouvez-en au moins 4 avant la fin du minuteur de chaque mot pour réussir le niveau. L'indice révèle la première lettre.",
+    "lib.arcade.cellsLeft": "{n} cases vides restantes",
+    "lib.arcade.wrongN": "{n} cases sont incorrectes.",
+    "lib.arcade.noError": "Aucune erreur trouvée pour l'instant.",
+    "lib.arcade.tooShort": "Pas assez de lettres",
+    "lib.arcade.answerIs": "Réponse : {w}",
+    "lib.arcade.livesLeft": "{n} erreurs permises restantes",
+    "lib.arcade.yourAnswer": "Votre réponse",
+    "lib.arcade.skip": "Passer",
+    "lib.arcade.notThis": "Ce n'est pas ça, réessayez.",
+    "lib.arcade.startsWith": "Première lettre : {c}",
+    "lib.arcade.note.domino": "Chaque joueur reçoit 7 dominos ; celui qui a le plus grand double commence. Jouez un domino dont un nombre correspond à une extrémité de la chaîne. Si vous ne pouvez pas jouer, piochez dans le talon jusqu'à pouvoir ; s'il est vide, passez. Le premier à vider sa main gagne ; si les deux sont bloqués, celui qui a le moins de points gagne.",
+    "lib.arcade.note.hearts": "Quatre joueurs, 13 cartes chacun. Le 2 de trèfle ouvre. Vous devez fournir la couleur demandée si vous le pouvez. Chaque cœur vaut 1 point et la dame de pique 13 ; celui qui remporte un pli en prend les points. Moins on a de points, mieux c'est, et prendre les 26 points donne 26 à tous les autres. Vous ne pouvez pas ouvrir à cœur tant qu'aucun cœur n'a été joué. Après la dernière donne, vous gagnez si votre score est le plus bas (ou à égalité pour le plus bas).",
+    "lib.arcade.note.holdem": "Tête-à-tête contre l'ordinateur avec des jetons virtuels uniquement. Chaque joueur reçoit 2 cartes privées et 5 cartes communes sont dévoilées (flop, turn, river) ; faites la meilleure main de 5 cartes. À chaque tour, vous pouvez vous coucher, suivre (ou checker) ou relancer. Les blinds augmentent toutes les 4 mains. Vous gagnez quand l'ordinateur n'a plus de jetons, ou en ayant plus de jetons après la limite de mains. Aucun argent réel n'est en jeu.",
+    "lib.arcade.dmDraw": "Piocher un domino",
+    "lib.arcade.dmPass": "Passer",
+    "lib.arcade.dmEmpty": "Aucun domino joué",
+    "lib.arcade.dmYard": "Talon : {n} dominos",
+    "lib.arcade.dmLeft": "Extrémité gauche",
+    "lib.arcade.dmRight": "Extrémité droite",
+    "lib.arcade.dmTie": "Égalité ! Les deux camps sont à égalité.",
+    "lib.arcade.hrHand": "Donne {n}/{t}",
+    "lib.arcade.hrTook": "{p} remporte le pli ({n} points).",
+    "lib.arcade.hrIllegal": "Vous ne pouvez pas jouer cette carte (fournissez la couleur, ou on ne peut pas encore ouvrir à cœur).",
+    "lib.arcade.blinds": "Grosse blind : {n}",
+    "lib.arcade.pot": "Pot : {n}",
+    "lib.arcade.fold": "Se coucher",
+    "lib.arcade.check": "Checker",
+    "lib.arcade.callN": "Suivre {n}",
+    "lib.arcade.raiseTo": "Relancer à",
+    "lib.arcade.raiseN": "Relancer à {n}",
+    "lib.arcade.thOppFold": "L'ordinateur se couche ; vous gagnez cette main.",
+    "lib.arcade.thYouFold": "Vous vous êtes couché.",
+    "lib.arcade.thOppWin": "L'ordinateur gagne cette main",
+    "lib.arcade.thYouWin": "Vous gagnez cette main",
+    "lib.arcade.thSplit": "Pot partagé",
+    "lib.arcade.thAiFold": "L'ordinateur se couche.",
+    "lib.arcade.thAiRaise": "L'ordinateur relance à {n}.",
+    "lib.arcade.thAiCall": "L'ordinateur suit / checke.",
+    "lib.arcade.hand.high": "Carte haute",
+    "lib.arcade.hand.pair": "Paire",
+    "lib.arcade.hand.twoPair": "Double paire",
+    "lib.arcade.hand.trips": "Brelan",
+    "lib.arcade.hand.straight": "Suite",
+    "lib.arcade.hand.flush": "Couleur",
+    "lib.arcade.hand.full": "Full",
+    "lib.arcade.hand.quads": "Carré",
+    "lib.arcade.hand.sflush": "Quinte flush",
+    "lib.arcade.note.nback": "Une case s'allume tour à tour sur une grille 3x3. Appuyez sur « Identique ! » (ou Espace) quand la position allumée est la même qu'il y a N étapes (N est affiché au-dessus). Il faut au moins 80 % de bonnes décisions pour réussir le niveau. Les niveaux élevés utilisent un N plus grand.",
+    "lib.arcade.nbMatch": "Identique !",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Justes : {a} · Faux : {b}",
+    "lib.arcade.nbAcc": "Précision : {n} %",
+    "lib.arcade.note.clicker": "Cliquez sur le cookie pour cuire des cookies, puis dépensez-les en aides qui cuisent automatiquement (les prix augmentent à chaque achat). Cuisez le nombre de cookies cible en 2 minutes pour réussir le niveau.",
+    "lib.arcade.ckCursor": "Curseur",
+    "lib.arcade.ckGrandma": "Mamie pâtissière",
+    "lib.arcade.ckFarm": "Ferme",
+    "lib.arcade.ckMine": "Mine de sucre",
+    "lib.arcade.ckFactory": "Usine",
+    "lib.arcade.ckCookie": "Cookie",
+    "lib.arcade.ckEarned": "Cuits : {n}/{t}",
+    "lib.arcade.chips2": "Cookies : {n}",
+    "lib.arcade.ckCps": "{n} cookies/seconde",
+    "lib.arcade.note.onet": "Sélectionnez deux tuiles identiques qui peuvent être reliées par un chemin d'au plus 2 virages ne croisant aucune autre tuile pour les retirer. Retirez toutes les tuiles avant la fin du temps pour gagner. Quand il n'y a plus de coup possible, vous pouvez mélanger (utilisations limitées).",
+    "lib.arcade.shuffle": "Mélanger",
+    "lib.arcade.tilesLeft": "{n} tuiles restantes",
+    "lib.arcade.autoShuffle": "Plus de coup possible : mélange automatique.",
+    "lib.arcade.note.jigsaw": "L'image est découpée en morceaux et mélangée. Touchez un morceau, puis un autre, pour les échanger, et reconstituez l'image de référence. Les morceaux bien placés ont une bordure verte. Les niveaux élevés ont plus de morceaux.",
+    "lib.arcade.jgRef": "Image de référence",
+    "lib.arcade.jgPlaced": "En place : {a}/{b}",
+    "lib.arcade.golfStrokes": "Coups : {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Vous jouez les pions blancs, qui vont du haut à droite jusqu'en bas à droite (votre jan intérieur). Lancez les dés, cliquez sur le pion à déplacer, puis sur une destination en surbrillance. Arriver sur un point occupé par un seul pion adverse le capture et l'envoie sur la barre centrale ; ce joueur doit le faire rentrer en premier. Vous ne pouvez pas arriver sur un point occupé par deux pions adverses ou plus. Quand vos 15 pions sont dans votre jan intérieur (les 6 derniers points), vous pouvez les sortir. Le premier à sortir ses 15 pions gagne.",
+    "lib.arcade.bgRoll": "Lancer les dés",
+    "lib.arcade.bgOff": "Sortir",
+    "lib.arcade.bgRollFirst": "Lancer les dés",
+    "lib.arcade.bgInfo": "Sortis : vous {a} · ordinateur {b} · Pips : {c} / {d}",
+    "lib.arcade.youNoMove": "Vous n'avez plus de coup légal.",
+    "lib.arcade.note.tienlen": "Quatre joueurs, 13 cartes chacun. Ordre des cartes du plus faible au plus fort : 3, 4, … R, As, 2 ; couleurs du plus faible au plus fort : pique, trèfle, carreau, cœur. Celui qui a le 3 de pique commence. Jouez une carte seule, une paire, un brelan, un carré, ou une suite de 3 cartes consécutives ou plus (sans 2). Le joueur suivant doit jouer le même type en plus fort, ou passer ; un carré peut battre un 2 seul ou une paire de 2. Quand tous les autres passent, le dernier à avoir joué peut ouvrir avec n'importe quoi. Le premier à vider sa main gagne. Sélectionnez les cartes, puis appuyez sur Jouer.",
+    "lib.arcade.tlPlay": "Jouer",
+    "lib.arcade.tlPass": "Passer",
+    "lib.arcade.tlClear": "Désélectionner",
+    "lib.arcade.tlPassed": "a passé",
+    "lib.arcade.tlFree": "Table vide : vous pouvez ouvrir avec n'importe quoi",
+    "lib.arcade.tlLeft": "Cartes restantes : {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} passe.",
+    "lib.arcade.tlBad": "Les cartes sélectionnées ne forment pas une combinaison valide.",
+    "lib.arcade.tlLow": "Cette combinaison n'est pas assez forte pour battre la table.",
+    "lib.arcade.note.td": "Touchez une case vide (pas le chemin) pour construire une tour de tir, qui coûte de l'or ; touchez à nouveau une tour pour l'améliorer (jusqu'au niveau 5). Les tours tirent automatiquement sur l'ennemi le plus avancé à portée. Battez les ennemis pour gagner plus d'or ; si 15 ennemis atteignent la fin, vous perdez. Survivez à toutes les vagues pour réussir le niveau.",
+    "lib.arcade.tdInfo": "Or : {g} · Vague {w}/{t}",
+    "lib.arcade.tdCost": "Tour : {n}",
+    "lib.arcade.note.colorNum": "Chaque case porte un numéro correspondant à une couleur de la palette. Choisissez une couleur, puis touchez les cases portant ce numéro pour les peindre ; avec la mauvaise couleur, rien n'est peint. Peignez correctement toutes les cases pour terminer l'image. Les niveaux élevés ont plus de couleurs.",
+    "lib.arcade.cnWrong": "Mauvaise couleur : vérifiez le numéro de la case.",
+    "lib.arcade.note.yukon": "Comme le Klondike mais sans talon : toute carte face visible peut être déplacée avec toutes les cartes qui la recouvrent, même si elles ne se suivent pas ; seule la première carte doit convenir à la colonne cible (ordre décroissant, couleurs alternées rouge et noir ; un Roi va sur une colonne vide). Construisez les 52 cartes sur les quatre fondations, de l'As au Roi. Les niveaux faciles commencent avec plus de cartes déjà retournées.",
+    "lib.arcade.yukonFree": "Cartes face cachée : {n}",
+    "lib.arcade.note.chinesechk": "Vous jouez les pions bleus dans le coin de droite ; déplacez-les tous les 10 vers le coin gauche opposé avant l'ordinateur. À chaque tour, vous déplacez un pion : un pas vers un trou voisin vide, ou un saut par-dessus n'importe quel pion vers le trou vide juste derrière, avec autant de sauts enchaînés que vous voulez. Touchez un de vos pions, puis un trou vert pour jouer.",
+    "lib.arcade.ccTurn": "À vous · Tour {n}",
+    "lib.arcade.ccDraw": "Plus de tours : match nul.",
+    "lib.arcade.note.maubinh": "Vous et l'ordinateur recevez 13 cartes et les répartissez en 3 mains : une main arrière de 5 cartes, une main du milieu de 5 cartes et une main avant de 3 cartes. La main arrière doit être au moins aussi forte que celle du milieu, et celle du milieu au moins aussi forte que l'avant ; sinon votre arrangement est invalide (« binh lủng ») et vous perdez toute la manche. Touchez une carte, puis la rangée où la placer (touchez une carte placée pour la reprendre). Chaque main gagnée rapporte 1 point ; gagner les 3 en rapporte 6. Jouez 5 manches : un total positif réussit le niveau. La main avant ne peut être qu'une carte haute, une paire ou un brelan.",
+    "lib.arcade.mbHigh": "Carte haute",
+    "lib.arcade.mbPair": "Paire",
+    "lib.arcade.mbTwoPair": "Double paire",
+    "lib.arcade.mbTrips": "Brelan",
+    "lib.arcade.mbStraight": "Suite",
+    "lib.arcade.mbFlush": "Couleur",
+    "lib.arcade.mbFull": "Full",
+    "lib.arcade.mbQuads": "Carré",
+    "lib.arcade.mbSflush": "Quinte flush",
+    "lib.arcade.mbBack": "Main arrière",
+    "lib.arcade.mbMid": "Main du milieu",
+    "lib.arcade.mbFront": "Main avant",
+    "lib.arcade.mbFoe": "Ordinateur",
+    "lib.arcade.mbYou": "Vous",
+    "lib.arcade.mbFoul": "Arrangement invalide !",
+    "lib.arcade.mbFoeFoul": "Arrangement invalide de l'ordinateur !",
+    "lib.arcade.mbConfirm": "Montrer les cartes",
+    "lib.arcade.mbReset": "Effacer",
+    "lib.arcade.mbHand": "Votre main",
+    "lib.arcade.mbRound": "Manche {a}/{b}",
+    "lib.arcade.mbTotal": "Total : {n}",
+    "lib.arcade.mbFinish": "Terminer",
+    "lib.arcade.mbNext": "Manche suivante",
+    "lib.arcade.mbDraw": "Égalité de points : rejouez.",
+    "lib.arcade.mbAutoMsg": "Voici un arrangement suggéré. Vous pouvez le modifier avant de montrer les cartes.",
+    "lib.arcade.note.phom": "Deux joueurs ; chacun reçoit 9 cartes (celui qui commence en reçoit 10). Un phỏm est un groupe de 3 cartes ou plus de même valeur, ou de 3 cartes consécutives ou plus de même couleur (l'As est toujours bas). À votre tour, piochez une carte, ou prenez la carte que votre adversaire vient de défausser si elle forme un phỏm avec votre main (une carte prise doit être gardée), puis défaussez une carte. Quand chaque joueur a défaussé 4 cartes, la manche se termine et celui dont le total des cartes hors phỏm est le plus bas (As = 1 … Roi = 13) gagne. Si toutes vos cartes sont dans des phỏm après une défausse, vous êtes « ù » et gagnez immédiatement. Les cartes entourées de vert font partie de votre meilleure combinaison de phỏm.",
+    "lib.arcade.pmDraw": "Piocher",
+    "lib.arcade.pmEat": "Prendre la défausse",
+    "lib.arcade.pmThrow": "Défausser",
+    "lib.arcade.pmFoeAte": "L'ordinateur a pris votre carte.",
+    "lib.arcade.pmFoeU": "L'ordinateur a fait ù !",
+    "lib.arcade.pmTurn": "Tour {a}/{b}",
+    "lib.arcade.pmLeft": "Hors phỏm : {n}",
+    "lib.arcade.pmDeck": "Pioche : {n}",
+    "lib.arcade.pmFoeHand": "Main de l'ordinateur",
+    "lib.arcade.pmFoeDisc": "Défausses de l'ordinateur",
+    "lib.arcade.pmFoeEaten": "L'ordinateur a pris",
+    "lib.arcade.pmMyDisc": "Vos défausses",
+    "lib.arcade.pmAte": "Vous avez pris cette carte : gardez-la dans un phỏm.",
+    "lib.arcade.pmKeep": "Une carte prise doit être gardée : défaussez-en une autre.",
+    "lib.arcade.pmU": "Ù ! Vous gagnez tout de suite.",
+    "lib.arcade.pmYou": "Vous",
+    "lib.arcade.pmFoe": "Ordinateur",
+    "lib.arcade.pmDraw2": "Égalité de points.",
+    "lib.arcade.note.shogi": "Le shogi est les échecs japonais. Vous jouez le camp du bas et commencez ; les pièces de l'ordinateur sont orientées dans l'autre sens. Les pièces capturées vont dans votre main et peuvent être parachutées sur n'importe quelle case vide au lieu de jouer un coup (jamais un pion dans une colonne où vous avez déjà un pion non promu, ni une pièce sur une rangée où elle ne pourrait plus bouger). Une pièce qui entre dans les trois dernières rangées de l'adversaire, en sort ou s'y déplace peut être promue (sauf le Roi et l'Or) ; la promotion est obligatoire si la pièce n'aurait plus de coup. Mettez le Roi ennemi échec et mat pour gagner. Kanji : 歩 pion, 香 lance, 桂 cavalier, 銀 argent, 金 or, 角 fou, 飛 tour, 玉 roi ; と, 馬, 竜 et les autres pièces rouges sont promues.",
+    "lib.arcade.sgPromote": "Promouvoir",
+    "lib.arcade.sgKeep": "Ne pas promouvoir",
+    "lib.arcade.sgCheck": "Vous êtes en échec !",
+    "lib.arcade.sgWin": "Échec et mat : vous gagnez.",
+    "lib.arcade.sgLose": "Vous êtes échec et mat.",
+    "lib.arcade.sgAskPromote": "Promouvoir cette pièce ?",
+    "lib.arcade.note.janggi": "Le janggi est les échecs coréens. Vous jouez les pièces bleues en bas et commencez. Contrairement au xiangqi, il n'y a pas de rivière, et les deux palais ont des diagonales. Le Général et les Gardes avancent d'un pas le long des lignes du palais (diagonales comprises) ; le Char glisse et capture aussi le long des diagonales du palais ; le Canon doit sauter par-dessus exactement une pièce (pas un autre Canon) pour se déplacer ou capturer, et ne peut pas capturer un Canon ; le Cheval avance d'un pas droit puis d'un en diagonale, et l'Éléphant d'un pas droit puis de deux en diagonale, tous deux bloqués si une pièce est sur le chemin ; les Soldats avancent ou vont sur le côté, et en diagonale vers l'avant dans le palais ennemi. Les deux Généraux ne peuvent jamais se faire face. Mettez le Général ennemi échec et mat pour gagner. L'ordinateur ne passe jamais.",
+    "lib.arcade.jgCheck": "Vous êtes en échec !",
+    "lib.arcade.jgWin": "Échec et mat : vous gagnez.",
+    "lib.arcade.jgLose": "Vous êtes échec et mat.",
+    "lib.arcade.note.pinball": "Appuyez sur Espace, Haut ou touchez la table pour lancer la balle. Maintenez Gauche (ou touchez la moitié gauche de la table) pour lever la palette gauche, et Droite (ou la moitié droite) pour la palette droite ; tapez en rythme plutôt que de maintenir. Les bumpers ronds rapportent 100 points chacun. Vous avez 3 balles ; atteignez le score cible avant qu'elles ne soient épuisées pour réussir le niveau.",
+    "lib.arcade.pinBalls": "Balles : {n} · Objectif : {t}",
+    "lib.arcade.note.cribbage": "Cribbage à deux joueurs, course à 61 points. À chaque donne, vous recevez 6 cartes et en placez 2 face cachée dans la crèche (elle appartient au donneur). Une carte de départ est retournée. Puis jouez à tour de rôle des cartes face visible sans que le total courant dépasse 31 : atteindre 15 ou 31 rapporte 2, répéter la dernière carte rapporte 2/6/12, une suite de 3 cartes ou plus (dans n'importe quel ordre) rapporte sa longueur, et quand plus personne ne peut jouer, le dernier joueur marque 1 (« Go »). Ensuite, chaque main de 4 est comptée avec la carte de départ : chaque combinaison totalisant 15 rapporte 2, chaque paire 2, une suite de 3+ sa longueur, quatre cartes de même couleur 4 (5 avec la carte de départ), et un Valet de la couleur de la carte de départ 1. Le non-donneur compte en premier, puis le donneur compte sa main et la crèche.",
+    "lib.arcade.cbFifteen": "Quinze",
+    "lib.arcade.cbPair": "Paire",
+    "lib.arcade.cbRun": "Suite",
+    "lib.arcade.cbFlush": "Couleur",
+    "lib.arcade.cbNobs": "Valet de la couleur de départ",
+    "lib.arcade.cbHeels": "Valet en carte de départ",
+    "lib.arcade.cbYou": "Vous",
+    "lib.arcade.cbFoe": "Ordinateur",
+    "lib.arcade.cbLast": "Dernière carte",
+    "lib.arcade.cbCount": "Total : {n}",
+    "lib.arcade.cbYouDeal": "Vous donnez",
+    "lib.arcade.cbFoeDeal": "L'ordinateur donne",
+    "lib.arcade.cbPick": "Choisissez 2 cartes pour la crèche",
+    "lib.arcade.cbCrib": "Crèche",
+    "lib.arcade.cbYourHand": "Votre main",
+    "lib.arcade.cbFoeHand": "Main de l'ordinateur",
+    "lib.arcade.cbStarter": "Carte de départ",
+    "lib.arcade.cbZero": "0 point",
+    "lib.arcade.cbPlayed": "Jouées",
+    "lib.arcade.cbToCrib": "Mettre à la crèche",
+    "lib.arcade.cbNext": "Continuer",
+    "lib.arcade.cbHand": "Main"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Morpion ultime",
       "desc": "Morpion sur 9 petites grilles : la case que vous choisissez détermine où votre adversaire doit jouer ; contre l’ordinateur sur 10 niveaux."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Envoyez la balle derrière l'ordinateur ; le premier à 5 points gagne. 10 niveaux face à un adversaire de plus en plus rapide et précis."
+    },
+    "space-shooter": {
+      "name": "Tir spatial",
+      "desc": "Pilotez votre vaisseau, abattez les vaisseaux ennemis et esquivez leurs tirs ; 10 niveaux avec des vagues plus grosses, des tirs de riposte et des ennemis plus coriaces."
+    },
+    "asteroids": {
+      "name": "Astéroïdes",
+      "desc": "Tournez, propulsez et tirez pour briser les rochers de l'espace ; les gros rochers se divisent en plus petits. 10 niveaux avec des rochers plus nombreux et plus rapides."
+    },
+    "maze": {
+      "name": "Labyrinthe",
+      "desc": "Trouvez la sortie du labyrinthe avant la fin du temps ; 10 niveaux, des petits aux grands labyrinthes, avec du brouillard aux niveaux élevés."
+    },
+    "road-cross": {
+      "name": "Traversée de route (style Frogger)",
+      "desc": "Faites sauter la grenouille à travers routes chargées et rivières de troncs flottants pour rentrer 3 fois à la maison ; 10 niveaux avec une circulation plus rapide et une rivière aux niveaux élevés."
+    },
+    "flappy": {
+      "name": "Jeu façon Flappy Bird",
+      "desc": "Touchez pour battre des ailes et passez dans les espaces entre les tuyaux ; 10 niveaux avec des espaces plus étroits et une vitesse croissante."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Sautez par-dessus les cactus et passez sous les oiseaux ; courez assez loin pour réussir chacun des 10 niveaux alors que la vitesse ne cesse d'augmenter."
+    },
+    "whack-a-mole": {
+      "name": "Tape-taupe",
+      "desc": "Frappez les taupes qui sortent des trous avant la fin du temps et évitez les bombes ; 10 niveaux, de lent à très rapide."
+    },
+    "simon": {
+      "name": "Simon (couleurs à mémoriser)",
+      "desc": "Mémorisez et répétez la suite de couleurs et de sons ; des séquences de plus en plus longues sur 10 niveaux, avec 6 pads dès le niveau 7."
+    },
+    "aim-trainer": {
+      "name": "Entraînement de visée",
+      "desc": "Touchez les cibles qui apparaissent au hasard et disparaissent vite ; elles rétrécissent sur 10 niveaux, et votre temps de réaction est mesuré."
+    },
+    "quick-math": {
+      "name": "Calcul mental rapide",
+      "desc": "Faites additions, soustractions, multiplications et divisions de tête sous la pression du temps ; 10 niveaux, des calculs simples aux expressions."
+    },
+    "reaction": {
+      "name": "Test de temps de réaction",
+      "desc": "Cliquez dès que l'écran devient vert ; votre moyenne sur 5 manches doit respecter la limite de chaque niveau, de plus en plus serrée sur 10 niveaux."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Semez les graines autour des creux, capturez celles de votre adversaire et rejouez quand vous finissez dans votre réserve ; jouez contre l'ordinateur sur 10 niveaux, de facile à difficile."
+    },
+    "snakes-ladders": {
+      "name": "Serpents et échelles",
+      "desc": "Lancez le dé de la case 1 à 100, montez les échelles, évitez les serpents et atteignez l'arrivée avant vos adversaires ; 10 niveaux."
+    },
+    "nine-mens-morris": {
+      "name": "Jeu du moulin",
+      "desc": "Posez, faites glisser et faites voler vos pions pour aligner trois pions et retirer ceux de votre adversaire ; jouez contre l'ordinateur sur 10 niveaux."
+    },
+    "battleship": {
+      "name": "Bataille navale",
+      "desc": "Trouvez et coulez la flotte de l'ordinateur sur une grille 10x10 avant qu'il ne coule la vôtre ; 10 niveaux, l'ordinateur déduisant de plus en plus finement."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Gourde Crabe Poisson Crevette)",
+      "desc": "Jeu de dés traditionnel vietnamien : misez des jetons virtuels sur les animaux et secouez trois dés ; atteignez l'objectif de jetons sur 10 niveaux (pas d'argent réel)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Misez sur Joueur, Banquier ou Égalité avec des cartes distribuées selon les règles standard, avec des jetons virtuels ; atteignez l'objectif de jetons sur 10 niveaux (pas d'argent réel)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (jeu à trois cartes)",
+      "desc": "Comparez vos mains de 3 cartes à celles du donneur : brelan, trois figures, puis 9 points jusqu'à 0 ; jetons virtuels, 10 niveaux, pas d'argent réel."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marquez les numéros annoncés sur votre carte 5x5 et criez BINGO avant les adversaires de l'ordinateur ; les numéros sont annoncés de plus en plus vite sur 10 niveaux."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (cinq dés)",
+      "desc": "Lancez cinq dés, gardez les bons et remplissez 13 cases de score ; atteignez le score cible sur 10 niveaux."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights (le huit fou)",
+      "desc": "Jouez la même couleur ou la même valeur, les huit changent la couleur ; videz votre main avant 1 à 3 adversaires ordinateur sur 10 niveaux."
+    },
+    "car-race": {
+      "name": "Course d'esquive",
+      "desc": "Changez de voie pour esquiver les voitures devant vous et parcourez toute la distance ; 10 niveaux avec plus de voies et une circulation plus rapide."
+    },
+    "sky-jump": {
+      "name": "Saut dans le ciel",
+      "desc": "Rebondissez de plateforme en plateforme pour monter le plus haut possible sans tomber ; 10 niveaux avec des plateformes plus espacées, mobiles ou cassables."
+    },
+    "gold-miner": {
+      "name": "Mineur d'or",
+      "desc": "Lâchez le crochet pour remonter or et diamants, évitez les rochers lourds et atteignez la somme cible en 60 secondes ; 10 niveaux."
+    },
+    "fruit-slice": {
+      "name": "Tranche-fruits",
+      "desc": "Glissez pour trancher les fruits qui jaillissent et esquivez les bombes ; 10 niveaux avec plus de fruits et plus de bombes."
+    },
+    "basketball": {
+      "name": "Tir au panier",
+      "desc": "Tirez et relâchez pour envoyer le ballon dans le panier avec un nombre limité de tirs ; 10 niveaux, avec un panier mobile dès le niveau 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Tirez des bulles pour en relier 3 ou plus de la même couleur et les éclater, et éliminez-les toutes avant qu'elles n'atteignent le bas ; 10 niveaux avec plus de couleurs."
+    },
+    "dot-chase": {
+      "name": "Chasse aux points",
+      "desc": "Mangez tous les points du labyrinthe en esquivant les fantômes qui vous poursuivent ; 10 niveaux avec des fantômes plus nombreux et plus malins."
+    },
+    "kakuro": {
+      "name": "Kakuro (sommes croisées)",
+      "desc": "Remplissez les cases blanches avec des chiffres de 1 à 9 pour que chaque série totalise son indice, sans répétition ; 10 niveaux, des grilles de 5x5 à 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Remplissez la grille sans répétition dans les lignes ni les colonnes pour que chaque bloc donne son objectif avec son opération ; 10 niveaux, des grilles de 3x3 à 6x6."
+    },
+    "word-guess": {
+      "name": "Devine le mot (façon Wordle)",
+      "desc": "Devinez le mot secret en anglais grâce aux indices vert, jaune et gris ; 10 niveaux avec des mots de 4 à 6 lettres et moins d'essais."
+    },
+    "hangman": {
+      "name": "Pendu",
+      "desc": "Devinez le mot anglais lettre par lettre avant d'épuiser vos erreurs permises ; 10 niveaux avec des mots plus longs et moins d'erreurs permises."
+    },
+    "word-scramble": {
+      "name": "Mots mélangés (anagramme)",
+      "desc": "Remettez les lettres mélangées dans l'ordre pour former un mot anglais avant la fin du temps ; 10 niveaux, 5 mots par niveau."
+    },
+    "domino": {
+      "name": "Dominos",
+      "desc": "Associez les dominos à l'une ou l'autre extrémité de la chaîne et videz votre main avant l'ordinateur ; 10 niveaux, l'ordinateur devenant de plus en plus malin."
+    },
+    "hearts": {
+      "name": "Hearts (jeu des cœurs)",
+      "desc": "Évitez les cœurs et la dame de pique dans un jeu de cartes à quatre joueurs ; le plus petit score gagne ; 10 niveaux contre des joueurs ordinateur de plus en plus malins."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (jetons virtuels)",
+      "desc": "Poker en tête-à-tête contre l'ordinateur avec des jetons virtuels : couchez-vous, suivez ou relancez, et gagnez quand l'ordinateur n'a plus de jetons ; 10 niveaux, pas d'argent réel."
+    },
+    "n-back": {
+      "name": "Mémoire N-Back",
+      "desc": "Regardez la case allumée et appuyez sur Identique quand elle est la même qu'il y a N étapes ; 10 niveaux avec N jusqu'à 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Cliquez pour cuire des cookies, achetez des aides qui cuisent automatiquement et atteignez l'objectif en 2 minutes ; 10 niveaux."
+    },
+    "tile-connect": {
+      "name": "Jeu de paires (façon Onet)",
+      "desc": "Reliez les tuiles identiques par un chemin d'au plus deux virages et videz le plateau avant la fin du temps ; 10 niveaux, plateaux de plus en plus grands."
+    },
+    "jigsaw": {
+      "name": "Puzzle d'images",
+      "desc": "Échangez les morceaux mélangés pour reconstituer l'image ; 10 niveaux, de 3x3 à 6x6 morceaux."
+    },
+    "mini-golf": {
+      "name": "Mini-golf",
+      "desc": "Tirez en arrière et relâchez pour envoyer la balle dans le trou dans la limite de coups ; 10 parcours avec murs et sable."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Lancez les dés, ramenez vos pions à la maison et sortez-les avant l'ordinateur, en capturant ses pions isolés en chemin ; 10 niveaux."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Treize)",
+      "desc": "Le jeu de cartes vietnamien à quatre : jouez cartes seules, paires, suites et carrés pour vider votre main en premier ; 10 niveaux."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Construisez et améliorez des tours le long du chemin pour arrêter toutes les vagues d'ennemis ; 10 niveaux sur trois cartes différentes."
+    },
+    "color-by-number": {
+      "name": "Coloriage par numéros",
+      "desc": "Peignez chaque case de la couleur qui correspond à son numéro pour révéler l'image ; 10 images avec toujours plus de couleurs."
+    },
+    "yukon": {
+      "name": "Solitaire Yukon",
+      "desc": "Un Klondike sans talon : déplacez n'importe quelle carte face visible avec tout ce qui la recouvre ; 10 niveaux, avec de moins en moins de cartes retournées."
+    },
+    "chinese-checkers": {
+      "name": "Dames chinoises",
+      "desc": "Jeu de pas et de sauts en étoile contre l'ordinateur : déplacez vos 10 pions vers le coin opposé en premier ; 10 niveaux."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (poker chinois)",
+      "desc": "Répartissez 13 cartes en trois mains de 5, 5 et 3 cartes et battez l'ordinateur ; 5 manches par niveau, 10 niveaux."
+    },
+    "phom": {
+      "name": "Phỏm (rami vietnamien)",
+      "desc": "Rami vietnamien à deux joueurs contre l'ordinateur : piochez ou prenez une défausse, formez des phỏm et sortez ; le moins de points restants gagne ; 10 niveaux."
+    },
+    "shogi": {
+      "name": "Shogi (échecs japonais)",
+      "desc": "Jouez au shogi contre l'ordinateur : parachutez les pièces capturées, promouvez et mettez le roi échec et mat ; 10 niveaux avec annulation."
+    },
+    "janggi": {
+      "name": "Janggi (échecs coréens)",
+      "desc": "Jouez aux échecs coréens contre l'ordinateur : diagonales du palais, sauts de canon par-dessus une seule pièce, éléphants à trois pas ; 10 niveaux avec annulation."
+    },
+    "pinball": {
+      "name": "Flipper (Pinball)",
+      "desc": "Actionnez les palettes gauche et droite pour garder la balle en vie, touchez les bumpers et atteignez le score cible avant d'épuiser vos 3 balles ; 10 niveaux."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage à deux joueurs contre l'ordinateur : crèche, pegging jusqu'à 31, comptage des mains, course à 61 points ; 10 niveaux."
     }
   },
   "s": {

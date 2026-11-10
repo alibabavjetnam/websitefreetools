@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Vyberte barvu, kterou vyplníte celou oblast, kterou vlastníte v levém horním rohu; pohltí sousední políčka té barvy. Udělejte celou plochu jednobarevnou v povoleném počtu tahů.",
     "lib.arcade.note.mastermind": "Počítač ukryje řadu barev. Vyberte barvu pro každou pozici a stiskněte Hádat. Černý kolík = správná barva na správném místě; bílý kolík = správná barva na špatném místě. Rozlousknete kód, než vám dojdou pokusy.",
     "lib.arcade.note.hanoi": "Přesuňte všechny kotouče na poslední tyč. Vždy přesouvejte jen horní kotouč tyče a nikdy nepokládejte větší kotouč na menší. Klikněte na zdrojovou tyč a poté na cílovou.",
-    "lib.arcade.note.pipes": "Kliknutím na dlaždici otočíte potrubí o 90°. Propojte všechna potrubí do jedné sítě bez otevřených konců (otevřené konce jsou červené)."
+    "lib.arcade.note.pipes": "Kliknutím na dlaždici otočíte potrubí o 90°. Propojte všechna potrubí do jedné sítě bez otevřených konců (otevřené konce jsou červené).",
+    "lib.arcade.pongScore": "Ty {a} – {b} PC (do {t})",
+    "lib.arcade.kills": "Zničeno: {n}/{t}",
+    "lib.arcade.rocksLeft": "Zbývá skal: {n}",
+    "lib.arcade.timeLeft": "Zbývá {n} s",
+    "lib.arcade.stepsN": "Kroky: {n}",
+    "lib.arcade.crossed": "Doma: {n}/{t}",
+    "lib.arcade.pipes": "Projeté trubky: {n}/{t}",
+    "lib.arcade.distance": "Vzdálenost: {n}/{t} m",
+    "lib.arcade.speedN": "Rychlost: {n}",
+    "lib.arcade.note.whack-a-mole": "Z děr vyskakují krtci — klikni nebo klepni na krtka, abys ho praštil. Praštěte dost krtků, než vyprší čas. Od 4. úrovně se objevují bomby: zásah bomby stojí body.",
+    "lib.arcade.hole": "Díra",
+    "lib.arcade.hitsN": "Zásahy: {n}/{t}",
+    "lib.arcade.note.simon": "Hra přehraje sled barev a zvuků — zopakuj ho ve stejném pořadí. Každé kolo přidá jeden krok. K dokončení úrovně si zapamatuj požadovanou délku. Od 7. úrovně je tlačítek 6.",
+    "lib.arcade.seqN": "Sled: {n}/{t}",
+    "lib.arcade.watch": "Sleduj…",
+    "lib.arcade.yourTurnShort": "Tvůj tah",
+    "lib.arcade.note.aim-trainer": "Cíle se objevují náhodně a rychle mizí — zasáhni jich co nejvíc. Zmenšují se a zrychlují. K dokončení úrovně zasáhni dost cílů dřív, než minneš víckrát než 5×.",
+    "lib.arcade.missN": "Chyby: {n}/{t}",
+    "lib.arcade.answer": "Odpověď",
+    "lib.arcade.note.quick-math": "Počítej z hlavy co nejrychleji: napiš odpověď a stiskni Enter. Každý příklad má časový limit; špatná odpověď nebo vypršení času stojí život (máš 3). K dokončení úrovně správně odpověz na dost příkladů.",
+    "lib.arcade.correctN": "Správně: {n}/{t}",
+    "lib.arcade.note.reaction": "Počkej, až obrazovka zezelená, a pak klikni co nejrychleji. Příliš brzké kliknutí je chyba (po 3 chybách prohráváš). Tvůj průměr z 5 kol musí být lepší než limit úrovně.",
+    "lib.arcade.roundN": "Slovo {n}/{t}",
+    "lib.arcade.limitMs": "Limit: {n} ms",
+    "lib.arcade.rxWait": "Počkej na zelenou…",
+    "lib.arcade.rxGo": "KLIKNI!",
+    "lib.arcade.rxEarly": "Příliš brzy!",
+    "lib.arcade.gameArea": "Herní plocha",
+    "lib.arcade.note.pong": "Pohybuj myší, táhni prstem nebo používej klávesy ← → k ovládání spodní pálky. Odpal míček za počítač; vyhrává ten, kdo první získá 5 bodů. Míček se s každým odrazem zrychluje.",
+    "lib.arcade.note.space-shooter": "Pohybuj myší, táhni prstem nebo používej klávesy ← → k řízení; loď střílí automaticky. Znič dost nepřátelských lodí, abys dokončil úroveň, a vyhýbej se srážkám i palbě. Máš 3 životy.",
+    "lib.arcade.note.asteroids": "← → otáčejí loď, ↑ dává tah, mezerník střílí. Znič všechny skály, abys dokončil úroveň; velké skály se rozpadají na menší. Loď přelétá přes okraje obrazovky. Máš 3 životy.",
+    "lib.arcade.note.maze": "Šipkami (nebo tažením prstu či tlačítky) se dostaň ze zelené tečky k červené vlajce, než vyprší čas. Od 5. úrovně je bludiště v mlze: vidíš jen okolí sebe a projité oblasti se zapamatují.",
+    "lib.arcade.note.road-cross": "Šipkami, tažením nebo tlačítky přeskákej žábu zdola nahoru. Vyhýbej se provozu; od 5. úrovně je v horní části řeka, takže skákej na plovoucí kmeny. Dostaň se domů 3× a dokončíš úroveň. Máš 3 životy.",
+    "lib.arcade.note.flappy": "Klepni na herní plochu, stiskni mezerník nebo ↑ a zamávej křídly. Prolétávej mezerami mezi trubkami, aniž bys se dotkl trubky, země nebo stropu. Vyšší úrovně mají užší mezery a rychlejší let.",
+    "lib.arcade.note.runner": "Klepni na herní plochu, stiskni mezerník nebo ↑ a přeskoč kaktusy; drž ↓ a skrč se pod vysokými ptáky (nebo přeskoč nízké). Uběhni dost daleko, abys dokončil úroveň. Rychlost stále roste.",
+    "lib.arcade.fire": "Střílet",
+    "lib.arcade.jump": "Skok",
+    "lib.arcade.aimTarget": "Cíl",
+    "lib.game.soundOn": "Zapnout zvuk",
+    "lib.game.soundOff": "Vypnout zvuk",
+    "lib.arcade.note.kalah": "Hraješ spodní řadu, počítač horní; velká jamka vpravo je tvůj sklad. Klikni na jamku, vezmi všechna zrnka a rozsévej je proti směru hodinových ručiček po jednom do každé jamky (soupeřův sklad přeskoč). Pokud poslední zrnko skončí ve tvém skladu, hraješ znovu; pokud skončí v prázdné jamce na tvé straně naproti jamce se zrnky, tato zrnka získáš. Když je jedna strana prázdná, zrnka druhé strany připadnou jejímu majiteli do skladu; vyhrává větší sklad.",
+    "lib.arcade.note.snakes": "Hoď kostkou a posuň se o tolik polí, od 1 do 100. Když skončíš na úpatí žebříku, vyšplháš nahoru; na hlavě hada sklouzneš dolů. Od 4. úrovně musíš na 100 hodit přesné číslo. Vyšší úrovně mají víc hadů, méně žebříků a víc soupeřů. Vyhrává ten, kdo první dosáhne 100.",
+    "lib.arcade.square": "Pole {n}",
+    "lib.arcade.ladderUp": "Nahoru po žebříku!",
+    "lib.arcade.snakeDown": "Pozřel tě had!",
+    "lib.arcade.needExact": "Na 100 musíš hodit přesné číslo.",
+    "lib.arcade.note.nmm": "Každá strana má 9 kamenů. Fáze 1: střídavě pokládejte kameny na prázdné body. Fáze 2: posuň kámen na sousední prázdný bod. Když ti zbyly jen 3 kameny, můžeš „létat“ na libovolný prázdný bod. Utvoř tři v řadě („mlýn“) a odeber soupeřův kámen (nejdřív ty, které nejsou v mlýně). Prohráváš, když ti zbydou 2 kameny nebo se nemůžeš hýbat. Hraješ bílými a táhneš první.",
+    "lib.arcade.inHand": "K položení: {a} · {b}",
+    "lib.arcade.removePiece": "Vyber soupeřův kámen k odebrání.",
+    "lib.arcade.enemyWaters": "Nepřátelské vody (kliknutím střílej)",
+    "lib.arcade.yourFleet": "Tvoje flotila",
+    "lib.arcade.note.battleship": "Každá strana má 5 lodí (délky 5, 4, 3, 3, 2) náhodně rozmístěných na mřížce 10x10. Střídavě střílíte na políčko: zásah zčervená, minutí zmodrá a zasažení všech políček lodi ji potopí. Vyhrává ten, kdo první potopí celou nepřátelskou flotilu. Na vyšších úrovních počítač chytřeji odhaduje polohu tvých lodí.",
+    "lib.arcade.shipsLeft": "Zbývá lodí: ty {a} · nepřítel {b}",
+    "lib.arcade.theySunk": "Nepřítel potopil jednu z tvých lodí!",
+    "lib.arcade.theyHit": "Nepřítel zasáhl jednu z tvých lodí.",
+    "lib.arcade.theyMiss": "Nepřítel minul.",
+    "lib.arcade.youSunk": "Potopil jsi nepřátelskou loď!",
+    "lib.arcade.youHit": "Zásah!",
+    "lib.arcade.youMiss": "Mimo.",
+    "lib.arcade.shake": "Protřepat",
+    "lib.arcade.clearBets": "Vymazat sázky",
+    "lib.arcade.note.bau-cua": "Pouze virtuální mince — žádné skutečné peníze. Vyber hodnotu žetonu, kliknutím na zvířata vsaď a stiskni Protřepat. Za každou kostku, která odpovídá zvířeti, na které jsi vsadil, dostaneš zpět sázku plus stejnou částku za každou shodu. Dosáhni cílového počtu mincí v povoleném počtu kol a dokončíš úroveň.",
+    "lib.arcade.note.baccarat": "Pouze virtuální mince — žádné skutečné peníze. Vsaď na Hráče, Bankéře nebo Remízu a stiskni Rozdat. Hodnota ruky je poslední číslice součtu (A = 1, 2–9 podle čísla, 10/J/Q/K = 0); vyhrává ruka blíž k 9 a třetí karty se táhnou podle standardních pravidel. Hráč vyplácí 1:1, Bankéř 0,95:1, Remíza 8:1 (sázky na Hráče/Bankéře se při remíze vrací). Dosáhni cílového počtu mincí v povoleném počtu kol a dokončíš úroveň.",
+    "lib.arcade.banker": "Bankéř",
+    "lib.arcade.player": "Hráč",
+    "lib.arcade.tie": "Remíza",
+    "lib.arcade.openCards": "Odkrýt",
+    "lib.arcade.note.bai-cao": "Pouze virtuální mince — žádné skutečné peníze. Každá strana dostane 3 karty. Ruka se hodnotí poslední číslicí součtu (A = 1, 2–9 podle čísla, 10/J/Q/K = 10, tedy 0 bodů). Pořadí: nejvyšší je trojice („Sáp“), pak tři obrázkové karty („Ba tiên“), potom 9 bodů až 0. Vsaď, stiskni Rozdat a poté Odkrýt a porovnej s bankéřem. Od 6. úrovně vyhrává při shodě bankéř. Dosáhni cílového počtu mincí v povoleném počtu kol a dokončíš úroveň.",
+    "lib.arcade.caoSap": "Trojice",
+    "lib.arcade.caoBaTien": "Tři obrázkové karty",
+    "lib.arcade.caoPts": "{n} b.",
+    "lib.arcade.note.bingo": "Počítač vyvolává čísla od 1 do 75. Pokud je vyvolané číslo na tvé kartě, kliknutím ho označ (střed je zdarma). Dokonči řadu, sloupec nebo úhlopříčku a stiskni BINGO! — musíš porazit počítačové soupeře. Falešné BINGO! zamkne tlačítko na několik sekund. Vyšší úrovně vyvolávají rychleji a mají víc soupeřů.",
+    "lib.arcade.opponentsN": "Soupeři: {n}",
+    "lib.arcade.falseBingo": "Ještě to není celá řada! Tlačítko je na 3 sekundy zamčené.",
+    "lib.arcade.bingoGo": "Čísla se vyvolávají!",
+    "lib.arcade.note.yahtzee": "Každé kolo hodíš pětkrát kostkami až třikrát: kliknutím na kostku ji ponecháš a stiskem Hodit ostatní hodíš znovu. Poté vyber v tabulce políčko k zapsání (každé se použije jednou; nehodící se políčko dá 0). Celkem 13 kol. Políčka Jedničky–Šestky přidají bonus 35, pokud dají dohromady 63 a více. K výhře dosáhni cílového skóre úrovně.",
+    "lib.arcade.turnN": "Kolo {n}/13",
+    "lib.arcade.pickCat": "Vyber políčko k zapsání",
+    "lib.arcade.rollsLeft": "Hodit (zbývá {n})",
+    "lib.arcade.upperBonus": "Bonus za Jedničky–Šestky",
+    "lib.arcade.scored": "Zapsáno {n}",
+    "lib.arcade.note.crazy-eights": "Zahraj kartu, která odpovídá vrchní kartě odhazovacího balíčku barvou nebo hodnotou. Osmičky jsou divoké: zahraj je kdykoli a vyber novou barvu. Pokud nemáš co zahrát, táhni z balíčku (až 3 karty); pokud stále nemůžeš zahrát, pasuješ. Vyhrává ten, kdo první vyprázdní ruku. Vyšší úrovně mají víc soupeřů a počítač hraje chytřeji.",
+    "lib.arcade.opponent": "Soupeř",
+    "lib.arcade.pileLeft": "Dobírací balíček: {n}",
+    "lib.arcade.pickSuit": "Vyber novou barvu",
+    "lib.arcade.aiSuit": "Počítač zvolil {s}",
+    "lib.arcade.aiPass": "Počítač pasuje.",
+    "lib.arcade.mustPlay": "Máš kartu, kterou lze zahrát — zahraj ji.",
+    "lib.arcade.youPass": "Vzal sis 3 karty a pasuješ.",
+    "lib.arcade.bcGourd": "Tykev",
+    "lib.arcade.bcCrab": "Krab",
+    "lib.arcade.bcShrimp": "Kreveta",
+    "lib.arcade.bcFish": "Ryba",
+    "lib.arcade.bcRooster": "Kohout",
+    "lib.arcade.bcDeer": "Jelen",
+    "lib.arcade.yOnes": "Jedničky",
+    "lib.arcade.yTwos": "Dvojky",
+    "lib.arcade.yThrees": "Trojky",
+    "lib.arcade.yFours": "Čtyřky",
+    "lib.arcade.yFives": "Pětky",
+    "lib.arcade.ySixes": "Šestky",
+    "lib.arcade.yThree": "Trojice",
+    "lib.arcade.yFour": "Čtveřice",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Malá postupka (30)",
+    "lib.arcade.yLarge": "Velká postupka (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Šance",
+    "lib.arcade.note.race": "Šipkami ← → (nebo klepnutím na požadovaný pruh) měň pruhy a vyhýbej se autům před sebou. Máš 3 životy; ujeď celou vzdálenost a dokončíš úroveň. Vyšší úrovně mají víc pruhů a rychlejší provoz.",
+    "lib.arcade.note.jump": "Postavička skáče sama. Šipkami ← → nebo tažením prstu dopadni na další plošinu. Modré plošiny se pohybují, hnědé se po dopadu rozbijí. Pád z obrazovky znamená prohru; vyšplhej dost vysoko a dokončíš úroveň.",
+    "lib.arcade.note.miner": "Hák se houpe sem a tam; stiskem mezerníku, ↓ nebo klepnutím na pole ho spustíš. Velké zlato a kameny jsou těžké a táhnou se pomalu; diamanty mají velkou cenu. Dosáhni cílové částky, než uplyne 60 sekund.",
+    "lib.arcade.note.slicer": "Přejeď prstem nebo myší přes ovoce a rozkrájíš ho. Vyhýbej se černým bombám. Minuté ovoce nebo rozkrojená bomba stojí život (máš 3). Rozkrájej dost ovoce a dokončíš úroveň.",
+    "lib.arcade.note.hoops": "Stiskni na hřišti, přetáhni dolů (jako prak) a pusť, abys vystřelil míč do koše. Čím dál táhneš, tím silnější je hod. Dosáhni dost košů v rámci dostupných hodů; od 4. úrovně se koš pohybuje.",
+    "lib.arcade.note.bubbles": "Pohybem myši nebo prstu zamiř, pak klikni/klepni nebo stiskni mezerník/Střílet. Spoj 3 nebo víc bublin stejné barvy a prasknou; bubliny, které ztratí oporu, spadnou. Řady pomalu klesají, proto je udržuj daleko od spodní čáry. Odstraň všechny bubliny a vyhraješ.",
+    "lib.arcade.note.chase": "Šipkami (nebo tažením / tlačítky) se otáčej a sněz všechny tečky v bludišti, přitom se vyhýbej duchům, kteří tě honí. Máš 3 životy; vyšší úrovně přidávají víc duchů, kteří jsou rychlejší a chytřeji honí.",
+    "lib.arcade.height": "Výška: {n}/{t} m",
+    "lib.arcade.money": "Peníze: {n}/{t}",
+    "lib.arcade.sliced": "Rozkrájeno: {n}/{t}",
+    "lib.arcade.hoopScore": "Skóre: {n}/{t}",
+    "lib.arcade.shotsLeft": "Zbývá {n} hodů",
+    "lib.arcade.bubbleLeft": "Zbývá {n} bublin",
+    "lib.arcade.shotsN": "Hody: {n}",
+    "lib.arcade.dotsLeft": "Zbývá {n} teček",
+    "lib.arcade.note.kakuro": "Vyplň bílá políčka číslicemi 1–9 tak, aby každá řada dávala součet z nápovědy v černém políčku (číslo vpravo nahoře platí pro řadu doprava, číslo vlevo dole pro řadu dolů) a v řadě se žádná číslice neopakovala. K pohybu použij šipky.",
+    "lib.arcade.note.kenken": "Vyplň mřížku čísly 1 až N tak, aby se žádné číslo neopakovalo v řádku ani ve sloupci. Každá silně ohraničená skupina ukazuje cíl a operaci (+, −, ×, ÷): čísla ve skupině musí dát tento výsledek. K pohybu použij šipky.",
+    "lib.arcade.note.wordGuess": "Hádej tajné anglické slovo. Po každém pokusu zelená znamená správné písmeno na správném místě, žlutá písmeno, které ve slově je, ale jinde, a šedá písmeno, které ve slově není. Piš na klávesnici nebo použij klávesy na obrazovce a odešli stiskem Enter. Vyšší úrovně mají delší slova a méně pokusů.",
+    "lib.arcade.note.hangman": "Hádej tajné anglické slovo volbou písmen jedno po druhém. Každé špatné písmeno přidá část oběšence; když dojdou špatné pokusy, prohráváš. Vyšší úrovně mají delší slova a méně povolených chyb.",
+    "lib.arcade.note.scramble": "Přeskládej zamíchaná písmena do skutečného anglického slova a napiš ho do pole odpovědi. Každá úroveň má 5 slov; vyřeš alespoň 4 dřív, než vyprší časovač slova, a úroveň dokončíš. Nápověda odhalí první písmeno.",
+    "lib.arcade.cellsLeft": "Zbývá prázdných polí: {n}",
+    "lib.arcade.wrongN": "Špatně je {n} polí.",
+    "lib.arcade.noError": "Zatím nebyly nalezeny žádné chyby.",
+    "lib.arcade.tooShort": "Málo písmen",
+    "lib.arcade.answerIs": "Odpověď: {w}",
+    "lib.arcade.livesLeft": "Zbývá špatných pokusů: {n}",
+    "lib.arcade.yourAnswer": "Tvoje odpověď",
+    "lib.arcade.skip": "Přeskočit",
+    "lib.arcade.notThis": "Není to ono, zkus to znovu.",
+    "lib.arcade.startsWith": "První písmeno: {c}",
+    "lib.arcade.note.domino": "Každý hráč dostane 7 kamenů; začíná ten, kdo má nejvyšší dvojici. Zahraj kámen, jehož číslo odpovídá jednomu konci řetězu. Pokud nemůžeš hrát, táhni z hromady, dokud nebudeš moct; pokud je prázdná, pasuj. Vyhrává ten, kdo první vyprázdní ruku; pokud jsou oba zablokovaní, vyhrává nižší součet bodů.",
+    "lib.arcade.note.hearts": "Čtyři hráči, každý 13 karet. Začíná křížová dvojka. Musíš přiznat barvu, pokud můžeš. Každé srdce má 1 bod a pikovou dámu 13; kdo vyhraje štych, bere jeho body. Méně je lépe a kdo vezme všech 26 bodů, dá všem ostatním 26 místo toho. Dokud nebylo zahráno srdce, nelze jím vynášet. Po poslední hře vyhráváš, pokud máš nejnižší skóre (nebo sdílené nejnižší).",
+    "lib.arcade.note.holdem": "Hlava na hlavu proti počítači, pouze s virtuálními žetony. Každý hráč dostane 2 soukromé karty a odkryje se 5 společných karet (flop, turn, river); sestav nejlepší pětikartovou kombinaci. V každém kole můžeš složit, dorovnat (nebo čekat) či přihodit. Blindy rostou každé 4 hry. Vyhráváš, když počítači dojdou žetony, nebo když máš po limitu her víc žetonů. Nejde o žádné skutečné peníze.",
+    "lib.arcade.dmDraw": "Táhnout kámen",
+    "lib.arcade.dmPass": "Pasovat",
+    "lib.arcade.dmEmpty": "Zatím nebyl zahrán žádný kámen",
+    "lib.arcade.dmYard": "Hromada: {n} kamenů",
+    "lib.arcade.dmLeft": "Levý konec",
+    "lib.arcade.dmRight": "Pravý konec",
+    "lib.arcade.dmTie": "Remíza! Obě strany jsou vyrovnané.",
+    "lib.arcade.hrHand": "Hra {n}/{t}",
+    "lib.arcade.hrTook": "{p} bere štych ({n} bodů).",
+    "lib.arcade.hrIllegal": "Tuto kartu nelze zahrát (přiznej barvu, nebo se zatím nesmí vynášet srdcem).",
+    "lib.arcade.blinds": "Velký blind: {n}",
+    "lib.arcade.pot": "Bank: {n}",
+    "lib.arcade.fold": "Složit",
+    "lib.arcade.check": "Čekat",
+    "lib.arcade.callN": "Dorovnat {n}",
+    "lib.arcade.raiseTo": "Přihodit na",
+    "lib.arcade.raiseN": "Přihodit na {n}",
+    "lib.arcade.thOppFold": "Počítač složil; tuto hru vyhráváš.",
+    "lib.arcade.thYouFold": "Složil jsi.",
+    "lib.arcade.thOppWin": "Počítač vyhrává tuto hru",
+    "lib.arcade.thYouWin": "Vyhráváš tuto hru",
+    "lib.arcade.thSplit": "Rozdělený bank",
+    "lib.arcade.thAiFold": "Počítač složil.",
+    "lib.arcade.thAiRaise": "Počítač přihazuje na {n}.",
+    "lib.arcade.thAiCall": "Počítač dorovnává / čeká.",
+    "lib.arcade.hand.high": "Nejvyšší karta",
+    "lib.arcade.hand.pair": "Pár",
+    "lib.arcade.hand.twoPair": "Dva páry",
+    "lib.arcade.hand.trips": "Trojice",
+    "lib.arcade.hand.straight": "Postupka",
+    "lib.arcade.hand.flush": "Barva",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Čtveřice",
+    "lib.arcade.hand.sflush": "Postupka v barvě",
+    "lib.arcade.note.nback": "Na mřížce 3x3 se postupně rozsvěcují čtverce. Stiskni „Shoda!“ (nebo mezerník), když je rozsvícená pozice stejná jako před N kroky (N je zobrazeno nahoře). K dokončení úrovně potřebuješ alespoň 80 % správných rozhodnutí. Vyšší úrovně používají větší N.",
+    "lib.arcade.nbMatch": "Shoda!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Správně: {a} · Špatně: {b}",
+    "lib.arcade.nbAcc": "Přesnost: {n} %",
+    "lib.arcade.note.clicker": "Klikáním na sušenku piš sušenky, pak je utrácej za pomocníky, kteří pečou automaticky (ceny s každým nákupem rostou). Upeč cílový počet sušenek do 2 minut a dokončíš úroveň.",
+    "lib.arcade.ckCursor": "Kurzor",
+    "lib.arcade.ckGrandma": "Pečící babička",
+    "lib.arcade.ckFarm": "Farma",
+    "lib.arcade.ckMine": "Cukrový důl",
+    "lib.arcade.ckFactory": "Továrna",
+    "lib.arcade.ckCookie": "Sušenka",
+    "lib.arcade.ckEarned": "Upečeno: {n}/{t}",
+    "lib.arcade.chips2": "Sušenky: {n}",
+    "lib.arcade.ckCps": "{n} sušenek za sekundu",
+    "lib.arcade.note.onet": "Vyber dvě stejné dlaždice, které lze spojit cestou s nejvýše 2 zatáčkami, jež neprotíná jiné dlaždice, a odstraníš je. Odstraň všechny dlaždice, než vyprší čas, a vyhraješ. Když nezbývají žádné tahy, můžeš zamíchat (omezený počet použití).",
+    "lib.arcade.shuffle": "Zamíchat",
+    "lib.arcade.tilesLeft": "Zbývá {n} dlaždic",
+    "lib.arcade.autoShuffle": "Nezbývají žádné tahy — automaticky zamícháno.",
+    "lib.arcade.note.jigsaw": "Obrázek je rozřezán na dílky a zamíchán. Klepni na jeden dílek a pak na druhý, abys je prohodil, a poskládej obrázek podle předlohy. Dílky na správném místě mají zelený okraj. Vyšší úrovně mají víc dílků.",
+    "lib.arcade.jgRef": "Předloha",
+    "lib.arcade.jgPlaced": "Na místě: {a}/{b}",
+    "lib.arcade.golfStrokes": "Rány: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Hraješ bílými kameny, které se pohybují z pravého horního rohu kolem do pravého dolního (tvůj domov). Hoď kostkami, klikni na kámen, který chceš přesunout, a pak na zvýrazněný cíl. Dopadem na bod s přesně jedním soupeřovým kamenem ho vyhodíš na střední lištu a ten hráč ho musí nejdřív vrátit do hry. Na bod se dvěma a více soupeřovými kameny dopadnout nelze. Jakmile je všech tvých 15 kamenů v domácí části (posledních 6 bodů), můžeš je vyvádět. Vyhrává ten, kdo první vyvede všech 15.",
+    "lib.arcade.bgRoll": "Hodit kostkami",
+    "lib.arcade.bgOff": "Vyvést",
+    "lib.arcade.bgRollFirst": "Hodit kostkami",
+    "lib.arcade.bgInfo": "Venku: ty {a} · počítač {b} · Pipy: {c} / {d}",
+    "lib.arcade.youNoMove": "Nemáš už žádný platný tah.",
+    "lib.arcade.note.tienlen": "Čtyři hráči, každý 13 karet. Pořadí karet od nejnižší: 3, 4, … K, A, 2; barvy od nejnižší: piky, kříže, káry, srdce. Začíná ten, kdo má pikovou trojku. Zahraj jednu kartu, pár, trojici, čtveřici nebo postupku z 3 a více po sobě jdoucích karet (bez dvojek). Další hráč musí zahrát stejný typ a vyšší, nebo pasovat; čtveřice může přebít jednu dvojku nebo pár dvojek. Když všichni ostatní pasují, poslední hráč může vynést cokoli. Vyhrává ten, kdo první vyprázdní ruku. Vyber karty a stiskni Zahrát.",
+    "lib.arcade.tlPlay": "Zahrát",
+    "lib.arcade.tlPass": "Pasovat",
+    "lib.arcade.tlClear": "Zrušit výběr",
+    "lib.arcade.tlPassed": "pasoval",
+    "lib.arcade.tlFree": "Stůl je prázdný — můžeš vynést cokoli",
+    "lib.arcade.tlLeft": "Zbývá karet: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} pasuje.",
+    "lib.arcade.tlBad": "Vybrané karty netvoří platnou kombinaci.",
+    "lib.arcade.tlLow": "Tato kombinace není dost vysoká, aby přebila stůl.",
+    "lib.arcade.note.td": "Klepni na prázdné políčko (ne na cestu) a postav střeleckou věž, která stojí zlato; klepnutím na věž ji vylepšíš (až na úroveň 5). Věže automaticky střílejí na nepřítele, který došel nejdál v dosahu. Poraž nepřátele, získáš víc zlata; pokud na konec dojde 15 nepřátel, prohráváš. Přežij všechny vlny a dokončíš úroveň.",
+    "lib.arcade.tdInfo": "Zlato: {g} · Vlna {w}/{t}",
+    "lib.arcade.tdCost": "Věž: {n}",
+    "lib.arcade.note.colorNum": "Každé políčko má číslo odpovídající barvě v paletě. Vyber barvu a klepáním na políčka s tímto číslem je obarvi; klepnutí špatnou barvou nic nenamaluje. Obarvi všechna políčka správně a obrázek je hotový. Vyšší úrovně mají víc barev.",
+    "lib.arcade.cnWrong": "Špatná barva — zkontroluj číslo na políčku.",
+    "lib.arcade.note.yukon": "Jako Klondike, ale bez zásobníku: libovolnou odkrytou kartu lze přesunout spolu se všemi kartami na ní, i když nejsou v řadě; k cílovému sloupci musí pasovat jen první karta (sestupně, střídavě červená a černá; král na prázdný sloupec). Postav všech 52 karet na čtyřech základnách od esa po krále. Nízké úrovně začínají s víc kartami již lícem nahoru.",
+    "lib.arcade.yukonFree": "Karty lícem dolů: {n}",
+    "lib.arcade.note.chinesechk": "Hraješ modrými kameny v pravém rohu; přesuň všech 10 do protějšího levého rohu dřív než počítač. Každé kolo přesuneš jeden kámen: krok na prázdnou sousední jamku nebo skok přes libovolný kámen na prázdnou jamku hned za ním, a skákat můžeš v řetězu, kolikrát chceš. Klepni na svůj kámen a pak na zelenou jamku k přesunu.",
+    "lib.arcade.ccTurn": "Tvůj tah · Kolo {n}",
+    "lib.arcade.ccDraw": "Došla kola — je to remíza.",
+    "lib.arcade.note.maubinh": "Ty i počítač dostanete 13 karet a rozložíte je do 3 rukou: zadní ruka z 5 karet, střední ruka z 5 karet a přední ruka ze 3 karet. Zadní ruka musí být alespoň stejně silná jako střední a střední alespoň stejně silná jako přední; jinak je tvé rozložení chybné a prohráváš celé kolo. Klepni na kartu a pak na řadu, kam patří (klepnutím na položenou kartu ji vrátíš). Každá vyhraná ruka dává 1 bod; vyhrání všech 3 dává 6. Hraj 5 kol — kladný součet dokončí úroveň. Přední ruka může být jen nejvyšší karta, pár nebo trojice.",
+    "lib.arcade.mbHigh": "Nejvyšší karta",
+    "lib.arcade.mbPair": "Pár",
+    "lib.arcade.mbTwoPair": "Dva páry",
+    "lib.arcade.mbTrips": "Trojice",
+    "lib.arcade.mbStraight": "Postupka",
+    "lib.arcade.mbFlush": "Barva",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Čtveřice",
+    "lib.arcade.mbSflush": "Postupka v barvě",
+    "lib.arcade.mbBack": "Zadní ruka",
+    "lib.arcade.mbMid": "Střední ruka",
+    "lib.arcade.mbFront": "Přední ruka",
+    "lib.arcade.mbFoe": "Počítač",
+    "lib.arcade.mbYou": "Ty",
+    "lib.arcade.mbFoul": "Chybné rozložení!",
+    "lib.arcade.mbFoeFoul": "Počítač má chybné rozložení!",
+    "lib.arcade.mbConfirm": "Ukázat karty",
+    "lib.arcade.mbReset": "Vymazat",
+    "lib.arcade.mbHand": "Tvoje ruka",
+    "lib.arcade.mbRound": "Kolo {a}/{b}",
+    "lib.arcade.mbTotal": "Celkem: {n}",
+    "lib.arcade.mbFinish": "Dokončit",
+    "lib.arcade.mbNext": "Další kolo",
+    "lib.arcade.mbDraw": "Bodová remíza — hrajte znovu.",
+    "lib.arcade.mbAutoMsg": "Zde je navržené rozložení. Můžeš ho změnit, než karty ukážeš.",
+    "lib.arcade.note.phom": "Dva hráči; každý dostane 9 karet (kdo začíná, dostane 10). Sestava jsou 3 a více karet stejné hodnoty nebo 3 a více po sobě jdoucích karet stejné barvy (eso je jen nízké). Na tahu táhni kartu z balíčku, nebo vezmi kartu, kterou soupeř právě odhodil, pokud s tvou rukou tvoří sestavu (vzatou kartu musíš ponechat), a pak odhoď jednu kartu. Když každý hráč odhodí 4 karty, kolo končí a vyhrává ten, kdo má nižší součet karet mimo sestavy (eso = 1 … král = 13). Pokud jsou po odhozu všechny tvé karty v sestavách, vyjdeš („Ù“) a hned vyhráváš. Karty ohraničené zeleně jsou v tvé nejlepší sadě sestav.",
+    "lib.arcade.pmDraw": "Táhnout",
+    "lib.arcade.pmEat": "Vzít odhozenou",
+    "lib.arcade.pmThrow": "Odhodit",
+    "lib.arcade.pmFoeAte": "Počítač vzal tvou kartu.",
+    "lib.arcade.pmFoeU": "Počítač vyšel!",
+    "lib.arcade.pmTurn": "Kolo {a}/{b}",
+    "lib.arcade.pmLeft": "Mimo sestavy: {n}",
+    "lib.arcade.pmDeck": "Balíček: {n}",
+    "lib.arcade.pmFoeHand": "Ruka počítače",
+    "lib.arcade.pmFoeDisc": "Odhozy počítače",
+    "lib.arcade.pmFoeEaten": "Počítač vzal",
+    "lib.arcade.pmMyDisc": "Tvé odhozy",
+    "lib.arcade.pmAte": "Vzal sis tuto kartu — ponech ji v sestavě.",
+    "lib.arcade.pmKeep": "Vzatou kartu musíš ponechat — odhoď jinou.",
+    "lib.arcade.pmU": "Vyšel jsi! Hned vyhráváš.",
+    "lib.arcade.pmYou": "Ty",
+    "lib.arcade.pmFoe": "Počítač",
+    "lib.arcade.pmDraw2": "Bodová remíza.",
+    "lib.arcade.note.shogi": "Shogi je japonské šachy. Hraješ spodní stranou a táhneš první; kameny počítače míří opačným směrem. Zajaté kameny jdou do tvé ruky a místo tahu je lze vložit na libovolné prázdné pole (nikdy pěšce do sloupce, kde už máš nepovýšeného pěšce, a nikdy kámen na řadu, kde by se už nemohl hýbat). Kámen, který vstoupí do posledních tří řad soupeře, v nich se pohybuje nebo z nich vystoupí, se může povýšit (kromě krále a zlata); povýšení je povinné, pokud by kámen neměl další tahy. Dej soupeřovu králi mat a vyhraješ. Kandži: 歩 pěšec, 香 kopiník, 桂 kůň, 銀 stříbro, 金 zlato, 角 střelec, 飛 věž, 玉 král; と, 馬, 竜 a další červené kameny jsou povýšené.",
+    "lib.arcade.sgPromote": "Povýšit",
+    "lib.arcade.sgKeep": "Nepovyšovat",
+    "lib.arcade.sgCheck": "Jsi v šachu!",
+    "lib.arcade.sgWin": "Mat — vyhrál jsi.",
+    "lib.arcade.sgLose": "Dostal jsi mat.",
+    "lib.arcade.sgAskPromote": "Povýšit tento kámen?",
+    "lib.arcade.note.janggi": "Janggi jsou korejské šachy. Hraješ modrými kameny dole a táhneš první. Na rozdíl od xiangqi tu není řeka a obě paláce mají úhlopříčky. Generál a strážci se pohybují o krok po liniích paláce (včetně úhlopříček); vůz také klouže a bere po úhlopříčkách paláce; dělo musí k tahu nebo braní přeskočit přesně jeden kámen (ne jiné dělo) a nesmí brát dělo; kůň udělá krok rovně a pak úhlopříčně, slon jeden rovně a dva úhlopříčně, oba jsou blokovány kamenem v cestě; vojáci jdou vpřed nebo do strany a v soupeřově paláci i úhlopříčně vpřed. Dva generálové si nikdy nesmí stát tváří v tvář. Dej soupeřovu generálovi mat a vyhraješ. Počítač nikdy nepasuje.",
+    "lib.arcade.jgCheck": "Jsi v šachu!",
+    "lib.arcade.jgWin": "Mat — vyhrál jsi.",
+    "lib.arcade.jgLose": "Dostal jsi mat.",
+    "lib.arcade.note.pinball": "Stiskni mezerník, ↑ nebo klepni na stůl a vypustíš míček. Drž ← (nebo se dotkni levé poloviny stolu) pro zvednutí levé pálky a → (nebo pravé poloviny) pro pravou — místo držení klepej v rytmu. Kulaté bumpery dávají 100 bodů. Máš 3 míčky; dosáhni cílového skóre, než ti dojdou, a dokončíš úroveň.",
+    "lib.arcade.pinBalls": "Míčky: {n} · Cíl: {t}",
+    "lib.arcade.note.cribbage": "Cribbage pro dva hráče, závod do 61 bodů. V každém rozdání dostaneš 6 karet a 2 položíš lícem dolů do crib (patří dealerovi). Otočí se startovní karta. Pak se střídavě hrají karty lícem nahoru, přičemž průběžný součet nesmí přesáhnout 31: dosažení 15 nebo 31 dává 2, shoda s poslední kartou 2/6/12, postupka ze 3 a více (v libovolném pořadí) tolik bodů, kolik je karet, a když nikdo nemůže hrát, poslední hráč získá 1 („Go“). Potom se počítá každá ruka o 4 kartách se startovní kartou: každá kombinace s součtem 15 dává 2, každý pár 2, postupka ze 3+ tolik, kolik je karet, čtyři karty jedné barvy 4 (5 se startovní kartou) a spodek shodný s barvou startovní karty 1. Nejprve počítá hráč, který nerozdával, pak dealer svou ruku a crib.",
+    "lib.arcade.cbFifteen": "Patnáctka",
+    "lib.arcade.cbPair": "Pár",
+    "lib.arcade.cbRun": "Postupka",
+    "lib.arcade.cbFlush": "Barva",
+    "lib.arcade.cbNobs": "Spodek shodný se startovní kartou",
+    "lib.arcade.cbHeels": "Spodek jako startovní karta",
+    "lib.arcade.cbYou": "Ty",
+    "lib.arcade.cbFoe": "Počítač",
+    "lib.arcade.cbLast": "Poslední karta",
+    "lib.arcade.cbCount": "Součet: {n}",
+    "lib.arcade.cbYouDeal": "Rozdáváš ty",
+    "lib.arcade.cbFoeDeal": "Rozdává počítač",
+    "lib.arcade.cbPick": "Vyber 2 karty do cribu",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Tvoje ruka",
+    "lib.arcade.cbFoeHand": "Ruka počítače",
+    "lib.arcade.cbStarter": "Startovní karta",
+    "lib.arcade.cbZero": "0 bodů",
+    "lib.arcade.cbPlayed": "Zahráno",
+    "lib.arcade.cbToCrib": "Dát do cribu",
+    "lib.arcade.cbNext": "Pokračovat",
+    "lib.arcade.cbHand": "Ruka"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Ultimátní piškvorky",
       "desc": "Piškvorky na 9 malých tabulkách: políčko, které vyberete, určuje, kde musí hrát soupeř; proti počítači v 10 úrovních."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Vykopni míček za počítač; vyhrává ten, kdo první získá 5 bodů. 10 úrovní s rychlejším a ostřejším soupeřem."
+    },
+    "space-shooter": {
+      "name": "Vesmírná střílečka",
+      "desc": "Řiď loď, sestřeluj nepřátelské lodě a vyhýbej se jejich palbě; 10 úrovní s většími vlnami, palbou nazpět a silnějšími nepřáteli."
+    },
+    "asteroids": {
+      "name": "Asteroidy",
+      "desc": "Otáčej, dávej tah a střílej, abys rozbil vesmírné skály; velké skály se rozpadají na menší. 10 úrovní s více a rychlejšími skalami."
+    },
+    "maze": {
+      "name": "Bludiště",
+      "desc": "Najdi cestu z bludiště, než vyprší čas; 10 úrovní od malých po velká bludiště, na vyšších úrovních s mlhou."
+    },
+    "road-cross": {
+      "name": "Přecházení silnice (ve stylu Froggeru)",
+      "desc": "Přeskákej žábu přes rušné silnice a řeky s plovoucími kmeny a dostaň se domů 3×; 10 úrovní s rychlejším provozem a řekou na vyšších úrovních."
+    },
+    "flappy": {
+      "name": "Hra ve stylu Flappy Bird",
+      "desc": "Klepáním mávej křídly a prolétávej mezerami mezi trubkami; 10 úrovní s užšími mezerami a rostoucí rychlostí."
+    },
+    "runner": {
+      "name": "Dino běžec",
+      "desc": "Přeskakuj kaktusy a skrč se pod ptáky; uběhni dost daleko a dokonči každou z 10 úrovní, zatímco rychlost stále roste."
+    },
+    "whack-a-mole": {
+      "name": "Praštěte krtka",
+      "desc": "Praštěte krtky vyskakující z děr, než vyprší čas, a vyhýbej se bombám; 10 úrovní od pomalých po velmi rychlé."
+    },
+    "simon": {
+      "name": "Simon (barevná paměť)",
+      "desc": "Zapamatuj si a zopakuj sled barev a zvuků; delší sledy v 10 úrovních a od 7. úrovně 6 tlačítek."
+    },
+    "aim-trainer": {
+      "name": "Trénink míření",
+      "desc": "Zasahuj cíle, které se objevují náhodně a rychle mizí; cíle se v 10 úrovních zmenšují a měří se tvá reakční doba."
+    },
+    "quick-math": {
+      "name": "Rychlá matematika",
+      "desc": "Počítej z hlavy sčítání, odčítání, násobení a dělení pod časovým tlakem; 10 úrovní od jednoduchých součtů po výrazy."
+    },
+    "reaction": {
+      "name": "Test reakční doby",
+      "desc": "Klikni ve chvíli, kdy obrazovka zezelená; tvůj průměr z 5 kol musí splnit limit úrovně, který se v 10 úrovních zpřísňuje."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Rozsévej zrnka po jamkách, zajímej soupeřova zrnka a hraj znovu, když skončíš ve svém skladu; hraj proti počítači v 10 úrovních od snadných po těžké."
+    },
+    "snakes-ladders": {
+      "name": "Hadi a žebříky",
+      "desc": "Házej kostkou od pole 1 do 100, šplhej po žebřících, vyhýbej se hadům a dostaň se do cíle před soupeři; 10 úrovní."
+    },
+    "nine-mens-morris": {
+      "name": "Mlýn (Nine Men’s Morris)",
+      "desc": "Pokládej, posouvej a přeskakuj kameny, utvoř tři v řadě a odebírej soupeřovy kameny; hraj proti počítači v 10 úrovních."
+    },
+    "battleship": {
+      "name": "Lodě",
+      "desc": "Najdi a potop počítačovou flotilu na mřížce 10x10 dřív, než potopí on tu tvou; 10 úrovní, ve kterých počítač uvažuje chytřeji."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (tykev, krab, ryba, kreveta)",
+      "desc": "Tradiční vietnamská hra v kostky: vsaď virtuální mince na zvířata a protřepej tři kostky; dosáhni cílového počtu mincí v 10 úrovních (žádné skutečné peníze)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Vsaď na Hráče, Bankéře nebo Remízu s kartami rozdanými podle standardních pravidel, s virtuálními mincemi; dosáhni cílového počtu mincí v 10 úrovních (žádné skutečné peníze)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (hra se třemi kartami)",
+      "desc": "Porovnej tříkartové ruce s bankéřem: trojice, tři obrázkové karty, pak 9 bodů až 0; virtuální mince, 10 úrovní, žádné skutečné peníze."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Označuj vyvolaná čísla na své kartě 5x5 a zavolej BINGO dřív než počítačoví soupeři; čísla se v 10 úrovních vyvolávají rychleji."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (pět kostek)",
+      "desc": "Hoď pěti kostkami, ponech ty dobré a vyplň 13 bodovacích políček; dosáhni cílového skóre v 10 úrovních."
+    },
+    "crazy-eights": {
+      "name": "Šílené osmičky",
+      "desc": "Přikládej barvu nebo hodnotu, osmičky mění barvu; vyprázdni ruku dřív než 1 až 3 počítačoví soupeři v 10 úrovních."
+    },
+    "car-race": {
+      "name": "Závod aut – uhýbání",
+      "desc": "Měň pruhy, vyhýbej se autům před sebou a ujeď celou vzdálenost; 10 úrovní s více pruhy a rychlejším provozem."
+    },
+    "sky-jump": {
+      "name": "Nebeské skoky",
+      "desc": "Odrážej se z plošiny na plošinu a vyšplhej co nejvýš, aniž bys spadl; 10 úrovní s řidšími, pohyblivými a lámavými plošinami."
+    },
+    "gold-miner": {
+      "name": "Zlatokop",
+      "desc": "Spusť hák, vytáhni zlato a diamanty, vyhýbej se těžkým kamenům a dosáhni cílové částky do 60 sekund; 10 úrovní."
+    },
+    "fruit-slice": {
+      "name": "Krájení ovoce",
+      "desc": "Přejížděním krájej vzlétající ovoce a vyhýbej se bombám; 10 úrovní s víc ovocem a víc bombami."
+    },
+    "basketball": {
+      "name": "Střelba na koš",
+      "desc": "Přetáhni a pusť, abys dostal míč do koše v omezeném počtu hodů; 10 úrovní, od 4. úrovně s pohyblivým košem."
+    },
+    "bubble-shooter": {
+      "name": "Bublinová střílečka",
+      "desc": "Střílej bubliny, spojuj 3 a více stejné barvy a prasknou; odstraň je všechny, než dosáhnou dna; 10 úrovní s víc barvami."
+    },
+    "dot-chase": {
+      "name": "Hon na tečky",
+      "desc": "Sněz všechny tečky v bludišti a vyhýbej se duchům, kteří tě honí; 10 úrovní s více a chytřejšími duchy."
+    },
+    "kakuro": {
+      "name": "Kakuro (křížové součty)",
+      "desc": "Vyplň bílá políčka číslicemi 1–9 tak, aby každá řada dávala součet z nápovědy bez opakování; 10 úrovní, mřížky od 5x5 do 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Vyplň mřížku bez opakování v řádcích a sloupcích tak, aby každá skupina dávala svůj cíl se svou operací; 10 úrovní, mřížky od 3x3 do 6x6."
+    },
+    "word-guess": {
+      "name": "Hádání slov (ve stylu Wordle)",
+      "desc": "Hádej tajné anglické slovo podle zelených, žlutých a šedých nápověd; 10 úrovní se slovy o 4–6 písmenech a méně pokusy."
+    },
+    "hangman": {
+      "name": "Oběšenec",
+      "desc": "Hádej anglické slovo písmeno po písmenu, než ti dojdou chybné pokusy; 10 úrovní s delšími slovy a méně chybami."
+    },
+    "word-scramble": {
+      "name": "Přesmyčky",
+      "desc": "Přeskládej zamíchaná písmena do anglického slova, než vyprší čas; 10 úrovní, 5 slov v každé."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Přikládej kameny ke kterémukoli konci řetězu a vyprázdni ruku dřív než počítač; 10 úrovní, v nichž je počítač chytřejší."
+    },
+    "hearts": {
+      "name": "Srdce (Hearts)",
+      "desc": "Vyhýbej se srdcím a pikové dámě v karetní hře pro čtyři; nižší skóre je lepší; 10 úrovní proti chytřejším počítačovým hráčům."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold’em (virtuální žetony)",
+      "desc": "Poker hlava na hlavu proti počítači s virtuálními žetony: složit, dorovnat nebo přihodit, a vyhraj, když počítači dojdou žetony; 10 úrovní, žádné skutečné peníze."
+    },
+    "n-back": {
+      "name": "N-Back paměť",
+      "desc": "Sleduj rozsvícený čtverec a stiskni Shoda, když je stejný jako před N kroky; 10 úrovní s N až 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klikáním piš sušenky, kupuj pomocníky, kteří pečou automaticky, a dosáhni cíle do 2 minut; 10 úrovní."
+    },
+    "tile-connect": {
+      "name": "Spojování dlaždic (ve stylu Onet)",
+      "desc": "Spojuj shodné dlaždice cestou s nejvýše dvěma zatáčkami a vyčisti desku, než vyprší čas; 10 úrovní, větší desky."
+    },
+    "jigsaw": {
+      "name": "Obrázkové puzzle",
+      "desc": "Prohazuj zamíchané dílky a poskládej obrázek; 10 úrovní od 3x3 do 6x6 dílků."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Natáhni a pusť, abys dostal míček do jamky v limitu úderů; 10 hřišť se stěnami a pískem."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Hoď kostkami, dovez své kameny domů a vyveď je dřív než počítač, a po cestě vyhazuj jeho osamělé kameny; 10 úrovní."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Třináctka)",
+      "desc": "Vietnamská karetní hra o zbavení se karet pro čtyři: hraj jednotlivé karty, páry, postupky a čtveřice a vyprázdni ruku jako první; 10 úrovní."
+    },
+    "tower-defense": {
+      "name": "Obrana věží",
+      "desc": "Stav a vylepšuj věže podél cesty a zastav každou vlnu nepřátel; 10 úrovní na třech různých mapách."
+    },
+    "color-by-number": {
+      "name": "Vybarvování podle čísel",
+      "desc": "Vybarvi každé políčko barvou odpovídající jeho číslu a odhal obrázek; 10 obrázků s každým dalším více barvami."
+    },
+    "yukon": {
+      "name": "Yukon (solitaire)",
+      "desc": "Klondike bez zásobníku: přesuň libovolnou odkrytou kartu se vším, co je na ní; 10 úrovní, s postupem méně karet lícem nahoru."
+    },
+    "chinese-checkers": {
+      "name": "Čínská dáma",
+      "desc": "Hra ve tvaru hvězdy proti počítači, kroky a skoky: přesuň všech 10 kamenů do protějšího rohu jako první; 10 úrovní."
+    },
+    "mau-binh": {
+      "name": "Mậu Binh (čínský poker)",
+      "desc": "Rozlož 13 karet do tří rukou po 5, 5 a 3 kartách a poraz počítač; 5 kol na úroveň, 10 úrovní."
+    },
+    "phom": {
+      "name": "Phỏm (vietnamský rummy)",
+      "desc": "Vietnamský rummy pro dva proti počítači: táhni nebo vezmi odhozenou kartu, tvoř sestavy a vyjdi; vyhrává nejméně zbývajících bodů; 10 úrovní."
+    },
+    "shogi": {
+      "name": "Shogi (japonské šachy)",
+      "desc": "Hraj shogi proti počítači: vkládej zajaté kameny, povyšuj a dej králi mat; 10 úrovní s krokem zpět."
+    },
+    "janggi": {
+      "name": "Janggi (korejské šachy)",
+      "desc": "Hraj korejské šachy proti počítači: úhlopříčky paláce, skoky dělem přes jeden kámen, sloni o tři kroky; 10 úrovní s krokem zpět."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Ovládej pálky vlevo a vpravo, udrž míček ve hře, zasahuj bumpery a dosáhni cílového skóre, než ti dojdou 3 míčky; 10 úrovní."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage pro dva hráče proti počítači: crib, pegging do 31, počítání rukou, závod do 61 bodů; 10 úrovní."
     }
   },
   "s": {

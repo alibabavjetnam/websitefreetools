@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Zostáva kariet: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} vynecháva.",
     "lib.arcade.tlBad": "Vybrané karty netvoria platnú kombináciu.",
-    "lib.arcade.tlLow": "Táto kombinácia nie je dosť vysoká na prebitie stola."
+    "lib.arcade.tlLow": "Táto kombinácia nie je dosť vysoká na prebitie stola.",
+    "lib.arcade.note.td": "Ťukni na prázdne políčko (nie na cestu), aby si postavil strieľajúcu vežu, ktorá stojí zlato. Ťuknutím na vežu ju vylepšíš (až na úroveň 5). Veže automaticky strieľajú na nepriateľa, ktorý prešiel v dosahu najďalej. Porážaním nepriateľov získavaš viac zlata. Ak sa do cieľa dostane 15 nepriateľov, prehráš. Preži všetky vlny a splníš úroveň.",
+    "lib.arcade.tdInfo": "Zlato: {g} · Vlna {w}/{t}",
+    "lib.arcade.tdCost": "Veža: {n}",
+    "lib.arcade.note.colorNum": "Každé políčko má číslo, ktoré zodpovedá farbe v palete. Vyber farbu a ťukaj na políčka s týmto číslom, aby si ich vyfarboval. Ak použiješ zlú farbu, nestane sa nič. Vyfarbi všetky políčka správne a dokončíš obrázok. Vyššie úrovne majú viac farieb.",
+    "lib.arcade.cnWrong": "Zlá farba – skontroluj číslo na políčku.",
+    "lib.arcade.note.yukon": "Ako Klondike, ale bez zásobníka: ľubovoľnú odkrytú kartu môžeš presunúť spolu so všetkými kartami na nej, aj keď nie sú v postupnosti. Len prvá karta musí pasovať na cieľový stĺpec (zostupne, striedavo červená a čierna; kráľ ide na prázdny stĺpec). Postav všetkých 52 kariet na štyri základne od esa po kráľa. Nižšie úrovne začínajú s viacerými už odkrytými kartami.",
+    "lib.arcade.yukonFree": "Zakryté karty: {n}",
+    "lib.arcade.note.chinesechk": "Hráš s modrými figúrkami v pravom rohu. Presuň všetkých 10 do protiľahlého ľavého rohu skôr než počítač. V každom ťahu posunieš jednu figúrku: krok na prázdny susedný otvor, alebo skok cez ľubovoľnú figúrku na prázdny otvor hneď za ňou, pričom môžeš skákať, koľkokrát chceš. Ťukni na svoju figúrku a potom na zelený otvor, aby si sa presunul.",
+    "lib.arcade.ccTurn": "Tvoj ťah · Ťah {n}",
+    "lib.arcade.ccDraw": "Došli ťahy – remíza.",
+    "lib.arcade.note.maubinh": "Ty aj počítač dostanete po 13 kariet a usporiadate ich do 3 rúk: zadná ruka s 5 kartami, stredná ruka s 5 kartami a predná ruka s 3 kartami. Zadná ruka musí byť aspoň taká silná ako stredná a stredná aspoň taká silná ako predná. Inak je tvoje usporiadanie neplatné a prehráš celé kolo. Ťukni na kartu a potom na riadok, kam patrí (ťuknutím na umiestnenú kartu ju vrátiš). Každá vyhraná ruka dáva 1 bod, vyhra všetkých 3 dáva 6. Hrajú sa 5 kôl – kladný súčet splní úroveň. Predná ruka môže byť iba vysoká karta, pár alebo trojica.",
+    "lib.arcade.mbHigh": "Vysoká karta",
+    "lib.arcade.mbPair": "Pár",
+    "lib.arcade.mbTwoPair": "Dva páry",
+    "lib.arcade.mbTrips": "Trojica",
+    "lib.arcade.mbStraight": "Postupka",
+    "lib.arcade.mbFlush": "Farba",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Štvorica",
+    "lib.arcade.mbSflush": "Postupka v jednej farbe",
+    "lib.arcade.mbBack": "Zadná ruka",
+    "lib.arcade.mbMid": "Stredná ruka",
+    "lib.arcade.mbFront": "Predná ruka",
+    "lib.arcade.mbFoe": "Počítač",
+    "lib.arcade.mbYou": "Ty",
+    "lib.arcade.mbFoul": "Neplatné usporiadanie!",
+    "lib.arcade.mbFoeFoul": "Počítač má neplatné usporiadanie!",
+    "lib.arcade.mbConfirm": "Ukázať karty",
+    "lib.arcade.mbReset": "Vyčistiť",
+    "lib.arcade.mbHand": "Tvoja ruka",
+    "lib.arcade.mbRound": "Kolo {a}/{b}",
+    "lib.arcade.mbTotal": "Spolu: {n}",
+    "lib.arcade.mbFinish": "Dokončiť",
+    "lib.arcade.mbNext": "Ďalšie kolo",
+    "lib.arcade.mbDraw": "Rovnaký počet bodov – zahraj si znova.",
+    "lib.arcade.mbAutoMsg": "Tu je navrhované usporiadanie. Pred ukázaním kariet ho môžeš zmeniť.",
+    "lib.arcade.note.phom": "Dvaja hráči, každý dostane 9 kariet (kto začína, dostane 10). Kombinácia sú 3 alebo viac kariet rovnakej hodnoty, alebo 3 alebo viac po sebe idúcich kariet rovnakej farby (eso je len nízke). V svojom ťahu si potiahneš kartu z balíka, alebo vezmeš kartu, ktorú súper práve odhodil, ak s tvojou rukou tvorí kombináciu (vzatú kartu musíš ponechať). Potom odhodíš jednu kartu. Keď každý hráč odhodí 4 karty, kolo sa končí a vyhráva ten, kto má nižší súčet kariet mimo kombinácií (eso = 1 … kráľ = 13). Ak sú po odhodení všetky tvoje karty v kombináciách, vychádzaš (\"U\") a vyhrávaš okamžite. Karty so zeleným rámikom sú v tvojej najlepšej sade kombinácií.",
+    "lib.arcade.pmDraw": "Ťahať",
+    "lib.arcade.pmEat": "Vziať odhodenú",
+    "lib.arcade.pmThrow": "Odhodiť",
+    "lib.arcade.pmFoeAte": "Počítač vzal tvoju kartu.",
+    "lib.arcade.pmFoeU": "Počítač vyšiel!",
+    "lib.arcade.pmTurn": "Ťah {a}/{b}",
+    "lib.arcade.pmLeft": "Mimo kombinácií: {n}",
+    "lib.arcade.pmDeck": "Balík: {n}",
+    "lib.arcade.pmFoeHand": "Ruka počítača",
+    "lib.arcade.pmFoeDisc": "Odhody počítača",
+    "lib.arcade.pmFoeEaten": "Počítač vzal",
+    "lib.arcade.pmMyDisc": "Tvoje odhody",
+    "lib.arcade.pmAte": "Vzal si túto kartu – použi ju v kombinácii.",
+    "lib.arcade.pmKeep": "Vzatú kartu musíš ponechať – odhoď inú.",
+    "lib.arcade.pmU": "Vyšiel si! Vyhrávaš okamžite.",
+    "lib.arcade.pmYou": "Ty",
+    "lib.arcade.pmFoe": "Počítač",
+    "lib.arcade.pmDraw2": "Rovnaký počet bodov.",
+    "lib.arcade.note.shogi": "Šogi je japonský šach. Hráš za spodnú stranu a ťaháš ako prvý, figúrky počítača smerujú opačným smerom. Zajaté figúrky ti pribudnú do ruky a môžeš ich namiesto ťahu vložiť na ľubovoľné prázdne políčko (nikdy pešiaka do stĺpca, kde už máš nepovýšeného pešiaka, a nikdy figúrku na rad, kde by sa už nemohla pohnúť). Figúrka, ktorá vstúpi do posledných troch radov súpera, z nich vystúpi alebo sa v nich pohne, sa môže povýšiť (okrem kráľa a zlatého generála). Povýšenie je povinné, ak by figúrka inak nemala žiadny ťah. Vyhráš, ak dáš mat nepriateľskému kráľovi. Kandži: 歩 pešiak, 香 kopijník, 桂 jazdec, 銀 strieborný, 金 zlatý, 角 strelec, 飛 veža, 玉 kráľ. と, 馬, 竜 a ďalšie červené figúrky sú povýšené.",
+    "lib.arcade.sgPromote": "Povýšiť",
+    "lib.arcade.sgKeep": "Nepovyšovať",
+    "lib.arcade.sgCheck": "Si v šachu!",
+    "lib.arcade.sgWin": "Mat – vyhral si.",
+    "lib.arcade.sgLose": "Dostal si mat.",
+    "lib.arcade.sgAskPromote": "Povýšiť túto figúrku?",
+    "lib.arcade.note.janggi": "Janggi je kórejský šach. Hráš za modré figúrky dole a ťaháš ako prvý. Na rozdiel od siangi tu nie je rieka a oba paláce majú diagonálne čiary. Generál a strážcovia sa pohybujú o jeden krok po čiarach paláca (aj diagonálne). Vozík kĺže a berie aj po diagonálach paláca. Delo musí na ťah alebo zhodenie preskočiť presne jednu figúrku (nie iné delo) a nemôže zhodiť delo. Kôň urobí krok rovno a potom jeden diagonálne, slon jeden rovno a potom dva diagonálne, obaja sú zablokovaní, ak v ceste stojí figúrka. Vojaci idú dopredu alebo do strany a v nepriateľskom paláci aj diagonálne dopredu. Dvaja generáli nesmú stáť tvárou v tvár. Vyhráš, ak dáš mat nepriateľskému generálovi. Počítač nikdy nepasuje.",
+    "lib.arcade.jgCheck": "Si v šachu!",
+    "lib.arcade.jgWin": "Mat – vyhral si.",
+    "lib.arcade.jgLose": "Dostal si mat.",
+    "lib.arcade.note.pinball": "Stlačením medzerníka, šípky nahor alebo ťuknutím na stôl vystrelíš loptičku. Podržaním šípky vľavo (alebo dotykom na ľavú polovicu stola) zdvihneš ľavý flipper a šípkou vpravo (alebo pravou polovicou) pravý – radšej ťukaj v rytme, než držať. Okrúhle nárazníky dávajú po 100 bodov. Máš 3 loptičky. Dosiahni cieľové skóre skôr, než sa minú, a splníš úroveň.",
+    "lib.arcade.pinBalls": "Loptičky: {n} · Cieľ: {t}",
+    "lib.arcade.note.cribbage": "Cribbage pre dvoch hráčov, preteky do 61 bodov. V každom rozdaní dostaneš 6 kariet a 2 z nich vložíš lícom nadol do crib (patrí rozdávajúcemu). Otočí sa štartovacia karta. Potom sa striedate vo vykladaní kariet lícom nahor tak, aby priebežný súčet neprekročil 31: dosiahnutie 15 alebo 31 dáva 2, zhoda s poslednou kartou dáva 2/6/12, postupka z 3 alebo viac kariet (v ľubovoľnom poradí) dáva svoju dĺžku a keď nikto nemôže vyložiť, posledný hráč dostane 1 (\"Go\"). Potom sa spočíta každá ruka so 4 kartami spolu so štartovacou kartou: každá kombinácia so súčtom 15 dáva 2, každý pár 2, postupka z 3+ kariet svoju dĺžku, štyri karty jednej farby 4 (5 so štartovacou kartou) a spodok rovnakej farby ako štartovacia karta 1. Najprv počíta hráč, ktorý nerozdával, potom rozdávajúci svoju ruku a crib.",
+    "lib.arcade.cbFifteen": "Pätnástka",
+    "lib.arcade.cbPair": "Pár",
+    "lib.arcade.cbRun": "Postupka",
+    "lib.arcade.cbFlush": "Farba",
+    "lib.arcade.cbNobs": "Spodok v farbe štartovacej karty",
+    "lib.arcade.cbHeels": "Spodok ako štartovacia karta",
+    "lib.arcade.cbYou": "Ty",
+    "lib.arcade.cbFoe": "Počítač",
+    "lib.arcade.cbLast": "Posledná karta",
+    "lib.arcade.cbCount": "Spolu: {n}",
+    "lib.arcade.cbYouDeal": "Rozdávaš ty",
+    "lib.arcade.cbFoeDeal": "Rozdáva počítač",
+    "lib.arcade.cbPick": "Vyber 2 karty do cribu",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Tvoja ruka",
+    "lib.arcade.cbFoeHand": "Ruka počítača",
+    "lib.arcade.cbStarter": "Štartovacia karta",
+    "lib.arcade.cbZero": "0 bodov",
+    "lib.arcade.cbPlayed": "Vyložené",
+    "lib.arcade.cbToCrib": "Dať do cribu",
+    "lib.arcade.cbNext": "Pokračovať",
+    "lib.arcade.cbHand": "Ruka"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Trinásť)",
       "desc": "Vietnamská hra na zbavovanie sa kariet pre štyroch: zahrávaj jednotlivé karty, páry, postupky a štvorice a vyprázdni ruku ako prvý; 10 úrovní."
+    },
+    "tower-defense": {
+      "name": "Obrana veží (Tower Defense)",
+      "desc": "Stavaj a vylepšuj veže pozdĺž cesty a zastav všetky vlny nepriateľov. 10 úrovní na troch rôznych mapách."
+    },
+    "color-by-number": {
+      "name": "Maľovanie podľa čísel",
+      "desc": "Vyfarbi každé políčko farbou, ktorá zodpovedá jeho číslu, a odhaľ obrázok. 10 obrázkov, vždy s väčším počtom farieb."
+    },
+    "yukon": {
+      "name": "Yukon solitér",
+      "desc": "Klondike bez zásobníka: presuň ľubovoľnú odkrytú kartu so všetkým, čo na nej leží. 10 úrovní, čím ďalej, tým menej odkrytých kariet."
+    },
+    "chinese-checkers": {
+      "name": "Čínska dáma",
+      "desc": "Hviezdicová hra so skokmi a krokmi proti počítaču: presuň všetkých 10 figúrok do protiľahlého rohu ako prvý. 10 úrovní."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (čínsky poker)",
+      "desc": "Usporiadaj 13 kariet do troch rúk po 5, 5 a 3 karty a poraz počítač. 5 kôl na úroveň, 10 úrovní."
+    },
+    "phom": {
+      "name": "Phỏm (vietnamský rummy)",
+      "desc": "Vietnamský rummy pre dvoch proti počítaču: ťahaj alebo vezmi odhodenú kartu, tvor kombinácie a vychádzaj. Vyhráva najmenej zvyšných bodov. 10 úrovní."
+    },
+    "shogi": {
+      "name": "Šogi (japonský šach)",
+      "desc": "Hraj šogi proti počítaču: vkladaj zajaté figúrky, povyšuj a daj mat kráľovi. 10 úrovní so ťahom späť."
+    },
+    "janggi": {
+      "name": "Janggi (kórejský šach)",
+      "desc": "Hraj kórejský šach proti počítaču: diagonály v paláci, skoky dela cez jednu figúrku, trojkrokoví sloni. 10 úrovní so ťahom späť."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Ovládaj ľavý a pravý flipper, udrž loptičku v hre, trafuj nárazníky a dosiahni cieľové skóre skôr, než sa minú tvoje 3 loptičky. 10 úrovní."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage pre dvoch proti počítaču: crib, pegging do 31, počítanie rúk a preteky do 61 bodov. 10 úrovní."
     }
   },
   "s": {

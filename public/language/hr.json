@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Preostalo karata: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} preskače.",
     "lib.arcade.tlBad": "Odabrane karte ne čine valjanu kombinaciju.",
-    "lib.arcade.tlLow": "Ova kombinacija nije dovoljno visoka da pobijedi onu na stolu."
+    "lib.arcade.tlLow": "Ova kombinacija nije dovoljno visoka da pobijedi onu na stolu.",
+    "lib.arcade.note.td": "Dodirni prazno polje (ne stazu) da izgradiš kulu za pucanje, što košta zlato; dodirni kulu ponovno da je nadogradiš (do razine 5). Kule automatski pucaju na neprijatelja koji je u dometu stigao najdalje. Pobijedi neprijatelje da zaradiš više zlata; ako 15 neprijatelja stigne do kraja, gubiš. Preživi sve valove da prijeđeš razinu.",
+    "lib.arcade.tdInfo": "Zlato: {g} · Val {w}/{t}",
+    "lib.arcade.tdCost": "Kula: {n}",
+    "lib.arcade.note.colorNum": "Svako polje ima broj koji odgovara boji u paleti. Odaberi boju, zatim dodirni polja s tim brojem da ih obojiš; s krivom bojom ništa se ne boji. Točno oboji sva polja da dovršiš sliku. Više razine imaju više boja.",
+    "lib.arcade.cnWrong": "Kriva boja — provjeri broj na polju.",
+    "lib.arcade.note.yukon": "Kao Klondike, ali bez špila: svaka otkrivena karta može se premjestiti zajedno sa svim kartama na njoj, čak i ako nisu u nizu; samo prva karta mora odgovarati ciljnom stupcu (silazno, naizmjence crvena i crna; kralj ide na prazan stupac). Složi svih 52 karte na četiri temelja od asa do kralja. Niske razine počinju s više otkrivenih karata.",
+    "lib.arcade.yukonFree": "Okrenute karte: {n}",
+    "lib.arcade.note.chinesechk": "Igraš plavim figurama u desnom kutu; premjesti svih 10 u suprotni lijevi kut prije računala. U svakom potezu pomičeš jednu figuru: korak u prazno susjedno udubljenje ili skok preko bilo koje figure u prazno udubljenje odmah iza nje, a možeš skakati uzastopno koliko god želiš. Dodirni jednu od svojih figura, zatim zeleno udubljenje da je pomakneš.",
+    "lib.arcade.ccTurn": "Tvoj potez · Potez {n}",
+    "lib.arcade.ccDraw": "Nema više poteza — neriješeno.",
+    "lib.arcade.note.maubinh": "Ti i računalo dobivate po 13 karata i slažete ih u 3 ruke: zadnju ruku od 5 karata, srednju od 5 karata i prednju od 3 karte. Zadnja ruka mora biti barem jednako jaka kao srednja, a srednja barem jednako jaka kao prednja; inače je tvoj raspored neispravan i gubiš cijelu rundu. Dodirni kartu, zatim red u koji ide (dodirni postavljenu kartu da je vratiš). Svaka dobivena ruka donosi 1 bod; sve 3 donose 6. Igraj 5 rundi — pozitivan zbroj prelazi razinu. Prednja ruka može biti samo visoka karta, par ili tri ista.",
+    "lib.arcade.mbHigh": "Visoka karta",
+    "lib.arcade.mbPair": "Par",
+    "lib.arcade.mbTwoPair": "Dva para",
+    "lib.arcade.mbTrips": "Tri ista",
+    "lib.arcade.mbStraight": "Niz",
+    "lib.arcade.mbFlush": "Boja",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Četiri ista",
+    "lib.arcade.mbSflush": "Skala u boji",
+    "lib.arcade.mbBack": "Zadnja ruka",
+    "lib.arcade.mbMid": "Srednja ruka",
+    "lib.arcade.mbFront": "Prednja ruka",
+    "lib.arcade.mbFoe": "Računalo",
+    "lib.arcade.mbYou": "Ti",
+    "lib.arcade.mbFoul": "Neispravan raspored!",
+    "lib.arcade.mbFoeFoul": "Računalo ima neispravan raspored!",
+    "lib.arcade.mbConfirm": "Prikaži karte",
+    "lib.arcade.mbReset": "Očisti",
+    "lib.arcade.mbHand": "Tvoja ruka",
+    "lib.arcade.mbRound": "Runda {a}/{b}",
+    "lib.arcade.mbTotal": "Ukupno: {n}",
+    "lib.arcade.mbFinish": "Završi",
+    "lib.arcade.mbNext": "Sljedeća runda",
+    "lib.arcade.mbDraw": "Izjednačeno po bodovima — igraj ponovno.",
+    "lib.arcade.mbAutoMsg": "Evo predloženog rasporeda. Možeš ga promijeniti prije prikaza karata.",
+    "lib.arcade.note.phom": "Dva igrača; svaki dobiva 9 karata (tko igra prvi, dobiva 10). Kombinacija su 3 ili više karata iste vrijednosti ili 3 ili više uzastopnih karata iste boje (as je samo nizak). U svom potezu povuci kartu iz špila ili uzmi kartu koju je protivnik upravo odbacio ako s tvojom rukom tvori kombinaciju (uzetu kartu moraš zadržati), zatim odbaci jednu kartu. Kad svaki igrač odbaci 4 karte, runda završava i pobjeđuje tko ima manji zbroj karata izvan kombinacija (as = 1 … kralj = 13). Ako su nakon odbacivanja sve tvoje karte u kombinacijama, izlaziš (»U«) i odmah pobjeđuješ. Karte sa zelenim rubom su u tvojim najboljim kombinacijama.",
+    "lib.arcade.pmDraw": "Povuci",
+    "lib.arcade.pmEat": "Uzmi odbačenu kartu",
+    "lib.arcade.pmThrow": "Odbaci",
+    "lib.arcade.pmFoeAte": "Računalo je uzelo tvoju kartu.",
+    "lib.arcade.pmFoeU": "Računalo je izašlo!",
+    "lib.arcade.pmTurn": "Potez {a}/{b}",
+    "lib.arcade.pmLeft": "Izvan kombinacija: {n}",
+    "lib.arcade.pmDeck": "Špil: {n}",
+    "lib.arcade.pmFoeHand": "Ruka računala",
+    "lib.arcade.pmFoeDisc": "Odbačene karte računala",
+    "lib.arcade.pmFoeEaten": "Računalo je uzelo",
+    "lib.arcade.pmMyDisc": "Tvoje odbačene karte",
+    "lib.arcade.pmAte": "Uzeo si ovu kartu — zadrži je u kombinaciji.",
+    "lib.arcade.pmKeep": "Uzetu kartu moraš zadržati — odbaci drugu.",
+    "lib.arcade.pmU": "Izašao si! Odmah pobjeđuješ.",
+    "lib.arcade.pmYou": "Ti",
+    "lib.arcade.pmFoe": "Računalo",
+    "lib.arcade.pmDraw2": "Izjednačeno po bodovima.",
+    "lib.arcade.note.shogi": "Shogi je japanski šah. Igraš donju stranu i prvi potežeš; figure računala okrenute su na drugu stranu. Zarobljene figure idu u tvoju ruku i mogu se umjesto poteza spustiti na bilo koje prazno polje (nikad pješak u liniju u kojoj već imaš nepromaknutog pješaka i nikad figura u red u kojem se više ne bi mogla micati). Figura koja uđe u zadnja tri reda protivnika, izađe iz njih ili se pomakne unutar njih može se promaknuti (osim kralja i zlata); promaknuće je obavezno kad figura inače ne bi imala poteza. Matiraj neprijateljskog kralja da pobijediš. Kanji: 歩 pješak, 香 koplje, 桂 skakač, 銀 srebro, 金 zlato, 角 lovac, 飛 top, 玉 kralj; と, 馬, 竜 i druge crvene figure su promaknute.",
+    "lib.arcade.sgPromote": "Promakni",
+    "lib.arcade.sgKeep": "Ne promiči",
+    "lib.arcade.sgCheck": "Šah ti je!",
+    "lib.arcade.sgWin": "Mat — pobijedio si.",
+    "lib.arcade.sgLose": "Dobio si mat.",
+    "lib.arcade.sgAskPromote": "Promaknuti ovu figuru?",
+    "lib.arcade.note.janggi": "Janggi je korejski šah. Igraš plavim figurama dolje i prvi potežeš. Za razliku od xiangqija nema rijeke, a obje palače imaju dijagonalne linije. General i čuvari pomiču se za jedan korak duž linija palače (uključujući dijagonale); kola također klize i hvataju duž dijagonala palače; top mora preskočiti točno jednu figuru (ne drugi top) da bi se pomaknuo ili uzeo, a ne može uzeti top; konj ide jedno polje ravno pa jedno dijagonalno, a slon jedno ravno pa dva dijagonalno, oboje blokira figura na putu; vojnici idu naprijed ili u stranu, a u neprijateljskoj palači i dijagonalno naprijed. Dva generala nikad ne smiju stajati licem u lice. Matiraj neprijateljskog generala da pobijediš. Računalo nikad ne preskače potez.",
+    "lib.arcade.jgCheck": "Šah ti je!",
+    "lib.arcade.jgWin": "Mat — pobijedio si.",
+    "lib.arcade.jgLose": "Dobio si mat.",
+    "lib.arcade.note.pinball": "Pritisni razmaknicu, strelicu gore ili dodirni stol da ispališ kuglu. Drži Lijevo (ili dodirni lijevu polovicu stola) da podigneš lijevu peraju, a Desno (ili desnu polovicu) za desnu — dodiruj u ritmu umjesto držanja. Okrugli odbojnici donose po 100 bodova. Imaš 3 kugle; dosegni ciljni rezultat prije nego što ponestanu da prijeđeš razinu.",
+    "lib.arcade.pinBalls": "Kugle: {n} · Cilj: {t}",
+    "lib.arcade.note.cribbage": "Cribbage za dva igrača, utrka do 61 boda. U svakom dijeljenju dobivaš 6 karata i 2 stavljaš licem prema dolje u crib (pripada djelitelju). Okreće se početna karta. Zatim naizmjence igrate karte licem prema gore, a tekući zbroj nikad ne smije prijeći 31: dostizanje 15 ili 31 donosi 2, podudaranje s prethodnom kartom 2/6/12, niz od 3 ili više karata (bilo kojim redom) donosi koliko je dug, a kad nitko ne može igrati, zadnji igrač dobiva 1 (»Go«). Zatim se svaka ruka od 4 karte broji s početnom kartom: svaka kombinacija sa zbrojem 15 donosi 2, svaki par 2, niz od 3+ svoju duljinu, četiri karte iste boje 4 (5 s početnom kartom), a dečko u boji početne karte 1. Prvi broji igrač koji ne dijeli, zatim djelitelj svoju ruku i crib.",
+    "lib.arcade.cbFifteen": "Petnaest",
+    "lib.arcade.cbPair": "Par",
+    "lib.arcade.cbRun": "Niz",
+    "lib.arcade.cbFlush": "Boja",
+    "lib.arcade.cbNobs": "Dečko u boji početne karte",
+    "lib.arcade.cbHeels": "Dečko kao početna karta",
+    "lib.arcade.cbYou": "Ti",
+    "lib.arcade.cbFoe": "Računalo",
+    "lib.arcade.cbLast": "Zadnja karta",
+    "lib.arcade.cbCount": "Ukupno: {n}",
+    "lib.arcade.cbYouDeal": "Ti dijeliš",
+    "lib.arcade.cbFoeDeal": "Računalo dijeli",
+    "lib.arcade.cbPick": "Odaberi 2 karte za crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Tvoja ruka",
+    "lib.arcade.cbFoeHand": "Ruka računala",
+    "lib.arcade.cbStarter": "Početna karta",
+    "lib.arcade.cbZero": "0 bodova",
+    "lib.arcade.cbPlayed": "Odigrano",
+    "lib.arcade.cbToCrib": "Stavi u crib",
+    "lib.arcade.cbNext": "Nastavi",
+    "lib.arcade.cbHand": "Ruka"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Trinaest)",
       "desc": "Vijetnamska kartaška igra za četiri igrača: odigravaj pojedinačne karte, parove, nizove i četvorke da prvi isprazniš ruku; 10 razina."
+    },
+    "tower-defense": {
+      "name": "Obrana tornjevima",
+      "desc": "Gradi i nadogradi tornjeve uz stazu da zaustaviš sve valove neprijatelja; 10 razina na tri različite karte."
+    },
+    "color-by-number": {
+      "name": "Bojanje po brojevima",
+      "desc": "Oboji svako polje bojom koja odgovara njegovu broju da otkriješ sliku; 10 slika, svaki put s više boja."
+    },
+    "yukon": {
+      "name": "Yukon pasijans",
+      "desc": "Klondike bez špila: premještaj bilo koju otkrivenu kartu sa svime na njoj; 10 razina, s manje otkrivenih karata kako napreduješ."
+    },
+    "chinese-checkers": {
+      "name": "Kineski čovječe ne ljuti se",
+      "desc": "Zvjezdasta igra koraka i skokova protiv računala: prvi premjesti svih 10 figura u suprotni kut; 10 razina."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (kineski poker)",
+      "desc": "Složi 13 karata u tri ruke od 5, 5 i 3 karte i pobijedi računalo; 5 rundi po razini, 10 razina."
+    },
+    "phom": {
+      "name": "Phom (vijetnamski remi)",
+      "desc": "Vijetnamski remi za dva igrača protiv računala: povuci ili uzmi odbačenu kartu, slaži kombinacije i izađi; pobjeđuje manje preostalih bodova; 10 razina."
+    },
+    "shogi": {
+      "name": "Shogi (japanski šah)",
+      "desc": "Igraj shogi protiv računala: spuštaj zarobljene figure, promiči ih i matiraj kralja; 10 razina s poništavanjem poteza."
+    },
+    "janggi": {
+      "name": "Janggi (korejski šah)",
+      "desc": "Igraj korejski šah protiv računala: dijagonale palače, skok topa preko jedne figure, sloni s tri koraka; 10 razina s poništavanjem poteza."
+    },
+    "pinball": {
+      "name": "Fliper",
+      "desc": "Udaraj lijevo i desno da kugla ostane u igri, pogađaj odbojnike i dosegni ciljni rezultat prije nego što ponestane 3 kugle; 10 razina."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage za dva igrača protiv računala: crib, pegging do 31, brojanje ruku, utrka do 61 boda; 10 razina."
     }
   },
   "s": {

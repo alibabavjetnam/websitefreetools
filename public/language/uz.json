@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Qolgan kartalar: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} yurishni oʻtkazdi.",
     "lib.arcade.tlBad": "Tanlangan kartalar toʻgʻri kombinatsiya tashkil etmaydi.",
-    "lib.arcade.tlLow": "Bu kombinatsiya stoldagisini yenga olmaydi."
+    "lib.arcade.tlLow": "Bu kombinatsiya stoldagisini yenga olmaydi.",
+    "lib.arcade.note.td": "Otish minorasini qurish uchun bo'sh katakka (yo'lga emas) bosing, bu oltin talab qiladi; minorani yaxshilash uchun yana bosing (5-darajagacha). Minoralar masofa ichida eng uzoqqa borgan dushmanga avtomatik o'q uzadi. Dushmanlarni yengib ko'proq oltin ishlang; 15 dushman oxirgacha yetib borsa, yutqazasiz. Bosqichni o'tish uchun barcha to'lqinlardan omon qoling.",
+    "lib.arcade.tdInfo": "Oltin: {g} · To'lqin {w}/{t}",
+    "lib.arcade.tdCost": "Minora: {n}",
+    "lib.arcade.note.colorNum": "Har bir katakning palitradagi rangga mos raqami bor. Rangni tanlang, so'ng shu raqamli kataklarga bosib bo'yang; noto'g'ri rang bilan bossangiz, hech narsa bo'yalmaydi. Rasmni yakunlash uchun barcha kataklarni to'g'ri bo'yang. Yuqori bosqichlarda ranglar ko'proq.",
+    "lib.arcade.cnWrong": "Noto'g'ri rang — katakdagi raqamni tekshiring.",
+    "lib.arcade.note.yukon": "Klondikega o'xshaydi, lekin zaxira to'plam yo'q: yuzi yuqoriga qaragan har qanday karta ustidagi barcha kartalar bilan birga ko'chirilishi mumkin, ketma-ket bo'lmasa ham; faqat birinchi karta maqsad ustunga mos kelishi kerak (kamayish tartibida, qizil va qora navbatma-navbat; Shoh bo'sh ustunga qo'yiladi). Barcha 52 kartani to'rtta asosiy to'plamga Tuzdan Shohgacha yig'ing. Past bosqichlarda ko'proq karta oldindan ochiq bo'ladi.",
+    "lib.arcade.yukonFree": "Yuzi pastga kartalar: {n}",
+    "lib.arcade.note.chinesechk": "Siz o'ng burchakdagi ko'k toshlar bilan o'ynaysiz; kompyuterdan oldin barcha 10 toshni qarama-qarshi chap burchakka olib boring. Har yurishda bitta toshni suring: bo'sh qo'shni teshikka qadam qo'ying yoki istalgan tosh ustidan to'g'ri orqasidagi bo'sh teshikka sakrang, xohlagancha ketma-ket sakrash mumkin. Toshlaringizdan biriga, so'ng yurish uchun yashil teshikka bosing.",
+    "lib.arcade.ccTurn": "Sizning yurishingiz · Yurish {n}",
+    "lib.arcade.ccDraw": "Yurishlar tugadi — durang.",
+    "lib.arcade.note.maubinh": "Siz va kompyuter 13 tadan karta olasiz va ularni 3 qo'lga joylaysiz: 5 kartali orqa qo'l, 5 kartali o'rta qo'l va 3 kartali old qo'l. Orqa qo'l kamida o'rta qo'lcha, o'rta qo'l esa old qo'lcha kuchli bo'lishi kerak; aks holda joylashtirishingiz buziladi va butun raundni yutqazasiz. Kartaga bosing, so'ng u qo'yiladigan qatorga bosing (qo'yilgan kartaga bosib qaytarib oling). Yutgan har bir qo'l 1 ochko beradi; uchalasini yutsangiz 6 ochko. 5 raund o'ynang — ijobiy jami bosqichni o'tkazadi. Old qo'l faqat yuqori karta, juft yoki uchlik bo'lishi mumkin.",
+    "lib.arcade.mbHigh": "Yuqori karta",
+    "lib.arcade.mbPair": "Juft",
+    "lib.arcade.mbTwoPair": "Ikki juft",
+    "lib.arcade.mbTrips": "Uchlik",
+    "lib.arcade.mbStraight": "Ketma-ketlik",
+    "lib.arcade.mbFlush": "Mast",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "To'rtlik",
+    "lib.arcade.mbSflush": "Mast ketma-ketligi",
+    "lib.arcade.mbBack": "Orqa qo'l",
+    "lib.arcade.mbMid": "O'rta qo'l",
+    "lib.arcade.mbFront": "Old qo'l",
+    "lib.arcade.mbFoe": "Kompyuter",
+    "lib.arcade.mbYou": "Siz",
+    "lib.arcade.mbFoul": "Joylashtirish buzildi!",
+    "lib.arcade.mbFoeFoul": "Kompyuterning joylashtirishi buzildi!",
+    "lib.arcade.mbConfirm": "Kartalarni ko'rsat",
+    "lib.arcade.mbReset": "Tozala",
+    "lib.arcade.mbHand": "Sizning qo'lingiz",
+    "lib.arcade.mbRound": "Raund {a}/{b}",
+    "lib.arcade.mbTotal": "Jami: {n}",
+    "lib.arcade.mbFinish": "Tugatish",
+    "lib.arcade.mbNext": "Keyingi raund",
+    "lib.arcade.mbDraw": "Ochkolar teng — yana o'ynang.",
+    "lib.arcade.mbAutoMsg": "Mana tavsiya etilgan joylashtirish. Kartalarni ko'rsatishdan oldin o'zgartirishingiz mumkin.",
+    "lib.arcade.note.phom": "Ikki o'yinchi; har biri 9 tadan karta oladi (birinchi yurgan 10 ta oladi). Kombinatsiya — bir xil qiymatli 3 yoki undan ko'p karta, yoki bir mastdagi 3 yoki undan ko'p ketma-ket karta (Tuz faqat past). Yurishingizda to'plamdan karta torting yoki raqib endi tashlagan karta qo'lingiz bilan kombinatsiya hosil qilsa, uni oling (olingan kartani saqlash shart), so'ng bitta karta tashlang. Har bir o'yinchi 4 tadan karta tashlaganda raund tugaydi va kombinatsiyadan tashqari kartalar yig'indisi (Tuz = 1 … Shoh = 13) kam bo'lgan yutadi. Tashlagandan so'ng barcha kartalaringiz kombinatsiyada bo'lsa, chiqasiz (\"U\") va darhol yutasiz. Yashil ramkali kartalar eng yaxshi kombinatsiyalaringizda.",
+    "lib.arcade.pmDraw": "Torting",
+    "lib.arcade.pmEat": "Tashlanganni oling",
+    "lib.arcade.pmThrow": "Tashlang",
+    "lib.arcade.pmFoeAte": "Kompyuter kartangizni oldi.",
+    "lib.arcade.pmFoeU": "Kompyuter chiqdi!",
+    "lib.arcade.pmTurn": "Yurish {a}/{b}",
+    "lib.arcade.pmLeft": "Kombinatsiyasiz: {n}",
+    "lib.arcade.pmDeck": "To'plam: {n}",
+    "lib.arcade.pmFoeHand": "Kompyuter qo'li",
+    "lib.arcade.pmFoeDisc": "Kompyuter tashlaganlari",
+    "lib.arcade.pmFoeEaten": "Kompyuter olgani",
+    "lib.arcade.pmMyDisc": "Sizning tashlaganlaringiz",
+    "lib.arcade.pmAte": "Bu kartani oldingiz — kombinatsiyada saqlang.",
+    "lib.arcade.pmKeep": "Olingan kartani saqlash kerak — boshqasini tashlang.",
+    "lib.arcade.pmU": "Chiqdingiz! Darhol yutdingiz.",
+    "lib.arcade.pmYou": "Siz",
+    "lib.arcade.pmFoe": "Kompyuter",
+    "lib.arcade.pmDraw2": "Ochkolar teng.",
+    "lib.arcade.note.shogi": "Shogi — yapon shaxmati. Siz pastki tomonda o'ynaysiz va birinchi yurasiz; kompyuter toshlari teskari tomonga qaragan. Olingan toshlar qo'lingizga tushadi va yurish o'rniga istalgan bo'sh katakka qo'yilishi mumkin (hali aylanmagan piyodangiz bor vertikalga piyoda, va boshqa yura olmaydigan qatorga tosh qo'yib bo'lmaydi). Raqibning oxirgi uch qatoriga, undan yoki unda yurgan tosh aylanishi mumkin (Shoh va Oltindan tashqari); tosh yura olmaydigan bo'lsa, aylanish majburiy. Yutish uchun dushman Shohiga mat qo'ying. Kanji: 歩 piyoda, 香 nayza, 桂 ot, 銀 kumush, 金 oltin, 角 fil, 飛 rux, 玉 shoh; と, 馬, 竜 va boshqa qizil toshlar aylangan.",
+    "lib.arcade.sgPromote": "Aylantir",
+    "lib.arcade.sgKeep": "Aylantirma",
+    "lib.arcade.sgCheck": "Sizga shoh!",
+    "lib.arcade.sgWin": "Mat — yutdingiz.",
+    "lib.arcade.sgLose": "Sizga mat qo'yildi.",
+    "lib.arcade.sgAskPromote": "Bu tosh aylantirilsinmi?",
+    "lib.arcade.note.janggi": "Janggi — koreys shaxmati. Siz pastdagi ko'k toshlar bilan o'ynaysiz va birinchi yurasiz. Syanchidan farqli, daryo yo'q va ikkala saroyda diagonal chiziqlar bor. General va Qo'riqchilar saroy chiziqlari bo'ylab (diagonallar ham) bir qadam yuradi; Arava ham saroy diagonallari bo'ylab sirpanadi va uradi; To'p yurish yoki urish uchun aynan bitta tosh ustidan (boshqa To'p emas) sakrashi kerak va To'pni ura olmaydi; Ot bir nuqta to'g'ri, so'ng bir diagonal yuradi, Fil esa bir to'g'ri, so'ng ikki diagonal, ikkalasi ham yo'lda tosh bo'lsa to'sib qo'yiladi; Askarlar oldinga yoki yonga, dushman saroyida esa diagonal oldinga yuradi. Ikki General hech qachon yuzma-yuz turishi mumkin emas. Yutish uchun dushman Generaliga mat qo'ying. Kompyuter hech qachon yurishni o'tkazmaydi.",
+    "lib.arcade.jgCheck": "Sizga shoh!",
+    "lib.arcade.jgWin": "Mat — yutdingiz.",
+    "lib.arcade.jgLose": "Sizga mat qo'yildi.",
+    "lib.arcade.note.pinball": "To'pni otish uchun Bo'shliq, Yuqoriga tugmasini bosing yoki stolga bosing. Chap qanotni ko'tarish uchun Chapga tugmasini (yoki stolning chap yarmiga tegib), o'ng qanot uchun O'ngga tugmasini (yoki o'ng yarmiga) bosib turing — bosib turish o'rniga ritmda bosing. Yumaloq bamperlarning har biri 100 ochko beradi. Sizda 3 ta to'p bor; bosqichni o'tish uchun ular tugamasdan maqsad ochkoga yeting.",
+    "lib.arcade.pinBalls": "To'plar: {n} · Maqsad: {t}",
+    "lib.arcade.note.cribbage": "Ikki kishilik Cribbage, 61 ochkogacha poyga. Har bir tarqatishda 6 karta olasiz va 2 tasini yuzi pastga \"crib\"ga qo'yasiz (u tarqatuvchiga tegishli). Boshlang'ich karta ochiladi. Keyin navbatma-navbat kartalarni yuzi yuqoriga o'ynaysiz, joriy jami hech qachon 31 dan oshmasligi kerak: 15 yoki 31 ga yetish 2 ochko, oxirgi karta bilan bir xil bo'lish 2/6/12, 3 yoki undan ko'p kartali ketma-ketlik (har qanday tartibda) uzunligicha ochko, hech kim o'ynay olmaganda oxirgi o'ynagan 1 ochko oladi (\"Go\"). Keyin 4 kartali har bir qo'l boshlang'ich karta bilan sanaladi: yig'indisi 15 bo'lgan har bir kombinatsiya 2, har bir juft 2, 3+ ketma-ketlik uzunligicha, bir mastdan to'rt karta 4 (boshlang'ich bilan 5), boshlang'ich karta mastidagi Valet 1 ochko beradi. Tarqatuvchi bo'lmagan birinchi sanaydi, so'ng tarqatuvchi o'z qo'li va crib'ni sanaydi.",
+    "lib.arcade.cbFifteen": "O'n besh",
+    "lib.arcade.cbPair": "Juft",
+    "lib.arcade.cbRun": "Ketma-ketlik",
+    "lib.arcade.cbFlush": "Mast",
+    "lib.arcade.cbNobs": "Boshlang'ich karta mastidagi Valet",
+    "lib.arcade.cbHeels": "Boshlang'ich karta Valet",
+    "lib.arcade.cbYou": "Siz",
+    "lib.arcade.cbFoe": "Kompyuter",
+    "lib.arcade.cbLast": "Oxirgi karta",
+    "lib.arcade.cbCount": "Jami: {n}",
+    "lib.arcade.cbYouDeal": "Siz tarqatasiz",
+    "lib.arcade.cbFoeDeal": "Kompyuter tarqatadi",
+    "lib.arcade.cbPick": "Crib uchun 2 karta tanlang",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Sizning qo'lingiz",
+    "lib.arcade.cbFoeHand": "Kompyuter qo'li",
+    "lib.arcade.cbStarter": "Boshlang'ich karta",
+    "lib.arcade.cbZero": "0 ochko",
+    "lib.arcade.cbPlayed": "O'ynalganlar",
+    "lib.arcade.cbToCrib": "Crib'ga qo'y",
+    "lib.arcade.cbNext": "Davom etish",
+    "lib.arcade.cbHand": "Qo'l"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (O‘n uch)",
       "desc": "Toʻrt kishilik Vetnam karta oʻyini: yakka, juft, ketma-ket kartalar va toʻrtliklarni tashlab, qoʻlingizni birinchi boʻlib boʻshating; 10 bosqich."
+    },
+    "tower-defense": {
+      "name": "Minora himoyasi",
+      "desc": "Dushmanlarning barcha to'lqinlarini to'xtatish uchun yo'l bo'ylab minoralar quring va yaxshilang; uch xil xaritada 10 bosqich."
+    },
+    "color-by-number": {
+      "name": "Raqam bo'yicha bo'yash",
+      "desc": "Rasmni ochish uchun har bir katakni raqamiga mos rang bilan bo'yang; har safar ko'proq rangli 10 ta rasm."
+    },
+    "yukon": {
+      "name": "Yukon Pasyans",
+      "desc": "Zaxirasiz Klondike: yuzi yuqoriga har qanday kartani ustidagi hamma narsa bilan ko'chiring; 10 bosqich, oldinga borgan sari ochiq kartalar kamayadi."
+    },
+    "chinese-checkers": {
+      "name": "Xitoy shashkasi",
+      "desc": "Kompyuterga qarshi yulduz shaklidagi qadam va sakrash o'yini: 10 toshni birinchi bo'lib qarama-qarshi burchakka yetkazing; 10 bosqich."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Xitoy pokeri)",
+      "desc": "13 kartani 5, 5 va 3 kartali uch qo'lga joylang va kompyuterni yenging; har bosqichda 5 raund, 10 bosqich."
+    },
+    "phom": {
+      "name": "Phom (Vetnam rammisi)",
+      "desc": "Kompyuterga qarshi ikki kishilik Vetnam rammisi: karta torting yoki tashlanganni oling, kombinatsiyalar tuzing va chiqing; eng kam qolgan ochko yutadi; 10 bosqich."
+    },
+    "shogi": {
+      "name": "Shogi (Yapon shaxmati)",
+      "desc": "Kompyuterga qarshi shogi o'ynang: olingan toshlarni qo'ying, aylantiring va shohga mat qo'ying; yurishni bekor qilish bilan 10 bosqich."
+    },
+    "janggi": {
+      "name": "Janggi (Koreys shaxmati)",
+      "desc": "Kompyuterga qarshi koreys shaxmatini o'ynang: saroy diagonallari, bitta tosh ustidan to'p sakrashi, uch qadamli fillar; yurishni bekor qilish bilan 10 bosqich."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "To'pni tirik saqlash uchun chapga va o'ngga uring, bamperlarga tegizing va 3 ta to'pingiz tugamasdan maqsad ochkoga yeting; 10 bosqich."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Kompyuterga qarshi ikki kishilik cribbage: crib, 31 gacha pegging, qo'llarni sanash, 61 ochkogacha poyga; 10 bosqich."
     }
   },
   "s": {

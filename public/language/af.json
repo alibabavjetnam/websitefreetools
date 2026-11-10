@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Kies ’n kleur om die hele gebied wat jy besit in die boonste linkerhoek te vul; dit sluk naburige blokkies van daardie kleur in. Maak die hele bord een kleur binne die toegelate aantal skuiwe.",
     "lib.arcade.note.mastermind": "Die rekenaar versteek ’n ry kleure. Kies ’n kleur vir elke posisie en druk dan Raai. ’n Swart penpie = regte kleur op die regte plek; ’n wit penpie = regte kleur op die verkeerde plek. Kraak die kode voordat jou raaiskote op is.",
     "lib.arcade.note.hanoi": "Skuif al die skywe na die laaste paal. Skuif elke keer net die boonste skyf van ’n paal, en plaas nooit ’n groter skyf op ’n kleiner een nie. Klik op die bronpaal en dan op die teikenpaal.",
-    "lib.arcade.note.pipes": "Klik op ’n teël om die pyp 90° te draai. Verbind al die pype in een netwerk sonder oop punte (oop punte word rooi gewys)."
+    "lib.arcade.note.pipes": "Klik op ’n teël om die pyp 90° te draai. Verbind al die pype in een netwerk sonder oop punte (oop punte word rooi gewys).",
+    "lib.arcade.pongScore": "Jy {a} – {b} Rekenaar (eerste tot {t})",
+    "lib.arcade.kills": "Vernietig: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} rotse oor",
+    "lib.arcade.timeLeft": "{n} s oor",
+    "lib.arcade.stepsN": "Treë: {n}",
+    "lib.arcade.crossed": "Tuis: {n}/{t}",
+    "lib.arcade.pipes": "Pype verby: {n}/{t}",
+    "lib.arcade.distance": "Afstand: {n}/{t} m",
+    "lib.arcade.speedN": "Spoed: {n}",
+    "lib.arcade.note.whack-a-mole": "Molle duik uit die gate op — klik of tik op 'n mol om hom te slaan. Slaan genoeg molle voordat die tyd om is. Vanaf vlak 4 is daar bomme: as jy een tref, verloor jy punte.",
+    "lib.arcade.hole": "Gat",
+    "lib.arcade.hitsN": "Treffers: {n}/{t}",
+    "lib.arcade.note.simon": "Die speletjie speel 'n reeks kleure en klanke — herhaal dit in dieselfde volgorde. Elke rondte voeg nog een stap by. Onthou die vereiste lengte om die vlak te voltooi. Vanaf vlak 7 is daar 6 blokkies.",
+    "lib.arcade.seqN": "Reeks: {n}/{t}",
+    "lib.arcade.watch": "Kyk…",
+    "lib.arcade.yourTurnShort": "Jou beurt",
+    "lib.arcade.note.aim-trainer": "Teikens verskyn lukraak en verdwyn gou — tref soveel as wat jy kan. Hulle word kleiner en vinniger. Tref genoeg teikens voordat jy meer as 5 keer mis om die vlak te voltooi.",
+    "lib.arcade.missN": "Misse: {n}/{t}",
+    "lib.arcade.answer": "Antwoord",
+    "lib.arcade.note.quick-math": "Los dit so vinnig as moontlik in jou kop op: tik die antwoord en druk Enter. Elke vraag het 'n tydlimiet; 'n verkeerde antwoord of tydoorskryding kos een lewe (jy het 3). Beantwoord genoeg vrae korrek om die vlak te voltooi.",
+    "lib.arcade.correctN": "Korrek: {n}/{t}",
+    "lib.arcade.note.reaction": "Wag dat die skerm groen word, en klik dan so vinnig as moontlik. Om te vroeg te klik is 'n fout (3 foute en jy verloor). Jou gemiddeld oor 5 rondtes moet die vlak se limiet klop.",
+    "lib.arcade.roundN": "Woord {n}/{t}",
+    "lib.arcade.limitMs": "Limiet: {n} ms",
+    "lib.arcade.rxWait": "Wag vir groen…",
+    "lib.arcade.rxGo": "KLIK!",
+    "lib.arcade.rxEarly": "Te vroeg!",
+    "lib.arcade.gameArea": "Speelarea",
+    "lib.arcade.note.pong": "Beweeg die muis, sleep jou vinger of gebruik die ← → sleutels om die onderste kolf te beheer. Slaan die bal verby die rekenaar; die eerste tot 5 punte wen. Die bal word vinniger met elke treffer.",
+    "lib.arcade.note.space-shooter": "Beweeg die muis, sleep jou vinger of gebruik die ← → sleutels om te stuur; jou skip skiet outomaties. Vernietig genoeg vyandelike skepe om die vlak te voltooi, en vermy botsings en vyandelike vuur. Jy het 3 lewens.",
+    "lib.arcade.note.asteroids": "← → draai die skip, ↑ gee stukrag, Spasie skiet. Vernietig elke rots om die vlak te voltooi; groot rotse breek in kleiner stukke. Die skip kom aan die ander kant van die skerm uit. Jy het 3 lewens.",
+    "lib.arcade.note.maze": "Gebruik die pyltjiesleutels (of swiep, of die knoppies) om van die groen kolletjie na die rooi vlag te kom voordat die tyd om is. Vanaf vlak 5 is die doolhof mistig: jy sien net rondom jou, en besoekte areas word onthou.",
+    "lib.arcade.note.road-cross": "Gebruik die pyltjiesleutels, swiep of die knoppies om die padda van onder na bo te laat spring. Vermy die verkeer; vanaf vlak 5 is die boonste deel 'n rivier, so spring op die dryfstompe. Kom 3 keer tuis om die vlak te voltooi. Jy het 3 lewens.",
+    "lib.arcade.note.flappy": "Tik op die speelarea, druk Spasie of ↑ om te flap. Vlieg deur die gapings tussen pype sonder om 'n pyp, die grond of die dak aan te raak. Hoër vlakke het nouer gapings en vinniger vlug.",
+    "lib.arcade.note.runner": "Tik op die speelarea, druk Spasie of ↑ om oor kaktusse te spring; hou ↓ om onder hoë voëls te buk (of spring oor lae). Hardloop ver genoeg om die vlak te voltooi. Die spoed bly toeneem.",
+    "lib.arcade.fire": "Skiet",
+    "lib.arcade.jump": "Spring",
+    "lib.arcade.aimTarget": "Teiken",
+    "lib.game.soundOn": "Skakel klank aan",
+    "lib.game.soundOff": "Skakel klank af",
+    "lib.arcade.note.kalah": "Jy speel die onderste ry, die rekenaar die boonste; die groot kuil regs is jou stoor. Klik op 'n kuil om al sy sade op te tel en dit een-een in die kuile teen die kloksrigting te saai (sonder om jou teenstander se stoor te gebruik). As jou laaste saad in jou stoor beland, speel jy weer; as dit in 'n leë kuil aan jou kant beland oorkant 'n kuil met sade, vang jy daardie sade. Wanneer een kant leeg is, gaan die ander kant se sade na sy eienaar se stoor; die groter stoor wen.",
+    "lib.arcade.note.snakes": "Rol die dobbelsteen en beweeg soveel blokkies, van 1 tot 100. Land op die voet van 'n leer om dit uit te klim, of op 'n slang se kop om af te gly. Vanaf vlak 4 moet jy die presiese getal gooi om op 100 te land. Hoër vlakke het meer slange, minder leers en meer teenstanders. Die eerste wat 100 bereik, wen.",
+    "lib.arcade.square": "Blokkie {n}",
+    "lib.arcade.ladderUp": "Teen die leer op!",
+    "lib.arcade.snakeDown": "Deur 'n slang gesluk!",
+    "lib.arcade.needExact": "Jy het die presiese getal nodig om op 100 te land.",
+    "lib.arcade.note.nmm": "Elke kant het 9 stukke. Fase 1: plaas beurtelings stukke op leë punte. Fase 2: skuif 'n stuk na 'n aangrensende leë punt. Met net 3 stukke oor mag jy na enige leë punt “vlieg”. Maak drie in 'n ry (’n “meul”) om 'n teenstander se stuk te verwyder (eers stukke wat nie in 'n meul is nie). Jy verloor wanneer jy tot 2 stukke afgekom het of nie kan beweeg nie. Jy speel wit en gaan eerste.",
+    "lib.arcade.inHand": "Om te plaas: {a} · {b}",
+    "lib.arcade.removePiece": "Kies 'n teenstander se stuk om te verwyder.",
+    "lib.arcade.enemyWaters": "Vyandelike waters (klik om te skiet)",
+    "lib.arcade.yourFleet": "Jou vloot",
+    "lib.arcade.note.battleship": "Elke kant het 5 skepe (lengtes 5, 4, 3, 3, 2) wat lukraak op 'n 10x10-rooster geplaas is. Skiet beurtelings op 'n sel: 'n treffer word rooi, 'n misser ligblou, en as jy elke sel van 'n skip tref, sink dit. Sink die hele vyandelike vloot eerste om te wen. Op hoër vlakke bereken die rekenaar slimmer waar jou skepe is.",
+    "lib.arcade.shipsLeft": "Skepe oor: jy {a} · vyand {b}",
+    "lib.arcade.theySunk": "Die vyand het een van jou skepe gesink!",
+    "lib.arcade.theyHit": "Die vyand het een van jou skepe getref.",
+    "lib.arcade.theyMiss": "Die vyand het gemis.",
+    "lib.arcade.youSunk": "Jy het 'n vyandelike skip gesink!",
+    "lib.arcade.youHit": "Raak!",
+    "lib.arcade.youMiss": "Mis.",
+    "lib.arcade.shake": "Skud",
+    "lib.arcade.clearBets": "Vee wedstrype uit",
+    "lib.arcade.note.bau-cua": "Slegs virtuele munte — geen regte geld nie. Kies 'n skyfiewaarde, klik op die diere om te wed, en druk dan Skud. Vir elke dobbelsteen wat met 'n dier ooreenstem waarop jy gewed het, kry jy jou inset terug plus ewe veel vir elke ooreenkoms. Bereik die teikenmunte binne die toegelate rondtes om die vlak te voltooi.",
+    "lib.arcade.note.baccarat": "Slegs virtuele munte — geen regte geld nie. Wed op Speler, Bankier of Gelykop, en druk dan Deel. 'n Hand se waarde is die laaste syfer van sy totaal (A = 1, 2–9 gesigswaarde, 10/J/Q/K = 0); die hand naaste aan 9 wen, en derde kaarte word volgens die standaardreëls getrek. Speler betaal 1:1, Bankier 0,95:1, Gelykop 8:1 (Speler-/Bankier-weddenskappe word terugbetaal by gelykop). Bereik die teikenmunte binne die toegelate rondtes om die vlak te voltooi.",
+    "lib.arcade.banker": "Bankier",
+    "lib.arcade.player": "Speler",
+    "lib.arcade.tie": "Gelykop",
+    "lib.arcade.openCards": "Wys",
+    "lib.arcade.note.bai-cao": "Slegs virtuele munte — geen regte geld nie. Elke kant kry 3 kaarte. 'n Hand se punte is die laaste syfer van sy totaal (A = 1, 2–9 gesigswaarde, 10/J/Q/K = 10, dit wil sê 0 punte). Rangorde: Drie van 'n soort (“Sáp”) is die hoogste, dan drie prentkaarte (“Ba tiên”), dan 9 punte af tot 0. Plaas 'n weddenskap, druk Deel en dan Wys om met die handelaar te vergelyk. Vanaf vlak 6 wen die handelaar gelykopuitslae. Bereik die teikenmunte binne die toegelate rondtes om die vlak te voltooi.",
+    "lib.arcade.caoSap": "Drie van 'n soort",
+    "lib.arcade.caoBaTien": "Drie prentkaarte",
+    "lib.arcade.caoPts": "{n} punte",
+    "lib.arcade.note.bingo": "Die rekenaar roep getalle van 1 tot 75. Wanneer 'n geroepte getal op jou kaart is, klik daarop om dit te merk (die middel is gratis). Voltooi 'n ry, kolom of diagonaal en druk BINGO! — jy moet die rekenaarteenstanders klop. 'n Valse BINGO! sluit die knoppie 'n paar sekondes. Hoër vlakke roep vinniger en het meer teenstanders.",
+    "lib.arcade.opponentsN": "Teenstanders: {n}",
+    "lib.arcade.falseBingo": "Nog nie 'n volle lyn nie! Knoppie vir 3 sekondes gesluit.",
+    "lib.arcade.bingoGo": "Getalle word geroep!",
+    "lib.arcade.note.yahtzee": "Elke beurt rol jy 5 dobbelstene tot 3 keer: klik op 'n dobbelsteen om dit te hou, en druk dan Rol om die ander weer te rol. Kies dan 'n blokkie in die tabel om punte aan te teken (elke blokkie word een keer gebruik; 'n blokkie wat nie pas nie, kry 0). 13 beurte. Die Een–Ses-blokkies kry 'n bonus van 35 as hulle altesaam 63 of meer is. Bereik die vlak se teikentelling om te wen.",
+    "lib.arcade.turnN": "Beurt {n}/13",
+    "lib.arcade.pickCat": "Kies 'n blokkie om punte aan te teken",
+    "lib.arcade.rollsLeft": "Rol ({n} oor)",
+    "lib.arcade.upperBonus": "Een–Ses-bonus",
+    "lib.arcade.scored": "{n} aangeteken",
+    "lib.arcade.note.crazy-eights": "Speel 'n kaart wat volgens kleur of waarde by die boonste kaart van die afgooistapel pas. Agtjies is wild: speel een enige tyd en kies 'n nuwe kleur. As jy geen speelbare kaart het nie, trek van die stapel (tot 3 kaarte); as jy steeds nie kan speel nie, slaan jy oor. Die eerste wat sy hand leegmaak, wen. Hoër vlakke het meer teenstanders en die rekenaar speel slimmer.",
+    "lib.arcade.opponent": "Teenstander",
+    "lib.arcade.pileLeft": "Trekstapel: {n}",
+    "lib.arcade.pickSuit": "Kies 'n nuwe kleur",
+    "lib.arcade.aiSuit": "Die rekenaar het {s} gekies",
+    "lib.arcade.aiPass": "Die rekenaar slaan oor.",
+    "lib.arcade.mustPlay": "Jy het 'n speelbare kaart — speel dit.",
+    "lib.arcade.youPass": "Jy het 3 kaarte getrek en slaan oor.",
+    "lib.arcade.bcGourd": "Kalbas",
+    "lib.arcade.bcCrab": "Krap",
+    "lib.arcade.bcShrimp": "Garnaal",
+    "lib.arcade.bcFish": "Vis",
+    "lib.arcade.bcRooster": "Haan",
+    "lib.arcade.bcDeer": "Takbok",
+    "lib.arcade.yOnes": "Eentjies",
+    "lib.arcade.yTwos": "Tweetjies",
+    "lib.arcade.yThrees": "Drietjies",
+    "lib.arcade.yFours": "Viertjies",
+    "lib.arcade.yFives": "Vyftjies",
+    "lib.arcade.ySixes": "Sesse",
+    "lib.arcade.yThree": "Drie van 'n soort",
+    "lib.arcade.yFour": "Vier van 'n soort",
+    "lib.arcade.yFull": "Volhuis (25)",
+    "lib.arcade.ySmall": "Klein ry (30)",
+    "lib.arcade.yLarge": "Groot ry (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Kans",
+    "lib.arcade.note.race": "Druk ← → (of tik op die baan wat jy wil hê) om van baan te verander en die motors voor jou te systap. Jy het 3 lewens; ry die volle afstand om die vlak te voltooi. Hoër vlakke voeg bane en vinniger verkeer by.",
+    "lib.arcade.note.jump": "Die karakter bons self. Druk ← → of sleep jou vinger om op die volgende platform te land. Blou platforms beweeg, bruin breek wanneer jy land. As jy van die skerm af val, verloor jy; klim hoog genoeg om die vlak te voltooi.",
+    "lib.arcade.note.miner": "Die haak swaai heen en weer; druk Spasie, ↓ of tik op die veld om dit te laat sak. Groot goud en rotse is swaar en trek stadig; diamante is baie werd. Bereik die teikengeld voordat die 60 sekondes om is.",
+    "lib.arcade.note.slicer": "Swiep met 'n vinger of die muis oor die vrugte om dit te sny. Vermy die swart bomme. 'n Gemiste vrug of 'n gesnyde bom kos een lewe (jy het 3). Sny genoeg vrugte om die vlak te voltooi.",
+    "lib.arcade.note.hoops": "Druk op die baan, sleep af (soos 'n kettie) en los om die bal na die ring te skiet. Hoe verder jy sleep, hoe harder die gooi. Skraap genoeg doele binne die skote wat jy het; vanaf vlak 4 beweeg die ring.",
+    "lib.arcade.note.bubbles": "Beweeg die muis of vinger om te rig, klik/tik dan of druk Spasie/Skiet om te skiet. Verbind 3 of meer borrels van dieselfde kleur om hulle te laat bars; borrels wat hul steun verloor, val. Die rye sak stadig, so hou hulle weg van die onderste lyn. Maak alle borrels skoon om te wen.",
+    "lib.arcade.note.chase": "Gebruik die pyltjiesleutels (of swiep / die knoppies) om te draai en elke kolletjie in die doolhof te eet terwyl jy die spoke vermy wat jou jaag. Jy het 3 lewens; hoër vlakke voeg meer spoke by wat vinniger is en slimmer jaag.",
+    "lib.arcade.height": "Hoogte: {n}/{t} m",
+    "lib.arcade.money": "Geld: {n}/{t}",
+    "lib.arcade.sliced": "Gesny: {n}/{t}",
+    "lib.arcade.hoopScore": "Aangeteken: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} skote oor",
+    "lib.arcade.bubbleLeft": "{n} borrels oor",
+    "lib.arcade.shotsN": "Skote: {n}",
+    "lib.arcade.dotsLeft": "{n} kolletjies oor",
+    "lib.arcade.note.kakuro": "Vul die wit selle met syfers 1–9 sodat elke reeks optel tot die leidraad in die swart sel (die getal regsbo is vir die reeks na regs, die een linksonder vir die reeks na onder), sonder dat 'n syfer binne 'n reeks herhaal word. Gebruik die pyltjiesleutels om te beweeg.",
+    "lib.arcade.note.kenken": "Vul die rooster met die getalle 1 tot N sodat geen getal in enige ry of kolom herhaal word nie. Elke dik omlynde kawel toon 'n teiken en 'n bewerking (+, −, ×, ÷): die getalle in die kawel moet daardie uitkoms gee. Gebruik die pyltjiesleutels om te beweeg.",
+    "lib.arcade.note.wordGuess": "Raai die geheime Engelse woord. Na elke poging beteken groen die regte letter op die regte plek, geel beteken die letter is in die woord maar elders, en grys beteken dit is nie in die woord nie. Tik op jou sleutelbord of gebruik die sleutels op die skerm, en druk Enter om in te dien. Hoër vlakke het langer woorde en minder pogings.",
+    "lib.arcade.note.hangman": "Raai die geheime Engelse woord deur letters een vir een te kies. Elke verkeerde letter voeg 'n deel by die gehangde figuur; wanneer jou verkeerde raaiskote op is, verloor jy. Hoër vlakke het langer woorde en laat minder verkeerde raaiskote toe.",
+    "lib.arcade.note.scramble": "Herrangskik die deurmekaar letters tot 'n regte Engelse woord en tik dit in die antwoordkassie. Elke vlak het 5 woorde; los minstens 4 op voordat elke woord se tydhouer afloop om die vlak te voltooi. Die wenk onthul die eerste letter.",
+    "lib.arcade.cellsLeft": "{n} leë selle oor",
+    "lib.arcade.wrongN": "{n} selle is nie reg nie.",
+    "lib.arcade.noError": "Tot dusver geen foute gevind nie.",
+    "lib.arcade.tooShort": "Nie genoeg letters nie",
+    "lib.arcade.answerIs": "Antwoord: {w}",
+    "lib.arcade.livesLeft": "{n} verkeerde raaiskote oor",
+    "lib.arcade.yourAnswer": "Jou antwoord",
+    "lib.arcade.skip": "Slaan oor",
+    "lib.arcade.notThis": "Nie reg nie, probeer weer.",
+    "lib.arcade.startsWith": "Eerste letter: {c}",
+    "lib.arcade.note.domino": "Elke speler kry 7 dominostene; wie die hoogste dubbele hou, begin. Speel 'n steen waarvan die getal by een punt van die ketting pas. As jy nie kan speel nie, trek uit die kuil totdat jy kan; as dit leeg is, slaan jy oor. Die eerste wat sy hand leegmaak, wen; as albei vasgekeer is, wen die laer puntetotaal.",
+    "lib.arcade.note.hearts": "Vier spelers, 13 kaarte elk. Die klawer-2 lei. Jy moet die gespeelde kleur volg as jy kan. Elke hart is 1 punt en die Skoppensvrou 13; wie 'n slag wen, kry sy punte. Laer is beter, en as iemand al 26 punte neem, kry almal anders 26. Jy kan nie met 'n hart lei voordat een gespeel is nie. Ná die laaste hand wen jy as jou telling die laagste is (of gelyk laagste).",
+    "lib.arcade.note.holdem": "Een-teen-een teen die rekenaar met slegs virtuele skyfies. Elke speler kry 2 private kaarte en 5 gemeenskaplike kaarte word onthul (flop, turn, river); maak die beste 5-kaarthand. Elke rondte kan jy pas, hou (of check) of verhoog. Die blindes styg elke 4 hande. Jy wen wanneer die rekenaar se skyfies opraak, of deur meer skyfies te hê ná die handelimiet. Geen regte geld is betrokke nie.",
+    "lib.arcade.dmDraw": "Trek 'n steen",
+    "lib.arcade.dmPass": "Slaan oor",
+    "lib.arcade.dmEmpty": "Nog geen stene gespeel nie",
+    "lib.arcade.dmYard": "Kuil: {n} stene",
+    "lib.arcade.dmLeft": "Linkerkant",
+    "lib.arcade.dmRight": "Regterkant",
+    "lib.arcade.dmTie": "Gelykop! Albei kante is gelyk.",
+    "lib.arcade.hrHand": "Hand {n}/{t}",
+    "lib.arcade.hrTook": "{p} wen die slag ({n} punte).",
+    "lib.arcade.hrIllegal": "Jy kan nie hierdie kaart speel nie (volg die kleur, of nog geen hartlei nie).",
+    "lib.arcade.blinds": "Groot blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Pas",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Hou {n}",
+    "lib.arcade.raiseTo": "Verhoog na",
+    "lib.arcade.raiseN": "Verhoog na {n}",
+    "lib.arcade.thOppFold": "Die rekenaar pas; jy wen hierdie hand.",
+    "lib.arcade.thYouFold": "Jy het gepas.",
+    "lib.arcade.thOppWin": "Die rekenaar wen hierdie hand",
+    "lib.arcade.thYouWin": "Jy wen hierdie hand",
+    "lib.arcade.thSplit": "Gedeelde pot",
+    "lib.arcade.thAiFold": "Die rekenaar pas.",
+    "lib.arcade.thAiRaise": "Die rekenaar verhoog na {n}.",
+    "lib.arcade.thAiCall": "Die rekenaar hou / check.",
+    "lib.arcade.hand.high": "Hoogste kaart",
+    "lib.arcade.hand.pair": "Paar",
+    "lib.arcade.hand.twoPair": "Twee pare",
+    "lib.arcade.hand.trips": "Drie van 'n soort",
+    "lib.arcade.hand.straight": "Ry",
+    "lib.arcade.hand.flush": "Kleur",
+    "lib.arcade.hand.full": "Volhuis",
+    "lib.arcade.hand.quads": "Vier van 'n soort",
+    "lib.arcade.hand.sflush": "Kleurry",
+    "lib.arcade.note.nback": "'n Blokkie lig een na die ander op 'n 3x3-rooster op. Druk \"Pas!\" (of Spasie) wanneer die verligte posisie dieselfde is as die een N stappe gelede (N word bo getoon). Jy het minstens 80% korrekte besluite nodig om die vlak te voltooi. Hoër vlakke gebruik 'n groter N.",
+    "lib.arcade.nbMatch": "Pas!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Korrek: {a} · Verkeerd: {b}",
+    "lib.arcade.nbAcc": "Akkuraatheid: {n}%",
+    "lib.arcade.note.clicker": "Klik op die koekie om koekies te bak, en bestee hulle dan aan helpers wat outomaties bak (pryse styg met elkeen wat jy koop). Bak die teikengetal koekies binne 2 minute om die vlak te voltooi.",
+    "lib.arcade.ckCursor": "Wyser",
+    "lib.arcade.ckGrandma": "Bak-ouma",
+    "lib.arcade.ckFarm": "Plaas",
+    "lib.arcade.ckMine": "Suikermyn",
+    "lib.arcade.ckFactory": "Fabriek",
+    "lib.arcade.ckCookie": "Koekie",
+    "lib.arcade.ckEarned": "Gebak: {n}/{t}",
+    "lib.arcade.chips2": "Koekies: {n}",
+    "lib.arcade.ckCps": "{n} koekies/sekonde",
+    "lib.arcade.note.onet": "Kies twee identiese teëls wat deur 'n pad met hoogstens 2 draaie wat nie ander teëls kruis nie verbind kan word, om hulle te verwyder. Maak alle teëls leeg voordat die tyd om is om te wen. Wanneer daar geen skuiwe oor is nie, kan jy skommel (beperkte gebruike).",
+    "lib.arcade.shuffle": "Skommel",
+    "lib.arcade.tilesLeft": "{n} teëls oor",
+    "lib.arcade.autoShuffle": "Geen skuiwe oor nie — outomaties geskommel.",
+    "lib.arcade.note.jigsaw": "Die prent is in stukke gesny en deurmekaar gemaak. Tik op een stuk en dan op 'n ander om hulle te ruil, en bou die prent weer op soos die verwysing toon. Stukke op die regte plek kry 'n groen rand. Hoër vlakke het meer stukke.",
+    "lib.arcade.jgRef": "Verwysingsprent",
+    "lib.arcade.jgPlaced": "Op sy plek: {a}/{b}",
+    "lib.arcade.golfStrokes": "Slae: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Jy speel die wit skyfies en beweeg van regsbo om na regsonder (jou tuiste). Rol die dobbelstene, klik op die skyf wat jy wil beweeg, en klik dan op 'n gemerkte bestemming. As jy op 'n punt met presies een teenstanderskyf land, slaan jy dit na die middelste balk, en daardie speler moet dit eers terugbring. Jy kan nie op 'n punt met twee of meer teenstanderskyfies land nie. Sodra al 15 van jou skyfies in jou tuisbord (die laaste 6 punte) is, mag jy hulle afhaal. Die eerste wat al 15 afhaal, wen.",
+    "lib.arcade.bgRoll": "Rol die dobbelstene",
+    "lib.arcade.bgOff": "Haal af",
+    "lib.arcade.bgRollFirst": "Rol die dobbelstene",
+    "lib.arcade.bgInfo": "Af: jy {a} · rekenaar {b} · Pyne: {c} / {d}",
+    "lib.arcade.youNoMove": "Jy het geen wettige skuif oor nie.",
+    "lib.arcade.note.tienlen": "Vier spelers, 13 kaarte elk. Kaartvolgorde van laag na hoog: 3, 4, … K, A, 2; kleure van laag na hoog: skoppens, klawers, ruite, harte. Wie die skoppen-3 hou, gaan eerste. Speel 'n enkele kaart, 'n paar, drie van 'n soort, vier van 'n soort, of 'n ry van 3 of meer opeenvolgende kaarte (geen 2's nie). Die volgende speler moet dieselfde tipe en hoër speel, of oorslaan; vier van 'n soort kan 'n enkele 2 of 'n paar 2's klop. Wanneer almal anders oorslaan, mag die laaste speler om te speel enigiets lei. Die eerste wat sy hand leegmaak, wen. Kies kaarte en druk dan Speel.",
+    "lib.arcade.tlPlay": "Speel",
+    "lib.arcade.tlPass": "Slaan oor",
+    "lib.arcade.tlClear": "Maak keuse skoon",
+    "lib.arcade.tlPassed": "het oorgeslaan",
+    "lib.arcade.tlFree": "Tafel leeg — jy mag enigiets lei",
+    "lib.arcade.tlLeft": "Kaarte oor: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} slaan oor.",
+    "lib.arcade.tlBad": "Die gekose kaarte vorm nie 'n geldige stel nie.",
+    "lib.arcade.tlLow": "Hierdie stel is nie hoog genoeg om die tafel te klop nie.",
+    "lib.arcade.note.td": "Tik op 'n leë blokkie (nie die pad nie) om 'n skiettoring te bou, wat goud kos; tik weer op 'n toring om dit op te gradeer (tot vlak 5). Torings skiet outomaties die vyand wat die verste binne bereik gevorder het. Verslaan vyande om meer goud te verdien; as 15 vyande die einde bereik, verloor jy. Oorleef elke golf om die vlak te voltooi.",
+    "lib.arcade.tdInfo": "Goud: {g} · Golf {w}/{t}",
+    "lib.arcade.tdCost": "Toring: {n}",
+    "lib.arcade.note.colorNum": "Elke blokkie het 'n nommer wat by 'n kleur in die palet pas. Kies 'n kleur en tik dan op die blokkies met daardie nommer om hulle te verf; tik met die verkeerde kleur verf niks. Verf elke blokkie korrek om die prent te voltooi. Hoër vlakke het meer kleure.",
+    "lib.arcade.cnWrong": "Verkeerde kleur — kyk na die nommer op die blokkie.",
+    "lib.arcade.note.yukon": "Soos Klondike maar sonder 'n stapel: enige kaart wat oop lê kan saam met elke kaart daarbo verskuif word, selfs al is hulle nie in volgorde nie; slegs die eerste kaart moet by die teikenkolom pas (dalend, afwisselend rooi en swart; 'n Koning gaan na 'n leë kolom). Bou al 52 kaarte op die vier fondamente van Aas tot Koning. Lae vlakke begin met meer kaarte wat reeds oop lê.",
+    "lib.arcade.yukonFree": "Toe kaarte: {n}",
+    "lib.arcade.note.chinesechk": "Jy speel die blou stukke in die regterhoek; skuif al 10 daarvan na die teenoorgestelde linkerhoek voordat die rekenaar dit doen. Elke beurt beweeg jy een stuk: stap na 'n leë naburige gat, of spring oor enige stuk na die leë gat net daaragter, en hou aan spring soveel keer as wat jy wil. Tik op een van jou stukke en dan op 'n groen gat om te beweeg.",
+    "lib.arcade.ccTurn": "Jou beurt · Beurt {n}",
+    "lib.arcade.ccDraw": "Geen beurte oor nie — dit is gelykop.",
+    "lib.arcade.note.maubinh": "Jy en die rekenaar kry elk 13 kaarte en rangskik hulle in 3 hande: 'n agterhand van 5 kaarte, 'n middelhand van 5 kaarte en 'n voorhand van 3 kaarte. Die agterhand moet minstens so sterk wees soos die middelhand, en die middelhand minstens so sterk soos die voorhand; anders is jou rangskikking ongeldig en verloor jy die hele rondte. Tik op 'n kaart en dan op die ry waar dit hoort (tik op 'n geplaasde kaart om dit terug te neem). Elke hand wat jy wen, tel 1 punt; om al 3 te wen, tel 6. Speel 5 rondtes — 'n positiewe totaal voltooi die vlak. Die voorhand kan slegs hoogste kaart, 'n paar of drie van 'n soort wees.",
+    "lib.arcade.mbHigh": "Hoogste kaart",
+    "lib.arcade.mbPair": "Paar",
+    "lib.arcade.mbTwoPair": "Twee pare",
+    "lib.arcade.mbTrips": "Drie van 'n soort",
+    "lib.arcade.mbStraight": "Ry",
+    "lib.arcade.mbFlush": "Kleur",
+    "lib.arcade.mbFull": "Volhuis",
+    "lib.arcade.mbQuads": "Vier van 'n soort",
+    "lib.arcade.mbSflush": "Kleurry",
+    "lib.arcade.mbBack": "Agterhand",
+    "lib.arcade.mbMid": "Middelhand",
+    "lib.arcade.mbFront": "Voorhand",
+    "lib.arcade.mbFoe": "Rekenaar",
+    "lib.arcade.mbYou": "Jy",
+    "lib.arcade.mbFoul": "Ongeldig!",
+    "lib.arcade.mbFoeFoul": "Rekenaar ongeldig!",
+    "lib.arcade.mbConfirm": "Wys kaarte",
+    "lib.arcade.mbReset": "Maak skoon",
+    "lib.arcade.mbHand": "Jou hand",
+    "lib.arcade.mbRound": "Rondte {a}/{b}",
+    "lib.arcade.mbTotal": "Totaal: {n}",
+    "lib.arcade.mbFinish": "Voltooi",
+    "lib.arcade.mbNext": "Volgende rondte",
+    "lib.arcade.mbDraw": "Gelyk op punte — speel weer.",
+    "lib.arcade.mbAutoMsg": "Hier is 'n voorgestelde rangskikking. Jy kan dit verander voordat jy die kaarte wys.",
+    "lib.arcade.note.phom": "Twee spelers; elkeen kry 9 kaarte (wie eerste gaan, kry 10). 'n Meld is 3 of meer kaarte van dieselfde waarde, of 3 of meer opeenvolgende kaarte van dieselfde kleur (Aas is slegs laag). Op jou beurt trek jy 'n kaart van die stapel, of neem die kaart wat jou teenstander pas weggegooi het as dit 'n meld met jou hand vorm (’n kaart wat jy geneem het, moet gehou word), en gooi dan een kaart weg. Wanneer elke speler 4 kaarte weggegooi het, eindig die rondte en wie die laer totaal van kaarte buite melds het (Aas = 1 … Koning = 13), wen. As al jou kaarte ná 'n weggooi in melds is, gaan jy uit (\"U\") en wen dadelik. Kaarte met 'n groen buitelyn is in jou beste stel melds.",
+    "lib.arcade.pmDraw": "Trek",
+    "lib.arcade.pmEat": "Neem weggooikaart",
+    "lib.arcade.pmThrow": "Gooi weg",
+    "lib.arcade.pmFoeAte": "Die rekenaar het jou kaart geneem.",
+    "lib.arcade.pmFoeU": "Die rekenaar het uitgegaan!",
+    "lib.arcade.pmTurn": "Beurt {a}/{b}",
+    "lib.arcade.pmLeft": "Buite melds: {n}",
+    "lib.arcade.pmDeck": "Stapel: {n}",
+    "lib.arcade.pmFoeHand": "Rekenaar se hand",
+    "lib.arcade.pmFoeDisc": "Rekenaar se weggooikaarte",
+    "lib.arcade.pmFoeEaten": "Rekenaar het geneem",
+    "lib.arcade.pmMyDisc": "Jou weggooikaarte",
+    "lib.arcade.pmAte": "Jy het hierdie kaart geneem — hou dit in 'n meld.",
+    "lib.arcade.pmKeep": "'n Kaart wat jy geneem het, moet gehou word — gooi 'n ander een weg.",
+    "lib.arcade.pmU": "Uit! Jy wen dadelik.",
+    "lib.arcade.pmYou": "Jy",
+    "lib.arcade.pmFoe": "Rekenaar",
+    "lib.arcade.pmDraw2": "Gelyk op punte.",
+    "lib.arcade.note.shogi": "Shogi is Japannese skaak. Jy speel die onderste kant en gaan eerste; die rekenaar se stukke wys die ander kant toe. Gevange stukke gaan in jou hand en kan op enige leë blokkie neergesit word in plaas van 'n skuif (nooit 'n pion in 'n lêer waar jy reeds 'n onbevorderde pion het nie, en nooit 'n stuk op 'n ry waar dit nie weer kan beweeg nie). 'n Stuk wat in, uit of binne die laaste drie rye van die teenstander beweeg, mag bevorder word (behalwe Koning en Goud); bevordering is verpligtend wanneer 'n stuk geen skuiwe sou hê nie. Skaakmat die vyandelike Koning om te wen. Kanji: 歩 pion, 香 lans, 桂 perd, 銀 silwer, 金 goud, 角 loper, 飛 toring, 玉 koning; と, 馬, 竜 en ander rooi stukke is bevorder.",
+    "lib.arcade.sgPromote": "Bevorder",
+    "lib.arcade.sgKeep": "Moenie bevorder nie",
+    "lib.arcade.sgCheck": "Jy staan skaak!",
+    "lib.arcade.sgWin": "Skaakmat — jy wen.",
+    "lib.arcade.sgLose": "Jy is skaakmat.",
+    "lib.arcade.sgAskPromote": "Bevorder hierdie stuk?",
+    "lib.arcade.note.janggi": "Janggi is Koreaanse skaak. Jy speel die blou stukke onder en gaan eerste. Anders as xiangqi is daar geen rivier nie, en albei paleise het diagonale lyne. Die General en Wagte beweeg een tree langs die paleislyne (diagonale ingesluit); die Kar gly en vang ook langs paleisdiagonale; die Kanon moet oor presies een stuk spring (nie 'n ander Kanon nie) om te beweeg of te vang, en kan nie 'n Kanon vang nie; die Perd tree een punt reguit en dan een diagonaal, en die Olifant een reguit en dan twee diagonaal, albei geblokkeer as 'n stuk in die pad is; Soldate beweeg vorentoe of sywaarts, en diagonaal vorentoe binne die vyandelike paleis. Die twee Generaals mag nooit teenoor mekaar staan nie. Skaakmat die vyandelike General om te wen. Die rekenaar slaan nooit oor nie.",
+    "lib.arcade.jgCheck": "Jy staan skaak!",
+    "lib.arcade.jgWin": "Skaakmat — jy wen.",
+    "lib.arcade.jgLose": "Jy is skaakmat.",
+    "lib.arcade.note.pinball": "Druk Spasie, Op of tik op die tafel om die bal te lanseer. Hou Links (of raak die linkerhelfte van die tafel) om die linkerflipper te lig en Regs (of die regterhelfte) vir die regter een — tik liewer in ritme as om vas te hou. Ronde bumpers gee elk 100 punte. Jy het 3 balle; bereik die teikentelling voordat hulle opraak om die vlak te voltooi.",
+    "lib.arcade.pinBalls": "Balle: {n} · Teiken: {t}",
+    "lib.arcade.note.cribbage": "Tweespeler-cribbage, 'n wedloop tot 61 punte. Met elke uitdeel kry jy 6 kaarte en sit 2 met die gesig na onder in die crib (dit behoort aan die gewer). 'n Beginkaart word omgedraai. Speel dan beurtelings kaarte met die gesig na bo, met die lopende totaal nooit bo 31 nie: om 15 of 31 te bereik tel 2, om by die laaste kaart te pas tel 2/6/12, 'n ry van 3 of meer (in enige volgorde) tel sy lengte, en wanneer niemand kan speel nie, kry die laaste speler 1 (“Go”). Dan word elke hand van 4 saam met die beginkaart getel: elke kombinasie wat 15 optel, tel 2, elke paar 2, 'n ry van 3+ sy lengte, vier kaarte van een kleur 4 (5 met die beginkaart), en 'n Boer wat by die beginkaart se kleur pas 1. Die nie-gewer tel eerste, dan tel die gewer sy hand en die crib.",
+    "lib.arcade.cbFifteen": "Vyftien",
+    "lib.arcade.cbPair": "Paar",
+    "lib.arcade.cbRun": "Ry",
+    "lib.arcade.cbFlush": "Kleur",
+    "lib.arcade.cbNobs": "Boer wat by die beginkaart pas",
+    "lib.arcade.cbHeels": "Boer as beginkaart",
+    "lib.arcade.cbYou": "Jy",
+    "lib.arcade.cbFoe": "Rekenaar",
+    "lib.arcade.cbLast": "Laaste kaart",
+    "lib.arcade.cbCount": "Totaal: {n}",
+    "lib.arcade.cbYouDeal": "Jy deel uit",
+    "lib.arcade.cbFoeDeal": "Rekenaar deel uit",
+    "lib.arcade.cbPick": "Kies 2 kaarte vir die crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Jou hand",
+    "lib.arcade.cbFoeHand": "Rekenaar se hand",
+    "lib.arcade.cbStarter": "Beginkaart",
+    "lib.arcade.cbZero": "0 punte",
+    "lib.arcade.cbPlayed": "Gespeel",
+    "lib.arcade.cbToCrib": "Sit in crib",
+    "lib.arcade.cbNext": "Gaan voort",
+    "lib.arcade.cbHand": "Hand"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Ultieme nulletjies en kruisies",
       "desc": "Nulletjies en kruisies oor 9 klein borde: die blokkie wat jy kies, bepaal waar jou teenstander moet speel; teen die rekenaar oor 10 vlakke."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Slaan die bal verby die rekenaar; die eerste tot 5 punte wen. 10 vlakke met 'n vinniger, slimmer teenstander."
+    },
+    "space-shooter": {
+      "name": "Ruimteskieter",
+      "desc": "Stuur jou skip, skiet vyandelike skepe af en systap hul vuur; 10 vlakke met groter golwe, teenvuur en harder vyande."
+    },
+    "asteroids": {
+      "name": "Asteroïdes",
+      "desc": "Draai, gee stukrag en skiet om die ruimterotse te breek; groot rotse breek in kleiner. 10 vlakke met meer en vinniger rotse."
+    },
+    "maze": {
+      "name": "Doolhof",
+      "desc": "Vind jou pad uit die doolhof voordat die tyd om is; 10 vlakke van klein tot groot doolhowe, met mis op hoër vlakke."
+    },
+    "road-cross": {
+      "name": "Padoorsteek (Frogger-styl)",
+      "desc": "Spring die padda oor besige paaie en riviere met dryfstompe om 3 keer tuis te kom; 10 vlakke met vinniger verkeer en 'n rivier op hoër vlakke."
+    },
+    "flappy": {
+      "name": "Flappy Bird-styl speletjie",
+      "desc": "Tik om te flap en deur die gapings tussen pype te vlieg; 10 vlakke met nouer gapings en toenemende spoed."
+    },
+    "runner": {
+      "name": "Dino-hardloper",
+      "desc": "Spring oor kaktusse en buk onder voëls; hardloop ver genoeg om elk van die 10 vlakke te voltooi terwyl die spoed bly toeneem."
+    },
+    "whack-a-mole": {
+      "name": "Slaan-die-mol",
+      "desc": "Slaan die molle wat uit die gate opduik voordat die tyd om is, en vermy die bomme; 10 vlakke van stadig tot baie vinnig."
+    },
+    "simon": {
+      "name": "Simon (Geheuekleure)",
+      "desc": "Onthou en herhaal die reeks kleure en klanke; langer reekse oor 10 vlakke, met 6 blokkies vanaf vlak 7."
+    },
+    "aim-trainer": {
+      "name": "Mikoefenaar",
+      "desc": "Tref die teikens wat lukraak verskyn en gou verdwyn; teikens krimp oor 10 vlakke, en jou reaksietyd word gemeet."
+    },
+    "quick-math": {
+      "name": "Vinnige somme",
+      "desc": "Doen optelling, aftrekking, vermenigvuldiging en deling in jou kop onder tydsdruk; 10 vlakke van eenvoudige somme tot uitdrukkings."
+    },
+    "reaction": {
+      "name": "Reaksietyd-toets",
+      "desc": "Klik die oomblik wat die skerm groen word; jou gemiddeld oor 5 rondtes moet elke vlak se limiet haal, wat oor 10 vlakke strenger word."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Saai sade rondom die kuile, vang jou teenstander se sade en speel weer as jy in jou stoor land; speel teen die rekenaar oor 10 vlakke van maklik tot moeilik."
+    },
+    "snakes-ladders": {
+      "name": "Slange en Leers",
+      "desc": "Rol die dobbelsteen van blokkie 1 tot 100, klim leers, vermy slange en bereik die einde voor jou teenstanders; 10 vlakke."
+    },
+    "nine-mens-morris": {
+      "name": "Nege Manne Morris",
+      "desc": "Plaas, skuif en vlieg jou stukke om drie in 'n ry te maak en jou teenstander se stukke te verwyder; speel teen die rekenaar oor 10 vlakke."
+    },
+    "battleship": {
+      "name": "Seeslag",
+      "desc": "Vind en sink die rekenaar se vloot op 'n 10x10-rooster voordat hy joune sink; 10 vlakke terwyl die rekenaar slimmer aflei."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Kalbas Krap Vis Garnaal)",
+      "desc": "Tradisionele Viëtnamese dobbelspel: wed virtuele munte op die diere en skud drie dobbelstene; bereik die teikenmunte oor 10 vlakke (geen regte geld nie)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Wed op Speler, Bankier of Gelykop met kaarte wat volgens die standaardreëls uitgedeel word, met virtuele munte; bereik die teikenmunte oor 10 vlakke (geen regte geld nie)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Driekaartspel)",
+      "desc": "Vergelyk 3-kaarthande met die handelaar: drie van 'n soort, drie prentkaarte, dan 9 punte af tot 0; virtuele munte, 10 vlakke, geen regte geld nie."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Merk die geroepte getalle op jou 5x5-kaart en roep BINGO voor die rekenaarteenstanders; getalle word vinniger geroep oor 10 vlakke."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Vyf dobbelstene)",
+      "desc": "Rol vyf dobbelstene, hou die goeies en vul 13 puntblokkies; bereik die teikentelling oor 10 vlakke."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Pas kleur of waarde, agtjies verander die kleur; maak jou hand leeg voor 1 tot 3 rekenaarteenstanders oor 10 vlakke."
+    },
+    "car-race": {
+      "name": "Motorren-systap",
+      "desc": "Verander van baan om die motors voor jou te systap en ry die volle afstand; 10 vlakke met meer bane en vinniger verkeer."
+    },
+    "sky-jump": {
+      "name": "Lugsprong",
+      "desc": "Bons van platform na platform om so hoog as moontlik te klim sonder om te val; 10 vlakke met ylerige platforms, bewegende en breekbare ones."
+    },
+    "gold-miner": {
+      "name": "Goudgrawer",
+      "desc": "Laat sak die haak om goud en diamante in te trek, vermy swaar rotse, en bereik die teikengeld binne 60 sekondes; 10 vlakke."
+    },
+    "fruit-slice": {
+      "name": "Vrugte-sny",
+      "desc": "Swiep om die vrugte wat opvlieg te sny en systap die bomme; 10 vlakke met meer vrugte en meer bomme."
+    },
+    "basketball": {
+      "name": "Korfbal-skiet",
+      "desc": "Sleep en los om die bal binne 'n beperkte aantal skote in die ring te skiet; 10 vlakke, met 'n bewegende ring vanaf vlak 4."
+    },
+    "bubble-shooter": {
+      "name": "Borrelskieter",
+      "desc": "Skiet borrels om 3 of meer van dieselfde kleur te verbind en te laat bars, en maak hulle almal weg voordat hulle die onderkant bereik; 10 vlakke met meer kleure."
+    },
+    "dot-chase": {
+      "name": "Kolletjie-jaagtog",
+      "desc": "Eet elke kolletjie in die doolhof terwyl jy die spoke systap wat jou jaag; 10 vlakke met meer en slimmer spoke."
+    },
+    "kakuro": {
+      "name": "Kakuro (Kruissomme)",
+      "desc": "Vul die wit selle met syfers 1–9 sodat elke reeks optel tot sy leidraad sonder herhalings; 10 vlakke, roosters van 5x5 tot 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Vul die rooster sonder herhalings in rye of kolomme sodat elke kawel sy teiken met sy bewerking gee; 10 vlakke, roosters van 3x3 tot 6x6."
+    },
+    "word-guess": {
+      "name": "Woordraai (Wordle-styl)",
+      "desc": "Raai die geheime Engelse woord met groen, geel en grys wenke; 10 vlakke met woorde van 4–6 letters en minder pogings."
+    },
+    "hangman": {
+      "name": "Galgspel",
+      "desc": "Raai die Engelse woord een letter op 'n slag voordat jou verkeerde raaiskote opraak; 10 vlakke met langer woorde en minder verkeerde raaiskote."
+    },
+    "word-scramble": {
+      "name": "Woordskommel (Anagram)",
+      "desc": "Herrangskik deurmekaar letters tot 'n Engelse woord voordat die tyd om is; 10 vlakke, 5 woorde per vlak."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Pas stene aan enige punt van die ketting en maak jou hand leeg voor die rekenaar; 10 vlakke terwyl die rekenaar slimmer word."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Vermy harte en die Skoppensvrou in 'n kaartspel vir vier spelers; laer telling is beter; 10 vlakke teen slimmer rekenaarspelers."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuele skyfies)",
+      "desc": "Een-teen-een-poker teen die rekenaar met virtuele skyfies: pas, hou of verhoog, en wen wanneer die rekenaar se skyfies opraak; 10 vlakke, geen regte geld nie."
+    },
+    "n-back": {
+      "name": "N-Back-geheue",
+      "desc": "Kyk na die verligte blokkie en druk Pas wanneer dit dieselfde is as N stappe gelede; 10 vlakke met N tot 4."
+    },
+    "cookie-clicker": {
+      "name": "Koekie-klikker",
+      "desc": "Klik om koekies te bak, koop helpers wat outomaties bak en bereik die teiken binne 2 minute; 10 vlakke."
+    },
+    "tile-connect": {
+      "name": "Teël-verbinder (Onet-styl)",
+      "desc": "Verbind passende teëls met 'n pad van hoogstens twee draaie en maak die bord leeg voordat die tyd om is; 10 vlakke, groter borde."
+    },
+    "jigsaw": {
+      "name": "Prentlegkaart",
+      "desc": "Ruil die deurmekaar stukke om die prent weer op te bou; 10 vlakke van 3x3 tot 6x6 stukke."
+    },
+    "mini-golf": {
+      "name": "Mini-gholf",
+      "desc": "Trek terug en los om die bal binne die slaglimiet in die gat te slaan; 10 bane met mure en sand."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Rol die dobbelstene, jaag jou skyfies huis toe en haal hulle voor die rekenaar af, en slaan sy alleenstaande skyfies onderweg; 10 vlakke."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Dertien)",
+      "desc": "Die Viëtnamese afgooi-kaartspel vir vier: speel enkels, pare, rye en viertjies om eerste jou hand leeg te maak; 10 vlakke."
+    },
+    "tower-defense": {
+      "name": "Torinverdediging",
+      "desc": "Bou en gradeer torings langs die pad op om elke golf vyande te stuit; 10 vlakke op drie verskillende kaarte."
+    },
+    "color-by-number": {
+      "name": "Kleur volgens nommer",
+      "desc": "Verf elke blokkie met die kleur wat by sy nommer pas om die prent te onthul; 10 prente met elke keer meer kleure."
+    },
+    "yukon": {
+      "name": "Yukon-patience",
+      "desc": "Klondike sonder die stapel: skuif enige oop kaart met alles bo-op; 10 vlakke, minder kaarte oop soos jy vorder."
+    },
+    "chinese-checkers": {
+      "name": "Chinese dambord",
+      "desc": "Stervormige spring-en-tree-speletjie teen die rekenaar: skuif al 10 stukke eerste na die teenoorgestelde hoek; 10 vlakke."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Chinese poker)",
+      "desc": "Rangskik 13 kaarte in drie hande van 5, 5 en 3 kaarte en klop die rekenaar; 5 rondtes per vlak, 10 vlakke."
+    },
+    "phom": {
+      "name": "Phom (Viëtnamese rummy)",
+      "desc": "Tweespeler Viëtnamese rummy teen die rekenaar: trek of neem 'n weggooikaart, vorm melds en gaan uit; die laagste oorblywende punte wen; 10 vlakke."
+    },
+    "shogi": {
+      "name": "Shogi (Japannese skaak)",
+      "desc": "Speel shogi teen die rekenaar: sit gevange stukke neer, bevorder en skaakmat die koning; 10 vlakke met ontdoen."
+    },
+    "janggi": {
+      "name": "Janggi (Koreaanse skaak)",
+      "desc": "Speel Koreaanse skaak teen die rekenaar: paleisdiagonale, kanonspronge oor een stuk, drie-tree-olifante; 10 vlakke met ontdoen."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Flip links en regs om die bal lewendig te hou, tref die bumpers en bereik die teikentelling voordat jou 3 balle opraak; 10 vlakke."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Tweespeler-cribbage teen die rekenaar: crib, pegging tot 31, hande tel, wedloop tot 61 punte; 10 vlakke."
     }
   },
   "s": {

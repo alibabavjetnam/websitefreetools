@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Pilih warna kanggo ngisi kabeh area sing sampeyan kuwasani ing pojok kiwa ndhuwur; area kuwi bakal nelan kothak tetangga sing warnane padha. Gawe kabeh papan dadi siji warna ing wates jumlah langkah.",
     "lib.arcade.note.mastermind": "Komputer ndhelikake barisan warna. Pilih warna kanggo saben posisi, banjur pencet Tebak. Pasak ireng = warna bener ing panggonan bener; pasak putih = warna bener ing panggonan salah. Pecahna kodhe sadurunge tebakan entek.",
     "lib.arcade.note.hanoi": "Pindhahna kabeh cakram menyang tiang pungkasan. Pindhahna mung cakram paling ndhuwur saka tiang saben wektu, lan aja nate nyelehake cakram gedhe ing ndhuwur sing cilik. Klik tiang asal, banjur tiang tujuan.",
-    "lib.arcade.note.pipes": "Klik ubin kanggo muter pipa 90°. Sambungna kabeh pipa dadi siji jaringan tanpa ujung sing mbukak (ujung mbukak katon abang)."
+    "lib.arcade.note.pipes": "Klik ubin kanggo muter pipa 90°. Sambungna kabeh pipa dadi siji jaringan tanpa ujung sing mbukak (ujung mbukak katon abang).",
+    "lib.arcade.pongScore": "Kowé {a} – {b} Komputer (sing luwih dhisik ing {t})",
+    "lib.arcade.kills": "Wis dirusak: {n}/{t}",
+    "lib.arcade.rocksLeft": "Isih {n} watu",
+    "lib.arcade.timeLeft": "Isih {n} s",
+    "lib.arcade.stepsN": "Langkah: {n}",
+    "lib.arcade.crossed": "Mulih: {n}/{t}",
+    "lib.arcade.pipes": "Pipa kalewati: {n}/{t}",
+    "lib.arcade.distance": "Jarak: {n}/{t} m",
+    "lib.arcade.speedN": "Kacepetan: {n}",
+    "lib.arcade.note.whack-a-mole": "Tikus tanah metu saka bolongan — klik utawa ketok tikus kanggo ngantemi. Antemana tikus sing cukup sadurunge wektu entek. Wiwit level 4 ana bom: yen kena, skormu dikurangi.",
+    "lib.arcade.hole": "Bolongan",
+    "lib.arcade.hitsN": "Kena: {n}/{t}",
+    "lib.arcade.note.simon": "Game muter urutan warna lan swara — baleni kanthi urutan sing padha. Saben babak nambah siji langkah. Elinga dawa sing dibutuhake kanggo ngrampungake level. Wiwit level 7 ana 6 pad.",
+    "lib.arcade.seqN": "Urutan: {n}/{t}",
+    "lib.arcade.watch": "Delengen…",
+    "lib.arcade.yourTurnShort": "Giliranmu",
+    "lib.arcade.note.aim-trainer": "Target metu acak lan cepet ilang — tekakna sak akeh-akehé. Dadi saya cilik lan saya cepet. Tekak target sing cukup sadurunge luput luwih saka 5 kali kanggo ngrampungake level.",
+    "lib.arcade.missN": "Luput: {n}/{t}",
+    "lib.arcade.answer": "Wangsulan",
+    "lib.arcade.note.quick-math": "Ngitung ing batin sacepet-cepeté: ketik wangsulan banjur pencet Enter. Saben pitakon ana watesan wektu; wangsulan salah utawa telat bakal ngurangi nyawa (kowé duwé 3). Wangsulana bener pitakon sing cukup kanggo ngrampungake level.",
+    "lib.arcade.correctN": "Bener: {n}/{t}",
+    "lib.arcade.note.reaction": "Entenana layar dadi ijo, banjur klik sacepet-cepeté. Klik kawigaten durung wektuné iku pelanggaran (3 pelanggaran kowé kalah). Rata-ratamu ing 5 babak kudu ngalahaké watesan level.",
+    "lib.arcade.roundN": "Tembung {n}/{t}",
+    "lib.arcade.limitMs": "Watesan: {n} ms",
+    "lib.arcade.rxWait": "Enteni nganti ijo…",
+    "lib.arcade.rxGo": "KLIK!",
+    "lib.arcade.rxEarly": "Kecepeten!",
+    "lib.arcade.gameArea": "Area dolanan",
+    "lib.arcade.note.pong": "Obahna mouse, seret drijimu utawa nganggo tombol ← → kanggo ngontrol paddle ing ngisor. Pukul bal ngliwati komputer; sing luwih dhisik entuk 5 poin menang. Bal saya cepet saben kena.",
+    "lib.arcade.note.space-shooter": "Obahna mouse, seret drijimu utawa nganggo tombol ← → kanggo nyetir; kapalmu nembak dhewe. Rusaken kapal mungsuh sing cukup kanggo ngrampungake level, lan nyingkiri tabrakan lan tembakan mungsuh. Kowé duwé 3 nyawa.",
+    "lib.arcade.note.asteroids": "← → muter kapal, ↑ ndorong, Spasi nembak. Rusaken kabeh watu kanggo ngrampungake level; watu gedhé pecah dadi cilik. Kapal muncul maneh saka sisih liyané layar. Kowé duwé 3 nyawa.",
+    "lib.arcade.note.maze": "Gunakna tombol panah (utawa usap, utawa tombol) kanggo saka titik ijo menyang gendéra abang sadurunge wektu entek. Wiwit level 5 labirin ana pedhut: kowé mung weruh sakiwa-tengené, panggonan sing wis dilewati dieling-eling.",
+    "lib.arcade.note.road-cross": "Gunakna tombol panah, usap utawa tombol kanggo mlumpat kodhok saka ngisor menyang ndhuwur. Singkirana lalu lintas; wiwit level 5 bagian ndhuwur kali, dadi mlumpata menyang gelondhong sing ngambang. Tekan omah 3 kali kanggo ngrampungake level. Kowé duwé 3 nyawa.",
+    "lib.arcade.note.flappy": "Ketok area dolanan, pencet Spasi utawa ↑ kanggo kepak. Mabur ngliwati celah antarane pipa tanpa nyenggol pipa, lemah utawa langit-langit. Level luwih dhuwur celahé luwih sempit lan mabur luwih cepet.",
+    "lib.arcade.note.runner": "Ketok area dolanan, pencet Spasi utawa ↑ kanggo mlumpati kaktus; tahan ↓ kanggo nunduk ing ngisor manuk dhuwur (utawa mlumpati sing endhek). Mlayua cukup adoh kanggo ngrampungake level. Kacepetan terus mundhak.",
+    "lib.arcade.fire": "Tembak",
+    "lib.arcade.jump": "Mlumpat",
+    "lib.arcade.aimTarget": "Target",
+    "lib.game.soundOn": "Murupké swara",
+    "lib.game.soundOff": "Pateni swara",
+    "lib.arcade.note.kalah": "Kowé main baris ngisor, komputer ing ndhuwur; bolongan gedhé ing tengen iku gudhangmu. Klik bolongan kanggo njupuk kabeh wiji lan nyebar kontra jarum jam, siji saben bolongan (ngliwati gudhang mungsuh). Yen wiji pungkasan tiba ing gudhangmu, kowé giliran maneh; yen tiba ing bolongan kosong ing sisihmu ngadhep bolongan sing ana wijiné, kowé njupuk wiji kuwi. Yen siji sisih entek, wiji ing sisih liyané lunga menyang gudhang sing duwé; gudhang sing luwih gedhé menang.",
+    "lib.arcade.note.snakes": "Uncalen dadu lan mlaku sakpira kothak, saka 1 nganti 100. Yen mandhap ing ngisor andha, kowé munggah; yen ing sirah ula, kowé merosot mudhun. Wiwit level 4 kowé kudu oleh angka pas kanggo mandhap ing 100. Level luwih dhuwur ulané luwih akeh, andhané luwih sithik lan mungsuhé luwih akeh. Sing luwih dhisik tekan 100 menang.",
+    "lib.arcade.square": "Kothak {n}",
+    "lib.arcade.ladderUp": "Munggah andha!",
+    "lib.arcade.snakeDown": "Dicaplok ula!",
+    "lib.arcade.needExact": "Kowé butuh angka pas kanggo mandhap ing 100.",
+    "lib.arcade.note.nmm": "Saben sisih duwé 9 bidhak. Fase 1: gentenan nemokaké bidhak ing titik kosong. Fase 2: gesersa bidhak menyang titik kosong sing jejer. Yen mung isih 3 bidhak, kowé bisa “mabur” menyang titik kosong endi wae. Gawé telu sebaris (“mill”) kanggo mbuwang bidhak mungsuh (bidhak sing ora ana ing mill dhisik). Kowé kalah yen kari 2 bidhak utawa ora bisa mlaku. Kowé main putih lan mlaku dhisik.",
+    "lib.arcade.inHand": "Kanggo dipasang: {a} · {b}",
+    "lib.arcade.removePiece": "Pilih bidhak mungsuh kanggo dibuwang.",
+    "lib.arcade.enemyWaters": "Banyu mungsuh (klik kanggo nembak)",
+    "lib.arcade.yourFleet": "Armadamu",
+    "lib.arcade.note.battleship": "Saben sisih duwé 5 kapal (dawa 5, 4, 3, 3, 2) sing dipasang acak ing kothak 10x10. Gentenan nembak siji kothak: kena dadi abang, luput dadi biru enom, lan kena kabeh kothak kapal ngelemake kapal kuwi. Lelepna kabeh armada mungsuh dhisik kanggo menang. Ing level luwih dhuwur komputer nebak panggonan kapalmu kanthi luwih pinter.",
+    "lib.arcade.shipsLeft": "Kapal kari: kowé {a} · mungsuh {b}",
+    "lib.arcade.theySunk": "Mungsuh ngelemake salah siji kapalmu!",
+    "lib.arcade.theyHit": "Mungsuh kena salah siji kapalmu.",
+    "lib.arcade.theyMiss": "Mungsuh luput.",
+    "lib.arcade.youSunk": "Kowé ngelemake kapal mungsuh!",
+    "lib.arcade.youHit": "Kena!",
+    "lib.arcade.youMiss": "Luput.",
+    "lib.arcade.shake": "Kocok",
+    "lib.arcade.clearBets": "Busak taruhan",
+    "lib.arcade.note.bau-cua": "Mung koin virtual — dudu dhuwit nyata. Pilih nilai koin, klik kewan kanggo masang taruhan, banjur pencet Kocok. Kanggo saben dadu sing cocog karo kewan sing ditaruhi, kowé nampa taruhanmu bali plus jumlah sing padha kanggo saben cocog. Tekan target koin ing babak sing diidini kanggo ngrampungake level.",
+    "lib.arcade.note.baccarat": "Mung koin virtual — dudu dhuwit nyata. Taruhan ing Player, Banker utawa Tie, banjur pencet Bagi. Nilai tangan iku angka pungkasan saka jumlahé (A = 1, 2–9 nilai kertu, 10/J/Q/K = 0); tangan sing luwih cedhak 9 menang, lan kertu katelu ditarik miturut aturan standar. Player mbayar 1:1, Banker 0.95:1, Tie 8:1 (taruhan Player/Banker dibalèkaké yen seri). Tekan target koin ing babak sing diidini kanggo ngrampungake level.",
+    "lib.arcade.banker": "Banker",
+    "lib.arcade.player": "Player",
+    "lib.arcade.tie": "Tie",
+    "lib.arcade.openCards": "Bukak",
+    "lib.arcade.note.bai-cao": "Mung koin virtual — dudu dhuwit nyata. Saben sisih entuk 3 kertu. Tangan nduweni skor angka pungkasan saka jumlahé (A = 1, 2–9 nilai kertu, 10/J/Q/K = 10, tegesé 0 poin). Urutan: Telu padha (“Sáp”) paling dhuwur, banjur telu kertu gambar (“Ba tiên”), banjur 9 poin mudhun nganti 0. Pasang taruhan, pencet Bagi lan banjur Bukak kanggo mbandhingake karo bandar. Wiwit level 6 bandar menang yen seri. Tekan target koin ing babak sing diidini kanggo ngrampungake level.",
+    "lib.arcade.caoSap": "Telu padha",
+    "lib.arcade.caoBaTien": "Telu kertu gambar",
+    "lib.arcade.caoPts": "{n} poin",
+    "lib.arcade.note.bingo": "Komputer nyebut angka saka 1 nganti 75. Yen angka sing disebut ana ing kertumu, klik kanggo menehi tandha (tengah gratis). Rampungna baris, kolom utawa diagonal banjur pencet BINGO! — kowé kudu ngalahaké mungsuh komputer. BINGO! sing salah ngunci tombol sawetara detik. Level luwih dhuwur nyebut luwih cepet lan mungsuhé luwih akeh.",
+    "lib.arcade.opponentsN": "Mungsuh: {n}",
+    "lib.arcade.falseBingo": "Durung siji baris kebak! Tombol dikunci 3 detik.",
+    "lib.arcade.bingoGo": "Nyebut angka!",
+    "lib.arcade.note.yahtzee": "Saben giliran kowé uncalan 5 dadu nganti 3 kali: klik dadu kanggo nyimpen, banjur pencet Uncalan kanggo ngucalaké maneh liyané. Banjur pilih kothak ing tabel kanggo skor (saben kothak dipakai sepisan; kothak sing ora cocog skor 0). 13 giliran. Kothak Ones–Sixes nambah bonus 35 yen jumlahé 63 utawa luwih. Tekan skor target level kanggo menang.",
+    "lib.arcade.turnN": "Giliran {n}/13",
+    "lib.arcade.pickCat": "Pilih kothak kanggo skor",
+    "lib.arcade.rollsLeft": "Uncalan (isih {n})",
+    "lib.arcade.upperBonus": "Bonus Ones–Sixes",
+    "lib.arcade.scored": "Skor {n}",
+    "lib.arcade.note.crazy-eights": "Mainna kertu sing cocog karo kertu ndhuwur tumpukan buangan miturut jinis utawa angka. Kertu wolu iku joker: mainna kapan wae lan pilih jinis anyar. Yen ora duwé kertu sing bisa dimainké, tarik saka tumpukan (nganti 3 kertu); yen isih ora bisa main, kowé ngliwati. Sing pisanan entek kertu menang. Level luwih dhuwur mungsuhé luwih akeh lan komputer main luwih pinter.",
+    "lib.arcade.opponent": "Mungsuh",
+    "lib.arcade.pileLeft": "Tumpukan tarik: {n}",
+    "lib.arcade.pickSuit": "Pilih jinis anyar",
+    "lib.arcade.aiSuit": "Komputer milih {s}",
+    "lib.arcade.aiPass": "Komputer ngliwati.",
+    "lib.arcade.mustPlay": "Kowé duwé kertu sing bisa dimainké — mainna.",
+    "lib.arcade.youPass": "Kowé narik 3 kertu lan ngliwati.",
+    "lib.arcade.bcGourd": "Labu",
+    "lib.arcade.bcCrab": "Kepiting",
+    "lib.arcade.bcShrimp": "Udang",
+    "lib.arcade.bcFish": "Iwak",
+    "lib.arcade.bcRooster": "Pitik",
+    "lib.arcade.bcDeer": "Kidang",
+    "lib.arcade.yOnes": "Siji",
+    "lib.arcade.yTwos": "Loro",
+    "lib.arcade.yThrees": "Telu",
+    "lib.arcade.yFours": "Papat",
+    "lib.arcade.yFives": "Lima",
+    "lib.arcade.ySixes": "Enem",
+    "lib.arcade.yThree": "Telu padha",
+    "lib.arcade.yFour": "Papat padha",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Urutan cilik (30)",
+    "lib.arcade.yLarge": "Urutan gedhé (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Kesempatan",
+    "lib.arcade.note.race": "Pencet ← → (utawa ketok jalur sing dikarepaké) kanggo ganti jalur lan nyingkiri mobil ing ngarep. Kowé duwé 3 nyawa; nyetira nganti tekan jarak kebak kanggo ngrampungake level. Level luwih dhuwur jalure luwih akeh lan lalu lintas luwih cepet.",
+    "lib.arcade.note.jump": "Karakter mumbul dhewe. Pencet ← → utawa seret drijimu kanggo mandhap ing platform sabanjuré. Platform biru obah, sing coklat pecah yen diinjak. Tiba metu layar kalah; menekna cukup dhuwur kanggo ngrampungake level.",
+    "lib.arcade.note.miner": "Pancing ayun bolak-balik; pencet Spasi, ↓ utawa ketok lapangan kanggo ngeculaké. Emas gedhé lan watu abot lan ditarik alon; berlian regane akeh. Tekan dhuwit target sadurunge 60 detik entek.",
+    "lib.arcade.note.slicer": "Usap nganggo drijimu utawa mouse ngliwati woh-wohan kanggo ngiris. Singkirana bom ireng. Ora kena woh utawa ngiris bom ngurangi nyawa (kowé duwé 3). Iris woh-wohan sing cukup kanggo ngrampungake level.",
+    "lib.arcade.note.hoops": "Pencet ing lapangan, seret mudhun (kaya ketapel) banjur culna kanggo nembak bal menyang ring. Saya adoh nyeret, saya kuwat uncalané. Cetak keranjang sing cukup ing tembakan sing kowé duwé; wiwit level 4 ring obah.",
+    "lib.arcade.note.bubbles": "Obahna mouse utawa drijimu kanggo ngarahké, banjur klik/ketok utawa pencet Spasi/Tembak kanggo nembak. Sambungna 3 utawa luwih gelembung warna sing padha kanggo ngethok; gelembung sing ilang panyanggané tiba. Baris alon-alon mudhun, dadi jauhna saka garis ngisor. Resikana kabeh gelembung kanggo menang.",
+    "lib.arcade.note.chase": "Gunakna tombol panah (utawa usap / tombol) kanggo mbelok lan mangan kabeh titik ing labirin nalika nyingkiri hantu sing ngoyak kowé. Kowé duwé 3 nyawa; level luwih dhuwur nambah hantu sing luwih cepet lan luwih pinter ngoyak.",
+    "lib.arcade.height": "Dhuwur: {n}/{t} m",
+    "lib.arcade.money": "Dhuwit: {n}/{t}",
+    "lib.arcade.sliced": "Kairis: {n}/{t}",
+    "lib.arcade.hoopScore": "Kecetak: {n}/{t}",
+    "lib.arcade.shotsLeft": "Isih {n} tembakan",
+    "lib.arcade.bubbleLeft": "Isih {n} gelembung",
+    "lib.arcade.shotsN": "Tembakan: {n}",
+    "lib.arcade.dotsLeft": "Isih {n} titik",
+    "lib.arcade.note.kakuro": "Isènana kothak putih nganggo angka 1–9 supaya saben deret jumlahé padha karo petunjuk ing kothak ireng (angka ing pojok tengen ndhuwur kanggo deret ing tengen, sing ing pojok kiwa ngisor kanggo deret ing ngisor), tanpa angka bola-bali ing sak deret. Gunakna tombol panah kanggo obah.",
+    "lib.arcade.note.kenken": "Isènana kothak nganggo angka 1 nganti N supaya ora ana angka bola-bali ing baris utawa kolom. Saben kandhang kanthi garis tebal nuduhaké target lan operasi (+, −, ×, ÷): angka ing kandhang kudu ngasilaké asil kuwi. Gunakna tombol panah kanggo obah.",
+    "lib.arcade.note.wordGuess": "Tebaken tembung Inggris rahasia. Sawisé saben nyoba, ijo tegesé aksara bener ing panggonan bener, kuning tegesé aksara ana ing tembung nanging ing panggonan liya, lan abu-abu tegesé ora ana ing tembung. Ketik nganggo keyboard utawa tombol ing layar, banjur pencet Enter kanggo ngirim. Level luwih dhuwur tembungé luwih dawa lan nyobané luwih sithik.",
+    "lib.arcade.note.hangman": "Tebaken tembung Inggris rahasia kanthi milih aksara siji-siji. Saben aksara salah nambah bagéan ing gambar gantung; yen kesalahan entek kowé kalah. Level luwih dhuwur tembungé luwih dawa lan kesalahan sing diidini luwih sithik.",
+    "lib.arcade.note.scramble": "Susunen maneh aksara sing diacak dadi tembung Inggris nyata lan ketik ing kothak wangsulan. Saben level ana 5 tembung; rampungna paling ora 4 sadurunge wektu saben tembung entek kanggo ngrampungake level. Pitunjuk nuduhaké aksara pisanan.",
+    "lib.arcade.cellsLeft": "Isih {n} kothak kosong",
+    "lib.arcade.wrongN": "{n} kothak ora bener.",
+    "lib.arcade.noError": "Durung ana kesalahan sing ditemokaké.",
+    "lib.arcade.tooShort": "Aksarané durung cukup",
+    "lib.arcade.answerIs": "Wangsulan: {w}",
+    "lib.arcade.livesLeft": "Isih {n} tebakan salah",
+    "lib.arcade.yourAnswer": "Wangsulanmu",
+    "lib.arcade.skip": "Liwati",
+    "lib.arcade.notThis": "Ora bener, cobanen maneh.",
+    "lib.arcade.startsWith": "Aksara pisanan: {c}",
+    "lib.arcade.note.domino": "Saben pemain nampa 7 kartu domino; sing nyekel dobel paling dhuwur miwiti. Mainna domino sing angkané cocog karo salah siji ujung rangkaian. Yen ora bisa main, tarik saka tumpukan nganti bisa; yen kosong, liwati. Sing pisanan entek kartu menang; yen loro-lorone macet, jumlah titik sing luwih cilik menang.",
+    "lib.arcade.note.hearts": "Papat pemain, 13 kertu saben wong. 2 keriting miwiti. Kowé kudu ngetutaké jinis sing dimulai yen bisa. Saben hati 1 poin lan Ratu Sekop 13; sing menang trik njupuk poiné. Luwih cilik luwih apik, lan njupuk kabeh 26 poin menehi 26 marang kabeh liyané. Kowé ora bisa miwiti nganggo hati nganti ana sing wis dimainké. Sawisé tangan pungkasan, kowé menang yen skormu paling cilik (utawa padha paling cilik).",
+    "lib.arcade.note.holdem": "Heads-up nglawan komputer nganggo cip virtual wae. Saben pemain nampa 2 kertu pribadi lan 5 kertu komunitas dibukak (flop, turn, river); gawé tangan 5 kertu sing paling apik. Saben babak kowé bisa fold, call (utawa check) utawa raise. Blind munggah saben 4 tangan. Kowé menang yen komputer entek cip, utawa nduweni luwih akeh cip sawisé watesan tangan. Ora ana dhuwit nyata.",
+    "lib.arcade.dmDraw": "Tarik domino",
+    "lib.arcade.dmPass": "Liwati",
+    "lib.arcade.dmEmpty": "Durung ana domino sing dimainké",
+    "lib.arcade.dmYard": "Tumpukan: {n} domino",
+    "lib.arcade.dmLeft": "Ujung kiwa",
+    "lib.arcade.dmRight": "Ujung tengen",
+    "lib.arcade.dmTie": "Seri! Loro-lorone padha.",
+    "lib.arcade.hrHand": "Tangan {n}/{t}",
+    "lib.arcade.hrTook": "{p} menang trik ({n} poin).",
+    "lib.arcade.hrIllegal": "Kowé ora bisa main kertu iki (tutugna jinis, utawa durung ana hati sing dimainké).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise dadi",
+    "lib.arcade.raiseN": "Raise dadi {n}",
+    "lib.arcade.thOppFold": "Komputer fold; kowé menang tangan iki.",
+    "lib.arcade.thYouFold": "Kowé fold.",
+    "lib.arcade.thOppWin": "Komputer menang tangan iki",
+    "lib.arcade.thYouWin": "Kowé menang tangan iki",
+    "lib.arcade.thSplit": "Pot dibagi",
+    "lib.arcade.thAiFold": "Komputer fold.",
+    "lib.arcade.thAiRaise": "Komputer raise dadi {n}.",
+    "lib.arcade.thAiCall": "Komputer call / check.",
+    "lib.arcade.hand.high": "Kertu dhuwur",
+    "lib.arcade.hand.pair": "Pasangan",
+    "lib.arcade.hand.twoPair": "Rong pasangan",
+    "lib.arcade.hand.trips": "Telu padha",
+    "lib.arcade.hand.straight": "Urutan",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Papat padha",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Siji kothak murub gentenan ing kothak 3x3. Pencet “Match!” (utawa Spasi) yen posisi sing murub padha karo sing N langkah kepungkur (N ditampilaké ing ndhuwur). Kowé butuh paling ora 80% keputusan bener kanggo ngrampungake level. Level luwih dhuwur nganggo N luwih gedhé.",
+    "lib.arcade.nbMatch": "Match!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Bener: {a} · Salah: {b}",
+    "lib.arcade.nbAcc": "Akurasi: {n}%",
+    "lib.arcade.note.clicker": "Klik kuki kanggo manggang kuki, banjur gunakna kanggo tuku pembantu sing manggang otomatis (rega munggah saben tuku). Panggangen kuki sajumlah target ing 2 menit kanggo ngrampungake level.",
+    "lib.arcade.ckCursor": "Kursor",
+    "lib.arcade.ckGrandma": "Mbah panggang",
+    "lib.arcade.ckFarm": "Kebon",
+    "lib.arcade.ckMine": "Tambang gula",
+    "lib.arcade.ckFactory": "Pabrik",
+    "lib.arcade.ckCookie": "Kuki",
+    "lib.arcade.ckEarned": "Kepanggang: {n}/{t}",
+    "lib.arcade.chips2": "Kuki: {n}",
+    "lib.arcade.ckCps": "{n} kuki/detik",
+    "lib.arcade.note.onet": "Pilih rong ubin padha sing bisa disambung nganggo dalan paling akeh 2 belokan tanpa nyabrang ubin liyané kanggo mbusak. Resikana kabeh ubin sadurunge wektu entek kanggo menang. Yen ora ana gerakan maneh, kowé bisa ngacak (diwatesi).",
+    "lib.arcade.shuffle": "Kocok",
+    "lib.arcade.tilesLeft": "Isih {n} ubin",
+    "lib.arcade.autoShuffle": "Ora ana gerakan maneh — diacak otomatis.",
+    "lib.arcade.note.jigsaw": "Gambar dipotong dadi potongan lan diacak. Ketok siji potongan, banjur liyané, kanggo nuker, lan susunen maneh gambar sing ditampilaké minangka referensi. Potongan ing panggonan sing bener entuk pinggir ijo. Level luwih dhuwur potongané luwih akeh.",
+    "lib.arcade.jgRef": "Gambar referensi",
+    "lib.arcade.jgPlaced": "Wis pas: {a}/{b}",
+    "lib.arcade.golfStrokes": "Pukulan: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Kowé main dam putih, obah saka tengen ndhuwur ngubengi menyang tengen ngisor (omahmu). Uncalen dadu, klik dam sing arep dipindhah, banjur klik tujuan sing disorot. Mandhap ing titik sing mung ana siji dam mungsuh bakal ngantemi dam kuwi menyang bar tengah, lan pemain kuwi kudu mbalèkaké dhisik. Kowé ora bisa mandhap ing titik sing ana rong dam mungsuh utawa luwih. Yen kabeh 15 damé ana ing papan omahmu (6 titik pungkasan) kowé bisa nyopot. Sing pisanan nyopot kabeh 15 menang.",
+    "lib.arcade.bgRoll": "Uncalen dadu",
+    "lib.arcade.bgOff": "Copot",
+    "lib.arcade.bgRollFirst": "Uncalen dadu",
+    "lib.arcade.bgInfo": "Kecopot: kowé {a} · komputer {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Kowé ora duwé gerakan sah maneh.",
+    "lib.arcade.note.tienlen": "Papat pemain, 13 kertu saben wong. Urutan kertu saka endhek nganti dhuwur: 3, 4, … K, A, 2; jinis saka endhek nganti dhuwur: sekop, keriting, wajik, hati. Sing nyekel 3 sekop mlaku dhisik. Mainna siji kertu, pasangan, telu padha, papat padha, utawa urutan 3 kertu utawa luwih sing berturut-turut (ora ana 2). Pemain sabanjuré kudu main jinis sing padha lan luwih dhuwur, utawa liwati; papat padha bisa ngalahaké siji 2 utawa pasangan 2. Yen kabeh liyané liwati, pemain pungkasan sing main bisa miwiti apa wae. Sing pisanan entek kertu menang. Pilih kertu, banjur pencet Main.",
+    "lib.arcade.tlPlay": "Main",
+    "lib.arcade.tlPass": "Liwati",
+    "lib.arcade.tlClear": "Busak pilihan",
+    "lib.arcade.tlPassed": "liwat",
+    "lib.arcade.tlFree": "Meja kosong — kowé bisa miwiti apa wae",
+    "lib.arcade.tlLeft": "Kertu kari: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} liwat.",
+    "lib.arcade.tlBad": "Kertu sing dipilih ora mbentuk set sing sah.",
+    "lib.arcade.tlLow": "Set iki durung cukup dhuwur kanggo ngalahaké meja.",
+    "lib.arcade.note.td": "Ketok kothak kosong (dudu dalan) kanggo mbangun menara tembak, sing butuh emas; ketok menara maneh kanggo nambah level (nganti level 5). Menara nembak otomatis mungsuh sing wis paling adoh ing jangkauan. Ngalahna mungsuh kanggo entuk emas luwih akeh; yen 15 mungsuh tekan pungkasan kowé kalah. Slamet ing kabeh gelombang kanggo ngrampungake level.",
+    "lib.arcade.tdInfo": "Emas: {g} · Gelombang {w}/{t}",
+    "lib.arcade.tdCost": "Menara: {n}",
+    "lib.arcade.note.colorNum": "Saben kothak duwé angka sing cocog karo warna ing palet. Pilih warna, banjur ketok kothak karo angka kuwi kanggo ngwarnani; ngetok nganggo warna salah ora ngwarnani apa-apa. Warnanana kabeh kothak kanthi bener kanggo ngrampungake gambar. Level luwih dhuwur warnané luwih akeh.",
+    "lib.arcade.cnWrong": "Warna salah — priksa angka ing kothak.",
+    "lib.arcade.note.yukon": "Kaya Klondike nanging tanpa tumpukan: kertu madhep ndhuwur apa wae bisa dipindhah bareng karo kabeh kertu ing ndhuwuré, senajan ora urut; mung kertu pisanan sing kudu cocog karo kolom tujuan (mudhun, selang-seling abang lan ireng; Raja menyang kolom kosong). Susunen kabeh 52 kertu ing patang pondasi saka As nganti Raja. Level endhek diwiwiti karo luwih akeh kertu sing wis madhep ndhuwur.",
+    "lib.arcade.yukonFree": "Kertu madhep ngisor: {n}",
+    "lib.arcade.note.chinesechk": "Kowé main bidhak biru ing pojok tengen; pindhahna kabeh 10 menyang pojok kiwa ngelawan sadurunge komputer. Saben giliran kowé mindhah siji bidhak: mlaku menyang bolongan kosong jejer, utawa mlumpat ngliwati bidhak apa wae menyang bolongan kosong ing mburiné, lan terusna mlumpat sakpira-pira. Ketok salah siji bidhakmu, banjur ketok bolongan ijo kanggo mindhah.",
+    "lib.arcade.ccTurn": "Giliranmu · Giliran {n}",
+    "lib.arcade.ccDraw": "Giliran entek — seri.",
+    "lib.arcade.note.maubinh": "Kowé lan komputer saben-saben nampa 13 kertu lan nyusun dadi 3 tangan: tangan mburi 5 kertu, tangan tengah 5 kertu lan tangan ngarep 3 kertu. Tangan mburi kudu paling ora padha kuwat karo tengah, lan tengah padha kuwat karo ngarep; yen ora, susunanmu lungse lan kowé kalah sak babak. Ketok kertu, banjur ketok baris panggonané (ketok kertu sing wis dipasang kanggo njupuk maneh). Saben tangan sing menang entuk 1 poin; menang kabeh 3 entuk 6. Main 5 babak — total positif ngrampungake level. Tangan ngarep mung bisa dadi kertu dhuwur, pasangan utawa telu padha.",
+    "lib.arcade.mbHigh": "Kertu dhuwur",
+    "lib.arcade.mbPair": "Pasangan",
+    "lib.arcade.mbTwoPair": "Rong pasangan",
+    "lib.arcade.mbTrips": "Telu padha",
+    "lib.arcade.mbStraight": "Urutan",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Papat padha",
+    "lib.arcade.mbSflush": "Straight flush",
+    "lib.arcade.mbBack": "Tangan mburi",
+    "lib.arcade.mbMid": "Tangan tengah",
+    "lib.arcade.mbFront": "Tangan ngarep",
+    "lib.arcade.mbFoe": "Komputer",
+    "lib.arcade.mbYou": "Kowé",
+    "lib.arcade.mbFoul": "Lungse!",
+    "lib.arcade.mbFoeFoul": "Komputer lungse!",
+    "lib.arcade.mbConfirm": "Tuduhna kertu",
+    "lib.arcade.mbReset": "Busak",
+    "lib.arcade.mbHand": "Tanganmu",
+    "lib.arcade.mbRound": "Babak {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Rampung",
+    "lib.arcade.mbNext": "Babak sabanjuré",
+    "lib.arcade.mbDraw": "Poin seri — main maneh.",
+    "lib.arcade.mbAutoMsg": "Iki susunan sing disaranaké. Kowé bisa ngowahi sadurunge nuduhaké kertu.",
+    "lib.arcade.note.phom": "Rong pemain; saben wong nampa 9 kertu (sing mlaku dhisik nampa 10). Meld iku 3 kertu utawa luwih kanthi angka padha, utawa 3 kertu utawa luwih berturut-turut saka jinis padha (As mung endhek). Ing giliranmu tarik kertu saka tumpukan, utawa jupuk kertu sing lagi dibuwang mungsuh yen mbentuk meld karo tanganmu (kertu sing dijupuk kudu disimpen), banjur buwang siji kertu. Yen saben pemain wis mbuwang 4 kertu, babak rampung lan sing total kertu sing ora ana ing meld luwih cilik (As = 1 … Raja = 13) menang. Yen kabeh kertumu ana ing meld sawisé mbuwang kowé metu (“U”) lan menang langsung. Kertu kanthi garis ijo ana ing set meld paling apikmu.",
+    "lib.arcade.pmDraw": "Tarik",
+    "lib.arcade.pmEat": "Jupuk buangan",
+    "lib.arcade.pmThrow": "Buwang",
+    "lib.arcade.pmFoeAte": "Komputer njupuk kertumu.",
+    "lib.arcade.pmFoeU": "Komputer metu!",
+    "lib.arcade.pmTurn": "Giliran {a}/{b}",
+    "lib.arcade.pmLeft": "Ora ana ing meld: {n}",
+    "lib.arcade.pmDeck": "Tumpukan: {n}",
+    "lib.arcade.pmFoeHand": "Tangan komputer",
+    "lib.arcade.pmFoeDisc": "Buangan komputer",
+    "lib.arcade.pmFoeEaten": "Komputer njupuk",
+    "lib.arcade.pmMyDisc": "Buanganmu",
+    "lib.arcade.pmAte": "Kowé njupuk kertu iki — simpen ing meld.",
+    "lib.arcade.pmKeep": "Kertu sing dijupuk kudu disimpen — buwang liyané.",
+    "lib.arcade.pmU": "Metu! Kowé menang langsung.",
+    "lib.arcade.pmYou": "Kowé",
+    "lib.arcade.pmFoe": "Komputer",
+    "lib.arcade.pmDraw2": "Poin seri.",
+    "lib.arcade.note.shogi": "Shogi iku catur Jepang. Kowé main sisih ngisor lan mlaku dhisik; bidhak komputer madhep arah liya. Bidhak sing dijupuk mlebu tanganmu lan bisa dipasang ing kothak kosong apa wae minangka ganti mlaku (ora oleh pion ing kolom sing wis ana pion sing durung promosi, lan ora oleh bidhak ing baris sing ora bisa obah maneh). Bidhak sing mlebu, metu, utawa obah ing telung baris pungkasan mungsuh bisa promosi (kejaba Raja lan Emas); promosi wajib yen bidhak ora bakal duwé gerakan maneh. Skak mat Raja mungsuh kanggo menang. Kanji: 歩 pion, 香 lance, 桂 kuda, 銀 perak, 金 emas, 角 gajah, 飛 benteng, 玉 raja; と, 馬, 竜 lan bidhak abang liyané wis promosi.",
+    "lib.arcade.sgPromote": "Promosi",
+    "lib.arcade.sgKeep": "Aja promosi",
+    "lib.arcade.sgCheck": "Kowé lagi skak!",
+    "lib.arcade.sgWin": "Skak mat — kowé menang.",
+    "lib.arcade.sgLose": "Kowé kena skak mat.",
+    "lib.arcade.sgAskPromote": "Promosi bidhak iki?",
+    "lib.arcade.note.janggi": "Janggi iku catur Korea. Kowé main bidhak biru ing ngisor lan mlaku dhisik. Beda karo xiangqi ora ana kali, lan loro-lorone kaputren duwé garis diagonal. Jenderal lan Pengawal obah siji langkah ing garis kaputren (kalebu diagonal); Kereta uga ngglundung lan njupuk ing diagonal kaputren; Meriam kudu mlumpat ngliwati persis siji bidhak (dudu Meriam liyané) kanggo obah utawa njupuk, lan ora bisa njupuk Meriam; Jaran maju siji lurus banjur siji diagonal, lan Gajah siji lurus banjur loro diagonal, loro-lorone kahalang yen ana bidhak ing dalan; Prajurit obah maju utawa mlaku ngiwa-nengen, lan diagonal maju ing njero kaputren mungsuh. Loro Jenderal ora oleh padha adhep-adhepan. Skak mat Jenderal mungsuh kanggo menang. Komputer ora tau liwat.",
+    "lib.arcade.jgCheck": "Kowé lagi skak!",
+    "lib.arcade.jgWin": "Skak mat — kowé menang.",
+    "lib.arcade.jgLose": "Kowé kena skak mat.",
+    "lib.arcade.note.pinball": "Pencet Spasi, Munggah utawa ketok meja kanggo ngluncurké bal. Tahan Kiwa (utawa ndemek separo kiwa meja) kanggo ngangkat flipper kiwa lan Tengen (utawa separo tengen) kanggo sing tengen — ketok sesuai irama, ora ditahan. Bumper bunder saben-saben entuk 100 poin. Kowé duwé 3 bal; tekan skor target sadurunge entek kanggo ngrampungake level.",
+    "lib.arcade.pinBalls": "Bal: {n} · Target: {t}",
+    "lib.arcade.note.cribbage": "Cribbage rong pemain, balapan nganti 61 poin. Saben dibagi kowé nampa 6 kertu lan nyelehake 2 madhep ngisor ing crib (duweké bandar). Kertu starter dibukak. Banjur gentenan main kertu madhep ndhuwur kanthi total mlaku ora luwih saka 31: tekan 15 utawa 31 entuk 2, cocog karo kertu pungkasan entuk 2/6/12, urutan 3 kertu utawa luwih (urutan apa wae) entuk dawané, lan yen ora ana sing bisa main, pemain pungkasan entuk 1 (“Go”). Banjur saben tangan 4 kertu diitung karo starter: saben kombinasi total 15 entuk 2, saben pasangan 2, urutan 3+ dawané, patang kertu saka sajinis 4 (5 karo starter), lan Jack sing cocog karo jinis starter 1. Non-bandar ngitung dhisik, banjur bandar ngitung tangane lan crib.",
+    "lib.arcade.cbFifteen": "Fifteen",
+    "lib.arcade.cbPair": "Pasangan",
+    "lib.arcade.cbRun": "Urutan",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Jack sing cocog karo starter",
+    "lib.arcade.cbHeels": "Jack minangka starter",
+    "lib.arcade.cbYou": "Kowé",
+    "lib.arcade.cbFoe": "Komputer",
+    "lib.arcade.cbLast": "Kertu pungkasan",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Kowé sing mbagi",
+    "lib.arcade.cbFoeDeal": "Komputer sing mbagi",
+    "lib.arcade.cbPick": "Pilih 2 kertu kanggo crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Tanganmu",
+    "lib.arcade.cbFoeHand": "Tangan komputer",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 poin",
+    "lib.arcade.cbPlayed": "Wis dimainké",
+    "lib.arcade.cbToCrib": "Selehna ing crib",
+    "lib.arcade.cbNext": "Terusna",
+    "lib.arcade.cbHand": "Tangan"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Tic-Tac-Toe Pungkasan",
       "desc": "Tic-tac-toe ing 9 papan cilik: kothak sing dipilih nemtokake ing ngendi mungsuh kudu main; lawan komputer ing 10 level."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Pukul bal ngliwati komputer; sing luwih dhisik entuk 5 poin menang. 10 level kanthi mungsuh sing saya cepet lan saya landhep."
+    },
+    "space-shooter": {
+      "name": "Space Shooter",
+      "desc": "Setir kapalmu, tembak kapal mungsuh lan singkirana tembakané; 10 level kanthi gelombang luwih gedhé, tembakan bales lan mungsuh luwih kuwat."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Puter, dorong lan tembak kanggo mecah watu angkasa; watu gedhé pecah dadi cilik. 10 level kanthi watu luwih akeh lan luwih cepet."
+    },
+    "maze": {
+      "name": "Labirin",
+      "desc": "Golèkana dalan metu saka labirin sadurunge wektu entek; 10 level saka labirin cilik nganti gedhé, kanthi pedhut ing level dhuwur."
+    },
+    "road-cross": {
+      "name": "Nyabrang Dalan (gaya Frogger)",
+      "desc": "Mlumpatna kodhok ngliwati dalan rame lan kali kanthi gelondhong ngambang kanggo tekan omah 3 kali; 10 level kanthi lalu lintas luwih cepet lan kali ing level dhuwur."
+    },
+    "flappy": {
+      "name": "Game gaya Flappy Bird",
+      "desc": "Ketok kanggo kepak lan mabur ngliwati celah antarane pipa; 10 level kanthi celah luwih sempit lan kacepetan mundhak."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Mlumpati kaktus lan nunduk ing ngisor manuk; mlayu cukup adoh kanggo ngrampungake saben 10 level nalika kacepetan terus mundhak."
+    },
+    "whack-a-mole": {
+      "name": "Whack-a-Mole",
+      "desc": "Antemana tikus tanah sing metu saka bolongan sadurunge wektu entek, lan singkirana bom; 10 level saka alon nganti cepet banget."
+    },
+    "simon": {
+      "name": "Simon (Warna Memori)",
+      "desc": "Elinga lan baleni urutan warna lan swara; urutan luwih dawa ing 10 level, kanthi 6 pad wiwit level 7."
+    },
+    "aim-trainer": {
+      "name": "Aim Trainer",
+      "desc": "Tekak target sing metu acak lan cepet ilang; target saya cilik ing 10 level, lan wektu reaksimu diukur."
+    },
+    "quick-math": {
+      "name": "Matematika Cepet",
+      "desc": "Ngitung tambah, kurang, kali lan bagi ing batin kanthi tekanan wektu; 10 level saka itungan gampang nganti ekspresi."
+    },
+    "reaction": {
+      "name": "Tes Wektu Reaksi",
+      "desc": "Klik nalika layar dadi ijo; rata-rata 5 babakmu kudu nyukupi watesan saben level, sing saya ketat ing 10 level."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Sebar wiji ngubengi bolongan, jupuk wiji mungsuh lan giliran maneh nalika tiba ing gudhangmu; main nglawan komputer ing 10 level saka gampang nganti angel."
+    },
+    "snakes-ladders": {
+      "name": "Ula lan Andha",
+      "desc": "Uncalen dadu saka kothak 1 nganti 100, munggah andha, singkirana ula lan tekan finish sadurunge mungsuhmu; 10 level."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Pasang, gesar lan mabur bidhakmu kanggo gawé telu sebaris lan mbuwang bidhak mungsuh; main nglawan komputer ing 10 level."
+    },
+    "battleship": {
+      "name": "Battleship",
+      "desc": "Golèkana lan lelepna armada komputer ing kothak 10x10 sadurunge komputer ngelemake armadamu; 10 level nalika komputer nebak luwih pinter."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Labu Kepiting Iwak Udang)",
+      "desc": "Game dadu tradisional Vietnam: pasang koin virtual ing kewan banjur kocok telung dadu; tekan target koin ing 10 level (ora ana dhuwit nyata)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Taruhan ing Player, Banker utawa Tie kanthi kertu sing dibagi miturut aturan standar, nganggo koin virtual; tekan target koin ing 10 level (ora ana dhuwit nyata)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Game Telung Kertu)",
+      "desc": "Bandhingna tangan 3 kertu karo bandar: telu padha, telu kertu gambar, banjur 9 poin nganti 0; koin virtual, 10 level, ora ana dhuwit nyata."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Tandhani angka sing disebut ing kertu 5x5 lan bengoka BINGO sadurunge mungsuh komputer; angka disebut saya cepet ing 10 level."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Dadu Lima)",
+      "desc": "Uncalen limang dadu, simpen sing apik lan isi 13 kothak skor; tekan skor target ing 10 level."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Cocogna jinis utawa angka, wolu ngowahi jinis; entekna kertumu sadurunge 1 nganti 3 mungsuh komputer ing 10 level."
+    },
+    "car-race": {
+      "name": "Nyingkiri Mobil Balap",
+      "desc": "Ganti jalur kanggo nyingkiri mobil ing ngarep lan nyetir nganti jarak kebak; 10 level kanthi jalur luwih akeh lan lalu lintas luwih cepet."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Mumbul saka platform menyang platform kanggo munggah sak dhuwur-dhuwuré tanpa tiba; 10 level kanthi platform luwih jarang, sing obah lan sing bisa pecah."
+    },
+    "gold-miner": {
+      "name": "Gold Miner",
+      "desc": "Culna pancing kanggo narik emas lan berlian, singkirana watu abot, lan tekan dhuwit target ing 60 detik; 10 level."
+    },
+    "fruit-slice": {
+      "name": "Fruit Slice",
+      "desc": "Usap kanggo ngiris woh-wohan sing mabur munggah lan singkirana bom; 10 level kanthi woh luwih akeh lan bom luwih akeh."
+    },
+    "basketball": {
+      "name": "Basketball Shoot",
+      "desc": "Seret lan culna kanggo nembak bal menyang ring ing tembakan sing diwatesi; 10 level, kanthi ring obah wiwit level 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Tembak gelembung kanggo nyambung 3 utawa luwih warna sing padha lan ngethok, resikana kabeh sadurunge tekan ngisor; 10 level kanthi warna luwih akeh."
+    },
+    "dot-chase": {
+      "name": "Dot Chase",
+      "desc": "Mangan kabeh titik ing labirin nalika nyingkiri hantu sing ngoyak kowé; 10 level kanthi hantu luwih akeh lan luwih pinter."
+    },
+    "kakuro": {
+      "name": "Kakuro (Cross Sums)",
+      "desc": "Isènana kothak putih nganggo angka 1–9 supaya saben deret jumlahé padha karo petunjuké tanpa bola-bali; 10 level, kothak saka 5x5 nganti 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Isènana kothak tanpa bola-bali ing baris utawa kolom supaya saben kandhang nuduhaké targeté karo operasiné; 10 level, kothak saka 3x3 nganti 6x6."
+    },
+    "word-guess": {
+      "name": "Word Guess (gaya Wordle)",
+      "desc": "Tebaken tembung Inggris rahasia kanthi pitunjuk ijo, kuning lan abu-abu; 10 level kanthi tembung 4–6 aksara lan nyobané saya sithik."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Tebaken tembung Inggris siji aksara saben wektu sadurunge kesalahan entek; 10 level kanthi tembung luwih dawa lan kesalahan luwih sithik."
+    },
+    "word-scramble": {
+      "name": "Word Scramble (Anagram)",
+      "desc": "Susunen maneh aksara sing diacak dadi tembung Inggris sadurunge wektu entek; 10 level, 5 tembung saben level."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Cocogna kartu karo salah siji ujung rangkaian lan entekna kertumu sadurunge komputer; 10 level nalika komputer saya pinter."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Singkirana hati lan Ratu Sekop ing game kertu papat pemain; skor luwih endhek luwih apik; 10 level nglawan pemain komputer sing saya pinter."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (cip virtual)",
+      "desc": "Poker heads-up nglawan komputer nganggo cip virtual: fold, call utawa raise, lan menang nalika komputer entek cip; 10 level, ora ana dhuwit nyata."
+    },
+    "n-back": {
+      "name": "N-Back Memory",
+      "desc": "Delengen kothak sing murub lan pencet Match yen padha karo N langkah kepungkur; 10 level kanthi N nganti 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klik kanggo manggang kuki, tuku pembantu sing manggang otomatis lan tekan target ing 2 menit; 10 level."
+    },
+    "tile-connect": {
+      "name": "Tile Connect (gaya Onet)",
+      "desc": "Sambungna ubin sing padha nganggo dalan paling akeh rong belokan lan resikana papan sadurunge wektu entek; 10 level, papan saya gedhé."
+    },
+    "jigsaw": {
+      "name": "Picture Jigsaw",
+      "desc": "Tukar potongan sing diacak kanggo nyusun maneh gambar; 10 level saka potongan 3x3 nganti 6x6."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Tarik mundur lan culna kanggo nyodhok bal menyang bolongan ing watesan pukulan; 10 lapangan kanthi tembok lan wedhi."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Uncalen dadu, balapna damé mulih lan copot sadurunge komputer, nglawan blot-é ing dalan; 10 level."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Thirteen)",
+      "desc": "Game kertu Vietnam kanggo papat pemain: mainna siji kertu, pasangan, urutan lan papat padha kanggo ngentekake kertu luwih dhisik; 10 level."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Bangun lan tingkataké menara ing dalan kanggo mungkasi saben gelombang mungsuh; 10 level ing telung peta beda."
+    },
+    "color-by-number": {
+      "name": "Color by Number",
+      "desc": "Warnanana saben kothak nganggo warna sing cocog karo angkané kanggo mbukak gambar; 10 gambar kanthi warna saya akeh."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike tanpa tumpukan: pindhahna kertu madhep ndhuwur apa wae bareng karo kabeh sing ana ing ndhuwuré; 10 level, kertu madhep ndhuwur saya sithik."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Game wujud lintang mlumpat-lan-mlaku nglawan komputer: pindhahna kabeh 10 bidhak menyang pojok ngelawan dhisik; 10 level."
+    },
+    "mau-binh": {
+      "name": "Mậu binh (Chinese Poker)",
+      "desc": "Susunen 13 kertu dadi telung tangan 5, 5 lan 3 kertu lan ngalahna komputer; 5 babak saben level, 10 level."
+    },
+    "phom": {
+      "name": "Phỏm (Vietnamese Rummy)",
+      "desc": "Rummy Vietnam rong pemain nglawan komputer: tarik utawa jupuk buangan, gawé meld lan metu; poin sisa paling endhek menang; 10 level."
+    },
+    "shogi": {
+      "name": "Shogi (Japanese Chess)",
+      "desc": "Main shogi nglawan komputer: pasang bidhak sing dijupuk, promosi, lan skak mat raja; 10 level nganggo undo."
+    },
+    "janggi": {
+      "name": "Janggi (Korean Chess)",
+      "desc": "Main catur Korea nglawan komputer: diagonal kaputren, mlumpat meriam ngliwati siji bidhak, gajah telung langkah; 10 level nganggo undo."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Flip kiwa lan tengen supaya bal tetep urip, kenaa bumper lan tekan skor target sadurunge 3 balmu entek; 10 level."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage rong pemain nglawan komputer: crib, pegging nganti 31, ngitung tangan, balapan nganti 61 poin; 10 level."
     }
   },
   "s": {

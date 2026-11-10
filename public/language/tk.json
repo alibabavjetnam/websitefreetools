@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Galan kartalar: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} geçdi.",
     "lib.arcade.tlBad": "Saýlanan kartalar dogry toplum emele getirmeýär.",
-    "lib.arcade.tlLow": "Bu toplum stoldakydan ýokary däl."
+    "lib.arcade.tlLow": "Bu toplum stoldakydan ýokary däl.",
+    "lib.arcade.note.td": "Atyş minarasyny gurmak üçin boş öýjüge (ýola däl) basyň, bu altyna düşýär; minarany ýokarlandyrmak üçin ýene basyň (5-nji derejä çenli). Minaralar menzil içinde iň uzaga giden duşmana awtomatiki atýar. Köpräk altyn gazanmak üçin duşmanlary ýeňiň; 15 duşman soňuna ýetse, utulýarsyňyz. Derejäni geçmek üçin ähli tolkunlardan sag çykyň.",
+    "lib.arcade.tdInfo": "Altyn: {g} · Tolkun {w}/{t}",
+    "lib.arcade.tdCost": "Minara: {n}",
+    "lib.arcade.note.colorNum": "Her öýjügiň palitrada reňke gabat gelýän belgisi bar. Reňk saýlaň, soňra şol belgili öýjüklere basyp reňkläň; nädogry reňk bilen bassaňyz, hiç zat reňklenmeýär. Suraty tamamlamak üçin ähli öýjükleri dogry reňkläň. Ýokary derejelerde reňkler köpräk.",
+    "lib.arcade.cnWrong": "Nädogry reňk — öýjükdäki belgini barlaň.",
+    "lib.arcade.note.yukon": "Klondike ýaly, ýöne ätiýaçlyk desse ýok: ýüzi ýokary islendik kart üstündäki ähli kartlar bilen bilelikde süýşürilip bilner, yzygiderli bolmasa-da; diňe birinji kart maksat sütüne laýyk gelmeli (kemelýän tertipde, gyzyl we gara çalyşyp; Patyşa boş sütüne goýulýar). Ähli 52 kartyny dört esasda Tuzdan Patyşa çenli ýygnaň. Aşaky derejelerde has köp kart öňünden açyk bolýar.",
+    "lib.arcade.yukonFree": "Ýüzi aşak kartlar: {n}",
+    "lib.arcade.note.chinesechk": "Siz sag burçdaky gök daşlar bilen oýnaýarsyňyz; kompýuterden öň ähli 10 daşy garşydaky çep burça ýetiriň. Her ädimde bir daşy süýşüriň: boş goňşy deşige bir ädim ädiň ýa-da islendik daşyň üstünden gönüden yzyndaky boş deşige böküň, islänçäňiz yzly-yzyna bökmek bolýar. Daşlaryňyzyň birine, soňra hereket etmek üçin ýaşyl deşige basyň.",
+    "lib.arcade.ccTurn": "Siziň ädiminiz · Ädim {n}",
+    "lib.arcade.ccDraw": "Ädimler gutardy — deňlik.",
+    "lib.arcade.note.maubinh": "Siz we kompýuter 13-den kart alýarsyňyz we olary 3 ele bölýärsiňiz: 5 kartly yzky el, 5 kartly orta el we 3 kartly öň el. Yzky el iň bolmanda orta el ýaly, orta el bolsa öň el ýaly güýçli bolmaly; ýogsam düzülişiňiz bozulýar we tutuş raundy utýarsyňyz. Karta basyň, soňra goýuljak hataryna basyň (goýlan karta basyp yzyna alyň). Ýeňen her el 1 utuk berýär; üçüsini hem ýeňseňiz 6. 5 raund oýnaň — oňyn jem derejäni geçirýär. Öň el diňe ýokary kart, jübüt ýa-da üçlük bolup biler.",
+    "lib.arcade.mbHigh": "Ýokary kart",
+    "lib.arcade.mbPair": "Jübüt",
+    "lib.arcade.mbTwoPair": "Iki jübüt",
+    "lib.arcade.mbTrips": "Üçlük",
+    "lib.arcade.mbStraight": "Yzygiderlilik",
+    "lib.arcade.mbFlush": "Mast",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Dörtlük",
+    "lib.arcade.mbSflush": "Mast yzygiderliligi",
+    "lib.arcade.mbBack": "Yzky el",
+    "lib.arcade.mbMid": "Orta el",
+    "lib.arcade.mbFront": "Öň el",
+    "lib.arcade.mbFoe": "Kompýuter",
+    "lib.arcade.mbYou": "Siz",
+    "lib.arcade.mbFoul": "Düzüliş bozuldy!",
+    "lib.arcade.mbFoeFoul": "Kompýuteriň düzülişi bozuldy!",
+    "lib.arcade.mbConfirm": "Kartlary görkez",
+    "lib.arcade.mbReset": "Arassala",
+    "lib.arcade.mbHand": "Siziň eliňiz",
+    "lib.arcade.mbRound": "Raund {a}/{b}",
+    "lib.arcade.mbTotal": "Jemi: {n}",
+    "lib.arcade.mbFinish": "Tamamla",
+    "lib.arcade.mbNext": "Indiki raund",
+    "lib.arcade.mbDraw": "Utuklar deň — ýene oýnaň.",
+    "lib.arcade.mbAutoMsg": "Ine teklip edilýän düzüliş. Kartlary görkezmezden öň üýtgedip bilersiňiz.",
+    "lib.arcade.note.phom": "Iki oýunçy; her biri 9 kart alýar (ilki ýöreýän 10 alýar). Kombinasiýa — şol bir bahaly 3 ýa-da has köp kart, ýa-da şol bir mastdan 3 ýa-da has köp yzygiderli kart (Tuz diňe aşak). Gezegiňizde desseden kart çekiň, ýa-da garşydaşyň täze taşlan kart elińiz bilen kombinasiýa emele getirse, ony alyň (alnan kart saklanmaly), soňra bir kart taşlaň. Her oýunçy 4 kart taşlanda raund gutarýar we kombinasiýadan daşardaky kartlaryň jemi (Tuz = 1 … Patyşa = 13) az bolan ýeňýär. Taşlandan soň ähli kartlaryňyz kombinasiýada bolsa, çykýarsyňyz (\"U\") we derrew ýeňýärsiňiz. Ýaşyl çarçuwaly kartlar iň gowy kombinasiýalaryňyzda.",
+    "lib.arcade.pmDraw": "Çek",
+    "lib.arcade.pmEat": "Taşlananyny al",
+    "lib.arcade.pmThrow": "Taşla",
+    "lib.arcade.pmFoeAte": "Kompýuter kartyňyzy aldy.",
+    "lib.arcade.pmFoeU": "Kompýuter çykdy!",
+    "lib.arcade.pmTurn": "Ädim {a}/{b}",
+    "lib.arcade.pmLeft": "Kombinasiýasyz: {n}",
+    "lib.arcade.pmDeck": "Desse: {n}",
+    "lib.arcade.pmFoeHand": "Kompýuteriň eli",
+    "lib.arcade.pmFoeDisc": "Kompýuteriň taşlanlary",
+    "lib.arcade.pmFoeEaten": "Kompýuteriň alany",
+    "lib.arcade.pmMyDisc": "Siziň taşlanlaryňyz",
+    "lib.arcade.pmAte": "Bu kartyny aldyňyz — kombinasiýada saklaň.",
+    "lib.arcade.pmKeep": "Alnan kart saklanmaly — başga kart taşlaň.",
+    "lib.arcade.pmU": "Çykdyňyz! Derrew ýeňdiňiz.",
+    "lib.arcade.pmYou": "Siz",
+    "lib.arcade.pmFoe": "Kompýuter",
+    "lib.arcade.pmDraw2": "Utuklar deň.",
+    "lib.arcade.note.shogi": "Shogi ýapon şaçkasydyr. Siz aşaky tarapda oýnaýarsyňyz we ilki ýöreýärsiňiz; kompýuteriň daşlary garşy tarapa seredýär. Tutulan daşlar eliňize düşýär we ädim ýerine islendik boş öýjüge goýlup bilner (heniz öwrülmedik piýadaňyz bar sütüne piýada, we mundan beýläk ädip bilmejek hataryna daş goýup bolmaýar). Garşydaşyň soňky üç hataryna, olardan ýa-da olaryň içinde ädilen daş öwrülip bilner (Patyşa we Altyndan başga); daşyň ädimi galmajak bolsa, öwrülmek hökmany. Ýeňmek üçin duşman Patyşasyna mat beriň. Kanji: 歩 piýada, 香 naýza, 桂 at, 銀 kümüş, 金 altyn, 角 pil, 飛 top, 玉 patyşa; と, 馬, 竜 we beýleki gyzyl daşlar öwrülendir.",
+    "lib.arcade.sgPromote": "Öwür",
+    "lib.arcade.sgKeep": "Öwürme",
+    "lib.arcade.sgCheck": "Size şah!",
+    "lib.arcade.sgWin": "Mat — ýeňdiňiz.",
+    "lib.arcade.sgLose": "Size mat berildi.",
+    "lib.arcade.sgAskPromote": "Bu daş öwrülsinmi?",
+    "lib.arcade.note.janggi": "Janggi koreý şaçkasydyr. Siz aşakdaky gök daşlar bilen oýnaýarsyňyz we ilki ýöreýärsiňiz. Xiangqiden tapawutlylykda derýa ýok we iki köşkde diagonal çyzyklar bar. General we Gözegçiler köşk çyzyklary boýunça (diagonallar hem) bir ädim ädýär; Araba hem köşk diagonallary boýunça süýşýär we urýar; Top ýöremek ýa-da urmak üçin takyk bir daşyň (başga Top däl) üstünden böküp geçmeli we Topy uryp bilmeýär; At bir nokat göni, soňra bir diagonal ädýär, Pil bolsa bir göni, soňra iki diagonal, ikisi hem ýolda daş bolsa petelenýär; Esgerler öňe ýa-da ýana, duşman köşgünde bolsa diagonal öňe ýöreýär. Iki General hiç haçan ýüzbe-ýüz dyrmaşyp bilmez. Ýeňmek üçin duşman Generalyna mat beriň. Kompýuter hiç haçan ädimi geçirmeýär.",
+    "lib.arcade.jgCheck": "Size şah!",
+    "lib.arcade.jgWin": "Mat — ýeňdiňiz.",
+    "lib.arcade.jgLose": "Size mat berildi.",
+    "lib.arcade.note.pinball": "Topy atmak üçin Boşluk, Ýokary düwmesine basyň ýa-da stola basyň. Çep ganaty göterjek bolsaňyz Çep düwmäni (ýa-da stoluň çep ýarymyna deginiň), sag ganat üçin Sag düwmäni (ýa-da sag ýarymyny) basyp duruň — basyp durmagyň ýerine yrgyldy bilen basyň. Tegelek bamperleriň her biri 100 utuk berýär. 3 topyňyz bar; derejäni geçmek üçin olar gutarmanka maksat utuga ýetiň.",
+    "lib.arcade.pinBalls": "Toplar: {n} · Maksat: {t}",
+    "lib.arcade.note.cribbage": "Iki adamlyk Cribbage, 61 utuga çenli ýaryş. Her paýlaşykda 6 kart alýarsyňyz we 2-sini ýüzi aşak \"crib\"e goýýarsyňyz (ol paýlaýjyňky). Başlangyç kart açylýar. Soňra gezekleşip kartlary ýüzi ýokary oýnaýarsyňyz, ýöreýän jem hiç haçan 31-den geçmeli däl: 15 ýa-da 31-e ýetmek 2, soňky kart bilen deň bolmak 2/6/12, 3 ýa-da has köp kartly yzygiderlilik (islendik tertipde) uzynlygy ýaly utuk, hiç kim oýnap bilmese soňky oýnan 1 (\"Go\") alýar. Soňra 4 kartly her el başlangyç kart bilen sanalýar: jemi 15 bolan her kombinasiýa 2, her jübüt 2, 3+ yzygiderlilik uzynlygy ýaly, bir mastdan dört kart 4 (başlangyç bilen 5), başlangyç kartyň mastyndaky Walet 1 utuk berýär. Paýlaýjy bolmadyk ilki sanaýar, soňra paýlaýjy öz elini we crib-i sanaýar.",
+    "lib.arcade.cbFifteen": "On bäş",
+    "lib.arcade.cbPair": "Jübüt",
+    "lib.arcade.cbRun": "Yzygiderlilik",
+    "lib.arcade.cbFlush": "Mast",
+    "lib.arcade.cbNobs": "Başlangyç kartyň mastyndaky Walet",
+    "lib.arcade.cbHeels": "Başlangyç kart Walet",
+    "lib.arcade.cbYou": "Siz",
+    "lib.arcade.cbFoe": "Kompýuter",
+    "lib.arcade.cbLast": "Soňky kart",
+    "lib.arcade.cbCount": "Jemi: {n}",
+    "lib.arcade.cbYouDeal": "Siz paýlaýarsyňyz",
+    "lib.arcade.cbFoeDeal": "Kompýuter paýlaýar",
+    "lib.arcade.cbPick": "Crib üçin 2 kart saýlaň",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Siziň eliňiz",
+    "lib.arcade.cbFoeHand": "Kompýuteriň eli",
+    "lib.arcade.cbStarter": "Başlangyç kart",
+    "lib.arcade.cbZero": "0 utuk",
+    "lib.arcade.cbPlayed": "Oýnalanlar",
+    "lib.arcade.cbToCrib": "Crib-e goý",
+    "lib.arcade.cbNext": "Dowam et",
+    "lib.arcade.cbHand": "El"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Ondört)",
       "desc": "Dört adamlyk Wýetnam karta oýny: elinizi ilki boşatmak üçin ýeke, jübüt, yzygiderli we dört birmeňzeş kartalary oýnaň; 10 dereje."
+    },
+    "tower-defense": {
+      "name": "Minara Goranyşy",
+      "desc": "Duşman tolkunlarynyň hemmesini saklamak üçin ýol boýunça minaralar guruň we ýokarlandyryň; üç dürli kartada 10 dereje."
+    },
+    "color-by-number": {
+      "name": "Belgi Boýunça Reňkleme",
+      "desc": "Suraty açmak üçin her öýjügi belgisine laýyk reňk bilen reňkläň; her gezek has köp reňkli 10 surat."
+    },
+    "yukon": {
+      "name": "Yukon Pasýans",
+      "desc": "Ätiýaçlyk dessesiz Klondike: ýüzi ýokary islendik karty üstündäki hemme zat bilen süýşüriň; 10 dereje, öňe gidip barşyňa açyk kart azalýar."
+    },
+    "chinese-checkers": {
+      "name": "Hytaý Dama",
+      "desc": "Kompýutere garşy ýyldyz görnüşli ädim we bökme oýny: 10 daşyň hemmesini ilki garşy burça ýetiriň; 10 dereje."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Hytaý Pokeri)",
+      "desc": "13 kartyny 5, 5 we 3 kartly üç ele düzüň we kompýuteri ýeňiň; her derejede 5 raund, 10 dereje."
+    },
+    "phom": {
+      "name": "Phom (Wýetnam Rammisi)",
+      "desc": "Kompýutere garşy iki adamlyk Wýetnam rammisi: kart çekiň ýa-da taşlananyny alyň, kombinasiýalar düzüp çykyň; iň az galan utuk ýeňýär; 10 dereje."
+    },
+    "shogi": {
+      "name": "Shogi (Ýapon Şaçkasy)",
+      "desc": "Kompýutere garşy shogi oýnaň: tutulan daşlary goýuň, öwüriň we patyşa mat beriň; yzyna gaýtarmak bilen 10 dereje."
+    },
+    "janggi": {
+      "name": "Janggi (Koreý Şaçkasy)",
+      "desc": "Kompýutere garşy koreý şaçkasyny oýnaň: köşk diagonallary, bir daşyň üstünden top bökmesi, üç ädimli piller; yzyna gaýtarmak bilen 10 dereje."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Topy diri saklamak üçin çepe-saga uruň, bamperlere degiň we 3 topuňyz gutarmanka maksat utuga ýetiň; 10 dereje."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Kompýutere garşy iki adamlyk cribbage: crib, 31-e çenli pegging, ellerini sanamak, 61 utuga çenli ýaryş; 10 dereje."
     }
   },
   "s": {

@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Pumili ng kulay para punuin ang buong lugar na hawak mo sa kaliwang-itaas na sulok; lalamunin nito ang mga katabing cell na may ganoong kulay. Gawing iisang kulay ang buong board sa loob ng pinapayagang bilang ng galaw.",
     "lib.arcade.note.mastermind": "Nagtatago ang computer ng hilera ng mga kulay. Pumili ng kulay para sa bawat posisyon, saka pindutin ang Hulaan. Itim na peg = tamang kulay sa tamang lugar; puting peg = tamang kulay sa maling lugar. Lutasin ang code bago maubos ang mga hula mo.",
     "lib.arcade.note.hanoi": "Ilipat ang lahat ng disc sa huling poste. Ang pinakaibabaw na disc lang ng poste ang ilipat sa bawat galaw, at huwag maglagay ng mas malaking disc sa ibabaw ng mas maliit. I-click ang pinagmulang poste, saka ang patutunguhang poste.",
-    "lib.arcade.note.pipes": "I-click ang tile para paikutin ang tubo nang 90°. Ikonekta ang lahat ng tubo sa iisang network na walang bukas na dulo (pula ang mga bukas na dulo)."
+    "lib.arcade.note.pipes": "I-click ang tile para paikutin ang tubo nang 90°. Ikonekta ang lahat ng tubo sa iisang network na walang bukas na dulo (pula ang mga bukas na dulo).",
+    "lib.arcade.pongScore": "Ikaw {a} – {b} CPU (unang aabot sa {t})",
+    "lib.arcade.kills": "Nawasak: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} bato ang natitira",
+    "lib.arcade.timeLeft": "{n} s ang natitira",
+    "lib.arcade.stepsN": "Mga hakbang: {n}",
+    "lib.arcade.crossed": "Nakauwi: {n}/{t}",
+    "lib.arcade.pipes": "Mga tubong nalampasan: {n}/{t}",
+    "lib.arcade.distance": "Layo: {n}/{t} m",
+    "lib.arcade.speedN": "Bilis: {n}",
+    "lib.arcade.note.whack-a-mole": "Lumalabas ang mga nunal mula sa mga butas — i-click o i-tap ang nunal para paluin ito. Paluin ang sapat na bilang ng nunal bago maubos ang oras. Mula sa level 4 may mga bomba: kapag natamaan mo ang isa, mababawasan ang puntos mo.",
+    "lib.arcade.hole": "Butas",
+    "lib.arcade.hitsN": "Tama: {n}/{t}",
+    "lib.arcade.note.simon": "Magpapatugtog ang laro ng sunud-sunod na kulay at tunog — ulitin ito sa parehong pagkakasunod-sunod. Bawat round ay may dagdag na isang hakbang. Tandaan ang kinakailangang haba para ma-clear ang level. Mula sa level 7 ay may 6 na pad.",
+    "lib.arcade.seqN": "Pagkakasunod: {n}/{t}",
+    "lib.arcade.watch": "Panoorin…",
+    "lib.arcade.yourTurnShort": "Ikaw na",
+    "lib.arcade.note.aim-trainer": "Random na lumilitaw ang mga target at mabilis na nawawala — tamaan ang pinakamarami hangga't kaya mo. Lumiliit at bumibilis ang mga ito. Tamaan ang sapat na bilang ng target bago ka magkamali nang higit sa 5 beses para ma-clear ang level.",
+    "lib.arcade.missN": "Mali: {n}/{t}",
+    "lib.arcade.answer": "Sagot",
+    "lib.arcade.note.quick-math": "Lutasin sa isip nang mabilis hangga't kaya mo: i-type ang sagot at pindutin ang Enter. May limitasyon sa oras ang bawat tanong; ang maling sagot o paglampas sa oras ay mawawalan ka ng isang buhay (may 3 ka). Sagutin nang tama ang sapat na bilang ng tanong para ma-clear ang level.",
+    "lib.arcade.correctN": "Tama: {n}/{t}",
+    "lib.arcade.note.reaction": "Hintaying maging berde ang screen, pagkatapos ay mag-click nang kasing-bilis ng makakaya mo. Ang pag-click nang maaga ay foul (3 foul at talo ka). Ang average mo sa 5 round ay dapat mas mabilis kaysa sa limitasyon ng level.",
+    "lib.arcade.roundN": "Salita {n}/{t}",
+    "lib.arcade.limitMs": "Limitasyon: {n} ms",
+    "lib.arcade.rxWait": "Hintayin ang berde…",
+    "lib.arcade.rxGo": "I-CLICK!",
+    "lib.arcade.rxEarly": "Masyadong maaga!",
+    "lib.arcade.gameArea": "Lugar ng laro",
+    "lib.arcade.note.pong": "Igalaw ang mouse, i-drag ang daliri o gamitin ang mga key na ← → para kontrolin ang paddle sa ibaba. Ipasa ang bola sa kompyuter; ang unang makakuha ng 5 puntos ang panalo. Bumibilis ang bola sa bawat tama.",
+    "lib.arcade.note.space-shooter": "Igalaw ang mouse, i-drag ang daliri o gamitin ang mga key na ← → para magmaneho; kusang bumabaril ang barko mo. Wasakin ang sapat na bilang ng barkong kaaway para ma-clear ang level, at iwasan ang banggaan at ang putok ng kaaway. May 3 buhay ka.",
+    "lib.arcade.note.asteroids": "Ang ← → ay nagpapaikot ng barko, ang ↑ ay pampaandar, ang Space ay pambaril. Wasakin ang lahat ng bato para ma-clear ang level; ang malalaking bato ay nahahati sa mas maliliit. Lumalabas ang barko sa kabilang gilid kapag lumampas sa gilid ng screen. May 3 buhay ka.",
+    "lib.arcade.note.maze": "Gamitin ang mga arrow key (o mag-swipe, o ang mga button) para makarating mula sa berdeng tuldok hanggang sa pulang bandila bago maubos ang oras. Mula sa level 5 ay maulap ang maze: nakikita mo lang ang paligid mo, at natatandaan ang mga napuntahan na.",
+    "lib.arcade.note.road-cross": "Gamitin ang mga arrow key, mag-swipe o ang mga button para patalunin ang palaka mula sa ibaba pataas. Iwasan ang mga sasakyan; mula sa level 5 ay ilog na ang itaas na bahagi, kaya tumalon sa mga lumulutang na troso. Makauwi nang 3 beses para ma-clear ang level. May 3 buhay ka.",
+    "lib.arcade.note.flappy": "I-tap ang lugar ng laro, pindutin ang Space o ↑ para magpaypay ng pakpak. Lumipad sa mga siwang sa pagitan ng mga tubo nang hindi dumadampi sa tubo, lupa o kisame. Habang tumataas ang level, mas makitid ang mga siwang at mas mabilis ang lipad.",
+    "lib.arcade.note.runner": "I-tap ang lugar ng laro, pindutin ang Space o ↑ para talunan ang mga kaktus; pindutin nang matagal ang ↓ para yumuko sa ilalim ng matataas na ibon (o talunan ang mababa). Tumakbo nang sapat na layo para ma-clear ang level. Patuloy na bumibilis.",
+    "lib.arcade.fire": "Bumaril",
+    "lib.arcade.jump": "Talon",
+    "lib.arcade.aimTarget": "Target",
+    "lib.game.soundOn": "Buksan ang tunog",
+    "lib.game.soundOff": "Patayin ang tunog",
+    "lib.arcade.note.kalah": "Ikaw ang nasa ibabang hanay, ang kompyuter ang nasa itaas; ang malaking hukay sa kanan ang imbakan mo. Mag-click ng hukay para kunin ang lahat ng buto nito at ihasik nang pakaliwa, isa sa bawat hukay (lampasan ang imbakan ng kalaban). Kung ang huling buto mo ay mapunta sa imbakan mo, maglalaro ka ulit; kung mapunta ito sa walang lamang hukay sa panig mo na katapat ng hukay na may laman, makukuha mo ang mga butong iyon. Kapag naubos ang laman ng isang panig, mapupunta sa imbakan ng may-ari ang mga buto ng kabilang panig; ang mas malaking imbakan ang panalo.",
+    "lib.arcade.note.snakes": "Magpagulong ng dice at umusad ng ganoong kadaming parisukat, mula 1 hanggang 100. Kapag nasa paanan ka ng hagdan, aakyat ka; kapag nasa ulo ng ahas, dudulas ka pababa. Mula sa level 4 kailangan mong makuha ang eksaktong numero para makarating sa 100. Habang tumataas ang level, mas maraming ahas, mas kaunting hagdan at mas maraming kalaban. Ang unang makarating sa 100 ang panalo.",
+    "lib.arcade.square": "Parisukat {n}",
+    "lib.arcade.ladderUp": "Aakyat sa hagdan!",
+    "lib.arcade.snakeDown": "Nilamon ng ahas!",
+    "lib.arcade.needExact": "Kailangan mo ng eksaktong numero para makarating sa 100.",
+    "lib.arcade.note.nmm": "May 9 piyesa ang bawat panig. Phase 1: salitan sa paglalagay ng piyesa sa mga walang lamang punto. Phase 2: i-slide ang piyesa sa katabing walang lamang punto. Kapag 3 piyesa na lang ang natitira, puwede mong “paliparin” ito sa kahit anong walang lamang punto. Bumuo ng tatlo sa isang hilera (isang “mill”) para alisin ang piyesa ng kalaban (unahin ang mga hindi nasa mill). Talo ka kapag 2 piyesa na lang ang natira o hindi ka na makagalaw. Ikaw ang puti at ikaw ang mauuna.",
+    "lib.arcade.inHand": "Ilalagay pa: {a} · {b}",
+    "lib.arcade.removePiece": "Pumili ng piyesa ng kalaban na aalisin.",
+    "lib.arcade.enemyWaters": "Karagatan ng kaaway (i-click para bumaril)",
+    "lib.arcade.yourFleet": "Iyong armada",
+    "lib.arcade.note.battleship": "May 5 barko ang bawat panig (haba 5, 4, 3, 3, 2) na random na nakalagay sa 10x10 na grid. Salitan sa pagbaril sa isang cell: pula ang tama, mapusyaw na asul ang mintis, at lulubog ang barko kapag natamaan ang lahat ng cell nito. Ang unang makalubog sa buong armada ng kaaway ang panalo. Sa mas matataas na level, mas matalinong hinuhulaan ng kompyuter ang kinalalagyan ng mga barko mo.",
+    "lib.arcade.shipsLeft": "Natitirang barko: ikaw {a} · kaaway {b}",
+    "lib.arcade.theySunk": "Nalubog ng kaaway ang isa sa mga barko mo!",
+    "lib.arcade.theyHit": "Natamaan ng kaaway ang isa sa mga barko mo.",
+    "lib.arcade.theyMiss": "Nagmintis ang kaaway.",
+    "lib.arcade.youSunk": "Nalubog mo ang isang barko ng kaaway!",
+    "lib.arcade.youHit": "Tama!",
+    "lib.arcade.youMiss": "Mintis.",
+    "lib.arcade.shake": "Iliglig",
+    "lib.arcade.clearBets": "Burahin ang taya",
+    "lib.arcade.note.bau-cua": "Virtual na barya lang — walang totoong pera. Pumili ng halaga ng chip, i-click ang mga hayop para tumaya, pagkatapos ay pindutin ang Iliglig. Para sa bawat dice na tumutugma sa hayop na tinayaan mo, ibabalik ang taya mo at madaragdagan ng katumbas na halaga sa bawat tugma. Abutin ang target na barya sa loob ng pinapayagang mga round para ma-clear ang level.",
+    "lib.arcade.note.baccarat": "Virtual na barya lang — walang totoong pera. Tumaya sa Player, Banker o Tie, pagkatapos ay pindutin ang Magbigay. Ang halaga ng kamay ay ang huling digit ng kabuuan nito (A = 1, 2–9 ay ayon sa numero, 10/J/Q/K = 0); ang kamay na mas malapit sa 9 ang panalo, at ang ikatlong baraha ay ibinibigay ayon sa karaniwang patakaran. Ang Player ay 1:1, ang Banker 0.95:1, ang Tie 8:1 (ibinabalik ang taya sa Player/Banker kapag tabla). Abutin ang target na barya sa loob ng pinapayagang mga round para ma-clear ang level.",
+    "lib.arcade.banker": "Banker",
+    "lib.arcade.player": "Player",
+    "lib.arcade.tie": "Tabla",
+    "lib.arcade.openCards": "Ipakita",
+    "lib.arcade.note.bai-cao": "Virtual na barya lang — walang totoong pera. Tatlong baraha ang bawat panig. Ang puntos ng kamay ay ang huling digit ng kabuuan (A = 1, 2–9 ay ayon sa numero, 10/J/Q/K = 10, ibig sabihin ay 0 puntos). Ranggo: pinakamataas ang tatlong magkapareho (“Sáp”), sunod ang tatlong baraha ng hari/reyna/jack (“Ba tiên”), pagkatapos ay 9 na puntos pababa hanggang 0. Maglagay ng taya, pindutin ang Magbigay at pagkatapos ang Ipakita para ikumpara sa dealer. Mula sa level 6, panalo ang dealer kapag tabla. Abutin ang target na barya sa loob ng pinapayagang mga round para ma-clear ang level.",
+    "lib.arcade.caoSap": "Tatlong magkapareho",
+    "lib.arcade.caoBaTien": "Tatlong face card",
+    "lib.arcade.caoPts": "{n} puntos",
+    "lib.arcade.note.bingo": "Tinatawag ng kompyuter ang mga numero mula 1 hanggang 75. Kapag nasa card mo ang tinawag na numero, i-click ito para markahan (libre ang gitna). Kumpletuhin ang isang hilera, hanay o dayagonal at pindutin ang BINGO! — dapat mong unahan ang mga kalaban na kompyuter. Kapag maling BINGO!, magla-lock ang button nang ilang segundo. Sa mas matataas na level, mas mabilis ang pagtawag at mas marami ang kalaban.",
+    "lib.arcade.opponentsN": "Mga kalaban: {n}",
+    "lib.arcade.falseBingo": "Wala pang buong linya! Naka-lock ang button nang 3 segundo.",
+    "lib.arcade.bingoGo": "Nagtatawag na ng mga numero!",
+    "lib.arcade.note.yahtzee": "Bawat turno, magpapagulong ka ng 5 dice hanggang 3 beses: i-click ang dice para itago ito, pagkatapos ay pindutin ang Pagulungin para ulitin ang iba. Pagkatapos ay pumili ng kahon sa talahanayan para lagyan ng puntos (minsan lang magagamit ang bawat kahon; ang kahong hindi tumutugma ay 0 ang puntos). 13 turno. Ang mga kahong Isa–Anim ay may dagdag na 35 kapag umabot sa 63 o higit pa ang kabuuan. Abutin ang target na puntos ng level para manalo.",
+    "lib.arcade.turnN": "Turno {n}/13",
+    "lib.arcade.pickCat": "Pumili ng kahon na lalagyan ng puntos",
+    "lib.arcade.rollsLeft": "Pagulungin ({n} natitira)",
+    "lib.arcade.upperBonus": "Bonus ng Isa–Anim",
+    "lib.arcade.scored": "Puntos {n}",
+    "lib.arcade.note.crazy-eights": "Maglaro ng baraha na tumutugma sa nasa ibabaw ng tapunan sa suit o halaga. Wild ang mga walo: puwede mo itong laruin anumang oras at pumili ng bagong suit. Kung wala kang mailalaro, humugot sa tumpok (hanggang 3 baraha); kung wala pa ring mailalaro, lalaktawan ka. Ang unang makaubos ng baraha ang panalo. Sa mas matataas na level, mas maraming kalaban at mas matalinong maglaro ang kompyuter.",
+    "lib.arcade.opponent": "Kalaban",
+    "lib.arcade.pileLeft": "Tumpok na hugutan: {n}",
+    "lib.arcade.pickSuit": "Pumili ng bagong suit",
+    "lib.arcade.aiSuit": "Pinili ng kompyuter ang {s}",
+    "lib.arcade.aiPass": "Lumaktaw ang kompyuter.",
+    "lib.arcade.mustPlay": "May mailalaro kang baraha — laruin ito.",
+    "lib.arcade.youPass": "Humugot ka ng 3 baraha at lumaktaw.",
+    "lib.arcade.bcGourd": "Upo",
+    "lib.arcade.bcCrab": "Alimango",
+    "lib.arcade.bcShrimp": "Hipon",
+    "lib.arcade.bcFish": "Isda",
+    "lib.arcade.bcRooster": "Tandang",
+    "lib.arcade.bcDeer": "Usa",
+    "lib.arcade.yOnes": "Isa",
+    "lib.arcade.yTwos": "Dalawa",
+    "lib.arcade.yThrees": "Tatlo",
+    "lib.arcade.yFours": "Apat",
+    "lib.arcade.yFives": "Lima",
+    "lib.arcade.ySixes": "Anim",
+    "lib.arcade.yThree": "Tatlong magkapareho",
+    "lib.arcade.yFour": "Apat na magkapareho",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Maliit na straight (30)",
+    "lib.arcade.yLarge": "Malaking straight (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Pagkakataon",
+    "lib.arcade.note.race": "Pindutin ang ← → (o i-tap ang linyang gusto mo) para lumipat ng linya at iwasan ang mga kotse sa unahan. May 3 buhay ka; maabot ang buong layo para ma-clear ang level. Sa mas matataas na level, mas maraming linya at mas mabilis na trapiko.",
+    "lib.arcade.note.jump": "Kusang tumatalbog ang karakter. Pindutin ang ← → o i-drag ang daliri para lumapag sa susunod na platform. Gumagalaw ang mga asul na platform, nababasag ang mga kayumanggi kapag nilapagan. Talo kapag nahulog sa screen; umakyat nang sapat na taas para ma-clear ang level.",
+    "lib.arcade.note.miner": "Umuugoy pakaliwa-pakanan ang kawit; pindutin ang Space, ↓ o i-tap ang lugar para ibaba ito. Mabigat at mabagal hilahin ang malalaking ginto at bato; malaki ang halaga ng mga diamante. Abutin ang target na pera bago maubos ang 60 segundo.",
+    "lib.arcade.note.slicer": "Mag-swipe ng daliri o mouse sa prutas para hiwain ito. Iwasan ang mga itim na bomba. Ang pagkamintis sa prutas o paghiwa sa bomba ay mawawalan ka ng buhay (may 3 ka). Humiwa ng sapat na prutas para ma-clear ang level.",
+    "lib.arcade.note.hoops": "Pindutin sa court, i-drag pababa (parang tirador) at bitawan para itira ang bola sa ring. Habang mas malayo ang drag, mas malakas ang tira. Makapuntos ng sapat na basket sa loob ng mga tirang mayroon ka; mula sa level 4 ay gumagalaw ang ring.",
+    "lib.arcade.note.bubbles": "Igalaw ang mouse o daliri para tumutok, pagkatapos ay mag-click/mag-tap o pindutin ang Space/Bumaril para magpaputok. Pagdugtungin ang 3 o higit pang bula na magkakulay para pumutok; nahuhulog ang mga bulang nawalan ng suporta. Dahan-dahang bumababa ang mga hilera, kaya ilayo ito sa ilalim na linya. Alisin ang lahat ng bula para manalo.",
+    "lib.arcade.note.chase": "Gamitin ang mga arrow key (o mag-swipe / ang mga button) para lumiko at kainin ang lahat ng tuldok sa maze habang iniiwasan ang mga multong humahabol sa iyo. May 3 buhay ka; sa mas matataas na level, mas maraming multo na mas mabilis at mas matalinong humabol.",
+    "lib.arcade.height": "Taas: {n}/{t} m",
+    "lib.arcade.money": "Pera: {n}/{t}",
+    "lib.arcade.sliced": "Nahiwa: {n}/{t}",
+    "lib.arcade.hoopScore": "Naipasok: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} tira ang natitira",
+    "lib.arcade.bubbleLeft": "{n} bula ang natitira",
+    "lib.arcade.shotsN": "Mga tira: {n}",
+    "lib.arcade.dotsLeft": "{n} tuldok ang natitira",
+    "lib.arcade.note.kakuro": "Punan ang mga puting cell ng mga digit na 1–9 para ang bawat hanay ay umabot sa clue sa itim na cell (ang numero sa kanang itaas ay para sa hanay pakanan, ang nasa kaliwang ibaba ay para sa hanay pababa), at walang ulit na digit sa loob ng isang hanay. Gamitin ang mga arrow key para gumalaw.",
+    "lib.arcade.note.kenken": "Punan ang grid ng mga numerong 1 hanggang N para walang umuulit na numero sa anumang hilera o hanay. Bawat makapal na kulungan ay may target at operasyon (+, −, ×, ÷): ang mga numero sa kulungan ay dapat magbigay ng resultang iyon. Gamitin ang mga arrow key para gumalaw.",
+    "lib.arcade.note.wordGuess": "Hulaan ang lihim na salitang Ingles. Pagkatapos ng bawat subok, ang berde ay tamang letra sa tamang lugar, ang dilaw ay nasa salita ang letra pero sa ibang lugar, at ang kulay-abo ay wala sa salita ang letra. Mag-type sa keyboard o gamitin ang mga key sa screen, at pindutin ang Enter para ipasa. Sa mas matataas na level, mas mahahaba ang salita at mas kaunti ang subok.",
+    "lib.arcade.note.hangman": "Hulaan ang lihim na salitang Ingles sa pamamagitan ng pagpili ng letra isa-isa. Bawat maling letra ay nagdaragdag ng bahagi sa nakabitin na pigura; kapag naubos ang pagkakamali mo, talo ka. Sa mas matataas na level, mas mahahaba ang salita at mas kaunti ang pinapayagang pagkakamali.",
+    "lib.arcade.note.scramble": "Ayusin muli ang mga ginulong letra para maging tunay na salitang Ingles at i-type ito sa kahon ng sagot. Bawat level ay may 5 salita; lutasin ang hindi bababa sa 4 bago maubos ang oras ng bawat salita para ma-clear ang level. Ang pahiwatig ay nagpapakita ng unang letra.",
+    "lib.arcade.cellsLeft": "{n} walang lamang cell ang natitira",
+    "lib.arcade.wrongN": "{n} cell ang hindi tama.",
+    "lib.arcade.noError": "Wala pang nakitang pagkakamali.",
+    "lib.arcade.tooShort": "Kulang ang mga letra",
+    "lib.arcade.answerIs": "Sagot: {w}",
+    "lib.arcade.livesLeft": "{n} maling hula ang natitira",
+    "lib.arcade.yourAnswer": "Ang sagot mo",
+    "lib.arcade.skip": "Laktawan",
+    "lib.arcade.notThis": "Hindi tama, subukan ulit.",
+    "lib.arcade.startsWith": "Unang letra: {c}",
+    "lib.arcade.note.domino": "Bawat manlalaro ay may 7 tile; ang may hawak ng pinakamataas na doble ang mauuna. Maglaro ng tile na ang numero ay tumutugma sa isang dulo ng kadena. Kung wala kang mailalaro, humugot mula sa boneyard hanggang may mailaro; kung wala nang natira, lalaktawan ka. Ang unang makaubos ng tile ang panalo; kung parehong nakasara, ang mas mababang kabuuan ng tuldok ang panalo.",
+    "lib.arcade.note.hearts": "Apat na manlalaro, 13 baraha bawat isa. Ang 2 ng clubs ang mauuna. Dapat mong sundan ang suit na nilaro kung kaya mo. Ang bawat heart ay 1 puntos at ang Queen of Spades ay 13; ang mananalo ng isang trick ang kukuha ng puntos nito. Mas mababa ay mas mabuti, at ang pagkuha ng lahat ng 26 na puntos ay magbibigay ng 26 sa lahat ng iba. Hindi ka puwedeng mag-umpisa gamit ang heart hangga't wala pang nailalaro. Pagkatapos ng huling kamay, panalo ka kung pinakamababa ang puntos mo (o kapantay sa pinakamababa).",
+    "lib.arcade.note.holdem": "Heads-up laban sa kompyuter gamit ang virtual na chip lang. Bawat manlalaro ay may 2 pribadong baraha at 5 community card ang ibinubunyag (flop, turn, river); buuin ang pinakamahusay na 5-barahang kamay. Bawat round ay puwede kang mag-fold, mag-call (o mag-check) o mag-raise. Tumataas ang mga blind kada 4 na kamay. Mananalo ka kapag naubusan ng chip ang kompyuter, o kapag mas marami kang chip pagkatapos ng limitasyon ng mga kamay. Walang totoong pera.",
+    "lib.arcade.dmDraw": "Humugot ng tile",
+    "lib.arcade.dmPass": "Lumaktaw",
+    "lib.arcade.dmEmpty": "Wala pang nalalaro na tile",
+    "lib.arcade.dmYard": "Boneyard: {n} tile",
+    "lib.arcade.dmLeft": "Kaliwang dulo",
+    "lib.arcade.dmRight": "Kanang dulo",
+    "lib.arcade.dmTie": "Tabla! Pantay ang dalawang panig.",
+    "lib.arcade.hrHand": "Kamay {n}/{t}",
+    "lib.arcade.hrTook": "Panalo ni {p} ang trick ({n} puntos).",
+    "lib.arcade.hrIllegal": "Hindi mo puwedeng laruin ang baraha na ito (sundan ang suit, o wala pang heart na nailalaro).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Mag-raise sa",
+    "lib.arcade.raiseN": "Mag-raise sa {n}",
+    "lib.arcade.thOppFold": "Nag-fold ang kompyuter; panalo ka sa kamay na ito.",
+    "lib.arcade.thYouFold": "Nag-fold ka.",
+    "lib.arcade.thOppWin": "Panalo ang kompyuter sa kamay na ito",
+    "lib.arcade.thYouWin": "Panalo ka sa kamay na ito",
+    "lib.arcade.thSplit": "Hati ang pot",
+    "lib.arcade.thAiFold": "Nag-fold ang kompyuter.",
+    "lib.arcade.thAiRaise": "Nag-raise ang kompyuter sa {n}.",
+    "lib.arcade.thAiCall": "Nag-call / nag-check ang kompyuter.",
+    "lib.arcade.hand.high": "High card",
+    "lib.arcade.hand.pair": "Pares",
+    "lib.arcade.hand.twoPair": "Dalawang pares",
+    "lib.arcade.hand.trips": "Tatlong magkapareho",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Apat na magkapareho",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Sunud-sunod na umiilaw ang isang parisukat sa 3x3 na grid. Pindutin ang \"Tugma!\" (o Space) kapag ang iluminadong posisyon ay kapareho ng posisyon N hakbang na nakaraan (nakikita ang N sa itaas). Kailangan mo ng hindi bababa sa 80% tamang desisyon para ma-clear ang level. Sa mas matataas na level, mas malaki ang N.",
+    "lib.arcade.nbMatch": "Tugma!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Tama: {a} · Mali: {b}",
+    "lib.arcade.nbAcc": "Katumpakan: {n}%",
+    "lib.arcade.note.clicker": "I-click ang cookie para magluto ng cookies, pagkatapos ay gastusin ang mga ito sa mga katulong na kusang nagluluto (tumataas ang presyo sa bawat bibilhin mo). Magluto ng target na bilang ng cookies sa loob ng 2 minuto para ma-clear ang level.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Lola na nagbe-bake",
+    "lib.arcade.ckFarm": "Sakahan",
+    "lib.arcade.ckMine": "Minahan ng asukal",
+    "lib.arcade.ckFactory": "Pabrika",
+    "lib.arcade.ckCookie": "Cookie",
+    "lib.arcade.ckEarned": "Naluto: {n}/{t}",
+    "lib.arcade.chips2": "Cookies: {n}",
+    "lib.arcade.ckCps": "{n} cookies/segundo",
+    "lib.arcade.note.onet": "Pumili ng dalawang magkaparehong tile na maaaring pagdugtungin ng landas na hindi hihigit sa 2 liko at hindi tumatawid sa ibang tile para alisin ang mga ito. Alisin ang lahat ng tile bago maubos ang oras para manalo. Kapag wala nang galaw, puwede kang mag-shuffle (limitado ang gamit).",
+    "lib.arcade.shuffle": "I-shuffle",
+    "lib.arcade.tilesLeft": "{n} tile ang natitira",
+    "lib.arcade.autoShuffle": "Wala nang galaw — kusang nag-shuffle.",
+    "lib.arcade.note.jigsaw": "Hinati-hati sa piraso at ginulo ang larawan. I-tap ang isang piraso, pagkatapos ang isa pa, para palitan ang mga ito, at buuin muli ang larawang ipinapakita bilang sanggunian. Ang mga pirasong nasa tamang lugar ay may berdeng gilid. Sa mas matataas na level, mas maraming piraso.",
+    "lib.arcade.jgRef": "Larawang sanggunian",
+    "lib.arcade.jgPlaced": "Nasa tamang lugar: {a}/{b}",
+    "lib.arcade.golfStrokes": "Mga palo: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Ikaw ang puting checker, na gumagalaw mula sa kanang itaas paikot hanggang sa kanang ibaba (ang tahanan mo). Magpagulong ng dice, i-click ang checker na gusto mong galawin, pagkatapos ay i-click ang naka-highlight na patutunguhan. Kapag lumapag ka sa punto na may eksaktong isang checker ng kalaban, matatamaan ito papunta sa gitnang bar, at kailangan muna itong ibalik ng manlalarong iyon. Hindi ka puwedeng lumapag sa punto na may dalawa o higit pang checker ng kalaban. Kapag nasa home board mo na (ang huling 6 na punto) ang lahat ng 15 checker mo, puwede mo na silang alisin sa board. Ang unang makapag-alis ng lahat ng 15 ang panalo.",
+    "lib.arcade.bgRoll": "Magpagulong ng dice",
+    "lib.arcade.bgOff": "Alisin sa board",
+    "lib.arcade.bgRollFirst": "Magpagulong ng dice",
+    "lib.arcade.bgInfo": "Naalis: ikaw {a} · kompyuter {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Wala ka nang legal na galaw.",
+    "lib.arcade.note.tienlen": "Apat na manlalaro, 13 baraha bawat isa. Ayos ng baraha mula mababa hanggang mataas: 3, 4, … K, A, 2; ayos ng suit mula mababa hanggang mataas: spades, clubs, diamonds, hearts. Ang may hawak ng 3 ng spades ang mauuna. Maglaro ng isang baraha, pares, tatlong magkapareho, apat na magkapareho, o isang sunod-sunod na 3 o higit pang baraha (walang 2). Ang susunod na manlalaro ay dapat maglaro ng parehong uri at mas mataas, o lumaktaw; ang apat na magkapareho ay kayang talunin ang isang 2 o pares ng 2. Kapag lumaktaw ang lahat ng iba, ang huling naglaro ay puwedeng magsimula ng kahit ano. Ang unang makaubos ng baraha ang panalo. Pumili ng mga baraha, pagkatapos ay pindutin ang Laruin.",
+    "lib.arcade.tlPlay": "Laruin",
+    "lib.arcade.tlPass": "Lumaktaw",
+    "lib.arcade.tlClear": "Alisin ang napili",
+    "lib.arcade.tlPassed": "lumaktaw",
+    "lib.arcade.tlFree": "Walang laman ang mesa — puwede kang magsimula ng kahit ano",
+    "lib.arcade.tlLeft": "Natitirang baraha: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "Lumaktaw si {p}.",
+    "lib.arcade.tlBad": "Hindi nakabubuo ng wastong set ang mga napiling baraha.",
+    "lib.arcade.tlLow": "Hindi sapat ang taas ng set na ito para talunin ang nasa mesa.",
+    "lib.arcade.note.td": "I-tap ang walang lamang parisukat (hindi ang landas) para magtayo ng tore na bumabaril, na may bayad na ginto; i-tap muli ang tore para i-upgrade ito (hanggang level 5). Kusang bumabaril ang mga tore sa kaaway na pinakamalayo na ang narating sa saklaw. Talunin ang mga kaaway para kumita ng mas maraming ginto; kung 15 kaaway ang umabot sa dulo, talo ka. Makaligtas sa lahat ng alon para ma-clear ang level.",
+    "lib.arcade.tdInfo": "Ginto: {g} · Alon {w}/{t}",
+    "lib.arcade.tdCost": "Tore: {n}",
+    "lib.arcade.note.colorNum": "Bawat parisukat ay may numerong tumutugma sa kulay sa palette. Pumili ng kulay, pagkatapos ay i-tap ang mga parisukat na may numerong iyon para kulayan ang mga ito; walang makukulayan kapag maling kulay ang gamit. Kulayan nang tama ang bawat parisukat para mabuo ang larawan. Sa mas matataas na level, mas maraming kulay.",
+    "lib.arcade.cnWrong": "Maling kulay — tingnan ang numero sa parisukat.",
+    "lib.arcade.note.yukon": "Tulad ng Klondike pero walang stock: ang anumang baraha na nakaharap pataas ay puwedeng ilipat kasama ang lahat ng baraha sa ibabaw nito, kahit hindi magkakasunod; ang una lang ang dapat bumagay sa patutunguhang hanay (pababa, salitan ang pula at itim; ang King ay sa walang lamang hanay). Buuin ang lahat ng 52 baraha sa apat na foundation mula Ace hanggang King. Sa mababang level, mas maraming baraha ang nakaharap na sa simula.",
+    "lib.arcade.yukonFree": "Mga barahang nakataob: {n}",
+    "lib.arcade.note.chinesechk": "Ikaw ang asul na mga piyesa sa kanang sulok; ilipat ang lahat ng 10 sa kabilang sulok sa kaliwa bago ang kompyuter. Bawat turno ay isang piyesa ang igagalaw mo: humakbang sa katabing walang lamang butas, o tumalon sa ibabaw ng anumang piyesa papunta sa walang lamang butas sa kabila nito, at tumalon nang paulit-ulit hangga't gusto mo. I-tap ang isa sa mga piyesa mo, pagkatapos ay i-tap ang berdeng butas para gumalaw.",
+    "lib.arcade.ccTurn": "Ikaw na · Turno {n}",
+    "lib.arcade.ccDraw": "Naubos ang mga turno — tabla.",
+    "lib.arcade.note.maubinh": "Bawat isa sa inyo ng kompyuter ay may 13 baraha at ayusin ito sa 3 kamay: 5-barahang hulihang kamay, 5-barahang gitnang kamay, at 3-barahang unahang kamay. Ang hulihan ay dapat kasing-lakas man lang ng gitna, at ang gitna ay kasing-lakas man lang ng unahan; kung hindi, mali ang ayos mo at talo ka sa buong round. I-tap ang baraha, pagkatapos ay i-tap ang hilera kung saan ito ilalagay (i-tap ang nailagay na baraha para kunin ito pabalik). Bawat kamay na mapanalunan ay 1 puntos; kapag nanalo sa lahat ng 3, 6 na puntos. Maglaro ng 5 round — ang positibong kabuuan ay nagpapa-clear ng level. Ang unahang kamay ay puwede lang high card, pares o tatlong magkapareho.",
+    "lib.arcade.mbHigh": "High card",
+    "lib.arcade.mbPair": "Pares",
+    "lib.arcade.mbTwoPair": "Dalawang pares",
+    "lib.arcade.mbTrips": "Tatlong magkapareho",
+    "lib.arcade.mbStraight": "Straight",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Apat na magkapareho",
+    "lib.arcade.mbSflush": "Straight flush",
+    "lib.arcade.mbBack": "Hulihang kamay",
+    "lib.arcade.mbMid": "Gitnang kamay",
+    "lib.arcade.mbFront": "Unahang kamay",
+    "lib.arcade.mbFoe": "Kompyuter",
+    "lib.arcade.mbYou": "Ikaw",
+    "lib.arcade.mbFoul": "Mali ang ayos!",
+    "lib.arcade.mbFoeFoul": "Mali ang ayos ng kompyuter!",
+    "lib.arcade.mbConfirm": "Ipakita ang baraha",
+    "lib.arcade.mbReset": "Burahin",
+    "lib.arcade.mbHand": "Ang kamay mo",
+    "lib.arcade.mbRound": "Round {a}/{b}",
+    "lib.arcade.mbTotal": "Kabuuan: {n}",
+    "lib.arcade.mbFinish": "Tapusin",
+    "lib.arcade.mbNext": "Susunod na round",
+    "lib.arcade.mbDraw": "Tabla sa puntos — maglaro ulit.",
+    "lib.arcade.mbAutoMsg": "Heto ang iminumungkahing ayos. Puwede mo itong baguhin bago ipakita ang mga baraha.",
+    "lib.arcade.note.phom": "Dalawang manlalaro; bawat isa ay may 9 baraha (ang mauuna ay may 10). Ang meld ay 3 o higit pang baraha na magkapareho ang halaga, o 3 o higit pang magkakasunod na baraha ng parehong suit (mababa lang ang Ace). Sa turno mo, humugot ng baraha sa deck, o kunin ang barahang katatapon lang ng kalaban kung bumubuo ito ng meld sa kamay mo (dapat itago ang kinuhang baraha), pagkatapos ay magtapon ng isang baraha. Kapag nakapagtapon na ang bawat manlalaro ng 4 na baraha, tapos na ang round at ang may mas mababang kabuuan ng mga barahang wala sa meld (Ace = 1 … King = 13) ang panalo. Kung ang lahat ng baraha mo ay nasa meld pagkatapos magtapon, \"U\" ka at panalo agad. Ang mga barahang may berdeng balangkas ay nasa pinakamahusay mong set ng meld.",
+    "lib.arcade.pmDraw": "Humugot",
+    "lib.arcade.pmEat": "Kunin ang itinapon",
+    "lib.arcade.pmThrow": "Itapon",
+    "lib.arcade.pmFoeAte": "Kinuha ng kompyuter ang baraha mo.",
+    "lib.arcade.pmFoeU": "Nag-U ang kompyuter!",
+    "lib.arcade.pmTurn": "Turno {a}/{b}",
+    "lib.arcade.pmLeft": "Walang meld: {n}",
+    "lib.arcade.pmDeck": "Deck: {n}",
+    "lib.arcade.pmFoeHand": "Kamay ng kompyuter",
+    "lib.arcade.pmFoeDisc": "Mga itinapon ng kompyuter",
+    "lib.arcade.pmFoeEaten": "Kinuha ng kompyuter",
+    "lib.arcade.pmMyDisc": "Mga itinapon mo",
+    "lib.arcade.pmAte": "Kinuha mo ang baraha na ito — itago ito sa meld.",
+    "lib.arcade.pmKeep": "Dapat itago ang kinuhang baraha — magtapon ng iba.",
+    "lib.arcade.pmU": "U! Panalo ka agad.",
+    "lib.arcade.pmYou": "Ikaw",
+    "lib.arcade.pmFoe": "Kompyuter",
+    "lib.arcade.pmDraw2": "Tabla sa puntos.",
+    "lib.arcade.note.shogi": "Ang Shogi ay chess ng Hapon. Ikaw ang nasa ibabang panig at ikaw ang mauuna; kabaligtaran ang direksyon ng mga piyesa ng kompyuter. Ang mga nahuling piyesa ay mapupunta sa kamay mo at puwedeng ilagay sa anumang walang lamang parisukat sa halip na gumalaw (hindi kailanman pawn sa file na may hindi pa napo-promote mong pawn, at hindi kailanman piyesa sa ranggong hindi na ito makagagalaw pa). Ang piyesang gumalaw papasok, palabas, o sa loob ng huling tatlong ranggo ng kalaban ay puwedeng mag-promote (maliban sa King at Gold); sapilitan ang promosyon kapag wala nang galaw ang piyesa. I-checkmate ang King ng kalaban para manalo. Kanji: 歩 pawn, 香 lance, 桂 knight, 銀 silver, 金 gold, 角 bishop, 飛 rook, 玉 king; ang と, 馬, 竜 at iba pang pulang piyesa ay napo-promote na.",
+    "lib.arcade.sgPromote": "I-promote",
+    "lib.arcade.sgKeep": "Huwag i-promote",
+    "lib.arcade.sgCheck": "Naka-check ka!",
+    "lib.arcade.sgWin": "Checkmate — panalo ka.",
+    "lib.arcade.sgLose": "Na-checkmate ka.",
+    "lib.arcade.sgAskPromote": "I-promote ang piyesang ito?",
+    "lib.arcade.note.janggi": "Ang Janggi ay chess ng Korea. Ikaw ang asul na mga piyesa sa ibaba at ikaw ang mauuna. Hindi tulad ng xiangqi, walang ilog, at ang dalawang palasyo ay may mga dayagonal na linya. Ang General at mga Guard ay humahakbang nang isa sa mga linya ng palasyo (kasama ang dayagonal); ang Chariot ay dumudulas at humuhuli rin sa mga dayagonal ng palasyo; ang Cannon ay dapat tumalon sa eksaktong isang piyesa (hindi isa pang Cannon) para gumalaw o manghuli, at hindi makahuhuli ng Cannon; ang Horse ay humahakbang nang isang tuwid at isang dayagonal, at ang Elephant ay isang tuwid at dalawang dayagonal, na parehong nahaharangan kapag may piyesa sa daan; ang mga Soldier ay gumagalaw pasulong o patagilid, at pasulong na dayagonal sa loob ng palasyo ng kalaban. Hindi puwedeng magharap ang dalawang General. I-checkmate ang General ng kalaban para manalo. Hindi kailanman lumalaktaw ang kompyuter.",
+    "lib.arcade.jgCheck": "Naka-check ka!",
+    "lib.arcade.jgWin": "Checkmate — panalo ka.",
+    "lib.arcade.jgLose": "Na-checkmate ka.",
+    "lib.arcade.note.pinball": "Pindutin ang Space, Up o i-tap ang mesa para ilunsad ang bola. Pindutin nang matagal ang Left (o hawakan ang kaliwang kalahati ng mesa) para itaas ang kaliwang flipper at ang Right (o ang kanang kalahati) para sa kanan — i-tap nang may ritmo sa halip na pindutin nang matagal. Ang bawat bilog na bumper ay 100 puntos. May 3 bola ka; abutin ang target na puntos bago maubos ang mga ito para ma-clear ang level.",
+    "lib.arcade.pinBalls": "Mga bola: {n} · Target: {t}",
+    "lib.arcade.note.cribbage": "Cribbage para sa dalawang manlalaro, karera hanggang 61 puntos. Bawat bigayan ay may 6 baraha ka at maglalagay ng 2 nakataob sa crib (pag-aari ito ng dealer). Ibubukas ang isang starter card. Pagkatapos ay salitan sa paglalaro ng baraha nang nakaharap, na hindi lalampas sa 31 ang kabuuan: ang pag-abot sa 15 o 31 ay 2 puntos, ang pagtugma sa huling baraha ay 2/6/12, ang sunod-sunod na 3 o higit pa (kahit anong ayos) ay puntos na katumbas ng haba nito, at kapag wala nang makapaglaro, ang huling naglaro ay 1 puntos (\"Go\"). Pagkatapos ay bibilangin ang bawat kamay ng 4 kasama ang starter: bawat kombinasyong may kabuuang 15 ay 2 puntos, bawat pares ay 2, ang sunod-sunod na 3+ ay puntos na katumbas ng haba nito, apat na baraha ng iisang suit ay 4 (5 kasama ang starter), at ang Jack na tumutugma sa suit ng starter ay 1. Ang hindi dealer ang unang bibilang, pagkatapos ay bibilangin ng dealer ang kamay at ang crib.",
+    "lib.arcade.cbFifteen": "Labinlima",
+    "lib.arcade.cbPair": "Pares",
+    "lib.arcade.cbRun": "Sunod-sunod",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Jack na tugma sa starter",
+    "lib.arcade.cbHeels": "Jack bilang starter",
+    "lib.arcade.cbYou": "Ikaw",
+    "lib.arcade.cbFoe": "Kompyuter",
+    "lib.arcade.cbLast": "Huling baraha",
+    "lib.arcade.cbCount": "Kabuuan: {n}",
+    "lib.arcade.cbYouDeal": "Ikaw ang magbibigay",
+    "lib.arcade.cbFoeDeal": "Ang kompyuter ang magbibigay",
+    "lib.arcade.cbPick": "Pumili ng 2 baraha para sa crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Ang kamay mo",
+    "lib.arcade.cbFoeHand": "Kamay ng kompyuter",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 puntos",
+    "lib.arcade.cbPlayed": "Nalaro na",
+    "lib.arcade.cbToCrib": "Ilagay sa crib",
+    "lib.arcade.cbNext": "Magpatuloy",
+    "lib.arcade.cbHand": "Kamay"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Ultimate Tic-Tac-Toe",
       "desc": "Tic-tac-toe sa 9 na maliliit na board: ang cell na pipiliin mo ang magpapasya kung saan maglalaro ang kalaban; laban sa computer sa 10 level."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Ipasa ang bola sa kompyuter; ang unang makakuha ng 5 puntos ang panalo. 10 level na may palaki nang palaking bilis at husay ng kalaban."
+    },
+    "space-shooter": {
+      "name": "Space Shooter",
+      "desc": "Imaneho ang barko mo, barilin ang mga barko ng kaaway at iwasan ang putok nila; 10 level na may mas malalaking alon, gumaganti at mas matitigas na kaaway."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Umikot, umandar at bumaril para wasakin ang mga batong pangkalawakan; ang malalaking bato ay nahahati sa mas maliliit. 10 level na may mas marami at mas mabilis na bato."
+    },
+    "maze": {
+      "name": "Maze",
+      "desc": "Hanapin ang daan palabas ng maze bago maubos ang oras; 10 level mula maliit hanggang malaking maze, na may ulap sa mas matataas na level."
+    },
+    "road-cross": {
+      "name": "Tawiran ng Palaka (Frogger-style)",
+      "desc": "Patalunin ang palaka sa mga abalang kalsada at ilog na may lumulutang na troso para makauwi nang 3 beses; 10 level na may mas mabilis na trapiko at ilog sa mas matataas na level."
+    },
+    "flappy": {
+      "name": "Larong Flappy Bird-style",
+      "desc": "I-tap para magpaypay ng pakpak at lumipad sa mga siwang sa pagitan ng mga tubo; 10 level na may mas makitid na siwang at tumataas na bilis."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Talunan ang mga kaktus at yumuko sa ilalim ng mga ibon; tumakbo nang sapat na layo para ma-clear ang bawat isa sa 10 level habang patuloy na bumibilis."
+    },
+    "whack-a-mole": {
+      "name": "Whack-a-Mole (Paluin ang Nunal)",
+      "desc": "Paluin ang mga nunal na lumalabas sa mga butas bago maubos ang oras, at iwasan ang mga bomba; 10 level mula mabagal hanggang napakabilis."
+    },
+    "simon": {
+      "name": "Simon (Alaala ng Kulay)",
+      "desc": "Tandaan at ulitin ang sunud-sunod na kulay at tunog; mas mahahabang sunud-sunod sa 10 level, na may 6 na pad mula level 7."
+    },
+    "aim-trainer": {
+      "name": "Aim Trainer (Pagsasanay sa Pagtutok)",
+      "desc": "Tamaan ang mga target na random na lumilitaw at mabilis na nawawala; lumiliit ang mga target sa 10 level, at sinusukat ang reaksyon mo."
+    },
+    "quick-math": {
+      "name": "Mabilisang Math",
+      "desc": "Mag-add, magbawas, mag-multiply at mag-divide sa isip nang may pressure sa oras; 10 level mula simpleng kabuuan hanggang mga ekspresyon."
+    },
+    "reaction": {
+      "name": "Pagsubok sa Bilis ng Reaksyon",
+      "desc": "Mag-click sa sandaling maging berde ang screen; ang average mo sa 5 round ay dapat umabot sa limitasyon ng bawat level, na humihigpit sa 10 level."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Ihasik ang mga buto sa paligid ng mga hukay, hulihin ang buto ng kalaban at maglaro ulit kapag nakapunta sa imbakan mo; laruin ang kompyuter sa 10 level mula madali hanggang mahirap."
+    },
+    "snakes-ladders": {
+      "name": "Ahas at Hagdan",
+      "desc": "Magpagulong ng dice mula parisukat 1 hanggang 100, umakyat sa hagdan, iwasan ang ahas at maabot ang dulo bago ang mga kalaban; 10 level."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men's Morris",
+      "desc": "Maglagay, mag-slide at magpalipad ng mga piyesa para bumuo ng tatlo sa isang hilera at alisin ang piyesa ng kalaban; laruin ang kompyuter sa 10 level."
+    },
+    "battleship": {
+      "name": "Battleship (Digmaang-dagat)",
+      "desc": "Hanapin at lubugin ang armada ng kompyuter sa 10x10 na grid bago nito malubog ang sa iyo; 10 level habang mas matalinong humuhula ang kompyuter."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Upo Alimango Isda Hipon)",
+      "desc": "Tradisyonal na larong dice ng Vietnam: tumaya ng virtual na barya sa mga hayop at magliglig ng tatlong dice; abutin ang target na barya sa 10 level (walang totoong pera)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Tumaya sa Player, Banker o Tie na may mga baraha ayon sa karaniwang patakaran, gamit ang virtual na barya; abutin ang target na barya sa 10 level (walang totoong pera)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Larong Tatlong Baraha)",
+      "desc": "Ikumpara ang 3-barahang kamay sa dealer: tatlong magkapareho, tatlong face card, pagkatapos ay 9 na puntos pababa hanggang 0; virtual na barya, 10 level, walang totoong pera."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Markahan ang mga tinawag na numero sa 5x5 mong card at sumigaw ng BINGO bago ang mga kalabang kompyuter; mas mabilis ang pagtawag ng numero sa 10 level."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Limang Dice)",
+      "desc": "Magpagulong ng limang dice, itago ang magagandang resulta at punan ang 13 kahon ng puntos; abutin ang target na puntos sa 10 level."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Itugma ang suit o halaga, binabago ng walo ang suit; maubos ang baraha mo bago ang 1 hanggang 3 kalabang kompyuter sa 10 level."
+    },
+    "car-race": {
+      "name": "Iwas-Kotse",
+      "desc": "Lumipat ng linya para iwasan ang mga kotse sa unahan at maabot ang buong layo; 10 level na may mas maraming linya at mas mabilis na trapiko."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Tumalbog mula platform hanggang platform para umakyat nang pinakamataas nang hindi nahuhulog; 10 level na may mas kalat na platform, gumagalaw at nababasag na platform."
+    },
+    "gold-miner": {
+      "name": "Gold Miner",
+      "desc": "Ibaba ang kawit para hilahin ang ginto at diamante, iwasan ang mabibigat na bato, at abutin ang target na pera sa loob ng 60 segundo; 10 level."
+    },
+    "fruit-slice": {
+      "name": "Hiwa ng Prutas",
+      "desc": "Mag-swipe para hiwain ang mga prutas na lumilipad pataas at iwasan ang mga bomba; 10 level na may mas maraming prutas at bomba."
+    },
+    "basketball": {
+      "name": "Tira sa Basketball",
+      "desc": "I-drag at bitawan para itira ang bola sa ring sa loob ng limitadong bilang ng tira; 10 level, na may gumagalaw na ring mula level 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Barilin ang mga bula para pagdugtungin ang 3 o higit pang magkakulay at pasabugin, at alisin ang lahat bago sila umabot sa ibaba; 10 level na may mas maraming kulay."
+    },
+    "dot-chase": {
+      "name": "Habulan ng Tuldok",
+      "desc": "Kainin ang lahat ng tuldok sa maze habang iniiwasan ang mga multong humahabol sa iyo; 10 level na may mas marami at mas matatalinong multo."
+    },
+    "kakuro": {
+      "name": "Kakuro (Cross Sums)",
+      "desc": "Punan ang mga puting cell ng mga digit na 1–9 para ang bawat hanay ay umabot sa clue nito nang walang ulit; 10 level, mga grid na 5x5 hanggang 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Punan ang grid nang walang ulit sa hilera o hanay para ang bawat kulungan ay magbigay ng target nito ayon sa operasyon; 10 level, mga grid na 3x3 hanggang 6x6."
+    },
+    "word-guess": {
+      "name": "Hula ng Salita (Wordle-style)",
+      "desc": "Hulaan ang lihim na salitang Ingles gamit ang mga pahiwatig na berde, dilaw at kulay-abo; 10 level na may mga salitang 4–6 na letra at mas kaunting subok."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Hulaan ang salitang Ingles, isang letra sa bawat pagkakataon, bago maubos ang maling hula; 10 level na may mas mahahabang salita at mas kaunting pagkakamali."
+    },
+    "word-scramble": {
+      "name": "Ginulong Salita (Anagram)",
+      "desc": "Ayusin muli ang mga ginulong letra para maging salitang Ingles bago maubos ang oras; 10 level, 5 salita bawat level."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Itugma ang mga tile sa alinmang dulo ng kadena at maubos ang tile mo bago ang kompyuter; 10 level habang tumatalino ang kompyuter."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Iwasan ang mga heart at ang Queen of Spades sa larong baraha ng apat na manlalaro; mas mababang puntos ang mas mabuti; 10 level laban sa mas matatalinong kompyuter."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtual na chip)",
+      "desc": "Heads-up poker laban sa kompyuter gamit ang virtual na chip: mag-fold, mag-call o mag-raise, at manalo kapag naubusan ng chip ang kompyuter; 10 level, walang totoong pera."
+    },
+    "n-back": {
+      "name": "N-Back Memory",
+      "desc": "Panoorin ang umiilaw na parisukat at pindutin ang Tugma kapag kapareho ito ng N hakbang na nakaraan; 10 level na may N hanggang 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Mag-click para magluto ng cookies, bumili ng mga katulong na kusang nagluluto at abutin ang target sa loob ng 2 minuto; 10 level."
+    },
+    "tile-connect": {
+      "name": "Tile Connect (Onet-style)",
+      "desc": "Pagdugtungin ang magkaparehong tile sa landas na hindi hihigit sa dalawang liko at alisin ang lahat bago maubos ang oras; 10 level, mas malalaking board."
+    },
+    "jigsaw": {
+      "name": "Jigsaw ng Larawan",
+      "desc": "Palitan ang mga ginulong piraso para mabuo muli ang larawan; 10 level mula 3x3 hanggang 6x6 na piraso."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Hilahin pabalik at bitawan para ipasok ang bola sa butas sa loob ng limitasyon ng palo; 10 kurso na may mga pader at buhangin."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Magpagulong ng dice, iuwi ang mga checker mo at alisin ang mga ito bago ang kompyuter, at tamaan ang mga nag-iisa nitong checker habang daan; 10 level."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Labintatlo)",
+      "desc": "Larong baraha ng Vietnam na para sa apat: maglaro ng isa, pares, sunod-sunod at apat na magkapareho para maunang maubos ang baraha; 10 level."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Magtayo at mag-upgrade ng mga tore sa tabi ng landas para pigilan ang bawat alon ng kaaway; 10 level sa tatlong magkakaibang mapa."
+    },
+    "color-by-number": {
+      "name": "Kulay ayon sa Numero",
+      "desc": "Kulayan ang bawat parisukat ng kulay na tumutugma sa numero nito para lumitaw ang larawan; 10 larawan na mas marami ang kulay sa bawat isa."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike na walang stock: ilipat ang anumang barahang nakaharap kasama ang lahat ng nasa ibabaw nito; 10 level, mas kaunting baraha ang nakaharap habang tumataas."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Larong talon-at-hakbang na hugis-bituin laban sa kompyuter: unahin ang paglipat ng lahat ng 10 piyesa sa kabilang sulok; 10 level."
+    },
+    "mau-binh": {
+      "name": "Mậu Binh (Chinese Poker)",
+      "desc": "Ayusin ang 13 baraha sa tatlong kamay na 5, 5 at 3 baraha at talunin ang kompyuter; 5 round bawat level, 10 level."
+    },
+    "phom": {
+      "name": "Phỏm (Vietnamese Rummy)",
+      "desc": "Vietnamese rummy para sa dalawa laban sa kompyuter: humugot o kumuha ng itinapon, bumuo ng meld at mag-U; ang pinakamababang natirang puntos ang panalo; 10 level."
+    },
+    "shogi": {
+      "name": "Shogi (Chess ng Hapon)",
+      "desc": "Laruin ang shogi laban sa kompyuter: ilagay ang mga nahuling piyesa, mag-promote, at i-checkmate ang hari; 10 level na may undo."
+    },
+    "janggi": {
+      "name": "Janggi (Chess ng Korea)",
+      "desc": "Laruin ang chess ng Korea laban sa kompyuter: mga dayagonal ng palasyo, talon ng cannon sa isang piyesa, tatlong hakbang ng elephant; 10 level na may undo."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "I-flip pakaliwa at pakanan para panatilihing buhay ang bola, tamaan ang mga bumper at abutin ang target na puntos bago maubos ang 3 bola mo; 10 level."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage para sa dalawa laban sa kompyuter: crib, pegging hanggang 31, pagbilang ng kamay, karera hanggang 61 puntos; 10 level."
     }
   },
   "s": {

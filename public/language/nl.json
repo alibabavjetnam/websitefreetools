@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Kies een kleur om het hele gebied linksboven dat van jou is te vullen; het slokt naburige vakjes van die kleur op. Maak het hele bord één kleur binnen het toegestane aantal zetten.",
     "lib.arcade.note.mastermind": "De computer verbergt een rij kleuren. Kies een kleur voor elke positie en druk op Raden. Een zwarte pin = juiste kleur op de juiste plek; een witte pin = juiste kleur op de verkeerde plek. Kraak de code voordat je pogingen op zijn.",
     "lib.arcade.note.hanoi": "Verplaats alle schijven naar de laatste paal. Verplaats telkens alleen de bovenste schijf van een paal en leg nooit een grotere schijf op een kleinere. Klik op de beginpaal en dan op de doelpaal.",
-    "lib.arcade.note.pipes": "Klik op een tegel om de pijp 90° te draaien. Verbind alle pijpen tot één netwerk zonder open uiteinden (open uiteinden zijn rood)."
+    "lib.arcade.note.pipes": "Klik op een tegel om de pijp 90° te draaien. Verbind alle pijpen tot één netwerk zonder open uiteinden (open uiteinden zijn rood).",
+    "lib.arcade.pongScore": "Jij {a} – {b} CPU (eerste tot {t})",
+    "lib.arcade.kills": "Vernietigd: {n}/{t}",
+    "lib.arcade.rocksLeft": "Nog {n} rotsen",
+    "lib.arcade.timeLeft": "Nog {n} s",
+    "lib.arcade.stepsN": "Stappen: {n}",
+    "lib.arcade.crossed": "Thuis: {n}/{t}",
+    "lib.arcade.pipes": "Buizen gepasseerd: {n}/{t}",
+    "lib.arcade.distance": "Afstand: {n}/{t} m",
+    "lib.arcade.speedN": "Snelheid: {n}",
+    "lib.arcade.note.whack-a-mole": "Mollen steken hun kop uit de gaten — klik of tik op een mol om hem te raken. Raak genoeg mollen voordat de tijd om is. Vanaf level 4 zijn er bommen: als je er een raakt, verlies je punten.",
+    "lib.arcade.hole": "Gat",
+    "lib.arcade.hitsN": "Treffers: {n}/{t}",
+    "lib.arcade.note.simon": "Het spel speelt een reeks kleuren en geluiden af — herhaal die in dezelfde volgorde. Elke ronde komt er een stap bij. Haal de vereiste lengte om het level te halen. Vanaf level 7 zijn er 6 vlakken.",
+    "lib.arcade.seqN": "Reeks: {n}/{t}",
+    "lib.arcade.watch": "Kijk…",
+    "lib.arcade.yourTurnShort": "Jouw beurt",
+    "lib.arcade.note.aim-trainer": "Doelen verschijnen willekeurig en verdwijnen snel — raak er zoveel mogelijk. Ze worden kleiner en sneller. Raak genoeg doelen voordat je meer dan 5 keer mist om het level te halen.",
+    "lib.arcade.missN": "Gemist: {n}/{t}",
+    "lib.arcade.answer": "Antwoord",
+    "lib.arcade.note.quick-math": "Reken zo snel mogelijk uit je hoofd: typ het antwoord en druk op Enter. Elke vraag heeft een tijdslimiet; een fout antwoord of te laat kost een leven (je hebt er 3). Beantwoord genoeg vragen goed om het level te halen.",
+    "lib.arcade.correctN": "Goed: {n}/{t}",
+    "lib.arcade.note.reaction": "Wacht tot het scherm groen wordt en klik dan zo snel mogelijk. Te vroeg klikken is een fout (bij 3 fouten verlies je). Je gemiddelde over 5 rondes moet onder de limiet van het level liggen.",
+    "lib.arcade.roundN": "Woord {n}/{t}",
+    "lib.arcade.limitMs": "Limiet: {n} ms",
+    "lib.arcade.rxWait": "Wacht op groen…",
+    "lib.arcade.rxGo": "KLIK!",
+    "lib.arcade.rxEarly": "Te vroeg!",
+    "lib.arcade.gameArea": "Speelveld",
+    "lib.arcade.note.pong": "Beweeg de muis, sleep met je vinger of gebruik de toetsen ← → om het onderste batje te besturen. Sla de bal langs de computer; wie het eerst 5 punten haalt, wint. De bal gaat bij elke treffer sneller.",
+    "lib.arcade.note.space-shooter": "Beweeg de muis, sleep met je vinger of gebruik de toetsen ← → om te sturen; je schip schiet automatisch. Vernietig genoeg vijandelijke schepen om het level te halen en ontwijk botsingen en vijandelijk vuur. Je hebt 3 levens.",
+    "lib.arcade.note.asteroids": "← → draaien het schip, ↑ geeft gas, Spatie schiet. Vernietig alle rotsen om het level te halen; grote rotsen breken in kleinere stukken. Het schip komt aan de andere kant van het scherm weer binnen. Je hebt 3 levens.",
+    "lib.arcade.note.maze": "Gebruik de pijltjestoetsen (of veeg, of de knoppen) om van de groene stip naar de rode vlag te komen voordat de tijd om is. Vanaf level 5 is het doolhof mistig: je ziet alleen je directe omgeving en bezochte plekken blijven onthouden.",
+    "lib.arcade.note.road-cross": "Gebruik de pijltjestoetsen, veeg of de knoppen om de kikker van onder naar boven te laten springen. Ontwijk het verkeer; vanaf level 5 is het bovenste deel een rivier, spring dus op de drijvende boomstammen. Kom 3 keer thuis om het level te halen. Je hebt 3 levens.",
+    "lib.arcade.note.flappy": "Tik op het speelveld, druk op Spatie of ↑ om te fladderen. Vlieg door de openingen tussen de buizen zonder een buis, de grond of het plafond te raken. Hogere levels hebben smallere openingen en een hogere vliegsnelheid.",
+    "lib.arcade.note.runner": "Tik op het speelveld, druk op Spatie of ↑ om over cactussen te springen; houd ↓ ingedrukt om onder hoge vogels door te bukken (of spring over lage). Ren ver genoeg om het level te halen. De snelheid blijft toenemen.",
+    "lib.arcade.fire": "Vuur",
+    "lib.arcade.jump": "Spring",
+    "lib.arcade.aimTarget": "Doel",
+    "lib.game.soundOn": "Geluid aan",
+    "lib.game.soundOff": "Geluid uit",
+    "lib.arcade.note.kalah": "Jij speelt de onderste rij, de computer de bovenste; de grote kuil rechts is jouw opslag. Klik op een kuil om alle zaden op te pakken en ze tegen de klok in te verdelen, één per kuil (de opslag van je tegenstander sla je over). Als je laatste zaad in je eigen opslag valt, mag je nog een keer; als het in een lege kuil aan jouw kant valt tegenover een kuil met zaden, win je die zaden. Als één kant leeg is, gaan de zaden van de andere kant naar de opslag van de eigenaar; de grootste opslag wint.",
+    "lib.arcade.note.snakes": "Gooi de dobbelsteen en zet zoveel vakjes vooruit, van 1 tot 100. Kom je op de voet van een ladder, dan klim je omhoog; kom je op de kop van een slang, dan glij je omlaag. Vanaf level 4 moet je precies het juiste aantal gooien om op 100 te landen. Hogere levels hebben meer slangen, minder ladders en meer tegenstanders. Wie het eerst 100 bereikt, wint.",
+    "lib.arcade.square": "Vakje {n}",
+    "lib.arcade.ladderUp": "De ladder op!",
+    "lib.arcade.snakeDown": "Opgeslokt door een slang!",
+    "lib.arcade.needExact": "Je moet precies het juiste aantal gooien om op 100 te landen.",
+    "lib.arcade.note.nmm": "Elke kant heeft 9 stukken. Fase 1: plaats om de beurt stukken op lege punten. Fase 2: schuif een stuk naar een aangrenzend leeg punt. Met nog maar 3 stukken mag je naar elk leeg punt “vliegen”. Maak drie op een rij (een “molen”) om een stuk van de tegenstander te verwijderen (eerst stukken die niet in een molen staan). Je verliest als je nog 2 stukken hebt of niet kunt zetten. Jij speelt wit en begint.",
+    "lib.arcade.inHand": "Te plaatsen: {a} · {b}",
+    "lib.arcade.removePiece": "Kies een stuk van de tegenstander om te verwijderen.",
+    "lib.arcade.enemyWaters": "Vijandelijk water (klik om te vuren)",
+    "lib.arcade.yourFleet": "Jouw vloot",
+    "lib.arcade.note.battleship": "Elke kant heeft 5 schepen (lengtes 5, 4, 3, 3, 2) die willekeurig op een raster van 10x10 liggen. Schiet om de beurt op een vakje: een treffer wordt rood, een misser lichtblauw, en als je alle vakjes van een schip raakt, zinkt het. Zink als eerste de hele vijandelijke vloot om te winnen. Op hogere levels leidt de computer de posities van jouw schepen slimmer af.",
+    "lib.arcade.shipsLeft": "Schepen over: jij {a} · vijand {b}",
+    "lib.arcade.theySunk": "De vijand heeft een van jouw schepen tot zinken gebracht!",
+    "lib.arcade.theyHit": "De vijand heeft een van jouw schepen geraakt.",
+    "lib.arcade.theyMiss": "De vijand miste.",
+    "lib.arcade.youSunk": "Je hebt een vijandelijk schip tot zinken gebracht!",
+    "lib.arcade.youHit": "Raak!",
+    "lib.arcade.youMiss": "Mis.",
+    "lib.arcade.shake": "Schudden",
+    "lib.arcade.clearBets": "Inzetten wissen",
+    "lib.arcade.note.bau-cua": "Alleen virtuele munten — geen echt geld. Kies een fichewaarde, klik op de dieren om in te zetten en druk op Schudden. Voor elke dobbelsteen die overeenkomt met een dier waarop je hebt ingezet, krijg je je inzet terug plus hetzelfde bedrag voor elke overeenkomst. Haal het doelaantal munten binnen het toegestane aantal rondes om het level te halen.",
+    "lib.arcade.note.baccarat": "Alleen virtuele munten — geen echt geld. Zet in op Speler, Bankier of Gelijkspel en druk op Delen. De waarde van een hand is het laatste cijfer van het totaal (A = 1, 2–9 de kaartwaarde, 10/B/V/H = 0); de hand die het dichtst bij 9 komt, wint, en derde kaarten worden getrokken volgens de standaardregels. Speler betaalt 1:1, Bankier 0,95:1, Gelijkspel 8:1 (inzetten op Speler/Bankier worden teruggegeven bij gelijkspel). Haal het doelaantal munten binnen het toegestane aantal rondes om het level te halen.",
+    "lib.arcade.banker": "Bankier",
+    "lib.arcade.player": "Speler",
+    "lib.arcade.tie": "Gelijkspel",
+    "lib.arcade.openCards": "Onthullen",
+    "lib.arcade.note.bai-cao": "Alleen virtuele munten — geen echt geld. Elke kant krijgt 3 kaarten. Een hand scoort het laatste cijfer van het totaal (A = 1, 2–9 de kaartwaarde, 10/B/V/H = 10, dus 0 punten). Rangorde: drie gelijke (“Sáp”) is het hoogst, daarna drie plaatjes (“Ba tiên”), dan 9 punten tot 0. Zet in, druk op Delen en daarna op Onthullen om met de gever te vergelijken. Vanaf level 6 wint de gever bij gelijkstand. Haal het doelaantal munten binnen het toegestane aantal rondes om het level te halen.",
+    "lib.arcade.caoSap": "Drie gelijke",
+    "lib.arcade.caoBaTien": "Drie plaatjes",
+    "lib.arcade.caoPts": "{n} pnt",
+    "lib.arcade.note.bingo": "De computer roept getallen van 1 tot 75 om. Staat een omgeroepen getal op jouw kaart, klik er dan op om het af te strepen (het midden is gratis). Maak een rij, kolom of diagonaal vol en druk op BINGO! — je moet de computertegenstanders verslaan. Een valse BINGO! blokkeert de knop een paar seconden. Hogere levels roepen sneller om en hebben meer tegenstanders.",
+    "lib.arcade.opponentsN": "Tegenstanders: {n}",
+    "lib.arcade.falseBingo": "Nog geen volle lijn! Knop 3 seconden geblokkeerd.",
+    "lib.arcade.bingoGo": "Getallen worden omgeroepen!",
+    "lib.arcade.note.yahtzee": "Elke beurt gooi je 5 dobbelstenen maximaal 3 keer: klik op een dobbelsteen om die te houden en druk dan op Gooien om de rest opnieuw te gooien. Kies daarna een vak in de tabel om te scoren (elk vak wordt één keer gebruikt; een vak dat niet past, scoort 0). 13 beurten. De vakken Enen–Zessen geven een bonus van 35 als ze samen 63 of meer zijn. Haal de doelscore van het level om te winnen.",
+    "lib.arcade.turnN": "Beurt {n}/13",
+    "lib.arcade.pickCat": "Kies een vak om te scoren",
+    "lib.arcade.rollsLeft": "Gooien (nog {n})",
+    "lib.arcade.upperBonus": "Bonus Enen–Zessen",
+    "lib.arcade.scored": "{n} gescoord",
+    "lib.arcade.note.crazy-eights": "Speel een kaart die qua kleur of waarde past op de bovenste kaart van de aflegstapel. Achten zijn joker: speel er op elk moment een en kies een nieuwe kleur. Heb je geen speelbare kaart, pak dan van de stapel (maximaal 3 kaarten); kun je dan nog niet spelen, dan pas je. Wie het eerst zijn hand leeg heeft, wint. Hogere levels hebben meer tegenstanders en de computer speelt slimmer.",
+    "lib.arcade.opponent": "Tegenstander",
+    "lib.arcade.pileLeft": "Trekstapel: {n}",
+    "lib.arcade.pickSuit": "Kies een nieuwe kleur",
+    "lib.arcade.aiSuit": "De computer koos {s}",
+    "lib.arcade.aiPass": "De computer past.",
+    "lib.arcade.mustPlay": "Je hebt een speelbare kaart — speel die.",
+    "lib.arcade.youPass": "Je hebt 3 kaarten gepakt en past.",
+    "lib.arcade.bcGourd": "Kalebas",
+    "lib.arcade.bcCrab": "Krab",
+    "lib.arcade.bcShrimp": "Garnaal",
+    "lib.arcade.bcFish": "Vis",
+    "lib.arcade.bcRooster": "Haan",
+    "lib.arcade.bcDeer": "Hert",
+    "lib.arcade.yOnes": "Enen",
+    "lib.arcade.yTwos": "Tweeën",
+    "lib.arcade.yThrees": "Drieën",
+    "lib.arcade.yFours": "Vieren",
+    "lib.arcade.yFives": "Vijven",
+    "lib.arcade.ySixes": "Zessen",
+    "lib.arcade.yThree": "Three of a kind (drie gelijke)",
+    "lib.arcade.yFour": "Four of a kind (vier gelijke)",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Kleine straat (30)",
+    "lib.arcade.yLarge": "Grote straat (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Kans",
+    "lib.arcade.note.race": "Druk op ← → (of tik op de baan die je wilt) om van baan te wisselen en de auto's voor je te ontwijken. Je hebt 3 levens; rijd de volledige afstand om het level te halen. Hogere levels hebben meer banen en sneller verkeer.",
+    "lib.arcade.note.jump": "Het poppetje stuitert vanzelf. Druk op ← → of sleep met je vinger om op het volgende platform te landen. Blauwe platforms bewegen, bruine breken als je erop landt. Van het scherm vallen betekent verliezen; klim hoog genoeg om het level te halen.",
+    "lib.arcade.note.miner": "De haak zwaait heen en weer; druk op Spatie, ↓ of tik op het veld om hem te laten zakken. Groot goud en stenen zijn zwaar en worden langzaam opgehaald; diamanten zijn veel waard. Haal het doelbedrag voordat de 60 seconden om zijn.",
+    "lib.arcade.note.slicer": "Veeg met je vinger of de muis over het fruit om het door te snijden. Vermijd de zwarte bommen. Een stuk fruit missen of een bom doorsnijden kost een leven (je hebt er 3). Snijd genoeg fruit door om het level te halen.",
+    "lib.arcade.note.hoops": "Druk op het veld, sleep omlaag (zoals een katapult) en laat los om de bal naar de basket te schieten. Hoe verder je sleept, hoe harder de worp. Scoor genoeg punten binnen het aantal beschikbare schoten; vanaf level 4 beweegt de basket.",
+    "lib.arcade.note.bubbles": "Beweeg de muis of je vinger om te richten en klik/tik of druk op Spatie/Vuur om te schieten. Verbind 3 of meer bellen van dezelfde kleur om ze te laten knappen; bellen die hun steun verliezen, vallen. De rijen zakken langzaam, dus houd ze weg van de onderste lijn. Verwijder alle bellen om te winnen.",
+    "lib.arcade.note.chase": "Gebruik de pijltjestoetsen (of veeg / de knoppen) om te draaien en alle stippen in het doolhof op te eten terwijl je de spoken ontwijkt die je achtervolgen. Je hebt 3 levens; hogere levels hebben meer spoken die sneller zijn en slimmer jagen.",
+    "lib.arcade.height": "Hoogte: {n}/{t} m",
+    "lib.arcade.money": "Geld: {n}/{t}",
+    "lib.arcade.sliced": "Doorgesneden: {n}/{t}",
+    "lib.arcade.hoopScore": "Gescoord: {n}/{t}",
+    "lib.arcade.shotsLeft": "Nog {n} schoten",
+    "lib.arcade.bubbleLeft": "Nog {n} bellen",
+    "lib.arcade.shotsN": "Schoten: {n}",
+    "lib.arcade.dotsLeft": "Nog {n} stippen",
+    "lib.arcade.note.kakuro": "Vul de witte vakjes met cijfers van 1–9 zodat elke reeks optelt tot de aanwijzing in het zwarte vakje (het getal rechtsboven hoort bij de reeks naar rechts, het getal linksonder bij de reeks naar beneden), zonder dat een cijfer in een reeks herhaald wordt. Gebruik de pijltjestoetsen om te bewegen.",
+    "lib.arcade.note.kenken": "Vul het raster met de getallen 1 tot en met N zodat geen getal in een rij of kolom herhaald wordt. Elke dik omlijnde zone toont een doel en een bewerking (+, −, ×, ÷): de getallen in die zone moeten dat resultaat geven. Gebruik de pijltjestoetsen om te bewegen.",
+    "lib.arcade.note.wordGuess": "Raad het geheime Engelse woord. Na elke poging betekent groen de juiste letter op de juiste plek, geel dat de letter in het woord zit maar elders, en grijs dat de letter niet in het woord zit. Typ op je toetsenbord of gebruik de schermtoetsen en druk op Enter om in te dienen. Hogere levels hebben langere woorden en minder pogingen.",
+    "lib.arcade.note.hangman": "Raad het geheime Engelse woord door één letter tegelijk te kiezen. Elke foute letter voegt een onderdeel toe aan de galgfiguur; als je geen foute gokken meer hebt, verlies je. Hogere levels hebben langere woorden en minder toegestane foute gokken.",
+    "lib.arcade.note.scramble": "Zet de door elkaar gehusselde letters in de juiste volgorde tot een echt Engels woord en typ het in het antwoordvak. Elk level heeft 5 woorden; los er minstens 4 op voordat de timer van elk woord afloopt om het level te halen. De hint onthult de eerste letter.",
+    "lib.arcade.cellsLeft": "Nog {n} lege vakjes",
+    "lib.arcade.wrongN": "{n} vakjes zijn niet juist.",
+    "lib.arcade.noError": "Tot nu toe geen fouten gevonden.",
+    "lib.arcade.tooShort": "Niet genoeg letters",
+    "lib.arcade.answerIs": "Antwoord: {w}",
+    "lib.arcade.livesLeft": "Nog {n} foute gokken",
+    "lib.arcade.yourAnswer": "Jouw antwoord",
+    "lib.arcade.skip": "Overslaan",
+    "lib.arcade.notThis": "Niet juist, probeer het opnieuw.",
+    "lib.arcade.startsWith": "Eerste letter: {c}",
+    "lib.arcade.note.domino": "Elke speler krijgt 7 stenen; wie de hoogste dubbele heeft, begint. Speel een steen waarvan het getal past bij een uiteinde van de keten. Kun je niet spelen, pak dan uit de voorraad tot het kan; is die leeg, dan pas je. Wie het eerst zijn hand leeg heeft, wint; zitten beide spelers vast, dan wint het laagste aantal ogen.",
+    "lib.arcade.note.hearts": "Vier spelers, elk 13 kaarten. Klaveren 2 komt uit. Je moet de gevraagde kleur bekennen als je kunt. Elke hartenkaart is 1 punt en de schoppenvrouw is 13; wie een slag wint, krijgt de punten daarvan. Laag is beter, en als iemand alle 26 punten pakt, krijgen alle anderen er 26. Je mag pas met harten uitkomen als er harten zijn gespeeld. Na de laatste hand win je als jouw score de laagste is (of gedeeld laagste).",
+    "lib.arcade.note.holdem": "Heads-up tegen de computer met alleen virtuele fiches. Elke speler krijgt 2 privékaarten en er worden 5 gemeenschappelijke kaarten onthuld (flop, turn, river); maak de beste hand van 5 kaarten. Elke ronde kun je folden, callen (of checken) of raisen. De blinds stijgen elke 4 handen. Je wint als de computer geen fiches meer heeft, of door na het maximum aantal handen meer fiches te hebben. Er is geen echt geld mee gemoeid.",
+    "lib.arcade.dmDraw": "Pak een steen",
+    "lib.arcade.dmPass": "Pas",
+    "lib.arcade.dmEmpty": "Nog geen stenen gespeeld",
+    "lib.arcade.dmYard": "Voorraad: {n} stenen",
+    "lib.arcade.dmLeft": "Linkeruiteinde",
+    "lib.arcade.dmRight": "Rechteruiteinde",
+    "lib.arcade.dmTie": "Gelijkspel! Beide kanten staan gelijk.",
+    "lib.arcade.hrHand": "Hand {n}/{t}",
+    "lib.arcade.hrTook": "{p} wint de slag ({n} punten).",
+    "lib.arcade.hrIllegal": "Je kunt deze kaart niet spelen (bekennen, of er is nog niet met harten gespeeld).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Folden",
+    "lib.arcade.check": "Checken",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raisen naar",
+    "lib.arcade.raiseN": "Raisen naar {n}",
+    "lib.arcade.thOppFold": "De computer past; jij wint deze hand.",
+    "lib.arcade.thYouFold": "Je hebt gepast.",
+    "lib.arcade.thOppWin": "De computer wint deze hand",
+    "lib.arcade.thYouWin": "Jij wint deze hand",
+    "lib.arcade.thSplit": "Gedeelde pot",
+    "lib.arcade.thAiFold": "De computer past.",
+    "lib.arcade.thAiRaise": "De computer verhoogt naar {n}.",
+    "lib.arcade.thAiCall": "De computer called / checkt.",
+    "lib.arcade.hand.high": "Hoogste kaart",
+    "lib.arcade.hand.pair": "Paar",
+    "lib.arcade.hand.twoPair": "Twee paar",
+    "lib.arcade.hand.trips": "Drie gelijke",
+    "lib.arcade.hand.straight": "Straat",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Vier gelijke",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Een vakje licht na elkaar op in een raster van 3x3. Druk op \"Match!\" (of Spatie) als de verlichte positie dezelfde is als N stappen eerder (N staat hierboven). Je hebt minstens 80% juiste beslissingen nodig om het level te halen. Hogere levels gebruiken een grotere N.",
+    "lib.arcade.nbMatch": "Match!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Goed: {a} · Fout: {b}",
+    "lib.arcade.nbAcc": "Nauwkeurigheid: {n}%",
+    "lib.arcade.note.clicker": "Klik op de koekje om koekjes te bakken en besteed ze aan helpers die automatisch bakken (de prijzen stijgen bij elke aankoop). Bak het doelaantal koekjes binnen 2 minuten om het level te halen.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Bakkende oma",
+    "lib.arcade.ckFarm": "Boerderij",
+    "lib.arcade.ckMine": "Suikermijn",
+    "lib.arcade.ckFactory": "Fabriek",
+    "lib.arcade.ckCookie": "Koekje",
+    "lib.arcade.ckEarned": "Gebakken: {n}/{t}",
+    "lib.arcade.chips2": "Koekjes: {n}",
+    "lib.arcade.ckCps": "{n} koekjes/seconde",
+    "lib.arcade.note.onet": "Selecteer twee identieke tegels die met een pad van maximaal 2 bochten verbonden kunnen worden zonder andere tegels te kruisen, om ze te verwijderen. Verwijder alle tegels voordat de tijd om is om te winnen. Als er geen zetten meer zijn, kun je schudden (beperkt aantal keren).",
+    "lib.arcade.shuffle": "Schudden",
+    "lib.arcade.tilesLeft": "Nog {n} tegels",
+    "lib.arcade.autoShuffle": "Geen zetten meer — automatisch geschud.",
+    "lib.arcade.note.jigsaw": "De afbeelding is in stukjes gesneden en door elkaar gehusseld. Tik op het ene stukje en dan op een ander om ze te ruilen, en bouw de afbeelding na zoals de voorbeeldafbeelding. Stukjes op de juiste plek krijgen een groene rand. Hogere levels hebben meer stukjes.",
+    "lib.arcade.jgRef": "Voorbeeldafbeelding",
+    "lib.arcade.jgPlaced": "Op zijn plek: {a}/{b}",
+    "lib.arcade.golfStrokes": "Slagen: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Jij speelt de witte schijven en beweegt van rechtsboven rond naar rechtsonder (jouw thuisbord). Gooi de dobbelstenen, klik op de schijf die je wilt verplaatsen en klik dan op een gemarkeerde bestemming. Als je landt op een punt met precies één tegenstanderschijf, sla je die naar de middenbalk en die speler moet hem eerst weer inbrengen. Je mag niet landen op een punt met twee of meer tegenstanderschijven. Zodra al je 15 schijven in je thuisbord staan (de laatste 6 punten), mag je ze van het bord halen. Wie als eerste alle 15 schijven van het bord haalt, wint.",
+    "lib.arcade.bgRoll": "Gooi de dobbelstenen",
+    "lib.arcade.bgOff": "Van het bord halen",
+    "lib.arcade.bgRollFirst": "Gooi de dobbelstenen",
+    "lib.arcade.bgInfo": "Af: jij {a} · computer {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Je hebt geen geldige zet meer.",
+    "lib.arcade.note.tienlen": "Vier spelers, elk 13 kaarten. Rangorde van laag naar hoog: 3, 4, … K, A, 2; kleuren van laag naar hoog: schoppen, klaveren, ruiten, harten. Wie schoppen 3 heeft, begint. Speel een enkele kaart, een paar, drie gelijke, vier gelijke of een reeks van 3 of meer opeenvolgende kaarten (geen 2en). De volgende speler moet hetzelfde type hoger spelen, of passen; vier gelijke kunnen één 2 of een paar 2en verslaan. Als alle anderen passen, mag de laatste speler weer vrij uitkomen. Wie het eerst zijn hand leeg heeft, wint. Selecteer kaarten en druk op Speel.",
+    "lib.arcade.tlPlay": "Speel",
+    "lib.arcade.tlPass": "Pas",
+    "lib.arcade.tlClear": "Selectie wissen",
+    "lib.arcade.tlPassed": "gepast",
+    "lib.arcade.tlFree": "Tafel leeg — je mag vrij uitkomen",
+    "lib.arcade.tlLeft": "Kaarten over: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} past.",
+    "lib.arcade.tlBad": "De geselecteerde kaarten vormen geen geldige combinatie.",
+    "lib.arcade.tlLow": "Deze combinatie is niet hoog genoeg om de tafel te verslaan.",
+    "lib.arcade.note.td": "Tik op een leeg vakje (niet op het pad) om een schiettoren te bouwen, wat goud kost; tik nogmaals op een toren om hem te upgraden (tot level 5). Torens schieten automatisch op de vijand die het verst is gekomen binnen bereik. Versla vijanden om meer goud te verdienen; als 15 vijanden het einde bereiken, verlies je. Overleef alle golven om het level te halen.",
+    "lib.arcade.tdInfo": "Goud: {g} · Golf {w}/{t}",
+    "lib.arcade.tdCost": "Toren: {n}",
+    "lib.arcade.note.colorNum": "Elk vakje heeft een nummer dat bij een kleur in het palet hoort. Kies een kleur en tik dan op de vakjes met dat nummer om ze te kleuren; tikken met de verkeerde kleur kleurt niets. Kleur elk vakje goed in om de afbeelding af te maken. Hogere levels hebben meer kleuren.",
+    "lib.arcade.cnWrong": "Verkeerde kleur — controleer het nummer op het vakje.",
+    "lib.arcade.note.yukon": "Zoals Klondike, maar zonder voorraadstapel: elke open kaart kan samen met alle kaarten erboven worden verplaatst, ook als die niet op volgorde liggen; alleen de eerste kaart moet op de doelkolom passen (aflopend, om en om rood en zwart; een Heer gaat naar een lege kolom). Bouw alle 52 kaarten op de vier fundamenten op van Aas tot Heer. Lage levels beginnen met meer kaarten die al open liggen.",
+    "lib.arcade.yukonFree": "Gesloten kaarten: {n}",
+    "lib.arcade.note.chinesechk": "Jij speelt de blauwe stukken in de hoek rechts; verplaats alle 10 naar de tegenoverliggende hoek links voordat de computer dat doet. Elke beurt verplaats je één stuk: stap naar een leeg aangrenzend gat, of spring over een willekeurig stuk naar het lege gat er direct achter, en blijf springen zo vaak als je wilt. Tik op een van je stukken en tik dan op een groen gat om te zetten.",
+    "lib.arcade.ccTurn": "Jouw beurt · Beurt {n}",
+    "lib.arcade.ccDraw": "Geen beurten meer — het is gelijkspel.",
+    "lib.arcade.note.maubinh": "Jij en de computer krijgen elk 13 kaarten en ordenen ze in 3 handen: een achterhand van 5 kaarten, een middenhand van 5 kaarten en een voorhand van 3 kaarten. De achterhand moet minstens even sterk zijn als de middenhand, en de middenhand minstens even sterk als de voorhand; anders is je indeling ongeldig (“binh lủng”) en verlies je de hele ronde. Tik op een kaart en dan op de rij waar hij naartoe moet (tik op een geplaatste kaart om hem terug te nemen). Elke hand die je wint, levert 1 punt op; alle 3 winnen levert 6 op. Speel 5 rondes — een positief totaal haalt het level. De voorhand kan alleen hoogste kaart, een paar of drie gelijke zijn.",
+    "lib.arcade.mbHigh": "Hoogste kaart",
+    "lib.arcade.mbPair": "Paar",
+    "lib.arcade.mbTwoPair": "Twee paar",
+    "lib.arcade.mbTrips": "Drie gelijke",
+    "lib.arcade.mbStraight": "Straat",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Vier gelijke",
+    "lib.arcade.mbSflush": "Straight flush",
+    "lib.arcade.mbBack": "Achterhand",
+    "lib.arcade.mbMid": "Middenhand",
+    "lib.arcade.mbFront": "Voorhand",
+    "lib.arcade.mbFoe": "Computer",
+    "lib.arcade.mbYou": "Jij",
+    "lib.arcade.mbFoul": "Ongeldige indeling!",
+    "lib.arcade.mbFoeFoul": "Computer heeft een ongeldige indeling!",
+    "lib.arcade.mbConfirm": "Kaarten tonen",
+    "lib.arcade.mbReset": "Wissen",
+    "lib.arcade.mbHand": "Jouw hand",
+    "lib.arcade.mbRound": "Ronde {a}/{b}",
+    "lib.arcade.mbTotal": "Totaal: {n}",
+    "lib.arcade.mbFinish": "Afronden",
+    "lib.arcade.mbNext": "Volgende ronde",
+    "lib.arcade.mbDraw": "Gelijk aantal punten — speel opnieuw.",
+    "lib.arcade.mbAutoMsg": "Hier is een voorgestelde indeling. Je kunt die aanpassen voordat je de kaarten toont.",
+    "lib.arcade.note.phom": "Twee spelers; elk krijgt 9 kaarten (wie begint, krijgt er 10). Een combinatie is 3 of meer kaarten van dezelfde waarde, of 3 of meer opeenvolgende kaarten van dezelfde kleur (Aas is alleen laag). Trek in je beurt een kaart van de stapel, of neem de kaart die je tegenstander net heeft afgelegd als die samen met je hand een combinatie vormt (een genomen kaart moet je houden), en leg dan één kaart af. Als elke speler 4 kaarten heeft afgelegd, eindigt de ronde en wint wie het laagste totaal aan kaarten buiten combinaties heeft (Aas = 1 … Heer = 13). Zitten na een afleg al je kaarten in combinaties, dan ga je uit (“Ù”) en win je meteen. Kaarten met een groene rand horen bij je beste set combinaties.",
+    "lib.arcade.pmDraw": "Trekken",
+    "lib.arcade.pmEat": "Aflegkaart nemen",
+    "lib.arcade.pmThrow": "Afleggen",
+    "lib.arcade.pmFoeAte": "De computer nam jouw kaart.",
+    "lib.arcade.pmFoeU": "De computer ging uit!",
+    "lib.arcade.pmTurn": "Beurt {a}/{b}",
+    "lib.arcade.pmLeft": "Buiten combinaties: {n}",
+    "lib.arcade.pmDeck": "Stapel: {n}",
+    "lib.arcade.pmFoeHand": "Hand van de computer",
+    "lib.arcade.pmFoeDisc": "Aflegkaarten van de computer",
+    "lib.arcade.pmFoeEaten": "Computer nam",
+    "lib.arcade.pmMyDisc": "Jouw aflegkaarten",
+    "lib.arcade.pmAte": "Je hebt deze kaart genomen — houd hem in een combinatie.",
+    "lib.arcade.pmKeep": "Een genomen kaart moet je houden — leg een andere kaart af.",
+    "lib.arcade.pmU": "Uit! Je wint meteen.",
+    "lib.arcade.pmYou": "Jij",
+    "lib.arcade.pmFoe": "Computer",
+    "lib.arcade.pmDraw2": "Gelijk aantal punten.",
+    "lib.arcade.note.shogi": "Shogi is Japans schaken. Jij speelt de onderste kant en begint; de stukken van de computer wijzen de andere kant op. Geslagen stukken komen in je hand en kunnen op elk leeg vakje worden neergezet in plaats van een zet te doen (nooit een pion in een lijn waar je al een niet-gepromoveerde pion hebt, en nooit een stuk op een rij waar het niet meer kan bewegen). Een stuk dat naar, uit of binnen de laatste drie rijen van de tegenstander beweegt, mag promoveren (behalve Koning en Goud); promotie is verplicht als een stuk anders geen zetten meer zou hebben. Zet de vijandelijke Koning schaakmat om te winnen. Kanji: 歩 pion, 香 lans, 桂 paard, 銀 zilver, 金 goud, 角 loper, 飛 toren, 玉 koning; と, 馬, 竜 en andere rode stukken zijn gepromoveerd.",
+    "lib.arcade.sgPromote": "Promoveren",
+    "lib.arcade.sgKeep": "Niet promoveren",
+    "lib.arcade.sgCheck": "Je staat schaak!",
+    "lib.arcade.sgWin": "Schaakmat — je wint.",
+    "lib.arcade.sgLose": "Je bent schaakmat gezet.",
+    "lib.arcade.sgAskPromote": "Dit stuk promoveren?",
+    "lib.arcade.note.janggi": "Janggi is Koreaans schaken. Jij speelt de blauwe stukken onderaan en begint. In tegenstelling tot xiangqi is er geen rivier en hebben beide paleizen diagonale lijnen. De Generaal en de Wachters zetten één stap langs de paleislijnen (diagonalen inbegrepen); de Wagen glijdt en slaat ook langs paleisdiagonalen; het Kanon moet over precies één stuk springen (geen ander Kanon) om te bewegen of te slaan, en kan geen Kanon slaan; het Paard zet één punt recht en dan één diagonaal, en de Olifant één recht en dan twee diagonaal, beide geblokkeerd als er een stuk in de weg staat; Soldaten gaan vooruit of opzij, en diagonaal vooruit binnen het vijandelijke paleis. De twee Generaals mogen elkaar nooit aankijken. Zet de vijandelijke Generaal schaakmat om te winnen. De computer past nooit.",
+    "lib.arcade.jgCheck": "Je staat schaak!",
+    "lib.arcade.jgWin": "Schaakmat — je wint.",
+    "lib.arcade.jgLose": "Je bent schaakmat gezet.",
+    "lib.arcade.note.pinball": "Druk op Spatie, Omhoog of tik op de tafel om de bal te lanceren. Houd Links ingedrukt (of raak de linkerhelft van de tafel aan) om de linkerflipper omhoog te brengen en Rechts (of de rechterhelft) voor de rechter — tik liever in ritme dan ingedrukt te houden. Ronde bumpers geven elk 100 punten. Je hebt 3 ballen; haal de doelscore voordat ze op zijn om het level te halen.",
+    "lib.arcade.pinBalls": "Ballen: {n} · Doel: {t}",
+    "lib.arcade.note.cribbage": "Cribbage voor twee spelers, een race naar 61 punten. Bij elke deal krijg je 6 kaarten en leg je er 2 gesloten in de crib (die is van de gever). Er wordt een startkaart opengedraaid. Speel daarna om de beurt kaarten open, waarbij het lopende totaal nooit boven 31 komt: 15 of 31 halen levert 2 op, de laatste kaart evenaren levert 2/6/12 op, een reeks van 3 of meer (in willekeurige volgorde) levert evenveel punten op als de lengte, en als niemand kan spelen, scoort de laatste speler 1 (“Go”). Daarna wordt elke hand van 4 geteld met de startkaart: elke combinatie met totaal 15 levert 2 op, elk paar 2, een reeks van 3+ de lengte, vier kaarten van één kleur 4 (5 met de startkaart), en een Boer van de kleur van de startkaart 1. De niet-gever telt eerst, daarna telt de gever zijn hand en de crib.",
+    "lib.arcade.cbFifteen": "Vijftien",
+    "lib.arcade.cbPair": "Paar",
+    "lib.arcade.cbRun": "Reeks",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Boer van de startkleur",
+    "lib.arcade.cbHeels": "Boer als startkaart",
+    "lib.arcade.cbYou": "Jij",
+    "lib.arcade.cbFoe": "Computer",
+    "lib.arcade.cbLast": "Laatste kaart",
+    "lib.arcade.cbCount": "Totaal: {n}",
+    "lib.arcade.cbYouDeal": "Jij deelt",
+    "lib.arcade.cbFoeDeal": "Computer deelt",
+    "lib.arcade.cbPick": "Kies 2 kaarten voor de crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Jouw hand",
+    "lib.arcade.cbFoeHand": "Hand van de computer",
+    "lib.arcade.cbStarter": "Startkaart",
+    "lib.arcade.cbZero": "0 punten",
+    "lib.arcade.cbPlayed": "Gespeeld",
+    "lib.arcade.cbToCrib": "In de crib leggen",
+    "lib.arcade.cbNext": "Doorgaan",
+    "lib.arcade.cbHand": "Hand"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Ultieme boter-kaas-en-eieren",
       "desc": "Boter-kaas-en-eieren over 9 kleine borden: het vakje dat je kiest bepaalt waar je tegenstander moet spelen; tegen de computer in 10 levels."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Sla de bal langs de computer; wie het eerst 5 punten haalt, wint. 10 levels met een snellere, scherpere tegenstander."
+    },
+    "space-shooter": {
+      "name": "Space Shooter",
+      "desc": "Bestuur je schip, schiet vijandelijke schepen neer en ontwijk hun vuur; 10 levels met grotere golven, terugschietende en sterkere vijanden."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Draai, geef gas en schiet om de ruimterotsen te breken; grote rotsen splitsen in kleinere. 10 levels met meer en snellere rotsen."
+    },
+    "maze": {
+      "name": "Doolhof",
+      "desc": "Vind de uitgang van het doolhof voordat de tijd om is; 10 levels van klein naar groot, met mist op hogere levels."
+    },
+    "road-cross": {
+      "name": "Straat oversteken (Frogger-stijl)",
+      "desc": "Laat de kikker over drukke wegen en rivieren met drijvende boomstammen springen om 3 keer thuis te komen; 10 levels met sneller verkeer en op hogere levels een rivier."
+    },
+    "flappy": {
+      "name": "Spel in Flappy Bird-stijl",
+      "desc": "Tik om te fladderen en vlieg door de openingen tussen de buizen; 10 levels met smallere openingen en toenemende snelheid."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Spring over cactussen en duik onder vogels door; ren ver genoeg om elk van de 10 levels te halen terwijl de snelheid blijft stijgen."
+    },
+    "whack-a-mole": {
+      "name": "Mollen meppen",
+      "desc": "Mep de mollen die uit de gaten komen voordat de tijd om is en ontwijk de bommen; 10 levels van langzaam tot supersnel."
+    },
+    "simon": {
+      "name": "Simon (kleurengeheugen)",
+      "desc": "Onthoud en herhaal de reeks kleuren en geluiden; langere reeksen over 10 levels, met 6 vlakken vanaf level 7."
+    },
+    "aim-trainer": {
+      "name": "Richttrainer",
+      "desc": "Raak de doelen die willekeurig verschijnen en snel verdwijnen; de doelen worden kleiner over 10 levels en je reactietijd wordt gemeten."
+    },
+    "quick-math": {
+      "name": "Snel rekenen",
+      "desc": "Tel op, trek af, vermenigvuldig en deel in je hoofd onder tijdsdruk; 10 levels van eenvoudige sommen tot uitdrukkingen."
+    },
+    "reaction": {
+      "name": "Reactietijdtest",
+      "desc": "Klik op het moment dat het scherm groen wordt; je gemiddelde over 5 rondes moet binnen de limiet van elk level blijven, die over 10 levels strakker wordt."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Verdeel zaden over de kuilen, win de zaden van je tegenstander en zet nog een keer als je in je opslag landt; speel tegen de computer over 10 levels van makkelijk tot moeilijk."
+    },
+    "snakes-ladders": {
+      "name": "Slangen en ladders",
+      "desc": "Gooi de dobbelsteen van vakje 1 naar 100, klim ladders, ontwijk slangen en bereik de finish vóór je tegenstanders; 10 levels."
+    },
+    "nine-mens-morris": {
+      "name": "Molenspel (Nine Men’s Morris)",
+      "desc": "Plaats, schuif en vlieg met je stukken om drie op een rij te maken en stukken van je tegenstander te verwijderen; speel tegen de computer over 10 levels."
+    },
+    "battleship": {
+      "name": "Zeeslag",
+      "desc": "Vind en zink de vloot van de computer op een raster van 10x10 voordat hij die van jou zinkt; 10 levels waarin de computer slimmer afleidt."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (kalebas, krab, vis, garnaal)",
+      "desc": "Traditioneel Vietnamees dobbelspel: zet virtuele munten in op de dieren en schud drie dobbelstenen; haal het doelaantal munten over 10 levels (geen echt geld)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Zet in op Speler, Bankier of Gelijkspel met kaarten die volgens de standaardregels worden gedeeld, met virtuele munten; haal het doelaantal munten over 10 levels (geen echt geld)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (kaartspel met drie kaarten)",
+      "desc": "Vergelijk handen van 3 kaarten met de gever: drie gelijke, drie plaatjes, dan 9 punten tot 0; virtuele munten, 10 levels, geen echt geld."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Streep de omgeroepen getallen af op je kaart van 5x5 en roep BINGO vóór de computertegenstanders; de getallen worden over 10 levels sneller omgeroepen."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (vijf dobbelstenen)",
+      "desc": "Gooi vijf dobbelstenen, houd de goede en vul 13 scorevakken; haal de doelscore over 10 levels."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Speel kleur of waarde bij, achten veranderen de kleur; maak je hand leeg vóór 1 tot 3 computertegenstanders over 10 levels."
+    },
+    "car-race": {
+      "name": "Autorace-ontwijkspel",
+      "desc": "Wissel van baan om de auto's voor je te ontwijken en rijd de volledige afstand; 10 levels met meer banen en sneller verkeer."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Stuiter van platform naar platform en klim zo hoog mogelijk zonder te vallen; 10 levels met verder uit elkaar liggende, bewegende en brekende platforms."
+    },
+    "gold-miner": {
+      "name": "Goudzoeker",
+      "desc": "Laat de haak zakken om goud en diamanten binnen te halen, vermijd zware stenen en haal het doelbedrag binnen 60 seconden; 10 levels."
+    },
+    "fruit-slice": {
+      "name": "Fruit snijden",
+      "desc": "Veeg om het opvliegende fruit door te snijden en ontwijk de bommen; 10 levels met meer fruit en meer bommen."
+    },
+    "basketball": {
+      "name": "Basketbal schieten",
+      "desc": "Sleep en laat los om de bal binnen een beperkt aantal schoten in de basket te gooien; 10 levels, met een bewegende basket vanaf level 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Schiet bellen om er 3 of meer van dezelfde kleur te verbinden en te laten knappen, en ruim ze allemaal op voordat ze de onderkant bereiken; 10 levels met meer kleuren."
+    },
+    "dot-chase": {
+      "name": "Stippenjacht",
+      "desc": "Eet alle stippen in het doolhof op terwijl je de spoken ontwijkt die je achtervolgen; 10 levels met meer en slimmere spoken."
+    },
+    "kakuro": {
+      "name": "Kakuro (kruissommen)",
+      "desc": "Vul de witte vakjes met cijfers van 1–9 zodat elke reeks optelt tot de aanwijzing, zonder herhaling; 10 levels, rasters van 5x5 tot 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Vul het raster zonder herhaling in rijen of kolommen, zodat elke zone haar doel haalt met haar bewerking; 10 levels, rasters van 3x3 tot 6x6."
+    },
+    "word-guess": {
+      "name": "Woord raden (Wordle-stijl)",
+      "desc": "Raad het geheime Engelse woord met groene, gele en grijze hints; 10 levels met woorden van 4–6 letters en minder pogingen."
+    },
+    "hangman": {
+      "name": "Galgje",
+      "desc": "Raad het Engelse woord letter voor letter voordat je geen foute gokken meer hebt; 10 levels met langere woorden en minder foute gokken."
+    },
+    "word-scramble": {
+      "name": "Woordpuzzel (anagram)",
+      "desc": "Zet door elkaar gehusselde letters in de juiste volgorde tot een Engels woord voordat de tijd om is; 10 levels, 5 woorden per level."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Leg stenen aan een van beide uiteinden van de keten en maak je hand leeg vóór de computer; 10 levels waarin de computer slimmer wordt."
+    },
+    "hearts": {
+      "name": "Hearts (Hartenjagen)",
+      "desc": "Vermijd harten en de schoppenvrouw in een kaartspel voor vier spelers; een lagere score is beter; 10 levels tegen slimmere computerspelers."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuele fiches)",
+      "desc": "Heads-up poker tegen de computer met virtuele fiches: fold, call of raise, en win als de computer geen fiches meer heeft; 10 levels, geen echt geld."
+    },
+    "n-back": {
+      "name": "N-Back-geheugen",
+      "desc": "Let op het verlichte vakje en druk op Match als het hetzelfde is als N stappen eerder; 10 levels met N tot 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Klik om koekjes te bakken, koop helpers die automatisch bakken en haal het doel binnen 2 minuten; 10 levels."
+    },
+    "tile-connect": {
+      "name": "Tegels verbinden (Onet-stijl)",
+      "desc": "Verbind gelijke tegels met een pad van maximaal twee bochten en ruim het bord op voordat de tijd om is; 10 levels, grotere borden."
+    },
+    "jigsaw": {
+      "name": "Fotopuzzel",
+      "desc": "Ruil de door elkaar gehusselde stukjes om de afbeelding opnieuw op te bouwen; 10 levels van 3x3 tot 6x6 stukjes."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Trek terug en laat los om de bal binnen de slaglimiet in het hole te putten; 10 banen met muren en zand."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Gooi de dobbelstenen, race met je schijven naar huis en haal ze van het bord vóór de computer, terwijl je onderweg zijn blote schijven slaat; 10 levels."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Dertien)",
+      "desc": "Het Vietnamese kaartspel voor vier waarin je je kaarten kwijt moet: speel enkele kaarten, paren, reeksen en vieren om als eerste je hand leeg te hebben; 10 levels."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Bouw en upgrade torens langs het pad om elke golf vijanden te stoppen; 10 levels op drie verschillende kaarten."
+    },
+    "color-by-number": {
+      "name": "Kleuren op nummer",
+      "desc": "Kleur elk vakje in met de kleur die bij het nummer hoort om de afbeelding te onthullen; 10 afbeeldingen met telkens meer kleuren."
+    },
+    "yukon": {
+      "name": "Yukon-patience",
+      "desc": "Klondike zonder voorraadstapel: verplaats elke open kaart met alles wat erop ligt; 10 levels, steeds minder kaarten open naarmate je verder komt."
+    },
+    "chinese-checkers": {
+      "name": "Chinese dammen",
+      "desc": "Stervormig hop-en-stapspel tegen de computer: verplaats als eerste alle 10 stukken naar de tegenoverliggende hoek; 10 levels."
+    },
+    "mau-binh": {
+      "name": "Mậu Binh (Chinees poker)",
+      "desc": "Orden 13 kaarten in drie handen van 5, 5 en 3 kaarten en versla de computer; 5 rondes per level, 10 levels."
+    },
+    "phom": {
+      "name": "Phỏm (Vietnamese rummy)",
+      "desc": "Vietnamese rummy voor twee spelers tegen de computer: trek of neem een aflegkaart, vorm combinaties en ga uit; de laagste restpunten winnen; 10 levels."
+    },
+    "shogi": {
+      "name": "Shogi (Japans schaken)",
+      "desc": "Speel shogi tegen de computer: zet geslagen stukken terug, promoveer en zet de koning schaakmat; 10 levels met zet terugnemen."
+    },
+    "janggi": {
+      "name": "Janggi (Koreaans schaken)",
+      "desc": "Speel Koreaans schaken tegen de computer: paleisdiagonalen, kanonsprongen over één stuk, olifanten met drie stappen; 10 levels met zet terugnemen."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Flip links en rechts om de bal in leven te houden, raak de bumpers en haal de doelscore voordat je 3 ballen op zijn; 10 levels."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage voor twee tegen de computer: crib, pegging tot 31, handen tellen, race naar 61 punten; 10 levels."
     }
   },
   "s": {

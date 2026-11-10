@@ -207,3 +207,5 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
   - Build gộp cả 44 công cụ một lượt từng gây lỗi 404 (module không nạp), nên kết quả "sạch" là sai. Phải build và kiểm tra từng công cụ riêng
   - Công cụ kiểm tra phải nạp từ điển chrome thật (`__WFT_I18N__` từ `/language/en.js`), nếu không tên nhóm/công cụ trong menu sẽ báo nhầm là còn tiếng Việt
 - Bước tiếp theo: render thật từng công cụ ở en/ja/zh bằng trình duyệt (build từng công cụ riêng, nạp `/language/<lang>.js`), sửa chuỗi còn sót trong `public/language/*.json`
+
+- Dịch đợt 4-12 (11/11/2026): đã gộp đủ 100 ngôn ngữ (AI dịch, chưa người bản ngữ rà; yếu: mg, ga, eu, rw, bho, ig, ht, zu)

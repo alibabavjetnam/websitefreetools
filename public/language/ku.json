@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kaxezên mane: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} derbas dibe.",
     "lib.arcade.tlBad": "Kaxezên hilbijartî ne komeke derbasdar in.",
-    "lib.arcade.tlLow": "Ev kom ne têra bilind e ku maseyê bişkîne."
+    "lib.arcade.tlLow": "Ev kom ne têra bilind e ku maseyê bişkîne.",
+    "lib.arcade.note.td": "Li çargoşeyeke vala (ne li rê) bitikîne da ku burceke gulebarankirinê ava bikî, ku zêrê dixwaze; dîsa li burcê bitikîne da ku wê pêşve bibî (heta asta 5). Burc bi xwe li dijminê ku di nav rêza wan de herî dûr çûye gulebaran dikin. Dijminan têk bibe da ku zêrê zêdetir bidestxînî; heke 15 dijmin bigihîjin dawiyê, tu têk diçî. Di hemû pêlan de sax bimîne da ku astê biqedînî.",
+    "lib.arcade.tdInfo": "Zêr: {g} · Pêl {w}/{t}",
+    "lib.arcade.tdCost": "Burc: {n}",
+    "lib.arcade.note.colorNum": "Her çargoşe jimareyeke wê heye ku bi rengekî di paletê de re hevdu dikeve. Rengekî hilbijêre, paşê li çargoşeyên bi wê jimareyê bitikîne da ku wan boyax bikî; bi rengê şaş tiştek nayê boyaxkirin. Hemû çargoşeyan rast boyax bike da ku wêne biqedîne. Astên bilindtir rengên zêdetir hene.",
+    "lib.arcade.cnWrong": "Rengê şaş — jimareya li ser çargoşeyê kontrol bike.",
+    "lib.arcade.note.yukon": "Mîna Klondike lê bê stock: her kaxizeke rûyê wê li jor dikare bi hemû kaxizên li ser xwe re were guhastin, hetta ku ne li pey hev bin; tenê kaxiza yekem divê li stûna armancê bigire (daketî, sor û reş bi alternatîf; Şah li stûneke vala diçe). Hemû 52 kaxizan li ser çar bingehan ji Aceyê heta Şah ava bike. Astên nizm bi kaxizên zêdetir ên ku ji berê ve rûyê wan li jor in dest pê dikin.",
+    "lib.arcade.yukonFree": "Kaxizên rûyê wan li jêr: {n}",
+    "lib.arcade.note.chinesechk": "Tu bi perçeyên şîn ên li quncikê rastê dilîzî; hemû 10 yan ber bi quncikê berevajî yê çepê re bibe berî komputerê. Di her nobetê de tu perçeyekî digerînî: gavekê li qulika vala ya cîran biavêje, an jî li ser her perçeyekê bipekîne û li qulika vala ya rast li pişt wê dakeve, û heta ku bixwazî dikarî bipekînî. Li yek ji perçeyên xwe bitikîne, paşê li qulikeke kesk bitikîne da ku bigerînî.",
+    "lib.arcade.ccTurn": "Nobeta te · Nobeta {n}",
+    "lib.arcade.ccDraw": "Nobet xilas bûn — wekhev.",
+    "lib.arcade.note.maubinh": "Tu û komputer her yek 13 kaxizan werdigirin û wan di 3 destan de rêz dikin: desta paşîn a 5 kaxizî, desta navîn a 5 kaxizî û desta pêşîn a 3 kaxizî. Desta paşîn divê bi kêmanî bi qasî ya navîn xurt be, û ya navîn bi kêmanî bi qasî ya pêşîn; wekî din rêzkirina te şaş e û tu tevahiya gera têk diçî. Li kaxizekê bitikîne, paşê li rêza ku diçe wir bitikîne (li kaxizeke danî bitikîne da ku vegerînî). Her desta ku tu bi dest dixî 1 xal e; heke her 3 bi dest bixî, 6 xal e. 5 geran bilîze — berhevoka erênî astê derbas dike. Desta pêşîn tenê dikare kaxiza bilind, cot, an sê yekjimar be.",
+    "lib.arcade.mbHigh": "Kaxiza bilind",
+    "lib.arcade.mbPair": "Cot",
+    "lib.arcade.mbTwoPair": "Du cot",
+    "lib.arcade.mbTrips": "Sê yekjimar",
+    "lib.arcade.mbStraight": "Rêz",
+    "lib.arcade.mbFlush": "Heman reng",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Çar yekjimar",
+    "lib.arcade.mbSflush": "Rêza heman reng",
+    "lib.arcade.mbBack": "Desta paşîn",
+    "lib.arcade.mbMid": "Desta navîn",
+    "lib.arcade.mbFront": "Desta pêşîn",
+    "lib.arcade.mbFoe": "Komputer",
+    "lib.arcade.mbYou": "Tu",
+    "lib.arcade.mbFoul": "Rêzkirin şaş e!",
+    "lib.arcade.mbFoeFoul": "Rêzkirina komputerê şaş e!",
+    "lib.arcade.mbConfirm": "Kaxizan nîşan bide",
+    "lib.arcade.mbReset": "Paqij bike",
+    "lib.arcade.mbHand": "Desta te",
+    "lib.arcade.mbRound": "Gera {a}/{b}",
+    "lib.arcade.mbTotal": "Giştî: {n}",
+    "lib.arcade.mbFinish": "Biqedîne",
+    "lib.arcade.mbNext": "Gera pêş",
+    "lib.arcade.mbDraw": "Di xalan de wekhev — dîsa bilîze.",
+    "lib.arcade.mbAutoMsg": "Li vir rêzkirineke pêşniyarkirî heye. Tu dikarî berî nîşandana kaxizan wê biguherînî.",
+    "lib.arcade.note.phom": "Du lîstikvan; her yek 9 kaxizan werdigire (yê ku pêşî dilîze 10). Meld 3 an zêdetir kaxizên bi heman nirxê ne, an 3 an zêdetir kaxizên li pey hev ên bi heman rengî (As tenê nizm e). Di nobeta xwe de kaxizekê ji deste bikişîne, an kaxiza ku dijmin nû avêtiye hilde heke bi desta te re meldekê çêbike (kaxiza hilgirtî divê bê girtin), paşê kaxizekê biavêje. Gava her lîstikvan 4 kaxiz avêt, ger diqede û yê ku berhevoka kaxizên bê meld kêmtir e dibe serkeftî (As = 1 … Şah = 13). Heke piştî avêtinê hemû kaxizên te di meldan de bin tu derdikevî („U“) û tavilê serdikevî. Kaxizên bi çarçoveya kesk di meldên te yên herî baş de ne.",
+    "lib.arcade.pmDraw": "Bikişîne",
+    "lib.arcade.pmEat": "Ya avêtî hilde",
+    "lib.arcade.pmThrow": "Biavêje",
+    "lib.arcade.pmFoeAte": "Komputer kaxiza te hilda.",
+    "lib.arcade.pmFoeU": "Komputer derket!",
+    "lib.arcade.pmTurn": "Nobeta {a}/{b}",
+    "lib.arcade.pmLeft": "Bê meld: {n}",
+    "lib.arcade.pmDeck": "Deste: {n}",
+    "lib.arcade.pmFoeHand": "Desta komputerê",
+    "lib.arcade.pmFoeDisc": "Avêtinên komputerê",
+    "lib.arcade.pmFoeEaten": "Komputer hilda",
+    "lib.arcade.pmMyDisc": "Avêtinên te",
+    "lib.arcade.pmAte": "Te ev kaxiz hilda — wê di meldekê de bihêle.",
+    "lib.arcade.pmKeep": "Kaxiza hilgirtî divê bê girtin — yeke din biavêje.",
+    "lib.arcade.pmU": "Derketî! Tavilê serdikevî.",
+    "lib.arcade.pmYou": "Tu",
+    "lib.arcade.pmFoe": "Komputer",
+    "lib.arcade.pmDraw2": "Di xalan de wekhev.",
+    "lib.arcade.note.shogi": "Shogi şetrenca Japonî ye. Tu aliyê jêrîn dilîzî û pêşî dilîzî; perçeyên komputerê berevajî dinêrin. Perçeyên girtî diçin destê te û dikarin li çargoşeyeke vala werin danîn li şûna gaveke; qet piyade li stûneke ku te berê piyadeyeke nehatî pêşvebirin heye, û qet perçe li rêzeke ku careke din nikaribe bimeşe. Perçeyek ku têkeve, derkeve, an di nav sê rêzên dawî yên dijmin de bimeşe dikare were pêşvebirin (ji bilî Şah û Zêr); heke perçe êdî gavek nemîne pêşvebirin mecbûrî ye. Şahê dijmin mat bike da ku bi ser keve. Kanji: 歩 piyade, 香 mertal, 桂 hesp, 銀 zîv, 金 zêr, 角 fîl, 飛 hesp-kela, 玉 şah; と, 馬, 竜 û perçeyên din ên sor hatine pêşvebirin.",
+    "lib.arcade.sgPromote": "Pêşve bibe",
+    "lib.arcade.sgKeep": "Pêşve nebe",
+    "lib.arcade.sgCheck": "Tu di şahê de yî!",
+    "lib.arcade.sgWin": "Mat — te bi ser ket.",
+    "lib.arcade.sgLose": "Te mat bû.",
+    "lib.arcade.sgAskPromote": "Ev perçe pêşve bibe?",
+    "lib.arcade.note.janggi": "Janggi şetrenca Koreyî ye. Tu bi perçeyên şîn ên jêr dilîzî û pêşî dilîzî. Berevajî xiangqi, çem tune ye, û herdu qesr xetên çerxî hene. General û Parêzger li ser xetên qesrê (bi xetên çerxî re) gavekê diçin; Erebe jî li ser xetên çerxî yên qesrê dişemite û digire; Top divê li ser tam yek perçeyê (ne Topeke din) bipekîne da ku bimeşe an bigire, û nikare Topekê bigire; Hesp gavekê rast û paşê yekê çerxî diçe, û Fîl gavekê rast û paşê du çerxî, herdu heke perçeyek li rê hebe asê dibin; Leşker pêş an alî diçin, û di qesra dijmin de çerxî pêş jî. Herdu General qet nabe ku rû bi rû bimînin. Generalê dijmin mat bike da ku bi ser keve. Komputer qet derbas nake.",
+    "lib.arcade.jgCheck": "Tu di şahê de yî!",
+    "lib.arcade.jgWin": "Mat — te bi ser ket.",
+    "lib.arcade.jgLose": "Te mat bû.",
+    "lib.arcade.note.pinball": "Space, Jor bitikîne an li maseyê bitikîne da ku top bavêjî. Çep bigire (an nîvê çepê yê maseyê) ji bo flipperê çepê û Rast (an nîvê rastê) ji bo ya rastê — dikarî li şûna girtinê bi rîtmê jî bitikînî. Bumperên gilover her yek 100 xalan dide. 3 topên te hene; berî ku biqedin xala armancê bi dest bixe da ku astê biqedînî.",
+    "lib.arcade.pinBalls": "Top: {n} · Armanc: {t}",
+    "lib.arcade.note.cribbage": "Cribbage ji bo du lîstikvanan, pêşbirkek heta 61 xalan. Di her belavkirinê de 6 kaxizan werdigirî û 2 rûyê wan li jêr diavêjî crib (ya belavkar e). Kaxizeke destpêkê tê vegerandin. Paşê bi nobet kaxizan rûyê wan li jor dilîzin û berhevoka heyî qet ji 31 derbas nabe: gihîştina 15 an 31 2 xal e, kaxiza wek ya berê 2/6/12 xal e, rêzeke 3 an zêdetir (bi her rêzê) bi dirêjahiya xwe xal e, û gava kes nikare bilîze lîstikvanê dawî 1 xal werdigire („Go“). Paşê her desteyek 4 kaxizî bi kaxiza destpêkê re tê hejmartin: her hevgirtina ku dibe 15 2 xal e, her cot 2, rêza 3+ bi dirêjahiya xwe, çar kaxizên heman reng 4 (5 bi kaxiza destpêkê), û Jack bi rengê kaxiza destpêkê 1. Yê ku belav nake pêşî dihejmêre, paşê belavkar desta xwe û crib dihejmêre.",
+    "lib.arcade.cbFifteen": "Panzdeh",
+    "lib.arcade.cbPair": "Cot",
+    "lib.arcade.cbRun": "Rêz",
+    "lib.arcade.cbFlush": "Heman reng",
+    "lib.arcade.cbNobs": "Jack bi rengê kaxiza destpêkê",
+    "lib.arcade.cbHeels": "Jack wek kaxiza destpêkê",
+    "lib.arcade.cbYou": "Tu",
+    "lib.arcade.cbFoe": "Komputer",
+    "lib.arcade.cbLast": "Kaxiza dawî",
+    "lib.arcade.cbCount": "Giştî: {n}",
+    "lib.arcade.cbYouDeal": "Tu belav dikî",
+    "lib.arcade.cbFoeDeal": "Komputer belav dike",
+    "lib.arcade.cbPick": "2 kaxizan ji bo crib hilbijêre",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Desta te",
+    "lib.arcade.cbFoeHand": "Desta komputerê",
+    "lib.arcade.cbStarter": "Destpêk",
+    "lib.arcade.cbZero": "0 xal",
+    "lib.arcade.cbPlayed": "Hatiye lîstin",
+    "lib.arcade.cbToCrib": "Têxe crib",
+    "lib.arcade.cbNext": "Berdewam bike",
+    "lib.arcade.cbHand": "Dest"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Sêzdeh)",
       "desc": "Lîstika kaxezên Vîetnamî ji bo çar kesan: kaxezek, cot, rêze û çaran bilîze da ku pêşî destê xwe vala bikî; 10 astan."
+    },
+    "tower-defense": {
+      "name": "Parastina Burcan",
+      "desc": "Li ser rê burcan ava bike û pêşve bibe da ku hemû pêlên dijmin rawestînî; 10 asta li ser sê nexşeyên cuda."
+    },
+    "color-by-number": {
+      "name": "Boyaxkirin bi Jimareyê",
+      "desc": "Her çargoşe bi rengê ku bi jimareya wê re dikeve boyax bike da ku wêne derkeve; 10 wêne bi her carê rengên zêdetir."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike bê stock: her kaxizeke rûyê wê li jor bi her tiştê li ser wê re bigerîne; 10 asta, kaxizên rûyê wan li jor kêmtir dibin."
+    },
+    "chinese-checkers": {
+      "name": "Dama Çînî",
+      "desc": "Lîstika stêrkî ya gav û pekîn li dijî komputerê: hemû 10 perçeyan berî komputerê bibe quncikê berevajî; 10 asta."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker a Çînî)",
+      "desc": "13 kaxizan di sê destan de rêz bike, 5, 5 û 3 kaxizî, û komputerê têk bibe; 5 ger ji bo her astê, 10 asta."
+    },
+    "phom": {
+      "name": "Phom (Rummy a Vîetnamî)",
+      "desc": "Rummy a Vîetnamî ji bo du kesan li dijî komputerê: bikişîne an ya avêtî hilde, meldan çêke û derkeve; yê xala wî ya mayî kêmtir serdikeve; 10 asta."
+    },
+    "shogi": {
+      "name": "Shogi (Şetrenca Japonî)",
+      "desc": "Shogi li dijî komputerê bilîze: perçeyên girtî deyne, pêşve bibe û şah mat bike; 10 asta bi vegerandinê."
+    },
+    "janggi": {
+      "name": "Janggi (Şetrenca Koreyî)",
+      "desc": "Şetrenca Koreyî li dijî komputerê bilîze: xetên çerxî yên qesrê, topa ku li ser perçeyekê dipekîne, fîlên sê gavî; 10 asta bi vegerandinê."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Çep û rast bizivirîne da ku top di lîstikê de bimîne, li bumperan bixe û berî ku 3 topên te biqedin xala armancê bi dest bixe; 10 asta."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage ji bo du kesan li dijî komputerê: crib, lîstin heta 31, hejmartina destan, pêşbirk heta 61 xalan; 10 asta."
     }
   },
   "s": {

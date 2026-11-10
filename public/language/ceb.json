@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Mga kard nga nahabilin: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "Nag-pass si {p}.",
     "lib.arcade.tlBad": "Ang gipili nga mga kard dili balido nga set.",
-    "lib.arcade.tlLow": "Dili igo kataas kini nga set aron mabuntog ang lamesa."
+    "lib.arcade.tlLow": "Dili igo kataas kini nga set aron mabuntog ang lamesa.",
+    "lib.arcade.note.td": "Hikapa ang walay sulod nga kwadrado (dili ang agianan) aron magtukod ug tore nga mopusil, nga nagkantidad ug bulawan; hikapa pag-usab ang tore aron i-upgrade kini (hangtod sa lebel 5). Awtomatikong mopusil ang mga tore sa kaaway nga pinakadapit na sa katapusan sulod sa abot niini. Pildia ang mga kaaway aron makaangkon ug dugang bulawan; kung 15 ka kaaway ang makaabot sa katapusan, mawala ka. Pabilin nga buhi sa tanang balud aron mahuman ang lebel.",
+    "lib.arcade.tdInfo": "Bulawan: {g} · Balud {w}/{t}",
+    "lib.arcade.tdCost": "Tore: {n}",
+    "lib.arcade.note.colorNum": "Ang matag kwadrado adunay numero nga katumbas sa kolor sa palette. Pagpili ug kolor, dayon hikapa ang mga kwadrado nga adunay maong numero aron pinturahan kini; kung sayop ang kolor, walay mapinturahan. Pinturahi sa saktong paagi ang tanang kwadrado aron mahuman ang hulagway. Ang mas taas nga lebel adunay mas daghang kolor.",
+    "lib.arcade.cnWrong": "Sayop nga kolor — tan-awa ang numero sa kwadrado.",
+    "lib.arcade.note.yukon": "Parehas sa Klondike apan walay stock: bisan unsang baraha nga nakatuyok pataas mahimong ibalhin kauban ang tanang baraha nga nahimutang ibabaw niini, bisan dili sunod-sunod; ang unang baraha lang ang kinahanglang mohaom sa tumong nga kolum (pababa, magpuli-puli ang pula ug itom; ang Hari moadto sa walay sulod nga kolum). Tukora ang tanang 52 ka baraha sa upat ka foundation gikan sa Ace hangtod sa Hari. Ang ubos nga mga lebel magsugod nga daghan na ang baraha nga nakatuyok pataas.",
+    "lib.arcade.yukonFree": "Mga baraha nga nakatuyok paubos: {n}",
+    "lib.arcade.note.chinesechk": "Ikaw ang magdula sa asul nga piraso sa too nga eskina; ibalhin ang tanang 10 ngadto sa atbang nga wala nga eskina sa dili pa ang kompyuter. Matag turno, mobalhin ka ug usa ka piraso: lakaw ngadto sa silingang walay sulod nga lungag, o tumban ang bisan unsang piraso ngadto sa walay sulod nga lungag diha-diha dayon sa luyo niini, ug ipadayon ang pagtumban kutob sa gusto nimo. Hikapa ang usa sa imong piraso, dayon hikapa ang berde nga lungag aron mobalhin.",
+    "lib.arcade.ccTurn": "Imong turno · Turno {n}",
+    "lib.arcade.ccDraw": "Naubos na ang mga turno — patas.",
+    "lib.arcade.note.maubinh": "Ikaw ug ang kompyuter makadawat ug tag 13 ka baraha ug ihan-ay kini ngadto sa 3 ka kamot: 5-ka-baraha nga likod nga kamot, 5-ka-baraha nga tunga nga kamot, ug 3-ka-baraha nga unahan nga kamot. Ang likod nga kamot kinahanglan sama ka kusog o mas kusog kay sa tunga, ug ang tunga sama ka kusog o mas kusog kay sa unahan; kung dili, sayop ang paghan-ay ug mawala nimo ang tibuok hugna. Hikapa ang baraha, dayon hikapa ang laray diin kini ibutang (hikapa ang gibutang nga baraha aron kuhaon balik). Ang matag kamot nga imong gipildi mohatag ug 1 puntos; kung mapildi nimo ang tanang 3, 6 ang makuha. Dula ug 5 ka hugna — ang positibo nga total makahuman sa lebel. Ang unahan nga kamot mahimong high card, pares, o tulo ka parehas lamang.",
+    "lib.arcade.mbHigh": "Taas nga baraha",
+    "lib.arcade.mbPair": "Pares",
+    "lib.arcade.mbTwoPair": "Duha ka pares",
+    "lib.arcade.mbTrips": "Tulo ka parehas",
+    "lib.arcade.mbStraight": "Sunod-sunod",
+    "lib.arcade.mbFlush": "Parehas nga klase",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Upat ka parehas",
+    "lib.arcade.mbSflush": "Sunod-sunod nga parehas nga klase",
+    "lib.arcade.mbBack": "Likod nga kamot",
+    "lib.arcade.mbMid": "Tunga nga kamot",
+    "lib.arcade.mbFront": "Unahan nga kamot",
+    "lib.arcade.mbFoe": "Kompyuter",
+    "lib.arcade.mbYou": "Ikaw",
+    "lib.arcade.mbFoul": "Sayop ang paghan-ay!",
+    "lib.arcade.mbFoeFoul": "Sayop ang paghan-ay sa kompyuter!",
+    "lib.arcade.mbConfirm": "Ipakita ang baraha",
+    "lib.arcade.mbReset": "Klaroha",
+    "lib.arcade.mbHand": "Imong kamot",
+    "lib.arcade.mbRound": "Hugna {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Humana",
+    "lib.arcade.mbNext": "Sunod nga hugna",
+    "lib.arcade.mbDraw": "Patas ang puntos — dula pag-usab.",
+    "lib.arcade.mbAutoMsg": "Ania ang gisugyot nga paghan-ay. Mahimo nimo kining usbon sa dili pa ipakita ang mga baraha.",
+    "lib.arcade.note.phom": "Duha ka magdudula; ang matag usa makadawat ug 9 ka baraha (ang nag-una makadawat ug 10). Ang meld mao ang 3 o labaw pa nga baraha nga parehas ang numero, o 3 o labaw pa nga sunod-sunod nga baraha sa parehas nga klase (ang Ace ubos ra). Sa imong turno, magkuha ug baraha gikan sa deck, o kuhaa ang baraha nga bag-o lang gisalibay sa kaatbang kung makahimo kini ug meld uban sa imong kamot (ang kinuhang baraha kinahanglang tipigan), dayon magsalibay ug usa ka baraha. Kung ang matag magdudula nakasalibay na ug 4 ka baraha, matapos ang hugna ug modaog kadtong adunay mas gamay nga total sa mga baraha nga wala sa meld (Ace = 1 … Hari = 13). Kung ang tanan nimong baraha anaa na sa meld human sa pagsalibay, mogawas ka (“U”) ug modaog dayon. Ang mga baraha nga naay berde nga linya naa sa imong labing maayo nga mga meld.",
+    "lib.arcade.pmDraw": "Kuha",
+    "lib.arcade.pmEat": "Kuhaa ang gisalibay",
+    "lib.arcade.pmThrow": "Salibay",
+    "lib.arcade.pmFoeAte": "Gikuha sa kompyuter ang imong baraha.",
+    "lib.arcade.pmFoeU": "Migawas ang kompyuter!",
+    "lib.arcade.pmTurn": "Turno {a}/{b}",
+    "lib.arcade.pmLeft": "Wala sa meld: {n}",
+    "lib.arcade.pmDeck": "Deck: {n}",
+    "lib.arcade.pmFoeHand": "Kamot sa kompyuter",
+    "lib.arcade.pmFoeDisc": "Gisalibay sa kompyuter",
+    "lib.arcade.pmFoeEaten": "Gikuha sa kompyuter",
+    "lib.arcade.pmMyDisc": "Imong gisalibay",
+    "lib.arcade.pmAte": "Gikuha nimo kini nga baraha — tipigi kini sa meld.",
+    "lib.arcade.pmKeep": "Ang kinuhang baraha kinahanglang tipigan — pagsalibay ug lain.",
+    "lib.arcade.pmU": "Migawas ka! Modaog ka dayon.",
+    "lib.arcade.pmYou": "Ikaw",
+    "lib.arcade.pmFoe": "Kompyuter",
+    "lib.arcade.pmDraw2": "Patas ang puntos.",
+    "lib.arcade.note.shogi": "Ang Shogi mao ang chess sa Hapon. Imo ang ubos nga bahin ug ikaw ang nag-una; ang mga piraso sa kompyuter nagtumong sa kontra nga direksyon. Ang nakuha nga mga piraso moadto sa imong kamot ug mahimong ibutang sa bisan asang walay sulod nga kwadrado puli sa paglihok (dili gayud pawn sa kolum nga aduna ka nay wala pa ma-promote nga pawn, ug dili gayud piraso sa laray diin dili na kini makalihok). Ang piraso nga mosulod, mogawas, o molihok sulod sa katapusang tulo ka laray sa kaatbang mahimong ma-promote (gawas sa Hari ug Gold); obligado ang promosyon kung wala nay lihok ang piraso. I-checkmate ang Hari sa kaaway aron modaog. Kanji: 歩 pawn, 香 lance, 桂 kabayo, 銀 pilak, 金 bulawan, 角 bishop, 飛 rook, 玉 hari; と, 馬, 竜 ug uban pang pula nga mga piraso gi-promote na.",
+    "lib.arcade.sgPromote": "I-promote",
+    "lib.arcade.sgKeep": "Ayaw i-promote",
+    "lib.arcade.sgCheck": "Naa ka sa check!",
+    "lib.arcade.sgWin": "Checkmate — midaog ka.",
+    "lib.arcade.sgLose": "Na-checkmate ka.",
+    "lib.arcade.sgAskPromote": "I-promote kini nga piraso?",
+    "lib.arcade.note.janggi": "Ang Janggi mao ang chess sa Korea. Ikaw ang naggamit sa asul nga mga piraso sa ubos ug ikaw ang nag-una. Dili sama sa xiangqi, walay suba, ug ang duha ka palasyo adunay dayagonal nga linya. Ang Heneral ug mga Guwardiya molakaw ug usa ka lakang subay sa mga linya sa palasyo (apil ang dayagonal); ang Karwahe mokislap ug mokuha usab subay sa dayagonal sa palasyo; ang Kanyon kinahanglang molukso sa eksaktong usa ka piraso (dili lain nga Kanyon) aron molihok o mokuha, ug dili makakuha ug Kanyon; ang Kabayo molakaw ug usa ka lakang tul-id dayon usa dayagonal, ug ang Elepante usa ka lakang tul-id dayon duha dayagonal, ug pareho silang nababagan kung adunay piraso sa dalan; ang mga Sundalo molihok paabante o pasiplat, ug dayagonal paabante sulod sa palasyo sa kaaway. Ang duha ka Heneral dili gayud mahimong magtagbo nga nag-atubang. I-checkmate ang Heneral sa kaaway aron modaog. Ang kompyuter dili gayud molaktaw.",
+    "lib.arcade.jgCheck": "Naa ka sa check!",
+    "lib.arcade.jgWin": "Checkmate — midaog ka.",
+    "lib.arcade.jgLose": "Na-checkmate ka.",
+    "lib.arcade.note.pinball": "Pindota ang Space, Up o hikapa ang lamesa aron ilunsad ang bola. Hawiri ang Left (o hikapa ang wala nga tunga sa lamesa) alang sa wala nga flipper ug Right (o ang too nga tunga) alang sa too — o mag-tap nga may ritmo imbes mohawid. Ang lingin nga mga bumper nagahatag ug 100 ka puntos matag usa. Adunay ka 3 ka bola; abta ang target nga puntos sa dili pa maubos ang mga bola aron mahuman ang lebel.",
+    "lib.arcade.pinBalls": "Mga bola: {n} · Target: {t}",
+    "lib.arcade.note.cribbage": "Cribbage alang sa duha ka magdudula, lumba hangtod 61 ka puntos. Matag hatag makadawat ka ug 6 ka baraha ug ibutang ang 2 nga nakatuyok paubos sa crib (iya kini sa nagahatag). Ibalik ang usa ka starter nga baraha. Dayon magsalitan sa pagdula ug baraha nga nakatuyok pataas nga ang padayon nga total dili molapas sa 31: ang pag-abot sa 15 o 31 maghatag ug 2, ang parehas sa miaging baraha maghatag ug 2/6/12, ang sunod-sunod nga 3 o labaw pa (bisan unsang han-ay) maghatag sa gitas-on niini, ug kung walay makadula, ang katapusang magdudula makakuha ug 1 (“Go”). Dayon ihap ang matag kamot nga 4 ka baraha uban ang starter: ang matag kombinasyon nga ang total 15 maghatag ug 2, ang matag pares 2, ang sunod-sunod nga 3+ ang gitas-on niini, upat ka baraha sa parehas nga klase 4 (5 uban ang starter), ug ang Jack nga parehas ang klase sa starter 1. Ang dili nagahatag ang mag-una sa pag-ihap, dayon ang nagahatag nag-ihap sa iyang kamot ug sa crib.",
+    "lib.arcade.cbFifteen": "Kinse",
+    "lib.arcade.cbPair": "Pares",
+    "lib.arcade.cbRun": "Sunod-sunod",
+    "lib.arcade.cbFlush": "Parehas nga klase",
+    "lib.arcade.cbNobs": "Jack nga parehas sa klase sa starter",
+    "lib.arcade.cbHeels": "Jack isip starter",
+    "lib.arcade.cbYou": "Ikaw",
+    "lib.arcade.cbFoe": "Kompyuter",
+    "lib.arcade.cbLast": "Katapusang baraha",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Ikaw ang mohatag",
+    "lib.arcade.cbFoeDeal": "Ang kompyuter ang mohatag",
+    "lib.arcade.cbPick": "Pagpili ug 2 ka baraha alang sa crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Imong kamot",
+    "lib.arcade.cbFoeHand": "Kamot sa kompyuter",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 ka puntos",
+    "lib.arcade.cbPlayed": "Nadula na",
+    "lib.arcade.cbToCrib": "Ibutang sa crib",
+    "lib.arcade.cbNext": "Padayon",
+    "lib.arcade.cbHand": "Kamot"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Thirteen)",
       "desc": "Ang Vietnamese nga dula sa kard alang sa upat: dulaa ang usa, pares, sunod-sunod ug upat ka parehas aron mauna ka nga mawalay kard; 10 ka lebel."
+    },
+    "tower-defense": {
+      "name": "Tower Defense",
+      "desc": "Magtukod ug mag-upgrade ug mga tore subay sa agianan aron mapugngan ang tanang balud sa mga kaaway; 10 ka lebel sa tulo ka lain-laing mapa."
+    },
+    "color-by-number": {
+      "name": "Kolor sa Numero",
+      "desc": "Pinturahi ang matag kwadrado sa kolor nga katumbas sa numero niini aron mabutyag ang hulagway; 10 ka hulagway nga mas daghan ang kolor matag higayon."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike nga walay stock: ibalhin ang bisan unsang baraha nga nakatuyok pataas uban ang tanan nga ibabaw niini; 10 ka lebel, mas gamay ang baraha nga nakatuyok pataas samtang nag-uswag."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Dulang porma-bituon nga lakaw-ug-lukso batok sa kompyuter: ibalhin una ang tanang 10 ka piraso sa atbang nga eskina; 10 ka lebel."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Chinese Poker)",
+      "desc": "Ihan-ay ang 13 ka baraha ngadto sa tulo ka kamot nga 5, 5 ug 3 ka baraha ug pildia ang kompyuter; 5 ka hugna matag lebel, 10 ka lebel."
+    },
+    "phom": {
+      "name": "Phom (Vietnamese Rummy)",
+      "desc": "Vietnamese rummy alang sa duha batok sa kompyuter: magkuha o mokuha ug gisalibay, maghimo ug mga meld ug mogawas; modaog ang pinakagamay nga nahabilin nga puntos; 10 ka lebel."
+    },
+    "shogi": {
+      "name": "Shogi (Chess sa Hapon)",
+      "desc": "Dulaa ang shogi batok sa kompyuter: ibutang ang nakuha nga mga piraso, mag-promote, ug i-checkmate ang hari; 10 ka lebel nga adunay undo."
+    },
+    "janggi": {
+      "name": "Janggi (Chess sa Korea)",
+      "desc": "Dulaa ang chess sa Korea batok sa kompyuter: dayagonal sa palasyo, kanyon nga molukso sa usa ka piraso, elepante nga tulo ka lakang; 10 ka lebel nga adunay undo."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "I-flip ang wala ug too aron magpabilin ang bola sa dula, igo ang mga bumper ug abta ang target nga puntos sa dili pa maubos ang imong 3 ka bola; 10 ka lebel."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage alang sa duha batok sa kompyuter: crib, pegging hangtod 31, pag-ihap sa mga kamot, lumba hangtod 61 ka puntos; 10 ka lebel."
     }
   },
   "s": {

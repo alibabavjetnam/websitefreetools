@@ -429,7 +429,312 @@
     "lib.arcade.note.flood-it": "Yan àwọ̀ kan láti kún gbogbo agbègbè rẹ ní igun òkè òsì; ó ń gbé àwọn àpótí aládùúgbò àwọ̀ yẹn mì. Ṣe gbogbo pákó náà ní àwọ̀ kan láàárín iye ìgbésẹ̀ tí a gbà láàyè.",
     "lib.arcade.note.mastermind": "Kọ̀ǹpútà fi ìlà àwọn àwọ̀ pamọ́. Yan àwọ̀ fún ipò kọ̀ọ̀kan, lẹ́yìn náà tẹ Ṣe àròsọ. Pẹ́ẹ̀gì dúdú = àwọ̀ tó tọ́ ní ibi tó tọ́; pẹ́ẹ̀gì funfun = àwọ̀ tó tọ́ ní ibi tí kò tọ́. Ṣí kóòdù náà kí ìgbìyànjú rẹ tó tán.",
     "lib.arcade.note.hanoi": "Gbé gbogbo àwọn àwo lọ sí ọ̀pá ìkẹyìn. Gbé àwo orí ọ̀pá kan ṣoṣo lẹ́ẹ̀kan, má sì gbé àwo ńlá lé orí àwo kékeré láé. Tẹ ọ̀pá orísun, lẹ́yìn náà ọ̀pá ibi-àfojúsùn.",
-    "lib.arcade.note.pipes": "Tẹ tálì kan láti yí páìpù náà po ní 90°. So gbogbo páìpù pọ̀ di nẹ́tíwọ́ọ̀kì kan láìsí ìkángun tó ṣí sílẹ̀ (àwọn ìkángun tó ṣí sílẹ̀ hàn ní pupa)."
+    "lib.arcade.note.pipes": "Tẹ tálì kan láti yí páìpù náà po ní 90°. So gbogbo páìpù pọ̀ di nẹ́tíwọ́ọ̀kì kan láìsí ìkángun tó ṣí sílẹ̀ (àwọn ìkángun tó ṣí sílẹ̀ hàn ní pupa).",
+    "lib.arcade.pongScore": "Ìwọ {a} – {b} Kọ̀ǹpútà (àkọ́kọ́ sí {t})",
+    "lib.arcade.kills": "Ti run: {n}/{t}",
+    "lib.arcade.rocksLeft": "Òkúta {n} ló kù",
+    "lib.arcade.timeLeft": "Ìṣẹ́jú-àáyá {n} ló kù",
+    "lib.arcade.stepsN": "Ìgbésẹ̀: {n}",
+    "lib.arcade.crossed": "Ilé: {n}/{t}",
+    "lib.arcade.pipes": "Páìpù tí o ti kọjá: {n}/{t}",
+    "lib.arcade.distance": "Ọ̀nà jíjìn: {n}/{t} m",
+    "lib.arcade.speedN": "Ìyára: {n}",
+    "lib.arcade.note.whack-a-mole": "Àwọn èkúté ń yọ jáde láti inú ihò — tẹ èkúté tàbí fọwọ́kan rẹ̀ láti lù ú. Lu èkúté tó pọ̀ tó kí àkókò tó parí. Láti ìpele 4, àwọn bọ́ọ̀mù wà: bí o bá lù ú, o máa pàdánù ojúlówó.",
+    "lib.arcade.hole": "Ihò",
+    "lib.arcade.hitsN": "Ìlù: {n}/{t}",
+    "lib.arcade.note.simon": "Eré náà ń ṣe ọ̀wọ́ àwọn àwọ̀ àti ohùn — tún un ṣe ní ọ̀nà kan náà. Ìyípo kọ̀ọ̀kan ń fi ìgbésẹ̀ kan kún un. Rántí gígùn tí a béèrè láti parí ìpele. Láti ìpele 7, àwọn bọ́tìnì 6 wà.",
+    "lib.arcade.seqN": "Ọ̀wọ́: {n}/{t}",
+    "lib.arcade.watch": "Wò…",
+    "lib.arcade.yourTurnShort": "Àkókò rẹ",
+    "lib.arcade.note.aim-trainer": "Àwọn ibi àfojúsùn ń farahàn láìròtẹ́lẹ̀, wọ́n sì ń sọnù kíákíá — lù bí ọ̀pọ̀ bí o ti lè ṣe. Wọ́n ń kéré sí i, wọ́n sì ń yára sí i. Lu àwọn ibi àfojúsùn tó pọ̀ tó kí o tó fi ẹ̀ṣẹ̀ ju 5 lọ láti parí ìpele.",
+    "lib.arcade.missN": "Àṣìṣe: {n}/{t}",
+    "lib.arcade.answer": "Ìdáhùn",
+    "lib.arcade.note.quick-math": "Yanjú rẹ̀ lọ́kàn ní kíákíá bí o ti lè ṣe: tẹ ìdáhùn, kí o sì tẹ Enter. Ìbéèrè kọ̀ọ̀kan ní àkókò kan; ìdáhùn tí kò tọ́ tàbí àkókò tí ó parí máa gba ẹ̀mí kan (o ní 3). Dáhùn àwọn ìbéèrè tó pọ̀ tó dáadáa láti parí ìpele.",
+    "lib.arcade.correctN": "Tọ́: {n}/{t}",
+    "lib.arcade.note.reaction": "Dúró kí ojú-ìwé di aláwọ̀ ewé, lẹ́yìn náà tẹ̀ ẹ́ ní kíákíá bí o ti lè ṣe. Títẹ̀ ẹ́ ní kùtùkùtù jẹ́ àṣìṣe (àṣìṣe 3 o sì pàdánù). Àpapọ̀ rẹ nínú ìyípo 5 gbọ́dọ̀ dára ju ààlà ìpele lọ.",
+    "lib.arcade.roundN": "Ọ̀rọ̀ {n}/{t}",
+    "lib.arcade.limitMs": "Ààlà: {n} ms",
+    "lib.arcade.rxWait": "Dúró fún àwọ̀ ewé…",
+    "lib.arcade.rxGo": "TẸ̀ Ẹ́!",
+    "lib.arcade.rxEarly": "Ó ti kùtù jù!",
+    "lib.arcade.gameArea": "Agbègbè eré",
+    "lib.arcade.note.pong": "Gbé eku, fa ìka rẹ tàbí lo àwọn kọ́kọ́rọ́ ← → láti darí pádì ìsàlẹ̀. Lu bọ́ọ̀lù kọjá kọ̀ǹpútà; ẹni àkọ́kọ́ tó ní ojúlówó 5 ló borí. Bọ́ọ̀lù ń yára sí i pẹ̀lú ìlù kọ̀ọ̀kan.",
+    "lib.arcade.note.space-shooter": "Gbé eku, fa ìka rẹ tàbí lo àwọn kọ́kọ́rọ́ ← → láti darí; ọkọ̀ rẹ ń yìnbọn fúnra rẹ̀. Pa àwọn ọkọ̀ ọ̀tá tó pọ̀ tó run láti parí ìpele, kí o sì yẹra fún ìkọlù àti ìbọn ọ̀tá. O ní ẹ̀mí 3.",
+    "lib.arcade.note.asteroids": "← → ń yí ọkọ̀ náà, ↑ ń tì í síwájú, Space ń yìnbọn. Pa gbogbo òkúta run láti parí ìpele; àwọn òkúta ńlá ń pín sí kéékèèké. Ọkọ̀ náà ń jáde ní ẹ̀gbẹ́ ojú-ìwé kan, ó sì ń padà sí ẹ̀gbẹ́ kejì. O ní ẹ̀mí 3.",
+    "lib.arcade.note.maze": "Lo àwọn kọ́kọ́rọ́ ọfà (tàbí fa ìka, tàbí àwọn bọ́tìnì) láti dé láti àmì aláwọ̀ ewé sí àsíá pupa kí àkókò tó parí. Láti ìpele 5, ọ̀nà-àdìtú náà ní ìyẹ̀fun: o rí agbègbè yíká rẹ nìkan, a sì ń rántí àwọn ibi tí o ti dé.",
+    "lib.arcade.note.road-cross": "Lo àwọn kọ́kọ́rọ́ ọfà, fa ìka tàbí àwọn bọ́tìnì láti mú ọ̀pọ̀lọ́ fò láti ìsàlẹ̀ sí òkè. Yẹra fún ọkọ̀; láti ìpele 5, apá òkè jẹ́ odò, nítorí náà fò sórí àwọn igi tó ń léfòó. Dé ilé ní ìgbà mẹ́ta láti parí ìpele. O ní ẹ̀mí 3.",
+    "lib.arcade.note.flappy": "Fọwọ́kan agbègbè eré, tẹ Space tàbí ↑ láti gbá ìyẹ́. Fò kọjá àwọn àlàfo láàrin àwọn páìpù láìfọwọ́ kan páìpù, ilẹ̀ tàbí òrùlé. Ní àwọn ìpele gíga, àwọn àlàfo kéré, ìfò sì yára.",
+    "lib.arcade.note.runner": "Fọwọ́kan agbègbè eré, tẹ Space tàbí ↑ láti fò kọjá àwọn kákúùsì; di ↓ mú láti bẹ̀ sí abẹ́ àwọn ẹyẹ gíga (tàbí fò kọjá àwọn tí kò ga). Sáré jìnnà tó láti parí ìpele. Ìyára ń pọ̀ sí i.",
+    "lib.arcade.fire": "Yìnbọn",
+    "lib.arcade.jump": "Fò",
+    "lib.arcade.aimTarget": "Àfojúsùn",
+    "lib.game.soundOn": "Tan ohùn",
+    "lib.game.soundOff": "Pa ohùn",
+    "lib.arcade.note.kalah": "O ń ṣe eré lórí ìlà ìsàlẹ̀, kọ̀ǹpútà sì wà lórí ìlà òkè; ihò ńlá tó wà ní ọ̀tún ni ibi ìpamọ́ rẹ. Tẹ ihò kan láti kó gbogbo irúgbìn rẹ̀, kí o sì fọ́n wọn lọ́nà àtakò aago, ọ̀kan sí ihò kọ̀ọ̀kan (fo ibi ìpamọ́ ọ̀tá rẹ). Bí irúgbìn ìkẹyìn bá bọ́ sínú ibi ìpamọ́ rẹ, tún lọ; bí ó bá bọ́ sínú ihò òfo ní ẹ̀gbẹ́ rẹ tó dojú kọ ihò tó ní irúgbìn, o gba àwọn irúgbìn náà. Nígbà tí ẹ̀gbẹ́ kan bá ṣófo, àwọn irúgbìn ẹ̀gbẹ́ kejì lọ sí ibi ìpamọ́ olùní wọn; ibi ìpamọ́ tó tóbi jù ló borí.",
+    "lib.arcade.note.snakes": "Ju dísì kí o sì rìn bí iye ojú tí ó jáde, láti 1 sí 100. Bí o bá bọ́ sí ẹsẹ̀ àkàbà, o gòkè; bí o bá bọ́ sí orí ejò, o yọ́ sílẹ̀. Láti ìpele 4, o gbọ́dọ̀ ní iye tó péye láti bọ́ sórí 100. Àwọn ìpele gíga ní ejò púpọ̀, àkàbà díẹ̀ àti alátakò púpọ̀. Ẹni àkọ́kọ́ tó dé 100 ló borí.",
+    "lib.arcade.square": "Àyè {n}",
+    "lib.arcade.ladderUp": "Gun àkàbà lọ!",
+    "lib.arcade.snakeDown": "Ejò gbé ọ mì!",
+    "lib.arcade.needExact": "O nílò iye tó péye láti bọ́ sórí 100.",
+    "lib.arcade.note.nmm": "Ẹ̀gbẹ́ kọ̀ọ̀kan ní òkúta 9. Ìpele 1: ẹ máa gbé òkúta sórí àwọn ibi òfo lẹ́ẹ̀kọ̀ọ̀kan. Ìpele 2: sún òkúta kan sí ibi òfo tó wà nítòsí. Nígbà tí òkúta 3 péré bá kù, o lè “fò” sí ibi òfo èyíkéyìí. Ṣe òkúta mẹ́ta ní ìlà kan (“mill”) láti yọ òkúta alátakò kúrò (àwọn tí kò sí nínú mill ṣáájú). O pàdánù nígbà tí òkúta 2 bá kù tàbí tí o kò lè rìn. O ń lo èyí funfun, o sì kọ́kọ́ rìn.",
+    "lib.arcade.inHand": "Láti gbé sí: {a} · {b}",
+    "lib.arcade.removePiece": "Yan òkúta alátakò láti yọ kúrò.",
+    "lib.arcade.enemyWaters": "Omi ọ̀tá (tẹ láti yìnbọn)",
+    "lib.arcade.yourFleet": "Ọkọ̀ ojú-omi rẹ",
+    "lib.arcade.note.battleship": "Ẹ̀gbẹ́ kọ̀ọ̀kan ní ọkọ̀ ojú-omi 5 (gígùn 5, 4, 3, 3, 2) tí a gbé sí orí àwọn 10x10 láìròtẹ́lẹ̀. Ẹ máa yìnbọn sí ojú kan lẹ́ẹ̀kọ̀ọ̀kan: bí ó bá bá, ó di pupa, bí ó bá sọnù, ó di bulu fẹ́ẹ́rẹ́; bí gbogbo ojú ọkọ̀ ojú-omi bá bá, ó rì. Rì gbogbo ọkọ̀ ojú-omi ọ̀tá ní àkọ́kọ́ láti borí. Ní àwọn ìpele gíga, kọ̀ǹpútà máa mọ ibi tí àwọn ọkọ̀ rẹ wà ní ọgbọ́n jù.",
+    "lib.arcade.shipsLeft": "Ọkọ̀ tó kù: ìwọ {a} · ọ̀tá {b}",
+    "lib.arcade.theySunk": "Ọ̀tá rì ọkọ̀ ojú-omi rẹ kan!",
+    "lib.arcade.theyHit": "Ọ̀tá bá ọkọ̀ ojú-omi rẹ kan.",
+    "lib.arcade.theyMiss": "Ọ̀tá yọ̀.",
+    "lib.arcade.youSunk": "O rì ọkọ̀ ojú-omi ọ̀tá kan!",
+    "lib.arcade.youHit": "Ó bá!",
+    "lib.arcade.youMiss": "Ó yọ̀.",
+    "lib.arcade.shake": "Gbọn",
+    "lib.arcade.clearBets": "Pa àwọn tẹ́tẹ́ rẹ́",
+    "lib.arcade.note.bau-cua": "Owó àfarawé nìkan — kò sí owó gidi. Yan iye ṣípù, tẹ àwọn ẹranko láti gbé tẹ́tẹ́, lẹ́yìn náà tẹ Gbọn. Fún dísì kọ̀ọ̀kan tó bá ẹranko tí o gbé tẹ́tẹ́ lé mu, o gba tẹ́tẹ́ rẹ padà àti iye kan náà fún ìbáramu kọ̀ọ̀kan. Dé iye owó tí a fojúsùn nínú àwọn ìyípo tí a fún láti parí ìpele.",
+    "lib.arcade.note.baccarat": "Owó àfarawé nìkan — kò sí owó gidi. Gbé tẹ́tẹ́ lórí Player, Banker tàbí Tie, lẹ́yìn náà tẹ Deal. Iye ọwọ́ ni nọ́mbà ìkẹyìn ti àpapọ̀ rẹ̀ (A = 1, 2–9 iye tirẹ̀, 10/J/Q/K = 0); ọwọ́ tó sún mọ́ 9 jù ló borí, a sì fa káàdì kẹta ní ìbámu pẹ̀lú ìlànà. Player ń san 1:1, Banker 0.95:1, Tie 8:1 (a dá tẹ́tẹ́ Player/Banker padà bí ó bá dọ́gba). Dé iye owó tí a fojúsùn nínú àwọn ìyípo tí a fún láti parí ìpele.",
+    "lib.arcade.banker": "Banker",
+    "lib.arcade.player": "Player",
+    "lib.arcade.tie": "Tie",
+    "lib.arcade.openCards": "Ṣí",
+    "lib.arcade.note.bai-cao": "Owó àfarawé nìkan — kò sí owó gidi. Ẹ̀gbẹ́ kọ̀ọ̀kan gba káàdì 3. Ìdíyelé ọwọ́ ni nọ́mbà ìkẹyìn ti àpapọ̀ rẹ̀ (A = 1, 2–9 iye tirẹ̀, 10/J/Q/K = 10, ìyẹn 0 ojúlówó). Ìpò: Mẹ́ta tó jọra (“Sáp”) ga jù, lẹ́yìn náà káàdì àwòrán mẹ́ta (“Ba tiên”), lẹ́yìn náà ojúlówó 9 títí dé 0. Gbé tẹ́tẹ́, tẹ Deal, lẹ́yìn náà Reveal láti fi wé ti olùpín. Láti ìpele 6, olùpín borí bí ó bá dọ́gba. Dé iye owó tí a fojúsùn nínú àwọn ìyípo tí a fún láti parí ìpele.",
+    "lib.arcade.caoSap": "Mẹ́ta tó jọra",
+    "lib.arcade.caoBaTien": "Káàdì àwòrán mẹ́ta",
+    "lib.arcade.caoPts": "Ojúlówó {n}",
+    "lib.arcade.note.bingo": "Kọ̀ǹpútà ń pe àwọn nọ́mbà láti 1 sí 75. Nígbà tí nọ́mbà tí a pè bá wà lórí káàdì rẹ, tẹ̀ ẹ́ láti sàmì sí i (àárín jẹ́ ọ̀fẹ́). Parí ìlà, ọ̀wọ́n tàbí ìlà àgbélébùú kí o sì tẹ BINGO! — o gbọ́dọ̀ ṣẹ́gun àwọn alátakò kọ̀ǹpútà. BINGO! èké máa ti bọ́tìnì fún ìṣẹ́jú-àáyá díẹ̀. Àwọn ìpele gíga ń pe nọ́mbà yára, wọ́n sì ní alátakò púpọ̀.",
+    "lib.arcade.opponentsN": "Àwọn alátakò: {n}",
+    "lib.arcade.falseBingo": "Kò tíì jẹ́ ìlà kíkún! A ti bọ́tìnì fún ìṣẹ́jú-àáyá 3.",
+    "lib.arcade.bingoGo": "Ń pe àwọn nọ́mbà!",
+    "lib.arcade.note.yahtzee": "Ní ìyípo kọ̀ọ̀kan, o ń ju dísì 5 títí dé ìgbà mẹ́ta: tẹ dísì kan láti pa á mọ́, lẹ́yìn náà tẹ Roll láti tún ju àwọn yòókù. Lẹ́yìn náà yan àpótí kan nínú tábìlì láti gba ojúlówó (a ń lo àpótí kọ̀ọ̀kan lẹ́ẹ̀kan; àpótí tí kò bá mu gba 0). Ìyípo 13. Àwọn àpótí Ones–Sixes ń fi ẹ̀bùn 35 kún un bí àpapọ̀ wọn bá jẹ́ 63 tàbí jù bẹ́ẹ̀ lọ. Dé ojúlówó tí a fojúsùn ìpele láti borí.",
+    "lib.arcade.turnN": "Ìyípo {n}/13",
+    "lib.arcade.pickCat": "Yan àpótí láti gba ojúlówó",
+    "lib.arcade.rollsLeft": "Ju ({n} ló kù)",
+    "lib.arcade.upperBonus": "Ẹ̀bùn Ones–Sixes",
+    "lib.arcade.scored": "Gba {n}",
+    "lib.arcade.note.crazy-eights": "Ju káàdì tó bá káàdì orí òkìtì tí a ti ju mu nípa ìrísí tàbí ipò. Mẹ́jọ jẹ́ káàdì ọlọ́gbọ́n: ju ọ̀kan nígbàkigbà kí o sì yan ìrísí tuntun. Bí o kò bá ní káàdì tí o lè ju, fa láti inú òkìtì (títí dé káàdì 3); bí o kò bá tún lè ju, o fò ìyípo. Ẹni àkọ́kọ́ tí ọwọ́ rẹ̀ ṣófo ló borí. Àwọn ìpele gíga ní alátakò púpọ̀, kọ̀ǹpútà sì máa ń ṣe eré ní ọgbọ́n jù.",
+    "lib.arcade.opponent": "Alátakò",
+    "lib.arcade.pileLeft": "Òkìtì: {n}",
+    "lib.arcade.pickSuit": "Yan ìrísí tuntun",
+    "lib.arcade.aiSuit": "Kọ̀ǹpútà yan {s}",
+    "lib.arcade.aiPass": "Kọ̀ǹpútà fò ìyípo.",
+    "lib.arcade.mustPlay": "O ní káàdì tí o lè ju — jú u.",
+    "lib.arcade.youPass": "O fa káàdì 3, o sì fò ìyípo.",
+    "lib.arcade.bcGourd": "Elégédé",
+    "lib.arcade.bcCrab": "Akàn",
+    "lib.arcade.bcShrimp": "Ede",
+    "lib.arcade.bcFish": "Ẹja",
+    "lib.arcade.bcRooster": "Àkùkọ",
+    "lib.arcade.bcDeer": "Àgbọ̀nrín",
+    "lib.arcade.yOnes": "Ones",
+    "lib.arcade.yTwos": "Twos",
+    "lib.arcade.yThrees": "Threes",
+    "lib.arcade.yFours": "Fours",
+    "lib.arcade.yFives": "Fives",
+    "lib.arcade.ySixes": "Sixes",
+    "lib.arcade.yThree": "Mẹ́ta tó jọra",
+    "lib.arcade.yFour": "Mẹ́rin tó jọra",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Straight kékeré (30)",
+    "lib.arcade.yLarge": "Straight ńlá (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Àǹfààní",
+    "lib.arcade.note.race": "Tẹ ← → (tàbí fọwọ́kan ọ̀nà tí o fẹ́) láti yí ọ̀nà padà kí o sì yẹra fún àwọn ọkọ̀ tó wà níwájú. O ní ẹ̀mí 3; wakọ̀ gbogbo ọ̀nà jíjìn náà láti parí ìpele. Àwọn ìpele gíga ní ọ̀nà púpọ̀ àti ọkọ̀ tó yára jù.",
+    "lib.arcade.note.jump": "Ohun kikọ náà ń fò fúnra rẹ̀. Tẹ ← → tàbí fa ìka láti balẹ̀ sórí pẹpẹ tó kàn. Pẹpẹ aláwọ̀ búlú ń rìn, èyí aláwọ̀ àwọ̀ ilẹ̀ ń fọ́ nígbà tí o bá balẹ̀. Bíbọ́ kúrò ní ojú-ìwé túmọ̀ sí pípàdánù; gòkè gíga tó láti parí ìpele.",
+    "lib.arcade.note.miner": "Èkúté náà ń yí síwá-sẹ́yìn; tẹ Space, ↓ tàbí fọwọ́kan pápá láti jù ú sílẹ̀. Wúrà ńlá àti àwọn òkúta wúwo, wọ́n ń fà lọ́ra; dáyámọ́ńdì ṣeyebíye. Dé iye owó tí a fojúsùn kí ìṣẹ́jú-àáyá 60 tó parí.",
+    "lib.arcade.note.slicer": "Fa ìka tàbí eku kọjá èso láti gé e. Yẹra fún àwọn bọ́ọ̀mù dúdú. Àìgé èso tàbí gígé bọ́ọ̀mù máa gba ẹ̀mí kan (o ní 3). Gé èso tó pọ̀ tó láti parí ìpele.",
+    "lib.arcade.note.hoops": "Tẹ àgbàlá náà, fà sísàlẹ̀ (bí kànnàkànnà) kí o sì tú sílẹ̀ láti ju bọ́ọ̀lù sí agbọ̀n. Bí o ti fà jìnnà tó, bẹ́ẹ̀ ni jíjù náà lágbára tó. Gba àwọn agbọ̀n tó pọ̀ tó nínú àwọn ìjù tí o ní; láti ìpele 4, agbọ̀n náà ń rìn.",
+    "lib.arcade.note.bubbles": "Gbé eku tàbí ìka láti ṣàfojúsùn, lẹ́yìn náà tẹ̀/fọwọ́kan tàbí tẹ Space/Fire láti yìnbọn. So àwọn èéfín mẹ́ta tàbí jù bẹ́ẹ̀ lọ ti àwọ̀ kan náà láti fọ́ wọn; àwọn èéfín tó pàdánù ìtìlẹ́yìn ń ṣubú. Àwọn ìlà ń sọ̀kalẹ̀ díẹ̀díẹ̀, nítorí náà jẹ́ kí wọ́n jìnnà sí ìlà ìsàlẹ̀. Pa gbogbo èéfín rẹ́ láti borí.",
+    "lib.arcade.note.chase": "Lo àwọn kọ́kọ́rọ́ ọfà (tàbí fa ìka / àwọn bọ́tìnì) láti yí kí o sì jẹ gbogbo àmì inú ọ̀nà-àdìtú, kí o sì yẹra fún àwọn iwin tó ń lépa rẹ. O ní ẹ̀mí 3; àwọn ìpele gíga ní iwin púpọ̀ tó yára jù tí wọ́n sì ń lépa ní ọgbọ́n jù.",
+    "lib.arcade.height": "Gíga: {n}/{t} m",
+    "lib.arcade.money": "Owó: {n}/{t}",
+    "lib.arcade.sliced": "Gé: {n}/{t}",
+    "lib.arcade.hoopScore": "Gbà: {n}/{t}",
+    "lib.arcade.shotsLeft": "Ìjù {n} ló kù",
+    "lib.arcade.bubbleLeft": "Èéfín {n} ló kù",
+    "lib.arcade.shotsN": "Ìjù: {n}",
+    "lib.arcade.dotsLeft": "Àmì {n} ló kù",
+    "lib.arcade.note.kakuro": "Fi àwọn nọ́mbà 1–9 kún àwọn àpótí funfun kí ìlà kọ̀ọ̀kan lè dọ́gba pẹ̀lú àmì tó wà nínú àpótí dúdú (nọ́mbà òkè ọ̀tún jẹ́ fún ìlà ọ̀tún, ti ìsàlẹ̀ òsì fún ìlà ìsàlẹ̀), láìsí nọ́mbà tó tún ara rẹ̀ ṣe nínú ìlà. Lo àwọn kọ́kọ́rọ́ ọfà láti rìn.",
+    "lib.arcade.note.kenken": "Fi àwọn nọ́mbà 1 sí N kún àwọn àpótí kí nọ́mbà kankan má tún ara rẹ̀ ṣe nínú ìlà tàbí ọ̀wọ́n kankan. Àgọ́ kọ̀ọ̀kan tí a fi ìlà tó nípọn yà sọ́tọ̀ fi àfojúsùn àti iṣẹ́ (+, −, ×, ÷) hàn: àwọn nọ́mbà inú àgọ́ gbọ́dọ̀ fún ní èsì náà. Lo àwọn kọ́kọ́rọ́ ọfà láti rìn.",
+    "lib.arcade.note.wordGuess": "Ṣe àròkọ ọ̀rọ̀ Gẹ̀ẹ́sì àṣírí. Lẹ́yìn ìgbìyànjú kọ̀ọ̀kan: àwọ̀ ewé túmọ̀ sí lẹ́tà tó tọ́ ní ibi tó tọ́, àwọ̀ ofeefee túmọ̀ sí lẹ́tà wà nínú ọ̀rọ̀ ṣùgbọ́n ní ibòmíràn, àwọ̀ eérú túmọ̀ sí lẹ́tà kò sí nínú ọ̀rọ̀. Tẹ̀ ẹ́ lórí kọ̀ǹpútà tàbí lo àwọn bọ́tìnì orí ojú-ìwé, kí o sì tẹ Enter láti fi ránṣẹ́. Àwọn ìpele gíga ní ọ̀rọ̀ gígùn àti ìgbìyànjú díẹ̀.",
+    "lib.arcade.note.hangman": "Ṣe àròkọ ọ̀rọ̀ Gẹ̀ẹ́sì àṣírí nípa yíyan lẹ́tà ní ọ̀kọ̀ọ̀kan. Lẹ́tà aláìtọ́ kọ̀ọ̀kan ń fi apá kan kún ẹni tí a gbé kọ́; bí àwọn àṣìṣe rẹ bá tán, o pàdánù. Àwọn ìpele gíga ní ọ̀rọ̀ gígùn àti àṣìṣe díẹ̀ tí a gbà láàyè.",
+    "lib.arcade.note.scramble": "Ṣe àtúntò àwọn lẹ́tà tó dàrú sí ọ̀rọ̀ Gẹ̀ẹ́sì gidi, kí o sì tẹ̀ ẹ́ sínú àpótí ìdáhùn. Ìpele kọ̀ọ̀kan ní ọ̀rọ̀ 5; yanjú 4 ó kéré jù kí àago ọ̀rọ̀ kọ̀ọ̀kan tó parí láti parí ìpele. Ìtọ́ka máa fi lẹ́tà àkọ́kọ́ hàn.",
+    "lib.arcade.cellsLeft": "Àpótí òfo {n} ló kù",
+    "lib.arcade.wrongN": "Àpótí {n} kò tọ́.",
+    "lib.arcade.noError": "A kò tíì rí àṣìṣe kankan títí di ìsinsìnyí.",
+    "lib.arcade.tooShort": "Àwọn lẹ́tà kò tó",
+    "lib.arcade.answerIs": "Ìdáhùn: {w}",
+    "lib.arcade.livesLeft": "Àṣìṣe {n} ló kù",
+    "lib.arcade.yourAnswer": "Ìdáhùn rẹ",
+    "lib.arcade.skip": "Fò ó",
+    "lib.arcade.notThis": "Kò tọ́, tún gbìyànjú.",
+    "lib.arcade.startsWith": "Lẹ́tà àkọ́kọ́: {c}",
+    "lib.arcade.note.domino": "Olùdíje kọ̀ọ̀kan gba tálì 7; ẹni tí ó ní ìlọ́po méjì tó ga jù ló bẹ̀rẹ̀. Ju tálì kan tí nọ́mbà rẹ̀ bá ìkangun ẹ̀wọ̀n kan mu. Bí o kò bá lè ju, fa láti inú àkójọ títí o ó fi lè ju; bí ó bá ṣófo, fò ìyípo. Ẹni àkọ́kọ́ tí ọwọ́ rẹ̀ ṣófo ló borí; bí méjèèjì bá dí, ẹni tí àpapọ̀ àmì rẹ̀ kéré jù ló borí.",
+    "lib.arcade.note.hearts": "Olùdíje mẹ́rin, káàdì 13 kọ̀ọ̀kan. Mẹ́ta-méjì ti clubs ló bẹ̀rẹ̀. O gbọ́dọ̀ tẹ̀lé ìrísí tí a ti gbé kalẹ̀ bí o bá lè ṣe. Ọkàn kọ̀ọ̀kan jẹ́ ojúlówó 1, Ayaba ti Spades sì jẹ́ 13; ẹni tó borí ìgbékalẹ̀ gba ojúlówó rẹ̀. Kéré dára jù; gbígba gbogbo ojúlówó 26 máa fún gbogbo àwọn yòókù ní 26. O kò lè bẹ̀rẹ̀ pẹ̀lú ọkàn títí a fi ju ọ̀kan. Lẹ́yìn ọwọ́ ìkẹyìn, o borí bí ojúlówó rẹ bá kéré jù (tàbí dọ́gba pẹ̀lú èyí tó kéré jù).",
+    "lib.arcade.note.holdem": "Ẹni-sí-ẹni pẹ̀lú kọ̀ǹpútà nípa lílo ṣípù àfarawé nìkan. Olùdíje kọ̀ọ̀kan gba káàdì àdáni 2, a sì ṣí káàdì àpapọ̀ 5 (flop, turn, river); ṣe ọwọ́ káàdì 5 tó dára jù. Ní ìyípo kọ̀ọ̀kan, o lè fold, call (tàbí check) tàbí raise. Àwọn blind ń pọ̀ sí i ní ọwọ́ 4 kọ̀ọ̀kan. O borí nígbà tí ṣípù kọ̀ǹpútà bá tán, tàbí nípa níní ṣípù púpọ̀ jù lẹ́yìn ààlà ọwọ́. Kò sí owó gidi níbẹ̀.",
+    "lib.arcade.dmDraw": "Fa tálì",
+    "lib.arcade.dmPass": "Fò",
+    "lib.arcade.dmEmpty": "A kò tíì ju tálì kankan",
+    "lib.arcade.dmYard": "Àkójọ: tálì {n}",
+    "lib.arcade.dmLeft": "Ìkangun òsì",
+    "lib.arcade.dmRight": "Ìkangun ọ̀tún",
+    "lib.arcade.dmTie": "Dọ́gba! Àwọn ẹ̀gbẹ́ méjèèjì dọ́gba.",
+    "lib.arcade.hrHand": "Ọwọ́ {n}/{t}",
+    "lib.arcade.hrTook": "{p} borí ìgbékalẹ̀ ({n} ojúlówó).",
+    "lib.arcade.hrIllegal": "O kò lè ju káàdì yìí (tẹ̀lé ìrísí, tàbí a kò tíì ju ọkàn).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise sí",
+    "lib.arcade.raiseN": "Raise sí {n}",
+    "lib.arcade.thOppFold": "Kọ̀ǹpútà fold; o borí ọwọ́ yìí.",
+    "lib.arcade.thYouFold": "O fold.",
+    "lib.arcade.thOppWin": "Kọ̀ǹpútà borí ọwọ́ yìí",
+    "lib.arcade.thYouWin": "O borí ọwọ́ yìí",
+    "lib.arcade.thSplit": "Pot pínpín",
+    "lib.arcade.thAiFold": "Kọ̀ǹpútà fold.",
+    "lib.arcade.thAiRaise": "Kọ̀ǹpútà raise sí {n}.",
+    "lib.arcade.thAiCall": "Kọ̀ǹpútà call / check.",
+    "lib.arcade.hand.high": "Káàdì gíga",
+    "lib.arcade.hand.pair": "Méjì",
+    "lib.arcade.hand.twoPair": "Méjì-méjì",
+    "lib.arcade.hand.trips": "Mẹ́ta tó jọra",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Mẹ́rin tó jọra",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Àpótí kan ń tan ní ọ̀kọ̀ọ̀kan lórí àwọn 3x3. Tẹ “Bá mu!” (tàbí Space) nígbà tí ibi tó tan bá jọ èyí tó wà ní ìgbésẹ̀ N sẹ́yìn (N hàn lókè). O nílò ìpinnu tó tọ́ tó 80% ó kéré jù láti parí ìpele. Àwọn ìpele gíga ń lo N tó tóbi jù.",
+    "lib.arcade.nbMatch": "Bá mu!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Tọ́: {a} · Àṣìṣe: {b}",
+    "lib.arcade.nbAcc": "Ìpéye: {n}%",
+    "lib.arcade.note.clicker": "Tẹ kúkì náà láti ṣe kúkì, lẹ́yìn náà lò wọ́n lórí àwọn olùrànlọ́wọ́ tó ń ṣe wọ́n fúnra wọn (owó ń pọ̀ sí i pẹ̀lú ríra kọ̀ọ̀kan). Ṣe iye kúkì tí a fojúsùn láàrin ìṣẹ́jú 2 láti parí ìpele.",
+    "lib.arcade.ckCursor": "Kọ́sọ̀",
+    "lib.arcade.ckGrandma": "Ìyá-àgbà tó ń ṣe kúkì",
+    "lib.arcade.ckFarm": "Oko",
+    "lib.arcade.ckMine": "Ibi ìwakùsà ṣúgà",
+    "lib.arcade.ckFactory": "Ilé-iṣẹ́",
+    "lib.arcade.ckCookie": "Kúkì",
+    "lib.arcade.ckEarned": "Tí a ṣe: {n}/{t}",
+    "lib.arcade.chips2": "Kúkì: {n}",
+    "lib.arcade.ckCps": "Kúkì {n}/ìṣẹ́jú-àáyá",
+    "lib.arcade.note.onet": "Yan tálì méjì tó jọra tí a lè so pọ̀ pẹ̀lú ọ̀nà tí ó ní ìyípo 2 tó pọ̀ jù, tí kò sì kọjá lórí àwọn tálì mìíràn, láti yọ wọ́n kúrò. Pa gbogbo àwọn tálì rẹ́ kí àkókò tó parí láti borí. Nígbà tí kò sí ìgbésẹ̀ mọ́, o lè yí wọn (ní iye ìgbà tí a dín).",
+    "lib.arcade.shuffle": "Yí padà",
+    "lib.arcade.tilesLeft": "Tálì {n} ló kù",
+    "lib.arcade.autoShuffle": "Kò sí ìgbésẹ̀ mọ́ — a yí wọn fúnra rẹ̀.",
+    "lib.arcade.note.jigsaw": "A ti gé àwòrán náà sí ègé a sì ti yí wọn. Tẹ ègé kan, lẹ́yìn náà òmíràn, láti pààrọ̀ wọn, kí o sì tún àwòrán tí a fihàn gẹ́gẹ́ bí ìtọ́kasí kọ́. Àwọn ègé tó wà ní ibi tó tọ́ gba ààlà aláwọ̀ ewé. Àwọn ìpele gíga ní ègé púpọ̀.",
+    "lib.arcade.jgRef": "Àwòrán ìtọ́kasí",
+    "lib.arcade.jgPlaced": "Ní ipò: {a}/{b}",
+    "lib.arcade.golfStrokes": "Ìkọlù: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "O ń ṣe eré pẹ̀lú àwọn ègé funfun, o ń rìn láti òkè ọ̀tún yípo sí ìsàlẹ̀ ọ̀tún (ilé rẹ). Ju àwọn dísì, tẹ ègé tí o fẹ́ gbé, lẹ́yìn náà tẹ ibi tí a ṣàmì sí. Bí o bá balẹ̀ sórí ojú kan tí ègé alátakò kan ṣoṣo wà, o ń kọlù ú sí ọ̀pá àárín, olùdíje náà sì gbọ́dọ̀ kọ́kọ́ mú un padà wọlé. O kò lè balẹ̀ sórí ojú tí ègé alátakò méjì tàbí jù bẹ́ẹ̀ lọ wà. Nígbà tí gbogbo ègé 15 rẹ bá wà ní ilé rẹ (ojú 6 ìkẹyìn), o lè bẹ̀rẹ̀ sí í kó wọn jáde. Ẹni àkọ́kọ́ tó kó gbogbo 15 jáde ló borí.",
+    "lib.arcade.bgRoll": "Ju àwọn dísì",
+    "lib.arcade.bgOff": "Kó jáde",
+    "lib.arcade.bgRollFirst": "Ju àwọn dísì",
+    "lib.arcade.bgInfo": "Tí a kó jáde: ìwọ {a} · kọ̀ǹpútà {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "O kò ní ìgbésẹ̀ tó bófin mu mọ́.",
+    "lib.arcade.note.tienlen": "Olùdíje mẹ́rin, káàdì 13 kọ̀ọ̀kan. Ìtò káàdì láti kéré sí ga: 3, 4, … K, A, 2; ìrísí láti kéré sí ga: spades, clubs, diamonds, hearts. Ẹni tó ní 3 ti spades ló kọ́kọ́ bẹ̀rẹ̀. Ju káàdì kan, méjì, mẹ́ta tó jọra, mẹ́rin tó jọra, tàbí ọ̀wọ́ káàdì 3 tàbí jù bẹ́ẹ̀ lọ tó tẹ̀lé ara (kò sí 2). Olùdíje tó kàn gbọ́dọ̀ ju irú kan náà tó ga jù, tàbí kí ó fò; mẹ́rin tó jọra lè borí 2 kan tàbí 2 méjì. Nígbà tí gbogbo àwọn yòókù bá fò, ẹni tó ju kẹ́yìn lè bẹ̀rẹ̀ pẹ̀lú ohunkóhun. Ẹni àkọ́kọ́ tí ọwọ́ rẹ̀ ṣófo ló borí. Yan àwọn káàdì, lẹ́yìn náà tẹ Ju.",
+    "lib.arcade.tlPlay": "Ju",
+    "lib.arcade.tlPass": "Fò",
+    "lib.arcade.tlClear": "Pa yíyàn rẹ́",
+    "lib.arcade.tlPassed": "fò",
+    "lib.arcade.tlFree": "Tábìlì ṣófo — o lè bẹ̀rẹ̀ pẹ̀lú ohunkóhun",
+    "lib.arcade.tlLeft": "Káàdì tó kù: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} fò.",
+    "lib.arcade.tlBad": "Àwọn káàdì tí a yàn kò ṣe àpapọ̀ tó tọ́.",
+    "lib.arcade.tlLow": "Àpapọ̀ yìí kò ga tó láti borí ohun tó wà lórí tábìlì.",
+    "lib.arcade.note.td": "Tẹ àgbègbè òfo (kì í ṣe ọ̀nà) láti kọ́ ilé-ìṣọ́ ìbọn, èyí tó ń ná wúrà; tún tẹ ilé-ìṣọ́ láti gbé e ga (títí dé ìpele 5). Àwọn ilé-ìṣọ́ ń yìnbọn fúnra wọn sí ọ̀tá tó ti lọ jìnnà jù ní ibi tó wà. Ṣẹ́gun àwọn ọ̀tá láti jèrè wúrà púpọ̀; bí ọ̀tá 15 bá dé òpin, o pàdánù. Là gbogbo ìgbì já láti parí ìpele.",
+    "lib.arcade.tdInfo": "Wúrà: {g} · Ìgbì {w}/{t}",
+    "lib.arcade.tdCost": "Ilé-ìṣọ́: {n}",
+    "lib.arcade.note.colorNum": "Gbogbo onígun mẹ́rin ní nọ́mbà tó bá àwọ̀ kan nínú pálẹ́ẹ̀tì mu. Yan àwọ̀, lẹ́yìn náà tẹ àwọn onígun tó ní nọ́mbà náà láti kùn wọ́n; títẹ̀ pẹ̀lú àwọ̀ tí kò tọ́ kò kùn nǹkankan. Kùn gbogbo onígun ní ọ̀nà tó tọ́ láti parí àwòrán náà. Àwọn ìpele gíga ní àwọ̀ púpọ̀.",
+    "lib.arcade.cnWrong": "Àwọ̀ tí kò tọ́ — ṣàyẹ̀wò nọ́mbà tó wà lórí onígun.",
+    "lib.arcade.note.yukon": "Bí Klondike ṣùgbọ́n láìsí àkójọ: a lè gbé káàdì èyíkéyìí tí ojú rẹ̀ wà lókè pẹ̀lú gbogbo káàdì tó wà lórí rẹ̀, kódà bí wọn kò bá tẹ̀lé ara; káàdì àkọ́kọ́ nìkan ló gbọ́dọ̀ bá ọ̀wọ́n àfojúsùn mu (nípa dídín kù, pupa àti dúdú ń yípadà; Ọba lọ sí ọ̀wọ́n òfo). Kọ́ gbogbo káàdì 52 sórí àwọn ìpìlẹ̀ mẹ́rin láti Ace sí King. Àwọn ìpele ìsàlẹ̀ bẹ̀rẹ̀ pẹ̀lú káàdì púpọ̀ tí ojú wọn ti wà lókè.",
+    "lib.arcade.yukonFree": "Káàdì tí ojú wọn wà nísàlẹ̀: {n}",
+    "lib.arcade.note.chinesechk": "O ń ṣe eré pẹ̀lú àwọn òkúta aláwọ̀ búlú ní igun ọ̀tún; gbé gbogbo òkúta 10 lọ sí igun òsì tó wà ní òdìkejì kí kọ̀ǹpútà tó ṣe bẹ́ẹ̀. Ní ìyípo kọ̀ọ̀kan, o gbé òkúta kan: gbé ìgbésẹ̀ sí ihò òfo tó wà nítòsí, tàbí fò kọjá òkúta èyíkéyìí sí ihò òfo tó wà lẹ́yìn rẹ̀ ní tààrà, kí o sì máa fò títẹ̀lé ara ní iye ìgbà tí o bá fẹ́. Tẹ òkúta rẹ kan, lẹ́yìn náà tẹ ihò aláwọ̀ ewé láti rìn.",
+    "lib.arcade.ccTurn": "Ìyípo rẹ · Ìyípo {n}",
+    "lib.arcade.ccDraw": "Àwọn ìyípo ti tán — ó dọ́gba.",
+    "lib.arcade.note.maubinh": "Ìwọ àti kọ̀ǹpútà ń gba káàdì 13 kọ̀ọ̀kan, ẹ sì ń tò wọ́n sí ọwọ́ 3: ọwọ́ ẹ̀yìn káàdì 5, ọwọ́ àárín káàdì 5 àti ọwọ́ iwájú káàdì 3. Ọwọ́ ẹ̀yìn gbọ́dọ̀ lágbára tó ti àárín, ti àárín sì lágbára tó ti iwájú; bí kò bá rí bẹ́ẹ̀, ìtò rẹ bàjẹ́ o sì pàdánù gbogbo ìyípo náà. Tẹ káàdì kan, lẹ́yìn náà tẹ ìlà tí ó yẹ kí ó lọ (tẹ káàdì tí a ti gbé sí láti gbà á padà). Ọwọ́ kọ̀ọ̀kan tí o bá borí jẹ́ ojúlówó 1; borí gbogbo 3 jẹ́ 6. Ṣe ìyípo 5 — àpapọ̀ rere máa parí ìpele. Ọwọ́ iwájú lè jẹ́ káàdì gíga, méjì tàbí mẹ́ta tó jọra nìkan.",
+    "lib.arcade.mbHigh": "Káàdì gíga",
+    "lib.arcade.mbPair": "Méjì",
+    "lib.arcade.mbTwoPair": "Méjì-méjì",
+    "lib.arcade.mbTrips": "Mẹ́ta tó jọra",
+    "lib.arcade.mbStraight": "Straight",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Mẹ́rin tó jọra",
+    "lib.arcade.mbSflush": "Straight flush",
+    "lib.arcade.mbBack": "Ọwọ́ ẹ̀yìn",
+    "lib.arcade.mbMid": "Ọwọ́ àárín",
+    "lib.arcade.mbFront": "Ọwọ́ iwájú",
+    "lib.arcade.mbFoe": "Kọ̀ǹpútà",
+    "lib.arcade.mbYou": "Ìwọ",
+    "lib.arcade.mbFoul": "Bàjẹ́!",
+    "lib.arcade.mbFoeFoul": "Kọ̀ǹpútà bàjẹ́!",
+    "lib.arcade.mbConfirm": "Fi àwọn káàdì hàn",
+    "lib.arcade.mbReset": "Pa rẹ́",
+    "lib.arcade.mbHand": "Ọwọ́ rẹ",
+    "lib.arcade.mbRound": "Ìyípo {a}/{b}",
+    "lib.arcade.mbTotal": "Àpapọ̀: {n}",
+    "lib.arcade.mbFinish": "Parí",
+    "lib.arcade.mbNext": "Ìyípo tó kàn",
+    "lib.arcade.mbDraw": "Ojúlówó dọ́gba — tún ṣe.",
+    "lib.arcade.mbAutoMsg": "Èyí ni ìtò tí a dámọ̀ràn. O lè yí i padà kí o tó fi àwọn káàdì hàn.",
+    "lib.arcade.note.phom": "Olùdíje méjì; ẹnì kọ̀ọ̀kan gba káàdì 9 (ẹni tó kọ́kọ́ bẹ̀rẹ̀ gba 10). Meld jẹ́ káàdì 3 tàbí jù bẹ́ẹ̀ lọ ti ipò kan náà, tàbí káàdì 3 tàbí jù bẹ́ẹ̀ lọ tó tẹ̀lé ara ti ìrísí kan náà (Ace kéré nìkan). Ní ìyípo rẹ, fa káàdì láti inú àkójọ, tàbí gba káàdì tí alátakò rẹ ṣẹ̀ṣẹ̀ jù bí ó bá ṣe meld pẹ̀lú ọwọ́ rẹ (káàdì tí o gbà gbọ́dọ̀ wà), lẹ́yìn náà jù káàdì kan. Nígbà tí olùdíje kọ̀ọ̀kan bá ti jù káàdì 4, ìyípo parí, ẹni tí àpapọ̀ àwọn káàdì tí kò sí nínú meld kéré jù (Ace = 1 … King = 13) borí. Bí gbogbo káàdì rẹ bá wà nínú meld lẹ́yìn jíjù, o jáde (“U”) o sì borí lẹ́sẹkẹsẹ. Àwọn káàdì tí a fi ààlà ewé yà wà nínú àwọn meld rẹ tó dára jù.",
+    "lib.arcade.pmDraw": "Fa",
+    "lib.arcade.pmEat": "Gba èyí tí a jù",
+    "lib.arcade.pmThrow": "Jù",
+    "lib.arcade.pmFoeAte": "Kọ̀ǹpútà gba káàdì rẹ.",
+    "lib.arcade.pmFoeU": "Kọ̀ǹpútà jáde!",
+    "lib.arcade.pmTurn": "Ìyípo {a}/{b}",
+    "lib.arcade.pmLeft": "Láìsí meld: {n}",
+    "lib.arcade.pmDeck": "Àkójọ: {n}",
+    "lib.arcade.pmFoeHand": "Ọwọ́ kọ̀ǹpútà",
+    "lib.arcade.pmFoeDisc": "Ohun tí kọ̀ǹpútà jù",
+    "lib.arcade.pmFoeEaten": "Kọ̀ǹpútà gba",
+    "lib.arcade.pmMyDisc": "Ohun tí o jù",
+    "lib.arcade.pmAte": "O gba káàdì yìí — jẹ́ kí ó wà nínú meld.",
+    "lib.arcade.pmKeep": "Káàdì tí o gbà gbọ́dọ̀ wà — jù òmíràn.",
+    "lib.arcade.pmU": "Jáde! O borí lẹ́sẹkẹsẹ.",
+    "lib.arcade.pmYou": "Ìwọ",
+    "lib.arcade.pmFoe": "Kọ̀ǹpútà",
+    "lib.arcade.pmDraw2": "Ojúlówó dọ́gba.",
+    "lib.arcade.note.shogi": "Shogi ni ṣẹ́ẹ̀sì ilẹ̀ Japan. O ń ṣe eré ní ẹ̀gbẹ́ ìsàlẹ̀ o sì kọ́kọ́ rìn; àwọn ègé kọ̀ǹpútà dojú kọ ọ̀nà kejì. Àwọn ègé tí a gbà máa lọ sí ọwọ́ rẹ, a sì lè gbé wọn sórí onígun òfo èyíkéyìí dípò ìrìn (kò gbọ́dọ̀ jẹ́ pàwn ní ọ̀wọ́n tí o ti ní pàwn tí kò tíì gòkè, tàbí ègé ní ìlà tí kò ní lè rìn mọ́). Ègé tó bá wọ, jáde, tàbí rìn nínú ìlà mẹ́ta ìkẹyìn alátakò lè gòkè ipò (àfi Ọba àti Wúrà); gígòkè ipò jẹ́ dandan nígbà tí ègé kò bá ní ìrìn mọ́. Fi àṣepa mú Ọba alátakò láti borí. Kanji: 歩 pàwn, 香 lance, 桂 ẹṣin, 銀 fàdákà, 金 wúrà, 角 bíṣọ́ọ̀bù, 飛 rook, 玉 ọba; と, 馬, 竜 àti àwọn ègé pupa mìíràn ti gòkè ipò.",
+    "lib.arcade.sgPromote": "Gòkè ipò",
+    "lib.arcade.sgKeep": "Má ṣe gòkè ipò",
+    "lib.arcade.sgCheck": "O wà nínú ewu ṣẹ́ẹ̀kì!",
+    "lib.arcade.sgWin": "Àṣepa — o borí.",
+    "lib.arcade.sgLose": "A fi àṣepa mú ọ.",
+    "lib.arcade.sgAskPromote": "Gbé ègé yìí gòkè ipò?",
+    "lib.arcade.note.janggi": "Janggi ni ṣẹ́ẹ̀sì ilẹ̀ Korea. O ń ṣe eré pẹ̀lú àwọn ègé aláwọ̀ búlú nísàlẹ̀ o sì kọ́kọ́ rìn. Yàtọ̀ sí xiangqi, kò sí odò, àwọn ààfin méjèèjì sì ní ìlà àgbélébùú. Aṣáájú àti àwọn Ẹ̀ṣọ́ ń rìn ìgbésẹ̀ kan lórí ìlà ààfin (pẹ̀lú àgbélébùú); Kẹ̀kẹ́ ogun (Chariot) tún ń yọ́ ó sì ń gbà lórí àgbélébùú ààfin; Ìbọn ńlá (Cannon) gbọ́dọ̀ fò kọjá ègé kan ṣoṣo (kì í ṣe Ìbọn ńlá mìíràn) láti rìn tàbí gbà, kò sì lè gba Ìbọn ńlá; Ẹṣin ń rìn ìgbésẹ̀ kan ní tààrà lẹ́yìn náà kan ní àgbélébùú, Erin ìgbésẹ̀ kan ní tààrà lẹ́yìn náà méjì ní àgbélébùú, méjèèjì ni ègé tó wà lọ́nà dí lọ́wọ́; Àwọn Ọmọ-ogun ń rìn síwájú tàbí sí ẹ̀gbẹ́, àti ní àgbélébùú síwájú nínú ààfin ọ̀tá. Aṣáájú méjèèjì kò gbọ́dọ̀ dojú kọ ara wọn láéláé. Fi àṣepa mú Aṣáájú alátakò láti borí. Kọ̀ǹpútà kì í fò ìyípo láéláé.",
+    "lib.arcade.jgCheck": "O wà nínú ewu ṣẹ́ẹ̀kì!",
+    "lib.arcade.jgWin": "Àṣepa — o borí.",
+    "lib.arcade.jgLose": "A fi àṣepa mú ọ.",
+    "lib.arcade.note.pinball": "Tẹ Space, Up tàbí fọwọ́kan tábìlì láti tú bọ́ọ̀lù sílẹ̀. Di Left (tàbí fọwọ́kan ààbọ̀ òsì tábìlì) mú láti gbé flipper òsì sókè àti Right (tàbí ààbọ̀ ọ̀tún) fún ti ọ̀tún — tẹ̀ ní ìró dípò dídi mú. Àwọn bọ́ǹpà yípo ń fún ní ojúlówó 100 kọ̀ọ̀kan. O ní bọ́ọ̀lù 3; dé ojúlówó tí a fojúsùn kí wọ́n tó tán láti parí ìpele.",
+    "lib.arcade.pinBalls": "Bọ́ọ̀lù: {n} · Àfojúsùn: {t}",
+    "lib.arcade.note.cribbage": "Cribbage olùdíje méjì, ìje sí ojúlówó 61. Ní ìpín kọ̀ọ̀kan, o gba káàdì 6, o sì fi 2 sínú crib (ó jẹ́ ti olùpín) ní ojú wọn nísàlẹ̀. A ṣí káàdì ìbẹ̀rẹ̀ (starter) kan. Lẹ́yìn náà ẹ máa ju káàdì ní ojú wọn lókè lẹ́ẹ̀kọ̀ọ̀kan, àpapọ̀ tó ń lọ kò gbọ́dọ̀ ju 31 lọ: dídé 15 tàbí 31 jẹ́ 2, bíbá káàdì ìkẹyìn mu jẹ́ 2/6/12, ọ̀wọ́ káàdì 3 tàbí jù bẹ́ẹ̀ lọ (ní ìtò èyíkéyìí) jẹ́ gígùn rẹ̀, àti nígbà tí ẹnikẹ́ni kò bá lè ju, ẹni tó ju kẹ́yìn gba 1 (“Go”). Lẹ́yìn náà a ka ọwọ́ kọ̀ọ̀kan ti káàdì 4 pẹ̀lú starter: ìṣọ̀kan kọ̀ọ̀kan tí àpapọ̀ rẹ̀ jẹ́ 15 jẹ́ 2, ìpele kọ̀ọ̀kan 2, ọ̀wọ́ 3+ gígùn rẹ̀, káàdì mẹ́rin ti ìrísí kan 4 (5 pẹ̀lú starter), àti Jack tó bá ìrísí starter mu 1. Ẹni tí kì í ṣe olùpín ló kọ́kọ́ ka, lẹ́yìn náà olùpín ka ọwọ́ rẹ̀ àti crib.",
+    "lib.arcade.cbFifteen": "Mẹ́dógún",
+    "lib.arcade.cbPair": "Méjì",
+    "lib.arcade.cbRun": "Ọ̀wọ́",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Jack tó bá starter mu",
+    "lib.arcade.cbHeels": "Jack bí starter",
+    "lib.arcade.cbYou": "Ìwọ",
+    "lib.arcade.cbFoe": "Kọ̀ǹpútà",
+    "lib.arcade.cbLast": "Káàdì ìkẹyìn",
+    "lib.arcade.cbCount": "Àpapọ̀: {n}",
+    "lib.arcade.cbYouDeal": "O pín",
+    "lib.arcade.cbFoeDeal": "Kọ̀ǹpútà pín",
+    "lib.arcade.cbPick": "Yan káàdì 2 fún crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Ọwọ́ rẹ",
+    "lib.arcade.cbFoeHand": "Ọwọ́ kọ̀ǹpútà",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "Ojúlówó 0",
+    "lib.arcade.cbPlayed": "Tí a ju",
+    "lib.arcade.cbToCrib": "Fi sínú crib",
+    "lib.arcade.cbNext": "Tẹ̀síwájú",
+    "lib.arcade.cbHand": "Ọwọ́"
   },
   "pages": {
     "home": {
@@ -998,6 +1303,222 @@
     "ultimate-tictactoe": {
       "name": "Ultimate Tic-Tac-Toe",
       "desc": "Tic-tac-toe lórí pákó kékeré mẹ́sàn-án: àpótí tí o yàn ló pinnu ibi tí alátakò gbọdọ̀ ti ṣeré; lòdì sí kọ̀ǹpútà ní ìpele 10."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Lu bọ́ọ̀lù kọjá kọ̀ǹpútà; ẹni àkọ́kọ́ tó ní ojúlówó 5 ló borí. Ìpele 10 pẹ̀lú alátakò tó yára tó sì mú jù."
+    },
+    "space-shooter": {
+      "name": "Ayìnbọn Òfuurufú",
+      "desc": "Darí ọkọ̀ rẹ, yìnbọn ṣubú àwọn ọkọ̀ ọ̀tá kí o sì yẹra fún ìbọn wọn; ìpele 10 pẹ̀lú ìgbì tó tóbi jù, ìbọn ìdáhùn àti ọ̀tá tó lágbára jù."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Yí, tì síwájú kí o sì yìnbọn láti fọ́ àwọn òkúta òfuurufú; àwọn òkúta ńlá ń pín sí kéékèèké. Ìpele 10 pẹ̀lú òkúta púpọ̀ tó yára jù."
+    },
+    "maze": {
+      "name": "Ọ̀nà-àdìtú",
+      "desc": "Wá ọ̀nà jáde nínú ọ̀nà-àdìtú kí àkókò tó parí; ìpele 10 láti kékeré sí ńlá, pẹ̀lú ìyẹ̀fun ní àwọn ìpele gíga."
+    },
+    "road-cross": {
+      "name": "Kíkọjá Ọ̀nà (bí Frogger)",
+      "desc": "Mú ọ̀pọ̀lọ́ kọjá àwọn ọ̀nà tó kún fún ọkọ̀ àti àwọn odò tó ní igi tó ń léfòó láti dé ilé ní ìgbà mẹ́ta; ìpele 10 pẹ̀lú ọkọ̀ tó yára jù àti odò ní àwọn ìpele gíga."
+    },
+    "flappy": {
+      "name": "Eré bí Flappy Bird",
+      "desc": "Tẹ̀ láti gbá ìyẹ́ kí o sì fò kọjá àwọn àlàfo láàrin àwọn páìpù; ìpele 10 pẹ̀lú àlàfo tó kéré jù àti ìyára tó ń pọ̀ sí i."
+    },
+    "runner": {
+      "name": "Asáré Dinosaur",
+      "desc": "Fò kọjá àwọn kákúùsì kí o sì bẹ̀ sí abẹ́ àwọn ẹyẹ; sáré jìnnà tó láti parí ọ̀kọ̀ọ̀kan nínú ìpele 10 bí ìyára ṣe ń pọ̀ sí i."
+    },
+    "whack-a-mole": {
+      "name": "Lu Èkúté",
+      "desc": "Lu àwọn èkúté tó ń yọ jáde láti inú ihò kí àkókò tó parí, kí o sì yẹra fún àwọn bọ́ọ̀mù; ìpele 10 láti ìrọ̀rùn títí dé ìyára gidi."
+    },
+    "simon": {
+      "name": "Simon (Ìrántí Àwọ̀)",
+      "desc": "Rántí kí o sì tún ọ̀wọ́ àwọn àwọ̀ àti ohùn ṣe; ọ̀wọ́ gígùn nínú ìpele 10, pẹ̀lú bọ́tìnì 6 láti ìpele 7."
+    },
+    "aim-trainer": {
+      "name": "Ìdánrawò Àfojúsùn",
+      "desc": "Lu àwọn ibi àfojúsùn tó ń farahàn láìròtẹ́lẹ̀ tí wọ́n sì ń sọnù kíákíá; àwọn àfojúsùn ń kéré nínú ìpele 10, a sì ń wọn ìdáhùn rẹ."
+    },
+    "quick-math": {
+      "name": "Ìṣirò Kíákíá",
+      "desc": "Ṣe àfikún, ìyọkúrò, ìsọdipúpọ̀ àti ìpín lọ́kàn lábẹ́ ìdààmú àkókò; ìpele 10 láti àwọn àpapọ̀ rọrùn sí àwọn ìsọ̀rọ̀ ìṣirò."
+    },
+    "reaction": {
+      "name": "Ìdánwò Ìyára Ìdáhùn",
+      "desc": "Tẹ̀ ní àkókò tí ojú-ìwé bá di aláwọ̀ ewé; àpapọ̀ ìyípo 5 rẹ gbọ́dọ̀ bá ààlà ìpele kọ̀ọ̀kan mu, èyí tó ń le sí i nínú ìpele 10."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Fọ́n irúgbìn yípo àwọn ihò, gba àwọn irúgbìn alátakò rẹ kí o sì tún rìn nígbà tí o bá bọ́ sí ibi ìpamọ́ rẹ; ṣe eré pẹ̀lú kọ̀ǹpútà nínú ìpele 10 láti ìrọ̀rùn sí líle."
+    },
+    "snakes-ladders": {
+      "name": "Ejò àti Àkàbà",
+      "desc": "Ju dísì láti ojú 1 sí 100, gun àkàbà, yẹra fún ejò kí o sì dé ìparí ṣáájú àwọn alátakò rẹ; ìpele 10."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Gbé, sún àti fò àwọn òkúta rẹ láti ṣe mẹ́ta ní ìlà kan kí o sì yọ àwọn òkúta alátakò kúrò; ṣe eré pẹ̀lú kọ̀ǹpútà nínú ìpele 10."
+    },
+    "battleship": {
+      "name": "Ogun Ojú-Omi",
+      "desc": "Wá kí o sì rì àwọn ọkọ̀ ojú-omi kọ̀ǹpútà lórí àwọn 10x10 kí ó tó rì tìrẹ; ìpele 10 bí kọ̀ǹpútà ṣe ń mọ̀ ní ọgbọ́n jù."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Elégédé, Akàn, Ẹja, Ede)",
+      "desc": "Eré dísì ìbílẹ̀ Vietnam: gbé tẹ́tẹ́ owó àfarawé lórí àwọn ẹranko kí o sì gbọn dísì mẹ́ta; dé owó tí a fojúsùn nínú ìpele 10 (kò sí owó gidi)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Gbé tẹ́tẹ́ lórí Player, Banker tàbí Tie pẹ̀lú àwọn káàdì tí a pín ní ìbámu pẹ̀lú ìlànà, ní lílo owó àfarawé; dé owó tí a fojúsùn nínú ìpele 10 (kò sí owó gidi)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Eré Káàdì Mẹ́ta)",
+      "desc": "Fi ọwọ́ káàdì 3 wé ti olùpín: mẹ́ta tó jọra, káàdì àwòrán mẹ́ta, lẹ́yìn náà ojúlówó 9 títí dé 0; owó àfarawé, ìpele 10, kò sí owó gidi."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Sàmì sí àwọn nọ́mbà tí a pè lórí káàdì 5x5 rẹ kí o sì kígbe BINGO ṣáájú àwọn alátakò kọ̀ǹpútà; a ń pe àwọn nọ́mbà yára sí i nínú ìpele 10."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Dísì Márùn-ún)",
+      "desc": "Ju dísì márùn-ún, pa àwọn tó dára mọ́ kí o sì kún àpótí ojúlówó 13; dé ojúlówó tí a fojúsùn nínú ìpele 10."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Bá ìrísí tàbí ipò mu, mẹ́jọ ń yí ìrísí padà; sọ ọwọ́ rẹ di òfo ṣáájú alátakò kọ̀ǹpútà 1 sí 3 nínú ìpele 10."
+    },
+    "car-race": {
+      "name": "Yẹra fún Ọkọ̀ nínú Eré Ọkọ̀",
+      "desc": "Yí ọ̀nà padà láti yẹra fún àwọn ọkọ̀ tó wà níwájú kí o sì wakọ̀ gbogbo ọ̀nà jíjìn; ìpele 10 pẹ̀lú ọ̀nà púpọ̀ àti ọkọ̀ tó yára jù."
+    },
+    "sky-jump": {
+      "name": "Fífò Sánmà",
+      "desc": "Fò láti pẹpẹ sí pẹpẹ láti gòkè bí o ti lè ṣe láìṣubú; ìpele 10 pẹ̀lú pẹpẹ tó jìnnà síra, èyí tó ń rìn àti èyí tó ń fọ́."
+    },
+    "gold-miner": {
+      "name": "Agbẹ́ Wúrà",
+      "desc": "Ju ìkọ́ sílẹ̀ láti fa wúrà àti dáyámọ́ńdì, yẹra fún àwọn òkúta wúwo kí o sì dé owó tí a fojúsùn láàrin ìṣẹ́jú-àáyá 60; ìpele 10."
+    },
+    "fruit-slice": {
+      "name": "Gígé Èso",
+      "desc": "Fa ìka láti gé èso tó ń fò sókè kí o sì yẹra fún àwọn bọ́ọ̀mù; ìpele 10 pẹ̀lú èso àti bọ́ọ̀mù púpọ̀ sí i."
+    },
+    "basketball": {
+      "name": "Jíju Bọ́ọ̀lù Agbọ̀n",
+      "desc": "Fa kí o sì tú sílẹ̀ láti ju bọ́ọ̀lù sínú agbọ̀n láàrin iye ìjù tí a dín; ìpele 10, pẹ̀lú agbọ̀n tó ń rìn láti ìpele 4."
+    },
+    "bubble-shooter": {
+      "name": "Ayìnbọn Èéfín",
+      "desc": "Yìnbọn èéfín láti so 3 tàbí jù bẹ́ẹ̀ lọ ti àwọ̀ kan náà kí o sì fọ́ wọn, kí o sì pa gbogbo wọn rẹ́ kí wọ́n tó dé ìsàlẹ̀; ìpele 10 pẹ̀lú àwọ̀ púpọ̀ sí i."
+    },
+    "dot-chase": {
+      "name": "Lílépa Àmì",
+      "desc": "Jẹ gbogbo àmì inú ọ̀nà-àdìtú kí o sì yẹra fún àwọn iwin tó ń lépa rẹ; ìpele 10 pẹ̀lú iwin púpọ̀ tó gbọ́n jù."
+    },
+    "kakuro": {
+      "name": "Kakuro (Àpapọ̀ Àgbélébùú)",
+      "desc": "Fi àwọn nọ́mbà 1–9 kún àwọn àpótí funfun kí ìlà kọ̀ọ̀kan lè dọ́gba pẹ̀lú àmì rẹ̀ láìsí àtúnṣe; ìpele 10, àwọn àpótí láti 5x5 sí 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Fi nọ́mbà kún àwọn àpótí láìsí àtúnṣe nínú ìlà tàbí ọ̀wọ́n kí àgọ́ kọ̀ọ̀kan lè fún ní àfojúsùn rẹ̀ pẹ̀lú iṣẹ́ rẹ̀; ìpele 10, àwọn àpótí láti 3x3 sí 6x6."
+    },
+    "word-guess": {
+      "name": "Ìṣèdá Ọ̀rọ̀ (bí Wordle)",
+      "desc": "Ṣe àròkọ ọ̀rọ̀ Gẹ̀ẹ́sì àṣírí pẹ̀lú àwọn ìtọ́ka aláwọ̀ ewé, ofeefee àti eérú; ìpele 10 pẹ̀lú ọ̀rọ̀ lẹ́tà 4–6 àti ìgbìyànjú díẹ̀."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Ṣe àròkọ ọ̀rọ̀ Gẹ̀ẹ́sì lẹ́tà kan lẹ́ẹ̀kan kí àṣìṣe rẹ tó tán; ìpele 10 pẹ̀lú ọ̀rọ̀ gígùn àti àṣìṣe díẹ̀."
+    },
+    "word-scramble": {
+      "name": "Àtúntò Ọ̀rọ̀ (Anagram)",
+      "desc": "Tún àwọn lẹ́tà tó dàrú ṣe sí ọ̀rọ̀ Gẹ̀ẹ́sì kí àkókò tó parí; ìpele 10, ọ̀rọ̀ 5 ní ìpele kọ̀ọ̀kan."
+    },
+    "domino": {
+      "name": "Dominoes",
+      "desc": "Bá àwọn tálì mu mọ́ èyíkéyìí ìkangun ẹ̀wọ̀n kí o sì sọ ọwọ́ rẹ di òfo ṣáájú kọ̀ǹpútà; ìpele 10 bí kọ̀ǹpútà ṣe ń gbọ́n sí i."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Yẹra fún àwọn ọkàn àti Ayaba ti Spades nínú eré káàdì olùdíje mẹ́rin; ojúlówó kékeré dára jù; ìpele 10 lòdì sí àwọn olùdíje kọ̀ǹpútà tó gbọ́n jù."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (ṣípù àfarawé)",
+      "desc": "Poker ẹni-sí-ẹni pẹ̀lú kọ̀ǹpútà nípa ṣípù àfarawé: fold, call tàbí raise, kí o sì borí nígbà tí ṣípù kọ̀ǹpútà bá tán; ìpele 10, kò sí owó gidi."
+    },
+    "n-back": {
+      "name": "Ìrántí N-Back",
+      "desc": "Wo àpótí tó tan kí o sì tẹ Match nígbà tí ó bá jọ èyí tó wà ní ìgbésẹ̀ N sẹ́yìn; ìpele 10 pẹ̀lú N títí dé 4."
+    },
+    "cookie-clicker": {
+      "name": "Kúkì Kílíkà",
+      "desc": "Tẹ̀ láti ṣe kúkì, ra àwọn olùrànlọ́wọ́ tó ń ṣe wọ́n fúnra wọn kí o sì dé àfojúsùn láàrin ìṣẹ́jú 2; ìpele 10."
+    },
+    "tile-connect": {
+      "name": "Ìsopọ̀ Tálì (bí Onet)",
+      "desc": "So àwọn tálì tó jọra pẹ̀lú ọ̀nà tí kò ju ìyípo méjì lọ kí o sì pa pátákó rẹ́ kí àkókò tó parí; ìpele 10, pátákó tó ń tóbi sí i."
+    },
+    "jigsaw": {
+      "name": "Àdììtú Àwòrán (Jigsaw)",
+      "desc": "Pààrọ̀ àwọn ègé tó dàrú láti tún àwòrán kọ́; ìpele 10 láti ègé 3x3 sí 6x6."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Fa sẹ́yìn kí o sì tú sílẹ̀ láti fi bọ́ọ̀lù sínú ihò láàrin ààlà ìkọlù; pápá 10 pẹ̀lú ògiri àti yanrìn."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Ju dísì, sáré mú àwọn ègé rẹ wálé kí o sì kó wọn jáde ṣáájú kọ̀ǹpútà, kí o sì kọlù àwọn ègé rẹ̀ tó dá dúró lójú ọ̀nà; ìpele 10."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Mẹ́tàlá)",
+      "desc": "Eré káàdì ilẹ̀ Vietnam fún mẹ́rin: ju káàdì kan, méjì, ọ̀wọ́ àti mẹ́rin láti sọ ọwọ́ rẹ di òfo ní àkọ́kọ́; ìpele 10."
+    },
+    "tower-defense": {
+      "name": "Ààbò Ilé-Ìṣọ́",
+      "desc": "Kọ́ kí o sì gbé àwọn ilé-ìṣọ́ ga lẹ́bàá ọ̀nà láti dá gbogbo ìgbì ọ̀tá dúró; ìpele 10 lórí àwọn àwòrán ilẹ̀ mẹ́ta tó yàtọ̀."
+    },
+    "color-by-number": {
+      "name": "Kùn Àwọ̀ Nípa Nọ́mbà",
+      "desc": "Kùn onígun kọ̀ọ̀kan pẹ̀lú àwọ̀ tó bá nọ́mbà rẹ̀ mu láti fi àwòrán hàn; àwòrán 10 pẹ̀lú àwọ̀ púpọ̀ sí i ní ìgbà kọ̀ọ̀kan."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike láìsí àkójọ: gbé káàdì èyíkéyìí tí ojú rẹ̀ wà lókè pẹ̀lú gbogbo ohun tó wà lórí rẹ̀; ìpele 10, káàdì tí ojú wọn wà lókè ń dín kù bí o ṣe ń lọ."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Eré ìfò àti ìgbésẹ̀ onígun-ìràwọ̀ lòdì sí kọ̀ǹpútà: gbé gbogbo òkúta 10 lọ sí igun òdìkejì ní àkọ́kọ́; ìpele 10."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Ṣáínà)",
+      "desc": "Ṣètò káàdì 13 sí ọwọ́ mẹ́ta ti káàdì 5, 5 àti 3 kí o sì ṣẹ́gun kọ̀ǹpútà; ìyípo 5 ní ìpele kọ̀ọ̀kan, ìpele 10."
+    },
+    "phom": {
+      "name": "Phom (Rummy ilẹ̀ Vietnam)",
+      "desc": "Rummy ilẹ̀ Vietnam olùdíje méjì lòdì sí kọ̀ǹpútà: fa tàbí gba èyí tí a jù, ṣe àwọn meld kí o sì jáde; ojúlówó tó kù tó kéré jù ló borí; ìpele 10."
+    },
+    "shogi": {
+      "name": "Shogi (Ṣẹ́ẹ̀sì Japan)",
+      "desc": "Ṣe shogi lòdì sí kọ̀ǹpútà: gbé àwọn ègé tí a gbà sílẹ̀, gòkè ipò, kí o sì fi àṣepa mú ọba; ìpele 10 pẹ̀lú ìpadàsẹ́yìn."
+    },
+    "janggi": {
+      "name": "Janggi (Ṣẹ́ẹ̀sì Korea)",
+      "desc": "Ṣe ṣẹ́ẹ̀sì Korea lòdì sí kọ̀ǹpútà: àgbélébùú ààfin, fífò Ìbọn ńlá lórí ègé kan, Erin ìgbésẹ̀ mẹ́ta; ìpele 10 pẹ̀lú ìpadàsẹ́yìn."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Gbá òsì àti ọ̀tún láti jẹ́ kí bọ́ọ̀lù wà láàyè, lu àwọn bọ́ǹpà kí o sì dé ojúlówó tí a fojúsùn kí bọ́ọ̀lù 3 rẹ tó tán; ìpele 10."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage olùdíje méjì lòdì sí kọ̀ǹpútà: crib, pegging sí 31, kíka ọwọ́, ìje sí ojúlówó 61; ìpele 10."
     }
   },
   "s": {

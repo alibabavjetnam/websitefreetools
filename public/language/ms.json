@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kad berbaki: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} melangkau.",
     "lib.arcade.tlBad": "Kad yang dipilih tidak membentuk set yang sah.",
-    "lib.arcade.tlLow": "Set ini tidak cukup tinggi untuk mengalahkan kad di meja."
+    "lib.arcade.tlLow": "Set ini tidak cukup tinggi untuk mengalahkan kad di meja.",
+    "lib.arcade.note.td": "Ketik petak kosong (bukan laluan) untuk membina menara tembak, yang memerlukan emas; ketik menara sekali lagi untuk menaik tarafnya (sehingga tahap 5). Menara menembak musuh yang telah pergi paling jauh dalam jangkauan secara automatik. Kalahkan musuh untuk mendapat lebih banyak emas; jika 15 musuh sampai ke penghujung, anda kalah. Bertahan sepanjang semua gelombang untuk melepasi tahap.",
+    "lib.arcade.tdInfo": "Emas: {g} · Gelombang {w}/{t}",
+    "lib.arcade.tdCost": "Menara: {n}",
+    "lib.arcade.note.colorNum": "Setiap petak mempunyai nombor yang sepadan dengan warna dalam palet. Pilih warna, kemudian ketik petak yang bernombor sama untuk mewarnainya; warna yang salah tidak mewarnai apa-apa. Warnakan semua petak dengan betul untuk melengkapkan gambar. Tahap yang lebih tinggi mempunyai lebih banyak warna.",
+    "lib.arcade.cnWrong": "Warna salah — semak nombor pada petak.",
+    "lib.arcade.note.yukon": "Seperti Klondike tetapi tanpa longgokan stok: mana-mana kad menghadap atas boleh dialihkan bersama semua kad di atasnya, walaupun tidak berurutan; hanya kad pertama perlu sesuai dengan lajur sasaran (menurun, berselang merah dan hitam; Raja ke lajur kosong). Susun kesemua 52 kad pada empat asas dari As hingga Raja. Tahap rendah bermula dengan lebih banyak kad yang sudah menghadap atas.",
+    "lib.arcade.yukonFree": "Kad menghadap bawah: {n}",
+    "lib.arcade.note.chinesechk": "Anda bermain buah biru di penjuru kanan; alihkan kesemua 10 buah ke penjuru kiri yang bertentangan sebelum komputer. Setiap giliran anda menggerakkan satu buah: melangkah ke lubang kosong yang bersebelahan, atau melompat melepasi mana-mana buah ke lubang kosong tepat di belakangnya, dan teruskan melompat sebanyak yang anda mahu. Ketik salah satu buah anda, kemudian ketik lubang hijau untuk bergerak.",
+    "lib.arcade.ccTurn": "Giliran anda · Giliran {n}",
+    "lib.arcade.ccDraw": "Giliran sudah habis — seri.",
+    "lib.arcade.note.maubinh": "Anda dan komputer masing-masing mendapat 13 kad dan menyusunnya kepada 3 tangan: tangan belakang 5 kad, tangan tengah 5 kad dan tangan depan 3 kad. Tangan belakang mestilah sekurang-kurangnya sekuat tangan tengah, dan tangan tengah sekurang-kurangnya sekuat tangan depan; jika tidak, susunan anda salah dan anda kalah seluruh pusingan. Ketik kad, kemudian ketik baris tempat ia diletakkan (ketik kad yang telah diletakkan untuk mengambilnya semula). Setiap tangan yang anda menangi bernilai 1 mata; menang ketiga-tiganya bernilai 6. Main 5 pusingan — jumlah positif melepasi tahap. Tangan depan hanya boleh berupa kad tinggi, sepasang atau tiga sejenis.",
+    "lib.arcade.mbHigh": "Kad tinggi",
+    "lib.arcade.mbPair": "Sepasang",
+    "lib.arcade.mbTwoPair": "Dua pasang",
+    "lib.arcade.mbTrips": "Tiga sejenis",
+    "lib.arcade.mbStraight": "Lurus",
+    "lib.arcade.mbFlush": "Flush",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Empat sejenis",
+    "lib.arcade.mbSflush": "Straight flush",
+    "lib.arcade.mbBack": "Tangan belakang",
+    "lib.arcade.mbMid": "Tangan tengah",
+    "lib.arcade.mbFront": "Tangan depan",
+    "lib.arcade.mbFoe": "Komputer",
+    "lib.arcade.mbYou": "Anda",
+    "lib.arcade.mbFoul": "Susunan salah!",
+    "lib.arcade.mbFoeFoul": "Komputer menyusun dengan salah!",
+    "lib.arcade.mbConfirm": "Tunjuk kad",
+    "lib.arcade.mbReset": "Kosongkan",
+    "lib.arcade.mbHand": "Kad anda",
+    "lib.arcade.mbRound": "Pusingan {a}/{b}",
+    "lib.arcade.mbTotal": "Jumlah: {n}",
+    "lib.arcade.mbFinish": "Selesai",
+    "lib.arcade.mbNext": "Pusingan seterusnya",
+    "lib.arcade.mbDraw": "Mata seri — main lagi.",
+    "lib.arcade.mbAutoMsg": "Ini ialah susunan yang dicadangkan. Anda boleh mengubahnya sebelum menunjukkan kad.",
+    "lib.arcade.note.phom": "Dua pemain; setiap seorang mendapat 9 kad (yang mula dahulu mendapat 10). Satu meld ialah 3 kad atau lebih yang sama nombor, atau 3 kad atau lebih berturutan yang sama jenis (As hanya rendah). Pada giliran anda, ambil satu kad dari longgokan, atau ambil kad yang baru dibuang lawan jika ia membentuk meld dengan kad anda (kad yang diambil mesti disimpan), kemudian buang satu kad. Apabila setiap pemain telah membuang 4 kad, pusingan tamat dan yang mempunyai jumlah kad tanpa meld yang lebih rendah (As = 1 … Raja = 13) menang. Jika semua kad anda berada dalam meld selepas membuang, anda keluar (\"U\") dan menang serta-merta. Kad berbingkai hijau berada dalam set meld terbaik anda.",
+    "lib.arcade.pmDraw": "Ambil",
+    "lib.arcade.pmEat": "Ambil kad buangan",
+    "lib.arcade.pmThrow": "Buang",
+    "lib.arcade.pmFoeAte": "Komputer mengambil kad anda.",
+    "lib.arcade.pmFoeU": "Komputer keluar!",
+    "lib.arcade.pmTurn": "Giliran {a}/{b}",
+    "lib.arcade.pmLeft": "Tanpa meld: {n}",
+    "lib.arcade.pmDeck": "Longgokan: {n}",
+    "lib.arcade.pmFoeHand": "Kad komputer",
+    "lib.arcade.pmFoeDisc": "Buangan komputer",
+    "lib.arcade.pmFoeEaten": "Komputer mengambil",
+    "lib.arcade.pmMyDisc": "Buangan anda",
+    "lib.arcade.pmAte": "Anda mengambil kad ini — simpan dalam meld.",
+    "lib.arcade.pmKeep": "Kad yang diambil mesti disimpan — buang kad lain.",
+    "lib.arcade.pmU": "Keluar! Anda menang serta-merta.",
+    "lib.arcade.pmYou": "Anda",
+    "lib.arcade.pmFoe": "Komputer",
+    "lib.arcade.pmDraw2": "Mata seri.",
+    "lib.arcade.note.shogi": "Shogi ialah catur Jepun. Anda bermain di sebelah bawah dan bergerak dahulu; buah komputer menghadap arah bertentangan. Buah yang ditawan masuk ke tangan anda dan boleh diletakkan pada mana-mana petak kosong sebagai ganti bergerak (bidak tidak boleh diletakkan pada lajur yang sudah ada bidak anda yang belum naik pangkat, dan tiada buah boleh diletakkan pada baris yang menyebabkannya tidak dapat bergerak lagi). Buah yang bergerak masuk, keluar atau di dalam tiga baris terakhir lawan boleh naik pangkat (kecuali Raja dan Emas); kenaikan pangkat adalah wajib jika buah itu tidak lagi mempunyai gerakan. Skakmat Raja musuh untuk menang. Kanji: 歩 bidak, 香 tombak, 桂 kuda, 銀 perak, 金 emas, 角 gajah, 飛 kereta, 玉 raja; と, 馬, 竜 dan buah merah lain telah naik pangkat.",
+    "lib.arcade.sgPromote": "Naik pangkat",
+    "lib.arcade.sgKeep": "Jangan naik pangkat",
+    "lib.arcade.sgCheck": "Anda diskak!",
+    "lib.arcade.sgWin": "Skakmat — anda menang.",
+    "lib.arcade.sgLose": "Anda diskakmat.",
+    "lib.arcade.sgAskPromote": "Naikkan pangkat buah ini?",
+    "lib.arcade.note.janggi": "Janggi ialah catur Korea. Anda bermain buah biru di bawah dan bergerak dahulu. Tidak seperti xiangqi, tiada sungai, dan kedua-dua istana mempunyai garisan pepenjuru. Jeneral dan Pengawal bergerak satu langkah mengikut garisan istana (termasuk pepenjuru); Kereta juga menyelinap dan menawan di sepanjang pepenjuru istana; Meriam mesti melompat tepat satu buah (bukan Meriam lain) untuk bergerak atau menawan, dan tidak boleh menawan Meriam; Kuda melangkah satu titik lurus kemudian satu serong, dan Gajah satu lurus kemudian dua serong, kedua-duanya disekat jika ada buah di laluan; Askar bergerak ke hadapan atau ke sisi, dan serong ke hadapan di dalam istana musuh. Kedua-dua Jeneral tidak boleh berhadapan. Skakmat Jeneral musuh untuk menang. Komputer tidak pernah melepaskan giliran.",
+    "lib.arcade.jgCheck": "Anda diskak!",
+    "lib.arcade.jgWin": "Skakmat — anda menang.",
+    "lib.arcade.jgLose": "Anda diskakmat.",
+    "lib.arcade.note.pinball": "Tekan Space, Atas atau ketik meja untuk melancarkan bola. Tahan Kiri (atau sentuh separuh kiri meja) untuk mengangkat flipper kiri dan Kanan (atau separuh kanan) untuk flipper kanan — ketik mengikut rentak dan bukannya menahan. Setiap bumper bulat memberi 100 mata. Anda mempunyai 3 bola; capai skor sasaran sebelum bola habis untuk melepasi tahap.",
+    "lib.arcade.pinBalls": "Bola: {n} · Sasaran: {t}",
+    "lib.arcade.note.cribbage": "Cribbage dua pemain, berlumba ke 61 mata. Setiap agihan anda mendapat 6 kad dan meletakkan 2 menghadap bawah ke dalam crib (milik pengagih). Satu kad permulaan dibuka. Kemudian bergilir-gilir meletakkan kad menghadap atas dengan jumlah berjalan tidak melebihi 31: mencapai 15 atau 31 memberi 2, sama dengan kad terakhir memberi 2/6/12, larian 3 kad atau lebih (dalam apa-apa susunan) memberi mata sebanyak panjangnya, dan apabila tiada siapa dapat bermain, pemain terakhir mendapat 1 (\"Go\"). Kemudian setiap tangan 4 kad dikira bersama kad permulaan: setiap gabungan berjumlah 15 memberi 2, setiap pasangan 2, larian 3+ sepanjang larian, empat kad sejenis 4 (5 dengan kad permulaan), dan Jack sama jenis dengan kad permulaan 1. Bukan pengagih mengira dahulu, kemudian pengagih mengira tangannya dan crib.",
+    "lib.arcade.cbFifteen": "Lima belas",
+    "lib.arcade.cbPair": "Sepasang",
+    "lib.arcade.cbRun": "Larian",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Jack sama jenis dengan kad permulaan",
+    "lib.arcade.cbHeels": "Jack sebagai kad permulaan",
+    "lib.arcade.cbYou": "Anda",
+    "lib.arcade.cbFoe": "Komputer",
+    "lib.arcade.cbLast": "Kad terakhir",
+    "lib.arcade.cbCount": "Jumlah: {n}",
+    "lib.arcade.cbYouDeal": "Anda mengagih",
+    "lib.arcade.cbFoeDeal": "Komputer mengagih",
+    "lib.arcade.cbPick": "Pilih 2 kad untuk crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Kad anda",
+    "lib.arcade.cbFoeHand": "Kad komputer",
+    "lib.arcade.cbStarter": "Kad permulaan",
+    "lib.arcade.cbZero": "0 mata",
+    "lib.arcade.cbPlayed": "Dimainkan",
+    "lib.arcade.cbToCrib": "Letak dalam crib",
+    "lib.arcade.cbNext": "Teruskan",
+    "lib.arcade.cbHand": "Kad"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tiga Belas)",
       "desc": "Permainan kad buang Vietnam untuk empat orang: mainkan kad tunggal, pasangan, jujukan dan empat sama untuk menghabiskan kad anda dahulu; 10 tahap."
+    },
+    "tower-defense": {
+      "name": "Pertahanan Menara",
+      "desc": "Bina dan naik taraf menara di sepanjang laluan untuk menghentikan setiap gelombang musuh; 10 tahap pada tiga peta berbeza."
+    },
+    "color-by-number": {
+      "name": "Warna Mengikut Nombor",
+      "desc": "Warnakan setiap petak dengan warna yang sepadan dengan nombornya untuk mendedahkan gambar; 10 gambar dengan lebih banyak warna setiap kali."
+    },
+    "yukon": {
+      "name": "Solitaire Yukon",
+      "desc": "Klondike tanpa stok: alihkan mana-mana kad menghadap atas bersama semua yang di atasnya; 10 tahap, makin sedikit kad menghadap atas apabila anda maju."
+    },
+    "chinese-checkers": {
+      "name": "Dam Cina",
+      "desc": "Permainan langkah dan lompat berbentuk bintang menentang komputer: alihkan kesemua 10 buah ke penjuru bertentangan dahulu; 10 tahap."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Cina)",
+      "desc": "Susun 13 kad kepada tiga tangan 5, 5 dan 3 kad dan kalahkan komputer; 5 pusingan setiap tahap, 10 tahap."
+    },
+    "phom": {
+      "name": "Phom (Rummy Vietnam)",
+      "desc": "Rummy Vietnam dua pemain menentang komputer: ambil kad atau kad buangan, bentuk meld dan keluar; mata baki terendah menang; 10 tahap."
+    },
+    "shogi": {
+      "name": "Shogi (Catur Jepun)",
+      "desc": "Main shogi menentang komputer: letakkan buah tawanan, naik pangkat dan skakmat raja; 10 tahap dengan buat asal."
+    },
+    "janggi": {
+      "name": "Janggi (Catur Korea)",
+      "desc": "Main catur Korea menentang komputer: pepenjuru istana, lompatan meriam satu buah, gajah tiga langkah; 10 tahap dengan buat asal."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Petik flipper kiri dan kanan untuk mengekalkan bola, kenai bumper dan capai skor sasaran sebelum 3 bola anda habis; 10 tahap."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage dua pemain menentang komputer: crib, kiraan hingga 31, mengira tangan, berlumba ke 61 mata; 10 tahap."
     }
   },
   "s": {

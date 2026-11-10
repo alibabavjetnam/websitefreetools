@@ -643,7 +643,98 @@
     "lib.arcade.tlLeft": "Kartu sésa: {a} · {b} · {c}",
     "lib.arcade.tlAiPass": "{p} lolos.",
     "lib.arcade.tlBad": "Kartu nu dipilih teu ngawangun set nu sah.",
-    "lib.arcade.tlLow": "Set ieu can cukup luhur pikeun ngéléhkeun méja."
+    "lib.arcade.tlLow": "Set ieu can cukup luhur pikeun ngéléhkeun méja.",
+    "lib.arcade.note.td": "Pencét kotak kosong (lain jalur) pikeun ngawangun menara nembak, anu butuh emas; pencét deui menara pikeun ningkatkeunana (nepi ka tingkat 5). Menara otomatis nembak musuh anu geus pangjauhna dina jangkauan. Éléhkeun musuh pikeun meunangkeun leuwih loba emas; lamun 15 musuh nepi ka tungtung, anjeun éléh. Salamet tina unggal gelombang pikeun ngalengkepan tingkat.",
+    "lib.arcade.tdInfo": "Emas: {g} · Gelombang {w}/{t}",
+    "lib.arcade.tdCost": "Menara: {n}",
+    "lib.arcade.note.colorNum": "Unggal kotak boga nomer anu cocog jeung warna dina palét. Pilih warna, tuluy pencét kotak anu nomerna sarua pikeun ngawarnaanana; mencét ku warna anu salah moal ngawarnaan nanaon. Warnaan unggal kotak kalayan bener pikeun ngarengsekeun gambar. Tingkat anu leuwih luhur boga leuwih loba warna.",
+    "lib.arcade.cnWrong": "Warna salah — pariksa nomer dina kotak.",
+    "lib.arcade.note.yukon": "Siga Klondike tapi euweuh tumpukan cadangan: kartu nu muka luhur bisa dipindahkeun babarengan jeung sakabéh kartu di luhurna, sanajan teu nurutan urutan; ngan kartu kahiji anu kudu cocog jeung kolom tujuan (nurun, beureum jeung hideung gantian; Raja ka kolom kosong). Susun kabéh 52 kartu dina opat pondasi ti As nepi ka Raja. Tingkat handap dimimitian ku leuwih loba kartu geus muka.",
+    "lib.arcade.yukonFree": "Kartu nutup: {n}",
+    "lib.arcade.note.chinesechk": "Anjeun maénkeun batu biru di juru katuhu; pindahkeun kabéh 10 batu ka juru kénca sabalikna saméméh komputer. Unggal giliran pindahkeun hiji batu: ngalangkah ka liang kosong gigireun, atawa luncat ngaliwatan batu mana waé ka liang kosong pas di tukangeunana, tuluy teruskeun luncat sabaraha kali waé. Pencét salah sahiji batu anjeun, tuluy pencét liang héjo pikeun pindah.",
+    "lib.arcade.ccTurn": "Giliran anjeun · Giliran {n}",
+    "lib.arcade.ccDraw": "Giliran béak — séri.",
+    "lib.arcade.note.maubinh": "Anjeun jeung komputer masing-masing narima 13 kartu tuluy disusun jadi 3 leungeun: leungeun tukang 5 kartu, leungeun tengah 5 kartu jeung leungeun hareup 3 kartu. Leungeun tukang kudu sahenteuna sakuat leungeun tengah, jeung leungeun tengah sakuat leungeun hareup; lamun henteu, susunan anjeun rusak jeung éléh sakabéh babak. Pencét kartu, tuluy pencét baris tempatna (pencét kartu anu geus ditempatkeun pikeun nyokot deui). Unggal leungeun anu meunang méré 1 poin; meunang katiluna méré 6. Maénkeun 5 babak — total positip ngalengkepan tingkat. Leungeun hareup ngan bisa kartu luhur, pasangan atawa tilu sajenis.",
+    "lib.arcade.mbHigh": "Kartu luhur",
+    "lib.arcade.mbPair": "Pasangan",
+    "lib.arcade.mbTwoPair": "Dua pasangan",
+    "lib.arcade.mbTrips": "Tilu sajenis",
+    "lib.arcade.mbStraight": "Runtuyan",
+    "lib.arcade.mbFlush": "Sajenis lambang",
+    "lib.arcade.mbFull": "Full house",
+    "lib.arcade.mbQuads": "Opat sajenis",
+    "lib.arcade.mbSflush": "Runtuyan sajenis lambang",
+    "lib.arcade.mbBack": "Leungeun tukang",
+    "lib.arcade.mbMid": "Leungeun tengah",
+    "lib.arcade.mbFront": "Leungeun hareup",
+    "lib.arcade.mbFoe": "Komputer",
+    "lib.arcade.mbYou": "Anjeun",
+    "lib.arcade.mbFoul": "Susunan rusak!",
+    "lib.arcade.mbFoeFoul": "Komputer susunanana rusak!",
+    "lib.arcade.mbConfirm": "Témbongkeun kartu",
+    "lib.arcade.mbReset": "Hapus",
+    "lib.arcade.mbHand": "Leungeun anjeun",
+    "lib.arcade.mbRound": "Babak {a}/{b}",
+    "lib.arcade.mbTotal": "Total: {n}",
+    "lib.arcade.mbFinish": "Réngsé",
+    "lib.arcade.mbNext": "Babak saterusna",
+    "lib.arcade.mbDraw": "Poin sarua — maénkeun deui.",
+    "lib.arcade.mbAutoMsg": "Ieu susunan anu disarankeun. Anjeun bisa ngarobahna saméméh nembongkeun kartu.",
+    "lib.arcade.note.phom": "Dua pamaén; masing-masing narima 9 kartu (anu mimiti narima 10). Meld nyaéta 3 atawa leuwih kartu nilai sarua, atawa 3 atawa leuwih kartu runtuyan sajenis lambang (As ngan handap). Dina giliran anjeun tarik kartu tina tumpukan, atawa candak kartu anu karék dibuang lawan lamun ngabentuk meld jeung leungeun anjeun (kartu anu dicandak kudu disimpen), tuluy buang hiji kartu. Lamun unggal pamaén geus miceun 4 kartu, babak réngsé jeung anu total kartu luar meld-na leuwih handap meunang (As = 1 … Raja = 13). Lamun sakabéh kartu anjeun aya dina meld sanggeus miceun, anjeun kaluar (\"U\") jeung langsung meunang. Kartu anu aya garis héjo aya dina meld pangalusna anjeun.",
+    "lib.arcade.pmDraw": "Tarik",
+    "lib.arcade.pmEat": "Candak buangan",
+    "lib.arcade.pmThrow": "Buang",
+    "lib.arcade.pmFoeAte": "Komputer nyokot kartu anjeun.",
+    "lib.arcade.pmFoeU": "Komputer kaluar!",
+    "lib.arcade.pmTurn": "Giliran {a}/{b}",
+    "lib.arcade.pmLeft": "Di luar meld: {n}",
+    "lib.arcade.pmDeck": "Tumpukan: {n}",
+    "lib.arcade.pmFoeHand": "Leungeun komputer",
+    "lib.arcade.pmFoeDisc": "Buangan komputer",
+    "lib.arcade.pmFoeEaten": "Komputer nyokot",
+    "lib.arcade.pmMyDisc": "Buangan anjeun",
+    "lib.arcade.pmAte": "Anjeun nyokot kartu ieu — simpen dina meld.",
+    "lib.arcade.pmKeep": "Kartu anu dicokot kudu disimpen — buang kartu séjén.",
+    "lib.arcade.pmU": "Kaluar! Anjeun langsung meunang.",
+    "lib.arcade.pmYou": "Anjeun",
+    "lib.arcade.pmFoe": "Komputer",
+    "lib.arcade.pmDraw2": "Poin sarua.",
+    "lib.arcade.note.shogi": "Shogi nyaéta catur Jepang. Anjeun maén di sisi handap jeung mimiti; batu komputer nyanghareup ka arah séjén. Batu anu direbut asup ka leungeun anjeun sarta bisa disimpen dina kotak kosong mana waé gaganti ngalih (pantang pion dina kolom anu geus aya pion anjeun anu can naék pangkat, jeung pantang batu dina baris anu teu bisa ngalih deui). Batu anu asup, kaluar, atawa gerak dina tilu baris pamungkas lawan bisa dipromosikeun (iwal Raja jeung Emas); promosi wajib lamun batu teu bakal bisa ngalih. Skakmat Raja musuh pikeun meunang. Kanji: 歩 pion, 香 tumbak, 桂 kuda, 銀 pérak, 金 emas, 角 gajah, 飛 benteng, 玉 raja; と, 馬, 竜 jeung batu beureum séjénna geus dipromosikeun.",
+    "lib.arcade.sgPromote": "Promosikeun",
+    "lib.arcade.sgKeep": "Ulah promosi",
+    "lib.arcade.sgCheck": "Anjeun keur skak!",
+    "lib.arcade.sgWin": "Skakmat — anjeun meunang.",
+    "lib.arcade.sgLose": "Anjeun diskakmat.",
+    "lib.arcade.sgAskPromote": "Promosikeun batu ieu?",
+    "lib.arcade.note.janggi": "Janggi nyaéta catur Korea. Anjeun maén batu biru di handap jeung mimiti. Béda ti xiangqi, euweuh walungan, jeung duanana kaputrén boga garis diagonal. Jénderal jeung Penjaga ngalangkah hiji léngkah sapanjang garis kaputrén (kaasup diagonal); Kareta ogé ngageser jeung néwak sapanjang diagonal kaputrén; Mariem kudu luncat ngaliwatan persis hiji batu (lain Mariem séjén) pikeun ngalih atawa néwak, jeung teu bisa néwak Mariem; Kuda ngalangkah hiji titik lempeng tuluy hiji diagonal, jeung Gajah hiji lempeng tuluy dua diagonal, duanana kahalangan lamun aya batu di jalan; Prajurit ngalih ka hareup atawa ka gigir, jeung diagonal ka hareup di jero kaputrén musuh. Dua Jénderal teu meunang silih adu hareup. Skakmat Jénderal musuh pikeun meunang. Komputer pernah ngalangkungan giliran.",
+    "lib.arcade.jgCheck": "Anjeun keur skak!",
+    "lib.arcade.jgWin": "Skakmat — anjeun meunang.",
+    "lib.arcade.jgLose": "Anjeun diskakmat.",
+    "lib.arcade.note.pinball": "Pencét Spasi, Luhur atawa pencét méja pikeun nembakkeun bola. Tahan Kénca (atawa sentuh satengah kénca méja) pikeun ngangkat flipper kénca jeung Katuhu (atawa satengah katuhu) pikeun nu katuhu — pencét luyu ritme gaganti nahan. Bumper buleud méré 100 poin masing-masing. Anjeun boga 3 bola; cangkéng skor target saméméh béak pikeun ngalengkepan tingkat.",
+    "lib.arcade.pinBalls": "Bola: {n} · Target: {t}",
+    "lib.arcade.note.cribbage": "Cribbage dua pamaén, balapan nepi ka 61 poin. Unggal bagi anjeun narima 6 kartu tuluy nempatkeun 2 nutup kana crib (milik nu ngabagi). Kartu mimiti dibuka. Tuluy gantian maénkeun kartu muka, total jalan teu meunang leuwih ti 31: nepi ka 15 atawa 31 méré 2, sarua jeung kartu pamungkas méré 2/6/12, runtuyan 3 kartu atawa leuwih (urutan naon waé) méré sakumaha panjangna, jeung lamun taya nu bisa maén, nu pamungkas maén meunang 1 (\"Go\"). Tuluy tiap leungeun 4 kartu diitung jeung kartu mimiti: unggal kombinasi total 15 méré 2, unggal pasangan 2, runtuyan 3+ sakumaha panjangna, opat kartu sajenis lambang 4 (5 jeung kartu mimiti), jeung Jack sarua lambang kartu mimiti 1. Nu henteu ngabagi ngitung heula, tuluy nu ngabagi ngitung leungeun jeung crib-na.",
+    "lib.arcade.cbFifteen": "Lima belas",
+    "lib.arcade.cbPair": "Pasangan",
+    "lib.arcade.cbRun": "Runtuyan",
+    "lib.arcade.cbFlush": "Sajenis lambang",
+    "lib.arcade.cbNobs": "Jack sarua lambang kartu mimiti",
+    "lib.arcade.cbHeels": "Jack minangka kartu mimiti",
+    "lib.arcade.cbYou": "Anjeun",
+    "lib.arcade.cbFoe": "Komputer",
+    "lib.arcade.cbLast": "Kartu pamungkas",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "Anjeun anu ngabagi",
+    "lib.arcade.cbFoeDeal": "Komputer anu ngabagi",
+    "lib.arcade.cbPick": "Pilih 2 kartu pikeun crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Leungeun anjeun",
+    "lib.arcade.cbFoeHand": "Leungeun komputer",
+    "lib.arcade.cbStarter": "Kartu mimiti",
+    "lib.arcade.cbZero": "0 poin",
+    "lib.arcade.cbPlayed": "Geus dimaénkeun",
+    "lib.arcade.cbToCrib": "Asupkeun ka crib",
+    "lib.arcade.cbNext": "Teruskeun",
+    "lib.arcade.cbHand": "Leungeun"
   },
   "pages": {
     "home": {
@@ -1388,6 +1479,46 @@
     "tien-len": {
       "name": "Tiến Lên (Tilu Belas)",
       "desc": "Kaulinan kartu Vietnam pikeun opat: maénkeun tunggal, pasangan, rentetan jeung opat sarua pikeun ngabolaykeun leungeun anjeun heula; 10 level."
+    },
+    "tower-defense": {
+      "name": "Pertahanan Menara",
+      "desc": "Wangun jeung tingkatkeun menara sapanjang jalur pikeun ngeureunkeun unggal gelombang musuh; 10 tingkat dina tilu peta béda."
+    },
+    "color-by-number": {
+      "name": "Warnaan Nurutkeun Nomer",
+      "desc": "Warnaan unggal kotak ku warna nu cocog jeung nomerna pikeun nembongkeun gambar; 10 gambar anu unggal waktu leuwih loba warna."
+    },
+    "yukon": {
+      "name": "Yukon Solitaire",
+      "desc": "Klondike tanpa tumpukan cadangan: pindahkeun kartu muka mana waé jeung sagalana di luhurna; 10 tingkat, kartu muka beuki saeutik."
+    },
+    "chinese-checkers": {
+      "name": "Dam Cina",
+      "desc": "Kaulinan léngkah jeung luncat bentuk béntang ngalawan komputer: pindahkeun kabéh 10 batu ka juru sabalikna heula; 10 tingkat."
+    },
+    "mau-binh": {
+      "name": "Mau Binh (Poker Cina)",
+      "desc": "Susun 13 kartu jadi tilu leungeun 5, 5 jeung 3 kartu tuluy éléhkeun komputer; 5 babak per tingkat, 10 tingkat."
+    },
+    "phom": {
+      "name": "Phom (Rummy Vietnam)",
+      "desc": "Rummy Vietnam dua pamaén ngalawan komputer: tarik atawa candak buangan, bentuk meld tuluy kaluar; poin sésa pangsaeutikna meunang; 10 tingkat."
+    },
+    "shogi": {
+      "name": "Shogi (Catur Jepang)",
+      "desc": "Maénkeun shogi ngalawan komputer: simpen batu rebutan, promosikeun, jeung skakmat raja; 10 tingkat kalawan ngabolaykeun léngkah."
+    },
+    "janggi": {
+      "name": "Janggi (Catur Korea)",
+      "desc": "Maénkeun catur Korea ngalawan komputer: diagonal kaputrén, luncatan mariem ngaliwatan hiji batu, gajah tilu léngkah; 10 tingkat kalawan ngabolaykeun léngkah."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Pukul kénca jeung katuhu pikeun ngajaga bola tetep hirup, pukul bumper tuluy cangkéng skor target saméméh 3 bola anjeun béak; 10 tingkat."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Cribbage dua pamaén ngalawan komputer: crib, pegging nepi ka 31, ngitung leungeun, balapan nepi ka 61 poin; 10 tingkat."
     }
   },
   "s": {
