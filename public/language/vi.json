@@ -734,7 +734,12 @@
     "lib.arcade.cbHand": "Bài",
     "lib.arcade.cbFifteen": "Mười lăm",
     "lib.arcade.cbFlush": "Đồng chất",
-    "lib.arcade.cbNobs": "J cùng chất lá lật"
+    "lib.arcade.cbNobs": "J cùng chất lá lật",
+    "lib.arcade.tgRotL": "Xoay trái",
+    "lib.arcade.tgRotR": "Xoay phải",
+    "lib.arcade.tgFlip": "Lật",
+    "lib.arcade.note.tangram": "Ghép đủ 7 mảnh (ở cấp thấp chỉ vài mảnh) vừa khít vào hình bóng màu xám, không chồng lên nhau. Kéo một mảnh để di chuyển; bấm nhẹ vào mảnh để xoay 45°, hoặc dùng nút Xoay và Lật (hình bình hành cần lật đúng chiều). Thả mảnh gần góc nào thì nó tự hít vào góc đó. Cấp 1–4 có đường viền gợi ý sẵn; nút Gợi ý bật/tắt đường viền.",
+    "lib.arcade.tgPieces": "Số mảnh: {n}"
   },
   "pages": {
     "home": {
@@ -1843,6 +1848,10 @@
     "cribbage": {
       "name": "Cribbage (đếm bài)",
       "desc": "Cribbage 2 người đấu với máy: bỏ chuồn, đánh bài đến 31, đếm bài ăn điểm, chạy đua tới 61; 10 cấp."
+    },
+    "tangram": {
+      "name": "Tangram (xếp 7 mảnh)",
+      "desc": "Tangram online: kéo 7 mảnh ghép vừa khít vào hình bóng, xoay và lật mảnh; 10 cấp từ ít mảnh có viền gợi ý đến đủ 7 mảnh không gợi ý."
     }
   },
   "s": {

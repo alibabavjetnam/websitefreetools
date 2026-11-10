@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Played",
     "lib.arcade.cbToCrib": "Put in crib",
     "lib.arcade.cbNext": "Continue",
-    "lib.arcade.cbHand": "Hand"
+    "lib.arcade.cbHand": "Hand",
+    "lib.arcade.note.tangram": "Fit all the pieces (only a few on low levels) exactly into the grey silhouette without overlapping. Drag a piece to move it; tap a piece to turn it 45°, or use the Rotate and Flip buttons (the parallelogram must be flipped the right way round). A piece dropped near a corner snaps to it. Levels 1–4 show dashed hint lines; the Hint button turns them on and off.",
+    "lib.arcade.tgRotL": "Rotate left",
+    "lib.arcade.tgRotR": "Rotate right",
+    "lib.arcade.tgFlip": "Flip",
+    "lib.arcade.tgPieces": "Pieces: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Two-player cribbage against the computer: crib, pegging to 31, counting hands, race to 61 points; 10 levels."
+    },
+    "tangram": {
+      "name": "Tangram (7-piece puzzle)",
+      "desc": "Drag the seven tangram pieces into the silhouette, rotating and flipping them; 10 levels from a few pieces with hints to all seven without."
     }
   },
   "s": {

@@ -158,6 +158,7 @@ export const TOOLS: ToolInfo[] = [
   tool('janggi', 'entertainment', 'Janggi (cờ tướng Hàn Quốc)', 'Janggi online đánh với máy: cờ tướng kiểu Hàn có đường chéo trong cung, pháo nhảy một quân, tượng 3 bước; 10 cấp, có đi lại.'),
   tool('pinball', 'entertainment', 'Pinball (bắn bi)', 'Pinball online: gạt cần trái phải để giữ bóng, đập bumper lấy điểm đạt mục tiêu trước khi hết 3 bóng; 10 cấp.'),
   tool('cribbage', 'entertainment', 'Cribbage (đếm bài)', 'Cribbage 2 người đấu với máy: bỏ chuồn, đánh bài đến 31, đếm bài ăn điểm, chạy đua tới 61; 10 cấp.'),
+  tool('tangram', 'entertainment', 'Tangram (xếp 7 mảnh)', 'Tangram online: kéo 7 mảnh ghép vừa khít vào hình bóng, xoay và lật mảnh; 10 cấp từ ít mảnh có viền gợi ý đến đủ 7 mảnh không gợi ý.'),
   tool('gomoku', 'entertainment', 'Cờ caro', 'Chơi cờ caro 5 quân liên tiếp với máy trên bàn 15x15, 10 cấp từ dễ đến khó, có đi lại.'),
   tool('reversi', 'entertainment', 'Cờ lật (Reversi)', 'Kẹp quân đối thủ để lật thành màu của mình; chơi Reversi 8x8 với máy qua 10 cấp.'),
   tool('connect-four', 'entertainment', 'Nối 4', 'Thả quân vào cột, nối 4 quân liên tiếp ngang, dọc hoặc chéo trước máy; 10 cấp từ dễ đến khó.'),

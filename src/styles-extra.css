@@ -1850,3 +1850,16 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 /* Cribbage */
 .cb-board .cd.cb-dim { filter: brightness(.7); }
 .cb-parts { margin: 0; padding-inline-start: 18px; color: #fff; font-size: 14px; }
+
+/* Tangram */
+.tg-svg { width: 100%; max-width: 860px; height: auto; touch-action: none; user-select: none; display: block; }
+.tg-bg { fill: #f1f3f5; }
+.tg-div { stroke: #ced4da; stroke-width: .08; stroke-dasharray: .4 .3; }
+.tg-sil { fill: #495057; stroke: #495057; stroke-width: .04; }
+.tg-out { fill: none; stroke: rgba(255,255,255,.55); stroke-width: .06; stroke-dasharray: .25 .2; pointer-events: none; }
+.tg-pc { stroke: #fff; stroke-width: .08; stroke-linejoin: round; cursor: grab; opacity: .96; }
+.tg-pc.sel { stroke: #212529; stroke-width: .14; }
+@media (prefers-color-scheme: dark) { .tg-bg { fill: #25282c; } .tg-sil { fill: #868e96; stroke: #868e96; } }
+.game-main.tg-main, .game-wrap:fullscreen .game-main.tg-main, .game-wrap.is-pseudo-full .game-main.tg-main { grid-template-columns: minmax(0, 1fr); }
+.tg-main .game-side { flex-direction: row; flex-wrap: wrap; align-items: center; }
+.tg-main .game-side .note { flex-basis: 100%; }

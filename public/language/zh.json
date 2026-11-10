@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "已出的牌",
     "lib.arcade.cbToCrib": "放入摇篮",
     "lib.arcade.cbNext": "继续",
-    "lib.arcade.cbHand": "手牌"
+    "lib.arcade.cbHand": "手牌",
+    "lib.arcade.note.tangram": "把全部七巧板（低级别只用几块）严丝合缝地拼进灰色轮廓内，不能重叠。拖动可移动，轻点可旋转 45°，也可用旋转和翻转按钮（平行四边形要翻到正确方向）。放在角附近会自动吸附。第 1–4 级带有虚线提示，可用提示按钮开关。",
+    "lib.arcade.tgRotL": "向左旋转",
+    "lib.arcade.tgRotR": "向右旋转",
+    "lib.arcade.tgFlip": "翻转",
+    "lib.arcade.tgPieces": "块数：{n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "克里比奇",
       "desc": "与电脑对战的双人克里比奇：摇篮、出牌到 31、手牌计分，先到 61 分；共 10 关。"
+    },
+    "tangram": {
+      "name": "七巧板",
+      "desc": "把七块七巧板拖进轮廓里，可旋转和翻转；10 个级别，从带提示的少量块数到不带提示的全部 7 块。"
     }
   },
   "s": {
