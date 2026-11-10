@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Sari",
     "lib.arcade.aimTarget": "Țintă",
     "lib.game.soundOn": "Pornește sunetul",
-    "lib.game.soundOff": "Oprește sunetul"
+    "lib.game.soundOff": "Oprește sunetul",
+    "lib.arcade.note.kalah": "Joci pe rândul de jos, calculatorul pe cel de sus; groapa mare din dreapta este depozitul tău. Apasă pe o groapă ca să iei toate semințele și să le semeni în sens invers acelor de ceasornic, câte una în fiecare groapă (sărind depozitul adversarului). Dacă ultima sămânță cade în depozitul tău, muți din nou; dacă cade într-o groapă goală de pe partea ta, vizavi de o groapă cu semințe, capturezi acele semințe. Când o parte rămâne goală, semințele celeilalte părți merg în depozitul proprietarului; câștigă depozitul mai mare.",
+    "lib.arcade.note.snakes": "Dai cu zarul și avansezi atâtea pătrățele, de la 1 până la 100. Dacă ajungi la baza unei scări, urci; dacă ajungi pe capul unui șarpe, aluneci în jos. De la nivelul 4 trebuie să dai exact numărul potrivit ca să ajungi pe 100. Nivelurile mai mari au mai mulți șerpi, mai puține scări și mai mulți adversari. Câștigă primul care ajunge la 100.",
+    "lib.arcade.square": "Pătrățelul {n}",
+    "lib.arcade.ladderUp": "Sus pe scară!",
+    "lib.arcade.snakeDown": "Înghițit de un șarpe!",
+    "lib.arcade.needExact": "Ai nevoie de numărul exact ca să ajungi pe 100.",
+    "lib.arcade.note.nmm": "Fiecare parte are 9 piese. Faza 1: puneți pe rând piese pe puncte libere. Faza 2: mută o piesă pe un punct liber alăturat. Când ți-au rămas doar 3 piese, poți „zbura” pe orice punct liber. Formează trei în linie (o „moară”) ca să iei o piesă a adversarului (mai întâi cele care nu sunt într-o moară). Pierzi când ai rămas cu 2 piese sau nu mai poți muta. Joci cu albul și începi primul.",
+    "lib.arcade.inHand": "De pus: {a} · {b}",
+    "lib.arcade.removePiece": "Alege o piesă a adversarului pe care s-o iei.",
+    "lib.arcade.enemyWaters": "Ape inamice (apasă ca să tragi)",
+    "lib.arcade.yourFleet": "Flota ta",
+    "lib.arcade.note.battleship": "Fiecare parte are 5 nave (lungimi 5, 4, 3, 3, 2) așezate aleatoriu pe o grilă 10x10. Trageți pe rând într-o celulă: o lovitură devine roșie, o ratare devine albastru deschis, iar când lovești toate celulele unei nave, aceasta se scufundă. Câștigă cine scufundă primul întreaga flotă inamică. La niveluri mai mari, calculatorul deduce mai isteț pozițiile navelor tale.",
+    "lib.arcade.shipsLeft": "Nave rămase: tu {a} · inamic {b}",
+    "lib.arcade.theySunk": "Inamicul ți-a scufundat o navă!",
+    "lib.arcade.theyHit": "Inamicul ți-a lovit o navă.",
+    "lib.arcade.theyMiss": "Inamicul a ratat.",
+    "lib.arcade.youSunk": "Ai scufundat o navă inamică!",
+    "lib.arcade.youHit": "Lovit!",
+    "lib.arcade.youMiss": "Ratat.",
+    "lib.arcade.shake": "Scutură",
+    "lib.arcade.clearBets": "Șterge pariurile",
+    "lib.arcade.note.bau-cua": "Doar monede virtuale, fără bani reali. Alege valoarea unui jeton, apasă pe animale ca să pariezi, apoi apasă Scutură. Pentru fiecare zar care arată un animal pe care ai pariat, primești miza înapoi plus o sumă egală pentru fiecare potrivire. Atinge numărul-țintă de monede în rundele permise ca să treci nivelul.",
+    "lib.arcade.note.baccarat": "Doar monede virtuale, fără bani reali. Pariază pe Jucător, Bancher sau Egalitate, apoi apasă Împarte. Valoarea unei mâini este ultima cifră a totalului (A = 1, 2–9 valoarea cărții, 10/J/Q/K = 0); câștigă mâna mai apropiată de 9, iar a treia carte se trage după regulile standard. Jucătorul plătește 1:1, Bancherul 0,95:1, Egalitatea 8:1 (pariurile pe Jucător/Bancher se returnează la egalitate). Atinge numărul-țintă de monede în rundele permise ca să treci nivelul.",
+    "lib.arcade.banker": "Bancher",
+    "lib.arcade.player": "Jucător",
+    "lib.arcade.tie": "Egalitate",
+    "lib.arcade.openCards": "Arată",
+    "lib.arcade.note.bai-cao": "Doar monede virtuale, fără bani reali. Fiecare parte primește 3 cărți. O mână valorează ultima cifră a totalului (A = 1, 2–9 valoarea cărții, 10/J/Q/K = 10, adică 0 puncte). Ierarhia: Trei de un fel („Sáp”) este cea mai mare, apoi trei figuri („Ba tiên”), apoi de la 9 puncte până la 0. Pariază, apasă Împarte, apoi Arată ca să compari cu dealerul. De la nivelul 6, dealerul câștigă la egalitate. Atinge numărul-țintă de monede în rundele permise ca să treci nivelul.",
+    "lib.arcade.caoSap": "Trei de un fel",
+    "lib.arcade.caoBaTien": "Trei figuri",
+    "lib.arcade.caoPts": "{n} p.",
+    "lib.arcade.note.bingo": "Calculatorul cheamă numere de la 1 la 75. Când un număr chemat se află pe cartonașul tău, apasă pe el ca să-l marchezi (centrul este gratuit). Completează un rând, o coloană sau o diagonală și apasă BINGO! — trebuie să-i întreci pe adversarii calculator. Un BINGO! fals blochează butonul câteva secunde. Nivelurile mai mari cheamă mai repede și au mai mulți adversari.",
+    "lib.arcade.opponentsN": "Adversari: {n}",
+    "lib.arcade.falseBingo": "Încă nu ai o linie completă! Butonul e blocat 3 secunde.",
+    "lib.arcade.bingoGo": "Se strigă numerele!",
+    "lib.arcade.note.yahtzee": "La fiecare tur arunci 5 zaruri de cel mult 3 ori: apasă pe un zar ca să-l păstrezi, apoi apasă Aruncă ca să le arunci din nou pe celelalte. Apoi alege o căsuță din tabel pentru punctaj (fiecare căsuță se folosește o dată; o căsuță care nu se potrivește valorează 0). 13 ture. Căsuțele Unu–Șase primesc un bonus de 35 dacă însumează 63 sau mai mult. Atinge scorul-țintă al nivelului ca să câștigi.",
+    "lib.arcade.turnN": "Tura {n}/13",
+    "lib.arcade.pickCat": "Alege o căsuță pentru punctaj",
+    "lib.arcade.rollsLeft": "Aruncă (încă {n})",
+    "lib.arcade.upperBonus": "Bonus Unu–Șase",
+    "lib.arcade.scored": "Punctaj {n}",
+    "lib.arcade.note.crazy-eights": "Joacă o carte care se potrivește cu cea de deasupra pachetului de descărcare la culoare sau valoare. Opturile sunt joker: joacă-le oricând și alege o culoare nouă. Dacă nu ai nicio carte de jucat, trage din pachet (până la 3 cărți); dacă tot nu poți juca, treci. Câștigă primul care rămâne fără cărți. Nivelurile mai mari au mai mulți adversari, iar calculatorul joacă mai isteț.",
+    "lib.arcade.opponent": "Adversar",
+    "lib.arcade.pileLeft": "Pachet de tras: {n}",
+    "lib.arcade.pickSuit": "Alege o culoare nouă",
+    "lib.arcade.aiSuit": "Calculatorul a ales {s}",
+    "lib.arcade.aiPass": "Calculatorul trece.",
+    "lib.arcade.mustPlay": "Ai o carte de jucat — joac-o.",
+    "lib.arcade.youPass": "Ai tras 3 cărți și treci.",
+    "lib.arcade.bcGourd": "Dovleac",
+    "lib.arcade.bcCrab": "Crab",
+    "lib.arcade.bcShrimp": "Creveți",
+    "lib.arcade.bcFish": "Pește",
+    "lib.arcade.bcRooster": "Cocoș",
+    "lib.arcade.bcDeer": "Cerb",
+    "lib.arcade.yOnes": "Unu",
+    "lib.arcade.yTwos": "Doi",
+    "lib.arcade.yThrees": "Trei",
+    "lib.arcade.yFours": "Patru",
+    "lib.arcade.yFives": "Cinci",
+    "lib.arcade.ySixes": "Șase",
+    "lib.arcade.yThree": "Trei de un fel",
+    "lib.arcade.yFour": "Careu",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Șir mic (30)",
+    "lib.arcade.yLarge": "Șir mare (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Șansă",
+    "lib.arcade.note.race": "Apasă ← → (sau atinge banda dorită) ca să schimbi banda și să eviți mașinile din față. Ai 3 vieți; parcurge toată distanța ca să treci nivelul. Nivelurile mai mari au mai multe benzi și trafic mai rapid.",
+    "lib.arcade.note.jump": "Personajul sare singur. Apasă ← → sau trage cu degetul ca să aterizezi pe următoarea platformă. Platformele albastre se mișcă, cele maronii se sparg când aterizezi. Dacă cazi de pe ecran, pierzi; urcă destul de sus ca să treci nivelul.",
+    "lib.arcade.note.miner": "Cârligul se leagănă dintr-o parte în alta; apasă Spațiu, ↓ sau atinge câmpul ca să-l lași jos. Aurul mare și pietrele sunt grele și se trag încet; diamantele valorează mult. Atinge suma-țintă înainte să treacă cele 60 de secunde.",
+    "lib.arcade.note.slicer": "Trage cu degetul sau cu mouse-ul peste fructe ca să le tai. Evită bombele negre. Dacă ratezi un fruct sau tai o bombă, pierzi o viață (ai 3). Taie destule fructe ca să treci nivelul.",
+    "lib.arcade.note.hoops": "Apasă pe teren, trage în jos (ca la o praștie) și eliberează ca să arunci mingea spre coș. Cu cât tragi mai departe, cu atât aruncarea e mai puternică. Marchează destule coșuri din aruncările pe care le ai; de la nivelul 4 coșul se mișcă.",
+    "lib.arcade.note.bubbles": "Mișcă mouse-ul sau degetul ca să țintești, apoi dă clic/atinge sau apasă Spațiu/Foc ca să tragi. Unește 3 sau mai multe bule de aceeași culoare ca să le spargi; bulele care rămân fără sprijin cad. Rândurile coboară încet, deci ține-le departe de linia de jos. Curăță toate bulele ca să câștigi.",
+    "lib.arcade.note.chase": "Folosește tastele săgeți (sau glisează / butoanele) ca să te întorci și să mănânci toate punctele din labirint, ferindu-te de fantomele care te urmăresc. Ai 3 vieți; nivelurile mai mari adaugă mai multe fantome, mai rapide și mai isteț.",
+    "lib.arcade.height": "Înălțime: {n}/{t} m",
+    "lib.arcade.money": "Bani: {n}/{t}",
+    "lib.arcade.sliced": "Tăiate: {n}/{t}",
+    "lib.arcade.hoopScore": "Marcate: {n}/{t}",
+    "lib.arcade.shotsLeft": "Au mai rămas {n} aruncări",
+    "lib.arcade.bubbleLeft": "Au mai rămas {n} bule",
+    "lib.arcade.shotsN": "Aruncări: {n}",
+    "lib.arcade.dotsLeft": "Au mai rămas {n} puncte",
+    "lib.arcade.note.kakuro": "Completează celulele albe cu cifre de la 1 la 9 astfel încât fiecare șir să dea suma indiciului din celula neagră (numărul din dreapta sus este pentru șirul spre dreapta, cel din stânga jos pentru șirul în jos), fără cifre repetate într-un șir. Folosește tastele săgeți ca să te muți.",
+    "lib.arcade.note.kenken": "Completează grila cu numerele de la 1 la N astfel încât niciun număr să nu se repete pe vreun rând sau pe vreo coloană. Fiecare grup cu contur gros arată o țintă și o operație (+, −, ×, ÷): numerele din grup trebuie să dea acel rezultat. Folosește tastele săgeți ca să te muți.",
+    "lib.arcade.note.wordGuess": "Ghicește cuvântul secret în engleză. După fiecare încercare, verde înseamnă litera corectă la locul corect, galben înseamnă că litera e în cuvânt, dar în altă parte, iar gri înseamnă că litera nu e în cuvânt. Scrie de la tastatură sau folosește tastele de pe ecran și apasă Enter ca să trimiți. Nivelurile mai mari au cuvinte mai lungi și mai puține încercări.",
+    "lib.arcade.note.hangman": "Ghicește cuvântul secret în engleză alegând literele pe rând. Fiecare literă greșită adaugă o parte la figura spânzurată; când ai epuizat greșelile permise, pierzi. Nivelurile mai mari au cuvinte mai lungi și mai puține greșeli permise.",
+    "lib.arcade.note.scramble": "Rearanjează literele amestecate într-un cuvânt englezesc real și scrie-l în caseta de răspuns. Fiecare nivel are 5 cuvinte; rezolvă cel puțin 4 înainte să expire cronometrul fiecărui cuvânt ca să treci nivelul. Indiciul dezvăluie prima literă.",
+    "lib.arcade.cellsLeft": "Au mai rămas {n} celule goale",
+    "lib.arcade.wrongN": "{n} celule nu sunt corecte.",
+    "lib.arcade.noError": "Nicio greșeală găsită până acum.",
+    "lib.arcade.tooShort": "Prea puține litere",
+    "lib.arcade.answerIs": "Răspuns: {w}",
+    "lib.arcade.livesLeft": "Au mai rămas {n} greșeli permise",
+    "lib.arcade.yourAnswer": "Răspunsul tău",
+    "lib.arcade.skip": "Sari peste",
+    "lib.arcade.notThis": "Nu e corect, mai încearcă.",
+    "lib.arcade.startsWith": "Prima literă: {c}",
+    "lib.arcade.note.domino": "Fiecare jucător primește 7 piese; începe cine are cel mai mare dublu. Joacă o piesă al cărei număr se potrivește cu un capăt al lanțului. Dacă nu poți juca, trage din stoc până poți; dacă stocul e gol, treci. Câștigă primul care rămâne fără piese; dacă ambii sunt blocați, câștigă cine are mai puține puncte.",
+    "lib.arcade.note.hearts": "Patru jucători, câte 13 cărți. Deschide doarul de treflă. Trebuie să dai culoarea cerută, dacă poți. Fiecare cupă valorează 1 punct, iar Dama de pică 13; cine ia o mână primește punctele ei. Mai puțin e mai bine, iar dacă iei toate cele 26 de puncte, ceilalți primesc câte 26. Nu poți începe cu cupă până nu s-a jucat una. După ultima rundă, câștigi dacă scorul tău este cel mai mic (sau egal cu cel mai mic).",
+    "lib.arcade.note.holdem": "Față în față cu calculatorul, doar cu jetoane virtuale. Fiecare jucător primește 2 cărți ascunse și se dezvăluie 5 cărți comune (flop, turn, river); formează cea mai bună mână de 5 cărți. În fiecare rundă poți da pas (fold), egala (call sau check) sau mări (raise). Pariurile obligatorii cresc la fiecare 4 mâini. Câștigi când calculatorul rămâne fără jetoane sau când ai mai multe jetoane după numărul limită de mâini. Nu sunt implicați bani reali.",
+    "lib.arcade.dmDraw": "Trage o piesă",
+    "lib.arcade.dmPass": "Treci",
+    "lib.arcade.dmEmpty": "Nicio piesă jucată încă",
+    "lib.arcade.dmYard": "Stoc: {n} piese",
+    "lib.arcade.dmLeft": "Capătul stâng",
+    "lib.arcade.dmRight": "Capătul drept",
+    "lib.arcade.dmTie": "Remiză! Ambele părți sunt la egalitate.",
+    "lib.arcade.hrHand": "Mâna {n}/{t}",
+    "lib.arcade.hrTook": "{p} ia mâna ({n} puncte).",
+    "lib.arcade.hrIllegal": "Nu poți juca această carte (dă culoarea cerută sau încă nu se poate începe cu cupă).",
+    "lib.arcade.blinds": "Pariu forțat mare: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Mărește la",
+    "lib.arcade.raiseN": "Mărește la {n}",
+    "lib.arcade.thOppFold": "Calculatorul dă fold; câștigi această mână.",
+    "lib.arcade.thYouFold": "Ai dat fold.",
+    "lib.arcade.thOppWin": "Calculatorul câștigă această mână",
+    "lib.arcade.thYouWin": "Câștigi această mână",
+    "lib.arcade.thSplit": "Pot împărțit",
+    "lib.arcade.thAiFold": "Calculatorul dă fold.",
+    "lib.arcade.thAiRaise": "Calculatorul mărește la {n}.",
+    "lib.arcade.thAiCall": "Calculatorul egalează / dă check.",
+    "lib.arcade.hand.high": "Carte mare",
+    "lib.arcade.hand.pair": "Pereche",
+    "lib.arcade.hand.twoPair": "Două perechi",
+    "lib.arcade.hand.trips": "Trei de un fel",
+    "lib.arcade.hand.straight": "Șir",
+    "lib.arcade.hand.flush": "Culoare",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Careu",
+    "lib.arcade.hand.sflush": "Culoare în șir",
+    "lib.arcade.note.nback": "Un pătrat se aprinde pe rând pe o grilă 3x3. Apasă „Potrivire!” (sau Spațiu) când poziția aprinsă este aceeași cu cea de acum N pași (N apare deasupra). Ai nevoie de cel puțin 80% decizii corecte ca să treci nivelul. Nivelurile mai mari folosesc un N mai mare.",
+    "lib.arcade.nbMatch": "Potrivire!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Corecte: {a} · Greșite: {b}",
+    "lib.arcade.nbAcc": "Precizie: {n}%",
+    "lib.arcade.note.clicker": "Apasă pe biscuit ca să coci biscuiți, apoi cheltuiește-i pe ajutoare care coc automat (prețurile cresc cu fiecare cumpărat). Coace numărul-țintă de biscuiți în 2 minute ca să treci nivelul.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Bunica brutăriță",
+    "lib.arcade.ckFarm": "Fermă",
+    "lib.arcade.ckMine": "Mină de zahăr",
+    "lib.arcade.ckFactory": "Fabrică",
+    "lib.arcade.ckCookie": "Biscuit",
+    "lib.arcade.ckEarned": "Copți: {n}/{t}",
+    "lib.arcade.chips2": "Biscuiți: {n}",
+    "lib.arcade.ckCps": "{n} biscuiți/secundă",
+    "lib.arcade.note.onet": "Selectează două piese identice care pot fi unite printr-un drum cu cel mult 2 cotituri, care nu trece peste alte piese, ca să le elimini. Curăță toate piesele înainte să expire timpul ca să câștigi. Când nu mai ai mutări, poți amesteca (de un număr limitat de ori).",
+    "lib.arcade.shuffle": "Amestecă",
+    "lib.arcade.tilesLeft": "Au mai rămas {n} piese",
+    "lib.arcade.autoShuffle": "Nu mai sunt mutări — s-a amestecat automat.",
+    "lib.arcade.note.jigsaw": "Imaginea este tăiată în bucăți și amestecată. Atinge o piesă, apoi alta, ca să le schimbi între ele, și reface imaginea arătată ca model. Piesele la locul lor primesc un chenar verde. Nivelurile mai mari au mai multe piese.",
+    "lib.arcade.jgRef": "Imagine model",
+    "lib.arcade.jgPlaced": "La locul lor: {a}/{b}",
+    "lib.arcade.golfStrokes": "Lovituri: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Joci cu piesele albe, care merg din dreapta sus în jurul tablei până în dreapta jos (casa ta). Dai cu zarurile, apeși pe piesa pe care vrei s-o muți, apoi pe o destinație evidențiată. Dacă ajungi pe un punct cu exact o piesă adversă, o loveți și o trimiți pe bara din mijloc, iar acel jucător trebuie s-o reintroducă mai întâi. Nu poți ajunge pe un punct cu două sau mai multe piese adverse. Când toate cele 15 piese ale tale sunt în casă (ultimele 6 puncte), le poți scoate de pe tablă. Câștigă primul care le scoate pe toate 15.",
+    "lib.arcade.bgRoll": "Dă cu zarurile",
+    "lib.arcade.bgOff": "Scoate",
+    "lib.arcade.bgRollFirst": "Dă cu zarurile",
+    "lib.arcade.bgInfo": "Scoase: tu {a} · calculatorul {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Nu mai ai nicio mutare legală.",
+    "lib.arcade.note.tienlen": "Patru jucători, câte 13 cărți. Ordinea cărților, de la mic la mare: 3, 4, … K, A, 2; culorile, de la mică la mare: pică, treflă, caro, cupă. Începe cine are 3 de pică. Joacă o carte, o pereche, trei de un fel, patru de un fel sau un șir de 3 sau mai multe cărți consecutive (fără 2). Următorul jucător trebuie să joace același tip, dar mai mare, sau să treacă; careul poate bate un singur 2 sau o pereche de 2. Când toți ceilalți trec, ultimul care a jucat poate deschide cu orice. Câștigă primul care rămâne fără cărți. Selectează cărțile, apoi apasă Joacă.",
+    "lib.arcade.tlPlay": "Joacă",
+    "lib.arcade.tlPass": "Treci",
+    "lib.arcade.tlClear": "Șterge selecția",
+    "lib.arcade.tlPassed": "a trecut",
+    "lib.arcade.tlFree": "Masa e goală — poți deschide cu orice",
+    "lib.arcade.tlLeft": "Cărți rămase: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} trece.",
+    "lib.arcade.tlBad": "Cărțile selectate nu formează o combinație validă.",
+    "lib.arcade.tlLow": "Această combinație nu e destul de mare ca să bată masa."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Test de timp de reacție",
       "desc": "Dă clic în clipa în care ecranul devine verde; media ta pe 5 runde trebuie să respecte limita fiecărui nivel, tot mai strânsă pe parcursul a 10 niveluri."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Seamănă semințe în gropi, capturează semințele adversarului și mută din nou când ajungi în depozitul tău; joacă împotriva calculatorului pe 10 niveluri, de la ușor la greu."
+    },
+    "snakes-ladders": {
+      "name": "Șerpi și scări",
+      "desc": "Dai cu zarul de la pătrățelul 1 la 100, urci scări, eviți șerpii și ajungi la final înaintea adversarilor; 10 niveluri."
+    },
+    "nine-mens-morris": {
+      "name": "Moara (Nine Men’s Morris)",
+      "desc": "Pune, mută și zboară cu piesele ca să formezi trei în linie și să iei piesele adversarului; joacă împotriva calculatorului pe 10 niveluri."
+    },
+    "battleship": {
+      "name": "Bătălia navală",
+      "desc": "Găsește și scufundă flota calculatorului pe o grilă 10x10 înainte să-ți scufunde el flota; 10 niveluri, pe măsură ce calculatorul deduce mai isteț."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Dovleac, Crab, Pește, Creveți)",
+      "desc": "Joc tradițional vietnamez cu zaruri: pariază monede virtuale pe animale și scutură trei zaruri; atinge numărul-țintă de monede pe 10 niveluri (fără bani reali)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Pariază pe Jucător, Bancher sau Egalitate, cu cărți împărțite după regulile standard, folosind monede virtuale; atinge numărul-țintă de monede pe 10 niveluri (fără bani reali)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (joc cu 3 cărți)",
+      "desc": "Compară mâini de 3 cărți cu dealerul: trei de un fel, trei figuri, apoi de la 9 puncte până la 0; monede virtuale, 10 niveluri, fără bani reali."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Marchează numerele chemate pe cartonașul tău 5x5 și strigă BINGO înaintea adversarilor calculator; numerele se cheamă tot mai repede pe 10 niveluri."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (cinci zaruri)",
+      "desc": "Aruncă cinci zaruri, păstrează-le pe cele bune și completează 13 căsuțe de punctaj; atinge scorul-țintă pe 10 niveluri."
+    },
+    "crazy-eights": {
+      "name": "Optari (Crazy Eights)",
+      "desc": "Potrivește culoarea sau valoarea, opturile schimbă culoarea; rămâi fără cărți înaintea a 1–3 adversari calculator pe 10 niveluri."
+    },
+    "car-race": {
+      "name": "Cursă cu ocolire",
+      "desc": "Schimbă benzile ca să eviți mașinile din față și parcurge toată distanța; 10 niveluri cu mai multe benzi și trafic mai rapid."
+    },
+    "sky-jump": {
+      "name": "Salt spre cer",
+      "desc": "Sari de pe o platformă pe alta ca să urci cât mai sus fără să cazi; 10 niveluri cu platforme mai rare, mobile și casabile."
+    },
+    "gold-miner": {
+      "name": "Căutătorul de aur",
+      "desc": "Lasă cârligul jos ca să tragi aur și diamante, evită pietrele grele și atinge suma-țintă în 60 de secunde; 10 niveluri."
+    },
+    "fruit-slice": {
+      "name": "Tăiat fructe",
+      "desc": "Trage cu degetul ca să tai fructele care zboară în sus și ferește-te de bombe; 10 niveluri cu mai multe fructe și mai multe bombe."
+    },
+    "basketball": {
+      "name": "Baschet la coș",
+      "desc": "Trage și eliberează ca să arunci mingea în coș dintr-un număr limitat de aruncări; 10 niveluri, cu coș mobil de la nivelul 4."
+    },
+    "bubble-shooter": {
+      "name": "Bule colorate",
+      "desc": "Trage cu bule ca să uneşti 3 sau mai multe de aceeași culoare și să le spargi, și curăță-le pe toate înainte să ajungă jos; 10 niveluri cu tot mai multe culori."
+    },
+    "dot-chase": {
+      "name": "Urmărirea punctelor",
+      "desc": "Mănâncă toate punctele din labirint ferindu-te de fantomele care te urmăresc; 10 niveluri cu fantome mai multe și mai istețe."
+    },
+    "kakuro": {
+      "name": "Kakuro (sume încrucișate)",
+      "desc": "Completează celulele albe cu cifre de la 1 la 9 astfel încât fiecare șir să dea indiciul său, fără repetări; 10 niveluri, grile de la 5x5 la 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Completează grila fără repetări pe rânduri sau coloane, astfel încât fiecare grup să dea ținta cu operația sa; 10 niveluri, grile de la 3x3 la 6x6."
+    },
+    "word-guess": {
+      "name": "Ghicește cuvântul (stil Wordle)",
+      "desc": "Ghicește cuvântul secret în engleză cu indicii verzi, galbene și gri; 10 niveluri cu cuvinte de 4–6 litere și mai puține încercări."
+    },
+    "hangman": {
+      "name": "Spânzurătoarea (Hangman)",
+      "desc": "Ghicește cuvântul englezesc literă cu literă înainte să rămâi fără greșeli permise; 10 niveluri cu cuvinte mai lungi și mai puține greșeli."
+    },
+    "word-scramble": {
+      "name": "Cuvinte amestecate (anagrame)",
+      "desc": "Rearanjează literele amestecate într-un cuvânt englezesc înainte să expire timpul; 10 niveluri, 5 cuvinte pe nivel."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Potrivește piesele la oricare capăt al lanțului și rămâi fără piese înaintea calculatorului; 10 niveluri, pe măsură ce calculatorul devine mai isteț."
+    },
+    "hearts": {
+      "name": "Hearts (Cupe)",
+      "desc": "Evită cupele și Dama de pică într-un joc de cărți pentru patru jucători; scorul mai mic e mai bun; 10 niveluri împotriva unor jucători calculator tot mai isteți."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (jetoane virtuale)",
+      "desc": "Poker față în față cu calculatorul, cu jetoane virtuale: dă fold, call sau raise și câștigă când calculatorul rămâne fără jetoane; 10 niveluri, fără bani reali."
+    },
+    "n-back": {
+      "name": "Memorie N-Back",
+      "desc": "Urmărește pătratul aprins și apasă Potrivire când este la fel ca acum N pași; 10 niveluri cu N până la 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker (Brutăria)",
+      "desc": "Apasă ca să coci biscuiți, cumpără ajutoare care coc automat și atinge ținta în 2 minute; 10 niveluri."
+    },
+    "tile-connect": {
+      "name": "Conectare de piese (stil Onet)",
+      "desc": "Unește piesele identice printr-un drum cu cel mult două cotituri și curăță tabla înainte să expire timpul; 10 niveluri, table tot mai mari."
+    },
+    "jigsaw": {
+      "name": "Puzzle cu imagine",
+      "desc": "Schimbă între ele piesele amestecate ca să reconstitui imaginea; 10 niveluri, de la 3x3 la 6x6 piese."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Trage înapoi și eliberează ca să bagi mingea în gaură în limita loviturilor; 10 terenuri cu pereți și nisip."
+    },
+    "backgammon": {
+      "name": "Backgammon (Table)",
+      "desc": "Dă cu zarurile, du-ți piesele acasă și scoate-le de pe tablă înaintea calculatorului, lovind piesele lui singure pe parcurs; 10 niveluri."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Treisprezece)",
+      "desc": "Jocul vietnamez de cărți pentru patru, în care te descarci de cărți: joacă cărți singure, perechi, șiruri și careuri ca să rămâi primul fără cărți; 10 niveluri."
     }
   },
   "s": {

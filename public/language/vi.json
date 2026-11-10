@@ -709,7 +709,9 @@
     "lib.arcade.note.janggi": "Janggi là cờ tướng kiểu Hàn Quốc. Bạn cầm quân xanh phía dưới, đi trước. Khác cờ tướng thường: không có sông, hai bên đều có đường chéo trong cung; Tướng và Sĩ đi một ô theo đường kẻ trong cung (kể cả chéo); Xe đi và ăn cả theo đường chéo trong cung; Pháo phải nhảy qua đúng một quân (không phải Pháo) để đi hoặc ăn, và không ăn được Pháo; Mã đi 1 ô thẳng rồi 1 ô chéo; Tượng đi 1 ô thẳng rồi 2 ô chéo, đều bị cản nếu có quân chắn trên đường; Tốt đi tiến hoặc ngang, trong cung đối phương được đi chéo tiến. Hai Tướng không được nhìn thẳng nhau. Chiếu bí Tướng đối phương để thắng. Máy không dùng nước bỏ lượt.",
     "lib.arcade.jgCheck": "Bạn đang bị chiếu!",
     "lib.arcade.jgWin": "Chiếu bí — bạn thắng.",
-    "lib.arcade.jgLose": "Bạn bị chiếu bí."
+    "lib.arcade.jgLose": "Bạn bị chiếu bí.",
+    "lib.arcade.pinBalls": "Bóng: {n} · Mục tiêu: {t}",
+    "lib.arcade.note.pinball": "Bấm phím cách, ↑ hoặc chạm vào sân để phóng bóng. Giữ ← (hoặc chạm nửa trái sân) để nâng cần gạt trái, → (hoặc nửa phải) cho cần gạt phải; đừng giữ mãi, hãy gạt từng nhịp. Bóng chạm bumper tròn được 100 điểm. Có 3 bóng; đạt đủ điểm mục tiêu trước khi hết bóng để qua cấp."
   },
   "pages": {
     "home": {
@@ -1810,6 +1812,10 @@
     "janggi": {
       "name": "Janggi (cờ tướng Hàn Quốc)",
       "desc": "Janggi online đánh với máy: cờ tướng kiểu Hàn có đường chéo trong cung, pháo nhảy một quân, tượng 3 bước; 10 cấp, có đi lại."
+    },
+    "pinball": {
+      "name": "Pinball (bắn bi)",
+      "desc": "Pinball online: gạt cần trái phải để giữ bóng, đập bumper lấy điểm đạt mục tiêu trước khi hết 3 bóng; 10 cấp."
     }
   },
   "s": {

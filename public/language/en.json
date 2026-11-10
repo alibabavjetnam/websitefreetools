@@ -709,7 +709,9 @@
     "lib.arcade.note.janggi": "Janggi is Korean chess. You play the blue pieces at the bottom and move first. Unlike xiangqi there is no river, and both palaces have diagonal lines. The General and Guards move one step along the palace lines (diagonals included); the Chariot also slides and captures along palace diagonals; the Cannon must jump over exactly one piece (not another Cannon) to move or capture, and cannot capture a Cannon; the Horse steps one point straight then one diagonally, and the Elephant one straight then two diagonally, both blocked if a piece is in the way; Soldiers move forward or sideways, and diagonally forward inside the enemy palace. The two Generals may never face each other. Checkmate the enemy General to win. The computer never passes.",
     "lib.arcade.jgCheck": "You are in check!",
     "lib.arcade.jgWin": "Checkmate — you win.",
-    "lib.arcade.jgLose": "You were checkmated."
+    "lib.arcade.jgLose": "You were checkmated.",
+    "lib.arcade.note.pinball": "Press Space, Up or tap the table to launch the ball. Hold Left (or touch the left half of the table) to raise the left flipper and Right (or the right half) for the right one — tap in rhythm instead of holding. Round bumpers score 100 points each. You have 3 balls; reach the target score before they run out to clear the level.",
+    "lib.arcade.pinBalls": "Balls: {n} · Target: {t}"
   },
   "pages": {
     "home": {
@@ -1486,6 +1488,10 @@
     "janggi": {
       "name": "Janggi (Korean Chess)",
       "desc": "Play Korean chess against the computer: palace diagonals, one-piece cannon jumps, three-step elephants; 10 levels with undo."
+    },
+    "pinball": {
+      "name": "Pinball",
+      "desc": "Flip left and right to keep the ball alive, hit the bumpers and reach the target score before your 3 balls run out; 10 levels."
     }
   },
   "s": {

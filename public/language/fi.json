@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Hyppää",
     "lib.arcade.aimTarget": "Kohde",
     "lib.game.soundOn": "Äänet päälle",
-    "lib.game.soundOff": "Äänet pois"
+    "lib.game.soundOff": "Äänet pois",
+    "lib.arcade.note.kalah": "Sinä pelaat alariviä ja tietokone ylariviä; oikealla oleva iso kuoppa on sinun varastosi. Napsauta kuoppaa ottaaksesi kaikki sen siemenet ja kylvääksesi ne vastapäivään yksi kuoppaan kerrallaan (vastustajan varasto ohitetaan). Jos viimeinen siemen päätyy omaan varastoosi, saat uuden vuoron; jos se päätyy tyhjään kuoppaan omalla puolellasi ja vastapäisessä kuopassa on siemeniä, voitat ne. Kun toinen puoli on tyhjä, toisen puolen siemenet menevät sen omistajan varastoon; suurempi varasto voittaa.",
+    "lib.arcade.note.snakes": "Heitä noppaa ja liiku silmäluvun verran ruutuja, ruudusta 1 ruutuun 100. Jos päädyt tikapuiden alapäähän, nouset ylös; käärmeen päähän, liu'ut alas. Tasolta 4 alkaen ruutuun 100 pitää päästä tarkalla heitolla. Korkeammilla tasoilla on enemmän käärmeitä, vähemmän tikapuita ja enemmän vastustajia. Ensimmäinen ruutuun 100 pääsevä voittaa.",
+    "lib.arcade.square": "Ruutu {n}",
+    "lib.arcade.ladderUp": "Ylös tikapuita!",
+    "lib.arcade.snakeDown": "Käärme nielaisi!",
+    "lib.arcade.needExact": "Tarvitset tarkan luvun päästäksesi ruutuun 100.",
+    "lib.arcade.note.nmm": "Kummallakin puolella on 9 nappulaa. Vaihe 1: asettakaa vuorotellen nappuloita tyhjille pisteille. Vaihe 2: siirrä nappula viereiselle tyhjälle pisteelle. Kun jäljellä on vain 3 nappulaa, voit \"lentää\" mille tahansa tyhjälle pisteelle. Kolmen rivi (\"mylly\") antaa poistaa vastustajan nappulan (ensin ne, jotka eivät ole myllyssä). Häviät, kun sinulla on 2 nappulaa tai et voi siirtää. Pelaat valkoisilla ja aloitat.",
+    "lib.arcade.inHand": "Asetettavana: {a} · {b}",
+    "lib.arcade.removePiece": "Valitse poistettava vastustajan nappula.",
+    "lib.arcade.enemyWaters": "Vihollisen vedet (napsauta ampuaksesi)",
+    "lib.arcade.yourFleet": "Sinun laivastosi",
+    "lib.arcade.note.battleship": "Kummallakin puolella on 5 laivaa (pituudet 5, 4, 3, 3, 2) satunnaisesti sijoitettuna 10x10-ruudukkoon. Ampukaa vuorotellen ruutuun: osuma muuttuu punaiseksi, huti vaaleansiniseksi, ja kun laivan kaikkiin ruutuihin on osuttu, se uppoaa. Upota koko vihollislaivasto ensin voittaaksesi. Korkeammilla tasoilla tietokone päättelee laivojesi paikat älykkäämmin.",
+    "lib.arcade.shipsLeft": "Laivoja jäljellä: sinä {a} · vihollinen {b}",
+    "lib.arcade.theySunk": "Vihollinen upotti yhden laivoistasi!",
+    "lib.arcade.theyHit": "Vihollinen osui yhteen laivoistasi.",
+    "lib.arcade.theyMiss": "Vihollinen huti.",
+    "lib.arcade.youSunk": "Upotit vihollisen laivan!",
+    "lib.arcade.youHit": "Osuma!",
+    "lib.arcade.youMiss": "Huti.",
+    "lib.arcade.shake": "Ravista",
+    "lib.arcade.clearBets": "Tyhjennä panokset",
+    "lib.arcade.note.bau-cua": "Vain virtuaalikolikoita — ei oikeaa rahaa. Valitse sirun arvo, napsauta eläimiä asettaaksesi panokset ja paina Ravista. Jokaisesta nopasta, joka vastaa eläintä, jolle panostit, saat panoksesi takaisin ja saman summan lisää jokaisesta osumasta. Saavuta tavoitekolikot sallitussa kierrosmäärässä läpäistäksesi tason.",
+    "lib.arcade.note.baccarat": "Vain virtuaalikolikoita — ei oikeaa rahaa. Panosta pelaajaan, pankkiiriin tai tasapeliin ja paina Jaa. Käden arvo on summan viimeinen numero (A = 1, 2–9 nimellisarvo, 10/J/Q/K = 0); 9:ää lähempänä oleva käsi voittaa, ja kolmannet kortit nostetaan vakiosääntöjen mukaan. Pelaaja maksaa 1:1, pankkiiri 0,95:1, tasapeli 8:1 (pelaajan/pankkiirin panokset palautetaan tasapelissä). Saavuta tavoitekolikot sallitussa kierrosmäärässä läpäistäksesi tason.",
+    "lib.arcade.banker": "Pankkiiri",
+    "lib.arcade.player": "Pelaaja",
+    "lib.arcade.tie": "Tasapeli",
+    "lib.arcade.openCards": "Paljasta",
+    "lib.arcade.note.bai-cao": "Vain virtuaalikolikoita — ei oikeaa rahaa. Kumpikin saa 3 korttia. Käden pisteet ovat summan viimeinen numero (A = 1, 2–9 nimellisarvo, 10/J/Q/K = 10 eli 0 pistettä). Järjestys: kolme samaa (\"Sáp\") on korkein, sitten kolme kuvakorttia (\"Ba tiên\"), sitten 9 pisteestä 0:aan. Aseta panos, paina Jaa ja sitten Paljasta vertaillaksesi jakajaan. Tasolta 6 alkaen jakaja voittaa tasapelit. Saavuta tavoitekolikot sallitussa kierrosmäärässä läpäistäksesi tason.",
+    "lib.arcade.caoSap": "Kolme samaa",
+    "lib.arcade.caoBaTien": "Kolme kuvakorttia",
+    "lib.arcade.caoPts": "{n} p.",
+    "lib.arcade.note.bingo": "Tietokone kuuluttaa numeroita 1–75. Kun kuulutettu numero on kortillasi, napsauta sitä merkitäksesi sen (keskiruutu on ilmainen). Täytä rivi, sarake tai vinorivi ja paina BINGO! — sinun pitää voittaa tietokonevastustajat. Väärä BINGO! lukitsee painikkeen muutamaksi sekunniksi. Korkeammilla tasoilla numerot kuulutetaan nopeammin ja vastustajia on enemmän.",
+    "lib.arcade.opponentsN": "Vastustajia: {n}",
+    "lib.arcade.falseBingo": "Täyttä riviä ei vielä ole! Painike lukittu 3 sekunniksi.",
+    "lib.arcade.bingoGo": "Numeroita kuulutetaan!",
+    "lib.arcade.note.yahtzee": "Joka vuorolla heität 5 noppaa enintään 3 kertaa: napsauta noppaa pitääksesi sen ja paina Heitä heittääksesi loput uudelleen. Valitse sitten taulukosta ruutu pisteytettäväksi (jokainen ruutu käytetään kerran; sopimaton ruutu saa 0). 13 vuoroa. Ykköset–kutoset-ruuduista tulee 35 bonus, jos niiden summa on vähintään 63. Saavuta tason tavoitepisteet voittaaksesi.",
+    "lib.arcade.turnN": "Vuoro {n}/13",
+    "lib.arcade.pickCat": "Valitse ruutu pisteytettäväksi",
+    "lib.arcade.rollsLeft": "Heitä ({n} jäljellä)",
+    "lib.arcade.upperBonus": "Ykköset–kutoset-bonus",
+    "lib.arcade.scored": "Pisteitä {n}",
+    "lib.arcade.note.crazy-eights": "Pelaa kortti, joka vastaa poistopakan päällimmäistä korttia maaltaan tai arvoltaan. Kahdeksikot ovat jokereita: pelaa sellainen milloin tahansa ja valitse uusi maa. Jos sinulla ei ole pelattavaa korttia, nosta pakasta (enintään 3 korttia); jos et vieläkään voi pelata, ohitat. Ensimmäinen, joka pääsee eroon korteistaan, voittaa. Korkeammilla tasoilla vastustajia on enemmän ja tietokone pelaa älykkäämmin.",
+    "lib.arcade.opponent": "Vastustaja",
+    "lib.arcade.pileLeft": "Nostopakka: {n}",
+    "lib.arcade.pickSuit": "Valitse uusi maa",
+    "lib.arcade.aiSuit": "Tietokone valitsi maan {s}",
+    "lib.arcade.aiPass": "Tietokone ohittaa.",
+    "lib.arcade.mustPlay": "Sinulla on pelattava kortti — pelaa se.",
+    "lib.arcade.youPass": "Nostit 3 korttia ja ohitat.",
+    "lib.arcade.bcGourd": "Kurpitsa",
+    "lib.arcade.bcCrab": "Rapu",
+    "lib.arcade.bcShrimp": "Katkarapu",
+    "lib.arcade.bcFish": "Kala",
+    "lib.arcade.bcRooster": "Kukko",
+    "lib.arcade.bcDeer": "Hirvi",
+    "lib.arcade.yOnes": "Ykköset",
+    "lib.arcade.yTwos": "Kakkoset",
+    "lib.arcade.yThrees": "Kolmoset",
+    "lib.arcade.yFours": "Neloset",
+    "lib.arcade.yFives": "Vitoset",
+    "lib.arcade.ySixes": "Kutoset",
+    "lib.arcade.yThree": "Kolmoset (kolme samaa)",
+    "lib.arcade.yFour": "Neloset (neljä samaa)",
+    "lib.arcade.yFull": "Täyskäsi (25)",
+    "lib.arcade.ySmall": "Pieni suora (30)",
+    "lib.arcade.yLarge": "Iso suora (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Sattuma",
+    "lib.arcade.note.race": "Paina ← → (tai napauta haluamaasi kaistaa) vaihtaaksesi kaistaa ja väistääksesi edessä olevia autoja. Sinulla on 3 elämää; aja koko matka läpäistäksesi tason. Korkeammilla tasoilla on enemmän kaistoja ja nopeampaa liikennettä.",
+    "lib.arcade.note.jump": "Hahmo pomppii itsestään. Paina ← → tai vedä sormella laskeutuaksesi seuraavalle tasolle. Siniset tasot liikkuvat, ruskeat hajoavat, kun laskeudut niille. Putoaminen ruudun ulkopuolelle on häviö; kiipeä riittävän korkealle läpäistäksesi tason.",
+    "lib.arcade.note.miner": "Koukku heiluu puolelta toiselle; pudota se painamalla välilyöntiä, ↓ tai napauttamalla kenttää. Isot kultakimpaleet ja kivet ovat painavia ja nousevat hitaasti; timantit ovat arvokkaita. Saavuta tavoiterahamäärä ennen kuin 60 sekuntia on kulunut.",
+    "lib.arcade.note.slicer": "Viipaloi hedelmät vetämällä sormea tai hiirtä niiden yli. Vältä mustia pommeja. Hedelmän ohi päästäminen tai pommin viipalointi maksaa elämän (sinulla on 3). Viipaloi riittävästi hedelmiä läpäistäksesi tason.",
+    "lib.arcade.note.hoops": "Paina kenttää, vedä alas (kuin ritsalla) ja päästä irti heittääksesi pallon koriin. Mitä kauemmas vedät, sitä voimakkaampi heitto. Tee riittävästi koreja käytettävissä olevilla heitoilla; tasolta 4 alkaen koriin liikkuu.",
+    "lib.arcade.note.bubbles": "Tähtää liikuttamalla hiirtä tai sormea ja ammu napsauttamalla/napauttamalla tai painamalla välilyöntiä/Tulta. Yhdistä vähintään 3 samanväristä kuplaa poksauttaaksesi ne; kuplat, joilta tuki katoaa, putoavat. Rivit laskeutuvat hitaasti, joten pidä ne kaukana alarajasta. Tyhjennä kaikki kuplat voittaaksesi.",
+    "lib.arcade.note.chase": "Käytä nuolinäppäimiä (tai pyyhkäisyä / painikkeita) kääntyäksesi ja syödäksesi kaikki pisteet sokkelosta väistäen sinua jahtaavia haamuja. Sinulla on 3 elämää; korkeammilla tasoilla haamuja on enemmän, ne ovat nopeampia ja jahtaavat älykkäämmin.",
+    "lib.arcade.height": "Korkeus: {n}/{t} m",
+    "lib.arcade.money": "Raha: {n}/{t}",
+    "lib.arcade.sliced": "Viipaloitu: {n}/{t}",
+    "lib.arcade.hoopScore": "Koreja: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} heittoa jäljellä",
+    "lib.arcade.bubbleLeft": "{n} kuplaa jäljellä",
+    "lib.arcade.shotsN": "Laukauksia: {n}",
+    "lib.arcade.dotsLeft": "{n} pistettä jäljellä",
+    "lib.arcade.note.kakuro": "Täytä valkoiset ruudut numeroilla 1–9 niin, että kunkin jakson summa on mustan ruudun vihjeen suuruinen (oikean yläkulman luku koskee oikealle jatkuvaa jaksoa, vasemman alakulman luku alas jatkuvaa), eikä mikään numero toistu jaksossa. Liiku nuolinäppäimillä.",
+    "lib.arcade.note.kenken": "Täytä ruudukko luvuilla 1–N niin, ettei yksikään luku toistu missään rivissä tai sarakkeessa. Jokaisessa paksulla reunustetussa alueessa on tavoite ja laskutoimitus (+, −, ×, ÷): alueen lukujen on annettava tämä tulos. Liiku nuolinäppäimillä.",
+    "lib.arcade.note.wordGuess": "Arvaa salainen englanninkielinen sana. Jokaisen yrityksen jälkeen vihreä tarkoittaa oikeaa kirjainta oikealla paikalla, keltainen kirjainta, joka on sanassa mutta muualla, ja harmaa kirjainta, jota sanassa ei ole. Kirjoita näppäimistöllä tai käytä näytön näppäimiä ja lähetä painamalla Enter. Korkeammilla tasoilla sanat ovat pidempiä ja yrityksiä on vähemmän.",
+    "lib.arcade.note.hangman": "Arvaa salainen englanninkielinen sana valitsemalla kirjaimia yksi kerrallaan. Jokainen väärä kirjain lisää osan hirtettävään hahmoon; kun väärät arvaukset loppuvat, häviät. Korkeammilla tasoilla sanat ovat pidempiä ja sallittuja virheitä on vähemmän.",
+    "lib.arcade.note.scramble": "Järjestä sekoitetut kirjaimet oikeaksi englanninkieliseksi sanaksi ja kirjoita se vastauskenttään. Jokaisella tasolla on 5 sanaa; ratkaise vähintään 4, ennen kuin kunkin sanan ajastin umpeutuu, läpäistäksesi tason. Vihje paljastaa ensimmäisen kirjaimen.",
+    "lib.arcade.cellsLeft": "{n} tyhjää ruutua jäljellä",
+    "lib.arcade.wrongN": "{n} ruutua ei ole oikein.",
+    "lib.arcade.noError": "Virheitä ei ole toistaiseksi löytynyt.",
+    "lib.arcade.tooShort": "Kirjaimia ei ole tarpeeksi",
+    "lib.arcade.answerIs": "Vastaus: {w}",
+    "lib.arcade.livesLeft": "{n} väärää arvausta jäljellä",
+    "lib.arcade.yourAnswer": "Vastauksesi",
+    "lib.arcade.skip": "Ohita",
+    "lib.arcade.notThis": "Ei oikein, yritä uudelleen.",
+    "lib.arcade.startsWith": "Ensimmäinen kirjain: {c}",
+    "lib.arcade.note.domino": "Jokainen pelaaja saa 7 laattaa; korkeimman tuplan haltija aloittaa. Pelaa laatta, jonka luku vastaa ketjun toista päätä. Jos et voi pelata, nosta varastosta kunnes voit; jos varasto on tyhjä, ohita. Ensimmäinen, joka pääsee eroon laatoistaan, voittaa; jos kumpikin on jumissa, pienempi silmälukusumma voittaa.",
+    "lib.arcade.note.hearts": "Neljä pelaajaa, 13 korttia kullekin. Pelin aloittaa ristikakkonen. Jos mahdollista, sinun on seurattava aloitettua maata. Jokainen hertta on 1 piste ja pata-kuningatar 13; tikin voittaja saa sen pisteet. Vähemmän on parempi, ja jos otat kaikki 26 pistettä, kaikki muut saavat 26. Et voi aloittaa hertalla, ennen kuin hertta on pelattu. Viimeisen jaon jälkeen voitat, jos pisteesi ovat pienimmät (tai jaetusti pienimmät).",
+    "lib.arcade.note.holdem": "Kaksinpeli tietokonetta vastaan pelkillä virtuaalimarkkereilla. Kumpikin saa 2 piilokorttia ja 5 yhteistä korttia paljastetaan (floppi, turn, river); muodosta paras 5 kortin käsi. Jokaisella kierroksella voit luovuttaa, maksaa (tai tarkistaa) tai korottaa. Blindit nousevat joka 4. jaolla. Voitat, kun tietokoneen markkerit loppuvat, tai kun sinulla on enemmän markkereita jakorajan jälkeen. Oikeaa rahaa ei käytetä.",
+    "lib.arcade.dmDraw": "Nosta laatta",
+    "lib.arcade.dmPass": "Ohita",
+    "lib.arcade.dmEmpty": "Laattoja ei ole vielä pelattu",
+    "lib.arcade.dmYard": "Varasto: {n} laattaa",
+    "lib.arcade.dmLeft": "Vasen pää",
+    "lib.arcade.dmRight": "Oikea pää",
+    "lib.arcade.dmTie": "Tasapeli! Molemmat ovat tasoissa.",
+    "lib.arcade.hrHand": "Jako {n}/{t}",
+    "lib.arcade.hrTook": "{p} voittaa tikin ({n} pistettä).",
+    "lib.arcade.hrIllegal": "Tätä korttia ei voi pelata (seuraa maata, eikä hertalla voi vielä aloittaa).",
+    "lib.arcade.blinds": "Iso blindi: {n}",
+    "lib.arcade.pot": "Potti: {n}",
+    "lib.arcade.fold": "Luovuta",
+    "lib.arcade.check": "Tarkista",
+    "lib.arcade.callN": "Maksa {n}",
+    "lib.arcade.raiseTo": "Korota",
+    "lib.arcade.raiseN": "Korota {n}:ään",
+    "lib.arcade.thOppFold": "Tietokone luovuttaa; voitat tämän jaon.",
+    "lib.arcade.thYouFold": "Luovutit.",
+    "lib.arcade.thOppWin": "Tietokone voittaa tämän jaon",
+    "lib.arcade.thYouWin": "Voitat tämän jaon",
+    "lib.arcade.thSplit": "Potti jaetaan",
+    "lib.arcade.thAiFold": "Tietokone luovuttaa.",
+    "lib.arcade.thAiRaise": "Tietokone korottaa {n}:ään.",
+    "lib.arcade.thAiCall": "Tietokone maksaa / tarkistaa.",
+    "lib.arcade.hand.high": "Korkea kortti",
+    "lib.arcade.hand.pair": "Pari",
+    "lib.arcade.hand.twoPair": "Kaksi paria",
+    "lib.arcade.hand.trips": "Kolmoset",
+    "lib.arcade.hand.straight": "Suora",
+    "lib.arcade.hand.flush": "Väri",
+    "lib.arcade.hand.full": "Täyskäsi",
+    "lib.arcade.hand.quads": "Neloset",
+    "lib.arcade.hand.sflush": "Värisuora",
+    "lib.arcade.note.nback": "3x3-ruudukossa ruutu syttyy yksi kerrallaan. Paina \"Täsmää!\" (tai välilyöntiä), kun valaistu paikka on sama kuin N askelta aiemmin (N näkyy yläpuolella). Tason läpäisemiseen tarvitaan vähintään 80 % oikeita ratkaisuja. Korkeammilla tasoilla N on suurempi.",
+    "lib.arcade.nbMatch": "Täsmää!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Oikein: {a} · Väärin: {b}",
+    "lib.arcade.nbAcc": "Tarkkuus: {n} %",
+    "lib.arcade.note.clicker": "Napsauta keksiä leipoaksesi keksejä ja käytä ne auttajiin, jotka leipovat automaattisesti (hinnat nousevat jokaisella ostolla). Leivo tavoitemäärä keksejä 2 minuutissa läpäistäksesi tason.",
+    "lib.arcade.ckCursor": "Kohdistin",
+    "lib.arcade.ckGrandma": "Leipuri-mummo",
+    "lib.arcade.ckFarm": "Maatila",
+    "lib.arcade.ckMine": "Sokerikaivos",
+    "lib.arcade.ckFactory": "Tehdas",
+    "lib.arcade.ckCookie": "Keksi",
+    "lib.arcade.ckEarned": "Leivottu: {n}/{t}",
+    "lib.arcade.chips2": "Keksejä: {n}",
+    "lib.arcade.ckCps": "{n} keksiä sekunnissa",
+    "lib.arcade.note.onet": "Valitse kaksi samanlaista laattaa, jotka voi yhdistää enintään 2 mutkaa sisältävällä reitillä, joka ei kulje muiden laattojen läpi; ne poistuvat. Tyhjennä kaikki laatat ennen ajan loppumista voittaaksesi. Kun siirtoja ei ole jäljellä, voit sekoittaa (rajoitettu määrä kertoja).",
+    "lib.arcade.shuffle": "Sekoita",
+    "lib.arcade.tilesLeft": "{n} laattaa jäljellä",
+    "lib.arcade.autoShuffle": "Siirtoja ei ole jäljellä — sekoitettu automaattisesti.",
+    "lib.arcade.note.jigsaw": "Kuva on leikattu paloiksi ja sekoitettu. Napauta yhtä palaa ja sitten toista vaihtaaksesi ne keskenään ja kokoa kuva mallikuvan mukaan. Oikeilla paikoillaan olevat palat saavat vihreän reunuksen. Korkeammilla tasoilla paloja on enemmän.",
+    "lib.arcade.jgRef": "Mallikuva",
+    "lib.arcade.jgPlaced": "Paikallaan: {a}/{b}",
+    "lib.arcade.golfStrokes": "Lyöntejä: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Pelaat valkoisilla nappuloilla ja liikut oikeasta yläkulmasta kiertäen oikeaan alakulmaan (kotisi). Heitä nopat, napsauta siirrettävää nappulaa ja sitten korostettua kohdetta. Jos laskeudut pisteelle, jolla on täsmälleen yksi vastustajan nappula, lyöt sen keskipalkille, ja sen omistajan on ensin tuotava se takaisin peliin. Et voi laskeutua pisteelle, jolla on kaksi tai useampi vastustajan nappula. Kun kaikki 15 nappulaasi ovat kotialueellasi (viimeiset 6 pistettä), voit viedä ne pois laudalta. Ensimmäinen, joka vie kaikki 15 pois, voittaa.",
+    "lib.arcade.bgRoll": "Heitä nopat",
+    "lib.arcade.bgOff": "Vie pois",
+    "lib.arcade.bgRollFirst": "Heitä nopat",
+    "lib.arcade.bgInfo": "Pois viety: sinä {a} · tietokone {b} · Pipit: {c} / {d}",
+    "lib.arcade.youNoMove": "Sinulla ei ole enää sallittuja siirtoja.",
+    "lib.arcade.note.tienlen": "Neljä pelaajaa, 13 korttia kullekin. Korttien järjestys pienimmästä suurimpaan: 3, 4, … K, A, 2; maat pienimmästä suurimpaan: pata, risti, ruutu, hertta. Pata-kolmosen haltija aloittaa. Pelaa yksi kortti, pari, kolme samaa, neljä samaa tai vähintään 3 peräkkäisen kortin suora (ilman kakkosia). Seuraavan pelaajan on pelattava samaa tyyppiä korkeampana tai ohitettava; neljä samaa voi lyödä yksittäisen kakkosen tai kakkospariin. Kun kaikki muut ohittavat, viimeksi pelannut saa aloittaa millä tahansa. Ensimmäinen, joka pääsee eroon korteistaan, voittaa. Valitse kortit ja paina Pelaa.",
+    "lib.arcade.tlPlay": "Pelaa",
+    "lib.arcade.tlPass": "Ohita",
+    "lib.arcade.tlClear": "Tyhjennä valinta",
+    "lib.arcade.tlPassed": "ohitti",
+    "lib.arcade.tlFree": "Pöytä on tyhjä — voit aloittaa millä tahansa",
+    "lib.arcade.tlLeft": "Kortteja jäljellä: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} ohittaa.",
+    "lib.arcade.tlBad": "Valitut kortit eivät muodosta sallittua yhdistelmää.",
+    "lib.arcade.tlLow": "Tämä yhdistelmä ei ole tarpeeksi korkea lyödäkseen pöydällä olevan."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Reaktiotesti",
       "desc": "Napsauta heti kun ruutu muuttuu vihreäksi; viiden kierroksen keskiarvosi on täytettävä tason raja, joka kiristyy 10 tason aikana."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Kylvä siemeniä kuoppiin, voita vastustajan siemenet ja pelaa uudelleen, kun päädyt omaan varastoosi; pelaa tietokonetta vastaan 10 tasolla helposta vaikeaan."
+    },
+    "snakes-ladders": {
+      "name": "Käärmeet ja tikapuut",
+      "desc": "Heitä noppaa ruudusta 1 ruutuun 100, kiipeä tikapuita, vältä käärmeitä ja pääse maaliin ennen vastustajia; 10 tasoa."
+    },
+    "nine-mens-morris": {
+      "name": "Mylly (Yhdeksän miehen mylly)",
+      "desc": "Aseta, siirrä ja lennä nappuloilla muodostaaksesi kolmen rivin ja poistaaksesi vastustajan nappuloita; pelaa tietokonetta vastaan 10 tasolla."
+    },
+    "battleship": {
+      "name": "Laivanupotus",
+      "desc": "Etsi ja upota tietokoneen laivasto 10x10-ruudukosta, ennen kuin se upottaa sinun omasi; 10 tasoa, joilla tietokone päättelee yhä älykkäämmin."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (kurpitsa, rapu, kala, katkarapu)",
+      "desc": "Perinteinen vietnamilainen noppapeli: aseta virtuaalikolikoita eläimille ja ravista kolmea noppaa; saavuta tavoitekolikot 10 tasolla (ei oikeaa rahaa)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Panosta pelaajaan, pankkiiriin tai tasapeliin vakiosääntöjen mukaan jaetuilla korteilla virtuaalikolikoilla; saavuta tavoitekolikot 10 tasolla (ei oikeaa rahaa)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (kolmen kortin peli)",
+      "desc": "Vertaa 3 kortin käsiä jakajaan: kolme samaa, kolme kuvakorttia, sitten 9 pisteestä 0:aan; virtuaalikolikot, 10 tasoa, ei oikeaa rahaa."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Merkitse kuulutetut numerot 5x5-kortilta ja huuda BINGO ennen tietokonevastustajia; numerot kuulutetaan 10 tason aikana yhä nopeammin."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (viisi noppaa)",
+      "desc": "Heitä viittä noppaa, pidä hyvät ja täytä 13 pisteytysruutua; saavuta tavoitepisteet 10 tasolla."
+    },
+    "crazy-eights": {
+      "name": "Hullut kasit",
+      "desc": "Vastaa maata tai arvoa, kasit vaihtavat maan; pääse eroon korteistasi ennen 1–3 tietokonevastustajaa 10 tasolla."
+    },
+    "car-race": {
+      "name": "Autokisan väistely",
+      "desc": "Vaihda kaistaa väistääksesi edessä olevia autoja ja aja koko matka; 10 tasoa, joilla on enemmän kaistoja ja nopeampaa liikennettä."
+    },
+    "sky-jump": {
+      "name": "Taivashyppy",
+      "desc": "Pomppi tasolta toiselle ja kiipeä mahdollisimman korkealle putoamatta; 10 tasoa, joilla tasot ovat harvemmassa, liikkuvia ja hajoavia."
+    },
+    "gold-miner": {
+      "name": "Kullankaivaja",
+      "desc": "Pudota koukku nostaaksesi kultaa ja timantteja, vältä painavia kiviä ja saavuta tavoiterahamäärä 60 sekunnissa; 10 tasoa."
+    },
+    "fruit-slice": {
+      "name": "Hedelmäviipalointi",
+      "desc": "Pyyhkäise viipaloidaksesi ylös lentävät hedelmät ja väistä pommit; 10 tasoa, joilla on enemmän hedelmiä ja pommeja."
+    },
+    "basketball": {
+      "name": "Koripallon heitto",
+      "desc": "Vedä ja päästä irti heittääksesi pallon koriin rajatulla heittomäärällä; 10 tasoa, tasolta 4 alkaen liikkuva kori."
+    },
+    "bubble-shooter": {
+      "name": "Kuplanammunta",
+      "desc": "Ammu kuplia yhdistääksesi vähintään 3 samanväristä ja poksauttaaksesi ne, ja tyhjennä kaikki ennen kuin ne ylettävät alas; 10 tasoa, joilla on enemmän värejä."
+    },
+    "dot-chase": {
+      "name": "Pistejahti",
+      "desc": "Syö kaikki pisteet sokkelosta väistäen sinua jahtaavia haamuja; 10 tasoa, joilla on enemmän ja älykkäämpiä haamuja."
+    },
+    "kakuro": {
+      "name": "Kakuro (ristisummat)",
+      "desc": "Täytä valkoiset ruudut numeroilla 1–9 niin, että kunkin jakson summa on sen vihje eikä numeroita toisteta; 10 tasoa, ruudukot 5x5:stä 9x9:ään."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Täytä ruudukko ilman toistoja riveissä ja sarakkeissa niin, että jokainen alue antaa tavoitteensa laskutoimituksellaan; 10 tasoa, ruudukot 3x3:sta 6x6:een."
+    },
+    "word-guess": {
+      "name": "Sanaveikkaus (Wordle-tyyliin)",
+      "desc": "Arvaa salainen englanninkielinen sana vihreiden, keltaisten ja harmaiden vihjeiden avulla; 10 tasoa, joilla on 4–6 kirjaimen sanoja ja vähemmän yrityksiä."
+    },
+    "hangman": {
+      "name": "Hirsipuu",
+      "desc": "Arvaa englanninkielinen sana kirjain kerrallaan, ennen kuin väärät arvaukset loppuvat; 10 tasoa, joilla on pidempiä sanoja ja vähemmän virheitä."
+    },
+    "word-scramble": {
+      "name": "Sanasekoitus (anagrammi)",
+      "desc": "Järjestä sekoitetut kirjaimet englanninkieliseksi sanaksi ennen ajan loppumista; 10 tasoa, 5 sanaa tasoa kohden."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Liitä laattoja ketjun kumpaan tahansa päähän ja pääse eroon laatoistasi ennen tietokonetta; 10 tasoa, joilla tietokone älykkäämpi."
+    },
+    "hearts": {
+      "name": "Hertta (Hearts)",
+      "desc": "Vältä herttoja ja pata-kuningatarta neljän pelaajan korttipelissä; pienempi pistemäärä on parempi; 10 tasoa yhä älykkäämpiä tietokonepelaajia vastaan."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtuaalimarkkerit)",
+      "desc": "Kaksinpelipokeri tietokonetta vastaan virtuaalimarkkereilla: luovuta, maksa tai korota ja voita, kun tietokoneen markkerit loppuvat; 10 tasoa, ei oikeaa rahaa."
+    },
+    "n-back": {
+      "name": "N-back-muistipeli",
+      "desc": "Seuraa syttyvää ruutua ja paina Täsmää, kun se on sama kuin N askelta aiemmin; 10 tasoa, joilla N on enintään 4."
+    },
+    "cookie-clicker": {
+      "name": "Keksiklikkeri",
+      "desc": "Napsauta leipoaksesi keksejä, osta auttajia, jotka leipovat automaattisesti, ja saavuta tavoite 2 minuutissa; 10 tasoa."
+    },
+    "tile-connect": {
+      "name": "Laattojen yhdistys (Onet-tyyliin)",
+      "desc": "Yhdistä samanlaiset laatat enintään kahden mutkan reitillä ja tyhjennä lauta ennen ajan loppumista; 10 tasoa, yhä isompia lautoja."
+    },
+    "jigsaw": {
+      "name": "Kuvapalapeli",
+      "desc": "Vaihda sekoitettujen palojen paikkoja koota kuva uudelleen; 10 tasoa, 3x3:sta 6x6 palaan."
+    },
+    "mini-golf": {
+      "name": "Minigolf",
+      "desc": "Vedä taakse ja päästä irti lyödäksesi pallon reikään lyöntirajan sisällä; 10 rataa, joilla on seiniä ja hiekkaa."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Heitä nopat, kisaa nappuloillasi kotiin ja vie ne pois ennen tietokonetta lyöden sen yksinäisiä nappuloita matkalla; 10 tasoa."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Kolmetoista)",
+      "desc": "Vietnamilainen korteista eroon pääsemisen peli neljälle: pelaa yksittäisiä, pareja, suoria ja neljän samaa päästäksesi ensimmäisenä eroon korteistasi; 10 tasoa."
     }
   },
   "s": {

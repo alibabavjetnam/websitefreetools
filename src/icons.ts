@@ -146,6 +146,7 @@ const PATHS: Record<string, string> = {
   'phom': '<rect x="3" y="5" width="8" height="12" rx="1.2"/><rect x="8" y="4" width="8" height="12" rx="1.2"/><rect x="13" y="6" width="8" height="12" rx="1.2"/>',
   'shogi': '<path d="M12 2.5l6 3 1.5 15h-15L6 5.5z"/><path d="M12 8v7M9.5 11h5"/>',
   'janggi': '<circle cx="12" cy="12" r="8.5"/><path d="M8 8l8 8M16 8l-8 8"/>',
+  'pinball': '<circle cx="12" cy="7" r="3.2"/><path d="M4 20l7-4M20 20l-7-4M4 4v12M20 4v12"/>',
   'gomoku': '<path d="M4 4h16v16H4zM4 9.3h16M4 14.6h16M9.3 4v16M14.6 4v16" opacity=".55"/><path d="M5.5 5.5l2.4 2.4M7.9 5.5L5.5 7.9M10.8 10.8l2.4 2.4M13.2 10.8l-2.4 2.4"/><circle cx="17.3" cy="17.3" r="1.6"/>',
   'reversi': '<circle cx="8" cy="8" r="3.6"/><circle cx="16" cy="8" r="3.6" fill="currentColor"/><circle cx="8" cy="16" r="3.6" fill="currentColor"/><circle cx="16" cy="16" r="3.6"/>',
   'connect-four': '<rect x="3" y="5" width="18" height="15" rx="2"/><circle cx="7.5" cy="9.5" r="1.6"/><circle cx="12" cy="9.5" r="1.6"/><circle cx="16.5" cy="9.5" r="1.6"/><circle cx="7.5" cy="15" r="1.6" fill="currentColor"/><circle cx="12" cy="15" r="1.6" fill="currentColor"/><circle cx="16.5" cy="15" r="1.6"/>',
