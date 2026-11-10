@@ -711,7 +711,30 @@
     "lib.arcade.jgWin": "詰み — あなたの勝ちです。",
     "lib.arcade.jgLose": "詰まされました。",
     "lib.arcade.note.pinball": "スペース・上キー、またはテーブルをタップしてボールを発射します。左キー（またはテーブルの左半分をタッチ）で左のフリッパー、右キー（右半分）で右のフリッパーが上がります。押しっぱなしにせず、リズムよく弾きましょう。丸いバンパーに当てると100点です。ボールは3個。なくなる前に目標スコアに届けばクリアです。",
-    "lib.arcade.pinBalls": "ボール: {n} · 目標: {t}"
+    "lib.arcade.pinBalls": "ボール: {n} · 目標: {t}",
+    "lib.arcade.note.cribbage": "2人用クリベッジ。61点を先に取った方が勝ちです。毎回6枚配られ、2枚を伏せてクリブ（ディーラーのもの）に出します。次に場札（スターター）を1枚めくります。その後、合計が31を超えないように交互にカードを表向きで出します。15か31になると2点、直前のカードと同じ数字で2/6/12点、3枚以上の連番（順不同）で枚数分の点、誰も出せないとき最後に出した人に1点（ゴー）。その後、4枚の手札をスターターと合わせて数えます。合計15の組み合わせごとに2点、ペア2点、3枚以上の連番は枚数分、同じマーク4枚で4点（スターターも同じなら5点）、スターターと同じマークのジャックで1点。ディーラーでない側が先に数え、次にディーラーが手札とクリブを数えます。",
+    "lib.arcade.cbFifteen": "15",
+    "lib.arcade.cbPair": "ペア",
+    "lib.arcade.cbRun": "連番",
+    "lib.arcade.cbFlush": "フラッシュ",
+    "lib.arcade.cbNobs": "スターターと同じマークのJ",
+    "lib.arcade.cbHeels": "スターターがJ",
+    "lib.arcade.cbYou": "あなた",
+    "lib.arcade.cbFoe": "コンピューター",
+    "lib.arcade.cbLast": "最後の1枚",
+    "lib.arcade.cbCount": "合計: {n}",
+    "lib.arcade.cbYouDeal": "あなたが親",
+    "lib.arcade.cbFoeDeal": "コンピューターが親",
+    "lib.arcade.cbPick": "クリブに出す2枚を選んでください",
+    "lib.arcade.cbCrib": "クリブ",
+    "lib.arcade.cbYourHand": "あなたの手札",
+    "lib.arcade.cbFoeHand": "コンピューターの手札",
+    "lib.arcade.cbStarter": "スターター",
+    "lib.arcade.cbZero": "0点",
+    "lib.arcade.cbPlayed": "場に出たカード",
+    "lib.arcade.cbToCrib": "クリブへ",
+    "lib.arcade.cbNext": "続ける",
+    "lib.arcade.cbHand": "手札"
   },
   "pages": {
     "home": {
@@ -1492,6 +1515,10 @@
     "pinball": {
       "name": "ピンボール",
       "desc": "左右のフリッパーでボールを守り、バンパーを狙って3個のうちに目標スコアを目指そう。10レベル。"
+    },
+    "cribbage": {
+      "name": "クリベッジ",
+      "desc": "コンピューターと2人で遊ぶクリベッジ。クリブ、31までの場出し、手札の計算、61点先取。10レベル。"
     }
   },
   "s": {

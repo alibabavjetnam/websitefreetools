@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Svetuka",
     "lib.arcade.aimTarget": "Chinangwa",
     "lib.game.soundOn": "Vhura ruzha",
-    "lib.game.soundOff": "Vhara ruzha"
+    "lib.game.soundOff": "Vhara ruzha",
+    "lib.arcade.note.kalah": "Iwe unotamba mutsetse wepasi, komputa inotamba wepamusoro; gomba guru kurudyi ndiro rakachengetwa mbeu dzako. Dzvanya gomba kuti utore mbeu dzose uye uzvidyare kuenda kuruboshwe, imwe mugomba rimwe nerimwe (usiye nzvimbo yakachengetwa yemuvengi). Kana mbeu yekupedzisira ikawira mune yako, unotamba zvakare; kana ikawira mugomba risina chinhu kudivi rako riri pedyo negomba rine mbeu, unotora mbeu idzodzo. Kana divi rimwe rapera, mbeu dzedivi rimwe dzinoenda kumuridzi wadzo; ane mbeu dzakawanda anokunda.",
+    "lib.arcade.note.snakes": "Kanda dhayisi uye famba nenzvimbo dzakawanda sezvawabuda, kubva pa1 kusvika pa100. Kana wakumira pazasi pemateru unokwira, kana wakumira pamusoro penyoka unoserera pasi. Kubva pamwero 4 unoda nhamba chaiyo kuti ukumire pa100. Mamwero epamusoro ane nyoka dzakawanda, materu mashoma uye vavengi vakawanda. Anotanga kusvika pa100 anokunda.",
+    "lib.arcade.square": "Nzvimbo {n}",
+    "lib.arcade.ladderUp": "Kukwira nemateru!",
+    "lib.arcade.snakeDown": "Wadyiwa nenyoka!",
+    "lib.arcade.needExact": "Unoda nhamba chaiyo kuti ukumire pa100.",
+    "lib.arcade.note.nmm": "Divi rimwe nerimwe rine zvidimbu 9. Chikamu 1: tsaurirana kuisa zvidimbu panzvimbo dzisina chinhu. Chikamu 2: sununguka chidimbu uchichiendesa panzvimbo isina chinhu iri padyo. Kana pasara zvidimbu 3 chete, unogona «kubhururuka» uchienda kunzvimbo ipi neipi isina chinhu. Ita zvitatu pamutsetse mumwe («mill») kuti utorere muvengi chidimbu (kutanga zvisiri mu-mill). Unokundwa kana wasara nezvidimbu 2 kana usingachakwanisi kufamba. Unotamba chena uye unotanga.",
+    "lib.arcade.inHand": "Zvekuisa: {a} · {b}",
+    "lib.arcade.removePiece": "Sarudza chidimbu chemuvengi chekubvisa.",
+    "lib.arcade.enemyWaters": "Mvura yemuvengi (dzvanya kuti utape)",
+    "lib.arcade.yourFleet": "Zvikepe zvako",
+    "lib.arcade.note.battleship": "Divi rimwe nerimwe rine zvikepe 5 (kureba 5, 4, 3, 3, 2) zvakaiswa zvisina kurongeka pagirid ye10x10. Tsaurirana kutapira bhokisi: kurova kunoita tsvuku, kupotsa kunoita bhuruu yakajeka, uye kana mabhokisi ose echikepe arohwa chinonyura. Nyudza zvikepe zvose zvemuvengi kutanga kuti ukunde. Mumamwero epamusoro komputa inofungidzira nzvimbo dzezvikepe zvako nehungwaru.",
+    "lib.arcade.shipsLeft": "Zvikepe zvasara: iwe {a} · muvengi {b}",
+    "lib.arcade.theySunk": "Muvengi wanyudza chimwe chezvikepe zvako!",
+    "lib.arcade.theyHit": "Muvengi wavhura chimwe chezvikepe zvako.",
+    "lib.arcade.theyMiss": "Muvengi wapotsa.",
+    "lib.arcade.youSunk": "Wanyudza chikepe chemuvengi!",
+    "lib.arcade.youHit": "Warova!",
+    "lib.arcade.youMiss": "Wapotsa.",
+    "lib.arcade.shake": "Zunza",
+    "lib.arcade.clearBets": "Bvisa mabheti",
+    "lib.arcade.note.bau-cua": "Mari yekunyepedzera chete — hapana mari chaiyo. Sarudza kukosha kwemari, dzvanya mhuka kuti uise bheti, wozodzvanya «Zunza». Pakadhayisi rimwe nerimwe rinoenderana nemhuka yawaisa bheti, unodzorerwa mari yako uye unowedzerwa imwe yakaenzana. Svika pamari yekuenda mukati memaraundi akapiwa kuti upfuure mwero.",
+    "lib.arcade.note.baccarat": "Mari yekunyepedzera chete — hapana mari chaiyo. Isa bheti paMutambi, paBanker kana paTie, wozodzvanya «Govera». Kukosha kwezvikarata kunoreva nhamba yekupedzisira yekuwedzera (A = 1, 2–9 kukosha kwazvo, 10/J/Q/K = 0); ruoko runosvika padyo ne9 runokunda, uye kadhi rechitatu rinotorwa nemitemo yakajairwa. Mutambi anobhadharwa 1:1, Banker 0.95:1, Tie 8:1 (kana pakaenzana mabheti eMutambi/Banker anodzorerwa). Svika pamari yekuenda mukati memaraundi akapiwa kuti upfuure mwero.",
+    "lib.arcade.banker": "Banker",
+    "lib.arcade.player": "Mutambi",
+    "lib.arcade.tie": "Zvakaenzana",
+    "lib.arcade.openCards": "Vhura",
+    "lib.arcade.note.bai-cao": "Mari yekunyepedzera chete — hapana mari chaiyo. Divi rimwe nerimwe rinowana makadhi 3. Chibodzwa chinoverengwa nenhamba yekupedzisira yekuwedzera (A = 1, 2–9 kukosha kwazvo, 10/J/Q/K = 10 kureva 0 mapoinzi). Kurongeka: zvitatu zvakafanana («Sáp») ndizvo zvepamusoro, zvadzo zvitatu zvine mifananidzo («Ba tiên»), zvadzo mapoinzi 9 kusvika 0. Isa bheti, dzvanya «Govera» uye «Vhura» kuti udzorere neanogovera. Kubva pamwero 6 anogovera anokunda kana pakaenzana. Svika pamari yekuenda mukati memaraundi akapiwa kuti upfuure mwero.",
+    "lib.arcade.caoSap": "Zvitatu zvakafanana",
+    "lib.arcade.caoBaTien": "Makadhi matatu ane mifananidzo",
+    "lib.arcade.caoPts": "{n} mapoinzi",
+    "lib.arcade.note.bingo": "Komputa inodaidza nhamba kubva pa1 kusvika pa75. Kana nhamba yadaidzwa iri pakadhi rako, dzvanya kuti uiisire chiratidzo (bhokisi riri pakati ndere mahara). Zadzisa mutsetse, koramu kana diagonal wozodzvanya BINGO! — unofanira kukunda vavengi vekomputa. BINGO! isiri yechokwadi inovhara bhatani kwemasekonzi mashoma. Mamwero epamusoro anodaidza nekukurumidza uye ane vavengi vakawanda.",
+    "lib.arcade.opponentsN": "Vavengi: {n}",
+    "lib.arcade.falseBingo": "Hapasati pane mutsetse wakazara! Bhatani rakavharwa kwemasekonzi 3.",
+    "lib.arcade.bingoGo": "Nhamba dzirikudaidzwa!",
+    "lib.arcade.note.yahtzee": "Panguva imwe neimwe unokanda madhayisi 5 kusvika katatu: dzvanya dhayisi kuti ugare naro, wozodzvanya «Kanda» kuti ukande mamwe zvakare. Zvadaro sarudza bhokisi patafura kuti uise zvibodzwa (bhokisi rimwe nerimwe rinoshandiswa kamwe chete; bhokisi risingaenderani rinopa 0). Nguva dzose 13. Mabhokisi eImwe–Matanhatu anowedzera bhonasi ye35 kana akasvika pa63 kana kupfuura. Svika pachibodzwa chemwero kuti ukunde.",
+    "lib.arcade.turnN": "Nguva {n}/13",
+    "lib.arcade.pickCat": "Sarudza bhokisi rekuisa zvibodzwa",
+    "lib.arcade.rollsLeft": "Kanda ({n} dzasara)",
+    "lib.arcade.upperBonus": "Bhonasi yeImwe–Matanhatu",
+    "lib.arcade.scored": "Wawana {n}",
+    "lib.arcade.note.crazy-eights": "Tamba kadhi rinoenderana nekadhi riri pamusoro pechokuti chakakandwa nemhando kana nhamba. Eight dzinoshanda sechimwe chose: dzitambe chero nguva wosarudza mhando itsva. Kana usina kadhi rekutamba, tora pachoto (kusvika makadhi 3); kana uchiri kutadza kutamba, unopfuura. Anotanga kupedza makadhi anokunda. Mamwero epamusoro ane vavengi vakawanda uye komputa inotamba nehungwaru.",
+    "lib.arcade.opponent": "Muvengi",
+    "lib.arcade.pileLeft": "Choto chekutora: {n}",
+    "lib.arcade.pickSuit": "Sarudza mhando itsva",
+    "lib.arcade.aiSuit": "Komputa yasarudza {s}",
+    "lib.arcade.aiPass": "Komputa yapfuura.",
+    "lib.arcade.mustPlay": "Une kadhi rekutamba — ritambe.",
+    "lib.arcade.youPass": "Watora makadhi 3 wopfuura.",
+    "lib.arcade.bcGourd": "Mubayo",
+    "lib.arcade.bcCrab": "Chikara",
+    "lib.arcade.bcShrimp": "Shrimp",
+    "lib.arcade.bcFish": "Hove",
+    "lib.arcade.bcRooster": "Jongwe",
+    "lib.arcade.bcDeer": "Mhembwe",
+    "lib.arcade.yOnes": "Imwe",
+    "lib.arcade.yTwos": "Mbiri",
+    "lib.arcade.yThrees": "Nhatu",
+    "lib.arcade.yFours": "Ina",
+    "lib.arcade.yFives": "Shanu",
+    "lib.arcade.ySixes": "Tanhatu",
+    "lib.arcade.yThree": "Zvitatu zvakafanana",
+    "lib.arcade.yFour": "Zvina zvakafanana",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Mutsetse mudiki (30)",
+    "lib.arcade.yLarge": "Mutsetse mukuru (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Mukana",
+    "lib.arcade.note.race": "Dzvanya ← → (kana tinya nzira yaunoda) kuti shandura nzira uye ubude mumotokari dziri mberi. Une upenyu 3; famba kureba kwese kuti upfuure mwero. Mamwero epamusoro ane nzira dzakawanda uye mugwagwa unomhanya.",
+    "lib.arcade.note.jump": "Munhu anokwakuka pachake. Dzvanya ← → kana kudhonza munwe kuti umire pachikuva chinotevera. Zvikuva zvebhuruu zvinofamba, zvekofi zvinoputsika kana wamira. Kuwira kunze kweskrini kunokukundwa; kwira kumusoro zvakakwana kuti upfuure mwero.",
+    "lib.arcade.note.miner": "Hoko inozunguzika uye seri; dzvanya Space, ↓ kana tinya munda kuti uiburutse. Goridhe guru nematombo zvinorema uye zvinodhonzwa zvishoma; madhaimani anokosha zvikuru. Svika pamari yemwero hwemasekonzi 60 asati apera.",
+    "lib.arcade.note.slicer": "Dhonza munwe kana mausi pamichero kuti uicheke. Dzivisa mabhomba matema. Kupotsa muchero kana kucheka bhomba kunobvisa upenyu humwe (une 3). Cheka michero yakakwana kuti upfuure mwero.",
+    "lib.arcade.note.hoops": "Dzvanya pachikoro, dhonza pasi (sebhanzi) wozosunungura kuti utape bhora kuhoopu. Zvauchadhonza kure, ndizvo zvaricharova nesimba. Isa mabhasiketi akakwana mukati metsvakurudzo dzaunazvo; kubva pamwero 4 hoopu inofamba.",
+    "lib.arcade.note.bubbles": "Fambisa mausi kana munwe kuti utarise, wozodzvanya/kutinya kana Space/Tapa. Batanidza mabhubhu 3 kana kupfuura ekushanda kamwe kuti aputike; mabhubhu asisina rutsigiro anowira. Mitsetse inodzika zvishoma nezvishoma, saka ichengete kure nemutsetse wepasi. Bvisa mabhubhu ose kuti ukunde.",
+    "lib.arcade.note.chase": "Shandisa miseve (kana kudhonza / mabhatani) kuti utendeuke wodya madotsi ose mumaze uchidzivisa mweya inokudzinga. Une upenyu 3; mamwero epamusoro ane mweya yakawanda inomhanya uye inodzinga nehungwaru.",
+    "lib.arcade.height": "Kukwirira: {n}/{t} m",
+    "lib.arcade.money": "Mari: {n}/{t}",
+    "lib.arcade.sliced": "Dzakachekwa: {n}/{t}",
+    "lib.arcade.hoopScore": "Zvibodzwa: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} kuedza kwasara",
+    "lib.arcade.bubbleLeft": "{n} mabhubhu asara",
+    "lib.arcade.shotsN": "Kuedza: {n}",
+    "lib.arcade.dotsLeft": "{n} madotsi asara",
+    "lib.arcade.note.kakuro": "Zadza mabhokisi machena nenhamba 1–9 kuti mutsetse mumwe nemumwe uwedzere kusvika pachiratidzo chiri mubhokisi dema (nhamba iri kumusoro kurudyi ndeyemutsetse unoenda kurudyi, iri kuruboshwe pasi ndeyemutsetse unoenda pasi), pasina nhamba inodzokororwa mumutsetse mumwe. Shandisa miseve kufamba.",
+    "lib.arcade.note.kenken": "Zadza girid nenhamba kubva pa1 kusvika paN kuti pasave nenhamba inodzokororwa murow kana koramu. Boka rimwe nerimwe rakakomberedzwa nemutsetse mukobvu rinoratidza chinangwa nemashandiro (+, −, ×, ÷): nhamba dziri muboka dzinofanira kupa mhedzisiro iyoyo. Shandisa miseve kufamba.",
+    "lib.arcade.note.wordGuess": "Fungidzira izwi rakavanzika reChirungu. Mushure mekuedza kumwe nekumwe, girinhi zvinoreva tsamba chaiyo panzvimbo chaiyo, yero zvinoreva tsamba iri muizwi asi kune imwe nzvimbo, grey zvinoreva kuti haisipo muizwi. Nyora pakhibhodhi kana shandisa makiyi eskrini, wodzvanya Enter kutumira. Mamwero epamusoro ane mazwi marefu uye kuedza kushoma.",
+    "lib.arcade.note.hangman": "Fungidzira izwi rakavanzika reChirungu nekusarudza mavara imwe nimwe. Vara rimwe nerimwe risiri rechokwadi rinowedzera chikamu pamufananidzo wakanyungurudzwa; kana kufungidzira kwakaipa kwapera unokundwa. Mamwero epamusoro ane mazwi marefu uye kufungidzira kwakaipa kushoma.",
+    "lib.arcade.note.scramble": "Ronga mavara akavhiringidzwa kuita izwi chairo reChirungu uye uriinge mubhokisi rekupindura. Mwero mumwe nemumwe une mazwi 5; gadzirisa anenge 4 izwi rimwe nerimwe risati rapedza nguva kuti upfuure mwero. Rubatsiro runoratidza tsamba yekutanga.",
+    "lib.arcade.cellsLeft": "{n} mabhokisi asina chinhu asara",
+    "lib.arcade.wrongN": "{n} mabhokisi haasi akarurama.",
+    "lib.arcade.noError": "Hapana kukanganisa kwawanikwa kusvika zvino.",
+    "lib.arcade.tooShort": "Mavara haakwani",
+    "lib.arcade.answerIs": "Mhinduro: {w}",
+    "lib.arcade.livesLeft": "{n} kufungidzira kwakaipa kwasara",
+    "lib.arcade.yourAnswer": "Mhinduro yako",
+    "lib.arcade.skip": "Siya",
+    "lib.arcade.notThis": "Hazvina kururama, edza zvakare.",
+    "lib.arcade.startsWith": "Tsamba yekutanga: {c}",
+    "lib.arcade.note.domino": "Mutambi mumwe nemumwe anowana zvidimbu 7; ane double yepamusoro ndiye anotanga. Tamba chidimbu chine nhamba inoenderana nemugumo mumwe wetambo. Kana usingakwanisi kutamba, tora muhwanda kusvikira wakwanisa; kana pasina chinhu, pfuura. Anotanga kupedza zvidimbu anokunda; kana vose vakavharirwa, ane mapoinzi mashoma anokunda.",
+    "lib.arcade.note.hearts": "Vatambi vana, makadhi 13 mumwe nemumwe. 2 yeclubs inotanga. Unofanira kutevera mhando yakatanga kana ukakwanisa. Moyo wese i1 poinzi uye Mambokadzi weSpades ndi13; anokunda trick anotora mapoinzi ayo. Shoma ndiro zvakanaka, uye kutora mapoinzi ose 26 kunopa vamwe vese 26. Haukwanisi kutanga nemoyo kusvikira mumwe watambwa. Mushure meruoko rwekupedzisira, unokunda kana chibodzwa chako chiri chidiki (kana kuenzana nechidiki).",
+    "lib.arcade.note.holdem": "Musiyano wega nekomputa uchishandisa machipisi ekunyepedzera chete. Mutambi mumwe nemumwe anowana makadhi 2 akavanzika uye makadhi 5 akajairwa anovhurwa (flop, turn, river); gadzira ruoko rwakanakisa rwemakadhi 5. Paraundi rimwe nerimwe unogona kufold, kukoka (kana check) kana raise. Mablinds anokwira mushure meruoko rwese rune 4. Unokunda kana komputa yapedza machipisi, kana une machipisi mazhinji mushure mehuwandu hwemaoko. Hapana mari chaiyo inobatanidzwa.",
+    "lib.arcade.dmDraw": "Tora chidimbu",
+    "lib.arcade.dmPass": "Pfuura",
+    "lib.arcade.dmEmpty": "Hapasati pane zvidimbu zvatambwa",
+    "lib.arcade.dmYard": "Muhwanda: {n} zvidimbu",
+    "lib.arcade.dmLeft": "Mugumo wekuruboshwe",
+    "lib.arcade.dmRight": "Mugumo wekurudyi",
+    "lib.arcade.dmTie": "Zvakaenzana! Mativi ose akaenzana.",
+    "lib.arcade.hrHand": "Ruoko {n}/{t}",
+    "lib.arcade.hrTook": "{p} akunda trick ({n} mapoinzi).",
+    "lib.arcade.hrIllegal": "Haukwanisi kutamba kadhi iri (tevera mhando, kana moyo usati wabvumirwa kutanga).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Poto: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise kusvika",
+    "lib.arcade.raiseN": "Raise kusvika {n}",
+    "lib.arcade.thOppFold": "Komputa yafold; wakunda ruoko urwu.",
+    "lib.arcade.thYouFold": "Wafold.",
+    "lib.arcade.thOppWin": "Komputa yakunda ruoko urwu",
+    "lib.arcade.thYouWin": "Wakunda ruoko urwu",
+    "lib.arcade.thSplit": "Poto yakaganhurwa",
+    "lib.arcade.thAiFold": "Komputa yafold.",
+    "lib.arcade.thAiRaise": "Komputa yaraise kusvika {n}.",
+    "lib.arcade.thAiCall": "Komputa yacall / check.",
+    "lib.arcade.hand.high": "Kadhi repamusoro",
+    "lib.arcade.hand.pair": "Tsvaira",
+    "lib.arcade.hand.twoPair": "Matsvaira maviri",
+    "lib.arcade.hand.trips": "Zvitatu zvakafanana",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Zvina zvakafanana",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Sikweya inenge ichiwedzera kuvhenekera imwe nimwe pagirid ye3x3. Dzvanya «Zvakaenzana!» (kana Space) kana nzvimbo yavhenekera yakafanana neyakaita matanho N apfuura (N inoratidzwa kumusoro). Unoda sarudzo dzakarurama dzinosvika 80% kuti upfuure mwero. Mamwero epamusoro anoshandisa N yakakura.",
+    "lib.arcade.nbMatch": "Zvakaenzana!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Zvakarurama: {a} · Zvisina kururama: {b}",
+    "lib.arcade.nbAcc": "Kururama: {n}%",
+    "lib.arcade.note.clicker": "Dzvanya kuki kuti ubike makuki, wozoashandisa kutenga vabatsiri vanobika pachavo (mitengo inokwira nekutenga kumwe nekumwe). Bika huwandu hwemakuki hwemwero mukati memaminitsi 2 kuti upfuure mwero.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Ambuya vanobika",
+    "lib.arcade.ckFarm": "Purazi",
+    "lib.arcade.ckMine": "Mugodhi weshuga",
+    "lib.arcade.ckFactory": "Fekitori",
+    "lib.arcade.ckCookie": "Kuki",
+    "lib.arcade.ckEarned": "Zvabikwa: {n}/{t}",
+    "lib.arcade.chips2": "Makuki: {n}",
+    "lib.arcade.ckCps": "{n} makuki/sekonzi",
+    "lib.arcade.note.onet": "Sarudza matailzi maviri akafanana anogona kubatanidzwa nenzira ine mativi asingapfuuri 2 isingayambuki matailzi mamwe kuti uabvise. Bvisa matailzi ose nguva isati yapera kuti ukunde. Kana pasisina matanho, unogona kuvhenganisa (kakawanda kakaganhurirwa).",
+    "lib.arcade.shuffle": "Vhenganisa",
+    "lib.arcade.tilesLeft": "{n} matailzi asara",
+    "lib.arcade.autoShuffle": "Hapachina matanho — zvavhenganiswa pachezvazvo.",
+    "lib.arcade.note.jigsaw": "Mufananidzo wakagurwa zvikamu uye wakavhenganiswa. Tinya chikamu chimwe, wozotinya chimwe kuti uchinjane nzvimbo, uye wovaka zvakare mufananidzo uri kuratidzwa sereferensi. Zvikamu zviri panzvimbo chaiyo zvinowana muganhu wegirinhi. Mamwero epamusoro ane zvikamu zvakawanda.",
+    "lib.arcade.jgRef": "Mufananidzo wereferensi",
+    "lib.arcade.jgPlaced": "Panzvimbo: {a}/{b}",
+    "lib.arcade.golfStrokes": "Kurova: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Unotamba zvidimbu zvichena, uchifamba kubva kumusoro kurudyi uchidzika kuenda kupasi kurudyi (kumba kwako). Kanda madhayisi, dzvanya chidimbu chaunoda kufambisa, wozodzvanya nzvimbo yakajeka yekuenda. Kumira panzvimbo ine chidimbu chimwe chete chemuvengi kunochirova kuenda kubhawa riri pakati, uye mutambi iyeye anofanira kuchidzorera kutanga. Haukwanisi kumira panzvimbo ine zvidimbu zviviri kana kupfuura zvemuvengi. Kana zvidimbu zvako zvese 15 zviri kumba (nzvimbo 6 dzekupedzisira) unogona kuzvibvisa. Anotanga kubvisa zvese 15 anokunda.",
+    "lib.arcade.bgRoll": "Kanda madhayisi",
+    "lib.arcade.bgOff": "Bvisa",
+    "lib.arcade.bgRollFirst": "Kanda madhayisi",
+    "lib.arcade.bgInfo": "Zvabviswa: iwe {a} · komputa {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Hauchina danho rakatenderwa.",
+    "lib.arcade.note.tienlen": "Vatambi vana, makadhi 13 mumwe nemumwe. Kurongeka kwemakadhi kubva pazasi kuenda kumusoro: 3, 4, … K, A, 2; mhando kubva pazasi: spades, clubs, diamonds, hearts. Ane 3 yespades ndiye anotanga. Tamba kadhi rimwe, tsvaira, zvitatu zvakafanana, zvina zvakafanana, kana mutsetse wemakadhi 3 kana kupfuura anotevedzana (pasina 2). Mutambi anotevera anofanira kutamba rudzi rwakafanana rwepamusoro kana kupfuura; zvina zvakafanana zvinokunda 2 imwe kana tsvaira ye2. Kana vamwe vese vapfuura, mutambi wekupedzisira anogona kutanga chero chinhu. Anotanga kupedza makadhi anokunda. Sarudza makadhi wozodzvanya «Tamba».",
+    "lib.arcade.tlPlay": "Tamba",
+    "lib.arcade.tlPass": "Pfuura",
+    "lib.arcade.tlClear": "Bvisa sarudzo",
+    "lib.arcade.tlPassed": "apfuura",
+    "lib.arcade.tlFree": "Tafura haina chinhu — unogona kutanga chero chinhu",
+    "lib.arcade.tlLeft": "Makadhi asara: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} apfuura.",
+    "lib.arcade.tlBad": "Makadhi asarudzwa haaite seti yakarurama.",
+    "lib.arcade.tlLow": "Seti iyi haina kukwira zvakakwana kukunda iri patafura."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Bvunzo Yekukurumidza Kupindura",
       "desc": "Dzvanya panguva iyo skrini inova yegirinhi; avhareji yako yemaraundi 5 inofanira kusangana nemuganhu wechikamu chega chega, unoomarara pazvikamu 10."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Dyara mbeu pamagomba, tora mbeu dzemuvengi uye utambe zvakare kana wawira munzvimbo yako yekuchengeta; tamba nekomputa pamamwero 10 kubva pakureruka kusvika pakuoma."
+    },
+    "snakes-ladders": {
+      "name": "Nyoka neMateru",
+      "desc": "Kanda dhayisi kubva panzvimbo 1 kusvika pa100, kwira materu, dzivisa nyoka uye usvike kumagumo vavengi vako vasati vasvika; mamwero 10."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Isa, sununguka uye bhururuka nezvidimbu zvako kuti uite zvitatu pamutsetse mumwe uye ubvise zvidimbu zvemuvengi; tamba nekomputa pamamwero 10."
+    },
+    "battleship": {
+      "name": "Battleship",
+      "desc": "Tsvaga uye unyudze zvikepe zvekomputa pagirid ye10x10 isati yanyudza zvako; mamwero 10 apo komputa inofungidzira nehungwaru."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Mubayo Chikara Hove Shrimp)",
+      "desc": "Mutambo wedhayisi wechivanhu wechiVietnam: isa mabheti emari yekunyepedzera pamhuka wozozunza madhayisi matatu; svika pamari yekuenda pamamwero 10 (hapana mari chaiyo)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Isa bheti paMutambi, paBanker kana paTie nemakadhi anogoverwa nemitemo yakajairwa, uchishandisa mari yekunyepedzera; svika pamari yekuenda pamamwero 10 (hapana mari chaiyo)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Mutambo wemakadhi matatu)",
+      "desc": "Fananidza maoko emakadhi 3 neanogovera: zvitatu zvakafanana, makadhi matatu ane mifananidzo, wozoita mapoinzi 9 kusvika 0; mari yekunyepedzera, mamwero 10, hapana mari chaiyo."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Isa chiratidzo panhamba dzinodaidzwa pakadhi rako re5x5 uye udaidze BINGO vavengi vekomputa vasati vadaidza; nhamba dzinodaidzwa nekukurumidza pamamwero 10."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Madhayisi mashanu)",
+      "desc": "Kanda madhayisi mashanu, chengeta akanaka uye uzadze mabhokisi 13 ezvibodzwa; svika pachibodzwa chemwero pamamwero 10."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Enderanisa mhando kana nhamba, eight dzinochinja mhando; pedza makadhi ako vavengi vekomputa 1 kusvika 3 vasati vapedza pamamwero 10."
+    },
+    "car-race": {
+      "name": "Car Race Dodge",
+      "desc": "Chinja nzira kuti udzivise motokari dziri mberi uye ufambe kureba kwese; mamwero 10 ane nzira dzakawanda nemugwagwa unomhanya."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Kwakuka kubva pachikuva kuenda kuchimwe kuti ukwire kumusoro sezvaunogona usingawiri; mamwero 10 ane zvikuva zvishoma, zvinofamba nezvinoputsika."
+    },
+    "gold-miner": {
+      "name": "Gold Miner",
+      "desc": "Dzikisa hoko kuti udhonze goridhe nemadhaimani, dzivisa matombo anorema, uye usvike pamari yemwero mukati memasekonzi 60; mamwero 10."
+    },
+    "fruit-slice": {
+      "name": "Fruit Slice",
+      "desc": "Dhonza kuti ucheke michero inobhururuka uye udzivise mabhomba; mamwero 10 ane michero nemabhomba akawanda."
+    },
+    "basketball": {
+      "name": "Basketball Shoot",
+      "desc": "Dhonza woisunungura kuti utape bhora muhoopu mukati mehuwandu hwakaganhurirwa hwekuedza; mamwero 10, hoopu inofamba kubva pamwero 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Tapa mabhubhu kuti ubatanidze 3 kana kupfuura emavara akafanana uaputike, uye uabvise ose asati asvika pasi; mamwero 10 ane mavara akawanda."
+    },
+    "dot-chase": {
+      "name": "Dot Chase",
+      "desc": "Dya madotsi ose mumaze uchidzivisa mweya inokudzinga; mamwero 10 ane mweya yakawanda uye ine hungwaru."
+    },
+    "kakuro": {
+      "name": "Kakuro (Cross Sums)",
+      "desc": "Zadza mabhokisi machena nenhamba 1–9 kuti mutsetse mumwe nemumwe uwedzere kusvika pachiratidzo pasina kudzokororwa; mamwero 10, magirid kubva pa5x5 kusvika pa9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Zadza girid pasina kudzokororwa mumarow kana makoramu kuti boka rimwe nerimwe rizvipe chinangwa nemashandiro aro; mamwero 10, magirid kubva pa3x3 kusvika pa6x6."
+    },
+    "word-guess": {
+      "name": "Word Guess (yakaita seWordle)",
+      "desc": "Fungidzira izwi rakavanzika reChirungu nezviratidzo zvegirinhi, yero negrey; mamwero 10 ane mazwi emavara 4–6 uye kuedza kushoma."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Fungidzira izwi reChirungu vara rimwe nerimwe kusati kwapera kufungidzira kwakaipa; mamwero 10 ane mazwi marefu uye kufungidzira kwakaipa kushoma."
+    },
+    "word-scramble": {
+      "name": "Word Scramble (Anagram)",
+      "desc": "Ronga mavara akavhenganiswa kuita izwi reChirungu nguva isati yapera; mamwero 10, mazwi 5 pamwero."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Enderanisa zvidimbu kumigumo yetambo uye upedze zvidimbu zvako komputa isati yapedza; mamwero 10 apo komputa inowedzera hungwaru."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Dzivisa moyo uye Mambokadzi weSpades mumutambo wemakadhi wevatambi vana; chibodzwa chidiki ndicho chakanaka; mamwero 10 pamusoro pevatambi vekomputa vane hungwaru."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (machipisi ekunyepedzera)",
+      "desc": "Poker yemunhu mumwe nekomputa nemachipisi ekunyepedzera: fold, call kana raise, uye ukunde kana komputa yapedza machipisi; mamwero 10, hapana mari chaiyo."
+    },
+    "n-back": {
+      "name": "N-Back Memory",
+      "desc": "Tarisa sikweya yavhenekera uye udzvanye Zvakaenzana kana yakafanana neyakaita matanho N apfuura; mamwero 10 ane N kusvika pa4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Dzvanya kuti ubike makuki, tenga vabatsiri vanobika pachavo uye usvike pachinangwa mukati memaminitsi 2; mamwero 10."
+    },
+    "tile-connect": {
+      "name": "Tile Connect (yakaita seOnet)",
+      "desc": "Batanidza matailzi akafanana nenzira ine mativi asingapfuuri maviri uye ubvise bhodhi nguva isati yapera; mamwero 10, mabhodhi makuru."
+    },
+    "jigsaw": {
+      "name": "Picture Jigsaw",
+      "desc": "Chinjana zvikamu zvakavhenganiswa kuti uvake zvakare mufananidzo; mamwero 10 kubva pa3x3 kusvika pa6x6 zvikamu."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Dhonza shure woisunungura kuti utape bhora muburi mukati mehuwandu hwekurova; makosi 10 ane madziro nejecha."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Kanda madhayisi, mhanya nezvidimbu zvako kumba uye uzvibvise komputa isati yabvisa, uchirova zvidimbu zvayo zvega munzira; mamwero 10."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Gumi nematatu)",
+      "desc": "Mutambo wemakadhi wechiVietnam wevana: tamba kamwe, matsvaira, mitsetse nezvina zvakafanana kuti upedze makadhi ako kutanga; mamwero 10."
     }
   },
   "s": {

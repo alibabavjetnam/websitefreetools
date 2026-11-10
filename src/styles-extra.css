@@ -1846,3 +1846,7 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .jg-pc.sel circle { stroke-width: 5; stroke: #22a022; }
 .jg-dot { fill: rgba(34,139,34,.7); pointer-events: none; }
 .jg-dot.cap { fill: none; stroke: rgba(220,40,40,.85); stroke-width: 4; }
+
+/* Cribbage */
+.cb-board .cd.cb-dim { filter: brightness(.7); }
+.cb-parts { margin: 0; padding-inline-start: 18px; color: #fff; font-size: 14px; }

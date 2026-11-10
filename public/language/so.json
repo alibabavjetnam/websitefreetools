@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Boodo",
     "lib.arcade.aimTarget": "Bartilmaameed",
     "lib.game.soundOn": "Daar codka",
-    "lib.game.soundOff": "Ka demi codka"
+    "lib.game.soundOff": "Ka demi codka",
+    "lib.arcade.note.kalah": "Adigu waxaad ciyaartaa safka hoose, kombiyuutarku safka sare; god weyn ee midigta ah waa bakhaarkaaga. Guji god si aad u qaadato dhammaan abuurka oo aad ugu firdhiso wada jeedka saacadda ka soo horjeeda, mid god kasta; ka bood bakhaarka kuwa kula ciyaaraya. Haddii abuurka ugu dambeeya uu ku dhaco bakhaarkaaga, mar kale ayaad ciyaaraysaa; haddii uu ku dhaco god madhan oo dhinaccaaga ah oo ka soo horjeeda god leh abuur, waad qabsataa abuurkaas. Marka hal dhinac dhammaado, abuurka dhinaca kale waxa uu aadaa bakhaarka mulkiilihiisa; bakhaarka weyn ayaa guuleysta.",
+    "lib.arcade.note.snakes": "Tuur dhiceeda oo u dhaaf tiro isku mid ah sida soo baxday, 1 ilaa 100. Haddii aad ku degto salka jaranjarada waad fuuleysaa, haddii aad ku degto madaxa abeesada waad sii dhacaysaa. Heerka 4 ka bilaabma waxaad u baahan tahay lambar sax ah si aad ugu degto 100. Heerarka sare waxay leeyihiin abeeso badan, jaranjaro yar iyo kuwa kula ciyaaraya badan. Ku soo gaadha 100 marka hore si aad u guuleysato.",
+    "lib.arcade.square": "Fadhi {n}",
+    "lib.arcade.ladderUp": "Jaranjarada fuul!",
+    "lib.arcade.snakeDown": "Abeesada ayaa liqday!",
+    "lib.arcade.needExact": "Waxaad u baahan tahay lambar sax ah si aad ugu degto 100.",
+    "lib.arcade.note.nmm": "Dhinac kasta wuxuu leeyahay 9 xabbadood. Heerka 1: is-beddelo oo xabbado dhig meelo madhan. Heerka 2: xabbad u rid meel madhan oo ku xigta. Marka ay hadhaan 3 xabbadood oo kaliya, waad «duuli» kartaa meel madhan kasta. Samee saddex xariiq ah («mill») si aad u saarto xabbad ka tirsan cadowga (kuwa aan ku jirin mill marka hore). Waad lumisaa marka ay ku hadhaan 2 xabbadood ama aadan dhaqaaqi karin. Adigu waad cad ciyaartaa oo waad bilaabaysaa.",
+    "lib.arcade.inHand": "Lagu dhigayo: {a} · {b}",
+    "lib.arcade.removePiece": "Dooro xabbad ka tirsan cadowga si aad u saarto.",
+    "lib.arcade.enemyWaters": "Biyaha cadowga (guji si aad u rido)",
+    "lib.arcade.yourFleet": "Maraakiibtaada",
+    "lib.arcade.note.battleship": "Dhinac kasta wuxuu leeyahay 5 markab (dhererka 5, 4, 3, 3, 2) oo si aan habaysnayn loogu dhigay shabakad 10x10. Is-beddelo oo rid sanduuq: dhacdo waxay noqotaa casaan, hoos u dhac waxay noqotaa buluug khafiif ah, markaad dhammaan sanduuqyada markab ku dhacdo wuu quusaa. Quus dhammaan maraakiibta cadowga marka hore si aad u guuleysato. Heerarka sare kombiyuutarku wuxuu si caqli leh u qiyaasaa meelaha maraakiibtaada.",
+    "lib.arcade.shipsLeft": "Maraakiib hadhay: adiga {a} · cadowga {b}",
+    "lib.arcade.theySunk": "Cadowgu wuxuu quusiyay mid ka mid ah maraakiibtaada!",
+    "lib.arcade.theyHit": "Cadowgu wuxuu ku dhacay mid ka mid ah maraakiibtaada.",
+    "lib.arcade.theyMiss": "Cadowgu wuu ka lumay.",
+    "lib.arcade.youSunk": "Waxaad quusisay markabka cadowga!",
+    "lib.arcade.youHit": "Waad dhacday!",
+    "lib.arcade.youMiss": "Waad ka lumday.",
+    "lib.arcade.shake": "Ruxruxo",
+    "lib.arcade.clearBets": "Nadiifi sharafaha",
+    "lib.arcade.note.bau-cua": "Qadaadiic been abuur ah oo keliya — lacag dhab ah ma aha. Dooro qiimaha qadaadiicda, guji xayawaanka si aad shaqo u dhigto, ka dibna taabo «Ruxruxo». Dhice kasta oo ku habboon xayawaanka aad ku sharaxday, waxaad dib u hesha sharaxaaga oo lagu daro isla tiro. Gaadh qadaadiicda bartilmaameedka ee wareegyada la ogolyahay si aad heerka u dhammaysato.",
+    "lib.arcade.note.baccarat": "Qadaadiic been abuur ah oo keliya — lacag dhab ah ma aha. Ku shar Ciyaaryahanka, Bangiga ama Barbar, ka dibna taabo «Qaybi». Qiimaha gacanta waa lambarka u dambeeya ee wadarta (A = 1, 2–9 qiimahooda, 10/J/Q/K = 0); gacanta 9-ka ugu dhow ayaa guuleysata, kaarka saddexaadna waxaa la qaadaa sida xeerarka caadiga ah. Ciyaaryahanku wuxuu bixiyaa 1:1, Bangiga 0.95:1, Barbar 8:1 (haddii barbar noqoto sharaxyada Ciyaaryahanka/Bangiga waa la celiyaa). Gaadh qadaadiicda bartilmaameedka ee wareegyada la ogolyahay si aad heerka u dhammaysato.",
+    "lib.arcade.banker": "Bangiga",
+    "lib.arcade.player": "Ciyaaryahan",
+    "lib.arcade.tie": "Barbar",
+    "lib.arcade.openCards": "Fur",
+    "lib.arcade.note.bai-cao": "Qadaadiic been abuur ah oo keliya — lacag dhab ah ma aha. Dhinac kasta wuxuu helaa 3 kaar. Dhibcaha gacanta waa lambarka u dambeeya ee wadarta (A = 1, 2–9 qiimahooda, 10/J/Q/K = 10 oo ah 0 dhibic). Darajada: saddex isku mid («Sáp») ayaa ugu sarreeya, ka dibna saddex kaar sawir leh («Ba tiên»), ka dibna 9 dhibic ilaa 0. Shar, taabo «Qaybi» ka dibna «Fur» si aad ugu barbar dhigto qaybiyaha. Heerka 6 ka bilaabma qaybiyuhu wuxuu guuleystaa marka barbar yahay. Gaadh qadaadiicda bartilmaameedka ee wareegyada la ogolyahay si aad heerka u dhammaysato.",
+    "lib.arcade.caoSap": "Saddex isku mid",
+    "lib.arcade.caoBaTien": "Saddex kaar sawir leh",
+    "lib.arcade.caoPts": "{n} dhibic",
+    "lib.arcade.note.bingo": "Kombiyuutarku wuxuu wacaa tirooyin ka bilaabma 1 ilaa 75. Marka tirada la waco ay ku jirto kaarkaaga, guji si aad u calaamadiso (sanduuqa dhexe waa bilaash). Buuxi saf, tiir ama xariiq jiif ah ka dibna taabo BINGO! — waa inaad garaacdaa kuwa kombiyuutarka ah. BINGO! been ah wuxuu xirayaa badhanka dhowr ilbiriqsi. Heerarka sare si degdeg ah ayay u wacaan oo waxay leeyihiin kuwa kula ciyaaraya badan.",
+    "lib.arcade.opponentsN": "Kuwa kula ciyaaraya: {n}",
+    "lib.arcade.falseBingo": "Wali ma jiro xariiq buuxa! Badhanka waa la xiray 3 ilbiriqsi.",
+    "lib.arcade.bingoGo": "Tirooyinka waa la wacayaa!",
+    "lib.arcade.note.yahtzee": "Mar kasta waxaad tuurtaa 5 dhiceed ilaa 3 jeer: guji dhicee si aad u hayso, ka dibna taabo «Tuur» si aad dib ugu tuurto kuwa kale. Kadib dooro sanduuq miiska ku jira si aad dhibcaha ugu qorto (sanduuq kasta mar keliya ayaa la isticmaalaa; sanduuqa aan ku habboonayn wuxuu siiyaa 0). 13 mar. Sanduuqyada Kow–Lix waxay ku daraan 35 abaal-marin haddii wadartoodu tahay 63 ama ka badan. Gaadh dhibcaha bartilmaameedka heerka si aad u guuleysato.",
+    "lib.arcade.turnN": "Mar {n}/13",
+    "lib.arcade.pickCat": "Dooro sanduuq dhibcaha",
+    "lib.arcade.rollsLeft": "Tuur ({n} hadhay)",
+    "lib.arcade.upperBonus": "Abaal-marinta Kow–Lix",
+    "lib.arcade.scored": "Waxaad heshay {n}",
+    "lib.arcade.note.crazy-eights": "Ciyaar kaar ku habboon kaarka sare ee kumbuhu ku dhaafay midab ama darajo ahaan. Siddeedka waa kuwo bilaash ah: ciyaar mar kasta oo dooro midab cusub. Haddii aadan haysan kaar la ciyaari karo, ka qaado kumbuhu (ilaa 3 kaar); haddii aad weli ciyaari kari weydo, waad dhaafaysaa. Ka horeeya madhanaynta gacantiisa ayaa guuleysta. Heerarka sare waxay leeyihiin kuwa kula ciyaaraya badan oo kombiyuutarku si caqli badan ayuu u ciyaaraa.",
+    "lib.arcade.opponent": "La ciyaaraha",
+    "lib.arcade.pileLeft": "Kumbo qaadasho: {n}",
+    "lib.arcade.pickSuit": "Dooro midab cusub",
+    "lib.arcade.aiSuit": "Kombiyuutarku wuxuu doortay {s}",
+    "lib.arcade.aiPass": "Kombiyuutarku wuu dhaafay.",
+    "lib.arcade.mustPlay": "Waxaad haysataa kaar la ciyaari karo — ciyaar.",
+    "lib.arcade.youPass": "Waxaad qaadatay 3 kaar oo waad dhaaftay.",
+    "lib.arcade.bcGourd": "Qare",
+    "lib.arcade.bcCrab": "Dhuxul-dhiig",
+    "lib.arcade.bcShrimp": "Yaaqo",
+    "lib.arcade.bcFish": "Kalluun",
+    "lib.arcade.bcRooster": "Diiq",
+    "lib.arcade.bcDeer": "Deero",
+    "lib.arcade.yOnes": "Kow",
+    "lib.arcade.yTwos": "Labo",
+    "lib.arcade.yThrees": "Saddex",
+    "lib.arcade.yFours": "Afar",
+    "lib.arcade.yFives": "Shan",
+    "lib.arcade.ySixes": "Lix",
+    "lib.arcade.yThree": "Saddex isku mid",
+    "lib.arcade.yFour": "Afar isku mid",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Safka yar (30)",
+    "lib.arcade.yLarge": "Safka weyn (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Fursad",
+    "lib.arcade.note.race": "Taabo ← → (ama taabo jidka aad rabto) si aad jidka u beddesho oo aad uga fogaato gawaarida hore. Waxaad haysataa 3 nolol; wad masaafada oo dhan si aad heerka u dhammaysato. Heerarka sare waxay ku daraan jidad iyo taraafikada oo ka dhaqso badan.",
+    "lib.arcade.note.jump": "Jilaagu naftiisa ayuu boodaa. Taabo ← → ama jiid far si aad ugu degto madal xigta. Madalada buluugga ah way dhaqaaqaan, kuwa bunniga ah way jabaan marka lagu degto. Ka dhacida shaashadda waa guuldarro; fuul sare oo ku filan si aad heerka u dhammaysato.",
+    "lib.arcade.note.miner": "Qabsadaha wuu dhaqaaqaa hore iyo gadaal; taabo Space, ↓ ama taabo goobta si aad u dejiso. Dahabka weyn iyo dhagaxyada way culculus yihiin oo si tartiib ah ayaa loo jiidaa; dheemanku wuxuu leeyahay qiimo weyn. Gaadh lacagta bartilmaameedka ka hor inta aysan dhammaan 60 ilbiriqsi.",
+    "lib.arcade.note.slicer": "Far ama jiid mouse miraha dushiisa si aad u jarto. Ka fogow bambooyinka madow. Ka lumista miro ama jarista bambo waxay qaadataa nolol (waxaad haysataa 3). Jar miro ku filan si aad heerka u dhammaysato.",
+    "lib.arcade.note.hoops": "Taabo garoonka, hoos u jiid (sida xabbad-tuur) oo sii daa si aad kubbadda ugu tuurto giraanta. Marka aad sii jiiddo way sii xoog badan tahay. Dhig kubbado ku filan isku dayada aad leedahay dhexdooda; heerka 4 ka bilaabma giraanku wuu dhaqaaqaa.",
+    "lib.arcade.note.bubbles": "Dhaqaaji mouse ama far si aad u beegsato, ka dibna guji/taabo ama taabo Space/Rid. Ku xidh 3 ama ka badan oo xumbo ah oo midab isku ah si ay u dillaacaan; xumbaha lumiya taageerada way dhacaan. Safafku si tartiib ah ayay hoos ugu soo dhaqaaqaan, sidaas darteed ka fogeey xariiqda hoose. Nadiifi dhammaan xumbaha si aad u guuleysato.",
+    "lib.arcade.note.chase": "Isticmaal furayaasha fallaadhaha (ama jiid / badhamada) si aad u leexato oo aad u cuntid dhammaan dhibcaha jiirka ku jira adigoo ka fogaanaya jinniyada ku eryanaya. Waxaad haysataa 3 nolol; heerarka sare waxay leeyihiin jinniyo badan oo dhakhso badan oo si caqli leh u eryanaya.",
+    "lib.arcade.height": "Dherer: {n}/{t} m",
+    "lib.arcade.money": "Lacag: {n}/{t}",
+    "lib.arcade.sliced": "La jaray: {n}/{t}",
+    "lib.arcade.hoopScore": "La dhigay: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} isku day ayaa hadhay",
+    "lib.arcade.bubbleLeft": "{n} xumbo ayaa hadhay",
+    "lib.arcade.shotsN": "Isku dayo: {n}",
+    "lib.arcade.dotsLeft": "{n} dhibcood ayaa hadhay",
+    "lib.arcade.note.kakuro": "Ku buuxi sanduuqyada cad tirooyinka 1–9 si safaf kasta wadarta uu u noqdo tilmaanta ku jirta sanduuqa madow (tirada midig-sare waa safka midigta u socda, tan bidix-hoose waa safka hoos u socda), iyadoo aan tiro lagu celin saf isku mid ah. Isticmaal furayaasha fallaadhaha si aad u dhaqaaqdo.",
+    "lib.arcade.note.kenken": "Ku buuxi shabakada tirooyinka 1 ilaa N si aanay tiro uga soo noqon saf ama tiir kasta. Koox kasta oo leh xariiq adag waxay muujisaa bartilmaame iyo hawlgal (+, −, ×, ÷): tirooyinka kooxda waa inay bixiyaan natiijadaas. Isticmaal furayaasha fallaadhaha si aad u dhaqaaqdo.",
+    "lib.arcade.note.wordGuess": "Qiyaas ereyga Ingiriisiga ah ee qarsoon. Isku day kasta kadib, cagaar waxay ka dhigan tahay xarafka saxda ah meesha saxda ah, huruud waxay ka dhigan tahay xarafka ereyga ku jira laakiin meel kale, boodh waxay ka dhigan tahay inaanu ereyga ku jirin. Ku qor kiiboodhka ama isticmaal furayaasha shaashadda, oo taabo Enter si aad u gudbiso. Heerarka sare waxay leeyihiin erayo dhaadheer iyo isku dayo yar.",
+    "lib.arcade.note.hangman": "Qiyaas ereyga Ingiriisiga ah ee qarsoon adigoo dooranaya xarfo mid mid ah. Xaraf khaldan kasta wuxuu ku daraa qayb sawirka la sudhay; marka qiyaasaha khaldan dhammaadaan waad lumisaa. Heerarka sare waxay leeyihiin erayo dhaadheer iyo qiyaaso khaldan oo la ogolyahay oo yar.",
+    "lib.arcade.note.scramble": "U habee xarfaha isku dhafan eray Ingiriisi ah oo run ah oo ku qor sanduuqa jawaabta. Heer kasta wuxuu leeyahay 5 eray; xal ugu yaraan 4 ka hor inta aan wakhtiga eray kasta dhammaan si aad heerka u dhammaysato. Tilmaantu waxay muujisaa xarafka ugu horreeya.",
+    "lib.arcade.cellsLeft": "{n} sanduuq madhan ayaa hadhay",
+    "lib.arcade.wrongN": "{n} sanduuq ma saxna.",
+    "lib.arcade.noError": "Ilaa hadda khalad lagama helin.",
+    "lib.arcade.tooShort": "Xarfaha kuma filna",
+    "lib.arcade.answerIs": "Jawaab: {w}",
+    "lib.arcade.livesLeft": "{n} qiyaas khaldan ayaa hadhay",
+    "lib.arcade.yourAnswer": "Jawaabtaada",
+    "lib.arcade.skip": "Ka bood",
+    "lib.arcade.notThis": "Ma saxna, mar kale isku day.",
+    "lib.arcade.startsWith": "Xarafka ugu horreeya: {c}",
+    "lib.arcade.note.domino": "Ciyaaryahan kasta wuxuu helaa 7 qaybood; kan haysta labo-isku-mid ugu sarreeya ayaa bilaaba. Ciyaar qayb lambarkeedu ku habboon yahay mid ka mid ah dhammaadyada silsiladda. Haddii aadan ciyaari karin, ka qaado bakhaarka ilaa aad awooddo; haddii uu madhan yahay, dhaaf. Ka horeeya madhanaynta gacantiisa ayaa guuleysta; haddii labaduba xirmaan, wadarta dhibcaha yar ayaa guuleysata.",
+    "lib.arcade.note.hearts": "Afar ciyaaryahan, 13 kaar mid kasta. 2 ee clubs ayaa bilaaba. Waa inaad raacdaa midabka la bilaabay haddii aad awooddo. Wadne kasta waa 1 dhibic Boqoradda Spades-na waa 13; ka guuleysta wareeggu wuxuu qaataa dhibcihiisa. Hoose ayaa fiican, qaadashada dhammaan 26 dhibic waxay dadka kale siisaa 26 midkiiba. Ma bilaabi kartid wadne ilaa mid la ciyaaray. Gacantii ugu dambaysay kadib, waad guuleysataa haddii dhibcahaagu ugu hooseeyaan (ama ay la sinaan ugu hooseeya).",
+    "lib.arcade.note.holdem": "Madax-iyo-madax kombiyuutarka ka soo horjeeda adigoo isticmaalaya jetoonno been abuur ah oo keliya. Ciyaaryahan kasta wuxuu helaa 2 kaar oo qarsoon iyo 5 kaar oo wadareed ah ayaa la muujiyaa (flop, turn, river); samee gacanta ugu fiican ee 5 kaar. Wareeg kasta waad fold, call (ama check) ama raise samayn kartaa. Blinds-ku waxay kordhaan 4 gacmood kasta. Waad guuleysataa marka kombiyuutarku jetoonnada dhammeeyo, ama marka aad jetoonno badan haysato kadib xadka gacmaha. Lacag dhab ah lama xidhiidho.",
+    "lib.arcade.dmDraw": "Qaado qayb",
+    "lib.arcade.dmPass": "Dhaaf",
+    "lib.arcade.dmEmpty": "Wali qayb lama ciyaarin",
+    "lib.arcade.dmYard": "Bakhaar: {n} qayb",
+    "lib.arcade.dmLeft": "Dhammaadka bidix",
+    "lib.arcade.dmRight": "Dhammaadka midig",
+    "lib.arcade.dmTie": "Barbar! Labada dhinac way sinaan.",
+    "lib.arcade.hrHand": "Gacan {n}/{t}",
+    "lib.arcade.hrTook": "{p} wuxuu ku guuleystay wareegga ({n} dhibic).",
+    "lib.arcade.hrIllegal": "Kaarkan ma ciyaari kartid (raac midabka, ama wadnaha wali lama bilaabi karo).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Digsi: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise ilaa",
+    "lib.arcade.raiseN": "Raise ilaa {n}",
+    "lib.arcade.thOppFold": "Kombiyuutarku wuu fold-gareeyay; waxaad ku guuleysatay gacantan.",
+    "lib.arcade.thYouFold": "Waad fold-garaysay.",
+    "lib.arcade.thOppWin": "Kombiyuutarku wuxuu ku guuleystay gacantan",
+    "lib.arcade.thYouWin": "Waxaad ku guuleysatay gacantan",
+    "lib.arcade.thSplit": "Digsiga waa la qaybiyay",
+    "lib.arcade.thAiFold": "Kombiyuutarku wuu fold-gareeyay.",
+    "lib.arcade.thAiRaise": "Kombiyuutarku wuxuu raise-gareeyay ilaa {n}.",
+    "lib.arcade.thAiCall": "Kombiyuutarku wuu call / check-gareeyay.",
+    "lib.arcade.hand.high": "Kaar sare",
+    "lib.arcade.hand.pair": "Lammaane",
+    "lib.arcade.hand.twoPair": "Laba lammaane",
+    "lib.arcade.hand.trips": "Saddex isku mid",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Afar isku mid",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Afargeeslaha ayaa iftiimaya mid mid shabakad 3x3 ah. Taabo «Waa isku mid!» (ama Space) marka meesha iftiimay ay la mid tahay tii N tallaabo ka hor (N waxaa lagu muujiyaa sare). Waxaad u baahan tahay ugu yaraan 80% go'aamo sax ah si aad heerka u dhammaysato. Heerarka sare waxay isticmaalaan N ka weyn.",
+    "lib.arcade.nbMatch": "Waa isku mid!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Sax: {a} · Khalad: {b}",
+    "lib.arcade.nbAcc": "Saxnaanta: {n}%",
+    "lib.arcade.note.clicker": "Guji buskudka si aad u dubto buskuudyo, ka dibna ku isticmaal iibsashada caawiyeyaasha si toos ah u dubta (qiimuhu wuu kordhaa iibsasho kasta). Dubo tirada buskuudyada bartilmaameedka gudaha 2 daqiiqo si aad heerka u dhammaysato.",
+    "lib.arcade.ckCursor": "Tilmaame",
+    "lib.arcade.ckGrandma": "Ayeeyada dubta",
+    "lib.arcade.ckFarm": "Beer",
+    "lib.arcade.ckMine": "Macdanta sonkorta",
+    "lib.arcade.ckFactory": "Warshad",
+    "lib.arcade.ckCookie": "Buskud",
+    "lib.arcade.ckEarned": "La dubay: {n}/{t}",
+    "lib.arcade.chips2": "Buskuudyo: {n}",
+    "lib.arcade.ckCps": "{n} buskud/ilbiriqsi",
+    "lib.arcade.note.onet": "Dooro labo tile oo isku mid ah oo lagu xidhi karo waddo aan ka badnayn 2 leexasho oo aan ka gudbin tile kale si aad u saarto. Nadiifi dhammaan tile-ka ka hor inta aan wakhtigu dhammaan si aad u guuleysato. Marka aan hadhin tallaabooyin, waad isku dhafi kartaa (tiro xaddidan).",
+    "lib.arcade.shuffle": "Isku dhaf",
+    "lib.arcade.tilesLeft": "{n} tile ayaa hadhay",
+    "lib.arcade.autoShuffle": "Tallaabo ma hadhin — si toos ah ayaa loo isku dhafay.",
+    "lib.arcade.note.jigsaw": "Sawirka waa la jaray qaybo oo waa la isku dhafay. Taabo qayb, ka dibna mid kale si aad iskaga beddesho, oo dib u dhis sawirka tixraaca ee la muujiyay. Qaybaha meesha saxda ah ku jira waxay helaan xuduud cagaar ah. Heerarka sare waxay leeyihiin qaybo badan.",
+    "lib.arcade.jgRef": "Sawirka tixraaca",
+    "lib.arcade.jgPlaced": "Meeshiisii: {a}/{b}",
+    "lib.arcade.golfStrokes": "Garaacid: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Waxaad ciyaartaa xabbado cad, adigoo ka dhaqaaqaya midig-sare oo hoos u wareegaya midig-hoose (guriga). Tuur dhiceeda, guji xabbadda aad dhaqaajinayso, ka dibna guji meesha loo socdo ee iftiimaysa. Ku degidda meel leh hal xabbad oo cadow ah waxay ku garaacdaa bar dhexe, ciyaaryahankaasna waa inuu marka hore dib u soo geliyo. Ma degi kartid meel leh laba ama in ka badan oo xabbado cadow ah. Marka dhammaan 15-kaaga xabbadood ay gurigaaga (6-da meelood ee u dambeeya) joogaan, waad saari kartaa. Ka horeeya saarida 15-ka ayaa guuleysta.",
+    "lib.arcade.bgRoll": "Tuur dhiceeda",
+    "lib.arcade.bgOff": "Saar",
+    "lib.arcade.bgRollFirst": "Tuur dhiceeda",
+    "lib.arcade.bgInfo": "La saaray: adiga {a} · kombiyuutarka {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Ma haysatid tallaabo sharci ah oo hadhay.",
+    "lib.arcade.note.tienlen": "Afar ciyaaryahan, 13 kaar mid kasta. Kala horreynta kaararka hoose ilaa sare: 3, 4, … K, A, 2; midabada hoose ilaa sare: spades, clubs, diamonds, hearts. Ka haysta 3-ka spades ayaa bilaaba. Ciyaar hal kaar, lammaane, saddex isku mid, afar isku mid, ama silsilad 3 ama in ka badan oo kaaro isku xigta (2 la'aan). Ciyaaryahanka xiga waa inuu ciyaaraa isla nooca oo ka sarreeya, ama uu dhaafaa; afar isku mid waxay garaacdaa hal 2 ama lammaane 2. Marka dhammaan kuwa kale dhaafaan, ciyaaryahankii ugu dambeeyay wuxuu bilaabi karaa wax kasta. Ka horeeya madhanaynta gacantiisa ayaa guuleysta. Dooro kaararka, kadibna taabo «Ciyaar».",
+    "lib.arcade.tlPlay": "Ciyaar",
+    "lib.arcade.tlPass": "Dhaaf",
+    "lib.arcade.tlClear": "Nadiifi doorashada",
+    "lib.arcade.tlPassed": "wuu dhaafay",
+    "lib.arcade.tlFree": "Miisku waa madhan yahay — waxaad bilaabi kartaa wax kasta",
+    "lib.arcade.tlLeft": "Kaararka hadhay: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} wuu dhaafay.",
+    "lib.arcade.tlBad": "Kaararka la doortay ma sameeyaan urur sax ah.",
+    "lib.arcade.tlLow": "Ururkani kuma filna inuu garaaco kan miiska saaran."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Imtixaanka falcelinta",
       "desc": "Guji markii shaashaddu cagaarto; celceliska 5-ka wareeg waa inuu buuxiyaa xadka heer kasta, kaasoo cidhiidhi noqda 10-ka heer."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Abuur ku firdhi godadka, qabso abuurka cadowga oo mar kale dhaqaaq marka aad bakhaarkaaga ku dhacdo; kula ciyaar kombiyuutarka 10 heer oo ka bilaabma fudud ilaa adag."
+    },
+    "snakes-ladders": {
+      "name": "Abeeso iyo Jaranjaro",
+      "desc": "Tuur dhiceeda fadhi 1 ilaa 100, fuul jaranjarada, ka fogow abeesada oo gaadh dhammaadka ka hor inta aysan kuwa kula ciyaaraya gaadhin; 10 heer."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Dhig, siidh iyo duul xabbadahaaga si aad u samayso saddex xariiq ah oo aad u saarto xabbadaha cadowga; kula ciyaar kombiyuutarka 10 heer."
+    },
+    "battleship": {
+      "name": "Battleship",
+      "desc": "Raadi oo quus maraakiibta kombiyuutarka shabakad 10x10 ah ka hor inta uusan kuwaaga quusin; 10 heer oo kombiyuutarku si caqli badan u qiyaaso."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Qare Dhuxul-dhiig Kalluun Yaaqo)",
+      "desc": "Ciyaarta dhicedaha dhaqanka Vietnam: shar xayawaanka qadaadiic been abuur ah oo ruxruxo saddex dhice; gaadh qadaadiicda bartilmaameedka 10 heer (lacag dhab ah ma aha)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Ku shar Ciyaaryahanka, Bangiga ama Barbar kaararka lagu qaybiyay xeerarka caadiga ah, adigoo isticmaalaya qadaadiic been abuur ah; gaadh qadaadiicda bartilmaameedka 10 heer (lacag dhab ah ma aha)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Ciyaarta saddexda kaar)",
+      "desc": "Ku barbar dhig gacmaha 3 kaar qaybiyaha: saddex isku mid, saddex kaar sawir leh, ka dibna 9 dhibic ilaa 0; qadaadiic been abuur ah, 10 heer, lacag dhab ah ma aha."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Calaamadi tirooyinka la wacay kaarkaaga 5x5 oo ku dhawaaq BINGO ka hor kuwa kombiyuutarka; tirooyinka dhakhso ayaa loo wacaa 10 heer."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Shan dhice)",
+      "desc": "Tuur shan dhice, hayso kuwa wanaagsan oo buuxi 13 sanduuq oo dhibco ah; gaadh dhibcaha bartilmaameedka 10 heer."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Isku mid ka dhig midabka ama darajada, siddeedku waxay beddelaan midabka; madhan gacantaada ka hor 1 ilaa 3 kuwa kombiyuutarka ah 10 heer."
+    },
+    "car-race": {
+      "name": "Car Race Dodge",
+      "desc": "Beddel jidka si aad uga fogaato gawaarida hore oo wad masaafada oo dhan; 10 heer oo leh jidad badan iyo taraafiko degdeg ah."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Ka boodh madal ilaa madal si aad sare ugu fuusho adigoo aan dhicin; 10 heer oo leh madalo yar, kuwa dhaqaaqa iyo kuwa jabaya."
+    },
+    "gold-miner": {
+      "name": "Gold Miner",
+      "desc": "Dejiso qabsadaha si aad u jiiddo dahab iyo dheemman, ka fogow dhagaxyada culus, oo gaadh lacagta bartilmaameedka 60 ilbiriqsi gudahood; 10 heer."
+    },
+    "fruit-slice": {
+      "name": "Fruit Slice",
+      "desc": "Jiid si aad u jarto miraha kor u duulaya oo ka fogow bambooyinka; 10 heer oo leh miro iyo bambooyin badan."
+    },
+    "basketball": {
+      "name": "Basketball Shoot",
+      "desc": "Jiid oo sii daa si aad kubbadda ugu tuurto giraanta tiro xaddidan oo isku day gudaheeda; 10 heer, giraanku wuu dhaqaaqaa heerka 4 ka bilaabma."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Ridi xumbo si aad u ku xidhato 3 ama ka badan oo isku midab ah oo aad u dillaacisid, oo dhammaan nadiifi ka hor inta aysan gaadhin hoose; 10 heer oo leh midabo badan."
+    },
+    "dot-chase": {
+      "name": "Dot Chase",
+      "desc": "Cun dhammaan dhibcaha jiirka ku jira adigoo ka fogaanaya jinniyada ku eryanaya; 10 heer oo leh jinniyo badan oo caqli badan."
+    },
+    "kakuro": {
+      "name": "Kakuro (Cross Sums)",
+      "desc": "Ku buuxi sanduuqyada cad tirooyinka 1–9 si safaf kasta u gaadho tilmaantiisa iyadoo aan la celin; 10 heer, shabakado ka bilaabma 5x5 ilaa 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Ku buuxi shabakada iyadoo aan lagu celin safaf ama tiirar si koox kasta u bixiso bartilmaamaheeda hawlgalkeeda; 10 heer, shabakado ka bilaabma 3x3 ilaa 6x6."
+    },
+    "word-guess": {
+      "name": "Word Guess (sida Wordle)",
+      "desc": "Qiyaas ereyga Ingiriisiga ah ee qarsoon tilmaamo cagaar, huruud iyo boodh ah; 10 heer oo leh erayo 4–6 xaraf ah iyo isku dayo yar."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Qiyaas ereyga Ingiriisiga ah xaraf xaraf ka hor inta aysan qiyaasaha khaldan dhammaan; 10 heer oo leh erayo dhaadheer iyo qiyaaso khaldan oo yar."
+    },
+    "word-scramble": {
+      "name": "Word Scramble (Anagram)",
+      "desc": "U habee xarfaha isku dhafan eray Ingiriisi ah ka hor inta aan wakhtigu dhammaan; 10 heer, 5 eray heer kasta."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Isku mid ka dhig qaybaha dhammaadyada silsiladda oo madhan gacantaada ka hor kombiyuutarka; 10 heer marka kombiyuutarku sii caqli badan yahay."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Ka fogow wadnayaasha iyo Boqoradda Spades ciyaarta kaararka ee afarta qof; dhibco hoose ayaa fiican; 10 heer oo ka dhan ah ciyaaryahanno kombiyuutar oo caqli leh."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (jetoonno been abuur ah)",
+      "desc": "Poker madax-iyo-madax kombiyuutarka ka soo horjeeda jetoonno been abuur ah: fold, call ama raise, oo guuleyso marka kombiyuutarku jetoonnada dhammeeyo; 10 heer, lacag dhab ah ma aha."
+    },
+    "n-back": {
+      "name": "N-Back Memory",
+      "desc": "Eeg afargeeslaha iftiimay oo taabo Waa isku mid marka ay la mid tahay tii N tallaabo ka hor; 10 heer oo leh N ilaa 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Guji si aad u dubto buskuudyo, iibso caawiyeyaal si toos ah u dubta oo gaadh bartilmaameedka 2 daqiiqo gudahood; 10 heer."
+    },
+    "tile-connect": {
+      "name": "Tile Connect (sida Onet)",
+      "desc": "Isku xidh tile-ka isku midka ah waddo aan ka badnayn laba leexasho oo nadiifi sabuuradda ka hor inta aan wakhtigu dhammaan; 10 heer, sabuurado waaweyn."
+    },
+    "jigsaw": {
+      "name": "Picture Jigsaw",
+      "desc": "Iskaga beddel qaybaha la isku dhafay si aad u dhisto sawirka; 10 heer oo ka bilaabma 3x3 ilaa 6x6 qaybood."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Dib u jiid oo sii daa si aad kubbadda ugu garaacdo godka xadka garaacidda gudaheeda; 10 koorso oo leh derbiyo iyo cammuud."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Tuur dhiceeda, kaga orod xabbadahaaga guriga oo saar ka hor kombiyuutarka, adigoo ku garaacaya xabbadahiisa keligood wadada; 10 heer."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Toban iyo saddex)",
+      "desc": "Ciyaarta kaararka Vietnam ee afarta qof: ciyaar mid, lammaane, silsilado iyo afar isku mid si aad marka hore gacantaada u madhan; 10 heer."
     }
   },
   "s": {

@@ -711,7 +711,30 @@
     "lib.arcade.jgWin": "Chiếu bí — bạn thắng.",
     "lib.arcade.jgLose": "Bạn bị chiếu bí.",
     "lib.arcade.pinBalls": "Bóng: {n} · Mục tiêu: {t}",
-    "lib.arcade.note.pinball": "Bấm phím cách, ↑ hoặc chạm vào sân để phóng bóng. Giữ ← (hoặc chạm nửa trái sân) để nâng cần gạt trái, → (hoặc nửa phải) cho cần gạt phải; đừng giữ mãi, hãy gạt từng nhịp. Bóng chạm bumper tròn được 100 điểm. Có 3 bóng; đạt đủ điểm mục tiêu trước khi hết bóng để qua cấp."
+    "lib.arcade.note.pinball": "Bấm phím cách, ↑ hoặc chạm vào sân để phóng bóng. Giữ ← (hoặc chạm nửa trái sân) để nâng cần gạt trái, → (hoặc nửa phải) cho cần gạt phải; đừng giữ mãi, hãy gạt từng nhịp. Bóng chạm bumper tròn được 100 điểm. Có 3 bóng; đạt đủ điểm mục tiêu trước khi hết bóng để qua cấp.",
+    "lib.arcade.note.cribbage": "Cribbage 2 người, chạy đua tới 61 điểm. Mỗi ván chia 6 lá; mỗi người bỏ 2 lá úp vào \"chuồn\" (của người chia). Lật một lá chung. Rồi lần lượt đánh bài ngửa, tổng không quá 31: đạt 15 hoặc 31 được 2 điểm, đánh trùng số được 2/6/12 điểm, tạo dãy 3 lá trở lên (thứ tự bất kỳ) được bằng số lá; hết lượt đánh (\"Go\") thì người đánh cuối được 1 điểm. Sau đó đếm bài 4 lá cùng lá chung: mỗi tổ hợp tổng 15 được 2, mỗi đôi 2, dãy 3 lá trở lên bằng số lá, 4 lá cùng chất 4 (5 nếu cả lá chung), J cùng chất lá chung 1. Người không chia đếm trước, rồi người chia đếm bài và chuồn.",
+    "lib.arcade.cbYou": "Bạn",
+    "lib.arcade.cbFoe": "Máy",
+    "lib.arcade.cbHeels": "J lá lật",
+    "lib.arcade.cbRun": "Dãy",
+    "lib.arcade.cbPair": "Đôi",
+    "lib.arcade.cbLast": "Lá cuối",
+    "lib.arcade.cbCount": "Tổng: {n}",
+    "lib.arcade.cbYouDeal": "Bạn chia",
+    "lib.arcade.cbFoeDeal": "Máy chia",
+    "lib.arcade.cbPick": "Chọn 2 lá bỏ vào chuồn",
+    "lib.arcade.cbCrib": "Chuồn",
+    "lib.arcade.cbYourHand": "Bài của bạn",
+    "lib.arcade.cbFoeHand": "Bài của máy",
+    "lib.arcade.cbStarter": "Lá chung",
+    "lib.arcade.cbZero": "0 điểm",
+    "lib.arcade.cbPlayed": "Đã đánh",
+    "lib.arcade.cbToCrib": "Bỏ vào chuồn",
+    "lib.arcade.cbNext": "Tiếp tục",
+    "lib.arcade.cbHand": "Bài",
+    "lib.arcade.cbFifteen": "Mười lăm",
+    "lib.arcade.cbFlush": "Đồng chất",
+    "lib.arcade.cbNobs": "J cùng chất lá lật"
   },
   "pages": {
     "home": {
@@ -1816,6 +1839,10 @@
     "pinball": {
       "name": "Pinball (bắn bi)",
       "desc": "Pinball online: gạt cần trái phải để giữ bóng, đập bumper lấy điểm đạt mục tiêu trước khi hết 3 bóng; 10 cấp."
+    },
+    "cribbage": {
+      "name": "Cribbage (đếm bài)",
+      "desc": "Cribbage 2 người đấu với máy: bỏ chuồn, đánh bài đến 31, đếm bài ăn điểm, chạy đua tới 61; 10 cấp."
     }
   },
   "s": {

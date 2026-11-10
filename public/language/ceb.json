@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Luksoa",
     "lib.arcade.aimTarget": "Target",
     "lib.game.soundOn": "I-on ang tunog",
-    "lib.game.soundOff": "I-off ang tunog"
+    "lib.game.soundOff": "I-off ang tunog",
+    "lib.arcade.note.kalah": "Imo ang ubos nga laray, ang kompyuter ang ibabaw; ang dakong lungag sa tuo mao ang imong tipiganan. I-klik ang usa ka lungag aron kuhaon ang tanang liso ug ipugas kini pakaliwa, usa kada lungag (laktawi ang tipiganan sa kaaway). Kung ang imong kataposang liso mahulog sa imong tipiganan, mulihok ka pag-usab; kung mahulog kini sa walay sulod nga lungag sa imong kiliran nga atbang sa lungag nga naay liso, makuha nimo kadtong mga liso. Kung walay sulod ang usa ka kiliran, ang mga liso sa pikas moadto sa tipiganan sa tag-iya; ang mas dako nga tipiganan modaog.",
+    "lib.arcade.note.snakes": "Ihulog ang dice ug lakaw sumala sa gidaghanon sa mga kwadro, gikan sa 1 hangtod 100. Kung maapil ka sa tiilan sa hagdanan mosaka ka; kung ulo sa bitin mohinay ka paubos. Gikan sa lebel 4 kinahanglan nimo ang eksaktong numero aron makaabot sa 100. Ang mas taas nga lebel naay daghang bitin, gamay nga hagdanan ug daghang kaatbang. Ang unang makaabot sa 100 modaog.",
+    "lib.arcade.square": "Kwadro {n}",
+    "lib.arcade.ladderUp": "Saka sa hagdanan!",
+    "lib.arcade.snakeDown": "Gilamoy sa bitin!",
+    "lib.arcade.needExact": "Kinahanglan nimo ang eksaktong numero aron makaabot sa 100.",
+    "lib.arcade.note.nmm": "Ang matag kiliran naay 9 ka piyesa. Hugna 1: pagsunod-sunod sa pagbutang sa piyesa sa mga walay sulod nga punto. Hugna 2: i-slide ang piyesa ngadto sa duol nga walay sulod nga punto. Kung 3 na lang ang piyesa, mahimo ka “mo-lupad” sa bisan asang walay sulod nga punto. Himoa ang tulo sa usa ka linya (usa ka “mill”) aron makuha ang piyesa sa kaaway (una ang mga piyesa nga wala sa mill). Mawala ka kung 2 na lang ang piyesa o dili na ka maka-lihok. Puti ang imong dulaon ug ikaw ang una.",
+    "lib.arcade.inHand": "Ibutang: {a} · {b}",
+    "lib.arcade.removePiece": "Pili ug piyesa sa kaaway nga kuhaon.",
+    "lib.arcade.enemyWaters": "Katubigan sa kaaway (i-klik aron pagpabuto)",
+    "lib.arcade.yourFleet": "Imong armada",
+    "lib.arcade.note.battleship": "Ang matag kiliran naay 5 ka barko (gitas-on 5, 4, 3, 3, 2) nga gibutang nga random sa 10x10 nga grid. Pagsunod-sunod sa pagpabuto sa usa ka selda: ang igo mopula, ang sayop mohimong light blue, ug kung maigo ang tanang selda sa barko malunod kini. Una nga malunod ang tibuok armada sa kaaway modaog. Sa mas taas nga lebel mas maalamon ang kompyuter sa pagtag-an sa imong mga barko.",
+    "lib.arcade.shipsLeft": "Mga barko nga nahabilin: ikaw {a} · kaaway {b}",
+    "lib.arcade.theySunk": "Gilunod sa kaaway ang usa sa imong mga barko!",
+    "lib.arcade.theyHit": "Naigo sa kaaway ang usa sa imong mga barko.",
+    "lib.arcade.theyMiss": "Sayop ang pusil sa kaaway.",
+    "lib.arcade.youSunk": "Nalunod nimo ang barko sa kaaway!",
+    "lib.arcade.youHit": "Igo!",
+    "lib.arcade.youMiss": "Sayop.",
+    "lib.arcade.shake": "Lukso-a",
+    "lib.arcade.clearBets": "Papasaa ang mga taya",
+    "lib.arcade.note.bau-cua": "Virtual nga mga sensilyo ra — walay tinuod nga kuwarta. Pili ug bili sa chip, i-klik ang mga hayop aron mutaya, dayon pindota ang Shake. Sa matag dice nga motugma sa hayop nga imong gitayaan, makuha nimo balik ang imong taya ug dugang parehas nga kantidad kada tugma. Maabot ang target nga mga sensilyo sulod sa gitugot nga mga hugna aron mahuman ang lebel.",
+    "lib.arcade.note.baccarat": "Virtual nga mga sensilyo ra — walay tinuod nga kuwarta. Mutaya sa Player, Banker o Tie, dayon pindota ang Deal. Ang bili sa kamot mao ang katapusang digit sa total (A = 1, 2–9 bili sa kard, 10/J/Q/K = 0); ang kamot nga mas duol sa 9 modaog, ug ang ikatulong kard makuha sumala sa standard nga mga lagda. Ang Player nagbayad 1:1, Banker 0.95:1, Tie 8:1 (ang taya sa Player/Banker ibalik kung tie). Maabot ang target nga mga sensilyo sulod sa gitugot nga mga hugna aron mahuman ang lebel.",
+    "lib.arcade.banker": "Banker",
+    "lib.arcade.player": "Player",
+    "lib.arcade.tie": "Tie",
+    "lib.arcade.openCards": "Ibukas",
+    "lib.arcade.note.bai-cao": "Virtual nga mga sensilyo ra — walay tinuod nga kuwarta. Ang matag kiliran makakuha ug 3 ka kard. Ang puntos sa kamot mao ang katapusang digit sa total (A = 1, 2–9 bili sa kard, 10/J/Q/K = 10 o 0 ka puntos). Ranggo: Tulo ka parehas (“Sáp”) ang pinakataas, dayon tulo ka litrato (“Ba tiên”), dayon 9 ka puntos hangtod 0. Mutaya, pindota ang Deal ug dayon Ibukas aron itandi sa dealer. Gikan sa lebel 6 ang dealer modaog kung tabla. Maabot ang target nga mga sensilyo sulod sa gitugot nga mga hugna aron mahuman ang lebel.",
+    "lib.arcade.caoSap": "Tulo ka parehas",
+    "lib.arcade.caoBaTien": "Tulo ka litrato",
+    "lib.arcade.caoPts": "{n} ka puntos",
+    "lib.arcade.note.bingo": "Ang kompyuter motawag ug mga numero gikan 1 hangtod 75. Kung ang gitawag nga numero naa sa imong kard, i-klik kini aron markahan (libre ang tunga). Kumpletoha ang laray, kolum o dayagonal ug pindota ang BINGO! — kinahanglan nimo daogon ang mga kaatbang nga kompyuter. Ang sayop nga BINGO! mag-lock sa buton sa pipila ka segundo. Ang mas taas nga lebel mas paspas motawag ug daghan ang kaatbang.",
+    "lib.arcade.opponentsN": "Mga kaatbang: {n}",
+    "lib.arcade.falseBingo": "Wala pa’y kompletong linya! Naka-lock ang buton sulod sa 3 segundo.",
+    "lib.arcade.bingoGo": "Nagatawag ug mga numero!",
+    "lib.arcade.note.yahtzee": "Sa matag turno mag-ihulog ka ug 5 ka dice hangtod 3 ka higayon: i-klik ang dice aron itago, dayon pindota ang Roll aron i-roll pag-usab ang uban. Dayon pili ug kahon sa lamesa aron pag-iskor (ang matag kahon gamiton kausa; ang kahon nga dili angay makakuha ug 0). 13 ka turno. Ang mga kahon nga Ones–Sixes magdugang ug 35 nga bonus kung ang total 63 o kapin. Maabot ang target nga iskor sa lebel aron modaog.",
+    "lib.arcade.turnN": "Turno {n}/13",
+    "lib.arcade.pickCat": "Pili ug kahon aron pag-iskor",
+    "lib.arcade.rollsLeft": "Roll ({n} nahabilin)",
+    "lib.arcade.upperBonus": "Bonus sa Ones–Sixes",
+    "lib.arcade.scored": "Naiskor {n}",
+    "lib.arcade.note.crazy-eights": "Dulaa ang kard nga motugma sa ibabaw nga kard sa itapong tumpok sa suit o ranggo. Ang mga eight wild: dulaa ang usa bisan kanus-a ug pili ug bag-ong suit. Kung wala kay madulaang kard, kuha gikan sa tumpok (hangtod 3 ka kard); kung dili gihapon ka makadula, mo-pass ka. Una nga mawalay kard sa kamot modaog. Ang mas taas nga lebel naay daghang kaatbang ug mas maalamon ang kompyuter.",
+    "lib.arcade.opponent": "Kaatbang",
+    "lib.arcade.pileLeft": "Tumpok sa pagkuha: {n}",
+    "lib.arcade.pickSuit": "Pili ug bag-ong suit",
+    "lib.arcade.aiSuit": "Ang kompyuter mipili sa {s}",
+    "lib.arcade.aiPass": "Ang kompyuter nag-pass.",
+    "lib.arcade.mustPlay": "Naa kay madulaang kard — dulaa kini.",
+    "lib.arcade.youPass": "Nakakuha ka ug 3 ka kard ug nag-pass.",
+    "lib.arcade.bcGourd": "Tabayag",
+    "lib.arcade.bcCrab": "Alimango",
+    "lib.arcade.bcShrimp": "Pasayan",
+    "lib.arcade.bcFish": "Isda",
+    "lib.arcade.bcRooster": "Manok nga lalaki",
+    "lib.arcade.bcDeer": "Usa",
+    "lib.arcade.yOnes": "Mga Isa",
+    "lib.arcade.yTwos": "Mga Duha",
+    "lib.arcade.yThrees": "Mga Tulo",
+    "lib.arcade.yFours": "Mga Upat",
+    "lib.arcade.yFives": "Mga Lima",
+    "lib.arcade.ySixes": "Mga Unom",
+    "lib.arcade.yThree": "Tulo ka parehas",
+    "lib.arcade.yFour": "Upat ka parehas",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Gamay nga straight (30)",
+    "lib.arcade.yLarge": "Dako nga straight (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Chance",
+    "lib.arcade.note.race": "Pindota ang ← → (o tuktoki ang lane nga gusto nimo) aron mobalhin ug lane ug likayan ang mga sakyanan sa unahan. Naa kay 3 ka kinabuhi; dagan sa tibuok gilay-on aron mahuman ang lebel. Ang mas taas nga lebel naay daghang lane ug mas paspas nga trapiko.",
+    "lib.arcade.note.jump": "Ang karakter molukso sa iyang kaugalingon. Pindota ang ← → o i-drag ang imong tudlo aron mo-landing sa sunod nga plataporma. Ang asul nga plataporma molihok, ang brown nga mabuak kung gitungtongan. Ang pagkahulog sa screen kapildihan; saka igo ang kataas aron mahuman ang lebel.",
+    "lib.arcade.note.miner": "Ang kuwarta nag-swing sa duha ka kiliran; pindota ang Space, ↓ o tuktoki ang uma aron ihulog kini. Ang dako nga bulawan ug bato mabug-at ug hinay ibira; ang diamante bililhon kaayo. Maabot ang target nga kuwarta sa wala pa mahurot ang 60 segundos.",
+    "lib.arcade.note.slicer": "I-swipe ang tudlo o mouse tabok sa prutas aron putlon kini. Likayi ang itom nga mga bomba. Ang pagkapalpak sa prutas o pagputol sa bomba mokuha ug usa ka kinabuhi (naa kay 3). Putla ang igo nga prutas aron mahuman ang lebel.",
+    "lib.arcade.note.hoops": "Pindota ang court, i-drag paubos (sama sa slingshot) ug buhii aron isalibay ang bola sa hoop. Kon mas layo ang drag, mas kusog ang tira. Mag-iskor ug igo nga basket sulod sa imong mga tira; gikan sa lebel 4 molihok ang hoop.",
+    "lib.arcade.note.bubbles": "Ibalhin ang mouse o tudlo aron pag-aim, dayon i-klik/tuktok o pindota ang Space/Pabuto aron pagpabuto. Ikonekta ang 3 o kapin nga bula nga parehas ug kolor aron mapukan; ang mga bula nga mawad-an ug suporta mahulog. Hinay nga mokanaog ang mga laray, busa ilayo kini sa ubos nga linya. Papasa ang tanang bula aron modaog.",
+    "lib.arcade.note.chase": "Gamita ang arrow keys (o swipe / mga buton) aron pagliko ug kan-a ang tanang tulbok sa maze samtang likayan ang mga multo nga nagsunod nimo. Naa kay 3 ka kinabuhi; ang mas taas nga lebel naay daghang multo nga mas paspas ug mas maalamon.",
+    "lib.arcade.height": "Kataas: {n}/{t} m",
+    "lib.arcade.money": "Kuwarta: {n}/{t}",
+    "lib.arcade.sliced": "Napunggo: {n}/{t}",
+    "lib.arcade.hoopScore": "Naiskor: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} ka tira ang nahabilin",
+    "lib.arcade.bubbleLeft": "{n} ka bula ang nahabilin",
+    "lib.arcade.shotsN": "Mga tira: {n}",
+    "lib.arcade.dotsLeft": "{n} ka tulbok ang nahabilin",
+    "lib.arcade.note.kakuro": "Pun-a ang puti nga mga selda sa mga digit nga 1–9 aron ang matag laray motugma sa pahibalo sa itom nga selda (ang numero sa taas nga tuo alang sa laray paingon sa tuo, ang sa ubos nga wala alang sa laray paubos), nga walay balik-balik nga digit sulod sa laray. Gamita ang arrow keys aron molihok.",
+    "lib.arcade.note.kenken": "Pun-a ang grid sa mga numero gikan 1 hangtod N aron walay balik-balik nga numero sa bisan asang laray o kolum. Ang matag kulungan nga gisubayan nagpakita ug target ug operasyon (+, −, ×, ÷): ang mga numero sa kulungan kinahanglan mohatag nianang resulta. Gamita ang arrow keys aron molihok.",
+    "lib.arcade.note.wordGuess": "Tagda ang tinagong English nga pulong. Human sa matag sulay, ang berde nagpasabot nga husto ang letra sa husto nga lugar, ang dalag nagpasabot nga naa ang letra sa pulong apan sa laing lugar, ug ang abo nagpasabot nga wala sa pulong. I-type gamit ang keyboard o ang yawe sa screen, ug pindota ang Enter aron isumite. Ang mas taas nga lebel naay mas taas nga mga pulong ug mas gamay nga sulay.",
+    "lib.arcade.note.hangman": "Tagda ang tinagong English nga pulong pinaagi sa pagpili ug mga letra isa-isa. Ang matag sayop nga letra nagdugang ug bahin sa gibitay; kung maubos ang imong sayop nga tag-an, mawala ka. Ang mas taas nga lebel naay mas taas nga mga pulong ug mas gamay nga gitugot nga sayop.",
+    "lib.arcade.note.scramble": "Ihan-ay pag-usab ang gisagol nga mga letra ngadto sa tinuod nga English nga pulong ug i-type kini sa kahon sa tubag. Ang matag lebel naay 5 ka pulong; sulbara ang labing menos 4 sa wala pa mahurot ang oras sa matag pulong aron mahuman ang lebel. Ang hint nagpakita sa unang letra.",
+    "lib.arcade.cellsLeft": "{n} ka walay sulod nga selda ang nahabilin",
+    "lib.arcade.wrongN": "{n} ka selda ang dili husto.",
+    "lib.arcade.noError": "Wala pa’y sayop nga nakit-an hangtod karon.",
+    "lib.arcade.tooShort": "Kulang ang mga letra",
+    "lib.arcade.answerIs": "Tubag: {w}",
+    "lib.arcade.livesLeft": "{n} ka sayop nga tag-an ang nahabilin",
+    "lib.arcade.yourAnswer": "Imong tubag",
+    "lib.arcade.skip": "Laktawi",
+    "lib.arcade.notThis": "Dili husto, sulayi pag-usab.",
+    "lib.arcade.startsWith": "Unang letra: {c}",
+    "lib.arcade.note.domino": "Ang matag magdudula makakuha ug 7 ka tile; kinsa ang naay labing taas nga double mag-una. Dulaa ang tile nga ang numero motugma sa usa ka tumoy sa kadena. Kung dili ka makadula, kuha gikan sa boneyard hangtod makadula; kung walay sulod, mo-pass. Una nga mawalay tile sa kamot modaog; kung pareho nga nababagan, ang mas ubos nga total sa tulbok modaog.",
+    "lib.arcade.note.hearts": "Upat ka magdudula, 13 ka kard ang matag usa. Ang 2 sa clubs ang mag-una. Kinahanglan nimo sundon ang suit kung mahimo. Ang matag heart 1 ka puntos ug ang Queen of Spades 13; kinsa ang modaog sa trick mokuha sa mga puntos niini. Mas ubos mas maayo, ug ang pagkuha sa tanang 26 ka puntos naghatag sa uban ug 26. Dili ka maka-una ug heart hangtod naay nadula na. Pagkahuman sa katapusang kamot, modaog ka kung ang imong iskor ang labing ubos (o tabla sa labing ubos).",
+    "lib.arcade.note.holdem": "Duha ra batok sa kompyuter gamit lang ang virtual nga chips. Ang matag magdudula makakuha ug 2 pribadong kard ug 5 ka community cards ang ibukad (flop, turn, river); himoa ang labing maayo nga 5-kard nga kamot. Sa matag hugna mahimo kang fold, call (o check) o raise. Ang mga blind motaas matag 4 ka kamot. Modaog ka kung maubusan ug chips ang kompyuter, o kung mas daghan ang imong chips human sa limitasyon sa mga kamot. Walay tinuod nga kuwarta.",
+    "lib.arcade.dmDraw": "Kuha ug tile",
+    "lib.arcade.dmPass": "Pass",
+    "lib.arcade.dmEmpty": "Wala pa’y tile nga nadula",
+    "lib.arcade.dmYard": "Boneyard: {n} ka tile",
+    "lib.arcade.dmLeft": "Wala nga tumoy",
+    "lib.arcade.dmRight": "Tuo nga tumoy",
+    "lib.arcade.dmTie": "Tabla! Parehas ang duha ka kiliran.",
+    "lib.arcade.hrHand": "Kamot {n}/{t}",
+    "lib.arcade.hrTook": "Nadaog ni {p} ang trick ({n} ka puntos).",
+    "lib.arcade.hrIllegal": "Dili nimo madula kini nga kard (sunda ang suit, o wala pa’y heart nga nadula).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise ngadto sa",
+    "lib.arcade.raiseN": "Raise ngadto sa {n}",
+    "lib.arcade.thOppFold": "Nag-fold ang kompyuter; nadaog nimo kini nga kamot.",
+    "lib.arcade.thYouFold": "Nag-fold ka.",
+    "lib.arcade.thOppWin": "Nadaog sa kompyuter kini nga kamot",
+    "lib.arcade.thYouWin": "Nadaog nimo kini nga kamot",
+    "lib.arcade.thSplit": "Gibahin ang pot",
+    "lib.arcade.thAiFold": "Nag-fold ang kompyuter.",
+    "lib.arcade.thAiRaise": "Nag-raise ang kompyuter ngadto sa {n}.",
+    "lib.arcade.thAiCall": "Nag-call / check ang kompyuter.",
+    "lib.arcade.hand.high": "High card",
+    "lib.arcade.hand.pair": "Pares",
+    "lib.arcade.hand.twoPair": "Duha ka pares",
+    "lib.arcade.hand.trips": "Tulo ka parehas",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Upat ka parehas",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Usa ka kwadro modan-ag sunod-sunod sa 3x3 nga grid. Pindota ang \"Match!\" (o Space) kung ang nagdan-ag nga posisyon parehas sa usa ka N ka lakang ang milabay (ang N makita sa ibabaw). Kinahanglan ang labing menos 80% nga husto nga desisyon aron mahuman ang lebel. Ang mas taas nga lebel naggamit ug mas dako nga N.",
+    "lib.arcade.nbMatch": "Match!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Husto: {a} · Sayop: {b}",
+    "lib.arcade.nbAcc": "Katukma: {n}%",
+    "lib.arcade.note.clicker": "I-klik ang cookie aron mag-luto ug cookies, dayon gamita kini sa pagpalit ug mga katabang nga mag-luto sa kaugalingon (motaas ang presyo sa matag palit). Pagluto sa target nga gidaghanon sa cookies sulod sa 2 minuto aron mahuman ang lebel.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Lola nga nagluto",
+    "lib.arcade.ckFarm": "Uma",
+    "lib.arcade.ckMine": "Minahan sa asukar",
+    "lib.arcade.ckFactory": "Pabrika",
+    "lib.arcade.ckCookie": "Cookie",
+    "lib.arcade.ckEarned": "Naluto: {n}/{t}",
+    "lib.arcade.chips2": "Cookies: {n}",
+    "lib.arcade.ckCps": "{n} cookies kada segundo",
+    "lib.arcade.note.onet": "Pili ug duha ka parehas nga tile nga mahimong ikonektar sa dalan nga hangtod 2 ka liko ug dili moagi sa ubang tile aron kuhaon kini. Papasaa ang tanang tile sa wala pa mahurot ang oras aron modaog. Kung wala nay mahimo, mahimo kang mag-shuffle (limitado ang gamit).",
+    "lib.arcade.shuffle": "Shuffle",
+    "lib.arcade.tilesLeft": "{n} ka tile ang nahabilin",
+    "lib.arcade.autoShuffle": "Wala nay mahimo — awtomatik nga gi-shuffle.",
+    "lib.arcade.note.jigsaw": "Ang hulagway giputol ug gisagol. Tuktoki ang usa ka piraso, dayon ang lain, aron i-swap, ug tukora pag-usab ang hulagway nga gipakita isip reperensya. Ang mga piraso sa husto nga lugar makakuha ug berde nga ngilit. Ang mas taas nga lebel naay daghang piraso.",
+    "lib.arcade.jgRef": "Reperensya nga hulagway",
+    "lib.arcade.jgPlaced": "Sa lugar: {a}/{b}",
+    "lib.arcade.golfStrokes": "Mga hampak: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Ikaw ang puti nga checkers, molihok gikan sa taas nga tuo paingon sa ubos nga tuo (imong balay). Ihulog ang dice, i-klik ang checker nga ibalhin, dayon i-klik ang gi-highlight nga destinasyon. Kung mo-landing ka sa punto nga naay usa ra ka checker sa kaaway, mo-hit ka niini ngadto sa tunga nga bar, ug kinahanglan una nila kini ibalik. Dili ka maka-landing sa punto nga naay duha o kapin nga checker sa kaaway. Kung ang tanang 15 nimong checker naa na sa imong balay (ang katapusang 6 ka punto) mahimo nimo kining i-bear off. Una nga makapa-bear off sa tanang 15 modaog.",
+    "lib.arcade.bgRoll": "Ihulog ang dice",
+    "lib.arcade.bgOff": "Bear off",
+    "lib.arcade.bgRollFirst": "Ihulog ang dice",
+    "lib.arcade.bgInfo": "Off: ikaw {a} · kompyuter {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Wala na kay legal nga lihok.",
+    "lib.arcade.note.tienlen": "Upat ka magdudula, 13 ka kard ang matag usa. Han-ay sa kard gikan ubos hangtod taas: 3, 4, … K, A, 2; suit gikan ubos hangtod taas: spades, clubs, diamonds, hearts. Kinsa ang naay 3 sa spades mag-una. Dulaa ang usa ka kard, pares, tulo ka parehas, upat ka parehas, o sunod-sunod nga 3 o kapin nga kard (walay 2). Ang sunod kinahanglan mudula sa parehas nga klase ug mas taas, o mo-pass; ang upat ka parehas makabuntog sa usa ka 2 o pares sa 2. Kung ang tanan mo-pass, ang katapusang nagdula mahimong mag-una ug bisan unsa. Una nga mawalay kard sa kamot modaog. Pili ang mga kard, dayon pindota ang Dula.",
+    "lib.arcade.tlPlay": "Dula",
+    "lib.arcade.tlPass": "Pass",
+    "lib.arcade.tlClear": "Papasa ang pili",
+    "lib.arcade.tlPassed": "nag-pass",
+    "lib.arcade.tlFree": "Walay sulod ang lamesa — mahimo kang mag-una ug bisan unsa",
+    "lib.arcade.tlLeft": "Mga kard nga nahabilin: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "Nag-pass si {p}.",
+    "lib.arcade.tlBad": "Ang gipili nga mga kard dili balido nga set.",
+    "lib.arcade.tlLow": "Dili igo kataas kini nga set aron mabuntog ang lamesa."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Pagsulay sa Oras sa Reaksyon",
       "desc": "I-click sa gutlo nga mahimong berde ang screen; ang imong average sa 5 ka hugna kinahanglan makaabot sa limitasyon sa matag lebel, nga mohugot sa 10 ka lebel."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Ipugas ang mga liso libot sa mga lungag, kuhaa ang liso sa kaatbang ug mulihok pag-usab kung mahulog sa imong tipiganan; dula batok sa kompyuter sa 10 ka lebel gikan sayon hangtod lisod."
+    },
+    "snakes-ladders": {
+      "name": "Bitin ug Hagdanan",
+      "desc": "Ihulog ang dice gikan sa kwadro 1 hangtod 100, saka sa mga hagdanan, likayi ang mga bitin ug maabot ang katapusan sa wala pa ang imong mga kaatbang; 10 ka lebel."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Ibutang, i-slide ug ilupad ang imong mga piyesa aron makahimo ug tulo sa usa ka linya ug makuha ang piyesa sa kaatbang; dula batok sa kompyuter sa 10 ka lebel."
+    },
+    "battleship": {
+      "name": "Battleship",
+      "desc": "Pangitaa ug lunura ang armada sa kompyuter sa 10x10 nga grid sa wala pa nila malunod ang imo; 10 ka lebel samtang mas maalamon ang kompyuter sa pagtag-an."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Tabayag Alimango Isda Pasayan)",
+      "desc": "Tradisyonal nga dulang dice sa Vietnam: mutaya ug virtual nga mga sensilyo sa mga hayop ug i-shake ang tulo ka dice; maabot ang target nga mga sensilyo sa 10 ka lebel (walay tinuod nga kuwarta)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Mutaya sa Player, Banker o Tie nga ang mga kard gihatag sumala sa standard nga lagda, gamit ang virtual nga mga sensilyo; maabot ang target nga mga sensilyo sa 10 ka lebel (walay tinuod nga kuwarta)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Dula sa Tulo ka Kard)",
+      "desc": "Itandi ang 3-kard nga kamot sa dealer: tulo ka parehas, tulo ka litrato, dayon 9 ka puntos hangtod 0; virtual nga mga sensilyo, 10 ka lebel, walay tinuod nga kuwarta."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Markahi ang gitawag nga mga numero sa imong 5x5 nga kard ug singgit ug BINGO sa wala pa ang mga kaatbang nga kompyuter; mas paspas ang tawag sa mga numero sa 10 ka lebel."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Lima ka Dice)",
+      "desc": "Ihulog ang lima ka dice, itago ang maayo ug pun-a ang 13 ka kahon sa iskor; maabot ang target nga iskor sa 10 ka lebel."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Itugma ang suit o ranggo, ang mga eight mo-usab sa suit; papasa ang imong kard sa wala pa ang 1 hangtod 3 ka kaatbang nga kompyuter sa 10 ka lebel."
+    },
+    "car-race": {
+      "name": "Car Race Dodge",
+      "desc": "Ilis ug lane aron likayan ang mga sakyanan sa unahan ug dagan sa tibuok gilay-on; 10 ka lebel nga mas daghang lane ug mas paspas nga trapiko."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Pagbalik-balik sa mga plataporma aron makasaka sa pinakataas nga mahimo nga dili mahulog; 10 ka lebel nga mas layo ang plataporma, naay molihok ug naay mabuak."
+    },
+    "gold-miner": {
+      "name": "Gold Miner",
+      "desc": "Ihulog ang kuwarta aron makuha ang bulawan ug diamante, likayi ang mabug-at nga bato, ug maabot ang target nga kuwarta sulod sa 60 segundos; 10 ka lebel."
+    },
+    "fruit-slice": {
+      "name": "Fruit Slice",
+      "desc": "I-swipe aron putlon ang prutas nga nilupad ug likayi ang mga bomba; 10 ka lebel nga mas daghang prutas ug bomba."
+    },
+    "basketball": {
+      "name": "Basketball Shoot",
+      "desc": "I-drag ug buhii aron isalibay ang bola sa hoop sulod sa limitado nga gidaghanon sa tira; 10 ka lebel, nga naay molihok nga hoop gikan sa lebel 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Pusila ang mga bula aron ikonektar ang 3 o kapin nga parehas ug kolor ug mapukan, ug papasaa kining tanan sa wala pa moabot sa ubos; 10 ka lebel nga mas daghang kolor."
+    },
+    "dot-chase": {
+      "name": "Dot Chase",
+      "desc": "Kan-a ang tanang tulbok sa maze samtang likayan ang mga multo nga nagsunod nimo; 10 ka lebel nga mas daghan ug mas maalamon nga multo."
+    },
+    "kakuro": {
+      "name": "Kakuro (Cross Sums)",
+      "desc": "Pun-a ang puti nga mga selda sa mga digit nga 1–9 aron ang matag laray motugma sa pahibalo nga walay balik-balik; 10 ka lebel, grid gikan 5x5 hangtod 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Pun-a ang grid nga walay balik-balik sa laray o kolum aron ang matag kulungan makahatag sa target niini gamit ang operasyon; 10 ka lebel, grid gikan 3x3 hangtod 6x6."
+    },
+    "word-guess": {
+      "name": "Word Guess (sama sa Wordle)",
+      "desc": "Tagda ang tinagong English nga pulong gamit ang berde, dalag ug abo nga mga hint; 10 ka lebel nga 4–6 ka letra nga mga pulong ug mas gamay nga sulay."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Tagda ang English nga pulong letra-letra sa wala pa maubos ang imong sayop nga tag-an; 10 ka lebel nga mas taas nga mga pulong ug mas gamay nga sayop nga tag-an."
+    },
+    "word-scramble": {
+      "name": "Word Scramble (Anagram)",
+      "desc": "Ihan-ay pag-usab ang gisagol nga mga letra ngadto sa English nga pulong sa wala pa mahurot ang oras; 10 ka lebel, 5 ka pulong kada lebel."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Itugma ang mga tile sa bisan asang tumoy sa kadena ug papasa ang imong kamot sa wala pa ang kompyuter; 10 ka lebel samtang mas maalamon ang kompyuter."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Likayi ang hearts ug ang Queen of Spades sa dula sa kard nga upat ka magdudula; mas ubos nga iskor mas maayo; 10 ka lebel batok sa mas maalamon nga magdudula nga kompyuter."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtual nga chips)",
+      "desc": "Heads-up nga poker batok sa kompyuter gamit ang virtual nga chips: fold, call o raise, ug modaog kung maubusan ug chips ang kompyuter; 10 ka lebel, walay tinuod nga kuwarta."
+    },
+    "n-back": {
+      "name": "N-Back nga Memorya",
+      "desc": "Tan-awa ang nagdan-ag nga kwadro ug pindota ang Match kung parehas kini sa N ka lakang ang milabay; 10 ka lebel nga ang N hangtod 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "I-klik aron mag-luto ug cookies, palita ang mga katabang nga mag-luto sa kaugalingon ug maabot ang target sulod sa 2 minuto; 10 ka lebel."
+    },
+    "tile-connect": {
+      "name": "Tile Connect (sama sa Onet)",
+      "desc": "Ikonektar ang parehas nga mga tile gamit ang dalan nga hangtod duha ka liko ug papasaa ang board sa wala pa mahurot ang oras; 10 ka lebel, mas dagkong board."
+    },
+    "jigsaw": {
+      "name": "Picture Jigsaw",
+      "desc": "I-swap ang gisagol nga mga piraso aron mabuo pag-usab ang hulagway; 10 ka lebel gikan 3x3 hangtod 6x6 ka piraso."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Pabalika ug buhii aron isulod ang bola sa lungag sulod sa limitasyon sa hampak; 10 ka kurso nga naay mga paril ug balas."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Ihulog ang dice, i-uli ang imong mga checker sa balay ug i-bear off sa wala pa ang kompyuter, ug i-hit ang mga nag-inusarang checker niini; 10 ka lebel."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Thirteen)",
+      "desc": "Ang Vietnamese nga dula sa kard alang sa upat: dulaa ang usa, pares, sunod-sunod ug upat ka parehas aron mauna ka nga mawalay kard; 10 ka lebel."
     }
   },
   "s": {

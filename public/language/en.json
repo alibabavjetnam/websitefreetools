@@ -711,7 +711,30 @@
     "lib.arcade.jgWin": "Checkmate — you win.",
     "lib.arcade.jgLose": "You were checkmated.",
     "lib.arcade.note.pinball": "Press Space, Up or tap the table to launch the ball. Hold Left (or touch the left half of the table) to raise the left flipper and Right (or the right half) for the right one — tap in rhythm instead of holding. Round bumpers score 100 points each. You have 3 balls; reach the target score before they run out to clear the level.",
-    "lib.arcade.pinBalls": "Balls: {n} · Target: {t}"
+    "lib.arcade.pinBalls": "Balls: {n} · Target: {t}",
+    "lib.arcade.note.cribbage": "Two-player cribbage, a race to 61 points. Each deal you get 6 cards and put 2 face down into the crib (it belongs to the dealer). A starter card is turned up. Then take turns playing cards face up with the running total never above 31: reaching 15 or 31 scores 2, matching the last card scores 2/6/12, a run of 3 or more (in any order) scores its length, and when nobody can play the last player scores 1 (\"Go\"). Then each hand of 4 is counted with the starter: every combination totalling 15 scores 2, each pair 2, a run of 3+ its length, four cards of one suit 4 (5 with the starter), and a Jack matching the starter suit 1. The non-dealer counts first, then the dealer counts their hand and the crib.",
+    "lib.arcade.cbFifteen": "Fifteen",
+    "lib.arcade.cbPair": "Pair",
+    "lib.arcade.cbRun": "Run",
+    "lib.arcade.cbFlush": "Flush",
+    "lib.arcade.cbNobs": "Jack matching the starter",
+    "lib.arcade.cbHeels": "Jack as starter",
+    "lib.arcade.cbYou": "You",
+    "lib.arcade.cbFoe": "Computer",
+    "lib.arcade.cbLast": "Last card",
+    "lib.arcade.cbCount": "Total: {n}",
+    "lib.arcade.cbYouDeal": "You deal",
+    "lib.arcade.cbFoeDeal": "Computer deals",
+    "lib.arcade.cbPick": "Choose 2 cards for the crib",
+    "lib.arcade.cbCrib": "Crib",
+    "lib.arcade.cbYourHand": "Your hand",
+    "lib.arcade.cbFoeHand": "Computer hand",
+    "lib.arcade.cbStarter": "Starter",
+    "lib.arcade.cbZero": "0 points",
+    "lib.arcade.cbPlayed": "Played",
+    "lib.arcade.cbToCrib": "Put in crib",
+    "lib.arcade.cbNext": "Continue",
+    "lib.arcade.cbHand": "Hand"
   },
   "pages": {
     "home": {
@@ -1492,6 +1515,10 @@
     "pinball": {
       "name": "Pinball",
       "desc": "Flip left and right to keep the ball alive, hit the bumpers and reach the target score before your 3 balls run out; 10 levels."
+    },
+    "cribbage": {
+      "name": "Cribbage",
+      "desc": "Two-player cribbage against the computer: crib, pegging to 31, counting hands, race to 61 points; 10 levels."
     }
   },
   "s": {

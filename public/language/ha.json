@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Tsalle",
     "lib.arcade.aimTarget": "Manufa",
     "lib.game.soundOn": "Kunna sauti",
-    "lib.game.soundOff": "Kashe sauti"
+    "lib.game.soundOff": "Kashe sauti",
+    "lib.arcade.note.kalah": "Kai kana wasa layin ƙasa, kwamfuta tana wasa na sama; babban rami a dama shi ne ma'ajiyarka. Danna rami don ɗaukar dukkan iri sannan ka watsa su gaba da agogo, ɗaya a kowane rami (ka tsallake ma'ajiyar abokin hamayya). Idan iri na ƙarshe ya faɗa cikin ma'ajiyarka, za ka sake wasa; idan ya faɗa cikin ramin da babu komai a ɓangarenka daura da ramin da ke da iri, ka ƙwace waɗannan iri. Idan ɗaya ɓangaren ya ƙare, iri na ɗayan ɓangaren suna zuwa ma'ajiyar mai su; wanda ma'ajiyarsa ta fi girma ya yi nasara.",
+    "lib.arcade.note.snakes": "Jefa dai ka matsa adadin ɗakunan da ya fito, daga 1 zuwa 100. Idan ka sauka a ƙasan tsani za ka hau, idan kuma a kan kan maciji za ka zame ƙasa. Daga mataki na 4 dole ne ka samu lamba daidai don sauka a 100. Matakai masu tsayi suna da macizai da yawa, tsani kaɗan da abokan hamayya da yawa. Wanda ya fara kai wa 100 ya yi nasara.",
+    "lib.arcade.square": "Ɗaki {n}",
+    "lib.arcade.ladderUp": "Hawa tsani!",
+    "lib.arcade.snakeDown": "Maciji ya haɗiye ka!",
+    "lib.arcade.needExact": "Kana buƙatar lamba daidai don sauka a 100.",
+    "lib.arcade.note.nmm": "Kowane ɓangare yana da yankuna 9. Mataki na 1: ku musanya wajen sanya yankuna a wuraren da babu komai. Mataki na 2: zura yanki zuwa wuri maras komai da ke kusa. Idan yankuna 3 kawai suka rage, za ka iya «tashi» zuwa kowane wuri maras komai. Yi uku a layi ɗaya («mill») don cire yanki na abokin hamayya (waɗanda ba su cikin mill da farko). Za ka yi rashin nasara idan yankuna 2 suka rage ko ba za ka iya motsawa ba. Kana wasa fari kuma kana farawa.",
+    "lib.arcade.inHand": "Za a sa: {a} · {b}",
+    "lib.arcade.removePiece": "Zaɓi yanki na abokin hamayya don cirewa.",
+    "lib.arcade.enemyWaters": "Ruwan abokin gaba (danna don harbi)",
+    "lib.arcade.yourFleet": "Rundunar jiragenka",
+    "lib.arcade.note.battleship": "Kowane ɓangare yana da jiragen ruwa 5 (tsayi 5, 4, 3, 3, 2) da aka ajiye ba tare da tsari ba a kan allon 10x10. Ku musanya wajen harbin wani akwati: bugu yana yin ja, kuskure yana yin shuɗi mai haske, kuma idan an buga dukkan akwatunan jirgi sai ya nutse. Ka nutsar da duk rundunar abokin gaba tukuna don yin nasara. A matakai masu tsayi kwamfuta tana hasashen wuraren jiragenka da wayo.",
+    "lib.arcade.shipsLeft": "Jiragen da suka rage: kai {a} · abokin gaba {b}",
+    "lib.arcade.theySunk": "Abokin gaba ya nutsar da ɗaya daga cikin jiragenka!",
+    "lib.arcade.theyHit": "Abokin gaba ya buga ɗaya daga cikin jiragenka.",
+    "lib.arcade.theyMiss": "Abokin gaba ya yi kuskure.",
+    "lib.arcade.youSunk": "Ka nutsar da jirgin abokin gaba!",
+    "lib.arcade.youHit": "Ka buga!",
+    "lib.arcade.youMiss": "Kuskure.",
+    "lib.arcade.shake": "Girgiza",
+    "lib.arcade.clearBets": "Share caca",
+    "lib.arcade.note.bau-cua": "Kuɗaɗen kwaikwayo kawai — ba kuɗi na gaske ba. Zaɓi darajar kuɗi, danna dabbobi don sanya caca, sannan ka danna «Girgiza». Ga kowace dai da ta dace da dabbar da ka yi caca a kanta, za ka dawo da cacar ka tare da irin adadin ƙari. Kai ga kuɗin manufa cikin zagayen da aka ba da don ƙetare matakin.",
+    "lib.arcade.note.baccarat": "Kuɗaɗen kwaikwayo kawai — ba kuɗi na gaske ba. Yi caca a kan Ɗan wasa, Banki ko Daidai, sannan ka danna «Raba». Darajar hannu ita ce lambar ƙarshe ta jimla (A = 1, 2–9 darajarsu, 10/J/Q/K = 0); hannun da ya fi kusa da 9 ne ke nasara, kuma ana ɗaukar kati na uku bisa ƙa'idodin da aka saba. Ɗan wasa yana biya 1:1, Banki 0.95:1, Daidai 8:1 (idan daidai ne, ana dawo da cacar Ɗan wasa/Banki). Kai ga kuɗin manufa cikin zagayen da aka ba da don ƙetare matakin.",
+    "lib.arcade.banker": "Banki",
+    "lib.arcade.player": "Ɗan wasa",
+    "lib.arcade.tie": "Daidai",
+    "lib.arcade.openCards": "Buɗe",
+    "lib.arcade.note.bai-cao": "Kuɗaɗen kwaikwayo kawai — ba kuɗi na gaske ba. Kowane ɓangare yana samun kati 3. Makin hannu shi ne lambar ƙarshe ta jimla (A = 1, 2–9 darajarsu, 10/J/Q/K = 10 wato maki 0). Matsayi: uku iri ɗaya («Sáp») shi ne mafi girma, sannan kati uku masu hoto («Ba tiên»), sannan maki 9 zuwa 0. Sanya caca, danna «Raba» sannan «Buɗe» don kwatantawa da mai rabawa. Daga mataki na 6 mai rabawa yana cin nasara idan daidai ne. Kai ga kuɗin manufa cikin zagayen da aka ba da don ƙetare matakin.",
+    "lib.arcade.caoSap": "Uku iri ɗaya",
+    "lib.arcade.caoBaTien": "Kati uku masu hoto",
+    "lib.arcade.caoPts": "maki {n}",
+    "lib.arcade.note.bingo": "Kwamfuta tana kiran lambobi daga 1 zuwa 75. Idan lambar da aka kira tana kan katinka, danna ta don yin alama (akwatin tsakiya kyauta ne). Cika layi, ginshiƙi ko diagonal sannan ka danna BINGO! — dole ne ka doke abokan hamayyar kwamfuta. BINGO! na ƙarya yana kulle maɓallin na ƴan daƙiƙu. Matakai masu tsayi suna kira da sauri kuma suna da abokan hamayya da yawa.",
+    "lib.arcade.opponentsN": "Abokan hamayya: {n}",
+    "lib.arcade.falseBingo": "Har yanzu babu cikakken layi! An kulle maɓallin na daƙiƙa 3.",
+    "lib.arcade.bingoGo": "Ana kiran lambobi!",
+    "lib.arcade.note.yahtzee": "A kowane zagaye kana jefa dai 5 har sau 3: danna dai don riƙe shi, sannan ka danna «Jefa» don sake jefa sauran. Sannan zaɓi akwati a cikin tebur don samun maki (kowane akwati ana amfani da shi sau ɗaya; akwatin da bai dace ba yana ba da 0). Zagaye 13. Akwatunan Ɗaya–Shida suna ƙara kyautar 35 idan jimlarsu ta kai 63 ko fiye. Kai ga makin manufar matakin don cin nasara.",
+    "lib.arcade.turnN": "Zagaye {n}/13",
+    "lib.arcade.pickCat": "Zaɓi akwati don samun maki",
+    "lib.arcade.rollsLeft": "Jefa ({n} sun rage)",
+    "lib.arcade.upperBonus": "Kyautar Ɗaya–Shida",
+    "lib.arcade.scored": "Ka samu {n}",
+    "lib.arcade.note.crazy-eights": "Yi wasa da kati da ya dace da kati na sama a tarin da aka jefar ta fuska ko daraja. Takwas na da ikon musamman: yi wasa da shi a kowane lokaci kuma ka zaɓi sabuwar fuska. Idan ba ka da kati da za ka yi wasa da shi, ɗauka daga tarin (har kati 3); idan har yanzu ba za ka iya ba, ka wuce. Wanda ya fara kwashe hannunsa ya yi nasara. Matakai masu tsayi suna da abokan hamayya da yawa kuma kwamfuta tana wasa da wayo.",
+    "lib.arcade.opponent": "Abokin hamayya",
+    "lib.arcade.pileLeft": "Tarin ɗauka: {n}",
+    "lib.arcade.pickSuit": "Zaɓi sabuwar fuska",
+    "lib.arcade.aiSuit": "Kwamfuta ta zaɓi {s}",
+    "lib.arcade.aiPass": "Kwamfuta ta wuce.",
+    "lib.arcade.mustPlay": "Kana da kati da za ka iya wasa da shi — yi wasa.",
+    "lib.arcade.youPass": "Ka ɗauki kati 3 ka wuce.",
+    "lib.arcade.bcGourd": "Duma",
+    "lib.arcade.bcCrab": "Kaguwa",
+    "lib.arcade.bcShrimp": "Jatan lande",
+    "lib.arcade.bcFish": "Kifi",
+    "lib.arcade.bcRooster": "Zakara",
+    "lib.arcade.bcDeer": "Barewa",
+    "lib.arcade.yOnes": "Ɗaya",
+    "lib.arcade.yTwos": "Biyu",
+    "lib.arcade.yThrees": "Uku",
+    "lib.arcade.yFours": "Huɗu",
+    "lib.arcade.yFives": "Biyar",
+    "lib.arcade.ySixes": "Shida",
+    "lib.arcade.yThree": "Uku iri ɗaya",
+    "lib.arcade.yFour": "Huɗu iri ɗaya",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Ƙaramin jeri (30)",
+    "lib.arcade.yLarge": "Babban jeri (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Dama",
+    "lib.arcade.note.race": "Danna ← → (ko ka taɓa layin da kake so) don canza layi ka guji motocin gaba. Kana da rayuka 3; tuƙa duk nisan don ƙetare matakin. Matakai masu tsayi suna ƙara layuka da zirga-zirga mai sauri.",
+    "lib.arcade.note.jump": "Hali yana tsalle da kansa. Danna ← → ko ka ja yatsa don sauka a kan dandamali na gaba. Dandamali masu shuɗi suna motsawa, masu launin ruwan ƙasa suna karyewa idan ka sauka. Faɗuwa daga allo yana nufin rashin nasara; hau sama isasshe don ƙetare matakin.",
+    "lib.arcade.note.miner": "Ƙugiya tana kaɗawa gaba da baya; danna Space, ↓ ko ka taɓa filin don saukar da ita. Babban zinariya da duwatsu suna da nauyi kuma ana ja su a hankali; lu'ulu'u suna da daraja sosai. Kai ga kuɗin manufa kafin daƙiƙa 60 su ƙare.",
+    "lib.arcade.note.slicer": "Ja yatsa ko linzamin kwamfuta a kan 'ya'yan itace don yanka. Ka guji bam ɗin baƙi. Rashin yanka 'ya'yan itace ko yanka bam yana ɗaukar rai (kana da 3). Yanka 'ya'yan itace isassu don ƙetare matakin.",
+    "lib.arcade.note.hoops": "Danna a filin, ja ƙasa (kamar majajjawa) sannan ka saki don harba ƙwallo zuwa zobe. Duk lokacin da ka ƙara ja, jifan zai ƙara ƙarfi. Zura isassun ƙwallaye cikin yunƙurin da kake da su; daga mataki na 4 zobe yana motsawa.",
+    "lib.arcade.note.bubbles": "Motsa linzamin kwamfuta ko yatsa don nufa, sannan ka danna/taɓa ko ka danna Space/Harba. Haɗa kumfa 3 ko fiye masu launi ɗaya don fashe su; kumfa da suka rasa tallafi suna faɗuwa. Layukan suna sauka a hankali, don haka ka nisanta su daga layin ƙasa. Share duk kumfa don yin nasara.",
+    "lib.arcade.note.chase": "Yi amfani da maɓallan kibiya (ko ja yatsa / maɓalli) don juyawa ka ci duk digo a cikin maze yayin da kake guje wa fatalwowi da ke bin ka. Kana da rayuka 3; matakai masu tsayi suna da ƙarin fatalwowi masu sauri da kuma wayo wajen bi.",
+    "lib.arcade.height": "Tsayi: {n}/{t} m",
+    "lib.arcade.money": "Kuɗi: {n}/{t}",
+    "lib.arcade.sliced": "An yanka: {n}/{t}",
+    "lib.arcade.hoopScore": "An zura: {n}/{t}",
+    "lib.arcade.shotsLeft": "Yunƙuri {n} ya rage",
+    "lib.arcade.bubbleLeft": "Kumfa {n} sun rage",
+    "lib.arcade.shotsN": "Yunƙuri: {n}",
+    "lib.arcade.dotsLeft": "Digo {n} sun rage",
+    "lib.arcade.note.kakuro": "Cika akwatuna farare da lambobi 1–9 ta yadda kowane jeri ya yi jimla daidai da alamar da ke akwatin baƙi (lambar sama dama ta jerin dama ne, ta ƙasa hagu ta jerin ƙasa ne), ba tare da maimaita lamba a jeri ɗaya ba. Yi amfani da maɓallan kibiya don motsawa.",
+    "lib.arcade.note.kenken": "Cika allon da lambobi daga 1 zuwa N ba tare da maimaita lamba a kowane jere ko ginshiƙi ba. Kowace ƙungiya mai layi mai kauri tana nuna manufa da aiki (+, −, ×, ÷): lambobin da ke cikin ƙungiyar dole su ba da wannan sakamako. Yi amfani da maɓallan kibiya don motsawa.",
+    "lib.arcade.note.wordGuess": "Yi hasashen kalmar Turanci ta sirri. Bayan kowane yunƙuri, kore yana nufin harafin daidai a wurin daidai, rawaya yana nufin harafin yana cikin kalmar amma a wani wuri, toka yana nufin ba ya cikin kalmar. Rubuta a madannai ko amfani da maɓallan allo, sannan ka danna Enter don aikawa. Matakai masu tsayi suna da dogayen kalmomi da ƙarancin yunƙuri.",
+    "lib.arcade.note.hangman": "Yi hasashen kalmar Turanci ta sirri ta zaɓar haruffa ɗaya bayan ɗaya. Kowane harafi na kuskure yana ƙara wani sashe a hoton wanda aka rataye; idan hasashen kuskure ya ƙare, ka yi rashin nasara. Matakai masu tsayi suna da dogayen kalmomi da ƙarancin hasashen kuskure da aka halatta.",
+    "lib.arcade.note.scramble": "Jera haruffan da aka gauraya su zama ainihin kalmar Turanci ka rubuta ta a akwatin amsa. Kowane mataki yana da kalmomi 5; warware aƙalla 4 kafin lokacin kowace kalma ya ƙare don ƙetare matakin. Alamar tana bayyana harafin farko.",
+    "lib.arcade.cellsLeft": "Akwatuna marasa komai {n} sun rage",
+    "lib.arcade.wrongN": "Akwatuna {n} ba daidai ba ne.",
+    "lib.arcade.noError": "Ba a sami kuskure ba har yanzu.",
+    "lib.arcade.tooShort": "Haruffa ba su isa ba",
+    "lib.arcade.answerIs": "Amsa: {w}",
+    "lib.arcade.livesLeft": "Hasashen kuskure {n} ya rage",
+    "lib.arcade.yourAnswer": "Amsarka",
+    "lib.arcade.skip": "Tsallake",
+    "lib.arcade.notThis": "Ba daidai ba, sake gwadawa.",
+    "lib.arcade.startsWith": "Harafin farko: {c}",
+    "lib.arcade.note.domino": "Kowane ɗan wasa yana samun guda 7; wanda ke da mafi girman biyu iri ɗaya ne ke farawa. Yi wasa da gunda wadda lambarta ta dace da ɗaya daga ƙarshen jerin. Idan ba za ka iya ba, ɗauka daga ma'aji har sai ka iya; idan babu komai, ka wuce. Wanda ya fara kwashe hannunsa ya yi nasara; idan duka an toshe, wanda jimlar digonsa ta fi ƙanƙanta ya yi nasara.",
+    "lib.arcade.note.hearts": "’Yan wasa huɗu, kati 13 kowanne. 2 na clubs ne ke farawa. Dole ne ka bi fuskar da aka fara idan za ka iya. Kowace zuciya maki 1 ce kuma Sarauniyar Spades 13; wanda ya ci zagaye yana ɗaukar makinsa. Ƙasa ya fi kyau, kuma ɗaukar duka maki 26 yana ba kowa 26. Ba za ka iya farawa da zuciya ba sai an yi wasa da ɗaya. Bayan hannu na ƙarshe, kana cin nasara idan makinka shi ne mafi ƙanƙanta (ko ya yi daidai da mafi ƙanƙanta).",
+    "lib.arcade.note.holdem": "Fuska-da-fuska da kwamfuta da kuɗaɗen kwaikwayo kawai. Kowane ɗan wasa yana samun kati 2 na sirri kuma ana buɗe kati 5 na gama-gari (flop, turn, river); yi mafi kyawun hannun kati 5. A kowane zagaye za ka iya fold, call (ko check) ko raise. Blinds suna ƙaruwa kowane hannu 4. Kana cin nasara idan kwamfuta ta ƙare kuɗaɗe, ko ta hanyar samun kuɗaɗe fiye bayan iyakar hannuwa. Babu kuɗi na gaske da ke ciki.",
+    "lib.arcade.dmDraw": "Ɗauki gunda",
+    "lib.arcade.dmPass": "Wuce",
+    "lib.arcade.dmEmpty": "Ba a yi wasa da gunda ba tukuna",
+    "lib.arcade.dmYard": "Ma'aji: gunda {n}",
+    "lib.arcade.dmLeft": "Ƙarshen hagu",
+    "lib.arcade.dmRight": "Ƙarshen dama",
+    "lib.arcade.dmTie": "Canjaras! Ɓangarori biyu daidai suke.",
+    "lib.arcade.hrHand": "Hannu {n}/{t}",
+    "lib.arcade.hrTook": "{p} ya ci zagaye (maki {n}).",
+    "lib.arcade.hrIllegal": "Ba za ka iya yin wasa da wannan kati ba (bi fuska, ko ba a riga an halatta farawa da zuciya ba).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Tukunya: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise zuwa",
+    "lib.arcade.raiseN": "Raise zuwa {n}",
+    "lib.arcade.thOppFold": "Kwamfuta ta yi fold; ka ci wannan hannu.",
+    "lib.arcade.thYouFold": "Ka yi fold.",
+    "lib.arcade.thOppWin": "Kwamfuta ta ci wannan hannu",
+    "lib.arcade.thYouWin": "Ka ci wannan hannu",
+    "lib.arcade.thSplit": "An raba tukunya",
+    "lib.arcade.thAiFold": "Kwamfuta ta yi fold.",
+    "lib.arcade.thAiRaise": "Kwamfuta ta yi raise zuwa {n}.",
+    "lib.arcade.thAiCall": "Kwamfuta ta yi call / check.",
+    "lib.arcade.hand.high": "Kati mai girma",
+    "lib.arcade.hand.pair": "Biyu",
+    "lib.arcade.hand.twoPair": "Biyu-biyu",
+    "lib.arcade.hand.trips": "Uku iri ɗaya",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Huɗu iri ɗaya",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Murabba'i yana haskawa ɗaya bayan ɗaya a kan allon 3x3. Danna «Daidai!» (ko Space) idan wurin da ya haska ɗaya ne da wanda ya gabata matakai N (ana nuna N a sama). Kana buƙatar aƙalla 80% na yanke shawara daidai don ƙetare matakin. Matakai masu tsayi suna amfani da N mafi girma.",
+    "lib.arcade.nbMatch": "Daidai!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Daidai: {a} · Kuskure: {b}",
+    "lib.arcade.nbAcc": "Daidaito: {n}%",
+    "lib.arcade.note.clicker": "Danna kuki don toya kuki, sannan ka kashe su wajen sayen masu taimako da ke toya kai tsaye (farashi yana ƙaruwa da kowane da ka saya). Toya adadin kuki na manufa cikin mintuna 2 don ƙetare matakin.",
+    "lib.arcade.ckCursor": "Siginan kwamfuta",
+    "lib.arcade.ckGrandma": "Kakar mai toya",
+    "lib.arcade.ckFarm": "Gona",
+    "lib.arcade.ckMine": "Ma'adinin sukari",
+    "lib.arcade.ckFactory": "Masana'anta",
+    "lib.arcade.ckCookie": "Kuki",
+    "lib.arcade.ckEarned": "An toya: {n}/{t}",
+    "lib.arcade.chips2": "Kuki: {n}",
+    "lib.arcade.ckCps": "Kuki {n}/daƙiƙa",
+    "lib.arcade.note.onet": "Zaɓi fale-fale biyu iri ɗaya da za a iya haɗa su ta hanyar da ba ta da juyi fiye da 2 kuma ba ta ratsa wasu fale-fale ba don cire su. Share duk fale-falen kafin lokaci ya ƙare don yin nasara. Idan babu sauran motsi za ka iya gauraya (sau iyakantacce).",
+    "lib.arcade.shuffle": "Gauraya",
+    "lib.arcade.tilesLeft": "Fale-fale {n} sun rage",
+    "lib.arcade.autoShuffle": "Babu sauran motsi — an gauraya kai tsaye.",
+    "lib.arcade.note.jigsaw": "An yanka hoton gunduwa-gunduwa kuma an gauraya. Taɓa gunda ɗaya, sannan wata don musanya su, ka sake gina hoton da aka nuna a matsayin tunani. Gundunan da ke wurin daidai suna samun kan iyaka kore. Matakai masu tsayi suna da gunduwa fiye da haka.",
+    "lib.arcade.jgRef": "Hoton tunani",
+    "lib.arcade.jgPlaced": "A wurin da ya dace: {a}/{b}",
+    "lib.arcade.golfStrokes": "Bugu: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Kana wasa da farare, kana motsawa daga sama dama zuwa ƙasa dama (gidanka). Jefa dai, danna gunda da kake son motsawa, sannan ka danna wurin zuwa da aka haska. Sauka a kan wuri da ke da gunda ɗaya kawai ta abokin hamayya yana buga ta zuwa mashaya ta tsakiya, kuma wannan ɗan wasa dole ne ya dawo da ita tukuna. Ba za ka iya sauka a kan wuri mai gunduwa biyu ko fiye na abokin hamayya ba. Idan duka gunduwanka 15 suna gida (wurare 6 na ƙarshe) za ka iya cire su. Wanda ya fara cire duka 15 ya yi nasara.",
+    "lib.arcade.bgRoll": "Jefa dai",
+    "lib.arcade.bgOff": "Cire",
+    "lib.arcade.bgRollFirst": "Jefa dai",
+    "lib.arcade.bgInfo": "An cire: kai {a} · kwamfuta {b} · Pips: {c} / {d}",
+    "lib.arcade.youNoMove": "Ba ka da sauran motsi halal.",
+    "lib.arcade.note.tienlen": "’Yan wasa huɗu, kati 13 kowanne. Jerin kati daga ƙasa zuwa sama: 3, 4, … K, A, 2; fuskoki daga ƙasa zuwa sama: spades, clubs, diamonds, hearts. Wanda ke da 3 na spades ne ke farawa. Yi wasa da kati ɗaya, biyu, uku iri ɗaya, huɗu iri ɗaya, ko jeri na kati 3 ko fiye a jere (babu 2). Ɗan wasa na gaba dole ya yi wasa da irin wannan mai girma ko ya wuce; huɗu iri ɗaya na iya doke 2 ɗaya ko biyu na 2. Idan duk sauran sun wuce, wanda ya yi wasa na ƙarshe zai iya fara kowane abu. Wanda ya fara kwashe hannunsa ya yi nasara. Zaɓi kati sannan ka danna «Yi wasa».",
+    "lib.arcade.tlPlay": "Yi wasa",
+    "lib.arcade.tlPass": "Wuce",
+    "lib.arcade.tlClear": "Share zaɓi",
+    "lib.arcade.tlPassed": "ya wuce",
+    "lib.arcade.tlFree": "Tebur babu komai — za ka iya fara kowane abu",
+    "lib.arcade.tlLeft": "Kati da suka rage: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} ya wuce.",
+    "lib.arcade.tlBad": "Kati da aka zaɓa ba sa yin ingantaccen saiti.",
+    "lib.arcade.tlLow": "Wannan saiti bai isa girma don doke wanda ke kan tebur ba."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Gwajin Saurin Martani",
       "desc": "Danna a daidai lokacin da allon ya zama kore; matsakaicinka a zagaye 5 dole ya cika iyakar kowane mataki, wanda ke tsananta a matakai 10."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Watsa iri a cikin ramuka, ƙwace irin abokin hamayya kuma ka sake motsawa idan ka sauka a ma'ajiyarka; yi wasa da kwamfuta cikin matakai 10 daga sauƙi zuwa wuya."
+    },
+    "snakes-ladders": {
+      "name": "Macizai da Tsani",
+      "desc": "Jefa dai daga ɗaki 1 zuwa 100, hau tsani, ka guji macizai ka isa ƙarshe kafin abokan hamayyarka; matakai 10."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Sanya, zura da kuma tashi da yankunanka don yin uku a layi ɗaya ka cire yankunan abokin hamayya; yi wasa da kwamfuta cikin matakai 10."
+    },
+    "battleship": {
+      "name": "Battleship",
+      "desc": "Nemo ka nutsar da rundunar kwamfuta a kan allon 10x10 kafin ta nutsar da taka; matakai 10 yayin da kwamfuta ke hasashe da wayo."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Duma Kaguwa Kifi Jatan lande)",
+      "desc": "Wasan dai na gargajiya na Vietnam: yi caca da kuɗaɗen kwaikwayo a kan dabbobi ka girgiza dai uku; kai ga kuɗin manufa cikin matakai 10 (babu kuɗi na gaske)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Yi caca a kan Ɗan wasa, Banki ko Daidai da kati da aka raba bisa ƙa'idodin da aka saba, ta amfani da kuɗaɗen kwaikwayo; kai ga kuɗin manufa cikin matakai 10 (babu kuɗi na gaske)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Wasan kati uku)",
+      "desc": "Kwatanta hannuwan kati 3 da mai rabawa: uku iri ɗaya, kati uku masu hoto, sannan maki 9 zuwa 0; kuɗaɗen kwaikwayo, matakai 10, babu kuɗi na gaske."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Yi alama a kan lambobin da aka kira a katinka na 5x5 ka kira BINGO kafin abokan hamayyar kwamfuta; ana kiran lambobi da sauri cikin matakai 10."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Dai biyar)",
+      "desc": "Jefa dai biyar, riƙe masu kyau ka cika akwatunan maki 13; kai ga makin manufa cikin matakai 10."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Daidaita fuska ko daraja, takwas na canza fuska; kwashe hannunka kafin abokan hamayyar kwamfuta 1 zuwa 3 cikin matakai 10."
+    },
+    "car-race": {
+      "name": "Car Race Dodge",
+      "desc": "Canza layi don guje wa motocin gaba ka tuƙa duk nisan; matakai 10 masu ƙarin layuka da zirga-zirga mai sauri."
+    },
+    "sky-jump": {
+      "name": "Sky Jump",
+      "desc": "Yi tsalle daga dandamali zuwa dandamali don hawa sama gwargwadon iyawarka ba tare da faɗuwa ba; matakai 10 masu dandamali kaɗan, masu motsawa da masu karyewa."
+    },
+    "gold-miner": {
+      "name": "Gold Miner",
+      "desc": "Saukar da ƙugiya don jawo zinariya da lu'ulu'u, ka guji duwatsu masu nauyi, ka kai ga kuɗin manufa cikin daƙiƙa 60; matakai 10."
+    },
+    "fruit-slice": {
+      "name": "Fruit Slice",
+      "desc": "Ja don yanka 'ya'yan itacen da ke tashi sama ka guji bam; matakai 10 masu ƙarin 'ya'yan itace da bama-bamai."
+    },
+    "basketball": {
+      "name": "Basketball Shoot",
+      "desc": "Ja ka saki don harba ƙwallo zuwa zobe cikin iyakantaccen adadin yunƙuri; matakai 10, zobe yana motsawa daga mataki na 4."
+    },
+    "bubble-shooter": {
+      "name": "Bubble Shooter",
+      "desc": "Harba kumfa don haɗa 3 ko fiye masu launi ɗaya ka fashe su, ka share su duka kafin su kai ƙasa; matakai 10 masu ƙarin launuka."
+    },
+    "dot-chase": {
+      "name": "Dot Chase",
+      "desc": "Ci duk digo a cikin maze yayin da kake guje wa fatalwowin da ke bin ka; matakai 10 masu ƙarin fatalwowi masu wayo."
+    },
+    "kakuro": {
+      "name": "Kakuro (Cross Sums)",
+      "desc": "Cika akwatuna farare da lambobi 1–9 ta yadda kowane jeri ya yi jimlar alamarsa ba tare da maimaitawa ba; matakai 10, allo daga 5x5 zuwa 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Cika allon ba tare da maimaitawa a jere ko ginshiƙai ba ta yadda kowace ƙungiya ta ba da manufarta ta aikinta; matakai 10, allo daga 3x3 zuwa 6x6."
+    },
+    "word-guess": {
+      "name": "Word Guess (irin Wordle)",
+      "desc": "Yi hasashen kalmar Turanci ta sirri da alamomin kore, rawaya da toka; matakai 10 masu kalmomi na haruffa 4–6 da ƙarancin yunƙuri."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Yi hasashen kalmar Turanci harafi ɗaya bayan ɗaya kafin hasashen kuskure ya ƙare; matakai 10 masu dogayen kalmomi da ƙarancin hasashen kuskure."
+    },
+    "word-scramble": {
+      "name": "Word Scramble (Anagram)",
+      "desc": "Jera haruffan da aka gauraya su zama kalmar Turanci kafin lokaci ya ƙare; matakai 10, kalmomi 5 a kowane mataki."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Daidaita gunduwa a ƙarshen jerin ka kwashe hannunka kafin kwamfuta; matakai 10 yayin da kwamfuta ke ƙara wayo."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Ka guji zukata da Sarauniyar Spades a wasan kati na mutum huɗu; maki mafi ƙanƙanta ya fi kyau; matakai 10 a kan ’yan wasan kwamfuta masu wayo."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (kuɗaɗen kwaikwayo)",
+      "desc": "Fuska-da-fuska da kwamfuta a poker da kuɗaɗen kwaikwayo: yi fold, call ko raise, ka ci nasara idan kwamfuta ta ƙare kuɗaɗe; matakai 10, babu kuɗi na gaske."
+    },
+    "n-back": {
+      "name": "N-Back Memory",
+      "desc": "Kalli murabba'in da ya haska ka danna Daidai idan ɗaya ne da wanda ya gabata matakai N; matakai 10 tare da N har zuwa 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Danna don toya kuki, sayi masu taimako da ke toya kai tsaye ka kai ga manufa cikin mintuna 2; matakai 10."
+    },
+    "tile-connect": {
+      "name": "Tile Connect (irin Onet)",
+      "desc": "Haɗa fale-fale iri ɗaya ta hanyar da ba ta wuce juyi biyu ba ka share allo kafin lokaci ya ƙare; matakai 10, manyan allo."
+    },
+    "jigsaw": {
+      "name": "Picture Jigsaw",
+      "desc": "Musanya gunduwan da aka gauraya don sake gina hoton; matakai 10 daga gunduwa 3x3 zuwa 6x6."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Ja baya ka saki don buga ƙwallo cikin rami cikin iyakar bugu; filaye 10 masu bango da yashi."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Jefa dai, yi gudu da gunduwanka gida ka cire su kafin kwamfuta, kana buga gunduwanta guda ɗaya a hanya; matakai 10."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Goma sha uku)",
+      "desc": "Wasan kati na Vietnam na mutum huɗu: yi wasa da guda ɗaya, biyu, jeri da huɗu iri ɗaya don kwashe hannunka tukuna; matakai 10."
     }
   },
   "s": {

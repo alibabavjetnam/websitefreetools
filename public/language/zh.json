@@ -711,7 +711,30 @@
     "lib.arcade.jgWin": "将死 — 你赢了。",
     "lib.arcade.jgLose": "你被将死了。",
     "lib.arcade.note.pinball": "按空格键、上键或点击球台发射球。按住左键（或触摸球台左半边）抬起左挡板，右键（右半边）抬起右挡板——要按节奏拨动，不要一直按住。撞到圆形弹射器每次得 100 分。共有 3 个球；在球用完前达到目标分数即可过关。",
-    "lib.arcade.pinBalls": "球：{n} · 目标：{t}"
+    "lib.arcade.pinBalls": "球：{n} · 目标：{t}",
+    "lib.arcade.note.cribbage": "两人克里比奇（Cribbage），先到 61 分者获胜。每局发 6 张牌，各把 2 张扣进“摇篮”（属于庄家）。翻开一张起始牌。然后轮流明牌出牌，累计点数不得超过 31：凑到 15 或 31 得 2 分，与上一张点数相同得 2/6/12 分，3 张及以上的顺子（顺序不限）按张数得分，双方都无法出牌时最后出牌者得 1 分（Go）。之后每人用 4 张手牌加起始牌计分：每组合计 15 得 2 分，每对 2 分，3 张及以上顺子按张数，4 张同花 4 分（含起始牌则 5 分），与起始牌同花的 J 得 1 分。非庄家先计分，然后庄家计自己的手牌和摇篮。",
+    "lib.arcade.cbFifteen": "十五",
+    "lib.arcade.cbPair": "一对",
+    "lib.arcade.cbRun": "顺子",
+    "lib.arcade.cbFlush": "同花",
+    "lib.arcade.cbNobs": "与起始牌同花的 J",
+    "lib.arcade.cbHeels": "起始牌为 J",
+    "lib.arcade.cbYou": "你",
+    "lib.arcade.cbFoe": "电脑",
+    "lib.arcade.cbLast": "最后一张",
+    "lib.arcade.cbCount": "总和：{n}",
+    "lib.arcade.cbYouDeal": "你是庄家",
+    "lib.arcade.cbFoeDeal": "电脑是庄家",
+    "lib.arcade.cbPick": "选择 2 张放入摇篮",
+    "lib.arcade.cbCrib": "摇篮",
+    "lib.arcade.cbYourHand": "你的手牌",
+    "lib.arcade.cbFoeHand": "电脑手牌",
+    "lib.arcade.cbStarter": "起始牌",
+    "lib.arcade.cbZero": "0 分",
+    "lib.arcade.cbPlayed": "已出的牌",
+    "lib.arcade.cbToCrib": "放入摇篮",
+    "lib.arcade.cbNext": "继续",
+    "lib.arcade.cbHand": "手牌"
   },
   "pages": {
     "home": {
@@ -1492,6 +1515,10 @@
     "pinball": {
       "name": "弹珠台",
       "desc": "用左右挡板接住球，撞击弹射器，在 3 个球用完前达到目标分数；共 10 关。"
+    },
+    "cribbage": {
+      "name": "克里比奇",
+      "desc": "与电脑对战的双人克里比奇：摇篮、出牌到 31、手牌计分，先到 61 分；共 10 关。"
     }
   },
   "s": {

@@ -469,7 +469,181 @@
     "lib.arcade.jump": "Bavêje",
     "lib.arcade.aimTarget": "Armanc",
     "lib.game.soundOn": "Dengê veke",
-    "lib.game.soundOff": "Dengê bigire"
+    "lib.game.soundOff": "Dengê bigire",
+    "lib.arcade.note.kalah": "Tu rêza jêrîn dilîzî, komputer rêza jorîn; kuna mezin a li rastê embara te ye. Li kunekê bitikîne da ku hemû tovên wê hilgirî û li ser kunan, yek yek, berevajî rêça saetê belav bike (embara dijmin derbas bike). Heke tova te ya dawî bikeve embara te, tu dîsa dilîzî; heke bikeve kuna vala ya aliyê te û berevajî wê kunek tov hebe, tu wan tovan digirî. Gava aliyek vala bibe, tovên aliyê din diçin embara xwediyê xwe; embara mezintir serdikeve.",
+    "lib.arcade.note.snakes": "Zarê bavêje û bi qasî wî hejmarê li ser çargoşeyan ji 1 heta 100 biçe. Heke bikevî binê derenceyê tu hildikişî; heke bikevî serê marê tu dikevî xwarê. Ji astê 4an ve divê hejmara rast bavêjî da ku bikevî 100. Di astên bilindtir de mar zêdetir, derenceyên kêmtir û dijminên zêdetir hene. Yê pêşî ku bigihîje 100 dibe serketî.",
+    "lib.arcade.square": "Çargoşeya {n}",
+    "lib.arcade.ladderUp": "Hildikişî ser derenceyê!",
+    "lib.arcade.snakeDown": "Mar tu daqurtand!",
+    "lib.arcade.needExact": "Ji bo ku bikevî 100 divê hejmara rast bavêjî.",
+    "lib.arcade.note.nmm": "Her alî 9 kevir heye. Qonaxa 1: bi rêz kevirên xwe li ser xalên vala datînin. Qonaxa 2: kevirekî bişemitîne ser xalekî vala ya cîran. Gava tenê 3 kevir bimînin tu dikarî “bifirî” ser her xalekî vala. Sê kevir li rêzekê (“aş”) bike da ku keviraqî yê dijmin rakî (pêşî kevirên ne di aşê de). Gava tu bibî 2 kevir an nikaribî bimeşî dibaxî. Tu spî dilîzî û pêşî dest pê dikî.",
+    "lib.arcade.inHand": "Ji bo danînê: {a} · {b}",
+    "lib.arcade.removePiece": "Keviraqî yê dijmin ji bo rakirinê hilbijêre.",
+    "lib.arcade.enemyWaters": "Avên dijmin (bitikîne da ku agir bikî)",
+    "lib.arcade.yourFleet": "Fîloya te",
+    "lib.arcade.note.battleship": "Her alî 5 keştî hene (dirêjahî 5, 4, 3, 3, 2) ku bi rasthatî li ser tora 10x10 hatine danîn. Bi rêz li xaneyekê agir vekin: lêdan sor dibe, xelet şîna vekirî dibe, û gava hemû xaneyên keştiyekê bên lêdan ew diçe binê avê. Yê pêşî ku hemû fîloya dijmin bixeniqîne dibe serketî. Di astên bilindtir de komputer cihê keştiyên te zîrektir texmîn dike.",
+    "lib.arcade.shipsLeft": "Keştiyên mane: tu {a} · dijmin {b}",
+    "lib.arcade.theySunk": "Dijmin yek ji keştiyên te xeniqand!",
+    "lib.arcade.theyHit": "Dijmin li yek ji keştiyên te xist.",
+    "lib.arcade.theyMiss": "Dijmin xelet kir.",
+    "lib.arcade.youSunk": "Te keştiyeke dijmin xeniqand!",
+    "lib.arcade.youHit": "Lêdan!",
+    "lib.arcade.youMiss": "Xelet.",
+    "lib.arcade.shake": "Bihejîne",
+    "lib.arcade.clearBets": "Şertan paqij bike",
+    "lib.arcade.note.bau-cua": "Tenê pereyên sanal — pereyê rast tune. Nirxa pereyekî hilbijêre, li ajalan bitikîne da ku şert deynî, paşê Bihejîne bitikîne. Ji bo her zarê ku bi ajalekî ku te şert lê danîye re bibe yek, tu şerta xwe û bi qasî wê zêde werdigirî. Di gelên destûrdayî de bigihîje pereyên armancê da ku asta biqedînî.",
+    "lib.arcade.note.baccarat": "Tenê pereyên sanal — pereyê rast tune. Li ser Lîstikvan, Bankdar an Wekhevî şert deyne, paşê Belav bike bitikîne. Nirxa destekê dawîn reqema berhevoka wê ye (A = 1, 2–9 nirxa xwe, 10/J/Q/K = 0); desteya ku nêzîkî 9 be dimeşe, û kaxeza sêyemîn bi qaîdeyên standard tê kişandin. Lîstikvan 1:1, Bankdar 0,95:1, Wekhevî 8:1 dide (şertên Lîstikvan/Bankdar di wekheviyê de têne vegerandin). Di gelên destûrdayî de bigihîje pereyên armancê da ku asta biqedînî.",
+    "lib.arcade.banker": "Bankdar",
+    "lib.arcade.player": "Lîstikvan",
+    "lib.arcade.tie": "Wekhevî",
+    "lib.arcade.openCards": "Veke",
+    "lib.arcade.note.bai-cao": "Tenê pereyên sanal — pereyê rast tune. Her alî 3 kaxez digire. Desteyek bi reqema dawîn a berhevoka xwe tê hesibandin (A = 1, 2–9 nirxa xwe, 10/J/Q/K = 10 yanî 0 xal). Rêzbendî: Sê yekser (“Sáp”) herî bilind e, paşê sê wêne (“Ba tiên”), paşê 9 xal heta 0. Şert deyne, Belav bike û paşê Veke bitikîne da ku bi bankdar re bidî ber hev. Ji astê 6an ve di wekheviyê de bankdar dibe serketî. Di gelên destûrdayî de bigihîje pereyên armancê da ku asta biqedînî.",
+    "lib.arcade.caoSap": "Sê yekser",
+    "lib.arcade.caoBaTien": "Sê wêne",
+    "lib.arcade.caoPts": "{n} xal",
+    "lib.arcade.note.bingo": "Komputer hejmaran ji 1 heta 75 dibêje. Gava hejmarek ku hatiye gotin li ser kartê te be, bitikîne da ku nîşan bikî (navend belaş e). Rêzek, stûnek an çaprazek temam bike û BINGO! bitikîne — divê tu li dijminên komputerê bi ser bikevî. BINGO!ya şaş bişkokê çend çirkeyan girtî dihêle. Di astên bilindtir de hejmar zûtir tên gotin û dijmin zêdetir in.",
+    "lib.arcade.opponentsN": "Dijmin: {n}",
+    "lib.arcade.falseBingo": "Hêj rêzek temam nîne! Bişkok 3 çirkeyan girtî ye.",
+    "lib.arcade.bingoGo": "Hejmar têne gotin!",
+    "lib.arcade.note.yahtzee": "Her gav tu 5 zaran heta 3 caran diavêjî: li zarekê bitikîne da ku wê bihêlî, paşê Bavêje bitikîne da ku yên din dîsa bavêjî. Paşê di tabloyê de xaneyek hilbijêre da ku xal tê de tomar bibin (her xane carekê tê bikaranîn; xaneya ku nayê xalên 0 digire). 13 gav hene. Heke berhevoka xaneyên Yek–Şeş ji 63 an zêdetir be 35 xalên bonus tên zêdekirin. Bigihîje xala armancê ya astê da ku bi ser bikevî.",
+    "lib.arcade.turnN": "Gav {n}/13",
+    "lib.arcade.pickCat": "Xaneyek hilbijêre da ku xal tê de tomar bibin",
+    "lib.arcade.rollsLeft": "Bavêje ({n} ma)",
+    "lib.arcade.upperBonus": "Bonusa Yek–Şeş",
+    "lib.arcade.scored": "Tomar bû {n}",
+    "lib.arcade.note.crazy-eights": "Kaxezekê bilîze ku bi reng an nirx bi kaxeza jorîn a li ser çûna avêtî re bibe yek. Heştan jokerin: her tim dikarî yekê bilîzî û rengekî nû hilbijêrî. Heke kaxeza te ya lîstikê tune be, ji komê bikişîne (heta 3 kaxezan); heke dîsa nikaribî bilîzî, tu derbas dibî. Yê pêşî ku destê xwe vala bike dibe serketî. Di astên bilindtir de dijmin zêdetir in û komputer zîrektir dilîze.",
+    "lib.arcade.opponent": "Dijmin",
+    "lib.arcade.pileLeft": "Kom: {n}",
+    "lib.arcade.pickSuit": "Rengekî nû hilbijêre",
+    "lib.arcade.aiSuit": "Komputer {s} hilbijart",
+    "lib.arcade.aiPass": "Komputer derbas dibe.",
+    "lib.arcade.mustPlay": "Kaxezeke te ya lîstinê heye — bilîze.",
+    "lib.arcade.youPass": "Te 3 kaxez kişand û derbas dibî.",
+    "lib.arcade.bcGourd": "Kundir",
+    "lib.arcade.bcCrab": "Kevjal",
+    "lib.arcade.bcShrimp": "Ziriç",
+    "lib.arcade.bcFish": "Masî",
+    "lib.arcade.bcRooster": "Dîk",
+    "lib.arcade.bcDeer": "Kervêşk",
+    "lib.arcade.yOnes": "Yek",
+    "lib.arcade.yTwos": "Du",
+    "lib.arcade.yThrees": "Sê",
+    "lib.arcade.yFours": "Çar",
+    "lib.arcade.yFives": "Pênc",
+    "lib.arcade.ySixes": "Şeş",
+    "lib.arcade.yThree": "Sê yekser",
+    "lib.arcade.yFour": "Çar yekser",
+    "lib.arcade.yFull": "Full house (25)",
+    "lib.arcade.ySmall": "Rêzeya biçûk (30)",
+    "lib.arcade.yLarge": "Rêzeya mezin (40)",
+    "lib.arcade.yYahtzee": "Yahtzee (50)",
+    "lib.arcade.yChance": "Şans",
+    "lib.arcade.note.race": "← → bitikîne (an li rêya ku dixwazî bitikîne) da ku rê biguherînî û ji gerîdeyên pêşiya xwe dûr bikevî. Sê jiyanên te hene; heta dawiya dûrahiyê ajo da ku asta biqedînî. Di astên bilindtir de rêzik zêdetir û trafîk bileztir e.",
+    "lib.arcade.note.jump": "Karakter bi xwe dibeze. ← → bitikîne an tiliya xwe bikişîne da ku li ser platforma din bikevî. Platformên şîn dimeşin, yên qehweyî gava lê dikevî diperçiqin. Ketina ji ekranê têkçûn e; têra xwe bilind hilkişe da ku asta biqedînî.",
+    "lib.arcade.note.miner": "Çeng bi pêş û paş dilive; Space, ↓ an qadê bitikîne da ku wê berdî. Zêrê mezin û kevir giran in û hêdî dikişînin; elmas pir bi qîmet in. Berî ku 60 çirke biqedin bigihîje pereyê armancê.",
+    "lib.arcade.note.slicer": "Tiliya xwe an mişkê li ser fêkiyê bikişîne da ku wê bibirî. Ji bombeyên reş dûr bimîne. Winda kirina fêkiyekê an birîna bombeyekê jiyanek ji te dibe (sê jiyanên te hene). Têra xwe fêkî bibire da ku asta biqedînî.",
+    "lib.arcade.note.hoops": "Li qadê bitikîne, xwar bikişîne (wek tîrkevan) û berde da ku top ber bi gêzê ve biavêjî. Çiqas dûrtir bikişînî, avêtin bihêztir e. Di nav avêtinên xwe de têra xwe sebet bike; ji astê 4an ve gêz dimeşe.",
+    "lib.arcade.note.bubbles": "Mişk an tiliya xwe bimeşîne da ku nîşan bigirî, paşê bitikîne an Space/Agir bitikîne da ku biavêjî. 3 an zêdetir bulbulên heman rengî bi hev ve bike da ku biteqin; bulbulên ku piştgiriya xwe winda dikin dikevin. Rêz hêdî hêdî dadikevin, ji ber vê wan ji xeta jêrîn dûr bihêle. Hemû bulbulan paqij bike da ku serkevî.",
+    "lib.arcade.note.chase": "Bi bişkokên fîşekan (an kişandin / bişkokan) bizivire û hemû xalên labîrentê bixwe, û ji hêwlên ku te dişopînin dûr bimîne. Sê jiyanên te hene; di astên bilindtir de hêwlên zêdetir, bileztir û zîrektir hene.",
+    "lib.arcade.height": "Bilindahî: {n}/{t} m",
+    "lib.arcade.money": "Pere: {n}/{t}",
+    "lib.arcade.sliced": "Hatin birîn: {n}/{t}",
+    "lib.arcade.hoopScore": "Sebet: {n}/{t}",
+    "lib.arcade.shotsLeft": "{n} avêtin mane",
+    "lib.arcade.bubbleLeft": "{n} bulbul mane",
+    "lib.arcade.shotsN": "Avêtin: {n}",
+    "lib.arcade.dotsLeft": "{n} xal mane",
+    "lib.arcade.note.kakuro": "Xaneyên spî bi hejmarên 1–9 tije bike da ku her rêzik bibe yekser bi nîşana di xaneya reş de, bêyî ku hejmar di rêzekê de dubare bibe (hejmara jor-rast ji bo rêzika aliyê rastê ye, ya jêr-çep ji bo rêzika jêrîn e). Bi bişkokên fîşekan bimeşe.",
+    "lib.arcade.note.kenken": "Torê bi hejmarên 1 heta N tije bike da ku di tu rêz û stûnê de hejmar dubare nebe. Di her qefesa bi xêzên stûr de armanc û kirdeyek (+, −, ×, ÷) heye: hejmarên di qefesê de divê wî encamî bidin. Bi bişkokên fîşekan bimeşe.",
+    "lib.arcade.note.wordGuess": "Peyva veşartî ya Îngilîzî texmîn bike. Piştî her ceribandinê, kesk tê wateya tîpa rast di cihê rast de, zer tê wateya ku tîp di peyvê de heye lê li cihekî din, û gewr tê wateya ku di peyvê de tune ye. Bi klavyeyê binivîse an tîpên ekranê bikar bîne û Enter bitikîne. Di astên bilindtir de peyv dirêjtir in û ceribandin kêmtir in.",
+    "lib.arcade.note.hangman": "Peyva veşartî ya Îngilîzî bi hilbijartina tîpan yek bi yek texmîn bike. Her tîpa şaş parçeyek li kesê daliqandî zêde dike; gava texmînên te yên şaş biqedin tu dibaxî. Di astên bilindtir de peyv dirêjtir in û texmînên şaş kêmtir in.",
+    "lib.arcade.note.scramble": "Tîpên tevlîhev di peyveke rast a Îngilîzî de ji nû ve rêz bike û di qutiya bersivê de binivîse. Her astê 5 peyv hene; berî ku demjimêra her peyvê biqede bi kêmanî 4 çareser bike da ku asta biqedînî. Îpucê tîpa yekem nîşan dide.",
+    "lib.arcade.cellsLeft": "{n} xaneyên vala mane",
+    "lib.arcade.wrongN": "{n} xane ne rast in.",
+    "lib.arcade.noError": "Heta niha xelet nehat dîtin.",
+    "lib.arcade.tooShort": "Tîp têr nîne",
+    "lib.arcade.answerIs": "Bersiv: {w}",
+    "lib.arcade.livesLeft": "{n} texminên şaş mane",
+    "lib.arcade.yourAnswer": "Bersiva te",
+    "lib.arcade.skip": "Derbas bike",
+    "lib.arcade.notThis": "Ne rast e, dîsa biceribîne.",
+    "lib.arcade.startsWith": "Tîpa yekem: {c}",
+    "lib.arcade.note.domino": "Her lîstikvan 7 kevir digire; yê ku dubleya herî bilind hebe dest pê dike. Kevirekî bilîze ku hejmara wî bi yek ji dawiyên zincîrê re bibe yek. Heke nikaribî bilîzî, ji embarê bikişîne heta ku bikaribî; heke vala be, derbas bibe. Yê pêşî ku destê xwe vala bike dibe serketî; heke her du jî asê bibin, yê xalên kêmtir hene dibe serketî.",
+    "lib.arcade.note.hearts": "Çar lîstikvan, her yek 13 kaxez. 2ya şeqê dest pê dike. Heke bikarî divê li pey rengê destpêkê biçî. Her dil 1 xal e û Qralîçeya Pîkê 13 ye; yê ku destê dibe xalên wê digire. Kêmtir çêtir e, û girtina hemû 26 xalan ji hemûyên din re 26 xal dide. Heta ku dil neyê lîstin tu nikarî bi dilê dest pê bikî. Piştî desta dawîn, heke xala te herî kêm be (an bi yên din re herî kêm be) tu serdikevî.",
+    "lib.arcade.note.holdem": "Du kes li dijî komputerê tenê bi çîpên sanal. Her lîstikvan 2 kaxezên taybet digire û 5 kaxezên hevpar tên eşkere kirin (flop, turn, river); destê herî baş ê 5 kaxezan çêke. Her tûrê dikarî pas bidî, bidî ber (an kontrol bikî) an bilind bikî. Kor her 4 destan bilind dibin. Gava çîpên komputerê biqedin, an piştî sînorê destan bi çîpên zêdetir, tu serdikevî. Pereyê rast tune.",
+    "lib.arcade.dmDraw": "Kevirekî bikişîne",
+    "lib.arcade.dmPass": "Derbas bike",
+    "lib.arcade.dmEmpty": "Hêj kevir nehatine lîstin",
+    "lib.arcade.dmYard": "Embar: {n} kevir",
+    "lib.arcade.dmLeft": "Dawiya çepê",
+    "lib.arcade.dmRight": "Dawiya rastê",
+    "lib.arcade.dmTie": "Wekhev! Her du alî li hev in.",
+    "lib.arcade.hrHand": "Dest {n}/{t}",
+    "lib.arcade.hrTook": "{p} desta hildide ({n} xal).",
+    "lib.arcade.hrIllegal": "Tu nikarî vê kaxezê bilîzî (li pey reng biçe, an hêj dil nehatiye lîstin).",
+    "lib.arcade.blinds": "Kora mezin: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Pas",
+    "lib.arcade.check": "Kontrol",
+    "lib.arcade.callN": "Bide ber {n}",
+    "lib.arcade.raiseTo": "Bilind bike heta",
+    "lib.arcade.raiseN": "Bilind bike heta {n}",
+    "lib.arcade.thOppFold": "Komputer pas dide; tu vê destê dibî.",
+    "lib.arcade.thYouFold": "Te pas da.",
+    "lib.arcade.thOppWin": "Komputer vê destê dibe",
+    "lib.arcade.thYouWin": "Tu vê destê dibî",
+    "lib.arcade.thSplit": "Pot parve dibe",
+    "lib.arcade.thAiFold": "Komputer pas dide.",
+    "lib.arcade.thAiRaise": "Komputer heta {n} bilind dike.",
+    "lib.arcade.thAiCall": "Komputer dide ber / kontrol dike.",
+    "lib.arcade.hand.high": "Kaxeza bilind",
+    "lib.arcade.hand.pair": "Cot",
+    "lib.arcade.hand.twoPair": "Du cot",
+    "lib.arcade.hand.trips": "Sê yekser",
+    "lib.arcade.hand.straight": "Rêze",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Çar yekser",
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "Çargoşeyek li ser torek 3x3 pey hev ronî dibe. Gava cihê ronî heman e wekî N gav berê (N li jor tê nîşandan), \"Wekhev!\" (an Space) bitikîne. Ji bo qedandina astê divê bi kêmanî %80 biryarên te rast bin. Di astên bilindtir de N mezintir e.",
+    "lib.arcade.nbMatch": "Wekhev!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Rast: {a} · Şaş: {b}",
+    "lib.arcade.nbAcc": "Rastbûn: %{n}",
+    "lib.arcade.note.clicker": "Li kulîçeyê bitikîne da ku kulîçe bipêjî, paşê wan li ser alîkaran xerc bike ku bixwe dipêjin (bi her kirînê re biha zêde dibe). Di 2 deqeyan de hejmara kulîçeyên armancê bipêje da ku asta biqedînî.",
+    "lib.arcade.ckCursor": "Nîşander",
+    "lib.arcade.ckGrandma": "Dapîra pêjvan",
+    "lib.arcade.ckFarm": "Çandinî",
+    "lib.arcade.ckMine": "Kana şekir",
+    "lib.arcade.ckFactory": "Fabrîqe",
+    "lib.arcade.ckCookie": "Kulîçe",
+    "lib.arcade.ckEarned": "Hatin pêtin: {n}/{t}",
+    "lib.arcade.chips2": "Kulîçe: {n}",
+    "lib.arcade.ckCps": "{n} kulîçe/çirke",
+    "lib.arcade.note.onet": "Du kevirên wekhev ên ku bi rêyeke bi herî zêde 2 zivirînan û bêyî derbaskirina kevirên din dikarin bên girêdan hilbijêre da ku wan rakî. Berî ku dem biqede hemû kevir paqij bike da ku serkevî. Gava lîstikek nemîne tu dikarî bi hev ve bikî (hejmara sînorkirî).",
+    "lib.arcade.shuffle": "Bi hev ve bike",
+    "lib.arcade.tilesLeft": "{n} kevir mane",
+    "lib.arcade.autoShuffle": "Lîstikek nemaye — bixwe tevlihev kirin.",
+    "lib.arcade.note.jigsaw": "Wêne hatiye perçe kirin û tevlihev kirin. Perçeyekî bitikîne, paşê yekî din, da ku cihê wan biguherînî, û wêneyê wekî nimûne tê nîşandan ji nû ve çêke. Perçeyên di cihê rast de sînorek kesk digirin. Di astên bilindtir de perçe zêdetir in.",
+    "lib.arcade.jgRef": "Wêneyê nimûne",
+    "lib.arcade.jgPlaced": "Di cih de: {a}/{b}",
+    "lib.arcade.golfStrokes": "Lêdan: {n}/{t} (par {p})",
+    "lib.arcade.note.backgammon": "Tu kevirên spî dilîzî, ji jor-rast li dora tabloyê heta jêr-rast (mala te) dimeşî. Zaran bavêje, kevirê ku dixwazî bimeşînî bitikîne, paşê li cihê ronîkirî bitikîne. Heke bikevî xaleke ku tenê kevirekî dijmin lê ye, tu wî lê dixî û dikeve nîvê tabloyê, û ew ê berî her tiştî wî vegerîne. Tu nikarî bikevî xaleke ku 2 an zêdetir kevirên dijmin lê ne. Gava hemû 15 kevirên te di mala te de bin (6 xalên dawî) tu dikarî wan derxî. Yê pêşî ku hemû 15 derxe dibe serketî.",
+    "lib.arcade.bgRoll": "Zaran bavêje",
+    "lib.arcade.bgOff": "Derxe",
+    "lib.arcade.bgRollFirst": "Zaran bavêje",
+    "lib.arcade.bgInfo": "Derketin: tu {a} · komputer {b} · Pip: {c} / {d}",
+    "lib.arcade.youNoMove": "Tu bêhtir nikarî gavek rewa bavêjî.",
+    "lib.arcade.note.tienlen": "Çar lîstikvan, her yek 13 kaxez. Rêza kaxezan ji nizm heta bilind: 3, 4, … K, A, 2; rengên ji nizm heta bilind: pîk, şeq, xişt, dil. Yê ku 3ya pîkê hebe pêşî dest pê dike. Kaxezek, cotek, sê yekser, çar yekser, an rêzeyek ji 3 an zêdetir kaxezên li pey hev (bê 2) bilîze. Lîstikvanê din divê heman cure û bilindtir bilîze, an derbas bibe; çar yekser dikare 2yek an cotek 2 bişkîne. Gava hemû yên din derbas bibin, yê ku dawî lîstiye dikare her tiştî bilîze. Yê pêşî ku destê xwe vala bike dibe serketî. Kaxezan hilbijêre, paşê Bilîze bitikîne.",
+    "lib.arcade.tlPlay": "Bilîze",
+    "lib.arcade.tlPass": "Derbas bike",
+    "lib.arcade.tlClear": "Hilbijartinê paqij bike",
+    "lib.arcade.tlPassed": "derbas kir",
+    "lib.arcade.tlFree": "Maseya vala — tu dikarî her tiştî bilîzî",
+    "lib.arcade.tlLeft": "Kaxezên mane: {a} · {b} · {c}",
+    "lib.arcade.tlAiPass": "{p} derbas dibe.",
+    "lib.arcade.tlBad": "Kaxezên hilbijartî ne komeke derbasdar in.",
+    "lib.arcade.tlLow": "Ev kom ne têra bilind e ku maseyê bişkîne."
   },
   "pages": {
     "home": {
@@ -1086,6 +1260,134 @@
     "reaction": {
       "name": "Testa Dema Bersivê",
       "desc": "Gava ekran kesk dibe bitikîne; navînî ya te ya 5 dorên divê sînorê her astê bigire, ku di 10 astan de tengtir dibe."
+    },
+    "kalah": {
+      "name": "Kalah (Mancala)",
+      "desc": "Tovan li dora kunan belav bike, tovên dijmin bigire û gava bikevî embara xwe dîsa bilîze; li dijî komputerê di 10 astan de ji hêsan heta zehmet bilîze."
+    },
+    "snakes-ladders": {
+      "name": "Mar û Derence",
+      "desc": "Zarê bavêje ji çargoşeya 1 heta 100, hilkişe derenceyan, ji maran dûr bimîne û berî dijminan bigihîje dawiyê; 10 astan."
+    },
+    "nine-mens-morris": {
+      "name": "Nine Men’s Morris",
+      "desc": "Kevirên xwe deyne, bişemitîne û bifirîne da ku sê li rêzekê çêkî û kevirên dijmin rakî; li dijî komputerê di 10 astan de bilîze."
+    },
+    "battleship": {
+      "name": "Şerê Keştiyan",
+      "desc": "Berî ku fîloya te bixeniqîne, fîloya komputerê li ser torek 10x10 bibîne û bixeniqîne; 10 astan dema ku komputer zîrektir texmîn dike."
+    },
+    "bau-cua": {
+      "name": "Bầu Cua (Kundir Kevjal Ziriç Masî)",
+      "desc": "Lîstika zaran a kevneşopî ya Vîetnamî: li ajalan bi pereyên sanal şert deyne û sê zaran bihejîne; di 10 astan de bigihîje pereyên armancê (pereyê rast tune)."
+    },
+    "baccarat": {
+      "name": "Baccarat",
+      "desc": "Bi pereyên sanal li ser Lîstikvan, Bankdar an Wekhevî şert deyne û kaxez bi qaîdeyên standard tên belav kirin; di 10 astan de bigihîje pereyên armancê (pereyê rast tune)."
+    },
+    "bai-cao": {
+      "name": "Bài Cào (Lîstika Sê Kaxezan)",
+      "desc": "Desteyên 3 kaxezan bi bankdar re bidî ber hev: sê yekser, sê wêne, paşê 9 xal heta 0; pereyên sanal, 10 astan, pereyê rast tune."
+    },
+    "bingo": {
+      "name": "Bingo",
+      "desc": "Hejmarên hatine gotin li ser kartê xwe yê 5x5 nîşan bike û berî dijminên komputerê BINGO biqîre; hejmar di 10 astan de zûtir têne gotin."
+    },
+    "yahtzee": {
+      "name": "Yahtzee (Pênc Zar)",
+      "desc": "Pênc zaran bavêje, yên baş bihêle û 13 xaneyên xalan tije bike; di 10 astan de bigihîje xala armancê."
+    },
+    "crazy-eights": {
+      "name": "Crazy Eights",
+      "desc": "Bi reng an nirx hev bike, heştan rengê diguherînin; berî 1 heta 3 dijminên komputerê destê xwe vala bike di 10 astan de."
+    },
+    "car-race": {
+      "name": "Revîna Gerîdeyan",
+      "desc": "Rêyan biguherîne da ku ji gerîdeyên pêşiya xwe dûr bikevî û heta dawiya dûrahiyê ajo; 10 astên bi rêzikên zêdetir û trafîka bileztir."
+    },
+    "sky-jump": {
+      "name": "Firîna Esmanî",
+      "desc": "Ji platformekê li platformekê bifire da ku bi qasî ku dikarî bilind hilkişî bêyî ku bikevî; 10 astên bi platformên kêmtir, yên dimeşin û yên diperçiqin."
+    },
+    "gold-miner": {
+      "name": "Zêrkolêr",
+      "desc": "Çengê berde da ku zêr û elmas hilgirî, ji keviran giran dûr bimîne, û di 60 çirkeyan de bigihîje pereyê armancê; 10 astan."
+    },
+    "fruit-slice": {
+      "name": "Birîna Fêkiyan",
+      "desc": "Bikişîne da ku fêkiyên difirin bibirî û ji bombeyan dûr bimîne; 10 astên bi fêkî û bombeyên zêdetir."
+    },
+    "basketball": {
+      "name": "Avêtina Basketbolê",
+      "desc": "Bikişîne û berde da ku top di nav gêzê de biavêjî di hejmareke sînorkirî ya avêtinan de; 10 astan, bi gêzeke ku ji astê 4an ve dimeşe."
+    },
+    "bubble-shooter": {
+      "name": "Bulbul Avêtin",
+      "desc": "Bulbulan biavêje da ku 3 an zêdetir ên heman rengî bi hev ve bikî û biteqînî, û berî ku bigihîjin jêr hemûyan paqij bike; 10 astên bi rengên zêdetir."
+    },
+    "dot-chase": {
+      "name": "Pêşî Xalan Bigire",
+      "desc": "Hemû xalên labîrentê bixwe dema ku ji hêwlên ku te dişopînin dûr dimînî; 10 astên bi hêwlên zêdetir û zîrektir."
+    },
+    "kakuro": {
+      "name": "Kakuro (Berhevokên Xaç)",
+      "desc": "Xaneyên spî bi hejmarên 1–9 tije bike da ku her rêzik bibe nîşana xwe bêyî dubarebûnê; 10 astan, tor ji 5x5 heta 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Torê tije bike bêyî dubarebûna di rêz û stûnan de da ku her qefes bi kirdeya xwe armanca xwe bide; 10 astan, tor ji 3x3 heta 6x6."
+    },
+    "word-guess": {
+      "name": "Texmîna Peyvê (wek Wordle)",
+      "desc": "Peyva veşartî ya Îngilîzî bi nîşanên kesk, zer û gewr texmîn bike; 10 astên bi peyvên 4–6 tîpî û ceribandinên kêmtir."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Peyva Îngilîzî tîp bi tîp texmîn bike berî ku texmînên te yên şaş biqedin; 10 astên bi peyvên dirêjtir û texmînên şaş kêmtir."
+    },
+    "word-scramble": {
+      "name": "Tevlîheviya Peyvê (Anagram)",
+      "desc": "Berî ku dem biqede tîpên tevlîhev di peyveke Îngilîzî de ji nû ve rêz bike; 10 astan, 5 peyv di her astê de."
+    },
+    "domino": {
+      "name": "Domino",
+      "desc": "Kevir bi her du dawiyên zincîrê re bike yek û berî komputerê destê xwe vala bike; 10 astan dema ku komputer zîrektir dibe."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Di lîstikeke kaxezan a çar kesî de ji dilan û Qralîçeya Pîkê dûr bimîne; xala kêmtir çêtir e; 10 astan li dijî lîstikvanên komputerê yên zîrektir."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (çîpên sanal)",
+      "desc": "Poker du kes li dijî komputerê bi çîpên sanal: pas bide, bide ber an bilind bike, û gava çîpên komputerê biqedin serkevî; 10 astan, pereyê rast tune."
+    },
+    "n-back": {
+      "name": "Bîra N-Back",
+      "desc": "Çargoşeya ronî temaşe bike û gava wekî N gav berê be Wekhev bitikîne; 10 astên bi N heta 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Bitikîne da ku kulîçe bipêjî, alîkarên ku bixwe dipêjin bikire û di 2 deqeyan de bigihîje armancê; 10 astan."
+    },
+    "tile-connect": {
+      "name": "Girêdana Kevirên (wek Onet)",
+      "desc": "Kevirên wekhev bi rêyeke herî zêde du zivirînan bi hev ve bike û berî ku dem biqede tabloyê paqij bike; 10 astan, tabloyên mezintir."
+    },
+    "jigsaw": {
+      "name": "Jigsaw a Wêneyê",
+      "desc": "Perçeyên tevlihev biguherîne da ku wêneyê ji nû ve çêkî; 10 astên ji 3x3 heta 6x6 perçe."
+    },
+    "mini-golf": {
+      "name": "Golfa Biçûk",
+      "desc": "Bikişîne û berde da ku top di nav sînorê lêdanan de bikeve kunê; 10 meydan bi dîwar û qûm."
+    },
+    "backgammon": {
+      "name": "Backgammon",
+      "desc": "Zaran bavêje, kevirên xwe bi lez bigihînî malê û berî komputerê derxe, di rê de kevirên wî yên tenê bixe; 10 astan."
+    },
+    "tien-len": {
+      "name": "Tiến Lên (Sêzdeh)",
+      "desc": "Lîstika kaxezên Vîetnamî ji bo çar kesan: kaxezek, cot, rêze û çaran bilîze da ku pêşî destê xwe vala bikî; 10 astan."
     }
   },
   "s": {
