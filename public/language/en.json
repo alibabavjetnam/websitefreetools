@@ -705,7 +705,11 @@
     "lib.arcade.sgCheck": "You are in check!",
     "lib.arcade.sgWin": "Checkmate — you win.",
     "lib.arcade.sgLose": "You were checkmated.",
-    "lib.arcade.sgAskPromote": "Promote this piece?"
+    "lib.arcade.sgAskPromote": "Promote this piece?",
+    "lib.arcade.note.janggi": "Janggi is Korean chess. You play the blue pieces at the bottom and move first. Unlike xiangqi there is no river, and both palaces have diagonal lines. The General and Guards move one step along the palace lines (diagonals included); the Chariot also slides and captures along palace diagonals; the Cannon must jump over exactly one piece (not another Cannon) to move or capture, and cannot capture a Cannon; the Horse steps one point straight then one diagonally, and the Elephant one straight then two diagonally, both blocked if a piece is in the way; Soldiers move forward or sideways, and diagonally forward inside the enemy palace. The two Generals may never face each other. Checkmate the enemy General to win. The computer never passes.",
+    "lib.arcade.jgCheck": "You are in check!",
+    "lib.arcade.jgWin": "Checkmate — you win.",
+    "lib.arcade.jgLose": "You were checkmated."
   },
   "pages": {
     "home": {
@@ -1478,6 +1482,10 @@
     "shogi": {
       "name": "Shogi (Japanese Chess)",
       "desc": "Play shogi against the computer: drop captured pieces, promote, and checkmate the king; 10 levels with undo."
+    },
+    "janggi": {
+      "name": "Janggi (Korean Chess)",
+      "desc": "Play Korean chess against the computer: palace diagonals, one-piece cannon jumps, three-step elephants; 10 levels with undo."
     }
   },
   "s": {

@@ -1832,3 +1832,17 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .sg-hp.sel { background: #8be28b; }
 .sg-hp i { position: absolute; right: 2px; bottom: 0; font-style: normal; font-size: 12px; color: #c4161c; }
 .sg-empty { color: #999; }
+
+/* Janggi */
+.jg-board svg { width: 100%; height: auto; display: block; max-width: 520px; margin: 0 auto; }
+.jg-ln { stroke: #6b4a14; stroke-width: 1.4; }
+.jg-last { fill: rgba(255,214,102,.5); }
+.jg-pc circle { stroke-width: 2.5; }
+.jg-pc text { font-weight: 800; pointer-events: none; }
+.jg-pc.me circle { fill: #f4f9ff; stroke: #1f5fbf; }
+.jg-pc.me text { fill: #1f5fbf; }
+.jg-pc.foe circle { fill: #fff6f4; stroke: #c4302b; }
+.jg-pc.foe text { fill: #c4302b; }
+.jg-pc.sel circle { stroke-width: 5; stroke: #22a022; }
+.jg-dot { fill: rgba(34,139,34,.7); pointer-events: none; }
+.jg-dot.cap { fill: none; stroke: rgba(220,40,40,.85); stroke-width: 4; }

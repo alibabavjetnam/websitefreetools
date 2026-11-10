@@ -705,7 +705,11 @@
     "lib.arcade.sgCheck": "Bạn đang bị chiếu!",
     "lib.arcade.sgWin": "Chiếu bí — bạn thắng.",
     "lib.arcade.sgLose": "Bạn bị chiếu bí.",
-    "lib.arcade.sgAskPromote": "Thăng cấp quân này?"
+    "lib.arcade.sgAskPromote": "Thăng cấp quân này?",
+    "lib.arcade.note.janggi": "Janggi là cờ tướng kiểu Hàn Quốc. Bạn cầm quân xanh phía dưới, đi trước. Khác cờ tướng thường: không có sông, hai bên đều có đường chéo trong cung; Tướng và Sĩ đi một ô theo đường kẻ trong cung (kể cả chéo); Xe đi và ăn cả theo đường chéo trong cung; Pháo phải nhảy qua đúng một quân (không phải Pháo) để đi hoặc ăn, và không ăn được Pháo; Mã đi 1 ô thẳng rồi 1 ô chéo; Tượng đi 1 ô thẳng rồi 2 ô chéo, đều bị cản nếu có quân chắn trên đường; Tốt đi tiến hoặc ngang, trong cung đối phương được đi chéo tiến. Hai Tướng không được nhìn thẳng nhau. Chiếu bí Tướng đối phương để thắng. Máy không dùng nước bỏ lượt.",
+    "lib.arcade.jgCheck": "Bạn đang bị chiếu!",
+    "lib.arcade.jgWin": "Chiếu bí — bạn thắng.",
+    "lib.arcade.jgLose": "Bạn bị chiếu bí."
   },
   "pages": {
     "home": {
@@ -1802,6 +1806,10 @@
     "shogi": {
       "name": "Shogi (cờ tướng Nhật)",
       "desc": "Shogi online đánh với máy: thả quân bắt được, thăng cấp, chiếu bí Vua; 10 cấp, có đi lại."
+    },
+    "janggi": {
+      "name": "Janggi (cờ tướng Hàn Quốc)",
+      "desc": "Janggi online đánh với máy: cờ tướng kiểu Hàn có đường chéo trong cung, pháo nhảy một quân, tượng 3 bước; 10 cấp, có đi lại."
     }
   },
   "s": {
