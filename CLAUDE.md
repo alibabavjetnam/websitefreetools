@@ -141,6 +141,11 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - Dịch hàng loạt (đợt 4-11, các ngôn ngữ còn thiếu): `srcall/<mã>.json` (khoá còn thiếu từng ngôn ngữ) → agent ghi `outall/<mã>.json` → `python3 /tmp/claude-0/gm/mergeall.py` (kiểm placeholder rồi gộp)
 - Còn lại: phỏm, Yukon, Cribbage, mậu binh, Shogi, cờ nhảy, Janggi, pinball, Tangram
 
+## Game đợt 12 (10/11/2026) — Yukon, Cờ nhảy
+- `yukon` (biến thể thứ 4 của `solitaire-ui.ts`: dùng lại dạng ván Klondike, không chồng rút; `dealYukon`/`yukonCanMove`/`yukonHint` trong `src/calc/solitaire.ts`; cấp thấp lật sẵn 4→0 lá úp mỗi cột; gợi ý chỉ ưu tiên nước lật lá/làm trống cột nên có thể báo hết gợi ý sớm). `chinese-checkers` (Cờ nhảy sao 6 cánh 121 ô, người xanh vs máy đỏ, 10 quân; lõi `src/calc/chinesechk.ts` toạ độ khối, `reach()` bước/nhảy liên tiếp; máy: cấp 1 ngẫu nhiên nghiêng về tiến, 2-6 tham lam có nhiễu giảm dần, 7-10 nhìn sâu 2 nửa nước; quá 120 lượt thì hoà; thắng = lấp kín trại đối diện có ≥1 quân mình). Giao diện `src/lib/chinesechk-ui.ts`, CSS `cc-*`. Tổng site: 171 công cụ
+- Dịch: vi/en/ja/zh xong (7 khoá + 2 tên/mô tả); nguồn /tmp/claude-0/gm/b12_source_en.json
+- Còn lại: phỏm, Cribbage, mậu binh, Shogi, Janggi, pinball, Tangram
+
 ## Chơi online cờ vua / cờ tướng / cờ úp / cờ vây (09/11/2026)
 - Mỗi game có 2 tab trong cùng trang: "Đánh với máy" và "Chơi với người" (`modeTabs` trong `src/lib/game-ui.ts`). Cờ úp `co-up` là game riêng (lõi `src/calc/xiangqi-dark.ts`: quân úp đi theo vị trí, sĩ/tượng đã lật đi khắp bàn, máy dùng determinization + alpha-beta)
 - Online qua broker MQTT công cộng (`wss://broker.emqx.io:8084/mqtt`, dự phòng HiveMQ; thử nghiệm đặt `localStorage 'wft:mqtt-url'`), client MQTT 3.1.1 tự viết `src/lib/mqtt.ts`, phòng `src/lib/online.ts` (topic = băm mã bàn, nội dung AES-GCM khoá suy từ mã bàn). Bàn công khai: tin retained ở `wft/g1/<game>/lobby/...`, xoá bằng LWT khi rời; bàn riêng: link `?id=<guid>`. Khôi phục khi tải lại trang (sessionStorage `wft:room:<id>`). Đăng nhập Google → lưu JSON ván vào Drive `WFTools/Games` (`src/lib/game-history.ts`)

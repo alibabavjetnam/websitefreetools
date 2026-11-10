@@ -650,7 +650,10 @@
     "lib.arcade.cnWrong": "Sai màu rồi — kiểm tra lại con số trên ô.",
     "lib.arcade.note.td": "Chạm vào ô trống (không phải đường đi) để đặt tháp bắn, tốn vàng; chạm lại vào tháp để nâng cấp (tối đa cấp 5). Tháp tự bắn kẻ địch đi xa nhất trong tầm. Tiêu diệt kẻ địch để nhận thêm vàng; để lọt 15 kẻ địch về đích là thua. Sống sót qua mọi đợt để qua cấp.",
     "lib.arcade.yukonFree": "Lá còn úp: {n}",
-    "lib.arcade.note.yukon": "Như Klondike nhưng không có chồng rút: mọi lá ngửa đều kéo được cùng các lá nằm dưới nó, kể cả khi chúng không thành dãy; chỉ cần lá đầu hợp với cột đích (giảm dần, xen đỏ đen; K vào cột trống). Đưa đủ 52 lá lên 4 ô đích từ A đến K. Cấp thấp có sẵn nhiều lá được lật ngửa."
+    "lib.arcade.note.yukon": "Như Klondike nhưng không có chồng rút: mọi lá ngửa đều kéo được cùng các lá nằm dưới nó, kể cả khi chúng không thành dãy; chỉ cần lá đầu hợp với cột đích (giảm dần, xen đỏ đen; K vào cột trống). Đưa đủ 52 lá lên 4 ô đích từ A đến K. Cấp thấp có sẵn nhiều lá được lật ngửa.",
+    "lib.arcade.note.chinesechk": "Bạn cầm quân xanh ở góc phải, đưa cả 10 quân sang góc trái đối diện trước máy. Mỗi lượt đi một quân: bước sang ô trống kề bên, hoặc nhảy qua một quân bất kỳ để tới ô trống ngay sau nó, và được nhảy liên tiếp nhiều lần. Bấm quân của bạn rồi bấm ô chấm sáng để đi.",
+    "lib.arcade.ccTurn": "Lượt của bạn · Lượt {n}",
+    "lib.arcade.ccDraw": "Hết số lượt, hai bên hoà."
   },
   "pages": {
     "home": {
@@ -1731,6 +1734,10 @@
     "yukon": {
       "name": "Xếp bài Yukon",
       "desc": "Yukon Solitaire: như Klondike nhưng không có chồng rút, kéo được cả cụm lá nằm dưới; 10 cấp, có đi lại và gợi ý."
+    },
+    "chinese-checkers": {
+      "name": "Cờ nhảy (Chinese Checkers)",
+      "desc": "Cờ nhảy sao 6 cánh đánh với máy: bước hoặc nhảy liên tiếp để đưa 10 quân sang góc đối diện trước; 10 cấp."
     }
   },
   "s": {

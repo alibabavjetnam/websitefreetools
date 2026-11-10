@@ -1794,3 +1794,12 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .cn-grid{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:1px;width:min(100%,460px);margin:0 auto;background:#ced4da;border:1px solid #ced4da}
 .cn-c,.cn-e{aspect-ratio:1;background:#fff;border:0;padding:0;font:600 clamp(10px,2.6vw,16px) inherit;color:#868e96;cursor:pointer}.cn-e{background:#f1f3f5}.cn-c.hl{background:#fff3bf}.cn-c.done{color:transparent}
 .cn-pal{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}.cn-sw{width:44px;height:44px;border-radius:8px;border:3px solid transparent;cursor:pointer;color:#fff;font:700 18px inherit;text-shadow:0 1px 2px rgba(0,0,0,.6)}.cn-sw.sel{border-color:#212529;transform:scale(1.08)}
+
+/* Cờ nhảy */
+.cc-board svg { width: 100%; height: auto; display: block; max-height: 78vh; }
+.cc-c { fill: #e8dcc4; stroke: #b9a67f; stroke-width: 1.2; cursor: default; }
+.cc-c.p { fill: #2a7de1; stroke: #124c92; cursor: pointer; }
+.cc-c.a { fill: #d6453d; stroke: #8f1f19; }
+.cc-c.sel { stroke: #111; stroke-width: 3.5; }
+.cc-c.tg { fill: #9be28a; stroke: #3d9b2d; stroke-width: 2.5; cursor: pointer; }
+.cc-c.lm { stroke: #f2b01e; stroke-width: 3; }

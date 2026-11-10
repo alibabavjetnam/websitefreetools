@@ -650,7 +650,10 @@
     "lib.arcade.note.colorNum": "Every square has a number matching a color in the palette. Pick a color, then tap the squares with that number to paint them; tapping with the wrong color paints nothing. Paint every square correctly to finish the picture. Higher levels have more colors.",
     "lib.arcade.cnWrong": "Wrong color — check the number on the square.",
     "lib.arcade.note.yukon": "Like Klondike but with no stock: any face-up card can be moved together with every card on top of it, even if they are not in sequence; only the first card must fit the target column (descending, alternating red and black; a King goes to an empty column). Build all 52 cards up on the four foundations from Ace to King. Low levels start with more cards already face up.",
-    "lib.arcade.yukonFree": "Face-down cards: {n}"
+    "lib.arcade.yukonFree": "Face-down cards: {n}",
+    "lib.arcade.note.chinesechk": "You play the blue pieces in the right-hand corner; move all 10 of them to the opposite left-hand corner before the computer does. Each turn you move one piece: step to an empty neighbouring hole, or jump over any piece to the empty hole right behind it, and keep jumping as many times as you like. Tap one of your pieces, then tap a green hole to move.",
+    "lib.arcade.ccTurn": "Your turn · Turn {n}",
+    "lib.arcade.ccDraw": "Out of turns — it is a draw."
   },
   "pages": {
     "home": {
@@ -1407,6 +1410,10 @@
     "yukon": {
       "name": "Yukon Solitaire",
       "desc": "Klondike without the stock: move any face-up card with everything on top of it; 10 levels, fewer cards face up as you go."
+    },
+    "chinese-checkers": {
+      "name": "Chinese Checkers",
+      "desc": "Star-shaped hop-and-step game against the computer: move all 10 pieces to the opposite corner first; 10 levels."
     }
   },
   "s": {
