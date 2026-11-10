@@ -209,3 +209,6 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - Bước tiếp theo: render thật từng công cụ ở en/ja/zh bằng trình duyệt (build từng công cụ riêng, nạp `/language/<lang>.js`), sửa chuỗi còn sót trong `public/language/*.json`
 
 - Dịch đợt 4-12 (11/11/2026): đã gộp đủ 100 ngôn ngữ (AI dịch, chưa người bản ngữ rà; yếu: mg, ga, eu, rw, bho, ig, ht, zu)
+
+## Game đợt 13 (10/11/2026) — Tangram (game cuối danh sách)
+- `tangram`: 7 mảnh chuẩn (hình vuông cạnh 4), hình bóng sinh bằng cách ghép cạnh-với-cạnh nên chắc chắn xếp được (`genSolution`, `src/calc/tangram.ts`); cấp 1-10 dùng 4,4,5,5,6,6,7,7,7,7 mảnh, cấp 1-4 có viền gợi ý (nút Gợi ý bật/tắt). Kéo thả SVG, bấm nhẹ để xoay 45°, nút Xoay/Lật, tự hít vào đỉnh gần; thắng khi sai lệch diện tích < 3,5%. Giao diện `src/lib/tangram-ui.ts` (CSS `tg-*`). Đã dịch đủ 100 ngôn ngữ. Tổng site: 178 công cụ. Danh sách 100 game đã làm hết (trừ đoán quốc kỳ, đố vui, Mahjong ghép cặp đã chọn không làm / có Nối cặp `tile-connect`)
