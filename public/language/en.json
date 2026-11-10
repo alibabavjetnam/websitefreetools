@@ -567,7 +567,44 @@
     "lib.arcade.yourAnswer": "Your answer",
     "lib.arcade.skip": "Skip",
     "lib.arcade.notThis": "Not right, try again.",
-    "lib.arcade.startsWith": "First letter: {c}"
+    "lib.arcade.startsWith": "First letter: {c}",
+    "lib.arcade.note.domino": "Each player gets 7 tiles; whoever holds the highest double starts. Play a tile whose number matches one end of the chain. If you cannot play, draw from the boneyard until you can; if it is empty, pass. First to empty their hand wins; if both are blocked, the lower pip total wins.",
+    "lib.arcade.note.hearts": "Four players, 13 cards each. The 2 of clubs leads. You must follow the suit led if you can. Each heart is 1 point and the Queen of Spades is 13; whoever wins a trick takes its points. Lower is better, and taking all 26 points gives everyone else 26 instead. You cannot lead a heart until one has been played. After the last hand, you win if your score is the lowest (or tied for lowest).",
+    "lib.arcade.note.holdem": "Heads-up against the computer using virtual chips only. Each player gets 2 private cards and 5 community cards are revealed (flop, turn, river); make the best 5-card hand. Each round you can fold, call (or check) or raise. The blinds rise every 4 hands. You win when the computer runs out of chips, or by having more chips after the hand limit. No real money is involved.",
+    "lib.arcade.dmDraw": "Draw a tile",
+    "lib.arcade.dmPass": "Pass",
+    "lib.arcade.dmEmpty": "No tiles played yet",
+    "lib.arcade.dmYard": "Boneyard: {n} tiles",
+    "lib.arcade.dmLeft": "Left end",
+    "lib.arcade.dmRight": "Right end",
+    "lib.arcade.dmTie": "Draw! Both sides are level.",
+    "lib.arcade.hrHand": "Hand {n}/{t}",
+    "lib.arcade.hrTook": "{p} wins the trick ({n} points).",
+    "lib.arcade.hrIllegal": "You cannot play this card (follow the suit, or no hearts lead yet).",
+    "lib.arcade.blinds": "Big blind: {n}",
+    "lib.arcade.pot": "Pot: {n}",
+    "lib.arcade.fold": "Fold",
+    "lib.arcade.check": "Check",
+    "lib.arcade.callN": "Call {n}",
+    "lib.arcade.raiseTo": "Raise to",
+    "lib.arcade.raiseN": "Raise to {n}",
+    "lib.arcade.thOppFold": "The computer folds; you win this hand.",
+    "lib.arcade.thYouFold": "You folded.",
+    "lib.arcade.thOppWin": "The computer wins this hand",
+    "lib.arcade.thYouWin": "You win this hand",
+    "lib.arcade.thSplit": "Split pot",
+    "lib.arcade.thAiFold": "The computer folds.",
+    "lib.arcade.thAiRaise": "The computer raises to {n}.",
+    "lib.arcade.thAiCall": "The computer calls / checks.",
+    "lib.arcade.hand.high": "High card",
+    "lib.arcade.hand.pair": "Pair",
+    "lib.arcade.hand.twoPair": "Two pair",
+    "lib.arcade.hand.trips": "Three of a kind",
+    "lib.arcade.hand.straight": "Straight",
+    "lib.arcade.hand.flush": "Flush",
+    "lib.arcade.hand.full": "Full house",
+    "lib.arcade.hand.quads": "Four of a kind",
+    "lib.arcade.hand.sflush": "Straight flush"
   },
   "pages": {
     "home": {
@@ -1272,6 +1309,18 @@
     "word-scramble": {
       "name": "Word Scramble (Anagram)",
       "desc": "Rearrange scrambled letters into an English word before time runs out; 10 levels, 5 words per level."
+    },
+    "domino": {
+      "name": "Dominoes",
+      "desc": "Match tiles to either end of the chain and empty your hand before the computer; 10 levels as the computer gets smarter."
+    },
+    "hearts": {
+      "name": "Hearts",
+      "desc": "Avoid hearts and the Queen of Spades in a four-player card game; lower score is better; 10 levels against smarter computer players."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (virtual chips)",
+      "desc": "Heads-up poker against the computer with virtual chips: fold, call or raise, and win when the computer runs out of chips; 10 levels, no real money."
     }
   },
   "s": {

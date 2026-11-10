@@ -567,7 +567,44 @@
     "lib.arcade.skip": "Bỏ qua",
     "lib.arcade.note.scramble": "Sắp xếp các chữ cái bị xáo trộn thành một từ tiếng Anh có nghĩa và gõ vào ô trả lời. Mỗi cấp có 5 từ, giải đúng ít nhất 4 từ trước khi hết giờ mỗi từ để qua cấp. Gợi ý sẽ cho biết chữ cái đầu.",
     "lib.arcade.notThis": "Chưa đúng, thử lại nhé.",
-    "lib.arcade.startsWith": "Chữ đầu tiên: {c}"
+    "lib.arcade.startsWith": "Chữ đầu tiên: {c}",
+    "lib.arcade.dmDraw": "Bốc quân",
+    "lib.arcade.dmPass": "Bỏ lượt",
+    "lib.arcade.note.domino": "Mỗi người có 7 quân. Ai có đôi lớn nhất đi trước. Đặt quân có số khớp với một trong hai đầu của chuỗi. Không có quân để đi thì bốc từ kho cho tới khi đi được; hết kho thì bỏ lượt. Ai hết quân trước thắng; nếu cả hai bị chặn, bên có tổng chấm ít hơn thắng.",
+    "lib.arcade.dmEmpty": "Chưa có quân nào",
+    "lib.arcade.dmYard": "Kho: {n} quân",
+    "lib.arcade.dmLeft": "Đầu trái",
+    "lib.arcade.dmRight": "Đầu phải",
+    "lib.arcade.dmTie": "Hoà! Hai bên bằng điểm.",
+    "lib.arcade.note.hearts": "Bốn người chơi, mỗi người 13 lá. Bài 2 chuồn đi trước. Phải đánh cùng chất với lá dẫn nếu có. Mỗi lá cơ là 1 điểm, Q bích là 13 điểm; ai ăn dãy bài thì nhận điểm đó. Điểm càng thấp càng tốt, ăn hết 26 điểm thì các bạn kia bị 26. Không được dẫn cơ khi chưa có cơ nào xuất hiện. Hết các ván, bạn thắng nếu điểm thấp nhất (hoặc bằng thấp nhất).",
+    "lib.arcade.hrHand": "Ván {n}/{t}",
+    "lib.arcade.hrTook": "{p} ăn dãy bài ({n} điểm).",
+    "lib.arcade.hrIllegal": "Lá này chưa được đánh (phải theo chất, hoặc chưa được dẫn cơ).",
+    "lib.arcade.pot": "Tổng cược: {n}",
+    "lib.arcade.blinds": "Mù: {n}",
+    "lib.arcade.fold": "Bỏ bài",
+    "lib.arcade.callN": "Theo {n}",
+    "lib.arcade.check": "Xem bài",
+    "lib.arcade.raiseTo": "Tố tới",
+    "lib.arcade.raiseN": "Tố tới {n}",
+    "lib.arcade.thOppFold": "Máy bỏ bài, bạn thắng ván này.",
+    "lib.arcade.thYouFold": "Bạn đã bỏ bài.",
+    "lib.arcade.thYouWin": "Bạn thắng ván này",
+    "lib.arcade.thOppWin": "Máy thắng ván này",
+    "lib.arcade.thSplit": "Hoà, chia đều",
+    "lib.arcade.thAiFold": "Máy bỏ bài.",
+    "lib.arcade.thAiRaise": "Máy tố tới {n}.",
+    "lib.arcade.thAiCall": "Máy theo / xem bài.",
+    "lib.arcade.hand.high": "Bài cao",
+    "lib.arcade.hand.pair": "Đôi",
+    "lib.arcade.hand.twoPair": "Hai đôi",
+    "lib.arcade.hand.trips": "Sám cô",
+    "lib.arcade.hand.straight": "Sảnh",
+    "lib.arcade.hand.flush": "Thùng",
+    "lib.arcade.hand.full": "Cù lũ",
+    "lib.arcade.hand.quads": "Tứ quý",
+    "lib.arcade.hand.sflush": "Thùng phá sảnh",
+    "lib.arcade.note.holdem": "Đấu tay đôi với máy, chỉ dùng xu ảo. Mỗi người có 2 lá riêng, 5 lá chung mở dần (flop, turn, river); ghép 5 lá tốt nhất. Mỗi vòng bạn có thể bỏ bài, theo (hoặc xem bài) hoặc tố thêm. Mức cược tối thiểu tăng sau mỗi 4 ván. Thắng khi đối thủ hết xu, hoặc có nhiều xu hơn sau số ván giới hạn. Không dùng tiền thật."
   },
   "pages": {
     "home": {
@@ -1596,6 +1633,18 @@
     "word-scramble": {
       "name": "Xếp chữ (Anagram)",
       "desc": "Sắp xếp chữ cái bị xáo trộn thành từ tiếng Anh trước khi hết giờ; 10 cấp, 5 từ mỗi cấp."
+    },
+    "domino": {
+      "name": "Domino (Cờ đô-mi-nô)",
+      "desc": "Ghép quân có số khớp vào hai đầu chuỗi, hết quân trước máy là thắng; 10 cấp, máy khôn dần."
+    },
+    "hearts": {
+      "name": "Hearts (Bài Cơ)",
+      "desc": "Né các lá cơ và Q bích trong 4 người chơi; điểm càng thấp càng tốt, 10 cấp với máy khôn dần."
+    },
+    "texas-holdem": {
+      "name": "Texas Hold'em (Poker, xu ảo)",
+      "desc": "Poker tay đôi với máy bằng xu ảo: bỏ bài, theo hoặc tố; thắng khi máy hết xu; 10 cấp, không dùng tiền thật."
     }
   },
   "s": {

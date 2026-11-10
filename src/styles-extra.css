@@ -1754,3 +1754,18 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .hg-word{display:flex;gap:8px;justify-content:center;margin:10px 0}.hg-word span{width:clamp(26px,7vw,38px);height:clamp(34px,8vw,46px);border-bottom:3px solid #343a40;text-align:center;font:700 clamp(22px,6vw,32px)/1.4 inherit;color:#1c2b4a}
 .sc-tiles{display:flex;gap:8px;justify-content:center;margin:14px 0;flex-wrap:wrap}.sc-tiles span{width:clamp(38px,10vw,54px);aspect-ratio:1;border-radius:8px;background:#4263eb;color:#fff;display:flex;align-items:center;justify-content:center;font:700 clamp(20px,5vw,30px) inherit;box-shadow:0 3px 0 #364fc7}
 .sc-form{display:flex;gap:8px;justify-content:center}.sc-form input{width:min(60%,220px);padding:10px;font-size:20px;border:2px solid #ced4da;border-radius:8px;text-align:center;text-transform:lowercase}
+
+/* ── Domino / Hearts / Hold'em ── */
+.cd.ghost{border:2px dashed rgba(255,255,255,.35);background:transparent;box-shadow:none;cursor:default}
+.dm-board{background:#2b8a3e;border-radius:10px;padding:12px;min-height:340px;display:flex;flex-direction:column;gap:14px;color:#fff}
+.dm-row{display:flex;flex-direction:column;gap:6px}.dm-hand{display:flex;flex-wrap:wrap;gap:6px;min-height:78px}
+.dm-chain{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;align-items:center;min-height:90px;padding:8px;background:rgba(0,0,0,.18);border-radius:8px}
+.dm-t{display:flex;flex-direction:column;align-items:center;width:38px;background:#fff8e1;border:1.5px solid #5c4a1c;border-radius:6px;padding:2px;box-sizing:border-box;gap:1px;color:#212529}
+.dm-t.h{flex-direction:row;width:auto;height:38px}.dm-t b{display:block;width:70%;height:1.5px;background:#5c4a1c}.dm-t.h b{width:1.5px;height:70%}
+.dm-t.down{height:76px;background:repeating-linear-gradient(45deg,#1c5fbf 0 4px,#2b74d9 4px 8px);border-color:#fff}
+.dm-t.playable{outline:3px solid #ffd43b;cursor:pointer;transform:translateY(-4px)}
+.dm-h{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);width:30px;height:30px;padding:2px;box-sizing:border-box}.dm-h i{width:6px;height:6px;border-radius:50%;margin:auto}.dm-h i.on{background:#212529}
+.hr-board,.th-board{min-height:380px}
+.hr-scores{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:#fff}.hr-trick{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:6px 0}.hr-slot{display:flex;flex-direction:column;align-items:center;gap:4px}.hr-slot .cd{position:relative}
+.th-actions{display:flex;flex-direction:column;gap:8px;margin-bottom:8px}.th-raise{display:flex;flex-direction:column;gap:6px}.th-raise input{width:100%}
+.th-mid .cz-hand .cd{position:relative;margin-inline-end:6px}.th-board .cz-hand .cd+.cd{margin-inline-start:6px}

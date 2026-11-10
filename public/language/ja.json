@@ -567,7 +567,44 @@
     "lib.arcade.yourAnswer": "あなたの答え",
     "lib.arcade.skip": "スキップ",
     "lib.arcade.notThis": "違います。もう一度どうぞ。",
-    "lib.arcade.startsWith": "最初の文字: {c}"
+    "lib.arcade.startsWith": "最初の文字: {c}",
+    "lib.arcade.note.domino": "各プレイヤーに7枚ずつ配られ、一番大きいダブルを持つ人から始めます。列の端の数字に合うタイルを置きます。置けないときは出せるまで山から引き、山が空ならパスします。先に手持ちがなくなった人の勝ち。両者が詰まった場合は、ドット数の合計が少ない方が勝ちです。",
+    "lib.arcade.note.hearts": "4人で、各13枚。クラブの2から始めます。出せるなら場のスートに従わなければなりません。ハートは1枚1点、スペードのクイーンは13点で、トリックを取った人がその点数を受け取ります。点数は低いほど良く、26点すべてを取ると他の3人が26点になります。ハートが出るまではハートでリードできません。最後のハンド後、得点が最も低い（同点を含む）なら勝ちです。",
+    "lib.arcade.note.holdem": "コンピューターとの1対1で、仮想チップのみを使います。各自2枚の手札と5枚の共通カード（フロップ・ターン・リバー）から最も強い5枚の役を作ります。各ラウンドで、フォールド、コール（またはチェック）、レイズを選べます。ブラインドは4ハンドごとに上がります。相手のチップをなくすか、ハンド数の上限時にチップが多ければ勝ちです。本物のお金は使いません。",
+    "lib.arcade.dmDraw": "タイルを引く",
+    "lib.arcade.dmPass": "パス",
+    "lib.arcade.dmEmpty": "まだタイルが置かれていません",
+    "lib.arcade.dmYard": "山: {n}枚",
+    "lib.arcade.dmLeft": "左端",
+    "lib.arcade.dmRight": "右端",
+    "lib.arcade.dmTie": "引き分け！両者同点です。",
+    "lib.arcade.hrHand": "ハンド {n}/{t}",
+    "lib.arcade.hrTook": "{p}がトリックを取りました（{n}点）。",
+    "lib.arcade.hrIllegal": "このカードは出せません（スートに従う、またはまだハートでリードできません）。",
+    "lib.arcade.blinds": "ビッグブラインド: {n}",
+    "lib.arcade.pot": "ポット: {n}",
+    "lib.arcade.fold": "フォールド",
+    "lib.arcade.check": "チェック",
+    "lib.arcade.callN": "コール {n}",
+    "lib.arcade.raiseTo": "レイズ額",
+    "lib.arcade.raiseN": "{n}にレイズ",
+    "lib.arcade.thOppFold": "コンピューターがフォールドし、あなたがこのハンドに勝ちました。",
+    "lib.arcade.thYouFold": "あなたはフォールドしました。",
+    "lib.arcade.thOppWin": "コンピューターがこのハンドに勝ちました",
+    "lib.arcade.thYouWin": "あなたがこのハンドに勝ちました",
+    "lib.arcade.thSplit": "引き分け（ポットを分配）",
+    "lib.arcade.thAiFold": "コンピューターがフォールドしました。",
+    "lib.arcade.thAiRaise": "コンピューターが{n}にレイズしました。",
+    "lib.arcade.thAiCall": "コンピューターがコール／チェックしました。",
+    "lib.arcade.hand.high": "ハイカード",
+    "lib.arcade.hand.pair": "ワンペア",
+    "lib.arcade.hand.twoPair": "ツーペア",
+    "lib.arcade.hand.trips": "スリーカード",
+    "lib.arcade.hand.straight": "ストレート",
+    "lib.arcade.hand.flush": "フラッシュ",
+    "lib.arcade.hand.full": "フルハウス",
+    "lib.arcade.hand.quads": "フォーカード",
+    "lib.arcade.hand.sflush": "ストレートフラッシュ"
   },
   "pages": {
     "home": {
@@ -1272,6 +1309,18 @@
     "word-scramble": {
       "name": "文字並べ替え（アナグラム）",
       "desc": "時間内にバラバラの文字を英単語に並べ替えよう。1レベル5語、全10レベル。"
+    },
+    "domino": {
+      "name": "ドミノ",
+      "desc": "列の端に合うタイルを置き、コンピューターより先に手持ちをなくそう。コンピューターが賢くなる10レベル。"
+    },
+    "hearts": {
+      "name": "ハーツ",
+      "desc": "4人で遊ぶトリックテイキング。ハートとスペードのクイーンを避けよう。点数は低いほど良く、賢くなる相手と戦う10レベル。"
+    },
+    "texas-holdem": {
+      "name": "テキサスホールデム（仮想チップ）",
+      "desc": "仮想チップでコンピューターと1対1のポーカー。フォールド、コール、レイズを選び、相手のチップをなくせば勝ち。10レベル、本物のお金は使いません。"
     }
   },
   "s": {

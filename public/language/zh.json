@@ -567,7 +567,44 @@
     "lib.arcade.yourAnswer": "你的答案",
     "lib.arcade.skip": "跳过",
     "lib.arcade.notThis": "不对，再试试。",
-    "lib.arcade.startsWith": "首字母：{c}"
+    "lib.arcade.startsWith": "首字母：{c}",
+    "lib.arcade.note.domino": "每人 7 张骨牌，持最大对子的人先出。打出与牌链一端点数相同的骨牌。无牌可出时从牌堆摸牌直到能出；牌堆为空则跳过。先出完手牌者获胜；若双方都被堵住，点数总和较少者获胜。",
+    "lib.arcade.note.hearts": "4 人游戏，每人 13 张牌，梅花 2 先出。有跟牌花色就必须跟牌。每张红桃 1 分，黑桃 Q 13 分，赢得一墩的人获得其中的分数。分数越低越好，若包揽全部 26 分，则其他人各得 26 分。红桃出现之前不能领出红桃。全部牌局结束后，分数最低（或并列最低）者获胜。",
+    "lib.arcade.note.holdem": "与电脑单挑，仅使用虚拟筹码。每人 2 张底牌，5 张公共牌（翻牌、转牌、河牌）依次发出，组成最佳的 5 张牌型。每轮可以弃牌、跟注（或过牌）或加注。盲注每 4 手牌上涨一次。电脑筹码耗尽即获胜，或在手数上限时筹码更多也获胜。不涉及真钱。",
+    "lib.arcade.dmDraw": "摸牌",
+    "lib.arcade.dmPass": "跳过",
+    "lib.arcade.dmEmpty": "还没有牌打出",
+    "lib.arcade.dmYard": "牌堆：{n} 张",
+    "lib.arcade.dmLeft": "左端",
+    "lib.arcade.dmRight": "右端",
+    "lib.arcade.dmTie": "平局！双方相同。",
+    "lib.arcade.hrHand": "第 {n}/{t} 局",
+    "lib.arcade.hrTook": "{p} 赢得这一墩（{n} 分）。",
+    "lib.arcade.hrIllegal": "这张牌不能出（要跟花色，或还不能领出红桃）。",
+    "lib.arcade.blinds": "大盲注：{n}",
+    "lib.arcade.pot": "底池：{n}",
+    "lib.arcade.fold": "弃牌",
+    "lib.arcade.check": "过牌",
+    "lib.arcade.callN": "跟注 {n}",
+    "lib.arcade.raiseTo": "加注到",
+    "lib.arcade.raiseN": "加注到 {n}",
+    "lib.arcade.thOppFold": "电脑弃牌，你赢得这一手。",
+    "lib.arcade.thYouFold": "你弃牌了。",
+    "lib.arcade.thOppWin": "电脑赢得这一手",
+    "lib.arcade.thYouWin": "你赢得这一手",
+    "lib.arcade.thSplit": "平分底池",
+    "lib.arcade.thAiFold": "电脑弃牌。",
+    "lib.arcade.thAiRaise": "电脑加注到 {n}。",
+    "lib.arcade.thAiCall": "电脑跟注/过牌。",
+    "lib.arcade.hand.high": "高牌",
+    "lib.arcade.hand.pair": "一对",
+    "lib.arcade.hand.twoPair": "两对",
+    "lib.arcade.hand.trips": "三条",
+    "lib.arcade.hand.straight": "顺子",
+    "lib.arcade.hand.flush": "同花",
+    "lib.arcade.hand.full": "葫芦",
+    "lib.arcade.hand.quads": "四条",
+    "lib.arcade.hand.sflush": "同花顺"
   },
   "pages": {
     "home": {
@@ -1272,6 +1309,18 @@
     "word-scramble": {
       "name": "字母重排（Anagram）",
       "desc": "在时间用完前把打乱的字母重排成英文单词；共 10 关，每关 5 个单词。"
+    },
+    "domino": {
+      "name": "多米诺骨牌",
+      "desc": "把骨牌接在牌链两端，抢在电脑之前出完手牌；共 10 关，电脑越来越聪明。"
+    },
+    "hearts": {
+      "name": "红心大战（Hearts）",
+      "desc": "四人纸牌游戏，避开红桃和黑桃 Q；分数越低越好；共 10 关，电脑对手越来越强。"
+    },
+    "texas-holdem": {
+      "name": "德州扑克（虚拟筹码）",
+      "desc": "用虚拟筹码与电脑单挑：弃牌、跟注或加注，电脑筹码耗尽即获胜；共 10 关，不涉及真钱。"
     }
   },
   "s": {

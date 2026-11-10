@@ -118,6 +118,11 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - Dịch: vi/en/ja/zh xong (16 khoá `lib.arcade.*` + 5 tên/mô tả); nguồn /tmp/claude-0/gm/b7_source_en.json, `b7strings.py`, áp dụng bằng `applyb.py 7 <file ui>`; 96 ngôn ngữ còn lại chờ dịch
 - Còn lại: bài (Hold'em, tiến lên, phỏm, Hearts, Yukon, Cribbage, mậu binh), cờ (Shogi, Backgammon, cờ nhảy, Janggi, Domino), pinball, thủ thành, golf mini, đố vui, Tangram/Jigsaw, cookie-clicker, tô màu theo số, đoán quốc kỳ/thủ đô, N-back, Mahjong ghép cặp
 
+## Game đợt 8 (10/11/2026) — 3 game bài/cờ
+- `domino` (bộ đôi 6, 7 quân/người, bốc kho), `hearts` (4 người, không đổi bài; 1/2/3 ván theo cấp, thắng khi điểm thấp nhất hoặc đồng thấp nhất), `texas-holdem` (tay đôi, xu ảo 1000, mù tăng mỗi 4 ván, thắng khi máy hết xu hoặc nhiều xu hơn sau 12+cấp ván; máy dùng mô phỏng xác suất thắng `equity()`). Lõi `src/calc/games8.ts` (Domino, Hearts), `src/calc/holdem.ts` (chấm 7 lá, đã thử mô phỏng: xu bảo toàn), giao diện `src/lib/cards8-ui.ts`. Đặt sau `word-scramble`. Tổng site: 160 công cụ
+- Dịch: vi/en/ja/zh xong (37 khoá `lib.arcade.*` gồm `hand.*` + 3 tên/mô tả); nguồn /tmp/claude-0/gm/b8_source_en.json, `b8strings.py` (có `VI` cho khoá tên động), `applyb.py 8 src/lib/cards8-ui.ts`
+- Còn lại: bài (tiến lên, phỏm, Yukon, Cribbage, mậu binh), cờ (Shogi, Backgammon, cờ nhảy, Janggi), pinball, thủ thành, golf mini, đố vui, Tangram/Jigsaw, cookie-clicker, tô màu theo số, đoán quốc kỳ/thủ đô, N-back, Mahjong ghép cặp
+
 ## Chơi online cờ vua / cờ tướng / cờ úp / cờ vây (09/11/2026)
 - Mỗi game có 2 tab trong cùng trang: "Đánh với máy" và "Chơi với người" (`modeTabs` trong `src/lib/game-ui.ts`). Cờ úp `co-up` là game riêng (lõi `src/calc/xiangqi-dark.ts`: quân úp đi theo vị trí, sĩ/tượng đã lật đi khắp bàn, máy dùng determinization + alpha-beta)
 - Online qua broker MQTT công cộng (`wss://broker.emqx.io:8084/mqtt`, dự phòng HiveMQ; thử nghiệm đặt `localStorage 'wft:mqtt-url'`), client MQTT 3.1.1 tự viết `src/lib/mqtt.ts`, phòng `src/lib/online.ts` (topic = băm mã bàn, nội dung AES-GCM khoá suy từ mã bàn). Bàn công khai: tin retained ở `wft/g1/<game>/lobby/...`, xoá bằng LWT khi rời; bàn riêng: link `?id=<guid>`. Khôi phục khi tải lại trang (sessionStorage `wft:room:<id>`). Đăng nhập Google → lưu JSON ván vào Drive `WFTools/Games` (`src/lib/game-history.ts`)

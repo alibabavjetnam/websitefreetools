@@ -198,6 +198,9 @@ const PATHS: Record<string, string> = {
   'word-guess': '<path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/>',
   'hangman': '<path d="M4 21h8M8 21V3h8v3M16 6a2 2 0 100 .01M16 9v5M13 11h6M16 14l-3 4M16 14l3 4"/>',
   'word-scramble': '<path d="M4 7h4v4H4zM10 13h4v4h-4zM16 7h4v4h-4zM8 9h2M14 15h-2M14 9h2"/>',
+  'domino': '<path d="M5 3h14v18H5zM5 12h14M9 7.5h.01M15 16.5h.01M9 16.5h.01M15 7.5h.01"/>',
+  'hearts': '<path d="M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z"/>',
+  'texas-holdem': '<rect x="3" y="5" width="9" height="13" rx="1.5"/><rect x="12" y="6" width="9" height="13" rx="1.5"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp
