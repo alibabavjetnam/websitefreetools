@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Jokatuak",
     "lib.arcade.cbToCrib": "Jarri cribean",
     "lib.arcade.cbNext": "Jarraitu",
-    "lib.arcade.cbHand": "Eskua"
+    "lib.arcade.cbHand": "Eskua",
+    "lib.arcade.note.tangram": "Sartu pieza guztiak (maila baxuetan batzuk bakarrik) silueta grisean zehatz-mehatz, gainjarri gabe. Arrastatu pieza bat mugitzeko; sakatu pieza bat 45° biratzeko, edo erabili Biratu eta Buelta eman botoiak (paralelogramoari alde egokitik eman behar zaio buelta). Izkina baten ondoan askatutako pieza izkinara itsatsi egiten da. 1–4 mailek aholku-lerro etenak erakusten dituzte; Aholkua botoiak aktibatu eta desaktibatu egiten ditu.",
+    "lib.arcade.tgRotL": "Biratu ezkerrera",
+    "lib.arcade.tgRotR": "Biratu eskuinera",
+    "lib.arcade.tgFlip": "Buelta eman",
+    "lib.arcade.tgPieces": "Piezak: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Bi jokalarirentzako cribbagea ordenagailuaren aurka: cribra, 31ra arteko jokaldiak, eskuen zenbaketa, 61 punturaino lasterketa; 10 maila."
+    },
+    "tangram": {
+      "name": "Tangram (7 piezako puzzlea)",
+      "desc": "Arrastatu tangrameko zazpi piezak siluetara, biratuz eta buelta emanez; 10 maila, aholkuekin pieza gutxi batzuetatik zazpiak aholkurik gabe arte."
     }
   },
   "s": {

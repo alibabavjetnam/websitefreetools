@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "La ciyaaray",
     "lib.arcade.cbToCrib": "Ku dhig crib-ka",
     "lib.arcade.cbNext": "Sii wad",
-    "lib.arcade.cbHand": "Gacan"
+    "lib.arcade.cbHand": "Gacan",
+    "lib.arcade.note.tangram": "Geli dhammaan qaybaha (heerarka hoose waxaa jira kuwa yar oo keliya) gudaha muuqaalka cawlan adigoo aan is dul saarin. Qaybta jiid si aad u dhaqaajiso; taabo si aad ugu wareejiso 45°, ama isticmaal badhamada Wareeji iyo Rog (isku-dhafka dhinac-siman waa in loo rogaa si sax ah). Qayb u dhow geeska la dhigo way ku dhegtaa. Heerarka 1–4 waxay muujiyaan xariijimo tilmaam ah oo kala go'an; badhanka Tilmaam wuu shidaa oo wuu damiyaa.",
+    "lib.arcade.tgRotL": "Bidix u wareeji",
+    "lib.arcade.tgRotR": "Midig u wareeji",
+    "lib.arcade.tgFlip": "Rog",
+    "lib.arcade.tgPieces": "Qaybo: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage laba qof ah oo kombiyuutarka lala ciyaaro: crib, pegging ilaa 31, tirinta gacmaha, tartan ilaa 61 dhibic; 10 heer."
+    },
+    "tangram": {
+      "name": "Tangram (xujo 7 qaybood ah)",
+      "desc": "U jiid toddobada qaybood ee tangram muuqaalka, adigoo wareejinaya oo rogaya; 10 heer, laga bilaabo qaybo yar oo tilmaam leh ilaa toddobadaba tilmaam la'aan."
     }
   },
   "s": {

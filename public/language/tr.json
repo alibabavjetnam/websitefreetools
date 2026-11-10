@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Oynanan",
     "lib.arcade.cbToCrib": "Crib'e koy",
     "lib.arcade.cbNext": "Devam",
-    "lib.arcade.cbHand": "El"
+    "lib.arcade.cbHand": "El",
+    "lib.arcade.note.tangram": "Tüm parçaları (düşük seviyelerde yalnızca birkaçı) üst üste binmeden gri siluetin içine tam olarak yerleştirin. Bir parçayı taşımak için sürükleyin; 45° döndürmek için parçaya dokunun veya Döndür ve Çevir düğmelerini kullanın (paralelkenar doğru yöne çevrilmelidir). Köşeye yakın bırakılan parça o köşeye oturur. 1–4. seviyelerde kesikli ipucu çizgileri gösterilir; İpucu düğmesi bunları açıp kapatır.",
+    "lib.arcade.tgRotL": "Sola döndür",
+    "lib.arcade.tgRotR": "Sağa döndür",
+    "lib.arcade.tgFlip": "Çevir",
+    "lib.arcade.tgPieces": "Parça: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Bilgisayara karşı iki kişilik cribbage: crib, 31'e kadar oynama, el sayma, 61 puana yarış; 10 seviye."
+    },
+    "tangram": {
+      "name": "Tangram (7 parçalı bulmaca)",
+      "desc": "Yedi tangram parçasını döndürüp çevirerek siluetin içine sürükleyin; ipuçlu birkaç parçadan ipucsuz yedi parçanın tamamına kadar 10 seviye."
     }
   },
   "s": {

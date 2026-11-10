@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Jogadas",
     "lib.arcade.cbToCrib": "Pôr no crib",
     "lib.arcade.cbNext": "Continuar",
-    "lib.arcade.cbHand": "Mão"
+    "lib.arcade.cbHand": "Mão",
+    "lib.arcade.note.tangram": "Encaixe todas as peças (apenas algumas nos níveis baixos) exatamente na silhueta cinza, sem sobreposição. Arraste uma peça para movê-la; toque em uma peça para girá-la 45° ou use os botões Girar e Virar (o paralelogramo precisa ficar virado para o lado certo). Uma peça solta perto de um canto se encaixa nele. Os níveis 1–4 mostram linhas tracejadas de dica; o botão Dica as liga e desliga.",
+    "lib.arcade.tgRotL": "Girar para a esquerda",
+    "lib.arcade.tgRotR": "Girar para a direita",
+    "lib.arcade.tgFlip": "Virar",
+    "lib.arcade.tgPieces": "Peças: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage para dois jogadores contra o computador: crib, contagem até 31, contagem das mãos, corrida até 61 pontos; 10 níveis."
+    },
+    "tangram": {
+      "name": "Tangram (quebra-cabeça de 7 peças)",
+      "desc": "Arraste as sete peças do tangram para a silhueta, girando e virando; 10 níveis, de poucas peças com dicas até as sete sem dicas."
     }
   },
   "s": {

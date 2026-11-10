@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Spilt",
     "lib.arcade.cbToCrib": "Legg i crib",
     "lib.arcade.cbNext": "Fortsett",
-    "lib.arcade.cbHand": "Hånd"
+    "lib.arcade.cbHand": "Hånd",
+    "lib.arcade.note.tangram": "Få alle brikkene (bare noen få på lave nivåer) nøyaktig inn i den grå silhuetten uten at de overlapper. Dra en brikke for å flytte den, trykk på en brikke for å snu den 45°, eller bruk knappene Roter og Speilvend (parallellogrammet må vendes riktig vei). En brikke som slippes nær et hjørne låser seg til det. Nivå 1–4 viser stiplede hjelpelinjer, og Hint-knappen slår dem av og på.",
+    "lib.arcade.tgRotL": "Roter til venstre",
+    "lib.arcade.tgRotR": "Roter til høyre",
+    "lib.arcade.tgFlip": "Speilvend",
+    "lib.arcade.tgPieces": "Brikker: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage for to mot datamaskinen: crib, pegging til 31, telling av hender, kappløp til 61 poeng; 10 nivåer."
+    },
+    "tangram": {
+      "name": "Tangram (puslespill med 7 brikker)",
+      "desc": "Dra de sju tangram-brikkene inn i silhuetten, roter og speilvend dem; 10 nivåer fra noen få brikker med hint til alle sju uten."
     }
   },
   "s": {

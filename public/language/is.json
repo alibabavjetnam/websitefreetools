@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Spilað",
     "lib.arcade.cbToCrib": "Setja í crib",
     "lib.arcade.cbNext": "Áfram",
-    "lib.arcade.cbHand": "Hönd"
+    "lib.arcade.cbHand": "Hönd",
+    "lib.arcade.note.tangram": "Passaðu öll stykkin (aðeins fá á lágum stigum) nákvæmlega inn í gráa skuggamyndina án þess að þau skarist. Dragðu stykki til að færa það; ýttu á stykki til að snúa því um 45° eða notaðu hnappana Snúa og Fletta (samsíðungnum þarf að snúa rétt). Stykki sem sleppt er nálægt horni smellur á það. Stig 1–4 sýna strikaðar hjálparlínur; hnappurinn Vísbending kveikir og slekkur á þeim.",
+    "lib.arcade.tgRotL": "Snúa til vinstri",
+    "lib.arcade.tgRotR": "Snúa til hægri",
+    "lib.arcade.tgFlip": "Fletta",
+    "lib.arcade.tgPieces": "Stykki: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage fyrir tvo gegn tölvunni: crib, talning upp í 31, talning handa, kapphlaup í 61 stig; 10 borð."
+    },
+    "tangram": {
+      "name": "Tangram (7 stykkja þraut)",
+      "desc": "Dragðu stykkin sjö í skuggamyndina, snúðu þeim og flettu; 10 stig frá fáum stykkjum með vísbendingum til allra sjö án þeirra."
     }
   },
   "s": {

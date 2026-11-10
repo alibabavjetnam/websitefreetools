@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Adlalwe",
     "lib.arcade.cbToCrib": "Beka kwi-crib",
     "lib.arcade.cbNext": "Qhubeka",
-    "lib.arcade.cbHand": "Isandla"
+    "lib.arcade.cbHand": "Isandla",
+    "lib.arcade.note.tangram": "Beka amaqhekeza onke (kumanqanaba aphantsi ambalwa kuphela) ngokuchanekileyo ngaphakathi kwisithunzi esimdaka ngaphandle kokugqitha omnye komnye. Dlulisa iqhekeza ukuze ulisuse; cofa iqhekeza ukuze ulijikeleze nge-45°, okanye sebenzisa iimpawu zokuJikeleza nokuTshintsha icala (i-parallelogram kufuneka ijike ngendlela efanelekileyo). Iqhekeza elibekwe kufutshane nekona liyanamathela kuyo. Amanqanaba 1–4 abonisa imigca enamachokoza yengcebiso; iqhosha lengcebiso liyayivula liyayivala.",
+    "lib.arcade.tgRotL": "Jikelezisa ekhohlo",
+    "lib.arcade.tgRotR": "Jikelezisa ekunene",
+    "lib.arcade.tgFlip": "Tshintsha icala",
+    "lib.arcade.tgPieces": "Amaqhekeza: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "I-cribbage yabadlali ababini nekhompyutha: crib, pegging ukuya kwi-31, ukubala izandla, ukhuphiswano ukuya kumanqaku angama-61; amanqanaba ali-10."
+    },
+    "tangram": {
+      "name": "I-Tangram (ihlaya lamaqhekeza ama-7)",
+      "desc": "Dlulisela amaqhekeza asixhenxe e-tangram esithunzini, uwajikelezise uwatshintshe icala; amanqanaba ali-10 ukusuka kumaqhekeza ambalwa anengcebiso ukuya kwalasixhenxe angenayo."
     }
   },
   "s": {

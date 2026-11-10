@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Wis dimainké",
     "lib.arcade.cbToCrib": "Selehna ing crib",
     "lib.arcade.cbNext": "Terusna",
-    "lib.arcade.cbHand": "Tangan"
+    "lib.arcade.cbHand": "Tangan",
+    "lib.arcade.note.tangram": "Pasangna kabeh potongan (mung sawetara ing level andhap) pas ing siluet abu-abu tanpa tumpang tindih. Seret potongan kanggo mindhah; ketok potongan kanggo muter 45°, utawa gunakake tombol Muter lan Walik (jajar genjang kudu diwalik sing bener). Potongan sing dilepas cedhak sudhut bakal nempel ing kono. Level 1–4 nuduhake garis pitunjuk putus-putus; tombol Pitunjuk ngurubake lan mateni.",
+    "lib.arcade.tgRotL": "Muter kiwa",
+    "lib.arcade.tgRotR": "Muter tengen",
+    "lib.arcade.tgFlip": "Walik",
+    "lib.arcade.tgPieces": "Potongan: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage rong pemain nglawan komputer: crib, pegging nganti 31, ngitung tangan, balapan nganti 61 poin; 10 level."
+    },
+    "tangram": {
+      "name": "Tangram (teka-teki 7 potongan)",
+      "desc": "Seret pitung potongan tangram menyang siluet, diputer lan diwalik; 10 level saka sawetara potongan nganggo pitunjuk nganti kabeh pitu tanpa pitunjuk."
     }
   },
   "s": {

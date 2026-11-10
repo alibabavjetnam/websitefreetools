@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Nalaro na",
     "lib.arcade.cbToCrib": "Ilagay sa crib",
     "lib.arcade.cbNext": "Magpatuloy",
-    "lib.arcade.cbHand": "Kamay"
+    "lib.arcade.cbHand": "Kamay",
+    "lib.arcade.note.tangram": "Ilagay ang lahat ng piraso (ilan lang sa mababang antas) nang eksakto sa kulay-abong silweta nang hindi nagpapatong-patong. I-drag ang piraso para ilipat ito; i-tap ang piraso para ikutin ito nang 45°, o gamitin ang mga button na Ikot at Baligtad (dapat tama ang pagkakabaligtad ng parallelogram). Ang pirasong binitawan malapit sa sulok ay kusang kumakapit dito. Ang mga antas 1–4 ay nagpapakita ng putol-putol na linya ng pahiwatig; ino-on at ino-off ito ng button na Pahiwatig.",
+    "lib.arcade.tgRotL": "Ikot pakaliwa",
+    "lib.arcade.tgRotR": "Ikot pakanan",
+    "lib.arcade.tgFlip": "Baligtad",
+    "lib.arcade.tgPieces": "Mga piraso: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage para sa dalawa laban sa kompyuter: crib, pegging hanggang 31, pagbilang ng kamay, karera hanggang 61 puntos; 10 level."
+    },
+    "tangram": {
+      "name": "Tangram (puzzle na may 7 piraso)",
+      "desc": "I-drag ang pitong piraso ng tangram sa silweta, habang iniikot at binabaligtad ang mga ito; 10 antas mula sa ilang piraso na may pahiwatig hanggang sa lahat ng pito nang wala."
     }
   },
   "s": {

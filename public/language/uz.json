@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "O'ynalganlar",
     "lib.arcade.cbToCrib": "Crib'ga qo'y",
     "lib.arcade.cbNext": "Davom etish",
-    "lib.arcade.cbHand": "Qo'l"
+    "lib.arcade.cbHand": "Qo'l",
+    "lib.arcade.note.tangram": "Barcha bo‘laklarni (past darajalarda faqat bir nechtasini) bir-birining ustiga tushirmasdan kulrang siluet ichiga aniq joylashtiring. Bo‘lakni ko‘chirish uchun sudrang; uni 45° burish uchun bo‘lakka bosing yoki Burish va Aylantirish tugmalaridan foydalaning (parallelogramm to‘g‘ri tomonga aylantirilishi kerak). Burchak yaqiniga qo‘yilgan bo‘lak unga yopishadi. 1–4-darajalarda punktir maslahat chiziqlari ko‘rsatiladi; Maslahat tugmasi ularni yoqadi va o‘chiradi.",
+    "lib.arcade.tgRotL": "Chapga burish",
+    "lib.arcade.tgRotR": "O‘ngga burish",
+    "lib.arcade.tgFlip": "Aylantirish",
+    "lib.arcade.tgPieces": "Bo‘laklar: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Kompyuterga qarshi ikki kishilik cribbage: crib, 31 gacha pegging, qo'llarni sanash, 61 ochkogacha poyga; 10 bosqich."
+    },
+    "tangram": {
+      "name": "Tangram (7 bo‘lakli boshqotirma)",
+      "desc": "Yettita tangram bo‘lagini burib va aylantirib siluet ichiga sudrang; maslahatli bir nechta bo‘lakdan maslahatsiz barcha yettitagacha 10 daraja."
     }
   },
   "s": {

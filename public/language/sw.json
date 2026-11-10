@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Zilizochezwa",
     "lib.arcade.cbToCrib": "Weka kwenye crib",
     "lib.arcade.cbNext": "Endelea",
-    "lib.arcade.cbHand": "Mkono"
+    "lib.arcade.cbHand": "Mkono",
+    "lib.arcade.note.tangram": "Weka vipande vyote (kwenye ngazi za chini ni vichache tu) kikamilifu ndani ya kivuli cha kijivu bila kuingiliana. Buruta kipande ili kukisogeza; kigonge ili kukizungusha 45°, au tumia vitufe vya Zungusha na Geuza (paralelogramu lazima igeuzwe upande sahihi). Kipande kilichoachwa karibu na kona hujishikiza. Ngazi 1–4 zinaonyesha mistari ya vidokezo yenye vistari; kitufe cha Kidokezo huiwasha na kuizima.",
+    "lib.arcade.tgRotL": "Zungusha kushoto",
+    "lib.arcade.tgRotR": "Zungusha kulia",
+    "lib.arcade.tgFlip": "Geuza",
+    "lib.arcade.tgPieces": "Vipande: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage ya wachezaji wawili dhidi ya kompyuta: crib, kuhesabu hadi 31, kuhesabu mikono na mbio hadi pointi 61. Ngazi 10."
+    },
+    "tangram": {
+      "name": "Tangram (fumbo la vipande 7)",
+      "desc": "Buruta vipande saba vya tangram ndani ya kivuli, ukivizungusha na kuvigeuza; ngazi 10, kuanzia vipande vichache vyenye vidokezo hadi vyote saba bila vidokezo."
     }
   },
   "s": {

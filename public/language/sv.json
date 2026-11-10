@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Spelade",
     "lib.arcade.cbToCrib": "Lägg i kribben",
     "lib.arcade.cbNext": "Fortsätt",
-    "lib.arcade.cbHand": "Hand"
+    "lib.arcade.cbHand": "Hand",
+    "lib.arcade.note.tangram": "Passa in alla bitar (på låga nivåer bara några) exakt i den grå silhuetten utan att de överlappar. Dra en bit för att flytta den; tryck på en bit för att vrida den 45°, eller använd knapparna Vrid och Vänd (parallellogrammen måste vändas åt rätt håll). En bit som släpps nära ett hörn fäster där. Nivå 1–4 visar streckade hjälplinjer; knappen Tips slår på och av dem.",
+    "lib.arcade.tgRotL": "Vrid åt vänster",
+    "lib.arcade.tgRotR": "Vrid åt höger",
+    "lib.arcade.tgFlip": "Vänd",
+    "lib.arcade.tgPieces": "Bitar: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage för två mot datorn: kribb, pegging till 31, räkna händer, race till 61 poäng; 10 nivåer."
+    },
+    "tangram": {
+      "name": "Tangram (pussel med 7 bitar)",
+      "desc": "Dra de sju tangrambitarna in i silhuetten och vrid och vänd dem; 10 nivåer, från några få bitar med tips till alla sju utan."
     }
   },
   "s": {

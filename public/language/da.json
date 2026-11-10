@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Spillet",
     "lib.arcade.cbToCrib": "Læg i krybben",
     "lib.arcade.cbNext": "Fortsæt",
-    "lib.arcade.cbHand": "Hånd"
+    "lib.arcade.cbHand": "Hånd",
+    "lib.arcade.note.tangram": "Placér alle brikkerne (kun nogle få på de lave niveauer) præcis i den grå silhuet uden at overlappe. Træk en brik for at flytte den; tryk på en brik for at dreje den 45°, eller brug knapperne Drej og Vend (parallelogrammet skal vendes den rigtige vej). En brik, der slippes nær et hjørne, klikker på plads. Niveau 1–4 viser stiplede hjælpelinjer; knappen Hint slår dem til og fra.",
+    "lib.arcade.tgRotL": "Drej til venstre",
+    "lib.arcade.tgRotR": "Drej til højre",
+    "lib.arcade.tgFlip": "Vend",
+    "lib.arcade.tgPieces": "Brikker: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage for to mod computeren: krybbe, pegging til 31, tælling af hænder og kapløb til 61 point. 10 niveauer."
+    },
+    "tangram": {
+      "name": "Tangram (puslespil med 7 brikker)",
+      "desc": "Træk de syv tangram-brikker ind i silhuetten, drej og vend dem; 10 niveauer fra få brikker med hjælp til alle syv uden."
     }
   },
   "s": {

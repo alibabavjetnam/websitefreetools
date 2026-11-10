@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Jouées",
     "lib.arcade.cbToCrib": "Mettre à la crèche",
     "lib.arcade.cbNext": "Continuer",
-    "lib.arcade.cbHand": "Main"
+    "lib.arcade.cbHand": "Main",
+    "lib.arcade.note.tangram": "Placez toutes les pièces (quelques-unes seulement aux niveaux faciles) exactement dans la silhouette grise sans qu'elles se chevauchent. Faites glisser une pièce pour la déplacer ; touchez une pièce pour la tourner de 45°, ou utilisez les boutons Pivoter et Retourner (le parallélogramme doit être retourné du bon côté). Une pièce déposée près d'un coin s'y aimante. Les niveaux 1 à 4 affichent des lignes d'indice en pointillés ; le bouton Indice les active et les désactive.",
+    "lib.arcade.tgRotL": "Pivoter à gauche",
+    "lib.arcade.tgRotR": "Pivoter à droite",
+    "lib.arcade.tgFlip": "Retourner",
+    "lib.arcade.tgPieces": "Pièces : {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage à deux joueurs contre l'ordinateur : crèche, pegging jusqu'à 31, comptage des mains, course à 61 points ; 10 niveaux."
+    },
+    "tangram": {
+      "name": "Tangram (casse-tête de 7 pièces)",
+      "desc": "Faites glisser les sept pièces du tangram dans la silhouette en les pivotant et en les retournant ; 10 niveaux, de quelques pièces avec indices jusqu'aux sept sans indice."
     }
   },
   "s": {

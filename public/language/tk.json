@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Oýnalanlar",
     "lib.arcade.cbToCrib": "Crib-e goý",
     "lib.arcade.cbNext": "Dowam et",
-    "lib.arcade.cbHand": "El"
+    "lib.arcade.cbHand": "El",
+    "lib.arcade.note.tangram": "Ähli bölekleri (aşaky derejelerde diňe birnäçesi) gapma-garşylyksyz çal siluetiň içine dogry ýerleşdiriň. Bölegi süýräp süýşüriň; 45° aýlamak üçin bölege basyň ýa-da Aýla we Ters öwür düwmelerini ulanyň (paralelogram dogry tarapa öwrülmeli). Burça ýakyn goýlan bölek ol ýere ýapyşýar. 1–4-nji derejelerde üzik çyzykly maslahatlar görkezilýär; Maslahat düwmesi olary açýar we ýapýar.",
+    "lib.arcade.tgRotL": "Çepe aýla",
+    "lib.arcade.tgRotR": "Saga aýla",
+    "lib.arcade.tgFlip": "Ters öwür",
+    "lib.arcade.tgPieces": "Bölekler: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Kompýutere garşy iki adamlyk cribbage: crib, 31-e çenli pegging, ellerini sanamak, 61 utuga çenli ýaryş; 10 dereje."
+    },
+    "tangram": {
+      "name": "Tangram (7 bölekli kelle döwme)",
+      "desc": "Ýedi tangram bölegini siluetiň içine süýräň, aýlap we ters öwrüp; maslahatly birnäçe bölekden maslahatsyz ähli ýedi bölege çenli 10 derece."
     }
   },
   "s": {

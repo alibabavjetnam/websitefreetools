@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Mlagħba",
     "lib.arcade.cbToCrib": "Poġġi fil-crib",
     "lib.arcade.cbNext": "Kompli",
-    "lib.arcade.cbHand": "Id"
+    "lib.arcade.cbHand": "Id",
+    "lib.arcade.note.tangram": "Poġġi l-biċċiet kollha (ftit biss fil-livelli baxxi) eżatt fis-silwett griż mingħajr ma jiżżemmu fuq xulxin. Kaxkar biċċa biex tċaqlaqha; ittokka biċċa biex iddawwarha b'45°, jew uża l-buttuni Dawwar u Aqleb (il-paralellogramma trid tinqaleb fuq in-naħa t-tajba). Biċċa mqiegħda ħdejn rokna tingħaqad magħha. Il-livelli 1–4 juru linji ta' ċue bil-qasam; il-buttuna Ċue tixgħelhom u titfihom.",
+    "lib.arcade.tgRotL": "Dawwar lax-xellug",
+    "lib.arcade.tgRotR": "Dawwar lemin",
+    "lib.arcade.tgFlip": "Aqleb",
+    "lib.arcade.tgPieces": "Biċċiet: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage għal żewġ plejers kontra l-kompjuter: crib, għadd sa 31, għadd tal-idejn u tellieqa sa 61 punt. 10 livelli."
+    },
+    "tangram": {
+      "name": "Tangram (puzzle b'7 biċċiet)",
+      "desc": "Kaxkar is-seba' biċċiet tat-tangram fis-silwett, billi iddawwarhom u tneħħihom; 10 livelli minn ftit biċċiet bi ċwievet sas-seba' kollha mingħajrhom."
     }
   },
   "s": {

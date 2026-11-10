@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Pelatut",
     "lib.arcade.cbToCrib": "Laita cribiin",
     "lib.arcade.cbNext": "Jatka",
-    "lib.arcade.cbHand": "Käsi"
+    "lib.arcade.cbHand": "Käsi",
+    "lib.arcade.note.tangram": "Sovita kaikki palat (alemmilla tasoilla vain muutama) tarkasti harmaaseen siluettiin ilman päällekkäisyyksiä. Siirrä palaa vetämällä; napauta palaa kääntääksesi sitä 45°, tai käytä Käännä- ja Peilaa-painikkeita (suunnikas pitää peilata oikein päin). Kulman lähelle pudotettu pala napsahtaa paikalleen. Tasoilla 1–4 näkyy katkoviivavihjeitä; Vihje-painike kytkee ne päälle ja pois.",
+    "lib.arcade.tgRotL": "Käännä vasemmalle",
+    "lib.arcade.tgRotR": "Käännä oikealle",
+    "lib.arcade.tgFlip": "Peilaa",
+    "lib.arcade.tgPieces": "Palat: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Kahden pelaajan cribbage tietokonetta vastaan: crib, pelaaminen 31:een, käsien laskeminen, kilpajuoksu 61 pisteeseen; 10 tasoa."
+    },
+    "tangram": {
+      "name": "Tangram (7 palan palapeli)",
+      "desc": "Vedä tangramin seitsemän palaa siluettiin kääntäen ja peilaten; 10 tasoa muutamasta palasta vihjeineen kaikkiin seitsemään ilman vihjeitä."
     }
   },
   "s": {

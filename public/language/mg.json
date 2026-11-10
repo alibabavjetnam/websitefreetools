@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Nilalaovina",
     "lib.arcade.cbToCrib": "Apetraka ao amin’ny crib",
     "lib.arcade.cbNext": "Tohizo",
-    "lib.arcade.cbHand": "Tanana"
+    "lib.arcade.cbHand": "Tanana",
+    "lib.arcade.note.tangram": "Apetraho tsara ao anaty siluety fotsy volon-kazo ny sombiny rehetra (vitsivitsy fotsiny amin'ny haavo ambany) tsy mifanipaka. Misintona sombiny hamindra azy; kitiho ny sombiny hanodina azy 45°, na ampiasao ny bokotra Hodina sy Hamadika (tsy maintsy averina amin'ny lafiny marina ny parallélogramme). Mifikitra amin'ny zoro ny sombiny avela eo akaikiny. Ny haavo 1–4 dia mampiseho tsipika tondro mitotofy; ny bokotra Toromarika dia mampandeha na mamono azy ireo.",
+    "lib.arcade.tgRotL": "Hodina havia",
+    "lib.arcade.tgRotR": "Hodina havanana",
+    "lib.arcade.tgFlip": "Hamadika",
+    "lib.arcade.tgPieces": "Sombiny: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage ho an’ny roa manohitra solosaina: crib, pegging hatramin’ny 31, fanisana tanana, hazakazaka hahatratra 61 isa; ambaratonga 10."
+    },
+    "tangram": {
+      "name": "Tangram (tsangambato 7 sombiny)",
+      "desc": "Sintony ao anaty siluety ny sombiny tangram fito, ary odiny sy avadiho izy ireo; haavo 10 manomboka amin'ny sombiny vitsy misy fanampiana ka hatramin'ny fito rehetra tsy misy."
     }
   },
   "s": {

@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Nadula na",
     "lib.arcade.cbToCrib": "Ibutang sa crib",
     "lib.arcade.cbNext": "Padayon",
-    "lib.arcade.cbHand": "Kamot"
+    "lib.arcade.cbHand": "Kamot",
+    "lib.arcade.note.tangram": "Ibutang ang tanang piraso (pipila lang sa ubos nga lebel) eksakto sulod sa abohon nga siluweta nga walay nag-overlap. I-drag ang piraso aron ibalhin kini; i-tap ang piraso aron i-rotate kini og 45°, o gamita ang mga buton nga Rotate ug Flip (ang parallelogram kinahanglang i-flip sa saktong paagi). Ang piraso nga gibutang duol sa too nga kanto mokapot niini. Ang lebel 1–4 nagpakita og putol-putol nga mga linya sa timailhan; ang buton nga Timailhan mopabukas ug mopalong niini.",
+    "lib.arcade.tgRotL": "I-rotate pa-wala",
+    "lib.arcade.tgRotR": "I-rotate pa-tuo",
+    "lib.arcade.tgFlip": "I-flip",
+    "lib.arcade.tgPieces": "Mga piraso: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage alang sa duha batok sa kompyuter: crib, pegging hangtod 31, pag-ihap sa mga kamot, lumba hangtod 61 ka puntos; 10 ka lebel."
+    },
+    "tangram": {
+      "name": "Tangram (puzzle nga 7 ka piraso)",
+      "desc": "I-drag ang pito ka piraso sa tangram ngadto sa siluweta, i-rotate ug i-flip kini; 10 ka lebel gikan sa pipila ka piraso nga adunay timailhan hangtod sa tanang pito nga walay timailhan."
     }
   },
   "s": {

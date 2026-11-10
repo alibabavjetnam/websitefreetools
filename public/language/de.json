@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Gespielt",
     "lib.arcade.cbToCrib": "In den Crib legen",
     "lib.arcade.cbNext": "Weiter",
-    "lib.arcade.cbHand": "Hand"
+    "lib.arcade.cbHand": "Hand",
+    "lib.arcade.note.tangram": "Legen Sie alle Teile (auf niedrigen Stufen nur einige) passgenau und ohne Überlappung in die graue Silhouette. Ziehen Sie ein Teil, um es zu verschieben; tippen Sie ein Teil an, um es um 45° zu drehen, oder nutzen Sie die Schaltflächen Drehen und Spiegeln (das Parallelogramm muss richtig herum gespiegelt sein). Ein Teil, das nahe einer Ecke losgelassen wird, rastet dort ein. Die Stufen 1–4 zeigen gestrichelte Hilfslinien; mit der Schaltfläche Tipp schalten Sie sie ein und aus.",
+    "lib.arcade.tgRotL": "Nach links drehen",
+    "lib.arcade.tgRotR": "Nach rechts drehen",
+    "lib.arcade.tgFlip": "Spiegeln",
+    "lib.arcade.tgPieces": "Teile: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage für zwei gegen den Computer: Crib, Pegging bis 31, Hände zählen, Rennen bis 61 Punkte; 10 Level."
+    },
+    "tangram": {
+      "name": "Tangram (Legespiel mit 7 Teilen)",
+      "desc": "Ziehen Sie die sieben Tangram-Teile in die Silhouette und drehen und spiegeln Sie sie; 10 Stufen, von wenigen Teilen mit Hilfe bis zu allen sieben ohne."
     }
   },
   "s": {

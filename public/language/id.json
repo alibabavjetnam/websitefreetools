@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Dimainkan",
     "lib.arcade.cbToCrib": "Taruh di crib",
     "lib.arcade.cbNext": "Lanjut",
-    "lib.arcade.cbHand": "Tangan"
+    "lib.arcade.cbHand": "Tangan",
+    "lib.arcade.note.tangram": "Susun semua kepingan (hanya beberapa pada level rendah) tepat ke dalam siluet abu-abu tanpa tumpang tindih. Seret kepingan untuk memindahkannya; ketuk kepingan untuk memutarnya 45°, atau gunakan tombol Putar dan Balik (jajar genjang harus dibalik ke arah yang benar). Kepingan yang dilepas di dekat sudut akan menempel di sana. Level 1–4 menampilkan garis petunjuk putus-putus; tombol Petunjuk menyalakan dan mematikannya.",
+    "lib.arcade.tgRotL": "Putar ke kiri",
+    "lib.arcade.tgRotR": "Putar ke kanan",
+    "lib.arcade.tgFlip": "Balik",
+    "lib.arcade.tgPieces": "Kepingan: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage dua pemain melawan komputer: crib, pegging sampai 31, menghitung tangan, balapan ke 61 poin; 10 level."
+    },
+    "tangram": {
+      "name": "Tangram (puzzle 7 keping)",
+      "desc": "Seret ketujuh keping tangram ke dalam siluet sambil memutar dan membaliknya; 10 level, dari beberapa keping dengan petunjuk hingga ketujuh keping tanpa petunjuk."
     }
   },
   "s": {

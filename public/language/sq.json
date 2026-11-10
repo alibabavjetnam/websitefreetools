@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Të luajtura",
     "lib.arcade.cbToCrib": "Vë në crib",
     "lib.arcade.cbNext": "Vazhdo",
-    "lib.arcade.cbHand": "Dora"
+    "lib.arcade.cbHand": "Dora",
+    "lib.arcade.note.tangram": "Vendosni të gjitha pjesët (në nivelet e ulëta vetëm disa) saktësisht brenda siluetës gri pa u mbivendosur. Tërhiqni një pjesë për ta lëvizur; prekeni për ta rrotulluar 45°, ose përdorni butonat Rrotullo dhe Përmbys (paralelogrami duhet përmbysur në anën e duhur). Një pjesë e lëshuar pranë një këndi puthitet aty. Nivelet 1–4 tregojnë vija ndihmëse me pika; butoni Ndihmë i ndez dhe i fik.",
+    "lib.arcade.tgRotL": "Rrotullo majtas",
+    "lib.arcade.tgRotR": "Rrotullo djathtas",
+    "lib.arcade.tgFlip": "Përmbys",
+    "lib.arcade.tgPieces": "Pjesë: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage me dy lojtarë kundër kompjuterit: crib, pegging deri në 31, numërim dorësh, garë deri në 61 pikë; 10 nivele."
+    },
+    "tangram": {
+      "name": "Tangram (enigmë me 7 pjesë)",
+      "desc": "Tërhiqni shtatë pjesët e tangramit në siluetë, duke i rrotulluar dhe përmbysur; 10 nivele, nga disa pjesë me ndihmë deri te të shtatë pa ndihmë."
     }
   },
   "s": {

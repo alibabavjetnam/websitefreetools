@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Sužaista",
     "lib.arcade.cbToCrib": "Į lovelį",
     "lib.arcade.cbNext": "Tęsti",
-    "lib.arcade.cbHand": "Ranka"
+    "lib.arcade.cbHand": "Ranka",
+    "lib.arcade.note.tangram": "Sudėkite visas detales (žemuose lygiuose tik kelias) tiksliai į pilką siluetą, kad jos nesidengtų. Vilkite detalę, kad ją perkeltumėte; bakstelėkite detalę, kad pasuktumėte 45°, arba naudokite mygtukus Sukti ir Apversti (lygiagretainį reikia apversti teisinga puse). Prie kampo numesta detalė prisitvirtina. 1–4 lygiuose rodomos punktyrinės užuominų linijos; mygtukas Užuomina jas įjungia ir išjungia.",
+    "lib.arcade.tgRotL": "Sukti kairėn",
+    "lib.arcade.tgRotR": "Sukti dešinėn",
+    "lib.arcade.tgFlip": "Apversti",
+    "lib.arcade.tgPieces": "Detalės: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Kribidžas",
       "desc": "Kribidžas dviem prieš kompiuterį: lovelis, kaupimas iki 31, rankų skaičiavimas, lenktynės iki 61 taško; 10 lygių."
+    },
+    "tangram": {
+      "name": "Tangram (7 detalių dėlionė)",
+      "desc": "Vilkite septynias tangram detales į siluetą, sukdami ir apversdami jas; 10 lygių – nuo kelių detalių su užuominomis iki visų septynių be jų."
     }
   },
   "s": {

@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Oynanılanlar",
     "lib.arcade.cbToCrib": "Crib-ə qoy",
     "lib.arcade.cbNext": "Davam et",
-    "lib.arcade.cbHand": "Əl"
+    "lib.arcade.cbHand": "Əl",
+    "lib.arcade.note.tangram": "Bütün hissələri (aşağı səviyyələrdə yalnız bir neçəsini) üst-üstə düşmədən boz siluetin içinə dəqiq yerləşdirin. Hissəni tərpətmək üçün sürükləyin; onu 45° döndərmək üçün üzərinə toxunun və ya Döndər və Çevir düymələrindən istifadə edin (paraleloqram düzgün tərəfə çevrilməlidir). Küncə yaxın buraxılan hissə ora yapışır. 1–4-cü səviyyələrdə qırıq xətli ipucları göstərilir; İpucu düyməsi onları açıb söndürür.",
+    "lib.arcade.tgRotL": "Sola döndər",
+    "lib.arcade.tgRotR": "Sağa döndər",
+    "lib.arcade.tgFlip": "Çevir",
+    "lib.arcade.tgPieces": "Hissələr: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Kompüterə qarşı iki nəfərlik cribbage: crib, 31-ə qədər pegging, əllərin sayılması, 61 xala qədər yarış; 10 səviyyə."
+    },
+    "tangram": {
+      "name": "Tanqram (7 hissəli tapmaca)",
+      "desc": "Yeddi tanqram hissəsini siluetin içinə sürükləyin, döndərin və çevirin; ipucu ilə bir neçə hissədən ipucusuz yeddi hissənin hamısına qədər 10 səviyyə."
     }
   },
   "s": {

@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Kua tākarotia",
     "lib.arcade.cbToCrib": "Tuku ki te crib",
     "lib.arcade.cbNext": "Haere tonu",
-    "lib.arcade.cbHand": "Ringa"
+    "lib.arcade.cbHand": "Ringa",
+    "lib.arcade.note.tangram": "Whakaurua ngā wāhanga katoa (ko ētahi anake i ngā taumata iti) ki roto i te taarua hina, kia kaua e inaki. Toia te wāhanga hei nuku; pāwhiri te wāhanga hei huri 45°, whakamahia rānei ngā pātene Huri me Hurihuri (me hurihuri te rōpū whakarara ki te taha tika). Ka piri te wāhanga ki te koki ina whakatakotoria ki tōna taha. Ko ngā taumata 1–4 e whakaatu ana i ngā rārangi tohu tuinga-kore; ka whakaara, ka whakamate te pātene Tohu i a rātou.",
+    "lib.arcade.tgRotL": "Huri mauī",
+    "lib.arcade.tgRotR": "Huri matau",
+    "lib.arcade.tgFlip": "Hurihuri",
+    "lib.arcade.tgPieces": "Ngā wāhanga: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage mō ngā kaitākaro e rua ki te rorohiko: crib, pegging ki te 31, tatau ringa, oma ki te 61 whika; 10 taumata."
+    },
+    "tangram": {
+      "name": "Tangram (panga 7 wāhanga)",
+      "desc": "Toia ngā wāhanga tangram e whitu ki roto i te taarua, me te huri, me te hurihuri i a rātou; 10 taumata mai i ngā wāhanga torutoru me ngā tohu tae atu ki te whitu katoa me te kore tohu."
     }
   },
   "s": {

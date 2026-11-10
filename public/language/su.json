@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Geus dimaénkeun",
     "lib.arcade.cbToCrib": "Asupkeun ka crib",
     "lib.arcade.cbNext": "Teruskeun",
-    "lib.arcade.cbHand": "Leungeun"
+    "lib.arcade.cbHand": "Leungeun",
+    "lib.arcade.note.tangram": "Selapkeun sakabéh potongan (di tingkat handap ngan sawatara) pas kana siluet kulawu tanpa tumpang tindih. Sered potongan pikeun mindahkeun; keupeul pikeun muterkeun 45°, atawa paké tombol Puter jeung Walik (jajar genjang kudu diwalikkeun ka sisi nu bener). Potongan nu dileupaskeun deukeut juru bakal napel. Tingkat 1–4 mintonkeun garis pitulung titik-titik; tombol Pitunjuk ngahurungkeun jeung mareuman.",
+    "lib.arcade.tgRotL": "Puter ka kénca",
+    "lib.arcade.tgRotR": "Puter ka katuhu",
+    "lib.arcade.tgFlip": "Walik",
+    "lib.arcade.tgPieces": "Potongan: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage dua pamaén ngalawan komputer: crib, pegging nepi ka 31, ngitung leungeun, balapan nepi ka 61 poin; 10 tingkat."
+    },
+    "tangram": {
+      "name": "Tangram (teka-teki 7 potongan)",
+      "desc": "Sered tujuh potongan tangram kana siluet, bari diputer jeung diwalikkeun; 10 tingkat, ti sawatara potongan maké pitunjuk nepi ka tujuhna tanpa pitunjuk."
     }
   },
   "s": {

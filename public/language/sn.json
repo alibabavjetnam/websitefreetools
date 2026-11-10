@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Akatambwa",
     "lib.arcade.cbToCrib": "Isa mucrib",
     "lib.arcade.cbNext": "Enderera",
-    "lib.arcade.cbHand": "Ruoko"
+    "lib.arcade.cbHand": "Ruoko",
+    "lib.arcade.note.tangram": "Isa zvidimbu zvese (zvishoma chete pamatanho epasi) zvichikwana mukati megirei silhouette zvisingaenderani. Dhonza chidimbu kuti ichifambise; tinya chidimbu kuti chitenderere 45°, kana shandisa mabhatani Tenderedza uye Tendeudza (parallelogram inofanira kutendeudzwa nenzira chaiyo). Chidimbu chakadonhedzwa pedyo nekona chinonamira. Matanho 1–4 anoratidza mitsetse yakadonhedzwa yerubatsiro; bhatani Rubatsiro rinoivhura nekuivhara.",
+    "lib.arcade.tgRotL": "Tenderedza kuruboshwe",
+    "lib.arcade.tgRotR": "Tenderedza kurudyi",
+    "lib.arcade.tgFlip": "Tendeudza",
+    "lib.arcade.tgPieces": "Zvidimbu: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage yevatambi vaviri nekombiyuta: crib, pegging kusvika 31, kuverenga maoko, makwikwi kusvika pamapoindi 61; madanho 10."
+    },
+    "tangram": {
+      "name": "Tangram (mutambo wezvidimbu zvinomwe)",
+      "desc": "Dhonza zvidimbu zvinomwe zve-tangram mukati me-silhouette, uchizvitenderedza nekuzvitendeudza; matanho 10 kubva pazvidimbu zvishoma nerubatsiro kusvika zvese zvinomwe pasina."
     }
   },
   "s": {

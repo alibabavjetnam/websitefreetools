@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Odigrano",
     "lib.arcade.cbToCrib": "Daj v crib",
     "lib.arcade.cbNext": "Nadaljuj",
-    "lib.arcade.cbHand": "Roka"
+    "lib.arcade.cbHand": "Roka",
+    "lib.arcade.note.tangram": "Vse kose (na nizkih stopnjah le nekaj) natančno vstavite v sivo silhueto, ne da bi se prekrivali. Kos premaknete z vlečenjem; s tapom ga zavrtite za 45° ali uporabite gumba Zasukaj in Obrni (paralelogram mora biti obrnjen pravilno). Kos, spuščen blizu vogala, se nanj pripne. Stopnje 1–4 prikažejo črtkane pomožne črte; gumb Namig jih vklopi in izklopi.",
+    "lib.arcade.tgRotL": "Zasukaj levo",
+    "lib.arcade.tgRotR": "Zasukaj desno",
+    "lib.arcade.tgFlip": "Obrni",
+    "lib.arcade.tgPieces": "Kosov: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage za dva proti računalniku: crib, štetje do 31, štetje rok, tek do 61 točk; 10 stopenj."
+    },
+    "tangram": {
+      "name": "Tangram (sestavljanka iz 7 kosov)",
+      "desc": "Sedem kosov tangrama povlecite v silhueto, jih vrtite in obračajte; 10 stopenj, od nekaj kosov z namigi do vseh sedmih brez njih."
     }
   },
   "s": {

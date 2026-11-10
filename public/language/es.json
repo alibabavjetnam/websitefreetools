@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Jugadas",
     "lib.arcade.cbToCrib": "Poner en el crib",
     "lib.arcade.cbNext": "Continuar",
-    "lib.arcade.cbHand": "Mano"
+    "lib.arcade.cbHand": "Mano",
+    "lib.arcade.note.tangram": "Encaja todas las piezas (solo unas pocas en los niveles bajos) exactamente en la silueta gris sin que se solapen. Arrastra una pieza para moverla; toca una pieza para girarla 45°, o usa los botones Girar y Voltear (el paralelogramo debe voltearse hacia el lado correcto). Una pieza soltada cerca de una esquina se ajusta a ella. Los niveles 1–4 muestran líneas de pista discontinuas; el botón Pista las activa y desactiva.",
+    "lib.arcade.tgRotL": "Girar a la izquierda",
+    "lib.arcade.tgRotR": "Girar a la derecha",
+    "lib.arcade.tgFlip": "Voltear",
+    "lib.arcade.tgPieces": "Piezas: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage para dos jugadores contra la computadora: crib, conteo hasta 31, recuento de manos, carrera a 61 puntos; 10 niveles."
+    },
+    "tangram": {
+      "name": "Tangram (rompecabezas de 7 piezas)",
+      "desc": "Arrastra las siete piezas del tangram hasta la silueta, girándolas y volteándolas; 10 niveles, desde unas pocas piezas con pistas hasta las siete sin ellas."
     }
   },
   "s": {

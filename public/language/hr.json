@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Odigrano",
     "lib.arcade.cbToCrib": "Stavi u crib",
     "lib.arcade.cbNext": "Nastavi",
-    "lib.arcade.cbHand": "Ruka"
+    "lib.arcade.cbHand": "Ruka",
+    "lib.arcade.note.tangram": "Složite sve dijelove (na niskim razinama samo nekoliko) točno u sivu siluetu bez preklapanja. Povucite dio da ga pomaknete; dodirnite dio da ga zakrenete za 45° ili upotrijebite gumbe Zakreni i Preokreni (paralelogram treba preokrenuti na pravu stranu). Dio ispušten blizu kuta uskače na njega. Razine 1–4 prikazuju iscrtkane linije pomoći; gumb Savjet uključuje ih i isključuje.",
+    "lib.arcade.tgRotL": "Zakreni ulijevo",
+    "lib.arcade.tgRotR": "Zakreni udesno",
+    "lib.arcade.tgFlip": "Preokreni",
+    "lib.arcade.tgPieces": "Dijelovi: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage za dva igrača protiv računala: crib, pegging do 31, brojanje ruku, utrka do 61 boda; 10 razina."
+    },
+    "tangram": {
+      "name": "Tangram (slagalica od 7 dijelova)",
+      "desc": "Povucite sedam dijelova tangrama u siluetu, zakrećući ih i preokrećući; 10 razina, od nekoliko dijelova sa savjetima do svih sedam bez njih."
     }
   },
   "s": {

@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Tí a ju",
     "lib.arcade.cbToCrib": "Fi sínú crib",
     "lib.arcade.cbNext": "Tẹ̀síwájú",
-    "lib.arcade.cbHand": "Ọwọ́"
+    "lib.arcade.cbHand": "Ọwọ́",
+    "lib.arcade.note.tangram": "Gbé gbogbo àwọn ègé (díẹ̀ péré ní àwọn ìpele tó rọrùn) sínú òjìji grẹ́ẹ̀ pẹ̀lú ìpéye láìsí kí wọ́n bora wọn. Fa ègé kan láti gbé e; tẹ ègé kan láti yí i ní 45°, tàbí lo àwọn bọ́tìnì Yí àti Yí padà (a gbọ́dọ̀ yí parallelogram sí ìhà tó tọ́). Ègé tí a bá fi sí ẹ̀gbẹ́ igun yóò lẹ̀ mọ́ igun náà. Àwọn ìpele 1–4 ń fi àwọn ìlà ìtọ́kasí onípele hàn; bọ́tìnì Ìtọ́kasí ń tan án, ó sì ń pa á.",
+    "lib.arcade.tgRotL": "Yí sí òsì",
+    "lib.arcade.tgRotR": "Yí sí ọ̀tún",
+    "lib.arcade.tgFlip": "Yí padà",
+    "lib.arcade.tgPieces": "Àwọn ègé: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage olùdíje méjì lòdì sí kọ̀ǹpútà: crib, pegging sí 31, kíka ọwọ́, ìje sí ojúlówó 61; ìpele 10."
+    },
+    "tangram": {
+      "name": "Tangram (àdììtú ègé 7)",
+      "desc": "Fa àwọn ègé tangram méje sínú òjìji, kí o yí wọn kí o sì yí wọn padà; ìpele 10 láti ègé díẹ̀ pẹ̀lú ìtọ́kasí dé gbogbo méje láìsí ìtọ́kasí."
     }
   },
   "s": {

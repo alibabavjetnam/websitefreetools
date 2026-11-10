@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Jucate",
     "lib.arcade.cbToCrib": "Pune în crib",
     "lib.arcade.cbNext": "Continuă",
-    "lib.arcade.cbHand": "Mână"
+    "lib.arcade.cbHand": "Mână",
+    "lib.arcade.note.tangram": "Potrivește toate piesele (doar câteva la nivelurile mici) exact în silueta gri, fără să se suprapună. Trage o piesă pentru a o muta; atinge o piesă pentru a o roti cu 45° sau folosește butoanele Rotește și Răstoarnă (paralelogramul trebuie întors în direcția corectă). O piesă lăsată lângă un colț se fixează pe el. Nivelurile 1–4 arată linii punctate de ajutor; butonul Indiciu le pornește și le oprește.",
+    "lib.arcade.tgRotL": "Rotește la stânga",
+    "lib.arcade.tgRotR": "Rotește la dreapta",
+    "lib.arcade.tgFlip": "Răstoarnă",
+    "lib.arcade.tgPieces": "Piese: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage pentru doi împotriva calculatorului: crib, joc până la 31, numărarea mâinilor, cursă până la 61 de puncte; 10 niveluri."
+    },
+    "tangram": {
+      "name": "Tangram (puzzle cu 7 piese)",
+      "desc": "Trage cele șapte piese de tangram în siluetă, rotindu-le și răsturnându-le; 10 niveluri, de la câteva piese cu indicii până la toate cele șapte fără."
     }
   },
   "s": {

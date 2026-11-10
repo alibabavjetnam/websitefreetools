@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "An buga",
     "lib.arcade.cbToCrib": "Sa a crib",
     "lib.arcade.cbNext": "Ci gaba",
-    "lib.arcade.cbHand": "Hannu"
+    "lib.arcade.cbHand": "Hannu",
+    "lib.arcade.note.tangram": "Sanya dukkan guntuna (kaɗan ne kawai a matakan ƙasa) daidai cikin inuwar mai launin toka ba tare da sun hau juna ba. Jawo guntu don motsa shi; taɓa guntu don juya shi 45°, ko yi amfani da maɓallan Juya da Juyar da gefe (dole a juyar da parallelogram ɗin ta hanyar da ta dace). Guntun da aka sauke kusa da kusurwa yana mannewa a ciki. Matakai 1–4 suna nuna layukan alamu masu digo; maɓallin Manuniya yana kunna su da kashe su.",
+    "lib.arcade.tgRotL": "Juya hagu",
+    "lib.arcade.tgRotR": "Juya dama",
+    "lib.arcade.tgFlip": "Juyar da gefe",
+    "lib.arcade.tgPieces": "Guntuna: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage na mutane biyu da kwamfuta: crib, pegging zuwa 31, ƙidayar hannaye, tseren zuwa maki 61; matakai 10."
+    },
+    "tangram": {
+      "name": "Tangram (wasan tunani mai guntuna 7)",
+      "desc": "Jawo guntuna bakwai na tangram cikin inuwar, kana juya su da juyar da gefensu; matakai 10 daga guntuna kaɗan tare da manuniya zuwa dukkan bakwai ba tare da manuniya ba."
     }
   },
   "s": {

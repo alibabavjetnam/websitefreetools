@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Nospēlēts",
     "lib.arcade.cbToCrib": "Likt šķirstā",
     "lib.arcade.cbNext": "Turpināt",
-    "lib.arcade.cbHand": "Roka"
+    "lib.arcade.cbHand": "Roka",
+    "lib.arcade.note.tangram": "Ievietojiet visus gabalus (zemos pakāpēs tikai dažus) precīzi pelēkajā siluetā, lai tie nepārklātos. Velciet gabalu, lai to pārvietotu; pieskarieties gabalam, lai pagrieztu to par 45°, vai izmantojiet pogas Griezt un Apvērst (paralelograms jāapvērš pareizajā pusē). Gabals, kas nomests pie stūra, pieķeras tam. 1.–4. līmenī redzamas punktētas mājienu līnijas; poga Mājiens tās ieslēdz un izslēdz.",
+    "lib.arcade.tgRotL": "Griezt pa kreisi",
+    "lib.arcade.tgRotR": "Griezt pa labi",
+    "lib.arcade.tgFlip": "Apvērst",
+    "lib.arcade.tgPieces": "Gabali: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Kribidžs (Cribbage)",
       "desc": "Kribidžs diviem pret datoru: šķirsts, punktu skaitīšana līdz 31, roku skaitīšana un sacensība līdz 61 punktam. 10 līmeņi."
+    },
+    "tangram": {
+      "name": "Tangram (7 gabalu mīkla)",
+      "desc": "Velciet septiņus tangram gabalus siluetā, griežot un apvēršot tos; 10 līmeņi no dažiem gabaliem ar mājieniem līdz visiem septiņiem bez tiem."
     }
   },
   "s": {

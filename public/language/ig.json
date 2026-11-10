@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Egwuru",
     "lib.arcade.cbToCrib": "Tinye na crib",
     "lib.arcade.cbNext": "Gaa n’ihu",
-    "lib.arcade.cbHand": "Aka"
+    "lib.arcade.cbHand": "Aka",
+    "lib.arcade.note.tangram": "Tinye ihe niile (naanị ole na ole n'ogo ndị dị ala) kpọmkwem n'ime ihe oyiyi isi awọ ahụ na-adịghị ekpuchi ibe ha. Dọta otu ihe ka ị kpoga ya; pịa otu ihe ka ị tụgharịa ya 45°, ma ọ bụ jiri bọtịnụ Tụgharịa na Tụgharịa n'akụkụ (a ga-atụgharị parallelogram ahụ n'akụkụ kwesịrị ekwesị). Ihe ị hapụrụ nso n'akụkụ ga-arapara na ya. Ogo 1–4 na-egosi ahịrị ntụnye aka nwere ntụpọ; bọtịnụ Ntụnye aka na-agbanye ma gbanyụọ ha.",
+    "lib.arcade.tgRotL": "Tụgharịa n'aka ekpe",
+    "lib.arcade.tgRotR": "Tụgharịa n'aka nri",
+    "lib.arcade.tgFlip": "Tụgharịa n'akụkụ",
+    "lib.arcade.tgPieces": "Ihe: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage maka ndị abụọ megide kọmputa: crib, pegging ruo 31, ịgụ aka, ọsọ ruo isi 61; larịị 10."
+    },
+    "tangram": {
+      "name": "Tangram (egwuregwu ihe 7)",
+      "desc": "Dọta ihe asaa nke tangram n'ime ihe oyiyi ahụ, na-atụgharị ma na-atụgharị ha n'akụkụ; ogo 10 site n'ihe ole na ole nwere ntụnye aka ruo ihe asaa niile n'enweghị ntụnye aka."
     }
   },
   "s": {

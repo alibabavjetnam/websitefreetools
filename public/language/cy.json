@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Chwaraewyd",
     "lib.arcade.cbToCrib": "Rhoi yn y crib",
     "lib.arcade.cbNext": "Parhau",
-    "lib.arcade.cbHand": "Llaw"
+    "lib.arcade.cbHand": "Llaw",
+    "lib.arcade.note.tangram": "Ffitiwch yr holl ddarnau (dim ond ychydig ar y lefelau isel) yn union i mewn i'r amlinell lwyd heb orgyffwrdd. Llusgwch ddarn i'w symud; tapiwch ddarn i'w droi 45°, neu defnyddiwch y botymau Cylchdroi a Fflipio (rhaid fflipio'r paralelogram y ffordd gywir). Mae darn a ollyngir ger cornel yn clicio iddi. Mae lefelau 1–4 yn dangos llinellau awgrym toredig; mae'r botwm Awgrym yn eu troi ymlaen ac i ffwrdd.",
+    "lib.arcade.tgRotL": "Cylchdroi i'r chwith",
+    "lib.arcade.tgRotR": "Cylchdroi i'r dde",
+    "lib.arcade.tgFlip": "Fflipio",
+    "lib.arcade.tgPieces": "Darnau: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage dau chwaraewr yn erbyn y cyfrifiadur: crib, pegio i 31, cyfrif dwylo, ras i 61 pwynt; 10 lefel."
+    },
+    "tangram": {
+      "name": "Tangram (pos 7 darn)",
+      "desc": "Llusgwch saith darn y tangram i mewn i'r amlinell, gan eu cylchdroi a'u fflipio; 10 lefel o ychydig o ddarnau gydag awgrymiadau i bob un o'r saith hebddynt."
     }
   },
   "s": {

@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Kijátszva",
     "lib.arcade.cbToCrib": "Cribbe tesz",
     "lib.arcade.cbNext": "Tovább",
-    "lib.arcade.cbHand": "Kéz"
+    "lib.arcade.cbHand": "Kéz",
+    "lib.arcade.note.tangram": "Illeszd az összes darabot (alacsony szinteken csak néhányat) pontosan a szürke sziluettbe, egymásra csúszás nélkül. Húzz egy darabot a mozgatáshoz; koppints egy darabra, hogy 45°-kal elforgasd, vagy használd az Forgatás és Tükrözés gombokat (a paralelogrammát a megfelelő irányba kell tükrözni). A sarok közelében elengedett darab beugrik a helyére. Az 1–4. szint szaggatott segédvonalakat mutat; a Tipp gomb ki-be kapcsolja őket.",
+    "lib.arcade.tgRotL": "Forgatás balra",
+    "lib.arcade.tgRotR": "Forgatás jobbra",
+    "lib.arcade.tgFlip": "Tükrözés",
+    "lib.arcade.tgPieces": "Darabok: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Kétszemélyes cribbage a gép ellen: crib, pegging 31-ig, kezek számolása, verseny 61 pontig; 10 szint."
+    },
+    "tangram": {
+      "name": "Tangram (7 darabos kirakó)",
+      "desc": "Húzd a hét tangramdarabot a sziluettbe, forgatva és tükrözve őket; 10 szint, néhány darabbal és tippekkel induló szinttől mind a hét darabig tipp nélkül."
     }
   },
   "s": {

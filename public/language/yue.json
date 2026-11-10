@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "已打出",
     "lib.arcade.cbToCrib": "放入 crib",
     "lib.arcade.cbNext": "繼續",
-    "lib.arcade.cbHand": "手牌"
+    "lib.arcade.cbHand": "手牌",
+    "lib.arcade.note.tangram": "將所有拼塊（低等級只有幾塊）準確放入灰色剪影內，唔可以重疊。拖動拼塊就可以移動；點一下拼塊可以旋轉 45°，或者用「旋轉」同「翻轉」掣（平行四邊形要翻啱方向）。放近角位嘅拼塊會自動吸附。第 1–4 關會顯示虛線提示；「提示」掣可以開關佢哋。",
+    "lib.arcade.tgRotL": "向左旋轉",
+    "lib.arcade.tgRotR": "向右旋轉",
+    "lib.arcade.tgFlip": "翻轉",
+    "lib.arcade.tgPieces": "拼塊：{n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "同電腦玩雙人 Cribbage：crib、打牌數到 31、計手牌分數，比賽先到 61 分。10 關。"
+    },
+    "tangram": {
+      "name": "七巧板 Tangram（7 塊拼圖）",
+      "desc": "將七塊七巧板拖入剪影，可以旋轉同翻轉；共 10 關，由有提示嘅幾塊到冇提示嘅全部七塊。"
     }
   },
   "s": {

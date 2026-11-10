@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Jugades",
     "lib.arcade.cbToCrib": "Posa al crib",
     "lib.arcade.cbNext": "Continua",
-    "lib.arcade.cbHand": "Mà"
+    "lib.arcade.cbHand": "Mà",
+    "lib.arcade.note.tangram": "Col·loca totes les peces (només unes quantes als nivells baixos) exactament dins la silueta grisa sense que se solapin. Arrossega una peça per moure-la; toca una peça per girar-la 45°, o fes servir els botons Gira i Volteja (el paral·lelogram s'ha de voltejar cap al costat correcte). Una peça deixada a prop d'una cantonada s'hi enganxa. Els nivells 1–4 mostren línies de pista discontínues; el botó Pista les activa i les desactiva.",
+    "lib.arcade.tgRotL": "Gira a l'esquerra",
+    "lib.arcade.tgRotR": "Gira a la dreta",
+    "lib.arcade.tgFlip": "Volteja",
+    "lib.arcade.tgPieces": "Peces: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage de dos jugadors contra l'ordinador: crib, joc fins a 31, recompte de mans, cursa fins a 61 punts; 10 nivells."
+    },
+    "tangram": {
+      "name": "Tangram (trencaclosques de 7 peces)",
+      "desc": "Arrossega les set peces del tangram dins la silueta, girant-les i voltejant-les; 10 nivells, des d'unes poques peces amb pistes fins a les set sense pistes."
     }
   },
   "s": {

@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Jwe",
     "lib.arcade.cbToCrib": "Mete nan crib",
     "lib.arcade.cbNext": "Kontinye",
-    "lib.arcade.cbHand": "Men"
+    "lib.arcade.cbHand": "Men",
+    "lib.arcade.note.tangram": "Mete tout moso yo (sèlman kèk nan nivo ki ba yo) egzakteman nan silwèt gri a san yo pa kouvri youn lòt. Rale yon moso pou deplase l; tape sou yon moso pou vire l 45°, oswa sèvi ak bouton Vire ak Retounen yo (paralelogram nan dwe retounen nan bon sans lan). Yon moso ou lage toupre yon kwen ap kole sou li. Nivo 1–4 montre liy endis pwentiye; bouton Endis la limen yo oswa etenn yo.",
+    "lib.arcade.tgRotL": "Vire agòch",
+    "lib.arcade.tgRotR": "Vire adwat",
+    "lib.arcade.tgFlip": "Retounen",
+    "lib.arcade.tgPieces": "Moso: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage pou de jwè kont òdinatè a: crib, pegging jiska 31, konte men yo, kous jiska 61 pwen; 10 nivo."
+    },
+    "tangram": {
+      "name": "Tangram (devinèt 7 moso)",
+      "desc": "Rale sèt moso tangram yo nan silwèt la, vire yo epi retounen yo; 10 nivo ki soti nan kèk moso ak endis rive nan tout sèt yo san endis."
     }
   },
   "s": {

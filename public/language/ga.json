@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Imeartha",
     "lib.arcade.cbToCrib": "Cuir sa chrib",
     "lib.arcade.cbNext": "Lean ar aghaidh",
-    "lib.arcade.cbHand": "Lámh"
+    "lib.arcade.cbHand": "Lámh",
+    "lib.arcade.note.tangram": "Cuir na píosaí go léir (níl ach cúpla ceann ar leibhéil íseal) go díreach isteach sa scáthchruth liath gan forluí. Tarraing píosa chun é a bhogadh; tapáil píosa chun é a chasadh 45°, nó úsáid na cnaipí Rothlaigh agus Smeach (caithfear an comhthreomharán a smeacadh an bealach ceart). Greamaíonn píosa a thit in aice cúinne dó. Taispeánann leibhéil 1–4 línte leid poncáilte; casann an cnaipe Leid air agus as iad.",
+    "lib.arcade.tgRotL": "Rothlaigh ar chlé",
+    "lib.arcade.tgRotR": "Rothlaigh ar dheis",
+    "lib.arcade.tgFlip": "Smeach",
+    "lib.arcade.tgPieces": "Píosaí: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage do bheirt i gcoinne an ríomhaire: crib, pegáil go 31, comhaireamh lámh, rás go 61 phointe; 10 leibhéal."
+    },
+    "tangram": {
+      "name": "Tangram (mearbhall 7 bpíosa)",
+      "desc": "Tarraing na seacht bpíosa tangram isteach sa scáthchruth, á rothlú agus á smeacadh; 10 leibhéal ó chúpla píosa le leideanna go dtí na seacht gcinn gan iad."
     }
   },
   "s": {

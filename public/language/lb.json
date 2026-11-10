@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Gespillt",
     "lib.arcade.cbToCrib": "An de Crib leeën",
     "lib.arcade.cbNext": "Weider",
-    "lib.arcade.cbHand": "Hand"
+    "lib.arcade.cbHand": "Hand",
+    "lib.arcade.note.tangram": "Passt all Stécker (op niddregen Niveauen nëmmen e puer) genau an déi gro Silhouette, ouni datt se sech iwwerlappen. Zitt e Steck fir et ze réckelen; tippt e Steck un fir et em 45° ze dréinen, oder benotzt d'Knäpp Dréinen a Spigelen (de Parallelogramm muss op déi richteg Säit gespigelt ginn). E Steck, dat bei engem Eck lassgelooss gëtt, rascht do an. D'Niveauen 1–4 weisen gestrach Hellefslinnen; de Knapp Hiweis schalt se un an aus.",
+    "lib.arcade.tgRotL": "No lénks dréinen",
+    "lib.arcade.tgRotR": "No riets dréinen",
+    "lib.arcade.tgFlip": "Spigelen",
+    "lib.arcade.tgPieces": "Stécker: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage fir zwee géint de Computer: Crib, Pegging bis 31, Hänn zielen, Rennen bis 61 Punkten; 10 Niveauen."
+    },
+    "tangram": {
+      "name": "Tangram (7-Stécker-Rätsel)",
+      "desc": "Zitt déi siwe Tangram-Stécker an d'Silhouette, dréit a spigelt se; 10 Niveauen vun e puer Stécker mat Hiweiser bis zu alle siwe ouni."
     }
   },
   "s": {

@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Zagrane",
     "lib.arcade.cbToCrib": "Połóż do crib",
     "lib.arcade.cbNext": "Dalej",
-    "lib.arcade.cbHand": "Ręka"
+    "lib.arcade.cbHand": "Ręka",
+    "lib.arcade.note.tangram": "Dopasuj wszystkie elementy (na niskich poziomach tylko kilka) dokładnie do szarej sylwetki, bez nakładania się. Przeciągnij element, aby go przesunąć; dotknij elementu, aby obrócić go o 45°, lub użyj przycisków Obróć i Odbij (równoległobok trzeba odwrócić właściwą stroną). Element upuszczony blisko rogu przyciąga się do niego. Poziomy 1–4 pokazują przerywane linie podpowiedzi; przycisk Podpowiedź włącza je i wyłącza.",
+    "lib.arcade.tgRotL": "Obróć w lewo",
+    "lib.arcade.tgRotR": "Obróć w prawo",
+    "lib.arcade.tgFlip": "Odbij",
+    "lib.arcade.tgPieces": "Elementy: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage dla dwóch graczy przeciwko komputerowi: crib, pegging do 31, liczenie rąk, wyścig do 61 punktów; 10 poziomów."
+    },
+    "tangram": {
+      "name": "Tangram (układanka z 7 elementów)",
+      "desc": "Przeciągnij siedem elementów tangramu do sylwetki, obracając je i odbijając; 10 poziomów od kilku elementów z podpowiedziami do wszystkich siedmiu bez nich."
     }
   },
   "s": {

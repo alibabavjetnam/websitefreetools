@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Hatiye lîstin",
     "lib.arcade.cbToCrib": "Têxe crib",
     "lib.arcade.cbNext": "Berdewam bike",
-    "lib.arcade.cbHand": "Dest"
+    "lib.arcade.cbHand": "Dest",
+    "lib.arcade.note.tangram": "Hemû perçeyan (di astên nizm de tenê çend) bêyî ku li hev bikevin rast têxin nav sîluêta gewr. Perçeyek bikişîne da ku bihejîne; li perçeyekê bitikîne da ku 45° bizivirîne, an jî bişkojkên Bizivirîne û Berevajî bike bi kar bîne (paralelogram divê bi alîyê rast were berevajîkirin). Perçeya ku nêzîkî quncikekê bê berdan pê ve dizeliqe. Di astên 1–4 de xetên tîpkirî yên alîkariyê têne nîşandan; bişkojka Îşaret wan vedike û digire.",
+    "lib.arcade.tgRotL": "Li çepê bizivirîne",
+    "lib.arcade.tgRotR": "Li rastê bizivirîne",
+    "lib.arcade.tgFlip": "Berevajî bike",
+    "lib.arcade.tgPieces": "Perçe: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage ji bo du kesan li dijî komputerê: crib, lîstin heta 31, hejmartina destan, pêşbirk heta 61 xalan; 10 asta."
+    },
+    "tangram": {
+      "name": "Tangram (puzzla 7 perçeyî)",
+      "desc": "Heft perçeyên tangramê di nav sîluêtê de bikişîne, bizivirîne û berevajî bike; 10 ast ji çend perçeyên bi îşaret heta hemû heftan bê îşaret."
     }
   },
   "s": {

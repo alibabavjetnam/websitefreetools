@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Gespeel",
     "lib.arcade.cbToCrib": "Sit in crib",
     "lib.arcade.cbNext": "Gaan voort",
-    "lib.arcade.cbHand": "Hand"
+    "lib.arcade.cbHand": "Hand",
+    "lib.arcade.note.tangram": "Pas al die stukke (net 'n paar op lae vlakke) presies in die grys silhoeet sonder om te oorvleuel. Sleep 'n stuk om dit te skuif; tik op 'n stuk om dit 45° te draai, of gebruik die Draai- en Omkeer-knoppies (die parallelogram moet die regte kant toe omgekeer word). 'n Stuk wat naby 'n hoek neergelê word, klik daarin vas. Vlakke 1–4 wys stippellyn-wenke; die Wenk-knoppie skakel hulle aan en af.",
+    "lib.arcade.tgRotL": "Draai links",
+    "lib.arcade.tgRotR": "Draai regs",
+    "lib.arcade.tgFlip": "Omkeer",
+    "lib.arcade.tgPieces": "Stukke: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Tweespeler-cribbage teen die rekenaar: crib, pegging tot 31, hande tel, wedloop tot 61 punte; 10 vlakke."
+    },
+    "tangram": {
+      "name": "Tangram (7-stuk-legkaart)",
+      "desc": "Sleep die sewe tangram-stukke in die silhoeet, draai en keer hulle om; 10 vlakke van 'n paar stukke met wenke tot al sewe sonder."
     }
   },
   "s": {

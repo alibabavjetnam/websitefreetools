@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Giocate",
     "lib.arcade.cbToCrib": "Metti nel crib",
     "lib.arcade.cbNext": "Continua",
-    "lib.arcade.cbHand": "Mano"
+    "lib.arcade.cbHand": "Mano",
+    "lib.arcade.note.tangram": "Inserisci tutti i pezzi (pochi nei livelli bassi) esattamente nella sagoma grigia senza sovrapporli. Trascina un pezzo per spostarlo; tocca un pezzo per ruotarlo di 45°, oppure usa i pulsanti Ruota e Capovolgi (il parallelogramma va capovolto nel verso giusto). Un pezzo lasciato vicino a un angolo vi si aggancia. I livelli 1–4 mostrano linee guida tratteggiate; il pulsante Suggerimento le attiva e disattiva.",
+    "lib.arcade.tgRotL": "Ruota a sinistra",
+    "lib.arcade.tgRotR": "Ruota a destra",
+    "lib.arcade.tgFlip": "Capovolgi",
+    "lib.arcade.tgPieces": "Pezzi: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage per due contro il computer: crib, pegging fino a 31, conteggio delle mani, corsa a 61 punti; 10 livelli."
+    },
+    "tangram": {
+      "name": "Tangram (puzzle a 7 pezzi)",
+      "desc": "Trascina i sette pezzi del tangram nella sagoma, ruotandoli e capovolgendoli; 10 livelli, da pochi pezzi con suggerimenti a tutti e sette senza."
     }
   },
   "s": {

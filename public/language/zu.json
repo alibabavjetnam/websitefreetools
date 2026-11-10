@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Kudlaliwe",
     "lib.arcade.cbToCrib": "Beka ku-crib",
     "lib.arcade.cbNext": "Qhubeka",
-    "lib.arcade.cbHand": "Isandla"
+    "lib.arcade.cbHand": "Isandla",
+    "lib.arcade.note.tangram": "Beka onke amaqhezu (emazingeni aphansi ambalwa kuphela) ngokunembile ngaphakathi kwesithunzi esimpunga ngaphandle kokugqagqana. Hudulela iqhezu ukuzeulihambise; thinta iqhezu ukuze ulijikise nge-45°, noma sebenzisa izinkinobho zokuJikisa nokuGuqula (i-parallelogram kumele iguqulwe ohlangothini olufanele). Iqhezu elibekwe eduze nekhona liyanamathela kulo. Amazinga 1–4 abonisa imigqa enamachashaza yesinyathelo; inkinobho yeSelekelelo iyayivula iyayivala.",
+    "lib.arcade.tgRotL": "Jikisa kwesokunxele",
+    "lib.arcade.tgRotR": "Jikisa kwesokudla",
+    "lib.arcade.tgFlip": "Guqula",
+    "lib.arcade.tgPieces": "Amaqhezu: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "I-cribbage yabadlali ababili nekhompyutha: i-crib, i-pegging kuya ku-31, ukubala izandla, umjaho oya emaphuzwini angu-61; amazinga ayi-10."
+    },
+    "tangram": {
+      "name": "I-Tangram (indida yamaqhezu angu-7)",
+      "desc": "Hudulela amaqhezu ayisikhombisa e-tangram esithunzini, uwajikise futhi uwaguqule; amazinga ayi-10 kusuka kumaqhezu ambalwa aneselekelelo kuya kwawo wonke ayisikhombisa angenaso."
     }
   },
   "s": {

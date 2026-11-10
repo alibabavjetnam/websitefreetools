@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Xogadas",
     "lib.arcade.cbToCrib": "Deixar no crib",
     "lib.arcade.cbNext": "Continuar",
-    "lib.arcade.cbHand": "Man"
+    "lib.arcade.cbHand": "Man",
+    "lib.arcade.note.tangram": "Encaixa todas as pezas (só unhas poucas nos niveis baixos) exactamente na silueta gris sen que se solapen. Arrastra unha peza para movela; toca unha peza para xirala 45°, ou usa os botóns Xirar e Voltear (o paralelogramo hai que voltealo do lado correcto). Unha peza solta preto dun canto axústase a el. Os niveis 1–4 mostran liñas de axuda tracexadas; o botón Pista actívaas e desactívaas.",
+    "lib.arcade.tgRotL": "Xirar á esquerda",
+    "lib.arcade.tgRotR": "Xirar á dereita",
+    "lib.arcade.tgFlip": "Voltear",
+    "lib.arcade.tgPieces": "Pezas: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage para dous contra o ordenador: crib, conteo ata 31, contar mans, carreira ata 61 puntos; 10 niveis."
+    },
+    "tangram": {
+      "name": "Tangram (crebacabezas de 7 pezas)",
+      "desc": "Arrastra as sete pezas do tangram á silueta, xirándoas e volteándoas; 10 niveis, desde poucas pezas con axudas ata as sete sen elas."
     }
   },
   "s": {

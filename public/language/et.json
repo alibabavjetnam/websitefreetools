@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Mängitud",
     "lib.arcade.cbToCrib": "Pane cribi",
     "lib.arcade.cbNext": "Jätka",
-    "lib.arcade.cbHand": "Käsi"
+    "lib.arcade.cbHand": "Käsi",
+    "lib.arcade.note.tangram": "Sobita kõik tükid (madalatel tasemetel vaid mõned) täpselt halli siluetti nii, et need ei kattuks. Tüki liigutamiseks lohistage seda; puudutage tükki, et pöörata seda 45°, või kasutage nuppe Pööra ja Pööra ümber (rööpkülik tuleb ümber pöörata õigele poole). Nurga lähedale lastud tükk klõpsatab sellele kohale. Tasemetel 1–4 on näha katkendjooned vihjeks; nupp Vihje lülitab need sisse ja välja.",
+    "lib.arcade.tgRotL": "Pööra vasakule",
+    "lib.arcade.tgRotR": "Pööra paremale",
+    "lib.arcade.tgFlip": "Pööra ümber",
+    "lib.arcade.tgPieces": "Tükke: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Kahe mängija cribbage arvuti vastu: crib, pegging 31-ni, käte lugemine, võidujooks 61 punktini; 10 taset."
+    },
+    "tangram": {
+      "name": "Tangram (7-tükiline pusle)",
+      "desc": "Lohistage tangrami seitse tükki siluetti, pöörates ja ümber pöörates; 10 taset alates mõnest tükist vihjetega kuni kõigi seitsmeni ilma vihjeteta."
     }
   },
   "s": {

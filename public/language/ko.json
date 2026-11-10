@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "낸 카드",
     "lib.arcade.cbToCrib": "크립에 놓기",
     "lib.arcade.cbNext": "계속",
-    "lib.arcade.cbHand": "패"
+    "lib.arcade.cbHand": "패",
+    "lib.arcade.note.tangram": "모든 조각(낮은 레벨에서는 몇 개만)을 겹치지 않게 회색 실루엣에 정확히 맞춰 넣으세요. 조각을 드래그하면 이동하고, 조각을 탭하면 45° 회전하며, 회전 및 뒤집기 버튼도 사용할 수 있습니다(평행사변형은 올바른 방향으로 뒤집어야 합니다). 모서리 근처에 놓은 조각은 그 모서리에 달라붙습니다. 레벨 1–4에는 점선 힌트가 표시되며, 힌트 버튼으로 켜고 끌 수 있습니다.",
+    "lib.arcade.tgRotL": "왼쪽으로 회전",
+    "lib.arcade.tgRotR": "오른쪽으로 회전",
+    "lib.arcade.tgFlip": "뒤집기",
+    "lib.arcade.tgPieces": "조각: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "크리비지",
       "desc": "컴퓨터와 겨루는 2인용 크리비지. 크립, 31까지 내기, 패 점수 세기, 61점 경주. 10레벨."
+    },
+    "tangram": {
+      "name": "Tangram (7조각 퍼즐)",
+      "desc": "탱그램 조각 일곱 개를 실루엣 안으로 드래그하고 회전하고 뒤집어 맞추세요. 힌트가 있는 몇 조각부터 힌트 없는 일곱 조각 전부까지 10개 레벨."
     }
   },
   "s": {

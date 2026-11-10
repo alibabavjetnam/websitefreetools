@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Zahráno",
     "lib.arcade.cbToCrib": "Dát do cribu",
     "lib.arcade.cbNext": "Pokračovat",
-    "lib.arcade.cbHand": "Ruka"
+    "lib.arcade.cbHand": "Ruka",
+    "lib.arcade.note.tangram": "Umístěte všechny dílky (na nízkých úrovních jen několik) přesně do šedé siluety tak, aby se nepřekrývaly. Dílek přesunete tažením; klepnutím ho otočíte o 45° nebo použijte tlačítka Otočit a Překlopit (rovnoběžník musí být překlopen správnou stranou). Dílek pustěný poblíž rohu se k němu přichytí. Úrovně 1–4 ukazují čárkované nápovědné čáry; tlačítkem Nápověda je zapnete a vypnete.",
+    "lib.arcade.tgRotL": "Otočit doleva",
+    "lib.arcade.tgRotR": "Otočit doprava",
+    "lib.arcade.tgFlip": "Překlopit",
+    "lib.arcade.tgPieces": "Dílky: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage pro dva hráče proti počítači: crib, pegging do 31, počítání rukou, závod do 61 bodů; 10 úrovní."
+    },
+    "tangram": {
+      "name": "Tangram (skládačka ze 7 dílků)",
+      "desc": "Přetáhněte sedm dílků tangramu do siluety, otáčejte je a překlápějte; 10 úrovní od několika dílků s nápovědou po všech sedm bez ní."
     }
   },
   "s": {

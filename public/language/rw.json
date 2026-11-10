@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Yakinwe",
     "lib.arcade.cbToCrib": "Shyira muri crib",
     "lib.arcade.cbNext": "Komeza",
-    "lib.arcade.cbHand": "Ikarita"
+    "lib.arcade.cbHand": "Ikarita",
+    "lib.arcade.note.tangram": "Shyira ibice byose (ku nzego zoroheje ni bike gusa) mu gicucu cy'ikijuju neza, bitegeranye. Kurura igice kugira ngoukimure; kora ku gice kugira ngo ugikwirike 45°, cyangwa ukoreshe utubuto twa Zungurutsa na Hindura uruhande (parallelogramu igomba guhindurwa uruhande rukwiye). Igice cyatewe hafi y'inguni kiyifata. Urwego rwa 1–4 rugaragaza imirongo y'utudomo y'ubufasha; akabuto k'Ubufasha kayifungura kandi kakayifunga.",
+    "lib.arcade.tgRotL": "Zungurutsa ibumoso",
+    "lib.arcade.tgRotR": "Zungurutsa iburyo",
+    "lib.arcade.tgFlip": "Hindura uruhande",
+    "lib.arcade.tgPieces": "Ibice: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage y'abakinnyi babiri n'umudasobwa: crib, pegging kugeza kuri 31, kubara amakarita, isiganwa rigana ku manota 61; inzego 10."
+    },
+    "tangram": {
+      "name": "Tangram (umukino w'ibice 7)",
+      "desc": "Kurura ibice birindwi bya tangram ubishyire mu gicucu, ubizungurutsa kandi ubihindura uruhande; inzego 10 uhereye ku bice bike hamwe n'ubufasha kugeza ku birindwi byose nta bufasha."
     }
   },
   "s": {

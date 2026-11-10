@@ -734,7 +734,12 @@
     "lib.arcade.cbPlayed": "Gespeeld",
     "lib.arcade.cbToCrib": "In de crib leggen",
     "lib.arcade.cbNext": "Doorgaan",
-    "lib.arcade.cbHand": "Hand"
+    "lib.arcade.cbHand": "Hand",
+    "lib.arcade.note.tangram": "Pas alle stukken (op lage niveaus maar een paar) precies in het grijze silhouet zonder dat ze overlappen. Sleep een stuk om het te verplaatsen, tik op een stuk om het 45° te draaien, of gebruik de knoppen Draaien en Spiegelen (het parallellogram moet de juiste kant op liggen). Een stuk dat bij een hoek wordt losgelaten, klikt eraan vast. Niveau 1–4 tonen stippellijnen als hulp; met de knop Hint zet je ze aan en uit.",
+    "lib.arcade.tgRotL": "Naar links draaien",
+    "lib.arcade.tgRotR": "Naar rechts draaien",
+    "lib.arcade.tgFlip": "Spiegelen",
+    "lib.arcade.tgPieces": "Stukken: {n}"
   },
   "pages": {
     "home": {
@@ -1519,6 +1524,10 @@
     "cribbage": {
       "name": "Cribbage",
       "desc": "Cribbage voor twee tegen de computer: crib, pegging tot 31, handen tellen, race naar 61 punten; 10 levels."
+    },
+    "tangram": {
+      "name": "Tangram (puzzel met 7 stukken)",
+      "desc": "Sleep de zeven tangramstukken in het silhouet en draai en spiegel ze; 10 niveaus, van een paar stukken met hints tot alle zeven zonder."
     }
   },
   "s": {
