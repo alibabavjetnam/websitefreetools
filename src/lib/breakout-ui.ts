@@ -3,6 +3,7 @@ import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah, bestScore, bindKeys, setupCanvas } from './arcade-ui';
+import { sfx } from './sfx';
 
 const W = 480, H = 600, BR = 7;
 const COLORS = ['#fa5252', '#fd7e14', '#fcc419', '#40c057', '#228be6', '#7950f2', '#e64980'];
@@ -113,18 +114,18 @@ export function mountBreakout(id: string): void {
   }
   function physics(dt: number): void {
     bx += vx * dt; by += vy * dt;
-    if (bx < BR) { bx = BR; vx = Math.abs(vx); }
-    if (bx > W - BR) { bx = W - BR; vx = -Math.abs(vx); }
+    if (bx < BR) { bx = BR; vx = Math.abs(vx); sfx('tick'); }
+    if (bx > W - BR) { bx = W - BR; vx = -Math.abs(vx); sfx('tick'); }
     if (by < BR) { by = BR; vy = Math.abs(vy); }
     const py = H - 44;
     if (vy > 0 && by + BR >= py && by + BR <= py + 14 && bx >= px - pw / 2 - BR && bx <= px + pw / 2 + BR) {
       const rel = (bx - px) / (pw / 2);
       const a = -Math.PI / 2 + Math.max(-1, Math.min(1, rel)) * 1.05;
       const sp = Math.hypot(vx, vy);
-      vx = Math.cos(a) * sp; vy = Math.sin(a) * sp; by = py - BR;
+      vx = Math.cos(a) * sp; vy = Math.sin(a) * sp; by = py - BR; sfx('bounce');
     }
     if (by > H + 20) {
-      lives--;
+      lives--; sfx(lives > 0 ? 'warn' : 'boom');
       if (lives <= 0) return end(false);
       resetBall();
       return;
@@ -136,7 +137,7 @@ export function mountBreakout(id: string): void {
       const overlapX = Math.min(bx + BR - b.x, b.x + b.w - (bx - BR));
       const overlapY = Math.min(by + BR - b.y, b.y + b.h - (by - BR));
       if (overlapX < overlapY) vx = -vx; else vy = -vy;
-      b.hp--; score += b.hp ? 5 : 10 * level;
+      b.hp--; sfx(b.hp ? 'bounce' : 'brick'); score += b.hp ? 5 : 10 * level;
       if (bricks.every((x) => x.hp <= 0)) return end(true);
       // tăng tốc nhẹ
       vx *= 1.004; vy *= 1.004;

@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "选择一种颜色，把左上角你占据的整片区域涂成该色，并吞并相邻的同色格子。请在限定步数内让整个棋盘变成同一种颜色。",
     "lib.arcade.note.mastermind": "电脑藏了一排颜色。为每个位置选好颜色后点击“猜”。黑点 = 颜色和位置都对；白点 = 颜色对但位置不对。请在猜测次数用完前破解。",
     "lib.arcade.note.hanoi": "把所有圆盘移到最后一根柱子上。每次只能移动柱子最上面的一个圆盘，且不能把大圆盘放在小圆盘上。先点击起始柱，再点击目标柱。",
-    "lib.arcade.note.pipes": "点击格子把管道旋转 90°。把所有管道连成一个网络，不留开口的端点（开口端会标红）。"
+    "lib.arcade.note.pipes": "点击格子把管道旋转 90°。把所有管道连成一个网络，不留开口的端点（开口端会标红）。",
+    "lib.arcade.pongScore": "你 {a} – {b} 电脑（先到 {t} 分）",
+    "lib.arcade.kills": "击落：{n}/{t}",
+    "lib.arcade.rocksLeft": "还剩 {n} 块陨石",
+    "lib.arcade.timeLeft": "剩余 {n} 秒",
+    "lib.arcade.stepsN": "步数：{n}",
+    "lib.arcade.crossed": "到家：{n}/{t}",
+    "lib.arcade.pipes": "已通过水管：{n}/{t}",
+    "lib.arcade.distance": "距离：{n}/{t} 米",
+    "lib.arcade.speedN": "速度：{n}",
+    "lib.arcade.note.whack-a-mole": "地鼠会从洞里冒出来，点击或轻触即可打它。在时间用完前打够数量就过关。从第 4 关起会出现炸弹，打到会扣分。",
+    "lib.arcade.hole": "洞",
+    "lib.arcade.hitsN": "命中：{n}/{t}",
+    "lib.arcade.note.simon": "游戏会播放一串颜色和声音，请按相同顺序重复。每一轮会多一个。记住规定的长度即可过关。从第 7 关起有 6 个按键。",
+    "lib.arcade.seqN": "序列：{n}/{t}",
+    "lib.arcade.watch": "请看…",
+    "lib.arcade.yourTurnShort": "轮到你",
+    "lib.arcade.note.aim-trainer": "靶子随机出现并很快消失，尽量多击中。关卡越高靶子越小越快。在失误超过 5 次之前击中足够数量即过关。",
+    "lib.arcade.missN": "失误：{n}/{t}",
+    "lib.arcade.answer": "答案",
+    "lib.arcade.note.quick-math": "尽快心算：输入答案后按回车。每题有时间限制，答错或超时会扣一条命（共 3 条）。答对足够数量的题目即过关。",
+    "lib.arcade.correctN": "答对：{n}/{t}",
+    "lib.arcade.note.reaction": "等屏幕变绿后尽快点击。点得太早算犯规（犯规 3 次即失败）。5 轮的平均成绩要优于本关的标准。",
+    "lib.arcade.roundN": "第 {n}/{t} 轮",
+    "lib.arcade.limitMs": "标准：{n} 毫秒",
+    "lib.arcade.rxWait": "等待变绿…",
+    "lib.arcade.rxGo": "点击！",
+    "lib.arcade.rxEarly": "太早了！",
+    "lib.arcade.gameArea": "游戏区域",
+    "lib.arcade.note.pong": "移动鼠标、拖动手指或按 ← → 键控制下方球拍。把球打过电脑一侧，先得 5 分者获胜。每次击球球都会加速。",
+    "lib.arcade.note.space-shooter": "移动鼠标、拖动手指或按 ← → 键驾驶飞船，飞船会自动开火。击落足够数量的敌机即可过关，注意躲避碰撞和敌方子弹。你有 3 条命。",
+    "lib.arcade.note.asteroids": "← → 旋转飞船，↑ 加速，空格键开火。击毁所有陨石即可过关；大陨石会分裂成小陨石。飞船会从屏幕边缘绕到另一侧。你有 3 条命。",
+    "lib.arcade.note.maze": "用方向键（或滑动、按钮）在时间用完前从绿点走到红旗。从第 5 关起迷宫有迷雾：只能看到身边，走过的地方会被记住。",
+    "lib.arcade.note.road-cross": "用方向键、滑动或按钮让青蛙从下往上跳。躲开车辆；从第 5 关起上半部分是河，要跳到漂浮的木头上。成功到家 3 次即可过关。你有 3 条命。",
+    "lib.arcade.note.flappy": "点击游戏区域、按空格键或 ↑ 来拍翅膀。穿过水管之间的缺口，不要碰到水管、地面或天花板。关卡越高，缺口越窄、速度越快。",
+    "lib.arcade.note.runner": "点击游戏区域、按空格键或 ↑ 跳过仙人掌；按住 ↓ 可低头躲过高处的鸟（低处的鸟则跳过去）。跑够距离即可过关，速度会不断提高。",
+    "lib.arcade.fire": "开火",
+    "lib.arcade.jump": "跳跃",
+    "lib.arcade.aimTarget": "靶子",
+    "lib.game.soundOn": "开启声音",
+    "lib.game.soundOff": "关闭声音"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "终极井字棋",
       "desc": "在 9 个小棋盘上下井字棋：你选的格子决定对手必须在哪个小棋盘落子；与电脑对战，共 10 关。"
+    },
+    "pong": {
+      "name": "乒乓球（Pong）",
+      "desc": "把球打过电脑一侧，先得 5 分者获胜；共 10 关，对手越来越快越准。"
+    },
+    "space-shooter": {
+      "name": "太空射击",
+      "desc": "驾驶飞船击落敌机并躲避敌方火力；共 10 关，敌人更多、会反击、也更耐打。"
+    },
+    "asteroids": {
+      "name": "陨石大战（Asteroids）",
+      "desc": "旋转、加速并射击来击碎太空陨石；大陨石会分裂成小块。共 10 关，陨石更多更快。"
+    },
+    "maze": {
+      "name": "迷宫",
+      "desc": "在时间用完前走出迷宫；共 10 关，从小迷宫到大迷宫，高等级还有迷雾。"
+    },
+    "road-cross": {
+      "name": "过马路（青蛙过河）",
+      "desc": "让青蛙穿过车流和漂浮木头的河流，成功到家 3 次；共 10 关，车越来越快，高等级还有河流。"
+    },
+    "flappy": {
+      "name": "飞扬小鸟",
+      "desc": "点击拍翅膀，穿过水管之间的缺口；共 10 关，缺口越来越窄、速度越来越快。"
+    },
+    "runner": {
+      "name": "小恐龙跑酷",
+      "desc": "跳过仙人掌、低头躲鸟；速度不断提高，跑够距离即可过关，共 10 关。"
+    },
+    "whack-a-mole": {
+      "name": "打地鼠",
+      "desc": "在时间用完前打中从洞里冒出的地鼠，避开炸弹；共 10 关，由慢到极快。"
+    },
+    "simon": {
+      "name": "记忆闪灯（Simon）",
+      "desc": "记住并重复游戏播放的颜色与声音序列；共 10 关，序列越来越长，第 7 关起有 6 个按键。"
+    },
+    "aim-trainer": {
+      "name": "瞄准训练",
+      "desc": "击中随机出现并很快消失的靶子；共 10 关，靶子逐渐变小，并会统计你的反应时间。"
+    },
+    "quick-math": {
+      "name": "快速心算",
+      "desc": "在时间压力下心算加减乘除；共 10 关，从简单算术到复合算式。"
+    },
+    "reaction": {
+      "name": "反应速度测试",
+      "desc": "屏幕变绿的瞬间立即点击；5 轮平均成绩要达到每关的标准，标准在 10 关中逐步收紧。"
     }
   },
   "s": {

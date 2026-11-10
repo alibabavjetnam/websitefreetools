@@ -4,6 +4,7 @@ import { t, tf } from '../i18n';
 import { MINE_LEVELS, Minefield } from '../calc/minesweeper';
 import { clearBanner, fmtTime, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { Af, Ah, bestScore } from './arcade-ui';
+import { sfx } from './sfx';
 
 export function mountMines(id: string): void {
   const { levelBar, banner } = gameShell(`
@@ -69,9 +70,10 @@ export function mountMines(id: string): void {
   function act(i: number, flag: boolean): void {
     if (over) return;
     if (!timer && !f.placed && !flag) { t0 = Date.now(); timer = window.setInterval(() => { secs = Math.floor((Date.now() - t0) / 1000); $('#ms-time').textContent = fmtTime(secs); }, 500); }
-    if (flag) { f.toggleFlag(i); render(); return; }
+    if (flag) { f.toggleFlag(i); sfx('place'); render(); return; }
     const ok = f.state[i] === 1 ? f.chord(i) : f.state[i] === 2 ? true : f.open(i);
-    if (!ok) return finish(false);
+    if (!ok) { sfx('boom'); return finish(false); }
+    sfx('pop');
     if (f.won()) return finish(true);
     render();
   }

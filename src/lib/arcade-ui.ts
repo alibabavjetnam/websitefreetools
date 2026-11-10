@@ -24,10 +24,11 @@ const ARROW: Record<string, string> = {
   left: '<path d="M15 5l-7 7 7 7"/>', right: '<path d="M9 5l7 7-7 7"/>', up: '<path d="M5 15l7-7 7 7"/>', down: '<path d="M5 9l7 7 7-7"/>',
   rotate: '<path d="M20 12a8 8 0 1 1-2.3-5.7L20 8.5"/><path d="M20 3.5v5h-5"/>', drop: '<path d="M12 4v13M6 11l6 6 6-6"/><path d="M5 20h14"/>',
   pause: '<path d="M8 5v14M16 5v14"/>',
+  fire: '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/>', jump: '<path d="M5 17l7-9 7 9"/><path d="M5 21h14"/>',
 };
 const LABEL: Record<string, [string, string]> = {
   left: ['left', 'Sang trái'], right: ['right', 'Sang phải'], up: ['up', 'Lên'], down: ['down', 'Xuống'],
-  rotate: ['rotate', 'Xoay'], drop: ['drop', 'Thả nhanh'], pause: ['pause', 'Tạm dừng'],
+  rotate: ['rotate', 'Xoay'], drop: ['drop', 'Thả nhanh'], pause: ['pause', 'Tạm dừng'], fire: ['fire', 'Bắn'], jump: ['jump', 'Nhảy'],
 };
 
 /** Hàng nút điều khiển trên màn hình cảm ứng; trả về HTML, mỗi nút có data-k="<tên>" */

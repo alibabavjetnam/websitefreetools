@@ -8,6 +8,7 @@ import { t, tf } from '../i18n';
 import { Position, chessAiMove, type Move } from '../calc/chess';
 import { clearBanner, fullscreenButton, gameShell, modeTabs, progressOf, renderLevelBar, showBanner, type GameMode } from './game-ui';
 import { OnlineRoom, resultText, type Color, type OnlineResult } from './online';
+import { sfx } from './sfx';
 
 const GLYPH = ['', '♟', '♞', '♝', '♜', '♛', '♚'];
 const FILES = 'abcdefgh';
@@ -95,6 +96,7 @@ export function mountChess(id: string): void {
 
   function onlineCheckEnd(): void {
     const st = pos.status();
+    if (st === 'play' && pos.inCheck()) sfx('check');
     if (st === 'play') { render(); return; }
     over = true;
     const mover: Color = turnColor() === 0 ? 1 : 0;

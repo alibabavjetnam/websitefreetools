@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Chọn một màu để tô cả vùng đang chiếm ở góc trên trái; vùng sẽ nuốt các ô liền kề cùng màu. Hãy làm cả bàn cùng một màu trong số nước cho phép.",
     "lib.arcade.note.mastermind": "Máy giấu một dãy màu. Chọn màu cho từng vị trí rồi bấm Đoán. Chấm đen = đúng màu đúng vị trí, chấm trắng = đúng màu nhưng sai vị trí. Đoán ra dãy trước khi hết lượt.",
     "lib.arcade.note.hanoi": "Chuyển toàn bộ đĩa sang cọc cuối cùng. Mỗi lần chỉ chuyển một đĩa trên cùng, và không đặt đĩa to lên đĩa nhỏ. Bấm cọc nguồn rồi cọc đích.",
-    "lib.arcade.note.pipes": "Bấm một ô để xoay ống 90°. Nối mọi ống thành một mạng liền, không còn đầu ống hở (đầu hở được tô đỏ)."
+    "lib.arcade.note.pipes": "Bấm một ô để xoay ống 90°. Nối mọi ống thành một mạng liền, không còn đầu ống hở (đầu hở được tô đỏ).",
+    "lib.arcade.pongScore": "Bạn {a} – {b} Máy (tới {t})",
+    "lib.arcade.kills": "Hạ: {n}/{t}",
+    "lib.arcade.rocksLeft": "Còn {n} đá",
+    "lib.arcade.timeLeft": "Còn {n} giây",
+    "lib.arcade.stepsN": "Bước: {n}",
+    "lib.arcade.crossed": "Về đích: {n}/{t}",
+    "lib.arcade.pipes": "Ống đã qua: {n}/{t}",
+    "lib.arcade.distance": "Quãng đường: {n}/{t} m",
+    "lib.arcade.speedN": "Tốc độ: {n}",
+    "lib.arcade.note.whack-a-mole": "Chuột nhô lên từ các hang — bấm vào chuột để đập. Đập đủ số chuột trước khi hết giờ. Từ cấp 4 có quả bom: bấm trúng bom bị trừ điểm.",
+    "lib.arcade.hole": "Hang",
+    "lib.arcade.hitsN": "Đã đập: {n}/{t}",
+    "lib.arcade.note.simon": "Máy phát một dãy màu và âm thanh — bạn nhớ rồi bấm lại đúng thứ tự. Mỗi lượt dãy dài thêm một nút. Nhớ đủ độ dài yêu cầu là qua cấp. Từ cấp 7 có 6 nút.",
+    "lib.arcade.seqN": "Dãy: {n}/{t}",
+    "lib.arcade.watch": "Hãy xem…",
+    "lib.arcade.yourTurnShort": "Đến lượt bạn",
+    "lib.arcade.note.aim-trainer": "Bia hiện ngẫu nhiên và biến mất nhanh — bấm trúng càng nhiều càng tốt. Bia ngày càng nhỏ và nhanh. Trúng đủ số bia trước khi trượt quá 5 lần là qua cấp.",
+    "lib.arcade.missN": "Trượt: {n}/{t}",
+    "lib.arcade.answer": "Đáp án",
+    "lib.arcade.note.quick-math": "Tính nhẩm càng nhanh càng tốt: gõ đáp án rồi bấm Enter. Mỗi câu có giới hạn thời gian; sai hoặc hết giờ mất một mạng (3 mạng). Trả lời đủ số câu đúng là qua cấp.",
+    "lib.arcade.correctN": "Đúng: {n}/{t}",
+    "lib.arcade.note.reaction": "Chờ màn hình chuyển sang xanh lá rồi bấm thật nhanh. Bấm sớm bị tính là phạm lỗi (tối đa 3 lỗi). Thời gian trung bình 5 lượt phải đạt ngưỡng của cấp.",
+    "lib.arcade.roundN": "Lượt {n}/{t}",
+    "lib.arcade.limitMs": "Ngưỡng: {n} ms",
+    "lib.arcade.rxWait": "Chờ màu xanh…",
+    "lib.arcade.rxGo": "BẤM!",
+    "lib.arcade.rxEarly": "Bấm sớm quá!",
+    "lib.arcade.gameArea": "Khu vực chơi",
+    "lib.arcade.note.pong": "Di chuột, kéo ngón tay hoặc dùng phím ← → để điều khiển thanh dưới. Đánh bóng qua mặt máy; ai ghi 5 điểm trước thì thắng. Bóng càng lúc càng nhanh.",
+    "lib.arcade.note.space-shooter": "Di chuột, kéo ngón tay hoặc dùng phím ← → để lái tàu; tàu tự bắn. Hạ đủ số tàu địch để qua cấp, tránh va chạm và đạn địch. Bạn có 3 mạng.",
+    "lib.arcade.note.asteroids": "← → để xoay tàu, ↑ để tăng tốc, phím cách để bắn. Phá hết đá vũ trụ để qua cấp; đá lớn vỡ thành đá nhỏ. Tàu bay vòng qua mép sân. Bạn có 3 mạng.",
+    "lib.arcade.note.maze": "Dùng phím mũi tên (hoặc vuốt, hoặc các nút) để đi từ ô xanh lá tới ô cờ đỏ trước khi hết giờ. Từ cấp 5 mê cung bị sương mù: chỉ thấy quanh mình, các ô đã đi qua được nhớ lại.",
+    "lib.arcade.note.road-cross": "Dùng phím mũi tên, vuốt hoặc các nút để nhảy chú ếch từ dưới lên trên. Tránh xe cộ; từ cấp 5 phần trên là sông, phải nhảy lên các khúc gỗ trôi. Về đích 3 lần để qua cấp, bạn có 3 mạng.",
+    "lib.arcade.note.flappy": "Chạm vào sân, bấm phím cách hoặc ↑ để vỗ cánh. Bay qua khe giữa các ống mà không chạm ống, mặt đất hay trần. Càng lên cấp khe càng hẹp và bay càng nhanh.",
+    "lib.arcade.note.runner": "Chạm vào sân, bấm phím cách hoặc ↑ để nhảy qua xương rồng; giữ ↓ để cúi tránh chim bay thấp (hoặc nhảy qua chim bay thấp). Chạy đủ quãng đường để qua cấp. Tốc độ tăng dần.",
+    "lib.arcade.fire": "Bắn",
+    "lib.arcade.jump": "Nhảy",
+    "lib.arcade.aimTarget": "Bia",
+    "lib.game.soundOn": "Bật âm thanh",
+    "lib.game.soundOff": "Tắt âm thanh"
   },
   "pages": {
     "home": {
@@ -1322,6 +1362,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate Tic-Tac-Toe (Caro 9 bàn)",
       "desc": "Caro 3x3 lồng 9 bàn nhỏ: ô bạn chọn quyết định bàn đối thủ phải đi; đánh với máy qua 10 cấp."
+    },
+    "pong": {
+      "name": "Pong (Bóng bàn điện tử)",
+      "desc": "Đánh bóng qua mặt máy, ai ghi 5 điểm trước thì thắng; 10 cấp, máy nhanh và chính xác dần."
+    },
+    "space-shooter": {
+      "name": "Bắn phi thuyền",
+      "desc": "Lái tàu bắn hạ phi thuyền địch, tránh đạn và va chạm; 10 cấp với địch đông, bắn trả và tàu bền dần."
+    },
+    "asteroids": {
+      "name": "Tiểu hành tinh (Asteroids)",
+      "desc": "Xoay, tăng tốc và bắn vỡ đá vũ trụ; đá lớn vỡ thành đá nhỏ, 10 cấp càng lúc càng nhiều đá."
+    },
+    "maze": {
+      "name": "Mê cung",
+      "desc": "Tìm đường ra khỏi mê cung trước khi hết giờ; 10 cấp từ mê cung nhỏ đến lớn, có sương mù ở cấp cao."
+    },
+    "road-cross": {
+      "name": "Qua đường (Ếch qua đường)",
+      "desc": "Nhảy chú ếch qua đường xe cộ và sông gỗ trôi để về đích 3 lần; 10 cấp với xe nhanh và sông ở cấp cao."
+    },
+    "flappy": {
+      "name": "Chim bay (Flappy)",
+      "desc": "Chạm để vỗ cánh, bay qua khe giữa các ống; 10 cấp với khe hẹp dần và tốc độ tăng."
+    },
+    "runner": {
+      "name": "Khủng long chạy",
+      "desc": "Nhảy qua xương rồng, cúi tránh chim; chạy đủ quãng đường để qua cấp, 10 cấp tốc độ tăng dần."
+    },
+    "whack-a-mole": {
+      "name": "Đập chuột (Whack-a-mole)",
+      "desc": "Đập chuột nhô lên từ các hang trước khi hết giờ, tránh quả bom; 10 cấp từ chậm đến cực nhanh."
+    },
+    "simon": {
+      "name": "Simon (Nhớ dãy màu)",
+      "desc": "Nhớ và lặp lại dãy màu, âm thanh mà máy phát; dãy dài dần qua 10 cấp, từ cấp 7 có 6 nút."
+    },
+    "aim-trainer": {
+      "name": "Tập ngắm (Aim Trainer)",
+      "desc": "Bấm trúng các bia hiện ngẫu nhiên và biến mất nhanh; bia nhỏ dần qua 10 cấp, đo thời gian phản ứng."
+    },
+    "quick-math": {
+      "name": "Toán nhanh",
+      "desc": "Tính nhẩm phép cộng, trừ, nhân, chia dưới áp lực thời gian; 10 cấp từ phép tính đơn giản đến biểu thức."
+    },
+    "reaction": {
+      "name": "Thử phản xạ",
+      "desc": "Bấm ngay khi màn hình chuyển xanh; trung bình 5 lượt phải đạt ngưỡng của cấp, 10 cấp ngưỡng chặt dần."
     }
   },
   "s": {

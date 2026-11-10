@@ -4,6 +4,7 @@ import { t, tf } from '../i18n';
 import { BLOCK_LEVELS, BlockGame, COLOR, COLS, ROWS, cellsOf } from '../calc/blocks';
 import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah, bestScore, bindKeys, bindPad, padHtml, setupCanvas } from './arcade-ui';
+import { sfx } from './sfx';
 
 const CELL = 28;
 
@@ -71,6 +72,7 @@ export function mountBlocks(id: string): void {
 
   function after(cleared: number): void {
     if (cleared < 0 && !g.over) return;
+    if (cleared >= 4) sfx('clear'); else if (cleared > 0) sfx('line'); else sfx('drop');
     const L = BLOCK_LEVELS[level - 1];
     bestScore(id, level).put(g.score);
     if (g.lines >= L.lines) {
@@ -115,9 +117,9 @@ export function mountBlocks(id: string): void {
     if (k === 'pause') return togglePause();
     if (!running) { if (k === 'space' || k === 'drop') play(); return; }
     if (paused || over) return;
-    if (k === 'left') g.shift(-1);
-    else if (k === 'right') g.shift(1);
-    else if (k === 'up' || k === 'rotate') g.rotate(1);
+    if (k === 'left') { g.shift(-1); sfx('tick'); }
+    else if (k === 'right') { g.shift(1); sfx('tick'); }
+    else if (k === 'up' || k === 'rotate') { g.rotate(1); sfx('select'); }
     else if (k === 'down') { const r = g.step(); if (r < 0) g.score += 1; after(r); }
     else if (k === 'space' || k === 'drop') after(g.hardDrop());
     if (!over) draw();

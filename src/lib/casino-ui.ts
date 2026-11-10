@@ -8,6 +8,7 @@ import {
 } from '../calc/casino';
 import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah } from './arcade-ui';
+import { sfx } from './sfx';
 
 const face = (c: Card, cls = '', attrs = ''): string => {
   const s = SUIT[c.s], r = RANK[c.r];
@@ -94,7 +95,7 @@ export function mountBlackjack(id: string): void {
   $('#bj-minus').addEventListener('click', () => { bet = Math.max(lv().minBet, bet - lv().minBet); render(); });
   $('#bj-plus').addEventListener('click', () => { bet = Math.min(g.chips, bet + lv().minBet); render(); });
   $('#bj-max').addEventListener('click', () => { bet = g.chips; render(); });
-  $('#bj-deal').addEventListener('click', () => { if (bet > g.chips || bet < lv().minBet) return; $('#bj-msg').textContent = ''; g = bjDeal(g, bet, lv()); render(); });
+  $('#bj-deal').addEventListener('click', () => { if (bet > g.chips || bet < lv().minBet) return; $('#bj-msg').textContent = ''; g = bjDeal(g, bet, lv()); sfx('deal'); render(); });
   $('#bj-hit').addEventListener('click', () => { if (g.phase === 'play') { g = bjHit(g, lv()); render(); } });
   $('#bj-stand').addEventListener('click', () => { if (g.phase === 'play') { g = bjStand(g, lv()); render(); } });
   $('#bj-double').addEventListener('click', () => { if (bjCanDouble(g)) { g = bjDouble(g, lv()); render(); } });

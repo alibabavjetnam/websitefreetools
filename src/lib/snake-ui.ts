@@ -3,6 +3,7 @@ import { $, escapeHtml } from '../ui';
 import { t, tf } from '../i18n';
 import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah, bestScore, bindKeys, bindPad, bindSwipe, padHtml, setupCanvas } from './arcade-ui';
+import { sfx } from './sfx';
 
 const N = 20, CELL = 24;
 /** ms mỗi bước, độ dài cần đạt, có tường bao (đâm là thua) hay đi xuyên, số chướng ngại */
@@ -100,15 +101,16 @@ export function mountSnake(id: string): void {
     const h = snake[0];
     let r = Math.floor(h / N) + [-1, 0, 1, 0][dir], c = (h % N) + [0, 1, 0, -1][dir];
     if (r < 0 || r >= N || c < 0 || c >= N) {
-      if (L.walls) return end(false);
+      if (L.walls) { sfx('hit'); return end(false); }
       r = (r + N) % N; c = (c + N) % N;
     }
     const nh = r * N + c;
     const eat = nh === food;
     const body = eat ? snake : snake.slice(0, -1);
-    if (body.includes(nh) || obs.has(nh)) return end(false);
+    if (body.includes(nh) || obs.has(nh)) { sfx('hit'); return end(false); }
     snake.unshift(nh);
     if (eat) {
+      sfx('eat');
       score += 10 * level;
       if (snake.length >= L.len) return end(true);
       food = free();

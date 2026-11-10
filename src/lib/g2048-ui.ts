@@ -4,6 +4,7 @@ import { t, tf } from '../i18n';
 import { LEVELS_2048, canMove, maxTile, move, newBoard, spawn, type Board2048, type Dir } from '../calc/game2048';
 import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah, bestScore, bindKeys, bindSwipe } from './arcade-ui';
+import { sfx } from './sfx';
 
 export function mount2048(id: string): void {
   const { levelBar, banner } = gameShell(`
@@ -53,6 +54,7 @@ export function mount2048(id: string): void {
     if (!r.moved) return;
     prev = before;
     merged = r.merged;
+    sfx(r.merged.length > 1 ? 'combo' : r.merged.length ? 'coin' : 'tick');
     fresh = spawn(b);
     bestScore(id, level).put(b.score);
     render();

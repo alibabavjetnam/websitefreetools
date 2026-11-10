@@ -1,6 +1,7 @@
 /** Phần giao diện dùng chung cho nhóm Game giải trí: thanh chọn cấp 1-10, lưu tiến độ, thông báo thắng/thua. */
 import { $, escapeHtml, storage } from '../ui';
 import { t, tf } from '../i18n';
+import { sfx, setMuted, isMuted, armAudio, lastSfxAt } from './sfx';
 
 export const LEVELS = 10;
 
@@ -48,6 +49,8 @@ export type Outcome = 'win' | 'lose' | 'draw';
 /** Hiện thông báo kết quả ván/cấp, kèm nút chơi tiếp. */
 export function showBanner(host: HTMLElement, kind: Outcome, id: string, level: number, text: string, onNext: (level: number) => void, onRetry: () => void): void {
   const allDone = kind === 'win' && recordWin(id, level) && level === LEVELS;
+  sfx(kind === 'win' ? 'win' : kind === 'lose' ? 'lose' : 'draw');
+  if (allDone) window.setTimeout(() => sfx('levelup'), 2600);
   host.innerHTML = `<div class="game-banner ${kind}" role="status">
       <strong>${escapeHtml(text)}</strong>
       ${allDone ? `<span>${escapeHtml(t('lib.game.allDone', 'Chúc mừng! Bạn đã vượt qua cả 10 cấp.'))}</span>` : ''}
@@ -66,6 +69,7 @@ export const fmtTime = (sec: number): string => `${Math.floor(sec / 60)}:${Strin
 /** Mẫu trang chung: thanh cấp + vùng game; trả về các phần tử để trang gắn logic. */
 export function gameShell(html: string): { levelBar: HTMLElement; banner: HTMLElement } {
   $('#tool-root').innerHTML = `<div class="game-wrap"><div id="lv-bar"></div>${html}<div id="game-banner" aria-live="polite"></div></div>`;
+  mountSound($('#tool-root').querySelector<HTMLElement>('.game-wrap') as HTMLElement);
   return { levelBar: $('#lv-bar'), banner: $('#game-banner') };
 }
 
@@ -169,4 +173,40 @@ export function fullscreenButton(): void {
     if (e.key === 'Escape' && wrap.classList.contains('is-pseudo-full')) pseudo(false);
   });
   paint();
+}
+
+/**
+ * Âm thanh chung cho mọi game: nút loa bật/tắt, tiếng chạm khi bấm, tiếng "đi quân" khi bàn thay đổi
+ * (kể cả nước máy đi). Game cần tiếng riêng thì gọi sfx() trực tiếp — tiếng riêng chặn tiếng chung.
+ */
+function mountSound(wrap: HTMLElement): void {
+  armAudio();
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'game-sound';
+  const paint = (): void => {
+    const off = isMuted();
+    const label = off ? t('lib.game.soundOn', 'Bật âm thanh') : t('lib.game.soundOff', 'Tắt âm thanh');
+    btn.title = label;
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('aria-pressed', String(!off));
+    btn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/>${off ? '<path d="M17 9l5 6M22 9l-5 6"/>' : '<path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/>'}</svg>`;
+  };
+  btn.addEventListener('click', () => { setMuted(!isMuted()); paint(); });
+  paint();
+  wrap.appendChild(btn);
+
+  const IGNORE = '#lv-bar,#game-banner,.game-status,.game-sound,.game-fs,.game-levels';
+  wrap.addEventListener('pointerdown', (e) => {
+    let el: HTMLElement | null = e.target as HTMLElement;
+    while (el && el !== wrap && !(el.tagName === 'BUTTON' || el.tagName === 'CANVAS' || getComputedStyle(el).cursor === 'pointer')) el = el.parentElement;
+    if (!el || el === wrap || el.closest(IGNORE)) return;
+    sfx('tap');
+  }, true);
+  let timer = 0;
+  new MutationObserver((list) => {
+    if (!list.some((m) => m.type !== 'attributes' && !(m.target as HTMLElement).closest?.(IGNORE) && !(m.target.parentElement?.closest(IGNORE)))) return;
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => { if (wrap.dataset.sfx !== 'own' && performance.now() - lastSfxAt > 250) sfx('move'); }, 40);
+  }).observe(wrap, { childList: true, subtree: true, characterData: true });
 }

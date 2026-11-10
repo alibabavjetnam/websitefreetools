@@ -6,6 +6,7 @@ import {
 } from '../calc/ludo';
 import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah } from './arcade-ui';
+import { sfx } from './sfx';
 
 const CNAME = ['Đỏ', 'Xanh lá', 'Vàng', 'Xanh dương'];
 const CKEY = ['cRed', 'cGreen', 'cYellow', 'cBlue'];
@@ -72,6 +73,7 @@ export function mountLudo(id: string): void {
 
   /** Tung xúc xắc cho người đang đến lượt; trả về số chấm */
   async function rollFor(my: number): Promise<number> {
+    sfx('roll');
     for (let i = 0; i < 6; i++) { dieEl.textContent = DIE[1 + Math.floor(Math.random() * 6)]; await wait(55); if (my !== token) return 0; }
     const d = 1 + Math.floor(Math.random() * 6);
     dieEl.textContent = DIE[d]; dieEl.className = `ld-die c${s.players[s.turn]}`;

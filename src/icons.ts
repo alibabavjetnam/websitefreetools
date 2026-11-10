@@ -164,6 +164,18 @@ const PATHS: Record<string, string> = {
   'block-10x10': '<rect x="3" y="3" width="18" height="18" rx="2" opacity=".4"/><rect x="5" y="5" width="6" height="6" rx="1"/><rect x="13" y="5" width="6" height="3" rx="1"/><rect x="5" y="13" width="3" height="6" rx="1"/><rect x="10" y="13" width="9" height="3" rx="1"/>',
   'dots-boxes': '<circle cx="5" cy="5" r="1.500" fill="currentColor"/><circle cx="12" cy="5" r="1.500" fill="currentColor"/><circle cx="19" cy="5" r="1.500" fill="currentColor"/><circle cx="5" cy="12" r="1.500" fill="currentColor"/><circle cx="12" cy="12" r="1.500" fill="currentColor"/><circle cx="19" cy="12" r="1.500" fill="currentColor"/><circle cx="5" cy="19" r="1.500" fill="currentColor"/><circle cx="12" cy="19" r="1.500" fill="currentColor"/><circle cx="19" cy="19" r="1.500" fill="currentColor"/><path d="M5 5h7v7H5" /><path d="M12 12h7"/>',
   'ultimate-tictactoe': '<path d="M9 3v18M15 3v18M3 9h18M3 15h18"/><path d="M4.500 4.500l3 3M7.500 4.500l-3 3"/><circle cx="12" cy="12" r="2"/>',
+  'pong': '<rect x="3" y="10" width="2.5" height="5" rx="1"/><rect x="18.5" y="9" width="2.5" height="5" rx="1"/><circle cx="12" cy="12" r="1.6"/><path d="M12 4v2M12 9v2M12 13v2M12 18v2" opacity=".5"/>',
+  'space-shooter': '<path d="M12 3l5 12-5-3-5 3z"/><path d="M12 17v4M9 19l3 2 3-2" opacity=".6"/>',
+  'asteroids': '<path d="M5 8l4-3 5 1 4 4-1 5-5 3-5-2-2-5z"/><path d="M17 17l3 3" opacity=".6"/>',
+  'maze': '<path d="M4 4h16v16H4z"/><path d="M4 9h8v6M16 4v8h-4M8 20v-3M16 20v-4h4" />',
+  'road-cross': '<circle cx="12" cy="11" r="4"/><circle cx="10.500" cy="10" r=".8"/><circle cx="13.500" cy="10" r=".8"/><path d="M4 20h16M7 17l-2 3M17 17l2 3"/>',
+  'flappy': '<circle cx="12" cy="12" r="4.5"/><path d="M16 11l4 1-4 1M4 8v-4h3M4 20v-4h3" opacity=".7"/><path d="M9 13c1.500 2 3.500 2 5 0" />',
+  'runner': '<path d="M6 19v-6h4v-3h5V6h3v6h-3v3h-3v4M3 19h18"/>',
+  'whack-a-mole': '<ellipse cx="12" cy="17" rx="8" ry="3"/><path d="M8 17c0-5 2-8 4-8s4 3 4 8"/><circle cx="10.500" cy="13" r=".7"/><circle cx="13.500" cy="13" r=".7"/>',
+  'simon': '<path d="M12 12V3a9 9 0 0 1 9 9zM12 12h9a9 9 0 0 1-9 9zM12 12v9a9 9 0 0 1-9-9zM12 12H3a9 9 0 0 1 9-9z" opacity=".85"/>',
+  'aim-trainer': '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',
+  'quick-math': '<path d="M6 7h6M9 4v6M14 17h6M6 15l5 5M11 15l-5 5M14 8h6"/>',
+  'reaction': '<path d="M13 2L5 14h6l-1 8 8-12h-6z"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

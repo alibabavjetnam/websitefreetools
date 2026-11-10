@@ -429,7 +429,47 @@
     "lib.arcade.note.flood-it": "Pick a colour to fill the whole area you own in the top-left corner; it swallows neighbouring cells of that colour. Make the entire board one colour within the allowed number of moves.",
     "lib.arcade.note.mastermind": "The computer hides a row of colours. Choose a colour for each position, then press Guess. A black peg = right colour in the right place; a white peg = right colour in the wrong place. Crack the code before you run out of guesses.",
     "lib.arcade.note.hanoi": "Move all the discs to the last peg. Move only the top disc of a peg each time, and never place a larger disc on a smaller one. Click the source peg, then the target peg.",
-    "lib.arcade.note.pipes": "Click a tile to rotate the pipe 90°. Connect every pipe into one network with no open ends left (open ends are shown in red)."
+    "lib.arcade.note.pipes": "Click a tile to rotate the pipe 90°. Connect every pipe into one network with no open ends left (open ends are shown in red).",
+    "lib.arcade.pongScore": "You {a} – {b} CPU (first to {t})",
+    "lib.arcade.kills": "Destroyed: {n}/{t}",
+    "lib.arcade.rocksLeft": "{n} rocks left",
+    "lib.arcade.timeLeft": "{n} s left",
+    "lib.arcade.stepsN": "Steps: {n}",
+    "lib.arcade.crossed": "Home: {n}/{t}",
+    "lib.arcade.pipes": "Pipes passed: {n}/{t}",
+    "lib.arcade.distance": "Distance: {n}/{t} m",
+    "lib.arcade.speedN": "Speed: {n}",
+    "lib.arcade.note.whack-a-mole": "Moles pop up from the holes — click or tap a mole to whack it. Whack enough moles before time runs out. From level 4 there are bombs: hitting one costs you points.",
+    "lib.arcade.hole": "Hole",
+    "lib.arcade.hitsN": "Hits: {n}/{t}",
+    "lib.arcade.note.simon": "The game plays a sequence of colours and sounds — repeat it in the same order. Each round adds one more step. Remember the required length to clear the level. From level 7 there are 6 pads.",
+    "lib.arcade.seqN": "Sequence: {n}/{t}",
+    "lib.arcade.watch": "Watch…",
+    "lib.arcade.yourTurnShort": "Your turn",
+    "lib.arcade.note.aim-trainer": "Targets appear at random and vanish quickly — hit as many as you can. They get smaller and faster. Hit enough targets before more than 5 misses to clear the level.",
+    "lib.arcade.missN": "Misses: {n}/{t}",
+    "lib.arcade.answer": "Answer",
+    "lib.arcade.note.quick-math": "Solve in your head as fast as you can: type the answer and press Enter. Each question has a time limit; a wrong answer or timeout costs a life (you have 3). Answer enough questions correctly to clear the level.",
+    "lib.arcade.correctN": "Correct: {n}/{t}",
+    "lib.arcade.note.reaction": "Wait for the screen to turn green, then click as fast as you can. Clicking too early is a foul (3 fouls and you lose). Your average over 5 rounds must beat the level’s limit.",
+    "lib.arcade.roundN": "Round {n}/{t}",
+    "lib.arcade.limitMs": "Limit: {n} ms",
+    "lib.arcade.rxWait": "Wait for green…",
+    "lib.arcade.rxGo": "CLICK!",
+    "lib.arcade.rxEarly": "Too early!",
+    "lib.arcade.gameArea": "Play area",
+    "lib.arcade.note.pong": "Move the mouse, drag your finger or use the ← → keys to control the bottom paddle. Knock the ball past the computer; first to 5 points wins. The ball speeds up with every hit.",
+    "lib.arcade.note.space-shooter": "Move the mouse, drag your finger or use the ← → keys to steer; your ship fires automatically. Destroy enough enemy ships to clear the level, and avoid collisions and enemy fire. You have 3 lives.",
+    "lib.arcade.note.asteroids": "← → rotate the ship, ↑ thrusts, Space fires. Destroy every rock to clear the level; big rocks split into smaller ones. The ship wraps around the screen edges. You have 3 lives.",
+    "lib.arcade.note.maze": "Use the arrow keys (or swipe, or the buttons) to get from the green dot to the red flag before time runs out. From level 5 the maze is foggy: you only see around you, and visited areas are remembered.",
+    "lib.arcade.note.road-cross": "Use the arrow keys, swipe or the buttons to hop the frog from bottom to top. Avoid the traffic; from level 5 the upper part is a river, so hop onto the floating logs. Get home 3 times to clear the level. You have 3 lives.",
+    "lib.arcade.note.flappy": "Tap the play area, press Space or ↑ to flap. Fly through the gaps between pipes without touching a pipe, the ground or the ceiling. Higher levels have narrower gaps and faster flight.",
+    "lib.arcade.note.runner": "Tap the play area, press Space or ↑ to jump over cacti; hold ↓ to duck under high birds (or jump over low ones). Run far enough to clear the level. The speed keeps rising.",
+    "lib.arcade.fire": "Fire",
+    "lib.arcade.jump": "Jump",
+    "lib.arcade.aimTarget": "Target",
+    "lib.game.soundOn": "Turn sound on",
+    "lib.game.soundOff": "Turn sound off"
   },
   "pages": {
     "home": {
@@ -998,6 +1038,54 @@
     "ultimate-tictactoe": {
       "name": "Ultimate Tic-Tac-Toe",
       "desc": "Tic-tac-toe across 9 small boards: the cell you choose decides where your opponent must play; vs the computer over 10 levels."
+    },
+    "pong": {
+      "name": "Pong",
+      "desc": "Knock the ball past the computer; first to 5 points wins. 10 levels with a faster, sharper opponent."
+    },
+    "space-shooter": {
+      "name": "Space Shooter",
+      "desc": "Steer your ship, shoot down enemy ships and dodge their fire; 10 levels with bigger waves, return fire and tougher enemies."
+    },
+    "asteroids": {
+      "name": "Asteroids",
+      "desc": "Rotate, thrust and shoot to break up the space rocks; big rocks split into smaller ones. 10 levels with more and faster rocks."
+    },
+    "maze": {
+      "name": "Maze",
+      "desc": "Find your way out of the maze before time runs out; 10 levels from small to large mazes, with fog at higher levels."
+    },
+    "road-cross": {
+      "name": "Road Crossing (Frogger-style)",
+      "desc": "Hop the frog across busy roads and rivers of floating logs to get home 3 times; 10 levels with faster traffic and a river at higher levels."
+    },
+    "flappy": {
+      "name": "Flappy Bird-style Game",
+      "desc": "Tap to flap and fly through the gaps between pipes; 10 levels with narrower gaps and rising speed."
+    },
+    "runner": {
+      "name": "Dino Runner",
+      "desc": "Jump over cacti and duck under birds; run far enough to clear each of the 10 levels as the speed keeps rising."
+    },
+    "whack-a-mole": {
+      "name": "Whack-a-Mole",
+      "desc": "Whack the moles popping out of the holes before time runs out, and avoid the bombs; 10 levels from slow to very fast."
+    },
+    "simon": {
+      "name": "Simon (Memory Colours)",
+      "desc": "Remember and repeat the sequence of colours and sounds; longer sequences over 10 levels, with 6 pads from level 7."
+    },
+    "aim-trainer": {
+      "name": "Aim Trainer",
+      "desc": "Hit the targets that appear at random and vanish quickly; targets shrink over 10 levels, and your reaction time is measured."
+    },
+    "quick-math": {
+      "name": "Quick Math",
+      "desc": "Do addition, subtraction, multiplication and division in your head under time pressure; 10 levels from simple sums to expressions."
+    },
+    "reaction": {
+      "name": "Reaction Time Test",
+      "desc": "Click the moment the screen turns green; your 5-round average must meet each level’s limit, which gets tighter over 10 levels."
     }
   },
   "s": {

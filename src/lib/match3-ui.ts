@@ -4,6 +4,7 @@ import { t, tf } from '../i18n';
 import { M3, M3_LEVELS, Match3 } from '../calc/match3';
 import { clearBanner, fullscreenButton, gameShell, progressOf, renderLevelBar, showBanner } from './game-ui';
 import { A, Af, Ah, bestScore } from './arcade-ui';
+import { sfx } from './sfx';
 
 // Viên kẹo vẽ bằng SVG: mỗi màu một hình để người mù màu vẫn phân biệt được
 const GEM = [
@@ -59,13 +60,13 @@ export function mountMatch3(id: string): void {
   const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
   async function swap(a: number, b: number): Promise<void> {
     if (busy || over) return;
-    if (!g.trySwap(a, b)) { sel = -1; render(); return; }
+    if (!g.trySwap(a, b)) { sel = -1; sfx('error'); render(); return; }
     busy = true; sel = -1; hint = []; movesLeft--;
     let chain = 1;
     for (;;) {
       popping = g.matches();
       if (!popping.size) break;
-      render(); await sleep(220);
+      sfx(chain > 2 ? 'combo' : 'pop'); render(); await sleep(220);
       popping = new Set();
       g.resolve(chain++);
       render(); await sleep(160);
