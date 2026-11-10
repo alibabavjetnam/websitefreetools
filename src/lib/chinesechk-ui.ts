@@ -66,7 +66,7 @@ export function mountChineseChk(id: string): void {
       if (!m) { end('win', tf('lib.game.win', 'Bạn đã vượt qua cấp {n}!', { n: level })); return; }
       apply(b, 'a', m); last = m;
       (hist[hist.length - 1] ||= []).push(m);
-      if (won(b, 'a')) { end('lose', t('lib.game.lose', 'Bạn đã thua. Thử lại nhé!')); return; }
+      if (won(b, 'a')) { end('lose', tf('lib.game.lose', 'Chưa vượt qua cấp {n}. Thử lại nhé.', { n: level })); return; }
       turns++;
       if (turns >= MAX_TURNS) { end('draw', A('ccDraw', 'Hết số lượt, hai bên hoà.')); return; }
       render();

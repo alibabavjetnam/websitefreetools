@@ -143,6 +143,7 @@ const PATHS: Record<string, string> = {
   'yukon': '<rect x="4" y="4" width="10" height="14" rx="1.5"/><rect x="9" y="7" width="10" height="14" rx="1.5"/><path d="M14 12l1.8 2.5L14 17l-1.8-2.5z"/>',
   'chinese-checkers': '<path d="M12 2.5l3 5.5 6 .1-3 5.4 3 5.4-6 .1-3 5.5-3-5.5-6-.1 3-5.4-3-5.4 6-.1z"/><circle cx="12" cy="12" r="1.8"/>',
   'mau-binh': '<rect x="3" y="3.5" width="9" height="8" rx="1"/><rect x="12" y="3.5" width="9" height="8" rx="1"/><rect x="7.5" y="13" width="9" height="8" rx="1"/>',
+  'phom': '<rect x="3" y="5" width="8" height="12" rx="1.2"/><rect x="8" y="4" width="8" height="12" rx="1.2"/><rect x="13" y="6" width="8" height="12" rx="1.2"/>',
   'gomoku': '<path d="M4 4h16v16H4zM4 9.3h16M4 14.6h16M9.3 4v16M14.6 4v16" opacity=".55"/><path d="M5.5 5.5l2.4 2.4M7.9 5.5L5.5 7.9M10.8 10.8l2.4 2.4M13.2 10.8l-2.4 2.4"/><circle cx="17.3" cy="17.3" r="1.6"/>',
   'reversi': '<circle cx="8" cy="8" r="3.6"/><circle cx="16" cy="8" r="3.6" fill="currentColor"/><circle cx="8" cy="16" r="3.6" fill="currentColor"/><circle cx="16" cy="16" r="3.6"/>',
   'connect-four': '<rect x="3" y="5" width="18" height="15" rx="2"/><circle cx="7.5" cy="9.5" r="1.6"/><circle cx="12" cy="9.5" r="1.6"/><circle cx="16.5" cy="9.5" r="1.6"/><circle cx="7.5" cy="15" r="1.6" fill="currentColor"/><circle cx="12" cy="15" r="1.6" fill="currentColor"/><circle cx="16.5" cy="15" r="1.6"/>',

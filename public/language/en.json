@@ -679,7 +679,26 @@
     "lib.arcade.mbFinish": "Finish",
     "lib.arcade.mbNext": "Next round",
     "lib.arcade.mbDraw": "Tied on points — play again.",
-    "lib.arcade.mbAutoMsg": "Here is a suggested arrangement. You can change it before showing the cards."
+    "lib.arcade.mbAutoMsg": "Here is a suggested arrangement. You can change it before showing the cards.",
+    "lib.arcade.note.phom": "Two players; each gets 9 cards (whoever goes first gets 10). A meld is 3 or more cards of the same rank, or 3 or more consecutive cards of the same suit (Ace is only low). On your turn draw a card from the deck, or take the card your opponent just discarded if it forms a meld with your hand (a card you took must be kept), then discard one card. When each player has discarded 4 cards the round ends and whoever has the lower total of unmelded cards (Ace = 1 … King = 13) wins. If all your cards are in melds after a discard you go out (\"U\") and win at once. Cards outlined in green are in your best set of melds.",
+    "lib.arcade.pmDraw": "Draw",
+    "lib.arcade.pmEat": "Take discard",
+    "lib.arcade.pmThrow": "Discard",
+    "lib.arcade.pmFoeAte": "The computer took your card.",
+    "lib.arcade.pmFoeU": "The computer went out!",
+    "lib.arcade.pmTurn": "Turn {a}/{b}",
+    "lib.arcade.pmLeft": "Unmelded: {n}",
+    "lib.arcade.pmDeck": "Deck: {n}",
+    "lib.arcade.pmFoeHand": "Computer hand",
+    "lib.arcade.pmFoeDisc": "Computer discards",
+    "lib.arcade.pmFoeEaten": "Computer took",
+    "lib.arcade.pmMyDisc": "Your discards",
+    "lib.arcade.pmAte": "You took this card — keep it in a meld.",
+    "lib.arcade.pmKeep": "A card you took must be kept — discard another.",
+    "lib.arcade.pmU": "Out! You win right away.",
+    "lib.arcade.pmYou": "You",
+    "lib.arcade.pmFoe": "Computer",
+    "lib.arcade.pmDraw2": "Tied on points."
   },
   "pages": {
     "home": {
@@ -1444,6 +1463,10 @@
     "mau-binh": {
       "name": "Mau Binh (Chinese Poker)",
       "desc": "Arrange 13 cards into three hands of 5, 5 and 3 cards and beat the computer; 5 rounds per level, 10 levels."
+    },
+    "phom": {
+      "name": "Phom (Vietnamese Rummy)",
+      "desc": "Two-player Vietnamese rummy against the computer: draw or take a discard, form melds and go out; lowest leftover points wins; 10 levels."
     }
   },
   "s": {

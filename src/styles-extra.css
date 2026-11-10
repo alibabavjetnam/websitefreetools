@@ -1812,3 +1812,7 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .mb-pool .mb-hand { flex-wrap: wrap; row-gap: 8px; }
 .mb-side { display: flex; flex-direction: column; gap: 4px; }
 .mb-side .cz-hand .cd + .cd { margin-inline-start: calc(var(--cw) * -.3); }
+
+/* Phỏm */
+.pm-board .cd.pm-in { outline: 3px solid #51cf66; outline-offset: -2px; }
+.pm-board .cd.pm-eaten { box-shadow: 0 0 0 3px #ffa94d; }

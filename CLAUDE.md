@@ -141,11 +141,12 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 - Dịch hàng loạt (đợt 4-11, các ngôn ngữ còn thiếu): `srcall/<mã>.json` (khoá còn thiếu từng ngôn ngữ) → agent ghi `outall/<mã>.json` → `python3 /tmp/claude-0/gm/mergeall.py` (kiểm placeholder rồi gộp)
 - Còn lại: phỏm, Yukon, Cribbage, mậu binh, Shogi, cờ nhảy, Janggi, pinball, Tangram
 
-## Game đợt 12 (10/11/2026) — Yukon, Cờ nhảy, Mậu binh
+## Game đợt 12 (10/11/2026) — Yukon, Cờ nhảy, Mậu binh, Phỏm
 - `yukon` (biến thể thứ 4 của `solitaire-ui.ts`: dùng lại dạng ván Klondike, không chồng rút; `dealYukon`/`yukonCanMove`/`yukonHint` trong `src/calc/solitaire.ts`; cấp thấp lật sẵn 4→0 lá úp mỗi cột; gợi ý chỉ ưu tiên nước lật lá/làm trống cột nên có thể báo hết gợi ý sớm). `chinese-checkers` (Cờ nhảy sao 6 cánh 121 ô, người xanh vs máy đỏ, 10 quân; lõi `src/calc/chinesechk.ts` toạ độ khối, `reach()` bước/nhảy liên tiếp; máy: cấp 1 ngẫu nhiên nghiêng về tiến, 2-6 tham lam có nhiễu giảm dần, 7-10 nhìn sâu 2 nửa nước; quá 120 lượt thì hoà; thắng = lấp kín trại đối diện có ≥1 quân mình). Giao diện `src/lib/chinesechk-ui.ts`, CSS `cc-*`. Tổng site: 171 công cụ
 - `mau-binh` (1 đấu 1 với máy, 13 lá xếp chi 5-5-3, binh lủng thua như sập hầm, 5 ván/cấp, tổng điểm > 0 là qua; lõi `src/calc/maubinh.ts` liệt kê mọi cách xếp không lủng (~0,12 s) rồi chấm heuristic; máy cấp 1 có thể xếp lủng, cấp cao chọn trong top ngày càng nhỏ; không có thưởng đặc biệt kiểu sảnh rồng; giao diện `src/lib/maubinh-ui.ts`). Tổng site: 172 công cụ
-- Dịch: vi/en/ja/zh xong (31 khoá + 3 tên/mô tả); nguồn /tmp/claude-0/gm/b12_source_en.json
-- Còn lại: phỏm, Cribbage, Shogi, Janggi, pinball, Tangram
+- `phom` (Phỏm 2 người với máy, bản rút gọn **không có gửi bài**: 9 lá/người, bên đi trước 10 lá và chọn ngẫu nhiên; bốc hoặc ăn lá vừa đánh nếu thành phỏm, lá ăn phải giữ; mỗi bên đánh 4 lá rồi so điểm bài rác A=1…K=13, ù thì thắng ngay; lõi `src/calc/phom.ts` tìm cách hạ phỏm tối ưu bằng quy hoạch trên mặt nạ bit; mô phỏng: cấp 10 thắng cấp 1 ≈83%; giao diện `src/lib/phom-ui.ts`). Tổng site: 173 công cụ
+- Dịch: vi/en/ja/zh xong (50 khoá + 4 tên/mô tả); nguồn /tmp/claude-0/gm/b12_source_en.json
+- Còn lại: Cribbage, Shogi, Janggi, pinball, Tangram
 
 ## Chơi online cờ vua / cờ tướng / cờ úp / cờ vây (09/11/2026)
 - Mỗi game có 2 tab trong cùng trang: "Đánh với máy" và "Chơi với người" (`modeTabs` trong `src/lib/game-ui.ts`). Cờ úp `co-up` là game riêng (lõi `src/calc/xiangqi-dark.ts`: quân úp đi theo vị trí, sĩ/tượng đã lật đi khắp bàn, máy dùng determinization + alpha-beta)

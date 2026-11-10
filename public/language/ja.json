@@ -679,7 +679,26 @@
     "lib.arcade.mbFinish": "終了",
     "lib.arcade.mbNext": "次のラウンド",
     "lib.arcade.mbDraw": "同点です — もう一度どうぞ。",
-    "lib.arcade.mbAutoMsg": "おすすめの並べ方です。勝負の前に変更できます。"
+    "lib.arcade.mbAutoMsg": "おすすめの並べ方です。勝負の前に変更できます。",
+    "lib.arcade.note.phom": "2人で対戦し、各自9枚（先攻は10枚）を持ちます。メルドは同じ数字3枚以上、または同じマークで連続する3枚以上（Aは1のみ）です。自分の番では山札から1枚引くか、相手が捨てたカードが手札とメルドを作れるならそれを取り（取ったカードは持ち続ける）、その後1枚捨てます。各自が4枚捨てると終了で、メルドに入らないカードの合計（A=1 … K=13）が少ない方の勝ちです。捨てた後にすべてのカードがメルドに入れば「ウ」で即勝利です。緑の枠のカードは、あなたの最良のメルドに入っています。",
+    "lib.arcade.pmDraw": "引く",
+    "lib.arcade.pmEat": "取る",
+    "lib.arcade.pmThrow": "捨てる",
+    "lib.arcade.pmFoeAte": "コンピューターがあなたの捨て札を取りました。",
+    "lib.arcade.pmFoeU": "コンピューターが上がりました！",
+    "lib.arcade.pmTurn": "ターン {a}/{b}",
+    "lib.arcade.pmLeft": "メルド外: {n}",
+    "lib.arcade.pmDeck": "山札: {n}",
+    "lib.arcade.pmFoeHand": "コンピューターの手札",
+    "lib.arcade.pmFoeDisc": "コンピューターの捨て札",
+    "lib.arcade.pmFoeEaten": "コンピューターが取った札",
+    "lib.arcade.pmMyDisc": "あなたの捨て札",
+    "lib.arcade.pmAte": "このカードを取りました。メルドに入れて持っておきましょう。",
+    "lib.arcade.pmKeep": "取ったカードは捨てられません。別のカードを捨ててください。",
+    "lib.arcade.pmU": "上がり！ 即勝利です。",
+    "lib.arcade.pmYou": "あなた",
+    "lib.arcade.pmFoe": "コンピューター",
+    "lib.arcade.pmDraw2": "同点です。"
   },
   "pages": {
     "home": {
@@ -1444,6 +1463,10 @@
     "mau-binh": {
       "name": "チャイニーズポーカー",
       "desc": "13枚を5枚・5枚・3枚の3つの手札に分けてコンピューターと勝負。1レベル5ラウンド、10レベル。"
+    },
+    "phom": {
+      "name": "ファム（ベトナム式ラミー）",
+      "desc": "コンピューターと戦うベトナム式ラミー。引くか捨て札を取ってメルドを作り、余りが少ない方が勝ち。10レベル。"
     }
   },
   "s": {

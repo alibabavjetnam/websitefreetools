@@ -679,7 +679,26 @@
     "lib.arcade.mbSflush": "Thùng phá sảnh",
     "lib.arcade.mbBack": "Chi cuối",
     "lib.arcade.mbMid": "Chi giữa",
-    "lib.arcade.mbFront": "Chi đầu"
+    "lib.arcade.mbFront": "Chi đầu",
+    "lib.arcade.pmDraw": "Bốc bài",
+    "lib.arcade.pmEat": "Ăn bài",
+    "lib.arcade.pmThrow": "Đánh bài",
+    "lib.arcade.note.phom": "Hai người, mỗi người 9 lá (người đi trước 10 lá). Phỏm là 3 lá trở lên cùng số, hoặc 3 lá trở lên cùng chất liên tiếp (A chỉ là 1). Đến lượt: bốc một lá từ chồng, hoặc ăn lá đối thủ vừa đánh nếu nó ghép được phỏm với bài của bạn (lá ăn phải giữ lại), rồi đánh ra một lá. Mỗi người đánh 4 lá thì ván kết thúc: ai có tổng điểm lá rác (A=1 … K=13) ít hơn thì thắng. Nếu mọi lá đều đã vào phỏm sau khi đánh thì \"ù\" và thắng ngay. Các lá được tô viền xanh là đã nằm trong phỏm tốt nhất của bạn.",
+    "lib.arcade.pmFoeAte": "Máy đã ăn lá của bạn.",
+    "lib.arcade.pmFoeU": "Máy ù rồi!",
+    "lib.arcade.pmTurn": "Lượt {a}/{b}",
+    "lib.arcade.pmLeft": "Bài rác: {n}",
+    "lib.arcade.pmDeck": "Chồng: {n}",
+    "lib.arcade.pmFoeHand": "Bài của máy",
+    "lib.arcade.pmFoeDisc": "Máy đã đánh",
+    "lib.arcade.pmFoeEaten": "Máy đã ăn",
+    "lib.arcade.pmMyDisc": "Bạn đã đánh",
+    "lib.arcade.pmAte": "Bạn đã ăn lá này, hãy giữ nó trong phỏm.",
+    "lib.arcade.pmKeep": "Lá đã ăn phải giữ lại, hãy đánh lá khác.",
+    "lib.arcade.pmU": "Ù! Bạn thắng ngay.",
+    "lib.arcade.pmYou": "Bạn",
+    "lib.arcade.pmFoe": "Máy",
+    "lib.arcade.pmDraw2": "Hoà điểm."
   },
   "pages": {
     "home": {
@@ -1768,6 +1787,10 @@
     "mau-binh": {
       "name": "Mậu binh (xếp 3 chi)",
       "desc": "Mậu binh đấu với máy: xếp 13 lá thành 3 chi 5-5-3 mạnh dần, tránh binh lủng; 5 ván mỗi cấp, 10 cấp."
+    },
+    "phom": {
+      "name": "Phỏm (Tá lả)",
+      "desc": "Phỏm 2 người đấu với máy: bốc, ăn bài, hạ phỏm và đánh bài; ai ít điểm bài rác hơn thì thắng, có ù; 10 cấp."
     }
   },
   "s": {

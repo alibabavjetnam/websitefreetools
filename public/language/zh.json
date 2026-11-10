@@ -679,7 +679,26 @@
     "lib.arcade.mbFinish": "完成",
     "lib.arcade.mbNext": "下一局",
     "lib.arcade.mbDraw": "总分相同 — 再来一次吧。",
-    "lib.arcade.mbAutoMsg": "这是推荐的摆法。比牌前你还可以修改。"
+    "lib.arcade.mbAutoMsg": "这是推荐的摆法。比牌前你还可以修改。",
+    "lib.arcade.note.phom": "两人对战，每人 9 张牌（先出牌者 10 张）。一组牌是 3 张及以上点数相同，或 3 张及以上同花色连续（A 只算 1）。轮到你时，可从牌堆摸一张，或吃对手刚打出的牌（必须能与手牌组成一组，吃到的牌必须保留），然后打出一张。双方各打出 4 张后结束，未成组牌点数之和（A=1 … K=13）较小者获胜。若打牌后所有牌都已成组则“ù”，立即获胜。绿框的牌属于你当前最佳的成组方案。",
+    "lib.arcade.pmDraw": "摸牌",
+    "lib.arcade.pmEat": "吃牌",
+    "lib.arcade.pmThrow": "打牌",
+    "lib.arcade.pmFoeAte": "电脑吃了你打出的牌。",
+    "lib.arcade.pmFoeU": "电脑 ù 了！",
+    "lib.arcade.pmTurn": "第 {a}/{b} 轮",
+    "lib.arcade.pmLeft": "散牌：{n}",
+    "lib.arcade.pmDeck": "牌堆：{n}",
+    "lib.arcade.pmFoeHand": "电脑手牌",
+    "lib.arcade.pmFoeDisc": "电脑已打",
+    "lib.arcade.pmFoeEaten": "电脑已吃",
+    "lib.arcade.pmMyDisc": "你已打",
+    "lib.arcade.pmAte": "你吃了这张牌，请把它留在成组的牌里。",
+    "lib.arcade.pmKeep": "吃到的牌必须保留，请打其他牌。",
+    "lib.arcade.pmU": "ù 了！你立即获胜。",
+    "lib.arcade.pmYou": "你",
+    "lib.arcade.pmFoe": "电脑",
+    "lib.arcade.pmDraw2": "点数相同。"
   },
   "pages": {
     "home": {
@@ -1444,6 +1463,10 @@
     "mau-binh": {
       "name": "十三张",
       "desc": "把 13 张牌摆成 5、5、3 张的三墩，与电脑比大小；每关 5 局，共 10 关。"
+    },
+    "phom": {
+      "name": "越南拉米（Phỏm）",
+      "desc": "与电脑对战的越南式拉米：摸牌或吃牌、凑成组，散牌点数少者获胜；共 10 关。"
     }
   },
   "s": {
