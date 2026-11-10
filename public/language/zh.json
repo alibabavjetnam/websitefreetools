@@ -385,7 +385,7 @@
     "lib.arcade.noMove": "没有可走的棋子。",
     "lib.arcade.note.pyramid": "清除金字塔的全部 28 张牌。点击两张未被压住的牌，点数之和为 13（A=1，J=11，Q=12），即可同时消去；K 单独点击即可消去。弃牌堆顶牌也可使用。点击牌堆抽牌；弃牌堆翻回的次数有限。",
     "lib.arcade.note.tripeaks": "清除三座山峰的全部 28 张牌。点击未被压住、且与弃牌堆顶牌点数正好相差 1 的牌（不分花色），把它移到下面。无牌可走时点击牌堆抽牌。较容易的关卡中，K 可以接 A。",
-    "lib.arcade.note.golf": "清除所有牌列。每列只有最下面的一张牌可以点击，它必须与当前亮出的牌点数正好相差 1。无牌可走时点击牌堆抽牌。较容易的关卡中，K 可以接 A。",
+    "lib.arcade.note.golf": "在球场上按住，朝与想击球方向相反的方向拉动（像弹弓一样），松开即可击球；拉得越远，力度越大。球速足够慢时才能入洞；沙地会让球减速。每关是不同的球场，杆数有限。",
     "lib.arcade.ph.royal": "皇家同花顺",
     "lib.arcade.ph.sflush": "同花顺",
     "lib.arcade.ph.quads": "四条",
@@ -604,7 +604,30 @@
     "lib.arcade.hand.flush": "同花",
     "lib.arcade.hand.full": "葫芦",
     "lib.arcade.hand.quads": "四条",
-    "lib.arcade.hand.sflush": "同花顺"
+    "lib.arcade.hand.sflush": "同花顺",
+    "lib.arcade.note.nback": "3x3 的方格会依次亮起。当亮起的位置与 N 步之前相同时，点击“相同！”（或按空格）（N 显示在上方）。正确判断率至少达到 80% 才能过关。关卡越高，N 越大。",
+    "lib.arcade.nbMatch": "相同！",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "正确：{a} · 错误：{b}",
+    "lib.arcade.nbAcc": "准确率：{n}%",
+    "lib.arcade.note.clicker": "点击饼干来烤饼干，再用饼干购买能自动烤饼干的帮手（买得越多价格越高）。在 2 分钟内烤出目标数量的饼干即可过关。",
+    "lib.arcade.ckCursor": "光标",
+    "lib.arcade.ckGrandma": "烘焙奶奶",
+    "lib.arcade.ckFarm": "农场",
+    "lib.arcade.ckMine": "糖矿",
+    "lib.arcade.ckFactory": "工厂",
+    "lib.arcade.ckCookie": "饼干",
+    "lib.arcade.ckEarned": "已烤：{n}/{t}",
+    "lib.arcade.chips2": "饼干：{n}",
+    "lib.arcade.ckCps": "每秒 {n} 块饼干",
+    "lib.arcade.note.onet": "选择两张相同的牌，若能用不超过 2 个拐角、且不穿过其他牌的线连接，就能消除它们。在时间用完前消除所有牌即可过关。没有可消的牌时可以洗牌（次数有限）。",
+    "lib.arcade.shuffle": "洗牌",
+    "lib.arcade.tilesLeft": "还剩 {n} 张",
+    "lib.arcade.autoShuffle": "没有可消的牌，已自动洗牌。",
+    "lib.arcade.note.jigsaw": "图片被切成小块并打乱。点击一块，再点击另一块来交换位置，拼回参考图。位置正确的小块会有绿色边框。关卡越高，小块越多。",
+    "lib.arcade.jgRef": "参考图",
+    "lib.arcade.jgPlaced": "已就位：{a}/{b}",
+    "lib.arcade.golfStrokes": "杆数：{n}/{t}（标准杆 {p}）"
   },
   "pages": {
     "home": {
@@ -1321,6 +1344,26 @@
     "texas-holdem": {
       "name": "德州扑克（虚拟筹码）",
       "desc": "用虚拟筹码与电脑单挑：弃牌、跟注或加注，电脑筹码耗尽即获胜；共 10 关，不涉及真钱。"
+    },
+    "n-back": {
+      "name": "N-Back 记忆训练",
+      "desc": "观察亮起的方格，若与 N 步之前相同就点击“相同！”；共 10 关，N 最高到 4。"
+    },
+    "cookie-clicker": {
+      "name": "点点饼干",
+      "desc": "点击烤饼干，购买自动烤饼干的帮手，在 2 分钟内达到目标；共 10 关。"
+    },
+    "tile-connect": {
+      "name": "连连看",
+      "desc": "用不超过两个拐角的线连接相同的牌并消除，在时间用完前清空棋盘；共 10 关，棋盘越来越大。"
+    },
+    "jigsaw": {
+      "name": "拼图",
+      "desc": "交换被打乱的小块，拼回完整图片；共 10 关，从 3x3 到 6x6 块。"
+    },
+    "mini-golf": {
+      "name": "迷你高尔夫",
+      "desc": "拉动并松开推杆，在杆数限制内把球打进洞；共 10 个球场，有墙壁和沙地。"
     }
   },
   "s": {

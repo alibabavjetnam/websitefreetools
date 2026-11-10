@@ -385,7 +385,7 @@
     "lib.arcade.noMove": "Không có quân nào đi được.",
     "lib.arcade.note.pyramid": "Gỡ hết 28 lá của kim tự tháp. Bấm hai lá tự do (không bị lá nào che) có tổng bằng 13 (A=1, J=11, Q=12) để gỡ cả hai; lá K gỡ riêng bằng một lần bấm. Lá trên cùng chồng bỏ cũng dùng được. Bấm chồng bài để rút; số lần lật lại chồng bỏ có hạn.",
     "lib.arcade.note.tripeaks": "Gỡ hết 28 lá của ba đỉnh. Bấm lá tự do hơn hoặc kém lá đang lộ ở chồng bỏ đúng 1 bậc (không phân biệt chất) để chuyển nó xuống. Hết nước thì bấm chồng bài để rút. Ở các cấp dễ, K nối được với A.",
-    "lib.arcade.note.golf": "Gỡ hết các cột bài. Chỉ lá dưới cùng mỗi cột được bấm: nó phải hơn hoặc kém lá đang lộ đúng 1 bậc. Hết nước thì bấm chồng bài để rút. Ở các cấp dễ, K nối được với A.",
+    "lib.arcade.note.golf": "Bấm vào sân, kéo ngược hướng muốn đánh (như kéo ná) rồi thả để đánh bóng; kéo càng xa, bóng đi càng mạnh. Đưa bóng vào lỗ khi đủ chậm; cát làm bóng chậm lại. Mỗi cấp là một sân, có số gậy giới hạn.",
     "lib.arcade.ph.royal": "Thùng phá sảnh lớn",
     "lib.arcade.ph.sflush": "Thùng phá sảnh",
     "lib.arcade.ph.quads": "Tứ quý",
@@ -604,7 +604,30 @@
     "lib.arcade.hand.full": "Cù lũ",
     "lib.arcade.hand.quads": "Tứ quý",
     "lib.arcade.hand.sflush": "Thùng phá sảnh",
-    "lib.arcade.note.holdem": "Đấu tay đôi với máy, chỉ dùng xu ảo. Mỗi người có 2 lá riêng, 5 lá chung mở dần (flop, turn, river); ghép 5 lá tốt nhất. Mỗi vòng bạn có thể bỏ bài, theo (hoặc xem bài) hoặc tố thêm. Mức cược tối thiểu tăng sau mỗi 4 ván. Thắng khi đối thủ hết xu, hoặc có nhiều xu hơn sau số ván giới hạn. Không dùng tiền thật."
+    "lib.arcade.note.holdem": "Đấu tay đôi với máy, chỉ dùng xu ảo. Mỗi người có 2 lá riêng, 5 lá chung mở dần (flop, turn, river); ghép 5 lá tốt nhất. Mỗi vòng bạn có thể bỏ bài, theo (hoặc xem bài) hoặc tố thêm. Mức cược tối thiểu tăng sau mỗi 4 ván. Thắng khi đối thủ hết xu, hoặc có nhiều xu hơn sau số ván giới hạn. Không dùng tiền thật.",
+    "lib.arcade.nbMatch": "Giống!",
+    "lib.arcade.note.nback": "Một ô sáng lên lần lượt trên lưới 3x3. Bấm \"Giống!\" (hoặc phím cách) khi vị trí ô sáng giống với vị trí cách đây N lượt (N hiện ở trên). Bạn cần trả lời đúng ít nhất 80% các lượt để qua cấp. Cấp cao có N lớn hơn.",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Đúng: {a} · Nhầm: {b}",
+    "lib.arcade.nbAcc": "Độ chính xác: {n}%",
+    "lib.arcade.ckCookie": "Bánh quy",
+    "lib.arcade.note.clicker": "Bấm vào chiếc bánh để làm bánh, rồi dùng bánh mua các nhà sản xuất tự động làm bánh giúp bạn (giá tăng dần theo số lượng). Làm đủ số bánh mục tiêu trước khi hết 2 phút để qua cấp.",
+    "lib.arcade.ckEarned": "Đã làm: {n}/{t}",
+    "lib.arcade.chips2": "Bánh: {n}",
+    "lib.arcade.ckCps": "{n} bánh/giây",
+    "lib.arcade.shuffle": "Xáo trộn",
+    "lib.arcade.note.onet": "Chọn hai ô giống nhau có thể nối với nhau bằng đường đi không quá 2 góc rẽ và không đi qua ô khác để xoá chúng. Xoá hết các ô trước khi hết giờ để qua cấp. Khi hết nước đi, bạn có thể xáo trộn (số lần giới hạn).",
+    "lib.arcade.tilesLeft": "Còn {n} ô",
+    "lib.arcade.autoShuffle": "Hết nước đi — đã tự xáo trộn.",
+    "lib.arcade.jgRef": "Hình mẫu",
+    "lib.arcade.note.jigsaw": "Hình bị cắt thành nhiều mảnh và xáo trộn. Bấm vào một mảnh rồi bấm vào mảnh khác để đổi chỗ hai mảnh, sắp lại cho giống hình mẫu. Mảnh nằm đúng chỗ có viền xanh. Cấp cao có nhiều mảnh hơn.",
+    "lib.arcade.jgPlaced": "Đúng chỗ: {a}/{b}",
+    "lib.arcade.golfStrokes": "Gậy: {n}/{t} (par {p})",
+    "lib.arcade.ckCursor": "Con trỏ",
+    "lib.arcade.ckGrandma": "Bà nướng bánh",
+    "lib.arcade.ckFarm": "Trang trại",
+    "lib.arcade.ckMine": "Mỏ đường",
+    "lib.arcade.ckFactory": "Nhà máy"
   },
   "pages": {
     "home": {
@@ -1645,6 +1668,26 @@
     "texas-holdem": {
       "name": "Texas Hold'em (Poker, xu ảo)",
       "desc": "Poker tay đôi với máy bằng xu ảo: bỏ bài, theo hoặc tố; thắng khi máy hết xu; 10 cấp, không dùng tiền thật."
+    },
+    "n-back": {
+      "name": "N-Back (Luyện trí nhớ)",
+      "desc": "Nhìn ô sáng và bấm Giống! khi trùng với N lượt trước; 10 cấp, N tăng đến 4."
+    },
+    "cookie-clicker": {
+      "name": "Tiệm bánh (Bấm làm bánh)",
+      "desc": "Bấm làm bánh, mua máy làm bánh tự động và đạt mục tiêu trong 2 phút; 10 cấp."
+    },
+    "tile-connect": {
+      "name": "Nối cặp (kiểu Onet)",
+      "desc": "Nối hai ô giống nhau bằng đường không quá 2 góc rẽ để xoá hết bàn trước khi hết giờ; 10 cấp."
+    },
+    "jigsaw": {
+      "name": "Ghép hình",
+      "desc": "Đổi chỗ các mảnh bị xáo trộn để ghép lại bức tranh; 10 cấp từ 3x3 đến 6x6 mảnh."
+    },
+    "mini-golf": {
+      "name": "Golf mini",
+      "desc": "Kéo và thả để đánh bóng vào lỗ trong số gậy giới hạn; 10 sân có tường và cát."
     }
   },
   "s": {

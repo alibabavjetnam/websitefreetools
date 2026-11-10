@@ -385,7 +385,7 @@
     "lib.arcade.noMove": "No token can move.",
     "lib.arcade.note.pyramid": "Clear all 28 cards of the pyramid. Click two free cards (not covered by any card) that add up to 13 (A=1, J=11, Q=12) to remove both; a King is removed alone with one click. The top card of the waste pile can be used too. Click the stock to draw; the number of times you can recycle the waste pile is limited.",
     "lib.arcade.note.tripeaks": "Clear all 28 cards of the three peaks. Click a free card that is exactly one rank higher or lower than the card showing on the waste pile (any suit) to move it down. When you are out of moves, click the stock to draw. On the easier levels, a King links to an Ace.",
-    "lib.arcade.note.golf": "Clear all the columns. Only the bottom card of each column can be clicked: it must be exactly one rank higher or lower than the card showing. When you are out of moves, click the stock to draw. On the easier levels, a King links to an Ace.",
+    "lib.arcade.note.golf": "Press on the course, pull back away from where you want to hit (like a slingshot) and release to strike the ball; the farther you pull, the harder the hit. Sink the ball in the hole when it is slow enough; sand slows it down. Each level is a different course with a limited number of strokes.",
     "lib.arcade.ph.royal": "Royal flush",
     "lib.arcade.ph.sflush": "Straight flush",
     "lib.arcade.ph.quads": "Four of a kind",
@@ -604,7 +604,30 @@
     "lib.arcade.hand.flush": "Flush",
     "lib.arcade.hand.full": "Full house",
     "lib.arcade.hand.quads": "Four of a kind",
-    "lib.arcade.hand.sflush": "Straight flush"
+    "lib.arcade.hand.sflush": "Straight flush",
+    "lib.arcade.note.nback": "A square lights up one after another on a 3x3 grid. Press \"Match!\" (or Space) when the lit position is the same as the one N steps ago (N is shown above). You need at least 80% correct decisions to clear the level. Higher levels use a larger N.",
+    "lib.arcade.nbMatch": "Match!",
+    "lib.arcade.nbN": "N = {n}",
+    "lib.arcade.nbHits": "Correct: {a} · Wrong: {b}",
+    "lib.arcade.nbAcc": "Accuracy: {n}%",
+    "lib.arcade.note.clicker": "Click the cookie to bake cookies, then spend them on helpers that bake automatically (prices rise with each one you buy). Bake the target number of cookies within 2 minutes to clear the level.",
+    "lib.arcade.ckCursor": "Cursor",
+    "lib.arcade.ckGrandma": "Baking grandma",
+    "lib.arcade.ckFarm": "Farm",
+    "lib.arcade.ckMine": "Sugar mine",
+    "lib.arcade.ckFactory": "Factory",
+    "lib.arcade.ckCookie": "Cookie",
+    "lib.arcade.ckEarned": "Baked: {n}/{t}",
+    "lib.arcade.chips2": "Cookies: {n}",
+    "lib.arcade.ckCps": "{n} cookies/second",
+    "lib.arcade.note.onet": "Select two identical tiles that can be joined by a path with at most 2 turns that does not cross other tiles to remove them. Clear all the tiles before time runs out to win. When no moves are left you can shuffle (limited uses).",
+    "lib.arcade.shuffle": "Shuffle",
+    "lib.arcade.tilesLeft": "{n} tiles left",
+    "lib.arcade.autoShuffle": "No moves left — shuffled automatically.",
+    "lib.arcade.note.jigsaw": "The picture is cut into pieces and shuffled. Tap one piece, then another, to swap them, and rebuild the picture shown as the reference. Pieces in the right place get a green border. Higher levels have more pieces.",
+    "lib.arcade.jgRef": "Reference picture",
+    "lib.arcade.jgPlaced": "In place: {a}/{b}",
+    "lib.arcade.golfStrokes": "Strokes: {n}/{t} (par {p})"
   },
   "pages": {
     "home": {
@@ -1321,6 +1344,26 @@
     "texas-holdem": {
       "name": "Texas Hold'em (virtual chips)",
       "desc": "Heads-up poker against the computer with virtual chips: fold, call or raise, and win when the computer runs out of chips; 10 levels, no real money."
+    },
+    "n-back": {
+      "name": "N-Back Memory",
+      "desc": "Watch the lit square and press Match when it is the same as N steps ago; 10 levels with N up to 4."
+    },
+    "cookie-clicker": {
+      "name": "Cookie Clicker",
+      "desc": "Click to bake cookies, buy helpers that bake automatically and reach the target within 2 minutes; 10 levels."
+    },
+    "tile-connect": {
+      "name": "Tile Connect (Onet-style)",
+      "desc": "Join matching tiles with a path of at most two turns and clear the board before time runs out; 10 levels, bigger boards."
+    },
+    "jigsaw": {
+      "name": "Picture Jigsaw",
+      "desc": "Swap the shuffled pieces to rebuild the picture; 10 levels from 3x3 to 6x6 pieces."
+    },
+    "mini-golf": {
+      "name": "Mini Golf",
+      "desc": "Pull back and release to putt the ball into the hole within the stroke limit; 10 courses with walls and sand."
     }
   },
   "s": {

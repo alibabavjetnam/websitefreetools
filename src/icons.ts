@@ -201,6 +201,11 @@ const PATHS: Record<string, string> = {
   'domino': '<path d="M5 3h14v18H5zM5 12h14M9 7.5h.01M15 16.5h.01M9 16.5h.01M15 7.5h.01"/>',
   'hearts': '<path d="M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z"/>',
   'texas-holdem': '<rect x="3" y="5" width="9" height="13" rx="1.5"/><rect x="12" y="6" width="9" height="13" rx="1.5"/>',
+  'n-back': '<path d="M4 4h5v5H4zM15 4h5v5h-5zM4 15h5v5H4zM15 15h5v5h-5z"/>',
+  'cookie-clicker': '<circle cx="12" cy="12" r="8"/><path d="M9 9h.01M14 8h.01M15 13h.01M10 14h.01"/>',
+  'tile-connect': '<path d="M4 6h5v5H4zM15 13h5v5h-5zM9 8.5h4.5V15.5H15"/>',
+  'jigsaw': '<path d="M5 5h5a2 2 0 114 0h5v5a2 2 0 100 4v5h-5a2 2 0 10-4 0H5v-5a2 2 0 100-4z"/>',
+  'mini-golf': '<circle cx="8" cy="18" r="2"/><path d="M10 18h10M16 18V4l-5 3 5 3"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp
