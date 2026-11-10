@@ -1409,10 +1409,11 @@ html.wd-noscroll, html.wd-noscroll body { overflow: hidden; }
 @media (max-width: 760px) { .game-wrap:fullscreen .game-main, .game-wrap.is-pseudo-full .game-main { grid-template-columns: minmax(0, 1fr); } }
 
 /* Thanh chia sẻ mạng xã hội ở đầu trang công cụ */
-.share-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px; margin: 0 0 10px; }
-.share-bar .sh-label { font-size: 13px; color: var(--muted); margin-inline-end: 2px; }
-.share-bar .sh-btn { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--c); box-shadow: 0 1px 2px rgba(0,0,0,.15); transition: transform .15s, box-shadow .15s; }
+.share-bar { display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: 6px; margin: 0 0 10px; }
+.share-bar .sh-label { font-size: 13px; color: var(--muted); margin-inline-end: 2px; flex: 0 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.share-bar .sh-btn { display: inline-grid; place-items: center; flex: 0 1 32px; min-width: 24px; aspect-ratio: 1; width: auto; height: auto; border-radius: 50%; background: var(--c); box-shadow: 0 1px 2px rgba(0,0,0,.15); transition: transform .15s, box-shadow .15s; }
 .share-bar .sh-btn:hover, .share-bar .sh-btn:focus-visible { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.2); outline: none; }
+@media (max-width: 420px) { .share-bar { gap: 4px; } .share-bar .sh-label { display: none; } .share-bar .sh-btn svg { width: 55%; height: 55%; } }
 @media (prefers-color-scheme: dark) { .share-bar .sh-x, .share-bar .sh-threads { box-shadow: 0 0 0 1px rgba(255,255,255,.35); } }
 
 /* Biểu tượng tự gắn trên nút */
