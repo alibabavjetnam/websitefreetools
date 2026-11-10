@@ -115,6 +115,17 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Game giải trí | Cờ đam | `tools/checkers.html` |
 | Game giải trí | Cờ cá ngựa | `tools/ludo.html` |
 | Game giải trí | Ô ăn quan | `tools/o-an-quan.html` |
+| Game giải trí | Lights Out | `tools/lights-out.html` |
+| Game giải trí | Xếp số 15 (15-puzzle) | `tools/fifteen.html` |
+| Game giải trí | Flood-it (Tô màu loang) | `tools/flood-it.html` |
+| Game giải trí | Mastermind (Đoán dãy màu) | `tools/mastermind.html` |
+| Game giải trí | Tháp Hà Nội | `tools/hanoi.html` |
+| Game giải trí | Nối ống | `tools/pipes.html` |
+| Game giải trí | Nonogram (Picross) | `tools/nonogram.html` |
+| Game giải trí | Sokoban (Đẩy thùng) | `tools/sokoban.html` |
+| Game giải trí | Xếp khối 10x10 | `tools/block-10x10.html` |
+| Game giải trí | Nối điểm chiếm ô (Dots and Boxes) | `tools/dots-boxes.html` |
+| Game giải trí | Ultimate Tic-Tac-Toe (Caro 9 bàn) | `tools/ultimate-tictactoe.html` |
 
 Chơi online (cờ vua, cờ tướng, cờ úp, cờ vây): nước đi chuyển qua broker MQTT công cộng miễn phí (`src/lib/mqtt.ts` tự viết, `src/lib/online.ts`), mã hoá AES-GCM theo từng bàn; bàn công khai lên danh sách "Bàn chờ bạn", bàn riêng mời bằng link `?id=<guid>`; đăng nhập Google thì ván đấu (JSON) lưu vào Drive của người chơi (`WFTools/Games`).
 

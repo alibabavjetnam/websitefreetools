@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Đỏ",
     "lib.arcade.cGreen": "Xanh lá",
     "lib.arcade.cYellow": "Vàng",
-    "lib.arcade.cBlue": "Xanh dương"
+    "lib.arcade.cBlue": "Xanh dương",
+    "lib.arcade.guess": "Đoán",
+    "lib.arcade.clearRow": "Xoá hàng",
+    "lib.arcade.area": "Vùng: {n}/{t}",
+    "lib.arcade.triesLeft": "Còn {n} lượt đoán",
+    "lib.arcade.minMoves": "Tối thiểu: {n}",
+    "lib.arcade.hnBad": "Không đặt đĩa to lên đĩa nhỏ.",
+    "lib.arcade.outOfMoves": "Hết lượt!",
+    "lib.arcade.fillAll": "Hãy chọn đủ màu cho mọi vị trí.",
+    "lib.arcade.modeFill": "Tô ô",
+    "lib.arcade.modeMark": "Đánh dấu ✕",
+    "lib.arcade.clearAll": "Xoá hết",
+    "lib.arcade.note.nonogram": "Các số ở đầu mỗi hàng và cột cho biết độ dài các dãy ô liên tiếp được tô trong hàng/cột đó, theo thứ tự, giữa các dãy có ít nhất một ô trống. Bấm hoặc kéo để tô ô; chuyển sang “Đánh dấu ✕” để ghi chú ô chắc chắn trống. Tô đúng mọi gợi ý là thắng.",
+    "lib.arcade.size": "Bàn {n}×{n}",
+    "lib.arcade.restartLevel": "Chơi lại màn",
+    "lib.arcade.newLayout": "Màn khác",
+    "lib.arcade.note.sokoban": "Điều khiển người bằng phím mũi tên/WASD, nút bên dưới hoặc vuốt. Đẩy mọi thùng vào các ô đích (chấm tròn). Chỉ đẩy được một thùng mỗi lần, không kéo được, nên đừng đẩy thùng vào góc. Đi lại để sửa nước sai.",
+    "lib.arcade.boxesDone": "Thùng vào đích: {n}/{t}",
+    "lib.arcade.note.block10": "Chọn một mảnh ở dưới rồi bấm vào lưới để đặt (mảnh không xoay được). Lấp đầy cả hàng hoặc cả cột để xoá chúng và ghi thêm điểm; xoá nhiều đường cùng lúc được thưởng lớn. Đạt điểm mục tiêu để qua cấp; hết chỗ đặt mọi mảnh còn lại là thua.",
+    "lib.arcade.note.dots": "Lần lượt nối hai chấm kề nhau bằng một đường. Ai nối đường thứ tư khép kín một ô vuông sẽ chiếm ô đó (màu của mình) và được đi tiếp. Hết đường, ai chiếm nhiều ô hơn thắng. Đừng nối đường thứ ba của một ô, kẻo đối thủ chiếm mất.",
+    "lib.arcade.note.ultimate": "Bàn gồm 9 bàn caro nhỏ. Bạn cầm X, đi trước. Ô bạn chọn trong bàn nhỏ quyết định bàn nhỏ mà đối thủ phải đi tiếp (bàn được tô sáng); nếu bàn đó đã xong thì được đi bất cứ đâu. Thắng một bàn nhỏ để chiếm nó; chiếm 3 bàn nhỏ thành hàng ngang, dọc hoặc chéo là thắng cả ván.",
+    "lib.arcade.note.lights-out": "Bấm một ô sẽ đổi trạng thái (sáng/tắt) của ô đó và 4 ô liền kề. Hãy tắt hết mọi đèn. Có Gợi ý chỉ ra ô nên bấm.",
+    "lib.arcade.note.fifteen": "Trượt các ô số vào chỗ trống để xếp theo thứ tự 1, 2, 3… với ô trống ở góc dưới phải. Bấm một ô cùng hàng hoặc cột với ô trống để trượt cả dãy; dùng được phím mũi tên.",
+    "lib.arcade.note.flood-it": "Chọn một màu để tô cả vùng đang chiếm ở góc trên trái; vùng sẽ nuốt các ô liền kề cùng màu. Hãy làm cả bàn cùng một màu trong số nước cho phép.",
+    "lib.arcade.note.mastermind": "Máy giấu một dãy màu. Chọn màu cho từng vị trí rồi bấm Đoán. Chấm đen = đúng màu đúng vị trí, chấm trắng = đúng màu nhưng sai vị trí. Đoán ra dãy trước khi hết lượt.",
+    "lib.arcade.note.hanoi": "Chuyển toàn bộ đĩa sang cọc cuối cùng. Mỗi lần chỉ chuyển một đĩa trên cùng, và không đặt đĩa to lên đĩa nhỏ. Bấm cọc nguồn rồi cọc đích.",
+    "lib.arcade.note.pipes": "Bấm một ô để xoay ống 90°. Nối mọi ống thành một mạng liền, không còn đầu ống hở (đầu hở được tô đỏ)."
   },
   "pages": {
     "home": {
@@ -1252,6 +1278,50 @@
     "o-an-quan": {
       "name": "Ô ăn quan",
       "desc": "Trò dân gian Việt Nam: rải dân, ăn quan, đánh với máy qua 10 cấp từ dễ đến khó."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Tắt hết các bóng đèn: mỗi lần bấm đổi cả ô đó và 4 ô kề; 10 cấp với bàn lớn dần, có gợi ý."
+    },
+    "fifteen": {
+      "name": "Xếp số 15 (15-puzzle)",
+      "desc": "Trượt các ô số về đúng thứ tự; 10 cấp từ bàn 3x3 đến 5x5, chơi bằng chuột, chạm hoặc phím mũi tên."
+    },
+    "flood-it": {
+      "name": "Flood-it (Tô màu loang)",
+      "desc": "Tô màu loang từ góc để cả bàn cùng một màu trong số nước giới hạn; 10 cấp với bàn lớn và nhiều màu dần."
+    },
+    "mastermind": {
+      "name": "Mastermind (Đoán dãy màu)",
+      "desc": "Đoán dãy màu mà máy giấu dựa vào chấm đen/trắng gợi ý; 10 cấp với dãy dài và nhiều màu dần."
+    },
+    "hanoi": {
+      "name": "Tháp Hà Nội",
+      "desc": "Chuyển các đĩa từ cọc đầu sang cọc cuối, không đặt đĩa to lên đĩa nhỏ; 10 cấp từ 3 đĩa đến 12 đĩa 4 cọc."
+    },
+    "pipes": {
+      "name": "Nối ống",
+      "desc": "Xoay các đoạn ống để nối thành một mạng liền không đầu hở; 10 cấp với bàn lớn dần."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Tô ô theo các số gợi ý ở hàng và cột để hiện ra bức tranh; 10 cấp từ bàn 5x5 đến 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Đẩy thùng)",
+      "desc": "Đẩy các thùng vào ô đích trong kho; mọi màn đều có lời giải, 10 cấp tăng dần số thùng và kích thước kho."
+    },
+    "block-10x10": {
+      "name": "Xếp khối 10x10",
+      "desc": "Đặt các mảnh vào lưới 10x10, lấp đầy hàng hoặc cột để xoá và đạt điểm mục tiêu; 10 cấp."
+    },
+    "dots-boxes": {
+      "name": "Nối điểm chiếm ô (Dots and Boxes)",
+      "desc": "Lần lượt nối các chấm để chiếm ô vuông, đánh với máy qua 10 cấp từ dễ đến khó."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate Tic-Tac-Toe (Caro 9 bàn)",
+      "desc": "Caro 3x3 lồng 9 bàn nhỏ: ô bạn chọn quyết định bàn đối thủ phải đi; đánh với máy qua 10 cấp."
     }
   },
   "s": {

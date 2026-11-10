@@ -403,7 +403,33 @@
     "lib.arcade.cRed": "Red",
     "lib.arcade.cGreen": "Green",
     "lib.arcade.cYellow": "Yellow",
-    "lib.arcade.cBlue": "Blue"
+    "lib.arcade.cBlue": "Blue",
+    "lib.arcade.guess": "Guess",
+    "lib.arcade.clearRow": "Clear row",
+    "lib.arcade.area": "Area: {n}/{t}",
+    "lib.arcade.triesLeft": "{n} guesses left",
+    "lib.arcade.minMoves": "Minimum: {n}",
+    "lib.arcade.hnBad": "You cannot place a larger disc on a smaller one.",
+    "lib.arcade.outOfMoves": "Out of moves!",
+    "lib.arcade.fillAll": "Please pick a colour for every position.",
+    "lib.arcade.modeFill": "Fill",
+    "lib.arcade.modeMark": "Mark ✕",
+    "lib.arcade.clearAll": "Clear all",
+    "lib.arcade.note.nonogram": "The numbers at the start of each row and column give the lengths of the runs of consecutive filled cells in that line, in order, with at least one empty cell between runs. Click or drag to fill cells; switch to “Mark ✕” to note cells you are sure are empty. Satisfy every clue to win.",
+    "lib.arcade.size": "{n}×{n} grid",
+    "lib.arcade.restartLevel": "Restart level",
+    "lib.arcade.newLayout": "Another level",
+    "lib.arcade.note.sokoban": "Move the player with the arrow keys/WASD, the buttons below, or by swiping. Push every box onto a goal square (the round dots). You can only push one box at a time and cannot pull, so avoid pushing boxes into corners. Use Undo to fix a bad move.",
+    "lib.arcade.boxesDone": "Boxes on goals: {n}/{t}",
+    "lib.arcade.note.block10": "Pick a piece at the bottom, then click the grid to place it (pieces cannot be rotated). Fill a whole row or column to clear it and score extra points; clearing several lines at once earns a big bonus. Reach the target score to clear the level; if none of the remaining pieces fits, you lose.",
+    "lib.arcade.note.dots": "Take turns joining two neighbouring dots with a line. Whoever draws the fourth side of a square claims it (in their colour) and moves again. When all lines are drawn, the player with more squares wins. Avoid drawing the third side of a square, or your opponent will take it.",
+    "lib.arcade.note.ultimate": "The board is made of 9 small tic-tac-toe boards. You play X and go first. The cell you pick inside a small board decides which small board your opponent must play in next (it is highlighted); if that board is already finished, they may play anywhere. Win a small board to claim it; claim three small boards in a row, column or diagonal to win the game.",
+    "lib.arcade.note.lights-out": "Clicking a cell toggles that cell and its 4 neighbours (on/off). Turn all the lights off. Use Hint to see a cell worth pressing.",
+    "lib.arcade.note.fifteen": "Slide the numbered tiles into the gap to put them in order 1, 2, 3… with the gap in the bottom-right corner. Click a tile in the same row or column as the gap to slide the whole line; arrow keys also work.",
+    "lib.arcade.note.flood-it": "Pick a colour to fill the whole area you own in the top-left corner; it swallows neighbouring cells of that colour. Make the entire board one colour within the allowed number of moves.",
+    "lib.arcade.note.mastermind": "The computer hides a row of colours. Choose a colour for each position, then press Guess. A black peg = right colour in the right place; a white peg = right colour in the wrong place. Crack the code before you run out of guesses.",
+    "lib.arcade.note.hanoi": "Move all the discs to the last peg. Move only the top disc of a peg each time, and never place a larger disc on a smaller one. Click the source peg, then the target peg.",
+    "lib.arcade.note.pipes": "Click a tile to rotate the pipe 90°. Connect every pipe into one network with no open ends left (open ends are shown in red)."
   },
   "pages": {
     "home": {
@@ -928,6 +954,50 @@
     "o-an-quan": {
       "name": "O An Quan",
       "desc": "A traditional Vietnamese sowing game: sow stones and capture the Mandarins against the computer; 10 levels from easy to hard."
+    },
+    "lights-out": {
+      "name": "Lights Out",
+      "desc": "Turn off every light: each press flips that cell and its 4 neighbours; 10 levels with growing boards and a hint button."
+    },
+    "fifteen": {
+      "name": "15 Puzzle (Sliding Puzzle)",
+      "desc": "Slide the numbered tiles into order; 10 levels from 3x3 to 5x5, played with mouse, touch or arrow keys."
+    },
+    "flood-it": {
+      "name": "Flood-it",
+      "desc": "Flood the board from the corner until it is one colour within a limited number of moves; 10 levels with bigger boards and more colours."
+    },
+    "mastermind": {
+      "name": "Mastermind (Code Breaker)",
+      "desc": "Crack the hidden colour code using black and white peg clues; 10 levels with longer codes and more colours."
+    },
+    "hanoi": {
+      "name": "Tower of Hanoi",
+      "desc": "Move the discs from the first peg to the last without placing a larger disc on a smaller one; 10 levels from 3 discs to 12 discs on 4 pegs."
+    },
+    "pipes": {
+      "name": "Pipe Connect",
+      "desc": "Rotate the pipe pieces to join them into one network with no open ends; 10 levels with growing boards."
+    },
+    "nonogram": {
+      "name": "Nonogram (Picross)",
+      "desc": "Fill cells using the number clues at the rows and columns to reveal a picture; 10 levels from 5x5 to 15x15."
+    },
+    "sokoban": {
+      "name": "Sokoban (Box Pusher)",
+      "desc": "Push the boxes onto the goal squares in a warehouse; every level is solvable, with 10 levels of more boxes and bigger warehouses."
+    },
+    "block-10x10": {
+      "name": "Block Puzzle 10x10",
+      "desc": "Place pieces on a 10x10 grid and fill rows or columns to clear them and reach the target score; 10 levels."
+    },
+    "dots-boxes": {
+      "name": "Dots and Boxes",
+      "desc": "Take turns joining dots to claim squares and beat the computer over 10 levels from easy to hard."
+    },
+    "ultimate-tictactoe": {
+      "name": "Ultimate Tic-Tac-Toe",
+      "desc": "Tic-tac-toe across 9 small boards: the cell you choose decides where your opponent must play; vs the computer over 10 levels."
     }
   },
   "s": {

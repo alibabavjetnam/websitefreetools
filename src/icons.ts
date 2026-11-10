@@ -153,6 +153,17 @@ const PATHS: Record<string, string> = {
   'checkers': '<circle cx="8" cy="8" r="4"/><circle cx="16" cy="16" r="4" fill="currentColor" fill-opacity=".25"/><path d="M11 11l2 2"/>',
   'ludo': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18" opacity=".4"/><circle cx="6" cy="6" r="1.6" fill="currentColor"/><rect x="10" y="10" width="4" height="4" rx=".8"/>',
   'o-an-quan': '<rect x="3" y="7" width="18" height="10" rx="2"/><path d="M8 7v10M12 7v10M16 7v10M3 12h18" opacity=".45"/><circle cx="6" cy="12" r="1.2" fill="currentColor"/><circle cx="18" cy="12" r="1.2" fill="currentColor"/>',
+  'lights-out': '<rect x="3" y="3" width="8" height="8" rx="1.5" fill="currentColor" fill-opacity=".3"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5" fill="currentColor" fill-opacity=".3"/>',
+  'fifteen': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18" opacity=".4"/><path d="M5.5 5.5h1.5M11 5.5h2M17 5.5h2"/>',
+  'flood-it': '<path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.500 3-6 6-10z"/><path d="M9 14a3 3 0 0 0 3 3" opacity=".5"/>',
+  'mastermind': '<circle cx="7" cy="8" r="2.5"/><circle cx="14" cy="8" r="2.5" fill="currentColor" fill-opacity=".35"/><circle cx="7" cy="16" r="2.5" fill="currentColor" fill-opacity=".35"/><circle cx="14" cy="16" r="2.5"/><circle cx="19.500" cy="8" r="1" fill="currentColor"/><circle cx="19.500" cy="16" r="1"/>',
+  'hanoi': '<path d="M12 3v17M4 3v17M20 3v17" opacity=".35"/><rect x="2" y="16" width="5" height="3" rx="1"/><rect x="9.500" y="16" width="5" height="3" rx="1"/><rect x="10.500" y="12.500" width="3" height="3" rx="1"/><path d="M3 21h18"/>',
+  'pipes': '<path d="M4 8h8v8h8"/><path d="M12 8V4M12 16v4M4 8" opacity=".6"/><circle cx="12" cy="12" r="1.500" fill="currentColor"/>',
+  'nonogram': '<rect x="8" y="8" width="13" height="13" rx="1"/><path d="M3 11h3M3 15h3M11 3v3M15 3v3" /><path d="M8 12h4v4h4v5" opacity=".5"/>',
+  'sokoban': '<rect x="4" y="4" width="9" height="9" rx="1"/><path d="M4 4l9 9M13 4L4 13" opacity=".5"/><circle cx="17" cy="17" r="3.500"/>',
+  'block-10x10': '<rect x="3" y="3" width="18" height="18" rx="2" opacity=".4"/><rect x="5" y="5" width="6" height="6" rx="1"/><rect x="13" y="5" width="6" height="3" rx="1"/><rect x="5" y="13" width="3" height="6" rx="1"/><rect x="10" y="13" width="9" height="3" rx="1"/>',
+  'dots-boxes': '<circle cx="5" cy="5" r="1.500" fill="currentColor"/><circle cx="12" cy="5" r="1.500" fill="currentColor"/><circle cx="19" cy="5" r="1.500" fill="currentColor"/><circle cx="5" cy="12" r="1.500" fill="currentColor"/><circle cx="12" cy="12" r="1.500" fill="currentColor"/><circle cx="19" cy="12" r="1.500" fill="currentColor"/><circle cx="5" cy="19" r="1.500" fill="currentColor"/><circle cx="12" cy="19" r="1.500" fill="currentColor"/><circle cx="19" cy="19" r="1.500" fill="currentColor"/><path d="M5 5h7v7H5" /><path d="M12 12h7"/>',
+  'ultimate-tictactoe': '<path d="M9 3v18M15 3v18M3 9h18M3 15h18"/><path d="M4.500 4.500l3 3M7.500 4.500l-3 3"/><circle cx="12" cy="12" r="2"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp
