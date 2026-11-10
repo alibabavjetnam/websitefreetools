@@ -193,6 +193,11 @@ const PATHS: Record<string, string> = {
   'basketball': '<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4v16M6 6c3 3 3 9 0 12M18 6c-3 3-3 9 0 12"/>',
   'bubble-shooter': '<circle cx="8" cy="8" r="3.5"/><circle cx="16" cy="8" r="3.5"/><circle cx="12" cy="15" r="3.5"/><path d="M12 21v-2"/>',
   'dot-chase': '<path d="M12 12L18 8a7 7 0 100 8z"/><circle cx="19" cy="12" r="1"/>',
+  'kakuro': '<path d="M4 4h16v16H4zM4 4l6 6M10 4v16M4 10h16"/>',
+  'kenken': '<path d="M4 4h16v16H4zM4 12h8V4M12 12v8M16 12h4"/>',
+  'word-guess': '<path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/>',
+  'hangman': '<path d="M4 21h8M8 21V3h8v3M16 6a2 2 0 100 .01M16 9v5M13 11h6M16 14l-3 4M16 14l3 4"/>',
+  'word-scramble': '<path d="M4 7h4v4H4zM10 13h4v4h-4zM16 7h4v4h-4zM8 9h2M14 15h-2M14 9h2"/>',
   // bàn phím
   'typing-test': '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M12 10h.01M15 10h.01M18 10h.01M7 14h10"/>',
   // con trỏ chuột với vạch nhấp

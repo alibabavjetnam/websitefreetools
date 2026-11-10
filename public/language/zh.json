@@ -452,7 +452,7 @@
     "lib.arcade.note.quick-math": "尽快心算：输入答案后按回车。每题有时间限制，答错或超时会扣一条命（共 3 条）。答对足够数量的题目即过关。",
     "lib.arcade.correctN": "答对：{n}/{t}",
     "lib.arcade.note.reaction": "等屏幕变绿后尽快点击。点得太早算犯规（犯规 3 次即失败）。5 轮的平均成绩要优于本关的标准。",
-    "lib.arcade.roundN": "第 {n}/{t} 轮",
+    "lib.arcade.roundN": "第 {n}/{t} 个单词",
     "lib.arcade.limitMs": "标准：{n} 毫秒",
     "lib.arcade.rxWait": "等待变绿…",
     "lib.arcade.rxGo": "点击！",
@@ -552,7 +552,22 @@
     "lib.arcade.shotsLeft": "还剩 {n} 次投篮",
     "lib.arcade.bubbleLeft": "还剩 {n} 个泡泡",
     "lib.arcade.shotsN": "射击数：{n}",
-    "lib.arcade.dotsLeft": "还剩 {n} 个点"
+    "lib.arcade.dotsLeft": "还剩 {n} 个点",
+    "lib.arcade.note.kakuro": "在白格中填入 1–9，使每一段的和等于黑格中的提示（右上角数字对应向右的一段，左下角数字对应向下的一段），且同一段内数字不能重复。可用方向键移动。",
+    "lib.arcade.note.kenken": "在网格中填入 1 到 N，使每行每列数字不重复。每个粗线框内标有目标数和运算（+、−、×、÷），框内的数字必须得出该结果。可用方向键移动。",
+    "lib.arcade.note.wordGuess": "猜出秘密的英文单词。每次猜测后，绿色表示字母和位置都对，黄色表示单词里有这个字母但位置不对，灰色表示单词里没有。用键盘或屏幕键盘输入，按 Enter 提交。关卡越高，单词越长，机会越少。",
+    "lib.arcade.note.hangman": "逐个选择字母来猜出秘密的英文单词。每猜错一个字母，吊人图就多画一笔；错误次数用完就输。关卡越高，单词越长，允许的错误越少。",
+    "lib.arcade.note.scramble": "把打乱的字母重新排成一个有意义的英文单词，并输入到答题框中。每关有 5 个单词，在每个单词的倒计时结束前至少答对 4 个即可过关。提示会显示第一个字母。",
+    "lib.arcade.cellsLeft": "还剩 {n} 个空格",
+    "lib.arcade.wrongN": "有 {n} 个格子不对。",
+    "lib.arcade.noError": "暂时没有发现错误。",
+    "lib.arcade.tooShort": "字母不够",
+    "lib.arcade.answerIs": "答案：{w}",
+    "lib.arcade.livesLeft": "还可以猜错 {n} 次",
+    "lib.arcade.yourAnswer": "你的答案",
+    "lib.arcade.skip": "跳过",
+    "lib.arcade.notThis": "不对，再试试。",
+    "lib.arcade.startsWith": "首字母：{c}"
   },
   "pages": {
     "home": {
@@ -1237,6 +1252,26 @@
     "dot-chase": {
       "name": "吃点追逐",
       "desc": "在迷宫里吃掉所有的点，同时躲开追赶你的幽灵；共 10 关，幽灵越来越多、越来越聪明。"
+    },
+    "kakuro": {
+      "name": "数和（Kakuro）",
+      "desc": "在白格填入 1–9，使每段之和等于提示且不重复；共 10 关，网格从 5x5 到 9x9。"
+    },
+    "kenken": {
+      "name": "算独（KenKen）",
+      "desc": "在行列不重复的前提下填数，使每个框按其运算得出目标数；共 10 关，网格从 3x3 到 6x6。"
+    },
+    "word-guess": {
+      "name": "猜单词（Wordle 式）",
+      "desc": "根据绿、黄、灰色提示猜出秘密的英文单词；共 10 关，单词 4–6 个字母，机会逐渐减少。"
+    },
+    "hangman": {
+      "name": "猜字谜（Hangman）",
+      "desc": "在错误次数用完前逐个字母猜出英文单词；共 10 关，单词越来越长，允许的错误越来越少。"
+    },
+    "word-scramble": {
+      "name": "字母重排（Anagram）",
+      "desc": "在时间用完前把打乱的字母重排成英文单词；共 10 关，每关 5 个单词。"
     }
   },
   "s": {

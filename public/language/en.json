@@ -452,7 +452,7 @@
     "lib.arcade.note.quick-math": "Solve in your head as fast as you can: type the answer and press Enter. Each question has a time limit; a wrong answer or timeout costs a life (you have 3). Answer enough questions correctly to clear the level.",
     "lib.arcade.correctN": "Correct: {n}/{t}",
     "lib.arcade.note.reaction": "Wait for the screen to turn green, then click as fast as you can. Clicking too early is a foul (3 fouls and you lose). Your average over 5 rounds must beat the level’s limit.",
-    "lib.arcade.roundN": "Round {n}/{t}",
+    "lib.arcade.roundN": "Word {n}/{t}",
     "lib.arcade.limitMs": "Limit: {n} ms",
     "lib.arcade.rxWait": "Wait for green…",
     "lib.arcade.rxGo": "CLICK!",
@@ -552,7 +552,22 @@
     "lib.arcade.shotsLeft": "{n} shots left",
     "lib.arcade.bubbleLeft": "{n} bubbles left",
     "lib.arcade.shotsN": "Shots: {n}",
-    "lib.arcade.dotsLeft": "{n} dots left"
+    "lib.arcade.dotsLeft": "{n} dots left",
+    "lib.arcade.note.kakuro": "Fill the white cells with digits 1–9 so that each run adds up to the clue in the black cell (the number at the top right is for the run to the right, the one at the bottom left for the run below), with no digit repeated within a run. Use the arrow keys to move.",
+    "lib.arcade.note.kenken": "Fill the grid with the numbers 1 to N so that no number repeats in any row or column. Each heavily outlined cage shows a target and an operation (+, −, ×, ÷): the numbers in the cage must give that result. Use the arrow keys to move.",
+    "lib.arcade.note.wordGuess": "Guess the secret English word. After each try, green means the right letter in the right place, yellow means the letter is in the word but elsewhere, and gray means it is not in the word. Type on your keyboard or use the on-screen keys, and press Enter to submit. Higher levels have longer words and fewer tries.",
+    "lib.arcade.note.hangman": "Guess the secret English word by picking letters one at a time. Each wrong letter adds a part to the hanged figure; when you run out of wrong guesses you lose. Higher levels have longer words and fewer wrong guesses allowed.",
+    "lib.arcade.note.scramble": "Rearrange the scrambled letters into a real English word and type it in the answer box. Each level has 5 words; solve at least 4 before each word’s timer runs out to clear the level. The hint reveals the first letter.",
+    "lib.arcade.cellsLeft": "{n} empty cells left",
+    "lib.arcade.wrongN": "{n} cells are not right.",
+    "lib.arcade.noError": "No mistakes found so far.",
+    "lib.arcade.tooShort": "Not enough letters",
+    "lib.arcade.answerIs": "Answer: {w}",
+    "lib.arcade.livesLeft": "{n} wrong guesses left",
+    "lib.arcade.yourAnswer": "Your answer",
+    "lib.arcade.skip": "Skip",
+    "lib.arcade.notThis": "Not right, try again.",
+    "lib.arcade.startsWith": "First letter: {c}"
   },
   "pages": {
     "home": {
@@ -1237,6 +1252,26 @@
     "dot-chase": {
       "name": "Dot Chase",
       "desc": "Eat every dot in the maze while dodging the ghosts that chase you; 10 levels with more and smarter ghosts."
+    },
+    "kakuro": {
+      "name": "Kakuro (Cross Sums)",
+      "desc": "Fill the white cells with digits 1–9 so each run adds up to its clue with no repeats; 10 levels, grids from 5x5 to 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Calcudoku)",
+      "desc": "Fill the grid with no repeats in rows or columns so every cage gives its target with its operation; 10 levels, grids from 3x3 to 6x6."
+    },
+    "word-guess": {
+      "name": "Word Guess (Wordle-style)",
+      "desc": "Guess the secret English word with green, yellow and gray hints; 10 levels with 4–6 letter words and fewer tries."
+    },
+    "hangman": {
+      "name": "Hangman",
+      "desc": "Guess the English word one letter at a time before you run out of wrong guesses; 10 levels with longer words and fewer wrong guesses."
+    },
+    "word-scramble": {
+      "name": "Word Scramble (Anagram)",
+      "desc": "Rearrange scrambled letters into an English word before time runs out; 10 levels, 5 words per level."
     }
   },
   "s": {

@@ -452,7 +452,7 @@
     "lib.arcade.note.quick-math": "Tính nhẩm càng nhanh càng tốt: gõ đáp án rồi bấm Enter. Mỗi câu có giới hạn thời gian; sai hoặc hết giờ mất một mạng (3 mạng). Trả lời đủ số câu đúng là qua cấp.",
     "lib.arcade.correctN": "Đúng: {n}/{t}",
     "lib.arcade.note.reaction": "Chờ màn hình chuyển sang xanh lá rồi bấm thật nhanh. Bấm sớm bị tính là phạm lỗi (tối đa 3 lỗi). Thời gian trung bình 5 lượt phải đạt ngưỡng của cấp.",
-    "lib.arcade.roundN": "Lượt {n}/{t}",
+    "lib.arcade.roundN": "Từ {n}/{t}",
     "lib.arcade.limitMs": "Ngưỡng: {n} ms",
     "lib.arcade.rxWait": "Chờ màu xanh…",
     "lib.arcade.rxGo": "BẤM!",
@@ -552,7 +552,22 @@
     "lib.arcade.note.slicer": "Kéo ngón tay hoặc chuột ngang qua trái cây để cắt. Tránh quả bom đen. Để rơi mất trái cây hoặc cắt trúng bom sẽ mất 1 mạng (3 mạng). Cắt đủ số quả để qua cấp.",
     "lib.arcade.note.hoops": "Bấm vào sân rồi kéo ngón tay/chuột xuống dưới (kiểu ná cao su) và thả ra để ném bóng lên rổ. Kéo càng xa, bóng bay càng mạnh. Ghi đủ số bóng với số lần ném giới hạn; từ cấp 4 rổ di chuyển.",
     "lib.arcade.note.bubbles": "Di chuột/ngón tay để ngắm, bấm hoặc nhấn cách/Bắn để bắn. Nối từ 3 bóng cùng màu trở lên để làm nổ; bóng mất chỗ bám sẽ rơi. Hàng bóng tụt dần xuống, đừng để chạm vạch đáy. Xoá hết bóng để qua cấp.",
-    "lib.arcade.note.chase": "Dùng phím mũi tên (hoặc vuốt/nút) để đổi hướng và ăn hết chấm trong mê cung, tránh các con ma đang đuổi. Có 3 mạng; càng lên cấp có thêm ma, ma chạy nhanh và đuổi thông minh hơn."
+    "lib.arcade.note.chase": "Dùng phím mũi tên (hoặc vuốt/nút) để đổi hướng và ăn hết chấm trong mê cung, tránh các con ma đang đuổi. Có 3 mạng; càng lên cấp có thêm ma, ma chạy nhanh và đuổi thông minh hơn.",
+    "lib.arcade.note.kakuro": "Điền số 1–9 vào các ô trắng sao cho tổng mỗi dãy bằng số gợi ý ở ô đen (số trên góc phải là dãy ngang, số góc trái dưới là dãy dọc) và không số nào lặp lại trong cùng một dãy. Dùng phím mũi tên để di chuyển.",
+    "lib.arcade.note.kenken": "Điền số 1 đến N vào lưới sao cho mỗi hàng và mỗi cột không lặp số. Mỗi khung viền đậm có một số mục tiêu và phép tính (+, −, ×, ÷): các số trong khung phải cho ra kết quả đó. Dùng phím mũi tên để di chuyển.",
+    "lib.arcade.cellsLeft": "Còn {n} ô trống",
+    "lib.arcade.wrongN": "{n} ô chưa đúng.",
+    "lib.arcade.noError": "Chưa phát hiện lỗi.",
+    "lib.arcade.note.wordGuess": "Đoán từ tiếng Anh bí mật. Sau mỗi lượt, ô xanh là đúng chữ đúng chỗ, ô vàng là có chữ nhưng sai chỗ, ô xám là không có chữ đó. Gõ bằng bàn phím hoặc bấm bàn phím trên màn hình, Enter để gửi. Cấp cao có từ dài hơn và ít lượt hơn.",
+    "lib.arcade.tooShort": "Chưa đủ chữ",
+    "lib.arcade.answerIs": "Đáp án: {w}",
+    "lib.arcade.note.hangman": "Đoán từ tiếng Anh bí mật bằng cách chọn từng chữ cái. Mỗi chữ sai là thêm một nét vẽ người treo cổ; hết lượt sai là thua. Cấp cao có từ dài hơn và ít lượt sai hơn.",
+    "lib.arcade.livesLeft": "Còn {n} lượt sai",
+    "lib.arcade.yourAnswer": "Câu trả lời của bạn",
+    "lib.arcade.skip": "Bỏ qua",
+    "lib.arcade.note.scramble": "Sắp xếp các chữ cái bị xáo trộn thành một từ tiếng Anh có nghĩa và gõ vào ô trả lời. Mỗi cấp có 5 từ, giải đúng ít nhất 4 từ trước khi hết giờ mỗi từ để qua cấp. Gợi ý sẽ cho biết chữ cái đầu.",
+    "lib.arcade.notThis": "Chưa đúng, thử lại nhé.",
+    "lib.arcade.startsWith": "Chữ đầu tiên: {c}"
   },
   "pages": {
     "home": {
@@ -1561,6 +1576,26 @@
     "dot-chase": {
       "name": "Ăn chấm",
       "desc": "Ăn hết chấm trong mê cung, tránh ma đuổi theo; 10 cấp, thêm ma và ma thông minh dần."
+    },
+    "kakuro": {
+      "name": "Kakuro (Ô số tổng)",
+      "desc": "Điền số 1–9 vào ô trắng sao cho tổng từng dãy bằng gợi ý và không lặp số; 10 cấp, lưới từ 5x5 đến 9x9."
+    },
+    "kenken": {
+      "name": "KenKen (Ô số phép tính)",
+      "desc": "Điền số vào lưới không lặp ở hàng và cột, mỗi khung cho ra đúng kết quả của phép tính; 10 cấp, lưới từ 3x3 đến 6x6."
+    },
+    "word-guess": {
+      "name": "Đoán từ (kiểu Wordle)",
+      "desc": "Đoán từ tiếng Anh bí mật qua ô xanh, vàng, xám; 10 cấp, từ dài 4–6 chữ và ít lượt hơn."
+    },
+    "hangman": {
+      "name": "Hangman (Người treo cổ)",
+      "desc": "Đoán từ tiếng Anh từng chữ cái trước khi hết lượt sai; 10 cấp, từ dài hơn và ít lượt sai hơn."
+    },
+    "word-scramble": {
+      "name": "Xếp chữ (Anagram)",
+      "desc": "Sắp xếp chữ cái bị xáo trộn thành từ tiếng Anh trước khi hết giờ; 10 cấp, 5 từ mỗi cấp."
     }
   },
   "s": {

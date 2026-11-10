@@ -1730,3 +1730,27 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .ce-mid{flex-direction:row;align-items:center;gap:18px}.ce-draw{position:relative;cursor:pointer}.ce-draw b{position:absolute;inset:auto 0 4px;text-align:center;color:#fff}.ce-draw.can{outline:3px solid #ffd43b;border-radius:6px}
 .ce-suit{font-size:2.4rem;color:#fff;background:#212529;border-radius:50%;width:54px;height:54px;display:grid;place-items:center}.ce-suit.red{color:#ff6b6b}
 .ce-hand .cd.playable{outline:3px solid #ffd43b;cursor:pointer;transform:translateY(-6px)}
+
+/* ── Kakuro / KenKen ── */
+.np-grid{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:0;width:min(100%,520px);margin:0 auto;border:2px solid #343a40;background:#fff;user-select:none}
+.np-cell{position:relative;aspect-ratio:1;border:1px solid #ced4da;background:#fff;padding:0;font:600 clamp(14px,3.4vw,26px)/1 inherit;color:#1c2b4a;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.np-cell b{font-weight:600}
+.np-cell.sel{background:#d0ebff}.np-cell.bad{background:#ffe3e3;color:#c92a2a}.np-cell.hint{color:#1971c2}
+.np-clue{background:linear-gradient(to top right,transparent calc(50% - 1px),#495057 50%,transparent calc(50% + 1px)),#e9ecef;cursor:default}
+.np-clue i{position:absolute;font:700 clamp(8px,1.9vw,13px)/1 inherit;font-style:normal;color:#343a40}
+.np-clue .np-r{top:12%;right:10%}.np-clue .np-d{bottom:10%;left:10%}
+.np-tag{position:absolute;top:3px;left:4px;font:700 clamp(8px,1.8vw,12px)/1 inherit;font-style:normal;color:#495057}
+.np-cell.cl{border-left:2.5px solid #212529}.np-cell.cr{border-right:2.5px solid #212529}.np-cell.ct{border-top:2.5px solid #212529}.np-cell.cb{border-bottom:2.5px solid #212529}
+
+/* ── Game chữ ── */
+.wg-board{display:grid;gap:6px;justify-content:center;margin:8px 0}
+.wg-row{display:flex;gap:6px;justify-content:center}
+.wg-cell{width:clamp(38px,9vw,54px);aspect-ratio:1;border:2px solid #ced4da;border-radius:6px;display:flex;align-items:center;justify-content:center;font:700 clamp(18px,4.5vw,28px) inherit;color:#1c2b4a;background:#fff}
+.wg-cell.f{border-color:#868e96}.wg-cell.g{background:#40c057;border-color:#40c057;color:#fff}.wg-cell.y{background:#fab005;border-color:#fab005;color:#fff}.wg-cell.n{background:#868e96;border-color:#868e96;color:#fff}
+.wg-kbd{display:grid;gap:6px;margin:10px auto 0;max-width:480px}.wg-krow{display:flex;gap:5px;justify-content:center}
+.wg-key{min-width:clamp(26px,7.4vw,40px);height:44px;padding:0 6px;border:0;border-radius:6px;background:#dee2e6;font:600 15px inherit;text-transform:uppercase;cursor:pointer;color:#1c2b4a}
+.wg-key.wide{min-width:clamp(40px,11vw,60px)}.wg-key.g{background:#40c057;color:#fff}.wg-key.y{background:#fab005;color:#fff}.wg-key.n{background:#868e96;color:#fff}.wg-key:disabled{opacity:.55;cursor:default}
+.hg-svg{display:block;margin:6px auto;width:min(100%,230px);height:auto}
+.hg-word{display:flex;gap:8px;justify-content:center;margin:10px 0}.hg-word span{width:clamp(26px,7vw,38px);height:clamp(34px,8vw,46px);border-bottom:3px solid #343a40;text-align:center;font:700 clamp(22px,6vw,32px)/1.4 inherit;color:#1c2b4a}
+.sc-tiles{display:flex;gap:8px;justify-content:center;margin:14px 0;flex-wrap:wrap}.sc-tiles span{width:clamp(38px,10vw,54px);aspect-ratio:1;border-radius:8px;background:#4263eb;color:#fff;display:flex;align-items:center;justify-content:center;font:700 clamp(20px,5vw,30px) inherit;box-shadow:0 3px 0 #364fc7}
+.sc-form{display:flex;gap:8px;justify-content:center}.sc-form input{width:min(60%,220px);padding:10px;font-size:20px;border:2px solid #ced4da;border-radius:8px;text-align:center;text-transform:lowercase}
