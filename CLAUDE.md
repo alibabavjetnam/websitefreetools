@@ -215,3 +215,9 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 
 ## Giao diện game v2 (12/11/2026)
 - Cuối `src/styles-extra.css` (mục "Giao diện game v2"): `.game-wrap` là container (`gw`); khung ≤760px thì `.game-main` xếp cột đơn (bàn trên, nút/hướng dẫn dưới) để bàn không đè lên cột phải. Bảng màu theo game cùng loại: bài (mặt trắng, đỏ #c8102e, lưng xanh cổ điển, nỉ xanh có đổ bóng), Sudoku (chọn xanh nhạt, số đề đen xám, số người chơi xanh), Dò mìn (ô nổi xám + số màu Windows), cờ vua (gỗ Lichess, nước cuối vàng lục). Không đổi chuỗi chữ nên không cần dịch lại. Đã quét 95 game ở 900px và 390px: không lỗi JS, không tràn ngang
+
+## Cờ úp bản ẩn `/hidden/co-up/` (12/11/2026)
+- Bản sao của `co-up`, chỉ dùng cờ úp: `hidden/co-up/index.html` → `src/pages/coup-x.ts` → `mountCoupX` trong `src/lib/coupx-ui.ts` (copy từ `xiangqi-ui.ts`). `noindex`, không Analytics, không dịch, có trong `hidden/ls/index.html`
+- Thêm `?cheat=1` vào URL thì hiện khung gian lận (chỉ phía người mở link): (1) "Máy đánh thay" = tự đi bằng `darkAiMove(pos, 10)` (cấp cao nhất) mỗi khi tới lượt; (2) "Đi tự do" = chọn quân mình rồi bấm ô bất kỳ, ăn bất cứ quân nào (trừ quân mình), bỏ qua luật. Ăn Tướng thì kết thúc ván (`kingResult`/`endByKing`)
+- Online dùng sảnh riêng `co-up-x` (không lẫn bàn công khai của `co-up` thường). Nước tự do gửi `{f,t,c:1}`; `applyRemote` kiểm f,t trong 0..89, quân đi đúng bên, không ăn Tướng của chính mình. Người không có `?cheat=1` vẫn nhận nước tự do bình thường
+- Đã kiểm thử bằng Playwright: chế độ với máy (ăn Tướng thắng, tự đánh thắng) và online hai trình duyệt qua broker aedes cục bộ (nước tự do + tự đánh sang được bên kia, không lỗi JS)

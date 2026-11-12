@@ -35,7 +35,7 @@ export interface OnlineStart {
 }
 
 export interface OnlineGameDef {
-  game: 'chess' | 'xiangqi' | 'co-up' | 'go';
+  game: 'chess' | 'xiangqi' | 'co-up' | 'co-up-x' | 'go';
   /** Tên màu: [bên đi trước, bên đi sau] */
   colorNames: () => [string, string];
   /** Chủ bàn tạo dữ liệu đầu ván (cách xáo quân cờ úp…); null nếu không cần */
