@@ -1863,3 +1863,49 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .game-main.tg-main, .game-wrap:fullscreen .game-main.tg-main, .game-wrap.is-pseudo-full .game-main.tg-main { grid-template-columns: minmax(0, 1fr); }
 .tg-main .game-side { flex-direction: row; flex-wrap: wrap; align-items: center; }
 .tg-main .game-side .note { flex-basis: 100%; }
+
+/* ===== Giao diện game v2 (12/11/2026): bố cục theo bề rộng khung, bảng màu theo game cùng loại ===== */
+/* Khung hẹp (laptop có menu trái, máy tính bảng): xếp cột đơn để bàn không đè lên phần nút/hướng dẫn */
+.game-wrap { container-type: inline-size; container-name: gw; }
+@container gw (max-width: 760px) {
+  .game-main { grid-template-columns: minmax(0, 1fr) !important; }
+  .game-side { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .game-side > :not(.btn) { flex: 1 1 100%; min-width: 0; }
+  .game-board-col { overflow-x: auto; overflow-y: visible; }
+}
+.game-board-col { max-width: 100%; }
+
+/* Bài: mặt bài trắng, cơ/rô đỏ thẫm, bích/chuồn gần đen; lưng bài xanh cổ điển; nỉ xanh có đổ bóng giữa bàn */
+.cd.up { background: #fdfdfc; color: #1a1a1a; border: 1px solid #c4cad3; box-shadow: 0 1px 2px rgba(0,0,0,.4); }
+.cd.up.red { color: #c8102e; }
+.cd.down { background: repeating-linear-gradient(45deg, #17469e 0 5px, #2062c9 5px 10px); border: 3px solid #fff; }
+.sol-board, .dm-board, .bc-table { background: radial-gradient(ellipse at 50% 30%, #3aa862 0%, #1f7a46 55%, #14613a 100%); box-shadow: inset 0 0 0 3px rgba(0,0,0,.18), inset 0 0 40px rgba(0,0,0,.25); }
+.bc-table { box-shadow: inset 0 0 0 3px rgba(0,0,0,.18); }
+
+/* Sudoku: nền trắng, ô đang chọn xanh nhạt, hàng/cột/khối cùng ô chọn xám xanh, số đề bài đen xám, số người chơi xanh dương */
+.sd-cell { color: #2f5fb3; background: #fff; }
+.sd-cell.given { color: #263445; background: #fff; }
+.sd-cell.peer { background: #e9eff6; }
+.sd-cell.given.peer { background: #e9eff6; }
+.sd-cell.same { background: #c9d9ec; }
+.sd-cell.sel { background: #bbdefb; box-shadow: inset 0 0 0 2px #2f6fe0; }
+.sd-cell.wrong { background: #f9d3d8; color: #d6293e; }
+.sudoku { border-width: 2px; border-color: #263445; }
+.sd-cell.bl { border-left-color: #263445; } .sd-cell.bt { border-top-color: #263445; }
+
+/* Dò mìn: kiểu Windows cổ điển (ô nổi xám, số xanh/lục/đỏ/xanh đậm/nâu/lam nhạt) */
+.ms-board { background: #7b7b7b; gap: 1px; padding: 3px; border-radius: 2px; box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #7b7b7b; }
+.ms-cell { border-radius: 0; background: #c0c0c0; box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #808080; }
+.ms-cell.open { background: #bdbdbd; box-shadow: inset 1px 1px 0 #808080; }
+.ms-cell.n1 { color: #0000ff; } .ms-cell.n2 { color: #008200; } .ms-cell.n3 { color: #ff0000; } .ms-cell.n4 { color: #000084; }
+.ms-cell.n5 { color: #840000; } .ms-cell.n6 { color: #008284; } .ms-cell.n7 { color: #000; } .ms-cell.n8 { color: #808080; }
+.ms-cell.boom { background: #ff0000; }
+
+/* Cờ vua: màu gỗ kiểu Lichess, nước đi cuối vàng lục, quân chọn xanh lục */
+.ch-sq.last { box-shadow: inset 0 0 0 100px rgba(155, 199, 0, .41); }
+.ch-sq.sel { box-shadow: inset 0 0 0 100px rgba(20, 85, 30, .5); }
+.ch-sq.dot::after { background: rgba(20, 85, 30, .5); }
+.ch-sq.cap::after { border-color: rgba(20, 85, 30, .5); }
+.chess-board { border: 4px solid #5b3f26; border-radius: 3px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+.game-modes { flex-wrap: wrap; }
+@media (max-width: 480px) { .game-modes button { padding: 8px 12px; font-size: 14px; } }

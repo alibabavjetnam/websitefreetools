@@ -212,3 +212,6 @@ Tên miền: https://websitefreetools.com (file `CNAME`). Chi tiết danh sách 
 
 ## Game đợt 13 (10/11/2026) — Tangram (game cuối danh sách)
 - `tangram`: 7 mảnh chuẩn (hình vuông cạnh 4), hình bóng sinh bằng cách ghép cạnh-với-cạnh nên chắc chắn xếp được (`genSolution`, `src/calc/tangram.ts`); cấp 1-10 dùng 4,4,5,5,6,6,7,7,7,7 mảnh, cấp 1-4 có viền gợi ý (nút Gợi ý bật/tắt). Kéo thả SVG, bấm nhẹ để xoay 45°, nút Xoay/Lật, tự hít vào đỉnh gần; thắng khi sai lệch diện tích < 3,5%. Giao diện `src/lib/tangram-ui.ts` (CSS `tg-*`). Đã dịch đủ 100 ngôn ngữ. Tổng site: 178 công cụ. Danh sách 100 game đã làm hết (trừ đoán quốc kỳ, đố vui, Mahjong ghép cặp đã chọn không làm / có Nối cặp `tile-connect`)
+
+## Giao diện game v2 (12/11/2026)
+- Cuối `src/styles-extra.css` (mục "Giao diện game v2"): `.game-wrap` là container (`gw`); khung ≤760px thì `.game-main` xếp cột đơn (bàn trên, nút/hướng dẫn dưới) để bàn không đè lên cột phải. Bảng màu theo game cùng loại: bài (mặt trắng, đỏ #c8102e, lưng xanh cổ điển, nỉ xanh có đổ bóng), Sudoku (chọn xanh nhạt, số đề đen xám, số người chơi xanh), Dò mìn (ô nổi xám + số màu Windows), cờ vua (gỗ Lichess, nước cuối vàng lục). Không đổi chuỗi chữ nên không cần dịch lại. Đã quét 95 game ở 900px và 390px: không lỗi JS, không tràn ngang
