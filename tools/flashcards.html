@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thẻ ghi nhớ Flashcard online học từ vựng — WFTools</title>
+    <meta name="description" content="Tạo bộ flashcard học từ vựng và kiến thức, ôn tập lặp lại ngắt quãng theo hộp Leitner, làm trắc nghiệm, nghe phát âm, nhập xuất CSV. Miễn phí, không cần đăng ký." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Thẻ ghi nhớ Flashcard</h1>
+        <p class="lead">Tạo thẻ, lật thẻ để ôn tập và làm trắc nghiệm để học từ vựng, kiến thức nhanh hơn.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách học bằng thẻ ghi nhớ</h2>
+        <p data-i18n="seo.how1">Tạo bộ thẻ bằng cách dán nhiều dòng dạng "mặt trước - mặt sau" hoặc thêm từng thẻ. Bạn cũng có thể nhập từ file CSV và xuất lại để sao lưu hoặc dùng ở nơi khác.</p>
+        <p data-i18n="seo.how2">Khi học, bấm vào thẻ để lật xem đáp án rồi chọn Đã nhớ hoặc Chưa nhớ. Thẻ nhớ đúng được chuyển sang hộp cao hơn và hẹn lần ôn xa hơn, thẻ quên sẽ quay về hộp đầu để ôn lại ngay.</p>
+        <p data-i18n="seo.how3">Chế độ trắc nghiệm tạo câu hỏi bốn đáp án từ chính bộ thẻ của bạn. Nút phát âm đọc to nội dung thẻ bằng giọng của trình duyệt, chọn được ngôn ngữ.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Flashcard giúp học từ vựng thế nào?</summary><p data-i18n="faq.a1">Việc tự nhớ lại đáp án trước khi lật thẻ giúp ghi nhớ lâu hơn so với chỉ đọc lại. Ôn theo khoảng cách tăng dần giúp nhớ bền với ít thời gian hơn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Hộp Leitner là gì?</summary><p data-i18n="faq.a2">Là cách chia thẻ vào các hộp. Thẻ nhớ đúng được chuyển lên hộp cao và ôn thưa dần, 1, 2, 4, 8, 16 ngày; thẻ quên về hộp đầu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Làm sao nhập danh sách từ có sẵn?</summary><p data-i18n="faq.a3">Dán nhiều dòng, mỗi dòng gồm hai phần ngăn cách bằng dấu gạch ngang, dấu hai chấm, dấu chấm phẩy hoặc phím Tab. Hoặc chọn file CSV hai cột.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Dữ liệu thẻ được lưu ở đâu?</summary><p data-i18n="faq.a4">Lưu trong trình duyệt của bạn, không gửi lên máy chủ. Hãy xuất CSV để sao lưu trước khi xoá dữ liệu trình duyệt hay đổi máy.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Nghe phát âm hoạt động thế nào?</summary><p data-i18n="faq.a5">Công cụ dùng giọng đọc có sẵn của trình duyệt hoặc hệ điều hành. Chọn ngôn ngữ của bộ thẻ để giọng đọc đúng; một số ngôn ngữ cần máy có cài giọng đọc tương ứng.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/flashcards.ts"></script>
+  </body>
+</html>

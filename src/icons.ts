@@ -50,6 +50,10 @@ const PATHS: Record<string, string> = {
 
   // ngôi nhà và đồng xu
   loan: '<path d="M3 11l9-7 9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/>',
+  'time-calc': '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/>',
+  'todo-pomodoro': '<circle cx="12" cy="13.5" r="7.5"/><path d="M12 6c0-2 1-3 3-3"/><path d="M9 13.5l2 2 4-4"/>',
+  'flashcards': '<rect x="3" y="6" width="14" height="11" rx="2"/><path d="M7 6V4.5A1.5 1.5 0 0 1 8.5 3H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M7 11h6M7 14h4"/>',
+  'media-trim-convert': '<circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M8 8.5L20 18M8 15.5L20 6"/>',
   'pit-tax': '<path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 17l6-6"/><circle cx="9.5" cy="11.5" r="1"/><circle cx="14.5" cy="16.5" r="1"/>',
   'savings-bhxh': '<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/>',
   // cột tăng dần

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Việc cần làm và đồng hồ Pomodoro online — WFTools</title>
+    <meta name="description" content="Lập danh sách việc cần làm có ưu tiên, hạn chót và dùng đồng hồ Pomodoro 25 phút tập trung, nghỉ ngắn, nghỉ dài. Miễn phí, không cần đăng ký." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Việc cần làm và Pomodoro</h1>
+        <p class="lead">Ghi việc cần làm, chọn việc đang làm và bấm giờ Pomodoro để tập trung từng đợt.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách dùng danh sách việc cần làm và Pomodoro</h2>
+        <p data-i18n="seo.how1">Thêm việc cần làm, chọn mức ưu tiên và hạn chót nếu cần. Việc gấp và việc quá hạn được đưa lên đầu; bạn có thể lọc theo việc chưa xong, đã xong hoặc đến hạn hôm nay.</p>
+        <p data-i18n="seo.how2">Phương pháp Pomodoro chia thời gian thành các đợt làm việc tập trung, mặc định 25 phút, xen kẽ nghỉ ngắn 5 phút. Sau 4 đợt thì nghỉ dài 15 phút. Bạn có thể đổi toàn bộ số phút này.</p>
+        <p data-i18n="seo.how3">Chọn một việc làm việc đang làm, mỗi đợt tập trung hoàn thành sẽ được ghi cho việc đó. Dữ liệu lưu ngay trong trình duyệt của bạn và không gửi đi đâu.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Pomodoro là gì?</summary><p data-i18n="faq.a1">Là phương pháp quản lý thời gian: làm việc tập trung trong 25 phút rồi nghỉ 5 phút. Sau bốn đợt thì nghỉ dài hơn. Tên gọi lấy từ chiếc đồng hồ hình quả cà chua.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Tôi có đổi được thời gian mỗi đợt không?</summary><p data-i18n="faq.a2">Được. Bạn chỉnh số phút làm việc, nghỉ ngắn, nghỉ dài và số đợt trước khi nghỉ dài; cài đặt được nhớ cho lần sau.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Đóng tab thì đồng hồ có chạy tiếp không?</summary><p data-i18n="faq.a3">Đồng hồ cần trang đang mở để báo chuông. Trang tính giờ theo đồng hồ hệ thống nên không bị chậm khi bạn chuyển sang tab khác.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Danh sách việc lưu ở đâu?</summary><p data-i18n="faq.a4">Lưu trong bộ nhớ trình duyệt trên thiết bị này, không gửi lên máy chủ. Xoá dữ liệu trình duyệt hoặc đổi thiết bị thì danh sách sẽ không còn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có thông báo khi hết giờ không?</summary><p data-i18n="faq.a5">Có tiếng chuông ngắn và thời gian còn lại hiện trên tiêu đề tab để bạn theo dõi khi đang làm việc ở cửa sổ khác.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/todo-pomodoro.ts"></script>
+  </body>
+</html>

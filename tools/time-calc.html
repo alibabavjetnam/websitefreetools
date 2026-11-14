@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máy tính thời gian, giờ làm, Unix và âm lịch — WFTools</title>
+    <meta name="description" content="Cộng trừ giờ phút giây, tính giờ làm và tiền công, đổi Unix timestamp, đổi dương lịch sang âm lịch kèm Can Chi. Miễn phí, chạy trên trình duyệt." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Máy tính thời gian, giờ làm và âm lịch</h1>
+        <p class="lead">Cộng trừ giờ phút giây, tính giờ làm việc, đổi Unix timestamp và xem ngày âm lịch.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách tính thời gian, giờ làm việc và đổi lịch</h2>
+        <p data-i18n="seo.how1">Tab Cộng trừ thời lượng cho phép nhập nhiều khoảng thời gian dạng giờ:phút:giây rồi cộng hoặc trừ, ví dụ 1:30:00 + 0:45:30. Kết quả hiện theo giờ, phút, giây, cũng như tổng số phút và số giờ thập phân.</p>
+        <p data-i18n="seo.how2">Tab Giờ làm việc tính thời gian giữa giờ vào và giờ ra, tự cộng 24 giờ khi ca làm qua nửa đêm, trừ giờ nghỉ và đổi sang số giờ thập phân để nhân với mức lương theo giờ.</p>
+        <p data-i18n="seo.how3">Unix timestamp là số giây (hoặc mili giây) tính từ 00:00 UTC ngày 1/1/1970. Âm lịch được đổi theo thuật toán thiên văn cho múi giờ Việt Nam (UTC+7), có tháng nhuận và Can Chi của năm và ngày.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Làm sao cộng nhiều khoảng thời gian giờ phút giây?</summary><p data-i18n="faq.a1">Nhập từng khoảng theo dạng giờ:phút:giây hoặc ghi 1h 30m, chọn cộng hoặc trừ, rồi bấm thêm dòng. Kết quả tổng cập nhật ngay và có cả số giờ thập phân.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Ca làm việc qua đêm được tính thế nào?</summary><p data-i18n="faq.a2">Nếu giờ ra nhỏ hơn giờ vào, công cụ hiểu là ca kết thúc vào ngày hôm sau và cộng thêm 24 giờ, rồi trừ phần nghỉ.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Unix timestamp là gì và có mấy dạng?</summary><p data-i18n="faq.a3">Đó là số giây tính từ 1/1/1970 theo giờ UTC. Có dạng 10 chữ số (giây) và dạng 13 chữ số (mili giây); công cụ tự nhận ra dạng bạn dán vào.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Đổi dương lịch sang âm lịch có chính xác không?</summary><p data-i18n="faq.a4">Công cụ dùng thuật toán thiên văn tính ngày trăng mới và tiết khí theo múi giờ UTC+7 của Việt Nam, khớp với lịch vạn niên phổ biến, gồm cả tháng nhuận.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có đổi ngược từ âm lịch sang dương lịch được không?</summary><p data-i18n="faq.a5">Có. Nhập ngày, tháng, năm âm lịch và đánh dấu tháng nhuận nếu cần, công cụ trả về ngày dương lịch tương ứng.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/time-calc.ts"></script>
+  </body>
+</html>

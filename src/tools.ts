@@ -134,7 +134,9 @@ export const TOOLS: ToolInfo[] = [
   tool('unit-convert', 'calc', 'Đổi đơn vị đo', 'Đổi độ dài, khối lượng, nhiệt độ, diện tích, thể tích, tốc độ, thời gian, dữ liệu, áp suất, năng lượng.'),
   tool('age-calc', 'time', 'Tính tuổi', 'Tính tuổi chính xác theo năm, tháng, ngày từ ngày sinh; số ngày đã sống, ngày sinh nhật tiếp theo, cung hoàng đạo.'),
   tool('date-calc', 'time', 'Cộng trừ ngày tháng', 'Đếm số ngày giữa hai ngày, cộng hoặc trừ ngày, tuần, tháng, năm vào một ngày; xem thứ trong tuần.'),
+  tool('time-calc', 'time', 'Máy tính thời gian, giờ làm và âm lịch', 'Cộng trừ thời lượng giờ phút giây, tính giờ làm và tiền công, đổi Unix timestamp, chuyển đổi ngày dương lịch sang âm lịch kèm Can Chi.'),
   tool('gpa', 'edu', 'Tính điểm GPA', 'Tính điểm trung bình học kỳ, tích luỹ theo tín chỉ; thang 4, thang 10 và quy đổi điểm chữ A, B, C, D.'),
+  tool('flashcards', 'edu', 'Thẻ ghi nhớ Flashcard', 'Tạo bộ thẻ ghi nhớ học từ vựng và kiến thức, ôn theo hộp Leitner, làm trắc nghiệm, nghe phát âm và nhập xuất CSV. Lưu trên trình duyệt.'),
   tool('due-date', 'health', 'Tính ngày dự sinh', 'Tính ngày dự sinh và tuổi thai theo kỳ kinh cuối, ngày thụ thai hoặc siêu âm; xem các mốc khám thai quan trọng.'),
   tool('spin-wheel', 'entertainment', 'Vòng quay may mắn', 'Tạo vòng quay với tên, phần thưởng tuỳ ý; quay ngẫu nhiên công bằng, loại người đã trúng, toàn màn hình.'),
   tool('random-number', 'entertainment', 'Quay số ngẫu nhiên', 'Tạo số ngẫu nhiên trong khoảng tuỳ chọn, nhiều số cùng lúc, không trùng lặp; dùng cho bốc thăm, xổ số vui.'),
@@ -237,6 +239,7 @@ export const TOOLS: ToolInfo[] = [
   tool('screen-recorder', 'device', 'Quay màn hình', 'Quay màn hình máy tính, cửa sổ hoặc tab kèm âm thanh và micro, không cần cài phần mềm, tải video về máy.'),
   tool('video-compress', 'media', 'Nén video', 'Giảm dung lượng video MP4, MOV, WebM để gửi qua Zalo, email, đăng mạng; chọn độ phân giải và chất lượng.'),
   tool('video-to-mp3', 'media', 'Tách MP3 từ video', 'Lấy âm thanh từ video MP4, MOV, WebM thành file MP3, chọn chất lượng và cắt đoạn cần lấy.'),
+  tool('media-trim-convert', 'media', 'Cắt và đổi định dạng âm thanh, video', 'Cắt đoạn âm thanh hoặc video theo giờ phút giây, đổi định dạng sang MP4, WebM, MP3, M4A, WAV, OGG hoặc tạo ảnh GIF. Xử lý ngay trên trình duyệt.'),
   tool('guitar-tuner', 'media', 'Lên dây đàn guitar', 'Chỉnh dây guitar, ukulele, bass bằng micro: hiện nốt, độ lệch và kim chỉ chính xác; có âm mẫu từng dây.'),
   tool('excel-word-fill', 'excel', 'Điền nội dung Word từ Excel', 'Trích nội dung Excel đưa vào các đánh dấu trong file Word, tự tô đỏ dòng đề mục (1., 2., I., II.).'),
   tool('excel-cell-merge', 'excel', 'Gộp ô Excel nhiều sheet / nhiều file', 'Gộp nội dung cùng vị trí ô của nhiều sheet hoặc nhiều file Excel thành một file, báo những ô có dữ liệu từ 2 nguồn trở lên.'),
@@ -246,4 +249,5 @@ export const TOOLS: ToolInfo[] = [
   tool('signature', 'business', 'Tạo chữ ký tay', 'Vẽ chữ ký bằng chuột, ngón tay hoặc gõ tên với kiểu chữ ký đẹp; tải PNG nền trong suốt để chèn vào tài liệu.'),
   tool('logo-maker', 'marketing', 'Tạo logo đơn giản', 'Tạo logo từ biểu tượng, tên thương hiệu, khẩu hiệu; chọn phông, màu, bố cục và tải SVG, PNG.'),
   tool('notepad', 'life', 'Sổ ghi chú online', 'Ghi chú nhanh tự động lưu trên trình duyệt, nhiều ghi chú, tìm kiếm, đếm chữ, tải về file TXT.'),
+  tool('todo-pomodoro', 'life', 'Việc cần làm và Pomodoro', 'Danh sách việc cần làm có mức ưu tiên và hạn chót, kèm đồng hồ Pomodoro 25 phút tập trung để làm từng việc. Lưu ngay trên trình duyệt.'),
 ];
