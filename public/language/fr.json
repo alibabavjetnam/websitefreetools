@@ -830,727 +830,1083 @@
   "tools": {
     "image-convert": {
       "name": "Compresser une image",
-      "desc": "Réduisez le poids des images, même par lots, pour un envoi plus rapide sur le web ou par e-mail."
+      "desc": "Réduisez le poids des images, même par lots, pour un envoi plus rapide sur le web ou par e-mail.",
+      "title": "Compresser des images en ligne gratuitement — WFTools",
+      "metaDescription": "Réduisez le poids d'une ou de plusieurs images à la fois pour le web ou l'e-mail. Outil gratuit qui fonctionne dans votre navigateur, sans envoi de fichiers."
     },
     "image-format": {
       "name": "Convertir le format d'une image",
-      "desc": "Convertissez des images entre JPG, PNG, WebP, AVIF, BMP et ICO (favicon) pour le web, les applications ou l'archivage."
+      "desc": "Convertissez des images entre JPG, PNG, WebP, AVIF, BMP et ICO (favicon) pour le web, les applications ou l'archivage.",
+      "title": "Convertir le format d'image en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez vos images entre JPG, PNG, WebP, AVIF, BMP et ICO (favicon) pour sites, applis ou archivage."
     },
     "image-base64": {
       "name": "Image vers Base64",
-      "desc": "Transformez des images en chaînes Base64 à intégrer dans du HTML, du CSS ou du code, et reconvertissez le Base64 en images."
+      "desc": "Transformez des images en chaînes Base64 à intégrer dans du HTML, du CSS ou du code, et reconvertissez le Base64 en images.",
+      "title": "Image en Base64 en ligne gratuit — WFTools",
+      "metaDescription": "Transformez des images en chaînes Base64 à intégrer dans du HTML, du CSS ou du code, et décodez le Base64 en image. Gratuit, dans votre navigateur."
     },
     "bg-remove": {
       "name": "Supprimer l'arrière-plan d'une image",
-      "desc": "Supprimez instantanément un fond blanc ou uni sur vos photos de produits, logos et avatars, directement sur votre appareil."
+      "desc": "Supprimez instantanément un fond blanc ou uni sur vos photos de produits, logos et avatars, directement sur votre appareil.",
+      "title": "Supprimer l'arrière-plan d'une image gratuit — WFTools",
+      "metaDescription": "Supprimez un fond blanc, uni ou quelconque (IA, sur votre appareil) sur vos photos de produits, logos, portraits ou animaux et téléchargez un PNG transparent."
     },
     "watermark": {
       "name": "Ajouter un filigrane aux images",
-      "desc": "Ajoutez un texte, un logo ou une mention de copyright à une ou plusieurs images à la fois."
+      "desc": "Ajoutez un texte, un logo ou une mention de copyright à une ou plusieurs images à la fois.",
+      "title": "Ajouter un filigrane aux images gratuit — WFTools",
+      "metaDescription": "Ajoutez un texte, un logo ou une mention de copyright à une ou plusieurs images à la fois. Outil gratuit dans votre navigateur, sans envoi de fichiers."
     },
     "pdf-merge": {
       "name": "Fusionner et diviser des PDF",
-      "desc": "Regroupez plusieurs PDF en un seul, extrayez les pages dont vous avez besoin ou divisez un PDF page par page."
+      "desc": "Regroupez plusieurs PDF en un seul, extrayez les pages dont vous avez besoin ou divisez un PDF page par page.",
+      "title": "Fusionner et diviser des PDF en ligne gratuit — WFTools",
+      "metaDescription": "Fusionnez plusieurs PDF en un seul, extrayez les pages utiles ou découpez un PDF page par page. Gratuit, dans votre navigateur, sans envoi de fichiers."
     },
     "pptx-pdf": {
       "name": "PowerPoint ↔ PDF",
-      "desc": "Convertissez des diapositives PowerPoint (.pptx) en PDF et transformez des PDF en PowerPoint."
+      "desc": "Convertissez des diapositives PowerPoint (.pptx) en PDF et transformez des PDF en PowerPoint.",
+      "title": "PowerPoint en PDF et PDF en PowerPoint gratuit — WFTools",
+      "metaDescription": "Convertissez vos présentations PowerPoint (.pptx) en PDF et transformez vos PDF en PowerPoint. Outil gratuit dans votre navigateur, sans envoi de fichiers."
     },
     "file-diff": {
       "name": "Comparer deux fichiers",
-      "desc": "Trouvez les différences entre deux textes : TXT, Word, HTML ou PDF avec couche de texte. Les parties ajoutées, supprimées et modifiées sont surlignées."
+      "desc": "Trouvez les différences entre deux textes : TXT, Word, HTML ou PDF avec couche de texte. Les parties ajoutées, supprimées et modifiées sont surlignées.",
+      "title": "Comparer deux fichiers en ligne gratuitement — WFTools",
+      "metaDescription": "Repérez les différences entre deux textes : TXT, Word, HTML ou PDF avec texte. Ajouts, suppressions et modifications sont surlignés."
     },
     "text-analysis": {
       "name": "Analyse de texte",
-      "desc": "Comptez les mots, caractères, phrases et paragraphes, estimez le temps de lecture et la densité des mots-clés d'un texte ou d'un fichier TXT, Word ou PDF."
+      "desc": "Comptez les mots, caractères, phrases et paragraphes, estimez le temps de lecture et la densité des mots-clés d'un texte ou d'un fichier TXT, Word ou PDF.",
+      "title": "Analyse de texte en ligne gratuite — WFTools",
+      "metaDescription": "Comptez mots, caractères, phrases et paragraphes, estimez le temps de lecture et la densité de mots-clés d'un texte, TXT, Word ou PDF."
     },
     "data-convert": {
       "name": "Convertir JSON, XML, CSV, Excel",
-      "desc": "Convertissez des données entre JSON, XML, CSV et Excel (.xlsx) avec un aperçu du tableau."
+      "desc": "Convertissez des données entre JSON, XML, CSV et Excel (.xlsx) avec un aperçu du tableau.",
+      "title": "Convertir JSON, XML, CSV et Excel gratuit — WFTools",
+      "metaDescription": "Convertissez des données entre JSON, XML, CSV et Excel (.xlsx) avec aperçu en tableau. Outil gratuit dans votre navigateur, sans envoi de fichiers."
     },
     "bmi-bmr": {
       "name": "Calculateur d'IMC et de métabolisme",
-      "desc": "Calculez l'indice de masse corporelle (IMC), le rapport taille-hanches et vos besoins caloriques (BMR, TDEE) selon l'âge, le sexe et le niveau d'activité."
+      "desc": "Calculez l'indice de masse corporelle (IMC), le rapport taille-hanches et vos besoins caloriques (BMR, TDEE) selon l'âge, le sexe et le niveau d'activité.",
+      "title": "Calculateur d'IMC et de métabolisme gratuit — WFTools",
+      "metaDescription": "Calculez votre indice de masse corporelle (IMC), le tour de taille sur tour de hanches et vos besoins en calories (MB, DET) selon l'âge, le sexe et l'activité."
     },
     "meal-calo": {
       "name": "Planificateur de repas et de calories",
-      "desc": "Planifiez vos repas selon un objectif calorique, consultez les calories des plats courants et équilibrez protéines, glucides et lipides."
+      "desc": "Planifiez vos repas selon un objectif calorique, consultez les calories des plats courants et équilibrez protéines, glucides et lipides.",
+      "title": "Planificateur de repas et de calories gratuit — WFTools",
+      "metaDescription": "Planifiez vos repas selon un objectif calorique, consultez les calories des plats courants et équilibrez protéines, glucides et lipides."
     },
     "water-tracker": {
       "name": "Suivi de la consommation d'eau",
-      "desc": "Fixez un objectif quotidien et notez ce que vous buvez, avec la progression et un historique sur plusieurs jours."
+      "desc": "Fixez un objectif quotidien et notez ce que vous buvez, avec la progression et un historique sur plusieurs jours.",
+      "title": "Suivi de l'eau bue par jour en ligne gratuit — WFTools",
+      "metaDescription": "Fixez un objectif quotidien et notez l'eau que vous buvez, avec progression et historique sur plusieurs jours. Outil gratuit dans votre navigateur, sans envoi."
     },
     "calo-burn": {
       "name": "Calories brûlées par activité",
-      "desc": "Estimez les calories brûlées selon le sport, l'activité, la durée et le poids grâce aux valeurs MET."
+      "desc": "Estimez les calories brûlées selon le sport, l'activité, la durée et le poids grâce aux valeurs MET.",
+      "title": "Calories brûlées par activité en ligne gratuit — WFTools",
+      "metaDescription": "Estimez les calories dépensées selon le sport, l'activité, la durée et votre poids grâce aux valeurs MET. Outil gratuit dans votre navigateur, sans envoi de données."
     },
     "cycle-track": {
       "name": "Suivi du cycle menstruel",
-      "desc": "Notez et prévoyez votre cycle menstruel, le jour d'ovulation et la fenêtre de fertilité. Les données restent uniquement sur votre appareil."
+      "desc": "Notez et prévoyez votre cycle menstruel, le jour d'ovulation et la fenêtre de fertilité. Les données restent uniquement sur votre appareil.",
+      "title": "Suivi du cycle menstruel en ligne gratuit — WFTools",
+      "metaDescription": "Notez et prévoyez votre cycle menstruel, le jour d'ovulation et la fenêtre de fertilité. Les données restent uniquement sur votre appareil."
     },
     "study-timetable": {
       "name": "Emploi du temps scolaire",
-      "desc": "Créez un emploi du temps hebdomadaire par créneau ; imprimez-le ou enregistrez-le pour le réutiliser chaque jour."
+      "desc": "Créez un emploi du temps hebdomadaire par créneau ; imprimez-le ou enregistrez-le pour le réutiliser chaque jour.",
+      "title": "Emploi du temps scolaire en ligne gratuit — WFTools",
+      "metaDescription": "Créez un emploi du temps hebdomadaire par créneau ; imprimez-le ou enregistrez-le pour le réutiliser chaque jour. Outil gratuit, fonctionne dans votre navigateur."
     },
     "quiz-bank": {
       "name": "Quiz et banque de questions",
-      "desc": "Créez une banque de QCM, mélangez les questions, passez un test d'entraînement noté et imprimez l'examen avec son corrigé."
+      "desc": "Créez une banque de QCM, mélangez les questions, passez un test d'entraînement noté et imprimez l'examen avec son corrigé.",
+      "title": "Créer des QCM et une banque de questions — WFTools",
+      "metaDescription": "Créez une banque de questions à choix multiples, mélangez-les, passez un test noté et imprimez le sujet avec son corrigé. Gratuit, dans votre navigateur."
     },
     "attendance": {
       "name": "Présence",
-      "desc": "Créez une liste de classe, faites l'appel à chaque séance et suivez absences et retards. Synchronisation possible avec Google Sheets."
+      "desc": "Créez une liste de classe, faites l'appel à chaque séance et suivez absences et retards. Synchronisation possible avec Google Sheets.",
+      "title": "Feuille de présence de classe en ligne gratuit — WFTools",
+      "metaDescription": "Créez la liste de la classe, faites l'appel par séance et suivez absences et retards. Synchronisation possible avec Google Sheets."
     },
     "mindmap": {
       "name": "Carte mentale et résumé",
-      "desc": "Dessinez des cartes mentales pour vos cours et résumez automatiquement un long texte en points clés."
+      "desc": "Dessinez des cartes mentales pour vos cours et résumez automatiquement un long texte en points clés.",
+      "title": "Carte mentale et résumé automatique gratuit — WFTools",
+      "metaDescription": "Dessinez des cartes mentales pour vos cours et résumez automatiquement de longs textes en idées clés. Outil gratuit qui fonctionne dans votre navigateur."
     },
     "teaching-pay": {
       "name": "Heures d'enseignement et paie",
-      "desc": "Notez vos séances d'enseignement, totalisez les heures et la paie selon le tarif, et exportez un relevé."
+      "desc": "Notez vos séances d'enseignement, totalisez les heures et la paie selon le tarif, et exportez un relevé.",
+      "title": "Heures de cours et rémunération gratuit — WFTools",
+      "metaDescription": "Notez vos séances, totalisez les heures et la rémunération selon le tarif, puis exportez un relevé. Outil gratuit dans votre navigateur, sans envoi de données."
     },
     "fullscreen-clock": {
       "name": "Horloge plein écran",
-      "desc": "Une grande horloge numérique plein écran avec chronomètre et compte à rebours, couleurs et police personnalisables, format 12/24 heures."
+      "desc": "Une grande horloge numérique plein écran avec chronomètre et compte à rebours, couleurs et police personnalisables, format 12/24 heures.",
+      "title": "Horloge plein écran en ligne gratuite — WFTools",
+      "metaDescription": "Une grande horloge numérique plein écran avec chronomètre et compte à rebours, couleurs et police personnalisables, format 12 ou 24 heures."
     },
     "countdown-video": {
       "name": "Créateur de vidéo de compte à rebours",
-      "desc": "Créez un compte à rebours personnalisable et téléchargez-le en vidéo à insérer dans vos montages."
+      "desc": "Créez un compte à rebours personnalisable et téléchargez-le en vidéo à insérer dans vos montages.",
+      "title": "Créer une vidéo de compte à rebours gratuit — WFTools",
+      "metaDescription": "Créez un compte à rebours personnalisable et téléchargez-le en vidéo pour l'insérer dans vos montages. Gratuit, sans envoi de fichiers."
     },
     "world-clock": {
       "name": "Horloge mondiale",
-      "desc": "Consultez l'heure actuelle dans plusieurs pays à la fois et comparez les décalages horaires."
+      "desc": "Consultez l'heure actuelle dans plusieurs pays à la fois et comparez les décalages horaires.",
+      "title": "Horloge mondiale en ligne gratuite — WFTools",
+      "metaDescription": "Consultez l'heure actuelle dans plusieurs pays à la fois et comparez les décalages horaires entre eux. Outil gratuit qui fonctionne dans votre navigateur."
     },
     "workdays": {
       "name": "Calculateur de jours ouvrés",
-      "desc": "Comptez les jours ouvrés entre deux dates, hors samedis, dimanches et jours fériés."
+      "desc": "Comptez les jours ouvrés entre deux dates, hors samedis, dimanches et jours fériés.",
+      "title": "Calcul des jours ouvrés en ligne gratuit — WFTools",
+      "metaDescription": "Comptez les jours ouvrés entre deux dates, hors samedis, dimanches et jours fériés. Outil gratuit dans votre navigateur, sans envoi de données."
     },
     "journal": {
       "name": "Journal en ligne",
-      "desc": "Tenez un journal quotidien enregistré en privé dans votre propre Google Sheet, lisible uniquement par vous."
+      "desc": "Tenez un journal quotidien enregistré en privé dans votre propre Google Sheet, lisible uniquement par vous.",
+      "title": "Journal intime en ligne gratuit — WFTools",
+      "metaDescription": "Écrivez un journal quotidien enregistré en privé dans votre propre Google Sheets, lisible par vous seul. Outil gratuit qui fonctionne dans votre navigateur."
     },
     "code-format": {
       "name": "Formater JS, HTML, CSS, JSON",
-      "desc": "Indentez et mettez en forme proprement du code JavaScript, HTML, CSS et JSON."
+      "desc": "Indentez et mettez en forme proprement du code JavaScript, HTML, CSS et JSON.",
+      "title": "Formater JS, HTML, CSS et JSON en ligne — WFTools",
+      "metaDescription": "Indentez et mettez en forme proprement du code JavaScript, HTML, CSS et JSON. Outil gratuit dans votre navigateur, sans envoi de votre code."
     },
     "code-check": {
       "name": "Vérificateur de syntaxe",
-      "desc": "Repérez les erreurs de syntaxe et de structure dans JavaScript, HTML, CSS et JSON, avec la ligne et la colonne."
+      "desc": "Repérez les erreurs de syntaxe et de structure dans JavaScript, HTML, CSS et JSON, avec la ligne et la colonne.",
+      "title": "Vérificateur de syntaxe en ligne gratuit — WFTools",
+      "metaDescription": "Repérez les erreurs de syntaxe et de structure en JavaScript, HTML, CSS et JSON, avec ligne et colonne. Gratuit, dans votre navigateur, sans envoi de code."
     },
     "js-obfuscate": {
       "name": "Obfuscateur JavaScript",
-      "desc": "Encodez les chaînes, renommez les variables et obfusquez du JavaScript pour le rendre difficile à lire et à copier."
+      "desc": "Encodez les chaînes, renommez les variables et obfusquez du JavaScript pour le rendre difficile à lire et à copier.",
+      "title": "Obfuscateur JavaScript en ligne gratuit — WFTools",
+      "metaDescription": "Encodez les chaînes, renommez les variables et obfusquez du JavaScript pour le rendre difficile à lire et à copier. Gratuit, dans votre navigateur, sans envoi."
     },
     "rsa-keys": {
       "name": "Clés RSA et chiffrement",
-      "desc": "Générez une paire de clés RSA (PEM), chiffrez un texte avec la clé publique et déchiffrez-le avec la clé privée, le tout sur votre appareil."
+      "desc": "Générez une paire de clés RSA (PEM), chiffrez un texte avec la clé publique et déchiffrez-le avec la clé privée, le tout sur votre appareil.",
+      "title": "Clés RSA et chiffrement en ligne gratuit — WFTools",
+      "metaDescription": "Générez une paire de clés RSA (PEM), chiffrez du texte avec la clé publique et déchiffrez-le avec la clé privée, sur votre appareil."
     },
     "text-to-html": {
       "name": "Texte enrichi vers HTML",
-      "desc": "Éditez visuellement avec gras, titres, listes, tableaux et liens, et obtenez un code HTML propre."
+      "desc": "Éditez visuellement avec gras, titres, listes, tableaux et liens, et obtenez un code HTML propre.",
+      "title": "Texte enrichi en HTML en ligne gratuit — WFTools",
+      "metaDescription": "Éditez visuellement avec gras, titres, listes, tableaux et liens, et obtenez un code HTML propre. Outil gratuit dans votre navigateur, sans envoi de données."
     },
     "inventory": {
       "name": "Stock et tarification",
-      "desc": "Fixez vos prix de vente d'après les commissions des places de marché, la publicité et la marge. Suivez les entrées et sorties de stock avec des alertes de stock bas."
+      "desc": "Fixez vos prix de vente d'après les commissions des places de marché, la publicité et la marge. Suivez les entrées et sorties de stock avec des alertes de stock bas.",
+      "title": "Stock et calcul des prix de vente gratuit — WFTools",
+      "metaDescription": "Fixez vos prix de vente selon les commissions, la publicité et la marge. Suivez les entrées et sorties de stock avec alertes de stock bas."
     },
     "invoice": {
       "name": "Facture et devis",
-      "desc": "Créez des devis et des factures avec logo, totaux automatiques et montant en lettres. Imprimez ou enregistrez en PDF."
+      "desc": "Créez des devis et des factures avec logo, totaux automatiques et montant en lettres. Imprimez ou enregistrez en PDF.",
+      "title": "Factures et devis en ligne gratuits — WFTools",
+      "metaDescription": "Créez des devis et factures de vente avec logo, totaux automatiques et montant en lettres. Imprimez ou enregistrez en PDF. Gratuit, dans votre navigateur."
     },
     "menu-qr": {
       "name": "Menu QR",
-      "desc": "Créez un menu numérique pour restaurants et cafés. Les clients scannent un QR code pour voir les plats et les prix."
+      "desc": "Créez un menu numérique pour restaurants et cafés. Les clients scannent un QR code pour voir les plats et les prix.",
+      "title": "Menu QR code en ligne gratuit — WFTools",
+      "metaDescription": "Créez un menu numérique pour restaurants et cafés. Les clients scannent un QR code pour voir les plats et les prix. Gratuit, dans votre navigateur."
     },
     "barcode": {
       "name": "Générateur de codes-barres",
-      "desc": "Générez des codes-barres Code 128, EAN-13, EAN-8, UPC-A et Code 39 pour vos étiquettes de produits et d'entrepôt."
+      "desc": "Générez des codes-barres Code 128, EAN-13, EAN-8, UPC-A et Code 39 pour vos étiquettes de produits et d'entrepôt.",
+      "title": "Générateur de codes-barres en ligne gratuit — WFTools",
+      "metaDescription": "Générez des codes-barres Code 128, EAN-13, EAN-8, UPC-A et Code 39 pour étiquettes de produits et d'entrepôt. Outil gratuit dans votre navigateur, sans envoi."
     },
     "loan": {
       "name": "Calculateur de prêt",
-      "desc": "Mensualité, total des intérêts et tableau d'amortissement pour un prêt immobilier, auto ou à la consommation."
+      "desc": "Mensualité, total des intérêts et tableau d'amortissement pour un prêt immobilier, auto ou à la consommation.",
+      "title": "Calculateur de prêt en ligne gratuit — WFTools",
+      "metaDescription": "Mensualité, intérêts totaux et tableau d'amortissement pour prêts immobiliers, auto et consommation. Gratuit, dans votre navigateur, sans envoi de données."
     },
     "compound": {
       "name": "Intérêts composés et épargne",
-      "desc": "Projetez le capital que vous constituerez avec une épargne ou un investissement mensuel régulier."
+      "desc": "Projetez le capital que vous constituerez avec une épargne ou un investissement mensuel régulier.",
+      "title": "Intérêts composés et épargne en ligne gratuit — WFTools",
+      "metaDescription": "Estimez le capital accumulé avec une épargne ou un investissement mensuel régulier. Outil gratuit dans votre navigateur, sans envoi de données."
     },
     "salary": {
       "name": "Salaire brut ↔ net",
-      "desc": "Convertissez un salaire brut en net et inversement, selon les règles 2026 de cotisations et d'impôt sur le revenu (Vietnam)."
+      "desc": "Convertissez un salaire brut en net et inversement, selon les règles 2026 de cotisations et d'impôt sur le revenu (Vietnam).",
+      "title": "Salaire brut en net (Vietnam) en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez le salaire brut en net et inversement selon les règles vietnamiennes 2026 sur les cotisations et l'impôt sur le revenu."
     },
     "qr-code": {
       "name": "Générateur de QR code",
-      "desc": "Créez des QR codes pour des liens, du texte, le Wi-Fi, des e-mails et des numéros de téléphone. Téléchargez en PNG ou SVG."
+      "desc": "Créez des QR codes pour des liens, du texte, le Wi-Fi, des e-mails et des numéros de téléphone. Téléchargez en PNG ou SVG.",
+      "title": "Générateur de QR code en ligne gratuit — WFTools",
+      "metaDescription": "Créez des QR codes pour liens, texte, Wi-Fi, e-mail et numéros de téléphone. Téléchargez en PNG ou SVG. Outil gratuit dans votre navigateur, sans envoi."
     },
     "utm": {
       "name": "Générateur de liens UTM",
-      "desc": "Ajoutez des codes de suivi de campagne à vos liens pour savoir d'où viennent vos visiteurs."
+      "desc": "Ajoutez des codes de suivi de campagne à vos liens pour savoir d'où viennent vos visiteurs.",
+      "title": "Générateur de liens UTM en ligne gratuit — WFTools",
+      "metaDescription": "Ajoutez des codes de suivi de campagne à vos liens pour savoir de quel canal viennent vos visiteurs. Gratuit, dans votre navigateur, sans envoi de données."
     },
     "colors": {
       "name": "Palette de couleurs et codes",
-      "desc": "Créez une palette harmonieuse à partir d'une couleur de base et obtenez les codes HEX, RVB, TSL et les variables CSS."
+      "desc": "Créez une palette harmonieuse à partir d'une couleur de base et obtenez les codes HEX, RVB, TSL et les variables CSS.",
+      "title": "Palette de couleurs et codes en ligne gratuit — WFTools",
+      "metaDescription": "Créez une palette harmonieuse à partir d'une couleur de base et obtenez les codes HEX, RGB, HSL et les variables CSS. Gratuit, dans votre navigateur."
     },
     "expense": {
       "name": "Dépenses et budget",
-      "desc": "Notez vos revenus et dépenses au jour le jour, consultez vos dépenses par catégorie et fixez des plafonds pour respecter votre budget."
+      "desc": "Notez vos revenus et dépenses au jour le jour, consultez vos dépenses par catégorie et fixez des plafonds pour respecter votre budget.",
+      "title": "Suivi des dépenses et du budget gratuit — WFTools",
+      "metaDescription": "Notez vos revenus et dépenses au quotidien, consultez les dépenses par catégorie et fixez des plafonds pour tenir votre budget. Gratuit, dans votre navigateur."
     },
     "habit": {
       "name": "Suivi d'habitudes et de séries",
-      "desc": "Cochez vos habitudes chaque jour et suivez vos séries de jours consécutifs pour rester régulier."
+      "desc": "Cochez vos habitudes chaque jour et suivez vos séries de jours consécutifs pour rester régulier.",
+      "title": "Suivi d'habitudes et de séries gratuit — WFTools",
+      "metaDescription": "Cochez vos habitudes chaque jour et suivez vos séries de jours consécutifs pour rester régulier. Outil gratuit qui fonctionne dans votre navigateur."
     },
     "cv": {
       "name": "Créateur de CV",
-      "desc": "Remplissez un modèle avec aperçu en direct, choisissez une mise en page et une couleur, puis imprimez ou enregistrez en PDF gratuitement."
+      "desc": "Remplissez un modèle avec aperçu en direct, choisissez une mise en page et une couleur, puis imprimez ou enregistrez en PDF gratuitement.",
+      "title": "Créateur de CV en ligne gratuit — WFTools",
+      "metaDescription": "Remplissez un modèle avec aperçu en direct, choisissez la mise en page et la couleur, puis imprimez ou enregistrez en PDF. Gratuit, dans votre navigateur."
     },
     "currency-time": {
       "name": "Devises et fuseaux horaires",
-      "desc": "Convertissez des devises aux derniers taux et consultez l'heure dans les villes du monde."
+      "desc": "Convertissez des devises aux derniers taux et consultez l'heure dans les villes du monde.",
+      "title": "Devises et fuseaux horaires en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez des devises aux derniers taux et consultez l'heure dans les villes du monde entier. Outil gratuit qui fonctionne dans votre navigateur."
     },
     "image-resize": {
       "name": "Redimensionner une image",
-      "desc": "Redimensionnez en pixels ou en pourcentage, gardez les proportions et traitez plusieurs images à la fois."
+      "desc": "Redimensionnez en pixels ou en pourcentage, gardez les proportions et traitez plusieurs images à la fois.",
+      "title": "Redimensionner des images en ligne gratuit — WFTools",
+      "metaDescription": "Redimensionnez vos images en pixels ou en pourcentage, gardez les proportions et traitez-en plusieurs à la fois. Gratuit, dans votre navigateur, sans envoi."
     },
     "image-crop": {
       "name": "Rogner une image",
-      "desc": "Rognez librement ou en 1:1, 4:3, 16:9 et 9:16, puis faites pivoter ou retournez avant de télécharger."
+      "desc": "Rognez librement ou en 1:1, 4:3, 16:9 et 9:16, puis faites pivoter ou retournez avant de télécharger.",
+      "title": "Recadrer une image en ligne gratuit — WFTools",
+      "metaDescription": "Recadrez librement ou en 1:1, 4:3, 16:9 et 9:16, puis pivotez ou retournez avant de télécharger. Gratuit, dans votre navigateur."
     },
     "image-ocr": {
       "name": "Image en texte (OCR)",
-      "desc": "Extrayez le texte de photos, captures d'écran et documents numérisés. Français et plus de 30 autres langues."
+      "desc": "Extrayez le texte de photos, captures d'écran et documents numérisés. Français et plus de 30 autres langues.",
+      "title": "Image en texte (OCR) en ligne gratuit — WFTools",
+      "metaDescription": "Extrayez le texte de photos, captures d'écran et documents numérisés. Compatible français et plus de 30 autres langues. Gratuit, dans votre navigateur."
     },
     "heic-jpg": {
       "name": "HEIC en JPG",
-      "desc": "Convertissez les photos HEIC de l'iPhone en JPG ou PNG pour les ouvrir partout. Conversion par lots."
+      "desc": "Convertissez les photos HEIC de l'iPhone en JPG ou PNG pour les ouvrir partout. Conversion par lots.",
+      "title": "HEIC en JPG en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez les photos HEIC de l'iPhone en JPG ou PNG pour les ouvrir partout. Conversion par lots possible. Gratuit, dans votre navigateur, sans envoi."
     },
     "image-upscale": {
       "name": "Agrandissement d'image par IA",
-      "desc": "Agrandissez les images ×2 ou ×4 et améliorez les détails avec l'IA. Idéal pour les photos petites, floues ou anciennes."
+      "desc": "Agrandissez les images ×2 ou ×4 et améliorez les détails avec l'IA. Idéal pour les photos petites, floues ou anciennes.",
+      "title": "Agrandir une image avec l'IA gratuit — WFTools",
+      "metaDescription": "Agrandissez vos images 2× ou 4× et affinez les détails grâce à l'IA. Idéal pour les photos petites, floues ou anciennes. Gratuit, dans votre navigateur."
     },
     "image-to-pdf": {
       "name": "Image en PDF",
-      "desc": "Assemblez des images JPG et PNG en un PDF, réordonnez les pages et choisissez le format et les marges."
+      "desc": "Assemblez des images JPG et PNG en un PDF, réordonnez les pages et choisissez le format et les marges.",
+      "title": "Image en PDF en ligne gratuit — WFTools",
+      "metaDescription": "Regroupez des images JPG et PNG en un seul PDF, réordonnez les pages et choisissez format de papier et marges. Gratuit, dans votre navigateur, sans envoi."
     },
     "pdf-to-image": {
       "name": "PDF en image",
-      "desc": "Transformez chaque page PDF en JPG ou PNG net, choisissez la résolution, téléchargez à l'unité ou en ZIP."
+      "desc": "Transformez chaque page PDF en JPG ou PNG net, choisissez la résolution, téléchargez à l'unité ou en ZIP.",
+      "title": "PDF en image en ligne gratuit — WFTools",
+      "metaDescription": "Transformez chaque page d'un PDF en JPG ou PNG net, choisissez la résolution et téléchargez des images seules ou un ZIP. Gratuit, dans votre navigateur."
     },
     "pdf-compress": {
       "name": "Compresser un PDF",
-      "desc": "Réduisez la taille d'un PDF pour l'e-mail et les formulaires en ligne. Choisissez le niveau et comparez les tailles."
+      "desc": "Réduisez la taille d'un PDF pour l'e-mail et les formulaires en ligne. Choisissez le niveau et comparez les tailles.",
+      "title": "Compresser un PDF en ligne gratuit — WFTools",
+      "metaDescription": "Réduisez le poids d'un PDF pour l'e-mail et les formulaires en ligne. Choisissez le niveau de compression et comparez les tailles. Gratuit, dans le navigateur."
     },
     "pdf-to-word": {
       "name": "PDF en Word",
-      "desc": "Convertissez un PDF en Word (.docx) modifiable en gardant texte et paragraphes, ou conservez la mise en page en images."
+      "desc": "Convertissez un PDF en Word (.docx) modifiable en gardant texte et paragraphes, ou conservez la mise en page en images.",
+      "title": "PDF en Word en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez un PDF en fichier Word (.docx) modifiable en gardant texte et paragraphes, ou conservez la mise en page sous forme d'images."
     },
     "word-to-pdf": {
       "name": "Word en PDF",
-      "desc": "Convertissez des fichiers Word (.docx) en PDF dans le navigateur, prévisualisez, puis téléchargez ou imprimez."
+      "desc": "Convertissez des fichiers Word (.docx) en PDF dans le navigateur, prévisualisez, puis téléchargez ou imprimez.",
+      "title": "Word en PDF en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez des fichiers Word (.docx) en PDF dans votre navigateur, prévisualisez, puis téléchargez ou imprimez. Gratuit, sans envoi de fichiers."
     },
     "pdf-sign": {
       "name": "Signer un PDF",
-      "desc": "Dessinez ou tapez votre signature, ajoutez une signature image et la date, placez-les sur le PDF et téléchargez."
+      "desc": "Dessinez ou tapez votre signature, ajoutez une signature image et la date, placez-les sur le PDF et téléchargez.",
+      "title": "Signer un PDF en ligne gratuit — WFTools",
+      "metaDescription": "Dessinez ou saisissez votre signature, ajoutez une signature image et la date, placez-les sur les pages du PDF et téléchargez. Gratuit, dans votre navigateur."
     },
     "pdf-edit": {
       "name": "Modifier un PDF et remplir des formulaires",
-      "desc": "Ajoutez du texte, des coches et des caches aux PDF et remplissez les champs de formulaire existants."
+      "desc": "Ajoutez du texte, des coches et des caches aux PDF et remplissez les champs de formulaire existants.",
+      "title": "Modifier un PDF et remplir des formulaires — WFTools",
+      "metaDescription": "Ajoutez du texte, des coches et des zones de masquage à vos PDF et remplissez les champs de formulaire existants. Gratuit, dans votre navigateur."
     },
     "case-convert": {
       "name": "Convertisseur de casse",
-      "desc": "Passez un texte en MAJUSCULES, minuscules, Casse De Titre, casse de phrase, camelCase, snake_case et plus."
+      "desc": "Passez un texte en MAJUSCULES, minuscules, Casse De Titre, casse de phrase, camelCase, snake_case et plus.",
+      "title": "Changer la casse d'un texte en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez un texte en MAJUSCULES, minuscules, Casse de titre, Casse de phrase, camelCase, snake_case et plus. Gratuit, dans votre navigateur, sans envoi."
     },
     "fancy-text": {
       "name": "Générateur de texte stylé",
-      "desc": "Transformez un texte en plus de 30 polices stylées pour Instagram, TikTok, bios et pseudos de jeu. Copie en un geste."
+      "desc": "Transformez un texte en plus de 30 polices stylées pour Instagram, TikTok, bios et pseudos de jeu. Copie en un geste.",
+      "title": "Générateur de texte stylé en ligne gratuit — WFTools",
+      "metaDescription": "Transformez un texte simple en plus de 30 polices stylées pour bios Instagram, TikTok, Facebook et pseudos de jeux. Copiez en un geste."
     },
     "text-to-speech": {
       "name": "Synthèse vocale",
-      "desc": "Faites lire un texte par les voix de votre appareil. Choisissez la voix, la vitesse et la hauteur. Nombreuses langues."
+      "desc": "Faites lire un texte par les voix de votre appareil. Choisissez la voix, la vitesse et la hauteur. Nombreuses langues.",
+      "title": "Synthèse vocale en ligne gratuite — WFTools",
+      "metaDescription": "Faites lire un texte à voix haute avec les voix de votre appareil. Choisissez voix, vitesse et hauteur. Nombreuses langues. Gratuit, dans votre navigateur."
     },
     "speech-to-text": {
       "name": "Dictée vocale",
-      "desc": "Écrivez avec la voix : parlez dans le micro, le texte apparaît aussitôt, puis copiez-le ou téléchargez-le."
+      "desc": "Écrivez avec la voix : parlez dans le micro, le texte apparaît aussitôt, puis copiez-le ou téléchargez-le.",
+      "title": "Dictée vocale en texte en ligne gratuit — WFTools",
+      "metaDescription": "Écrivez avec la voix : parlez dans le micro et voyez le texte s'afficher instantanément, puis copiez-le ou téléchargez-le. Outil gratuit dans le navigateur."
     },
     "scientific-calc": {
       "name": "Calculatrice scientifique",
-      "desc": "Calculatrice en ligne avec trigonométrie, logarithmes, puissances, racines, factorielle, degrés/radians, mémoire et historique."
+      "desc": "Calculatrice en ligne avec trigonométrie, logarithmes, puissances, racines, factorielle, degrés/radians, mémoire et historique.",
+      "title": "Calculatrice scientifique en ligne gratuite — WFTools",
+      "metaDescription": "Calculatrice en ligne avec trigonométrie, logarithmes, puissances, racines, factorielle, degrés/radians, mémoire et historique. Gratuit, dans votre navigateur."
     },
     "percentage": {
       "name": "Calculateur de pourcentage",
-      "desc": "Calculez X % de Y, le pourcentage que représente X dans Y, une variation en % et un prix soldé, avec les formules."
+      "desc": "Calculez X % de Y, le pourcentage que représente X dans Y, une variation en % et un prix soldé, avec les formules.",
+      "title": "Calculateur de pourcentage en ligne gratuit — WFTools",
+      "metaDescription": "Calculez X % de Y, quel pourcentage X représente de Y, une variation en pourcentage et un prix soldé, avec formules détaillées. Gratuit, dans votre navigateur."
     },
     "unit-convert": {
       "name": "Convertisseur d'unités",
-      "desc": "Convertissez longueur, poids, température, surface, volume, vitesse, temps, données, pression et énergie."
+      "desc": "Convertissez longueur, poids, température, surface, volume, vitesse, temps, données, pression et énergie.",
+      "title": "Convertisseur d'unités en ligne gratuit — WFTools",
+      "metaDescription": "Convertissez longueur, poids, température, surface, volume, vitesse, durée, données, pression et énergie. Gratuit, dans votre navigateur, sans envoi de données."
     },
     "age-calc": {
       "name": "Calculateur d'âge",
-      "desc": "Calculez l'âge exact en années, mois et jours, les jours vécus, le prochain anniversaire et le signe du zodiaque."
+      "desc": "Calculez l'âge exact en années, mois et jours, les jours vécus, le prochain anniversaire et le signe du zodiaque.",
+      "title": "Calculateur d'âge en ligne gratuit — WFTools",
+      "metaDescription": "Calculez votre âge exact en années, mois et jours, le total de jours vécus, le prochain anniversaire et le signe du zodiaque. Gratuit, dans votre navigateur."
     },
     "date-calc": {
       "name": "Calculateur de dates",
-      "desc": "Comptez les jours entre deux dates, ajoutez ou retirez jours, semaines, mois et années, et voyez le jour de la semaine."
+      "desc": "Comptez les jours entre deux dates, ajoutez ou retirez jours, semaines, mois et années, et voyez le jour de la semaine.",
+      "title": "Calculateur de dates en ligne gratuit — WFTools",
+      "metaDescription": "Comptez les jours entre deux dates, ajoutez ou retirez jours, semaines, mois et années, et voyez le jour de la semaine. Gratuit, dans votre navigateur."
     },
     "gpa": {
       "name": "Calculateur de GPA",
-      "desc": "Calculez le GPA du semestre et cumulé par crédits sur l'échelle 4.0 avec notes en lettres."
+      "desc": "Calculez le GPA du semestre et cumulé par crédits sur l'échelle 4.0 avec notes en lettres.",
+      "title": "Calculateur de moyenne (GPA) en ligne gratuit — WFTools",
+      "metaDescription": "Calculez la moyenne du semestre et la moyenne cumulée par crédits sur l'échelle de 4,0 avec notes en lettres. Gratuit, dans votre navigateur, sans envoi."
     },
     "due-date": {
       "name": "Calcul de la date d'accouchement",
-      "desc": "Estimez la date prévue et la semaine de grossesse d'après les dernières règles, la conception ou l'échographie, avec les étapes clés."
+      "desc": "Estimez la date prévue et la semaine de grossesse d'après les dernières règles, la conception ou l'échographie, avec les étapes clés.",
+      "title": "Calculateur de date d'accouchement gratuit — WFTools",
+      "metaDescription": "Estimez la date prévue d'accouchement et la semaine de grossesse à partir des dernières règles, de la conception ou de l'échographie."
     },
     "spin-wheel": {
       "name": "Roue de la fortune",
-      "desc": "Créez une roue avec des noms ou des lots, tournez-la au hasard équitablement, retirez les gagnants, mode plein écran."
+      "desc": "Créez une roue avec des noms ou des lots, tournez-la au hasard équitablement, retirez les gagnants, mode plein écran.",
+      "title": "Roue de la chance en ligne gratuite — WFTools",
+      "metaDescription": "Créez une roue avec les noms ou lots de votre choix, tournez en toute équité, retirez les gagnants et passez en plein écran. Gratuit, dans votre navigateur."
     },
     "random-number": {
       "name": "Générateur de nombres aléatoires",
-      "desc": "Générez des nombres aléatoires dans n'importe quel intervalle, plusieurs à la fois, avec ou sans doublons."
+      "desc": "Générez des nombres aléatoires dans n'importe quel intervalle, plusieurs à la fois, avec ou sans doublons.",
+      "title": "Générateur de nombres aléatoires gratuit — WFTools",
+      "metaDescription": "Générez des nombres aléatoires dans n'importe quelle plage, plusieurs à la fois, avec ou sans doublons, pour tirages et jeux. Gratuit, dans votre navigateur."
     },
     "typing-test": {
       "name": "Test de vitesse de frappe",
-      "desc": "Mesurez votre vitesse de frappe (MPM) et votre précision sur 30 secondes à 5 minutes."
+      "desc": "Mesurez votre vitesse de frappe (MPM) et votre précision sur 30 secondes à 5 minutes.",
+      "title": "Test de vitesse de frappe en ligne gratuit — WFTools",
+      "metaDescription": "Mesurez votre vitesse de frappe (MPM) et votre précision de 30 secondes à 5 minutes. Outil gratuit dans votre navigateur, sans envoi de données."
     },
     "cps-test": {
       "name": "Test CPS (vitesse de clic)",
-      "desc": "Comptez les clics par seconde sur 1 à 60 secondes, gardez votre record, testez aussi la barre d'espace et le tactile."
+      "desc": "Comptez les clics par seconde sur 1 à 60 secondes, gardez votre record, testez aussi la barre d'espace et le tactile.",
+      "title": "Test de CPS (vitesse de clic) en ligne gratuit — WFTools",
+      "metaDescription": "Comptez les clics par seconde de 1 à 60 secondes, gardez votre meilleur score et testez aussi avec la barre d'espace et le tactile. Gratuit, dans le navigateur."
     },
     "webcam-test": {
       "name": "Test de webcam",
-      "desc": "Vérifiez que la caméra fonctionne, voyez la résolution et la fréquence d'images, changez de caméra et prenez une photo test."
+      "desc": "Vérifiez que la caméra fonctionne, voyez la résolution et la fréquence d'images, changez de caméra et prenez une photo test.",
+      "title": "Test de webcam en ligne gratuit — WFTools",
+      "metaDescription": "Vérifiez que votre caméra fonctionne, consultez la résolution et la fréquence d'images, changez de caméra et prenez une photo test."
     },
     "screen-recorder": {
       "name": "Enregistreur d'écran",
-      "desc": "Enregistrez l'écran, une fenêtre ou un onglet avec le son du système et le micro, sans installation."
+      "desc": "Enregistrez l'écran, une fenêtre ou un onglet avec le son du système et le micro, sans installation.",
+      "title": "Enregistreur d'écran en ligne gratuit — WFTools",
+      "metaDescription": "Enregistrez votre écran, une fenêtre ou un onglet avec le son du système et le micro, sans rien installer. Outil gratuit dans votre navigateur, sans envoi."
     },
     "video-compress": {
       "name": "Compresser une vidéo",
-      "desc": "Réduisez les fichiers MP4, MOV et WebM pour les messageries, l'e-mail et les réseaux. Choisissez résolution et qualité."
+      "desc": "Réduisez les fichiers MP4, MOV et WebM pour les messageries, l'e-mail et les réseaux. Choisissez résolution et qualité.",
+      "title": "Compresser une vidéo en ligne gratuit — WFTools",
+      "metaDescription": "Réduisez vos fichiers MP4, MOV et WebM pour la messagerie, l'e-mail et les réseaux sociaux. Choisissez résolution et qualité. Outil gratuit dans le navigateur."
     },
     "video-to-mp3": {
       "name": "Vidéo en MP3",
-      "desc": "Extrayez l'audio des vidéos MP4, MOV et WebM en MP3, choisissez la qualité et coupez le passage voulu."
+      "desc": "Extrayez l'audio des vidéos MP4, MOV et WebM en MP3, choisissez la qualité et coupez le passage voulu.",
+      "title": "Vidéo en MP3 en ligne gratuit — WFTools",
+      "metaDescription": "Extrayez l'audio de vidéos MP4, MOV et WebM en MP3, choisissez la qualité et découpez la partie voulue. Outil gratuit dans votre navigateur, sans envoi."
     },
     "guitar-tuner": {
       "name": "Accordeur de guitare",
-      "desc": "Accordez guitare, ukulélé et basse avec le micro : note, écart en cents et aiguille, plus des notes de référence."
+      "desc": "Accordez guitare, ukulélé et basse avec le micro : note, écart en cents et aiguille, plus des notes de référence.",
+      "title": "Accordeur de guitare en ligne gratuit — WFTools",
+      "metaDescription": "Accordez guitare, ukulélé et basse avec votre micro : note, écart en cents et aiguille, plus des sons de référence. Outil gratuit dans votre navigateur."
     },
     "password-gen": {
       "name": "Générateur de mots de passe",
-      "desc": "Créez des mots de passe aléatoires solides ou des phrases de passe faciles à retenir, choisissez longueur et caractères, testez la robustesse."
+      "desc": "Créez des mots de passe aléatoires solides ou des phrases de passe faciles à retenir, choisissez longueur et caractères, testez la robustesse.",
+      "title": "Générateur de mots de passe en ligne gratuit — WFTools",
+      "metaDescription": "Créez des mots de passe aléatoires robustes ou des phrases secrètes faciles à retenir, choisissez longueur et caractères, vérifiez la solidité. Gratuit."
     },
     "signature": {
       "name": "Créateur de signature",
-      "desc": "Dessinez votre signature à la souris ou au doigt, ou tapez-la en police manuscrite ; téléchargez un PNG transparent."
+      "desc": "Dessinez votre signature à la souris ou au doigt, ou tapez-la en police manuscrite ; téléchargez un PNG transparent.",
+      "title": "Créer une signature en ligne gratuit — WFTools",
+      "metaDescription": "Dessinez votre signature à la souris ou au doigt, ou saisissez-la avec des polices manuscrites ; téléchargez un PNG transparent. Gratuit, dans votre navigateur."
     },
     "logo-maker": {
       "name": "Créateur de logo",
-      "desc": "Créez un logo à partir d'une icône, d'un nom de marque et d'un slogan ; choisissez polices, couleurs et disposition, téléchargez en SVG ou PNG."
+      "desc": "Créez un logo à partir d'une icône, d'un nom de marque et d'un slogan ; choisissez polices, couleurs et disposition, téléchargez en SVG ou PNG.",
+      "title": "Créateur de logo en ligne gratuit — WFTools",
+      "metaDescription": "Créez un logo à partir d'une icône, du nom de votre marque et d'un slogan ; choisissez polices, couleurs et mise en page, puis téléchargez en SVG ou PNG."
     },
     "notepad": {
       "name": "Bloc-notes en ligne",
-      "desc": "Notes rapides enregistrées automatiquement dans le navigateur : plusieurs notes, recherche, comptage de mots et export TXT."
+      "desc": "Notes rapides enregistrées automatiquement dans le navigateur : plusieurs notes, recherche, comptage de mots et export TXT.",
+      "title": "Bloc-notes en ligne gratuit — WFTools",
+      "metaDescription": "Notes rapides enregistrées automatiquement dans votre navigateur : plusieurs notes, recherche, nombre de mots et téléchargement en TXT."
     },
     "excel-word-fill": {
       "name": "Remplir Word depuis Excel",
-      "desc": "Prenez le contenu d'un fichier Excel et placez-le dans les repères d'un fichier Word, avec les titres numérotés affichés en rouge."
+      "desc": "Prenez le contenu d'un fichier Excel et placez-le dans les repères d'un fichier Word, avec les titres numérotés affichés en rouge.",
+      "title": "Remplir des modèles Word avec des données Excel — WFTools",
+      "metaDescription": "Remplissez un modèle Word (.docx) avec le contenu d'une feuille Excel via des repères, conservez la mise en forme et téléchargez le résultat. Dans le navigateur."
     },
     "excel-cell-merge": {
       "name": "Fusionner des cellules Excel de plusieurs feuilles / fichiers",
-      "desc": "Fusionnez une même cellule (A1, B2...) de plusieurs feuilles ou fichiers Excel en une seule, avec un avertissement pour les cellules qui ont des données dans plus d'une source."
+      "desc": "Fusionnez une même cellule (A1, B2...) de plusieurs feuilles ou fichiers Excel en une seule, avec un avertissement pour les cellules qui ont des données dans plus d'une source.",
+      "title": "Fusionner des cellules Excel de plusieurs feuilles — WFTools",
+      "metaDescription": "Regroupez les mêmes cellules de plusieurs feuilles ou fichiers Excel dans un tableau, choisissez un séparateur et exportez un nouveau .xlsx."
     },
     "excel-row-concat": {
       "name": "Empiler des lignes Excel de plusieurs feuilles / fichiers",
-      "desc": "Empilez plusieurs feuilles ou fichiers Excel verticalement en un seul long tableau. Gardez l'en-tête une seule fois et supprimez les lignes vides."
+      "desc": "Empilez plusieurs feuilles ou fichiers Excel verticalement en un seul long tableau. Gardez l'en-tête une seule fois et supprimez les lignes vides.",
+      "title": "Empiler des lignes Excel de plusieurs feuilles — WFTools",
+      "metaDescription": "Ajoutez les lignes de plusieurs feuilles ou fichiers Excel dans un seul tableau, gardez un seul en-tête et notez la source de chaque ligne. Gratuit, sans envoi."
     },
     "excel-formula-merge": {
       "name": "Combiner des données Excel avec des formules",
-      "desc": "Combinez plusieurs feuilles ou fichiers Excel avec une formule par cellule (SUM, IF, CONCAT, UNIQUE...), des fonctions imbriquées et des formules enregistrées réutilisables."
+      "desc": "Combinez plusieurs feuilles ou fichiers Excel avec une formule par cellule (SUM, IF, CONCAT, UNIQUE...), des fonctions imbriquées et des formules enregistrées réutilisables.",
+      "title": "Combiner des données Excel avec formules — WFTools",
+      "metaDescription": "Combinez les données de plusieurs feuilles ou fichiers Excel avec vos propres formules (somme, jointure, conditions) et exportez un nouveau .xlsx. Gratuit."
     },
     "sudoku-9x9": {
       "name": "Sudoku 9x9",
-      "desc": "Jouez au Sudoku 9x9 en ligne sur 10 niveaux, du facile au difficile, avec notes, indices et vérification des erreurs."
+      "desc": "Jouez au Sudoku 9x9 en ligne sur 10 niveaux, du facile au difficile, avec notes, indices et vérification des erreurs.",
+      "title": "Jouer au Sudoku 9x9 en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Sudoku 9x9 en ligne sur 10 niveaux, du facile au difficile, avec notes, indices et vérification des erreurs."
     },
     "sudoku-16x16": {
       "name": "Sudoku 16x16",
-      "desc": "Grand Sudoku 16x16 avec 1-9 et A-G, 10 niveaux du facile au difficile, avec notes et indices."
+      "desc": "Grand Sudoku 16x16 avec 1-9 et A-G, 10 niveaux du facile au difficile, avec notes et indices.",
+      "title": "Jouer au Sudoku 16x16 en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Sudoku 16x16 en ligne : grande grille avec 1-9 et A-G, 10 niveaux du facile au difficile, avec notes et indices. Gratuit, sans téléchargement."
     },
     "chess": {
       "name": "Échecs",
-      "desc": "Jouez aux échecs contre l'ordinateur sur 10 niveaux ou en ligne : invitez un ami par lien ou affrontez quelqu'un de nouveau. Roque, prise en passant et promotion inclus."
+      "desc": "Jouez aux échecs contre l'ordinateur sur 10 niveaux ou en ligne : invitez un ami par lien ou affrontez quelqu'un de nouveau. Roque, prise en passant et promotion inclus.",
+      "title": "Jouer aux échecs en ligne gratuit — WFTools",
+      "metaDescription": "Jouez aux échecs contre l'ordinateur sur 10 niveaux, ou en ligne : invitez un ami par lien ou trouvez un nouvel adversaire. Gratuit, sans téléchargement."
     },
     "xiangqi": {
       "name": "Xiangqi (échecs chinois)",
-      "desc": "Jouez au Xiangqi contre l'ordinateur sur 10 niveaux ou en ligne : invitez un ami par lien ou affrontez quelqu'un de nouveau. Règles complètes : jambe du cheval, œil de l'éléphant, saut du canon, généraux face à face."
+      "desc": "Jouez au Xiangqi contre l'ordinateur sur 10 niveaux ou en ligne : invitez un ami par lien ou affrontez quelqu'un de nouveau. Règles complètes : jambe du cheval, œil de l'éléphant, saut du canon, généraux face à face.",
+      "title": "Jouer aux échecs chinois (Xiangqi) gratuit — WFTools",
+      "metaDescription": "Jouez au Xiangqi contre l'ordinateur sur 10 niveaux, ou en ligne : invitez un ami par lien ou trouvez un adversaire."
     },
     "go-game": {
       "name": "Go",
-      "desc": "Jouez au Go contre l'ordinateur sur 10 niveaux ou en ligne sur des gobans 9x9, 13x13 et 19x19 avec un ami ou un nouvel adversaire. Décompte automatique en fin de partie."
+      "desc": "Jouez au Go contre l'ordinateur sur 10 niveaux ou en ligne sur des gobans 9x9, 13x13 et 19x19 avec un ami ou un nouvel adversaire. Décompte automatique en fin de partie.",
+      "title": "Jouer au Go en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Go contre l'ordinateur sur 10 niveaux, ou en ligne sur des plateaux 9x9, 13x13 et 19x19 avec un ami ou un adversaire. Décompte automatique à la fin."
     },
     "memory-shapes": {
       "name": "Mémoire des formes et couleurs",
-      "desc": "Des tuiles de formes et couleurs s'affichent 5 secondes puis se cachent ; mémorisez et choisissez la bonne tuile, 10 niveaux du facile au difficile."
+      "desc": "Des tuiles de formes et couleurs s'affichent 5 secondes puis se cachent ; mémorisez et choisissez la bonne tuile, 10 niveaux du facile au difficile.",
+      "title": "Jouer au Memory formes et couleurs gratuit — WFTools",
+      "metaDescription": "Jouez en ligne au Memory de formes et de couleurs : des tuiles s'affichent pendant 5 secondes puis se cachent. Gratuit, dans votre navigateur, sans téléchargement."
     },
     "web-desktop": {
       "name": "Bureau en ligne",
-      "desc": "Un bureau d'ordinateur dans votre navigateur : gestionnaire de fichiers, Notepad, visionneuse d'images et de PDF, calculatrice, calendrier et corbeille. Les fichiers sont enregistrés dans votre Google Drive."
+      "desc": "Un bureau d'ordinateur dans votre navigateur : gestionnaire de fichiers, Notepad, visionneuse d'images et de PDF, calculatrice, calendrier et corbeille. Les fichiers sont enregistrés dans votre Google Drive.",
+      "title": "Bureau en ligne dans le navigateur gratuit — WFTools",
+      "metaDescription": "Un bureau d'ordinateur dans votre navigateur : fichiers, Bloc-notes, visionneuse d'images et PDF, calculatrice, calendrier, corbeille. Sur Google Drive."
     },
     "co-up": {
       "name": "Xiangqi caché",
-      "desc": "Jouez au Xiangqi caché vietnamien : les pièces commencent face cachée et se retournent après leur premier coup. Contre l'ordinateur sur 10 niveaux ou en ligne avec des amis ou de nouveaux adversaires."
+      "desc": "Jouez au Xiangqi caché vietnamien : les pièces commencent face cachée et se retournent après leur premier coup. Contre l'ordinateur sur 10 niveaux ou en ligne avec des amis ou de nouveaux adversaires.",
+      "title": "Jouer aux échecs cachés en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Xiangqi caché vietnamien : les pièces démarrent face cachée et se retournent après leur premier coup. Contre l'ordinateur sur 10 niveaux ou entre amis."
     },
     "game-2048": {
       "name": "2048",
-      "desc": "Faites glisser et fusionnez les nombres identiques jusqu'à la tuile 2048 ; 10 niveaux avec des objectifs de 64 à 8192, avec annulation."
+      "desc": "Faites glisser et fusionnez les nombres identiques jusqu'à la tuile 2048 ; 10 niveaux avec des objectifs de 64 à 8192, avec annulation.",
+      "title": "Jouer au 2048 en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au 2048 en ligne : faites glisser et fusionnez les nombres identiques pour former la tuile 2048 ; 10 niveaux de 64 à 8192, avec annulation. Gratuit."
     },
     "minesweeper": {
       "name": "Démineur",
-      "desc": "Le démineur classique : ouvrez des cases, posez des drapeaux et déduisez où sont les mines grâce aux chiffres ; 10 niveaux de 8x8 à 18x18, jouable sur mobile."
+      "desc": "Le démineur classique : ouvrez des cases, posez des drapeaux et déduisez où sont les mines grâce aux chiffres ; 10 niveaux de 8x8 à 18x18, jouable sur mobile.",
+      "title": "Jouer au Démineur en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Démineur classique en ligne : ouvrez des cases, posez des drapeaux et déduisez l'emplacement des mines grâce aux chiffres."
     },
     "block-puzzle": {
       "name": "Blocs qui tombent",
-      "desc": "Faites pivoter et empilez les blocs qui tombent pour effacer des lignes ; 10 niveaux de plus en plus rapides, au clavier ou avec les boutons tactiles."
+      "desc": "Faites pivoter et empilez les blocs qui tombent pour effacer des lignes ; 10 niveaux de plus en plus rapides, au clavier ou avec les boutons tactiles.",
+      "title": "Jouer aux blocs qui tombent en ligne gratuit — WFTools",
+      "metaDescription": "Jouez en ligne aux blocs qui tombent : faites pivoter et empilez-les pour effacer des lignes ; 10 niveaux de vitesse croissante, au clavier ou en tactile."
     },
     "snake": {
       "name": "Snake",
-      "desc": "Guidez le serpent pour manger et grandir en évitant les murs et votre propre queue ; 10 niveaux plus rapides avec obstacles."
+      "desc": "Guidez le serpent pour manger et grandir en évitant les murs et votre propre queue ; 10 niveaux plus rapides avec obstacles.",
+      "title": "Jouer au Snake en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Snake en ligne : guidez le serpent pour manger et grandir sans toucher les murs ni votre queue ; 10 niveaux avec obstacles."
     },
     "solitaire": {
       "name": "Solitaire",
-      "desc": "Le solitaire Klondike classique : empilez en alternant les couleurs et rangez les cartes de l'As au Roi ; piocher 1 ou 3, avec annulation et indices."
+      "desc": "Le solitaire Klondike classique : empilez en alternant les couleurs et rangez les cartes de l'As au Roi ; piocher 1 ou 3, avec annulation et indices.",
+      "title": "Jouer au Solitaire en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Solitaire Klondike classique en ligne : empilez par ordre décroissant en alternant les couleurs et montez les cartes sur les fondations de l'as au roi."
     },
     "spider-solitaire": {
       "name": "Solitaire Spider",
-      "desc": "Spider à 1, 2 et 4 couleurs : formez des suites de même couleur du Roi à l'As pour les retirer ; 10 niveaux avec annulation et indices."
+      "desc": "Spider à 1, 2 et 4 couleurs : formez des suites de même couleur du Roi à l'As pour les retirer ; 10 niveaux avec annulation et indices.",
+      "title": "Jouer au Solitaire Spider en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Spider avec 1, 2 et 4 couleurs : formez des suites de même couleur du roi à l'as pour les retirer du tapis."
     },
     "freecell": {
       "name": "FreeCell",
-      "desc": "Solitaire FreeCell : toutes les cartes sont visibles ; utilisez les cellules libres pour ranger les cartes ; 10 niveaux avec de moins en moins de cellules."
+      "desc": "Solitaire FreeCell : toutes les cartes sont visibles ; utilisez les cellules libres pour ranger les cartes ; 10 niveaux avec de moins en moins de cellules.",
+      "title": "Jouer au FreeCell en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Solitaire FreeCell en ligne : toutes les cartes sont visibles ; utilisez les cellules libres pour les monter aux fondations ; 10 niveaux, moins de cellules."
     },
     "gomoku": {
       "name": "Gomoku (cinq en ligne)",
-      "desc": "Jouez au gomoku, cinq en ligne, contre l'ordinateur sur un plateau 15x15 ; 10 niveaux du plus facile au plus difficile, avec annulation."
+      "desc": "Jouez au gomoku, cinq en ligne, contre l'ordinateur sur un plateau 15x15 ; 10 niveaux du plus facile au plus difficile, avec annulation.",
+      "title": "Jouer au Gomoku (cinq en ligne) gratuit — WFTools",
+      "metaDescription": "Jouez au Gomoku, cinq en ligne, contre l'ordinateur sur un plateau 15x15 ; 10 niveaux du facile au difficile, avec annulation."
     },
     "reversi": {
       "name": "Reversi",
-      "desc": "Encadrez les pions adverses pour les retourner à votre couleur ; jouez au Reversi 8x8 contre l'ordinateur sur 10 niveaux."
+      "desc": "Encadrez les pions adverses pour les retourner à votre couleur ; jouez au Reversi 8x8 contre l'ordinateur sur 10 niveaux.",
+      "title": "Jouer au Reversi en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Reversi en ligne : encerclez les pions adverses pour les retourner à votre couleur ; Reversi 8x8 contre l'ordinateur sur 10 niveaux."
     },
     "connect-four": {
       "name": "Quatre en ligne",
-      "desc": "Lâchez des pions dans les colonnes et alignez-en 4 à l'horizontale, à la verticale ou en diagonale avant l'ordinateur ; 10 niveaux du facile au difficile."
+      "desc": "Lâchez des pions dans les colonnes et alignez-en 4 à l'horizontale, à la verticale ou en diagonale avant l'ordinateur ; 10 niveaux du facile au difficile.",
+      "title": "Jouer au Puissance 4 en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Puissance 4 en ligne : laissez tomber des jetons dans les colonnes et alignez-en 4 à l'horizontale, à la verticale ou en diagonale avant l'ordinateur."
     },
     "match-3": {
       "name": "Match 3",
-      "desc": "Échangez les bonbons pour en aligner 3 ou plus et déclencher des réactions en chaîne ; 10 niveaux avec score à atteindre et coups limités."
+      "desc": "Échangez les bonbons pour en aligner 3 ou plus et déclencher des réactions en chaîne ; 10 niveaux avec score à atteindre et coups limités.",
+      "title": "Jouer au Match 3 en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Match 3 en ligne : échangez des bonbons pour aligner 3 identiques ou plus et déclencher des réactions en chaîne ; 10 niveaux, coups limités."
     },
     "brick-breaker": {
       "name": "Casse-briques",
-      "desc": "Dirigez la raquette et faites rebondir la balle pour casser toutes les briques ; 10 niveaux de dispositions différentes, à la souris, au doigt ou au clavier."
+      "desc": "Dirigez la raquette et faites rebondir la balle pour casser toutes les briques ; 10 niveaux de dispositions différentes, à la souris, au doigt ou au clavier.",
+      "title": "Jouer au casse-briques en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au casse-briques en ligne : dirigez la raquette et faites rebondir la balle pour casser toutes les briques ; 10 tableaux, souris, tactile ou clavier."
     },
     "pyramid": {
       "name": "Solitaire Pyramide",
-      "desc": "Éliminez la pyramide de 28 cartes en associant des cartes dont la somme fait 13 ; 10 niveaux avec de moins en moins de redistributions."
+      "desc": "Éliminez la pyramide de 28 cartes en associant des cartes dont la somme fait 13 ; 10 niveaux avec de moins en moins de redistributions.",
+      "title": "Jouer au Solitaire Pyramide en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à la Pyramide en ligne : videz la pyramide de 28 cartes en associant des cartes dont la somme fait 13 ; 10 niveaux avec de moins en moins de relances."
     },
     "tripeaks": {
       "name": "Solitaire TriPeaks",
-      "desc": "Éliminez trois pics en enchaînant des cartes d'un cran d'écart ; 10 niveaux de facile à difficile."
+      "desc": "Éliminez trois pics en enchaînant des cartes d'un cran d'écart ; 10 niveaux de facile à difficile.",
+      "title": "Jouer au Solitaire TriPeaks en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au TriPeaks en ligne : videz trois pics en enchaînant des cartes à une valeur d'écart ; 10 niveaux du facile au difficile. Gratuit, sans téléchargement."
     },
     "golf": {
       "name": "Solitaire Golf",
-      "desc": "Éliminez les colonnes en enchaînant des cartes d'un cran d'écart avec la carte visible ; 10 niveaux avec de plus en plus de colonnes."
+      "desc": "Éliminez les colonnes en enchaînant des cartes d'un cran d'écart avec la carte visible ; 10 niveaux avec de plus en plus de colonnes.",
+      "title": "Jouer au Solitaire Golf en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Solitaire Golf en ligne : videz les colonnes en enchaînant des cartes à une valeur d'écart de la carte visible ; 10 niveaux avec plus de colonnes."
     },
     "blackjack": {
       "name": "Blackjack",
-      "desc": "Jouez au blackjack contre le croupier avec des jetons virtuels : approchez-vous de 21 sans le dépasser ; doublez et séparez ; 10 niveaux avec des objectifs de jetons croissants."
+      "desc": "Jouez au blackjack contre le croupier avec des jetons virtuels : approchez-vous de 21 sans le dépasser ; doublez et séparez ; 10 niveaux avec des objectifs de jetons croissants.",
+      "title": "Jouer au Blackjack en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au blackjack contre le croupier avec des jetons virtuels : approchez 21 sans le dépasser ; doublez et séparez ; 10 niveaux aux objectifs de jetons croissants."
     },
     "video-poker": {
       "name": "Video Poker",
-      "desc": "Poker à cinq cartes avec échange et jetons virtuels (paire de valets ou mieux) ; 10 niveaux avec des tableaux de gains de plus en plus serrés."
+      "desc": "Poker à cinq cartes avec échange et jetons virtuels (paire de valets ou mieux) ; 10 niveaux avec des tableaux de gains de plus en plus serrés.",
+      "title": "Jouer au Video Poker en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Video Poker en ligne : poker à cinq cartes avec jetons virtuels (Jacks or Better) ; 10 niveaux aux tables de gains plus serrées."
     },
     "checkers": {
       "name": "Jeu de dames",
-      "desc": "Jouez aux dames 8x8 contre l'ordinateur : prises obligatoires, rafles et dames ; 10 niveaux de facile à difficile."
+      "desc": "Jouez aux dames 8x8 contre l'ordinateur : prises obligatoires, rafles et dames ; 10 niveaux de facile à difficile.",
+      "title": "Jouer aux dames en ligne gratuit — WFTools",
+      "metaDescription": "Jouez aux dames 8x8 contre l'ordinateur : prises obligatoires, rafles multiples et dames ; 10 niveaux du facile au difficile."
     },
     "ludo": {
       "name": "Ludo",
-      "desc": "Jeu de course à quatre couleurs : lancez le dé et ramenez vos 4 pions en premier ; jouez contre 1 à 3 joueurs ordinateur sur 10 niveaux."
+      "desc": "Jeu de course à quatre couleurs : lancez le dé et ramenez vos 4 pions en premier ; jouez contre 1 à 3 joueurs ordinateur sur 10 niveaux.",
+      "title": "Jouer au Jeu des petits chevaux (Ludo) gratuit — WFTools",
+      "metaDescription": "Jouez au Ludo en ligne : course à quatre couleurs ; lancez le dé et ramenez vos 4 pions à la maison les premiers ; contre 1 à 3 joueurs ordinateur sur 10 niveaux."
     },
     "o-an-quan": {
       "name": "Ô ăn quan",
-      "desc": "Un jeu de semis traditionnel vietnamien : semez les pierres et capturez les Mandarins face à l'ordinateur ; 10 niveaux de facile à difficile."
+      "desc": "Un jeu de semis traditionnel vietnamien : semez les pierres et capturez les Mandarins face à l'ordinateur ; 10 niveaux de facile à difficile.",
+      "title": "Jouer au Ô Ăn Quan en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Ô Ăn Quan en ligne : jeu de semis traditionnel vietnamien ; semez des pierres et capturez les mandarins contre l'ordinateur ; 10 niveaux."
     },
     "lights-out": {
       "name": "Lights Out",
-      "desc": "Éteignez toutes les lumières : chaque pression inverse la case et ses 4 voisines ; 10 niveaux avec des grilles de plus en plus grandes et un bouton d’indice."
+      "desc": "Éteignez toutes les lumières : chaque pression inverse la case et ses 4 voisines ; 10 niveaux avec des grilles de plus en plus grandes et un bouton d’indice.",
+      "title": "Jouer à Lights Out en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Lights Out en ligne : éteignez toutes les lumières ; chaque clic inverse la case et ses 4 voisines ; 10 niveaux avec grilles croissantes et bouton d'indice."
     },
     "fifteen": {
       "name": "Taquin (jeu du 15)",
-      "desc": "Faites glisser les tuiles numérotées pour les remettre dans l’ordre ; 10 niveaux de 3x3 à 5x5, à la souris, au toucher ou aux flèches."
+      "desc": "Faites glisser les tuiles numérotées pour les remettre dans l’ordre ; 10 niveaux de 3x3 à 5x5, à la souris, au toucher ou aux flèches.",
+      "title": "Jouer au Taquin (jeu du 15) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Taquin en ligne : faites glisser les tuiles numérotées dans l'ordre ; 10 niveaux de 3x3 à 5x5, à la souris, au tactile ou aux flèches. Gratuit."
     },
     "flood-it": {
       "name": "Flood-it",
-      "desc": "Inondez la grille depuis le coin jusqu’à ce qu’elle soit d’une seule couleur en un nombre de coups limité ; 10 niveaux avec des grilles plus grandes et plus de couleurs."
+      "desc": "Inondez la grille depuis le coin jusqu’à ce qu’elle soit d’une seule couleur en un nombre de coups limité ; 10 niveaux avec des grilles plus grandes et plus de couleurs.",
+      "title": "Jouer à Flood-it en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Flood-it en ligne : inondez le plateau depuis un coin jusqu'à n'avoir qu'une couleur en un nombre de coups limité ; 10 niveaux, plateaux plus grands."
     },
     "mastermind": {
       "name": "Mastermind (casse-code)",
-      "desc": "Découvrez le code couleur caché grâce aux pions noirs et blancs ; 10 niveaux avec des codes plus longs et plus de couleurs."
+      "desc": "Découvrez le code couleur caché grâce aux pions noirs et blancs ; 10 niveaux avec des codes plus longs et plus de couleurs.",
+      "title": "Jouer au Mastermind en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Mastermind en ligne : trouvez le code de couleurs caché grâce aux pions noirs et blancs ; 10 niveaux avec codes plus longs."
     },
     "hanoi": {
       "name": "Tours de Hanoï",
-      "desc": "Déplacez les disques du premier au dernier piquet sans poser un grand disque sur un petit ; 10 niveaux, de 3 disques à 12 disques sur 4 piquets."
+      "desc": "Déplacez les disques du premier au dernier piquet sans poser un grand disque sur un petit ; 10 niveaux, de 3 disques à 12 disques sur 4 piquets.",
+      "title": "Jouer aux Tours de Hanoï en ligne gratuit — WFTools",
+      "metaDescription": "Jouez aux Tours de Hanoï en ligne : déplacez les disques du premier au dernier piquet sans poser un grand disque sur un petit. Gratuit, sans téléchargement."
     },
     "pipes": {
       "name": "Connexion de tuyaux",
-      "desc": "Faites pivoter les tuyaux pour les relier en un seul réseau sans extrémité ouverte ; 10 niveaux avec des grilles de plus en plus grandes."
+      "desc": "Faites pivoter les tuyaux pour les relier en un seul réseau sans extrémité ouverte ; 10 niveaux avec des grilles de plus en plus grandes.",
+      "title": "Jouer à relier les tuyaux en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à relier les tuyaux en ligne : faites pivoter les pièces pour former un seul réseau sans extrémité ouverte ; 10 niveaux, grilles croissantes. Gratuit."
     },
     "nonogram": {
       "name": "Nonogram (Picross)",
-      "desc": "Remplissez les cases grâce aux indices numériques des lignes et colonnes pour révéler une image ; 10 niveaux de 5x5 à 15x15."
+      "desc": "Remplissez les cases grâce aux indices numériques des lignes et colonnes pour révéler une image ; 10 niveaux de 5x5 à 15x15.",
+      "title": "Jouer au Nonogramme (Picross) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Nonogramme en ligne : remplissez les cases grâce aux indices chiffrés des lignes et colonnes pour révéler une image ; 10 niveaux de 5x5 à 15x15."
     },
     "sokoban": {
       "name": "Sokoban (pousse-caisses)",
-      "desc": "Poussez les caisses sur les cases cibles dans un entrepôt ; chaque niveau est soluble, avec 10 niveaux de plus en plus de caisses et d’entrepôts plus grands."
+      "desc": "Poussez les caisses sur les cases cibles dans un entrepôt ; chaque niveau est soluble, avec 10 niveaux de plus en plus de caisses et d’entrepôts plus grands.",
+      "title": "Jouer au Sokoban (pousse-caisses) gratuit — WFTools",
+      "metaDescription": "Jouez au Sokoban en ligne : poussez les caisses sur les cases cibles d'un entrepôt ; tous les niveaux sont solubles, 10 niveaux avec plus de caisses."
     },
     "block-10x10": {
       "name": "Block Puzzle 10x10",
-      "desc": "Placez des pièces sur une grille 10x10 et remplissez des lignes ou colonnes pour les effacer et atteindre le score cible ; 10 niveaux."
+      "desc": "Placez des pièces sur une grille 10x10 et remplissez des lignes ou colonnes pour les effacer et atteindre le score cible ; 10 niveaux.",
+      "title": "Jouer au Block Puzzle 10x10 en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Block Puzzle 10x10 en ligne : placez des pièces sur une grille 10x10 et complétez lignes ou colonnes pour atteindre le score cible ; 10 niveaux."
     },
     "dots-boxes": {
       "name": "Jeu des points et des carrés",
-      "desc": "À tour de rôle, reliez des points pour capturer des carrés et battez l’ordinateur sur 10 niveaux, du facile au difficile."
+      "desc": "À tour de rôle, reliez des points pour capturer des carrés et battez l’ordinateur sur 10 niveaux, du facile au difficile.",
+      "title": "Jouer au Jeu des points et des carrés gratuit — WFTools",
+      "metaDescription": "Jouez au Jeu des points et des carrés en ligne : reliez des points à tour de rôle pour gagner des carrés et battez l'ordinateur sur 10 niveaux. Gratuit."
     },
     "ultimate-tictactoe": {
       "name": "Morpion ultime",
-      "desc": "Morpion sur 9 petites grilles : la case que vous choisissez détermine où votre adversaire doit jouer ; contre l’ordinateur sur 10 niveaux."
+      "desc": "Morpion sur 9 petites grilles : la case que vous choisissez détermine où votre adversaire doit jouer ; contre l’ordinateur sur 10 niveaux.",
+      "title": "Jouer au Morpion ultime en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Morpion ultime en ligne : morpion sur 9 petites grilles, la case choisie décide où l'adversaire doit jouer ; contre l'ordinateur sur 10 niveaux."
     },
     "pong": {
       "name": "Pong",
-      "desc": "Envoyez la balle derrière l'ordinateur ; le premier à 5 points gagne. 10 niveaux face à un adversaire de plus en plus rapide et précis."
+      "desc": "Envoyez la balle derrière l'ordinateur ; le premier à 5 points gagne. 10 niveaux face à un adversaire de plus en plus rapide et précis.",
+      "title": "Jouer à Pong en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Pong en ligne : envoyez la balle au-delà de l'ordinateur ; le premier à 5 points gagne. 10 niveaux, un adversaire plus rapide et précis. Gratuit."
     },
     "space-shooter": {
       "name": "Tir spatial",
-      "desc": "Pilotez votre vaisseau, abattez les vaisseaux ennemis et esquivez leurs tirs ; 10 niveaux avec des vagues plus grosses, des tirs de riposte et des ennemis plus coriaces."
+      "desc": "Pilotez votre vaisseau, abattez les vaisseaux ennemis et esquivez leurs tirs ; 10 niveaux avec des vagues plus grosses, des tirs de riposte et des ennemis plus coriaces.",
+      "title": "Jouer au jeu de tir spatial en ligne gratuit — WFTools",
+      "metaDescription": "Jouez en ligne au tir spatial : pilotez votre vaisseau, abattez les vaisseaux ennemis et esquivez leurs tirs ; 10 niveaux, vagues plus grandes."
     },
     "asteroids": {
       "name": "Astéroïdes",
-      "desc": "Tournez, propulsez et tirez pour briser les rochers de l'espace ; les gros rochers se divisent en plus petits. 10 niveaux avec des rochers plus nombreux et plus rapides."
+      "desc": "Tournez, propulsez et tirez pour briser les rochers de l'espace ; les gros rochers se divisent en plus petits. 10 niveaux avec des rochers plus nombreux et plus rapides.",
+      "title": "Jouer à Asteroids en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Asteroids en ligne : pivotez, accélérez et tirez pour briser les rochers spatiaux ; les gros se divisent en plus petits. 10 niveaux, rochers plus rapides."
     },
     "maze": {
       "name": "Labyrinthe",
-      "desc": "Trouvez la sortie du labyrinthe avant la fin du temps ; 10 niveaux, des petits aux grands labyrinthes, avec du brouillard aux niveaux élevés."
+      "desc": "Trouvez la sortie du labyrinthe avant la fin du temps ; 10 niveaux, des petits aux grands labyrinthes, avec du brouillard aux niveaux élevés.",
+      "title": "Jouer au Labyrinthe en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Labyrinthe en ligne : trouvez la sortie avant la fin du temps ; 10 niveaux, avec brouillard aux niveaux élevés."
     },
     "road-cross": {
       "name": "Traversée de route (style Frogger)",
-      "desc": "Faites sauter la grenouille à travers routes chargées et rivières de troncs flottants pour rentrer 3 fois à la maison ; 10 niveaux avec une circulation plus rapide et une rivière aux niveaux élevés."
+      "desc": "Faites sauter la grenouille à travers routes chargées et rivières de troncs flottants pour rentrer 3 fois à la maison ; 10 niveaux avec une circulation plus rapide et une rivière aux niveaux élevés.",
+      "title": "Jouer à traverser la route (type Frogger) — WFTools",
+      "metaDescription": "Jouez à traverser la route en ligne : faites sauter la grenouille sur des routes fréquentées et des rivières de troncs flottants pour rentrer 3 fois. Gratuit."
     },
     "flappy": {
       "name": "Jeu façon Flappy Bird",
-      "desc": "Touchez pour battre des ailes et passez dans les espaces entre les tuyaux ; 10 niveaux avec des espaces plus étroits et une vitesse croissante."
+      "desc": "Touchez pour battre des ailes et passez dans les espaces entre les tuyaux ; 10 niveaux avec des espaces plus étroits et une vitesse croissante.",
+      "title": "Jouer à un jeu type Flappy Bird gratuit — WFTools",
+      "metaDescription": "Jouez en ligne à un jeu type Flappy Bird : touchez pour battre des ailes et passez entre les tuyaux ; 10 niveaux, ouvertures plus étroites et vitesse croissante."
     },
     "runner": {
       "name": "Dino Runner",
-      "desc": "Sautez par-dessus les cactus et passez sous les oiseaux ; courez assez loin pour réussir chacun des 10 niveaux alors que la vitesse ne cesse d'augmenter."
+      "desc": "Sautez par-dessus les cactus et passez sous les oiseaux ; courez assez loin pour réussir chacun des 10 niveaux alors que la vitesse ne cesse d'augmenter.",
+      "title": "Jouer au Dino Runner en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Dino Runner en ligne : sautez les cactus et baissez-vous sous les oiseaux ; courez assez loin pour franchir chacun des 10 niveaux. Gratuit."
     },
     "whack-a-mole": {
       "name": "Tape-taupe",
-      "desc": "Frappez les taupes qui sortent des trous avant la fin du temps et évitez les bombes ; 10 niveaux, de lent à très rapide."
+      "desc": "Frappez les taupes qui sortent des trous avant la fin du temps et évitez les bombes ; 10 niveaux, de lent à très rapide.",
+      "title": "Jouer à Tape-taupe en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Tape-taupe en ligne : frappez les taupes qui sortent des trous avant la fin du temps et évitez les bombes ; 10 niveaux, de lent à très rapide. Gratuit."
     },
     "simon": {
       "name": "Simon (couleurs à mémoriser)",
-      "desc": "Mémorisez et répétez la suite de couleurs et de sons ; des séquences de plus en plus longues sur 10 niveaux, avec 6 pads dès le niveau 7."
+      "desc": "Mémorisez et répétez la suite de couleurs et de sons ; des séquences de plus en plus longues sur 10 niveaux, avec 6 pads dès le niveau 7.",
+      "title": "Jouer à Simon (mémoire des couleurs) gratuit — WFTools",
+      "metaDescription": "Jouez à Simon en ligne : mémorisez et répétez la séquence de couleurs et de sons ; séquences plus longues sur 10 niveaux, avec 6 touches dès le niveau 7."
     },
     "aim-trainer": {
       "name": "Entraînement de visée",
-      "desc": "Touchez les cibles qui apparaissent au hasard et disparaissent vite ; elles rétrécissent sur 10 niveaux, et votre temps de réaction est mesuré."
+      "desc": "Touchez les cibles qui apparaissent au hasard et disparaissent vite ; elles rétrécissent sur 10 niveaux, et votre temps de réaction est mesuré.",
+      "title": "Jouer à l'entraîneur de visée en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à l'entraîneur de visée en ligne : touchez les cibles qui apparaissent au hasard et disparaissent vite ; elles rétrécissent sur 10 niveaux, réaction mesurée."
     },
     "quick-math": {
       "name": "Calcul mental rapide",
-      "desc": "Faites additions, soustractions, multiplications et divisions de tête sous la pression du temps ; 10 niveaux, des calculs simples aux expressions."
+      "desc": "Faites additions, soustractions, multiplications et divisions de tête sous la pression du temps ; 10 niveaux, des calculs simples aux expressions.",
+      "title": "Jouer au calcul mental rapide en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au calcul mental en ligne : additions, soustractions, multiplications et divisions de tête contre la montre ; 10 niveaux, des sommes simples aux expressions."
     },
     "reaction": {
       "name": "Test de temps de réaction",
-      "desc": "Cliquez dès que l'écran devient vert ; votre moyenne sur 5 manches doit respecter la limite de chaque niveau, de plus en plus serrée sur 10 niveaux."
+      "desc": "Cliquez dès que l'écran devient vert ; votre moyenne sur 5 manches doit respecter la limite de chaque niveau, de plus en plus serrée sur 10 niveaux.",
+      "title": "Jouer au test de réaction en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au test de temps de réaction : cliquez dès que l'écran devient vert ; votre moyenne sur 5 manches doit respecter la limite du niveau, de plus en plus serrée."
     },
     "kalah": {
       "name": "Kalah (Mancala)",
-      "desc": "Semez les graines autour des creux, capturez celles de votre adversaire et rejouez quand vous finissez dans votre réserve ; jouez contre l'ordinateur sur 10 niveaux, de facile à difficile."
+      "desc": "Semez les graines autour des creux, capturez celles de votre adversaire et rejouez quand vous finissez dans votre réserve ; jouez contre l'ordinateur sur 10 niveaux, de facile à difficile.",
+      "title": "Jouer au Kalah (Mancala) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Kalah en ligne : semez les graines dans les trous, capturez celles de l'adversaire et rejouez si vous finissez dans votre grenier."
     },
     "snakes-ladders": {
       "name": "Serpents et échelles",
-      "desc": "Lancez le dé de la case 1 à 100, montez les échelles, évitez les serpents et atteignez l'arrivée avant vos adversaires ; 10 niveaux."
+      "desc": "Lancez le dé de la case 1 à 100, montez les échelles, évitez les serpents et atteignez l'arrivée avant vos adversaires ; 10 niveaux.",
+      "title": "Jouer au Serpents et échelles en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Serpents et échelles en ligne : lancez le dé de la case 1 à 100, montez les échelles, évitez les serpents et arrivez avant vos adversaires ; 10 niveaux."
     },
     "nine-mens-morris": {
       "name": "Jeu du moulin",
-      "desc": "Posez, faites glisser et faites voler vos pions pour aligner trois pions et retirer ceux de votre adversaire ; jouez contre l'ordinateur sur 10 niveaux."
+      "desc": "Posez, faites glisser et faites voler vos pions pour aligner trois pions et retirer ceux de votre adversaire ; jouez contre l'ordinateur sur 10 niveaux.",
+      "title": "Jouer au Jeu du moulin (Morris) gratuit — WFTools",
+      "metaDescription": "Jouez au Jeu du moulin en ligne : posez, glissez et faites voler vos pions pour aligner trois et retirer ceux de l'adversaire ; contre l'ordinateur sur 10 niveaux."
     },
     "battleship": {
       "name": "Bataille navale",
-      "desc": "Trouvez et coulez la flotte de l'ordinateur sur une grille 10x10 avant qu'il ne coule la vôtre ; 10 niveaux, l'ordinateur déduisant de plus en plus finement."
+      "desc": "Trouvez et coulez la flotte de l'ordinateur sur une grille 10x10 avant qu'il ne coule la vôtre ; 10 niveaux, l'ordinateur déduisant de plus en plus finement.",
+      "title": "Jouer à la Bataille navale en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à la Bataille navale en ligne : trouvez et coulez la flotte de l'ordinateur sur une grille 10x10 avant qu'il coule la vôtre ; 10 niveaux."
     },
     "bau-cua": {
       "name": "Bầu Cua (Gourde Crabe Poisson Crevette)",
-      "desc": "Jeu de dés traditionnel vietnamien : misez des jetons virtuels sur les animaux et secouez trois dés ; atteignez l'objectif de jetons sur 10 niveaux (pas d'argent réel)."
+      "desc": "Jeu de dés traditionnel vietnamien : misez des jetons virtuels sur les animaux et secouez trois dés ; atteignez l'objectif de jetons sur 10 niveaux (pas d'argent réel).",
+      "title": "Jouer au Bầu Cua (gourde, crabe, poisson) gratuit — WFTools",
+      "metaDescription": "Jouez au Bầu Cua en ligne : jeu de dés traditionnel vietnamien ; misez des pièces virtuelles sur les animaux et lancez trois dés. Gratuit, sans argent réel."
     },
     "baccarat": {
       "name": "Baccarat",
-      "desc": "Misez sur Joueur, Banquier ou Égalité avec des cartes distribuées selon les règles standard, avec des jetons virtuels ; atteignez l'objectif de jetons sur 10 niveaux (pas d'argent réel)."
+      "desc": "Misez sur Joueur, Banquier ou Égalité avec des cartes distribuées selon les règles standard, avec des jetons virtuels ; atteignez l'objectif de jetons sur 10 niveaux (pas d'argent réel).",
+      "title": "Jouer au Baccara en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Baccara en ligne : misez sur Joueur, Banquier ou Égalité avec des cartes distribuées selon les règles standard, en pièces virtuelles. Sans argent réel."
     },
     "bai-cao": {
       "name": "Bài Cào (jeu à trois cartes)",
-      "desc": "Comparez vos mains de 3 cartes à celles du donneur : brelan, trois figures, puis 9 points jusqu'à 0 ; jetons virtuels, 10 niveaux, pas d'argent réel."
+      "desc": "Comparez vos mains de 3 cartes à celles du donneur : brelan, trois figures, puis 9 points jusqu'à 0 ; jetons virtuels, 10 niveaux, pas d'argent réel.",
+      "title": "Jouer au Bài Cào (jeu à trois cartes) gratuit — WFTools",
+      "metaDescription": "Jouez au Bài Cào en ligne : comparez vos 3 cartes à celles du croupier ; brelan, trois figures, puis 9 à 0 point ; pièces virtuelles, 10 niveaux, sans argent réel."
     },
     "bingo": {
       "name": "Bingo",
-      "desc": "Marquez les numéros annoncés sur votre carte 5x5 et criez BINGO avant les adversaires de l'ordinateur ; les numéros sont annoncés de plus en plus vite sur 10 niveaux."
+      "desc": "Marquez les numéros annoncés sur votre carte 5x5 et criez BINGO avant les adversaires de l'ordinateur ; les numéros sont annoncés de plus en plus vite sur 10 niveaux.",
+      "title": "Jouer au Bingo en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Bingo en ligne : cochez les numéros tirés sur votre carte 5x5 et criez BINGO avant les adversaires ordinateur ; tirages plus rapides sur 10 niveaux."
     },
     "yahtzee": {
       "name": "Yahtzee (cinq dés)",
-      "desc": "Lancez cinq dés, gardez les bons et remplissez 13 cases de score ; atteignez le score cible sur 10 niveaux."
+      "desc": "Lancez cinq dés, gardez les bons et remplissez 13 cases de score ; atteignez le score cible sur 10 niveaux.",
+      "title": "Jouer au Yahtzee (cinq dés) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Yahtzee en ligne : lancez cinq dés, gardez les bons et remplissez 13 cases de score ; atteignez le score cible sur 10 niveaux."
     },
     "crazy-eights": {
       "name": "Crazy Eights (le huit fou)",
-      "desc": "Jouez la même couleur ou la même valeur, les huit changent la couleur ; videz votre main avant 1 à 3 adversaires ordinateur sur 10 niveaux."
+      "desc": "Jouez la même couleur ou la même valeur, les huit changent la couleur ; videz votre main avant 1 à 3 adversaires ordinateur sur 10 niveaux.",
+      "title": "Jouer au Huit américain en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Huit américain en ligne : même couleur ou même valeur, les huit changent la couleur ; videz votre main avant 1 à 3 adversaires ordinateur sur 10 niveaux."
     },
     "car-race": {
       "name": "Course d'esquive",
-      "desc": "Changez de voie pour esquiver les voitures devant vous et parcourez toute la distance ; 10 niveaux avec plus de voies et une circulation plus rapide."
+      "desc": "Changez de voie pour esquiver les voitures devant vous et parcourez toute la distance ; 10 niveaux avec plus de voies et une circulation plus rapide.",
+      "title": "Jouer à esquiver les voitures en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à esquiver les voitures en ligne : changez de voie pour éviter les voitures devant vous et parcourez toute la distance ; 10 niveaux."
     },
     "sky-jump": {
       "name": "Saut dans le ciel",
-      "desc": "Rebondissez de plateforme en plateforme pour monter le plus haut possible sans tomber ; 10 niveaux avec des plateformes plus espacées, mobiles ou cassables."
+      "desc": "Rebondissez de plateforme en plateforme pour monter le plus haut possible sans tomber ; 10 niveaux avec des plateformes plus espacées, mobiles ou cassables.",
+      "title": "Jouer à Sky Jump en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Sky Jump en ligne : rebondissez de plateforme en plateforme pour monter le plus haut possible sans tomber. Gratuit, sans téléchargement ni inscription."
     },
     "gold-miner": {
       "name": "Mineur d'or",
-      "desc": "Lâchez le crochet pour remonter or et diamants, évitez les rochers lourds et atteignez la somme cible en 60 secondes ; 10 niveaux."
+      "desc": "Lâchez le crochet pour remonter or et diamants, évitez les rochers lourds et atteignez la somme cible en 60 secondes ; 10 niveaux.",
+      "title": "Jouer au Chercheur d'or en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Chercheur d'or en ligne : lâchez le crochet pour ramener or et diamants, évitez les gros rochers et atteignez l'objectif en 60 secondes ; 10 niveaux."
     },
     "fruit-slice": {
       "name": "Tranche-fruits",
-      "desc": "Glissez pour trancher les fruits qui jaillissent et esquivez les bombes ; 10 niveaux avec plus de fruits et plus de bombes."
+      "desc": "Glissez pour trancher les fruits qui jaillissent et esquivez les bombes ; 10 niveaux avec plus de fruits et plus de bombes.",
+      "title": "Jouer à Découpe de fruits en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Découpe de fruits en ligne : glissez le doigt pour trancher les fruits qui volent et évitez les bombes ; 10 niveaux, plus de fruits et de bombes."
     },
     "basketball": {
       "name": "Tir au panier",
-      "desc": "Tirez et relâchez pour envoyer le ballon dans le panier avec un nombre limité de tirs ; 10 niveaux, avec un panier mobile dès le niveau 4."
+      "desc": "Tirez et relâchez pour envoyer le ballon dans le panier avec un nombre limité de tirs ; 10 niveaux, avec un panier mobile dès le niveau 4.",
+      "title": "Jouer au tir de basket en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au tir de basket en ligne : glissez et relâchez pour marquer dans le panier avec un nombre de tirs limité ; 10 niveaux, panier mobile dès le niveau 4."
     },
     "bubble-shooter": {
       "name": "Bubble Shooter",
-      "desc": "Tirez des bulles pour en relier 3 ou plus de la même couleur et les éclater, et éliminez-les toutes avant qu'elles n'atteignent le bas ; 10 niveaux avec plus de couleurs."
+      "desc": "Tirez des bulles pour en relier 3 ou plus de la même couleur et les éclater, et éliminez-les toutes avant qu'elles n'atteignent le bas ; 10 niveaux avec plus de couleurs.",
+      "title": "Jouer à Bubble Shooter en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Bubble Shooter en ligne : tirez des bulles pour relier 3 bulles ou plus de la même couleur et les faire éclater avant qu'elles n'arrivent en bas."
     },
     "dot-chase": {
       "name": "Chasse aux points",
-      "desc": "Mangez tous les points du labyrinthe en esquivant les fantômes qui vous poursuivent ; 10 niveaux avec des fantômes plus nombreux et plus malins."
+      "desc": "Mangez tous les points du labyrinthe en esquivant les fantômes qui vous poursuivent ; 10 niveaux avec des fantômes plus nombreux et plus malins.",
+      "title": "Jouer à manger les points et les fantômes — WFTools",
+      "metaDescription": "Jouez en ligne à manger les points : avalez tous les points du labyrinthe et esquivez les fantômes qui vous poursuivent ; 10 niveaux, fantômes plus malins."
     },
     "kakuro": {
       "name": "Kakuro (sommes croisées)",
-      "desc": "Remplissez les cases blanches avec des chiffres de 1 à 9 pour que chaque série totalise son indice, sans répétition ; 10 niveaux, des grilles de 5x5 à 9x9."
+      "desc": "Remplissez les cases blanches avec des chiffres de 1 à 9 pour que chaque série totalise son indice, sans répétition ; 10 niveaux, des grilles de 5x5 à 9x9.",
+      "title": "Jouer au Kakuro (sommes croisées) gratuit — WFTools",
+      "metaDescription": "Jouez au Kakuro en ligne : remplissez les cases blanches avec les chiffres 1 à 9 pour que chaque série atteigne son indice sans répétition ; 10 niveaux."
     },
     "kenken": {
       "name": "KenKen (Calcudoku)",
-      "desc": "Remplissez la grille sans répétition dans les lignes ni les colonnes pour que chaque bloc donne son objectif avec son opération ; 10 niveaux, des grilles de 3x3 à 6x6."
+      "desc": "Remplissez la grille sans répétition dans les lignes ni les colonnes pour que chaque bloc donne son objectif avec son opération ; 10 niveaux, des grilles de 3x3 à 6x6.",
+      "title": "Jouer au KenKen (Calcudoku) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au KenKen en ligne : remplissez la grille sans répétition en lignes ni colonnes pour que chaque cage donne son total avec son opération ; 10 niveaux."
     },
     "word-guess": {
       "name": "Devine le mot (façon Wordle)",
-      "desc": "Devinez le mot secret en anglais grâce aux indices vert, jaune et gris ; 10 niveaux avec des mots de 4 à 6 lettres et moins d'essais."
+      "desc": "Devinez le mot secret en anglais grâce aux indices vert, jaune et gris ; 10 niveaux avec des mots de 4 à 6 lettres et moins d'essais.",
+      "title": "Jouer à deviner le mot (type Wordle) gratuit — WFTools",
+      "metaDescription": "Jouez en ligne à deviner le mot secret en anglais avec indices verts, jaunes et gris ; 10 niveaux avec mots de 4 à 6 lettres et moins d'essais. Gratuit."
     },
     "hangman": {
       "name": "Pendu",
-      "desc": "Devinez le mot anglais lettre par lettre avant d'épuiser vos erreurs permises ; 10 niveaux avec des mots plus longs et moins d'erreurs permises."
+      "desc": "Devinez le mot anglais lettre par lettre avant d'épuiser vos erreurs permises ; 10 niveaux avec des mots plus longs et moins d'erreurs permises.",
+      "title": "Jouer au Pendu en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Pendu en ligne : devinez le mot anglais lettre par lettre avant d'épuiser vos erreurs ; 10 niveaux, mots plus longs et moins d'erreurs permises."
     },
     "word-scramble": {
       "name": "Mots mélangés (anagramme)",
-      "desc": "Remettez les lettres mélangées dans l'ordre pour former un mot anglais avant la fin du temps ; 10 niveaux, 5 mots par niveau."
+      "desc": "Remettez les lettres mélangées dans l'ordre pour former un mot anglais avant la fin du temps ; 10 niveaux, 5 mots par niveau.",
+      "title": "Jouer aux mots mêlés (anagrammes) gratuit — WFTools",
+      "metaDescription": "Jouez aux anagrammes en ligne : remettez en ordre les lettres pour former un mot anglais avant la fin du temps ; 10 niveaux, 5 mots par niveau. Gratuit."
     },
     "domino": {
       "name": "Dominos",
-      "desc": "Associez les dominos à l'une ou l'autre extrémité de la chaîne et videz votre main avant l'ordinateur ; 10 niveaux, l'ordinateur devenant de plus en plus malin."
+      "desc": "Associez les dominos à l'une ou l'autre extrémité de la chaîne et videz votre main avant l'ordinateur ; 10 niveaux, l'ordinateur devenant de plus en plus malin.",
+      "title": "Jouer aux Dominos en ligne gratuit — WFTools",
+      "metaDescription": "Jouez aux Dominos en ligne : posez les tuiles à l'une ou l'autre extrémité de la chaîne et videz votre main avant l'ordinateur ; 10 niveaux, adversaire plus malin."
     },
     "hearts": {
       "name": "Hearts (jeu des cœurs)",
-      "desc": "Évitez les cœurs et la dame de pique dans un jeu de cartes à quatre joueurs ; le plus petit score gagne ; 10 niveaux contre des joueurs ordinateur de plus en plus malins."
+      "desc": "Évitez les cœurs et la dame de pique dans un jeu de cartes à quatre joueurs ; le plus petit score gagne ; 10 niveaux contre des joueurs ordinateur de plus en plus malins.",
+      "title": "Jouer aux Cœurs (Hearts) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez aux Cœurs en ligne : évitez les cœurs et la dame de pique dans ce jeu de cartes à quatre ; le plus petit score gagne ; 10 niveaux."
     },
     "texas-holdem": {
       "name": "Texas Hold'em (jetons virtuels)",
-      "desc": "Poker en tête-à-tête contre l'ordinateur avec des jetons virtuels : couchez-vous, suivez ou relancez, et gagnez quand l'ordinateur n'a plus de jetons ; 10 niveaux, pas d'argent réel."
+      "desc": "Poker en tête-à-tête contre l'ordinateur avec des jetons virtuels : couchez-vous, suivez ou relancez, et gagnez quand l'ordinateur n'a plus de jetons ; 10 niveaux, pas d'argent réel.",
+      "title": "Jouer au Texas Hold'em (jetons virtuels) gratuit — WFTools",
+      "metaDescription": "Jouez au Texas Hold'em en ligne : poker en tête-à-tête contre l'ordinateur avec des jetons virtuels : couchez, suivez ou relancez, et gagnez."
     },
     "n-back": {
       "name": "Mémoire N-Back",
-      "desc": "Regardez la case allumée et appuyez sur Identique quand elle est la même qu'il y a N étapes ; 10 niveaux avec N jusqu'à 4."
+      "desc": "Regardez la case allumée et appuyez sur Identique quand elle est la même qu'il y a N étapes ; 10 niveaux avec N jusqu'à 4.",
+      "title": "Jouer à la mémoire N-Back en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au N-Back en ligne : observez la case allumée et appuyez sur Identique si c'est la même qu'il y a N étapes ; 10 niveaux avec N jusqu'à 4. Gratuit."
     },
     "cookie-clicker": {
       "name": "Cookie Clicker",
-      "desc": "Cliquez pour cuire des cookies, achetez des aides qui cuisent automatiquement et atteignez l'objectif en 2 minutes ; 10 niveaux."
+      "desc": "Cliquez pour cuire des cookies, achetez des aides qui cuisent automatiquement et atteignez l'objectif en 2 minutes ; 10 niveaux.",
+      "title": "Jouer à Cookie Clicker en ligne gratuit — WFTools",
+      "metaDescription": "Jouez à Cookie Clicker en ligne : cliquez pour cuire des cookies, achetez des aides qui cuisent seules et atteignez l'objectif en 2 minutes ; 10 niveaux."
     },
     "tile-connect": {
       "name": "Jeu de paires (façon Onet)",
-      "desc": "Reliez les tuiles identiques par un chemin d'au plus deux virages et videz le plateau avant la fin du temps ; 10 niveaux, plateaux de plus en plus grands."
+      "desc": "Reliez les tuiles identiques par un chemin d'au plus deux virages et videz le plateau avant la fin du temps ; 10 niveaux, plateaux de plus en plus grands.",
+      "title": "Jouer à relier les tuiles (type Onet) gratuit — WFTools",
+      "metaDescription": "Jouez à relier les tuiles en ligne : reliez deux tuiles identiques par un chemin d'au plus deux virages et videz le plateau avant la fin du temps ; 10 niveaux."
     },
     "jigsaw": {
       "name": "Puzzle d'images",
-      "desc": "Échangez les morceaux mélangés pour reconstituer l'image ; 10 niveaux, de 3x3 à 6x6 morceaux."
+      "desc": "Échangez les morceaux mélangés pour reconstituer l'image ; 10 niveaux, de 3x3 à 6x6 morceaux.",
+      "title": "Jouer au Puzzle d'image en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au puzzle d'image en ligne : échangez les pièces mélangées pour reconstituer l'image ; 10 niveaux de 3x3 à 6x6 pièces."
     },
     "mini-golf": {
       "name": "Mini-golf",
-      "desc": "Tirez en arrière et relâchez pour envoyer la balle dans le trou dans la limite de coups ; 10 parcours avec murs et sable."
+      "desc": "Tirez en arrière et relâchez pour envoyer la balle dans le trou dans la limite de coups ; 10 parcours avec murs et sable.",
+      "title": "Jouer au Mini-golf en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Mini-golf en ligne : tirez en arrière et relâchez pour envoyer la balle dans le trou sans dépasser la limite de coups ; 10 parcours avec murs et sable."
     },
     "backgammon": {
       "name": "Backgammon",
-      "desc": "Lancez les dés, ramenez vos pions à la maison et sortez-les avant l'ordinateur, en capturant ses pions isolés en chemin ; 10 niveaux."
+      "desc": "Lancez les dés, ramenez vos pions à la maison et sortez-les avant l'ordinateur, en capturant ses pions isolés en chemin ; 10 niveaux.",
+      "title": "Jouer au Backgammon en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Backgammon en ligne : lancez les dés, ramenez vos pions à la maison et sortez-les avant l'ordinateur en frappant ses pions isolés ; 10 niveaux."
     },
     "tien-len": {
       "name": "Tiến Lên (Treize)",
-      "desc": "Le jeu de cartes vietnamien à quatre : jouez cartes seules, paires, suites et carrés pour vider votre main en premier ; 10 niveaux."
+      "desc": "Le jeu de cartes vietnamien à quatre : jouez cartes seules, paires, suites et carrés pour vider votre main en premier ; 10 niveaux.",
+      "title": "Jouer au Tiến Lên (Treize) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Tiến Lên en ligne : jeu de cartes vietnamien à quatre ; posez cartes seules, paires, suites et carrés pour vider votre main le premier ; 10 niveaux."
     },
     "tower-defense": {
       "name": "Tower Defense",
-      "desc": "Construisez et améliorez des tours le long du chemin pour arrêter toutes les vagues d'ennemis ; 10 niveaux sur trois cartes différentes."
+      "desc": "Construisez et améliorez des tours le long du chemin pour arrêter toutes les vagues d'ennemis ; 10 niveaux sur trois cartes différentes.",
+      "title": "Jouer au Tower Defense en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Tower Defense en ligne : construisez et améliorez des tours le long du chemin pour stopper chaque vague d'ennemis ; 10 niveaux sur trois cartes."
     },
     "color-by-number": {
       "name": "Coloriage par numéros",
-      "desc": "Peignez chaque case de la couleur qui correspond à son numéro pour révéler l'image ; 10 images avec toujours plus de couleurs."
+      "desc": "Peignez chaque case de la couleur qui correspond à son numéro pour révéler l'image ; 10 images avec toujours plus de couleurs.",
+      "title": "Jouer au coloriage par numéros en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au coloriage par numéros en ligne : peignez chaque case de la couleur de son numéro pour révéler l'image ; 10 images avec toujours plus de couleurs."
     },
     "yukon": {
       "name": "Solitaire Yukon",
-      "desc": "Un Klondike sans talon : déplacez n'importe quelle carte face visible avec tout ce qui la recouvre ; 10 niveaux, avec de moins en moins de cartes retournées."
+      "desc": "Un Klondike sans talon : déplacez n'importe quelle carte face visible avec tout ce qui la recouvre ; 10 niveaux, avec de moins en moins de cartes retournées.",
+      "title": "Jouer au Solitaire Yukon en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Yukon en ligne : un Klondike sans talon ; déplacez n'importe quelle carte visible avec toutes celles au-dessus ; 10 niveaux, moins de cartes visibles."
     },
     "chinese-checkers": {
       "name": "Dames chinoises",
-      "desc": "Jeu de pas et de sauts en étoile contre l'ordinateur : déplacez vos 10 pions vers le coin opposé en premier ; 10 niveaux."
+      "desc": "Jeu de pas et de sauts en étoile contre l'ordinateur : déplacez vos 10 pions vers le coin opposé en premier ; 10 niveaux.",
+      "title": "Jouer aux dames chinoises en ligne gratuit — WFTools",
+      "metaDescription": "Jouez aux dames chinoises en ligne contre l'ordinateur : amenez vos 10 pions dans le coin opposé avant lui ; 10 niveaux."
     },
     "mau-binh": {
       "name": "Mậu binh (poker chinois)",
-      "desc": "Répartissez 13 cartes en trois mains de 5, 5 et 3 cartes et battez l'ordinateur ; 5 manches par niveau, 10 niveaux."
+      "desc": "Répartissez 13 cartes en trois mains de 5, 5 et 3 cartes et battez l'ordinateur ; 5 manches par niveau, 10 niveaux.",
+      "title": "Jouer au Mậu Binh (poker chinois) gratuit — WFTools",
+      "metaDescription": "Jouez au Mậu Binh en ligne : disposez 13 cartes en trois mains de 5, 5 et 3 cartes et battez l'ordinateur ; 5 manches par niveau, 10 niveaux. Gratuit."
     },
     "phom": {
       "name": "Phỏm (rami vietnamien)",
-      "desc": "Rami vietnamien à deux joueurs contre l'ordinateur : piochez ou prenez une défausse, formez des phỏm et sortez ; le moins de points restants gagne ; 10 niveaux."
+      "desc": "Rami vietnamien à deux joueurs contre l'ordinateur : piochez ou prenez une défausse, formez des phỏm et sortez ; le moins de points restants gagne ; 10 niveaux.",
+      "title": "Jouer au Phỏm (rami vietnamien) gratuit — WFTools",
+      "metaDescription": "Jouez au Phỏm en ligne : rami vietnamien à deux contre l'ordinateur ; piochez ou prenez une défausse, formez des combinaisons et terminez ; 10 niveaux."
     },
     "shogi": {
       "name": "Shogi (échecs japonais)",
-      "desc": "Jouez au shogi contre l'ordinateur : parachutez les pièces capturées, promouvez et mettez le roi échec et mat ; 10 niveaux avec annulation."
+      "desc": "Jouez au shogi contre l'ordinateur : parachutez les pièces capturées, promouvez et mettez le roi échec et mat ; 10 niveaux avec annulation.",
+      "title": "Jouer au Shogi (échecs japonais) gratuit — WFTools",
+      "metaDescription": "Jouez au shogi contre l'ordinateur : parachutez les pièces capturées, promouvez-les et faites échec et mat au roi ; 10 niveaux avec annulation. Gratuit."
     },
     "janggi": {
       "name": "Janggi (échecs coréens)",
-      "desc": "Jouez aux échecs coréens contre l'ordinateur : diagonales du palais, sauts de canon par-dessus une seule pièce, éléphants à trois pas ; 10 niveaux avec annulation."
+      "desc": "Jouez aux échecs coréens contre l'ordinateur : diagonales du palais, sauts de canon par-dessus une seule pièce, éléphants à trois pas ; 10 niveaux avec annulation.",
+      "title": "Jouer au Janggi (échecs coréens) gratuit — WFTools",
+      "metaDescription": "Jouez aux échecs coréens contre l'ordinateur : diagonales du palais, canon sautant une pièce, éléphants en trois temps ; 10 niveaux avec annulation. Gratuit."
     },
     "pinball": {
       "name": "Flipper (Pinball)",
-      "desc": "Actionnez les palettes gauche et droite pour garder la balle en vie, touchez les bumpers et atteignez le score cible avant d'épuiser vos 3 balles ; 10 niveaux."
+      "desc": "Actionnez les palettes gauche et droite pour garder la balle en vie, touchez les bumpers et atteignez le score cible avant d'épuiser vos 3 balles ; 10 niveaux.",
+      "title": "Jouer au Flipper en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Flipper en ligne : actionnez les palettes gauche et droite, touchez les bumpers et atteignez le score cible avant d'avoir perdu vos 3 billes ; 10 niveaux."
     },
     "cribbage": {
       "name": "Cribbage",
-      "desc": "Cribbage à deux joueurs contre l'ordinateur : crèche, pegging jusqu'à 31, comptage des mains, course à 61 points ; 10 niveaux."
+      "desc": "Cribbage à deux joueurs contre l'ordinateur : crèche, pegging jusqu'à 31, comptage des mains, course à 61 points ; 10 niveaux.",
+      "title": "Jouer au Cribbage en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Cribbage en ligne contre l'ordinateur : crib, pegging jusqu'à 31, décompte des mains, course à 61 points ; 10 niveaux. Gratuit, sans téléchargement."
     },
     "tangram": {
       "name": "Tangram (casse-tête de 7 pièces)",
-      "desc": "Faites glisser les sept pièces du tangram dans la silhouette en les pivotant et en les retournant ; 10 niveaux, de quelques pièces avec indices jusqu'aux sept sans indice."
+      "desc": "Faites glisser les sept pièces du tangram dans la silhouette en les pivotant et en les retournant ; 10 niveaux, de quelques pièces avec indices jusqu'aux sept sans indice.",
+      "title": "Jouer au Tangram (7 pièces) en ligne gratuit — WFTools",
+      "metaDescription": "Jouez au Tangram en ligne : glissez les sept pièces dans la silhouette en les pivotant et retournant ; 10 niveaux, de quelques pièces aux sept."
     },
     "pit-tax": {
       "name": "Impôt sur le revenu et régularisation annuelle",
       "desc": "Calculez l'impôt annuel sur le salaire et la prime du Tet avec le barème à 5 tranches et la déduction de 15,5 millions ; voyez si vous devez un complément ou obtenez un remboursement.",
-      "title": "Calcul de l'impôt sur le revenu au Vietnam 2026 — WFTools",
-      "metaDescription": "Calculez l'impôt sur le revenu vietnamien sur salaire et prime du Tet en 2026 : 5 tranches, déduction 15,5 M, personnes à charge. Complément ou remboursement."
+      "title": "Impôt sur le revenu Vietnam 2026 : calcul — WFTools",
+      "metaDescription": "Calculez l'impôt vietnamien sur salaire et prime de Tet pour 2026 : 5 tranches, déduction de 15,5 M, personnes à charge. Voyez le complément ou le remboursement."
     },
     "savings-bhxh": {
       "name": "Intérêts d'épargne, retraite et assurance sociale",
       "desc": "Calculez les intérêts d'épargne bancaire selon la durée, estimez la pension mensuelle et le versement d'assurance sociale en capital selon la loi de 2024 sur l'assurance sociale",
-      "title": "Intérêts d'épargne, retraite et BHXH — WFTools",
-      "metaDescription": "Calculez les intérêts d'épargne, estimez votre pension mensuelle et l'assurance sociale en capital selon la loi vietnamienne de 2024. Gratuit, dans le navigateur."
+      "title": "Épargne et retraite au Vietnam : calcul — WFTools",
+      "metaDescription": "Calculez les intérêts d'épargne, estimez votre pension mensuelle et le versement unique de la sécurité sociale selon la loi vietnamienne de 2024. Gratuit."
     },
     "base64-text": {
       "name": "Encodeur et décodeur Base64",
@@ -1851,6 +2207,30 @@
       "desc": "Calcule la facture d'électricité selon le nouveau barème EVN à 5 paliers (depuis le 1/11/2026), TVA comprise, et convertit un montant en kWh.",
       "title": "Calcul facture d'électricité par paliers EVN 2026 — WFTools",
       "metaDescription": "Calculez une facture d'électricité selon le barème EVN à 5 paliers du 01/11/2026 : par kWh, relevé du compteur, montant en kWh, estimation par appareil, TVA."
+    },
+    "flashcards": {
+      "name": "Cartes mémoire pour le vocabulaire et les connaissances",
+      "desc": "Créez des paquets de cartes pour apprendre vocabulaire et notions, révisez avec les boîtes de Leitner, faites des quiz, écoutez la prononciation et importez ou exportez du CSV",
+      "title": "Flashcards en ligne pour apprendre le vocabulaire — WFTools",
+      "metaDescription": "Créez des paquets de cartes mémoire, révisez en répétition espacée (boîtes de Leitner), faites des quiz, écoutez la prononciation et importez ou exportez du CSV."
+    },
+    "media-trim-convert": {
+      "name": "Découper et convertir audio et vidéo",
+      "desc": "Découpez un audio ou une vidéo par durée, convertissez en MP4, WebM, MP3, M4A, WAV ou OGG ou créez un GIF, le tout dans votre navigateur",
+      "title": "Découper et convertir audio et vidéo en ligne — WFTools",
+      "metaDescription": "Découpez audio et vidéo par durée, convertissez en MP4, WebM, MP3, M4A, WAV, OGG ou créez un GIF. Traitement dans votre navigateur, fichiers non envoyés, gratuit."
+    },
+    "time-calc": {
+      "name": "Calculatrice de durées, heures de travail et calendrier lunaire",
+      "desc": "Additionnez et soustrayez heures, minutes et secondes, calculez heures de travail et paie, convertissez les horodatages Unix et passez du calendrier solaire au calendrier lunaire avec Can Chi",
+      "title": "Calcul de durées, heures, Unix et date lunaire — WFTools",
+      "metaDescription": "Additionnez des hh:mm:ss, calculez heures de travail et paie, convertissez horodatages Unix et dates solaires en lunaires avec Can Chi. Gratuit."
+    },
+    "todo-pomodoro": {
+      "name": "Liste de tâches et minuteur Pomodoro",
+      "desc": "Une liste de tâches avec priorités et échéances, plus un minuteur Pomodoro de 25 minutes pour chaque tâche, enregistrée dans votre navigateur",
+      "title": "Liste de tâches et minuteur Pomodoro en ligne — WFTools",
+      "metaDescription": "Créez une liste de tâches avec priorités et échéances et un minuteur Pomodoro : 25 minutes de concentration, pauses courtes et longues. Gratuit."
     }
   },
   "s": {
@@ -6947,6 +7327,239 @@
       "faq.a4": "À cause des arrondis et d'une période de relevé qui n'est pas un mois complet, le quota étant calculé au prorata des jours.",
       "faq.q5": "L'ancien barème à 6 paliers est-il encore utilisé ?",
       "faq.a5": "Le barème à 6 paliers s'applique jusqu'au 31/10/2026 inclus ; l'outil le conserve pour que vous puissiez comparer."
+    },
+    "flashcards": {
+      "demo": "hello - formule de salutation amicale\nthank you - mots pour exprimer sa gratitude\ngood morning - salutation employée avant midi\nwater - liquide transparent que l'on boit\nbook - pages reliées que l'on lit\nfriend - personne que l'on apprécie et en qui l'on a confiance",
+      "demoName": "Paquet d'exemple",
+      "deck": "Paquet",
+      "newDeck": "+ Nouveau paquet",
+      "rename": "Renommer",
+      "deleteDeck": "Supprimer le paquet",
+      "speechLang": "Langue de prononciation",
+      "aria.tabs": "Choisissez un outil",
+      "tab.study": "Réviser",
+      "tab.quiz": "Quiz",
+      "tab.cards": "Cartes du paquet",
+      "study.no": "Pas encore",
+      "study.yes": "Je sais",
+      "speak": "Écouter",
+      "reverse": "Afficher le verso d'abord",
+      "studyAll": "Réviser toutes les cartes",
+      "bulk": "Collez plusieurs cartes, une par ligne au format \"recto - verso\"",
+      "bulkAdd": "Ajouter les cartes",
+      "front": "Recto",
+      "back": "Verso",
+      "addOne": "Ajouter une carte",
+      "importCsv": "Importez un fichier CSV ou déposez-le ici",
+      "exportCsv": "Exporter en fichier CSV",
+      "resetProgress": "Réinitialiser la progression",
+      "storeNote": "Les cartes sont enregistrées dans ce navigateur et ne sont pas envoyées à un serveur. Exportez un CSV pour les sauvegarder.",
+      "askName": "Nom du paquet",
+      "confirmDelete": "Supprimer ce paquet et toutes ses cartes ?",
+      "newName": "Nouveau paquet",
+      "stat.total": "Total des cartes",
+      "stat.due": "À réviser",
+      "stat.learned": "Apprises",
+      "study.allDone": "Vous avez révisé toutes les cartes prévues. Bravo !",
+      "study.empty": "Ce paquet ne contient pas encore de cartes. Allez dans Cartes du paquet pour en ajouter.",
+      "study.tap": "Touchez la carte pour la retourner",
+      "noSpeech": "Ce navigateur ne prend pas en charge la synthèse vocale.",
+      "quiz.need": "Il faut au moins 4 cartes avec des réponses différentes pour faire un quiz.",
+      "quiz.score": "Score",
+      "quiz.again": "Réessayer",
+      "cardsWord": "cartes",
+      "edit": "Modifier",
+      "del": "Supprimer",
+      "noneAdded": "Aucune carte valide trouvée. Chaque ligne doit comporter deux parties séparées par un tiret.",
+      "added": "Ajoutées",
+      "skipped": "lignes ignorées",
+      "needBoth": "Saisissez le recto et le verso.",
+      "confirmReset": "Réinitialiser la progression de toutes les cartes de ce paquet ?",
+      "seo.howTitle": "Comment réviser avec des cartes mémoire",
+      "seo.how1": "Créez un paquet en collant plusieurs lignes au format \"recto - verso\" ou en ajoutant les cartes une à une. Vous pouvez aussi importer un fichier CSV et le ré-exporter pour le sauvegarder ou l'utiliser ailleurs.",
+      "seo.how2": "Pendant la révision, touchez la carte pour la retourner et voir la réponse, puis choisissez Je sais ou Pas encore. Une carte retenue passe dans une boîte supérieure et revient plus tard ; une carte oubliée retourne dans la première boîte pour être revue aussitôt.",
+      "seo.how3": "Le mode quiz crée des questions à quatre choix à partir de votre propre paquet. Le bouton Écouter lit la carte à voix haute avec la voix de votre navigateur, et vous pouvez choisir la langue.",
+      "seo.faqTitle": "Questions fréquentes",
+      "faq.q1": "En quoi les cartes mémoire aident-elles à apprendre le vocabulaire ?",
+      "faq.a1": "Essayer de retrouver la réponse avant de retourner la carte renforce la mémoire bien plus que relire. Réviser à intervalles croissants permet de retenir plus longtemps en moins de temps.",
+      "faq.q2": "Qu'est-ce que le système des boîtes de Leitner ?",
+      "faq.a2": "Il range les cartes dans des boîtes. Une carte retenue monte d'une boîte et se révise moins souvent, après 1, 2, 4, 8 et 16 jours ; une carte oubliée retourne dans la première boîte.",
+      "faq.q3": "Comment importer une liste de mots que j'ai déjà ?",
+      "faq.a3": "Collez des lignes composées de deux parties séparées par un tiret, deux-points, point-virgule ou tabulation, ou choisissez un fichier CSV à deux colonnes.",
+      "faq.q4": "Où mon paquet est-il enregistré ?",
+      "faq.a4": "Dans votre navigateur, jamais sur un serveur. Exportez un CSV pour le sauvegarder avant d'effacer les données du navigateur ou de changer d'appareil.",
+      "faq.q5": "Comment fonctionne la prononciation ?",
+      "faq.a5": "Elle utilise la voix intégrée à votre navigateur ou à votre système. Choisissez la langue du paquet pour que la bonne voix soit utilisée ; certaines langues demandent que la voix correspondante soit installée sur votre appareil."
+    },
+    "media-trim-convert": {
+      "dropTitle": "Choisissez un fichier audio ou vidéo, ou déposez-le ici",
+      "dropHint": "MP4, MOV, WebM, MKV, MP3, WAV, M4A, OGG… Jusqu'à 1 Go.",
+      "aria.tabs": "Choisissez un outil",
+      "tab.cut": "Découper",
+      "tab.convert": "Convertir le format",
+      "tab.gif": "Vidéo en GIF",
+      "start": "Début",
+      "fromPlayer": "Utiliser la position du lecteur",
+      "end": "Fin",
+      "toEnd": "fin du fichier",
+      "fast": "Découpe rapide, conserve la qualité d'origine (le point de coupe peut varier de quelques secondes)",
+      "format": "Format cible",
+      "videoGroup": "Vidéo",
+      "audioGroup": "Audio",
+      "fps": "Images par seconde",
+      "width": "Largeur (px)",
+      "quality": "Qualité",
+      "qHigh": "Élevée (gros fichier)",
+      "qMed": "Moyenne (recommandée)",
+      "qLow": "Faible (petit fichier)",
+      "run": "Lancer le traitement",
+      "note": "Le traitement se fait dans votre navigateur avec ffmpeg : votre fichier n'est pas envoyé à un serveur. Au premier lancement, le processeur est téléchargé, environ 31 Mo. Ne traitez que des fichiers dont vous avez le droit de vous servir.",
+      "result": "Résultat",
+      "download": "Télécharger le résultat",
+      "needVideo": "Cette action nécessite un fichier vidéo.",
+      "tooBig": "Le fichier dépasse 1 Go et le navigateur n'a pas assez de mémoire pour le traiter.",
+      "badTime": "Durée non valide. Utilisez minutes:secondes, par exemple 1:30 ; la fin doit être après le début.",
+      "gifLong": "Un GIF devrait durer moins de 60 secondes. Choisissez une partie plus courte.",
+      "loading": "Chargement du processeur…",
+      "working": "Traitement en cours",
+      "failed": "Ce fichier n'a pas pu être traité. Il est peut-être endommagé ou dans un format non pris en charge.",
+      "done": "Terminé !",
+      "seo.howTitle": "Comment découper et convertir audio et vidéo",
+      "seo.how1": "Choisissez un fichier, prévisualisez-le, puis saisissez les points de début et de fin ou utilisez la position actuelle du lecteur. La découpe rapide conserve la qualité d'origine et est très rapide, mais le point de coupe peut varier de quelques secondes ; la découpe précise ré-encode le fichier.",
+      "seo.how2": "L'onglet Convertir le format transforme une vidéo en MP4 ou WebM, et un audio, ou la piste son d'une vidéo, en MP3, M4A, WAV ou OGG, avec trois niveaux de qualité.",
+      "seo.how3": "L'onglet Vidéo en GIF crée une image animée à partir d'un extrait de vidéo, avec le choix des images par seconde et de la largeur. Tout repose sur ffmpeg exécuté dans votre navigateur : vos fichiers ne sont jamais envoyés ailleurs.",
+      "seo.faqTitle": "Questions fréquentes",
+      "faq.q1": "Découper une vidéo réduit-il sa qualité ?",
+      "faq.a1": "La découpe rapide copie les données telles quelles, donc la qualité ne change pas. La découpe précise ré-encode la vidéo, la qualité dépend donc du niveau choisi.",
+      "faq.q2": "Pourquoi le point de coupe rapide est-il un peu décalé ?",
+      "faq.a2": "La découpe rapide ne peut couper qu'aux images clés de la vidéo, le clip peut donc commencer un peu plus tôt. Utilisez la découpe précise quand il vous faut une seconde exacte.",
+      "faq.q3": "Mon fichier est-il envoyé à un serveur ?",
+      "faq.a3": "Non. Tout le traitement se fait dans votre navigateur. La première fois, il télécharge le processeur ffmpeg, environ 31 Mo, que le navigateur réutilise ensuite.",
+      "faq.q4": "Quelle est la taille maximale de fichier ?",
+      "faq.a4": "Jusqu'à 1 Go, mais les gros fichiers demandent beaucoup de mémoire et sont lents. Pour les longues vidéos, découpez d'abord ou utilisez un ordinateur plutôt qu'un téléphone.",
+      "faq.q5": "Vers quel format dois-je convertir ?",
+      "faq.a5": "Le MP4 se lit sur presque tous les appareils, le WebM est léger pour le web, le MP3 est le format audio le plus courant, et le WAV n'est pas compressé : il garde la qualité d'origine mais pèse lourd."
+    },
+    "time-calc": {
+      "aria.tabs": "Choisissez un outil",
+      "tab.dur": "Additionner et soustraire",
+      "tab.work": "Heures de travail",
+      "tab.unix": "Horodatage Unix",
+      "tab.lunar": "Calendrier lunaire",
+      "dur.lines": "Une durée par ligne (heures:minutes:secondes). Ajoutez un signe moins pour soustraire.",
+      "dur.hint": "Formats acceptés : 1:30:15, 90:00 (minutes:secondes), 1h 30m ou 45 (secondes).",
+      "work.start": "Heure de début",
+      "work.end": "Heure de fin",
+      "work.break": "Pause (minutes)",
+      "work.days": "Nombre de jours",
+      "work.rate": "Taux horaire (facultatif)",
+      "unix.ts": "Horodatage Unix (secondes ou millisecondes)",
+      "unix.now": "Utiliser l'heure actuelle",
+      "unix.dt": "Ou choisissez une date et une heure (heure de votre appareil)",
+      "lunar.s2l": "Calendrier solaire → lunaire",
+      "lunar.solar": "Date solaire (grégorienne)",
+      "lunar.l2s": "Calendrier lunaire → solaire",
+      "lunar.day": "Jour",
+      "lunar.month": "Mois",
+      "lunar.year": "Année",
+      "lunar.leap": "Mois intercalaire",
+      "dur.bad": "Impossible de lire la ligne",
+      "unit.d": "jours",
+      "dur.total": "Total",
+      "dur.human": "En toutes lettres",
+      "unit.h": "heures",
+      "unit.m": "minutes",
+      "unit.s": "secondes",
+      "dur.hours": "Heures décimales",
+      "dur.minutes": "Total en minutes",
+      "dur.seconds": "Total en secondes",
+      "work.errTime": "Choisissez une heure de début et une heure de fin.",
+      "work.net": "Temps travaillé",
+      "work.decimal": "Heures décimales",
+      "work.gross": "Temps total sur place",
+      "work.totalDays": "Total des heures sur tous les jours",
+      "work.pay": "Rémunération",
+      "work.overnight": "Poste de nuit : l'heure de fin compte pour le lendemain.",
+      "unix.bad": "Valeur non valide.",
+      "unix.local": "Votre heure locale",
+      "unix.secs": "Secondes",
+      "unix.ms": "Millisecondes",
+      "lunar.result": "Date lunaire",
+      "lunar.leapShort": "intercalaire",
+      "lunar.yearCC": "Année",
+      "lunar.dayCC": "Jour",
+      "lunar.weekday": "Jour de la semaine",
+      "lunar.solarResult": "Date solaire correspondante",
+      "lunar.none": "Cette date lunaire n'existe pas (vérifiez le jour 30 ou le mois intercalaire).",
+      "seo.howTitle": "Comment sont calculés les durées, les heures de travail et la conversion de calendrier",
+      "seo.how1": "L'onglet Additionner et soustraire permet de saisir plusieurs durées en heures:minutes:secondes et de les additionner ou les soustraire, par exemple 1:30:00 + 0:45:30. Le résultat s'affiche en heures, minutes et secondes, avec le total en minutes et en heures décimales.",
+      "seo.how2": "L'onglet Heures de travail calcule le temps entre l'arrivée et le départ, ajoute 24 heures quand le poste passe minuit, retire la pause et convertit le résultat en heures décimales pour le multiplier par un taux horaire.",
+      "seo.how3": "Un horodatage Unix est le nombre de secondes (ou de millisecondes) écoulées depuis le 1er janvier 1970 à 00:00 UTC. Le calendrier lunaire est converti avec un algorithme astronomique pour le fuseau horaire du Vietnam (UTC+7), avec mois intercalaires et noms Can Chi (cycle sexagésimal) de l'année et du jour.",
+      "seo.faqTitle": "Questions fréquentes",
+      "faq.q1": "Comment additionner plusieurs durées en heures, minutes et secondes ?",
+      "faq.a1": "Saisissez chaque durée en heures:minutes:secondes ou sous la forme 1h 30m sur sa propre ligne, mettez un signe moins devant celles à soustraire, et le total se met à jour aussitôt avec les heures décimales.",
+      "faq.q2": "Comment est calculé un poste de nuit ?",
+      "faq.a2": "Si l'heure de fin est antérieure à l'heure de début, l'outil considère que le poste se termine le lendemain, ajoute 24 heures puis retire la pause.",
+      "faq.q3": "Qu'est-ce qu'un horodatage Unix et sous quelles formes existe-t-il ?",
+      "faq.a3": "C'est le nombre de secondes écoulées depuis le 1er janvier 1970 UTC. Il comporte 10 chiffres (secondes) ou 13 chiffres (millisecondes) ; l'outil reconnaît celui que vous collez.",
+      "faq.q4": "La conversion du calendrier solaire en lunaire est-elle précise ?",
+      "faq.a4": "L'outil utilise un algorithme astronomique des nouvelles lunes et des termes solaires pour le fuseau du Vietnam (UTC+7), conforme aux calendriers perpétuels courants, mois intercalaires compris.",
+      "faq.q5": "Puis-je convertir du calendrier lunaire vers le calendrier solaire ?",
+      "faq.a5": "Oui. Saisissez le jour, le mois et l'année lunaires, cochez mois intercalaire si besoin, et l'outil renvoie la date solaire correspondante."
+    },
+    "todo-pomodoro": {
+      "aria.tabs": "Choisissez un outil",
+      "tab.tasks": "Liste de tâches",
+      "tab.pomo": "Pomodoro",
+      "td.ph": "Que faut-il faire…",
+      "td.prio": "Priorité",
+      "td.p0": "Normale",
+      "td.p1": "Importante",
+      "td.p2": "Urgente",
+      "td.due": "Échéance",
+      "td.add": "Ajouter",
+      "td.fAll": "Toutes",
+      "td.fActive": "À faire",
+      "td.fToday": "Pour aujourd'hui",
+      "td.fDone": "Terminées",
+      "td.clear": "Effacer les tâches terminées",
+      "pm.work": "Concentration",
+      "pm.short": "Pause courte",
+      "pm.long": "Pause longue",
+      "pm.start": "Démarrer",
+      "pm.reset": "Réinitialiser",
+      "pm.skip": "Passer",
+      "pm.settings": "Réglages (minutes)",
+      "pm.cWork": "Concentration",
+      "pm.cShort": "Pause courte",
+      "pm.cLong": "Pause longue",
+      "pm.cEvery": "Sessions avant une pause longue",
+      "pm.auto": "Lancer automatiquement la phase suivante",
+      "pm.active": "Tâche en cours",
+      "td.toggle": "Marquer comme terminée",
+      "td.focusing": "En cours",
+      "td.focus": "Travailler dessus",
+      "td.del": "Supprimer",
+      "td.empty": "Aucune tâche dans cette vue pour l'instant.",
+      "pm.noTask": "(Aucune tâche sélectionnée)",
+      "pm.doing": "En cours sur",
+      "pm.today": "Sessions de concentration aujourd'hui",
+      "pm.pause": "Pause",
+      "seo.howTitle": "Comment utiliser la liste de tâches et le minuteur Pomodoro",
+      "seo.how1": "Ajoutez une tâche, choisissez une priorité et, si vous le souhaitez, une échéance. Les tâches urgentes et en retard s'affichent en premier, et vous pouvez filtrer par tâches à faire, terminées ou à rendre aujourd'hui.",
+      "seo.how2": "La technique Pomodoro découpe votre temps en sessions de travail concentré, de 25 minutes par défaut, séparées par des pauses courtes de 5 minutes. Après 4 sessions, vous prenez une pause longue de 15 minutes. Toutes ces durées sont modifiables.",
+      "seo.how3": "Choisissez la tâche sur laquelle vous travaillez, et chaque session de concentration terminée lui est comptée. Vos données sont enregistrées dans votre propre navigateur et ne sont envoyées nulle part.",
+      "seo.faqTitle": "Questions fréquentes",
+      "faq.q1": "Qu'est-ce que la méthode Pomodoro ?",
+      "faq.a1": "Une méthode de gestion du temps : travaillez en pleine concentration pendant 25 minutes, puis reposez-vous 5 minutes. Après quatre sessions, vous faites une pause plus longue. Le nom vient du minuteur de cuisine en forme de tomate.",
+      "faq.q2": "Puis-je modifier la durée de chaque session ?",
+      "faq.a2": "Oui. Vous pouvez régler les minutes de concentration, de pause courte et de pause longue ainsi que le nombre de sessions avant une pause longue ; les réglages sont mémorisés pour la prochaine fois.",
+      "faq.q3": "Le minuteur continue-t-il si je change d'onglet ?",
+      "faq.a3": "La page doit rester ouverte pour pouvoir sonner. Elle compte le temps avec l'horloge du système, donc elle ne prend pas de retard quand vous passez à un autre onglet.",
+      "faq.q4": "Où ma liste de tâches est-elle enregistrée ?",
+      "faq.a4": "Dans le stockage de votre navigateur sur cet appareil, jamais sur un serveur. Si vous effacez les données du navigateur ou changez d'appareil, la liste ne sera plus là.",
+      "faq.q5": "Y a-t-il une notification à la fin du temps ?",
+      "faq.a5": "Une courte sonnerie retentit et le temps restant s'affiche dans le titre de l'onglet pour que vous puissiez le suivre en travaillant dans une autre fenêtre."
     }
   }
 }
