@@ -69,7 +69,7 @@ function show(r: Detected): void {
     extra = `<p class="note">${T('link', 'Đây là đường link tới:')} <b>${escapeHtml(host)}</b></p><a class="btn" href="${escapeHtml(v)}" target="_blank" rel="noopener noreferrer nofollow">${T('open', 'Mở link')}</a>`;
   } else if (/^WIFI:/i.test(v)) {
     const g = (k: string) => v.match(new RegExp(`${k}:((?:\\\\.|[^;])*)`))?.[1]?.replace(/\\(.)/g, '$1') ?? '';
-    extra = `<table class="data-table data-table--compact"><tr><th>${T('wifi.ssid', 'Tên mạng Wi-Fi')}</th><td>${escapeHtml(g('S'))}</td></tr><tr><th>${T('wifi.pw', 'Mật khẩu')}</th><td class="mono">${escapeHtml(g('P'))}</td></tr><tr><th>${T('wifi.sec', 'Bảo mật')}</th><td>${escapeHtml(g('T') || '—')}</td></tr></table>`;
+    extra = `<table class="data-table dk-table data-table--compact"><tr><th>${T('wifi.ssid', 'Tên mạng Wi-Fi')}</th><td>${escapeHtml(g('S'))}</td></tr><tr><th>${T('wifi.pw', 'Mật khẩu')}</th><td class="mono">${escapeHtml(g('P'))}</td></tr><tr><th>${T('wifi.sec', 'Bảo mật')}</th><td>${escapeHtml(g('T') || '—')}</td></tr></table>`;
   } else if (/^000201/.test(v)) extra = `<p class="note">${T('pay', 'Mã thanh toán (VietQR / EMVCo). Hãy quét bằng ứng dụng ngân hàng để chuyển tiền.')}</p>`;
   el('res').innerHTML = `<p class="note">${T('format', 'Loại mã')}: <b>${escapeHtml(r.format.replace(/_/g, ' ').toUpperCase())}</b></p><pre class="output">${escapeHtml(v)}</pre>${extra}`;
 }

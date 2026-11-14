@@ -41,7 +41,7 @@ export function split4(ip: number, prefix: number, newPrefix: number, limit = 25
 }
 /** IPv6: mở rộng, rút gọn, dải mạng */
 export function expand6(s: string): bigint {
-  let t = s.trim().toLowerCase();
+  let t = s.trim().toLowerCase().replace(/%.*$/, '').replace(/^\[|\]$/g, '');
   if (!/^[0-9a-f:.]+$/.test(t)) throw new Error('v6');
   if (t.includes('.')) {
     const i = t.lastIndexOf(':');

@@ -16,7 +16,7 @@ $('#tool-root').innerHTML = `
       <div class="field"><span class="field-label">${T('payload', 'Nội dung (payload)')}</span><pre class="output" id="p"></pre></div>
     </div>
     <div class="row">${button('copy', T('copyPayload', 'Sao chép payload'), true)}</div>
-    <table class="data-table"><tbody id="claims"></tbody></table>
+    <table class="data-table dk-table"><tbody id="claims"></tbody></table>
   </div>
   <div class="panel" style="margin-top:16px">
     <h2 class="panel-title">${T('verifyTitle', 'Kiểm tra chữ ký HS256/HS384/HS512')}</h2>

@@ -41,10 +41,10 @@ function run(): void {
   const lines = [
     `<title>${a(t)}</title>`, `<meta name="description" content="${a(d)}" />`, `<link rel="canonical" href="${a(u)}" />`, `<meta name="robots" content="${a(val('robots'))}" />`,
     `<meta name="theme-color" content="${a(val('color'))}" />`, '', `<!-- Open Graph -->`, `<meta property="og:type" content="${a(val('type'))}" />`, `<meta property="og:title" content="${a(t)}" />`,
-    `<meta property="og:description" content="${a(d)}" />`, `<meta property="og:url" content="${a(u)}" />`, img ? `<meta property="og:image" content="${a(img)}" />` : '', val('site') ? `<meta property="og:site_name" content="${a(val('site'))}" />` : '',
+    `<meta property="og:description" content="${a(d)}" />`, `<meta property="og:url" content="${a(u)}" />`, img ? `<meta property="og:image" content="${a(img)}" />` : null, val('site') ? `<meta property="og:site_name" content="${a(val('site'))}" />` : null,
     `<meta property="og:locale" content="${a(val('lang'))}" />`, '', `<!-- X (Twitter) -->`, `<meta name="twitter:card" content="${img ? 'summary_large_image' : 'summary'}" />`,
-    val('twitter') ? `<meta name="twitter:site" content="${a(val('twitter'))}" />` : '', `<meta name="twitter:title" content="${a(t)}" />`, `<meta name="twitter:description" content="${a(d)}" />`, img ? `<meta name="twitter:image" content="${a(img)}" />` : '',
-  ].filter((x, i, arr) => x !== '' || (arr[i - 1] !== '' && i > 0));
+    val('twitter') ? `<meta name="twitter:site" content="${a(val('twitter'))}" />` : null, `<meta name="twitter:title" content="${a(t)}" />`, `<meta name="twitter:description" content="${a(d)}" />`, img ? `<meta name="twitter:image" content="${a(img)}" />` : null,
+  ].filter((x): x is string => x !== null);
   (el<HTMLTextAreaElement>('out')).value = lines.join('\n');
   const tl = [...t].length, dl = [...d].length;
   el('tlen').textContent = T('tLen', '{n} ký tự — nên từ 30 đến 60 để Google không cắt bớt.').replace('{n}', String(tl));

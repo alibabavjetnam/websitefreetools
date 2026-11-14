@@ -2044,3 +2044,8 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
   .cal-grid { grid-template-columns: repeat(3, 1fr); }
   .cal-today { background: none; }
 }
+/* Bảng chữ (không phải bảng số) của 50 công cụ 14/11/2026: canh trái, cho xuống dòng để không tràn màn hình điện thoại */
+.dk-table th, .dk-table td { text-align: left; white-space: normal; overflow-wrap: anywhere; vertical-align: top; }
+.dk-table td:first-child, .dk-table th:first-child { min-width: 0; }
+.dk-table td.mono { word-break: break-all; }
+.dk-table input { width: 100%; min-width: 0; }

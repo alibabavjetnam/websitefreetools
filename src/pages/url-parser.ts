@@ -10,11 +10,11 @@ $('#tool-root').innerHTML = `
   <div class="panel" style="margin-top:24px">
     ${input('url', T('url', 'Dán địa chỉ URL'), { mono: true, value: 'https://user:pass@shop.example.com:8443/products/qr-code?utm_source=facebook&utm_medium=cpc&color=xanh%20d%C6%B0%C6%A1ng&id=42#reviews' })}
     ${errorBox('err')}
-    <table class="data-table"><tbody id="parts"></tbody></table>
+    <table class="data-table dk-table"><tbody id="parts"></tbody></table>
   </div>
   <div class="panel" style="margin-top:16px">
     <h2 class="panel-title">${T('params', 'Tham số truy vấn')} <span class="note" id="pcount"></span></h2>
-    <table class="data-table data-table--compact"><thead><tr><th>${T('key', 'Tên')}</th><th>${T('value', 'Giá trị (đã giải mã)')}</th><th></th></tr></thead><tbody id="params"></tbody></table>
+    <table class="data-table dk-table data-table--compact"><thead><tr><th>${T('key', 'Tên')}</th><th>${T('value', 'Giá trị (đã giải mã)')}</th><th></th></tr></thead><tbody id="params"></tbody></table>
     <div class="row">${button('add', T('add', 'Thêm tham số'))}${button('strip', T('strip', 'Xoá tham số theo dõi (utm, fbclid, gclid)'))}</div>
     ${input('out', T('rebuilt', 'URL sau khi sửa'), { mono: true, attrs: 'readonly' })}
     <div class="row">${button('copy', T('copy', 'Sao chép URL'), true)}</div>

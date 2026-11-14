@@ -79,7 +79,7 @@ function group(): void {
   const rows = members.map((m) => `<tr><td>${escapeHtml(m)}</td><td>${fmtMoney(paid.get(m) ?? 0)}</td><td style="color:${(bal.get(m) ?? 0) >= 0 ? '#0e7a55' : '#b9000e'}">${fmtMoney(bal.get(m) ?? 0)}</td></tr>`).join('');
   const arrow = (a: string, b: string, x: number) => T('pays', '{a} chuyển cho {b}: {x}').replace('{a}', a).replace('{b}', b).replace('{x}', fmtMoney(x));
   el('grpRes').innerHTML = (errs.length ? `<p class="error">${errs.map(escapeHtml).join('<br>')}</p>` : '') +
-    `<p><b>${T('sum', 'Tổng chi')}: ${fmtMoney(total)}</b></p><table class="data-table data-table--compact"><thead><tr><th>${T('col.who', 'Thành viên')}</th><th>${T('col.paid', 'Đã trả')}</th><th>${T('col.bal', 'Chênh lệch (+ được nhận lại)')}</th></tr></thead><tbody>${rows}</tbody></table>` +
+    `<p><b>${T('sum', 'Tổng chi')}: ${fmtMoney(total)}</b></p><table class="data-table dk-table data-table--compact"><thead><tr><th>${T('col.who', 'Thành viên')}</th><th>${T('col.paid', 'Đã trả')}</th><th>${T('col.bal', 'Chênh lệch (+ được nhận lại)')}</th></tr></thead><tbody>${rows}</tbody></table>` +
     `<h2 class="panel-title">${T('settle', 'Cách thanh toán gọn nhất')}</h2>${tx.length ? `<ol>${tx.map(([a, b, x]) => `<li>${escapeHtml(arrow(a, b, x))}</li>`).join('')}</ol>` : `<p class="note">${T('even', 'Không ai nợ ai.')}</p>`}`;
   report = `${T('sum', 'Tổng chi')}: ${fmtMoney(total)}\n` + tx.map(([a, b, x]) => '• ' + arrow(a, b, x)).join('\n');
 }

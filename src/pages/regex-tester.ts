@@ -25,7 +25,7 @@ $('#tool-root').innerHTML = `
     ${errorBox('err')}
     ${area('text', T('text', 'Văn bản thử'), { rows: 8, mono: false, value: T('sample', 'Liên hệ: hotro@websitefreetools.com hoặc sales@vidu.vn, điện thoại +84 912 345 678. Hạn chót 15/12/2026. Website https://websitefreetools.com') })}
     <div class="field"><span class="field-label">${T('highlight', 'Kết quả tô sáng')} <span id="count" class="note"></span></span><div class="output" id="hl" style="font-family:inherit;white-space:pre-wrap;word-break:break-word"></div></div>
-    <table class="data-table data-table--compact"><thead><tr><th>#</th><th>${T('match', 'Chuỗi khớp')}</th><th>${T('index', 'Vị trí')}</th><th>${T('groups', 'Nhóm')}</th></tr></thead><tbody id="rows"></tbody></table>
+    <table class="data-table dk-table data-table--compact"><thead><tr><th>#</th><th>${T('match', 'Chuỗi khớp')}</th><th>${T('index', 'Vị trí')}</th><th>${T('groups', 'Nhóm')}</th></tr></thead><tbody id="rows"></tbody></table>
   </div>
   <div class="panel" style="margin-top:16px">
     <h2 class="panel-title">${T('replaceTitle', 'Thay thế')}</h2>
@@ -35,7 +35,7 @@ $('#tool-root').innerHTML = `
   </div>
   <div class="panel" style="margin-top:16px">
     <h2 class="panel-title">${T('cheatTitle', 'Ký hiệu hay dùng')}</h2>
-    <table class="data-table data-table--compact"><tbody>
+    <table class="data-table dk-table data-table--compact"><tbody>
       <tr><td class="mono">\\d \\w \\s</td><td>${T('c.class', 'Chữ số, chữ/số/gạch dưới, khoảng trắng')}</td></tr>
       <tr><td class="mono">. ^ $</td><td>${T('c.anchor', 'Ký tự bất kỳ, đầu dòng, cuối dòng')}</td></tr>
       <tr><td class="mono">* + ? {2,5}</td><td>${T('c.quant', '0 lần trở lên, 1 lần trở lên, có hoặc không, từ 2 đến 5 lần')}</td></tr>

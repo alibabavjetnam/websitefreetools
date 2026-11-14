@@ -36,7 +36,7 @@ el('files').addEventListener('change', async () => {
     const rows = Object.entries(info.tags).map(([k, v]) => `<tr><th>${LABEL[k] ?? k}</th><td>${escapeHtml(v)}</td></tr>`).join('');
     const gps = info.gps ? `<tr><th class="error-text">${T('gps', 'Vị trí GPS')}</th><td class="error-text"><b>${info.gps.lat.toFixed(6)}, ${info.gps.lon.toFixed(6)}</b> — <a href="https://www.openstreetmap.org/?mlat=${info.gps.lat}&mlon=${info.gps.lon}#map=16/${info.gps.lat}/${info.gps.lon}" target="_blank" rel="noopener">${T('map', 'xem bản đồ')}</a></td></tr>` : '';
     const status = info.gps ? `<b class="error-text">${T('hasGps', 'Ảnh có toạ độ GPS: người nhận biết được nơi chụp!')}</b>` : info.hasMeta || rows ? `<b>${T('hasMeta', 'Ảnh có thông tin ẩn.')}</b>` : `<span class="ok-text">${T('clean0', 'Không thấy thông tin ẩn.')}</span>`;
-    return `<div class="panel" style="margin-top:12px"><b>${escapeHtml(f.name)}</b> <span class="note">${fmtSize(f.size)}</span><p style="margin:4px 0">${status}</p>${rows || gps ? `<table class="data-table data-table--compact"><tbody>${gps}${rows}</tbody></table>` : ''}</div>`;
+    return `<div class="panel" style="margin-top:12px"><b>${escapeHtml(f.name)}</b> <span class="note">${fmtSize(f.size)}</span><p style="margin:4px 0">${status}</p>${rows || gps ? `<table class="data-table dk-table data-table--compact"><tbody>${gps}${rows}</tbody></table>` : ''}</div>`;
   }).join('');
 });
 async function reencode(f: File): Promise<Uint8Array> {

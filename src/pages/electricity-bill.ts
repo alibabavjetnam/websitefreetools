@@ -30,14 +30,14 @@ $('#tool-root').innerHTML = `
         <div class="form-grid">${input('old', T('oldIdx', 'Hoặc nhập chỉ số cũ'), { type: 'number', attrs: 'min="0"' })}${input('new', T('newIdx', 'Chỉ số mới'), { type: 'number', attrs: 'min="0"' })}</div></div>
       <div data-panel="money" hidden>${input('money', T('money', 'Số tiền điện đã trả (đ, gồm thuế)'), { value: fmtInt(800000), attrs: 'inputmode="numeric"' })}</div>
       <div data-panel="app" hidden>
-        <table class="data-table data-table--compact"><thead><tr><th>${T('dev', 'Thiết bị')}</th><th>W</th><th>${T('hours', 'Giờ/ngày')}</th><th>${T('qty', 'SL')}</th></tr></thead><tbody>
+        <table class="data-table dk-table data-table--compact"><thead><tr><th>${T('dev', 'Thiết bị')}</th><th>W</th><th>${T('hours', 'Giờ/ngày')}</th><th>${T('qty', 'SL')}</th></tr></thead><tbody>
         ${APPLIANCES.map(([k, l, w, h]) => `<tr><td>${l}</td><td><input type="number" id="w-${k}" value="${w}" min="0" style="width:80px" /></td><td><input type="number" id="h-${k}" value="${h}" min="0" max="24" step="0.5" style="width:70px" /></td><td><input type="number" id="q-${k}" value="${['fridge', 'light', 'tv', 'fan', 'rice', 'wash'].includes(k) ? 1 : 0}" min="0" max="20" style="width:60px" /></td></tr>`).join('')}
         </tbody></table>
       </div>
     </div>
     <div class="panel">
       <div class="stat-grid" id="sum"></div>
-      <table class="data-table data-table--compact"><thead><tr><th>${T('tier', 'Bậc')}</th><th>kWh</th><th>${T('price', 'Đơn giá')}</th><th>${T('amount', 'Thành tiền')}</th></tr></thead><tbody id="lines"></tbody></table>
+      <table class="data-table dk-table data-table--compact"><thead><tr><th>${T('tier', 'Bậc')}</th><th>kWh</th><th>${T('price', 'Đơn giá')}</th><th>${T('amount', 'Thành tiền')}</th></tr></thead><tbody id="lines"></tbody></table>
       <p class="note">${T('note', 'Giá chưa gồm thuế; hoá đơn thực tế có thể lệch vài đồng do làm tròn. Kỳ ghi chỉ số không tròn tháng thì định mức mỗi bậc được tính theo số ngày.')}</p>
     </div>
   </div>

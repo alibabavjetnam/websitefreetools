@@ -11,7 +11,7 @@ $('#tool-root').innerHTML = `
     <div class="stat-grid" id="top"></div>
     <div class="row">${button('ip', T('showIp', 'Xem địa chỉ IP công cộng'), true)}${button('copy', T('copy', 'Sao chép toàn bộ thông tin'))}</div>
     <p class="note" id="ipnote">${T('ipNote', 'Địa chỉ IP chỉ được tra khi bạn bấm nút, qua dịch vụ miễn phí api.ipify.org.')}</p>
-    <table class="data-table"><tbody id="rows"></tbody></table>
+    <table class="data-table dk-table"><tbody id="rows"></tbody></table>
   </div>
 `;
 interface UAData { brands?: { brand: string; version: string }[]; mobile?: boolean; platform?: string }

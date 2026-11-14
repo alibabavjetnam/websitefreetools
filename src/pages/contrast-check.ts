@@ -13,7 +13,7 @@ $('#tool-root').innerHTML = `
       <div class="field-row">${input('bg', T('bg', 'Màu nền'), { type: 'color', value: '#ffffff' })}${input('bgt', 'HEX', { mono: true, value: '#ffffff' })}</div>
       <div class="row">${button('swap', T('swap', 'Đổi chữ ↔ nền'))}${button('fix', T('fix', 'Gợi ý màu chữ đạt chuẩn AA'), true)}</div>
       <div class="stat stat--main"><span class="stat-label">${T('ratio', 'Tỉ lệ tương phản')}</span><span class="stat-value" id="ratio"></span></div>
-      <table class="data-table"><thead><tr><th>${T('level', 'Mức')}</th><th>${T('normal', 'Chữ thường')}</th><th>${T('large', 'Chữ lớn (≥ 24px hoặc 18,5px đậm)')}</th></tr></thead><tbody id="res"></tbody></table>
+      <table class="data-table dk-table"><thead><tr><th>${T('level', 'Mức')}</th><th>${T('normal', 'Chữ thường')}</th><th>${T('large', 'Chữ lớn (≥ 24px hoặc 18,5px đậm)')}</th></tr></thead><tbody id="res"></tbody></table>
     </div>
     <div class="panel">
       <div class="cc-demo" id="demo">

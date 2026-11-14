@@ -25,7 +25,7 @@ $('#tool-root').innerHTML = `
   </div>
   <div class="panel" style="margin-top:16px">
     <div class="row">${check('upper', T('upper', 'Chữ in hoa'))}${check('b64', T('base64', 'Hiện dạng Base64'))}</div>
-    <table class="data-table"><tbody id="res"></tbody></table>
+    <table class="data-table dk-table"><tbody id="res"></tbody></table>
     ${input('cmp', T('compare', 'Dán mã băm cần so sánh (không bắt buộc)'), { mono: true })}
     <p class="note" id="cmp-res"></p>
   </div>

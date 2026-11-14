@@ -16,7 +16,7 @@ $('#tool-root').innerHTML = `
     <div class="panel" data-panel="v4">
       ${input('ip4', T('ip4', 'Địa chỉ IP và prefix (CIDR) hoặc subnet mask'), { mono: true, value: '192.168.1.130/26', ph: '10.0.0.5/24 · 192.168.1.10 255.255.255.0' })}
       ${errorBox('err4')}
-      <table class="data-table"><tbody id="res4"></tbody></table>
+      <table class="data-table dk-table"><tbody id="res4"></tbody></table>
       <div class="row">${button('copy4', T('copy', 'Sao chép kết quả'))}</div>
       ${select('split', T('split', 'Chia nhỏ thành các mạng'), Array.from({ length: 33 }, (_, i) => [String(i), '/' + i] as [string, string]), '28')}
       <div id="subs" class="mono" style="columns:3 180px;font-size:.875rem"></div>
@@ -24,7 +24,7 @@ $('#tool-root').innerHTML = `
     <div class="panel" data-panel="v6" hidden>
       ${input('ip6', T('ip6', 'Địa chỉ IPv6 / prefix'), { mono: true, value: '2001:db8:abcd:12::1/64' })}
       ${errorBox('err6')}
-      <table class="data-table"><tbody id="res6"></tbody></table>
+      <table class="data-table dk-table"><tbody id="res6"></tbody></table>
     </div>
   </div>
   ${privacyNote()}

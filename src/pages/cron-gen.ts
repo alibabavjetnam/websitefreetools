@@ -31,7 +31,7 @@ $('#tool-root').innerHTML = `
     </div>
     <div class="panel">
       <h2 class="panel-title">${T('meaning', 'Ý nghĩa')}</h2>
-      <table class="data-table data-table--compact"><tbody id="fields"></tbody></table>
+      <table class="data-table dk-table data-table--compact"><tbody id="fields"></tbody></table>
       <h2 class="panel-title">${T('next', '10 lần chạy tiếp theo (giờ máy bạn)')}</h2>
       <ol id="next" class="plain-list"></ol>
     </div>

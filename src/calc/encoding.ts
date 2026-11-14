@@ -99,7 +99,16 @@ export function escapeStr(s: string, mode: EscapeMode): string {
 }
 export function unescapeStr(s: string, mode: EscapeMode): string {
   switch (mode) {
-    case 'json': return JSON.parse(`"${s.replace(/(^|[^\\])"/g, '$1\\"')}"`) as string;
+    case 'json': {
+      // Dấu " chưa thoát được thêm \ trước khi đưa cho JSON.parse; xuống dòng thật đổi thành \n
+      let t = '';
+      for (let i = 0; i < s.length; i++) {
+        const c = s[i];
+        if (c === '\\' && i + 1 < s.length) { t += c + s[++i]; continue; }
+        t += c === '"' ? '\\"' : c === '\n' ? '\\n' : c === '\r' ? '\\r' : c === '\t' ? '\\t' : c;
+      }
+      return JSON.parse(`"${t}"`) as string;
+    }
     case 'js': return s.replace(/\\(u\{[0-9a-f]+\}|u[0-9a-f]{4}|x[0-9a-f]{2}|.)/gi, (_, e: string) => {
       if (e[0] === 'u') return String.fromCodePoint(parseInt(e.replace(/[u{}]/g, ''), 16));
       if (e[0] === 'x') return String.fromCharCode(parseInt(e.slice(1), 16));

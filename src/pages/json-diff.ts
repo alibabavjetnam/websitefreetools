@@ -18,7 +18,7 @@ $('#tool-root').innerHTML = `
   <div class="panel" style="margin-top:16px">
     <div class="row">${check('order', T('order', 'Bỏ qua thứ tự phần tử trong mảng'))}${button('swap', T('swap', 'Đổi A ↔ B'))}${button('copy', T('copy', 'Sao chép báo cáo'))}</div>
     <p id="sum"></p>
-    <table class="data-table data-table--compact"><thead><tr><th>${T('col.path', 'Đường dẫn')}</th><th>${T('col.kind', 'Thay đổi')}</th><th>A</th><th>B</th></tr></thead><tbody id="rows"></tbody></table>
+    <table class="data-table dk-table data-table--compact"><thead><tr><th>${T('col.path', 'Đường dẫn')}</th><th>${T('col.kind', 'Thay đổi')}</th><th>A</th><th>B</th></tr></thead><tbody id="rows"></tbody></table>
   </div>
   ${privacyNote()}
 `;

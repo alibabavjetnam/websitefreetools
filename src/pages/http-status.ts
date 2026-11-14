@@ -72,7 +72,7 @@ $('#tool-root').innerHTML = `
     </div>
     <div class="panel" data-panel="mime" hidden>
       ${input('mq', T('msearch', 'Tìm theo đuôi file hoặc kiểu MIME'), { ph: '.webp, pdf, video…' })}
-      <table class="data-table data-table--compact"><thead><tr><th>${T('ext', 'Đuôi file')}</th><th>MIME type</th></tr></thead><tbody id="mlist"></tbody></table>
+      <table class="data-table dk-table data-table--compact"><thead><tr><th>${T('ext', 'Đuôi file')}</th><th>MIME type</th></tr></thead><tbody id="mlist"></tbody></table>
     </div>
   </div>
   ${privacyNote()}
@@ -83,7 +83,7 @@ function status(): void {
   const hit = CODES.filter(([c, n, d]) => !q || String(c).startsWith(q) || n.toLowerCase().includes(q) || d.toLowerCase().includes(q));
   el('list').innerHTML = [1, 2, 3, 4, 5].map((g) => {
     const rows = hit.filter(([c]) => Math.floor(c / 100) === g);
-    return rows.length ? `<h2 class="panel-title">${GROUP[g]}</h2><table class="data-table data-table--compact"><tbody>${rows.map(([c, n, d]) => `<tr><th style="width:64px" class="mono hs-${g}">${c}</th><td style="width:34%"><b>${escapeHtml(n)}</b></td><td>${d}</td></tr>`).join('')}</tbody></table>` : '';
+    return rows.length ? `<h2 class="panel-title">${GROUP[g]}</h2><table class="data-table dk-table data-table--compact"><tbody>${rows.map(([c, n, d]) => `<tr><th style="width:64px" class="mono hs-${g}">${c}</th><td style="width:34%"><b>${escapeHtml(n)}</b></td><td>${d}</td></tr>`).join('')}</tbody></table>` : '';
   }).join('') || `<p class="note">${T('none', 'Không có mã nào khớp.')}</p>`;
 }
 function mime(): void {

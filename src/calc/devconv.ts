@@ -431,10 +431,12 @@ const JOINS = ['LEFT OUTER JOIN', 'RIGHT OUTER JOIN', 'FULL OUTER JOIN', 'LEFT J
 const KEYWORDS = 'SELECT FROM WHERE AND OR NOT IN IS NULL AS ON GROUP BY ORDER HAVING LIMIT OFFSET INSERT INTO VALUES UPDATE SET DELETE JOIN LEFT RIGHT INNER OUTER FULL CROSS UNION ALL DISTINCT CASE WHEN THEN ELSE END LIKE ILIKE BETWEEN EXISTS ASC DESC CREATE TABLE ALTER DROP INDEX PRIMARY KEY FOREIGN REFERENCES DEFAULT WITH RETURNING COUNT SUM AVG MIN MAX COALESCE CAST OVER PARTITION CONFLICT DO NOTHING TRUE FALSE'.split(' ');
 export function formatSql(sql: string, indent = '  ', upper = true): string {
   // Tách chuỗi, comment để không đụng vào nội dung bên trong
-  const tokens: { t: string; raw: boolean }[] = [];
+  const tokens: { t: string; raw: boolean; sp?: boolean }[] = [];
   const re = /('(?:[^']|'')*'|"(?:[^"]|"")*"|`[^`]*`|--[^\n]*|\/\*[\s\S]*?\*\/|\s+|[(),;]|[^\s(),;'"`]+)/g;
   let m: RegExpExecArray | null;
   while ((m = re.exec(sql))) tokens.push({ t: m[0], raw: /^['"`]|^--|^\/\*/.test(m[0]) });
+  // sp: trước từ này có khoảng trắng trong câu gốc (giữ cách viết x='a' hay t (a, b) của người dùng)
+  tokens.forEach((x, i) => (x.sp = i > 0 && /^\s+$/.test(tokens[i - 1].t)));
   const words = tokens.filter((x) => !/^\s+$/.test(x.t));
   let out = '';
   let depth = 0;
@@ -442,7 +444,7 @@ export function formatSql(sql: string, indent = '  ', upper = true): string {
   const parenStack: boolean[] = [];
   for (let i = 0; i < words.length; i++) {
     const w = words[i];
-    if (w.raw) { out += (out && !out.endsWith('(') && !out.endsWith('\n') && !out.endsWith(' ') ? ' ' : '') + w.t; if (w.t.startsWith('--')) out += nl(); continue; }
+    if (w.raw) { if (!w.sp) out = out.replace(/ $/, ''); out += (out && w.sp && !out.endsWith('(') && !out.endsWith('\n') && !out.endsWith(' ') ? ' ' : '') + w.t; if (w.t.startsWith('--')) out += nl(); continue; }
     // Gom cụm từ khoá nhiều chữ
     let phrase = '';
     for (const len of [3, 2, 1]) {
@@ -460,7 +462,7 @@ export function formatSql(sql: string, indent = '  ', upper = true): string {
       const sub = words[i + 1] && /^(SELECT|WITH)$/i.test(words[i + 1].t);
       parenStack.push(sub);
       const prev = out.replace(/\s+$/, '').split(/[\s(]/).pop()!.toUpperCase();
-      const spaced = /^(IN|EXISTS|VALUES|AS|ON|AND|OR|NOT|FROM|JOIN|WHERE|SELECT|USING|ALL|ANY)$/.test(prev) || /[=<>,]$/.test(prev);
+      const spaced = !!w.sp || /^(IN|EXISTS|VALUES|AS|ON|AND|OR|NOT|FROM|JOIN|WHERE|SELECT|USING|ALL|ANY)$/.test(prev) || /[=<>,]$/.test(prev);
       out = out.replace(/\s+$/, '') + (out && spaced ? ' ' : '') + '(';
       if (sub) { depth += 2; out += nl(); depth -= 1; }
       continue;

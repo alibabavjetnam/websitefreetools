@@ -13,7 +13,7 @@ $('#tool-root').innerHTML = `
     <div class="stat-grid" id="stats"></div>
     <p class="note" id="warn"></p>
     <div class="row">${button('clean', T('clean', 'Xoá ký tự ẩn'), true)}${button('nfc', T('nfc', 'Chuẩn hoá dấu (NFC)'))}${button('copy', T('copy', 'Sao chép văn bản'))}</div>
-    <div style="max-height:420px;overflow:auto"><table class="data-table data-table--compact"><thead><tr><th>${T('col.ch', 'Ký tự')}</th><th>${T('col.cp', 'Mã Unicode')}</th><th>UTF-8</th><th>UTF-16</th><th>${T('col.kind', 'Loại')}</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <div style="max-height:420px;overflow:auto"><table class="data-table dk-table data-table--compact"><thead><tr><th>${T('col.ch', 'Ký tự')}</th><th>${T('col.cp', 'Mã Unicode')}</th><th>UTF-8</th><th>UTF-16</th><th>${T('col.kind', 'Loại')}</th></tr></thead><tbody id="rows"></tbody></table></div>
   </div>
   ${privacyNote()}
 `;
