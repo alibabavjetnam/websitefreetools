@@ -17,6 +17,18 @@
         <p class="lead">Che giấu mã JavaScript để khó đọc, khó sao chép lại: mã hoá chuỗi, đổi tên biến, gói trong eval. Mã không rời khỏi máy của bạn.</p>
       </header>
       <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Làm rối mã JavaScript để bảo vệ</h2>
+        <p data-i18n="seo.how1">Mã JavaScript chạy trên trình duyệt nên ai cũng xem được. Làm rối (obfuscate) đổi tên biến, mã hoá chuỗi khiến mã rất khó đọc và sao chép.</p>
+        <p data-i18n="seo.how2">Dán mã và chọn cách làm rối: mã hoá chuỗi, đổi số sang hex, đổi tên biến cục bộ, gói trong eval. Mã mới chạy y như cũ; hãy giữ bản gốc để sửa sau này.</p>
+        <p data-i18n="seo.how3">Làm rối không phải mã hoá tuyệt đối; nó chỉ làm việc đọc trộm tốn công hơn.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Mã sau khi làm rối có chạy chậm hơn không?</summary><p data-i18n="faq.a1">Có thể chậm và nặng hơn một chút, nhất là khi bật gói trong eval.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Có giải ngược được không?</summary><p data-i18n="faq.a2">Người có kinh nghiệm vẫn có thể phân tích; làm rối chỉ tăng độ khó.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Có nên làm rối mã có khoá API không?</summary><p data-i18n="faq.a3">Không. Đừng bao giờ để khoá bí mật trong mã chạy ở trình duyệt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Mã của tôi có bị gửi lên mạng không?</summary><p data-i18n="faq.a4">Không. Việc làm rối chạy trên máy bạn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Mã lỗi sau khi làm rối thì sao?</summary><p data-i18n="faq.a5">Tắt bớt tuỳ chọn (ví dụ đổi tên biến hoặc gói trong eval) rồi thử lại; với mã có import/export hãy bật chế độ module.</p></details>
+      </section>
     </main>
     <script type="module" src="/src/pages/js-obfuscate.ts"></script>
   </body>

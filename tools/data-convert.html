@@ -17,6 +17,18 @@
         <p class="lead">Mở file hoặc dán dữ liệu, chọn định dạng cần đổi sang. Dữ liệu được xử lý ngay trên máy của bạn.</p>
       </header>
       <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Chuyển đổi dữ liệu JSON, XML, CSV, Excel</h2>
+        <p data-i18n="seo.how1">Dữ liệu từ phần mềm, API hay bảng tính thường ở các định dạng khác nhau. Công cụ đổi qua lại giữa JSON, XML, CSV và Excel (.xlsx) để bạn mở, sửa hoặc nhập vào hệ thống khác.</p>
+        <p data-i18n="seo.how2">Dán dữ liệu hoặc chọn file, chọn định dạng đích, xem trước dạng bảng rồi tải kết quả. Dữ liệu lồng nhau được trải phẳng thành cột khi đổi sang bảng.</p>
+        <p data-i18n="seo.how3">Mọi xử lý diễn ra trên trình duyệt nên dữ liệu khách hàng, đơn hàng không bị gửi đi.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">CSV mở Excel bị lỗi phông chữ có dấu?</summary><p data-i18n="faq.a1">Hãy tải dạng Excel (.xlsx) hoặc CSV có BOM UTF-8 để Excel hiển thị đúng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">JSON lồng nhiều cấp đổi sang bảng thế nào?</summary><p data-i18n="faq.a2">Các trường lồng nhau được ghép tên bằng dấu chấm, ví dụ address.city, thành từng cột.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Có giới hạn số dòng không?</summary><p data-i18n="faq.a3">Không có giới hạn cố định; hàng trăm nghìn dòng vẫn chạy nhưng sẽ chậm hơn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Đổi sang XML có chọn tên thẻ gốc được không?</summary><p data-i18n="faq.a4">Có, bạn đặt được tên thẻ gốc của file XML.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Dữ liệu có bị tải lên mạng không?</summary><p data-i18n="faq.a5">Không. Chuyển đổi diễn ra trên máy bạn.</p></details>
+      </section>
     </main>
     <script type="module" src="/src/pages/data-convert.ts"></script>
   </body>

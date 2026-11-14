@@ -17,6 +17,18 @@
         <p class="lead">Nhúng ảnh nhỏ thẳng vào HTML, CSS hoặc mã nguồn mà không cần file riêng.</p>
       </header>
       <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Khi nào dùng ảnh dạng Base64</h2>
+        <p data-i18n="seo.how1">Base64 biến ảnh thành một chuỗi chữ có thể dán thẳng vào HTML, CSS hay JSON, không cần file ảnh riêng. Cách này hợp với biểu tượng nhỏ, ảnh trong email hoặc dữ liệu gửi qua API.</p>
+        <p data-i18n="seo.how2">Chọn ảnh để nhận chuỗi Base64 hoặc data URI kèm sẵn mã HTML, CSS. Chiều ngược lại, dán chuỗi Base64 để xem lại ảnh và tải về.</p>
+        <p data-i18n="seo.how3">Chuỗi Base64 lớn hơn file gốc khoảng một phần ba, nên không nên dùng cho ảnh lớn trên website.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Data URI là gì?</summary><p data-i18n="faq.a1">Là chuỗi bắt đầu bằng data:image/png;base64, dùng trực tiếp trong thuộc tính src của thẻ img hoặc url() trong CSS.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao chuỗi Base64 dài hơn ảnh gốc?</summary><p data-i18n="faq.a2">Base64 viết 3 byte dữ liệu thành 4 ký tự nên dung lượng tăng khoảng 33%.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Có nên dùng Base64 cho mọi ảnh trên web?</summary><p data-i18n="faq.a3">Không. Chỉ nên dùng cho ảnh rất nhỏ; ảnh lớn để dạng file sẽ được trình duyệt lưu đệm tốt hơn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Dán chuỗi Base64 mà không hiện ảnh?</summary><p data-i18n="faq.a4">Kiểm tra chuỗi có bị cắt thiếu hoặc lẫn ký tự lạ. Chuỗi có thể có hoặc không có tiền tố data:image.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Ảnh của tôi có bị gửi đi đâu không?</summary><p data-i18n="faq.a5">Không. Việc chuyển đổi diễn ra trên máy bạn.</p></details>
+      </section>
     </main>
     <script type="module" src="/src/pages/image-base64.ts"></script>
   </body>

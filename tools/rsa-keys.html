@@ -17,6 +17,18 @@
         <p class="lead">Tạo cặp khoá RSA hoặc dán cặp khoá sẵn có, rồi mã hoá văn bản bằng khoá công khai và giải mã bằng khoá bí mật. Mọi thứ chạy ngay trên máy bạn.</p>
       </header>
       <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Mã hoá bất đối xứng RSA</h2>
+        <p data-i18n="seo.how1">RSA dùng một cặp khoá: khoá công khai để mã hoá và khoá bí mật để giải mã. Bạn có thể chia sẻ khoá công khai cho người khác mà vẫn chỉ mình bạn đọc được thư.</p>
+        <p data-i18n="seo.how2">Công cụ tạo cặp khoá dạng PEM ngay trên trình duyệt bằng Web Crypto, mã hoá văn bản ngắn bằng khoá công khai và giải mã bằng khoá bí mật.</p>
+        <p data-i18n="seo.how3">Khoá bí mật không bao giờ rời khỏi máy bạn; hãy cất giữ cẩn thận.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Nên chọn độ dài khoá bao nhiêu?</summary><p data-i18n="faq.a1">Tối thiểu 2048 bit; 4096 bit an toàn hơn nhưng chậm hơn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Mã hoá văn bản dài được không?</summary><p data-i18n="faq.a2">RSA chỉ mã hoá được đoạn ngắn; văn bản dài nên dùng công cụ Mã hoá AES.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Khoá PEM dùng với phần mềm khác được không?</summary><p data-i18n="faq.a3">Được, PEM là định dạng chuẩn dùng với OpenSSL và hầu hết thư viện.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Mất khoá bí mật thì sao?</summary><p data-i18n="faq.a4">Không giải mã lại được những gì đã mã hoá bằng khoá công khai tương ứng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Khoá có bị gửi lên máy chủ không?</summary><p data-i18n="faq.a5">Không. Khoá được tạo ngay trên máy bạn.</p></details>
+      </section>
     </main>
     <script type="module" src="/src/pages/rsa-keys.ts"></script>
   </body>

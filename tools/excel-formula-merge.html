@@ -17,6 +17,18 @@
         <p class="lead">Trộn nhiều sheet hoặc nhiều file Excel theo công thức từng ô (SUM, IF, CONCAT, UNIQUE...), lưu công thức để dùng lại.</p>
       </header>
       <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Trộn dữ liệu nhiều file Excel theo công thức</h2>
+        <p data-i18n="seo.how1">Tổng hợp nhiều sheet hoặc nhiều file Excel bằng công thức đặt cho từng ô: cộng, đếm, trung bình, lớn nhất, nhỏ nhất, nối chuỗi, loại trùng, điều kiện IF, SUMIF, ngày nhỏ nhất, lớn nhất.</p>
+        <p data-i18n="seo.how2">Công thức có thể lồng nhau và lưu theo chuyên đề để dùng lại kỳ sau. Bộ tính công thức chạy riêng, không dùng eval.</p>
+        <p data-i18n="seo.how3">File xử lý trên trình duyệt, không tải lên máy chủ.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Ví dụ công thức cộng các nguồn?</summary><p data-i18n="faq.a1">SUM(A1) cộng giá trị ô A1 của mọi nguồn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Lồng hàm được không?</summary><p data-i18n="faq.a2">Được, ví dụ CONCAT(A1, IF(B1="Nam"," - Nam"," - Nữ")).</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Kiểm tra thiếu dữ liệu thế nào?</summary><p data-i18n="faq.a3">Dùng hàm báo Thiếu khi không nguồn nào có dữ liệu, báo Trùng khi bị lặp.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Lưu công thức để dùng lại được không?</summary><p data-i18n="faq.a4">Có, lưu theo chuyên đề trong trình duyệt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">File có bị gửi đi không?</summary><p data-i18n="faq.a5">Không.</p></details>
+      </section>
     </main>
     <script type="module" src="/src/pages/excel-formula-merge.ts"></script>
   </body>
