@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo CSS box-shadow, gradient, border-radius — WFTools</title>
+    <meta name="description" content="Tạo mã CSS trực quan: đổ bóng box-shadow, màu chuyển linear, radial, conic gradient, bo góc border-radius, hiệu ứng kính mờ. Kéo thanh trượt, sao chép CSS." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo CSS đổ bóng, gradient</h1>
+        <p class="lead">Kéo thanh trượt để tạo đổ bóng, màu chuyển, bo góc, kính mờ và sao chép mã CSS.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách tạo hiệu ứng CSS</h2>
+        <p data-i18n="seo.how1">Box-shadow gồm độ lệch ngang, dọc, độ nhoè, độ lan và màu. Bóng mềm, đẹp thường có độ nhoè lớn, độ lan âm và độ đậm thấp (10 đến 25%).</p>
+        <p data-i18n="seo.how2">Gradient tạo nền chuyển màu: thẳng theo góc, toả tròn từ tâm, hoặc xoay vòng quanh tâm. Thêm màu thứ ba cho chuyển màu phong phú hơn.</p>
+        <p data-i18n="seo.how3">Kính mờ (glassmorphism) dùng nền trong suốt, backdrop-filter làm mờ phía sau và viền sáng mảnh, đẹp nhất khi đặt trên nền nhiều màu.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">backdrop-filter có chạy trên mọi trình duyệt?</summary><p data-i18n="faq.a1">Chạy trên Chrome, Edge, Safari, Firefox bản mới. Mã có kèm tiền tố -webkit- cho Safari cũ.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Bóng đổ nhiều lớp thế nào?</summary><p data-i18n="faq.a2">Ngăn các bóng bằng dấu phẩy trong cùng một box-shadow. Hãy tạo từng lớp rồi ghép lại.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Đơn vị px có thay bằng rem được không?</summary><p data-i18n="faq.a3">Được. Chia giá trị px cho 16 để ra rem nếu cỡ chữ gốc là 16 px.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Bo góc thành hình tròn?</summary><p data-i18n="faq.a4">Đặt bo góc bằng một nửa chiều rộng, hoặc dùng border-radius: 50% cho phần tử vuông.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Gradient có làm trang nặng không?</summary><p data-i18n="faq.a5">Không. Gradient do trình duyệt vẽ, nhẹ hơn nhiều so với ảnh nền.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/css-generator.ts"></script>
+  </body>
+</html>

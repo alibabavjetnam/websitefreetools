@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tối ưu, nén file SVG online, giảm dung lượng — WFTools</title>
+    <meta name="description" content="Tối ưu file SVG online: bỏ metadata, dữ liệu thừa của Inkscape, Illustrator, Figma, chú thích, nhóm rỗng; làm tròn toạ độ; xem trước, tải SVG hoặc data URI." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tối ưu và nén SVG</h1>
+        <p class="lead">Làm gọn file SVG từ phần mềm thiết kế, giảm dung lượng mà hình hiển thị vẫn như cũ.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Vì sao file SVG cần tối ưu</h2>
+        <p data-i18n="seo.how1">File SVG xuất từ Inkscape, Illustrator, Figma thường chứa nhiều dữ liệu riêng của phần mềm, chú thích, số thập phân dài. Bỏ đi có thể giảm 30 đến 70% dung lượng.</p>
+        <p data-i18n="seo.how2">Công cụ làm tròn toạ độ theo số chữ số thập phân bạn chọn (2 là đủ cho biểu tượng), rút gọn đường path, bỏ nhóm rỗng và khoảng trắng thừa.</p>
+        <p data-i18n="seo.how3">So sánh hình trước và sau ngay bên dưới. Nếu thấy hình bị lệch, tăng số chữ số thập phân lên 3.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Tối ưu có làm mờ hình không?</summary><p data-i18n="faq.a1">Không. SVG là hình vector; làm tròn hợp lý không thấy khác bằng mắt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Bỏ width/height để làm gì?</summary><p data-i18n="faq.a2">Hình sẽ co giãn theo khung chứa trên web, chỉ giữ viewBox để đúng tỉ lệ.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Data URI dùng ở đâu?</summary><p data-i18n="faq.a3">Dán thẳng vào CSS background-image hoặc thẻ &lt;img src&gt; mà không cần file riêng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có hỗ trợ SVG có ảnh nhúng không?</summary><p data-i18n="faq.a4">Có, ảnh nhúng được giữ nguyên; muốn nhẹ hơn hãy nén ảnh đó riêng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Công cụ có dùng SVGO không?</summary><p data-i18n="faq.a5">Không. WFTools tự viết bộ tối ưu nhẹ chạy trên trình duyệt.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/svg-optimize.ts"></script>
+  </body>
+</html>

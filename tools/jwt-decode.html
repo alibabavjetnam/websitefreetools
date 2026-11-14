@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giải mã JWT, xem payload và kiểm tra chữ ký — WFTools</title>
+    <meta name="description" content="Giải mã JSON Web Token (JWT) online: xem header, payload, hạn exp, iat theo giờ địa phương và kiểm tra chữ ký HS256, HS384, HS512. Không gửi token đi." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Giải mã JWT</h1>
+        <p class="lead">Đọc nội dung JSON Web Token, xem thời hạn và kiểm tra chữ ký HMAC ngay trên máy bạn.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cấu trúc của một JWT</h2>
+        <p data-i18n="seo.how1">JWT gồm 3 phần ngăn bằng dấu chấm: header (thuật toán), payload (thông tin người dùng, quyền, thời hạn) và chữ ký. Hai phần đầu chỉ là JSON viết bằng Base64URL nên ai cũng đọc được.</p>
+        <p data-i18n="seo.how2">Công cụ giải mã hai phần đầu, trình bày đẹp và đổi các mốc thời gian exp, iat, nbf sang ngày giờ dễ đọc, kèm trạng thái còn hạn hay đã hết hạn.</p>
+        <p data-i18n="seo.how3">Với token ký bằng HMAC (HS256, HS384, HS512), nhập khoá bí mật để kiểm tra chữ ký có hợp lệ, tức token không bị sửa và đúng là do máy chủ của bạn phát hành.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Dán token thật vào đây có an toàn không?</summary><p data-i18n="faq.a1">Token được xử lý hoàn toàn trên trình duyệt, không gửi đi đâu. Dù vậy, đừng chia sẻ token đang dùng cho người khác vì nó có thể cho phép đăng nhập thay bạn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao ai cũng đọc được payload?</summary><p data-i18n="faq.a2">Payload chỉ được mã hoá Base64URL, không được mã hoá bí mật. Không bao giờ đặt mật khẩu hay dữ liệu nhạy cảm vào JWT.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">exp là gì?</summary><p data-i18n="faq.a3">exp là thời điểm hết hạn tính bằng giây kể từ 1/1/1970 (Unix time). Sau thời điểm này máy chủ phải từ chối token.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có kiểm tra được token RS256 không?</summary><p data-i18n="faq.a4">Công cụ đọc được nội dung token RS256, ES256 nhưng chỉ kiểm tra chữ ký với các thuật toán HMAC dùng khoá bí mật chung.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Token báo lỗi không giải mã được?</summary><p data-i18n="faq.a5">Thường do sao chép thiếu ký tự hoặc dính chữ Bearer, dấu ngoặc. Công cụ tự bỏ chữ Bearer ở đầu.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/jwt-decode.ts"></script>
+  </body>
+</html>

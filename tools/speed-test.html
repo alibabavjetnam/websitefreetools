@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đo tốc độ mạng Internet, Wi-Fi, 4G (speed test) — WFTools</title>
+    <meta name="description" content="Đo tốc độ mạng miễn phí: tải xuống, tải lên (Mbps), độ trễ ping và jitter qua máy chủ Cloudflare gần bạn; đánh giá mạng có đủ xem video 4K, họp trực tuyến." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Đo tốc độ mạng Internet</h1>
+        <p class="lead">Kiểm tra tốc độ tải xuống, tải lên và độ trễ của mạng bạn đang dùng.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách đọc kết quả đo mạng</h2>
+        <p data-i18n="seo.how1">Tốc độ tải xuống quyết định xem video, tải file nhanh hay chậm; tải lên quan trọng khi họp video, livestream, gửi file. Đơn vị Mbps là triệu bit mỗi giây.</p>
+        <p data-i18n="seo.how2">Độ trễ (ping) là thời gian một gói dữ liệu đi và về, càng thấp càng tốt cho chơi game, gọi video. Jitter là độ dao động của ping; cao thì cuộc gọi hay bị giật.</p>
+        <p data-i18n="seo.how3">Công cụ đo qua mạng máy chủ của Cloudflare gần bạn. Để kết quả chính xác, tắt các ứng dụng đang tải và đứng gần bộ phát Wi-Fi.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Tốc độ bao nhiêu là đủ dùng?</summary><p data-i18n="faq.a1">Khoảng 25 Mbps đủ xem video 4K một thiết bị; gia đình nhiều người nên từ 100 Mbps.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao kết quả thấp hơn gói cước?</summary><p data-i18n="faq.a2">Do Wi-Fi yếu, nhiều thiết bị dùng chung, giờ cao điểm hoặc tuyến quốc tế. Thử cắm dây mạng để so sánh.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Đo bằng 4G có tốn dung lượng không?</summary><p data-i18n="faq.a3">Có, mỗi lần khoảng 50 đến 150 MB tuỳ tốc độ mạng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Ping bao nhiêu là tốt?</summary><p data-i18n="faq.a4">Dưới 30 ms là rất tốt, 30 đến 80 ms ổn, trên 150 ms dễ giật khi chơi game.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Vì sao khác kết quả của Speedtest hay Fast?</summary><p data-i18n="faq.a5">Mỗi dịch vụ đo tới máy chủ khác nhau nên kết quả lệch nhau là bình thường.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/speed-test.ts"></script>
+  </body>
+</html>

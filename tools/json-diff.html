@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So sánh hai file JSON (JSON diff) online — WFTools</title>
+    <meta name="description" content="So sánh hai JSON theo cấu trúc: liệt kê đường dẫn trường được thêm, bị xoá, đổi giá trị, đổi kiểu; tuỳ chọn bỏ qua thứ tự mảng. Miễn phí, không tải lên." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>So sánh hai JSON</h1>
+        <p class="lead">So sánh hai JSON theo cấu trúc và liệt kê từng chỗ khác nhau kèm đường dẫn.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">So sánh JSON theo cấu trúc</h2>
+        <p data-i18n="seo.how1">So sánh văn bản thông thường báo khác chỉ vì đổi thứ tự khoá hay khoảng trắng. Công cụ này đọc JSON thành dữ liệu rồi so từng khoá, nên chỉ báo những khác biệt thật về nội dung.</p>
+        <p data-i18n="seo.how2">Mỗi khác biệt có đường dẫn dạng $.settings.theme, loại thay đổi (thêm, xoá, đổi giá trị, đổi kiểu) và giá trị ở hai bên, tô màu để dễ nhìn.</p>
+        <p data-i18n="seo.how3">Bật Bỏ qua thứ tự phần tử trong mảng khi mảng chỉ là tập hợp (danh sách thẻ, quyền) để không bị báo khác do sắp xếp.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Thứ tự khoá khác nhau có bị coi là khác không?</summary><p data-i18n="faq.a1">Không. Hai đối tượng có cùng khoá và giá trị được coi là giống nhau dù thứ tự khác.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Số 1 và chuỗi 1 có khác không?</summary><p data-i18n="faq.a2">Có, được báo là đổi kiểu dữ liệu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Dùng để làm gì trong thực tế?</summary><p data-i18n="faq.a3">So sánh phản hồi API giữa hai phiên bản, file cấu hình giữa môi trường thử và thật, dữ liệu trước và sau khi xử lý.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có xuất báo cáo được không?</summary><p data-i18n="faq.a4">Có. Nút Sao chép báo cáo cho danh sách dạng bảng, dán vào Excel hoặc tin nhắn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">JSON lớn có chạy được không?</summary><p data-i18n="faq.a5">JSON vài MB vẫn ổn. Mảng rất dài với tuỳ chọn bỏ qua thứ tự sẽ chậm hơn.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/json-diff.ts"></script>
+  </body>
+</html>

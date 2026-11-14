@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuyển cURL sang fetch, axios, Python, PHP, Go — WFTools</title>
+    <meta name="description" content="Chuyển lệnh cURL sang mã JavaScript fetch, axios, Python requests, PHP cURL, Go net/http; hiểu -X, -H, -d, --json, -F, -u. Dán từ Copy as cURL của trình duyệt." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Chuyển lệnh cURL sang mã</h1>
+        <p class="lead">Dán lệnh cURL (ví dụ Copy as cURL trong trình duyệt) để có ngay mã gọi API tương ứng.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách chuyển cURL sang mã nguồn</h2>
+        <p data-i18n="seo.how1">cURL là lệnh gửi yêu cầu HTTP phổ biến trong tài liệu API. Công cụ đọc phương thức, địa chỉ, tiêu đề (-H), dữ liệu gửi (-d, --json), biểu mẫu (-F) và tài khoản (-u) rồi viết lại bằng ngôn ngữ bạn chọn.</p>
+        <p data-i18n="seo.how2">Dữ liệu JSON được nhận ra và viết thành đối tượng gọn gàng (JSON.stringify, json= trong Python). Tài khoản -u được đổi thành tiêu đề Authorization Basic.</p>
+        <p data-i18n="seo.how3">Mẹo: mở công cụ phát triển (F12) → Network, bấm chuột phải một yêu cầu → Copy → Copy as cURL (bash) rồi dán vào đây để tái tạo đúng yêu cầu đó.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Có hỗ trợ lệnh cURL nhiều dòng với dấu \ không?</summary><p data-i18n="faq.a1">Có. Dấu \ ở cuối dòng được nối lại tự động.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Copy as cURL trên Windows (cmd) dùng được không?</summary><p data-i18n="faq.a2">Nên chọn bản bash. Bản cmd dùng ký tự ^ để thoát nên có thể đọc sai.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Token trong lệnh có bị gửi đi đâu không?</summary><p data-i18n="faq.a3">Không. Việc chuyển đổi chạy trên trình duyệt. Dù vậy, đừng chia sẻ mã có token thật.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Gọi API bằng fetch từ trình duyệt bị lỗi CORS?</summary><p data-i18n="faq.a4">Đó là giới hạn của máy chủ API, không phải lỗi mã. Hãy gọi từ máy chủ (Node.js) hoặc bật CORS phía API.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Tuỳ chọn nào bị bỏ qua?</summary><p data-i18n="faq.a5">Các tuỳ chọn hiển thị và mạng như -o, -w, --max-time, -x không có tác dụng trong mã nên được bỏ qua.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/curl-convert.ts"></script>
+  </body>
+</html>

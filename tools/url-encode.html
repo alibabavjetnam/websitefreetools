@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mã hoá, giải mã URL (URL encode/decode) — WFTools</title>
+    <meta name="description" content="Mã hoá và giải mã URL online: đổi chữ có dấu, dấu cách, ký tự đặc biệt thành %XX theo encodeURIComponent, encodeURI hoặc dạng biểu mẫu. Miễn phí." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Mã hoá và giải mã URL</h1>
+        <p class="lead">Đổi chữ có dấu, dấu cách và ký tự đặc biệt trong đường link thành dạng %XX và ngược lại.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Khi nào cần mã hoá URL</h2>
+        <p data-i18n="seo.how1">Đường link chỉ được chứa một số ký tự nhất định. Chữ có dấu, dấu cách, dấu &amp; hay ? trong giá trị tham số phải đổi thành dạng phần trăm như %20 để trình duyệt và máy chủ hiểu đúng.</p>
+        <p data-i18n="seo.how2">Chế độ mã hoá một phần dùng cho giá trị tham số (sau dấu =). Chế độ mã hoá cả địa chỉ giữ nguyên các ký tự cấu trúc như : / ? &amp; #.</p>
+        <p data-i18n="seo.how3">Chế độ dữ liệu biểu mẫu đổi dấu cách thành dấu +, giống cách trình duyệt gửi form dạng application/x-www-form-urlencoded.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">%20 và dấu + khác nhau thế nào?</summary><p data-i18n="faq.a1">Cả hai đều là dấu cách. %20 dùng được ở mọi phần của URL, còn + chỉ mang nghĩa dấu cách trong chuỗi truy vấn của biểu mẫu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao link tiếng Việt bị biến thành chuỗi %C3%A1…?</summary><p data-i18n="faq.a2">Trình duyệt mã hoá chữ có dấu theo UTF-8, mỗi chữ thành 2 đến 3 nhóm %XX. Dán chuỗi đó vào ô bên phải và bấm Giải mã để đọc lại.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Nên dùng encodeURI hay encodeURIComponent?</summary><p data-i18n="faq.a3">Dùng encodeURIComponent cho từng giá trị tham số; encodeURI cho cả đường link khi chỉ muốn đổi chữ có dấu và dấu cách.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Giải mã báo lỗi % không hợp lệ là sao?</summary><p data-i18n="faq.a4">Chuỗi có dấu % không đi kèm đúng 2 chữ số hex, ví dụ 50%. Sửa thành %25 hoặc bỏ dấu % lẻ đó.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Dữ liệu tôi dán có bị gửi đi đâu không?</summary><p data-i18n="faq.a5">Không. Việc mã hoá và giải mã chạy hoàn toàn bằng JavaScript trên máy bạn.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/url-encode.ts"></script>
+  </body>
+</html>

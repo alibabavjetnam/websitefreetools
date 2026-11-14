@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo biểu thức Cron, giải thích và xem lịch chạy — WFTools</title>
+    <meta name="description" content="Tạo biểu thức cron (crontab) dễ dàng bằng menu chọn phút, giờ, ngày, tháng, thứ; giải thích ý nghĩa và liệt kê 10 lần chạy tiếp theo theo giờ máy bạn." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo và giải thích biểu thức Cron</h1>
+        <p class="lead">Tạo biểu thức cron để hẹn giờ chạy tác vụ, xem giải thích và các lần chạy sắp tới.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cấu trúc biểu thức cron</h2>
+        <p data-i18n="seo.how1">Biểu thức cron có 5 phần cách nhau bằng dấu cách: phút (0-59), giờ (0-23), ngày trong tháng (1-31), tháng (1-12) và thứ trong tuần (0-6, 0 là Chủ nhật). Dấu * nghĩa là mọi giá trị.</p>
+        <p data-i18n="seo.how2">Dùng dấu phẩy để liệt kê (1,15), gạch ngang cho khoảng (1-5), dấu / cho bước nhảy (*/15 là mỗi 15 phút). Có thể dùng tên viết tắt tiếng Anh như MON-FRI, JAN.</p>
+        <p data-i18n="seo.how3">Công cụ tính 10 lần chạy tiếp theo để bạn chắc chắn lịch đúng ý trước khi đưa vào crontab, GitHub Actions, Kubernetes CronJob hay bộ hẹn giờ của dịch vụ.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Cron chạy theo múi giờ nào?</summary><p data-i18n="faq.a1">Theo múi giờ của máy chủ chạy cron. GitHub Actions dùng UTC, nên 9 giờ sáng Việt Nam là 0 2 * * *.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Đặt cả ngày trong tháng và thứ thì sao?</summary><p data-i18n="faq.a2">Theo quy tắc cron Unix, tác vụ chạy khi khớp một trong hai điều kiện, không phải cả hai.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Làm sao chạy mỗi 30 giây?</summary><p data-i18n="faq.a3">Cron chuẩn nhỏ nhất là 1 phút. Muốn 30 giây phải dùng hai lệnh, lệnh sau có sleep 30.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">@daily, @hourly là gì?</summary><p data-i18n="faq.a4">Là viết tắt: @daily = 0 0 * * *, @hourly = 0 * * * *, @weekly = 0 0 * * 0, @monthly = 0 0 1 * *.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có hỗ trợ cron 6 phần có giây không?</summary><p data-i18n="faq.a5">Công cụ dùng cron 5 phần chuẩn Unix; Quartz/Spring có thêm phần giây ở đầu.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/cron-gen.ts"></script>
+  </body>
+</html>

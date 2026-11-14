@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuyển đổi YAML ↔ JSON ↔ TOML online — WFTools</title>
+    <meta name="description" content="Chuyển đổi file cấu hình YAML sang JSON, JSON sang YAML, TOML sang JSON và ngược lại ngay trên trình duyệt, báo lỗi cú pháp rõ ràng. Hợp cho Docker, CI." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Chuyển đổi YAML, JSON, TOML</h1>
+        <p class="lead">Đổi file cấu hình qua lại giữa YAML, JSON và TOML, báo lỗi cú pháp kèm vị trí.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Ba định dạng cấu hình phổ biến</h2>
+        <p data-i18n="seo.how1">JSON chặt chẽ, dùng nhiều trong API. YAML dễ đọc nhờ thụt lề, phổ biến ở Docker Compose, Kubernetes, GitHub Actions. TOML rõ ràng theo bảng, dùng cho Cargo (Rust), pyproject (Python), Hugo.</p>
+        <p data-i18n="seo.how2">Chọn định dạng nguồn và đích, kết quả cập nhật khi bạn gõ. Nút Đổi chiều đưa kết quả lên làm dữ liệu nhập để chuyển ngược.</p>
+        <p data-i18n="seo.how3">TOML không có giá trị null và cần gốc là một bảng, nên các trường null bị bỏ khi chuyển sang TOML. Chú thích trong YAML/TOML không được giữ lại.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">YAML báo lỗi thụt lề là sao?</summary><p data-i18n="faq.a1">YAML dùng dấu cách để biểu diễn cấp; không được dùng Tab và các mục cùng cấp phải thẳng hàng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Chuyển YAML sang JSON có mất dữ liệu không?</summary><p data-i18n="faq.a2">Không mất dữ liệu, chỉ mất chú thích và neo (&amp;, *) được bung ra thành giá trị cụ thể.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Vì sao yes/no trong YAML thành true/false?</summary><p data-i18n="faq.a3">Thư viện dùng chuẩn YAML 1.2 nên yes/no giữ là chuỗi; chỉ true/false mới là kiểu đúng/sai.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có cần mạng để chạy không?</summary><p data-i18n="faq.a4">Lần đầu công cụ tải thư viện js-yaml và smol-toml từ CDN, sau đó mọi xử lý diễn ra trên máy bạn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Ngày giờ trong TOML được giữ không?</summary><p data-i18n="faq.a5">Ngày giờ TOML được đổi thành chuỗi ISO khi sang JSON/YAML.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/yaml-json-toml.ts"></script>
+  </body>
+</html>

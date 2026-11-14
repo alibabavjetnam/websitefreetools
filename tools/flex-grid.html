@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo bố cục CSS Flexbox và Grid trực quan — WFTools</title>
+    <meta name="description" content="Học và tạo bố cục CSS Flexbox, Grid trực quan: đổi justify-content, align-items, flex-wrap, số cột, gap và xem ngay phần tử sắp xếp; sao chép mã CSS." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo bố cục Flexbox, Grid</h1>
+        <p class="lead">Chọn thuộc tính Flexbox hoặc Grid và xem ngay các phần tử sắp xếp ra sao, rồi lấy mã CSS.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Flexbox và Grid khác nhau thế nào</h2>
+        <p data-i18n="seo.how1">Flexbox sắp xếp phần tử theo một chiều (hàng hoặc cột), hợp cho thanh menu, nhóm nút, căn giữa. Grid sắp theo hai chiều hàng và cột cùng lúc, hợp cho bố cục trang, lưới sản phẩm.</p>
+        <p data-i18n="seo.how2">Thay đổi từng thuộc tính và quan sát khung xem trước để hiểu tác dụng: justify-content căn theo trục chính, align-items căn theo trục phụ, gap là khoảng cách giữa các phần tử.</p>
+        <p data-i18n="seo.how3">Bấm vào một ô để cho nó lớn hơn (flex-grow với Flexbox, chiếm 2 cột với Grid). Mã CSS cập nhật theo để bạn dán vào dự án.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Làm sao căn giữa một phần tử?</summary><p data-i18n="faq.a1">Đặt display: flex; justify-content: center; align-items: center cho khung chứa.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">auto-fill dùng khi nào?</summary><p data-i18n="faq.a2">repeat(auto-fill, minmax(120px, 1fr)) tự tính số cột theo bề rộng màn hình, rất hợp cho lưới sản phẩm co giãn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">fr là đơn vị gì?</summary><p data-i18n="faq.a3">fr là một phần của không gian còn trống; 1fr 2fr nghĩa là cột thứ hai rộng gấp đôi cột đầu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">gap có dùng được với Flexbox không?</summary><p data-i18n="faq.a4">Có, mọi trình duyệt hiện đại đều hỗ trợ gap cho Flexbox.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Nên dùng Flexbox hay Grid?</summary><p data-i18n="faq.a5">Thường kết hợp: Grid cho khung trang, Flexbox cho nội dung bên trong từng ô.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/flex-grid.ts"></script>
+  </body>
+</html>

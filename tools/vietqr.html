@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo mã QR chuyển khoản ngân hàng VietQR miễn phí — WFTools</title>
+    <meta name="description" content="Tạo mã QR chuyển khoản VietQR (NAPAS 247) cho Vietcombank, Techcombank, MB, BIDV, ACB và hơn 45 ngân hàng; có số tiền, nội dung, tải ảnh PNG để in cho cửa hàng." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo mã QR chuyển khoản VietQR</h1>
+        <p class="lead">Tạo mã QR nhận tiền chuyển khoản theo chuẩn VietQR, có sẵn số tiền và nội dung, in cho cửa hàng.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Mã VietQR hoạt động thế nào</h2>
+        <p data-i18n="seo.how1">VietQR là chuẩn mã QR chuyển khoản liên ngân hàng của NAPAS, dựa trên chuẩn quốc tế EMVCo. Người trả chỉ cần mở ứng dụng ngân hàng bất kỳ, quét mã là thông tin người nhận tự điền sẵn.</p>
+        <p data-i18n="seo.how2">Chọn ngân hàng, nhập số tài khoản; thêm số tiền và nội dung nếu muốn tạo mã cho từng đơn hàng. Bỏ trống số tiền để người chuyển tự nhập, hợp làm mã dán quầy.</p>
+        <p data-i18n="seo.how3">Mã được tạo ngay trên trình duyệt, không qua máy chủ trung gian nào. Tải ảnh PNG có kèm tên ngân hàng, số tài khoản và số tiền để in hoặc gửi cho khách.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Mã có quét được bằng MoMo, ZaloPay không?</summary><p data-i18n="faq.a1">Được. Hầu hết ví điện tử và ứng dụng ngân hàng Việt Nam đều đọc được mã VietQR.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao nội dung chuyển khoản bị bỏ dấu?</summary><p data-i18n="faq.a2">Nhiều ngân hàng không nhận chữ có dấu và ký tự đặc biệt, nên công cụ tự đổi về chữ không dấu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Có an toàn khi chia sẻ mã không?</summary><p data-i18n="faq.a3">Mã chỉ chứa số tài khoản (giống khi bạn đọc số tài khoản cho người khác), không ai rút được tiền từ mã này.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Tên chủ tài khoản có nằm trong mã không?</summary><p data-i18n="faq.a4">Không. Ứng dụng ngân hàng tự tra tên thật từ số tài khoản; tên bạn nhập chỉ in trên ảnh.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Ngân hàng của tôi không có trong danh sách?</summary><p data-i18n="faq.a5">Danh sách gồm hơn 45 ngân hàng phổ biến. Hãy báo cho chúng tôi để bổ sung mã BIN.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/vietqr.ts"></script>
+  </body>
+</html>

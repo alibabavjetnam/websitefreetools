@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuyển JSON sang TypeScript, Zod, Go struct, C# — WFTools</title>
+    <meta name="description" content="Dán JSON để sinh tự động interface TypeScript, Zod schema, Go struct, Python dataclass, C# class hoặc JSON Schema; nhận biết trường không bắt buộc và null." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>JSON sang TypeScript, Go</h1>
+        <p class="lead">Dán dữ liệu JSON mẫu để tự sinh kiểu dữ liệu cho TypeScript, Zod, Go, Python, C# hoặc JSON Schema.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách công cụ suy ra kiểu dữ liệu</h2>
+        <p data-i18n="seo.how1">Công cụ đọc từng giá trị trong JSON: chuỗi, số nguyên, số thực, đúng/sai, mảng, đối tượng lồng nhau, rồi tạo kiểu riêng cho mỗi đối tượng con với tên lấy từ tên trường.</p>
+        <p data-i18n="seo.how2">Với mảng nhiều phần tử, các đối tượng được gộp lại: trường chỉ có ở một số phần tử được đánh dấu không bắt buộc, trường có giá trị null được đánh dấu có thể rỗng.</p>
+        <p data-i18n="seo.how3">Kết quả là điểm khởi đầu tốt; bạn nên xem lại tên kiểu, kiểu ngày tháng (đang để chuỗi) và các trường có thể mang nhiều kiểu.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Có hỗ trợ JSON rất lớn không?</summary><p data-i18n="faq.a1">Có, nhưng chỉ cần một mẫu đại diện là đủ; JSON vài MB vẫn chạy tốt trên máy tính.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao trường ngày tháng là string?</summary><p data-i18n="faq.a2">JSON không có kiểu ngày; giá trị ngày luôn là chuỗi. Bạn có thể đổi thành Date hoặc time.Time sau.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Zod schema dùng để làm gì?</summary><p data-i18n="faq.a3">Zod kiểm tra dữ liệu lúc chạy (ví dụ phản hồi API) và suy ra kiểu TypeScript từ cùng một định nghĩa.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Tên trường có dấu cách được xử lý sao?</summary><p data-i18n="faq.a4">TypeScript đặt tên trong nháy; Go, C# đổi sang PascalCase và giữ tên gốc trong thẻ json.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Mảng rỗng thì kiểu gì?</summary><p data-i18n="faq.a5">Mảng rỗng không đủ thông tin nên kiểu phần tử là unknown/any. Hãy thêm một phần tử mẫu.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/json-to-types.ts"></script>
+  </body>
+</html>

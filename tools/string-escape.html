@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape, unescape chuỗi JSON, JS, SQL, Regex — WFTools</title>
+    <meta name="description" content="Thoát ký tự (escape) và bỏ thoát (unescape) cho chuỗi JSON, JavaScript, SQL, CSV, Regex, XML và lệnh bash. Dán văn bản có dấu nháy, xuống dòng an toàn." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Thoát ký tự chuỗi (escape)</h1>
+        <p class="lead">Thêm hoặc bỏ dấu \ và ký tự thoát để dán văn bản vào mã nguồn, SQL, Regex mà không lỗi cú pháp.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Thoát ký tự là gì</h2>
+        <p data-i18n="seo.how1">Trong mã nguồn, một số ký tự có nghĩa đặc biệt: dấu nháy kết thúc chuỗi, dấu \ bắt đầu ký tự đặc biệt, dấu xuống dòng. Thoát ký tự là viết chúng theo cách đặc biệt để giữ đúng nội dung.</p>
+        <p data-i18n="seo.how2">Chọn đúng ngữ cảnh vì mỗi ngôn ngữ có quy tắc riêng: SQL nhân đôi dấu nháy đơn, CSV bọc ô trong nháy kép, Regex thêm \ trước . * + ? và ngoặc.</p>
+        <p data-i18n="seo.how3">Nút Bỏ thoát làm ngược lại, giúp đọc chuỗi trong log, file JSON hoặc mã nguồn thành văn bản gốc.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Thoát chuỗi SQL có chống được SQL injection không?</summary><p data-i18n="faq.a1">Giúp tránh lỗi cú pháp, nhưng cách an toàn nhất vẫn là dùng câu lệnh có tham số (prepared statement).</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao đường dẫn Windows cần hai dấu \?</summary><p data-i18n="faq.a2">Trong JSON, JavaScript, dấu \ đơn bắt đầu ký tự đặc biệt, nên phải viết \\ để ra một dấu \ thật.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Regex escape dùng khi nào?</summary><p data-i18n="faq.a3">Khi muốn tìm đúng một chuỗi chứa ký tự như . hay ( ) mà không để chúng mang nghĩa đặc biệt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Lệnh shell được thoát thế nào?</summary><p data-i18n="faq.a4">Chuỗi được bọc trong nháy đơn, nháy đơn bên trong được viết thành chuỗi kết thúc rồi mở lại.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có hỗ trợ ký tự \u Unicode không?</summary><p data-i18n="faq.a5">Có. Khi bỏ thoát kiểu JavaScript, công cụ hiểu cả \uXXXX, \u{...} và \xXX.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/string-escape.ts"></script>
+  </body>
+</html>

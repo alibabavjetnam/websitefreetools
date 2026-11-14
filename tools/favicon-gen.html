@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo favicon.ico, apple-touch-icon, manifest — WFTools</title>
+    <meta name="description" content="Tạo bộ favicon đầy đủ từ logo hoặc chữ, emoji: favicon.ico nhiều kích thước, PNG 16, 32, 180, 192, 512 px, site.webmanifest và mã HTML. Tải về một file ZIP." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo favicon cho website</h1>
+        <p class="lead">Tạo trọn bộ biểu tượng website (favicon.ico, PNG, apple-touch-icon, manifest) từ logo hoặc chữ.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Website cần những biểu tượng nào</h2>
+        <p data-i18n="seo.how1">Favicon là biểu tượng nhỏ trên tab trình duyệt và dấu trang. Ngoài favicon.ico, điện thoại cần ảnh 180 px cho màn hình chính iPhone và 192, 512 px cho Android, ứng dụng web (PWA).</p>
+        <p data-i18n="seo.how2">Chọn ảnh vuông (tốt nhất PNG nền trong hoặc SVG, từ 512×512 px) hoặc gõ một chữ cái, emoji và chọn màu. Công cụ vẽ lại ở mọi kích thước cần thiết.</p>
+        <p data-i18n="seo.how3">Gói ZIP gồm favicon.ico (16, 32, 48 px), các file PNG, site.webmanifest và head.html chứa mã chèn vào thẻ &lt;head&gt;.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Đặt các file favicon ở đâu?</summary><p data-i18n="faq.a1">Đặt ở thư mục gốc website (cùng cấp index.html), rồi dán mã trong head.html vào thẻ &lt;head&gt;.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Đã đổi favicon mà trình duyệt vẫn hiện cái cũ?</summary><p data-i18n="faq.a2">Trình duyệt lưu đệm favicon rất lâu. Hãy xoá bộ nhớ đệm hoặc mở tab ẩn danh để kiểm tra.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Có cần favicon SVG không?</summary><p data-i18n="faq.a3">Không bắt buộc. Bộ PNG và ICO đã đủ cho mọi trình duyệt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Logo hình chữ nhật thì sao?</summary><p data-i18n="faq.a4">Ảnh được căn giữa trong ô vuông, giữ nguyên tỉ lệ. Nên dùng phần biểu tượng thay cho cả chữ dài.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Ảnh của tôi có bị tải lên mạng không?</summary><p data-i18n="faq.a5">Không. Ảnh được vẽ lại ngay trên trình duyệt.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/favicon-gen.ts"></script>
+  </body>
+</html>

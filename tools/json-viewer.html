@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xem JSON dạng cây và truy vấn JSONPath online — WFTools</title>
+    <meta name="description" content="Trình xem JSON online: dạng cây mở/thu gọn, tô màu kiểu dữ liệu, lấy đường dẫn JSONPath khi bấm vào trường, lọc dữ liệu, làm đẹp, sắp xếp khoá A-Z." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Xem JSON dạng cây, JSONPath</h1>
+        <p class="lead">Mở JSON dạng cây dễ đọc, bấm để lấy đường dẫn và lọc dữ liệu bằng JSONPath.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách đọc và truy vấn JSON</h2>
+        <p data-i18n="seo.how1">Dán JSON vào ô bên trái, cây bên phải hiện từng đối tượng, mảng kèm số phần tử. Bấm vào mũi tên để mở hoặc thu gọn, bấm vào một dòng để lấy đường dẫn JSONPath của nó.</p>
+        <p data-i18n="seo.how2">JSONPath giống địa chỉ của dữ liệu: $ là gốc, .ten là trường, [0] là phần tử đầu, [*] là mọi phần tử, .. là tìm ở mọi độ sâu, [?(@.gia&lt;35)] là lọc theo điều kiện.</p>
+        <p data-i18n="seo.how3">Nút Làm đẹp căn lề JSON, nút Sắp xếp khoá A-Z giúp so sánh hai JSON dễ hơn.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">JSONPath có giống XPath không?</summary><p data-i18n="faq.a1">Ý tưởng giống: viết đường dẫn để chọn dữ liệu. JSONPath dành cho JSON, XPath dành cho XML.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Công cụ hỗ trợ những biểu thức lọc nào?</summary><p data-i18n="faq.a2">So sánh ==, !=, &gt;, &lt;, &gt;=, &lt;= với số hoặc chuỗi, và kiểm tra trường có tồn tại [?(@.ten)].</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">JSON báo lỗi ở đâu?</summary><p data-i18n="faq.a3">Thông báo lỗi kèm vị trí ký tự sai; lỗi hay gặp là dấu phẩy thừa ở cuối hoặc dùng nháy đơn thay nháy kép.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Dữ liệu có bị gửi đi không?</summary><p data-i18n="faq.a4">Không. JSON được xử lý hoàn toàn trên trình duyệt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Mở được file JSON rất lớn không?</summary><p data-i18n="faq.a5">Vài MB vẫn ổn; file hàng chục MB có thể làm cây hiển thị chậm.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/json-viewer.ts"></script>
+  </body>
+</html>

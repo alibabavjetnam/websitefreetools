@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo file .gitignore cho Node, Python, Flutter — WFTools</title>
+    <meta name="description" content="Tạo file .gitignore cho dự án: chọn ngôn ngữ Node.js, Python, Java, Go, .NET, PHP, framework React, Next.js, Laravel, Flutter, Unity, hệ điều hành, IDE." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo file .gitignore</h1>
+        <p class="lead">Chọn ngôn ngữ, framework, hệ điều hành và trình soạn thảo để ghép file .gitignore cho dự án.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">File .gitignore để làm gì</h2>
+        <p data-i18n="seo.how1">File .gitignore liệt kê những file, thư mục Git không theo dõi: thư viện tải về (node_modules), file build, file cấu hình chứa mật khẩu (.env), file rác của hệ điều hành và trình soạn thảo.</p>
+        <p data-i18n="seo.how2">Chọn các mục phù hợp với dự án, công cụ ghép thành một file có tiêu đề từng phần. Bạn có thể thêm dòng riêng ở ô cuối.</p>
+        <p data-i18n="seo.how3">Tải file về và đặt ở thư mục gốc dự án với đúng tên .gitignore (có dấu chấm ở đầu, không có đuôi).</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Thêm vào .gitignore rồi mà file vẫn bị theo dõi?</summary><p data-i18n="faq.a1">File đã được commit trước đó vẫn bị theo dõi. Chạy git rm --cached tên-file rồi commit lại.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Có nên đưa file .env vào Git không?</summary><p data-i18n="faq.a2">Không. Đưa vào .gitignore và tạo file .env.example không chứa giá trị thật để người khác biết cần những biến nào.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Dấu ! trong .gitignore nghĩa là gì?</summary><p data-i18n="faq.a3">Là ngoại lệ: không bỏ qua file khớp mẫu đó, dù dòng trước đã bỏ qua cả thư mục.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Windows không cho đặt tên .gitignore?</summary><p data-i18n="faq.a4">Lưu file với tên .gitignore. (có dấu chấm ở cuối) hoặc tạo bằng VS Code, Windows sẽ tự bỏ dấu chấm cuối.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Mẫu có lấy từ GitHub không?</summary><p data-i18n="faq.a5">Mẫu do WFTools tự soạn gọn, theo các quy ước phổ biến của từng công nghệ.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/gitignore-gen.ts"></script>
+  </body>
+</html>

@@ -1964,3 +1964,83 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
   .fc-list li { grid-template-columns: 1fr auto auto; }
   .fc-li-b { grid-column: 1 / -1; order: 3; color: var(--muted, #667); }
 }
+
+/* ===== 50 công cụ thêm 14/11/2026 ===== */
+.output mark, #hl mark { background: #ffe58a; color: inherit; border-radius: 3px; padding: 0 1px; }
+/* JSON dạng cây */
+.jv-tree { max-height: 520px; overflow: auto; padding: 10px 12px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: .8125rem; line-height: 1.6; }
+.jv-tree details { padding-left: 14px; }
+.jv-tree > details { padding-left: 0; }
+.jv-tree summary { cursor: pointer; }
+.jv-leaf { padding-left: 14px; cursor: pointer; }
+.jv-leaf:hover, .jv-tree summary:hover { background: var(--accent-soft); }
+.jv-k { color: #8a2be2; } .jv-s { color: #0e7a55; } .jv-num { color: #0d6efd; } .jv-b { color: #b9000e; } .jv-null { color: var(--muted); } .jv-n { color: var(--muted); }
+/* Markdown xem trước */
+.md-preview { min-height: 320px; max-height: 560px; overflow: auto; padding: 14px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); line-height: 1.6; }
+.md-preview table { border-collapse: collapse; } .md-preview th, .md-preview td { border: 1px solid var(--line); padding: 4px 10px; }
+.md-preview pre { background: var(--paper); padding: 10px; border-radius: 6px; overflow: auto; } .md-preview blockquote { margin: 0; padding-left: 12px; border-left: 3px solid var(--line-strong); color: var(--muted); }
+/* Thẻ meta: xem trước Google + mạng xã hội */
+.mt-serp { padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; font-family: Arial, sans-serif; }
+.mt-url { font-size: 12px; color: #202124; word-break: break-all; } .mt-title { font-size: 20px; color: #1a0dab; line-height: 1.3; margin: 2px 0; } .mt-desc { font-size: 14px; color: #4d5156; line-height: 1.45; }
+.mt-card { border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; background: #f0f2f5; font-family: Arial, sans-serif; }
+.mt-img { aspect-ratio: 1.91 / 1; background: #dfe3e8 center / cover no-repeat; } .mt-body { padding: 10px 12px; }
+.mt-host { font-size: 12px; color: #65676b; } .mt-ctitle { font-weight: 700; color: #050505; margin: 2px 0; } .mt-cdesc { font-size: 14px; color: #65676b; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+/* Favicon */
+.fv-prev { align-items: flex-end; gap: 16px; } .fv-prev canvas { image-rendering: pixelated; border: 1px dashed var(--line-strong); }
+/* Tạo CSS + Flex/Grid */
+.cg-stage { display: grid; place-items: center; min-height: 260px; background: repeating-conic-gradient(#f3f5f8 0 25%, #fff 0 50%) 0 0 / 20px 20px; border-radius: var(--radius-sm); }
+.cg-box { width: 180px; height: 140px; display: grid; place-items: center; font-weight: 700; background: #fff; color: var(--ink); border-radius: 12px; }
+.fg-stage { min-height: 280px; padding: 12px; background: var(--paper); border: 1px dashed var(--line-strong); border-radius: var(--radius-sm); }
+.fg-item { min-width: 48px; min-height: 48px; padding: 12px 14px; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 700; border-radius: 8px; cursor: pointer; user-select: none; }
+.fg-item.is-big { background: var(--laser); }
+.svg-prev { display: grid; place-items: center; min-height: 160px; background: repeating-conic-gradient(#f3f5f8 0 25%, #fff 0 50%) 0 0 / 16px 16px; border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.svg-prev img { max-width: 100%; max-height: 220px; }
+/* HTTP status */
+.hs-1 { color: var(--muted); } .hs-2 { color: #0e7a55; } .hs-3 { color: #0d6efd; } .hs-4 { color: #b45309; } .hs-5 { color: #b9000e; }
+/* Tương phản màu */
+.cc-demo { padding: 22px; border-radius: var(--radius); border: 1px solid var(--line); }
+.cc-btn { display: inline-block; padding: 8px 16px; border-radius: 8px; font-weight: 600; }
+/* Chữ ký email, VietQR */
+.es-prev { padding: 18px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: auto; }
+.vq-card { width: min(100%, 340px); padding: 18px; background: #fff; border: 1px solid var(--line); border-radius: 14px; text-align: center; }
+.vq-qr svg { width: 100%; height: auto; display: block; }
+.vq-info { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; } .vq-amt { color: var(--laser); font-size: 1.2rem; }
+/* Quét QR, tách khung hình */
+.qs-video, .vf-video, .qs-canvas { width: 100%; max-height: 420px; background: #000; border-radius: var(--radius-sm); }
+.qs-canvas { background: none; object-fit: contain; }
+.vf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 16px; }
+.vf-grid figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; }
+.vf-grid img { width: 100%; display: block; } .vf-grid figcaption { display: flex; gap: 8px; align-items: center; justify-content: space-between; padding: 6px 8px; font-size: .8125rem; }
+.ic-canvas { width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--paper); }
+/* Chia đội */
+.ts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.ts-team { padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--accent-soft); } .ts-team h3 { margin: 0 0 6px; font-size: 1rem; color: var(--accent-strong); } .ts-team ol { margin: 0; padding-left: 20px; }
+/* Đo tốc độ mạng */
+.st-gauge { width: 220px; height: 220px; border-radius: 50%; display: grid; place-content: center; text-align: center; border: 10px solid var(--accent-soft); border-top-color: var(--accent); }
+.st-gauge span { font-size: 3rem; font-weight: 700; line-height: 1; } .st-gauge small { color: var(--muted); } .st-gauge p { margin: 6px 0 0; max-width: 160px; }
+/* Ghi âm */
+.vr-wave { width: 100%; max-width: 600px; height: 90px; background: var(--paper); border-radius: var(--radius-sm); }
+.vr-time { font-size: 2.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.vr-clip { display: grid; gap: 6px; padding: 10px 0; border-bottom: 1px solid var(--line); } .vr-clip audio { width: 100%; }
+/* Lịch in */
+.cal-sheet { --cal: #0d6efd; margin-top: 20px; background: #fff; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); }
+.cal-title, .cal-year { text-align: center; margin: 0 0 10px; color: var(--cal); } .cal-year { font-size: 2rem; }
+.cal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px 18px; }
+.cal-month h3 { margin: 0 0 4px; text-align: center; color: var(--cal); text-transform: capitalize; font-size: 1rem; }
+.cal-month table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.cal-month th { font-size: .7rem; color: var(--muted); padding: 2px; text-transform: capitalize; }
+.cal-month td { text-align: center; padding: 3px 0; font-size: .85rem; vertical-align: top; }
+.cal-big h3 { font-size: 1.8rem; margin-bottom: 10px; }
+.cal-big th { font-size: .9rem; padding: 6px; border-bottom: 2px solid var(--cal); }
+.cal-big td { height: 84px; text-align: left; padding: 6px 8px; border: 1px solid #dfe3e8; font-size: 1.15rem; }
+.cal-d { font-weight: 600; } .cal-lun { display: block; font-size: .68em; color: var(--muted); } .cal-lun-key { color: var(--laser); font-weight: 600; }
+.cal-big .cal-lun { text-align: right; margin-top: 18px; }
+.cal-sun .cal-d { color: var(--laser); } .cal-sat .cal-d { color: var(--cal); }
+.cal-today { background: var(--accent-soft); } .cal-empty { background: #fafbfc; } .cal-wk { color: var(--muted); font-size: .7rem !important; width: 26px; }
+.cal-notes { margin-top: 12px; height: 90px; border: 1px solid #dfe3e8; border-radius: 6px; padding: 6px 10px; font-size: .8rem; color: var(--muted); background: repeating-linear-gradient(transparent 0 27px, #e6e9ee 27px 28px); }
+@media print {
+  .cal-sheet { border: 0; padding: 0; margin: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  body:has(.cal-sheet) .seo-info, body:has(.cal-sheet) .share-bar { display: none !important; }
+  .cal-grid { grid-template-columns: repeat(3, 1fr); }
+  .cal-today { background: none; }
+}

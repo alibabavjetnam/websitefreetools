@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Định dạng SQL online (SQL formatter, beautifier) — WFTools</title>
+    <meta name="description" content="Định dạng SQL online: xuống dòng theo SELECT, FROM, WHERE, JOIN, thụt lề truy vấn con, viết hoa từ khoá, rút gọn một dòng. Cho MySQL, PostgreSQL, SQL Server." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Định dạng câu lệnh SQL</h1>
+        <p class="lead">Làm đẹp câu lệnh SQL dài: xuống dòng theo mệnh đề, thụt lề, viết hoa từ khoá.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Công cụ định dạng SQL làm gì</h2>
+        <p data-i18n="seo.how1">Câu lệnh SQL viết liền một dòng hoặc sinh từ phần mềm rất khó đọc. Công cụ tách mỗi mệnh đề SELECT, FROM, WHERE, GROUP BY, ORDER BY ra dòng riêng, mỗi cột, mỗi điều kiện AND/OR một dòng.</p>
+        <p data-i18n="seo.how2">Truy vấn con trong ngoặc được thụt lề thêm một cấp, các kiểu JOIN đứng đầu dòng. Chuỗi trong dấu nháy và chú thích được giữ nguyên.</p>
+        <p data-i18n="seo.how3">Nút Rút gọn một dòng bỏ chú thích và khoảng trắng thừa, tiện để dán vào mã nguồn hoặc log.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Định dạng có làm đổi kết quả truy vấn không?</summary><p data-i18n="faq.a1">Không. Chỉ khoảng trắng và chữ hoa/thường của từ khoá thay đổi; tên bảng, cột, giá trị giữ nguyên.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Có hỗ trợ cú pháp riêng của từng hệ quản trị?</summary><p data-i18n="faq.a2">Công cụ xử lý cú pháp SQL chung. Câu lệnh đặc thù (thủ tục lưu trữ, PL/SQL) vẫn được tách dòng cơ bản.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Viết hoa từ khoá có cần thiết không?</summary><p data-i18n="faq.a3">Không bắt buộc nhưng là quy ước phổ biến giúp phân biệt từ khoá với tên bảng, cột.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có kiểm tra lỗi cú pháp SQL không?</summary><p data-i18n="faq.a4">Không. Công cụ chỉ định dạng; hãy chạy thử trên cơ sở dữ liệu để kiểm lỗi.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Dữ liệu trong câu lệnh có bị gửi đi không?</summary><p data-i18n="faq.a5">Không. Việc định dạng diễn ra trên trình duyệt của bạn.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/sql-format.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo chữ ký HMAC-SHA256, kiểm tra webhook — WFTools</title>
+    <meta name="description" content="Tạo và kiểm tra chữ ký HMAC-SHA256, HMAC-SHA512, HMAC-SHA1 online với khoá dạng văn bản, hex hoặc Base64. Dùng để thử webhook Stripe, GitHub, cổng thanh toán." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo chữ ký HMAC</h1>
+        <p class="lead">Tính chữ ký HMAC cho một nội dung và khoá bí mật, so sánh với chữ ký webhook nhận được.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">HMAC dùng để làm gì</h2>
+        <p data-i18n="seo.how1">HMAC là chữ ký tạo từ nội dung và một khoá bí mật chung. Người nhận ký lại nội dung bằng cùng khoá; nếu hai chữ ký khớp thì nội dung không bị sửa và đến từ đúng bên gửi.</p>
+        <p data-i18n="seo.how2">Các dịch vụ như Stripe, GitHub, Shopify, cổng thanh toán VNPay, MoMo đều ký webhook bằng HMAC. Dán nguyên văn nội dung nhận được và khoá vào đây để thử.</p>
+        <p data-i18n="seo.how3">Chọn dạng khoá (văn bản, hex, Base64) và dạng kết quả đúng như tài liệu của dịch vụ yêu cầu, vì chỉ cần sai dạng là chữ ký khác hoàn toàn.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Vì sao chữ ký của tôi không khớp với dịch vụ?</summary><p data-i18n="faq.a1">Thường do nội dung bị đổi khoảng trắng, thứ tự trường JSON, hoặc sai thuật toán, sai dạng hex/Base64. Phải ký đúng chuỗi gốc nhận được.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">HMAC khác mã băm SHA-256 thế nào?</summary><p data-i18n="faq.a2">SHA-256 ai cũng tính được; HMAC cần khoá bí mật nên chỉ người có khoá mới tạo được chữ ký đúng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Khoá bí mật có bị lộ khi dán vào đây không?</summary><p data-i18n="faq.a3">Không. Mọi phép tính chạy trên trình duyệt bằng Web Crypto, không gửi đi đâu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Chữ ký GitHub có tiền tố sha256= thì so sao?</summary><p data-i18n="faq.a4">Dán cả chuỗi vào ô so sánh, công cụ tự bỏ tiền tố sha256= khi so.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có nên dùng HMAC-SHA1 không?</summary><p data-i18n="faq.a5">Chỉ dùng khi hệ thống cũ bắt buộc. Với hệ thống mới nên dùng HMAC-SHA256 trở lên.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/hmac-gen.ts"></script>
+  </body>
+</html>

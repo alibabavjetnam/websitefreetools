@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuyển Markdown sang HTML và HTML sang Markdown — WFTools</title>
+    <meta name="description" content="Soạn Markdown online xem trước trực tiếp, hỗ trợ bảng, danh sách, code kiểu GitHub; xuất HTML sạch, tải file .html và chuyển HTML ngược lại sang Markdown." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Markdown sang HTML</h1>
+        <p class="lead">Soạn Markdown, xem trước ngay và lấy mã HTML; hoặc đổi trang HTML sang Markdown.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Markdown là gì</h2>
+        <p data-i18n="seo.how1">Markdown là cách viết văn bản có định dạng bằng ký hiệu đơn giản: # cho tiêu đề, **chữ** cho in đậm, - cho danh sách. Nó được dùng ở GitHub, Notion, Reddit, nhiều blog và tài liệu kỹ thuật.</p>
+        <p data-i18n="seo.how2">Gõ Markdown bên trái, phần xem trước hiển thị ngay, ô bên dưới là mã HTML để dán vào website hoặc email. Kiểu GitHub hỗ trợ thêm bảng, gạch ngang chữ và xuống dòng tự nhiên.</p>
+        <p data-i18n="seo.how3">Tab HTML sang Markdown giúp chuyển nội dung bài viết, trang web cũ sang Markdown để đưa vào hệ thống mới.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Có hỗ trợ bảng trong Markdown không?</summary><p data-i18n="faq.a1">Có. Dùng dấu | để chia cột và dòng |---| dưới tiêu đề, như mẫu có sẵn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Mã HTML xuất ra có an toàn để dán vào web không?</summary><p data-i18n="faq.a2">Phần xem trước được lọc script; mã xuất ra giữ đúng nội dung bạn viết nên hãy kiểm tra nếu nội dung đến từ người khác.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Chuyển HTML sang Markdown có giữ hình ảnh không?</summary><p data-i18n="faq.a3">Có. Thẻ &lt;img&gt; được đổi thành cú pháp ![mô tả](đường dẫn).</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có cần mạng để dùng không?</summary><p data-i18n="faq.a4">Lần đầu công cụ tải thư viện marked, DOMPurify, Turndown từ CDN; sau đó chạy trên máy bạn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Markdown có nhiều phiên bản không?</summary><p data-i18n="faq.a5">Có: CommonMark, GitHub Flavored Markdown… Công cụ theo chuẩn GitHub phổ biến nhất.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/markdown-html.ts"></script>
+  </body>
+</html>

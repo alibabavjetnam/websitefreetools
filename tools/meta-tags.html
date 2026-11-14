@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo thẻ meta SEO, Open Graph, xem trước Google — WFTools</title>
+    <meta name="description" content="Tạo thẻ meta SEO: title, description, canonical, robots, Open Graph, Twitter Card; đếm độ dài chuẩn, xem trước kết quả Google và thẻ chia sẻ Facebook, Zalo, X." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo thẻ meta SEO, Open Graph</h1>
+        <p class="lead">Soạn thẻ meta cho trang web, xem trước kết quả tìm kiếm Google và thẻ khi chia sẻ mạng xã hội.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Các thẻ meta quan trọng cho SEO</h2>
+        <p data-i18n="seo.how1">Thẻ title và meta description là thứ người dùng thấy đầu tiên trên Google. Title nên dài 30 đến 60 ký tự chứa từ khoá chính; description 110 đến 160 ký tự mô tả hấp dẫn để tăng tỉ lệ bấm.</p>
+        <p data-i18n="seo.how2">Thẻ Open Graph (og:) quyết định tiêu đề, mô tả và ảnh khi chia sẻ link lên Facebook, Zalo, LinkedIn. Ảnh nên có kích thước 1200×630 px.</p>
+        <p data-i18n="seo.how3">Thẻ canonical chỉ cho Google đâu là địa chỉ chính của trang để tránh trùng lặp; robots cho phép hoặc chặn Google lập chỉ mục.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Thêm thẻ meta có giúp lên top Google không?</summary><p data-i18n="faq.a1">Title và description không phải yếu tố duy nhất nhưng ảnh hưởng mạnh tới tỉ lệ bấm, gián tiếp giúp thứ hạng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao chia sẻ Facebook không hiện ảnh mới?</summary><p data-i18n="faq.a2">Facebook lưu đệm thẻ cũ. Dùng công cụ Sharing Debugger của Facebook để tải lại.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Thẻ meta keywords còn tác dụng không?</summary><p data-i18n="faq.a3">Không. Google đã bỏ qua thẻ keywords từ lâu nên công cụ không tạo thẻ này.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Dán mã vào đâu?</summary><p data-i18n="faq.a4">Dán vào phần &lt;head&gt; của trang, thay cho thẻ title và description cũ nếu có.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có cần thẻ riêng cho Zalo không?</summary><p data-i18n="faq.a5">Không. Zalo đọc thẻ Open Graph giống Facebook.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/meta-tags.ts"></script>
+  </body>
+</html>

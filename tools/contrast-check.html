@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra độ tương phản màu chữ và nền (WCAG) — WFTools</title>
+    <meta name="description" content="Kiểm tra độ tương phản màu chữ và nền theo chuẩn WCAG 2.1: tỉ lệ, đạt AA, AAA cho chữ thường, chữ lớn, thành phần giao diện; gợi ý màu chữ đạt chuẩn." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Kiểm tra độ tương phản màu</h1>
+        <p class="lead">Kiểm tra màu chữ trên nền có đủ dễ đọc theo chuẩn WCAG không, và gợi ý màu đạt chuẩn.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Vì sao cần độ tương phản đủ cao</h2>
+        <p data-i18n="seo.how1">Chữ màu nhạt trên nền sáng khó đọc với người lớn tuổi, người nhìn kém và cả người dùng điện thoại ngoài nắng. Chuẩn WCAG đưa ra tỉ lệ tối thiểu để mọi người đọc được.</p>
+        <p data-i18n="seo.how2">Tỉ lệ đi từ 1:1 (cùng màu) đến 21:1 (đen trên trắng). Mức AA cần 4,5:1 cho chữ thường và 3:1 cho chữ lớn; mức AAA cần 7:1 và 4,5:1.</p>
+        <p data-i18n="seo.how3">Bấm Gợi ý màu chữ đạt chuẩn AA để công cụ làm đậm hoặc làm sáng màu chữ của bạn vừa đủ, giữ tông màu thương hiệu.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Chữ lớn được tính thế nào?</summary><p data-i18n="faq.a1">Từ 24 px trở lên, hoặc từ khoảng 18,5 px nếu in đậm.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Logo có cần đạt chuẩn không?</summary><p data-i18n="faq.a2">Không. WCAG miễn trừ logo và chữ trang trí, nhưng chữ có nội dung thì nên đạt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Website có bắt buộc đạt AA không?</summary><p data-i18n="faq.a3">Nhiều nước quy định website cơ quan nhà nước, ngân hàng phải đạt AA; với website thường đây là mức khuyến nghị.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Chữ trên ảnh tính tương phản thế nào?</summary><p data-i18n="faq.a4">Lấy màu ở vùng ảnh sáng nhất phía sau chữ, hoặc thêm lớp phủ tối để đảm bảo đủ tương phản.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Công cụ có tính cho màu có độ trong suốt không?</summary><p data-i18n="faq.a5">Chưa. Hãy dùng màu đặc sau khi trộn với nền.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/contrast-check.ts"></script>
+  </body>
+</html>

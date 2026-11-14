@@ -17,7 +17,23 @@ export const CDN = {
   mp4Muxer: 'https://cdn.jsdelivr.net/npm/mp4-muxer@5.2.1/build/mp4-muxer.min.js',
   // Chụp phần tử HTML thành ảnh (Word → PDF)
   htmlToImage: 'https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.js',
+  // Đợt 50 công cụ 14/11/2026
+  jsyaml: 'https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js',
+  smolToml: 'https://cdn.jsdelivr.net/npm/smol-toml@1.3.1/+esm',
+  marked: 'https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js',
+  dompurify: 'https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.4/purify.min.js',
+  turndown: 'https://cdn.jsdelivr.net/npm/turndown@7.2.0/dist/turndown.js',
+  jsqr: 'https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js',
 };
+
+/** Nạp module ES từ CDN (import động, Vite không đóng gói) */
+export async function loadModule<T>(url: string): Promise<T> {
+  try {
+    return (await import(/* @vite-ignore */ url)) as T;
+  } catch {
+    throw new Error(t('cdn.loadFail', 'Không tải được thư viện cần thiết. Kiểm tra kết nối mạng rồi thử lại.'));
+  }
+}
 
 const loading = new Map<string, Promise<void>>();
 

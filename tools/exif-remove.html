@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xem và xoá EXIF, vị trí GPS trong ảnh online — WFTools</title>
+    <meta name="description" content="Xem EXIF ẩn trong ảnh: vị trí GPS nơi chụp, hãng máy, đời điện thoại, ngày giờ, số seri; xoá sạch trước khi đăng mạng mà không giảm chất lượng JPG, PNG." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Xoá thông tin EXIF, GPS ảnh</h1>
+        <p class="lead">Xem ảnh có chứa vị trí GPS, thông tin máy chụp không, và xoá sạch trước khi chia sẻ.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Ảnh chụp chứa những thông tin gì</h2>
+        <p data-i18n="seo.how1">Ảnh chụp bằng điện thoại thường chứa EXIF: hãng máy, đời máy, ngày giờ chụp, thông số và cả toạ độ GPS nơi chụp. Người nhận file gốc có thể biết nhà bạn ở đâu.</p>
+        <p data-i18n="seo.how2">Chọn một hoặc nhiều ảnh, công cụ hiện toàn bộ thông tin tìm thấy, cảnh báo đỏ nếu có GPS và cho xem vị trí trên bản đồ.</p>
+        <p data-i18n="seo.how3">Bấm Xoá thông tin để tải bản sạch. JPG và PNG được bóc riêng phần thông tin nên ảnh giữ nguyên chất lượng; định dạng khác được lưu lại thành JPG chất lượng cao.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Facebook, Zalo có tự xoá GPS không?</summary><p data-i18n="faq.a1">Phần lớn mạng xã hội xoá EXIF khi đăng, nhưng gửi ảnh dạng file qua email, Zalo (gửi file), Telegram thì vẫn giữ nguyên.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Xoá EXIF có làm ảnh bị xoay sai không?</summary><p data-i18n="faq.a2">Ảnh JPG dùng thông tin hướng để xoay. Nếu ảnh sau khi xoá bị nằm ngang, hãy xoay lại bằng công cụ Cắt ảnh.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Có xoá được trên iPhone không?</summary><p data-i18n="faq.a3">Có. Mở trang bằng Safari, chọn ảnh từ thư viện; với ảnh HEIC công cụ lưu lại thành JPG.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Ảnh có bị tải lên mạng không?</summary><p data-i18n="faq.a4">Không. Ảnh được đọc và xử lý trên máy bạn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Tắt GPS khi chụp thế nào?</summary><p data-i18n="faq.a5">Trong cài đặt quyền vị trí của ứng dụng Camera, chọn Không cho phép.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/exif-remove.ts"></script>
+  </body>
+</html>

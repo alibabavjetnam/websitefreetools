@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra Regex online, tô sáng kết quả khớp — WFTools</title>
+    <meta name="description" content="Kiểm tra biểu thức chính quy (Regex) JavaScript online: tô sáng chuỗi khớp, xem nhóm, vị trí, thử thay thế $1; có mẫu email, số điện thoại, URL, ngày tháng." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Kiểm tra biểu thức Regex</h1>
+        <p class="lead">Viết và thử biểu thức chính quy, xem ngay chuỗi nào khớp, nhóm bắt được và kết quả thay thế.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách thử biểu thức chính quy</h2>
+        <p data-i18n="seo.how1">Nhập biểu thức vào ô trên (không cần dấu / ở hai đầu) và văn bản thử bên dưới. Các đoạn khớp được tô sáng, bảng bên dưới liệt kê từng kết quả, vị trí và giá trị các nhóm ( ).</p>
+        <p data-i18n="seo.how2">Bật các cờ như g (tìm tất cả), i (không phân biệt hoa thường), m (mỗi dòng), s (dấu chấm khớp cả xuống dòng), u (Unicode, cần cho chữ có dấu).</p>
+        <p data-i18n="seo.how3">Phần Thay thế cho thấy văn bản sau khi thay, dùng $1, $2 cho nhóm và $&amp; cho toàn bộ chuỗi khớp. Công cụ dùng bộ máy Regex của JavaScript.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Regex ở đây giống ngôn ngữ nào?</summary><p data-i18n="faq.a1">Cú pháp JavaScript (ECMAScript), gần giống PCRE của PHP, Python; khác biệt nhỏ ở nhìn sau và một số cờ.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Làm sao khớp chữ có dấu tiếng Việt?</summary><p data-i18n="faq.a2">Bật cờ u và dùng \p{L} để khớp mọi chữ cái của mọi ngôn ngữ, kể cả chữ có dấu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Biểu thức email chuẩn là gì?</summary><p data-i18n="faq.a3">Không có biểu thức hoàn hảo; mẫu có sẵn đủ cho kiểm tra thông thường, còn xác thực thật nên gửi email xác nhận.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Vì sao trang bị chậm với một số biểu thức?</summary><p data-i18n="faq.a4">Biểu thức có nhiều phần lặp lồng nhau như (a+)+ có thể chạy rất lâu. Hãy viết cụ thể hơn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có lưu biểu thức của tôi không?</summary><p data-i18n="faq.a5">Không. Mọi thứ chỉ nằm trên trang cho tới khi bạn đóng lại.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/regex-tester.ts"></script>
+  </body>
+</html>

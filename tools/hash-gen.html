@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo mã băm MD5, SHA-256, SHA-512 online — WFTools</title>
+    <meta name="description" content="Tính mã băm MD5, SHA-1, SHA-256, SHA-384, SHA-512 và CRC32 cho văn bản hoặc file ngay trên trình duyệt, so sánh checksum để kiểm tra file không bị sửa." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo mã băm MD5, SHA</h1>
+        <p class="lead">Tính mã băm MD5, SHA và CRC32 cho văn bản hoặc file, so sánh checksum để kiểm tra file tải về.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Mã băm dùng để làm gì</h2>
+        <p data-i18n="seo.how1">Hàm băm biến dữ liệu bất kỳ thành một chuỗi có độ dài cố định. Chỉ cần đổi một ký tự, mã băm thay đổi hoàn toàn, nên nó dùng để kiểm tra file có bị hỏng hay bị sửa trong lúc tải.</p>
+        <p data-i18n="seo.how2">Nhà phát hành phần mềm thường công bố mã SHA-256 bên cạnh file tải về. Chọn file ở tab Băm file, dán mã công bố vào ô so sánh, công cụ báo ngay có khớp hay không.</p>
+        <p data-i18n="seo.how3">MD5 và SHA-1 đã không còn an toàn để chống giả mạo có chủ đích, nhưng vẫn dùng tốt để kiểm tra lỗi truyền file. Khi cần an toàn, hãy dùng SHA-256 trở lên.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Có giải ngược mã băm về văn bản gốc được không?</summary><p data-i18n="faq.a1">Không. Hàm băm là một chiều; các trang tự nhận giải mã MD5 thực chất chỉ tra trong kho mật khẩu phổ biến đã băm sẵn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Băm file lớn có gửi file lên mạng không?</summary><p data-i18n="faq.a2">Không. File được đọc và băm ngay trong trình duyệt của bạn, kể cả file vài GB (tuỳ bộ nhớ máy).</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Vì sao kết quả của tôi khác với máy khác?</summary><p data-i18n="faq.a3">Kiểm tra dấu cách, xuống dòng ở cuối văn bản và kiểu mã hoá ký tự. Công cụ băm chuỗi theo UTF-8.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có nên lưu mật khẩu bằng MD5 hay SHA-256?</summary><p data-i18n="faq.a4">Không nên. Mật khẩu cần thuật toán chậm có muối như bcrypt, scrypt hoặc Argon2.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">CRC32 khác SHA thế nào?</summary><p data-i18n="faq.a5">CRC32 rất nhanh, chỉ 8 ký tự, dùng phát hiện lỗi ngẫu nhiên (file ZIP, mạng), không dùng cho mục đích bảo mật.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/hash-gen.ts"></script>
+  </body>
+</html>

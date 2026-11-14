@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mã hoá AES-256 văn bản và file bằng mật khẩu — WFTools</title>
+    <meta name="description" content="Mã hoá văn bản, file bằng mật khẩu theo chuẩn AES-256-GCM với PBKDF2 ngay trên trình duyệt, giải mã bằng đúng mật khẩu. Không máy chủ, không ai đọc được." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Mã hoá AES bằng mật khẩu</h1>
+        <p class="lead">Khoá văn bản hoặc file bằng mật khẩu theo chuẩn AES-256, chỉ người biết mật khẩu mới mở được.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách mã hoá hoạt động</h2>
+        <p data-i18n="seo.how1">Mật khẩu của bạn được kéo dài thành khoá 256 bit bằng PBKDF2-SHA256 qua 200.000 vòng, kèm muối ngẫu nhiên, khiến việc dò mật khẩu cực kỳ chậm.</p>
+        <p data-i18n="seo.how2">Dữ liệu được mã hoá bằng AES-256-GCM, chuẩn mà ngân hàng và ứng dụng nhắn tin dùng. GCM còn phát hiện được nếu dữ liệu bị sửa dù chỉ một byte.</p>
+        <p data-i18n="seo.how3">Văn bản mã hoá được xuất dạng Base64 để dán vào email, tin nhắn; file được lưu đuôi .wftenc và giải mã lại bằng chính công cụ này.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Quên mật khẩu có lấy lại dữ liệu được không?</summary><p data-i18n="faq.a1">Không. Không có cửa sau nào, kể cả chúng tôi cũng không mở được. Hãy ghi nhớ hoặc lưu mật khẩu trong trình quản lý mật khẩu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Gửi văn bản đã mã hoá qua Zalo, email có an toàn không?</summary><p data-i18n="faq.a2">Có, nếu mật khẩu đủ mạnh và bạn gửi mật khẩu qua một kênh khác (gọi điện, gặp trực tiếp).</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Mỗi lần mã hoá ra kết quả khác nhau là lỗi à?</summary><p data-i18n="faq.a3">Không phải lỗi. Muối và IV ngẫu nhiên khiến kết quả luôn khác nhau, nhưng giải mã vẫn ra cùng nội dung.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">File lớn có mã hoá được không?</summary><p data-i18n="faq.a4">Được, nhưng file được xử lý trong bộ nhớ nên nên dưới vài trăm MB trên điện thoại.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có mở được file .wftenc bằng phần mềm khác không?</summary><p data-i18n="faq.a5">Định dạng gồm 4 byte WFT1, 16 byte muối, 12 byte IV rồi dữ liệu AES-GCM; lập trình viên có thể tự giải mã bằng thư viện chuẩn.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/aes-encrypt.ts"></script>
+  </body>
+</html>

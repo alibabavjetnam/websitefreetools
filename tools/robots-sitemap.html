@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo robots.txt và sitemap.xml cho website — WFTools</title>
+    <meta name="description" content="Tạo robots.txt chặn thư mục quản trị, chặn bot AI (GPTBot, ClaudeBot…), khai báo sitemap; tạo sitemap.xml từ danh sách đường dẫn có lastmod, priority." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo robots.txt, sitemap.xml</h1>
+        <p class="lead">Tạo file robots.txt và sitemap.xml đúng chuẩn để Google thu thập website hiệu quả.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">robots.txt và sitemap.xml</h2>
+        <p data-i18n="seo.how1">robots.txt nằm ở gốc tên miền, cho bot tìm kiếm biết thư mục nào không nên thu thập (trang quản trị, giỏ hàng, kết quả tìm kiếm nội bộ) và sitemap ở đâu.</p>
+        <p data-i18n="seo.how2">Bạn có thể chặn riêng các bot thu thập dữ liệu để huấn luyện AI như GPTBot, ClaudeBot, CCBot mà vẫn cho Google lập chỉ mục bình thường.</p>
+        <p data-i18n="seo.how3">sitemap.xml liệt kê các trang quan trọng để Google tìm thấy nhanh hơn. Dán danh sách đường dẫn, công cụ ghép tên miền, ngày cập nhật và độ ưu tiên theo độ sâu.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">robots.txt có chặn được người xem không?</summary><p data-i18n="faq.a1">Không. Nó chỉ là lời đề nghị với bot; trang vẫn mở được. Muốn chặn hẳn phải dùng mật khẩu hoặc noindex.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Chặn bằng robots.txt có làm trang biến khỏi Google?</summary><p data-i18n="faq.a2">Không chắc. Google vẫn có thể hiện địa chỉ nếu có link trỏ tới. Dùng thẻ meta noindex để gỡ khỏi kết quả.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Sitemap tối đa bao nhiêu link?</summary><p data-i18n="faq.a3">50.000 URL hoặc 50 MB mỗi file. Website lớn hơn chia thành nhiều sitemap và một sitemap index.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">priority và changefreq có quan trọng không?</summary><p data-i18n="faq.a4">Google gần như bỏ qua hai thẻ này; lastmod chính xác mới có ích.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Khai báo sitemap với Google ở đâu?</summary><p data-i18n="faq.a5">Trong Google Search Console, mục Sơ đồ trang web, và dòng Sitemap: trong robots.txt.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/robots-sitemap.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đếm byte, tìm ký tự ẩn Unicode, chuẩn hoá NFC — WFTools</title>
+    <meta name="description" content="Kiểm tra văn bản: đếm ký tự, byte UTF-8, độ dài UTF-16, tìm ký tự ẩn (zero-width), khoảng trắng lạ, emoji và chuẩn hoá chữ có dấu tiếng Việt về NFC." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Kiểm tra ký tự Unicode</h1>
+        <p class="lead">Xem từng ký tự, mã Unicode, số byte và phát hiện ký tự ẩn gây lỗi so sánh chuỗi.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Vì sao cần kiểm tra ký tự Unicode</h2>
+        <p data-i18n="seo.how1">Một chuỗi nhìn giống nhau có thể chứa ký tự ẩn như dấu cách không độ rộng (U+200B) hay ký tự đánh dấu hướng chữ, khiến đăng nhập sai, tìm kiếm không ra hoặc mã nguồn báo lỗi lạ.</p>
+        <p data-i18n="seo.how2">Chữ có dấu tiếng Việt có hai cách lưu: dựng sẵn (NFC) và tổ hợp (NFD, chữ cái cộng dấu riêng). Văn bản sao chép từ macOS hoặc PDF hay bị NFD, nên chuẩn hoá về NFC.</p>
+        <p data-i18n="seo.how3">Bảng thống kê cho biết số ký tự hiển thị, số code point, độ dài theo JavaScript và số byte UTF-8 để kiểm tra giới hạn độ dài của cơ sở dữ liệu, SMS hay tweet.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Vì sao độ dài chuỗi khác số ký tự tôi thấy?</summary><p data-i18n="faq.a1">Emoji và một số ký tự chiếm 2 đơn vị UTF-16 hoặc gồm nhiều code point ghép lại, nên các cách đếm cho kết quả khác nhau.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Ký tự ẩn từ đâu mà có?</summary><p data-i18n="faq.a2">Thường do sao chép từ web, Word, PDF hoặc ứng dụng chat. Bấm Xoá ký tự ẩn để làm sạch.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Chuẩn hoá NFC có làm đổi nội dung không?</summary><p data-i18n="faq.a3">Không đổi chữ hiển thị, chỉ đổi cách lưu để các chương trình so sánh và tìm kiếm chính xác.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Một chữ có dấu tiếng Việt chiếm mấy byte?</summary><p data-i18n="faq.a4">Thường 2 đến 3 byte theo UTF-8; chữ không dấu chỉ 1 byte.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Công cụ có giới hạn độ dài không?</summary><p data-i18n="faq.a5">Bảng chi tiết hiện tối đa 2.000 ký tự đầu; phần thống kê vẫn tính trên toàn bộ văn bản.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/unicode-inspect.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo lịch tháng, lịch năm có âm lịch để in — WFTools</title>
+    <meta name="description" content="Tạo lịch tháng, lịch năm 12 tháng để in: ngày âm lịch, số tuần, ô ghi chú, tuần bắt đầu thứ Hai hoặc Chủ nhật, chọn màu; in hoặc lưu PDF khổ A4 miễn phí." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo lịch tháng, lịch năm để in</h1>
+        <p class="lead">Tạo lịch tháng hoặc cả năm có ngày âm lịch, in ra giấy hoặc lưu PDF.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Tuỳ chỉnh lịch theo ý bạn</h2>
+        <p data-i18n="seo.how1">Chọn lịch một tháng (to, có dòng ghi chú, hợp dán tủ lạnh, bàn làm việc) hoặc lịch cả năm 12 tháng trên một trang. Đặt tiêu đề như Lịch gia đình, Lịch học.</p>
+        <p data-i18n="seo.how2">Bật ngày âm lịch để thấy ngày rằm, mùng một (tô nổi) tính theo múi giờ Việt Nam, kèm tháng nhuận. Bật số tuần theo chuẩn ISO khi cần lập kế hoạch công việc.</p>
+        <p data-i18n="seo.how3">Bấm In để in ra giấy hoặc chọn Lưu dưới dạng PDF trong hộp thoại in. Chỉ phần lịch được in, các nút và menu tự ẩn.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Ngày âm lịch có chính xác không?</summary><p data-i18n="faq.a1">Được tính bằng thuật toán thiên văn cho múi giờ UTC+7, khớp lịch vạn niên Việt Nam, có tháng nhuận.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Lịch có ngày lễ không?</summary><p data-i18n="faq.a2">Hiện chưa đánh dấu ngày lễ; bạn có thể ghi tay vào ô ghi chú sau khi in.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">In lịch năm có vừa một trang A4?</summary><p data-i18n="faq.a3">Có. Lịch năm sắp 12 tháng thành lưới vừa một trang A4 hướng dọc.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Tuần bắt đầu thứ Hai hay Chủ nhật?</summary><p data-i18n="faq.a4">Việt Nam và châu Âu thường bắt đầu từ thứ Hai; Mỹ, Nhật bắt đầu từ Chủ nhật. Bạn chọn được.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có tạo lịch cho năm sau không?</summary><p data-i18n="faq.a5">Có, nhập năm bất kỳ từ 1900 đến 2199.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/calendar-print.ts"></script>
+  </body>
+</html>

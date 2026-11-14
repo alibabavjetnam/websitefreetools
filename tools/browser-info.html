@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xem trình duyệt, User-Agent, IP, màn hình của bạn — WFTools</title>
+    <meta name="description" content="Xem thông tin trình duyệt và thiết bị: tên, phiên bản trình duyệt, hệ điều hành, User-Agent, độ phân giải, DPR, múi giờ, card đồ hoạ và địa chỉ IP công cộng." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Thông tin trình duyệt, IP</h1>
+        <p class="lead">Xem nhanh trình duyệt, hệ điều hành, màn hình, múi giờ và địa chỉ IP công cộng của bạn.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Thông tin này dùng để làm gì</h2>
+        <p data-i18n="seo.how1">Khi báo lỗi website hoặc nhờ hỗ trợ kỹ thuật, bạn thường được hỏi dùng trình duyệt gì, phiên bản nào, màn hình bao nhiêu. Trang này gom đủ thông tin, bấm một nút là sao chép được.</p>
+        <p data-i18n="seo.how2">Chuỗi User-Agent là thứ trình duyệt tự giới thiệu với mọi website. Vùng hiển thị và tỉ lệ điểm ảnh (DPR) giúp lập trình viên kiểm tra giao diện trên điện thoại.</p>
+        <p data-i18n="seo.how3">Địa chỉ IP công cộng chỉ được tra khi bạn bấm nút, qua dịch vụ miễn phí api.ipify.org; các thông tin còn lại đọc trực tiếp từ trình duyệt, không gửi đi đâu.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Địa chỉ IP này có phải IP máy tôi không?</summary><p data-i18n="faq.a1">Đó là IP công cộng của mạng bạn (modem, nhà mạng). Máy trong mạng LAN có IP nội bộ khác, dạng 192.168.x.x.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao Windows 11 hiện là Windows 10/11?</summary><p data-i18n="faq.a2">Trình duyệt báo cùng một mã cho Windows 10 và 11 nên không phân biệt được qua User-Agent.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">RAM hiện ít hơn máy thật?</summary><p data-i18n="faq.a3">Trình duyệt chỉ báo con số làm tròn và tối đa 8 GB để bảo vệ quyền riêng tư.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Website có đọc được những thông tin này không?</summary><p data-i18n="faq.a4">Có. Mọi website bạn mở đều đọc được phần lớn thông tin này.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Dùng VPN thì IP hiện gì?</summary><p data-i18n="faq.a5">Hiện IP của máy chủ VPN, không phải IP thật của bạn.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/browser-info.ts"></script>
+  </body>
+</html>

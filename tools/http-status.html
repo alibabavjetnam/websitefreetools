@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tra mã trạng thái HTTP (404, 500, 301) và MIME — WFTools</title>
+    <meta name="description" content="Tra mã trạng thái HTTP dễ hiểu: 200 OK, 301, 302 chuyển hướng, 403, 404, 429, 500, 502, 503, 504…; kèm bảng kiểu MIME (Content-Type) theo đuôi file." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tra mã trạng thái HTTP</h1>
+        <p class="lead">Tra nhanh ý nghĩa các mã trạng thái HTTP và kiểu MIME của từng loại file.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Các nhóm mã trạng thái HTTP</h2>
+        <p data-i18n="seo.how1">Mỗi lần trình duyệt gọi máy chủ, máy chủ trả về một mã 3 chữ số. Nhóm 2xx là thành công, 3xx là chuyển hướng, 4xx là lỗi do yêu cầu (sai địa chỉ, chưa đăng nhập), 5xx là lỗi máy chủ.</p>
+        <p data-i18n="seo.how2">Với SEO, dùng 301 khi đổi hẳn địa chỉ trang để giữ thứ hạng, 404 hoặc 410 cho trang đã xoá; tránh để trang lỗi trả 200.</p>
+        <p data-i18n="seo.how3">Tab Kiểu MIME cho biết Content-Type đúng của từng đuôi file, cần khi cấu hình máy chủ, tải file lên hoặc gọi API.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Lỗi 404 có ảnh hưởng SEO không?</summary><p data-i18n="faq.a1">Vài trang 404 là bình thường. Chỉ nên chuyển hướng 301 các trang cũ có nhiều người truy cập hoặc nhiều link trỏ tới.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Khác nhau giữa 401 và 403?</summary><p data-i18n="faq.a2">401 là chưa đăng nhập hoặc phiên hết hạn; 403 là đã đăng nhập nhưng không có quyền.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Lỗi 502 và 504 là do đâu?</summary><p data-i18n="faq.a3">Máy chủ trung gian (Nginx, Cloudflare) không nhận được phản hồi hợp lệ (502) hoặc chờ quá lâu (504) từ máy chủ ứng dụng phía sau.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">429 Too Many Requests xử lý sao?</summary><p data-i18n="faq.a4">Bạn gửi quá nhiều yêu cầu trong thời gian ngắn. Chờ một lúc hoặc giảm tần suất gọi API.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Khi nào dùng 302 thay 301?</summary><p data-i18n="faq.a5">Khi chuyển hướng tạm thời, ví dụ trang bảo trì hay chương trình khuyến mãi ngắn ngày.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/http-status.ts"></script>
+  </body>
+</html>

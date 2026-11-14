@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo dữ liệu giả (fake data) JSON, CSV, SQL — WFTools</title>
+    <meta name="description" content="Tạo dữ liệu giả để thử phần mềm: họ tên, email, điện thoại, địa chỉ, công ty, ngày sinh theo Việt Nam, Mỹ, Nhật…; xuất JSON, CSV, SQL INSERT tới 5.000 dòng." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo dữ liệu giả để thử</h1>
+        <p class="lead">Sinh hàng nghìn dòng dữ liệu mẫu theo từng nước để thử phần mềm, làm mẫu giao diện.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Dữ liệu giả dùng khi nào</h2>
+        <p data-i18n="seo.how1">Khi phát triển phần mềm, bạn cần dữ liệu trông giống thật để thử giao diện, phân trang, tìm kiếm, nhập xuất file mà không dùng thông tin khách hàng thật.</p>
+        <p data-i18n="seo.how2">Chọn nước để có họ tên, số điện thoại, thành phố, tên miền email đúng kiểu nước đó; chọn các trường cần dùng và số dòng (tối đa 5.000).</p>
+        <p data-i18n="seo.how3">Xuất JSON cho API giả, CSV hoặc bảng để mở bằng Excel, hoặc câu lệnh SQL INSERT để nạp thẳng vào cơ sở dữ liệu thử.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Dữ liệu có phải của người thật không?</summary><p data-i18n="faq.a1">Không. Họ tên, số điện thoại được ghép ngẫu nhiên từ danh sách phổ biến; trùng hợp với người thật là ngẫu nhiên.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Email giả có gửi được không?</summary><p data-i18n="faq.a2">Tên miền là gmail.com, outlook.com… nên đừng gửi thư thật tới các địa chỉ này. Dùng cho thử nghiệm cục bộ.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">File CSV mở Excel bị lỗi phông?</summary><p data-i18n="faq.a3">Công cụ thêm BOM UTF-8 khi tải CSV để Excel hiển thị đúng chữ có dấu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có tạo được hơn 5.000 dòng không?</summary><p data-i18n="faq.a4">Giới hạn để trình duyệt không bị treo; hãy tạo nhiều lần rồi ghép lại nếu cần.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có dùng được cho dữ liệu kiểm thử tải không?</summary><p data-i18n="faq.a5">Có, nhưng với hàng triệu dòng nên dùng thư viện như Faker trên máy chủ.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/fake-data.ts"></script>
+  </body>
+</html>

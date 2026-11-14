@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo mã nhúng YouTube, Google Maps responsive — WFTools</title>
+    <meta name="description" content="Tạo mã nhúng iframe responsive cho YouTube (cả Shorts, thời điểm bắt đầu), Vimeo, Google Maps, Google Drive; tự co giãn theo màn hình, tải chậm, tự phát." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo mã nhúng video, bản đồ</h1>
+        <p class="lead">Dán link YouTube, Vimeo, Google Maps hoặc Google Drive để có mã nhúng co giãn đẹp trên điện thoại.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Nhúng video, bản đồ đúng cách</h2>
+        <p data-i18n="seo.how1">Mã nhúng mặc định của YouTube có chiều rộng cố định nên bị tràn trên điện thoại. Công cụ bọc iframe trong khung giữ tỉ lệ 16:9 (hoặc 9:16 cho Shorts) và tự co giãn theo màn hình.</p>
+        <p data-i18n="seo.how2">Chỉ cần dán link thường (cả link có &amp;t=30s), công cụ tự đổi sang link nhúng đúng, thêm thời điểm bắt đầu, tự phát, lặp lại theo lựa chọn.</p>
+        <p data-i18n="seo.how3">Tải chậm (loading=lazy) giúp trang mở nhanh vì video chỉ tải khi người xem cuộn tới. Chế độ YouTube không cookie hạn chế theo dõi người xem.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Vì sao tự phát không chạy?</summary><p data-i18n="faq.a1">Trình duyệt chỉ cho tự phát khi tắt tiếng, nên công cụ tự thêm tắt tiếng khi bạn bật tự phát.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Nhúng được video riêng tư không?</summary><p data-i18n="faq.a2">Không. Video phải ở chế độ công khai hoặc không công khai (unlisted), và chủ video cho phép nhúng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Nhúng Google Maps chỗ tôi thế nào?</summary><p data-i18n="faq.a3">Dán link địa điểm từ Google Maps; hoặc dùng nút Chia sẻ → Nhúng bản đồ của Google để có bản đồ chính xác nhất.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">File Google Drive không hiện?</summary><p data-i18n="faq.a4">File phải được chia sẻ ở chế độ Bất kỳ ai có đường liên kết đều xem được.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có dán được vào WordPress, Blogger không?</summary><p data-i18n="faq.a5">Có. Dùng khối HTML tuỳ chỉnh (WordPress) hoặc chế độ HTML (Blogger) để dán mã.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/embed-code.ts"></script>
+  </body>
+</html>

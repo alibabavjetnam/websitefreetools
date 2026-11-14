@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mã hoá và giải mã thực thể HTML (HTML entities) — WFTools</title>
+    <meta name="description" content="Mã hoá HTML entities online: đổi &lt; &gt; &amp; dấu nháy, ký hiệu © € và chữ có dấu thành &amp;lt; &amp;amp; &amp;#233; để hiển thị mã HTML như chữ thường, và giải mã ngược lại." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Mã hoá thực thể HTML</h1>
+        <p class="lead">Đổi ký tự đặc biệt thành thực thể HTML để hiển thị an toàn trên trang web, và giải mã ngược lại.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Thực thể HTML là gì</h2>
+        <p data-i18n="seo.how1">Thực thể HTML là cách viết một ký tự bằng mã, ví dụ &amp;lt; cho dấu &lt; hay &amp;copy; cho ©. Nhờ vậy bạn có thể hiển thị đoạn mã HTML lên trang web mà trình duyệt không chạy nó.</p>
+        <p data-i18n="seo.how2">Chế độ cơ bản chỉ đổi 5 ký tự có nghĩa đặc biệt trong HTML. Chế độ dùng tên thực thể đổi thêm ký hiệu phổ biến như € ™ — sang tên dễ đọc.</p>
+        <p data-i18n="seo.how3">Chế độ mã số đổi mọi ký tự ngoài ASCII, kể cả chữ có dấu tiếng Việt, thành dạng &amp;#số; để chạy được cả ở hệ thống cũ không hỗ trợ UTF-8.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Khi nào cần mã hoá thực thể?</summary><p data-i18n="faq.a1">Khi đưa nội dung người dùng nhập vào trang web, viết bài hướng dẫn có mã HTML, hoặc chèn văn bản vào thuộc tính HTML.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Mã hoá thực thể có chống được XSS không?</summary><p data-i18n="faq.a2">Mã hoá đúng 5 ký tự &amp; &lt; &gt; dấu nháy kép và nháy đơn là bước quan trọng để chống chèn mã, nhưng còn tuỳ ngữ cảnh (trong script, URL cần cách khác).</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">&amp;nbsp; là gì?</summary><p data-i18n="faq.a3">Đó là dấu cách không ngắt dòng, giữ hai từ luôn nằm cùng một dòng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có cần mã hoá chữ có dấu tiếng Việt không?</summary><p data-i18n="faq.a4">Trang dùng UTF-8 thì không cần. Chỉ mã hoá khi hệ thống đích không hỗ trợ UTF-8.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Giải mã có hỗ trợ dạng hex &amp;#x41; không?</summary><p data-i18n="faq.a5">Có. Công cụ giải mã cả dạng tên, dạng số thập phân &amp;#65; và dạng hex &amp;#x41;.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/html-entities.ts"></script>
+  </body>
+</html>

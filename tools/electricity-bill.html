@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính tiền điện sinh hoạt bậc thang EVN 2026 — WFTools</title>
+    <meta name="description" content="Tính tiền điện sinh hoạt theo biểu giá EVN 5 bậc mới từ 01/11/2026: theo số kWh, chỉ số công tơ, đổi số tiền ra kWh, ước tính theo thiết bị, có thuế GTGT." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tính tiền điện sinh hoạt</h1>
+        <p class="lead">Tính tiền điện hằng tháng theo biểu giá bậc thang EVN mới, kèm thuế và bảng chi tiết từng bậc.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách tính tiền điện bậc thang</h2>
+        <p data-i18n="seo.how1">Từ 01/11/2026, giá điện sinh hoạt có 5 bậc: 0–100 kWh giá 1.901 đ, 101–200 kWh 2.289 đ, 201–400 kWh 2.894 đ, 401–700 kWh 3.456 đ, từ 701 kWh 3.844 đ/kWh (chưa thuế).</p>
+        <p data-i18n="seo.how2">Số điện được chia lần lượt vào từng bậc, mỗi bậc nhân với đơn giá của bậc đó rồi cộng lại, sau đó cộng thuế giá trị gia tăng (đang là 8% hoặc 10% tuỳ thời điểm).</p>
+        <p data-i18n="seo.how3">Tab Đổi tiền ra số kWh cho biết số tiền trên hoá đơn tương ứng bao nhiêu số điện; tab Ước tính theo thiết bị cộng công suất và giờ dùng của điều hoà, tủ lạnh, bình nóng lạnh.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Thuế GTGT tiền điện là 8% hay 10%?</summary><p data-i18n="faq.a1">Mức chuẩn là 10%; trong các giai đoạn giảm thuế theo nghị quyết của Quốc hội, điện sinh hoạt chịu 8%. Hãy chọn đúng mức ghi trên hoá đơn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Nhiều hộ chung một công tơ tính thế nào?</summary><p data-i18n="faq.a2">Định mức mỗi bậc được nhân với số hộ. Nhập số hộ dùng chung để tính đúng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Nhà trọ thu tiền điện thế nào là đúng?</summary><p data-i18n="faq.a3">Nếu không có công tơ riêng từng phòng, chủ nhà được thu tối đa theo giá bậc 3 cho mỗi kWh.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Vì sao hoá đơn thực tế lệch vài đồng?</summary><p data-i18n="faq.a4">Do làm tròn và kỳ ghi chỉ số không tròn tháng, định mức được tính theo số ngày.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Biểu giá cũ 6 bậc còn dùng không?</summary><p data-i18n="faq.a5">Biểu 6 bậc áp dụng tới hết 31/10/2026; công cụ vẫn giữ để bạn so sánh.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/electricity-bill.ts"></script>
+  </body>
+</html>

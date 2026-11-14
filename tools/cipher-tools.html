@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mật mã Caesar, ROT13, Morse, nhị phân online — WFTools</title>
+    <meta name="description" content="Mã hoá, giải mã mật mã Caesar, ROT13, Vigenère, Atbash, mã Morse, nhị phân, hex và viết ngược chữ online. Dùng cho học tập, trò chơi giải đố, mật thư." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Mật mã Caesar, Morse, nhị phân</h1>
+        <p class="lead">Mã hoá và giải mã các kiểu mật mã cổ điển, mã Morse, nhị phân dùng cho học tập và giải đố.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Các kiểu mã có trong công cụ</h2>
+        <p data-i18n="seo.how1">Mật mã Caesar dịch mỗi chữ cái đi một số bước trong bảng chữ, ROT13 là Caesar dịch 13 bước. Vigenère dùng một từ khoá để mỗi chữ dịch một khoảng khác nhau, khó đoán hơn.</p>
+        <p data-i18n="seo.how2">Mã Morse biểu diễn chữ bằng chấm và gạch, các từ ngăn bằng dấu /. Chữ có dấu tiếng Việt được bỏ dấu trước khi mã hoá.</p>
+        <p data-i18n="seo.how3">Nhị phân và hex đổi từng byte UTF-8 của văn bản sang dãy 0-1 hoặc mã thập lục phân, hữu ích khi học tin học cơ bản.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Mật mã Caesar có an toàn không?</summary><p data-i18n="faq.a1">Không. Chỉ có 25 cách dịch nên thử hết trong vài giây; chỉ dùng cho trò chơi, mật thư sinh hoạt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Giải mã Caesar khi không biết số bước thế nào?</summary><p data-i18n="faq.a2">Thử lần lượt số bước từ 1 đến 25 ở ô Số bước dịch cho tới khi đọc được nghĩa.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Mã Morse ngăn từ bằng gì?</summary><p data-i18n="faq.a3">Các chữ cái ngăn bằng một dấu cách, các từ ngăn bằng dấu / (hoặc ba dấu cách).</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Vì sao chữ có dấu bị mất khi mã Morse?</summary><p data-i18n="faq.a4">Bảng Morse quốc tế không có chữ có dấu, nên công cụ đổi về chữ không dấu.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có mật mã nào an toàn để dùng thật?</summary><p data-i18n="faq.a5">Hãy dùng công cụ Mã hoá AES với mật khẩu mạnh.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/cipher-tools.ts"></script>
+  </body>
+</html>

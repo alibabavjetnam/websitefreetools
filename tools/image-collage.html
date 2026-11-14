@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghép ảnh online, tạo ảnh ghép và meme — WFTools</title>
+    <meta name="description" content="Ghép nhiều ảnh thành một online: 8 bố cục 2, 3, 4, 6, 9 ảnh; khung vuông, dọc, ngang, story; chỉnh khoảng cách, viền, bo góc. Tạo meme. Tải PNG, JPG." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Ghép ảnh và tạo meme</h1>
+        <p class="lead">Ghép nhiều ảnh thành một theo bố cục có sẵn, hoặc chèn chữ để tạo ảnh meme.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách ghép ảnh</h2>
+        <p data-i18n="seo.how1">Chọn nhiều ảnh cùng lúc, chọn bố cục và khung (vuông cho Instagram, dọc 4:5, ngang 16:9, story 9:16). Ảnh được cắt vừa ô tự động, giữ phần giữa ảnh.</p>
+        <p data-i18n="seo.how2">Chỉnh khoảng cách giữa các ô, màu nền viền và bo góc để ảnh ghép mềm mại hơn. Thứ tự ảnh theo thứ tự bạn chọn file.</p>
+        <p data-i18n="seo.how3">Tab Tạo meme dùng ảnh đầu tiên, thêm chữ phía trên và dưới kiểu chữ trắng viền đen quen thuộc, tự thu nhỏ chữ cho vừa ảnh.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Ảnh có bị giảm chất lượng không?</summary><p data-i18n="faq.a1">Ảnh ghép xuất theo kích thước khung (ví dụ 1080×1080); tải PNG để giữ nét nhất.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Có chọn phần ảnh hiện trong ô không?</summary><p data-i18n="faq.a2">Hiện công cụ tự lấy phần giữa ảnh. Hãy cắt ảnh trước bằng công cụ Cắt ảnh nếu cần.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Có chèn chữ tiếng Việt cho meme không?</summary><p data-i18n="faq.a3">Có, chữ có dấu hiển thị bình thường.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Ảnh có bị gửi lên mạng không?</summary><p data-i18n="faq.a4">Không. Ảnh được ghép ngay trên trình duyệt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Chọn ít ảnh hơn số ô thì sao?</summary><p data-i18n="faq.a5">Ảnh được lặp lại để lấp đủ ô; chưa chọn ảnh thì ô hiện số thứ tự.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/image-collage.ts"></script>
+  </body>
+</html>

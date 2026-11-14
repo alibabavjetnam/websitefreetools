@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mã hoá, giải mã Base64 online (UTF-8) — WFTools</title>
+    <meta name="description" content="Mã hoá và giải mã Base64 online miễn phí: văn bản tiếng Việt UTF-8, Base64URL, file sang Base64 data URI. Chạy ngay trên trình duyệt, không tải lên máy chủ." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Mã hoá và giải mã Base64</h1>
+        <p class="lead">Đổi văn bản hoặc file sang chuỗi Base64 và giải mã ngược lại ngay trên trình duyệt.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Base64 là gì và cách dùng công cụ</h2>
+        <p data-i18n="seo.how1">Base64 biểu diễn dữ liệu bất kỳ bằng 64 ký tự an toàn (A-Z, a-z, 0-9, + và /), thường dùng để nhúng ảnh vào HTML/CSS, gửi file đính kèm email hay truyền dữ liệu nhị phân qua JSON.</p>
+        <p data-i18n="seo.how2">Tab Mã hoá đổi văn bản sang Base64 theo UTF-8 nên chữ có dấu tiếng Việt không bị lỗi. Chọn Base64URL khi cần đặt chuỗi vào đường link hoặc token JWT.</p>
+        <p data-i18n="seo.how3">Tab Giải mã tự nhận cả chuỗi có hay không có dấu =, chuỗi data URI; nếu kết quả là dữ liệu nhị phân, bạn có thể lưu thành file.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Base64 có phải là mã hoá bảo mật không?</summary><p data-i18n="faq.a1">Không. Base64 chỉ là cách viết lại dữ liệu, ai cũng giải mã được. Muốn giữ bí mật hãy dùng công cụ Mã hoá AES.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao chuỗi Base64 dài hơn văn bản gốc?</summary><p data-i18n="faq.a2">Cứ 3 byte dữ liệu được viết thành 4 ký tự, nên kích thước tăng khoảng 33%.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Base64URL khác Base64 thường thế nào?</summary><p data-i18n="faq.a3">Base64URL thay + bằng - và / bằng _, thường bỏ dấu = ở cuối để dùng an toàn trong đường link và tên file.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Giải mã ra chữ lỗi phông thì làm sao?</summary><p data-i18n="faq.a4">Dữ liệu gốc có thể không phải UTF-8 hoặc là file nhị phân. Hãy bấm Lưu thành file rồi mở bằng phần mềm phù hợp.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có giới hạn dung lượng file không?</summary><p data-i18n="faq.a5">Không có giới hạn cố định, nhưng file trên vài chục MB có thể làm trình duyệt chậm vì mọi thứ xử lý trong bộ nhớ máy bạn.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/base64-text.ts"></script>
+  </body>
+</html>

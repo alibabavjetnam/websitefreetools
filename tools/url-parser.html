@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phân tích URL, sửa tham số, xoá utm, fbclid — WFTools</title>
+    <meta name="description" content="Phân tích đường link: giao thức, tên miền, cổng, đường dẫn, neo, từng tham số đã giải mã; sửa, thêm, xoá tham số và xoá nhanh mã theo dõi utm, fbclid, gclid." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Phân tích và sửa URL</h1>
+        <p class="lead">Tách đường link thành từng phần, sửa tham số và xoá mã theo dõi để có link gọn, sạch.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Các phần của một đường link</h2>
+        <p data-i18n="seo.how1">Một URL gồm giao thức (https), tên miền (shop.example.com), cổng, đường dẫn (/products/qr), chuỗi truy vấn sau dấu ? gồm các cặp tên=giá trị, và neo sau dấu #.</p>
+        <p data-i18n="seo.how2">Bảng tham số hiện giá trị đã giải mã (chữ có dấu, dấu cách) để dễ đọc. Sửa trực tiếp trong bảng, URL mới được dựng lại và mã hoá đúng chuẩn.</p>
+        <p data-i18n="seo.how3">Nút Xoá tham số theo dõi bỏ utm_source, fbclid, gclid… thường được gắn khi bấm link từ quảng cáo, Facebook, giúp link ngắn gọn và riêng tư hơn khi chia sẻ.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Xoá utm có làm link hỏng không?</summary><p data-i18n="faq.a1">Không. Tham số theo dõi chỉ để thống kê, trang vẫn mở bình thường.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">fbclid là gì?</summary><p data-i18n="faq.a2">Là mã Facebook gắn vào link khi bạn bấm từ Facebook, dùng để đo lường quảng cáo.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Vì sao mật khẩu trong URL bị che?</summary><p data-i18n="faq.a3">Để tránh lộ khi chụp màn hình. Không nên đặt mật khẩu trong đường link.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có rút gọn link được không?</summary><p data-i18n="faq.a4">Công cụ chỉ làm gọn tham số. Rút gọn thành link ngắn cần dịch vụ có máy chủ.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Gõ thiếu https:// có được không?</summary><p data-i18n="faq.a5">Được. Công cụ tự thêm https:// khi đường link không có giao thức.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/url-parser.ts"></script>
+  </body>
+</html>

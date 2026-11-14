@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chia tiền hoá đơn, chia tiền đi chơi nhóm — WFTools</title>
+    <meta name="description" content="Chia tiền hoá đơn nhà hàng cho nhiều người có tip, thuế, giảm giá; tính chi tiêu nhóm khi đi du lịch: ai trả bao nhiêu, ai nợ ai, chuyển tiền ít lần nhất." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Chia tiền hoá đơn, chi tiêu nhóm</h1>
+        <p class="lead">Chia đều hoá đơn hoặc tính chi tiêu nhóm: ai đã trả bao nhiêu, ai cần chuyển cho ai.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Hai cách chia tiền</h2>
+        <p data-i18n="seo.how1">Tab Chia đều hoá đơn: nhập tổng tiền, số người, phần trăm tip, thuế và giảm giá. Công cụ tính số tiền mỗi người, có thể làm tròn lên số đẹp để dễ chuyển khoản.</p>
+        <p data-i18n="seo.how2">Tab Chi tiêu nhóm dành cho chuyến đi, tiệc chung: mỗi dòng là một khoản chi gồm người trả, số tiền và người dùng chung. Bỏ trống phần người dùng chung nghĩa là chia cho cả nhóm.</p>
+        <p data-i18n="seo.how3">Công cụ tính số dư của từng người rồi ghép người nợ với người được trả để số lần chuyển tiền ít nhất. Bấm Sao chép để gửi kết quả vào nhóm chat.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Một khoản chỉ vài người dùng chung thì nhập sao?</summary><p data-i18n="faq.a1">Ghi tên những người đó ở phần thứ ba, ngăn bằng dấu phẩy, ví dụ: Bình | 450000 | An, Bình.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Tiền tip tính trên tổng trước hay sau thuế?</summary><p data-i18n="faq.a2">Công cụ tính tip và thuế đều trên tổng hoá đơn gốc trước giảm giá.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Làm tròn dư tiền thì sao?</summary><p data-i18n="faq.a3">Phần dư được hiện riêng để cả nhóm biết, thường dùng làm tiền boa hoặc quỹ chung.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Tên viết khác nhau có bị tính là hai người?</summary><p data-i18n="faq.a4">Có. Hãy viết tên giống hệt nhau ở mọi dòng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Có lưu lại danh sách chi không?</summary><p data-i18n="faq.a5">Không. Hãy sao chép kết quả trước khi đóng trang.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/bill-split.ts"></script>
+  </body>
+</html>

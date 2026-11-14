@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo UUID v4, UUID v7, ULID hàng loạt online — WFTools</title>
+    <meta name="description" content="Tạo UUID v4 ngẫu nhiên, UUID v7 sắp xếp theo thời gian và ULID hàng loạt (tới 1000 mã), chữ hoa, bỏ gạch ngang. Kiểm tra phiên bản UUID và thời điểm tạo." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Tạo UUID và ULID</h1>
+        <p class="lead">Tạo mã định danh duy nhất UUID v4, UUID v7 hoặc ULID hàng loạt bằng bộ sinh số ngẫu nhiên an toàn.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Chọn loại mã định danh phù hợp</h2>
+        <p data-i18n="seo.how1">UUID là mã 128 bit gồm 32 chữ số hex, xác suất trùng gần như bằng không. UUID v4 hoàn toàn ngẫu nhiên, phù hợp làm mã đơn hàng, mã phiên, khoá chính.</p>
+        <p data-i18n="seo.how2">UUID v7 và ULID chứa thời điểm tạo ở đầu nên tự sắp xếp theo thứ tự thời gian, giúp cơ sở dữ liệu ghi nhanh hơn khi dùng làm khoá chính.</p>
+        <p data-i18n="seo.how3">Dán một mã vào ô kiểm tra để biết đó là UUID phiên bản mấy và, với UUID v7 hoặc ULID, được tạo lúc nào.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">UUID có thể bị trùng không?</summary><p data-i18n="faq.a1">Về lý thuyết có, nhưng với UUID v4 bạn phải tạo khoảng 2,7 tỷ tỷ mã mới có 50% khả năng trùng một cặp.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Nên dùng UUID v4 hay v7?</summary><p data-i18n="faq.a2">Dùng v7 khi làm khoá chính trong cơ sở dữ liệu để chỉ mục gọn và nhanh; dùng v4 khi không muốn lộ thời điểm tạo.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">ULID là gì?</summary><p data-i18n="faq.a3">ULID là mã 26 ký tự (bảng chữ Crockford Base32), 10 ký tự đầu là thời gian, ngắn và dễ đọc hơn UUID.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">GUID và UUID có khác nhau không?</summary><p data-i18n="faq.a4">GUID là tên Microsoft gọi UUID; định dạng như nhau, thường viết hoa và bọc trong ngoặc nhọn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Mã được tạo có an toàn không?</summary><p data-i18n="faq.a5">Có. Công cụ dùng crypto.getRandomValues của trình duyệt, cùng nguồn ngẫu nhiên dùng cho mã hoá.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/uuid-gen.ts"></script>
+  </body>
+</html>

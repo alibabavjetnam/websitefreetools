@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đổi nhị phân, thập phân, hex, bát phân online — WFTools</title>
+    <meta name="description" content="Đổi số giữa hệ nhị phân, bát phân, thập phân, thập lục phân (hex) và mọi cơ số từ 2 đến 36; hỗ trợ số cực lớn, số âm và dạng bù hai 8, 16, 32, 64 bit." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Đổi hệ cơ số (nhị phân, hex)</h1>
+        <p class="lead">Nhập số ở một hệ, các hệ còn lại tự đổi theo; hỗ trợ số rất lớn, số âm và bù hai.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Các hệ cơ số trong tin học</h2>
+        <p data-i18n="seo.how1">Máy tính lưu mọi thứ bằng số nhị phân (0 và 1). Hệ thập lục phân (hex) gọn hơn, mỗi chữ số bằng 4 bit, nên dùng nhiều cho mã màu, địa chỉ bộ nhớ, mã băm.</p>
+        <p data-i18n="seo.how2">Nhập ở ô nào cũng được, các ô còn lại cập nhật ngay. Công cụ dùng số nguyên BigInt nên không giới hạn số chữ số, nhận cả tiền tố 0x, 0b, 0o.</p>
+        <p data-i18n="seo.how3">Phần bù hai cho thấy cách máy tính lưu số âm trong 8, 16, 32 hoặc 64 bit, hữu ích khi học lập trình nhúng, hợp ngữ.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Đổi thập phân sang nhị phân bằng tay thế nào?</summary><p data-i18n="faq.a1">Chia số cho 2 liên tục, ghi lại số dư, rồi đọc các số dư từ dưới lên.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Vì sao hex dùng chữ A-F?</summary><p data-i18n="faq.a2">Hệ 16 cần 16 chữ số; sau 0-9 dùng A-F biểu diễn 10 đến 15.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Bù hai là gì?</summary><p data-i18n="faq.a3">Là cách lưu số âm: đảo mọi bit của số dương rồi cộng 1. Ví dụ -1 trong 8 bit là 11111111.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có đổi được số thập phân có phần lẻ không?</summary><p data-i18n="faq.a4">Chưa. Công cụ chỉ đổi số nguyên.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Cơ số 36 dùng ở đâu?</summary><p data-i18n="faq.a5">Dùng để rút gọn số thành chuỗi ngắn, ví dụ mã rút gọn link, mã đơn hàng.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/number-base.ts"></script>
+  </body>
+</html>

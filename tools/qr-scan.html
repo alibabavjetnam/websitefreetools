@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quét mã QR, mã vạch từ ảnh hoặc camera online — WFTools</title>
+    <meta name="description" content="Quét mã QR, mã vạch online miễn phí: chọn ảnh, dán ảnh chụp màn hình hoặc dùng camera; đọc link, Wi-Fi, mã thanh toán VietQR, EAN, Code 128. Không cần cài app." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Quét mã QR, mã vạch</h1>
+        <p class="lead">Đọc nội dung mã QR, mã vạch từ ảnh hoặc camera mà không cần cài ứng dụng.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách quét mã trên trình duyệt</h2>
+        <p data-i18n="seo.how1">Tab Quét từ ảnh đọc mã trong ảnh chụp, ảnh màn hình hoặc ảnh dán bằng Ctrl+V, tiện khi ai đó gửi mã QR qua tin nhắn và bạn đang dùng chính điện thoại đó.</p>
+        <p data-i18n="seo.how2">Tab Quét bằng camera dùng camera sau của điện thoại hoặc webcam, tự đọc khi mã vào khung hình. Trình duyệt sẽ hỏi quyền dùng camera lần đầu.</p>
+        <p data-i18n="seo.how3">Công cụ nhận diện nội dung: đường link (hiện tên miền để bạn kiểm tra trước khi mở), mạng Wi-Fi (tên mạng, mật khẩu), mã thanh toán.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Có đọc được mã vạch sản phẩm không?</summary><p data-i18n="faq.a1">Trên Chrome, Edge (Android, macOS) đọc được EAN, UPC, Code 128… Trình duyệt khác chỉ đọc mã QR.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Quét mã QR có nguy hiểm không?</summary><p data-i18n="faq.a2">Mã QR có thể dẫn tới trang lừa đảo. Luôn kiểm tra tên miền trước khi nhập mật khẩu hay thông tin thẻ.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Vì sao không đọc được mã?</summary><p data-i18n="faq.a3">Ảnh mờ, quá nhỏ, bị loá hoặc chụp nghiêng. Thử cắt sát vào mã hoặc chụp lại thẳng góc, đủ sáng.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Ảnh có bị gửi lên mạng không?</summary><p data-i18n="faq.a4">Không. Ảnh và hình camera được đọc ngay trên máy bạn.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Lấy mật khẩu Wi-Fi từ mã QR được không?</summary><p data-i18n="faq.a5">Được. Mã QR Wi-Fi chứa tên mạng và mật khẩu, công cụ hiện rõ để bạn nhập thủ công.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/qr-scan.ts"></script>
+  </body>
+</html>

@@ -148,6 +148,56 @@ Công cụ được chia thành 6 nhóm (khai báo trong `src/tools.ts`), hiển
 | Game giải trí | Bingo | `tools/bingo.html` |
 | Game giải trí | Yahtzee (Xúc xắc 5 viên) | `tools/yahtzee.html` |
 | Game giải trí | Bài 8 lá (Crazy Eights) | `tools/crazy-eights.html` |
+| Công cụ tin học | Mã hoá và giải mã Base64 | `tools/base64-text.html` |
+| Công cụ tin học | Mã hoá và giải mã URL | `tools/url-encode.html` |
+| Công cụ tin học | Tạo mã băm MD5, SHA | `tools/hash-gen.html` |
+| Công cụ tin học | Giải mã JWT | `tools/jwt-decode.html` |
+| Công cụ tin học | Mã hoá thực thể HTML | `tools/html-entities.html` |
+| Công cụ tin học | Tạo UUID và ULID | `tools/uuid-gen.html` |
+| Công cụ tin học | Mã hoá AES bằng mật khẩu | `tools/aes-encrypt.html` |
+| Công cụ tin học | Tạo chữ ký HMAC | `tools/hmac-gen.html` |
+| Công cụ tin học | Mật mã Caesar, Morse, nhị phân | `tools/cipher-tools.html` |
+| Công cụ tin học | Kiểm tra ký tự Unicode | `tools/unicode-inspect.html` |
+| Công cụ tin học | Thoát ký tự chuỗi (escape) | `tools/string-escape.html` |
+| Công cụ tin học | Tạo văn bản Lorem Ipsum | `tools/lorem-ipsum.html` |
+| Công cụ tin học | Kiểm tra biểu thức Regex | `tools/regex-tester.html` |
+| Công cụ tin học | JSON sang TypeScript, Go | `tools/json-to-types.html` |
+| Công cụ tin học | Xem JSON dạng cây, JSONPath | `tools/json-viewer.html` |
+| Công cụ tin học | Chuyển đổi YAML, JSON, TOML | `tools/yaml-json-toml.html` |
+| Công cụ tin học | Định dạng câu lệnh SQL | `tools/sql-format.html` |
+| Công cụ tin học | Markdown sang HTML | `tools/markdown-html.html` |
+| Công cụ tin học | Tạo và giải thích biểu thức Cron | `tools/cron-gen.html` |
+| Công cụ tin học | Đổi hệ cơ số (nhị phân, hex) | `tools/number-base.html` |
+| Công cụ tin học | Chuyển lệnh cURL sang mã | `tools/curl-convert.html` |
+| Công cụ tin học | So sánh hai JSON | `tools/json-diff.html` |
+| Công cụ tin học | Tạo dữ liệu giả để thử | `tools/fake-data.html` |
+| Công cụ tin học | Tạo file .gitignore | `tools/gitignore-gen.html` |
+| Công cụ tin học | Tạo thẻ meta SEO, Open Graph | `tools/meta-tags.html` |
+| Công cụ tin học | Thông tin trình duyệt, IP | `tools/browser-info.html` |
+| Công cụ tin học | Tạo favicon cho website | `tools/favicon-gen.html` |
+| Công cụ tin học | Tạo CSS đổ bóng, gradient | `tools/css-generator.html` |
+| Công cụ tin học | Tạo bố cục Flexbox, Grid | `tools/flex-grid.html` |
+| Công cụ tin học | Tối ưu và nén SVG | `tools/svg-optimize.html` |
+| Công cụ tin học | Phân tích và sửa URL | `tools/url-parser.html` |
+| Công cụ tin học | Tính subnet, CIDR IPv4, IPv6 | `tools/subnet-calc.html` |
+| Công cụ tin học | Tạo robots.txt, sitemap.xml | `tools/robots-sitemap.html` |
+| Công cụ tin học | Tra mã trạng thái HTTP | `tools/http-status.html` |
+| Công cụ tin học | Kiểm tra độ tương phản màu | `tools/contrast-check.html` |
+| Công cụ tin học | Tạo mã nhúng video, bản đồ | `tools/embed-code.html` |
+| Xử lý file | Xoay, đánh số, xoá trang PDF | `tools/pdf-pages.html` |
+| Kinh doanh online | Tạo chữ ký email | `tools/email-signature.html` |
+| Tài chính & tính toán | Chia tiền hoá đơn, chi tiêu nhóm | `tools/bill-split.html` |
+| Xử lý văn bản | Đọc số thành chữ | `tools/number-words.html` |
+| Kinh doanh online | Tạo mã QR chuyển khoản VietQR | `tools/vietqr.html` |
+| Tiếp thị | Quét mã QR, mã vạch | `tools/qr-scan.html` |
+| Âm thanh & video | Tách khung hình từ video | `tools/video-frames.html` |
+| Xử lý hình ảnh | Ghép ảnh và tạo meme | `tools/image-collage.html` |
+| Xử lý hình ảnh | Xoá thông tin EXIF, GPS ảnh | `tools/exif-remove.html` |
+| Âm thanh & video | Ghi âm online | `tools/voice-recorder.html` |
+| Kiểm tra thiết bị | Đo tốc độ mạng Internet | `tools/speed-test.html` |
+| Công cụ thời gian | Tạo lịch tháng, lịch năm để in | `tools/calendar-print.html` |
+| Năng suất & đời sống | Chia đội ngẫu nhiên | `tools/team-split.html` |
+| Tài chính & tính toán | Tính tiền điện sinh hoạt | `tools/electricity-bill.html` |
 
 Chơi online (cờ vua, cờ tướng, cờ úp, cờ vây): nước đi chuyển qua broker MQTT công cộng miễn phí (`src/lib/mqtt.ts` tự viết, `src/lib/online.ts`), mã hoá AES-GCM theo từng bàn; bàn công khai lên danh sách "Bàn chờ bạn", bàn riêng mời bằng link `?id=<guid>`; đăng nhập Google thì ván đấu (JSON) lưu vào Drive của người chơi (`WFTools/Games`).
 

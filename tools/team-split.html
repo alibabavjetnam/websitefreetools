@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chia đội, chia nhóm ngẫu nhiên online — WFTools</title>
+    <meta name="description" content="Chia nhóm ngẫu nhiên công bằng: dán danh sách tên, chọn số đội hoặc số người mỗi đội, chọn đội trưởng ngẫu nhiên. Cho lớp học, đá bóng, team building." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body data-root="..">
+    <main id="content" class="content">
+      <header class="tool-head">
+        <h1>Chia đội ngẫu nhiên</h1>
+        <p class="lead">Dán danh sách tên để chia thành các đội đều nhau một cách ngẫu nhiên, công bằng.</p>
+      </header>
+      <div id="tool-root"></div>
+      <section class="seo-info" aria-labelledby="seo-how">
+        <h2 id="seo-how" data-i18n="seo.howTitle">Cách chia đội công bằng</h2>
+        <p data-i18n="seo.how1">Dán danh sách tên, mỗi dòng một người. Chọn chia theo số đội (ví dụ 3 đội) hoặc theo số người mỗi đội (ví dụ đội 5 người), công cụ xếp ngẫu nhiên và chia đều.</p>
+        <p data-i18n="seo.how2">Thuật toán xáo trộn dùng bộ sinh số ngẫu nhiên an toàn của trình duyệt nên không ai đoán trước được kết quả. Bấm Chia đội lại để xếp lần khác.</p>
+        <p data-i18n="seo.how3">Bật Chọn đội trưởng để người đầu mỗi đội được đánh dấu. Sao chép kết quả gửi vào nhóm chat lớp hoặc công ty.</p>
+        <h2 data-i18n="seo.faqTitle">Câu hỏi thường gặp</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Số người lẻ thì chia thế nào?</summary><p data-i18n="faq.a1">Các đội chênh nhau tối đa một người.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Có chia theo trình độ được không?</summary><p data-i18n="faq.a2">Chưa. Mẹo: chia riêng nhóm giỏi và nhóm mới thành cùng số đội rồi ghép lại.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Tên trùng có bị loại không?</summary><p data-i18n="faq.a3">Khi bật Bỏ tên trùng, mỗi tên chỉ được tính một lần.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">Có giới hạn số người không?</summary><p data-i18n="faq.a4">Không có giới hạn đáng kể; danh sách vài nghìn tên vẫn chạy tốt.</p></details>
+        <details class="faq"><summary data-i18n="faq.q5">Muốn chọn một người ngẫu nhiên?</summary><p data-i18n="faq.a5">Dùng công cụ Vòng quay may mắn hoặc Quay số ngẫu nhiên.</p></details>
+      </section>
+    </main>
+    <script type="module" src="/src/pages/team-split.ts"></script>
+  </body>
+</html>
