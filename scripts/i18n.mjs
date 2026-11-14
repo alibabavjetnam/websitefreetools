@@ -89,6 +89,13 @@ function seoHead(page, lang, c) {
       { '@type': 'ListItem', position: 1, name: 'WFTools', item: `${SITE}/${lang}/` },
       { '@type': 'ListItem', position: 2, name: c.h1, item: url },
     ] });
+    // Câu hỏi thường gặp (faq.q1/faq.a1…) của trang công cụ → FAQPage cho kết quả tìm kiếm nâng cao
+    const merged = { ...((dicts[DEFAULT].s && dicts[DEFAULT].s[page.key]) || {}), ...((dicts[lang].s && dicts[lang].s[page.key]) || {}) };
+    const faq = [];
+    for (let i = 1; merged[`faq.q${i}`] && merged[`faq.a${i}`]; i++) {
+      faq.push({ '@type': 'Question', name: merged[`faq.q${i}`], acceptedAnswer: { '@type': 'Answer', text: merged[`faq.a${i}`] } });
+    }
+    if (faq.length) ld.push({ '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, mainEntity: faq });
   }
   const tags = [
     `<link rel="canonical" href="${url}" />`,

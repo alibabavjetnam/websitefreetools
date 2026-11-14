@@ -98,6 +98,8 @@ export const TOOLS: ToolInfo[] = [
   tool('loan', 'finance', 'Tính khoản vay', 'Số tiền trả hằng tháng, tổng lãi và lịch trả nợ cho vay mua nhà, mua xe, vay tiêu dùng.'),
   tool('compound', 'finance', 'Lãi kép & tích luỹ', 'Dự tính số tiền tích luỹ khi gửi tiết kiệm hoặc đầu tư đều đặn hằng tháng.'),
   tool('salary', 'finance', 'Lương Gross ↔ Net', 'Đổi lương Gross sang Net và ngược lại theo bảo hiểm, thuế thu nhập cá nhân năm 2026.'),
+  tool('pit-tax', 'finance', 'Tính thuế TNCN và quyết toán năm', 'Tính thuế thu nhập cá nhân cả năm từ lương và thưởng Tết theo biểu thuế 5 bậc, giảm trừ 15,5 triệu; xem phải nộp thêm hay được hoàn khi quyết toán.'),
+  tool('savings-bhxh', 'finance', 'Lãi tiết kiệm, lương hưu và BHXH', 'Tính lãi gửi tiết kiệm ngân hàng theo kỳ hạn, ước tính lương hưu hằng tháng và tiền BHXH một lần theo Luật Bảo hiểm xã hội 2024.'),
 
   // Tiếp thị
   tool('qr-code', 'marketing', 'Tạo mã QR', 'Tạo mã QR cho liên kết, văn bản, Wi‑Fi, email, số điện thoại. Tải về PNG hoặc SVG.', 'WFT'),

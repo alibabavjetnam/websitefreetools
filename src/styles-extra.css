@@ -1912,3 +1912,12 @@ button.bs-c{cursor:crosshair}.bs-c.ship{background:#868e96}.bs-c.miss{background
 .cheat-box { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; border: 1px dashed #b42318; border-radius: 10px; background: #fff5f3; font-size: 14px; }
 .cheat-box label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
 .cheat-box small { color: var(--muted); }
+
+/* Nội dung giới thiệu và câu hỏi thường gặp dưới công cụ (SEO) */
+.seo-info { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border, #e3e6ea); max-width: 820px; }
+.seo-info h2 { font-size: 1.15rem; margin: 0 0 12px; }
+.seo-info h2 + p, .seo-info p { line-height: 1.65; margin: 0 0 12px; }
+.seo-info h2:not(:first-child) { margin-top: 28px; }
+.seo-info details.faq { border: 1px solid var(--border, #e3e6ea); border-radius: 10px; padding: 10px 14px; margin: 0 0 8px; background: var(--surface, #fff); }
+.seo-info details.faq summary { cursor: pointer; font-weight: 600; }
+.seo-info details.faq p { margin: 10px 0 2px; }

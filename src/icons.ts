@@ -50,6 +50,8 @@ const PATHS: Record<string, string> = {
 
   // ngôi nhà và đồng xu
   loan: '<path d="M3 11l9-7 9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/>',
+  'pit-tax': '<path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 17l6-6"/><circle cx="9.5" cy="11.5" r="1"/><circle cx="14.5" cy="16.5" r="1"/>',
+  'savings-bhxh': '<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/>',
   // cột tăng dần
   compound: '<path d="M4 20h16"/><path d="M6 20v-4M10 20v-7M14 20v-10M18 20V5"/>',
   // phong bì lương
